@@ -6,23 +6,58 @@ audience: migration
 content-type: reference
 topic-tags: migration-overview
 exl-id: 3050238d-6f77-4ffa-9aef-677ab8009388
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 8610d29a3df1080f1622a2cb3685c0961fb40092
 workflow-type: tm+mt
-source-wordcount: '153'
-ht-degree: 4%
+source-wordcount: '478'
+ht-degree: 3%
 
 ---
 
-# Migrerar till Campaign Classic{#about-migration}
+# Kom igång med migreringen{#about-migration}
 
 ![](../../assets/v7-only.svg)
 
-Det här dokumentet innehåller information om förutsättningarna för en migrering, stegen för en migrering till Adobe Campaign Classic (v7), de ytterligare, nödvändiga och valfria inställningarna beroende på din konfiguration.
+Det här dokumentet innehåller information om förutsättningarna för en migrering, stegen för en migrering till Adobe Campaign Classic v7. Steg och valfria inställningar beror på din konfiguration. [Läs mer](../../migration/using/general-configurations.md).
 
 Migreringsprocessen måste utföras med försiktighet, dess konsekvenser måste beaktas fullt ut i förväg och förfarandet måste utföras rigoröst. Den får endast utföras av en expertanvändare. Vi rekommenderar att du kontaktar [Adobe kundtjänst](https://helpx.adobe.com/se/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) innan någon migreringsprocess inleds.
 
-Migreringen måste testas i utvecklingsmiljön i förväg för att se till att den fungerar smidigt och utan fel. Migrering av produktionsmiljön får endast utföras när den migrerade utvecklingsmiljön har validerats fullständigt.
+Migreringen måste testas i test-/scenmiljön i förväg för att säkerställa att den fungerar smidigt och utan fel. Migrering av produktionsmiljön får endast utföras när den migrerade testmiljön har validerats fullständigt.
 
 >[!NOTE]
 >
->Nya funktioner och utvecklingar för Adobe Campaign v7 beskrivs i [Versionsinformation](../../rn/using/latest-release.md).
+>Nya funktioner och förbättringar som ingår i Adobe Campaign v7 beskrivs i [Versionsinformation](../../rn/using/latest-release.md).
+
+
+## Förhandskrav
+
+* Migreringsprocessen måste utföras av expertanvändare. Du måste få hjälp av minst en databasexpert, en systemadministratör och en programutvecklare från Adobe Campaign.
+* Innan du startar migreringen bör du kontrollera att de system och systemkomponenter som du använder är kompatibla med v7. [Läs mer](../../rn/using/compatibility-matrix.md).
+* Om du använder Adobe Campaign Cloud Messaging (installation från mellanleverantörer) kontaktar du Adobe kundtjänst innan du startar.
+* Innan du startar en migreringsprocess bör du **måste** säkerhetskopiera dina data.
+* Det kan ta flera dagar innan migreringen är klar.
+* Adobe Campaign v7 är en säkrare version än de tidigare: Detta påverkar konfigurationsriktlinjerna för att undvika problem som till exempel korrupta data och för att bevara databasens dataintegritet. Därför kanske vissa funktioner i v5.11 och v6.02 inte längre stöds i v7 och behöver anpassas efter migreringen. Som kund ansvarar du för att testa alla konfigurationer, inklusive arbetsflöden.
+
+Fler förutsättningar finns i [den här sidan](../../migration/using/before-starting-migration.md).
+
+
+## Moderniserad miljö {#modernizing-your-environment}
+
+Att utföra en migrering kan vara en chans att uppdatera miljön (databasmotorer, operativsystem). Adobe Campaign rekommenderar starkt att du uppgraderar dina produktionsmiljöer till de senaste versionerna.
+
+>[!CAUTION]
+>
+>Mer information om vilka versioner som stöds av Adobe Campaign v7 finns i [Kompatibilitetsmatris](../../rn/using/compatibility-matrix.md).
+
+## Viktiga migreringssteg {#key-migration-steps}
+
+Det allmänna tillvägagångssättet för migrering till Adobe Campaign v7 beskrivs i [den här sidan](../../migration/using/before-starting-migration.md).
+
+
+## Specifika konfigurationer {#specific-configurations}
+
+De ändringar som gjorts i Adobe Campaign v7 kan också innebära att du måste anpassa vissa specifika konfigurationer som utvecklats i tidigare versioner. Därför kan det vara nödvändigt att utföra en granskning av alla dina konfigurationer innan migreringen: kontakta Adobe Campaign om du behöver hjälp.
+
+Särskild uppmärksamhet bör ägnas till exempel specifika inställningar för webbprogram, schematillägg med SQLdata eller schemakloning som inte är i kartong. För mer information om detta hittar du i [det här avsnittet](../../migration/using/configuring-your-platform.md).
+
+På samma sätt har vissa interna mekanismer ändrats för att svara på den ökade säkerheten inom Adobe Campaign: måste du anpassa dessa konfigurationer i enlighet med detta.
+

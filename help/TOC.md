@@ -6,10 +6,10 @@ title: Användarhandbok för Campaign Classic v7
 user-guide-description: Med Adobe Campaign kan du använda omfattande kunddata för att skapa, samordna och leverera dynamiska kampanjer som kunderna verkligen vill ha – via e-post, mobiler, offlinekanaler med mera.
 sub-product: adobe campaign classic
 type: Documentation
-source-git-commit: e142bcc18dd22179d83c54b9e79d3e3339b005fa
+source-git-commit: 8610d29a3df1080f1622a2cb3685c0961fb40092
 workflow-type: tm+mt
-source-wordcount: '2599'
-ht-degree: 99%
+source-wordcount: '2556'
+ht-degree: 98%
 
 ---
 
@@ -22,10 +22,8 @@ ht-degree: 99%
    + [Kom igång med uppgraderingar](rn/using/rn-overview.md)
    + [Senaste versionen](rn/using/latest-release.md)
    + Tidigare versioner {#previous-releases}
-      + [!DNL Gold Standard]-version {#gs-release}
-         + [Vad är [!DNL Gold Standard]](rn/using/gs-overview.md)
-         + [Versionsinformation om [!DNL Gold Standard]](rn/using/gold-standard.md)
-         + [Kompatibilitetsmatris för [!DNL Gold Standard]](rn/using/compatibility-matrix-gs.md)
+      + [[!DNL Gold Standard]](rn/using/gold-standard.md)
+      + [2021](rn/using/release--2021.md)
       + [2020](rn/using/release--2020.md)
       + [2019](rn/using/release--2019.md)
       + [2018](rn/using/release--2018.md)
@@ -597,7 +595,6 @@ ht-degree: 99%
    + Bilagor {#annexes}
       + [Exempel på Facebook-appar](social/using/examples-of-facebook-apps.md)
       + [Spåra](social/using/tracking.md)
-+ [Kontrollpanelen i Campaign](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=sv)
 + Installations- och konfigureringshandbok {#installing-campaign-classic}
    + Arkitekturprinciper {#architecture-and-hosting-models}
       + [Allmän arkitektur](installation/using/general-architecture.md)
@@ -821,23 +818,15 @@ ht-degree: 99%
       + [Samla in alla besök](configuration/using/collecting-all-visits.md)
       + [Anonym spårning](configuration/using/anonymous-tracking.md)
 + Migreringshandbok {#migrating-to-a-new-version}
-   + Migreringsöversikt {#migration-overview}
-      + [Om migrering](migration/using/about-migration.md)
-      + [Migreringsmetod](migration/using/migration-method.md)
-      + [Migreringsvarningar](migration/using/migration-warnings.md)
+   + [Migrera till Adobe Campaign v7](migration/using/about-migration.md)
    + Migreringsförfarande {#migration-procedure}
-      + [Innan du startar migreringen](migration/using/before-starting-migration.md)
-      + [Testa migreringen](migration/using/testing-the-migration.md)
-      + [Konfigurera din plattform](migration/using/configuring-your-platform.md)
-   + Migrera till Adobe Campaign 7 {#migrating-to-adobe-campaign-7}
-      + [Förhandskrav för att migrera till Adobe Campaign 7](migration/using/prerequisites-for-migration-to-adobe-campaign-7.md)
-      + [Migrera Adobe Campaign 7 i Windows](migration/using/migrating-in-windows-for-adobe-campaign-7.md)
-      + [Migrera Adobe Campaign 7 i Linux](migration/using/migrating-in-linux-for-adobe-campaign-v7.md)
-   + Konfiguration {#configuration}
-      + [Allmänna konfigurationer](migration/using/general-configurations.md)
-      + [Specifika konfigurationer i version 5.11](migration/using/specific-configurations-in-v5-11.md)
-      + [Specifika konfigurationer i version 6.02](migration/using/specific-configurations-in-v6-02.md)
-      + [Specifika konfigurationer i version 6.10](migration/using/specific-configurations-in-v6-10.md)
+      + [Förhandskrav](migration/using/before-starting-migration.md)
+      + [Om migreringstester](migration/using/testing-the-migration.md)
+      + [Anpassa konfigurationen](migration/using/configuring-your-platform.md)
+   + Starta migreringen {#migrating-to-adobe-campaign-7}
+      + [Migrera en Microsoft Windows-plattform](migration/using/migrating-in-windows-for-adobe-campaign-7.md)
+      + [Migrera en Linux-plattform](migration/using/migrating-in-linux-for-adobe-campaign-v7.md)
+      + [Konfigurera plattformen](migration/using/general-configurations.md)
    + [Återställningsförfarande](migration/using/about-rollback.md)
 + Tekniska anmärkningar {#technotes}
    + [Rekommendationer på maskinvarustorlek](technotes/using/hardware-sizing.md)
@@ -855,4 +844,4 @@ ht-degree: 99%
    + Migrering till Adobe Managed Services{#dc-migration}
       + [Migrering till Public Cloud](technotes/using/dc-migration.md)
       + [Vanliga frågor och svar ](technotes/using/dc-migration-faq.md)
-+ [Kontrollpanelen i Campaign](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html)
++ [Kontrollpanelen i Campaign](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=sv)

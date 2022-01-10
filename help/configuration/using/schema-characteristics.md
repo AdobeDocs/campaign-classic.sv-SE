@@ -6,7 +6,7 @@ audience: configuration
 content-type: reference
 topic-tags: use-a-custom-recipient-table
 exl-id: 099161b4-b4cb-433c-aed6-71157269a536
-source-git-commit: bd9f035db1cbad883e1f27fe901e34dfbc9c1229
+source-git-commit: fb4b4c42b907e86813ea570f912312fccf893bfe
 workflow-type: tm+mt
 source-wordcount: '380'
 ht-degree: 2%
@@ -15,7 +15,7 @@ ht-degree: 2%
 
 # Schemaegenskaper{#schema-characteristics}
 
-![](../../assets/v7-only.svg)
+![](../../assets/common.svg)
 
 Egenskaperna för ett schema som refererar till en befintlig tabell är följande:
 
@@ -25,7 +25,7 @@ Egenskaperna för ett schema som refererar till en befintlig tabell är följand
 
 >[!IMPORTANT]
 >
->Ta inte bort fält i standardmottagartabellen, även om de är oanvändbara. Detta kan orsaka beteendefel i Adobe Campaign-databasen.
+>Ta inte bort fält i den inbyggda mottagartabellen, även om de är värdelösa. Detta kan orsaka beteendefel i Adobe Campaign-databasen.
 
 ## Attributet view {#the-view-attribute}
 

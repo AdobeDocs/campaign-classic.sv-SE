@@ -6,7 +6,7 @@ audience: installation
 content-type: reference
 topic-tags: additional-configurations
 exl-id: 515adad2-6129-450a-bb9e-fc80127835af
-source-git-commit: 4661a65c83f3b9b7da9ea902f387155c5933e59f
+source-git-commit: 98380c18b915cfebc980e68f9840f9d8919eaca4
 workflow-type: tm+mt
 source-wordcount: '3023'
 ht-degree: 0%
@@ -174,7 +174,7 @@ user:~ user$ host -t a mta5.am0.yahoodns.net
                 mta5.am0.yahoodns.net has address 98.138.112.35
 ```
 
-För den här posten kan användaren kontakta 8 peer-IP-adresser. Eftersom användaren har 2 offentliga IP-adresser ger detta honom/henne 8 * 2 = 16 kombinationer för att nå e-postservrarna på yahoo.com. Var och en av dessa kombinationer kallas en bana.
+För den här posten kan användaren kontakta 8 peer-IP-adresser. Eftersom användaren har två publika IP-adresser ger detta dem 8 * 2 = 16 kombinationer för att nå e-postservrarna yahoo.com. Var och en av dessa kombinationer kallas en bana.
 
 Den andra MX-posten visas som:
 

@@ -6,9 +6,9 @@ audience: campaign
 content-type: reference
 topic-tags: about-marketing-campaigns
 exl-id: 1278bda1-f83c-4d38-8042-e6611755cf36
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 89c007775d4df7c6d50951283efe764c3c424d91
 workflow-type: tm+mt
-source-wordcount: '1046'
+source-wordcount: '1271'
 ht-degree: 1%
 
 ---
@@ -161,6 +161,35 @@ Du kan öppna Adobe Campaign konsolskärmar via en webbläsare och visa alla kam
 1. Använd menyerna för att komma åt översikterna.
 
    ![](assets/s_ncs_user_interface_web_campaign_01.png)
+
+Förutom att navigera mellan kampanjer och visa dem kan du utföra följande typer av uppgifter:
+
+* Övervaka aktivitet i en instans
+* Delta i valideringsprocesser, till exempel godkänna eller avvisa ett leveransinnehåll
+* Utför andra snabbåtgärder, till exempel pausa ett arbetsflöde
+* Få tillgång till alla rapportfunktioner
+* Delta i forumdiskussioner
+
+I tabellen sammanfattas de åtgärder du kan vidta i kampanjer från en webbläsare:
+
+| Sida  | Åtgärd |
+| --- | --- |
+| Lista över kampanjer, leveranser, erbjudanden osv. | Ta bort ett listobjekt |
+| Campaign | Avbryta en kampanj |
+| Leverans | Godkänn leveransinnehållet och målet<br/>Skicka leveransinnehållet<br/>Bekräfta leverans<br/>Pausa och stoppa leverans |
+| Webbprogram | Skapa ett webbprogram<br/>Redigera programinnehåll och -egenskaper<br/>Spara programinnehållet som en mall<br/>Publicera programmet |
+| Erbjudande | Godkänn erbjudandets innehåll och behörighet<br/>Inaktivera ett onlineerbjudande |
+| Uppgift | Avsluta en uppgift<br/>Avbryt en uppgift |
+| Marknadsföringsresurser | Godkänn en resurs<br/>Låsa och låsa upp en resurs |
+| Kampanjpaket | Skicka ett paket för godkännande<br/>Godkänn eller avvisa ett paket<br/>Avbryt ett paket |
+| Kampanjorder | Skapa en order<br/>Acceptera eller avvisa en order <!-- Je n'ai pas pu créer de campaign order pour vérifier cela. Peut-on accéder à ces fonctionnalités depuis l'accès web ? --> |
+| Stock | Ta bort en aktierad |
+| Simulera erbjudanden | Starta och stoppa en simulering |
+| Målarbetsflöde | Starta, pausa och stoppa ett arbetsflöde |
+| Rapportera | Spara aktuella data i rapporthistoriken |
+| Forum | Lägg till en diskussion<br/>Svara på ett meddelande i en diskussion<br/>Följ en diskussion och avsluta prenumerationen på den |
+
+### Godkännanden
 
 Godkännanden (till exempel av ett mål eller ett leveransinnehåll) kan utföras via webbåtkomst.
 

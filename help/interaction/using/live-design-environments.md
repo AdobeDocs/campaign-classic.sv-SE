@@ -6,7 +6,7 @@ audience: interaction
 content-type: reference
 topic-tags: managing-environments
 exl-id: 965c4a6a-6535-454d-bd37-e9c8312b4d13
-source-git-commit: 8b970705f0da6a9e09de9fadb3e1a8c5f4814f9f
+source-git-commit: fb4b4c42b907e86813ea570f912312fccf893bfe
 workflow-type: tm+mt
 source-wordcount: '447'
 ht-degree: 2%
@@ -28,7 +28,7 @@ Interaktionen fungerar i två typer av miljöer:
 
 Varje **[!UICONTROL Design]** miljön är länkad till en **[!UICONTROL Live]** miljö. När ett erbjudande är klart blir dess innehåll och behörighetskrav föremål för en godkännandecykel. När den här cykeln är slutförd distribueras det aktuella erbjudandet automatiskt till **[!UICONTROL Live]** miljö. Från och med nu finns den tillgänglig för leverans.
 
-Som standard innehåller Interaction en **[!UICONTROL Design]** miljö och **[!UICONTROL Live]** miljö som är länkad till den. Båda miljöerna är förkonfigurerade för mottagartabellen som är klar att användas.
+Som standard innehåller Interaction en **[!UICONTROL Design]** miljö och **[!UICONTROL Live]** miljö som är länkad till den. Båda miljöerna är förkonfigurerade för den inbyggda mottagartabellen.
 
 >[!NOTE]
 >

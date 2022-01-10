@@ -6,9 +6,9 @@ audience: campaign
 content-type: reference
 topic-tags: campaign-optimization
 exl-id: c23212f2-fdf8-4820-b389-546f7c84db27
-source-git-commit: 5806690f764d2e5dfb5651597ff68b33bb399b44
+source-git-commit: 52aa7b268d5eb83354c3a4d8687ced95300538e2
 workflow-type: tm+mt
-source-wordcount: '3253'
+source-wordcount: '3285'
 ht-degree: 4%
 
 ---
@@ -64,6 +64,8 @@ Så här skapar och konfigurerar du en **[!UICONTROL Pressure]**-typologiregel:
    >[!NOTE]
    >
    >Schemalagda leveranser beaktas endast om **[!UICONTROL Take the deliveries into account in the provisional calendar]** är markerat. Mer information finns i [Ange period](#setting-the-period).
+   >
+   >Det här alternativet är inte tillgängligt i Campaign v8.
 
 1. Definiera metoden för att beräkna det högsta antalet meddelanden.
 
@@ -149,28 +151,29 @@ Med grupperingstypen kan du utöka **[!UICONTROL Period considered]** till hela 
 
 En tryckregel som definierar ett tröskelvärde på 2 meddelanden per vecka, med en gruppering för varje kalendermånad, förhindrar till exempel att fler än 2 meddelanden levereras inom samma vecka OCH inom samma kalendermånad. Varning! Om perioden överlappar två månader kommer beräkningströskeln att ta hänsyn till leveranser från dessa två kalendermånader och kan därför förhindra alla nya leveranser under den andra månaden.
 
->[!NOTE]
->
->Som standard beaktas endast leveranser som redan har skickats vid beräkning av tröskelvärdet. Kontrollera **[!UICONTROL Take the deliveries into account in the provisional calendar]** om du även vill ta hänsyn till planerade leveranser för den aktuella perioden. I detta fall fördubblas skadeundersökningsperioden för att möjliggöra integrering av såväl framtida leveranser som tidigare leveranser.\
->Om du vill begränsa antalet leveranser som beaktas till en tvåveckorsperiod kan du antingen:
->
->* Retur **15d** i **[!UICONTROL Concerned period]** fält: Leveranser som skickats upp till två veckor före leveransdagen och som regeln tillämpas på ska beaktas vid beräkningen.
->
->  eller
->
->* Retur **7d** i **[!UICONTROL Period considered]** fält OCH kontrollera **[!UICONTROL Take the deliveries into account in the provisional calendar]**\
-   >alternativ: leveranser som skickas upp till 7 dagar före leveransdatumet och som schemalagts upp till 7 dagar efter leveransdatumet då regeln tillämpas kommer att beaktas vid beräkningen.
->
->Periodens startdatum beror på hur databasen är konfigurerad.
+Observera att som standard beaktas endast leveranser som redan har skickats vid beräkningen av tröskelvärdet. I Campaign Classic v7 kan du kontrollera **[!UICONTROL Take the deliveries into account in the provisional calendar]** om du även vill ta hänsyn till planerade leveranser för den aktuella perioden. I detta fall fördubblas skadeundersökningsperioden för att möjliggöra integrering av såväl framtida leveranser som tidigare leveranser.
+
+Om du vill begränsa antalet leveranser som beaktas till en tvåveckorsperiod kan du antingen:
+
+1. Retur **15d** i **[!UICONTROL Concerned period]** fält: Leveranser som skickats upp till två veckor före leveransdagen och som regeln tillämpas på ska beaktas vid beräkningen.
+
+eller
+
+1. Retur **7d** i **[!UICONTROL Period considered]** fält OCH kontrollera **[!UICONTROL Take the deliveries into account in the provisional calendar]** alternativ: leveranser som skickas upp till 7 dagar före leveransdatumet och som schemalagts upp till 7 dagar efter leveransdatumet då regeln tillämpas kommer att beaktas vid beräkningen.
+
+   >[!AVAILABILITY]
+   >Den här metoden är inte tillgänglig i Campaign v8.
+
+Periodens startdatum beror på hur databasen är konfigurerad.
 
 Om du t.ex. tillämpar en 15-dagars tryckregel utan gruppering för en leverans som är daterad 12/11, kommer leveranser att tas med i beräkningen mellan 11/27 och 12/12. Om tryckregeln tar hänsyn till leveranserna i den preliminära kalendern, kommer alla leveranser som planeras mellan 11/27 och 12/27 att beaktas. Slutligen, om du konfigurerar en gruppering per kalendermånad i regeln, kommer alla leveranser i november och december att beaktas vid beräkningen av tröskelvärdet (från 11/1 till 12/31).
 
->[!CAUTION]
->
->**Vanliga fall**
->För att säkerställa att leveranser för den aktuella kalenderveckan inte tas med i beräkningen, och inte heller risken att ta hänsyn till leveranser från föregående vecka för beräkningströskeln, anger du **[!UICONTROL Period considered]** klockan &#39;0&#39; och välj &#39;Gruppering per kalendervecka&#39; som **[!UICONTROL Period type]**.
-> 
->När en period är större än 0 (till exempel 1) kan beräkningströskeln ta hänsyn till föregående dags leveranser. Om föregående dag motsvarar föregående kalendervecka och den valda periodtypen är Gruppering per kalendervecka, kommer därför alla föregående vecka att tas med i beräkningen.
+
+**Vanliga fall**
+
+För att säkerställa att leveranser för den aktuella kalenderveckan inte tas med i beräkningen, och inte heller risken att ta hänsyn till leveranser från föregående vecka för beräkningströskeln, anger du **[!UICONTROL Period considered]** klockan &#39;0&#39; och välj &#39;Gruppering per kalendervecka&#39; som **[!UICONTROL Period type]**.
+
+När en period är större än 0 (till exempel 1) kan beräkningströskeln ta hänsyn till föregående dags leveranser. Om föregående dag motsvarar föregående kalendervecka och den valda periodtypen är Gruppering per kalendervecka, kommer därför alla föregående vecka att tas med i beräkningen.
 
 **Exempel:**
 
@@ -333,6 +336,9 @@ Konfigurera först tryckregeln.
    ![](assets/campaign_opt_pressure_example_1.png)
 
    Leveranser som skickas upp till 7 dagar före leveransdatumet och som schemalagts upp till 7 dagar efter leveransdatumet kommer att tas med i beräkningen. Mer information finns i [Ange period](#setting-the-period).
+
+   >[!AVAILABILITY]
+   >Schemalagda leveranser kan inte beaktas i Campaign v8.
 
 1. I **[!UICONTROL Typologies]** länka regeln till en kampanjtypologi.
 1. Spara ändringarna.

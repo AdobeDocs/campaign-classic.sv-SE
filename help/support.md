@@ -4,9 +4,9 @@ title: 'Hjälp- och supportalternativ för Campaign Classic '
 description: Behöver du stöd för Campaign Classic? Du är på rätt ställe!
 hidefromtoc: true
 exl-id: 3a84236f-89e5-4b8b-9a98-afdc006fd6e0
-source-git-commit: e719c8c94f1c08c6601b3386ccd99d250c9e606b
+source-git-commit: 1d32161d60f6b382188012b104c642f504e28645
 workflow-type: tm+mt
-source-wordcount: '799'
+source-wordcount: '793'
 ht-degree: 62%
 
 ---
@@ -99,7 +99,7 @@ Med Campaign Control Panel kan ni effektivisera arbetet som produktadministratö
 >
 >Kontrollpanelen är tillgänglig för alla administratörsanvändare. Stegen för att bevilja administratörsåtkomst till en användare finns i [det här avsnittet](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/managing-permissions.html?lang=sv#discover-control-panel).
 >
->Observera att din instans måste ligga på AWS och uppgraderas med den senaste [Gold Standard](rn/using/gs-overview.md) eller [senaste GA-bygge (21.1.4)](rn/using/latest-release.md). Läs om hur du kontrollerar din version i [det här avsnittet](platform/using/launching-adobe-campaign.md#getting-your-campaign-version). Följ stegen på [den här sidan](https://experienceleague.adobe.com/docs/control-panel/using/faq.html) för att kontrollera om instanser har AWS som värd.
+>Observera att din instans måste ligga på AWS och uppgraderas med den senaste [GA build](rn/using/rn-overview.md). Läs om hur du kontrollerar din version i [det här avsnittet](platform/using/launching-adobe-campaign.md#getting-your-campaign-version). Följ stegen på [den här sidan](https://experienceleague.adobe.com/docs/control-panel/using/faq.html) för att kontrollera om instanser har AWS som värd.
 
 ### Hur kommer jag åt Kontrollpanelen?
 

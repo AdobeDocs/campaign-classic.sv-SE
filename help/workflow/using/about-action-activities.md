@@ -6,10 +6,10 @@ audience: workflow
 content-type: reference
 topic-tags: action-activities
 exl-id: 8758601b-c4bd-4179-8816-305d1a68d499
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 08af51345c047612b010c82646cba99becfda459
 workflow-type: tm+mt
-source-wordcount: '346'
-ht-degree: 2%
+source-wordcount: '269'
+ht-degree: 3%
 
 ---
 
@@ -31,6 +31,4 @@ ht-degree: 2%
 * **SQL-kod och JavaScript-kod**: kör det SQL-skript eller JavaScript som anges i aktiviteten. Se [SQL-kod och JavaScript-kod](sql-code-and-javascript-code.md).
 * **SQL Data Management**: gör att du kan skriva egna SQL-frågor för att skapa och fylla i arbetstabeller. Se [SQL Data Management](sql-data-management.md).
 * **nlserver-modul**: startar en servermodul med dess argument. Se [Nlserver-modul](nlserver-module.md).
-* **Importera och exportera (v4-kompatibel)**: Med import- och exportaktiviteter (v4-kompatibilitet) kan du importera och exportera data med hjälp av mallen (import eller export) som anges i aktiviteten.
-* **Microsoft CRM, Salesforce, Oracle CRM On Demand**: Med kan du ansluta Adobe Campaign specifikt till en av de förkonfigurerade CRM:erna. De här aktiviteterna liknar CRM-kopplingen i [det här avsnittet](crm-connector.md), med mer specifika alternativ. Du kan särskilt välja vilken typ av kampanj som ska utföras för synkroniseringen.
 * **Uppdatera sammanställning**: Med kan du välja det sammansatta uppdateringsläget (helt eller delvis). Se [Uppdatera sammanställning](update-aggregate.md).

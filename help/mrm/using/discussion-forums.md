@@ -6,7 +6,7 @@ audience: campaign
 content-type: reference
 topic-tags: tasks--resources-and-budgets
 exl-id: 222853c5-c754-4c0b-8ee4-a64b2f8677a4
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 98380c18b915cfebc980e68f9840f9d8919eaca4
 workflow-type: tm+mt
 source-wordcount: '728'
 ht-degree: 0%
@@ -75,7 +75,7 @@ Du kan skicka ett meddelande till en operatörs forum om ditt meddelande t.ex. i
 Så här kommer du åt en operatörs forum:
 
 * Om du har nödvändig behörighet för att få åtkomst till **[!UICONTROL Administration > Access management > Operators]** noden i Utforskaren, öppnar kontrollpanelen för den önskade operatorn och klickar på **[!UICONTROL Forum]** i det övre högra hörnet.
-* Om inte, hitta namnet på operatorn i Adobe Campaign (via ett meddelande som skickats till forumet av den här operatorn, en uppgift som tilldelats honom) och klicka på den för att komma åt deras instrumentpanel. Du kan också be administratören att skapa en vy över operatörsmappen.
+* Om inte, leta reda på namnet på operatorn i Adobe Campaign (via ett meddelande som skickats till forumet av den här operatorn, en uppgift som tilldelats dem) och klicka på den för att komma åt deras instrumentpanel. Du kan också be administratören att skapa en vy över operatörsmappen.
 
 ## Prenumerera på ett forum {#subscribing-to-a-forum}
 

@@ -6,9 +6,9 @@ audience: web
 content-type: reference
 topic-tags: online-surveys
 exl-id: 0b5dc602-e16f-4bf1-bd8f-352e0bc78996
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 98380c18b915cfebc980e68f9840f9d8919eaca4
 workflow-type: tm+mt
-source-wordcount: '841'
+source-wordcount: '839'
 ht-degree: 1%
 
 ---
@@ -45,7 +45,7 @@ Om du vill lägga till en begränsning markerar du den i listrutan. Det finns tv
 
 Om det här fältet används i en lista kan uppräkningsvärdena hämtas automatiskt i värdetabellen med hjälp av **[!UICONTROL Initialize the list of values from the database]** ovanför listan med värden.
 
-Du kan till exempel skapa en listruta där användaren kan välja sitt modersmål. Motsvarande arkiverade fält kan associeras med **språk** uppräkning som innehåller en lista med språk:
+Du kan till exempel skapa en nedrullningsbar lista där användaren kan välja sitt modersmål. Motsvarande arkiverade fält kan associeras med **språk** uppräkning som innehåller en lista med språk:
 
 ![](assets/s_ncs_admin_survey_database_values_2b.png)
 

@@ -6,10 +6,10 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: c7688c2a-f0a7-4c51-a4cf-bf96fe8bf9b6
-source-git-commit: d750e13d3770d3b36b5f4376233d4da458730ed7
-workflow-type: ht
-source-wordcount: '2420'
-ht-degree: 100%
+source-git-commit: 71a5433db3ce2af5a25e5f861bd6f1dfb9aa8934
+workflow-type: tm+mt
+source-wordcount: '2425'
+ht-degree: 98%
 
 ---
 
@@ -281,7 +281,7 @@ Anropa sedan sekretess-API:et:
 
    * Du kan använda ett **queryDef**-schema på **nms:gdprRequest**-schemat för att kontrollera statusen på åtkomstförfrågan.
    * Du kan använda ett **queryDef**-schema på **nms:gdprRequestData**-schemat för att få resultatet av åtkomstförfrågan.
-   * Om du vill kunna hämta XML-filen från **&quot;$(serverUrl)&#39;/nms/gdpr.jssp?id=&#39;@id&quot;** måste du vara inloggad och komma åt den från en tillåtelselistad IP-adress. Du gör det genom att skapa en webbapplikation som ger dig åtkomst till filen som genereras av JSSP.
+   * För att kunna hämta XML-filen från **&quot;$(serverUrl)&#39;/nms/gdpr.jssp?id=&#39;@id&quot;** måste du vara inloggad och komma åt den från en IP som ingår i tillåtelselista. Du gör det genom att skapa en webbapplikation som ger dig åtkomst till filen som genereras av JSSP.
 
 ### Anropa API:et med JS {#invoking-api-from-js}
 

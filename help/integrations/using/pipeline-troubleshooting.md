@@ -5,9 +5,9 @@ description: Konfigurera integreringen
 audience: integrations
 content-type: reference
 exl-id: 76645a6f-9536-49d6-b12a-fdd6113d31fa
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 1d32161d60f6b382188012b104c642f504e28645
 workflow-type: tm+mt
-source-wordcount: '692'
+source-wordcount: '693'
 ht-degree: 1%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 1%
 Din version av Adobe Campaign Classic stöder inte pipeline.
 
 1. Kontrollera om [!DNL pipelined] -elementet finns i konfigurationsfilen. Annars betyder det att det inte stöds.
-1. Uppgradera till Campaign 20.3 eller [!DNL Gold Standard] 11.
+1. Uppgradera till Campaign 20.3 / [!DNL Gold Standard] 11 eller senare.
 
 **Pipelined misslyckas med &quot;aurait d¢commencer par `[` Du `{` (iRc=16384)&quot;**
 

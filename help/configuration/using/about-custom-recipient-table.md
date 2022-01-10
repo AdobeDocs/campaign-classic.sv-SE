@@ -6,24 +6,22 @@ audience: configuration
 content-type: reference
 topic-tags: use-a-custom-recipient-table
 exl-id: d8cea496-b3f3-420a-bf6e-b7cbb321b30d
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: fb4b4c42b907e86813ea570f912312fccf893bfe
 workflow-type: tm+mt
-source-wordcount: '666'
+source-wordcount: '667'
 ht-degree: 2%
 
 ---
 
 # Använd en anpassad mottagartabell{#about-custom-recipient-table}
 
-![](../../assets/v7-only.svg)
+![](../../assets/common.svg)
 
-I det här avsnittet beskrivs principerna för användning av en mottagartabell som inte är standard.
+I det här avsnittet beskrivs principerna för hur du använder en anpassad (eller extern) mottagartabell.
 
-Som standard har Adobe Campaign en mottagartabell som färdiga funktioner och processer är länkade till. Standardmottagartabellen har ett antal fördefinierade fält och tabeller som enkelt kan utökas med hjälp av en tilläggstabell.
+Som standard har Adobe Campaign en inbyggd mottagartabell som färdiga funktioner och processer är länkade till. Den inbyggda mottagartabellen har ett antal fördefinierade fält och tabeller som enkelt kan utökas med hjälp av en tilläggstabell.
 
 Om den här tilläggsmetoden ger stor flexibilitet för att utöka en tabell kan inte antalet fält eller länkar i den minskas. Om du använder en tabell som inte är standard, eller en &quot;extern mottagartabell&quot;, får du större flexibilitet men det krävs vissa försiktighetsåtgärder när du implementerar den.
-
-## Precision {#precisions}
 
 Med den här funktionen kan Adobe Campaign bearbeta data från en extern databas: dessa data kommer att användas som en uppsättning profiler för leveranser. Implementeringen av den här processen innefattar flera precisioner som kan vara relevanta beroende på kundens behov. Till exempel:
 
@@ -31,14 +29,14 @@ Med den här funktionen kan Adobe Campaign bearbeta data från en extern databas
 * Inga ändringar i processerna som körs på den befintliga databasen.
 * Använda en profildatabas med en icke-standardstruktur: möjlighet att leverera till profiler som sparats i olika tabeller med olika strukturer, med en enda instans.
 * Inga ändringar eller inget underhåll krävs vid uppdatering av Adobe Campaign-databasen.
-* Standardmottagartabellen är värdelös om du inte behöver de flesta tabellfälten eller om databasmallen inte är centrerad på mottagarna.
-* För att vara effektiv krävs en tabell med få fält om du har ett stort antal profiler. Standardmottagartabellen har för många fält för det här specifika fallet.
+* Den inbyggda mottagartabellen är värdelös om du inte behöver de flesta tabellfälten eller om databasmallen inte är centrerad på mottagarna.
+* För att vara effektiv krävs en tabell med få fält om du har ett stort antal profiler. Den inbyggda mottagartabellen har för många fält för det här specifika fallet.
 
-I det här avsnittet beskrivs de huvudpunkter som gör att du kan mappa befintliga tabeller i Adobe Campaign och konfigurationen som ska användas för att köra leveranser baserat på valfri tabell. Slutligen beskrivs hur man ger användarna möjlighet att fråga efter gränssnitt som är lika praktiska som de som finns i den vanliga mottagartabellen. För att förstå det material som presenteras i detta avsnitt krävs god kunskap om principerna för skärm och schemadesign.
+I det här avsnittet beskrivs de huvudpunkter som gör att du kan mappa befintliga tabeller i Adobe Campaign och konfigurationen som ska användas för att köra leveranser baserat på valfri tabell. Slutligen beskrivs hur man ger användarna tillgång till gränssnitt som är lika praktiska som de som finns i den inbyggda mottagartabellen. För att förstå det material som presenteras i detta avsnitt krävs god kunskap om principerna för skärm och schemadesign.
 
 ## Recommendations och begränsningar {#recommendations-and-limitations}
 
-Användningen av en extern mottagartabell har följande begränsningar:
+Användningen av en anpassad mottagartabell har följande begränsningar:
 
 * Adobe Campaign har inte stöd för flera mottagarscheman, vilket kallas målinriktningsscheman, som är länkade till samma sändnings- och/eller spårningsloggscheman. Detta kan i annat fall leda till avvikelser i dataavstämningen efteråt.
 

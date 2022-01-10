@@ -6,9 +6,9 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: 2b282221-d048-4f6e-b52e-f8e584af2c0e
-source-git-commit: 1a9e0f8bf374e10af938d15dcebe943819ae327b
+source-git-commit: 1d32161d60f6b382188012b104c642f504e28645
 workflow-type: tm+mt
-source-wordcount: '1572'
+source-wordcount: '1557'
 ht-degree: 2%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 2%
 
 ## Kontext
 
-Som värdefull kund hos Adobe Campaign Classic vill vi ge dig den bästa upplevelsen och det bästa värdet. Under årens lopp har vi insett värdet och tillförlitligheten med att vara värd för våra kunder i molnet.  Som en del av [Gold Standard Initiative](../../rn/using/gold-standard.md)flyttar vi alla våra kunder till Adobe Managed Services (Public Cloud på AWS) för att erbjuda bättre och tillförlitligare tjänster.
+Som värdefull kund hos Adobe Campaign Classic vill vi ge dig den bästa upplevelsen och det bästa värdet. Under årens lopp har vi insett värdet och tillförlitligheten med att vara värd för våra kunder i molnet.  Som en del av [Årlig Upgrade Initiative](../../rn/using/rn-overview.md#yearly-upgrade)flyttar vi alla våra kunder till Adobe Managed Services (Public Cloud på AWS) för att erbjuda bättre och tillförlitligare tjänster.
 
 Det här programmet har tre huvudmål:
 
@@ -31,7 +31,7 @@ Det här programmet har tre huvudmål:
 
 * **Bygg uppgradering** - När Adobe Campaign Classic-programvaran uppdateras till det senaste säkra versionsnumret, men ändå ligger kvar på samma större/mindre nivå. Till exempel: Campaign v7 20.2.3 build 9182 to Campaign v7 21.2.5 build 9188. [Läs mer](../../platform/using/faq-build-upgrade.md).
 * **MID/RT** - Meddelandekörningsservrar på Adobe Cloud (MID för batchkampanjer och RT för enhetsmeddelanden i realtid)
-* **Uppgradering av Gold Standard** - det här programmet ger förbättrad säkerhet, förbättrad support, förbättrat underhåll och stabilitet. Det underlättar också framtida uppgraderingar och ger tillgång till nya funktioner i Campaign.  [Läs mer](../../rn/using/gs-overview.md).
+* **Årsvis uppgraderingsprogram** - det här programmet ger förbättrad säkerhet, förbättrad support, förbättrat underhåll och stabilitet. Det underlättar också framtida uppgraderingar och ger tillgång till nya funktioner i Campaign.  [Läs mer](../../rn/using/rn-overview.md#yearly-upgrade).
 * **AWS** - Amazon Web Services (Amazon Public Cloud)
 * **SFTP** - Secured File Transfer Protocol. [Läs mer](../../platform/using/sftp-server-usage.md).
 
@@ -59,7 +59,7 @@ Det här programmet har tre huvudmål:
 
 * Förbättrad e-postkapacitet
 * Större databaser
-* Korrektur för kampanjversion - Gold Standard
+* Korrektur för kampanjversion
 
 **En robust, tillförlitlig lösning för Adobe Campaign Classic-kunder**
 
@@ -67,10 +67,10 @@ Det här programmet har tre huvudmål:
 1. Högre kapacitet för e-postsändning. Instanser som lagras i det nya datacentret kan dra nytta av en specialiserad infrastruktur för e-postleverans. Det kan leda till högre e-postleveranshastighet eller tillåta att färre IP-adresser skickas.
 1. Bättre skalbarhet för maskinvara. Ökning av maskinvaruresurserna kan göras mycket snabbare. Tekniskt sett skulle det vara i storleksordningen 1 timme istället för flera dagar.
 
-**Gold Standard förenklar framtida uppgraderingar**
+**Årliga uppgraderingar gör framtida uppgraderingar enklare**
 
 1. Ju längre organisationen väntar på att uppgradera, desto mer komplex blir uppgraderingen och möjligheten att drabbas av sårbarheter ökar (särskilt när man går över från en äldre version).
-1. Med uppgraderingen av Gold Standard kommer din instans att moderniseras och du kan få mer automatiska och regelbundna uppdateringar med mindre manuella åtgärder och mindre resurser.
+1. Med Campaign Annual Upgrade (som var Gold Standard-initiativ) kommer instansen att moderniseras och vara redo att ta emot mer automatiserade och regelbundna uppdateringar med mindre manuell insats och mindre resurser.
 
 ![](assets/GSMigrations.png)
 
@@ -84,7 +84,7 @@ En migrering kan initieras av [öppna ett nytt supportärende för kundtjänst](
 
 ### Är migreringen obligatorisk?
 
-Migreringen till molnet är **första steget till [Gold Standard-certifiering](../../rn/using/gs-overview.md)** av dina Adobe Campaign-förekomster. Migreringen är obligatorisk om du är värd i ett datacenter som inte är det offentliga molnet (AWS).
+Migreringen till molnet är **första steget till [årligt uppgraderingsprogram](../../rn/using/rn-overview.md#yearly-upgrade)** av dina Adobe Campaign-förekomster. Migreringen är obligatorisk om du är värd i ett datacenter som inte är det offentliga molnet (AWS).
 
 Adobe Managed Services-molnet ligger på Amazon Web Services (AWS), en modern, säker och optimerad miljö. [Läs mer om AWS](https://aws.amazon.com/application-hosting/benefits/).
 
@@ -109,12 +109,6 @@ Vi har gjort stora ansträngningar för att utveckla tekniker som gör migrering
 
 Läs mer i Campaign-migrering till [Vanliga frågor om Public Cloud](dc-migration-faq.md).
 
-
-## Certifiering av resa till Gold Standard
-
-Vi hjälper dig med valideringsstegen mellan varje milstolpe.
-
-![](assets/GS-milestones.png)
 
 ## Migreringsväg till Public Cloud
 
@@ -216,5 +210,5 @@ Normalt har domänen som används för att skicka e-post (del till höger om @-t
 ## Support och andra användbara länkar{#support}
 
 * [Migrering till Adobe Managed Services (Public Cloud) - frågor och svar](dc-migration-faq.md)
-* [Gold Standard - uppgradering](../../rn/using/gs-overview.md)
+* [Årliga uppgraderingar för kampanj](../../rn/using/rn-overview.md)
 * [Vanliga frågor om uppgradering](../../platform/using/faq-build-upgrade.md)

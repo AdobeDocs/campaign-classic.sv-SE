@@ -6,9 +6,9 @@ audience: production
 content-type: reference
 topic-tags: production-procedures
 exl-id: 1c032ef9-af11-4947-90c6-76cb9434ae85
-source-git-commit: bd9f035db1cbad883e1f27fe901e34dfbc9c1229
+source-git-commit: 30f2451849dec0f640915e81c36d0a9c5f466d6c
 workflow-type: tm+mt
-source-wordcount: '500'
+source-wordcount: '495'
 ht-degree: 1%
 
 ---
@@ -43,7 +43,6 @@ De tillgängliga modulerna beskrivs i följande tabell:
 | fakturering | Skicka systemaktivitetsrapporten till billing@neolane.net |
 | rensa | Rensar databasen: tar bort inaktuella data från databasen och kör en uppdatering av statistiken som används av databasmotoroptimeraren. |
 | config | Ändrar serverkonfiguration |
-| copybase | Kopia av databas |
 | export | Exportera till kommandorad: gör att du kan skicka en exportmodell som skapats i Adobe Campaign klientkonsol till kommandoraden |
 | filconvert | Konvertera en fil med fast storlek |
 | import | Importera till kommandoraden: Med kan du skicka en importmodell som har skapats i Adobe Campaign klientkonsol till kommandoraden. |

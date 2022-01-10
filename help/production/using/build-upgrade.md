@@ -6,9 +6,9 @@ audience: production
 content-type: reference
 topic-tags: updating-adobe-campaign
 exl-id: c5a9c99a-4078-45d8-847b-6df9047a2fe2
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 1d32161d60f6b382188012b104c642f504e28645
 workflow-type: tm+mt
-source-wordcount: '2353'
+source-wordcount: '2356'
 ht-degree: 2%
 
 ---
@@ -412,4 +412,4 @@ Så här utför du en komplex sammanfogning:
 * [Vanliga frågor och svar om Builduppgradering](../../platform/using/faq-build-upgrade.md)
 * [Versionsinformation för Campaign Classic](../../rn/using/rn-overview.md)
 * [Hjälp- och supportalternativ för Campaign Classic](../../support.md)
-* [[!DNL Gold Standard] program](../../rn/using/gs-overview.md)
+* [Kampanjårsuppgraderingsprogram](../../rn/using/rn-overview.md)

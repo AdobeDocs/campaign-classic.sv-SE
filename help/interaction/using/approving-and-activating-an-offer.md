@@ -6,7 +6,7 @@ audience: interaction
 content-type: reference
 topic-tags: managing-an-offer-catalog
 exl-id: cf7649fe-f62a-4dfa-a19e-9c1ca545e3e3
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: d835da6c7b55d9bf70b6b5dc58880718e12211d5
 workflow-type: tm+mt
 source-wordcount: '622'
 ht-degree: 2%
@@ -15,7 +15,7 @@ ht-degree: 2%
 
 # Godkänna och aktivera ett erbjudande{#approving-and-activating-an-offer}
 
-![](../../assets/v7-only.svg)
+![](../../assets/common.svg)
 
 När innehållet i erbjudandet är klart måste du godkänna det för att det ska kunna dupliceras i den aktiva miljön och levereras. Godkännandet avser erbjudandeinnehållet och dess behörighet.
 

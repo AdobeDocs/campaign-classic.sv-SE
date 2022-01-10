@@ -6,9 +6,9 @@ audience: installation
 content-type: reference
 topic-tags: prerequisites-and-recommendations-
 exl-id: e1aff73a-54fb-444e-b183-df11c9b3df31
-source-git-commit: 4661a65c83f3b9b7da9ea902f387155c5933e59f
+source-git-commit: e55fff99fd5dec8da998310dc7026c1a506abadc
 workflow-type: tm+mt
-source-wordcount: '621'
+source-wordcount: '624'
 ht-degree: 3%
 
 ---
@@ -66,7 +66,7 @@ Befintliga kunder som kommer från en migrering kan använda varningsläget en s
 
 ## Kommandobegränsning (på serversidan)
 
-Flera kommandon är svartlistade och kan inte köras med funktionen execCommand. En extra säkerhetsfunktion tillhandahålls av en dedikerad Unix-användare för att köra externa kommandon. För värdbaserade installationer tillämpas den här begränsningen automatiskt. För lokala installationer kan du konfigurera den här begränsningen manuellt genom att följa instruktionerna från [den här sidan](../../installation/using/configuring-campaign-server.md#restricting-authorized-external-commands). Dessutom **[!UICONTROL Script]** och **[!UICONTROL External task]** arbetsflödesaktiviteter är inte tillgängliga (nyligen installerade instanser).
+Flera kommandon finns i blockeringslista och kan inte utföras med funktionen execCommand. En extra säkerhetsfunktion tillhandahålls av en dedikerad Unix-användare för att köra externa kommandon. För värdbaserade installationer tillämpas den här begränsningen automatiskt. För lokala installationer kan du konfigurera den här begränsningen manuellt genom att följa instruktionerna från [den här sidan](../../installation/using/configuring-campaign-server.md#restricting-authorized-external-commands). Dessutom **[!UICONTROL Script]** och **[!UICONTROL External task]** arbetsflödesaktiviteter är inte tillgängliga (nyligen installerade instanser).
 
 ## Andra konfigurationer
 

@@ -6,10 +6,10 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: 07c1f4a3-cf16-4a9b-b402-e13258799f91
-source-git-commit: f2cb3323bc5df3aae16a4ae4cf80c30bf53b006e
+source-git-commit: 87067a0cca1a4a7f8ea1137ece6d513d58fcdb42
 workflow-type: tm+mt
-source-wordcount: '4705'
-ht-degree: 97%
+source-wordcount: '4796'
+ht-degree: 95%
 
 ---
 
@@ -21,7 +21,31 @@ Den här sidan visar alla nya funktioner och dokumentationsuppdateringar efter m
 
 Se [Versionsinformationen för Adobe Campaign Classic](../../rn/using/latest-release.md) beträffande versionsrelaterade uppdateringar.
 
-## December 2021{#dec-2021}
+## 2022
+
+### Januari
+
+**Dokumentationsuppdateringar kommer med utgåvan 7.2.1**
+
+Uppdaterad kompatibilitetsmatris. [Läs mer](compatibility-matrix.md)
+
+Uppdaterat avsnitt med versionsinformation. [Läs mer](rn-overview.md)
+
+Uppdaterad konfiguration av externt FDA-konto för Snowflake. [Läs mer](../../installation/using/configure-fda-snowflake.md)
+
+Uppdaterad konfiguration av externt FDA-konto för Azure synapse Analytics. [Läs mer](../../installation/using/configure-fda-synapse.md#azure-external)
+
+Google BigQuery FDA Connector har uppdaterats. [Läs mer](../../installation/using/configure-fda-google-big-query.md)
+
+Efter borttagningen har åtgärderna Microsoft CRM, Salesforce och Oracle CRM On Demand tagits bort från dokumentationen.
+
+Nytt alternativ **Avbryt vid fel** läggs till i avsnittet Felhantering för arbetsflöde. [Läs mer](../../workflow/using/advanced-parameters.md#in-case-of-errors)
+
+Tillagt batchuppdateringsalternativ i CRM-anslutningsaktiviteten. [Läs mer](../../workflow/using/crm-connector.md)
+
+## 2021
+
+### December 2021{#dec-2021}
 
 Versionsinformation om Campaign Classic v7 har omstrukturerats för att förenkla navigeringen. [Läs mer](rn-overview.md)
 
@@ -29,7 +53,7 @@ Dokumentationen om formulärversionen i Campaign har uppdaterats och förbättra
 
 CentOs 8 har nått slutet av livscykeln och är nu föråldrat i Adobe Campaign Classic. [Läs mer](deprecated-features.md)
 
-## November 2021{#nov-2021}
+### November 2021{#nov-2021}
 
 En begränsning för inkommande SMS (MO) har lagts till. [Läs mer](../../delivery/using/sms-protocol.md#multipart)
 
@@ -46,13 +70,13 @@ Lagt till ett avsnitt om hur du använder JavaScript för att beräkna värden, 
 Lagt till exempel på JavaScript-kodimplementering i arbetsflöden. [Läs mer](../../workflow/using/javascript-in-workflows.md)
 
 
-## Oktober 2021{#oct-2021}
+### Oktober 2021{#oct-2021}
 
 Befintliga tekniska anmärkningar har grupperats i det nya avsnittet **Technote**.
 
 Sidan **Rekommendationer för storleksändring av maskinvara** har uppdaterats och lagts till i avsnittet **Technotes**. [Läs mer](../../technotes/using/hardware-sizing.md)
 
-## September 2021{#sept-2021}
+### September 2021{#sept-2021}
 
 **Dokumentationsuppdateringar kommer med utgåvan 21.1.4**
 
@@ -62,7 +86,7 @@ Skärmbilder och parametrar för rapporter och webbprogram har uppdaterats efter
 
 Beskrivningen av de [tekniska arbetsflödet för fakturering](../../production/using/monitoring-processes.md#billing-report) har uppdaterats med ett nytt skyddsförslag.
 
-## Augusti 2021{#aug-2021}
+### Augusti 2021{#aug-2021}
 
 Ny arbetsflödesaktivitet har lagts till: Ändra datakälla – [Läs mer](../../workflow/using/change-data-source.md)
 
@@ -71,12 +95,12 @@ Tillämplighetsemblem har lagts till på dokumentationssidorna: **Gäller endast
 Ett meddelande har lagts till om integrationen mellan Campaign och AEM Assets, som har tagits bort från och med Adobe Experience Manager 6.4. [Läs mer](../../integrations/using/configuring-access-to-assets.md)
 
 
-## Juli 2021 {#july-2021}
+### Juli 2021 {#july-2021}
 
 [Campaign version 21.1.3](../../rn/using/latest-release.md#release-21-1-3-build-9330) har flyttats till Allmän tillgänglighet (GA).
 
 
-## Juni 2021 {#june-2021}
+### Juni 2021 {#june-2021}
 
 Avsnittet **Transaktionella meddelanden** har organiserats om och förtydligats med ett nytt Kom igång-avsnitt, inklusive ett [förbättrat schema](../../message-center/using/about-transactional-messaging.md#transactional-messaging-operating-principle) för att ge en bättre förståelse för processen. [Läs mer](../../message-center/using/about-transactional-messaging.md)
 
@@ -88,11 +112,11 @@ Förbättringar av LINE-kanaler – [Läs mer](../../delivery/using/line-channel
 
 Ny Vertica FDA-koppling – [Läs mer](../../installation/using/configure-fda-vertica.md)
 
-Ny Google Big Query FDA-koppling – [Läs mer](../../installation/using/configure-fda-google-big-query.md)
+Ny Google BigQuery FDA-kontakt - [Läs mer](../../installation/using/configure-fda-google-big-query.md)
 
 Den tekniska arbetsflödesbeskrivningen &quot;Fakturering (fakturering)&quot; omfattar nu de uppgifter som ursprungligen utfördes av &quot;Antal aktiva faktureringsprofiler (billingActiveContactCount)&quot;. [Läs mer](../../workflow/using/about-technical-workflows.md)
 
-## Maj 2021 {#may-2021}
+### Maj 2021 {#may-2021}
 
 Rapportdokumentationen för värmekartor för arbetsflöden har uppdaterats och förbättrats. [Läs mer](../../workflow/using/heatmap.md)
 
@@ -102,13 +126,13 @@ Steg för steg-installationen av Campaign Client Console har förbättrats och k
 
 Ett nytt tekniskt meddelande har skapats om signeringsproblemet för spårade URL:er. [Läs mer](../../technotes/using/tracked-urls.md)
 
-## April 2021 {#april-2021}
+### April 2021 {#april-2021}
 
 Ett nytt avsnitt har lagts till som handlar om hur man arbetar med källor och destinationer i Adobe Experience Platform för att dela data mellan Campaign Classic och Adobes kunddataplattform i realtid (RTCDP). [Läs mer](../../integrations/using/get-started-sources-destinations.md)
 
 Ett nytt tekniskt meddelande har skapats för att beskriva hur man uppdaterar studskompetens efter ett avbrott i en internetleverantör. [Läs mer](../../delivery/using/update-bounce-qualification.md)
 
-## Mars 2021 {#march-2021}
+### Mars 2021 {#march-2021}
 
 [Avsnittet Komma igång med SMS](../../delivery/using/sms-channel.md) har omstrukturerats och förbättrats. Nu kan läsa om hur du [konfigurerar SMS-kanalen](../../delivery/using/sms-set-up.md), [skapar ett SMS](../../delivery/using/sms-create.md) samt [skickar och spårar SMS](../../delivery/using/sms-send.md) i dedikerade avsnitt.
 
@@ -129,7 +153,7 @@ Information har lagts till i avsnittet om **[!UICONTROL Advanced JavaScript]**-a
 
 Avsnittet [Levererbarhet](../../delivery/using/about-deliverability.md) har uppdaterats och innehåller nu länkar till den nya [Adobe Deliverability Best Practice Guide](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html?lang=sv). All generisk information om levererbarhet som kan tillämpas på olika Adobe-lösningar har flyttats till [bilagan för Best Practice Guide](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/general-resources.html?lang=sv#additional-resources).
 
-## Februari 2021 {#release-21.1}
+### Februari 2021 {#release-21.1}
 
 **Dokumentationsuppdateringar kommer med utgåvan 21.1**
 
@@ -155,7 +179,7 @@ Avsnittet **Skicka ett e-postmeddelande** har ordnats om och förtydligats med n
 
 Information har lagts till om hur du lägger till länkar i e-postmeddelanden som kan personaliseras och som har stöd för spårning. [Läs mer](../../delivery/using/tracking-personalized-links.md).
 
-## Januari 2021 {#jan-2021}
+### Januari 2021 {#jan-2021}
 
 Aktivitetsavsnittet **[!UICONTROL Fork]** har berikats med bästa praxis. [Läs mer](../../workflow/using/fork.md)
 
@@ -173,7 +197,14 @@ Avsnittet Felsökning i användarhandboken **Övervakning** har omorganiserats o
 
 Det finns ett nytt avsnitt gällande att **importera och exportera data** med nya sidor som rör bästa praxis för arbetsflöden, datakomprimering, kryptering och import. [Läs mer](../../platform/using/get-started-data-import-export.md)
 
-## December 2020 {#dec-2020}
+
+
+
+
+
+## 2020
+
+### December 2020 {#dec-2020}
 
 Avsnittet **Leveransövervakning** har omorganiserats med tematiska ämnen. [Läs mer](../../delivery/using/about-delivery-monitoring.md)
 
@@ -187,7 +218,7 @@ Protokoll- och inställningssidan med en fullständig beskrivning beträffande S
 
 Information har lagts till i avsnittet **Transaktionsmeddelanden** som varnar för att händelsemapparna inte får anges som vyer över körningsinstanserna för att undvika problem med åtkomsträttigheter. [Läs mer](../../message-center/using/about-event-processing.md#event-collection)
 
-## November 2020 {#nov-2020}
+### November 2020 {#nov-2020}
 
 Översikten över kampanjdatamodellen har förbättrats och omorganiserats. [Läs mer](../../configuration/using/about-data-model.md).
 
@@ -207,7 +238,7 @@ Avsnittet Personuppgifter och personer har uppdaterats med ett användningsfall 
 
 Ett nytt avsnitt som listar vanliga frågor och svar gällande integritet har lagts till. [Läs mer](../../platform/using/privacy-faq.md)
 
-## Oktober 2020 {#oct-2020}
+### Oktober 2020 {#oct-2020}
 
 **Nya funktioner i version 20.3**
 
@@ -221,8 +252,8 @@ Kompatibilitetsmatrisen har uppdaterats. [Läs mer](../../rn/using/compatibility
 
 Sidan Inaktuella och borttagna funktioner har uppdaterats. [Läs mer](../../rn/using/deprecated-features.md)
 
-Versionsinformation och kompatibilitetsmatris för [!DNL Gold Standard]-versionen finns nu i ett särskilt avsnitt.
-[Läs mer](../../rn/using/gold-standard.md#gs-11).
+Versionsinformation och kompatibilitetsmatris för [!DNL Gold Standard] finns nu på en dedikerad sida.
+[Läs mer](../../rn/using/gold-standard.md).
 
 Integrering av utlösare som ursprungligen baserades på oAUTH-autentiseringsinställningar för åtkomst till pipelines har nu ändrats och flyttats till Adobe I/O. [Läs mer](../../integrations/using/configuring-adobe-io.md)
 
@@ -246,7 +277,7 @@ Sidan med rapportegenskaper har omorganiserats och förbättrats för att underl
 
 Ett nytt tekniskt dokument har skapats med information om hur du migrerar från det gamla binära protokollet till HTTP/2-baserade API:er från APN-leverantören. [Läs mer](https://helpx.adobe.com/se/campaign/kb/migrate-to-apns-http2.html)
 
-## September 2020 {#september-2020}
+### September 2020 {#september-2020}
 
 En anteckning har lagts till för att specificera att antalet aktiva profiler endast är tillgängligt för marknadsföringsinstanser. [Läs mer](../../platform/using/about-profiles.md#active-profiles)
 
@@ -254,7 +285,7 @@ Ett nytt exempel om schemaversionen har lagts till för att länka ett fält til
 
 En anteckning har lagts till om användningen av ytterligare data med fröadresser vid leveranser. [Läs mer](../../delivery/using/creating-seed-addresses.md#defining-addresses)
 
-## Augusti 2020 {#aug-2020}
+### Augusti 2020 {#aug-2020}
 
 Läs om de bästa metoderna för leveransdesign och att skicka med Campaign i ett särskilt avsnitt. [Läs mer](../../delivery/using/delivery-best-practices.md)
 
@@ -293,7 +324,7 @@ Nya användningsfall har refererats i listan [Användningsfall med arbetsflöde]
 
 Aktivitetsavsnittet **[!UICONTROL AND-join]** har berikats med ytterligare information om hur det används samt en anteckning om användningen av variabler. [Läs mer](../../workflow/using/and-join.md)
 
-## Juli 2020 {#july-2020}
+### Juli 2020 {#july-2020}
 
 Ett användningsfall om hur man automatiskt uppdaterar en lista med en inkrementell fråga har lagts till i användningsfallen om arbetsflöde. [Läs mer](../../workflow/using/about-workflow-use-cases.md)
 
@@ -311,7 +342,7 @@ Information har lagts till om loggar om delarbetsflöden och beteende vid fel. [
 
 Bästa praxis har lagts till i aktivitetsavsnittet **[!UICONTROL Scheduler]**. [Läs mer](../../workflow/using/scheduler.md)
 
-## Juni 2020 {#june-2020}
+### Juni 2020 {#june-2020}
 
 Avsnittet Ta bort en adress i karantän har uppdaterats. Detta inkluderar förtydligande av de fall där adresser automatiskt tas bort från karantänlistan. [Läs mer](../../delivery/using/understanding-quarantine-management.md#removing-a-quarantined-address)
 
@@ -319,7 +350,7 @@ Användningsfall har lagts till om hur data [krypteras](../../platform/using/zip
 
 Sidan för integration av utlösare i Experience Cloud och Adobe Campaign Classic har flyttats [hit](../../integrations/using/about-triggers.md).
 
-## Juli 2020 {#release-20-2}
+### Juli 2020 {#release-20-2}
 
 **Nya funktioner i version 20.2**
 
@@ -351,7 +382,7 @@ Avsnittet Installation av Spam Assassin har uppdaterats med det nya namnet på i
 
 Avsnittet om att duplicera miljöer har uppdaterats. [Läs mer](../../production/using/duplicating-environments.md#step-2---export-the-target-environment-configuration--dev-)
 
-## Maj 2020 {#may-2020}
+### Maj 2020 {#may-2020}
 
 Avsnittet Övervaka levererbarhet har flyttats och förbättrats. [Läs mer](../../delivery/using/monitoring-deliverability.md)
 
@@ -363,7 +394,7 @@ Avsnittet Skicka transaktionsmeddelanden med bilagor har flyttats och uppdaterat
 
 Avsnittet Bästa praxis för datapaket har flyttats och uppdaterats. [Läs mer](../../platform/using/working-with-data-packages.md#data-package-best-practices)
 
-## April 2020 {#april-2020}
+### April 2020 {#april-2020}
 
 FDA-rättighetstabellen har flyttats till dokumentationen Åtkomst till en extern databas (FDA). [Läs mer](../../installation/using/remote-database-access-rights.md)
 
@@ -379,7 +410,7 @@ Avsnitten [Kvalificering av ej levererad e-post](../../delivery/using/understand
 
 Artikeln Adobe Campaign Enhanced MTA har uppdaterats. Den gäller nu endast Campaign Classic. [Läs mer](https://helpx.adobe.com/se/campaign/kb/acc-campaign-enhanced-mta.html)
 
-## Mars 2020 {#march-2020}
+### Mars 2020 {#march-2020}
 
 Bästa praxis för datamodeller har uppdaterats med nya avsnitt som inkluderar bland annat [Sekvenser](../../configuration/using/data-model-best-practices.md#sequences), [Prestanda](../../configuration/using/data-model-best-practices.md#performance) och [Stora tabeller](../../configuration/using/data-model-best-practices.md#large-tables). [Läs mer](../../configuration/using/data-model-best-practices.md)
 
@@ -393,7 +424,7 @@ Ett nytt avsnitt finns nu tillgängligt som beskriver de olika språk som finns 
 
 Riktlinjerna för åtkomsthantering har uppdaterats med mer information om namngivna rättigheter. [Läs mer](../../platform/using/access-management-named-rights.md)
 
-## Februari 2020 {#february-2020}
+### Februari 2020 {#february-2020}
 
 Ett nytt avsnitt finns nu tillgängligt som beskriver bästa praxis och viktiga rekommendationer när datamodellen i Adobe Campaign utformas. [Läs mer](../../configuration/using/data-model-best-practices.md)
 
@@ -405,7 +436,7 @@ AMP för e-post stöds nu av nya e-postleverantörer: den relaterade dokumentati
 
 Avsnittet E-postarkivering har förbättrats. [Läs mer](../../installation/using/email-archiving.md#recommendations-and-limitations)
 
-## Januari 2020 {#release-20-1}
+### Januari 2020 {#release-20-1}
 
 **Nya funktioner i version 20.1**
 
@@ -465,7 +496,9 @@ Rapporthandboken har uppdaterats och omorganiserats. [Läs mer](../../reporting/
 
 Ett exempel på hur du använder en instansvariabel i ett arbetsflöde har lagts till. [Läs mer](../../workflow/using/javascript-scripts-and-templates.md)
 
-## December 2019 {#december-2019}
+## 2019
+
+### December 2019 {#december-2019}
 
 Alternativet &quot;WdbcOptions_TempDbName&quot; har lagts till i listan över alternativ i Campaign. [Läs mer](../../installation/using/configuring-campaign-options.md)
 
@@ -503,7 +536,7 @@ En rekommendation för attributet **sqlDefault** i schemadefinitionen har lagts 
 
 Integrationen mellan Adobe Campaign och Adobe Real-time Customer Data Platform finns nu med i handboken **Integrera med Adobe Experience Cloud**. [Läs mer](../../integrations/using/about-campaign-integrations.md).
 
-## November 2019 {#november-2019}
+### November 2019 {#november-2019}
 
 En varning har lagts till i avsnitten [Multiplexering av mid-sourcing-servern](../../installation/using/mid-sourcing-server.md#multiplexing-the-mid-sourcing-server) och [Stöd för flera kontrollinstanser](../../message-center/using/transactional-messaging-architecture.md#supporting-several-control-instances) som beskriver att dessa driftsättningar inte har stöd för fullständigt värdbaserade klienter och hybridklienter.
 
@@ -517,7 +550,7 @@ Kontrollpanelens dokumentation har integrerats i den nya dokumentationsuppsättn
 
 Starthandboken Bästa praxis för leverans har uppdaterats. [Läs mer](../../delivery/using/delivery-best-practices.md)
 
-## Oktober 2019 {#october-2019}
+### Oktober 2019 {#october-2019}
 
 Listan över felmeddelanden i Campaign har uppdaterats. [Läs mer](https://experienceleague.adobe.com/developer/campaign-errors/error_codes.html?lang=sv)
 
@@ -535,7 +568,7 @@ Information om hur man förhindrar simultana exekveringar av arbetsflöden har l
 
 Stegen för att konfigurera inkorgsåtergivning på lokala installationer har lagts till i dokumentationen. [Läs mer](../../delivery/using/inbox-rendering.md#activating-inbox-rendering)
 
-## September 2019 {#september-2019}
+### September 2019 {#september-2019}
 
 En ny sida med allmänna riktlinjer om hur man underhåller Campaign Classic har lagts till. [Läs mer](../../production/using/monitoring-guidelines.md)
 
@@ -545,7 +578,7 @@ En ny sida med allmänna riktlinjer gällande spårning i Adobe Campaign Classic
 
 Bästa praxis för prestandaförbättringar i arbetsflöden och leveranser har uppdaterats. [Läs mer om arbetsflöden](../../workflow/using/workflow-best-practices.md) och [leveranser](../../delivery/using/delivery-performances.md#best-practices-performance).
 
-## Maj 2019 {#release-19-1}
+### Maj 2019 {#release-19-1}
 
 **Nya funktioner i version 19.1**
 
@@ -624,7 +657,7 @@ Handboken Ändra storlek på maskinvara i Campaign har uppdaterats. [Läs mer](h
 
 Information har lagts till om query banding för det externa Teradata-kontot. [Läs mer](../../installation/using/external-accounts.md)
 
-## Januari 2019{#release-doc-16-01-2019}
+### Januari 2019{#release-doc-16-01-2019}
 
 Den tekniska dokumentationen för utlösare i Marketing Cloud har uppdaterats. [Läs mer](../../integrations/using/about-triggers.md)
 

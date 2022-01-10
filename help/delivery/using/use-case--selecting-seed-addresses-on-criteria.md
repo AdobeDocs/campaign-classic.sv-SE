@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: using-seed-addresses
 exl-id: 091648b8-bf2d-4595-8be3-287f1ac48edd
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 98380c18b915cfebc980e68f9840f9d8919eaca4
 workflow-type: tm+mt
 source-wordcount: '838'
 ht-degree: 3%
@@ -23,7 +23,7 @@ I det här fallet används webbplatsen **Mitt onlinebibliotek** vill personalise
 
 Tillsammans med inköpsavdelningen har användaren som ansvarar för leveranser skapat ett nyhetsbrev för prenumeranter som har köpt polisnoveler.
 
-Leveranschefen bestämmer sig för att lägga till sina kollegor från inköpsavdelningen till leveransen som dirigeringsadresser för att dela slutresultatet av samarbetet med dem. Om du använder ett dynamiskt villkor kan du spara tid när du konfigurerar och uppdaterar adresser.
+För att kunna dela slutresultatet av samarbetet med dem bestämmer leveranschefen att lägga till kollegor från inköpsavdelningen till leveransen som dirigeringsadresser. Om du använder ett dynamiskt villkor kan du spara tid när du konfigurerar och uppdaterar adresser.
 
 Om du vill använda det dynamiska villkoret måste du ha:
 

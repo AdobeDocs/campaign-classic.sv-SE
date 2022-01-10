@@ -6,7 +6,7 @@ audience: configuration
 content-type: reference
 topic-tags: use-a-custom-recipient-table
 exl-id: 6fad3dac-9af0-4796-adcf-d1de4b255aca
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: fb4b4c42b907e86813ea570f912312fccf893bfe
 workflow-type: tm+mt
 source-wordcount: '89'
 ht-degree: 6%
@@ -15,9 +15,9 @@ ht-degree: 6%
 
 # Skapa filter{#creating-filters}
 
-![](../../assets/v7-only.svg)
+![](../../assets/common.svg)
 
-Precis som i den färdiga mottagartabellen som medföljer Adobe Campaign kan den nya mottagartabellen få en uppsättning fördefinierade filter.
+Precis som den inbyggda mottagartabellen som medföljer Adobe Campaign kan den nya mottagartabellen få en uppsättning fördefinierade filter.
 
 Dessa filter kommer att vara tillgängliga i målurvalsfönstret med samma funktioner som segment för mottagare (med hjälp av parameterindataformulär, mappar osv.).
 

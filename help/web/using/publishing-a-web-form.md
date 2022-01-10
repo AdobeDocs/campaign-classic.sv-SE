@@ -6,9 +6,9 @@ audience: web
 content-type: reference
 topic-tags: web-forms
 exl-id: 1c66b8e8-7590-4767-9b2f-a9a509df4508
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 98380c18b915cfebc980e68f9840f9d8919eaca4
 workflow-type: tm+mt
-source-wordcount: '965'
+source-wordcount: '963'
 ht-degree: 1%
 
 ---
@@ -69,7 +69,7 @@ The **[!UICONTROL Auto-load data referenced in the form]** kan du automatiskt f�
 
 The **[!UICONTROL Load additional data]** Med kan du lägga till information som inte används på formulärets sidor, men som ändå kommer att läsas in i förväg.
 
-Du kan till exempel förhandsladda mottagarens kön och automatiskt dirigera honom eller henne till rätt sida via en testruta.
+Du kan till exempel förhandsladda mottagarens kön och automatiskt dirigera dem till rätt sida via en testruta.
 
 ![](assets/s_ncs_admin_survey_preload_ex.png)
 

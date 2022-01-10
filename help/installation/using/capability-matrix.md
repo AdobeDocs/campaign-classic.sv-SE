@@ -6,10 +6,10 @@ audience: installation
 content-type: reference
 topic-tags: architecture-and-hosting-models
 exl-id: a2c425a8-9bde-4259-9140-5ada5397ed5f
-source-git-commit: 32f55d02920b0104198f809b1be0a91306a4d9e4
+source-git-commit: 1f8a51fc7760e8dcdf369cb759de724b0e7bea0c
 workflow-type: tm+mt
-source-wordcount: '298'
-ht-degree: 19%
+source-wordcount: '293'
+ht-degree: 20%
 
 ---
 
@@ -47,8 +47,7 @@ Adobe Campaign tillhandahåller **Åtkomst till federerade data** (FDA) för att
 
 >[!CAUTION]
 >
->Åtkomst till en extern databas via FDA är endast möjlig för anläggningsinstallationer eller hybridinstallationer, utom med [Snowflake-kontakt](../../installation/using/configure-fda-snowflake.md).
-
+>Kompatibla externa databassystem beror på din värdmodell. Läs mer i [Matris för kampanjkompatibilitet](../../rn/using/compatibility-matrix.md).
 
 **Se även**
 
@@ -57,4 +56,3 @@ Adobe Campaign tillhandahåller **Åtkomst till federerade data** (FDA) för att
 * [Campaign Classic-uppgraderingar](../../rn/using/rn-overview.md)
 * [Inaktuella och borttagna funktioner](../../rn/using/deprecated-features.md)
 * [[!DNL Gold Standard]-versioner ](../../rn/using/gold-standard.md)
-* [[!DNL Gold Standard] program](../../rn/using/gs-overview.md)

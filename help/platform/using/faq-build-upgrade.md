@@ -6,10 +6,10 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: 85e2135d-a1a3-44f0-a4f9-de38db5c8726
-source-git-commit: cfba72840f7a0d335516d38be24363865d83d18d
+source-git-commit: 1d32161d60f6b382188012b104c642f504e28645
 workflow-type: tm+mt
-source-wordcount: '2024'
-ht-degree: 5%
+source-wordcount: '2023'
+ht-degree: 3%
 
 ---
 
@@ -21,7 +21,7 @@ Adobe Campaign uppdateras regelbundet. Om du känner till vår publicerade [Vers
 
 Det är viktigt att våra kunder kör den senaste versionen av Adobe Campaign. Det gör också att Adobe kan hjälpa till mycket effektivare om du stöter på problem - det tar ofta längre tid att identifiera, återge och åtgärda ett fel i en gammal version, för att inte tala om att vissa problem som du kanske stöter på redan har åtgärdats i en nyligen gjord version.
 
-[!DNL Gold Standard] är versionen av Campaign Classic med långsiktig support. Som en värdbaserad [!DNL Gold Standard]-användare har du automatiskt tillgång till [!DNL Gold Standard]-uppgraderingen med den senaste stabila versionen utan någon åtgärd. Kunder med lokala installationer eller hybridlösningar kan också dra nytta av [!DNL Gold Standard]-versioner. Om du migrerar från en gammal build rekommenderar vi att du uppgraderar till den här versionen först. [Läs mer](../../rn/using/gs-overview.md).
+Som värdanvändare får ni automatiskt den årliga uppgraderingen av Campaign med den senaste stabila versionen utan någon åtgärd. Även kunder som har lokaler och hybridkunder kan dra nytta av den här versionen. Om du migrerar från en gammal build rekommenderar vi att du uppgraderar till den här versionen först. [Läs mer](../../rn/using/rn-overview.md).
 
 ## Vad är en bygguppgradering?
 
@@ -206,4 +206,4 @@ allt innehåll visas och visas.
 * [Utföra en uppgradering av din build](../../production/using/build-upgrade.md)
 * [Versionsinformation för Campaign Classic](../../rn/using/rn-overview.md)
 * [Hjälp- och supportalternativ för Campaign Classic](../../support.md)
-* [[!DNL Gold Standard] program](../../rn/using/gs-overview.md)
+* [Årligt uppgraderingsprogram](../../rn/using/rn-overview.md#yearly-upgrade)

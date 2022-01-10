@@ -6,7 +6,7 @@ audience: campaign
 content-type: reference
 topic-tags: tasks--resources-and-budgets
 exl-id: cc1200fa-f6d8-4f41-aed1-d1a7f229447a
-source-git-commit: 8b970705f0da6a9e09de9fadb3e1a8c5f4814f9f
+source-git-commit: 98380c18b915cfebc980e68f9840f9d8919eaca4
 workflow-type: tm+mt
 source-wordcount: '3729'
 ht-degree: 0%
@@ -103,7 +103,7 @@ De markeras med **[!UICONTROL Resources]** i verktygsfältet. Klicka **[!UICONTR
 
 Klicka **[!UICONTROL Ok]** och ange sedan användarfrekvensen: detta representerar den belastning som tilldelats operatorn för uppgiftskörningens varaktighet. Denna procentsats är endast en indikation och uttrycks som en procentandel.
 
-För en aktivitet vars körningsschema är inställt på 10 dagar, kommer till exempel en operator vars användningsgrad är 50 % att mobiliseras för den här aktiviteten för halva arbetstiden i 10 dagar.
+För en aktivitet vars körningsschema är inställt på 10 dagar, kommer till exempel en operator vars användarfrekvens är 50 % att aktiveras för den här aktiviteten för halva arbetstiden i 10 dagar.
 
 För varje operator kan du ange en schemalagd arbetsbelastning och en faktisk arbetsbelastning. Dessa varaktigheter är också avsedda endast som information.
 
@@ -472,7 +472,7 @@ Nedan visas de steg i en komplett uppgiftslivscykel för vilka den ansvariga per
 
    ![](assets/s_ncs_user_task_percentage_done_op.png)
 
-1. Granskaren får ett e-postmeddelande om att operatören har slutfört det avsnitt som tilldelats dem.
+1. Granskaren får ett e-postmeddelande som talar om för dem att operatorn har slutfört det avsnitt som tilldelats dem.
 
    De kan följa förloppet på kontrollpanelen för uppgifter.
 

@@ -6,10 +6,10 @@ feature: Overview
 role: Data Engineer
 level: Beginner
 exl-id: 5f689679-7148-4abd-a9bf-185854c64b13
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 1d32161d60f6b382188012b104c642f504e28645
 workflow-type: tm+mt
-source-wordcount: '825'
-ht-degree: 4%
+source-wordcount: '909'
+ht-degree: 3%
 
 ---
 
@@ -35,17 +35,17 @@ Från den centrala delen av startsidan kan du använda länkar för att få åtk
 
 ### Konsol- och webbåtkomst {#console-and-web-access}
 
-Adobe Campaign-plattformen är tillgänglig via en konsol eller en webbläsare.
+Adobe Campaign-plattformen är tillgänglig via en konsol eller en webbläsare. Se kompatibla webbläsare i [kompatibilitetsmatris](../../rn/using/compatibility-matrix.md#Browsers).
 
-Webbåtkomsten har ett gränssnitt som liknar konsolen men med en reducerad uppsättning funktioner.
+Webbgränssnittet liknar konsolgränssnittet. Från en webbläsare kan du använda samma navigerings- och visningsfunktioner som i konsolen, men du kan bara utföra en reducerad uppsättning åtgärder på kampanjer. Du kan till exempel visa och avbryta kampanjer, men du kan inte ändra dem. För en viss operator visas en kampanj med följande alternativ i konsolen:
 
-För en viss operator visas en kampanj med följande alternativ i konsolen:
+![Från kontrollpanelen för en kampanj kan operatorn visa och avbryta en kampanj, men även ändra den och lägga till leveranser, dokument och uppgifter i den.](assets/operation_from_console.png)
 
-![](assets/operation_from_console.png)
+När det gäller webbåtkomst kommer alternativen främst att göra det möjligt att se
 
-Med tillgång till webben kommer man främst att kunna se
+![Från en webbläsare kan samma operator bara visa och avbryta kampanjen.](assets/operation_from_web.png)
 
-![](assets/operation_from_web.png)
+Läs mer om [med webbgränssnittet](../../campaign/using/accessing-marketing-campaigns.md#using-the-web-interface-).
 
 ### Språk {#languages}
 

@@ -6,9 +6,9 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: b8c1f287-06f4-4c34-8cca-b0c7676abbc2
-source-git-commit: eb0e572f0bb6196a58a7dab4999df784d5c4851f
+source-git-commit: 8610d29a3df1080f1622a2cb3685c0961fb40092
 workflow-type: tm+mt
-source-wordcount: '727'
+source-wordcount: '720'
 ht-degree: 89%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 89%
 
 Det här dokumentet listar alla system och komponenter som stöds för [den senaste builden](../../rn/using/latest-release.md) av **Adobe Campaign Classic v7**. Produkter och versioner som inte ingår i den här listan är inte kompatibla med Adobe Campaign.
 
-Se kompatibilitetsmatrisen för [[!DNL Gold Standard] ](../../rn/using/compatibility-matrix-gs.md), om du använder [!DNL Gold Standard].
+Se kompatibilitetsmatrisen för [[!DNL Gold Standard] ](../../rn/using/gold-standard.md#compatibility-matrix-gs), om du använder [!DNL Gold Standard].
 
 ## Viktiga anteckningar{#important-notes}
 
@@ -48,7 +48,6 @@ Besök [den här sidan](../../rn/using/deprecated-features.md) för mer informat
 <tr>
 <td>Debian</td>
 <td>
-<p>11 (64 bitars)</p>
 <p>10 (64 bitars)</p>
 <p>9 (64 bitars)</p>
 </td>
@@ -64,7 +63,6 @@ Besök [den här sidan](../../rn/using/deprecated-features.md) för mer informat
 <tr>
 <td>Windows Server</td>
 <td>
-<p>2019</p>
 <p>2016</p>
 <p>2012 R2</p>
 <p>2012</p>
@@ -190,54 +188,31 @@ CRM (Customer Relationship Management)-system som är kompatibla med Adobe Campa
 
 ## Federerad dataåtkomst (FDA){#FederatedDataAccessFDA}
 
-Externa databaser som är kompatibla med Adobe Campaign [Federated Data Access Module](../../installation/using/about-fda.md) listas nedan.
+Externa databaser som är kompatibla med Adobe Campaign [Federated Data Access Module](../../installation/using/about-fda.md) listas nedan. Kompatibiliteten beror på din [värdmodell](../../installation/using/hosting-models.md).
+
+**Managed Services** (värd), **Hybrid** och **Lokalt** miljöer kan ansluta Campaign till följande externa databassystem:
+
 <table>
 <tbody>
-<td><strong>Koppling</strong></td>
-<td><strong>Versionskompatibilitet</strong></td>
-<td><strong>Kompatibilitet med värdmodell</strong></td>
-<td><strong>Bygg kompatibilitet</strong></td>
+<td><strong>Databassystem</strong></td>
+<td><strong>Databasversion</strong></td>
+<td><strong>Kampanjversion</strong></td>
 <tr>
 <tr>
 <td>Snowflake</td>
 <td> </td>
-<td>Managed Services, Hybrid &amp; on-Premise</td>
-<td>Minst 21.1.5</td>
-</tr>
-<td>Vertica</td>
-<td> </td>
-<td>Hybrid och lokal installation</td>
-<td>Minst 19.1.4</td>
+<td>Minst 7.2.1</td>
 </tr>
 <tr>
-<td>Google Big Query</td>
+<td>Google BigQuery</td>
 <td> </td>
-<td>Managed Services, Hybrid &amp; on-Premise</td>
-<td>Minst 21.1.5</td>
-</tr>
-<tr>
-<td>Microsoft Azure Synapse Analytics</td>
-<td> </td>
-<td>Hybrid och lokal</td>
-<td>Minst 19.1.4</td>
+<td>Minst 7.2.1</td>
 </tr>
 <tr>
 <td>Amazon Redshift</td>
 <td><p> </p>
-<td>Managed Services, Hybrid &amp; on-Premise</td>
-<td>Minst 19.1.4</td>
+<td>v7.0 19.1.4 minimum</td>
 </td>
-</tr>
-<tr>
-<td>Oracle</td>
-<td>
-<p>19c</p>
-<p>18c</p>
-<p>12c</p>
-<p>11g</p>
-</td>
-<td>Hybrid och lokal installation</td>
-<td>Minst V6.11</td>
 </tr>
 <tr>
 <td>PostgreSQL</td>
@@ -250,8 +225,37 @@ Externa databaser som är kompatibla med Adobe Campaign [Federated Data Access M
 <p>9.5.x</p>
 <p>9.4.x</p>
 </td>
-<td>Managed Services, Hybrid &amp; on-Premise</td>
-<td>Minst 19.1.4</td>
+<td>Minst v7.0 19.1.4</td>
+</tr>
+</tbody>
+</table>
+
+Dessutom **Hybrid** och **Lokalt** -miljöer kan också koppla samman Campaign med:
+
+<table>
+<tbody>
+<td><strong>Databassystem</strong></td>
+<td><strong>Databasversion</strong></td>
+<td><strong>Kampanjversion</strong></td>
+<tr>
+<td>Vertica</td>
+<td> </td>
+<td>Minst v7.0 19.1.4</td>
+</tr>
+<tr>
+<td>Microsoft Azure Synapse Analytics</td>
+<td> </td>
+<td>Minst v7.0 19.1.4</td>
+</tr>
+<tr>
+<td>Oracle</td>
+<td>
+<p>19c</p>
+<p>18c</p>
+<p>12c</p>
+<p>11g</p>
+</td>
+<td>Minst v7.0</td>
 </tr>
 <tr><td>SQL Server</td>
 <td>
@@ -261,15 +265,13 @@ Externa databaser som är kompatibla med Adobe Campaign [Federated Data Access M
 <p>2014</p>
 <p>2012 SP1 och SP2</p>
 </td>
-<td>Hybrid och lokal installation</td>
-<td>Minst V6.11</td>
+<td>Minst v7.0</td>
 </tr>
 <tr><td>MySQL</td>
 <td>
 <p>5.7</p>
 </td>
-<td>Hybrid och lokal installation</td>
-<td>Minst V6.11</td>
+<td>Minst v7.0</td>
 </tr>
 <tr>
 <td>Teradata</td>
@@ -279,16 +281,14 @@ Externa databaser som är kompatibla med Adobe Campaign [Federated Data Access M
 <p>15.10</p>
 <p>15.0</p>
 </td>
-<td>Hybrid och lokal installation</td>
-<td>Minst V6.11</td>
+<td>Minst v7.0</td>
 </tr>
 <tr>
 <td>Netezza</td>
 <td>
 <p>7.2</p>
 </td>
-<td>Hybrid och lokal installation</td>
-<td>Minst V6.11</td>
+<td>Minst v7.0</td>
 </tr>
 <tr>
 <td>Sybase</td>
@@ -296,16 +296,14 @@ Externa databaser som är kompatibla med Adobe Campaign [Federated Data Access M
 <p>IQ 16</p>
 <p>ASE 15.7</p>
 </td>
-<td>Hybrid och lokal installation</td>
-<td>Minst V6.11</td>
+<td>Minst v7.0</td>
 </tr>
 <tr>
 <td>SAP HANA</td>
 <td>
 <p>version 1 SPS 12</p>
 </td>
-<td>Hybrid och lokal installation</td>
-<td>Minst V6.11</td>
+<td>Minst v7.0</td>
 </tr>
 <tr><td>Hadoop via HiveSQL</td>
 <td>
@@ -313,11 +311,13 @@ Externa databaser som är kompatibla med Adobe Campaign [Federated Data Access M
 <p>HDInsight 3.4 (HDP 2.4), 3.5 (HDP 2.5), 3.6 (HDP 2.6)</p>
 <p>Cloudera CDH6.x</p>
 </td>
-<td>Hybrid och lokal installation</td>
-<td>Minst V6.11</td>
+<td>Minst v7.0</td>
 </tr>
 </tbody>
 </table>
+
+
+
 
 
 ## Klientkonsol {#ClientConsoleoperatingsystems}

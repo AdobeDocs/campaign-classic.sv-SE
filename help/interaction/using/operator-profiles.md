@@ -6,9 +6,9 @@ audience: interaction
 content-type: reference
 topic-tags: managing-environments
 exl-id: e11fb28c-d530-45a2-862a-ff1c20975577
-source-git-commit: 8b970705f0da6a9e09de9fadb3e1a8c5f4814f9f
+source-git-commit: 98380c18b915cfebc980e68f9840f9d8919eaca4
 workflow-type: tm+mt
-source-wordcount: '385'
+source-wordcount: '384'
 ht-degree: 5%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 5%
 
 ![](../../assets/v7-only.svg)
 
-Det finns två typer av operatorer som använder Interaction: erbjuder chefer och leveransansvariga. They each have specific rights that only give them access to some parts of the tree and the platform.
+Det finns två typer av operatorer som använder Interaction: erbjuder chefer och leveransansvariga. De har specifika rättigheter som bara ger dem tillgång till vissa delar av trädet och plattformen.
 
 * **[!UICONTROL Offer manager]** : skapar och underhåller erbjudanden. Observera att om erbjudanden används i arbetsflödet måste operatorn finnas i **[!UICONTROL Administrator]** eller **[!UICONTROL Offer managers]** operatörsgrupp för att köra arbetsflödet.
 * **[!UICONTROL Delivery manager]** : godkänner och använder erbjudanden
@@ -37,13 +37,13 @@ Rättigheterna som tilldelats den som ansvarar för erbjudandet gör att de kan 
 * Visa **[!UICONTROL Live]** miljöer.
 * Konfigurera administrationsfunktioner (fördefinierade blanksteg och filter).
 * Skapa och ändra kategorier.
-* Create offers.
-* Configure offer eligibility.
+* Skapa erbjudanden.
+* Konfigurera berättigande för erbjudanden.
 * Godkänn erbjudanden.
 
    >[!NOTE]
    >
-   >Erbjudandehanteraren kan bara godkänna ett erbjudande i två specifika fall. Det första är om ingen har specificerats som granskare och det andra är om den som ansvarar för att skapa mallar (med behörighet att tilldela granskare) har angett honom/henne som granskare i erbjudandemallen som erbjudandet baserades på.
+   >Erbjudandehanteraren kan bara godkänna ett erbjudande i två specifika fall. Det första är om ingen har specificerats som granskare och det andra är om den som ansvarar för att skapa mallar (med behörighet att tilldela granskare) har angett dem som granskare i erbjudandemallen som erbjudandet baseras på.
 
 ## Delivery manager {#delivery-manager}
 
@@ -84,7 +84,7 @@ De rättigheter som tilldelats till leveransansvariga gör det möjligt för dem
   <tr> 
    <td> Mottagare - miljö<br /> </td> 
    <td> Läs/skriv<br /> </td> 
-   <td> Read<br /> </td> 
+   <td> Läs<br /> </td> 
   </tr> 
   <tr> 
    <td> Administration<br /> </td> 
@@ -97,7 +97,7 @@ De rättigheter som tilldelats till leveransansvariga gör det möjligt för dem
    <td> Läs<br /> </td> 
   </tr> 
   <tr> 
-   <td> Predefined offer filters<br /> </td> 
+   <td> Fördefinierade erbjudandefilter<br /> </td> 
    <td> Läs/skriv<br /> </td> 
    <td> Läs<br /> </td> 
   </tr> 
@@ -113,7 +113,7 @@ De rättigheter som tilldelats till leveransansvariga gör det möjligt för dem
   </tr> 
   <tr> 
    <td> Erbjudandekatalog<br /> </td> 
-   <td> Read / Write<br /> </td> 
+   <td> Läs/skriv<br /> </td> 
    <td> Läs<br /> </td> 
   </tr> 
   <tr> 
@@ -132,7 +132,7 @@ De rättigheter som tilldelats till leveransansvariga gör det möjligt för dem
    <td> <strong>Delivery manager (live)</strong><br /> </td> 
   </tr> 
   <tr> 
-   <td> <strong>Tree structure level</strong><br /> </td> 
+   <td> <strong>Trädstrukturnivå</strong><br /> </td> 
    <td> </td> 
    <td> </td> 
   </tr> 
@@ -173,7 +173,7 @@ De rättigheter som tilldelats till leveransansvariga gör det möjligt för dem
   </tr> 
   <tr> 
    <td> Erbjudandekatalog<br /> </td> 
-   <td> Read<br /> </td> 
+   <td> Läs<br /> </td> 
    <td> Läs<br /> </td> 
   </tr> 
   <tr> 

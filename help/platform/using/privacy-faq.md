@@ -6,9 +6,9 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: ce2c90cd-46d9-4365-8013-5c1273b6c176
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 98380c18b915cfebc980e68f9840f9d8919eaca4
 workflow-type: tm+mt
-source-wordcount: '797'
+source-wordcount: '796'
 ht-degree: 100%
 
 ---
@@ -112,6 +112,6 @@ Som personuppgiftsansvarig måste du se till att radera alla nödvändiga data o
 
 ### Kan en registrerad vars data har raderats från Adobe Campaign anmäla sig igen?
 
-En registrerad kan anmäla sig igen eller läggas till som ny mottagare efter att dennes data har raderats från Adobe Campaign.
+En registrerad person kan ansluta sig igen eller läggas till som ny mottagare efter att dennes data har raderats från Adobe Campaign.
 
 Du kan använda granskningsspåret som anger när den föregående borttagningen utfördes och när den nya mottagaren har skapats.

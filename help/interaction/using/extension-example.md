@@ -6,7 +6,7 @@ audience: interaction
 content-type: reference
 topic-tags: advanced-parameters
 exl-id: d4acf99b-cef4-48f7-b4cd-c032ec12592f
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 07a5742c6f142c786ad8ba2f8774e7e90e8cd191
 workflow-type: tm+mt
 source-wordcount: '153'
 ht-degree: 3%
@@ -15,7 +15,7 @@ ht-degree: 3%
 
 # Exempel på tillägg{#extension-example}
 
-![](../../assets/v7-only.svg)
+![](../../assets/common.svg)
 
 Vid inkommande kontakt (kundtjänst eller webbplats) föreslås de mest relevanta erbjudandena till en viss kontakt med hjälp av en uppsättning regler för behörighet. Om du vill utöka kriterierna för dina erbjudanden kan du utöka **nms:interaktion** schema.
 

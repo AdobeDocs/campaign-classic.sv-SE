@@ -6,9 +6,9 @@ audience: platform
 content-type: reference
 topic-tags: connectors
 exl-id: 7f9eda15-76e8-40a1-8302-004cea085778
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 648b6c0982e15716b11bdbc5954ce88491582e7d
 workflow-type: tm+mt
-source-wordcount: '1528'
+source-wordcount: '1536'
 ht-degree: 0%
 
 ---
@@ -170,7 +170,11 @@ Använd följande konfiguration för en export på **[!UICONTROL CRM Connector]*
    >
    >Exportfunktionen i **[!UICONTROL CRM Connector]** kan infoga eller uppdatera fält på CRM-sidan. Om du vill aktivera fältuppdateringar i CRM måste du ange fjärrtabellens primärnyckel. Om nyckeln saknas infogas data (i stället för att uppdateras).
 
-1. I **[!UICONTROL Mapping]** anger du fälten som ska exporteras och deras mappning i CRM.
+1. Kontrollera **[!UICONTROL Export in Batches]** om du behöver snabbare export.
+
+   ![](assets/crm_export_config_2.png)
+
+1. I **[!UICONTROL Mapping]** avsnitt, klicka **[!UICONTROL New]** för att ange de fält som ska exporteras och deras koppling i CRM.
 
    ![](assets/crm_export_config.png)
 

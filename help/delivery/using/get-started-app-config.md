@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: sending-push-notifications
 exl-id: 95bc07cc-8837-4511-81bc-05fad28191c9
-source-git-commit: 00b8a9b4a693920aa6b4be9e7c41f08c2e53a0c6
+source-git-commit: 98380c18b915cfebc980e68f9840f9d8919eaca4
 workflow-type: tm+mt
 source-wordcount: '290'
 ht-degree: 10%
@@ -15,7 +15,7 @@ ht-degree: 10%
 
 # Kom igång med konfigurationen av appen
 
-I det här avsnittet hittar du ett konfigurationsexempel baserat på ett företag som säljer semesterpaket online. Hans mobilapplikation (Neotrips) finns i två versioner: Neotrips för Android och Neotrips för iOS.
+I det här avsnittet hittar du ett konfigurationsexempel baserat på ett företag som säljer semesterpaket online. Dess mobilapplikation (Neotrips) är tillgänglig för kunderna i två versioner: Neotrips för Android och Neotrips för iOS.
 
 Om du vill skicka push-meddelanden i Adobe Campaign måste du:
 

@@ -6,7 +6,7 @@ audience: interaction
 content-type: reference
 topic-tags: interaction-overview
 exl-id: 9e199b7c-9307-4797-bf86-7940388555bc
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 98380c18b915cfebc980e68f9840f9d8919eaca4
 workflow-type: tm+mt
 source-wordcount: '1094'
 ht-degree: 0%
@@ -64,7 +64,7 @@ Nedan finns definitionen av de huvudsakliga interaktionselementen.
 * **Enhetsläge**: en enda kontakt bearbetas åt gången. Det här läget används vanligtvis för inkommande interaktioner och transaktionsmeddelanden.
 * **Identifieringsläge**: hänvisar till en kontakts status.
 
-   * **[!UICONTROL explicit]** : kontakten identifieras efter inloggningen i kanalgränssnittet.
+   * **[!UICONTROL explicit]** : kontakten identifieras efter deras inloggning i kanalgränssnittet.
    * **[!UICONTROL implicit]** : kontakten har identifierats genom en cookie (permanent eller session). Den kan behandlas som en anonym eller identifierad kontakt.
    * **[!UICONTROL anonymous]** : kontakten inte kan identifieras.
 

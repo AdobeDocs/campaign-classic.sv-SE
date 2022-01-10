@@ -6,14 +6,14 @@ audience: migration
 content-type: reference
 topic-tags: migration-procedure
 exl-id: 228ee9e4-46a0-4d82-b8ba-b019bc0e7cac
-source-git-commit: 9ba2199eabf91381e87661f30c9af8aa0ce4cc26
+source-git-commit: 59a2bc62b4c03ef0702cb57bd9dc808e7d0b444b
 workflow-type: tm+mt
-source-wordcount: '729'
-ht-degree: 1%
+source-wordcount: '755'
+ht-degree: 0%
 
 ---
 
-# Testa migreringen{#testing-the-migration}
+# Migreringstester{#testing-the-migration}
 
 ![](../../assets/v7-only.svg)
 
@@ -21,7 +21,7 @@ ht-degree: 1%
 
 Beroende på konfigurationen finns det flera sätt att utföra migreringstester.
 
-Du bör ha en test-/utvecklingsmiljö för att utföra migreringstester. För utvecklingsmiljöer krävs licens: kontrollera licensavtalet eller kontakta Adobe Campaign säljavdelning.
+Du bör ha en test-/utvecklingsmiljö för att utföra migreringstester. För Adobe Campaign-miljöer krävs licens: kontrollera licensavtalet eller kontakta Adobe.
 
 1. Stoppa all pågående utveckling och föra över den till produktionsmiljön.
 1. Säkerhetskopiera utvecklingsmiljödatabasen.
@@ -39,18 +39,12 @@ Du bör ha en test-/utvecklingsmiljö för att utföra migreringstester. För ut
 
 1. Kontrollera att säkerhetskopiorna är korrekta genom att försöka återställa dem. Se till att du har tillgång till din databas, dina tabeller, dina data osv.
 1. Testa migreringsproceduren i utvecklingsmiljön.
-
-   De fullständiga förfarandena beskrivs i [Krav för migrering till Adobe Campaign 7](../../migration/using/prerequisites-for-migration-to-adobe-campaign-7.md) -avsnitt.
-
 1. Om migreringen av utvecklingsmiljön lyckas kan du migrera produktionsmiljön.
 
->[!IMPORTANT]
+>[!CAUTION]
 >
 >På grund av ändringar i datastrukturen går det inte att importera och exportera datapaket mellan en v5-plattform och en v7-plattform.
 
->[!NOTE]
->
->Adobe Campaign-uppdateringskommandot (**postuppgradering**) kan du synkronisera resurser och uppdatera scheman och databasen. Den här åtgärden kan bara utföras en gång på programservern. När resurserna har synkroniserats **postuppgradering** kan du identifiera om synkroniseringen genererar fel eller varningar.
 
 ## Migreringsverktyg {#migration-tools}
 
@@ -70,9 +64,11 @@ Med olika alternativ kan du mäta effekten av en migrering och identifiera poten
 
 >[!NOTE]
 >
->Du måste använda **-instance:`<instanceame>`** alternativ. Vi rekommenderar inte att du använder **-allinstances** alternativ.
+>* Du måste använda **-instance:`<instanceame>`** alternativ. Vi rekommenderar inte att du använder **-allinstances** alternativ.
+>* Adobe Campaign-uppdateringskommandot (**postuppgradering**) kan du synkronisera resurser och uppdatera scheman och databasen. Den här åtgärden kan bara utföras en gång på programservern. När resurserna har synkroniserats **postuppgradering** kan du identifiera om synkroniseringen genererar fel eller varningar.
 
-### -showCustomEntities och -showDeletedEntities, alternativ {#showcustomentities-and--showdeletedentities-options}
+
+### Objekt som inte är standard eller saknas
 
 * The **-showCustomEntities** visas en lista med alla objekt som inte är standard:
 
@@ -110,7 +106,7 @@ nlserver.exe config -postupgrade -check -instance:<instanceName>
 
 >[!NOTE]
 >
->Ignorera alla varningar och fel som har JST-310040-koden.
+>Du kan ignorera alla varningar och fel med JST-310040-koden.
 
 Följande uttryck söks efter (skiftlägeskänsliga):
 
@@ -158,7 +154,7 @@ Följande uttryck söks efter (skiftlägeskänsliga):
    <td> SQLDATA<br /> </td> 
    <td> PU-0006<br /> </td> 
    <td> Fel<br /> </td> 
-   <td> Den här typen av fel leder till ett migreringsfel. Se <a href="../../migration/using/general-configurations.md#sqldata" target="_blank">SQLData</a>. Om du får felloggar av översiktstyp för webbprogram (migrering från v6.02), se <a href="../../migration/using/specific-configurations-in-v6-02.md#web-applications" target="_blank">Konfigurera kampanj</a>.<br /> </td> 
+   <td> Den här typen av fel leder till ett migreringsfel. Se <a href="../../migration/using/general-configurations.md#sqldata" target="_blank">SQLData</a>. Om du får felloggar av översiktstyp för webbprogram (migrering från v6.02), se <a href="../../migration/using/configuring-your-platform.md#specific-configurations-in-v5-11" target="_blank">Konfigurera kampanj</a>.<br /> </td> 
   </tr>
   <tr> 
    <td> crmDeploymentType="lokal"<br /> </td> 
@@ -167,6 +163,12 @@ Följande uttryck söks efter (skiftlägeskänsliga):
    <td> Den här typen av distribution stöds inte längre. Distributionstypen för Office 365- och On-Local Microsoft CRM Connector har nu tagits bort. 
    </br>Om du använder någon av de här inaktuella distributionstyperna i ett externt konto bör det externa kontot tas bort och du bör sedan köra <b>postuppgradering</b> -kommando. 
    </br>Information om hur du ändrar till Web API-distribution finns i <a href="../../platform/using/crm-ms-dynamics.md#configure-acc-for-microsoft" target="_blank">Webbprogram</a>.<br /> </td>
+  </tr> 
+  <tr> 
+   <td> CRM v1(mscrmArbetsflöde/sfdcArbetsflöde)<br /> </td> 
+   <td> PU-0008<br /> </td> 
+   <td> Fel<br /> </td> 
+   <td> Åtgärder i Microsoft CRM, Salesforce och Oracle CRM On Demand är inte längre tillgängliga. Om du vill konfigurera datasynkroniseringen mellan Adobe Campaign och ett CRM-system måste du använda <a href="../../workflow/using/crm-connector.md" target="_blank">CRM-koppling</a> målinriktning.<br /> </td>
   </tr> 
  </tbody> 
 </table>
@@ -185,6 +187,6 @@ nlserver.exe config -postupgrade -restoreFactory:<backupfolder> -instance:<insta
 >
 >Vi rekommenderar att du använder absoluta mappsökvägar och behåller mappträdsstrukturen. Till exempel: backupFolder\nms\srcSchema\billing.xml.
 
-### Återupptar migrering {#resuming-migration}
+### Återuppta migreringen {#resuming-migration}
 
 Om du startar om efteruppgraderingen efter ett migreringsfel återupptas den från samma plats som den stoppades.

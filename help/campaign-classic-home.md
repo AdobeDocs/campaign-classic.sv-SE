@@ -3,10 +3,10 @@ keywords: Campaign Classic;hem;populära ämnen
 product: campaign
 title: Produktdokumentation för Adobe Campaign Classic v7
 exl-id: 6b3f1689-80de-49fd-b7ee-7a2a1931d157
-source-git-commit: 6c5cac3ccc60deb5940c785c9cb8b08f5938fe62
+source-git-commit: 1d32161d60f6b382188012b104c642f504e28645
 workflow-type: tm+mt
-source-wordcount: '256'
-ht-degree: 48%
+source-wordcount: '259'
+ht-degree: 49%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 48%
 
 ## Nyheter
 
-* **[Oktober-versionen är live!](rn/using/latest-release.md)**<br/> Upptäck nya funktioner, förbättringar och korrigeringar i versionsinformationen
+* **[Januariversionen är live!](rn/using/latest-release.md)**<br/> Upptäck nya funktioner, förbättringar och korrigeringar i versionsinformationen
 
 * **[Vanliga frågor om skydd av personuppgifter för Apple Mail](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/technotes/apple-mail-privacy-faq.html?lang=sv)** och **[technote](technotes/using/apple-mail-app-privacy-protection.md)**<br/> Hitta vägledning som svar på Apple meddelande om iOS 15
 
@@ -83,6 +83,6 @@ ht-degree: 48%
 | [Versionsinformation](rn/using/latest-release.md) | [Lista över felmeddelanden](https://experienceleague.adobe.com/developer/campaign-errors/error_codes.html?lang=sv) |
 | [Instruktionsvideor](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=sv) | [Datamodell i Campaign](configuration/using/about-data-model.md) |
 | [Kompatibilitetsmatris](rn/using/compatibility-matrix.md) | [JSAPI i Campaign](https://experienceleague.adobe.com/developer/campaign-api/api/p-1.html) |
-| Uppgradering av [[!DNL Gold Standard] ](rn/using/gs-overview.md) | [Spårningsguide](https://helpx.adobe.com/se/campaign/kb/acc-tracking.html) |
+| [Kom igång med uppgraderingar](rn/using/rn-overview.md) | [Spårningsguide](https://helpx.adobe.com/se/campaign/kb/acc-tracking.html) |
 | [Inaktuella funktioner](rn/using/deprecated-features.md) | [Checklista för säkerhet och integritet](https://helpx.adobe.com/se/campaign/kb/acc-security.html) |
 | [Kontrollpanelen i Campaign](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=sv) | [Riktlinjer för övervakning](production/using/monitoring-guidelines.md) |

@@ -6,10 +6,10 @@ audience: platform
 content-type: reference
 topic-tags: connectors
 exl-id: 9d8d1e9c-63e4-40c4-8338-b921d08ea405
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: a23f66a4822f3c87770c5c9741e91f78778931cb
 workflow-type: tm+mt
-source-wordcount: '166'
-ht-degree: 4%
+source-wordcount: '161'
+ht-degree: 3%
 
 ---
 
@@ -25,7 +25,10 @@ Med FDA-alternativet kan du utöka din datamodell i en tredjepartsdatabas. Det i
 
 För att kunna använda den här funktionen anges följande krav:
 
-* **Konfiguration**: förutom Snowflake, du behöver en **lokal** eller **hybrid** värdmodell för att konfigurera Federated Data Access. [Läs mer](../../installation/using/hosting-models.md)
-* **Extern databasversion**: du behöver en extern databas som är kompatibel med Adobe Campaign FDA-modulen. Listan över databassystem och kompatibla versioner finns i Campaign [Kompatibilitetsmatris](../../rn/using/compatibility-matrix.md#FederatedDataAccessFDA).
+* **Konfiguration**: listan med kompatibla externa databaser beror på din [värdmodell](../../installation/using/hosting-models.md).
+* **Extern databasversion**: du behöver en extern databas som är kompatibel med Adobe Campaign FDA-modulen.
+
+   Listan över databassystem och kompatibla versioner per värdmodell finns i Campaign [Kompatibilitetsmatris](../../rn/using/compatibility-matrix.md#FederatedDataAccessFDA).
+
 * **Behörigheter**: användarna måste också ha [nödvändiga behörigheter](../../installation/using/remote-database-access-rights.md) i Adobe Campaign och i den externa databasen.
 

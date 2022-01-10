@@ -1,31 +1,29 @@
 ---
 product: campaign
-title: Migrera Adobe Campaign 7 i Linux
-description: Migrera Adobe Campaign 7 i Linux
+title: Migrera en Linux-plattform till Adobe Campaign v7
+description: Lär dig hur du migrerar en Linux-plattform till Adobe Campaign v7
 audience: migration
 content-type: reference
 topic-tags: migrating-to-adobe-campaign-7
 exl-id: 9dc0699c-0fbf-4f8e-81f7-8ca3d7e98798
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 63aca25a8d1ae24ef83849b35a44d1b37cfa5e96
 workflow-type: tm+mt
-source-wordcount: '1890'
-ht-degree: 1%
+source-wordcount: '1858'
+ht-degree: 0%
 
 ---
 
-# Migrera Adobe Campaign 7 i Linux{#migrating-in-linux-for-adobe-campaign-v}
+# Migrera en Linux-plattform till Campaign v7{#migrating-in-linux-for-adobe-campaign-v}
 
 ![](../../assets/v7-only.svg)
 
-## Allmänt förfarande {#general-procedure}
-
 Migreringsstegen i Linux är följande:
 
-1. Stoppa tjänster: se [Tjänststopp](#service-stop).
-1. Spara databasen: se [Säkerhetskopiera databasen och den befintliga installationen](#back-up-the-database-and-the-existing-installation).
-1. Avinstallera tidigare Adobe Campaign-versionspaket: se [Avinstallerar Adobe Campaign tidigare versionspaket](#uninstalling-adobe-campaign-previous-version-packages).
-1. Migrera plattformen: referera till [Distribuera Adobe Campaign v7](#deploying-adobe-campaign-v7).
-1. Starta om tjänsten: referera till [Tjänster som startas om](#re-starting-services).
+1. Stoppa alla tjänster - [Läs mer](#service-stop).
+1. Spara databasen - [Läs mer](#back-up-the-database).
+1. Avinstallera tidigare Adobe Campaign-versionspaket - [Läs mer](#uninstalling-adobe-campaign-previous-version-packages).
+1. Migrera plattformen - [Läs mer](#deploying-adobe-campaign-v7).
+1. Starta om tjänsten - [Läs mer](#re-starting-services).
 
 ## Tjänststopp {#service-stop}
 
@@ -71,11 +69,11 @@ Stoppa först alla processer med tillgång till databasen på alla berörda dato
    killall -9 nlserver
    ```
 
-## Säkerhetskopiera databasen och den befintliga installationen {#back-up-the-database-and-the-existing-installation}
+## Säkerhetskopiera databasen {#back-up-the-database}
 
 Hur du gör det beror på vilken version du har av Adobe Campaign.
 
-### Migrera från Adobe Campaign v5.11 {#migrating-from-adobe-campaign-v5-11}
+### För Adobe Campaign v5.11 {#migrating-from-adobe-campaign-v5-11}
 
 1. Säkerhetskopiera Adobe Campaign-databasen.
 1. Logga in som **neolan** och gör en säkerhetskopia av **nl5** katalog med följande kommando:
@@ -110,7 +108,7 @@ Hur du gör det beror på vilken version du har av Adobe Campaign.
    </serverconf>
    ```
 
-### Migrera från Adobe Campaign v6.02 {#migrating-from-adobe-campaign-v6-02}
+### För Adobe Campaign v6.02 {#migrating-from-adobe-campaign-v6-02}
 
 1. Säkerhetskopiera Adobe Campaign-databasen.
 1. Logga in som **neolan** och gör en säkerhetskopia av **nl6** katalog med följande kommando:
@@ -145,7 +143,7 @@ Hur du gör det beror på vilken version du har av Adobe Campaign.
    </serverconf>
    ```
 
-### Migrera från Adobe Campaign v6.1 {#migrating-from-adobe-campaign-v6-1}
+### För Adobe Campaign v6.1 {#migrating-from-adobe-campaign-v6-1}
 
 1. Säkerhetskopiera Adobe Campaign-databasen.
 1. Logga in som **neolan** och gör en säkerhetskopia av **nl6** katalog med följande kommando:
@@ -159,11 +157,11 @@ Hur du gör det beror på vilken version du har av Adobe Campaign.
    >
    >Som en försiktighetsåtgärd rekommenderar vi att du packar upp **nl6.back** och spara den på en annan säker plats än servern.
 
-## Avinstallerar Adobe Campaign tidigare versionspaket {#uninstalling-adobe-campaign-previous-version-packages}
+## Avinstallera Adobe Campaign tidigare versionspaket {#uninstalling-adobe-campaign-previous-version-packages}
 
 Hur du gör det beror på vilken version du har av Adobe Campaign.
 
-### Avinstallerar Adobe Campaign v5-paket {#uninstalling-adobe-campaign-v5-packages}
+### För v5-paket {#uninstalling-adobe-campaign-v5-packages}
 
 1. Logga in som **root**.
 1. Identifiera de Adobe Campaign-paket som har installerats med följande kommando.
@@ -201,7 +199,7 @@ Hur du gör det beror på vilken version du har av Adobe Campaign.
       rprm -ev nlserver5 nlthirdparty5
       ```
 
-### Avinstallerar Adobe Campaign v6-paket {#uninstalling-adobe-campaign-v6-packages}
+### För v6-paket {#uninstalling-adobe-campaign-v6-packages}
 
 I det här avsnittet visas hur du avinstallerar Adobe Campaign v6.02- eller v6.1-paket.
 
@@ -245,7 +243,7 @@ I det här avsnittet visas hur du avinstallerar Adobe Campaign v6.02- eller v6.1
 
 Hur du gör det beror på vilken version du har av Adobe Campaign.
 
-### Migrera från Adobe Campaign v5.11 {#migrating-from-adobe-campaign-v5_11-1}
+### Från Adobe Campaign v5.11 {#migrating-from-adobe-campaign-v5_11-1}
 
 Distribuera Adobe Campaign i två steg:
 
@@ -372,7 +370,7 @@ Så här distribuerar du Adobe Campaign:
 >
 >Starta inte Adobe Campaign tjänster än: Ändringar måste fortfarande göras i Apache.
 
-### Migrera från Adobe Campaign v6.02 {#migrating-from-adobe-campaign-v6_02-1}
+### Från Adobe Campaign v6.02 {#migrating-from-adobe-campaign-v6_02-1}
 
 Distribuera Adobe Campaign i två steg:
 
@@ -450,7 +448,7 @@ Så här distribuerar du Adobe Campaign:
    >
    >Flertidszonsläget var endast tillgängligt i v6.02 för PostgreSQL-databasmotorer. Det är nu tillgängligt oavsett vilken version av databasmotorn som används. Vi rekommenderar starkt att du uppgraderar din bas till&quot;multi-timezone&quot;. Mer information om tidszonsalternativ finns i [Tidszoner](../../migration/using/general-configurations.md#time-zones) -avsnitt.
 
-### Migrera från Adobe Campaign v6.1 {#migrating-from-adobe-campaign-v6_1-1}
+### Från Adobe Campaign v6.1 {#migrating-from-adobe-campaign-v6_1-1}
 
 Distribuera Adobe Campaign i två steg:
 
@@ -576,11 +574,11 @@ I det här skedet måste Apache stoppas. Se: [Tjänststopp](#service-stop).
 
 Om du migrerar från v6.02 eller tidigare måste du konfigurera dina säkerhetszoner innan du startar tjänster. Mer information finns i [Säkerhet](../../migration/using/general-configurations.md#security).
 
-## Tjänster som startas om {#re-starting-services}
+## Starta om tjänster {#re-starting-services}
 
 Hur du gör det beror på vilken version du har av Adobe Campaign.
 
-### Migrera från Adobe Campaign v5.11 {#migrating-from-adobe-campaign-v5_11-2}
+### För Adobe Campaign v5 {#migrating-from-adobe-campaign-v5_11-2}
 
 I **config-`<instance name>`.xml** filer, återaktivera den automatiska starten av **mta**, **wfserver**, **stat**, osv. tjänster.
 
@@ -611,7 +609,7 @@ Starta Apache och Adobe Campaign på var och en av följande servrar:
 
 Innan du går vidare till nästa steg kör du ett fullständigt test av den nya installationen, kontrollerar att det inte finns några regressioner och att allt fungerar genom att följa alla rekommendationer i [Allmänna konfigurationer](../../migration/using/general-configurations.md) -avsnitt.
 
-### Migrera från Adobe Campaign v6.02 {#migrating-from-adobe-campaign-v6_02-2}
+### För Adobe Campaign v6.02 {#migrating-from-adobe-campaign-v6_02-2}
 
 I **config-`<instance name>`.xml** filer, återaktivera den automatiska starten av **mta**, **wfserver**, **stat**, osv. tjänster.
 
@@ -642,7 +640,7 @@ Starta Apache och Adobe Campaign på var och en av följande servrar:
 
 Testa den nya installationen fullständigt, kontrollera att den inte går tillbaka och se till att allt fungerar som det ska genom att följa alla rekommendationer i [Allmänna konfigurationer](../../migration/using/general-configurations.md) -avsnitt.
 
-### Migrera från Adobe Campaign v6.1 {#migrating-from-adobe-campaign-v6_1-2}
+### För Adobe Campaign v6.1 {#migrating-from-adobe-campaign-v6_1-2}
 
 Starta Apache och Adobe Campaign på var och en av följande servrar:
 
@@ -652,7 +650,7 @@ Starta Apache och Adobe Campaign på var och en av följande servrar:
 
 Testa den nya installationen fullständigt, kontrollera att den inte går tillbaka och se till att allt fungerar som det ska genom att följa alla rekommendationer i [Allmänna konfigurationer](../../migration/using/general-configurations.md) -avsnitt.
 
-## Ta bort och rensa Adobe Campaign v5 {#deleting-and-cleansing-adobe-campaign-v5}
+## Ta bort Adobe Campaign tidigare version {#deleting-and-cleansing-adobe-campaign-v5}
 
 >[!NOTE]
 >

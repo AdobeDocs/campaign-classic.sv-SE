@@ -6,10 +6,10 @@ audience: web
 content-type: reference
 topic-tags: web-forms
 exl-id: 827b6575-7206-4dfc-b2c6-b95a6d5730b1
-source-git-commit: 5d9e2f7d7cea9e6d1243b0e3a790f3990772e603
+source-git-commit: a5f6478d3c0780464974053e389923614abba582
 workflow-type: tm+mt
 source-wordcount: '2368'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -29,12 +29,12 @@ Följande fälttyper är tillgängliga:
 
 * Text-/sifferinmatning. Se [Lägga till inmatningsfält](#adding-input-fields).
 * Välj nedrullningsbar lista. Se [Lägga till nedrullningsbara listor](#adding-drop-down-lists).
-* Flera alternativ via kryssrutor. Se [Lägga till kryssrutor](#adding-checkboxes).
+* Multiple choice via checkboxes. Se [Lägga till kryssrutor](#adding-checkboxes).
 * Exklusivt val via alternativknappar. Se [Lägga till alternativknappar](#adding-radio-buttons).
 * Rösta i ett alternativrutnät. Se [Lägga till stödraster](#adding-grids).
 * Nummer och datum. Se [Lägga till datum och nummer](#adding-dates-and-numbers).
-* Prenumeration/avprenumeration på en informationstjänst. Se [Kryssrutor för prenumeration](#subscription-checkboxes).
-* Captcha-validering. Se [Infoga en captcha](#inserting-a-captcha).
+* Prenumeration/avprenumeration på en informationstjänst. See [Subscription checkboxes](#subscription-checkboxes).
+* Captcha validation. See [Inserting a captcha](#inserting-a-captcha).
 * Knappen Hämta. [Överföra en fil](#uploading-a-file).
 * Dold konstant. Se [Infoga en dold konstant](#inserting-a-hidden-constant).
 
@@ -164,11 +164,11 @@ Om du vill lägga till en kryssruta i ett formulär klickar du på **[!UICONTROL
 
 Välj svarslagringsläge och bekräfta ditt val.
 
-Ange etiketten för rutan i dialogrutan **[!UICONTROL Label]** fält för **[!UICONTROL General]** -fliken.
+Enter the label of the box in the **[!UICONTROL Label]** field of the **[!UICONTROL General]** tab.
 
 ![](assets/s_ncs_admin_survey_check_box_edit.png)
 
-Med en kryssruta kan du tilldela ett värde till lagringsfältet (eller värdet) beroende på om kryssrutan är markerad eller inte. The **[!UICONTROL Values]** kan du ange vilket värde som ska tilldelas om rutan är markerad (i **[!UICONTROL Value]** -fält) och det värde som ska tilldelas om det inte är markerat (i **[!UICONTROL Empty value]** fält). Dessa värden beror på datalagringsformatet.
+Med en kryssruta kan du tilldela ett värde till lagringsfältet (eller värdet) beroende på om kryssrutan är markerad eller inte. The **[!UICONTROL Values]** kan du ange vilket värde som ska tilldelas om rutan är markerad (i **[!UICONTROL Value]** -fält) och det värde som ska tilldelas om det inte är markerat (i **[!UICONTROL Empty value]** fält). These values depend on the data storage format.
 
 Om lagringsfältet (eller variabeln) är booleskt, dras värdet som ska tilldelas om rutan inte är markerad automatiskt från. I det här fallet är det bara **[!UICONTROL Value if checked]** -fält erbjuds enligt nedan:
 
@@ -184,11 +184,11 @@ Informationen överförs till databasen och till ett befintligt fält (i det hä
 
 ![](assets/s_ncs_admin_survey_check_box_ex_list.png)
 
-Om rutan &quot;Maintenance required&quot; (Underhåll krävs) är markerad visas **[!UICONTROL Comment]** kommer att innehålla &quot;Maintenance required&quot;. Om rutan inte är markerad visas &quot;Maintenance not required&quot; i kolumnen. Om du vill få det här resultatet använder du följande konfiguration i kryssrutan på formulärsidan:
+Om rutan &quot;Maintenance required&quot; (Underhåll krävs) är markerad visas **[!UICONTROL Comment]** kommer att innehålla &quot;Maintenance required&quot;. If the box isn&#39;t checked, the column will show &quot;Maintenance not required&quot;. Om du vill få det här resultatet använder du följande konfiguration i kryssrutan på formulärsidan:
 
 ![](assets/s_ncs_admin_survey_check_box_ex_edit.png)
 
-## Lägga till alternativknappar {#adding-radio-buttons}
+## Adding radio buttons {#adding-radio-buttons}
 
 Med alternativknappar kan du erbjuda användaren en serie exklusiva alternativ att välja bland. Det här är olika värden för samma fält.
 
@@ -323,7 +323,7 @@ Användaren prenumererar på tjänsten genom att markera det relevanta alternati
 >
 >Om användaren redan prenumererar på en informationstjänst och kryssrutan som är länkad till den här tjänsten inte är markerad när han eller hon godkänner formuläret, kommer han/hon att avbeställa prenumerationen.
 
-## Infoga en captcha {#inserting-a-captcha}
+## Inserting a captcha {#inserting-a-captcha}
 
 Syftet med **captcha** testerna för att förhindra att dina webbformulär används på ett bedrägligt sätt.
 
@@ -341,9 +341,9 @@ Ange fältets etikett. Den här etiketten visas framför Captcha-visningsområde
 
 >[!NOTE]
 >
->För **[!UICONTROL captcha]** typkontroller, du behöver inte ange ett lagringsfält eller en variabel.
+>For **[!UICONTROL captcha]** type controls, there is no need to indicate a storage field or variable.
 
-Captcha infogas på sidan med ett inmatningsfält under den visuella informationen. Dessa två element kan inte separeras och betraktas som ett objekt i sidlayouten (de upptar en enda cell).
+The Captcha is inserted into the page with an input field placed under the visual. Dessa två element kan inte separeras och betraktas som ett objekt i sidlayouten (de upptar en enda cell).
 
 ![](assets/s_ncs_admin_survey_captcha_sample.png)
 
@@ -365,15 +365,15 @@ Du kan lägga till ett överföringsfält på en sida. Den här funktionen kan v
 
 ![](assets/s_ncs_admin_survey_download_file.png)
 
-Om du vill infoga ett överföringsfält på en formulärsida väljer du **[!UICONTROL Advanced controls > File...]** i verktygsfältet i sidredigeraren.
+To insert an upload field to a form page, select the **[!UICONTROL Advanced controls > File...]** menu in the toolbar of the page editor.
 
-Som standard lagras de överförda filerna i resursfiler som är tillgängliga via **[!UICONTROL Resources > Online > Public resources]** -menyn. Du kan använda ett skript för att ändra det här beteendet. Skriptet kan använda funktionerna som definieras i [Kampanj-JSAPI-dokumentation](https://experienceleague.adobe.com/developer/campaign-api/api/index.html), inklusive sådana som rör filhantering.
+Som standard lagras de överförda filerna i resursfiler som är tillgängliga via **[!UICONTROL Resources > Online > Public resources]** -menyn. Du kan använda ett skript för att ändra det här beteendet. Skriptet kan använda funktionerna som definieras i [Kampanj-JSAPI-dokumentation](https://experienceleague.adobe.com/developer/campaign-api/api/index.html?lang=sv), inklusive sådana som rör filhantering.
 
-Du kan lagra länken till dessa filer i en lokal variabel eller i ett databasfält. Du kan till exempel utöka mottagarschemat för att lägga till en länk till filbaserade resurser.
+Du kan lagra länken till dessa filer i en lokal variabel eller i ett databasfält. For example, you can extend the recipient schema to add a link to file-based resources.
 
 >[!CAUTION]
 >
->* Den här filtypen måste reserveras för formulär med säker åtkomst (med hjälp av autentiseringsuppgifter).
+>* This type of file must be reserved for forms with secure access (using credentials).
 >* Adobe Campaign kontrollerar inte storleken eller typen av resurs som överförts: Därför rekommenderar vi att du endast använder överföringsfält för säkra intranätplatser.
 >* Om flera servrar är länkade till instansen (belastningsutjämningsarkitektur) måste du se till att anrop till webbformuläret kommer fram på samma server.
 >* Dessa implementeringar kräver hjälp av Adobe Campaign Consulting-teamet.
@@ -381,7 +381,7 @@ Du kan lagra länken till dessa filer i en lokal variabel eller i ett databasfä
 >
 
 
-## Infoga en dold konstant {#inserting-a-hidden-constant}
+## Inserting a hidden constant {#inserting-a-hidden-constant}
 
 När användaren validerar en av sidorna i formuläret kan du ange ett specifikt värde för ett fält i profilen eller för en variabel.
 

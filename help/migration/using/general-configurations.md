@@ -6,9 +6,9 @@ audience: migration
 content-type: reference
 topic-tags: configuration
 exl-id: 7aad0e49-8d9c-40c7-9d6a-42fee0ae5870
-source-git-commit: eef2a12738ce299686857720c3dc8456ffdd0c80
+source-git-commit: 8610d29a3df1080f1622a2cb3685c0961fb40092
 workflow-type: tm+mt
-source-wordcount: '2664'
+source-wordcount: '2625'
 ht-degree: 0%
 
 ---
@@ -17,12 +17,12 @@ ht-degree: 0%
 
 ![](../../assets/v7-only.svg)
 
-I det här avsnittet beskrivs den konfiguration som ska utföras i Adobe Campaign v7 om du migrerar från en v5.11 eller en v6.02.
+I det här avsnittet beskrivs den konfiguration som ska utföras i Adobe Campaign v7 vid migrering från v5.11 eller v6.02.
 
 Dessutom:
 
-* Om du migrerar från v5.11 måste du också slutföra konfigurationen som beskrivs i [Specifika konfigurationer i v5.11](../../migration/using/specific-configurations-in-v5-11.md) -avsnitt.
-* Om du migrerar från v6.02 måste du också slutföra konfigurationen som beskrivs i [Specifika konfigurationer i v6.02](../../migration/using/specific-configurations-in-v6-02.md) -avsnitt.
+* Om du migrerar från v5.11 måste du också slutföra konfigurationen som beskrivs i [det här avsnittet](../../migration/using/configuring-your-platform.md#specific-configurations-in-v5-11).
+* Om du migrerar från v6.02 måste du också slutföra konfigurationen som beskrivs i [det här avsnittet](../../migration/using/configuring-your-platform.md#specific-configurations-in-v6-02).
 
 ## Tidszoner {#time-zones}
 
@@ -662,12 +662,3 @@ sessionTokenOnly="false"
 ### Anonyma webbapplikationer {#anonymous-web-applications}
 
 Om du råkar ut för problem publicerar du webbprogrammet igen.
-
-## Red-Hat {#red-hat}
-
-Om färdiga scheman har tagits bort i v6.02 eller v5.11 kanske du inte längre kan redigera dina scheman efter uppgraderingen. Om det här inträffar kör du kommandot:
-
-```
-su - neolane
-nlserver config -postupgrade -instance:<instance name> -force
-```

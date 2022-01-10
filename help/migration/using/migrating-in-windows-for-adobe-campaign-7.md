@@ -1,32 +1,30 @@
 ---
 product: campaign
-title: Migrera Adobe Campaign 7 i Windows
-description: Migrera Adobe Campaign 7 i Windows
+title: Migrera en Microsoft Windows-plattform till Adobe Campaign v7
+description: Lär dig hur du migrerar en Microsoft Windows-plattform till Adobe Campaign v7
 audience: migration
 content-type: reference
 topic-tags: migrating-to-adobe-campaign-7
 exl-id: 3743d018-3316-4ce3-ae1c-25760aaf5785
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 63aca25a8d1ae24ef83849b35a44d1b37cfa5e96
 workflow-type: tm+mt
-source-wordcount: '1534'
-ht-degree: 1%
+source-wordcount: '1504'
+ht-degree: 0%
 
 ---
 
-# Migrera Adobe Campaign 7 i Windows{#migrating-in-windows-for-adobe-campaign}
+# Migrera en Microsoft Windows-plattform till Campaign v7{#migrating-in-windows-for-adobe-campaign}
 
 ![](../../assets/v7-only.svg)
 
-## Allmänt förfarande {#general-procedure}
+I en Microsoft Windows-miljö är migreringsstegen följande:
 
-För Windows är migreringsstegen följande:
-
-1. Stoppa tjänster: referera till [Tjänststopp](#service-stop).
-1. Säkerhetskopiera databasen: referera till [Säkerhetskopiera databasen och den aktuella installationen](#back-up-the-database-and-the-current-installation).
-1. Migrera plattformen: referera till [Distribuera Adobe Campaign v7](#deploying-adobe-campaign-v7).
-1. Migrera omdirigeringsservern (IIS): referera till [Migrerar omdirigeringsservern (IIS)](#migrating-the-redirection-server--iis-).
-1. Starta om tjänsten: referera till [Starta om tjänsterna](#re-starting-the-services).
-1. Ta bort och rensa tidigare Adobe Campaign-version: referera till [Ta bort och rensa tidigare version av Adobe Campaign](#deleting-and-cleansing-adobe-campaign-previous-version).
+1. Stoppa alla tjänster - [Läs mer](#service-stop).
+1. Säkerhetskopiera databasen - [Läs mer](#back-up-the-database).
+1. Migrera plattformen - [Läs mer](#deploying-adobe-campaign-v7).
+1. Migrera omdirigeringsservern (IIS) - [Läs mer](#migrating-the-redirection-server--iis-).
+1. Starta om tjänsten - [Läs mer](#re-starting-the-services).
+1. Ta bort och rensa tidigare Adobe Campaign-version - [Läs mer](#deleting-and-cleansing-adobe-campaign-previous-version).
 
 ## Tjänststopp {#service-stop}
 
@@ -83,11 +81,11 @@ Stoppa först alla processer med tillgång till databasen på alla berörda dato
    taskkill /F /IM nlserver* /T
    ```
 
-## Säkerhetskopiera databasen och den aktuella installationen {#back-up-the-database-and-the-current-installation}
+## Säkerhetskopiera Campaign-databasen {#back-up-the-database}
 
 Hur du gör det beror på vilken version du har av Adobe Campaign.
 
-### Migrera från Adobe Campaign v5.11 {#migrating-from-adobe-campaign-v5-11}
+### För Adobe Campaign v5.11 {#migrating-from-adobe-campaign-v5-11}
 
 1. Säkerhetskopiera Adobe Campaign-databasen.
 1. Säkerhetskopiera **Neolane v5** katalog med följande kommando:
@@ -127,7 +125,7 @@ Hur du gör det beror på vilken version du har av Adobe Campaign.
    </serverconf>
    ```
 
-### Migrera från Adobe Campaign v6.02 {#migrating-from-adobe-campaign-v6-02}
+### För Adobe Campaign v6.02 {#migrating-from-adobe-campaign-v6-02}
 
 1. Säkerhetskopiera Adobe Campaign-databasen.
 1. Säkerhetskopiera **Neolane v6** katalog med följande kommando:
@@ -167,7 +165,7 @@ Hur du gör det beror på vilken version du har av Adobe Campaign.
    </serverconf>
    ```
 
-### Migrera från Adobe Campaign v6.1 {#migrating-from-adobe-campaign-v6-1}
+### För Adobe Campaign v6.1 {#migrating-from-adobe-campaign-v6-1}
 
 1. Säkerhetskopiera Adobe Campaign-databasen.
 1. Säkerhetskopiera **Adobe Campaign v6** katalog med följande kommando:
@@ -267,7 +265,7 @@ Så här distribuerar du Adobe Campaign:
 >
 >Starta inte Adobe Campaign tjänster än: vissa ändringar måste göras i IIS.
 
-## Migrerar omdirigeringsservern (IIS) {#migrating-the-redirection-server--iis-}
+## Migrera omdirigeringsservern {#migrating-the-redirection-server--iis-}
 
 I det här skedet måste IIS-servern stoppas. Se [Tjänststopp](#service-stop).
 
@@ -331,9 +329,9 @@ I det här skedet måste IIS-servern stoppas. Se [Tjänststopp](#service-stop).
 
 ## Säkerhetszoner {#security-zones}
 
-Om du migrerar från v6.02 eller tidigare måste du konfigurera dina säkerhetszoner innan du startar tjänster. Mer information finns i [Säkerhet](../../migration/using/general-configurations.md#security).
+Om du migrerar från v6.02 eller tidigare måste du konfigurera dina säkerhetszoner innan du startar tjänster. [Läs mer](../../migration/using/general-configurations.md#security)
 
-## Starta om tjänsterna {#re-starting-the-services}
+## Starta om tjänster {#re-starting-the-services}
 
 Starta IIS- och Adobe Campaign-tjänsterna på följande servrar:
 
@@ -341,13 +339,13 @@ Starta IIS- och Adobe Campaign-tjänsterna på följande servrar:
 1. Server för mid-sourcing.
 1. Marknadsföringsserver.
 
-Innan du går vidare till nästa steg kör du ett fullständigt test av den nya installationen, kontrollerar att det inte finns några regressioner och att allt fungerar genom att följa alla rekommendationer i [Allmänna konfigurationer](../../migration/using/general-configurations.md) -avsnitt.
+Innan du går vidare till nästa steg kör du ett fullständigt test av den nya installationen, kontrollerar att det inte finns några regressioner och att allt fungerar genom att följa alla rekommendationer i [den här sidan](../../migration/using/general-configurations.md).
 
-## Ta bort och rensa tidigare version av Adobe Campaign {#deleting-and-cleansing-adobe-campaign-previous-version}
+## Ta bort föregående version {#deleting-and-cleansing-adobe-campaign-previous-version}
 
 Hur du gör det beror på vilken version du har av Adobe Campaign.
 
-### Adobe Campaign v5 {#adobe-campaign-v5}
+### För Adobe Campaign v5 {#adobe-campaign-v5}
 
 Innan du tar bort och rensar installationen av Adobe Campaign v5 måste du följa följande rekommendationer:
 
@@ -368,7 +366,7 @@ Innan du tar bort och rensar installationen av Adobe Campaign v5 måste du följ
 
 1. Starta om servern.
 
-### Adobe Campaign v6.02 {#adobe-campaign-v6-02}
+### För Adobe Campaign v6.02 {#adobe-campaign-v6-02}
 
 Innan du tar bort och rensar installationen av Adobe Campaign v6.02 måste du följa följande rekommendationer:
 
@@ -383,7 +381,7 @@ Innan du tar bort och rensar installationen av Adobe Campaign v6.02 måste du f�
 
 1. Starta om servern.
 
-### Adobe Campaign v6.1 {#adobe-campaign-v6-1}
+### För Adobe Campaign v6.1 {#adobe-campaign-v6-1}
 
 Innan du tar bort och rensar installationen av Adobe Campaign v6 måste du följa följande rekommendationer:
 

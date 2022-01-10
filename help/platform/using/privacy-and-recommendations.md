@@ -6,9 +6,9 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: d2451b62-bddf-4dee-8789-35aaae8348e1
-source-git-commit: 32f55d02920b0104198f809b1be0a91306a4d9e4
+source-git-commit: 98380c18b915cfebc980e68f9840f9d8919eaca4
 workflow-type: tm+mt
-source-wordcount: '2033'
+source-wordcount: '2032'
 ht-degree: 100%
 
 ---
@@ -149,7 +149,7 @@ Adobe Campaign erbjuder ytterligare funktioner som underlättar din beredskap so
 
 * **Åtkomsträttigheterna** är den registrerades rätt att från personuppgiftsansvarige få bekräftelse på om personuppgifter som rör dem behandlas eller inte, var de befinner dig och varför.
 
-* **Rätten att glömmas** (förfrågan om borttagning) ger den registrerade rätten att låta personuppgiftsansvarig radera sina personuppgifter.
+* **Rätten att glömmas** (förfrågan om borttagning) ger den registrerade personen rätten att låta den personuppgiftsansvarige radera sina personuppgifter.
 
 Förfrågningar om **åtkomst** och **radering** visas i [det här avsnittet](../../platform/using/privacy-management.md#right-access-forgotten).
 

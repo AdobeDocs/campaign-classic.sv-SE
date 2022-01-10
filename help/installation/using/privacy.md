@@ -6,9 +6,9 @@ audience: installation
 content-type: reference
 topic-tags: prerequisites-and-recommendations-
 exl-id: 0a3473bf-0528-486d-a799-8db86fece522
-source-git-commit: bd9f035db1cbad883e1f27fe901e34dfbc9c1229
+source-git-commit: 1d32161d60f6b382188012b104c642f504e28645
 workflow-type: tm+mt
-source-wordcount: '890'
+source-wordcount: '892'
 ht-degree: 4%
 
 ---
@@ -59,7 +59,7 @@ För att förbättra säkerheten har en signaturmekanism införts för att spår
 
 Sedan Campaign 20.2 och [!DNL Gold Standard] kan du använda en förbättring för att inaktivera URL:er som genererats i tidigare versioner. Den här funktionen är inaktiverad som standard. Du kan nå ut till [Kundtjänst](https://helpx.adobe.com/se/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) för att aktivera den här funktionen.
 
-Om du kör [!DNL Gold Standard] 19.1.4 kan du få problem med push-meddelanden som levereras med hjälp av spårningslänkar eller leveranser med hjälp av ankartaggar. I så fall rekommenderar vi att du inaktiverar URL-signatur.
+Om du kör i version 19.1.4 kan du få problem med push-meddelandeleveranser med hjälp av spårningslänkar eller leveranser med hjälp av ankartaggar. I så fall rekommenderar vi att du inaktiverar URL-signatur.
 
 Oavsett om ni kör Campaign lokalt eller i en hybridarkitektur måste ni kontakta [Kundtjänst](https://helpx.adobe.com/se/enterprise/using/support-for-experience-cloud.html) för att inaktivera URL-signatur.
 

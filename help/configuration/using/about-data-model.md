@@ -6,7 +6,7 @@ audience: configuration
 content-type: reference
 topic-tags: schema-reference
 exl-id: 655b5928-b005-442f-b026-2f1b0c1abb99
-source-git-commit: bd9f035db1cbad883e1f27fe901e34dfbc9c1229
+source-git-commit: fb4b4c42b907e86813ea570f912312fccf893bfe
 workflow-type: tm+mt
 source-wordcount: '980'
 ht-degree: 4%
@@ -83,7 +83,7 @@ Mer information om hur du konfigurerar tilläggsscheman för att utöka den konc
 
 ## Använda en anpassad mottagartabell {#custom-recipient-table}
 
-När du utformar din Adobe Campaign-datamodell kan du använda [färdiga mottagarregister](#default-recipient-table)eller bestämmer dig för att skapa en [anpassad mottagartabell](../../configuration/using/about-custom-recipient-table.md) tabell för att lagra era marknadsföringsprofiler.
+När du utformar din Adobe Campaign-datamodell kan du använda [inbyggd mottagartabell](#default-recipient-table)eller bestämmer dig för att skapa en [anpassad mottagartabell](../../configuration/using/about-custom-recipient-table.md) tabell för att lagra era marknadsföringsprofiler.
 
 Om datamodellen inte passar den mottagarcentrerade strukturen kan du skapa andra tabeller som målningsdimension inom Adobe Campaign. Detta kan till exempel vara relevant när du behöver rikta in dig på hushåll, konton (som mobiltelefoner) och företag/webbplatser i stället för bara mottagare.
 
@@ -95,11 +95,11 @@ Alla principer och steg som behövs när du använder en anpassad mottagartabell
 
 Fördelarna med att använda en anpassad mottagartabell är följande:
 
-* **Flexibel datamodell** - Den körklara mottagartabellen är värdelös om du inte behöver de flesta av mottagartabellfälten eller om datamodellen inte är mottagarcentrerad.
+* **Flexibel datamodell** - Den inbyggda mottagartabellen är värdelös om du inte behöver de flesta av mottagartabellfälten eller om datamodellen inte är mottagarcentrerad.
 
-* **Skalbarhet** - Stora volymer kräver en effektiv tabell med få fält för en effektiv design. Den färdiga mottagartabellen skulle ha för många oanvändbara fält, vilket skulle kunna påverka prestanda och bristande effektivitet.
+* **Skalbarhet** - Stora volymer kräver en effektiv tabell med få fält för en effektiv design. Den inbyggda mottagartabellen har för många oanvändbara fält, vilket kan påverka prestanda och bristande effektivitet.
 
-* **Dataplats** - Om data finns i en extern befintlig marknadsföringsdatabas kan det kräva för mycket arbete för att använda den körklara mottagartabellen. Det är enklare att skapa en ny som baseras på en befintlig struktur.
+* **Dataplats** - Om data finns i en extern befintlig marknadsföringsdatabas kan det kräva för mycket arbete för att använda den inbyggda mottagartabellen. Det är enklare att skapa en ny som baseras på en befintlig struktur.
 
 * **Smidig migrering** - Inget underhåll krävs för att kontrollera att alla tillägg fortfarande är giltiga vid uppgraderingen.
 

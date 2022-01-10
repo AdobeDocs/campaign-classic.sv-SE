@@ -6,10 +6,10 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: 20552812-5c58-4d48-9636-d5135197685d
-source-git-commit: 5d9e2f7d7cea9e6d1243b0e3a790f3990772e603
+source-git-commit: a5f6478d3c0780464974053e389923614abba582
 workflow-type: tm+mt
 source-wordcount: '523'
-ht-degree: 98%
+ht-degree: 97%
 
 ---
 
@@ -39,7 +39,7 @@ Läs mer i [Komma igång med tabeller och scheman](../../configuration/using/abo
 
 ## Hur använder man en anpassad mottagartabell? {#how-to-use-a-custom-recipient-table-}
 
-Du kan skapa och implementera en mottagartabell som inte är standard i Campaign för att skicka meddelanden.
+Du kan skapa och implementera en icke-inbyggd mottagartabell i Campaign för att skicka meddelanden.
 
 [Klicka här för att läsa mer](../../configuration/using/about-custom-recipient-table.md)
 
@@ -65,4 +65,4 @@ Principen med datapaket är att exportera en datakonfiguration och integrera den
 
 ## Var hittar jag listan över API:er i Campaign Classic? {#where-can-i-find-the-list-of-campaign-classic-apis}
 
-Alla API:er i Campaign inklusive deras fullständiga beskrivning finns i den här [dedikerade dokumentationen](https://experienceleague.adobe.com/developer/campaign-api/api/index.html).
+Alla API:er i Campaign inklusive deras fullständiga beskrivning finns i den här [dedikerade dokumentationen](https://experienceleague.adobe.com/developer/campaign-api/api/index.html?lang=sv).

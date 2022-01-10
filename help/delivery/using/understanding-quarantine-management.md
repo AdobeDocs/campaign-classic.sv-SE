@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: monitoring-deliveries
 exl-id: cfd8f5c9-f368-4a31-a1e2-1d77ceae5ced
-source-git-commit: bd9f035db1cbad883e1f27fe901e34dfbc9c1229
+source-git-commit: 98380c18b915cfebc980e68f9840f9d8919eaca4
 workflow-type: tm+mt
 source-wordcount: '2614'
 ht-degree: 14%
@@ -37,13 +37,13 @@ Dessutom bidrar karantäner till att minska SMS-kostnaderna genom att utesluta f
 
 **Karantän** gäller bara en adress, inte själva profilen.    Det innebär att om två profiler har samma e-postadress så påverkas båda om adressen sätts i karantän.
 
-På samma sätt kan en profil vars e-postadress sätts i karantän uppdatera profilen och ange en ny adress. Den kan sedan användas vid leveransåtgärder igen.
+På samma sätt kan en profil vars e-postadress sätts i karantän uppdatera sin profil och ange en ny adress. Den kan sedan användas av leveransåtgärder igen.
 
 Att vara på **blockeringslista**&#x200B;å andra sidan resulterar det i att profilen inte längre används som mål för någon leverans, t.ex. efter en avanmälan (avanmälan).
 
 >[!NOTE]
 >
->När en användare svarar på ett SMS-meddelande med ett nyckelord som&quot;STOP&quot; för att avanmäla sig från SMS-leveranser, läggs denna profil inte till blockeringslista, som i avanmälningsprocessen via e-post. Profilens telefonnummer skickas till karantänen så att användaren fortsätter att ta emot e-postmeddelanden.
+>När en användare svarar på ett SMS-meddelande med ett nyckelord som&quot;STOP&quot; för att avanmäla sig från SMS-leveranser, läggs deras profil inte till blockeringslista, som i avanmälningsprocessen via e-post. Profilens telefonnummer skickas till karantänen så att användaren fortsätter att ta emot e-postmeddelanden.
 
 ## Identifiera adresser i karantän {#identifying-quarantined-addresses}
 
@@ -143,7 +143,7 @@ Felräknaren initieras om om det senaste allvarliga felet inträffade för mer �
 
 ## Kantlinjer för push-meddelanden {#push-notification-quarantines}
 
-The quarantine mechanism for push notifications is globally the same as the general process. Se [Om karantäner](#about-quarantines). Vissa fel hanteras dock på olika sätt för push-meddelanden. För vissa mjuka fel utförs till exempel inga försök inom samma leverans. Specifikationerna för push-meddelanden anges nedan. Mekanismen för återförsök (antal återförsök, frekvens) är densamma som för e-postmeddelanden.
+Karantänmekanismen för push-meddelanden är globalt densamma som den allmänna processen. Se [Om karantäner](#about-quarantines). Vissa fel hanteras dock på olika sätt för push-meddelanden. För vissa mjuka fel utförs till exempel inga försök inom samma leverans. Specifikationerna för push-meddelanden anges nedan. Mekanismen för återförsök (antal återförsök, frekvens) är densamma som för e-postmeddelanden.
 
 Objekten som sätts i karantän är enhetstoken.
 
@@ -191,7 +191,7 @@ Synkront, om APN:er returnerar status &quot;unregistered&quot; för ett meddelan
    <td> Skapande/analys av meddelande - nyttolasten är för stor<br /> </td> 
    <td> Fel<br /> </td> 
    <td> Nyttolasten är för lång<br /> </td> 
-   <td> Soft<br /> </td> 
+   <td> Mjuk<br /> </td> 
    <td> Avvisad<br /> </td> 
    <td> Nej<br /> </td> 
   </tr> 
@@ -204,7 +204,7 @@ Synkront, om APN:er returnerar status &quot;unregistered&quot; för ett meddelan
    <td> Nej<br /> </td> 
   </tr> 
   <tr> 
-   <td> Certifikatproblem (lösenord, fel osv.) and test connection to APNs issue<br /> </td> 
+   <td> Certifikatproblem (lösenord, fel osv.) och testa anslutningen till APN-problemet<br /> </td> 
    <td> Fel<br /> </td> 
    <td> Olika felmeddelanden enligt felet<br /> </td> 
    <td> Mjuk<br /> </td> 
@@ -291,8 +291,8 @@ Android V2-karantänmekanismen använder samma process som Android V1, samma gä
   </tr> 
   <tr> 
    <td> Nätverksanslutningen bröts under sändning<br /> </td> 
-   <td> Failure<br /> </td> 
-   <td> No response from the Firebase Cloud Messaging service on the address: {1}<br /> </td> 
+   <td> Fel<br /> </td> 
+   <td> Inget svar från tjänsten Firebase Cloud Messaging på adressen: {1}<br /> </td> 
    <td> Mjuk<br /> </td> 
    <td> Onåbar<br /> </td> 
    <td> Ja<br /> </td> 
@@ -374,7 +374,7 @@ Android V2-karantänmekanismen använder samma process som Android V1, samma gä
    <td> Fel<br /> </td> 
    <td> INTERN </td> 
    <td> Ignorerad</td> 
-   <td> Refused<br /> </td> 
+   <td> Avvisad<br /> </td> 
    <td> Ja<br /> </td> 
   </tr>
     <tr> 
@@ -447,7 +447,7 @@ Android V2-karantänmekanismen använder samma process som Android V1, samma gä
    <td> invalid_grant </td> 
    <td> Ignorerad</td> 
    <td> Avvisad<br /> </td> 
-   <td> No<br /> </td> 
+   <td> Nej<br /> </td> 
   </tr>
     <tr> 
    <td> Autentisering: Ogiltig publik för OAuth-scope eller ID-token har angetts<br /> </td> 
@@ -563,4 +563,4 @@ SR Generic DELIVRD 000|#MESSAGE#
 
 * Allt som kommer efter rörlighetssymbolen (|) visas bara i **[!UICONTROL First text]** kolumn i **[!UICONTROL Delivery log qualification]** tabell. Det här innehållet ersätts alltid av **#MESSAGE#** när meddelandet har normaliserats. Med den här processen undviker du att ha flera poster för liknande fel och den är samma som för e-postmeddelanden. Mer information finns i [E-poststudsar](understanding-delivery-failures.md#bounce-mail-qualification).
 
-The Extended generic SMPP connector applies a heuristic to find sensible default values: if the status begins with **DELIV**, it is considered a success because it matches the common statuses **DELIVRD** or **DELIVERED** used by most providers. Any other status leads to a hard failure.
+Den utökade generiska SMPP-anslutningen använder en heuristisk metod för att hitta rimliga standardvärden: om statusen börjar med **DELIV** anses det vara en framgång eftersom det matchar de vanliga statusvärdena **LEVERERA** eller **LEVERERAD** används av de flesta leverantörer. All annan status leder till ett allvarligt fel.
