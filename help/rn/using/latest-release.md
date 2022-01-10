@@ -6,9 +6,9 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: d65869ca-a785-4327-8e8d-791c28e4696c
-source-git-commit: e4dfdd32c07753ee9e202ab4e4bf815485e47d8b
+source-git-commit: 630a62c5e5c9782c5c55fdebd651493a2d68fc54
 workflow-type: tm+mt
-source-wordcount: '1032'
+source-wordcount: '1056'
 ht-degree: 3%
 
 ---
@@ -30,7 +30,7 @@ Flera säkerhetsförbättringar har gjorts i FDA-konton:
 * ODBC-drivrutiner installeras nu direkt med Adobe Campaign Third Party. Manuella steg krävs inte längre för att installera dessa drivrutiner.
 * När du konfigurerar ditt externa FDA-konto kan du nu logga in på ditt Snowflake-konto med nyckelpars autentisering för förbättrad autentiseringssäkerhet. [Läs mer](../../installation/using/configure-fda-snowflake.md)
 * När du konfigurerar ett externt FDA-konto kan du nu logga in på ditt Azure synapse Analytics-konto med hjälp av den systemtilldelade hanterade identiteten. [Läs mer](../../installation/using/configure-fda-synapse.md#azure-external)
-
+* Alla referenser till log4j-biblioteket har tagits bort från Campaign för att säkerställa optimal säkerhet.
 
 **Förbättringar**
 
@@ -55,6 +55,7 @@ Flera säkerhetsförbättringar har gjorts i FDA-konton:
 * Ett nytt alternativ har lagts till i **Felhantering** egenskaper för arbetsflödesaktiviteter: The **Avbryt vid fel** kommer att stoppa arbetsflödet automatiskt. Du kommer inte att kunna starta om den efteråt (NEO-29661). [Läs mer](../../workflow/using/advanced-parameters.md#in-case-of-errors)
 * En dedikerad sekvens används nu för att generera primärnycklar för tabellen nmsGroup, som används för att skapa statistiska grupper av mottagare. Tidigare användes xtknownId-sekvensen. (NEO-30832)
 * Stöd för batchuppdateringsåtgärder har lagts till med CRM-anslutningsaktiviteten.
+* Förbättrade prestanda för bearbetning av transaktionsmeddelanden. (NEO-40370)
 
 **Felkorrigeringar**
 
