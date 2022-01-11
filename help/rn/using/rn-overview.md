@@ -9,7 +9,7 @@ exl-id: 7a05fdff-8f9d-4e8d-812e-0f1509db5499
 source-git-commit: 87067a0cca1a4a7f8ea1137ece6d513d58fcdb42
 workflow-type: tm+mt
 source-wordcount: '913'
-ht-degree: 81%
+ht-degree: 87%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 81%
 
 ## Status på versioner{#rn-statuses}
 
-Varje ny version har en status som materialiseras av en färg.
+Varje ny version kommer med en status som visas med en färg.
 
 ![](assets/do-not-localize/green3.png) **Allmän tillgänglighet** (GA) – validerad i produktion och rekommenderas av Adobe.
 
@@ -41,9 +41,9 @@ Som värdkund får du automatiskt tillgång till uppgraderingen med den senaste 
 
 ## Rekommendationer{#recommendations}
 
-Vi rekommenderar att du installerar **samma stabila bygge** på alla servrar som körs på samma klientkonfiguration.
+För att säkerställa en stabil konfiguration rekommenderar vi att du installerar **samma stabila version** på alla servrar som körs på samma klientkonfiguration.
 
-Dessutom måste klientkonsolen finnas på samma version som serverinstansen.
+Dessutom måste klientkonsolen vara på samma version som serverinstansen.
 
 Om du vill att implementeringen ska vara aktuell bör du läsa sidorna om de [inaktuella och borttagna funktionerna](../../rn/using/deprecated-features.md) samt [kompatibilitetsmatrisen](../../rn/using/compatibility-matrix.md) för varje ny version.
 
@@ -136,7 +136,7 @@ Vi strävar efter att se till att du har relevant projekt- och kontaktinformatio
 
 ## Ytterligare resurser{#support}
 
-* [Hitta din Campaign-version](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version).
+* [Hitta din version av Campaign](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version).
 * [Hjälp och support](../../support.md)
 * [Versioner av Kontrollpanelen](https://experienceleague.adobe.com/docs/control-panel/using/release-notes.html?lang=sv)
 * [Senaste dokumentationsuppdateringarna](../../rn/using/documentation-updates.md)

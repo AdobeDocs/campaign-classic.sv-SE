@@ -9,7 +9,7 @@ exl-id: 07c1f4a3-cf16-4a9b-b402-e13258799f91
 source-git-commit: 87067a0cca1a4a7f8ea1137ece6d513d58fcdb42
 workflow-type: tm+mt
 source-wordcount: '4796'
-ht-degree: 95%
+ht-degree: 98%
 
 ---
 
@@ -47,27 +47,27 @@ Tillagt batchuppdateringsalternativ i CRM-anslutningsaktiviteten. [Läs mer](../
 
 ### December 2021{#dec-2021}
 
-Versionsinformation om Campaign Classic v7 har omstrukturerats för att förenkla navigeringen. [Läs mer](rn-overview.md)
+Versionsinformation om Campaign Classic v7 har omorganiserats för att förenkla navigeringen. [Läs mer](rn-overview.md)
 
 Dokumentationen om formulärversionen i Campaign har uppdaterats och förbättrats. [Läs mer](../../configuration/using/editing-forms.md)
 
-CentOs 8 har nått slutet av livscykeln och är nu föråldrat i Adobe Campaign Classic. [Läs mer](deprecated-features.md)
+CentOs 8 har nått slutet av sin livscykel och är nu inaktuell i Adobe Campaign Classic. [Läs mer](deprecated-features.md)
 
 ### November 2021{#nov-2021}
 
-En begränsning för inkommande SMS (MO) har lagts till. [Läs mer](../../delivery/using/sms-protocol.md#multipart)
+Lade till en begränsning för inkommande SMS (MO). [Läs mer](../../delivery/using/sms-protocol.md#multipart)
 
-Information om migreringsprocessloggar för CRM-anslutningsdistribution har uppdaterats. [Läs mer](../../migration/using/testing-the-migration.md#verification-process)
+Uppdaterade logguppgifterna om migreringsprocessen för CRM-anslutningsdistribution. [Läs mer](../../migration/using/testing-the-migration.md#verification-process)
 
-Ytterligare krav på IMS-behörigheter för att implementera integrering mellan Adobe Campaign och Adobe Analytics. [Läs mer](../../platform/using/adobe-analytics-provisioning.md)
+Lade till krav om IMS-behörigheter för att implementera integrering mellan Adobe Campaign och Adobe Analytics. [Läs mer](../../platform/using/adobe-analytics-provisioning.md)
 
-Uppdaterat Adobe Analytics Data Connector End-of-Life-datum från 1 mars 2022 till 17 augusti 2022. [Läs mer](deprecated-features.md)
+Uppdaterade datumet för slutet på livscykeln för Adobe Analytics Data Connector från den 1 mars 2022 till den 17 augusti 2022. [Läs mer](deprecated-features.md)
 
-En länk till Adobe Experience Platform mobil-SDK-dokumentation har lagts till för att lära dig hur du konfigurerar Campaign-tillägget i Adobe Launch. [Läs mer](../../delivery/using/integrating-campaign-sdk-into-the-mobile-application.md)
+Lade till en länk till den mobila SDK-dokumentationen för Adobe Experience Platform för att förklara hur du konfigurerar Campaign-tillägget i Adobe Launch. [Läs mer](../../delivery/using/integrating-campaign-sdk-into-the-mobile-application.md)
 
-Lagt till ett avsnitt om hur du använder JavaScript för att beräkna värden, utbyta data och utföra specifika åtgärder med SOAP-anrop.[Läs mer](../../workflow/using/javascript-scripts-and-templates.md)
+Lade till ett avsnitt om hur du använder JavaScript för att beräkna värden, utbyta data och utföra specifika åtgärder med SOAP-anrop.[Läs mer](../../workflow/using/javascript-scripts-and-templates.md)
 
-Lagt till exempel på JavaScript-kodimplementering i arbetsflöden. [Läs mer](../../workflow/using/javascript-in-workflows.md)
+Lade till exempel på implementering av JavaScript-koder i arbetsflöden. [Läs mer](../../workflow/using/javascript-in-workflows.md)
 
 
 ### Oktober 2021{#oct-2021}

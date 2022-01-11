@@ -834,7 +834,7 @@ ht-degree: 98%
       + [Tekniska anmärkningar](technotes/using/technote.md)
       + [Konfigurationsuppdateringar i Campaign](technotes/using/acc-config-updates.md)
       + [IMS-uppdateringar](technotes/using/ims-updates.md)
-      + [Stöd för TLS 1.0 och 1.1 upphör](technotes/using/eol-tls-support.md)
+      + [Support för TLS 1.0 och 1.1 upphör](technotes/using/eol-tls-support.md)
    + E-postmeddelanden och push-meddelanden{#technotes-email}
       + [Sekretesskydd för Mail i Apple iOS](technotes/using/apple-mail-app-privacy-protection.md)
       + [Vanliga frågor om sekretesskydd för Apple Mail](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/technotes/apple-mail-privacy-faq.html?lang=sv)

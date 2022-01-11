@@ -9,7 +9,7 @@ exl-id: d60d67de-6618-4f3b-be4a-ad7633ab5645
 source-git-commit: 0a7cdd53640bb3d96ff9bc2de4aa4c1849e32c83
 workflow-type: tm+mt
 source-wordcount: '1707'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -54,7 +54,7 @@ Kunder uppmanas att se över om de använder funktionen i den aktuella driftsät
   <td>Adobe Analytics Data Connector<br></td>
    <td><p>Från och med Campaign 21.1.3 är Adobe Analytics Data Connector inaktuell.</p>
    <p>Om du använder den här kopplingen måste du anpassa implementeringen efter den. <a href="../../platform/using/adobe-analytics-connector.md">Läs mer</a></p>
-  <p><em>Datum för målborttagning: 17 augusti 2022</em></p>
+  <p><em>Måldatum för borttagning: 17 augusti 2022</em></p>
   </td>
  </tr>
     <tr>
@@ -62,7 +62,7 @@ Kunder uppmanas att se över om de använder funktionen i den aktuella driftsät
    <td><p>Övervakningsrapporten om teknisk levererbarhet är föråldrad från och med Campaign version 21.1.</p>
    <p>Om det behövs kan du få den här rapporten via e-post varje dag fram tills funktionen tas bort. Du begär den genom att öppna ett specifikt <a href="https://helpx.adobe.com/se/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html">supportärende</a> och ange namnet på instansen och e-postadressen eller e-postadresserna som rapporten ska skickas till.</p> 
    <p>Adobe rekommenderar att du samarbetar med levererbarhetsteamet för att definiera de bästa verktygen för att övervaka instansens levererbarhetsförmåga.</p>
-  <p><em>Datum för målborttagning: Tidigt 2022</em></p>
+  <p><em>Måldatum för borttagning: tidigt 2022</em></p>
   </td>
  </tr>
   <tr>
@@ -70,7 +70,7 @@ Kunder uppmanas att se över om de använder funktionen i den aktuella driftsät
   <td><p> Från och med Campaign version 20.3 har autentisering av utlösarintegreringen, som ursprungligen baserades på oAUTH-autentiseringsinställningar för åtkomst till pipelines, nu ändrats och flyttats till Adobe I/O. <p>
   <p>Om du använder den här utlösarintegreringen måste du anpassa implementeringen i enlighet med detta. <a href="../../integrations/using/configuring-adobe-io.md">Läs mer</a></p> 
   <p>Mer information om inaktuell OAauth-autentisering finns på den här <a href="https://github.com/AdobeDocs/analytics-1.4-apis/blob/master/docs/APIEOL.md">sidan</a></p> 
-  <p><em>Datum för målborttagning: 20 oktober 2021. I värdmiljöer kan du utnyttja en förlängning fram till 23 februari 2022. </em></p>
+  <p><em>Måldatum för borttagning: 20 oktober 2021. Värdmiljöer drar nytta av en förlängning till den 23 februari 2022. </em></p>
   </td>
   </tr>
  </tbody> 
