@@ -8,7 +8,7 @@ index: y
 internal: n
 snippet: y
 exl-id: ab30f697-3022-4a29-bbdb-14ca12ec9c3e
-source-git-commit: 8789571c9cf9ca857777fe5c03c355200c466789
+source-git-commit: 966da123b30278817ca465ac5dfe1f733c4d6c5c
 workflow-type: tm+mt
 source-wordcount: '701'
 ht-degree: 3%
@@ -24,7 +24,7 @@ ht-degree: 3%
 >Om du använder en äldre version av integreringen av utlösare via autentisering, **du måste flytta till Adobe I/O enligt beskrivningen nedan**.
 >Observera att under den här flyttningen till [!DNL Adobe I/O]kan vissa inkommande utlösare gå förlorade.
 >
->Det gamla autentiseringsläget Autentisering med Campaign har tagits bort den **20 oktober 2021**. Värdmiljöer drar nytta av ett tillägg fram till  **23 februari 2022**. Kontakta Adobe kundtjänst om du är en lokal kund eller hybridkund och utöka supporten till februari 2022. Du måste [ange AppID för OAuth-programmet](../../integrations/using/configuring-pipeline.md?lang=en#step-optional) till Adobe.
+>Det gamla autentiseringsläget Autentisering med Campaign har tagits bort den **20 oktober 2021**. Värdmiljöer drar nytta av ett tillägg fram till **25 maj 2022**. Kontakta Adobe kundtjänst om du är en lokal kund eller hybridkund för att utöka supporten till **Maj 2022**. Du måste [ange AppID för OAuth-programmet](../../integrations/using/configuring-pipeline.md?lang=en#step-optional) till Adobe.
 
 ## Förhandskrav {#adobe-io-prerequisites}
 
