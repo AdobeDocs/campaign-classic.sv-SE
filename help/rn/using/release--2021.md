@@ -1,23 +1,23 @@
 ---
 product: campaign
-title: Campaign Classic 2021-utgåvor
-description: Läs mer om Campaign Classic 2021-utgåvor
+title: Campaign Classic 2021-versioner
+description: Läs mer om Campaign Classic 2021-versioner
 feature: Overview
 role: User
 level: Beginner
 source-git-commit: babb585438a6e467afad74391035059f7b12a6ec
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2540'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
-# 2021 års utgåvor{#release-2021}
+# 2021-versioner{#release-2021}
 
 ## Version 7.1 (21.1)
 
 >[!CAUTION]
->Använd **[!UICONTROL Help > About...]** för att kontrollera din Adobe Campaign [version och build-nummer](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version). Observera dock att för alla byggen mellan 9277 och 9343 som listas på den här sidan visar versionsnumret 7.0 i stället för 7.1.
+>Använd menyn **[!UICONTROL Help > About...]** för att kontrollera din Adobe Campaign [-version och buildnummer ](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version). Observera dock att för alla versioner mellan 9277 och 9343 som listas på den här sidan visar versionsnumret 7.0 i stället för 7.1.
 
 ### ![](assets/do-not-localize/limited_2.png) Version 21.1.4 – build 9343 {#release-21-1-4-build-9343}
 
@@ -145,7 +145,7 @@ _5 june 2021_
 <table> 
 <thead>
 <tr> 
-<th> <strong>Google BigQuery FDA-kontakt</strong><br /> </th> 
+<th> <strong>Google BigQuery FDA connector</strong><br /> </th> 
 </tr> 
 </thead> 
 <tbody> 
@@ -168,7 +168,7 @@ _5 june 2021_
 **Kompatibilitetsuppdateringar**
 
 Campaign har nu stöd för följande system:
-* Google BigQuery FDA-kontakt
+* Google BigQuery FDA connector
 * Vertica FDA-koppling
 * PostgreSQL 13
 
