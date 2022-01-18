@@ -7,7 +7,7 @@ content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: 23c873fd-9016-4d32-842c-772cfff0e23e
 source-git-commit: 98380c18b915cfebc980e68f9840f9d8919eaca4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '886'
 ht-degree: 100%
 
@@ -59,7 +59,7 @@ För att underlätta beredskapen gällande din integritet kan du hantera förfr�
 
 * **Rätten att glömmas** (förfrågan om borttagning), även känd som Radering av data, ger den registrerade rätt att låta den personuppgiftsansvarige radera sina personuppgifter, upphöra med ytterligare spridning av uppgifterna och eventuellt få tredje part att stoppa behandlingen av uppgifterna.
 
-Se [implementeringsstegen](../../platform/using/privacy-requests.md) för att läsa om hur du kan skapa förfrågningar om **åtkomst** och **borttagning** och hur Adobe Campaign bearbetar dem.
+Se [implementeringsstegen](../../platform/using/privacy-requests.md) för att läsa om hur du kan skapa förfrågningar om **åtkomst** och **radering** och hur Adobe Campaign bearbetar dem.
 
 <!--Tutorials on Privacy management in Campaign Standard are also available [here](https://experienceleague.adobe.com/docs/campaign-standard-learn/tutorials/privacy/privacy-overview.html).
 https://experienceleague.adobe.com/docs/campaign-standard-learn/tutorials/privacy/privacy-overview.html?lang=en-->
