@@ -7,9 +7,9 @@ role: User
 level: Beginner
 exl-id: b8c1f287-06f4-4c34-8cca-b0c7676abbc2
 source-git-commit: 8610d29a3df1080f1622a2cb3685c0961fb40092
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '720'
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 
@@ -188,9 +188,9 @@ CRM (Customer Relationship Management)-system som är kompatibla med Adobe Campa
 
 ## Federerad dataåtkomst (FDA){#FederatedDataAccessFDA}
 
-Externa databaser som är kompatibla med Adobe Campaign [Federated Data Access Module](../../installation/using/about-fda.md) listas nedan. Kompatibiliteten beror på din [värdmodell](../../installation/using/hosting-models.md).
+Externa databaser som är kompatibla med [modulen för federerad dataåtkomst](../../installation/using/about-fda.md) i Adobe Campaign, listas nedan. Kompatibiliteten beror på din [värdmodell](../../installation/using/hosting-models.md).
 
-**Managed Services** (värd), **Hybrid** och **Lokalt** miljöer kan ansluta Campaign till följande externa databassystem:
+Miljöerna **Managed Services** (värd), **Hybrid** och **Lokal** kan ansluta Campaign till följande externa databassystem:
 
 <table>
 <tbody>
@@ -211,7 +211,7 @@ Externa databaser som är kompatibla med Adobe Campaign [Federated Data Access M
 <tr>
 <td>Amazon Redshift</td>
 <td><p> </p>
-<td>v7.0 19.1.4 minimum</td>
+<td>Minst v7.0 19.1.4</td>
 </td>
 </tr>
 <tr>
@@ -230,7 +230,7 @@ Externa databaser som är kompatibla med Adobe Campaign [Federated Data Access M
 </tbody>
 </table>
 
-Dessutom **Hybrid** och **Lokalt** -miljöer kan också koppla samman Campaign med:
+Dessutom kan miljöerna **Hybrid** och **Lokal** även koppla samman Campaign med:
 
 <table>
 <tbody>
@@ -255,7 +255,7 @@ Dessutom **Hybrid** och **Lokalt** -miljöer kan också koppla samman Campaign m
 <p>12c</p>
 <p>11g</p>
 </td>
-<td>Minst v7.0</td>
+<td>minst v7.0</td>
 </tr>
 <tr><td>SQL Server</td>
 <td>
@@ -265,13 +265,13 @@ Dessutom **Hybrid** och **Lokalt** -miljöer kan också koppla samman Campaign m
 <p>2014</p>
 <p>2012 SP1 och SP2</p>
 </td>
-<td>Minst v7.0</td>
+<td>minst v7.0</td>
 </tr>
 <tr><td>MySQL</td>
 <td>
 <p>5.7</p>
 </td>
-<td>Minst v7.0</td>
+<td>minst v7.0</td>
 </tr>
 <tr>
 <td>Teradata</td>
@@ -281,14 +281,14 @@ Dessutom **Hybrid** och **Lokalt** -miljöer kan också koppla samman Campaign m
 <p>15.10</p>
 <p>15.0</p>
 </td>
-<td>Minst v7.0</td>
+<td>minst v7.0</td>
 </tr>
 <tr>
 <td>Netezza</td>
 <td>
 <p>7.2</p>
 </td>
-<td>Minst v7.0</td>
+<td>minst v7.0</td>
 </tr>
 <tr>
 <td>Sybase</td>
@@ -296,14 +296,14 @@ Dessutom **Hybrid** och **Lokalt** -miljöer kan också koppla samman Campaign m
 <p>IQ 16</p>
 <p>ASE 15.7</p>
 </td>
-<td>Minst v7.0</td>
+<td>minst v7.0</td>
 </tr>
 <tr>
 <td>SAP HANA</td>
 <td>
 <p>version 1 SPS 12</p>
 </td>
-<td>Minst v7.0</td>
+<td>minst v7.0</td>
 </tr>
 <tr><td>Hadoop via HiveSQL</td>
 <td>
@@ -311,7 +311,7 @@ Dessutom **Hybrid** och **Lokalt** -miljöer kan också koppla samman Campaign m
 <p>HDInsight 3.4 (HDP 2.4), 3.5 (HDP 2.5), 3.6 (HDP 2.6)</p>
 <p>Cloudera CDH6.x</p>
 </td>
-<td>Minst v7.0</td>
+<td>minst v7.0</td>
 </tr>
 </tbody>
 </table>
