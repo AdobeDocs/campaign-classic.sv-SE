@@ -6,9 +6,9 @@ audience: installation
 content-type: reference
 topic-tags: initial-configuration
 exl-id: 2bc077c4-ed65-4157-bfc9-df5d0442f476
-source-git-commit: 6c23dadb5b6523e17e242de43a908ca86ed7cc23
+source-git-commit: 035297523c25061f28751c28df86d562f40f45ea
 workflow-type: tm+mt
-source-wordcount: '1188'
+source-wordcount: '1254'
 ht-degree: 6%
 
 ---
@@ -241,7 +241,7 @@ I följande tabell visas alla inbyggda Campaign-paket.
 
 ### Paket för meddelandecenter {#message-center-package}
 
-Du måste installera leveranskanaler (e-post, mobilkanal, mobilappskanal osv.) innan du installerar Transactional Messaging (Message Center-paket). Om du har startat ett meddelandecenterprojekt som bara är till för e-post och behöver lägga till en ny kanal i efterhand måste du följa dessa steg:
+Du måste installera leveranskanaler (e-post, mobilkanal, mobilappskanal, LINE osv.) innan du installerar Transactional Messaging (Message Center-paket). Om du har startat ett meddelandecenterprojekt som bara är till för e-post och behöver lägga till en ny kanal i efterhand måste du följa dessa steg:
 
 1. Installera den nya kanalen, till exempel **Mobilkanal**, med hjälp av guiden för paketimport ( **[!UICONTROL Tools > Advanced > Import package > Adobe Campaign package]**).
 1. Importera filen ( **[!UICONTROL Tools > Advanced > Import package > File]**) och välj:
@@ -254,6 +254,19 @@ Du måste installera leveranskanaler (e-post, mobilkanal, mobilappskanal osv.) i
 
    ![](assets/messagecenter_install_channel.png)
 
+
+### [!DNL LINE] kanalinställning{#line-package}
+
+Så här ställer du in [!DNL LINE] måste du först installera [!DNL LINE] paket.
+
+När det gäller en mellankällskonfiguration måste du:
+
+* Installera [!DNL LINE] paket på både Marketing och MID-instansen
+
+* Konfigurera [!DNL LINE] externt konto på mkt-instansen så att det pekar på mittinstansen genom att ändra leveransläget. [Läs mer](../../delivery/using/line-channel.md#configure-line-external)
+
+* Konfigurera [!DNL LINE] autentiseringsuppgifter i det externa kontot på MID-instansen.
+
 >[!CAUTION]
 >
->Leveransmallarna för LINE i Message Center är inte tillgängliga om Message Center-paketen har installerats före LINE
+>Leveransmallar för Message Center för [!DNL LINE] kanalen är inte tillgänglig om Message Center-paketen har installerats tidigare [!DNL LINE].
