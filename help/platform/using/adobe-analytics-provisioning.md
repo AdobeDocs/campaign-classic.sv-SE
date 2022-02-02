@@ -7,10 +7,10 @@ feature: Overview
 role: User, Admin
 level: Beginner
 exl-id: 24e002aa-4e86-406b-92c7-74f242ee4b86
-source-git-commit: 671e29425e8962ced833c10303b6edce7afda462
+source-git-commit: 9ee95f6d60500b18e242c6d648488615f47a4459
 workflow-type: tm+mt
-source-wordcount: '547'
-ht-degree: 5%
+source-wordcount: '646'
+ht-degree: 4%
 
 ---
 
@@ -141,10 +141,21 @@ Din produktprofil är nu konfigurerad. Sedan måste du skapa projektet Adobe I/O
 
    ![](assets/do-not-localize/triggers_12.png)
 
-1. Klistra in dessa autentiseringsuppgifter för tjänstkontot på servern med följande kommando:
+1. Använd den privata nyckel som genereras i steg 6.
+
+   Om du redan har konfigurerat utlösare med dessa autentiseringsuppgifter måste den privata nyckeln vara densamma för den här anslutningskonfigurationen.
+
+1. Koda den privata nyckeln med följande kommando: `base64 ./private.key > private.key.base64`. Detta sparar base64-innehållet i en ny fil `private.key.base64`.
+
+   >[!NOTE]
+   >
+   >Extra rader kan ibland läggas till automatiskt när du kopierar/klistrar in den privata nyckeln. Kom ihåg att ta bort den innan du kodar din privata nyckel.
+
+1. Kopiera innehållet från filen `private.key.base64`.
+
+1. Logga in via SSH i varje behållare där Adobe Campaign-instansen är installerad och lägg till projektinloggningsuppgifterna i Adobe Campaign genom att köra följande kommando som `neolane` användare. Detta infogar **[!UICONTROL Technical Account]** autentiseringsuppgifter i instanskonfigurationsfilen.
 
    ```
-   nlserver config -instance:<instanceName> -setimsjwtauth::<ImsOrgId>/<ClientId>/<TechnicalAccountId>/<ClientSecret>/<$(base64 -w0 /path/to/private.key)>
+   nlserver config -instance:<instance name> -setimsjwtauth:Organization_Id/Client_Id/Technical_Account_ID/<Client_Secret>/<Base64_encoded_Private_Key>
    ```
-
 Nu kan ni börja använda Analytics-kontakten och spåra kundbeteenden.
