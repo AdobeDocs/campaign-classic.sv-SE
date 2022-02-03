@@ -6,9 +6,9 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: a9cd08b0-55c2-4405-9fb8-f0c623cd4ccb
-source-git-commit: 1d32161d60f6b382188012b104c642f504e28645
+source-git-commit: 60fc0fd2a10f05abb77843ef0cb69e44f35a9648
 workflow-type: tm+mt
-source-wordcount: '2243'
+source-wordcount: '2216'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 0%
 
 ![](../../assets/v7-only.svg)
 
-Som en del av [Gold Standard Initiative](../../rn/using/gold-standard.md), avställer Adobe det gamla datacentret. Campaign Classic instanser måste överföras till Public Cloud Amazon Web Services (AWS). [Läs mer om det här initiativet](dc-migration.md).
+Adobe avställer det gamla datacentret: Campaign Classic instanser måste överföras till Public Cloud Amazon Web Services (AWS). [Läs mer om det här initiativet](dc-migration.md).
 
 Nedan finns en uppsättning vanliga frågor om det här projektet, effekten på Campaign-miljöer och andra användbara resurser.
 
@@ -47,7 +47,7 @@ Global påverkan på databaser och infrastruktur listas nedan.
 
    Som ett första steg kommer vi att behålla samma Campaign Classic-byggnad med migrering.
 
-   I ytterligare ett steg ska vi uppgradera till den senaste Campaign Classic GA-versionen. Mer information finns i [Vanliga frågor om uppgradering](../../platform/using/faq-build-upgrade.md) och [Versionsinformation om Campaign Gold Standard](../../rn/using/gold-standard.md).
+   I ytterligare ett steg ska vi uppgradera till den senaste Campaign Classic GA-versionen. Mer information finns på [den här sidan](../../rn/using/rn-overview.md).
 
 * **Vad finns det för plan för att lösa eventuella problem efter migrationen?**
 
@@ -63,7 +63,7 @@ Global påverkan på IP-adresser, blockeringslista, underdomäner och URL-adress
 
    IP-adressen för Adobe-servrarna kommer att ändras. Kunderna kan behöva lägga till de nya IP-adresserna i tillåtelselista i systemet.
 
-   [Klicka här](#config) om du vill ha mer information om IP på tillåtelselista.
+   [Läs mer](#config) om IP på tillåtelselista.
 
 * **Hur hanterar vi port som lagts till i tillåtelselista för SFTP/FTP-åtkomst?**
 
@@ -73,7 +73,7 @@ Global påverkan på IP-adresser, blockeringslista, underdomäner och URL-adress
 
    IP-adressen för Adobe-servrarna kommer att ändras. Kunderna kan behöva lägga till de nya IP-adresserna till tillåtelselista i systemet.
 
-   [Klicka här](#config) om du vill ha mer information om IP på tillåtelselista.
+   [Läs mer](#config) om IP på tillåtelselista.
 
 * **Hur hanteras underdomänsdelegering?**
 
@@ -155,7 +155,7 @@ Global påverkan på konfiguration, anslutning till andra system och produkter, 
 
    IP-adressen för Adobe-servrarna kommer att ändras. Kunderna kan behöva lägga till de nya IP-adresserna till tillåtelselista i systemet.
 
-   [Klicka här](#config) om du vill ha mer information om IP på tillåtelselista.
+   [Läs mer](#config) om IP på tillåtelselista.
 
 * **Ser vi till att alla parametrar för JavaScript-minneskonfiguration ställs in korrekt efter migreringen?**
 
@@ -169,7 +169,7 @@ Global påverkan på konfiguration, anslutning till andra system och produkter, 
 
    Den kan ändras beroende på var nya servrar finns. Kunden kan dock behålla sin aktuella tidszon.
 
-   [Klicka här](../../workflow/using/managing-time-zones.md) om du vill ha mer information om hantering av tidszoner i Adobe Campaign Classic v7.
+   [Läs mer](../../workflow/using/managing-time-zones.md) om hantering av tidszoner i Adobe Campaign Classic v7.
 
 
 ## Säkerhet och behörigheter
