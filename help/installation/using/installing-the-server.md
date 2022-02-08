@@ -6,10 +6,10 @@ audience: installation
 content-type: reference
 topic-tags: installing-campaign-in-windows-
 exl-id: c0cb4efa-cae9-4312-88fb-738857a89595
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: e88ed7a5710f9ec8713d9e7151d2fd4904097990
 workflow-type: tm+mt
-source-wordcount: '402'
-ht-degree: 2%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -157,7 +157,7 @@ net stop nlserver6
 
 ## Installerar LibraryOffice {#installing-libreoffice}
 
-Hämta LibreOffice, till exempel från [https://www.libreoffice.org/download/libreoffice-fresh/](https://www.libreoffice.org/download/libreoffice-fresh/) och följer de vanliga installationsstegen.
+Ladda ned LibraryOffice och följ de vanliga installationsstegen.
 
 Lägg till följande miljövariabel:
 

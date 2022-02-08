@@ -2,14 +2,12 @@
 product: campaign
 title: Marknadsföringskampanjdokument och leveransdispositioner
 description: Läs mer om kampanjdokument och leveransdispositioner för marknadsföring
-audience: campaign
-content-type: reference
-topic-tags: orchestrate-campaigns
+feature: Campaigns
 exl-id: 891252b0-4700-4a2a-a632-63aad5ce75d7
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: d3f5c56078ddac7597925191fd347bdcab61714d
 workflow-type: tm+mt
-source-wordcount: '755'
-ht-degree: 1%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 

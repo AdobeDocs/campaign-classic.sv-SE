@@ -3,10 +3,8 @@ product: campaign
 title: Godkänna marknadsföringskampanjer
 description: Lär dig hantera godkännanden av marknadsföringskampanjer
 audience: campaign
-content-type: reference
-topic-tags: orchestrate-campaigns
 exl-id: 8cbb2445-f5e4-4a25-ba7e-56e39ca9d3ce
-source-git-commit: f000cb8bae164c22d1ede15db4e763cf50530674
+source-git-commit: d3f5c56078ddac7597925191fd347bdcab61714d
 workflow-type: tm+mt
 source-wordcount: '2434'
 ht-degree: 0%
@@ -252,7 +250,6 @@ Om du vill välja en lista med operatorer klickar du på **[!UICONTROL Edit...]*
 >* Om en lista över granskare definieras, godkänns ett jobb när en granskare har godkänt det. Länken för godkännande finns inte längre på kontrollpanelen. Om en annan granskare klickar på länken för godkännande i meddelandet när meddelanden har skickats, får de ett meddelande om att en annan operator redan har godkänt jobbet.
 >* Du kan definiera ett godkännandeschema för kampanjen i den nedre delen av granskningsfönstret. Som standard har granskarna tre dagar på sig att godkänna en process från och med överföringsdatumet. Det är möjligt att konfigurera en påminnelse som automatiskt skickas till de berörda operatörerna före godkännandedeadline.
 >* Du kan lägga till påminnelser från det här avsnittet.
-
 >
 
 

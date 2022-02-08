@@ -1,15 +1,13 @@
 ---
 product: campaign
 title: Utforma och genomför marknadsföringskampanjer
-description: Define, optimize, execute and analyse marketing campaigns.
-audience: campaign
-content-type: reference
-topic-tags: about-marketing-campaigns
+description: Definiera, optimera, genomföra och analysera marknadsföringskampanjer
+feature: Campaigns
 exl-id: 4e0df18f-3623-4dfb-a2f8-ad293dbc4dd5
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: d3f5c56078ddac7597925191fd347bdcab61714d
 workflow-type: tm+mt
-source-wordcount: '443'
-ht-degree: 8%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -17,36 +15,36 @@ ht-degree: 8%
 
 ![](../../assets/common.svg)
 
-Med Adobe Campaign kan ni definiera, optimera, genomföra och analysera kommunikation och marknadsföringskampanjer. Adobe Campaign fungerar som ett enhetligt center för order och genomförande av marknadsföringsstrategier. For more on this, refer to [Access campaigns](../../distributed/using/accessing-campaigns.md) and [Create marketing campaigns](../../campaign/using/setting-up-marketing-campaigns.md).
+Med Adobe Campaign kan ni definiera, optimera, genomföra och analysera kommunikation och marknadsföringskampanjer. Adobe Campaign fungerar som ett enhetligt center för order och genomförande av marknadsföringsstrategier. Mer information finns i [Få tillgång till kampanjer](../../distributed/using/accessing-campaigns.md) och [Skapa marknadsföringskampanjer](../../campaign/using/setting-up-marketing-campaigns.md).
 
-In addition, the **Marketing Resource Management (MRM)** module lets you control marketing actions in a collaborative mode by providing complete management and real-time tracking of the tasks, budgets and marketing resources involved. Med Marketing Resource Management kan ni optimera och reglera hanteringen av interna och externa processer, resurser och marknadsföringskampanjer samt relationer till tredje part (byråer, skrivare osv.). Mer information om detta finns i [det här avsnittet](../../mrm/using/about-marketing-resource-management.md).
+Dessutom är **Marknadsföringsresurshantering (MRM)** kan ni styra marknadsföringsåtgärder i ett samverkansbaserat läge genom att tillhandahålla fullständig hantering och realtidsspårning av de uppgifter, budgetar och marknadsföringsresurser som ingår. Med Marketing Resource Management kan ni optimera och reglera hanteringen av interna och externa processer, resurser och marknadsföringskampanjer samt relationer till tredje part (byråer, skrivare osv.). Mer information om detta finns i [det här avsnittet](../../mrm/using/about-marketing-resource-management.md).
 
 >[!NOTE]
 >
 >Mer information om Adobe Campaign grundläggande funktioner finns i [det här avsnittet](../../platform/using/about-adobe-campaign-classic.md) -avsnitt.\
->Capabilities related to population targeting, message personalization and message delivery on the various channels are detailed in [this section](../../delivery/using/steps-about-delivery-creation-steps.md).
+>Funktioner för målgruppsanpassning, personalisering av meddelanden och meddelandeleverans i olika kanaler beskrivs i [det här avsnittet](../../delivery/using/steps-about-delivery-creation-steps.md).
 
 ![](assets/do-not-localize/how-to-video.png) [Identifiera nyckelbegrepp för marknadsföringskampanjer i video](#video)
 
-## Core concepts {#core-concepts}
+## Kärnkoncept {#core-concepts}
 
-The following concepts need to be known in the context of Campaign:
+Följande koncept måste vara kända i samband med Campaign:
 
 * **Campaign**
 
    En kampanj centraliserar alla element som hör till en marknadsföringskampanj: leveranser, regler för målinriktning, kostnader, exportfiler, relaterade dokument osv. Varje kampanj är kopplad till ett program.
 
-   For more on this, refer to [Adding a campaign](../../campaign/using/setting-up-marketing-campaigns.md#adding-a-campaign).
+   Mer information finns i [Lägga till en kampanj](../../campaign/using/setting-up-marketing-campaigns.md#adding-a-campaign).
 
 * **Program**
 
-   Med ett program kan du definiera marknadsföringsåtgärder för en kalenderperiod: lansering, kanvantning, lojalitet osv. Each program contains campaigns linked to a calendar, which provides an overall view.
+   Med ett program kan du definiera marknadsföringsåtgärder för en kalenderperiod: lansering, kanvantning, lojalitet osv. Varje program innehåller kampanjer som är länkade till en kalender, som ger en övergripande bild.
 
 * **Plan**
 
-   The marketing plan can contain multiple programs. Den är kopplad till en kalenderperiod, har en tilldelad budget och kan även kopplas ihop med dokument och mål.
+   Marknadsföringsplanen kan innehålla flera program. Den är kopplad till en kalenderperiod, har en tilldelad budget och kan även kopplas ihop med dokument och mål.
 
-   For more on this, refer to [Campaign calendar](../../campaign/using/accessing-marketing-campaigns.md#campaign-calendar).
+   Mer information finns i [Kampanjkalender](../../campaign/using/accessing-marketing-campaigns.md#campaign-calendar).
 
 * **Arbetsflöde**
 
@@ -56,11 +54,11 @@ The following concepts need to be known in the context of Campaign:
 
 * **Mål**
 
-   I kampanjen, programmet eller planen kan ni ange en lista med mål. These are quantified values to be reached. At the end of the campaign, program or plan, the MRM module lets you compare the objectives and results in dedicated reports.
+   I kampanjen, programmet eller planen kan ni ange en lista med mål. Dessa är kvantifierade värden som ska uppnås. I slutet av kampanjen, programmet eller planen kan ni med MRM-modulen jämföra målen och resultaten i dedikerade rapporter.
 
 * **Leveransbeskrivning**
 
-   A delivery outline is a structured description of a delivery. Varje leverans kan referera till en leveransdisposition som t.ex. innehåller relaterade erbjudanden, dokument som ska bifogas eller en länk till butiker. An offer can be referenced in the delivery according to the delivery outline selected.
+   En leveransdisposition är en strukturerad beskrivning av en leverans. Varje leverans kan referera till en leveransdisposition som t.ex. innehåller relaterade erbjudanden, dokument som ska bifogas eller en länk till butiker. Det går att referera till ett erbjudande i leveransen enligt den valda leveransdispositionen.
 
    Mer information om detta finns i [det här avsnittet](../../campaign/using/marketing-campaign-deliveries.md#associating-and-structuring-resources-linked-via-a-delivery-outline).
 

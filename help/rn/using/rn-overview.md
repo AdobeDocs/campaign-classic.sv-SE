@@ -6,10 +6,10 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: 7a05fdff-8f9d-4e8d-812e-0f1509db5499
-source-git-commit: 87067a0cca1a4a7f8ea1137ece6d513d58fcdb42
-workflow-type: ht
-source-wordcount: '913'
-ht-degree: 100%
+source-git-commit: 9d8eae6b9c31d98d5e7e14b61f3abcf46311304d
+workflow-type: tm+mt
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 100%
 
 Varje ny version kommer med en status som visas med en färg.
 
-![](assets/do-not-localize/green3.png) **Allmän tillgänglighet** (GA) – validerad i produktion och rekommenderas av Adobe.
+![](assets/do-not-localize/green3.png) **Allmän tillgänglighet** (GA) - Den senaste stabila versionen, validerad i produktion och rekommenderas av Adobe.
 
 ![](assets/do-not-localize/limited3.png) **Begränsad tillgänglighet** (LA) – endast driftsättning på begäran.
 
@@ -41,7 +41,7 @@ Som en värdbaserad användare har du automatiskt tillgång till uppgraderingen 
 
 ## Rekommendationer{#recommendations}
 
-För att säkerställa en stabil konfiguration rekommenderar vi att du installerar **samma stabila version** på alla servrar som körs på samma klientkonfiguration.
+Vi rekommenderar att du installerar **samma bygge** på alla servrar som körs på samma klientkonfiguration.
 
 Dessutom måste klientkonsolen vara på samma version som serverinstansen.
 
@@ -51,7 +51,7 @@ Om du vill att implementeringen ska vara aktuell bör du läsa sidorna om de [in
 
 Som värdbaserad kund (Managed Service eller hybrid) måste du kontakta kundtjänst för att få din miljö uppgraderad.
 
-Som lokal användare kan du utföra uppgraderingen. För att göra detta måste du [ladda ned den senaste stabila builden](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html) och uppgradera alla dina miljöer. Läs mer om [uppgraderingsprocessen](../../production/using/build-upgrade.md) och se [frågor och svar om uppgradering av builder](../../platform/using/faq-build-upgrade.md).
+Som lokal användare kan du utföra uppgraderingen. För att göra detta måste du [ladda ned den senaste stabila versionen (GA)](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html) och uppgradera alla dina miljöer. Läs mer om [uppgraderingsprocessen](../../production/using/build-upgrade.md) och se [frågor och svar om uppgradering av builder](../../platform/using/faq-build-upgrade.md).
 
 ## Årlig uppgradering {#yearly-upgrade}
 
@@ -59,13 +59,13 @@ Adobe och Adobe Campaign strävar efter att ge dig bästa möjliga upplevelse oc
 
 Adobe Campaign Classic använder en rad olika teknologier för att leverera värde. Den här kombinationen av tekniker kräver att du regelbundet uppgraderar dina instanser i Campaign Classic för att säkerställa att de senaste versionerna används så att de kan leverera överlägsen säkerhet, stabilitet och prestanda.
 
-Som en värdbaserad användare har du automatiskt tillgång till uppgraderingen med den senaste stabila builden utan någon åtgärd. Läs mer i Vanliga frågor och svar nedan.
+Som en värdbaserad -användare har du automatiskt tillgång till -uppgraderingen med den senaste GA-builden utan någon åtgärd. Läs mer i Vanliga frågor och svar nedan.
 
 ### Varför behöver min organisation den här uppgraderingen?
 
 Adobe meddelar dig direkt om du är en värdbaserad kund och vi har identifierat att du behöver uppgradera en eller flera av teknikerna för Campaign Classic, samt uppdatera den aktuella builden och/eller versionen.
 
-Eftersom du är en lokal- eller hybridkund som kör en äldre version uppmuntrar Adobe dig att gå över till den senaste stabila builden.
+Eftersom du är en lokal kund eller hybridkund och kör en äldre version rekommenderar Adobe att du går över till den senaste stabila versionen (GA).
 
 Det här garanterar att ditt konto är säkert mot sårbarheter och utnyttjar den uppdaterade prestandatekniken. Den här uppgraderingen konfigurerar också ditt konto för enklare och regelbundna uppgraderingar i framtiden som kräver mindre manuellt arbete och färre åtgärder.
 
