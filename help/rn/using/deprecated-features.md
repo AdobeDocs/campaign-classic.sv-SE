@@ -7,9 +7,9 @@ role: User
 level: Beginner
 exl-id: d60d67de-6618-4f3b-be4a-ad7633ab5645
 source-git-commit: 966da123b30278817ca465ac5dfe1f733c4d6c5c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1707'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -70,7 +70,7 @@ Kunder uppmanas att se över om de använder funktionen i den aktuella driftsät
   <td><p> Från och med Campaign version 20.3 har autentisering av utlösarintegreringen, som ursprungligen baserades på oAUTH-autentiseringsinställningar för åtkomst till pipelines, nu ändrats och flyttats till Adobe I/O. <p>
   <p>Om du använder den här utlösarintegreringen måste du anpassa implementeringen i enlighet med detta. <a href="../../integrations/using/configuring-adobe-io.md">Läs mer</a></p> 
   <p>Mer information om inaktuell OAauth-autentisering finns på den här <a href="https://github.com/AdobeDocs/analytics-1.4-apis/blob/master/docs/APIEOL.md">sidan</a></p> 
-  <p><em>Måldatum för borttagning: 20 oktober 2021. För värdmiljöer gäller en förlängning fram till 25 maj 2022. </em></p>
+  <p><em>Måldatum för borttagning: 20 oktober 2021. Värdmiljöer drar nytta av en förlängning till den 25 maj 2022. </em></p>
   </td>
   </tr>
  </tbody> 
