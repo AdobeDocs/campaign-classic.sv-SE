@@ -1,14 +1,11 @@
 ---
 product: campaign
 title: Inmatningsformulär
-description: Inmatningsformulär
-audience: delivery
-content-type: reference
-topic-tags: content-management
+description: Lär dig hur du använder indataformulär i Campaign
 exl-id: 8ec52c96-44a2-4544-93b6-9ba251510682
-source-git-commit: cf4e316e9c9bce467e2bd2bd04097f55b3dbb9c7
+source-git-commit: 56459b188ee966cdb578c415fcdfa485dcbed355
 workflow-type: tm+mt
-source-wordcount: '826'
+source-wordcount: '832'
 ht-degree: 2%
 
 ---

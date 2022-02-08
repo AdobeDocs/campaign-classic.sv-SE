@@ -1,12 +1,9 @@
 ---
 product: campaign
 title: Uppdatera studskvalificering efter ett avbrott hos en internetleverantör
-description: Lär dig hur du uppdaterar studskompetens efter ett avbrott i en Internet-leverantör.
-audience: delivery
-content-type: reference
-topic-tags: monitoring-deliveries
+description: Lär dig hur du uppdaterar studskvalifikation efter ett avbrott i en Internet-leverantör
 exl-id: 34be23f7-17fa-475e-9663-2e353d76b172
-source-git-commit: cee019432c64eaaefac86a27b731355242fd1555
+source-git-commit: 1e11b7419388698f5de366cbeddf2be88ef12873
 workflow-type: tm+mt
 source-wordcount: '427'
 ht-degree: 3%

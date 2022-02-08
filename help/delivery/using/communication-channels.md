@@ -1,12 +1,10 @@
 ---
 product: campaign
 title: Kommunikationskanaler
-description: Skapa leveranser för att skicka personaliserade meddelanden i olika kanaler.
-audience: delivery
-content-type: reference
-topic-tags: about-deliveries-and-channels
+description: Skapa leveranser för att skicka personaliserade meddelanden i olika kanaler
+feature: Cross Channel Orchestration, Email, SMS, In App, Direct Mail, Push
 exl-id: 92b5e013-b619-4f0b-b0b1-1fc2e653ceac
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 56459b188ee966cdb578c415fcdfa485dcbed355
 workflow-type: tm+mt
 source-wordcount: '1204'
 ht-degree: 11%

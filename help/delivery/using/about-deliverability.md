@@ -1,15 +1,13 @@
 ---
 product: campaign
-title: Leveransbarhet i Campaign
+title: Kom igång med leverans i Campaign
 description: Lär dig god praxis vad gäller leverans
-audience: delivery
-content-type: reference
-topic-tags: deliverability-management
+feature: Deliverability
 exl-id: f301b34c-244c-4279-b23f-8224ea8eedbe
-source-git-commit: f000cb8bae164c22d1ede15db4e763cf50530674
+source-git-commit: 56459b188ee966cdb578c415fcdfa485dcbed355
 workflow-type: tm+mt
-source-wordcount: '716'
-ht-degree: 9%
+source-wordcount: '724'
+ht-degree: 8%
 
 ---
 
@@ -46,7 +44,7 @@ Med Adobe Campaign beror leveransgraden på många faktorer, bland annat:
 * Din IP-adress: se [IP-strategi](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html#ip-strategy).
 * Kvaliteten på adresserna: se [Karantänhantering](optimize-delivery.md#quarantine-management).
 * Låg [klagomål](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/metrics-for-deliverability/complaints.html) och [hård studsa](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/metrics-for-deliverability/bounces.html#hard-bounces) räntenivåer.
-* Ditt meddelandeinnehåll: se [Kontrollera e-postinnehåll](control-message-content.md).
+* Ditt meddelandeinnehåll: se [Styr e-postinnehållet](control-message-content.md).
 * Meddelandeautentisering (SPF, DKIM, DMARC): se [det här avsnittet](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html#authentication).
 * Avsändarens rykte: om du vill veta hur de viktigaste internetleverantörerna utvärderar ett avsändarrykte kan du läsa [det här avsnittet](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/internet-service-provider-specifics/overview.html).
 
@@ -60,7 +58,7 @@ Adobe Campaign har flera verktyg för att spåra och förbättra plattformens le
 När du konfigurerar, utformar och testar ett meddelande måste du följa de riktlinjer som beskrivs i avsnitten nedan. Genom att utnyttja alla funktioner i Adobe Campaign kan ni förbättra leveransen.
 
 * [God praxis för leverans](delivery-best-practices.md)
-* [Kontrollera e-postinnehåll](control-message-content.md)
+* [Styr e-postinnehållet](control-message-content.md)
 * [Inkorgsåtergivning](inbox-rendering.md)
 * [Skicka en korrektur](steps-validating-the-delivery.md#sending-a-proof)
 
@@ -83,7 +81,7 @@ Vissa internetleverantörer betraktar automatisk e-post som skräppost om antale
 Mer information finns i följande avsnitt:
 
 * [Förstå leveransfel](understanding-delivery-failures.md)
-* [Förstå karantänshantering](understanding-quarantine-management.md)
+* [Förstå karantänhantering](understanding-quarantine-management.md)
 * [Karantän mot blockeringslista](understanding-quarantine-management.md#quarantine-vs-denylist)
 
 ### Använd övervaknings- och rapporteringsverktyg
@@ -94,25 +92,6 @@ Med Adobe Campaign kan ni kontrollera hur era leveranser fungerar med hjälp av 
 
 Mer information finns i följande avsnitt:
 
-* [Övervaka levererbarhet](monitoring-deliverability.md)
-* [Om leveransövervakning](about-delivery-monitoring.md)
-* [Om inbyggda rapporter i Campaign](../../reporting/using/about-campaign-built-in-reports.md)
-
-<!--TO REMOVE
-## Background {#background}
-
-Email deliverability presents a major challenge to marketers - whether they're sending a few thousand messages or several billion. One in five messages never reach the inbox, or their intended recipient.
-
-Once relegated as a "technical issue" for the IT department, email deliverability continues to move higher on the marketing agenda. That's because savvy marketers recognize that although many of its elements are technical in nature, deliverability is ultimately a business issue with significant revenue implications.
-
-Consider the email marketing funnel. Deliverability determines the number of messages received, which in turn impacts each subsequent stage of the funnel. Fewer emails received results in fewer opens, fewer clicks, and fewer conversions. **For companies with a large database, the difference between average and great deliverability could literally mean hundreds of thousands to millions of dollars in revenues.**
-
-![](assets/deliverability_overview_1.png)
-
-By settling for average (80%) deliverability, marketers are leaving significant conversions - and dollars - on the table.
-
-What exactly is email deliverability? And how can marketers improve deliverability rates to widen the mouth of the funnel and squeeze more results from their email campaigns?
-
-Email deliverability refers to the set of characteristics that determine a message's ability to reach its destination, via a personal email address, within a short time, and with the expected quality in terms of content and format. These characteristics fall into four main categories: data quality, message and content, sending infrastructure, and reputation. Together, they form the foundation of a successful email deliverability program. This overview outlines the four fundamentals of email deliverability success and offers best practices for reaching the inbox and driving greater revenues from email marketing programs.
-
-![](assets/deliverability_overview_2.png)-->
+* [Skärmleverans](monitoring-deliverability.md)
+* [Kom igång med leveransövervakning](about-delivery-monitoring.md)
+* [Kom igång med inbyggda rapporter för Campaign](../../reporting/using/about-campaign-built-in-reports.md)

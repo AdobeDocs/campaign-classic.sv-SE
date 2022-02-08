@@ -1,14 +1,11 @@
 ---
 product: campaign
 title: Konfigurera och skicka leveransen
-description: Konfigurera och skicka leveransen
-audience: delivery
-content-type: reference
-topic-tags: about-deliveries-and-channels
+description: Lär dig hur du konfigurerar och skickar leveransen
 exl-id: 0411686e-4f13-401e-9333-e14b05ebe9cd
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 1e11b7419388698f5de366cbeddf2be88ef12873
 workflow-type: tm+mt
-source-wordcount: '1521'
+source-wordcount: '1526'
 ht-degree: 5%
 
 ---
@@ -35,7 +32,7 @@ Innan du skickar leveransen kan du definiera sändningsparametrarna i leveranseg
    >
    >När leveransen dupliceras återställs parametern.
 
-* **[!UICONTROL Send using multiple waves]**: Mer information finns i [Skicka med flera påfyllnader](#sending-using-multiple-waves).
+* **[!UICONTROL Send using multiple waves]**: Mer information finns i [Skicka med flera vågor](#sending-using-multiple-waves).
 
 * **[!UICONTROL Test SMTP delivery]**: Med det här alternativet kan du testa att skicka en leverans via SMTP. Leveransen behandlas upp till anslutningen till SMTP-servern, men skickas inte.
 
@@ -63,7 +60,7 @@ När du har skickat meddelanden kan du övervaka och spåra dina leveranser. Mer
 * [Förstå leveransfel](understanding-delivery-failures.md)
 * [Om att spåra meddelanden](about-message-tracking.md)
 
-## Schemalägga leveransen som skickas {#scheduling-the-delivery-sending}
+## Schemalägg sändning {#scheduling-the-delivery-sending}
 
 Du kan skjuta upp leveransen av meddelanden för att schemalägga den eller för att hantera säljtrycket och undvika att överbelasta en grupp.
 
@@ -105,7 +102,7 @@ Om du till exempel schemalägger att en leverans ska köras automatiskt vid kloc
 
 ![](assets/s_ncs_user_email_del_plan_calendar_timezone.png)
 
-## Skicka med flera påfyllnader {#sending-using-multiple-waves}
+## Skicka med flera vågor {#sending-using-multiple-waves}
 
 För att balansera lasten kan du dela upp leveranser i flera satser. Konfigurera antalet batchar och deras proportioner i förhållande till hela leveransen.
 
@@ -167,7 +164,7 @@ De två exemplen nedan är de vanligaste användningsområdena när du använder
 
    ![](assets/s_ncs_user_wizard_waves_call_center.png)
 
-## Konfigurerar återförsök {#configuring-retries}
+## Konfigurera återförsök {#configuring-retries}
 
 Tillfälligt olevererade meddelanden på grund av en **Mjuk** eller **Ignorerad** felet kan återställas automatiskt. Typer av leveransfel och orsaker visas i det här [section](understanding-delivery-failures.md#delivery-failure-types-and-reasons).
 
@@ -179,9 +176,9 @@ För anläggningsinstallationer och värdbaserade/hybridinstallationer som anvä
 
 ![](assets/s_ncs_user_wizard_retry_param.png)
 
-Som standard schemaläggs fem återförsök till leveransdagens första dag med ett minsta intervall på en timme som sprids ut över dagens 24 timmar. Ett nytt försök per dag planeras efter detta och fram till leveransdatumet, som definieras i **[!UICONTROL Validity]** flik (se [Definiera giltighetsperiod](#defining-validity-period)).
+Som standard schemaläggs fem återförsök till leveransdagens första dag med ett minsta intervall på en timme som sprids ut över dagens 24 timmar. Ett nytt försök per dag planeras efter detta och fram till leveransdatumet, som definieras i **[!UICONTROL Validity]** -fliken. Se [Definiera giltighetsperioden](#defining-validity-period).
 
-## Definiera giltighetsperiod {#defining-validity-period}
+## Definiera giltighetsperioden {#defining-validity-period}
 
 När leveransen har startats kan meddelandena (och eventuella försök) skickas till leveransdatumet. Detta anges i leveransegenskaperna via **[!UICONTROL Validity]** -fliken.
 

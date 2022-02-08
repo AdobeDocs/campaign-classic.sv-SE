@@ -2,14 +2,12 @@
 product: campaign
 title: Verksamhetsorienterade API:er
 description: Verksamhetsorienterade API:er
-audience: configuration
-content-type: reference
-topic-tags: api
+feature: API
 exl-id: e6638870-3141-4f12-b904-db436127c0d1
-source-git-commit: f000cb8bae164c22d1ede15db4e763cf50530674
+source-git-commit: 8fa50d17a9ff36ccc310860ac93771590cfd76fd
 workflow-type: tm+mt
 source-wordcount: '632'
-ht-degree: 2%
+ht-degree: 3%
 
 ---
 
@@ -40,7 +38,7 @@ I det här avsnittet beskrivs användningen av tjänsterna &quot;Subscribe&quot;
 
 >[!IMPORTANT]
 >
->[Kampanj-JSAPI-dokumentation](https://experienceleague.adobe.com/developer/campaign-api/api/index.html) innehåller ytterligare information om SOAP-anrop och användning av Javascript i Adobe Campaign, samt en fullständig referens till alla metoder och funktioner som används i programmet.
+>[Kampanj-JSAPI-dokumentation](https://experienceleague.adobe.com/developer/campaign-api/api/index.html?lang=sv) innehåller ytterligare information om SOAP-anrop och användning av Javascript i Adobe Campaign, samt en fullständig referens till alla metoder och funktioner som används i programmet.
 
 ## Prenumerera (nms:subscription) {#subscribe--nms-subscription-}
 

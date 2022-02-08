@@ -1,15 +1,12 @@
 ---
 product: campaign
-title: Verifierar leveransen
-description: Verifierar leveransen
-audience: delivery
-content-type: reference
-topic-tags: about-deliveries-and-channels
+title: Validera leveransen
+description: Lär dig hur du validerar en leverans
 exl-id: c2f4d8d0-f0fe-4d1a-92fd-91edaf9729f3
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 1e11b7419388698f5de366cbeddf2be88ef12873
 workflow-type: tm+mt
-source-wordcount: '1663'
-ht-degree: 5%
+source-wordcount: '1666'
+ht-degree: 4%
 
 ---
 
@@ -135,7 +132,6 @@ För att upptäcka eventuella fel i meddelandekonfigurationen rekommenderar Adob
 >
 >* Tillgängliga valideringslägen beskrivs i [Ändra godkännandeläge](steps-validating-the-delivery.md#changing-the-approval-mode).
 >* Korrekturmålets konfiguration förklaras i [Definiera ett specifikt korrekturmål](steps-defining-the-target-population.md#defining-a-specific-proof-target).
-
 >
 
 

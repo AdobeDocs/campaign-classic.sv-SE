@@ -1,14 +1,12 @@
 ---
 product: campaign
 title: Leveransstatus
-description: Läs mer om de statusar som finns på din kontrollpanel för leverans.
-audience: delivery
-content-type: reference
-topic-tags: monitoring-deliveries
+description: Läs mer om de statusar som finns på kontrollpanelen för leverans
+feature: Monitoring
 exl-id: 0663257a-3a70-4e0c-bbeb-8242aaa0876d
-source-git-commit: 98380c18b915cfebc980e68f9840f9d8919eaca4
+source-git-commit: 56459b188ee966cdb578c415fcdfa485dcbed355
 workflow-type: tm+mt
-source-wordcount: '630'
+source-wordcount: '632'
 ht-degree: 4%
 
 ---
@@ -31,7 +29,7 @@ Mer information om olika leveransfel som du kan träffa på och hur du löser de
 
 * [Kontrollpanel för leverans](delivery-dashboard.md)
 * [Leveransfelsökning](delivery-troubleshooting.md)
-* [Om levererbarhet](about-deliverability.md)
+* [Kom igång med leverans](about-deliverability.md)
 
 ## Lista över leveransstatus {#list-delivery-statuses}
 

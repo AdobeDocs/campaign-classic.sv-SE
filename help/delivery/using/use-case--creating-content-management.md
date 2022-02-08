@@ -2,14 +2,11 @@
 product: campaign
 title: '"Användningsfall: skapa innehållshantering"'
 description: '"Användningsfall: skapa innehållshantering"'
-audience: delivery
-content-type: reference
-topic-tags: content-management
 exl-id: b0d1cf0e-656e-4d24-9a31-16fef4cd40d0
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 1e11b7419388698f5de366cbeddf2be88ef12873
 workflow-type: tm+mt
 source-wordcount: '1173'
-ht-degree: 2%
+ht-degree: 1%
 
 ---
 
@@ -23,7 +20,7 @@ Följande steg är nödvändiga för att skapa innehållshantering i Adobe Campa
 * [Steg 2 - Skapa dataschemat](#step-2---creating-the-data-schema),
 * [Steg 3 - Skapa indataformuläret](#step-3---creating-the-input-form),
 * [Steg 4 - Skapa byggmallen](#step-4---creating-the-construction-template),
-* [Steg 5 - Skapa publiceringsmallen](#step-5---creating-the-publication-template),
+* [Steg 5 - Skapa publikationsmallen](#step-5---creating-the-publication-template),
 * [Steg 6 - Skapa innehåll](#step-6---creating-contents).
 
 ## Steg 1 - Analysera innehållet som ska produceras {#step-1---analyzing-the-content-to-be-produced}
@@ -349,7 +346,7 @@ Om du vill använda en JavaScript-mall i Adobe Campaign gör du så här:
 
    ![](assets/contentmgt_jscode_perso_sample.png)
 
-## Steg 5 - Skapa publiceringsmallen {#step-5---creating-the-publication-template}
+## Steg 5 - Skapa publikationsmallen {#step-5---creating-the-publication-template}
 
 Nästa steg är att skapa en mall för innehållspublikationer som länkar upp schemat, formuläret och mallen för innehållskonstruktion. Den här publiceringsmallen kan ha flera utdataformat.
 

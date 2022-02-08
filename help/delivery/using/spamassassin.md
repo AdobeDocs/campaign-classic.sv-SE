@@ -2,11 +2,8 @@
 product: campaign
 title: SpamAssassin
 description: Lär dig hur du konfigurerar skräppostavkänning med SpamAssassin
-audience: delivery
-content-type: reference
-topic-tags: deliverability-management
 exl-id: 8be6836d-f7dc-4199-b2b2-b6a9cac9d162
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 1e11b7419388698f5de366cbeddf2be88ef12873
 workflow-type: tm+mt
 source-wordcount: '255'
 ht-degree: 6%
@@ -16,8 +13,6 @@ ht-degree: 6%
 # SpamAssassin{#spamassassin}
 
 ![](../../assets/common.svg)
-
-## Om SpamAssassin {#about-spamassassin}
 
 Adobe Campaign kan konfigureras för att fungera med [SpamAssassin](https://spamassassin.apache.org), en tredjepartstjänst som används för skräppostfiltrering. På så sätt kan du poängsätta e-postmeddelanden för att avgöra om ett meddelande löper risk att betraktas som skräppost av de antispam-verktyg som används vid mottagande.
 
@@ -35,7 +30,7 @@ SpamAssassin utnyttjar en mängd olika tekniker för skräppostavkänning, bland
 >
 >Reglerna som styr om ett element är spam eller inte hanteras via SpamAssets och kan redigeras av en administratör med behörighet.
 
-## Använda SpamAssassin {#using-spamassassin}
+## Använd SpamAssassin i Campaign {#using-spamassassin}
 
 När du har skapat din e-postleverans och definierat innehållet följer du stegen nedan för att utvärdera riskerna.
 

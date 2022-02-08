@@ -1,14 +1,12 @@
 ---
 product: campaign
 title: Skapa en samverkanskampanj
-description: Skapa en samverkanskampanj
-audience: campaign
-content-type: reference
-topic-tags: distributed-marketing
+description: Lär dig hur du skapar en samverkanskampanj
+feature: Distributed Marketing
 exl-id: 17313fe5-ad42-45ca-a35a-1e7aa89380ef
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 1e11b7419388698f5de366cbeddf2be88ef12873
 workflow-type: tm+mt
-source-wordcount: '912'
+source-wordcount: '915'
 ht-degree: 3%
 
 ---
@@ -55,7 +53,7 @@ När kampanjen beställs kan den lokala enheten slutföra de villkor som den cen
 
 En gång för en order **Samverkande kampanj (per kampanj)** godkänns av den centrala enheten, skapas en underordnad kampanj för den lokala enheten. När den lokala enheten är tillgänglig kan den sedan ändra:
 
-* the campaign workflow,
+* kampanjarbetsflödet,
 * typologiregler,
 * och personaliseringsfält.
 
@@ -65,7 +63,7 @@ Den centrala enheten kan visa alla underordnade kampanjer som är länkade till 
 
 ![](assets/mkg_dist_mutual_op_by_op.png)
 
-### By target approval {#by-target-approval}
+### Efter målgodkännande {#by-target-approval}
 
 Om du vill skapa en samarbetskampanj (genom målgodkännande) använder du **[!UICONTROL Collaborative campaign (by target approval)]** -mallen måste vara markerad.
 
@@ -139,7 +137,7 @@ Den centrala enheten måste specificera de lokala enheter som är inblandade per
 >
 >**[!UICONTROL Simple, by form and by campaign collaborative campaign kits]** kan inte godkännas om inte de relevanta lokala enheterna har specificerats.
 
-### Approval modes {#approval-modes}
+### Godkännandelägen {#approval-modes}
 
 För **samverkanskampanjer** kan du ange ordergodkännandeläge.
 
@@ -147,7 +145,7 @@ För **samverkanskampanjer** kan du ange ordergodkännandeläge.
 
 I manuellt läge måste den lokala enheten prenumerera på kampanjen för att kunna delta.
 
-In automatic mode, the local entity is pre-subscribed for the campaign. Den kan avbryta kampanjprenumerationen eller ändra parametrarna utan att den centrala enheten behöver godkänna prenumerationen.
+I automatiskt läge är den lokala enheten förregistrerad för kampanjen. Den kan avbryta kampanjprenumerationen eller ändra parametrarna utan att den centrala enheten behöver godkänna prenumerationen.
 
 ![](assets/mkg_dist_edit_kit2.png)
 
@@ -155,9 +153,9 @@ In automatic mode, the local entity is pre-subscribed for the campaign. Den kan 
 
 Konfigurationen för meddelanden är identisk med aviseringar för en lokal enhet. Se [det här avsnittet](creating-a-local-campaign.md#notifications).
 
-## Ordering a campaign {#ordering-a-campaign}
+## Beställ en kampanj {#ordering-a-campaign}
 
-When a collaborative campaign is added to the list of campaign packages, the local entities belonging to the audience defined by the central entity are notified (the **collaborative campaigns (by target approval)** do not have a predefined audience). The message sent contains a link that lets you register for the campaign, as shown below:
+När en samverkanskampanj läggs till i listan över kampanjpaket meddelas de lokala enheter som tillhör den målgrupp som definieras av den centrala enheten ( **samverkanskampanjer (genom målgodkännande)** har ingen fördefinierad publik). Det skickade meddelandet innehåller en länk som gör att du kan registrera dig för kampanjen, vilket visas nedan:
 
 ![](assets/mkg_dist_mutual_op_notification.png)
 
@@ -173,6 +171,6 @@ När en lokal enhet har slutfört sin registrering meddelas centrala enheter via
 
 Mer information finns i [Godkännandeprocess](creating-a-local-campaign.md#approval-process) -avsnitt.
 
-## Godkänna en order {#approving-an-order}
+## Godkänn en order {#approving-an-order}
 
 Processen för att godkänna en kollaborativ kampanjpaketorder är densamma som för en lokal kampanj. Se [det här avsnittet](creating-a-local-campaign.md#approving-an-order).

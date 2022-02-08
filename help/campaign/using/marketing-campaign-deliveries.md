@@ -2,12 +2,12 @@
 product: campaign
 title: Leveranser av marknadsföringskampanjer
 description: Läs mer om kampanjleveranser
-audience: campaign
+feature: Resource Management, Cross Channel Orchestration
 exl-id: 1dd3c080-444d-45f8-9562-d2d01a9d2860
-source-git-commit: d3f5c56078ddac7597925191fd347bdcab61714d
+source-git-commit: 90c52ec144a6a3c1b534a80507e38fa3ed64fc83
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '1487'
+ht-degree: 2%
 
 ---
 
@@ -63,7 +63,7 @@ När alla godkännanden har beviljats ändras leveransstatusen till **[!UICONTRO
 
 När extraheringsarbetsflödet har körts måste extraheringsfilen godkännas (förutsatt att godkännande av extraheringsfilen har valts i leveransinställningarna).
 
-Mer information finns i [Godkänna en extraheringsfil](../../campaign/using/marketing-campaign-approval.md#approving-an-extraction-file).
+Mer information finns i [Godkänn en extraheringsfil](../../campaign/using/marketing-campaign-approval.md#approving-an-extraction-file).
 
 **Steg 2 - Godkännande av meddelandet till tjänsteleverantören**
 
@@ -167,7 +167,7 @@ Dessa element är grupperade i leveranskonturer och en särskild leveransdisposi
 
 För en kampanj kan du strukturera externa element som ska kopplas till leveransen enligt vissa kriterier: närliggande filial, kampanjerbjudande, inbjudan till ett lokalt evenemang osv.
 
-#### Skapa en kontur {#creating-an-outline}
+#### Skapa en disposition {#creating-an-outline}
 
 Om du vill skapa en kontur klickar du på **[!UICONTROL Delivery outlines]** underflik i **[!UICONTROL Edit > Documents]** fliken för den berörda kampanjen.
 

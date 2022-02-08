@@ -1,15 +1,12 @@
 ---
 product: campaign
-title: Element och attribut
-description: Element och attribut
-audience: configuration
-content-type: reference
-topic-tags: schema-reference
+title: Schemaelement och attribut
+description: villkorselement
 exl-id: 71e98d45-3660-4d86-a5ca-8e55ae5896eb
-source-git-commit: 34404fbe935e68f3cc11d937839209443ad4ca60
+source-git-commit: 56459b188ee966cdb578c415fcdfa485dcbed355
 workflow-type: tm+mt
 source-wordcount: '93'
-ht-degree: 8%
+ht-degree: 2%
 
 ---
 

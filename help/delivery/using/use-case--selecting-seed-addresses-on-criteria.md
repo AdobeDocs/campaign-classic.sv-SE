@@ -2,18 +2,16 @@
 product: campaign
 title: '"Användningsfall: välja fröadresser enligt villkor"'
 description: '"Användningsfall: välja fröadresser enligt villkor"'
-audience: delivery
-content-type: reference
-topic-tags: using-seed-addresses
+feature: Seed Address
 exl-id: 091648b8-bf2d-4595-8be3-287f1ac48edd
-source-git-commit: 98380c18b915cfebc980e68f9840f9d8919eaca4
+source-git-commit: 1e11b7419388698f5de366cbeddf2be88ef12873
 workflow-type: tm+mt
-source-wordcount: '838'
+source-wordcount: '837'
 ht-degree: 3%
 
 ---
 
-# Användningsfall: välja fröadresser enligt villkor{#use-case-selecting-seed-addresses-on-criteria}
+# Användningsfall: välj dirigerade adresser enligt villkor{#use-case-selecting-seed-addresses-on-criteria}
 
 ![](../../assets/common.svg)
 
@@ -44,7 +42,7 @@ Om du vill skapa ett gemensamt värde som det i vårt exempel (inköpsavdelninge
 
 ### Utöka dataschemat {#extending-the-data-schema}
 
-Mer information om schematillägg finns i [Konfigurationsguide](../../configuration/using/data-schemas.md).
+Mer information om schematillägg finns i [det här avsnittet](../../configuration/using/data-schemas.md).
 
 1. I **[!UICONTROL Administration > Configuration > Data schemas]** noden, klicka på **[!UICONTROL New]** ikon.
 1. I **[!UICONTROL Creation of a data schema]** väljer du **[!UICONTROL Extension of a schema]** och klicka **[!UICONTROL Next]**.
@@ -95,7 +93,7 @@ Mer information om schematillägg finns i [Konfigurationsguide](../../configurat
 
    När uppdateringen är klar kan du stänga guiden.
 
-1. Koppla från och återanslut sedan till Adobe Campaign. Ändringarna i schemat för startadressdata gäller nu. För att de ska kunna visas på startadressens skärm måste du uppdatera den associerade **[!UICONTROL Input form]**. Se [Uppdaterar indataformuläret](#updating-the-input-form) -avsnitt.
+1. Koppla från och återanslut sedan till Adobe Campaign. Ändringarna i schemat för startadressdata gäller nu. För att de ska kunna visas på startadressens skärm måste du uppdatera den associerade **[!UICONTROL Input form]**. Se [Uppdatera indataformuläret](#updating-the-input-form) -avsnitt.
 
 #### Utöka dataschemat från en länkad tabell {#extending-the-data-schema-from-a-linked-table}
 
@@ -131,9 +129,9 @@ De anger
 
 Användaren kan sedan följa **steg 5** och uppdatera **[!UICONTROL Input form]** av utsädesadresserna.
 
-Se [Uppdaterar indataformuläret](#updating-the-input-form) -avsnitt.
+Se [Uppdatera indataformuläret](#updating-the-input-form) -avsnitt.
 
-#### Uppdaterar indataformuläret {#updating-the-input-form}
+#### Uppdatera indataformuläret {#updating-the-input-form}
 
 1. I **[!UICONTROL Administration > Configuration > Input forms]** nod, hitta indataformuläret för dirigerade adresser.
 

@@ -1,19 +1,17 @@
 ---
 product: campaign
-title: Generera personaliserade PDF-dokument
-description: Generera personaliserade PDF-dokument
-audience: delivery
-content-type: reference
-topic-tags: personalizing-deliveries
+title: Skapa personaliserade PDF-dokument
+description: Lär dig generera skräddarsydda PDF-dokument
+feature: Personalization
 exl-id: e5239d99-256b-412b-be20-f64f822da9c3
-source-git-commit: 7fa8cea04fb4e25187c48ad19330815e9b522b37
+source-git-commit: 1e11b7419388698f5de366cbeddf2be88ef12873
 workflow-type: tm+mt
-source-wordcount: '439'
-ht-degree: 2%
+source-wordcount: '442'
+ht-degree: 1%
 
 ---
 
-# Generera personaliserade PDF-dokument{#generating-personalized-pdf-documents}
+# Skapa personaliserade PDF-dokument{#generating-personalized-pdf-documents}
 
 ![](../../assets/common.svg)
 
@@ -33,7 +31,7 @@ Exempel på en anpassning av en fakturarubrik:
 
 Om du vill generera dynamiska tabeller eller inkludera bilder via en URL-adress måste du följa en viss process.
 
-## Genererar dynamiska tabeller {#generating-dynamic-tables}
+## Generera dynamiska tabeller {#generating-dynamic-tables}
 
 Så här genererar du dynamiska tabeller:
 

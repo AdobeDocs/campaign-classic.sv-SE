@@ -1,15 +1,12 @@
 ---
 product: campaign
 title: Skapa en leverans från en mall
-description: Skapa en leverans från en mall
-audience: delivery
-content-type: reference
-topic-tags: using-delivery-templates
+description: Lär dig hur du skapar en leverans från en mall
 exl-id: 7ffb649e-801f-4568-a86b-7982448e3c30
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 56459b188ee966cdb578c415fcdfa485dcbed355
 workflow-type: tm+mt
-source-wordcount: '175'
-ht-degree: 10%
+source-wordcount: '178'
+ht-degree: 7%
 
 ---
 
@@ -31,7 +28,7 @@ Välj önskad katalog i dialogrutan **[!UICONTROL Folder]** eller klicka på **[
 
 Välj den leveransmall som ska användas och klicka på **[!UICONTROL Ok]**.
 
-## Köra mallen {#executing-the-template}
+## Kör mallen {#executing-the-template}
 
 Du kan starta körningen av en mall direkt från malllistan utan att först skapa en leverans. Om du vill göra det väljer du den mall som ska köras och högerklickar. Välj **[!UICONTROL Actions>Execute the delivery template...]**.
 

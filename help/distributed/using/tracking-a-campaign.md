@@ -1,15 +1,12 @@
 ---
 product: campaign
 title: Spåra en kampanj
-description: Spåra en kampanj
-audience: campaign
-content-type: reference
-topic-tags: distributed-marketing
+description: Lär dig spåra en kampanj med Campaign Distributed Marketing
 exl-id: 87d1909c-d2eb-47ce-a860-0e78a64d2914
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 1e11b7419388698f5de366cbeddf2be88ef12873
 workflow-type: tm+mt
-source-wordcount: '409'
-ht-degree: 2%
+source-wordcount: '416'
+ht-degree: 1%
 
 ---
 

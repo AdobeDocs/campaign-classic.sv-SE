@@ -1,13 +1,12 @@
 ---
 product: campaign
 title: Optimera meddelandeleveransen
-audience: delivery
-content-type: reference
-topic-tags: deliveries-best-practices
+description: Lär dig optimera meddelandeleveransen
+feature: Deliverability
 exl-id: 24b2ee47-bec7-43ce-81b3-0b2d1a5cebae
-source-git-commit: bd9f035db1cbad883e1f27fe901e34dfbc9c1229
+source-git-commit: 1e11b7419388698f5de366cbeddf2be88ef12873
 workflow-type: tm+mt
-source-wordcount: '729'
+source-wordcount: '736'
 ht-degree: 7%
 
 ---
@@ -34,7 +33,7 @@ Flera faktorer kan direkt påverka serverprestanda och göra plattformen långsa
 
 * Om du är berättigad kan du utnyttja [Funktioner i Campaign Control Panel](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/key-features.html) övervaka plattformen med [prestandaövervakning](https://experienceleague.adobe.com/docs/control-panel/using/performance-monitoring/about-performance-monitoring.html?lang=sv) funktioner.
 
-## Kontrollerar nätverkskonfiguration {#network-config}
+## Kontrollera nätverkskonfiguration {#network-config}
 
 Om du vill optimera leveransen när du hanterar e-post i stora volymer och undvika att ta fel för en skräppost, kontrollerar du att du har en giltig nätverkskonfiguration som inte försöker dölja serverns identitet.
 

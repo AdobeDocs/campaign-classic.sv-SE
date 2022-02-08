@@ -2,18 +2,15 @@
 product: campaign
 title: Ytterligare parametrar för webbspårning
 description: Läs mer om parametrar för webbspårning
-audience: configuration
-content-type: reference
-topic-tags: setting-up-web-tracking
 exl-id: d14d94fd-b078-4893-be84-31d37a1d50f5
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 8fa50d17a9ff36ccc310860ac93771590cfd76fd
 workflow-type: tm+mt
-source-wordcount: '350'
-ht-degree: 1%
+source-wordcount: '352'
+ht-degree: 0%
 
 ---
 
-# Ytterligare parametrar{#additional-parameters}
+# Ytterligare parametrar för webbspårning{#additional-parameters}
 
 ![](../../assets/v7-only.svg)
 
@@ -21,12 +18,12 @@ ht-degree: 1%
 
 På din Adobe Campaign-plattform finns två parametrar av typen TRANSACTION som standard för webbspårning:
 
-* **amount**: represents the amount of a transaction,
+* **belopp**: representerar beloppet för en transaktion,
 * **artikel**: representerar antalet artiklar i en transaktion.
 
 Dessa parametrar definieras i **nms:webTrackingLog** och är några av de indikatorer som visas i rapporteringen.
 
-To define additional parameters, you must extend this schema.
+Om du vill definiera ytterligare parametrar måste du utöka det här schemat.
 
 **Exempel**:
 
@@ -42,9 +39,9 @@ To define additional parameters, you must extend this schema.
 </srcSchema>
 ```
 
-You can display the values of these parameters by configuring the tracking log list (of a delivery or recipient).
+Du kan visa parametrarnas värden genom att konfigurera spårningslogglistan (för en leverans eller mottagare).
 
-## Redirection server configuration {#redirection-server-configuration}
+## Omdirigeringsserverkonfiguration {#redirection-server-configuration}
 
 I serverkonfigurationen kan du definiera det maximala antal tecken som ska beaktas för spårningsparametrarna för webben.
 
@@ -67,16 +64,16 @@ processRestartTime="06:00:00" purgeLogsPeriod="50000" runLevel="10"
 webTrackingParamSize="64"/>
 ```
 
-When the configuration has been modified, you must:
+När konfigurationen har ändrats måste du:
 
-* Stop the web server that hosts the redirection module (Apache, IIS, etc.),
+* Stoppa webbservern som är värd för omdirigeringsmodulen (Apache, IIS osv.),
 * Stoppa Adobe Campaign-servern: **net stop nlserver6** i Windows, **/etc/init.d/nlserver6 stop** i Linux,
 
    >[!NOTE]
    >
    >Från och med 20.1 rekommenderar vi att du använder följande kommando i stället (för Linux): **systemctl stop nlserver**
 
-* In Linux, delete the shared memory segments using the **ipcrm** command,
+* I Linux tar du bort de delade minnessegmenten med hjälp av **ipcrm** kommando,
 * Starta om Adobe Campaign-servern: **net start nlserver6** i Windows, **/etc/init.d/nlserver6 - start** i Linux,
 
    >[!NOTE]
@@ -111,4 +108,4 @@ adobe@selma:~$ systemctl start apache2
 
 >[!NOTE]
 >
->For Linux, if you increase the size of the **webTrackingParamSize** or **maxSharedLogs** parameters, you may need to increase the size of the shared memory (SHM).
+>Om du ökar storleken på **webTrackingParamSize** eller **maxSharedLogs** kan du behöva öka storleken på det delade minnet.

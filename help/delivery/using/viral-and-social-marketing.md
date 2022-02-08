@@ -2,13 +2,10 @@
 product: campaign
 title: Viral och social marknadsföring
 description: Viral och social marknadsföring
-audience: delivery
-content-type: reference
-topic-tags: subscriptions-and-referrals
 exl-id: 10fd561f-1b07-490e-9f66-d67e44a0def5
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 1e11b7419388698f5de366cbeddf2be88ef12873
 workflow-type: tm+mt
-source-wordcount: '564'
+source-wordcount: '561'
 ht-degree: 2%
 
 ---
@@ -16,8 +13,6 @@ ht-degree: 2%
 # Viral och social marknadsföring{#viral-and-social-marketing}
 
 ![](../../assets/common.svg)
-
-## Om viral marknadsföring {#about-viral-marketing}
 
 Med Adobe Campaign kan ni skapa verktyg för att uppmuntra viral marknadsföring.
 

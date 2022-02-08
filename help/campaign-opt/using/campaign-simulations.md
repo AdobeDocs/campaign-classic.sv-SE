@@ -1,14 +1,11 @@
 ---
 product: campaign
 title: Simuleringar i Campaign
-description: Simuleringar i Campaign
-audience: campaign
-content-type: reference
-topic-tags: campaign-optimization
+description: Kom igång med Campaign-simuleringar
 exl-id: 709c64a8-34bf-43fa-a820-238295fb26b8
-source-git-commit: 5806690f764d2e5dfb5651597ff68b33bb399b44
+source-git-commit: 90c52ec144a6a3c1b534a80507e38fa3ed64fc83
 workflow-type: tm+mt
-source-wordcount: '1242'
+source-wordcount: '1245'
 ht-degree: 1%
 
 ---
@@ -97,7 +94,7 @@ The **[!UICONTROL General]** -fliken i simuleringen kan du ange körningsinstäl
 * The **[!UICONTROL Priority]** är den nivå som tillämpas på simuleringen för att fördröja dess utlösande åtgärd.
 * **[!UICONTROL Save SQL queries in the log]**. Med SQL-loggar kan du diagnostisera en simulering om den avslutas med fel. De kan också hjälpa dig att ta reda på varför en simulering är för långsam. Dessa meddelanden visas efter simuleringen i **[!UICONTROL SQL logs]** underflik i **[!UICONTROL Audit]** -fliken.
 
-## Köra en simulering {#executing-a-simulation}
+## Kör en simulering {#executing-a-simulation}
 
 ### Starta en simulering {#starting-a-simulation}
 
@@ -167,7 +164,7 @@ Klicka på **[!UICONTROL Reports]** länk till målsimuleringen via kontrollpane
 
 Du kan även redigera rapporter med **[!UICONTROL Reports]** -länk som är tillgänglig från kontrollpanelen för simuleringar.
 
-### Jämföra simuleringar {#comparing-simulations-}
+### Jämför simuleringar {#comparing-simulations-}
 
 Varje gång en simulering körs ersätter resultatet eventuella tidigare resultat: du kan inte visa och jämföra resultat från en körning till en annan.
 

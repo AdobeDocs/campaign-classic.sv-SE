@@ -2,14 +2,12 @@
 product: campaign
 title: Dirigerade adresser
 description: Dirigerade adresser
-audience: configuration
-content-type: reference
-topic-tags: use-a-custom-recipient-table
+feature: Seed Address
 exl-id: a16103bf-0498-4f59-ad96-8bfdeea26577
-source-git-commit: fb4b4c42b907e86813ea570f912312fccf893bfe
+source-git-commit: 56459b188ee966cdb578c415fcdfa485dcbed355
 workflow-type: tm+mt
-source-wordcount: '323'
-ht-degree: 1%
+source-wordcount: '322'
+ht-degree: 6%
 
 ---
 
@@ -44,7 +42,7 @@ Definition av det utökade schemat för mottagartabellen:
 
 Använd följande steg:
 
-1. Skapa ett tillägg till **nms:seedMember** schema. Mer information finns i [Utöka ett schema](../../configuration/using/extending-a-schema.md).
+1. Skapa ett tillägg till **nms:seedMember** schema. Mer information om detta finns i [det här avsnittet](../../configuration/using/extending-a-schema.md).
 1. I det nya tillägget lägger du till ett nytt element i roten för **[!UICONTROL seedMember]** med följande parametrar:
 
    ```
@@ -82,7 +80,7 @@ Använd följande steg:
    >    * I **nms:seedMember** tillägg måste fältet som innehåller e-postadressen ha **name=&quot;email&quot;** som ett attribut. SQL-namnet måste skilja sig från sEmail som redan används för mottagarschemat. Detta attribut måste omedelbart deklareras under **`<element name="custom_cus_person" />`** -element.
 
 
-1. Ändra **[!UICONTROL seedMember]** formulär för att definiera en ny&quot;intern mottagare&quot;-flik i **[!UICONTROL Seed addresses]** -fönstret. Mer information finns i [Formulärstruktur](../../configuration/using/form-structure.md).
+1. Ändra **[!UICONTROL seedMember]** formulär för att definiera en ny&quot;intern mottagare&quot;-flik i **[!UICONTROL Seed addresses]** -fönstret. Mer information finns på [den här sidan](../../configuration/using/form-structure.md).
 
    ```
    <container colcount="2" label="Internal recipient" name="internal"

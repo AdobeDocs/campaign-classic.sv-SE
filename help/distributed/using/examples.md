@@ -1,19 +1,17 @@
 ---
 product: campaign
-title: Exempel
-description: Exempel
-audience: campaign
-content-type: reference
-topic-tags: distributed-marketing
+title: Distribuerade marknadsexempel
+description: Distribuerade marknadsexempel
+feature: Distributed Marketing
 exl-id: 2bef6b5e-887e-4c56-bb4b-3583472ca333
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 1e11b7419388698f5de366cbeddf2be88ef12873
 workflow-type: tm+mt
-source-wordcount: '1296'
+source-wordcount: '1293'
 ht-degree: 0%
 
 ---
 
-# Exempel{#examples}
+# Distribuerade marknadsexempel{#distributed-marketing-samples}
 
 ![](../../assets/v7-only.svg)
 
@@ -23,7 +21,7 @@ The **Per formulär** webbgränssnitt av typen använder **webbprogram**. Beroen
 
 >[!NOTE]
 >
->API:er finns detaljerade i ett dedikerat dokument, som du har åtkomst till beroende av ditt kontrakt. Se [API](../../configuration/using/about-web-services.md).
+>API:er beskrivs i ett dedikerat dokument. [Läs mer](../../configuration/using/about-web-services.md).
 >
 >Webbprogrammet som används i det här exemplet är inte ett webbprogram som levereras med Adobe Campaign. Om du vill använda ett formulär i en kampanj måste du skapa det dedikerade webbprogrammet.
 

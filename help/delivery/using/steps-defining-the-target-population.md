@@ -1,23 +1,19 @@
 ---
 product: campaign
-title: Definiera målgruppen
-description: Definiera målgruppen
-audience: delivery
-content-type: reference
-topic-tags: about-deliveries-and-channels
+title: Definiera målpopulationen
+description: Lär dig definiera målpopulationen
+feature: Audiences
 exl-id: d0ed7be7-3147-4cb8-9ce7-ea51602e9048
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 1e11b7419388698f5de366cbeddf2be88ef12873
 workflow-type: tm+mt
-source-wordcount: '1599'
-ht-degree: 3%
+source-wordcount: '1598'
+ht-degree: 2%
 
 ---
 
-# Definiera målgruppen {#defining-the-target-population}
+# Definiera målpopulationen {#defining-the-target-population}
 
 ![](../../assets/common.svg)
-
-## Om målpopulationer {#about-target-populations}
 
 För varje leverans kan du definiera flera typer av målpopulationer:
 
@@ -26,7 +22,7 @@ För varje leverans kan du definiera flera typer av målpopulationer:
 * **Fröadresser**: mottagare som ligger utanför leveransmålet men som kommer att få leveransen (endast inom ramen för en marknadsföringskampanj). [Läs mer](about-seed-addresses.md)
 * **Kontrollgrupper**: populationen som inte kommer att ta emot leveransen, används för att spåra beteenden och kampanjpåverkan (endast i samband med en marknadsföringskampanj). [Läs mer](../../campaign/using/marketing-campaign-target.md#defining-a-control-group).
 
-## Välja huvudmottagare för leveransen {#selecting-the-main-target}
+## Välj de huvudsakliga mottagarna av leveransen {#selecting-the-main-target}
 
 I de flesta fall extraheras huvudmålet från Adobe Campaign-databasen (standardläge). Mottagarna kan dock också lagras i en extern fil. Läs mer i [det här avsnittet](steps-defining-the-target-population.md#selecting-external-recipients).
 
@@ -39,7 +35,7 @@ Följ stegen nedan för att välja mottagare av en leverans:
 
 1. Välj målmappningen i **[!UICONTROL Target mapping]** nedrullningsbar lista. Adobe Campaign standardmålmappning är **[!UICONTROL Recipients]**, baserat på **nms:mottagare** schema.
 
-   Andra målmappningar är tillgängliga, och vissa kan vara relaterade till din specifika konfiguration. Mer information om målmappningar finns i [Välja en målmappning](selecting-a-target-mapping.md).
+   Andra målmappningar är tillgängliga, och vissa kan vara relaterade till din specifika konfiguration. Mer information om målmappningar finns i [Välj en målmappning](selecting-a-target-mapping.md).
 
 1. Klicka på **[!UICONTROL Add]** för att definiera begränsningsfilter.
 
@@ -87,7 +83,7 @@ Följ stegen nedan för att välja mottagare av en leverans:
 
    ![](assets/s_ncs_user_wizard_email02h.png)
 
-### Välja externa mottagare {#selecting-external-recipients}
+### Välj externa mottagare {#selecting-external-recipients}
 
 Du kan starta en leverans för mottagare som inte har sparats i databasen, men som har lagrats i en extern fil. Här skickar vi till exempel en leverans till mottagare som importerats från en textfil.
 
@@ -98,7 +94,7 @@ Så här gör du:
 
    ![](assets/s_ncs_user_wizard_external_recipients.png)
 
-1. Som standard importeras mottagarna i databasen. Du måste välja **[!UICONTROL Target mapping]**. Mer information om målmappningar finns i [Välja en målmappning](selecting-a-target-mapping.md)
+1. Som standard importeras mottagarna i databasen. Du måste välja **[!UICONTROL Target mapping]**. Mer information om målmappningar finns i [Välj en målmappning](selecting-a-target-mapping.md)
 
    Du kan också välja **[!UICONTROL Do not import the recipients into the database]**.
 
@@ -112,7 +108,7 @@ Så här gör du:
 >
 >När du definierar innehållet i meddelandet för e-postleverans ska du inte inkludera länken till spegelsidan. den inte kan genereras i det här leveransläget.
 
-### Ställa in undantagsinställningar {#customizing-exclusion-settings}
+### Definiera exkluderingsinställningar {#define-exclusion-settings}
 
 Adressfel och kvalitetsklassificeringar tillhandahålls av tjänstleverantören. Den här informationen uppdateras automatiskt i mottagarprofilen efter leveransåtgärder och med filer som returneras av tjänsteleverantörer. Den kan visas i profilen med skrivskydd.
 
@@ -152,7 +148,7 @@ Följande alternativ är tillgängliga:
 
    >[!NOTE]
    >
-   >Mer information om karantänhantering finns i [Om karantänhantering](understanding-quarantine-management.md).
+   >Mer information om karantänhantering finns i [Förstå karantänhantering](understanding-quarantine-management.md).
 
 * **[!UICONTROL Limit delivery]** till ett visst antal meddelanden. Med det här alternativet kan du ange maximalt antal meddelanden som ska skickas. Om målets innehåll överskrider antalet angivna meddelanden, tillämpas ett slumpmässigt urval på målet.
 
@@ -162,7 +158,7 @@ Du kan minska storleken på målpopulationen. Om du vill göra det anger du anta
 
 ![](assets/s_ncs_user_edit_del_exe_tab.png)
 
-## Välja mottagare av korrekturmeddelanden {#selecting-the-proof-target}
+## Välj mottagare av korrekturmeddelanden {#selecting-the-proof-target}
 
 Korrekturmeddelandet är ett särskilt meddelande där du kan testa en leverans innan du skickar den till huvudmålet. Korrekturmottagare ansvarar för att godkänna både meddelandets form och innehåll.
 
@@ -183,13 +179,13 @@ Följ stegen nedan för att välja provtryckets mål:
 
 När du väljer korrekturmålet visas **[!UICONTROL Definition of a specific proof target]** gör att du kan välja korrekturmottagare från profilerna i databasen.
 
-Välj det här alternativet om du vill välja mottagare med hjälp av **[!UICONTROL Add]** -knappen, som när du definierar huvudmålet. Se [Välja huvudmål](steps-defining-the-target-population.md#selecting-the-main-target).
+Välj det här alternativet om du vill välja mottagare med hjälp av **[!UICONTROL Add]** -knappen, som när du definierar huvudmålet. Se [Välj huvudmålet](steps-defining-the-target-population.md#selecting-the-main-target).
 
 ![](assets/s_ncs_user_wizard_email01_143.png)
 
 Mer information om att skicka korrektur finns i [det här avsnittet](steps-validating-the-delivery.md#sending-a-proof).
 
-### Använda adressersättning i korrektur {#using-address-substitution-in-proof}
+### Använd adressersättning i korrektur {#using-address-substitution-in-proof}
 
 I stället för att välja dedikerade mottagare i databasen kan du använda **[!UICONTROL Substitution of the address]** alternativ.
 
@@ -213,7 +209,7 @@ Konfigurationen utförs enligt följande:
 
    Du kan definiera så många ersättningsadresser som behövs.
 
-## Använda dirigerade adresser som bevis {#using-seed-addresses-as-proof}
+## Använd dirigerade adresser som bevis {#using-seed-addresses-as-proof}
 
 Du kan använda **[!UICONTROL Seed addresses]** som provtryckets mål: Med det här alternativet kan du använda eller importera en lista med befintliga dirigerade adresser.
 
@@ -227,9 +223,9 @@ Du kan kombinera definitionen för ett specifikt korrekturmål och användningen
 
 Se även:
 
-* [Välja korrekturmål](#selecting-the-proof-target)
+* [Välj korrekturmål](#selecting-the-proof-target)
 * [Om dirigerade adresser](about-seed-addresses.md)
-* [Användningsfall: välja fröadresser enligt villkor](use-case--selecting-seed-addresses-on-criteria.md)
+* [Användningsfall: välj dirigerade adresser enligt villkor](use-case--selecting-seed-addresses-on-criteria.md)
 
 ## Videokurs {#seeds-and-proofs-video}
 

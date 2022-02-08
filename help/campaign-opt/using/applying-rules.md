@@ -2,22 +2,19 @@
 product: campaign
 title: Tillämpa regler
 description: Tillämpa regler
-audience: campaign
-content-type: reference
-topic-tags: campaign-optimization
 exl-id: 09ec0fc0-76ed-4c73-8bdf-c931e2103aa9
-source-git-commit: 5806690f764d2e5dfb5651597ff68b33bb399b44
+source-git-commit: 90c52ec144a6a3c1b534a80507e38fa3ed64fc83
 workflow-type: tm+mt
-source-wordcount: '977'
+source-wordcount: '978'
 ht-degree: 9%
 
 ---
 
-# Tillämpa regler{#applying-rules}
+# Använd typologiregler{#applying-rules}
 
 ![](../../assets/common.svg)
 
-## Använda typologi på en leverans {#applying-a-typology-to-a-delivery}
+## Använd typologi på en leverans {#applying-a-typology-to-a-delivery}
 
 Om du vill tillämpa de typologiregler du har skapat måste du koppla den till en typologi och sedan referera till den här typologin i leveransen. Så här gör du:
 

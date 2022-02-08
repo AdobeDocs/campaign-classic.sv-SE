@@ -1,12 +1,9 @@
 ---
 product: campaign
 title: Definiera den slutliga leveransen
-description: Lär dig hur du utför A/B-testning via ett dedikerat användningsfall.
-audience: delivery
-content-type: reference
-topic-tags: a-b-testing
+description: Lär dig hur du utför A/B-testning via ett dedikerat användningsfall
 exl-id: bc23a444-a872-48fb-8bba-64b301541089
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 90c52ec144a6a3c1b534a80507e38fa3ed64fc83
 workflow-type: tm+mt
 source-wordcount: '108'
 ht-degree: 9%

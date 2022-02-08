@@ -1,19 +1,16 @@
 ---
 product: campaign
-title: Infoga taggar på din webbplats
-description: Infoga taggar på din webbplats
-audience: configuration
-content-type: reference
-topic-tags: setting-up-web-tracking
+title: Infoga webbspårningstaggar på webbplatsen
+description: Lär dig hur du infogar webbspårningstaggar på webbplatsen
 exl-id: e7fcec75-82fe-45ff-8d45-7d6e95baeb14
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 56459b188ee966cdb578c415fcdfa485dcbed355
 workflow-type: tm+mt
-source-wordcount: '319'
-ht-degree: 5%
+source-wordcount: '328'
+ht-degree: 0%
 
 ---
 
-# Infoga taggar på din webbplats{#inserting-tags-in-your-site}
+# Infoga spårningstaggar för webben på webbplatsen{#inserting-tags-in-your-site}
 
 ![](../../assets/v7-only.svg)
 

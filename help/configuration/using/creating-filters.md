@@ -1,15 +1,12 @@
 ---
 product: campaign
 title: Skapa filter
-description: Skapa filter
-audience: configuration
-content-type: reference
-topic-tags: use-a-custom-recipient-table
+description: Lär dig hur du skapar filter för en anpassad tabell
 exl-id: 6fad3dac-9af0-4796-adcf-d1de4b255aca
-source-git-commit: fb4b4c42b907e86813ea570f912312fccf893bfe
+source-git-commit: 3997412f14666fa61bf71d0f0a0653f5cc042e19
 workflow-type: tm+mt
-source-wordcount: '89'
-ht-degree: 6%
+source-wordcount: '96'
+ht-degree: 4%
 
 ---
 

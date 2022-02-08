@@ -1,19 +1,16 @@
 ---
 product: campaign
-title: Skicka ett e-postmeddelande med Adobe Campaign Classic
-description: Lär dig hur du bekräftar leveransen av ett e-postmeddelande och hur du kan leverera e-postmeddelanden.
-audience: delivery
-content-type: reference
-topic-tags: sending-emails
+title: Viktiga steg för att skicka e-post
+description: Lär dig hur du bekräftar leveransen av ett e-postmeddelande och hur du kan leverera e-postmeddelanden
 exl-id: c75a5ea2-8d62-4f98-bccd-7116a4d404fd
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 1e11b7419388698f5de366cbeddf2be88ef12873
 workflow-type: tm+mt
-source-wordcount: '215'
-ht-degree: 3%
+source-wordcount: '214'
+ht-degree: 0%
 
 ---
 
-# De viktigaste stegen för att skicka ett e-postmeddelande {#confirming-email-delivery}
+# Viktiga steg för att skicka e-post {#key-steps-to-send-an-email}
 
 ![](../../assets/common.svg)
 

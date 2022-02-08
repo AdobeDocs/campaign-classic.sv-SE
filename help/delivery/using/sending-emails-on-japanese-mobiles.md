@@ -1,12 +1,9 @@
 ---
 product: campaign
 title: Skicka e-post till japanska mobiler med Adobe Campaign Classic
-description: Lär dig hur du konfigurerar, utformar och skickar e-postmeddelanden som ska läsas på en japansk mobil.
-audience: delivery
-content-type: reference
-topic-tags: sending-emails
+description: Lär dig hur du konfigurerar, utformar och skickar e-postmeddelanden som ska läsas på japanska mobiler
 exl-id: 44634227-2340-49c4-b330-740c739ea551
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 1e11b7419388698f5de366cbeddf2be88ef12873
 workflow-type: tm+mt
 source-wordcount: '759'
 ht-degree: 0%
@@ -76,7 +73,7 @@ Förutom förhandsgranskningsdiagnosen utförs en andra kontroll när du skickar
 
 Med den här typologiregeln kan du se till att leveransen respekterar [formatbegränsningar](#limitations-and-recommendations) definieras av de japanska operatorerna, särskilt i förhållande till den totala storleken på e-postmeddelandet, storleken på HTML och textavsnitten, antalet bilder i meddelandena samt taggarna i HTML-innehållet.
 
-### Skicka bevis {#sending-proofs}
+### Skicka korrektur {#sending-proofs}
 
 Du kan skicka korrektur för att testa leveransen. När du skickar korrekturet anger du adresser som motsvarar e-postformatet för den profil som används, om du använder ersättningsadresser.
 

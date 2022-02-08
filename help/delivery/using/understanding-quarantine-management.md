@@ -2,22 +2,18 @@
 product: campaign
 title: Förstå karantänshantering
 description: Förstå karantänshantering
-audience: delivery
-content-type: reference
-topic-tags: monitoring-deliveries
+feature: Monitoring
 exl-id: cfd8f5c9-f368-4a31-a1e2-1d77ceae5ced
-source-git-commit: 98380c18b915cfebc980e68f9840f9d8919eaca4
+source-git-commit: ff35cef03ba35c7a6693a65dc7d2482b916c5bdb
 workflow-type: tm+mt
-source-wordcount: '2614'
-ht-degree: 14%
+source-wordcount: '2613'
+ht-degree: 12%
 
 ---
 
-# Förstå karantänshantering{#understanding-quarantine-management}
+# Förstå karantänhantering{#understanding-quarantine-management}
 
 ![](../../assets/common.svg)
-
-## Om karantäner {#about-quarantines}
 
 Adobe Campaign hanterar en lista med adresser i karantän. Mottagare vars adress sätts i karantän exkluderas som standard vid leveransanalys och anges inte som mål. En e-postadress kan sättas i karantän när till exempel postlådan är full eller om adressen inte finns. Under alla omständigheter uppfyller karantänförfarandet de särskilda regler som beskrivs nedan.
 
@@ -25,9 +21,9 @@ Adobe Campaign hanterar en lista med adresser i karantän. Mottagare vars adress
 >
 >Detta avsnitt gäller för onlinekanaler: e-post, SMS, push-meddelanden.
 
-### Optimera leveransen genom karantäner {#optimizing-your-delivery-through-quarantines}
+## Optimera leveransen genom karantänhantering {#optimizing-your-delivery-through-quarantines}
 
-De profiler vars e-postadresser eller telefonnummer är i karantän exkluderas automatiskt vid förberedelse av meddelanden (se [Identifiera karantänadresser vid en leverans](#identifying-quarantined-addresses-for-a-delivery)).  Detta snabbar upp leveranserna eftersom felfrekvensen avsevärt påverkar leveranshastigheten.
+Profilerna vars e-postadresser eller telefonnummer är i karantän exkluderas automatiskt vid meddelandeförberedelsen (se [Identifiera adresser i karantän för en leverans](#identifying-quarantined-addresses-for-a-delivery)). Detta snabbar upp leveranserna eftersom felfrekvensen avsevärt påverkar leveranshastigheten.
 
 Vissa internetleverantörer betraktar automatisk e-post som skräppost om antalet ogiltiga adresser är för högt.  Med karantän kan du därför undvika att läggas till i blockeringslista av dessa leverantörer.
 
@@ -257,6 +253,7 @@ Här är olika typer av fel för kunder som använder Baidu-kontakten:
 * Anslutningsproblem i början av leveransen: feltyp **[!UICONTROL Undefined]**, felorsak **[!UICONTROL Unreachable]**, återförsök utförs.
 * Förlorad anslutning under leverans: mjukt fel, felorsak **[!UICONTROL Refused]**, återförsök utförs.
 * Synkront fel returnerades av Baidu under sändning: allvarligt fel, felorsak **[!UICONTROL Refused]**, inga nya försök utförs.
+>
 Adobe Campaign kontaktar Baidu-servern var 10:e minut för att hämta det skickade meddelandets status och uppdaterar sändningarna. Om ett meddelande deklareras som skickat anges meddelandets status i utsändningsloggarna till **[!UICONTROL Received]**. Om Baidu deklarerar ett fel ställs statusen in på **[!UICONTROL Failed]**.
 
 **För Android V2**

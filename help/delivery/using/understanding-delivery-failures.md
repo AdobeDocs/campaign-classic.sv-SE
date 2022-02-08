@@ -2,11 +2,9 @@
 product: campaign
 title: Förstå leveransfel
 description: Lär dig mer om leveransfel
-audience: delivery
-content-type: reference
-topic-tags: monitoring-deliveries
+feature: Monitoring
 exl-id: 86c7169a-2c71-4c43-8a1a-f39871b29856
-source-git-commit: 98380c18b915cfebc980e68f9840f9d8919eaca4
+source-git-commit: 56459b188ee966cdb578c415fcdfa485dcbed355
 workflow-type: tm+mt
 source-wordcount: '2614'
 ht-degree: 14%
@@ -192,7 +190,7 @@ Om ett meddelande misslyckas på grund av en **Mjuk** eller **Ignorerad** fel so
 
 För anläggningsinstallationer och värdbaserade/hybridinstallationer som använder det äldre Campaign MTA går du till de avancerade parametrarna för leverans- eller leveransmallen och anger önskad varaktighet i motsvarande fält för att ändra varaktigheten för en leverans. Se [Definiera giltighetsperiod](steps-sending-the-delivery.md#defining-validity-period).
 
-Standardkonfigurationen tillåter fem försök med en timmes intervall, följt av ett nytt försök per dag i fyra dagar. Antalet försök kan ändras globalt (kontakta den tekniska administratören på Adobe) eller för varje leverans- eller leveransmall (se [Konfigurerar återförsök](steps-sending-the-delivery.md#configuring-retries)).
+Standardkonfigurationen tillåter fem försök med en timmes intervall, följt av ett nytt försök per dag i fyra dagar. Antalet försök kan ändras globalt (kontakta den tekniska administratören för Adobe) eller för varje leverans- eller leveransmall. Se [Konfigurera återförsök](steps-sending-the-delivery.md#configuring-retries).
 
 ## Synkrona och asynkrona fel {#synchronous-and-asynchronous-errors}
 

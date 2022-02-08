@@ -1,19 +1,17 @@
 ---
 product: campaign
 title: Om leveransbarhet i Adobe Campaign Classic
-description: Läs mer om hur du hanterar leveranser i Adobe Campaign Classic.
-audience: delivery
-content-type: reference
-topic-tags: deliverability-management
+description: Läs mer om hantering av slutprodukter i Adobe Campaign
+feature: Deliverability
 exl-id: dcd3a9f9-5fe9-4c28-a4a5-5aed67b036ab
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 56459b188ee966cdb578c415fcdfa485dcbed355
 workflow-type: tm+mt
-source-wordcount: '762'
-ht-degree: 4%
+source-wordcount: '760'
+ht-degree: 5%
 
 ---
 
-# Styra meddelandeinnehållet{#control-message-content}
+# Styr innehållet i dina meddelanden{#control-message-content}
 
 ![](../../assets/common.svg)
 
@@ -39,7 +37,7 @@ Vissa Internetleverantörer kontrollerar avsändaradressens giltighet (**[!UICON
 
 Du måste se till att rätt adress anges på förekomstnivå (meny) **[!UICONTROL Tools > Advanced > Deployment wizard...]**) eller i de vanligaste scenarierna.
 
-Mer information finns i [Definiera avsändaren](defining-the-email-content.md).
+Mer information finns på [den här sidan](defining-the-email-content.md).
 
 ## Personalisering {#personalization}
 

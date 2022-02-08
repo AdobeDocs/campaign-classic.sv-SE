@@ -2,24 +2,22 @@
 product: campaign
 title: Övervaka leveransen i Adobe Campaign Classic
 description: Läs om verktyg och riktlinjer för leveransövervakning i Adobe Campaign Classic.
-audience: delivery
-content-type: reference
-topic-tags: deliverability-management
+feature: Deliverability
 exl-id: e4caa316-242f-46cd-a20b-a5eee5a0c456
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 56459b188ee966cdb578c415fcdfa485dcbed355
 workflow-type: tm+mt
-source-wordcount: '531'
-ht-degree: 2%
+source-wordcount: '533'
+ht-degree: 1%
 
 ---
 
-# Övervaka levererbarhet{#monitoring-deliverability}
+# Övervaka leveransen{#monitoring-deliverability}
 
 ![](../../assets/common.svg)
 
 Nedan hittar du information om de olika övervakningsverktygen i Adobe Campaign samt ytterligare riktlinjer för hur du utnyttjar de funktioner som Adobe Campaign erbjuder för att övervaka din plattforms leveransbarhet.
 
-## Övervaka levererbarhet {#configuration}
+## Kontroll av levererbarhet {#about-deliverability-monitoring}
 
 Den här funktionen är tillgänglig via ett dedikerat paket i Adobe Campaign. Paketet måste vara installerat för att du ska kunna använda det. När du är klar startar du om servern så att paketet kan användas.
 * För värdkunder och hybridkunder **Leveransövervakning** konfigureras av Adobe teknisk support och konsulter. Kontakta din kontoansvarige på Adobe om du vill ha mer information.
@@ -59,7 +57,3 @@ Här följer ytterligare riktlinjer för leveransövervakning:
 * När du använder [vågor](steps-sending-the-delivery.md#sending-using-multiple-waves)kontrollerar du att varje våg har tillräckligt med tid att slutföra innan nästa utlöses.
 * Kontrollera att antalet fel och nya [karantän](understanding-quarantine-management.md) överensstämmer med andra leveranser.
 * Använd [leveransloggar](delivery-dashboard.md#delivery-logs-and-history) i detalj kontrollera vilken typ av fel som markeras (blockeringslista, DNS-problem, regler mot skräppost osv.).
-
-<!--### Delivery Reports - Broadcast Statistics {#broadcast-statistics}
-
-Each delivery will generate a broadcast statistics report when you open a delivery in the “Deliveries List”, which includes some reputation metrics that may impact your deliverability.-->

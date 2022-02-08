@@ -1,14 +1,12 @@
 ---
 product: campaign
 title: Personaliserade kuponger
-description: Personaliserade kuponger
-audience: delivery
-content-type: reference
-topic-tags: personalizing-deliveries
+description: Lär dig hur du skapar och infogar personliga kuponger
+feature: Personalization
 exl-id: 182939bb-7aff-4667-bda9-c5d48be3b946
-source-git-commit: 0deb18bb0376fc5e94d063145280426ff54db786
+source-git-commit: 1e11b7419388698f5de366cbeddf2be88ef12873
 workflow-type: tm+mt
-source-wordcount: '879'
+source-wordcount: '885'
 ht-degree: 1%
 
 ---
@@ -17,7 +15,7 @@ ht-degree: 1%
 
 ![](../../assets/v7-only.svg)
 
-Genom att lägga till kuponger i leveranserna kan mottagarna få bättre värde för produkter och tjänster. Du kan använda Campaign-kupongmodulen för att skapa en uppsättning kuponger som du förväntar dig ska läggas till kommande marknadsföringserbjudanden. När du är redo att skapa en leverans tilldelar du tillämpliga kuponger. Since coupons are valid for a select period, an assigned coupon is uniquely linked to its delivery message. Also, Campaign confirms that there are enough coupons for the number of messages before the delivery is sent.
+Genom att lägga till kuponger i leveranserna kan mottagarna få bättre värde för produkter och tjänster. Du kan använda Campaign-kupongmodulen för att skapa en uppsättning kuponger som du förväntar dig ska läggas till kommande marknadsföringserbjudanden. När du är redo att skapa en leverans tilldelar du tillämpliga kuponger. Eftersom kuponger är giltiga för en viss period är en tilldelad kupong unikt kopplad till leveransmeddelandet. Dessutom bekräftar Campaign att det finns tillräckligt många kuponger för antalet meddelanden innan leveransen skickas.
 
 >[!NOTE]
 >
@@ -25,7 +23,7 @@ Genom att lägga till kuponger i leveranserna kan mottagarna få bättre värde 
 >
 >Kupongdata kan importeras och exporteras med CSV- och XML-format. Mer information om import och export finns i [det här avsnittet](../../platform/using/get-started-data-import-export.md).
 
-## Creating a coupon {#creating-a-coupon}
+## Skapa en kupong {#creating-a-coupon}
 
 Med kupongmodulen får du två alternativ när du skapar kuponger:
 
@@ -48,7 +46,7 @@ Innan du följer stegen nedan bör du kontrollera vilken typ av kupong du vill s
 
    **[!UICONTROL Anonymous coupons]** : En anonym kupong är identisk för alla mottagare. Bekräfta att Anonym har valts i dialogrutan **Kupongtyp** meny och klicka **Spara** för att generera kupongen.
 
-   **[!UICONTROL Individual coupons]** : En enskild kupong kan anpassas ytterligare med ytterligare kupongkoder. For example, an individual coupon is created for a sale at a sports equipment store. Listan över mottagare är dock lång och de delar inte samma entusiasm för en enda sport. Du kan lägga till kodnamn för den enskilda kupongen baserat på en sport (t.ex. fotboll, fotboll, baseboll osv.) och skicka varje kod till rätt mottagare.
+   **[!UICONTROL Individual coupons]** : En enskild kupong kan anpassas ytterligare med ytterligare kupongkoder. Till exempel skapas en individuell kupong för försäljning i en sportutrustningsbutik. Listan över mottagare är dock lång och de delar inte samma entusiasm för en enda sport. Du kan lägga till kodnamn för den enskilda kupongen baserat på en sport (t.ex. fotboll, fotboll, baseboll osv.) och skicka varje kod till rätt mottagare.
 
    1. När du väljer Individual visas en ny flik, Kuponger, längst ned till vänster. Gå till **[!UICONTROL Coupons]** och klicka **[!UICONTROL Add]**.
    1. Ange en unik kod för den enskilda kupongen när du uppmanas till det i popup-fönstret.
@@ -126,11 +124,11 @@ I exemplet nedan skapas leveransen från hemsidan. Detaljerade instruktioner om 
 
    ![](assets/deliv_coup_14.png)
 
-1. In the toolbar, click **[!UICONTROL Send]** (upper left) and choose how you want to send the delivery.
+1. Klicka på i verktygsfältet **[!UICONTROL Send]** (övre vänstra hörnet) och välj hur du vill skicka leveransen.
 
    ![](assets/deliv_coup_15.png)
 
-1. Klicka på **[!UICONTROL Analyze]**. If the analysis log confirms that there are enough coupons for all recipients, click **[!UICONTROL Confirm delivery]** to send it.
+1. Klicka på **[!UICONTROL Analyze]**. Om analysloggen bekräftar att det finns tillräckligt med kuponger för alla mottagare klickar du på **[!UICONTROL Confirm delivery]** för att skicka den.
 
    ![](assets/deliv_coup_16.png)
 
@@ -149,9 +147,9 @@ Så här bekräftar du att leveransen lyckades:
 
 >[!NOTE]
 >
->By default, the coupon management module uses an **nms:recipient** table. [Läs mer](../../configuration/using/about-data-model.md#default-recipient-table).
+>Kuponghanteringsmodulen använder som standard en **nms:mottagare** tabell. [Läs mer](../../configuration/using/about-data-model.md#default-recipient-table).
 >
->Learn how to use a custom recipient table [in this page](../../configuration/using/about-custom-recipient-table.md).
+>Lär dig hur du använder en anpassad mottagartabell [på den här sidan](../../configuration/using/about-custom-recipient-table.md).
 
 ## Hantera otillräckliga kuponger {#managing-insufficient-coupons}
 

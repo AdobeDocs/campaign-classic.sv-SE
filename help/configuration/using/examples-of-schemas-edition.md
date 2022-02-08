@@ -1,17 +1,15 @@
 ---
 product: campaign
 title: Exempel på schemautgåvor
-description: Exempel på schemautgåvor
-audience: configuration
-content-type: reference
-topic-tags: editing-schemas
+description: Exempel på schemautgåva
 exl-id: b7ee70e0-89c6-4cd3-8116-2f073d4a2f2f
-source-git-commit: 8b970705f0da6a9e09de9fadb3e1a8c5f4814f9f
+source-git-commit: 3997412f14666fa61bf71d0f0a0653f5cc042e19
 workflow-type: tm+mt
 source-wordcount: '663'
 ht-degree: 2%
 
 ---
+
 
 # Exempel på schemautgåvor{#examples-of-schemas-edition}
 

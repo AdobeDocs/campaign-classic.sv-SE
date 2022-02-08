@@ -2,14 +2,11 @@
 product: campaign
 title: Konfiguration
 description: Konfiguration
-audience: configuration
-content-type: reference
-topic-tags: navigation-hierarchy
 exl-id: c7ae7240-0c12-4420-bbb3-4268c9ade3e7
-source-git-commit: 5d9e2f7d7cea9e6d1243b0e3a790f3990772e603
+source-git-commit: 8fa50d17a9ff36ccc310860ac93771590cfd76fd
 workflow-type: tm+mt
 source-wordcount: '1185'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -95,7 +92,7 @@ Kommandona visas i samma ordning som de deklareras i XML-dokumentet.
 
 Med en kommandoavgränsare kan du visa ett avgränsningstecken mellan kommandona. Den identifieras av **&#39;-&#39;** i kommandoetiketten.
 
-Den valfria närvaron av **`<soapcall>`** -taggen med indataparametrarna definierar anropet till en SOAP-metod som ska köras. Mer information om SOAP API finns i [Kampanj-JSAPI-dokumentation](https://experienceleague.adobe.com/developer/campaign-api/api/index.html).
+Den valfria närvaron av **`<soapcall>`** -taggen med indataparametrarna definierar anropet till en SOAP-metod som ska köras. Mer information om SOAP API finns i [Kampanj-JSAPI-dokumentation](https://experienceleague.adobe.com/developer/campaign-api/api/index.html?lang=sv).
 
 Formulärkontexten kan uppdateras vid initiering från **`<enter>`** -tagg. Mer information om den här taggen finns i dokumentationen om indataformulär.
 

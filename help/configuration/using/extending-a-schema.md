@@ -2,14 +2,12 @@
 product: campaign
 title: Utöka ett schema
 description: Lär dig hur du utökar ett schema
-audience: configuration
-content-type: reference
-topic-tags: editing-schemas
+feature: Schema Extension
 exl-id: 6e3e666d-6ab3-4346-93ca-fb0155a4660d
-source-git-commit: bd9f035db1cbad883e1f27fe901e34dfbc9c1229
+source-git-commit: 56459b188ee966cdb578c415fcdfa485dcbed355
 workflow-type: tm+mt
-source-wordcount: '333'
-ht-degree: 5%
+source-wordcount: '327'
+ht-degree: 4%
 
 ---
 
@@ -63,5 +61,5 @@ Det finns två metoder för att utöka ett befintligt schema:
 
 >[!IMPORTANT]
 >
->För att ändringarna ska kunna beaktas måste du generera om scheman. Mer information finns i [Återskapar scheman](../../configuration/using/regenerating-schemas.md) -avsnitt.\
->Om ändringarna påverkar databasens struktur måste du köra en uppdatering. Mer information om detta hittar du i avsnittet [Uppdatera databasstrukturen](../../configuration/using/updating-the-database-structure.md) .
+>För att ändringarna ska kunna beaktas måste du generera om scheman. Mer information finns på [den här sidan](../../configuration/using/regenerating-schemas.md).\
+>Om ändringarna påverkar databasens struktur måste du köra en uppdatering. Mer information finns på [den här sidan](../../configuration/using/updating-the-database-structure.md).

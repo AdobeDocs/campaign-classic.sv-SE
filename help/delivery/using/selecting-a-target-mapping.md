@@ -1,19 +1,16 @@
 ---
 product: campaign
-title: Välja en målgrupp att kartlägga
-description: Välja en målgrupp att kartlägga
-audience: delivery
-content-type: reference
-topic-tags: using-delivery-templates
+title: Välj en målmappning
+description: Lär dig målinrikta mappning
 exl-id: b5514fa3-1e65-45dc-8e40-d1ba3b673e7a
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 1e11b7419388698f5de366cbeddf2be88ef12873
 workflow-type: tm+mt
 source-wordcount: '180'
-ht-degree: 8%
+ht-degree: 10%
 
 ---
 
-# Välja en målgrupp att kartlägga{#selecting-a-target-mapping}
+# Välj en målmappning{#selecting-a-target-mapping}
 
 ![](../../assets/common.svg)
 
@@ -35,4 +32,4 @@ Mappningarna är följande:
 
 >[!NOTE]
 >
->Du kan också skapa nya målmappningar. Den här åtgärden är reserverad för expertanvändare. Mer information finns i [Konfigurationsguide](../../configuration/using/target-mapping.md).
+>Du kan också skapa nya målmappningar. Den här åtgärden är reserverad för expertanvändare. Mer information hittar du i [det här avsnittet](../../configuration/using/target-mapping.md).

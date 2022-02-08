@@ -1,15 +1,12 @@
 ---
 product: campaign
 title: Konfigurera alternativ för URL-spårning
-description: Konfigurera alternativ för URL-spårning
-audience: delivery
-content-type: reference
-topic-tags: tracking-messages
+description: Lär dig hur du konfigurerar alternativ för URL-spårning
 exl-id: 3277726a-fd92-4720-8871-3d0422c7db70
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 1e11b7419388698f5de366cbeddf2be88ef12873
 workflow-type: tm+mt
-source-wordcount: '164'
-ht-degree: 12%
+source-wordcount: '167'
+ht-degree: 9%
 
 ---
 
@@ -21,7 +18,7 @@ Avancerade inställningar för meddelandespårning är tillgängliga via **[!UIC
 
 >[!NOTE]
 >
->Hanteringen av bilder i e-postmeddelanden är också konfigurerad i det här fönstret. Se [Lägga till bilder](defining-the-email-content.md#adding-images).
+>Hanteringen av bilder i e-postmeddelanden är också konfigurerad i det här fönstret. Se [Lägg till bilder](defining-the-email-content.md#adding-images).
 
 ![](assets/s_ncs_user_email_del_tracking_ico.png)
 

@@ -1,14 +1,12 @@
 ---
 product: campaign
-title: LINE-kanal
-description: LINE-kanal
-audience: delivery
-content-type: reference
-topic-tags: sending-messages-on-mobiles
+title: Skapa radleveranser
+description: Lär dig hur du skapar LINE-meddelanden
+feature: Line App
 exl-id: 1baaabbd-9fd7-4d9b-b78e-d2a559d7dddb
-source-git-commit: ad75b8050133b331f6fbfa5042a444a874ba3cb4
+source-git-commit: 56459b188ee966cdb578c415fcdfa485dcbed355
 workflow-type: tm+mt
-source-wordcount: '1148'
+source-wordcount: '1153'
 ht-degree: 2%
 
 ---

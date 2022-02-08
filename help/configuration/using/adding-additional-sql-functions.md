@@ -1,23 +1,18 @@
 ---
 product: campaign
 title: Lägga till ytterligare SQL-funktioner
-description: Lägga till ytterligare SQL-funktioner
-audience: configuration
-content-type: reference
-topic-tags: api
+description: Lär dig definiera ytterligare SQL-funktioner
 exl-id: 04b0a0e5-d6df-447c-ac67-66adb1bdf717
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 3997412f14666fa61bf71d0f0a0653f5cc042e19
 workflow-type: tm+mt
-source-wordcount: '1021'
-ht-degree: 1%
+source-wordcount: '1023'
+ht-degree: 0%
 
 ---
 
-# Lägga till ytterligare SQL-funktioner{#adding-additional-sql-functions}
+# Definiera ytterligare SQL-funktioner{#adding-additional-sql-functions}
 
 ![](../../assets/v7-only.svg)
-
-## Introduktion {#introduction}
 
 Adobe Campaign låter användaren definiera **sina egna funktioner** som har åtkomst till SQL-funktioner, både de som finns i databasen och de som inte redan finns i konsolen. Detta är användbart för sammanställningsfunktioner (medel, maximum, sum) som till exempel bara kan beräknas på servern eller när databasen är ett enklare sätt att implementera vissa funktioner, i stället för att skriva uttrycket i konsolen manuellt (t.ex. datumhantering).
 

@@ -1,12 +1,10 @@
 ---
 product: campaign
 title: Beskrivning av Adobe Campaign Classic datamodell
-description: I det här dokumentet beskrivs Adobe Campaign datamodell.
-audience: configuration
-content-type: reference
-topic-tags: schema-reference
+description: Detta dokument beskriver Adobe Campaign datamodell
+feature: Data Model
 exl-id: fc0fd23c-f9ea-4e30-b47b-a84143d882ca
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 3997412f14666fa61bf71d0f0a0653f5cc042e19
 workflow-type: tm+mt
 source-wordcount: '2374'
 ht-degree: 1%

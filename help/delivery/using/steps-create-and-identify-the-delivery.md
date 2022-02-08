@@ -2,14 +2,11 @@
 product: campaign
 title: Skapa och identifiera leveransen
 description: Skapa och identifiera leveransen
-audience: delivery
-content-type: reference
-topic-tags: about-deliveries-and-channels
 exl-id: 6e37bc14-b1a9-42af-8c28-ae4b5bcaa055
-source-git-commit: 3b8d685642fc74d918a0e312c66d5e4f7b424192
+source-git-commit: 1e11b7419388698f5de366cbeddf2be88ef12873
 workflow-type: tm+mt
 source-wordcount: '271'
-ht-degree: 13%
+ht-degree: 6%
 
 ---
 

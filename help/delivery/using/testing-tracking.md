@@ -1,19 +1,16 @@
 ---
 product: campaign
-title: Testa spårning
-description: Testa spårning
-audience: delivery
-content-type: reference
-topic-tags: tracking-messages
+title: Testa meddelandespårning
+description: Lär dig hur du testar meddelandespårning
 exl-id: 16ad36b7-c13e-4b77-86ca-41c9ef174172
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 1e11b7419388698f5de366cbeddf2be88ef12873
 workflow-type: tm+mt
-source-wordcount: '250'
-ht-degree: 3%
+source-wordcount: '256'
+ht-degree: 1%
 
 ---
 
-# Testa spårning{#testing-tracking}
+# Testa meddelandespårning{#testing-tracking}
 
 ![](../../assets/common.svg)
 

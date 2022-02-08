@@ -2,18 +2,16 @@
 product: campaign
 title: '"Användningsfall: konfigurera fältersättning"'
 description: '"Användningsfall: konfigurera fältersättning"'
-audience: delivery
-content-type: reference
-topic-tags: using-seed-addresses
+feature: Seed Address
 exl-id: 3f567b2d-6f98-4831-af84-7db17fd12c6e
-source-git-commit: 98380c18b915cfebc980e68f9840f9d8919eaca4
+source-git-commit: 1e11b7419388698f5de366cbeddf2be88ef12873
 workflow-type: tm+mt
 source-wordcount: '448'
 ht-degree: 4%
 
 ---
 
-# Användningsfall: konfigurera fältersättning{#use-case-configuring-the-field-substitution}
+# Användningsfall: konfigurera fältersättningen{#use-case-configuring-the-field-substitution}
 
 ![](../../assets/common.svg)
 
@@ -53,7 +51,7 @@ I det här exemplet får dataschemat för dirigerade adresser ett värde som ska
 
 Med den här uppräkningen kan användaren ange klienternas favoritlitterära genre.
 
-För att den här ändringen av datarammet ska kunna visas i startadresserna **Inmatningsformulär** måste du uppdatera den. Se [Uppdaterar indataformuläret](use-case--selecting-seed-addresses-on-criteria.md#updating-the-input-form) -avsnitt.
+För att den här ändringen av datarammet ska kunna visas i startadresserna **Inmatningsformulär** måste du uppdatera den. Se [Uppdatera indataformuläret](use-case--selecting-seed-addresses-on-criteria.md#updating-the-input-form) -avsnitt.
 
 ## Konfigurera personalisering {#configuring-personalization}
 
@@ -75,7 +73,7 @@ För att den här ändringen av datarammet ska kunna visas i startadresserna **I
 
    >[!NOTE]
    >
-   >Mer information om **[!UICONTROL Edit the dynamic condition...]** länk, se [Användningsfall: välja startadresser enligt villkor](use-case--selecting-seed-addresses-on-criteria.md).
+   >Mer information om **[!UICONTROL Edit the dynamic condition...]** länk, se [Användningsfall: välj startadresser enligt villkor](use-case--selecting-seed-addresses-on-criteria.md).
 
 1. Klicka på **[!UICONTROL Preview]** välj sedan en startadress för att testa personaliseringen.
 

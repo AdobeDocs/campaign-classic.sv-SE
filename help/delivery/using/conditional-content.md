@@ -1,14 +1,12 @@
 ---
 product: campaign
 title: Villkorligt innehåll
-description: Villkorligt innehåll
-audience: delivery
-content-type: reference
-topic-tags: personalizing-deliveries
+description: Lär dig hur du lägger till villkorsstyrt innehåll
+feature: Personalization
 exl-id: 12595ee4-6a52-4e06-b80d-85fe633a5a11
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 1e11b7419388698f5de366cbeddf2be88ef12873
 workflow-type: tm+mt
-source-wordcount: '478'
+source-wordcount: '482'
 ht-degree: 7%
 
 ---
@@ -22,7 +20,7 @@ Genom att konfigurera fält för villkorligt innehåll kan du skapa dynamisk per
 ![](assets/do-not-localize/how-to-video.png) [Upptäck den här funktionen i en video](#conditionnal-content-video)
 
 
-## Använda villkor i ett e-postmeddelande {#using-conditions-in-an-email}
+## Använd villkor i ett e-postmeddelande {#using-conditions-in-an-email}
 
 I exemplet nedan får du lära dig att skapa ett meddelande som dynamiskt anpassas efter mottagarens kön och intressen.
 

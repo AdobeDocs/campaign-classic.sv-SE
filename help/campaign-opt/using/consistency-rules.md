@@ -2,11 +2,8 @@
 product: campaign
 title: Konsekvensregler
 description: Konsekvensregler
-audience: campaign
-content-type: reference
-topic-tags: campaign-optimization
 exl-id: 757328fa-4698-4f85-a5fa-074b5152ec45
-source-git-commit: 5806690f764d2e5dfb5651597ff68b33bb399b44
+source-git-commit: 90c52ec144a6a3c1b534a80507e38fa3ed64fc83
 workflow-type: tm+mt
 source-wordcount: '759'
 ht-degree: 3%
@@ -21,9 +18,9 @@ ht-degree: 3%
 
 Adobe Campaign garanterar enhetlig kommunikation tack vare en uppsättning regler som finns i kampanjtypologier. Syftet är att kontrollera de leveranser som skickas till mottagarna, t.ex. volym, art, relevans osv.
 
-**Kapacitet** regler, t.ex. kan undvika att överbelasta den plattform som berörs av meddelandeleveransen. Specialerbjudanden som innehåller en nedladdningslänk får inte skickas till för många personer samtidigt för att undvika att servern blir mättad. Telefonkampanjer får inte överskrida uppringningscentralernas bearbetningskapacitet osv. Mer information finns i [Kontrollera kapacitet](#controlling-capacity).
+**Kapacitet** regler, t.ex. kan undvika att överbelasta den plattform som berörs av meddelandeleveransen. Specialerbjudanden som innehåller en nedladdningslänk får inte skickas till för många personer samtidigt för att undvika att servern blir mättad. Telefonkampanjer får inte överskrida uppringningscentralernas bearbetningskapacitet osv. Mer information finns i [Kontrollkapacitet](#controlling-capacity).
 
-## Kontrollera kapacitet {#controlling-capacity}
+## Kontrollkapacitet {#controlling-capacity}
 
 Innan du levererar meddelanden måste du se till att din organisation har kapacitet att bearbeta leveransen (fysisk infrastruktur), de svar som leveransen kan generera (inkommande meddelanden) och antalet samtal som ska göras till kontaktprenumeranter (bearbetningskapacitet för callcenter), till exempel.
 
@@ -55,11 +52,11 @@ Så här utformar du en ny kapacitetsregel:
 
    Mer information om detta finns i [det här avsnittet](#monitoring-consumption).
 
-## Definiera maximal belastning {#defining-the-maximum-load}
+## Definiera maximal last {#defining-the-maximum-load}
 
-För att definiera den maximala lasten måste du definiera tillgänglighetsrader. Det finns två alternativ: du kan skapa en eller flera tillgänglighetsrader manuellt (se [Lägga till tillgänglighetsrader en i taget](#adding-availability-lines-one-by-one)) eller skapa tillgänglighetsintervall. Frekvensen av dessa tidsperioder kan automatiseras (se [Lägg till en uppsättning tillgänglighetsrader](#add-a-set-of-availability-lines)).
+För att definiera den maximala lasten måste du definiera tillgänglighetsrader. Det finns två alternativ: du kan skapa en eller flera tillgänglighetsrader manuellt (se [Lägg till tillgänglighetsrader en efter en](#adding-availability-lines-one-by-one)) eller skapa tillgänglighetsintervall. Frekvensen av dessa tidsperioder kan automatiseras (se [Lägg till en uppsättning tillgänglighetsrader](#add-a-set-of-availability-lines)).
 
-### Lägga till tillgänglighetsrader en i taget {#adding-availability-lines-one-by-one}
+### Lägg till tillgänglighetsrader en efter en {#adding-availability-lines-one-by-one}
 
 Om du vill skapa en tillgänglighetsrad klickar du på **[!UICONTROL Add]** och markera **[!UICONTROL Add an availability line]**. Ange tillgänglighetsperioden och tillgänglig last.
 

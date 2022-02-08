@@ -2,11 +2,9 @@
 product: campaign
 title: Tryckregler
 description: Tryckregler
-audience: campaign
-content-type: reference
-topic-tags: campaign-optimization
+feature: Fatigue Management, Typology Rules
 exl-id: c23212f2-fdf8-4820-b389-546f7c84db27
-source-git-commit: 52aa7b268d5eb83354c3a4d8687ced95300538e2
+source-git-commit: 90c52ec144a6a3c1b534a80507e38fa3ed64fc83
 workflow-type: tm+mt
 source-wordcount: '3285'
 ht-degree: 4%
@@ -141,7 +139,7 @@ I följande exempel vill vi länka vikten på nyhetsbrev på musik till mottagar
 
 1. Använd den här regeln för meddelanden med följande ämne: nyhetsbrev, specialerbjudanden osv. Vikten av dessa leveranser, och därmed deras prioritet, beror på varje mottagares benägenhetspoäng.
 
-## Ange period {#setting-the-period}
+## Ange perioden {#setting-the-period}
 
 Tryckregler definieras i **n**-dagars löpande perioder.
 
@@ -219,7 +217,7 @@ Om det här antalet överskrider tröskelvärdet tillämpas de skiljeregler som 
 
 ## Användningsfall för tryckregler {#use-cases-on-pressure-rules}
 
-### Anpassning av tröskelvärdet baserat på kriterium {#adapting-the-threshold-based-on-criterion}
+### Anpassa tröskelvärdet baserat på kriterium {#adapting-the-threshold-based-on-criterion}
 
 Vi vill skapa en typologiregel för att förhindra att fler än fyra meddelanden per vecka skickas till kunder och två meddelanden per vecka till potentiella kunder.
 
@@ -289,7 +287,7 @@ Vid leveransanalys utesluts leveransmottagarna vid behov från leveransen, beroe
 
    ![](assets/campaign_opt_pressure_sample_1_10.png)
 
-### Beräkna leveransvikt baserat på beteende {#calculating-the-delivery-weight-based-on-behavior}
+### Beräkna leveransvikten baserat på beteende {#calculating-the-delivery-weight-based-on-behavior}
 
 Du kan definiera tryckregler baserat på mottagarens beteende: Det innebär att en leverans kan anpassas till kriterier som varierar mellan olika mottagare. Du kan till exempel bestämma dig för att skicka ett meddelande beroende på om en mottagare besökt din webbplats eller inte, klickat i ett visst avsnitt av det senaste nyhetsbrevet, prenumererat på en informationstjänst eller till och med baserat på svar på en undersökning, ett onlinespel osv.
 
@@ -315,7 +313,7 @@ Använd följande konfigurationssteg:
 1. Klicka **[!UICONTROL Finish]** om du vill spara den här regeln.
 1. Länka regeln till en kampanjtypologi och referera till den här typologin i en leverans för att godkänna den.
 
-### Skicka endast de högsta viktade meddelandena {#sending-only-the-highest-weighted-messages}
+### Skicka endast de högst viktade meddelandena {#sending-only-the-highest-weighted-messages}
 
 Du vill inte skicka mer än två meddelanden inom samma vecka, med en gräns på två meddelanden per dag, till var och en av dina mottagare, och du vill bara att meddelanden med högre vikt ska levereras.
 
@@ -335,7 +333,7 @@ Konfigurera först tryckregeln.
 
    ![](assets/campaign_opt_pressure_example_1.png)
 
-   Leveranser som skickas upp till 7 dagar före leveransdatumet och som schemalagts upp till 7 dagar efter leveransdatumet kommer att tas med i beräkningen. Mer information finns i [Ange period](#setting-the-period).
+   Leveranser som skickas upp till 7 dagar före leveransdatumet och som schemalagts upp till 7 dagar efter leveransdatumet kommer att tas med i beräkningen. Mer information finns i [Ange perioden](#setting-the-period).
 
    >[!AVAILABILITY]
    >Schemalagda leveranser kan inte beaktas i Campaign v8.
