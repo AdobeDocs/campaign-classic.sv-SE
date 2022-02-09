@@ -3,7 +3,7 @@ product: campaign
 title: Technote - Adobe Campaign-konfigurationsuppdateringar
 description: Adobe Campaign konfigurationsuppdateringar
 exl-id: 7db02123-2e2a-40d9-8385-728ff69985e4
-source-git-commit: eb0e572f0bb6196a58a7dab4999df784d5c4851f
+source-git-commit: 0f31ee570ba6e763f48902e91c5d823ac297fc24
 workflow-type: tm+mt
 source-wordcount: '1137'
 ht-degree: 12%
@@ -101,7 +101,7 @@ När alla instanser har uppgraderats måste även klientkonsolen uppgraderas til
 
 ## Integrering med utlösare från Experience Cloud {#acc-triggers-updates}
 
-Den gamla autentiseringstjänsten för autentisering har nått slutet av livscykeln. Autentisering av utlösarintegration, som ursprungligen baserades på AUTH-autentiseringsinställningar för åtkomst till pipeline, har flyttats till Adobe I/O. Äldre autentiseringsmodell med Campaign [har tagits ur bruk](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-discussions/adobe-analytics-legacy-api-end-of-life-notice/td-p/385411) på **September 2021**. Värdmiljöer drar nytta av ett tillägg fram till  **23 februari 2022**. Kontakta Adobe kundtjänst om du är en lokal kund eller hybridkund och utöka supporten till februari 2022. Du måste ange [AppID:et för OAuth-programmet](../../integrations/using/configuring-pipeline.md?lang=en#step-optional) till Adobe.
+Den gamla autentiseringstjänsten för autentisering har nått slutet av livscykeln. Autentisering av utlösarintegration, som ursprungligen baserades på AUTH-autentiseringsinställningar för åtkomst till pipeline, har flyttats till Adobe I/O. Äldre autentiseringsmodell med Campaign [har tagits ur bruk](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-discussions/adobe-analytics-legacy-api-end-of-life-notice/td-p/385411) på **September 2021**. Värdmiljöer drar nytta av ett tillägg fram till  **23 februari 2022**. Kontakta Adobe kundtjänst för support på plats eller som hybridkund till februari 2022. Du måste ange [AppID:et för OAuth-programmet](../../integrations/using/configuring-pipeline.md?lang=en#step-optional) till Adobe.
 
 **Påverkas du?**
 
@@ -163,6 +163,6 @@ Som lokal/hybridkund måste du uppdatera din konfiguration för att säkerställ
 ## Användbara länkar
 
 * [Uppgradera din miljö](../../production/using/build-upgrade.md)
-* [Vanliga frågor och svar om Builduppgradering](../../platform/using/faq-build-upgrade.md)
+* [Vanliga frågor och svar om builduppgradering](../../platform/using/faq-build-upgrade.md)
 * [Ladda ned Campaign Classic build](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html)
 * [Gör den nya klientkonsolen tillgänglig för användare](../../installation/using/client-console-availability-for-windows.md)
