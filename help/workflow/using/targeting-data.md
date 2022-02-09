@@ -2,18 +2,16 @@
 product: campaign
 title: Målinrikta data
 description: Läs mer om måldata i ett arbetsflöde
-audience: workflow
-content-type: reference
-topic-tags: -general-operation
+feature: Query Editor, Data Management
 exl-id: 74b82019-bdab-4442-84cf-5ad18d0db788
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: f05eefc9945c4ead89eb448b6e28c3523559e055
 workflow-type: tm+mt
 source-wordcount: '1924'
 ht-degree: 4%
 
 ---
 
-# Målinrikta data{#targeting-data}
+# Måldata{#targeting-data}
 
 ![](../../assets/common.svg)
 
@@ -79,7 +77,7 @@ Du kan dela upp ett mål i flera delmängder genom att endast använda ytterliga
 
 Mer information finns i [Skapa delmängder med aktiviteten Dela](#creating-subsets-using-the-split-activity).
 
-## Segmentera data {#segmenting-data}
+## Segmentdata {#segmenting-data}
 
 ### Kombinera flera mål (unionen) {#combining-several-targets--union-}
 
@@ -129,7 +127,7 @@ Dessutom är det bara möjligt att behålla ett urval av kolumner, eller bara de
 
 Skärningsaktiviteten beskrivs i [Skärningspunkt](intersection.md) -avsnitt.
 
-### Utesluta en population (Uteslutning) {#excluding-a-population--exclusion-}
+### Uteslut en population (Uteslutning) {#excluding-a-population--exclusion-}
 
 Med exkluderingsaktiviteten kan du utesluta element i ett mål från en annan målpopulation. Den här aktivitetens målgruppsdimension kommer att vara huvuduppsättningens.
 
@@ -215,7 +213,7 @@ Du kan till exempel placera en enda leveransaktivitet och anpassa leveransinneh�
 
 Du kan också skapa delmängder med **[!UICONTROL Cells]** aktivitet. Mer information finns i [Celler](cells.md) -avsnitt.
 
-### Använda måldata {#using-targeted-data}
+### Använd måldata {#using-targeted-data}
 
 När data har identifierats och beretts kan de användas i följande sammanhang:
 

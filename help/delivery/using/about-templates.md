@@ -1,15 +1,13 @@
 ---
 product: campaign
 title: Om mallar
-description: Om mallar
-audience: delivery
-content-type: reference
-topic-tags: using-delivery-templates
+description: Kom igång med leveransmallar
+feature: Delivery Templates
 exl-id: d943898c-06fe-451d-aa28-8a95665f4112
-source-git-commit: 8b970705f0da6a9e09de9fadb3e1a8c5f4814f9f
+source-git-commit: f05eefc9945c4ead89eb448b6e28c3523559e055
 workflow-type: tm+mt
-source-wordcount: '274'
-ht-degree: 2%
+source-wordcount: '276'
+ht-degree: 1%
 
 ---
 
@@ -35,4 +33,4 @@ Det finns två typer av mallar:
 
 >[!NOTE]
 >
->Vilka mallar som är tillgängliga beror på din behörighet, instanskonfigurationen och kontexten. När du till exempel skapar en informationstjänst kan du länka en leveransmall för bekräftelsemeddelanden: du får då bara åtkomst till mallar vars målmappning är prenumerationsmappningen. Mer information finns i [Välj en målmappning](selecting-a-target-mapping.md) och [Om tjänster och prenumerationer](about-services-and-subscriptions.md).
+>Vilka mallar som är tillgängliga beror på din behörighet, instanskonfigurationen och kontexten. När du till exempel skapar en informationstjänst kan du länka en leveransmall för bekräftelsemeddelanden: du får då bara åtkomst till mallar vars målmappning är prenumerationsmappningen. Mer information finns i [Välj en målmappning](selecting-a-target-mapping.md) och [Tjänster och prenumerationer](about-services-and-subscriptions.md).

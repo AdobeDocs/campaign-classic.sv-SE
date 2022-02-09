@@ -1,12 +1,9 @@
 ---
 product: campaign
 title: Transaktionsmeddelandens arkitektur
-description: I det här avsnittet beskrivs Adobe Campaign Classic transaktionsmeddelandearkitektur och de tillgängliga kanalerna för att leverera transaktionsmeddelanden.
-audience: message-center
-content-type: reference
-topic-tags: introduction
+description: I det här avsnittet beskrivs Adobe Campaign Classic transaktionsmeddelandearkitektur och de tillgängliga kanalerna för att leverera transaktionsmeddelanden
 exl-id: 0a059397-b037-405b-b9c1-94a4a072674d
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: f05eefc9945c4ead89eb448b6e28c3523559e055
 workflow-type: tm+mt
 source-wordcount: '1092'
 ht-degree: 1%

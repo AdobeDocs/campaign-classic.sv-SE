@@ -2,11 +2,9 @@
 product: campaign
 title: Kom igång med webbformulär
 description: Kom igång med webbformulär i Campaign
-audience: web
-content-type: reference
-topic-tags: web-forms
+feature: Landing Pages
 exl-id: 63602bed-ace6-4632-a735-5d268a7d72d0
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: f05eefc9945c4ead89eb448b6e28c3523559e055
 workflow-type: tm+mt
 source-wordcount: '497'
 ht-degree: 5%
@@ -80,7 +78,6 @@ I följande avsnitt beskrivs hur du definierar innehåll och layout för formul�
 >
 >* Under siddesignen kan du visa den slutliga återgivningen i **[!UICONTROL Preview]** -fliken. Spara formuläret först om du vill se ändringarna. Eventuella fel visas i **[!UICONTROL Log]** -fliken.
 >* Aktivera felsökningsläget i webbformuläret för att säkerställa att sidvisning och informationslagring sker i rätt sekvens. För att göra det går du till **[!UICONTROL Preview]** underfliken och kontrollera **[!UICONTROL Enable debug mode]** box: all insamlad information och eventuella körningsfel visas längst ned på varje sida.
-
 >
 
 

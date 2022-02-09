@@ -2,13 +2,11 @@
 product: campaign
 title: Definiera godkännanden
 description: Godkännanden gör det möjligt för operatörer att fatta beslut som styr ett arbetsflöde eller att bekräfta att det fortsätter att köras
-audience: workflow
-content-type: reference
-topic-tags: -general-operation
+feature: Approvals
 exl-id: 4d413d51-ae5d-4e5e-bfaf-4160a6075281
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 3af4f259b80b3e03c81ee278b470ef6ffe3fe4d0
 workflow-type: tm+mt
-source-wordcount: '840'
+source-wordcount: '841'
 ht-degree: 4%
 
 ---
@@ -29,7 +27,7 @@ I operationer baseras alla faser som kräver godkännande på samma princip.
 
 ![](assets/validation-1-in-op.png)
 
-Här finns exempel på godkännande [section](../../campaign/using/marketing-campaign-approval.md#checking-and-approving-deliveries).
+Exempel på godkännanden finns i [det här avsnittet](../../campaign/using/marketing-campaign-approval.md#checking-and-approving-deliveries).
 
 En operator kan svara på ett av två sätt: validera med webbsidan som är länkad i e-postmeddelandet eller via konsolen.
 
@@ -37,7 +35,7 @@ En operator kan svara på ett av två sätt: validera med webbsidan som är län
 >
 >När svaret har sparats kan det inte ändras.
 
-## Skicka e-postmeddelanden {#sending-emails}
+## Godkännanden via e-post {#sending-emails}
 
 Det går att få ett meddelande om godkännande som innehåller en länk till en webbsida där det går att svara. Om måloperatorn ska få ett e-postmeddelande om godkännande måste operatörens e-postadress vara fullständig. Om så inte är fallet måste operatören använda konsolen för att svara
 
@@ -47,7 +45,7 @@ E-postmeddelanden om godkännande skickas kontinuerligt. Standardleveransmallen 
 
 Leveranser som skapas via den här mallen lagras i **[!UICONTROL Administration > Production > Objects created automatically > Technical deliveries > Workflow notifications]** mapp.
 
-## Godkännande via konsolen {#approval-via-the-console}
+## Godkännanden via konsolen {#approval-via-the-console}
 
 I åtgärder visas element som ska godkännas på kontrollpanelen för kampanjer.
 
