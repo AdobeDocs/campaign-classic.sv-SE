@@ -6,10 +6,10 @@ title: Användarhandbok för Campaign Classic v7
 user-guide-description: Med Adobe Campaign kan du använda omfattande kunddata för att skapa, samordna och leverera dynamiska kampanjer som kunderna verkligen vill ha – via e-post, mobiler, offlinekanaler med mera.
 sub-product: adobe campaign classic
 type: Documentation
-source-git-commit: 8610d29a3df1080f1622a2cb3685c0961fb40092
-workflow-type: ht
+source-git-commit: 3b523e53440ba6ae107b597c7ebf226195126bde
+workflow-type: tm+mt
 source-wordcount: '2556'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -506,7 +506,7 @@ ht-degree: 100%
       + [Exempel på JavaScript-kod i arbetsflöden](workflow/using/javascript-in-workflows.md)
       + [Åtkomst till en extern databas](workflow/using/accessing-an-external-database--fda-.md)
       + [Hantera behörigheter](workflow/using/managing-rights.md)
-      + [Hantera aktivitetsbilder](workflow/using/managing-activity-images.md)
+      + [Ändra aktivitetsbilder](workflow/using/managing-activity-images.md)
       + [Hantera tidszoner](workflow/using/managing-time-zones.md)
       + [Tekniska arbetsflöden](workflow/using/about-technical-workflows.md)
 + Hantera erbjudanden {#managing-offers}

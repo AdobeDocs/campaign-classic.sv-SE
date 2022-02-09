@@ -1,19 +1,17 @@
 ---
 product: campaign
-title: Skapa ett arbetsflöde
+title: Bygg ett arbetsflöde
 description: Lär dig hur du skapar ett arbetsflöde
-audience: workflow
-content-type: reference
-topic-tags: -general-operation
+feature: Workflows
 exl-id: 8ba20ccd-b03f-4c4f-87c1-a21e80d8e4be
-source-git-commit: 638b259462d3e01d744567e56d67a120359dc34a
+source-git-commit: 3b523e53440ba6ae107b597c7ebf226195126bde
 workflow-type: tm+mt
-source-wordcount: '1625'
+source-wordcount: '1623'
 ht-degree: 3%
 
 ---
 
-# Skapa ett arbetsflöde {#building-a-workflow}
+# Bygg ett arbetsflöde {#building-a-workflow}
 
 ![](../../assets/common.svg)
 
@@ -45,7 +43,7 @@ Ange en etikett och klicka på **[!UICONTROL Save]**.
 >
 >När du ändrar det interna namnet på en arbetsflödesaktivitet eller själva arbetsflödet måste du spara arbetsflödet innan du stänger det, så att det nya interna namnet beaktas korrekt.
 
-## Lägga till och koppla aktiviteter {#adding-and-linking-activities}
+## Lägg till och länka aktiviteter {#adding-and-linking-activities}
 
 Du måste nu definiera de olika aktiviteterna och koppla samman dem i diagrammet. I det här skedet av konfigurationen kan vi se diagrametiketten och arbetsflödesstatusen (Redigering pågår). Fönstrets nedre del används endast för att redigera diagrammet. Den innehåller ett verktygsfält, en palett med aktiviteter (till vänster) och själva diagrammet (till höger).
 
@@ -109,7 +107,7 @@ Du kan ändra visning och layout för diagrammet med följande element:
 
 * **Bildhantering**
 
-   Du kan anpassa bakgrundsbilden för diagrammet samt de som hör till de olika aktiviteterna. Se [Hantera aktivitetsbilder](managing-activity-images.md).
+   Du kan anpassa bakgrundsbilden för diagrammet samt de som hör till de olika aktiviteterna. Se [Ändra aktivitetsbilder](managing-activity-images.md).
 
 ## Konfigurera aktiviteter {#configuring-activities}
 
@@ -149,7 +147,7 @@ Steg för att skapa ett arbetsflöde för målinriktning finns i följande avsni
 
 1. **Identifiera** data i databasen - se [Skapa frågor](targeting-data.md#creating-queries)
 1. **Förbered** data för att tillgodose leveransbehov - se [Förbättra och ändra data](targeting-data.md#enriching-and-modifying-data)
-1. **Använd** data för att utföra uppdateringar eller inom en leverans - se [Uppdaterar databasen](how-to-use-workflow-data.md#updating-the-database)
+1. **Använd** data för att utföra uppdateringar eller inom en leverans - se [Uppdatera databasen](how-to-use-workflow-data.md#updating-the-database)
 
 Resultaten av alla berikningar och all hantering som utförs under målgruppsanpassningen lagras och är tillgängliga i personaliseringsfält, särskilt för användning när personaliserade meddelanden skapas. Mer information finns i [Måldata](data-life-cycle.md#target-data)
 
@@ -239,7 +237,7 @@ Dubblettfunktionen är inte direkt tillgänglig i kampanjvyn.
 
 Men du kan skapa en vy som visar alla arbetsflöden i instansen. I den här vyn kan du duplicera arbetsflöden med **Duplicera till**.
 
-**Först skapar vi en vy:**
+**Skapa en vy**
 
 1. I **Utforskaren** går du till den mapp du behöver för att skapa vyn i.
 1. Högerklicka och gå till **Lägg till en ny mapp** > **Process**, markera **Arbetsflöden**.

@@ -4,7 +4,7 @@ title: Fråga
 description: Läs mer om arbetsflödesaktiviteten Fråga
 feature: Query Editor
 exl-id: 20d03627-cd56-46da-bc02-73b48a02a350
-source-git-commit: f05eefc9945c4ead89eb448b6e28c3523559e055
+source-git-commit: 3b523e53440ba6ae107b597c7ebf226195126bde
 workflow-type: tm+mt
 source-wordcount: '1629'
 ht-degree: 0%
@@ -26,7 +26,7 @@ Mer information om frågeexempel finns i [det här avsnittet](querying-recipient
 
 ![](assets/s_user_segmentation_wizard_9.png)
 
-Mer information om hur du använder och hanterar ytterligare data finns i [Lägga till data](#adding-data).
+Mer information om hur du använder och hanterar ytterligare data finns i [Lägg till data](#adding-data).
 
 The **[!UICONTROL Edit query...]** -länken kan du definiera måltypen, begränsningarna och urvalskriterierna för populationen på följande sätt:
 
@@ -60,7 +60,7 @@ The **[!UICONTROL Edit query...]** -länken kan du definiera måltypen, begräns
 
    ![](assets/s_user_segmentation_query_advanced.png)
 
-## Lägga till data {#adding-data}
+## Lägg till data {#adding-data}
 
 Med de extra kolumnerna kan du samla in ytterligare information om målpopulationen, t.ex. avtalsnummer, prenumerationer på nyhetsbrev eller ursprung. Dessa data kan lagras i Adobe Campaign-databasen eller i en extern databas.
 

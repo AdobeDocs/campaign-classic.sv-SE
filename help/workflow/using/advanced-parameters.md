@@ -2,11 +2,8 @@
 product: campaign
 title: Avancerade parametrar
 description: Avancerade parametrar
-audience: workflow
-content-type: reference
-topic-tags: advanced-management
 exl-id: 6c90ac2f-0d2b-48b0-9245-3e5e3a3d027c
-source-git-commit: 7a1b8a1cd3ad434dac5c324056113d7ec15ddd8a
+source-git-commit: 3b523e53440ba6ae107b597c7ebf226195126bde
 workflow-type: tm+mt
 source-wordcount: '501'
 ht-degree: 1%
@@ -35,7 +32,7 @@ Det här fältet innehåller aktivitetens interna namn.
 
 ## Bild {#image}
 
-I det här fältet kan du ändra bilden som är länkad till en aktivitet. Mer information finns i: [Hantera aktivitetsbilder](managing-activity-images.md).
+I det här fältet kan du ändra bilden som är länkad till en aktivitet. Mer information finns i [Ändra aktivitetsbilder](managing-activity-images.md).
 
 ## Körning {#execution}
 
