@@ -2,11 +2,8 @@
 product: campaign
 title: Rapportens egenskaper
 description: Läs mer om inställningarna för rapportegenskaper
-audience: reporting
-content-type: reference
-topic-tags: creating-new-reports
 exl-id: dfa9d329-1086-4f6d-9d03-df159cad5495
-source-git-commit: 7fa8cea04fb4e25187c48ad19330815e9b522b37
+source-git-commit: 81716a30a57d3ed8542b329d5fb9b0443fd4bf31
 workflow-type: tm+mt
 source-wordcount: '429'
 ht-degree: 1%
@@ -52,7 +49,7 @@ Möjliga alternativ är:
 * **[!UICONTROL Access control]**: Med det här alternativet kan Adobe Campaign-operatörer få åtkomst till det när de har loggat in.
 * **[!UICONTROL Specific account]**: Med det här alternativet kan du köra rapporten med rättigheterna för den operator som valts i **[!UICONTROL Operator]** fält.
 
-## Hantera rapportlokalisering {#managing-report-localization}
+## Översätt din rapport {#report-localization}
 
 Du kan konfigurera de språk som du vill att rapporten ska översättas till. Om du vill göra det klickar du på **[!UICONTROL Localization]** -fliken.
 
@@ -66,7 +63,7 @@ Redigeringsspråket är det språk du skriver på. När du lägger till ett spr�
 >
 >Mer information om webbsidelokalisering i Campaign finns i [det här avsnittet](../../web/using/translating-a-web-form.md).
 
-## Anpassa återgivning av HTML {#personalizing-html-rendering}
+## Anpassa rendering av HTML {#personalizing-html-rendering}
 
 I **[!UICONTROL Rendering]** kan du anpassa sidans datavisningsläge. Du kan välja:
 

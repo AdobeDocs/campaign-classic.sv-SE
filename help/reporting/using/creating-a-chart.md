@@ -1,14 +1,11 @@
 ---
 product: campaign
 title: Skapa ett diagram
-description: Skapa ett diagram
-audience: reporting
-content-type: reference
-topic-tags: creating-new-reports
+description: Lär dig utforma ett diagram
 exl-id: d32b614f-82c1-4363-816c-4ebedaa5cfe9
-source-git-commit: 7fa8cea04fb4e25187c48ad19330815e9b522b37
+source-git-commit: 81716a30a57d3ed8542b329d5fb9b0443fd4bf31
 workflow-type: tm+mt
-source-wordcount: '522'
+source-wordcount: '525'
 ht-degree: 3%
 
 ---
@@ -127,7 +124,7 @@ Möjliga interaktionstyper och deras konfigurationer beskrivs i [det här avsnit
 
 ![](assets/s_ncs_advuser_report_wizard_017.png)
 
-## Beräknar statistik {#calculating-statistics}
+## Beräkningsstatistik {#calculating-statistics}
 
 Med diagram kan du visa statistik om insamlade data.
 

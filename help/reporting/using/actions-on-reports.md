@@ -2,14 +2,11 @@
 product: campaign
 title: Åtgärder på rapporter
 description: Åtgärder på rapporter
-audience: reporting
-content-type: reference
-topic-tags: creating-new-reports
 exl-id: b30cdeaf-4ad6-473d-bdbc-91984755b609
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 81716a30a57d3ed8542b329d5fb9b0443fd4bf31
 workflow-type: tm+mt
-source-wordcount: '546'
-ht-degree: 1%
+source-wordcount: '544'
+ht-degree: 3%
 
 ---
 
@@ -56,7 +53,7 @@ För **[!UICONTROL List with group]** typrapporter som ska exporteras till Excel
 * Rapporterna behöver inte använda formatering som definierats på cellnivå. Det är att föredra att använda **[!UICONTROL Form rendering]** för att definiera formatet för cellerna i tabellen. The **[!UICONTROL Form rendering]** kan nås via **[!UICONTROL Administration > Configuration > Form rendering]**.
 * Vi rekommenderar inte att du infogar HTML innehåll.
 * Om en rapport innehåller flera tabeller, diagram osv. textelement exporteras de ena under de andra.
-* Du kan tvinga radmatningstecknen i celler: den här konfigurationen sparas i Excel. Mer information finns i [Definiera cellformat](../../reporting/using/creating-a-table.md#defining-cell-format).
+* Du kan tvinga radmatningstecknen i celler: den här konfigurationen sparas i Excel. Mer information om detta finns i [det här avsnittet](../../reporting/using/creating-a-table.md#defining-cell-format).
 
 ### Skjut upp exporten {#postpone-the-export}
 

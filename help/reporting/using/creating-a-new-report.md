@@ -2,11 +2,8 @@
 product: campaign
 title: Skapa en ny rapport
 description: Lär dig viktiga steg för att skapa en ny rapport
-audience: reporting
-content-type: reference
-topic-tags: creating-new-reports
 exl-id: 4c2aad47-0e2d-4d0b-8898-b437f4a05e11
-source-git-commit: bd9f035db1cbad883e1f27fe901e34dfbc9c1229
+source-git-commit: 81716a30a57d3ed8542b329d5fb9b0443fd4bf31
 workflow-type: tm+mt
 source-wordcount: '923'
 ht-degree: 1%
@@ -91,7 +88,7 @@ Du kan dock placera flera grenar. Endast en av dem kommer att köras:
 
 ## Skapa en sida {#creating-a-page}
 
-Innehållet konfigureras via aktiviteter som finns i diagrammet. Mer information finns i [Flyttar diagrammet](#modelizing-the-chart).
+Innehållet konfigureras via aktiviteter som finns i diagrammet. Mer information finns i [Modelize the chart](#modelizing-the-chart).
 
 Om du vill konfigurera en aktivitet dubbelklickar du på dess ikon.
 

@@ -2,13 +2,10 @@
 product: campaign
 title: Skapa indikatorer
 description: Skapa indikatorer
-audience: reporting
-content-type: reference
-topic-tags: designing-reports-with-cubes
 exl-id: e4806bb8-de9d-47e4-8b37-d6c0565b7f5a
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 81716a30a57d3ed8542b329d5fb9b0443fd4bf31
 workflow-type: tm+mt
-source-wordcount: '718'
+source-wordcount: '715'
 ht-degree: 2%
 
 ---
@@ -23,7 +20,7 @@ Så här skapar du en kub:
 
 1. Markera arbetsregistret. Se [Markera arbetsregistret](#selecting-the-work-table).
 1. Definiera dimensioner. Se [Definiera dimensioner](#defining-dimensions).
-1. Definiera mått. Se [Byggnadsindikatorer](#building-indicators).
+1. Definiera mått. Se [Byggindikatorer](#building-indicators).
 1. Skapa aggregat (valfritt). Se [Beräkna och använda aggregat](../../reporting/using/concepts-and-methodology.md#calculating-and-using-aggregates).
 
 I det här exemplet visas hur du snabbt skapar en enkel kub i en rapport för att exportera måtten.
@@ -92,7 +89,7 @@ Klicka på **[!UICONTROL Add]** för att skapa en ny dimension, sedan i **[!UICO
 
    Mer information finns i [Hantera behållare dynamiskt](../../reporting/using/concepts-and-methodology.md#dynamically-managing-bins).
 
-## Byggnadsindikatorer {#building-indicators}
+## Byggindikatorer {#building-indicators}
 
 När dimensionerna har definierats måste du ange ett beräkningssätt för de värden som ska visas i cellerna. Det gör du genom att skapa matchande indikatorer i **[!UICONTROL Measures]** tab: skapa så många mått som det finns kolumner att visa i rapporten som ska använda kuben.
 
@@ -131,7 +128,7 @@ Så här gör du:
 
    ![](assets/s_advuser_cube_wz_15.png)
 
-1. Du kan ändra dimensionens axlar, ta bort dem, lägga till nya mått osv. Möjliga åtgärder beskrivs här: [Använda kuber för att utforska data](../../reporting/using/using-cubes-to-explore-data.md).
+1. Du kan ändra dimensionens axlar, ta bort dem, lägga till nya mått osv. Möjliga åtgärder beskrivs i [den här sidan](../../reporting/using/using-cubes-to-explore-data.md).
 
    Använd lämpliga ikoner för att göra detta.
 

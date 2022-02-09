@@ -2,13 +2,10 @@
 product: campaign
 title: Rapporter om leveranser
 description: Rapporter om leveranser
-audience: reporting
-content-type: reference
-topic-tags: accessing-built-in-reports
 exl-id: dcbf280c-3040-4218-a453-1497662fef2e
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 81716a30a57d3ed8542b329d5fb9b0443fd4bf31
 workflow-type: tm+mt
-source-wordcount: '213'
+source-wordcount: '211'
 ht-degree: 5%
 
 ---
@@ -27,7 +24,6 @@ Följande typer av rapporter är tillgängliga:
 
 Du kommer åt rapporter från klientkonsolens hemsida, rapportkontrollpanelen eller leveranslistan. Visningsläget för en rapport beror på dess sammanhang. Listan med huvudrapporter är tillgänglig på startsidan och ger dig snabb åtkomst till leveransdata. Listan kan ändras efter dina behov. Se [det här avsnittet](../../reporting/using/about-reports-creation-in-campaign.md) för mer information.
 
-## Använda rapporter {#using-reports}
 
 Ett sökfält är tillgängligt via rapportkontrollpanelen för snabb åtkomst till en av rapporterna i listan.
 

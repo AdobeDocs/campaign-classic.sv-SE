@@ -1,23 +1,20 @@
 ---
 product: campaign
-title: Använda sammanhanget
-description: Använda sammanhanget
-audience: reporting
-content-type: reference
-topic-tags: creating-new-reports
+title: Använd kontexten i dina rapporter
+description: Lär dig hur du använder kontexten i dina rapporter
 exl-id: a19e2843-d3f9-48c3-af72-cc1bc54f6360
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 81716a30a57d3ed8542b329d5fb9b0443fd4bf31
 workflow-type: tm+mt
-source-wordcount: '485'
-ht-degree: 2%
+source-wordcount: '497'
+ht-degree: 0%
 
 ---
 
-# Använda sammanhanget{#using-the-context}
+# Använd kontexten i dina rapporter{#using-the-context}
 
 ![](../../assets/common.svg)
 
-När du vill representera data i form av **[!UICONTROL tables]** eller **[!UICONTROL charts]** kan den tas från två källor: en ny fråga (se [Definiera ett direktfilter på data](#defining-a-direct-filter-on-data)) eller rapportsammanhanget (se [Använda kontextdata](#using-context-data)).
+När du vill representera data i form av **[!UICONTROL tables]** eller **[!UICONTROL charts]** kan den tas från två källor: en ny fråga (se [Definiera ett direktfilter på data](#defining-a-direct-filter-on-data)) eller rapportsammanhanget (se [Använd kontextdata](#using-context-data)).
 
 ## Definiera ett direktfilter på data {#defining-a-direct-filter-on-data}
 
@@ -64,7 +61,7 @@ Endast mottagare som uppfyller filtervillkoren visas i rapporten.
 
 ![](assets/s_ncs_advuser_report_display_04.png)
 
-## Använda kontextdata {#using-context-data}
+## Använd kontextdata {#using-context-data}
 
 Representera data i form av en **[!UICONTROL table]** eller en **[!UICONTROL chart]** kan data hämtas från rapportkontexten.
 

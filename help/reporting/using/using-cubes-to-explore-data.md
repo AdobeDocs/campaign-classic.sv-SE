@@ -1,26 +1,23 @@
 ---
 product: campaign
-title: Använda kuber för att utforska data
-description: Använda kuber för att utforska data
-audience: reporting
-content-type: reference
-topic-tags: designing-reports-with-cubes
+title: Använd kuber för att utforska data
+description: Använd kuber för att utforska data
 exl-id: 32696bbf-1415-4214-837f-5437fdb8b4d4
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 81716a30a57d3ed8542b329d5fb9b0443fd4bf31
 workflow-type: tm+mt
 source-wordcount: '956'
 ht-degree: 2%
 
 ---
 
-# Använda kuber för att utforska data{#using-cubes-to-explore-data}
+# Använd kuber för att utforska data{#using-cubes-to-explore-data}
 
 ![](../../assets/common.svg)
 
 Marknadsföringsanalys gör det enklare att skapa rapporter och att identifiera och välja data från databasen via kuber. Detta gör att du kan:
 
 * Skapa rapporter baserade på kuber. Processen beskrivs här: [Utforska data i en rapport](#exploring-the-data-in-a-report).
-* Samla in data i databasen och gruppera dem i listor, t.ex. för att identifiera och bygga mål och leveranser. Mer information finns i [Bygga en målpopulation](#building-a-target-population).
+* Samla in data i databasen och gruppera dem i listor, t.ex. för att identifiera och bygga mål och leveranser. Mer information finns i [Skapa en målpopulation](#building-a-target-population).
 * Infoga en pivottabell i en rapport och referera till en befintlig kub i den. Mer information finns i [Infoga en pivottabell i en rapport](#inserting-a-pivot-table-into-a-report).
 
 >[!NOTE]
@@ -54,7 +51,7 @@ The **[!UICONTROL Add]** Med knapparna på varje axel kan du lägga till dimensi
 
    Parametrarna beror på datatypen för den valda dimensionen.
 
-   För datum kan till exempel flera nivåer vara tillgängliga. Mer information finns i [Visa mått](../../reporting/using/concepts-and-methodology.md#displaying-measures).
+   För datum kan till exempel flera nivåer vara tillgängliga. Mer information finns i [Visningsmått](../../reporting/using/concepts-and-methodology.md#displaying-measures).
 
    Följande alternativ erbjuds i det här fallet:
 
@@ -96,7 +93,7 @@ Som standard visas bara ett mått. Så här lägger du till eller konfigurerar m
 
    ![](assets/s_advuser_cube_in_report_config_02.png)
 
-   Du kan sedan välja om måttetiketter ska visas eller inte. Mer information finns i [Konfigurera visningen](../../reporting/using/concepts-and-methodology.md#configuring-the-display).
+   Du kan sedan välja om måttetiketter ska visas eller inte. Mer information finns i [Konfigurera skärmen](../../reporting/using/concepts-and-methodology.md#configuring-the-display).
 
 1. Det går att bygga nya mått med hjälp av befintliga. Det gör du genom att klicka **[!UICONTROL Create a measure]** och konfigurera det.
 
@@ -120,7 +117,7 @@ Som standard visas bara ett mått. Så här lägger du till eller konfigurerar m
 
    Klicka sedan på **[!UICONTROL Edit the dynamic measure]** för att öppna inställningsmenyn.
 
-## Bygga en målpopulation {#building-a-target-population}
+## Skapa en målpopulation {#building-a-target-population}
 
 Rapporter som byggs med kuber gör att du kan samla in data från tabellen och spara dem i en lista.
 

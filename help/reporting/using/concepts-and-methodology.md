@@ -1,15 +1,12 @@
 ---
 product: campaign
-title: Koncept och metodik
-description: Koncept och metodik
-audience: reporting
-content-type: reference
-topic-tags: designing-reports-with-cubes
+title: Bästa tillvägagångssätt för kuber
+description: Bästa tillvägagångssätt för kuber
 exl-id: 5f22fa2c-b648-4126-9a24-1798adfa8f34
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 81716a30a57d3ed8542b329d5fb9b0443fd4bf31
 workflow-type: tm+mt
-source-wordcount: '1491'
-ht-degree: 1%
+source-wordcount: '1493'
+ht-degree: 0%
 
 ---
 
@@ -78,7 +75,7 @@ Om du vill definiera intervall manuellt klickar du på **[!UICONTROL Add]** och 
 
 Ange sedan de nedre och övre gränserna och klicka på **[!UICONTROL Ok]** för att bekräfta.
 
-### Genererar behållare automatiskt {#generating-bins-automatically}
+### Generera behållare automatiskt {#generating-bins-automatically}
 
 Det går också att generera behållare automatiskt. Om du vill göra det klickar du på **[!UICONTROL Generate bins...]** länk.
 
@@ -182,12 +179,12 @@ Så här definierar du ett nytt mått:
 
 1. Ange måttets etikett och lägg till en beskrivning och klicka sedan på **[!UICONTROL Finish]** för att skapa den.
 
-## Visa mått {#displaying-measures}
+## Visningsmått {#displaying-measures}
 
 Du kan konfigurera visningen av mått i tabellen beroende på dina behov:
 
 * Mätenas visningssekvens (se [Visningssekvens](#display-sequence)),
-* den information som ska visas/döljas i rapporten (se [Konfigurera visningen](#configuring-the-display))
+* den information som ska visas/döljas i rapporten (se [Konfigurera skärmen](#configuring-the-display))
 * vilka mått som ska visas: procent, summa, antal decimaler osv. (se [Ändra vilken typ av mått som visas](#changing-the-type-of-measure-displayed)).
 
 ### Visningssekvens {#display-sequence}
@@ -198,7 +195,7 @@ Flytta runt linjerna för att ändra visningssekvensen. I följande exempel flyt
 
 ![](assets/s_advuser_cube_in_report_config_04.png)
 
-### Konfigurera visningen {#configuring-the-display}
+### Konfigurera skärmen {#configuring-the-display}
 
 Mätningarna, linjerna och kolumnerna kan konfigureras individuellt för varje mått eller totalt. En specifik ikon ger dig åtkomst till markeringsfönstret för visningsläge.
 
@@ -218,7 +215,7 @@ I varje mått kan du definiera vilken enhet och formatering som ska användas.
 
 ![](assets/s_advuser_cube_in_report_config_07.png)
 
-## Dela en rapport {#sharing-a-report}
+## Dela din rapport {#sharing-a-report}
 
 När rapporten har konfigurerats kan du spara den och dela den med andra operatorer.
 

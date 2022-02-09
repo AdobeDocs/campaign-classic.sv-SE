@@ -2,11 +2,8 @@
 product: campaign
 title: Definiera ett villkorligt innehåll
 description: Definiera ett villkorligt innehåll
-audience: reporting
-content-type: reference
-topic-tags: creating-new-reports
 exl-id: efee50f7-d917-4c71-add2-116c4b8f7013
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 81716a30a57d3ed8542b329d5fb9b0443fd4bf31
 workflow-type: tm+mt
 source-wordcount: '245'
 ht-degree: 8%
@@ -21,7 +18,7 @@ Du kan begränsa visningen av specifika rapportobjekt eller sidor.
 
 Om du vill göra vissa objekt villkorliga anpassar du deras synlighetsinställningar. Mer information finns i [Visning av villkorsobjekt](#conditioning-item-display).
 
-Om du vill göra visningen av en eller flera sidor villkorlig använder du en **[!UICONTROL Test]** typaktivitet. Mer information finns i [Villkorsstyrd sidvisning](#conditioning-page-display).
+Om du vill göra visningen av en eller flera sidor villkorlig använder du en **[!UICONTROL Test]** typaktivitet. Mer information finns i [Visning av villkorssida](#conditioning-page-display).
 
 ## Visning av villkorsobjekt {#conditioning-item-display}
 
@@ -35,7 +32,7 @@ I följande exempel beror visningsvillkoret på språket:
 
 ![](assets/reporting_display_condition.png)
 
-## Villkorsstyrd sidvisning {#conditioning-page-display}
+## Visning av villkorssida {#conditioning-page-display}
 
 I rapportens diagram **[!UICONTROL Test]** kan du ändra sidsekvensen beroende på ett eller flera villkor.
 

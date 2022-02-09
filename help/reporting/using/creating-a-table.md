@@ -2,11 +2,8 @@
 product: campaign
 title: Skapa en tabell
 description: Skapa en tabell
-audience: reporting
-content-type: reference
-topic-tags: creating-new-reports
 exl-id: 05f76bdf-6dcd-4360-9e72-0ba6a4dd0d5e
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 81716a30a57d3ed8542b329d5fb9b0443fd4bf31
 workflow-type: tm+mt
 source-wordcount: '2495'
 ht-degree: 1%
@@ -460,7 +457,7 @@ Om du klickar på länken för någon av dessa leveranser visas ett diagram med 
 
 ![](assets/s_advuser_report_listgroup_022.png)
 
-## Skapa en detaljtabell eller pivottabell {#creating-a-breakdown-or-pivot-table}
+## Skapa ett detaljerat register eller pivottabell {#creating-a-breakdown-or-pivot-table}
 
 Med den här tabelltypen kan du visa statistik som beräknas på data i databasen.
 

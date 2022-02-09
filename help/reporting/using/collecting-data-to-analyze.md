@@ -2,11 +2,8 @@
 product: campaign
 title: Samla in data som ska analyseras
 description: Samla in data som ska analyseras
-audience: reporting
-content-type: reference
-topic-tags: creating-new-reports
 exl-id: cf621374-88f9-4def-8bea-87e0ea69ecd3
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 81716a30a57d3ed8542b329d5fb9b0443fd4bf31
 workflow-type: tm+mt
 source-wordcount: '503'
 ht-degree: 3%
@@ -33,7 +30,7 @@ I samtliga fall samlas uppgifterna in via en **[!UICONTROL Query]** typaktivitet
 
 Det här datamarkeringsläget är relevant när data i rapporten behöver samlas in eller byggas med data i databasen. I vissa fall kan du även välja data direkt från elementen som används i rapporten. Du kan till exempel markera källdata direkt när du infogar ett diagram. Mer information finns i [Använda kontexten](../../reporting/using/using-the-context.md).
 
-## Använda data från ett schema {#using-the-data-from-a-schema}
+## Använd data från ett schema {#using-the-data-from-a-schema}
 
 Om du vill använda data som är länkade till ett databasschema väljer du lämpligt alternativ i frågeredigeraren och konfigurerar frågan som ska användas.
 
@@ -51,7 +48,7 @@ Om du vill göra det väljer du **[!UICONTROL Use an imported list]** i frågeru
 
 Klicka på **[!UICONTROL Edit query...]** länk för att definiera de uppgifter som ska samlas in bland elementen i denna lista för att skapa rapporten.
 
-## Använda en kub {#using-a-cube}
+## Använd en kub {#using-a-cube}
 
 Du kan välja en kub som definierar frågan.
 

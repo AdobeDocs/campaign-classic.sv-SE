@@ -2,13 +2,10 @@
 product: campaign
 title: Elementlayout
 description: Elementlayout
-audience: reporting
-content-type: reference
-topic-tags: creating-new-reports
 exl-id: 79d5c901-905b-4a0e-adb9-91fd6acb186f
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 81716a30a57d3ed8542b329d5fb9b0443fd4bf31
 workflow-type: tm+mt
-source-wordcount: '419'
+source-wordcount: '415'
 ht-degree: 1%
 
 ---
@@ -17,7 +14,7 @@ ht-degree: 1%
 
 ![](../../assets/common.svg)
 
-Förutom de olika diagram som beskrivs här: [Diagramtyper och varianter](../../reporting/using/creating-a-chart.md#chart-types-and-variants)kan du anpassa visningen och lägga till element på rapportsidorna.
+Förutom de olika diagrammen [här](../../reporting/using/creating-a-chart.md#chart-types-and-variants)kan du anpassa visningen och lägga till element på rapportsidorna.
 
 Du kan använda behållare: Med dessa kan du länka flera element på en sida och konfigurera deras layout i kolumner och/eller celler. Hur du använder dem beskrivs i [det här avsnittet](../../web/using/defining-web-forms-layout.md#creating-containers).
 

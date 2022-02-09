@@ -1,19 +1,16 @@
 ---
 product: campaign
-title: Bearbeta en rapport
-description: Bearbeta en rapport
-audience: reporting
-content-type: reference
-topic-tags: analyzing-populations
+title: Använd en analysrapport
+description: Använd en analysrapport
 exl-id: d133efec-33e1-4711-a90f-e40385059386
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 81716a30a57d3ed8542b329d5fb9b0443fd4bf31
 workflow-type: tm+mt
-source-wordcount: '814'
-ht-degree: 2%
+source-wordcount: '816'
+ht-degree: 1%
 
 ---
 
-# Använda en analysrapport{#processing-a-report}
+# Använd en analysrapport{#processing-a-report}
 
 ![](../../assets/common.svg)
 
@@ -23,7 +20,7 @@ Om du har rätt behörighet kan du spara en analysrapport som har skapats från 
 
 Spara rapporten genom att klicka på **[!UICONTROL Save]** och ge rapporten en etikett.
 
-Välj **[!UICONTROL Also save data]** om du vill skapa en historik över rapporten och se rapportens värden när du sparar den. Mer information finns i [Arkiveringsanalysrapporter](#archiving-analysis-reports).
+Välj **[!UICONTROL Also save data]** om du vill skapa en historik över rapporten och se rapportens värden när du sparar den. Mer information finns i [Arkivera analysrapporter](#archiving-analysis-reports).
 
 The **[!UICONTROL Share this report]** gör det möjligt för andra operatorer att komma åt rapporten.
 
@@ -125,7 +122,7 @@ Om du vill exportera data från en analysrapport klickar du på listrutan och v�
 
 Mer information finns på [den här sidan](../../reporting/using/actions-on-reports.md).
 
-## Återanvända befintliga rapporter och analyser {#re-using-existing-reports-and-analyses}
+## Återanvänd befintliga rapporter och analyser {#re-using-existing-reports-and-analyses}
 
 Du kan skapa beskrivande analysrapporter om data med hjälp av befintliga rapporter som redan lagrats i Adobe Campaign. Det här läget är möjligt när analyser har sparats eller när rapporter har skapats och konfigurerats för att nås via den beskrivande analysguiden.
 
@@ -138,7 +135,7 @@ Om du vill skapa beskrivande analysrapporter måste den beskrivande analysguiden
 
    ![](assets/s_ncs_user_report_wizard_01.png)
 
-## Arkiveringsanalysrapporter {#archiving-analysis-reports}
+## Arkivera analysrapporter {#archiving-analysis-reports}
 
 När du skapar en beskrivande analys baserad på en befintlig analys kan du skapa arkiv för att lagra data och jämföra rapportresultat.
 

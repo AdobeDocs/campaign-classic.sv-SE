@@ -1,25 +1,22 @@
 ---
 product: campaign
-title: Använda guiden för beskrivande analys
-description: Använda guiden för beskrivande analys
-audience: reporting
-content-type: reference
-topic-tags: analyzing-populations
+title: Använd guiden för beskrivande analys
+description: Använd guiden för beskrivande analys
 exl-id: 848d67c7-d1dc-4eba-bcb8-672e76d8ce87
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 81716a30a57d3ed8542b329d5fb9b0443fd4bf31
 workflow-type: tm+mt
 source-wordcount: '1558'
 ht-degree: 1%
 
 ---
 
-# Använda guiden för beskrivande analys{#using-the-descriptive-analysis-wizard}
+# Använd guiden för beskrivande analys{#using-the-descriptive-analysis-wizard}
 
 ![](../../assets/common.svg)
 
 Använd den dedikerade guiden för att skapa en beskrivande analysrapport. Konfigurationen beror på vilka data som ska analyseras och på önskad återgivning.
 
-## Analyserar data i databasen {#analyzing-data-in-the-database}
+## Analysera data i databasen {#analyzing-data-in-the-database}
 
 Den beskrivande analysguiden kan startas via **[!UICONTROL Tools > Descriptive analysis]** meny: i detta fall avser analysen mottagare som standard (**nms:mottagare**). Det gäller alla data i Adobe Campaign-databasen.
 
@@ -35,7 +32,7 @@ Om du vill producera statistik för en del av data kan du definiera ett filter: 
 
 Analysen gäller endast mottagare som är 16 år eller äldre och som bor i London.
 
-## Analysera en datauppsättning {#analyzing-a-set-of-data}
+## Analysera en uppsättning data {#analyzing-a-set-of-data}
 
 Du kan använda den beskrivande analysguiden i ett annat sammanhang: en lista, en arbetsflödesövergång, en eller flera leveranser, ett urval av mottagare osv.
 
@@ -57,7 +54,7 @@ Det är tillgängligt via flera noder i Adobe Campaign-trädet som pekar på mot
 
    ![](assets/reporting_descriptive_from_deliveries.png)
 
-   Här finns exempel på beskrivande analyser av leveranser: [Analysera en population](../../reporting/using/use-cases.md#analyzing-a-population) och här: [Analyserar loggar för mottagarspårning](../../reporting/using/use-cases.md#analyzing-recipient-tracking-logs).
+   Här finns exempel på beskrivande analyser av leveranser: [Analysera en population](../../reporting/using/use-cases.md#analyzing-a-population) och här: [Analysera loggar för mottagarspårning](../../reporting/using/use-cases.md#analyzing-recipient-tracking-logs).
 
 ## Konfigurera den kvalitativa distributionsmallen {#configuring-the-qualitative-distribution-template}
 

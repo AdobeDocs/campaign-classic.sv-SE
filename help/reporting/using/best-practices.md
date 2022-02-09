@@ -2,13 +2,11 @@
 product: campaign
 title: Bästa praxis för rapportering
 description: Bästa praxis för kampanjrapportering
-audience: reporting
-content-type: reference
-topic-tags: reporting-in-adobe-campaign
+feature: Reporting
 exl-id: 0c7f00f3-b16d-41c5-a7b1-f5a59201bf8c
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 81716a30a57d3ed8542b329d5fb9b0443fd4bf31
 workflow-type: tm+mt
-source-wordcount: '839'
+source-wordcount: '841'
 ht-degree: 0%
 
 ---
@@ -17,7 +15,7 @@ ht-degree: 0%
 
 ![](../../assets/common.svg)
 
-## Analysera behov{#analyzing-needs}
+## Analysera era behov{#analyzing-needs}
 
 Användningen av ett rapporteringsverktyg beror på mängden data som ska ändras, dess komplexitet och på vilken typ av rapportering som ska skapas.
 
@@ -62,7 +60,7 @@ Om du vill optimera framtagningen, användningen och varaktigheten av en rapport
 
    De problem som är kopplade till datavolymer och uppdateringar måste undersökas noggrant för att undvika problem med rapportvisningen, särskilt i fråga om tid. Därför rekommenderar vi att man skapar aggregat för att förberäkna vissa data utanför rapporten. Tabeller som innehåller spårnings- och leveransloggar kan innehålla miljontals poster: Detta innebär att data måste aggregeras via ett arbetsflöde för att användas i en rapport.
 
-## Optimera rapportskapande{#optimizing-report-creation}
+## Optimera rapportdesign{#optimizing-report-creation}
 
 ### Datavolym {#data-volume}
 
