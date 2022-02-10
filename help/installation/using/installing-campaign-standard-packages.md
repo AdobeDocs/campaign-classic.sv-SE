@@ -1,16 +1,16 @@
 ---
 product: campaign
-title: Installera inbyggda paket i Campaign Classic
+title: Installera inbyggda Campaign Classic-paket
 description: Lär dig hur du installerar inbyggda Campaign-paket
 exl-id: 2bc077c4-ed65-4157-bfc9-df5d0442f476
-source-git-commit: f05eefc9945c4ead89eb448b6e28c3523559e055
+source-git-commit: c54102b2ec32fbea89ce41dd3c9fedb98e612996
 workflow-type: tm+mt
 source-wordcount: '1254'
-ht-degree: 6%
+ht-degree: 5%
 
 ---
 
-# Installera inbyggda paket i Campaign Classic{#installing-campaign-standard-packages}
+# Installera inbyggda Campaign Classic-paket{#installing-campaign-standard-packages}
 
 ![](../../assets/v7-only.svg)
 

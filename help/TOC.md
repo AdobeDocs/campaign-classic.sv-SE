@@ -6,9 +6,9 @@ title: Användarhandbok för Campaign Classic v7
 user-guide-description: Med Adobe Campaign kan du använda omfattande kunddata för att skapa, samordna och leverera dynamiska kampanjer som kunderna verkligen vill ha – via e-post, mobiler, offlinekanaler med mera.
 sub-product: adobe campaign classic
 type: Documentation
-source-git-commit: 3b523e53440ba6ae107b597c7ebf226195126bde
+source-git-commit: c54102b2ec32fbea89ce41dd3c9fedb98e612996
 workflow-type: tm+mt
-source-wordcount: '2556'
+source-wordcount: '2555'
 ht-degree: 99%
 
 ---
@@ -374,7 +374,7 @@ ht-degree: 99%
       + [Konfigurera integreringen med [!DNL Adobe Target]](integrations/using/configuring-the-integration-with-adobe-target.md)
       + [Infoga en dynamisk bild](integrations/using/inserting-a-dynamic-image.md)
    + ACS-koppling {#acs-connector}
-      + [Principer och datacykel för [!DNL ACS Connector] ](integrations/using/acs-connector-principles-and-data-cycle.md)
+      + [Kom igång med [!DNL ACS Connector]](integrations/using/acs-connector-principles-and-data-cycle.md)
       + [Synkronisera profiler](integrations/using/synchronizing-profiles.md)
       + [Synkronisera målgrupper](integrations/using/synchronizing-audiences.md)
       + [Synkronisera webbapplikationer](integrations/using/synchronizing-web-applications.md)

@@ -1,14 +1,12 @@
 ---
 product: campaign
 title: Synkronisera webbapplikationer
-description: Synkronisera webbapplikationer
-audience: integrations
-content-type: reference
-topic-tags: acs-connector
+description: Lär dig hur du synkroniserar webbprogram med ACS Connector
+feature: ACS Connector
 exl-id: 975bdc94-5da4-45ae-a3bd-e8674b447098
-source-git-commit: 8b970705f0da6a9e09de9fadb3e1a8c5f4814f9f
+source-git-commit: c54102b2ec32fbea89ce41dd3c9fedb98e612996
 workflow-type: tm+mt
-source-wordcount: '794'
+source-wordcount: '801'
 ht-degree: 1%
 
 ---
@@ -82,11 +80,11 @@ Följ de här stegen i Campaign Standarden för att kontrollera att data har rep
 
    ![](assets/acs_connect_lp_10.png)
 
-## Designa och skicka e-postmeddelanden {#designing-and-sending-the-email}
+## Designa och skicka e-post {#designing-and-sending-the-email}
 
 I den här delen får vi se hur vi kan inkludera en länk, i ett e-postmeddelande med Campaign Standard, till landningssidan som replikeras från en Campaign v7-webbapplikation.
 
-Stegen för att skapa, utforma och skicka e-postmeddelanden är desamma som för klassiska e-postmeddelanden. Se [Adobe Campaign Standard](https://experienceleague.adobe.com/docs/campaign-standard.html?lang=sv) dokumentation.
+Stegen för att skapa, utforma och skicka e-postmeddelanden är desamma som för klassiska e-postmeddelanden. Se [Adobe Campaign Standard](https://experienceleague.adobe.com/docs/campaign-standard/using/campaign-standard-home.html?lang=sv) dokumentation.
 
 1. Skapa ett nytt e-postmeddelande och välj en eller flera replikerade profiler som målgrupp.
 1. Redigera innehållet och infoga en **[!UICONTROL Link to a landing page]**.

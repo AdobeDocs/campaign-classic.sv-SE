@@ -1,23 +1,19 @@
 ---
 product: campaign
-title: ACS Connector-principer och datasecykel
+title: Kom igång med ACS Connector
 description: ACS Connector-principer och datasecykel
-audience: integrations
-content-type: reference
-topic-tags: acs-connector
+feature: ACS Connector
 exl-id: 689b6117-5143-4f85-8582-2c74cae72ca2
-source-git-commit: f007dcbf63d7a69a6d532d0be99b0fa90f4f6d7a
+source-git-commit: c54102b2ec32fbea89ce41dd3c9fedb98e612996
 workflow-type: tm+mt
-source-wordcount: '1988'
+source-wordcount: '1985'
 ht-degree: 0%
 
 ---
 
-# ACS Connector-principer och datasecykel{#acs-connector-principles-and-data-cycle}
+# Kom igång med ACS Connector{#acs-connector-gs}
 
 ![](../../assets/v7-only.svg)
-
-## Introduktion {#introduction}
 
 ACS Connector bryggar Adobe Campaign v7 och Adobe Campaign Standard. Det är en integrerad funktion i Campaign v7 som automatiskt återger data till Campaign Standarden och kombinerar det bästa av båda programmen. Campaign v7 har avancerade verktyg för att hantera den primära marknadsföringsdatabasen. Datareplikeringen från Campaign v7 gör att Campaign Standarden kan utnyttja alla data i en användarvänlig miljö.
 
@@ -87,7 +83,7 @@ ACS Connector synkroniserar karantän mellan Campaign v7 och Campaign Standard.
 
 En profil som har replikerats från Campaign v7 till Campaign Standard innehåller till exempel en e-postadress. Om e-postadressen sätts i karantän som Campaign Standard skickas data till Campaign v7 under nästa synkronisering. Mer information om karantäner finns i [Karantänhantering](../../delivery/using/understanding-quarantine-management.md) och [Campaign Standard Quarantines](https://experienceleague.adobe.com/docs/campaign-standard/using/testing-and-sending/monitoring-messages/understanding-quarantine-management.html).
 
-### Använda replikerade profiler {#using-replicated-profiles}
+### Använd replikerade profiler {#using-replicated-profiles}
 
 Replikerade profiler kan användas av Campaign Standard och Campaign v7 för riktade arbetsflöden i marknadsföringskampanjer.
 
@@ -101,7 +97,7 @@ Replikerade profiler är tillgängliga för leveranser men har vissa begränsnin
 * **Profiler skapade i Campaign Standard**: ACS Connector replikerar mottagardata i en riktning, från Campaign v7 till Campaign Standard. Därför replikeras inte profiler som kommer från Campaign Standarden till Campaign v7.
 * **Grundläggande mottagardata för Campaign Standard**: ACS Connector replikerar mottagardata som är lämpliga för Campaign Standard. Det innehåller mottagarnas namn, adresser, e-postadresser, mobiltelefonnummer, hemtelefonnummer och annan relevant kontaktinformation. Om fler mottagarfält och anpassade måltabeller som finns i Campaign v7 är viktiga för ditt arbetsflöde, ska du kontakta din konsult.
 * **Importera profiler i karantän**: Listor med profiler som inte vill bli kontaktade kan importeras till Campaign v7 eller Campaign Standard som profiler i karantän. Statusen för profilerna ingår i karantänsynkroniseringen mellan programmen och används inte i leveranser.
-* **Avbeställ en tjänst i Campaign Standard**: Alternativet att avbryta prenumerationen på en leverans synkroniseras inte från Campaign Standard till Campaign v7. Du kan dock konfigurera en Campaign Standard som levereras för att dirigera dess avprenumerationslänk till Campaign v7. Profilen för en mottagare som klickar på länken för att avbryta prenumerationen uppdateras i Campaign v7 och data replikeras till Campaign Standarden. Se [Ändra avprenumerationslänken](../../integrations/using/synchronizing-profiles.md#changing-the-unsubscription-link).
+* **Avbeställ en tjänst i Campaign Standard**: Alternativet att avbryta prenumerationen på en leverans synkroniseras inte från Campaign Standard till Campaign v7. Du kan dock konfigurera en Campaign Standard som levereras för att dirigera dess avprenumerationslänk till Campaign v7. Profilen för en mottagare som klickar på länken för att avbryta prenumerationen uppdateras i Campaign v7 och data replikeras till Campaign Standarden. Se [Ändra länken för att avbryta prenumerationen](../../integrations/using/synchronizing-profiles.md#changing-the-unsubscription-link).
 * Endast e-postutsändningsloggar och spårningsloggar replikeras från Campaign Standard till Campaign v7.
 
 ### Fakturering {#billing}

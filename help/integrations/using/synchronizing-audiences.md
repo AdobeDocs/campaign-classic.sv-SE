@@ -1,19 +1,17 @@
 ---
 product: campaign
-title: Synkronisera publiker
-description: Synkronisera publiker
-audience: integrations
-content-type: reference
-topic-tags: acs-connector
+title: Synkronisera målgrupper
+description: Lär dig synkronisera målgrupper med ACS Connector
+feature: ACS Connector
 exl-id: 88e581cf-43cd-4c43-9347-d016c62fdf42
-source-git-commit: bd9f035db1cbad883e1f27fe901e34dfbc9c1229
+source-git-commit: c54102b2ec32fbea89ce41dd3c9fedb98e612996
 workflow-type: tm+mt
-source-wordcount: '1129'
+source-wordcount: '1135'
 ht-degree: 1%
 
 ---
 
-# Synkronisera publiker{#synchronizing-audiences}
+# Synkronisera målgrupper{#synchronizing-audiences}
 
 ![](../../assets/v7-only.svg)
 
