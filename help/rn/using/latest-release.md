@@ -6,9 +6,9 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: d65869ca-a785-4327-8e8d-791c28e4696c
-source-git-commit: 630a62c5e5c9782c5c55fdebd651493a2d68fc54
+source-git-commit: fc49c0ec80c8741b01ea150c3bc7362b73357607
 workflow-type: tm+mt
-source-wordcount: '1056'
+source-wordcount: '1035'
 ht-degree: 100%
 
 ---
@@ -27,7 +27,6 @@ _10 januari 2022_
 
 Flera säkerhetsförbättringar har gjorts i FDA-konton:
 
-* ODBC-drivrutiner installeras nu direkt hos tredje part från Adobe Campaign. Manuella steg krävs inte längre för att installera dessa drivrutiner.
 * När du konfigurerar ditt externa FDA-konto kan du nu logga in på ditt Snowflake-konto med autentisering via nyckelpar för förbättrad autentiseringssäkerhet. [Läs mer](../../installation/using/configure-fda-snowflake.md)
 * När du konfigurerar ett externt FDA-konto kan du nu logga in på ditt Azure Synapse Analytics-konto med hjälp av den systemtilldelade hanterade identiteten. [Läs mer](../../installation/using/configure-fda-synapse.md#azure-external)
 * Alla referenser till log4j-biblioteket har tagits bort från Campaign för att säkerställa optimal säkerhet.
