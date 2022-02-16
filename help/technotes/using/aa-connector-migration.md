@@ -3,10 +3,10 @@ product: campaign
 title: Migrera till Adobe Analytics Connector
 description: Campaign - Analytics Connector - frågor och svar
 exl-id: 5bf61654-3d68-4560-a93f-7a768a2c5be4
-source-git-commit: d11c918213e72fe4bf6adb464e516fac19b63d54
+source-git-commit: c072cb5b2d33f93ff395e4670507744b0d20c9bc
 workflow-type: tm+mt
-source-wordcount: '855'
-ht-degree: 4%
+source-wordcount: '814'
+ht-degree: 5%
 
 ---
 
@@ -27,8 +27,6 @@ Du **måste implementera** den nya integreringen av Adobe Analytics Connector p�
 ## Vad har ändrats?
 
 Nu finns det en ny integrering mellan Campaign Classic v7 och Adobe Analytics. Större förändringar visas nedan.
-
-* Integrationen mellan Adobe Campaign Classic- och Adobe Analytics-autentisering har flyttats från användare/lösenord till Adobe Identity Management-tjänst (IMS). Därför måste ni implementera Adobe IMS och ansluta till Campaign [via en Adobe ID](../../integrations/using/about-adobe-id.md)innan du startar implementeringen av Analytics Connector.
 
 * The **Kontaktdatum** Klassificeringen, som använder typen datum, har ersatts av Adobe Analytics. För migrerade integreringar förblir den fortfarande av samma typ. För alla **Kontaktdatum** som skapats av Campaign, typen kommer att **Sträng**.
 
@@ -87,7 +85,7 @@ Lösningen är att uppdatera **Produktprofil** i Analytics User Context of Techn
 ## Användbara länkar
 
 * [Uppgradera din miljö](../../production/using/build-upgrade.md)
-* [Vanliga frågor och svar om Builduppgradering](../../platform/using/faq-build-upgrade.md)
+* [Vanliga frågor och svar om builduppgradering](../../platform/using/faq-build-upgrade.md)
 * [Ladda ned Campaign Classic build](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html)
 * [Gör den nya klientkonsolen tillgänglig för användare](../../installation/using/client-console-availability-for-windows.md)
 * [Installera Campaign Client Console](../../installation/using/installing-the-client-console.md)

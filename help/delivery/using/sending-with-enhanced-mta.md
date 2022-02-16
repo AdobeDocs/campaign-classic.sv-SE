@@ -3,9 +3,9 @@ product: campaign
 title: Skicka med förbättrad MTA i Adobe Campaign Classic
 description: Läs mer om omfattningen av och egenskaperna hos utskick av e-post med Adobe Campaign Enhanced MTA
 exl-id: 58cc23f4-9ab0-45c7-9aa2-b08487ec7e91
-source-git-commit: 1e11b7419388698f5de366cbeddf2be88ef12873
+source-git-commit: 8ac6cddad04d1142b84a735ab8083e732c17714b
 workflow-type: tm+mt
-source-wordcount: '1921'
+source-wordcount: '1946'
 ht-degree: 3%
 
 ---
@@ -136,6 +136,10 @@ Dataflödesdiagrammet för Campaign Delivery visar inte längre dataflödet för
 
 Mer information om leveransflöde finns i [det här avsnittet](../../reporting/using/global-reports.md#delivery-throughput).
 
+>[!NOTE]
+>
+>Med [Tjänsten för e-postfeedback](#email-feedback-service) (EFS) (finns för närvarande som betaversion) visar genomströmningsdiagrammet för Campaign Delivery fortfarande genomströmningen för e-postmottagarna.
+
 ### Giltighetsperiod
 
 Inställningen för giltighetsperiod i kampanjleveranserna kommer endast att användas av den förbättrade MTA-metoden om den är inställd på **3,5 dagar eller mindre**. Om du definierar ett värde som är högre än 3,5 dagar i Campaign beaktas det inte.
@@ -179,7 +183,7 @@ Med funktionen för tjänsten för e-postfeedback (EFS) rapporteras status för 
 >
 >Om du är intresserad av att delta i betaprogrammet kan du [det här formuläret](https://forms.office.com/Pages/ResponsePage.aspx?id=Wht7-jR7h0OUrtLBeN7O4Rol2vQGupxItW9_BerXV6VUQTJPN1Q5WUI4OFNTWkYzQjg3WllUSDAxWi4u) så kommer vi tillbaka till dig.
 
-När leveransen har startat sker ingen förändring i **[!UICONTROL Success]** procent när meddelandet har skickats från Campaign till det förbättrade MTA-meddelandet.
+När leveransen har startat sker ingen förändring i **[!UICONTROL Success]** procent när meddelandet har skickats från Campaign till det förbättrade MTA-avtalet.
 
 <!--![](assets/efs-sending.png)-->
 

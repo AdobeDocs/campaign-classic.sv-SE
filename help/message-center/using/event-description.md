@@ -6,9 +6,9 @@ audience: message-center
 content-type: reference
 topic-tags: introduction
 exl-id: 9f7f4b6c-2ee8-4091-847d-f616d6abeb6b
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: c30d64e6930cb97f4a3c15acd97654d57d1bbf85
 workflow-type: tm+mt
-source-wordcount: '751'
+source-wordcount: '761'
 ht-degree: 0%
 
 ---
@@ -34,6 +34,8 @@ WSDL-sökvägen för åtkomst till båda metoderna är:
 
 * **http://hostname/nl/jsp/schemawsdl.jsp?schema=nms:rtEvent** för att komma åt typschemat i realtid.
 * **http://hostname/nl/jsp/schemawsdl.jsp?schema=nms:batchEvent** för att komma åt batchtypsschemat.
+
+Mer information om hur du skapar en WSDL-fil finns i [det här avsnittet](../../configuration/using/web-service-calls.md#web-service-description--wsdl).
 
 Båda metoderna innehåller en **`<urn:sessiontoken>`** -element för inloggning i transaktionsmeddelandemodulen. Vi rekommenderar att du använder en identifieringsmetod via betrodda IP-adresser. Om du vill hämta sessionstoken utför du ett SOAP-inloggningsanrop och sedan en get-token följt av en utloggning. Använd samma token för flera RT-anrop. Exemplen i det här avsnittet använder sessionstokenmetoden som rekommenderas.
 
