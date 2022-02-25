@@ -7,9 +7,9 @@ role: User
 level: Beginner
 exl-id: 0cd6bf20-da72-4cf0-9f5d-d4e8acdd324d
 source-git-commit: 81716a30a57d3ed8542b329d5fb9b0443fd4bf31
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2543'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -277,7 +277,7 @@ Om du är intresserad av att delta i den här privata betaversionen ska du fylla
 * Korrigerade ett problem som gjorde att vissa tecken i källkoden ändrades när ett webbprogram, som hade skapats och sparats tidigare, öppnades igen. (NEO-27597)
 * Korrigerade ett problem som kunde inträffa vid uppgradering till en ny version som innehöll den nya signaturfunktionen för spårning av länkar (från version 19.1.4 och Campaign 20.2): när flera mallar var kopplade till en händelse kunde en uppgradering göra att fel mall valdes när transaktionsmeddelandet skickades. (NEO-28326)
 * Korrigerade ett problem som gjorde att MTA inte svarade och inte kunde bearbeta leveranser om den inte startades om. (NEO-27455)
-* Korrigerade ett problem med MSSQL-databasen relaterat till tidszonshantering under massinläsningsåtgärder för en datetime-typkolumn. (NEO-27375)
+* Korrigerade ett problem med MSSQL-databasen relaterat till tidszonshantering under massöverföringsåtgärder för en kolumn av typ datum/tid. (NEO-27375)
 * Korrigerade ett problem med arbetsflödesfrågor när xkt-funktioner i Redshift användes. SubDays, SubSeconds, SubMinutes och SubHours accepterar nu båda typerna av tidstämplar i Redshift (NEO-24962).
 * Korrigerade ett problem som visade ett skriptfelmeddelande när en rapport med anonym åtkomst skulle förhandsgranskas. (NEO-27081)
 * Korrigerade ett problem som kunde minska minnesanvändningen på servern vid leveransanalys.
