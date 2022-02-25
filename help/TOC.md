@@ -7,9 +7,9 @@ user-guide-description: Med Adobe Campaign kan du använda omfattande kunddata f
 sub-product: adobe campaign classic
 type: Documentation
 source-git-commit: c54102b2ec32fbea89ce41dd3c9fedb98e612996
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2555'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
