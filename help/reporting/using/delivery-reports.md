@@ -4,9 +4,9 @@ title: Leveransrapporter
 description: Leveransrapporter
 feature: Reporting
 exl-id: 74feb13f-0994-4a6a-ae4f-2538b07cc9c0
-source-git-commit: 81716a30a57d3ed8542b329d5fb9b0443fd4bf31
+source-git-commit: 64d97c7879320296a5f8efc5bb5bc2bea8663c08
 workflow-type: tm+mt
-source-wordcount: '1443'
+source-wordcount: '1451'
 ht-degree: 2%
 
 ---
@@ -63,7 +63,7 @@ I den här rapporten kombineras de viktigaste indikatorerna för att spåra mott
 >
 >De relaterade procentsatserna beräknas baserat på antalet meddelanden som har vidarebefordrats.
 
-* **[!UICONTROL Distinct opens for the population reached]** : Uppskattning av antalet målmottagare som har öppnat ett meddelande minst en gång. Klicka på länkar för att ta bort prenumerationen och spegelsidor beaktas.
+* **[!UICONTROL Distinct opens for the population reached]** : Uppskattning av antalet målmottagare som har öppnat ett meddelande minst en gång. Klickningar på spårade URL:er beaktas eftersom e-postmeddelanden måste öppnas för att du ska kunna klicka på en länk.
 * **[!UICONTROL Sum of opens for the population reached]** : Uppskattning av det totala antalet öppningar av målmottagare.
 * **[!UICONTROL Clicks on opt-out link]** : Antal klick på länken för att avbryta prenumerationen.
 * **[!UICONTROL Clicks on the mirror page link]** : Antal klick på länken till spegelsidan. För att länken ska kunna beaktas måste den definieras som sådan i leveransguiden (spårade URL:er). Se detta [page](../../delivery/using/about-delivery-monitoring.md).

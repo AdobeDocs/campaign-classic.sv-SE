@@ -5,10 +5,10 @@ description: Kom igång med Adobe Experience Cloud Triggers
 audience: integrations
 content-type: reference
 exl-id: 0e337620-a49f-4e14-8c67-9279d74736f1
-source-git-commit: af40fe822c69979a478604595790d4deefd6d5b0
+source-git-commit: 0a59b0dbdbe70cf8993ce7153b8f3c049c1f1108
 workflow-type: tm+mt
-source-wordcount: '228'
-ht-degree: 16%
+source-wordcount: '235'
+ht-degree: 8%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 16%
 
 >[!CAUTION]
 >
->Den här funktionen är inte tillgänglig som en del av produkten. För implementering krävs att Adobe Consulting används. Kontakta din Adobe-representant för mer information
+>Den här funktionen är inte tillgänglig som en del av produkten. För den här implementeringen måste du först öppna en biljett med Adobe Support. Du kan sedan följa de steg som beskrivs här [page](../../integrations/using/configuring-pipeline.md#prerequisites).
 
 [!DNL Triggers] köra marknadsföringsåtgärder inom ett kort tidsintervall efter en användares åtgärd. Den typiska svarstiden är mindre än en timme.
 
