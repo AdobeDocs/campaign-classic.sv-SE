@@ -6,10 +6,10 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: d65869ca-a785-4327-8e8d-791c28e4696c
-source-git-commit: fc49c0ec80c8741b01ea150c3bc7362b73357607
-workflow-type: ht
-source-wordcount: '1035'
-ht-degree: 100%
+source-git-commit: 8278228a6610e99f9400343bc967e16f2759dfbe
+workflow-type: tm+mt
+source-wordcount: '1257'
+ht-degree: 83%
 
 ---
 
@@ -18,6 +18,24 @@ ht-degree: 100%
 ![](../../assets/v7-only.svg)
 
 Den här sidan listar nya funktioner, förbättringar och korrigeringar som kommer med den **senaste versionen av Campaign Classic v7**. Varje ny version kommer med en status som visas med en färg. Läs mer om versionsstatusen för Campaign Classic v7 på [den här sidan](rn-overview.md).
+
+## ![](assets/do-not-localize/green_2.png) Version 7.2.2 – build 4349 {#release-7-2-2}
+
+_1 mars 2022_
+
+**Felkorrigeringar**
+
+* Ett problem som uppstod när **Web Analytics** externt konto, vilket gjorde att integreringsstatusen alltid visade &quot;Integreringen lyckades&quot; även när fel uppstod. (NEO-36672)
+* Korrigerade flera efteruppgraderingsfel relaterade till sekvens-ID-mekanismen när det fanns negativa ID:n. (NEO-43205, NEO-42846 och NEO-42845)
+* Ett problem som uppstod när **Web Analytics** externt konto med återkommande och kontinuerliga leveranser, vilket medförde att data från det externa kontot delvis förlorades. (NEO-38548)
+* Korrigerade ett fel som gjorde efteruppgraderingen långsammare när NmsActiveContact-tabellen uppdaterades. (NEO-43206)
+* Korrigerade ett fel efter uppgraderingen som uppstod om mappar som inte är installerade hade flyttats från **Administration** till en annan plats. (NEO-42875)
+* Ett problem när ett **Uppdatera data** arbetsflödesaktivitet som kan förhindra att mottagarschemat uppdateras med mottagardata från en extern Google Cloud-databas. (NEO-42343)
+* Ett problem som rör Adobe Analytics-anslutningen har korrigerats under efteruppgraderingen. (NEO-43318, NEO-38136)
+* Korrigerade ett överskrivet CUID med VALUE_TO_CHANGE-problem under efteruppgraderingen. (NEO-43267)
+* Korrigerade ett problem som ledde till fel vid synkronisering av instanser för medelkällning och marknadsföring i en flermittskonfiguration. (NEO-10432)
+* Korrigerade ett problem som orsakade ett fel när leveransarbetsflödet uppdaterades när fler än 1 000 utsändningar fanns samtidigt. (NEO-40276)
+* Ett problem som gjorde att leveransindikatorerna för öppna och klickfrekvens inte kunde uppdateras automatiskt har åtgärdats. (NEO-43253)
 
 ## ![](assets/do-not-localize/green_2.png) Version 7.2.1 – build 9346 {#release-7-2-1}
 
