@@ -1,9 +1,10 @@
 ---
 product: campaign
 title: Skapa ett målinriktat arbetsflöde
-description: Lär dig hur du utför A/B-testning via ett dedikerat användningsfall.
+description: Lär dig hur du utför A/B-testning via ett dedikerat användningsfall
+feature: A/B Testing
 exl-id: aa21fa33-aef9-484a-b454-0cd5a6868a98
-source-git-commit: 90c52ec144a6a3c1b534a80507e38fa3ed64fc83
+source-git-commit: 9839dbacda475c2a586811e3c4f686b1b1baab05
 workflow-type: tm+mt
 source-wordcount: '133'
 ht-degree: 10%

@@ -2,13 +2,11 @@
 product: campaign
 title: God praxis för arbetsflöden
 description: Lär dig mer om arbetsflöden för kampanjer
-audience: workflow
-content-type: reference
-topic-tags: -general-operation
+feature: Workflows
 exl-id: 39c57f61-2629-4214-91e4-cb97dc039deb
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 9126e2cc088ef0e5761cc20bd19980d323f3a3ea
 workflow-type: tm+mt
-source-wordcount: '1612'
+source-wordcount: '1687'
 ht-degree: 6%
 
 ---
@@ -56,9 +54,9 @@ Mer information om hur du tömmer dina loggar finns i [dokumentation](starting-a
 
 ### Arbetsflödeskörning {#workflow-execution}
 
-Det är en god vana att inte schemalägga ett arbetsflöde så att det körs mer än var 15:e minut eftersom det kan påverka den totala systemprestandan och skapa block i databasen.
+**Schemalägg inte ett arbetsflöde så att det körs mer än var 15:e minut** eftersom det kan påverka systemets prestanda negativt och skapa block i databasen.
 
-Undvik att lämna arbetsflödena i pausat läge. Om du skapar ett tillfälligt arbetsflöde måste du se till att det kan slutföras korrekt och inte stanna i en **[!UICONTROL paused]** tillstånd. Om den pausas innebär det att du måste behålla de temporära tabellerna och på så sätt öka storleken på databasen. Tilldela arbetsflödesgranskare under Arbetsflödesegenskaper för att skicka en avisering när ett arbetsflöde misslyckas eller pausas av systemet.
+**Undvik att lämna arbetsflödena i pausat läge**. Om du skapar ett tillfälligt arbetsflöde måste du se till att det kan slutföras korrekt och inte stanna i en **[!UICONTROL paused]** tillstånd. Om den pausas innebär det att du måste behålla de temporära tabellerna och på så sätt öka storleken på databasen. Tilldela arbetsflödesgranskare under Arbetsflödesegenskaper för att skicka en avisering när ett arbetsflöde misslyckas eller pausas av systemet.
 
 Så här undviker du att arbetsflöden är i pausat läge:
 
@@ -66,9 +64,11 @@ Så här undviker du att arbetsflöden är i pausat läge:
 * Håll arbetsflödena så enkla som möjligt, t.ex. genom att dela upp stora arbetsflöden i flera olika arbetsflöden. Du kan använda **[!UICONTROL External signal]** aktiviteter utlöser sin körning baserat på andra arbetsflödenas körning.
 * Undvik inaktiverade aktiviteter med arbetsflöden som lämnar trådar öppna och leder till många tillfälliga tabeller som kan ta mycket plats. Behåll inte aktiviteter i **[!UICONTROL Do not enable]** eller **[!UICONTROL Enable but do not execute]** lägen i dina arbetsflöden.
 
-Stoppa även oanvända arbetsflöden. Arbetsflöden som fortsätter att köras behåller anslutningar till databasen.
+**Stoppa oanvända arbetsflöden**. Arbetsflöden som fortsätter att köras behåller anslutningar till databasen.
 
-Använd endast ovillkorlig stop i de sällsynta fallen. Använd inte den här åtgärden regelbundet. Utan att utföra en ren stängning av anslutningar som genereras av arbetsflöden till databasen påverkar prestanda.
+**Använd endast ovillkorlig stop i de sällsynta fallen**. Använd inte den här åtgärden regelbundet. Utan att utföra en ren stängning av anslutningar som genereras av arbetsflöden till databasen påverkar prestanda.
+
+**Utför inte flera stoppbegäranden i samma arbetsflöde**. Att stoppa ett arbetsflöde är en asynkron process: Begäran registreras och arbetsflödesservern eller servrarna avbryter pågående åtgärder. Det kan därför ta tid att stoppa en arbetsflödesinstans, särskilt om arbetsflödet körs på flera servrar, där var och en måste ta kontroll för att avbryta de pågående åtgärderna. Om du vill undvika problem väntar du tills stoppåtgärden har slutförts och undviker att stoppa ett arbetsflöde flera gånger.
 
 ### Kör i motoralternativet {#execute-in-the-engine-option}
 

@@ -2,10 +2,11 @@
 product: campaign
 title: Starta ett arbetsflöde
 description: Lär dig hur du startar ett arbetsflöde och identifierar arbetsflöden, verktygsfältet och högerklicksmenyn
+feature: Workflows
 exl-id: d345ba62-c2fb-43df-a2a1-e9e4292d301a
-source-git-commit: 3b523e53440ba6ae107b597c7ebf226195126bde
+source-git-commit: 9126e2cc088ef0e5761cc20bd19980d323f3a3ea
 workflow-type: tm+mt
-source-wordcount: '772'
+source-wordcount: '797'
 ht-degree: 2%
 
 ---
@@ -46,7 +47,9 @@ Verktygsfältsknapparna beskrivs här [section](../../campaign/using/marketing-c
 
    Den här åtgärden stoppar ett arbetsflöde som körs. Status för instansen är inställd på **Slutförd**. Pågående åtgärder stoppas om det är möjligt. Import och SQL-frågor avbryts omedelbart.
 
-   Stoppning är en asynkron process. Begäran registreras och arbetsflödesservern eller servrarna avbryter pågående åtgärder. Det kan därför ta tid att stoppa en arbetsflödesinstans, särskilt om arbetsflödet körs på flera servrar, där var och en måste ta kontroll för att avbryta de pågående åtgärderna.
+   >[!IMPORTANT]
+   >
+   >Att stoppa ett arbetsflöde är en asynkron process: Begäran registreras och arbetsflödesservern eller servrarna avbryter pågående åtgärder. Det kan därför ta tid att stoppa en arbetsflödesinstans, särskilt om arbetsflödet körs på flera servrar, där var och en måste ta kontroll för att avbryta de pågående åtgärderna. Du kan undvika problem genom att vänta tills stoppåtgärden har slutförts och inte utföra flera stoppbegäranden i samma arbetsflöde.
 
 * **[!UICONTROL Restart]**
 

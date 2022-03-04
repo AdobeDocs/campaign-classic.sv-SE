@@ -2,8 +2,9 @@
 product: campaign
 title: Skicka e-post till japanska mobiler med Adobe Campaign Classic
 description: Lär dig hur du konfigurerar, utformar och skickar e-postmeddelanden som ska läsas på japanska mobiler
+feature: Email, Email Design
 exl-id: 44634227-2340-49c4-b330-740c739ea551
-source-git-commit: 1e11b7419388698f5de366cbeddf2be88ef12873
+source-git-commit: 9839dbacda475c2a586811e3c4f686b1b1baab05
 workflow-type: tm+mt
 source-wordcount: '759'
 ht-degree: 0%

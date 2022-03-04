@@ -1,19 +1,17 @@
 ---
 product: campaign
-title: Definiera ett webbformulärs layout
-description: Definiera ett webbformulärs layout
-audience: web
-content-type: reference
-topic-tags: web-forms
+title: Definiera layout hos webbformulär
+description: Definiera layout hos webbformulär
+feature: Web Forms
 exl-id: 23ca17f8-de1a-4f9c-8357-3965dc3329b1
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: b6f1556cf49492cefaf61c29a058584b0ccee16a
 workflow-type: tm+mt
 source-wordcount: '523'
 ht-degree: 2%
 
 ---
 
-# Definiera ett webbformulärs layout{#defining-web-forms-layout}
+# Definiera layout hos webbformulär{#defining-web-forms-layout}
 
 ![](../../assets/common.svg)
 

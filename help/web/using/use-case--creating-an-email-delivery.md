@@ -1,12 +1,10 @@
 ---
 product: campaign
-title: Användningsfall - skapa e-postleverans
-description: Skapa ett användningsfall för e-postleverans
-audience: web
-content-type: reference
-topic-tags: editing-html-content
+title: Använd fall - skapa e-postleverans
+description: Använd fall - skapa e-postleverans
+feature: Web Apps, Web Forms, Landing Pages
 exl-id: e2679f12-459b-466d-9c82-60a28363b104
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: b6f1556cf49492cefaf61c29a058584b0ccee16a
 workflow-type: tm+mt
 source-wordcount: '734'
 ht-degree: 0%

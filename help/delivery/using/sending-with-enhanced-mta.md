@@ -1,9 +1,10 @@
 ---
 product: campaign
-title: Skicka med förbättrad MTA i Adobe Campaign Classic
+title: S med förbättrad MTA i Adobe Campaign Classic
 description: Läs mer om omfattningen av och egenskaperna hos utskick av e-post med Adobe Campaign Enhanced MTA
+feature: Email
 exl-id: 58cc23f4-9ab0-45c7-9aa2-b08487ec7e91
-source-git-commit: 8ac6cddad04d1142b84a735ab8083e732c17714b
+source-git-commit: 9839dbacda475c2a586811e3c4f686b1b1baab05
 workflow-type: tm+mt
 source-wordcount: '1946'
 ht-degree: 3%
@@ -183,7 +184,7 @@ Med funktionen för tjänsten för e-postfeedback (EFS) rapporteras status för 
 >
 >Om du är intresserad av att delta i betaprogrammet kan du [det här formuläret](https://forms.office.com/Pages/ResponsePage.aspx?id=Wht7-jR7h0OUrtLBeN7O4Rol2vQGupxItW9_BerXV6VUQTJPN1Q5WUI4OFNTWkYzQjg3WllUSDAxWi4u) så kommer vi tillbaka till dig.
 
-När leveransen har startat sker ingen förändring i **[!UICONTROL Success]** procent när meddelandet har skickats från Campaign till det förbättrade MTA-avtalet.
+När leveransen har startat sker ingen förändring i **[!UICONTROL Success]** procent när meddelandet har skickats från Campaign till det förbättrade MTA-meddelandet.
 
 <!--![](assets/efs-sending.png)-->
 

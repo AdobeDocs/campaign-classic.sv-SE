@@ -1,10 +1,10 @@
 ---
 product: campaign
-title: Övervaka leveransen i Adobe Campaign Classic
+title: Skärmleverans i Adobe Campaign Classic
 description: Läs om verktyg och riktlinjer för leveransövervakning i Adobe Campaign Classic.
 feature: Deliverability
 exl-id: e4caa316-242f-46cd-a20b-a5eee5a0c456
-source-git-commit: 56459b188ee966cdb578c415fcdfa485dcbed355
+source-git-commit: 9839dbacda475c2a586811e3c4f686b1b1baab05
 workflow-type: tm+mt
 source-wordcount: '533'
 ht-degree: 1%

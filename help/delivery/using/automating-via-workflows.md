@@ -2,8 +2,9 @@
 product: campaign
 title: Automatisera via arbetsflöden
 description: Lär dig automatisera innehållshantering via arbetsflöden
+feature: Workflows
 exl-id: bc6ebf5d-cc21-4750-9713-2bf259e7d6bf
-source-git-commit: f05eefc9945c4ead89eb448b6e28c3523559e055
+source-git-commit: 9839dbacda475c2a586811e3c4f686b1b1baab05
 workflow-type: tm+mt
 source-wordcount: '1190'
 ht-degree: 0%

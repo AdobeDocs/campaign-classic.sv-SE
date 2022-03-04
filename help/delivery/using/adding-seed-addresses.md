@@ -1,12 +1,10 @@
 ---
 product: campaign
-title: Lägga till fröadresser
-description: Lägga till fröadresser
-audience: delivery
-content-type: reference
-topic-tags: using-seed-addresses
+title: Lägg till dirigerade adresser
+description: Lägg till dirigerade adresser
+feature: Seed Address
 exl-id: ae6eb4b0-b419-4661-9d63-e758f0242a0f
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 9839dbacda475c2a586811e3c4f686b1b1baab05
 workflow-type: tm+mt
 source-wordcount: '327'
 ht-degree: 5%

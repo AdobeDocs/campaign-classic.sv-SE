@@ -1,12 +1,10 @@
 ---
 product: campaign
 title: Läslista
-description: Learn more about the Read list workflow activity
-audience: workflow
-content-type: reference
-topic-tags: targeting-activities
+description: Läs mer om arbetsflödesaktiviteten Läs lista
+feature: Workflows, Targeting Activity
 exl-id: 99f82e91-45cd-4dff-b8a4-3ad87f2f9639
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: b94c4bfd478b4a8fbcefe6341608dd6a14bb31d3
 workflow-type: tm+mt
 source-wordcount: '488'
 ht-degree: 0%
@@ -19,9 +17,9 @@ ht-degree: 0%
 
 Data som bearbetas i ett arbetsflöde kan komma från listor där data har förberetts eller strukturerats i förväg (efter en tidigare segmentering eller filöverföring).
 
-The **[!UICONTROL Read list]** Med -aktivitet kan du kopiera data från en lista i arbetsflödets arbetstabell, som data från en fråga. It is then accessible throughout the workflow.
+The **[!UICONTROL Read list]** Med -aktivitet kan du kopiera data från en lista i arbetsflödets arbetstabell, som data från en fråga. Den är sedan tillgänglig i hela arbetsflödet.
 
-The list to be processed can be specified explicitly, computed by a script or localized dynamically, according to options selected and parameters defined in a **[!UICONTROL Read list]** activity.
+Listan som ska bearbetas kan anges explicit, beräknas av ett skript eller lokaliseras dynamiskt enligt valda alternativ och parametrar definierade i en **[!UICONTROL Read list]** aktivitet.
 
 ![](assets/list_edit_select_option_01.png)
 
@@ -39,13 +37,13 @@ När listmarkeringen har konfigurerats kan du lägga till ett filter med **[!UIC
 
 Listorna kan skapas direkt i Adobe Campaign via **[!UICONTROL Profiles and Targets > Lists]** startsidans länk. De kan också skapas i ett arbetsflöde med **[!UICONTROL List update]** aktivitet.
 
-**Example: Exclude a list of send addresses**
+**Exempel: Uteslut en lista med sändningsadresser**
 
 I följande exempel kan du använda en lista med e-postadresser som ska uteslutas från e-postleveransmålet.
 
 ![](assets/s_advuser_list_read_sample_1.png)
 
-Profilerna i **Nya kontakter** -mappen måste ha en leveransåtgärd som mål. De e-postadresser som ska uteslutas från målet lagras i en extern lista. In our example, only the information on email addresses is required for exclusion.
+Profilerna i **Nya kontakter** -mappen måste ha en leveransåtgärd som mål. De e-postadresser som ska uteslutas från målet lagras i en extern lista. I vårt exempel krävs bara information om e-postadresser för att uteslutas.
 
 1. The **Nya kontakter** Mappvalsfrågan måste göra det möjligt att läsa in de valda profilernas e-postadresser för att kunna justera dem mot informationen i listan.
 
@@ -55,7 +53,7 @@ Profilerna i **Nya kontakter** -mappen måste ha en leveransåtgärd som mål. D
 
    ![](assets/s_advuser_list_read_sample_2.png)
 
-1. Om du vill utesluta e-postadresserna för den externa listan från huvudmålet måste du konfigurera undantagsaktiviteten och ange att **Nya kontakter** mappen innehåller de data som ska sparas. The joint data between this set and any other inbound set from the exclusion activity will be deleted from the target.
+1. Om du vill utesluta e-postadresserna för den externa listan från huvudmålet måste du konfigurera undantagsaktiviteten och ange att **Nya kontakter** mappen innehåller de data som ska sparas. Kopplingsdata mellan den här uppsättningen och andra inkommande uppsättningar från exkluderingsaktiviteten tas bort från målet.
 
    ![](assets/s_advuser_list_read_sample_3.png)
 
@@ -69,4 +67,4 @@ Profilerna i **Nya kontakter** -mappen måste ha en leveransåtgärd som mål. D
 
    ![](assets/s_advuser_list_read_sample_4.png)
 
-1. Then select the field corresponding to the email address in the two sets (Source and Destination). Kolumnerna länkas sedan och de mottagare vars e-postadress finns i listan över importerade adresser exkluderas från målet.
+1. Markera sedan fältet som motsvarar e-postadressen i de två uppsättningarna (Källa och Mål). Kolumnerna länkas sedan och de mottagare vars e-postadress finns i listan över importerade adresser exkluderas från målet.

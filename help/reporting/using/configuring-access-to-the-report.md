@@ -2,8 +2,9 @@
 product: campaign
 title: Konfigurera åtkomst till rapporten
 description: Konfigurera åtkomst till rapporten
+feature: Reporting
 exl-id: 1e5ab922-481c-4dce-a05e-a58408002e24
-source-git-commit: 81716a30a57d3ed8542b329d5fb9b0443fd4bf31
+source-git-commit: 36e546a34d8c2345fefed5d459095a76c6224a38
 workflow-type: tm+mt
 source-wordcount: '754'
 ht-degree: 1%

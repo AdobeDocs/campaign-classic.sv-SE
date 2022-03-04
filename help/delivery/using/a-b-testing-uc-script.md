@@ -2,8 +2,9 @@
 product: campaign
 title: Skapa skriptet
 description: Lär dig hur du utför A/B-testning via ett dedikerat användningsfall
+feature: A/B Testing
 exl-id: 4143d1b7-0e2b-4672-ad57-e4d7f8fea028
-source-git-commit: 90c52ec144a6a3c1b534a80507e38fa3ed64fc83
+source-git-commit: 9839dbacda475c2a586811e3c4f686b1b1baab05
 workflow-type: tm+mt
 source-wordcount: '330'
 ht-degree: 4%

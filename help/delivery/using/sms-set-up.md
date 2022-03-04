@@ -2,8 +2,9 @@
 product: campaign
 title: Konfigurera kampanj-SMS-kanal
 description: Lär dig konfigurera SMS-kanalen i Campaign
+feature: SMS
 exl-id: a2783a5e-6d38-41a1-b5c6-24ab489116f8
-source-git-commit: 1e11b7419388698f5de366cbeddf2be88ef12873
+source-git-commit: 9839dbacda475c2a586811e3c4f686b1b1baab05
 workflow-type: tm+mt
 source-wordcount: '1696'
 ht-degree: 35%
@@ -33,8 +34,8 @@ Mer information om SMS-protokoll och inställningar finns i [page](sms-protocol.
 
 Följ stegen nedan för att göra detta:
 
-1. In the **[!UICONTROL Platform]** > **[!UICONTROL External accounts]** node of the tree, click the **[!UICONTROL New]** icon.
-1. Define the account type as **Routing**, the channel as **Mobile (SMS)**, and the delivery mode as **Bulk delivery**.
+1. I **[!UICONTROL Platform]** > **[!UICONTROL External accounts]** trädnod, klicka på **[!UICONTROL New]** ikon.
+1. Definiera kontotypen som **Routning**, kanalen som **Mobil (SMS)** och leveranssättet som **Massleverans**.
 
    ![](assets/extended_smpp_create_account.png)
 
@@ -324,7 +325,7 @@ När en prenumerant svarar på ett SMS-meddelande som skickades till dem via Ado
 
 För varje nyckelord anger du en kort kod, vilket är ett nummer som vanligtvis används för att skicka leveranser och som fungerar som avsändarnamn, och anger sedan meddelandet som ska skickas till prenumeranten.
 
-You can also link an action to your automatic response: **[!UICONTROL Send to quarantine]** or **[!UICONTROL Remove from quarantine]**. For example, if a recipient sends the keyword &quot;STOP&quot;, they will automatically receive an unsubscription confirmation and are sent to quarantine.
+Du kan även länka en åtgärd till ditt automatiska svar: **[!UICONTROL Send to quarantine]** eller **[!UICONTROL Remove from quarantine]**. Om en mottagare t.ex. skickar nyckelordet &quot;STOP&quot; får han/hon automatiskt en bekräftelse på att han/hon inte längre är prenumererad och skickas till karantän.
 
 ![](assets/extended_smpp_reply.png)
 
@@ -348,13 +349,13 @@ Stegen för att konfigurera ett externt konto med den utökade allmänna SMPP-an
 
 ## Ändra leveransmallen {#changing-the-delivery-template}
 
-Adobe Campaign förser dig med en mall för att leverera till mobiler. Den här mallen är tillgänglig i **[!UICONTROL Resources > Templates > Delivery templates]** nod. For more on this, refer to the [About templates](about-templates.md) section.
+Adobe Campaign förser dig med en mall för att leverera till mobiler. Den här mallen är tillgänglig i **[!UICONTROL Resources > Templates > Delivery templates]** nod. Mer information finns i [Om mallar](about-templates.md) -avsnitt.
 
-To deliver via SMS channel, you must create a template in which the channel connector is referenced.
+Om du vill leverera via SMS-kanal måste du skapa en mall där kanalkopplingen refereras.
 
 För att behålla den inbyggda leveransmallen rekommenderar vi att du duplicerar den och sedan konfigurerar den.
 
-In the example below, we create a template to deliver messages via the SMPP account enabled earlier. Så här gör du:
+I exemplet nedan skapar vi en mall för att leverera meddelanden via det SMPP-konto som aktiverats tidigare. Så här gör du:
 
 1. Gå till **[!UICONTROL Delivery templates]** nod.
 1. Högerklicka på **[!UICONTROL Send to mobiles]** och välja **[!UICONTROL Duplicate]**.

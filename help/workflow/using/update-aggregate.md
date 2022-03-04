@@ -2,11 +2,9 @@
 product: campaign
 title: Uppdatera aggregat
 description: Läs mer om aktiviteten Uppdatera aggregerat arbetsflöde
-audience: workflow
-content-type: reference
-topic-tags: action-activities
+feature: Workflows
 exl-id: d2b26af0-30a1-4852-acd5-996795f198a1
-source-git-commit: bd9f035db1cbad883e1f27fe901e34dfbc9c1229
+source-git-commit: b94c4bfd478b4a8fbcefe6341608dd6a14bb31d3
 workflow-type: tm+mt
 source-wordcount: '97'
 ht-degree: 4%
