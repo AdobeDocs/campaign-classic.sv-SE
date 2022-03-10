@@ -6,9 +6,9 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: 07c1f4a3-cf16-4a9b-b402-e13258799f91
-source-git-commit: 9126e2cc088ef0e5761cc20bd19980d323f3a3ea
+source-git-commit: deb658fee9a668fd98aebfd1852252114ffb6edc
 workflow-type: tm+mt
-source-wordcount: '4887'
+source-wordcount: '4903'
 ht-degree: 99%
 
 ---
@@ -32,6 +32,8 @@ Avsnittet Karantän jämfört med Blockeringslista har förtydligats. [Läs mer]
 Avsnitten om hur du skickar en adress till karantän och hur du tar bort adresser från karantänlistan har uppdaterats. [Läs mer](../../delivery/using/understanding-quarantine-management.md#removing-a-quarantined-address)
 
 Lagt till en arbetsflödespraxis för att rekommendera att inte utföra flera stopp-begäranden i samma arbetsflöde. [Läs mer](../../workflow/using/workflow-best-practices.md)
+
+Lagt till information om hur du stoppar återkommande leveranser från att köras i en kampanj. [Läs mer](../../workflow/using/recurring-delivery.md)
 
 ### Januari 2022 {#january-2022}
 

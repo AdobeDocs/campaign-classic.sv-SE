@@ -4,10 +4,10 @@ title: Återkommande leverans
 description: Läs mer om arbetsflödesaktiviteten Återkommande leverans
 feature: Workflows
 exl-id: efd2cdfb-2e5f-4672-8be8-a424481b11ed
-source-git-commit: b94c4bfd478b4a8fbcefe6341608dd6a14bb31d3
+source-git-commit: 6f0479cfe6c6801eb44fcc7a35bdac1241ec3be6
 workflow-type: tm+mt
-source-wordcount: '221'
-ht-degree: 21%
+source-wordcount: '271'
+ht-degree: 17%
 
 ---
 
@@ -39,9 +39,12 @@ A **återkommande leverans** skapar en ny leveransinstans varje gång den körs.
 
 ![Återkommande leverans](assets/delivery_recurring.jpg)
 
+Om du vill stoppa en återkommande leverans från att köras bör du helt avbryta kampanjen eller stoppa arbetsflödet som körs. Om du stoppar leveransen från kontrollpanelen för Campaign stoppas endast leveransförekomsten: nästa instans av den återkommande leveransen fortsätter att skapas vid varje körning av arbetsflödet.
+
 >[!NOTE]
 >
->Det går inte att skicka ett korrektur från en **[!UICONTROL Recurring delivery]** typaktivitet.\
+>Det går inte att skicka ett korrektur från en **[!UICONTROL Recurring delivery]** typaktivitet.
+> 
 >Om du vill skapa en leverans direkt via ett kampanjarbetsflöde använder du de kanalspecifika aktiviteter som är förkonfigurerade (t.ex. **[!UICONTROL Email delivery]**).
 
 ## Självstudievideo (#reciing-delivery-video)
