@@ -31,7 +31,7 @@ Avsnittet Karantän jämfört med Blockeringslista har förtydligats. [Läs mer]
 
 Avsnitten om hur du skickar en adress till karantän och hur du tar bort adresser från karantänlistan har uppdaterats. [Läs mer](../../delivery/using/understanding-quarantine-management.md#removing-a-quarantined-address)
 
-Lagt till en arbetsflödespraxis för att rekommendera att inte utföra flera stopp-begäranden i samma arbetsflöde. [Läs mer](../../workflow/using/workflow-best-practices.md)
+En bästa praxis för arbetsflöde har lagts till för att rekommendera att inte utföra flera stoppförfrågningar på samma arbetsflöde. [Läs mer](../../workflow/using/workflow-best-practices.md)
 
 Lagt till information om hur du stoppar återkommande leveranser från att köras i en kampanj. [Läs mer](../../workflow/using/recurring-delivery.md)
 
