@@ -6,9 +6,9 @@ audience: installation
 content-type: reference
 topic-tags: installing-campaign-in-linux-
 exl-id: acbd2873-7b1c-4d81-bc62-cb1246c330af
-source-git-commit: 8794464d6fcc8ab648cd6866266855a701538fde
+source-git-commit: d891a235002d465f3b00fafa375d87d42ebafaa6
 workflow-type: tm+mt
-source-wordcount: '896'
+source-wordcount: '889'
 ht-degree: 1%
 
 ---
@@ -110,9 +110,17 @@ aptitude install xfonts-base xfonts-75dpi ttf-bitstream-vera ttf-dejavu
 
 Använd följande kommando i Redhat:
 
-```
-yum install xorg-x11-fonts-base xorg-x11-fonts-75dpi bitstream-vera-fonts dejavu-lgc-fonts
-```
+* För CentOS/RHEL 7:
+
+   ```
+   yum install xorg-x11-fonts-base xorg-x11-fonts-75dpi bitstream-vera-fonts dejavu-lgc-fonts
+   ```
+
+* För RHEL 8:
+
+   ```
+   dnf install xorg-x11-fonts-misc xorg-x11-fonts-75dpi dejavu-lgc-sans-fonts  dejavu-sans-fonts dejavu-sans-mono-fonts dejavu-serif-fonts
+   ```
 
 ### Teckensnitt för japanska förekomster {#fonts-for-japanese-instances}
 
@@ -126,9 +134,17 @@ aptitude install fonts-ipafont
 
 Lägg till kommandot i Red Hat:
 
-```
-yum install ipa-gothic-fonts ipa-mincho-fonts
-```
+* För RHEL 7:
+
+   ```
+   yum install ipa-gothic-fonts ipa-mincho-fonts
+   ```
+
+* För RHEL 8:
+
+   ```
+   dnf install vlgothic-fonts
+   ```
 
 ### Installerar LibraryOffice för Debian {#installing-libreoffice-for-debian}
 
@@ -150,17 +166,9 @@ För Debian krävs följande konfigurationer:
 
 Följande konfigurationer är nödvändiga med CentOS:
 
-1. Installera följande standardpaket:
-
-   ```
-   yum install libreoffice-headless libreoffice-writer libreoffice-calc
-   ```
-
-1. Installera följande teckensnitt (valfritt, men rekommenderas varmt för japanska förekomster):
-
-   ```
-   yum install ipa-gothic-fonts ipa-mincho-fonts
-   ```
+```
+yum install libreoffice-headless libreoffice-writer libreoffice-calc
+```
 
 ## Åtkomstlager för databaser {#database-access-layers}
 

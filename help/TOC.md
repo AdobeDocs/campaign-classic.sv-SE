@@ -6,10 +6,10 @@ title: Användarhandbok för Campaign Classic v7
 user-guide-description: Med Adobe Campaign kan du använda omfattande kunddata för att skapa, samordna och leverera dynamiska kampanjer som kunderna verkligen vill ha – via e-post, mobiler, offlinekanaler med mera.
 sub-product: adobe campaign classic
 type: Documentation
-source-git-commit: c54102b2ec32fbea89ce41dd3c9fedb98e612996
-workflow-type: ht
-source-wordcount: '2555'
-ht-degree: 100%
+source-git-commit: d891a235002d465f3b00fafa375d87d42ebafaa6
+workflow-type: tm+mt
+source-wordcount: '2548'
+ht-degree: 99%
 
 ---
 
@@ -585,14 +585,12 @@ ht-degree: 100%
    + [Om social marknadsföring](social/using/about-social-marketing.md)
    + Konfiguration {#configuration}
       + [Starta arbetsflöden](social/using/starting-workflows.md)
-      + [Publicera på Facebook-väggar](social/using/publishing-on-facebook-walls.md)
       + [Skapa en Facebook-applikation](social/using/creating-a-facebook-application.md)
       + [Konfigurera publicering på Twitter](social/using/configuring-publishing-on-twitter.md)
-   + Publicera på sociala medier {#publishing-on-facebook-twitter}
-      + [Kom igång med sociala medier](social/using/overview.md)
-      + [Publicera på Facebook](social/using/publishing-on-facebook.md)
+   + Publicera på Twitter {#publishing-on-facebook-twitter}
+      + [Kom igång med Twitter](social/using/overview.md)
       + [Publicera på Twitter](social/using/publishing-on-twitter.md)
-   + Bilagor {#annexes}
+   + Hämta Facebook-kontakter {#annexes}
       + [Exempel på Facebook-appar](social/using/examples-of-facebook-apps.md)
       + [Spåra](social/using/tracking.md)
 + Installations- och konfigureringshandbok {#installing-campaign-classic}

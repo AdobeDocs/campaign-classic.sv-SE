@@ -6,10 +6,10 @@ audience: social
 content-type: reference
 topic-tags: configuration
 exl-id: 2d2a6e32-587d-4a7b-ba1c-d9140da53f64
-source-git-commit: d11c918213e72fe4bf6adb464e516fac19b63d54
+source-git-commit: d891a235002d465f3b00fafa375d87d42ebafaa6
 workflow-type: tm+mt
-source-wordcount: '706'
-ht-degree: 7%
+source-wordcount: '698'
+ht-degree: 6%
 
 ---
 
@@ -117,7 +117,7 @@ Det här steget kräver samtidig åtkomst till din Adobe Campaign-konsol och en 
 >
 >Du måste skapa en **[!UICONTROL Twitter]** per Twitter-program.
 
-The **[!UICONTROL Twitter account Synchronization]** arbetsflödet synkroniserar Twitter-konton i Adobe Campaign. Mer information finns på [den här sidan](../../social/using/publishing-on-facebook-walls.md#synchronizing-facebook-pages).
+The **[!UICONTROL Twitter account Synchronization]** arbetsflödet synkroniserar Twitter-konton i Adobe Campaign.
 
 ## Synkronisera Twitter-konton {#synchronizing-twitter-accounts}
 

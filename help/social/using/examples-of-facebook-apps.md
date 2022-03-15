@@ -6,9 +6,9 @@ audience: social
 content-type: reference
 topic-tags: annexes
 exl-id: 3b8c7db4-9c55-42f6-8e09-e5ab781efe8f
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: d891a235002d465f3b00fafa375d87d42ebafaa6
 workflow-type: tm+mt
-source-wordcount: '2222'
+source-wordcount: '2212'
 ht-degree: 1%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 1%
 
 ![](../../assets/v7-only.svg)
 
-När en användare klickar på fliken i ett Facebook-program visas den i ett utrymme som är 810 pixlar brett. Adobe Campaign uses a Facebook type web application to let you define and personalize the content displayed in the Facebook application, therefore making it easier to acquire profiles.
+När en användare klickar på fliken i ett Facebook-program visas den i ett utrymme som är 810 pixlar brett. Adobe Campaign använder ett webbprogram av Facebook-typ för att du ska kunna definiera och anpassa det innehåll som visas i Facebook-programmet, vilket gör det enklare att hämta profiler.
 
 >[!NOTE]
 >
@@ -27,7 +27,7 @@ När en användare klickar på fliken i ett Facebook-program visas den i ett utr
 
 >[!IMPORTANT]
 >
->Please comply with the configuration steps described in [Creating a Facebook application](../../social/using/creating-a-facebook-application.md).
+>Följ konfigurationsstegen som beskrivs i [Skapa ett Facebook-program](../../social/using/creating-a-facebook-application.md).
 
 >[!NOTE]
 >
@@ -37,7 +37,7 @@ De exempel på webbapplikationer av Facebook-typ som beskrivs här är:
 
 * Så här skapar du ett Facebook-program i 7 steg. Se [Snabbstart: skapa ett Facebook-program i 7 steg](#quick-start--creating-a-facebook-application-in-7-steps).
 * Så här vidarebefordrar du inställningar till ett Facebook-program. Se [Hur man vidarebefordrar inställningar till ett Facebook-program?](#how-to-forward-settings-to-a-facebook-application-).
-* Så här hämtar du fläktdata. Refer to [How to acquire fan data?](#how-to-acquire-fan-data-).
+* Så här hämtar du fläktdata. Se [Hur får jag tag i fläktdata?](#how-to-acquire-fan-data-).
 
 >[!IMPORTANT]
 >
@@ -47,7 +47,7 @@ De exempel på webbapplikationer av Facebook-typ som beskrivs här är:
 
 Följande begränsningar är direkt kopplade till Facebook:
 
-* You must build all your web applications in HTTPS.
+* Du måste skapa alla webbprogram i HTTPS.
 * Ett Facebook-program som visas via en flik har en bredd på 810 pixlar.
 
 ## Snabbstart: skapa ett Facebook-program i 7 steg {#quick-start--creating-a-facebook-application-in-7-steps}
@@ -56,7 +56,7 @@ I det här exemplet beskrivs hur du visar ett Adobe Campaign-byggt program i Fac
 
 Så här skapar du programmet:
 
-1. Skapa ett program på Facebook ( [https://developers.facebook.com/apps](https://developers.facebook.com/apps)). Mer information finns i: [Skapa ett Facebook-program](../../social/using/publishing-on-facebook-walls.md#creating-a-facebook-application).
+1. Skapa ett program på Facebook ( [https://developers.facebook.com/apps](https://developers.facebook.com/apps)).
 
    ![](assets/social_create_facebook_app_002.png)
 
@@ -80,7 +80,7 @@ Så här skapar du programmet:
 
    ![](assets/social_webapp_004.png)
 
-1. Konfigurera ditt Facebook-program så att det visas som en flik på din Facebook-sida. For more on this, refer to: [Configuring Facebook tabs](../../social/using/creating-a-facebook-application.md#configuring-facebook-tabs).
+1. Konfigurera ditt Facebook-program så att det visas som en flik på din Facebook-sida. Mer information finns i: [Konfigurera Facebook-flikar](../../social/using/creating-a-facebook-application.md#configuring-facebook-tabs).
 
    ![](assets/social_quick_start_5.png)
 
@@ -100,18 +100,18 @@ I exempel 1 anpassade vi visningen av Facebook-sidan enligt värdet i **[!UICONT
 
 Låt oss ta ett exempel på ett företag som bestämmer sig för att skicka en e-postkampanj. I leveransen pekar en länk mot Facebook-programmet. Länken är personaliserad tack vare **[!UICONTROL app_data]** parametern har lagts till i slutet av URL:en. Värdet på den här parametern kan vara en indikator som speglar kundens betydelse. I vårt exempel är värdena för **[!UICONTROL app_data]** parametern är **[!UICONTROL big]** (betydande kund) och **[!UICONTROL small]** (mindre viktig kund).
 
-Once it is personalized, the URL looks like this:
+När URL:en har anpassats ser den ut så här:
 
 * `http://<path of the Facebook application>&app_data=big` (för en betydande kund)
 * `http://<path of the Facebook application>&app_data=small` (för en mindre viktig kund)
 
-Among the anonymous data forwarded to Adobe Campaign by Facebook, the value of the **[!UICONTROL Application parameters]** field is collected, thus enabling Adobe Campaign to personalize application display based on this parameter.
+Bland de anonyma uppgifter som Facebook skickar till Adobe Campaign finns värdet på **[!UICONTROL Application parameters]** -fältet samlas in, vilket gör att Adobe Campaign kan anpassa programvisningen baserat på den här parametern.
 
 Om användaren är en viktig kund (värdet av **[!UICONTROL app_data]** parametern är **[!UICONTROL big]**) visas följande bild:
 
 ![](assets/social_webapp_017.png)
 
-If the user is a less significant customer (the value of the **[!UICONTROL app_data]** parameter is **[!UICONTROL small]**), the following image is displayed:
+Om användaren är en mindre viktig kund (värdet av **[!UICONTROL app_data]** parametern är **[!UICONTROL small]**) visas följande bild:
 
 ![](assets/social_webapp_016.png)
 
@@ -161,8 +161,8 @@ The **[!UICONTROL Test]** aktiviteten baseras på **[!UICONTROL ID]** och **[!UI
 
 Den består av tre grenar:
 
-* **[!UICONTROL identifier (UID) is empty]** : identifieraren vidarebefordras endast av Facebook om användaren redan har godkänt att dela informationen. The first branch of the **[!UICONTROL Test]** activity lets you make the competition available only to users who have never entered, i.e. those with an empty ID.
-* **[!UICONTROL application parameter equals 'thanks']** : to sidestep a display error linked to Facebook, the web application end page points towards the URL of the Facebook application which the **[!UICONTROL app_data]** parameter is added to using the **[!UICONTROL thanks]** value (for more on this, refer to: [End activity](#end-activity)). Med den andra grenen kan du ta reda på om användaren kommer från **[!UICONTROL End]** den första filialens verksamhet (och har just gått in i tävlingen) för att visa ett tackmeddelande. Mer information om hur du använder ytterligare URL-parametrar finns i: [Hur man vidarebefordrar inställningar till ett Facebook-program?](#how-to-forward-settings-to-a-facebook-application-).
+* **[!UICONTROL identifier (UID) is empty]** : identifieraren vidarebefordras endast av Facebook om användaren redan har godkänt att dela informationen. Den första grenen i **[!UICONTROL Test]** gör att du kan göra tävlingen tillgänglig endast för användare som aldrig har anmält sig, dvs. användare med ett tomt ID.
+* **[!UICONTROL application parameter equals 'thanks']** : om du vill stega ett visningsfel som är länkat till Facebook pekar webbprogrammets slutsida mot URL:en för det Facebook-program som **[!UICONTROL app_data]** parametern läggs till med **[!UICONTROL thanks]** (mer information om detta finns i: [Avsluta aktivitet](#end-activity)). Med den andra grenen kan du ta reda på om användaren kommer från **[!UICONTROL End]** den första filialens verksamhet (och har just gått in i tävlingen) för att visa ett tackmeddelande. Mer information om hur du använder ytterligare URL-parametrar finns i: [Hur man vidarebefordrar inställningar till ett Facebook-program?](#how-to-forward-settings-to-a-facebook-application-).
 * **[!UICONTROL Default branch]** : om användaren redan har anmält sig till tävlingen (ID redan angivet) vid ett tidigare datum (programparameter skiljer sig från **[!UICONTROL thanks]**) visas en sida som anger att de redan har skrivit.
 
 ### Konkurrenssida {#competition-page}
@@ -173,15 +173,15 @@ Om du vill stega i sidled på det visningsfel som är länkat till Facebook mås
 
 ### Åtkomstkontrollaktivitet {#access-control-activity}
 
-The **[!UICONTROL Access control]** kan du visa sidan för begäran om Facebook-tillstånd när användaren går in i tävlingen. If they agree to share their information, it is recovered during pre-loading. Mer information finns i: [Förinläsningsaktivitet](#pre-loading-activity).
+The **[!UICONTROL Access control]** kan du visa sidan för begäran om Facebook-tillstånd när användaren går in i tävlingen. Om de samtycker till att dela sina uppgifter återställs de under förinläsningen. Mer information finns i: [Förinläsningsaktivitet](#pre-loading-activity).
 
-Om du tidigare angav ett externt konto när du skapade webbprogrammet (se [Skapa ett webbprogram av typen Facebook](../../social/using/creating-a-facebook-application.md#creating-a-facebook-type-web-application)) behöver du inte redigera aktiviteten. If not, go to the **[!UICONTROL Application]** field and select the external account linked to the Facebook application.
+Om du tidigare angav ett externt konto när du skapade webbprogrammet (se [Skapa ett webbprogram av typen Facebook](../../social/using/creating-a-facebook-application.md#creating-a-facebook-type-web-application)) behöver du inte redigera aktiviteten. Om inte, gå till **[!UICONTROL Application]** och välj det externa konto som är länkat till Facebook-programmet.
 
 ![](assets/social_webapp_024.png)
 
 ### Förinläsningsaktivitet {#pre-loading-activity}
 
-Select the data source to be used for pre-loading:
+Välj den datakälla som ska användas för förinläsning:
 
 * **[!UICONTROL Marketing database]** : Med det här alternativet kan du förhandsladda data via Adobe Campaign-databasen.
 * **[!UICONTROL Facebook]** : Med det här alternativet kan du förhandsladda data med Facebook.
@@ -259,9 +259,9 @@ I vårt exempel är värdet som används **Tack**.
 
 ![](assets/social_webapp_027.png)
 
-### Details screen of a visitor {#details-screen-of-a-visitor}
+### Besökarens informationsskärm {#details-screen-of-a-visitor}
 
-Just like for Twitter followers (refer to: [Operating principle](../../social/using/publishing-on-twitter.md#operating-principle)), recovered Facebook profiles are stored in the visitors&#39; table. To display the list of visitors, go to the **[!UICONTROL Profiles and Targets > Visitors]** node.
+Precis som för Twitter följare (se: [Verksamhetsprincip](../../social/using/publishing-on-twitter.md#operating-principle)) lagras återskapade Facebook-profiler i besökartabellen. Om du vill visa listan över besökare går du till **[!UICONTROL Profiles and Targets > Visitors]** nod.
 
 Alla Facebook-potentiella kunder som går med på att dela sin profilinformation läggs till i listan över besökare. Om **[!UICONTROL Friends]** kryssrutan är markerad i **[!UICONTROL Pre-load]** aktivitet (se: [Förinläsningsaktivitet](#pre-loading-activity)) läggs även vänner till.
 
@@ -275,11 +275,11 @@ Om en grön bockmarkering visas betyder det att besökaren inte stämdes av mot 
 
 ![](assets/social_webapp_039.png)
 
-Ett rött kryss innebär att besökaren stämdes av mot en mottagare. You can click the magnifier to the right of the **[!UICONTROL Recipient]** field to display the matching recipient.
+Ett rött kryss innebär att besökaren stämdes av mot en mottagare. Du kan klicka på förstoringsglaset till höger om **[!UICONTROL Recipient]** för att visa den matchande mottagaren.
 
 ![](assets/social_webapp_040.png)
 
-Gå till detaljfönstret för en mottagare för att visa den matchande besökaren, om tillämpligt. Select the **[!UICONTROL Others]** tab, then double-click the name of the visitor in the **[!UICONTROL Web identities]** section.
+Gå till detaljfönstret för en mottagare för att visa den matchande besökaren, om tillämpligt. Välj **[!UICONTROL Others]** dubbelklicka på besökarens namn i dialogrutan **[!UICONTROL Web identities]** -avsnitt.
 
 ![](assets/social_webapp_041.png)
 
@@ -307,7 +307,7 @@ The **[!UICONTROL Social Marketing]** Med kan du också lägga till en knapp i e
 
 >[!NOTE]
 >
->Innan du börjar använda den här funktionen måste du skapa ett Facebook-program och en **[!UICONTROL Facebook Connect]** skriv ett externt konto. For more on this, refer to [Configuring external accounts](../../social/using/creating-a-facebook-application.md#configuring-external-accounts).
+>Innan du börjar använda den här funktionen måste du skapa ett Facebook-program och en **[!UICONTROL Facebook Connect]** skriv ett externt konto. Mer information finns i [Konfigurera externa konton](../../social/using/creating-a-facebook-application.md#configuring-external-accounts).
 
 **Läs in formulärfälten i förväg med data från Facebook-profilen**
 
@@ -348,7 +348,7 @@ Så här lägger du till en förinläsningsknapp:
 
    ![](assets/social_webapp_033.png)
 
-1. Enter the label and select the **[!UICONTROL Button]** type.
+1. Ange etiketten och välj **[!UICONTROL Button]** typ.
 
    ![](assets/social_webapp_034.png)
 

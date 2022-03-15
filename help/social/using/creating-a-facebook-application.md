@@ -6,9 +6,9 @@ audience: social
 content-type: reference
 topic-tags: configuration
 exl-id: 5c11bd0f-2df7-4c7f-b682-955fedf8e664
-source-git-commit: b5334de18eca8fc1147ae0c42fe23a6932bf71d2
+source-git-commit: d891a235002d465f3b00fafa375d87d42ebafaa6
 workflow-type: tm+mt
-source-wordcount: '876'
+source-wordcount: '874'
 ht-degree: 5%
 
 ---
@@ -27,7 +27,7 @@ Med Campaign Social Marketing-modulen kan ni visa personaliserat innehåll i era
 
 Konfigurationsstegen är:
 
-1. Skapa ett eller flera Facebook-program. [Läs mer](../../social/using/publishing-on-facebook-walls.md#creating-a-facebook-application)
+1. Skapa ett eller flera Facebook-program.
 1. Ange **[!UICONTROL terms of service]** och **[!UICONTROL Privacy policy]** länkar som ska visas på skärmen för Facebook behörighetsbegäran. [Läs mer](#entering-the-terms-of-service-and-privacy-policy-links)
 1. Skapa en **[!UICONTROL Facebook Connect]** skriv ett externt konto. [Läs mer](#configuring-external-accounts)
 1. För varje Facebook-program skapar du ett webbprogram av Facebook-typ i Adobe Campaign. [Läs mer](#creating-a-facebook-type-web-application)
