@@ -6,10 +6,10 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: d65869ca-a785-4327-8e8d-791c28e4696c
-source-git-commit: e4cd327d1495987e7d32bd1b903c8fe5de2813f2
+source-git-commit: e3ff5bb55e108c163dcf395da84076201f09e61c
 workflow-type: tm+mt
-source-wordcount: '1273'
-ht-degree: 82%
+source-wordcount: '1281'
+ht-degree: 99%
 
 ---
 
@@ -23,19 +23,24 @@ Den här sidan listar nya funktioner, förbättringar och korrigeringar som komm
 
 _1 mars 2022_
 
+>[!NOTE]
+>
+> Den här versionen är kompatibel med v7.2.1-klientkonsolen.
+
 **Felkorrigeringar**
 
-* Ett problem som uppstod när **Web Analytics** externt konto, vilket gjorde att integreringsstatusen alltid visade &quot;Integreringen lyckades&quot; även när fel uppstod. (NEO-36672)
-* Korrigerade flera efteruppgraderingsfel relaterade till sekvens-ID-mekanismen när det fanns negativa ID:n. (NEO-43205, NEO-42846 och NEO-42845)
-* Ett problem som uppstod när **Web Analytics** externt konto med återkommande och kontinuerliga leveranser, vilket medförde att data från det externa kontot delvis förlorades. (NEO-38548)
-* Korrigerade ett fel som gjorde efteruppgraderingen långsammare när NmsActiveContact-tabellen uppdaterades. (NEO-43206)
-* Korrigerade ett fel efter uppgraderingen som uppstod om mappar som inte är installerade hade flyttats från **Administration** till en annan plats. (NEO-42875)
-* Ett problem när ett **Uppdatera data** arbetsflödesaktivitet som kan förhindra att mottagarschemat uppdateras med mottagardata från en extern Google Cloud-databas. (NEO-42343)
-* Ett problem som rör Adobe Analytics-anslutningen har korrigerats under efteruppgraderingen. (NEO-43318, NEO-38136)
-* Korrigerade ett överskrivet CUID med VALUE_TO_CHANGE-problem under efteruppgraderingen. (NEO-43267)
-* Korrigerade ett problem som ledde till fel vid synkronisering av instanser för medelkällning och marknadsföring i en flermittskonfiguration. (NEO-10432)
-* Korrigerade ett problem som orsakade ett fel när leveransarbetsflödet uppdaterades när fler än 1 000 utsändningar fanns samtidigt. (NEO-40276)
-* Ett problem som gjorde att leveransindikatorerna för öppna och klickfrekvens inte kunde uppdateras automatiskt har åtgärdats. (NEO-43253)
+* Åtgärdade ett problem vid konfigurering av det externa **Web Analytics**-kontot, vilket gjorde att integreringsstatusen alltid visade ”Integration slutförd” även när fel uppstod. (NEO-36672)
+* Åtgärdade flera efteruppgraderingsfel relaterade till sekvens-ID-mekanismen när det fanns negativa ID:n. (NEO-43205, NEO-42846, NEO-42845)
+* Åtgärdade ett problem vid användning av det externa **Web Analytics**-kontot med återkommande och kontinuerliga leveranser, vilket gjorde att data från det externa kontot delvis gick förlorade. (NEO-38548)
+* Åtgärdade ett problem som saktade ner efteruppgraderingen vid uppdatering av NmsActiveContact-tabellen. (NEO-43206)
+* Åtgärdade ett problem med efteruppgraderingsfel som uppstod om färdiga mappar hade flyttats från noden **Administration** till någon annan plats. (NEO-42875)
+* Åtgärdade ett problem vid användning av en arbetsflödesaktivitet **Uppdatera data** som kunde förhindra att mottagarschemat uppdaterades med mottagardata från en extern Google Cloud-databas. (NEO-42343)
+* Åtgärdade ett problem under efteruppgraderingen relaterat till Adobe Analytics-anslutningen. (NEO-43318, NEO-38136)
+* Åtgärdade ett problem där CUID är överskrivet av &#39;VALUE_TO_CHANGE&#39; under efteruppgraderingen. (NEO-43267)
+* Åtgärdade ett problem som ledde till fel vid synkronisering av instanser för mid-sourcing och marknadsföring i en multi-mid-konfiguration. (NEO-10432)
+* Åtgärdade ett problem som orsakade ett fel när leveransarbetsflödet uppdaterades när fler än 1 000 utsändningsloggar fanns samtidigt. (NEO-40276)
+* Åtgärdade ett problem som förhindrade indikatorer för andelen öppnade leveranser och andelen klickade leveranser från att uppdateras automatiskt. (NEO-43253)
+
 
 ## ![](assets/do-not-localize/limited_2.png) Version 7.2.1 – build 9346 {#release-7-2-1}
 
@@ -51,7 +56,7 @@ Flera säkerhetsförbättringar har gjorts i FDA-konton:
 
 **Kompatibilitetsuppdateringar**
 
-Adobe Campaign är nu kompatibelt med Windows Server 2019. Se [Matris för kampanjkompatibilitet](../../rn/using/compatibility-matrix.md#OperatingSystems).
+Adobe Campaign är nu kompatibelt med Windows Server 2019. Se [kompatibilitetsmatrisen för Campaign](../../rn/using/compatibility-matrix.md#OperatingSystems).
 
 **Förbättringar**
 
