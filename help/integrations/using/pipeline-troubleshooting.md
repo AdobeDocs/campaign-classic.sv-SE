@@ -1,14 +1,14 @@
 ---
 product: campaign
-title: Konfigurera integreringen
-description: Konfigurera integreringen
+title: 'Felsöka pipelines '
+description: 'Felsöka pipelines '
 audience: integrations
 content-type: reference
 exl-id: 76645a6f-9536-49d6-b12a-fdd6113d31fa
-source-git-commit: 1d32161d60f6b382188012b104c642f504e28645
+source-git-commit: 36b10a49fe92853f98beeb9e7d2fea3f59b10b6f
 workflow-type: tm+mt
-source-wordcount: '693'
-ht-degree: 1%
+source-wordcount: '691'
+ht-degree: 0%
 
 ---
 

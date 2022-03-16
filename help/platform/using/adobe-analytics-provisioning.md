@@ -1,16 +1,16 @@
 ---
 solution: Campaign Classic
 product: campaign
-title: Adobe Analytics Connector
-description: Läs mer om Adobe Analytics Connector provisionering
+title: Adobe Analytics Connector Provisioning
+description: Läs mer om etablering av Adobe Analytics Connector
 feature: Overview
 role: User, Admin
 level: Beginner
 exl-id: 24e002aa-4e86-406b-92c7-74f242ee4b86
-source-git-commit: 9ee95f6d60500b18e242c6d648488615f47a4459
+source-git-commit: 36b10a49fe92853f98beeb9e7d2fea3f59b10b6f
 workflow-type: tm+mt
-source-wordcount: '646'
-ht-degree: 4%
+source-wordcount: '647'
+ht-degree: 3%
 
 ---
 
