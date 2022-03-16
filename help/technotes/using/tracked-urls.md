@@ -1,14 +1,14 @@
 ---
 product: campaign
-title: Technote
-description: Technote
+title: 'Signaturproblem med spårade URL:er '
+description: 'Signaturproblem med spårade URL:er '
 hide: true
 hidefromtoc: true
 exl-id: e7d4331b-7149-4768-8e46-2e2911319074
-source-git-commit: 70240d5f62fd3d7b755389b5ad8c4b499c94657d
+source-git-commit: 40da5774c8a6a228992c4aa400e2d9924215611e
 workflow-type: tm+mt
-source-wordcount: '355'
-ht-degree: 35%
+source-wordcount: '361'
+ht-degree: 36%
 
 ---
 
@@ -67,4 +67,4 @@ När uppdateringen är klar fungerar alla länkar som förväntat.
 
 >[!NOTE]
 >
->Om du har frågor om de här ändringarna kan du kontakta [Adobes kundtjänst](https://helpx.adobe.com/se/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
+>Om du har frågor om de här ändringarna kan du kontakta [Adobes kundtjänst](https://helpx.adobe.com/sv/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).

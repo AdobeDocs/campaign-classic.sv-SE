@@ -6,8 +6,8 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: c7688c2a-f0a7-4c51-a4cf-bf96fe8bf9b6
-source-git-commit: 71a5433db3ce2af5a25e5f861bd6f1dfb9aa8934
-workflow-type: ht
+source-git-commit: 40da5774c8a6a228992c4aa400e2d9924215611e
+workflow-type: tm+mt
 source-wordcount: '2425'
 ht-degree: 100%
 
@@ -31,7 +31,7 @@ För att underlätta beredskapen gällande din integritet kan du hantera förfr�
 
 Låt oss se hur du kan skapa förfrågningar om åtkomst och radering, samt hur de behandlas i Adobe Campaign.
 
-### Principer {#principles}
+### Principer {#privacy-principles}
 
 Adobe Campaign erbjuder personuppgiftsansvariga två möjligheter att utföra förfrågningar om åtkomst till eller radering av användarens information:
 
