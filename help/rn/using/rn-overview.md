@@ -6,10 +6,10 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: 7a05fdff-8f9d-4e8d-812e-0f1509db5499
-source-git-commit: 9d8eae6b9c31d98d5e7e14b61f3abcf46311304d
-workflow-type: ht
-source-wordcount: '917'
-ht-degree: 100%
+source-git-commit: 329cf80ff021322e57a63cf86f4b4e206f6385d1
+workflow-type: tm+mt
+source-wordcount: '924'
+ht-degree: 97%
 
 ---
 
@@ -43,7 +43,7 @@ Som en värdbaserad användare har du automatiskt tillgång till uppgraderingen 
 
 För att säkerställa en stabil konfiguration rekommenderar vi att du installerar **samma build** på alla servrar som körs på samma klientkonfiguration.
 
-Dessutom måste klientkonsolen vara på samma version som serverinstansen.
+Om inget annat anges i versionsinformationen måste dessutom klientkonsolen vara aktiverad **samma bygge** som serverinstansen.
 
 Om du vill att implementeringen ska vara aktuell bör du läsa sidorna om de [inaktuella och borttagna funktionerna](../../rn/using/deprecated-features.md) samt [kompatibilitetsmatrisen](../../rn/using/compatibility-matrix.md) för varje ny version.
 
