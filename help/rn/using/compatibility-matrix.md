@@ -63,7 +63,7 @@ Besök [den här sidan](../../rn/using/deprecated-features.md) för mer informat
 <tr>
 <td>Windows Server</td>
 <td>
-<p>2019 (från version 7.2.1)</p>
+<p>2019 (startar från version 7.2.1)</p>
 <p>2016</p>
 <p>2012 R2</p>
 <p>2012</p>
@@ -332,7 +332,7 @@ Följande operativsystem och webbläsare **krävs** för att använda [klientkon
 <tr>
 <td>Microsoft Windows Server</td>
 <td>
-<p>2019 (från version 7.2.1)</p>
+<p>2019 (startar från version 7.2.1)</p>
 <p>2016</p>
 <p>2012</p>
 </td>
