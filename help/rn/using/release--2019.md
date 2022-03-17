@@ -118,12 +118,12 @@ _2 december 2019_
 <table> 
  <thead> 
   <tr> 
-   <th> <strong>Secure SMS Messaging (TLS)</strong><br /> </th> 
+   <th> <strong>Säkra SMS-meddelanden (TLS)</strong><br /> </th> 
   </tr> 
  </thead> 
  <tbody> 
   <tr> 
-<td> <p>Skyddat SMS stöds nu via den utökade allmänna SMPP-anslutningen. This allows an encrypted connection to the provider.</p> <p><strong>Varning</strong> Den här funktionen kräver ett aktuellt certifikat på alla servrar. Ogiltiga, återkallade eller utgångna certifikat genererar fel som påverkar SMS-sändningsfunktionerna.</p><p>Mer information finns i den <a href="https://helpx.adobe.com/se/campaign/kb/sms-connector-protocol-and-settings.html">detaljerade dokumentationen</a>. </p> </td> 
+<td> <p>Skyddat SMS stöds nu via den utökade allmänna SMPP-anslutningen. Detta tillåter en krypterad anslutning till providern.</p> <p><strong>Varning</strong> Den här funktionen kräver ett aktuellt certifikat på alla servrar. Ogiltiga, återkallade eller utgångna certifikat genererar fel som påverkar SMS-sändningsfunktionerna.</p><p>Mer information finns i den <a href="https://helpx.adobe.com/se/campaign/kb/sms-connector-protocol-and-settings.html">detaljerade dokumentationen</a>. </p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -178,14 +178,14 @@ Version 1.0.26 av iOS SDK är nu tillgänglig. I den här nya versionen har vi l
 * Korrigerade ett leveransförberedelseproblem när **Exkludera dubblettadress under leverans** alternativet är inte markerat. (NEO-13240)
 * Ett problem i arbetsflöden när **Filöverföring** aktivitet för att hämta filer med **Ta bort källfilerna efter överföringen** med ett namn som innehåller ett blanksteg. (NEO-13411)
 * Ett problem med rensning av Tomcat-cachen som kan leda till minnesproblem har åtgärdats. (NEO-13456)
-* Fixed an issue when installing the **Control of offer engine with execution instance** built-in package on an existing control instance running in Microsoft SQL 2017. (NEO-13539)
+* Ett problem har korrigerats vid installation av **Kontroll över erbjudandemotorn med körningsinstans** inbyggt paket för en befintlig kontrollinstans som körs i Microsoft SQL 2017. (NEO-13539)
 * Ett kraschproblem som kunde inträffa när spårade URL:er avkontrollerades i ett e-postmeddelande från **Textinnehåll** på grund av en icke-initierad variabel. (NEO-13545)
 * Korrigerade ett kodningsproblem för det kinesiska avsändarnamnet. (NEO-13837)
 * Korrigerade ett fel som kunde uppstå när undersökningssvarsdata från Utforskaren visades. (NEO-14590)
 * Korrigerade ett problem som kunde leda till diskrepans mellan leveransloggklassificeringen och karantäntabellen. (NEO-16547)
 * Ett problem med DKIM-nycklar som inte var inbäddade i e-postmeddelanden har korrigerats. (NEO-16804)
-* Korrigerade ett problem som visade fel felkod när en ogiltig sessionstoken användes i kontexten för API-anrop för att utlösa händelser. The error code was &#39;HTTP 200 OK&#39; instead of &#39;HTTP 403 Forbidden&#39;. (NEO-16826)
-* Fixed an issue when displaying delivery reports via web access. (NEO-17015)
+* Korrigerade ett problem som visade fel felkod när en ogiltig sessionstoken användes i kontexten för API-anrop för att utlösa händelser. Felkoden var HTTP 200 OK i stället för HTTP 403 Forbidden. (NEO-16826)
+* Ett problem som orsakade att leveransrapporter visades via webbåtkomst har korrigerats. (NEO-17015)
 * Ett IMS-autentiseringsproblem som uppstod vid inloggning på Adobe Campaign har korrigerats. (NEO-17312)
 * Korrigerade ett problem som förhindrade att e-postmeddelanden i karantän togs bort av sekretesshanteringsprocessen. (NEO-17314)
 * Problem med genomströmning har korrigerats efter uppgradering till 9031 med SQL-databas. (NEO-17558)
@@ -227,7 +227,7 @@ _16 december 2020_
 >
 > * Den här versionen inkluderar ett nytt anslutningsprotokoll: Om du ansluter till Campaign via Adobe Identity Service (IMS) är en uppgradering obligatorisk för både Campaign-servern och klientkonsolen för att kunna ansluta till Campaign efter **30 juni 2021**. [Läs mer](../../technotes/using/ims-updates.md)
 > * Den här versionen innehåller en [säkerhetskorrigering](https://helpx.adobe.com/security/products/campaign/apsb21-04.html): Uppgraderingen är obligatorisk för att öka din miljösäkerhet.
-> * Om du använder integreringen av Experience Cloud Triggers via oAuth-autentisering måste du gå över till Adobe I/O som beskrivs [på den här sidan](../../integrations/using/configuring-adobe-io.md). Det inaktuella autentiseringsläget oAuth med Campaign [har tagits bort](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-discussions/adobe-analytics-legacy-api-end-of-life-notice/td-p/385411) i **september 2021**. Värdmiljöer drar nytta av ett tillägg fram till  **23 februari 2022**. Kontakta Adobe kundtjänst för support på plats eller som hybridkund till februari 2022. Du måste ange [AppID:et för OAuth-programmet](../../integrations/using/configuring-pipeline.md?lang=en#step-optional) till Adobe.
+> * Om du använder integreringen av Experience Cloud Triggers via oAuth-autentisering måste du gå över till Adobe I/O som beskrivs [på den här sidan](../../integrations/using/configuring-adobe-io.md). Det inaktuella autentiseringsläget oAuth med Campaign [har tagits bort](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-discussions/adobe-analytics-legacy-api-end-of-life-notice/td-p/385411) i **september 2021**. Värdmiljöer drar nytta av en förlängning till **23 februari 2022**. Kontakta Adobe kundtjänst för support på plats eller som hybridkund till februari 2022. Du måste ange [AppID:et för OAuth-programmet](../../integrations/using/configuring-pipeline.md?lang=en#step-optional) till Adobe.
 
 
 
@@ -253,7 +253,7 @@ _16 december 2020_
 
 Tomcat har uppdaterats från version 7 (7.0.103) till version 8 (8.5.57). Katalogen `tomcat-7` ersätts med en `tomcat-8`-katalog. I Windows har nu _iis_neolane_setup.vbs_ och _apache_neolane.conf_ installerats i katalogen `conf` (i stället för i `tomcat-7/conf` som tidigare). I Linux finns nu _apache_neolane.conf_ installerat i katalogen `conf`.
 
-On Linux, the nlserver service startup now uses a systemd unit instead of the /etc/init.d/nlserver6 script. Migreringen till det nya startschemat utförs automatiskt när du installerar paketet 19.1.8. The /etc/init.d/nlserver6 is still provided but for interacting with the nlserver service (start, restart, stop, etc.), we recommend that you use the systemctl command directly.
+I Linux används nu en systemenhet för start av servertjänsten i stället för skriptet /etc/init.d/nlserver6. Migreringen till det nya startschemat utförs automatiskt när du installerar paketet 19.1.8. /etc/init.d/nlserver6 finns fortfarande men för interaktion med nlserver-tjänsten (start, omstart, stopp osv.) rekommenderar vi att du använder systemctl-kommandot direkt.
 
 
 ### ![](assets/do-not-localize/red_2.png) Version 19.1.7 – build 9036 {#release-19-1-7-build-9036}
@@ -463,15 +463,15 @@ _30 maj 2019_
 * Ett problem med att ta bort ID när dirigerade adresser används i en leverans har korrigerats. (NEO-11842)
 * Ett problem med kompatibilitet mellan phantomjs och Debian 9 har korrigerats.
 * Korrigerade ett fel vid godkännande av innehållet i ett korrektur. (NEO-12725)
-* Ett problem med arbetsflödesfunktionen Exkludera den här delmängden från ifyllningen har korrigerats. (NEO-12441)
+* Ett problem med arbetsflödesfunktionen Uteslut den här delmängden från ifyllningen har korrigerats. (NEO-12441)
 * Korrigerade ett problem med HTTPRequest-wait-API som inte väntade på att alla återanrop skulle slutföras. (NEO-12628)
 * Korrigerade ett problem med aktiviteten Uppdatera delad publik i en delad aktivitet. (NEO-11562)
 * Korrigerade ett webbserverkraschproblem. (NEO-12904)
-* Fixed an issue with the Nature parameter in transactional templates. (NEO-12334)
+* Ett problem med parametern Nature i transaktionsmallar har korrigerats. (NEO-12334)
 * Korrigerade ett kraschproblem i konsolen när spårade URL:er visades i e-posttextredigeraren. (NEO-13122)
 * Ett problem med aktiviteten Dela fil när målgrupper importerades från Audience Manager har korrigerats. (NEO-11550)
 * Korrigerade ett problem som orsakade fel i snabbklicksrapporten. (NEO-11459)
-* Fixed an issue with offer rendering. (NEO-11565)
+* Ett problem med erbjudandeåtergivning har korrigerats. (NEO-11565)
 * Ett problem med aktiviteten Listuppdatering när målgrupper importerades från Audience Manager har korrigerats. (NEO-11226)
 * Ett problem med schemaaktiviteten och tidszonskonfigurationen har korrigerats. (NEO-11662)
 * Korrigerade ett problem som gjorde att spårningsarbetsflödet misslyckades om URL:er hade felaktigt format.
