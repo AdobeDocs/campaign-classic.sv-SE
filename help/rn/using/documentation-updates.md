@@ -6,10 +6,10 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: 07c1f4a3-cf16-4a9b-b402-e13258799f91
-source-git-commit: dfee069240c590846f7dda3134c07ad3ec514a26
+source-git-commit: 4fe661cf6a0fef8126fd24a68b1021760a5d0bfd
 workflow-type: tm+mt
-source-wordcount: '4938'
-ht-degree: 99%
+source-wordcount: '4932'
+ht-degree: 97%
 
 ---
 
@@ -28,7 +28,7 @@ Se [Versionsinformationen för Adobe Campaign Classic](../../rn/using/latest-rel
 
 En detaljerad beskrivning av **[!UICONTROL Test SMTP delivery]** alternativ. [Läs mer](../../delivery/using/steps-sending-the-delivery.md#delivery-additiona-parameters)
 
-Översiktsavsnittet i versionsinformationen har uppdaterats för att klargöra riktlinjerna för uppgradering av Campaign Console. [Läs mer](../../rn/using/rn-overview.md)
+Sidan Kom igång med uppgraderingar har uppdaterats för att klargöra riktlinjerna för uppgradering av Campaign Console. [Läs mer](../../rn/using/rn-overview.md)
 
 Den nya versionen Campaign v7.2.2 är nu tillgänglig. [Läs mer](../../rn/using/latest-release.md)
 
@@ -69,7 +69,7 @@ Lade till ett gruppuppdateringsalternativ i CRM-anslutningsaktiviteten. [Läs me
 
 ### December 2021{#dec-2021}
 
-Versionsinformation om Campaign Classic v7 har omorganiserats för att förenkla navigeringen. [Läs mer](rn-overview.md)
+Versionsinformationen för Campaign Classic v7 har omstrukturerats för att förenkla navigeringen. [Läs mer](rn-overview.md)
 
 Dokumentationen om formulärversionen i Campaign har uppdaterats och förbättrats. [Läs mer](../../configuration/using/editing-forms.md)
 
@@ -124,7 +124,7 @@ Ett meddelande har lagts till om integrationen mellan Campaign och AEM Assets, s
 
 ### Juni 2021 {#june-2021}
 
-Avsnittet **Transaktionella meddelanden** har organiserats om och förtydligats med ett nytt Kom igång-avsnitt, inklusive ett [förbättrat schema](../../message-center/using/about-transactional-messaging.md#transactional-messaging-operating-principle) för att ge en bättre förståelse för processen. [Läs mer](../../message-center/using/about-transactional-messaging.md)
+The **Transactional Messaging** -avsnittet har omorganiserats och klargjorts med ett nytt Get started-avsnitt, som innehåller [förbättrat schema](../../message-center/using/about-transactional-messaging.md#transactional-messaging-operating-principle) för att få en bättre förståelse för processen. [Läs mer](../../message-center/using/about-transactional-messaging.md)
 
 **Dokumentationsuppdateringar kommer med utgåvan 21.1.3**
 
@@ -156,7 +156,7 @@ Ett nytt tekniskt meddelande har skapats för att beskriva hur man uppdaterar st
 
 ### Mars 2021 {#march-2021}
 
-[Avsnittet Komma igång med SMS](../../delivery/using/sms-channel.md) har omstrukturerats och förbättrats. Nu kan läsa om hur du [konfigurerar SMS-kanalen](../../delivery/using/sms-set-up.md), [skapar ett SMS](../../delivery/using/sms-create.md) samt [skickar och spårar SMS](../../delivery/using/sms-send.md) i dedikerade avsnitt.
+[Avsnittet Komma igång med SMS](../../delivery/using/sms-channel.md) har omstrukturerats och förbättrats. Nu kan du lära dig hur [konfigurera SMS-kanalen](../../delivery/using/sms-set-up.md), [skapa ett SMS](../../delivery/using/sms-create.md), [skicka och spåra SMS](../../delivery/using/sms-send.md) i dedikerade avsnitt.
 
 Sidan Hjälp- och supportalternativ för Campaign Classic har integrerats i huvuddokumentationen. [Läs mer](../../support.md)
 
@@ -285,7 +285,7 @@ Dokumentationssidorna har uppdaterats för att återspegla uppdateringen Tomcat 
 
 Mer information har lagts till i beskrivningen i rutan ”Om” i avsnittet ”Ladda ned din version av Adobe Campaign”. [Läs mer](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version)
 
-Riktlinjer för att utföra en versionsuppgradering har lagts till i avsnittet Uppdatera Adobe Campaign Classic. Läs mer [Läs mer](../../production/using/build-upgrade.md)
+Riktlinjer för att utföra en versionsuppgradering har lagts till i avsnittet Uppdatera Adobe Campaign Classic. [Läs mer](../../production/using/build-upgrade.md)
 
 Vanliga frågor och svar om builduppgraderingen av Campaign har lagts till i vanliga frågor om Campaign. Läs mer [Läs mer](../../platform/using/faq-build-upgrade.md)
 
@@ -344,7 +344,7 @@ Nya användningsfall har refererats i listan [Användningsfall med arbetsflöde]
 * Anropa en instansvariabel i en fråga
 * Tillämpa en delad procentsats på en grupp
 
-Aktivitetsavsnittet **[!UICONTROL AND-join]** har berikats med ytterligare information om hur det används samt en anteckning om användningen av variabler. [Läs mer](../../workflow/using/and-join.md)
+The **[!UICONTROL AND-join]** aktivitetsavsnittet har berikats med ytterligare information om dess användning och en anteckning om användningen av variabler. [Läs mer](../../workflow/using/and-join.md)
 
 ### Juli 2020 {#july-2020}
 
@@ -612,7 +612,7 @@ Verifieringskedja – [läs mer](../../production/using/audit-trail.md)
 
 Nya frågor och svar har skapats för uppgradering av versioner. [Läs mer](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/starting-with-adobe-campaign/faq/faq-build-upgrade.html?lang=sv)
 
-[Kompatibilitetsmatrisen](compatibility-matrix.md) har uppdaterats. Listan över databassystem som det finns stöd för har uppdaterats såväl som Android-/iOS-versioner och relaterade SDK:er. Kompatibilitetsmatris 19.0 har arkiverats.
+[Kompatibilitetsmatrisen](compatibility-matrix.md) har uppdaterats. Listan över databassystem som stöds har uppdaterats, Android-/iOS-versioner och relaterade SDK:er. Kompatibilitetsmatris 19.0 har arkiverats.
 
 Sidan &quot;Inaktuella och borttagna funktioner i Campaign Classic&quot; har uppdaterats. [Läs mer](deprecated-features.md)
 
@@ -626,7 +626,7 @@ Starthandböckerna [Säkerhet](https://experienceleague.adobe.com/docs/campaign-
 
 Beskrivningen av alternativet arbetsflöde före bearbetning har uppdaterats för att återspegla produktändringar. [Läs mer](../../workflow/using/data-loading--file-.md)
 
-Den tekniska dokumentationen för utlösare i Marketing Cloud har uppdaterats. [Läs mer](../../integrations/using/about-triggers.md)
+Tekniken Experience Cloud Triggers har uppdaterats. [Läs mer](../../integrations/using/about-triggers.md)
 
 Listan med felmeddelanden har uppdaterats. [Läs mer](https://experienceleague.adobe.com/developer/campaign-errors/error_codes.html)
 
@@ -681,7 +681,7 @@ Information har lagts till om query banding för det externa Teradata-kontot. [L
 
 ### Januari 2019{#release-doc-16-01-2019}
 
-Den tekniska dokumentationen för utlösare i Marketing Cloud har uppdaterats. [Läs mer](../../integrations/using/about-triggers.md)
+Tekniken Experience Cloud Triggers har uppdaterats. [Läs mer](../../integrations/using/about-triggers.md)
 
 Ett meddelande har lagts till i avsnittet Godkännande av erbjudande för att specificera att &quot;Godkänt innehåll&quot; indikerar att godkännandeprocessen för innehåll har uppnåtts. Detta gäller oavsett om alla erbjudanden har aktiverats/godkänts eller inte. [Läs mer](../../interaction/using/offer-catalog-overview.md)
 
