@@ -4,9 +4,9 @@ title: Konfigurera och skicka leveransen
 description: Lär dig hur du konfigurerar och skickar leveransen
 feature: Channel Configuration
 exl-id: 0411686e-4f13-401e-9333-e14b05ebe9cd
-source-git-commit: 9839dbacda475c2a586811e3c4f686b1b1baab05
+source-git-commit: dfee069240c590846f7dda3134c07ad3ec514a26
 workflow-type: tm+mt
-source-wordcount: '1526'
+source-wordcount: '1556'
 ht-degree: 5%
 
 ---
@@ -33,13 +33,16 @@ Innan du skickar leveransen kan du definiera sändningsparametrarna i leveranseg
    >
    >När leveransen dupliceras återställs parametern.
 
-* **[!UICONTROL Send using multiple waves]**: Mer information finns i [Skicka med flera vågor](#sending-using-multiple-waves).
+* **[!UICONTROL Send using multiple waves]**: Använd det här alternativet om du vill skicka meddelanden i vågor, i stället för till hela målgruppen. Konfigurera antalet batchar och deras andel. [Läs mer](#sending-using-multiple-waves).
 
-* **[!UICONTROL Test SMTP delivery]**: Med det här alternativet kan du testa att skicka en leverans via SMTP. Leveransen behandlas upp till anslutningen till SMTP-servern, men skickas inte.
+* **[!UICONTROL Test SMTP delivery]**: Använd det här alternativet om du vill testa att skicka via SMTP. Leveransen behandlas upp till anslutningen till SMTP-servern men skickas inte: för varje mottagare av leveransen ansluter Campaign till SMTP-providerservern, kör SMTP RCPT TO-kommandot och stänger anslutningen före SMTP DATA-kommandot.
 
    >[!NOTE]
    >
-   >Du bör inte använda det här alternativet när du installerar med mellanleverantörer för att inte anropa data. Mer information om hur du konfigurerar en SMTP-server finns i [till detta avsnitt](../../installation/using/configure-delivery-settings.md).
+   >* Det här alternativet rekommenderas inte för mellanleverantörer.
+   >
+   >* Läs mer om SMTP-serverkonfigurationen i [det här avsnittet](../../installation/using/configure-delivery-settings.md).
+
 
 * **[!UICONTROL Email BCC]**: Med det här alternativet kan du lagra e-post på ett externt system via BCC genom att helt enkelt lägga till en e-postadress för hemlig kopia till meddelandemålet. Mer information om detta finns i [det här avsnittet](sending-messages.md#archiving-emails).
 
