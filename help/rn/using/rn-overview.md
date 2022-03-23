@@ -7,9 +7,9 @@ role: User
 level: Beginner
 exl-id: 7a05fdff-8f9d-4e8d-812e-0f1509db5499
 source-git-commit: 29e56d6bf2817eeb863cbe33f99233a8241f2bf5
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '881'
-ht-degree: 53%
+ht-degree: 100%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 53%
 
 Varje ny version kommer med en status som visas med en färg.
 
-![](assets/do-not-localize/green3.png) **Allmän tillgänglighet** (GA) - Den senaste stabila versionen, validerad i produktion och rekommenderas av Adobe.
+![](assets/do-not-localize/green3.png) **Allmän tillgänglighet** (GA) – senaste stabila build, validerad i produktion och rekommenderad av Adobe.
 
 ![](assets/do-not-localize/limited3.png) **Begränsad tillgänglighet** (LA) – endast driftsättning på begäran.
 
@@ -35,45 +35,45 @@ Varje ny version kommer med en status som visas med en färg.
 
 Adobe Campaign uppdateras regelbundet. Denna regelbundna uppdateringsfrekvens syftar till att ge dig den senaste och bästa produkten, hålla din miljö säker och förbättra din upplevelse med produkten.
 
-Detta är anledningen till att det är viktigt att du **kör den senaste stabila versionen** Adobe Campaign. Det ser också till att du får en bättre supportupplevelse eftersom det oftast går mycket snabbare att identifiera, återskapa och åtgärda ett problem i en nyligen gjord version. Många problem som du kan råka ut för har redan åtgärdats i de senaste versionerna.
+Därför anser vi att det är viktigt att du **kör den senaste stabila versionen** av Adobe Campaign. Det säkerställer också att du får en bättre supportupplevelse eftersom det oftast går mycket snabbare att identifiera, återskapa och åtgärda ett problem i en ny build. Dessutom har många problem du kan stöta på redan åtgärdats i de senaste builderna.
 
 Som en värdbaserad användare har du automatiskt tillgång till uppgraderingen med den senaste stabila versionen utan någon åtgärd. Läs mer i [avsnittet Årlig uppgradering](#yearly-upgrade). Om du migrerar från en gammal build rekommenderar Adobe att du uppgraderar till den här versionen först.
 
 ## Rekommendationer{#recommendations}
 
-För att konfigurationen ska bli stabil rekommenderar Adobe att du installerar **samma bygge** på alla servrar som körs på samma klientkonfiguration.
+För att säkerställa en stabil konfiguration rekommenderar Adobe att du installerar **samma build** på alla servrar som körs på samma klientkonfiguration.
 
-Om inget annat anges i versionsinformationen måste dessutom klientkonsolen vara aktiverad **samma bygge** som serverinstansen.
+Om inget annat anges i versionsinformationen måste dessutom klientkonsolen vara på **samma build** som serverinstansen.
 
 Om du vill att implementeringen ska vara aktuell bör du läsa sidorna om de [inaktuella och borttagna funktionerna](../../rn/using/deprecated-features.md) samt [kompatibilitetsmatrisen](../../rn/using/compatibility-matrix.md) för varje ny version.
 
 ## Uppgraderingprocess{#process-upgrade}
 
-Som värdkund (Managed Service eller Hybrid) kontaktar du kundtjänstteamet för att få din miljö uppgraderad.
+Om du är värdbaserad kund (Managed Service eller hybrid) kontaktar du kundtjänstteamet för att få din miljö uppgraderad.
 
-Som lokal användare kan du utföra uppgraderingen. För att göra detta [ladda ned den senaste stabila versionen (GA)](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html) och uppgradera alla dina miljöer. Läs mer om [uppgraderingsprocessen](../../production/using/build-upgrade.md) och se [Vanliga frågor och svar om uppgradering av builds](../../platform/using/faq-build-upgrade.md).
+Som lokal användare kan du utföra uppgraderingen. Du gör detta genom att [hämta den senaste stabila builden (GA)](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html) och uppgradera alla dina miljöer. Läs mer om [uppgraderingsprocessen](../../production/using/build-upgrade.md) och se [Vanliga frågor och svar om uppgradering av builds](../../platform/using/faq-build-upgrade.md).
 
 ## Årlig uppgradering {#yearly-upgrade}
 
-Adobe strävar efter att ge dig bästa möjliga upplevelse och värde genom våra programvarulösningar. Organisationen strävar efter att se till att du har tillgång till de senaste versionerna av relaterad teknik som våra lösningar använder för att utföra sina uppgifter.
+Adobe strävar efter att ge dig bästa möjliga upplevelse och värde genom våra programvarulösningar. Organisationen vill säkerställa att du har tillgång till de senaste versionerna av relaterad teknik som våra lösningar utnyttjar för att utföra sina uppgifter.
 
-Adobe Campaign Classic använder en rad olika teknologier för att leverera värde. Den här kombinationen av tekniker kräver att du uppgraderar dina instanser i Campaign Classic regelbundet för att säkerställa att de senaste versionerna används för att leverera överlägsen säkerhet, stabilitet och prestanda.
+Adobe Campaign Classic använder en rad olika teknologier för att leverera värde. Den här kombinationen av tekniker kräver att du regelbundet uppgraderar dina instanser av Campaign Classic för att säkerställa att de senaste versionerna används, så att de kan leverera överlägsen säkerhet, stabilitet och prestanda.
 
-Som värdanvändare får du automatiskt uppgradering med den senaste GA-versionen utan någon åtgärd. Läs mer i Vanliga frågor och svar nedan.
+Som värdbaserad användare drar du automatiskt nytta av uppgraderingen med den senaste GA-versionen, utan någon åtgärd. Läs mer i Vanliga frågor och svar nedan.
 
 ### Varför behöver min organisation den här uppgraderingen?
 
-Om ditt konto har identifierats som en värdkund och behöver uppgradera en eller flera av teknikerna som är kopplade till Campaign Classic, samt uppdatera den aktuella versionen och/eller versionen, meddelar Adobe dig direkt.
+Adobe meddelar dig direkt om du är en värdbaserad kund och vi har identifierat att du behöver uppgradera en eller flera av teknikerna för Campaign Classic, samt uppdatera den aktuella builden och/eller versionen.
 
-Som en lokal- eller hybridkund som kör en äldre version uppmuntrar Adobe dig att gå över till den senaste stabila builden (GA).
+Som en lokal- eller hybridkund som kör en äldre version uppmuntrar Adobe dig att uppgradera till den senaste stabila builden (GA).
 
-Detta garanterar att ditt konto är säkert mot sårbarheter och att du använder uppdaterad prestandateknik. Den här uppgraderingen placerar även ditt konto för enklare, regelbundna uppgraderingar som kräver mindre manuellt arbete och åtgärder.
+Det här säkerställer att ditt konto är säkert mot sårbarheter samt använder uppdaterad prestandateknik. Den här uppgraderingen konfigurerar också ditt konto för enklare och regelbundna uppgraderingar i framtiden, som kräver mindre manuellt arbete och färre åtgärder.
 
 ### Hur ser uppgraderingen ut och när släpps den?
 
-Adobe-teamet är här för att leda och vägleda organisationen genom den här resan.
+Adobe-teamet leder och vägleder din organisation genom den här resan.
 
-Ett team med dedikerade kundtjänstrepresentanter, produktchefer, ingenjörer och TechOps-specialister och produktkonsulter är här för att hjälpa till och säkerställa att upplevelsen blir smidig.
+Vi har organiserat ett team med dedikerade kundtjänstassistenter, produktchefer, ingenjörer och TechOps-specialister samt produktkonsulter för att hjälpa till och säkerställa att upplevelsen är smidig.
 
 ### Fördelar
 
@@ -99,7 +99,7 @@ Ett team med dedikerade kundtjänstrepresentanter, produktchefer, ingenjörer oc
     <ul>
     <li>De flesta kritiska problemen går att lösa med uppgraderingar och kan undvikas.</li>
     <li>Regelbundna uppgraderingar hjälper till att minska utmaningar och öka effektiviteten genom att eliminera dessa utmaningar.</li>
-    <li>Volymen på kundtjänst minskar, vilket ger snabbare lösningar och mer uppmärksamhet åt problem som inte är relaterade till uppgraderingar.</li>
+    <li>Arbetsvolymen för kundtjänst minskar, vilket ger snabbare lösningar och mer uppmärksamhet åt de problem som inte är relaterade till uppgraderingar.</li>
     </ul>
   </td>
 </tr>
@@ -113,7 +113,7 @@ Ett team med dedikerade kundtjänstrepresentanter, produktchefer, ingenjörer oc
     <ul>
     <li>Med tiden kan Adobe Campaign-teamet hitta sätt att förbättra produktens stabilitet och prestanda samt korrigera kända fel.</li>
     <li>Uppgraderingen håller instansen uppdaterad med dessa förbättringar och eliminerar vanliga problem som kan uppstå i organisationer som har snabb tillväxt och/eller komplexitet i sina Campaign Classic-instanser.</li>
-    <li>Förbättringar i hela teknikhögen som driver Campaign Classic är märkbara både för marknadsförings- och IT-team i din organisation.</li>
+    <li>Förbättringar av hela teknikstacken i Campaign Classic märks på både marknadsförings- och IT-avdelningen i organisationen.</li>
     </ul>
   </td>
 
@@ -124,9 +124,9 @@ Ett team med dedikerade kundtjänstrepresentanter, produktchefer, ingenjörer oc
     </a>
     </div>
     <ul>
-    <li>Arbetet med att uppgradera din instans i Campaign Classic ökar med avståndet mellan två versioner (v5 —&gt; v7).</li>
+    <li>Arbetet och komplexiteten med att uppgradera din Campaign Classic-instans ökar med avståndet mellan två versioner (v5 --&gt; v7).</li>
     <li>Ju längre organisationen väntar, desto mer komplicerad blir uppgraderingen (och desto fler sårbarheter utsätts du för).</li>
-    <li>Regelbundna uppdateringar minskar tiden för uppgradering och risken för regression.</li>
+    <li>Regelbundna uppdateringar minskar längden på driftstoppen för att uppgradera och minskar risken för regression.</li>
     </ul>
   </td>
 </tr>
