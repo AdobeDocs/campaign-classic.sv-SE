@@ -7,9 +7,9 @@ role: User
 level: Beginner
 exl-id: b8c1f287-06f4-4c34-8cca-b0c7676abbc2
 source-git-commit: 0cebe1ed2cd045559393c1914258593d608e50a0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '725'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -40,7 +40,7 @@ Besök [den här sidan](../../rn/using/deprecated-features.md) för mer informat
 <tr> 
 <td>CentOs</td>
 <td>
-<p>8.x (64 bitars) </br><strong>Viktigt:</strong> CentOS Linux 8 når slutet av sin livscykel (EOL, End Of Life) den 31 december 2021. Mer information finns på sidan <a href="../../rn/using/deprecated-features.md">Inaktuella funktioner</a>.</p>
+<p>8.x (64 bitars)  </br><strong>Viktigt:</strong> CentOS Linux 8 når slutet av sin livscykel (EOL, End Of Life) den 31 december 2021. Mer information finns på sidan <a href="../../rn/using/deprecated-features.md">Inaktuella funktioner</a>.</p>
 <p>7.x (64 bitars)</p>
 <p><strong>Viktigt:</strong> Om du använder RHEL måste du kunna inaktivera SELinux eller låta dina utvecklare skriva anpassade SELinux-regler för att kontrollera att en aktiverad SELinux inte orsakar problem med åtgärder i Campaign.</p>
 </td>
@@ -79,7 +79,7 @@ Besök [den här sidan](../../rn/using/deprecated-features.md) för mer informat
 <tr>
 <td>Microsoft IIS</td>
 <td>
-<p>10.0 i Windows Server 2016 och 2019</p>
+<p>10.0 i Windows Server 2016  och 2019</p>
 <p>8.5 i Windows Server 2012 R2</p>
 <p>8.0 i Windows Server 2012 – Windows 8</p>
 </td>
