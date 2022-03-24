@@ -4,9 +4,9 @@ title: Kampanjwebbkomponenter och version 100 i Chrome- och Firefox-webbläsare
 description: Kampanjwebbkomponenter och version 100 i Chrome- och Firefox-webbläsare
 hide: true
 hidefromtoc: true
-source-git-commit: 88148b70de408de7571166e1869c088e10e87bae
+source-git-commit: d238f0aa28289c69c91dc6a028792260708ed9f3
 workflow-type: tm+mt
-source-wordcount: '623'
+source-wordcount: '619'
 ht-degree: 0%
 
 ---
@@ -25,7 +25,7 @@ Potentiella problem eller funktionsförlust på webbplatsen kommer från använd
 
 ## Påverkas du?{#version-100-impact}
 
-Adobe rekommenderar att du testar dina Campaign-webbprogram, inklusive webbformulär och enkäter samt e-postspegelsidor, så att de fortfarande fungerar som de ska med de nya webbläsarversionerna.
+Adobe rekommenderar att du testar dina Campaign-webbprogram, inklusive webbformulär och enkäter, så att de fortfarande fungerar bra med de nya webbläsarversionerna.
 
 Den här rekommendationen gäller alla webbprogram, särskilt om du har inkluderat JavaScript-kod.
 
