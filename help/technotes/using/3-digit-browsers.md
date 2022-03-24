@@ -4,31 +4,26 @@ title: Kampanjwebbkomponenter och version 100 i Chrome- och Firefox-webbläsare
 description: Kampanjwebbkomponenter och version 100 i Chrome- och Firefox-webbläsare
 hide: true
 hidefromtoc: true
-source-git-commit: 68049d1905524b644794799348bd6387b2afed0d
+source-git-commit: 88148b70de408de7571166e1869c088e10e87bae
 workflow-type: tm+mt
-source-wordcount: '618'
+source-wordcount: '623'
 ht-degree: 0%
 
 ---
 
-# Kampanjwebbkomponenter och version 100 i Chrome- och Firefox-webbläsare {#version-100}
-
-## Vad {#what-version-100}
+# Chrome och Firefox v100 påverkar webbkomponenterna i Campaign {#version-100}
 
 Google och Mozilla varnar för att Chrome och Firefox kan bryta ned vissa webbplatser på grund av kommande 3-siffriga versioner.
+
 Ändringen av versionsnumret från 2 till 3 siffror kan orsaka vissa problem när du besöker webbplatser som inte är förberedda för den här ändringen. Vissa webbsidor kan sluta visas korrekt i de nya webbläsarversionerna.
-
-Mozilla och Google testar kompatibiliteten hos större webbplatser i förväg. Om det uppstår problem med webbplatser som de inte kan åtgärda innan de här versionerna har släppts, har båda planer för säkerhetskopiering som säkerställer att webbplatserna inte påverkas.
-
-## Varför {#why-version-100}
-
-Potentiella problem eller funktionsförlust på webbplatsen kommer från användaragentsträngen som webbläsare skickar till webbplatser som du besöker: användaragenten är en sträng som skickas av webbläsaren till webbplatsen för att tala om vilken webbläsare och version du använder samt tillhörande teknik. När webbläsaren skickar en begäran till en webbplats identifieras den med användaragentsträngen innan innehållet som du begärde hämtas. Data i användaragentsträngen hjälper webbplatsen att leverera innehållet i ett format som passar din webbläsare. Versionen av användaragenten ökas så att den matchar webbläsarens versionsnummer. Att gå från 2 till 3 siffror kan orsaka problem.
-
-## When {#when-version-100}
 
 Chrome v100 är inställd för release den **29 mars 2022** och Firefox v100 på **3 maj 2022**.
 
-## Plats {#where-version-100}
+Mozilla och Google testar kompatibiliteten hos större webbplatser i förväg. Om det uppstår problem med webbplatser som de inte kan åtgärda innan de här versionerna har släppts, har båda planer för säkerhetskopiering som säkerställer att webbplatserna inte påverkas.
+
+Potentiella problem eller funktionsförlust på webbplatsen kommer från användaragentsträngen som webbläsare skickar till webbplatser du besöker: användaragenten är en sträng som skickas av webbläsaren till webbplatsen för att tala om vilken webbläsare och version du använder samt tillhörande teknik. När webbläsaren skickar en begäran till en webbplats identifieras den med användaragentsträngen innan innehållet som du begärde hämtas. Data i användaragentsträngen hjälper webbplatsen att leverera innehållet i ett format som passar din webbläsare. Versionen av användaragenten ökas så att den matchar webbläsarens versionsnummer. Att gå från 2 till 3 siffror kan orsaka problem.
+
+## Påverkas du?{#version-100-impact}
 
 Adobe rekommenderar att du testar dina Campaign-webbprogram, inklusive webbformulär och enkäter samt e-postspegelsidor, så att de fortfarande fungerar som de ska med de nya webbläsarversionerna.
 
@@ -36,11 +31,11 @@ Den här rekommendationen gäller alla webbprogram, särskilt om du har inkluder
 
 Du måste kontrollera både med Firefox och Chrome, mobil och dator.
 
-## Hur {#how-version-100}
+## Hur testar man?{#version-100-test}
 
-I Chrome och Firefox Nightly kan du konfigurera webbläsaren så att den rapporterar versionen som 100 just nu och korrigera eventuella problem du stöter på.
+I Chrome och Firefox kan du konfigurera webbläsaren så att den rapporterar versionen som 100 just nu, och sedan rapportera och korrigera eventuella problem du stöter på.
 
-### Firefox 100{#test-firefox-100}
+### Testa med Firefox 100{#test-firefox-100}
 
 Om du vill testa dina webbsidor med Mozilla Firefox 100 kan du simulera den kommande användaragentändringen i dina webbprogram genom att manuellt ändra användaragentsträngen.
 
@@ -63,7 +58,7 @@ Med de här inställningarna skickar webbläsaren den nya användaragentstränge
 
 Gå tillbaka till `about:config` och söka efter `general.useragent.override` igen.  När den visas klickar du på papperskorgsikonen för att ta bort inställningen och startar om webbläsaren.
 
-### Krom 100{#test-chrome-100}
+### Testa med Chrome 100{#test-chrome-100}
 
 Om du vill testa Google Chrome 100-användaragenten i dina egna webbprogram kan du aktivera det här testet genom att följa de här stegen:
 
