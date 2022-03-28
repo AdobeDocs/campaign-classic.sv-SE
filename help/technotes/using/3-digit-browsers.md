@@ -2,11 +2,10 @@
 product: campaign
 title: Kampanjwebbkomponenter och version 100 i webbläsarna Chrome Firefox och Edge
 description: Kampanjwebbkomponenter och version 100 i webbläsarna Chrome, Firefox och Edge
-hide: true
-hidefromtoc: true
-source-git-commit: 8b790141342f85769aa6c9663c2e9a34b504e2c5
+exl-id: 2016279a-7b02-4399-b2ed-9a15456de816
+source-git-commit: b8329e24f07ec8b3dd89f655b47699f130266008
 workflow-type: tm+mt
-source-wordcount: '635'
+source-wordcount: '634'
 ht-degree: 0%
 
 ---
@@ -31,7 +30,7 @@ Adobe rekommenderar att du testar dina Campaign-webbprogram, inklusive webbformu
 
 Den här rekommendationen gäller alla webbprogram, särskilt om du har inkluderat JavaScript-kod.
 
-Du måste kontrollera båda med alla webbläsare, mobiler och datorer.
+Du måste kontrollera med alla webbläsare, mobiler och datorer.
 
 ## Hur testar man?{#version-100-test}
 
