@@ -4,7 +4,7 @@ title: Definiera e-postinnehållet i Adobe Campaign Classic
 description: Lär dig hur du definierar e-postinnehåll när du använder Adobe Campaign Classic.
 feature: Email Design
 exl-id: 46212929-fd2d-44a2-897e-35f98e88af36
-source-git-commit: 56459b188ee966cdb578c415fcdfa485dcbed355
+source-git-commit: f5bd8c1806440b47225130070e166d90d99dcc75
 workflow-type: tm+mt
 source-wordcount: '1990'
 ht-degree: 1%
@@ -65,7 +65,7 @@ Du kan även infoga uttryckssymboler på ämnesraden med **[!UICONTROL Insert em
 
 Innehållet i meddelandet definieras i det nedre avsnittet av fönstret för leveranskonfiguration.
 
-Meddelanden skickas som standard i HTML eller textformat enligt mottagarens önskemål. Vi rekommenderar att du skapar innehåll i båda formaten för att säkerställa att meddelanden visas korrekt i alla e-postsystem. Mer information finns i [Välja meddelandeformat](#selecting-message-formats).
+Meddelanden skickas som standard i HTML eller textformat enligt mottagarens önskemål. Vi rekommenderar att du skapar innehåll i båda formaten för att säkerställa att meddelanden visas korrekt i alla e-postsystem. Mer information finns i [Välja meddelandeformat](email-parameters.md#selecting-message-formats).
 
 * Om du vill importera ett HTML-innehåll använder du **[!UICONTROL Open]** -knappen. Du kan också klistra in källkoden direkt i **[!UICONTROL Source]** underflik.
 
