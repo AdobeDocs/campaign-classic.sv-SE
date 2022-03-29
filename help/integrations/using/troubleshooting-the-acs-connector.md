@@ -6,9 +6,9 @@ audience: integrations
 content-type: reference
 topic-tags: acs-connector
 exl-id: 4693dca1-ee55-43f0-b3dc-62a5b67a8058
-source-git-commit: c54102b2ec32fbea89ce41dd3c9fedb98e612996
+source-git-commit: 1bb1365ce5a4eb89447c5d736a42cd470c7f3bba
 workflow-type: tm+mt
-source-wordcount: '781'
+source-wordcount: '870'
 ht-degree: 0%
 
 ---
@@ -112,3 +112,11 @@ Beroende på implementeringen kan du stöta på flera vanliga problem.
 * **Jag kan inte redigera en profil, en målgrupp eller en landningssida i Campaign Standarden. Vad betyder det?**
 
    Resurser som synkroniseras från Campaign v7 är i skrivskyddat läge i Campaign Standard för att säkerställa att data är konsekventa. Om du behöver redigera något av dessa element kan du göra det i Campaign v7 och sedan replikera ändringen av Campaign Standarden.
+
+* **Fel inträffar i [ACS] Arbetsflöde för replikering av profilleveranslogg. Vad ska jag göra?**
+
+   Om både Campaign Classic och Campaign Standard-instanser används för att skicka e-postmeddelanden med spårade URL:er kan ett problem med duplicerade URL-tagg-ID:n uppstå under synkroniseringen. I det här fallet **[ACS] Replikering av profilleveranslogg** (newRcpDeliveryLogReplication) arbetsflödet misslyckas fortfarande med följande fel:
+
+   ```PGS-220000 PostgreSQL error: ERROR: duplicate key value violates unique constraint "nmstrackingurl_tagid" DETAIL: Key (stagid) = (1c7bdec2) already exists.```
+
+   Uppdatera **Uppdatera spårnings-URL:er** (writerTrackingUrls)-aktivitet i arbetsflödet och lägg till prefixet&quot;ACS&quot; i @tagId-källuttrycket.

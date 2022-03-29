@@ -6,10 +6,10 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: d60d67de-6618-4f3b-be4a-ad7633ab5645
-source-git-commit: 966da123b30278817ca465ac5dfe1f733c4d6c5c
+source-git-commit: 1bb1365ce5a4eb89447c5d736a42cd470c7f3bba
 workflow-type: tm+mt
-source-wordcount: '1707'
-ht-degree: 100%
+source-wordcount: '1730'
+ht-degree: 97%
 
 ---
 
@@ -215,7 +215,7 @@ Campaign Classic är inte kompatibelt med följande servrar i federerad dataåtk
 
 * DB2 UDB 9.5 och 9.7. Stöd finns för senare versioner av DB2 via federerad dataåtkomst (FDA). [Läs mer](https://www-01.ibm.com/support/docview.wss?uid=swg21168270)
 * Oracle 9i och 10G R2. Stöd finns för senare versioner av Oracle Server via federerad dataåtkomst (FDA). [Läs mer](https://www.oracle.com/us/support/library/lifetime-support-technology-069183.pdf)
-* PostgreSQL 8.3, 8.4, 9.0, 9.1 och 9.2. Stöd finns för senare versioner av PostgreSQL via federerad dataåtkomst (FDA). [Läs mer](https://www.postgresql.org/support/versioning)
+* PostgreSQL-versioner upp till 9,6 har nått slutet av livscykeln. Senare versioner av PostgreSQL stöds via FDA (Federated Data Access). [Läs mer](https://www.postgresql.org/support/versioning)
 * MSSQL 2000, 2005 och 2008 R2. Stöd finns för senare versioner av SQL Server via federerad dataåtkomst (FDA). [Läs mer](https://support.microsoft.com/en-us/lifecycle/search/1044)
 * MySQL 5.1. Stöd finns för senare versioner av MySQL via federerad dataåtkomst (FDA). [Läs mer](https://en.wikipedia.org/wiki/InfiniDB)
 * InfiniDB har nått slutet av sin livscykel. [Läs mer](https://www.mysql.com/support)
@@ -234,6 +234,8 @@ Från och med vårversionen 19.1 är Adobe Campaign inte längre kompatibelt med
 * SQL Server 2005
 * MySQL 5.1
 * DB2 UDB 9.7
+
+PostgreSQL-versioner upp till 9,6 har nått slutet av livscykeln. De stöds därför inte av Adobe Campaign.
 
 ### SMS-kopplingar {#sms-eol}
 
