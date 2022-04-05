@@ -4,10 +4,10 @@ title: Om kampanjtypologier
 description: Om kampanjtypologier
 feature: Typology Rules
 exl-id: 6d5b8584-4aa1-4d9a-89d9-d41da75dd323
-source-git-commit: 36e546a34d8c2345fefed5d459095a76c6224a38
+source-git-commit: f4513834cf721f6d962c7c02c6c64b2171059352
 workflow-type: tm+mt
-source-wordcount: '483'
-ht-degree: 17%
+source-wordcount: '468'
+ht-degree: 18%
 
 ---
 
@@ -78,8 +78,6 @@ Trötthetshanteringen styr frekvens och antal meddelanden för att undvika över
 Det finns ytterligare utbildningsvideor för Campaign [här](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=sv).
 
 **Relaterat ämne**
-
-* [Använd automatiska affärsregler på leveranser i alla kanaler](https://helpx.adobe.com/campaign/kb/simplifying-campaign-management-acc.html#Applyautomaticbusinessrulestodeliveriesonanychannel)
 
 * [Kom igång med typologier och trötthetshantering](pressure-rules.md)
 

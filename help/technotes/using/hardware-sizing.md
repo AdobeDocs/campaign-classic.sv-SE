@@ -3,7 +3,7 @@ product: campaign
 title: Rekommendationer för maskinvarustorlek för Campaign Classic v7
 description: Rekommendationer för maskinvarustorlek för Campaign Classic v7
 exl-id: c47e73a0-dbd8-43f5-a363-7e6783dc7685
-source-git-commit: ee296e0ce25570d1fe62238e505f978df17c1f24
+source-git-commit: f4513834cf721f6d962c7c02c6c64b2171059352
 workflow-type: tm+mt
 source-wordcount: '2512'
 ht-degree: 1%
@@ -60,7 +60,7 @@ Kampanjwebbprogram kan också distribueras på marknadsinstansens appservrar ell
 
 För säkerhets- och tillgänglighetens skull rekommenderar Adobe att trafiken på Internet skiljs från den trafik som genereras av företagsanvändarna. Av den anledningen innehåller diagrammen två grupper med servrar: webbservern (Internet-inriktad mot Web1 och Web2) och programservrarna (affärsprocesserna App1 och App2).
 
-Det är ett juridiskt krav att e-postavsändare som är kommersiellt ska ha en fungerande avanmälningswebbsida. Adobe rekommenderar att det finns en redundant dator i varje gruppserver för redundansväxling. Det gäller särskilt om Adobe Campaign är värd för avanmälningssidorna.
+Det är ett juridiskt krav att e-postavsändare som är kommersiellt ska ha en funktionell avanmälningswebbsida. Adobe rekommenderar att det finns en redundant dator i varje gruppserver för redundansväxling. Det gäller särskilt om Adobe Campaign är värd för avanmälningssidorna.
 
 ### Invertera proxy
 
@@ -87,7 +87,7 @@ Beräknad volym:
 | Aktiva mottagare | 5 miljoner |
 | E-post | 4,2 miljoner/månad |
 | Direktmeddelande | 1 miljon/månad |
-| SMS för mobiler | 100 000/månad |
+| Mobile SMS | 100 000/månad |
 | Högsta dagliga e-postvolym | 500 |
 
 För dessa volymer har ett par Adobe Campaign-system alla funktioner för Adobe Campaign Client-användare och arbetsflödeskörning. För 5 miljoner aktiva mottagare och den här e-postvolymen är arbetsbelastningen på applikationsservern inte processor- eller I/O-intensiv. Större delen av stressen ligger i databasen.
@@ -136,7 +136,7 @@ Beräknad volym:
 | Aktiva mottagare | 20 miljoner |
 | E-post | 42 miljoner/månad |
 | Direktmeddelande | 10 miljoner/månad |
-| SMS för mobiler | 1 000 000/månad |
+| Mobile SMS | 1 000 000/månad |
 | Högsta dagliga e-postvolym | 5 000 000 |
 
 ### Webb- och programservrar
@@ -172,7 +172,7 @@ Beräknad volym:
 | Aktiva mottagare | 50 miljoner |
 | E-post | 108 miljoner/månad |
 | Direktmeddelande | 25 miljoner/månad |
-| SMS för mobiler | 2,5 miljoner/månad |
+| Mobile SMS | 2,5 miljoner/månad |
 | Transaktionsmeddelanden | 2,5 miljoner/månad |
 | Högsta dagliga e-postvolym | 2,5 miljoner |
 
@@ -252,7 +252,7 @@ Klustrade servrar, till exempel redundanta programservrar under en belastningsut
 Alla rekommenderade RAID-konfigurationer måste upprätthållas för databassäkerhet för att säkerställa att en förlust av en lagringsenhet inte orsakar dataförlust.
 
 * **I/O-prestanda**
-Den rekommenderade IOPS-klassificeringen för databaslagring måste respekteras. Molntjänster som Amazon EC2 kanske inte ger den prestanda som krävs och måste utvärderas noggrant. Amazon EC2-provisionerade SSD-volymer är till exempel för närvarande klassificerade till 20 000 IOPS var. Läs mer i [Amazon-dokumentation](http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/EBSVolumeTypes.html)så en RAID-konfiguration med 4 volymer skulle få värdet 80 000 IOPS, vilket kanske inte är tillräckligt.
+Den rekommenderade IOPS-klassificeringen för databaslagring måste respekteras. Molntjänster som Amazon EC2 kanske inte ger den prestanda som krävs och måste utvärderas noggrant. Amazon EC2-provisionerade SSD-volymer är till exempel för närvarande klassificerade till 20 000 IOPS var. Läs mer i [Amazon-dokumentation](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ebs-volume-types.html)), så en RAID-konfiguration med 4 volymer skulle klassas som 80 000 IOPS, vilket kanske inte är tillräckligt.
 
 Adobe rekommenderar prestandatestning för virtualiserad driftsättning av Adobe Campaign innan systemet börjar användas.
 

@@ -3,9 +3,9 @@ product: campaign
 title: Campaign Classic 2019-versioner
 description: Läs mer om Campaign Classic 2019-versioner
 exl-id: 8a36a542-e095-4208-b624-e59845592863
-source-git-commit: 0f31ee570ba6e763f48902e91c5d823ac297fc24
+source-git-commit: f4513834cf721f6d962c7c02c6c64b2171059352
 workflow-type: tm+mt
-source-wordcount: '4843'
+source-wordcount: '4825'
 ht-degree: 24%
 
 ---
@@ -277,7 +277,7 @@ _15 september 2020_
 * Korrigerade ett regressionsproblem i databasanslutningen som orsakade att webbservern hela tiden startades om på grund av ett problem med databaskodningen. Detta kan leda till överkonsumtion. (NEO-23264)
 * Korrigerade ett problem med arbetsflödet för databasrensning som kunde sluta fungera på grund av en ohanterad datakälla. (NEO-23160 och NEO-23364)
 * Arbetsflödet för rensning tömmer nu utgångna listor med grupper om 100 i stället för en i taget.
-* Efter bytet till [mekanismen för nytt sekvens-ID](https://helpx.adobe.com/se/campaign/kb/sequence_auto_generation.html#Switchtoadedicatedsequence) publiceras alla webbapplikationer som uppdaterar mottagartabellen på nytt, under efteruppgraderingen.
+* Efter bytet till mekanismen för nytt sekvens-ID publiceras alla webbapplikationer som uppdaterar mottagartabellen på nytt, under efteruppgraderingen.
 * Ett problem som förhindrade att e-post skickades när det fanns Javascript-kod utanför innehållstaggen för HTML har åtgärdats. (NEO-18628)
 * Ett problem som förhindrade att spårningsindikatorerna för transaktionsmeddelanden uppdaterades i arbetsflödet för spårning har åtgärdats. (NEO-17770)
 * Förbättrade prestanda för guiden Databasuppdatering för att göra färre SQL-satser för att optimera svarstiden.
@@ -401,7 +401,7 @@ _30 maj 2019_
 
 **Förbättringar av säkerhetsfunktioner, stabilitet och skalbarhet**
 
-* Lifespan - XtkNewId-sekvensoptimering: de mest använda tabellerna har flyttats från xtkNewId-sekvensen till dedikerade sekvenser. [Läs mer](https://helpx.adobe.com/campaign/kb/sequence_auto_generation.html#Switchtoadedicatedsequence)
+* Lifespan - XtkNewId-sekvensoptimering: de mest använda tabellerna har flyttats från xtkNewId-sekvensen till dedikerade sekvenser.
 * FDA över HTTP v2: FDA över HTTP-protokollet används ofta vid hybriddriftsättningar, särskilt vid hämtning av breda loggar och leveransförberedelser. Robusiteten har förbättrats för att undvika nätverksproblem och eventuella fel som hämtning eller överföring av data. Detta kräver att byggen i båda ändar av anslutningen är uppdaterade, annars kommer det gamla protokollet fortfarande att användas.
 * Arbetsflöde för spårning: spårningsarbetsflödets tillförlitlighet har förbättrats. Flera problem med att spåra logginfogningar/uppdateringar och anpassning av URL-spårning har åtgärdats. Dessutom upptäcker arbetsflödet nu loggproblem som kan leda till fel och stoppa arbetsflödet. Dessa problem har nu ignorerats och bearbetats inte.
 * Rensningsarbetsflöde: rensningsarbetsflödet har förbättrats för att undvika potentiella fel och stopp. Detta optimerar databasens storlek och prestanda.

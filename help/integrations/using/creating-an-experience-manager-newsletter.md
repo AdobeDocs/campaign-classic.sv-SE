@@ -5,9 +5,9 @@ description: Skapa ett Experience Manager-nyhetsbrev
 audience: integrations
 content-type: reference
 exl-id: 9fa3ce08-3007-4c65-9841-bad339428b7c
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: f4513834cf721f6d962c7c02c6c64b2171059352
 workflow-type: tm+mt
-source-wordcount: '296'
+source-wordcount: '275'
 ht-degree: 1%
 
 ---
@@ -17,8 +17,6 @@ ht-degree: 1%
 ![](../../assets/common.svg)
 
 Den här integreringen kan till exempel användas för att skapa ett nyhetsbrev i Adobe Experience Manager som sedan används i Adobe Campaign som en del av en e-postkampanj.
-
-Ett mer detaljerat exempel på hur du använder den här integreringen finns i [steg-för-steg-guide](https://helpx.adobe.com/campaign/kb/acc-aem.html).
 
 **Från Adobe Experience Manager:**
 

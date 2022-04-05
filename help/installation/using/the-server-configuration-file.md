@@ -6,9 +6,9 @@ audience: installation
 content-type: reference
 topic-tags: appendices
 exl-id: 70cd6a4b-c839-4bd9-b9a7-5a12e59c0cbf
-source-git-commit: 6b7ec6b39a79e9b1e6e2bba3d5193765094cf4fd
+source-git-commit: f4513834cf721f6d962c7c02c6c64b2171059352
 workflow-type: tm+mt
-source-wordcount: '7969'
+source-wordcount: '7961'
 ht-degree: 5%
 
 ---
@@ -708,7 +708,7 @@ Här är de olika parametrarna för **ims** nod. Detta är konfigurationen för 
 
 Här är de olika parametrarna för **javaScript** nod. Detta är konfigurationen för JavaScript-tolken.
 
-Mer information finns i [Rapporteringsdokumentation](../../reporting/using/actions-on-reports.md#memory-allocation) och [technote](https://helpx.adobe.com/campaign/kb/out-of-memory-error-in-js-code-activity-in-workflows.html).
+Mer information finns i [Rapporteringsdokumentation](../../reporting/using/actions-on-reports.md#memory-allocation).
 
 <table> 
  <thead> 
@@ -1028,11 +1028,11 @@ Om en post uppfyller **dnsSuffix** men inte **urlRegEx**, undersöks följande p
 
 Om du till exempel vill tillåta åtkomst till alla URL:er för domänen business.com kan vi definiera två poster:
 
-dnsSuffix=&quot;business.com&quot; urlRegEx=&quot;http://.*&quot;
+dnsSuffix=&quot;business.com&quot; urlRegEx=&quot;http://.&#42;&quot;
 
-och
+och 
 
-dnsSuffix=&quot;business.com&quot; urlRegEx=&quot;https://.*&quot;
+dnsSuffix=&quot;business.com&quot; urlRegEx=&quot;https://.&#42;&quot;
 
 Här är standardkonfigurationen:
 

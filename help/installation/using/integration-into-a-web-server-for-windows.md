@@ -6,9 +6,9 @@ audience: installation
 content-type: reference
 topic-tags: installing-campaign-in-windows-
 exl-id: 041c4431-baae-4e64-9e9a-0daa5123bd8a
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: f4513834cf721f6d962c7c02c6c64b2171059352
 workflow-type: tm+mt
-source-wordcount: '971'
+source-wordcount: '968'
 ht-degree: 4%
 
 ---
@@ -24,7 +24,7 @@ Du kan använda den här integrerade Tomcat-servern för att hantera HTTP-begär
 I detta fall:
 
 * Standardlyssningsporten är 8080. Om du vill ändra den kan du läsa [det här avsnittet](../../installation/using/configure-tomcat.md).
-* Klientkonsolerna ansluter sedan med en URL som [https:// `<computer>`:8080](https://myserver.adobe.com:8080).
+* Klientkonsolerna ansluter sedan med en URL som ```https:// `<computer>`:8080```.
 
 Av säkerhets- och administrationsskäl rekommenderar vi dock att du använder en dedikerad webbserver som huvudstartpunkt för HTTP-trafik när datorn som kör Adobe Campaign exponeras på Internet och du vill öppna konsolen utanför nätverket.
 

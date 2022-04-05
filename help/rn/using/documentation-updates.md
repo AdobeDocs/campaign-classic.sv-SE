@@ -6,9 +6,9 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: 07c1f4a3-cf16-4a9b-b402-e13258799f91
-source-git-commit: 1bb1365ce5a4eb89447c5d736a42cd470c7f3bba
+source-git-commit: f4513834cf721f6d962c7c02c6c64b2171059352
 workflow-type: tm+mt
-source-wordcount: '4961'
+source-wordcount: '4892'
 ht-degree: 99%
 
 ---
@@ -297,8 +297,6 @@ Matrisen med funktionerna i Campaign per värdmodell har uppdaterats och flyttat
 Avsnittet med avancerade funktioner i Campaign Reporting har förbättrats så att det beskriver hur URL-parametrar och -variabler används i anpassade rapporter. [Läs mer](../../reporting/using/advanced-functionalities.md)
 
 Sidan med rapportegenskaper har omorganiserats och förbättrats för att underlätta konfigurationen. [Läs mer](../../reporting/using/properties-of-the-report.md)
-
-Ett nytt tekniskt dokument har skapats med information om hur du migrerar från det gamla binära protokollet till HTTP/2-baserade API:er från APN-leverantören. [Läs mer](https://helpx.adobe.com/se/campaign/kb/migrate-to-apns-http2.html)
 
 ### September 2020 {#september-2020}
 
@@ -668,13 +666,11 @@ Information har lagts till om faktureringsrapporten.
 Dokumentation om integrationen mellan delade publiker har uppdaterats.
 [Läs mer](../../integrations/using/configuring-shared-audiences-integration-in-adobe-campaign.md)
 
-Följande tekniska dokumentation har uppdaterats: [SMS-kopplingsprotokoll och -inställningar](https://helpx.adobe.com/campaign/kb/sms-connector-protocol-and-settings.html) och [Automatisk sekvensgenerering](https://helpx.adobe.com/se/campaign/kb/sequence_auto_generation.html#Switchtoadedicatedsequence).
+Följande teknik har uppdaterats: [Protokoll och inställningar för SMS-anslutning](https://helpx.adobe.com/campaign/kb/sms-connector-protocol-and-settings.html).
 
 Avsnittet Tekniskt arbetsflöde har uppdaterats. [Läs mer](../../workflow/using/about-technical-workflows.md)
 
 Inställningsproceduren för domännamnet i Campaign har förbättrats och uppdaterats.
-
-Migreringsproceduren för Android-appar från Google Cloud Messaging (GCM) till Firebase Cloud Messaging (FCM) har uppdaterats. [Läs mer](https://helpx.adobe.com/se/campaign/kb/migrate-to-fcm.html)
 
 Handboken Ändra storlek på maskinvara i Campaign har uppdaterats. [Läs mer](https://helpx.adobe.com/se/campaign/kb/hardware-sizing-guide.html)
 

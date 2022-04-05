@@ -6,9 +6,9 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: e612a4e7-f4ef-4db4-afab-5544b73430d3
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: f4513834cf721f6d962c7c02c6c64b2171059352
 workflow-type: tm+mt
-source-wordcount: '394'
+source-wordcount: '366'
 ht-degree: 7%
 
 ---
@@ -21,7 +21,6 @@ ht-degree: 7%
 
 Kom igång med Adobe Campaign genom att läsa våra intuitiva stegvisa guider.
 
-* [Redigera e-postinnehåll med Adobe Experience Manager](https://helpx.adobe.com/campaign/kb/acc-aem.html): Lär dig grunderna för att komma igång med integrationen mellan Adobe Campaign och Experience Manager.
 * [Integritetshantering](https://helpx.adobe.com/se/campaign/kb/acc-privacy.html): Upptäck vad Adobe Campaign Classic tillhandahåller för att hjälpa dig att uppfylla din sekretesskrav när du använder vår tjänst.
 * [Integrera dynamiskt innehåll i ett e-postmeddelande](https://experienceleague.adobe.com/docs/campaign-classic/using/integrating-with-adobe-experience-cloud/adobe-target/inserting-a-dynamic-image.html): Upptäck grunderna för att komma igång med integrationen mellan Campaign Classic och Target Standard.
 * [Hantera leveranser](../../delivery/using/about-deliverability.md): Lär dig mer om koncept och bästa metoder för att leverera samt de verktyg som Adobe Campaign Classic erbjuder för att optimera leveransen.

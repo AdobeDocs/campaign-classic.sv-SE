@@ -3,9 +3,9 @@ product: campaign
 title: Technote - Adobe Campaign-konfigurationsuppdateringar
 description: Adobe Campaign konfigurationsuppdateringar
 exl-id: 7db02123-2e2a-40d9-8385-728ff69985e4
-source-git-commit: 0f31ee570ba6e763f48902e91c5d823ac297fc24
+source-git-commit: f4513834cf721f6d962c7c02c6c64b2171059352
 workflow-type: tm+mt
-source-wordcount: '1137'
+source-wordcount: '1125'
 ht-degree: 12%
 
 ---
@@ -101,7 +101,7 @@ När alla instanser har uppgraderats måste även klientkonsolen uppgraderas til
 
 ## Integrering med utlösare från Experience Cloud {#acc-triggers-updates}
 
-Den gamla autentiseringstjänsten för autentisering har nått slutet av livscykeln. Autentisering av utlösarintegration, som ursprungligen baserades på AUTH-autentiseringsinställningar för åtkomst till pipeline, har flyttats till Adobe I/O. Äldre autentiseringsmodell med Campaign [har tagits ur bruk](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-discussions/adobe-analytics-legacy-api-end-of-life-notice/td-p/385411) på **September 2021**. Värdmiljöer drar nytta av ett tillägg fram till  **23 februari 2022**. Kontakta Adobe kundtjänst för support på plats eller som hybridkund till februari 2022. Du måste ange [AppID:et för OAuth-programmet](../../integrations/using/configuring-pipeline.md?lang=en#step-optional) till Adobe.
+Den gamla autentiseringstjänsten för autentisering har nått slutet av livscykeln. Autentisering av utlösarintegration, som ursprungligen baserades på AUTH-autentiseringsinställningar för åtkomst till pipeline, har flyttats till Adobe I/O. Äldre autentiseringsmodell med Campaign [har tagits ur bruk](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-discussions/adobe-analytics-legacy-api-end-of-life-notice/td-p/385411) på **September 2021**. Värdmiljöer drar nytta av en förlängning till **23 februari 2022**. Kontakta Adobe kundtjänst för support på plats eller som hybridkund till februari 2022. Du måste ange [AppID:et för OAuth-programmet](../../integrations/using/configuring-pipeline.md?lang=en#step-optional) till Adobe.
 
 **Påverkas du?**
 
@@ -140,7 +140,7 @@ Lär dig hur du kontrollerar din version [i det här avsnittet](../../platform/u
 
 Om du är en värdkund och har uppgraderat till den nya versionen har Adobe redan uppdaterat dina instanser till det HTTP/2-baserade API:t.
 
-Som lokal/hybridkund måste du uppdatera din konfiguration. [Lär dig hur du migrerar till HTTP/2](https://helpx.adobe.com/se/campaign/kb/migrate-to-apns-http2.html)
+Som lokal/hybridkund måste du uppdatera din konfiguration.
 
 ### Uppdateringar av APN:s rotcertifikat
 

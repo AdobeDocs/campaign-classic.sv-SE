@@ -4,10 +4,10 @@ title: God praxis för datamodell
 description: Lär dig hur du arbetar med datamodellen Campaign Classic
 feature: Data Model
 exl-id: 9c59b89c-3542-4a17-a46f-3a1e58de0748
-source-git-commit: 3997412f14666fa61bf71d0f0a0653f5cc042e19
+source-git-commit: f4513834cf721f6d962c7c02c6c64b2171059352
 workflow-type: tm+mt
-source-wordcount: '4007'
-ht-degree: 1%
+source-wordcount: '3988'
+ht-degree: 0%
 
 ---
 
@@ -148,9 +148,7 @@ När en anpassad tabell skapas i Adobe Campaign med en primärnyckel som autoPK,
 
 Som standard har en anpassad sekvens värden mellan +1 000 och +2,1BB. Tekniskt sett är det möjligt att få ett fullständigt urval av 4BB genom att aktivera negativa ID:n. Detta bör användas med försiktighet och ett ID kommer att förloras vid övergång från negativa till positiva tal: posten 0 ignoreras vanligtvis av Adobe Campaign i genererade SQL-frågor.
 
-**Relaterade ämnen:**
-* Mer information finns på **Automatisk sekvensgenerering** funktion, se [det här dokumentet](https://helpx.adobe.com/se/campaign/kb/sequence_auto_generation.html).
-* Om du vill ha mer information om sekvensöverstrålning kan du titta på [den här videon](https://helpx.adobe.com/customer-care-office-hours/campaign/sequences-exhaustion-campaign-classic.html).
+Om du vill ha mer information om sekvensöverstrålning kan du titta på [den här videon](https://helpx.adobe.com/customer-care-office-hours/campaign/sequences-exhaustion-campaign-classic.html).
 
 ## Index {#indexes}
 
@@ -327,5 +325,3 @@ I det här exemplet:
 * The *Produkt* och *Butik* tabeller är mindre: mindre än 10 000.
 * Produktetiketten och referensen har placerats i *Produkt* tabell.
 * The *Transaktionsobjekt* tabellen har bara en länk till *Produkt* tabell, som är numerisk.
-
-<!--For more detailed best practices on how to optimize the database design for larger volumes, see [Campaign Classic Data model Best practices](https://helpx.adobe.com/campaign/kb/acc-data-model-best-practices.html).-->

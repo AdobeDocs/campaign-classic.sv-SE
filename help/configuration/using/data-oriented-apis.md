@@ -4,9 +4,9 @@ title: Dataorienterade API:er
 description: Dataorienterade API:er
 feature: API
 exl-id: a392c55e-541a-40b1-a910-4a6dc79abd2d
-source-git-commit: 3997412f14666fa61bf71d0f0a0653f5cc042e19
+source-git-commit: f4513834cf721f6d962c7c02c6c64b2171059352
 workflow-type: tm+mt
-source-wordcount: '1881'
+source-wordcount: '1857'
 ht-degree: 0%
 
 ---
@@ -32,8 +32,6 @@ XML-dokument lagras i databasens MEMO-typfält.
 Du måste känna till Adobe Campaign datamodell för att kunna adressera fälten i databasen i dina skript.
 
 En presentation av datamodellen finns i [Beskrivning av Adobe Campaign datamodell](../../configuration/using/data-model-description.md).
-
-Läs den här artikeln om du vill skapa en struktur: [Så här skapar du en datamodell eller datamordlista](https://helpx.adobe.com/campaign/kb/generate-data-model.html).
 
 ## Fråga och skrivprogram {#query-and-writer}
 

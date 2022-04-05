@@ -4,9 +4,9 @@ title: Åtkomst till marknadsföringskampanjer
 description: Åtkomst till marknadsföringskampanjer
 feature: Campaigns, Cross Channel Orchestration
 exl-id: 1278bda1-f83c-4d38-8042-e6611755cf36
-source-git-commit: 90c52ec144a6a3c1b534a80507e38fa3ed64fc83
+source-git-commit: f4513834cf721f6d962c7c02c6c64b2171059352
 workflow-type: tm+mt
-source-wordcount: '1271'
+source-wordcount: '1247'
 ht-degree: 1%
 
 ---
@@ -149,7 +149,7 @@ Kampanjer skapas via kampanjmallar. Du kan konfigurera återanvändbara mallar f
 
 >[!NOTE]
 >
->Klicka på knappen **[!UICONTROL Advanced campaign parameters...]** i **[!UICONTROL Edit]** -fliken. Mer information om att ställa in parametrar på kampanjnivå så att leveranser ärver värden automatiskt finns i [vår Technote](https://helpx.adobe.com/campaign/kb/simplifying-campaign-management-acc.html#Setparametersatthecampaignlevelsodeliveriesinheritvaluesautomatically).
+>Klicka på knappen **[!UICONTROL Advanced campaign parameters...]** i **[!UICONTROL Edit]** -fliken.
 
 ## Använda webbgränssnittet {#using-the-web-interface-}
 

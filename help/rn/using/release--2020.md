@@ -6,9 +6,9 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: e2eb7e04-faaa-4df0-913d-471c291eeb03
-source-git-commit: c228f827e91f25ee3a837f7fe6549ae4e5714ba3
+source-git-commit: f4513834cf721f6d962c7c02c6c64b2171059352
 workflow-type: tm+mt
-source-wordcount: '6619'
+source-wordcount: '6601'
 ht-degree: 73%
 
 ---
@@ -278,7 +278,7 @@ _22 juli 2020_
 * iOS HTTP2-kopplingen har förbättrats (tredjepartsuppdateringar och felhantering). (NEO-25904 och NEO-25903)
 * Listan jarsToSkip i catalina.properties har uppdaterats för att ta bort referensen till en jar-fil som inte längre används (iOS-meddelanden).
 * Korrigerade ett problem som blockerade leveransförberedelser efter en efteruppgradering.
-* Efter bytet till [mekanismen för nytt sekvens-ID](https://helpx.adobe.com/se/campaign/kb/sequence_auto_generation.html#Switchtoadedicatedsequence) publiceras alla webbapplikationer som uppdaterar mottagartabellen på nytt, under efteruppgraderingen.
+* Efter bytet till mekanismen för nytt sekvens-ID publiceras alla webbapplikationer som uppdaterar mottagartabellen på nytt, under efteruppgraderingen.
 * Korrigerade en potentiell XSS-sårbarhet i leveransinnehåll. (NEO-17987 och NEO-26073)
 
 ![](assets/do-not-localize/cp-icon.png) **Den senaste versionen av kontrollpanelen från juni** med övervakning av aktiva profiler, granskning av deldomänens levererbarhet och hantering av GPG-nycklar. [Läs mer](https://experienceleague.adobe.com/docs/control-panel/using/release-notes.html).
@@ -607,7 +607,7 @@ _17 februari 2020_
 
 * I Linux används nu en systemenhet för start av servertjänsten i stället för skriptet /etc/init.d/nlserver6. Migreringen till det nya startschemat utförs automatiskt när du installerar 20.1-paketet. /etc/init.d/nlserver6 finns fortfarande men för interaktion med nlserver-tjänsten (start, omstart, stopp osv.) rekommenderar vi att du använder systemctl-kommandot direkt.
 
-* De mest använda anpassade tabellerna har flyttats från **xtkNewId** till dedikerade sekvenser. [Läs mer](https://helpx.adobe.com/campaign/kb/sequence_auto_generation.html#Switchtoadedicatedsequence)
+* De mest använda anpassade tabellerna har flyttats från **xtkNewId** till dedikerade sekvenser.
 
 * Förbättrade frågeprestanda som kan påverkas av onödiga databasanslutningar.
 

@@ -6,9 +6,9 @@ audience: installation
 content-type: reference
 topic-tags: initial-configuration
 exl-id: a025026e-688e-4ec1-abc4-40ee040d2b3b
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: f4513834cf721f6d962c7c02c6c64b2171059352
 workflow-type: tm+mt
-source-wordcount: '589'
+source-wordcount: '587'
 ht-degree: 5%
 
 ---
@@ -41,7 +41,7 @@ Så här skapar du en ny instans:
 
 1. Ange en anslutning till Adobe Campaign-programservern via en URL. Använd antingen en DNS eller ett alias för datorn eller din IP-adress.
 
-   Du kan till exempel använda [`https://<machine>.<domain>.com`](https://myserver.adobe.com) skriv URL.
+   Du kan till exempel använda `https://<machine>.<domain>.com` skriv URL.
 
    >[!CAUTION]
    >
@@ -61,7 +61,7 @@ Så här skapar du en ny instans:
 
    Du kan definiera en lista med värden avgränsade med kommatecken.
 
-   Med och * kan användas som jokertecken för att ersätta ett eller flera olika tecken (DNS, port, osv.). Till exempel **demo*** fungerar med&quot;https://demo&quot; på samma sätt som med&quot;https://demo:8080&quot; och till och med&quot;https://demo2&quot;.
+   Med och &#42; kan användas som jokertecken för att ersätta ett eller flera olika tecken (DNS, port, osv.). Till exempel **demo&#42;** fungerar med&quot;https://demo&quot; på samma sätt som med&quot;https://demo:8080&quot; och till och med&quot;https://demo2&quot;.
 
    Namn som används måste definieras i din DNS. Du kan också informera om korrespondensen mellan ett DNS-namn och en IP-adress i **c:/windows/system32/drivers/etc/hosts** i Windows och i **/etc/värdar** i Linux. Du måste därför ändra anslutningsinställningarna för att kunna använda det här DNS-namnet för att ansluta till den valda instansen.
 
