@@ -4,10 +4,10 @@ title: Globala rapporter
 description: Globala rapporter
 feature: Reporting, Monitoring
 exl-id: 6839fd7e-ecf4-4504-90a8-0207bc3991e4
-source-git-commit: 81716a30a57d3ed8542b329d5fb9b0443fd4bf31
+source-git-commit: 294309239bc476669e9e017c27bd1b51a0bdaf8c
 workflow-type: tm+mt
-source-wordcount: '2183'
-ht-degree: 1%
+source-wordcount: '2295'
+ht-degree: 4%
 
 ---
 
@@ -48,6 +48,14 @@ Den här rapporten innehåller information om leveransflödet för hela plattfor
 ![](assets/s_ncs_user_report_toolbar.png)
 
 Du kan konfigurera de värden som visas genom att ändra tidsskalan: 1-timmars vy, 3-timmars vy, 24-timmars vy osv. Klicka **[!UICONTROL Refresh]** för att bekräfta valet.  
+
+>[!NOTE]
+>
+>Om din instans ligger hos AWS kan du även övervaka antalet leveranser som skickas per timme med Campaign Classic [Kontrollpanelen](https://experienceleague.adobe.com/docs/control-panel/using/sftp-management/sftp-storage-management.html). Följ stegen på [den här sidan](https://experienceleague.adobe.com/docs/control-panel/using/faq.html) för att kontrollera om instanser har AWS som värd.
+>
+>Kontrollpanelen är tillgänglig för alla administratörsanvändare. Stegen för att bevilja administratörsåtkomst till en användare finns på [den här sidan](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/managing-permissions.html?lang=sv#discover-control-panel).
+>
+>Observera att din instans måste uppgraderas med den senaste [Gold Standard](../../rn/using/gold-standard.md) eller [senaste GA-bygge (21.1.3)](../../rn/using/latest-release.md). Läs om hur du kontrollerar din version i [det här avsnittet](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version).
 
 ## Användaraktiviteter {#user-activities}
 
