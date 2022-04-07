@@ -31,8 +31,8 @@ Se [Versionsinformationen för Adobe Campaign Classic](../../rn/using/latest-rel
 * Sidan Kom igång med uppgraderingar har uppdaterats för att klargöra riktlinjerna för uppgradering av Campaign Console. [Läs mer](../../rn/using/rn-overview.md)
 
 * Den nya builden (v7.2.2) för Campaign är nu tillgänglig. [Läs mer](../../rn/using/latest-release.md)
-* Tillagd felsökningsinformation för ACS-anslutningen. [Läs mer](../../integrations/using/troubleshooting-the-acs-connector.md)
-* Äldre PostgreSQL-versioner som har nått slutet av livscykeln har lagts till i [Föråldrade och borttagna funktioner](../../rn/using/deprecated-features.md#dbe-eol) sida.
+* Lade till felsökningsinformation relaterad till ACS-anslutningen. [Läs mer](../../integrations/using/troubleshooting-the-acs-connector.md)
+* Äldre PostgreSQL-versioner som har nått slutet av livscykeln har lagts till på sidan [Inaktuella och borttagna funktioner](../../rn/using/deprecated-features.md#dbe-eol).
 
 ### Februari 2022 {#february-2022}
 
