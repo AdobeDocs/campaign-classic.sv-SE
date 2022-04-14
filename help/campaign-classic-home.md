@@ -3,10 +3,10 @@ keywords: Campaign Classic;hem;populära ämnen
 product: campaign
 title: Produktdokumentation för Adobe Campaign Classic v7
 exl-id: 6b3f1689-80de-49fd-b7ee-7a2a1931d157
-source-git-commit: 62f19239ac3b3ea909e26d6424338213b4d91479
+source-git-commit: 29fae1305a6d2b8debbc2aa705c047eaf3730457
 workflow-type: tm+mt
-source-wordcount: '243'
-ht-degree: 48%
+source-wordcount: '235'
+ht-degree: 50%
 
 ---
 
@@ -83,6 +83,6 @@ ht-degree: 48%
 | [Versionsinformation](rn/using/latest-release.md) | [Lista över felmeddelanden](https://experienceleague.adobe.com/developer/campaign-errors/error_codes.html?lang=sv) |
 | [Instruktionsvideor](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=sv) | [Datamodell i Campaign](configuration/using/about-data-model.md) |
 | [Kompatibilitetsmatris](rn/using/compatibility-matrix.md) | [JSAPI i Campaign](https://experienceleague.adobe.com/developer/campaign-api/api/p-1.html) |
-| [Kom igång med uppgraderingar](rn/using/rn-overview.md) | [Spårningsguide](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/tracking-messages/about-message-tracking.html) |
+| [Kom igång med uppgraderingar](rn/using/rn-overview.md) | [Spårningsguide](delivery/using/about-message-tracking.md) |
 | [Inaktuella funktioner](rn/using/deprecated-features.md) | [Checklista för säkerhet och integritet](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/security-privacy/get-started-security-privacy.html) |
 | [Kontrollpanelen i Campaign](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=sv) | [Riktlinjer för övervakning](production/using/monitoring-guidelines.md) |
