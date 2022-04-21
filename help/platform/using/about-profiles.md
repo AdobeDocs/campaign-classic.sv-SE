@@ -6,7 +6,7 @@ feature: Profiles, Audiences
 role: User, Data Architect
 level: Beginner
 exl-id: 54f1ad6c-54b0-4448-8c38-806dd75c1dae
-source-git-commit: ed43a632a962747c9402ff8d5f0ce442c2cc6490
+source-git-commit: fdb840a9e6349f074378899e07f794b62fb5b054
 workflow-type: tm+mt
 source-wordcount: '836'
 ht-degree: 15%
@@ -15,7 +15,7 @@ ht-degree: 15%
 
 # Kom igång med profiler{#about-profiles}
 
-![](../../assets/common.svg)
+![](../../assets/v7-only.svg)
 
 Profilerna är centraliserade i Adobe Campaign-databasen. Det finns många sätt att förvärva profiler och bygga upp databasen: insamling online via webbformulär, manuell eller automatisk import av textfiler, replikering med företagsdatabaser eller andra informationssystem. Med Adobe Campaign kan ni införliva marknadsföringshistorik, inköpsinformation, preferenser, CRM-data och alla relevanta PI-data i en samlad vy för att analysera och vidta åtgärder.
 

@@ -6,7 +6,7 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: f91d69a4-b794-40f0-b450-de862d7333e2
-source-git-commit: 1de1f7aafd7eb18c1160460ddd5c84ac59473664
+source-git-commit: fdb840a9e6349f074378899e07f794b62fb5b054
 workflow-type: tm+mt
 source-wordcount: '442'
 ht-degree: 3%
@@ -15,7 +15,7 @@ ht-degree: 3%
 
 # Använda Adobe Campaign Explorer {#using-adobe-campaign-explorer}
 
-![](../../assets/common.svg)
+![](../../assets/v7-only.svg)
 
 Utforskaren i Adobe Campaign är tillgänglig via verktygsfältsikonen. Du får tillgång till Adobe Campaign alla funktioner, konfigurationsskärmar och en mer detaljerad översikt över några av plattformselementen.
 

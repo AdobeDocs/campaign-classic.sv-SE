@@ -6,10 +6,10 @@ title: Användarhandbok för Campaign Classic v7
 user-guide-description: Med Adobe Campaign kan du använda omfattande kunddata för att skapa, samordna och leverera dynamiska kampanjer som kunderna verkligen vill ha – via e-post, mobiler, offlinekanaler med mera.
 sub-product: adobe campaign classic
 type: Documentation
-source-git-commit: dd7217bd508d718d84c417fcdf7610a5582ef204
-workflow-type: ht
-source-wordcount: '2552'
-ht-degree: 100%
+source-git-commit: a8044037e889f59d4288a0746001e84d319f6bcf
+workflow-type: tm+mt
+source-wordcount: '2571'
+ht-degree: 99%
 
 ---
 
@@ -53,7 +53,11 @@ ht-degree: 100%
    + Sekretess {#privacy}
       + [Sekretess och medgivande](platform/using/privacy-and-recommendations.md)
       + [Sekretesshantering](platform/using/privacy-management.md)
-      + [Förfrågningar om användarens information](platform/using/privacy-requests.md)
+      + Förfrågningar om användarens information {#privacy-requests}
+         + [Om förfrågningar om användarens information](platform/using/privacy-requests.md)
+         + [Skapa och hantera sekretessförfrågningar](platform/using/privacy-requests-ui.md)
+         + [Automatisk process med förfrågan om användarens information](platform/using/privacy-requests-api.md)
+         + [Avanmälan för försäljning av personuppgifter](platform/using/privacy-requests-ccpa.md)
    + Profilhantering {#profile-management}
       + [Om profiler](platform/using/about-profiles.md)
       + [Redigera en profil](platform/using/editing-a-profile.md)
