@@ -6,9 +6,9 @@ title: Användarhandbok för Campaign Classic v7
 user-guide-description: Med Adobe Campaign kan du använda omfattande kunddata för att skapa, samordna och leverera dynamiska kampanjer som kunderna verkligen vill ha – via e-post, mobiler, offlinekanaler med mera.
 sub-product: adobe campaign classic
 type: Documentation
-source-git-commit: a8044037e889f59d4288a0746001e84d319f6bcf
+source-git-commit: 490ba0102f54e2d82e0bff1aa72b67ac118bf7a1
 workflow-type: tm+mt
-source-wordcount: '2571'
+source-wordcount: '2570'
 ht-degree: 99%
 
 ---
@@ -834,7 +834,7 @@ ht-degree: 99%
    + [Rekommendationer på maskinvarustorlek](technotes/using/hardware-sizing.md)
    + Uppgraderingar och kompatibilitet{#technote-migration}
       + [Tekniska anmärkningar](technotes/using/technote.md)
-      + [3-siffrig webbläsarversion påverkar](technotes/using/3-digit-browsers.md)
+      + [Uppgradering av Apache-säkerhet](technotes/using/acc-apache-upgrade.md)
       + [Konfigurationsuppdateringar i Campaign](technotes/using/acc-config-updates.md)
       + [IMS-uppdateringar](technotes/using/ims-updates.md)
       + [Support för TLS 1.0 och 1.1 upphör](technotes/using/eol-tls-support.md)
