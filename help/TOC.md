@@ -7,9 +7,9 @@ user-guide-description: Med Adobe Campaign kan du använda omfattande kunddata f
 sub-product: adobe campaign classic
 type: Documentation
 source-git-commit: 490ba0102f54e2d82e0bff1aa72b67ac118bf7a1
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2570'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -55,8 +55,8 @@ ht-degree: 99%
       + [Sekretesshantering](platform/using/privacy-management.md)
       + Förfrågningar om användarens information {#privacy-requests}
          + [Om förfrågningar om användarens information](platform/using/privacy-requests.md)
-         + [Skapa och hantera sekretessförfrågningar](platform/using/privacy-requests-ui.md)
-         + [Automatisk process med förfrågan om användarens information](platform/using/privacy-requests-api.md)
+         + [Skapa och hantera förfrågningar om användarens information](platform/using/privacy-requests-ui.md)
+         + [Automatisk process för förfrågan om användarens information](platform/using/privacy-requests-api.md)
          + [Avanmälan för försäljning av personuppgifter](platform/using/privacy-requests-ccpa.md)
    + Profilhantering {#profile-management}
       + [Om profiler](platform/using/about-profiles.md)
