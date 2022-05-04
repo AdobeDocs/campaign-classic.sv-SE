@@ -5,10 +5,11 @@ description: Läs mer om avanmälan för försäljning av personuppgifter
 audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
-source-git-commit: a8044037e889f59d4288a0746001e84d319f6bcf
-workflow-type: tm+mt
+exl-id: 8e308a9f-14a4-4a25-9fd0-8d4bdbcf74ce
+source-git-commit: 42b420d7dae7d38e9f4df442146d3b484c25e831
+workflow-type: ht
 source-wordcount: '554'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
