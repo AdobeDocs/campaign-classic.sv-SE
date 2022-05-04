@@ -1,24 +1,25 @@
 ---
 product: campaign
-title: Skapa sekretessförfrågningar
-description: Lär dig hur du skapar och hanterar sekretessförfrågningar
+title: Skapa förfrågningar om användarens information
+description: Läs om hur du skapar och hanterar förfrågningar om användarens information
 audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
-source-git-commit: a8044037e889f59d4288a0746001e84d319f6bcf
-workflow-type: tm+mt
+exl-id: 73b90d79-88b6-4aaf-8103-4564de5e06be
+source-git-commit: 42b420d7dae7d38e9f4df442146d3b484c25e831
+workflow-type: ht
 source-wordcount: '771'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
-# Skapa och hantera sekretessförfrågningar {#privacy-request-ui}
+# Skapa och hantera förfrågningar om användarens information {#privacy-request-ui}
 
 ![](../../assets/v7-only.svg)
 
-I det här avsnittet beskrivs hur du kan skapa Access- och Delete-begäranden samt hur de behandlas i Adobe Campaign.
+I det här avsnittet beskrivs hur du kan skapa förfrågningar om åtkomst och radering, samt hur de bearbetas av Adobe Campaign.
 
-## Skapa en sekretessförfrågan {#create-privacy-request-ui}
+## Skapa en förfrågan om användarens information {#create-privacy-request-ui}
 
 Med **Adobe Campaign-gränssnittet** kan du skapa dina förfrågningar om användarens information och spåra deras utveckling. Följ de här anvisningarna för att skapa en ny förfrågan om användarens information:
 
