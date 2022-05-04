@@ -1,15 +1,15 @@
 ---
 product: campaign
-title: Hantera sekretessförfrågningar
-description: Läs mer om sekretessförfrågningar
+title: Hantera förfrågningar om användarens information
+description: Läs mer om förfrågningar om användarens information
 audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: c7688c2a-f0a7-4c51-a4cf-bf96fe8bf9b6
 source-git-commit: a8044037e889f59d4288a0746001e84d319f6bcf
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '489'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
