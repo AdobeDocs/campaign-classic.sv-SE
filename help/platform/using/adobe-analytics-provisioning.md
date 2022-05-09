@@ -6,10 +6,10 @@ feature: Overview
 role: User, Admin
 level: Beginner
 exl-id: 24e002aa-4e86-406b-92c7-74f242ee4b86
-source-git-commit: cb434747d2bee5d24dcaa1141100c269eea313ad
+source-git-commit: 02eebe83de49ee97e573b0c47ca1fddb2195b991
 workflow-type: tm+mt
-source-wordcount: '647'
-ht-degree: 3%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -95,7 +95,7 @@ Din produktprofil är nu konfigurerad. Sedan måste du skapa projektet Adobe I/O
 
 ## Skapa Adobe I/O-projekt {#create-adobe-io}
 
-1. Öppna Adobe I/O och logga in som **Systemadministratör** för IMS-organisationen.
+1. Öppna Adobe I/O och logga in som **Systemadministratör** i er organisation.
 
    Mer information om administratörsroller finns i [page](https://helpx.adobe.com/enterprise/using/admin-roles.html).
 

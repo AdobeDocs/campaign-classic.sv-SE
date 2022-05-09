@@ -6,10 +6,10 @@ audience: integrations
 content-type: reference
 topic-tags: audience-sharing
 exl-id: f3c19fcd-12cb-4ca3-b4b7-7dc4be57f4ea
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 02eebe83de49ee97e573b0c47ca1fddb2195b991
 workflow-type: tm+mt
-source-wordcount: '156'
-ht-degree: 10%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -19,31 +19,31 @@ ht-degree: 10%
 
 >[!NOTE]
 >
->Kontrollera att IMS är aktiverat på datorn för att kunna fortsätta. Läs avsnittet om [IMS](../../integrations/using/about-adobe-id.md).
+>Som v7-användare måste Adobe Identity Management System (IMS) vara aktiverat på datorn för att kunna fortsätta. [Läs mer](../../integrations/using/about-adobe-id.md).
 
-När IMS är aktiverat kan du begära etablering av People core service/Audience Manager-integrering med Campaign. Om du vill göra det skickar du ett e-postmeddelande till [Digital-Request@adobe.com](mailto:Digital-Request@adobe.com) med följande information:
+När IMS har aktiverats för din organisation kan du begära etablering av People core service/Audience Manager-integrering med Campaign. Om du vill göra det skickar du ett e-postmeddelande till [Digital-Request@adobe.com](mailto:Digital-Request@adobe.com) med följande information:
 
 <table> 
  <tbody> 
   <tr> 
-   <td> <strong>Typ av begäran:</strong><br /> </td> 
+   <td> <strong>Typ av begäran</strong><br /> </td> 
    <td> Konfigurera AAM/kundtjänst - kampanjintegrering </td> 
   </tr> 
   <tr> 
-   <td> <strong>Organisationsnamn:</strong><br /> </td> 
+   <td> <strong>Organisationsnamn</strong><br /> </td> 
    <td> Organisationens namn </td> 
   </tr> 
   <tr> 
-   <td> <strong>IMS-organisations-ID</strong><br /> </td> 
-   <td> Ditt IMS-organisations-ID. <br> Du hittar ditt IMS-organisations-ID på Experience Cloud på menyn Administration. Den medföljer också när du ansluter till Adobe Experience Cloud första gången. </td> 
+   <td> <strong>Organisations-ID</strong><br /> </td> 
+   <td> Ditt företags-ID. <br> Om du vill hitta ditt organisations-ID går du till <a href="https://experienceleague.adobe.com/docs/core-services/interface/administration/organizations.html?lang=sv">den här sidan</a></td> 
   </tr> 
   <tr> 
-   <td> <strong>Miljö:</strong><br /> </td> 
+   <td> <strong>Miljö</strong><br /> </td> 
    <td> Exempel: Produktion </td> 
   </tr> 
   <tr> 
    <td> <strong>AAM eller persontjänst</strong><br /> </td> 
-   <td> Exempel: Adobe Audience Manager. Se till att tala om för provisioneringsteamet om du äger Audience Manager-licens eller inte.</td> 
+   <td> Exempel: Adobe Audience Manager. Ange om du äger Audience Manager-licens eller inte.</td> 
   </tr> 
   <tr> 
    <td> <strong>Deklarerat ID eller besökar-ID</strong><br /> </td> 

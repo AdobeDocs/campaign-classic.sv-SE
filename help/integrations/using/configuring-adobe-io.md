@@ -8,10 +8,10 @@ index: y
 internal: n
 snippet: y
 exl-id: ab30f697-3022-4a29-bbdb-14ca12ec9c3e
-source-git-commit: 966da123b30278817ca465ac5dfe1f733c4d6c5c
+source-git-commit: 02eebe83de49ee97e573b0c47ca1fddb2195b991
 workflow-type: tm+mt
-source-wordcount: '701'
-ht-degree: 3%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -32,12 +32,12 @@ Den här integreringen gäller endast från **Campaign Classic 20.2.4 och senare
 
 Kontrollera att du har:
 
-* en giltig **Organisationsidentifierare**: organisationsidentifieraren för Identity Management System (IMS) är den unika identifieraren inom Adobe Experience Cloud, som används t.ex. för VisitorID-tjänsten och IMS Single-Sign On (SSO). [Läs mer](https://experienceleague.adobe.com/docs/core-services/interface/manage-users-and-products/organizations.html)
-* a **Åtkomst för utvecklare** till din organisation. Systemadministratören för IMS-organisationen måste följa **Lägga till utvecklare i en enda produktprofil** detaljerad [på den här sidan](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/manage-developers.ug.html) för att ge utvecklare åtkomst till `Analytics - {tenantID}` Produktprofil för den Adobe Analytics-produkt som är kopplad till utlösare.
+* en giltig **Organisationsidentifierare**: Organisations-ID är den unika identifieraren inom Adobe Experience Cloud, som används t.ex. för VisitorID-tjänsten och IMS Single-Sign On (SSO). [Läs mer](https://experienceleague.adobe.com/docs/core-services/interface/administration/organizations.html?lang=sv)
+* a **Åtkomst för utvecklare** till din organisation. Organisationens systemadministratör måste följa **Lägga till utvecklare i en enda produktprofil** detaljerad [på den här sidan](https://helpx.adobe.com/enterprise/using/manage-developers.html) för att ge utvecklare åtkomst till `Analytics - {tenantID}` Produktprofil för den Adobe Analytics-produkt som är kopplad till utlösare.
 
 ## Steg 1: Skapa/uppdatera Adobe I/O-projekt {#creating-adobe-io-project}
 
-1. Åtkomst [!DNL Adobe I/O] och logga in med utvecklaråtkomst för IMS-organisationen.
+1. Åtkomst [!DNL Adobe I/O] och logga in med utvecklaråtkomst i din organisation.
 
    >[!NOTE]
    >

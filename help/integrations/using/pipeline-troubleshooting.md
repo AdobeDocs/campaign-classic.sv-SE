@@ -5,9 +5,9 @@ description: 'Felsöka pipelines '
 audience: integrations
 content-type: reference
 exl-id: 76645a6f-9536-49d6-b12a-fdd6113d31fa
-source-git-commit: 36b10a49fe92853f98beeb9e7d2fea3f59b10b6f
+source-git-commit: 02eebe83de49ee97e573b0c47ca1fddb2195b991
 workflow-type: tm+mt
-source-wordcount: '691'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -30,11 +30,11 @@ Ställ in JSON-konfigurationen i alternativet **NmsPipeline_Config**. Se&quot;ro
 
 **Överföringen misslyckas med &quot;ämnet måste vara en giltig organisation eller kund&quot;**
 
-Organisationsidentifierarkonfigurationen är inte giltig.
+Organisations-ID-konfigurationen är inte giltig.
 
-1. Kontrollera att IMSOrgId har angetts i serverConf.xml.
-1. Leta efter ett tomt IMSOrgId i instansens konfigurationsfil som kan åsidosätta standardvärdet. Ta i så fall bort den.
-1. Kontrollera att IMSOrgId matchar kundens i Experience Cloud.
+1. Kontrollera att organisations-ID (ImsOrgId) har angetts i serverConf.xml.
+1. Kontrollera om ett tomt organisations-ID i instanskonfigurationsfilen kan åsidosätta standardvärdet. Ta i så fall bort den.
+1. Kontrollera att organisations-ID:t är korrekt. Om du vill hitta ditt organisations-ID går du till [den här sidan](https://experienceleague.adobe.com/docs/core-services/interface/administration/organizations.html?lang=sv){_blank}
 
 **Överföringen misslyckas med &quot;ogiltig nyckel&quot;**
 

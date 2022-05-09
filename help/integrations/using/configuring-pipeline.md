@@ -5,10 +5,10 @@ description: Lär dig hur du konfigurerar pipeline
 audience: integrations
 content-type: reference
 exl-id: 2d214c36-8429-4b2b-b1f5-fe2730581bba
-source-git-commit: b8f74c290106d57630c5d486c04b8424132e3297
+source-git-commit: 02eebe83de49ee97e573b0c47ca1fddb2195b991
 workflow-type: tm+mt
-source-wordcount: '902'
-ht-degree: 1%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -34,8 +34,8 @@ Kontrollera att du använder:
 Du behöver också:
 
 * Adobe I/O projektautentisering
-* ett giltigt IMSOrgID, identifieraren för Experience Cloud-kunden med Adobe Analytics tillagd
-* en utvecklaråtkomst till IMS-organisationen
+* ett giltigt organisations-ID - Om du vill hitta ditt organisations-ID, se [den här sidan](https://experienceleague.adobe.com/docs/core-services/interface/administration/organizations.html?lang=sv){_blank}
+* en utvecklaråtkomst till din organisation
 * utlöser konfiguration som gjorts i Adobe Analytics
 
 ## Autentiserings- och konfigurationsfiler {#authentication-configuration}
