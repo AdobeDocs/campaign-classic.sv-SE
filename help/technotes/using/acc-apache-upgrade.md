@@ -5,9 +5,9 @@ description: Adobe Campaign - säkerhetsuppdatering av Apache-version
 hide: true
 hidefromtoc: true
 exl-id: 3d2f5d1d-4b31-4cc6-b6fb-13589856e00c
-source-git-commit: 209e3ffc5b11a776a8d16ab210097e5ee4e48b0d
+source-git-commit: ef34decdb33cdfd095c437abd5d1eb029f8a0648
 workflow-type: tm+mt
-source-wordcount: '476'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ Adobe Campaign fungerar med verktyg från tredje part och kompatibiliteten uppda
 
 Adobe Campaign innehåller Apache Tomcat som fungerar som startpunkt i programservern via HTTP och är integrerat med Apache Web Server. Apache Software Foundation har släppt Apache HTTP Server 2.4.53. Denna version åtgärdar sårbarheter som kan utnyttjas av en angripare för att ta kontroll över den drabbade datorn. Läs mer i [Apache 2.4.53-meddelande](https://downloads.apache.org/httpd/Announcement2.4.html){target=&quot;_blank&quot;}.
 
-Adobe Campaign-teamet kommer att genomföra säkerhetsuppgraderingen av Apache-versionen av **31 maj 2022** för att minska denna Apache-sårbarhet och göra instansmiljön säkrare. Uppgraderingen gäller alla Managed Services-kunder med Campaign Classic v7, Campaign v8 och Campaign Standarder som använder en sårbar version av Apache HTTP Server. Om du påverkas kontaktade Adobe dig redan för att informera dig om uppgraderingen.
+Adobe Campaign-teamet kommer att genomföra säkerhetsuppgraderingen av Apache-versionen av **15 juni 2022** för att minska denna Apache-sårbarhet och göra instansmiljön säkrare. Uppgraderingen gäller alla Managed Services-kunder med Campaign Classic v7, Campaign v8 och Campaign Standarder som använder en sårbar version av Apache HTTP Server. Om du påverkas kontaktade Adobe dig redan för att informera dig om uppgraderingen.
 
 Uppgraderingen förväntas att köras automatiskt utanför kontorstid så att du kan fortsätta använda Campaign-tjänsten utan avbrott.
 
