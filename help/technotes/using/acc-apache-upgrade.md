@@ -5,22 +5,17 @@ description: Adobe Campaign - säkerhetsuppdatering av Apache-version
 hide: true
 hidefromtoc: true
 exl-id: 3d2f5d1d-4b31-4cc6-b6fb-13589856e00c
-source-git-commit: 854278e3e2013293888ea194c12ec1a75e70d981
+source-git-commit: 209e3ffc5b11a776a8d16ab210097e5ee4e48b0d
 workflow-type: tm+mt
-source-wordcount: '475'
+source-wordcount: '476'
 ht-degree: 0%
 
 ---
 
 # Adobe Campaign - säkerhetsuppdatering av Apache-version {#apache-update}
 
->[!NOTE]
->Den här artikeln gäller för:
-> * Campaign Classic v7 Managed Services-kunder
-> * Kunder med Campaign v8
-> * Campaign Standarder
-
-
+>[!CAUTION]
+>Den här artikeln gäller för: Campaign Classic v7 Managed Services-kunder, Campaign v8-kunder och Campaign Standarder.
 
 Adobe Campaign fungerar med verktyg från tredje part och kompatibiliteten uppdateras regelbundet, så att endast de versioner som stöds kan implementeras och de senaste korrigeringarna och förbättringarna kan utnyttjas.
 
