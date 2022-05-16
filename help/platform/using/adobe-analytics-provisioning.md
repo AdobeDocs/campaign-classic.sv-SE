@@ -6,10 +6,10 @@ feature: Overview
 role: User, Admin
 level: Beginner
 exl-id: 24e002aa-4e86-406b-92c7-74f242ee4b86
-source-git-commit: 02eebe83de49ee97e573b0c47ca1fddb2195b991
+source-git-commit: bb806da3d865e0d05e7823b2609227ea8effd875
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '646'
+ht-degree: 3%
 
 ---
 
@@ -157,4 +157,5 @@ Din produktprofil är nu konfigurerad. Sedan måste du skapa projektet Adobe I/O
    ```
    nlserver config -instance:<instance name> -setimsjwtauth:Organization_Id/Client_Id/Technical_Account_ID/<Client_Secret>/<Base64_encoded_Private_Key>
    ```
+
 Nu kan ni börja använda Analytics-kontakten och spåra kundbeteenden.
