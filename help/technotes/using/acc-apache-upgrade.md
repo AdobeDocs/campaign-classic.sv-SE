@@ -5,9 +5,9 @@ description: Adobe Campaign - säkerhetsuppdatering av Apache-version
 hide: true
 hidefromtoc: true
 exl-id: 3d2f5d1d-4b31-4cc6-b6fb-13589856e00c
-source-git-commit: ef34decdb33cdfd095c437abd5d1eb029f8a0648
+source-git-commit: 7ee1cc501342aa59d1752259bf7228ea47a8cccb
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '541'
 ht-degree: 0%
 
 ---
@@ -37,7 +37,6 @@ Din(a) instans(er) som inte är i produktion kommer att uppgraderas av våra tea
 
    Den aktuella Apache-versionen är sårbar och kan utgöra ett säkerhetshot. Det är viktigt att dina Campaign-instanser uppgraderas till den senaste tillämpliga Apache-versionen för att hantera säkerhetsrisken.
 
-
 * **Vilka kunder vill uppgradera?**
 
    Alla kunder som använder Campaign-miljöer som har implementerats i äldre Apache-versioner uppgraderas till den senaste tillämpliga Apache-versionen.
@@ -49,6 +48,10 @@ Din(a) instans(er) som inte är i produktion kommer att uppgraderas av våra tea
 * **Kräver kunden några åtgärder för denna säkerhetsuppgradering?**
 
    Inga åtgärder krävs eftersom säkerhetsuppgraderingen körs automatiskt.
+
+* **Hur påverkar det pågående kampanjerna/arbetsflödena under underhållsperioden?**
+
+   Under underhållsperioden stoppas både arbetsflödet och posttjänsterna och de schemalagda aktiviteterna körs inte. Alla pågående aktiviteter eller processer som körs avbryts under driftstoppet tills servern startas om. När aktiviteten har slutförts och servern har startats om återupptas alla tjänster.
 
 * **Vilka valideringar behöver kunderna köra?**
 
