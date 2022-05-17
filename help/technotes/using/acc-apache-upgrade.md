@@ -5,9 +5,9 @@ description: Adobe Campaign - säkerhetsuppdatering av Apache-version
 hide: true
 hidefromtoc: true
 exl-id: 3d2f5d1d-4b31-4cc6-b6fb-13589856e00c
-source-git-commit: 7ee1cc501342aa59d1752259bf7228ea47a8cccb
+source-git-commit: a3eae4e253f66f5a651ffe0458f60b1f8bdf2258
 workflow-type: tm+mt
-source-wordcount: '541'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 0%
 # Adobe Campaign - säkerhetsuppdatering av Apache-version {#apache-update}
 
 >[!CAUTION]
->Den här artikeln gäller för: Campaign Classic v7 Managed Services-kunder, Campaign v8-kunder och Campaign Standarder.
+>Den här artikeln gäller för: **Campaign Classic v7 Managed Services** kunder, **Campaign v8** kunder och **Campaign Standard** kunder.
 
 Adobe Campaign fungerar med verktyg från tredje part och kompatibiliteten uppdateras regelbundet, så att endast de versioner som stöds kan implementeras och de senaste korrigeringarna och förbättringarna kan utnyttjas.
 
@@ -25,7 +25,7 @@ Adobe Campaign-teamet kommer att genomföra säkerhetsuppgraderingen av Apache-v
 
 Uppgraderingen förväntas att köras automatiskt utanför kontorstid så att du kan fortsätta använda Campaign-tjänsten utan avbrott.
 
-Din(a) instans(er) som inte är i produktion kommer att uppgraderas av våra team först innan vi uppgraderar dina produktionsinstanser. Eftersom detta är en automatisk uppgraderingsprocess som ägs av Adobe behöver du inte vidta några åtgärder. Om du får problem kan du kontakta [Adobe kundtjänst](https://experienceleague.adobe.com/?support-solution=Campaign#support).
+Din(a) icke-produktionsinstans(er) kommer att uppgraderas av Adobe först, sedan kommer din(a) produktionsinstans(er) att uppgraderas. Eftersom detta är en automatisk uppgraderingsprocess som ägs av Adobe behöver du inte vidta några åtgärder. Om du får problem kan du kontakta [Adobe kundtjänst](https://experienceleague.adobe.com/?support-solution=Campaign#support).
 
 
 >[!NOTE]
@@ -55,7 +55,7 @@ Din(a) instans(er) som inte är i produktion kommer att uppgraderas av våra tea
 
 * **Vilka valideringar behöver kunderna köra?**
 
-   Ingen specifik testning krävs för denna säkerhetsuppgradering. Om något problem uppstår, var vänlig och kontakta [Adobe kundtjänst](https://experienceleague.adobe.com/?support-solution=Campaign#support)
+   Ingen specifik testning krävs för denna säkerhetsuppgradering. Om något problem uppstår, var vänlig och kontakta [Adobe kundtjänst](https://experienceleague.adobe.com/?support-solution=Campaign#support).
 
 
 * **Kan jag begära en ändring av datum/tid för den schemalagda säkerhetsuppgraderingsplatsen?**
