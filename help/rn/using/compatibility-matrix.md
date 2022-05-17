@@ -6,10 +6,10 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: b8c1f287-06f4-4c34-8cca-b0c7676abbc2
-source-git-commit: 1bb1365ce5a4eb89447c5d736a42cd470c7f3bba
+source-git-commit: 5ce8e765866d84781b1000511e9aea4636ebd91d
 workflow-type: tm+mt
-source-wordcount: '721'
-ht-degree: 100%
+source-wordcount: '733'
+ht-degree: 96%
 
 ---
 
@@ -227,7 +227,7 @@ Miljöerna **Managed Services** (värd), **Hybrid** och **Lokal** kan ansluta Ca
 </tbody>
 </table>
 
-Dessutom kan miljöerna **Hybrid** och **Lokal** även koppla samman Campaign med:
+Dessutom **Hybrid** och **Lokalt** kan även koppla Campaign till följande externa databassystem. Dessa system **inte kompatibel** med Campaign **Managed Services** (värdmiljöer).
 
 <table>
 <tbody>
@@ -420,13 +420,7 @@ Följande webbläsare är kompatibla med Campaign för [Web Access](../../campai
 <p>Senaste versionen</p>
 </td>
 </tr>
-<tr>
-<td>
-<p>Microsoft Internet Explorer</p>
-</td>
-<td>
-<p>11</p>
-</td>
+
 </tr>
 </tbody>
 </table>
