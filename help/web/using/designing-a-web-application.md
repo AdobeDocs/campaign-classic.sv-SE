@@ -4,9 +4,9 @@ title: Designa en webbapplikation
 description: Designa en webbapplikation
 feature: Web Apps
 exl-id: dcdf6afc-321e-4027-a350-fff6bbf22e71
-source-git-commit: b6f1556cf49492cefaf61c29a058584b0ccee16a
+source-git-commit: 0ad183ae68faf41ac0b14bb37639a4b1da9d8776
 workflow-type: tm+mt
-source-wordcount: '256'
+source-wordcount: '277'
 ht-degree: 4%
 
 ---
@@ -19,9 +19,7 @@ Webbprogram skapas och hanteras enligt samma princip som [webbformulär](about-w
 
 >[!CAUTION]
 >
->Använd **[!UICONTROL Preview]** underflik för att kontrollera fel under utformningen av webbprogram.
->
->Ändringarna visas inte för slutanvändarna förrän webbprogrammet har publicerats.
+>Använd **[!UICONTROL Preview]** underflik för att kontrollera fel under utformningen av webbprogram. Observera att det profiltest som används för att förhandsgranska webbprogrammet måste finnas i en mapp med **[!UICONTROL Access rights]** för **[!UICONTROL Web application agent]** -operator. </br>Ändringarna visas inte för slutanvändarna förrän webbprogrammet har publicerats.
 
 ## Infoga diagram i ett webbprogram {#inserting-charts-in-a-web-application}
 
