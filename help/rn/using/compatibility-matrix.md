@@ -7,9 +7,9 @@ role: User
 level: Beginner
 exl-id: b8c1f287-06f4-4c34-8cca-b0c7676abbc2
 source-git-commit: 5ce8e765866d84781b1000511e9aea4636ebd91d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '733'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -227,7 +227,7 @@ Miljöerna **Managed Services** (värd), **Hybrid** och **Lokal** kan ansluta Ca
 </tbody>
 </table>
 
-Dessutom **Hybrid** och **Lokalt** kan även koppla Campaign till följande externa databassystem. Dessa system **inte kompatibel** med Campaign **Managed Services** (värdmiljöer).
+Miljöerna **Hybrid** och **Lokal** kan dessutom ansluta Campaign till följande externa databassystem. Dessa system är **inte kompatibla** med Campaigns **Managed Services**-värdmiljöer.
 
 <table>
 <tbody>
