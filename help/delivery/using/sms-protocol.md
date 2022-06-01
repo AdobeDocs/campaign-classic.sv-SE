@@ -4,7 +4,7 @@ title: Protokoll och inställningar för SMS-koppling
 description: Läs mer om SMS-anslutningen och hur du konfigurerar den
 feature: SMS
 exl-id: fded088a-11a2-4b87-a368-7b197334aca4
-source-git-commit: 1e11b7419388698f5de366cbeddf2be88ef12873
+source-git-commit: 2c145829517a6961d502cc3e7b904547f8c71602
 workflow-type: tm+mt
 source-wordcount: '8460'
 ht-degree: 0%
@@ -410,7 +410,7 @@ Adobe Campaign Classic Extended SMPP-kontakten kan styra antalet anslutningar pe
 
 För Adobe Campaign Classic kan det finnas ett annat antal mottagar- och sändaranslutningar:
 
-* **Transmitteranslutningar = Antal MTA-underordnade anslutningar * antal MTA-underordnade processer * antal MTA-filer (om autosvar är inställt) + Antal MTA-underordnade anslutningar**
+* **Transmitteranslutningar = Antal MTA-underordnade anslutningar * antal MTA-underordnade processer * antal MTA-underprocesser </br> (om autosvar är inställt) + Antal underordnade MTA-anslutningar**
 
 Som tidigare nämnts öppnar Adobe Campaign Classic SMS-processen fler sändaranslutningar om autosvar är aktiverat. Dessa extra anslutningar används för att skicka de automatiska svaren.
 
