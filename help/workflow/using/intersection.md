@@ -4,10 +4,10 @@ title: Skärningspunkt
 description: Skärningspunkt
 feature: Workflows, Targeting Activity
 exl-id: f426bf02-9899-49eb-b699-728d51b57c64
-source-git-commit: eb7a8cd2c9ff476a830dcc6e8e7c29ccd72c24f0
+source-git-commit: 389e5a87ea195024707c3c58e63899ad7949f025
 workflow-type: tm+mt
-source-wordcount: '451'
-ht-degree: 0%
+source-wordcount: '436'
+ht-degree: 1%
 
 ---
 
@@ -16,7 +16,8 @@ ht-degree: 0%
 >[!CONTEXTUALHELP]
 >id="ac_workflow_intersection"
 >title="Skärningsaktivitet"
->abstract="En aktivitet av typen Skärning skapar ett mål från skärningspunkten för de mottagna målen. Med en skärningspunkt kan du bara extrahera den population som är gemensam för alla inkommande aktivitetsresultat. Målet skapas med alla mottagna resultat: Alla tidigare aktiviteter måste därför avslutas innan skärningen kan utföras."
+>abstract="En aktivitet av typen Skärning skapar ett mål från skärningspunkten för de mottagna målen. Med en skärningspunkt kan du bara extrahera den population som är gemensam för alla inkommande aktivitetsresultat."
+>additional-url="https://video.tv.adobe.com/v/329373" text="Se demovideon"
 
 
 ![](../../assets/common.svg)
