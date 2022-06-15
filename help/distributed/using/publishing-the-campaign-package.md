@@ -4,7 +4,7 @@ title: Publicera kampanjpaketet
 description: Publicera kampanjpaketet
 feature: Distributed Marketing
 exl-id: e96add16-cbc8-43af-acff-06a95d5b7749
-source-git-commit: 36e546a34d8c2345fefed5d459095a76c6224a38
+source-git-commit: d36e1881726af6238c4e0caecb7b299b594691f2
 workflow-type: tm+mt
 source-wordcount: '456'
 ht-degree: 2%
@@ -13,7 +13,7 @@ ht-degree: 2%
 
 # Publicera kampanjpaketet{#publishing-the-campaign-package}
 
-![](../../assets/v7-only.svg)
+![](../../assets/common.svg)
 
 Operatörer av centralenheter publicerar kampanjer som de vill erbjuda lokala enheter i **[!UICONTROL list of campaign packages]**.
 

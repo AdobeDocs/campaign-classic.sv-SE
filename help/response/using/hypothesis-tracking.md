@@ -6,7 +6,7 @@ audience: campaign
 content-type: reference
 topic-tags: response-manager
 exl-id: 1dc6d03b-698c-4750-9563-0676fcd185df
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: d36e1881726af6238c4e0caecb7b299b594691f2
 workflow-type: tm+mt
 source-wordcount: '455'
 ht-degree: 0%
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 # Spårning av hypoteser{#hypothesis-tracking}
 
-![](../../assets/v7-only.svg)
+![](../../assets/common.svg)
 
 Resultatet av hypotesberäkningarna finns på olika nivåer i Adobe Campaign: Indikatorer som beräknas utifrån hypoteser och målpopulationens reaktioner är synliga via den faktiska hypotesen, liksom i hypotesrapporter som är tillgängliga via kampanjer och leveranser.
 
@@ -49,7 +49,7 @@ Indikatorerna ger följande information:
 * **Total marginal för kontrollgruppen**: total marginal över kontrollgruppen.
 * **Genomsnittlig marginal per kontakt**: total marginal/kontaktad.
 * **Genomsnittlig marginal för kontrollgrupper**: totala marginaler/kontrollgrupp.
-* **Ytterligare intäkter**: (Genomsnittlig intäkt för kontaktad kontrollgrupp - genomsnittlig intäkt för kontrollgruppen)*Antal kontaktade
+* **Ytterligare intäkter**: (Genomsnittlig intäkt för kontaktad - Genomsnittlig intäkt för kontrollgruppen)&#42;Antal kontaktade
 * **Ytterligare marginal**: (Genomsnittlig kontaktmarginal - genomsnittlig kontrollgruppsmarginal) / antal kontaktade
 * **Genomsnittlig kostnad per kontakt**: beräknad leveranskostnad/antal kontakter.
 * **avkastning**: beräknad kostnad för leveransen/total marginal per kontakt

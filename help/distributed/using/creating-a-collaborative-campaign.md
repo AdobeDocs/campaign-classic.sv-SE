@@ -4,7 +4,7 @@ title: Skapa en samverkanskampanj
 description: Lär dig hur du skapar en samverkanskampanj
 feature: Distributed Marketing
 exl-id: 17313fe5-ad42-45ca-a35a-1e7aa89380ef
-source-git-commit: 1e11b7419388698f5de366cbeddf2be88ef12873
+source-git-commit: d36e1881726af6238c4e0caecb7b299b594691f2
 workflow-type: tm+mt
 source-wordcount: '915'
 ht-degree: 3%
@@ -13,7 +13,7 @@ ht-degree: 3%
 
 # Skapa en samverkanskampanj{#creating-a-collaborative-campaign-intro}
 
-![](../../assets/v7-only.svg)
+![](../../assets/common.svg)
 
 Den centrala enheten skapar samverkanskampanjer från **Distribuerad marknadsföring** kampanjmallar. Se [den här sidan](about-distributed-marketing.md#collaborative-campaign).
 
