@@ -4,7 +4,7 @@ title: Migrera till den nya leveransservern
 description: Lär dig hur ni implementerar en server för kampanjleverans
 hide: true
 hidefromtoc: true
-source-git-commit: a2590a6d8df1e73d77bbdef7b8cf3b2d6efe207f
+source-git-commit: cd2fa2450f6e8389e9c47c412da8943a5c8bb7f3
 workflow-type: tm+mt
 source-wordcount: '908'
 ht-degree: 4%
@@ -30,7 +30,7 @@ Den nya servern garanterar hög tillgänglighet (99.9) &#x200B; och tillhandahå
 
 ## Påverkas du?{#acc-deliverability-impacts}
 
-Om du använder den befintliga Adobe Campaign-servern för leverans och miljön implementerades på en lägre version än Campaign 21.1.1 påverkas du. Du måste uppgradera till Campaign 21.1 (eller mer).
+Om du använder den gamla Adobe Campaign-servern för leverans och miljön implementerades på en lägre version än Campaign 21.1.1 påverkas du. Du måste uppgradera till Campaign 21.1 (eller mer).
 
 Lär dig hur du kontrollerar din version [i det här avsnittet](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version).
 
