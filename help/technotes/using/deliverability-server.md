@@ -4,7 +4,7 @@ title: Migrera till den nya leveransservern
 description: Lär dig hur ni implementerar en server för kampanjleverans
 hide: true
 hidefromtoc: true
-source-git-commit: cd2fa2450f6e8389e9c47c412da8943a5c8bb7f3
+source-git-commit: 65ab862ec568647dd06c1f7b7b83e5b921353cc7
 workflow-type: tm+mt
 source-wordcount: '908'
 ht-degree: 4%
@@ -73,7 +73,7 @@ Campaign måste kommunicera med Adobe Shared Services via en IMS-baserad autenti
    >Du bör spara filen config.zip när nedladdningsprompten visas eftersom du inte kan ladda ned den igen.
 
 1. Klicka på **[!UICONTROL Next]**.
-1. Välj en befintlig **[!UICONTROL Product profile]** eller skapa en ny vid behov. Ingen behörighet krävs för detta **[!UICONTROL Product profile]**. Mer information om [!DNL Analytics] **[!UICONTROL Product Profiles]**, se [den här åldern](https://helpx.adobe.com/enterprise/using/manage-developers.html).
+1. Välj en befintlig **[!UICONTROL Product profile]** eller skapa en ny vid behov. Ingen behörighet krävs för detta **[!UICONTROL Product profile]**. Mer information om [!DNL Analytics] **[!UICONTROL Product Profiles]**, se [den här sidan](https://helpx.adobe.com/enterprise/using/manage-developers.html).
 
    Klicka sedan på **[!UICONTROL Save configured API]**.
 
