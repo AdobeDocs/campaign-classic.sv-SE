@@ -6,10 +6,10 @@ title: Användarhandbok för Campaign Classic v7
 user-guide-description: Med Adobe Campaign kan du använda omfattande kunddata för att skapa, samordna och leverera dynamiska kampanjer som kunderna verkligen vill ha – via e-post, mobiler, offlinekanaler med mera.
 sub-product: adobe campaign classic
 type: Documentation
-source-git-commit: a2590a6d8df1e73d77bbdef7b8cf3b2d6efe207f
+source-git-commit: 26ae7ff1f0837a9a50057d97b00422a288b9dc7a
 workflow-type: tm+mt
-source-wordcount: '2576'
-ht-degree: 99%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -677,6 +677,8 @@ ht-degree: 99%
             + [Konfigurera Sybase IQ](installation/using/configure-fda-sybase.md)
             + [Konfigurera Teradata](installation/using/configure-fda-teradata.md)
             + [Konfigurera SAP HANA](installation/using/configure-fda-sap-hana.md)
+            + [Konfigurera Microsoft SQL Server](installation/using/configure-fda-sql.md)
+            + [Konfigurera PostgreSQL](installation/using/configure-fda-postgresql.md)
          + [Fjärråtkomsträttigheter](installation/using/remote-database-access-rights.md)
          + [Anslut till databasen](installation/using/connecting-to-database.md)
          + [Skapa dataschemat](installation/using/creating-data-schema.md)
@@ -688,6 +690,7 @@ ht-degree: 99%
       + [Skapa nya instanser](installation/using/creating-new-instances.md)
       + [Lista över Campaign-alternativ](installation/using/configuring-campaign-options.md)
       + [Avinstallera Campaign](installation/using/uninstalling-campaign.md)
+      + [Installera nya teckensnitt](installation/using/install-fonts.md)
 + Övervakningshandbok {#monitoring-campaign-classic}
    + Introduktion {#introduction}
       + [Förord](production/using/foreword.md)

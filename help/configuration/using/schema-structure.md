@@ -6,10 +6,10 @@ audience: configuration
 content-type: reference
 topic-tags: schema-reference
 exl-id: 3405efb8-a37c-4622-a271-63d7a4148751
-source-git-commit: 1bb1365ce5a4eb89447c5d736a42cd470c7f3bba
+source-git-commit: 26ae7ff1f0837a9a50057d97b00422a288b9dc7a
 workflow-type: tm+mt
-source-wordcount: '1562'
-ht-degree: 1%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -175,33 +175,27 @@ Tabellen nedan visar mappningarna för de typer av data som genereras av Adobe C
 <table> 
  <tbody> 
   <tr> 
+   <td> <strong>Adobe Campaign</strong><br /> </td> 
    <td> <strong>PosgreSQL</strong><br /> </td> 
    <td> <strong>Oracle</strong><br /> </td> 
    <td> <strong>MS SQL</strong><br /> </td> 
-   <td> <strong>Adobe Campaign</strong><br /> </td> 
   </tr> 
   <tr> 
    <td> Sträng<br /> </td> 
    <td> VARCHAR(255)<br /> </td> 
    <td> VARCHAR2 (NVARCHAR2 om unicode används)<br /> </td> 
-   <td> VARCHAR (VARCHAR CHARACTER SET UNICODE if Unicode)<br /> </td> 
-   <td> VARCHAR<br /> </td> 
    <td> VARCHAR (NVARCHAR if unicode)<br /> </td> 
   </tr> 
   <tr> 
    <td> Boolean<br /> </td> 
    <td> SMALLINT<br /> </td> 
    <td> NUMBER(3)<br /> </td> 
-   <td> NUMERIC(3)<br /> </td> 
-   <td> SMALLINT<br /> </td> 
    <td> TINYINT<br /> </td> 
   </tr> 
   <tr> 
    <td> Byte<br /> </td> 
    <td> SMALLINT<br /> </td> 
    <td> NUMBER(3)<br /> </td> 
-   <td> NUMERIC(3)<br /> </td> 
-   <td> SMALLINT<br /> </td> 
    <td> TINYINT<br /> </td> 
   </tr> 
   <tr> 
@@ -209,38 +203,28 @@ Tabellen nedan visar mappningarna för de typer av data som genereras av Adobe C
    <td> SMALLINT<br /> </td> 
    <td> NUMBER(5)<br /> </td> 
    <td> SMALLINT<br /> </td> 
-   <td> SMALLINT<br /> </td> 
-   <td> SMALLINT<br /> </td> 
   </tr> 
   <tr> 
    <td> Dubbel<br /> </td> 
    <td> DUBBEL PRECISION<br /> </td> 
    <td> FLOAT<br /> </td> 
    <td> FLOAT<br /> </td> 
-   <td> DUBBELT<br /> </td> 
-   <td> FLOAT<br /> </td> 
   </tr> 
   <tr> 
    <td> Lång<br /> </td> 
    <td> INTEGER<br /> </td> 
    <td> NUMBER(10)<br /> </td> 
-   <td> INTEGER<br /> </td> 
-   <td> INTEGER<br /> </td> 
    <td> INT<br /> </td> 
   </tr> 
   <tr> 
    <td> Int64<br /> </td> 
    <td> BIGINT<br /> </td> 
    <td> NUMBER(20)<br /> </td> 
-   <td> NUMERIC(20)<br /> </td> 
-   <td> BIGINT<br /> </td> 
    <td> BIGINT<br /> </td> 
   </tr> 
   <tr> 
    <td> Datum<br /> </td> 
    <td> DATUM<br /> </td> 
-   <td> DATUM<br /> </td> 
-   <td> TIDSSTÄMPEL<br /> </td> 
    <td> DATUM<br /> </td> 
    <td> DATETIME<br /> </td> 
   </tr> 
@@ -248,24 +232,18 @@ Tabellen nedan visar mappningarna för de typer av data som genereras av Adobe C
    <td> Tid<br /> </td> 
    <td> TID<br /> </td> 
    <td> FLOAT<br /> </td> 
-   <td> TID<br /> </td> 
-   <td> TID<br /> </td> 
    <td> FLOAT<br /> </td> 
   </tr> 
   <tr> 
    <td> Datetime<br /> </td> 
    <td> TIMESTAMPZ<br /> </td> 
    <td> DATUM<br /> </td> 
-   <td> TIDSSTÄMPEL<br /> </td> 
-   <td> TIDSSTÄMPEL<br /> </td> 
    <td> MS SQL &lt; 2008: DATETIME<br /> MS SQL &gt;= 2012: DATETIMEOFFSET<br /> </td> 
   </tr> 
   <tr> 
    <td> Datetimenotz<br /> </td> 
    <td> TIMESTAMPZ<br /> </td> 
    <td> DATUM<br /> </td> 
-   <td> TIDSSTÄMPEL<br /> </td> 
-   <td> TIDSSTÄMPEL<br /> </td> 
    <td> MS SQL &lt; 2008: DATETIME<br /> MS SQL &gt;= 2012: DATETIME2<br /> </td> 
   </tr> 
   <tr> 
@@ -273,23 +251,17 @@ Tabellen nedan visar mappningarna för de typer av data som genereras av Adobe C
    <td> DUBBEL PRECISION<br /> </td> 
    <td> FLOAT<br /> </td> 
    <td> FLOAT<br /> </td> 
-   <td> DUBBELT<br /> </td> 
-   <td> FLOAT<br /> </td> 
   </tr> 
   <tr> 
    <td> PM<br /> </td> 
    <td> TEXT<br /> </td> 
    <td> CLOB (NCLOB if Unicode)<br /> </td> 
-   <td> CLOB (CLOB CHARACTER SET UNICODE if Unicode)<br /> </td> 
-   <td> CLOB(6 MB)<br /> </td> 
    <td> TEXT (NTEXT om Unicode)<br /> </td> 
   </tr> 
   <tr> 
    <td> Blob<br /> </td> 
    <td> BLOB<br /> </td> 
    <td> BLOB<br /> </td> 
-   <td> BLOB<br /> </td> 
-   <td> BLOB(4M)<br /> </td> 
    <td> BILD<br /> </td> 
   </tr> 
  </tbody> 

@@ -6,10 +6,10 @@ audience: platform
 content-type: reference
 topic-tags: connectors
 exl-id: 59d0277a-7588-4504-94e3-50f87b60da8a
-source-git-commit: 9265d389da53e51889c2b7a8cd330c1866a030d9
+source-git-commit: 26ae7ff1f0837a9a50057d97b00422a288b9dc7a
 workflow-type: tm+mt
-source-wordcount: '731'
-ht-degree: 1%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -236,3 +236,9 @@ Skapa [!DNL Azure Synapse] externt konto följer du stegen nedan:
 
 
 1. Klicka på **[!UICONTROL Save]**.
+
+Kopplingen stöder följande alternativ:
+
+| Option | Beskrivning |
+|---|---|
+| Autentisering | Typ av autentisering som stöds av kopplingen. Aktuellt värde som stöds: ActiveDirectoryMSI. </br>Mer information finns i [SQL-dokument](https://docs.microsoft.com/en-us/sql/connect/odbc/using-azure-active-directory?view=sql-server-ver15#example-connection-strings) (Exempel på anslutningssträngar nr 8). |

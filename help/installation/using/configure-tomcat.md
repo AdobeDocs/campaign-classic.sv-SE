@@ -6,9 +6,9 @@ audience: installation
 content-type: reference
 topic-tags: initial-configuration
 exl-id: a2126458-2ae5-47c6-ad13-925f0e067ecf
-source-git-commit: ed9e76495efb0cb49e248a7d38417642c5094a11
+source-git-commit: 26ae7ff1f0837a9a50057d97b00422a288b9dc7a
 workflow-type: tm+mt
-source-wordcount: '214'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -49,3 +49,15 @@ Filen kommer att innehålla följande typ av information:
 ```
 
 Om det behövs kan den här åtgärden reproduceras på serversidan.
+
+## Dölj Tomcat-felrapporten {#hide-tomcat-error-report}
+
+Av säkerhetsskäl rekommenderar vi starkt att du döljer Tomcat-felrapporten. Gör följande.
+
+1. Öppna **server.xml** filen finns i **/tomcat-8/conf** katalog i Adobe Campaign installationsmapp:  `/usr/local/neolane/nl6/tomcat-8/conf`
+1. Lägg till följande element längst ned efter alla befintliga kontextelement:
+
+   ```
+   <Valve className="org.apache.catalina.valves.ErrorReportValve" showReport="false" showServerInfo="false"/>
+   ```
+1. Starta om webbservrarna nlserver och Apache.

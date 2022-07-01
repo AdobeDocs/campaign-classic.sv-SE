@@ -6,10 +6,10 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: d65869ca-a785-4327-8e8d-791c28e4696c
-source-git-commit: e3ff5bb55e108c163dcf395da84076201f09e61c
-workflow-type: ht
-source-wordcount: '1281'
-ht-degree: 100%
+source-git-commit: 26ae7ff1f0837a9a50057d97b00422a288b9dc7a
+workflow-type: tm+mt
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -18,6 +18,72 @@ ht-degree: 100%
 ![](../../assets/v7-only.svg)
 
 Den här sidan listar nya funktioner, förbättringar och korrigeringar som kommer med den **senaste versionen av Campaign Classic v7**. Varje ny version kommer med en status som visas med en färg. Läs mer om versionsstatusen för Campaign Classic v7 på [den här sidan](rn-overview.md).
+
+## ![](assets/do-not-localize/limited_2.png) Version 7.3.1 – build 9352 {#release-7-3-1}
+
+_1 juli 2022_
+
+**Nyheter**
+
+<table> 
+<thead>
+<tr> 
+<th> <strong>Tidskänsliga meddelanden</strong><br /> </th> 
+</tr> 
+</thead> 
+<tbody> 
+<tr> 
+<td> <p>Med iOS 15 har Apple lagt till en funktion för känsligt meddelande som ger programutvecklaren kontroll över att kringgå fokusläget när ett meddelande anses vara känsligt och sedan måste nå användaren i realtid.</p>
+<p>Lär dig hur du skapar ett känsligt meddelande i <a href="../../delivery/using/create-notifications-ios.md">detaljerad dokumentation</a>.</p>
+</td> 
+</tr> 
+</tbody> 
+</table>
+
+**Kompatibilitetsuppdateringar**
+
+* Adobe Campaign SDK har nu stöd för Android 12 och iOS 15 för push-meddelanden.
+* Adobe Campaign är nu kompatibelt med MySQL 8.
+* Adobe Campaign är nu kompatibelt med Windows 11.
+* Adobe Campaign är nu kompatibelt med Debian 11.
+
+Se [kompatibilitetsmatrisen för Campaign](../../rn/using/compatibility-matrix.md#OperatingSystems).
+
+**Förbättringar**
+
+* Efter att livscykeln för Internet Explorer 11 har upphört används nu Edge Chromium som återgivningsmotor för HTML i konsolen.
+* Hanteringen av databasanslutningar i Adobe Campaign har förbättrats för att optimera stabiliteten.
+* Microsoft Exchange Online OAuth 2.0-autentisering för POP3 stöds nu i Campaign. [Läs mer](../../installation/using/external-accounts.md#bounce-mails-external-account)
+* Åtgärdade olika problem vid användning av en arbetsflödesaktivitet för anrikning med externa data. (NEO-38069)
+* SAP Hana FDA-anslutningen har uppdaterats för att fungera med den senaste SAP Hana-databasversionen (2.x).
+* Teradata FDA-anslutningen har uppdaterats för att fungera med den senaste Teradata-versionen (17).
+* 20.2 introducerades stöd för tokenbaserad autentisering för iOS-leveranser för nya leveranser och leveransmallar. I 7.2 lades en patch till i fullversionen för att tillämpa det tokenbaserade autentiseringsstödet på maximalt 10 000 tidigare skapade mallar för leveranser och leveranser. I 7.3 har plåstret förbättrats och gränsen har tagits bort.
+
+**Felkorrigeringar**
+
+* Ett fel från den tidigare versionen som gjorde att användare inte kunde ändra storlek på inloggningssidan för IMS har åtgärdats.
+* Korrigerade ett fel som uppstod när innehållshanterarpaketet installerades på en befintlig instans.
+* Ett problem i **Kampanjer** meny där ett meddelande om pågående åtgärd visades kontinuerligt.
+* När Adobe Analytics är aktiverat har ett problem korrigerats som tog bort BID (Broadlog ID) och CID (Campaign ID) från webbadressen när ett e-postmeddelande med en webbadress skickades utan att leveransen sparades.
+* Korrigerade ett problem vid överföring av en bild i mappen Public Resources i en instans med Message Center-specifik konfiguration. Följande felmeddelande visas: &quot;Det gick inte att överföra bilderna till spårningsservrarna.&quot;
+* Korrigerade ett problem som gjorde att systemet kraschade när konfigurationen skulle återskapas om konfigurationsfilerna var felaktiga.
+* Korrigerade ett problem som kunde leda till att leveransindikatorer inte uppdaterades korrekt. (NEO-44827)
+* Korrigerade ett problem som kunde leda till ett efteruppgraderingsfel när komplexa frågor användes. (NEO-43648)
+* Korrigerade ett problem som kunde förhindra att WebApps-förhandsgranskning fungerade. (NEO-43242)
+* Korrigerade ett problem som kunde leda till att leveransförberedelser misslyckades när en extern målmappningsfil användes i ett arbetsflöde med en datainläsningsaktivitet (fil). (NEO-43691)
+* Korrigerade ett problem som kunde leda till krascher och krävde en fullständig omstart av instansen. (NEO-44645)
+* Korrigerade ett problem som kunde förhindra att heatmap-kartan för arbetsflöde läser in något resultat. (NEO-43360)
+* Korrigerade ett problem som kunde leda till anslutningsproblem när den externa FDA-anslutningen användes. (NEO-42722)
+* Korrigerade ett problem med korrektur vid användning av adressersättning och undantag av kontrollgrupper. (NEO-39695)
+* Korrigerade ett problem som kunde leda till arbetsflödesfel på grund av ett anslutningsproblem i Snowflake. (NEO-46299)
+* Korrigerade ett fel som kunde frysa klientkonsolen på grund av ett ogiltigt tecken i ett anpassningsblock. (NEO-45761)
+* Korrigerade ett problem som kunde leda till anslutningsproblem när ett externt konto för Snowflake skapades som en extern databas. (NEO-45744)
+* Korrigerade ett problem som kunde leda till att tabellinformation visades som skyddad av ett visibleIf-attribut. (NEO-37865)
+* Ett problem som kunde visa felmeddelandet &quot;$ is not defined&quot; under leveransanalysfasen har korrigerats. (NEO-32940)
+* Korrigerade ett problem som orsakade att leveranser associerades med fel eventType. (NEO-45743)
+* Korrigerade ett problem som kunde leda till krascher på grund av tillfälliga kärndumpar (NEO-30549)
+* Korrigerade ett problem som kan leda till krascher när felaktig HTML-kod används i en leverans. (NEO-40385)
+* Ett problem som kunde förhindra icke-administratörer från att få åtkomst till **Analys** i leveransegenskaperna. (NEO-34025)
 
 ## ![](assets/do-not-localize/green_2.png) Version 7.2.2 – build 9349 {#release-7-2-2}
 
@@ -40,7 +106,6 @@ _1 mars 2022_
 * Åtgärdade ett problem som ledde till fel vid synkronisering av instanser för mid-sourcing och marknadsföring i en multi-mid-konfiguration. (NEO-10432)
 * Åtgärdade ett problem som orsakade ett fel när leveransarbetsflödet uppdaterades när fler än 1 000 utsändningsloggar fanns samtidigt. (NEO-40276)
 * Åtgärdade ett problem som förhindrade indikatorer för andelen öppnade leveranser och andelen klickade leveranser från att uppdateras automatiskt. (NEO-43253)
-
 
 ## ![](assets/do-not-localize/limited_2.png) Version 7.2.1 – build 9346 {#release-7-2-1}
 

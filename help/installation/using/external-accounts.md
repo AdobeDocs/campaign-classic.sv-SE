@@ -6,7 +6,7 @@ audience: platform
 content-type: reference
 topic-tags: administration-basics
 exl-id: 4a17d5e8-c73f-42e7-b641-0fee6a52c5c0
-source-git-commit: 02eebe83de49ee97e573b0c47ca1fddb2195b991
+source-git-commit: 26ae7ff1f0837a9a50057d97b00422a288b9dc7a
 workflow-type: tm+mt
 source-wordcount: '0'
 ht-degree: 0%
@@ -75,6 +75,34 @@ Så här konfigurerar du **[!UICONTROL Bounce mails (defaultPopAccount)]** exter
 * **[!UICONTROL Encryption]**
 
    Typ av vald kryptering mellan **[!UICONTROL By default]**, **[!UICONTROL POP3 + STARTTLS]**, **[!UICONTROL POP3]** eller **[!UICONTROL POP3S]**.
+
+* **[!UICONTROL Function]**
+
+   Inkommande e-post eller SOAP-router
+
+>[!IMPORTANT]
+>
+>Innan du konfigurerar ditt POP3-externa konto med Microsoft OAuth 2.0 måste du först registrera programmet i Azure-portalen. Mer information finns på [den här sidan](https://docs.microsoft.com/en-us/azure/active-directory/develop/quickstart-register-app).
+
+Konfigurera en POP3 extern med **Microsoft OAuth 2.0**, kontrollera **[!UICONTROL Microsoft OAuth 2.0]** och fylla i följande fält:
+
+* **[!UICONTROL Azure tenant]**
+
+   Azure ID (eller katalog (klientorganisations-ID) finns i **Grundläggande** listruta med programöversikt i Azure-portalen.
+
+* **[!UICONTROL Azure Client ID]**
+
+   Klient-ID (eller program-ID (klient)) finns i **Grundläggande** listruta med programöversikt i Azure-portalen.
+
+* **[!UICONTROL Azure Client secret]**
+
+   Klienthemligt ID finns i **Klienthemligheter** kolumn från **Certifikat och hemligheter** menyn för ditt program i Azure-portalen.
+
+* **[!UICONTROL Azure Redirect URL]**
+
+   Omdirigerings-URL:en finns i **Autentisering** menyn för ditt program i Azure-portalen. Det ska sluta med följande syntax `nl/jsp/oauth.jsp`, t.ex. `https://redirect.adobe.net/nl/jsp/oauth.jsp`.
+
+När du har angett de olika inloggningsuppgifterna kan du klicka på **[!UICONTROL Setup the connection]** för att slutföra konfigurationen av ditt externa konto.
 
 ### Dirigering{#routing-external-account}
 
@@ -166,6 +194,14 @@ Med det externa SFTP-kontot kan du konfigurera och testa åtkomst till en server
 * **[!UICONTROL Password]**
 
    Lösenord som används för att ansluta till SFTP-servern.
+
+Så här lägger du till SSH-nycklar i Windows:
+
+1. Skapa **STARTSIDA** systemvariabel med ett värde angivet som installationskatalog.
+
+2. Lägg till din privata nyckel i `/$HOME/.ssh/id_rsa` mapp.
+
+3. Starta om Adobe Campaign tjänster.
 
 ### Extern databas (FDA) {#external-database-external-account}
 

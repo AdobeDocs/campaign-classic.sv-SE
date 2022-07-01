@@ -6,10 +6,10 @@ audience: platform
 content-type: reference
 topic-tags: connectors
 exl-id: 8b2a9c73-807a-4936-9fd6-9d26c805a31f
-source-git-commit: 0cfe8439007b56014eba497c511904c4f11b39ce
+source-git-commit: 26ae7ff1f0837a9a50057d97b00422a288b9dc7a
 workflow-type: tm+mt
-source-wordcount: '361'
-ht-degree: 4%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -21,7 +21,6 @@ Använd kampanj **Åtkomst till federerade data** (FDA) om du vill bearbeta info
 
 1. Konfigurera [!DNL Vertica] på [CentOS](#vertica-centos), [Windows](#vertica-windows) eller [Debian](#vertica-debian)
 1. Konfigurera [!DNL Vertica] [externt konto](#vertica-external) i Campaign
-
 
 >[!NOTE]
 >
@@ -166,4 +165,12 @@ Du måste skapa en [!DNL Vertica] externt konto för att ansluta Campaign-instan
    * **[!UICONTROL Password]**: Lösenord för användarkonto
 
    * **[!UICONTROL Database]**: Namn på databasen
+
    ![](assets/vertica.png)
+
+Kopplingen stöder följande alternativ:
+
+| Option | Beskrivning |
+|---|---|
+| TimeZoneName | Som standard är den tom, vilket innebär att systemtidszonen för programservern i Campaign Classic används. Alternativet kan användas för att framtvinga TIMEZONE-sessionsparametern. |
+

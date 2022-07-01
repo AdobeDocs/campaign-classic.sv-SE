@@ -6,10 +6,10 @@ audience: platform
 content-type: reference
 topic-tags: connectors
 exl-id: ebaad59f-0607-4090-92d0-e457fbf9a348
-source-git-commit: 5d2ec0836fe5f106e0c56e5abbe7bab9332d7e18
+source-git-commit: 26ae7ff1f0837a9a50057d97b00422a288b9dc7a
 workflow-type: tm+mt
-source-wordcount: '786'
-ht-degree: 2%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -193,11 +193,11 @@ Du måste skapa en [!DNL Google BigQuery] externt konto för att ansluta din Ado
 
 Kopplingen stöder följande alternativ:
 
-| Option | Värde | Beskrivning |
-|:-:|:-:|:-:|
-| ProxyType | string | Typ av proxy som används för att ansluta till BigQuery via ODBC- och SDK-anslutningar. </br>HTTP (standard), http_no_tunnel, sockor4 och sockor5 stöds för närvarande. |
-| ProxyHost | string | Värdnamn eller IP-adress dit proxyn kan nås. |
-| ProxyPort | tal | Portnummer som proxyn körs på, t.ex. 8080 |
-| ProxyUid | string | Användarnamn som används för den autentiserade proxyn |
-| ProxyPwd | string | ProxyUid-lösenord |
-| bqpath | string | Observera att detta endast gäller för massinläsningsverktyg (Cloud SDK). </br> För att undvika att använda variabeln PATH eller om katalogen google-cloud-sdk måste flyttas till en annan plats, kan du med det här alternativet ange den exakta sökvägen till bin-katalogen i molnet på servern. |
+| Option | Beskrivning |
+|:-:|:-:|
+| ProxyType | Typ av proxy som används för att ansluta till BigQuery via ODBC- och SDK-anslutningar. </br>HTTP (standard), http_no_tunnel, sockor4 och sockor5 stöds för närvarande. |
+| ProxyHost | Värdnamn eller IP-adress dit proxyn kan nås. |
+| ProxyPort | Portnummer som proxyn körs på, t.ex. 8080 |
+| ProxyUid | Användarnamn som används för den autentiserade proxyn |
+| ProxyPwd | ProxyUid-lösenord |
+| bqpath | Observera att detta endast gäller för massinläsningsverktyg (Cloud SDK). </br> För att undvika att använda variabeln PATH eller om katalogen google-cloud-sdk måste flyttas till en annan plats, kan du med det här alternativet ange den exakta sökvägen till bin-katalogen i molnet på servern. |
