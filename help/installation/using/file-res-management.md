@@ -6,10 +6,10 @@ audience: installation
 content-type: reference
 topic-tags: initial-configuration
 exl-id: 236afdfe-fb23-4ebb-b000-76e14bf01d9e
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 4ff86349d6b8966273585bf2a1ea0d785a7e87cb
 workflow-type: tm+mt
-source-wordcount: '612'
-ht-degree: 0%
+source-wordcount: '598'
+ht-degree: 1%
 
 ---
 
@@ -27,11 +27,7 @@ Standardvärdet för det här attributet är **.+** och gör att du kan överfö
 
 Om du vill begränsa möjliga format ersätter du attributvärdet med ett giltigt reguljärt uttryck för java. Du kan ange flera värden genom att separera dem med kommatecken.
 
-Till exempel: **uploadWhiteList=&quot;.*.png,*.jpg&quot;** gör att du kan överföra PNG- och JPG-format till servern. Inga andra format godtas.
-
->[!NOTE]
->
->I Internet Explorer måste den fullständiga filsökvägen verifieras av det reguljära uttrycket.
+Till exempel: **uploadWhiteList=&quot;.&#42;.png,&#42;.jpg&quot;** gör att du kan överföra PNG- och JPG-format till servern. Inga andra format godtas.
 
 Du kan också förhindra att viktiga filer överförs genom att konfigurera webbservern. [Läs mer](web-server-configuration.md)
 

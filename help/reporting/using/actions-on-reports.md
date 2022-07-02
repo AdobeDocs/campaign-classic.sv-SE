@@ -4,9 +4,9 @@ title: Åtgärder på rapporter
 description: Åtgärder på rapporter
 feature: Reporting
 exl-id: b30cdeaf-4ad6-473d-bdbc-91984755b609
-source-git-commit: 36e546a34d8c2345fefed5d459095a76c6224a38
+source-git-commit: 4ff86349d6b8966273585bf2a1ea0d785a7e87cb
 workflow-type: tm+mt
-source-wordcount: '544'
+source-wordcount: '543'
 ht-degree: 3%
 
 ---
@@ -86,7 +86,7 @@ Läs mer om **nlserver** tjänst, se [det här avsnittet](../../production/using
 
 Du kan skriva ut rapporten: Om du vill göra det klickar du på skrivarikonen: Då öppnas dialogrutan.
 
-Du får ett bättre resultat om du redigerar utskriftsalternativen i Internet Explorer och väljer **[!UICONTROL Print background colors and images]**.
+Du får ett bättre resultat om du redigerar utskriftsalternativen i Utforskaren och väljer **[!UICONTROL Print background colors and images]**.
 
 ![](assets/s_ncs_advuser_report_print_options.png)
 

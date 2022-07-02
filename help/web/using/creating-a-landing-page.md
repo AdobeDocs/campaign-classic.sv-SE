@@ -4,9 +4,9 @@ title: Skapa en landningssida
 description: Skapa en landningssida
 feature: Landing Pages
 exl-id: 71c737c2-b0d6-4ae8-a5df-28a08dff82d7
-source-git-commit: b6f1556cf49492cefaf61c29a058584b0ccee16a
+source-git-commit: 4ff86349d6b8966273585bf2a1ea0d785a7e87cb
 workflow-type: tm+mt
-source-wordcount: '724'
+source-wordcount: '721'
 ht-degree: 3%
 
 ---
@@ -88,7 +88,7 @@ Använd dessa steg för varje sida som infogas i webbprogrammet.
 
 >[!CAUTION]
 >
->**DCE kör JavaScript-koden för den inlästa HTML-sidan.** JavaScript-fel i HTML-mallen som kan visas i Adobe Campaign-gränssnittet. Felen är inte relaterade till redigeraren. Om du vill kontrollera att det inte finns några fel i de importerade filerna bör du testa dem i en webbläsare (Internet Explorer/Firefox/Chrome) innan du importerar filerna till DCE.
+>**DCE kör JavaScript-koden för den inlästa HTML-sidan.** JavaScript-fel i HTML-mallen som kan visas i Adobe Campaign-gränssnittet. Felen är inte relaterade till redigeraren. Om du vill kontrollera att det inte finns några fel i de importerade filerna rekommenderar vi att du testar dem i en webbläsare innan du importerar filerna till DCE.
 
 ## Steg 2 - Konfigurera innehållet {#step-2---configuring-the-content}
 
