@@ -6,10 +6,10 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: d65869ca-a785-4327-8e8d-791c28e4696c
-source-git-commit: 26ae7ff1f0837a9a50057d97b00422a288b9dc7a
+source-git-commit: 2bbf548992b7ab9c0d8a6a0666c2024db5af1f63
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '1936'
+ht-degree: 68%
 
 ---
 
@@ -51,7 +51,7 @@ Se [kompatibilitetsmatrisen för Campaign](../../rn/using/compatibility-matrix.m
 
 **Förbättringar**
 
-* Efter att livscykeln för Internet Explorer 11 har upphört används nu Edge Chromium som återgivningsmotor för HTML i konsolen.
+* Efter att livscykeln för Internet Explorer 11 är slut använder nu renderingsmotorn HTML för Adobe Services i konsolen Edge Chromium.
 * Hanteringen av databasanslutningar i Adobe Campaign har förbättrats för att optimera stabiliteten.
 * Microsoft Exchange Online OAuth 2.0-autentisering för POP3 stöds nu i Campaign. [Läs mer](../../installation/using/external-accounts.md#bounce-mails-external-account)
 * Åtgärdade olika problem vid användning av en arbetsflödesaktivitet för anrikning med externa data. (NEO-38069)
