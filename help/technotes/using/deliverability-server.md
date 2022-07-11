@@ -5,16 +5,16 @@ description: Lär dig hur ni implementerar en server för kampanjleverans
 hide: true
 hidefromtoc: true
 exl-id: bc62ddb9-beff-4861-91ab-dcd0fa1ed199
-source-git-commit: c3b1ffcb580c7510a64115e0abbf16cb766146c5
+source-git-commit: 5e0cf925ab4915c8a1d2c9d50daf77190023710f
 workflow-type: tm+mt
-source-wordcount: '1067'
+source-wordcount: '1065'
 ht-degree: 3%
 
 ---
 
 # Kampanjleveransserver {#acc-deliverability}
 
-Från och med version 21.1 av Campaign Classic föreslår Adobe Campaign en ny leveransserver som har hög tillgänglighet och som åtgärdar problem med säkerhetsefterlevnad. Campaign Classic synkroniserar nu leveransregler, utsändningsloggar och undertryckningsadress från och till en ny leveransserver.
+Startar [Version v7.2.1](../../rn/using/latest-release.md#release-7-2-2)föreslår Adobe Campaign en ny server för leverans med hög tillgänglighet som åtgärdar problem med säkerheten. Campaign Classic synkroniserar nu leveransregler, utsändningsloggar och undertryckningsadress från och till en ny leveransserver.
 
 Som Campaign Classic-kund måste du implementera den nya leveransservern **före den 31 augusti 2022**.
 
