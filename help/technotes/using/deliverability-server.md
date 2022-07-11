@@ -5,9 +5,9 @@ description: Lär dig hur ni implementerar en server för kampanjleverans
 hide: true
 hidefromtoc: true
 exl-id: bc62ddb9-beff-4861-91ab-dcd0fa1ed199
-source-git-commit: a007e4d5dd73f01657f1642be6f0b1a92f39e9bf
+source-git-commit: 2e4d699aef0bea4f12d1bd2d715493c4a94a74dd
 workflow-type: tm+mt
-source-wordcount: '923'
+source-wordcount: '927'
 ht-degree: 5%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 5%
 
 Från och med version 21.1 av Campaign Classic föreslår Adobe Campaign en ny leveransserver som har hög tillgänglighet och som åtgärdar problem med säkerhetsefterlevnad. Campaign Classic synkroniserar nu leveransregler, utsändningsloggar och undertryckningsadress från och till en ny leveransserver.
 
-Som Campaign Classic-kund måste du implementera den nya leveransservern
+Som kund hos Campaign Classic måste ni implementera den nya leveransservern.
 
 >[!NOTE]
 >
@@ -27,7 +27,6 @@ Som Campaign Classic-kund måste du implementera den nya leveransservern
 Adobe tar äldre datacenter ur drift på grund av säkerhetsskäl. Adobe Campaign Classic-klienter måste migrera till den nya slutprodukten, som ligger hos Amazon webbtjänst (AWS).
 
 Den nya servern garanterar hög tillgänglighet (99.9) &#x200B; och tillhandahåller säkra och autentiserade slutpunkter så att kampanjservrar kan hämta nödvändiga data: I stället för att ansluta till databasen för varje begäran, cachelagrar den nya leveransservern data för att hantera förfrågningarna där det är möjligt. Den här funktionen förbättrar svarstiden. &#x200B;
-
 
 ## Påverkas du?{#acc-deliverability-impacts}
 
@@ -43,6 +42,9 @@ Som en **lokal/hybridkund** måste du uppgradera till en av de nyare versionerna
 
 ## Implementeringssteg (hybridkunder och lokala kunder) {#implementation-steps}
 
+Campaign måste kommunicera med Adobe Shared Services via en IMS-baserad autentisering, vilket ingår i den nya integreringen av leveransservern. Det bästa sättet är att använda den Adobe Developer-baserade gatewaytoken (kallas även Token för tekniskt konto eller Adobe IO JWT).
+
+
 >[!WARNING]
 >
 >Dessa åtgärder bör endast utföras av Hybrid och lokalt implementerade implementeringar.
@@ -51,11 +53,18 @@ Som en **lokal/hybridkund** måste du uppgradera till en av de nyare versionerna
 
 ### Förhandskrav{#prerequisites}
 
-Campaign måste kommunicera med Adobe Shared Services via en IMS-baserad autentisering, vilket ingår i den nya integreringen av leveransservern. Det bästa sättet är att använda den Adobe Developer-baserade gatewaytoken (kallas även för teknisk kontotoken eller Adobe IO JWT).
+Kontrollera instanskonfigurationen innan du startar implementeringen.
+
+1. Öppna Campaign-klientkonsolen och logga in på Adobe Campaign som administratör.
+1. Bläddra till **Administration > Plattform > Alternativ**.
+1. Kontrollera `DmRendering_cuid` alternativvärdet är ifyllt.
+
+   * Om alternativet är ifyllt kan du starta implementeringen.
+   * Om inget värde är ifyllt kontaktar du [Adobe kundtjänst](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) för att få ditt CUID.
+
+      Det här alternativet måste fyllas i för alla Campaign-instanser (MKT, MID, RT, EXEC) med samma värde.
 
 ### Steg 1: Skapa/uppdatera ditt Adobe Developer-projekt {#adobe-io-project}
-
-
 
 1. Åtkomst [Adobe Developer Console](https://developer.adobe.com/console/home) och logga in med utvecklaråtkomst i din organisation.
 
@@ -126,15 +135,7 @@ För att göra detta:
 
 1. Du måste stoppa och sedan starta om servern för att ändringen ska kunna beaktas. Du kan också köra en `config -reload` -kommando.
 
-### Steg 3: Kontrollera konfigurationen
-
-När inställningarna är klara kan du kontrollera instanskonfigurationen. Följ stegen nedan:
-
-1. Öppna klientkonsolen och logga in på Adobe Campaign som administratör.
-1. Bläddra till **Administration > Plattform > Alternativ**.
-1. Kontrollera `DmRendering_cuid` alternativvärdet är ifyllt. Den ska fyllas i på alla era Campaign-instanser (MKT, MID, RT, EXEC). Om inget värde är ifyllt kontaktar du [Adobe kundtjänst](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) för att få ditt CUID.
-
-### Steg 4: Aktivera den nya leveransservern
+### Steg 3: Aktivera den nya leveransservern
 
 Nu kan du aktivera den nya leveransservern. Så här gör du:
 
@@ -142,7 +143,7 @@ Nu kan du aktivera den nya leveransservern. Så här gör du:
 1. Bläddra till **Administration > Plattform > Alternativ**.
 1. Öppna `NewDeliverabilityServer_FeatureFlag` och ange värdet till `1`. Den här konfigurationen bör utföras på alla era Campaign-instanser (MKT, MID, RT, EXEC).
 
-### Steg 5: Validera konfigurationen
+### Steg 4: Validera konfigurationen
 
 Följ stegen nedan för att kontrollera om integreringen är slutförd:
 
