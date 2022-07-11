@@ -4,10 +4,11 @@ title: Migrera till den nya leveransservern
 description: Lär dig hur ni implementerar en server för kampanjleverans
 hide: true
 hidefromtoc: true
-source-git-commit: 65ab862ec568647dd06c1f7b7b83e5b921353cc7
+exl-id: bc62ddb9-beff-4861-91ab-dcd0fa1ed199
+source-git-commit: a007e4d5dd73f01657f1642be6f0b1a92f39e9bf
 workflow-type: tm+mt
-source-wordcount: '908'
-ht-degree: 4%
+source-wordcount: '923'
+ht-degree: 5%
 
 ---
 
@@ -19,7 +20,7 @@ Som Campaign Classic-kund måste du implementera den nya leveransservern
 
 >[!NOTE]
 >
->Om du har frågor om dessa ändringar kan du läsa [Vanliga frågor](#faq-aa). Mer information får du av [Adobe kundtjänst](https://helpx.adobe.com/se/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
+>Om du har frågor om de här ändringarna kan du kontakta [Adobes kundtjänst](https://helpx.adobe.com/se/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
 
 ## Vad har ändrats?{#acc-deliverability-changes}
 
@@ -36,14 +37,13 @@ Lär dig hur du kontrollerar din version [i det här avsnittet](../../platform/u
 
 ## Hur uppdaterar jag?{#acc-deliverability-update}
 
-Som värdkund kommer Adobe att arbeta med dig för att uppgradera dina instanser till den nyare versionen.
+Som **värdbaserad kund** kommer Adobe att arbeta med dig för att uppgradera dina instanser till den nyare versionen och skapa projektet i Adobe Developer Console.
 
-Som lokal/hybridkund måste du uppgradera till en av de nyare versionerna för att kunna dra nytta av den nya leveransservern.
-När alla instanser har uppgraderats kan du [implementera den nya integreringen](#implementation-steps) till Adobe-server och säkerställa en smidig övergång.
+Som en **lokal/hybridkund** måste du uppgradera till en av de nyare versionerna för att kunna dra nytta av den nya leveransservern. När alla instanser har uppgraderats kan du [implementera den nya integreringen](#implementation-steps) till Adobe-server och säkerställa en smidig övergång.
 
 ## Implementeringssteg (hybridkunder och lokala kunder) {#implementation-steps}
 
->[!IMPORTANT]
+>[!WARNING]
 >
 >Dessa åtgärder bör endast utföras av Hybrid och lokalt implementerade implementeringar.
 >
@@ -55,29 +55,45 @@ Campaign måste kommunicera med Adobe Shared Services via en IMS-baserad autenti
 
 ### Steg 1: Skapa/uppdatera ditt Adobe Developer-projekt {#adobe-io-project}
 
+
+
 1. Åtkomst [Adobe Developer Console](https://developer.adobe.com/console/home) och logga in med utvecklaråtkomst i din organisation.
 
    >[!NOTE]
    >
    > Se till att du är inloggad på rätt organisationsportal.
 
-1. Välj **[!UICONTROL + Add to Project]** och välja **[!UICONTROL API]**.
-1. I **[!UICONTROL Add an API]** fönster, markera **[!UICONTROL Adobe Campaign]**.
-1. Välj **[!UICONTROL Service Account (JWT)]** som autentiseringstyp.
-1. Om ditt klient-ID var tomt väljer du **[!UICONTROL Generate a key pair]** för att skapa ett nyckelpar för offentlig och privat nyckel.
+1. Välj **[!UICONTROL Create new project]**.
+   ![](assets/New-Project.png)
 
-   Nycklarna laddas sedan ned automatiskt med ett standardutgångsdatum på 365 dagar. När det har gått ut måste du skapa ett nytt nyckelpar och uppdatera integreringen i konfigurationsfilen. Med alternativ 2 kan du välja att manuellt skapa och överföra **[!UICONTROL Public key]** med ett längre utgångsdatum.
 
    >[!CAUTION]
    >
-   >Du bör spara filen config.zip när nedladdningsprompten visas eftersom du inte kan ladda ned den igen.
+   >Om du redan använder Adobe IO JWT-autentiseringsfunktioner för en annan integrering, till exempel Analytics Connector eller Adobe Triggers, måste du uppdatera projektet genom att lägga till **Kampanj-API** till det projektet.
+1. Välj **[!UICONTROL Add API]**.
+   ![](assets/Add-API.png)
+1. I **[!UICONTROL Add an API]** fönster, markera **[!UICONTROL Adobe Campaign]**.
+   ![](assets/AC-API.png)
+<!--1. Choose **[!UICONTROL Service Account (JWT)]** as the authentication type.-->
+1. Om ditt klient-ID var tomt väljer du **[!UICONTROL Generate a key pair]** för att skapa ett nyckelpar för offentlig och privat nyckel.
+   ![](assets/Generate-a-key-pair.png)
+
+   Nycklarna laddas sedan ned automatiskt med ett standardutgångsdatum på 365 dagar. När det har gått ut måste du skapa ett nytt nyckelpar och uppdatera integreringen i konfigurationsfilen. Med alternativ 2 kan du välja att manuellt skapa och överföra **[!UICONTROL Public key]** med ett längre utgångsdatum.
+   ![](assets/New-key-pair.png)
+
+   >[!CAUTION]
+   >
+   >Du bör spara `config.zip` när nedladdningsprompten visas eftersom du inte kan ladda ned den igen.
 
 1. Klicka på **[!UICONTROL Next]**.
-1. Välj en befintlig **[!UICONTROL Product profile]** eller skapa en ny vid behov. Ingen behörighet krävs för detta **[!UICONTROL Product profile]**. Mer information om [!DNL Analytics] **[!UICONTROL Product Profiles]**, se [den här sidan](https://helpx.adobe.com/enterprise/using/manage-developers.html).
+1. Välj en befintlig **[!UICONTROL Product profile]** eller skapa en ny vid behov. Ingen behörighet krävs för detta **[!UICONTROL Product profile]**. Mer information om **[!UICONTROL Product Profiles]**, se [den här sidan](https://helpx.adobe.com/enterprise/using/manage-developers.html).
+   ![](assets/Product-Profile-API.png)
 
    Klicka sedan på **[!UICONTROL Save configured API]**.
 
-1. Välj **[!UICONTROL Adobe Campaign]** och kopiera följande information under **[!UICONTROL Service Account (JWT)]**:
+1. Välj **[!UICONTROL Adobe Campaign]** och kopiera följande information under **[!UICONTROL Service Account (JWT)]**
+
+   ![](assets/Config-API.png)
 
    * **[!UICONTROL Client ID]**
    * **[!UICONTROL Client Secret]**
@@ -116,7 +132,7 @@ När inställningarna är klara kan du kontrollera instanskonfigurationen. Följ
 
 1. Öppna klientkonsolen och logga in på Adobe Campaign som administratör.
 1. Bläddra till **Administration > Plattform > Alternativ**.
-1. Kontrollera `DmRendering_cuid` alternativvärdet är ifyllt. Den ska fyllas i på alla era Campaign-instanser (MKT, MID, RT, EXEC). Om värdet inte är ifyllt måste du fylla i det. Om inget värde är ifyllt kontaktar du [Adobe kundtjänst](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) för att få ditt CUID.
+1. Kontrollera `DmRendering_cuid` alternativvärdet är ifyllt. Den ska fyllas i på alla era Campaign-instanser (MKT, MID, RT, EXEC). Om inget värde är ifyllt kontaktar du [Adobe kundtjänst](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) för att få ditt CUID.
 
 ### Steg 4: Aktivera den nya leveransservern
 
@@ -125,7 +141,6 @@ Nu kan du aktivera den nya leveransservern. Så här gör du:
 1. Öppna klientkonsolen och logga in på Adobe Campaign som administratör.
 1. Bläddra till **Administration > Plattform > Alternativ**.
 1. Öppna `NewDeliverabilityServer_FeatureFlag` och ange värdet till `1`. Den här konfigurationen bör utföras på alla era Campaign-instanser (MKT, MID, RT, EXEC).
-
 
 ### Steg 5: Validera konfigurationen
 
@@ -136,13 +151,5 @@ Följ stegen nedan för att kontrollera om integreringen är slutförd:
 1. Bläddra till **Administration > Produktion > Tekniska arbetsflöden**.
 1. Starta om **Uppdatering för leverans** arbetsflöde (deliverabilityUpdate). Detta bör utföras på alla era Campaign-instanser (MKT, MID, RT, EXEC).
 1. Kontrollera loggar: arbetsflödet ska köras utan fel.
-
-## Vanliga frågor och svar {#faq-aa}
-
-F: S:
-
-F: S:
-
-
 
 Mer vägledning får du av [Adobe kundtjänst](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
