@@ -5,10 +5,10 @@ description: Lär dig hur ni implementerar en server för kampanjleverans
 hide: true
 hidefromtoc: true
 exl-id: bc62ddb9-beff-4861-91ab-dcd0fa1ed199
-source-git-commit: 2c70b5a4434b9fb22490eb3c1705f4e5c803643e
+source-git-commit: 6740b5eed33612bd7a3b217a8f53b07518f879fb
 workflow-type: tm+mt
-source-wordcount: '909'
-ht-degree: 4%
+source-wordcount: '1067'
+ht-degree: 3%
 
 ---
 
@@ -16,11 +16,11 @@ ht-degree: 4%
 
 Från och med version 21.1 av Campaign Classic föreslår Adobe Campaign en ny leveransserver som har hög tillgänglighet och som åtgärdar problem med säkerhetsefterlevnad. Campaign Classic synkroniserar nu leveransregler, utsändningsloggar och undertryckningsadress från och till en ny leveransserver.
 
-Som kund hos Campaign Classic måste ni implementera den nya leveransservern.
+Som Campaign Classic-kund måste du implementera den nya leveransservern **före den 31 augusti 2022**.
 
 >[!NOTE]
 >
->Om du har frågor om de här ändringarna kan du kontakta [Adobes kundtjänst](https://helpx.adobe.com/se/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
+>Om du har frågor om dessa ändringar kan du läsa [Vanliga frågor](#faq)eller kontakta [Adobe kundtjänst](https://helpx.adobe.com/se/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
 
 ## Vad har ändrats?{#acc-deliverability-changes}
 
@@ -30,7 +30,7 @@ Den nya servern garanterar hög tillgänglighet (99.9) &#x200B; och tillhandahå
 
 ## Påverkas du?{#acc-deliverability-impacts}
 
-Om du använder den gamla Adobe Campaign-servern för leverans och miljön implementerades på en lägre version än Campaign 21.1.1 påverkas du. Du måste uppgradera till Campaign 21.1 (eller mer).
+Om miljön implementerades på en lägre version än [Campaign v7.2.1](../../rn/using/latest-release.md#release-7-2-2), du påverkas. Du måste uppgradera till Campaign v7.2.1 (eller mer).
 
 Lär dig hur du kontrollerar din version [i det här avsnittet](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version).
 
@@ -150,5 +150,22 @@ Följ stegen nedan för att kontrollera om integreringen är slutförd:
 1. Bläddra till **Administration > Produktion > Tekniska arbetsflöden**.
 1. Starta om **Uppdatering för leverans** arbetsflöde (deliverabilityUpdate). Detta bör utföras på alla era Campaign-instanser (MKT, MID, RT, EXEC).
 1. Kontrollera loggar: arbetsflödet ska köras utan fel.
+
+
+## Vanliga frågor och svar {#faq}
+
+### Vad händer om jag inte uppgraderar min miljö?
+
+Alla Campaign-instanser som inte har uppgraderats senast den 31 augusti kommer inte längre att kunna ansluta till Campaign Deliverability-servern. Som en följd av detta **Uppdatering för leverans** (deliverabilityUpdate)-arbetsflödet kommer att misslyckas. Det här arbetsflödet hanterar den dagliga uppdateringen av MX-reglerna och faktureringsreglerna.
+
+Om du inte uppgraderar din miljö kommer e-postinställningarna inte längre att synkroniseras (MX-hanteringsregler, regler för inkommande e-post, regler för domänhantering och studsregler). Detta kan påverka leveransmöjligheterna. Om dessa regler ändras avsevärt måste de tillämpas manuellt från och med nu.
+
+Endast för MKT-instanser [Global Suppression List](../../campaign-opt/using/filtering-rules.md#default-deliverability-exclusion-rules) påverkas.
+
+### Jag kan inte uppgradera nu. Vad är riktlinjerna?
+
+Om du inte kan uppgradera instansen före 31 augusti måste du tillfälligt inaktivera **Uppdatering för leverans** (deliverabilityUpdate) arbetsflöde tills uppgraderingen är klar så att den inte försöker synkronisera med den gamla slutprodukten.
+
+
 
 Mer vägledning får du av [Adobe kundtjänst](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
