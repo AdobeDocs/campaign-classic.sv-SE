@@ -5,10 +5,10 @@ description: Lär dig hur ni implementerar en server för kampanjleverans
 hide: true
 hidefromtoc: true
 exl-id: bc62ddb9-beff-4861-91ab-dcd0fa1ed199
-source-git-commit: 2e4d699aef0bea4f12d1bd2d715493c4a94a74dd
+source-git-commit: 2c70b5a4434b9fb22490eb3c1705f4e5c803643e
 workflow-type: tm+mt
-source-wordcount: '927'
-ht-degree: 5%
+source-wordcount: '909'
+ht-degree: 4%
 
 ---
 
@@ -40,7 +40,7 @@ Som **värdbaserad kund** kommer Adobe att arbeta med dig för att uppgradera di
 
 Som en **lokal/hybridkund** måste du uppgradera till en av de nyare versionerna för att kunna dra nytta av den nya leveransservern. När alla instanser har uppgraderats kan du [implementera den nya integreringen](#implementation-steps) till Adobe-server och säkerställa en smidig övergång.
 
-## Implementeringssteg (hybridkunder och lokala kunder) {#implementation-steps}
+## Implementeringssteg {#implementation-steps}
 
 Campaign måste kommunicera med Adobe Shared Services via en IMS-baserad autentisering, vilket ingår i den nya integreringen av leveransservern. Det bästa sättet är att använda den Adobe Developer-baserade gatewaytoken (kallas även Token för tekniskt konto eller Adobe IO JWT).
 
@@ -48,8 +48,6 @@ Campaign måste kommunicera med Adobe Shared Services via en IMS-baserad autenti
 >[!WARNING]
 >
 >Dessa åtgärder bör endast utföras av Hybrid och lokalt implementerade implementeringar.
->
->För implementeringar via webbhotell kan du kontakta [Adobe kundtjänst](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
 
 ### Förhandskrav{#prerequisites}
 
