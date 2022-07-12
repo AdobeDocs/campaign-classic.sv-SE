@@ -4,7 +4,7 @@ title: Övervaka tekniska arbetsflöden
 description: Övervaka tekniska arbetsflöden
 feature: Workflows
 exl-id: 5e77d196-5c71-438e-8dae-10c6a6e4f29c
-source-git-commit: b94c4bfd478b4a8fbcefe6341608dd6a14bb31d3
+source-git-commit: 25e8acdc449c7002e467db17e7c70e3dc017dded
 workflow-type: tm+mt
 source-wordcount: '504'
 ht-degree: 6%
@@ -48,9 +48,9 @@ För **[!UICONTROL Tracking workflow (‘tracking’)]**:
 
 Kontrollera att spårningsarbetsflödet körs som schemalagt (varje timme som standard) och att journalen inte visar återkommande fel. Mer information om detta hittar du i det här [avsnittet](delivery.md).
 
-För **[!UICONTROL Deliverability update (‘deliverabilityUpdate’)]**:
+För **[!UICONTROL Refresh for Deliverability (deliverabilityUpdate)]**:
 
-1. Kontrollera att **[!UICONTROL Deliverability update]** arbetsflödet körs och avslutas framgångsrikt varje dag.
+1. Kontrollera att **[!UICONTROL Refresh for Deliverability]** arbetsflödet körs och avslutas framgångsrikt varje dag.
 1. Kontrollera i journalen att reglerna uppdateras regelbundet.
 
 För **[!UICONTROL Campaign process ('operationMgt', 'deliveryMgt', ...)]**:

@@ -3,10 +3,10 @@ product: campaign
 title: Leveranser
 description: Läs mer om standardarbetsflöden för leveranser
 feature: Workflows
-source-git-commit: b94c4bfd478b4a8fbcefe6341608dd6a14bb31d3
+source-git-commit: 25e8acdc449c7002e467db17e7c70e3dc017dded
 workflow-type: tm+mt
 source-wordcount: '323'
-ht-degree: 5%
+ht-degree: 4%
 
 ---
 
@@ -40,7 +40,7 @@ Arbetsflödena nedan installeras tillsammans med **Leveranser** som standard.
    <td> Det här arbetsflödet standardiserar uppräkningsvärden. Den aktiveras varje dag klockan tre som standard.<br /> </td> 
   </tr> 
   <tr> 
-   <td> <span class="uicontrol">Uppdatering för leverans</span> <br /> </td> 
+   <td> <span class="uicontrol">Uppdatera för leverans</span> <br /> </td> 
    <td> <span class="uicontrol">deliverabilityUpdate</span> <br /> </td> 
    <td> Med det här arbetsflödet kan du skapa en lista över regler för studsmeddelanden samt en lista över domäner och MX:er på plattformen. Det här arbetsflödet fungerar bara om HTTPS-porten är öppen. De här listorna uppdateras inte om inte leveransmodulen är installerad.<br /> </td> 
   </tr> 

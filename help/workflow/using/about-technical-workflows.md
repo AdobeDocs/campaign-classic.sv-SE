@@ -4,7 +4,7 @@ title: Tekniska arbetsflöden
 description: Läs mer om de tekniska arbetsflödena för Campaign Classic-paket.
 feature: Workflows
 exl-id: 9aed2665-cd4b-419c-b9f2-ea04fc1d8f01
-source-git-commit: f05eefc9945c4ead89eb448b6e28c3523559e055
+source-git-commit: 25e8acdc449c7002e467db17e7c70e3dc017dded
 workflow-type: tm+mt
 source-wordcount: '1714'
 ht-degree: 3%
@@ -78,4 +78,4 @@ Mer information om hur du övervakar tekniska arbetsflöden finns i [dedikerad s
 | **Aktivitetsmeddelande** (taskMgt) | Marknadsföringsresurser (MRM) - endast kampanj v7 | Med det här arbetsflödet kan du skicka meddelanden om aktiviteter i marknadsföringskampanjer. |
 | **Spårning** (spårning | Leverans | Det här arbetsflödet utför återställning och konsolidering av spårningsinformation. Dessutom säkerställs omberäkningen av spårnings- och leveransstatistik, särskilt sådan som används i arbetsflöden för meddelandecentrets arkivering. Som standard aktiveras den en gång per timme. |
 | **Uppdatera händelsestatus** (updateEventsStatus) | Körning av transaktionsmeddelande (Message Center - Execution) | Med det här arbetsflödet kan du tilldela en status till en händelse. Händelsestatus är följande:<ul><li>Väntande: händelsen finns i en kö. Ingen meddelandemall har ännu kopplats till den.</li><li>Väntande leverans: Om händelsen finns i en kö har en meddelandemall kopplats till den och bearbetas av leveransen.</li><li>Skickat: den här statusen kopieras från leveransloggarna. Det betyder att leveransen har skickats.</li><li>Ignoreras av leveransen: den här statusen kopieras från leveransloggarna. Det betyder att leveransen har ignorerats.</li><li>Leveransfel: den här statusen kopieras från leveransloggarna. Det innebär att leveransen har misslyckats.</li><li>Händelsen omfattas inte: händelsen inte har kopplats till en meddelandemall. Händelsen kommer inte att bearbetas på nytt.</li></ul> |
-| **Uppdatering för leverans** (deliverabilityUpdate) | Leverans | När paketet för leveransövervakning (E-postleverans) har installerats körs det här arbetsflödet nattetid och hanterar kvalificeringsreglerna för studsmeddelanden samt listan över domäner och MX. Detta kräver att HTTPS-porten är öppen på plattformen. |
+| **Uppdatera för leverans** (deliverabilityUpdate) | Leverans | När paketet för leveransövervakning (E-postleverans) har installerats körs det här arbetsflödet nattetid och hanterar kvalificeringsreglerna för studsmeddelanden samt listan över domäner och MX. Detta kräver att HTTPS-porten är öppen på plattformen. |
