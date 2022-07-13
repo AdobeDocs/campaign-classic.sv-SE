@@ -6,7 +6,7 @@ audience: installation
 content-type: reference
 topic-tags: installing-campaign-in-windows-
 exl-id: 7cc78214-92b8-4b1f-a307-96ec6af818d1
-source-git-commit: f4513834cf721f6d962c7c02c6c64b2171059352
+source-git-commit: 0f63636e9cc22ac97e634a4f11dc585cb39b05c0
 workflow-type: tm+mt
 source-wordcount: '968'
 ht-degree: 3%
@@ -36,7 +36,7 @@ Läs informationen nedan för att ta reda på vad som krävs för implementering
 
 ## Implementeringar via Adobe Hosted {#hosted-customers}
 
-Lägger till en värdkund har du två alternativ för att installera eller uppdatera klientkonsolerna:
+Som värdkund har du två alternativ för att installera eller uppdatera klientkonsolerna:
 
 1. Adobe kan driftsätta direkt. När konsolen har uppdaterats uppmanas användarna att hämta den senaste klientkonsolversionen i ett popup-fönster.
 
