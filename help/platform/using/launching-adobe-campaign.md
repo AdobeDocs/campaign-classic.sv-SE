@@ -6,9 +6,9 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: 4d9c5b24-83a2-4495-a56c-5bc376d69703
-source-git-commit: 1d32161d60f6b382188012b104c642f504e28645
+source-git-commit: 7f24c8be599d6dece41de848d64feb8079b10ff3
 workflow-type: tm+mt
-source-wordcount: '487'
+source-wordcount: '513'
 ht-degree: 9%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 9%
 
 ![](../../assets/v7-only.svg)
 
-Campaign Client-konsolen är
+Campaign Client-konsolen är en avancerad klient som gör att du kan ansluta till dina Campaign-programservrar. Lär dig hur du hämtar och konfigurerar klientkonsolen i [den här sidan](../../installation/using/installing-the-client-console.md).
 
 >[!CAUTION]
 >
@@ -45,7 +45,7 @@ Du kan även ansluta med en dedikerad inloggning/ett dedikerat lösenord:
 
    Första gången du öppnar databasen är ditt lösenord det du får av administratören. När du är ansluten kan du ändra ditt lösenord via **[!UICONTROL Tools > Change password...]** -menyn. Information om operatorer och anslutningar finns i [Åtkomsthantering](../../platform/using/access-management.md).
 
-1. Klicka **[!UICONTROL LOG IN]** för att bekräfta.<!--You can also press the **Enter** key to launch connection.-->
+1. Klicka på **[!UICONTROL LOG IN]** för att bekräfta.<!--You can also press the **Enter** key to launch connection.-->
 
 Nu kan du komma åt [Adobe Campaign arbetsyta](../../platform/using/adobe-campaign-workspace.md).
 

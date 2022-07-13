@@ -6,9 +6,9 @@ audience: installation
 content-type: reference
 topic-tags: installing-campaign-in-windows-
 exl-id: 7cc78214-92b8-4b1f-a307-96ec6af818d1
-source-git-commit: 0f63636e9cc22ac97e634a4f11dc585cb39b05c0
+source-git-commit: 7f24c8be599d6dece41de848d64feb8079b10ff3
 workflow-type: tm+mt
-source-wordcount: '968'
+source-wordcount: '1118'
 ht-degree: 3%
 
 ---
@@ -24,6 +24,7 @@ Innan du börjar installera klientkonsolen måste du:
 * Kontrollera system- och verktygskompatibiliteten med Adobe Campaign i [Kompatibilitetsmatris](../../rn/using/compatibility-matrix.md#ClientConsoleoperatingsystems)
 * Hämta webbadressen till Campaign-servern
 * Hämta inloggningsuppgifter
+* Låt Microsoft Edge Webview2-miljön vara installerad på datorn (från version Campaign Classic 7.3). [Läs mer](#webview)
 
 Processen att installera eller uppdatera klientkonsolen skiljer sig åt beroende på hur du implementerar Adobe Campaign Classic.
 Läs informationen nedan för att ta reda på vad som krävs för implementeringen.
@@ -33,6 +34,12 @@ Läs informationen nedan för att ta reda på vad som krävs för implementering
 >[!CAUTION]
 >
 >Kampanjklientkonsolen och Campaign-programservern måste köras **på samma produktversion**. Adobe rekommenderar också starkt att du använder **samma produktbygge**. Lär dig hur du kontrollerar dina Campaign Client- och Server-versioner i [det här avsnittet](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version).
+
+## Installation av Microsoft Edge Webview2 {#webview}
+
+Från version Campaign Classic 7.3 krävs installation av Microsoft Edge Webview 2 för alla konsolinstallationer.
+
+Webbvyn installeras som standard som en del av operativsystemet Windows 11. Om det inte redan finns på datorn uppmanas du att hämta det från Campaign Classic Console Installer [Microsoft Developer website](http://www.adobe.com/go/acc-ms-webview2-runtime-download). Observera att nedladdningslänken inte fungerar i webbläsaren Internet Explorer 11 eftersom Microsoft inte längre stöder det. Kontrollera att du använder en annan webbläsare för att komma åt länken.
 
 ## Implementeringar via Adobe Hosted {#hosted-customers}
 
@@ -150,6 +157,9 @@ Så här loggar du in på en befintlig instans:
 
 1. Ange dina inloggningsuppgifter och klicka på **[!UICONTROL Log in]**
 
+>[!NOTE]
+>
+>För kampanjversioner med klassisk version 7.3 kan Adobe Campaign-klientkonsolen begära proxyautentiseringsuppgifter två gånger under proxyautentiseringen. Detta beror på att Microsoft Edge Webview2 inte sparar proxyautentiseringsuppgifter i cache-/lösenordsarkivet, till skillnad från Internet Explorer.
 
 **Relaterade ämnen**
 
