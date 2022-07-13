@@ -5,9 +5,9 @@ description: Lär dig hur ni implementerar en server för kampanjleverans
 hide: true
 hidefromtoc: true
 exl-id: bc62ddb9-beff-4861-91ab-dcd0fa1ed199
-source-git-commit: bec525c52cb30dfae9530265bc3fdc2395879539
+source-git-commit: dfa28fc10bcfddcf35e8ddfa0af1fba718400350
 workflow-type: tm+mt
-source-wordcount: '1125'
+source-wordcount: '1105'
 ht-degree: 3%
 
 ---
@@ -30,15 +30,13 @@ Den nya servern garanterar hög tillgänglighet (99.9) &#x200B; och tillhandahå
 
 ## Påverkas du?{#acc-deliverability-impacts}
 
-Om miljön implementerades på en lägre version än [Campaign v7.2.1](../../rn/using/latest-release.md#release-7-2-2), du påverkas. Du måste uppgradera till Campaign v7.2.1 (eller mer).
-
-Lär dig hur du kontrollerar din version [i det här avsnittet](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version).
+Alla kunder måste uppgradera till [Campaign v7.2.1](../../rn/using/latest-release.md#release-7-2-2) och implementera sin miljö för att dra nytta av den nya leveransservern.
 
 ## Hur uppdaterar jag?{#acc-deliverability-update}
 
 Som **värdbaserad kund** kommer Adobe att arbeta med dig för att uppgradera dina instanser till den nyare versionen och skapa projektet i Adobe Developer Console.
 
-Som en **lokal/hybridkund** måste du uppgradera till en av de nyare versionerna för att kunna dra nytta av den nya leveransservern. När alla instanser har uppgraderats kan du [implementera den nya integreringen](#implementation-steps) till Adobe-server och säkerställa en smidig övergång.
+Som en **lokal/hybridkund** måste du uppgradera till [Campaign v7.2.1](../../rn/using/latest-release.md#release-7-2-2) för att dra nytta av den nya leveransservern. När alla instanser har uppgraderats måste du [implementera den nya integreringen](#implementation-steps) till Adobe-server och säkerställa en smidig övergång.
 
 ## Implementeringssteg {#implementation-steps}
 
@@ -47,7 +45,7 @@ Campaign måste kommunicera med Adobe Shared Services via en IMS-baserad autenti
 
 >[!WARNING]
 >
->Dessa åtgärder bör endast utföras av Hybrid och lokalt implementerade implementeringar.
+>Dessa åtgärder bör endast utföras för hybridimplementeringar och lokala implementeringar.
 
 ### Förhandskrav{#prerequisites}
 
