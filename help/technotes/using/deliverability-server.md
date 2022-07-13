@@ -5,18 +5,18 @@ description: Lär dig hur ni implementerar en server för kampanjleverans
 hide: true
 hidefromtoc: true
 exl-id: bc62ddb9-beff-4861-91ab-dcd0fa1ed199
-source-git-commit: dfa28fc10bcfddcf35e8ddfa0af1fba718400350
+source-git-commit: 5d6ff45605980e5fe21933c5d8fb6c48e02f1628
 workflow-type: tm+mt
-source-wordcount: '1105'
+source-wordcount: '1121'
 ht-degree: 3%
 
 ---
 
 # Kampanjleveransserver {#acc-deliverability}
 
-Startar [Version v7.2.1](../../rn/using/latest-release.md#release-7-2-2)föreslår Adobe Campaign en ny server för leverans med hög tillgänglighet som åtgärdar problem med säkerheten. Campaign Classic synkroniserar nu leveransregler, utsändningsloggar och undertryckningsadress från och till en ny leveransserver.
+Startar [Version v7.2.1](../../rn/using/latest-release.md#release-7-2-2), förlitar sig Adobe Campaign på en ny server för leverans med hög tillgänglighet och som åtgärdar problem med säkerhetsefterlevnad. Campaign Classic synkroniserar nu leveransregler, utsändningsloggar och undertryckningsadress från och till en ny leveransserver. Den gamla leveransservern kommer att avvecklas den 31 augusti 2022.
 
-Som Campaign Classic-kund måste du implementera den nya leveransservern **före den 31 augusti 2022**.
+Som Campaign Classic-kund måste du implementera den nya leveransservern **före 31 augusti 2022**.
 
 >[!NOTE]
 >
@@ -30,13 +30,13 @@ Den nya servern garanterar hög tillgänglighet (99.9) &#x200B; och tillhandahå
 
 ## Påverkas du?{#acc-deliverability-impacts}
 
-Alla kunder måste uppgradera till [Campaign v7.2.1](../../rn/using/latest-release.md#release-7-2-2) och implementera sin miljö för att dra nytta av den nya leveransservern.
+Alla kunder påverkas och måste uppgradera till [Campaign v7.2.1](../../rn/using/latest-release.md#release-7-2-2) (eller mer) och implementera deras miljö för att dra nytta av den nya leveransservern.
 
 ## Hur uppdaterar jag?{#acc-deliverability-update}
 
 Som **värdbaserad kund** kommer Adobe att arbeta med dig för att uppgradera dina instanser till den nyare versionen och skapa projektet i Adobe Developer Console.
 
-Som en **lokal/hybridkund** måste du uppgradera till [Campaign v7.2.1](../../rn/using/latest-release.md#release-7-2-2) för att dra nytta av den nya leveransservern. När alla instanser har uppgraderats måste du [implementera den nya integreringen](#implementation-steps) till Adobe-server och säkerställa en smidig övergång.
+Som en **lokal/hybridkund** måste du uppgradera till [Campaign v7.2.1](../../rn/using/latest-release.md#release-7-2-2) (eller mer) om du vill dra nytta av den nya leveransservern. När alla instanser har uppgraderats måste du [implementera den nya integreringen](#implementation-steps) till Adobe-server och säkerställa en smidig övergång.
 
 ## Implementeringssteg {#implementation-steps}
 
