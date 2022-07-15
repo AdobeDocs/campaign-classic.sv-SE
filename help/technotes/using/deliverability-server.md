@@ -5,10 +5,10 @@ description: Lär dig hur ni implementerar en server för kampanjleverans
 hide: true
 hidefromtoc: true
 exl-id: bc62ddb9-beff-4861-91ab-dcd0fa1ed199
-source-git-commit: 5d6ff45605980e5fe21933c5d8fb6c48e02f1628
+source-git-commit: 6f6c329808e78a56a61997aba83c55520030afc7
 workflow-type: tm+mt
-source-wordcount: '1121'
-ht-degree: 3%
+source-wordcount: '1116'
+ht-degree: 2%
 
 ---
 
@@ -20,7 +20,7 @@ Som Campaign Classic-kund måste du implementera den nya leveransservern **före
 
 >[!NOTE]
 >
->Om du har frågor om dessa ändringar kan du läsa [Vanliga frågor](#faq)eller kontakta [Adobe kundtjänst](https://helpx.adobe.com/se/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
+>Mer information om dessa ändringar finns i [Vanliga frågor](#faq)eller kontakta [Adobe kundtjänst](https://helpx.adobe.com/se/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html){_blank}.
 
 ## Vad har ändrats?{#acc-deliverability-changes}
 
@@ -56,7 +56,7 @@ Kontrollera instanskonfigurationen innan du startar implementeringen.
 1. Kontrollera `DmRendering_cuid` alternativvärdet är ifyllt.
 
    * Om alternativet är ifyllt kan du starta implementeringen.
-   * Om inget värde är ifyllt kontaktar du [Adobe kundtjänst](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) för att få ditt CUID.
+   * Om inget värde är ifyllt kontaktar du [Adobe kundtjänst](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html){_blank} för att hämta ditt CUID.
 
       Det här alternativet måste fyllas i för alla Campaign-instanser (MKT, MID, RT, EXEC) med samma värde. Som hybridkund kan du kontakta Adobe om du vill att alternativet ska vara inställt på MID-, RT- och EXEC-instanserna.
 
@@ -91,7 +91,7 @@ Kontrollera instanskonfigurationen innan du startar implementeringen.
    >Du bör spara `config.zip` när nedladdningsprompten visas eftersom du inte kan ladda ned den igen.
 
 1. Klicka på **[!UICONTROL Next]**.
-1. Välj en befintlig **[!UICONTROL Product profile]** eller skapa en ny vid behov. Ingen behörighet krävs för detta **[!UICONTROL Product profile]**. Mer information om **[!UICONTROL Product Profiles]**, se [den här sidan](https://helpx.adobe.com/enterprise/using/manage-developers.html).
+1. Välj en befintlig **[!UICONTROL Product profile]** eller skapa en ny vid behov. Ingen behörighet krävs för detta **[!UICONTROL Product profile]**. Mer information om **[!UICONTROL Product Profiles]**, se [den här sidan](https://helpx.adobe.com/enterprise/using/manage-developers.html){_blank}.
    ![](assets/Product-Profile-API.png)
 
    Klicka sedan på **[!UICONTROL Save configured API]**.
@@ -152,18 +152,17 @@ Följ stegen nedan för att kontrollera om integreringen är slutförd:
 
 ## Vanliga frågor och svar {#faq}
 
+### Vad är tidslinjen för uppdateringen?
+
+Övergången till den nya leveransservern, som gör det möjligt att lägga till dessa förbättrade funktioner och ökad säkerhet, börjar den 22 juli för värdkunder (Campaign Managed Services). Alla värdkunder kommer att uppdateras i slutet av augusti.
+
+Lokala kunder och hybridkunder måste gå över under samma tidsram.
+
 ### Vad händer om jag inte uppgraderar min miljö?
 
-Alla Campaign-instanser som inte har uppgraderats senast den 31 augusti kommer inte längre att kunna ansluta till Campaign Deliverability-servern. Som en följd av detta **Uppdatera för leverans** (deliverabilityUpdate)-arbetsflödet kommer att misslyckas. Det här arbetsflödet hanterar den dagliga uppdateringen av MX-reglerna och faktureringsreglerna.
+Alla Campaign-instanser som inte har uppgraderats senast den 31 augusti kommer inte längre att kunna ansluta till Campaign Deliverability-servern. Som en följd av detta **Uppdatera för leverans** (deliverabilityUpdate)-arbetsflödet kommer att misslyckas och detta påverkar leveransmöjligheterna.
 
 Om du inte uppgraderar din miljö kommer e-postinställningarna inte längre att synkroniseras (MX-hanteringsregler, regler för inkommande e-post, regler för domänhantering och studsregler). Detta kan påverka leveransmöjligheterna. Om dessa regler ändras avsevärt måste de tillämpas manuellt från och med nu.
 
 Endast för MKT-instanser [Global Suppression List](../../campaign-opt/using/filtering-rules.md#default-deliverability-exclusion-rules) påverkas.
 
-### Jag kan inte uppgradera nu. Vad är riktlinjerna?
-
-Om du inte kan uppgradera instansen före 31 augusti måste du tillfälligt inaktivera **Uppdatera för leverans** (deliverabilityUpdate) arbetsflöde tills uppgraderingen är klar så att den inte försöker synkronisera med den gamla slutprodukten.
-
-
-
-Mer vägledning får du av [Adobe kundtjänst](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
