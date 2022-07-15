@@ -4,10 +4,10 @@ title: Konfigurera och skicka leveransen
 description: Lär dig hur du konfigurerar och skickar leveransen
 feature: Channel Configuration
 exl-id: 0411686e-4f13-401e-9333-e14b05ebe9cd
-source-git-commit: dfee069240c590846f7dda3134c07ad3ec514a26
+source-git-commit: d59e9f55275bac303a5ed1450bb28ef7fa0f84cd
 workflow-type: tm+mt
-source-wordcount: '1556'
-ht-degree: 5%
+source-wordcount: '1502'
+ht-degree: 4%
 
 ---
 
@@ -15,9 +15,9 @@ ht-degree: 5%
 
 ![](../../assets/common.svg)
 
->[!NOTE]
->
->Endast leveransägaren kan påbörja en leverans. För att en annan operator (eller operatörsgrupp) ska kunna påbörja en leverans måste du lägga till dem som granskare i **[!UICONTROL Delivery start:]** fält. Mer information finns i [det här avsnittet](../../campaign/using/marketing-campaign-approval.md#selecting-reviewers).
+## Behörigheter{#delivery-permissions}
+
+Endast leveransägaren kan påbörja en leverans. För att andra operatorer (eller operatörsgrupper) ska kunna påbörja en leverans lägger du till dem som granskare i **[!UICONTROL Delivery start:]** fält. [Läs mer](../../campaign/using/marketing-campaign-approval.md#selecting-reviewers).
 
 ## Ytterligare parametrar för leverans {#delivery-additiona-parameters}
 
@@ -25,32 +25,32 @@ Innan du skickar leveransen kan du definiera sändningsparametrarna i leveranseg
 
 ![](assets/s_ncs_user_wizard_delivery.png)
 
-* **[!UICONTROL Delivery priority]**: Med det här alternativet kan du påverka utskicksordningen för dina leveranser genom att ange deras prioritetsnivå (normal, hög eller låg). På så sätt kan ni prioritera beställningen av vissa, mer brådskande leveranser jämfört med andra.
+* **[!UICONTROL Delivery priority]**: Använd det här alternativet om du vill ändra utskicksordningen för dina leveranser genom att ange deras prioritetsnivå: normal, hög eller låg.
 
-* **[!UICONTROL Message batch quantity]**: Med det här alternativet kan du definiera antalet meddelanden som grupperas i samma XML-leveranspaket. Om parametern är inställd på 0 grupperas meddelandena automatiskt. Paketstorleken definieras av beräkningen `<delivery size>/1024`, med minst 8 och högst 256 meddelanden per paket.
+* **[!UICONTROL Message batch quantity]**: Använd det här alternativet för att definiera antalet meddelanden som grupperas i samma XML-leveranspaket. Om parametern är inställd på 0 grupperas meddelandena automatiskt. Paketstorleken definieras av beräkningen `<delivery size>/1024`, med minst 8 och högst 256 meddelanden per paket.
 
    >[!IMPORTANT]
    >
-   >När leveransen dupliceras återställs parametern.
+   >När leveransen skapas genom duplicering av en befintlig, återställs den här parametern.
 
-* **[!UICONTROL Send using multiple waves]**: Använd det här alternativet om du vill skicka meddelanden i vågor, i stället för till hela målgruppen. Konfigurera antalet batchar och deras andel. [Läs mer](#sending-using-multiple-waves).
+* **[!UICONTROL Send using multiple waves]**: Använd det här alternativet om du vill skicka meddelanden gruppvis i stället för till hela målgruppen samtidigt. [Läs mer](#sending-using-multiple-waves).
 
 * **[!UICONTROL Test SMTP delivery]**: Använd det här alternativet om du vill testa att skicka via SMTP. Leveransen behandlas upp till anslutningen till SMTP-servern men skickas inte: för varje mottagare av leveransen ansluter Campaign till SMTP-providerservern, kör SMTP RCPT TO-kommandot och stänger anslutningen före SMTP DATA-kommandot.
 
    >[!NOTE]
    >
-   >* Det här alternativet rekommenderas inte för mellanleverantörer.
+   >* Det här alternativet får inte ställas in i mitten av källkoden.
    >
    >* Läs mer om SMTP-serverkonfigurationen i [det här avsnittet](../../installation/using/configure-delivery-settings.md).
 
 
-* **[!UICONTROL Email BCC]**: Med det här alternativet kan du lagra e-post på ett externt system via BCC genom att helt enkelt lägga till en e-postadress för hemlig kopia till meddelandemålet. Mer information om detta finns i [det här avsnittet](sending-messages.md#archiving-emails).
+* **[!UICONTROL Email BCC]**: Använd det här alternativet om du vill lagra e-post på ett externt system via BCC genom att lägga till en e-postadress för hemlig kopia till meddelandemålet. [Läs mer](sending-messages.md#archiving-emails).
 
 ## Bekräfta leverans {#confirming-delivery}
 
-Kontrollera att du har kört leveransanalysen när leveransen är konfigurerad och klar att skickas.
+Kör leveransanalysen när leveransen är konfigurerad och klar att skickas.
 
-Det gör du genom att klicka **[!UICONTROL Send]**, markerar önskad åtgärd och klickar på **[!UICONTROL Analyze]**. Mer information finns i [Starta analysen](steps-validating-the-delivery.md#analyzing-the-delivery).
+Det gör du genom att klicka **[!UICONTROL Send]**, markerar önskad åtgärd och klickar på **[!UICONTROL Analyze]**. [Läs mer](steps-validating-the-delivery.md#analyzing-the-delivery).
 
 ![](assets/s_ncs_user_email_del_send.png)
 
@@ -66,7 +66,7 @@ När du har skickat meddelanden kan du övervaka och spåra dina leveranser. Mer
 
 ## Schemalägg sändning {#scheduling-the-delivery-sending}
 
-Du kan skjuta upp leveransen av meddelanden för att schemalägga den eller för att hantera säljtrycket och undvika att överbelasta en grupp.
+Du kan skjuta upp sändningen genom att schemalägga leveransen.
 
 1. Klicka på **[!UICONTROL Send]** och väljer **[!UICONTROL Postpone delivery]** alternativ.
 

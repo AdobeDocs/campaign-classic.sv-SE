@@ -6,20 +6,22 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: 7a05fdff-8f9d-4e8d-812e-0f1509db5499
-source-git-commit: 29e56d6bf2817eeb863cbe33f99233a8241f2bf5
-workflow-type: ht
-source-wordcount: '881'
-ht-degree: 100%
+source-git-commit: d59e9f55275bac303a5ed1450bb28ef7fa0f84cd
+workflow-type: tm+mt
+source-wordcount: '921'
+ht-degree: 90%
 
 ---
 
-# Kom igång med uppgraderingar{#rn-overview}
+# Versionsuppdateringar{#rn-overview}
 
 ![](../../assets/v7-only.svg)
 
+Adobe Campaign Classic släpper regelbundet produktuppdateringar som innehåller nya funktioner, felkorrigeringar och förbättrar prestanda, säkerhet och användbarhet. Dessa uppdateringar släpps som produktbyggen. Detaljerad information om varje ny version finns i [Versionsinformation](latest-release.md).
+
 ## Versionsstatusar{#rn-statuses}
 
-Varje ny version kommer med en status som visas med en färg.
+Varje ny version har en status som identifieras av en färg i [Versionsinformation](latest-release.md).
 
 ![](assets/do-not-localize/green3.png) **Allmän tillgänglighet** (GA) – senaste stabila build, validerad i produktion och rekommenderad av Adobe.
 
@@ -43,7 +45,7 @@ Som en värdbaserad användare har du automatiskt tillgång till uppgraderingen 
 
 För att säkerställa en stabil konfiguration rekommenderar Adobe att du installerar **samma build** på alla servrar som körs på samma klientkonfiguration.
 
-Om inget annat anges i versionsinformationen måste dessutom klientkonsolen vara på **samma build** som serverinstansen.
+Om inte annat anges i [Versionsinformation](latest-release.md)måste klientkonsolen vara aktiverad **samma bygge** som serverinstansen.
 
 Om du vill att implementeringen ska vara aktuell bör du läsa sidorna om de [inaktuella och borttagna funktionerna](../../rn/using/deprecated-features.md) samt [kompatibilitetsmatrisen](../../rn/using/compatibility-matrix.md) för varje ny version.
 
@@ -51,7 +53,9 @@ Om du vill att implementeringen ska vara aktuell bör du läsa sidorna om de [in
 
 Om du är värdbaserad kund (Managed Service eller hybrid) kontaktar du kundtjänstteamet för att få din miljö uppgraderad.
 
-Som lokal användare kan du utföra uppgraderingen. Du gör detta genom att [hämta den senaste stabila builden (GA)](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html) och uppgradera alla dina miljöer. Läs mer om [uppgraderingsprocessen](../../production/using/build-upgrade.md) och se [Vanliga frågor och svar om uppgradering av builds](../../platform/using/faq-build-upgrade.md).
+Som lokal användare kan du utföra uppgraderingen. Du gör detta genom att [hämta den senaste stabila builden (GA)](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html) och uppgradera alla dina miljöer.
+
+Läs mer på [uppgraderingsprocess](../../production/using/build-upgrade.md)och i [frågor och svar om uppgraderingar](../../platform/using/faq-build-upgrade.md).
 
 ## Årlig uppgradering {#yearly-upgrade}
 
@@ -124,7 +128,7 @@ Vi har organiserat ett team med dedikerade kundtjänstassistenter, produktchefer
     </a>
     </div>
     <ul>
-    <li>Arbetet och komplexiteten med att uppgradera din Campaign Classic-instans ökar med avståndet mellan två versioner (v5 --&gt; v7).</li>
+    <li>Arbetet och komplexiteten med att uppgradera din Campaign Classic-instans ökar med avståndet mellan två versioner (v6 --&gt; v7).</li>
     <li>Ju längre organisationen väntar, desto mer komplicerad blir uppgraderingen (och desto fler sårbarheter utsätts du för).</li>
     <li>Regelbundna uppdateringar minskar längden på driftstoppen för att uppgradera och minskar risken för regression.</li>
     </ul>
