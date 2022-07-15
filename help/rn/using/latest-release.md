@@ -33,8 +33,8 @@ _1 juli 2022_
 </thead> 
 <tbody> 
 <tr> 
-<td> <p>Med iOS 15 har Apple lagt till en funktion för känsligt meddelande som ger programutvecklaren kontroll över att kringgå fokusläget när ett meddelande anses vara känsligt och sedan måste nå användaren i realtid.</p>
-<p>Lär dig hur du skapar ett känsligt meddelande i <a href="../../delivery/using/create-notifications-ios.md">detaljerad dokumentation</a>.</p>
+<td> <p>I iOS 15 har Apple lagt till en funktion för känsliga meddelanden som ger programutvecklaren kontroll över att kringgå fokusläget när ett meddelande anses vara känsligt och sedan måste nå användaren i realtid.</p>
+<p>Läs mer om hur du skapar ett känsligt meddelande i den <a href="../../delivery/using/create-notifications-ios.md">detaljerade dokumentationen</a>.</p>
 </td> 
 </tr> 
 </tbody> 
@@ -51,39 +51,39 @@ Se [kompatibilitetsmatrisen för Campaign](../../rn/using/compatibility-matrix.m
 
 **Förbättringar**
 
-* Efter att livscykeln för Internet Explorer 11 är slut använder nu renderingsmotorn HTML för Adobe Services i konsolen Edge Chromium. Dessutom krävs nu installation av Microsoft Edge Webview 2 för alla installationer av klientkonsolen (från version Campaign Classic 7.3). [Läs mer](../../installation/using/installing-the-client-console.md)
+* Efter att livscykeln för Internet Explorer 11 har upphört används Edge Chromium som HTML-återgivningsmotorn för Adobe Services i konsolen. Dessutom krävs nu installation av Microsoft Edge Webview 2 för alla installationer av klientkonsolen (från version Campaign Classic 7.3). [Läs mer](../../installation/using/installing-the-client-console.md)
 * Hanteringen av databasanslutningar i Adobe Campaign har förbättrats för att optimera stabiliteten.
 * Microsoft Exchange Online OAuth 2.0-autentisering för POP3 stöds nu i Campaign. [Läs mer](../../installation/using/external-accounts.md#bounce-mails-external-account)
-* Åtgärdade olika problem vid användning av en arbetsflödesaktivitet för anrikning med externa data. (NEO-38069)
+* Olika problem vid användning av en berikande arbetsflödesaktivitet med externa data har åtgärdats. (NEO-38069)
 * SAP Hana FDA-anslutningen har uppdaterats för att fungera med den senaste SAP Hana-databasversionen (2.x).
 * Teradata FDA-anslutningen har uppdaterats för att fungera med den senaste Teradata-versionen (17).
-* 20.2 introducerades stöd för tokenbaserad autentisering för iOS-leveranser för nya leveranser och leveransmallar. I 7.2 lades en patch till i fullversionen för att tillämpa det tokenbaserade autentiseringsstödet på maximalt 10 000 tidigare skapade mallar för leveranser och leveranser. I 7.3 har plåstret förbättrats och gränsen har tagits bort.
+* I 20.2 introducerades stöd för tokenbaserad autentisering för iOS-leveranser av nya leveranser och leveransmallar. I 7.2 lades en korrigering till efter uppgraderingen för att tillämpa det tokenbaserade autentiseringsstödet på maximalt 10 000 tidigare skapade leveranser och leveransmallar. I 7.3 har korrigeringen förbättrats och gränsen har tagits bort.
 
-**Felkorrigeringar**
+**Korrigeringar**
 
 * Ett fel från den tidigare versionen som gjorde att användare inte kunde ändra storlek på inloggningssidan för IMS har åtgärdats.
-* Korrigerade ett fel som uppstod när innehållshanterarpaketet installerades på en befintlig instans.
-* Ett problem i **Kampanjer** meny där ett meddelande om pågående åtgärd visades kontinuerligt.
-* När Adobe Analytics är aktiverat har ett problem korrigerats som tog bort BID (Broadlog ID) och CID (Campaign ID) från webbadressen när ett e-postmeddelande med en webbadress skickades utan att leveransen sparades.
-* Korrigerade ett problem vid överföring av en bild i mappen Public Resources i en instans med Message Center-specifik konfiguration. Följande felmeddelande visas: &quot;Det gick inte att överföra bilderna till spårningsservrarna.&quot;
-* Korrigerade ett problem som gjorde att systemet kraschade när konfigurationen skulle återskapas om konfigurationsfilerna var felaktiga.
-* Korrigerade ett problem som kunde leda till att leveransindikatorer inte uppdaterades korrekt. (NEO-44827)
-* Korrigerade ett problem som kunde leda till ett efteruppgraderingsfel när komplexa frågor användes. (NEO-43648)
-* Korrigerade ett problem som kunde förhindra att WebApps-förhandsgranskning fungerade. (NEO-43242)
-* Korrigerade ett problem som kunde leda till att leveransförberedelser misslyckades när en extern målmappningsfil användes i ett arbetsflöde med en datainläsningsaktivitet (fil). (NEO-43691)
-* Korrigerade ett problem som kunde leda till krascher och krävde en fullständig omstart av instansen. (NEO-44645)
-* Korrigerade ett problem som kunde förhindra att heatmap-kartan för arbetsflöde läser in något resultat. (NEO-43360)
-* Korrigerade ett problem som kunde leda till anslutningsproblem när den externa FDA-anslutningen användes. (NEO-42722)
-* Korrigerade ett problem med korrektur vid användning av adressersättning och undantag av kontrollgrupper. (NEO-39695)
-* Korrigerade ett problem som kunde leda till arbetsflödesfel på grund av ett anslutningsproblem i Snowflake. (NEO-46299)
-* Korrigerade ett fel som kunde frysa klientkonsolen på grund av ett ogiltigt tecken i ett anpassningsblock. (NEO-45761)
-* Korrigerade ett problem som kunde leda till anslutningsproblem när ett externt konto för Snowflake skapades som en extern databas. (NEO-45744)
-* Korrigerade ett problem som kunde leda till att tabellinformation visades som skyddad av ett visibleIf-attribut. (NEO-37865)
-* Ett problem som kunde visa felmeddelandet &quot;$ is not defined&quot; under leveransanalysfasen har korrigerats. (NEO-32940)
-* Korrigerade ett problem som orsakade att leveranser associerades med fel eventType. (NEO-45743)
-* Korrigerade ett problem som kunde leda till krascher på grund av tillfälliga kärndumpar (NEO-30549)
-* Korrigerade ett problem som kan leda till krascher när felaktig HTML-kod används i en leverans. (NEO-40385)
-* Ett problem som kunde förhindra icke-administratörer från att få åtkomst till **Analys** i leveransegenskaperna. (NEO-34025)
+* Ett fel som uppstod när innehållshanterarpaketet installerades på en befintlig instans har åtgärdats.
+* Ett problem i menyn **Campaigns** där ett meddelande om &quot;pågående åtgärd&quot; visades kontinuerligt har åtgärdats.
+* Ett problem när Adobe Analytics är aktiverat som tog bort BID (Broadlog ID) och CID (Campaign ID) från URL:en när ett e-postmeddelande med en URL skickades utan att leveransen sparades har åtgärdats.
+* Ett problem vid överföring av en bild till mappen Offentliga resurser i en instans med Message Center-specifik konfiguration har åtgärdats. Följande felmeddelande visades: ”Det gick inte att överföra bilderna till spårningsservrarna”.
+* Ett problem som gjorde att systemet kraschade när konfigurationen skulle återskapas om konfigurationsfilerna var felaktiga har åtgärdats.
+* Ett problem som kunde leda till att leveransindikatorer inte uppdaterades korrekt har åtgärdats. (NEO-44827)
+* Ett problem som kunde leda till ett fel efter uppgraderingen när komplexa frågor användes har åtgärdats. (NEO-43648)
+* Ett problem som kunde förhindra att förhandsgranskningen av webbappar fungerade har åtgärdats. (NEO-43242)
+* Ett problem som kunde leda till att leveransförberedelser misslyckades när en extern målmappningsfil användes i ett arbetsflöde med en datainläsningsaktivitet (fil) har åtgärdats. (NEO-43691)
+* Ett problem som kunde leda till krascher och krävde en fullständig omstart av instansen har åtgärdats. (NEO-44645)
+* Ett problem som kunde förhindra att resultat lästes in i Färgdiagram över arbetsflöde har åtgärdats. (NEO-43360)
+* Ett problem som kunde leda till anslutningsproblem när den externa FDA-anslutningen användes har åtgärdats. (NEO-42722)
+* Ett problem med korrektur vid användning av adressersättning och undantag för kontrollgrupper har åtgärdats. (NEO-39695)
+* Ett problem som kunde leda till arbetsflödesfel på grund av ett problem med Snowflake-anslutningen har åtgärdats. (NEO-46299)
+* Ett fel som kunde frysa klientkonsolen på grund av ett ogiltigt tecken i ett anpassningsblock har åtgärdats. (NEO-45761)
+* Ett problem som kunde leda till anslutningsproblem när ett externt konto för Snowflake skapades som en extern databas har åtgärdats. (NEO-45744)
+* Ett problem som kunde leda till att tabellinformation visades som skyddad av ett synligt attribut har åtgärdats. (NEO-37865)
+* Ett problem som kunde visa felmeddelandet ”$ är inte definierad” under leveransanalysfasen har åtgärdats. (NEO-32940)
+* Ett problem som orsakade att leveranser associerades med fel eventtyp har åtgärdats. (NEO-45743)
+* Ett problem som kunde leda till krascher på grund av tillfälliga kärndumpar (NEO-30549) har åtgärdats
+* Ett problem som kunde leda till krascher när felaktig HTML-kod används i en leverans har åtgärdats. (NEO-40385)
+* Ett problem som kunde förhindra icke-administratörer från att få åtkomst till fliken **Analys** i leveransegenskaperna har åtgärdats. (NEO-34025)
 
 ## ![](assets/do-not-localize/green_2.png) Version 7.2.2 – build 9349 {#release-7-2-2}
 
