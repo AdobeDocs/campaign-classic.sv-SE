@@ -8,8 +8,8 @@ level: Beginner
 exl-id: d65869ca-a785-4327-8e8d-791c28e4696c
 source-git-commit: 7f24c8be599d6dece41de848d64feb8079b10ff3
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '1958'
+ht-degree: 98%
 
 ---
 
@@ -69,7 +69,7 @@ Se [kompatibilitetsmatrisen för Campaign](../../rn/using/compatibility-matrix.m
 * Ett problem som gjorde att systemet kraschade när konfigurationen skulle återskapas om konfigurationsfilerna var felaktiga har åtgärdats.
 * Ett problem som kunde leda till att leveransindikatorer inte uppdaterades korrekt har åtgärdats. (NEO-44827)
 * Ett problem som kunde leda till ett fel efter uppgraderingen när komplexa frågor användes har åtgärdats. (NEO-43648)
-* Ett problem som kunde förhindra att förhandsgranskningen av webbappar fungerade har åtgärdats. (NEO-43242)
+* Ett problem som kunde förhindra att förhandsgranskning av webapps fungerade har åtgärdats. (NEO-43242)
 * Ett problem som kunde leda till att leveransförberedelser misslyckades när en extern målmappningsfil användes i ett arbetsflöde med en datainläsningsaktivitet (fil) har åtgärdats. (NEO-43691)
 * Ett problem som kunde leda till krascher och krävde en fullständig omstart av instansen har åtgärdats. (NEO-44645)
 * Ett problem som kunde förhindra att resultat lästes in i Färgdiagram över arbetsflöde har åtgärdats. (NEO-43360)
@@ -78,9 +78,9 @@ Se [kompatibilitetsmatrisen för Campaign](../../rn/using/compatibility-matrix.m
 * Ett problem som kunde leda till arbetsflödesfel på grund av ett problem med Snowflake-anslutningen har åtgärdats. (NEO-46299)
 * Ett fel som kunde frysa klientkonsolen på grund av ett ogiltigt tecken i ett anpassningsblock har åtgärdats. (NEO-45761)
 * Ett problem som kunde leda till anslutningsproblem när ett externt konto för Snowflake skapades som en extern databas har åtgärdats. (NEO-45744)
-* Ett problem som kunde leda till att tabellinformation visades som skyddad av ett synligt attribut har åtgärdats. (NEO-37865)
+* Ett problem som kunde leda till att tabellinformation visades som skyddad av attributet visibleif har åtgärdats. (NEO-37865)
 * Ett problem som kunde visa felmeddelandet ”$ är inte definierad” under leveransanalysfasen har åtgärdats. (NEO-32940)
-* Ett problem som orsakade att leveranser associerades med fel eventtyp har åtgärdats. (NEO-45743)
+* Ett problem som orsakade att leveranser associerades med fel eventtype har åtgärdats. (NEO-45743)
 * Ett problem som kunde leda till krascher på grund av tillfälliga kärndumpar (NEO-30549) har åtgärdats
 * Ett problem som kunde leda till krascher när felaktig HTML-kod används i en leverans har åtgärdats. (NEO-40385)
 * Ett problem som kunde förhindra icke-administratörer från att få åtkomst till fliken **Analys** i leveransegenskaperna har åtgärdats. (NEO-34025)
