@@ -5,7 +5,7 @@ description: Lär dig hur ni implementerar en server för kampanjleverans
 hide: true
 hidefromtoc: true
 exl-id: bc62ddb9-beff-4861-91ab-dcd0fa1ed199
-source-git-commit: 6f6c329808e78a56a61997aba83c55520030afc7
+source-git-commit: 64813905b360be1f2df7883f018e42bd154c2f9c
 workflow-type: tm+mt
 source-wordcount: '1116'
 ht-degree: 2%
@@ -58,7 +58,7 @@ Kontrollera instanskonfigurationen innan du startar implementeringen.
    * Om alternativet är ifyllt kan du starta implementeringen.
    * Om inget värde är ifyllt kontaktar du [Adobe kundtjänst](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html){_blank} för att hämta ditt CUID.
 
-      Det här alternativet måste fyllas i för alla Campaign-instanser (MKT, MID, RT, EXEC) med samma värde. Som hybridkund kan du kontakta Adobe om du vill att alternativet ska vara inställt på MID-, RT- och EXEC-instanserna.
+   Det här alternativet måste fyllas i för alla Campaign-instanser (MKT, MID, RT, EXEC) med rätt värde. Som hybridkund kan du kontakta Adobe om du vill att alternativet ska vara inställt på MID-, RT- och EXEC-instanserna.
 
 ### Steg 1: Skapa/uppdatera ditt Adobe Developer-projekt {#adobe-io-project}
 
