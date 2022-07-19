@@ -6,9 +6,9 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: d65869ca-a785-4327-8e8d-791c28e4696c
-source-git-commit: 7f24c8be599d6dece41de848d64feb8079b10ff3
+source-git-commit: 8d6f5a3596c2c919e597e0b6ce3d711276c8df12
 workflow-type: tm+mt
-source-wordcount: '1958'
+source-wordcount: '1965'
 ht-degree: 98%
 
 ---
@@ -61,12 +61,12 @@ Se [kompatibilitetsmatrisen för Campaign](../../rn/using/compatibility-matrix.m
 
 **Korrigeringar**
 
-* Ett fel från den tidigare versionen som gjorde att användare inte kunde ändra storlek på inloggningssidan för IMS har åtgärdats.
-* Ett fel som uppstod när innehållshanterarpaketet installerades på en befintlig instans har åtgärdats.
-* Ett problem i menyn **Campaigns** där ett meddelande om &quot;pågående åtgärd&quot; visades kontinuerligt har åtgärdats.
-* Ett problem när Adobe Analytics är aktiverat som tog bort BID (Broadlog ID) och CID (Campaign ID) från URL:en när ett e-postmeddelande med en URL skickades utan att leveransen sparades har åtgärdats.
-* Ett problem vid överföring av en bild till mappen Offentliga resurser i en instans med Message Center-specifik konfiguration har åtgärdats. Följande felmeddelande visades: ”Det gick inte att överföra bilderna till spårningsservrarna”.
-* Ett problem som gjorde att systemet kraschade när konfigurationen skulle återskapas om konfigurationsfilerna var felaktiga har åtgärdats.
+* Ett fel från den tidigare versionen som gjorde att användare inte kunde ändra storlek på inloggningssidan för IMS har åtgärdats. (NEO-30085)
+* Ett fel som uppstod när innehållshanterarpaketet installerades på en befintlig instans har åtgärdats. (NEO-32349)
+* Ett problem i menyn **Campaigns** där ett meddelande om &quot;pågående åtgärd&quot; visades kontinuerligt har åtgärdats. (NEO-44904)
+* Ett problem när Adobe Analytics är aktiverat som tog bort BID (Broadlog ID) och CID (Campaign ID) från URL:en när ett e-postmeddelande med en URL skickades utan att leveransen sparades har åtgärdats. (NEO-38678)
+* Ett problem vid överföring av en bild till mappen Offentliga resurser i en instans med Message Center-specifik konfiguration har åtgärdats. Följande felmeddelande visades: ”Det gick inte att överföra bilderna till spårningsservrarna”. (NEO-38546, NEO-45572)
+* Ett problem som gjorde att systemet kraschade när konfigurationen skulle återskapas om konfigurationsfilerna var felaktiga har åtgärdats. (NEO-38752)
 * Ett problem som kunde leda till att leveransindikatorer inte uppdaterades korrekt har åtgärdats. (NEO-44827)
 * Ett problem som kunde leda till ett fel efter uppgraderingen när komplexa frågor användes har åtgärdats. (NEO-43648)
 * Ett problem som kunde förhindra att förhandsgranskning av webapps fungerade har åtgärdats. (NEO-43242)
