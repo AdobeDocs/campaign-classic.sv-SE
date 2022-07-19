@@ -1,18 +1,16 @@
 ---
 product: campaign
-title: Migrera till den nya leveransservern
-description: Lär dig hur ni implementerar en server för kampanjleverans
-hide: true
-hidefromtoc: true
+title: Uppdatera till den nya leveransservern
+description: Lär dig hur du uppdaterar till den nya servern för kampanjleverans
 exl-id: bc62ddb9-beff-4861-91ab-dcd0fa1ed199
-source-git-commit: 02af725ec7f75e31496b72b533db485c85a416e1
+source-git-commit: de3a2bf1ab6851184c75bc302ff0c42db186e7f0
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '1122'
+ht-degree: 2%
 
 ---
 
-# Kampanjleveransserver {#acc-deliverability}
+# Uppdatera till den nya leveransservern {#acc-deliverability}
 
 Startar [Version v7.2.1](../../rn/using/latest-release.md#release-7-2-2), förlitar sig Adobe Campaign på en ny server för leverans med hög tillgänglighet och som åtgärdar problem med säkerhetsefterlevnad. Campaign Classic synkroniserar nu leveransregler, utsändningsloggar och undertryckningsadress från och till en ny leveransserver. Den gamla leveransservern kommer att avvecklas den 31 augusti 2022.
 
