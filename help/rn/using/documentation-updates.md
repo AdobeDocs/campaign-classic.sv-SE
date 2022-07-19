@@ -6,9 +6,9 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: 07c1f4a3-cf16-4a9b-b402-e13258799f91
-source-git-commit: 001d5494e4b77e03c610c7c8b2cb38161d65c711
+source-git-commit: 378788764e244dcad12018d6d703048707d4c3e6
 workflow-type: tm+mt
-source-wordcount: '4906'
+source-wordcount: '4931'
 ht-degree: 99%
 
 ---
@@ -25,17 +25,28 @@ Se [Versionsinformationen för Adobe Campaign Classic](../../rn/using/latest-rel
 
 ### Juli 2022 {#july-2022}
 
-* Funktioner och förbättringar som kommer i versionen från juli 2012 har beskrivits i dokumentationen.
+Övergången till den nya leveransservern beskrivs i en ny teknik. [Läs mer](../../technotes/using/deliverability-server.md)
+
+**Dokumentationsuppdateringar kommer med versionen 7.3.1**
+
+Uppdaterad kompatibilitetsmatris. [Läs mer](compatibility-matrix.md)
+
+Uppdaterat avsnitt med versionsinformation. [Läs mer](rn-overview.md)
+
+Tidskänsliga meddelanden med iOS 15. [Läs mer](../../delivery/using/create-notifications-ios.md)
+
 
 ### Mars 2022 {#mar-2022}
 
-* Lade till en detaljerad beskrivning av alternativet **[!UICONTROL Test SMTP delivery]**. [Läs mer](../../delivery/using/steps-sending-the-delivery.md#delivery-additiona-parameters)
+Lade till en detaljerad beskrivning av alternativet **[!UICONTROL Test SMTP delivery]**. [Läs mer](../../delivery/using/steps-sending-the-delivery.md#delivery-additiona-parameters)
 
-* Sidan Kom igång med uppgraderingar har uppdaterats för att klargöra riktlinjerna för uppgradering av Campaign Console. [Läs mer](../../rn/using/rn-overview.md)
+Sidan Kom igång med uppgraderingar har uppdaterats för att klargöra riktlinjerna för uppgradering av Campaign Console. [Läs mer](../../rn/using/rn-overview.md)
 
-* Den nya builden (v7.2.2) för Campaign är nu tillgänglig. [Läs mer](../../rn/using/latest-release.md)
-* Lade till felsökningsinformation relaterad till ACS-anslutningen. [Läs mer](../../integrations/using/troubleshooting-the-acs-connector.md)
-* Äldre PostgreSQL-versioner som har nått slutet av livscykeln har lagts till på sidan [Inaktuella och borttagna funktioner](../../rn/using/deprecated-features.md#dbe-eol).
+Den nya builden (v7.2.2) för Campaign är nu tillgänglig. [Läs mer](../../rn/using/latest-release.md)
+
+Lade till felsökningsinformation relaterad till ACS-anslutningen. [Läs mer](../../integrations/using/troubleshooting-the-acs-connector.md)
+
+Äldre PostgreSQL-versioner som har nått slutet av livscykeln har lagts till på sidan [Inaktuella och borttagna funktioner](../../rn/using/deprecated-features.md#dbe-eol).
 
 ### Februari 2022 {#february-2022}
 

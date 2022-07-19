@@ -3,9 +3,9 @@ product: campaign
 title: Tekniskt arbetsflöde för inkorgsåtergivning
 description: I det här avsnittet beskrivs det tekniska arbetsflödet som installeras med Inkorgsåtergivningspaketet
 feature: Workflows, Inbox Rendering
-source-git-commit: b94c4bfd478b4a8fbcefe6341608dd6a14bb31d3
+source-git-commit: 378788764e244dcad12018d6d703048707d4c3e6
 workflow-type: tm+mt
-source-wordcount: '73'
+source-wordcount: '75'
 ht-degree: 2%
 
 ---
@@ -27,7 +27,7 @@ Arbetsflödet som beskrivs nedan installeras med **Inkorgsåtergivning (IR)** so
   <tr> 
    <td> <strong>Uppdatera startnätverk för inkorgsåtergivning</strong><br /> </td> 
    <td> <span class="uicontrol">updateRenderingSeeds</span> <br /> </td> 
-   <td> Det här arbetsflödet uppdaterar e-postadresser som används för inkorgsåtergivning och fungerar bara om HTTPS-porten är öppen för <strong>deliverability.neolane.net</strong>.<br /> </td> 
+   <td> Det här arbetsflödet uppdaterar e-postadresser som används för inkorgsåtergivning och fungerar bara om HTTPS-porten är öppen för <strong>https://deliverability-app.neolane.net/deliverability</strong>.<br /> </td> 
   </tr> 
  </tbody> 
 </table>
