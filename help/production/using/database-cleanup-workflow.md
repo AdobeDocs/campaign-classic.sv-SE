@@ -6,7 +6,7 @@ audience: production
 content-type: reference
 topic-tags: data-processing
 exl-id: 75d3a0af-9a14-4083-b1da-2c1b22f57cbe
-source-git-commit: 56e9fcc4240649f53239b12f1390dea041602e79
+source-git-commit: b472178316f97f08e9c87f8aebd707709f320e5f
 workflow-type: tm+mt
 source-wordcount: '2823'
 ht-degree: 0%
@@ -247,7 +247,7 @@ Den här uppgiften tar bort de webbresurser (spegelsidor) som används av levera
 1. Först och främst återställs listan över leveranser som ska rensas med följande fråga:
 
    ```sql
-   SELECT iDeliveryId, iNeedMirrorPage FROM NmsDelivery WHERE iWebResPurged = 0 AND tsWebValidity IS NOT NULL AND tsWebValidity < $(curdate)"
+   SELECT iDeliveryId, iNeedMirrorPage FROM NmsDelivery WHERE iWebResPurged = 0 AND tsWebValidity IS NOT NULL AND tsWebValidity < $(curdate)
    ```
 
    där `$(curDate)` är aktuellt serverdatum.
@@ -255,11 +255,11 @@ Den här uppgiften tar bort de webbresurser (spegelsidor) som används av levera
 1. The **NmsMirrorPageInfo** tabellen rensas, om det behövs med hjälp av identifieraren för den tidigare återskapade leveransen. Massborttagning används för att generera följande frågor:
 
    ```sql
-   DELETE FROM NmsMirrorPageInfo WHERE iMirrorPageInfoId IN (SELECT iMirrorPageInfoId FROM NmsMirrorPageInfo WHERE iDeliveryId = $(dl)) LIMIT 5000)
+   DELETE FROM NmsMirrorPageInfo WHERE iMirrorPageInfoId IN (SELECT iMirrorPageInfoId FROM NmsMirrorPageInfo WHERE iDeliveryId = $(dl)) LIMIT 5000
    ```
 
    ```sql
-   DELETE FROM NmsMirrorPageSearch WHERE iMessageId IN (SELECT iMessageId FROM NmsMirrorPageSearch WHERE iDeliveryId = $(dl)) LIMIT 5000)
+   DELETE FROM NmsMirrorPageSearch WHERE iMessageId IN (SELECT iMessageId FROM NmsMirrorPageSearch WHERE iDeliveryId = $(dl)) LIMIT 5000
    ```
 
    där `$(dl)` är leveransens identifierare.
@@ -304,7 +304,7 @@ I det här steget kan du ta bort poster som inte bearbetades av alla data under 
 1. Massradering utförs på **XtkReject** tabell med följande fråga:
 
    ```sql
-   DELETE FROM XtkReject WHERE iRejectId IN (SELECT iRejectId FROM XtkReject WHERE tsLog < $(curDate)) LIMIT $(l))
+   DELETE FROM XtkReject WHERE iRejectId IN (SELECT iRejectId FROM XtkReject WHERE tsLog < $(curDate)) LIMIT $(l)
    ```
 
    där `$(curDate)` är det aktuella serverdatumet från vilket vi subtraherar den period som definierats för **NmsCleanup_RejectsPurgeDelay** alternativ (se [Distributionsguide](#deployment-wizard)) och `$(l)` är det högsta antalet poster som får tas bort.
@@ -463,7 +463,7 @@ Med den här uppgiften kan du rensa leveransloggarna som lagras i olika tabeller
    DELETE FROM $(tableName) WHERE iBroadLogId IN (SELECT iBroadLogId FROM $(tableName) WHERE tsLastModified < $(option) LIMIT 5000) 
    ```
 
-   där `$(tableName)` är namnet på varje tabell i schemalistan, och `$(option)` är det datum som definieras för **NmsCleanup_BroadLogPurgeDelay** alternativ (se [Distributionsguide](#deployment-wizard)).
+   där `$(tableName)` är namnet på varje tabell i listan över scheman, och `$(option)` är det datum som definieras för **NmsCleanup_BroadLogPurgeDelay** alternativ (se [Distributionsguide](#deployment-wizard)).
 
 1. Slutligen kontrollerar arbetsflödet om **NmsProviderMsgId** tabellen finns. Om så är fallet tas alla föråldrade data bort med följande fråga:
 
