@@ -6,9 +6,9 @@ audience: production
 content-type: reference
 topic-tags: data-processing
 exl-id: 75d3a0af-9a14-4083-b1da-2c1b22f57cbe
-source-git-commit: 6d53ba957fb567a9a921544418a73a9bde37c97b
+source-git-commit: 56e9fcc4240649f53239b12f1390dea041602e79
 workflow-type: tm+mt
-source-wordcount: '2910'
+source-wordcount: '2823'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 0%
 
 The **[!UICONTROL Database cleanup]** arbetsflöde tillgängligt via **[!UICONTROL Administration > Production > Technical workflows]** kan du ta bort föråldrade data för att undvika exponentiell tillväxt i databasen. Arbetsflödet utlöses automatiskt utan att användaren behöver göra något.
 
-![](assets/ncs_cleanup_workflow.png)
+![cleanup](assets/ncs_cleanup_workflow.png)
 
 ## Konfiguration {#configuration}
 
@@ -40,11 +40,11 @@ Som standard är **[!UICONTROL Database cleanup]** arbetsflödet är konfigurera
 * **[!UICONTROL Weekly]**
 * **[!UICONTROL Once]**
 
-![](assets/ncs_cleanup_scheduler.png)
+![schemaläggare](assets/ncs_cleanup_scheduler.png)
 
 >[!IMPORTANT]
 >
->För att **[!UICONTROL Database cleanup]** arbetsflödet som ska starta vid det datum och den tidpunkt som anges i schemaläggaren, måste startas (wfserver). Om så inte är fallet kommer ingen databasrensning att utföras förrän nästa gång arbetsflödesmotorn startas.
+>För att **[!UICONTROL Database cleanup]** arbetsflödet som ska starta vid det datum och den tidpunkt som anges i schemaläggaren, måste startas (wfserver).
 
 ### Distributionsguide {#deployment-wizard}
 
@@ -83,12 +83,10 @@ Vid det datum och den tid som definieras i arbetsflödets schemaläggare (se [Sc
 
 >[!IMPORTANT]
 >
->Om någon av dessa uppgifter misslyckas kommer följande inte att utföras.\
->SQL-frågor med en **BEGRÄNSNING** attributet kommer att köras upprepade gånger tills all information har bearbetats.
-
->[!NOTE]
+>Om en av dessa uppgifter misslyckas utförs inte nästa uppgift.
 >
->Avsnitten nedan som beskriver de åtgärder som utförs i arbetsflödet för databasrensning är reserverade för databasadministratörer eller användare som är bekanta med SQL-språk.
+>SQL-frågor med en **BEGRÄNSNING** attribut körs upprepade gånger tills all information har bearbetats.
+
 
 ### Listor som ska tas bort {#lists-to-delete-cleanup}
 
@@ -96,31 +94,31 @@ Den första aktiviteten som körs av **[!UICONTROL Database cleanup]** arbetsfl�
 
 1. Listor som ska tas bort återställs med följande SQL-fråga:
 
-   ```
+   ```sql
    SELECT iGroupId, sLabel, iType FROM NmsGroup WHERE iDeleteStatus <> 0 OR tsExpirationDate <= GetDate() 
    ```
 
 1. Varje lista har flera länkar till andra tabeller. Alla länkarna tas bort i grupp med följande fråga:
 
-   ```
+   ```sql
    DELETE FROM $(relatedTable) WHERE iGroupId=$(l) IN (SELECT iGroupId FROM $(relatedTable) WHERE iGroupId=$(l) LIMIT 5000) 
    ```
 
-   där **$(relatedTable)** är ett register som är relaterat till **NmsGroup** och **$(l)** är listidentifieraren.
+   där `$(relatedTable)` är ett register som är relaterat till **NmsGroup** och `$(l)` är listidentifieraren.
 
 1. När listan är en lista av typen List tas den associerade tabellen bort med följande fråga:
 
-   ```
+   ```sql
    DROP TABLE grp$(l)
    ```
 
 1. Varje **Välj** typlistan som återställdes av åtgärden tas bort med följande fråga:
 
-   ```
+   ```sql
    DELETE FROM NmsGroup WHERE iGroupId=$(l) 
    ```
 
-   där **$(l)** är listidentifieraren
+   där `$(l)` är listidentifieraren
 
 ### Rensa leveranser som ska raderas eller återvinnas {#cleanup-of-deliveries-to-be-deleted-or-recycled}
 
@@ -133,7 +131,7 @@ Den här aktiviteten rensar alla leveranser som ska tas bort eller återvinnas.
 
    * I tabellen för uteslutning av leverans (**NmsDlvExclusion**) används följande fråga:
 
-      ```
+      ```sql
       DELETE FROM NmsDlvExclusion WHERE iDeliveryId=$(l)
       ```
 
@@ -141,11 +139,11 @@ Den här aktiviteten rensar alla leveranser som ska tas bort eller återvinnas.
 
    * I kupongtabellen (**NmsCouponValue**) används följande fråga (med massborttagningar):
 
-      ```
+      ```sql
       DELETE FROM NmsCouponValue WHERE iMessageId IN (SELECT iMessageId FROM NmsCouponValue WHERE EXISTS (SELECT B.iBroadLogId FROM $(BroadLogTableName) B WHERE B.iDeliveryId = $(l) AND B.iBroadLogId = iMessageId ) LIMIT 5000)
       ```
 
-      där **$(l)** är leveransens identifierare.
+      där `$(l)` är leveransens identifierare.
 
    * I leveransloggtabellerna (**NmsBroadlogXx**) utförs massraderingar i grupper om 20 000 poster.
    * I offerttabellen (**NmsPropositionXx**) utförs massraderingar i grupper om 20 000 poster.
@@ -156,21 +154,21 @@ Den här aktiviteten rensar alla leveranser som ska tas bort eller återvinnas.
    * I batchprocessloggtabellen (**XtkJobLog**) utförs massraderingar i grupper om 20 000 poster. Det här registret innehåller loggen över leveranser som ska tas bort.
    * I URL-spårningstabellen för leverans (**NmsTrackingUrl**) används följande fråga:
 
-      ```
+      ```sql
       DELETE FROM NmsTrackingUrl WHERE iDeliveryId=$(l)
       ```
 
-      där **$(l)** är leveransens identifierare.
+      där `$(l)` är leveransens identifierare.
 
       Den här tabellen innehåller de URL:er som finns i leveranserna som ska tas bort för att aktivera spårning av dem.
 
 1. Leveransen tas bort från leveransregistret (**NmsDelivery**):
 
-   ```
+   ```sql
    DELETE FROM NmsDelivery WHERE iDeliveryId = $(l)
    ```
 
-   där **$(l)** är leveransens identifierare.
+   där `$(l)` är leveransens identifierare.
 
 #### Leveranser med medelhög källkod {#deliveries-using-mid-sourcing}
 
@@ -178,7 +176,7 @@ The **[!UICONTROL Database cleanup]** arbetsflödet tar också bort leveranser f
 
 1. För att göra detta kontrollerar arbetsflödet att varje leverans är inaktiv (baserat på dess status). Om en leverans är aktiv stoppas den innan den tas bort. Kontrollen utförs genom att följande fråga körs:
 
-   ```
+   ```sql
    SELECT iState FROM NmsDelivery WHERE iDeliveryId = $(l) AND iState <> 100;
    ```
 
@@ -192,23 +190,23 @@ Den här aktiviteten stoppar leveranser vars giltighetsperiod har gått ut.
 
 1. The **[!UICONTROL Database cleanup]** arbetsflödet skapar en lista över leveranser som har gått ut. Den här listan innehåller alla utgångna leveranser med en annan status än **[!UICONTROL Finished]** samt nyligen stoppade leveranser med över 10 000 obearbetade meddelanden. Följande fråga används:
 
-   ```
+   ```sql
    SELECT iDeliveryId, iState FROM NmsDelivery WHERE iDeleteStatus=0 AND iIsModel=0 AND iDeliveryMode=1 AND ( (iState >= 51 AND iState < 85 AND tsValidity IS NOT NULL AND tsValidity < $(currentDate) ) OR (iState = 85 AND DateMinusDays(15) < tsLastModified AND iToDeliver - iProcessed >= 10000 ))
    ```
 
-   där **leveranssätt 1** matchar **[!UICONTROL Mass delivery]** läge, **läge 51** matchar **[!UICONTROL Start pending]** tillstånd, **läge 85** matchar **[!UICONTROL Stopped]** och det högsta antalet leveransloggar som uppdateras på leveransservern är 10 000.
+   där `delivery mode 1` matchar **[!UICONTROL Mass delivery]** läge, `state 51` matchar **[!UICONTROL Start pending]** tillstånd, `state 85` matchar **[!UICONTROL Stopped]** och det högsta antalet leveransloggar som uppdateras på leveransservern är 10 000.
 
 1. Arbetsflödet innehåller sedan en lista över nyligen utgångna leveranser som använder mellanleverantörer. Leveranser för vilka inga leveransloggar har återställts via servern med mellanlagring är undantagna.
 
    Följande fråga används:
 
-   ```
+   ```sql
    SELECT iDeliveryId, tsValidity, iMidRemoteId, mData FROM NmsDelivery WHERE (iDeliveryMode = 4 AND (iState = 85 OR iState = 95) AND tsValidity IS NOT NULL AND (tsValidity < SubDays(GetDate() , 15) OR tsValidity < $(DateOfLastLogPullUp)) AND tsLastModified > SubDays(GetDate() , 15))
    ```
 
 1. Följande fråga används för att identifiera om det externa kontot fortfarande är aktivt eller inte, för att filtrera leveranser efter datum:
 
-   ```
+   ```sql
    SELECT iExtAccountId FROM NmsExtAccount WHERE iActive<>0 AND sName=$(providerName)
    ```
 
@@ -216,31 +214,31 @@ Den här aktiviteten stoppar leveranser vars giltighetsperiod har gått ut.
 
    Följande frågor används:
 
-   ```
+   ```sql
    UPDATE $(BroadLogTableName) SET tsLastModified=$(curdate), iStatus=7, iMsgId=$(bl) WHERE iDeliveryId=$(dl) AND iStatus=6
    ```
 
-   där **$(aktuellt)** är databasserverns aktuella datum, **$(bl)** är identifieraren för leveransloggmeddelandet, **$(dl)** är leveransidentifieraren, **leveransstatus 6** matchar **[!UICONTROL Pending]** status och **leveransstatus 7** matchar **[!UICONTROL Delivery cancelled]** status.
+   där `$(curdate)`är databasserverns aktuella datum, `$(bl)` är identifieraren för leveransloggmeddelandet, `$(dl)` är leveransidentifieraren, `delivery status 6` matchar **[!UICONTROL Pending]** status och `delivery status 7` matchar **[!UICONTROL Delivery cancelled]** status.
 
-   ```
+   ```sql
    UPDATE NmsDelivery SET iState = 95, tsLastModified = $(curdate), tsBroadEnd = tsValidity WHERE iDeliveryId = $(dl)
    ```
 
-   där **leveranstillstånd 95** matchar **[!UICONTROL Finished]** status, och **$(dl)** är leveransens identifierare.
+   där `delivery state 95` matchar **[!UICONTROL Finished]** status, och `$(dl)` är leveransens identifierare.
 
 1. Alla fragment (**deliveryParts**) av föråldrade leveranser tas bort och alla föråldrade fragment av pågående meddelandeleveranser tas bort. Massborttagning används för båda dessa uppgifter.
 
    Följande frågor används:
 
-   ```
+   ```sql
    DELETE FROM NmsDeliveryPart WHERE iDeliveryPartId IN (SELECT iDeliveryPartId FROM NmsDeliveryPart WHERE iDeliveryId IN (SELECT iDeliveryId FROM NmsDelivery WHERE iState=95 OR iState=85) LIMIT 5000)
    ```
 
-   ```
+   ```sql
    DELETE FROM NmsDeliveryPart WHERE iDeliveryPartId IN (SELECT iDeliveryPartId FROM NmsDeliveryPart WHERE tsValidity < $(curDate) LIMIT 500000)
    ```
 
-   där **leveranstillstånd 95** matchar **[!UICONTROL Finished]** status, **leveranstillstånd 85** matchar **[!UICONTROL Stopped]** status, och **$(curDate)** är aktuellt serverdatum.
+   där `delivery state 95` matchar **[!UICONTROL Finished]** status, `delivery state 85` matchar **[!UICONTROL Stopped]** status, och `$(curDate)` är aktuellt serverdatum.
 
 ### Rensa spegelsidor {#cleanup-of-mirror-pages}
 
@@ -248,32 +246,32 @@ Den här uppgiften tar bort de webbresurser (spegelsidor) som används av levera
 
 1. Först och främst återställs listan över leveranser som ska rensas med följande fråga:
 
-   ```
+   ```sql
    SELECT iDeliveryId, iNeedMirrorPage FROM NmsDelivery WHERE iWebResPurged = 0 AND tsWebValidity IS NOT NULL AND tsWebValidity < $(curdate)"
    ```
 
-   där **$(curDate)** är aktuellt serverdatum.
+   där `$(curDate)` är aktuellt serverdatum.
 
 1. The **NmsMirrorPageInfo** tabellen rensas, om det behövs med hjälp av identifieraren för den tidigare återskapade leveransen. Massborttagning används för att generera följande frågor:
 
-   ```
+   ```sql
    DELETE FROM NmsMirrorPageInfo WHERE iMirrorPageInfoId IN (SELECT iMirrorPageInfoId FROM NmsMirrorPageInfo WHERE iDeliveryId = $(dl)) LIMIT 5000)
    ```
 
-   ```
+   ```sql
    DELETE FROM NmsMirrorPageSearch WHERE iMessageId IN (SELECT iMessageId FROM NmsMirrorPageSearch WHERE iDeliveryId = $(dl)) LIMIT 5000)
    ```
 
-   där **$(dl)** är leveransens identifierare.
+   där `$(dl)` är leveransens identifierare.
 
 1. En post läggs sedan till i leveransloggen.
 1. Rensade leveranser identifieras sedan så att de inte behöver bearbetas igen senare. Följande fråga körs:
 
-   ```
+   ```sql
    UPDATE NmsDelivery SET iWebResPurged = 1 WHERE iDeliveryId IN ($(strIn))
    ```
 
-   där **$(strIn)** är listan med leveransidentifierare.
+   där `$(strIn)` är listan med leveransidentifierare.
 
 ### Rensa arbetsregister {#cleanup-of-work-tables}
 
@@ -281,21 +279,21 @@ Den här uppgiften tar bort alla arbetsregister som matchar leveranser vars stat
 
 1. Listan med tabeller med namn som börjar med **wkDlv_** återställs först med följande fråga (postgresq):
 
-   ```
+   ```sql
    SELECT relname FROM pg_class WHERE relname LIKE Lower('wkDlv_') ESCAPE E'\\' AND relkind IN ('r','v') AND pg_get_userbyid(relowner)<>'postgres'
    ```
 
 1. Tabellerna som används av pågående arbetsflöden exkluderas sedan. För att göra detta återställs listan över pågående leveranser med följande fråga:
 
-   ```
+   ```sql
    SELECT iDeliveryId FROM NmsDelivery WHERE iDeliveryId<>0 AND iDeleteStatus=0 AND iState NOT IN (0,85,100);
    ```
 
-   där 0 är värdet som matchar **[!UICONTROL Being edited]** leveransstatus, 85 matchar **[!UICONTROL Stopped]** och 100 matchar **[!UICONTROL Deleted]** status.
+   där `0` är värdet som matchar **[!UICONTROL Being edited]** leveransstatus, `85` matchar **[!UICONTROL Stopped]** status och `100` matchar **[!UICONTROL Deleted]** status.
 
 1. Tabeller som inte längre används tas bort med följande fråga:
 
-   ```
+   ```sql
    DROP TABLE wkDlv_15487_1;
    ```
 
@@ -305,15 +303,15 @@ I det här steget kan du ta bort poster som inte bearbetades av alla data under 
 
 1. Massradering utförs på **XtkReject** tabell med följande fråga:
 
-   ```
+   ```sql
    DELETE FROM XtkReject WHERE iRejectId IN (SELECT iRejectId FROM XtkReject WHERE tsLog < $(curDate)) LIMIT $(l))
    ```
 
-   där **$(curDate)** är det aktuella serverdatumet från vilket vi subtraherar den period som definierats för **NmsCleanup_RejectsPurgeDelay** alternativ (se [Distributionsguide](#deployment-wizard)) och **$(l)** är det högsta antalet poster som får tas bort.
+   där `$(curDate)` är det aktuella serverdatumet från vilket vi subtraherar den period som definierats för **NmsCleanup_RejectsPurgeDelay** alternativ (se [Distributionsguide](#deployment-wizard)) och `$(l)` är det högsta antalet poster som får tas bort.
 
 1. Alla ignorerade objekt tas sedan bort med följande fråga:
 
-   ```
+   ```sql
    DELETE FROM XtkReject WHERE iJobId NOT IN (SELECT iJobId FROM XtkJob)
    ```
 
@@ -327,54 +325,54 @@ Den här aktiviteten rensar varje arbetsflödesinstans med hjälp av dess identi
 
 1. Följande fråga används för att återställa listan med arbetsflöden som ska tas bort:
 
-   ```
+   ```sql
    SELECT iWorkflowId, iHistory FROM XtkWorkflow WHERE iWorkflowId<>0
    ```
 
 1. Den här frågan genererar en lista över arbetsflöden som kommer att användas för att ta bort alla länkade loggar, slutförda uppgifter och slutförda händelser med hjälp av följande frågor:
 
-   ```
+   ```sql
    DELETE FROM XtkWorkflowLog WHERE iWorkflowId=$(lworkflow) AND tsLog < DateMinusDays($(lhistory))
    ```
 
-   ```
+   ```sql
    DELETE FROM XtkWorkflowTask WHERE iWorkflowId=$(lworkflow) AND iStatus<>0 AND tsCompletion < DateMinusDays($(lhistory)) 
    ```
 
-   ```
+   ```sql
    DELETE FROM XtkWorkflowEvent WHERE iWorkflowId=$(l) AND iStatus>2 AND tsProcessing < DateMinusDays($(lHistory))
    ```
 
-   där **$(lworkflow)** är identifieraren för arbetsflödet och **$(lhistory)** är historikens identifierare.
+   där `$(lworkflow)` är identifieraren för arbetsflödet och `$(lhistory)` är historikens identifierare.
 
 1. Alla oanvända tabeller tas bort. För detta ändamål samlas alla tabeller in tack vare en **wkf%** skriv masken med följande fråga (efter):
 
-   ```
+   ```sql
    SELECT relname FROM pg_class WHERE relname LIKE Lower('wkf%') ESCAPE E'\\' AND relkind IN ('r','v') AND pg_get_userbyid(relowner)<>'postgres'
    ```
 
 1. Därefter exkluderas alla tabeller som används av en väntande arbetsflödesinstans. Listan över aktiva arbetsflöden återställs med följande fråga:
 
-   ```
+   ```sql
    SELECT iWorkflowId FROM XtkWorkflow WHERE iWorkflowId<>0 AND iState<>20
    ```
 
 1. Varje arbetsflödes-ID återställs sedan för att hitta namnet på tabellerna som används i pågående arbetsflöden. Dessa namn tas inte med i listan över tidigare återställda tabeller.
 1. Aktivitetshistoriktabeller av typen &quot;inkrementell fråga&quot; exkluderas med hjälp av följande frågor:
 
-   ```
+   ```sql
    SELECT relname FROM pg_class WHERE relname LIKE Lower('wkfhisto%') ESCAPE E'\\' AND relkind IN ('r','v') AND pg_get_userbyid(relowner)<>'postgres'
    ```
 
-   ```
+   ```sql
    SELECT iWorkflowId FROM XtkWorkflow WHERE iWorkflowId IN ($(strCondition))
    ```
 
-   där **$(strcondition)** är listan med tabeller som matchar **wkfhisto%** mask.
+   där `$(strcondition)` är listan med tabeller som matchar **wkfhisto%** mask.
 
 1. De återstående tabellerna tas bort med följande fråga:
 
-   ```
+   ```sql
    DROP TABLE wkf15487_12;
    ```
 
@@ -382,7 +380,7 @@ Den här aktiviteten rensar varje arbetsflödesinstans med hjälp av dess identi
 
 Den här uppgiften tar bort arbetsflödesinloggningar med följande fråga:
 
-```
+```sql
 DELETE FROM XtkWorkflowLogin WHERE iWorkflowId NOT IN (SELECT iWorkflowId FROM XtkWorkflow)
 ```
 
@@ -390,7 +388,7 @@ DELETE FROM XtkWorkflowLogin WHERE iWorkflowId NOT IN (SELECT iWorkflowId FROM X
 
 Den här aktiviteten tar bort överblivna arbetsregister som är länkade till grupper. The **NmsGroup** I tabellen lagras de grupper som ska rensas (med en annan typ än 0). Prefixet för tabellnamnen är **grå**. Följande fråga används för att identifiera de grupper som ska rensas:
 
-```
+```sql
 SELECT iGroupId FROM NmsGroup WHERE iType>0"
 ```
 
@@ -398,27 +396,27 @@ SELECT iGroupId FROM NmsGroup WHERE iType>0"
 
 Den här uppgiften tar bort inaktuella poster från besökstabellen med massborttagning. Föråldrade poster är de för vilka den senaste ändringen är tidigare än den bevarandeperiod som definierats i distributionsguiden (se [Distributionsguide](#deployment-wizard)). Följande fråga används:
 
-```
+```sql
 DELETE FROM NmsVisitor WHERE iVisitorId IN (SELECT iVisitorId FROM NmsVisitor WHERE iRecipientId = 0 AND tsLastModified < AddDays(GetDate(), -30) AND iOrigin = 0 LIMIT 20000)
 ```
 
-där **$(tsDate)** är det aktuella serverdatumet, från vilket vi subtraherar den period som definierats för **NmsCleanup_VisitorPurgeDelay** alternativ.
+där `$(tsDate)` är det aktuella serverdatumet, från vilket vi subtraherar den period som definierats för **NmsCleanup_VisitorPurgeDelay** alternativ.
 
 ### Rengöring av NPAI {#cleanup-of-npai}
 
 Med den här åtgärden kan du ta bort poster som matchar giltiga adresser i **NmsAddress** tabell. Följande fråga används för att utföra massborttagning:
 
-```
+```sql
 DELETE FROM NmsAddress WHERE iAddressId IN (SELECT iAddressId FROM NmsAddress WHERE iStatus=2 AND tsLastModified < $(tsDate1) AND tsLastModified >= $(tsDate2) LIMIT 5000)
 ```
 
-där **status 2** matchar **[!UICONTROL Valid]** status, **$(tsDate1)** är aktuellt serverdatum, och **$(tsDate2)** matchar **NmsCleanup_LastCleanup** alternativ.
+där `status 2` matchar **[!UICONTROL Valid]** status, `$(tsDate1)` är aktuellt serverdatum, och `$(tsDate2)` matchar **NmsCleanup_LastCleanup** alternativ.
 
 ### Rensa prenumerationer {#cleanup-of-subscriptions-}
 
 Den här aktiviteten tar bort alla prenumerationer som tagits bort av användaren från **NmsSubscription** tabell, använda massborttagning. Följande fråga används:
 
-```
+```sql
 DELETE FROM NmsSubscription WHERE iDeleteStatus <>0
 ```
 
@@ -428,25 +426,25 @@ Den här uppgiften tar bort inaktuella poster från loggtabellerna för spårnin
 
 1. Först återställs listan med spårningsloggtabeller med följande fråga:
 
-   ```
+   ```sql
    SELECT distinct(sTrackingLogSchema) FROM NmsDeliveryMapping WHERE sTrackingLogSchema IS NOT NULL;
    ```
 
 1. Massborttagning används för att rensa alla tabeller i listan med tidigare återskapade tabeller. Följande fråga används:
 
-   ```
+   ```sql
    DELETE FROM NmsTrackingLogRcp WHERE iTrackingLogId IN (SELECT iTrackingLogId FROM NmsTrackingLogRcp WHERE tsLog < $(tsDate) LIMIT 5000) 
    ```
 
-   där **$(tsDate)** är det aktuella serverdatumet från vilket vi subtraherar den period som definierats för **NmsCleanup_TrackingLogPurgeDelay** alternativ.
+   där `$(tsDate)` är det aktuella serverdatumet från vilket vi subtraherar den period som definierats för **NmsCleanup_TrackingLogPurgeDelay** alternativ.
 
 1. Registret för spårningsstatistik rensas med massborttagning. Följande fråga används:
 
-   ```
+   ```sql
    DELETE FROM NmsTrackingStats WHERE iTrackingStatsId IN (SELECT iTrackingStatsId FROM NmsTrackingStats WHERE tsStart < $(tsDate) LIMIT 5000) 
    ```
 
-   där **$(tsDate)** är det aktuella serverdatumet från vilket vi subtraherar den period som definierats för **NmsCleanup_TrackingStatPurgeDelay** alternativ.
+   där `$(tsDate)` är det aktuella serverdatumet från vilket vi subtraherar den period som definierats för **NmsCleanup_TrackingStatPurgeDelay** alternativ.
 
 ### Rensa leveransloggar {#cleanup-of-delivery-logs}
 
@@ -454,26 +452,26 @@ Med den här uppgiften kan du rensa leveransloggarna som lagras i olika tabeller
 
 1. För detta ändamål återställs listan med leveransloggscheman med följande fråga:
 
-   ```
+   ```sql
    SELECT distinct(sBroadLogSchema) FROM NmsDeliveryMapping WHERE sBroadLogSchema IS NOT NULL UNION SELECT distinct(sBroadLogExclSchema) FROM NmsDeliveryMapping WHERE sBroadLogExclSchema IS NOT NULL
    ```
 
 1. När du använder mellanleverantörer är **NmsBroadLogMid** Det finns ingen referens till tabellen i leveransmappningar. The **nms:broadLogMid** schemat läggs till i listan som återställdes av föregående fråga.
 1. The **Databasrensning** arbetsflödet tar sedan bort föråldrade data från tidigare återställda tabeller. Följande fråga används:
 
-   ```
+   ```sql
    DELETE FROM $(tableName) WHERE iBroadLogId IN (SELECT iBroadLogId FROM $(tableName) WHERE tsLastModified < $(option) LIMIT 5000) 
    ```
 
-   där **$(tableName)** är namnet på varje tabell i listan över scheman, och **$(option)** är det datum som definieras för **NmsCleanup_BroadLogPurgeDelay** alternativ (se [Distributionsguide](#deployment-wizard)).
+   där `$(tableName)` är namnet på varje tabell i schemalistan, och `$(option)` är det datum som definieras för **NmsCleanup_BroadLogPurgeDelay** alternativ (se [Distributionsguide](#deployment-wizard)).
 
 1. Slutligen kontrollerar arbetsflödet om **NmsProviderMsgId** tabellen finns. Om så är fallet tas alla föråldrade data bort med följande fråga:
 
-   ```
+   ```sql
    DELETE FROM NmsProviderMsgId WHERE iBroadLogId IN (SELECT iBroadLogId FROM NmsProviderMsgId WHERE tsCreated < $(option) LIMIT 5000)
    ```
 
-   där **$(option)** matchar datumet som definierats för **NmsCleanup_BroadLogPurgeDelay** alternativ (se [Distributionsguide](#deployment-wizard)).
+   där `$(option)` matchar datumet som definierats för **NmsCleanup_BroadLogPurgeDelay** alternativ (se [Distributionsguide](#deployment-wizard)).
 
 ### Rensning av tabellen NmsEmailErrorStat {#cleanup-of-the-nmsemailerrorstat-table-}
 
@@ -488,31 +486,31 @@ Om startdatumet är tidigare än slutdatumet visas **NmsEmailErrorStat** tabelle
 
 Det totala antalet fel i **NmsEmailErrorStat** tabellen, mellan start- och slutdatum, återställs med följande fråga:
 
-```
-"SELECT COUNT(*) FROM NmsEmailErrorStat WHERE tsDate>= $(start) AND tsDate< $(end)"
+```sql
+SELECT COUNT(*) FROM NmsEmailErrorStat WHERE tsDate>= $(start) AND tsDate< $(end)
 ```
 
-där **$end** och **$start** är start- och slutdatum som definierats tidigare.
+där `$end` och `$start` är start- och slutdatum som definierats tidigare.
 
 Om summan är större än 0:
 
 1. Följande fråga utförs för att bara hålla fel utanför ett visst tröskelvärde (vilket är lika med 20):
 
-   ```
-   "SELECT iMXIP, iPublicId, SUM(iTotalConnections), SUM(iTotalErrors), SUM(iMessageErrors), SUM(iAbortedConnections), SUM(iFailedConnections), SUM(iRefusedConnections), SUM(iTimeoutConnections) FROM NmsEmailErrorStat WHERE tsDate>=$(start ) AND tsDate<$(end ) GROUP BY iMXIP, iPublicId HAVING SUM(iTotalErrors) >= 20"
+   ```sql
+   SELECT iMXIP, iPublicId, SUM(iTotalConnections), SUM(iTotalErrors), SUM(iMessageErrors), SUM(iAbortedConnections), SUM(iFailedConnections), SUM(iRefusedConnections), SUM(iTimeoutConnections) FROM NmsEmailErrorStat WHERE tsDate>=$(start ) AND tsDate<$(end ) GROUP BY iMXIP, iPublicId HAVING SUM(iTotalErrors) >= 20
    ```
 
 1. The **coalescingErrors** meddelandet visas.
 1. En ny anslutning skapas för att ta bort alla fel som inträffade mellan start- och slutdatumet. Följande fråga används:
 
-   ```
-   "DELETE FROM NmsEmailErrorStat WHERE tsDate>=$(start) AND tsDate<$(end)"
+   ```sql
+   DELETE FROM NmsEmailErrorStat WHERE tsDate>=$(start) AND tsDate<$(end)
    ```
 
 1. Varje fel sparas i **NmsEmailErrorStat** tabell med följande fråga:
 
-   ```
-   "INSERT INTO NmsEmailErrorStat(iMXIP, iPublicId, tsDate, iTotalConnections, iTotalErrors, iTimeoutConnections, iRefusedConnections, iAbortedConnections, iFailedConnections, iMessageErrors) VALUES($(lmxip ), $(lpublicId ), $(tsstart ), $(lconnections ), $(lconnectionErrors ),$(ltimeoutConnections ), $(lrefusedConnections ), $(labortedConnections ), $(lfailedConnections ), $(lmessageErrors))"
+   ```sql
+   INSERT INTO NmsEmailErrorStat(iMXIP, iPublicId, tsDate, iTotalConnections, iTotalErrors, iTimeoutConnections, iRefusedConnections, iAbortedConnections, iFailedConnections, iMessageErrors) VALUES($(lmxip ), $(lpublicId ), $(tsstart ), $(lconnections ), $(lconnectionErrors ),$(ltimeoutConnections ), $(lrefusedConnections ), $(labortedConnections ), $(lfailedConnections ), $(lmessageErrors))
    ```
 
    där varje variabel matchar ett värde som återställdes av föregående fråga.
@@ -527,7 +525,7 @@ Rensningar utförs på **NmsEmailError** och **cleanupNmsMxDomain** tabeller.
 
 Följande fråga används:
 
-```
+```sql
 DELETE FROM NmsEmailError WHERE iMXIP NOT IN (SELECT DISTINCT iMXIP FROM NmsEmailErrorStat)
 ```
 
@@ -537,7 +535,7 @@ Den här frågan tar bort alla rader utan länkade poster i **NmsEmailErrorStat*
 
 Följande fråga används:
 
-```
+```sql
 DELETE FROM NmsMxDomain WHERE iMXIP NOT IN (SELECT DISTINCT iMXIP FROM NmsEmailErrorStat)
 ```
 
@@ -549,11 +547,11 @@ Om **Interaktion** modulen är installerad, den här aktiviteten körs för att 
 
 Listan med förslagstabeller återställs och massborttagning utförs för var och en av dem med hjälp av följande fråga:
 
-```
+```sql
 DELETE FROM NmsPropositionXxx WHERE iPropositionId IN (SELECT iPropositionId FROM NmsPropositionXxx WHERE tsLastModified < $(option) LIMIT 5000) 
 ```
 
-där **$(option)** är det datum som definieras för **NmsCleanup_PropositionPurgeDelay** alternativ (se [Distributionsguide](#deployment-wizard)).
+där `$(option)` är det datum som definieras för **NmsCleanup_PropositionPurgeDelay** alternativ (se [Distributionsguide](#deployment-wizard)).
 
 ### Rensa simuleringstabeller {#cleanup-of-simulation-tables}
 
@@ -561,13 +559,13 @@ Den här aktiviteten rensar överblivna simuleringstabeller (som inte längre ä
 
 1. Följande fråga används för att återställa listan med simuleringar som behöver rensas:
 
-   ```
+   ```sql
    SELECT iSimulationId FROM NmsSimulation WHERE iSimulationId<>0
    ```
 
 1. Namnet på tabellerna som ska tas bort består av **wkSimu_** -prefix följt av simuleringens identifierare (till exempel: **wkSimu_456831_aggr**):
 
-   ```
+   ```sql
    DROP TABLE wkSimu_456831_aggr
    ```
 
@@ -575,7 +573,7 @@ Den här aktiviteten rensar överblivna simuleringstabeller (som inte längre ä
 
 Följande fråga används:
 
-```
+```sql
 DELETE FROM XtkAudit WHERE tsChanged < $(tsDate)
 ```
 
@@ -585,7 +583,7 @@ där **$(tsDate)** är det aktuella serverdatumet från vilket perioden som defi
 
 Följande fråga används:
 
-```
+```sql
 DELETE FROM NmsAddress WHERE iAddressId IN (SELECT iAddressId FROM NmsAddress WHERE iStatus=STATUS_QUARANTINE AND tsLastModified < $(NmsCleanup_AppSubscriptionRcpPurgeDelay + 5d) AND iType IN (MESSAGETYPE_IOS, MESSAGETYPE_ANDROID ) LIMIT 5000)
 ```
 
@@ -607,7 +605,7 @@ Den här uppgiften tar bort alla prenumerationer som rör borttagna tjänster el
 
 Följande fråga används för att återställa listan med sändningsscheman:
 
-```
+```sql
 SELECT distinct(sBroadLogSchema) FROM NmsDeliveryMapping WHERE sBroadLogSchema IS NOT NULL
 ```
 
@@ -619,8 +617,8 @@ Det här rensningsarbetsflödet tar också bort alla poster där det är inaktiv
 
 Den här aktiviteten tar bort information från **sessionInfo** tabellen används följande fråga:
 
-```
- DELETE FROM XtkSessionInfo WHERE tsexpiration < $(curdate) 
+```sql
+DELETE FROM XtkSessionInfo WHERE tsexpiration < $(curdate) 
 ```
 
 ### Rensar utgångna händelser {#cleansing-expired-events}
