@@ -4,7 +4,7 @@ title: Skapa en lokal kampanj
 description: Skapa en lokal kampanj
 feature: Distributed Marketing
 exl-id: 17b5865a-5e04-4b3b-8b6a-12d5c1a9c1da
-source-git-commit: d36e1881726af6238c4e0caecb7b299b594691f2
+source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
 workflow-type: tm+mt
 source-wordcount: '1564'
 ht-degree: 1%
@@ -13,7 +13,7 @@ ht-degree: 1%
 
 # Skapa en lokal kampanj{#creating-a-local-campaign}
 
-![](../../assets/common.svg)
+![](../../assets/v7-only.svg)
 
 En lokal kampanj är en instans som skapats från en mall som refereras i listan med **[!UICONTROL campaign packages]** med **specifikt körningsschema**. Syftet är att tillgodose ett lokalt kommunikationsbehov med hjälp av en kampanjmall som har konfigurerats och konfigurerats av den centrala enheten. De viktigaste stegen för att genomföra en lokal åtgärd är följande:
 

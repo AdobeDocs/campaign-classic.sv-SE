@@ -4,7 +4,7 @@ title: Lokalt godkännande
 description: Lokalt godkännande
 feature: Workflows
 exl-id: 2d9cbfc8-1f99-4b38-8460-77c7c986e9ca
-source-git-commit: b94c4bfd478b4a8fbcefe6341608dd6a14bb31d3
+source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
 workflow-type: tm+mt
 source-wordcount: '642'
 ht-degree: 1%
@@ -13,7 +13,7 @@ ht-degree: 1%
 
 # Lokalt godkännande{#local-approval}
 
-![](../../assets/common.svg)
+![](../../assets/v7-only.svg)
 
 När det är integrerat i ett arbetsflöde för målinriktning **[!UICONTROL Local approval]** Med -aktivitet kan du konfigurera en process för mottagarnas godkännande innan leveransen skickas.
 

@@ -4,7 +4,7 @@ title: Om användningsfall för arbetsflöden
 description: Lär dig mer om användningsfall som du kan använda med arbetsflöden i Campaign Classic.
 feature: Workflows, Data Management
 exl-id: 7c093b34-6b0e-4403-9d9d-fba9ba39ea41
-source-git-commit: f05eefc9945c4ead89eb448b6e28c3523559e055
+source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
 workflow-type: tm+mt
 source-wordcount: '206'
 ht-degree: 67%
@@ -13,7 +13,7 @@ ht-degree: 67%
 
 # Användningsfall för arbetsflöde {#about-workflow-use-cases}
 
-![](../../assets/common.svg)
+![](../../assets/v7-only.svg)
 
 I det här avsnittet hittar du olika användningsexempel som utnyttjar funktionerna i Campaign-arbetsflöden.
 

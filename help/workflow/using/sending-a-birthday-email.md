@@ -4,16 +4,16 @@ title: Skicka ett födelsedagsmeddelande via e-post
 description: Lär dig hur du skickar ett födelsedagsmeddelande med ett arbetsflöde
 feature: Workflows
 exl-id: 38006cca-e945-4b9d-8e2d-ed537b8541d9
-source-git-commit: f05eefc9945c4ead89eb448b6e28c3523559e055
+source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
 workflow-type: tm+mt
 source-wordcount: '879'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
 # Skicka ett födelsedagsmeddelande via e-post{#sending-a-birthday-email}
 
-![](../../assets/common.svg)
+![](../../assets/v7-only.svg)
 
 ## Introduktion {#introduction}
 
@@ -68,7 +68,7 @@ Gör så här:
    Day(@birthDate)
    ```
 
-   Klicka **[!UICONTROL Finish]** för att bekräfta.
+   Klicka på **[!UICONTROL Finish]** för att bekräfta.
 
 1. I frågeredigeraren, i den första cellen i **[!UICONTROL Operator]** kolumn, markera **[!UICONTROL equal to]**.
 
@@ -86,7 +86,7 @@ Gör så här:
    Day(GetDate())
    ```
 
-   Klicka **[!UICONTROL Finish]** för att bekräfta.
+   Klicka på **[!UICONTROL Finish]** för att bekräfta.
 
 1. Upprepa den här proceduren för att hämta födelsemånaden som motsvarar den aktuella månaden. Om du vill göra det klickar du på **[!UICONTROL Add]** och upprepa steg 3 till 10, ersätta **[!UICONTROL Day]** med **[!UICONTROL Month]**.
 

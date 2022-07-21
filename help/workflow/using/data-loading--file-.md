@@ -4,7 +4,7 @@ title: Läsa in data (fil)
 description: Läs mer om arbetsflödesaktiviteten Datainläsning (fil)
 feature: Workflows, Data Management Activity
 exl-id: a380e486-a40c-4bf6-b7f4-7dcd76c34085
-source-git-commit: b94c4bfd478b4a8fbcefe6341608dd6a14bb31d3
+source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
 workflow-type: tm+mt
 source-wordcount: '1052'
 ht-degree: 15%
@@ -13,7 +13,7 @@ ht-degree: 15%
 
 # Läsa in data (fil){#data-loading-file}
 
-![](../../assets/common.svg)
+![](../../assets/v7-only.svg)
 
 ## Använd {#use}
 

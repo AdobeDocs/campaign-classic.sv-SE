@@ -4,7 +4,7 @@ title: Schemaläggare
 description: Läs mer om arbetsflödesaktiviteten i schemaläggaren
 feature: Workflows
 exl-id: 30a9bd2a-afb1-481c-ab5f-5acebd9cbb5a
-source-git-commit: b94c4bfd478b4a8fbcefe6341608dd6a14bb31d3
+source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
 workflow-type: tm+mt
 source-wordcount: '332'
 ht-degree: 10%
@@ -13,7 +13,7 @@ ht-degree: 10%
 
 # Schemaläggare {#scheduler}
 
-![](../../assets/common.svg)
+![](../../assets/v7-only.svg)
 
 The **Schemaläggare** är en beständig uppgift som aktiverar övergången vid de tidpunkter som anges i schemat.
 

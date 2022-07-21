@@ -4,16 +4,16 @@ title: Marknadsföringskampanjdokument och leveransdispositioner
 description: Läs mer om kampanjdokument och leveransdispositioner för marknadsföring
 feature: Campaigns
 exl-id: 891252b0-4700-4a2a-a632-63aad5ce75d7
-source-git-commit: d3f5c56078ddac7597925191fd347bdcab61714d
+source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '755'
+ht-degree: 1%
 
 ---
 
 # Hantera associerade dokument {#managing-associated-documents}
 
-![](../../assets/common.svg)
+![](../../assets/v7-only.svg)
 
 Du kan koppla olika dokument till en kampanj: rapporter, foton, webbsidor, diagram osv. Dessa dokument kan ha vilket format som helst (Microsoft Word, PowerPoint, PNG, JPG, Acrobat PDF).
 

@@ -4,7 +4,7 @@ title: E-postberikande med anpassade datumfält
 description: Lär dig att förbättra e-postmeddelanden med anpassade datumfält
 feature: Workflows
 exl-id: 85e0ec2a-b7cb-4d0b-a281-9ad72594403a
-source-git-commit: b94c4bfd478b4a8fbcefe6341608dd6a14bb31d3
+source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
 workflow-type: tm+mt
 source-wordcount: '538'
 ht-degree: 3%
@@ -13,7 +13,7 @@ ht-degree: 3%
 
 # E-postberikande med anpassade datumfält{#email-enrichment-with-custom-date-fields}
 
-![](../../assets/common.svg)
+![](../../assets/v7-only.svg)
 
 I det här exemplet vill vi skicka ett e-postmeddelande med anpassade datafält till mottagare som kommer att fira sina födelsedagar den här månaden. E-postmeddelandet innehåller en kupong som är giltig en vecka före och efter deras födelsedagar.
 

@@ -4,7 +4,7 @@ title: Fråga med många-till-många-relation
 description: Lär dig hur du utför frågor med hjälp av en många-till-många-relation
 feature: Query Editor
 exl-id: e1d40ba1-2493-45c1-bd54-af9cb332028d
-source-git-commit: b94c4bfd478b4a8fbcefe6341608dd6a14bb31d3
+source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
 workflow-type: tm+mt
 source-wordcount: '385'
 ht-degree: 0%
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Fråga med många-till-många-relation {#querying-using-a-many-to-many-relationship}
 
-![](../../assets/common.svg)
+![](../../assets/v7-only.svg)
 
 I det här exemplet vill vi återställa mottagare som inte har kontaktats under de senaste 7 dagarna. Den här frågan gäller alla leveranser.
 

@@ -4,7 +4,7 @@ title: Så använder du arbetsflödesdata
 description: Lär dig hur du använder arbetsflödesdata
 feature: Workflows, Data Management
 exl-id: 5354d608-2fea-45f9-a0aa-11c7e965ab04
-source-git-commit: b94c4bfd478b4a8fbcefe6341608dd6a14bb31d3
+source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
 workflow-type: tm+mt
 source-wordcount: '408'
 ht-degree: 2%
@@ -13,7 +13,7 @@ ht-degree: 2%
 
 # Så använder du arbetsflödesdata{#how-to-use-workflow-data}
 
-![](../../assets/common.svg)
+![](../../assets/v7-only.svg)
 
 ## Uppdaterar databasen {#updating-the-database}
 

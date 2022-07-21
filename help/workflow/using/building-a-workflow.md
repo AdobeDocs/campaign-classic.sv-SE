@@ -4,7 +4,7 @@ title: Bygg ett arbetsflöde
 description: Lär dig hur du skapar ett arbetsflöde
 feature: Workflows
 exl-id: 8ba20ccd-b03f-4c4f-87c1-a21e80d8e4be
-source-git-commit: 3b523e53440ba6ae107b597c7ebf226195126bde
+source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
 workflow-type: tm+mt
 source-wordcount: '1623'
 ht-degree: 3%
@@ -13,7 +13,7 @@ ht-degree: 3%
 
 # Bygg ett arbetsflöde {#building-a-workflow}
 
-![](../../assets/common.svg)
+![](../../assets/v7-only.svg)
 
 I det här avsnittet beskrivs de viktigaste principerna och de bästa metoderna för att skapa ett arbetsflöde i Campaign.
 

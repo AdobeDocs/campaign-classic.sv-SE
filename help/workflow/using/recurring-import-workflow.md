@@ -4,7 +4,7 @@ title: Konfigurera en återkommande import
 description: Lär dig hur du konfigurerar en arbetsflödesmall för återkommande importer.
 feature: Workflows, Data Management
 exl-id: e6e140cb-8de0-4ab9-bddc-95abe04124c6
-source-git-commit: b94c4bfd478b4a8fbcefe6341608dd6a14bb31d3
+source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
 workflow-type: tm+mt
 source-wordcount: '1020'
 ht-degree: 0%
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Konfigurera ett arbetsflöde för återkommande import {#setting-up-a-recurring-import}
 
-![](../../assets/common.svg)
+![](../../assets/v7-only.svg)
 
 Det är bäst att använda en arbetsflödesmall om du behöver importera filer med samma struktur regelbundet.
 

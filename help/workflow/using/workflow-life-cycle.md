@@ -4,7 +4,7 @@ title: Arbetsflödets livscykel
 description: Läs mer om arbetsflödets livscykel
 feature: Workflows
 exl-id: fceb5752-dc73-4386-8c18-c4f3e6110ca5
-source-git-commit: b94c4bfd478b4a8fbcefe6341608dd6a14bb31d3
+source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
 workflow-type: tm+mt
 source-wordcount: '267'
 ht-degree: 2%
@@ -13,7 +13,7 @@ ht-degree: 2%
 
 # Arbetsflödets livscykel {#workflow-life-cycle}
 
-![](../../assets/common.svg)
+![](../../assets/v7-only.svg)
 
 Arbetsflödescykeln består av tre huvudsteg.
 

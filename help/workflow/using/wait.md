@@ -4,7 +4,7 @@ title: Vänta
 description: Läs mer om aktiviteten Vänta i arbetsflödet
 feature: Workflows
 exl-id: 4872f756-14d7-4e37-a9cf-b929c77e34ca
-source-git-commit: b94c4bfd478b4a8fbcefe6341608dd6a14bb31d3
+source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
 workflow-type: tm+mt
 source-wordcount: '192'
 ht-degree: 1%
@@ -13,7 +13,7 @@ ht-degree: 1%
 
 # Vänta{#wait}
 
-![](../../assets/common.svg)
+![](../../assets/v7-only.svg)
 
 A **Vänta** Aktiviteten aktiverar övergången efter en tidsfördröjning på var som helst mellan några sekunder och flera månader. En vänteuppgift blockerar inte utförandet av andra uppgifter. arbetsflödet kan köra uppgifter parallellt medan den här uppgiften väntar.
 

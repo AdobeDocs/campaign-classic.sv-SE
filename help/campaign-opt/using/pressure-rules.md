@@ -4,7 +4,7 @@ title: Tryckregler
 description: Tryckregler
 feature: Fatigue Management, Typology Rules
 exl-id: c23212f2-fdf8-4820-b389-546f7c84db27
-source-git-commit: 90c52ec144a6a3c1b534a80507e38fa3ed64fc83
+source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
 workflow-type: tm+mt
 source-wordcount: '3285'
 ht-degree: 4%
@@ -13,7 +13,7 @@ ht-degree: 4%
 
 # Tryckregler{#pressure-rules}
 
-![](../../assets/common.svg)
+![](../../assets/v7-only.svg)
 
 ## Om reklamtrötthet {#about-marketing-fatigue}
 

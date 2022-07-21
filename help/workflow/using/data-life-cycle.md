@@ -4,7 +4,7 @@ title: Datas livscykel
 description: Läs mer om datalivscykler i arbetsflöden
 feature: Workflows, Data Management
 exl-id: 366acc1e-d769-4053-9fa1-f47182627c07
-source-git-commit: b94c4bfd478b4a8fbcefe6341608dd6a14bb31d3
+source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
 workflow-type: tm+mt
 source-wordcount: '509'
 ht-degree: 4%
@@ -13,7 +13,7 @@ ht-degree: 4%
 
 # Datas livscykel {#data-life-cycle}
 
-![](../../assets/common.svg)
+![](../../assets/v7-only.svg)
 
 ## Arbetsregister {#work-table}
 

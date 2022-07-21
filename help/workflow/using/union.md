@@ -4,7 +4,7 @@ title: Sammanslutning
 description: Läs mer om unionens arbetsflödesaktivitet
 feature: Workflows, Targeting Activity
 exl-id: 1cda3146-c333-4743-a871-c44583b6e5b2
-source-git-commit: b94c4bfd478b4a8fbcefe6341608dd6a14bb31d3
+source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
 workflow-type: tm+mt
 source-wordcount: '305'
 ht-degree: 1%
@@ -13,7 +13,7 @@ ht-degree: 1%
 
 # Sammanslutning{#union}
 
-![](../../assets/common.svg)
+![](../../assets/v7-only.svg)
 
 En union grupperar resultatet av flera inkommande aktiviteter i ett enda mål. Målet skapas med alla mottagna resultat: Alla tidigare aktiviteter måste därför avslutas för att unionen ska kunna genomföras.
 

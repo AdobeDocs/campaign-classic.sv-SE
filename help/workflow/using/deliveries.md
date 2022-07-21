@@ -3,7 +3,7 @@ product: campaign
 title: Leveranser
 description: Läs mer om standardarbetsflöden för leveranser
 feature: Workflows
-source-git-commit: 25e8acdc449c7002e467db17e7c70e3dc017dded
+source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
 workflow-type: tm+mt
 source-wordcount: '323'
 ht-degree: 4%
@@ -13,7 +13,7 @@ ht-degree: 4%
 
 # Leveranser{#deliveries}
 
-![](../../assets/common.svg)
+![](../../assets/v7-only.svg)
 
 Arbetsflödena nedan installeras tillsammans med **Leveranser** som standard.
 

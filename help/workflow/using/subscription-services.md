@@ -4,7 +4,7 @@ title: Prenumerationstjänster
 description: Läs mer om arbetsflödesaktiviteten för prenumerationstjänster
 feature: Workflows, Targeting Activity, Subscription Services Activity
 exl-id: 1b526d1c-4a33-45a1-98f4-dcb803c8d228
-source-git-commit: b94c4bfd478b4a8fbcefe6341608dd6a14bb31d3
+source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
 workflow-type: tm+mt
 source-wordcount: '407'
 ht-degree: 2%
@@ -13,7 +13,7 @@ ht-degree: 2%
 
 # Prenumerationstjänster{#subscription-services}
 
-![](../../assets/common.svg)
+![](../../assets/v7-only.svg)
 
 A **Prenumerationstjänster** Med aktivitet av -typ kan du skapa eller ta bort en prenumeration på en informationstjänst för den population som anges i övergången.
 

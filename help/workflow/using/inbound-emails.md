@@ -4,7 +4,7 @@ title: Inkommande e-postmeddelanden
 description: Läs mer om arbetsflödesaktiviteten för inkommande e-post
 feature: Workflows, Channels Activity
 exl-id: b2a05e07-a7d7-436b-b2c6-90ab55d031cd
-source-git-commit: b94c4bfd478b4a8fbcefe6341608dd6a14bb31d3
+source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
 workflow-type: tm+mt
 source-wordcount: '337'
 ht-degree: 1%
@@ -13,7 +13,7 @@ ht-degree: 1%
 
 # Inkommande e-postmeddelanden{#inbound-emails}
 
-![](../../assets/common.svg)
+![](../../assets/v7-only.svg)
 
 The **Inkommande e-postmeddelanden** Med -aktiviteten kan du hämta och bearbeta e-postmeddelanden från en POP3-postserver.
 

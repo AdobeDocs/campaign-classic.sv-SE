@@ -4,7 +4,7 @@ title: Filhämtare
 description: Läs mer om arbetsflödesaktiviteten för filinsamlaren
 feature: Workflows, Data Management
 exl-id: bbec389e-c2ba-4b23-847f-b01dca6b8d5a
-source-git-commit: b94c4bfd478b4a8fbcefe6341608dd6a14bb31d3
+source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
 workflow-type: tm+mt
 source-wordcount: '524'
 ht-degree: 0%
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Filhämtare{#file-collector}
 
-![](../../assets/common.svg)
+![](../../assets/v7-only.svg)
 
 The **Filinsamlare** övervakar hur en eller flera filer kommer in i en katalog och aktiverar övergången för varje mottagen fil. För varje händelse, en **[!UICONTROL filename]** variabeln innehåller det fullständiga namnet på den mottagna filen. De insamlade filerna flyttas till en annan katalog för arkivering och för att säkerställa att de bara räknas en gång.
 
@@ -35,7 +35,7 @@ Den första fliken i **[!UICONTROL File collector]** kan du välja källkatalog 
 
    * **[!UICONTROL Filter]**
 
-      Endast filer som matchar det här filtret tas med i beräkningen. De andra filerna i katalogen ignoreras. Om filtret är tomt beaktas alla filer i katalogen. Exempel på filter: ***.zip**, **import-*.txt**.
+      Endast filer som matchar det här filtret tas med i beräkningen. De andra filerna i katalogen ignoreras. Om filtret är tomt beaktas alla filer i katalogen. Exempel på filter: **&#42;.zip**, **import-&#42;.txt**.
 
    * **[!UICONTROL Stop as soon as a file has been processed]**
 

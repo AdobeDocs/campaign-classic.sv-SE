@@ -4,7 +4,7 @@ title: Om händelseaktiviteter
 description: Om händelseaktiviteter
 feature: Workflows, Data Management
 exl-id: ed27159e-2fce-4b1c-92e8-581901b82f60
-source-git-commit: b94c4bfd478b4a8fbcefe6341608dd6a14bb31d3
+source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
 workflow-type: tm+mt
 source-wordcount: '105'
 ht-degree: 5%
@@ -13,7 +13,7 @@ ht-degree: 5%
 
 # Händelseaktiviteter i arbetsflöden{#about-event-activities}
 
-![](../../assets/common.svg)
+![](../../assets/v7-only.svg)
 
 Huvuduppgiften med dessa aktiviteter är att vänta på en händelse. Det kan till exempel vara att ta emot en fil, ett e-postmeddelande eller en signal som skickas av programmet.
 

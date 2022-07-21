@@ -4,7 +4,7 @@ title: Leverantörer, lager och budgetar
 description: Leverantörer, lager och budgetar
 feature: Budget Management, Campaigns
 exl-id: c60c4f86-a957-4c44-a0fe-39b6e3f0e5d6
-source-git-commit: 36e546a34d8c2345fefed5d459095a76c6224a38
+source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
 workflow-type: tm+mt
 source-wordcount: '1902'
 ht-degree: 0%
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Leverantörer, lager och budgetar{#providers-stocks-and-budgets}
 
-![](../../assets/common.svg)
+![](../../assets/v7-only.svg)
 
 Med Adobe Campaign kan ni definiera tjänsteleverantörer som ska delta i de jobb som utförs i kampanjer. Information om tjänsteleverantörerna och de tillhörande kostnadsstrukturerna definieras av Adobe Campaign-administratören ur huvudsynvinkel. Tjänsteleverantören hänvisas till från leveransen, och dess kostnadsstrukturer gör det möjligt att beräkna kostnaderna i samband med denna leverans samt förvaltningen av det berörda lagret.
 

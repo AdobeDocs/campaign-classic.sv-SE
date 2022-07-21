@@ -4,7 +4,7 @@ title: Kvartalsvis listuppdatering med en inkrementell fråga
 description: I det här fallet används en stegvis fråga för att automatiskt uppdatera en mottagarlista.
 feature: Workflows
 exl-id: 0d3e7046-313a-42a6-9155-3365e8d60bac
-source-git-commit: b94c4bfd478b4a8fbcefe6341608dd6a14bb31d3
+source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
 workflow-type: tm+mt
 source-wordcount: '274'
 ht-degree: 5%
@@ -13,7 +13,7 @@ ht-degree: 5%
 
 # Kvartalsvis listuppdatering med en inkrementell fråga {#quarterly-list-update}
 
-![](../../assets/common.svg)
+![](../../assets/v7-only.svg)
 
 I följande exempel har [inkrementell fråga](incremental-query.md) används för att automatiskt uppdatera en mottagarlista. Dessa mottagare ingår i säsongskampanjer.
 

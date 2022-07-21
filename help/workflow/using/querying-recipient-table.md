@@ -4,7 +4,7 @@ title: Fråga mottagartabellen
 description: Lär dig ställa frågor i mottagartabellen
 feature: Query Editor
 exl-id: 5b037798-b092-4c98-9f6a-4af7fc7941c6
-source-git-commit: b94c4bfd478b4a8fbcefe6341608dd6a14bb31d3
+source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
 workflow-type: tm+mt
 source-wordcount: '392'
 ht-degree: 3%
@@ -13,7 +13,7 @@ ht-degree: 3%
 
 # Fråga mottagartabellen {#querying-recipient-table}
 
-![](../../assets/common.svg)
+![](../../assets/v7-only.svg)
 
 I det här exemplet vill vi återskapa namn och e-post för mottagare vars e-postdomän är orange.co.uk och som inte bor i London.
 

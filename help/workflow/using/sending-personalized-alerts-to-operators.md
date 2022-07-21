@@ -4,7 +4,7 @@ title: Skicka personaliserade aviseringar till operatörer
 description: Lär dig hur du skickar personaliserade aviseringar till operatorer
 feature: Workflows
 exl-id: 21c97eb3-60cd-4d19-bc0f-5ba9ec17e70a
-source-git-commit: b94c4bfd478b4a8fbcefe6341608dd6a14bb31d3
+source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
 workflow-type: tm+mt
 source-wordcount: '343'
 ht-degree: 2%
@@ -13,7 +13,7 @@ ht-degree: 2%
 
 # Skicka personaliserade aviseringar till operatörer{#sending-personalized-alerts-to-operators}
 
-![](../../assets/common.svg)
+![](../../assets/v7-only.svg)
 
 I det här exemplet vill vi skicka en varning till en operator som ska innehålla namnet på profiler som öppnade ett nyhetsbrev men som inte klickade på länken som det innehåller.
 

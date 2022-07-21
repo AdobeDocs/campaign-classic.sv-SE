@@ -4,7 +4,7 @@ title: Skapa marknadsföringskampanjer
 description: Lär dig hur du skapar och genomför marknadsföringskampanjer
 feature: Campaigns, Cross Channel Orchestration, Programs
 exl-id: a8fce21f-ffe3-4819-87ca-ac0ad9f21e41
-source-git-commit: f95b75adf8f46d8301d800451ea0e62629690a8f
+source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
 workflow-type: tm+mt
 source-wordcount: '1253'
 ht-degree: 2%
@@ -13,7 +13,7 @@ ht-degree: 2%
 
 # Kom igång med marknadsföringskampanjer{#setting-up-marketing-campaigns}
 
-![](../../assets/common.svg)
+![](../../assets/v7-only.svg)
 
 Kampanjerna omfattar åtgärder (leveranser) och processer (import eller extrahering av filer) samt resurser (marknadsföringsdokument, leveransdispositioner). De används i marknadsföringskampanjer. Kampanjer ingår i ett program och program ingår i en kampanjplan.
 
@@ -41,7 +41,7 @@ Så här konfigurerar du din mapphierarki för marknadsföringsplaner och progra
 
 1. Klicka på **Utforskaren** på startsidan.
 1. Högerklicka på den mapp där du vill skapa din plan.
-1. Välj **Lägg till ny mapp > Kampanjhantering > Plan**.
+1. Välj **Lägg till ny mapp > Campaign Management > Plan**.
 
    ![](assets/create_plan_1.png)
 

@@ -4,7 +4,7 @@ title: Berikning
 description: Läs mer om arbetsflödesaktiviteten för anrikning
 feature: Workflows, Enrichment Activity, Targeting Activity
 exl-id: 4c7bc0f3-5877-47dc-bd72-dc94fb7bd479
-source-git-commit: b94c4bfd478b4a8fbcefe6341608dd6a14bb31d3
+source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
 workflow-type: tm+mt
 source-wordcount: '1291'
 ht-degree: 2%
@@ -13,7 +13,7 @@ ht-degree: 2%
 
 # Berikning{#enrichment}
 
-![](../../assets/common.svg)
+![](../../assets/v7-only.svg)
 
 The **[!UICONTROL Enrichment]** kan du lägga till information i en profillista och länkar till en befintlig tabell (skapa en ny koppling). Avstämningskriterier med profiler i databasen kan också definieras.
 

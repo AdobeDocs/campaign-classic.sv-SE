@@ -4,7 +4,7 @@ title: Kontinuerlig leverans
 description: Kontinuerlig leverans
 feature: Workflows, Channels Activity
 exl-id: 9c228cdb-331e-476e-a24c-3c7e23add3bf
-source-git-commit: b94c4bfd478b4a8fbcefe6341608dd6a14bb31d3
+source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
 workflow-type: tm+mt
 source-wordcount: '364'
 ht-degree: 10%
@@ -13,7 +13,7 @@ ht-degree: 10%
 
 # Kontinuerlig leverans{#continuous-delivery}
 
-![](../../assets/common.svg)
+![](../../assets/v7-only.svg)
 
 A **Kontinuerlig leverans** kan du lägga till nya mottagare i en befintlig leverans. Med den här leveranstypen slipper du skapa en ny leverans varje gång: Det här läget är ofta mer effektivt, särskilt när det gäller meddelanden om låga volymer eller meddelanden som skickas ut vid behov.
 

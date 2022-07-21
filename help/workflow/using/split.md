@@ -4,7 +4,7 @@ title: Dela
 description: Läs mer om aktiviteten Dela arbetsflöde
 feature: Workflows, Targeting Activity
 exl-id: 4204350a-c2d2-4033-9bdf-87b49d8211b9
-source-git-commit: b94c4bfd478b4a8fbcefe6341608dd6a14bb31d3
+source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
 workflow-type: tm+mt
 source-wordcount: '1935'
 ht-degree: 0%
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Dela{#split}
 
-![](../../assets/common.svg)
+![](../../assets/v7-only.svg)
 
 A **Dela** Med aktiviteten -type kan du dela upp ett mål i flera deluppsättningar. Målet konstrueras med alla mottagna resultat: Alla tidigare aktiviteter måste därför ha avslutats för att denna aktivitet ska kunna utföras.
 

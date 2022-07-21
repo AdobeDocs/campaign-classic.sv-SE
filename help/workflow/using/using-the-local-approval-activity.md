@@ -4,7 +4,7 @@ title: Använda den lokala godkännandeaktiviteten
 description: Lär dig hur du använder den lokala godkännandeaktiviteten
 feature: Workflows
 exl-id: cc29eec9-9c97-4d1b-9567-2581154d7b3f
-source-git-commit: b94c4bfd478b4a8fbcefe6341608dd6a14bb31d3
+source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
 workflow-type: tm+mt
 source-wordcount: '1272'
 ht-degree: 2%
@@ -13,7 +13,7 @@ ht-degree: 2%
 
 # Använda den lokala godkännandeaktiviteten{#using-the-local-approval-activity}
 
-![](../../assets/common.svg)
+![](../../assets/v7-only.svg)
 
 The **[!UICONTROL Local approval]** Med en integrerad aktivitet i ett arbetsflöde för målanpassning kan du skapa en process för godkännande av mottagare innan leveransen skickas.
 

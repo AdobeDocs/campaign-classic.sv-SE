@@ -3,7 +3,7 @@ product: campaign
 title: Tekniskt arbetsflöde för inkorgsåtergivning
 description: I det här avsnittet beskrivs det tekniska arbetsflödet som installeras med Inkorgsåtergivningspaketet
 feature: Workflows, Inbox Rendering
-source-git-commit: 378788764e244dcad12018d6d703048707d4c3e6
+source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
 workflow-type: tm+mt
 source-wordcount: '75'
 ht-degree: 2%
@@ -13,7 +13,7 @@ ht-degree: 2%
 
 # Inkorgsåtergivning (IR){#inbox-rendering}
 
-![](../../assets/common.svg)
+![](../../assets/v7-only.svg)
 
 Arbetsflödet som beskrivs nedan installeras med **Inkorgsåtergivning (IR)** som standard. Mer information om inkorgsåtergivning finns i [section](../../delivery/using/inbox-rendering.md).
 

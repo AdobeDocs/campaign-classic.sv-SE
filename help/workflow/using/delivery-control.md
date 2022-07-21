@@ -4,7 +4,7 @@ title: Leveranskontroll
 description: Läs mer om arbetsflödesaktiviteten Leveranskontroll
 feature: Workflows
 exl-id: c7cface2-0837-4e6a-91dc-b8353010a7a4
-source-git-commit: b94c4bfd478b4a8fbcefe6341608dd6a14bb31d3
+source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
 workflow-type: tm+mt
 source-wordcount: '164'
 ht-degree: 2%
@@ -13,7 +13,7 @@ ht-degree: 2%
 
 # Leveranskontroll{#delivery-control}
 
-![](../../assets/common.svg)
+![](../../assets/v7-only.svg)
 
 A **Leveranskontroll**-type kan du starta, pausa eller stoppa en leverans.
 

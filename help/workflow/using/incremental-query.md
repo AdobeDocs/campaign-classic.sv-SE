@@ -4,7 +4,7 @@ title: Inkrementell fråga
 description: Läs mer om arbetsflödesaktiviteten Inkrementell fråga
 feature: Workflows, Targeting Activity
 exl-id: abc08232-1a92-41e8-90f1-02e0a673539b
-source-git-commit: b94c4bfd478b4a8fbcefe6341608dd6a14bb31d3
+source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
 workflow-type: tm+mt
 source-wordcount: '355'
 ht-degree: 3%
@@ -13,7 +13,7 @@ ht-degree: 3%
 
 # Inkrementell fråga{#incremental-query}
 
-![](../../assets/common.svg)
+![](../../assets/v7-only.svg)
 
 Med en stegvis fråga kan du regelbundet välja ett mål baserat på ett villkor, samtidigt som du utesluter de personer som redan är målinriktade för det här kriteriet.
 

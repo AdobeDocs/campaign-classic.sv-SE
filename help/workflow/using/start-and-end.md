@@ -4,7 +4,7 @@ title: Start och slut
 description: Läs mer om Start- och slutarbetsflödesaktiviteter
 feature: Workflows
 exl-id: 56dfbaf3-93de-4ade-b4ad-9b54d239c7a5
-source-git-commit: b94c4bfd478b4a8fbcefe6341608dd6a14bb31d3
+source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
 workflow-type: tm+mt
 source-wordcount: '133'
 ht-degree: 4%
@@ -13,7 +13,7 @@ ht-degree: 4%
 
 # Start och slut{#start-and-end}
 
-![](../../assets/common.svg)
+![](../../assets/v7-only.svg)
 
 The **[!UICONTROL Start]** och **[!UICONTROL End]** Med -aktiviteter kan du markera början och slutet av ett arbetsflöde grafiskt. Dessa aktiviteter har ingen funktionell inverkan och är därför valfria.
 

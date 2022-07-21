@@ -4,7 +4,7 @@ title: Campaign
 description: Campaign
 feature: Workflows
 topic-tags: technical-workflows
-source-git-commit: b94c4bfd478b4a8fbcefe6341608dd6a14bb31d3
+source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
 workflow-type: tm+mt
 source-wordcount: '164'
 ht-degree: 3%
@@ -14,7 +14,7 @@ ht-degree: 3%
 
 # Campaign{#campaign}
 
-![](../../assets/common.svg)
+![](../../assets/v7-only.svg)
 
 Arbetsflödena nedan installeras tillsammans med **Campaign** som standard. Mer information om den här modulen finns i [section](../../campaign/using/designing-marketing-campaigns.md).
 

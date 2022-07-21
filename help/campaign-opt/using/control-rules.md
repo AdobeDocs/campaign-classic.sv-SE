@@ -4,7 +4,7 @@ title: Kontrollregler
 description: Kontrollregler
 feature: Typology Rules
 exl-id: 5a5f26f6-38da-4488-aadb-81fcb5359331
-source-git-commit: 36e546a34d8c2345fefed5d459095a76c6224a38
+source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
 workflow-type: tm+mt
 source-wordcount: '353'
 ht-degree: 1%
@@ -13,7 +13,7 @@ ht-degree: 1%
 
 # Kontrollregler{#control-rules}
 
-![](../../assets/common.svg)
+![](../../assets/v7-only.svg)
 
 ## Kontrollregler för analys och skiljeförfarande {#analysis-and-arbitration-control-rules}
 

@@ -4,16 +4,16 @@ title: Mallar för marknadsföringskampanjer
 description: Mallar för marknadsföringskampanjer
 feature: Campaigns, Templates
 exl-id: d272d4b9-f1b2-4fb2-9ed9-91a4aea7eca3
-source-git-commit: d3f5c56078ddac7597925191fd347bdcab61714d
+source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '1128'
 ht-degree: 0%
 
 ---
 
 # Skapa och konfigurera kampanjmallar {#campaign-templates}
 
-![](../../assets/common.svg)
+![](../../assets/v7-only.svg)
 
 Alla marknadsföringskampanjer bygger på en mall som lagrar de viktigaste egenskaperna och funktionerna. Kampanjmallar är centraliserade i **[!UICONTROL Resources > Templates > Campaign templates]** nod. En standardmall anges som standard. Du kan skapa en ny kampanj med hjälp av alla tillgängliga moduler (dokument, uppgifter, dirigerade adresser osv.), men vilka moduler som erbjuds beror på dina rättigheter och konfigurationen av din Adobe Campaign-plattform.
 

@@ -4,7 +4,7 @@ title: Skapa en sammanfattningslista
 description: Skapa en sammanfattningslista
 feature: Workflows, Data Management
 exl-id: 39cec42a-c7ac-41b1-8f61-799b559ce002
-source-git-commit: b94c4bfd478b4a8fbcefe6341608dd6a14bb31d3
+source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
 workflow-type: tm+mt
 source-wordcount: '974'
 ht-degree: 2%
@@ -13,7 +13,7 @@ ht-degree: 2%
 
 # Skapa en sammanfattningslista{#creating-a-summary-list}
 
-![](../../assets/common.svg)
+![](../../assets/v7-only.svg)
 
 I det här exemplet beskrivs hur du skapar ett arbetsflöde som du kan skapa en sammanfattningslista genom att samla in filer och följa flera förbättringar. Exemplet är baserat på en lista med kontakter som har köpt i en butik.
 
@@ -61,7 +61,7 @@ Dessa data finns i textfilen&quot;Purchases.txt&quot;.
 
    Mer information om den här aktiviteten finns i [Läsa in data från en fil](../../platform/using/import-export-workflows.md#loading-data-from-a-file).
 
-1. Konfigurera **Filinsamlare** aktivitet för att samla in textfiler (*.txt) från den valda katalogen.
+1. Konfigurera **Filinsamlare** aktivitet för att samla in text (&#42;.txt)-typfiler från den valda katalogen.
 
    ![](assets/uc2_enrich_collecteur.png)
 
