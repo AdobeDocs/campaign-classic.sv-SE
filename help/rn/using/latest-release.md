@@ -6,10 +6,10 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: d65869ca-a785-4327-8e8d-791c28e4696c
-source-git-commit: 8d6f5a3596c2c919e597e0b6ce3d711276c8df12
+source-git-commit: 0d0c97213cf8b95bbadd06f4c5666213b6c6c8f1
 workflow-type: tm+mt
-source-wordcount: '1965'
-ht-degree: 98%
+source-wordcount: '1987'
+ht-degree: 97%
 
 ---
 
@@ -84,6 +84,7 @@ Se [kompatibilitetsmatrisen för Campaign](../../rn/using/compatibility-matrix.m
 * Ett problem som kunde leda till krascher på grund av tillfälliga kärndumpar (NEO-30549) har åtgärdats
 * Ett problem som kunde leda till krascher när felaktig HTML-kod används i en leverans har åtgärdats. (NEO-40385)
 * Ett problem som kunde förhindra icke-administratörer från att få åtkomst till fliken **Analys** i leveransegenskaperna har åtgärdats. (NEO-34025)
+* Korrigerade ett problem som kunde förhindra att en bild laddas upp i segmentläge från en extern server under meddelandeförberedelsen. (NEO-40307)
 
 ## ![](assets/do-not-localize/green_2.png) Version 7.2.2 – build 9349 {#release-7-2-2}
 
