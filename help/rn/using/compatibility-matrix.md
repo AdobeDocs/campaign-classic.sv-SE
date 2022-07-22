@@ -7,9 +7,9 @@ role: User
 level: Beginner
 exl-id: b8c1f287-06f4-4c34-8cca-b0c7676abbc2
 source-git-commit: 7f24c8be599d6dece41de848d64feb8079b10ff3
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '768'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -364,26 +364,26 @@ Följande operativsystem och webbläsare **krävs** för att använda [klientkon
 </tbody>
 </table>
 
-### Microsoft WebView2 runtime
+### Microsoft WebView2-körtid
 
 <table>
 <tbody>
 <tr>
 <td>
-<p>Microsoft Edge WebView2, runtime
+<p>Microsoft Edge WebView2-körtid
 </p>
 </td>
 <td>
 <p>Senaste versionen</p>
 </td>
 <td>
-<p><a href="http://www.adobe.com/go/acc-ms-webview2-runtime-download">Ladda ned från Microsoft Developer website</a></p>
+<p><a href="http://www.adobe.com/go/acc-ms-webview2-runtime-download">Hämta från webbplatsen för Microsoft Developer</a></p>
 </td>
 </tr>
 </tbody>
 </table>
 
-## Mobilt SDK{#MobileSDK}
+## Mobil-SDK{#MobileSDK}
 
 Du kan använda Campaign för att [skicka push-meddelanden](../../delivery/using/about-mobile-app-channel.md) på de operativsystem som listas nedan med hjälp av den associerade [mobil-SDK:en](../../delivery/using/integrating-campaign-sdk-into-the-mobile-application.md).
 
