@@ -6,9 +6,9 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: b8c1f287-06f4-4c34-8cca-b0c7676abbc2
-source-git-commit: 7f24c8be599d6dece41de848d64feb8079b10ff3
-workflow-type: ht
-source-wordcount: '768'
+source-git-commit: fad7770e26bf06d13f7e2bcf136cc5386a394f50
+workflow-type: tm+mt
+source-wordcount: '763'
 ht-degree: 100%
 
 ---
@@ -344,21 +344,6 @@ Följande operativsystem och webbläsare **krävs** för att använda [klientkon
 <p>11 (från och med Campaign v7.3)</p>
 <p>10 (rekommenderas för japanska instanser)</p>
 <p>8</p>
-</td>
-</tr>
-</tbody>
-</table>
-
-### Webbläsare
-
-<table>
-<tbody>
-<tr>
-<td>
-<p>Microsoft Internet Explorer</p>
-</td>
-<td>
-<p>11</p>
 </td>
 </tr>
 </tbody>
