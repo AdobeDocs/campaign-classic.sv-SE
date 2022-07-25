@@ -3,9 +3,9 @@ product: campaign
 title: Uppdatera till den nya leveransservern
 description: Lär dig hur du uppdaterar till den nya servern för kampanjleverans
 exl-id: bc62ddb9-beff-4861-91ab-dcd0fa1ed199
-source-git-commit: a45e18e460c11f474dc1b5663b9f4a3277fac12c
+source-git-commit: 8b8935b181b615c0a243799b14d01f778b84b715
 workflow-type: tm+mt
-source-wordcount: '1122'
+source-wordcount: '1144'
 ht-degree: 2%
 
 ---
@@ -58,13 +58,13 @@ Kontrollera instanskonfigurationen innan du startar implementeringen.
 
    Det här alternativet måste fyllas i för alla Campaign-instanser (MKT, MID, RT, EXEC) med rätt värde. Som hybridkund kan du kontakta Adobe om du vill att alternativet ska vara inställt på MID-, RT- och EXEC-instanserna.
 
+>[!CAUTION]
+>
+>Om en brandvägg implementeras på din sida måste du som lokal kund lägga till den här URL:en `https://deliverability-service.adobe.io` till tillåtelselista. [Läs mer](../../installation/using/url-permissions.md).
+
 ### Steg 1: Skapa/uppdatera ditt Adobe Developer-projekt {#adobe-io-project}
 
-1. Åtkomst [Adobe Developer Console](https://developer.adobe.com/console/home) och logga in med utvecklaråtkomst i din organisation.
-
-   >[!NOTE]
-   >
-   > Se till att du är inloggad på rätt organisationsportal.
+1. Åtkomst [Adobe Developer Console](https://developer.adobe.com/console/home) och logga in med utvecklaråtkomst i din organisation. Se till att du är inloggad på rätt organisationsportal.
 
 1. Välj **[!UICONTROL Create new project]**.
    ![](assets/New-Project.png)
