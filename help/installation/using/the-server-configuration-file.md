@@ -6,10 +6,10 @@ audience: installation
 content-type: reference
 topic-tags: appendices
 exl-id: 70cd6a4b-c839-4bd9-b9a7-5a12e59c0cbf
-source-git-commit: 02eebe83de49ee97e573b0c47ca1fddb2195b991
+source-git-commit: acbb2144906841a6da59314b84b3faf5863cf9d6
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '7957'
+ht-degree: 5%
 
 ---
 
@@ -1046,8 +1046,6 @@ Här är standardkonfigurationen:
 <url dnsSuffix="api.twitter.com"                         urlRegEx="https://api.twitter.com/1.1.*"              />
 <url dnsSuffix="adobeid-na1.services.adobe.com"          urlRegEx="https://.*"                                    />
 <url dnsSuffix="adobeid-na1-stg1.services.adobe.com"     urlRegEx="https://.*"                                    />
-<url dnsSuffix="deliverability.neolane.net"              urlRegEx="https://deliverability.neolane.net/jssp/dm/renderingSeed.jssp" />
-<url dnsSuffix="deliverability.neolane.net"              urlRegEx="https://deliverability.neolane.net/nl/jsp/soaprouter.jsp" />
 <url dnsSuffix="localhost"                               urlRegEx="http://localhost:8080/nms/jsp/.*"              />
 <url dnsSuffix="localhost"                               urlRegEx="http://localhost:8080/nl/jsp/.*"               />
 <url dnsSuffix="localhost"                               urlRegEx="http://localhost:8080/xtk/jsp/.*"              />
