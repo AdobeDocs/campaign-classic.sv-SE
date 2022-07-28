@@ -7,9 +7,9 @@ role: User
 level: Beginner
 exl-id: d65869ca-a785-4327-8e8d-791c28e4696c
 source-git-commit: 0d0c97213cf8b95bbadd06f4c5666213b6c6c8f1
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1987'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -63,10 +63,10 @@ Se [kompatibilitetsmatrisen för Campaign](../../rn/using/compatibility-matrix.m
 
 * Ett fel från den tidigare versionen som gjorde att användare inte kunde ändra storlek på inloggningssidan för IMS har åtgärdats. (NEO-30085)
 * Ett fel som uppstod när innehållshanterarpaketet installerades på en befintlig instans har åtgärdats. (NEO-32349)
-* Ett problem i menyn **Campaigns** där ett meddelande om &quot;pågående åtgärd&quot; visades kontinuerligt har åtgärdats. (NEO-44904)
-* Ett problem när Adobe Analytics är aktiverat som tog bort BID (Broadlog ID) och CID (Campaign ID) från URL:en när ett e-postmeddelande med en URL skickades utan att leveransen sparades har åtgärdats. (NEO-38678)
+* Ett problem i menyn **Kampanjer** där ett meddelande om ”pågående åtgärd” visades kontinuerligt har åtgärdats. (NEO-44904)
+* Ett problem som uppstod när Adobe Analytics är aktiverat och som tog bort BID (Broadlog ID) och CID (Campaign ID) från URL:en när ett e-postmeddelande med en URL skickades utan att leveransen sparades har åtgärdats. (NEO-38678)
 * Ett problem vid överföring av en bild till mappen Offentliga resurser i en instans med Message Center-specifik konfiguration har åtgärdats. Följande felmeddelande visades: ”Det gick inte att överföra bilderna till spårningsservrarna”. (NEO-38546, NEO-45572)
-* Ett problem som gjorde att systemet kraschade när konfigurationen skulle återskapas om konfigurationsfilerna var felaktiga har åtgärdats. (NEO-38752)
+* Ett problem som gjorde att systemet kraschade när konfigurationen skulle återskapas från felaktiga konfigurationsfiler har åtgärdats. (NEO-38752)
 * Ett problem som kunde leda till att leveransindikatorer inte uppdaterades korrekt har åtgärdats. (NEO-44827)
 * Ett problem som kunde leda till ett fel efter uppgraderingen när komplexa frågor användes har åtgärdats. (NEO-43648)
 * Ett problem som kunde förhindra att förhandsgranskning av webapps fungerade har åtgärdats. (NEO-43242)
@@ -84,7 +84,7 @@ Se [kompatibilitetsmatrisen för Campaign](../../rn/using/compatibility-matrix.m
 * Ett problem som kunde leda till krascher på grund av tillfälliga kärndumpar (NEO-30549) har åtgärdats
 * Ett problem som kunde leda till krascher när felaktig HTML-kod används i en leverans har åtgärdats. (NEO-40385)
 * Ett problem som kunde förhindra icke-administratörer från att få åtkomst till fliken **Analys** i leveransegenskaperna har åtgärdats. (NEO-34025)
-* Korrigerade ett problem som kunde förhindra att en bild laddas upp i segmentläge från en extern server under meddelandeförberedelsen. (NEO-40307)
+* Ett problem som kunde förhindra att en bild laddades upp i segmentläge från en extern server under meddelandeförberedelsen har åtgärdats. (NEO-40307)
 
 ## ![](assets/do-not-localize/green_2.png) Version 7.2.2 – build 9349 {#release-7-2-2}
 
