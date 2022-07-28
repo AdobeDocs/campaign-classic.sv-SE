@@ -1,15 +1,15 @@
 ---
 product: campaign
-title: Vanliga frågor och svar om Builduppgradering
+title: Vanliga frågor och svar om builduppgradering
 description: Vanliga frågor om uppgraderingar av Campaign-versioner
 audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: 85e2135d-a1a3-44f0-a4f9-de38db5c8726
-source-git-commit: 1d32161d60f6b382188012b104c642f504e28645
+source-git-commit: 56ff1f02e614a91200a8f2ca106dcc76e82f122d
 workflow-type: tm+mt
-source-wordcount: '2023'
-ht-degree: 3%
+source-wordcount: '2031'
+ht-degree: 2%
 
 ---
 
@@ -128,7 +128,7 @@ Nej. Under bygguppgraderingen stoppas både arbetsflödes- och e-posttjänster. 
 
 ## Fungerar mina spårningslänkar fortfarande under uppgraderingen?
 
-Det går att spåra länkar under uppgraderingen. Det går inte att skicka nya e-postmeddelanden under uppgraderingen, men spårningslänkar som ingår i redan skickade e-postmeddelanden kan användas.
+Spårning av länkar i e-postmeddelanden som redan har skickats kommer inte att fungera under uppgraderingen eftersom alla servrar har stoppats. De kommer att fungera igen när uppgraderingen är klar och servrarna har startats om.
 
 ## Måste jag vara tillgänglig under uppgraderingsprocessen?
 
@@ -195,7 +195,7 @@ allt innehåll visas och visas.
    * Verifiera skapandedatum och ändringsdatum med tidsstämpeln och tidszonen
    * Verifiera att körningen av schemaläggaren fungerar i ett arbetsflöde vid den angivna tiden
    * Hämta en lista över arbetsflöden som är i PAUSED- och FAILED-läge. Starta och övervaka dem
-   * Kör AB-testning för ett scenario
+   * Kör AB Testing i ett scenario
    * Testa push-meddelanden tillsammans med deras spårningsfunktioner för djupa länkar
    * Testa att skicka SMS
    * Om du har någon extern FDA ansluten, testar du om data skickas på båda sätten
