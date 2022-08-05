@@ -4,9 +4,9 @@ title: Tekniska arbetsflöden
 description: Läs mer om de tekniska arbetsflödena för Campaign Classic-paket.
 feature: Workflows
 exl-id: 9aed2665-cd4b-419c-b9f2-ea04fc1d8f01
-source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
+source-git-commit: 5bfd755ae8278a221e0f0e6f4121bfb072ebda12
 workflow-type: tm+mt
-source-wordcount: '1714'
+source-wordcount: '1705'
 ht-degree: 3%
 
 ---
@@ -76,6 +76,6 @@ Mer information om hur du övervakar tekniska arbetsflöden finns i [dedikerad s
 | **Synkronisera Facebook-sidor** (syncFacebook) | Sociala nätverk (social marknadsföring) - endast kampanj v7 | Det här arbetsflödet synkroniserar Facebook-sidor med Adobe Campaign varje dag kl. 7.00. |
 | **Synkronisera Twitter-sidor** (syncTwitter) | Sociala nätverk (social marknadsföring) - endast kampanj v7 | Det här arbetsflödet importerar Twitter följare till Adobe Campaign varje dag kl. 7.00. |
 | **Aktivitetsmeddelande** (taskMgt) | Marknadsföringsresurser (MRM) - endast kampanj v7 | Med det här arbetsflödet kan du skicka meddelanden om aktiviteter i marknadsföringskampanjer. |
-| **Spårning** (spårning | Leverans | Det här arbetsflödet utför återställning och konsolidering av spårningsinformation. Dessutom säkerställs omberäkningen av spårnings- och leveransstatistik, särskilt sådan som används i arbetsflöden för meddelandecentrets arkivering. Som standard aktiveras den en gång per timme. |
+| **Spårning** (spårning) | Leverans | Det här arbetsflödet utför återställning och konsolidering av spårningsinformation. Dessutom säkerställs omberäkningen av spårnings- och leveransstatistik, särskilt sådan som används i arbetsflöden för meddelandecentrets arkivering. Som standard aktiveras den en gång per timme. |
 | **Uppdatera händelsestatus** (updateEventsStatus) | Körning av transaktionsmeddelande (Message Center - Execution) | Med det här arbetsflödet kan du tilldela en status till en händelse. Händelsestatus är följande:<ul><li>Väntande: händelsen finns i en kö. Ingen meddelandemall har ännu kopplats till den.</li><li>Väntande leverans: Om händelsen finns i en kö har en meddelandemall kopplats till den och bearbetas av leveransen.</li><li>Skickat: den här statusen kopieras från leveransloggarna. Det betyder att leveransen har skickats.</li><li>Ignoreras av leveransen: den här statusen kopieras från leveransloggarna. Det betyder att leveransen har ignorerats.</li><li>Leveransfel: den här statusen kopieras från leveransloggarna. Det innebär att leveransen har misslyckats.</li><li>Händelsen omfattas inte: händelsen inte har kopplats till en meddelandemall. Händelsen kommer inte att bearbetas på nytt.</li></ul> |
-| **Uppdatera för leverans** (deliverabilityUpdate) | Leverans | När paketet för leveransövervakning (E-postleverans) har installerats körs det här arbetsflödet nattetid och hanterar kvalificeringsreglerna för studsmeddelanden samt listan över domäner och MX. Detta kräver att HTTPS-porten är öppen på plattformen. |
+| **Uppdatera för leverans** (deliverabilityUpdate) | Leverans | Det här arbetsflödet körs på natten och hanterar kvalificeringsreglerna för studsmeddelanden samt listan över domäner och MX:er. Detta kräver att HTTPS-porten är öppen på plattformen. |
