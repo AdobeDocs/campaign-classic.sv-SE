@@ -3,10 +3,10 @@ product: campaign
 title: Uppdatera till den nya leveransservern
 description: Lär dig hur du uppdaterar till den nya servern för kampanjleverans
 exl-id: bc62ddb9-beff-4861-91ab-dcd0fa1ed199
-source-git-commit: ca9df95442355a0cd18c7c9ef048c2d77e84188e
+source-git-commit: 38f5cb9fdeb9deceab812c6ebc158e2ab37e3155
 workflow-type: tm+mt
-source-wordcount: '1144'
-ht-degree: 2%
+source-wordcount: '1235'
+ht-degree: 3%
 
 ---
 
@@ -51,16 +51,26 @@ Kontrollera instanskonfigurationen innan du startar implementeringen.
 
 1. Öppna Campaign-klientkonsolen och logga in på Adobe Campaign som administratör.
 1. Bläddra till **Administration > Plattform > Alternativ**.
-1. Kontrollera `DmRendering_cuid` alternativvärdet är ifyllt.
+1. Kontrollera att `DmRendering_cuid` alternativvärdet är ifyllt.
 
    * Om alternativet är ifyllt kan du starta implementeringen.
    * Om inget värde är ifyllt kontaktar du [Adobe kundtjänst](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html){_blank} för att hämta ditt CUID.
 
    Det här alternativet måste fyllas i för alla Campaign-instanser (MKT, MID, RT, EXEC) med rätt värde. Som hybridkund kan du kontakta Adobe om du vill att alternativet ska vara inställt på MID-, RT- och EXEC-instanserna.
 
+Som lokal kund måste ni också kontrollera att en kampanj **[!UICONTROL Product profile]** finns för din organisation. Gör så här:
+
+1. Som administratör ansluter du till [Adobe Admin Console](https://adminconsole.adobe.com/){_blank}.
+1. Öppna **Produkter och tjänster** sektion och kontroll **Adobe Campaign** visas.
+Om du inte ser **Adobe Campaign** kontakta [Adobe kundtjänst](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html){_blank} för att lägga till den.
+1. Klicka **Adobe Campaign** och väljer organisation.
+1. Kontrollera att **[!UICONTROL Product profile]** finns. Skapa det om inte. Ingen behörighet krävs för detta **[!UICONTROL Product profile]**.
+
+
 >[!CAUTION]
 >
 >Om en brandvägg implementeras på din sida måste du som lokal kund lägga till den här URL:en `https://deliverability-service.adobe.io` till tillåtelselista. [Läs mer](../../installation/using/url-permissions.md).
+
 
 ### Steg 1: Skapa/uppdatera ditt Adobe Developer-projekt {#adobe-io-project}
 
@@ -123,7 +133,7 @@ För att göra detta:
 1. Kopiera innehållet från filen `private.key.base64`.
 1. Logga in via SSH i varje behållare där Adobe Campaign-instansen är installerad och lägg till projektinloggningsuppgifterna i Adobe Campaign genom att köra följande kommando som `neolane` användare. Detta infogar **[!UICONTROL Technical Account]** autentiseringsuppgifter i instanskonfigurationsfilen.
 
-   ```
+   ```sql
    nlserver config -instance:<instance name> -setimsjwtauth:Organization_Id/Client_Id/Technical_Account_ID/<Client_Secret>/<Base64_encoded_Private_Key>
    ```
 
@@ -139,7 +149,7 @@ Nu kan du aktivera den nya leveransservern. Så här gör du:
 
 ### Steg 4: Validera konfigurationen
 
-Följ stegen nedan för att kontrollera om integreringen är slutförd:
+Följ stegen nedan för att kontrollera att integreringen lyckas:
 
 
 1. Öppna klientkonsolen och logga in på Adobe Campaign.
