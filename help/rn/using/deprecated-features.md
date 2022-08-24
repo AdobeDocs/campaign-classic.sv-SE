@@ -6,10 +6,10 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: d60d67de-6618-4f3b-be4a-ad7633ab5645
-source-git-commit: 1bb1365ce5a4eb89447c5d736a42cd470c7f3bba
+source-git-commit: 45c5ef3315e4208184e9c0ab5f20678646fe2d0b
 workflow-type: tm+mt
-source-wordcount: '1730'
-ht-degree: 100%
+source-wordcount: '1624'
+ht-degree: 92%
 
 ---
 
@@ -43,36 +43,10 @@ Kunder uppmanas att se över om de använder funktionen i den aktuella driftsät
    <td><strong>Funktion</strong></td>
    <td><strong>Ersättning</strong></td>
   </tr>
-  <tr>
-  <td>CentOS 8.x (64 bitars)<br></td>
-   <td><p>CentOS Linux 8 når slutet av sin livscykel (EOL) den 31 december 2021. <a href="https://www.centos.org/centos-linux-eol/">Läs mer</a></p>
-   <p>Om du använder det här operativsystemet måste du följaktligen anpassa implementeringen. CentOS 7.x (64 bitars) och RHEL 8.x/7.x (64 bitars) stöds fortfarande.</p>
-  <p><em>Måldatum för borttagning: 31 december 2021.</em></p>
-  </td>
- </tr>
-    <tr>
-  <td>Adobe Analytics Data Connector<br></td>
-   <td><p>Från och med Campaign 21.1.3 är Adobe Analytics Data Connector inaktuell.</p>
-   <p>Om du använder den här kopplingen måste du anpassa implementeringen efter den. <a href="../../platform/using/adobe-analytics-connector.md">Läs mer</a></p>
-  <p><em>Måldatum för borttagning: 17 augusti 2022</em></p>
-  </td>
- </tr>
-    <tr>
-  <td>Övervakningsrapport om teknisk levererbarhet<br></td>
-   <td><p>Övervakningsrapporten om teknisk levererbarhet är föråldrad från och med Campaign version 21.1.</p>
-   <p>Om det behövs kan du få den här rapporten via e-post varje dag fram tills funktionen tas bort. Du begär den genom att öppna ett specifikt <a href="https://helpx.adobe.com/se/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html">supportärende</a> och ange namnet på instansen och e-postadressen eller e-postadresserna som rapporten ska skickas till.</p> 
-   <p>Adobe rekommenderar att du samarbetar med levererbarhetsteamet för att definiera de bästa verktygen för att övervaka instansens levererbarhetsförmåga.</p>
-  <p><em>Måldatum för borttagning: tidigt 2022</em></p>
-  </td>
- </tr>
-  <tr>
-  <td>OAuth-autentisering (OAuth och JWT)<br></td>
-  <td><p> Från och med Campaign version 20.3 har autentisering av utlösarintegreringen, som ursprungligen baserades på oAUTH-autentiseringsinställningar för åtkomst till pipelines, nu ändrats och flyttats till Adobe I/O. <p>
-  <p>Om du använder den här utlösarintegreringen måste du anpassa implementeringen i enlighet med detta. <a href="../../integrations/using/configuring-adobe-io.md">Läs mer</a></p> 
-  <p>Mer information om inaktuell OAauth-autentisering finns på den här <a href="https://github.com/AdobeDocs/analytics-1.4-apis/blob/master/docs/APIEOL.md">sidan</a></p> 
-  <p><em>Måldatum för borttagning: 20 oktober 2021. Värdmiljöer drar nytta av en förlängning till den 25 maj 2022. </em></p>
-  </td>
-  </tr>
+<tr>
+ <td>N/A</td>
+ <td>Ej tillämpligt</td>
+</tr>
  </tbody> 
 </table>
 
@@ -83,9 +57,29 @@ I det här avsnittet visas funktioner som har tagits bort från Campaign Classic
 <table> 
  <tbody>
   <tr> 
-   <td><strong>Område – funktion</strong></td>
-   <td><strong>Ersättning</strong></td>
+   <td><strong>Funktion</strong></td>
+   <td><strong>Detaljer</strong></td>
   <tr>  
+      <tr>
+  <td>Adobe Analytics Data Connector<br></td>
+   <td><p>Adobe Analytics Data Connector togs bort den 17 augusti 2022. Den hade tagits bort i Campaign 21.1.3-versionen.</p>
+   <p>Om du använder den här kopplingen måste du anpassa implementeringen efter den. <a href="../../platform/using/adobe-analytics-connector.md">Läs mer</a></p>
+  </td>
+ </tr>
+    <tr>
+  <td>Övervakningsrapport om teknisk levererbarhet<br></td>
+   <td><p>Övervakningsrapporten för teknisk leverans är inte längre tillgänglig. Den hade tagits bort i Campaign 21.1.3-versionen.</p>
+   <!--p>If needed, you can receive this report daily by email until the feature removal date. To request it, open a specific <a href="https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html">Support Case</a> and specify the name of the instance and the email address(es) to send the report to.</p--> 
+  </td>
+ </tr>
+  <tr>
+  <td>OAuth-autentisering (OAuth och JWT)<br></td>
+  <td><p> Integreringsautentisering med utlösare som ursprungligen baserades på AUTH-autentiseringsinställningar för åtkomst till pipeline har nu ändrats och flyttats till Adobe I/O. Autentiseringsläget har tagits bort i Campaign 20.3.<p>
+  <p>Om du använder integreringen av utlösare kan du lära dig hur du anpassar implementeringen <a href="../../integrations/using/configuring-adobe-io.md">på den här sidan</a>.</p> 
+  <p>Mer information om inaktuell OAauth-autentisering finns på den här <a href="https://github.com/AdobeDocs/analytics-1.4-apis/blob/master/docs/APIEOL.md">sidan</a></p> 
+  <!--p><em>Target removal date: October 20, 2021. Hosted environments benefit from an extension until May 25, 2022. </em></p-->
+  </td>
+  </tr>
    <td>Rapportering<br></td>
    <td><p>Efter Adobe Flash Player EOL är mätarrapporten och diagramåtergivningsmotorn inte längre tillgängliga. <a href="../../reporting/using/creating-a-new-report.md">Läs mer</a></p>
   </tr>
@@ -142,13 +136,9 @@ I det här avsnittet visas funktioner som har tagits bort från Campaign Classic
  </tbody> 
 </table>
 
-## Inaktuell kompatibilitet {#deprecated-compatibility}
+<!--## Deprecated compatibility {#deprecated-compatibility}
 
-Följande system är inaktuella i Campaign Classic. Se [kompatibilitetsmatrisen](../../rn/using/compatibility-matrix.md) för att uppgradera till en nyare version eller gå över till ett nytt system innan kompatibiliteten upphör.
-
-### Adobe Campaign version 20.2  {#compat-20-2-release}
-
-Från och med version 20.2 har äldre SMS-kopplingar blivit inaktuella. Se [avsnittet Inaktuella funktioner](#deprecated-features)
+The following systems are deprecated for Campaign Classic. Please refer to the [Compatibility matrix](../../rn/using/compatibility-matrix.md) to upgrade to a newer version or move to a new system before the compatibility ends.-->
 
 ## Kompatibilitet upphör {#end-of-compatibility}
 
@@ -168,15 +158,20 @@ Klientkonsolen i Adobe Campaign Classic kan inte längre köras på följande sy
 
 ### Operativsystem {#o-s-eol}
 
-Från och med version 21.1.3 är stödet för Debian 8 föråldrat.
 
-Från och med version 19.1 är Adobe Campaign inte längre kompatibelt med följande operativsystem.
+* Från och med version 22.1 är Adobe Campaign inte längre kompatibelt med CentOs 8.x (64 bitar). CentOS Linux 8 nådde slutet av livscykeln (EOL) den 31 december 2021. [Läs mer](https://www.centos.org/centos-linux-eol/).
 
-* CentOS 6. [Läs mer](https://wiki.centos.org/Download)
-* Debian 7. [Läs mer](https://wiki.debian.org/DebianReleases)
-* RHEL 6.x [Läs mer](https://access.redhat.com/support/policy/updates/errata)
-* Windows Server 2008. [Läs mer](https://support.microsoft.com/en-us/lifecycle/search/1163)
-* SLES 11. [Läs mer](https://www.suse.com/lifecycle)
+   Om du använder det här operativsystemet ska du anpassa implementeringen därefter. CentOS 7.x (64 bitars) och RHEL 8.x/7.x (64 bitars) stöds fortfarande.
+
+* Från och med version 21.1.3 är Adobe Campaign inte längre kompatibelt med Debian 8.
+
+* Från och med version 19.1 är Adobe Campaign inte längre kompatibelt med följande operativsystem.
+
+   * CentOS 6. [Läs mer](https://wiki.centos.org/Download)
+   * Debian 7. [Läs mer](https://wiki.debian.org/DebianReleases)
+   * RHEL 6.x [Läs mer](https://access.redhat.com/support/policy/updates/errata)
+   * Windows Server 2008. [Läs mer](https://support.microsoft.com/en-us/lifecycle/search/1163)
+   * SLES 11. [Läs mer](https://www.suse.com/lifecycle)
 
 ### Webbservrar {#web-server-eol}
 
@@ -239,7 +234,7 @@ PostgreSQL-versioner upp till 9.6 har nått slutet av livscykeln. De stöds där
 
 ### SMS-kopplingar {#sms-eol}
 
-Adobe Campaign är inte kompatibelt med följande SMS-servrar:
+Från och med version 20.2 har äldre SMS-kopplingar blivit inaktuella. Adobe Campaign är inte kompatibelt med:
 
 * Generisk SMPP (SMPP version 3.4 med stöd för binärt läge)
 * Sybase365 (SAP SMS 365)
