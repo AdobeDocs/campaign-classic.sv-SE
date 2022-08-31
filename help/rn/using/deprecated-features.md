@@ -7,9 +7,9 @@ role: User
 level: Beginner
 exl-id: d60d67de-6618-4f3b-be4a-ad7633ab5645
 source-git-commit: 45c5ef3315e4208184e9c0ab5f20678646fe2d0b
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1624'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -45,7 +45,7 @@ Kunder uppmanas att se över om de använder funktionen i den aktuella driftsät
   </tr>
 <tr>
  <td>N/A</td>
- <td>Ej tillämpligt</td>
+ <td>N/A</td>
 </tr>
  </tbody> 
 </table>
@@ -58,7 +58,7 @@ I det här avsnittet visas funktioner som har tagits bort från Campaign Classic
  <tbody>
   <tr> 
    <td><strong>Funktion</strong></td>
-   <td><strong>Detaljer</strong></td>
+   <td><strong>Information</strong></td>
   <tr>  
       <tr>
   <td>Adobe Analytics Data Connector<br></td>
@@ -68,14 +68,14 @@ I det här avsnittet visas funktioner som har tagits bort från Campaign Classic
  </tr>
     <tr>
   <td>Övervakningsrapport om teknisk levererbarhet<br></td>
-   <td><p>Övervakningsrapporten för teknisk leverans är inte längre tillgänglig. Den hade tagits bort i Campaign 21.1.3-versionen.</p>
+   <td><p>Övervakningsrapporten för teknisk levererbarhet är inte längre tillgänglig. Den hade tagits bort i Campaign 21.1.3-versionen.</p>
    <!--p>If needed, you can receive this report daily by email until the feature removal date. To request it, open a specific <a href="https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html">Support Case</a> and specify the name of the instance and the email address(es) to send the report to.</p--> 
   </td>
  </tr>
   <tr>
   <td>OAuth-autentisering (OAuth och JWT)<br></td>
-  <td><p> Integreringsautentisering med utlösare som ursprungligen baserades på AUTH-autentiseringsinställningar för åtkomst till pipeline har nu ändrats och flyttats till Adobe I/O. Autentiseringsläget har tagits bort i Campaign 20.3.<p>
-  <p>Om du använder integreringen av utlösare kan du lära dig hur du anpassar implementeringen <a href="../../integrations/using/configuring-adobe-io.md">på den här sidan</a>.</p> 
+  <td><p> Integreringsautentisering med utlösare som ursprungligen baserades på oAUTH-autentiseringsinställningar för åtkomst till pipeline har nu ändrats och flyttats till Adobe I/O. Detta autentiseringsläge har nu fasats ut med versionen Campaign 20.3.<p>
+  <p>Om du använde integrering med utlösare kan du lära dig hur du anpassar implementeringen <a href="../../integrations/using/configuring-adobe-io.md">på den här sidan</a>.</p> 
   <p>Mer information om inaktuell OAauth-autentisering finns på den här <a href="https://github.com/AdobeDocs/analytics-1.4-apis/blob/master/docs/APIEOL.md">sidan</a></p> 
   <!--p><em>Target removal date: October 20, 2021. Hosted environments benefit from an extension until May 25, 2022. </em></p-->
   </td>
@@ -159,9 +159,9 @@ Klientkonsolen i Adobe Campaign Classic kan inte längre köras på följande sy
 ### Operativsystem {#o-s-eol}
 
 
-* Från och med version 22.1 är Adobe Campaign inte längre kompatibelt med CentOs 8.x (64 bitar). CentOS Linux 8 nådde slutet av livscykeln (EOL) den 31 december 2021. [Läs mer](https://www.centos.org/centos-linux-eol/).
+* Från och med version 22.1 är Adobe Campaign inte längre kompatibelt med CentOs 8.x (64 bitars). CentOS Linux 8 nådde slutet av sin livscykel (EOL) den 31 december 2021. [Läs mer](https://www.centos.org/centos-linux-eol/).
 
-   Om du använder det här operativsystemet ska du anpassa implementeringen därefter. CentOS 7.x (64 bitars) och RHEL 8.x/7.x (64 bitars) stöds fortfarande.
+   Om du använde det här operativsystemet ska du anpassa implementeringen därefter. CentOS 7.x (64 bitars) och RHEL 8.x/7.x (64 bitars) stöds fortfarande.
 
 * Från och med version 21.1.3 är Adobe Campaign inte längre kompatibelt med Debian 8.
 
@@ -234,7 +234,7 @@ PostgreSQL-versioner upp till 9.6 har nått slutet av livscykeln. De stöds där
 
 ### SMS-kopplingar {#sms-eol}
 
-Från och med version 20.2 har äldre SMS-kopplingar blivit inaktuella. Adobe Campaign är inte kompatibelt med:
+Från och med version 20.2 är äldre SMS-kopplingar inaktuella. Adobe Campaign är inte kompatibelt med:
 
 * Generisk SMPP (SMPP version 3.4 med stöd för binärt läge)
 * Sybase365 (SAP SMS 365)
