@@ -3,9 +3,9 @@ product: campaign
 title: Uppdatera till den nya leveransservern
 description: Lär dig hur du uppdaterar till den nya servern för kampanjleverans
 exl-id: bc62ddb9-beff-4861-91ab-dcd0fa1ed199
-source-git-commit: 38f5cb9fdeb9deceab812c6ebc158e2ab37e3155
+source-git-commit: 7385617d69c823850083a94b561d02c9152803e1
 workflow-type: tm+mt
-source-wordcount: '1235'
+source-wordcount: '1317'
 ht-degree: 3%
 
 ---
@@ -40,7 +40,6 @@ Som en **lokal/hybridkund** måste du uppgradera till [Campaign v7.2.2](../../rn
 
 Campaign måste kommunicera med Adobe Shared Services via en IMS-baserad autentisering, vilket ingår i den nya integreringen av leveransservern. Det bästa sättet är att använda den Adobe Developer-baserade gatewaytoken (kallas även Token för tekniskt konto eller Adobe IO JWT).
 
-
 >[!WARNING]
 >
 >Dessa åtgärder bör endast utföras för hybridimplementeringar och lokala implementeringar.
@@ -64,6 +63,11 @@ Som lokal kund måste ni också kontrollera att en kampanj **[!UICONTROL Product
 1. Öppna **Produkter och tjänster** sektion och kontroll **Adobe Campaign** visas.
 Om du inte ser **Adobe Campaign** kontakta [Adobe kundtjänst](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html){_blank} för att lägga till den.
 1. Klicka **Adobe Campaign** och väljer organisation.
+
+   >[!CAUTION]
+   >
+   >Om du har fler än en organisation måste du välja rätt. Läs mer om organisationer [på den här sidan](https://experienceleague.adobe.com/docs/control-panel/using/faq.html#ims-org-id){_blank}.
+
 1. Kontrollera att **[!UICONTROL Product profile]** finns. Skapa det om inte. Ingen behörighet krävs för detta **[!UICONTROL Product profile]**.
 
 
@@ -76,9 +80,12 @@ Om du inte ser **Adobe Campaign** kontakta [Adobe kundtjänst](https://helpx.ado
 
 1. Åtkomst [Adobe Developer Console](https://developer.adobe.com/console/home) och logga in med utvecklaråtkomst i din organisation. Se till att du är inloggad på rätt organisationsportal.
 
+   >[!CAUTION]
+   >
+   >Om du har fler än en organisation måste du välja rätt. Läs mer om organisationer [på den här sidan](https://experienceleague.adobe.com/docs/control-panel/using/faq.html#ims-org-id){_blank}.
+
 1. Välj **[!UICONTROL Create new project]**.
    ![](assets/New-Project.png)
-
 
    >[!CAUTION]
    >
@@ -151,12 +158,14 @@ Nu kan du aktivera den nya leveransservern. Så här gör du:
 
 Följ stegen nedan för att kontrollera att integreringen lyckas:
 
-
 1. Öppna klientkonsolen och logga in på Adobe Campaign.
 1. Bläddra till **Administration > Produktion > Tekniska arbetsflöden**.
 1. Starta om **Uppdatera för leverans** arbetsflöde (deliverabilityUpdate). Detta bör utföras på alla era Campaign-instanser (MKT, MID, RT, EXEC). Som hybrikund kan du kontakta Adobe för att få arbetsflödet startat om på MID-, RT- och EXEC-instanserna.
 1. Kontrollera loggar: arbetsflödet ska köras utan fel.
 
+>[!CAUTION]
+>
+>Efter uppdateringen **Uppdatera startnätverk för Inbox Rendering (updateRenderingSeeds)** arbetsflödet måste stoppas eftersom det inte längre gäller och kommer att misslyckas.
 
 ## Vanliga frågor och svar {#faq}
 
@@ -173,4 +182,3 @@ Alla Campaign-instanser som inte har uppgraderats senast den 31 augusti kommer i
 Om du inte uppgraderar din miljö kommer e-postinställningarna inte längre att synkroniseras (MX-hanteringsregler, regler för inkommande e-post, regler för domänhantering och studsregler). Detta kan påverka leveransmöjligheterna. Om dessa regler ändras avsevärt måste de tillämpas manuellt från och med nu.
 
 Endast för MKT-instanser [Global Suppression List](../../campaign-opt/using/filtering-rules.md#default-deliverability-exclusion-rules) påverkas.
-
