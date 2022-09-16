@@ -3,7 +3,7 @@ product: campaign
 title: Uppdatera till den nya leveransservern
 description: Lär dig hur du uppdaterar till den nya servern för kampanjleverans
 exl-id: bc62ddb9-beff-4861-91ab-dcd0fa1ed199
-source-git-commit: 9583763eb1d4403b32a1b77a9542f476c314d167
+source-git-commit: 50ef144950ca9e79b1b3acdf587ffc13e0beeec4
 workflow-type: tm+mt
 source-wordcount: '1319'
 ht-degree: 3%
@@ -62,7 +62,8 @@ Som lokal kund måste ni också kontrollera att en kampanj **[!UICONTROL Product
 1. Som administratör ansluter du till [Adobe Admin Console](https://adminconsole.adobe.com/){_blank}.
 1. Öppna **Produkter och tjänster** sektion och kontroll **Adobe Campaign** visas.
 Om du inte ser **Adobe Campaign** kontakta [Adobe kundtjänst](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html){_blank} för att lägga till den.
-1. Klicka **Adobe Campaign** och väljer organisation. **Varning**: Om du har fler än en organisation måste du välja rätt. Läs mer om organisationer [på den här sidan](https://experienceleague.adobe.com/docs/control-panel/using/faq.html#ims-org-id){_blank}.
+1. Klicka **Adobe Campaign** och väljer organisation.
+   **Varning**: Om du har fler än en organisation måste du välja rätt. Läs mer om organisationer [på den här sidan](https://experienceleague.adobe.com/docs/control-panel/using/faq.html#ims-org-id){_blank}.
 
 1. Kontrollera att **[!UICONTROL Product profile]** finns. Skapa det om inte. Ingen behörighet krävs för detta **[!UICONTROL Product profile]**.
 
