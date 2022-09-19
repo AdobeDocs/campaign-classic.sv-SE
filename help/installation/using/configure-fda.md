@@ -6,10 +6,10 @@ audience: platform
 content-type: reference
 topic-tags: connectors
 exl-id: 0b53b165-a6d8-4604-b3f0-3fa6fce35146
-source-git-commit: 26ae7ff1f0837a9a50057d97b00422a288b9dc7a
+source-git-commit: f580b9b2508c279e03bd2698854aaf3de501200b
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '342'
+ht-degree: 5%
 
 ---
 
@@ -42,29 +42,15 @@ Beroende på vilka externa databaser du vill kunna komma åt från Adobe Campaig
 
 Följ länkarna nedan om du vill veta mer:
 
-* Connect Campaign och [Vertica](../../installation/using/configure-fda-vertica.md)
-
-* Connect Campaign och [Google BigQuery](../../installation/using/configure-fda-google-big-query.md)
-
 * Connect Campaign och [azure synapse](../../installation/using/configure-fda-synapse.md)
-
-* Connect Campaign och [Snowflake](../../installation/using/configure-fda-snowflake.md)
-
+* Connect Campaign och [Google BigQuery](../../installation/using/configure-fda-google-big-query.md)
 * Connect Campaign och [Hadoop](../../installation/using/configure-fda-hadoop.md)
-
-* Connect Campaign och [Oracle](../../installation/using/configure-fda-oracle.md)
-
-* Connect Campaign och [Netezza](../../installation/using/configure-fda-netezza.md)
-
-* Connect Campaign och [sybase IQ](../../installation/using/configure-fda-sybase.md)
-
-* Connect Campaign och [Teradata](../../installation/using/configure-fda-teradata.md)
-
-* Connect Campaign och [SAP HANA](../../installation/using/configure-fda-sap-hana.md)
-
-* Connect Campaign och [PostgreSQL](../../installation/using/configure-fda-postgresql.md)
-
 * Connect Campaign och [Microsoft SQL Server](../../installation/using/configure-fda-sql.md)
-
+* Connect Campaign och [Netezza](../../installation/using/configure-fda-netezza.md)
+* Connect Campaign och [Oracle](../../installation/using/configure-fda-oracle.md)
+* Connect Campaign och [PostgreSQL](../../installation/using/configure-fda-postgresql.md)
 * Connect Campaign och [SAP HANA](../../installation/using/configure-fda-sap-hana.md)
-
+* Connect Campaign och [Snowflake](../../installation/using/configure-fda-snowflake.md)
+* Connect Campaign och [sybase IQ](../../installation/using/configure-fda-sybase.md)
+* Connect Campaign och [Teradata](../../installation/using/configure-fda-teradata.md)
+* Connect Campaign och [vertica analytics](../../installation/using/configure-fda-vertica.md)

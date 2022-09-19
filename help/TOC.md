@@ -6,10 +6,10 @@ title: Användarhandbok för Campaign Classic v7
 user-guide-description: Med Adobe Campaign kan du använda omfattande kunddata för att skapa, samordna och leverera dynamiska kampanjer som kunderna verkligen vill ha – via e-post, mobiler, offlinekanaler med mera.
 sub-product: adobe campaign classic
 type: Documentation
-source-git-commit: a45e18e460c11f474dc1b5663b9f4a3277fac12c
-workflow-type: ht
-source-wordcount: '2582'
-ht-degree: 100%
+source-git-commit: f580b9b2508c279e03bd2698854aaf3de501200b
+workflow-type: tm+mt
+source-wordcount: '2583'
+ht-degree: 99%
 
 ---
 
@@ -667,18 +667,18 @@ ht-degree: 100%
          + [Bästa praxis och begränsningar](installation/using/fda-best-practices.md)
          + Konfigurationsriktlinjer {#config-databases}
             + [Konfigurationssteg](installation/using/configure-fda.md)
-            + [Konfigurera Vertica](installation/using/configure-fda-vertica.md)
-            + [Konfigurera Snowflake](installation/using/configure-fda-snowflake.md)
-            + [Konfigurera Google BigQuery](installation/using/configure-fda-google-big-query.md)
             + [Konfigurera Azure Synapse](installation/using/configure-fda-synapse.md)
+            + [Konfigurera Google BigQuery](installation/using/configure-fda-google-big-query.md)
             + [Konfigurera Hadoop](installation/using/configure-fda-hadoop.md)
-            + [Konfigurera Oracle](installation/using/configure-fda-oracle.md)
+            + [Konfigurera Microsoft SQL Server](installation/using/configure-fda-sql.md)
             + [Konfigurera Netezza](installation/using/configure-fda-netezza.md)
+            + [Konfigurera Oracle](installation/using/configure-fda-oracle.md)
+            + [Konfigurera PostgreSQL](installation/using/configure-fda-postgresql.md)
+            + [Konfigurera SAP HANA](installation/using/configure-fda-sap-hana.md)
+            + [Konfigurera Snowflake](installation/using/configure-fda-snowflake.md)
             + [Konfigurera Sybase IQ](installation/using/configure-fda-sybase.md)
             + [Konfigurera Teradata](installation/using/configure-fda-teradata.md)
-            + [Konfigurera SAP HANA](installation/using/configure-fda-sap-hana.md)
-            + [Konfigurera Microsoft SQL Server](installation/using/configure-fda-sql.md)
-            + [Konfigurera PostgreSQL](installation/using/configure-fda-postgresql.md)
+            + [Konfigurera Vertica analytics](installation/using/configure-fda-vertica.md)
          + [Fjärråtkomsträttigheter](installation/using/remote-database-access-rights.md)
          + [Anslut till databasen](installation/using/connecting-to-database.md)
          + [Skapa dataschemat](installation/using/creating-data-schema.md)

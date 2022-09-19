@@ -6,10 +6,10 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: b8c1f287-06f4-4c34-8cca-b0c7676abbc2
-source-git-commit: fad7770e26bf06d13f7e2bcf136cc5386a394f50
-workflow-type: ht
+source-git-commit: ae235d39c4a78e0a2507f6baaebbdc9986dbf995
+workflow-type: tm+mt
 source-wordcount: '763'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -199,21 +199,15 @@ Miljöerna **Managed Services** (värd), **Hybrid** och **Lokal** kan ansluta Ca
 <td><strong>Databasversion</strong></td>
 <td><strong>Kampanjversion</strong></td>
 <tr>
-<tr>
-<td>Snowflake</td>
-<td> </td>
-<td>Minst 7.2.1</td>
+<td>Amazon Redshift</td>
+<td><p> </p>
+<td>Minst v7.0 19.1.4</td>
+</td>
 </tr>
 <tr>
 <td>Google BigQuery</td>
 <td> </td>
 <td>Minst 7.2.1</td>
-</tr>
-<tr>
-<td>Amazon Redshift</td>
-<td><p> </p>
-<td>Minst v7.0 19.1.4</td>
-</td>
 </tr>
 <tr>
 <td>PostgreSQL</td>
@@ -223,6 +217,16 @@ Miljöerna **Managed Services** (värd), **Hybrid** och **Lokal** kan ansluta Ca
 <p>11.x</p>
 <p>10.x</p>
 </td>
+<td>Minst v7.0 19.1.4</td>
+</tr>
+<tr>
+<td>Snowflake</td>
+<td> </td>
+<td>Minst 7.2.1</td>
+</tr>
+<tr>
+<td>vertica analytics</td>
+<td> </td>
 <td>Minst v7.0 19.1.4</td>
 </tr>
 </tbody>
@@ -236,14 +240,26 @@ Miljöerna **Hybrid** och **Lokal** kan dessutom ansluta Campaign till följande
 <td><strong>Databasversion</strong></td>
 <td><strong>Kampanjversion</strong></td>
 <tr>
-<td>Vertica</td>
-<td> </td>
-<td>Minst v7.0 19.1.4</td>
-</tr>
-<tr>
 <td>Microsoft Azure Synapse Analytics</td>
 <td> </td>
 <td>Minst v7.0 19.1.4</td>
+</tr>
+<tr><td>MySQL</td>
+<td>
+<p>8</p>
+<p>5.7</p>
+</td>
+<td>
+<p>Minst v7.3 </p>
+<p>minst v7.0</p>
+</td>
+</tr>
+<tr>
+<td>Netezza</td>
+<td>
+<p>7.2</p>
+</td>
+<td>minst v7.0</td>
 </tr>
 <tr>
 <td>Oracle</td>
@@ -252,6 +268,13 @@ Miljöerna **Hybrid** och **Lokal** kan dessutom ansluta Campaign till följande
 <p>18c</p>
 <p>12c</p>
 <p>11g</p>
+</td>
+<td>minst v7.0</td>
+</tr>
+<tr>
+<td>SAP HANA</td>
+<td>
+<p>version 1 SPS 12</p>
 </td>
 <td>minst v7.0</td>
 </tr>
@@ -265,33 +288,6 @@ Miljöerna **Hybrid** och **Lokal** kan dessutom ansluta Campaign till följande
 </td>
 <td>minst v7.0</td>
 </tr>
-<tr><td>MySQL</td>
-<td>
-<p>8</p>
-<p>5.7</p>
-</td>
-<td>
-<p>Minst v7.3 </p>
-<p>minst v7.0</p>
-</td>
-</tr>
-<tr>
-<td>Teradata</td>
-<td>
-<p>16.20</p>
-<p>16</p>
-<p>15.10</p>
-<p>15.0</p>
-</td>
-<td>minst v7.0</td>
-</tr>
-<tr>
-<td>Netezza</td>
-<td>
-<p>7.2</p>
-</td>
-<td>minst v7.0</td>
-</tr>
 <tr>
 <td>Sybase</td>
 <td>
@@ -301,9 +297,12 @@ Miljöerna **Hybrid** och **Lokal** kan dessutom ansluta Campaign till följande
 <td>minst v7.0</td>
 </tr>
 <tr>
-<td>SAP HANA</td>
+<td>Teradata</td>
 <td>
-<p>version 1 SPS 12</p>
+<p>16.20</p>
+<p>16</p>
+<p>15.10</p>
+<p>15.0</p>
 </td>
 <td>minst v7.0</td>
 </tr>
@@ -330,6 +329,15 @@ Följande operativsystem och webbläsare **krävs** för att använda [klientkon
 
 <table>
 <tbody>
+</tr>
+<tr>
+<td>Microsoft Windows</td>
+<td>
+<p>11 (startar från version 7.3)</p>
+<p>10 (rekommenderas för japanska instanser)</p>
+<p>8</p>
+</td>
+</tr>
 <tr>
 <td>Microsoft Windows Server</td>
 <td>
@@ -337,15 +345,6 @@ Följande operativsystem och webbläsare **krävs** för att använda [klientkon
 <p>2016</p>
 <p>2012</p>
 </td>
-</tr>
-<tr>
-<td>Microsoft Windows</td>
-<td>
-<p>11 (från och med Campaign v7.3)</p>
-<p>10 (rekommenderas för japanska instanser)</p>
-<p>8</p>
-</td>
-</tr>
 </tbody>
 </table>
 

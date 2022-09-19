@@ -6,10 +6,10 @@ audience: platform
 content-type: reference
 topic-tags: administration-basics
 exl-id: 4a17d5e8-c73f-42e7-b641-0fee6a52c5c0
-source-git-commit: 26ae7ff1f0837a9a50057d97b00422a288b9dc7a
+source-git-commit: ae235d39c4a78e0a2507f6baaebbdc9986dbf995
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '1818'
+ht-degree: 7%
 
 ---
 
@@ -213,7 +213,7 @@ Externa databaser som är kompatibla med Campaign listas i [Kompatibilitetsmatri
 
 Konfigurationsinställningarna för det externa kontot beror på databasmotorn. Läs mer i följande avsnitt:
 
-* Konfigurera åtkomst till [Vertica](../../installation/using/configure-fda-vertica.md)
+* Konfigurera åtkomst till [vertica analytics](../../installation/using/configure-fda-vertica.md)
 * Konfigurera åtkomst till [Snowflake](../../installation/using/configure-fda-snowflake.md)
 * Konfigurera åtkomst till [Google BigQuery](../../installation/using/configure-fda-google-big-query.md)
 * Konfigurera åtkomst till [azure synapse](../../installation/using/configure-fda-synapse.md)
