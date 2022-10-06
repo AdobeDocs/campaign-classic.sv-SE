@@ -7,9 +7,9 @@ role: User
 level: Beginner
 exl-id: b8c1f287-06f4-4c34-8cca-b0c7676abbc2
 source-git-commit: ae235d39c4a78e0a2507f6baaebbdc9986dbf995
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '763'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -225,7 +225,7 @@ Miljöerna **Managed Services** (värd), **Hybrid** och **Lokal** kan ansluta Ca
 <td>Minst 7.2.1</td>
 </tr>
 <tr>
-<td>vertica analytics</td>
+<td>Vertica Analytics</td>
 <td> </td>
 <td>Minst v7.0 19.1.4</td>
 </tr>
