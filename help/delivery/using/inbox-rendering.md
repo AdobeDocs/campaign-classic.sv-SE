@@ -4,9 +4,9 @@ title: Inkorgsåtergivning i Campaign
 description: Lär dig hur du hämtar e-poståtergivningar och gör dem tillgängliga i en dedikerad rapport
 feature: Inbox Rendering, Monitoring, Email Rendering
 exl-id: a3294e70-ac96-4e51-865f-b969624528ce
-source-git-commit: f05eefc9945c4ead89eb448b6e28c3523559e055
+source-git-commit: 048189f49623cf00f4c3f1f34ff4b795d80391ef
 workflow-type: tm+mt
-source-wordcount: '813'
+source-wordcount: '821'
 ht-degree: 8%
 
 ---
@@ -20,6 +20,9 @@ ht-degree: 8%
 Innan du trycker på **Skicka** ska du se till att ditt meddelande visas för mottagarna på ett optimalt sätt på olika webbklienter, webbmejl och enheter.
 
 För att detta ska bli möjligt använder Adobe Campaign [Litmus](https://litmus.com/email-testing) webbaserad e-posttestningslösning för att hämta in renderingarna och göra dem tillgängliga i en dedikerad rapport. På så sätt kan du förhandsgranska det skickade meddelandet i olika sammanhang som det kan tas emot i och kontrollera kompatibiliteten i de flesta datorer och program.
+
+>[!CAUTION]
+>Inkorgsåtergivning är inte kompatibelt med [återkommande leveranser](communication-channels.md#recurring-delivery).
 
 Litmus är en funktionell e-postvalidering och förhandsgranskning av program. Med den kan e-postskapare förhandsgranska sitt meddelandeinnehåll i över 70 e-postrenderare, till exempel Gmail-inkorgen eller Apple Mail-klienten.
 
