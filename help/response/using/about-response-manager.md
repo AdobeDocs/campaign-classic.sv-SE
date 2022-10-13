@@ -3,7 +3,7 @@ product: campaign
 title: Om responshanteraren
 description: Om responshanteraren
 exl-id: b5c0e960-2afe-4a98-b82c-d47a74659703
-source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
+source-git-commit: 878ba2b532d5cb59af77b6450b12ae5d2ff149b2
 workflow-type: tm+mt
 source-wordcount: '406'
 ht-degree: 5%
@@ -12,7 +12,7 @@ ht-degree: 5%
 
 # Kom igång med Campaign Response Manager{#about-response-manager}
 
-![](../../assets/v7-only.svg)
+![](../../assets/common.svg)
 
 Adobe Campaign erbjuder ett tillägg för Response Management som gör att ni kan mäta framgången och lönsamheten för marknadsföringskampanjer eller erbjuda erbjudanden över olika kommunikationskanaler: e-post, mobil, direktreklam osv.
 
