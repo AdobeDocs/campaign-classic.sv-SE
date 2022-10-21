@@ -6,7 +6,7 @@ audience: interaction
 content-type: reference
 topic-tags: general-operation
 exl-id: b13ecfc9-1723-42b2-ab30-d5637cc3d0dd
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: c929557ee9f5467f9c3b8eb1ed25fae5399820ba
 workflow-type: tm+mt
 source-wordcount: '338'
 ht-degree: 1%
@@ -35,7 +35,7 @@ Erbjudandet gäller endast de erbjudanden som valts under godkännandeprocessen.
 
 ## Interaktionstyper och kontaktmetoder {#interaction-types-and-contact-methods}
 
-Det finns två möjliga typer av interaktioner: inkommande interaktioner (initierad av en kontakt) och utgående interaktioner (initierad av den som skapat erbjudandet).
+Det finns två möjliga typer av interaktioner: inkommande interaktioner (initierade av en kontakt) och utgående interaktioner (initierade av erbjudandedesignern).
 
 Dessa två typer av interaktioner kan utföras antingen i enhetligt läge (erbjudandet beräknas för en enskild kontakt) eller i batchläge (erbjudandet beräknas för en uppsättning kontakter). I allmänhet utförs inkommande interaktioner i enställigt läge och utgående interaktioner utförs i batchläge. Det kan dock finnas vissa undantag, t.ex. för transaktionsmeddelanden, där den utgående interaktionen utförs i enhetligt läge (se [det här avsnittet](../../message-center/using/about-transactional-messaging.md)).
 

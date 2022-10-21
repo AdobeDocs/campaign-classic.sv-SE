@@ -2,8 +2,9 @@
 product: campaign
 title: Campaign Classic 2018-versioner
 description: Läs mer om Campaign Classic 2018-versioner
+hidefromtoc: true
 exl-id: f70fceba-4bbf-4f33-8746-e4405a1cdae6
-source-git-commit: f4513834cf721f6d962c7c02c6c64b2171059352
+source-git-commit: c929557ee9f5467f9c3b8eb1ed25fae5399820ba
 workflow-type: tm+mt
 source-wordcount: '5385'
 ht-degree: 7%
@@ -151,7 +152,7 @@ ht-degree: 7%
 * The **Formel för datumberäkning** är nu tillgängligt i leveransegenskaperna när du skapar en enskild leverans med hjälp av mallen för direktleverans. (NEO-9792)
 * Domännamnshanteringen har förbättrats för cookie-spårning och webbprogram. Mer information finns i avsnittet &quot;Technical Evolutions&quot; nedan.
 * Importen av Adobe Marketing Cloud delade resurser på en leverans- eller landningssida har förbättrats vad gäller säkerhet och prestanda.
-* En ny kryssruta finns i det externa Mobile-kanalkontot för att möjliggöra utförliga SMPP-spår i loggfilen, vilket gör att dessa utdata är direkt tillgängliga från Adobe Campaign-gränssnittet.
+* Det finns en ny kryssruta i det externa kontot för mobilkanaler som gör att du kan aktivera detaljerade SMPP-spår i loggfilen, vilket gör att dessa utdata är direkt tillgängliga från Adobe Campaign-gränssnittet.
 * I utsändningarna görs nu en skillnad mellan det maximala antalet anslutningar och det maximala antalet meddelanden per timme. När gränserna nås är det sedan möjligt att veta varför genomströmningen är begränsad. Tidigare gällde samma meddelande (&quot;kvoten uppfylldes&quot;) i båda fallen.
 * Du kan nu ange ett SQL-skript som ska köras när du hämtar en anslutning från poolen. Skriptet kan användas för att ange standardschema. Skriptet används efter frågebanding. (NEO-11256)
 * Campaign SDK lagrar inte längre användar-ID:t så att det uppfyller våra PII-regler. Data lagras nu som en hash.
@@ -194,7 +195,7 @@ Nya index har lagts till i NmsRtEvent och NmsEventHistory (i kolumnen &quot;Sche
 
 Dessa indexändringar kan leda till att tiden som krävs för att utföra uppgraderingen ökar.
 
-**Felkorrigeringar**
+**Korrigeringar**
 
 * Ett fel som förhindrade filer från **Webbnedladdning** arbetsflödesaktiviteten hämtas. (NEO-11105)
 * Ett fel som ibland lämnade **Skicka indikatorer och kampanjattribut** arbetsflödet i feltillstånd (NEO-10820).
@@ -213,7 +214,7 @@ Dessa indexändringar kan leda till att tiden som krävs för att utföra uppgra
 * Korrigerade ett problem i rapporter som fick diagrammen att alltid beräkna summan av värdena oavsett vilken aggregerad operator som valdes. (NEO-10913)
 * Eftersom funktionen &quot;request.scheme&quot; är inaktuell har den tagits bort från JSAPI-dokumentationen. (NEO-10828)
 * Ett problem som gjorde att vissa användare med tidszonskonfigurationer inte kunde logga in på Adobe Campaign har åtgärdats. (NEO-10712)
-* Ett problem som uppstod när ett externt Mobile-kanalkonto konfigurerades med den utökade allmänna SMPP-anslutningen har åtgärdats: om du angav att använda olika parametrar för mottagaren skulle sändaren felaktigt använda dessa parametrar i stället för sina egna parametrar.
+* Ett problem som uppstod när ett externt mobilkanalskonto konfigurerades med den utökade allmänna SMPP-anslutningen har åtgärdats: om du angav att använda olika parametrar för mottagaren skulle sändaren felaktigt använda dessa parametrar i stället för sina egna parametrar.
 * Korrigerade ett problem som gjorde att schemalagda leveranser misslyckades när en frekvens för tryckregeln angavs, eftersom leveranserna hela tiden räknades om efter den första skiljedomsförfarandet. (NEO-10016)
 * Korrigerade ett problem som gjorde att IIS-webbservern kraschade under programpoolens återvinningsprocess (i biblioteket nlsrvmod.dll). (NEO-10862)
 * Korrigerat ett problem som kunde förhindra sökning av en mottagare i **Profiler och mål** skärm. (NEO-8228)
@@ -528,7 +529,7 @@ Ett nytt läge är tillgängligt för paketimport via kommandoraden, vilket till
 nlserver package -instance:fresh -import:sup-packInstallTest.xml -verbose -usejs
 ```
 
-**Felkorrigeringar**
+**Korrigeringar**
 
 * Ett synkroniseringsproblem har korrigerats vid replikering av leverans- och spårningsloggar från Adobe Campaign Standard till Adobe Campaign Classic. (NEO-10023)
 * Korrigerade ett problem med hanteringen av fel- och loggtabeller i Teradata när ett ETL-arbetsflöde återupptogs efter ett fel vid en snabb inläsning. Tabellerna Fel och Logg tas nu bort korrekt varje gång arbetsflödet återupptas. (NEO-10672)
