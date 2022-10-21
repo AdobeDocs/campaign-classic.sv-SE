@@ -6,10 +6,10 @@ role: User, Data Architect
 level: Beginner
 hide: true
 hidefromtoc: true
-source-git-commit: d42389add06db74c54cb3a21813e9a832a2a288a
+source-git-commit: ecd82fe432d44f14b48b162224dd88bb0f6e6f64
 workflow-type: tm+mt
-source-wordcount: '317'
-ht-degree: 5%
+source-wordcount: '560'
+ht-degree: 7%
 
 ---
 
@@ -41,6 +41,43 @@ En aktivitet är ett palettobjekt som läggs till i ett arbetsflöde för att de
 Läs mer om [Arbetsflödesaktiviteter](../../workflow/using/about-activities.md).
 +++
 
++++**ACS-koppling**
+
+ACS Connector (Prime Offering) bryggar Adobe Campaign v7 och Adobe Campaign Standard. Det är en integrerad funktion i Campaign v7 som automatiskt återger data till Campaign Standarden och kombinerar det bästa av båda programmen. Campaign v7 har avancerade verktyg för att hantera den primära marknadsföringsdatabasen. Datareplikeringen från Campaign v7 gör att Campaign Standarden kan utnyttja alla data i en användarvänlig miljö.
+
+Läs mer om [ACS Connector](../../integrations/using/acs-connector-principles-and-data-cycle.md).
++++
+
++++**Aktiv profil**
+
+Profiler anses vara aktiva om de har riktats in på eller kommunicerats med under de senaste tolv månaderna via någon kanal. Enligt ert avtal har var och en av era Campaign-instanser ett visst antal aktiva profiler som räknas för faktureringsändamål.
+
+Läs mer om [Aktiva profiler](about-profiles.md#active-profiles).
++++
+
+
++++**Arbetsflödesaktivitet för godkännande**
+
+*Kontext: Kampanjdistribuerad marknadsföring*
+
+Lokal godkännandeaktivitet är en arbetsflödesaktivitet som används för att ställa in en process för godkännande av leverans innan meddelandena skickas.
+
+Läs mer om [Lokal godkännandeaktivitet](../../workflow/using/local-approval.md).
++++
+
++++**Målgrupp**
+
+En målgrupp är den resulterande uppsättningen profiler som uppfyller villkoren i en filterdefinition baserat på regler och attribut.
+
+Läs mer om [Målgrupper](../../campaign/using/marketing-campaign-target.md).
++++
+
++++**Verifieringskedja**
+
+Granskningsspår innehåller en omfattande lista i realtid över åtgärder och händelser som inträffar i din Adobe Campaign-instans. Det innehåller ett självbetjäningssätt att komma åt en datahistorik som kan hjälpa dig att besvara frågor som: vad som hände med dina arbetsflöden och vem som senast uppdaterade dem eller vad gjorde användarna i instansen.
+
+Läs mer om [Granskningsspår](../../production/using/audit-trail.md).
++++
 
 ## E - H {#sec-2}
 
