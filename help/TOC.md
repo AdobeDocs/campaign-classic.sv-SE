@@ -6,9 +6,9 @@ title: Användarhandbok för Campaign Classic v7
 user-guide-description: Med Adobe Campaign kan du använda omfattande kunddata för att skapa, samordna och leverera dynamiska kampanjer som kunderna verkligen vill ha – via e-post, mobiler, offlinekanaler med mera.
 sub-product: adobe campaign classic
 type: Documentation
-source-git-commit: f580b9b2508c279e03bd2698854aaf3de501200b
-workflow-type: ht
-source-wordcount: '2583'
+source-git-commit: d42389add06db74c54cb3a21813e9a832a2a288a
+workflow-type: tm+mt
+source-wordcount: '2584'
 ht-degree: 100%
 
 ---
@@ -50,6 +50,7 @@ ht-degree: 100%
          + [Rapporter](platform/using/faq-reporting.md)
          + [Utveckling](platform/using/faq-developers.md)
          + [Självstudiekurser](platform/using/tutorials.md)
+      + [Ordlista](platform/using/ac-glossary.md)
    + Sekretess {#privacy}
       + [Sekretess och medgivande](platform/using/privacy-and-recommendations.md)
       + [Sekretesshantering](platform/using/privacy-management.md)
@@ -516,7 +517,7 @@ ht-degree: 100%
 + Hantera erbjudanden {#managing-offers}
    + Kom igång med interaktion {#interaction-overview}
       + [Interaktion och erbjudandehantering](interaction/using/interaction-and-offer-management.md)
-      + [Ordlista](interaction/using/glossary.md)
+      + [Ordlista](interaction/using/i-glossary.md)
       + [Bästa praxis för interaktion](interaction/using/interaction-best-practices.md)
    + Allmän åtgärd {#general-operation}
       + [Implementeringssteg](interaction/using/implementation-steps.md)
