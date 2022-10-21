@@ -6,16 +6,16 @@ role: User, Data Architect
 level: Beginner
 hide: true
 hidefromtoc: true
-source-git-commit: ecd82fe432d44f14b48b162224dd88bb0f6e6f64
+source-git-commit: d898a43b7a3f826a63a754f9fcb76953a696f3fb
 workflow-type: tm+mt
-source-wordcount: '560'
+source-wordcount: '572'
 ht-degree: 7%
 
 ---
 
 # Adobe Campaign-ordlista{#ac-glossary}
 
-Nedan finns en definition av nyckeltermer och begrepp i Adobe Campaign
+Nedan finns en definition av nyckeltermer och begrepp i Adobe Campaign, med länkar till relaterad dokumentation. Klicka på en term för att visa dess definition.
 
 ## A - D{#sec-1}
 
@@ -28,7 +28,7 @@ Läs mer om [A/B-tester](../../delivery/using/get-started-a-b-testing.md).
 
 +++**Åtkomsthantering**
 
-Med åtkomsthantering kan administratörer tilldela åtkomst och behörigheter till användare av Adobe Campaign. Behörigheterna innefattar möjligheten att visa och/eller använda Adobe Campaign-funktioner, som att köra arbetsflöden, definiera scheman och hantera målgrupper
+Med åtkomsthantering kan administratörer tilldela åtkomst och behörigheter till användare av Adobe Campaign. Behörigheterna innefattar möjligheten att visa och/eller använda Adobe Campaign-funktioner, som att köra arbetsflöden, definiera scheman och hantera målgrupper.
 
 Läs mer om [Åtkomsthantering](access-management.md).
 +++
