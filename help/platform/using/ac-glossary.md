@@ -6,10 +6,10 @@ role: User, Data Architect
 level: Beginner
 hide: true
 hidefromtoc: true
-source-git-commit: cd26bf082d891e55bce489256dd9d43a1e3f243c
+source-git-commit: c4d7c87e769a270b18c57267e134bfbe9a2e0cdf
 workflow-type: tm+mt
-source-wordcount: '6453'
-ht-degree: 2%
+source-wordcount: '6260'
+ht-degree: 3%
 
 ---
 
@@ -100,14 +100,17 @@ Campaign är ett gränssnitt för att samordna, definiera och genomföra marknad
 Läs mer om [Kampanjer](../../campaign/using/designing-marketing-campaigns.md).
 +++
 
-+++**Övergångsprocess**
+<!--
+-----UNCLEAR-----
++++**Changeover process**
 
-*Kontext: Kampanjinteraktion*
+*Context: Campaign Interaction*
 
-I samband med Campaign Interaction är processen för övergång en aktiverad process i en identifierad miljö, som ansvarar för att dirigera anropet till en anonym miljö om kontakten inte uttryckligen och/eller implicit har identifierats.
+In the context of Campaign Interaction, the changeover process is an activated process in an identified environment, responsible for directing the call to an anonymous environment if the contact has not been explicitly and/or implicitly identified.
 
-Läs mer om [Interaktion](../../interaction/using/interaction-and-offer-management.md).
+Learn more about [Interaction](../../interaction/using/interaction-and-offer-management.md).
 +++
+-->
 
 +++**Kanal**
 
@@ -174,14 +177,17 @@ Arbetsflödet för rensning av databas tar bort föråldrade data för att undvi
 Läs mer om [Arbetsflöde för databasrensning](../../production/using/database-cleanup-workflow.md).
 +++
 
-+++**Dedikerad server**
+<!--
+----UNCLEAR----
++++**Dedicated server**
 
-*Kontext: Transactional Messaging*
+*Context: Transactional Messaging*
 
-Dedikerade körningsservrar som utnyttjar Transactional Messaging. En server kan vanligtvis behandla upp till 50 000 motorsamtal per timme. Beteckningen Per-Dedicated Server har inte nödvändigtvis 1:1-korrelation med en fysisk server eftersom Adobe kan använda virtualiseringstekniker för att uppnå motsvarande effekt.
+Dedicated execution server(s) to leverage Transactional Messaging. A server can typically process up to 50,000 Engine Calls per hour. The “Per-Dedicated Server” designation does not necessarily have a 1:1 correlation with a physical server as Adobe may utilize virtualization technologies to achieve the equivalent effect.
 
-Läs mer om [Transactional Messaging](../../message-center/using/about-transactional-messaging.md).
+Learn more about [Transactional Messaging](../../message-center/using/about-transactional-messaging.md).
 +++
+-->
 
 +++**Levererbarhet**
 
@@ -272,6 +278,7 @@ Läs mer om [Domändelegering](https://experienceleague.adobe.com/docs/control-p
 ## E - H {#sec-2}
 
 <!--
+----DEPREACTED----
 +++**E4X**
 
 The version of Javascript that is used in Adobe Campaign Classic. Sometimes called ECMAScript, it is an extension of Javascript that allows the mixing of Javascript and XML primitives in the same code. Note that E4X is classified as a deprecated language. 
@@ -431,12 +438,15 @@ Hänvisar till en kontakts status. Den kan vara explicit, implicit eller anonym.
 Läs mer om [Interaktion](../../interaction/using/interaction-and-offer-management.md).
 +++
 
-+++**Bildvisning**
+<!--
+----UNCLEAR----
++++**Image serving**
 
-Funktionen som förser mottagarna med bilder som är inbäddade i e-postmeddelanden. Inläggning av bilder baserat på e-postsystemets funktion&quot;ladda ned bilder&quot; är det som genererar en&quot;öppen&quot; post i Campaigns spårningsloggar.
+The functionality that supplies the images embedded in emails to the delivery’s recipients. The insertion of the images based on an emails system’s “download images” functionality is what generates an “open” entry in Campaign’s tracking logs.
 
-Läs mer om [Bildvisning](../../delivery/using/defining-the-email-content.md#adding-images).
+Learn more about [Image serving](../../delivery/using/defining-the-email-content.md#adding-images).
 +++
+-->
 
 +++**Inkommande interaktion**
 
@@ -495,6 +505,7 @@ Läs mer om [MRM](../../mrm/using/about-marketing-resource-management.md).
 +++
 
 <!--
+----ACS?----
 +++**Localization**
 
 This template type is used to manage multilingual messages.  It is available for Email and SMS messages and useable in standalone mode, within a workflow or in a recurring delivery. In the multilingual feature templates, the language management is based on variants. Each variant represents one language.  This functionality is available only in Adobe Campaign Standard.  
@@ -729,7 +740,7 @@ Läs mer om [Prestandaövervakning](../../production/using/monitoring-processes.
 
 +++**Block för personalisering**
 
-Adobe Campaign erbjuder inbyggda personaliseringsblock som ni kan infoga i era leveranser. De är dynamiska, personaliserade och innehåller en specifik rendering. Du kan till exempel lägga till en logotyp, ett gratulationsmeddelande eller en länk till en spegelsida. Flera anpassningsblock är tillgängliga som standard. Ni kan också definiera anpassade personaliseringsblock som gör att ni kan optimera er produktivitetspersonalisering. Faktiska data infogas i varje genererat meddelande under leveransens analysfas.
+Adobe Campaign erbjuder inbyggda personaliseringsblock som ni kan infoga i era leveranser. De är dynamiska, personaliserade och innehåller en specifik rendering. Du kan till exempel lägga till en logotyp, ett gratulationsmeddelande eller en länk till en spegelsida. Flera anpassningsblock är tillgängliga som standard. Ni kan också definiera anpassade personaliseringsblock som gör att ni kan optimera er leveranspersonalisering. Faktiska data infogas i varje genererat meddelande under leveransens analysfas.
 
 Läs mer om [Personaliseringsblock](../../delivery/using/personalization-blocks.md).
 +++
@@ -759,15 +770,16 @@ Läs mer om [Planer](../../campaign/using/setting-up-marketing-campaigns.md).
 
 Fördefinierade filter är frågor som har sparats för återanvändning. Användning av fördefinierade filter ökar produktiviteten (eftersom de bara skapas en gång), bidrar till att skapa konsekvens (eftersom alla marknadsförare kan använda dem) och sänker marknadsförarens kunskaper eftersom de kan använda kod eller logik som de kanske inte kan skapa själva.
 
-Läs mer om [Fördefinierade filter](../../configuration/using/creating-filters.md).
+Läs mer om [Fördefinierade filter](../../platform/using/creating-filters.md#filtering-recipients).
 +++
 
 <!--
+----DEPREACTED----
 +++**Predictive Engagement Scoring**
 
 Predictive engagement scoring predicts the probability of a recipient engaging with a message and the probability of opting out (unsubscribing) within the next seven days after the next email send. The probabilities are further divided into buckets according to the specific risk of disengagement, medium, or low. The model also provides the risk percentile rank for the customers to understand where the rank of a certain customer in relation to others. 
 
-Learn more about [Predictive Engagement Scoring](../../platforrm/using/creating-filters.md).
+Learn more about [Predictive Engagement Scoring](../../platform/using/creating-filters.md).
 +++
 -->
 
@@ -794,12 +806,14 @@ Läs mer om [Program](../../campaign/using/setting-up-marketing-campaigns.md).
 
 +++**Offentliga resurser**
 
-Mappen Public resources, i Adobe Camera, innehåller bilder som finns på programservern. Bilder i leveranser måste publiceras till programservern (eller till en bildvärdserver, om Campaign är så konfigurerad) för att visas i leveranser, t.ex. e-postmeddelanden.
+Mappen Public resources i Adobe Campaign innehåller bilder som finns på programservern. Bilder i leveranser måste publiceras till programservern (eller till en bildvärdserver, om Campaign är så konfigurerad) för att visas i leveranser, t.ex. e-postmeddelanden.
 
 Läs mer om [Offentliga resurser](../../installation/using/deploying-an-instance.md#managing-public-resources).
 +++
 
 +++**Push**
+
+*Kontext: Mobilappskanal*
 
 Push-meddelanden är meddelanden som tas emot av mobilprogram. Push-meddelanden är konfigurerade att fungera med Adobe Campaign genom att inkludera Experience Platform SDK-koden i mobilprogrammet. För Push finns två leveranskanaler: iOS och Android.
 
@@ -824,10 +838,13 @@ Läs mer om [Mottagare](../../configuration/using/about-data-model.md).
 Läs mer om [Återgivningsfunktion](../../interaction/using/creating-offer-spaces.md).
 +++
 
-+++**Återannonseringskampanjer**
+<!--
+-----DID NOT FIND IN DOCS----
++++**Retargeting campaigns**
 
-Kampanjer som återriktar sig till mottagare av en tidigare leverans eller leveranser.
+Campaigns that re-target the recipients of a previous delivery or deliveries.
 +++
+-->
 
 +++**Schematillägg**
 
@@ -838,14 +855,14 @@ Läs mer om [Schematillägg](../../configuration/using/extending-a-schema.md).
 
 +++**Schema**
 
-Ett schema är ett XML-dokument som definierar en viss datatyp. Scheman implementeras som databastabeller i produktens databas.  Operatörerna ändrar scheman i Campaign och produkten översätter deras åtgärder till den nödvändiga SQL-koden som sedan körs mot databasen. Observera att dessa termer (Schema/Tabell) ofta används omväxlande av operatorer, men de är olika element i produktarkitekturen.
+Ett schema är ett XML-dokument som är associerat med en databastabell. Den definierar datastrukturen och beskriver tabellens SQL-definition. Operatörerna ändrar scheman i Campaign och produkten översätter deras åtgärder till den nödvändiga SQL-koden som sedan körs mot databasen.
 
 Läs mer om [Scheman](../../configuration/using/about-schema-reference.md).
 +++
 
 +++**Fröadresser**
 
-Fröadresser används för mottagare i målgruppen som inte matchar dess definierade villkor. På så sätt kan mottagare som ligger utanför leveransomfånget ta emot leveransen, precis som andra målmottagare gör.
+Fröadresser används för mottagare i målgruppen som inte matchar dess definierade villkor. På så sätt kan mottagare som ligger utanför leveransomfånget ta emot leveransen, precis som andra målmottagare gör. De läggs till i målgruppen för ett meddelande för att upptäcka om mottagardatabasen används på ett bedrägligt sätt eller för att säkerställa leveransen.
 
 Läs mer om [Fröadresser](../../delivery/using/about-seed-addresses.md).
 +++
@@ -870,12 +887,12 @@ Läs mer om [Tjänster](../../delivery/using/about-services-and-subscriptions.md
 
 På Kontrollpanelen kan du interagera med alla SFTP-servrar som är anslutna till Campaign-instanser som du har tillgång till. Med kontrollpanelen kan du utföra åtgärder på dina SFTP-servrar, till exempel övervaka lagringskapaciteten, hantera IP-adresser, tillåta listor och hantera offentliga SSH-nycklar.
 
-Läs mer om [SFTP-hantering](https://experienceleague.adobe.com/docs/control-panel/using/sftp-management/about-sftp-management.html?lang=en).
+Läs mer om [SFTP-hantering](https://experienceleague.adobe.com/docs/control-panel/using/sftp-management/about-sftp-management.html).
 +++
 
 +++**Prenumerationstjänster**
 
-Med den här arbetsflödesaktiviteten kan du skapa eller ta bort en prenumeration på en informationstjänst för den population som anges i övergången.
+Med arbetsflödesaktiviteten för prenumerationstjänster kan du skapa eller ta bort en prenumeration på en informationstjänst för den population som anges i övergången.
 
 Läs mer om [Prenumerationstjänster](../../workflow/using/subscription-services.md).
 +++
@@ -896,23 +913,23 @@ Måldata är data som lagras i arbetsflödet (övergång). Dessa data är tillg�
 Läs mer om [Måldata](../../workflow/using/data-life-cycle.md#target-data).
 +++
 
-+++**Målkarta**
++++**Målmappning**
 
-Detta är mappningen av leveranskanaler till en viss datatyp. Adobe Campaign skickar inte e-postadresser eller telefonnummer i sig, utan i stället till datatyper. Målkartor (kallas ibland Leveranskartor) definierar hur olika leveranskanaler länkar till datafälten i ett schema. Det definierar hur Campaign skickar till den datatypen med hjälp av ett specifikt fält eller uttryck.
+Målmappning är mappningen av leveranskanaler till en viss datatyp. Målmappningar definierar hur olika leveranskanaler länkar till datafälten i ett schema. Det definierar hur Campaign skickar till den datatypen med hjälp av ett specifikt fält eller uttryck.
 
-Läs mer om [Måldata](../../delivery/using/define-the-right-audience.md#target-mappings).
+Läs mer om [Målmappning](../../delivery/using/selecting-a-target-mapping.md).
 +++
 
 +++**Målinriktade aktiviteter**
 
-Detta är arbetsflödesaktiviteter som är specifika för målgruppsanpassning, ändring av populationsdata och filtrering. De gör att operatorer kan skapa ett eller flera mål genom att definiera uppsättningar och dela eller kombinera dessa uppsättningar med hjälp av skärnings-, union- eller exkluderingsåtgärder.
+Målaktiviteter är arbetsflödesaktiviteter som är specifika för målgruppsanpassning, ändring av populationsdata och filtrering. De gör att operatorer kan skapa ett eller flera mål genom att definiera uppsättningar och dela eller kombinera dessa uppsättningar med hjälp av skärnings-, union- eller exkluderingsåtgärder.
 
 Läs mer om [Verksamheter som riktar sig till](../../workflow/using/about-targeting-activities.md).
 +++
 
 +++**Måldimension**
 
-Datatypen som skapas (returneras) av en fråga eller andra arbetsflödesaktiviteter. Observera att Adobe Campaign bara returnerar primärnyckeln för de svarande databasraderna, oavsett vilken fråga som användes för att hämta dem.
+Måldimensionen är den datatyp som skapas (returneras) av en fråga eller andra arbetsflödesaktiviteter. Observera att Adobe Campaign bara returnerar primärnyckeln för de svarande databasraderna, oavsett vilken fråga som användes för att hämta dem.
 
 Läs mer om [Måldimension](../../workflow/using/targeting-data.md).
 +++
@@ -921,18 +938,13 @@ Läs mer om [Måldimension](../../workflow/using/targeting-data.md).
 
 *Kontext: Marknadsföringsresurshantering (MRM)*
 
-Arbetsflödesaktiviteten Inkluderar mänsklig åtgärd i logiken i ett arbetsflöde. Du kan ange två scenarier: den första om uppgiften är slutförd och den andra om uppgiften inte är slutförd (om den markerats manuellt som ofullständig eller om den förfaller).
-
-Vanliga användningsområden är för att införliva offlineåtgärder i en kampanj eller för anpassade åtgärder som godkännanden.
-
-I ett kampanjarbetsflöde är aktivitetsaktiviteten
-
-
+Arbetsflödesaktiviteten Inkluderar mänsklig åtgärd i logiken i ett arbetsflöde. Du kan ange två scenarier: den första om uppgiften är slutförd och den andra om uppgiften inte är slutförd. Vanliga användningsområden är för att införliva offlineåtgärder i en kampanj eller för anpassade åtgärder som godkännanden.
 
 Läs mer om [Aktivitet](../../workflow/using/task.md).
 +++
 
 <!--
+-----NOT USEFUL-----
 +++**Task**
 
 One iteration of the defined functionality of a workflow activity. Each execution of a task has a unique task identifier.   
@@ -947,6 +959,8 @@ En mall är ett designelement som används för att skapa ett objekt. Den inneh�
 +++
 
 <!--
+-----ACS -> SEEDS IN ACC-----
+
 +++**Test profiles**
 
 Allows targeting of additional recipients who do not match the defined targeting criteria. They are added to a message’s audience to detect any fraudulent use of your recipient database or to ensure delivery. Seen as the Seed type in the Campaign interface.
@@ -956,6 +970,7 @@ Learn more about [Test profiles](../../workflow/using/about-workflows.md).
 -->
 
 <!--
+-----NOT USEFUL?-----
 +++**Total database storage**
 
 The aggregate size of the production and non-production instance(s) database storage managed by Adobe. 
@@ -986,6 +1001,7 @@ Läs mer om [Utlösta kampanjer](../../workflow/using/external-signal.md).
 +++
 
 <!--
+-----NOT USEFUL-----
 +++**Triggers**
 
 Signals that initiate execution of a workflow, delivery or other action. Typically an API call. 
@@ -1000,7 +1016,7 @@ Learn more about [Triggers](../../workflow/using/about-workflows.md).
 
 Typologiregler är affärsregler som implementeras som en del av leveransens analysfas. Typologiregler är kontroller av innehållet i leveransen (kontrollregler) eller målet för leveransen (filtreringsregler) eller annan logik (tryckregler) som uppfyller affärskraven. Regler är detaljelement som kan inkluderas i en eller flera typer.
 
-Läs mer om [Typologier](../../campaign-opt/using/about-campaign-typologies.md#typology-rules).
+Läs mer om [Typologiregler](../../campaign-opt/using/about-campaign-typologies.md#typology-rules).
 +++
 
 +++**Typologi**
@@ -1024,6 +1040,7 @@ Läs mer om [Enhetsläge](../../interaction/using/about-inbound-channels.md).
 +++
 
 <!--
+-----NO OCCURRENCE IN ACC, OLD v6 CONCEPT?----
 +++**Universes**
 
 Application pages hosted by the Campaign instance. Used for approval forms, landing pages, opt-out forms, preference pages or to implement other business requirements.  
@@ -1034,7 +1051,7 @@ Learn more about [Universes](../../workflow/using/about-workflows.md).
 
 +++**Webbapplikationer**
 
-Webbprogram är dynamiska och interaktiva programsidor som hanteras av Campaign-instansen. Den innehåller data från databasen och innehåll som är anpassat till den anslutna användarens rättigheter. Du kan t.ex. skapa ett redigeringsformulär på ett extranät eller meddelandeformulär som innehåller data från databasen med tabeller, diagram, indataformulär osv. Med den här funktionen kan du utforma och publicera webbsidor där användarna kan leta upp eller ange information.
+Webbprogram är dynamiska och interaktiva programsidor som hanteras av Campaign-instansen. De innehåller data från databasen och innehåll som är anpassat till den anslutna användarens rättigheter. Du kan t.ex. skapa ett redigeringsformulär på ett extranät eller meddelandeformulär som innehåller data från databasen med tabeller, diagram, indataformulär osv. Med den här funktionen kan du utforma och publicera webbsidor där användarna kan leta upp eller ange information.
 
 Läs mer om [Webbprogram](../../web/using/about-web-applications.md).
 +++
@@ -1055,7 +1072,7 @@ Läs mer om [Arbetsflöden](../../workflow/using/about-workflows.md).
 
 +++**Arbetsyta**
 
-Arbetstabellen innehåller all information som följer med arbetsflödesövergångar. Varje arbetsflöde använder flera arbetstabeller. De data som överförs i dessa tabeller kan accelereras och användas under arbetsflödets hela livscykel, så länge som de inte rensas. Det går att tömma tabeller som inte behövs varje gång arbetsflödet är passivat och eventuellt under körningen av de största arbetsflödena för att undvika att servern överbelastas.
+Arbetstabellen innehåller all information som följer med arbetsflödesövergångar. Varje arbetsflöde använder flera arbetstabeller. Arbetstabellen innehåller resultatet av sin ursprungliga aktivitet och dess innehåll används som indata till nästa (anslutna) aktivitet i arbetsflödet.  Redigering (tillägg, anpassning) av arbetsflödet är en av Adobe Campaign huvudfärdigheter.
 
 Läs mer om [Worktables](../../workflow/using/about-workflows.md).
 +++
