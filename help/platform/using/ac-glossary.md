@@ -6,7 +6,7 @@ role: User, Data Architect
 level: Beginner
 hide: true
 hidefromtoc: true
-source-git-commit: 8aa45f4e9d41b7dc4faf89dad988703b63cea77c
+source-git-commit: 891418c4120793cf296a65f7aed86e71925a0d66
 workflow-type: tm+mt
 source-wordcount: '6454'
 ht-degree: 2%
@@ -51,7 +51,7 @@ Läs mer om [Arbetsflödesaktiviteter](../../workflow/using/about-activities.md)
 
 Profiler anses vara aktiva om de har riktats in på eller kommunicerats med under de senaste tolv månaderna via någon kanal. Enligt ert avtal har var och en av era Campaign-instanser ett visst antal aktiva profiler som räknas för faktureringsändamål.
 
-Läs mer om [Aktiva profiler](about-profiles.md#active-profiles).
+Läs mer om [Aktiva profiler](../../platform/using/about-profiles.md#active-profiles).
 +++
 
 +++**Arbetsflödesaktivitet för godkännande**
@@ -759,7 +759,7 @@ Läs mer om [Planer](../../campaign/using/setting-up-marketing-campaigns.md).
 
 Fördefinierade filter är frågor som har sparats för återanvändning. Användning av fördefinierade filter ökar produktiviteten (eftersom de bara skapas en gång), bidrar till att skapa konsekvens (eftersom alla marknadsförare kan använda dem) och sänker marknadsförarens kunskaper eftersom de kan använda kod eller logik som de kanske inte kan skapa själva.
 
-Läs mer om [Fördefinierade filter](../../platforrm/using/creating-filters.md).
+Läs mer om [Fördefinierade filter](../../configuration/using/creating-filters.md).
 +++
 
 <!--
@@ -775,7 +775,7 @@ Learn more about [Predictive Engagement Scoring](../../platforrm/using/creating-
 
 Primärnyckeln är den unika identifieraren för varje post i en databastabell. En tabell måste ha minst en nyckel. Nycklar deklareras som regel efter huvudelementet i schemat och indexen. Primära nycklar kan inte vara sammansatta (innehåller flera fält).
 
-Läs mer om [Primär nyckel](../../configuration/using/key.md).
+Läs mer om [Primär nyckel](../../configuration/using/schema/key.md).
 +++
 
 +++**Profil**
@@ -900,7 +900,7 @@ Läs mer om [Måldata](../../workflow/using/data-life-cycle.md#target-data).
 
 Detta är mappningen av leveranskanaler till en viss datatyp. Adobe Campaign skickar inte e-postadresser eller telefonnummer i sig, utan i stället till datatyper. Målkartor (kallas ibland Leveranskartor) definierar hur olika leveranskanaler länkar till datafälten i ett schema. Det definierar hur Campaign skickar till den datatypen med hjälp av ett specifikt fält eller uttryck.
 
-Läs mer om [Måldata](../../workflow/using/define-the-right-audience.md#target-mappings).
+Läs mer om [Måldata](../../delivery/using/define-the-right-audience.md#target-mappings).
 +++
 
 +++**Målinriktade aktiviteter**
@@ -1000,7 +1000,7 @@ Learn more about [Triggers](../../workflow/using/about-workflows.md).
 
 Typologiregler är affärsregler som implementeras som en del av leveransens analysfas. Typologiregler är kontroller av innehållet i leveransen (kontrollregler) eller målet för leveransen (filtreringsregler) eller annan logik (tryckregler) som uppfyller affärskraven. Regler är detaljelement som kan inkluderas i en eller flera typer.
 
-Läs mer om [Typologier](../../campaign/using/about-campaign-typologies.md#typology-rules).
+Läs mer om [Typologier](../../campaign-opt/using/about-campaign-typologies.md#typology-rules).
 +++
 
 +++**Typologi**
@@ -1009,7 +1009,7 @@ Läs mer om [Typologier](../../campaign/using/about-campaign-typologies.md#typol
 
 En typologi är en gruppering av typologiregler som tillämpas på analysfasen för en leverans. En kampanjtypologi kan innehålla flera typologiregler, men en leverans kan bara referera till en typologi.
 
-Läs mer om [Typologier](../../campaign/using/about-campaign-typologies.md#typologies).
+Läs mer om [Typologier](../../campaign-opt/using/about-campaign-typologies.md#typologies).
 +++
 
 ## U - Z {#sec-6}
