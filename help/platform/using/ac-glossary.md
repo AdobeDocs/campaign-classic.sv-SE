@@ -6,9 +6,9 @@ role: User, Data Architect
 level: Beginner
 hide: true
 hidefromtoc: true
-source-git-commit: c4d7c87e769a270b18c57267e134bfbe9a2e0cdf
+source-git-commit: dea815b07f0b91ed550060fa00cf0501ae6594f7
 workflow-type: tm+mt
-source-wordcount: '6260'
+source-wordcount: '6087'
 ht-degree: 3%
 
 ---
@@ -77,12 +77,15 @@ Granskningsspår innehåller en omfattande lista i realtid över åtgärder och 
 Läs mer om [Granskningsspår](../../production/using/audit-trail.md).
 +++
 
-+++**Automatiserade kampanjer**
+<!--
+----DUPLICATE WITH THE "CAMPAIGN" ENTRY?---
++++**Automated campaigns**
 
-Kampanjer som körs enligt ett schema, till exempel för målgruppsanpassning för mottagare som fyller år eller fyller år. Kan även användas för att köra look-ahead- och look-back-logik, till exempel vem som köpt igår eller som ska betala imorgon.
+Campaigns that run on a schedule, such as for targeting recipients who have a birthday or an anniversary. Can also be used to execute look-ahead and look-back logic, such as who purchased yesterday or who has a payment due tomorrow.
 
-Läs mer om [Kampanjer](../../campaign/using/designing-marketing-campaigns.md).
+Learn more about [Campaigns](../../campaign/using/designing-marketing-campaigns.md).
 +++
+-->
 
 +++**Batchläge**
 
@@ -101,7 +104,7 @@ Läs mer om [Kampanjer](../../campaign/using/designing-marketing-campaigns.md).
 +++
 
 <!--
------UNCLEAR-----
+-----NOT USEFUL HERE?-----
 +++**Changeover process**
 
 *Context: Campaign Interaction*
@@ -193,7 +196,7 @@ Learn more about [Transactional Messaging](../../message-center/using/about-tran
 
 *Kontext: E-postleverans*
 
-Ett mätvärde som gör att operatorer kan mäta hur framgångsrik en kampanj är genom att nå mottagarnas inkorg utan att studsa eller markeras som skräppost.
+Leveransmöjligheterna gör att ni kan mäta framgången för era kampanjer som når era mottagares inkorg utan att studsa, eller markeras som skräppost. Mer exakt är att e-postleverans avser den uppsättning egenskaper som avgör hur ett meddelande kan nå sin destination, via en personlig e-postadress, inom en kort tid och med den förväntade kvaliteten i fråga om innehåll och format.
 
 Läs mer om [Leverans](../../delivery/using/about-deliverability.md).
 +++
@@ -219,14 +222,17 @@ Leveransloggar innehåller information som genereras när ett meddelande skickas
 Läs mer om [Leveransloggar](../../delivery/using/delivery-dashboard.md#delivery-logs-and-history).
 +++
 
-+++**Grundläggande om leverans**
+<!--
+----STRANGE IN DOCS?----
++++**Delivery fundamentals**
 
-*Kontext: E-postleverans*
+*Context: Email Deliverability*
 
-Adobe Campaign Deliverability Fundamentals Consulting Service tillhandahåller konsultation och anseendehantering via e-post för att stödja kunder som använder Adobe Campaign leveranser.
+Adobe Campaign Deliverability Fundamentals Consulting Service provides email deliverability consultation and reputation management to support customers using Adobe Campaign deliveries.
 
-Läs mer om [Leverans](../../delivery/using/about-deliverability.md).
+Learn more about [Deliverability](../../delivery/using/about-deliverability.md).
 +++
+-->
 
 +++**Leveransbeskrivning**
 
@@ -310,15 +316,21 @@ Funktionen för hemlig kopia skickar en exakt kopia i EML-format av ett motsvara
 Läs mer om [BCC för e-post](../../delivery/using/email-parameters.md#email-bcc).
 +++
 
-+++**E-postvolymåtagande**
+<!--
+-----STRANGE FOR DOCS?----
++++**Email volume commitment**
 
-De e-postmeddelanden som förväntas skickas per år enligt försäljningsordern. Det här är det totala årliga e-postvolymindraget, inklusive e-postmeddelanden som skickats men inte levererats på grund av leveransfel som: utebliven leverans av ett meddelande, inklusive, men inte begränsat till, fel i e-postadresser, hårda studsar, mjuka studsar, e-postfilter för e-postklienter och svarta listor i e-postmeddelanden.
+The anticipated emails sent per year as set forth in the Sales Order. This is the total annual email volume commitment, including emails sent but not delivered due to delivery errors such as: non-delivery of a message including but not limited to email address errors, hard bounces, soft bounces, email filters of mail clients, and email blacklists. 
 +++
+-->
 
-+++**Motorsamtal**
+<!--
+-----USEFUL FOR DOCS?----
++++**Engine call**
 
-Ett motoranrop är ett serveranrop som startar realtidsbearbetning på serversidan för att extrahera data, t.ex. data relaterade till undersökningar, WebApps, JSSP, API:er, mobilappsregistreringar osv. Motoranrop måste licensieras i paket om 5 000 motorsamtal per dag.
+An engine call is a server call that starts real-time processing on server side for the extraction of data, such as data relating to surveys, WebApps, JSSP, APIs, mobile app registrations, etc. Engine calls must be licensed in packs of 5,000 Engine Calls per day.
 +++
+-->
 
 +++**Anrikningsaktivitet**
 
@@ -401,12 +413,15 @@ Forms definierar gränssnittsrepresentationen för en viss schematyp. Forms är 
 Läs mer om [Forms](../../configuration/using/identifying-a-form.md).
 +++
 
-+++**Genererad SQL-fråga**
+<!--
+-----USEFUL HERE?-----
++++**Generated SQL query**
 
-Den SQL-kod som genereras för den underliggande databasen när en operator ändrar ett schema. Scheman definierar de datatyper som sedan implementeras med databastabeller och kolumner. Den SQL som genereras för schemaändring (till exempel i en fråga) baseras på den installerade databastypen. Databasen kan alltså bytas ut mot en annan typ och frågorna i Campaign förblir oförändrade. Adobe menar att denna funktion är databasagnostisk.
+The SQL code generated for the underlying database when an operator manipulates a schema. Schemas define the data types that are then implemented using database tables and columns. The SQL generated for schema manipulation (such as in a query) is based on the installed database type. Thus, the database can be swapped to a different type and the queries in Campaign remain unchanged. Adobe refers to this functionality as being database-agnostic.
 
-Läs mer om [Genererade SQL-frågor](../../platform/using/steps-to-create-a-query.md#step-6---preview-data).
+Learn more about [Generated SQL queries](../../platform/using/steps-to-create-a-query.md#step-6---preview-data).
 +++
+-->
 
 +++**Värmekarta**
 
@@ -425,11 +440,12 @@ Läs mer om [Hybrid-driftsättning](../../installation/using/hosting-models.md#h
 
 ## I - L {#sec-3}
 
+<!-- added more details but maybe still not clear/useful here? -->
 +++**Identifieringsläge**
 
 *Kontext: Kampanjinteraktion*
 
-Hänvisar till en kontakts status. Den kan vara explicit, implicit eller anonym.
+Identifieringsläget Avser en kontakts status. Den kan vara explicit, implicit eller anonym.
 
 * **explicit**: kontakten identifieras efter deras inloggning i kanalgränssnittet.
 * **implicit**: kontakten har identifierats genom en cookie (permanent eller session). Den kan behandlas som en anonym eller identifierad kontakt.
@@ -439,7 +455,7 @@ Läs mer om [Interaktion](../../interaction/using/interaction-and-offer-manageme
 +++
 
 <!--
-----UNCLEAR----
+----NOT USEFUL HERE?----
 +++**Image serving**
 
 The functionality that supplies the images embedded in emails to the delivery’s recipients. The insertion of the images based on an emails system’s “download images” functionality is what generates an “open” entry in Campaign’s tracking logs.
@@ -472,7 +488,7 @@ Läs mer om [Instansinställningar](../../installation/using/about-initial-confi
 
 +++
 
-+++**Jobb (importera och exportera)**
++++**Jobb (import och export)**
 
 Jobb hanteras av ett guidesystem som förenklar import och export av data till och från produkten. Jobb använder mallsystemet för enkelhet och enhetlighet och kan definieras för att köras enligt ett schema.
 
@@ -486,9 +502,9 @@ En lista är en statisk datamängd. Listor är målgrupper eller segment som imp
 Läs mer om [Listor](../../platform/using/creating-and-managing-lists.md).
 +++
 
-+++**Lokal cache**
++++**Lokalt cacheminne**
 
-Information som lagras lokalt på operatörens dator. Cachelagrad information används av konsolen för att minska trafiken till servern och förbättra prestandan. Regelbunden rensning av det lokala cacheminnet (på Arkiv-menyn) uppdaterar den lagrade informationen och förbättrar prestanda och stabilitet.
+Den lokala cachen är den information som lagras lokalt på operatörens dator. Cachelagrad information används av konsolen för att minska trafiken till servern och förbättra prestandan. Regelbunden rensning av det lokala cacheminnet (på Arkiv-menyn) uppdaterar den lagrade informationen och förbättrar prestanda och stabilitet.
 
 Läs mer om [Lokal cache](../../platform/using/faq-campaign-config.md#perform-soft-cache-clear).
 +++
@@ -521,21 +537,21 @@ Läs mer om [Namngivna rättigheter](../../platform/using/access-management-name
 
 +++**Namnutrymme**
 
-En partition som skiljer kunddatatyper från Adobe Campaign interna datatyper i datamodellen. Används även för att underlätta migreringen av definitioner från en instans till en annan, till exempel för att flytta ett schema eller en mall från Development-instansen till Production-instansen.
+Namnutrymmet är en partition som skiljer kunddatatyper från Adobe Campaign interna datatyper i datamodellen. Används även för att underlätta migreringen av definitioner från en instans till en annan, till exempel för att flytta ett schema eller en mall från Development-instansen till Production-instansen.
 
 Läs mer om [Namnutrymme](../../configuration/using/about-schema-reference.md#identification-of-a-schema).
 +++
 
 +++**Navigeringsfält**
 
-Navigeringselementet som körs längst upp i gränssnittet. Navigeringsfältet grupperar om plattformens olika kärnfunktioner. Klicka på en länk i navigeringsfältet för att visa en uppsättning funktioner som är relaterade till den här funktionen. Listan över kärnfunktioner som du kan komma åt beror på vilka paket och tillägg du har installerat och på din åtkomstbehörighet. Syftet med navigeringsfältet är att förenkla skärmhanteringen och öka produktiviteten.
+Navigeringsfältet är det navigeringselement som körs längst upp i gränssnittet. Navigeringsfältet grupperar om plattformens olika kärnfunktioner. Klicka på en länk i navigeringsfältet för att visa en uppsättning funktioner som är relaterade till den här funktionen. Listan över kärnfunktioner som du kan komma åt beror på vilka paket och tillägg du har installerat och på din åtkomstbehörighet. Syftet med navigeringsfältet är att förenkla skärmhanteringen och öka produktiviteten.
 
 Läs mer om [Navigeringsfält](../../platform/using/adobe-campaign-workspace.md#browsing-pages).
 +++
 
 +++**Navigeringsträd**
 
-Huvudnavigeringen i Utforskaren i Adobe Campaign. Navigeringsträdet fungerar som en filläsare (t.ex. Utforskaren i Windows). Mappar kan innehålla undermappar. Om du väljer en nod visas vyn som motsvarar noden. Den vy som visas är en lista som är associerad med ett schema och ett inmatningsformulär för att redigera den markerade raden. Du kan anpassa navigeringsträdet och ange behörigheter för mappar.
+Navigeringsträdet är huvudnavigeringen i Utforskaren i Adobe Campaign. Navigeringsträdet fungerar som en filläsare (t.ex. Utforskaren i Windows). Mappar kan innehålla undermappar. Om du väljer en nod visas vyn som motsvarar noden. Den vy som visas är en lista som är associerad med ett schema och ett inmatningsformulär för att redigera den markerade raden. Du kan anpassa navigeringsträdet och ange behörigheter för mappar.
 
 Läs mer om [Navigeringsträd](../../platform/using/adobe-campaign-explorer.md#about-navigation-hierarch).
 +++
@@ -553,7 +569,7 @@ Läs mer om [Mål](../../mrm/using/creating-and-managing-tasks.md#expenses-and-r
 
 *Kontext: Kampanjinteraktion*
 
-En uppsättning erbjudanden som definieras i Adobe Campaign och som kan väljas under en interaktion. Katalogen ordnas hierarkiskt med varje nod som motsvarar en kategori.
+En erbjudandekatalog är en uppsättning erbjudanden som definieras i Adobe Campaign och som kan väljas vid en interaktion. Katalogen ordnas hierarkiskt med varje nod som motsvarar en kategori.
 
 Läs mer om [Erbjudandekatalog](../../interaction/using/offer-catalog-overview.md).
 +++
@@ -562,7 +578,7 @@ Läs mer om [Erbjudandekatalog](../../interaction/using/offer-catalog-overview.m
 
 *Kontext: Kampanjinteraktion*
 
-En kontakt från en inkommande interaktion. Under motorsamtalsbearbetningen är kontakten kopplad till en måldimension. Ej identifierade anonyma kontakter tillskrivs besökarens målgruppsdimension. Det finns två typer av kontakter, identifierade och anonyma:
+En kontaktperson för ett erbjudande är en kontakt från en inkommande interaktion. Under motorsamtalsbearbetningen är kontakten kopplad till en måldimension. Ej identifierade anonyma kontakter tillskrivs besökarens målgruppsdimension. Det finns två typer av kontakter, identifierade och anonyma:
 
 * **Identifierad kontakt**: en kontakt som frivilligt har identifierats i kanalen. Vid utgående interaktioner identifieras kontakten automatiskt.
 * **Anonym kontakt**: en kontakt som inte frivilligt har prenumererat via kanalen men som kan identifieras implicit via en cookie. Den här terminologin används bara för inkommande interaktioner.
@@ -583,7 +599,7 @@ Läs mer om [Designmiljöer](../../interaction/using/fundamental-principles.md).
 
 *Kontext: Kampanjinteraktion*
 
-Välja erbjudanden som ska visas i en miljö (berättigade erbjudanden). Principen om arbitrage rangordnar erbjudanden efter prioritet enligt de kriterier som definieras i kategorierna och erbjudandena.
+Erbjudandemotorn väljer de erbjudanden som ska visas i en miljö (giltiga erbjudanden). Principen om arbitrage rangordnar erbjudanden efter prioritet enligt de kriterier som definieras i kategorierna och erbjudandena.
 
 Läs mer om [Interaktion](../../interaction/using/interaction-and-offer-management.md).
 +++
@@ -592,7 +608,7 @@ Läs mer om [Interaktion](../../interaction/using/interaction-and-offer-manageme
 
 *Kontext: Kampanjinteraktion*
 
-Processen med att ta bort erbjudanden som inte är berättigade till urval. Kördes före offertmotorns arbitragesteg.
+Rensningen av erbjudandemotorn innebär att erbjudanden som inte är valbara tas bort. Kördes före offertmotorns arbitragesteg.
 
 Läs mer om [Interaktion](../../interaction/using/interaction-and-offer-management.md).
 +++
@@ -601,7 +617,7 @@ Läs mer om [Interaktion](../../interaction/using/interaction-and-offer-manageme
 
 *Kontext: Kampanjinteraktion*
 
-Rotmappen som definierar en erbjudandekatalog, dess tillgängliga utrymmen och miljöns fördefinierade filter. Operatörerna måste skapa en miljö för varje målinriktning. Det finns två typer av Erbjudandemiljöer: Design och Live.
+Erbjudandemiljön är rotmappen som definierar en erbjudandekatalog, dess tillgängliga utrymmen och miljöns fördefinierade filter. Operatörerna måste skapa en miljö för varje målinriktning. Det finns två typer av Erbjudandemiljöer: Design och Live.
 
 Läs mer om [Miljö](../../interaction/using/fundamental-principles.md).
 +++
@@ -610,27 +626,27 @@ Läs mer om [Miljö](../../interaction/using/fundamental-principles.md).
 
 *Kontext: Kampanjinteraktion*
 
-Miljö kopplad till en kampanj **Designmiljö**. Den innehåller skrivskyddade erbjudanden vars innehåll och behörighet har godkänts via **Designmiljö**. De kan väljas för presentation på en webbplats eller infogas i ett utgående meddelande.
+Offer Live-miljön är kopplad till en kampanj **Designmiljö**. Den innehåller skrivskyddade erbjudanden vars innehåll och behörighet har godkänts via **Designmiljö**. De kan väljas för presentation på en webbplats eller infogas i ett utgående meddelande.
 
 Läs mer om [Live-miljöer](../../interaction/using/fundamental-principles.md).
-+++
-
-+++**Förhandsgranska erbjudande**
-
-*Kontext: Kampanjinteraktion*
-
-Förhandsgranskning av erbjudandet så som det visas i dess mapp. Den är tillgänglig från fliken för förhandsgranskning av erbjudande eller från kontaktprofilen.
-
-Läs mer om [Förhandsgranska erbjudande](../../interaction/using/creating-an-offer.md#previewing-the-offer).
 +++
 
 +++**Presentationsregler**
 
 *Kontext: Kampanjinteraktion*
 
-Typologiregler som refereras i erbjudandemiljön, som gör att operatorer kan exkludera specifika erbjudanden genom att ta hänsyn till mottagarens offerthistorik.
+Presentationsregler för erbjudanden är typologiregler som refereras i erbjudandemiljön, som gör att operatörerna kan exkludera specifika erbjudanden genom att ta hänsyn till mottagarens erbjudandehistorik.
 
 Läs mer om [Presentationsregler](../../interaction/using/managing-offer-presentation.md#presentation-rules-overview).
++++
+
++++**Förhandsgranska erbjudande**
+
+*Kontext: Kampanjinteraktion*
+
+Det här är en förhandsgranskning av erbjudandet som det visas i sin mapp. Den är tillgänglig från fliken för förhandsgranskning av erbjudande eller från kontaktprofilen.
+
+Läs mer om [Förhandsgranska erbjudande](../../interaction/using/creating-an-offer.md#previewing-the-offer).
 +++
 
 +++**Erbjudandeförslag**
@@ -687,18 +703,18 @@ Anbudsvikten baseras på formler som exakt definierar relevansen av ett erbjudan
 Läs mer om [Erbjudandevikt](../../interaction/using/creating-an-offer.md#offer-weight).
 +++
 
-+++**Operatörsgrupper**
-
-Operatorgrupper gör att du kan hantera roller för kampanjoperatorer. Du definierar grupper av operatorer som du tilldelar rättigheter till och associerar sedan operatorerna med en eller flera grupper. På så sätt kan du återanvända behörigheter och göra användarprofilerna mer enhetliga. Det underlättar också hantering och underhåll av profiler.
-
-Läs mer om [Operatörsgrupper](../../platform/using/access-management-groups.md).
-+++
-
 +++**Operatör**
 
 En operator är en Adobe Campaign-användare som har behörighet att logga in och utföra åtgärder. Operatorer är associerade med operatorgrupper och ärver rättigheterna och behörigheterna för dessa grupper. Du kan också tilldela namngivna rättigheter direkt till operatorer.
 
 Läs mer om [Operatorer](../../platform/using/access-management-operators.md).
++++
+
++++**Operatörsgrupper**
+
+Operatorgrupper gör att du kan hantera roller för kampanjoperatorer. Du definierar grupper av operatorer som du tilldelar rättigheter till och associerar sedan operatorerna med en eller flera grupper. På så sätt kan du återanvända behörigheter och göra användarprofilerna mer enhetliga. Det underlättar också hantering och underhåll av profiler.
+
+Läs mer om [Operatörsgrupper](../../platform/using/access-management-groups.md).
 +++
 
 +++**Alternativ**
@@ -774,7 +790,7 @@ Läs mer om [Fördefinierade filter](../../platform/using/creating-filters.md#fi
 +++
 
 <!--
-----DEPREACTED----
+----DEPRECATED----
 +++**Predictive Engagement Scoring**
 
 Predictive engagement scoring predicts the probability of a recipient engaging with a message and the probability of opting out (unsubscribing) within the next seven days after the next email send. The probabilities are further divided into buckets according to the specific risk of disengagement, medium, or low. The model also provides the risk percentile rank for the customers to understand where the rank of a certain customer in relation to others. 
@@ -839,25 +855,25 @@ Läs mer om [Återgivningsfunktion](../../interaction/using/creating-offer-space
 +++
 
 <!--
------DID NOT FIND IN DOCS----
+-----DID NOT FIND IN ACC DOCS, ACS?----
 +++**Retargeting campaigns**
 
 Campaigns that re-target the recipients of a previous delivery or deliveries.
 +++
 -->
 
-+++**Schematillägg**
-
-Schematillägg gör att du kan anpassa användningsklara scheman så att de passar ditt företags användningssätt. Du kan till exempel lägga till fältet&quot;Lojalitet&quot; i mottagartabellen.
-
-Läs mer om [Schematillägg](../../configuration/using/extending-a-schema.md).
-+++
-
 +++**Schema**
 
 Ett schema är ett XML-dokument som är associerat med en databastabell. Den definierar datastrukturen och beskriver tabellens SQL-definition. Operatörerna ändrar scheman i Campaign och produkten översätter deras åtgärder till den nödvändiga SQL-koden som sedan körs mot databasen.
 
 Läs mer om [Scheman](../../configuration/using/about-schema-reference.md).
++++
+
++++**Schematillägg**
+
+Med schematillägget kan du anpassa färdiga scheman så att de passar ditt företag. Du kan till exempel lägga till fältet&quot;Lojalitet&quot; i mottagartabellen.
+
+Läs mer om [Schematillägg](../../configuration/using/extending-a-schema.md).
 +++
 
 +++**Fröadresser**
@@ -868,6 +884,7 @@ Läs mer om [Fröadresser](../../delivery/using/about-seed-addresses.md).
 +++
 
 <!--
+-------ACS?-----
 +++**Send-time optimization**
 
 To improve the open rate of your messages, you can manually define a sending time per recipient. Each profile will receive the message at the specified date and time, whenever possible. Defining a sending time can be done at the delivery level or using a workflow.
@@ -913,7 +930,7 @@ Måldata är data som lagras i arbetsflödet (övergång). Dessa data är tillg�
 Läs mer om [Måldata](../../workflow/using/data-life-cycle.md#target-data).
 +++
 
-+++**Målmappning**
++++**Målkartläggning**
 
 Målmappning är mappningen av leveranskanaler till en viss datatyp. Målmappningar definierar hur olika leveranskanaler länkar till datafälten i ett schema. Det definierar hur Campaign skickar till den datatypen med hjälp av ett specifikt fält eller uttryck.
 
@@ -944,7 +961,7 @@ Läs mer om [Aktivitet](../../workflow/using/task.md).
 +++
 
 <!--
------NOT USEFUL-----
+-----NOT USEFUL, detail-----
 +++**Task**
 
 One iteration of the defined functionality of a workflow activity. Each execution of a task has a unique task identifier.   
@@ -960,7 +977,6 @@ En mall är ett designelement som används för att skapa ett objekt. Den inneh�
 
 <!--
 -----ACS -> SEEDS IN ACC-----
-
 +++**Test profiles**
 
 Allows targeting of additional recipients who do not match the defined targeting criteria. They are added to a message’s audience to detect any fraudulent use of your recipient database or to ensure delivery. Seen as the Seed type in the Campaign interface.
@@ -970,7 +986,7 @@ Learn more about [Test profiles](../../workflow/using/about-workflows.md).
 -->
 
 <!--
------NOT USEFUL?-----
+-----NOT FOR DOCS?-----
 +++**Total database storage**
 
 The aggregate size of the production and non-production instance(s) database storage managed by Adobe. 
@@ -993,6 +1009,7 @@ Transactional messaging är en Campaign-modul som är utformad för att hantera 
 Läs mer om [Transaktionsmeddelanden](../../message-center/using/about-transactional-messaging.md).
 +++
 
+<!------- USEFUL HERE??----->
 +++**Utlösta kampanjer**
 
 Utlösta kampanjer är kampanjer som körs när en API-begäran tas emot i ett arbetsflöde. API-anrop används av en Signal-aktivitet i arbetsflödet som initierar körningen av arbetsflödet.
@@ -1010,22 +1027,22 @@ Learn more about [Triggers](../../workflow/using/about-workflows.md).
 +++
 -->
 
-+++**Typologiregel**
-
-*Kontext: Kampanjoptimering*
-
-Typologiregler är affärsregler som implementeras som en del av leveransens analysfas. Typologiregler är kontroller av innehållet i leveransen (kontrollregler) eller målet för leveransen (filtreringsregler) eller annan logik (tryckregler) som uppfyller affärskraven. Regler är detaljelement som kan inkluderas i en eller flera typer.
-
-Läs mer om [Typologiregler](../../campaign-opt/using/about-campaign-typologies.md#typology-rules).
-+++
-
 +++**Typologi**
 
 *Kontext: Kampanjoptimering*
 
-En typologi är en gruppering av typologiregler som tillämpas på analysfasen för en leverans. En kampanjtypologi kan innehålla flera typologiregler, men en leverans kan bara referera till en typologi.
+En typologi är en gruppering av typologiregler som tillämpas på analysfasen av en leverans. En kampanjtypologi kan innehålla flera typologiregler, men en leverans kan bara referera till en typologi.
 
 Läs mer om [Typologier](../../campaign-opt/using/about-campaign-typologies.md#typologies).
++++
+
++++**Typologiregel**
+
+*Kontext: Kampanjoptimering*
+
+Typologiregler är affärsregler som implementeras som en del av leveransens analysfas. Typologiregler är kontroller av innehållet i leveransen (kontrollregler) eller målet för leveransen (filtreringsregler) eller annan logik (tryckregler) som uppfyller affärskraven. Regler är detaljelement som kan inkluderas i en eller flera typologier.
+
+Läs mer om [Typologiregler](../../campaign-opt/using/about-campaign-typologies.md#typology-rules).
 +++
 
 ## U - Z {#sec-6}
@@ -1056,18 +1073,18 @@ Webbprogram är dynamiska och interaktiva programsidor som hanteras av Campaign-
 Läs mer om [Webbprogram](../../web/using/about-web-applications.md).
 +++
 
-+++**Arbetsflödesjournal**
-
-Arbetsflödesjournalen är körningsloggen steg för steg för ett arbetsflöde. Den innehåller hela historiken eller granskningsspåret för arbetsflödet. Den används för utveckling, felsökning eller felsökning.
-
-Läs mer om [Arbetsflödesjournal](../../workflow/using/monitoring-workflow-execution.md).
-+++
-
 +++**Arbetsflöde**
 
 Ett arbetsflöde är en visuell representation av kampanjens körningsflöde. Det gör att du kan samordna alla processer och uppgifter i olika moduler på programservern. I den omfattande grafiska miljön kan du utforma processer såsom segmentering, kampanjkörning, filhantering och mänskligt deltagande osv. Arbetsflödesmotorn kör och spårar dessa processer.
 
 Läs mer om [Arbetsflöden](../../workflow/using/about-workflows.md).
++++
+
++++**Arbetsflödesjournal**
+
+Arbetsflödesjournalen är körningsloggen steg för steg för ett arbetsflöde. Den innehåller hela historiken eller granskningsspåret för arbetsflödet. Den används för utveckling, felsökning eller felsökning.
+
+Läs mer om [Arbetsflödesjournal](../../workflow/using/monitoring-workflow-execution.md).
 +++
 
 +++**Arbetsyta**
