@@ -6,9 +6,9 @@ role: User, Data Architect
 level: Beginner
 hide: true
 hidefromtoc: true
-source-git-commit: 891418c4120793cf296a65f7aed86e71925a0d66
+source-git-commit: cd26bf082d891e55bce489256dd9d43a1e3f243c
 workflow-type: tm+mt
-source-wordcount: '6454'
+source-wordcount: '6453'
 ht-degree: 2%
 
 ---
@@ -782,7 +782,7 @@ Läs mer om [Primär nyckel](../../configuration/using/schema/key.md).
 
 En profil är ett register med information som representerar en slutkund, potentiell kund eller lead. Varje profil motsvarar en post i nmsRecipient-tabellen eller en extern tabell som innehåller cookie-ID, Kund-ID, mobilidentifierare eller annan information som är relevant för en viss kanal.
 
-Läs mer om [Profiler](../../platforrm/using/about-profiles.md).
+Läs mer om [Profiler](../../platform/using/about-profiles.md).
 +++
 
 +++**Program**
