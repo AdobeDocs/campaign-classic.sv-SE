@@ -6,10 +6,10 @@ role: User, Data Architect
 level: Beginner
 hide: true
 hidefromtoc: true
-source-git-commit: dea815b07f0b91ed550060fa00cf0501ae6594f7
+source-git-commit: 9900fb627dfb310e8f34735a502997ef8e24e769
 workflow-type: tm+mt
-source-wordcount: '6087'
-ht-degree: 3%
+source-wordcount: '5993'
+ht-degree: 2%
 
 ---
 
@@ -140,14 +140,14 @@ Läs mer om [Godkännande av innehåll](../../campaign/using/marketing-campaign-
 
 Använd kontrollgrupper för att mäta effekten av era kampanjer genom att utesluta en del av deras målgrupp. Operatorer kan jämföra beteendet hos målpopulationen som fick meddelandet med beteendet hos kontakter som inte var målgrupper. Operatörerna kan även rikta in sig på en kontrollgrupp i framtida kampanjer utifrån de sändande loggarna.
 
-Läs mer om [Godkännande av innehåll](../../campaign/using/marketing-campaign-target.md#defining-a-control-group).
+Läs mer om [Innehållsgrupper](../../campaign/using/marketing-campaign-target.md#defining-a-control-group).
 +++
 
 +++**Kontrollpanelen**
 
-Kontrollpanelen hjälper dig att effektivisera arbetet som produktadministratör för Adobe Campaign genom att göra det möjligt att hantera inställningar och spåra användningar för var och en av dina förekomster. Det intuitiva gränssnittet låter dig enkelt övervaka användningen av nyckelresurser och utföra administrativa uppgifter såsom att lägga till IP-adresser i tillåtelselistan, övervaka SFTP-lagring, hantera nycklar och mycket annat.
+Kontrollpanelen hjälper produktadministratörer i Adobe Campaign att arbeta effektivare genom att låta dem hantera inställningar och spåra användningar för var och en av deras instanser. Med det intuitiva gränssnittet kan de enkelt övervaka användningen av nyckelresurser och utföra administrativa uppgifter som att lägga till IP-adresser i tillåtelselista, övervaka SFTP-lagring, nyckelhantering och mycket annat.
 
-Läs mer om [Godkännande av innehåll](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/key-features.html).
+Läs mer om [Panelen Innehåll](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/key-features.html).
 +++
 
 +++**Kuber**
@@ -170,7 +170,7 @@ Läs mer om [Anpassade resurser](../../configuration/using/about-schema-edition.
 
 Kampanjdatamodellen är en uppsättning scheman som definierar datatyperna och deras relationer (länkar). Datamodellen är en abstrakt definition som fysiskt implementeras med en databas som innehåller faktiska data.
 
-Läs mer om [Anpassade resurser](../../configuration/using/about-data-model.md).
+Läs mer om [Datamodell](../../configuration/using/about-data-model.md).
 +++
 
 +++**Arbetsflöde för databasrensning**
@@ -243,11 +243,11 @@ En leveransöversikt är en strukturerad uppsättning element (dokument, butiker
 Läs mer om [Direktreklam](../../delivery/using/about-direct-mail-channel.md).
 +++
 
-+++**Distributionsguiden**
++++**Distributionsguide**
 
 Distributionsguiden definierar parametrarna för Campaign-instansen, till exempel standardnamnutrymmet, databassorteringsschemat, datalagringsperioder och andra tekniska inställningar.
 
-Läs mer om [Distributionsguiden](../../installation/using/deploying-an-instance.md#deployment-wizard).
+Läs mer om [Distributionsguide](../../installation/using/deploying-an-instance.md#deployment-wizard).
 +++
 
 +++**Beskrivande analys**
@@ -261,7 +261,7 @@ Läs mer om [Beskrivande analys](../../reporting/using/about-descriptive-analysi
 
 *Kontext: Distribuerad marknadsföring*
 
-Distribuerade marknadsföringstillägg ger kampanjansvariga en gemensam arbetsyta för att implementera kampanjer mellan centrala enheter (huvudkontor, marknadsföringsavdelningar osv.) och lokala enheter (säljställen, regionala organ osv.). Detta samarbete bygger på en delad arbetsyta som kallas **lista med Campaign-paket**, där centralt skapade kampanjmallar och instanser erbjuds lokala enheter.
+Tillägget Distributed Marketing ger kampanjansvariga en gemensam arbetsyta för att implementera kampanjer mellan centrala enheter (huvudkontor, marknadsföringsavdelningar osv.) och lokala enheter (säljställen, regionala organ osv.). Detta samarbete bygger på en delad arbetsyta som kallas **lista med Campaign-paket**, där centralt skapade kampanjmallar och instanser erbjuds lokala enheter.
 
 Läs mer om [Distribuerad marknadsföring](../../distributed/using/about-distributed-marketing.md)
 +++
@@ -270,7 +270,7 @@ Läs mer om [Distribuerad marknadsföring](../../distributed/using/about-distrib
 
 Värdefördelningen är ett verktyg som visar fördelningen av värden för ett schemaattribut som för närvarande finns i databasen. Detta hjälper dig att avgöra vilka värden som är tillgängliga, deras antal och procenttal samt att undvika problem med skiftläge och stavning av värden när du skapar en fråga eller ett uttryck.
 
-Läs mer om [Distribuerad marknadsföring](../../platform/using/defining-filter-conditions.md#selecting-data-to-extract)
+Läs mer om [Fördelning av värden](../../platform/using/defining-filter-conditions.md#selecting-data-to-extract)
 +++
 
 +++**Domändelegering**
@@ -492,7 +492,7 @@ Läs mer om [Instansinställningar](../../installation/using/about-initial-confi
 
 Jobb hanteras av ett guidesystem som förenklar import och export av data till och från produkten. Jobb använder mallsystemet för enkelhet och enhetlighet och kan definieras för att köras enligt ett schema.
 
-Läs mer om [Importera och exportera jobb](../../platform/using/get-started-data-import-export.md).
+Läs mer om [import- och exportjobb](../../platform/using/get-started-data-import-export.md).
 +++
 
 +++**Listor**
@@ -542,12 +542,15 @@ Namnutrymmet är en partition som skiljer kunddatatyper från Adobe Campaign int
 Läs mer om [Namnutrymme](../../configuration/using/about-schema-reference.md#identification-of-a-schema).
 +++
 
-+++**Navigeringsfält**
+<!--
+----generic, not specific to campaign----
++++**Navigation bar**
 
-Navigeringsfältet är det navigeringselement som körs längst upp i gränssnittet. Navigeringsfältet grupperar om plattformens olika kärnfunktioner. Klicka på en länk i navigeringsfältet för att visa en uppsättning funktioner som är relaterade till den här funktionen. Listan över kärnfunktioner som du kan komma åt beror på vilka paket och tillägg du har installerat och på din åtkomstbehörighet. Syftet med navigeringsfältet är att förenkla skärmhanteringen och öka produktiviteten.
+The navigation bar is the navigation element running across the top of the interface. The navigation bar regroups the various core capabilities of the platform. Click a navigation bar link to display the set of functionalities related to this capability. The list of core capabilities you can access depends on the packages and add-ons you have installed and on your access rights. The purpose of the Navigation bar is to simplify screen management and increase productivity.
 
-Läs mer om [Navigeringsfält](../../platform/using/adobe-campaign-workspace.md#browsing-pages).
+Learn more about [Navigation Bar](../../platform/using/adobe-campaign-workspace.md#browsing-pages).
 +++
+-->
 
 +++**Navigeringsträd**
 
@@ -592,7 +595,7 @@ Läs mer om [Interaktion](../../interaction/using/interaction-and-offer-manageme
 
 Erbjudandet **Designmiljö** är den miljö i vilken operatorer skapar erbjudanden, definierar typologiregler och väljer det schema som erbjudandena riktar sig till. Registret för lagring av genererade offertförslag definieras också av miljön. Som standard innehåller tilläggsprogrammet Interaction ett **Design** miljö och **Live** miljö som är länkad till den. Båda miljöerna är förkonfigurerade för den inbyggda mottagartabellen.
 
-Läs mer om [Designmiljöer](../../interaction/using/fundamental-principles.md).
+Läs mer om [Erbjud designmiljöer](../../interaction/using/fundamental-principles.md).
 +++
 
 +++**Erbjud motorarbitrage**
@@ -619,7 +622,7 @@ Läs mer om [Interaktion](../../interaction/using/interaction-and-offer-manageme
 
 Erbjudandemiljön är rotmappen som definierar en erbjudandekatalog, dess tillgängliga utrymmen och miljöns fördefinierade filter. Operatörerna måste skapa en miljö för varje målinriktning. Det finns två typer av Erbjudandemiljöer: Design och Live.
 
-Läs mer om [Miljö](../../interaction/using/fundamental-principles.md).
+Läs mer om [Erbjudandemiljöer](../../interaction/using/fundamental-principles.md).
 +++
 
 +++**Erbjud Live-miljö**
@@ -628,7 +631,7 @@ Läs mer om [Miljö](../../interaction/using/fundamental-principles.md).
 
 Offer Live-miljön är kopplad till en kampanj **Designmiljö**. Den innehåller skrivskyddade erbjudanden vars innehåll och behörighet har godkänts via **Designmiljö**. De kan väljas för presentation på en webbplats eller infogas i ett utgående meddelande.
 
-Läs mer om [Live-miljöer](../../interaction/using/fundamental-principles.md).
+Läs mer om [Erbjud Live-miljöer](../../interaction/using/fundamental-principles.md).
 +++
 
 +++**Presentationsregler**
@@ -662,7 +665,7 @@ Läs mer om [Erbjudandeförslag](../../interaction/using/creating-offer-spaces.m
 
 *Kontext: Kampanjinteraktion*
 
-Ett erbjudande är resultatet av en åtgärd som består av att presentera ett erbjudande till en kontakt i ett visst erbjudandeutrymme, till exempel banderollen på en webbplats, ett e-postmeddelande eller SMS-innehåll. Detta resultat lagras i offerttabellen som definierar erbjudandet, mottagaren och tidsstämpeln, där alla erbjudanden som en mottagare har fått registreras.
+En offertrepresentation är information som används av kanalen för att visa erbjudandet. Erbjudanderepresentationen kan utformas med hjälp av återgivningsfunktionen i det utrymme som erbjudandet avser eller anges direkt i gränssnittet (t.ex. i blocket HTML). Ett erbjudande kan representeras av ett space.
 
 Läs mer om [Interaktion](../../interaction/using/interaction-and-offer-management.md).
 +++
@@ -682,7 +685,7 @@ Läs mer om [Erbjudandesimuleringar](../../interaction/using/about-offers-simula
 
 Ett erbjudandeutrymme är en mapp som definierar platsen där erbjudandet visas. Genom att definiera ett utrymme kan du ange vilken kanal som ska användas, bygga innehållet i erbjudandet och ange vilka erbjudanden som ska visas. Erbjudandeutrymmet är gränssnittet mellan kanalen och erbjudandemotorn.
 
-Läs mer om [Erbjudandesimuleringar](../../interaction/using/creating-offer-spaces.md).
+Läs mer om [Utrymme](../../interaction/using/creating-offer-spaces.md).
 +++
 
 +++**Erbjud teman**
