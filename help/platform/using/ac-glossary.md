@@ -4,11 +4,9 @@ title: Ordlista för Adobe Campaign
 description: Ordlista för Adobe Campaign
 role: User, Data Architect
 level: Beginner
-hide: true
-hidefromtoc: true
-source-git-commit: 9900fb627dfb310e8f34735a502997ef8e24e769
+source-git-commit: 3a540b59640d4cf128417f751d0076fd97310768
 workflow-type: tm+mt
-source-wordcount: '5993'
+source-wordcount: '6041'
 ht-degree: 2%
 
 ---
@@ -140,14 +138,14 @@ Läs mer om [Godkännande av innehåll](../../campaign/using/marketing-campaign-
 
 Använd kontrollgrupper för att mäta effekten av era kampanjer genom att utesluta en del av deras målgrupp. Operatorer kan jämföra beteendet hos målpopulationen som fick meddelandet med beteendet hos kontakter som inte var målgrupper. Operatörerna kan även rikta in sig på en kontrollgrupp i framtida kampanjer utifrån de sändande loggarna.
 
-Läs mer om [Innehållsgrupper](../../campaign/using/marketing-campaign-target.md#defining-a-control-group).
+Läs mer om [Kontrollgrupper](../../campaign/using/marketing-campaign-target.md#defining-a-control-group).
 +++
 
 +++**Kontrollpanelen**
 
 Kontrollpanelen hjälper produktadministratörer i Adobe Campaign att arbeta effektivare genom att låta dem hantera inställningar och spåra användningar för var och en av deras instanser. Med det intuitiva gränssnittet kan de enkelt övervaka användningen av nyckelresurser och utföra administrativa uppgifter som att lägga till IP-adresser i tillåtelselista, övervaka SFTP-lagring, nyckelhantering och mycket annat.
 
-Läs mer om [Panelen Innehåll](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/key-features.html).
+Läs mer om [Kontrollpanelen](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/key-features.html).
 +++
 
 +++**Kuber**
@@ -284,12 +282,12 @@ Läs mer om [Domändelegering](https://experienceleague.adobe.com/docs/control-p
 ## E - H {#sec-2}
 
 <!--
-----DEPREACTED----
+----DEPRECATED------>
 +++**E4X**
 
-The version of Javascript that is used in Adobe Campaign Classic. Sometimes called ECMAScript, it is an extension of Javascript that allows the mixing of Javascript and XML primitives in the same code. Note that E4X is classified as a deprecated language. 
+E4X är den version av Javascript som används i Adobe Campaign Classic. Ibland kallat ECMAScript är det ett tillägg till JavaScript som gör att JavaScript- och XML-primitiver kan blandas i samma kod. Observera att E4X klassificeras som ett inaktuellt språk.
 +++
--->
+
 
 +++**Villkor**
 
@@ -1060,14 +1058,14 @@ Läs mer om [Enhetsläge](../../interaction/using/about-inbound-channels.md).
 +++
 
 <!--
------NO OCCURRENCE IN ACC, OLD v6 CONCEPT?----
+-----NO OCCURRENCE IN ACC, OLD v6 CONCEPT?
 +++**Universes**
 
 Application pages hosted by the Campaign instance. Used for approval forms, landing pages, opt-out forms, preference pages or to implement other business requirements.  
 
 Learn more about [Universes](../../workflow/using/about-workflows.md).
 +++
--->
+------>
 
 +++**Webbapplikationer**
 
