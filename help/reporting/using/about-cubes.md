@@ -1,53 +1,21 @@
 ---
 product: campaign
-title: Kom igång med kuber
+title: Om kuber
 description: Kom igång med kuber
 feature: Reporting
+hide: true
+hidefromtoc: true
 exl-id: ade4c857-9233-4bc8-9ba1-2fec84b7c3e6
-source-git-commit: 81716a30a57d3ed8542b329d5fb9b0443fd4bf31
+source-git-commit: 2665ea2ba67a0ca2a4beb0b076543b3245acbebb
 workflow-type: tm+mt
-source-wordcount: '728'
-ht-degree: 11%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
 # Kom igång med kuber{#about-cubes}
 
 ![](../../assets/common.svg)
-
-Utforska data i databasen via **Marknadsföringsanalys** -modul. Det gör att ni kan analysera och mäta data, beräkna statistik, förenkla och optimera framtagning och beräkning av rapporter. Förutom detta kan ni med Marketing Analytics skapa rapporter och bygga upp målpopulationer. När de har identifierats lagras de i listor som kan användas i Adobe Campaign (målinriktning, segmentering osv.).
-
-Kuber används för att generera vissa inbyggda rapporter, inklusive leveransrapporter (leveransspårning, klickningar, öppningar osv.). Rapporter som baseras på kuber får endast användas som standard för datavolymer under 5 miljoner faktarader.
-
-Du kan utöka databasens undersöknings- och analyskapacitet samtidigt som det blir enklare för slutanvändarna att konfigurera rapporter och tabeller. Allt de behöver göra är att välja en befintlig (helt konfigurerad) kub när de skapar sin rapport eller tabell för att bearbeta beräkningar, mått och statistik.
-
-När de har skapats och konfigurerats används kuber i frågeformulär för rapportering och webbapplikationer. De kan användas och ändras i pivottabeller.
-
->[!CAUTION]
->
->**Marknadsföringsanalys** är en Adobe Campaign-modul. Den måste installeras på din instans så att du kan använda de funktioner som beskrivs nedan.
-
-Använd modulen Campaign Marketing Analytics för att:
-
-1. Skapa kuber
-
-   * sammanställa och lagra data i en arbetstabell för att på förhand beräkna indikatorer baserat på användarnas behov,
-   * minska datavolymen i de olika beräkningar som används för rapporter och frågor, vilket avsevärt optimerar beräkningstiderna för indikatorn,
-   * förenkla tillgången till data, göra det möjligt för användarna att hantera data (oavsett om de är i förväg aggregerade eller inte) beroende på olika dimensioner.
-
-   Mer information finns i [Skapa indikatorer](../../reporting/using/creating-indicators.md).
-
-1. Skapa pivottabeller
-
-   * utforska beräknade data, konfigurerade mått,
-   * välja vilka data som ska visas samt dess visningsläge,
-   * personalisera de åtgärder och indikatorer som används,
-   * erbjuder interaktiva analysverktyg till användare med icke-teknisk bakgrund.
-
-   Mer information finns i [Använd kuber för att utforska data](../../reporting/using/using-cubes-to-explore-data.md).
-
-1. Bygg en fråga med data som beräknas och aggregeras i en kub.
-1. Identifiera populationer och referera till dem i listor.
 
 ## Terminologi {#terminology}
 
