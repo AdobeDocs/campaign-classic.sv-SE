@@ -3,8 +3,10 @@ product: campaign
 title: Bästa tillvägagångssätt för kuber
 description: Bästa tillvägagångssätt för kuber
 feature: Reporting
+hide: true
+hidefromtoc: true
 exl-id: 5f22fa2c-b648-4126-9a24-1798adfa8f34
-source-git-commit: 36e546a34d8c2345fefed5d459095a76c6224a38
+source-git-commit: 1635366b9e1302acd3d8997312bf07d5c1a68982
 workflow-type: tm+mt
 source-wordcount: '1493'
 ht-degree: 0%
@@ -127,8 +129,6 @@ Den största datavolymen kan beräknas i aggregat.
 Aggregat är användbara när du hanterar stora datavolymer. De uppdateras automatiskt baserat på inställningarna som anges i den dedikerade arbetsflödesrutan, så att de data som samlats in senast kan integreras med indikatorerna
 
 Aggregat definieras på den relevanta fliken för varje kub.
-
-![](assets/s_advuser_cube_agregate_01.png)
 
 >[!NOTE]
 >

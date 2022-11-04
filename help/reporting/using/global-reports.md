@@ -4,7 +4,7 @@ title: Globala rapporter
 description: Globala rapporter
 feature: Reporting, Monitoring
 exl-id: 6839fd7e-ecf4-4504-90a8-0207bc3991e4
-source-git-commit: 294309239bc476669e9e017c27bd1b51a0bdaf8c
+source-git-commit: 1635366b9e1302acd3d8997312bf07d5c1a68982
 workflow-type: tm+mt
 source-wordcount: '2295'
 ht-degree: 4%
@@ -125,7 +125,7 @@ Du kan öppna varje rad i värdetabellen genom att klicka på [+] symbol. För v
 
 >[!NOTE]
 >
->Domännamnen som visas i den här rapporten definieras på kubnivå. Om du vill ändra dessa värden redigerar du **[!UICONTROL Delivery logs (broadlogrcp)]** kub. Mer information om detta finns i [det här avsnittet](../../reporting/using/about-cubes.md). The **[!UICONTROL Others]** -kategorin innehåller domännamn som inte tillhör en viss klass.
+>Domännamnen som visas i den här rapporten definieras på kubnivå. Om du vill ändra dessa värden redigerar du **[!UICONTROL Delivery logs (broadlogrcp)]** kub. Mer information om detta finns i [det här avsnittet](../../reporting/using/ac-cubes.md). The **[!UICONTROL Others]** -kategorin innehåller domännamn som inte tillhör en viss klass.
 
 ## Webbläsare {#browsers}
 

@@ -3,7 +3,7 @@ product: campaign
 title: Installera inbyggda Campaign Classic-paket
 description: Lär dig hur du installerar inbyggda Campaign-paket
 exl-id: 2bc077c4-ed65-4157-bfc9-df5d0442f476
-source-git-commit: c54102b2ec32fbea89ce41dd3c9fedb98e612996
+source-git-commit: 1635366b9e1302acd3d8997312bf07d5c1a68982
 workflow-type: tm+mt
 source-wordcount: '1254'
 ht-degree: 5%
@@ -145,7 +145,7 @@ I följande tabell visas alla inbyggda Campaign-paket.
   </tr> 
   <tr> 
    <td> Marknadsföringsanalys<br /> </td> 
-   <td> Gör att du kan analysera och mäta data, beräkna statistik, förenkla och optimera framtagning och beräkning av rapporter. Du kan också skapa rapporter och skapa målpopulationer. Valfritt. <a href="../../reporting/using/about-cubes.md">Läs mer</a><br /> </td> 
+   <td> Gör att du kan analysera och mäta data, beräkna statistik, förenkla och optimera framtagning och beräkning av rapporter. Du kan också skapa rapporter och skapa målpopulationer. Valfritt. <a href="../../reporting/using/ac-cubes.md">Läs mer</a><br /> </td> 
    <td> Marknadsföring<br /> </td> 
   </tr> 
   <tr> 

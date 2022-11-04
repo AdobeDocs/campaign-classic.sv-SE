@@ -1,10 +1,10 @@
 ---
 product: campaign
-title: '"Användningsfall: visa rapport gällande svar på en nätundersökning"'
-description: '"Användningsfall: visa rapport gällande svar på en nätundersökning"'
+title: "Användningsfall: visa rapport gällande svar på en nätundersökning"
+description: "Användningsfall: visa rapport gällande svar på en nätundersökning"
 feature: Surveys
 exl-id: 6be12518-86d1-4a13-bbc2-b2ec5141b505
-source-git-commit: f05eefc9945c4ead89eb448b6e28c3523559e055
+source-git-commit: 1635366b9e1302acd3d8997312bf07d5c1a68982
 workflow-type: tm+mt
 source-wordcount: '475'
 ht-degree: 5%
@@ -65,7 +65,7 @@ Så här samlar du in svaren på enkäten:
 
 ## Steg 2 - Skapa kuben, dess mått och indikatorer {#step-2---creating-the-cube--its-measures-and-its-indicators}
 
-Sedan kan du skapa kuben och konfigurera dess mått: De kommer att användas för att skapa de indikatorer som kommer att visas i rapporten. Mer information om hur du skapar och konfigurerar kuber finns i [Om kuber](../../reporting/using/about-cubes.md).
+Sedan kan du skapa kuben och konfigurera dess mått: De kommer att användas för att skapa de indikatorer som kommer att visas i rapporten. Mer information om hur du skapar och konfigurerar kuber finns i [Om kuber](../../reporting/using/ac-cubes.md).
 
 I det här exemplet baseras kuben på data i listan som matats av det arbetsflöde som skapats tidigare.
 

@@ -4,7 +4,7 @@ title: Samla in data som ska analyseras
 description: Samla in data som ska analyseras
 feature: Reporting
 exl-id: cf621374-88f9-4def-8bea-87e0ea69ecd3
-source-git-commit: 36e546a34d8c2345fefed5d459095a76c6224a38
+source-git-commit: 1635366b9e1302acd3d8997312bf07d5c1a68982
 workflow-type: tm+mt
 source-wordcount: '503'
 ht-degree: 3%
@@ -55,7 +55,7 @@ Du kan välja en kub som definierar frågan.
 
 ![](assets/reporting_query_from_cube.png)
 
-Med kuber kan du utöka databasens kapacitet för utforskande och analys samtidigt göra det enklare att konfigurera rapporter och tabeller för slutanvändare: Välj bara en befintlig, fullständigt konfigurerad kub och använd dess beräkningar, mått och statistik. Mer information om hur du skapar kuber finns i [det här avsnittet](../../reporting/using/about-cubes.md).
+Med kuber kan du utöka databasens kapacitet för utforskande och analys samtidigt göra det enklare att konfigurera rapporter och tabeller för slutanvändare: Välj bara en befintlig, fullständigt konfigurerad kub och använd dess beräkningar, mått och statistik. Mer information om hur du skapar kuber finns i [det här avsnittet](../../reporting/using/ac-cubes.md).
 
 Klicka på **[!UICONTROL Edit query...]** och välj de indikatorer som du vill visa eller använda i rapporten.
 

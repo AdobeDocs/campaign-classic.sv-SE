@@ -4,7 +4,7 @@ title: Ordlista för Adobe Campaign
 description: Ordlista för Adobe Campaign
 role: User, Data Architect
 level: Beginner
-source-git-commit: 3a540b59640d4cf128417f751d0076fd97310768
+source-git-commit: 1635366b9e1302acd3d8997312bf07d5c1a68982
 workflow-type: tm+mt
 source-wordcount: '6041'
 ht-degree: 2%
@@ -154,7 +154,7 @@ Läs mer om [Kontrollpanelen](https://experienceleague.adobe.com/docs/control-pa
 
 Cube är ett intuitivt dataundersökningsverktyg från Adobe Campaign som hjälper användare att skapa och dela dynamiska rapporter.
 
-Läs mer om [Kuber](../../reporting/using/about-cubes.md).
+Läs mer om [Kuber](../../reporting/using/ac-cubes.md).
 +++
 
 +++**Anpassade resurser**

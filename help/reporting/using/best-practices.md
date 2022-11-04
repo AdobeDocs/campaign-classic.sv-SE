@@ -4,7 +4,7 @@ title: Bästa praxis för rapportering
 description: Bästa praxis för kampanjrapportering
 feature: Reporting
 exl-id: 0c7f00f3-b16d-41c5-a7b1-f5a59201bf8c
-source-git-commit: 81716a30a57d3ed8542b329d5fb9b0443fd4bf31
+source-git-commit: 1635366b9e1302acd3d8997312bf07d5c1a68982
 workflow-type: tm+mt
 source-wordcount: '841'
 ht-degree: 0%
@@ -29,13 +29,13 @@ Om du vill optimera framtagningen, användningen och varaktigheten av en rapport
 
    Du kan till exempel:
 
-   * Utforska data i databasen och definiera mått. Läs mer [i det här avsnittet](../../reporting/using/about-cubes.md)
+   * Utforska data i databasen och definiera mått. Läs mer [i det här avsnittet](../../reporting/using/ac-cubes.md)
    * Lägg till indikatorer i en befintlig rapport. Läs mer [i det här avsnittet](../../reporting/using/about-reports-creation-in-campaign.md)
    * Visa data i databasen. Läs mer [i det här avsnittet](../../reporting/using/about-descriptive-analysis.md)
    * Skapa en ny leveransrapport. Läs mer [i det här avsnittet](../../reporting/using/about-reports-creation-in-campaign.md)),
    * Exportera data från Adobe Campaign-databasen (via ett arbetsflöde, se [det här avsnittet](../../workflow/using/about-workflows.md)
    * Skapa en pivottabell. Läs mer [i det här avsnittet](../../reporting/using/creating-a-table.md#creating-a-breakdown-or-pivot-table)
-   * Utforska aggregerade data. Läs mer [i det här avsnittet](../../reporting/using/about-cubes.md)
+   * Utforska aggregerade data. Läs mer [i det här avsnittet](../../reporting/using/ac-cubes.md)
    * Använd en guide för att analysera data. Läs mer [i det här avsnittet](../../reporting/using/about-descriptive-analysis.md)
    * Analysera stora datavolymer. Läs mer [i det här avsnittet](../../reporting/using/about-reports-creation-in-campaign.md)
 

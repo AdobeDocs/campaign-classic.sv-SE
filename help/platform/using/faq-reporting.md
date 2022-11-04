@@ -6,7 +6,7 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: b29340a0-954d-41e4-b0a3-9d356e4dc753
-source-git-commit: cfba72840f7a0d335516d38be24363865d83d18d
+source-git-commit: 1635366b9e1302acd3d8997312bf07d5c1a68982
 workflow-type: tm+mt
 source-wordcount: '317'
 ht-degree: 100%
@@ -43,7 +43,7 @@ Du kan utöka databasens undersöknings- och analyskapacitet samtidigt som det b
 
 När de har skapats och konfigurerats används kuber i frågeformulär för rapportering och webbapplikationer. De kan användas och ändras i pivottabeller.
 
-Läs mer om hur du kan [utforskar data](../../reporting/using/using-cubes-to-explore-data.md) med kuber.
+Läs mer om hur du kan [utforskar data](../../reporting/using/ac-cubes.md) med kuber.
 
 ## Kan jag skapa en rapport från svaren på en undersökning online? {#can-i-create-a-report-from-answers-to-an-online-survey-}
 

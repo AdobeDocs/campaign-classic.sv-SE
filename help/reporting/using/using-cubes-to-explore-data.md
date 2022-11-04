@@ -3,8 +3,10 @@ product: campaign
 title: Använd kuber för att utforska data
 description: Använd kuber för att utforska data
 feature: Reporting
+hide: true
+hidefromtoc: true
 exl-id: 32696bbf-1415-4214-837f-5437fdb8b4d4
-source-git-commit: 36e546a34d8c2345fefed5d459095a76c6224a38
+source-git-commit: 1635366b9e1302acd3d8997312bf07d5c1a68982
 workflow-type: tm+mt
 source-wordcount: '956'
 ht-degree: 2%
@@ -23,7 +25,7 @@ Marknadsföringsanalys gör det enklare att skapa rapporter och att identifiera 
 
 >[!NOTE]
 >
->Marknadsföringsanalys krävs för att skapa eller ändra kuber. Mer information finns i [Om kuber](../../reporting/using/about-cubes.md).
+>Marknadsföringsanalys krävs för att skapa eller ändra kuber. Mer information finns i [Om kuber](../../reporting/using/ac-cubes.md).
 
 ## Utforska data i en rapport {#exploring-the-data-in-a-report}
 
@@ -46,7 +48,7 @@ The **[!UICONTROL Add]** Med knapparna på varje axel kan du lägga till dimensi
 
    ![](assets/s_advuser_cube_in_report_04.png)
 
-1. Then select the parameters of this dimension.
+1. Välj sedan parametrarna för dimensionen.
 
    ![](assets/s_advuser_cube_in_report_04b.png)
 
@@ -72,11 +74,11 @@ The **[!UICONTROL Add]** Med knapparna på varje axel kan du lägga till dimensi
 
    ![](assets/s_advuser_cube_in_report_04c.png)
 
-### Step 3 - Configure the measures to display {#step-3---configuring-the-measures-to-display}
+### Steg 3 - Konfigurera de mått som ska visas {#step-3---configuring-the-measures-to-display}
 
 När raderna och kolumnerna är på plats anger du de mått som du vill visa samt deras visningsläge.
 
-Som standard visas bara ett mått. To add or configure measures:
+Som standard visas bara ett mått. Så här lägger du till eller konfigurerar mått:
 
 1. Klicka på knappen **[!UICONTROL Measures]**.
 
@@ -96,7 +98,7 @@ Som standard visas bara ett mått. To add or configure measures:
 
    Du kan sedan välja om måttetiketter ska visas eller inte. Mer information finns i [Konfigurera skärmen](../../reporting/using/concepts-and-methodology.md#configuring-the-display).
 
-1. It&#39;s possible to build new measures using existing ones. Det gör du genom att klicka **[!UICONTROL Create a measure]** och konfigurera det.
+1. Det går att bygga nya mått med hjälp av befintliga. Det gör du genom att klicka **[!UICONTROL Create a measure]** och konfigurera det.
 
    ![](assets/s_advuser_cube_in_report_config_02a.png)
 
@@ -108,15 +110,15 @@ Som standard visas bara ett mått. To add or configure measures:
 
    * Andel: Med den här typen av mått kan du beräkna antalet poster som mäts för en given dimension. Du kan beräkna proportionaliteten baserat på en dimension eller en underdimension.
    * Variation: Med det här måttet kan du beräkna variationen i värden för en nivå.
-   * Standard deviation: this type of measure lets you calculate deviations within each group of cells compared to the average of the values. Du kan till exempel jämföra inköpsvolymen för alla befintliga segment.
+   * Standardavvikelse: Med den här typen av mått kan du beräkna avvikelser inom varje cellgrupp jämfört med medelvärdet för värdena. Du kan till exempel jämföra inköpsvolymen för alla befintliga segment.
 
    Det skapade måttet läggs till i rapporten.
 
    ![](assets/s_advuser_cube_in_report_config_02b.png)
 
-   Once you have created a measure, you can edit it and, if necessary, change its configuration. Om du vill göra det klickar du på **[!UICONTROL Measures]** och sedan gå till fliken för det mått som du vill redigera.
+   När du har skapat ett mått kan du redigera det och vid behov ändra dess konfiguration. Om du vill göra det klickar du på **[!UICONTROL Measures]** och sedan gå till fliken för det mått som du vill redigera.
 
-   Then click **[!UICONTROL Edit the dynamic measure]** to access the settings menu.
+   Klicka sedan på **[!UICONTROL Edit the dynamic measure]** för att öppna inställningsmenyn.
 
 ## Skapa en målpopulation {#building-a-target-population}
 
@@ -166,4 +168,4 @@ Så här skapar du en tabell och utforskar data i en kub:
 
    ![](assets/s_advuser_cube_in_report_02.png)
 
-   Detta gör att du kan skapa rapporten som ska visas. For more on this, refer to [Step 2 - Selecting lines and columns](#step-2---selecting-lines-and-columns).
+   Detta gör att du kan skapa rapporten som ska visas. Mer information finns i [Steg 2 - Markera rader och kolumner](#step-2---selecting-lines-and-columns).
