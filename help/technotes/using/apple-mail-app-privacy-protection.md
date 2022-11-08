@@ -3,9 +3,9 @@ product: campaign
 title: Skydd av e-postsekretess i appen Apple Mail
 description: Läs om hur era kampanjer kan påverkas av Apple funktion för skydd av personuppgifter för e-post
 exl-id: e044b35a-b49f-408a-900d-2afe8ff10212
-source-git-commit: 1a9e0f8bf374e10af938d15dcebe943819ae327b
+source-git-commit: 43d9eac2ed161465ca00ee4f511e4c020b4c44a2
 workflow-type: tm+mt
-source-wordcount: '2100'
+source-wordcount: '2068'
 ht-degree: 1%
 
 ---
@@ -20,7 +20,7 @@ ht-degree: 1%
 
 ## Hur påverkas mina kampanjer?
 
-Adobe Campaign ger möjlighet att använda spårning av pixlar för att spåra e-postöppningar. Ni kan använda den här funktionen inte bara för målinriktning och kampanjer, utan även för mätvärden. Ni kan till exempel använda öppningsfrekvenser via e-post för att mäta kampanjens effektivitet och användarengagemanget. Kort och gott kan segmentering, målinriktning och mätvärden påverkas i era kampanjer. [Läs mer](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/technotes/apple-mail-privacy-faq.html#in-addition-to-measuring-opens%2C-what-else-is-impacted%3F){target=&quot;_blank&quot;}.
+Adobe Campaign ger möjlighet att använda spårning av pixlar för att spåra e-postöppningar. Ni kan använda den här funktionen inte bara för målinriktning och kampanjer, utan även för mätvärden. Ni kan till exempel använda öppningsfrekvenser via e-post för att mäta kampanjens effektivitet och användarengagemanget. Kort och gott kan segmentering, målinriktning och mätvärden påverkas i era kampanjer.
 
 ## Vilka åtgärder ska jag vidta?
 
@@ -450,7 +450,3 @@ I följande exempel visas hur du kan använda arbetsflöden för att dela upp po
    Den här typen av arbetsflöde är användbart om du lagrar mottagare i en annan tabell än den färdiga mottagartabellen.
 
    ![](assets/export-tracking-data-wkf-2.png)
-
-## Användbara länkar
-
-[Vanliga frågor om skydd av personuppgifter för Apple Mail](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/technotes/apple-mail-privacy-faq.html){target=&quot;_blank&quot;}

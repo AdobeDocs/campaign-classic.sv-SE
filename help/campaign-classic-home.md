@@ -3,10 +3,10 @@ keywords: Campaign Classic;hem;populära ämnen
 product: campaign
 title: Produktdokumentation för Adobe Campaign Classic v7
 exl-id: 6b3f1689-80de-49fd-b7ee-7a2a1931d157
-source-git-commit: 7f24c8be599d6dece41de848d64feb8079b10ff3
+source-git-commit: 43d9eac2ed161465ca00ee4f511e4c020b4c44a2
 workflow-type: tm+mt
-source-wordcount: '235'
-ht-degree: 50%
+source-wordcount: '211'
+ht-degree: 52%
 
 ---
 
@@ -19,8 +19,6 @@ ht-degree: 50%
 * **[Versionsprogram 2022](technotes/using/dc-migration.md)**<br/> Uppgradera din miljö och förbättra säkerhet, infrastruktur och prestanda
 
 * **[juliversionen är live!](rn/using/latest-release.md)**<br/> Upptäck nya funktioner, förbättringar och korrigeringar i versionsinformationen
-
-* **[Vanliga frågor om skydd av personuppgifter för Apple Mail](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/technotes/apple-mail-privacy-faq.html?lang=sv)** och **[technote](technotes/using/apple-mail-app-privacy-protection.md)**<br/> Hitta vägledning som svar på Apple meddelande om iOS 15
 
 * **[Ta bort felaktiga hårda studsar](delivery/using/update-bounce-qualification.md)**<br/> Lär dig hur du uppdaterar felaktiga hårddiskmarkeringar efter Apple driftstopp
 

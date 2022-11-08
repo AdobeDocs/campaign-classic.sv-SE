@@ -6,9 +6,9 @@ title: Användarhandbok för Campaign Classic v7
 user-guide-description: Med Adobe Campaign kan du använda omfattande kunddata för att skapa, samordna och leverera dynamiska kampanjer som kunderna verkligen vill ha – via e-post, mobiler, offlinekanaler med mera.
 sub-product: adobe campaign classic
 type: Documentation
-source-git-commit: 1635366b9e1302acd3d8997312bf07d5c1a68982
+source-git-commit: e91024df3ee2ed761035806f62ddc679c52039d9
 workflow-type: tm+mt
-source-wordcount: '2588'
+source-wordcount: '2570'
 ht-degree: 100%
 
 ---
@@ -315,11 +315,6 @@ ht-degree: 100%
       + [Konfigurera åtkomst till rapporten](reporting/using/configuring-access-to-the-report.md)
       + [Åtgärder på rapporter](reporting/using/actions-on-reports.md)
    + [Designa rapporter med kuber](reporting/using/ac-cubes.md)
-   + Designa rapporter med kuber {#designing-reports-with-cubes}
-      + [Kom igång med kuber](reporting/using/about-cubes.md)
-      + [Skapa indikatorer](reporting/using/creating-indicators.md)
-      + [Använd kuber för att utforska data](reporting/using/using-cubes-to-explore-data.md)
-      + [Koncept och metodik](reporting/using/concepts-and-methodology.md)
 + Designa webbinnehåll {#designing-content}
    + Webbapplikationer {#web-applications}
       + [Kom igång med webbapplikationer ](web/using/about-web-applications.md)
