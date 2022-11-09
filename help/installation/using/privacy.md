@@ -4,7 +4,7 @@ title: Sekretess
 description: Läs mer om de bästa sätten att följa vad gäller sekretess
 feature: URL Personalization, Privacy
 exl-id: 0a3473bf-0528-486d-a799-8db86fece522
-source-git-commit: f05eefc9945c4ead89eb448b6e28c3523559e055
+source-git-commit: fcbaacccaf3f1771570e42e7a83847ed3fd998ef
 workflow-type: tm+mt
 source-wordcount: '892'
 ht-degree: 4%
@@ -77,7 +77,7 @@ Om du vill inaktivera URL:er som har skapats i tidigare versioner följer du de 
 
 Om du vill aktivera URL-signering följer du de här stegen på alla Campaign-servrar samtidigt:
 
-1. I serverkonfigurationsfilen (serverConf.xml) ändrar du **signEmailLinks** till **false**.
+1. I serverkonfigurationsfilen (serverConf.xml) ändrar du **signEmailLinks** till **true**.
 1. Starta om **nlserver** service.
 1. Starta om webbservern på spårningsservern (apache2 på Debian, httpd on CentOS/RedHat, IIS on Windows).
 
