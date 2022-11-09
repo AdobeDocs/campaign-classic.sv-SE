@@ -4,7 +4,7 @@ title: Publicera, spåra och använd insamlade data
 description: Lär dig publicera, spåra och använda data som samlats in i en undersökning
 feature: Surveys
 exl-id: 3cf3c486-6640-4d67-95cf-50d5767deb60
-source-git-commit: 36e546a34d8c2345fefed5d459095a76c6224a38
+source-git-commit: 1f80c9967f4859f26dd2890d657f95ada6cf2087
 workflow-type: tm+mt
 source-wordcount: '831'
 ht-degree: 2%
@@ -13,7 +13,7 @@ ht-degree: 2%
 
 # Publicera, spåra och använd insamlade data{#publish-track-and-use-collected-data}
 
-![](../../assets/v7-only.svg)
+![](../../assets/common.svg)
 
 När formuläret har skapats, konfigurerats och publicerats kan du dela länken med målgruppen och spåra svaren.
 

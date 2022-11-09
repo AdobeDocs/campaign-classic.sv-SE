@@ -4,7 +4,7 @@ title: Personaliserade kuponger
 description: Lär dig hur du skapar och infogar personliga kuponger
 feature: Personalization
 exl-id: 182939bb-7aff-4667-bda9-c5d48be3b946
-source-git-commit: 1e11b7419388698f5de366cbeddf2be88ef12873
+source-git-commit: 1f80c9967f4859f26dd2890d657f95ada6cf2087
 workflow-type: tm+mt
 source-wordcount: '885'
 ht-degree: 1%
@@ -13,7 +13,7 @@ ht-degree: 1%
 
 # Personaliserade kuponger{#personalized-coupons}
 
-![](../../assets/v7-only.svg)
+![](../../assets/common.svg)
 
 Genom att lägga till kuponger i leveranserna kan mottagarna få bättre värde för produkter och tjänster. Du kan använda Campaign-kupongmodulen för att skapa en uppsättning kuponger som du förväntar dig ska läggas till kommande marknadsföringserbjudanden. När du är redo att skapa en leverans tilldelar du tillämpliga kuponger. Eftersom kuponger är giltiga för en viss period är en tilldelad kupong unikt kopplad till leveransmeddelandet. Dessutom bekräftar Campaign att det finns tillräckligt många kuponger för antalet meddelanden innan leveransen skickas.
 

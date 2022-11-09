@@ -4,7 +4,7 @@ title: Skapa en referensundersökning för en vän
 description: Lär dig steg för att skapa ett formulär för att referera till en vän
 feature: Surveys
 exl-id: bd94c41a-813a-4ddb-a2bd-c3deab022482
-source-git-commit: f05eefc9945c4ead89eb448b6e28c3523559e055
+source-git-commit: 1f80c9967f4859f26dd2890d657f95ada6cf2087
 workflow-type: tm+mt
 source-wordcount: '618'
 ht-degree: 0%
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Användningsfall: skapa ett hänvisningsformulär{#use-case-creating-a-refer-a-friend-form}
 
-![](../../assets/v7-only.svg)
+![](../../assets/common.svg)
 
 I det här exemplet vill vi erbjuda mottagarna i databasen en tävling. Webbformuläret innehåller ett avsnitt där du kan ange svar och ett annat där du kan hänvisa en vän genom att ange dennes e-postadress.
 
