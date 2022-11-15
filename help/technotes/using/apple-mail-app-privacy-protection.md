@@ -3,10 +3,10 @@ product: campaign
 title: Skydd av e-postsekretess i appen Apple Mail
 description: Läs om hur era kampanjer kan påverkas av Apple funktion för skydd av personuppgifter för e-post
 exl-id: e044b35a-b49f-408a-900d-2afe8ff10212
-source-git-commit: 43d9eac2ed161465ca00ee4f511e4c020b4c44a2
+source-git-commit: 83fe7eb4f857306ac1c8bb3a93a9393b76ae1e3c
 workflow-type: tm+mt
-source-wordcount: '2068'
-ht-degree: 1%
+source-wordcount: '2056'
+ht-degree: 0%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 1%
 
 ## Vad har ändrats?
 
-2021 introducerade Apple nya funktioner för integritetsskydd för sina egna Mail-appar. Den här appen innehåller nu funktionen Apple sekretesskydd för e-post. Avsändare kan i princip inte längre använda spårningspixlar för att samla in information om mottagare som har valt att aktivera funktionen Apple skydd av personuppgifter. [Läs mer](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/technotes/apple-mail-privacy-faq.html?lang=sv){target=&quot;_blank&quot;}.
+2021 introducerade Apple nya funktioner för integritetsskydd för sina egna Mail-appar. Den här appen innehåller nu funktionen Apple sekretesskydd för e-post. Avsändare kan i princip inte längre använda spårningspixlar för att samla in information om mottagare som har valt att aktivera funktionen Apple skydd av personuppgifter.
 
 ## Hur påverkas mina kampanjer?
 

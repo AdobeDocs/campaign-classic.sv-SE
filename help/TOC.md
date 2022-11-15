@@ -6,9 +6,9 @@ title: Användarhandbok för Campaign Classic v7
 user-guide-description: Med Adobe Campaign kan du använda omfattande kunddata för att skapa, samordna och leverera dynamiska kampanjer som kunderna verkligen vill ha – via e-post, mobiler, offlinekanaler med mera.
 sub-product: adobe campaign classic
 type: Documentation
-source-git-commit: e91024df3ee2ed761035806f62ddc679c52039d9
+source-git-commit: 83fe7eb4f857306ac1c8bb3a93a9393b76ae1e3c
 workflow-type: tm+mt
-source-wordcount: '2570'
+source-wordcount: '2557'
 ht-degree: 100%
 
 ---
@@ -841,7 +841,6 @@ ht-degree: 100%
       + [Support för TLS 1.0 och 1.1 upphör](technotes/using/eol-tls-support.md)
    + E-postmeddelanden och push-meddelanden{#technotes-email}
       + [Sekretesskydd för Mail i Apple iOS](technotes/using/apple-mail-app-privacy-protection.md)
-      + [Vanliga frågor om sekretesskydd för Apple Mail](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/technotes/apple-mail-privacy-faq.html?lang=sv)
       + [Så här uppdaterar du felaktiga hårda studsar](delivery/using/update-bounce-qualification.md)
       + [Uppdatering av iOS-certifikat](technotes/using/ios-certificate-update.md)
       + [Uppdatering av spårade URL:er](technotes/using/tracked-urls.md)
