@@ -1,15 +1,15 @@
 ---
 product: campaign
 title: Om social marknadsföring
-description: Lär dig hur du använder Campaign för att interagera med kunder via Facebook och Twitter
+description: Lär dig hur du använder Campaign för att interagera med kunder via Twitter
 audience: social
 content-type: reference
 topic-tags: introduction
 exl-id: c8fd5f75-9386-42dd-bfb6-8086a86aa324
-source-git-commit: d891a235002d465f3b00fafa375d87d42ebafaa6
+source-git-commit: c4a545ee3cffa16e72a7ba1ca3010fffd43e61c2
 workflow-type: tm+mt
-source-wordcount: '126'
-ht-degree: 4%
+source-wordcount: '90'
+ht-degree: 6%
 
 ---
 
@@ -17,14 +17,10 @@ ht-degree: 4%
 
 ![](../../assets/v7-only.svg)
 
-The **Hantera sociala nätverk** (Social Marketing) Med en applikation som är utformad för att hantera sociala nätverk kan ni interagera med kunder och potentiella kunder via Facebook och Twitter.
+The **Hantera sociala nätverk** (Social Marketing) Med en applikation som är utformad för att hantera sociala nätverk kan ni interagera med kunder och potentiella kunder via Twitter.
 
-**Hämtar nya kontakter**
+Lär dig de viktigaste stegen för att integrera Campaign och Twitter i [Kampanjdokumentation v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/connect/ac-tw.html)
 
-Adobe Campaign Social Marketing gör det enkelt att skaffa nya kontakter via Facebook: kontakta användare och fråga dem om de vill dela sin profilinformation. Om de godkänner det återhämtar Adobe Campaign automatiskt data, vilket gör att ni kan genomföra riktade kampanjer och, när det är möjligt, implementera flerkanalsstrategier.
+Som lokal kund eller hybridkund måste ditt Twitter-externa konto konfigureras och aktiveras. För hybridkonfigurationer är **Mid-sourcing** -fliken måste även anges med en aktiv anslutning till mittkällplattformen.
 
->[!IMPORTANT]
->
->Facebook och Twitter gör regelbundna ändringar i sina skärmar och processer. Det här dokumentet kommer att uppdateras i enlighet med detta.
->
->Adobe Campaign begär att du följer Facebook och Twitter användarvillkor.
+![](assets/tw-external-account.png)

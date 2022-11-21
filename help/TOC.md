@@ -6,9 +6,9 @@ title: Användarhandbok för Campaign Classic v7
 user-guide-description: Med Adobe Campaign kan du använda omfattande kunddata för att skapa, samordna och leverera dynamiska kampanjer som kunderna verkligen vill ha – via e-post, mobiler, offlinekanaler med mera.
 sub-product: adobe campaign classic
 type: Documentation
-source-git-commit: 0dd0b6f1aa69a6848a75e6299bd751de0bfddeb9
+source-git-commit: 5792ad762befb97888ad32406d3bcb7f97df3fa7
 workflow-type: tm+mt
-source-wordcount: '2553'
+source-wordcount: '2524'
 ht-degree: 99%
 
 ---
@@ -584,16 +584,6 @@ ht-degree: 99%
    + [Användningsfall](message-center/using/transactional-email-with-attachments.md)
 + Integrering med sociala medier {#integrating-with-social-media}
    + [Om social marknadsföring](social/using/about-social-marketing.md)
-   + Konfiguration {#configuration}
-      + [Starta arbetsflöden](social/using/starting-workflows.md)
-      + [Skapa en Facebook-applikation](social/using/creating-a-facebook-application.md)
-      + [Konfigurera publicering på Twitter](social/using/configuring-publishing-on-twitter.md)
-   + Publicera på Twitter {#publishing-on-facebook-twitter}
-      + [Kom igång med Twitter](social/using/overview.md)
-      + [Publicera på Twitter](social/using/publishing-on-twitter.md)
-   + Hämta Facebook-kontakter {#annexes}
-      + [Exempel på Facebook-appar](social/using/examples-of-facebook-apps.md)
-      + [Spåra](social/using/tracking.md)
 + Installations- och konfigureringshandbok {#installing-campaign-classic}
    + Arkitekturprinciper {#architecture-and-hosting-models}
       + [Allmän arkitektur](installation/using/general-architecture.md)

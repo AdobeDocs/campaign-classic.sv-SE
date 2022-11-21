@@ -6,10 +6,10 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: d60d67de-6618-4f3b-be4a-ad7633ab5645
-source-git-commit: 45c5ef3315e4208184e9c0ab5f20678646fe2d0b
-workflow-type: ht
-source-wordcount: '1624'
-ht-degree: 100%
+source-git-commit: 0ecf9c69cc4b444feda1e42701a3a27f2b2e7eeb
+workflow-type: tm+mt
+source-wordcount: '1684'
+ht-degree: 96%
 
 ---
 
@@ -41,11 +41,20 @@ Kunder uppmanas att se över om de använder funktionen i den aktuella driftsät
  <tbody> 
    <tr>
    <td><strong>Funktion</strong></td>
-   <td><strong>Ersättning</strong></td>
+   <td><strong>Information</strong></td>
   </tr>
 <tr>
- <td>N/A</td>
- <td>N/A</td>
+ <td>Social marknadsföring med Facebook</td>
+ <td>Social marknadsföring med Facebook är nu föråldrat. Du kan använda Twitter-integrering för att publicera på sociala medier, eller arbeta med Adobe för att skapa en anpassad kanal.
+ <p></p>
+  <p>Måldatum för borttagning: i slutet av 2023</p>
+  </td>
+</tr>
+<tr>
+ <td>ACS-koppling</td>
+ <td>ACS Connector (Prime-erbjudande) är nu föråldrat. Du kan använda funktioner för Campaigns export/import för att extrahera och mata in data i båda produkterna.<p></p>
+  <p>Måldatum för borttagning: i slutet av 2023</p>
+  </td>
 </tr>
  </tbody> 
 </table>

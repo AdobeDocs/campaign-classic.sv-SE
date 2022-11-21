@@ -6,10 +6,10 @@ audience: platform
 content-type: reference
 topic-tags: administration-basics
 exl-id: 4a17d5e8-c73f-42e7-b641-0fee6a52c5c0
-source-git-commit: ae235d39c4a78e0a2507f6baaebbdc9986dbf995
+source-git-commit: 31a475c98b09bbeca6a16c6fd98698af10016033
 workflow-type: tm+mt
-source-wordcount: '1818'
-ht-degree: 7%
+source-wordcount: '1714'
+ht-degree: 8%
 
 ---
 
@@ -117,7 +117,7 @@ Följande kanaler kan konfigureras:
 * [Telefon](../../delivery/using/steps-about-delivery-creation-steps.md#other-channels)
 * [Direktmeddelande](../../delivery/using/about-direct-mail-channel.md)
 * [byrå](../../delivery/using/steps-about-delivery-creation-steps.md#other-channels)
-* [Twitter](../../social/using/configuring-publishing-on-twitter.md)
+* [Twitter](../../social/using/about-social-marketing.md)
 * [iOS](../../delivery/using/configuring-the-mobile-application.md)
 * [Android-kanal](../../delivery/using/configuring-the-mobile-application-android.md)
 
@@ -225,29 +225,6 @@ Konfigurationsinställningarna för det externa kontot beror på databasmotorn. 
 * Konfigurera åtkomst till [sybase IQ](../../installation/using/configure-fda-sybase.md)
 * Konfigurera åtkomst till [Teradata](../../installation/using/configure-fda-teradata.md)
 
-### Facebook Connect {#facebook-connect-external-account}
-
-The **[!UICONTROL Facebook Connect]** Med ett externt konto kan du visa personaliserat innehåll i dina Facebook-program, vilket gör det enklare att hitta potentiella kunder via det sociala nätverket.
-
-För varje Facebook-program måste du skapa en **[!UICONTROL Facebook Connect]** skriv ett externt konto. Mer information finns i [page](../../social/using/creating-a-facebook-application.md#configuring-external-accounts).
-
-![](assets/ext_account_12.png)
-
-* **[!UICONTROL Hosting mode]**
-
-   Värdläge för programmet mellan **[!UICONTROL hosted by a partner]** eller **[!UICONTROL hosted by this instance]**.
-
-* **[!UICONTROL Application ID]**
-
-   Program-ID för ditt Facebook-program.
-
-* **[!UICONTROL Application secret]**
-
-   Programhemlighet för ditt Facebook-program.
-
-Om du väljer värdserver för det här instansläget måste webbadressen för den säkra arbetsytan klistras in i **Facebook webbspel (https)** fält på Facebook
-
-Om du vill veta var du hittar dessa autentiseringsuppgifter kan du läsa detta [page](https://developers.facebook.com/docs/facebook-login/access-tokens).
 
 ## Externa konton för integrering av lösningar i Adobe
 

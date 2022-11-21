@@ -3,9 +3,9 @@ product: campaign
 title: Installera inbyggda Campaign Classic-paket
 description: Lär dig hur du installerar inbyggda Campaign-paket
 exl-id: 2bc077c4-ed65-4157-bfc9-df5d0442f476
-source-git-commit: 1635366b9e1302acd3d8997312bf07d5c1a68982
+source-git-commit: 978da934b483a54509ad806f375d9b2bb0577dac
 workflow-type: tm+mt
-source-wordcount: '1254'
+source-wordcount: '1253'
 ht-degree: 5%
 
 ---
@@ -229,8 +229,8 @@ I följande tabell visas alla inbyggda Campaign-paket.
    <td> Alla </td> 
   </tr> 
   <tr> 
-   <td> ACS-koppling<br /> </td> 
-   <td> Bridges Adobe Campaign v7 and Adobe Campaign Standard. Det är en integrerad funktion i Campaign v7 som automatiskt återger data till Campaign Standarden och kombinerar det bästa av båda programmen. Valfritt. <a href="../../integrations/using/acs-connector-principles-and-data-cycle.md">Läs mer</a> <br /> </td> 
+   <td> ACS Connector (utgått)<br /> </td> 
+   <td> Bridges Adobe Campaign v7 and Adobe Campaign Standard. Det är en integrerad funktion i Campaign v7 som automatiskt återger data till Campaign Standarden och kombinerar det bästa av båda programmen. Valfritt.<br /> </td> 
    <td> Marknadsföring </td> 
   </tr> 
  </tbody> 

@@ -6,10 +6,10 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: d65869ca-a785-4327-8e8d-791c28e4696c
-source-git-commit: f94d7e2cddd75d50cb21973a62ec223f2344edf1
+source-git-commit: ca2f50a501c63cc8b2d4de5d9a41b655a6b6d6cf
 workflow-type: tm+mt
-source-wordcount: '2654'
-ht-degree: 77%
+source-wordcount: '2713'
+ht-degree: 75%
 
 ---
 
@@ -27,22 +27,19 @@ _21 november 2022_
 
 * Efter att Microsoft Internet Explorer 11 har upphört används Edge Chromium i återgivningsmotorn HTML för kontrollpaneler i klientkonsolen. (NEO-20741)
 
-<!--
-**Deprecated features**
-
-* Social Marketing with Facebook is now deprecated. You can still use Twitter integration to post on social media, or work with Adobe to create a custom channel.
-
-* ACS Connector (prime offering) is now deprecated. You can use Campaign export/import capabilities to extract and inject data in both products.
-
-Learn more in the [Deprecated and removed features page](deprecated-features.md).
-
--->
-
 **Förbättringar**
 
 * Google BigQuery-kopplingen har nu fullständigt stöd för booleska fält. (NEO-49181)
 * Nu kan du konfigurera giltighetsperioden för IMS-cookies i `Configuration for the redirection service` i filen serverConf.xml. Detta gäller följande cookies: `uuid230`, `nllastdelid` och `AMCV_` (NEO-42541)
 * IP-adressen kan nu döljas i &quot;/r/test&quot;-begäran genom att ange `showSourceIP` till false i omdirigeringsnoden för filen serverConf.xml. [Läs mer](../../installation/using/the-server-configuration-file.md#redirection-redirection)(NEO-46656)
+
+**Inaktuella funktioner**
+
+* Social marknadsföring med Facebook är nu föråldrat. Du kan använda Twitter-integrering för att publicera på sociala medier, eller arbeta med Adobe för att skapa en anpassad kanal.
+
+* ACS Connector (Prime-erbjudande) är nu föråldrat. Du kan använda funktioner för Campaigns export/import för att extrahera och mata in data i båda produkterna.
+
+Läs mer på sidan [Funktioner som är inaktuella eller har tagits bort](deprecated-features.md).
 
 **Andra ändringar**
 

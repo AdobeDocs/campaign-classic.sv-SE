@@ -3,8 +3,10 @@ product: campaign
 title: Synkronisera webbapplikationer
 description: Lär dig hur du synkroniserar webbprogram med ACS Connector
 feature: ACS Connector
+hide: true
+hidefromtoc: true
 exl-id: 975bdc94-5da4-45ae-a3bd-e8674b447098
-source-git-commit: c54102b2ec32fbea89ce41dd3c9fedb98e612996
+source-git-commit: 978da934b483a54509ad806f375d9b2bb0577dac
 workflow-type: tm+mt
 source-wordcount: '801'
 ht-degree: 1%
