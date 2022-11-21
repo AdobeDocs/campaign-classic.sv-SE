@@ -6,7 +6,7 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: d65869ca-a785-4327-8e8d-791c28e4696c
-source-git-commit: 95c4a83037bcd2e22a03ac80d1ec4a7896a94ce3
+source-git-commit: d592902157b499423283307402eb74452d4827bc
 workflow-type: tm+mt
 source-wordcount: '2709'
 ht-degree: 75%
@@ -36,7 +36,6 @@ _21 november 2022_
 **Inaktuella funktioner**
 
 * Social marknadsföring med Facebook är nu föråldrat. Du kan använda Twitter-integrering för att publicera på sociala medier, eller arbeta med Adobe för att skapa en anpassad kanal.
-
 * ACS Connector (Prime-erbjudande) är nu föråldrat. Du kan använda funktioner för Campaigns export/import för att extrahera och mata in data i båda produkterna.
 
 Läs mer på sidan [Funktioner som är inaktuella eller har tagits bort](deprecated-features.md).
