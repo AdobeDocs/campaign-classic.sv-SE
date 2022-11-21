@@ -2,8 +2,10 @@
 product: campaign
 title: Technote - Adobe Campaign-konfigurationsuppdateringar
 description: Adobe Campaign konfigurationsuppdateringar
+hide: true
+hidefromtoc: true
 exl-id: 7db02123-2e2a-40d9-8385-728ff69985e4
-source-git-commit: f4513834cf721f6d962c7c02c6c64b2171059352
+source-git-commit: 8ea5a42e0539ea23c1d9940e3f38f2c90fdcc223
 workflow-type: tm+mt
 source-wordcount: '1125'
 ht-degree: 12%
@@ -101,7 +103,7 @@ När alla instanser har uppgraderats måste även klientkonsolen uppgraderas til
 
 ## Integrering med utlösare från Experience Cloud {#acc-triggers-updates}
 
-Den gamla autentiseringstjänsten för autentisering har nått slutet av livscykeln. Autentisering av utlösarintegration, som ursprungligen baserades på AUTH-autentiseringsinställningar för åtkomst till pipeline, har flyttats till Adobe I/O. Äldre autentiseringsmodell med Campaign [har tagits ur bruk](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-discussions/adobe-analytics-legacy-api-end-of-life-notice/td-p/385411) på **September 2021**. Värdmiljöer drar nytta av en förlängning till **23 februari 2022**. Kontakta Adobe kundtjänst för support på plats eller som hybridkund till februari 2022. Du måste ange [AppID:et för OAuth-programmet](../../integrations/using/configuring-pipeline.md?lang=en#step-optional) till Adobe.
+Den gamla autentiseringstjänsten för autentisering har nått slutet av livscykeln. Autentisering av utlösarintegration, som ursprungligen baserades på AUTH-autentiseringsinställningar för åtkomst till pipeline, har flyttats till Adobe I/O. Äldre autentiseringsmodell med Campaign [har tagits ur bruk](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-discussions/adobe-analytics-legacy-api-end-of-life-notice/td-p/385411) på **September 2021**. Värdmiljöer drar nytta av en förlängning till **23 februari 2022**. Kontakta Adobe kundtjänst för support på plats eller som hybridkund till februari 2022. Du måste ange [AppID:et för OAuth-applikationen](../../integrations/using/configuring-pipeline.md?lang=en#step-optional) till Adobe.
 
 **Påverkas du?**
 
