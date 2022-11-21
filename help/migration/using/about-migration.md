@@ -6,9 +6,9 @@ audience: migration
 content-type: reference
 topic-tags: migration-overview
 exl-id: 3050238d-6f77-4ffa-9aef-677ab8009388
-source-git-commit: 8610d29a3df1080f1622a2cb3685c0961fb40092
+source-git-commit: 2594e4943ba24ae65d1fc005da589dc674aa2b0f
 workflow-type: tm+mt
-source-wordcount: '478'
+source-wordcount: '452'
 ht-degree: 3%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 3%
 
 ![](../../assets/v7-only.svg)
 
-Det här dokumentet innehåller information om förutsättningarna för en migrering, stegen för en migrering till Adobe Campaign Classic v7. Steg och valfria inställningar beror på din konfiguration. [Läs mer](../../migration/using/general-configurations.md).
+Det här dokumentet innehåller information om förutsättningarna för en migrering, stegen för en migrering till Adobe Campaign Classic v7. Steg och valfria inställningar beror på din konfiguration.
 
 Migreringsprocessen måste utföras med försiktighet, dess konsekvenser måste beaktas fullt ut i förväg och förfarandet måste utföras rigoröst. Den får endast utföras av en expertanvändare. Vi rekommenderar att du kontaktar [Adobe kundtjänst](https://helpx.adobe.com/se/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) innan någon migreringsprocess inleds.
 
@@ -35,7 +35,7 @@ Migreringen måste testas i test-/scenmiljön i förväg för att säkerställa 
 * Om du använder Adobe Campaign Cloud Messaging (installation från mellanleverantörer) kontaktar du Adobe kundtjänst innan du startar.
 * Innan du startar en migreringsprocess bör du **måste** säkerhetskopiera dina data.
 * Det kan ta flera dagar innan migreringen är klar.
-* Adobe Campaign v7 är en säkrare version än de tidigare: Detta påverkar konfigurationsriktlinjerna för att undvika problem som till exempel korrupta data och för att bevara databasens dataintegritet. Därför kanske vissa funktioner i v5.11 och v6.02 inte längre stöds i v7 och behöver anpassas efter migreringen. Som kund ansvarar du för att testa alla konfigurationer, inklusive arbetsflöden.
+* Adobe Campaign v7 är en säkrare version än de tidigare: Detta påverkar konfigurationsriktlinjerna för att undvika problem som till exempel korrupta data och för att bevara databasens dataintegritet. Som kund ansvarar du för att testa alla konfigurationer, inklusive arbetsflöden.
 
 Fler förutsättningar finns i [den här sidan](../../migration/using/before-starting-migration.md).
 

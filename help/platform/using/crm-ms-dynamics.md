@@ -4,10 +4,10 @@ title: Campaign - Microsoft Dynamics CRM Connector
 description: Lär dig hur du ansluter Campaign och Microsoft Dynamics
 feature: Microsoft CRM Integration
 exl-id: 26737940-b3ce-425c-9604-f4cefd19afaa
-source-git-commit: fdb840a9e6349f074378899e07f794b62fb5b054
+source-git-commit: 1a2e6a0bc754a1236f64b35e99c1be08f1066f75
 workflow-type: tm+mt
-source-wordcount: '1107'
-ht-degree: 1%
+source-wordcount: '1111'
+ht-degree: 2%
 
 ---
 
@@ -216,3 +216,4 @@ För Microsoft Dynamics 365 finns följande attributtyper som stöds/inte stöds
 | Angående | Nej |
 | PartyList | Nej |
 | ManagedProperty | Nej |
+| Alternativuppsättning för MultiSelect | Nej |

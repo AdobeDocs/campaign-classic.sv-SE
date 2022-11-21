@@ -1,15 +1,15 @@
 ---
 product: campaign
-title: Adapt your configuration
+title: Anpassa konfigurationen
 description: Lär dig hur du anpassar konfigurationen före och efter en migrering till Campaign v7
 audience: migration
 content-type: reference
 topic-tags: migration-procedure
 exl-id: ad71dead-c0ca-42d5-baa8-0f340979231a
-source-git-commit: 327f220d6700242308ef3738a38cc95b970e3f46
+source-git-commit: 2594e4943ba24ae65d1fc005da589dc674aa2b0f
 workflow-type: tm+mt
-source-wordcount: '1980'
-ht-degree: 3%
+source-wordcount: '471'
+ht-degree: 2%
 
 ---
 
@@ -19,14 +19,11 @@ ht-degree: 3%
 
 Vissa större förändringar i Adobe Campaign v7 kräver specifik konfiguration. Dessa konfigurationer kan vara nödvändiga före eller efter migrering.
 
-Detaljerad konfiguration som ska utföras i Adobe Campaign v7 vid migrering från Campaign v5 eller v6 finns i [den här sidan](general-configurations.md).
-
-
-During the migration, the **NmsRecipient** table is rebuilt from the schemas definition. Alla ändringar som görs i SQL-strukturen för den här tabellen utanför Adobe Campaign går förlorade.
+Under migreringen kommer **NmsRecipient** tabellen återskapas från schemadefinitionen. Alla ändringar som görs i SQL-strukturen för den här tabellen utanför Adobe Campaign går förlorade.
 
 Exempel på element som ska kontrolleras:
 
-* If you have added a column (or an index) into the **NmsRecipient** table but you have not detailed it in the schema, this will not be saved.
+* Om du har lagt till en kolumn (eller ett index) i **NmsRecipient** tabellen, men du har inte detaljerat den i schemat, kommer den inte att sparas.
 * The **tabellutrymme** som standard återfår attributets värden, dvs. de som definieras i distributionsguiden.
 * Om du har lagt till en referensvy i **NmsRecipient** måste du ta bort den innan du migrerar den.
 
@@ -35,43 +32,54 @@ Exempel på element som ska kontrolleras:
 
 När du migrerar till Adobe Campaign v7 måste följande element konfigureras. Dessa element måste åtgärdas innan du startar **postuppgradering**.
 
-* Tidszoner
+<!--
 
-   Under en migrering från en v5.11-plattform måste du ange vilken tidszon som ska användas under efteruppgraderingen.
+  * Timezones
 
-   Om du vill använda läget &quot;multi-timezone&quot;, se [det här avsnittet](../../migration/using/general-configurations.md#time-zones).
+  During a migration from a v5.11 platform, you must specify the timezone to use during the postupgrade.
 
-   Om du använder Oracle som databas kontrollerar du att Oraclets tidszonsfiler har synkroniserats korrekt mellan programservern och databasservern. [Läs mer](../../migration/using/general-configurations.md#oracle)
+  If you wish to use the "multi timezone" mode, refer to [this section](../../migration/using/general-configurations.md#time-zones).
 
-* Säkerhetszoner
+  If you use Oracle as a database, check that the Oracle timezone files have properly been synched between the application server and the database server. [Learn more](../../migration/using/general-configurations.md#oracle)
 
-   Av säkerhetsskäl är Adobe Campaign-plattformen inte längre tillgänglig som standard: du måste konfigurera säkerhetszonerna, vilket kräver att du samlar in användarens IP-adresser innan migreringen. [Läs mer](../../migration/using/general-configurations.md#security)
+* Security zones
+
+  For security reasons, the Adobe Campaign platform is no longer accessible by default: you must configure the security zones, which requires collecting the user IP addresses before the migration. [Learn more](../../migration/using/general-configurations.md#security)
 
 * Syntax
 
-   Viss Javascript-kod kanske inte längre accepteras i version 7 på grund av att en ny tolk används. [Läs mer](../../migration/using/general-configurations.md#javascript).
+  Some Javascript code may no longer accepted in the v7 version, due to the use of a new interpreter. [Learn more](../../migration/using/general-configurations.md#javascript).
 
-   På samma sätt introduceras en ny syntax i Adobe Campaign v7 som ersätter den SQLData-baserade syntaxen. Om du använder kodelement med den här syntaxen måste du anpassa dem. [Läs mer](../../migration/using/general-configurations.md#sqldata)
+  Similarly, a new syntax is introduced in Adobe Campaign v7 to replace the SQLData based syntax. If you use code elements with this syntax, you must adapt them. [Learn more](../../migration/using/general-configurations.md#sqldata)
+
+  -->
 
 * Lösenord
 
    Du måste konfigurera **Administratör** och **Intern** lösenord. [Läs mer](../../migration/using/before-starting-migration.md#user-passwords)
 
-* Trädstruktur
+<!--
+* Tree structure
 
-   Om du migrerar från en v5.11-plattform måste du ordna om trädstrukturmapparna enligt Adobe Campaign v6-standarderna. [Läs mer](../../migration/using/configuring-your-platform.md#specific-configurations-in-v5-11).
+  If migrating from a v5.11 platform, you must reorganize the tree structure folders according to Adobe Campaign v6 norms. [Learn more](../../migration/using/configuring-your-platform.md#specific-configurations-in-v5-11).
 
-* Interaktion
+-->
 
-   If you are migrating from Campaign v6.02 and using the  **Interaction** module, you must delete all 6.02 schema references that no longer exist in v7. [Läs mer](../../migration/using/general-configurations.md#interaction)
+<!--
+
+* Interaction
+
+  If you are migrating from Campaign v6.02 and using the  **Interaction** module, you must delete all 6.02 schema references that no longer exist in v7. [Learn more](../../migration/using/general-configurations.md#interaction)
+
+-->
 
 ## Efter migreringen {#after-the-migration}
 
-After running **postupgrade**, check and configure the following elements:
+Efter körning **postuppgradering**, kontrollera och konfigurera följande element:
 
 * Spegla sidor
 
-   Mirror page personalization block has changed with v6.x. This new version improves security when accessing these pages.
+   Spegelsidans anpassningsblock har ändrats med v6.x. Den här nya versionen förbättrar säkerheten vid åtkomst av dessa sidor.
 
    Om du använde v5-anpassningsblocket i dina meddelanden kommer speglingssidan inte att visas. Adobe rekommenderar starkt att du använder det nya anpassningsblocket när du infogar en spegelsida i dina meddelanden.
 
@@ -79,84 +87,100 @@ After running **postupgrade**, check and configure the following elements:
 
 * Syntax
 
-   Om du får problem med syntaxen under efteruppgraderingen måste du tillfälligt aktivera **allowSQLInjection** i **serverConf.xml** eftersom det ger dig tid att skriva om koden. Se till att återaktivera skyddet när koden har anpassats. [Läs mer](../../migration/using/general-configurations.md#sqldata)
+   Om du får problem med syntaxen under efteruppgraderingen måste du tillfälligt aktivera **allowSQLInjection** i **serverConf.xml** eftersom det ger dig tid att skriva om koden. Se till att återaktivera skyddet när koden har anpassats.
 
 * Konflikter
 
-   Migreringen utförs efter uppgraderingen och konflikter kan uppstå i rapporter, formulär eller webbprogram. Konflikterna kan lösas från konsolen. [Läs mer](../../migration/using/general-configurations.md#conflicts)
+   Migreringen utförs efter uppgraderingen och konflikter kan uppstå i rapporter, formulär eller webbprogram. Konflikterna kan lösas från konsolen.
 
 * Tomcat
 
-   Om du har anpassat installationsmappen kontrollerar du att den har uppdaterats korrekt efter migreringen. [Läs mer](../../migration/using/general-configurations.md#tomcat)
+   Om du har anpassat installationsmappen kontrollerar du att den har uppdaterats korrekt efter migreringen.
 
 * Rapporter
 
-   Alla färdiga rapporter använder för närvarande v6.x-renderingsmotorn. Om du har lagt till JavaScript-kod i rapporterna kan vissa element påverkas. [Läs mer](../../migration/using/general-configurations.md#reports)
+   Alla färdiga rapporter använder för närvarande v6.x-renderingsmotorn. Om du har lagt till JavaScript-kod i rapporterna kan vissa element påverkas.
 
 * Webbprogram
 
-   Om du har problem med anslutningen till dina identifierade webbprogram efter uppgraderingen måste du aktivera **allowUserPassword** och **sessionTokenOnly** i **serverConf.xml** -fil. För att undvika säkerhetsproblem måste dessa två alternativ återaktiveras när problemet har lösts. [Läs mer](../../migration/using/general-configurations.md#identified-web-applications)
+   Om du har problem med anslutningen till dina identifierade webbprogram efter uppgraderingen måste du aktivera **allowUserPassword** och **sessionTokenOnly** i **serverConf.xml** -fil. För att undvika säkerhetsproblem måste dessa två alternativ återaktiveras när problemet har lösts.
 
-   Beroende på vilken typ av webbprogram det är och hur de är konfigurerade måste du utföra ytterligare ändringar för att vara säker på att de fungerar som de ska. [Läs mer](../../migration/using/general-configurations.md#web-applications)
+   Beroende på vilken typ av webbprogram det är och hur de är konfigurerade måste du utföra ytterligare ändringar för att vara säker på att de fungerar som de ska.
 
-   Om du migrerar från en v5.11-plattform måste ytterligare konfigurationer utföras. [Läs mer](../../migration/using/general-configurations.md#specific-configurations-in-v5-11.md)
+<!--
+  If migrating from a v5.11 platform, additional configurations must be carried out. [Learn more](../../migration/using/general-configurations.md#specific-configurations-in-v5-11.md)
 
-* Säkerhetszoner
+* Security zones
 
-   Innan du startar servern måste du konfigurera säkerhetszonerna. [Learn more](../../installation/using/security-zones.md) and [see here](../../migration/using/general-configurations.md#security)
+  Before starting the server, you must configure the security zones. [Learn more](../../installation/using/security-zones.md) and [see here](../../migration/using/general-configurations.md#security)
 
-* Arbetsflöden
+-->
 
-   If migrating from a v5.11 platform, you must check the workflows folder. [Läs mer](../../migration/using/configuring-your-platform.md#specific-configurations-in-v5-11)
+<!--
 
-* Spåra
+* Workflows
 
-   Om du migrerar från en v5.11-plattform måste du konfigurera spårningsläget. [Läs mer](../../migration/using/configuring-your-platform.md#specific-configurations-in-v5-11)
+  If migrating from a v5.11 platform, you must check the workflows folder. [Learn more](../../migration/using/configuring-your-platform.md#specific-configurations-in-v5-11)
+
+-->
+
+<!--
+
+* Tracking
+
+  If migrating from a v5.11 platform, you must configure the tracking mode. [Learn more](../../migration/using/configuring-your-platform.md#specific-configurations-in-v5-11)
+
+-->
 
 * Interaktion
 
-   Om du använder **Interaktion** måste du justera alla parametrar efter migreringen. [Läs mer](../../migration/using/general-configurations.md#interaction)
+   Om du använder **Interaktion** måste du justera alla parametrar efter migreringen.
 
-* Kontrollpaneler
+<!--
 
-   Om ett klientfel uppstår måste du antingen uppdatera dina instrumentpaneler med den nya Adobe Campaign v7-koden eller manuellt kopiera följande filer från v6.02-instansen till v7-instansen:
+* Dashboards
 
-   ```
-   v6.02 files and spaces:
-   /usr/local/neolane/nl6/datakit/xtk/eng/css/dropDownMenu.css
-   /usr/local/neolane/nl6/datakit/xtk/eng/js/client/dropDownMenu.js
-   v6.1 files and spaces:
-   /usr/local/neolane/nl6/deprecated/xtk/css/dropDownMenu.css
-   /usr/local/neolane/nl6/deprecated/xtk/js/client/dropDownMenu.js  
-   ```
+  If a client error appears, you have to either update your dashboards with the new Adobe Campaign v7 code, or manually copy the following files from the v6.02 instance to the v7 instance:
 
+  ```
+  v6.02 files and spaces:
+  /usr/local/neolane/nl6/datakit/xtk/eng/css/dropDownMenu.css
+  /usr/local/neolane/nl6/datakit/xtk/eng/js/client/dropDownMenu.js
+  v6.1 files and spaces:
+  /usr/local/neolane/nl6/deprecated/xtk/css/dropDownMenu.css
+  /usr/local/neolane/nl6/deprecated/xtk/js/client/dropDownMenu.js  
+  ```
 
-## Specifika konfigurationer från v5.11 till v7{#specific-configurations-in-v5-11}
+-->
+
+<!--
+
+## Specific configurations from a v5.11 to v7{#specific-configurations-in-v5-11}
 
 ![](../../assets/v7-only.svg)
 
-I det här avsnittet beskrivs den ytterligare konfiguration som krävs vid migrering från v5.11. Du bör även konfigurera inställningarna som anges i [Allmänna konfigurationer](../../migration/using/general-configurations.md) -avsnitt.
+This section details the additional configuration required when migrating from v5.11. You should also configure the settings detailed in the [General configurations](../../migration/using/general-configurations.md) section.
 
-### Webbapplikationer {#web-applications-v5}
+### Web applications {#web-applications-v5}
 
-Följande varning visas automatiskt under migreringen:
+The following warning will be displayed automatically during migration:
 
 ```
 The webApp ids have been modified during the migration process. Please make sure to check your scripts/css for broken compatibility (any client side JavaScript or css dealing directly with another element through its id is impacted). See file 'c:\svn\602\nl\build\ncs\var\upgrade/postupgrade/webAppsMigration_*************.txt' for details about the references that were automatically updated, if any.
 ```
 
-Vissa komponenter i webbprogram, till exempel de olika formelfälten, har @id-attribut. De används i XML-koden för webbprogram och genereras inte längre på samma sätt. De är inte synliga i gränssnittet och du får normalt inte använda dem. I vissa fall kan @id-attribut ha använts för att anpassa återgivningen av webbprogram, till exempel via en formatmall eller JavaScript-kod.
+Some components of web applications, for instance the various formula fields, have @id attributes. These are used in the XML code of web applications and are no longer generated in the same way. They are not visible in the interface and you must not normally use them. However, in some cases, @id attributes may have been used to personalize the rendering of web applications, for instance via a stylesheet or using JavaScript code.
 
-Under migreringen kan du **måste** Kontrollera loggfilens sökväg som anges i varningen:
+During migration, you **must** check the log file path specified in the warning:
 
-* **Filen är inte tom**: Den innehåller varningar som rör inkonsekvenser som registrerats före migreringen och som fortfarande finns. Detta kan vara JavaScript-kod i ett webbprogram som refererar till ett ID som inte finns. Varje fel måste kontrolleras och korrigeras.
-* **Filen är tom**: detta innebär att Adobe Campaign inte har upptäckt några problem.
+* **The file is not empty**: it contains warnings which concern inconsistencies recorded before migration and which still exist. This can be JavaScript code in a web application which references a non-existent ID. Each error must be checked and corrected.
+* **The file is empty**: this means that Adobe Campaign has not detected any issues.
 
-Oavsett om filen är tom eller inte måste du kontrollera att dessa ID:n inte används för konfiguration någon annanstans (och anpassa konfigurationen om så är fallet).
+Whether the file is empty or not, you must check that these IDs are not used for configuration elsewhere (and adapt configuration if this is the case).
 
-### Arbetsflöden {#workflows}
+### Workflows {#workflows}
 
-Eftersom namnet på Adobe Campaign installationskatalog har ändrats kanske vissa arbetsflöden inte fungerar efter migreringen. Om ett arbetsflöde refererar till katalogen nl5 i någon av dess aktiviteter genereras ett fel. Replace this reference with **build**. Du kan köra en SQL-fråga för att identifiera dessa arbetsflöden (PostgreSQL-exempel):
+Since the name of the Adobe Campaign installation directory has changed, some workflows may not work after the migration. If a workflow references the nl5 directory in one of its activities, this will raise an error. Replace this reference with **build**. You can run an SQL query to identify these workflows (PostgreSQL example):
 
 ```
 SELECT   iWorkflowId, sInternalName, sLabel 
@@ -168,9 +192,9 @@ WHERE mData LIKE '%nl5%';
 
 >[!CAUTION]
 >
->MySQL stöds bara i v7 som huvuddatabasmotor när du migrerar från version 6.02 eller 5.11 med den här motorn.
+>MySQL is only supported in v7 as the main database engine when migrating from version 6.02 or 5.11 using this engine.
 
-MySQL hanterar inte tidszoner som standard. To enable timezone management, run the following command:
+MySQL does not manage timezones by default. To enable timezone management, run the following command:
 
 ```
 mysql_tzinfo_to_sql /usr/share/zoneinfo | mysql -u root mysql
@@ -178,19 +202,19 @@ mysql_tzinfo_to_sql /usr/share/zoneinfo | mysql -u root mysql
 
 >[!NOTE]
 >
->Mer information finns i [https://dev.mysql.com/doc/refman/8.0/en/time-zone-support.html](https://dev.mysql.com/doc/refman/8.0/en/time-zone-support.html) sida.
+>For more information, refer to the [https://dev.mysql.com/doc/refman/8.0/en/time-zone-support.html](https://dev.mysql.com/doc/refman/8.0/en/time-zone-support.html) page.
 
-Om databasstrukturen har ändrats, t.ex. under konfiguration (skapa specifika index, skapa SQL-vyer osv.), bör vissa försiktighetsåtgärder vidtas vid migrering. Vissa ändringar kan ha sin grund i inkompatibilitet med migreringsförfarandet. Skapa t.ex. SQL-vyer som innehåller **Tidsstämpel** fälten är inte kompatibla med **usetimestamptz** alternativ. Vi rekommenderar därför att du följer rekommendationerna nedan:
+If modifications have been made to the database structure, during configuration for example (creating specific indexes, creating SQL views, etc.), certain precautions should be taken when migrating. Indeed, certain modifications can be generated from incompatibilities with the migration procedure. For example, creating SQL views containing **Timestamp** fields are not compatible with the **usetimestamptz** option. We therefore advise you to follow the recommendations below:
 
 1. Before starting the migration, back up the database.
-1. Ta bort SQL-ändringar.
+1. Delete SQL changes.
 1. Perform the postupgrade
-   >[!NOTE]
-   >
-   >Du måste följa stegen för migrering i [det här avsnittet](../../migration/using/migrating-in-windows-for-adobe-campaign-7.md).
+    >[!NOTE]
+    >
+    >You must follow the migration steps presented in [this section](../../migration/using/migrating-in-windows-for-adobe-campaign-7.md).
 1. Reintegrate SQL changes.
 
-In this example, a **NmcTrackingLogMessages** view had been created and this has a **Timestamp** field named **tslog**. I det här fallet misslyckas migreringsproceduren och följande felmeddelande visas:
+In this example, a **NmcTrackingLogMessages** view had been created and this has a **Timestamp** field named **tslog**. In this case, the migration procedure fails and the following error message appears:
 
 ```
 2011-10-04 11:57:51.804Z B67B28C0 1 info log Updating table 'NmcTrackingLogMessages'
@@ -198,94 +222,94 @@ In this example, a **NmcTrackingLogMessages** view had been created and this has
 2011-10-04 11:57:51.804Z B67B28C0 1 error log SQL order 'ALTER TABLE NmcTrackingLogMessages ALTER COLUMN tsLog TYPE TIMESTAMPTZ' was not executed. (iRc=-2006)
 ```
 
-För att vara säker på att efteruppgraderingen fungerar måste du ta bort vyn före migreringen och återskapa den efter migreringen samtidigt som du anpassar den till TIMESTAMP MED TIMEZONE-läget.
+To make sure the postupgrade works, you must delete the view before the migration and re-create it after the migration while adapting it to the TIMESTAMP WITH TIMEZONE mode.
 
-### Spåra {#tracking}
+### Tracking {#tracking}
 
-Spårningsformeln har ändrats. När du migrerar ersätts den gamla formeln (v5) med den nya (v7). Om du använder en anpassad formel i Adobe Campaign v5 måste den här konfigurationen anpassas i Adobe Campaign v7 (**NmsTracking_ClickFormula** och **NmsTracking_OpenFormula** alternativ).
+The tracking formula has been modified. When migrating, the old formula (v5) is replaced by the new one (v7). If you use a personalized formula in Adobe Campaign v5, this configuration has to be adapted in Adobe Campaign v7 (**NmsTracking_ClickFormula** and **NmsTracking_OpenFormula** options).
 
-Hanteringen av webbspårning har också ändrats. När migreringen till v7 har slutförts måste du starta distributionsguiden för att slutföra konfigurationen av webbspårningen.
+Web tracking management has also been modified. Once migration to v7 has been carried out, you must start the deployment wizard to finish configuring the web tracking.
 
-![](assets/migration_web_tracking.png)
+  ![](assets/migration_web_tracking.png)
 
-Tre olika lägen finns tillgängliga:
+Three modes are available:
 
-* **Sessionswebbspårning**: Om **[!UICONTROL Leads]** paketet har inte installerats. Det här alternativet är markerat som standard. Det här alternativet är det mest idealiska när det gäller prestanda och du kan begränsa spårningsloggarnas storlek.
-* **Permanent webbspårning**
-* **Anonym webbspårning**: Om **[!UICONTROL Leads]** paketet är installerat. Det här alternativet är markerat som standard. Det är det mest resurskrävande alternativet. Som ovan **sSourceId** -kolumnen måste vara indexerad (i spårningstabellen och **CrmIncomingLead** tabell).
+* **Session web tracking**: If the **[!UICONTROL Leads]** package has not been installed, this option is selected by default. This option is the most ideal in terms of performance and it allows you to limit the size of the tracking logs.
+* **Permanent Web tracking**
+* **Anonymous Web Tracking**: If the **[!UICONTROL Leads]** package is installed, this option is selected by default. It is the most resource-consuming option. As above, the **sSourceId** column must be indexed (in the tracking table and the **CrmIncomingLead** table).
 
 >[!NOTE]
 >
->Mer information om dessa tre lägen finns i [det här avsnittet](../../configuration/using/about-web-tracking.md).
+>For more information on these three modes, refer to [this section](../../configuration/using/about-web-tracking.md).
 
-### Trädstruktur för Adobe Campaign v7 {#campaign-vseven-tree-structure}
+### Adobe Campaign v7 tree structure {#campaign-vseven-tree-structure}
 
-Under migreringen ordnas trädstrukturen automatiskt om baserat på v7-standarderna. De nya mapparna läggs till, de föråldrade mapparna tas bort och deras innehåll placeras i mappen &quot;Att flytta&quot;. Alla objekt i den här mappen måste kontrolleras efter migreringen, och konsulten måste välja att antingen behålla eller ta bort varje objekt. Objekt som ska behållas måste flyttas till rätt plats.
+During migration, the tree structure is automatically reorganized based on the v7 standards. The new folders are added, the obsolete folders are deleted, and their content is placed in the "To move" folder. All items in this folder must be checked after the migration, and the consultant has to decide to either keep it or delete each one. Items to be kept then have to be moved to the right place.
 
-Ett alternativ har lagts till för att inaktivera automatisk migrering av navigeringsträdet. Den här åtgärden är nu manuell. Föråldrade mappar tas inte bort och nya mappar läggs inte till. Det här alternativet bör endast användas om det färdiga v5-navigeringsträdet har genomgått för många ändringar. Lägg till alternativet i konsolen, innan du migrerar, i **[!UICONTROL Administration > Options]** nod:
+An option has been added for disabling the automatic migration of the navigation tree. This operation is now manual. Obsolete folders are not deleted and new folders are not added. This option should only be used if the out-of-the-box v5 navigation tree has undergone too many changes. Add the option to the console, before migrating, in the **[!UICONTROL Administration > Options]** node:
 
-* Internt namn: NlMigration_KeepFolderStructure
-* Datatyp: Heltal
-* Värde (text): 1
+* Internal name: NlMigration_KeepFolderStructure
+* Data type: Integer
+* Value (text): 1
 
-Om du använder det här alternativet måste du efter migreringen ta bort gamla mappar, lägga till nya mappar och köra alla nödvändiga kontroller.
+If you use this option, after migration you will have to delete obsolete folders, add the new folders and run all necessary checks.
 
 **List of new folders**:
 
 The following folders need to be added after the migration:
 
-| Internt namn | Etikett | Villkor |
+| Internal name | Label | Condition |
 |---|---|---|
-| nmsAutoObjects | Objekt som skapas automatiskt | - |
-| nmsCampaignAdmin | Kampanjhantering | - |
-| nmsCampaignMgt | Kampanjhantering | - |
-| nmsCampaignRes | Kampanjhantering | - |
-| nmsModels | Mallar | - |
+| nmsAutoObjects | Objects created automatically | - |
+| nmsCampaignAdmin | Campaign management | - |
+| nmsCampaignMgt | Campaign management | - |
+| nmsCampaignRes | Campaign management | - |
+| nmsModels | Templates | - |
 | nmsOnlineRes | Online | - |
-| nmsProduction | Produktion | - |
-| nmsProfilProcess | Processer | - |
-| xtkDashboard | Kontrollpaneler | - |
-| xtkPlatformAdmin | Plattform | - |
-| nmsLocalOrgUnit | Organisationsenheter | - |
-| nmsMRM | MRM | MRM är installerat |
-| nmsOperations | Kampanjer | Campaign har installerats |
+| nmsProduction | Production | - |
+| nmsProfilProcess | Processes | - |
+| xtkDashboard | Dashboards | - |
+| xtkPlatformAdmin | Platform | - |
+| nmsLocalOrgUnit | Organizational units | - |
+| nmsMRM | MRM | MRM installed |
+| nmsOperations | Campaigns | Campaign installed |
 
-**Lista över föråldrade mappar**:
+**List of obsolete folders**:
 
-De föråldrade mappar som ska tas bort efter migreringen är följande:
+The obsolete folders to be deleted after the migration are as follows:
 
 >[!NOTE]
 >
->Hela innehållet i de föråldrade mapparna måste kontrolleras och för varje objekt avgör konsulten om de ska behålla eller ta bort det. De artiklar som ska behållas måste flyttas till lämplig plats.
+>The entire content of the obsolete folders must be checked, and for each item the consultant decides whether to keep or delete it. The items to be kept must be moved to the appropriate place.
 
-| Internt namn | Etikett | Villkor |
+| Internal name | Label | Condition |
 |---|---|---|
 | nmsAdministration | Administration | - |
-| nmsDeliveryMgt | Kampanjkörning | - |
-| ncmContent | Innehållshantering | Content Manager är installerat |
-| ncmForm | Inmatningsformulär | Content Manager är installerat |
-| ncmImage | Bilder | Content Manager är installerat |
-| ncmJavascript | JavaScript-koder | Content Manager är installerat |
-| ncmJst | JavaScript-mallar | Content Manager är installerat |
-| ncmParameters | Konfiguration | Content Manager är installerat |
-| ncmSrcSchema | Datascheman | Content Manager är installerat |
-| ncmStylesheet | XSL-formatfiler | Content Manager är installerat |
-| nmsAdminPlan | Administration | Campaign har installerats |
-| nmsResourcePlan | Resurser | Campaign har installerats |
-| nmsResourcesModels | Mallar | Campaign har installerats |
-| nmsRootPlan | Kampanjhantering | Campaign har installerats |
-| nmsOperator | Marknadsförare | MRM är installerat |
+| nmsDeliveryMgt | Campaign execution | - |
+| ncmContent | Content management | Content Manager installed |
+| ncmForm | Input form | Content Manager installed |
+| ncmImage | Images | Content Manager installed |
+| ncmJavascript | JavaScript codes | Content Manager installed |
+| ncmJst | JavaScript templates | Content Manager installed |
+| ncmParameters | Configuration | Content Manager installed |
+| ncmSrcSchema | Data schemas | Content Manager installed |
+| ncmStylesheet | XSL style files | Content Manager installed |
+| nmsAdminPlan | Administration | Campaign installed |
+| nmsResourcePlan | Resources | Campaign installed |
+| nmsResourcesModels | Templates | Campaign installed |
+| nmsRootPlan | Campaign management | Campaign installed |
+| nmsOperator | Marketing operators | MRM installed |
 
 
-## Specifika konfigurationer från v6.02 till v7{#specific-configurations-in-v6-02}
+## Specific configurations from v6.02 to v7{#specific-configurations-in-v6-02}
 
 ![](../../assets/v7-only.svg)
 
-I följande avsnitt beskrivs den ytterligare konfiguration som krävs vid migrering från v6.02. Du bör även konfigurera inställningarna i [den här sidan](../../migration/using/general-configurations.md).
+The following section details the additional configuration required when migrating from v6.02. You should also configure the settings detailed in [this page](../../migration/using/general-configurations.md).
 
-### Webbapplikationer {#web-applications-v6}
+### Web applications {#web-applications-v6}
 
-Om du migrerar från v6.02 kan felloggar för webbprogram av översiktstyp visas. Exempel på felmeddelanden:
+If you are migrating from v6.02, error logs regarding overview-type web applications may appear. Error message examples:
 
 ```
 [PU-0006] Entity of type : 'xtk:entityBackupNew' and Id 'nms:webApp|taskOverview', expression '[SQLDATA[' was found : '...)) or (@id IN ([SQLDATA[select 
@@ -293,18 +317,20 @@ Om du migrerar från v6.02 kan felloggar för webbprogram av översiktstyp visas
 [PU-0006] Entity of type : 'nms:webApp' and Id 'taskOverview', expression '[SQLDATA[' was found : '...@owner-id] IN ([SQLDATA[select iGroupid...'. (iRc=-1)
 ```
 
-Dessa webbprogram använde SQLData och är inte kompatibla med v7 på grund av högre säkerhet. Dessa fel leder till ett migreringsfel.
+These web applications used SQLData and are not compatible with v7, due to heightened security. These errors will lead to a migration failure.
 
-Om du inte använde dessa webbprogram kör du följande rensningsskript och kör efteruppgraderingen igen:
+If you didn't use these web applications, run the following cleanup script and rerun the postupgrade:
 
 ```
 Nlserver javascript -instance:[instance_name] -file [installation_path]/datakit/xtk/fra/js/removeOldWebApp.js
 ```
 
-Om du har ändrat dessa webbprogram och vill fortsätta använda dem i v7 måste du aktivera **allowSQLInjection** i dina olika säkerhetszoner och starta om efteruppgraderingen. Se [SQLData](../../migration/using/general-configurations.md#sqldata) om du vill ha mer information om detta.
+If you have modified these web applications and would like to continue using them in v7, you must activate the **allowSQLInjection** option in your different security zones and re-start the postupgrade. Refer to the [SQLData](../../migration/using/general-configurations.md#sqldata) section for more on this.
 
-### Meddelandecenter {#message-center}
+### Message Center {#message-center}
 
-Efter migrering av en kontrollinstans i Message Center måste du publicera om transaktionsmeddelandemallarna för att de ska fungera.
+After a Message Center control instance migration, you must republish the transactional message templates for them to work.
 
-I v7 har namnen på transaktionsmeddelandemallar för körningsinstanser ändrats. De är för närvarande prefixerade av det operatörsnamn som motsvarar kontrollinstansen som de skapas i, till exempel **control1_template1_rt** (där **control1** är namnet på operatorn). Om du har ett stort antal mallar rekommenderar vi att du tar bort gamla mallar på kontrollinstanser.
+In v7, the names of transactional message templates on execution instances have changed. They are currently prefixed by the operator name that corresponds to the control instance on which they are created, for example **control1_template1_rt** (where **control1** is the name of the operator). If you have a significant volume of templates, we recommend deleting old templates on control instances.
+
+-->

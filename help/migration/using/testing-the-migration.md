@@ -6,10 +6,10 @@ audience: migration
 content-type: reference
 topic-tags: migration-procedure
 exl-id: 228ee9e4-46a0-4d82-b8ba-b019bc0e7cac
-source-git-commit: 59a2bc62b4c03ef0702cb57bd9dc808e7d0b444b
+source-git-commit: 2594e4943ba24ae65d1fc005da589dc674aa2b0f
 workflow-type: tm+mt
-source-wordcount: '755'
-ht-degree: 0%
+source-wordcount: '706'
+ht-degree: 2%
 
 ---
 
@@ -124,7 +124,7 @@ Följande uttryck söks efter (skiftlägeskänsliga):
    <td> .@<br /> </td> 
    <td> PU-0001<br /> </td> 
    <td> Varning<br /> </td> 
-   <td> Den här typen av syntax stöds inte längre i leveranspersonalisering. Se <a href="../../migration/using/general-configurations.md#javascript" target="_blank">JavaScript</a>. Annars kontrollerar du att värdetypen är korrekt.<br /> </td> 
+   <td> Den här typen av syntax stöds inte längre i leveranspersonalisering. <br /> </td> 
   </tr> 
   <tr> 
    <td> common.js<br /> </td> 
@@ -136,7 +136,7 @@ Följande uttryck söks efter (skiftlägeskänsliga):
    <td> logon(<br /> </td> 
    <td> PU-0003<br /> </td> 
    <td> Varning<br /> </td> 
-   <td> Den här anslutningsmetoden får inte längre användas. Se <a href="../../migration/using/general-configurations.md#identified-web-applications" target="_blank">Identifierade webbprogram</a>.<br /> </td> 
+   <td> Den här anslutningsmetoden får inte längre användas.<br /> </td> 
   </tr> 
   <tr> 
    <td> new SoapMethodCall()<br /> </td> 
@@ -148,14 +148,8 @@ Följande uttryck söks efter (skiftlägeskänsliga):
    <td> sql=<br /> </td> 
    <td> PU-0005<br /> </td> 
    <td> Fel<br /> </td> 
-   <td> Den här typen av fel leder till ett migreringsfel. Se <a href="../../migration/using/general-configurations.md#sqldata" target="_blank">SQLData</a>.<br /> </td> 
+   <td> Den här typen av fel leder till ett migreringsfel.<br /> </td> 
   </tr> 
-  <tr> 
-   <td> SQLDATA<br /> </td> 
-   <td> PU-0006<br /> </td> 
-   <td> Fel<br /> </td> 
-   <td> Den här typen av fel leder till ett migreringsfel. Se <a href="../../migration/using/general-configurations.md#sqldata" target="_blank">SQLData</a>. Om du får felloggar av översiktstyp för webbprogram (migrering från v6.02), se <a href="../../migration/using/configuring-your-platform.md#specific-configurations-in-v5-11" target="_blank">Konfigurera kampanj</a>.<br /> </td> 
-  </tr>
   <tr> 
    <td> crmDeploymentType="lokal"<br /> </td> 
    <td> PU-0007<br /> </td> 
@@ -168,7 +162,7 @@ Följande uttryck söks efter (skiftlägeskänsliga):
    <td> CRM v1(mscrmArbetsflöde/sfdcArbetsflöde)<br /> </td> 
    <td> PU-0008<br /> </td> 
    <td> Fel<br /> </td> 
-   <td> Åtgärder i Microsoft CRM, Salesforce och Oracle CRM On Demand är inte längre tillgängliga. Om du vill konfigurera datasynkroniseringen mellan Adobe Campaign och ett CRM-system måste du använda <a href="../../workflow/using/crm-connector.md" target="_blank">CRM-koppling</a> målinriktning.<br /> </td>
+   <td> Åtgärdsaktiviteter på begäran i Microsoft CRM, Salesforce och Oracle CRM är inte längre tillgängliga. Om du vill konfigurera datasynkroniseringen mellan Adobe Campaign och ett CRM-system måste du använda <a href="../../workflow/using/crm-connector.md" target="_blank">CRM-koppling</a> målinriktning.<br /> </td>
   </tr> 
  </tbody> 
 </table>

@@ -6,10 +6,10 @@ audience: installation
 content-type: reference
 topic-tags: initial-configuration
 exl-id: 236afdfe-fb23-4ebb-b000-76e14bf01d9e
-source-git-commit: 4ff86349d6b8966273585bf2a1ea0d785a7e87cb
+source-git-commit: 2594e4943ba24ae65d1fc005da589dc674aa2b0f
 workflow-type: tm+mt
-source-wordcount: '598'
-ht-degree: 1%
+source-wordcount: '638'
+ht-degree: 0%
 
 ---
 
@@ -30,6 +30,10 @@ Om du vill begränsa möjliga format ersätter du attributvärdet med ett giltig
 Till exempel: **uploadWhiteList=&quot;.&#42;.png,&#42;.jpg&quot;** gör att du kan överföra PNG- och JPG-format till servern. Inga andra format godtas.
 
 Du kan också förhindra att viktiga filer överförs genom att konfigurera webbservern. [Läs mer](web-server-configuration.md)
+
+>[!NOTE]
+>
+>The **uploadWhiteList** attribut begränsar de filtyper som kan överföras på Adobe Campaign-servern. När publiceringsläget är **Spårningsservrar** eller **Andra Adobe Campaign-servrar**, **uploadWhitelist** attributet måste också uppdateras på dessa servrar.
 
 ## Konfiguration för proxyanslutning {#proxy-connection-configuration}
 

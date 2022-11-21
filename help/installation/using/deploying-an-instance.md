@@ -6,9 +6,9 @@ audience: installation
 content-type: reference
 topic-tags: initial-configuration
 exl-id: 8b07447c-9a86-4b56-8d29-e0b01357a6ec
-source-git-commit: f000cb8bae164c22d1ede15db4e763cf50530674
+source-git-commit: 11e175c737d9c6cbb9432ec7835f35ee0e00a5c0
 workflow-type: tm+mt
-source-wordcount: '3048'
+source-wordcount: '3140'
 ht-degree: 1%
 
 ---
@@ -78,10 +78,10 @@ Dessa parametrar kan överlagras i leveransmallar, och individuellt för varje l
 
 Ange följande parametrar:
 
-* **[!UICONTROL Sender name]** : Avsändarens namn.
-* **[!UICONTROL Sender address]** : Avsändarens adress.
-* **[!UICONTROL Reply address text]** : Namnet, som kan anpassas, som används när mottagaren klickar på **[!UICONTROL Reply]** knappen i klientprogramvaran för e-post,
-* **[!UICONTROL Reply address]** : E-postadressen som ska användas när mottagaren klickar på **[!UICONTROL Reply]** knappen i klientprogramvaran för e-post,
+* **[!UICONTROL Sender name]** : Avsändarens namn
+* **[!UICONTROL Sender address]** : Avsändarens adress
+* **[!UICONTROL Reply address text]** : Namnet, som kan anpassas, som används när mottagaren klickar på **[!UICONTROL Reply]** knappar i deras e-postklientprogram
+* **[!UICONTROL Reply address]** : E-postadressen som ska användas när mottagaren klickar på **[!UICONTROL Reply]** knappar i deras e-postklientprogram
 * **[!UICONTROL Error address]** : E-postadress för meddelanden med fel. Detta är den tekniska adress som används för att hantera studsmeddelanden, inklusive e-post som tas emot av Adobe Campaign-servern på grund av att måladresserna inte finns.
 
 Förutom detta kan du ange **masker** som är behöriga för avsändaradressen och feladressen. Om det behövs kan dessa masker separeras med kommatecken. Den här konfigurationen är valfri. När fält anges kontrollerar Adobe Campaign vid leveranstillfället (under analysen om adressen inte innehåller några variabler) att adresserna är giltiga. Det här operativläget ser till att inga adresser används som kan utlösa leveransproblem. Leveransadresserna måste konfigureras på leveransservern.
@@ -106,14 +106,22 @@ I det här fönstret kan ni definiera alternativ för hantering av leverans och 
 
 Följande alternativ är tillgängliga:
 
-* **[!UICONTROL Delivery duration of messages]** : Efter denna tid stoppas leveransen (som standard 5 dagar),
-* **[!UICONTROL Online resources validity duration]** : Tidpunkt för när information från mottagarprofilen sparas för att generera spegelsidor.
-* **[!UICONTROL Exclude recipients who no longer wish to be contacted]** : När det här alternativet är markerat kommer mottagare i blockeringslista inte att kontaktas,
+* **[!UICONTROL Delivery duration of messages]** : Efter denna tid stoppas leveransen (som standard 5 dagar).
+* **[!UICONTROL Online resources validity duration]** : Tidpunkt för vilken information från mottagarprofilen sparas för att generera spegelsidor.
+* **[!UICONTROL Exclude recipients who no longer wish to be contacted]** : När det här alternativet är markerat kommer mottagare i blockeringslista inte att kontaktas.
 * **[!UICONTROL Automatically ignore doubles]** : När det här alternativet är markerat kommer leveransen inte att göras till dubblettadresser.
+
+>[!NOTE]
+>
+>För värdbaserade eller hybridinstallationer, om du har uppgraderat till [Förbättrad MTA](../../delivery/using/sending-with-enhanced-mta.md), **[!UICONTROL Delivery duration of the messages]** kommer endast att användas om det är inställt på **3,5 dagar eller mindre**. Om du anger ett värde som är högre än 3,5 dagar kommer det inte att tas med i beräkningen.
 
 ### Försök igen med parametrar {#retry-parameters}
 
 Information om återvinning finns i **Återställningsperioder** och **Antal återställningar** fält: när en mottagare inte kan nås, till exempel om inkorgen är full, försöker programmet som standard kontakta mottagaren fem gånger, med ett timmars intervall mellan varje försök (under den maximala leveranstiden). Dessa värden kan ändras efter behov.
+
+>[!NOTE]
+>
+>För värdbaserade eller hybridinstallationer, om du har uppgraderat till [Förbättrad MTA](../../delivery/using/sending-with-enhanced-mta.md)används inte längre parametrarna för kampanjåterförsök. Mjuka avhoppsförsök och hur lång tid det tar mellan dem bestäms av den förbättrade MTA-metoden baserat på typ och allvarlighetsgrad för de avhoppssvar som kommer tillbaka från meddelandets e-postdomän.
 
 ### Karantänparametrar {#quarantine-parameters}
 
@@ -147,7 +155,7 @@ När du har angett POP-inställningarna klickar du på **Testa** för att säker
 
 ### Obearbetade studsmeddelanden {#unprocessed-bounce-mails}
 
-Satserna hanteras automatiskt av Adobe Campaign och de regler som anges i **Administration > Kampanjhantering > Hantering av ej slutprodukter > Leveranslogg** nod. Mer information finns i [E-posthantering](../../delivery/using/understanding-delivery-failures.md#bounce-mail-management).
+Satserna hanteras automatiskt av Adobe Campaign och de regler som anges i **Administration > Campaign Management > Non deliverables Management > Delivery log eligibility** nod. Mer information finns i [E-posthantering](../../delivery/using/understanding-delivery-failures.md#bounce-mail-management).
 
 Obearbetade studsar visas inte i Adobe Campaign-gränssnittet. De tas automatiskt bort om de inte överförs till en tredje parts postlåda med följande fält:
 

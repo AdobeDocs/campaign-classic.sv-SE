@@ -6,9 +6,9 @@ audience: installation
 content-type: reference
 topic-tags: additional-configurations
 exl-id: 67dda58f-97d1-4df5-9648-5f8a1453b814
-source-git-commit: 4fd69aa28c2e9325f4738ec571a6632c42ec26b8
+source-git-commit: 2594e4943ba24ae65d1fc005da589dc674aa2b0f
 workflow-type: tm+mt
-source-wordcount: '1460'
+source-wordcount: '1464'
 ht-degree: 0%
 
 ---
@@ -236,13 +236,25 @@ När zonerna har definierats och **[!UICONTROL Security zone]** uppräkningen ä
 
 * Ange bara allowDebug till true för IP-adresser som används av marknadsföringsanvändare/administratörer som behöver skapa (faktiskt förhandsgranska) undersökningar, webApps och rapporter. Med den här flaggan kan dessa IP-adresser visa reläregler och felsöka dem.
 
+   * När allowDebug är inställd på false blir utdata:
+
+      ```
+      <redir status='OK' date='...' sourceIP='...'/>
+      ```
+
+   * När allowDebug är inställd på true blir utdata:
+
+      ```
+      <redir status='OK' date='...' build='...' OR version='...' sha1='...' instance='...' sourceIP='...' host='...' localHost='...'/>
+      ```
+
 * Ange aldrig allowEmptyPassword, allowUserPassword, allowSQLInjection till true. Attributen är bara här för att möjliggöra en smidig migrering från v5 och v6.0:
 
    * **allowEmptyPassword** låter operatorer ha ett tomt lösenord. Om så är fallet ska du meddela alla operatorer att de måste ange ett lösenord med en tidsgräns. När den här tidsgränsen har passerats ändrar du attributet till false.
 
    * **allowUserPassword** gör att operatorer kan skicka sina inloggningsuppgifter som parametrar (så att de loggas av apache/IIS/proxy). Den här funktionen har använts tidigare för att förenkla API-användningen. Du kan kontrollera i din cookbook (eller i specifikationen) om några tredjepartsprogram använder det här. I så fall måste du meddela dem att de ska ändra hur de använder vårt API och så snart som möjligt ta bort den här funktionen.
 
-   * **allowSQLInjection** låter användaren utföra SQL-injektioner med en gammal syntax. Utför så snart som möjligt de korrigeringar som beskrivs i [den här sidan](../../migration/using/general-configurations.md) för att kunna ställa in attributet på false. Du kan använda /nl/jsp/ping.jsp?zone=true för att kontrollera säkerhetszonskonfigurationen. På den här sidan visas den aktiva statusen för säkerhetsåtgärder (beräknade med dessa säkerhetsflaggor) för den aktuella IP-adressen.
+   * **allowSQLInjection** låter användaren utföra SQL-injektioner med en gammal syntax. Attributet ska anges till false. Du kan använda /nl/jsp/ping.jsp?zone=true för att kontrollera säkerhetszonskonfigurationen. På den här sidan visas den aktiva statusen för säkerhetsåtgärder (beräknade med dessa säkerhetsflaggor) för den aktuella IP-adressen.
 
 * HttpOnly cookie/useSecurityToken: referera till **sessionTokenOnly** flagga.
 

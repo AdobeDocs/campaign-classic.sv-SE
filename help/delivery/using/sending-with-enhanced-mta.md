@@ -4,9 +4,9 @@ title: S med förbättrad MTA i Adobe Campaign Classic
 description: Läs mer om omfattningen av och egenskaperna hos utskick av e-post med Adobe Campaign Enhanced MTA
 feature: Email
 exl-id: 58cc23f4-9ab0-45c7-9aa2-b08487ec7e91
-source-git-commit: 9839dbacda475c2a586811e3c4f686b1b1baab05
+source-git-commit: 2d5166c355ee090639dcc52866252bae6beb81f6
 workflow-type: tm+mt
-source-wordcount: '1946'
+source-wordcount: '1999'
 ht-degree: 3%
 
 ---
@@ -39,7 +39,7 @@ Den förbättrade MTA-implementeringen kan påverka vissa av de befintliga Campa
 
 Adobe Campaign kan nu uppgraderas till att använda en ny MTA (Mail Transfer Agent) som kör SparkPosts kommersiella e-postmeddelande MTA som kallas **Momentum**.
 
-Momentum är en innovativ MTA-teknik med höga prestanda som inkluderar smartare studshantering och en automatiserad leveransoptimeringsfunktion som hjälper avsändare att uppnå och upprätthålla optimala leveransfrekvenser för inkorgen. <!--More than 37% of the world’s business email is sent using SparkPost’s MTA technology.-->
+Momentum är en innovativ MTA-teknik med höga prestanda som inkluderar smartare studshantering och en automatiserad leveransoptimeringsfunktion som hjälper avsändare att uppnå och upprätthålla optimala leveransfrekvenser för inkorgen. <!--More than 37% of the world's business email is sent using SparkPost's MTA technology.-->
 
 **Vilka är fördelarna?**
 
@@ -59,7 +59,7 @@ No, there is no extra fee associated with the upgrade process to enable the use 
 
 * If you are new to Adobe Campaign Classic, you are already using the Enhanced MTA.
 
-* For Adobe Campaign Classic existing customers, we’ve implemented a phased rollout that covers all hosted or partially hosted (hybrid) instances. If you’re not already using it, we’ll be contacting you in the near future with the dates and details for upgrading your Adobe Campaign Classic instances to the Enhanced MTA.
+* For Adobe Campaign Classic existing customers, we've implemented a phased rollout that covers all hosted or partially hosted (hybrid) instances. If you're not already using it, we'll be contacting you in the near future with the dates and details for upgrading your Adobe Campaign Classic instances to the Enhanced MTA.
 -->
 
 ### Uppgradera till förbättrad MTA
@@ -141,6 +141,12 @@ Mer information om leveransflöde finns i [det här avsnittet](../../reporting/u
 >
 >Med [Tjänsten för e-postfeedback](#email-feedback-service) (EFS) (finns för närvarande som betaversion) visar genomströmningsdiagrammet för Campaign Delivery fortfarande genomströmningen för e-postmottagarna.
 
+### Återförsök
+
+Inställningarna för nya försök i leveransen används inte längre av Campaign. Mjuka avhoppsförsök och hur lång tid det tar mellan dem bestäms av den förbättrade MTA-metoden baserat på typ och allvarlighetsgrad för de avhoppssvar som kommer tillbaka från meddelandets e-postdomän.
+
+Mer information om återförsök finns i [det här avsnittet](steps-sending-the-delivery.md#configuring-retries).
+
 ### Giltighetsperiod
 
 Inställningen för giltighetsperiod i kampanjleveranserna kommer endast att användas av den förbättrade MTA-metoden om den är inställd på **3,5 dagar eller mindre**. Om du definierar ett värde som är högre än 3,5 dagar i Campaign beaktas det inte.
@@ -182,9 +188,9 @@ Med funktionen för tjänsten för e-postfeedback (EFS) rapporteras status för 
 >
 >Tjänsten för e-postfeedback är för närvarande tillgänglig som en betafunktion.
 >
->Om du är intresserad av att delta i betaprogrammet kan du [det här formuläret](https://forms.office.com/Pages/ResponsePage.aspx?id=Wht7-jR7h0OUrtLBeN7O4Rol2vQGupxItW9_BerXV6VUQTJPN1Q5WUI4OFNTWkYzQjg3WllUSDAxWi4u) så kommer vi tillbaka till dig.
+>Om du är intresserad av att delta i betaprogrammet, fyll i [det här formuläret](https://forms.office.com/Pages/ResponsePage.aspx?id=Wht7-jR7h0OUrtLBeN7O4Rol2vQGupxItW9_BerXV6VUQTJPN1Q5WUI4OFNTWkYzQjg3WllUSDAxWi4u) så kommer vi tillbaka till dig.
 
-När leveransen har startat sker ingen förändring i **[!UICONTROL Success]** procent när meddelandet har skickats från Campaign till det förbättrade MTA-meddelandet.
+När leveransen har startat sker ingen förändring i **[!UICONTROL Success]** procent när meddelandet har skickats från Campaign till det förbättrade MTA-avtalet.
 
 <!--![](assets/efs-sending.png)-->
 

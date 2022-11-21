@@ -6,10 +6,10 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: 07c1f4a3-cf16-4a9b-b402-e13258799f91
-source-git-commit: ae235d39c4a78e0a2507f6baaebbdc9986dbf995
-workflow-type: ht
-source-wordcount: '4932'
-ht-degree: 100%
+source-git-commit: 7f41e3209450421262acf8a753bddd3eae1fe35f
+workflow-type: tm+mt
+source-wordcount: '5004'
+ht-degree: 98%
 
 ---
 
@@ -22,6 +22,19 @@ Den här sidan visar alla nya funktioner och dokumentationsuppdateringar efter m
 Se [Versionsinformationen för Adobe Campaign Classic](../../rn/using/latest-release.md) beträffande versionsrelaterade uppdateringar.
 
 ## 2022
+
+### November 2022 {#nov-2022}
+
+Uppdaterad versionsinformation med 7.3.2-förbättringar och korrigeringar. [Läs mer](latest-release.md)
+
+Uppdaterad kompatibilitetsmatris med stöd för Teradata 17. [Läs mer](compatibility-matrix.md)
+
+Fil- och resurshanteringsavsnittet har uppdaterats med ytterligare information om **uploadWhiteList** -attribut. [Läs mer](../../installation/using/file-res-management.md)
+
+Dokumentationen om säkerhetszoner har uppdaterats med ytterligare information om **allowDebug** attribut. [Läs mer](../../installation/using/security-zones.md#recommendations)
+
+Migreringsguiden har uppdaterats. Referenser till Adobe Campaign-versioner som inte stöds har tagits bort. [Läs mer](../../migration/using/about-migration.md)
+
 
 ### Juli 2022 {#july-2022}
 
@@ -485,7 +498,7 @@ Handböckerna för [installation](../../installation/using/general-architecture.
 
 Installationshandboken har uppdaterats och synkroniserats med den senaste versionen av kompatibilitetsmatrisen. Nya system som stöds har lagts till. Förekomster av system som är inaktuella och inte stöds har tagits bort. [Läs mer](../../installation/using/general-architecture.md)
 
-Kompatibilitetsmatrisen har uppdaterats med kopplingar till Hadoop 3.0 och Snowflake FDA. [Läs mer](https://helpx.adobe.com/se/campaign/kb/compatibility-matrix.html)
+Kompatibilitetsmatrisen har uppdaterats med kopplingar till Hadoop 3.0 och Snowflake FDA. [Läs mer](https://helpx.adobe.com/campaign/kb/compatibility-matrix.html)
 
 Ett tips om IP-tillhörighet har lagts till i installationshandboken. [Läs mer](../../installation/using/email-deliverability.md#list-of-ip-addresses-to-use)
 
@@ -503,7 +516,7 @@ Den nya parametern för rapportkonfigurationen av webbadresser har dokumenterats
 
 Sidan för den **Lokala och värdbaserade funktionsmatrisen i Campaign Classic** har uppdaterats med de nya FDA-kopplingarna. [Läs mer](../../installation/using/capability-matrix.md).
 
-Sidan **Funktionsmatrisen för Campaign Classic** har uppdaterats. [Läs mer](https://helpx.adobe.com/se/campaign/kb/compatibility-matrix.html)
+Sidan **Funktionsmatrisen för Campaign Classic** har uppdaterats. [Läs mer](https://helpx.adobe.com/campaign/kb/compatibility-matrix.html)
 
 Det nya **[!UICONTROL Cleanup of Nmsaddress]**-arbetsflödet har dokumenterats [här](../../production/using/database-cleanup-workflow.md#cleanup-of-nmsaddress).
 
@@ -555,7 +568,7 @@ Säkra SMS-meddelanden (TLS) – [läs mer](https://helpx.adobe.com/se/campaign/
 
 **Andra dokumentationsuppdateringar som följer med denna version**
 
-Dokumentationen för Adobe Campaign Enhanced MTA finns nu tillgänglig. [Läs mer](https://helpx.adobe.com/se/campaign/kb/acc-campaign-enhanced-mta.html)
+Dokumentationen för Adobe Campaign Enhanced MTA finns nu tillgänglig. [Läs mer](https://helpx.adobe.com/campaign/kb/acc-campaign-enhanced-mta.html)
 
 Ett nytt avsnitt har lagts till om hur man felsöker ett arbetsflöde som finns i läget &quot;Starta så snart som möjligt&quot; i en kampanj. [Läs mer](../../production/using/workflow-execution.md#start-as-soon-as-possible-in-campaigns)
 
@@ -617,7 +630,7 @@ Bästa praxis för prestandaförbättringar i arbetsflöden och leveranser har u
 
 **Nya funktioner i version 19.1**
 
-Kontrollpanel – [läs mer](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=sv)
+Kontrollpanel – [läs mer](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html)
 
 Verifieringskedja – [läs mer](../../production/using/audit-trail.md)
 
@@ -641,7 +654,7 @@ Beskrivningen av alternativet arbetsflöde före bearbetning har uppdaterats fö
 
 Den tekniska dokumentationen för utlösare i Experience Cloud har uppdaterats. [Läs mer](../../integrations/using/about-triggers.md)
 
-Listan med felmeddelanden har uppdaterats. [Läs mer](https://experienceleague.adobe.com/developer/campaign-errors/error_codes.html?lang=sv)
+Listan med felmeddelanden har uppdaterats. [Läs mer](https://experienceleague.adobe.com/developer/campaign-errors/error_codes.html)
 
 Ytterligare information om SOAP-autentiseringsmetoder för transaktionsmeddelanden har lagts till. [Läs mer](../../message-center/using/event-description.md)
 
@@ -680,7 +693,7 @@ Information har lagts till om faktureringsrapporten.
 Dokumentation om integrationen mellan delade publiker har uppdaterats.
 [Läs mer](../../integrations/using/configuring-shared-audiences-integration-in-adobe-campaign.md)
 
-Följande tekniskt dokument har uppdaterats: [Protokoll och inställningar för SMS-anslutning](https://helpx.adobe.com/se/campaign/kb/sms-connector-protocol-and-settings.html).
+Följande tekniskt dokument har uppdaterats: [Protokoll och inställningar för SMS-anslutning](https://helpx.adobe.com/campaign/kb/sms-connector-protocol-and-settings.html).
 
 Avsnittet Tekniskt arbetsflöde har uppdaterats. [Läs mer](../../workflow/using/about-technical-workflows.md)
 

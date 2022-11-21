@@ -6,9 +6,9 @@ title: Användarhandbok för Campaign Classic v7
 user-guide-description: Med Adobe Campaign kan du använda omfattande kunddata för att skapa, samordna och leverera dynamiska kampanjer som kunderna verkligen vill ha – via e-post, mobiler, offlinekanaler med mera.
 sub-product: adobe campaign classic
 type: Documentation
-source-git-commit: 8ea5a42e0539ea23c1d9940e3f38f2c90fdcc223
+source-git-commit: 0dd0b6f1aa69a6848a75e6299bd751de0bfddeb9
 workflow-type: tm+mt
-source-wordcount: '2556'
+source-wordcount: '2553'
 ht-degree: 99%
 
 ---
@@ -828,7 +828,6 @@ ht-degree: 99%
    + Starta migreringen {#migrating-to-adobe-campaign-7}
       + [Migrera en Microsoft Windows-plattform](migration/using/migrating-in-windows-for-adobe-campaign-7.md)
       + [Migrera en Linux-plattform](migration/using/migrating-in-linux-for-adobe-campaign-v7.md)
-      + [Konfigurera plattformen](migration/using/general-configurations.md)
    + [Återställningsförfarande](migration/using/about-rollback.md)
 + Tekniska anmärkningar {#technotes}
    + [Rekommendationer på maskinvarustorlek](technotes/using/hardware-sizing.md)
