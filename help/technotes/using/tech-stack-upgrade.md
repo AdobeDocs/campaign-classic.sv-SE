@@ -4,16 +4,16 @@ title: Technote - Adobe Campaign systemuppgraderingar
 description: Adobe Campaign systemuppgradering
 hide: true
 hidefromtoc: true
-source-git-commit: b119d52b94d95086261fcdc1744698a78296df9c
+source-git-commit: 6fc11ea75863abe86e81c4978843e8487cbd83a0
 workflow-type: tm+mt
-source-wordcount: '494'
-ht-degree: 9%
+source-wordcount: '502'
+ht-degree: 8%
 
 ---
 
 # Adobe Campaign 2023 - systemuppgradering {#ac-system-upgrade}
 
-Kampanjinfrastrukturen bygger på tredjepartssystem som regelbundet måste uppdateras med systemversioner och korrigeringar. Dessa uppdateringar är obligatoriska för att säkerställa kontinuitet i tjänsten och säkra kampanjmiljöer från säkerhetsrisker. Dessutom krävs uppgraderingar för att anpassa sig till ändringar i system från tredje part.
+Kampanjinfrastrukturen bygger på tredjepartssystem som regelbundet måste uppdateras med de senaste versionerna och korrigeringarna. Dessa uppdateringar är obligatoriska för att säkerställa kontinuitet i tjänsten och säkra kampanjmiljöer från säkerhetsrisker. Dessutom krävs en Campaign-uppgradering för att säkerställa kompatibilitet med systemändringar från tredje part.
 
 Som **Kund för värdbaserade eller hanterade Cloud Services** får du information från Adobe om dessa uppgraderingar när de behövs. Du måste uppgradera dina miljöer i enlighet med rekommendationerna för att säkerställa efterlevnad.
 
@@ -23,7 +23,7 @@ Av säkerhetsskäl måste du [installera den senaste Campaign-versionen](#ac-upg
 
 >[!NOTE]
 >
->Om du har frågor om de här ändringarna kan du kontakta [Adobes kundtjänst](https://helpx.adobe.com/se/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
+>Om du har frågor om de här ändringarna kan du kontakta [Adobes kundtjänst](https://helpx.adobe.com/se/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html). Se även [Vanliga frågor om uppgradering av bygge](../../platform/using/faq-build-upgrade.md).
 
 ## Uppgradering av kampanjbygge {#ac-upgrade}
 
@@ -60,12 +60,12 @@ Om ditt databassystem för Campaign är PostgreSQL och du vill ha tillgång till
 
 * Som kund hos en värdserver eller hanterad Cloud Services kommer Adobe att kontakta dig och uppgradera ditt databassystem från PostgreSQL 11 till PostgreSQL 14.
 * Om ert marknadsföringsdatabassystem är PostgreSQL måste ni som hybridkund uppgradera det till PostgreSQL 14.
-* Som lokal kund ombeds du uppgradera databassystemet till PostgreSQL 14. ../integrations/using/configuring-adobe-io.md).
+* Som lokal kund ombeds du uppgradera databassystemet till PostgreSQL 14.
 
 
 ## Användbara länkar
 
 * [Uppgradera din miljö](../../production/using/build-upgrade.md)
 * [Vanliga frågor och svar om builduppgradering](../../platform/using/faq-build-upgrade.md)
-* [Ladda ned Campaign Classic build](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html)
+* [Ladda ned den senaste versionen av Campaign Classic](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html)
 * [Gör den nya klientkonsolen tillgänglig för användare](../../installation/using/client-console-availability-for-windows.md)
