@@ -4,14 +4,14 @@ title: Technote - Adobe Campaign systemuppgraderingar
 description: Adobe Campaign systemuppgradering
 hide: true
 hidefromtoc: true
-source-git-commit: 6fc11ea75863abe86e81c4978843e8487cbd83a0
+source-git-commit: b877625c568cc9b1119a76812e92dffdab1f4bb1
 workflow-type: tm+mt
 source-wordcount: '502'
 ht-degree: 8%
 
 ---
 
-# Adobe Campaign 2023 - systemuppgradering {#ac-system-upgrade}
+# Adobe Campaign 2023 miljöuppgraderingar {#ac-system-upgrade}
 
 Kampanjinfrastrukturen bygger på tredjepartssystem som regelbundet måste uppdateras med de senaste versionerna och korrigeringarna. Dessa uppdateringar är obligatoriska för att säkerställa kontinuitet i tjänsten och säkra kampanjmiljöer från säkerhetsrisker. Dessutom krävs en Campaign-uppgradering för att säkerställa kompatibilitet med systemändringar från tredje part.
 
