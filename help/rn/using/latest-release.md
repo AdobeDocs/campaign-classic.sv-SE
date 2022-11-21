@@ -6,9 +6,9 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: d65869ca-a785-4327-8e8d-791c28e4696c
-source-git-commit: ca2f50a501c63cc8b2d4de5d9a41b655a6b6d6cf
+source-git-commit: 95c4a83037bcd2e22a03ac80d1ec4a7896a94ce3
 workflow-type: tm+mt
-source-wordcount: '2713'
+source-wordcount: '2709'
 ht-degree: 75%
 
 ---
@@ -43,8 +43,8 @@ Läs mer på sidan [Funktioner som är inaktuella eller har tagits bort](depreca
 
 **Andra ändringar**
 
-* Webbloggarna har förbättrats: logonEscalation-varningar visas nu endast för användare med administratörsbehörighet. (NEO-47167)
-* För att undvika fel finns **Samla in data för arbetsflödet för Heatmap-tjänsten** (collectDataHeatMapService) stoppas nu som standard. (NEO-33959)
+* Webbloggarna har förbättrats: `logonEscalation` Varningar visas nu endast för användare med administratörsbehörighet. (NEO-47167)
+* För att undvika fel finns **Samla in data för tjänsten Heatmap** (collectDataHeatMapService)-arbetsflödet stoppas nu som standard. (NEO-33959)
 * Flera förbättringar har implementerats för att optimera processoranvändningen för kontrollpanelen för kampanjer. (NEO-46417)
 * För att förhindra krascher har JS-metoden loadLibraryDebug tagits bort. (NEO-46968)
 * Återstående referenser till log4j-biblioteket har tagits bort från Campaign-installationen i Windows. (NEO-44851)
@@ -56,11 +56,11 @@ Läs mer på sidan [Funktioner som är inaktuella eller har tagits bort](depreca
 * Ett problem som orsakade att du inte kunde godkänna innehållet på nytt har korrigerats i ett e-postmeddelande. (NEO-44259)
 * Ett problem som kunde förhindra **Leveransgodkännande** från att visas. (NEO-47547)
 * Korrigerade ett prestandaproblem på fliken HTML för en leverans som kan uppstå för stor HTML-kod. (NEO-47440)
-* Ett problem som påverkade statusuppdateringarna för leveransloggen på MID-instansen när alternativet FeatureFlag_GZIP_Compression aktiverades har åtgärdats. (NEO-49183)
+* Ett problem som påverkade statusuppdateringarna för leveransloggen på MID-instansen när `FeatureFlag_GZIP_Compression` alternativet aktiverades. (NEO-49183)
 * Korrigerade ett problem som förhindrade dig från att skicka aviseringar från iOS-mobilappar från en körningsinstans när du använde tokenbaserad autentisering. (NEO-45961)
 * Ett problem med **Uppdatera för leverans** arbetsflöde (deliverabilityUpdate) som fastnade när det fanns för många utsändningsloggar att synkronisera. (NEO-48287)
-* Korrigerade ett problem med händelsetypen som blockerade synkroniseringsarbetsflödet för Message Center (mcSynch).
-* Korrigerat ett problem som kan leda till ett fel när filen lades till **Mottagare som har öppnat** Indikator (measuredRecipientOpen) i ytterligare data för en **Fråga** arbetsflödesaktivitet. (NEO-46665)
+* Korrigerade ett problem med händelsetypen som blockerade **Synkronisering av meddelandecenter** (mcSynch) arbetsflöde.
+* Korrigerat ett problem som kan leda till ett fel när filen lades till **Mottagare som har öppnat**  Indikatorn (stimateRecipientOpen) i ytterligare data för en **Fråga** arbetsflödesaktivitet. (NEO-46665)
 * Ett problem med **Fakturering** arbetsflöde som misslyckades när Message Center Control- och körningspaket var installerade på samma instans. (NEO-47674)
 * Ett problem med **Fakturering** arbetsflöde som misslyckades när tabeller med primärnyckeln definierad som en sträng i stället för ett heltal finns. (NEO-46254)
 * Ett problem med heatmap-filter när arbetsflödets namn var för långt har korrigerats. (NEO-46301)
