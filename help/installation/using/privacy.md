@@ -4,22 +4,17 @@ title: Sekretess
 description: Läs mer om de bästa sätten att följa vad gäller sekretess
 feature: URL Personalization, Privacy
 exl-id: 0a3473bf-0528-486d-a799-8db86fece522
-source-git-commit: 197ac1322cb8f4f34d2670a29d622a21f407c90c
+source-git-commit: 0e57ffba9b8c7fd05843c3353d2c0d64cbc83b8b
 workflow-type: tm+mt
-source-wordcount: '861'
-ht-degree: 4%
+source-wordcount: '845'
+ht-degree: 2%
 
 ---
 
-# Sekretess {#privacy}
+# Personalisering och sekretess {#privacy}
 
 ![](../../assets/v7-only.svg)
 
-## Sekretessförfrågningar
-
-Adobe Campaign har en uppsättning verktyg som hjälper dig att följa integritetsefterlevnaden i GDPR och CCPA.
-
-Se [den här sidan](../../platform/using/privacy-management.md) om du vill ha allmän information om vad sekretesshantering är och implementeringsstegen i Adobe Campaign. Du hittar även bästa praxis och en översikt över användarprocessen och personerna.
 
 ## URL-anpassning {#url-personalization}
 
@@ -187,3 +182,8 @@ Följ de här stegen för att skydda sidorna:
    Förutom **robots.txt** bör du lägga till en **X-Robots-tag** header. Du kan göra det i Apache eller IIS och i **serverConf.xml** konfigurationsfil.
 
    Mer information finns i [den här artikeln](https://developers.google.com/search/reference/robots_meta_tag).
+
+
+## Sekretessförfrågningar
+
+Se [den här sidan](../../platform/using/privacy-management.md) om du vill ha allmän information om vad sekretesshantering är och implementeringsstegen i Adobe Campaign. Du hittar även bästa praxis och en översikt över användarprocessen och personerna.
