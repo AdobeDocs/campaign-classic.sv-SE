@@ -1,10 +1,10 @@
 ---
 product: campaign
-title: Sekretess
-description: Läs mer om de bästa sätten att följa vad gäller sekretess
+title: Personalisering och sekretess
+description: Lär dig de effektivaste strategierna för säkerhet när det gäller sekretess och personalisering
 feature: URL Personalization, Privacy
 exl-id: 0a3473bf-0528-486d-a799-8db86fece522
-source-git-commit: 0e57ffba9b8c7fd05843c3353d2c0d64cbc83b8b
+source-git-commit: f97199e634205742b74a08932a40db2fca138cc3
 workflow-type: tm+mt
 source-wordcount: '845'
 ht-degree: 2%
