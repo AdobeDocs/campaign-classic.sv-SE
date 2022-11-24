@@ -5,7 +5,7 @@ description: Adobe Campaign systemuppgradering
 hide: true
 hidefromtoc: true
 exl-id: 78949d94-60b3-44f1-8e5a-d61b5b723e87
-source-git-commit: 1b7b216c22d48159a1590603de220714c1d7cf32
+source-git-commit: b8bbdb4a0d595ec2bc884e041d1e56b81da8aa3d
 workflow-type: tm+mt
 source-wordcount: '502'
 ht-degree: 8%
@@ -30,7 +30,7 @@ Av säkerhetsskäl måste du [installera den senaste Campaign-versionen](#ac-upg
 
 **Påverkas du?**
 
-Om du påverkas av [uppgradering av operativsystem](#os-upgrade) och/eller [databassystemuppgradering](#pg-upgrade) som beskrivs nedan måste ni uppgradera era Campaign-miljöer till [den senaste 7.3.2-versionen](../../rn/using/latest-release.m#release-7-3-2)som är kompatibelt med dessa system.
+Om du påverkas av [uppgradering av operativsystem](#os-upgrade) och/eller [databassystemuppgradering](#pg-upgrade) som beskrivs nedan måste ni uppgradera era Campaign-miljöer till [den senaste 7.3.2-versionen](../../rn/using/latest-release.md#release-7-3-2)som är kompatibelt med dessa system.
 
 **Hur uppdaterar jag?**
 
