@@ -5,7 +5,7 @@ description: Adobe Campaign systemuppgradering
 hide: true
 hidefromtoc: true
 exl-id: 78949d94-60b3-44f1-8e5a-d61b5b723e87
-source-git-commit: b8bbdb4a0d595ec2bc884e041d1e56b81da8aa3d
+source-git-commit: 7948f6423b80788adf26a53afcd380953c8b8463
 workflow-type: tm+mt
 source-wordcount: '502'
 ht-degree: 8%
@@ -55,7 +55,7 @@ Om ni kör Campaign på ett Debian-operativsystem och vill dra nytta av de senas
 
 **Påverkas du?**
 
-Om ditt databassystem för Campaign är PostgreSQL och du vill ha tillgång till de senaste PostgreSQL-innovationerna och säkerhetsuppdateringarna måste du uppgradera till **PostgreSQL 14**. Observera att PostSQL 11 når slutet av livscykeln den 30 november 2022.
+Om ditt databassystem för Campaign är PostgreSQL och du vill ha tillgång till de senaste PostgreSQL-innovationerna och säkerhetsuppdateringarna måste du uppgradera till **PostgreSQL 14**. Observera att PostSQL 11 når slutet av livscykeln den 9 november 2023.
 
 **Hur uppdaterar jag?**
 
