@@ -9,7 +9,7 @@ exl-id: 07c1f4a3-cf16-4a9b-b402-e13258799f91
 source-git-commit: 5792ad762befb97888ad32406d3bcb7f97df3fa7
 workflow-type: tm+mt
 source-wordcount: '4994'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -25,15 +25,15 @@ Se [Versionsinformationen för Adobe Campaign Classic](../../rn/using/latest-rel
 
 ### November 2022 {#nov-2022}
 
-Uppdaterad versionsinformation med 7.3.2-förbättringar och korrigeringar. [Läs mer](latest-release.md)
+Uppdaterat avsnitt med versionsinformation med 7.3.2-förbättringar och korrigeringar. [Läs mer](latest-release.md)
 
 Uppdaterad kompatibilitetsmatris med stöd för Teradata 17. [Läs mer](compatibility-matrix.md)
 
-Fil- och resurshanteringsavsnittet har uppdaterats med ytterligare information om **uploadWhiteList** -attribut. [Läs mer](../../installation/using/file-res-management.md)
+Fil- och resurshanteringsavsnittet har uppdaterats med ytterligare information om attributet **uploadWhiteList**. [Läs mer](../../installation/using/file-res-management.md)
 
-Dokumentationen om säkerhetszoner har uppdaterats med ytterligare information om **allowDebug** attribut. [Läs mer](../../installation/using/security-zones.md#recommendations)
+Dokumentationen om säkerhetszoner har uppdaterats med ytterligare information om attributet **allowDebug**. [Läs mer](../../installation/using/security-zones.md#recommendations)
 
-Migreringsguiden har uppdaterats. Referenser till Adobe Campaign-versioner som inte stöds har tagits bort. [Läs mer](../../migration/using/about-migration.md)
+Migreringshandboken har uppdaterats. Referenser till Adobe Campaign-versioner som inte stöds har tagits bort. [Läs mer](../../migration/using/about-migration.md)
 
 
 ### Juli 2022 {#july-2022}

@@ -9,7 +9,7 @@ type: Documentation
 source-git-commit: 5792ad762befb97888ad32406d3bcb7f97df3fa7
 workflow-type: tm+mt
 source-wordcount: '2524'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -825,7 +825,7 @@ ht-degree: 99%
       + [Tekniska anmärkningar](technotes/using/technote.md)
       + [Ny levererbarhetsserver](technotes/using/deliverability-server.md)
       + [Uppgradering av Apache-säkerhet](technotes/using/acc-apache-upgrade.md)
-      + [2023 systemuppgraderingar](technotes/using/tech-stack-upgrade.md)
+      + [2023-systemuppgraderingar](technotes/using/tech-stack-upgrade.md)
       + [IMS-uppdateringar](technotes/using/ims-updates.md)
       + [Support för TLS 1.0 och 1.1 upphör](technotes/using/eol-tls-support.md)
    + E-postmeddelanden och push-meddelanden{#technotes-email}

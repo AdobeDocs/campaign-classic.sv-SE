@@ -9,7 +9,7 @@ exl-id: d60d67de-6618-4f3b-be4a-ad7633ab5645
 source-git-commit: 0ecf9c69cc4b444feda1e42701a3a27f2b2e7eeb
 workflow-type: tm+mt
 source-wordcount: '1684'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -45,14 +45,14 @@ Kunder uppmanas att se över om de använder funktionen i den aktuella driftsät
   </tr>
 <tr>
  <td>Social marknadsföring med Facebook</td>
- <td>Social marknadsföring med Facebook är nu föråldrat. Du kan använda Twitter-integrering för att publicera på sociala medier, eller arbeta med Adobe för att skapa en anpassad kanal.
+ <td>Social marknadsföring med Facebook är nu inaktuell. Du kan använda Twitter-integrering för att publicera på sociala medier, eller arbeta med Adobe för att skapa en anpassad kanal.
  <p></p>
   <p>Måldatum för borttagning: i slutet av 2023</p>
   </td>
 </tr>
 <tr>
- <td>ACS-koppling</td>
- <td>ACS Connector (Prime-erbjudande) är nu föråldrat. Du kan använda funktioner för Campaigns export/import för att extrahera och mata in data i båda produkterna.<p></p>
+ <td>ACS-anslutning</td>
+ <td>ACS-anslutning (Prime-erbjudande) är nu inaktuell. Du kan använda funktionerna export/import för Campaign för att extrahera och mata in data i båda produkterna.<p></p>
   <p>Måldatum för borttagning: i slutet av 2023</p>
   </td>
 </tr>

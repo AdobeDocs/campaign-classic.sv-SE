@@ -9,7 +9,7 @@ exl-id: d65869ca-a785-4327-8e8d-791c28e4696c
 source-git-commit: a3f64d71b857312fd3130bb66a864740c902e2f4
 workflow-type: tm+mt
 source-wordcount: '2722'
-ht-degree: 75%
+ht-degree: 99%
 
 ---
 
@@ -26,57 +26,57 @@ _21 november 2022_
 **Kompatibilitetsuppdateringar**
 
 * Adobe Campaign är nu kompatibelt med PostgreSQL 14.
-* Efter att Microsoft Internet Explorer 11 har upphört används Edge Chromium i återgivningsmotorn HTML för kontrollpaneler i klientkonsolen. (NEO-20741)
+* Efter att Microsoft Internet Explorer 11 har nått slutet av sin livscykel använder nu HTML-återgivningsmotorn för kontrollpaneler i klientkonsolen Edge Chromium. (NEO-20741)
 
 Se [kompatibilitetsmatrisen för Campaign](../../rn/using/compatibility-matrix.md#RDBMSservers).
 
 **Förbättringar**
 
-* Google BigQuery-kopplingen har nu fullständigt stöd för booleska fält. (NEO-49181)
-* Nu kan du konfigurera giltighetsperioden för IMS-cookies i `Configuration for the redirection service` i filen serverConf.xml. Detta gäller följande cookies: `uuid230`, `nllastdelid` och `AMCV_` (NEO-42541)
-* IP-adressen kan nu döljas i &quot;/r/test&quot;-begäran genom att ange `showSourceIP` till false i omdirigeringsnoden för filen serverConf.xml. [Läs mer](../../installation/using/the-server-configuration-file.md#redirection-redirection)(NEO-46656)
+* Google BigQuery-anslutningen har nu fullständigt stöd för booleska fält. (NEO-49181)
+* Nu kan du konfigurera giltighetsperioden för IMS-cookies i avsnittet `Configuration for the redirection service` i filen serverConf.xml. Detta gäller följande cookies: `uuid230`, `nllastdelid` och `AMCV_` (NEO-42541)
+* IP-adressen kan nu döljas i begäran /r/test genom att ange `showSourceIP` som felaktig i omdirigeringsnoden för filen serverConf.xml. [Läs mer](../../installation/using/the-server-configuration-file.md#redirection-redirection)(NEO-46656)
 
 **Inaktuella funktioner**
 
-* Social marknadsföring med Facebook är nu föråldrat. Du kan använda Twitter-integrering för att publicera på sociala medier, eller arbeta med Adobe för att skapa en anpassad kanal.
-* ACS Connector (Prime-erbjudande) är nu föråldrat. Du kan använda funktioner för Campaigns export/import för att extrahera och mata in data i båda produkterna.
+* Social marknadsföring med Facebook är nu inaktuell. Du kan använda Twitter-integrering för att publicera på sociala medier, eller arbeta med Adobe för att skapa en anpassad kanal.
+* ACS-anslutning (Prime-erbjudande) är nu inaktuell. Du kan använda funktionerna export/import för Campaign för att extrahera och mata in data i båda produkterna.
 
 Läs mer på sidan [Funktioner som är inaktuella eller har tagits bort](deprecated-features.md).
 
 **Andra ändringar**
 
-* Webbloggarna har förbättrats: `logonEscalation` Varningar visas nu endast för användare med administratörsbehörighet. (NEO-47167)
-* För att undvika fel finns **Samla in data för tjänsten Heatmap** (collectDataHeatMapService)-arbetsflödet stoppas nu som standard. (NEO-33959)
+* Webbloggarna har förbättrats: `logonEscalation` varningar visas nu endast för användare med administratörsbehörighet. (NEO-47167)
+* För att undvika fel stoppas nu arbetsflödet **Samla in data för tjänsten Heatmap** (collectDataHeatMapService) som standard. (NEO-33959)
 * Flera förbättringar har implementerats för att optimera processoranvändningen för kontrollpanelen för kampanjer. (NEO-46417)
 * För att förhindra krascher har JS-metoden loadLibraryDebug tagits bort. (NEO-46968)
 * Återstående referenser till log4j-biblioteket har tagits bort från Campaign-installationen i Windows. (NEO-44851)
 
 **Korrigeringar**
 
-* Ett problem som hindrade dig från att använda **Sammanfoga markerade rader** arbetsflödesalternativ. (NEO-48488)
-* Ett problem som förhindrade **Lyckades** leveransindikator uppdateras inte korrekt när du använder Adobe Campaign Enhanced MTA. (NEO-50462)
-* Ett problem som orsakade att du inte kunde godkänna innehållet på nytt har korrigerats i ett e-postmeddelande. (NEO-44259)
-* Ett problem som kunde förhindra **Leveransgodkännande** från att visas. (NEO-47547)
+* Korrigerade ett problem som hindrade dig från att använda arbetsflödesalternativet **Sammanfoga markerade rader**. (NEO-48488)
+* Korrigerade ett problem som förhindrade leveransindikatorn **Lyckades** från att uppdateras korrekt när du använder Adobe Campaign Enhanced MTA. (NEO-50462)
+* Korrigerade ett problem som orsakade att du inte kunde godkänna innehållet i ett e-postmeddelande på nytt. (NEO-44259)
+* Korrigerade ett problem som kunde förhindra knappen **Leveransgodkännande** från att visas. (NEO-47547)
 * Korrigerade ett prestandaproblem på fliken HTML för en leverans som kan uppstå för stor HTML-kod. (NEO-47440)
-* Ett problem som påverkade statusuppdateringarna för leveransloggen på MID-instansen när `FeatureFlag_GZIP_Compression` alternativet aktiverades. (NEO-49183)
+* Korrigerade ett problem som påverkade statusuppdateringarna för leveransloggen på MID-instansen när alternativet `FeatureFlag_GZIP_Compression` aktiverades. (NEO-49183)
 * Korrigerade ett problem som förhindrade dig från att skicka aviseringar från iOS-mobilappar från en körningsinstans när du använde tokenbaserad autentisering. (NEO-45961)
-* Ett problem med **Uppdatera för leverans** arbetsflöde (deliverabilityUpdate) som fastnade när det fanns för många utsändningsloggar att synkronisera. (NEO-48287)
-* Korrigerade ett problem med händelsetypen som blockerade **Synkronisering av meddelandecenter** (mcSynch) arbetsflöde.
-* Korrigerat ett problem som kan leda till ett fel när filen lades till **Mottagare som har öppnat**  Indikatorn (stimateRecipientOpen) i ytterligare data för en **Fråga** arbetsflödesaktivitet. (NEO-46665)
-* Ett problem med **Fakturering** arbetsflöde som misslyckades när Message Center Control- och körningspaket var installerade på samma instans. (NEO-47674)
-* Ett problem med **Fakturering** arbetsflöde som misslyckades när tabeller med primärnyckeln definierad som en sträng i stället för ett heltal finns. (NEO-46254)
-* Ett problem med heatmap-filter när arbetsflödets namn var för långt har korrigerats. (NEO-46301)
-* Korrigerade ett fel som introducerades i 7.3.1 på Snowflake FDA-kontakten som ledde till att poster utelämnades när 0 eller 1 enkel kardinalitetsanslutning användes under anrikningen. (NEO-48737)
-* Ett problem med Snowflake FFDA har korrigerats när sorteringsparametern används i en **Dela** arbetsflödesaktivitet. (NEO-45899)
-* Korrigerade ett problem som kunde förhindra dig från att spara konfigurationen för det externa kontot. Det externa kontot sparas nu automatiskt efter anslutningstestet för anslutningar med tolkningsfunktioner (Snowflake och Google BigQuery). (NEO-47636)
-* Ett problem som gjorde att du inte kunde infoga en tidsdatatyp i en **Datauppdatering** arbetsflödesaktivitet på MSSQL. (NEO-47763)
+* Korrigerade ett problem med arbetsflödet **Uppdatera för leverans** (deliverabilityUpdate) som fastnade när det fanns för många utsändningsloggar att synkronisera. (NEO-48287)
+* Korrigerade ett problem med händelsetypen som blockerade arbetsflödet **Synkronisering av meddelandecenter** (mcSynch).
+* Korrigerade ett problem som kan leda till ett fel när indikatorn **Mottagare som har öppnat** (estimatedRecipientOpen) lades till i ytterligare data för arbetsflödesaktiviteten **Fråga**. (NEO-46665)
+* Korrigerade ett problem med arbetsflödet **Fakturering** som misslyckades när paket för Message Center Control och körning installerades på samma instans. (NEO-47674)
+* Korrigerade ett problem med arbetsflödet **Fakturering** som misslyckades när tabeller med primärnyckeln definierad som en sträng i stället för ett heltal ingår. (NEO-46254)
+* Korrigerade ett problem med heatmap-filter när arbetsflödets namn var för långt. (NEO-46301)
+* Korrigerade ett fel som introducerades i 7.3.1 på Snowflake FDA-anslutning som ledde till att poster utelämnades när ”0 eller 1 enkel kardinalitetsanslutning” användes under berikningen. (NEO-48737)
+* Korrigerade ett problem med Snowflake FFDA när sorteringsparametern används i arbetsflödesaktiviteten **Dela**. (NEO-45899)
+* Korrigerade ett problem som kunde förhindra dig från att spara konfiguration för externt konto. Det externa kontot sparas nu automatiskt efter anslutningstestet för anslutningar med tolkningsfunktioner (Snowflake och Google BigQuery). (NEO-47636)
+* Korrigerade ett problem som gjorde att du inte kunde infoga en tidsdatatyp i arbetsflödesaktiviteten **Datauppdatering** på MSSQL. (NEO-47763)
 * Korrigerade ett problem som ledde till att MTA-processen kraschade när motorns tidszon inte hade angetts (gäller för MSSQL). (NEO-46619)
-* Ett problem med HTML filimport när bildnoder (img) innehöll URL:er med anpassningsfält har åtgärdats. (NEO-48396)
-* Korrigerade ett HTTP 500-fel vid försök att ansluta till en instans där `limit` noden har inte konfigurerats i filen serverConf.xml.
-* Korrigerat ett problem som kan leda till ett &quot;Felmatchat teckenuppsättning&quot;-fel vid användning av vissa funktioner som `to_nclob` med en Oraclena Unicode-databas där NChar inte aktiverats. (NEO-49361)
-* Ett problem som orsakade ett fel när en användare med läsbehörighet i mappen nmsDeliveryMapping försökte köra en kampanj eller ett arbetsflöde har åtgärdats. (NEO-48230)
-* Ett problem som förhindrade `JSPContext.sqlExecWithOneParam` från att arbeta. (NEO-50066)
-* Olika omdirigeringsfel har korrigerats. (NEO-50030)
+* Korrigerade ett problem med import av HTML-fil när bildnoder (img) innehöll URL:er med personaliseringsfält. (NEO-48396)
+* Korrigerade ett HTTP 500-fel vid försök att ansluta till en instans där `limit`-noden har inte konfigurerats i filen serverConf.xml.
+* Korrigerade ett problem som kan leda till felet Felmatchad teckenuppsättning vid användning av vissa funktioner som `to_nclob` med en Oracle Unicode-databas där NChar inte aktiverats. (NEO-49361)
+* Korrigerade ett problem som orsakade ett fel när en användare med läsbehörighet i mappen nmsDeliveryMapping försökte köra en kampanj eller ett arbetsflöde. (NEO-48230)
+* Korrigerade ett problem som förhindrade funktionen `JSPContext.sqlExecWithOneParam` från att arbeta. (NEO-50066)
+* Korrigerade olika omdirigeringsfel. (NEO-50030)
 
 ## ![](assets/do-not-localize/orange_2.png) Version 7.3.1 – build 9352 {#release-7-3-1}
 
