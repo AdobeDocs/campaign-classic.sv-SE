@@ -6,10 +6,10 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: d65869ca-a785-4327-8e8d-791c28e4696c
-source-git-commit: f37f6c080bc6fb70cbd3f853db4ad8685ae8ebf8
-workflow-type: ht
-source-wordcount: '2737'
-ht-degree: 100%
+source-git-commit: 1c0aeecd72a35fc6e2e72f4b042df2ff39e5cb6f
+workflow-type: tm+mt
+source-wordcount: '2771'
+ht-degree: 98%
 
 ---
 
@@ -29,7 +29,8 @@ _21 november 2022_
 
 **Kompatibilitetsuppdateringar**
 
-* Adobe Campaign är nu kompatibelt med PostgreSQL 14.
+* Adobe Campaign är nu kompatibelt med PostgreSQL 14. Mer information finns i [technote](../../technotes/using/tech-stack-upgrade.md).
+
 * Efter att Microsoft Internet Explorer 11 har nått slutet av sin livscykel använder nu HTML-återgivningsmotorn för kontrollpaneler i klientkonsolen Edge Chromium. (NEO-20741)
 
 Se [kompatibilitetsmatrisen för Campaign](../../rn/using/compatibility-matrix.md#RDBMSservers).
@@ -108,7 +109,7 @@ _1 juli 2022_
 * Adobe Campaign SDK har nu stöd för Android 12 och iOS 15 för push-meddelanden.
 * Adobe Campaign är nu kompatibelt med MySQL 8.
 * Adobe Campaign är nu kompatibelt med Windows 11.
-* Adobe Campaign är nu kompatibelt med Debian 11.
+* Adobe Campaign är nu kompatibelt med Debian 11. Mer information finns i [technote](../../technotes/using/tech-stack-upgrade.md).
 
 Se [kompatibilitetsmatrisen för Campaign](../../rn/using/compatibility-matrix.md#OperatingSystems).
 
@@ -241,3 +242,4 @@ Adobe Campaign är nu kompatibelt med Windows Server 2019. Se [kompatibilitetsma
 * Korrigerade ett problem som kunde förhindra dig från att förhandsgranska e-postleveranser som var kopplade till ett arbetsflöde. (NEO-37840)
 * Korrigerade ett problem som kunde medföra att giltiga tabeller som innehöll listvärden raderades av arbetsflödet för databasrensning. (NEO-34911)
 * Korrigerade ett problem som kunde få faktureringsarbetsflödet att krascha på marknadsinstanser.
+* Korrigerade ett problem som kunde leda till att leveransen skickades till ett större antal mottagare än förväntat. (NEO-45108)
