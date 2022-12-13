@@ -6,7 +6,7 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: d65869ca-a785-4327-8e8d-791c28e4696c
-source-git-commit: 1c0aeecd72a35fc6e2e72f4b042df2ff39e5cb6f
+source-git-commit: 8391df5046d56edfb33de5eb9f2afb4738108791
 workflow-type: tm+mt
 source-wordcount: '2771'
 ht-degree: 98%
@@ -149,6 +149,7 @@ Se [kompatibilitetsmatrisen för Campaign](../../rn/using/compatibility-matrix.m
 * Ett problem som kunde leda till krascher när felaktig HTML-kod används i en leverans har åtgärdats. (NEO-40385)
 * Ett problem som kunde förhindra icke-administratörer från att få åtkomst till fliken **Analys** i leveransegenskaperna har åtgärdats. (NEO-34025)
 * Ett problem som kunde förhindra att en bild laddades upp i segmentläge från en extern server under meddelandeförberedelsen har åtgärdats. (NEO-40307)
+* Korrigerade ett problem som kunde leda till att leveransen skickades till ett större antal mottagare än förväntat. (NEO-45108)
 
 ## ![](assets/do-not-localize/green_2.png) Version 7.2.2 – build 9349 {#release-7-2-2}
 
@@ -242,4 +243,3 @@ Adobe Campaign är nu kompatibelt med Windows Server 2019. Se [kompatibilitetsma
 * Korrigerade ett problem som kunde förhindra dig från att förhandsgranska e-postleveranser som var kopplade till ett arbetsflöde. (NEO-37840)
 * Korrigerade ett problem som kunde medföra att giltiga tabeller som innehöll listvärden raderades av arbetsflödet för databasrensning. (NEO-34911)
 * Korrigerade ett problem som kunde få faktureringsarbetsflödet att krascha på marknadsinstanser.
-* Korrigerade ett problem som kunde leda till att leveransen skickades till ett större antal mottagare än förväntat. (NEO-45108)
