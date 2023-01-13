@@ -3,10 +3,10 @@ product: campaign
 title: Migrera till Adobe Analytics Connector
 description: Campaign - Analytics Connector - frågor och svar
 exl-id: 5bf61654-3d68-4560-a93f-7a768a2c5be4
-source-git-commit: c072cb5b2d33f93ff395e4670507744b0d20c9bc
+source-git-commit: 62ccc9e52de1bc416284e5b1bf48d69dc603923a
 workflow-type: tm+mt
-source-wordcount: '814'
-ht-degree: 5%
+source-wordcount: '858'
+ht-degree: 4%
 
 ---
 
@@ -16,13 +16,15 @@ ht-degree: 5%
 
 Från och med version 21.1.3 av Campaign Classic är Adobe Analytics Data Connector föråldrat. [Läs mer](https://experienceleague.adobe.com/docs/analytics/import/dataconnectors/data-connectors-eol.html)
 
-Den 1 augusti 2021 har Adobe Campaign Classic tagits bort från det gamla användargränssnittet för Data Connectors, men befintliga Campaign-integreringar kommer att fortsätta samla in och skicka data till Adobe Analytics fram till den 17 augusti 2022. Efter detta datum upphör integreringen att samla in och skicka data till Adobe Analytics.
+Den 1 augusti 2021 har Adobe Campaign Classic tagits bort från det tidigare Data Connectors-gränssnittet, men befintliga Campaign-integreringar kommer att fortsätta att samla in och skicka data till Adobe Analytics fram till den 17 augusti 2022. Efter detta datum upphör integreringen att samla in och skicka data till Adobe Analytics.
 
-Du **måste implementera** den nya integreringen av Adobe Analytics Connector på Adobe Exchange som ersätter den gamla integreringen av Data Connectors. Mer information om Adobe Analytics Connector finns i [den här sidan](../../platform/using/adobe-analytics-connector.md).
+Du **måste implementera** den nya integreringen av Adobe Analytics Connector på Adobe Exchange som ersätter den gamla Data Connectors-integreringen. Mer information om Adobe Analytics Connector finns i [den här sidan](../../platform/using/adobe-analytics-connector.md).
+
+Om du har frågor om dessa ändringar kan du läsa [Vanliga frågor](#faq-aa). Mer information får du av [Adobe kundtjänst](https://helpx.adobe.com/se/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
 
 >[!NOTE]
 >
->Om du har frågor om dessa ändringar kan du läsa [Vanliga frågor](#faq-aa). Mer information får du av [Adobe kundtjänst](https://helpx.adobe.com/se/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
+>Om du migrerar från en befintlig Adobe Analytics Data Connector (som tidigare kallades Genesis-integration) och använder den nya klassificeringsarkitekturen i Adobe Analytics behöver du byggversioner från 7.3.1 eller 8.4.1 för att kunna migrera till den nya Adobe Analytics Connector.
 
 ## Vad har ändrats?
 
@@ -34,7 +36,7 @@ Nu finns det en ny integrering mellan Campaign Classic v7 och Adobe Analytics. S
 
 * De inbyggda tekniska arbetsflödena och deras beteende är desamma. Endast de backend-API:er som används av arbetsflödena för att skicka/hämta data till/från Adobe Analytics har ändrats.
 
-* Observera att `nlserver` -processen bör konfigureras med IMS Technical Account User för att den nya anslutningen ska fungera. Denna ändring måste göras av Adobe. Om du vill implementera detta kontaktar du [Adobe kundtjänst](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
+* Observera att `nlserver` -processen bör konfigureras med IMS Technical Account User för att den nya anslutningen ska fungera. Denna ändring måste göras av Adobe. Om du vill implementera detta kontaktar du [Adobe kundtjänst](https://helpx.adobe.com/se/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
 
 * Om du var Adobe Genesis-API:er i anpassade arbetsflöden för att hämta in och flytta data från Adobe Analytics måste du nu använda de nya Adobe Analytics 1.4/2.0-API:erna. [Läs mer](https://adobeexchangeec.zendesk.com/hc/en-us/articles/360047148832-Replacements-for-Data-Connector-API-calls)
 
@@ -80,7 +82,7 @@ Integrationen bygger på data i Token för det tekniska kontot för den dagliga 
 
 Om vi läser information om en Analytics-komponent (som mått/dimensioner/segment/rapportsviter) returnerar API inte dessa komponenter i resultatet (vilket kan se ut som om något har tagits bort på Analytics-sidan eller inte finns). Analys-API:t kommer att ignorera dessa begäranden och felmeddelanden.
 
-Lösningen är att uppdatera **Produktprofil** i Analytics User Context of Technical User Token med de nyskapade/saknade komponenterna genom att lägga till dessa komponenter i [Adobe Admin Console](https://adminconsole.adobe.com/). Mer vägledning får du av [Adobe kundtjänst](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
+Lösningen är att uppdatera **Produktprofil** i Analytics User Context of Technical User Token med de nyskapade/saknade komponenterna genom att lägga till dessa komponenter i [Adobe Admin Console](https://adminconsole.adobe.com/){_blank}. Mer vägledning får du av [Adobe kundtjänst](https://helpx.adobe.com/se/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
 
 ## Användbara länkar
 
