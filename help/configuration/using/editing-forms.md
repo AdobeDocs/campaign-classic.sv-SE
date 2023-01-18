@@ -3,7 +3,7 @@ product: campaign
 title: Redigera formulär
 description: Redigera formulär
 exl-id: 24604dc9-f675-4e37-a848-f1911be84f3e
-source-git-commit: 3997412f14666fa61bf71d0f0a0653f5cc042e19
+source-git-commit: 4af44f38d495d31dec4b9b7a142dbed0c2450d56
 workflow-type: tm+mt
 source-wordcount: '1698'
 ht-degree: 2%
@@ -249,7 +249,7 @@ Så här skapar du ett formulär:
 
    | Element | Attribut | Beskrivning |
    | --- | --- | --- |
-   | `<input>` | `read-only:"true"` | Ger skrivskyddad åtkomst till ett fält |
+   | `<input>` | `read-only="true"` | Ger skrivskyddad åtkomst till ett fält |
    | `<container>` | `type="visibleGroup" visibleIf="`*edit-expr*`"` | Visar en grupp fält villkorligt |
    | `<container>` | `type="enabledGroup" enabledIf="`*edit-expr*`"` | Aktiverar en grupp fält villkorligt |
 
