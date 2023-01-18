@@ -6,7 +6,7 @@ audience: platform
 content-type: reference
 topic-tags: connectors
 exl-id: 3a5856c3-b642-4722-97ff-6ae7107efdbe
-source-git-commit: 2594e4943ba24ae65d1fc005da589dc674aa2b0f
+source-git-commit: 65e80f16a6beaee89b51636017c42766589e179e
 workflow-type: tm+mt
 source-wordcount: '1798'
 ht-degree: 1%
@@ -92,7 +92,7 @@ Med det externa Teradatan kan du ansluta Campaign-instansen till din Teradatas e
 
    * **[!UICONTROL Database]**: Databasens namn (valfritt)
 
-   * **[!UICONTROL Options]**: Alternativ som ska skickas via Teradatan. Använd följande format: &#39;parameter=value&#39;. Använd en semikolumn som avgränsare mellan värden.
+   * **[!UICONTROL Options]**: Alternativ som ska skickas via Teradatan. Använd följande format: &#39;parameter=value&#39;. Använd semikolon som avgränsare mellan värden.
 
    * **[!UICONTROL Timezone]**: Tidszonen anges i Teradata. [Läs mer](#timezone)
 

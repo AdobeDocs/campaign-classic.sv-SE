@@ -4,9 +4,9 @@ title: Skapa en leveransmall
 description: Skapa en leveransmall
 feature: Delivery Templates
 exl-id: 40a03e04-56c7-48c0-95b8-aa7bf1121048
-source-git-commit: 9839dbacda475c2a586811e3c4f686b1b1baab05
+source-git-commit: 65e80f16a6beaee89b51636017c42766589e179e
 workflow-type: tm+mt
-source-wordcount: '378'
+source-wordcount: '383'
 ht-degree: 11%
 
 ---
@@ -33,6 +33,10 @@ Mer information om konfigurationsläget finns i [Länka mallen till en leverans]
 
 ## Skapa en ny mall {#creating-a-new-template}
 
+>[!NOTE]
+>
+>För att undvika konfigurationsfel rekommenderar Adobe att du duplicerar en ursprunglig mall och anpassar inställningarna i stället för att skapa en ny mall.
+
 Så här konfigurerar du en leveransmall:
 
 1. Öppna Campaign Explorer.
@@ -40,7 +44,7 @@ Så här konfigurerar du en leveransmall:
 
    ![](assets/delivery_template_1.png)
 
-1. Klicka **Nytt** i verktygsfältet för att skapa en ny leveransmall.
+1. Klicka **Nytt** i verktygsfältet för att skapa en ny leveransmall, eller **Duplicera** en befintlig mall.
 
    ![](assets/delivery_template_2.png)
 
@@ -62,9 +66,6 @@ Så här konfigurerar du en leveransmall:
 
 1. Klicka **Spara**. Mallen kan nu användas i en leverans.
 
->[!NOTE]
->
->För att undvika konfigurationsfel rekommenderar vi att du duplicerar en intern mall och ändrar dess egenskaper i stället för att skapa en ny mall.
 
 ## Självstudievideor {#delivery-template-video}
 
