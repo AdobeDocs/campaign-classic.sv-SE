@@ -4,7 +4,7 @@ title: Om målinriktade aktiviteter
 description: Om målinriktade aktiviteter
 feature: Workflows, Audiences, Targeting Activity
 exl-id: 5028ad4c-e427-4e78-962d-c5ea54390db5
-source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
+source-git-commit: 743baa49e5d62ed1c2f7f635f6bf120a67646e63
 workflow-type: tm+mt
 source-wordcount: '438'
 ht-degree: 3%
@@ -22,7 +22,7 @@ Med de här aktiviteterna kan du skapa ett eller flera mål genom att definiera 
 * **Läslista**: gör att du kan använda data i en lista. Se [Använda data från en lista: Läslista](../../platform/using/import-export-workflows.md#using-data-from-a-list--read-list) -avsnitt.
 * **Union**: Med kan du gruppera resultatet av flera aktiviteter till ett enda mål. Se [Union](union.md) -avsnitt.
 * **Skärningspunkt**: gör att du bara kan extrahera populationen med samma inkommande aktivitetsresultat. Se [Skärningspunkt](intersection.md) -avsnitt.
-* **Uteslutning**: Med kan du skapa ett mål baserat på ett huvudmål som ett eller flera andra mål extraheras från. Se [Skärningspunkt](intersection.md) -avsnitt.
+* **Uteslutning**: Med kan du skapa ett mål baserat på ett huvudmål som ett eller flera andra mål extraheras från. Se [Uteslutning](exclusion.md) -avsnitt.
 * **Dela**: Med kan du dela upp ett mål i flera deluppsättningar. Se [Dela](split.md) -avsnitt.
 * **Celler**: ger en vy över de olika delmängderna i form av datakolumner och underlättar hanteringen av dessa delmängder när det finns många sådana. Mer information finns i [Celler](cells.md) -avsnitt.
 * **Erbjudanden per cell**: Med kan du länka olika erbjudanden till varje delmängd av en population. Se [Erbjudanden per cell](offers-by-cell.md) -avsnitt.
