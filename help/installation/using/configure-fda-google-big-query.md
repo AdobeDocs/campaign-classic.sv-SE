@@ -6,10 +6,10 @@ audience: platform
 content-type: reference
 topic-tags: connectors
 exl-id: ebaad59f-0607-4090-92d0-e457fbf9a348
-source-git-commit: 26ae7ff1f0837a9a50057d97b00422a288b9dc7a
+source-git-commit: 5ad84f77b0618f2e8b948a3712bc106c19b03788
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '795'
+ht-degree: 2%
 
 ---
 
@@ -123,7 +123,14 @@ Konfigurera [!DNL Google BigQuery] i Linux följer du stegen nedan:
       apt-get install -y odbcinst1debian2 libodbc1 odbcinst unixodbc
       ```
 
-1. Gå till katalogen där skriptet finns och kör följande skript:
+1. Innan du kör skriptet kan du få mer information genom att ange —help-argumentet:
+
+   ```
+   cd /usr/local/neolane/nl6/bin/fda-setup-scripts
+   ./bigquery_odbc-setup.sh --help
+   ```
+
+1. Gå till katalogen där skriptet finns och kör följande skript som rotanvändare:
 
    ```
    cd /usr/local/neolane/nl6/bin/fda-setup-scripts
