@@ -6,10 +6,10 @@ title: Användarhandbok för Campaign Classic v7
 user-guide-description: Med Adobe Campaign kan du använda omfattande kunddata för att skapa, samordna och leverera dynamiska kampanjer som kunderna verkligen vill ha – via e-post, mobiler, offlinekanaler med mera.
 sub-product: adobe campaign classic
 type: Documentation
-source-git-commit: 5792ad762befb97888ad32406d3bcb7f97df3fa7
+source-git-commit: b4feba7b3099c998d2dc05947390e383acb5fa14
 workflow-type: tm+mt
-source-wordcount: '2524'
-ht-degree: 100%
+source-wordcount: '2532'
+ht-degree: 99%
 
 ---
 
@@ -831,6 +831,7 @@ ht-degree: 100%
    + E-postmeddelanden och push-meddelanden{#technotes-email}
       + [Sekretesskydd för Mail i Apple iOS](technotes/using/apple-mail-app-privacy-protection.md)
       + [Så här uppdaterar du felaktiga hårda studsar](delivery/using/update-bounce-qualification.md)
+      + [Uppdatera felaktiga hårddiskstudsar efter ett avbrott i en Internet-leverantör](delivery/using/update-bounces.md)
       + [Uppdatering av iOS-certifikat](technotes/using/ios-certificate-update.md)
       + [Uppdatering av spårade URL:er](technotes/using/tracked-urls.md)
    + Migrering till Adobe Managed Services{#dc-migration}

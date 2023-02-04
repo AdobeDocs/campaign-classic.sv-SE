@@ -1,13 +1,13 @@
 ---
 product: campaign
-title: Uppdatera studskvalificering efter ett avbrott hos en internetleverantör
+title: Uppdatera studskvalifikation efter Gmail-avbrott
 description: Lär dig hur du uppdaterar studskvalifikation efter ett avbrott i en Internet-leverantör
 feature: Deliverability
 exl-id: 34be23f7-17fa-475e-9663-2e353d76b172
-source-git-commit: 9839dbacda475c2a586811e3c4f686b1b1baab05
+source-git-commit: 13f730d428861124060146efa26238ceca38bed6
 workflow-type: tm+mt
-source-wordcount: '427'
-ht-degree: 3%
+source-wordcount: '426'
+ht-degree: 1%
 
 ---
 
