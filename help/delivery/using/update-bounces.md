@@ -5,9 +5,9 @@ description: Lär dig hur du uppdaterar studskvalifikation efter ett avbrott i e
 feature: Deliverability
 hide: true
 hidefromtoc: true
-source-git-commit: 13f730d428861124060146efa26238ceca38bed6
+source-git-commit: f320c905f50c69a40678729b009a4c238a462e3c
 workflow-type: tm+mt
-source-wordcount: '519'
+source-wordcount: '520'
 ht-degree: 2%
 
 ---
@@ -34,7 +34,7 @@ Observera att om uppskjutande studsar med meddelandet&quot;452 requested action 
 >
 >Du kan kontrollera statusinstrumentpanelen för Google Workspace på [den här sidan](https://www.google.com/appsstatus#hl=en&amp;v=status){_blank}.
 
-## Symtom{#update-bounce-symptoms}
+## Effekt{#update-bounce-impact}
 
 Om en Internet-leverantör skulle råka ut kan e-post som skickas via Campaign inte levereras till mottagaren: dessa e-postmeddelanden markeras felaktigt som studsar.
 
@@ -57,7 +57,10 @@ Baserat på tidsramen för incidenten och Internet-leverantören nedan är de re
 
 * För Campaign Classic v7-instanser med SMTP-studssvarsinformation i **[!UICONTROL Error text]** karantänlistans fält:
 
-   * **Feltext (karantäntext)** innehåller &quot;550-5.1.1&quot; AND **Feltext (karantäntext)** innehåller &quot;support.ISP.com&quot; &quot;support.ISP.com&quot; kan vara: &quot;support.apple.com&quot; eller &quot;support.google.com&quot;, till exempel
+   * **Feltext (karantäntext)** innehåller &quot;550-5.1.1&quot; AND **Feltext (karantäntext)** innehåller &quot;support.ISP.com&quot;
+
+      där &quot;support.ISP.com&quot; kan vara: &quot;support.apple.com&quot; eller &quot;support.google.com&quot;, till exempel
+
    * **Uppdateringsstatus (@lastModified)** på eller efter MM/DD/ÅÅÅÅ HH:MM:SS AM
    * **Uppdateringsstatus (@lastModified)** på eller före MM/DD/ÅÅÅÅ HH:MM:SS PM
 
