@@ -6,10 +6,10 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: 7a05fdff-8f9d-4e8d-812e-0f1509db5499
-source-git-commit: d59e9f55275bac303a5ed1450bb28ef7fa0f84cd
-workflow-type: ht
+source-git-commit: 9cdd4da153e5e5d1c7203d193067843fe832f38e
+workflow-type: tm+mt
 source-wordcount: '921'
-ht-degree: 100%
+ht-degree: 90%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 100%
 
 ![](../../assets/v7-only.svg)
 
-Adobe Campaign Classic släpper regelbundet produktuppdateringar som innehåller nya funktioner, felkorrigeringar och förbättrar prestanda, säkerhet och användbarhet. Dessa uppdateringar släpps som produktversioner. Detaljerad information om varje ny version finns i [Versionsinformationen](latest-release.md).
+Adobe Campaign Classic släpper regelbundet produktuppdateringar som innehåller nya funktioner, felkorrigeringar och förbättrar prestanda, säkerhet och användbarhet. Dessa uppdateringar släpps som **produktbyggen**. Detaljerad information om varje ny version finns i [Versionsinformationen](latest-release.md).
 
 ## Versionsstatusar{#rn-statuses}
 
@@ -27,7 +27,7 @@ Varje ny version har en status som identifieras av en färg i [Versionsinformati
 
 ![](assets/do-not-localize/limited3.png) **Begränsad tillgänglighet** (LA) – endast driftsättning på begäran.
 
-![](assets/do-not-localize/blue3.png) **Releasekandidat** (RC) – senaste versionen med nya funktioner.
+![](assets/do-not-localize/blue3.png) **Releasedatan** (RC) - Senaste versionen med nya funktioner.
 
 ![](assets/do-not-localize/orange3.png) **Inte längre tillgängligt** – ingen distribution. Ingen felkorrigering. Vi rekommenderar att du uppdaterar till en nyare version.
 
@@ -37,9 +37,9 @@ Varje ny version har en status som identifieras av en färg i [Versionsinformati
 
 Adobe Campaign uppdateras regelbundet. Denna regelbundna uppdateringsfrekvens syftar till att ge dig den senaste och bästa produkten, hålla din miljö säker och förbättra din upplevelse med produkten.
 
-Därför anser vi att det är viktigt att du **kör den senaste stabila versionen** av Adobe Campaign. Det säkerställer också att du får en bättre supportupplevelse eftersom det oftast går mycket snabbare att identifiera, återskapa och åtgärda ett problem i en ny build. Dessutom har många problem du kan stöta på redan åtgärdats i de senaste builderna.
+Detta är anledningen till att det är viktigt att du **kör den senaste stabila versionen** Adobe Campaign. Det säkerställer också att du får en bättre supportupplevelse eftersom det oftast går mycket snabbare att identifiera, återskapa och åtgärda ett problem i en ny build. Dessutom har många problem du kan stöta på redan åtgärdats i de senaste builderna.
 
-Som en värdbaserad användare har du automatiskt tillgång till uppgraderingen med den senaste stabila versionen utan någon åtgärd. Läs mer i [avsnittet Årlig uppgradering](#yearly-upgrade). Om du migrerar från en gammal build rekommenderar Adobe att du uppgraderar till den här versionen först.
+Som värdkund kan du automatiskt dra nytta av uppgraderingen med den senaste stabila versionen utan någon åtgärd. Läs mer i [avsnittet Årlig uppgradering](#yearly-upgrade). Om du migrerar från en gammal version rekommenderar Adobe att du uppgraderar till den här versionen först.
 
 ## Rekommendationer{#recommendations}
 
@@ -69,7 +69,7 @@ Som värdbaserad användare drar du automatiskt nytta av uppgraderingen med den 
 
 Adobe meddelar dig direkt om du är en värdbaserad kund och vi har identifierat att du behöver uppgradera en eller flera av teknikerna för Campaign Classic, samt uppdatera den aktuella builden och/eller versionen.
 
-Som en lokal- eller hybridkund som kör en äldre version uppmuntrar Adobe dig att uppgradera till den senaste stabila builden (GA).
+Som en lokal eller hybridkund som kör på en äldre byggnad rekommenderar Adobe dig att gå över till den senaste stabila versionen (GA).
 
 Det här säkerställer att ditt konto är säkert mot sårbarheter samt använder uppdaterad prestandateknik. Den här uppgraderingen konfigurerar också ditt konto för enklare och regelbundna uppgraderingar i framtiden, som kräver mindre manuellt arbete och färre åtgärder.
 

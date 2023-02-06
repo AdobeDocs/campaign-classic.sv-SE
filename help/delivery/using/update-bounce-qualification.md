@@ -1,12 +1,12 @@
 ---
 product: campaign
-title: Uppdatera studskvalifikation efter Gmail-avbrott
-description: Lär dig hur du uppdaterar studskvalifikation efter ett avbrott i en Internet-leverantör
+title: Uppdatera studskompetens efter avbrott i Apple 2021
+description: Lär dig hur du uppdaterar studskvalifikation efter ett avbrott i Apple 2021
 feature: Deliverability
 exl-id: 34be23f7-17fa-475e-9663-2e353d76b172
-source-git-commit: 13f730d428861124060146efa26238ceca38bed6
+source-git-commit: c84f48ebdd66524e8dd6c39c88ae29565d11c9b2
 workflow-type: tm+mt
-source-wordcount: '426'
+source-wordcount: '425'
 ht-degree: 1%
 
 ---

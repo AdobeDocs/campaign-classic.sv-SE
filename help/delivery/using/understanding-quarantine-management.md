@@ -4,9 +4,9 @@ title: Förstå karantänhantering
 description: Förstå karantänhantering
 feature: Monitoring, Deliverability
 exl-id: cfd8f5c9-f368-4a31-a1e2-1d77ceae5ced
-source-git-commit: f7813764e55986efa3216b50e5ebf4387bd70e5e
+source-git-commit: c84f48ebdd66524e8dd6c39c88ae29565d11c9b2
 workflow-type: tm+mt
-source-wordcount: '2983'
+source-wordcount: '2997'
 ht-degree: 9%
 
 ---
@@ -128,7 +128,9 @@ För värdbaserade eller hybridinstallationer, om du har uppgraderat till [Förb
 För lokala installationer och värdbaserade/hybridinstallationer som använder det äldre Campaign MTA kan ni ändra antalet fel och perioden mellan två fel. Om du vill göra det ändrar du motsvarande inställningar i dialogrutan [distributionsguide](../../installation/using/deploying-an-instance.md) (**[!UICONTROL Email channel]** > **[!UICONTROL Advanced parameters]**) eller [på leveransnivå](../../delivery/using/steps-sending-the-delivery.md#configuring-retries).
 
 
-## Ta bort en adress i karantän {#removing-a-quarantined-address}
+## Ta bort en adress från karantän {#removing-a-quarantined-address}
+
+### Automatiska uppdateringar {#unquarantine-auto}
 
 Adresser som matchar specifika villkor tas automatiskt bort från karantänlistan av [Databasrensning](../../production/using/database-cleanup-workflow.md) arbetsflöde.
 
@@ -144,17 +146,21 @@ Status ändras sedan till **[!UICONTROL Valid]**.
 >
 >Mottagare med en adress i en **[!UICONTROL Quarantine]** eller **[!UICONTROL Denylisted]** status tas aldrig bort, även om de får ett e-postmeddelande.
 
+### Manuella uppdateringar {#unquarantine-manual}
+
 Du kan också ta bort karantänen för en adress manuellt. Om du vill ta bort en adress från karantänlistan manuellt ändrar du dess status till **[!UICONTROL Valid]** från **[!UICONTROL Administration > Campaign Management > Non deliverables Management > Non deliverables and addresses]** nod.
 
 ![](assets/tech_quarant_error_status.png)
 
-Du kan behöva göra satsvisa uppdateringar i karantänlistan, t.ex. vid ett avbrott i en Internet-leverantör där e-postmeddelanden felaktigt markeras som studsar eftersom de inte kan levereras till mottagaren.
+### Massuppdateringar {#unquarantine-bulk}
 
-Om du vill göra det skapar du ett arbetsflöde och lägger till en fråga i karantäntabellen för att filtrera bort alla berörda mottagare så att de kan tas bort från karantänlistan och inkluderas i framtida e-postleveranser för Campaign.
+Du kan behöva göra satsvisa uppdateringar i karantänlistan, t.ex. om en Internet-leverantör är i ett driftstopp. I så fall markeras e-postmeddelanden felaktigt som studsar eftersom de inte kan levereras till mottagaren. Dessa adresser måste tas bort från karantänlistan.
+
+Skapa ett arbetsflöde och lägg till en **[!UICONTROL Query]** aktivitet i karantäntabellen för att filtrera bort alla påverkade mottagare. När de har identifierats kan de tas bort från karantänlistan och inkluderas i framtida e-postleveranser för kampanjer.
 
 Nedan följer de rekommenderade riktlinjerna för den här frågan:
 
-* För Campaign v8- och Campaign Classic v7-miljöer med regelinformation för inkommande e-post i **[!UICONTROL Error text]** karantänlistans fält:
+* För Campaign Classic v7-miljöer med regelinformation för inkommande e-post i **[!UICONTROL Error text]** karantänlistans fält:
 
    * **Feltext (karantäntext)** innehåller &quot;Momen_Code10_InvalidRecipient&quot;
    * **E-postdomän (@domän)** lika med domain1.com OR **E-postdomän (@domän)** lika med domain2.com OR **E-postdomän (@domän)** lika med domain3.com
@@ -171,11 +177,11 @@ Nedan följer de rekommenderade riktlinjerna för den här frågan:
    * **Uppdateringsstatus (@lastModified)** på eller före MM/DD/ÅÅÅÅ HH:MM:SS PM
 
 
-När du har en lista över mottagare som påverkas lägger du till en **[!UICONTROL Update data]** aktivitet för att ange status till **[!UICONTROL Valid]** så att de tas bort från karantänlistan av **[!UICONTROL Database cleanup]** arbetsflöde, Du kan även ta bort dem från karantäntabellen.
+När du har en lista över mottagare som påverkas lägger du till en **[!UICONTROL Update data]** aktivitet för att ange e-postadressstatus till **[!UICONTROL Valid]** så att de tas bort från karantänlistan av **[!UICONTROL Database cleanup]** arbetsflöde. Du kan även ta bort dem från karantäntabellen.
 
 ## Kantlinjer för push-meddelanden {#push-notification-quarantines}
 
-Karantänmekanismen för push-meddelanden är globalt densamma som den allmänna processen. Se [Om karantäner](#about-quarantines). Vissa fel hanteras dock på olika sätt för push-meddelanden. För vissa mjuka fel utförs till exempel inga försök inom samma leverans. Specifikationerna för push-meddelanden anges nedan. Mekanismen för återförsök (antal återförsök, frekvens) är densamma som för e-postmeddelanden.
+Karantänmekanismen för push-meddelanden är globalt densamma som den allmänna processen. Vissa fel hanteras dock på olika sätt för push-meddelanden. För vissa mjuka fel utförs till exempel inga försök inom samma leverans. Specifikationerna för push-meddelanden anges nedan. Mekanismen för återförsök (antal återförsök, frekvens) är densamma som för e-postmeddelanden.
 
 Objekten som sätts i karantän är enhetstoken.
 

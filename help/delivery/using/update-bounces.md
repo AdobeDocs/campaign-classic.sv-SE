@@ -5,9 +5,9 @@ description: Lär dig hur du uppdaterar studskvalifikation efter ett avbrott i e
 feature: Deliverability
 hide: true
 hidefromtoc: true
-source-git-commit: f320c905f50c69a40678729b009a4c238a462e3c
+source-git-commit: 9cdd4da153e5e5d1c7203d193067843fe832f38e
 workflow-type: tm+mt
-source-wordcount: '520'
+source-wordcount: '513'
 ht-degree: 2%
 
 ---
@@ -48,14 +48,14 @@ Du måste köra en fråga i din karantäntabell för att filtrera bort alla mott
 
 Baserat på tidsramen för incidenten och Internet-leverantören nedan är de rekommenderade riktlinjerna för frågan.
 
-* För Campaign v8- och Campaign Classic v7-miljöer med regelinformation för inkommande e-post i **[!UICONTROL Error text]** karantänlistans fält:
+* För Campaign-miljöer med regelinformation för inkommande e-post i **[!UICONTROL Error text]** karantänlistans fält:
 
    * **Feltext (karantäntext)** innehåller &quot;Momen_Code10_InvalidRecipient&quot;
    * **E-postdomän (@domän)** lika med domain1.com OR **E-postdomän (@domän)** lika med domain2.com OR **E-postdomän (@domän)** lika med domain3.com
    * **Uppdateringsstatus (@lastModified)** på eller efter MM/DD/ÅÅÅÅ HH:MM:SS AM
    * **Uppdateringsstatus (@lastModified)** på eller före MM/DD/ÅÅÅÅ HH:MM:SS PM
 
-* För Campaign Classic v7-instanser med SMTP-studssvarsinformation i **[!UICONTROL Error text]** karantänlistans fält:
+* För Campaign-miljöer med SMTP-studssvarsinformation i **[!UICONTROL Error text]** karantänlistans fält:
 
    * **Feltext (karantäntext)** innehåller &quot;550-5.1.1&quot; AND **Feltext (karantäntext)** innehåller &quot;support.ISP.com&quot;
 
