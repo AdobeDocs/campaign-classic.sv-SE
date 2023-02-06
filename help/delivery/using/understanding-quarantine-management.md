@@ -4,9 +4,9 @@ title: Förstå karantänhantering
 description: Förstå karantänhantering
 feature: Monitoring, Deliverability
 exl-id: cfd8f5c9-f368-4a31-a1e2-1d77ceae5ced
-source-git-commit: 9839dbacda475c2a586811e3c4f686b1b1baab05
+source-git-commit: f7813764e55986efa3216b50e5ebf4387bd70e5e
 workflow-type: tm+mt
-source-wordcount: '2837'
+source-wordcount: '2983'
 ht-degree: 9%
 
 ---
@@ -71,8 +71,9 @@ Följande information finns för varje adress:
 >
 >Ökningen av antalet karantän är en normal effekt som har samband med databasens slitage. Om en e-postadress till exempel anses ha en livslängd på tre år och mottagartabellen ökar med 50 % varje år, kan ökningen av antalet karantän beräknas enligt följande:
 >
->Slutet av år 1: (1*0.33)/(1+0.5)=22 %.
-Slutet av år 2: ((1,22*0,33)+0,33)/(1,5+0,75)=32,5 %.
+>Slutet av år 1: (1&#42;0,33)/(1+0.5)=22 %.
+>
+>Slutet av år 2: (1.22)&#42;0,33)+0,33)/(1,5+0,75)=32,5 %.
 
 ### Identifiera adresser i karantän i leveransrapporter {#identifying-quarantined-addresses-in-delivery-reports}
 
@@ -94,35 +95,6 @@ Du kan slå upp status för e-postadressen för alla mottagare. Det gör du geno
 
 ![](assets/tech_quarant_recipients_filter.png)
 
-### Ta bort en adress i karantän {#removing-a-quarantined-address}
-
-Om det behövs kan du ta bort en adress manuellt från karantänlistan. Dessutom tas adresser som matchar specifika villkor automatiskt bort från karantänlistan av [Databasrensning](../../production/using/database-cleanup-workflow.md) arbetsflöde.
-
-Om du vill ta bort en adress manuellt från karantänlistan utför du någon av åtgärderna nedan.
-
->[!IMPORTANT]
-Om du tar bort en e-postadress manuellt från karantänen börjar du leverera till den här adressen igen. Detta kan få allvarliga konsekvenser för din leveransförmåga och IP-anseende, vilket i slutänden kan leda till att din IP-adress eller sändande domän blockeras. Fortsätt med extra försiktighet när du överväger att ta bort en adress från karantän. Om du är osäker kan du kontakta en expert på slutprodukter.
-
-* Du kan ändra dess status till **[!UICONTROL Valid]** från **[!UICONTROL Administration > Campaign Management > Non deliverables Management > Non deliverables and addresses]** nod.
-
-   ![](assets/tech_quarant_error_status.png)
-
-* Du kan också ändra dess status till **[!UICONTROL Allowlisted]**. I det här fallet finns adressen kvar på karantänlistan, men den kommer att riktas systematiskt, även om ett fel inträffar.
-
-Adresserna tas automatiskt bort från karantänlistan i följande fall:
-
-* Adresser i en **[!UICONTROL With errors]** status kommer att tas bort från karantänlistan efter en slutförd leverans.
-* Adresser i en **[!UICONTROL With errors]** status tas bort från karantänlistan om den senaste mjuka studsen inträffade för mer än 10 dagar sedan. Mer information om mjuk felhantering finns i [det här avsnittet](#soft-error-management).
-* Adresser i en **[!UICONTROL With errors]** status som studsade med **[!UICONTROL Mailbox full]** felet tas bort från karantänlistan efter 30 dagar.
-
-Status ändras sedan till **[!UICONTROL Valid]**.
-
->[!IMPORTANT]
-Mottagare med en adress i en **[!UICONTROL Quarantine]** eller **[!UICONTROL Denylisted]** status tas aldrig bort, även om de får ett e-postmeddelande.
-
-För värdbaserade eller hybridinstallationer, om du har uppgraderat till [Förbättrad MTA](sending-with-enhanced-mta.md), det maximala antalet försök som ska utföras om **[!UICONTROL Erroneous]** status och minsta fördröjning mellan återförsök baseras nu på hur bra en IP-adress fungerar både historiskt och för närvarande på en viss domän.
-
-För lokala installationer och värdbaserade/hybridinstallationer som använder det äldre Campaign MTA kan ni ändra antalet fel och perioden mellan två fel. Om du vill göra det ändrar du motsvarande inställningar i dialogrutan [distributionsguide](../../installation/using/deploying-an-instance.md) (**[!UICONTROL Email channel]** > **[!UICONTROL Advanced parameters]**) eller [på leveransnivå](../../delivery/using/steps-sending-the-delivery.md#configuring-retries).
 
 ## Villkor för att skicka en adress till karantän {#conditions-for-sending-an-address-to-quarantine}
 
@@ -135,7 +107,8 @@ Adobe Campaign hanterar karantän enligt typ av leveransfel och den orsak som ti
 Om en användare kvalificerar ett e-postmeddelande som skräppost ([feedback-slinga](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html#feedback-loops)) dirigeras meddelandet automatiskt om till en teknisk brevlåda som hanteras av Adobe. Användarens e-postadress skickas sedan automatiskt till karantänen med status **[!UICONTROL Denylisted]**.    Den här statusen avser endast adressen, profilen finns inte på blockeringslista, så att användaren fortsätter att ta emot SMS-meddelanden och push-meddelanden.
 
 >[!NOTE]
-Karantänen i Adobe Campaign är skiftlägeskänslig.    Se till att importera e-postadresser med små bokstäver så att inte e-postadresserna fortsätter att ta emot meddelanden.
+>
+>Karantänen i Adobe Campaign är skiftlägeskänslig.    Se till att importera e-postadresser med små bokstäver så att inte e-postadresserna fortsätter att ta emot meddelanden.
 
 I listan över adresser i karantän (se [Identifiera adresser i karantän för hela plattformen](#identifying-quarantined-addresses-for-the-entire-platform)), **[!UICONTROL Error reason]** anger varför den valda adressen placerades i karantän.
 
@@ -148,6 +121,57 @@ I motsats till hårda fel skickar inte mjuka fel en adress direkt till karantän
 Försök utförs igen under [leveransvaraktighet](../../delivery/using/steps-sending-the-delivery.md#defining-validity-period). När felräknaren når gränsvärdet sätts adressen i karantän.    Mer information finns i [Försök igen efter ett tillfälligt leveransfel](understanding-delivery-failures.md#retries-after-a-delivery-temporary-failure).
 
 Felräknaren initieras om om det senaste allvarliga felet inträffade för mer än 10 dagar sedan. Adressstatusen ändras sedan till **Giltig** och tas bort från listan över karantäner av [Databasrensning](../../production/using/database-cleanup-workflow.md) arbetsflöde.
+
+
+För värdbaserade eller hybridinstallationer, om du har uppgraderat till [Förbättrad MTA](sending-with-enhanced-mta.md), det maximala antalet försök som ska utföras om **[!UICONTROL Erroneous]** status och minsta fördröjning mellan återförsök baseras nu på hur bra en IP-adress fungerar både historiskt och för närvarande på en viss domän.
+
+För lokala installationer och värdbaserade/hybridinstallationer som använder det äldre Campaign MTA kan ni ändra antalet fel och perioden mellan två fel. Om du vill göra det ändrar du motsvarande inställningar i dialogrutan [distributionsguide](../../installation/using/deploying-an-instance.md) (**[!UICONTROL Email channel]** > **[!UICONTROL Advanced parameters]**) eller [på leveransnivå](../../delivery/using/steps-sending-the-delivery.md#configuring-retries).
+
+
+## Ta bort en adress i karantän {#removing-a-quarantined-address}
+
+Adresser som matchar specifika villkor tas automatiskt bort från karantänlistan av [Databasrensning](../../production/using/database-cleanup-workflow.md) arbetsflöde.
+
+Adresserna tas automatiskt bort från karantänlistan i följande fall:
+
+* Adresser i en **[!UICONTROL With errors]** status kommer att tas bort från karantänlistan efter en slutförd leverans.
+* Adresser i en **[!UICONTROL With errors]** status tas bort från karantänlistan om den senaste mjuka studsen inträffade för mer än 10 dagar sedan. Mer information om mjuk felhantering finns i [det här avsnittet](#soft-error-management).
+* Adresser i en **[!UICONTROL With errors]** status som studsade med **[!UICONTROL Mailbox full]** felet tas bort från karantänlistan efter 30 dagar.
+
+Status ändras sedan till **[!UICONTROL Valid]**.
+
+>[!IMPORTANT]
+>
+>Mottagare med en adress i en **[!UICONTROL Quarantine]** eller **[!UICONTROL Denylisted]** status tas aldrig bort, även om de får ett e-postmeddelande.
+
+Du kan också ta bort karantänen för en adress manuellt. Om du vill ta bort en adress från karantänlistan manuellt ändrar du dess status till **[!UICONTROL Valid]** från **[!UICONTROL Administration > Campaign Management > Non deliverables Management > Non deliverables and addresses]** nod.
+
+![](assets/tech_quarant_error_status.png)
+
+Du kan behöva göra satsvisa uppdateringar i karantänlistan, t.ex. vid ett avbrott i en Internet-leverantör där e-postmeddelanden felaktigt markeras som studsar eftersom de inte kan levereras till mottagaren.
+
+Om du vill göra det skapar du ett arbetsflöde och lägger till en fråga i karantäntabellen för att filtrera bort alla berörda mottagare så att de kan tas bort från karantänlistan och inkluderas i framtida e-postleveranser för Campaign.
+
+Nedan följer de rekommenderade riktlinjerna för den här frågan:
+
+* För Campaign v8- och Campaign Classic v7-miljöer med regelinformation för inkommande e-post i **[!UICONTROL Error text]** karantänlistans fält:
+
+   * **Feltext (karantäntext)** innehåller &quot;Momen_Code10_InvalidRecipient&quot;
+   * **E-postdomän (@domän)** lika med domain1.com OR **E-postdomän (@domän)** lika med domain2.com OR **E-postdomän (@domän)** lika med domain3.com
+   * **Uppdateringsstatus (@lastModified)** på eller efter MM/DD/ÅÅÅÅ HH:MM:SS AM
+   * **Uppdateringsstatus (@lastModified)** på eller före MM/DD/ÅÅÅÅ HH:MM:SS PM
+
+* För Campaign Classic v7-instanser med SMTP-studssvarsinformation i **[!UICONTROL Error text]** karantänlistans fält:
+
+   * **Feltext (karantäntext)** innehåller &quot;550-5.1.1&quot; AND **Feltext (karantäntext)** innehåller &quot;support.ISP.com&quot;
+
+   där &quot;support.ISP.com&quot; kan vara: &quot;support.apple.com&quot; eller &quot;support.google.com&quot;, till exempel
+
+   * **Uppdateringsstatus (@lastModified)** på eller efter MM/DD/ÅÅÅÅ HH:MM:SS AM
+   * **Uppdateringsstatus (@lastModified)** på eller före MM/DD/ÅÅÅÅ HH:MM:SS PM
+
+
+När du har en lista över mottagare som påverkas lägger du till en **[!UICONTROL Update data]** aktivitet för att ange status till **[!UICONTROL Valid]** så att de tas bort från karantänlistan av **[!UICONTROL Database cleanup]** arbetsflöde, Du kan även ta bort dem från karantäntabellen.
 
 ## Kantlinjer för push-meddelanden {#push-notification-quarantines}
 
@@ -261,12 +285,14 @@ The **[!UICONTROL mobileAppOptOutMgt]** arbetsflödet körs var 6:e timme för a
 Under leveransanalysen läggs alla enheter som är undantagna från målet automatiskt till i **excludeLogAppSubRcp** tabell.
 
 >[!NOTE]
-Här är olika typer av fel för kunder som använder Baidu-kontakten:
-* Anslutningsproblem i början av leveransen: feltyp **[!UICONTROL Undefined]**, felorsak **[!UICONTROL Unreachable]**, återförsök utförs.
-* Förlorad anslutning under leverans: mjukt fel, felorsak **[!UICONTROL Refused]**, återförsök utförs.
-* Synkront fel returnerades av Baidu under sändning: allvarligt fel, felorsak **[!UICONTROL Refused]**, inga nya försök utförs.
 >
-Adobe Campaign kontaktar Baidu-servern var 10:e minut för att hämta det skickade meddelandets status och uppdaterar sändningarna. Om ett meddelande deklareras som skickat anges meddelandets status i utsändningsloggarna till **[!UICONTROL Received]**. Om Baidu deklarerar ett fel ställs statusen in på **[!UICONTROL Failed]**.
+>Här är olika typer av fel för kunder som använder Baidu-kontakten:
+>
+>* Anslutningsproblem i början av leveransen: feltyp **[!UICONTROL Undefined]**, felorsak **[!UICONTROL Unreachable]**, återförsök utförs.
+>* Förlorad anslutning under leverans: mjukt fel, felorsak **[!UICONTROL Refused]**, återförsök utförs.
+>* Synkront fel returnerades av Baidu under sändning: allvarligt fel, felorsak **[!UICONTROL Refused]**, inga nya försök utförs.
+>
+>Adobe Campaign kontaktar Baidu-servern var 10:e minut för att hämta det skickade meddelandets status och uppdaterar sändningarna. Om ett meddelande deklareras som skickat anges meddelandets status i utsändningsloggarna till **[!UICONTROL Received]**. Om Baidu deklarerar ett fel ställs statusen in på **[!UICONTROL Failed]**.
 
 **För Android V2**
 
@@ -484,7 +510,8 @@ Android V2-karantänmekanismen använder samma process som Android V1, samma gä
 Karantänmekanismen för SMS-meddelanden är globalt densamma som den allmänna processen. Se [Om karantäner](#about-quarantines). Specifikationerna för SMS anges nedan.
 
 >[!NOTE]
-The **[!UICONTROL Delivery log qualification]** tabellen gäller inte för **Utökad allmän SMPP** koppling.
+>
+>The **[!UICONTROL Delivery log qualification]** tabellen gäller inte för **Utökad allmän SMPP** koppling.
 
 <table> 
  <tbody> 
@@ -542,8 +569,10 @@ SMPP-kopplingen hämtar data från SR-meddelandet (statusrapport) som returneras
 Innan en ny typ av fel har kvalificerats anges felorsaken alltid till **Avvisad** som standard.
 
 >[!NOTE]
-Feltyperna och orsakerna till felet är desamma som för e-postmeddelanden. Se [Typ av leveransfel och orsaker](understanding-delivery-failures.md#delivery-failure-types-and-reasons).
-Be leverantören om en lista över status- och felkoder för att ange korrekta feltyper och orsaker till felet i tabellen för leveransloggens kvalificeringsregister.
+>
+>Feltyperna och orsakerna till felet är desamma som för e-postmeddelanden. Se [Typ av leveransfel och orsaker](understanding-delivery-failures.md#delivery-failure-types-and-reasons).
+>
+>Be leverantören om en lista över status- och felkoder för att ange korrekta feltyper och orsaker till felet i tabellen för leveransloggens kvalificeringsregister.
 
 Exempel på ett genererat meddelande:
 
