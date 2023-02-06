@@ -6,10 +6,10 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: 7a05fdff-8f9d-4e8d-812e-0f1509db5499
-source-git-commit: 9cdd4da153e5e5d1c7203d193067843fe832f38e
+source-git-commit: 1cc1568fe77cc5bbde88092b0e9108792e10fd71
 workflow-type: tm+mt
-source-wordcount: '921'
-ht-degree: 90%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -67,7 +67,7 @@ Som värdbaserad användare drar du automatiskt nytta av uppgraderingen med den 
 
 ### Varför behöver min organisation den här uppgraderingen?
 
-Adobe meddelar dig direkt om du är en värdbaserad kund och vi har identifierat att du behöver uppgradera en eller flera av teknikerna för Campaign Classic, samt uppdatera den aktuella builden och/eller versionen.
+Om ditt konto har identifierats som en värdkund och du behöver uppgradera en eller flera av teknikerna som hör till Campaign Classic, och din infrastruktur måste uppgraderas till den aktuella versionen (till exempel från v7.2.1 till v7.3.3) och/eller versionen (från v7 till v8), meddelar Adobe dig direkt.
 
 Som en lokal eller hybridkund som kör på en äldre byggnad rekommenderar Adobe dig att gå över till den senaste stabila versionen (GA).
 

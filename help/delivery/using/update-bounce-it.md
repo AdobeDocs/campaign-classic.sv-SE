@@ -5,9 +5,9 @@ description: Lär dig hur du uppdaterar studentkvalificering efter avbrott i Ita
 feature: Deliverability
 hide: true
 hidefromtow: true
-source-git-commit: 3cf6ffb2b69d44b56615492dd9db8965ae3cf4e1
+source-git-commit: 0e6a46e4a0575fa5a300a952a6bb134f3426172e
 workflow-type: tm+mt
-source-wordcount: '301'
+source-wordcount: '291'
 ht-degree: 0%
 
 ---
@@ -29,11 +29,11 @@ Läs mer i det officiella meddelandet [här](https://tecnologia.libero.it/avviat
 
 ## Effekt{#outage-impact}
 
-Om en Internet-leverantör skulle råka ut kan e-post som skickas via Campaign inte levereras till mottagaren: dessa e-postmeddelanden markeras felaktigt som studsar. Detta påverkar inte bara Adobe, utan alla som försöker få e-post levererad till Italia Online.
+Precis som i de flesta fall när det uppstår ett avbrott i en Internet-leverantör markerades vissa e-postmeddelanden som skickades via Campaign felaktigt som studsar. Detta påverkade inte bara Adobe, utan alla som försökte få e-post levererad till Italia Online under driftstoppet.
 
-Symtomen är:
+Symtomen var:
 
-* **Periodiseringsgränser** med meddelandet `452 requested action aborted: try again later` observeras - dessa provas automatiskt igen och inga åtgärder behövs. De bör förbättras i takt med att Internet-leverantören återvinner sin fulla kapacitet.
+* **Periodiseringsgränser** med meddelandet `452 requested action aborted: try again later` - dessa prövades automatiskt igen och inga åtgärder behövs.
 
 * **Hårda studsar** med meddelandet `550 <email address> recipient rejected` har returnerats av Internet-leverantören den 26 januari, mellan 8.00 och 2.00 lokal tid, för att förhindra att avsändare fortsätter överbelasta sina servrar. Som Italia Online Postmaster har bekräftat är dessa inte riktigt hårda studsar, så vi rekommenderar att alla e-postadresser som uteslöts den 26 januari 2023 på grund av det meddelandet tas bort från karantänen.
 
