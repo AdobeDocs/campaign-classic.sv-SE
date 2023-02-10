@@ -4,10 +4,10 @@ title: Konfigurera kampanj-SMS-kanal
 description: Lär dig konfigurera SMS-kanalen i Campaign
 feature: SMS
 exl-id: a2783a5e-6d38-41a1-b5c6-24ab489116f8
-source-git-commit: 9839dbacda475c2a586811e3c4f686b1b1baab05
+source-git-commit: 0ae52b00f69298e001596583fe166771faddead2
 workflow-type: tm+mt
-source-wordcount: '1696'
-ht-degree: 35%
+source-wordcount: '1722'
+ht-degree: 34%
 
 ---
 
@@ -28,6 +28,10 @@ Om du vill skicka till en mobiltelefon behöver du:
 > För SMS-leveranser bör typologin använda en specifik SMS-tillhörighet som skapats i **en** dedikerad programserverbehållare. [Läs mer](../../installation/using/configure-delivery-settings.md#managing-outbound-smtp-traffic-with-affinities)
 
 ## Skapa ett externt SMPP-konto {#creating-an-smpp-external-account}
+
+>[!IMPORTANT]
+>
+>Om du använder samma konto och lösenord för flera externa SMS-konton kan det leda till konflikter och överlappning mellan kontona. Se [Felsökningssida för SMS](troubleshooting-sms.md#external-account-conflict).
 
 Om du vill skicka ett SMS till en mobiltelefon måste du först skapa ett externt SMPP-konto.
 Mer information om SMS-protokoll och inställningar finns i [page](sms-protocol.md).
@@ -118,9 +122,9 @@ I följande tabell visas de tecken som GSM-standarden tar hänsyn till. Alla tec
    <td> <img height="21px" src="assets/delta.png" /> </td> 
    <td> SP </td> 
    <td> 0 </td> 
-   <td> ○ </td> 
+   <td> ¡ </td> 
    <td> P </td> 
-   <td> as </td> 
+   <td> ¿ </td> 
    <td> p </td> 
   </tr> 
   <tr> 
