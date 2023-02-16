@@ -7,9 +7,9 @@ role: User
 level: Beginner
 exl-id: 7a05fdff-8f9d-4e8d-812e-0f1509db5499
 source-git-commit: 1cc1568fe77cc5bbde88092b0e9108792e10fd71
-workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+workflow-type: ht
+source-wordcount: '934'
+ht-degree: 100%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 0%
 
 ![](../../assets/v7-only.svg)
 
-Adobe Campaign Classic släpper regelbundet produktuppdateringar som innehåller nya funktioner, felkorrigeringar och förbättrar prestanda, säkerhet och användbarhet. Dessa uppdateringar släpps som **produktbyggen**. Detaljerad information om varje ny version finns i [Versionsinformationen](latest-release.md).
+Adobe Campaign Classic släpper regelbundet produktuppdateringar som innehåller nya funktioner, felkorrigeringar och förbättrar prestanda, säkerhet och användbarhet. Dessa uppdateringar släpps som **produktversioner**. Detaljerad information om varje ny version finns i [Versionsinformationen](latest-release.md).
 
 ## Versionsstatusar{#rn-statuses}
 
@@ -27,7 +27,7 @@ Varje ny version har en status som identifieras av en färg i [Versionsinformati
 
 ![](assets/do-not-localize/limited3.png) **Begränsad tillgänglighet** (LA) – endast driftsättning på begäran.
 
-![](assets/do-not-localize/blue3.png) **Releasedatan** (RC) - Senaste versionen med nya funktioner.
+![](assets/do-not-localize/blue3.png) **Versionskandidat** (RC) – senaste versionen med nya funktioner.
 
 ![](assets/do-not-localize/orange3.png) **Inte längre tillgängligt** – ingen distribution. Ingen felkorrigering. Vi rekommenderar att du uppdaterar till en nyare version.
 
@@ -37,9 +37,9 @@ Varje ny version har en status som identifieras av en färg i [Versionsinformati
 
 Adobe Campaign uppdateras regelbundet. Denna regelbundna uppdateringsfrekvens syftar till att ge dig den senaste och bästa produkten, hålla din miljö säker och förbättra din upplevelse med produkten.
 
-Detta är anledningen till att det är viktigt att du **kör den senaste stabila versionen** Adobe Campaign. Det säkerställer också att du får en bättre supportupplevelse eftersom det oftast går mycket snabbare att identifiera, återskapa och åtgärda ett problem i en ny build. Dessutom har många problem du kan stöta på redan åtgärdats i de senaste builderna.
+Därför anser vi att det är viktigt att du **kör den senaste stabila versionen** av Adobe Campaign. Det säkerställer också att du får en bättre supportupplevelse eftersom det oftast går mycket snabbare att identifiera, återskapa och åtgärda ett problem i en ny build. Dessutom har många problem du kan stöta på redan åtgärdats i de senaste builderna.
 
-Som värdkund kan du automatiskt dra nytta av uppgraderingen med den senaste stabila versionen utan någon åtgärd. Läs mer i [avsnittet Årlig uppgradering](#yearly-upgrade). Om du migrerar från en gammal version rekommenderar Adobe att du uppgraderar till den här versionen först.
+Som en värdbaserad kund har du automatiskt tillgång till uppgraderingen med den senaste stabila versionen utan någon åtgärd. Läs mer i [avsnittet Årlig uppgradering](#yearly-upgrade). Om du migrerar från en gammal version rekommenderar Adobe att du uppgraderar till den här versionen först.
 
 ## Rekommendationer{#recommendations}
 
@@ -67,9 +67,9 @@ Som värdbaserad användare drar du automatiskt nytta av uppgraderingen med den 
 
 ### Varför behöver min organisation den här uppgraderingen?
 
-Om ditt konto har identifierats som en värdkund och du behöver uppgradera en eller flera av teknikerna som hör till Campaign Classic, och din infrastruktur måste uppgraderas till den aktuella versionen (till exempel från v7.2.1 till v7.3.3) och/eller versionen (från v7 till v8), meddelar Adobe dig direkt.
+Adobe meddelar dig direkt om du är en värdbaserad kund och vi har identifierat att du behöver uppgradera en eller flera av teknikerna för Campaign Classic, samt om en uppgradering av din infrastruktur till den nuvarande versionen (till exempel från v7.2.1 till v7.3.3) och/eller version (från v7 till v8) behövs.
 
-Som en lokal eller hybridkund som kör på en äldre byggnad rekommenderar Adobe dig att gå över till den senaste stabila versionen (GA).
+Som en lokal- eller hybridkund som kör en äldre version uppmuntrar Adobe dig att gå över till den senaste stabila versionen (GA).
 
 Det här säkerställer att ditt konto är säkert mot sårbarheter samt använder uppdaterad prestandateknik. Den här uppgraderingen konfigurerar också ditt konto för enklare och regelbundna uppgraderingar i framtiden, som kräver mindre manuellt arbete och färre åtgärder.
 
