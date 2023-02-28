@@ -6,10 +6,10 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: b8c1f287-06f4-4c34-8cca-b0c7676abbc2
-source-git-commit: 1cf94ee5edac7087d7d21709243e9f56c2b3d6f5
-workflow-type: ht
-source-wordcount: '778'
-ht-degree: 100%
+source-git-commit: 31aa32e4fb7171a49bbea6907f50608eddb2802e
+workflow-type: tm+mt
+source-wordcount: '785'
+ht-degree: 98%
 
 ---
 
@@ -48,23 +48,23 @@ Besök [den här sidan](../../rn/using/deprecated-features.md) för mer informat
 <tr>
 <td>Debian</td>
 <td>
-<p>11 (64 bitars)</p>
-<p>10 (64 bitars)</p>
-<p>9 (64 bitars)</p>
+<p>11 (från och med Campaign v7.3)</p>
+<p>10</p>
+<p>9</p>
 </td>
 </tr>
 <tr>
 <td>RHEL</td>
 <td>
-<p>8.x (64 bitars)</p>
-<p>7.x (64 bitars)</p>
+<p>8.x</p>
+<p>7.x</p>
 <p><strong>Viktigt:</strong> Om du använder RHEL måste du kunna inaktivera SELinux eller låta dina utvecklare skriva anpassade SELinux-regler för att kontrollera att en aktiverad SELinux inte orsakar problem med åtgärder i Campaign.</p>
 </td>
 </tr>
 <tr>
 <td>Windows Server</td>
 <td>
-<p>2019 (startar från version 7.2.1)</p>
+<p>2019 (från och med Campaign v7.2)</p>
 <p>2016</p>
 <p>2012 R2</p>
 <p>2012</p>
@@ -138,7 +138,7 @@ Besök [den här sidan](../../rn/using/deprecated-features.md) för mer informat
 <tr>
 <td>PostgreSQL</td>
 <td>
-<p>14.x</p>
+<p>14.x (från och med Campaign v7.3.2)</p>
 <p>13.x</p>
 <p>12.x</p>
 <p>11.x</p>
@@ -154,7 +154,7 @@ Besök [den här sidan](../../rn/using/deprecated-features.md) för mer informat
 <p>2016</p>
 <p>2014</p>
 <p>2012 – SP1 och SP2</p>
-<p><strong>Viktigt:</strong>Microsoft SQL Server stöds inte som primär databas när Campaign-servern körs i Linux. <a href="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/install-campaign-on-prem/installing-campaign-in-linux-/prerequisites-of-campaign-installation-in-linux.html?lang=sv#database-access-layers">Läs mer</a>.</p>
+<p><strong>Viktigt:</strong>Microsoft SQL Server stöds inte som primär databas när Campaign-servern körs i Linux. <a href="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/install-campaign-on-prem/installing-campaign-in-linux-/prerequisites-of-campaign-installation-in-linux.html#database-access-layers">Läs mer</a>.</p>
 </td>
 </tr>
 </tbody>
@@ -208,7 +208,7 @@ Miljöerna **Managed Services** (värd), **Hybrid** och **Lokal** kan ansluta Ca
 <tr>
 <td>Google BigQuery</td>
 <td> </td>
-<td>Minst 7.2.1</td>
+<td>Minst 7.2</td>
 </tr>
 <tr>
 <td>PostgreSQL</td>
@@ -224,7 +224,7 @@ Miljöerna **Managed Services** (värd), **Hybrid** och **Lokal** kan ansluta Ca
 <tr>
 <td>Snowflake</td>
 <td> </td>
-<td>Minst 7.2.1</td>
+<td>Minst 7.2</td>
 </tr>
 <tr>
 <td>Vertica Analytics</td>
@@ -248,7 +248,7 @@ Miljöerna **Hybrid** och **Lokal** kan dessutom ansluta Campaign till följande
 </tr>
 <tr><td>MySQL</td>
 <td>
-<p>8</p>
+<p>8 (från och med Campaign v7.3)</p>
 <p>5.7</p>
 </td>
 <td>
@@ -336,7 +336,7 @@ Följande operativsystem och webbläsare **krävs** för att använda [klientkon
 <tr>
 <td>Microsoft Windows</td>
 <td>
-<p>11 (startar från version 7.3)</p>
+<p>11 (från och med Campaign v7.3)</p>
 <p>10 (rekommenderas för japanska instanser)</p>
 <p>8</p>
 </td>
@@ -344,7 +344,7 @@ Följande operativsystem och webbläsare **krävs** för att använda [klientkon
 <tr>
 <td>Microsoft Windows Server</td>
 <td>
-<p>2019 (startar från version 7.2.1)</p>
+<p>2019 (från och med Campaign v7.2.1)</p>
 <p>2016</p>
 <p>2012</p>
 </td>
