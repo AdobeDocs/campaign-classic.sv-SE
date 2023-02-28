@@ -4,7 +4,7 @@ title: Redigera innehåll
 description: Redigera innehåll
 feature: Web Apps, Web Forms, Landing Pages
 exl-id: 968430d6-b1dd-47f8-8b31-39aaa18bc05c
-source-git-commit: b6f1556cf49492cefaf61c29a058584b0ccee16a
+source-git-commit: 7f5770c5181b4f2e966d8ecfe6b1d4b9c764e5fa
 workflow-type: tm+mt
 source-wordcount: '1214'
 ht-degree: 1%
@@ -221,9 +221,9 @@ Välj en bildfil som har sparats lokalt.
 
 ![](assets/dce_popup_imgupload.png)
 
-The **Ta bort** ikonen tar bort ![]() -tagg som innehåller bilden.
+The **Ta bort** -ikonen tar bort taggen som innehåller bilden.
 
-The **Duplicera** ikonen duplicerar ![]() och dess innehåll.
+The **Duplicera** -ikonen duplicerar -taggen och dess innehåll.
 
 >[!CAUTION]
 >
