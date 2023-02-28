@@ -6,10 +6,10 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: b8c1f287-06f4-4c34-8cca-b0c7676abbc2
-source-git-commit: 31aa32e4fb7171a49bbea6907f50608eddb2802e
+source-git-commit: 76218abd198f677541338c7f854d047d2c644013
 workflow-type: tm+mt
-source-wordcount: '785'
-ht-degree: 98%
+source-wordcount: '775'
+ht-degree: 94%
 
 ---
 
@@ -40,9 +40,9 @@ Besök [den här sidan](../../rn/using/deprecated-features.md) för mer informat
 <tr> 
 <td>CentOs</td>
 <td>
-<p>8.x (64 bitars)  </br><strong>Viktigt:</strong> CentOS Linux 8 når slutet av sin livscykel (EOL, End Of Life) den 31 december 2021. Mer information finns på sidan <a href="../../rn/using/deprecated-features.md">Inaktuella funktioner</a>.</p>
-<p>7.x (64 bitars)</p>
+<p>7.x</p>
 <p><strong>Viktigt:</strong> Om du använder RHEL måste du kunna inaktivera SELinux eller låta dina utvecklare skriva anpassade SELinux-regler för att kontrollera att en aktiverad SELinux inte orsakar problem med åtgärder i Campaign.</p>
+<p>8.x</br><strong>Viktigt:</strong> CentOS Linux 8 upphör den 31 december 2021. Mer information finns på sidan <a href="../../rn/using/deprecated-features.md">Inaktuella funktioner</a>.</p>
 </td>
 </tr>
 <tr>
@@ -88,7 +88,7 @@ Besök [den här sidan](../../rn/using/deprecated-features.md) för mer informat
 <tr>
 <td>Apache</td>
 <td>
-<p>2.4 för RHEL7 – CentOS 7, Debian 8/9, Windows (64 bitars)</p>
+<p>2.4 för RHEL7 - CentOS 7, Debian 8/9, Windows</p>
 </td>
 </tr>
 </tbody>
@@ -104,7 +104,7 @@ Besök [den här sidan](../../rn/using/deprecated-features.md) för mer informat
 <p>11</p>
 <p>9</p>
 <p>8</p>
-<p>Programvaran har godkänts för Java Development Kit (JDK) som har utvecklats av Oracle samt för OpenJDK.</p>
+<p>Campaign stöder Java Development Kit (JDK) som utvecklats av Oracle och OpenJDK.</p>
 </td>
 </tr>
 <tr>
