@@ -6,9 +6,9 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: b8c1f287-06f4-4c34-8cca-b0c7676abbc2
-source-git-commit: 84c6dacb96bd0853be9eaef0dfa7e36116f8a46a
+source-git-commit: c7c6c6a2fe6beb17bfb203e8895661c2f3084cc2
 workflow-type: tm+mt
-source-wordcount: '779'
+source-wordcount: '781'
 ht-degree: 89%
 
 ---
@@ -248,7 +248,7 @@ Miljöerna **Hybrid** och **Lokal** kan dessutom ansluta Campaign till följande
 </tr>
 <tr><td>MySQL</td>
 <td>
-<p>8 (från och med Campaign v7.3)</p>
+<p>8</p>
 <p>5.7</p>
 </td>
 <td>
@@ -271,7 +271,12 @@ Miljöerna **Hybrid** och **Lokal** kan dessutom ansluta Campaign till följande
 <p>12c</p>
 <p>11g</p>
 </td>
-<td>minst v7.0</td>
+<td>
+<p>minst v7.0</p>
+<p></p>
+<p></p>
+<p></p>
+</td>
 </tr>
 <tr>
 <td>SAP HANA</td>
@@ -330,22 +335,32 @@ Följande operativsystem och webbläsare **krävs** för att använda [klientkon
 
 <table>
 <tbody>
-</tr>
+<td><strong>System</strong></td>
+<td><strong>OS-version</strong></td>
+<td><strong>Kampanjversion</strong></td>
 <tr>
 <td>Microsoft Windows</td>
 <td>
-<p>11 (från och med Campaign v7.3)</p>
+<p>11</p>
 <p>10</p>
 <p>8</p>
 </td>
+<td>
+<p>Minst v7.3 </p>
+<p></p>
+<p></p>
 </tr>
 <tr>
 <td>Microsoft Windows Server</td>
 <td>
-<p>2019 (från och med Campaign v7.2.1)</p>
+<p>2019</p>
 <p>2016</p>
 <p>2012</p>
 </td>
+<td>
+<p>Minst v7.2.1 </p>
+<p></p>
+<p></p>
 </tbody>
 </table>
 
