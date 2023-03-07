@@ -9,7 +9,7 @@ exl-id: b8c1f287-06f4-4c34-8cca-b0c7676abbc2
 source-git-commit: c7c6c6a2fe6beb17bfb203e8895661c2f3084cc2
 workflow-type: tm+mt
 source-wordcount: '781'
-ht-degree: 89%
+ht-degree: 99%
 
 ---
 
@@ -42,7 +42,7 @@ Besök [den här sidan](../../rn/using/deprecated-features.md) för mer informat
 <td>
 <p>7.x</p>
 <p><strong>Viktigt:</strong> Om du använder RHEL måste du kunna inaktivera SELinux eller låta dina utvecklare skriva anpassade SELinux-regler för att kontrollera att en aktiverad SELinux inte orsakar problem med åtgärder i Campaign.</p>
-<p>8.x</br><strong>Viktigt:</strong> CentOS Linux 8 upphör den 31 december 2021. Mer information finns på sidan <a href="../../rn/using/deprecated-features.md">Inaktuella funktioner</a>.</p>
+<p>8.x</br><strong>Viktigt:</strong> CentOS Linux 8 når slutet av sin livscykel (EOL) den 31 december 2021. Mer information finns på sidan <a href="../../rn/using/deprecated-features.md">Inaktuella funktioner</a>.</p>
 </td>
 </tr>
 <tr>
@@ -88,7 +88,7 @@ Besök [den här sidan](../../rn/using/deprecated-features.md) för mer informat
 <tr>
 <td>Apache</td>
 <td>
-<p>2.4 för RHEL7 - CentOS 7, Debian 8/9, Windows</p>
+<p>2.4 för RHEL7 – CentOS 7, Debian 8/9, Windows</p>
 </td>
 </tr>
 </tbody>
@@ -154,7 +154,7 @@ Besök [den här sidan](../../rn/using/deprecated-features.md) för mer informat
 <p>2016</p>
 <p>2014</p>
 <p>2012 – SP1 och SP2</p>
-<p><strong>Viktigt:</strong>Microsoft SQL Server stöds inte som primär databas när Campaign-servern körs i Linux. <a href="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/install-campaign-on-prem/installing-campaign-in-linux-/prerequisites-of-campaign-installation-in-linux.html#database-access-layers">Läs mer</a>.</p>
+<p><strong>Viktigt:</strong>Microsoft SQL Server stöds inte som primär databas när Campaign-servern körs i Linux. <a href="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/install-campaign-on-prem/installing-campaign-in-linux-/prerequisites-of-campaign-installation-in-linux.html?lang=sv#database-access-layers">Läs mer</a>.</p>
 </td>
 </tr>
 </tbody>
@@ -368,7 +368,7 @@ Följande operativsystem och webbläsare **krävs** för att använda [klientkon
 
 Microsoft Edge WebView2-körtid den senaste versionen är obligatorisk för Campaign-klientkonsolen.
 
-Ladda ned Microsoft Edge WebView2 från [Microsoft Developer Site](http://www.adobe.com/go/acc-ms-webview2-runtime-download).
+Ladda ned Microsoft Edge WebView2 från [webbplatsen för Microsoft Developer](http://www.adobe.com/go/acc-ms-webview2-runtime-download).
 
 
 ## Mobil-SDK{#MobileSDK}
@@ -396,7 +396,7 @@ Du kan använda Campaign för att [skicka push-meddelanden](../../delivery/using
 
 ## Webbläsare{#Browsers}
 
-Följande webbläsare, i den senaste versionen, är kompatibla med Campaign för [Webbåtkomst](../../campaign/using/accessing-marketing-campaigns.md#using-the-web-interface-).
+Följande webbläsare, i sin senaste versionen, är kompatibla med Campaign för [Webbåtkomst](../../campaign/using/accessing-marketing-campaigns.md#using-the-web-interface-).
 
 * Google Chrome
 * Microsoft Edge
