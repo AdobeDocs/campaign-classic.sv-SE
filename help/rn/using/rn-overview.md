@@ -7,9 +7,9 @@ role: User
 level: Beginner
 exl-id: 7a05fdff-8f9d-4e8d-812e-0f1509db5499
 source-git-commit: f797aafac99d6b9c2bdb409a1d0883c889fd3b0e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '935'
-ht-degree: 88%
+ht-degree: 100%
 
 ---
 
@@ -51,9 +51,9 @@ Om du vill att implementeringen ska vara aktuell bör du läsa sidorna om de [in
 
 ## Uppgraderingprocess{#process-upgrade}
 
-Som värdkund, Managed Services eller Hybrid-kund kan du kontakta Adobe kundtjänst för att få din miljö uppgraderad.
+Kontakta Adobes kundtjänst för att få din miljö uppgraderad om du är värdbaserad-, Managed Services- eller hybridkund.
 
-Som lokal kund kan du uppgradera. Du gör detta genom att [hämta den senaste stabila versionen (GA)](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html) och uppgradera alla dina miljöer.
+Som lokal kund kan du utföra uppgraderingen. Du gör detta genom att [hämta den senaste stabila versionen (GA)](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html) och uppgradera alla dina miljöer.
 
 Du hittar mer information om [uppgraderingsprocessen](../../production/using/build-upgrade.md) i [vanliga frågor och svar om versionsuppgradering](../../platform/using/faq-build-upgrade.md).
 
@@ -67,7 +67,7 @@ Som värdbaserad användare drar du automatiskt nytta av uppgraderingen med den 
 
 ### Varför behöver min organisation den här uppgraderingen?
 
-Om ditt konto har identifierats som en värdkund och du behöver uppgradera en eller flera av teknikerna som är kopplade till Campaign Classic, och uppgradera din infrastruktur till den aktuella versionen (till exempel från v7.2.1 till v7.3.3) och/eller versionen (till exempel från v7 till v8), meddelar Adobe dig direkt.
+Adobe meddelar dig direkt om du är en värdbaserad kund och vi har identifierat att du behöver uppgradera en eller flera av teknikerna för Campaign Classic, samt om en uppgradering av din infrastruktur till den nuvarande versionen (från till exempel v7.2.1 till v7.3.3) och/eller version (från till exempel v7 till v8) behövs.
 
 Som en lokal- eller hybridkund som kör en äldre version uppmuntrar Adobe dig att gå över till den senaste stabila versionen (GA).
 
@@ -77,7 +77,7 @@ Det här säkerställer att ditt konto är säkert mot sårbarheter samt använd
 
 Adobe-teamet leder och vägleder din organisation genom den här resan.
 
-Ett team med dedikerade kundtjänstrepresentanter, produktchefer, ingenjörer och TechOps-specialister och produktkonsulter är här för att hjälpa till och säkerställa att upplevelsen blir smidig.
+Vi har organiserat ett team med dedikerade kundtjänstrepresentanter, produktchefer, ingenjörer och TechOps-specialister samt produktkonsulter för att hjälpa till och säkerställa att upplevelsen är smidig.
 
 ### Fördelar
 
