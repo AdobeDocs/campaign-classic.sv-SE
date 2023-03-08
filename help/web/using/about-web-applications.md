@@ -1,6 +1,6 @@
 ---
 product: campaign
-title: 'Kom igång med webbapplikationer '
+title: Kom igång med webbapplikationer
 description: Skapa och dela dynamiska webbapplikationer, landningssidor och enkäter
 feature: Landing Pages, Web Apps
 exl-id: df58221f-f71b-49d5-a6a1-c81ddff27fdb

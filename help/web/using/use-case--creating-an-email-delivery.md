@@ -7,7 +7,7 @@ exl-id: e2679f12-459b-466d-9c82-60a28363b104
 source-git-commit: b6f1556cf49492cefaf61c29a058584b0ccee16a
 workflow-type: tm+mt
 source-wordcount: '734'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -92,7 +92,7 @@ Du kan spara innehållet som en mall för framtida bruk. När du har skapat en p
 
    Om du vill att mottagarna ska kunna se leveransinnehållet i en webbläsare kan du integrera en länk till en spegelsida i leveransen.
 
-   Klicka i det textfält där du vill se länken publicerad. Klicka på den första ikonen i popup-verktygsfältet och välj **[!UICONTROL Personalization block]** sedan **[!UICONTROL Link to Mirror Page (MirrorPage)]**. Klicka **[!UICONTROL Save]** för att bekräfta.
+   Klicka i det textfält där du vill se länken publicerad. Klicka på den första ikonen i popup-verktygsfältet och välj **[!UICONTROL Personalization block]** sedan **[!UICONTROL Link to Mirror Page (MirrorPage)]**. Klicka på **[!UICONTROL Save]** för att bekräfta.
 
    ![](assets/dce_mirrorpage.png)
 

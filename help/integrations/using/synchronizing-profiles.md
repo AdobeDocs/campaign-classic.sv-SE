@@ -61,7 +61,7 @@ Stegen nedan för att ändra en enda datapunkt ger ett enkelt exempel på hur Ca
 
    ![](assets/acs_connect_profile_sync_03.png)
 
-1. Bekräfta att mottagarens namn har uppdaterats i Campaign Standard. Mer information om var du hittar profiler i Campaign Standarden finns i [Navigeringsgrunder](https://experienceleague.adobe.com/docs/campaign-standard/using/getting-started/discovering-the-interface/interface-description.html).
+1. Bekräfta att mottagarens namn har uppdaterats i Campaign Standard. Mer information om var du hittar profiler i Campaign Standarden finns i [Navigeringsgrunder](https://experienceleague.adobe.com/docs/campaign-standard/using/getting-started/discovering-the-interface/interface-description.html?lang=sv).
 
    ![](assets/acs_connect_profile_sync_04.png)
 
@@ -174,6 +174,6 @@ Följ instruktionerna i [Skapa ett arbetsflöde](#creating-a-workflow) och [Skap
 
    ![](assets/acs_connect_profile_sync_22.png)
 
-1. Gå till Campaign Standarden och öppna profilinformationen för mottagaren. Bekräfta att en kryssruta visas bredvid **[!UICONTROL No longer contact (by any channel)]**. Mer information om var du hittar profiler i Campaign Standarden finns i [Navigeringsgrunder](https://experienceleague.adobe.com/docs/campaign-standard/using/getting-started/discovering-the-interface/interface-description.html).
+1. Gå till Campaign Standarden och öppna profilinformationen för mottagaren. Bekräfta att en kryssruta visas bredvid **[!UICONTROL No longer contact (by any channel)]**. Mer information om var du hittar profiler i Campaign Standarden finns i [Navigeringsgrunder](https://experienceleague.adobe.com/docs/campaign-standard/using/getting-started/discovering-the-interface/interface-description.html?lang=sv).
 
    ![](assets/acs_connect_profile_sync_23.png)

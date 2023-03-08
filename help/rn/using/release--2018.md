@@ -82,7 +82,7 @@ ht-degree: 7%
 
 >[!CAUTION]
 >
->Det här bygget har återkallats. Please [uppgradera till den senaste versionen](../../production/using/build-upgrade.md) eller kontakt [Adobe kundtjänst](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
+>Det här bygget har återkallats. Please [uppgradera till den senaste versionen](../../production/using/build-upgrade.md) eller kontakt [Adobe kundtjänst](https://helpx.adobe.com/se/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
 
 **Förbättringar**
 
@@ -104,7 +104,7 @@ ht-degree: 7%
 
 >[!CAUTION]
 >
->Det här bygget har återkallats. Please [uppgradera till den senaste versionen](../../production/using/build-upgrade.md) eller kontakt [Adobe kundtjänst](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
+>Det här bygget har återkallats. Please [uppgradera till den senaste versionen](../../production/using/build-upgrade.md) eller kontakt [Adobe kundtjänst](https://helpx.adobe.com/se/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
 
 **Nyheter**
 
@@ -249,7 +249,7 @@ Dessa indexändringar kan leda till att tiden som krävs för att utföra uppgra
 
 >[!CAUTION]
 >
->Det här bygget har återkallats. Please [uppgradera till den senaste versionen](../../production/using/build-upgrade.md) eller kontakt [Adobe kundtjänst](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
+>Det här bygget har återkallats. Please [uppgradera till den senaste versionen](../../production/using/build-upgrade.md) eller kontakt [Adobe kundtjänst](https://helpx.adobe.com/se/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
 
 **Nyheter**
 
@@ -305,7 +305,7 @@ Mer information om frågeflätning finns i följande artiklar:
 
 >[!CAUTION]
 >
->Det här bygget har återkallats. Please [uppgradera till den senaste versionen](../../production/using/build-upgrade.md) eller kontakt [teknisk support](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
+>Det här bygget har återkallats. Please [uppgradera till den senaste versionen](../../production/using/build-upgrade.md) eller kontakt [teknisk support](https://helpx.adobe.com/se/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
 
 **Nyheter**
 
@@ -323,7 +323,7 @@ Mer information om frågeflätning finns i följande artiklar:
   </tr> 
   <tr> 
    <td> Stöd för Windows Server 2016<br /> </td> 
-   <td> Adobe Campaign är nu kompatibelt med Windows Server 2016. Se <a href="https://helpx.adobe.com/campaign/kb/compatibility-matrix.html">Kompatibilitetsmatris för Campaign Classic</a>.<br /> </td> 
+   <td> Adobe Campaign är nu kompatibelt med Windows Server 2016. Se <a href="https://helpx.adobe.com/se/campaign/kb/compatibility-matrix.html">Kompatibilitetsmatris för Campaign Classic</a>.<br /> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -340,7 +340,7 @@ För befintliga kunder ändras inte funktionens beteende, men vi rekommenderar a
 
 decryptPassword
 
-The **decryptPassword** funktionen har lagts till. Du kan dekryptera ett lösenord som lagras i ett externt konto. Se [JSAPI](https://helpx.adobe.com/campaign/kb/compatibility-matrix.html) mer information.
+The **decryptPassword** funktionen har lagts till. Du kan dekryptera ett lösenord som lagras i ett externt konto. Se [JSAPI](https://helpx.adobe.com/se/campaign/kb/compatibility-matrix.html) mer information.
 
 Fil-API:er
 

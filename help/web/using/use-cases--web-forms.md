@@ -1,7 +1,7 @@
 ---
 product: campaign
-title: '"Användningsfall: webbformulär"'
-description: '"Användningsfall: webbformulär"'
+title: "Användningsfall: webbformulär"
+description: "Användningsfall: webbformulär"
 feature: Web Forms
 exl-id: 7aa4646d-1325-47c2-b553-6fe375c48973
 source-git-commit: b6f1556cf49492cefaf61c29a058584b0ccee16a

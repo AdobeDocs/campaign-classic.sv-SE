@@ -37,7 +37,6 @@ Kampanjanvändare kan ansluta till Adobe Campaign-konsolen med sin Adobe ID. Int
 > * [Kampanj 20.1.4](../../rn/using/release--2020.md#release-20-1-4-build-9126)
 > * [Kampanj 19.2.4](../../rn/using/release--2019.md#release-19-2-4-build-9082)
 > * [Kampanj 19.1.8](../../rn/using/release--2019.md#release-19-1-8-build-9039)
-
 >
 > [!DNL :bulb:] [Läs mer om IMS-uppdateringar](../../technotes/using/ims-updates.md)
 

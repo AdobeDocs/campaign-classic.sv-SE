@@ -1,14 +1,14 @@
 ---
 product: campaign
-title: 'Felsöka pipelines '
-description: 'Felsöka pipelines '
+title: Felsöka pipelines
+description: Felsöka pipelines
 audience: integrations
 content-type: reference
 exl-id: 76645a6f-9536-49d6-b12a-fdd6113d31fa
 source-git-commit: 02eebe83de49ee97e573b0c47ca1fddb2195b991
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '705'
+ht-degree: 1%
 
 ---
 
