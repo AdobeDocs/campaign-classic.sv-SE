@@ -6,9 +6,9 @@ audience: production
 content-type: reference
 topic-tags: production-procedures
 exl-id: 1f5d8c7e-6f9b-46cd-a9b4-a3b48afb1794
-source-git-commit: 98380c18b915cfebc980e68f9840f9d8919eaca4
+source-git-commit: f2ec24a122eff94f62bd79e656e771fecd803659
 workflow-type: tm+mt
-source-wordcount: '3606'
+source-wordcount: '3610'
 ht-degree: 0%
 
 ---
@@ -257,7 +257,6 @@ De grupperas under **Övervakning** > SMTP-övervakning.
 >
 >* Information om SMTP-övervakning är bara tillgänglig om e-postkanalen har aktiverats.
 >* The **[!UICONTROL SMTP sending statistics]** visas bara om statistikservern har startats på instansen.
-
 >
 
 
@@ -270,7 +269,8 @@ The **[!UICONTROL SMTP sending statistics]** kan du styra serveraktiviteten. Den
 Listan över indikatorer för den här rapporten visas under diagrammet.
 
 1. Totalt antal skickade meddelanden.
-1. 
+1. Representerar in-/utmeddelanden:
+
    * Blå linje: meddelanden som är klara att skickas och som anlänt till Shaper, dvs. sista steget innan SMTP skickas (sammanfaller med inkommande data).
 
    * Grön linje: meddelanden har skickats (sammanfaller med utgående data).
