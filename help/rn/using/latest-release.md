@@ -6,10 +6,10 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: d65869ca-a785-4327-8e8d-791c28e4696c
-source-git-commit: 2654157b02b549d4184ed6a5a93acad47e452713
+source-git-commit: 754e6d2486897958827a15ab8a3d14ec17935891
 workflow-type: tm+mt
-source-wordcount: '2772'
-ht-degree: 100%
+source-wordcount: '2969'
+ht-degree: 94%
 
 ---
 
@@ -19,7 +19,37 @@ ht-degree: 100%
 
 Den här sidan listar nya funktioner, förbättringar och korrigeringar som kommer med den **senaste versionen av Campaign Classic v7**. Varje ny version kommer med en status som visas med en färg. Läs mer om versionsstatusen för Campaign Classic v7 på [den här sidan](rn-overview.md).
 
-## ![](assets/do-not-localize/green_2.png) Version 7.3.2 – build 9356 {#release-7-3-2}
+## ![](assets/do-not-localize/green_2.png) Version 7.3.3 – build 9359 {#release-7-3-3}
+
+>[!CAUTION]
+>
+> Den här versionen är för närvarande endast tillgänglig för användare av hanterade Cloud Services och kommer snart att vara tillgänglig för driftsättningar på plats och hybridversioner.
+
+>[!CAUTION]
+>
+>Uppgradering av klientkonsolen är obligatorisk. Lär dig hur du uppgraderar din klientkonsol på den här [sidan](../../installation/using/installing-the-client-console.md).
+
+_9 mars 2023_
+
+**Säkerhetsförbättring**
+
+* För att optimera säkerheten har Tomcat uppdaterats från version 8.5.81 till 8.5.85. (NEO-56936)
+
+**Förbättringar**
+
+* Arbetsflödet för fakturering har förbättrats för att optimera prestanda. (NEO-47658)
+* Arbetsflödet för spårning har förbättrats för att optimera prestanda om leveransstorleken är hög. (NEO-45064)
+* Spårningshanteringen har förbättrats för att åtgärda eventuella problem med dynamiska parametrar i URL-adresser. Tracking management v3 hanterar nu URL:er av typen ajax (med parametrar efter &#39;#&#39;) och förhindrar att verktyg från tredje part ändrar spårnings-URL:er. Om du vill använda den här ändringen måste du kontakta Adobe. (NEO-46535)
+
+<!--To apply this change, the marketing, tracking and mid servers need to be updated to 7.3.3. To enable the new tracking management mode, set the `emailLinksVersion` parameter to '3' in the configuration file of the marketing server. (NEO-46535)-->
+
+**Korrigeringar**
+
+* Korrigerade ett problem som kunde förhindra att iOS korrekturmeddelanden för push-meddelanden skickades från kontrollinstansen (Transactional Messaging-kontext). (NEO-54713)
+* Ett problem som kunde förhindra dig från att rulla i dialogrutan har korrigerats **Redigera** -fliken i Digital Content Editor (DCE). (NEO-54474)
+* Ett problem har korrigerats när två anrikningsaktiviteter använde samma namnidentifierare i sin länkning, vilket ledde till att den andra anrikningsaktiviteten använde länkarna i den första. (NEO-48851)
+
+## ![](assets/do-not-localize/orange_2.png) Version 7.3.2 – build 9356 {#release-7-3-2}
 
 _21 november 2022_
 
