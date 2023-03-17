@@ -4,9 +4,9 @@ title: Konfigurera iOS mobilprogram i Adobe Campaign
 description: Lär dig hur du konfigurerar ditt mobilprogram för iOS
 feature: Push
 exl-id: 67eee1c5-a918-46b9-875d-7c3c71c00635
-source-git-commit: 9839dbacda475c2a586811e3c4f686b1b1baab05
+source-git-commit: fd19a2f11773e9e4c841f685a3491a763493e572
 workflow-type: tm+mt
-source-wordcount: '652'
+source-wordcount: '651'
 ht-degree: 7%
 
 ---
@@ -50,7 +50,7 @@ Din iOS-anslutning är nu konfigurerad. Du kan börja skapa tjänsten.
 
 >[!CAUTION]
 >
->Programmet måste ha konfigurerats för push-åtgärder FÖRE integrering med Adobe Campaign SDK.
+>Programmet måste ha konfigurerats för push-åtgärder FÖRE integrering med Adobe SDK.
 >
 >Om så inte är fallet, se [den här sidan](https://developer.apple.com/documentation/usernotifications).
 
