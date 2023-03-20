@@ -6,10 +6,10 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: d65869ca-a785-4327-8e8d-791c28e4696c
-source-git-commit: 02ab5f4520179fcce8eedbe3dcc7b08cb9cfe0d2
+source-git-commit: 143fe21447f91120e63df4409597472849bb6d47
 workflow-type: tm+mt
-source-wordcount: '2989'
-ht-degree: 93%
+source-wordcount: '2947'
+ht-degree: 95%
 
 ---
 
@@ -23,15 +23,9 @@ Den här sidan listar nya funktioner, förbättringar och korrigeringar som komm
 
 >[!CAUTION]
 >
-> Den här versionen är för närvarande endast tillgänglig för användare av hanterade Cloud Services och kommer snart att vara tillgänglig för driftsättningar på plats och hybridversioner.
->
 >Uppgradering av klientkonsolen är obligatorisk. Lär dig hur du uppgraderar din klientkonsol på den här [sidan](../../installation/using/installing-the-client-console.md).
 
->[!NOTE]
->
->Den här versionen är endast avsedd för användare med hanterade Cloud Services.
-
-_9 mars 2023_
+_20 mars 2023_
 
 **Säkerhetsförbättring**
 
@@ -51,17 +45,13 @@ _9 mars 2023_
 * Ett problem som kunde förhindra dig från att rulla i dialogrutan har korrigerats **Redigera** -fliken i Digital Content Editor (DCE). (NEO-54474)
 * Ett problem har korrigerats när två anrikningsaktiviteter använde samma namnidentifierare i sin länkning, vilket ledde till att den andra anrikningsaktiviteten använde länkarna i den första. (NEO-48851)
 
-## ![](assets/do-not-localize/green.png) Version 7.3.2 – build 9356 {#release-7-3-2}
+## ![](assets/do-not-localize/orange_2.png) Version 7.3.2 – build 9356 {#release-7-3-2}
 
 _21 november 2022_
 
 >[!CAUTION]
 >
 >Uppgradering av klientkonsolen är obligatorisk. Lär dig hur du uppgraderar din klientkonsol på den här [sidan](../../installation/using/installing-the-client-console.md).
-
->[!NOTE]
->
->Den här versionen är endast avsedd för driftsättning på plats och hybriddriftsättningar.
 
 **Kompatibilitetsuppdateringar**
 
