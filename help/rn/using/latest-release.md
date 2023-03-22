@@ -9,7 +9,7 @@ exl-id: d65869ca-a785-4327-8e8d-791c28e4696c
 source-git-commit: 143fe21447f91120e63df4409597472849bb6d47
 workflow-type: tm+mt
 source-wordcount: '2947'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -35,15 +35,15 @@ _20 mars 2023_
 
 * Arbetsflödet för fakturering har förbättrats för att optimera prestanda. (NEO-47658)
 * Arbetsflödet för spårning har förbättrats för att optimera prestanda om leveransstorleken är hög. (NEO-45064)
-* Spårningshanteringen har förbättrats för att åtgärda eventuella problem med dynamiska parametrar i URL-adresser. Tracking management v3 hanterar nu URL:er av typen ajax (med parametrar efter &#39;#&#39;) och förhindrar att verktyg från tredje part ändrar spårnings-URL:er. Om du vill använda den här ändringen måste du kontakta Adobe. (NEO-46535)
+* Spårningshanteraren har förbättrats för att åtgärda eventuella problem med dynamiska parametrar i URL:er. Spårningshanteraren v3 hanterar nu URL:er av typen ajax (med parametrar efter ”#”) och förhindrar att verktyg från tredje part ändrar spårnings-URL:er. Om du vill tillämpa den här ändringen måste du kontakta Adobe. (NEO-46535)
 
 <!--To apply this change, the marketing, tracking and mid servers need to be updated to 7.3.3. To enable the new tracking management mode, set the `emailLinksVersion` parameter to '3' in the configuration file of the marketing server. (NEO-46535)-->
 
 **Korrigeringar**
 
-* Korrigerade ett problem som kunde förhindra att iOS korrekturmeddelanden för push-meddelanden skickades från kontrollinstansen (Transactional Messaging-kontext). (NEO-54713)
-* Ett problem som kunde förhindra dig från att rulla i dialogrutan har korrigerats **Redigera** -fliken i Digital Content Editor (DCE). (NEO-54474)
-* Ett problem har korrigerats när två anrikningsaktiviteter använde samma namnidentifierare i sin länkning, vilket ledde till att den andra anrikningsaktiviteten använde länkarna i den första. (NEO-48851)
+* Korrigerade ett problem som kunde förhindra att push-meddelanden för korrektur i iOS skickades från kontrollinstansen (kontext för transaktionsmeddelanden). (NEO-54713)
+* Korrigerade ett problem som kunde förhindra dig från att skrolla i fliken **Redigera** i Redigeraren för digitalt innehåll (DCE). (NEO-54474)
+* Korrigerade ett problem där två berikningsaktiviteter använde samma namnidentifierare i sin länkning, vilket ledde till att den andra berikningsaktiviteten använde länkarna till den första. (NEO-48851)
 
 ## ![](assets/do-not-localize/orange_2.png) Version 7.3.2 – build 9356 {#release-7-3-2}
 
