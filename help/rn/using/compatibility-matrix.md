@@ -6,7 +6,7 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: b8c1f287-06f4-4c34-8cca-b0c7676abbc2
-source-git-commit: 2ba04c785f6587741fdf421116781306e74f0168
+source-git-commit: 0065a25250d73c71e7569768a38b5836cccab992
 workflow-type: tm+mt
 source-wordcount: '802'
 ht-degree: 97%
@@ -376,7 +376,6 @@ Ladda ned Microsoft Edge WebView2 från [webbplatsen för Microsoft Developer](h
 Du kan använda Campaign för att [skicka push-meddelanden](../../delivery/using/about-mobile-app-channel.md) på de operativsystem som listas nedan med hjälp av den associerade [mobil-SDK:en](../../delivery/using/integrating-campaign-sdk-into-the-mobile-application.md).
 
 Du kan också använda Adobe Experience Platform Mobile SDK genom att konfigurera Adobe Campaign-tillägget i användargränssnittet för datainsamling.
-
 
 <table>
 <tbody>

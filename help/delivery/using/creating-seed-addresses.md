@@ -4,7 +4,7 @@ title: Skapa dirigerade adresser
 description: Lär dig hur du skapar och använder dirigerade adresser
 feature: Seed Address
 exl-id: f7dc97f0-3423-4b6f-88e2-08180f9adf8a
-source-git-commit: 9839dbacda475c2a586811e3c4f686b1b1baab05
+source-git-commit: 0065a25250d73c71e7569768a38b5836cccab992
 workflow-type: tm+mt
 source-wordcount: '413'
 ht-degree: 1%
@@ -32,11 +32,11 @@ Följ stegen nedan för att skapa dirigerade adresser:
    >
    >Adressetiketten fylls automatiskt i med det efternamn och förnamn som du har definierat.
    >
-   >Du behöver inte ange alla fält på varje flik när du skapar en startadress. Eventuella personaliseringselement som saknas anges slumpmässigt under leveransen.
+   >Du behöver inte ange alla fält på varje flik när du skapar en startadress. Personaliseringselement som saknas anges slumpmässigt under leveransanalysen.
 
    ![](assets/s_ncs_user_seedlist_new_address.png)
 
-1. I **[!UICONTROL Seed fields]** anger du de värden som ska infogas i leveransloggarna under analysfasen (i dialogrutan **[!UICONTROL nms:broadLog]** tabell).
+1. I **[!UICONTROL Address fields]** anger du de värden som ska infogas i leveransloggarna under analysfasen (i dialogrutan **[!UICONTROL nms:broadLog]** tabell).
 
 1. I **[!UICONTROL Additional data]** Ange de personaliseringsdata som används för leveranser som skapas i arbetsflödena för datahantering och som du vill tilldela ett specifikt värde till.
 
