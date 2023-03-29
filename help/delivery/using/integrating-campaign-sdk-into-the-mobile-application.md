@@ -4,9 +4,9 @@ title: Integrera Campaign SDK
 description: Lär dig hur du integrerar Campaign SDK med din mobilapp
 feature: Mobile SDK Integration, Push
 exl-id: a5f6b82d-5561-4e56-b2ed-7fd6fd8c2b55
-source-git-commit: fd19a2f11773e9e4c841f685a3491a763493e572
+source-git-commit: 1ead0b1afc8c924cb4f8d36c608cd570e5fe7a44
 workflow-type: tm+mt
-source-wordcount: '1020'
+source-wordcount: '995'
 ht-degree: 0%
 
 ---
@@ -15,19 +15,17 @@ ht-degree: 0%
 
 ![](../../assets/v7-only.svg)
 
-
->[!NOTE]
+>[!CAUTION]
 >
 >Adobe rekommenderar att du använder Adobe Experience Platform Mobile SDK genom att konfigurera Adobe Campaign-tillägget i användargränssnittet för datainsamling. Adobe Experience Platform Mobile SDK hjälper er att driva lösningar och tjänster från Adobe Experience Cloud i era mobilappar. SDK-konfigurationen hanteras via användargränssnittet för datainsamling för flexibel konfiguration och utbyggbara, regelbaserade integreringar. [Läs mer i Adobe Developer-dokumentationen](https://developer.adobe.com/client-sdks/documentation/adobe-campaign-classic){target="_blank"}.
-
-Kampanj-SDK:er för iOS och Android är en av komponenterna i modulen Mobile App Channel. Målet med SDK är att underlätta integreringen av mobilapplikationer i Adobe Campaign.
 
 Om du vill hämta Campaign SDK (tidigare kallat Neolane SDK) kontaktar du [Adobe kundtjänst](https://helpx.adobe.com/se/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html){target="_blank"}.
 
 Mer information om vilka olika Android- och iOS-versioner som stöds finns i [Kompatibilitetsmatris](../../rn/using/compatibility-matrix.md#MobileSDK).
 
+Du hittar stegen under integreringen för Campaign SDK.
 
-## Läser in kampanj-SDK {#loading-campaign-sdk}
++++**Läser in kampanj-SDK**
 
 * **I Android**: den **neolane_sdk-release.aar** filen måste vara länkad till projektet.
 
@@ -55,7 +53,9 @@ Mer information om vilka olika Android- och iOS-versioner som stöds finns i [Ko
    >
    >För version 1.0.25 av SDK finns de fyra arkitekturerna i **Neolane_SDK.h** -fil.
 
-## Deklarera integrationsinställningar {#declaring-integration-settings}
++++
+
++++**Deklarera integrationsinställningar**
 
 För att integrera Campaign SDK i mobilappen måste den funktionella administratören lämna följande information till utvecklaren:
 
@@ -85,7 +85,9 @@ För att integrera Campaign SDK i mobilappen måste den funktionella administrat
    [nl setIntegrationKey:strIntegrationKey];
    ```
 
-## Registreringsfunktion {#registration-function}
++++
+
++++**Registreringsfunktion**
 
 Registreringsfunktionen gör att du kan:
 
@@ -141,7 +143,9 @@ Registreringsfunktionen gör att du kan:
    }
    ```
 
-## Spårningsfunktion {#tracking-function}
++++
+
++++**Spårningsfunktion**
 
 * **I Android**:
 
@@ -293,7 +297,9 @@ Registreringsfunktionen gör att du kan:
    >
    >Från version 7.0, en gång **program:didReceiveRemoteNotification:fetchCompletionHandler** -funktionen är implementerad och operativsystemet anropar bara den här funktionen. The **program:didReceiveRemoteNotification** funktionen anropas därför inte.
 
-## Spårning av tyst meddelande {#silent-notification-tracking}
++++
+
++++**Spårning av tyst meddelande**
 
 Med iOS kan du skicka tysta meddelanden, ett meddelande eller data som skickas direkt till ett mobilprogram utan att det visas. Med Adobe Campaign kan du spåra dem.
 
@@ -333,7 +339,9 @@ Följ exemplet nedan för att spåra ditt tysta meddelande:
 }
 ```
 
-### RegisterDeviceStatus-delegat {#registerdevicestatus-delegate}
++++
+
++++**RegisterDeviceStatus-delegat**
 
 >[!NOTE]
 >
@@ -529,7 +537,9 @@ Att implementera **registerDeviceStatus** delegat, följ dessa steg:
    @end
    ```
 
-## Variabler {#variables}
++++
+
++++**Variabler**
 
 Med variablerna kan du definiera mobilprogrammets beteende efter att ha tagit emot ett meddelande. Dessa variabler måste definieras i mobilprogramkoden och i Adobe Campaign-konsolen i **[!UICONTROL Variables]** i den dedikerade mobilprogramtjänsten (se [Konfigurera ett mobilprogram i Adobe Campaign](configuring-the-mobile-application.md)). Här är ett exempel på en kod som gör att ett mobilprogram kan samla in tillagda variabler i ett meddelande. I vårt exempel använder vi variabeln&quot;VAR&quot;.
 
@@ -577,7 +587,9 @@ Med variablerna kan du definiera mobilprogrammets beteende efter att ha tagit em
 >
 >Adobe rekommenderar att du väljer korta variabelnamn eftersom meddelandestorleken är begränsad till 4kB för iOS och Android.
 
-## Meddelandetjänsttillägg {#notification-service-extension}
++++
+
++++**Meddelandetjänsttillägg**
 
 **För iOS**
 
@@ -611,7 +623,9 @@ Mediet måste hämtas på meddelanditjänstens tilläggsnivå.
     // Perform the download to local storage
 ```
 
-## Tillägg för meddelandeinnehåll {#notification-content-extension}
++++
+
++++**Tillägg för meddelandeinnehåll**
 
 **För iOS**
 
@@ -662,3 +676,5 @@ På den här nivån måste du:
    }
    @end
    ```
+
++++
