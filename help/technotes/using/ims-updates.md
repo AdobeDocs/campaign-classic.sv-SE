@@ -3,10 +3,10 @@ product: campaign
 title: Technote - Uppdatera miljön för att ansluta till Adobe Campaign med IMS
 description: Campaign - IMS-uppdateringar
 exl-id: ecb5a258-a150-46a3-8b83-2b2c06d873ee
-source-git-commit: 70240d5f62fd3d7b755389b5ad8c4b499c94657d
+source-git-commit: bdccc4ee7cbb8c765d488879f99677b2302d32e7
 workflow-type: tm+mt
-source-wordcount: '587'
-ht-degree: 8%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -88,7 +88,7 @@ Om du inte har uppdaterat din Internet Explorer-version visas följande meddelan
 ## Användbara länkar
 
 * [Uppgradera din miljö](../../production/using/build-upgrade.md)
-* [Vanliga frågor och svar om Builduppgradering](../../platform/using/faq-build-upgrade.md)
+* [Vanliga frågor och svar om builduppgradering](../../platform/using/faq-build-upgrade.md)
 * [Gör den nya klientkonsolen tillgänglig för användare](../../installation/using/client-console-availability-for-windows.md)
 * [Installera Campaign Client Console](../../installation/using/installing-the-client-console.md)
 * [Access Adobe Software Distribution](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=en)
