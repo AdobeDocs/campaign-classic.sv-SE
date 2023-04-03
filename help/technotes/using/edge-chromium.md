@@ -4,10 +4,10 @@ title: TechNote - Aktivera Microsoft Edge Chromium i kampanjmiljön
 description: Campaign - Edge Chromium
 hide: true
 hidefromtoc: true
-source-git-commit: d883db444ef7cc243241833b86e8b946454e5d2a
+source-git-commit: 17ef8f92ab5dbecadf20140c3faff735d92c8223
 workflow-type: tm+mt
-source-wordcount: '228'
-ht-degree: 12%
+source-wordcount: '246'
+ht-degree: 11%
 
 ---
 
@@ -39,19 +39,19 @@ Om din miljö har uppgraderats till Campaign Classic v7.3 (eller senare) påverk
 
    1. Redigera konfigurationsfilen för Campaign-servern (`serverConf.xml`)
    1. I `<web>` modul, ange `webView2Mode = "1"`
-   1. Läs in serverkonfigurationen igen
+   1. Kör följande kommando för att läsa in serverkonfigurationen igen:
 
       ```
       nlserver config -reload
       ```
 
-   1. Starta om webbservern
+   1. Kör följande kommando för att starta om webbservern:
 
       ```
       nlserver restart web
       ```
 
-   1. Om miljön körs på Apache startar du om Apache
+   1. Om din miljö använder Apache som webbserver kör du följande kommando för att starta om Apache:
 
       ```
       /etc/init.d/apache2 restart
