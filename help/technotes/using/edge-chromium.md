@@ -4,7 +4,7 @@ title: TechNote - Aktivera Microsoft Edge Chromium i kampanjmiljön
 description: Campaign - Edge Chromium
 hide: true
 hidefromtoc: true
-source-git-commit: d9f57d4e5b6f880907040344ece40546456a2321
+source-git-commit: d883db444ef7cc243241833b86e8b946454e5d2a
 workflow-type: tm+mt
 source-wordcount: '228'
 ht-degree: 12%
@@ -19,7 +19,7 @@ ht-degree: 12%
 
 ## Vad har ändrats?
 
-Efter att Microsoft Internet Explorer 11 har upphört att gälla använder nu renderingsmotorn HTML för Adobe Services (inloggningssidan) i klientkonsolen Microsoft Edge Chromium, från och med Campaign Classic v7.3.
+Efter att Microsoft Internet Explorer 11 har upphört att gälla använder återgivningsmotorn HTML för kontrollpaneler i klientkonsolen Edge Chromium från och med Campaign Classic v7.3.
 
 Förutom installationen av Microsoft Edge Webview 2, som nu [krävs för installation av klientkonsolen](../../installation/using/installing-the-client-console.md#webview)måste Microsoft Edge Chromium vara aktiverat på dina instanser.
 
@@ -29,7 +29,7 @@ Om din miljö har uppgraderats till Campaign Classic v7.3 (eller senare) påverk
 
 ## Hur uppdaterar jag?
 
-* Som **värdbaserad** Adobe har redan aktiverat Microsoft Edge Chromium på dina instanser.
+* Som **värdbaserad** Adobe har redan aktiverat Microsoft Edge Chromium på dina instanser. Ingen ytterligare åtgärd krävs.
 
 * Som en **lokal/hybrid** -kund måste du aktivera Microsoft Edge Chromium på dina instanser.
 
