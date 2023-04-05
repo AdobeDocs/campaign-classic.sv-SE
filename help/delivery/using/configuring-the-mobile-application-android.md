@@ -4,7 +4,7 @@ title: Konfigurera Android-mobilprogrammet i Adobe Campaign
 description: Lär dig hur du konfigurerar ditt mobilprogram för Android
 feature: Push
 exl-id: 32c35e61-d0a3-478f-b73b-396e2becf7f9
-source-git-commit: 9839dbacda475c2a586811e3c4f686b1b1baab05
+source-git-commit: 8d635722b8961b3edac9cc98f00f17b86f4ee523
 workflow-type: tm+mt
 source-wordcount: '963'
 ht-degree: 4%
@@ -12,6 +12,8 @@ ht-degree: 4%
 ---
 
 # Konfigurationssteg för Android
+
+![](../../assets/v7-only.svg)
 
 När paketet har installerats kan du definiera dina Android-appinställningar i Adobe Campaign Classic.
 
@@ -166,7 +168,7 @@ Nedan visas FCM-nyttolastsnamnen för att ytterligare anpassa ditt push-meddelan
 
 | Meddelandetyp | Konfigurerbart meddelandeelement (FCM-nyttolastnamn) | Konfigurerbara alternativ (FCM-nyttolastnamn) |
 |:-:|:-:|:-:|
-| datameddelande | Ej tillämpligt | dryRun |
+| datameddelande | N/A | dryRun |
 | meddelande | title, body, android_channel_id, icon, sound, tag, color, click_action <br> | dryRun |
 
 <br>

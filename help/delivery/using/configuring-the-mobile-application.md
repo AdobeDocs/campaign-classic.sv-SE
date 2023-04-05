@@ -4,7 +4,7 @@ title: Konfigurera iOS mobilprogram i Adobe Campaign
 description: Lär dig hur du konfigurerar ditt mobilprogram för iOS
 feature: Push
 exl-id: 67eee1c5-a918-46b9-875d-7c3c71c00635
-source-git-commit: fd19a2f11773e9e4c841f685a3491a763493e572
+source-git-commit: 8d635722b8961b3edac9cc98f00f17b86f4ee523
 workflow-type: tm+mt
 source-wordcount: '651'
 ht-degree: 7%
@@ -13,7 +13,7 @@ ht-degree: 7%
 
 # Konfigurationssteg för iOS {#configuring-the-mobile-application-in-adobe-campaign-ios}
 
-![](../../assets/common.svg)
+![](../../assets/v7-only.svg)
 
 När paketet har installerats kan du definiera dina programinställningar för iOS i Adobe Campaign Classic.
 
