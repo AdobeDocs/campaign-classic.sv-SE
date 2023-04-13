@@ -7,9 +7,9 @@ role: User
 level: Beginner
 exl-id: 07c1f4a3-cf16-4a9b-b402-e13258799f91
 source-git-commit: a4a5e014d8055cf29bdbf7debb72eb20388c9b19
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3577'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -25,11 +25,11 @@ Se [Versionsinformationen för Adobe Campaign Classic](../../rn/using/latest-rel
 
 ### April 2023
 
-Lade till en teknik om hur du aktiverar Microsoft Edge Chromium på plats-/hybridmiljöer. [Läs mer](../../technotes/using/edge-chromium.md)
+Lade till ett tekniskt dokument om hur du aktiverar Microsoft Edge Chromium på lokala/hybridmiljöer. [Läs mer](../../technotes/using/edge-chromium.md)
 
 ### Mars 2023
 
-Uppdaterat avsnitt med versionsinformation med 7.3.3-förbättringar och korrigeringar. [Läs mer](latest-release.md)
+Uppdaterat avsnitt med versionsinformation med förbättringar och korrigeringar för 7.3.3. [Läs mer](latest-release.md)
 
 
 +++ 2022
