@@ -2,13 +2,13 @@
 product: campaign
 title: TechNote - Aktivera Microsoft Edge Chromium i kampanjmiljön
 description: Campaign - Edge Chromium
-source-git-commit: a4a5e014d8055cf29bdbf7debb72eb20388c9b19
+exl-id: 22f4cbaf-ca37-47b9-b7dd-1ee73d5b348d
+source-git-commit: 095919608e08a0bf8ad1487fa5ec0a1ddb443c7b
 workflow-type: tm+mt
 source-wordcount: '246'
 ht-degree: 11%
 
 ---
-
 
 # Så här aktiverar du Microsoft Edge Chromium i din miljö {#edge-conf}
 
@@ -65,4 +65,3 @@ Om din miljö har uppgraderats till Campaign Classic v7.3 (eller senare) påverk
 * [Uppgradera din miljö](../../production/using/build-upgrade.md)
 * [Vanliga frågor och svar om builduppgradering](../../platform/using/faq-build-upgrade.md)
 * [Installera Campaign Client Console](../../installation/using/installing-the-client-console.md)
-
