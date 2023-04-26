@@ -8,9 +8,9 @@ index: y
 internal: n
 snippet: y
 exl-id: ab30f697-3022-4a29-bbdb-14ca12ec9c3e
-source-git-commit: 02eebe83de49ee97e573b0c47ca1fddb2195b991
+source-git-commit: 98a67e5b6e3f8cf8ba596db1fadd61fff821be30
 workflow-type: tm+mt
-source-wordcount: '693'
+source-wordcount: '717'
 ht-degree: 4%
 
 ---
@@ -68,6 +68,9 @@ Kontrollera att du har:
 1. Om ditt klient-ID var tomt väljer du **[!UICONTROL Generate a key pair]** för att skapa ett nyckelpar för offentlig och privat nyckel.
 
    Nycklarna laddas sedan ned automatiskt med ett standardutgångsdatum på 365 dagar. När det har gått ut måste du skapa ett nytt nyckelpar och uppdatera integreringen i konfigurationsfilen. Med alternativ 2 kan du välja att manuellt skapa och överföra **[!UICONTROL Public key]** med ett längre utgångsdatum.
+
+   En steg-för-steg-guide om hur du ersätter utgångsdatum för certifikatnyckelpar finns i [den här sidan](https://developer.adobe.com/developer-console/docs/guides/email-alerts/cert-expiry/#a-step-by-step-guide-to-replacing-expiring-certificate-key-pairs).
+
 
    >[!CAUTION]
    >
