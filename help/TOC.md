@@ -6,9 +6,9 @@ title: Användarhandbok för Campaign Classic v7
 user-guide-description: Med Adobe Campaign kan du använda omfattande kunddata för att skapa, samordna och leverera dynamiska kampanjer som kunderna verkligen vill ha – via e-post, mobiler, offlinekanaler med mera.
 sub-product: adobe campaign classic
 type: Documentation
-source-git-commit: bdccc4ee7cbb8c765d488879f99677b2302d32e7
-workflow-type: ht
-source-wordcount: '2536'
+source-git-commit: 0f831817fc2e6b7b1d95a71f4ea08ec104268d11
+workflow-type: tm+mt
+source-wordcount: '2531'
 ht-degree: 100%
 
 ---
