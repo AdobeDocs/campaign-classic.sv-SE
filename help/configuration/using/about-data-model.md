@@ -1,13 +1,13 @@
 ---
 product: campaign
 title: Kom igång med datamodellen Campaign Classic
-description: Lär dig hur du utökar datamodellen för Campaign, redigerar scheman, använder API:er med mera
+description: Lär dig hur du utökar datamodellen i Campaign, redigerar scheman, använder API:er med mera
 feature: Data Model
 exl-id: 655b5928-b005-442f-b026-2f1b0c1abb99
 source-git-commit: 8fa50d17a9ff36ccc310860ac93771590cfd76fd
 workflow-type: tm+mt
 source-wordcount: '980'
-ht-degree: 4%
+ht-degree: 6%
 
 ---
 

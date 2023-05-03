@@ -1,13 +1,13 @@
 ---
 product: campaign
 title: Om Adobe Campaign rapporteringsverktyg
-description: Analysera framgångarna med era kampanjer i inbyggda eller anpassade rapporter.
+description: Analysera framgångarna med dina kampanjer i inbyggda eller anpassade rapporter.
 feature: Reporting
 exl-id: 1ef30004-e1b0-4dde-8104-0ee9e8aa9d8b
 source-git-commit: 1635366b9e1302acd3d8997312bf07d5c1a68982
 workflow-type: tm+mt
 source-wordcount: '334'
-ht-degree: 13%
+ht-degree: 16%
 
 ---
 
