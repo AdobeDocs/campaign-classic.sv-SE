@@ -2,11 +2,13 @@
 product: campaign
 title: Växla till Unicode
 description: Växla till Unicode
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+badge-on-prem: label="on-premise & hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=en" tooltip="Applies to on-premise and hybrid deployments only"
 audience: production
 content-type: reference
 topic-tags: updating-adobe-campaign
 exl-id: 4cfecf2f-cf98-42c1-b979-cdd26d5de48b
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 0429c3608fbcec98a397cc17fd45cd173cf64b6e
 workflow-type: tm+mt
 source-wordcount: '119'
 ht-degree: 7%
@@ -15,7 +17,7 @@ ht-degree: 7%
 
 # Växla till Unicode{#switching-to-unicode}
 
-![](../../assets/v7-only.svg)
+
 
 För en befintlig **prod** i Linux/PostgreSQL är stegen för att växla till unicode följande:
 

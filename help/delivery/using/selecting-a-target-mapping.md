@@ -2,9 +2,11 @@
 product: campaign
 title: Välj en målmappning
 description: Lär dig målinrikta mappning
+badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: Delivery Templates
 exl-id: b5514fa3-1e65-45dc-8e40-d1ba3b673e7a
-source-git-commit: 9839dbacda475c2a586811e3c4f686b1b1baab05
+source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
 source-wordcount: '180'
 ht-degree: 10%
@@ -13,7 +15,7 @@ ht-degree: 10%
 
 # Välj en målmappning{#selecting-a-target-mapping}
 
-![](../../assets/common.svg)
+
 
 Som standard är målet för leveransmallar **[!UICONTROL Recipients]**. Målmappningen använder därför fälten i **nms:mottagare** tabell. Adobe Campaign erbjuder andra målmappningar för leveranser som kan användas utifrån dina behov.
 

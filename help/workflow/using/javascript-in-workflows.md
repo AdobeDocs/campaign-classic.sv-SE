@@ -2,18 +2,19 @@
 product: campaign
 title: Exempel på JavaScript-kod i arbetsflöden
 description: De här exemplen visar hur du kan använda JavaScript-kod i ett arbetsflöde
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 feature: Workflows
 exl-id: 7213ea64-3dec-4b16-9d93-4ae941ddfaa7
-source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
-source-wordcount: '1768'
-ht-degree: 2%
+source-wordcount: '1764'
+ht-degree: 3%
 
 ---
 
 # Exempel på JavaScript-kod i arbetsflöden{#javascript-in-workflows}
 
-![](../../assets/v7-only.svg)
+
 
 I följande exempel visas hur du kan använda JavaScript-kod i ett arbetsflöde:
 
@@ -52,7 +53,7 @@ Om du vill skriva till databasen kan du använda den statiska `Write` på `xtk:s
    1. Ring `Write` på `xtk:session` schema.
 
       >[!IMPORTANT]
-      > Om du använder Adobe Campaign v8 rekommenderar vi att du använder mellanlagringsmekanismen med **Inmatning** och **Datauppdatering/borttagning** API:er för `Write` i en Snowflake-tabell. [Läs mer](https://experienceleague.adobe.com/docs/campaign/campaign-v8/architecture/api/new-apis.html){target=&quot;_blank&quot;}.
+      > Om du använder Adobe Campaign v8 rekommenderar vi att du använder mellanlagringsmekanismen med **Inmatning** och **Datauppdatering/borttagning** API:er för `Write` i en Snowflake-tabell. [Läs mer](https://experienceleague.adobe.com/docs/campaign/campaign-v8/architecture/api/new-apis.html){target="_blank"}.
 
    1. Skicka XML-koden som ett argument för skrivbegäran.
 
@@ -562,7 +563,7 @@ Du kan infoga, uppdatera och ta bort poster. Du kan använda `Write` på alla sc
 * The `delete` operation
 
 >[!IMPORTANT]
-> Om du använder Adobe Campaign v8 rekommenderar vi att du använder mellanlagringsmekanismen med **Inmatning** och **Datauppdatering/borttagning** API:er för `Write` i en Snowflake-tabell. [Läs mer](https://experienceleague.adobe.com/docs/campaign/campaign-v8/architecture/api/new-apis.html){target=&quot;_blank&quot;}.
+> Om du använder Adobe Campaign v8 rekommenderar vi att du använder mellanlagringsmekanismen med **Inmatning** och **Datauppdatering/borttagning** API:er för `Write` i en Snowflake-tabell. [Läs mer](https://experienceleague.adobe.com/docs/campaign/campaign-v8/architecture/api/new-apis.html){target="_blank"}.
 
 #### Exempel 1: infoga eller uppdatera en post
 

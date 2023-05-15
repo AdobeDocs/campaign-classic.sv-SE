@@ -1,10 +1,11 @@
 ---
 product: campaign
 title: Kvartalsvis listuppdatering med en inkrementell fråga
-description: I det här fallet används en stegvis fråga för att automatiskt uppdatera en mottagarlista.
+description: I det här fallet används en stegvis fråga för att automatiskt uppdatera en mottagarlista
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 feature: Workflows
 exl-id: 0d3e7046-313a-42a6-9155-3365e8d60bac
-source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '274'
 ht-degree: 5%
@@ -13,7 +14,7 @@ ht-degree: 5%
 
 # Kvartalsvis listuppdatering med en inkrementell fråga {#quarterly-list-update}
 
-![](../../assets/v7-only.svg)
+
 
 I följande exempel har [inkrementell fråga](incremental-query.md) används för att automatiskt uppdatera en mottagarlista. Dessa mottagare ingår i säsongskampanjer.
 

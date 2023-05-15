@@ -2,9 +2,11 @@
 product: campaign
 title: Protokoll och inställningar för SMS-koppling
 description: Läs mer om SMS-anslutningen och hur du konfigurerar den
+badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: SMS
 exl-id: fded088a-11a2-4b87-a368-7b197334aca4
-source-git-commit: 2c145829517a6961d502cc3e7b904547f8c71602
+source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
 source-wordcount: '8460'
 ht-degree: 0%
@@ -13,7 +15,7 @@ ht-degree: 0%
 
 # Protokoll och inställningar för SMS-koppling {#sms-connector-protocol}
 
-![](../../assets/common.svg)
+
 
 >[!NOTE]
 >

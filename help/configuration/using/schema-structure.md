@@ -2,20 +2,19 @@
 product: campaign
 title: Schemastruktur
 description: Schemastruktur
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 audience: configuration
 content-type: reference
 topic-tags: schema-reference
 exl-id: 3405efb8-a37c-4622-a271-63d7a4148751
-source-git-commit: 26ae7ff1f0837a9a50057d97b00422a288b9dc7a
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '1520'
+ht-degree: 1%
 
 ---
 
 # Schemastruktur{#schema-structure}
-
-![](../../assets/v7-only.svg)
 
 Grundstrukturen för en `<srcschema>` är som följer:
 

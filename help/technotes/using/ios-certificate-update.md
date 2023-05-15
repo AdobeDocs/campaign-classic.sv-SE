@@ -2,8 +2,9 @@
 product: campaign
 title: Technote - Apple Push Notification service server certificate update
 description: Uppdatering av servercertifikat för tjänsten Apple Push Notification
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 exl-id: 263fb4b5-ca62-4b92-a82d-8820ee998296
-source-git-commit: 0c97efef21bfd3b8671847c3e1c27bb76cf167e4
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '149'
 ht-degree: 0%
@@ -12,7 +13,7 @@ ht-degree: 0%
 
 # Uppdatering av servercertifikat för tjänsten Apple Push Notification {#apns-certificate-update}
 
-![](../../assets/v7-only.svg)
+
 
 Den 29 mars 2021 påverkade en infrastrukturuppdatering för Apple Push Notification service (APNs) Adobe Campaign Classic iOS-kanal. En ändring av operativsystemets konfiguration är **obligatoriskt** för att undvika avbrott i iOS-kanaler.
 

@@ -1,12 +1,13 @@
 ---
 product: campaign
 title: Ansluta via LDAP
-description: 'Lär dig hur du använder LDAP för att logga in på Campaign '
+description: Lär dig hur du använder LDAP för att logga in på Campaign
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 audience: installation
 content-type: reference
 topic-tags: additional-configurations
 exl-id: 0533cd50-3aa4-4160-9152-e916e149e77f
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '1008'
 ht-degree: 1%
@@ -15,7 +16,7 @@ ht-degree: 1%
 
 # Ansluta via LDAP{#connecting-through-ldap}
 
-![](../../assets/v7-only.svg)
+
 
 ## Konfigurera kampanj och LDAP {#configuring-campaign-and-ldap}
 
@@ -189,4 +190,4 @@ I det här avsnittet finns några enkla användningsexempel som hjälper dig att
 
    Grupper skapas aldrig i farten, vare sig av Adobe Campaign eller LDAP. De måste skapas individuellt, både i Adobe Campaign och i LDAP-katalogen.
 
-   Namnen på grupperna i LDAP-katalogen måste sammanfalla med namnen på Adobe Campaign-grupperna. Deras associationsmask definieras i det sista konfigurationssteget i distributionsguiden: Adobe Campaign_(.*), till exempel.
+   Namnen på grupperna i LDAP-katalogen måste sammanfalla med namnen på Adobe Campaign-grupperna. Deras associationsmask definieras i det sista konfigurationssteget i distributionsguiden: Adobe Campaign_(.&#42;), till exempel.

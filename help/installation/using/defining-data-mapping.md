@@ -2,8 +2,9 @@
 product: campaign
 title: Definiera extern datamappning
 description: Lär dig mappa data i en extern databas
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 exl-id: a7253ca7-47e5-4def-849d-3ce1c9b948fb
-source-git-commit: 3af4f259b80b3e03c81ee278b470ef6ffe3fe4d0
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '194'
 ht-degree: 3%
@@ -12,7 +13,7 @@ ht-degree: 3%
 
 # Definiera extern datamappning {#defining-data-mapping}
 
-![](../../assets/v7-only.svg)
+
 
 Med Adobe Campaign kan du definiera mappning av data i en extern tabell.
 

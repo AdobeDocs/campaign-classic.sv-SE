@@ -1,10 +1,12 @@
 ---
 product: campaign
 title: Om Adobe Campaign rapporteringsverktyg
-description: Analysera framgångarna med dina kampanjer i inbyggda eller anpassade rapporter.
+description: Analysera framgångarna med dina kampanjer i inbyggda eller anpassade rapporter
+badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: Reporting
 exl-id: 1ef30004-e1b0-4dde-8104-0ee9e8aa9d8b
-source-git-commit: 1635366b9e1302acd3d8997312bf07d5c1a68982
+source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
 source-wordcount: '334'
 ht-degree: 16%
@@ -13,7 +15,7 @@ ht-degree: 16%
 
 # Kom igång med rapportering {#about-adobe-campaign-reporting-tools}
 
-![](../../assets/common.svg)
+
 
 Förutom [inbyggda rapporter](../../reporting/using/about-campaign-built-in-reports.md)Med Adobe Campaign kan du generera rapporter i olika sammanhang och för att uppfylla olika behov. Principer för användning och implementeringslägen beskrivs i detta dokument.
 

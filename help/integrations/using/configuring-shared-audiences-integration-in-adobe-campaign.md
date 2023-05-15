@@ -2,11 +2,13 @@
 product: campaign
 title: Konfigurera integrering av delade målgrupper i Adobe Campaign
 description: Lär dig konfigurera integrering av delade målgrupper
+badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 audience: integrations
 content-type: reference
 topic-tags: audience-sharing
 exl-id: a3e26cff-9609-4d91-8976-9213a30c3fd2
-source-git-commit: 830c4146d72cd5a744d026a499cfe8613a255da7
+source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
 source-wordcount: '484'
 ht-degree: 3%
@@ -15,7 +17,7 @@ ht-degree: 3%
 
 # Konfigurera integrering av delade målgrupper i Adobe Campaign{#configuring-shared-audiences-integration-in-adobe-campaign}
 
-![](../../assets/common.svg)
+
 
 När du har skickat in den här begäran fortsätter Adobe till att tillhandahålla integreringen åt dig och kontaktar dig för att ange information och information som du måste slutföra konfigurationen:
 

@@ -2,9 +2,10 @@
 product: campaign
 title: Interaktion och erbjudandehantering
 description: Lär dig hur du skickar de bästa erbjudandena till dina kontakter baserat på regler för behörighet
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 feature: Interaction, Offers
 exl-id: 62b8fdcd-8423-496c-8407-ab89a3a70721
-source-git-commit: f05eefc9945c4ead89eb448b6e28c3523559e055
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '289'
 ht-degree: 6%
@@ -13,7 +14,7 @@ ht-degree: 6%
 
 # Interaktion och erbjudandehantering{#interaction-and-offer-management}
 
-![](../../assets/v7-only.svg)
+
 
 Med interaktion kan du svara i realtid under en interaktion med en viss kontakt (en kund eller ett visst mål) genom att göra dem till ett eller flera anpassade erbjudanden. Det kan till exempel vara enkla kommunikationsmeddelanden, specialerbjudanden för en eller flera produkter eller en tjänst.
 

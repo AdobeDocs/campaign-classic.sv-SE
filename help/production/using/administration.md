@@ -2,11 +2,13 @@
 product: campaign
 title: Administration
 description: Administration
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+badge-on-prem: label="on-premise & hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=en" tooltip="Applies to on-premise and hybrid deployments only"
 audience: production
 content-type: reference
 topic-tags: production-procedures
 exl-id: 12a255fe-66f9-40ce-b19e-c24322c2e009
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 0429c3608fbcec98a397cc17fd45cd173cf64b6e
 workflow-type: tm+mt
 source-wordcount: '411'
 ht-degree: 1%
@@ -15,7 +17,7 @@ ht-degree: 1%
 
 # Administration{#administration}
 
-![](../../assets/v7-only.svg)
+
 
 Automatisk start av Adobe Campaign-modulerna (**webb**, **mta**, **wfserver**, osv.) tillhandahålls av **nlserver** server.
 
@@ -80,14 +82,15 @@ Här är en lista med vanliga administrationskommandon som är tillgängliga i L
    >* I händelse av en kris ska du använda **-omedelbar** möjlighet att framtvinga ett omedelbart stopp av processen (motsvarande Unix-kommandot) **döda -9**).
    >* Använd **-noconsole** för att se till att den modul som startas inte visar något på konsolen. Loggarna skrivs till disken via **syslogd** -modul.
    >* Använd **-verbose** om du vill visa ytterligare information om processåtgärder.
-   >
-   >   Exempel:
-   >
-   >   **webbverbose för omstart av nlserver**
-   >
-   >   **nlserver start mta@myinstance -verbose**
-   >
-   >   Med det här alternativet läggs ytterligare loggar till. Vi rekommenderar att du startar processerna igen utan **-verbose** för att undvika överlagring av loggar när du har hittat den önskade informationen.
+
+      >
+      >   Exempel:
+      >
+      >   **webbverbose för omstart av nlserver**
+      >
+      >   **nlserver start mta@myinstance -verbose**
+      >
+      >   Med det här alternativet läggs ytterligare loggar till. Vi rekommenderar att du startar processerna igen utan **-verbose** för att undvika överlagring av loggar när du har hittat den önskade informationen.
 
 
 * Starta alla Adobe Campaign-processer (motsvarar att starta **nlserver6** service):

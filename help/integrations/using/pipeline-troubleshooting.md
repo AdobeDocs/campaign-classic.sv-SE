@@ -2,10 +2,12 @@
 product: campaign
 title: Felsöka pipelines
 description: Felsöka pipelines
+badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 audience: integrations
 content-type: reference
 exl-id: 76645a6f-9536-49d6-b12a-fdd6113d31fa
-source-git-commit: 02eebe83de49ee97e573b0c47ca1fddb2195b991
+source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
 source-wordcount: '705'
 ht-degree: 1%
@@ -14,7 +16,7 @@ ht-degree: 1%
 
 # Felsöka pipelines {#pipeline-troubleshooting}
 
-![](../../assets/common.svg)
+
 
 **Pipelined misslyckas med felet&quot;Ingen aktivitet motsvarar maskens pipelinade@&lt; instans >&quot;**
 

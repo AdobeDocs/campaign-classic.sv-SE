@@ -2,9 +2,10 @@
 product: campaign
 title: Avancerade parametrar
 description: Avancerade parametrar
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 feature: Workflows, Data Management
 exl-id: 6c90ac2f-0d2b-48b0-9245-3e5e3a3d027c
-source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '501'
 ht-degree: 1%
@@ -13,7 +14,7 @@ ht-degree: 1%
 
 # Avancerade parametrar{#advanced-parameters}
 
-![](../../assets/v7-only.svg)
+
 
 Egenskapsskärmen för en aktivitet har en **[!UICONTROL Advanced]** -flik som gör att du kan definiera ett beteende i händelse av fel, körningsperioden för aktiviteten; och gör att du kan ange ett initieringsskript. Det finns två versioner av den här fliken:
 

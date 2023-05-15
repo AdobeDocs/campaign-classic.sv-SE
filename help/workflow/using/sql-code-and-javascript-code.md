@@ -2,9 +2,10 @@
 product: campaign
 title: SQL-kod och JavaScript-kod
 description: Läs mer om arbetsflödesaktiviteter för SQL- och JavaScript-koder
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 feature: Workflows
 exl-id: 729a2010-c2d8-481b-8c9e-780b9e5f97ef
-source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '267'
 ht-degree: 7%
@@ -13,7 +14,7 @@ ht-degree: 7%
 
 # SQL-kod och JavaScript-kod{#sql-code-and-javascript-code}
 
-![](../../assets/v7-only.svg)
+
 
 ## SQL-kod {#sql-code}
 

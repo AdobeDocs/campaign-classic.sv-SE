@@ -1,12 +1,14 @@
 ---
 product: campaign
 title: Generiska importexempel
-description: Läs mer om generiska importer som du kan utföra med importjobb.
+description: Läs mer om generiska importer som du kan utföra med importjobb
+badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 audience: platform
 content-type: reference
 topic-tags: importing-and-exporting-data
 exl-id: 4582b524-2b6d-484c-bace-29d2e69f60e9
-source-git-commit: f000cb8bae164c22d1ede15db4e763cf50530674
+source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
 source-wordcount: '995'
 ht-degree: 1%
@@ -15,7 +17,7 @@ ht-degree: 1%
 
 # Generiska importexempel {#import-operations-samples}
 
-![](../../assets/common.svg)
+
 
 ## Importera från en lista med mottagare {#example--import-from-a-list-of-recipients}
 

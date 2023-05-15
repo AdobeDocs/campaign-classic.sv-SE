@@ -1,20 +1,22 @@
 ---
 product: campaign
-title: Stöd för TLS 1.0 och 1.1 upphör
-description: Stöd för TLS 1.0 och 1.1 upphör
+title: Support för TLS 1.0 och 1.1 upphör
+description: Support för TLS 1.0 och 1.1 upphör
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 audience: delivery
 content-type: reference
 topic-tags: tracking-messages
-source-git-commit: 70240d5f62fd3d7b755389b5ad8c4b499c94657d
+exl-id: e18d43b6-2a77-4881-85e7-ca36248d4634
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '842'
-ht-degree: 1%
+ht-degree: 3%
 
 ---
 
-# Stöd för TLS 1.0 och 1.1 upphör{#eol-tls-support}
+# Support för TLS 1.0 och 1.1 upphör{#eol-tls-support}
 
-![](../../assets/v7-only.svg)
+
 
 Adobe stöder inte längre användarsystem och klientsystem som inte är kompatibla med TLS 1.2-protokollet (Transport Layer Security). Om du fortsätter att använda äldre versioner av TLS kan du förlora åtkomsten till alla produkter och tjänster från Adobe.
 

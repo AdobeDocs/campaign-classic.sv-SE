@@ -2,8 +2,10 @@
 product: campaign
 title: Infoga en streckkod i ett e-postmeddelande
 description: Infoga en streckkod i ett e-postmeddelande
+badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: Email Design
-source-git-commit: 9839dbacda475c2a586811e3c4f686b1b1baab05
+source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
 source-wordcount: '513'
 ht-degree: 0%
@@ -13,7 +15,7 @@ ht-degree: 0%
 
 # Infoga en streckkod i ett e-postmeddelande{#insert-a-barcode-in-an-email}
 
-![](../../assets/common.svg)
+
 
 Med modulen för streckkodsgenerering kan du skapa flera typer av streckkoder som följer många vanliga standarder, inklusive 2D-streckkoder.
 

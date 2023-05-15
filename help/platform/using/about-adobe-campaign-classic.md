@@ -1,12 +1,13 @@
 ---
 product: campaign
 title: Om Adobe Campaign Classic
-description: Upptäck nyckelfunktioner, användargränssnitt och globala riktlinjer.
+description: Upptäck nyckelfunktioner, användargränssnitt och globala riktlinjer
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 feature: Overview
 role: User
 level: Beginner
 exl-id: 8febceb0-9694-4045-a630-a7ff2fd18943
-source-git-commit: 91dec9adb177aedc4a82879011371b54886166be
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '923'
 ht-degree: 92%
@@ -15,7 +16,7 @@ ht-degree: 92%
 
 # Kom igång med Campaign Classic{#about-adobe-campaign-classic}
 
-![](../../assets/v7-only.svg)
+
 
 För att kunna leverera en hög grad av kundengagemang och fantastiska upplevelser måste varumärken skapa enhetliga kundupplevelser på alla kontaktytor. De som marknadsför kan nu effektivt utforma, planera, genomföra, hantera och optimera marknadsföringskampanjer över flera kanaler som ger hög avkastning på marknadsföringsinvesteringar och ökar lojaliteten.
 

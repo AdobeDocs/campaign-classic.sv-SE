@@ -2,9 +2,11 @@
 product: campaign
 title: Så här konfigurerar du spårade länkar
 description: Så här konfigurerar du spårade länkar
+badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: Monitoring
 exl-id: ed88e1d6-c0d5-4a85-9f3e-be670f4bcc10
-source-git-commit: 9839dbacda475c2a586811e3c4f686b1b1baab05
+source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
 source-wordcount: '582'
 ht-degree: 10%
@@ -13,7 +15,7 @@ ht-degree: 10%
 
 # Så här konfigurerar du spårade länkar{#how-to-configure-tracked-links}
 
-![](../../assets/common.svg)
+
 
 För varje leverans kan du spåra mottagningen av meddelanden och aktiveringen av länkarna som har infogats i meddelandets innehåll. På så sätt kan du spåra mottagarnas beteende beroende på de leveransåtgärder de har fått som mål.
 

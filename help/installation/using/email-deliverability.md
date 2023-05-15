@@ -1,12 +1,14 @@
 ---
 product: campaign
 title: Konfiguration av teknisk e-post
-description: Lär dig hur du konfigurerar Campaign för att styra utdata för dina instanser när du levererar e-postmeddelanden.
+description: Lär dig hur du konfigurerar Campaign för att styra utdata för dina instanser när du levererar e-postmeddelanden
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+badge-on-prem: label="on-premise & hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=en" tooltip="Applies to on-premise and hybrid deployments only"
 audience: installation
 content-type: reference
 topic-tags: additional-configurations
 exl-id: 515adad2-6129-450a-bb9e-fc80127835af
-source-git-commit: 98380c18b915cfebc980e68f9840f9d8919eaca4
+source-git-commit: 0429c3608fbcec98a397cc17fd45cd173cf64b6e
 workflow-type: tm+mt
 source-wordcount: '3023'
 ht-degree: 0%
@@ -15,7 +17,7 @@ ht-degree: 0%
 
 # Tekniska e-postkonfigurationer{#email-deliverability}
 
-![](../../assets/v7-only.svg)
+
 
 ## Översikt {#overview}
 
@@ -239,7 +241,7 @@ Dessa regler tillämpas i sekvens: den första regeln vars MX-mask är kompatibe
 
 Följande parametrar är tillgängliga för varje regel:
 
-* **[!UICONTROL MX mask]**: den domän som regeln tillämpas på. Varje regel definierar en adressmask för MX. Alla MX vars namn matchar masken är därför giltiga. Masken kan innehålla &quot;*&quot; och &quot;?&quot; generiska tecken.
+* **[!UICONTROL MX mask]**: den domän som regeln tillämpas på. Varje regel definierar en adressmask för MX. Alla MX vars namn matchar masken är därför giltiga. Masken kan innehålla &quot;&#42;&quot; och &quot;?&quot; generiska tecken.
 
    Följande adresser:
 
@@ -249,7 +251,7 @@ Följande parametrar är tillgängliga för varje regel:
 
    är kompatibla med följande masker:
 
-   * *.yahoo.com
+   * &#42;.yahoo.com
    * ?.mx.yahoo.com
 
    För e-postadressen foobar@gmail.com är domänen gmail.com och MX-posten är:
@@ -393,18 +395,18 @@ Parametrarna är följande:
 
 I det föregående exemplet, med normala villkor, distribueras adresserna enligt följande:
 
-    * &quot;1&quot;: 5 / (5+5+1) = 45 %
-    * &quot;2&quot;: 5 / (5+5+1) = 45 %
-    * &quot;3&quot;: 1 / (5+5+1) = 10 %
+    * &quot;1&quot;: 5 / (5+5+1) = 45%
+    * &quot;2&quot;: 5 / (5+5+1) = 45%
+    * &quot;3&quot;: 1 / (5+5+1) = 10%
 
 Om till exempel den första adressen inte kan användas för ett givet MX, skickas meddelanden enligt följande:
 
-    * &quot;2&quot;: 5 / (5+1) = 83 %
-    * &quot;3&quot;: 1 / (5+1) = 17 %
+    * &quot;2&quot;: 5 / (5+1) = 83%
+    * &quot;3&quot;: 1 / (5+1) = 17%
 
-* **includeDomains**: Med kan du reservera den här IP-adressen för e-post som tillhör en viss domän. Det här är en lista med masker som kan innehålla ett eller flera jokertecken (&#39;*&#39;). Om attributet inte anges kan alla domäner använda den här IP-adressen.
+* **includeDomains**: Med kan du reservera den här IP-adressen för e-post som tillhör en viss domän. Det här är en lista med masker som kan innehålla ett eller flera jokertecken (&#39;&#42;&#39;). Om attributet inte anges kan alla domäner använda den här IP-adressen.
 
-   Exempel: **includeDomains=&quot;wanadoo.com,orange.com,yahoo.*&quot;**
+   Exempel: **includeDomains=&quot;wanadoo.com,orange.com,yahoo.&#42;&quot;**
 
 * **excludeDomains**: utelämnar en lista över domäner för den här IP-adressen. Det här filtret används efter **includeDomains** filter.
 

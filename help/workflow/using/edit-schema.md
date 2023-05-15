@@ -2,9 +2,10 @@
 product: campaign
 title: Redigera schema
 description: Läs mer om arbetsflödesaktiviteten Redigera schema
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 feature: Workflows, Targeting Activity
 exl-id: d26966a8-b5db-4fa4-85ec-7ebd770c4ef3
-source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '115'
 ht-degree: 3%
@@ -13,7 +14,7 @@ ht-degree: 3%
 
 # Redigera schema{#edit-schema}
 
-![](../../assets/v7-only.svg)
+
 
 Data kan omformas, normaliseras och vid behov berikas i arbetsflödet med **[!UICONTROL Edit schema]** aktivitet. Det används vanligtvis för att normalisera datastrukturen: Du kan byta namn på utdatakolumnerna eller ändra deras innehåll genom att till exempel beräkna medelvärdena för ett fält eller en mängd.
 

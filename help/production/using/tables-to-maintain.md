@@ -2,11 +2,13 @@
 product: campaign
 title: Tabeller att underhålla
 description: Tabeller att underhålla
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+badge-on-prem: label="on-premise & hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=en" tooltip="Applies to on-premise and hybrid deployments only"
 audience: production
 content-type: reference
 topic-tags: database-maintenance
 exl-id: 194f12de-4671-4a56-8cdc-cd5e3dac147b
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 0429c3608fbcec98a397cc17fd45cd173cf64b6e
 workflow-type: tm+mt
 source-wordcount: '1123'
 ht-degree: 0%
@@ -15,7 +17,7 @@ ht-degree: 0%
 
 # Tabeller att underhålla{#tables-to-maintain}
 
-![](../../assets/v7-only.svg)
+
 
 Listan med tabeller som ska behållas beror på vilken version av Adobe Campaign du har, hur du använder den och på datamodellkonfigurationen.
 

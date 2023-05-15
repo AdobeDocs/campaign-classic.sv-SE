@@ -2,12 +2,13 @@
 product: campaign
 title: Skapa förfrågningar om användarens information
 description: Läs om hur du skapar och hanterar förfrågningar om användarens information
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: 73b90d79-88b6-4aaf-8103-4564de5e06be
-source-git-commit: 42b420d7dae7d38e9f4df442146d3b484c25e831
-workflow-type: ht
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+workflow-type: tm+mt
 source-wordcount: '771'
 ht-degree: 100%
 
@@ -15,7 +16,7 @@ ht-degree: 100%
 
 # Skapa och hantera förfrågningar om användarens information {#privacy-request-ui}
 
-![](../../assets/v7-only.svg)
+
 
 I det här avsnittet beskrivs hur du kan skapa förfrågningar om åtkomst och radering, samt hur de bearbetas av Adobe Campaign.
 

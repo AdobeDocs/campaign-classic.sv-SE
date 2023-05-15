@@ -2,16 +2,18 @@
 product: campaign
 title: Konfigurera åtkomst till PostgreSQL
 description: Lär dig konfigurera åtkomst till PostgreSQL
-source-git-commit: 26ae7ff1f0837a9a50057d97b00422a288b9dc7a
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+exl-id: 2c678f45-2555-4647-9885-bd002db7df37
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '365'
+ht-degree: 1%
 
 ---
 
 # Konfigurera åtkomst till PostgreSQL {#configure-fda-postgresql}
 
-![](../../assets/v7-only.svg)
+
 
 Använd kampanj **Åtkomst till federerade data** (FDA) om du vill bearbeta information som lagras i en extern PostgreSQL-databas.
 

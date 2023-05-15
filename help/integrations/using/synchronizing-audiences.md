@@ -2,11 +2,12 @@
 product: campaign
 title: Synkronisera målgrupper
 description: Lär dig synkronisera målgrupper med ACS Connector
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 feature: ACS Connector
 hide: true
 hidefromtoc: true
 exl-id: 88e581cf-43cd-4c43-9347-d016c62fdf42
-source-git-commit: 978da934b483a54509ad806f375d9b2bb0577dac
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '1135'
 ht-degree: 1%
@@ -15,7 +16,7 @@ ht-degree: 1%
 
 # Synkronisera målgrupper{#synchronizing-audiences}
 
-![](../../assets/v7-only.svg)
+
 
 Ni kan skapa en avancerad lista med de avancerade funktionerna i Campaign v7 och dela den som en målgrupp direkt och i realtid med Campaign Standard (inklusive ytterligare data) på ett smidigt sätt. Din Campaign Standard kan sedan konsumera publiken i Adobe Campaign Standard.
 

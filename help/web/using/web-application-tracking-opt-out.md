@@ -2,9 +2,11 @@
 product: campaign
 title: Välj att inte delta i spårning i webbapplikation
 description: Välj att inte delta i spårning i webbapplikation
+badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: Web Apps
 exl-id: 4bff6b55-3335-433e-a2ff-5d8c83e8f0d3
-source-git-commit: b6f1556cf49492cefaf61c29a058584b0ccee16a
+source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
 source-wordcount: '670'
 ht-degree: 2%
@@ -13,7 +15,7 @@ ht-degree: 2%
 
 # Välj att inte delta i spårning i webbapplikation{#web-application-tracking-opt-out}
 
-![](../../assets/common.svg)
+
 
 Med Adobe Campaign kan du sluta spåra webbbeteenden för slutanvändare som avanmäler sig från beteendespårning via cookies eller webbfyrar. Funktionen innefattar möjligheten att visa en banderoll för att ge slutanvändaren det alternativet. kan du lägga till dessa banners i webbapplikationer eller landningssidor.
 

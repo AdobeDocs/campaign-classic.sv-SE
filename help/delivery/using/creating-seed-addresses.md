@@ -2,9 +2,11 @@
 product: campaign
 title: Skapa dirigerade adresser
 description: Lär dig hur du skapar och använder dirigerade adresser
+badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: Seed Address
 exl-id: f7dc97f0-3423-4b6f-88e2-08180f9adf8a
-source-git-commit: 0065a25250d73c71e7569768a38b5836cccab992
+source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
 source-wordcount: '413'
 ht-degree: 1%
@@ -13,7 +15,7 @@ ht-degree: 1%
 
 # Skapa dirigerade adresser{#creating-seed-addresses}
 
-![](../../assets/common.svg)
+
 
 Seed-adresser hanteras inte via standardprofiler och -mål, utan i en dedikerad nod i Adobe Campaign-hierarkin **[!UICONTROL Resources > Campaign management > Seed addresses]**.
 

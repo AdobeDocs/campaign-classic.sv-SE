@@ -2,9 +2,11 @@
 product: campaign
 title: Kom igång med SMS-kanal
 description: Kom igång med SMS-kanal
+badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: SMS
 exl-id: 6fc2ab09-8ea7-4865-88ad-bd45eee68958
-source-git-commit: 1e11b7419388698f5de366cbeddf2be88ef12873
+source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
 source-wordcount: '154'
 ht-degree: 7%
@@ -13,7 +15,7 @@ ht-degree: 7%
 
 # Kom igång med SMS-kanal{#sms-channel}
 
-![](../../assets/common.svg)
+
 
 
 Använd Adobe Campaign för att skicka personaliserade SMS-meddelanden.

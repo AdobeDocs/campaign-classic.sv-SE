@@ -2,18 +2,19 @@
 product: campaign
 title: Indikatorberäkning
 description: Indikatorberäkning
+badge: label="v7" type="Informative" tooltip="Gäller endast Campaign Classic v7"
 feature: Reporting
 exl-id: 52ca1595-16b3-4323-9122-d1ac13c08147
-source-git-commit: 36e546a34d8c2345fefed5d459095a76c6224a38
+source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
-source-wordcount: '2972'
+source-wordcount: '2983'
 ht-degree: 2%
 
 ---
 
 # Indikatorberäkning {#indicator-calculation}
 
-![](../../assets/common.svg)
+
 
 ## Användaraktiviteter {#user-activities-1}
 
@@ -592,7 +593,7 @@ Den här rapporten baseras på **[!UICONTROL Delivery and tracking statistics]**
   </tr> 
   <tr> 
    <td> Mottagarklickningar<br /> </td> 
-   <td> @receiveClick<br /> </td> 
+   <td> @recipientClick<br /> </td> 
    <td> Distinkt antal av @broadLog-ids med en URL-typ som är lika med"Email click".<br /> </td> 
    <td> Countdistans(Iif([url/@type]=1, @broadLog-id, 0))<br /> </td> 
   </tr> 
@@ -870,13 +871,13 @@ Den här rapporten baseras på **[!UICONTROL Delivery and tracking statistics]**
   </tr> 
   <tr> 
    <td> Öppnar<br /> </td> 
-   <td> @receiveOpen<br /> </td> 
+   <td> @recipientOpen<br /> </td> 
    <td> Totalt antal @broadLog-id i spårningsloggarna.<br /> </td> 
    <td> Motskild ([@broadLog-id])<br /> </td> 
   </tr> 
   <tr> 
    <td> Klickningar<br /> </td> 
-   <td> @personKlicka<br /> </td> 
+   <td> @personClick<br /> </td> 
    <td> Totalt antal @source-ids som URL-kategorin är lika med"Email click". <br /> </td> 
    <td> Countdistans(Iif([url/@type]=1, @source-id, 0)) <br /> </td> 
   </tr> 

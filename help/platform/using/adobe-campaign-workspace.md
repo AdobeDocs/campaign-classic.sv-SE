@@ -2,11 +2,12 @@
 product: campaign
 title: Arbetsyta i Adobe Campaign
 description: Lär dig hur du använder och anpassar arbetsytan i Campaign
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 feature: Overview
 role: Data Engineer
 level: Beginner
 exl-id: 5f689679-7148-4abd-a9bf-185854c64b13
-source-git-commit: fdb840a9e6349f074378899e07f794b62fb5b054
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '909'
 ht-degree: 3%
@@ -15,7 +16,7 @@ ht-degree: 3%
 
 # Arbetsyta i Adobe Campaign{#adobe-campaign-workspace}
 
-![](../../assets/v7-only.svg)
+
 
 ## Utforska Adobe Campaign gränssnitt {#about-adobe-campaign-interface}
 

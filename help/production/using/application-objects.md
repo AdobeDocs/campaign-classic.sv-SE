@@ -2,11 +2,12 @@
 product: campaign
 title: Programobjekt
 description: Programobjekt
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 audience: production
 content-type: reference
 topic-tags: database-maintenance
 exl-id: fb4798d7-0a2c-455b-86b6-3dcb5fd25c82
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '459'
 ht-degree: 4%
@@ -15,11 +16,11 @@ ht-degree: 4%
 
 # Programobjekt{#application-objects}
 
-![](../../assets/v7-only.svg)
 
-Built-in objects should be monitored and preventing them from growing too much is important.
 
-## Sequence of IDs {#sequence-of-ids}
+Inbyggda objekt bör övervakas och det är viktigt att förhindra att de växer för mycket.
+
+## Sekvens med ID:n {#sequence-of-ids}
 
 Adobe Campaign använder en ID-sekvens som måste användas i enlighet med detta: **xtkNewId**. Om sekvensen konsumeras mycket snabbt (t.ex. från 100 000 per dag) måste du kontrollera att den överensstämmer med dina affärskrav, t.ex. skicka miljontals e-postmeddelanden per dag. Det går att definiera en dedikerad sekvens för särskilda tabeller. Du kan konfigurera ett arbetsflöde för att övervaka ID-användningen.
 
@@ -49,7 +50,7 @@ Antalet filer på programserverdisken bör inte öka i oändlighet.
 
 Importera arbetsflöden skapar filer och orsakar därför diskexpansion. Detta kan förhindras genom att använda standarden [Filinsamlare](../../workflow/using/file-collector.md) aktivitet. Filinsamlaren flyttar filer till en tillfällig mapp och tömmer dem automatiskt.
 
-If a workflow imports files and doesn&#39;t make use of the standard features, it needs to be purged in order to keep disk space to a minimum.
+Om ett arbetsflöde importerar filer och inte använder standardfunktionerna måste det rensas för att diskutrymmet ska bli så litet som möjligt.
 
 ## Transaktionsdata och transaktionsloggar {#transactional-data-and-logs}
 

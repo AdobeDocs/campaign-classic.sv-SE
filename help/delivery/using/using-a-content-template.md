@@ -2,9 +2,11 @@
 product: campaign
 title: Använd en innehållsmall
 description: Använd en innehållsmall
+badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: Templates
 exl-id: e43dd68e-2e95-4367-9029-4622fbcb1759
-source-git-commit: 9839dbacda475c2a586811e3c4f686b1b1baab05
+source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
 source-wordcount: '427'
 ht-degree: 2%
@@ -13,7 +15,7 @@ ht-degree: 2%
 
 # Använd en innehållsmall{#using-a-content-template}
 
-![](../../assets/common.svg)
+
 
 ## Om innehållsmallar {#about-content-templates}
 

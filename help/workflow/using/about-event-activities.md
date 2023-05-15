@@ -2,9 +2,10 @@
 product: campaign
 title: Om händelseaktiviteter
 description: Om händelseaktiviteter
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 feature: Workflows, Data Management
 exl-id: ed27159e-2fce-4b1c-92e8-581901b82f60
-source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '105'
 ht-degree: 5%
@@ -13,7 +14,7 @@ ht-degree: 5%
 
 # Händelseaktiviteter i arbetsflöden{#about-event-activities}
 
-![](../../assets/v7-only.svg)
+
 
 Huvuduppgiften med dessa aktiviteter är att vänta på en händelse. Det kan till exempel vara att ta emot en fil, ett e-postmeddelande eller en signal som skickas av programmet.
 

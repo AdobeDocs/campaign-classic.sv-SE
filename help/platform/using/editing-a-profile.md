@@ -2,11 +2,12 @@
 product: campaign
 title: Redigera en profil
 description: Redigera en profil
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 audience: platform
 content-type: reference
 topic-tags: profile-management
 exl-id: 0f3a5582-5c90-4393-bee8-d9e2f07e5982
-source-git-commit: fdb840a9e6349f074378899e07f794b62fb5b054
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '471'
 ht-degree: 5%
@@ -15,7 +16,7 @@ ht-degree: 5%
 
 # Redigera en profil{#editing-a-profile}
 
-![](../../assets/v7-only.svg)
+
 
 Om du vill visa information om en profil klickar du på profilens namn i profillistan.
 

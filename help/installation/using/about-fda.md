@@ -2,9 +2,10 @@
 product: campaign
 title: Kom igång med åtkomst till federerade data
 description: Lär dig hur du får åtkomst till och bearbetar data i en extern databas
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 feature: Federated Data Access
 exl-id: 9d8d1e9c-63e4-40c4-8338-b921d08ea405
-source-git-commit: 40da5774c8a6a228992c4aa400e2d9924215611e
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '163'
 ht-degree: 0%
@@ -13,7 +14,7 @@ ht-degree: 0%
 
 # Kom igång med åtkomst till federerade data {#about-federated-data-access}
 
-![](../../assets/v7-only.svg)
+
 
 Adobe Campaign tillhandahåller **Åtkomst till federerade data** (FDA) för att bearbeta information som lagras i en eller flera externa databaser: kan du få åtkomst till externa data utan att ändra datastrukturen i Adobe Campaign.
 

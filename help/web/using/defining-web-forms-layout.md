@@ -2,9 +2,11 @@
 product: campaign
 title: Definiera layout hos webbformulär
 description: Definiera layout hos webbformulär
+badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: Web Forms
 exl-id: 23ca17f8-de1a-4f9c-8357-3965dc3329b1
-source-git-commit: b6f1556cf49492cefaf61c29a058584b0ccee16a
+source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
 source-wordcount: '523'
 ht-degree: 2%
@@ -13,7 +15,7 @@ ht-degree: 2%
 
 # Definiera layout hos webbformulär{#defining-web-forms-layout}
 
-![](../../assets/common.svg)
+
 
 ## Skapar behållare {#creating-containers}
 

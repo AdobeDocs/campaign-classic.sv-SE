@@ -2,11 +2,13 @@
 product: campaign
 title: Installera paket med Linux
 description: Installera paket med Linux
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+badge-on-prem: label="on-premise & hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=en" tooltip="Applies to on-premise and hybrid deployments only"
 audience: installation
 content-type: reference
 topic-tags: installing-campaign-in-linux-
 exl-id: f41c7510-5ad7-44f3-9485-01f54994b6cb
-source-git-commit: fbab510788abe0fccbbd791233c906e7f9d8d703
+source-git-commit: 0429c3608fbcec98a397cc17fd45cd173cf64b6e
 workflow-type: tm+mt
 source-wordcount: '1198'
 ht-degree: 1%
@@ -15,7 +17,7 @@ ht-degree: 1%
 
 # Installera paket med Linux{#installing-packages-with-linux}
 
-![](../../assets/v7-only.svg)
+
 
 Installera 32-bitarsversionen av Adobe Campaign för en 32-bitarsplattform för Linux. Installera 64-bitarsversionen av Adobe Campaign för en 64-bitarsplattform för Linux.
 

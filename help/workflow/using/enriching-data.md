@@ -2,9 +2,10 @@
 product: campaign
 title: Berika data
 description: Läs mer om arbetsflödesaktiviteten för anrikning
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 feature: Workflows, Enrichment Activity
 exl-id: ab786cf1-74a4-4185-a63d-84e776a2f776
-source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '747'
 ht-degree: 1%
@@ -13,7 +14,7 @@ ht-degree: 1%
 
 # Berika data{#enriching-data}
 
-![](../../assets/v7-only.svg)
+
 
 ## Om att förbättra data {#about-enriching-data}
 

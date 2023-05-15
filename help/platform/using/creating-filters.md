@@ -2,11 +2,13 @@
 product: campaign
 title: Skapa filter
 description: Skapa filter
+badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 audience: platform
 content-type: reference
 topic-tags: filtering-data
 exl-id: 58e54f67-dc87-42f1-8426-6f801e8e4fb6
-source-git-commit: f000cb8bae164c22d1ede15db4e763cf50530674
+source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
 source-wordcount: '1963'
 ht-degree: 0%
@@ -15,7 +17,7 @@ ht-degree: 0%
 
 # Skapa filter{#creating-filters}
 
-![](../../assets/common.svg)
+
 
 När du navigerar i Adobe Campaign-trädet (från **[!UICONTROL Explorer]** på hemsidan) visas data i databasen i listor. Dessa listor kan konfigureras så att endast de data som krävs av operatorn visas. Åtgärder kan sedan startas på filtrerade data. Med filterkonfigurationen kan du välja data från en lista **[!UICONTROL dynamically]**. Om data ändras uppdateras de filtrerade data.
 
@@ -145,7 +147,7 @@ Skapa en **avancerat filter** använder du följande steg:
 
    ![](assets/s_user_filter_choose_field.png)
 
-1. I listan markerar du det fält där data ska filtreras. Klicka **[!UICONTROL Finish]** för att bekräfta.
+1. I listan markerar du det fält där data ska filtreras. Klicka på **[!UICONTROL Finish]** för att bekräfta.
 1. Klicka på **[!UICONTROL Operator]** och välj den operator som ska användas i listrutan.
 1. Välj ett förväntat värde från **[!UICONTROL Value]** kolumn. Du kan kombinera flera filter för att förfina frågan. Om du vill lägga till ett filtervillkor klickar du på **[!UICONTROL Add]**.
 

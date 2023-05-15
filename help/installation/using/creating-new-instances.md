@@ -2,11 +2,12 @@
 product: campaign
 title: Skapa nya instanser
 description: Skapa nya instanser
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 audience: installation
 content-type: reference
 topic-tags: appendices
 exl-id: 3b87eb3c-3b50-4ed4-80b1-4333261ffe0b
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '82'
 ht-degree: 10%
@@ -15,7 +16,7 @@ ht-degree: 10%
 
 # Skapa nya instanser{#creating-new-instances}
 
-![](../../assets/v7-only.svg)
+
 
 När Adobe Campaign är installerat och instansen har skapats kan du lägga till en ny instans från konsolen. I det här läget kan du skapa spårningsinstanser utan att komma åt konsolen.
 

@@ -2,13 +2,14 @@
 product: campaign
 title: Innan du startar migreringen
 description: Innan du startar migreringen
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 audience: migration
 content-type: reference
 topic-tags: migration-procedure
 hide: true
 hidefromtoc: true
 exl-id: d666bc0b-596a-4908-9364-7df5bb8d68d0
-source-git-commit: 80cf56e330731237d5e7b394381b737f30f8b350
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '322'
 ht-degree: 2%
@@ -17,7 +18,7 @@ ht-degree: 2%
 
 # Förhandskrav{#before-starting-migration}
 
-![](../../assets/v7-only.svg)
+
 
 På den här sidan visas specifika steg som ska utföras innan migreringsprocessen startas. Du måste även referera till [den här sidan](about-migration.md) för mer vägledning.
 

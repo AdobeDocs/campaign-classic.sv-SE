@@ -2,11 +2,12 @@
 product: campaign
 title: Konfigurera åtkomst till Hadoopet
 description: Lär dig hur du konfigurerar åtkomst till Hadoopet i FDA
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 audience: platform
 content-type: reference
 topic-tags: connectors
 exl-id: e3a97e55-dd8b-41e1-b48c-816d973f62a8
-source-git-commit: bd9f035db1cbad883e1f27fe901e34dfbc9c1229
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '602'
 ht-degree: 1%
@@ -15,7 +16,7 @@ ht-degree: 1%
 
 # Konfigurera åtkomst till Hadoopet {#configure-access-to-hadoop}
 
-![](../../assets/v7-only.svg)
+
 
 Använd kampanj **Åtkomst till federerade data** (FDA) om du vill bearbeta information som lagras i en extern databas. Följ stegen nedan för att konfigurera åtkomst till Hadoopet.
 

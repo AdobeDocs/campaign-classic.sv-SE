@@ -2,11 +2,12 @@
 product: campaign
 title: Konfigurera kampanjalternativ
 description: Lär dig hur du konfigurerar Campaign-alternativ
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 audience: installation
 content-type: reference
 topic-tags: appendices
 exl-id: a979cd99-afa7-4ce6-ba0f-9495089cba08
-source-git-commit: 8610d29a3df1080f1622a2cb3685c0961fb40092
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '3991'
 ht-degree: 1%
@@ -15,7 +16,7 @@ ht-degree: 1%
 
 # Lista över alternativ för Campaign Classic{#configuring-campaign-options}
 
-![](../../assets/v7-only.svg)
+
 
 The **[!UICONTROL Administration / Platform / Options]** Med -noden kan du konfigurera Adobe Campaign-alternativ. Vissa av dem är inbyggda när du installerar Campaign och andra kan läggas till manuellt vid behov. Vilka alternativ som är tillgängliga varierar beroende på vilka paket som installeras med instansen.
 

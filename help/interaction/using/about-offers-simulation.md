@@ -3,7 +3,7 @@ product: campaign
 title: Om att simulera erbjudanden
 description: Om att simulera erbjudanden
 exl-id: facaa88e-1fa2-4189-9d8f-348aaef3e235
-source-git-commit: f05eefc9945c4ead89eb448b6e28c3523559e055
+source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
 source-wordcount: '259'
 ht-degree: 5%
@@ -12,7 +12,7 @@ ht-degree: 5%
 
 # Om att simulera erbjudanden{#about-offers-simulation}
 
-![](../../assets/common.svg)
+
 
 The **Simulering** Med -modulen kan du testa fördelningen av erbjudanden som tillhör en kategori eller miljö innan du skickar ditt förslag till mottagarna.
 

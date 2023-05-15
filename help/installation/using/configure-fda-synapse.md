@@ -2,20 +2,21 @@
 product: campaign
 title: Konfigurera åtkomst till Synapse
 description: Lär dig hur du konfigurerar åtkomst till Synapse i FDA
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 audience: platform
 content-type: reference
 topic-tags: connectors
 exl-id: 59d0277a-7588-4504-94e3-50f87b60da8a
-source-git-commit: 26ae7ff1f0837a9a50057d97b00422a288b9dc7a
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '772'
+ht-degree: 1%
 
 ---
 
 # Konfigurera åtkomst till Azure synapse {#configure-access-to-azure-synapse}
 
-![](../../assets/v7-only.svg)
+
 
 Använd kampanj [Åtkomst till federerade data](../../installation/using/about-fda.md) (FDA) om du vill bearbeta information som lagras i en extern databas. Följ stegen nedan för att konfigurera åtkomst till **Microsoft Azure synapse Analytics**.
 

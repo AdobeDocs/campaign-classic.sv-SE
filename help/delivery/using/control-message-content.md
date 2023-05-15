@@ -2,9 +2,11 @@
 product: campaign
 title: Om leveransbarhet i Adobe Campaign Classic
 description: Läs mer om hantering av slutprodukter i Adobe Campaign
+badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: Deliverability
 exl-id: dcd3a9f9-5fe9-4c28-a4a5-5aed67b036ab
-source-git-commit: 56459b188ee966cdb578c415fcdfa485dcbed355
+source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
 source-wordcount: '760'
 ht-degree: 5%
@@ -13,7 +15,7 @@ ht-degree: 5%
 
 # Styr innehållet i dina meddelanden{#control-message-content}
 
-![](../../assets/common.svg)
+
 
 För att vara säker på att dina e-postmeddelanden når dina mottagare och förbättrar e-postleveransen måste de följa ett antal regler. Annars kan innehållet i vissa meddelanden identifieras som skräppost. Adobe Campaign tillhandahåller flera verktyg för att se till att ditt innehåll följer dessa regler.
 

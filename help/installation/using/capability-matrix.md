@@ -2,8 +2,9 @@
 product: campaign
 title: Funktionsmatris för Campaign On-lokalt, Hybrid och Hosted
 description: Lär dig de viktigaste skillnaderna mellan värdbaserade och lokala distributioner
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 exl-id: a2c425a8-9bde-4259-9140-5ada5397ed5f
-source-git-commit: 1e11b7419388698f5de366cbeddf2be88ef12873
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '293'
 ht-degree: 20%
@@ -12,7 +13,7 @@ ht-degree: 20%
 
 # Kapacitetsmatris per modell{#capability-matrix-per-model}
 
-![](../../assets/v7-only.svg)
+
 
 Med Adobe Campaign Classic medföljer en uppsättning moduler och alternativ. Vilka moduler som är tillgängliga och hur de används beror på vilken typ av installation du har. I den här artikeln finns mer information om de viktigaste skillnaderna när det gäller vissa funktioner mellan fullständigt värdbaserade (Managed Services) och anläggningsdistributioner.
 
@@ -22,7 +23,7 @@ De olika värdmodellerna introduceras [i det här avsnittet](../../installation/
 
 ## Tillgänglighet per distributionsmodell {#capability-matrix}
 
-| Funktion | Värdbaserad | Hybrid | Lokalt | Detaljer |
+| Funktion | Värdbaserad | Hybrid | Lokalt | Information |
 |-----------------------------------------------|------------------|-----------|---------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Konfigurera Campaign-servern | On-demand | Tillgänglig | Tillgänglig | [Läs mer](../../installation/using/the-server-configuration-file.md) |
 | BCC för e-post | On-demand | On-demand | Tillgänglig | [Läs mer](../../installation/using/email-archiving.md) |

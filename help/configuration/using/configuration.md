@@ -2,8 +2,9 @@
 product: campaign
 title: Konfigurera navigeringsträdet i Campaign Explorer
 description: Lär dig hur du konfigurerar navigeringsträdet i Campaign Explorer
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 exl-id: c7ae7240-0c12-4420-bbb3-4268c9ade3e7
-source-git-commit: 40da5774c8a6a228992c4aa400e2d9924215611e
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '1196'
 ht-degree: 1%
@@ -11,8 +12,6 @@ ht-degree: 1%
 ---
 
 # Konfigurera navigeringsträdet i Campaign Explorer{#configuration}
-
-![](../../assets/v7-only.svg)
 
 Som expertanvändare kan du lägga till mappar i utforskarträdet och anpassa det.
 
@@ -265,7 +264,7 @@ Kommandona visas i samma ordning som de deklareras i XML-dokumentet.
 
 Med en kommandoavgränsare kan du visa ett avgränsningstecken mellan kommandona. Den identifieras av **&#39;-&#39;** i kommandoetiketten.
 
-Den valfria närvaron av **`<soapcall>`** -taggen med indataparametrarna definierar anropet till en SOAP-metod som ska köras. Mer information om SOAP API:er finns i [Kampanj-JSAPI-dokumentation](https://experienceleague.adobe.com/developer/campaign-api/api/index.html).
+Den valfria närvaron av **`<soapcall>`** -taggen med indataparametrarna definierar anropet till en SOAP-metod som ska köras. Mer information om SOAP API:er finns i [Kampanj-JSAPI-dokumentation](https://experienceleague.adobe.com/developer/campaign-api/api/index.html?lang=sv).
 
 Formulärkontexten kan uppdateras vid initieringen via **`<enter>`** -tagg. Mer information om den här taggen finns i dokumentationen till indataformuläret.
 

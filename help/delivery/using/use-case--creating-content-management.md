@@ -1,10 +1,12 @@
 ---
 product: campaign
-title: '"Användningsfall: skapa innehållshantering"'
-description: '"Användningsfall: skapa innehållshantering"'
+title: "Användningsfall: skapa innehållshantering"
+description: "Användningsfall: skapa innehållshantering"
+badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: Delivery Templates
 exl-id: b0d1cf0e-656e-4d24-9a31-16fef4cd40d0
-source-git-commit: 9839dbacda475c2a586811e3c4f686b1b1baab05
+source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
 source-wordcount: '1173'
 ht-degree: 1%
@@ -13,7 +15,7 @@ ht-degree: 1%
 
 # Användningsfall: skapa innehållshantering{#use-case-creating-content-management}
 
-![](../../assets/common.svg)
+
 
 Följande steg är nödvändiga för att skapa innehållshantering i Adobe Campaign:
 

@@ -2,11 +2,13 @@
 product: campaign
 title: Använd kuber för att utforska data
 description: Använd kuber för att utforska data
+badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: Reporting
 hide: true
 hidefromtoc: true
 exl-id: 32696bbf-1415-4214-837f-5437fdb8b4d4
-source-git-commit: 1635366b9e1302acd3d8997312bf07d5c1a68982
+source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
 source-wordcount: '956'
 ht-degree: 2%
@@ -15,7 +17,7 @@ ht-degree: 2%
 
 # Använd kuber för att utforska data{#using-cubes-to-explore-data}
 
-![](../../assets/common.svg)
+
 
 Marknadsföringsanalys gör det enklare att skapa rapporter och att identifiera och välja data från databasen via kuber. Detta gör att du kan:
 

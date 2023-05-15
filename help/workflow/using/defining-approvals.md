@@ -2,9 +2,10 @@
 product: campaign
 title: Definiera godkännanden
 description: Godkännanden gör det möjligt för operatörer att fatta beslut som styr ett arbetsflöde eller att bekräfta att det fortsätter att köras
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 feature: Approvals
 exl-id: 4d413d51-ae5d-4e5e-bfaf-4160a6075281
-source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '841'
 ht-degree: 4%
@@ -13,7 +14,7 @@ ht-degree: 4%
 
 # Definiera godkännanden {#defining-approvals}
 
-![](../../assets/v7-only.svg)
+
 
 Godkännanden gör det möjligt för operatörer att fatta beslut som styr ett arbetsflöde eller att bekräfta att det fortsätter att köras.
 

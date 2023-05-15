@@ -2,11 +2,13 @@
 product: campaign
 title: Kom igång med uppgraderingar
 description: Lär dig de viktigaste stegen för att uppgradera till en ny version
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+badge-on-prem: label="on-premise & hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=en" tooltip="Applies to on-premise and hybrid deployments only"
 audience: production
 content-type: reference
 topic-tags: updating-adobe-campaign
 exl-id: c5a9c99a-4078-45d8-847b-6df9047a2fe2
-source-git-commit: 1d32161d60f6b382188012b104c642f504e28645
+source-git-commit: 0429c3608fbcec98a397cc17fd45cd173cf64b6e
 workflow-type: tm+mt
 source-wordcount: '2356'
 ht-degree: 2%
@@ -15,7 +17,7 @@ ht-degree: 2%
 
 # Utföra en uppgradering av din build{#performing-a-build-upgrade}
 
-![](../../assets/v7-only.svg)
+
 
 I det här avsnittet får du en detaljerad genomgång av uppgraderingsprocessen och hur du identifierar och löser konflikter.
 
@@ -246,7 +248,7 @@ När Transactional Messaging (Message Center) är aktiverat i Campaign-instansen
 
 I en miljö med flera leverantörer behöver du utföra följande steg för att uppgradera:
 
-1. Kontakt [Adobe kundtjänst](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) för att koordinera uppgraderingen av servern för medelhög källkod.
+1. Kontakt [Adobe kundtjänst](https://helpx.adobe.com/se/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) för att koordinera uppgraderingen av servern för medelhög källkod.
 1. Verifiera att versionen har uppdaterats genom att köra en testlänk. Exempel:
 
    ```
@@ -409,7 +411,7 @@ Så här utför du en komplex sammanfogning:
 
 **Relaterade ämnen**
 
-* [Vanliga frågor och svar om Builduppgradering](../../platform/using/faq-build-upgrade.md)
+* [Vanliga frågor och svar om builduppgradering](../../platform/using/faq-build-upgrade.md)
 * [Versionsinformation för Campaign Classic](../../rn/using/rn-overview.md)
 * [Hjälp- och supportalternativ för Campaign Classic](../../support.md)
 * [Kampanjårsuppgraderingsprogram](../../rn/using/rn-overview.md)

@@ -2,26 +2,27 @@
 product: campaign
 title: Introduktion
 description: Introduktion
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 audience: production
 content-type: reference
 topic-tags: updating-adobe-campaign
 exl-id: 3e39a0d2-ff7e-4233-82bb-2b360f696a33
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
-source-wordcount: '191'
+source-wordcount: '193'
 ht-degree: 1%
 
 ---
 
 # Introduktion{#introduction}
 
-![](../../assets/v7-only.svg)
+
 
 I det här avsnittet beskrivs hur du uppgraderar Adobe Campaign, klientsidan och serversidan, och hur du går över till Unicode för en befintlig instans.
 
 >[!NOTE]
 >
->För värdbaserade instanser måste du koordinera med din Adobe-administratör.\
+>För instanser av värdbaserade/hanterade tjänster måste du koordinera med Adobe-administratören.\
 >För lokala instanser kan du få hjälp av Adobe Consultants.
 
 Uppgraderingen måste utföras på alla servrar där Adobe Campaign är installerat.

@@ -2,12 +2,12 @@
 product: campaign
 title: Åtkomst till marknadsföringskampanjer
 description: Åtkomst till marknadsföringskampanjer
-badge: label="v7" type="Informative" tooltip="Gäller Campaign Classic v7"
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 feature: Campaigns, Cross Channel Orchestration
 exl-id: 1278bda1-f83c-4d38-8042-e6611755cf36
-source-git-commit: 517a343011ff313d016638c586867673e406fd88
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
-source-wordcount: '1257'
+source-wordcount: '1199'
 ht-degree: 1%
 
 ---
@@ -20,13 +20,13 @@ Med Adobe Campaign kan ni skapa, konfigurera, genomföra och analysera marknadsf
 
 ### Startsida {#home-page}
 
-När du har anslutit till Adobe Campaign visas startsidan.
+När du är ansluten till Adobe Campaign kan du bläddra bland de olika funktionerna med hjälp av länkar i navigeringsfältet.
+
 
 ![](assets/campaign_global_view.png)
 
-Klicka på länkarna i navigeringsfältet för att komma åt de olika funktionerna.
 
-Kampanjelementen finns i **[!UICONTROL Campaigns]** tab: här kan du se en översikt över marknadsföringsprogram och -kampanjer samt deras undergrupper. Ett marknadsföringsprogram består av kampanjer, som består av leveranser, uppgifter, länkade resurser osv. När det gäller hantering av marknadsföringskampanjer med Campaign finns det information om leveranser, budgetar, granskare och länkade dokument i kampanjerna.
+Kampanjelementen finns i **[!UICONTROL Campaigns]** tab: här kan du se en översikt över marknadsföringsprogram, kampanjer och deras undergrupper. Ett marknadsföringsprogram består av kampanjer, som består av leveranser, uppgifter, länkade resurser osv. När det gäller hantering av marknadsföringskampanjer med Campaign finns det information om leveranser, budgetar, granskare och länkade dokument i kampanjerna.
 
 The **[!UICONTROL Browsing]** -block **[!UICONTROL Campaigns]** På -fliken finns olika poster, beroende på vilka moduler som är installerade på instansen. Du kan till exempel få åtkomst till:
 
@@ -49,13 +49,13 @@ Om du vill redigera en plan, ett program, en kampanj eller en leverans klickar d
 
 ![](assets/d_ncs_user_interface_hierar.png)
 
-Du kan filtrera den information som visas i kampanjkalendern. Om du vill göra det klickar du på **[!UICONTROL Filter]** och välj filtervillkor.
+Du kan filtrera den information som visas i kampanjkalendern: klicka på **[!UICONTROL Filter]** och välj filtervillkor.
 
 ![](assets/campaign_planning_filter.png)
 
 >[!NOTE]
 >
->När du filtrerar på ett datum visas alla kampanjer med ett startdatum som är senare än det angivna datumet och/eller med ett slutdatum som är tidigare än det angivna datumet. Datum måste väljas med hjälp av kalendrarna till höger om varje fält.
+>När du filtrerar på ett datum visas alla kampanjer med ett startdatum som är senare än det angivna datumet och/eller med ett slutdatum som är tidigare än det angivna datumet. Välj datum med hjälp av kalendrarna till höger om varje fält.
 
 Du kan också använda **[!UICONTROL Search]** för att filtrera de visade objekten.
 
@@ -116,7 +116,7 @@ Med Adobe Campaign kan ni skapa samarbetsprocesser för framtagning och godkänn
 
 #### Schema {#schedule}
 
-En kampanj centraliserar en uppsättning leveranser. För varje kampanj ger schemat en global översikt över alla komponenter: På så sätt kan du visa uppgifter och leveranser och enkelt komma åt dem.
+En kampanj centraliserar en uppsättning leveranser. För varje kampanj ger schemat en global översikt över alla komponenter: kan du visa uppgifter och leveranser och enkelt komma åt dem.
 
 ![](assets/campaign_planning_tab.png)
 
@@ -124,7 +124,7 @@ En kampanj centraliserar en uppsättning leveranser. För varje kampanj ger sche
 
 För varje kampanj kan operatörerna utbyta meddelanden via ett särskilt forum.
 
-Mer information finns i [Diskussionsforum](../../mrm/using/discussion-forums.md).
+Läs mer i [Diskussionsforum](../../mrm/using/discussion-forums.md).
 
 #### Rapporter {#reports}
 
@@ -140,11 +140,11 @@ The **[!UICONTROL Reports]** kan du komma åt kampanjrapporterna.
 
 Kampanjer skapas via kampanjmallar. Du kan konfigurera återanvändbara mallar för vilka vissa alternativ har valts och andra inställningar redan har sparats. För varje kampanj finns följande funktioner:
 
-* Hänvisning till dokument och resurser: du kan associera dokument med kampanjen (i korthet, rapport, bilder osv.). Alla dokumentformat stöds. Se [Hantera associerade dokument](../../campaign/using/marketing-campaign-deliveries.md#managing-associated-documents).
-* Definiera kostnader: För varje kampanj kan Adobe Campaign definiera kostnadsposter och kostnadsberäkningsstrukturer som kan användas när marknadsföringskampanjen skapas. Till exempel: tryckkostnader, användning av en extern byrå, hyra av rum osv. Se [Definiera kostnadskategorier](../../campaign/using/providers--stocks-and-budgets.md#defining-cost-categories).
+* Referens till [dokument och resurser](../../campaign/using/marketing-campaign-deliveries.md#managing-associated-documents): du kan associera dokument med kampanjen (i korthet, rapport, bilder osv.). Alla dokumentformat stöds.
+* Definiera kostnader: för varje kampanj kan Adobe Campaign definiera [kostnadsposter och kostnadsberäkningsstrukturer](../../campaign/using/providers--stocks-and-budgets.md#defining-cost-categories) som kan användas när marknadsföringskampanjen skapas. Till exempel: tryckkostnader, användning av en extern byrå, hyra av rum.
 * Definiera mål: kan ni definiera kvantifierbara mål för en kampanj, t.ex. antal prenumeranter, affärsvolym osv. Den här informationen används senare i kampanjrapporter.
-* Hantera dirigerade adresser (mer information finns i [det här avsnittet](../../delivery/using/about-seed-addresses.md)) och kontrollgrupper (se [Definiera en kontrollgrupp](../../campaign/using/marketing-campaign-deliveries.md#defining-a-control-group)).
-* Hantera godkännanden: Du kan välja vilka behandlingar som ska godkännas och vid behov välja granskningsoperatorer eller grupper av operatorer. Se [Kontrollera och godkänna leveranser](../../campaign/using/marketing-campaign-approval.md#checking-and-approving-deliveries).
+* Hantera [dirigeringsadresser](../../delivery/using/about-seed-addresses.md) och [kontrollgrupper](../../campaign/using/marketing-campaign-deliveries.md#defining-a-control-group).
+* Hantera godkännanden: Du kan välja vilka behandlingar som ska godkännas och vid behov välja granskningsoperatorer eller grupper av operatorer. [Läs mer](../../campaign/using/marketing-campaign-approval.md#checking-and-approving-deliveries)
 
 >[!NOTE]
 >

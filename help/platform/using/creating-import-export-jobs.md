@@ -1,21 +1,23 @@
 ---
 product: campaign
 title: Skapa import- och exportjobb
-description: Lär dig hur du skapar import- och exportjobb i Campaign Classic.
+description: Lär dig hur du skapar import- och exportjobb i Campaign
+badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 audience: platform
 content-type: reference
 topic-tags: importing-and-exporting-data
 exl-id: 85c48712-3704-41db-a255-a07ca8d02ec4
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
-source-wordcount: '133'
+source-wordcount: '132'
 ht-degree: 7%
 
 ---
 
 # Skapa import- och exportjobb {#creating-import-export-jobs}
 
-![](../../assets/common.svg)
+
 
 När mallarna har konfigurerats kan import- och exportåtgärder startas i flera sammanhang i Adobe Campaign.
 

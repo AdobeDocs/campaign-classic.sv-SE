@@ -2,11 +2,12 @@
 product: campaign
 title: Kommandorader
 description: Kommandorader
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 audience: installation
 content-type: reference
 topic-tags: appendices
 exl-id: 5cd4abb0-2bd2-4b23-902c-41b08a1d2f7a
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '150'
 ht-degree: 4%
@@ -15,7 +16,7 @@ ht-degree: 4%
 
 # Kommandorader{#command-lines}
 
-![](../../assets/v7-only.svg)
+
 
 Följande kommandorader kräver åtkomst till programservern. För distributioner som hanteras av Adobe kan dessa kommandon bara köras av Adobe.
 
@@ -29,7 +30,7 @@ nlserver config -addinstance:instance/masques DNS[/lang]
 
 (där **eng** och **fra** är möjliga värden för `[lang]` parameter)
 
-Kommandot **nlserver config -addinstance:instance1/demo*/eng** gör att du kan skapa en instans med namnet **instance1** på engelska med DNS-maskdemo*.
+Kommandot **nlserver config -addinstance:instance1/demo&#42;/eng** gör att du kan skapa en instans med namnet **instance1** på engelska med DNS-maskdemo&#42;.
 
 ## Deklarera en databas {#declaring-a-database}
 

@@ -2,9 +2,11 @@
 product: campaign
 title: Använd guiden för beskrivande analys
 description: Använd guiden för beskrivande analys
+badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: Reporting
 exl-id: 848d67c7-d1dc-4eba-bcb8-672e76d8ce87
-source-git-commit: 36e546a34d8c2345fefed5d459095a76c6224a38
+source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
 source-wordcount: '1558'
 ht-degree: 1%
@@ -13,7 +15,7 @@ ht-degree: 1%
 
 # Använd guiden för beskrivande analys{#using-the-descriptive-analysis-wizard}
 
-![](../../assets/common.svg)
+
 
 Använd den dedikerade guiden för att skapa en beskrivande analysrapport. Konfigurationen beror på vilka data som ska analyseras och på önskad återgivning.
 

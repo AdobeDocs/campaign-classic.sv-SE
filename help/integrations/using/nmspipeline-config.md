@@ -2,9 +2,11 @@
 product: campaign
 title: Pipelinealternativet NmsPipeline_Config
 description: Pipelinealternativet NmsPipeline_Config
+badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 audience: integrations
 content-type: reference
-source-git-commit: 36b10a49fe92853f98beeb9e7d2fea3f59b10b6f
+source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
 source-wordcount: '374'
 ht-degree: 3%
@@ -14,7 +16,7 @@ ht-degree: 3%
 
 # Pipelinealternativet NmsPipeline_Config {#nmspipeline_config}
 
-![](../../assets/common.svg)
+
 
 När autentiseringen fungerar, [!DNL pipelined] kan hämta händelser och bearbeta dem. Den behandlar endast utlösare som har konfigurerats i Adobe Campaign och ignorerar de andra. Utlösaren måste ha genererats från Analytics och flyttats till pipeline i förväg.
 Alternativet kan också konfigureras med ett jokertecken för att fånga upp alla utlösare oavsett namn.

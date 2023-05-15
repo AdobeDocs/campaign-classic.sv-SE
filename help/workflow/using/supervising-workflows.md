@@ -2,9 +2,10 @@
 product: campaign
 title: Övervaka arbetsflöden
 description: Lär dig hur ni övervakar Campaign-arbetsflöden
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 feature: Workflows
 exl-id: ca6d4bf4-7b3a-4d36-9fc3-0b83531d0132
-source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '646'
 ht-degree: 0%
@@ -13,7 +14,7 @@ ht-degree: 0%
 
 # Användningsfall: övervaka era arbetsflöden{#supervising-workflows}
 
-![](../../assets/v7-only.svg)
+
 
 Här beskrivs hur du skapar ett arbetsflöde där du kan övervaka statusen för en uppsättning arbetsflöden som är&quot;pausade&quot;,&quot;stoppade&quot; eller&quot;med fel&quot;.
 

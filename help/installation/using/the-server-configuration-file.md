@@ -2,11 +2,12 @@
 product: campaign
 title: Serverkonfigurationsfilen
 description: Serverkonfigurationsfilen
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 audience: installation
 content-type: reference
 topic-tags: appendices
 exl-id: 70cd6a4b-c839-4bd9-b9a7-5a12e59c0cbf
-source-git-commit: 2594e4943ba24ae65d1fc005da589dc674aa2b0f
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '7979'
 ht-degree: 5%
@@ -15,7 +16,7 @@ ht-degree: 5%
 
 # Serverkonfigurationsfilen{#the-server-configuration-file}
 
-![](../../assets/v7-only.svg)
+
 
 Den övergripande konfigurationen av Adobe Campaign definieras i **serverConf.xml** -filen som finns i **conf** installationskatalogen. I det här avsnittet visas alla olika noder och parametrar för **serverConf.xml** -fil.
 
@@ -1160,7 +1161,7 @@ Mer information finns i [Aktivera e-postarkivering (lokalt)](../../installation/
    <td> processRestartTime<br /> </td> 
    <td> Tid på dagen då processen startas om automatiskt. Se <a href="../../installation/using/configuring-campaign-server.md#automatic-process-restart" target="_blank">Automatisk processomstart</a>.<br /> </td> 
    <td> Sträng<br /> </td> 
-   <td> 06:00:00' <br /> </td> 
+   <td> '06:00:00' <br /> </td> 
   </tr> 
   <tr> 
    <td> purgeArchivesDelay<br /> </td> 
@@ -1321,7 +1322,7 @@ Här är de olika parametrarna för **inMail** nod. Detta är konfigurationen f�
    <td> processRestartTime<br /> </td> 
    <td> Tid på dagen då processen startas om automatiskt. Se <a href="../../installation/using/configuring-campaign-server.md#automatic-process-restart" target="_blank">Automatisk processomstart</a>.<br /> </td> 
    <td> Sträng<br /> </td> 
-   <td> 06:00:00' <br /> </td> 
+   <td> '06:00:00' <br /> </td> 
   </tr> 
   <tr> 
    <td> reloadPeriodSec<br /> </td> 
@@ -1435,7 +1436,7 @@ Mer information finns i [Interaktion - databuffert](../../installation/using/int
    <td> processRestartTime<br /> </td> 
    <td> Tid på dagen då processen startas om automatiskt. Se <a href="../../installation/using/configuring-campaign-server.md#automatic-process-restart" target="_blank">Automatisk processomstart</a>.<br /> </td> 
    <td> Sträng<br /> </td> 
-   <td> 06:00:00' <br /> </td> 
+   <td> '06:00:00' <br /> </td> 
   </tr> 
   <tr> 
    <td> runLevel<br /> </td> 
@@ -1572,7 +1573,7 @@ Här är de olika parametrarna för **mta** nod. Detta är konfigurationen för 
    <td> processRestartTime<br /> </td> 
    <td> Tid på dagen då processen startas om automatiskt. Se <a href="../../installation/using/configuring-campaign-server.md#automatic-process-restart" target="_blank">Automatisk processomstart</a>.<br /> </td> 
    <td> Sträng<br /> </td> 
-   <td> 06:00:00' <br /> </td> 
+   <td> '06:00:00' <br /> </td> 
   </tr> 
   <tr> 
    <td> purgeDataLogDelay<br /> </td> 
@@ -2129,7 +2130,7 @@ Här är de olika parametrarna för **rörlig** nod. Det här är konfiguratione
    <td> processRestartTime<br /> </td> 
    <td> Tid på dagen då processen startas om automatiskt. Se <a href="../../installation/using/configuring-campaign-server.md#automatic-process-restart" target="_blank">Automatisk processomstart</a>.<br /> </td> 
    <td> Sträng<br /> </td> 
-   <td> 06:00:00' <br /> </td> 
+   <td> '06:00:00' <br /> </td> 
   </tr> 
   <tr> 
    <td> processingJSThreads<br /> </td> 
@@ -2400,7 +2401,7 @@ Här är de olika parametrarna för **sms** nod. Detta är konfigurationen för 
    <td> processRestartTime<br /> </td> 
    <td> Tid på dagen då processen startas om automatiskt. Se <a href="../../installation/using/configuring-campaign-server.md#automatic-process-restart" target="_blank">Automatisk processomstart</a>.<br /> </td> 
    <td> Sträng<br /> </td> 
-   <td> 06:00:00' <br /> </td> 
+   <td> '06:00:00' <br /> </td> 
   </tr> 
   <tr> 
    <td> reloadPeriod<br /> </td> 
@@ -2506,7 +2507,7 @@ Här är de olika parametrarna för **stat** nod. Detta är konfigurationen för
    <td> processRestartTime<br /> </td> 
    <td> Tid på dagen då processen startas om automatiskt. Se <a href="../../installation/using/configuring-campaign-server.md#automatic-process-restart" target="_blank">Automatisk processomstart</a>.<br /> </td> 
    <td> Sträng<br /> </td> 
-   <td> 06:00:00' <br /> </td> 
+   <td> '06:00:00' <br /> </td> 
   </tr> 
   <tr> 
    <td> runLevel<br /> </td> 
@@ -2577,7 +2578,7 @@ Här är de olika parametrarna för **syslogd** nod. Detta är konfigurationen f
    <td> processRestartTime<br /> </td> 
    <td> Tid på dagen då processen startas om automatiskt. Se <a href="../../installation/using/configuring-campaign-server.md#automatic-process-restart" target="_blank">Automatisk processomstart</a>.<br /> </td> 
    <td> Sträng<br /> </td> 
-   <td> 06:00:00' <br /> </td> 
+   <td> '06:00:00' <br /> </td> 
   </tr> 
   <tr> 
    <td> runLevel<br /> </td> 
@@ -2690,7 +2691,7 @@ Här är de olika parametrarna för **spårning** nod. Detta är spårningsserve
    <td> processRestartTime<br /> </td> 
    <td> Tid på dagen då processen startas om automatiskt. Se <a href="../../installation/using/configuring-campaign-server.md#automatic-process-restart" target="_blank">Automatisk processomstart</a>.<br /> </td> 
    <td> Sträng<br /> </td> 
-   <td> 06:00:00' <br /> </td> 
+   <td> '06:00:00' <br /> </td> 
   </tr> 
   <tr> 
    <td> runLevel<br /> </td> 
@@ -2785,7 +2786,7 @@ Här är de olika parametrarna för **trackinglogd** nod. Detta är konfiguratio
    <td> processRestartTime<br /> </td> 
    <td> Tid på dagen då processen startas om automatiskt. Se <a href="../../installation/using/configuring-campaign-server.md#automatic-process-restart" target="_blank">Automatisk processomstart</a>.<br /> </td> 
    <td> Sträng<br /> </td> 
-   <td> 06:00:00' <br /> </td> 
+   <td> '06:00:00' <br /> </td> 
   </tr> 
   <tr> 
    <td> purgeLogsPeriod<br /> </td> 
@@ -2900,7 +2901,7 @@ Mer information finns i [section](configuring-campaign-server.md#default-port-fo
    <td> processRestartTime<br /> </td> 
    <td> Tid på dagen då processen startas om automatiskt. Se <a href="../../installation/using/configuring-campaign-server.md#automatic-process-restart" target="_blank">Automatisk processomstart</a>.<br /> </td> 
    <td> Sträng<br /> </td> 
-   <td> 06:00:00' <br /> </td> 
+   <td> '06:00:00' <br /> </td> 
   </tr> 
   <tr> 
    <td> runLevel<br /> </td> 
@@ -3479,7 +3480,7 @@ Mer information finns i [Arbetsflöden och tillhörighet med hög tillgänglighe
    <td> processRestartTime<br /> </td> 
    <td> Tid på dagen då processen startas om automatiskt. Se <a href="../../installation/using/configuring-campaign-server.md#automatic-process-restart" target="_blank">Automatisk processomstart</a>.<br /> </td> 
    <td> Sträng<br /> </td> 
-   <td> 06:00:00' <br /> </td> 
+   <td> '06:00:00' <br /> </td> 
   </tr> 
   <tr> 
    <td> runLevel<br /> </td> 

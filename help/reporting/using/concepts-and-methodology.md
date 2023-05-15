@@ -2,20 +2,21 @@
 product: campaign
 title: Bästa tillvägagångssätt för kuber
 description: Bästa tillvägagångssätt för kuber
+badge: label="v7" type="Informative" tooltip="Gäller endast Campaign Classic v7"
 feature: Reporting
 hide: true
 hidefromtoc: true
 exl-id: 5f22fa2c-b648-4126-9a24-1798adfa8f34
-source-git-commit: 1635366b9e1302acd3d8997312bf07d5c1a68982
+source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
-source-wordcount: '1493'
+source-wordcount: '1504'
 ht-degree: 0%
 
 ---
 
 # Bästa tillvägagångssätt för kuber{#concepts-and-methodology}
 
-![](../../assets/common.svg)
+
 
 ## Databindning {#data-binning}
 

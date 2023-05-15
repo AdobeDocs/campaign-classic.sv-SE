@@ -2,11 +2,13 @@
 product: campaign
 title: Om inledande konfiguration
 description: Om inledande konfiguration
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+badge-on-prem: label="on-premise & hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=en" tooltip="Applies to on-premise and hybrid deployments only"
 audience: installation
 content-type: reference
 topic-tags: initial-configuration
 exl-id: f77ba178-0dfb-4a2e-b33b-971765d42298
-source-git-commit: f000cb8bae164c22d1ede15db4e763cf50530674
+source-git-commit: 0429c3608fbcec98a397cc17fd45cd173cf64b6e
 workflow-type: tm+mt
 source-wordcount: '167'
 ht-degree: 8%
@@ -15,7 +17,7 @@ ht-degree: 8%
 
 # Viktiga steg för att konfigurera och distribuera instansen{#about-initial-configuration}
 
-![](../../assets/v7-only.svg)
+
 
 När Adobe Campaign-installationen är klar måste du konfigurera den så att den fungerar effektivt med dina begränsningar och din tekniska arkitektur. Stegen för att konfigurera en Adobe Campaign-instans beskrivs i det här kapitlet i följande sekvens:
 

@@ -2,18 +2,20 @@
 product: campaign
 title: Skapa en profillista med ett arbetsflöde
 description: Lär dig hur du skapar en profillista i ett arbetsflöde
+badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: Workflows
 exl-id: 6b308299-4d07-4c9e-bd2f-a0860c41cf02
-source-git-commit: 8fa50d17a9ff36ccc310860ac93771590cfd76fd
+source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
 source-wordcount: '183'
-ht-degree: 10%
+ht-degree: 12%
 
 ---
 
 # Skapa en profillista med ett arbetsflöde{#creating-a-profile-list-with-a-workflow}
 
-![](../../assets/common.svg)
+
 
 Skapa en **[!UICONTROL List]** typlista baserad på den nya mottagartabellen, måste du skapa ett målarbetsflöde som genererar listan.
 
@@ -29,7 +31,7 @@ Följ stegen nedan för att skapa ett målarbetsflöde och uppdatera mottagare i
 
    ![](assets/mapping_create_list_workflow01.png)
 
-1. Dubbelklicka på **Fråga** aktivitet och klicka sedan på **[!UICONTROL Edit the query]** att välja en målinriktningsdimension baserat på schemat för den nya mottagartabellen (i vårt exempel: **Enskild**). Klicka **[!UICONTROL Finish]** för att bekräfta.
+1. Dubbelklicka på **Fråga** aktivitet och klicka sedan på **[!UICONTROL Edit the query]** att välja en målinriktningsdimension baserat på schemat för den nya mottagartabellen (i vårt exempel: **Enskild**). Klicka på **[!UICONTROL Finish]** för att bekräfta.
 
    ![](assets/mapping_create_list_workflow03.png)
 

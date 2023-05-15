@@ -2,9 +2,10 @@
 product: campaign
 title: Skapa ett filter
 description: Lär dig hur du skapar ett filter när du utför frågor
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 feature: Query Editor, Workflows
 exl-id: 297ea1e1-39ef-4b99-aaaa-9e88611fb1bf
-source-git-commit: 6232e0df09165bc07c8e521df271874abd5698a9
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '210'
 ht-degree: 2%
@@ -13,7 +14,7 @@ ht-degree: 2%
 
 # Skapa ett filter {#creating-a-filter}
 
-![](../../assets/v7-only.svg)
+
 
 De filter som är tillgängliga i Adobe Campaign definieras via filtervillkor som skapas i samma operativsystem som frågor.
 

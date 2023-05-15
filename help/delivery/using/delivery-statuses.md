@@ -2,9 +2,11 @@
 product: campaign
 title: Leveransstatus
 description: Läs mer om de statusar som finns på kontrollpanelen för leverans
+badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: Monitoring, Deliverability
 exl-id: 0663257a-3a70-4e0c-bbeb-8242aaa0876d
-source-git-commit: 9839dbacda475c2a586811e3c4f686b1b1baab05
+source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
 source-wordcount: '632'
 ht-degree: 4%
@@ -13,7 +15,7 @@ ht-degree: 4%
 
 # Leveransstatus {#delivery-statuses}
 
-![](../../assets/common.svg)
+
 
 <!--ajouter intro 
 

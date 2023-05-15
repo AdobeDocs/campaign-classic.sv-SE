@@ -2,9 +2,10 @@
 product: campaign
 title: Kampanj - Salesforce CRM Connector
 description: Lär dig hur du ansluter Campaign och Salesforce
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 feature: Salesforce Integration
 exl-id: 94a1f00d-e952-4edd-9012-f71c87b897ca
-source-git-commit: 9a6010d824794b01224f40bb2912a9a80fc0fb88
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '329'
 ht-degree: 0%
@@ -13,7 +14,7 @@ ht-degree: 0%
 
 # Connect Campaign och Salesforce.com{#connect-to-sfdc}
 
-![](../../assets/v7-only.svg)
+
 
 På den här sidan får du lära dig att ansluta Campaign Classic till **Salesforce**.
 

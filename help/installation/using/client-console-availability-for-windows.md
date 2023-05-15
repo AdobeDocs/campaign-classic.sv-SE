@@ -2,11 +2,13 @@
 product: campaign
 title: Klientkonsolens tillgänglighet i Windows
 description: Klientkonsolens tillgänglighet i Windows
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+badge-on-prem: label="on-premise & hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=en" tooltip="Applies to on-premise and hybrid deployments only"
 audience: installation
 content-type: reference
 topic-tags: installing-campaign-in-windows-
 exl-id: 57845eae-1f1a-42f4-b2ba-46d454677ae0
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 0429c3608fbcec98a397cc17fd45cd173cf64b6e
 workflow-type: tm+mt
 source-wordcount: '333'
 ht-degree: 4%
@@ -15,7 +17,7 @@ ht-degree: 4%
 
 # Klientkonsolens tillgänglighet i Windows{#client-console-availability-for-windows}
 
-![](../../assets/v7-only.svg)
+
 
 För att Adobe Campaign-användare ska kunna logga in på den instans som du har skapat och konfigurerat måste de använda klientkonsolen.
 

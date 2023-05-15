@@ -1,12 +1,13 @@
 ---
 product: campaign
 title: Testa mallar för transaktionsmeddelanden
-description: Lär dig hur du hanterar dirigerade adresser i transaktionsmeddelanden för att förhandsgranska och testa dem i Adobe Campaign Classic.
+description: Lär dig hur du hanterar dirigerade adresser i transaktionsmeddelanden för att förhandsgranska och testa dem i Adobe Campaign Classic
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 audience: message-center
 content-type: reference
 topic-tags: message-templates
 exl-id: 417004c9-ed96-4b98-a518-a3aa6123ee7b
-source-git-commit: bd9f035db1cbad883e1f27fe901e34dfbc9c1229
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '560'
 ht-degree: 2%
@@ -15,7 +16,7 @@ ht-degree: 2%
 
 # Testa mallar för transaktionsmeddelanden {#testing-message-templates}
 
-![](../../assets/v7-only.svg)
+
 
 När du [meddelandemall](../../message-center/using/creating-the-message-template.md) är klart följer du stegen nedan för att förhandsgranska och testa det.
 
@@ -95,7 +96,7 @@ När du har skapat en eller flera dirigerade adresser och meddelandetexten kan d
 
 Med hjälp av dirigerade adresser kan du även visa återgivningen av meddelandet för olika leverantörer av Internetåtkomst. Mer information finns i [Inkorgsåtergivning](../../delivery/using/inbox-rendering.md).
 
-## Skicka ett bevis {#sending-a-proof}
+## Skicka en korrektur {#sending-a-proof}
 
 Du kan testa meddelandeleveransen genom att skicka ett korrektur till en startadress som skapats tidigare.
 

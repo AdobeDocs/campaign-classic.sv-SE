@@ -2,8 +2,10 @@
 product: campaign
 title: Installera inbyggda Campaign Classic-paket
 description: Lär dig hur du installerar inbyggda Campaign-paket
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+badge-on-prem: label="on-premise & hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=en" tooltip="Applies to on-premise and hybrid deployments only"
 exl-id: 2bc077c4-ed65-4157-bfc9-df5d0442f476
-source-git-commit: 978da934b483a54509ad806f375d9b2bb0577dac
+source-git-commit: 0429c3608fbcec98a397cc17fd45cd173cf64b6e
 workflow-type: tm+mt
 source-wordcount: '1253'
 ht-degree: 5%
@@ -12,7 +14,7 @@ ht-degree: 5%
 
 # Installera inbyggda Campaign Classic-paket{#installing-campaign-standard-packages}
 
-![](../../assets/v7-only.svg)
+
 
 ## Om inbyggda paket {#campaign-standard-packages}
 

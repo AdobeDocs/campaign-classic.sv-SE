@@ -2,10 +2,12 @@
 product: campaign
 title: Om Adobe Experience Cloud-utlösare
 description: Kom igång med Adobe Experience Cloud Triggers
+badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 audience: integrations
 content-type: reference
 exl-id: 0e337620-a49f-4e14-8c67-9279d74736f1
-source-git-commit: 0a59b0dbdbe70cf8993ce7153b8f3c049c1f1108
+source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
 source-wordcount: '235'
 ht-degree: 8%
@@ -14,7 +16,7 @@ ht-degree: 8%
 
 # Arbeta med utlösare för Campaign och Experience Cloud{#about-adobe-experience-triggers}
 
-![](../../assets/common.svg)
+
 
 [!DNL Triggers] är en integrering mellan Adobe Campaign och Adobe Analytics. Pipelinen hämtar användarens åtgärder eller utlösare från din webbplats. En kundvagnsöverläggning är ett exempel på utlösare. Utlösare bearbetas i Adobe Campaign för att skicka e-post i nära realtid.
 

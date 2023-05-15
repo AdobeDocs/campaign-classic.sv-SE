@@ -1,19 +1,21 @@
 ---
 product: campaign
 title: Anpassa listan över uttryckssymboler
-description: Lär dig hur du anpassar uttryckslistan när du använder Adobe Campaign Classic
+description: Lär dig hur du anpassar uttryckslistan när du använder Adobe Campaign
+badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: Email, Push
 exl-id: b8642df3-1960-4f2c-8273-c3988a3e85f0
-source-git-commit: 9839dbacda475c2a586811e3c4f686b1b1baab05
+source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
-source-wordcount: '443'
+source-wordcount: '442'
 ht-degree: 3%
 
 ---
 
 # Anpassa listan över uttryckssymboler {#customize-emoticons}
 
-![](../../assets/common.svg)
+
 
 Uttryckslistan som visas i popup-fönstret styrs av en uppräkning som gör att du kan visa värden i en lista för att begränsa vilka val användaren har för ett visst fält.
 Ordningen på uttryckslistan kan anpassas. Du kan också lägga till andra uttryckssymboler i listan.

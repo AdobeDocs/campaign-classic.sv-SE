@@ -2,11 +2,12 @@
 product: campaign
 title: Konfigurera FDA-anslutningar
 description: Lär dig konfigurationssteg för FDA
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 audience: platform
 content-type: reference
 topic-tags: connectors
 exl-id: 0b53b165-a6d8-4604-b3f0-3fa6fce35146
-source-git-commit: f580b9b2508c279e03bd2698854aaf3de501200b
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '342'
 ht-degree: 5%
@@ -15,7 +16,7 @@ ht-degree: 5%
 
 # Konfigurera FDA-kopplingar {#specific-configurations-by-database-type}
 
-![](../../assets/v7-only.svg)
+
 
 Beroende på vilka externa databaser du vill kunna komma åt från Adobe Campaign måste du utföra vissa specifika konfigurationer. Dessa konfigurationer innebär i princip att installera drivrutiner och deklarera miljövariabler som tillhör varje RDBMS på Adobe Campaign-servern.
 

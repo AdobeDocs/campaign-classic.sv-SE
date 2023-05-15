@@ -2,9 +2,10 @@
 product: campaign
 title: Kom igång med datamodellen Campaign Classic
 description: Lär dig hur du utökar datamodellen i Campaign, redigerar scheman, använder API:er med mera
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 feature: Data Model
 exl-id: 655b5928-b005-442f-b026-2f1b0c1abb99
-source-git-commit: 8fa50d17a9ff36ccc310860ac93771590cfd76fd
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '980'
 ht-degree: 6%
@@ -12,8 +13,6 @@ ht-degree: 6%
 ---
 
 # Kom igång med datamodellen i Campaign {#about-data-model}
-
-![](../../assets/v7-only.svg)
 
 Den konceptuella datamodellen av databasen i Adobe Campaign består av en uppsättning inbyggda tabeller och deras interaktion. Huvudtabeller och begrepp listas på den här sidan.
 

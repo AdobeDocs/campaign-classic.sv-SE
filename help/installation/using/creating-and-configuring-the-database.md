@@ -2,20 +2,22 @@
 product: campaign
 title: Skapa och konfigurera databasen
 description: Skapa och konfigurera databasen
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+badge-on-prem: label="on-premise & hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=en" tooltip="Applies to on-premise and hybrid deployments only"
 audience: installation
 content-type: reference
 topic-tags: initial-configuration
 exl-id: f40bab8c-5064-40d9-beed-101a9f22c094
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 0429c3608fbcec98a397cc17fd45cd173cf64b6e
 workflow-type: tm+mt
 source-wordcount: '1296'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
 # Skapa och konfigurera databasen{#creating-and-configuring-the-database}
 
-![](../../assets/v7-only.svg)
+
 
 När du skapar en databas finns det två olika alternativ i Adobe Campaign:
 
@@ -105,7 +107,7 @@ Du måste definiera följande inställningar:
    > 
    >Om du inte markerar det här alternativet måste teckenuppsättningen (teckenuppsättningen) i Oraclets databas aktivera datalagring på alla språk (AL32UTF8 rekommenderas).
 
-* Välj en tidszon för databasen och ange om den ska vara i UTC (om den är tillgänglig).
+* Välj en tidszon för databasen och ange om den ska vara i UTC (om tillgängligt).
 
    Mer information finns i [Tidszonshantering](../../installation/using/time-zone-management.md).
 
@@ -139,7 +141,7 @@ The **[!UICONTROL Creation steps]** I kan du visa och redigera SQL-skriptet som 
 
 ### Steg 6 - Skapa databasen {#step-6---creating-the-database}
 
-I det sista steget i guiden kan du skapa databasen. Klicka **[!UICONTROL Start]** för att bekräfta.
+I det sista steget i guiden kan du skapa databasen. Klicka på **[!UICONTROL Start]** för att bekräfta.
 
 ![](assets/s_ncs_install_db_oracle_creation06.png)
 
@@ -230,7 +232,7 @@ The **[!UICONTROL Creation steps]** I kan du visa och redigera SQL-skriptet som 
 
 ### Steg 5 - Skapa databasen {#step-5---creating-the-database}
 
-I det sista steget i guiden kan du skapa databasen. Klicka **[!UICONTROL Start]** för att bekräfta.
+I det sista steget i guiden kan du skapa databasen. Klicka på **[!UICONTROL Start]** för att bekräfta.
 
 ![](assets/s_ncs_install_db_oracle_creation06.png)
 

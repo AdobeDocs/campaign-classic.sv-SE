@@ -2,9 +2,11 @@
 product: campaign
 title: Användningsexempel för AB-tester
 description: Lär dig hur du utför A/B-testning via ett dedikerat användningsfall
+badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: A/B Testing
 exl-id: 4eb139a0-5342-4084-9f6d-d736e05bf1c6
-source-git-commit: 9839dbacda475c2a586811e3c4f686b1b1baab05
+source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
 source-wordcount: '246'
 ht-degree: 4%
@@ -13,7 +15,7 @@ ht-degree: 4%
 
 # A/B Testing this use case {#ab-testing-use-case}
 
-![](../../assets/common.svg)
+
 
 I det här fallet ska vi jämföra två e-postleveranser via ett arbetsflöde för målinriktning. Meddelandet och texten är identiska i båda leveranserna: bara layouten ändras.
 

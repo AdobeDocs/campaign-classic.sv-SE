@@ -2,9 +2,10 @@
 product: campaign
 title: Konfigurera mobilprogrammet i Adobe Campaign
 description: Lär dig hur du börjar med konfigurationen för mobilprogrammet
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 feature: Push
 exl-id: 95bc07cc-8837-4511-81bc-05fad28191c9
-source-git-commit: 8d635722b8961b3edac9cc98f00f17b86f4ee523
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '290'
 ht-degree: 7%
@@ -13,7 +14,7 @@ ht-degree: 7%
 
 # Kom igång med konfigurationen av appen
 
-![](../../assets/v7-only.svg)
+
 
 I det här avsnittet hittar du ett konfigurationsexempel baserat på ett företag som säljer semesterpaket online. Dess mobilapplikation (Neotrips) är tillgänglig för kunderna i två versioner: Neotrips för Android och Neotrips för iOS.
 

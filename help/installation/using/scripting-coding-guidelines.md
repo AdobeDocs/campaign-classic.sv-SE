@@ -1,25 +1,26 @@
 ---
 product: campaign
 title: Riktlinjer för skript och kodning
-description: Läs mer om riktlinjerna som du bör följa när du utvecklar i Adobe Campaign (arbetsflöden, JavaScript, JSSP osv.).
+description: Läs mer om riktlinjerna som ska följas vid utveckling i Adobe Campaign (arbetsflöden, Javascript, JSSP osv.)
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 audience: installation
 content-type: reference
 topic-tags: prerequisites-and-recommendations-
 exl-id: 1f96c3df-0ef2-4f5f-9c36-988cbcc0769f
-source-git-commit: 5d9e2f7d7cea9e6d1243b0e3a790f3990772e603
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '748'
-ht-degree: 3%
+ht-degree: 5%
 
 ---
 
 # Riktlinjer för skript och kodning {#scripting-coding-guidelines}
 
-![](../../assets/v7-only.svg)
+
 
 ## Skript
 
-Mer information finns i [Kampanj-JSAPI-dokumentation](https://experienceleague.adobe.com/developer/campaign-api/api/index.html).
+Mer information finns i [Kampanj-JSAPI-dokumentation](https://experienceleague.adobe.com/developer/campaign-api/api/index.html?lang=sv).
 
 Om du skriptar med arbetsflöde, webbprogram, jssp, ska du följa dessa rutiner:
 
@@ -56,7 +57,7 @@ För att undvika SQL-injektioner måste SQL-funktioner läggas till i tillåtels
 >
 >Om du använder en version som är äldre än 8 140 är **XtkPassUnknownSQLFunactionsToRDBMS** kan anges till &quot;1&quot;. Om du vill skydda databasen tar du bort det här alternativet (eller anger värdet 0).
 
-Om du använder användarindata för att skapa filter i frågor eller SQL-satser måste du alltid undvika dem (se [Kampanj-JSAPI-dokumentation](https://experienceleague.adobe.com/developer/campaign-api/api/index.html) - Dataskydd: funktioner). De här funktionerna är:
+Om du använder användarindata för att skapa filter i frågor eller SQL-satser måste du alltid undvika dem (se [Kampanj-JSAPI-dokumentation](https://experienceleague.adobe.com/developer/campaign-api/api/index.html?lang=sv) - Dataskydd: funktioner). De här funktionerna är:
 
 * NL.XML.escape(data)
 * NL.SQL.escape(data)

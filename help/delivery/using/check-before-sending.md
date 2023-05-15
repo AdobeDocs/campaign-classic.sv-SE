@@ -2,9 +2,11 @@
 product: campaign
 title: Kontrollera före sändning
 description: När meddelandet är klart utför du alla kontroller innan du skickar det
+badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: Deliverability
 exl-id: 50d326b0-3c23-4dbf-9df6-d32b48e30f69
-source-git-commit: 808f459a0b77b1787fc017c031247ab268b5aafa
+source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
 source-wordcount: '892'
 ht-degree: 4%
@@ -13,7 +15,7 @@ ht-degree: 4%
 
 # Utför alla kontroller innan du skickar {#perform-all-checks}
 
-![](../../assets/common.svg)
+
 
 När meddelandet är klart ser du till att innehållet visas korrekt på alla enheter och att det inte innehåller fel som personalisering eller brutna länkar.
 

@@ -2,11 +2,13 @@
 product: campaign
 title: Erbjudanden på en inkommande kanal
 description: Erbjudanden på en inkommande kanal
+badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 audience: interaction
 content-type: reference
 topic-tags: case-study
 exl-id: 90afced3-465d-4370-8a33-51a7e4356135
-source-git-commit: 6eaf7490f1be913986af2924017d014d2ba54559
+source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
 source-wordcount: '2088'
 ht-degree: 0%
@@ -15,7 +17,7 @@ ht-degree: 0%
 
 # Erbjudanden på en inkommande kanal{#offers-on-an-inbound-channel}
 
-![](../../assets/common.svg)
+
 
 ## Presentera ett erbjudande för en anonym besökare {#presenting-an-offer-to-an-anonymous-visitor}
 

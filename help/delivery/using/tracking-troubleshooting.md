@@ -1,19 +1,21 @@
 ---
 product: campaign
 title: Felsökning av spårning
-description: I det här avsnittet finns vanliga frågor om spårning av konfiguration och implementering i Adobe Campaign Classic
+description: I det här avsnittet finns vanliga frågor om spårning av konfiguration och implementering i Adobe Campaign
+badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: Monitoring
 exl-id: 62e67a39-1e5c-4716-a3f3-b0ca69693cd0
-source-git-commit: 9839dbacda475c2a586811e3c4f686b1b1baab05
+source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
-source-wordcount: '759'
+source-wordcount: '758'
 ht-degree: 1%
 
 ---
 
 # Felsökning av spårning {#tracking-troubleshooting}
 
-![](../../assets/common.svg)
+
 
 I det här avsnittet hittar du vanliga frågor om spårning av konfiguration och implementering i Adobe Campaign Classic.
 

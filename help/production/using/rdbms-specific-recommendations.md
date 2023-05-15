@@ -2,11 +2,13 @@
 product: campaign
 title: RDBMS-specifika rekommendationer
 description: RDBMS-specifika rekommendationer
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+badge-on-prem: label="on-premise & hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=en" tooltip="Applies to on-premise and hybrid deployments only"
 audience: production
 content-type: reference
 topic-tags: database-maintenance
 exl-id: a586d70b-1b7f-47c2-a821-635098a70e45
-source-git-commit: 98b338ddf0da184363c599d74aeb98ed7f6303ce
+source-git-commit: 0429c3608fbcec98a397cc17fd45cd173cf64b6e
 workflow-type: tm+mt
 source-wordcount: '1176'
 ht-degree: 1%
@@ -15,7 +17,7 @@ ht-degree: 1%
 
 # RDBMS-specifika rekommendationer{#rdbms-specific-recommendations}
 
-![](../../assets/v7-only.svg)
+
 
 I det här avsnittet beskrivs några rekommendationer och bästa metoder som är anpassade till de olika RDBMS-motorer som Adobe Campaign stöder, så att du enklare kan konfigurera underhållsplaner. Detta är dock bara rekommendationer. Det är upp till er att anpassa dem efter era behov, i enlighet med era interna rutiner och begränsningar. Din databasadministratör har ansvaret för att skapa och köra dessa planer.
 

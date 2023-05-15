@@ -2,11 +2,12 @@
 product: campaign
 title: Synkronisera profiler
 description: Lär dig hur du synkroniserar profiler med ACS Connector
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 feature: ACS Connector
 hide: true
 hidefromtoc: true
 exl-id: 27970a6f-fb22-4418-b29c-c687fd62a78e
-source-git-commit: 978da934b483a54509ad806f375d9b2bb0577dac
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '1201'
 ht-degree: 3%
@@ -15,7 +16,7 @@ ht-degree: 3%
 
 # Synkronisera profiler{#synchronizing-profiles}
 
-![](../../assets/v7-only.svg)
+
 
 ACS Connector replikerar data från Campaign v7 till Campaign Standard. Data som tas emot från Campaign v7 kan användas i Campaign Standard för att skapa leveranser. Du kan se hur profiler synkroniseras genom att utföra de åtgärder som listas nedan.
 

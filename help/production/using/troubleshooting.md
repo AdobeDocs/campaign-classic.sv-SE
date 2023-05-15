@@ -1,12 +1,13 @@
 ---
 product: campaign
 title: Felsökning av produktion
-description: Upptäck felsökningsprocedurer för produktion i samband med konfiguration, övervakning, uppgradering, databehandling och databasunderhåll av Adobe Campaign.
+description: Upptäck felsökningsprocedurer för produktion i samband med konfiguration, övervakning, uppgradering, databehandling och databasunderhåll av Adobe Campaign
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 audience: production
 content-type: reference
 topic-tags: troubleshooting
 exl-id: 78c65b31-e3d9-4a46-a101-26f35d00a4ee
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '219'
 ht-degree: 18%
@@ -15,7 +16,7 @@ ht-degree: 18%
 
 # Felsökning av produktion{#troubleshooting}
 
-![](../../assets/v7-only.svg)
+
 
 Det här avsnittet innehåller felsökningsprocedurer som rör Adobe Campaign allmänna produktionsproblem, som leverans- och arbetsflödeskörning, övervakning, databasunderhåll, anslutning osv.
 

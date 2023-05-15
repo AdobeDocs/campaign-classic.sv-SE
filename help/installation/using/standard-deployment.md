@@ -2,11 +2,12 @@
 product: campaign
 title: Standardiserad driftsättning
 description: Standardiserad driftsättning
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 audience: installation
 content-type: reference
 topic-tags: deployment-types-
 exl-id: 4df126fa-4a6e-46a7-af6e-1e2e97f0072e
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '832'
 ht-degree: 3%
@@ -15,7 +16,7 @@ ht-degree: 3%
 
 # Standardiserad driftsättning{#standard-deployment}
 
-![](../../assets/v7-only.svg)
+
 
 För den här konfigurationen krävs tre datorer:
 
@@ -39,22 +40,22 @@ Den här typen av konfiguration kan hantera ett stort antal mottagare (500 000 t
 ### Fördelar {#advantages}
 
 * Redundansfunktion: Möjlighet att växla mellan processer och datorer om det uppstår maskinvaruproblem.
-* Better overall performance, since the MTA and redirection functions can be deployed on both of the computers behind a load balancer. Med två aktiva MTA:er och tillräckligt med bandbredd är det möjligt att få en sändningsfrekvens på cirka 100 000 e-postmeddelanden per timme.
+* Bättre övergripande prestanda eftersom funktionerna för MTA och omdirigering kan användas på båda datorerna bakom en belastningsutjämnare. Med två aktiva MTA:er och tillräckligt med bandbredd är det möjligt att få en sändningsfrekvens på cirka 100 000 e-postmeddelanden per timme.
 
-## Installation and configuration steps {#installation-and-configuration-steps}
+## Installations- och konfigurationssteg {#installation-and-configuration-steps}
 
 ### Förhandskrav {#prerequisites}
 
-* JDK on all three computers,
-* Web server (IIS, Apache) on both frontals,
+* JDK på alla tre datorerna,
+* Webbserver (IIS, Apache) på båda frontalerna,
 * Åtkomst till en databasserver på alla tre datorerna,
 * Studsa postlåda tillgänglig via POP3,
 * Skapa två DNS-alias:
 
    * Den första som exponeras för allmänheten för spårning och som pekar mot belastningsutjämnaren på en virtuell IP-adress (VIP) och som sedan distribueras till de två frontservrarna.
-   * the second exposed to the internal users for access via the console and pointing to the same application server.
+   * den andra som visas för interna användare för åtkomst via konsolen och som pekar på samma programserver.
 
-* Firewall configured to open STMP (25), DNS (53), HTTP (80), HTTPS (443), SQL (1521 for Oracle, 5432 for PostgreSQL, etc.) ports. For further information, refer to section [Database access](../../installation/using/network-configuration.md#database-access).
+* Brandväggen har konfigurerats för att öppna STMP (25), DNS (53), HTTP (80), HTTPS (443), SQL (1521 för Oracle, 5432 för PostgreSQL osv.) portar. Mer information finns i avsnittet [Databasåtkomst](../../installation/using/network-configuration.md#database-access).
 
 ### Installera programservern {#installing-the-application-server}
 
@@ -65,23 +66,23 @@ Eftersom datorn inte är en spårningsserver ska du inte ta hänsyn till integre
 I följande exempel är parametrarna för instansen:
 
 * Instansens namn: **demo**
-* DNS-mask: **console.campaign.net*** (endast för klientkonsolanslutningar och för rapporter)
+* DNS-mask: **console.campaign.net&#42;** (endast för klientkonsolanslutningar och för rapporter)
 * Språk: Engelska
 * Databas: **kampanj:demo@dbsrv**
 
 ### Installera de två frontservrarna {#installing-the-two-frontal-servers}
 
-The installation and configuration procedure is identical on both computers.
+Installations- och konfigurationsproceduren är identisk på båda datorerna.
 
 Stegen är följande:
 
-1. Install the Adobe Campaign server.
+1. Installera Adobe Campaign-servern.
 
-   For more on this, refer to [Prerequisites of Campaign installation in Linux](../../installation/using/prerequisites-of-campaign-installation-in-linux.md) (Linux) and [Prerequisites of Campaign installation in Windows](../../installation/using/prerequisites-of-campaign-installation-in-windows.md) (Windows).
+   Mer information finns i [Krav för Campaign-installation i Linux](../../installation/using/prerequisites-of-campaign-installation-in-linux.md) (Linux) och [Krav för Campaign-installation i Windows](../../installation/using/prerequisites-of-campaign-installation-in-windows.md) (Windows).
 
 1. Följ integreringsproceduren för webbservrar (IIS, Apache) som beskrivs i följande avsnitt:
 
-   * For Linux: [Integration into a Web server for Linux](../../installation/using/integration-into-a-web-server-for-linux.md)
+   * För Linux: [Integrering med en webbserver för Linux](../../installation/using/integration-into-a-web-server-for-linux.md)
    * För Windows: [Integrering med en webbserver för Windows](../../installation/using/integration-into-a-web-server-for-windows.md)
 
 1. Skapa **demo** -instans. Det finns två sätt att göra detta:
@@ -109,13 +110,13 @@ Stegen är följande:
 
    Mer information om detta finns i [det här avsnittet](../../installation/using/configuring-campaign-server.md#internal-identifier).
 
-1. Link the database to the instance:
+1. Länka databasen till instansen:
 
    ```
    nlserver config -setdblogin:PostgreSQL:campaign:demo@dbsrv -instance:demo
    ```
 
-1. In the **config-default.xml** and **config-demo.xml** files, enable the **web**, **trackinglogd** and **mta** modules.
+1. I **config-default.xml** och **config-demo.xml** filer, aktivera **webb**, **trackinglogd** och **mta** moduler.
 
    Mer information om detta finns i [det här avsnittet](../../installation/using/configuring-campaign-server.md#enabling-processes).
 
@@ -158,8 +159,8 @@ Stegen är följande:
 
    Mer information finns i följande avsnitt:
 
-   * For Linux: [Launching the Web server and testing the configuration](../../installation/using/integration-into-a-web-server-for-linux.md#launching-the-web-server-and-testing-the-configuration)
-   * For Windows: [Launching the Web server and testing the configuration](../../installation/using/integration-into-a-web-server-for-windows.md#launching-the-web-server-and-testing-the-configuration)
+   * För Linux: [Starta webbservern och testa konfigurationen](../../installation/using/integration-into-a-web-server-for-linux.md#launching-the-web-server-and-testing-the-configuration)
+   * För Windows: [Starta webbservern och testa konfigurationen](../../installation/using/integration-into-a-web-server-for-windows.md#launching-the-web-server-and-testing-the-configuration)
 
 1. Starta Adobe Campaign-servern.
 1. I Adobe Campaign-konsolen ansluter du med **admin** logga in utan lösenord och starta distributionsguiden.

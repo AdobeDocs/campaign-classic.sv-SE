@@ -2,9 +2,11 @@
 product: campaign
 title: Kontrollpanel för leverans
 description: Läs mer om hur du använder kontrollpanelen för leverans för att övervaka leveranser
+badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: Monitoring
 exl-id: 44ecc8c6-6584-43eb-96b4-7d8463053123
-source-git-commit: 56459b188ee966cdb578c415fcdfa485dcbed355
+source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
 source-wordcount: '1174'
 ht-degree: 4%
@@ -13,7 +15,7 @@ ht-degree: 4%
 
 # Kontrollpanel för leverans {#delivery-dashboard}
 
-![](../../assets/common.svg)
+
 
 The **kontrollpanel för leverans** är nyckeln för att övervaka leveranser och eventuella problem som uppstår när meddelanden skickas.
 

@@ -2,9 +2,11 @@
 product: campaign
 title: Definiera sidsekvenser för webbformulär
 description: Definiera sidsekvenser för webbformulär
+badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: Web Forms
 exl-id: c5b5c398-c13b-4ebe-88b2-8ff84741422e
-source-git-commit: b6f1556cf49492cefaf61c29a058584b0ccee16a
+source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
 source-wordcount: '702'
 ht-degree: 0%
@@ -13,7 +15,7 @@ ht-degree: 0%
 
 # Definiera sidsekvenser för webbformulär{#defining-web-forms-page-sequencing}
 
-![](../../assets/common.svg)
+
 
 Formuläret kan innehålla en eller flera sidor. Den byggs via ett diagram som låter dig sekvensera sidor, testa, köra skript, hoppa mellan sidor och spela in steg. Det globala diagramdesignläget är samma som för ett Campaign-arbetsflöde.
 

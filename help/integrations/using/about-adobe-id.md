@@ -2,11 +2,13 @@
 product: campaign
 title: Använd din Adobe ID i Campaign
 description: Läs mer om integrationen med Adobe IMS
+badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 audience: integrations
 content-type: reference
 topic-tags: connecting-via-an-adobe-id
 exl-id: 8dad8fa9-674c-433c-af30-8c6d0aadf525
-source-git-commit: eb0e572f0bb6196a58a7dab4999df784d5c4851f
+source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
 source-wordcount: '194'
 ht-degree: 23%
@@ -15,7 +17,7 @@ ht-degree: 23%
 
 # Om Adobe ID{#about-adobe-id}
 
-![](../../assets/common.svg)
+
 
 Adobe Identity Management System (IMS) hjälper administratörer att skapa och hantera användarnas åtkomst till program och tjänster. Mer information om de olika typerna av Adobe-ID finns i [den här sidan](https://helpx.adobe.com/enterprise/using/identity.html).
 

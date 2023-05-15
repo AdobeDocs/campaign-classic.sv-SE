@@ -2,11 +2,13 @@
 product: campaign
 title: Stackspårning i Linux
 description: Stackspårning i Linux
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+badge-on-prem: label="on-premise & hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=en" tooltip="Applies to on-premise and hybrid deployments only"
 audience: production
 content-type: reference
 topic-tags: troubleshooting
 exl-id: 91662d6d-2177-4440-b31f-7b031bd953cb
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 0429c3608fbcec98a397cc17fd45cd173cf64b6e
 workflow-type: tm+mt
 source-wordcount: '119'
 ht-degree: 11%
@@ -15,7 +17,7 @@ ht-degree: 11%
 
 # Stackspårning i Linux{#stack-trace-in-linux}
 
-![](../../assets/v7-only.svg)
+
 
 A **stackspårning** representerar en spårning i en **kärna** typfil. Den här filen genereras om ett datorfel inträffar. Den kan identifiera felets ursprung.
 
@@ -23,7 +25,6 @@ A **stackspårning** representerar en spårning i en **kärna** typfil. Den här
 >
 >* A **kärna** filen har ett namn **kärna.`<num>`**.
 >* **gdb - GNU-felsökning** måste vara installerat på datorn.
-
 >
 
 

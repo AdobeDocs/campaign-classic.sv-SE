@@ -2,17 +2,18 @@
 product: campaign
 title: Skapar dataschemat för FDA
 description: Lär dig hur du skapar dataschemat för FDA
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 exl-id: 8702499b-1700-4d1f-a0e0-f7a9dfb4b88f
-source-git-commit: 40da5774c8a6a228992c4aa400e2d9924215611e
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '187'
-ht-degree: 2%
+ht-degree: 3%
 
 ---
 
 # Skapa dataschemat {#creating-the-data-schema}
 
-![](../../assets/v7-only.svg)
+
 
 Så här skapar du ett schema i en extern databas:
 
@@ -30,7 +31,7 @@ Så här skapar du ett schema i en extern databas:
 
    ![](assets/wf_new_schema_select_table_fda.png)
 
-1. Klicka **[!UICONTROL OK]** för att bekräfta. Adobe Campaign identifierar automatiskt strukturen i den markerade tabellen och genererar det logiska schemat. Observera att Adobe Campaign inte genererar några länkar.
+1. Klicka på **[!UICONTROL OK]** för att bekräfta. Adobe Campaign identifierar automatiskt strukturen i den markerade tabellen och genererar det logiska schemat. Observera att Adobe Campaign inte genererar några länkar.
 
 1. Klicka **[!UICONTROL Save]** för att bekräfta skapandet.
 

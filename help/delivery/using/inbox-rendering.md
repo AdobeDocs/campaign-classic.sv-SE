@@ -2,9 +2,11 @@
 product: campaign
 title: Inkorgsåtergivning i Campaign
 description: Lär dig hur du hämtar e-poståtergivningar och gör dem tillgängliga i en dedikerad rapport
+badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: Inbox Rendering, Monitoring, Email Rendering
 exl-id: a3294e70-ac96-4e51-865f-b969624528ce
-source-git-commit: 048189f49623cf00f4c3f1f34ff4b795d80391ef
+source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
 source-wordcount: '821'
 ht-degree: 8%
@@ -13,7 +15,7 @@ ht-degree: 8%
 
 # Inkorgsåtergivning{#inbox-rendering}
 
-![](../../assets/common.svg)
+
 
 ## Om inkorgsåtergivning {#about-inbox-rendering}
 

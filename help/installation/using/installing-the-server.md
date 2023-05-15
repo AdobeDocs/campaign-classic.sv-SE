@@ -2,20 +2,22 @@
 product: campaign
 title: Installera servern
 description: Installera servern
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+badge-on-prem: label="on-premise & hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=en" tooltip="Applies to on-premise and hybrid deployments only"
 audience: installation
 content-type: reference
 topic-tags: installing-campaign-in-windows-
 exl-id: c0cb4efa-cae9-4312-88fb-738857a89595
-source-git-commit: e88ed7a5710f9ec8713d9e7151d2fd4904097990
+source-git-commit: 0429c3608fbcec98a397cc17fd45cd173cf64b6e
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '391'
+ht-degree: 2%
 
 ---
 
 # Installera servern{#installing-the-server}
 
-![](../../assets/v7-only.svg)
+
 
 ## Köra installationsprogrammet {#executing-the-installation-program}
 

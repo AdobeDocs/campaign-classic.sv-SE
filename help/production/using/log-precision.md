@@ -2,11 +2,13 @@
 product: campaign
 title: Loggprecision
 description: Loggprecision
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+badge-on-prem: label="on-premise & hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=en" tooltip="Applies to on-premise and hybrid deployments only"
 audience: production
 content-type: reference
 topic-tags: troubleshooting
 exl-id: c2470098-62f3-4fee-b1c5-800ed0e91f75
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 0429c3608fbcec98a397cc17fd45cd173cf64b6e
 workflow-type: tm+mt
 source-wordcount: '320'
 ht-degree: 1%
@@ -15,7 +17,7 @@ ht-degree: 1%
 
 # Loggprecision{#log-precision}
 
-![](../../assets/v7-only.svg)
+
 
 Du kan använda den här processen på alla Adobe Campaign-moduler för att öka loggprecisionen.
 
@@ -47,9 +49,9 @@ Adobe Campaign kan arbeta med två loggnivåer:
 
    >[!NOTE]
    >
-   >Om du använder **tracefilter:***, alla loggtyper aktiveras: ncm, rdr, nms, jst, timing, wdbc, ldap, soap, xtk, xtkquery, session, xtkwriter, nätverk, pop3, inmail\
-   De mest användbara loggtyperna är: **wdbc** (visar alla SQL-frågor), **soppa** (visar alla SOAP-anrop), **ldap** (visar alla LDAP-frågor efter autentisering), **xtkquery** (visar listan med alla frågor).\
-   Du kan använda dem var för sig (**tracefilter:soap,wdbc** till exempel). Du kan också aktivera alla och välja att utesluta vissa andra: **-tracefilter:*,!soap**
+   >Om du använder **tracefilter:&#42;**, alla loggtyper aktiveras: ncm, rdr, nms, jst, timing, wdbc, ldap, soap, xtk, xtkquery, session, xtkwriter, nätverk, pop3, inmail\
+   >De mest användbara loggtyperna är: **wdbc** (visar alla SQL-frågor), **soppa** (visar alla SOAP-anrop), **ldap** (visar alla LDAP-frågor efter autentisering), **xtkquery** (visar listan med alla frågor).\
+   >Du kan använda dem var för sig (**tracefilter:soap,wdbc** till exempel). Du kan också aktivera alla och välja att utesluta vissa andra: **-tracefilter:&#42;,!soap**
 
    Kontrollera att felet verkligen uppstod och starta sedan om processen på normalt sätt:
 
@@ -58,7 +60,8 @@ Adobe Campaign kan arbeta med två loggnivåer:
    ```
 
 >[!IMPORTANT]
-Loggarna för dessa kommandon lagras i modulens loggfil.
+>
+>Loggarna för dessa kommandon lagras i modulens loggfil.
 
 Här är ett exempel som är specifikt för modulen Webb. De övriga modulerna fungerar enligt ovan.
 
@@ -81,11 +84,13 @@ nlserver stop mta@<INSTANCE_NAME>; nlserver mta -instance:<INSTANCE_NAME> -trace
 ```
 
 >[!NOTE]
-The **Tracefile** I kan du spara loggarna. I exemplen ovan sparas loggarna i **var/`<instance-name>`/mta_debug.log** och **var/default/web_debug.log** filer.
+>
+>The **Tracefile** I kan du spara loggarna. I exemplen ovan sparas loggarna i **var/`<instance-name>`/mta_debug.log** och **var/default/web_debug.log** filer.
 
 >[!IMPORTANT]
-I Windows ska du inte lägga till alternativet LD_PRELOAD. Följande kommando är tillräckligt:\
-nlserver web -tomcat -verbose -tracefilter:*
+>
+>I Windows ska du inte lägga till alternativet LD_PRELOAD. Följande kommando är tillräckligt:\
+>nlserver web -tomcat -verbose -tracefilter:&#42;
 
 Kontrollera att problemet inträffar igen och starta sedan om modulen:
 

@@ -2,11 +2,13 @@
 product: campaign
 title: Uppgradera till en ny version
 description: Lär dig tekniska steg att uppgradera till en ny version
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+badge-on-prem: label="on-premise & hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=en" tooltip="Applies to on-premise and hybrid deployments only"
 audience: production
 content-type: reference
 topic-tags: updating-adobe-campaign
 exl-id: 4aaa6256-256a-441d-80c9-430f8e427875
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 0429c3608fbcec98a397cc17fd45cd173cf64b6e
 workflow-type: tm+mt
 source-wordcount: '1149'
 ht-degree: 2%
@@ -15,7 +17,7 @@ ht-degree: 2%
 
 # Uppgradera till en ny version (lokalt){#upgrading}
 
-![](../../assets/v7-only.svg)
+
 
 Innan du påbörjar uppgraderingen bör du kontrollera vilken version av Adobe Campaign som ska uppgraderas och läsa [Versionsinformation](../../rn/using/latest-release.md) .
 
@@ -24,7 +26,6 @@ Innan du påbörjar uppgraderingen bör du kontrollera vilken version av Adobe C
 >* Adobe rekommenderar starkt att du gör en säkerhetskopia av databasen för varje instans innan du uppdaterar. Mer information hittar du i [det här avsnittet](../../production/using/backup.md).
 >* Om du vill uppgradera kontrollerar du att du har behörighet och behörighet att komma åt instanser och loggar.
 >* Läs [det här avsnittet](../../installation/using/general-architecture.md) och [uppgradering](https://helpx.adobe.com/se/campaign/kb/acc-build-upgrade.html) kapitel innan du börjar.
-
 >
 
 

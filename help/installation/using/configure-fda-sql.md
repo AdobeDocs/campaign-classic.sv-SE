@@ -2,16 +2,18 @@
 product: campaign
 title: Konfigurera åtkomst till Microsoft SQL Server
 description: Lär dig konfigurera åtkomst till Microsoft SQL Server
-source-git-commit: 26ae7ff1f0837a9a50057d97b00422a288b9dc7a
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+exl-id: 65ab4577-3126-4579-8fcc-e93772ebd1e8
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '493'
+ht-degree: 1%
 
 ---
 
 # Konfigurera åtkomst till Microsoft SQL Server {#configure-fda-sql}
 
-![](../../assets/v7-only.svg)
+
 
 Använd kampanj **Åtkomst till federerade data** (FDA) om du vill bearbeta information som lagras i en extern Microsoft SQL Server-databas. Följ stegen nedan för att konfigurera åtkomst till [!DNL Microsoft SQL Server].
 
@@ -113,4 +115,3 @@ Kopplingen stöder följande alternativ:
 | Autentisering | Typ av autentisering som stöds av kopplingen. Aktuellt värde som stöds: ActiveDirectoryMSI. <br> Mer information finns i exempel 8 av [Microsoft-dokumentation](https://docs.microsoft.com/en-us/sql/connect/odbc/using-azure-active-directory?view=sql-server-ver15#example-connection-strings). |
 | Kryptera | Anger om anslutningar använder TLS-kryptering över nätverket. Möjliga värden är **ja/obligatoriskt (18.0 och senare)**, **no/optional (18.0 and later)** och **strikt (18.0 och senare)**. Standardvärdet är **ja** i version 18.0 och senare och **no** i tidigare versioner. <br>Mer information finns i [Microsoft-dokumentation](https://docs.microsoft.com/en-us/sql/connect/odbc/dsn-connection-string-attribute?view=azure-sqldw-latest#encrypt). |
 | TrustServerCertificate | Aktiverar kryptering med ett självsignerat servercertifikat när det används med **Kryptera**. <br>Godkända värden: **ja** eller **no** (standardvärde, vilket innebär att servercertifikatet valideras). |
-

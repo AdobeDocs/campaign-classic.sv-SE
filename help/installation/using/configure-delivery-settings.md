@@ -2,11 +2,13 @@
 product: campaign
 title: Konfigurering av inställningar för kampanjleverans
 description: Lär dig hur du konfigurerar inställningar för kampanjleverans
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+badge-on-prem: label="on-premise & hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=en" tooltip="Applies to on-premise and hybrid deployments only"
 audience: installation
 content-type: reference
 topic-tags: initial-configuration
 exl-id: 2968d8db-2b4b-48e6-a22e-daba5ffe0576
-source-git-commit: bd9f035db1cbad883e1f27fe901e34dfbc9c1229
+source-git-commit: 0429c3608fbcec98a397cc17fd45cd173cf64b6e
 workflow-type: tm+mt
 source-wordcount: '462'
 ht-degree: 5%
@@ -15,7 +17,7 @@ ht-degree: 5%
 
 # Konfigurera leveransinställningar {#delivery-settings}
 
-![](../../assets/v7-only.svg)
+
 
 Leveransparametrarna måste konfigureras i **serverConf.xml** mapp.
 

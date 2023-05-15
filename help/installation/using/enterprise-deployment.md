@@ -2,11 +2,12 @@
 product: campaign
 title: Driftsättning i företagsklass
 description: Driftsättning i företagsklass
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 audience: installation
 content-type: reference
 topic-tags: deployment-types-
 exl-id: 38c14010-203a-47ab-b23d-6f431dab9a88
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '1221'
 ht-degree: 3%
@@ -15,7 +16,7 @@ ht-degree: 3%
 
 # Driftsättning i företagsklass{#enterprise-deployment}
 
-![](../../assets/v7-only.svg)
+
 
 Detta är den mest fullständiga konfigurationen. Den bygger på standardkonfigurationen för bättre säkerhet och tillgänglighet:
 
@@ -76,7 +77,7 @@ Högre kostnader för maskinvara och administration.
 I följande exempel är parametrarna för instansen:
 
 * Instansens namn: demo
-* DNS-mask: tracking.campaign.net*, console.campaign.net* (programservern hanterar URL:er för klientkonsolanslutningar och rapporter samt för spegelsidor och sidor som inte är prenumerationer)
+* DNS-mask: tracking.campaign.net&#42;, console.campaign.net&#42; (programservern hanterar URL:er för klientkonsolanslutningar och rapporter och för spegelsidor och sidor som inte kan prenumereras)
 * Språk: Engelska
 * Databas: kampanj:demo@dbsrv
 

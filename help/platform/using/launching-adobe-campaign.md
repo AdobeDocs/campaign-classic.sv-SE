@@ -2,11 +2,12 @@
 product: campaign
 title: Starta Adobe Campaign
 description: Starta Adobe Campaign
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: 4d9c5b24-83a2-4495-a56c-5bc376d69703
-source-git-commit: 7f24c8be599d6dece41de848d64feb8079b10ff3
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '513'
 ht-degree: 9%
@@ -15,7 +16,7 @@ ht-degree: 9%
 
 # Starta Adobe Campaign{#launching-adobe-campaign}
 
-![](../../assets/v7-only.svg)
+
 
 Campaign Client-konsolen är en avancerad klient som gör att du kan ansluta till dina Campaign-programservrar. Lär dig hur du hämtar och konfigurerar klientkonsolen i [den här sidan](../../installation/using/installing-the-client-console.md).
 

@@ -2,11 +2,13 @@
 product: campaign
 title: Skapa hypoteser
 description: Lär dig hur du skapar hypoteser i svarshanteraren för Campaign
+badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 audience: campaign
 content-type: reference
 topic-tags: response-manager
 exl-id: e0b3bc9f-5e81-463f-a59e-cd972a47109b
-source-git-commit: 878ba2b532d5cb59af77b6450b12ae5d2ff149b2
+source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
 source-wordcount: '1003'
 ht-degree: 3%
@@ -15,7 +17,7 @@ ht-degree: 3%
 
 # Skapa hypoteser{#creating-hypotheses}
 
-![](../../assets/common.svg)
+
 
 Det finns olika möjligheter att skapa/länka hypoteser till ett kampanjerbjudande eller en kampanjleverans:
 

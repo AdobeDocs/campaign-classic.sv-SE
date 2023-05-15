@@ -2,11 +2,12 @@
 product: campaign
 title: Vanliga frågor och svar om builduppgradering
 description: Vanliga frågor om uppgraderingar av Campaign-versioner
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: 85e2135d-a1a3-44f0-a4f9-de38db5c8726
-source-git-commit: 56ff1f02e614a91200a8f2ca106dcc76e82f122d
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '2031'
 ht-degree: 2%
@@ -15,7 +16,7 @@ ht-degree: 2%
 
 # Vanliga frågor om uppgradering {#build-upgrade-faq}
 
-![](../../assets/v7-only.svg)
+
 
 Adobe Campaign uppdateras regelbundet. Om du känner till vår publicerade [Versionsinformation](../../rn/using/rn-overview.md)är du antagligen medveten om att i genomsnitt 2/3 mindre versioner med nya funktioner släpps förbättringar och korrigeringar varje år. Dessutom släpper vi regelbundet mindre builder med kumulativa korrigeringar. Denna regelbundna uppdateringsfrekvens syftar till att få den senaste och bästa informationen i händerna, så att miljön är helt säker och så tydligt som möjligt förbättrar upplevelsen av vår produkt.
 
@@ -104,7 +105,7 @@ Identifiera låga volymer eller låga trafiktider som skulle vara idealiska för
 
 Granska vår [bygg checklista för uppgradering nedan](#check-list) och testplanerna och se till att resurser som kan utföra testerna är tillgängliga inom 24-48 timmar. när en uppgradering har slutförts.
 
-Mer information finns i [referera till det här dokumentet](https://helpx.adobe.com/campaign/kb/acc-build-upgrade.html).
+Mer information finns i [referera till det här dokumentet](https://helpx.adobe.com/se/campaign/kb/acc-build-upgrade.html).
 
 ## Kan uppgraderingar göras dygnet runt eller på kontorstid utanför kontorstid?
 

@@ -2,17 +2,19 @@
 product: campaign
 title: Kom igång med kuber
 description: Kom igång med kuber
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 feature: Reporting
-source-git-commit: 1635366b9e1302acd3d8997312bf07d5c1a68982
+exl-id: 71d24f03-d41d-49bc-b9a5-8237902f7d6a
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
-source-wordcount: '345'
+source-wordcount: '343'
 ht-degree: 24%
 
 ---
 
 # Kom igång med kuber{#about-cubes}
 
-![](../../assets/v7-only.svg)
+
 
 Utforska data i databasen via **Marknadsföringsanalys** -modul. Det gör att ni kan analysera och mäta data, beräkna statistik, förenkla och optimera framtagning och beräkning av rapporter. Förutom detta kan ni med Marketing Analytics skapa rapporter och bygga upp målpopulationer. När de har identifierats lagras de i listor som kan användas i Adobe Campaign (målinriktning, segmentering osv.).
 
@@ -44,4 +46,4 @@ Använd modulen Campaign Marketing Analytics för att:
 1. Bygg en fråga med data som beräknas och aggregeras i en kub.
 1. Identifiera populationer och referera till dem i listor.
 
-Lär dig hur du skapar och använder kuber i [Adobe Campaign v8-dokumentation](https://experienceleague.adobe.com/docs/campaign/campaign-v8/analytics/reports/cubes/gs-cubes.html){target=&quot;_blank&quot;}.
+Lär dig hur du skapar och använder kuber i [Adobe Campaign v8-dokumentation](https://experienceleague.adobe.com/docs/campaign/campaign-v8/analytics/reports/cubes/gs-cubes.html){target="_blank"}.

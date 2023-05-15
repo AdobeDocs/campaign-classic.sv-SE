@@ -2,9 +2,11 @@
 product: campaign
 title: Rapportens egenskaper
 description: Läs mer om inställningarna för rapportegenskaper
+badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: Reporting
 exl-id: dfa9d329-1086-4f6d-9d03-df159cad5495
-source-git-commit: 36e546a34d8c2345fefed5d459095a76c6224a38
+source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
 source-wordcount: '429'
 ht-degree: 1%
@@ -13,7 +15,7 @@ ht-degree: 1%
 
 # Rapportens egenskaper{#properties-of-the-report}
 
-![](../../assets/common.svg)
+
 
 Ni kan anpassa och konfigurera rapporten efter era behov. Om du vill göra det redigerar du egenskaperna för den. Rapportegenskaper nås via **[!UICONTROL Properties]** ovanför aktivitetssekvensdiagrammet.
 

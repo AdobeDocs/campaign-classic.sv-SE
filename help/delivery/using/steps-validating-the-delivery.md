@@ -2,9 +2,11 @@
 product: campaign
 title: Validera leveransen
 description: Lär dig hur du validerar en leverans
+badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: Deliverability, Email Rendering, Proofs
 exl-id: c2f4d8d0-f0fe-4d1a-92fd-91edaf9729f3
-source-git-commit: 2d5166c355ee090639dcc52866252bae6beb81f6
+source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
 source-wordcount: '1666'
 ht-degree: 4%
@@ -13,7 +15,7 @@ ht-degree: 4%
 
 # Validera leveransen {#validating-the-delivery}
 
-![](../../assets/common.svg)
+
 
 När en leverans har skapats och konfigurerats måste du validera den innan du skickar den till huvudmålet.
 
@@ -125,7 +127,7 @@ Om en leverans är för stor är det bättre att tilldela den en låg prioritet 
 >
 >Om du vill vara säker på att de större leveransanalyserna inte fördröjer arbetsflödena kan du schemalägga deras körningar genom att trycka på knappen **[!UICONTROL Schedule execution for a time of low activity]**.
 
-## Skicka ett bevis {#sending-a-proof}
+## Skicka en korrektur {#sending-a-proof}
 
 För att upptäcka eventuella fel i meddelandekonfigurationen rekommenderar Adobe att du skapar en leveransvalideringscykel. Se till att innehållet godkänns så ofta som det behövs genom att skicka korrekturer till testmottagare. Ett korrektur ska skickas varje gång en ändring görs för att godkänna innehållet.
 

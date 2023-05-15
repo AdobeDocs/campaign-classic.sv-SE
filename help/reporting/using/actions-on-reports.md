@@ -2,9 +2,11 @@
 product: campaign
 title: Åtgärder på rapporter
 description: Åtgärder på rapporter
+badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: Reporting
 exl-id: b30cdeaf-4ad6-473d-bdbc-91984755b609
-source-git-commit: 4ff86349d6b8966273585bf2a1ea0d785a7e87cb
+source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
 source-wordcount: '543'
 ht-degree: 3%
@@ -13,7 +15,7 @@ ht-degree: 3%
 
 # Åtgärder på rapporter{#actions-on-reports}
 
-![](../../assets/common.svg)
+
 
 När du visar en rapport kan du utföra ett visst antal åtgärder med verktygsfältet. Dessa beskrivs nedan.
 

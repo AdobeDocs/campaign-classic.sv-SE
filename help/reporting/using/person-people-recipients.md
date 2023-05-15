@@ -2,9 +2,11 @@
 product: campaign
 title: Person, personer och mottagare
 description: Person, personer och mottagare
+badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: Reporting
 exl-id: 69b810f3-aa8b-4ab5-95c1-831257d7fcb9
-source-git-commit: 36e546a34d8c2345fefed5d459095a76c6224a38
+source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
 source-wordcount: '703'
 ht-degree: 5%
@@ -13,7 +15,7 @@ ht-degree: 5%
 
 # Person/personer och mottagare {#person-people-and-recipients}
 
-![](../../assets/common.svg)
+
 
 Det här exemplet hjälper dig att förstå skillnaden mellan en person/en person och en mottagare i Adobe Campaign. Vi kommer att skicka en leverans till flera personer för att markera skillnaden mellan människor och mottagare samtidigt som vi beskriver beräkningsmetoden för följande indikatorer:
 

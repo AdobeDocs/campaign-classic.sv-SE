@@ -1,12 +1,13 @@
 ---
 product: campaign
 title: Skapa händelsetyper
-description: Lär dig hur du skapar händelsetyper som matchar de transaktionsmeddelanden som du vill skicka i Adobe Campaign Classic.
+description: Lär dig hur du skapar händelsetyper som matchar transaktionsmeddelanden som du vill skicka i Adobe Campaign Classic
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 audience: message-center
 content-type: reference
 topic-tags: instance-configuration
 exl-id: 98b7c827-f31d-46a6-a28d-40a78a4b4248
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '169'
 ht-degree: 3%
@@ -15,7 +16,7 @@ ht-degree: 3%
 
 # Skapa händelsetyper {#creating-event-types}
 
-![](../../assets/v7-only.svg)
+
 
 För att vara säker på att varje händelse kan ändras till ett personligt meddelande måste du först skapa **händelsetyper**.
 

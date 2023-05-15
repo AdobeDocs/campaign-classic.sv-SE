@@ -2,11 +2,12 @@
 product: campaign
 title: Vanliga frågor och svar om inställningar i Campaign
 description: Vanliga frågor och svar om Campaign Classic
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: 50bed489-2a0f-4123-a326-3d68c8295662
-source-git-commit: f000cb8bae164c22d1ede15db4e763cf50530674
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '758'
 ht-degree: 92%
@@ -15,7 +16,7 @@ ht-degree: 92%
 
 # Vanliga frågor och svar om inställningar i Campaign {#settings-faq}
 
-![](../../assets/v7-only.svg)
+
 
 Lär dig viktiga konfigurationer för att ställa in instansen i Campaign så att den passar dina behov.
 

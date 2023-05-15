@@ -2,11 +2,13 @@
 product: campaign
 title: Övervaka processer
 description: Lär dig övervaka Campaign-processer
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+badge-on-prem: label="on-premise & hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=en" tooltip="Applies to on-premise and hybrid deployments only"
 audience: production
 content-type: reference
 topic-tags: production-procedures
 exl-id: 1f5d8c7e-6f9b-46cd-a9b4-a3b48afb1794
-source-git-commit: f2ec24a122eff94f62bd79e656e771fecd803659
+source-git-commit: 0429c3608fbcec98a397cc17fd45cd173cf64b6e
 workflow-type: tm+mt
 source-wordcount: '3610'
 ht-degree: 0%
@@ -15,7 +17,7 @@ ht-degree: 0%
 
 # Övervaka processer{#monitoring-processes}
 
-![](../../assets/v7-only.svg)
+
 
 Programservern och omdirigeringsservern (**spårning**) kan övervakas manuellt eller automatiskt.
 
@@ -285,7 +287,7 @@ Listan över indikatorer för den här rapporten visas under diagrammet.
 
    * Kaki-kurva: kön med fördröjda överföringar. Dessa meddelanden kan inte returneras för tillfället på grund av begränsning eller på grund av att det inte finns någon anslutning till målet. Försök görs var femte, tionde, tionde, 20:e, 40:e, 2:a minut, osv. för den definierade **MaxAgeSec** tiden innan de överges.
 
-1. I den här tabellen visas en detalj av övergivna meddelanden (röd kurva i det andra diagrammet): visar hur många meddelanden som har övergetts utan återförsök (mauve) jämfört med meddelanden vars sändning misslyckades (red). På så sätt kan du visa andelen meddelanden som inte har bearbetats inom den angivna perioden på grund av begränsningar i statistikservern (strypning) eller på grund av att fjärrservern inte är tillgänglig.
+1. I den här tabellen visas en detalj i övergivna meddelanden (röd kurva i det andra diagrammet): visar hur många meddelanden som har övergetts utan återförsök (mauve) jämfört med meddelanden vars sändning misslyckades (red). På så sätt kan du visa andelen meddelanden som inte har bearbetats inom den angivna perioden på grund av begränsningar i statistikservern (strypning) eller på grund av att fjärrservern inte är tillgänglig.
 1. SMTP-anslutningar öppnas eller öppnas.
 1. Uppskattning av antalet **mtachild**.
 

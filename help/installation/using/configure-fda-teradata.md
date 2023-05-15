@@ -2,11 +2,12 @@
 product: campaign
 title: Konfigurera åtkomst till Teradata
 description: Lär dig konfigurera åtkomst till Teradata i FDA
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 audience: platform
 content-type: reference
 topic-tags: connectors
 exl-id: 3a5856c3-b642-4722-97ff-6ae7107efdbe
-source-git-commit: 65e80f16a6beaee89b51636017c42766589e179e
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '1798'
 ht-degree: 1%
@@ -15,7 +16,7 @@ ht-degree: 1%
 
 # Konfigurera åtkomst till Teradata {#configure-access-to-teradata}
 
-![](../../assets/v7-only.svg)
+
 
 Använd kampanj [Åtkomst till federerade data](../../installation/using/about-fda.md) (FDA) om du vill bearbeta information som lagras i en extern databas. Följ stegen nedan för att konfigurera åtkomst till Teradata.
 
@@ -119,7 +120,7 @@ Om du vill konfigurera ett annat externt konto som även använder ODBC, t.ex. S
 
 ### Frågeränder
 
-När flera Adobe Campaign-användare ansluter till samma externa FDA-Teradata-konto är **[!UICONTROL Query banding]** kan du ställa in ett frågeband, dvs. en uppsättning nyckel/värde-par, för en session.
+När flera Adobe Campaign-användare ansluter till samma externa FDA-Teradata-konto är **[!UICONTROL Query banding]** kan du ställa in ett frågeband, dvs. en uppsättning nyckel-/värdepar, för en session.
 
 ![](assets/ext_account_20.png)
 

@@ -2,18 +2,19 @@
 product: campaign
 title: Globala rapporter
 description: Globala rapporter
+badge: label="v7" type="Informative" tooltip="Gäller endast Campaign Classic v7"
 feature: Reporting, Monitoring
 exl-id: 6839fd7e-ecf4-4504-90a8-0207bc3991e4
-source-git-commit: 1635366b9e1302acd3d8997312bf07d5c1a68982
+source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
-source-wordcount: '2295'
-ht-degree: 4%
+source-wordcount: '2306'
+ht-degree: 3%
 
 ---
 
 # Globala rapporter {#global-reports}
 
-![](../../assets/common.svg)
+
 
 Dessa rapporter gäller aktiviteten hos data i hela databasen. Om du vill visa rapportkontrollpanelen går du till **[!UICONTROL Reports]** -fliken.
 

@@ -1,12 +1,13 @@
 ---
 product: campaign
 title: Konfigurera instanser
-description: Lär dig hur du konfigurerar Transactional Messaging-kontroll och körningsinstanser i Adobe Campaign Classic.
+description: Lär dig konfigurera Transactional Messaging-kontroll och körningsinstanser i Adobe Campaign Classic
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 audience: message-center
 content-type: reference
 topic-tags: instance-configuration
 exl-id: 23a384d1-27ce-46c2-98c3-0fb60a5c50ee
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '1222'
 ht-degree: 1%
@@ -16,7 +17,7 @@ ht-degree: 1%
 
 # Konfigurera instanser {#creating-a-shared-connection}
 
-![](../../assets/v7-only.svg)
+
 
 Om du vill använda funktionerna för transaktionsmeddelanden måste du konfigurera instanser för kontroll och körning. Du kan använda antingen:
 * [En kontrollinstans](#control-instance) associerat med en eller flera körningsinstanser

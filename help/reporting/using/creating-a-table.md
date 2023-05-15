@@ -2,9 +2,11 @@
 product: campaign
 title: Skapa en tabell
 description: Skapa en tabell
+badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: Reporting
 exl-id: 05f76bdf-6dcd-4360-9e72-0ba6a4dd0d5e
-source-git-commit: 1635366b9e1302acd3d8997312bf07d5c1a68982
+source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
 source-wordcount: '2495'
 ht-degree: 1%
@@ -13,7 +15,7 @@ ht-degree: 1%
 
 # Skapa en tabell{#creating-a-table}
 
-![](../../assets/common.svg)
+
 
 Du kan lägga till en tabell i en rapport för att visa data. Detta kan vara en pivottabell som skapas baserat på kubmått, en lista med en grupp eller en tabell som innehåller en uppdelning av värden.
 

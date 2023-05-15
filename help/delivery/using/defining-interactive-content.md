@@ -2,18 +2,20 @@
 product: campaign
 title: Definiera interaktivt material i Adobe Campaign Classic
 description: Lär dig definiera interaktivt och dynamiskt e-postinnehåll med AMP i Adobe Campaign
+badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: Email Design, Dynamic Content
 exl-id: 3110c371-bbf2-4ab2-a701-3f348b5c1e7f
-source-git-commit: 1348c1d88d0732b0dda4ed488b4a258ac7e15c42
+source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '1505'
+ht-degree: 4%
 
 ---
 
 # Definiera interaktivt innehåll{#defining-interactive-content}
 
-![](../../assets/common.svg)
+
 
 Med Adobe Campaign kan du använda de interaktiva [AMP för e-post](https://amp.dev/about/email/) format, som gör det möjligt att skicka dynamiska e-postmeddelanden under vissa förhållanden.
 
@@ -65,7 +67,7 @@ Följ stegen nedan för att skapa ett e-postmeddelande i AMP-format.
 
 >[!IMPORTANT]
 >
->Se till att du följer AMP-kraven för e-post och specifikationerna i [Dokumentation för AMP-utvecklare](https://amp.dev/documentation/guides-and-tutorials/learn/email_fundamentals/?format=email). Du kan även läsa [AMP för bästa praxis inom e-postmarknadsföring](https://amp.dev/documentation/guides-and-tutorials/develop/amp_email_best_practices/?format=email).
+>Kontrollera att du följer AMP-kraven för e-post och specifikationerna som finns i [Dokumentation för AMP-utvecklare](https://amp.dev/documentation/guides-and-tutorials/learn/email_fundamentals/?format=email). Du kan även läsa [AMP för bästa praxis inom e-postmarknadsföring](https://amp.dev/documentation/guides-and-tutorials/develop/amp_email_best_practices/?format=email).
 
 1. Välj en mall när du skapar e-postleveransen.
 

@@ -2,9 +2,10 @@
 product: campaign
 title: Integrera Campaign SDK
 description: Lär dig hur du integrerar Campaign SDK med din mobilapp
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 feature: Mobile SDK Integration, Push
 exl-id: a5f6b82d-5561-4e56-b2ed-7fd6fd8c2b55
-source-git-commit: 1ead0b1afc8c924cb4f8d36c608cd570e5fe7a44
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '995'
 ht-degree: 0%
@@ -13,7 +14,7 @@ ht-degree: 0%
 
 # Integrera Campaign SDK med er app {#integrating-campaign-sdk-into-the-mobile-application}
 
-![](../../assets/v7-only.svg)
+
 
 >[!CAUTION]
 >

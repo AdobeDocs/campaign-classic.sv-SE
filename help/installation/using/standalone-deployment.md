@@ -2,11 +2,12 @@
 product: campaign
 title: Fristående driftsättning
 description: Fristående driftsättning
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 audience: installation
 content-type: reference
 topic-tags: deployment-types-
 exl-id: 194366ab-fd9f-4431-9163-ae16c1f96db2
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '1086'
 ht-degree: 2%
@@ -15,7 +16,7 @@ ht-degree: 2%
 
 # Fristående driftsättning{#standalone-deployment}
 
-![](../../assets/v7-only.svg)
+
 
 Den här konfigurationen innehåller alla komponenter på samma dator:
 
@@ -75,7 +76,7 @@ När volymen växer flyttar en variant av den här arkitekturen databasservern t
 I följande exempel är parametrarna för instansen:
 
 * Instansens namn: **demo**
-* DNS-mask: **console.campaign.net*** (endast för klientkonsolanslutningar och för rapporter)
+* DNS-mask: **console.campaign.net&#42;** (endast för klientkonsolanslutningar och för rapporter)
 * Databas: **kampanj:demo@dbsrv**
 
 ### Installera och konfigurera (en dator) {#installing-and-configuring--single-machine-}

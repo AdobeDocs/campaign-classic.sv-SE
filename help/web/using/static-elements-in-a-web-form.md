@@ -2,9 +2,11 @@
 product: campaign
 title: Statiska element i ett webbformulär
 description: Statiska element i ett webbformulär
+badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: Web Forms
 exl-id: 364d90af-4b18-4104-8b6a-be80cfde3b0b
-source-git-commit: b6f1556cf49492cefaf61c29a058584b0ccee16a
+source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
 source-wordcount: '1031'
 ht-degree: 3%
@@ -13,7 +15,7 @@ ht-degree: 3%
 
 # Statiska element i ett webbformulär{#static-elements-in-a-web-form}
 
-![](../../assets/common.svg)
+
 
 Du kan inkludera element som användaren inte har någon interaktion med på formulärets sidor; Detta är statiska element som bilder, HTML, ett vågrätt fält eller en hypertextlänk. Dessa element skapas med den första knappen i verktygsfältet genom att du väljer **[!UICONTROL Static elements]**.
 

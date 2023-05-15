@@ -2,9 +2,10 @@
 product: campaign
 title: Varning
 description: Varning
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 feature: Workflows
 exl-id: 21698e85-7b58-4bde-bbd2-0ee06ac90307
-source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '84'
 ht-degree: 3%
@@ -13,7 +14,7 @@ ht-degree: 3%
 
 # Varning{#alert}
 
-![](../../assets/v7-only.svg)
+
 
 An **Varning** aktiviteten skickar ett meddelande till en grupp operatorer. Det fungerar på samma sätt som en godkännandeaktivitet, men inget svar förväntas i detta fall.
 

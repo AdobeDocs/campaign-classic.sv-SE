@@ -2,9 +2,10 @@
 product: campaign
 title: SMS-anslutningsmigrering stöds inte
 description: Migrera en SMS-koppling som inte stöds till den utökade allmänna SMPP-anslutningen
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 hidefromtoc: true
 exl-id: 60acf80c-8506-410b-ab2c-4f67a5677b43
-source-git-commit: 1e11b7419388698f5de366cbeddf2be88ef12873
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '453'
 ht-degree: 1%
@@ -13,7 +14,7 @@ ht-degree: 1%
 
 # Migrera en SMS-koppling som inte stöds till den utökade allmänna SMPP-anslutningen{#unsupported-connector-migration}
 
-![](../../assets/v7-only.svg)
+
 
 Från och med version 20.2 har äldre anslutningar tagits bort. Det här dokumentet hjälper dig att migrera anslutningar som fortfarande körs på det gamla systemet till den rekommenderade SMPP-anslutningen.
 

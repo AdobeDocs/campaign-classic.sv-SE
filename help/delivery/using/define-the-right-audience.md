@@ -2,9 +2,11 @@
 product: campaign
 title: Definiera rätt målgrupp
 description: Lär dig de bästa sätten att välja målgrupp
+badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: Audiences
 exl-id: c0533148-b027-4158-9b95-8d2df769e963
-source-git-commit: 56459b188ee966cdb578c415fcdfa485dcbed355
+source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
 source-wordcount: '487'
 ht-degree: 3%
@@ -13,7 +15,7 @@ ht-degree: 3%
 
 # Definiera rätt målgrupp {#define-the-right-audience}
 
-![](../../assets/common.svg)
+
 
 Målgruppen är följande: skapa listor noggrant, testa e-postmeddelanden på populära e-postklienter och mobila enheter och se till att e-postlistorna är aktuella (utan okända eller föråldrade adresser). Du kan också skicka korrektur som hjälper dig att konfigurera en komplett valideringscykel.
 

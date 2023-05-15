@@ -2,9 +2,11 @@
 product: campaign
 title: Använd en webbformulärsmall
 description: Använd en webbformulärsmall
+badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: Web Forms
 exl-id: 0cbb8e4c-8cb4-4dd7-ad09-b8b3165c19a8
-source-git-commit: b6f1556cf49492cefaf61c29a058584b0ccee16a
+source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
 source-wordcount: '211'
 ht-degree: 7%
@@ -13,7 +15,7 @@ ht-degree: 7%
 
 # Använd en webbformulärsmall{#using-a-web-form-template}
 
-![](../../assets/common.svg)
+
 
 Formulärmallar är återanvändbara konfigurationer där du kan skapa nya formulär. Som standard lagras formulärmallar med webbprogrammallar i **[!UICONTROL Resources > Templates > Web application templates]** nod.
 

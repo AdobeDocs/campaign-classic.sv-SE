@@ -1,11 +1,12 @@
 ---
 product: campaign
 title: Infoga Adobe Experience Platform-segment i Campaign
-description: Lär dig hur du kan få in Adobe Experience Platform-målgrupper i Campaign Classic.
+description: Lär dig hur du importerar Adobe Experience Platform-målgrupper till Campaign Classic
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 audience: integrations
 content-type: reference
 exl-id: 6db8a653-b649-402c-8814-24826edadba7
-source-git-commit: 89a18ae9ec57376d6ebec6c416c7562f960eb882
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '303'
 ht-degree: 0%
@@ -14,7 +15,7 @@ ht-degree: 0%
 
 # Infoga Adobe Experience Platform-segment i Campaign {#destinations}
 
-![](../../assets/v7-only.svg)
+
 
 Om ni vill få in Adobe Experience Platform-målgrupper i Campaign och använda dem i era arbetsflöden måste ni först koppla samman Adobe Campaign som Adobe Experience Platform **Mål** och konfigurera det med segmentet som ska exporteras.
 

@@ -2,9 +2,11 @@
 product: campaign
 title: Om innehållshantering
 description: Kom igång med modulen Innehållshanteraren för Campaign
+badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: Landing Pages, Email Design
 exl-id: 87434cc2-1636-4558-ab60-255b7f873c0c
-source-git-commit: 9839dbacda475c2a586811e3c4f686b1b1baab05
+source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
 source-wordcount: '249'
 ht-degree: 2%
@@ -13,7 +15,7 @@ ht-degree: 2%
 
 # Om innehållshantering{#about-content-management}
 
-![](../../assets/common.svg)
+
 
 Adobe Campaign Content Manager-modulen är en specifik Campaign Classic [inbyggt paket](../../installation/using/installing-campaign-standard-packages.md) som du kan installera för att skapa återkommande nyhetsbrev eller webbplatser. Det kan hjälpa dig att skapa, validera och publicera meddelanden.
 

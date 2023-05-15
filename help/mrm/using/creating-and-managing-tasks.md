@@ -2,11 +2,12 @@
 product: campaign
 title: Skapa och hantera uppgifter
 description: Skapa och hantera uppgifter
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 audience: campaign
 content-type: reference
 topic-tags: tasks--resources-and-budgets
 exl-id: cc1200fa-f6d8-4f41-aed1-d1a7f229447a
-source-git-commit: 98380c18b915cfebc980e68f9840f9d8919eaca4
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '3729'
 ht-degree: 0%
@@ -15,7 +16,7 @@ ht-degree: 0%
 
 # Skapa och hantera uppgifter{#creating-and-managing-tasks}
 
-![](../../assets/v7-only.svg)
+
 
 Med Adobe Campaign kan du skapa uppgifter och hantera hela deras livscykel direkt i programmet. Program- och kampanjimplementering kan delas upp i uppgifter som tilldelas Adobe Campaign-operatörer eller externa tjänsteleverantörer. Med det här åtgärdsläget kan du skapa en öppen samarbetsmiljö som innehåller alla programdeltagare och externa deltagare.
 
@@ -434,7 +435,6 @@ En uppgift kan vara: **[!UICONTROL Scheduled]**, **[!UICONTROL In progress]**, *
 >
 >* Aktivitetens status uppdateras automatiskt.
 >* Även om giltighetsperioden är slut visas uppgifter som inte stängts fortfarande i listan över pågående uppgifter. En varning meddelar operatorer om att aktiviteten är sen.
-
 >
 
 

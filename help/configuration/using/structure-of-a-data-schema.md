@@ -2,11 +2,12 @@
 product: campaign
 title: Dataschemats struktur
 description: Dataschemats struktur
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 audience: configuration
 content-type: reference
 topic-tags: editing-schemas
 exl-id: 86036f2f-ec7c-413e-b1e1-10a71a06cd6d
-source-git-commit: f000cb8bae164c22d1ede15db4e763cf50530674
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '141'
 ht-degree: 10%
@@ -14,8 +15,6 @@ ht-degree: 10%
 ---
 
 # Dataschemats struktur{#structure-of-a-data-schema}
-
-![](../../assets/v7-only.svg)
 
 Strukturen i ett dataschema visas i form av en trädstruktur. Om du vill visa det grafiskt i Adobe Campaign klientkonsol väljer du målschemat och klickar på **[!UICONTROL Structure]** underflik.
 

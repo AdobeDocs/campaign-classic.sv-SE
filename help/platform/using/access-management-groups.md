@@ -2,20 +2,21 @@
 product: campaign
 title: Skapa och hantera operatorgrupper
 description: Lär dig hur du ger åtkomst till operatörsgrupper
+badge: label="v7" type="Informative" tooltip="Gäller endast Campaign Classic v7"
 feature: Access Management, Permissions
 role: User, Admin
 level: Beginner
 exl-id: d5833d3d-e8ef-4f2b-8084-4ba825c79525
-source-git-commit: f05eefc9945c4ead89eb448b6e28c3523559e055
+source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
-source-wordcount: '498'
+source-wordcount: '509'
 ht-degree: 0%
 
 ---
 
 # Skapa och hantera operatorgrupper {#operator-groups}
 
-![](../../assets/common.svg)
+
 
 Operatorgrupper skapas via **[!UICONTROL Administration > Access management > Operator groups]** i trädet.
 

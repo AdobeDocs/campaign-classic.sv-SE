@@ -2,9 +2,11 @@
 product: campaign
 title: Bästa praxis för kampanjleverans
 description: Lär dig de bästa sätten att designa och skicka en leverans
+badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: Deliverability
 exl-id: eb5ad5a4-f640-4b26-b04f-b5567761d996
-source-git-commit: 90c52ec144a6a3c1b534a80507e38fa3ed64fc83
+source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
 source-wordcount: '103'
 ht-degree: 23%
@@ -13,7 +15,7 @@ ht-degree: 23%
 
 # God praxis för leverans {#delivery-best-practices}
 
-![](../../assets/common.svg)
+
 
 Lär dig de bästa metoderna för leveransdesign och leverans med Adobe Campaign. Använd länkarna nedan för att navigera bland ämnen och hitta vägledning.
 

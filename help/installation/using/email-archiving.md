@@ -2,20 +2,21 @@
 product: campaign
 title: E-postarkivering
 description: E-postarkivering
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 audience: installation
 content-type: reference
 topic-tags: additional-configurations
 exl-id: 424faf25-2fd5-40d1-a2fc-c715fc0b8190
-source-git-commit: bd9f035db1cbad883e1f27fe901e34dfbc9c1229
+source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
-source-wordcount: '1305'
-ht-degree: 3%
+source-wordcount: '1359'
+ht-degree: 5%
 
 ---
 
 # Konfigurera dold e-postkopia {#email-archiving}
 
-![](../../assets/v7-only.svg)
+
 
 Du kan konfigurera Adobe Campaign att behålla en kopia av e-postmeddelanden som skickas från din plattform.
 
@@ -34,6 +35,9 @@ För att göra detta överförs e-postfiler som motsvarar skickade e-postmeddela
 * E-postarkiveringssystemet har ändrats med Adobe Campaign 17.2 (build 8795). Om du redan har arkiverat via e-post måste du uppgradera manuellt till det nya BCC-systemet för e-post. Mer information finns i [Gå till den nya e-postkontrollen](#updated-email-archiving-system--bcc-) -avsnitt.
 
 ## Aktiverar e-postkopia (lokalt) {#activating-email-archiving--on-premise-}
+
+[!BADGE Lokal och hybrid]{type=Caution url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=sv" tooltip="Gäller endast lokala och hybrida driftsättningar"}
+
 
 Följ stegen nedan för att aktivera arkivering av e-post i webbläsare när Adobe Campaign är installerat lokalt.
 
@@ -102,6 +106,9 @@ Se till att du justerar parametrarna efter e-postsändningens genomströmning. I
 
 ## Konfigurera e-postadressen för den lokala kopian (lokal) {#configuring-the-bcc-email-address--on-premise-}
 
+[!BADGE Lokal och hybrid]{type=Caution url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=sv" tooltip="Gäller endast lokala och hybrida driftsättningar"}
+
+
 >[!IMPORTANT]
 >
 >Av sekretesskäl måste e-post från innehållsförteckningen behandlas av ett arkiveringssystem som kan lagra säkert personligt identifierbar information (PII).
@@ -124,6 +131,10 @@ I **config-`<instance name>.xml`** använder du följande parametrar för att de
 >Dessutom tilldelar reläet en **[!UICONTROL Sent]** status för alla e-postmeddelanden, även de som inte skickas. Därför arkiveras alla meddelanden.
 
 ## Gå till den nya e-postkontrollen {#updated-email-archiving-system--bcc-}
+
+[!BADGE Lokal och hybrid]{type=Caution url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=sv" tooltip="Gäller endast lokala och hybrida driftsättningar"}
+
+
 
 >[!IMPORTANT]
 >

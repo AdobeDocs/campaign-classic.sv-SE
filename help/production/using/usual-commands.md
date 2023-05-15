@@ -2,11 +2,13 @@
 product: campaign
 title: Vanliga kommandon
 description: Vanliga kommandon
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+badge-on-prem: label="on-premise & hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=en" tooltip="Applies to on-premise and hybrid deployments only"
 audience: production
 content-type: reference
 topic-tags: production-procedures
 exl-id: 472ccc04-e68e-4ccb-90e9-7d626a4e794f
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 0429c3608fbcec98a397cc17fd45cd173cf64b6e
 workflow-type: tm+mt
 source-wordcount: '407'
 ht-degree: 3%
@@ -15,7 +17,7 @@ ht-degree: 3%
 
 # Vanliga kommandon{#usual-commands}
 
-![](../../assets/v7-only.svg)
+
 
 I det här avsnittet visas vanliga kommandon i Adobe Campaign.
 
@@ -29,7 +31,6 @@ Parametern **`<command>`** motsvarar modulen.
 >
 >* I vilket fall som helst kan du lägga till **-noconsole** argument för att ta bort kommentarer som visas när modulerna har startats.
 >* Omvänt kan du lägga till argumentet **-verbose** för att visa mer information.
-
 >
 
 
