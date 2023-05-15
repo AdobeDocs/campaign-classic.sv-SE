@@ -5,10 +5,10 @@ description: Lär dig hur du börjar med konfigurationen för mobilprogrammet
 badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 feature: Push
 exl-id: 95bc07cc-8837-4511-81bc-05fad28191c9
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: e011333411af79b985166a4e73592a1860749cf1
 workflow-type: tm+mt
-source-wordcount: '290'
-ht-degree: 7%
+source-wordcount: '308'
+ht-degree: 10%
 
 ---
 
@@ -31,6 +31,8 @@ Om du vill skicka push-meddelanden i Adobe Campaign måste du:
 >Gå till **[!UICONTROL Subscriptions]** -fliken för tjänsten om du vill visa en lista över prenumeranter på tjänsten, dvs. alla personer som har installerat programmet på mobilen och gått med på att ta emot meddelanden.
 
 ## Installera paketet {#installing-package-ios}
+
+[!BADGE Lokal och hybrid]{type=Caution url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=sv" tooltip="Gäller endast lokala och hybrida driftsättningar"}
 
 ![](assets/do-not-localize/how-to-video.png) [Lär dig hur du installerar mobilappspaketet i video](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/sending-messages/push-channel/installing-the-mobile-app-channel.html?lang=en#sending-messages)
 

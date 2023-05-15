@@ -6,10 +6,10 @@ badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
 badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: Inbox Rendering, Monitoring, Email Rendering
 exl-id: a3294e70-ac96-4e51-865f-b969624528ce
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: e011333411af79b985166a4e73592a1860749cf1
 workflow-type: tm+mt
-source-wordcount: '821'
-ht-degree: 8%
+source-wordcount: '839'
+ht-degree: 9%
 
 ---
 
@@ -35,6 +35,8 @@ De mobil-, meddelande- och webbmejlklienter som finns för **Inkorgsåtergivning
 >Återgivning av inkorgen behövs inte för att testa personalisering i leveranser. Personaliseringen kan kontrolleras med Adobe Campaign verktyg som **[!UICONTROL Preview]** och [Korrektur](steps-validating-the-delivery.md#sending-a-proof).
 
 ## Aktivera inkorgsåtergivning {#activating-inbox-rendering}
+
+[!BADGE Lokal och hybrid]{type=Caution url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=sv" tooltip="Gäller endast lokala och hybrida driftsättningar"}
 
 För värdbaserade klienter och hybridklienter konfigureras Inkorgsåtergivning av Adobe teknisk support och konsulter. Kontakta din kontoansvarige på Adobe om du vill ha mer information.
 
