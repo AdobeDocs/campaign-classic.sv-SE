@@ -8,9 +8,9 @@ audience: production
 content-type: reference
 topic-tags: production-procedures
 exl-id: 1f5d8c7e-6f9b-46cd-a9b4-a3b48afb1794
-source-git-commit: 4b13e310fcee9ba24e83b697fca57bc494505642
+source-git-commit: 9ea7eea5a539407a17b0a11c942570cfa6c16f2f
 workflow-type: tm+mt
-source-wordcount: '3610'
+source-wordcount: '3598'
 ht-degree: 0%
 
 ---
@@ -18,12 +18,11 @@ ht-degree: 0%
 # Övervaka processer{#monitoring-processes}
 
 
-
 Programservern och omdirigeringsservern (**spårning**) kan övervakas manuellt eller automatiskt.
 
 ## Manuell övervakning {#manual-monitoring}
 
-Gå till **[!UICONTROL Monitoring]** och klicka på **[!UICONTROL Overview]** för att visa Adobe Campaign processövervakningssida.
+Om du vill gå till Adobe Campaign processövervakningssida går du till **[!UICONTROL Monitoring]** och klicka på **[!UICONTROL Overview]** länk.
 
 ![](assets/d_ncs_monitoring.png)
 
@@ -33,71 +32,71 @@ På den sida som visas kan du visa den anslutna instansens tillstånd, dvs:
 * En förteckning över saknade processer och körningsinformation (startdatum, PID osv.).
 * en översikt över arbetsflöden och leveranser.
 
-Ytterligare sätt att övervaka olika Campaign-processer presenteras i [den här sidan](../../production/using/monitoring-guidelines.md).
+Ytterligare sätt att övervaka Campaign-processer presenteras i [den här sidan](../../production/using/monitoring-guidelines.md).
 
 ### Loggjournal {#log-journal}
 
-Det går att visa loggjournalen som hör till en process. Det gör du genom att klicka på processen **mta** till exempel klickar du på **[!UICONTROL Open the log journal]** .
+Om du vill visa loggjournalen för en process klickar du på processen, **mta** välj **[!UICONTROL Open the log journal]** .
 
 ![](assets/d_ncs_monitoring2.png)
 
 ### Systemindikatorer {#system-indicators}
 
-Listan med systemindikatorer gör att du kan visa information om datorn, t.ex. dess fysiska och virtuella minne, aktiva processer och tillgängliga diskutrymme. Indikatorer är olika för Linux och Windows. Gå till **[!UICONTROL Instance Monitoring]** och klickar på **[!UICONTROL Display]** länk för att öppna förteckningen över indikatorer
+Bläddra till listan med systemindikatorer för att visa information om datorn, till exempel dess fysiska och virtuella minne, aktiva processer och tillgängliga diskutrymme. Indikatorer är olika för Linux och Windows. Gå till **[!UICONTROL Instance Monitoring]** och klickar på **[!UICONTROL Display]** länk för att öppna en lista över indikatorer.
 
 #### Windows {#in-windows}
 
-* **[!UICONTROL Pending events queued]** : indikator specifik för **Meddelandecenter**. Se [det här avsnittet](../../message-center/using/additional-configurations.md#monitoring-thresholds) för mer information.
+* **[!UICONTROL Pending events queued]**: indikator specifik för **Meddelandecenter**. [Läs mer](../../message-center/using/additional-configurations.md#monitoring-thresholds)
 
-* **[!UICONTROL Memory]** : Information om det fysiska minnet.
+* **[!UICONTROL Memory]**: Information om det fysiska minnet.
 
-   **[!UICONTROL Current value]** : faktisk minnesförbrukning.
+   **[!UICONTROL Current value]**: aktuell minnesförbrukning.
 
-   **[!UICONTROL Max Value]** : den totala mängden installerat minne.
+   **[!UICONTROL Max Value]**: den totala mängden installerat minne.
 
-   **[!UICONTROL Available]** : mängden tillgängligt minne.
+   **[!UICONTROL Available]**: mängden tillgängligt minne.
 
-   **[!UICONTROL Warning]** : den här indikatorn visas när minnesförbrukningen når 80 % av den totala mängden.
+   **[!UICONTROL Warning]**: den här indikatorn visas när minnesförbrukningen når 80 % av den totala mängden.
 
-   **[!UICONTROL Alert]** : den här indikatorn visas när minnesförbrukningen når 90 % av den totala mängden.
+   **[!UICONTROL Alert]**: den här indikatorn visas när minnesförbrukningen når 90 % av den totala mängden.
 
    När **[!UICONTROL Warning]** och **[!UICONTROL Alert]** visas så kan du lösa problemet genom att lägga till RAM-minne på den dator där Adobe Campaign-servern är installerad. Du kan också välja att installera Adobe Campaign-servern på en dedikerad dator.
 
-* **[!UICONTROL Swap Memory]** : information om det virtuella minnet som matchar en växlingsfil: ett område på hårddisken som används som RAM.
+* **[!UICONTROL Swap Memory]**: information om det virtuella minnet som matchar en växlingsfil: ett område på hårddisken som används som RAM.
 
-   **[!UICONTROL Current value]** : faktisk minnesförbrukning.
+   **[!UICONTROL Current value]**: faktisk minnesförbrukning.
 
-   **[!UICONTROL Max Value]** : den totala mängden minne.
+   **[!UICONTROL Max Value]**: den totala mängden minne.
 
-   **[!UICONTROL Available]** : mängden tillgängligt minne.
+   **[!UICONTROL Available]**: mängden tillgängligt minne.
 
-   **[!UICONTROL Warning]** : den här indikatorn visas när minnesförbrukningen når 80 % av den totala mängden.
+   **[!UICONTROL Warning]**: den här indikatorn visas när minnesförbrukningen når 80 % av den totala mängden.
 
-   **[!UICONTROL Alert]** : den här indikatorn visas när minnesförbrukningen når 90 % av den totala mängden.
+   **[!UICONTROL Alert]**: den här indikatorn visas när minnesförbrukningen når 90 % av den totala mängden.
 
    När **[!UICONTROL Warning]** och **[!UICONTROL Alert]** visas så kan du lösa problemet genom att öka utbytesfilens storlek i de avancerade Windows-inställningarna.
 
-* **[!UICONTROL Disk XXX]** : Information om maskinläsare.
+* **[!UICONTROL Disk XXX]**: Information om maskinläsare.
 
-   **[!UICONTROL Current value]** : diskutrymme som faktiskt används.
+   **[!UICONTROL Current value]**: diskutrymme som faktiskt används.
 
-   **[!UICONTROL Max Value]** : total diskkapacitet.
+   **[!UICONTROL Max Value]**: total diskkapacitet.
 
-   **[!UICONTROL Available]** : ledigt diskutrymme
+   **[!UICONTROL Available]**: tillgängligt diskutrymme.
 
-   **[!UICONTROL Used]** : procentandel av disken som används.
+   **[!UICONTROL Used]**: procentandel av disken som används.
 
-   **[!UICONTROL Warning]** : den här indikatorn visas när det tillgängliga diskutrymmet når 80 % av den totala kapaciteten.
+   **[!UICONTROL Warning]**: den här indikatorn visas när det tillgängliga diskutrymmet når 80 % av den totala kapaciteten.
 
-   **[!UICONTROL Alert]** : den här indikatorn visas när det tillgängliga diskutrymmet når 90 % av den totala kapaciteten.
+   **[!UICONTROL Alert]**: den här indikatorn visas när det tillgängliga diskutrymmet når 90 % av den totala kapaciteten.
 
-* **[!UICONTROL Number of processes too old]** : Information om Adobe Campaign-processer som har varit aktiva i mer än en dag.
+* **[!UICONTROL Number of processes too old]**: Information om Adobe Campaign-processer som har varit aktiva i mer än en dag.
 
-   **[!UICONTROL Current value]** : antalet aktiva processer.
+   **[!UICONTROL Current value]**: antalet aktiva processer.
 
-   **[!UICONTROL Max Value]** : maximalt antal godkända processer (1).
+   **[!UICONTROL Max Value]**: maximalt antal godkända processer (1).
 
-   **[!UICONTROL Alert]** : den här indikatorn visas om antalet processer är lika med 1.
+   **[!UICONTROL Alert]**: den här indikatorn visas om antalet processer är lika med 1.
 
    När **[!UICONTROL Alert]** Indikatorn visas. Det kan bero på att den berörda processen är låst av SQL-databasmotorn eller att den sitter fast i en oändlig slinga. The **övervakningsenhet** alla processer som tillhandahålls av Adobe Campaign startar automatiskt om varje dag så att du kan lösa det här problemet. Du kan också stoppa den berörda processen själv för att tvinga fram en omstart.
 
@@ -105,115 +104,115 @@ Listan med systemindikatorer gör att du kan visa information om datorn, t.ex. d
 
 ![](assets/production_system_indicators_linux_001.png)
 
-* **[!UICONTROL Pending events queued]** : indikator specifik för **Meddelandecenter**. Se [det här avsnittet](../../message-center/using/additional-configurations.md#monitoring-thresholds) för mer information.
+* **[!UICONTROL Pending events queued]**: indikator specifik för **Meddelandecenter**. Se [det här avsnittet](../../message-center/using/additional-configurations.md#monitoring-thresholds) för mer information.
 
-* **[!UICONTROL Load average (1/5/15 minutes)]** : Information om belastningen, dvs. processorns användningshastighet för de processer som körs på maskinen under den senaste minuten, fem minuter eller femton minuter.
+* **[!UICONTROL Load average (1/5/15 minutes)]**: Information om belastningen, dvs. processorns användningshastighet för de processer som körs på maskinen under den senaste minuten, fem minuter eller femton minuter.
 
-   **[!UICONTROL Current value]** : maskinens faktiska belastning.
+   **[!UICONTROL Current value]**: maskinens faktiska belastning.
 
-   **[!UICONTROL Max value]** : högsta användningsbelastning för processen/processerna på datorn
+   **[!UICONTROL Max value]**: högsta användningsbelastning för processen/processerna på datorn
 
-   **[!UICONTROL Warning]** : den här indikatorn visas när belastningen når 80 % av det högsta tillåtna värdet under den senaste minuten, fem minuter eller femton minuter.
+   **[!UICONTROL Warning]**: den här indikatorn visas när belastningen når 80 % av det högsta tillåtna värdet under den senaste minuten, fem minuter eller femton minuter.
 
-   **[!UICONTROL Alert]** : den här indikatorn visas när belastningen når 90 % av det högsta tillåtna värdet för den sista minuten, fem minuter eller femton minuter.
+   **[!UICONTROL Alert]**: den här indikatorn visas när belastningen når 90 % av det högsta tillåtna värdet för den sista minuten, fem minuter eller femton minuter.
 
-* **[!UICONTROL Memory]** : Information om det fysiska minnet.
+* **[!UICONTROL Memory]**  Information om det fysiska minnet.
 
-   **[!UICONTROL Current value]** : faktisk minnesförbrukning.
+   **[!UICONTROL Current value]**: faktisk minnesförbrukning.
 
-   **[!UICONTROL Max Value]** : den totala mängden installerat minne.
+   **[!UICONTROL Max Value]**: den totala mängden installerat minne.
 
-   **[!UICONTROL Available]** : mängden tillgängligt minne.
+   **[!UICONTROL Available]**: mängden tillgängligt minne.
 
-   **[!UICONTROL Warning]** : den här indikatorn visas när minnesförbrukningen når 80 % av den totala mängden.
+   **[!UICONTROL Warning]**: den här indikatorn visas när minnesförbrukningen når 80 % av den totala mängden.
 
-   **[!UICONTROL Alert]** : den här indikatorn visas när minnesförbrukningen når 90 % av den totala mängden.
+   **[!UICONTROL Alert]**: den här indikatorn visas när minnesförbrukningen når 90 % av den totala mängden.
 
    När **[!UICONTROL Warning]** och **[!UICONTROL Alert]** visas så kan du lösa problemet genom att lägga till RAM-minne på den dator där Adobe Campaign-servern är installerad. Du kan också välja att installera Adobe Campaign-servern på en dedikerad dator.
 
-* **[!UICONTROL Swap Memory]** : information om det virtuella minnet som matchar en växlingsfil: ett område på hårddisken som används som RAM.
+* **[!UICONTROL Swap Memory]**: information om det virtuella minnet som matchar en växlingsfil: ett område på hårddisken som används som RAM.
 
-   **[!UICONTROL Current value]** : faktisk minnesförbrukning.
+   **[!UICONTROL Current value]**: faktisk minnesförbrukning.
 
-   **[!UICONTROL Max Value]** : den totala mängden minne.
+   **[!UICONTROL Max Value]**: den totala mängden minne.
 
-   **[!UICONTROL Available]** : mängden tillgängligt minne.
+   **[!UICONTROL Available]**: mängden tillgängligt minne.
 
-   **[!UICONTROL Warning]** : den här indikatorn visas när minnesförbrukningen når 80 % av den totala mängden.
+   **[!UICONTROL Warning]**: den här indikatorn visas när minnesförbrukningen når 80 % av den totala mängden.
 
-   **[!UICONTROL Alert]** : den här indikatorn visas när minnesförbrukningen når 90 % av den totala mängden.
+   **[!UICONTROL Alert]**: den här indikatorn visas när minnesförbrukningen når 90 % av den totala mängden.
 
    När **[!UICONTROL Warning]** och **[!UICONTROL Alert]** visas så kan du lösa problemet genom att öka utbytesfilens storlek.
 
-* **[!UICONTROL Core Files]** : Information om de filer som genererats efter kraschen i en Adobe Campaign-process. Med de här filerna kan du diagnostisera orsaken till kraschen.
+* **[!UICONTROL Core Files]**: Information om de filer som genererats efter kraschen i en Adobe Campaign-process. Med de här filerna kan du diagnostisera orsaken till kraschen.
 
-   **[!UICONTROL Current Value]** : antal befintliga filer.
+   **[!UICONTROL Current Value]**: antal befintliga filer.
 
-   **[!UICONTROL Max Value]** : maximalt antal tillåtna filer (1).
+   **[!UICONTROL Max Value]**: maximalt antal tillåtna filer (1).
 
-   **[!UICONTROL Warning]** : den här indikatorn visas när antalet filer blir 1.
+   **[!UICONTROL Warning]**: den här indikatorn visas när antalet filer blir 1.
 
-   **[!UICONTROL Alert]** : den här indikatorn visas när antalet filer är lika med 1.
+   **[!UICONTROL Alert]**: den här indikatorn visas när antalet filer är lika med 1.
 
    När en process saknas på grund av en krasch visas den i rött i listan över processer och startas om automatiskt av **övervakningsenhet** från Adobe Campaign.
 
-* **[!UICONTROL Number of shared memory segments]** : Information om de minnessegment som delas av alla Adobe Campaign-processer.
+* **[!UICONTROL Number of shared memory segments]**: Information om de minnessegment som delas av alla Adobe Campaign-processer.
 
-   **[!UICONTROL Current value]** : antalet minnessegment som används.
+   **[!UICONTROL Current value]**: antalet minnessegment som används.
 
-   **[!UICONTROL Max Value]** : maximalt antal tillåtna minnessegment (2).
+   **[!UICONTROL Max Value]**: maximalt antal tillåtna minnessegment (2).
 
-   **[!UICONTROL Warning]** : den här indikatorn visas när antalet minnessegment når 1.
+   **[!UICONTROL Warning]**: den här indikatorn visas när antalet minnessegment når 1.
 
-   **[!UICONTROL Alert]** : den här indikatorn visas när antalet minnessegment når 2.
+   **[!UICONTROL Alert]**: den här indikatorn visas när antalet minnessegment når 2.
 
-* **[!UICONTROL Number of processes too old]** : Information om processer som har varit aktiva i över en dag.
+* **[!UICONTROL Number of processes too old]**: Information om processer som har varit aktiva i över en dag.
 
-   **[!UICONTROL Current value]** : antalet aktiva processer.
+   **[!UICONTROL Current value]**: antalet aktiva processer.
 
-   **[!UICONTROL Max Value]** : maximalt antal auktoriserade processer.
+   **[!UICONTROL Max Value]**: maximalt antal auktoriserade processer.
 
-   **[!UICONTROL Warning]** : den här indikatorn visas när antalet processer når 80 % av det godkända tröskelvärdet.
+   **[!UICONTROL Warning]**: den här indikatorn visas när antalet processer når 80 % av det godkända tröskelvärdet.
 
-   **[!UICONTROL Alert]** : den här indikatorn visas när antalet processer når 90 % av det godkända tröskelvärdet.
+   **[!UICONTROL Alert]**: den här indikatorn visas när antalet processer når 90 % av det godkända tröskelvärdet.
 
-* **[!UICONTROL File Handles]** : Information om filbeskrivningarna, dvs. antalet filer som öppnas per process.
+* **[!UICONTROL File Handles]**: Information om filbeskrivningarna, dvs. antalet filer som öppnas per process.
 
-   **[!UICONTROL Current value]** : aktuellt antal filbeskrivare.
+   **[!UICONTROL Current value]**: aktuellt antal filbeskrivare.
 
-   **[!UICONTROL Max Value]** : maximalt antal filbeskrivare som tillåts av operativsystemet.
+   **[!UICONTROL Max Value]**: maximalt antal filbeskrivare som tillåts av operativsystemet.
 
-   **[!UICONTROL Warning]** : den här indikatorn visas när antalet godkända filbeskrivare når 80 %-tröskelvärdet.
+   **[!UICONTROL Warning]**: den här indikatorn visas när antalet godkända filbeskrivare når 80 %-tröskelvärdet.
 
-   **[!UICONTROL Alert]** : den här indikatorn visas när antalet godkända filbeskrivare når tröskelvärdet 90 %.
+   **[!UICONTROL Alert]**: den här indikatorn visas när antalet godkända filbeskrivare når tröskelvärdet 90 %.
 
-* **[!UICONTROL Processes]** : Information om maskinprocesserna.
+* **[!UICONTROL Processes]**: Information om maskinprocesserna.
 
-   **[!UICONTROL Current value]** : antalet aktiva processer.
+   **[!UICONTROL Current value]**: antalet aktiva processer.
 
-   **[!UICONTROL Max Value]** : maximalt antal auktoriserade processer.
+   **[!UICONTROL Max Value]**: maximalt antal auktoriserade processer.
 
-   **[!UICONTROL Active Processes]** : antal aktiva processer.
+   **[!UICONTROL Active Processes]**: antal aktiva processer.
 
-   **[!UICONTROL Inactive Processes]** : antal inaktiva processer.
+   **[!UICONTROL Inactive Processes]**: antal inaktiva processer.
 
-   **[!UICONTROL Warning]** : den här indikatorn visas när antalet auktoriserade processer når 80 %-tröskelvärdet.
+   **[!UICONTROL Warning]**: den här indikatorn visas när antalet auktoriserade processer når 80 %-tröskelvärdet.
 
-   **[!UICONTROL Alert]** : den här indikatorn visas när antalet auktoriserade processer når tröskelvärdet på 90 %.
+   **[!UICONTROL Alert]**: den här indikatorn visas när antalet auktoriserade processer når tröskelvärdet på 90 %.
 
-* **[!UICONTROL Zombie Processes]** : information om processer som har stoppats men fortfarande har en process-ID (PID) och som fortfarande är synlig i processtabellen.
+* **[!UICONTROL Zombie Processes]**: information om processer som har stoppats men fortfarande har en process-ID (PID) och som fortfarande är synlig i processtabellen.
 
-   **[!UICONTROL Current value]** : antalet zoomprocesser som för närvarande är aktiva.
+   **[!UICONTROL Current value]**: antalet zoomprocesser som för närvarande är aktiva.
 
-   **[!UICONTROL Max Value]** : maximalt antal auktoriserade zombieprocesser (2).
+   **[!UICONTROL Max Value]**: maximalt antal auktoriserade zombieprocesser (2).
 
-   **[!UICONTROL Warning]** : den här indikatorn visas när antalet zoomprocesser närmar sig 2.
+   **[!UICONTROL Warning]**: den här indikatorn visas när antalet zoomprocesser närmar sig 2.
 
-   **[!UICONTROL Alert]** den här indikatorn visas när antalet zoomprocesser når 2.
+   **[!UICONTROL Alert]**: den här indikatorn visas när antalet zoomprocesser når 2.
 
-#### Anpassade indikatorer {#customized-indicators}
+#### Anpassa indikatorer {#customized-indicators}
 
-Med Adobe Campaign kan du anpassa indikatorer. Så här gör du:
+Med Adobe Campaign kan du anpassa indikatorerna enligt nedan:
 
 1. Skapa en **.sh** fil och namnge den **[!UICONTROL cust_indicators.sh]** .
 1. Lägg till anpassade indikatorer i den här filen. Exempel:
@@ -239,7 +238,7 @@ Med Adobe Campaign kan du anpassa indikatorer. Så här gör du:
    </indicator>"
    ```
 
-1. Lägg filen i **[!UICONTROL usr/local/neolane/nl6]** mapp.
+1. Spara filen i **[!UICONTROL usr/local/neolane/nl6]** mapp.
 
 Den här filen anropas av Adobe Campaign.
 
@@ -247,9 +246,7 @@ Den här filen anropas av Adobe Campaign.
 
 Rapporterna om övervakning av SMTP-leveranser är integrerade i Adobe Campaign. De kan nås via konsolen eller via webben.
 
-Dessa rapporter visar SMTP-leveransstatistik och SMTP-fel per domän.
-
-Operatorn måste ha administratörsbehörighet för att få åtkomst till dem.
+Dessa rapporter visar SMTP-leveransstatistik och SMTP-fel per domän. Operatorn måste ha **Administration** rättigheter.
 
 De grupperas under **Övervakning** > SMTP-övervakning.
 
