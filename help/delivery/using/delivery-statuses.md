@@ -6,7 +6,7 @@ badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
 badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: Monitoring, Deliverability
 exl-id: 0663257a-3a70-4e0c-bbeb-8242aaa0876d
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: 4b13e310fcee9ba24e83b697fca57bc494505642
 workflow-type: tm+mt
 source-wordcount: '632'
 ht-degree: 4%
@@ -111,19 +111,19 @@ Om leveransen inte skickas och dess status kvarstår **[!UICONTROL Pending]**, k
       nlserver pdump
       HH:MM:SS > Application server for Adobe Campaign Classic (X.Y.Z YY.R build nnnn@SHA1) of DD/MM/YYYY
       [...]
-      mta@<INSTANCENAME> (9268) - 23.0 Mb
+      mta@<instance-name> (9268) - 23.0 Mb
       [...]
       ```
 
    1. Om MTA inte finns med i listan startar du det med följande kommando:
 
       ```
-      nlserver start mta@<INSTANCENAME>
+      nlserver start mta@<instance-name>
       ```
 
       >[!NOTE]
       >
-      >Ersätt `<INSTANCENAME>` med namnet på din instans (produktion, utveckling osv.). Instansnamnet identifieras via konfigurationsfilerna: `[path of application]nl6/conf/config-<INSTANCENAME>.xml`
+      >Ersätt `<instance-name>` med namnet på din instans (produktion, utveckling osv.). Instansnamnet identifieras via konfigurationsfilerna: `[path of application]nl6/conf/config-<instance-name>.xml`
 
 * Leveransen kan ha en tillhörighet som inte har konfigurerats på den sändande servern.
 

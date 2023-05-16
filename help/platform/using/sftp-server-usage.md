@@ -8,7 +8,7 @@ audience: platform
 content-type: reference
 topic-tags: importing-and-exporting-data
 exl-id: d585a5d4-ea33-43c8-aa37-4d892025374a
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: 4b13e310fcee9ba24e83b697fca57bc494505642
 workflow-type: tm+mt
 source-wordcount: '1150'
 ht-degree: 14%
@@ -81,8 +81,8 @@ I avsnittet nedan listas den information som ska kontrolleras och tillhandahåll
    Om instansen körs bör du få den här typen av svar:
 
    ```
-   <redir status='OK' date='YYYY-MM-DD HH:MM:SS' build='XXXX' instance='instanceName'
-   sourceIP='AAA.BB.CCC.DD' host='instanceUrl' localHost='instanceName'/>
+   <redir status='OK' date='YYYY-MM-DD HH:MM:SS' build='XXXX' instance='instance-name'
+   sourceIP='AAA.BB.CCC.DD' host='instanceUrl' localHost='instance-name'/>
    ```
 
    Ange i alla fall kommandotolken i supportbiljetten.

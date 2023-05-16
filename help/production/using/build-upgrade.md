@@ -8,9 +8,9 @@ audience: production
 content-type: reference
 topic-tags: updating-adobe-campaign
 exl-id: c5a9c99a-4078-45d8-847b-6df9047a2fe2
-source-git-commit: a5762cd21a1a6d5a5f3a10f53a5d1f43542d99d4
+source-git-commit: 4b13e310fcee9ba24e83b697fca57bc494505642
 workflow-type: tm+mt
-source-wordcount: '2356'
+source-wordcount: '2355'
 ht-degree: 2%
 
 ---
@@ -93,9 +93,9 @@ Du måste också känna till alla [användbara kommandorader](../../installation
 * **nlserver pdump**: listor över pågående processer
 * **nlserver pdump -vem**: visar aktiva klientsessioner
 * **nlserver monitor -missing**: listor över saknade egenskaper
-* **nlserver start process@instanceName**: startar en process
-* **nlserver stop process@instanceName**: stoppar en process
-* **omstart av nlserver process@instanceName**: startar om en process
+* **nlserver start process@instance-name**: startar en process
+* **nlserver stop process@instance-name**: stoppar en process
+* **omstart av nlserver process@instance-name**: startar om en process
 * **avstängning av nlserver**: stoppar alla Campaign-processer
 * **nlserver watchdog -svc**: startar övervakningsenheten (endast UNIX)
 
@@ -278,7 +278,7 @@ YYYY-MM-DD HH:MM:SS.750Z 00002E7A 1 warning log Document of identifier 'nms:incl
 
 Om varningen gäller en resurskonflikt måste användaren åtgärda den.
 
-The **postupgrade_ServerVersionNumber_TimeOfPodumgrade.log** filen innehåller synkroniseringsresultatet. Den är som standard tillgänglig i följande katalog: **installDirectory/var/instanceName/postupgrade**. Fel och varningar indikeras av fel- och varningsattributen.
+The **postupgrade_ServerVersionNumber_TimeOfPodumgrade.log** filen innehåller synkroniseringsresultatet. Den är som standard tillgänglig i följande katalog: **installDirectory/var/`<instance-name>`/postupgrade**. Fel och varningar indikeras av fel- och varningsattributen.
 
 ### Analysera konflikter
 

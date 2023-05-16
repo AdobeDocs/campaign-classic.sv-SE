@@ -8,9 +8,9 @@ audience: production
 content-type: reference
 topic-tags: data-processing
 exl-id: e5ef6aba-dc22-4c8d-9fbb-13d507181b65
-source-git-commit: dcc441272b29f682165a26006800e914e7c38252
+source-git-commit: 4b13e310fcee9ba24e83b697fca57bc494505642
 workflow-type: tm+mt
-source-wordcount: '179'
+source-wordcount: '198'
 ht-degree: 2%
 
 ---
@@ -30,21 +30,21 @@ De flesta data finns i databasen. Detta motsvarar 99 % av den information som sk
 
 Filerna är uppdelade i flera kategorier:
 
-* Konfigurationsfiler, lagrade i `nl6/conf`kan du snabbt konfigurera om Adobe Campaign.
+* Konfigurationsfiler, lagrade i **nl6/conf** kan du snabbt konfigurera om Adobe Campaign.
 
-* Omdirigeringsfiler, lagrade i  `nl6/var/`<instancename>`/redir`, finns på spårningsservrarna (kallas ofta för frontservrar) och innehåller alla tidigare kampanjomdirigeringar. De används fortfarande av tidigare kampanjer.
+* Omdirigeringsfiler, lagrade i  **nl6/var/`<instance-name>`/redir**, finns på spårningsservrarna (kallas ofta för frontservrar) och innehåller alla tidigare kampanjomdirigeringar. De används fortfarande av tidigare kampanjer.
 
-* Loggfiler, lagrade i `nl6/var/`<instancename>`/log`, kan användas för att spåra problem.
+* Loggfiler, lagrade i **nl6/var/`<instance-name>`/log**, kan användas för att spåra problem.
 
 Kataloger som ska säkerhetskopieras är därför:
 
-* `nl6/conf`
+* nl6/conf
 
-* `nl6/var/`<instanceName>`/redir` (för varje instans)
+* nl6/var/`<instance-name>`/redir (för varje instans)
 
-* `nl6/var/`<instanceName>`/log` (valfritt)
+* nl6/var/`<instance-name>`/log (valfritt)
 
-* `nl6/var/`<instanceName>`/relay` (valfritt)
+* nl6/var/`<instance-name>`/relay (valfritt)
 
 
 ## Databas {#database}

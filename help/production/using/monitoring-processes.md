@@ -8,7 +8,7 @@ audience: production
 content-type: reference
 topic-tags: production-procedures
 exl-id: 1f5d8c7e-6f9b-46cd-a9b4-a3b48afb1794
-source-git-commit: a5762cd21a1a6d5a5f3a10f53a5d1f43542d99d4
+source-git-commit: 4b13e310fcee9ba24e83b697fca57bc494505642
 workflow-type: tm+mt
 source-wordcount: '3610'
 ht-degree: 0%
@@ -287,7 +287,7 @@ Listan över indikatorer för den här rapporten visas under diagrammet.
 
    * Kaki-kurva: kön med fördröjda överföringar. Dessa meddelanden kan inte returneras för tillfället på grund av begränsning eller på grund av att det inte finns någon anslutning till målet. Försök görs var femte, tionde, tionde, 20:e, 40:e, 2:a minut, osv. för den definierade **MaxAgeSec** tiden innan de överges.
 
-1. I den här tabellen visas en detalj i övergivna meddelanden (röd kurva i det andra diagrammet): visar hur många meddelanden som har övergetts utan återförsök (mauve) jämfört med meddelanden vars sändning misslyckades (red). På så sätt kan du visa andelen meddelanden som inte har bearbetats inom den angivna perioden på grund av begränsningar i statistikservern (strypning) eller på grund av att fjärrservern inte är tillgänglig.
+1. I den här tabellen visas en detalj av övergivna meddelanden (röd kurva i det andra diagrammet): visar hur många meddelanden som har övergetts utan återförsök (mauve) jämfört med meddelanden vars sändning misslyckades (red). På så sätt kan du visa andelen meddelanden som inte har bearbetats inom den angivna perioden på grund av begränsningar i statistikservern (strypning) eller på grund av att fjärrservern inte är tillgänglig.
 1. SMTP-anslutningar öppnas eller öppnas.
 1. Uppskattning av antalet **mtachild**.
 
@@ -575,7 +575,7 @@ Det här elementet används för att fylla i konfigurationen av e-postmeddelande
 Med det här elementet kan du gruppera om flera datorer (värdar) till samma instans. Instansnamnen visas i den första delen av övervaknings-e-postmeddelandet. Du kan klicka på namnet på en instans för att få information om varje dator.
 
 ```
-instance name="instanceName" recipientList="mail@mail.com,mail2@mail.com">
+instance name="instance-name" recipientList="mail@mail.com,mail2@mail.com">
                 <host name="devcamp.domain.com" ...>
                        ...
                 </host>

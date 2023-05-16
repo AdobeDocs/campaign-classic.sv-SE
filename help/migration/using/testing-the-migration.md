@@ -9,7 +9,7 @@ topic-tags: migration-procedure
 hide: true
 hidefromtoc: true
 exl-id: 228ee9e4-46a0-4d82-b8ba-b019bc0e7cac
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 4b13e310fcee9ba24e83b697fca57bc494505642
 workflow-type: tm+mt
 source-wordcount: '706'
 ht-degree: 2%
@@ -56,13 +56,13 @@ Med olika alternativ kan du mäta effekten av en migrering och identifiera poten
 * i **config** kommando:
 
    ```
-   nlserver.exe config <option> -instance:<instanceName>
+   nlserver.exe config <option> -instance:<instance-name>
    ```
 
 * eller vid uppgraderingen:
 
    ```
-   nlserver.exe config -postupgrade <option> -instance:<instanceName>
+   nlserver.exe config -postupgrade <option> -instance:<instance-name>
    ```
 
 >[!NOTE]
@@ -76,7 +76,7 @@ Med olika alternativ kan du mäta effekten av en migrering och identifiera poten
 * The **-showCustomEntities** visas en lista med alla objekt som inte är standard:
 
    ```
-   nlserver.exe config -showCustomEntities -instance:<instanceName>
+   nlserver.exe config -showCustomEntities -instance:<instance-name>
    ```
 
    Exempel på ett skickat meddelande:
@@ -88,7 +88,7 @@ Med olika alternativ kan du mäta effekten av en migrering och identifiera poten
 * The **-showDeletedEntities** visas en lista med alla standardobjekt som saknas i databasen eller filsystemet. För varje objekt som saknas anges sökvägen.
 
    ```
-   nlserver.exe config -showDeletedEntities -instance:<instanceName>
+   nlserver.exe config -showDeletedEntities -instance:<instance-name>
    ```
 
    Exempel på ett skickat meddelande:
@@ -104,7 +104,7 @@ Den här processen är integrerad som standard i postuppgraderingskommandot och 
 Du kan starta verifieringsprocessen fristående (utan migrering) med kommandot:
 
 ```
-nlserver.exe config -postupgrade -check -instance:<instanceName>
+nlserver.exe config -postupgrade -check -instance:<instance-name>
 ```
 
 >[!NOTE]
@@ -177,7 +177,7 @@ En konsekvenskontroll av databaser och scheman utförs också.
 Med det här alternativet kan du återställa färdiga objekt om de har ändrats. För varje återställt objekt sparas en säkerhetskopia av ändringarna i den valda mappen:
 
 ```
-nlserver.exe config -postupgrade -restoreFactory:<backupfolder> -instance:<instanceName>
+nlserver.exe config -postupgrade -restoreFactory:<backupfolder> -instance:<instance-name>
 ```
 
 >[!NOTE]
