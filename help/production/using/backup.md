@@ -8,16 +8,14 @@ audience: production
 content-type: reference
 topic-tags: data-processing
 exl-id: e5ef6aba-dc22-4c8d-9fbb-13d507181b65
-source-git-commit: a5762cd21a1a6d5a5f3a10f53a5d1f43542d99d4
+source-git-commit: dcc441272b29f682165a26006800e914e7c38252
 workflow-type: tm+mt
-source-wordcount: '197'
+source-wordcount: '179'
 ht-degree: 2%
 
 ---
 
 # Säkerhetskopiera{#backup}
-
-
 
 Säkerhetskopiering är nödvändigt för att undvika dataförlust i händelse av problem (oavsett om det är fysiskt eller systemrelaterat) på en dator.
 
@@ -32,33 +30,29 @@ De flesta data finns i databasen. Detta motsvarar 99 % av den information som sk
 
 Filerna är uppdelade i flera kategorier:
 
-* Konfigurationsfiler som finns i **nl6/conf**
+* Konfigurationsfiler, lagrade i `nl6/conf`kan du snabbt konfigurera om Adobe Campaign.
 
-   Med dessa kan du snabbt konfigurera om Adobe Campaign.
+* Omdirigeringsfiler, lagrade i  `nl6/var/`<instancename>`/redir`, finns på spårningsservrarna (kallas ofta för frontservrar) och innehåller alla tidigare kampanjomdirigeringar. De används fortfarande av tidigare kampanjer.
 
-* Omdirigeringsfiler ** nl6/var/`<instancename>`/redir**
-
-   Dessa finns på spårningsservrarna (kallas ofta frontservrar) och inkluderar alla tidigare kampanjomdirigeringar. De används fortfarande av tidigare kampanjer.
-
-* Loggfiler: **nl6/var/`<instancename>`/log**
-
-   Dessa kan användas för att spåra problem.
+* Loggfiler, lagrade i `nl6/var/`<instancename>`/log`, kan användas för att spåra problem.
 
 Kataloger som ska säkerhetskopieras är därför:
 
-* nl6/conf
+* `nl6/conf`
 
-* nl6/var/`<instanceName>`/redir (för varje instans)
+* `nl6/var/`<instanceName>`/redir` (för varje instans)
 
-* nl6/var/`<instanceName>`/log (valfritt)
+* `nl6/var/`<instanceName>`/log` (valfritt)
 
-* nl6/var/`<instanceName>`/relay (valfritt)
+* `nl6/var/`<instanceName>`/relay` (valfritt)
+
+
+## Databas {#database}
 
 >[!IMPORTANT]
 >
->Det är viktigt att säkerhetskopiera databasen.
+>Databasen måste säkerhetskopieras.
 
-## Databas {#database}
 
 Databasen innehåller all information som visas i Adobe Campaign Rich Client Console samt alla affärsdata.
 
