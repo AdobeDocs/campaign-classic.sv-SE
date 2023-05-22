@@ -1,13 +1,13 @@
 ---
 product: campaign
-title: 'Hjälp- och supportalternativ för Campaign Classic '
+title: Hjälp- och supportalternativ för Campaign Classic
 description: Behöver du stöd för Campaign Classic? Du är på rätt ställe!
 hidefromtoc: true
 exl-id: 3a84236f-89e5-4b8b-9a98-afdc006fd6e0
-source-git-commit: 1d32161d60f6b382188012b104c642f504e28645
+source-git-commit: 9667bb436ffc591b05945dadd683e5f590ae43e5
 workflow-type: tm+mt
-source-wordcount: '793'
-ht-degree: 62%
+source-wordcount: '798'
+ht-degree: 59%
 
 ---
 
@@ -73,7 +73,7 @@ Hur uppgraderar jag till en ny version? hur man övervakar arbetsflödeskörning
     <td valign="top">
         <ul>
         <li><a href="production/using/build-upgrade.md">Uppgradera till den senaste versionen</a></li>
-        <li><a href="platform/using/faq-build-upgrade.md">Vanliga frågor och svar om Builduppgradering</a></li>
+        <li><a href="platform/using/faq-build-upgrade.md">Vanliga frågor och svar om builduppgradering</a></li>
         <li><a href="delivery/using/about-delivery-monitoring.md">Övervaka en leverans</a></li>
         <li><a href="delivery/using/understanding-quarantine-management.md">Förstå karantänhantering</a></li>
         <li><a href="installation/using/get-started-security-privacy.md">Checklista för säkerhet och sekretess</a></li>
@@ -103,7 +103,7 @@ Med Campaign Control Panel kan ni effektivisera arbetet som produktadministratö
 
 ### Hur kommer jag åt Kontrollpanelen?
 
-Kontrollpanelen är tillgänglig direkt från Adobe Experience Cloud. Den är endast tillgänglig för administratörsanvändare. [Klicka här](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/accessing-control-panel.html) för mer information.
+Kontrollpanelen är tillgänglig direkt från Adobe Experience Cloud. Den är endast tillgänglig för administratörsanvändare. [Klicka här](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/accessing-control-panel.html?lang=sv) för mer information.
 
 ### Vanliga frågor och svar om Kontrollpanelen
 
@@ -124,27 +124,27 @@ Du kan övervaka dina underdomäner och deras certifikat. Läs mer på dessa sid
 
 Lär dig hur du hanterar inställningarna för Campaign Classic-instanser på Kontrollpanelen. Läs mer på dessa sidor:
 * [Lägg till IP-adresser till tillåtelselista](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/ip-allow-listing-instance-access.html) för att komma åt dina Campaign-instanser
-* [Hantera URL-behörigheter](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/url-permissions.html)
+* [Hantera URL-behörigheter](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/url-permissions.html?lang=sv)
 * [Åtkomstinstansinformation](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/instance-details.html)
-* [Hantera GPG-nycklar för datakryptering](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/gpg-keys-management.html)
+* [Hantera GPG-nycklar för datakryptering](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/gpg-keys-management.html?lang=sv)
 
 ## Begär hjälp {#support}
 
 <img src="platform/using/assets/do-not-localize/icon-support.svg" width="60px">
 
-Det nya biljettsystemet har startats via [Adobe Admin Console](https://adminconsole.adobe.com/overview). Det nya systemet kräver nya individuella konton för varje användare, med rätt behörigheter. Begär åtkomst via Experience League om du inte kan logga in med ditt Adobe ID, så registrerar kundtjänstteamet dig så snart som möjligt. [Läs mer](https://helpx.adobe.com/se/enterprise/using/support-for-experience-cloud.html)
+Det nya biljettsystemet har startats via [Adobe Admin Console](https://adminconsole.adobe.com/overview){_blank}. Det nya systemet kräver nya individuella konton för varje användare, med rätt behörigheter. Begär åtkomst via Experience League om du inte kan logga in med ditt Adobe ID, så registrerar kundtjänstteamet dig så snart som möjligt. [Läs mer](https://helpx.adobe.com/se/enterprise/using/support-for-experience-cloud.html)
 
 ### Fråga experterna!
 
-Gå med i Campaign Classic-communityn: sök efter svar i befintliga frågor eller ställ din fråga till communityn. [Delta i konversationen](https://experienceleaguecommunities.adobe.com/t5/adobe-campaign-classic/ct-p/adobe-campaign-classic-community)
+Gå med i Campaign Classic-communityn: sök efter svar i befintliga frågor eller ställ din fråga till communityn. [Delta i konversationen](https://experienceleaguecommunities.adobe.com/t5/adobe-campaign-classic/ct-p/adobe-campaign-classic-community){_blank}.
 
 ### Access Campaign Download Center
 
 Från och med juni 2020 ersätter Experience Cloud Solution Software Distribution det gamla Neolane Download Center och ger en effektivare upplevelse för att hitta och ladda ned programvara, paket och verktyg. [Klicka här](https://experience.adobe.com/#/downloads/content/software-distributicampaign.html) för att få tillgång till Experience Cloud Software Distribution.
-Läs mer om nya Download Center [på den här sidan](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html).
+Läs mer om nya Download Center [på den här sidan](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html){_blank}.
 
 ### Skapa en biljett eller starta en chatt
 
 Om du skapar ett ärende kan du kontakta Adobe kundsupportteam om problem som du har med dina Adobe-produkter. Adobe Admin Console hjälper dig att lösa eller felsöka problemen genom att chatta med Adobe kundsupport.
 
-Anslut till [Adobe Admin Console](https://adminconsole.adobe.com/overview) för att logga ett problem eller starta en chattsession i det nya systemet. Följ den detaljerade proceduren som beskrivs på [den här sidan](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html).
+Om du vill logga ett problem eller starta en chattsession i det nya systemet ansluter du till [Adobe Admin Console](https://adminconsole.adobe.com/overview){_blank}. Följ den detaljerade proceduren som beskrivs i [den här sidan](https://helpx.adobe.com/se/enterprise/using/support-for-experience-cloud.html){_blank}.
