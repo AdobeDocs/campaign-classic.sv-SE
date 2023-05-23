@@ -8,9 +8,9 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: e612a4e7-f4ef-4db4-afab-5544b73430d3
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: 4661688a22bd1a82eaf9c72a739b5a5ecee168b1
 workflow-type: tm+mt
-source-wordcount: '366'
+source-wordcount: '364'
 ht-degree: 7%
 
 ---
@@ -52,4 +52,4 @@ Förutom dessa korta och detaljerade videoklipp kan du hitta [kurser](https://le
 
 ### Experience League-kurser
 
-Du kan även gå till [Rekommenderade kurser](https://experienceleague.adobe.com/?lang=en#dashboard/learning) för Adobe Campaign Classic: kurserna är expertkurser i samlingar av lektioner som snabbt hjälper dig att skaffa dig färdigheter och kunskap.
+Du kan även gå till [Rekommenderade kurser](https://experienceleague.adobe.com/#dashboard/learning) för Adobe Campaign Classic: kurserna är expertkurser i samlingar av lektioner som snabbt hjälper dig att skaffa dig färdigheter och kunskap.

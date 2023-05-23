@@ -6,9 +6,9 @@ badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
 badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: Email Design, Dynamic Content
 exl-id: 3110c371-bbf2-4ab2-a701-3f348b5c1e7f
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: 4661688a22bd1a82eaf9c72a739b5a5ecee168b1
 workflow-type: tm+mt
-source-wordcount: '1505'
+source-wordcount: '1499'
 ht-degree: 4%
 
 ---
@@ -138,7 +138,7 @@ För närvarande har två e-postleverantörer stöd för att testa det här form
 Alla steg och specifikationer som krävs för att testa leveransen med AMP-format på Gmail-konton finns i motsvarande [Gmail](https://developers.google.com/gmail/ampemail?)och [Mail.ru](https://postmaster.mail.ru/amp) dokumentation för utvecklare.
 
 Bland annat måste följande krav vara uppfyllda:
-* Följ de säkerhetskrav som gäller för AMP för att [Gmail](https://developers.google.com/gmail/ampemail/security-requirements)och [Mail.ru](https://postmaster.mail.ru/amp/?lang=en#howto).
+* Följ de säkerhetskrav som gäller för AMP för att [Gmail](https://developers.google.com/gmail/ampemail/security-requirements)och [Mail.ru](https://postmaster.mail.ru/amp/#howto).
 * AMP MIME-delen måste innehålla en [giltigt AMP-dokument](https://amp.dev/documentation/guides-and-tutorials/learn/validation-workflow/validate_emails/?format=email).
 * AMP MIME-delen måste vara mindre än 100 kB.
 
@@ -170,7 +170,7 @@ Mer information finns i [Gmail](https://developers.google.com/gmail/ampemail/tes
 
 ![](assets/amp_from_field.png)
 
-Följ stegen i [Dokumentation för Mail.ru-utvecklare](https://postmaster.mail.ru/amp/?lang=en#howto) (**Om du är en användare** ).
+Följ stegen i [Dokumentation för Mail.ru-utvecklare](https://postmaster.mail.ru/amp/#howto) (**Om du är en användare** ).
 
 ### Leverera AMP-mejl genom att registrera hos en e-postleverantör {#delivering-amp-emails-by-registering}
 
@@ -182,7 +182,7 @@ Du kan experimentera med att leverera dynamiska e-postmeddelanden genom att regi
 
 När du testat med några adresser kan du skicka AMP-e-post till vilken Gmail-adress som helst. För att göra detta måste du registrera dig hos Google och vänta på deras svar. Följ stegen i [Gmail](https://developers.google.com/gmail/ampemail/register) dokumentation för utvecklare. När registreringen är klar blir du en auktoriserad avsändare.
 
-Om du vill skicka AMP-e-post till Mail.ru-adresser följer du de krav och steg som listas i [Dokumentation för Mail.ru-utvecklare](https://postmaster.mail.ru/amp/?lang=en#howto) (**Om du är e-postavsändare** ).
+Om du vill skicka AMP-e-post till Mail.ru-adresser följer du de krav och steg som listas i [Dokumentation för Mail.ru-utvecklare](https://postmaster.mail.ru/amp/#howto) (**Om du är e-postavsändare** ).
 
 ## Skicka ett AMP-e-postmeddelande {#sending-amp-email}
 
