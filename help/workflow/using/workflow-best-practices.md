@@ -63,7 +63,7 @@ Så här undviker du att arbetsflöden är i pausat läge:
 
 * Kontrollera dina arbetsflöden regelbundet för att se om det inte finns några oväntade fel.
 * Håll arbetsflödena så enkla som möjligt, t.ex. genom att dela upp stora arbetsflöden i flera olika arbetsflöden. Du kan använda **[!UICONTROL External signal]** aktiviteter utlöser sin körning baserat på andra arbetsflödenas körning.
-* Undvik inaktiverade aktiviteter med arbetsflöden som lämnar trådar öppna och leder till många tillfälliga tabeller som kan ta mycket plats. Behåll inte aktiviteter i **[!UICONTROL Do not enable]** eller **[!UICONTROL Enable but do not execute]** lägen i dina arbetsflöden.
+* Undvik inaktiverade aktiviteter med arbetsflöden som lämnar trådarna öppna och leder till många tillfälliga tabeller som kan ta mycket plats. Behåll inte aktiviteter i **[!UICONTROL Do not enable]** eller **[!UICONTROL Enable but do not execute]** lägen i dina arbetsflöden.
 
 **Stoppa oanvända arbetsflöden**. Arbetsflöden som fortsätter att köras behåller anslutningar till databasen.
 

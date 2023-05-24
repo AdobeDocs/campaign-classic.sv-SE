@@ -7,7 +7,7 @@ level: Beginner
 exl-id: 81f207a0-bb72-450b-abe4-0b229b6b1f3a
 source-git-commit: 978da934b483a54509ad806f375d9b2bb0577dac
 workflow-type: tm+mt
-source-wordcount: '5972'
+source-wordcount: '5974'
 ht-degree: 2%
 
 ---
@@ -1013,7 +1013,7 @@ Transactional messaging är en Campaign-modul som är utformad för att hantera 
 Läs mer om [Transaktionsmeddelanden](../../message-center/using/about-transactional-messaging.md).
 +++
 
-<!------- USEFUL HERE??----->
+&lt;!— ANVÄNDBART HÄR?—>
 +++**Utlösta kampanjer**
 
 Utlösta kampanjer är kampanjer som körs när en API-begäran tas emot i ett arbetsflöde. API-anrop används av en Signal-aktivitet i arbetsflödet som initierar körningen av arbetsflödet.

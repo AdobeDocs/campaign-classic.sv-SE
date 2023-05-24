@@ -120,7 +120,7 @@ Om du vill konfigurera ett annat externt konto som även använder ODBC, t.ex. S
 
 ### Frågeränder
 
-När flera Adobe Campaign-användare ansluter till samma externa FDA-Teradata-konto är **[!UICONTROL Query banding]** kan du ställa in ett frågeband, dvs. en uppsättning nyckel-/värdepar, för en session.
+När flera Adobe Campaign-användare ansluter till samma externa FDA-Teradata-konto är **[!UICONTROL Query banding]** kan du ställa in ett frågeband, dvs. en uppsättning nyckel/värde-par, för en session.
 
 ![](assets/ext_account_20.png)
 

@@ -53,7 +53,7 @@ Kontrollera instanskonfigurationen innan du startar implementeringen.
 1. Kontrollera att `DmRendering_cuid` alternativvärdet är ifyllt.
 
    * Om alternativet är ifyllt kan du starta implementeringen.
-   * Om inget värde är ifyllt kontaktar du [Adobe kundtjänst](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html){_blank} för att hämta ditt CUID.
+   * Om inget värde är ifyllt kontaktar du [Adobe kundtjänst](https://helpx.adobe.com/se/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html){_blank} för att hämta ditt CUID.
 
    Det här alternativet måste fyllas i för alla Campaign-instanser (MKT, MID, RT, EXEC) med rätt värde. Som hybridkund kan du kontakta Adobe om du vill att alternativet ska vara inställt på MID-, RT- och EXEC-instanserna.
 
@@ -61,7 +61,7 @@ Som lokal kund måste ni också kontrollera att en kampanj **[!UICONTROL Product
 
 1. Som administratör ansluter du till [Adobe Admin Console](https://adminconsole.adobe.com/){_blank}.
 1. Öppna **Produkter och tjänster** sektion och kontroll **Adobe Campaign** visas.
-Om du inte ser **Adobe Campaign** kontakta [Adobe kundtjänst](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html){_blank} för att lägga till den.
+Om du inte ser **Adobe Campaign** kontakta [Adobe kundtjänst](https://helpx.adobe.com/se/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html){_blank} för att lägga till den.
 1. Klicka **Adobe Campaign** och väljer organisation.
    **Varning**: Om du har fler än en organisation måste du välja rätt. Läs mer om organisationer [på den här sidan](https://experienceleague.adobe.com/docs/control-panel/using/faq.html#ims-org-id){_blank}.
 

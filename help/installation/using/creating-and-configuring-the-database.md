@@ -105,7 +105,7 @@ Du måste definiera följande inställningar:
    > 
    >Om du inte markerar det här alternativet måste teckenuppsättningen (teckenuppsättningen) i Oraclets databas aktivera datalagring på alla språk (AL32UTF8 rekommenderas).
 
-* Välj en tidszon för databasen och ange om den ska vara i UTC (om den är tillgänglig).
+* Välj en tidszon för databasen och ange om den ska vara i UTC (om tillgängligt).
 
    Mer information finns i [Tidszonshantering](../../installation/using/time-zone-management.md).
 
