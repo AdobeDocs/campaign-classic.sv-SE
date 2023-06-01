@@ -7,9 +7,9 @@ badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 audience: integrations
 content-type: reference
 exl-id: 54ee88b2-e646-4fb9-abec-957f0096f15f
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: acfe0c4139671fc3df69ff434ba307aaaaf70676
 workflow-type: tm+mt
-source-wordcount: '565'
+source-wordcount: '528'
 ht-degree: 3%
 
 ---
@@ -120,10 +120,6 @@ Så här startar du konfigurationen i Adobe Experience Manager:
 1. Konfigurera **replikering** för att replikera från AEM till den AEM publiceringsinstansen.
 
    Mer information om hur du konfigurerar replikering finns i Adobe Experience Manager [dokumentation](https://helpx.adobe.com/experience-manager/6-5/sites/deploying/using/replication.html).
-
-1. Installera integreringen **FeaturePack** replikera sedan installationen på publiceringsinstansen. (Endast för AEM version 5.6.1 och 6.0).
-
-   Mer information om hur du installerar FeaturePack finns i Adobe Experience Manager [dokumentation](https://helpx.adobe.com/experience-manager/aem-previous-versions.html).
 
 1. Anslut Adobe Experience Manager till Adobe Campaign genom att konfigurera en dedikerad **Cloud Service**.
 

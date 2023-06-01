@@ -7,9 +7,9 @@ audience: installation
 content-type: reference
 topic-tags: deployment-types-
 exl-id: 194366ab-fd9f-4431-9163-ae16c1f96db2
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: acfe0c4139671fc3df69ff434ba307aaaaf70676
 workflow-type: tm+mt
-source-wordcount: '1086'
+source-wordcount: '1077'
 ht-degree: 2%
 
 ---
@@ -165,7 +165,7 @@ Använd följande steg:
 
    Mer information finns i [Kampanjserverkonfiguration](../../installation/using/configuring-campaign-server.md).
 
-1. Kopiera installationsprogrammet för klientkonsolen (**setup-client-7.XX**, **YYYY.exe** för v7 eller **setup-client-6.XX**, **YYYY.exe** för v6.1) till **/datakit/nl/eng/jsp** mapp. [Läs mer](../../installation/using/client-console-availability-for-windows.md).
+1. Kopiera installationsprogrammet för klientkonsolen **setup-client-7.XXX.exe** till **/datakit/nl/eng/jsp** mapp. [Läs mer](../../installation/using/client-console-availability-for-windows.md).
 
 1. Följ integreringsproceduren för webbservrar (IIS, Apache) som beskrivs i följande avsnitt:
 

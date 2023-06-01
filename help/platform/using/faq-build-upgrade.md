@@ -7,9 +7,9 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: 85e2135d-a1a3-44f0-a4f9-de38db5c8726
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: acfe0c4139671fc3df69ff434ba307aaaaf70676
 workflow-type: tm+mt
-source-wordcount: '2031'
+source-wordcount: '1995'
 ht-degree: 2%
 
 ---
@@ -54,15 +54,16 @@ Versionsuppgraderingar å andra sidan har ofta betydande tekniska ändringar och
 
 Med serverinformationen från skärmbilden i föregående avsnitt kan du till exempel:
 
-* En bygguppgradering innebär att man går från build 6880 till valfri version som är större än 6880. Exempel: v6.1.1 build 8222 to v6.1.1 build 8666
+* En bygguppgradering innebär att man går från build 9342 till valfri version som är större än 9342. Exempel: v7.1 build 9342 to v7.1 build 9342
 
-* En versionsuppgradering innebär att man måste gå från version 6.0.2 till en version som är större än 6.0.2. Till exempel: v6.0.1 build 2222 to v6.1.1 build 8666
+* En versionsuppgradering innebär att man går från version 6 till en senare version.  Till exempel: v6.1.1 build 8666 to v7.1 build 9342.
 
 ## Ska jag säkerhetskopiera mina data före dessa uppdateringar?
 
 Adobe gör en säkerhetskopia av ditt system innan några ändringar görs. Men om det finns viktiga anpassningsarbeten i ditt icke-produktionssystem (utvecklings- eller testservrar) rekommenderar vi att du exporterar dessa som ett paket före en uppgradering.
 
-![](assets/do-not-localize/how-to-video.png) Mer information finns i [se videon](https://helpx.adobe.com/campaign/classic/how-to/generate-packages-in-acv6.html).
+<!--
+![](assets/do-not-localize/how-to-video.png) For more information, [watch this how to video](https://helpx.adobe.com/campaign/classic/how-to/generate-packages-in-acv6.html).-->
 
 ## När kommer uppgraderingarna att äga rum?
 
@@ -97,7 +98,9 @@ Bygguppgraderingsprocessen kräver följande resurser:
 
 ## Hur kan jag förbereda mig för uppgraderingen?
 
-Exportera material som är viktigt och som måste bevaras i dina utvecklings- och staging-system. Mer information finns här: [se videon](https://helpx.adobe.com/campaign/classic/how-to/generate-packages-in-acv6.html).
+Exportera material som är viktigt och som måste bevaras i dina utvecklings- och staging-system.
+
+<!--For more information please [watch this how to video](https://helpx.adobe.com/campaign/classic/how-to/generate-packages-in-acv6.html).-->
 
 Uppdatera dina kunskaper om viktiga arbetsflöden och leveranser som utvecklats i dina körningsböcker (eller av ditt konsultteam/partner) genom att läsa dokumentationen som skickas till ditt team när implementeringen är klar.
 
@@ -105,7 +108,7 @@ Identifiera låga volymer eller låga trafiktider som skulle vara idealiska för
 
 Granska vår [bygg checklista för uppgradering nedan](#check-list) och testplanerna och se till att resurser som kan utföra testerna är tillgängliga inom 24-48 timmar. när en uppgradering har slutförts.
 
-Mer information finns i [referera till det här dokumentet](https://helpx.adobe.com/se/campaign/kb/acc-build-upgrade.html).
+Mer information finns i [se det här avsnittet](../../production/using/build-upgrade.md).
 
 ## Kan uppgraderingar göras dygnet runt eller på kontorstid utanför kontorstid?
 

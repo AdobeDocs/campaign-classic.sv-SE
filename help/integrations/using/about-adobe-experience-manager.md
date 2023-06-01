@@ -7,9 +7,9 @@ badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 audience: integrations
 content-type: reference
 exl-id: e9756046-fc67-4afd-b7a9-c8d73614f02e
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: acfe0c4139671fc3df69ff434ba307aaaaf70676
 workflow-type: tm+mt
-source-wordcount: '150'
+source-wordcount: '132'
 ht-degree: 0%
 
 ---
@@ -31,7 +31,5 @@ Du måste ha följande element:
 * En Adobe Experience Manager **redigering** -instans.
 * En Adobe Experience Manager **publicera** -instans.
 * En Adobe Campaign-instans.
-
-Adobe Campaign är kompatibelt med Adobe Experience Manager 6.1, 6.2, 6.3, 6.4 och 6.5. I följande avsnitt visas en översikt över integreringen.
 
 Mer information finns i [Adobe Experience Manager-dokumentation](https://experienceleague.adobe.com/docs/experience-manager-65/classic-ui/campaign/classic-personalization-ac-campaign.html)

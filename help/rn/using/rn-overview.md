@@ -7,9 +7,9 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: 7a05fdff-8f9d-4e8d-812e-0f1509db5499
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
-workflow-type: ht
-source-wordcount: '935'
+source-git-commit: acfe0c4139671fc3df69ff434ba307aaaaf70676
+workflow-type: tm+mt
+source-wordcount: '933'
 ht-degree: 100%
 
 ---
@@ -129,7 +129,7 @@ Vi har organiserat ett team med dedikerade kundtjänstrepresentanter, produktche
     </a>
     </div>
     <ul>
-    <li>Arbetet och komplexiteten med att uppgradera din Campaign Classic-instans ökar med avståndet mellan två versioner (v6 --&gt; v7).</li>
+    <li>Arbetet och komplexiteten med att uppgradera din Campaign Classic-instans ökar med avståndet mellan två versioner.</li>
     <li>Ju längre organisationen väntar, desto mer komplicerad blir uppgraderingen (och desto fler sårbarheter utsätts du för).</li>
     <li>Regelbundna uppdateringar minskar längden på driftstoppen för att uppgradera och minskar risken för regression.</li>
     </ul>

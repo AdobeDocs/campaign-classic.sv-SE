@@ -7,9 +7,9 @@ audience: installation
 content-type: reference
 topic-tags: appendices
 exl-id: 70cd6a4b-c839-4bd9-b9a7-5a12e59c0cbf
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: acfe0c4139671fc3df69ff434ba307aaaaf70676
 workflow-type: tm+mt
-source-wordcount: '7979'
+source-wordcount: '7955'
 ht-degree: 5%
 
 ---
@@ -1618,12 +1618,12 @@ Här är de olika parametrarna för **mta** nod. Detta är konfigurationen för 
    <td> Boolean<br /> </td> 
    <td> true <br /> </td> 
   </tr> 
-  <tr> 
+  <!--tr> 
    <td> statServerVersion<br /> </td> 
-   <td> Protokollversion som används: kommunikationsprotokollversion (1 för en v5.11- och 6.0.2-server, 2 för en v6.1-server).<br /> </td> 
-   <td> Sträng<br /> </td> 
-   <td> Om värdet är odefinierat används den senaste versionen. <br /> </td> 
-  </tr> 
+   <td> Protocol version used: communication protocol version (1 for a v5.11 and 6.0.2 server, 2 for a v6.1 server).<br /> </td> 
+   <td> String<br /> </td> 
+   <td> If undefined, the latest version is used. <br /> </td> 
+  </tr--> 
   <tr> 
    <td> useMomentum<br /> </td> 
    <td> Om värdet är "true" använder instansen <a href="../../delivery/using/sending-with-enhanced-mta.md" target="_blank">Förbättrad MTA</a>.<br /> </td> 
