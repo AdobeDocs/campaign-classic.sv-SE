@@ -7,9 +7,9 @@ audience: platform
 content-type: reference
 topic-tags: connectors
 exl-id: 3a5856c3-b642-4722-97ff-6ae7107efdbe
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 403227736e2e8c606204e9324d0afb5b71be62a5
 workflow-type: tm+mt
-source-wordcount: '1798'
+source-wordcount: '1760'
 ht-degree: 1%
 
 ---
@@ -101,7 +101,7 @@ Kopplingen stöder följande alternativ:
 
 | Option | Beskrivning |
 |---|---|
-| TD_MAX_SESSIONS | Anger det maximala antalet inloggningssessioner som Teradata Parallel Transporter kan hämta för ett operatorjobb. <br>Mer information finns på [den här sidan](https://documentation.sas.com/doc/en/pgmsascdc/9.4_3.5/ds2ref/p1naft0um1kn3vn1ubgkrjdf7c3a.html). |
+| TD_MAX_SESSIONS | Anger det maximala antalet inloggningssessioner som Teradata Parallel Transporter kan hämta för ett operatorjobb. |
 | TimeZoneName | Namn på serverns tidszon. |
 | CharacterSet | Används för att konfigurera teckenuppsättningen Teradata. <br>Mer information finns på [den här sidan](https://docs.teradata.com/r/ODBC-Driver-for-Teradata-User-Guide/May-2017/Configuration-of-odbc.ini-in-UNIX/Linux-and-Apple-OS-X/Teradata-DSN-Options#rub1478609534082__table_N102D3_N102B6_N102B3_N10001). |
 | IANAAppCodePage | Kodsida för ODBC-program. <br>Mer information finns på [den här sidan](https://docs.teradata.com/r/ODBC-Driver-for-Teradata-User-Guide/May-2017/ODBC-Driver-for-Teradata-Application-Development/International-Character-Set-Support/Application-Code-Page) |
@@ -226,7 +226,7 @@ Så här installerar du SHA2:
 
 ### UDF_UTF16TO8-installation {#UDF-UTF16TO8-installation}
 
-Om du vill använda funktionerna udf_utf16to8 i din Adobe Campaign-instans måste du installera funktionen för användarläge i din Teradata-databas från **Verktygspaket för Unicode-teradata** i [page](https://downloads.teradata.com/download/tools/unicode-tool-kit) (utk_release1.7.0.0.zip).
+Om du vill använda funktionerna udf_utf16to8 i din Adobe Campaign-instans installerar du funktionen för användarläge i din Teradata-databas från **Verktygspaket för Unicode-teradata**.
 
 SHA1 för den hämtade filen är som följer e58235f434f52c71316a577cb48e20b97d24f470.
 

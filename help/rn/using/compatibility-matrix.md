@@ -7,10 +7,10 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: b8c1f287-06f4-4c34-8cca-b0c7676abbc2
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
-workflow-type: ht
+source-git-commit: 403227736e2e8c606204e9324d0afb5b71be62a5
+workflow-type: tm+mt
 source-wordcount: '802'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -369,7 +369,7 @@ Följande operativsystem och webbläsare **krävs** för att använda [klientkon
 
 Microsoft Edge WebView2-körtid den senaste versionen är obligatorisk för Campaign-klientkonsolen.
 
-Ladda ned Microsoft Edge WebView2 från [webbplatsen för Microsoft Developer](http://www.adobe.com/go/acc-ms-webview2-runtime-download).
+Ladda ned Microsoft Edge WebView2 från [webbplatsen för Microsoft Developer](https://www.adobe.com/go/acc-ms-webview2-runtime-download).
 
 
 ## Mobil-SDK{#MobileSDK}

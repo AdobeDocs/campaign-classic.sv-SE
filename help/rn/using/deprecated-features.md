@@ -7,10 +7,10 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: d60d67de-6618-4f3b-be4a-ad7633ab5645
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
-workflow-type: ht
-source-wordcount: '1684'
-ht-degree: 100%
+source-git-commit: 403227736e2e8c606204e9324d0afb5b71be62a5
+workflow-type: tm+mt
+source-wordcount: '1508'
+ht-degree: 96%
 
 ---
 
@@ -211,24 +211,24 @@ Från och med version 20.2 är Adobe Campaign inte längre kompatibelt med följ
 
 Från och med vårversionen 19.1 är Adobe Campaign inte längre kompatibelt med följande FDA-servrar:
 
-* PostgreSQL 9.3. [Läs mer](https://www.postgresql.org/support/versioning)
-* MySQL 5.5. [Läs mer](https://www.fromdual.com/support-for-mysql-from-oracle)
-* DB2 9.5. [Läs mer](https://www-01.ibm.com/support/docview.wss?uid=swg21168270)
-* Teradata 14–14.1. [Läs mer](https://community.teradata.com/t5/Database/Teradata-Database-Product-Life-Cycle/td-p/35068)
+* PostgreSQL 9.3.
+* MySQL 5.5.
+* DB2 9.5.
+* Teradata 14-14.1.
 
-Campaign Classic är inte kompatibelt med följande servrar i federerad dataåtkomst (FDA).
+Campaign Classic är inte kompatibelt med följande servrar i federerad dataåtkomst (FDA). Använd senare versioner eller system.
 
-* DB2 UDB 9.5 och 9.7. Stöd finns för senare versioner av DB2 via federerad dataåtkomst (FDA). [Läs mer](https://www-01.ibm.com/support/docview.wss?uid=swg21168270)
-* Oracle 9i och 10G R2. Stöd finns för senare versioner av Oracle Server via federerad dataåtkomst (FDA). [Läs mer](https://www.oracle.com/us/support/library/lifetime-support-technology-069183.pdf)
-* PostgreSQL-versioner upp till 9.6 har nått slutet av livscykeln. Nyare versioner av PostgreSQL stöds genom federerad dataåtkomst (FDA). [Läs mer](https://www.postgresql.org/support/versioning)
-* MSSQL 2000, 2005 och 2008 R2. Stöd finns för senare versioner av SQL Server via federerad dataåtkomst (FDA). [Läs mer](https://support.microsoft.com/en-us/lifecycle/search/1044)
-* MySQL 5.1. Stöd finns för senare versioner av MySQL via federerad dataåtkomst (FDA). [Läs mer](https://en.wikipedia.org/wiki/InfiniDB)
-* InfiniDB har nått slutet av sin livscykel. [Läs mer](https://www.mysql.com/support)
-* Teradata 13 och 13.1. Stöd finns för senare versioner av Teradata via federerad dataåtkomst (FDA). [Läs mer](https://www.info.teradata.com/download.cfm?ItemID=1007255)
-* Netezza 6.02 och 7.0. Netezza har nått slutet av sin livscykel. [Läs mer](https://en.wikipedia.org/wiki/Netezza)
-* AsterData 5.0. AsterData har nått slutet av sin livscykel. [Läs mer](https://en.wikipedia.org/wiki/Aster_Data_Systems)
-* Sybase IQ 15.2, 15.4 och 15.5 samt Sybase ASE 15.0. Stöd finns för senare versioner av Sybase via federerad dataåtkomst (FDA). [Läs mer](https://sites.google.com/site/dbatipsandtricks/time-tracker)
-* Hadoop via HiveSQL: Hadoop 2.7.3 och HiveSQL 1.2.1. Adobe Campaign Classic har fortfarande stöd för de listade versionerna av Hadoop via HiveSQL via federerad dataåtkomst (FDA). Dessa versioner slås dock ihop med: HortonWorks (HDP 2.4.X, 2.5.x och 2.6.x) och HDInsight 3.4 (HDP 2.4), 3.5 (HDP 2.5) och 3.6 (HDP 2.6)
+* DB2 UDB 9.5, 9.7.
+* Oracle 9i och 10G R2.
+* PostgreSQL-versioner upp till 9.6 har nått slutet av livscykeln.
+* MSSQL 2000, 2005 och 2008 R2.
+* MySQL 5.1.
+* InfiniDB har nått slutet av sin livscykel.
+* Teradata 13, 13.1.
+* Netezza 6.02 och 7.0. Netezza har nått slutet av sin livscykel.
+* AsterData 5.0. AsterData har nått slutet av sin livscykel.
+* sybase IQ 15.2, 15.4, 15.5 och Sybase ASE 15.0.
+* Hadoop via HiveSQL: Hadoop 2.7.3, HiveSQL 1.2.1. Adobe Campaign Classic har fortfarande stöd för de listade versionerna av Hadoopet via HiveSQL via FDA (Federated Data Access), men dessa versioner sammanfogas med: HortonWorks (HDP 2.4.X, 2.5.x, 2.6.x) och HDInsight 3.4 (HDP 2.4), 3.5 (HDP 2.5), 3.6 (HDP 2.6)
 
 **RDBMS-SERVER**
 

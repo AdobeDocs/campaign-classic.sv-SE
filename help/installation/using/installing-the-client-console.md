@@ -7,9 +7,9 @@ audience: installation
 content-type: reference
 topic-tags: installing-campaign-in-windows-
 exl-id: 7cc78214-92b8-4b1f-a307-96ec6af818d1
-source-git-commit: acfe0c4139671fc3df69ff434ba307aaaaf70676
+source-git-commit: 403227736e2e8c606204e9324d0afb5b71be62a5
 workflow-type: tm+mt
-source-wordcount: '1111'
+source-wordcount: '1109'
 ht-degree: 3%
 
 ---
@@ -40,7 +40,7 @@ Läs informationen nedan för att ta reda på vad som krävs för implementering
 
 Från version Campaign Classic 7.3 krävs installation av Microsoft Edge Webview 2 för alla konsolinstallationer.
 
-Webbvyn installeras som standard som en del av operativsystemet Windows 11. Om det inte redan finns på datorn uppmanas du att hämta det från Campaign Classic Console Installer [Microsoft Developer website](http://www.adobe.com/go/acc-ms-webview2-runtime-download). Observera att nedladdningslänken inte fungerar i webbläsaren Internet Explorer 11 eftersom Microsoft inte längre stöder det. Kontrollera att du använder en annan webbläsare för att komma åt länken.
+Webbvyn installeras som standard som en del av operativsystemet Windows 11. Om det inte redan finns på datorn uppmanas du att hämta det från Campaign Classic Console Installer [Microsoft Developer website](https://www.adobe.com/go/acc-ms-webview2-runtime-download). Observera att nedladdningslänken inte fungerar i webbläsaren Internet Explorer 11 eftersom Microsoft inte längre stöder det. Kontrollera att du använder en annan webbläsare för att komma åt länken.
 
 ## Implementeringar via Adobe Hosted {#hosted-customers}
 
@@ -132,7 +132,7 @@ När klientkonsolen har installerats följer du stegen nedan för att skapa ansl
 
 1. Ange en anslutning till Adobe Campaign-programservern via en URL. Använd antingen en DNS eller ett alias för datorn eller din IP-adress.
 
-   Du kan till exempel använda [`https://<machine>.<domain>.com`](https://myserver.adobe.com) skriv URL.
+   Du kan till exempel använda `https://<machine>.<domain>.com` skriv URL.
 
 1. Om Adobe IMS är konfigurerat för din organisation markerar du alternativet **[!UICONTROL Connect with an Adobe ID]**
 
