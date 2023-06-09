@@ -6,7 +6,7 @@ badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
 badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: Monitoring, Deliverability
 exl-id: 86c7169a-2c71-4c43-8a1a-f39871b29856
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: 3c1a0f435dce5e1f54f701e742f393db066ad78f
 workflow-type: tm+mt
 source-wordcount: '2614'
 ht-degree: 14%
@@ -201,15 +201,15 @@ Ett meddelande kan misslyckas omedelbart (synkront fel), eller senare, efter att
 * Synkront fel: Om fjärre-postservern som kontaktades av Adobe Campaign-leveransservern omedelbart returnerade ett felmeddelande, får leveransen inte skickas till profilens server. Adobe Campaign kvalificerar varje fel för att avgöra om e-postadresserna i fråga ska sättas i karantän eller inte. Se [Kvalifikation av studsmeddelanden](#bounce-mail-qualification).
 * Asynkront fel: Ett studsmeddelande eller en SR skickades senare av den mottagande servern. Det här e-postmeddelandet läses in i en teknisk postlåda som programmet använder för att etikettera meddelanden med ett fel. Asynkrona fel kan uppstå upp till en vecka efter att en leverans har skickats.
 
-   >[!NOTE]
-   >
-   >Konfiguration av studspostlådan finns i [det här avsnittet](../../installation/using/deploying-an-instance.md#managing-bounced-emails).
+  >[!NOTE]
+  >
+  >Konfiguration av studspostlådan finns i [det här avsnittet](../../installation/using/deploying-an-instance.md#managing-bounced-emails).
 
-   The [feedback-slinga](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html#feedback-loops) fungerar som studsmeddelanden. När en användare kvalificerar ett e-postmeddelande som skräppost kan du konfigurera e-postregler i Adobe Campaign så att alla leveranser till den här användaren blockeras. Meddelanden som skickas till användare som har kvalificerat ett e-postmeddelande som skräppost omdirigeras automatiskt till en e-postruta som har skapats för detta ändamål. Dessa användares adresser är till blockeringslista, även om de inte klickade på länken för att ta bort prenumerationen. Adresserna finns i blockeringslista i (**NmsAddress**) karantänregister och inte i (**NmsRecipient**) mottagartabell.
+  The [feedback-slinga](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html#feedback-loops) fungerar som studsmeddelanden. När en användare kvalificerar ett e-postmeddelande som skräppost kan du konfigurera e-postregler i Adobe Campaign så att alla leveranser till den här användaren blockeras. Meddelanden som skickas till användare som har kvalificerat ett e-postmeddelande som skräppost omdirigeras automatiskt till en e-postruta som har skapats för detta ändamål. Dessa användares adresser är till blockeringslista, även om de inte klickade på länken för att ta bort prenumerationen. Adresserna finns i blockeringslista i (**NmsAddress**) karantänregister och inte i (**NmsRecipient**) mottagartabell.
 
-   >[!NOTE]
-   >
-   >Klagomålshanteringen beskrivs närmare i [Leveranshantering](about-deliverability.md) -avsnitt.
+  >[!NOTE]
+  >
+  >Klagomålshanteringen beskrivs närmare i [Leveranshantering](about-deliverability.md) -avsnitt.
 
 ## E-posthantering {#bounce-mail-management}
 
@@ -234,7 +234,6 @@ För lokala installationer och värdbaserade/hybridinstallationer som använder 
 >* **** Asynkrona studsningar är fortfarande kvalificerade inMail-processen enligt **[!UICONTROL Inbound email]**-reglerna. Mer information finns i [Regler för e-posthantering](#email-management-rules).
 >
 >* För instanser som använder den förbättrade MTA-metoden **utan webhooks/EFS**, **[!UICONTROL Inbound email]** regler kommer också att användas för att bearbeta synkrona studsmeddelanden från Förbättrat MTA, med samma e-postadress som för asynkrona studsmeddelanden.
-
 
 För lokala installationer och värdbaserade/hybridinstallationer som använder den äldre Campaign MTA får Adobe Campaign-leveransservern ett felmeddelande från meddelandeservern eller fjärr-DNS-servern när leveransen av ett e-postmeddelande misslyckas. Listan med fel består av strängar i meddelandet som returneras av fjärrservern. Feltyper och orsaker tilldelas till varje felmeddelande.
 
@@ -287,7 +286,6 @@ Standardreglerna är följande.
 >* Leveransservern (MTA) måste startas om om om parametrarna har ändrats.
 >* Ändringen eller skapandet av hanteringsregler är endast till för expertanvändare.
 
-
 #### Inkommande e-post {#inbound-email}
 
 >[!IMPORTANT]
@@ -296,7 +294,7 @@ Standardreglerna är följande.
 
 För lokala installationer och värdbaserade/hybridinstallationer som använder det äldre Campaign MTA innehåller dessa regler en lista över teckensträngar som kan returneras av fjärrservrar och som gör att du kan kvalificera felet (**Hård**, **Mjuk** eller **Ignorerad**).
 
-När ett e-postmeddelande misslyckas returnerar fjärrservern ett studsmeddelande till den adress som anges i plattformsparametrarna. Adobe Campaign jämför innehållet i varje studentpost med strängarna i listan över regler och tilldelar det sedan till en av de tre [feltyper](#delivery-failure-types-and-reasons).
+När ett e-postmeddelande misslyckas returnerar fjärrservern ett studsmeddelande till den adress som anges i [plattformsparametrar](../../installation/using/deploying-an-instance.md). Adobe Campaign jämför innehållet i varje studentpost med strängarna i listan över regler och tilldelar det sedan till en av de tre [feltyper](#delivery-failure-types-and-reasons).
 
 >[!NOTE]
 >

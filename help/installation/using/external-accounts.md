@@ -7,10 +7,10 @@ audience: platform
 content-type: reference
 topic-tags: administration-basics
 exl-id: 4a17d5e8-c73f-42e7-b641-0fee6a52c5c0
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 3c1a0f435dce5e1f54f701e742f393db066ad78f
 workflow-type: tm+mt
-source-wordcount: '1714'
-ht-degree: 8%
+source-wordcount: '1830'
+ht-degree: 7%
 
 ---
 
@@ -59,27 +59,27 @@ Så här konfigurerar du **[!UICONTROL Bounce mails (defaultPopAccount)]** exter
 
 * **[!UICONTROL Server]**
 
-   URL för POP3-servern.
+  URL för POP3-servern.
 
 * **[!UICONTROL Port]**
 
-   Portnummer för POP3-anslutning. Standardporten är 110.
+  Portnummer för POP3-anslutning. Standardporten är 110.
 
 * **[!UICONTROL Account]**
 
-   Användarens namn.
+  Användarens namn.
 
 * **[!UICONTROL Password]**
 
-   Lösenord för användarkonto.
+  Lösenord för användarkonto.
 
 * **[!UICONTROL Encryption]**
 
-   Typ av vald kryptering mellan **[!UICONTROL By default]**, **[!UICONTROL POP3 + STARTTLS]**, **[!UICONTROL POP3]** eller **[!UICONTROL POP3S]**.
+  Typ av vald kryptering mellan **[!UICONTROL By default]**, **[!UICONTROL POP3 + STARTTLS]**, **[!UICONTROL POP3]** eller **[!UICONTROL POP3S]**.
 
 * **[!UICONTROL Function]**
 
-   Inkommande e-post eller SOAP-router
+  Inkommande e-post eller SOAP-router
 
 >[!IMPORTANT]
 >
@@ -89,19 +89,19 @@ Konfigurera en POP3 extern med **Microsoft OAuth 2.0**, kontrollera **[!UICONTRO
 
 * **[!UICONTROL Azure tenant]**
 
-   Azure ID (eller katalog (klientorganisations-ID) finns i **Grundläggande** listruta med programöversikt i Azure-portalen.
+  Azure ID (eller katalog (klientorganisations-ID) finns i **Grundläggande** listruta med programöversikt i Azure-portalen.
 
 * **[!UICONTROL Azure Client ID]**
 
-   Klient-ID (eller program-ID (klient)) finns i **Grundläggande** listruta med programöversikt i Azure-portalen.
+  Klient-ID (eller program-ID (klient)) finns i **Grundläggande** listruta med programöversikt i Azure-portalen.
 
 * **[!UICONTROL Azure Client secret]**
 
-   Klienthemligt ID finns i **Klienthemligheter** kolumn från **Certifikat och hemligheter** menyn för ditt program i Azure-portalen.
+  Klienthemligt ID finns i **Klienthemligheter** kolumn från **Certifikat och hemligheter** menyn för ditt program i Azure-portalen.
 
 * **[!UICONTROL Azure Redirect URL]**
 
-   Omdirigerings-URL:en finns i **Autentisering** menyn för ditt program i Azure-portalen. Det ska sluta med följande syntax `nl/jsp/oauth.jsp`, t.ex. `https://redirect.adobe.net/nl/jsp/oauth.jsp`.
+  Omdirigerings-URL:en finns i **Autentisering** menyn för ditt program i Azure-portalen. Det ska sluta med följande syntax `nl/jsp/oauth.jsp`, t.ex. `https://redirect.adobe.net/nl/jsp/oauth.jsp`.
 
 När du har angett de olika inloggningsuppgifterna kan du klicka på **[!UICONTROL Setup the connection]** för att slutföra konfigurationen av ditt externa konto.
 
@@ -113,7 +113,7 @@ The **[!UICONTROL Routing]** Med ett externt konto kan du konfigurera varje kana
 
 Följande kanaler kan konfigureras:
 
-* [E-post](../../installation/using/deploying-an-instance.md#email-channel-parameters)
+* [E-post](#email-routing-external-account)
 * [Mobil (SMS)](../../delivery/using/sms-set-up.md#creating-an-smpp-external-account)
 * [Telefon](../../delivery/using/steps-about-delivery-creation-steps.md#other-channels)
 * [Direktmeddelande](../../delivery/using/about-direct-mail-channel.md)
@@ -122,23 +122,37 @@ Följande kanaler kan konfigureras:
 * [iOS](../../delivery/using/configuring-the-mobile-application.md)
 * [Android-kanal](../../delivery/using/configuring-the-mobile-application-android.md)
 
+### E-postroutning {#email-routing-external-account}
+
+Det externa kontot för e-postroutning tillhandahålls som standard, anpassat efter din konfiguration.
+
+Som en lokal kund kan du skapa nya externa routningskonton eller uppdatera parametrar enligt beskrivningen nedan. Den här konfigurationen är reserverad för expertanvändare och kan påverka leveransmöjligheterna. Kontakta Adobe kundtjänst eller er Adobe-representant om du har några frågor.
+
+* Du måste använda en **Mid-sourcing**, **Extern** routning, eller **Massor** leveransroutningstyp.
+
+* För **Massor** och **Mid-sourcing** leveranssätt kan du ange varumärkningsparametrar i **Varumärke** -fliken. De här parametrarna används för att åsidosätta [standardparametrar](../../installation/using/deploying-an-instance.md#email-channel-parameters) for **URL för speglingssida** och **Feladress** med inställningar som är specifika för ert varumärke.
+
+  ![](assets/ext-account-branding.png)
+
+* Information om hur du konfigurerar ett externt konto för mellanleverantörer finns i [det här avsnittet](mid-sourcing-server.md)
+
 ### Körningsinstans  {#execution-instance-external-account}
 
-Om du har en uppdelad arkitektur måste du ange de körningsinstanser som är länkade till kontrollinstansen och ansluta dem. Mallar för transaktionsmeddelanden distribueras till körningsinstansen
+Om du har en uppdelad arkitektur måste du ange de körningsinstanser som är länkade till kontrollinstansen och ansluta dem. Transaktionsmeddelandemallar distribueras till körningsinstansen.
 
 ![](assets/ext_account_13.png)
 
 * **[!UICONTROL URL]**
 
-   URL för servern där körningsinstansen är installerad.
+  URL för servern där körningsinstansen är installerad.
 
 * **[!UICONTROL Account]**
 
-   Namnet på kontot måste matcha Message Center Agent enligt operatormappen.
+  Namnet på kontot måste matcha Message Center Agent enligt operatormappen.
 
 * **[!UICONTROL Password]**
 
-   Lösenord för kontot enligt definitionen i mappen operator.
+  Lösenord för kontot enligt definitionen i mappen operator.
 
 Mer information om den här konfigurationen finns i [page](../../message-center/using/configuring-instances.md#control-instance).
 
@@ -154,23 +168,23 @@ Om du vill göra det anger du den adress och de autentiseringsuppgifter som ska 
 
 * **[!UICONTROL Server]**
 
-   FTP-serverns namn.
+  FTP-serverns namn.
 
 * **[!UICONTROL Port]**
 
-   Portnummer för FTP-anslutning. Standardporten är 21.
+  Portnummer för FTP-anslutning. Standardporten är 21.
 
 * **[!UICONTROL Account]**
 
-   Användarens namn.
+  Användarens namn.
 
 * **[!UICONTROL Password]**
 
-   Lösenord för användarkonto.
+  Lösenord för användarkonto.
 
 * **[!UICONTROL Encryption]**
 
-   Typ av vald kryptering mellan **[!UICONTROL None]** eller **[!UICONTROL SSL]**.
+  Typ av vald kryptering mellan **[!UICONTROL None]** eller **[!UICONTROL SSL]**.
 
 Om du vill veta var du hittar dessa autentiseringsuppgifter kan du läsa detta [page](https://help.dreamhost.com/hc/en-us/articles/115000675027-FTP-overview-and-credentials).
 
@@ -182,19 +196,19 @@ Med det externa SFTP-kontot kan du konfigurera och testa åtkomst till en server
 
 * **[!UICONTROL Server]**
 
-   URL för SFTP-servern.
+  URL för SFTP-servern.
 
 * **[!UICONTROL Port]**
 
-   Portnummer för FTP-anslutning. Standardporten är 22.
+  Portnummer för FTP-anslutning. Standardporten är 22.
 
 * **[!UICONTROL Account]**
 
-   Kontonamn som används för att ansluta till SFTP-servern.
+  Kontonamn som används för att ansluta till SFTP-servern.
 
 * **[!UICONTROL Password]**
 
-   Lösenord som används för att ansluta till SFTP-servern.
+  Lösenord som används för att ansluta till SFTP-servern.
 
 Så här lägger du till SSH-nycklar i Windows:
 
@@ -237,39 +251,39 @@ Om du vill ansluta till Adobe Campaign-konsolen med en Adobe ID måste du konfig
 
 * **[!UICONTROL IMS server]**
 
-   URL för IMS-servern. Se till att både fas- och produktionsinstanser pekar på samma IMS-produktionsslutpunkt.
+  URL för IMS-servern. Se till att både fas- och produktionsinstanser pekar på samma IMS-produktionsslutpunkt.
 
 * **[!UICONTROL IMS scope]**
 
-   Omfattningar som definieras här måste vara en delmängd av de som tillhandahålls av IMS.
+  Omfattningar som definieras här måste vara en delmängd av de som tillhandahålls av IMS.
 
 * **[!UICONTROL IMS client identifier]**
 
-   ID för IMS-klienten.
+  ID för IMS-klienten.
 
 * **[!UICONTROL IMS client secret]**
 
-   Autentiseringsuppgifter för din IMS-klienthemlighet.
+  Autentiseringsuppgifter för din IMS-klienthemlighet.
 
 * **[!UICONTROL Callback server]**
 
-   Åtkomst-URL för din Adobe Campaign-instans.
+  Åtkomst-URL för din Adobe Campaign-instans.
 
 * **[!UICONTROL IMS organization ID]**
 
-   ID för din organisation. Om du vill hitta ditt organisations-ID går du till [den här sidan](https://experienceleague.adobe.com/docs/core-services/interface/administration/organizations.html?lang=sv){_blank}.
+  ID för din organisation. Om du vill hitta ditt organisations-ID går du till [den här sidan](https://experienceleague.adobe.com/docs/core-services/interface/administration/organizations.html?lang=sv){_blank}.
 
 * **[!UICONTROL Association mask]**
 
-   Syntax som gör att konfigurationsnamn i Enterprise Dashboard kan synkroniseras med grupper i Adobe Campaign.
+  Syntax som gör att konfigurationsnamn i Enterprise Dashboard kan synkroniseras med grupper i Adobe Campaign.
 
 * **[!UICONTROL Server]**
 
-   URL för din Adobe Experience Cloud-instans.
+  URL för din Adobe Experience Cloud-instans.
 
 * **[!UICONTROL Tenant]**
 
-   Namn på din Adobe Experience Cloud-klient.
+  Namn på din Adobe Experience Cloud-klient.
 
 Mer information om den här konfigurationen finns i [den här sidan](../../integrations/using/configuring-ims.md).
 
@@ -289,15 +303,15 @@ The **[!UICONTROL AEM (AEM instance)]** Med ett externt konto kan ni hantera inn
 
 * **[!UICONTROL Server]**
 
-   URL för Adobe Experience Manager-servern.
+  URL för Adobe Experience Manager-servern.
 
 * **[!UICONTROL Port]**
 
-   Kontonamn som används för att ansluta till Adobe Experience Manager-redigeringsinstansen.
+  Kontonamn som används för att ansluta till Adobe Experience Manager-redigeringsinstansen.
 
 * **[!UICONTROL Password]**
 
-   Lösenord som används för att ansluta till Adobe Experience Manager-redigeringsinstansen.
+  Lösenord som används för att ansluta till Adobe Experience Manager-redigeringsinstansen.
 
 Mer information om detta hittar du i det här [avsnittet](../../integrations/using/about-adobe-experience-manager.md).
 
@@ -319,21 +333,21 @@ Med **[!UICONTROL Web API]** distributionstyp och **[!UICONTROL Password credent
 
 * **[!UICONTROL Account]**
 
-   Det konto som används för att logga in på Microsoft CRM.
+  Det konto som används för att logga in på Microsoft CRM.
 
 * **[!UICONTROL Server]**
 
-   URL till din Microsoft CRM-server.
+  URL till din Microsoft CRM-server.
 
-   Hitta Microsoft CRM **[!UICONTROL Server URL]**&#x200B;öppnar du ditt Microsoft Dynamics CRM-konto och klickar sedan på **Dynamics 365** och välj din app. Du kan sedan hitta **[!UICONTROL Server URL]** i webbläsarens adressfält, t.ex. `https://myserver.crm.dynamics.com/`.
+  Hitta Microsoft CRM **[!UICONTROL Server URL]**&#x200B;öppnar du ditt Microsoft Dynamics CRM-konto och klickar sedan på **Dynamics 365** och välj din app. Du kan sedan hitta **[!UICONTROL Server URL]** i webbläsarens adressfält, t.ex. `https://myserver.crm.dynamics.com/`.
 
 * **[!UICONTROL Client identifier]**
 
-   Klient-ID som kan hittas från Microsoft Azure-hanteringsportalen i **[!UICONTROL Update your code]** kategori, **[!UICONTROL Client ID]** fält.
+  Klient-ID som kan hittas från Microsoft Azure-hanteringsportalen i **[!UICONTROL Update your code]** kategori, **[!UICONTROL Client ID]** fält.
 
 * **[!UICONTROL CRM version]**
 
-   Välj **[!UICONTROL Dynamics CRM 365]** CRM-version.
+  Välj **[!UICONTROL Dynamics CRM 365]** CRM-version.
 
 Med **[!UICONTROL Web API]** distributionstyp och **[!UICONTROL Certificate]** autentisering måste du ange följande information:
 
@@ -341,15 +355,15 @@ Med **[!UICONTROL Web API]** distributionstyp och **[!UICONTROL Certificate]** a
 
 * **[!UICONTROL Server]**
 
-   URL till din Microsoft CRM-server.
+  URL till din Microsoft CRM-server.
 
-   Hitta Microsoft CRM **[!UICONTROL Server URL]**&#x200B;öppnar du ditt Microsoft Dynamics CRM-konto och klickar sedan på **Dynamics 365** och välj din app. Du kan sedan hitta **[!UICONTROL Server URL]** i webbläsarens adressfält, t.ex. `https://myserver.crm.dynamics.com/`.
+  Hitta Microsoft CRM **[!UICONTROL Server URL]**&#x200B;öppnar du ditt Microsoft Dynamics CRM-konto och klickar sedan på **Dynamics 365** och välj din app. Du kan sedan hitta **[!UICONTROL Server URL]** i webbläsarens adressfält, t.ex. `https://myserver.crm.dynamics.com/`.
 
 * **[!UICONTROL Private Key (Base64 encoded)]**
 
-   Observera att den privata nyckeln måste kodas till Base64.
+  Observera att den privata nyckeln måste kodas till Base64.
 
-   Om du vill göra det kan du använda hjälp av en Base64-kodare eller kommandoraden `base64 -w0 private.key` för Linux.
+  Om du vill göra det kan du använda hjälp av en Base64-kodare eller kommandoraden `base64 -w0 private.key` för Linux.
 
 * **[!UICONTROL Custom Key identifier]**
 
@@ -357,11 +371,11 @@ Med **[!UICONTROL Web API]** distributionstyp och **[!UICONTROL Certificate]** a
 
 * **[!UICONTROL Client identifier]**
 
-   Klient-ID som kan hittas från Microsoft Azure-hanteringsportalen i **[!UICONTROL Update your code]** kategori, **[!UICONTROL Client ID]** fält.
+  Klient-ID som kan hittas från Microsoft Azure-hanteringsportalen i **[!UICONTROL Update your code]** kategori, **[!UICONTROL Client ID]** fält.
 
 * **[!UICONTROL CRM version]**
 
-   CRM-version mellan **[!UICONTROL Dynamics CRM 2007]**, **[!UICONTROL Dynamics CRM 2015]** eller **[!UICONTROL Dynamics CRM 2016]**.
+  CRM-version mellan **[!UICONTROL Dynamics CRM 2007]**, **[!UICONTROL Dynamics CRM 2015]** eller **[!UICONTROL Dynamics CRM 2016]**.
 
 Mer information om den här konfigurationen finns i [page](../../platform/using/crm-connectors.md).
 
@@ -375,23 +389,23 @@ Om du vill konfigurera det externa Salesforce CRM-kontot så att det fungerar me
 
 * **[!UICONTROL Account]**
 
-   Det konto som används för att logga in i Salesforce CRM.
+  Det konto som används för att logga in i Salesforce CRM.
 
 * **[!UICONTROL Password]**
 
-   Lösenord som används för att logga in i Salesforce CRM.
+  Lösenord som används för att logga in i Salesforce CRM.
 
 * **[!UICONTROL Client identifier]**
 
-   Om du vill veta var du kan hitta din klientidentifierare kan du läsa detta [page](https://help.salesforce.com/articleView?id=000205876&amp;type=1).
+  Om du vill veta var du kan hitta din klientidentifierare kan du läsa detta [page](https://help.salesforce.com/articleView?id=000205876&amp;type=1).
 
 * **[!UICONTROL Security token]**
 
-   Om du vill veta var du hittar din säkerhetstoken kan du läsa detta [page](https://help.salesforce.com/articleView?id=000205876&amp;type=1).
+  Om du vill veta var du hittar din säkerhetstoken kan du läsa detta [page](https://help.salesforce.com/articleView?id=000205876&amp;type=1).
 
 * **[!UICONTROL API version]**
 
-   Välj version av API:t.
+  Välj version av API:t.
 
 För det här externa kontot måste du konfigurera Salesforce CRM med konfigurationsguiden.
 
@@ -409,23 +423,23 @@ När du konfigurerar det nya externa kontot måste du ange följande information
 
 * **[!UICONTROL AWS S3 Account Server]**
 
-   URL-adressen till servern ska fyllas i enligt följande:
+  URL-adressen till servern ska fyllas i enligt följande:
 
-   ```
-   <S3bucket name>.s3.amazonaws.com/<s3object path>
-   ```
+  ```
+  <S3bucket name>.s3.amazonaws.com/<s3object path>
+  ```
 
 * **[!UICONTROL AWS access key ID]**
 
-   Om du vill veta var du hittar ditt ID för AWS-åtkomstnyckel kan du läsa detta [page](https://docs.aws.amazon.com/general/latest/gr/aws-sec-cred-types.html#access-keys-and-secret-access-keys) .
+  Om du vill veta var du hittar ditt ID för AWS-åtkomstnyckel kan du läsa detta [page](https://docs.aws.amazon.com/general/latest/gr/aws-sec-cred-types.html#access-keys-and-secret-access-keys) .
 
 * **[!UICONTROL Secret access key to AWS]**
 
-   Om du vill veta var du hittar din hemliga åtkomstnyckel till AWS kan du läsa detta [page](https://aws.amazon.com/fr/blogs/security/wheres-my-secret-access-key/).
+  Om du vill veta var du hittar din hemliga åtkomstnyckel till AWS kan du läsa detta [page](https://aws.amazon.com/fr/blogs/security/wheres-my-secret-access-key/).
 
 * **[!UICONTROL AWS Region]**
 
-   Läs mer om AWS [page](https://aws.amazon.com/about-aws/global-infrastructure/regions_az/).
+  Läs mer om AWS [page](https://aws.amazon.com/about-aws/global-infrastructure/regions_az/).
 
 * The **[!UICONTROL Use server side encryption]** kan du lagra filen i S3-krypterat läge.
 
@@ -441,12 +455,12 @@ Så här konfigurerar du **[!UICONTROL Azure external account]** om du vill arbe
 
 * **[!UICONTROL Server]**
 
-   URL för din Azure Blob-lagringsserver.
+  URL för din Azure Blob-lagringsserver.
 
 * **[!UICONTROL Encryption]**
 
-   Typ av vald kryptering mellan **[!UICONTROL None]** eller **[!UICONTROL SSL]**.
+  Typ av vald kryptering mellan **[!UICONTROL None]** eller **[!UICONTROL SSL]**.
 
 * **[!UICONTROL Access key]**
 
-   Ta reda på var du hittar **[!UICONTROL Access key]**, se [page](https://docs.microsoft.com/en-us/azure/storage/common/storage-account-keys-manage?tabs=azure-portal).
+  Ta reda på var du hittar **[!UICONTROL Access key]**, se [page](https://docs.microsoft.com/en-us/azure/storage/common/storage-account-keys-manage?tabs=azure-portal).

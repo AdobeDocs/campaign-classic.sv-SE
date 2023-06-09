@@ -6,7 +6,7 @@ badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
 badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: Deliverability, Email Rendering, Proofs
 exl-id: c2f4d8d0-f0fe-4d1a-92fd-91edaf9729f3
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: 3c1a0f435dce5e1f54f701e742f393db066ad78f
 workflow-type: tm+mt
 source-wordcount: '1666'
 ht-degree: 4%
@@ -106,6 +106,7 @@ Om du vill göra leveransförberedelserna snabbare kan du kontrollera **[!UICONT
 När det här alternativet är aktiverat utförs leveransförberedelsen direkt i databasen, vilket avsevärt kan snabba upp analysen.
 
 För närvarande är det här alternativet endast tillgängligt när följande villkor är uppfyllda:
+
 * Leveransen måste vara ett e-postmeddelande. De andra kanalerna stöds inte för tillfället.
 * Du får inte använda medelstor eller extern routning, endast bulkleveransroutningstyp. Du kan kontrollera routningen som används i **[!UICONTROL General]** -fliken i **[!UICONTROL Delivery properties]**.
 * Du kan inte ange en målgrupp som kommer från en extern fil som mål. Klicka på **[!UICONTROL To]** länk från **[!UICONTROL Email parameters]** och kontrollera att **[!UICONTROL Defined in the database]** är markerat. Kontrollera att mottagarna är **[!UICONTROL Specified by the inbound event(s)]** i **[!UICONTROL Delivery]** -fliken.
@@ -136,7 +137,6 @@ För att upptäcka eventuella fel i meddelandekonfigurationen rekommenderar Adob
 >* Tillgängliga valideringslägen beskrivs i [Ändra godkännandeläge](steps-validating-the-delivery.md#changing-the-approval-mode).
 >* Korrekturmålets konfiguration förklaras i [Definiera ett specifikt korrekturmål](steps-defining-the-target-population.md#defining-a-specific-proof-target).
 >
-
 
 Följ stegen nedan för att skicka ett bevis:
 

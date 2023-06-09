@@ -7,16 +7,14 @@ audience: installation
 content-type: reference
 topic-tags: appendices
 exl-id: a979cd99-afa7-4ce6-ba0f-9495089cba08
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 3c1a0f435dce5e1f54f701e742f393db066ad78f
 workflow-type: tm+mt
-source-wordcount: '3991'
+source-wordcount: '3993'
 ht-degree: 1%
 
 ---
 
 # Lista över alternativ för Campaign Classic{#configuring-campaign-options}
-
-
 
 The **[!UICONTROL Administration / Platform / Options]** Med -noden kan du konfigurera Adobe Campaign-alternativ. Vissa av dem är inbyggda när du installerar Campaign och andra kan läggas till manuellt vid behov. Vilka alternativ som är tillgängliga varierar beroende på vilka paket som installeras med instansen.
 
@@ -26,7 +24,6 @@ The **[!UICONTROL Administration / Platform / Options]** Med -noden kan du konfi
 >* Alternativ som inte visas på den här sidan är bara interna och **får inte ändras**.
 >
 >* Det går endast att ändra eller uppdatera Adobe Campaign-alternativ med expertanvändare.
-
 
 ## Leverans {#delivery}
 
@@ -147,11 +144,11 @@ The **[!UICONTROL Administration / Platform / Options]** Med -noden kan du konfi
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsEmail_DefaultReplyToAddr</span> <br /> </td> 
-   <td> Standarde-postadressen för 'svar' på instansnivå som används för e-postleverans om den lämnas tom av användaren.<br /> </td> 
+   <td> Standarde-postadressen för svar på instansnivå som används för e-postleverans om den lämnas tom av användaren.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsEmail_ExpOrganization</span> <br /> </td> 
-   <td> Kundens namn. Används i vissa varningsmeddelanden som visas för mottagarna.<br /> "Du får det här meddelandet eftersom du har varit i kontakt med **** eller ett närstående företag. Att inte längre ta emot meddelanden från ****".<br /> </td> 
+   <td> Kundens namn. Används i vissa varningsmeddelanden som visas för mottagarna.<br /> "Du får det här meddelandet eftersom du har varit i kontakt med "Organisation" eller ett närstående företag. Att inte längre ta emot meddelanden från "Organisation"<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsEmail_FromName</span> <br /> </td> 
@@ -159,7 +156,7 @@ The **[!UICONTROL Administration / Platform / Options]** Med -noden kan du konfi
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsEmail_ReplyToName</span> <br /> </td> 
-   <td> Standardetiketten för e-post för svar på instansnivå som används för e-postleverans om den lämnas tom av användaren.<br /> </td> 
+   <td> Standardetiketten för att svara till e-postmeddelanden på instansnivå som används för e-postleverans om den lämnas tom av användaren.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsEmail_RetryCount</span> <br /> </td> 

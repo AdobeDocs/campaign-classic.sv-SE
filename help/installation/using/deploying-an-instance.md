@@ -8,16 +8,14 @@ audience: installation
 content-type: reference
 topic-tags: initial-configuration
 exl-id: 8b07447c-9a86-4b56-8d29-e0b01357a6ec
-source-git-commit: 4661688a22bd1a82eaf9c72a739b5a5ecee168b1
+source-git-commit: 3c1a0f435dce5e1f54f701e742f393db066ad78f
 workflow-type: tm+mt
-source-wordcount: '3140'
+source-wordcount: '3333'
 ht-degree: 1%
 
 ---
 
 # Driftsätta en instans{#deploying-an-instance}
-
-
 
 >[!NOTE]
 >
@@ -25,7 +23,7 @@ ht-degree: 1%
 
 ## Distributionsguide {#deployment-wizard}
 
-Med en grafisk guide, som är tillgänglig i Adobe Campaign klientkonsol, kan du definiera parametrarna för den instans som du ska ansluta till.
+Adobe Campaign tillhandahåller en grafisk assistent, som finns i Adobe Campaign klientkonsol, för att definiera parametrarna för den instans som du ska ansluta till.
 
 Om du vill starta distributionsguiden väljer du **Verktyg > Avancerat > Distributionsguiden**.
 
@@ -80,13 +78,36 @@ Dessa parametrar kan överlagras i leveransmallar, och individuellt för varje l
 
 Ange följande parametrar:
 
-* **[!UICONTROL Sender name]** : Avsändarens namn
-* **[!UICONTROL Sender address]** : Avsändarens adress
-* **[!UICONTROL Reply address text]** : Namnet, som kan anpassas, som används när mottagaren klickar på **[!UICONTROL Reply]** knappar i deras e-postklientprogram
-* **[!UICONTROL Reply address]** : E-postadressen som ska användas när mottagaren klickar på **[!UICONTROL Reply]** knappar i deras e-postklientprogram
-* **[!UICONTROL Error address]** : E-postadress för meddelanden med fel. Detta är den tekniska adress som används för att hantera studsmeddelanden, inklusive e-post som tas emot av Adobe Campaign-servern på grund av att måladresserna inte finns.
+* **[!UICONTROL Sender name]** : Ange avsändarens namn.
+* **[!UICONTROL Sender address]** : Ange avsändarens e-postadress.
+
+  >[!NOTE]
+  >
+  > När du skickar e-post från Adobe Campaign **Avsändaradress** postlådan övervakas inte och marknadsföringsanvändare kan inte komma åt den här postlådan. Adobe Campaign erbjuder inte heller möjlighet att svara automatiskt eller vidarebefordra e-postmeddelanden som tas emot i den här postlådan.
+
+* **[!UICONTROL Reply address text]** : Ange det namn som ska användas när mottagaren klickar på **[!UICONTROL Reply]** -knappen.
+* **[!UICONTROL Reply address]** : Ange den e-postadress som ska användas när mottagaren klickar på **[!UICONTROL Reply]** i klientprogramvaran för e-post.
+
+  >[!NOTE]
+  >
+  >Syftet med **Svarsadress** fältet är när du vill att mottagaren ska svara på en annan adress än **Avsändaradress**.  Den här adressen måste vara en giltig e-postadress och länkad till en övervakad postlåda.  Kunden måste vara värd för den här postlådan.  Det kan vara en supportpostlåda, till exempel customer-care@customer.com, där e-postmeddelanden läses och besvaras.
+
+* **[!UICONTROL Error address]** : Ange e-postadressen för meddelanden med fel. Detta är den tekniska adress som används för att hantera studsmeddelanden, inklusive e-post som tas emot av Adobe Campaign-servern på grund av att måladresserna inte finns.
+
+  >[!NOTE]
+  >
+  > Den här adressen måste vara en giltig e-postadress och länkad till en övervakad postlåda. Kunden måste vara värd för den här postlådan. Det kan vara en studspostlåda, till exempel errors@customer.com.
+
 
 Förutom detta kan du ange **masker** som är behöriga för avsändaradressen och feladressen. Om det behövs kan dessa masker separeras med kommatecken. Den här konfigurationen är valfri. När fält anges kontrollerar Adobe Campaign vid leveranstillfället (under analysen om adressen inte innehåller några variabler) att adresserna är giltiga. Det här operativläget ser till att inga adresser används som kan utlösa leveransproblem. Leveransadresserna måste konfigureras på leveransservern.
+
+>[!NOTE]
+>
+>* De här inställningarna sparas i alternativen för Campaign-plattformen. [Läs mer](../../installation/using/configuring-campaign-options.md).
+> 
+>* För konfigurationer med flera varumärken kan du anpassa feladressen och åsidosätta den här konfigurationen från det externa kontot för e-postroutning. [Läs mer](../../installation/using/external-accounts.md#email-routing-external-account).
+>
+
 
 ### Tecken som är godkända i adresser {#characters-authorized-in-addresses}
 
@@ -183,15 +204,15 @@ När du aktiverar spårning för en instans ändras URL:erna i leveranserna unde
 
 * Informationen om externa URL:er (oavsett om de är säkra eller inte) som anges på den här sidan i distributionsguiden används för att skapa den nya URL:en. Förutom den här informationen innehåller den ändrade länken: Identifierare för leveransen, mottagaren och URL:en.
 
-   Spårningsinformation samlas in av Adobe Campaign på spårningsservrar för att berika mottagarprofiler och data som är länkade till leveransen ( **[!UICONTROL Tracking]** tabbar).
+  Spårningsinformation samlas in av Adobe Campaign på spårningsservrar för att berika mottagarprofiler och data som är länkade till leveransen ( **[!UICONTROL Tracking]** tabbar).
 
-   Information om interna URL:er används endast av Adobe Campaign-programservern för att kontakta spårningsservern/-servrarna.
+  Information om interna URL:er används endast av Adobe Campaign-programservern för att kontakta spårningsservern/-servrarna.
 
-   Mer information finns i [Spårningsserver](#tracking-server).
+  Mer information finns i [Spårningsserver](#tracking-server).
 
 * När URL-adresserna har konfigurerats måste du aktivera spårning. För att göra detta måste instansen registreras på spårningsservern(arna).
 
-   Mer information finns i [Spårning sparas](#saving-tracking).
+  Mer information finns i [Spårning sparas](#saving-tracking).
 
 ### Spårningsserver {#tracking-server}
 
@@ -203,7 +224,7 @@ För att säkerställa effektiviteten i spårningen för den här instansen mås
 * **[!UICONTROL External URL]** och/eller **[!UICONTROL Secure external URL]** : Ange den omdirigerings-URL som ska användas i det e-postmeddelande som ska skickas.
 * **[!UICONTROL Internal URL(s)]** : URL:er som bara används av Adobe Campaign-servern för att kontakta spårningsservern/-servrarna för att samla in loggar och överföra URL:erna. Du behöver inte associera den med instansen.
 
-   Om du inte anger någon URL används spårnings-URL som standard.
+  Om du inte anger någon URL används spårnings-URL som standard.
 
 Med en arkitektur som bygger på flera källor kan ni externalisera spårningshanteringen. Så här gör du:
 
@@ -337,6 +358,13 @@ Använd den här sidan om du vill fylla i server-URL:er till:
 
 Med Adobe Campaign kan du differentiera dessa tre URL-adresser för att sprida belastningen över flera plattformar.
 
+
+>[!NOTE]
+>
+>* De här inställningarna sparas i alternativen för Campaign-plattformen. [Läs mer](../../installation/using/configuring-campaign-options.md).
+>* För konfigurationer med flera varumärken kan du anpassa URL:en för speglingssidan och åsidosätta den här konfigurationen från det externa e-postroutningskontot. [Läs mer](../../installation/using/configuring-campaign-options.md).
+
+
 ## Hantera offentliga resurser {#managing-public-resources}
 
 >[!IMPORTANT]
@@ -365,7 +393,7 @@ I en leverans kan du använda bilder som lagras i resursbiblioteket eller någon
 
 * För e-postbilder är **https://** server **/res/img** URL.
 
-   Det här värdet kan åsidosättas för varje leverans.
+  Det här värdet kan åsidosättas för varje leverans.
 
 * För offentliga resurser finns URL:en **https://** server **/res/** instance ****där **instance**är namnet på spårningsinstansen.
 
@@ -390,38 +418,38 @@ Följande publiceringslägen är tillgängliga:
 
 * Spårningsservrar
 
-   Resurserna kopieras automatiskt till de olika spårningsservrarna. De konfigureras i steget [Spårningskonfiguration](#tracking-configuration).
+  Resurserna kopieras automatiskt till de olika spårningsservrarna. De konfigureras i steget [Spårningskonfiguration](#tracking-configuration).
 
 * Andra Adobe Campaign-servrar
 
-   Du kan använda ytterligare en Adobe Campaign-server där resurserna kopieras.
+  Du kan använda ytterligare en Adobe Campaign-server där resurserna kopieras.
 
-   På serversidan måste du skapa en ny instans med följande kommando för att kunna använda en dedikerad Adobe Campaign-server:
+  På serversidan måste du skapa en ny instans med följande kommando för att kunna använda en dedikerad Adobe Campaign-server:
 
-   ```
-   nlserver config -addtrackinginstance:<trackingA>/<trackingA*>
-   ```
+  ```
+  nlserver config -addtrackinginstance:<trackingA>/<trackingA*>
+  ```
 
-   Ange sedan lösenordet.
+  Ange sedan lösenordet.
 
-   Parametrarna för de dedikerade servrarna anges i **[!UICONTROL Media URL(s)]**, **[!UICONTROL Password]** och **[!UICONTROL Instance name]** fält.
+  Parametrarna för de dedikerade servrarna anges i **[!UICONTROL Media URL(s)]**, **[!UICONTROL Password]** och **[!UICONTROL Instance name]** fält.
 
-   ![](assets/s_ncs_install_images_upload_b.png)
+  ![](assets/s_ncs_install_images_upload_b.png)
 
 * Manuellt publiceringsskript (endast för offentliga medel)
 
-   ![](assets/s_ncs_install_images_upload_c.png)
+  ![](assets/s_ncs_install_images_upload_c.png)
 
-   Du kan publicera bilderna med hjälp av ett skript:
+  Du kan publicera bilderna med hjälp av ett skript:
 
    * Du måste skapa det här skriptet: Innehållet beror på din konfiguration.
    * Skriptet anropas av följande kommando:
 
-      ```
-      [INSTALL]/copyToFrontal.vbs "$(XTK_INSTALL_DIR)\var\<instance>\upload\" "img1,img2,img3"
-      ```
+     ```
+     [INSTALL]/copyToFrontal.vbs "$(XTK_INSTALL_DIR)\var\<instance>\upload\" "img1,img2,img3"
+     ```
 
-      där `[INSTALL]` är åtkomstsökvägen till Adobe Campaign installationsmapp.
+     där `[INSTALL]` är åtkomstsökvägen till Adobe Campaign installationsmapp.
 
    * Kontrollera att skriptet är körbart i Unix.
 
