@@ -6,7 +6,7 @@ badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
 badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: Email
 exl-id: 1bb36e71-9f1a-4553-b266-eca3f48688e2
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: 43158445f688f4c2612d4dad76f2243b2e358b35
 workflow-type: tm+mt
 source-wordcount: '900'
 ht-degree: 8%
@@ -61,19 +61,19 @@ Välj formatet för e-postmeddelandet i fönstrets nedre del:
 
 * **[!UICONTROL Use recipient preferences]** (standardläge)
 
-   Meddelandeformatet definieras enligt de data som lagras i mottagarprofilen och lagras som standard i **[!UICONTROL email format]** fält (@emailFormat). Om en mottagare vill ta emot meddelanden i ett visst format är detta det format som skickas. Om fältet inte är ifyllt skickas ett multipart-alternativt meddelande (se nedan).
+  Meddelandeformatet definieras enligt de data som lagras i mottagarprofilen och lagras som standard i **[!UICONTROL email format]** fält (@emailFormat). Om en mottagare vill ta emot meddelanden i ett visst format är detta det format som skickas. Om fältet inte är ifyllt skickas ett multipart-alternativt meddelande (se nedan).
 
 * **[!UICONTROL Let recipient mail client choose the most appropriate format]**
 
-   Meddelandet innehåller båda formaten: text och HTML. Formatet som visas vid mottagning beror på konfigurationen av mottagarens e-postprogramvara (multipart-option).
+  Meddelandet innehåller båda formaten: text och HTML. Formatet som visas vid mottagning beror på konfigurationen av mottagarens e-postprogramvara (multipart-option).
 
-   >[!IMPORTANT]
-   >
-   >Det här alternativet inkluderar båda versionerna av dokumentet. Det påverkar därför leveransgraden eftersom meddelandestorleken är större.
+  >[!IMPORTANT]
+  >
+  >Det här alternativet inkluderar båda versionerna av dokumentet. Det påverkar därför leveransgraden eftersom meddelandestorleken är större.
 
 * **[!UICONTROL Send all messages in text format]**
 
-   Meddelandet skickas i textformat. Formatet HTML skickas inte, utan används endast för spegelsidan när mottagaren klickar på meddelandet.
+  Meddelandet skickas i textformat. Formatet HTML skickas inte, utan används endast för spegelsidan när mottagaren klickar på meddelandet.
 
 >[!NOTE]
 >
@@ -99,7 +99,7 @@ Förutom standardläget är följande alternativ också tillgängliga:
 * **[!UICONTROL Do not generate the mirror page]**: ingen spegelsida genereras, även om länken finns i leveransen.
 * **[!UICONTROL Generates a mirror page accessible using only the message identifier]**: Med det här alternativet kan du komma åt spegelsidans innehåll, med anpassningsinformation, i leveransloggfönstret. Det gör du genom att klicka på **[!UICONTROL Delivery]** och väljer den rad för mottagaren vars spegelsida du vill visa. Klicka på länken **[!UICONTROL Display the mirror page for this message...]**.
 
-   ![](assets/s_ncs_user_wizard_miror_page_link.png)
+  ![](assets/s_ncs_user_wizard_miror_page_link.png)
 
 ## Teckenkodning {#character-encoding}
 
@@ -117,7 +117,7 @@ Om du vill göra det väljer du **[!UICONTROL Force the encoding used for messag
 
 The **[!UICONTROL SMTP]** -fliken i leveransparametrarna gör att du kan konfigurera hanteringen av studsmeddelanden.
 
-Som standard tas studsade e-postmeddelanden emot i standardfelrutan för plattformen, men du kan definiera en specifik feladress för en leverans.
+Som standard tas studsade e-postmeddelanden emot i [standardfelruta för plattformen](../../installation/using/deploying-an-instance.md#parameters-for-delivered-emails-parameters-for-delivered-emails)men du kan definiera en specifik feladress för en leverans.
 
 Du kan också definiera en specifik adress från den här skärmen för att undersöka orsaken till avhoppsmeddelanden när dessa inte automatiskt kunde kvalificeras av programmet. För vart och ett av dessa fält **Lägg till anpassade fält** Med -ikonen kan du lägga till personaliseringsparametrar.
 

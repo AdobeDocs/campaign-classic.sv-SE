@@ -8,10 +8,10 @@ audience: installation
 content-type: reference
 topic-tags: initial-configuration
 exl-id: 8b07447c-9a86-4b56-8d29-e0b01357a6ec
-source-git-commit: 84dc10d9f1979b7b9277fbc6837bc5ee9ab0e9dd
+source-git-commit: 43158445f688f4c2612d4dad76f2243b2e358b35
 workflow-type: tm+mt
-source-wordcount: '3341'
-ht-degree: 1%
+source-wordcount: '3366'
+ht-degree: 2%
 
 ---
 
@@ -84,7 +84,7 @@ Ange följande parametrar:
 * **[!UICONTROL Reply address text]** : Ange det namn som ska användas när mottagaren klickar på **[!UICONTROL Reply]** -knappen.
 * **[!UICONTROL Reply address]** : Ange den e-postadress som ska användas när mottagaren klickar på **[!UICONTROL Reply]** i klientprogramvaran för e-post. Syftet med **Svarsadress** fältet är när du vill att mottagaren ska svara på en annan adress än **Avsändaradress**.  Den här adressen måste vara en giltig e-postadress, länkad till en övervakad postlåda och värd av kunden.  Det kan till exempel vara en supportpostlåda `customer-care@customer.com`, där e-postmeddelanden läses och besvaras.
 
-* **[!UICONTROL Error address]** : Ange e-postadressen för meddelanden med fel. Detta är den tekniska adress som används för att hantera studsmeddelanden, inklusive e-post som tas emot av Adobe Campaign-servern på grund av att måladresserna inte finns. Den här adressen måste vara en giltig e-postadress, länkad till en övervakad postlåda och värd av kunden. Det kan vara en studsande postlåda, till exempel `errors@customer.com`.
+* **[!UICONTROL Error address]** : Ange e-postadressen för meddelanden med fel. Detta är den tekniska adress som används för att hantera studsmeddelanden, inklusive e-post som tas emot av Adobe Campaign-servern på grund av att måladresserna inte finns. Den här adressen måste vara en giltig e-postadress, länkad till en övervakad postlåda och värd av kunden. Det kan vara en studsande postlåda, till exempel `errors@customer.com`. Den här adressen kan ändras för en leverans eller i leveransmallarna från **SMTP** -fliken för leveransmallens egenskaper. [Läs mer](../../delivery/using/email-parameters.md#managing-bounce-emails-managing-bounce-emails).
 
 
 Förutom detta kan du ange **masker** som är behöriga för avsändaradressen och feladressen. Om det behövs kan dessa masker separeras med kommatecken. Den här konfigurationen är valfri. När fält anges kontrollerar Adobe Campaign vid leveranstillfället (under analysen om adressen inte innehåller några variabler) att adresserna är giltiga. Det här operativläget ser till att inga adresser används som kan utlösa leveransproblem. Leveransadresserna måste konfigureras på leveransservern.

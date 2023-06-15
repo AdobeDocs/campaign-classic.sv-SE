@@ -7,7 +7,7 @@ audience: platform
 content-type: reference
 topic-tags: administration-basics
 exl-id: 4a17d5e8-c73f-42e7-b641-0fee6a52c5c0
-source-git-commit: 3c1a0f435dce5e1f54f701e742f393db066ad78f
+source-git-commit: 43158445f688f4c2612d4dad76f2243b2e358b35
 workflow-type: tm+mt
 source-wordcount: '1830'
 ht-degree: 7%
@@ -126,9 +126,9 @@ Följande kanaler kan konfigureras:
 
 Det externa kontot för e-postroutning tillhandahålls som standard, anpassat efter din konfiguration.
 
-Som en lokal kund kan du skapa nya externa routningskonton eller uppdatera parametrar enligt beskrivningen nedan. Den här konfigurationen är reserverad för expertanvändare och kan påverka leveransmöjligheterna. Kontakta Adobe kundtjänst eller er Adobe-representant om du har några frågor.
+Som lokal/blandad kund kan du skapa nya externa routningskonton eller uppdatera parametrar enligt beskrivningen nedan. Den här konfigurationen är reserverad för expertanvändare och kan påverka leveransmöjligheterna. Kontakta Adobe kundtjänst eller er Adobe-representant om du har några frågor.
 
-* Du måste använda en **Mid-sourcing**, **Extern** routning, eller **Massor** leveransroutningstyp.
+* Du kan använda en **Mid-sourcing**, **Extern** routning, eller **Massor** leveransroutningstyp.
 
 * För **Massor** och **Mid-sourcing** leveranssätt kan du ange varumärkningsparametrar i **Varumärke** -fliken. De här parametrarna används för att åsidosätta [standardparametrar](../../installation/using/deploying-an-instance.md#email-channel-parameters) for **URL för speglingssida** och **Feladress** med inställningar som är specifika för ert varumärke.
 
