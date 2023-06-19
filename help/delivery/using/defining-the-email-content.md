@@ -6,9 +6,9 @@ badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
 badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: Email Design
 exl-id: 46212929-fd2d-44a2-897e-35f98e88af36
-source-git-commit: 9e1d49cd1ae89a3bdf42febd48c5a340fe7ec674
+source-git-commit: 64a94982ea1eebc30c652e0025eb0aaa0eab1ce9
 workflow-type: tm+mt
-source-wordcount: '1931'
+source-wordcount: '1943'
 ht-degree: 1%
 
 ---
@@ -149,7 +149,7 @@ E-postleveranser i HTML-format kan innehålla bilder. I leveransguiden kan du im
 
 ### Guardrails {#img-guardrails}
 
-För att undvika prestandaproblem får bilder i e-postmeddelanden inte som standard överstiga 100 MB. Den här gränsen kan konfigureras från `NmsDelivery_MaxDownloadedImageSize` alternativ.
+För att undvika prestandaproblem får bilderna i e-postmeddelanden inte överstiga 100 MB. Den här begränsningen, som är inställd som standard, kan ändras från `NmsDelivery_MaxDownloadedImageSize` alternativ. Adobe rekommenderar dock att du undviker stora bilder i e-postutskick.
 
 Läs mer i [listan över alternativ för Campaign Classic](../../installation/using/configuring-campaign-options.md#delivery).
 

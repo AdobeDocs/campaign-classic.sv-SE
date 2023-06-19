@@ -5,9 +5,9 @@ description: Lär dig hur du skickar transaktionsmejl med personliga och/eller p
 badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 feature: Transactional Messaging
 exl-id: 755d2364-f6c4-4943-97e8-3ed52a0f2665
-source-git-commit: 9e1d49cd1ae89a3bdf42febd48c5a340fe7ec674
+source-git-commit: 64a94982ea1eebc30c652e0025eb0aaa0eab1ce9
 workflow-type: tm+mt
-source-wordcount: '651'
+source-wordcount: '663'
 ht-degree: 2%
 
 ---
@@ -40,7 +40,7 @@ I det här scenariot är de bifogade filerna inte färdiga, utan läggs till dir
 
 ## Recommendations och skyddsräcken {#important-notes}
 
-För att undvika prestandaproblem får bilder i e-postmeddelanden inte som standard överstiga 100 MB. Den här gränsen kan konfigureras från `NmsDelivery_MaxDownloadedImageSize` alternativ.
+För att undvika prestandaproblem får bilderna i e-postmeddelanden inte överstiga 100 MB. Den här begränsningen, som är inställd som standard, kan ändras från `NmsDelivery_MaxDownloadedImageSize` alternativ. Adobe rekommenderar dock att du undviker stora bilder i e-postutskick.
 
 Adobe rekommenderar också att du begränsar storleken och antalet bifogade filer. Som standard kan du bara lägga till en fil som en bifogad fil i ett e-postmeddelande. Det här tröskelvärdet kan konfigureras från `NmsDelivery_MaxRecommendedAttachments` alternativ.
 
