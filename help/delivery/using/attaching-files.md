@@ -6,16 +6,14 @@ badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
 badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: Email
 exl-id: db65e83e-276f-4163-98c3-3658a48acffc
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: 9e1d49cd1ae89a3bdf42febd48c5a340fe7ec674
 workflow-type: tm+mt
-source-wordcount: '928'
+source-wordcount: '954'
 ht-degree: 1%
 
 ---
 
 # Bifoga filer i ett e-postmeddelande{#attaching-files}
-
-
 
 ## Om e-postbilagor {#about-email-attachments}
 
@@ -33,6 +31,14 @@ Det finns två möjliga fall:
 >[!NOTE]
 >
 >Den här typen av konfiguration utförs vanligtvis i leveransmallarna. Mer information finns i [Om mallar](about-templates.md).
+
+## Guardrails {#attachments-guardrails}
+
+För att undvika prestandaproblem får bilder i e-postmeddelanden inte som standard överstiga 100 MB. Den här gränsen kan konfigureras från `NmsDelivery_MaxDownloadedImageSize` alternativ.
+
+Adobe rekommenderar också att du begränsar storleken och antalet bifogade filer. Som standard kan du bara lägga till en fil som en bifogad fil i ett e-postmeddelande. Det här tröskelvärdet kan konfigureras från `NmsDelivery_MaxRecommendedAttachments` alternativ.
+
+Läs mer i [listan över alternativ för Campaign Classic](../../installation/using/configuring-campaign-options.md#delivery).
 
 ## Bifoga en lokal fil {#attaching-a-local-file}
 
@@ -113,9 +119,7 @@ Använd följande konfigurationssteg för den här typen av bifogad fil:
 
    ![](assets/s_ncs_user_wizard_email_calc_attachement_08.png)
 
->[!NOTE]
->
->För att undvika prestandaproblem bör varje bildstorlek som standard inte överstiga 100 000 byte om du tar med bilder som laddas ned direkt från en anpassad URL som bilaga. Det rekommenderade tröskelvärdet kan konfigureras från [listan över alternativ för Campaign Classic](../../installation/using/configuring-campaign-options.md#delivery).
+
 
 ### Bifoga en beräknad fil {#attach-a-calculated-file}
 
@@ -182,6 +186,6 @@ The **[!UICONTROL Advanced]** kan du definiera avancerade alternativ för bifoga
 * Du kan definiera filteralternativ för att undvika att skicka den bifogade filen till alla mottagare. Alternativet **[!UICONTROL Enable filtering of recipients who will receive the attachment]** aktiverar ett indatafält som används för att definiera ett skript för mottagarval, som måste anges i JavaScript.
 * Du kan skripta namnet på filen för att anpassa den.
 
-   Ange texten i fönstret och använd de anpassningsfält som finns i listrutan. I följande exempel anpassas filnamnet så att det innehåller dagens datum och namnet på mottagaren.
+  Ange texten i fönstret och använd de anpassningsfält som finns i listrutan. I följande exempel anpassas filnamnet så att det innehåller dagens datum och namnet på mottagaren.
 
-   ![](assets/s_ncs_user_wizard_email_calc_attachement_09.png)
+  ![](assets/s_ncs_user_wizard_email_calc_attachement_09.png)

@@ -6,16 +6,14 @@ badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
 badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: Email Design
 exl-id: 46212929-fd2d-44a2-897e-35f98e88af36
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: 9e1d49cd1ae89a3bdf42febd48c5a340fe7ec674
 workflow-type: tm+mt
-source-wordcount: '1989'
+source-wordcount: '1931'
 ht-degree: 1%
 
 ---
 
 # Definiera e-postinnehållet {#defining-the-email-content}
-
-
 
 ## Avsändare {#sender}
 
@@ -30,14 +28,13 @@ Information om hur du infogar och använder anpassningsfält finns i [Om persona
 >[!NOTE]
 >
 >* Avsändarens adress används som standard för svar.
->* Huvudparametrarna får inte vara tomma. Som standard innehåller de värdeindata när distributionsguiden konfigureras. Mer information finns i [Installationshandbok](../../installation/using/deploying-an-instance.md).
+>* Huvudparametrarna får inte vara tomma. Som standard innehåller de värdeindata när distributionsguiden konfigureras. Läs mer i [det här avsnittet](../../installation/using/deploying-an-instance.md).
 >* Avsändarens adress är obligatorisk för att tillåta att ett e-postmeddelande skickas (RFC-standard).
 >* Adobe Campaign kontrollerar syntaxen för de e-postadresser som anges.
 
-
->[!IMPORTANT]
+>[!CAUTION]
 >
->I samband med de kontroller som Internet Access Providers (ISP) utför för att bekämpa oönskad e-post (skräppost) rekommenderar Adobe att man skapar e-postkonton som motsvarar de adresser som angetts för leveranser och svar. Kontakta systemadministratören för meddelanden.
+>För att undvika leveransproblem måste det finnas e-postkonton som motsvarar de adresser som angetts för leveranser och svar och som måste övervakas. Kontakta systemadministratören.
 
 ## Meddelandeämne {#message-subject}
 
@@ -71,45 +68,45 @@ Meddelanden skickas som standard i HTML eller textformat enligt mottagarens öns
 
 * Om du vill importera ett HTML-innehåll använder du **[!UICONTROL Open]** -knappen. Du kan också klistra in källkoden direkt i **[!UICONTROL Source]** underflik.
 
-   Om du använder [Digital Content Editor](../../web/using/about-campaign-html-editor.md) (DCE), se [Välja en innehållsmall](../../web/using/use-case--creating-an-email-delivery.md#step-3---selecting-a-content).
+  Om du använder [Digital Content Editor](../../web/using/about-campaign-html-editor.md) (DCE), se [Välja en innehållsmall](../../web/using/use-case--creating-an-email-delivery.md#step-3---selecting-a-content).
 
-   >[!IMPORTANT]
-   >
-   >Innehållet i HTML måste skapas i förväg och sedan importeras till Adobe Campaign. Redigeraren i HTML är inte utformad för att skapa innehåll.
+  >[!IMPORTANT]
+  >
+  >Innehållet i HTML måste skapas i förväg och sedan importeras till Adobe Campaign. Redigeraren i HTML är inte utformad för att skapa innehåll.
 
-   The **[!UICONTROL Preview]** Med underfliken kan du visa återgivningen av varje innehåll för en mottagare. Anpassningsfälten och de villkorliga elementen i innehållet ersätts med motsvarande information för den valda profilen.
+  The **[!UICONTROL Preview]** Med underfliken kan du visa återgivningen av varje innehåll för en mottagare. Anpassningsfälten och de villkorliga elementen i innehållet ersätts med motsvarande information för den valda profilen.
 
-   Verktygsfältsknapparna ger åtkomst till standardåtgärder och formateringsparametrar för HTML-sidan.
+  Verktygsfältsknapparna ger åtkomst till standardåtgärder och formateringsparametrar för HTML-sidan.
 
-   ![](assets/s_ncs_user_wizard_email01_138.png)
+  ![](assets/s_ncs_user_wizard_email01_138.png)
 
-   Du kan infoga bilder i meddelanden från en lokal fil eller från ett bildbibliotek i Adobe Campaign. Om du vill göra det klickar du på **[!UICONTROL Image]** och välj lämpligt alternativ.
+  Du kan infoga bilder i meddelanden från en lokal fil eller från ett bildbibliotek i Adobe Campaign. Om du vill göra det klickar du på **[!UICONTROL Image]** och välj lämpligt alternativ.
 
-   ![](assets/s_ncs_user_wizard_email01_18.png)
+  ![](assets/s_ncs_user_wizard_email01_18.png)
 
-   Biblioteksbilder kan öppnas via **[!UICONTROL Resources>Online>Public resources]** i mappträdet. Se även [Lägga till bilder](#adding-images).
+  Biblioteksbilder kan öppnas via **[!UICONTROL Resources>Online>Public resources]** i mappträdet. Se även [Lägga till bilder](#adding-images).
 
-   Med den sista knappen i verktygsfältet kan du infoga anpassningsfält.
+  Med den sista knappen i verktygsfältet kan du infoga anpassningsfält.
 
-   >[!NOTE]
-   >
-   >Användningen av personaliseringsfält beskrivs i [Om personalisering](about-personalization.md).
+  >[!NOTE]
+  >
+  >Användningen av personaliseringsfält beskrivs i [Om personalisering](about-personalization.md).
 
-   Med flikarna längst ned på sidan kan du visa HTML-koden för den sida som skapas och visa återgivningen av meddelandet med dess anpassning. Klicka på **[!UICONTROL Preview]** och välja en mottagare med **[!UICONTROL Test personalization]** i verktygsfältet. Du kan välja en mottagare bland de definierade målen eller en annan mottagare.
+  Med flikarna längst ned på sidan kan du visa HTML-koden för den sida som skapas och visa återgivningen av meddelandet med dess anpassning. Klicka på **[!UICONTROL Preview]** och välja en mottagare med **[!UICONTROL Test personalization]** i verktygsfältet. Du kan välja en mottagare bland de definierade målen eller en annan mottagare.
 
-   ![](assets/s_ncs_user_wizard_email01_139.png)
+  ![](assets/s_ncs_user_wizard_email01_139.png)
 
-   Du kan validera HTML-meddelandet. Du kan även visa innehållet i e-posthuvudet.
+  Du kan validera HTML-meddelandet. Du kan även visa innehållet i e-posthuvudet.
 
-   ![](assets/s_ncs_user_wizard_email01_140.png)
+  ![](assets/s_ncs_user_wizard_email01_140.png)
 
 * Om du vill importera ett textinnehåll använder du **[!UICONTROL Open]** eller **[!UICONTROL Text Content]** för att ange meddelandets innehåll när det visas i textformat. Använd verktygsfältsknapparna för att komma åt åtgärder för innehållet. Med den sista knappen kan du infoga anpassningsfält.
 
-   ![](assets/s_ncs_user_wizard_email01_141.png)
+  ![](assets/s_ncs_user_wizard_email01_141.png)
 
-   När det gäller formatet HTML klickar du på **[!UICONTROL Preview]** längst ned på sidan för att visa återgivningen av meddelandet med dess personalisering.
+  När det gäller formatet HTML klickar du på **[!UICONTROL Preview]** längst ned på sidan för att visa återgivningen av meddelandet med dess personalisering.
 
-   ![](assets/s_ncs_user_wizard_email01_142.png)
+  ![](assets/s_ncs_user_wizard_email01_142.png)
 
 
 ## Definiera interaktivt innehåll {#amp-for-email-format}
@@ -118,7 +115,7 @@ Med Adobe Campaign kan du testa den nya interaktiva [AMP för e-post](https://am
 
 Mer information finns i [det här avsnittet](defining-interactive-content.md).
 
-## Använda innehållshantering {#using-content-management}
+## Använd innehållshantering {#using-content-management}
 
 Du kan definiera innehållet i leveransen med hjälp av innehållshanteringsformulären, direkt i leveransguiden. För att göra detta måste du referera till publiceringsmallen för den innehållshantering som ska användas i **[!UICONTROL Advanced]** -fliken för leveransegenskaperna.
 
@@ -145,22 +142,29 @@ Du kan infoga uttryckssymboler i ditt e-postinnehåll.
 
 Mer information om hur du anpassar uttryckslistan finns i [page](customizing-emoticon-list.md).
 
-## Lägga till bilder {#adding-images}
+## Lägg till bilder {#adding-images}
 
 E-postleveranser i HTML-format kan innehålla bilder. I leveransguiden kan du importera en HTML-sida som innehåller bilder eller infoga bilder direkt med redigeraren i HTML via **[!UICONTROL Image]** ikon.
+
+
+### Guardrails {#img-guardrails}
+
+För att undvika prestandaproblem får bilder i e-postmeddelanden inte som standard överstiga 100 MB. Den här gränsen kan konfigureras från `NmsDelivery_MaxDownloadedImageSize` alternativ.
+
+Läs mer i [listan över alternativ för Campaign Classic](../../installation/using/configuring-campaign-options.md#delivery).
+
+### Typer av bilder {#img-types}
 
 Bilderna kan vara:
 
 * En lokal bild eller en bild som anropats från en server
 * En bild som lagras i Adobe Campaign bibliotek för offentliga resurser
 
-   Offentliga resurser är tillgängliga via **[!UICONTROL Resources > Online]** noden i Adobe Campaign-hierarkin. De grupperas i ett bibliotek och kan inkluderas i e-postmeddelanden, men kan också användas för kampanjer eller uppgifter, eller för innehållshantering.
+  Offentliga resurser är tillgängliga via **[!UICONTROL Resources > Online]** noden i Adobe Campaign-hierarkin. De grupperas i ett bibliotek och kan inkluderas i e-postmeddelanden, men kan också användas för kampanjer eller uppgifter, eller för innehållshantering.
 
 * En resurs som delas med Adobe Experience Cloud. Se [det här avsnittet](../../integrations/using/sharing-assets-with-adobe-experience-cloud.md).
 
->[!IMPORTANT]
->
->Om du vill inkludera bilder i e-postmeddelanden med leveransguiden måste Adobe Campaign-instansen konfigureras för att aktivera offentlig resurshantering. Den här proceduren kan utföras från distributionsguiden. Se [det här avsnittet](../../installation/using/deploying-an-instance.md) för mer information om konfiguration.
+### Infoga och hantera bilder {#manage-images}
 
 Med leveransguiden kan du lägga till lokala bilder, eller bilder som lagras i biblioteket, i innehållet i meddelanden. Om du vill göra det klickar du på **[!UICONTROL Image]** i verktygsfältet för innehåll i HTML.
 
@@ -188,14 +192,12 @@ När du öppnar HTML-innehåll med inkluderade bilder i leveransguiden får du e
 
 >[!IMPORTANT]
 >
->* Sökvägarna för bildåtkomst ändras vid manuell överföring eller när meddelanden skickas.
+> Bild-URL:erna ändras vid manuell överföring eller när meddelanden skickas.
 > 
->* För att undvika prestandaproblem bör du inkludera bilder som laddas ned direkt från en anpassad URL som [bifogad](attaching-files.md)bör varje bildstorlek som standard inte överstiga 100 000 byte. Det rekommenderade tröskelvärdet kan konfigureras från [listan över alternativ för Campaign Classic](../../installation/using/configuring-campaign-options.md#delivery).
 
+### Användningsfall: skicka ett meddelande med bilder {#uc-images}
 
-**Användningsfall: skicka ett meddelande med bilder**
-
-Här följer ett exempel på en leverans med fyra bilder:
+Nedan visas ett exempel på en leverans med fyra bilder:
 
 ![](assets/s_ncs_user_images_in_delivery_wiz_1.png)
 
@@ -253,23 +255,23 @@ Konfigurera sedan följande element efter dina behov:
 
    * För 1D-format finns följande typer i Adobe Campaign: Codabar, Code 128, GS1-128 (tidigare EAN-128), UPC-A, UPC-E, ISBN, EAN-8, Code39, Interleaved 2 of 5, POSTNET and Royal Mail (RM4SCC).
 
-      Exempel på en 1D-streckkod:
+     Exempel på en 1D-streckkod:
 
-      ![](assets/barcode_insert_08.png)
+     ![](assets/barcode_insert_08.png)
 
    * Typerna DataMatrix och PDF417 gäller 2D-formatet.
 
-      Exempel på en 2D-streckkod:
+     Exempel på en 2D-streckkod:
 
-      ![](assets/barcode_insert_09.png)
+     ![](assets/barcode_insert_09.png)
 
    * Om du vill infoga en QR-kod väljer du den här typen och anger den felkorrigeringsgrad som ska användas. Denna frekvens definierar mängden information som upprepas och toleransen för försämring.
 
-      ![](assets/barcode_insert_06.png)
+     ![](assets/barcode_insert_06.png)
 
-      Exempel på en QR-kod:
+     Exempel på en QR-kod:
 
-      ![](assets/barcode_insert_12.png)
+     ![](assets/barcode_insert_12.png)
 
 1. Ange storleken på streckkoden som du vill infoga i e-postmeddelandet: Om du konfigurerar skalan kan du öka eller minska storleken på streckkoden, från x1 till x10.
 1. The **[!UICONTROL Value]** I kan du definiera värdet för streckkoden. Ett värde kan matcha ett specialerbjudande och kan vara funktionen för ett villkor, det kan vara värdet för ett databasfält som är länkat till kunderna.
