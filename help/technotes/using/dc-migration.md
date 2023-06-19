@@ -7,9 +7,9 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: 2b282221-d048-4f6e-b52e-f8e584af2c0e
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: a119378e4285d3258a9b4f1f68c0b625264e5d37
 workflow-type: tm+mt
-source-wordcount: '1557'
+source-wordcount: '1533'
 ht-degree: 2%
 
 ---
@@ -76,8 +76,6 @@ Det här programmet har tre huvudmål:
 ![](assets/GSMigrations.png)
 
 ## Om migreringen
-
-Migreringen till Adobe Managed Services (Public Cloud) sker 2020/2021 för berörda konton. Adobe kommer att leda och vägleda organisationen genom den här resan.
 
 För att få igång den här satsningen får konton som kräver den här migreringen ett e-postmeddelande från Adobe med en tidslinje och tillgång till dokumentation. Detta är ett meddelande om att ditt konto är schemalagt att migreras.
 

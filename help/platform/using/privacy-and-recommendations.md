@@ -8,9 +8,9 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: d2451b62-bddf-4dee-8789-35aaae8348e1
-source-git-commit: 4661688a22bd1a82eaf9c72a739b5a5ecee168b1
+source-git-commit: a119378e4285d3258a9b4f1f68c0b625264e5d37
 workflow-type: tm+mt
-source-wordcount: '2030'
+source-wordcount: '2025'
 ht-degree: 99%
 
 ---
@@ -38,7 +38,7 @@ För att kunna hantera personuppgifter på ett korrekt sätt bör du arbeta i en
 * [CAN-SPAM Act](https://www.ftc.gov/tips-advice/business-center/guidance/can-spam-act-compliance-guide-business) (amerikansk lagstiftning gällande regler och krav på kommersiell e-post)
 * [CCPA](https://leginfo.legislature.ca.gov/faces/codes_displayText.xhtml?lawCode=CIV&amp;division=3.&amp;title=1.81.5.&amp;part=4.&amp;chapter=&amp;article=) (California Consumer Privacy Act)
 * [PDPA](https://secureprivacy.ai/thailand-pdpa-summary-what-businesses-need-to-know/) (Thailand Personal Data Protection Act)
-* [LGPD](https://iapp.org/media/pdf/resource_center/Brazilian_General_Data_Protection_Law.pdf) (den brasilianska allmänna dataskyddslagen) – träder i kraft från och med den 16 augusti 2020
+* [LGPD](https://iapp.org/media/pdf/resource_center/Brazilian_General_Data_Protection_Law.pdf) (Brasiliens allmänna dataskyddslag)
 
 >[!NOTE]
 >
@@ -50,11 +50,11 @@ Adobe Campaign ingår som en del av Adobe Experience Cloud-lösningarna. Sättet
 
 * **Vilken information samlas in när Adobe Experience Cloud används**
 
-   Som ett företag som använder Adobe Experience Cloud-lösningar väljer du vilken information som ska samlas in och skickas till ditt Adobe Experience Cloud-konto. Exempel på information som kan samlas in är webbläsaraktivitet, IP-adresser, platsinformation från mobila enheter, kampanjers framgång, artiklar som har köpts eller placerats i en kundvagn osv.
+  Som ett företag som använder Adobe Experience Cloud-lösningar väljer du vilken information som ska samlas in och skickas till ditt Adobe Experience Cloud-konto. Exempel på information som kan samlas in är webbläsaraktivitet, IP-adresser, platsinformation från mobila enheter, kampanjers framgång, artiklar som har köpts eller placerats i en kundvagn osv.
 
-   >[!NOTE]
-   >
-   >I likhet med alla andra Adobe-produkter samlar Campaign in information om program- och webbplatsanvändare. Se [Adobes integritetspolicy](https://www.adobe.com/se/privacy/policy.html) för mer information.
+  >[!NOTE]
+  >
+  >I likhet med alla andra Adobe-produkter samlar Campaign in information om program- och webbplatsanvändare. Se [Adobes integritetspolicy](https://www.adobe.com/se/privacy/policy.html) för mer information.
 
 * **Så används Adobe Experience Cloud för att samla in information**
 
@@ -63,14 +63,14 @@ Adobe Campaign ingår som en del av Adobe Experience Cloud-lösningarna. Sättet
 
 * **Dina användares integritetsinställningar gällande hur du använder Adobe Experience Cloud**
 
-   Adobe ber att du erbjuder dina kunder en integritetspolicy som beskriver:
+  Adobe ber att du erbjuder dina kunder en integritetspolicy som beskriver:
 
    * Din bästa praxis gällande integritet i samband med Adobe Experience Cloud
    * Hur användare kan ställa in sina preferenser gällande insamling eller användning av sin information i samband med Adobe Experience Cloud
 
-   >[!NOTE]
-   >
-   >Liksom för alla Adobe-produkter kan användare i Campaign avanmäla sig från att dela information som samlas in om dem via appar och webbplatser. Mer information finns i [Vanliga frågor och svar om att använda Adobe Experience Cloud](https://www.adobe.com/se/privacy/experience-cloud-usage-info-faq.html).
+  >[!NOTE]
+  >
+  >Liksom för alla Adobe-produkter kan användare i Campaign avanmäla sig från att dela information som samlas in om dem via appar och webbplatser. Mer information finns i [Vanliga frågor och svar om att använda Adobe Experience Cloud](https://www.adobe.com/se/privacy/experience-cloud-usage-info-faq.html).
 
 Se [den här sidan](https://www.adobe.com/se/privacy/marketing-cloud.html) för mer information om integriteten i Adobe Experience Cloud.
 

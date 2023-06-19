@@ -5,9 +5,9 @@ description: Läs mer om Campaign Classic 2018-versioner
 badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 hidefromtoc: true
 exl-id: f70fceba-4bbf-4f33-8746-e4405a1cdae6
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: a119378e4285d3258a9b4f1f68c0b625264e5d37
 workflow-type: tm+mt
-source-wordcount: '5385'
+source-wordcount: '5379'
 ht-degree: 7%
 
 ---
@@ -441,7 +441,7 @@ För befintliga kunder har fil-API:er inte längre åtkomst till **conf** Adobe 
  <tbody> 
   <tr> 
    <td> EU:s allmänna dataskyddsförordning (GDPR)<br /> </td> 
-   <td> <p>GDPR är EU:s (EU) nya integritetslagstiftning som harmoniserar och moderniserar dataskyddskraven som träder i kraft den 25 maj 2018. GDPR gäller för Adobe Campaign-kunder som innehar uppgifter för registrerade personer som bor i EU.</p> <p>Förutom de sekretessfunktioner som redan finns i Adobe Campaign (inklusive samtyckeshantering, datalagringsinställningar och användarroller) tar vi denna möjlighet i vår roll som dataprocessor att inkludera ytterligare funktioner för att underlätta din beredskap som Data Controller för vissa GDPR-förfrågningar:</p> 
+   <td> <p>GDPR är Europeiska unionens (EU) integritetslagstiftning som harmoniserar och moderniserar kraven på skydd av personuppgifter. GDPR gäller för Adobe Campaign-kunder som innehar uppgifter för registrerade personer som bor i EU.</p> <p>Förutom de sekretessfunktioner som redan finns i Adobe Campaign (inklusive samtyckeshantering, datalagringsinställningar och användarroller) tar vi denna möjlighet i vår roll som dataprocessor att inkludera ytterligare funktioner för att underlätta din beredskap som Data Controller för vissa GDPR-förfrågningar:</p> 
     <ul> 
      <li> <p>Åtkomst: ger den registrerade möjlighet att få en kopia av sina personuppgifter som samlats in av personuppgiftsansvariga, inklusive data som lagrats i Adobe Campaign.</p> </li> 
      <li> <p>Höger att ta bort: ger den registrerade rätt att få sina personuppgifter som samlats in av personuppgiftsansvariga raderade, inklusive data som lagrats i Adobe Campaign.</p> </li> 

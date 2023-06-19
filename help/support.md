@@ -4,10 +4,10 @@ title: Hjälp- och supportalternativ för Campaign Classic
 description: Behöver du stöd för Campaign Classic? Du är på rätt ställe!
 hidefromtoc: true
 exl-id: 3a84236f-89e5-4b8b-9a98-afdc006fd6e0
-source-git-commit: 4661688a22bd1a82eaf9c72a739b5a5ecee168b1
+source-git-commit: a119378e4285d3258a9b4f1f68c0b625264e5d37
 workflow-type: tm+mt
-source-wordcount: '796'
-ht-degree: 59%
+source-wordcount: '755'
+ht-degree: 63%
 
 ---
 
@@ -99,7 +99,7 @@ Med Campaign Control Panel kan ni effektivisera arbetet som produktadministratö
 >
 >Kontrollpanelen är tillgänglig för alla administratörsanvändare. Stegen för att bevilja administratörsåtkomst till en användare finns i [det här avsnittet](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/managing-permissions.html?lang=sv#discover-control-panel).
 >
->Observera att din instans måste ligga på AWS och uppgraderas med den senaste [GA build](rn/using/rn-overview.md). Läs om hur du kontrollerar din version i [det här avsnittet](platform/using/launching-adobe-campaign.md#getting-your-campaign-version). Följ stegen på [den här sidan](https://experienceleague.adobe.com/docs/control-panel/using/faq.html) för att kontrollera om instanser har AWS som värd.
+>Observera att din instans måste ligga på AWS och uppgraderas med den senaste [GA build](rn/using/rn-overview.md). Läs om hur du kontrollerar din version i [det här avsnittet](platform/using/launching-adobe-campaign.md#getting-your-campaign-version). Följ stegen på [den här sidan](https://experienceleague.adobe.com/docs/control-panel/using/faq.html?lang=sv) för att kontrollera om instanser har AWS som värd.
 
 ### Hur kommer jag åt Kontrollpanelen?
 
@@ -107,7 +107,7 @@ Kontrollpanelen är tillgänglig direkt från Adobe Experience Cloud. Den är en
 
 ### Vanliga frågor och svar om Kontrollpanelen
 
-[Klicka här](https://experienceleague.adobe.com/docs/control-panel/using/faq.html) för att läsa vanliga frågor och svar om Kontrollpanelen i Campaign.
+[Klicka här](https://experienceleague.adobe.com/docs/control-panel/using/faq.html?lang=sv) för att läsa vanliga frågor och svar om Kontrollpanelen i Campaign.
 
 ### SFTP-hantering
 
@@ -140,8 +140,7 @@ Gå med i Campaign Classic-communityn: sök efter svar i befintliga frågor elle
 
 ### Access Campaign Download Center
 
-Från och med juni 2020 ersätter Experience Cloud Solution Software Distribution det gamla Neolane Download Center och ger en effektivare upplevelse för att hitta och ladda ned programvara, paket och verktyg. [Klicka här](https://experience.adobe.com/#/downloads/content/software-distributicampaign.html) för att få tillgång till Experience Cloud Software Distribution.
-Läs mer om nya Download Center [på den här sidan](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html){_blank}.
+Som kampanjadministratör kan du gå till [den här sidan](https://experience.adobe.com/#/downloads/content/software-distributicampaign.html) för att få tillgång till Experience Cloud Software Distribution.
 
 ### Skapa en biljett eller starta en chatt
 
