@@ -1,6 +1,6 @@
 ---
 product: campaign
-title: Funktioner som är inaktuella och har ersatts i Campaign Classic
+title: Funktioner som är inaktuella och har tagits bort i Campaign Classic
 description: Den här sidan beskriver inaktuella och borttagna funktioner i Adobe Campaign Classic
 badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 feature: Overview
@@ -8,9 +8,9 @@ role: User
 level: Beginner
 exl-id: d60d67de-6618-4f3b-be4a-ad7633ab5645
 source-git-commit: 403227736e2e8c606204e9324d0afb5b71be62a5
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1508'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -171,7 +171,7 @@ Klientkonsolen i Adobe Campaign Classic kan inte längre köras på följande sy
 
 * Från och med version 22.1 är Adobe Campaign inte längre kompatibelt med CentOs 8.x (64 bitars). CentOS Linux 8 nådde slutet av sin livscykel (EOL) den 31 december 2021. [Läs mer](https://www.centos.org/centos-linux-eol/).
 
-   Om du använde det här operativsystemet ska du anpassa implementeringen därefter. CentOS 7.x (64 bitars) och RHEL 8.x/7.x (64 bitars) stöds fortfarande.
+  Om du använde det här operativsystemet ska du anpassa implementeringen därefter. CentOS 7.x (64 bitars) och RHEL 8.x/7.x (64 bitars) stöds fortfarande.
 
 * Från och med version 21.1.3 är Adobe Campaign inte längre kompatibelt med Debian 8.
 
@@ -214,7 +214,7 @@ Från och med vårversionen 19.1 är Adobe Campaign inte längre kompatibelt med
 * PostgreSQL 9.3.
 * MySQL 5.5.
 * DB2 9.5.
-* Teradata 14-14.1.
+* Teradata 14 – 14.1.
 
 Campaign Classic är inte kompatibelt med följande servrar i federerad dataåtkomst (FDA). Använd senare versioner eller system.
 
@@ -227,8 +227,8 @@ Campaign Classic är inte kompatibelt med följande servrar i federerad dataåtk
 * Teradata 13, 13.1.
 * Netezza 6.02 och 7.0. Netezza har nått slutet av sin livscykel.
 * AsterData 5.0. AsterData har nått slutet av sin livscykel.
-* sybase IQ 15.2, 15.4, 15.5 och Sybase ASE 15.0.
-* Hadoop via HiveSQL: Hadoop 2.7.3, HiveSQL 1.2.1. Adobe Campaign Classic har fortfarande stöd för de listade versionerna av Hadoopet via HiveSQL via FDA (Federated Data Access), men dessa versioner sammanfogas med: HortonWorks (HDP 2.4.X, 2.5.x, 2.6.x) och HDInsight 3.4 (HDP 2.4), 3.5 (HDP 2.5), 3.6 (HDP 2.6)
+* Sybase IQ 15.2, 15.4, 15.5 och Sybase ASE 15.0.
+* Hadoop via HiveSQL: Hadoop 2.7.3 och HiveSQL 1.2.1. Adobe Campaign Classic har fortfarande stöd för de listade versionerna av Hadoop via HiveSQL via federerad dataåtkomst (FDA). Dessa versioner slås dock ihop med: HortonWorks (HDP 2.4.X, 2.5.x och 2.6.x) och HDInsight 3.4 (HDP 2.4), 3.5 (HDP 2.5) och 3.6 (HDP 2.6)
 
 **RDBMS-SERVER**
 
