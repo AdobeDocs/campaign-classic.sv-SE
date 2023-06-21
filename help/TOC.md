@@ -6,9 +6,9 @@ title: Användarhandbok för Campaign Classic v7
 user-guide-description: Med Adobe Campaign kan du använda omfattande kunddata för att skapa, samordna och leverera dynamiska kampanjer som kunderna verkligen vill ha – via e-post, mobiler, offlinekanaler med mera.
 sub-product: adobe campaign classic
 type: Documentation
-source-git-commit: 0f831817fc2e6b7b1d95a71f4ea08ec104268d11
-workflow-type: ht
-source-wordcount: '2531'
+source-git-commit: 88ee8d1575f6397a35fb6f7412cd08119a75c131
+workflow-type: tm+mt
+source-wordcount: '2529'
 ht-degree: 100%
 
 ---
@@ -24,9 +24,7 @@ ht-degree: 100%
    + Tidigare versioner {#previous-releases}
       + [[!DNL Gold Standard]](rn/using/gold-standard.md)
       + [2021](rn/using/release--2021.md)
-      + [2020](rn/using/release--2020.md)
-      + [2019](rn/using/release--2019.md)
-      + [2018](rn/using/release--2018.md)
+      + [2022](rn/using/release--2022.md)
    + [Inaktuella funktioner](rn/using/deprecated-features.md)
    + [Kompatibilitetsmatris](rn/using/compatibility-matrix.md)
 + Komma igång {#getting-started}
