@@ -6,10 +6,10 @@ badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classi
 hide: true
 hidefromtoc: true
 exl-id: e7d4331b-7149-4768-8e46-2e2911319074
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 403d0b7df74b2c958bea9a2d718a15f597ca0d9c
 workflow-type: tm+mt
-source-wordcount: '361'
-ht-degree: 36%
+source-wordcount: '351'
+ht-degree: 35%
 
 ---
 
@@ -31,11 +31,11 @@ Om miljön körs i någon av versionerna som listas nedan kan du påverkas:
 
 * Gold Standard 8 till 11. [Läs mer](../../rn/using/gold-standard.md#gs-8)
 * Kampanj 21.1.1 (build 9277) till 21.1.2 (build 9282). [Läs mer](../../rn/using/latest-release.md)
-* Kampanj 20.3.1 (build 9228) till 20.3.3 (build 9234). [Läs mer](../../rn/using/release--2020.md#release-20-3)
-* Kampanj 20.2.1 (build 9178) till 20.2.4 (build 9187). [Läs mer](../../rn/using/release--2020.md#release-20-2)
-* Kampanj 20.1.1 (build 9122) till 21.1.3 (build 9124). [Läs mer](../../rn/using/release--2020.md#release-20-1)
-* Kampanj 19.2.2 (build 9080) till 19.2.3 (build 9081). [Läs mer](../../rn/using/release--2019.md#release-19-2)
-* Kampanj 19.1.5 (build 9033) till 19.1.7 (build 9036). [Läs mer](../../rn/using/release--2019.md#release-19-1)
+* Kampanj 20.3.1 (build 9228) till 20.3.3 (build 9234).
+* Kampanj 20.2.1 (build 9178) till 20.2.4 (build 9187).
+* Kampanj 20.1.1 (build 9122) till 21.1.3 (build 9124).
+* Kampanj 19.2.2 (build 9080) till 19.2.3 (build 9081).
+* Kampanj 19.1.5 (build 9033) till 19.1.7 (build 9036).
 
 
 Lär dig hur du kontrollerar din version [i det här avsnittet](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version).
@@ -59,6 +59,7 @@ Följ stegen nedan:
 >[!NOTE]
 >
 >The **config-`<instance>`.xml** filen åsidosätter **serverConf.xml** inställningar. Om **signEmailLinks** finns i  **config-`<instance>`.xml** (där **instance** är namnet på din instans) måste den också ändras till **false**.
+>
 
 **Vad ändras?**
 
@@ -69,3 +70,4 @@ När uppdateringen är klar fungerar alla länkar som förväntat.
 >[!NOTE]
 >
 >Om du har frågor om de här ändringarna kan du kontakta [Adobes kundtjänst](https://helpx.adobe.com/sv/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
+>

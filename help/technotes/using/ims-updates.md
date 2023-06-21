@@ -4,10 +4,10 @@ title: Technote - Uppdatera miljön för att ansluta till Adobe Campaign med IMS
 description: Campaign - IMS-uppdateringar
 badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 exl-id: ecb5a258-a150-46a3-8b83-2b2c06d873ee
-source-git-commit: 4661688a22bd1a82eaf9c72a739b5a5ecee168b1
+source-git-commit: 403d0b7df74b2c958bea9a2d718a15f597ca0d9c
 workflow-type: tm+mt
-source-wordcount: '585'
-ht-degree: 8%
+source-wordcount: '579'
+ht-degree: 7%
 
 ---
 
@@ -37,15 +37,15 @@ Om du redan har uppgraderat men använder en äldre version av Microsoft Interne
 
 * Som en lokal/hybridkund måste du uppgradera till en av de nyare versionerna ovan för att kunna dra nytta av den nya klientkonsolen och säkerställa en smidig övergång **före 30 juni 2021**.
 
-   Uppgradera till en av de nya versionerna som listas nedan är obligatorisk:
+  Uppgradera till en av de nya versionerna som listas nedan är obligatorisk:
 
    * Gold Standard 11. [Läs mer](../../rn/using/gold-standard.md)
    * Campaign 21.1.3-utgåvan. [Läs mer](../../rn/using/latest-release.md)
-   * Campaign 20.2.5-utgåvan. [Läs mer](../../rn/using/release--2020.md#release-20-2-5-build-9188)
-   * Campaign 20.1.4-utgåvan. [Läs mer](../../rn/using/release--2020.md#release-20-1-4-build-9126)
-   * Campaign 19.2.4-utgåvan. [Läs mer](../../rn/using/release--2019.md#release-19-2-4-build-9082)
+   * Campaign 20.2.5-utgåvan.
+   * Campaign 20.1.4-utgåvan.
+   * Campaign 19.2.4-utgåvan.
 
-   Dessa releaser har ett nytt anslutningsprotokoll. Uppgradering är obligatoriskt för både Campaign-servern och klientkonsolen: När alla instanser har uppgraderats måste klientkonsolen uppgraderas till den här versionen och kunna ansluta till Campaign efter **30 juni 2021**.
+  Dessa releaser har ett nytt anslutningsprotokoll. Uppgradering är obligatoriskt för både Campaign-servern och klientkonsolen: När alla instanser har uppgraderats måste klientkonsolen uppgraderas till den här versionen och kunna ansluta till Campaign efter **30 juni 2021**.
 
 Dessutom bör du se till att den senaste uppdateringen av [Windows-version](../../rn/using/compatibility-matrix.md#ClientConsoleoperatingsystems), med **Internet Explorer 11** inbyggd installeras på varje användares dator.
 
@@ -62,13 +62,13 @@ Om du vill kontrollera anslutningsläget kan du:
 
 * Starta Campaign Client Console och få tillgång till dina instansanslutningsinställningar. Om **Anslut till en Adobe ID** om du väljer det här alternativet används Adobe IMS.
 
-   ![](../../integrations/using/assets/ims_1.png)
+  ![](../../integrations/using/assets/ims_1.png)
 
 eller
 
 * Starta Campaign Client Console och kontrollera anslutningsfönstret. Om du ansluter till en Adobe ID, som visas på skärmen nedan, använder du IMS.
 
-   ![](../../integrations/using/assets/adobeID.png)
+  ![](../../integrations/using/assets/adobeID.png)
 
 **Varningsmeddelande för anslutning**
 
@@ -85,6 +85,7 @@ Om du inte har uppdaterat din Internet Explorer-version visas följande meddelan
 >[!NOTE]
 >
 >Om du har frågor om de här ändringarna kan du kontakta [Adobes kundtjänst](https://helpx.adobe.com/se/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
+>
 
 ## Användbara länkar
 

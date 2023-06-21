@@ -6,10 +6,10 @@ badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classi
 hide: true
 hidefromtoc: true
 exl-id: 7db02123-2e2a-40d9-8385-728ff69985e4
-source-git-commit: 4661688a22bd1a82eaf9c72a739b5a5ecee168b1
+source-git-commit: 403d0b7df74b2c958bea9a2d718a15f597ca0d9c
 workflow-type: tm+mt
-source-wordcount: '1123'
-ht-degree: 12%
+source-wordcount: '1097'
+ht-degree: 10%
 
 ---
 
@@ -28,6 +28,7 @@ Av säkerhetsskäl måste du nu uppgradera till en av versionerna nedan. Föruto
 >[!NOTE]
 >
 >Om du har frågor om de här ändringarna kan du kontakta [Adobes kundtjänst](https://helpx.adobe.com/se/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
+>
 
 ## Säkerhetsuppdateringar {#acc-security-updates}
 
@@ -39,10 +40,10 @@ Om miljön är på en lägre nivå än de som anges nedan påverkas du:
 
 * Gold Standard 11. [Läs mer](../../rn/using/gold-standard.md)
 * Campaign 21.1.1-utgåvan. [Läs mer](../../rn/using/latest-release.md)
-* Campaign 20.2.5-utgåvan. [Läs mer](../../rn/using/release--2020.md#release-20-2-5-build-9188)
-* Campaign 20.1.4-utgåvan. [Läs mer](../../rn/using/release--2020.md#release-20-1-4-build-9126)
-* Campaign 19.2.4-utgåvan. [Läs mer](../../rn/using/release--2019.md#release-19-2-4-build-9082)
-* Campaign 19.1.8-utgåvan. [Läs mer](../../rn/using/release--2019.md#release-19-1-8-build-9039)
+* Campaign 20.2.5-utgåvan.
+* Campaign 20.1.4-utgåvan.
+* Campaign 19.2.4-utgåvan.
+* Campaign 19.1.8-utgåvan.
 
 Lär dig hur du kontrollerar din version [i det här avsnittet](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version).
 
@@ -52,22 +53,23 @@ Du måste uppgradera till en av de nyare byggen som listas ovan.
 
 * Som hybridkund informerar Adobe dig om de schemalagda uppgraderingsdatumen för dina mellanleverantörer. Adobe rekommenderar starkt att du uppgraderar din marknadsinstans också.
 
-   Den nya versionen är bakåtkompatibel med version 17.9 av Campaign Classic, men Adobe rekommenderar starkt en uppgradering för alla instanser för att åtgärda säkerhetsluckor
+  Den nya versionen är bakåtkompatibel med version 17.9 av Campaign Classic, men Adobe rekommenderar starkt en uppgradering för alla instanser för att åtgärda säkerhetsluckor
 
 * Som lokal kund ombeds ni att uppgradera alla instanser av marknadsföring och mellanprodukter till den senaste versionen.
 
 >[!CAUTION]
 >
 >Om du inte kan uppgradera inom den rekommenderade tidsramen **kontakta kundtjänst på Adobe för att göra en kortsiktig manuell säkerhetskorrigering**.
+>
 
 ## Campaign Classic Client Console - uppdatering  {#acc-cc-updates}
 
 The **nu tillgänglig** Konsolversioner nedan bör installeras för att lösa en nyligen identifierad regression. Den här regressionen förhindrade användningen av vissa komponenter i klientkonsolen, som datumväljaren och bildhantering i leveranser. **Konsoluppgradering** är obligatoriskt.
 
 * Senaste Gold Standard 11 build 9032@10c2709. [Läs mer](../../rn/using/gold-standard.md)
-* Campaign 20.1.4-utgåvan. [Läs mer](../../rn/using/release--2020.md#release-20-1-4-build-9126)
-* Campaign 19.2.4-utgåvan. [Läs mer](../../rn/using/release--2019.md#release-19-2-4-build-9082)
-* Campaign 19.1.8-utgåvan. [Läs mer](../../rn/using/release--2019.md#release-19-1-8-build-9039)
+* Campaign 20.1.4-utgåvan.
+* Campaign 19.2.4-utgåvan.
+* Campaign 19.1.8-utgåvan.
 
 ## IMS-uppdatering (Adobe Identity Management System)
 
@@ -81,10 +83,10 @@ Om du ansluter till Campaign [via en Adobe ID](../../integrations/using/about-ad
 
 * Gold Standard 11. [Läs mer](../../rn/using/gold-standard.md)
 * Campaign 21.1.1-utgåvan. [Läs mer](../../rn/using/latest-release.md)
-* Campaign 20.2.5-utgåvan. [Läs mer](../../rn/using/release--2020.md#release-20-2-5-build-9188)
-* Campaign 20.1.4-utgåvan. [Läs mer](../../rn/using/release--2020.md#release-20-1-4-build-9126)
-* Campaign 19.2.4-utgåvan. [Läs mer](../../rn/using/release--2019.md#release-19-2-4-build-9082)
-* Campaign 19.1.8-utgåvan. [Läs mer](../../rn/using/release--2019.md#release-19-1-8-build-9039)
+* Campaign 20.2.5-utgåvan.
+* Campaign 20.1.4-utgåvan.
+* Campaign 19.2.4-utgåvan.
+* Campaign 19.1.8-utgåvan.
 
 De här versionerna har ett nytt anslutningsprotokoll: uppgradering är obligatoriskt för både Campaign-servern och Client Console för att kunna ansluta till Campaign efter **30 juni 2021**.
 
@@ -114,8 +116,8 @@ Uppgradera till en av de nya versionerna som listas nedan är obligatorisk:
 
 * Gold Standard 11. [Läs mer](../../rn/using/gold-standard.md)
 * Campaign 21.1.1-utgåvan. [Läs mer](../../rn/using/latest-release.md)
-* Campaign 20.2.5-utgåvan. [Läs mer](../../rn/using/release--2020.md#release-20-2-5-build-9188)
-* Campaign 19.1.8-utgåvan. [Läs mer](../../rn/using/release--2019.md#release-19-1-8-build-9039)
+* Campaign 20.2.5-utgåvan.
+* Campaign 19.1.8-utgåvan.
 
 Lär dig hur du kontrollerar din version [i det här avsnittet](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version).
 

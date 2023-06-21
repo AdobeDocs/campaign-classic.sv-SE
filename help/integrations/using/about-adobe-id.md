@@ -8,9 +8,9 @@ audience: integrations
 content-type: reference
 topic-tags: connecting-via-an-adobe-id
 exl-id: 8dad8fa9-674c-433c-af30-8c6d0aadf525
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: 403d0b7df74b2c958bea9a2d718a15f597ca0d9c
 workflow-type: tm+mt
-source-wordcount: '194'
+source-wordcount: '196'
 ht-degree: 23%
 
 ---
@@ -35,12 +35,16 @@ Kampanjanvändare kan ansluta till Adobe Campaign-konsolen med sin Adobe ID. Int
 >
 > * [Campaign [!DNL Gold Standard] 11](../../rn/using/gold-standard.md)
 > * [Kampanj 21.1.4](../../rn/using/latest-release.md)
-> * [Kampanj 20.2.5](../../rn/using/release--2020.md#release-20-2-5-build-9188)
-> * [Kampanj 20.1.4](../../rn/using/release--2020.md#release-20-1-4-build-9126)
-> * [Kampanj 19.2.4](../../rn/using/release--2019.md#release-19-2-4-build-9082)
-> * [Kampanj 19.1.8](../../rn/using/release--2019.md#release-19-1-8-build-9039)
+
+och dessutom
+
+> * Kampanj 20.2.5
+> * Kampanj 20.1.4
+> * Kampanj 19.2.4
+> * Kampanj 19.1.8
 >
 > [!DNL :bulb:] [Läs mer om IMS-uppdateringar](../../technotes/using/ims-updates.md)
+>
 
 ## Fler resurser
 
