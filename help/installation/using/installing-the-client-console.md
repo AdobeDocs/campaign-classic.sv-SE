@@ -7,7 +7,7 @@ audience: installation
 content-type: reference
 topic-tags: installing-campaign-in-windows-
 exl-id: 7cc78214-92b8-4b1f-a307-96ec6af818d1
-source-git-commit: 0bea34e2db2b54bdd2a6fed80b47d473c89f631e
+source-git-commit: 45bf9d76dc41fd8cecfaab3f258856861201db3f
 workflow-type: tm+mt
 source-wordcount: '1135'
 ht-degree: 3%
@@ -32,9 +32,9 @@ Läs informationen nedan för att ta reda på vad som krävs för implementering
 
 >[!CAUTION]
 >
->Kampanjklientkonsolen och Campaign-programservern måste köras **på samma produktversion**. Adobe rekommenderar också starkt att du använder **samma produktbygge**. Lär dig hur du kontrollerar dina Campaign Client- och Server-versioner i [det här avsnittet](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version).
+>* Kampanjklientkonsolen och Campaign-programservern måste köras **på samma produktversion**. Adobe rekommenderar också starkt att du använder **samma produktbygge**. Lär dig hur du kontrollerar dina Campaign Client- och Server-versioner i [det här avsnittet](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version).
 >
->Åtkomsten till installationsmappen där konsolen är installerad bör begränsas till endast den avsedda användaren, vilket säkerställer att skrivbehörigheterna begränsas i enlighet med detta.
+>* Åtkomsten till installationsmappen där konsolen är installerad bör begränsas till endast den avsedda användaren, vilket säkerställer att skrivbehörigheterna begränsas i enlighet med detta.
 
 
 
