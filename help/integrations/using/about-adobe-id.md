@@ -8,7 +8,7 @@ audience: integrations
 content-type: reference
 topic-tags: connecting-via-an-adobe-id
 exl-id: 8dad8fa9-674c-433c-af30-8c6d0aadf525
-source-git-commit: 403d0b7df74b2c958bea9a2d718a15f597ca0d9c
+source-git-commit: f38d9053a3817fabc196dfbbfc5fff67bf1a7b06
 workflow-type: tm+mt
 source-wordcount: '196'
 ht-degree: 23%
@@ -16,8 +16,6 @@ ht-degree: 23%
 ---
 
 # Om Adobe ID{#about-adobe-id}
-
-
 
 Adobe Identity Management System (IMS) hjälper administratörer att skapa och hantera användarnas åtkomst till program och tjänster. Mer information om de olika typerna av Adobe-ID finns i [den här sidan](https://helpx.adobe.com/enterprise/using/identity.html).
 
@@ -43,8 +41,8 @@ och dessutom
 > * Kampanj 19.2.4
 > * Kampanj 19.1.8
 >
-> [!DNL :bulb:] [Läs mer om IMS-uppdateringar](../../technotes/using/ims-updates.md)
->
+[Läs mer om IMS-uppdateringar](../../technotes/using/ims-updates.md)
+>>
 
 ## Fler resurser
 
