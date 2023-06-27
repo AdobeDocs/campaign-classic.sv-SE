@@ -8,10 +8,10 @@ audience: integrations
 content-type: reference
 topic-tags: connecting-via-an-adobe-id
 exl-id: 8dad8fa9-674c-433c-af30-8c6d0aadf525
-source-git-commit: f38d9053a3817fabc196dfbbfc5fff67bf1a7b06
+source-git-commit: 2bbcfbff3ce77501fb36457dc823c0ef86550bec
 workflow-type: tm+mt
-source-wordcount: '196'
-ht-degree: 23%
+source-wordcount: '190'
+ht-degree: 24%
 
 ---
 
@@ -29,20 +29,15 @@ Kampanjanvändare kan ansluta till Adobe Campaign-konsolen med sin Adobe ID. Int
 
 >[!IMPORTANT]
 >
->Om du ansluter till Campaign via Adobe Identity Service (IMS) måste du uppgradera till den senaste versionen för att kunna ansluta till Campaign efter **30 juni 2021**. Den här uppgraderingen är obligatorisk för både Campaign-servern och klientkonsolen. Beroende på vilken version du har måste du uppgradera till någon av följande versioner:
+>Om du ansluter till Campaign via Adobe Identity Service (IMS) måste du uppgradera till den senaste versionen för att kunna ansluta till Campaign efter **30 juni 2021**. Den här uppgraderingen är obligatorisk för både Campaign-servern och klientkonsolen.
+>
+>Beroende på vilken version du har måste du uppgradera till någon av följande versioner:
 >
 > * [Campaign [!DNL Gold Standard] 11](../../rn/using/gold-standard.md)
 > * [Kampanj 21.1.4](../../rn/using/latest-release.md)
-
-och dessutom
-
-> * Kampanj 20.2.5
-> * Kampanj 20.1.4
-> * Kampanj 19.2.4
-> * Kampanj 19.1.8
 >
-[Läs mer om IMS-uppdateringar](../../technotes/using/ims-updates.md)
->>
+>[Läs mer om IMS-uppdateringar](../../technotes/using/ims-updates.md)
+
 
 ## Fler resurser
 
