@@ -7,10 +7,10 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: 9e3a11b1-3070-4d90-91d5-7c559bdd500e
-source-git-commit: 4661688a22bd1a82eaf9c72a739b5a5ecee168b1
-workflow-type: ht
-source-wordcount: '1670'
-ht-degree: 100%
+source-git-commit: f2dc0947a3b1ed17cbc3d88176e7921e80ca1bb5
+workflow-type: tm+mt
+source-wordcount: '1780'
+ht-degree: 99%
 
 ---
 
@@ -23,7 +23,9 @@ På den här sidan hittar du versionsinformation och kompatibilitetsmatrisen fö
 ## [!DNL Gold Standard]-versionsinformation
 
 
-### ![](assets/do-not-localize/limited_2.png) [!DNL Gold Standard] version 12{#gs-12}
+### [!DNL Gold Standard] version 12{#gs-12}
+
+[!BADGE Inaktuell]{type=negative url="https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/rn-overview.html?lang=sv#rn-statuses" tooltip="Inaktuell"}
 
 _7 september 2021_
 
@@ -38,7 +40,9 @@ Build 9032@99a3894 innehåller följande korrigeringar:
 * Funktionen för att spåra signaturer har förbättrats för att förhindra att fel länkas till hur tredjepartsverktyg (e-postklienter, webbläsare osv.) hanterar specialtecken. URL-parametrar är nu kodade.
 * Korrigerade ett problem med datumväljare som kunde resultera i att en konsol visade felmeddelandet för blockering. (NEO-36345)
 
-### ![](assets/do-not-localize/limited_2.png) [!DNL Gold Standard] version 11{#gs-11}
+### [!DNL Gold Standard] 11 release{#gs-11}
+
+[!BADGE Inaktuell]{type=negative url="https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/rn-overview.html?lang=sv#rn-statuses" tooltip="Inaktuell"}
 
 _14 april 2021_
 
@@ -83,7 +87,9 @@ Version 9032@d3b452f innehåller följande förbättringar och korrigeringar:
 
 * Korrigerade ett problem som kunde få arbetsflöden att inte fungera när en **Berikandeaktivitet** kördes. (NEO-17338)
 
-### ![](assets/do-not-localize/red_2.png) [!DNL Gold Standard] version 10{#gs-10}
+### [!DNL Gold Standard] 10-versionen{#gs-10}
+
+[!BADGE Inaktuell]{type=negative url="https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/rn-overview.html?lang=sv#rn-statuses" tooltip="Inaktuell"}
 
 _7 juli 2020_
 
@@ -95,7 +101,9 @@ Korrigerade ett problem som hindrade spårning från att fungera när signaturfu
 >
 >Vi rekommenderar att du uppgraderar klientkonsolen till den som finns i den här versionen. Se [den här sidan](../../installation/using/installing-the-client-console.md)
 
-### ![](assets/do-not-localize/red_2.png) [!DNL Gold Standard] version 9{#gs-9}
+### [!DNL Gold Standard] 9 release{#gs-9}
+
+[!BADGE Inaktuell]{type=negative url="https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/rn-overview.html?lang=sv#rn-statuses" tooltip="Inaktuell"}
 
 _22 juni 2020_
 
@@ -111,7 +119,9 @@ Följande korrigeringar är relaterade till spårningslänkens säkerhetsmekanis
 * Korrigerade ett problem med tjänsten mot nätfiske. (NEO-25283)
 * Korrigerade ett problem med spårning när särskilda anpassade spårningsformler användes. (NEO-25277)
 
-### ![](assets/do-not-localize/red_2.png) [!DNL Gold Standard] version 8{#gs-8}
+### [!DNL Gold Standard] version 8{#gs-8}
+
+[!BADGE Inaktuell]{type=negative url="https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/rn-overview.html?lang=sv#rn-statuses" tooltip="Inaktuell"}
 
 _29 april 2020_
 
@@ -136,7 +146,9 @@ Build 9032@3a9dc9c har följande korrigeringar:
 * Korrigerade en regression som fick arbetsflödet för rensning att krascha.
 * Korrigerade en mindre regression i loggfilerna för arbetsflödet för rensning.
 
-### ![](assets/do-not-localize/red_2.png) [!DNL Gold Standard] version 6{#gs-6}
+### [!DNL Gold Standard] version 6{#gs-6}
+
+[!BADGE Inaktuell]{type=negative url="https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/rn-overview.html?lang=sv#rn-statuses" tooltip="Inaktuell"}
 
 _9 mars 2020_
 
@@ -144,7 +156,9 @@ Build 9032@19f73c5 har följande korrigering:
 
 * Korrigerade ett problem med externa konton som använder FTP över SSL. (NEO-20498)
 
-### ![](assets/do-not-localize/red_2.png) [!DNL Gold Standard] version 5{#gs-5}
+### [!DNL Gold Standard] version 5{#gs-5}
+
+[!BADGE Inaktuell]{type=negative url="https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/rn-overview.html?lang=sv#rn-statuses" tooltip="Inaktuell"}
 
 _17 december 2019_
 
@@ -152,7 +166,9 @@ Build 9032@d6b8062 har följande korrigering:
 
 * Korrigerade ett problem med spårning i följande kommunikationskanaler: mobil (SMS, MMS), push (iOS, Android) och sociala nätverk (Facebook, Twitter). (NEO-19595)
 
-### ![](assets/do-not-localize/red_2.png) [!DNL Gold Standard] version 4{#gs-4}
+### [!DNL Gold Standard] version 4{#gs-4}
+
+[!BADGE Inaktuell]{type=negative url="https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/rn-overview.html?lang=sv#rn-statuses" tooltip="Inaktuell"}
 
 _11 december 2019_
 
@@ -160,7 +176,9 @@ Build 9032@bc4a935 har följande korrigering:
 
 * Korrigerade ett problem med prestandan när meddelanden skickades med en MSSQL-databas. (NEO-17558)
 
-### ![](assets/do-not-localize/red_2.png) [!DNL Gold Standard] version 3{#gs-3}
+### [!DNL Gold Standard] version 3{#gs-3}
+
+[!BADGE Inaktuell]{type=negative url="https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/rn-overview.html?lang=sv#rn-statuses" tooltip="Inaktuell"}
 
 _20 november 2019_
 
@@ -170,7 +188,9 @@ Build 9032@3468c7b har följande korrigeringar:
 * Korrigerade ett problem när kumulativa rapporter för flera leveranser visades. (NEO-18165)
 * Korrigerade ett problem som kunde blockera eller få webbservern att krascha.
 
-### ![](assets/do-not-localize/red_2.png) [!DNL Gold Standard] version 2{#gs-2}
+### [!DNL Gold Standard] version 2{#gs-2}
+
+[!BADGE Inaktuell]{type=negative url="https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/rn-overview.html?lang=sv#rn-statuses" tooltip="Inaktuell"}
 
 _19 september 2019_
 
@@ -179,7 +199,9 @@ Build 9032@cee805c har följande korrigeringar:
 * Korrigerade ett problem när CRM-kopplingen för Salesforce användes. (NEO-17712)
 * Korrigerade ett problem med index som kunde orsaka prestandaproblem när transaktionsmeddelanden skickades.
 
-### ![](assets/do-not-localize/red_2.png) version 19.1.4 – build 9032{#release-19-1-4-build-9032}
+### Version 19.1.4 – build 9032{#release-19-1-4-build-9032}
+
+[!BADGE Inaktuell]{type=negative url="https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/rn-overview.html?lang=sv#rn-statuses" tooltip="Inaktuell"}
 
 _13 augusti 2019_
 
@@ -200,6 +222,7 @@ Det här avsnittet listar alla system och komponenter som stöds för versioner 
 >Om inget annat anges stöds alla mindre versioner.
 >
 >Adobe Campaign Classic är kompatibelt med alla system och verktyg som listas på den här sidan. När specifika versioner av dessa system och verktyg från tredje part når slutet av sin livscykel med sina respektive utgivare är Adobe Campaign inte längre kompatibelt med dessa versioner. De tas sedan bort från vår kompatibilitetsmatris i följande produktversion. Se till att du använder versioner av system som stöds i kompatibilitetsmatrisen för att undvika problem.
+>
 
 ### Operativsystem{#OperatingSystems-gs}
 

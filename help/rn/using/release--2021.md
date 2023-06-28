@@ -6,9 +6,9 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: 0cd6bf20-da72-4cf0-9f5d-d4e8acdd324d
-source-git-commit: a06623611ff3f8d9dfb5d498e01686e12a924923
+source-git-commit: f2dc0947a3b1ed17cbc3d88176e7921e80ca1bb5
 workflow-type: tm+mt
-source-wordcount: '2545'
+source-wordcount: '2595'
 ht-degree: 100%
 
 ---
@@ -19,8 +19,11 @@ ht-degree: 100%
 
 >[!CAUTION]
 >Använd menyn **[!UICONTROL Help > About...]** för att kontrollera din Adobe Campaign [-version och buildnummer ](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version). Observera dock att för alla versioner mellan 9277 och 9343 som listas på den här sidan visar versionsnumret 7.0 i stället för 7.1.
+> 
 
-### ![](assets/do-not-localize/limited_2.png) Version 21.1.4 – build 9343 {#release-21-1-4-build-9343}
+### Version 21.1.4 – build 9343 {#release-21-1-4-build-9343}
+
+[!BADGE Inaktuell]{type=negative url="https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/rn-overview.html?lang=sv#rn-statuses" tooltip="Inaktuell"}
 
 _8 oktober 2021_
 
@@ -32,7 +35,9 @@ _8 oktober 2021_
 
 * Korrigerade ett fel: ”Det gick inte att hitta IP-tillhörigheten xxx på mittservern xxx” som kan inträffa vid leverans när mer än en IP-tillhörighet används på en instans med flera källor. (NEO-37514)
 
-### ![](assets/do-not-localize/limited_2.png) version 21.1.4 – build 9342 {#release-21-1-4-build-9342}
+### Version 21.1.4 – build 9342 {#release-21-1-4-build-9342}
+
+[!BADGE Inaktuell]{type=negative url="https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/rn-overview.html?lang=sv#rn-statuses" tooltip="Inaktuell"}
 
 _7 september 2021_
 
@@ -66,7 +71,9 @@ _7 september 2021_
 * Korrigerade ett problem som förhindrade dig från att använda variabler i arbetsflödesaktiviteten **Berikning** när den inkommande övergången kom från en FDA-datakälla.
 * Korrigerade ett problem som kunde leda till brutna URL:er i e-postmeddelanden.
 
-### ![](assets/do-not-localize/limited_2.png) version 21.1.3 – build 9330 {#release-21-1-3-build-9330}
+### Version 21.1.3 – build 9330 {#release-21-1-3-build-9330}
+
+[!BADGE Inaktuell]{type=negative url="https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/rn-overview.html?lang=sv#rn-statuses" tooltip="Inaktuell"}
 
 _5 june 2021_
 
@@ -222,14 +229,18 @@ Läs mer på sidan [Funktioner som är inaktuella eller har tagits bort](../../r
 * Korrigerade ett problem som hindrade dig från att skicka en leverans med en grupp korrektur på grund av en specifik kopplingsmekanism som inte kunde leverera personanpassning. (NEO-14391)
 * Korrigerade ett problem där en avisering inte kunde skickas med aviseringsaktiviteten om en fråga och en berikningsaktivitet var riktade till leveransregistret. (NEO-25157)
 
-### ![](assets/do-not-localize/red_2.png) version 21.1.2 – build 9282 {#release-21-1-2-build-9282}
+### Version 21.1.2 – build 9282 {#release-21-1-2-build-9282}
+
+[!BADGE Inaktuell]{type=negative url="https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/rn-overview.html?lang=sv#rn-statuses" tooltip="Inaktuell"}
 
 _15 april 2021_
 
 * Lösenordshanteringen har förbättrats för att optimera säkerheten.
 * Korrigerade ett problem som kunde orsaka MTA-krascher.
 
-### ![](assets/do-not-localize/red_2.png) version 21.1.1 – build 9277 {#release-21-1-1-build-9277}
+### Version 21.1.1 – build 9277 {#release-21-1-1-build-9277}
+
+[!BADGE Inaktuell]{type=negative url="https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/rn-overview.html?lang=sv#rn-statuses" tooltip="Inaktuell"}
 
 _22 februari 2021_
 

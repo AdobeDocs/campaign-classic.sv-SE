@@ -7,10 +7,10 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: 7a05fdff-8f9d-4e8d-812e-0f1509db5499
-source-git-commit: acfe0c4139671fc3df69ff434ba307aaaaf70676
-workflow-type: ht
-source-wordcount: '933'
-ht-degree: 100%
+source-git-commit: f2dc0947a3b1ed17cbc3d88176e7921e80ca1bb5
+workflow-type: tm+mt
+source-wordcount: '932'
+ht-degree: 97%
 
 ---
 
@@ -24,15 +24,26 @@ Adobe Campaign Classic släpper regelbundet produktuppdateringar som innehåller
 
 Varje ny version har en status som identifieras av en färg i [Versionsinformationen](latest-release.md).
 
-![](assets/do-not-localize/green3.png) **Allmän tillgänglighet** (GA) – senaste stabila build, validerad i produktion och rekommenderad av Adobe.
 
-![](assets/do-not-localize/limited3.png) **Begränsad tillgänglighet** (LA) – endast driftsättning på begäran.
+| Status | Beskrivning |
+|---|---|
+| [!BADGE Allmän tillgänglighet]{type=Positive} | Senaste stabila versionen, validerad i produktion och rekommenderas av Adobe. |
+| [!BADGE Begränsad tillgänglighet]{type=Neutral} | Endast distribution på begäran. |
+| [!BADGE Frisläppningskandidat]{type=Informative} | Senaste versionen med nya funktioner. |
+| [!BADGE Inte längre tillgänglig]{type=Caution} | Ingen distribution. Ingen felkorrigering. Vi rekommenderar att du uppdaterar till en nyare version. |
+| [!BADGE Inaktuell]{type=negative} | Ingen distribution. Ingen felkorrigering. Befintliga implementeringar måste uppgraderas. |
 
-![](assets/do-not-localize/blue3.png) **Versionskandidat** (RC) – senaste versionen med nya funktioner.
+<!--
+![](assets/do-not-localize/green3.png) **General Availability** (GA) - Latest stable build, validated in production, and recommended by Adobe. 
 
-![](assets/do-not-localize/orange3.png) **Inte längre tillgängligt** – ingen distribution. Ingen felkorrigering. Vi rekommenderar att du uppdaterar till en nyare version.
+![](assets/do-not-localize/limited3.png) **Limited Availability** (LA) - On-demand deployment only.
 
-![](assets/do-not-localize/red3.png) **Inaktuell** – ingen distribution. Ingen felkorrigering. Befintliga implementeringar måste uppgraderas.
+![](assets/do-not-localize/blue3.png) **Release Candidate** (RC) - Latest build with new capabilities.
+
+![](assets/do-not-localize/orange3.png) **No longer available** - No deployment. No bug fix. Update to a newer build is recommended.
+
+![](assets/do-not-localize/red3.png) **Deprecated** - No deployment. No bug fix. Existing implementations must be upgraded.
+-->
 
 ## Versionscykel{#rn-cycle}
 

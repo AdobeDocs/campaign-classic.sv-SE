@@ -5,16 +5,18 @@ description: Läs mer om Campaign Classic 2022-versioner
 feature: Overview
 role: User
 level: Beginner
-source-git-commit: 88ee8d1575f6397a35fb6f7412cd08119a75c131
+source-git-commit: f2dc0947a3b1ed17cbc3d88176e7921e80ca1bb5
 workflow-type: tm+mt
-source-wordcount: '1995'
+source-wordcount: '2025'
 ht-degree: 100%
 
 ---
 
 # 2022-versioner{#release-2022}
 
-## ![](assets/do-not-localize/orange_2.png) Version 7.3.1 – build 9352 {#release-7-3-1}
+## Version 7.3.1 – build 9352 {#release-7-3-1}
+
+[!BADGE Inaktuell]{type=negative url="https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/rn-overview.html?lang=sv#rn-statuses" tooltip="Inaktuell"}
 
 _1 juli 2022_
 
@@ -82,7 +84,9 @@ Se [kompatibilitetsmatrisen för Campaign](../../rn/using/compatibility-matrix.m
 * Ett problem som kunde förhindra att en bild laddades upp i segmentläge från en extern server under meddelandeförberedelsen har åtgärdats. (NEO-40307)
 * Korrigerade ett problem som kunde leda till att leveransen skickades till ett större antal mottagare än förväntat. (NEO-45108)
 
-## ![](assets/do-not-localize/green_2.png) Version 7.2.2 – build 9349 {#release-7-2-2}
+## Version 7.2.2 – build 9349 {#release-7-2-2}
+
+[!BADGE Inaktuell]{type=negative url="https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/rn-overview.html?lang=sv#rn-statuses" tooltip="Inaktuell"}
 
 _1 mars 2022_
 
@@ -104,7 +108,9 @@ _1 mars 2022_
 * Åtgärdade ett problem som orsakade ett fel när leveransarbetsflödet uppdaterades när fler än 1 000 utsändningsloggar fanns samtidigt. (NEO-40276)
 * Åtgärdade ett problem som förhindrade indikatorer för andelen öppnade leveranser och andelen klickade leveranser från att uppdateras automatiskt. (NEO-43253)
 
-## ![](assets/do-not-localize/limited_2.png) Version 7.2.1 – build 9346 {#release-7-2-1}
+## Version 7.2.1 – build 9346 {#release-7-2-1}
+
+[!BADGE Inaktuell]{type=negative url="https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/rn-overview.html?lang=sv#rn-statuses" tooltip="Inaktuell"}
 
 _10 januari 2022_
 

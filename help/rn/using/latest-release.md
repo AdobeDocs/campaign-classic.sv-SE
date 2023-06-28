@@ -7,20 +7,20 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: d65869ca-a785-4327-8e8d-791c28e4696c
-source-git-commit: 88ee8d1575f6397a35fb6f7412cd08119a75c131
-workflow-type: ht
-source-wordcount: '962'
-ht-degree: 100%
+source-git-commit: f2dc0947a3b1ed17cbc3d88176e7921e80ca1bb5
+workflow-type: tm+mt
+source-wordcount: '986'
+ht-degree: 99%
 
 ---
 
 # Senaste versionen{#latest-release}
 
-
-
 Den här sidan listar nya funktioner, förbättringar och korrigeringar som kommer med den **senaste versionen av Campaign Classic v7**. Varje ny version kommer med en status som visas med en färg. Läs mer om versionsstatusen för Campaign Classic v7 på [den här sidan](rn-overview.md).
 
-## ![](assets/do-not-localize/green_2.png) Version 7.3.3 – build 9359 {#release-7-3-3}
+## Version 7.3.3 – build 9359 {#release-7-3-3}
+
+[!BADGE Allmän tillgänglighet]{type=Informative url="https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/rn-overview.html?lang=sv#rn-statuses" tooltip="Allmän tillgänglighet"}
 
 >[!CAUTION]
 >
@@ -46,7 +46,9 @@ _20 mars 2023_
 * Korrigerade ett problem som kunde förhindra dig från att skrolla i fliken **Redigera** i Redigeraren för digitalt innehåll (DCE). (NEO-54474)
 * Korrigerade ett problem där två berikningsaktiviteter använde samma namnidentifierare i sin länkning, vilket ledde till att den andra berikningsaktiviteten använde länkarna till den första. (NEO-48851)
 
-## ![](assets/do-not-localize/orange_2.png) Version 7.3.2 – build 9356 {#release-7-3-2}
+## Version 7.3.2 – build 9356 {#release-7-3-2}
+
+[!BADGE Begränsad tillgänglighet]{type=Neutral url="https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/rn-overview.html?lang=sv#rn-statuses" tooltip="Begränsad tillgänglighet"}
 
 _21 november 2022_
 
