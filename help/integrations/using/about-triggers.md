@@ -7,16 +7,14 @@ badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 audience: integrations
 content-type: reference
 exl-id: 0e337620-a49f-4e14-8c67-9279d74736f1
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: 2f6a5884e47ce10ce3c281a4377ee37522c52131
 workflow-type: tm+mt
-source-wordcount: '235'
-ht-degree: 8%
+source-wordcount: '257'
+ht-degree: 7%
 
 ---
 
 # Arbeta med utlösare för Campaign och Experience Cloud{#about-adobe-experience-triggers}
-
-
 
 [!DNL Triggers] är en integrering mellan Adobe Campaign och Adobe Analytics. Pipelinen hämtar användarens åtgärder eller utlösare från din webbplats. En kundvagnsöverläggning är ett exempel på utlösare. Utlösare bearbetas i Adobe Campaign för att skicka e-post i nära realtid.
 
@@ -28,6 +26,8 @@ ht-degree: 8%
 
 Det ger smidigare integrering eftersom konfigurationen är minimal och en tredje part inte berörs.
 Det stöder också stora trafikvolymer utan att påverka marknadsföringsaktiviteternas resultat. Integrationen kan till exempel behandla en miljon utlösare per timme.
+
+![](assets/do-not-localize/book.png) Upptäck hur man [skapa en Experience Cloud-utlösare](https://experienceleague.adobe.com/docs/experience-cloud/triggers/create.html) och identifiera, definiera och övervaka viktiga konsumentbeteenden.
 
 ## [!DNL Triggers] arkitektur {#triggers-architecture}
 
