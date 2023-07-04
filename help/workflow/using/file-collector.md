@@ -5,7 +5,7 @@ description: Läs mer om arbetsflödesaktiviteten för filinsamlaren
 badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 feature: Workflows, Data Management
 exl-id: bbec389e-c2ba-4b23-847f-b01dca6b8d5a
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 1f87a5fba1298955fa07b9a045b21718c76a7fce
 workflow-type: tm+mt
 source-wordcount: '524'
 ht-degree: 0%
@@ -32,39 +32,39 @@ Den första fliken i **[!UICONTROL File collector]** kan du välja källkatalog 
 
    * **[!UICONTROL Directory]**
 
-      Katalog som innehåller de filer som ska hämtas. Den här katalogen måste skapas i förväg på servern: Om den inte finns genereras ett fel.
+     Katalog som innehåller de filer som ska hämtas. Den här katalogen måste skapas i förväg på servern: Om den inte finns genereras ett fel.
 
    * **[!UICONTROL Filter]**
 
-      Endast filer som matchar det här filtret tas med i beräkningen. De andra filerna i katalogen ignoreras. Om filtret är tomt beaktas alla filer i katalogen. Exempel på filter: **&#42;.zip**, **import-&#42;.txt**.
+     Endast filer som matchar det här filtret tas med i beräkningen. De andra filerna i katalogen ignoreras. Om filtret är tomt beaktas alla filer i katalogen. Exempel på filter: **&#42;.zip**, **import-&#42;.txt**.
 
    * **[!UICONTROL Stop as soon as a file has been processed]**
 
-      Om det här alternativet är aktiverat avslutas aktiviteten när den första filen har tagits emot. Om det finns flera filer som motsvarar filtret i katalogen kommer endast en att tas med i beräkningen. Det här alternativet garanterar att endast en händelse skickas. Den fil som tas med i beräkningen är den första i listan i alfabetisk ordning.
+     Om det här alternativet är aktiverat avslutas aktiviteten när den första filen har tagits emot. Om det finns flera filer som motsvarar filtret i katalogen kommer endast en att tas med i beräkningen. Det här alternativet garanterar att endast en händelse skickas. Den fil som tas med i beräkningen är den första i listan i alfabetisk ordning.
 
-      Om det inte finns någon fil som matchar filtret i den angivna katalogen för en oschemalagd aktivitet, och om **[!UICONTROL Process file nonexistence]** om alternativet inte är aktiverat kommer ett fel att uppstå.
+     Om det inte finns någon fil som matchar filtret i den angivna katalogen för en oschemalagd aktivitet, och om **[!UICONTROL Process file nonexistence]** om alternativet inte är aktiverat kommer ett fel att uppstå.
 
    * **[!UICONTROL Execution schedule]**
 
-      Bestämmer frekvensen för filnärvarokontrollen via parametrarna för **[!UICONTROL Schedule]** -fliken.
+     Bestämmer frekvensen för filnärvarokontrollen via parametrarna för **[!UICONTROL Schedule]** -fliken.
 
 1. **Felhantering**
 
    Följande två alternativ är tillgängliga:
 
-   * **[!UICONTROL Process file nonexistence]**
+   * **[!UICONTROL Process missing file]**
 
-      Det här alternativet startar en speciell övergång varje gång ingen fil som matchar filtret hittas i den angivna katalogen.
+     Det här alternativet startar en speciell övergång varje gång ingen fil som matchar filtret hittas i den angivna katalogen.
 
-      Om aktiviteten inte är schemalagd kommer den här övergången endast att aktiveras en gång.
+     Om aktiviteten inte är schemalagd kommer den här övergången endast att aktiveras en gång.
 
-   * **[!UICONTROL Processing errors]**
+   * **[!UICONTROL Process errors]**
 
-      Med det här alternativet visas en speciell övergång som aktiveras om ett fel genereras. I det här fallet ändras inte arbetsflödet till felstatus och körningen fortsätter
+     Med det här alternativet visas en speciell övergång som aktiveras om ett fel genereras. I det här fallet ändras inte arbetsflödet till felstatus och körningen fortsätter
 
-      Fel som beaktas är filsystemfel (filen kunde inte flyttas, katalogen kunde inte nås osv.).
+     Fel som beaktas är filsystemfel (filen kunde inte flyttas, katalogen kunde inte nås osv.).
 
-      Det här alternativet bearbetar inte fel relaterade till aktivitetskonfigurationen, dvs. ogiltiga värden.
+     Det här alternativet bearbetar inte fel relaterade till aktivitetskonfigurationen, dvs. ogiltiga värden.
 
 1. **Historik**
 
