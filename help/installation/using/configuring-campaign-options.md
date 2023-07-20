@@ -2,14 +2,14 @@
 product: campaign
 title: Konfigurera kampanjalternativ
 description: Lär dig hur du konfigurerar Campaign-alternativ
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+badge-v7-only: label="v7" type="Informative" tooltip="Gäller endast Campaign Classic v7"
 audience: installation
 content-type: reference
 topic-tags: appendices
 exl-id: a979cd99-afa7-4ce6-ba0f-9495089cba08
-source-git-commit: 3c1a0f435dce5e1f54f701e742f393db066ad78f
+source-git-commit: 942d44104ae56e9334f42f10751979ce4f4a714d
 workflow-type: tm+mt
-source-wordcount: '3993'
+source-wordcount: '4011'
 ht-degree: 1%
 
 ---
@@ -72,11 +72,11 @@ The **[!UICONTROL Administration / Platform / Options]** Med -noden kan du konfi
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsBroadcast_LogsPerTransac</span> <br /> </td> 
-   <td> Antal breda loggar som skapas för en leverans på en gång.<br /> </td> 
+   <td> Minimal batchstorlek (antal rader) för infogning av bredaLogs under en leveransberedning.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsBroadcast_MaxDelayPerTransac</span> <br /> </td> 
-   <td> Infogning (i tabell) av loggar (bredaLogs) per transaktioner: antal rader som ska bearbetas per batch.<br /> </td> 
+   <td> Gräns för batchvaraktighet (antal millisekunder) under vilket batchstorleken för infogning av bredaLogs dubbleras under en leveransberedning.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsBroadcast_MidAnalyzeBatchSize</span> <br /> </td> 
