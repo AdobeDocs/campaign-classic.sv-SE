@@ -2,21 +2,19 @@
 product: campaign
 title: Om Adobe Campaign Classic
 description: Upptäck nyckelfunktioner, användargränssnitt och globala riktlinjer
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+badge-v7-only: label="v7" type="Informative" tooltip="Gäller endast Campaign Classic v7"
 feature: Overview
 role: User
 level: Beginner
 exl-id: 8febceb0-9694-4045-a630-a7ff2fd18943
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: be57635a6165790b8c8964d106ed0a3cb76c63af
 workflow-type: tm+mt
-source-wordcount: '923'
+source-wordcount: '930'
 ht-degree: 92%
 
 ---
 
 # Kom igång med Campaign Classic{#about-adobe-campaign-classic}
-
-
 
 För att kunna leverera en hög grad av kundengagemang och fantastiska upplevelser måste varumärken skapa enhetliga kundupplevelser på alla kontaktytor. De som marknadsför kan nu effektivt utforma, planera, genomföra, hantera och optimera marknadsföringskampanjer över flera kanaler som ger hög avkastning på marknadsföringsinvesteringar och ökar lojaliteten.
 
@@ -27,7 +25,6 @@ Med Adobe Campaign kan du samordna framtagningen av personliga marknadsföringsk
 >* Hjälpmaterialen i den här samlingen gäller för Campaign Classic v7 i dess [senaste versionen](../../rn/using/latest-release.md). Ett specifikt märke finns när ett avsnitt också gäller Campaign v8.
 >
 >* Adobe Campaign v8-dokumentation finns tillgänglig [här](https://experienceleague.adobe.com/docs/campaign/campaign-v8/campaign-home.html?lang=sv).
-
 
 ![](assets/do-not-localize/how-to-video.png) [Upptäck de viktigaste funktionerna i video](#video)
 
@@ -91,7 +88,7 @@ Följande funktioner finns tillgängliga. Beroende på vilket licensavtal du har
 * [Webbtjänster](../../configuration/using/about-web-services.md) – använd Campaign via API:er/webbtjänster,
 * [Rapportering](../../reporting/using/about-adobe-campaign-reporting-tools.md) – få tillgång till inbyggda rapporter, analysera data och utforma egna rapporter.
 
-## Videokurs {#video}
+## Självstudievideo {#video}
 
 I den här videon visas huvudfunktionerna och funktionerna för Campaign Classic.
 
