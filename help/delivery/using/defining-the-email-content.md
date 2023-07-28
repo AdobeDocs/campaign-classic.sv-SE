@@ -1,14 +1,14 @@
 ---
 product: campaign
 title: Definiera e-postinnehållet i Adobe Campaign Classic
-description: Lär dig hur du definierar e-postinnehåll när du använder Adobe Campaign
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
+description: Lär dig definiera e-postinnehåll när du använder Adobe Campaign
+badge-v7: label="v7" type="Informative" tooltip="Gäller Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Gäller även Campaign v8"
 feature: Email Design
 exl-id: 46212929-fd2d-44a2-897e-35f98e88af36
-source-git-commit: 64a94982ea1eebc30c652e0025eb0aaa0eab1ce9
+source-git-commit: 728fc285fbd562003199c53339899bbc4441bfc6
 workflow-type: tm+mt
-source-wordcount: '1943'
+source-wordcount: '1955'
 ht-degree: 1%
 
 ---
@@ -38,7 +38,7 @@ Information om hur du infogar och använder anpassningsfält finns i [Om persona
 
 ## Meddelandeämne {#message-subject}
 
-Meddelandets ämne är konfigurerat i motsvarande fält. Du kan ange det direkt i fältet eller klicka på **[!UICONTROL Subject]** för att ange ett skript. Med personaliseringslänken kan du infoga databasfält i ämnet.
+Meddelandets ämne är konfigurerat i motsvarande fält. Du kan skriva in den direkt i fältet eller klicka på **[!UICONTROL Subject]** för att ange ett skript. Med personaliseringslänken kan du infoga databasfält i ämnet.
 
 >[!IMPORTANT]
 >
@@ -74,13 +74,13 @@ Meddelanden skickas som standard i HTML eller textformat enligt mottagarens öns
   >
   >Innehållet i HTML måste skapas i förväg och sedan importeras till Adobe Campaign. Redigeraren i HTML är inte utformad för att skapa innehåll.
 
-  The **[!UICONTROL Preview]** Med underfliken kan du visa återgivningen av varje innehåll för en mottagare. Anpassningsfälten och de villkorliga elementen i innehållet ersätts med motsvarande information för den valda profilen.
+  The **[!UICONTROL Preview]** kan du visa återgivningen av varje innehåll för en mottagare. Anpassningsfälten och de villkorliga elementen i innehållet ersätts med motsvarande information för den valda profilen.
 
   Verktygsfältsknapparna ger åtkomst till standardåtgärder och formateringsparametrar för HTML-sidan.
 
   ![](assets/s_ncs_user_wizard_email01_138.png)
 
-  Du kan infoga bilder i meddelanden från en lokal fil eller från ett bildbibliotek i Adobe Campaign. Om du vill göra det klickar du på **[!UICONTROL Image]** och välj lämpligt alternativ.
+  Du kan infoga bilder från en lokal fil eller från ett bildbibliotek i Adobe Campaign. Klicka på **[!UICONTROL Image]** och välj lämpligt alternativ.
 
   ![](assets/s_ncs_user_wizard_email01_18.png)
 
@@ -133,7 +133,7 @@ Med en extra flik kan du ange innehåll som automatiskt ska integreras och forma
 
 Du kan infoga uttryckssymboler i ditt e-postinnehåll.
 
-1. Klicka på **[!UICONTROL Insert emoticon]** ikon.
+1. Klicka på **[!UICONTROL Insert emoticon]** -ikon.
 1. Välj en uttryckssymbol i popup-fönstret.
 
    ![](assets/emoticon_4.png)
@@ -144,12 +144,12 @@ Mer information om hur du anpassar uttryckslistan finns i [page](customizing-emo
 
 ## Lägg till bilder {#adding-images}
 
-E-postleveranser i HTML-format kan innehålla bilder. I leveransguiden kan du importera en HTML-sida som innehåller bilder eller infoga bilder direkt med redigeraren i HTML via **[!UICONTROL Image]** ikon.
+E-postleveranser i HTML-format kan innehålla bilder. I leveransguiden kan du importera en HTML-sida som innehåller bilder eller infoga bilder direkt med redigeraren i HTML via **[!UICONTROL Image]** -ikon.
 
 
 ### Guardrails {#img-guardrails}
 
-För att undvika prestandaproblem får bilderna i e-postmeddelanden inte överstiga 100 MB. Den här begränsningen, som är inställd som standard, kan ändras från `NmsDelivery_MaxDownloadedImageSize` alternativ. Adobe rekommenderar dock att du undviker stora bilder i e-postutskick.
+För att undvika prestandaproblem får bilderna i e-postmeddelanden inte överstiga 100 kB. Den här begränsningen, som är inställd som standard, kan ändras från `NmsDelivery_MaxDownloadedImageSize` alternativ. Adobe rekommenderar dock att du undviker stora bilder i e-postutskick.
 
 Läs mer i [listan över alternativ för Campaign Classic](../../installation/using/configuring-campaign-options.md#delivery).
 
@@ -166,7 +166,7 @@ Bilderna kan vara:
 
 ### Infoga och hantera bilder {#manage-images}
 
-Med leveransguiden kan du lägga till lokala bilder, eller bilder som lagras i biblioteket, i innehållet i meddelanden. Om du vill göra det klickar du på **[!UICONTROL Image]** i verktygsfältet för innehåll i HTML.
+Med leveransguiden kan du lägga till lokala bilder, eller bilder som lagras i biblioteket, i innehållet i meddelanden. Klicka på **[!UICONTROL Image]** i verktygsfältet för innehåll i HTML.
 
 ![](assets/s_ncs_user_image_from_library.png)
 
@@ -183,7 +183,7 @@ Så här hanterar du bilder via leveransguiden:
 1. Du kan sedan välja om du vill inkludera bilderna i e-postmeddelandet.
    ![](assets/s_ncs_user_email_del_img_upload.png)
 
-* Du kan överföra bilder manuellt utan att vänta på leveransanalysfasen. Om du vill göra det klickar du på **[!UICONTROL Upload the images straightaway...]** länk.
+* Du kan överföra bilder manuellt utan att vänta på leveransanalysfasen. Klicka på **[!UICONTROL Upload the images straightaway...]** länk.
 * Du kan ange en annan sökväg för åtkomst till bilderna på spårningsservern. Om du vill göra det anger du det i dialogrutan **[!UICONTROL Images URL]** fält. Det här värdet åsidosätter det värde som definieras i parametrarna i installationsguiden.
 
 När du öppnar HTML-innehåll med inkluderade bilder i leveransguiden får du ett meddelande om du vill att bilderna ska kunna överföras direkt, enligt leveransparametrarna.
@@ -211,7 +211,7 @@ För varje bild som identifieras kan du visa dess status:
 
 * Om en bild lagras lokalt eller finns på en annan server identifieras den som **[!UICONTROL Not yet online]**.
 * Bilderna identifieras som **[!UICONTROL Already online]** om de överfördes tidigare när en annan leverans skapades.
-* I distributionsguiden kan du definiera URL:er för vilka bildidentifiering inte är aktiverat: ladda upp dessa bilder **[!UICONTROL Skipped]**.
+* I distributionsguiden kan du definiera URL:er för vilka bildidentifiering inte är aktiverat: överföring av dessa bilder **[!UICONTROL Skipped]**.
 
 >[!NOTE]
 >
@@ -253,7 +253,7 @@ Konfigurera sedan följande element efter dina behov:
 
 1. Välj typ av streckkod.
 
-   * För 1D-format finns följande typer i Adobe Campaign: Codabar, Code 128, GS1-128 (tidigare EAN-128), UPC-A, UPC-E, ISBN, EAN-8, Code39, Interleaved 2 of 5, POSTNET and Royal Mail (RM4SCC).
+   * För 1D-format finns följande typer i Adobe Campaign: Codabar, Code 128, GS1-128 (tidigare EAN-128), UPC-A, UPC-E, ISBN, EAN-8, Code39, Interleaved 2 of 5, POSTNET och Royal Mail (RM4SCC).
 
      Exempel på en 1D-streckkod:
 
@@ -273,10 +273,10 @@ Konfigurera sedan följande element efter dina behov:
 
      ![](assets/barcode_insert_12.png)
 
-1. Ange storleken på streckkoden som du vill infoga i e-postmeddelandet: Om du konfigurerar skalan kan du öka eller minska storleken på streckkoden, från x1 till x10.
+1. Ange storleken på streckkoden som du vill infoga i e-postmeddelandet: om du konfigurerar skalan kan du öka eller minska storleken på streckkoden, från x1 till x10.
 1. The **[!UICONTROL Value]** I kan du definiera värdet för streckkoden. Ett värde kan matcha ett specialerbjudande och kan vara funktionen för ett villkor, det kan vara värdet för ett databasfält som är länkat till kunderna.
 
-   I det här exemplet visas en EAN-8-typstreckkod, till vilken en mottagares kontonummer har lagts till. Om du vill lägga till det här kontonumret klickar du på personaliseringsknappen till höger om **[!UICONTROL Value]** fält och markera **[!UICONTROL Recipient > Account number]**.
+   I det här exemplet visas en EAN-8-typstreckkod, till vilken en mottagares kontonummer har lagts till. Om du vill lägga till det här kontonumret klickar du på knappen för anpassning till höger om **[!UICONTROL Value]** fält och markera **[!UICONTROL Recipient > Account number]**.
 
    ![](assets/barcode_insert_15.png)
 

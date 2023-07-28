@@ -2,13 +2,13 @@
 product: campaign
 title: Bifoga filer
 description: Bifoga filer
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
+badge-v7: label="v7" type="Informative" tooltip="Gäller Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Gäller även Campaign v8"
 feature: Email
 exl-id: db65e83e-276f-4163-98c3-3658a48acffc
-source-git-commit: 64a94982ea1eebc30c652e0025eb0aaa0eab1ce9
+source-git-commit: 728fc285fbd562003199c53339899bbc4441bfc6
 workflow-type: tm+mt
-source-wordcount: '966'
+source-wordcount: '978'
 ht-degree: 1%
 
 ---
@@ -21,7 +21,7 @@ Du kan bifoga en eller flera filer till en e-postleverans.
 
 >[!NOTE]
 >
->För att undvika prestandaproblem rekommenderar vi att du inte inkluderar mer än en bifogad fil per e-post. Det rekommenderade tröskelvärdet kan konfigureras från [listan över alternativ för Campaign Classic](../../installation/using/configuring-campaign-options.md#delivery).
+>För att undvika prestandaproblem rekommenderar vi att du inte tar med mer än en bifogad fil per e-post. Det rekommenderade tröskelvärdet kan konfigureras från [listan över alternativ för Campaign Classic](../../installation/using/configuring-campaign-options.md#delivery).
 
 Det finns två möjliga fall:
 
@@ -34,7 +34,7 @@ Det finns två möjliga fall:
 
 ## Guardrails {#attachments-guardrails}
 
-För att undvika prestandaproblem får bilderna i e-postmeddelanden inte överstiga 100 MB. Den här begränsningen, som är inställd som standard, kan ändras från `NmsDelivery_MaxDownloadedImageSize` alternativ. Adobe rekommenderar dock att du undviker stora bilder i e-postutskick.
+För att undvika prestandaproblem får bilderna i e-postmeddelanden inte överstiga 100 kB. Den här begränsningen, som är inställd som standard, kan ändras från `NmsDelivery_MaxDownloadedImageSize` alternativ. Adobe rekommenderar dock att du undviker stora bilder i e-postutskick.
 
 Adobe rekommenderar också att du begränsar storleken och antalet bifogade filer. Som standard kan du bara lägga till en fil som en bifogad fil i ett e-postmeddelande. Det här tröskelvärdet kan konfigureras från `NmsDelivery_MaxRecommendedAttachments` alternativ.
 
@@ -71,8 +71,8 @@ När du skapar en beräknad bilaga kan namnet på den bifogade filen beräknas u
 Så här skapar du en personlig bifogad fil:
 
 1. Klicka på länken **[!UICONTROL Attachments]**.
-1. Klicka på **[!UICONTROL Add]** knapp, markera **[!UICONTROL Calculated attachment]**.
-1. Välj typ av beräkning på menyn **[!UICONTROL Type]** nedrullningsbar lista:
+1. Klicka på **[!UICONTROL Add]** knapp och sedan markera **[!UICONTROL Calculated attachment]**.
+1. Välj typ av beräkning på menyn **[!UICONTROL Type]** listruta:
 
 ![](assets/s_ncs_user_wizard_email01_136.png)
 
@@ -123,7 +123,7 @@ Använd följande konfigurationssteg för den här typen av bifogad fil:
 
 ### Bifoga en beräknad fil {#attach-a-calculated-file}
 
-Du kan beräkna namnet på den bifogade filen under färdigställandet av leveransen. Välj alternativet **[!UICONTROL The file name is calculated during delivery analysis (it cannot depend on the recipient)]**.
+Du kan beräkna namnet på den bifogade filen under färdigställandet av leveransen. Markera alternativet om du vill göra det **[!UICONTROL The file name is calculated during delivery analysis (it cannot depend on the recipient)]**.
 
 >[!NOTE]
 >

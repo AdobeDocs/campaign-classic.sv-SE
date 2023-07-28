@@ -1,15 +1,15 @@
 ---
 product: campaign
 title: Konfigurera kampanjalternativ
-description: Lär dig hur du konfigurerar Campaign-alternativ
+description: Lär dig konfigurera Campaign-alternativ
 badge-v7-only: label="v7" type="Informative" tooltip="Gäller endast Campaign Classic v7"
 audience: installation
 content-type: reference
 topic-tags: appendices
 exl-id: a979cd99-afa7-4ce6-ba0f-9495089cba08
-source-git-commit: 942d44104ae56e9334f42f10751979ce4f4a714d
+source-git-commit: 728fc285fbd562003199c53339899bbc4441bfc6
 workflow-type: tm+mt
-source-wordcount: '4011'
+source-wordcount: '4012'
 ht-degree: 1%
 
 ---
@@ -41,7 +41,7 @@ The **[!UICONTROL Administration / Platform / Options]** Med -noden kan du konfi
   </tr> 
   <tr> 
    <td> <span class="uicontrol">Deliverability_LastBroadLogMsgSent</span> <br /> </td> 
-   <td> Datum för den senaste bredaLogMsg som skickades till deliverability-instansen.<br /> </td> 
+   <td> Datum för den senaste bredaLogMsg som skickades till slutprodukten.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">DmRendering_cuid</span> <br /> </td> 
@@ -57,7 +57,7 @@ The **[!UICONTROL Administration / Platform / Options]** Med -noden kan du konfi
   </tr>
   <tr> 
    <td> <span class="uicontrol">NMS_ActivateOwnerConfirmation</span> <br /> </td> 
-   <td><p> Gör att du kan tillåta den operatör som ansvarar för leveransen att bekräfta sändningen, om en viss operator eller grupp av operatorer har angetts för att starta en leverans i leveransegenskaperna.</p><p> Om du vill göra det aktiverar du alternativet genom att ange "1" som värde. Om du vill inaktivera det här alternativet anger du "0".</p><p> Bekräftelseprocessen som skickas fungerar sedan som standard: Endast den operator eller grupp av operatorer som är avsedda för sändning i leveransegenskaperna (eller en administratör) kan bekräfta och utföra sändningen. Se <a href="../../campaign/using/marketing-campaign-deliveries.md#starting-an-online-delivery">det här avsnittet</a>.</p> </td> 
+   <td><p> Gör att du kan tillåta den operatör som ansvarar för leveransen att bekräfta sändningen, om en viss operator eller grupp av operatorer har angetts för att starta en leverans i leveransegenskaperna.</p><p> Om du vill göra det aktiverar du alternativet genom att ange "1" som värde. Om du vill inaktivera det här alternativet anger du "0".</p><p> Bekräftelseprocessen för att skicka kommer då att fungera som standard: endast den operator eller grupp av operatorer som har angetts för sändning i leveransegenskaperna (eller en administratör) kommer att kunna bekräfta och utföra sändningen. Se <a href="../../campaign/using/marketing-campaign-deliveries.md#starting-an-online-delivery">det här avsnittet</a>.</p> </td> 
    <tr> 
    <td> <span class="uicontrol">Nms_DefaultRcpSchema</span> <br /> </td> 
    <td> Adobe Campaign använder den globala variabeln "Nms_DefaultRcpSchema" för att öppna en dialogruta med standardmottagardatabasen (nms:receive).<br /> Alternativvärdet måste motsvara namnet på schemat som matchar den externa mottagartabellen.<br /> </td> 
@@ -92,7 +92,7 @@ The **[!UICONTROL Administration / Platform / Options]** Med -noden kan du konfi
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsBroadcast_RemoveBlackList</span> <br /> </td> 
-   <td> Om du anger "1" som värde kan du utesluta mottagare som inte längre vill bli kontaktade.<br /> </td> 
+   <td> Om du anger "1" som värde kan du exkludera mottagare som inte längre vill bli kontaktade.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsBroadcast_RemoveDuplicatesRecipients</span> <br /> </td> 
@@ -112,11 +112,11 @@ The **[!UICONTROL Administration / Platform / Options]** Med -noden kan du konfi
   </tr> 
  <tr> 
    <td> <span class="uicontrol">NmsDelivery_MaxDownloadedImageSize</span> <br /> </td> 
-   <td> Här kan du ange den största tillåtna storleken (i byte) för en bild som hämtats från en anpassad URL och bifogats till ett e-postmeddelande. Standardvärdet är 100 000 byte. När du skickar ett korrektur och hämtar bilden/bilderna för att bearbeta e-postmeddelandet, om storleken på en bild överskrider det här värdet eller om det uppstår ett hämtningsproblem, visas ett fel i leveransloggarna och korrekturleveransen misslyckas.<br /> </td> 
+   <td> Här kan du ange den största tillåtna storleken (i byte) för en bild som hämtats från en anpassad URL och bifogats till ett e-postmeddelande. Standardvärdet är 100 000 byte (100 kB). När du skickar ett korrektur och hämtar bilden/bilderna för att bearbeta e-postmeddelandet, om storleken på en bild överskrider det här värdet eller om det uppstår ett hämtningsproblem, visas ett fel i leveransloggarna och korrekturleveransen misslyckas.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsDelivery_MaxRecommendedAttachments</span> <br /> </td> 
-   <td> Gör att du kan ange ett maximalt antal bilagor i en e-postmall eller transaktionsmall. Om det här värdet överskrids visas en varning i leveransanalysloggarna eller när du publicerar e-postmallen för transaktioner. Standardvärdet är 1 bifogad fil.<br /> </td> 
+   <td> Gör att du kan ange ett maximalt antal bilagor i en e-postmall eller transaktionsmall. Om det här värdet överskrids visas en varning i leveransanalysloggarna eller när du publicerar e-postmallen för transaktioner. Standardvärdet är 1 bilaga.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsDelivery_MaxRetry</span> <br /> </td> 
@@ -184,15 +184,15 @@ The **[!UICONTROL Administration / Platform / Options]** Med -noden kan du konfi
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsNPAI_EmailSignificantErrorDelay</span> <br /> </td> 
-   <td> I kanalen "email" (använd som standard): Minimal tid som har använts sedan föregående refererade SOFT-fel, innan ett nytt SOFT-fel har beaktats.<br /> </td> 
+   <td> I kanalen "email"(use as default): Minimal tid som har tillbringats sedan det föregående SOFT-felet, innan ett nytt SOFT-fel har beaktats.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsNPAI_MobileMaxError</span> <br /> </td> 
-   <td> On channel "mobile" : Maximalt antal fel som accepteras för SOFT-fel under sändning innan mottagaren sätts i karantän.<br /> </td> 
+   <td> I kanalen "mobile": Maximalt antal fel som accepteras, för SOFT-fel under sändning innan mottagaren sätts i karantän.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsNPAI_MobileSignificantErrorDelay</span> <br /> </td> 
-   <td> On channel "mobile" : Minimal tid som har använts sedan föregående refererade SOFT-fel, innan ett nytt SOFT-fel har beaktats.<br /> </td> 
+   <td> I kanalen "mobile": Den minimala tid som har använts sedan det föregående SOFT-felet, innan ett nytt SOFT-fel har beaktats.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsMidSourcing_LogsPeriodHour</span> <br /> </td>
@@ -291,7 +291,7 @@ The **[!UICONTROL Administration / Platform / Options]** Med -noden kan du konfi
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NcmRessourcesDirPreview</span> <br /> </td> 
-   <td> Plats för resurser för förhandsgranskning i Adobe Campaign klientkonsol. Se <a href="../../delivery/using/formatting.md#image-referencing">det här avsnittet</a>.<br /> </td> 
+   <td> Sökväg till resurser för förhandsgranskning i Adobe Campaign klientkonsol. Se <a href="../../delivery/using/formatting.md#image-referencing">det här avsnittet</a>.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsDelivery_DefaultIgnoredImage</span> <br /> </td> 
@@ -364,7 +364,7 @@ The **[!UICONTROL Administration / Platform / Options]** Med -noden kan du konfi
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsOperation_OperationMgtDebug</span> <br /> </td> 
-   <td> Låter dig övervaka <a href="../../workflow/using/about-technical-workflows.md">operationMgt</a> teknisk arbetsflödeskörning. När det är aktiverat (värdet 1) loggas körningsinformationen i arbetsflödets granskningsloggar.<br /> </td> 
+   <td> Låter dig övervaka <a href="../../workflow/using/about-technical-workflows.md">operationMgt</a> tekniskt arbetsflöde. När det är aktiverat (värdet 1) loggas körningsinformationen i arbetsflödets granskningsloggar.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsOperation_TimeRange</span> <br /> </td> 
@@ -413,7 +413,7 @@ The **[!UICONTROL Administration / Platform / Options]** Med -noden kan du konfi
   </tr> 
   <tr> 
    <td> <span class="uicontrol">XtkAcceptOldPassword</span> <br /> </td> 
-   <td> (Kompatibilitetsläge för installation: build&gt;6000) När det är aktiverat (värdet "1") tillåter det här alternativet användning av gamla lösenord som lagras i databasen för anslutning till externa konton eller till instansen.<br /> </td> 
+   <td> (Kompatibilitetsläge för installation: build&gt;6000) När det aktiveras (värdet "1") tillåter det här alternativet att du använder gamla lösenord som lagras i databasen för anslutning till externa konton eller till instansen.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">XtkKey</span> <br /> </td> 
@@ -460,8 +460,8 @@ The **[!UICONTROL Administration / Platform / Options]** Med -noden kan du konfi
    <td> <span class="uicontrol">MC_EnrichmentCustomJs</span> <br /> </td> 
    <td> JavaScript-bibliotek som ska anpassas för att berika händelser. Måste innehålla implementeringen av dessa två funktioner:<br /> 
     <ul> 
-     <li> <p> <span class="uicontrol">enrichRtEvents(aiEventId);</span> : registrerar och sparar händelser i databasen (där <span class="uicontrol">aiEventId</span> motsvarar tabellen med händelser i realtid (bearbetade).</p> </li> 
-     <li> <p> <span class="uicontrol">enrichBatchEvents(aiEventId);</span> : registrerar och sparar händelser i databasen (där <span class="uicontrol">aiEventId</span> motsvarar ID-tabellen för grupphändelser som bearbetats).</p> </li> 
+     <li> <p> <span class="uicontrol">enrichRtEvents(aiEventId);</span> : aktiverar och sparar händelser i databasen (där <span class="uicontrol">aiEventId</span> motsvarar tabellen med händelser i realtid (bearbetade).</p> </li> 
+     <li> <p> <span class="uicontrol">enrichBatchEvents(aiEventId);</span> : aktiverar och sparar händelser i databasen (där <span class="uicontrol">aiEventId</span> motsvarar ID-tabellen för grupphändelser som bearbetats).</p> </li> 
     </ul> </td> 
   </tr> 
   <tr> 
@@ -522,7 +522,7 @@ The **[!UICONTROL Administration / Platform / Options]** Med -noden kan du konfi
   </tr> 
   <tr> 
    <td> <span class="uicontrol">MC_RtEventMaxQueueWarning</span> <br /> </td> 
-   <td> Varningströskel för maximalt antal händelser i realtid som står i kö.<br /> </td> 
+   <td> Varningströskel för maximalt antal händelser i realtid som köas.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">MC_RtEventMinQueueAlert</span> <br /> </td> 
@@ -633,7 +633,7 @@ The **[!UICONTROL Administration / Platform / Options]** Med -noden kan du konfi
    <tr> 
    <td> <span class="uicontrol">WdbcKillSessionPolicy</span> <br /> </td> 
    <td>Gör att du kan påverka beteendet Ovillkorligt stopp i alla arbetsflöden och PostgreSQL-databasfrågor enligt följande möjliga värden:<ul>
-    <li><p>0 - standard: stoppar arbetsflödesprocessen, ingen påverkan på databasen<p></li>
+    <li><p>0 - standard: avbryter arbetsflödesprocessen, påverkar inte databasen<p></li>
     <li><p>1 - pg_cancel_backend: stoppar arbetsflödesprocessen och avbryter frågan i databasen<p></li>
     <li><p>2 - pg_terminate_backend: stoppar arbetsflödesprocessen och avslutar frågan i databasen<p></li></ul></td> 
   </tr>  
@@ -655,7 +655,7 @@ The **[!UICONTROL Administration / Platform / Options]** Med -noden kan du konfi
   </tr> 
     <tr> 
    <td> <span class="uicontrol">WdbcOptions_TempDbName</span> <br /> </td> 
-   <td> Gör att du kan konfigurera en separat databas för arbetstabeller på Microsoft SQL Server för att optimera säkerhetskopiering och replikering. Alternativet motsvarar namnet på den tillfälliga databasen: Arbetstabeller skrivs i den här databasen om de anges. Exempel: 'tempdb.dbo.' (Observera att namnet måste sluta med en punkt). <a href="../../production/using/rdbms-specific-recommendations.md#microsoft-sql-server">Läs mer</a> <br /> </td> 
+   <td> Gör att du kan konfigurera en separat databas för arbetstabeller på Microsoft SQL Server för att optimera säkerhetskopiering och replikering. Alternativet motsvarar namnet på den tillfälliga databasen: Arbetstabeller skrivs i den här databasen om det anges. Exempel: 'tempdb.dbo.' (Observera att namnet måste sluta med en punkt). <a href="../../production/using/rdbms-specific-recommendations.md#microsoft-sql-server">Läs mer</a> <br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">WdbcTimeZone</span> <br /> </td> 
@@ -671,7 +671,7 @@ The **[!UICONTROL Administration / Platform / Options]** Med -noden kan du konfi
   </tr> 
   <tr> 
    <td> <span class="uicontrol">XtkDatabaseId</span> <br /> </td> 
-   <td> ID för databasen. Börjar av 'u' för Unicode DataBase.<br /> </td> 
+   <td> ID för databasen. Börjar med u för Unicode DataBase.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">XtkInstancePrefix</span> <br /> </td> 
@@ -703,7 +703,7 @@ The **[!UICONTROL Administration / Platform / Options]** Med -noden kan du konfi
   </tr> 
   <tr> 
    <td> <span class="uicontrol">PostUpgradeLastError</span> <br /> </td> 
-   <td> Information om felet som inträffade i Podumgrade, enligt syntaxen nedan:<br /> <strong>{Build number}:{mode: pre/post/..}:{The 'lessThan'/'greaterOrEquelThan' where error occurred + sub-step}</strong> </td> 
+   <td> Information om felet som inträffade i Podumgrade, enligt syntaxen nedan:<br /> <strong>{Build number}:{mode: pre/post/..}:{The lessThan/'greaterOrEquelThan' where error occurred + sub-step}</strong> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">XtkCleanup_NoStats</span> <br /> </td> 
@@ -728,14 +728,14 @@ The **[!UICONTROL Administration / Platform / Options]** Med -noden kan du konfi
   </tr> 
   <tr> 
    <td> <span class="uicontrol">nmsPipeline_config</span> <br /> </td> 
-   <td> Gör att du kan konfigurera utlösare för Experience Cloud. Datatypen är "lång text" och måste vara i JSON-format. Se <a class="anchorLink" href="https://helpx.adobe.com/campaign/kb/triggers-and-campaign.html#PipelineoptionNmsPipelineConfig" target="_blank">Så här använder du Experience Cloud Triggers med Adobe Campaign Classic</a>.<br /> </td> 
+   <td> Gör att du kan konfigurera utlösare för Experience Cloud. Datatypen är "lång text" och måste vara i JSON-format. Se <a class="anchorLink" href="https://helpx.adobe.com/campaign/kb/triggers-and-campaign.html#PipelineoptionNmsPipelineConfig" target="_blank">Så här använder du Experience Cloud-utlösare med Adobe Campaign Classic</a>.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">LASTIMPORT_&lt;%=instance.internalName%&gt;_&lt;%=activityName%&gt;</span> <br /> </td> 
    <td> Det här alternativet används vid import av data från ett tredjepartssystem via en CRM-anslutning. Om du aktiverar alternativet kan du bara samla in objekt som har ändrats sedan den senaste importen. Det här alternativet måste skapas och fyllas i manuellt enligt nedan: 
     <ul> 
      <li> <p> <span class="uicontrol">Internt namn</span> : LASTIMPORT_&lt;%=instance.internalName%&gt;_&lt;%=activityName%&gt;</p> </li> 
-     <li> <p> <span class="uicontrol">Värde (fält)</span> : datum för senaste import, med åååå/MM/dd:mm:ss-format. </p> </li> 
+     <li> <p> <span class="uicontrol">Värde (fält)</span> : datum för senaste import, med åååå/MM/dd:mm:ss. </p> </li> 
     </ul><br /> </td> 
   </tr> 
   <tr> 
@@ -863,7 +863,7 @@ The **[!UICONTROL Administration / Platform / Options]** Med -noden kan du konfi
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsTracking_Instance</span> <br /> </td> 
-   <td> Här kan du definiera instansnamnet på spårningsservern.<br /> </td> 
+   <td> Gör att du kan definiera instansnamnet på spårningsservern.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsTracking_LastConsolidation</span> <br /> </td> 
@@ -1005,7 +1005,7 @@ The **[!UICONTROL Administration / Platform / Options]** Med -noden kan du konfi
   </tr> 
   <tr> 
    <td> <span class="uicontrol">XtkLdap_RightsFilter</span> <br /> </td> 
-   <td> Sök efter användarauktoriseringar i filtret.<br /> </td> 
+   <td> Sökfilter för användarauktoriseringar.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">XtkLdap_RightsMask</span> <br /> </td> 
@@ -1046,7 +1046,7 @@ The **[!UICONTROL Administration / Platform / Options]** Med -noden kan du konfi
   </tr> 
   <tr> 
    <td> <span class="uicontrol">XtkWebForm_ServersMode</span> <br /> </td> 
-   <td> Alternativ som gör att du kan ange ett ogiltigt läge för webbformulär: lokal som standard använder spårningsservrar om alternativet är 'spårning' och använder en anpassad lista med alternativet 'andra servrar'.<br /> </td> 
+   <td> Med det här alternativet kan du ange ett ogiltigt läge för webbformulär: som standard används spårningsservrar om alternativet är spårning och en anpassad lista med alternativet övriga servrar används.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">XtkWebForm_ServersURLs</span> <br /> </td> 

@@ -2,12 +2,12 @@
 product: campaign
 title: Skicka transaktionsmeddelanden med bilagor via e-post
 description: Lär dig hur du skickar transaktionsmejl med personliga och/eller personliga bilagor med Adobe Campaign
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+badge-v7-only: label="v7" type="Informative" tooltip="Gäller endast Campaign Classic v7"
 feature: Transactional Messaging
 exl-id: 755d2364-f6c4-4943-97e8-3ed52a0f2665
-source-git-commit: 64a94982ea1eebc30c652e0025eb0aaa0eab1ce9
+source-git-commit: 728fc285fbd562003199c53339899bbc4441bfc6
 workflow-type: tm+mt
-source-wordcount: '663'
+source-wordcount: '670'
 ht-degree: 2%
 
 ---
@@ -20,7 +20,7 @@ Syftet med det här användningsexemplet är att lägga till e-postbilagor direk
 
 ## Viktiga steg {#key-steps}
 
-I det här scenariot får du lära dig hur du skickar transaktionsmeddelanden med personliga och/eller personliga bilagor. Bifogade filer överförs inte i förväg till Transactional Messaging-servern: i stället genereras de direkt.
+I det här scenariot får du lära dig hur du skickar transaktionsmeddelanden med personliga och/eller personliga bilagor. De bifogade filerna kommer inte att överföras i förväg till Transactional Messaging-servern. I stället genereras de i farten.
 
 När du hämtar kundinteraktioner eller kundinformation kan du behöva skicka tillbaka den här informationen till kunden i slutet av processen, till exempel i en PDF-fil som bifogas till ett e-postmeddelande.
 
@@ -40,7 +40,7 @@ I det här scenariot är de bifogade filerna inte färdiga, utan läggs till dir
 
 ## Recommendations och skyddsräcken {#important-notes}
 
-För att undvika prestandaproblem får bilderna i e-postmeddelanden inte överstiga 100 MB. Den här begränsningen, som är inställd som standard, kan ändras från `NmsDelivery_MaxDownloadedImageSize` alternativ. Adobe rekommenderar dock att du undviker stora bilder i e-postutskick.
+För att undvika prestandaproblem får bilderna i e-postmeddelanden inte överstiga 100 kB. Den här begränsningen, som är inställd som standard, kan ändras från `NmsDelivery_MaxDownloadedImageSize` alternativ. Adobe rekommenderar dock att du undviker stora bilder i e-postutskick.
 
 Adobe rekommenderar också att du begränsar storleken och antalet bifogade filer. Som standard kan du bara lägga till en fil som en bifogad fil i ett e-postmeddelande. Det här tröskelvärdet kan konfigureras från `NmsDelivery_MaxRecommendedAttachments` alternativ.
 
@@ -55,7 +55,7 @@ Läs riktlinjerna nedan innan du implementerar detta scenario:
 
 >[!NOTE]
 >
->För att undvika prestandaproblem rekommenderar vi att du inte inkluderar mer än en bifogad fil per e-post. Det rekommenderade tröskelvärdet kan konfigureras från [listan över alternativ för Campaign Classic](../../installation/using/configuring-campaign-options.md#delivery).
+>För att undvika prestandaproblem rekommenderar vi att du inte tar med mer än en bifogad fil per e-post. Det rekommenderade tröskelvärdet kan konfigureras från [listan över alternativ för Campaign Classic](../../installation/using/configuring-campaign-options.md#delivery).
 
 ## Implementering {#implementation}
 
