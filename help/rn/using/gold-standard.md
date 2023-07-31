@@ -8,9 +8,9 @@ role: User
 level: Beginner
 exl-id: 9e3a11b1-3070-4d90-91d5-7c559bdd500e
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1787'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -40,7 +40,7 @@ Build 9032@99a3894 innehåller följande korrigeringar:
 * Funktionen för att spåra signaturer har förbättrats för att förhindra att fel länkas till hur tredjepartsverktyg (e-postklienter, webbläsare osv.) hanterar specialtecken. URL-parametrar är nu kodade.
 * Korrigerade ett problem med datumväljare som kunde resultera i att en konsol visade felmeddelandet för blockering. (NEO-36345)
 
-### [!DNL Gold Standard] 11-versionen{#gs-11}
+### [!DNL Gold Standard] version 11{#gs-11}
 
 [!BADGE Inaktuell]{type=negative url="https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/rn-overview.html?lang=sv#rn-statuses" tooltip="Inaktuell"}
 
@@ -87,7 +87,7 @@ Version 9032@d3b452f innehåller följande förbättringar och korrigeringar:
 
 * Korrigerade ett problem som kunde få arbetsflöden att inte fungera när en **Berikandeaktivitet** kördes. (NEO-17338)
 
-### [!DNL Gold Standard] 10-versionen{#gs-10}
+### [!DNL Gold Standard] version 10{#gs-10}
 
 [!BADGE Inaktuell]{type=negative url="https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/rn-overview.html?lang=sv#rn-statuses" tooltip="Inaktuell"}
 
@@ -101,7 +101,7 @@ Korrigerade ett problem som hindrade spårning från att fungera när signaturfu
 >
 >Vi rekommenderar att du uppgraderar klientkonsolen till den som finns i den här versionen. Se [den här sidan](../../installation/using/installing-the-client-console.md)
 
-### [!DNL Gold Standard] 9 release{#gs-9}
+### [!DNL Gold Standard] version 9{#gs-9}
 
 [!BADGE Inaktuell]{type=negative url="https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/rn-overview.html?lang=sv#rn-statuses" tooltip="Inaktuell"}
 
