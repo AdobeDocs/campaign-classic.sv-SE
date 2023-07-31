@@ -8,9 +8,9 @@ role: User
 level: Beginner
 exl-id: 7a05fdff-8f9d-4e8d-812e-0f1509db5499
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '939'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -27,9 +27,9 @@ Varje ny version har en status som identifieras av en färg i [Versionsinformati
 
 | Status | Beskrivning |
 |---|---|
-| [!BADGE Allmän tillgänglighet]{type=Positive} | Senaste stabila bygge, validerad i produktion och rekommenderas av Adobe. |
+| [!BADGE Allmän tillgänglighet]{type=Positive} | Den senaste stabila build, validerad i produktion och rekommenderad av Adobe. |
 | [!BADGE Begränsad tillgänglighet]{type=Neutral} | Endast distribution på begäran. |
-| [!BADGE Frisläppningskandidat]{type=Informative} | Senaste versionen med nya funktioner. |
+| [!BADGE Frisläppningskandidat]{type=Informative} | Senaste build med nya funktioner. |
 | [!BADGE Inte längre tillgänglig]{type=Caution} | Ingen distribution. Ingen felkorrigering. Vi rekommenderar att du uppdaterar till en nyare version. |
 | [!BADGE Inaktuell]{type=negative} | Ingen distribution. Ingen felkorrigering. Befintliga implementeringar måste uppgraderas. |
 
