@@ -2,13 +2,13 @@
 product: campaign
 title: Använd fall - skapa e-postleverans
 description: Använd fall - skapa e-postleverans
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
-feature: Web Apps, Web Forms, Landing Pages
+badge-v7: label="v7" type="Informative" tooltip="Gäller Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Gäller även Campaign v8"
+feature: Web Apps, Web Forms, Landing Pages, Email Design
 exl-id: e2679f12-459b-466d-9c82-60a28363b104
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '734'
+source-wordcount: '746'
 ht-degree: 1%
 
 ---
@@ -66,56 +66,56 @@ Du kan spara innehållet som en mall för framtida bruk. När du har skapat en p
 
 * Visa de första och andra namnen på mottagarna
 
-   Om du vill infoga mottagarnas för- och efternamn i ett textfält i leveransen klickar du på det valda textfältet och placerar sedan markören där du vill att de ska visas. Klicka på den första ikonen i popup-verktygsfältet och klicka sedan på **[!UICONTROL Personalization block]**. Välj **[!UICONTROL Greetings]** och sedan klicka **[!UICONTROL OK]**.
+  Om du vill infoga mottagarnas för- och efternamn i ett textfält i leveransen klickar du på det valda textfältet och placerar sedan markören där du vill att de ska visas. Klicka på den första ikonen i popup-verktygsfältet och klicka sedan på **[!UICONTROL Personalization block]**. Välj **[!UICONTROL Greetings]** och sedan klicka **[!UICONTROL OK]**.
 
-   ![](assets/dce_personalizationblock_greetings.png)
+  ![](assets/dce_personalizationblock_greetings.png)
 
 * Infoga en länk i en bild
 
-   Om du vill dirigera leveransmottagare till en extern adress via en bild, klickar du på den relevanta bilden för att visa popup-verktygsfältet, placerar markören på den första ikonen och klickar sedan på **[!UICONTROL Link to an external URL]**. Mer information finns i [Lägga till en länk](editing-content.md#adding-a-link).
+  Om du vill dirigera leveransmottagare till en extern adress via en bild, klickar du på bilden för att visa popup-verktygsfältet, placerar markören på den första ikonen och klickar sedan på **[!UICONTROL Link to an external URL]**. Mer information finns i [Lägga till en länk](editing-content.md#adding-a-link).
 
-   ![](assets/dce_externalpage.png)
+  ![](assets/dce_externalpage.png)
 
-   Ange länkens URL i dialogrutan **URL** fält med följande format **https://www.myURL.com**, och bekräfta sedan.
+  Ange länkens URL i dialogrutan **URL** fält med följande format **https://www.myURL.com**, och bekräfta sedan.
 
-   Länken kan ändras när som helst med hjälp av avsnittet till höger om fönstret.
+  Länken kan ändras när som helst med hjälp av avsnittet till höger om fönstret.
 
 * Infoga en länk i text
 
-   Om du vill integrera en extern länk i texten i leveransen markerar du en del text eller ett textblock och klickar sedan på den första ikonen i popup-verktygsfältet. Klicka **[!UICONTROL Link to an external URL]** anger du länkadressen i **[!UICONTROL URL]** fält. Mer information finns i [Lägga till en länk](editing-content.md#adding-a-link).
+  Om du vill integrera en extern länk i texten i leveransen markerar du en del text eller ett textblock och klickar sedan på den första ikonen i popup-verktygsfältet. Klicka **[!UICONTROL Link to an external URL]** anger du länkadressen i **[!UICONTROL URL]** fält. Mer information finns i [Lägga till en länk](editing-content.md#adding-a-link).
 
-   Länken kan ändras när som helst med hjälp av avsnittet till höger om fönstret.
+  Länken kan ändras när som helst med hjälp av avsnittet till höger om fönstret.
 
-   >[!CAUTION]
-   >
-   >Den text som anges i **[!UICONTROL Label]** fältet ersätter den ursprungliga texten.
+  >[!CAUTION]
+  >
+  >Den text som anges i **[!UICONTROL Label]** fältet ersätter den ursprungliga texten.
 
 * Lägga till en spegelsida
 
-   Om du vill att mottagarna ska kunna se leveransinnehållet i en webbläsare kan du integrera en länk till en spegelsida i leveransen.
+  Om du vill att mottagarna ska kunna se leveransinnehållet i en webbläsare kan du integrera en länk till en spegelsida i leveransen.
 
-   Klicka i det textfält där du vill se länken publicerad. Klicka på den första ikonen i popup-verktygsfältet och välj **[!UICONTROL Personalization block]** sedan **[!UICONTROL Link to Mirror Page (MirrorPage)]**. Klicka på **[!UICONTROL Save]** för att bekräfta.
+  Klicka i det textfält där du vill se länken publicerad. Klicka på den första ikonen i popup-verktygsfältet och välj **[!UICONTROL Personalization block]** sedan **[!UICONTROL Link to Mirror Page (MirrorPage)]**. Klicka på **[!UICONTROL Save]** för att bekräfta.
 
-   ![](assets/dce_mirrorpage.png)
+  ![](assets/dce_mirrorpage.png)
 
-   >[!CAUTION]
-   >
-   >Anpassningsblockets etikett ersätter automatiskt den ursprungliga texten i leveransen.
+  >[!CAUTION]
+  >
+  >Anpassningsblockets etikett ersätter automatiskt den ursprungliga texten i leveransen.
 
 * Integrera en länk till ett webbprogram
 
-   Med Digital Content Editor kan du integrera länkar till webbprogram från Adobe Campaign-konsolen, till exempel en landningssida eller en formulärsida. Mer information finns i [Länka till ett webbprogram](editing-content.md#link-to-a-web-application).
+  Med Digital Content Editor kan du integrera länkar till webbprogram från Adobe Campaign-konsolen, till exempel en landningssida eller en formulärsida. Mer information finns i [Länka till ett webbprogram](editing-content.md#link-to-a-web-application).
 
-   Markera ett textfält för länken till ett webbprogram och klicka sedan på den första ikonen. Välj **[!UICONTROL Link to a Web application]** markerar du sedan det önskade programmet genom att klicka på ikonen i slutet av **Webbprogram** fält.
+  Markera ett textfält för länken till ett webbprogram och klicka sedan på den första ikonen. Välj **[!UICONTROL Link to a Web application]** markerar du sedan det önskade programmet genom att klicka på ikonen i slutet av **Webbprogram** fält.
 
-   ![](assets/dce_webapp.png)
+  ![](assets/dce_webapp.png)
 
-   Klicka **Spara** för att bekräfta.
+  Klicka **Spara** för att bekräfta.
 
-   >[!NOTE]
-   >
-   >I det här steget måste du spara minst ett webbprogram i förväg. Dessa finns i **[!UICONTROL Campaigns > Web applications]** -fliken i konsolen.
+  >[!NOTE]
+  >
+  >I det här steget måste du spara minst ett webbprogram i förväg. Dessa finns i **[!UICONTROL Campaigns > Web applications]** -fliken i konsolen.
 
 ## Steg 5 - Spara leveransen {#step-5---saving-the-delivery}
 
-När innehållet är integrerat sparar du leveransen genom att klicka **Spara**. Den visas nu i din lista över leveranser som finns i **[!UICONTROL Campaigns > Deliveries]** -fliken.
+Spara leveransen genom att klicka på **Spara**. Den visas nu i din lista över leveranser som finns i **[!UICONTROL Campaigns > Deliveries]** -fliken.

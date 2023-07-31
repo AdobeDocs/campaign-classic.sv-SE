@@ -3,11 +3,11 @@ product: campaign
 title: Lista över rapporter
 description: Lista över rapporter
 badge: label="v7" type="Informative" tooltip="Gäller endast Campaign Classic v7"
-feature: Reporting
+feature: Reporting, Monitoring
 exl-id: c01f4850-ab17-44ac-a5e0-ff082ec206b3
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '1018'
+source-wordcount: '1014'
 ht-degree: 1%
 
 ---
@@ -36,7 +36,7 @@ Mer information om innehållet i dessa rapporter finns i [det här avsnittet](..
   </tr> 
   <tr> 
    <td> Leveransflöde (dataflöde)<br /> </td> 
-   <td> Leverera diagram för dataflöde, i meddelanden/timme och Mbit/s.<br /> </td> 
+   <td> Leverera dataflödesdiagram i meddelanden/timme och Mbit/s.<br /> </td> 
    <td> nms:leverans<br /> </td> 
   </tr> 
   <tr> 
@@ -71,7 +71,7 @@ Mer information om innehållet i dessa rapporter finns i [det här avsnittet](..
   </tr> 
   <tr> 
    <td> Hypotesrapport (deliveryHypothesis)<br /> </td> 
-   <td> Visar en sammanfattning av mått för leveranshypoteser.<br /> </td> 
+   <td> Visar en sammanfattning av mått för leveranssätt.<br /> </td> 
    <td> nms:leverans<br /> </td> 
   </tr> 
   <tr> 
@@ -153,7 +153,7 @@ Mer information om innehållet i dessa rapporter finns i [det här avsnittet](..
   </tr> 
   <tr> 
    <td> Spårningsindikatorer (operationFeedback)<br /> </td> 
-   <td> Översikt över nyckelspårningsindikatorer: Öppnar, klickar och utför transaktioner, beror på Campaign.<br /> </td> 
+   <td> Översikt över nyckelspårningsindikatorer: Öppningar, klick och transaktioner beror på Campaign.<br /> </td> 
   </tr> 
   <tr> 
    <td> Delning till sociala nätverk (operationForward)<br /> </td> 
@@ -169,7 +169,7 @@ Mer information om innehållet i dessa rapporter finns i [det här avsnittet](..
   </tr> 
   <tr> 
    <td> Leveranssammanfattning (operationStatistics)<br /> </td> 
-   <td> Sammanfattningsdiagram över kampanjleveranser: Mål, undantag och skickade meddelanden.<br /> </td> 
+   <td> Översiktstabell över kampanjleveranser: Mål, undantag och skickade meddelanden.<br /> </td> 
   </tr> 
   <tr> 
    <td> URL:er och klickdataflöde (operationTopUrlDelivery)<br /> </td> 
@@ -194,7 +194,7 @@ Mer information om innehållet i dessa rapporter finns i de relaterade guiderna.
   </tr> 
   <tr> 
    <td> Fläktförvärv (socialAcquisitionsByWebapp)<br /> </td> 
-   <td> Vilka webbprogram aktiverade köp av potentiella kunder? Tillägget för social marknadsföring är beroende av.<br /> </td> 
+   <td> Vilka webbprogram aktiverade köp av potentiella kunder? Tillägget för social marknadsföring används.<br /> </td> 
   </tr> 
   <tr> 
    <td> Uppdelning av prenumerationer (mobileAppDistribution)<br /> </td> 
@@ -206,7 +206,7 @@ Mer information om innehållet i dessa rapporter finns i de relaterade guiderna.
   </tr> 
   <tr> 
    <td> Reaktivitetsfrekvens (socialReactionRate)<br /> </td> 
-   <td> Vilka är reaktivitetsfrekvenserna för de senaste leveranserna? Tillägget för social marknadsföring är beroende av.<br /> </td> 
+   <td> Vilka är reaktivitetsfrekvenserna för de senaste leveranserna? Tillägget för social marknadsföring används.<br /> </td> 
   </tr> 
   <tr> 
    <td> Reaktivitetsfrekvens (mobileAppReactivityRate)<br /> </td> 

@@ -1,15 +1,16 @@
 ---
 product: campaign
 title: Konfigurera åtkomst till SAP HANA
-description: Lär dig hur du konfigurerar åtkomst till SAP HANA i FDA
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+description: Lär dig konfigurera åtkomst till SAP HANA i FDA
+feature: Installation, Federated Data Access
+badge-v7-only: label="v7" type="Informative" tooltip="Gäller endast Campaign Classic v7"
 audience: platform
 content-type: reference
 topic-tags: connectors
 exl-id: 39bfe775-e182-4a0b-ad3c-b7a901297c90
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '263'
+source-wordcount: '270'
 ht-degree: 0%
 
 ---
@@ -36,30 +37,30 @@ Anslutning till en extern SAP HANA-databas i FDA kräver vissa ytterligare konfi
 
    * **/etc/odbc.ini**
 
-      ```
-      [ODBC]
-      InstallDir=/etc/
-      
-      [HDB]
-      Driver=HDBODBC
-      servernode=localhost:39013 (this value depend of your server)
-      User:SYSTEM
-      ```
+     ```
+     [ODBC]
+     InstallDir=/etc/
+     
+     [HDB]
+     Driver=HDBODBC
+     servernode=localhost:39013 (this value depend of your server)
+     User:SYSTEM
+     ```
 
-      &quot;InstallDir&quot; motsvarar platsen för **odbcinst.ini** -fil.
+     &quot;InstallDir&quot; motsvarar platsen för **odbcinst.ini** -fil.
 
    * **/etc/odbcinst.ini**
 
-      ```
-      [HDBODBC]
-      Description = "SmartCloudPT HANA"
-      Driver = /usr/sap/hdbclient/libodbcHDB.so
-      ```
+     ```
+     [HDBODBC]
+     Description = "SmartCloudPT HANA"
+     Driver = /usr/sap/hdbclient/libodbcHDB.so
+     ```
 
 1. Ange miljövariablerna för Adobe Campaign-servern:
 
    * **LD_LIBRARY_PATH**: Den bör innehålla länken till SAP Hana-klienten (/usr/sap/hdbclient/libodbcHDB.so) som standard.
-   * **ODBCINI**: platsen för filen odbc.ini (till exempel /etc/odbc.ini).
+   * **ODBCINI**: plats för filen odbc.ini (till exempel /etc/odbc.ini).
 
 ## SAP HANA external account{#sap-external}
 
@@ -69,7 +70,7 @@ Med det externa SAP HANA-kontot kan du ansluta Campaign-instansen till din exter
 
 1. Klicka **[!UICONTROL New]** och markera **[!UICONTROL External database]** as **[!UICONTROL Type]**.
 
-1. Så här konfigurerar du **[!UICONTROL SAP Hana]** externt konto måste du ange:
+1. Konfigurera **[!UICONTROL SAP Hana]** externt konto måste du ange:
 
    * **[!UICONTROL Type]**: SAP Hana
 

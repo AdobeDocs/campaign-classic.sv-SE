@@ -2,18 +2,18 @@
 product: campaign
 title: "Användningsfall: visa rapport om svar på en onlineundersökning"
 description: "Användningsfall: visa rapport om svar på en onlineundersökning"
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
-feature: Reporting, Surveys
+badge-v7: label="v7" type="Informative" tooltip="Gäller Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Gäller även Campaign v8"
+feature: Reporting, Monitoring, Surveys
 exl-id: 6be12518-86d1-4a13-bbc2-b2ec5141b505
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '475'
+source-wordcount: '487'
 ht-degree: 5%
 
 ---
 
-# Användningsfall: visa en rapport om svar på en nätundersökning{#use-case-displaying-report-on-answers-to-an-online-survey}
+# Användningsfall: visa en rapport om svar på en onlineundersökning{#use-case-displaying-report-on-answers-to-an-online-survey}
 
 
 
@@ -24,7 +24,7 @@ I följande exempel vill vi samla in svar på en onlineundersökning och visa de
 Använd följande steg:
 
 1. Skapa ett arbetsflöde för att återskapa svar på enkäten och lagra dem i en lista.
-1. Skapa en kub med hjälp av data i listan.
+1. Skapa en kub med data i listan.
 1. Skapa en rapport med pivottabellen och visa detaljerna för svaren.
 
 Innan du börjar använda det här användningsexemplet måste du ha tillgång till en enkät och en uppsättning svar som du kan analysera.
@@ -43,11 +43,11 @@ Så här samlar du in svaren på enkäten:
 
    ![](../../surveys/using/assets/reporting_usecase_1_01.png)
 
-1. Markera de kolumner som ska extraheras (i det här fallet: välj: alla arkiverade fält. Det här är fälten som innehåller svaren.
+1. Markera de kolumner som ska extraheras (i det här fallet: markera: alla arkiverade fält. Det här är fälten som innehåller svaren.
 
    ![](../../surveys/using/assets/reporting_usecase_1_02.png)
 
-1. Placera en **[!UICONTROL List update]** typaktivitet för att spara data.
+1. När svarssamlingsrutan har konfigurerats placerar du en **[!UICONTROL List update]** typaktivitet för att spara data.
 
    ![](../../surveys/using/assets/reporting_usecase_1_04.png)
 
@@ -67,7 +67,7 @@ Så här samlar du in svaren på enkäten:
 
 ## Steg 2 - Skapa kuben, dess mått och indikatorer {#step-2---creating-the-cube--its-measures-and-its-indicators}
 
-Sedan kan du skapa kuben och konfigurera dess mått: De kommer att användas för att skapa de indikatorer som kommer att visas i rapporten. Mer information om hur du skapar och konfigurerar kuber finns i [Om kuber](../../reporting/using/ac-cubes.md).
+Du kan sedan skapa kuben och konfigurera mått: de används för att skapa indikatorer som visas i rapporten. Mer information om hur du skapar och konfigurerar kuber finns i [Om kuber](../../reporting/using/ac-cubes.md).
 
 I det här exemplet baseras kuben på data i listan som matats av det arbetsflöde som skapats tidigare.
 

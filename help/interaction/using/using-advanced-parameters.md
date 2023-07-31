@@ -2,15 +2,16 @@
 product: campaign
 title: Använda avancerade parametrar
 description: Använda avancerade parametrar
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+feature: Interaction, Offers
+badge-v7-only: label="v7" type="Informative" tooltip="Gäller endast Campaign Classic v7"
 audience: interaction
 content-type: reference
 topic-tags: advanced-parameters
 exl-id: 232e2bfc-f497-40ad-811e-118dbfcabbcf
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '118'
-ht-degree: 7%
+source-wordcount: '125'
+ht-degree: 8%
 
 ---
 

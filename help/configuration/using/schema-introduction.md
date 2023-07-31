@@ -2,18 +2,19 @@
 product: campaign
 title: Schemareferens
 description: Referenslista för schema
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+feature: Custom Resources
+badge-v7-only: label="v7" type="Informative" tooltip="Gäller endast Campaign Classic v7"
 exl-id: 5745fc60-9df3-4ad0-bbeb-f6ae8c86a5aa
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '90'
-ht-degree: 21%
+source-wordcount: '97'
+ht-degree: 20%
 
 ---
 
 # Schemareferens {#schema-reference}
 
-När du redigerar ett schema är ett godkännandesystem baserat på källschemat (xtk:srcSchema) tillgängligt. Vissa fel kan också upptäckas när databasen uppdateras med hjälp av &quot;Databasstrukturuppdatering...&quot;. guide.
+När du redigerar ett schema är ett godkännandesystem baserat på källschemat (xtk:srcSchema) tillgängligt. Vissa fel kan också upptäckas när databasen uppdateras med guiden Databasstrukturuppdatering...
 
 Som standard är alla booleska typattribut&quot;false&quot; i Adobe Campaign-scheman. Om du vill aktivera dem måste du ange attributet i schemat och ange värdet till &quot;true&quot;.
 

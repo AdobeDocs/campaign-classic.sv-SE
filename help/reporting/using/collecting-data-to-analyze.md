@@ -2,13 +2,13 @@
 product: campaign
 title: Samla in data som ska analyseras
 description: Samla in data som ska analyseras
+feature: Reporting, Monitoring
 badge: label="v7" type="Informative" tooltip="Gäller endast Campaign Classic v7"
-feature: Reporting
 exl-id: cf621374-88f9-4def-8bea-87e0ea69ecd3
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '514'
-ht-degree: 3%
+source-wordcount: '510'
+ht-degree: 4%
 
 ---
 
@@ -56,7 +56,7 @@ Du kan välja en kub som definierar frågan.
 
 ![](assets/reporting_query_from_cube.png)
 
-Med kuber kan du utöka databasens kapacitet för utforskande och analys samtidigt göra det enklare att konfigurera rapporter och tabeller för slutanvändare: Välj bara en befintlig, fullständigt konfigurerad kub och använd dess beräkningar, mått och statistik. Mer information om hur du skapar kuber finns i [det här avsnittet](../../reporting/using/ac-cubes.md).
+Med kuber kan du utöka databasens utforsknings- och analyskapacitet samtidigt som det blir enklare att konfigurera rapporter och tabeller för slutanvändare: välj bara en befintlig, fullt konfigurerad kub och använd beräkningar, mått och statistik. Mer information om hur du skapar kuber finns i [det här avsnittet](../../reporting/using/ac-cubes.md).
 
 Klicka på **[!UICONTROL Edit query...]** och välj de indikatorer som du vill visa eller använda i rapporten.
 

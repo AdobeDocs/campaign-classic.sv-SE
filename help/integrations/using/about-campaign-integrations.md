@@ -2,15 +2,16 @@
 product: campaign
 title: Om integreringar i Campaign
 description: Använd andra Adobe-lösningar och kombinera deras olika funktioner med Campaign
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
+feature: Overview
+badge-v7: label="v7" type="Informative" tooltip="Gäller Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Gäller även Campaign v8"
 audience: integrations
 content-type: reference
 topic-tags: campaign-integrations
 exl-id: ceb584da-bc97-4b71-9499-59df5e6d10c3
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '757'
+source-wordcount: '769'
 ht-degree: 12%
 
 ---
@@ -30,10 +31,11 @@ En fullständig lista över Adobe-lösningar och bastjänster som kan integreras
 >[!CAUTION]
 >
 >De flesta av dessa integreringar kräver att Adobe Identity Management System (IMS) implementeras för att logga in via Adobe ID. [Läs mer på den här sidan](../../integrations/using/about-adobe-id.md).
+>
 
-## Länka lösningar {#working-with-experience-cloud-solutions}
+## Länka era lösningar {#working-with-experience-cloud-solutions}
 
-Flera lösningar kan kopplas till Adobe Experience Cloud. The **organisation** är den kundenhet som gör det möjligt för en administratör att konfigurera grupper och användare samt att styra enkel inloggning (SSO) i Adobe Experience Cloud. Organisationen fungerar som ett inloggningsföretag som omfattar alla produkter och lösningar från Experience Cloud. Oftast är en organisation ditt företagsnamn. Ett företag kan dock ha många organisationer.
+Flera lösningar kan länkas till Adobe Experience Cloud. The **organisation** är den kundenhet som gör det möjligt för en administratör att konfigurera grupper och användare samt att styra enkel inloggning (SSO) i Adobe Experience Cloud. Organisationen fungerar som ett inloggningsföretag som omfattar alla produkter och lösningar från Experience Cloud. Oftast är en organisation ditt företagsnamn. Ett företag kan dock ha många organisationer.
 
 Organisationshantering och länkning av Adobe Experience Cloud-konton finns i [Adobe Experience Cloud hjälpportal](https://experienceleague.adobe.com/docs/core-services/interface/manage-users-and-products/organizations.html).
 
@@ -60,7 +62,7 @@ Följande tabell visar tillgänglig integreringsdokumentation för Experience Cl
  </thead> 
  <tbody> 
   <tr> 
-   <td> <strong>Adobe Real-time Customer Data Platform (RTCDP)</strong><br /> </td> 
+   <td> <strong>Adobe Real-time Customer Data Platform (RTC)</strong><br /> </td> 
    <td> Tack vare integreringen mellan Adobe Campaign och Adobe Real-time Customer Data Platform (RTCDP) kan ni dela segmentdata och importera målgrupper till Adobe Campaign.<br /> <p><a href="../../integrations/using/get-started-sources-destinations.md">Läs mer</a> om Campaign - integrering med Adobe Real-time Customer Data Platform.</p><br /> </td> 
   </tr> 
   <tr> 
@@ -89,7 +91,7 @@ Följande tabell visar tillgänglig integreringsdokumentation för Experience Cl
   </tr> 
   <tr> 
    <td> <strong>Utlösare i Experience Cloud</strong><br /> </td> 
-   <td> Integration mellan <strong>Startar bastjänst</strong> och Adobe Campaign gör att ni kan skicka personaliserade e-postmeddelanden till era kunder som en reaktion på specifika beteenden som spåras på er webbplats av Adobe Analytics.<br /> <p><a href="https://helpx.adobe.com/se/campaign/kb/triggers-and-campaign.html">Läs mer</a> om Adobe Campaign - integrering av triggers i Experience Cloud.</p><br /> </td> 
+   <td> Integration mellan <strong>Startar bastjänst</strong> och Adobe Campaign gör att ni kan skicka personaliserade e-postmeddelanden till era kunder som en reaktion på specifika beteenden som spåras på er webbplats av Adobe Analytics.<br /> <p><a href="https://helpx.adobe.com/se/campaign/kb/triggers-and-campaign.html">Läs mer</a> om Adobe Campaign - integrering av utlösare för Experience Cloud.</p><br /> </td> 
   </tr> 
   <tr> 
    <td> <strong>Adobe Analytics Connector</strong><br /> </td> 

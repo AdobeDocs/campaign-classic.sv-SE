@@ -2,8 +2,9 @@
 product: campaign
 title: Technote - Adobe Campaign systemuppgraderingar
 description: Adobe Campaign systemuppgradering
+feature: Technote, Upgrade
 exl-id: 78949d94-60b3-44f1-8e5a-d61b5b723e87
-source-git-commit: d04b672fe2049d83ba17d3d855e1b609e81cf8c9
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
 source-wordcount: '499'
 ht-degree: 9%
@@ -14,7 +15,7 @@ ht-degree: 9%
 
 Kampanjinfrastrukturen bygger på tredjepartssystem som regelbundet måste uppdateras med de senaste versionerna och korrigeringarna. Dessa uppdateringar är obligatoriska för att säkerställa kontinuitet i tjänsten och säkra kampanjmiljöer från säkerhetsrisker. Dessutom krävs en Campaign-uppgradering för att säkerställa kompatibilitet med systemändringar från tredje part.
 
-Som **Kund för värdbaserade eller hanterade Cloud Services** får du information från Adobe om dessa uppgraderingar när de behövs. Du måste uppgradera dina miljöer i enlighet med rekommendationerna för att säkerställa efterlevnad.
+Som en **Kund för värdbaserade eller hanterade Cloud Services** får du information från Adobe om dessa uppgraderingar när de behövs. Du måste uppgradera dina miljöer i enlighet med rekommendationerna för att säkerställa efterlevnad.
 
 Som en **Lokal kund eller hybridkund** rekommenderar Adobe att du uppgraderar system- och kampanjversionerna enligt samma kalender.
 
@@ -23,6 +24,7 @@ Av säkerhetsskäl måste du [installera den senaste Campaign-versionen](#ac-upg
 >[!NOTE]
 >
 >Om du har frågor om de här ändringarna kan du kontakta [Adobes kundtjänst](https://helpx.adobe.com/se/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html). Se även [Vanliga frågor om uppgradering av bygge](../../platform/using/faq-build-upgrade.md).
+>
 
 ## Uppgradering av kampanjbygge {#ac-upgrade}
 

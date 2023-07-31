@@ -2,8 +2,9 @@
 product: campaign
 title: Kampanjwebbkomponenter och version 100 i webbläsarna Chrome Firefox och Edge
 description: Kampanjwebbkomponenter och version 100 i webbläsarna Chrome, Firefox och Edge
+feature: Technote
 exl-id: 2016279a-7b02-4399-b2ed-9a15456de816
-source-git-commit: b8329e24f07ec8b3dd89f655b47699f130266008
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
 source-wordcount: '634'
 ht-degree: 0%
@@ -22,7 +23,7 @@ Microsoft släppte Edge v100 tidigare i mars 2022.
 
 Kompatibiliteten för större webbplatser har testats i förväg. Om det uppstår problem med webbplatser som inte kan åtgärdas innan versionerna släpps har företagen planer för säkerhetskopiering som är klara att säkerställa att webbplatserna inte påverkas.
 
-Potentiella problem eller funktionsförlust på webbplatsen kommer från användaragentsträngen som webbläsare skickar till webbplatser du besöker: användaragenten är en sträng som skickas av webbläsaren till webbplatsen för att tala om vilken webbläsare och version du använder samt tillhörande teknik. När webbläsaren skickar en begäran till en webbplats identifieras den med användaragentsträngen innan innehållet som du begärde hämtas. Data i användaragentsträngen hjälper webbplatsen att leverera innehållet i ett format som passar din webbläsare. Versionen av användaragenten ökas så att den matchar webbläsarens versionsnummer. Att gå från 2 till 3 siffror kan orsaka problem.
+Potentiella problem eller funktionsförlust på webbplatsen beror på användaragentsträngen som webbläsare skickar till webbplatser som du besöker: användaragenten är en sträng som webbläsaren skickar till webbplatsen för att tala om vilken webbläsare och version som du använder samt tillhörande teknik. När webbläsaren skickar en begäran till en webbplats identifieras den med användaragentsträngen innan innehållet som du begärde hämtas. Data i användaragentsträngen hjälper webbplatsen att leverera innehållet i ett format som passar din webbläsare. Versionen av användaragenten ökas så att den matchar webbläsarens versionsnummer. Att gå från 2 till 3 siffror kan orsaka problem.
 
 ## Påverkas du?{#version-100-impact}
 
@@ -57,7 +58,7 @@ Om du vill testa dina webbsidor med Mozilla Firefox 100 kan du simulera den komm
 1. Klicka på den blå bockmarkeringsknappen för att spara inställningen.
 1. Stäng och starta om webbläsaren.
 
-Gå tillbaka till `about:config` och söka efter `general.useragent.override` igen.  När den visas klickar du på papperskorgsikonen för att ta bort inställningen och startar om webbläsaren.
+Om du vill ändra användaragenten till standardinställningen går du tillbaka till `about:config` och söka efter `general.useragent.override` igen.  När den visas klickar du på papperskorgsikonen för att ta bort inställningen och startar om webbläsaren.
 
 ### Testa med Chrome 100{#test-chrome-100}
 

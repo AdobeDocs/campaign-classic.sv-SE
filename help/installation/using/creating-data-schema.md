@@ -2,12 +2,13 @@
 product: campaign
 title: Skapar dataschemat för FDA
 description: Lär dig hur du skapar dataschemat för FDA
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+feature: Installation, Instance Settings, Federated Data Access
+badge-v7-only: label="v7" type="Informative" tooltip="Gäller endast Campaign Classic v7"
 exl-id: 8702499b-1700-4d1f-a0e0-f7a9dfb4b88f
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '187'
-ht-degree: 3%
+source-wordcount: '194'
+ht-degree: 4%
 
 ---
 
@@ -21,7 +22,7 @@ Så här skapar du ett schema i en extern databas:
 
    ![](assets/wf_new_schema_fda.png)
 
-1. Ange **[!UICONTROL Namespace]** och  **[!UICONTROL Name]** för schemat och välj **[!UICONTROL External account]** som möjliggör anslutning till databasen. Detta ger åtkomst till listan med tabeller som är tillgängliga i den externa basen.
+1. Ange en **[!UICONTROL Namespace]** och  **[!UICONTROL Name]** för schemat och välj **[!UICONTROL External account]** som möjliggör anslutning till databasen. Detta ger åtkomst till listan med tabeller som är tillgängliga i den externa basen.
 
    ![](assets/wf_new_schema_select_table_fda.png)
 
@@ -41,4 +42,4 @@ Så här skapar du ett schema i en extern databas:
 
    ![](assets/wf_new_schema_generate_fda.png)
 
-Indexen skapas automatiskt när en tabell mappas (standard- eller FDA-mappning).
+Index skapas automatiskt när en tabell mappas (standard- eller FDA-mappning).

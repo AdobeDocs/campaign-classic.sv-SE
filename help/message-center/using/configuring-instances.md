@@ -2,14 +2,15 @@
 product: campaign
 title: Konfigurera instanser
 description: Lär dig konfigurera Transactional Messaging-kontroll och körningsinstanser i Adobe Campaign Classic
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+feature: Transactional Messaging, Message Center
+badge-v7-only: label="v7" type="Informative" tooltip="Gäller endast Campaign Classic v7"
 audience: message-center
 content-type: reference
 topic-tags: instance-configuration
 exl-id: 23a384d1-27ce-46c2-98c3-0fb60a5c50ee
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '1222'
+source-wordcount: '1229'
 ht-degree: 1%
 
 ---
@@ -96,7 +97,7 @@ Skapa en **[!UICONTROL Execution instance]** skriv ett externt konto, använd f�
 
    Mer information om FDA (Federated Data Access) finns i [det här avsnittet](../../installation/using/about-fda.md).
 
-1. Klicka **[!UICONTROL Test the connection]** för att kontrollera att kontrollinstansen och körningsinstansen är länkade till varandra.
+1. Klicka **[!UICONTROL Test the connection]** för att kontrollera att kontrollinstansen och körningsinstansen är länkade.
 
    ![](assets/messagecenter_create_extaccount_006.png)
 
@@ -155,7 +156,7 @@ Om du använder flera körningsinstanser upprepar du dessa steg för varje körn
 
 Du kan dela ett körningskluster med olika kontrollinstanser. Den här typen av arkitektur kräver följande konfiguration.
 
-Tänk dig att ditt företag hanterar två varumärken, var och en med sin egen kontrollinstans: **Kontroll 1** och **Kontroll 2**. Två körningsinstanser används också. Du måste ange en annan Message Center-operator för varje kontrollinstans: en **mc1** operatorn för **Kontroll 1** -instans och en **mc2** operatorn för **Kontroll 2** -instans.
+Tänk dig att ditt företag hanterar två varumärken, var och en med sin egen kontrollinstans: **Kontroll 1** och **Kontroll 2**. Två körningsinstanser används också. Du måste ange en annan Message Center-operator för varje kontrollinstans: **mc1** operatorn för **Kontroll 1** -instans och en **mc2** operatorn för **Kontroll 2** -instans.
 
 I trädet med alla körningsinstanser skapar du en mapp per operator (**Mapp 1** och **Mapp 2**) och begränsa varje operatörs dataåtkomst till deras mapp.
 
@@ -197,7 +198,7 @@ Om du vill använda flera kontrollinstanser måste den här konfigurationen utf�
    >
    >**mc1** och **mc2** operatorn måste ha **[!UICONTROL Message Center execution]** och de har inte åtkomst till Adobe Campaign klientkonsol. En operator måste alltid länkas till en säkerhetszon. Mer information om detta finns i [det här avsnittet](../../installation/using/security-zones.md).
 
-1. För varje operator ska du kontrollera **[!UICONTROL Restrict to information found in sub-folders of]** och välj lämplig mapp (**Mapp 1** för **mc1** operator och **Mapp 2** för **mc2** -operator).
+1. För varje operator ska du kontrollera **[!UICONTROL Restrict to information found in sub-folders of]** och välj lämplig mapp (**Mapp 1** för **mc1** operatorn och **Mapp 2** för **mc2** -operator).
 
    ![](assets/messagecenter_multi_control_5.png)
 

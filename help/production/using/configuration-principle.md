@@ -2,16 +2,17 @@
 product: campaign
 title: Konfigurationsprincip
 description: Konfigurationsprincip
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
-badge-v7-prem: label="on-premise & hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html" tooltip="Applies to on-premise and hybrid deployments only"
+feature: Monitoring, Configuration
+badge-v7-only: label="v7" type="Informative" tooltip="Gäller endast Campaign Classic v7"
+badge-v7-prem: label="lokal och hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=sv" tooltip="Gäller endast lokala och hybrida driftsättningar"
 audience: production
 content-type: reference
 topic-tags: production-procedures
 exl-id: 03d7e579-8678-44b8-bbe7-cf4204bffb25
-source-git-commit: 4661688a22bd1a82eaf9c72a739b5a5ecee168b1
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '281'
-ht-degree: 4%
+source-wordcount: '306'
+ht-degree: 7%
 
 ---
 
@@ -25,23 +26,23 @@ För en viss server finns det två element som är gemensamma för alla Adobe Ca
 
 * The **internal** lösenord: det här är det allmänna administratörslösenordet. Det är vanligt för alla instanser av en viss programserver.
 
-   >[!IMPORTANT]
-   >
-   >Logga in med **Intern** måste du ha definierat ett lösenord i förväg. Mer information om detta finns i [det här avsnittet](../../installation/using/configuring-campaign-server.md#internal-identifier).
+  >[!IMPORTANT]
+  >
+  >Logga in med **Intern** måste du ha definierat ett lösenord i förväg. Mer information om detta finns i [det här avsnittet](../../installation/using/configuring-campaign-server.md#internal-identifier).
 
-* Flera tekniska serverkonfigurationer: dessa konfigurationer kan alla överladdas i den specifika konfigurationen för en instans.
+* Flera tekniska serverkonfigurationer: dessa konfigurationer kan alla överlagras i den specifika konfigurationen för en instans.
 
 Konfigurationsfilerna sparas i **conf** installationskatalogen. Konfigurationen är uppdelad i tre filer:
 
 * **serverConf.xml**: övergripande konfiguration för alla instanser.
-* **config-**`<instance>`**.xml** (där **`<instance>`** är instansnamnet): specifik konfiguration för en instans.
+* **config-**`<instance>`**XML** (där **`<instance>`** är instansnamnet): specifik konfiguration för en instans.
 * **serverConf.xml.diff**: delta mellan den inledande konfigurationen och den aktuella konfigurationen. Filen genereras automatiskt av programmet och får inte ändras manuellt. Den används för att automatiskt sprida användarändringar när en version uppdateras.
 
 En instanskonfiguration läses in enligt följande:
 
 * Modulen läser in **serverConf.xml** -fil för att hämta de parametrar som delas av alla instanser.
-* Sedan laddas **config-**`<instance>`**.xml** -fil. Värdena i den här filen har prioritet framför värdena i **serverConf.xml**.
+* Sedan laddas **config-**`<instance>`**XML** -fil. Värdena i den här filen har prioritet framför värdena i **serverConf.xml**.
 
-   Dessa två filer har samma format. Valfritt värde i **serverConf.xml** kan överläsas för en viss instans i **config-`<instance>`.xml** -fil.
+  Dessa två filer har samma format. Valfritt värde i **serverConf.xml** kan överläsas för en viss instans i **config-`<instance>`XML** -fil.
 
 Det här operativläget ger stor flexibilitet för konfigurationer.

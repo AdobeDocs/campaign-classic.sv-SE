@@ -2,11 +2,12 @@
 product: campaign
 title: Technote - Uppdatera miljön för att ansluta till Adobe Campaign med IMS
 description: Campaign - IMS-uppdateringar
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+feature: Technote, Upgrade
+badge-v7-only: label="v7" type="Informative" tooltip="Gäller endast Campaign Classic v7"
 exl-id: ecb5a258-a150-46a3-8b83-2b2c06d873ee
-source-git-commit: 403d0b7df74b2c958bea9a2d718a15f597ca0d9c
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '579'
+source-wordcount: '586'
 ht-degree: 7%
 
 ---
@@ -23,7 +24,7 @@ Adobe Identity Management-tjänsten (IMS) har slutat stödja tidigare Internet E
 
 Adobe vill bevara IMS-funktionaliteten för alla kunder sedan 30 juni 2021. IMS är en del av säkerhetsramverket som gör att användare kan logga in på klientkonsolen, alltså Adobe Campaign.
 
-För att bevara den här funktionen måste kunderna uppdatera klientkonsolen på varje användares dator och se till att den senaste uppdateringen av din [Windows-version](../../rn/using/compatibility-matrix.md#ClientConsoleoperatingsystems), med **Internet Explorer 11** inbyggd installeras på varje användares dator.
+För att bevara den här funktionen måste kunderna uppdatera klientkonsolen på varje användares dator och se till att den senaste uppdateringen av din [Windows](../../rn/using/compatibility-matrix.md#ClientConsoleoperatingsystems), med **Internet Explorer 11** inbyggd installeras på varje användares dator.
 
 ## Påverkas du?
 
@@ -41,26 +42,26 @@ Om du redan har uppgraderat men använder en äldre version av Microsoft Interne
 
    * Gold Standard 11. [Läs mer](../../rn/using/gold-standard.md)
    * Campaign 21.1.3-utgåvan. [Läs mer](../../rn/using/latest-release.md)
-   * Campaign 20.2.5-utgåvan.
+   * Campaign 20.2.5.
    * Campaign 20.1.4-utgåvan.
    * Campaign 19.2.4-utgåvan.
 
-  Dessa releaser har ett nytt anslutningsprotokoll. Uppgradering är obligatoriskt för både Campaign-servern och klientkonsolen: När alla instanser har uppgraderats måste klientkonsolen uppgraderas till den här versionen och kunna ansluta till Campaign efter **30 juni 2021**.
+  Dessa releaser har ett nytt anslutningsprotokoll. Uppgradering är obligatoriskt för både Campaign-servern och klientkonsolen: när alla instanser har uppgraderats måste klientkonsolen uppgraderas till den här versionen och även kunna ansluta till Campaign efter **30 juni 2021**.
 
-Dessutom bör du se till att den senaste uppdateringen av [Windows-version](../../rn/using/compatibility-matrix.md#ClientConsoleoperatingsystems), med **Internet Explorer 11** inbyggd installeras på varje användares dator.
+Dessutom bör du se till att den senaste uppdateringen av [Windows](../../rn/using/compatibility-matrix.md#ClientConsoleoperatingsystems), med **Internet Explorer 11** inbyggd installeras på varje användares dator.
 
 ## Vanliga frågor och svar 
 
 **Hur kontrollerar jag min Campaign-version?**
 
-Lär dig hur du kontrollerar din version [i det här avsnittet](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version).
+Lär dig kontrollera din version [i det här avsnittet](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version).
 
 
 **Hur kontrollerar jag om jag använder IMS?**
 
 Om du vill kontrollera anslutningsläget kan du:
 
-* Starta Campaign Client Console och få tillgång till dina instansanslutningsinställningar. Om **Anslut till en Adobe ID** om du väljer det här alternativet används Adobe IMS.
+* Starta Campaign Client Console och få tillgång till dina instansanslutningsinställningar. Om **Ansluta till en Adobe ID** om du väljer det här alternativet används Adobe IMS.
 
   ![](../../integrations/using/assets/ims_1.png)
 
@@ -94,4 +95,4 @@ Om du inte har uppdaterat din Internet Explorer-version visas följande meddelan
 * [Gör den nya klientkonsolen tillgänglig för användare](../../installation/using/client-console-availability-for-windows.md)
 * [Installera Campaign Client Console](../../installation/using/installing-the-client-console.md)
 * [Access Adobe Software Distribution](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html)
-* [Ladda ned Campaign Classic build](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html)
+* [Hämta Campaign Classic build](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html)

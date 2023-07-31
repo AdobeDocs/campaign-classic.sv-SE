@@ -2,16 +2,17 @@
 product: campaign
 title: Tabeller att underhålla
 description: Tabeller att underhålla
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
-badge-v7-prem: label="on-premise & hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html" tooltip="Applies to on-premise and hybrid deployments only"
+feature: Monitoring
+badge-v7-only: label="v7" type="Informative" tooltip="Gäller endast Campaign Classic v7"
+badge-v7-prem: label="lokal och hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=sv" tooltip="Gäller endast lokala och hybrida driftsättningar"
 audience: production
 content-type: reference
 topic-tags: database-maintenance
 exl-id: 194f12de-4671-4a56-8cdc-cd5e3dac147b
-source-git-commit: 4661688a22bd1a82eaf9c72a739b5a5ecee168b1
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '1123'
-ht-degree: 0%
+source-wordcount: '1148'
+ht-degree: 1%
 
 ---
 
@@ -34,7 +35,7 @@ Följande lista innehåller endast de tabeller som är mest fragmenterade. Effek
    <th> <strong>Tabellnamn </strong><br /> </th> 
    <th> <strong>Storlek</strong><br /> </th> 
    <th> <strong>Huvudtyp av verksamhet</strong><br /> </th> 
-   <th> <strong>Kommentarer</strong><br /> </th> 
+   <th> <strong>Kommentar</strong><br /> </th> 
   </tr> 
  </thead> 
  <tbody> 
@@ -96,7 +97,7 @@ Följande lista innehåller endast de tabeller som är mest fragmenterade. Effek
    <td> NmsBroadLog<br /> </td> 
    <td> Störst<br /> </td> 
    <td> Infogningar, uppdateringar, borttagningar<br /> </td> 
-   <td> Det här är systemets största tabell. Det finns en post per skickat meddelande och dessa poster infogas, uppdateras för att spåra leveransstatus och tas bort när historiken rensas. <br /> </td> 
+   <td> Det här är den största tabellen i systemet. Det finns en post per skickat meddelande och dessa poster infogas, uppdateras för att spåra leveransstatus och tas bort när historiken rensas. <br /> </td> 
   </tr> 
   <tr> 
    <td> NmsTrackingLog<br /> </td> 
@@ -126,7 +127,7 @@ Följande lista innehåller endast de tabeller som är mest fragmenterade. Effek
    <td> NmsBroadLogRcp (när NmsRecipient-tabellen används) <br /> </td> 
    <td> Stor<br /> </td> 
    <td> Infogningar, uppdateringar, borttagningar<br /> </td> 
-   <td> Det här är systemets största tabell. Det finns en post per skickat meddelande och dessa poster infogas, uppdateras för att spåra leveransstatus och tas bort när historiken rensas. Observera att i 5.10 är den här tabellen mindre än motsvarigheten i 4.05 (NmsBroadLog) eftersom SMTP-meddelandetexten är faktoriserad i tabellen NmsBroadLogMsg i version 5.10. Det är dock fortfarande viktigt att indexera om den här tabellen regelbundet (varannan vecka att börja med) och helt återskapa den då och då (en gång i månaden eller när prestanda påverkas). <br /> </td> 
+   <td> Det här är den största tabellen i systemet. Det finns en post per skickat meddelande och dessa poster infogas, uppdateras för att spåra leveransstatus och tas bort när historiken rensas. Observera att i 5.10 är den här tabellen mindre än motsvarigheten i 4.05 (NmsBroadLog) eftersom SMTP-meddelandetexten är faktoriserad i tabellen NmsBroadLogMsg i version 5.10. Det är dock fortfarande viktigt att indexera om den här tabellen regelbundet (varannan vecka att börja med) och helt återskapa den då och då (en gång i månaden eller när prestanda påverkas). <br /> </td> 
   </tr> 
   <tr> 
    <td> YyyBroadLogXx (när en extern mottagartabell används)<br /> </td> 

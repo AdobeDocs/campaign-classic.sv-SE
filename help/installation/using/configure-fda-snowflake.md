@@ -1,15 +1,16 @@
 ---
 product: campaign
 title: Konfigurera åtkomst till Snowflake
-description: Lär dig hur du konfigurerar åtkomst till Snowflake i FDA
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+description: Lär dig konfigurera åtkomst till Snowflake i FDA
+feature: Installation, Federated Data Access
+badge-v7-only: label="v7" type="Informative" tooltip="Gäller endast Campaign Classic v7"
 audience: platform
 content-type: reference
 topic-tags: connectors
 exl-id: bdb5e422-ecfe-42eb-bd15-39fe5ec0ff1d
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '512'
+source-wordcount: '519'
 ht-degree: 6%
 
 ---
@@ -25,7 +26,7 @@ Använd kampanj **Åtkomst till federerade data** (FDA) om du vill bearbeta info
 
 >[!NOTE]
 >
->[!DNL Snowflake] anslutning finns för värdbaserade och lokala distributioner. Mer information finns på [den här sidan](../../installation/using/capability-matrix.md).
+>[!DNL Snowflake] anslutning finns tillgänglig för värdbaserade och lokala distributioner. Mer information finns på [den här sidan](../../installation/using/capability-matrix.md).
 
 ![](assets/snowflake_3.png)
 
@@ -37,19 +38,19 @@ Konfigurera [!DNL Snowflake] i Linux följer du stegen nedan:
 
    * För Red Hat/CentOS:
 
-      ```
-      yum update
-      yum upgrade
-      yum install -y grep sed tar wget perl curl
-      ```
+     ```
+     yum update
+     yum upgrade
+     yum install -y grep sed tar wget perl curl
+     ```
 
    * Debian:
 
-      ```
-      apt-get update
-      apt-get upgrade
-      apt-get install -y grep sed tar wget perl curl
-      ```
+     ```
+     apt-get update
+     apt-get upgrade
+     apt-get install -y grep sed tar wget perl curl
+     ```
 
 1. Innan du kör skriptet har du tillgång till mer information med `--help` alternativ:
 
@@ -98,12 +99,11 @@ Du måste skapa en [!DNL Snowflake] externt konto för att ansluta Campaign-inst
 
       * **[!UICONTROL Password]**: Lösenord för användarkonto.
 
-      ![](assets/snowflake.png)
+     ![](assets/snowflake.png)
 
    * Klicka på knappen **[!UICONTROL Keypair Auth]** -flik för att använda **[!UICONTROL Private key]** för att autentisera och kopiera och klistra in **[!UICONTROL Private key]**.
 
-      ![](assets/snowflake_4.png)
-
+     ![](assets/snowflake_4.png)
 
 1. Klicka på **[!UICONTROL Parameters]** tabben **[!UICONTROL Deploy functions]** för att skapa funktioner.
 
@@ -125,5 +125,5 @@ Kopplingen stöder följande alternativ:
 | WeekStart | WEEK_START-sessionsparameter. Standardinställningen är 0. <br>Mer information finns på [den här sidan](https://docs.snowflake.com/en/sql-reference/parameters.html#week-start). |
 | AnvändCachedResult | USE_CACHED_RESULTS sessionsparameter. Standardinställningen är TRUE. Det här alternativet kan användas för att inaktivera cachelagrade resultat i Snowflake. <br>Mer information finns på [den här sidan](https://docs.snowflake.net/manuals/user-guide/querying-persisted-results.html). |
 | bulkThreads | Antal trådar som ska användas för Snowflake-massinläsare, fler trådar innebär bättre prestanda för större massinläsningar. Standardinställningen är 1. Numret kan justeras beroende på antalet datortrådar. |
-| chunkSize | Bestämmer filstorleken för gruppinläsarsegmentet. Standardinställningen är 128 MB. Kan ändras för att få optimala prestanda när de används med bulkThreads. Fler samaktiva trådar innebär bättre prestanda. <br>Mer information finns i [Snowflake dokumentation](https://docs.snowflake.net/manuals/sql-reference/sql/put.html). |
+| chunkSize | Bestämmer filstorleken för gruppinläsarsegmentet. Standardinställningen är 128 MB. Kan ändras för att få optimala prestanda när de används med bulkThreads. Fler samtidiga aktiva trådar innebär bättre prestanda. <br>Mer information finns i [Snowflake dokumentation](https://docs.snowflake.net/manuals/sql-reference/sql/put.html). |
 | StageName | Namnet på den förallokerade interna scenen. Den används i massinläsning i stället för att skapa en ny tillfällig fas. |

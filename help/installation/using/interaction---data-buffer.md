@@ -2,14 +2,15 @@
 product: campaign
 title: Interaktion – databuffert
 description: Interaktion – databuffert
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+feature: Installation, Instance Settings
+badge-v7-only: label="v7" type="Informative" tooltip="Gäller endast Campaign Classic v7"
 audience: installation
 content-type: reference
 topic-tags: additional-configurations
 exl-id: 7250b885-0606-466a-bfc2-6dd3cc5a012d
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '299'
+source-wordcount: '306'
 ht-degree: 3%
 
 ---
@@ -20,7 +21,7 @@ ht-degree: 3%
 
 Du kan konfigurera en databuffertzon för att öka prestanda för inkommande interaktion genom att avsynkronisera offertförslagsberäkningar. Den här konfigurationen ska utföras i instansens egen konfigurationsfil (config-Instance.xml).
 
-I Adobe Campaign **databuffertzon** har introducerats i interaktionsmodulen. På så sätt kan du **öka prestanda** av inkommande interaktion genom att avsynkronisera lager och erbjuda beräkningar.
+I ADOBE CAMPAIGN **databuffertzon** har introducerats i interaktionsmodulen. På så sätt kan du **öka prestanda** av inkommande interaktion genom att avsynkronisera lager och erbjuda beräkningar.
 
 Det gäller bara inkommande interaktion, antingen via ett anrop (med eller utan anropsdata) eller via en statusuppdatering (updateStatus).
 
@@ -42,7 +43,7 @@ Databuffertzon **konfiguration** kan göras i instansens konfigurationsfil (conf
 
 När du har konfigurerat databuffertzonen kontrollerar du att det finns en anpassad maskinvarukonfiguration tillgänglig. (det finns mycket minne).
 
-Definitionen för en daemon-skrivning (process som heter: interaktion) är följande:
+Definitionen för ett skrivdaemon (process som heter: interaktion) är följande:
 
 ```
 <interactiond args="" autoStart="false" callDataSize="0" initScript="" maxProcessMemoryAlertMb="1800"

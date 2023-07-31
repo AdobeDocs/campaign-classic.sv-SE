@@ -2,15 +2,16 @@
 product: campaign
 title: Checklista för säkerhet och sekretess
 description: Läs mer om de viktigaste elementen för att kontrollera säkerhet och integritet
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+feature: Installation, Privacy, Access Management, Privacy Tools
+badge-v7-only: label="v7" type="Informative" tooltip="Gäller endast Campaign Classic v7"
 audience: installation
 content-type: reference
 topic-tags: prerequisites-and-recommendations-
 exl-id: ec40498e-e673-4792-8dcf-8bb7e852b532
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '486'
-ht-degree: 6%
+source-wordcount: '493'
+ht-degree: 7%
 
 ---
 
@@ -53,9 +54,9 @@ När du utvecklar i Adobe Campaign (arbetsflöden, Javascript, JSSP osv.) ska du
 
 * **Skript**: försök att undvika SQL-satser, använd parametriserade funktioner i stället för strängsammanfogning, undvik SQL-injektion genom att lägga till de SQL-funktioner som ska användas i tillåtelselista.
 
-* **Skydda datamodellen**: använda namngivna rättigheter för att begränsa operatoråtgärder, lägga till systemfilter (sysFilter)
+* **Skydda datamodellen**: använd namngivna rättigheter för att begränsa operatoråtgärder, lägga till systemfilter (sysFilter)
 
-* **Lägga till bildtexter i webbprogram**: Lär dig hur du lägger till bilder på dina offentliga landningssidor och prenumerationssidor.
+* **Lägga till bildtexter i webbprogram**: Lär dig hur du lägger till tagningar på dina offentliga landningssidor och prenumerationssidor.
 
 [Läs mer](../../installation/using/scripting-coding-guidelines.md)
 
@@ -81,7 +82,7 @@ Konfigurationen måste utföras på alla servrar. Konfigurationsfilerna är av t
 
 * **Säkerhetszoner**: Konfigurera säkerhetszoner så att de direkt tar hänsyn till IP-adresserna till klienterna för en proxy.
 
-* **Filöverföringsskydd**: begränsa vilka typer av filer som kan överföras till Adobe Campaign-servern med ett nytt uploadAllowList-attribut. Detta kan användas i serverkonfigurationsfilen.
+* **Filöverföringsskydd**: begränsa de typer av filer som kan överföras till Adobe Campaign-servern med ett nytt uploadAllowList-attribut. Detta kan användas i serverkonfigurationsfilen.
 
 * **Relay**: finjustera reläkonfigurationen genom att inaktivera reläreglerna för oanvända moduler/program.
 
@@ -91,7 +92,7 @@ Konfigurationen måste utföras på alla servrar. Konfigurationsfilerna är av t
 
 [Läs mer](../../installation/using/server-configuration.md)
 
-## Webbserverkonfiguration
+## Konfiguration av webbserver
 
 <img src="assets/do-not-localize/icon_web.svg" width="60px">
 
@@ -99,7 +100,7 @@ Flera metodtips bör följas när du konfigurerar webbservern (Apache/IIS):
 
 * Inaktivera gammal SSL-version och ciphers
 * Ta bort metoden TRACE
-* Ta bort banderollen
+* Ta bort bannern
 * Begränsa frågestorleken för att förhindra att viktiga filer överförs
 
 [Läs mer](../../installation/using/web-server-configuration.md)

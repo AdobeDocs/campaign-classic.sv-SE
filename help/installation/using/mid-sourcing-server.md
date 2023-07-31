@@ -2,15 +2,16 @@
 product: campaign
 title: Installera en server för mellanleverantörer i Campaign
 description: I det här avsnittet finns information om installation och konfiguration av en server med mellanleverantörer i Campaign
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
-badge-v7-prem: label="on-premise & hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html" tooltip="Applies to on-premise and hybrid deployments only"
+feature: Installation, Instance Settings
+badge-v7-only: label="v7" type="Informative" tooltip="Gäller endast Campaign Classic v7"
+badge-v7-prem: label="lokal och hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=sv" tooltip="Gäller endast lokala och hybrida driftsättningar"
 audience: installation
 content-type: reference
 topic-tags: additional-configurations
 exl-id: 3e55d7f5-2858-4390-bba9-8fb5be0c3d98
-source-git-commit: 4661688a22bd1a82eaf9c72a739b5a5ecee168b1
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '995'
+source-wordcount: '1020'
 ht-degree: 1%
 
 ---
@@ -45,34 +46,34 @@ Installationsproceduren är identisk med den för en fristående instans. Se [In
 
 Du måste dock göra följande:
 
-* I steg **5** måste du inaktivera **mta** (leverans) och **inMail** (studsmoduler). The **wfserver** (arbetsflöde) måste dock förbli aktiverat.
+* I steg **5** måste du inaktivera **mta** (leverans) **inMail** (studsmoduler). The **wfserver** (arbetsflöde) måste dock förbli aktiverat.
 
-   ```
-   <?xml version='1.0'?>
-   <serverconf>  
-     <shared>    
-       <!-- add lang="eng" to dataStore to force English for the instance -->    
-       <dataStore hosts="console.campaign.net*">      
-         <mapping logical="*" physical="default"/>    
-       </dataStore>  </shared>  
-       <mta autoStart="false"/>  
-       <wfserver autoStart="true"/>  
-       <inMail autoStart="false"/>  
-       <sms autoStart="false"/>  
-       <listProtect autoStart="false"/>
-   </serverconf>
-   ```
+  ```
+  <?xml version='1.0'?>
+  <serverconf>  
+    <shared>    
+      <!-- add lang="eng" to dataStore to force English for the instance -->    
+      <dataStore hosts="console.campaign.net*">      
+        <mapping logical="*" physical="default"/>    
+      </dataStore>  </shared>  
+      <mta autoStart="false"/>  
+      <wfserver autoStart="true"/>  
+      <inMail autoStart="false"/>  
+      <sms autoStart="false"/>  
+      <listProtect autoStart="false"/>
+  </serverconf>
+  ```
 
-   Mer information om detta finns i [det här avsnittet](../../installation/using/configuring-campaign-server.md#enabling-processes).
+  Mer information om detta finns i [det här avsnittet](../../installation/using/configuring-campaign-server.md#enabling-processes).
 
 * Steg **6**, **9** och **10** behövs inte.
 * Under steg **12** och **13** måste du ange porten 8080 i anslutnings-URL:en (eftersom konsolen kommunicerar direkt med Tomcat, inte via webbservern). URL:en blir `http://console.campaign.net:8080`. Under steg **13** väljer du **[!UICONTROL Issue towards Mid-sourcing]** samt de som ska installeras.
 
-   ![](assets/s_ncs_install_midsourcing02.png)
+  ![](assets/s_ncs_install_midsourcing02.png)
 
-   >[!CAUTION]
-   >
-   >Standardroutningen för tekniska leveranser ersätts automatiskt med e-postroutning via Mid-sourcing.
+  >[!CAUTION]
+  >
+  >Standardroutningen för tekniska leveranser ersätts automatiskt med e-postroutning via Mid-sourcing.
 
 ### Installera och konfigurera servern för mellanlagring {#installing-and-configuring-the-mid-sourcing-server}
 
@@ -96,7 +97,7 @@ Gå till klientkonsolen och leta upp **E-postroutning med medelkällkod** mittle
 
 1. Konfiguration för att ta emot i läget mitt i källkoden
 
-   Ange lösenord för överföringskontot: I **/Mid-sourcing/Access Management/Operators/** mapp, **mitten** -operatorn används av fjärrinstansen för att skicka in material i mellankälläge. Du måste ange ett lösenord för den här operatorn och ge det till administratören för inskickningsinstansen.
+   Ange lösenord för överföringskonto: I **/Mid-sourcing/Access Management/Operators/** mapp, **mitten** -operatorn används av fjärrinstansen för att skicka in material i mellankälläge. Du måste ange ett lösenord för den här operatorn och ge det till administratören för inskickningsinstansen.
 
    The **Plattform för mellanleverantörer** skapar standardmapparna för lagring av skickade leveranser och standardoperatorn som utför skickade leveranser.
 
@@ -106,7 +107,7 @@ Gå till klientkonsolen och leta upp **E-postroutning med medelkällkod** mittle
 >
 >Multiplexing stöds endast i lokala miljöer.
 
-Det är möjligt att dela en instans från mellanleverantörer med flera instanser. Var och en av de här instanserna måste kopplas till en operator i databasen för mellanleverantörer. Så här skapar du ett andra konto på servern:
+Det är möjligt att dela en instans med mellanleverantörer genom att skicka in flera instanser. Var och en av de här instanserna måste kopplas till en operator i databasen för mellanleverantörer. Så här skapar du ett andra konto på servern:
 
 1. Skapa en mapp i **[!UICONTROL Mid-sourcing > Deliveries]** nod som ska associeras med standardkontot för mellanleverantörer (till exempel: prod).
 1. Skapa en mapp i **[!UICONTROL Mid-sourcing > Deliveries]** nod med samma namn som kontot (till exempel: accept_test).
@@ -135,7 +136,7 @@ Du måste ändra serverinställningen för mellanlagring i filen serverConf.xml.
 
 Attributet &#39;@name&#39; måste följa följande regler:
 
-**&#39;marketing_account_operator_name&#39;.&#39;affinity_name&#39;.&#39;affinity_group&#39;**
+**marketing_account_operator_name.affinity_name&#39;.&#39;affinity_group&#39;**
 
 &#39;marketing_account_operator_name&#39; relaterar till det interna namnet på mittkällkontot som deklarerats i mittkällinstansen.
 
@@ -166,7 +167,7 @@ Du måste stoppa och sedan starta om servern för att ändringen ska kunna beakt
 **Konfigurera kundplattformen**
 
 1. Gå till det externa kontot för leverans mot mellanleverantörer.
-1. I **[!UICONTROL Mid-Sourcing]** anger du anslutningsparametrarna för servern med mellankällor.
+1. I **[!UICONTROL Mid-Sourcing]** anger du anslutningsparametrarna för servern med mellankällkod.
 
    ![](assets/s_ncs_install_midsourcing_tracking06.png)
 
@@ -179,6 +180,6 @@ Du måste stoppa och sedan starta om servern för att ändringen ska kunna beakt
 
    ![](assets/s_ncs_install_midsourcing_tracking05.png)
 
-Om leveransen av meddelanden ska hanteras av flera servrar med mellanleverantörer väljer du alternativet **[!UICONTROL Routing with alternating mid-sourcing accounts]** och ange de olika servrarna.
+Om leveransen av meddelanden ska hanteras av flera servrar med mellanleverantörer väljer du alternativet **[!UICONTROL Routing with alternating mid-sourcing accounts]** och ange olika servrar.
 
 ![](assets/s_ncs_install_midsourcing_tracking04.png)

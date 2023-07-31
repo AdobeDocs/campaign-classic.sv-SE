@@ -2,15 +2,16 @@
 product: campaign
 title: Filtreringsalternativ
 description: Filtreringsalternativ
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
+feature: Overview
+badge-v7: label="v7" type="Informative" tooltip="Gäller Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Gäller även Campaign v8"
 audience: platform
 content-type: reference
 topic-tags: filtering-data
 exl-id: cf75a435-97e2-4d4f-8b9b-c30a57390deb
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '282'
+source-wordcount: '294'
 ht-degree: 2%
 
 ---
@@ -23,11 +24,11 @@ ht-degree: 2%
 
 Som standard visar Adobe Campaign alla data i databasen som den berörda operatorn har läsbehörighet för.
 
-Dessa data kan filtreras med hjälp av alternativen i det övre avsnittet i webbläsarfönstret.
+Dessa data kan filtreras med hjälp av alternativen som finns i det övre avsnittet i webbläsarfönstret.
 
 ![](assets/filter_web_zone.png)
 
-Det finns flera sätt att filtrera data som ska visas. Dessa kan vid behov användas tillsammans:
+Det finns flera sätt att filtrera de data som ska visas. Dessa kan vid behov användas tillsammans:
 
 * Filtrera på mappar, se [Filtrera efter mapp](#filter-by-folder),
 * Filtrera efter status, se [Filtrera efter status](#filter-by-status),
@@ -62,7 +63,7 @@ Du kan till exempel sortera uppgifter efter prioritet, skapandedatum eller i alf
 
 ## Snabbsökning {#quick-search}
 
-Använd sökfältet för att snabbt komma åt det objekt du söker efter: Ange de tecken som finns i etiketten eller det interna namnet på det objekt som du vill visa och bekräfta sedan att du vill använda ett automatiskt filter på data på sidan.
+Använd sökfältet för att snabbt komma åt objektet du söker efter: ange tecknen som finns i etiketten eller det interna namnet på objektet som du vill visa och bekräfta sedan att du vill använda ett automatiskt filter på data på sidan.
 
 ![](assets/d_ncs_user_interface_filter_search.png)
 

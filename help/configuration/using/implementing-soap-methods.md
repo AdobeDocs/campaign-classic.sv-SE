@@ -2,11 +2,12 @@
 product: campaign
 title: Implementera SOAP-metoder
 description: Implementera SOAP-metoder
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+feature: Configuration
+badge-v7-only: label="v7" type="Informative" tooltip="Gäller endast Campaign Classic v7"
 exl-id: 441a0e5c-fa7f-46c8-a65a-5cca4c846d43
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '420'
+source-wordcount: '427'
 ht-degree: 3%
 
 ---
@@ -19,7 +20,7 @@ ht-degree: 3%
 
 Det går att skapa SOAP-metoder i JavaScript. Den här funktionen aktiverar helt enkelt tillämpande processer och kan undvika att utveckla JSP:er och anrop till dem i formulären.
 
-Dessa SOAP-metoder fungerar på samma sätt som de som definierats internt i programmet. Samma attribut stöds: static, key only and const.
+Dessa SOAP-metoder fungerar på samma sätt som de som definierats internt i programmet. Samma attribut stöds: static, key only och const.
 
 ## Definiera ett metodbibliotek {#defining-a-method-library}
 
@@ -92,7 +93,7 @@ Specialfall:
 
 **3. Returnerade värden**
 
-Funktionen måste returnera ett värde för varje parameter av typen out eller inout. Specialfall: Om metoden deklareras utan något av attributen&quot;static&quot;,&quot;key only&quot; eller&quot;const&quot; måste det första returnerade värdet sammanfalla med den ändrade entiteten. Du kan returnera ett nytt objekt eller returnera den första ändrade parametern.
+Funktionen måste returnera ett värde för varje parameter av typen&quot;out&quot; eller&quot;inout&quot;. Specialfall: Om metoden deklareras utan något av attributen&quot;static&quot;,&quot;key only&quot; eller&quot;const&quot; måste det första returnerade värdet sammanfalla med den ändrade entiteten. Du kan returnera ett nytt objekt eller returnera den första ändrade parametern.
 
 Exempel:
 

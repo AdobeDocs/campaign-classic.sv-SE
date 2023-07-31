@@ -2,16 +2,17 @@
 product: campaign
 title: Konfiguration av teknisk e-post
 description: Lär dig hur du konfigurerar Campaign för att styra utdata för dina instanser när du levererar e-postmeddelanden
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
-badge-v7-prem: label="on-premise & hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html" tooltip="Applies to on-premise and hybrid deployments only"
+feature: Installation, Deliverability
+badge-v7-only: label="v7" type="Informative" tooltip="Gäller endast Campaign Classic v7"
+badge-v7-prem: label="lokal och hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=sv" tooltip="Gäller endast lokala och hybrida driftsättningar"
 audience: installation
 content-type: reference
 topic-tags: additional-configurations
 exl-id: 515adad2-6129-450a-bb9e-fc80127835af
-source-git-commit: 4661688a22bd1a82eaf9c72a739b5a5ecee168b1
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '3023'
-ht-degree: 0%
+source-wordcount: '3048'
+ht-degree: 1%
 
 ---
 
@@ -35,9 +36,9 @@ En djupdykning i vad som kan levereras, inklusive alla tekniska rekommendationer
 
 Det går att styra utdata från en eller flera Adobe Campaign-instanser för att begränsa antalet e-postmeddelanden som skickas beroende på en domän. Du kan till exempel begränsa utdata till 20 000 per timme i **yahoo.com** adresser, medan 100 000 meddelanden per timme konfigureras för alla andra domäner.
 
-Meddelandeutdata måste kontrolleras för varje IP-adress som används av leveransservrarna (**mta**). Flera **mta** som delas upp på flera datorer och som tillhör olika Adobe Campaign-instanser kan dela samma IP-adress för e-postleverans: En process måste skapas för att koordinera användningen av dessa IP-adresser.
+Meddelandeutdata måste kontrolleras för varje IP-adress som används av leveransservrarna (**mta**). Flera **mta** som delas upp på flera datorer och tillhör olika Adobe Campaign-instanser kan dela samma IP-adress för e-postleverans: en process måste skapas för att koordinera användningen av dessa IP-adresser.
 
-Det här är vad **stat** modulen gör: den vidarebefordrar alla anslutningsbegäranden och meddelanden som ska skickas till e-postservrarna för en uppsättning IP-adresser. Statistikservern håller reda på leveranser och kan aktivera eller inaktivera sändning baserat på angivna kvoter.
+Det här är vad **stat** gör: den vidarebefordrar alla anslutningsbegäranden och meddelanden som ska skickas till e-postservrarna för en uppsättning IP-adresser. Statistikservern håller reda på leveranser och kan aktivera eller inaktivera sändning baserat på angivna kvoter.
 
 ![](assets/s_ncs_install_mta.png)
 
@@ -46,7 +47,7 @@ Det här är vad **stat** modulen gör: den vidarebefordrar alla anslutningsbeg�
 
 ### Leveransservrar {#delivery-servers}
 
-The **mta** för att distribuera meddelanden till **mtachild** underordnade moduler. Varje **mtachild** förbereder meddelanden innan en auktorisering begärs från statistikservern och skickar dem.
+The **mta** distribuerar meddelanden till **mtachild** underordnade moduler. Varje **mtachild** förbereder meddelanden innan en auktorisering begärs från statistikservern och skickar dem.
 
 Stegen är följande:
 
@@ -77,7 +78,7 @@ Statistikservern kan kombinera flera instanser eller flera datorer med samma off
 
 Leveransstatistik finns för varje mål-MX och för varje käll-IP. Om måldomänen till exempel har 5 MX och plattformen kan använda tre olika IP-adresser, kan servern hantera upp till 15 serier med indikatorer för den här domänen.
 
-Källans IP-adress matchar den offentliga IP-adressen, dvs. adressen som den visas av fjärre-postservern. Den här IP-adressen kan skilja sig från adressen för datorn som är värd för **mta**, om det finns en NAT-router. Detta är orsaken till varför statistikservern använder en identifierare som matchar den offentliga IP-adressen (**publicId**). Associationen mellan den lokala adressen och den här identifieraren deklareras i **serverConf.xml** konfigurationsfil. Alla parametrar som är tillgängliga i **serverConf.xml** finns listade i [section](../../installation/using/the-server-configuration-file.md).
+Källans IP-adress matchar den offentliga IP-adressen, dvs. adressen som den visas av fjärre-postservern. Den här IP-adressen kan skilja sig från adressen för datorn som är värd för **mta**, om det finns en NAT-router. Detta är orsaken till varför statistikservern använder en identifierare som matchar den offentliga IP-adressen (**publicId**). Associationen mellan den lokala adressen och identifieraren deklareras i **serverConf.xml** konfigurationsfil. Alla parametrar som är tillgängliga i **serverConf.xml** finns listade i [section](../../installation/using/the-server-configuration-file.md).
 
 ## Leveransstyrning {#delivery-output-controlling}
 
@@ -85,7 +86,7 @@ För att kunna leverera meddelanden till e-postservrar **E-posttrafikschaper** -
 
 Innan meddelanden skickas begär modulen &#39;tokens&#39; från servern. Dessa består vanligtvis av minst 10 tokens, vilket minskar antalet frågor till servern.
 
-Servern sparar all statistik som hör till anslutningar och leveranser. Om du startar om går informationen tillfälligt förlorad: varje kund sparar en lokal kopia av sin sändningsstatistik och returnerar dem till servern regelbundet (varannan minut). Servern kan sedan samla in data på nytt.
+Servern sparar all statistik som hör till anslutningar och leveranser. Vid omstart förloras informationen tillfälligt: varje klient sparar en lokal kopia av sin sändningsstatistik och returnerar den till servern regelbundet (varannan minut). Servern kan sedan samla in data på nytt.
 
 I följande avsnitt beskrivs hur ett meddelande behandlas av **E-posttrafikschaper** -komponenten.
 
@@ -121,7 +122,7 @@ Börja med att definiera den Adobe Campaign-databas som ska vara värd för konf
 
 ### Starta konfiguration {#start-configuration}
 
-Som standard är **stat** för varje instans startas modulen. När instanser samlas på samma dator, eller när instanser delar samma IP-adress, används en enskild statistikserver: de andra måste inaktiveras.
+Som standard är **stat** för varje instans startas modulen. När instanserna samlas på samma dator, eller när instanser delar samma IP-adress, används en enskild statistikserver: de andra måste inaktiveras.
 
 ### Definition av serverporten {#definition-of-the-server-port}
 
@@ -153,7 +154,7 @@ Det maximala antalet anslutningar beror inte enbart på antalet offentliga IP-ad
 
 Om du till exempel har tillåtit 5 anslutningar i MX-reglerna och har konfigurerat 2 offentliga IP:n kan du tro att du inte kan ha fler än 10 anslutningar samtidigt öppna till den här domänen. Detta är inte sant, det maximala antalet anslutningar avser en sökväg och en sökväg som är en kombination av en av våra offentliga MTA-IP:n och en offentlig IP-adress till kundens MTA.
 
-I exemplet nedan har användaren två konfigurerade publika IP-adresser och domänen är yahoo.com.
+I exemplet nedan har användaren två konfigurerade offentliga IP-adresser och domänen är yahoo.com.
 
 ```
 user:~ user$ host -t mx yahoo.com
@@ -176,7 +177,7 @@ user:~ user$ host -t a mta5.am0.yahoodns.net
                 mta5.am0.yahoodns.net has address 98.138.112.35
 ```
 
-För den här posten kan användaren kontakta 8 peer-IP-adresser. Eftersom användaren har två publika IP-adresser ger detta dem 8 * 2 = 16 kombinationer för att nå e-postservrarna yahoo.com. Var och en av dessa kombinationer kallas en bana.
+För den här posten kan användaren kontakta 8 peer-IP-adresser. Eftersom användaren har två publika IP-adresser ger detta dem 8 * 2 = 16 kombinationer för att nå yahoo.com e-postservrar. Var och en av dessa kombinationer kallas en bana.
 
 Den andra MX-posten visas som:
 
@@ -194,7 +195,7 @@ user:~ user$ host -t a mta6.am0.yahoodns.net
 
 4 av dessa 8 IP-adresser används redan i mta5 (98.136.216.26, 98.138.112.38, 63.250.192.46 och 98.136.217.203). Med den här posten kan användaren använda fyra nya IP-adresser. Den tredje MX-posten gör detsamma.
 
-Totalt har vi 16 fjärr-IP-adresser. I kombination med våra två lokala offentliga IP-adresser har vi 32 sökvägar för att nå e-postservrarna på yahoo.com.
+Totalt har vi 16 fjärr-IP-adresser. I kombination med våra två lokala offentliga IP-adresser har vi 32 sökvägar för att nå yahoo.com e-postservrar.
 
 >[!NOTE]
 >
@@ -218,7 +219,7 @@ De regler som ska följas för MX anges i **[!UICONTROL MX management]** dokumen
 
 Om **[!UICONTROL MX management]** dokumentet finns inte i noden, du kan skapa det manuellt. Så här gör du:
 
-1. Skapa en ny uppsättning e-postregler.
+1. Skapa en ny uppsättning postregler.
 1. Välj **[!UICONTROL MX management]**-läget.
 
    ![](assets/s_ncs_install_mx_mgt_rule.png)
@@ -231,7 +232,7 @@ Om du vill läsa in konfigurationen på nytt utan att starta om statistikservern
 
 >[!NOTE]
 >
->Den här kommandoraden är att föredra framför **omstart av nlserver**. Den förhindrar att statistik som samlats in innan omstarten går förlorad och undviker toppar som kan gå mot kvoter som definieras i MX-reglerna.
+>Den här kommandoraden är bäst **omstart av nlserver**. Den förhindrar att statistik som samlats in innan omstarten går förlorad och undviker toppar som kan gå mot kvoter som definieras i MX-reglerna.
 
 ### Konfigurera MX-regler {#configuring-mx-rules}
 
@@ -241,43 +242,43 @@ Dessa regler tillämpas i sekvens: den första regeln vars MX-mask är kompatibe
 
 Följande parametrar är tillgängliga för varje regel:
 
-* **[!UICONTROL MX mask]**: den domän som regeln tillämpas på. Varje regel definierar en adressmask för MX. Alla MX vars namn matchar masken är därför giltiga. Masken kan innehålla &quot;&#42;&quot; och &quot;?&quot; generiska tecken.
+* **[!UICONTROL MX mask]**: domän som regeln tillämpas på. Varje regel definierar en adressmask för MX. Alla MX vars namn matchar masken är därför giltiga. Masken kan innehålla &quot;&#42;&quot; och &quot;?&quot; allmänna tecken.
 
-   Följande adresser:
+  Till exempel följande adresser:
 
    * a.mx.yahoo.com
    * b.mx.yahoo.com
    * c.mx.yahoo.com
 
-   är kompatibla med följande masker:
+  är kompatibla med följande masker:
 
    * &#42;.yahoo.com
    * ?.mx.yahoo.com
 
-   För e-postadressen foobar@gmail.com är domänen gmail.com och MX-posten är:
+  För e-postadressen foobar@gmail.com är domänen gmail.com och MX-posten är:
 
-   ```
-   gmail.com mail exchanger = 20 alt2.gmail-smtp-in.l.google.com.
-   gmail.com mail exchanger = 10 alt1.gmail-smtp-in.l.google.com.
-   gmail.com mail exchanger = 40 alt4.gmail-smtp-in.l.google.com.
-   gmail.com mail exchanger = 5  gmail-smtp-in.l.google.com.
-   gmail.com mail exchanger = 30 alt3.gmail-smtp-in.l.google.com.
-   ```
+  ```
+  gmail.com mail exchanger = 20 alt2.gmail-smtp-in.l.google.com.
+  gmail.com mail exchanger = 10 alt1.gmail-smtp-in.l.google.com.
+  gmail.com mail exchanger = 40 alt4.gmail-smtp-in.l.google.com.
+  gmail.com mail exchanger = 5  gmail-smtp-in.l.google.com.
+  gmail.com mail exchanger = 30 alt3.gmail-smtp-in.l.google.com.
+  ```
 
-   I det här fallet MX-regeln `*.google.com` kommer att användas. Som du ser matchar MX-regelmasken inte nödvändigtvis domänen i e-postmeddelandet. MX-reglerna som används för e-postadresserna gmail.com är de som används med masken `*.google.com`.
+  I det här fallet MX-regeln `*.google.com` kommer att användas. Som du ser matchar MX-regelmasken inte nödvändigtvis domänen i e-postmeddelandet. De MX-regler som används för gmail.com e-postadresser är de som används för masken `*.google.com`.
 
 * **[!UICONTROL Range of identifiers]**: Med det här alternativet kan du ange intervallet för identifierare (publicID) som regeln gäller för. Du kan ange:
 
-   * Ett tal: regeln endast gäller för detta publicId,
-   * Ett nummerintervall (**number1-number2**): regeln gäller för alla publika ID:n mellan dessa två tal.
+   * Ett tal: regeln gäller bara för detta publicId,
+   * Ett sifferintervall (**number1-number2**): regeln gäller för alla publika ID:n mellan dessa två tal.
 
-   >[!NOTE]
-   >
-   >Om fältet är tomt gäller regeln alla identifierare.
+  >[!NOTE]
+  >
+  >Om fältet är tomt gäller regeln alla identifierare.
 
-   Ett offentligt ID är en intern identifierare för en offentlig IP som används av en eller flera MTA. Dessa ID:n definieras i MTA-servrarna i **config-instance.xml** -fil.
+  Ett offentligt ID är en intern identifierare för en offentlig IP som används av en eller flera MTA. Dessa ID:n definieras i MTA-servrarna i **config-instance.xml** -fil.
 
-   ![](assets/s_ncs_install_mta_ips.png)
+  ![](assets/s_ncs_install_mta_ips.png)
 
 * **[!UICONTROL Shared]**: definierar omfånget för egenskaperna för den här MX-regeln. När det här alternativet är markerat delas alla parametrar på alla IP-adresser som är tillgängliga för instansen. När alternativet är avmarkerat definieras MX-reglerna för varje IP. Det maximala antalet meddelanden multipliceras med antalet tillgängliga IP-adresser.
 * **[!UICONTROL Maximum number of connections]**: maximalt antal samtidiga anslutningar till avsändarens domän.
@@ -285,9 +286,9 @@ Följande parametrar är tillgängliga för varje regel:
 * **[!UICONTROL Messages per hour]**: maximalt antal meddelanden som kan skickas på en timme till avsändarens domän.
 * **[!UICONTROL Connection time out]**: tidströskel för anslutning till en domän.
 
-   >[!NOTE]
-   >
-   >Windows kan utfärda en **timeout** före detta tröskelvärde, vilket beror på vilken version av Windows du har.
+  >[!NOTE]
+  >
+  >Windows kan utfärda en **timeout** före detta tröskelvärde, vilket beror på vilken version av Windows du har.
 
 * **[!UICONTROL Timeout Data]**: maximal väntetid efter att meddelandeinnehållet har skickats (DATA-avsnittet i SMTP-protokollet).
 * **[!UICONTROL Timeout]**: maximal väntetid för andra utbyten med SMTP-servern.
@@ -295,9 +296,9 @@ Följande parametrar är tillgängliga för varje regel:
 
    * **[!UICONTROL Default configuration]**: Detta är den allmänna konfigurationen som anges i konfigurationsfilen serverConf.xml som används.
 
-      >[!IMPORTANT]
-      >
-      >Vi rekommenderar inte att du ändrar standardkonfigurationen.
+     >[!IMPORTANT]
+     >
+     >Vi rekommenderar inte att du ändrar standardkonfigurationen.
 
    * **[!UICONTROL Disabled]** : Meddelandena skickas systematiskt utan kryptering.
    * **[!UICONTROL Opportunistic]** : Meddelandeleveransen krypteras om den mottagande servern (SMTP) kan generera TLS-protokollet.
@@ -324,7 +325,7 @@ The **MIME-struktur** (Multipurpose Internet Mail Extensions) gör att du kan de
 
 * **Multipart**: Meddelandet skickas i text- eller HTML-format. Om formatet HTML inte godkänns kan meddelandet fortfarande visas i textformat.
 
-   Som standard är multipart-strukturen **multipart/option**, men det blir automatiskt **multipart/related** när en bild läggs till i meddelandet. Vissa leverantörer förväntar sig **multipart/related** som standard, **[!UICONTROL Force multipart/related]** detta format används även om ingen bild är kopplad.
+  Som standard är multipart-strukturen **multipart/option**, men det blir automatiskt **multipart/related** när en bild läggs till i meddelandet. Vissa leverantörer förväntar sig **multipart/related** som standard, **[!UICONTROL Force multipart/related]** detta format används även om ingen bild är kopplad.
 
 * **HTML**: Ett meddelande som bara innehåller HTML skickas. Om HTML inte godkänns visas inte meddelandet.
 * **Text**: Ett meddelande i textformat skickas. Fördelen med textformatmeddelanden är att de är mycket små.
@@ -383,11 +384,11 @@ Exempel:
 
 Parametrarna är följande:
 
-* **adress**: Detta är IP-adressen till den MTA-värddator som ska användas.
+* **adress**: det här är IP-adressen för den MTA-värddator som ska användas.
 * **heloHost**: den här identifieraren representerar IP-adressen så som den kommer att ses av SMTP-servern.
 
 * **publicId**: den här informationen är användbar när en IP-adress delas av flera Adobe Campaign **mtas** bakom en NAT-router. Statistikservern använder den här identifieraren för att memorera anslutningen och skicka statistik mellan den här startpunkten och målservern.
-* **vikt**: Här kan du definiera den relativa användningsfrekvensen för adressen. Som standard har alla adresser en vikt som är lika med 1.
+* **vikt**: låter dig definiera den relativa användningsfrekvensen för adressen. Som standard har alla adresser en vikt som är lika med 1.
 
 >[!NOTE]
 >
@@ -404,13 +405,13 @@ Om till exempel den första adressen inte kan användas för ett givet MX, skick
     * &quot;2&quot;: 5 / (5+1) = 83%
     * &quot;3&quot;: 1 / (5+1) = 17%
 
-* **includeDomains**: Med kan du reservera den här IP-adressen för e-post som tillhör en viss domän. Det här är en lista med masker som kan innehålla ett eller flera jokertecken (&#39;&#42;&#39;). Om attributet inte anges kan alla domäner använda den här IP-adressen.
+* **includeDomains**: låter dig reservera den här IP-adressen för e-post som tillhör en viss domän. Det här är en lista med masker som kan innehålla ett eller flera jokertecken (&#39;&#42;&#39;). Om attributet inte anges kan alla domäner använda den här IP-adressen.
 
-   Exempel: **includeDomains=&quot;wanadoo.com,orange.com,yahoo.&#42;&quot;**
+  Exempel: **includeDomains=&quot;wanadoo.com,orange.com,yahoo.&#42;&quot;**
 
 * **excludeDomains**: utelämnar en lista över domäner för den här IP-adressen. Det här filtret används efter **includeDomains** filter.
 
-   ![](assets/s_ncs_install_mta_ips.png)
+  ![](assets/s_ncs_install_mta_ips.png)
 
 ## Optimering av e-postutskick {#email-sending-optimization}
 

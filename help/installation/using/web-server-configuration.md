@@ -1,20 +1,21 @@
 ---
 product: campaign
-title: Webbserverkonfiguration
+title: Konfiguration av webbserver
 description: Lär dig mer om de effektivaste strategierna för webbserverkonfiguration
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+feature: Installation, Instance Settings
+badge-v7-only: label="v7" type="Informative" tooltip="Gäller endast Campaign Classic v7"
 audience: installation
 content-type: reference
 topic-tags: prerequisites-and-recommendations-
 exl-id: fc0d3f16-5f62-473d-a1de-aab574eff734
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '321'
+source-wordcount: '328'
 ht-degree: 0%
 
 ---
 
-# Webbserverkonfiguration {#web-server-configuration}
+# Konfiguration av webbserver {#web-server-configuration}
 
 
 
@@ -24,60 +25,60 @@ Nedan hittar du några av de effektivaste strategierna för webbserverkonfigurat
 
 * Inaktivera tidigare SSL-version och ciphers:
 
-   **På Apache**, redigera /etc/apache2/mods-available/ssl.conf. Här är ett exempel:
+  **På Apache**, redigera /etc/apache2/mods-available/ssl.conf. Här är ett exempel:
 
    * SSLProtocol all -SSLv2 -SSLv3 -TLSv1
    * SSLCipherSuite HIGH:MEDIUM:!NULL:!MD5:!SSLv3:!SSLv2:!TLSv1
 
-   **På IIS** (se [dokumentation](https://support.microsoft.com/en-us/kb/245030)) utför du följande konfiguration:
+  **På IIS** (se [dokumentation](https://support.microsoft.com/en-us/kb/245030)) utför du följande konfiguration:
 
    * Lägg till registerundernyckel i HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL
    * Om du vill att systemet ska kunna använda de protokoll som inte ska förhandlas som standard (till exempel TLS 1.2) ändrar du DWORD-värdedata för värdet DisabledByDefault till 0x0 i följande registernycklar under **Protokoll** nyckel:
 
-      SCHANNEL\Protokoll\TLS 1.2\Client
+     SCHANNEL\Protokoll\TLS 1.2\Client
 
-      SCHANNEL\Protokoll\TLS 1.2\Server
-   **Inaktivera SSL x.0**
+     SCHANNEL\Protokoll\TLS 1.2\Server
 
-   SCHANNEL\Protokoll\SSL 3.0\Client: DisabledByDefault: 32-bitars DWORD-värde till 1
+  **Inaktivera SSL x.0**
 
-   SCHANNEL\Protokoll\SSL 3.0\Server: Aktiverad: 32-bitars DWORD-värde till 0
+  SCHANNEL\Protokoll\SSL 3.0\Client: DisabledByDefault: DWORD (32-bitars) Value to 1
+
+  SCHANNEL\Protokoll\SSL 3.0\Server: Aktiverad: DWORD (32-bitars) värde till 0
 
 * Ta bort **TRACE** metod:
 
-   **På Apache**, redigera i /etc/apache2/conf.d/security: TraceEnable **Av**
+  **På Apache**, redigera i /etc/apache2/conf.d/security: TraceEnable **Av**
 
-   **På IIS** (se [dokumentation](https://www.iis.net/configreference/system.webserver/security/requestfiltering/verbs)) utför du följande konfiguration:
+  **På IIS** (se [dokumentation](https://www.iis.net/configreference/system.webserver/security/requestfiltering/verbs)) utför du följande konfiguration:
 
    * Se till att **Begärandefiltrering** rolltjänsten eller funktionen är installerad.
    * I **Begärandefiltrering** klickar du på fliken för HTTP-verb och sedan på Neka verb. Ange TRACE i den öppna dialogrutan i åtgärdsrutan.
 
 * Ta bort banderollen:
 
-   **På Apache**, redigera /etc/apache2/conf.d/säkerhet:
+  **På Apache**, redigera /etc/apache2/conf.d/säkerhet:
 
    * ServerSignature **Av**
    * ServerTokens **Prod**
 
-   **På IIS** utför du följande konfiguration:
+  **På IIS** utför du följande konfiguration:
 
    * Installera **URLScan**.
    * Redigera **Urlscan.ini** fil att ha **RemoveServerHeader=1**
 
-
 * Begränsa frågestorleken för att förhindra att viktiga filer överförs:
 
-   **På Apache**, lägg till **LimitRequestBody** -direktiv (storlek i byte) i /-katalog.
+  **På Apache**, lägg till **LimitRequestBody** -direktiv (storlek i byte) i /-katalog.
 
-   ```
-   <Directory />
-       Options FollowSymLinks
-       AllowOverride None
-       LimitRequestBody 10485760
-   </Directory>
-   ```
+  ```
+  <Directory />
+      Options FollowSymLinks
+      AllowOverride None
+      LimitRequestBody 10485760
+  </Directory>
+  ```
 
-   **På IIS** (se [dokumentation](https://www.iis.net/configreference/system.webserver/security/requestfiltering/requestlimits)), ange **maxAllowedContentLength** (maximal tillåten innehållslängd) i alternativen för innehållsfiltrering.
+  **På IIS** (se [dokumentation](https://www.iis.net/configreference/system.webserver/security/requestfiltering/requestlimits)), ange **maxAllowedContentLength** (maximal tillåten innehållslängd) i alternativen för innehållsfiltrering.
 
 Relaterade ämnen:
 

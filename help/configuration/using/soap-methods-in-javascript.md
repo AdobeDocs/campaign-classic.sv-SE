@@ -1,12 +1,13 @@
 ---
 product: campaign
 title: SOAP-metoder i JavaScript
+feature: Configuration, Instance Settings
 description: SOAP-metoder i JavaScript
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+badge-v7-only: label="v7" type="Informative" tooltip="Gäller endast Campaign Classic v7"
 exl-id: 62020447-fe59-4363-994d-de4d8032bbd7
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '136'
+source-wordcount: '143'
 ht-degree: 9%
 
 ---
@@ -50,52 +51,52 @@ for each (var w in res.workflow)
 
 * Fråga i mottagartabellen med en get-åtgärd:
 
-   ```
-   var query = xtk.queryDef.create(  
-     <queryDef schema="nms:recipient" operation="get">    
-       <select>      
-         <node expr="@firstName"/>      
-         <node expr="@lastName"/>      
-         <node expr="@email"/>    
-       </select>    
-       <where>      
-         <condition expr="@email = 'peter.martinez@adobe.com'"/>    
-       </where>  
-     </queryDef>)
-   
-   var recipient = query.ExecuteQuery()
-   
-   logInfo(recipient.@firstName)
-   logInfo(recipient.@lastName)
-   ```
+  ```
+  var query = xtk.queryDef.create(  
+    <queryDef schema="nms:recipient" operation="get">    
+      <select>      
+        <node expr="@firstName"/>      
+        <node expr="@lastName"/>      
+        <node expr="@email"/>    
+      </select>    
+      <where>      
+        <condition expr="@email = 'peter.martinez@adobe.com'"/>    
+      </where>  
+    </queryDef>)
+  
+  var recipient = query.ExecuteQuery()
+  
+  logInfo(recipient.@firstName)
+  logInfo(recipient.@lastName)
+  ```
 
 * Fråga i mottagartabellen med åtgärden &quot;select&quot;:
 
-   ```
-   var query = xtk.queryDef.create(  
-     <queryDef schema="nms:recipient" operation="select">    
-       <select>      
-         <node expr="@email"/>      
-         <node expr="@lastName"/>      
-         <node expr="@firstName"/>    
-       </select>    
-       <where>      
-         <condition expr="@age > 25"/>    
-       </where>    
-     </queryDef>)
-   
-   var res = query.ExecuteQuery()
-   
-   for each (var recipient in res.recipient) 
-   {  
-     logInfo(recipient.@email)  
-     logInfo(recipient.@firstName)  
-     logInfo(recipient.@lastName)
-   }
-   ```
+  ```
+  var query = xtk.queryDef.create(  
+    <queryDef schema="nms:recipient" operation="select">    
+      <select>      
+        <node expr="@email"/>      
+        <node expr="@lastName"/>      
+        <node expr="@firstName"/>    
+      </select>    
+      <where>      
+        <condition expr="@age > 25"/>    
+      </where>    
+    </queryDef>)
+  
+  var res = query.ExecuteQuery()
+  
+  for each (var recipient in res.recipient) 
+  {  
+    logInfo(recipient.@email)  
+    logInfo(recipient.@firstName)  
+    logInfo(recipient.@lastName)
+  }
+  ```
 
 * Skriver data till mottagartabellen:
 
-   ```
-   xtk.session.Write(<recipient _operation="insert" lastName="Martinez" firstName="Peter" xtkschema="nms:recipient"/>);
-   ```
+  ```
+  xtk.session.Write(<recipient _operation="insert" lastName="Martinez" firstName="Peter" xtkschema="nms:recipient"/>);
+  ```

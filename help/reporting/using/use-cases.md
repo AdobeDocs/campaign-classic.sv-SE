@@ -2,13 +2,13 @@
 product: campaign
 title: Användningsfall
 description: Rapportera användningsfall
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
-feature: Reporting
+badge-v7: label="v7" type="Informative" tooltip="Gäller Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Gäller även Campaign v8"
+feature: Reporting, Monitoring
 exl-id: e326e32e-7bb0-46ff-9ba5-94ccd1169af2
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '1317'
+source-wordcount: '1329'
 ht-degree: 0%
 
 ---
@@ -27,7 +27,7 @@ Implementeringsstegen beskrivs nedan, medan en uttömmande lista över alternati
 
 I det här exemplet vill vi utforska målpopulationen för de leveranser som ingår i **Nyhetsbrev** mapp.
 
-För att göra detta väljer du de aktuella leveranserna, högerklickar och väljer **[!UICONTROL Action > Explore the target...]**.
+För att göra detta väljer du aktuella leveranser, högerklickar och väljer **[!UICONTROL Action > Explore the target...]**.
 
 ![](assets/reporting_quick_start_1.png)
 
@@ -77,7 +77,7 @@ I det här fönstret kan du definiera en lista med statistik som ska beräknas.
 
 ![](assets/reporting_descriptive_quickstart_step_4.png)
 
-Om du vill skapa en ny statistik klickar du på **[!UICONTROL Add]** -knappen. Mer information finns i [Statistikberäkning](../../reporting/using/using-the-descriptive-analysis-wizard.md#statistics-calculation).
+Om du vill skapa ny statistik klickar du på **[!UICONTROL Add]** -knappen. Mer information finns i [Statistikberäkning](../../reporting/using/using-the-descriptive-analysis-wizard.md#statistics-calculation).
 
 ### Visa och använda rapporten {#viewing-and-using-the-report}
 
@@ -132,7 +132,7 @@ Du kan lagra, exportera och skriva ut data med verktygsfältet ovanför tabellen
 
    Klicka **[!UICONTROL Next]** för att godkänna det här steget.
 
-1. Ange sedan statistiken som ska beräknas: behålla standardantalet och skapa en ny statistik. Det gör du genom att klicka **[!UICONTROL Add]** och markera **[!UICONTROL Total percentage distribution]** som -operatorn.
+1. Ange sedan den statistik som ska beräknas: behåll standardantalet och skapa en ny statistik. Det gör du genom att klicka **[!UICONTROL Add]** och markera **[!UICONTROL Total percentage distribution]** som -operatorn.
 
    ![](assets/s_ncs_user_report_wizard_03.png)
 
@@ -144,7 +144,7 @@ Du kan lagra, exportera och skriva ut data med verktygsfältet ovanför tabellen
 
    ![](assets/s_ncs_user_report_wizard_06.png)
 
-1. När analysrapporten har skapats kan du anpassa visningen efter dina behov utan att ändra konfigurationen. Du kan till exempel byta axlar: högerklicka på domännamnen och välj **[!UICONTROL Turn]** på snabbmenyn.
+1. När analysrapporten har skapats kan du anpassa visningen efter dina behov utan att ändra konfigurationen. Du kan till exempel växla mellan axlarna: högerklicka på domännamnen och välja **[!UICONTROL Turn]** på snabbmenyn.
 
    ![](assets/s_ncs_user_report_wizard_07.png)
 
@@ -154,7 +154,7 @@ Du kan lagra, exportera och skriva ut data med verktygsfältet ovanför tabellen
 
 ## Kvantitativ dataanalys {#quantitative-data-analysis}
 
-**Mål**: generera en kvantitativ analysrapport om mottagarnas ålder
+**Mål**: för att generera en kvantitativ analysrapport om mottagarnas ålder
 
 1. Öppna den beskrivande analysguiden och välj **[!UICONTROL Quantitative distribution]** i listrutan.
 
@@ -166,7 +166,7 @@ Du kan lagra, exportera och skriva ut data med verktygsfältet ovanför tabellen
 
    ![](assets/s_ncs_user_report_wizard_011.png)
 
-1. Ta bort **[!UICONTROL Deciles]**, **[!UICONTROL Distribution]** och **[!UICONTROL Sum]** statistik: De behövs inte här.
+1. Ta bort **[!UICONTROL Deciles]**, **[!UICONTROL Distribution]** och **[!UICONTROL Sum]** statistik: de behövs inte här.
 
    ![](assets/s_ncs_user_report_wizard_012.png)
 
@@ -176,7 +176,7 @@ Du kan lagra, exportera och skriva ut data med verktygsfältet ovanför tabellen
 
 ## Analysera ett övergångsmål i ett arbetsflöde {#analyzing-a-transition-target-in-a-workflow}
 
-**Mål**: för att generera rapporter om målarbetsflödets befolkning
+**Mål**: för att generera rapporter om populationen i ett arbetsflöde för målinriktning
 
 1. Öppna önskat målarbetsflöde.
 1. Högerklicka på en övergång som pekar på mottagartabellen.
@@ -184,25 +184,25 @@ Du kan lagra, exportera och skriva ut data med verktygsfältet ovanför tabellen
 
    ![](assets/s_ncs_user_report_wizard_from_transision.png)
 
-1. Nu kan du antingen välja **[!UICONTROL Existing analyses and reports]** och använda rapporter som skapats tidigare (se [Återanvända befintliga rapporter och analyser](../../reporting/using/processing-a-report.md#re-using-existing-reports-and-analyses)) eller skapa en ny beskrivande analys. Om du vill göra det lämnar du **[!UICONTROL New descriptive analysis from a template]** som standard.
+1. Nu kan du antingen välja **[!UICONTROL Existing analyses and reports]** och använda rapporter som skapats tidigare (se [Återanvända befintliga rapporter och analyser](../../reporting/using/processing-a-report.md#re-using-existing-reports-and-analyses)) eller skapa en ny beskrivande analys. Om du vill göra det lämnar du **[!UICONTROL New descriptive analysis from a template]** som är markerat som standard.
 
    Resten av konfigurationen är densamma som för alla beskrivande analyser.
 
-### Rekommendationer för målanalys {#target-analyze-recommendations}
+### Rekommendationer för målinriktad analys {#target-analyze-recommendations}
 
 Analysen av en population i ett arbetsflöde kräver att populationen fortfarande finns i övergången. Om arbetsflödet startas kan resultatet som gäller populationen rensas från övergången. Om du vill göra en analys kan du antingen:
 
 * Koppla loss övergången från målaktiviteten och starta arbetsflödet för att aktivera den. När övergången börjar blinka startar du guiden på det vanliga sättet.
 
-   ![](assets/s_ncs_user_report_wizard_018.png)
+  ![](assets/s_ncs_user_report_wizard_018.png)
 
 * Ändra arbetsflödets egenskaper genom att välja **[!UICONTROL Keep the result of interim populations between two executions]** alternativ. Detta gör att du kan starta en analys av den övergång du vill använda, även om arbetsflödet är färdigt.
 
-   ![](assets/s_ncs_user_report_wizard_020.png)
+  ![](assets/s_ncs_user_report_wizard_020.png)
 
-   Om populationen rensades från övergången uppmanas du att välja det aktuella alternativet innan du startar den beskrivande analysguiden.
+  Om populationen rensades från övergången uppmanas du att välja det aktuella alternativet innan du startar den beskrivande analysguiden.
 
-   ![](assets/s_ncs_user_report_wizard_019.png)
+  ![](assets/s_ncs_user_report_wizard_019.png)
 
 >[!CAUTION]
 >
@@ -217,7 +217,7 @@ I det här exemplet vill vi analysera reaktivitetsfrekvensen för nyhetsbrevets 
 
 Gör så här:
 
-1. Öppna den beskrivande analysguiden via **[!UICONTROL Tools > Descriptive analysis]** och ändra standardarbetstabellen. Välj **[!UICONTROL Recipient tracking log]** och lägg till ett filter för att exkludera korrektur och inkludera nyhetsbrev.
+1. Öppna den beskrivande analysguiden via **[!UICONTROL Tools > Descriptive analysis]** och ändra standardarbetsflödet. Välj **[!UICONTROL Recipient tracking log]** och lägg till ett filter för att exkludera korrektur och inkludera nyhetsbrev.
 
    ![](assets/reporting_descriptive_sample_tracking_1.png)
 
@@ -231,9 +231,9 @@ Gör så här:
 
 1. Ta bort standardantalet och skapa tre statistiker för att konfigurera den statistik som ska visas i tabellen.
 
-   Här visas följande för varje nyhetsbrev: antalet öppningar, antalet klickningar och reaktivitetsfrekvensen (i procent).
+   Här visas för varje nyhetsbrev: antalet öppningar, antalet klick och reaktivitetsfrekvensen (i procent).
 
-1. Lägg till statistik för att räkna antalet klick: definiera det relevanta filtret i **[!UICONTROL Filter]** -fliken.
+1. Lägg till en statistik för att räkna antalet klick: definiera det relevanta filtret i **[!UICONTROL Filter]** -fliken.
 
    ![](assets/reporting_descriptive_sample_tracking_3.png)
 
@@ -263,7 +263,7 @@ Gör så här:
 
    ![](assets/reporting_descriptive_sample_tracking_8.png)
 
-   Slutligen anger du om värdena ska visas i procent: för att göra detta avmarkerar du **[!UICONTROL Default formatting]** i **[!UICONTROL Advanced]** och markera **[!UICONTROL Percentage]** utan decimalkomma.
+   Slutligen anger du om värdena ska visas som en procentandel: om du vill göra det avmarkerar du **[!UICONTROL Default formatting]** i **[!UICONTROL Advanced]** och markera **[!UICONTROL Percentage]** utan decimalkomma.
 
    ![](assets/reporting_descriptive_sample_tracking_10.png)
 
@@ -273,7 +273,7 @@ Gör så här:
 
 ## Analyserar exkluderingsloggar för leverans {#analyzing-delivery-exclusion-logs}
 
-Om analysen gäller en leverans kan du analysera den uteslutna populationen. För att göra detta väljer du de leveranser som ska analyseras och högerklickar för att komma åt **[!UICONTROL Action > Explore exclusions]** -menyn.
+Om analysen gäller en leverans kan du analysera den uteslutna populationen. Välj de leveranser som ska analyseras och högerklicka för att öppna **[!UICONTROL Action > Explore exclusions]** -menyn.
 
 ![](assets/reporting_descriptive_exclusion_menu.png)
 

@@ -2,13 +2,13 @@
 product: campaign
 title: Adobe Analytics Data Connector
 description: Adobe Analytics Data Connector
-feature: Overview
+feature: Analytics Integration
 role: User, Admin
 level: Beginner
 exl-id: 5bd12f65-f468-41ab-bbae-e59a6592a803
 hidefromtoc: true
 hide: true
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
 source-wordcount: '1659'
 ht-degree: 98%
@@ -147,7 +147,7 @@ Integreringen av Adobe Campaign i Analytics-plattformarna görs med hjälp av en
 1. På fliken **[!UICONTROL Advanced]** kan du konfigurera eller ändra fler tekniska inställningar.
 
    * **[!UICONTROL Lifespan]**: Låter dig ange fördröjningen (i dagar) efter vilken webbhändelser återställs i Adobe Campaign av tekniska arbetsflöden. Standard: 180 dagar.
-   * **[!UICONTROL Persistence]**: Med kan du definiera den period under vilken alla webbhändelser (till exempel ett köp) kan tillskrivas en återmarknadsföringskampanj, Standard: 7 dagar.
+   * **[!UICONTROL Persistence]**: låter dig definiera den period under vilken alla webbhändelser (till exempel ett köp) kan tillskrivas en återmarknadsföringskampanj, Standard: 7 dagar.
 
 >[!NOTE]
 >
@@ -201,9 +201,9 @@ De är tillgängliga i trädet i Adobe Campaign, under mappen **[!UICONTROL Admi
 * **[!UICONTROL Identification of converted contacts]**: katalog över de besökare som gjorde ett köp efter en återmarknadsföringskampanj. Data som har samlas in av det här arbetsflödet är tillgängliga i rapporten **[!UICONTROL Re-marketing efficiency]**. Se den här [sidan](#creating-a-re-marketing-campaign).
 * **[!UICONTROL Sending of indicators and campaign attributes]**: Låter dig skicka kampanjindikatorer via Adobe Campaign till Adobe Experience Cloud med datakopplingen i Adobe Analytics. Arbetsflödet utlöses kl. 4.00 varje dag och det kan ta 24 timmar innan data skickas till Analytics.
 
-   Observera att det här arbetsflödet inte ska startas om, annars skickas alla tidigare data på nytt, vilket kan förvränga analysresultaten.
+  Observera att det här arbetsflödet inte ska startas om, annars skickas alla tidigare data på nytt, vilket kan förvränga analysresultaten.
 
-   Följande indikatorer ingår:
+  Följande indikatorer ingår:
 
    * **[!UICONTROL Messages to deliver]** (@toDeliver)
    * **[!UICONTROL Processed]** (@processed)
@@ -216,11 +216,11 @@ De är tillgängliga i trädet i Adobe Campaign, under mappen **[!UICONTROL Admi
    * **[!UICONTROL Opt-Out]** (@optOut)
    * **[!UICONTROL Errors]** (@error)
 
-   >[!NOTE]
-   >
-   >Skickade data är deltavärdet baserat på den senaste ögonblicksbilden vilket kan leda till ett negativt värde i mätdata.
+  >[!NOTE]
+  >
+  >Skickade data är deltavärdet baserat på den senaste ögonblicksbilden vilket kan leda till ett negativt värde i mätdata.
 
-   Följande attribut skickas:
+  Följande attribut skickas:
 
    * **[!UICONTROL Internal name]** (@internalName)
    * **[!UICONTROL Label]** (@label)
@@ -230,7 +230,6 @@ De är tillgängliga i trädet i Adobe Campaign, under mappen **[!UICONTROL Admi
    * **[!UICONTROL Tag 2]** (webAnalytics/@tag2)
    * **[!UICONTROL Tag 3]** (webAnalytics/@tag3)
    * **[!UICONTROL Contact date]** (scheduling/@contactDate)
-
 
 ## Spåra leveranser i Adobe Campaign {#tracking-deliveries-in-adobe-campaign}
 

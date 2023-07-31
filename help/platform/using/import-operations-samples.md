@@ -2,15 +2,16 @@
 product: campaign
 title: Generiska importexempel
 description: Läs mer om generiska importer som du kan utföra med importjobb
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
+feature: Data Management
+badge-v7: label="v7" type="Informative" tooltip="Gäller Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Gäller även Campaign v8"
 audience: platform
 content-type: reference
 topic-tags: importing-and-exporting-data
 exl-id: 4582b524-2b6d-484c-bace-29d2e69f60e9
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '995'
+source-wordcount: '1007'
 ht-degree: 1%
 
 ---
@@ -67,40 +68,40 @@ Så här importerar du nya mottagarprofiler som lagras i en textfil till Adobe C
 
 1. Associerar fält
 
-   Klicka på **[!UICONTROL Guess the destination fields]** om du vill mappa käll- och målscheman automatiskt. Kontrollera informationen i det här fönstret innan du klickar **[!UICONTROL Next]**.
+   Klicka på **[!UICONTROL Guess the destination fields]** om du vill mappa käll- och målscheman automatiskt. Kontrollera informationen i fönstret innan du klickar **[!UICONTROL Next]**.
 
    ![](assets/s_ncs_user_import_example03_01.png)
 
 1. Avstämning
 
    * Gå till **Mottagare (nms:mottagare)** tabell.
-   * Välj **[!UICONTROL Insertion]** och lämna standardvärdena i de andra fälten.
+   * Välj **[!UICONTROL Insertion]** och lämna standardvärdena i övriga fält.
 
-      ![](assets/s_ncs_user_import_example04_01.png)
+     ![](assets/s_ncs_user_import_example04_01.png)
 
 1. Importerar mottagare
 
    * Om det behövs anger du en mapp där posterna ska importeras till.
 
-      ![](assets/s_ncs_user_import_example05_01.png)
+     ![](assets/s_ncs_user_import_example05_01.png)
 
 1. Starta importen
 
    * Klicka på **[!UICONTROL Start]**.
 
-      I mitten av redigeraren kan du kontrollera att importen har slutförts och se hur många poster som har bearbetats.
+     I mitten av redigeraren kan du kontrollera att importen har slutförts och se hur många poster som har bearbetats.
 
-      ![](assets/s_ncs_user_import_example06_01.png)
+     ![](assets/s_ncs_user_import_example06_01.png)
 
-      The **[!UICONTROL Tracking]** I kan du spåra importinformationen för varje post i källfilen. Det gör du genom att klicka på **[!UICONTROL Profiles and Targets]** sedan **[!UICONTROL Processes]** väljer du relevant import och letar upp **[!UICONTROL General]**, **[!UICONTROL Journal]** och **[!UICONTROL Rejects]** -tabbar.
+     The **[!UICONTROL Tracking]** I kan du spåra importinformationen för varje post i källfilen. Det gör du genom att klicka på **[!UICONTROL Profiles and Targets]** sedan **[!UICONTROL Processes]** väljer du relevant import och letar upp **[!UICONTROL General]**, **[!UICONTROL Journal]** och **[!UICONTROL Rejects]** -tabbar.
 
       * Kontrollerar importförloppet
 
-         ![](assets/s_ncs_user_import_example07_01.png)
+        ![](assets/s_ncs_user_import_example07_01.png)
 
       * Processvisning för varje post
 
-         ![](assets/s_ncs_user_import_example07_02.png)
+        ![](assets/s_ncs_user_import_example07_02.png)
 
 ## Uppdatera och infoga mottagare {#example--update-and-insert-recipients}
 
@@ -128,33 +129,33 @@ Vi vill uppdatera befintliga poster i databasen och skapa nya från en textfil. 
    * Behåll alternativet **[!UICONTROL Management of duplicates]** in **[!UICONTROL Update]** så att befintliga poster i databasen ändras med data från textfilen.
    * Markera fälten **[!UICONTROL Birth date]**, **[!UICONTROL Name]** och **[!UICONTROL Company]** och tilldela dem en avstämningsnyckel.
 
-      ![](assets/s_ncs_user_import_example04_02.png)
+     ![](assets/s_ncs_user_import_example04_02.png)
 
 1. Starta importen
 
    * Klicka på **[!UICONTROL Start]**.
 
-      I spårningsfönstret kan du kontrollera att importen har slutförts och se hur många poster som har bearbetats.
+     I spårningsfönstret kan du kontrollera att importen har slutförts och se hur många poster som har bearbetats.
 
-      ![](assets/s_ncs_user_import_example06_02.png)
+     ![](assets/s_ncs_user_import_example06_02.png)
 
-   * Kontrollera i mottagartabellen att posterna har ändrats av den här åtgärden.
+   * Kontrollera i mottagartabellen att posterna har ändrats.
 
-      ![](assets/s_ncs_user_import_example06_03.png)
+     ![](assets/s_ncs_user_import_example06_03.png)
 
 ## Förbättra värdena med värdena i en extern fil {#example--enrich-the-values-with-those-of-an-external-file}
 
 Vi vill ändra vissa fält i en databastabell från en textfil och prioritera värdena i databasen.
 
-I det här exemplet ser du att vissa fält i textfilen har ett värde, medan motsvarande fält i databasen är tomma. Andra fält innehåller ett annat värde än det som finns i databasen.
+I det här exemplet ser du att vissa fält i textfilen har ett värde, medan motsvarande fält i databasen är tomma. Andra fält innehåller ett annat värde än det i databasen.
 
 * Innehållet i den textfil som ska importeras.
 
-   ![](assets/s_ncs_user_import_example02_03.png)
+  ![](assets/s_ncs_user_import_example02_03.png)
 
 * Databasstatus före import
 
-   ![](assets/s_ncs_user_import_example06_04.png)
+  ![](assets/s_ncs_user_import_example06_04.png)
 
 Använd följande steg:
 
@@ -181,7 +182,7 @@ Använd följande steg:
    * Upprepa den här åtgärden för **[!UICONTROL Company (@company)]** nod.
    * Tilldela en avstämningsnyckel till fälten **[!UICONTROL Birth date]**, **[!UICONTROL Email]** och **[!UICONTROL First name]**.
 
-      ![](assets/s_ncs_user_import_example04_03.png)
+     ![](assets/s_ncs_user_import_example04_03.png)
 
 1. Starta importen
 
@@ -191,7 +192,7 @@ Använd följande steg:
 
    ![](assets/s_ncs_user_import_example06_05.png)
 
-   Endast värden som var tomma har ersatts av värden från textfilen, men det befintliga värdet i databasen har inte ersatts av värdet från importfilen.
+   Endast värden som var tomma har ersatts med värden från textfilen, men det befintliga värdet i databasen har inte ersatts med värdet från importfilen.
 
 ## Uppdatera och förbättra värden från dem i en extern fil {#example--update-and-enrich-the-values-from-those-in-an-external-file}
 
@@ -201,11 +202,11 @@ I det här exemplet ser du att vissa fält i textfilen har ett tomt värde, meda
 
 * Innehållet i den textfil som ska importeras.
 
-   ![](assets/s_ncs_user_import_example02_04.png)
+  ![](assets/s_ncs_user_import_example02_04.png)
 
 * Databasstatus före import
 
-   ![](assets/s_ncs_user_import_example06_07.png)
+  ![](assets/s_ncs_user_import_example06_07.png)
 
 1. Välja en mall
 
@@ -229,13 +230,13 @@ I det här exemplet ser du att vissa fält i textfilen har ett tomt värde, meda
    * Placera markören på **[!UICONTROL Account number (@account)]** nod och välj alternativet **[!UICONTROL Take empty values into account]**.
    * Markera fälten **[!UICONTROL Birth date]**, **[!UICONTROL Email]** och **[!UICONTROL First name]** och tilldela dem en avstämningsnyckel.
 
-      ![](assets/s_ncs_user_import_example04_04.png)
+     ![](assets/s_ncs_user_import_example04_04.png)
 
 1. Starta importen
 
    * Klicka på **[!UICONTROL Start]**.
    * Kontrollera i mottagartabellen att posterna har ändrats av åtgärden.
 
-      ![](assets/s_ncs_user_import_example06_06.png)
+     ![](assets/s_ncs_user_import_example06_06.png)
 
-      Värdena för textfilen som var tom har skrivit över värdena i databasen. De befintliga värdena i databasen uppdaterades med värdena i importfilen i enlighet med **[!UICONTROL Update]** för dubbletter i steg 4.
+     Värdena för textfilen som var tom har skrivit över värdena i databasen. De befintliga värdena i databasen uppdaterades med värdena i importfilen i enlighet med **[!UICONTROL Update]** för dubbletter i steg 4.

@@ -2,13 +2,13 @@
 product: campaign
 title: Felsökning av spårning
 description: I det här avsnittet finns vanliga frågor om spårning av konfiguration och implementering i Adobe Campaign
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
-feature: Monitoring
+badge-v7: label="v7" type="Informative" tooltip="Gäller Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Gäller även Campaign v8"
+feature: Monitoring, Troubleshooting
 exl-id: 62e67a39-1e5c-4716-a3f3-b0ca69693cd0
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '758'
+source-wordcount: '770'
 ht-degree: 1%
 
 ---
@@ -27,7 +27,7 @@ Mitt arbetsflöde för spårning misslyckas, hur kan jag identifiera skadade rad
 >
 >Endast för Windows
 
-Den skadade loggfilen för spårning .../nl6/var/&lt;instance_name>Loggen /redir/log/0x0000 kan stoppa arbetsflödet för spårning. Om du enkelt vill identifiera skadade rader och ta bort dem för att återuppta arbetsflödet för spårning kan du använda kommandona nedan.
+Den skadade loggfilen för spårning ../nl6/var/&lt;instance_name>Loggen /redir/log/0x0000 kan stoppa arbetsflödet för spårning. Om du enkelt vill identifiera skadade rader och ta bort dem för att återuppta arbetsflödet för spårning kan du använda kommandona nedan.
 
 ### Jag vet i vilken fil den skadade raden finns
 
@@ -81,7 +81,7 @@ $ grep -Rn 50x000000000FD7EC86
 
 Du kan sedan stoppa arbetsflödet för spårning, ta bort skadade rader och starta om arbetsflödet.
 
-## Spåra länkar misslyckas ibland {#tracking-links-fail-intermittently}
+## Spårning av länkar misslyckas ibland {#tracking-links-fail-intermittently}
 
 När du försöker komma åt spårningslänkarna visas följande meddelande:
 
@@ -110,7 +110,7 @@ När du försöker komma åt spårningslänkarna visas följande meddelande:
 
 1. Kontrollera manuellt förekomst av broadcastID i relaterad leverans-ID.
 
-1. Kontrollera &lt;deliveryid>.xml-filbehörigheter i .../nl6/var/&lt;instance_name>/redir/url/year-katalog.
+1. Kontrollera &lt;deliveryid>.xml-filbehörigheter i .../nl6/var/&lt;instance_name>/redir/url/year.
 
    De bör ha minst 644 behörigheter så att Apache kan läsa spårnings-URL:er för att omdirigera begärd länk.
 
@@ -128,7 +128,7 @@ Följ de här stegen när du uppdaterar alternativet NmsTracking_Pointer:
 
 1. Starta om arbetsflödet för spårning.
 
-## Spårning verkar inte fungera med vissa WebMail-filer {#webmail}
+## Spårning verkar inte fungera med vissa WebMail {#webmail}
 
 Du kan anpassa uppföljningsformeln för klickningar och ange en anpassad Adobe Analytics-spårningsformel.
 
@@ -136,28 +136,28 @@ Den sortens anpassning måste göras med försiktighet för att undvika att läg
 
 Den här typen av extra radbrytningstecken i spårnings-URL:en kommer att leda till problem i vissa webMail-filer (AOL, GMail osv.).
 
-**Första exemplet:**
+**Exempel:**
 
 * Felaktig syntax
 
-   ```
-   <%@ include option='NmsTracking_ClickFormula' %><% // Parameters expected by Adobe Analytics
-   var pattern = new RegExp("(nl611\.test15|google\.com)", 'i')
-   if( $(urlstring).match(pattern) && delivery.FCP == false )
-   {
-   %>
-   &cid=<%= message.delivery.internalName %>&bid=<%= message.id.toString().toLowerCase() %><% } %>
-   ```
+  ```
+  <%@ include option='NmsTracking_ClickFormula' %><% // Parameters expected by Adobe Analytics
+  var pattern = new RegExp("(nl611\.test15|google\.com)", 'i')
+  if( $(urlstring).match(pattern) && delivery.FCP == false )
+  {
+  %>
+  &cid=<%= message.delivery.internalName %>&bid=<%= message.id.toString().toLowerCase() %><% } %>
+  ```
 
 * Korrigera syntax
 
-   ```
-   <%@ include option='NmsTracking_ClickFormula' %><% // Parameters expected by Adobe Analytics
-   var pattern = new RegExp("(nl611\.test15|google\.com)", 'i')
-   if( $(urlstring).match(pattern) && delivery.FCP == false )
-   {
-   %>&cid=<%= message.delivery.internalName %>&bid=<%= message.id.toString().toLowerCase() %><% } %>
-   ```
+  ```
+  <%@ include option='NmsTracking_ClickFormula' %><% // Parameters expected by Adobe Analytics
+  var pattern = new RegExp("(nl611\.test15|google\.com)", 'i')
+  if( $(urlstring).match(pattern) && delivery.FCP == false )
+  {
+  %>&cid=<%= message.delivery.internalName %>&bid=<%= message.id.toString().toLowerCase() %><% } %>
+  ```
 
 För att förstå var den extra raden finns kan du ersätta JavaScript-uttrycket med en fast sträng STRING.
 
@@ -174,26 +174,26 @@ STRING1&cid=STRING2&bid=STRING3
 
 * Felaktig syntax
 
-   ```
-   <%@ include option='NmsTracking_ClickFormula' %>
-   <% // Parameters expected by Adobe Analytics
-   var pattern = new RegExp("(vistaprint|entryUrl)", 'i')
-   if( $(urlstring).match(pattern) && delivery.FCP == false )
-   {%>&cid=<%= message.delivery.internalName%>&bid=<%= message.id.toString().toLowerCase()%>&SHPID=<%= message.recipient.factShopper.shopper_id %><% }
-   
-   %>
-   ```
+  ```
+  <%@ include option='NmsTracking_ClickFormula' %>
+  <% // Parameters expected by Adobe Analytics
+  var pattern = new RegExp("(vistaprint|entryUrl)", 'i')
+  if( $(urlstring).match(pattern) && delivery.FCP == false )
+  {%>&cid=<%= message.delivery.internalName%>&bid=<%= message.id.toString().toLowerCase()%>&SHPID=<%= message.recipient.factShopper.shopper_id %><% }
+  
+  %>
+  ```
 
 * Korrigera syntax
 
-   ```
-   <%@ include option='NmsTracking_ClickFormula' %><% // Parameters expected by Adobe Analytics
-   var pattern = new RegExp("(vistaprint|entryUrl)", 'i')
-   if( $(urlstring).match(pattern) && delivery.FCP == false )
-   {%>&cid=<%= message.delivery.internalName%>&bid=<%= message.id.toString().toLowerCase()%>&SHPID=<%= message.recipient.factShopper.shopper_id %><% }
-   
-   %>
-   ```
+  ```
+  <%@ include option='NmsTracking_ClickFormula' %><% // Parameters expected by Adobe Analytics
+  var pattern = new RegExp("(vistaprint|entryUrl)", 'i')
+  if( $(urlstring).match(pattern) && delivery.FCP == false )
+  {%>&cid=<%= message.delivery.internalName%>&bid=<%= message.id.toString().toLowerCase()%>&SHPID=<%= message.recipient.factShopper.shopper_id %><% }
+  
+  %>
+  ```
 
 För att förstå var den extra raden finns kan du ersätta JavaScript-uttrycket med en fast sträng STRING.
 

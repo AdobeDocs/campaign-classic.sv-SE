@@ -2,11 +2,12 @@
 product: campaign
 title: Technote - Apple Push Notification service server certificate update
 description: Uppdatering av servercertifikat för tjänsten Apple Push Notification
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+feature: Technote, Push
+badge-v7-only: label="v7" type="Informative" tooltip="Gäller endast Campaign Classic v7"
 exl-id: 263fb4b5-ca62-4b92-a82d-8820ee998296
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '149'
+source-wordcount: '156'
 ht-degree: 0%
 
 ---

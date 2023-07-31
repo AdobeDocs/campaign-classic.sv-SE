@@ -2,12 +2,13 @@
 product: campaign
 title: Installera inbyggda Campaign Classic-paket
 description: Lär dig hur du installerar inbyggda Campaign-paket
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
-badge-v7-prem: label="on-premise & hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html" tooltip="Applies to on-premise and hybrid deployments only"
+feature: Installation, Application Settings
+badge-v7-only: label="v7" type="Informative" tooltip="Gäller endast Campaign Classic v7"
+badge-v7-prem: label="lokal och hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=sv" tooltip="Gäller endast lokala och hybrida driftsättningar"
 exl-id: 2bc077c4-ed65-4157-bfc9-df5d0442f476
-source-git-commit: 4661688a22bd1a82eaf9c72a739b5a5ecee168b1
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '1253'
+source-wordcount: '1278'
 ht-degree: 5%
 
 ---
@@ -24,13 +25,13 @@ Inbyggda paket innehåller en uppsättning funktioner som kan installeras efter 
 >
 >Du får endast installera paket som motsvarar alternativen i licensavtalet.
 >
->Installationen av ett nytt paket kan påverka hela plattformen: den måste testas och valideras innan den slutliga driftsättningen.
+>Installationen av ett nytt paket kan påverka hela plattformen: det måste testas och valideras innan den slutgiltiga distributionen.
 >
 >När ett paket har installerats kan du inte avinstallera det.
 >
 >Kontakta Adobe för att driftsätta ett nytt inbyggt paket.
 
-Så här installerar du ett inbyggt paket:
+Installera ett inbyggt paket:
 
 1. Öppna guiden för paketimport från **[!UICONTROL Tools > Advanced > Import package]** i Adobe Campaign klientkonsol.
 1. Välj **[!UICONTROL Install a standard package]**.
@@ -65,7 +66,7 @@ I följande tabell visas alla inbyggda Campaign-paket.
    <td> Alla</td> 
   </tr> 
   <tr> 
-   <td> Marknadsföringskampanjer (Campaign)<br /> </td> 
+   <td> Marknadskampanjer (Campaign)<br /> </td> 
    <td> Definierar, optimerar, kör och analyserar kommunikation och marknadsföringskampanjer. <a href="../../campaign/using/designing-marketing-campaigns.md">Läs mer</a><br /> </td> 
    <td> Marknadsföring</td>
   </tr> 
@@ -240,7 +241,7 @@ I följande tabell visas alla inbyggda Campaign-paket.
 
 ### Paket för meddelandecenter {#message-center-package}
 
-Du måste installera leveranskanaler (e-post, mobilkanal, mobilappskanal, LINE osv.) innan du installerar Transactional Messaging (Message Center-paket). Om du har startat ett meddelandecenterprojekt som bara är till för e-post och behöver lägga till en ny kanal i efterhand måste du följa dessa steg:
+Du måste installera leveranskanaler (e-post, mobilkanal, mobilappskanal, LINE osv.) innan du installerar Transactional Messaging (Message Center-paket). Om du har startat ett meddelandecenterprojekt som bara är till för e-post och behöver lägga till en ny kanal efteråt måste du följa dessa steg:
 
 1. Installera den nya kanalen, till exempel **Mobilkanal**, med hjälp av guiden för paketimport ( **[!UICONTROL Tools > Advanced > Import package > Adobe Campaign package]**).
 1. Importera filen ( **[!UICONTROL Tools > Advanced > Import package > File]**) och välj:

@@ -1,10 +1,10 @@
 ---
 product: campaign
 title: Skapa en ny rapport
-description: Lär dig viktiga steg för att skapa en ny rapport
-feature: Reporting
+description: Lär dig de viktigaste stegen för att skapa en ny rapport
+feature: Reporting, Monitoring
 exl-id: 4c2aad47-0e2d-4d0b-8898-b437f4a05e11
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
 source-wordcount: '923'
 ht-degree: 1%
@@ -35,7 +35,7 @@ Så här skapar du en rapport:
 
    ![](assets/s_ncs_advuser_report_wizard_020.png)
 
-1. Spara den här rapporten.
+1. Spara rapporten.
 
 ## Modellera diagrammet {#modelizing-the-chart}
 
@@ -75,7 +75,7 @@ Om du vill skapa en rapport, beroende på dess art och sammanhang, måste du ide
 
    Mer information finns i [Skriptaktivitet](../../reporting/using/advanced-functionalities.md#script-activity).
 
-1. Slutligen kan du infoga en eller flera **[!UICONTROL Jump]** typaktiviteter. På så sätt kan du gå från en aktivitet till en annan utan att behöva materialisera övergången i rapporten. The **[!UICONTROL Jump]** kan även användas för att visa en annan rapport.
+1. Slutligen kan du infoga en eller flera rapporter för att lättare kunna läsa komplexa rapporter **[!UICONTROL Jump]** typaktiviteter. På så sätt kan du gå från en aktivitet till en annan utan att behöva materialisera övergången i rapporten. The **[!UICONTROL Jump]** kan även användas för att visa en annan rapport.
 
    Mer information finns i [Hoppaktivitet](../../reporting/using/advanced-functionalities.md#jump-activity).
 
@@ -89,7 +89,7 @@ Du kan dock placera flera grenar. Endast en av dem kommer att köras:
 
 ## Skapa en sida {#creating-a-page}
 
-Innehållet konfigureras via aktiviteter som finns i diagrammet. Mer information finns i [Modelize the chart](#modelizing-the-chart).
+Innehållet konfigureras via aktiviteter som placerats i diagrammet. Mer information finns i [Modelize the chart](#modelizing-the-chart).
 
 Om du vill konfigurera en aktivitet dubbelklickar du på dess ikon.
 
@@ -112,7 +112,7 @@ Du kan också högerklicka på noden där du vill lägga till komponenten och v�
 A **[!UICONTROL Page]** kan innehålla följande element:
 
 * Stapel, cirkelformad, kurvtyp **[!UICONTROL charts]**, osv.
-* pivottar; Lista med grupper eller uppdelningar **[!UICONTROL tables]**.
+* Pivot; Lista med grupp eller Uppdelning **[!UICONTROL tables]**.
 * Text- eller nummertyp **[!UICONTROL Input controls]**.
 * Nedrullningsbar lista, kryssruta, alternativknapp, flervalstyp, datum eller matristyp **[!UICONTROL Selection controls]**.
 * Länkredigerare, konstant, mappvalstyp **[!UICONTROL Advanced controls]**.
@@ -127,7 +127,7 @@ Med verktygsfältet kan du lägga till eller ta bort kontroller och ordna deras 
 
 ### Statiska element {#static-elements}
 
-Med statiska element kan du visa information i rapporten, t.ex. grafiska element eller skript, som användaren inte interagerar med. Se [det här avsnittet](../../web/using/static-elements-in-a-web-form.md#inserting-html-content) för mer information.
+Med statiska element kan du visa information i rapporten, till exempel grafiska element eller skript, som användaren inte interagerar med. Se [det här avsnittet](../../web/using/static-elements-in-a-web-form.md#inserting-html-content) för mer information.
 
 ![](assets/s_advuser_report_page_activity_03.png)
 
@@ -145,15 +145,15 @@ Du kan även integrera en eller flera markeringskontroller i dina rapporter. Med
 
 * via alternativknappar eller kryssrutor:
 
-   ![](assets/reporting_radio_buttons.png)
+  ![](assets/reporting_radio_buttons.png)
 
-* via en nedrullningsbar lista:
+* via en listruta:
 
-   ![](assets/reporting_control_list.png)
+  ![](assets/reporting_control_list.png)
 
 * via en kalender:
 
-   ![](assets/reporting_control_date.png)
+  ![](assets/reporting_control_date.png)
 
 Slutligen kan du integrera en eller flera avancerade kontroller i dina rapporter. Med den här typen av kontroll kan du infoga en länk, en konstant eller välja en mapp.
 

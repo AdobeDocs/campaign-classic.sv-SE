@@ -1,13 +1,13 @@
 ---
 product: campaign
-title: Skjut felsökning
-description: Skjut felsökning
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
-feature: Push
+title: Push-felsökning
+description: Push-felsökning
+badge-v7-only: label="v7" type="Informative" tooltip="Gäller endast Campaign Classic v7"
+feature: Push, Troubleshooting
 exl-id: 313eae5f-40db-4b1a-b013-f4adf8781763
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '100'
+source-wordcount: '107'
 ht-degree: 2%
 
 ---
@@ -18,11 +18,11 @@ ht-degree: 2%
 
 Om din mobila enhet är ansluten till ett trådlöst nätverk och du inte får några meddelanden kontrollerar du att FCM-/APN-portarna inte blockeras av din brandvägg.
 
-**Android**: Den mobila enheten ansluter till FCM-servrarna på portarna 5228 till 5230. Därför måste du konfigurera brandväggen så att den tillåter anslutning till FCM. De portar som ska öppnas är: 5228 (den mest använda), 5229 och 5230.
+**Android**: Den mobila enheten ansluter till FCM-servrarna på portarna 5228 till 5230. Därför måste du konfigurera brandväggen så att den tillåter anslutning till FCM. Portarna som ska öppnas är: 5228 (den vanligaste), 5229 och 5230.
 
 **iOS**:
 
-HTTP/2-anslutning: du måste tillåta kommunikation till och från följande servrar:
+HTTP/2-anslutning: Du måste tillåta kommunikation till och från följande servrar:
 
 * api.push.apple.com: port 443
 * api.development.push.apple.com: port 443

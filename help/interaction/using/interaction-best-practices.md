@@ -2,14 +2,15 @@
 product: campaign
 title: Adobe Campaign Classic Interaction best practices
 description: I det här avsnittet beskrivs hur du bäst hanterar interaktionsmodulen i Adobe Campaign Classic
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+feature: Interaction, Offers
+badge-v7-only: label="v7" type="Informative" tooltip="Gäller endast Campaign Classic v7"
 audience: interaction
 content-type: reference
 topic-tags: interaction-overview
 exl-id: 98413cde-50c9-416c-8316-85837f724c27
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '1193'
+source-wordcount: '1200'
 ht-degree: 0%
 
 ---
@@ -33,7 +34,7 @@ Nedan visas viktiga element som du bör tänka på när du implementerar och kon
 * Katalogdesignen har stor inverkan på Adobe Campaign Classic prestanda.
 * När det finns många erbjudanden kan du dela upp dem i flera olika erbjudandekataloger.
 
-### Villkor {#eligibility-rules}
+### Villkor för deltagande {#eligibility-rules}
 
 Nedan visas några tips om de effektivaste strategierna när det gäller regler för behörighet.
 
@@ -45,7 +46,7 @@ Nedan visas några tips om de effektivaste strategierna när det gäller regler 
 * För att spara bearbetningstid kan du beräkna aggregat i stället för att skapa komplexa regler med kopplingar. Det gör du genom att försöka lagra kunddata i en referenstabell som kan slås upp i reglerna för behörighet.
 * Använd ett minsta antal vikter för att begränsa antalet frågor.
 * Vi rekommenderar ett begränsat antal erbjudanden per erbjudandeplats. Detta gör att erbjudandena kan hämtas snabbare på alla typer av platser.
-* Använd index, särskilt för ofta använda sökkolumner.
+* Använd index, särskilt för ofta använda uppslagskolumner.
 
 ### Projekttabell {#proposition-table}
 
@@ -54,7 +55,7 @@ Nedan visas några metodtips om förslagstabellen.
 * Använd ett minsta antal regler för att göra bearbetningen så snabb som möjligt.
 * Begränsa antalet poster i förslagstabellen: spara bara de poster som behövs för att spåra dess statusuppdatering och vad som behövs för reglerna och arkivera dem sedan i ett annat system.
 * Utför omfattande databasunderhåll i förslagstabellen, till exempel återskapa index eller återskapa tabell.
-* Begränsa antalet förslag som begärs per mål. Ställ inte in mer än vad du faktiskt kommer att använda.
+* Begränsa antalet förslag som efterfrågas per mål. Ställ inte in mer än vad du faktiskt kommer att använda.
 * Undvik kopplingar så mycket som möjligt i regelkriterierna.
 
 ## Tips och tricks för att hantera erbjudanden {#tips-managing-offers}
@@ -63,7 +64,7 @@ I det här avsnittet finns mer detaljerad information om hur du hanterar erbjuda
 
 ### Använda flera erbjudandeplatser i e-postleveranser {#multiple-offer-spaces}
 
-När du inkluderar erbjudanden i leveranser väljs erbjudandena i allmänhet upp i flödet i Campaign-arbetsflödet via en Enrichment-aktivitet (eller en annan liknande aktivitet).
+När du inkluderar erbjudanden i leveranser väljs erbjudandena i allmänhet upp i kampanjen via en anrikningsaktivitet (eller en annan liknande aktivitet).
 
 När du väljer erbjudanden i en anrikningsaktivitet kan du välja vilket utrymme som ska användas. Oberoende av vilket utrymme som har valts beror menyn för leveransanpassning på hur mycket utrymme som finns i leveransformuläret.
 
@@ -80,7 +81,7 @@ I exemplet nedan är återgivningsfunktionen HTML tillgänglig i listrutan efter
 Den här funktionen infogar kod som: `<%@ include proposition="targetData.proposition" view="rendering/html" %>`.
 
 När du markerar förslaget, är värdet för **[!UICONTROL view]** är följande:
-* &quot;rendering/html&quot;: html-återgivning. Det använder återgivningsfunktionen HTML.
+* &quot;rendering/html&quot;: html-rendering. Det använder återgivningsfunktionen HTML.
 * &quot;offer/view/html&quot;: html-innehåll. Återgivningsfunktionen HTML används inte. Det innehåller bara fältet HTML.
 
 När du inkluderar flera erbjudandeplatser i en och samma e-postleverans och om vissa av dem har återgivningsfunktioner och andra inte har det, måste du komma ihåg vilka erbjudanden som innehåller blanksteg och vilka som erbjuder återgivningsfunktioner.
@@ -127,9 +128,9 @@ När du utökar schemat nms:offer måste du följa den färdiga strukturen som r
 * Definiera nya fält för innehållslagring under `<element name="view">`.
 * Varje nytt fält måste definieras två gånger. En gång som ett vanligt XML-fält och en gång som ett CDATA XML-fält med &quot;_jst&quot; som tillägg till namnet. Exempel:
 
-   ```
-   <element label="Price" name="price" type="long" xml="true"/>
-   <element advanced="true" label="Script price" name="price_jst" type="CDATA" xml="true"/>
-   ```
+  ```
+  <element label="Price" name="price" type="long" xml="true"/>
+  <element advanced="true" label="Script price" name="price_jst" type="CDATA" xml="true"/>
+  ```
 
 * Alla fält som innehåller URL:er som ska spåras måste placeras under `<element name="trackedUrls">` som finns under `<element name="view" >`.

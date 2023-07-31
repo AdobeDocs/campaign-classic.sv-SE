@@ -2,16 +2,17 @@
 product: campaign
 title: Klientkonsolens tillgänglighet i Windows
 description: Klientkonsolens tillgänglighet i Windows
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
-badge-v7-prem: label="on-premise & hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html" tooltip="Applies to on-premise and hybrid deployments only"
+feature: Installation, Upgrade
+badge-v7-only: label="v7" type="Informative" tooltip="Gäller endast Campaign Classic v7"
+badge-v7-prem: label="lokal och hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=sv" tooltip="Gäller endast lokala och hybrida driftsättningar"
 audience: installation
 content-type: reference
 topic-tags: installing-campaign-in-windows-
 exl-id: 57845eae-1f1a-42f4-b2ba-46d454677ae0
-source-git-commit: acfe0c4139671fc3df69ff434ba307aaaaf70676
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '328'
-ht-degree: 4%
+source-wordcount: '353'
+ht-degree: 7%
 
 ---
 
@@ -23,15 +24,15 @@ För att Adobe Campaign-användare ska kunna logga in på den instans som du har
 
 ## Gör klientkonsolen tillgänglig
 
-När datorn använde för att starta en Adobe Campaign-programserver (**nlserver web**) tar emot användaranslutningar från klientkonsolen och konfigurerar den så att installationsprogrammet för Adobe Campaign-klienten blir tillgängligt via ett HTML-gränssnitt. När det finns en ny version av klientkonsolen får användarna en inbjudan att ladda ned den när de startar klientkonsolen.
+När datorn använde för att starta en Adobe Campaign-programserver (**nlserver web**) tar emot användaranslutningar från klientkonsolen och konfigurerar den så att installationsprogrammet för Adobe Campaign-klienten blir tillgängligt via ett HTML-gränssnitt. När det finns en ny version av klientkonsolen får användarna en inbjudan om att ladda ned den när de startar klientkonsolen.
 
 För att göra detta måste du:
 
 1. Välj det paket som innehåller installationsprogrammet för konsolen.
 
-   Den här filen anropas `setup-client-7.X.XXXX.exe`, där `X` är en underversion av Adobe Campaign och `XXXX` är build-numret.
+   Filen anropas `setup-client-7.X.XXXX.exe`, där `X` är en underversion av Adobe Campaign och `XXXX` är build-numret.
 
-1. Kopiera och klistra in det här paketet i installationsmappen för Adobe Campaign (på marknadsföringsservern för hybridinstallationer), under **/datakit/nl/eng/jsp**.
+1. Kopiera och klistra in det här paketet i Adobe Campaign installationsmapp (på marknadsföringsservern för hybridinstallationer), under **/datakit/nl/eng/jsp**.
 1. Starta Adobe Campaign-servern.
 
 Kampanjanvändare kan sedan hämta konsolinstallationsprogrammet via en webbläsare tack vare följande URL:

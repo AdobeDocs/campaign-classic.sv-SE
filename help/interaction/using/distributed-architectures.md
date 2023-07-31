@@ -2,14 +2,15 @@
 product: campaign
 title: Distribuerade arkitekturer
 description: Distribuerade arkitekturer
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+feature: Interaction, Offers, Architecture
+badge-v7-only: label="v7" type="Informative" tooltip="Gäller endast Campaign Classic v7"
 audience: interaction
 content-type: reference
 topic-tags: advanced-parameters
 exl-id: 083be073-aad4-4c81-aff2-77f5ef3e80db
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '1011'
+source-wordcount: '1018'
 ht-degree: 1%
 
 ---
@@ -29,7 +30,7 @@ För att få stöd för skalbarhet och dygnet runt-service på den inkommande ka
 
 >[!NOTE]
 >
->Kontrollinstanser är dedikerade till den inkommande kanalen och innehåller katalogversionen online. Varje instans för körning är oberoende och dedikerad till ett kontaktsegment (till exempel en exekveringsinstans per land). Anrop till offertmotorn måste utföras direkt på körningen (en specifik URL per körningsinstans). Eftersom synkroniseringen mellan instanser inte är automatisk måste interaktioner från samma kontakt skickas via samma instans.
+>Kontrollinstanser är dedikerade till den inkommande kanalen och innehåller katalogversionen online. Alla instanser av exekvering är oberoende och dedikerade till ett kontaktsegment (till exempel en exekveringsinstans per land). Anrop till offertmotorn måste utföras direkt på körningen (en specifik URL per körningsinstans). Eftersom synkroniseringen mellan instanser inte är automatisk måste interaktioner från samma kontakt skickas via samma instans.
 
 ## Förslagssynkronisering {#proposition-synchronization}
 
@@ -52,18 +53,18 @@ Ett arbetsflöde skapas för varje miljö och ett externt konto för förslagssy
 * Om du använder funktionen för säkerhetskopiering från en anonym miljö till en identifierad miljö måste dessa två miljöer finnas i samma körningsinstans.
 * Synkroniseringen mellan flera körningsinstanser utförs inte i realtid. Interaktioner av samma kontakt måste skickas till samma instans. Kontrollinstansen måste dedikeras till den utgående kanalen (ingen realtid).
 * Marknadsföringsdatabasen synkroniseras inte automatiskt. Marknadsföringsdata som används i viktnings- och berättigandereglerna måste dupliceras i körningsinstanser. Den här processen kommer inte som standard, du måste utveckla den under integreringsperioden.
-* Synkronisering av offerter utförs uteslutande av FDA-anslutning.
+* Propositionssynkronisering utförs uteslutande av FDA-anslutning.
 * Om du använder Interaction och Message Center på samma instans, synkroniseras i båda fallen via FDA-protokollet.
 
 ## Paketkonfiguration {#packages-configuration}
 
 Alla schematillägg som är direkt länkade till **Interaktion** (erbjudanden, erbjudanden, mottagare osv.) måste distribueras på körningsinstanserna.
 
-Interaktionspaketet måste installeras på alla instanser (kontroll och körning). Ytterligare två paket finns: ett paket som ska installeras på kontrollinstanserna och ett annat som ska installeras på varje körningsinstans.
+Interaktionspaketet måste installeras på alla instanser (kontroll och körning). Det finns ytterligare två paket: ett paket som ska installeras på kontrollinstanserna och ett annat som ska installeras på varje körningsinstans.
 
 >[!NOTE]
 >
->När du installerar paketet **long** typfält för **nms:förslag** tabell som t.ex. förslags-ID, blir **int64** textfält. Den här typen av data beskrivs i [det här avsnittet](../../configuration/using/schema-structure.md#mapping-the-types-of-adobe-campaign-dbms-data).
+>När du installerar paketet **long** typfält i **nms:förslag** tabell som t.ex. förslags-ID, blir **int64** textfält. Den här typen av data beskrivs i [det här avsnittet](../../configuration/using/schema-structure.md#mapping-the-types-of-adobe-campaign-dbms-data).
 
 Varaktigheten för datalagring måste konfigureras för varje instans (via **[!UICONTROL Data purge]** i distributionsguiden). För körningsinstanser måste denna period motsvara det historiska djup som krävs för att typologiregler (glidande period) och regler för stödberättigande ska kunna beräknas.
 
@@ -81,10 +82,11 @@ På kontrollinstanserna:
    * Kontrollera vilken typ av program som används: **[!UICONTROL Message Center]**, **[!UICONTROL Interaction]** eller båda.
    * Ange det FDA-konto som används. En operator måste skapas för körningsinstanserna och måste ha följande läs- och skrivrättigheter i databasen för instansen i fråga:
 
-      ```
-      grant SELECT ON nmspropositionrcp, nmsoffer, nmsofferspace, xtkoption, xtkfolder TO user;
-      grant DELETE, INSERT, UPDATE ON nmspropositionrcp TO user;
-      ```
+     ```
+     grant SELECT ON nmspropositionrcp, nmsoffer, nmsofferspace, xtkoption, xtkfolder TO user;
+     grant DELETE, INSERT, UPDATE ON nmspropositionrcp TO user;
+     ```
+
    >[!NOTE]
    >
    >IP-adressen för kontrollinstansen måste auktoriseras för körningsinstanserna.
@@ -96,9 +98,9 @@ På kontrollinstanserna:
    * Lägg till listan med körningsinstanser.
    * För var och en av dem anger du synkroniseringsperiod och filtervillkor (till exempel per land).
 
-      >[!NOTE]
-      >
-      >Om du råkar ut för ett fel kan du läsa arbetsflödena för synkronisering och visa meddelanden. Dessa finns i programmets tekniska arbetsflöden.
+     >[!NOTE]
+     >
+     >Om du råkar ut för ett fel kan du läsa arbetsflödena för synkronisering och visa meddelanden. Dessa finns i programmets tekniska arbetsflöden.
 
 Om bara en del av marknadsföringsdatabasen dupliceras på körningsinstanserna av optimeringsskäl kan du ange ett begränsat schema som är länkat till miljön, så att användarna bara kan använda data som är tillgängliga på körningsinstanserna. Du kan skapa ett erbjudande med data som inte är tillgängliga för körningsinstanser. Om du vill göra det måste du inaktivera regeln för de andra kanalerna genom att begränsa den här regeln för den utgående kanalen (**[!UICONTROL Taken into account if]** fält).
 
@@ -112,13 +114,13 @@ Här är en lista över underhållsalternativ som är tillgängliga för kontrol
 >
 >Dessa alternativ får endast användas för särskilda underhållsfall.
 
-* **`NmsInteraction_LastOfferEnvSynch_<offerEnvId>_<executionInstanceId>`**: det senaste datumet då en miljö synkroniserades på en viss instans.
-* **`NmsInteraction_LastPropositionSynch_<propositionSchema>_<executionInstanceIdSource>_<executionInstanceIdTarget>`**: det senaste datumet som förslag från ett givet schema synkroniserades från en instans till en annan.
-* **`NmsInteraction_MapWorkflowId`**: ett alternativ med en lista över alla synkroniseringsarbetsflöden som genereras.
+* **`NmsInteraction_LastOfferEnvSynch_<offerEnvId>_<executionInstanceId>`**: det senaste datumet då en miljö synkroniserades på en given instans.
+* **`NmsInteraction_LastPropositionSynch_<propositionSchema>_<executionInstanceIdSource>_<executionInstanceIdTarget>`**: sista datumet som förslag från ett givet schema synkroniserades från en instans till en annan.
+* **`NmsInteraction_MapWorkflowId`**: ett alternativ som innehåller en lista över alla genererade synkroniseringsarbetsflöden.
 
 Följande alternativ är tillgängligt för körningsinstanser:
 
-**NmsExecutionInstanceId**: som innehåller instans-ID:t.
+**NmsExecutionInstanceId**: som innehåller instans-ID.
 
 ## Paketinstallation {#packages-installation}
 

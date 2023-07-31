@@ -2,12 +2,13 @@
 product: campaign
 title: SMS-anslutningsmigrering stöds inte
 description: Migrera en SMS-koppling som inte stöds till den utökade allmänna SMPP-anslutningen
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+feature: SMS, Upgrade
+badge-v7-only: label="v7" type="Informative" tooltip="Gäller endast Campaign Classic v7"
 hidefromtoc: true
 exl-id: 60acf80c-8506-410b-ab2c-4f67a5677b43
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '453'
+source-wordcount: '460'
 ht-degree: 1%
 
 ---
@@ -33,7 +34,7 @@ Följande kopplingar är borttagna från och med version 20.2:
 * **[!UICONTROL O2]**
 * **[!UICONTROL iOS]**
 
-Funktioner som inte används är fortfarande tillgängliga och stöds, men de kommer inte att förbättras ytterligare. Vi rekommenderar att du använder **[!UICONTROL Extended generic SMPP]** koppling.
+Funktioner som inte används är fortfarande tillgängliga och stöds, men de kommer inte att förbättras ytterligare. Vi rekommenderar **[!UICONTROL Extended generic SMPP]** koppling.
 
 Mer information om borttagna och borttagna funktioner finns i [page](../../rn/using/deprecated-features.md).
 

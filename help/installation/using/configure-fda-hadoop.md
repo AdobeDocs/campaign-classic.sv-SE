@@ -2,14 +2,15 @@
 product: campaign
 title: Konfigurera åtkomst till Hadoopet
 description: Lär dig hur du konfigurerar åtkomst till Hadoopet i FDA
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+feature: Installation, Federated Data Access
+badge-v7-only: label="v7" type="Informative" tooltip="Gäller endast Campaign Classic v7"
 audience: platform
 content-type: reference
 topic-tags: connectors
 exl-id: e3a97e55-dd8b-41e1-b48c-816d973f62a8
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '602'
+source-wordcount: '609'
 ht-degree: 1%
 
 ---
@@ -54,7 +55,7 @@ The [!DNL Hadoop] Med ett externt konto kan du ansluta Campaign-instansen till H
 
    * **[!UICONTROL Type]**: ODBC (Sybase ASE, Sybase IQ)
 
-   * **[!UICONTROL Server]**: DNS-namn
+   * **[!UICONTROL Server]**: Namn på DNS
 
    * **[!UICONTROL Account]**: Användarens namn
 
@@ -62,7 +63,7 @@ The [!DNL Hadoop] Med ett externt konto kan du ansluta Campaign-instansen till H
 
    * **[!UICONTROL Database]**: Namnet på databasen om det inte anges i DSN. Den kan lämnas tom om den anges i DSN
 
-   * **[!UICONTROL Time zone]**: Tidszon för server
+   * **[!UICONTROL Time zone]**: Servertidszon
 
    ![](assets/hadoop3.png)
 
@@ -73,19 +74,19 @@ Kopplingen stöder följande ODBC-alternativ:
 | ODBCMgr | iODBC |
 | lagerställe | 1/2/4 |
 
-Kopplingen stöder även följande Hive-alternativ:
+Kopplingen har även stöd för följande Hive-alternativ:
 
 | Namn | Värde | Beskrivning |
 |---|---|---|
 | bulkKey | Åtkomstnyckel för Azure-blob eller DataLake | För wasb:// eller wasbs:// massinläsare (dvs. om massinläsningsverktyget börjar med wasb:// eller wasbs://). <br>Det är åtkomstnyckeln för blob- eller DataLake-bucket för massinläsning. |
-| hdfsPort | portnummer <br>inställd på 8020 som standard | För HDFS-massinläsning (d.v.s. om massinläsningsverktyget börjar med webhdfs:// eller webhdfss://). |
-| buficknummer | 20 | Antal grupper när en klustrad tabell skapas. |
+| hdfsPort | portnummer <br>inställd på 8020 som standard | För HDFS-massinläsning (dvs. om massinläsningsverktyget börjar med webhdfs:// eller webhdfss://). |
+| bucketNumber | 20 | Antal grupper när en klustrad tabell skapas. |
 | fileFormat | PARQUET | Standardfilformat för arbetsregister. |
 
 
 ## Konfigurerar Hadoop 2.1 {#configure-access-hadoop-2}
 
-Om du behöver ansluta till Hadoop 2.1 följer du de steg som beskrivs nedan [Windows](#for-windows) eller [Linux](#for-linux).
+Om du behöver ansluta till Hadoop 2.1 följer du stegen nedan [Windows](#for-windows) eller [Linux](#for-linux).
 
 ### Hadoop 2.1 för Windows {#for-windows}
 
@@ -156,7 +157,7 @@ Om du behöver ansluta till Hadoop 2.1 följer du de steg som beskrivs nedan [Wi
    >
    >The **UseNativeQuery** parametern här är mycket viktig. Campaign är Hive-medveten och fungerar inte korrekt om inte UseNativeQuery har angetts. Vanligtvis skriver drivrutinen eller Hive SQL Connector om frågor och ändrar kolumnordningen.
 
-   Inställningen av autentisering beror på konfigurationen av Hive/Hadoop. För HD Insight använder du till exempel AuthMech=6 för användar-/lösenordsautentisering enligt beskrivningen [här](https://www.simba.com/products/Spark/doc/ODBC_InstallGuide/unix/content/odbc/hi/configuring/authenticating/azuresvc.htm).
+   Inställningen av autentisering beror på konfigurationen av Hive/Hadoop. För HD Insight använder du till exempel AuthMech=6 för autentisering av användare/lösenord enligt beskrivningen [här](https://www.simba.com/products/Spark/doc/ODBC_InstallGuide/unix/content/odbc/hi/configuring/authenticating/azuresvc.htm).
 
 1. Exportera variablerna.
 

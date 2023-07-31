@@ -2,14 +2,15 @@
 product: campaign
 title: Skapa erbjudandeplatser
 description: Skapa erbjudandeplatser
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+feature: Interaction, Offers
+badge-v7-only: label="v7" type="Informative" tooltip="Gäller endast Campaign Classic v7"
 audience: interaction
 content-type: reference
 topic-tags: managing-environments
 exl-id: bdda98f7-a083-4f3b-b691-c28ec79af780
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '981'
+source-wordcount: '988'
 ht-degree: 1%
 
 ---
@@ -55,13 +56,13 @@ Gör så här för att skapa ett nytt erbjudande:
 
    >[!NOTE]
    >
-   >Den här konfigurationen används vid förhandsgranskningen och gör att erbjudanden blir ogiltiga vid publicering om något av de obligatoriska elementen saknas i det aktuella erbjudandet. Om ett erbjudande redan finns på en plats där erbjudandet ska erbjudas beaktas dock inte dessa kriterier.
+   >Den här konfigurationen används vid förhandsgranskningen och gör att erbjudanden blir ogiltiga vid publicering om något av de obligatoriska elementen saknas i erbjudandet. Om ett erbjudande redan finns på en plats i ett erbjudande beaktas dock inte dessa kriterier.
 
    ![](assets/offer_space_create_005.png)
 
 1. Klicka **[!UICONTROL Edit functions]** för att skapa en återgivningsfunktion.
 
-   Dessa funktioner används för att generera offertrepresentationer på ett visst utrymme. Det finns flera möjliga format: HTML eller text för utgående interaktioner och XML för inkommande interaktioner.
+   Dessa funktioner används för att generera offertrepresentationer på ett visst erbjudandeutrymme. Det finns flera möjliga format: HTML eller text för utgående interaktioner och XML för inkommande interaktioner.
 
    ![](assets/offer_space_create_006.png)
 
@@ -74,7 +75,7 @@ Om det behövs kan du överlagra XML-återgivningsfunktionerna för inkommande i
 
 ## Erbjud förslagsstatus {#offer-proposition-statuses}
 
-Ett erbjudande kan ha olika status beroende på interaktionen med målpopulationen. Interaktionen innehåller en uppsättning värden som kan tillämpas på erbjudandet under hela dess livscykel. Du måste dock konfigurera plattformen så att statusen ändras när erbjudandeförslaget skapas och godkänns.
+Ett erbjudande kan ha olika status beroende på interaktionen med målpopulationen. Interaktionen innehåller en uppsättning värden som kan tillämpas på erbjudandet under hela dess livscykel. Du måste dock konfigurera plattformen så att statusen ändras när offertförslaget skapas och godkänns.
 
 >[!NOTE]
 >
@@ -91,7 +92,7 @@ Interaktionen innehåller följande värden som kan användas för att kvalifice
 * **[!UICONTROL Presented]**.
 * **[!UICONTROL Rejected]**.
 
-De här värdena används inte som standard: måste konfigureras.
+De här värdena används inte som standard: de måste konfigureras.
 
 >[!NOTE]
 >
@@ -153,7 +154,7 @@ Om det är en utgående interaktion kan du automatiskt använda **[!UICONTROL In
 
 ## Förhandsgranska per utrymme {#offer-preview-per-space}
 
-På den här fliken kan du visa de erbjudanden som mottagaren är berättigad till via en vald metod. I exemplet nedan är mottagaren berättigad till tre offerter via post.
+På den här fliken kan du visa de erbjudanden som mottagaren är berättigad till via en vald metod. I exemplet nedan är mottagaren berättigad till tre offertförslag via post.
 
 ![](assets/offer_space_overview_002.png)
 

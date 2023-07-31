@@ -2,14 +2,15 @@
 product: campaign
 title: Standardiserad driftsättning
 description: Standardiserad driftsättning
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+feature: Installation, Architecture, Deployment
+badge-v7-only: label="v7" type="Informative" tooltip="Gäller endast Campaign Classic v7"
 audience: installation
 content-type: reference
 topic-tags: deployment-types-
 exl-id: 4df126fa-4a6e-46a7-af6e-1e2e97f0072e
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '832'
+source-wordcount: '839'
 ht-degree: 3%
 
 ---
@@ -39,7 +40,7 @@ Den här typen av konfiguration kan hantera ett stort antal mottagare (500 000 t
 
 ### Fördelar {#advantages}
 
-* Redundansfunktion: Möjlighet att växla mellan processer och datorer om det uppstår maskinvaruproblem.
+* Redundansfunktion: möjlighet att växla processer till en dator om det uppstår maskinvaruproblem på den andra.
 * Bättre övergripande prestanda eftersom funktionerna för MTA och omdirigering kan användas på båda datorerna bakom en belastningsutjämnare. Med två aktiva MTA:er och tillräckligt med bandbredd är det möjligt att få en sändningsfrekvens på cirka 100 000 e-postmeddelanden per timme.
 
 ## Installations- och konfigurationssteg {#installation-and-configuration-steps}
@@ -89,19 +90,20 @@ Stegen är följande:
 
    * Skapa instansen via konsolen:
 
-      ![](assets/install_create_new_connexion.png)
+     ![](assets/install_create_new_connexion.png)
 
-      Mer information finns i [Skapa en instans och logga in](../../installation/using/creating-an-instance-and-logging-on.md).
+     Mer information finns i [Skapa en instans och logga in](../../installation/using/creating-an-instance-and-logging-on.md).
 
-      eller
+     eller
 
    * Skapa instansen med kommandorader:
 
-      ```
-      nlserver config -addinstance:demo/tracking.campaign.net*
-      ```
+     ```
+     nlserver config -addinstance:demo/tracking.campaign.net*
+     ```
 
-      Mer information finns i [Skapa en instans](../../installation/using/command-lines.md#creating-an-instance).
+     Mer information finns i [Skapa en instans](../../installation/using/command-lines.md#creating-an-instance).
+
    Namnet på instansen är detsamma som på programservern.
 
    Anslutningen till servern med **nlserver web** modulen (spegelsidor, avprenumeration) görs från URL:en för belastningsutjämnaren (tracking.campaign.net).
@@ -124,24 +126,24 @@ Stegen är följande:
 
    * DNS-konfigurationen för MTA-modulen:
 
-      ```
-      <dnsConfig localDomain="campaign.com" nameServers="192.0.0.1, 192.0.0.2"/>
-      ```
+     ```
+     <dnsConfig localDomain="campaign.com" nameServers="192.0.0.1, 192.0.0.2"/>
+     ```
 
-      >[!NOTE]
-      >
-      >The **nameServers** parametern används bara i Windows.
+     >[!NOTE]
+     >
+     >The **nameServers** parametern används bara i Windows.
 
-      Mer information finns i [Leveransinställningar](configure-delivery-settings.md).
+     Mer information finns i [Leveransinställningar](configure-delivery-settings.md).
 
-   * redundanta spårningsservrar i omdirigeringsparametrarna:
+   * de redundanta spårningsservrarna i omdirigeringsparametrarna:
 
-      ```
-      <spareServer enabledIf="$(hostname)!='front_srv1'" id="1" url="https://front_srv1:8080"/>
-      <spareServer enabledIf="$(hostname)!='front_srv2'" id="2" url="https://front_srv2:8080"/>
-      ```
+     ```
+     <spareServer enabledIf="$(hostname)!='front_srv1'" id="1" url="https://front_srv1:8080"/>
+     <spareServer enabledIf="$(hostname)!='front_srv2'" id="2" url="https://front_srv2:8080"/>
+     ```
 
-      Mer information finns i [Spårning av överflödiga](configuring-campaign-server.md#redundant-tracking).
+     Mer information finns i [Spårning av överflödiga](configuring-campaign-server.md#redundant-tracking).
 
 1. Starta webbplatsen och testa omdirigeringen från URL:en: [https://tracking.campaign.net/r/test](https://tracking.campaign.net/r/test).
 

@@ -2,12 +2,13 @@
 product: campaign
 title: Konfigurera åtkomst till PostgreSQL
 description: Lär dig konfigurera åtkomst till PostgreSQL
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+feature: Installation, Instance Settings
+badge-v7-only: label="v7" type="Informative" tooltip="Gäller endast Campaign Classic v7"
 exl-id: 2c678f45-2555-4647-9885-bd002db7df37
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '365'
-ht-degree: 1%
+source-wordcount: '372'
+ht-degree: 2%
 
 ---
 
@@ -57,9 +58,9 @@ Du måste skapa en [!DNL PostgreSQL] externt konto för att ansluta Campaign-ins
 
    * **[!UICONTROL Password]**: Lösenord för användarkonto.
 
-   * **[!UICONTROL Database]**: Databasens namn (valfritt).
+   * **[!UICONTROL Database]**: Namn på databasen (valfritt).
 
-   * **[!UICONTROL Working schema]**: Namn på ditt arbetsschema. [Läs mer](https://www.postgresql.org/docs/current/ddl-schemas.html)
+   * **[!UICONTROL Working schema]**: Namnet på ditt arbetsschema. [Läs mer](https://www.postgresql.org/docs/current/ddl-schemas.html)
 
    * **[!UICONTROL Timezone]**: Tidszon inställd på [!DNL PostgreSQL]. [Läs mer](https://www.postgresql.org/docs/7.2/timezones.html)
 

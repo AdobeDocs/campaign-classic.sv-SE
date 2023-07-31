@@ -2,16 +2,17 @@
 product: campaign
 title: Typ av underhåll
 description: Typ av underhåll
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
-badge-v7-prem: label="on-premise & hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html" tooltip="Applies to on-premise and hybrid deployments only"
+feature: Monitoring
+badge-v7-only: label="v7" type="Informative" tooltip="Gäller endast Campaign Classic v7"
+badge-v7-prem: label="lokal och hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=sv" tooltip="Gäller endast lokala och hybrida driftsättningar"
 audience: production
 content-type: reference
 topic-tags: database-maintenance
 exl-id: 08e179aa-fd83-4c0a-879e-ab7aec168d92
-source-git-commit: 4661688a22bd1a82eaf9c72a739b5a5ecee168b1
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '494'
-ht-degree: 2%
+source-wordcount: '519'
+ht-degree: 4%
 
 ---
 
@@ -21,7 +22,7 @@ ht-degree: 2%
 
 ## Programunderhåll {#application-maintenance}
 
-Adobe Campaign har ett inbyggt arbetsflöde där du kan schemalägga vissa underhållsåtgärder för databaser: den **arbetsflöde för databasrensning**. Det här arbetsflödet utför följande uppgifter:
+Adobe Campaign har ett inbyggt arbetsflöde där du kan schemalägga vissa underhållsåtgärder: **arbetsflöde för databasrensning**. Det här arbetsflödet utför följande uppgifter:
 
 * Borttagning av utgångna poster.
 * Borttagning av överblivna poster och återinitiering av status för utgångna objekt.
@@ -35,7 +36,7 @@ Adobe Campaign har ett inbyggt arbetsflöde där du kan schemalägga vissa under
 
 Arbetsflödet för databasrensning innehåller inte något databasunderhållsverktyg: det är upp till dig att organisera underhållet. Om du vill göra det kan du antingen:
 
-* samarbeta med databasadministratören för att konfigurera databasunderhåll med verktyg från tredje part,
+* tillsammans med databasadministratören skapa databasunderhåll med verktyg från tredje part,
 * använda Adobe Campaign arbetsflödesmotor för att schemalägga och spåra underhållsaktiviteterna.
 
 Dessa underhållsförfaranden skall utföras regelbundet och skall omfatta följande:
@@ -45,7 +46,7 @@ Dessa underhållsförfaranden skall utföras regelbundet och skall omfatta följ
 
 ### Underhållsschema {#maintenance-schedule}
 
-Du måste hitta lämpliga platser för att utföra dessa underhållsaktiviteter. De kan påverka databasens prestanda avsevärt när programmet körs eller till och med blockeras (på grund av låsning).
+Du måste hitta lämpliga platser för att kunna utföra dessa underhållsaktiviteter. De kan påverka databasens prestanda avsevärt när programmet körs eller till och med blockeras (på grund av låsning).
 
 Dessa uppgifter körs vanligtvis en gång i veckan under en period med låg aktivitet som inte kolliderar med säkerhetskopiering, datainläsning eller aggregeringsberäkning. Vissa system som är mycket efterfrågade kräver oftare underhåll.
 
@@ -68,7 +69,7 @@ Flera strategier är tillgängliga:
   <tr> 
    <td> Onlinedefragmentering<br /> </td> 
    <td> De flesta databasmotorer har defragmenteringsmetoder.<br /> </td> 
-   <td> Använd helt enkelt databasdefragmenteringsmetoden. Dessa metoder hanterar vanligtvis integritetsproblem genom att låsa data under defragmentering.<br /> </td> 
+   <td> Använd helt enkelt databasdefragmenteringsmetoden. Dessa metoder tar vanligtvis hand om integritetsproblem genom att låsa data under defragmentering.<br /> </td> 
    <td> Beroende på databasen kan dessa defragmenteringsmetoder anges som ett RDBMS-alternativ (Oracle) och är inte alltid det mest effektiva sättet att hantera större tabeller.<br /> </td> 
   </tr> 
   <tr> 

@@ -2,16 +2,17 @@
 product: campaign
 title: Erbjudanden på en inkommande kanal
 description: Erbjudanden på en inkommande kanal
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
+feature: Interaction, Offers
+badge-v7: label="v7" type="Informative" tooltip="Gäller Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Gäller även Campaign v8"
 audience: interaction
 content-type: reference
 topic-tags: case-study
 exl-id: 90afced3-465d-4370-8a33-51a7e4356135
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '2088'
-ht-degree: 0%
+source-wordcount: '2100'
+ht-degree: 1%
 
 ---
 
@@ -23,7 +24,7 @@ ht-degree: 0%
 
 Neobank-sajten vill visa ett erbjudande på sin webbplats som riktar sig till oidentifierade besökare som bläddrar på sidan.
 
-För att lägga upp den här interaktionen kommer vi att:
+För att lägga upp den här interaktionen ska vi:
 
 1. [Skapa en anonym miljö](#creating-an-anonymous-environment)
 1. [Skapa anonyma erbjudanden](#creating-anonymous-offer-spaces)
@@ -139,7 +140,7 @@ Om du vill att de erbjudanden du just har konfigurerat ska vara synliga på webb
 
    ![](assets/offer_inbound_anonymous_example_019.png)
 
-1. Ange anrops-URL.
+1. Ange anrops-URL:en.
 
    ![](assets/offer_inbound_anonymous_example_020.png)
 
@@ -173,7 +174,7 @@ Denna fallstudie bygger på följande scenario:
 
    ![](assets/offer_inbound_fallback_example_053.png)
 
-För att implementera denna fallstudie måste ni ha två miljöer: en för anonym interaktion och en med erbjudanden som är särskilt konfigurerade för identifierade kontakter. Den identifierade erbjudandemiljön kommer att konfigureras för att automatiskt växla till den anonyma erbjudandemiljön om kontakten inte är inloggad och därför inte identifieras.
+För att implementera den här fallstudien måste ni ha två miljöer: en för anonyma interaktioner och en med erbjudanden som är särskilt konfigurerade för identifierade kontakter. Den identifierade erbjudandemiljön kommer att konfigureras för att automatiskt växla till den anonyma erbjudandemiljön om kontakten inte är inloggad och därför inte identifieras.
 
 Använd följande steg:
 
@@ -230,7 +231,7 @@ För att skapa erbjudandeutrymme som matchar **Bästa erbjudande** -kategori anv
 
 ### Skapa erbjudandekategorier i en anonym miljö {#creating-offer-categories-in-an-anonymous-environment}
 
-Börja med att skapa två kategorier: den **Bästa erbjudande** kategori och **Partner** kategori. Varje kategori innehåller två erbjudanden för anonyma kontakter.
+Börja med att skapa två erbjudandekategorier: **Bästa erbjudande** kategori och **Partner** kategori. Varje kategori innehåller två erbjudanden för anonyma kontakter.
 
 1. Gå till **[!UICONTROL Offer catalog]** i den anonyma miljö som du just har skapat.
 1. Lägg till en **[!UICONTROL Offer category]** mapp med **Bästa erbjudande** som en etikett.
@@ -243,7 +244,7 @@ Börja med att skapa två kategorier: den **Bästa erbjudande** kategori och **P
 
 ### Skapa erbjudanden för anonyma besökare {#creating-offers-for-anonymous-visitors}
 
-Vi kommer nu att skapa två erbjudanden i varje kategori som skapas ovan.
+Vi kommer nu att skapa två erbjudanden i var och en av de kategorier som skapas ovan.
 
 1. Gå till **Bästa erbjudande** och skapa ett anonymt erbjudande.
 
@@ -278,7 +279,7 @@ Vi kommer nu att skapa två erbjudanden i varje kategori som skapas ovan.
 
    ![](assets/offer_inbound_fallback_example_036.png)
 
-1. Kör godkännandecykeln för varje erbjudande för att börja göra det live. Aktivera **Partner** eller **Bästa erbjudande** erbjudandet, beroende på vilket erbjudande det gäller.
+1. Kör godkännandecykeln för varje erbjudande för att börja göra det live. När du godkänner innehåll aktiverar du **Partner** eller **Bästa erbjudande** erbjudandet ger utrymme, beroende på vilket erbjudande det gäller.
 
 ### Konfigurera erbjudandeutrymmena i den identifierade miljön {#configure-the-offer-spaces-in-the-identified-environment}
 
@@ -304,7 +305,7 @@ Om du vill skapa de två erbjudandeutrymmena använder du samma procedur som fö
 I det här exemplet sker en kontaktidentifiering tack vare e-postadressen i Adobe Campaign-databasen. Gör så här om du vill lägga till mottagarens e-postadress i utrymmet:
 
 1. I den identifierade miljön går du till mappen för erbjudandeutrymme.
-1. Välj **Bästa erbjudande** visa utrymme och klicka **[!UICONTROL Advanced parameters]**.
+1. Välj **Bästa erbjudande** erbjud utrymme och klicka **[!UICONTROL Advanced parameters]**.
 
    ![](assets/offer_inbound_fallback_example_044.png)
 
@@ -323,7 +324,7 @@ I det här exemplet sker en kontaktidentifiering tack vare e-postadressen i Adob
 
 ### Skapa erbjudandekategorier i en identifierad miljö {#creating-offer-categories-in-an-identified-environment}
 
-Vi ska skapa två olika kategorier: den **Bästa erbjudande** kategori och **Partner** -kategori, var och en med två personaliserade erbjudanden.
+Vi ska skapa två separata kategorier: **Bästa erbjudande** kategori och **Partner** -kategori, var och en med två personaliserade erbjudanden.
 
 1. Gå till **[!UICONTROL Offer catalogs]** i den identifierade miljön.
 1. Som i den anonyma miljön lägger du till två **[!UICONTROL Offer category]** mappar med **Bästa erbjudande** och **Partner** som etiketter.
@@ -367,7 +368,7 @@ Vi vill skapa två personaliserade erbjudanden för varje kategori, nämligen fy
 
 ### Konfigurera erbjudandeutrymmen på webbsidan {#configuring-offer-spaces-on-the-web-page}
 
-På Neobanks webbplats finns tre olika erbjudanden: två för bankrelaterade erbjudanden från **Bästa erbjudande** och en för erbjudanden från **Partner** kategori.
+På Neobank-företagets webbplats finns tre erbjudanden: två för bankrelaterade erbjudanden från **Bästa erbjudande** och en för erbjudanden från **Partner** kategori.
 
 ![](assets/offer_inbound_fallback_example_038.png)
 
@@ -383,7 +384,7 @@ Gör så här om du vill konfigurera de här erbjudandeutrymmena HTML på webbpl
 
    ![](assets/offer_inbound_fallback_example_040.png)
 
-   I det här exemplet **ContBO1** och **ContBO2** ta emot värdet **OsWebBestOfferIdentified**, dvs. det interna namnet på **Bästa erbjudande** erbjuder utrymme som skapats tidigare i den identifierade miljön. The **CatBestOffer** och **CatBestOfferAnonym** värdena matchar det interna namnet på **Bästa erbjudande** kategorier för anonyma och identifierade miljöer.
+   I detta exempel **ContBO1** och **ContBO2** ta emot värdet **OsWebBestOfferIdentified**, dvs. det interna namnet på **Bästa erbjudande** erbjuder utrymme som skapats tidigare i den identifierade miljön. The **CatBestOffer** och **CatBestOfferAnonym** värdena matchar det interna namnet på **Bästa erbjudande** kategorier för anonyma och identifierade miljöer.
 
    ![](assets/offer_inbound_fallback_example_041.png)
 
@@ -397,13 +398,13 @@ Gör så här om du vill konfigurera de här erbjudandeutrymmena HTML på webbpl
 
    Personens identifiering kan baseras på en webbläsarcookie, en läsparameter i URL:en, e-postadressen eller identifieraren för personen. Om ett annat fält i mottagartabellen än primärnyckeln används, måste det definieras i de avancerade parametrarna för blanksteget (se [Ange avancerade inställningar för de identifierade erbjudandeutrymmena](#specifying-the-advanced-settings-of-the-identified-offer-spaces)).
 
-1. Ange anrops-URL.
+1. Ange anrops-URL:en.
 
    ![](assets/offer_inbound_fallback_example_049.png)
 
    URL:en innehåller **EnvNeobankRecip**, den identifierade miljöns interna namn.
 
-När du öppnar webbsidan; skriptet gör att du kan anropa interaktionsmotorn för att visa innehållet i erbjudanden i relevanta delar av webbsidan. I ett enda anrop till Adobe Campaign-servern avgör motorn miljön, erbjudandeutrymmet och de kategorier som ska väljas.
+När du öppnar webbsidan kan du med skriptet anropa interaktionsmotorn för att visa innehållet i erbjudandena i de relevanta utrymmena på webbsidan. I ett enda anrop till Adobe Campaign-servern avgör motorn miljön, erbjudandeutrymmet och de kategorier som ska väljas.
 
 I det här exemplet känner motorn igen den identifierade miljön (**EnvNeobankIdRecip**). Här anges erbjudandeutrymmet (**OSWebBestOfferIdentified**) och **Bästa erbjudande** kategori (**CatBestOffer**) för det första och andra erbjudandet på webbsidan samt (**OSWebPartnerIdentified**) erbjuder utrymme och **Partner** kategori (**CatPartner**) för det tredje erbjudandeutrymmet på webbplatsen.
 

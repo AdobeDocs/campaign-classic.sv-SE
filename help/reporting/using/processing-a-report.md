@@ -2,13 +2,13 @@
 product: campaign
 title: Använd en analysrapport
 description: Använd en analysrapport
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
-feature: Reporting
+badge-v7: label="v7" type="Informative" tooltip="Gäller Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Gäller även Campaign v8"
+feature: Reporting, Monitoring
 exl-id: d133efec-33e1-4711-a90f-e40385059386
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '816'
+source-wordcount: '828'
 ht-degree: 1%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 1%
 
 Om du har rätt behörighet kan du spara en analysrapport som har skapats från en mall eller exportera den i Excel-, PDF- eller OpenOffice-format.
 
-Spara rapporten genom att klicka på **[!UICONTROL Save]** och ge rapporten en etikett.
+Spara rapporten genom att klicka **[!UICONTROL Save]** och ge rapporten en etikett.
 
 Välj **[!UICONTROL Also save data]** om du vill skapa en historik över rapporten och se rapportens värden när du sparar den. Mer information finns i [Arkivera analysrapporter](#archiving-analysis-reports).
 
@@ -33,7 +33,7 @@ När den har sparats kan den här rapporten återanvändas för att generera and
 
 ![](assets/s_ncs_user_report_wizard_08a.png)
 
-Om du vill göra ändringar i den här rapporten redigerar du **[!UICONTROL Administration > Configuration > Adobe Campaign tree reports]** noden i Adobe Campaign-trädet (eller den första mappen av typen Rapporter som operatorn har redigeringsbehörighet för). Mer information finns i [Konfigurera layouten för en beskrivande analysrapport](#configuring-the-layout-of-a-descriptive-analysis-report).
+Om du vill ändra den här rapporten redigerar du **[!UICONTROL Administration > Configuration > Adobe Campaign tree reports]** noden i Adobe Campaign-trädet (eller den första mappen av typen Rapporter som operatorn har redigeringsbehörighet för). Mer information finns i [Konfigurera layouten för en beskrivande analysrapport](#configuring-the-layout-of-a-descriptive-analysis-report).
 
 ## Ytterligare inställningar för analysrapport {#analysis-report-additional-settings}
 
@@ -53,7 +53,7 @@ När du skapar en rapport med **[!UICONTROL qualitative distribution]** Visnings
 
 ![](assets/s_ncs_advuser_report_display_01.png)
 
-Om du vill ändra schemat för rapporten klickar du på **[!UICONTROL Select the link]** och väljer en annan tabell i databasen.
+Om du vill ändra rapportens schema klickar du på **[!UICONTROL Select the link]** och väljer en annan tabell i databasen.
 
 ![](assets/s_ncs_advuser_report_display_02.png)
 
@@ -94,13 +94,13 @@ Du kan anpassa datalayouten direkt i de beskrivande analystabellerna. Det gör d
 * **[!UICONTROL Sort from A to Z]** om du vill sortera variabelvärdena från låg till hög.
 * **[!UICONTROL Sort from Z to A]** för att sortera variabelvärdena high till low.
 
-   ![](assets/s_ncs_advuser_report_wizard_016.png)
+  ![](assets/s_ncs_advuser_report_wizard_016.png)
 
 Uppdatera vyn om du vill återgå till den ursprungliga visningen.
 
 ### Alternativ för analysrapportdiagram {#analysis-report-chart-options}
 
-Det går att anpassa visningen av data i diagrammet. Om du vill göra det klickar du på **[!UICONTROL Variables...]** länk som är tillgänglig under urvalsfasen för diagramtyp.
+Det går att anpassa visningen av data i diagrammet. Klicka på **[!UICONTROL Variables...]** länk som är tillgänglig under urvalsfasen för diagramtyp.
 
 ![](assets/s_ncs_advuser_report_wizard_3c.png)
 
@@ -109,13 +109,13 @@ Följande alternativ är tillgängliga:
 * I fönstrets övre del kan du ändra diagrammets visningsområde.
 * Etiketter visas som standard i diagrammet. Du kan dölja dem genom att avmarkera **[!UICONTROL Show values]** alternativ.
 * The **[!UICONTROL Accumulate values]** kan du lägga till värden från en serie till en annan.
-* Du kan välja om du vill visa diagramförklaringen eller inte: om du vill dölja den avmarkerar du lämpligt alternativ. Som standard visas teckenförklaringen utanför diagrammet i det övre högra hörnet.
+* Du kan bestämma om du vill visa diagramförklaringen eller inte: avmarkera lämpligt alternativ om du vill dölja den. Som standard visas teckenförklaringen utanför diagrammet i det övre högra hörnet.
 
-   Förklaringen kan också visas ovanpå diagrammet för att spara på visningsutrymmet. Välj alternativet **[!UICONTROL Include in the chart]**
+  Förklaringen kan också visas ovanpå diagrammet för att spara på visningsutrymmet. Markera alternativet om du vill göra det **[!UICONTROL Include in the chart]**
 
-   Markera den lodräta och vågräta justeringen i dialogrutan **[!UICONTROL Caption position]** nedrullningsbar lista.
+  Markera den lodräta och vågräta justeringen i dialogrutan **[!UICONTROL Caption position]** listruta.
 
-   ![](assets/s_ncs_advuser_report_wizard_3d.png)
+  ![](assets/s_ncs_advuser_report_wizard_3d.png)
 
 ## Exportera en analysrapport {#exporting-an-analysis-report}
 

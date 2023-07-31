@@ -2,14 +2,15 @@
 product: campaign
 title: Externa konton
 description: Lär dig hur du skapar externa konton
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+feature: Installation, Application Settings, External Account
+badge-v7-only: label="v7" type="Informative" tooltip="Gäller endast Campaign Classic v7"
 audience: platform
 content-type: reference
 topic-tags: administration-basics
 exl-id: 4a17d5e8-c73f-42e7-b641-0fee6a52c5c0
-source-git-commit: 43158445f688f4c2612d4dad76f2243b2e358b35
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '1830'
+source-wordcount: '1837'
 ht-degree: 7%
 
 ---
@@ -34,7 +35,7 @@ Följ stegen nedan om du vill skapa ett nytt externt konto. Detaljerade inställ
 
    ![](assets/ext_account_2.png)
 
-1. Ange **[!UICONTROL Label]** och **[!UICONTROL Internal Name]**.
+1. Ange en **[!UICONTROL Label]** och **[!UICONTROL Internal Name]**.
 1. Välj ditt externa konto **[!UICONTROL Type]** vilken du vill skapa.
 1. Konfigurera åtkomsten till kontot genom att ange autentiseringsuppgifter beroende på vald extern kontotyp.
 
@@ -49,13 +50,13 @@ Det externa kontot skapas och läggs till i listan över externa konton.
 
 ### Studsmeddelanden {#bounce-mails-external-account}
 
-The **Studsa meddelanden** externt konto anger det externa POP3-konto som ska användas för att ansluta till e-posttjänsten. Mer information om det här externa kontot finns i [page](../../workflow/using/inbound-emails.md).
+The **Studsa e-post** externt konto anger det externa POP3-konto som ska användas för att ansluta till e-posttjänsten. Mer information om det här externa kontot finns i [page](../../workflow/using/inbound-emails.md).
 
 Alla servrar som konfigurerats för POP3-åtkomst kan användas för att ta emot returmeddelanden.
 
 ![](assets/ext_account_6.png)
 
-Så här konfigurerar du **[!UICONTROL Bounce mails (defaultPopAccount)]** externt konto:
+Konfigurera **[!UICONTROL Bounce mails (defaultPopAccount)]** externt konto:
 
 * **[!UICONTROL Server]**
 
@@ -63,7 +64,7 @@ Så här konfigurerar du **[!UICONTROL Bounce mails (defaultPopAccount)]** exter
 
 * **[!UICONTROL Port]**
 
-  Portnummer för POP3-anslutning. Standardporten är 110.
+  Portnummer för POP3-anslutning. Standardporten är 10.
 
 * **[!UICONTROL Account]**
 
@@ -117,7 +118,7 @@ Följande kanaler kan konfigureras:
 * [Mobil (SMS)](../../delivery/using/sms-set-up.md#creating-an-smpp-external-account)
 * [Telefon](../../delivery/using/steps-about-delivery-creation-steps.md#other-channels)
 * [Direktmeddelande](../../delivery/using/about-direct-mail-channel.md)
-* [byrå](../../delivery/using/steps-about-delivery-creation-steps.md#other-channels)
+* [Byrå](../../delivery/using/steps-about-delivery-creation-steps.md#other-channels)
 * [Twitter](../../social/using/about-social-marketing.md)
 * [iOS](../../delivery/using/configuring-the-mobile-application.md)
 * [Android-kanal](../../delivery/using/configuring-the-mobile-application-android.md)
@@ -126,11 +127,11 @@ Följande kanaler kan konfigureras:
 
 Det externa kontot för e-postroutning tillhandahålls som standard, anpassat efter din konfiguration.
 
-Som lokal/blandad kund kan du skapa nya externa routningskonton eller uppdatera parametrar enligt beskrivningen nedan. Den här konfigurationen är reserverad för expertanvändare och kan påverka leveransmöjligheterna. Kontakta Adobe kundtjänst eller er Adobe-representant om du har några frågor.
+Som en lokal/blandad kund kan du skapa nya externa routningskonton eller uppdatera parametrar enligt beskrivningen nedan. Den här konfigurationen är reserverad för expertanvändare och kan påverka leveransmöjligheterna. Kontakta Adobe kundtjänst eller er Adobe-representant om du har några frågor.
 
 * Du kan använda en **Mid-sourcing**, **Extern** routning, eller **Massor** leveransroutningstyp.
 
-* För **Massor** och **Mid-sourcing** leveranssätt kan du ange varumärkningsparametrar i **Varumärke** -fliken. De här parametrarna används för att åsidosätta [standardparametrar](../../installation/using/deploying-an-instance.md#email-channel-parameters) for **URL för speglingssida** och **Feladress** med inställningar som är specifika för ert varumärke.
+* För **Massor** och **Mid-sourcing** leveranssätt kan du ange varumärkningsparametrar i **Varumärke** -fliken. Dessa parametrar används för att åsidosätta [standardparametrar](../../installation/using/deploying-an-instance.md#email-channel-parameters) for **URL för speglingssida** och **Feladress** med inställningar som är specifika för ert varumärke.
 
   ![](assets/ext-account-branding.png)
 
@@ -154,7 +155,7 @@ Om du har en uppdelad arkitektur måste du ange de körningsinstanser som är l�
 
   Lösenord för kontot enligt definitionen i mappen operator.
 
-Mer information om den här konfigurationen finns i [page](../../message-center/using/configuring-instances.md#control-instance).
+Mer information om konfigurationen finns i [page](../../message-center/using/configuring-instances.md#control-instance).
 
 ## Tillgång till externa systemkonton
 
@@ -212,7 +213,7 @@ Med det externa SFTP-kontot kan du konfigurera och testa åtkomst till en server
 
 Så här lägger du till SSH-nycklar i Windows:
 
-1. Skapa **STARTSIDA** systemvariabel med ett värde angivet som installationskatalog.
+1. Skapa **HEM** systemvariabel med ett värde angivet som installationskatalog.
 
 2. Lägg till din privata nyckel i `/$HOME/.ssh/id_rsa` mapp.
 
@@ -220,7 +221,7 @@ Så här lägger du till SSH-nycklar i Windows:
 
 ### Extern databas (FDA) {#external-database-external-account}
 
-Använd **Extern databas** skriv ett externt konto för att ansluta till en extern databas. Läs mer om FDA-alternativet (Federated Data Access) i [det här avsnittet](../../installation/using/about-fda.md).
+Använd **Extern databas** skriv ett externt konto för att ansluta till en extern databas. Läs mer om FDA (Federated Data Access) i [det här avsnittet](../../installation/using/about-fda.md).
 
 Externa databaser som är kompatibla med Campaign listas i [Kompatibilitetsmatris](../../rn/using/compatibility-matrix.md)
 
@@ -228,16 +229,16 @@ Externa databaser som är kompatibla med Campaign listas i [Kompatibilitetsmatri
 
 Konfigurationsinställningarna för det externa kontot beror på databasmotorn. Läs mer i följande avsnitt:
 
-* Konfigurera åtkomst till [vertica analytics](../../installation/using/configure-fda-vertica.md)
+* Konfigurera åtkomst till [Vertica analytics](../../installation/using/configure-fda-vertica.md)
 * Konfigurera åtkomst till [Snowflake](../../installation/using/configure-fda-snowflake.md)
 * Konfigurera åtkomst till [Google BigQuery](../../installation/using/configure-fda-google-big-query.md)
-* Konfigurera åtkomst till [azure synapse](../../installation/using/configure-fda-synapse.md)
+* Konfigurera åtkomst till [Azure synapse](../../installation/using/configure-fda-synapse.md)
 * Konfigurera åtkomst till [Hadoop](../../installation/using/configure-fda-hadoop.md)
 * Konfigurera åtkomst till [Oracle](../../installation/using/configure-fda-oracle.md)
 * Konfigurera åtkomst till [Netezza](../../installation/using/configure-fda-netezza.md)
 * Konfigurera åtkomst till [SAP HANA](../../installation/using/configure-fda-sap-hana.md)
 * Konfigurera åtkomst till [Snowflake](../../installation/using/configure-fda-snowflake.md)
-* Konfigurera åtkomst till [sybase IQ](../../installation/using/configure-fda-sybase.md)
+* Konfigurera åtkomst till [Sybase IQ](../../installation/using/configure-fda-sybase.md)
 * Konfigurera åtkomst till [Teradata](../../installation/using/configure-fda-teradata.md)
 
 
@@ -323,9 +324,9 @@ Mer information om detta hittar du i det här [avsnittet](../../integrations/usi
 >
 > **[!UICONTROL On-premise]** och **[!UICONTROL Office 365]** distributionstyperna är nu inaktuella. [Läs mer](../../rn/using/deprecated-features.md).
 
-The **[!UICONTROL Microsoft Dynamics CRM]** Med ett externt konto kan du importera och exportera Microsoft Dynamics-data till Adobe Campaign.
+The **[!UICONTROL Microsoft Dynamics CRM]** externt konto låter dig importera och exportera Microsoft Dynamics-data till Adobe Campaign.
 
-Läs mer om Campaign - Microsoft Dynamics CRM Connector i detta [page](../../platform/using/crm-ms-dynamics.md).
+Läs mer om Campaign - Microsoft Dynamics CRM-koppling i det här [page](../../platform/using/crm-ms-dynamics.md).
 
 Med **[!UICONTROL Web API]** distributionstyp och **[!UICONTROL Password credentials]** autentisering måste du ange följande information:
 
@@ -363,7 +364,7 @@ Med **[!UICONTROL Web API]** distributionstyp och **[!UICONTROL Certificate]** a
 
   Observera att den privata nyckeln måste kodas till Base64.
 
-  Om du vill göra det kan du använda hjälp av en Base64-kodare eller kommandoraden `base64 -w0 private.key` för Linux.
+  Du kan göra det med hjälp av en Base64-kodare eller via kommandoraden `base64 -w0 private.key` för Linux.
 
 * **[!UICONTROL Custom Key identifier]**
 
@@ -377,11 +378,11 @@ Med **[!UICONTROL Web API]** distributionstyp och **[!UICONTROL Certificate]** a
 
   CRM-version mellan **[!UICONTROL Dynamics CRM 2007]**, **[!UICONTROL Dynamics CRM 2015]** eller **[!UICONTROL Dynamics CRM 2016]**.
 
-Mer information om den här konfigurationen finns i [page](../../platform/using/crm-connectors.md).
+Mer information om konfigurationen finns i [page](../../platform/using/crm-connectors.md).
 
 ### Salesforce.com CRM  {#salesforce-crm-external-account}
 
-The **[!UICONTROL Salesforce CRM]** Med ett externt konto kan du importera och exportera Salesforce-data till Adobe Campaign.
+The **[!UICONTROL Salesforce CRM]** externt konto låter dig importera och exportera Salesforce-data till Adobe Campaign.
 
 ![](assets/ext_account_17.png)
 
@@ -409,7 +410,7 @@ Om du vill konfigurera det externa Salesforce CRM-kontot så att det fungerar me
 
 För det här externa kontot måste du konfigurera Salesforce CRM med konfigurationsguiden.
 
-Mer information om den här konfigurationen finns i [page](../../platform/using/crm-connectors.md).
+Mer information om konfigurationen finns i [page](../../platform/using/crm-connectors.md).
 
 ## Externa konton för dataöverföring
 
@@ -447,11 +448,11 @@ Om du vill veta var du hittar nyckel-ID:t och den hemliga åtkomstnyckeln kan du
 
 ### Azure Blob Storage {#azure-blob-external-account}
 
-The **Azure Blob Storage** externt konto kan användas för att importera eller exportera data till Adobe Campaign med en **[!UICONTROL Transfer file]** arbetsflödesaktivitet. Mer information om detta hittar du i det här [avsnittet](../../workflow/using/file-transfer.md).
+The **Azure Blob-lagring** externt konto kan användas för att importera eller exportera data till Adobe Campaign med en **[!UICONTROL Transfer file]** arbetsflödesaktivitet. Mer information om detta hittar du i det här [avsnittet](../../workflow/using/file-transfer.md).
 
 ![](assets/ext_account_23.png)
 
-Så här konfigurerar du **[!UICONTROL Azure external account]** om du vill arbeta med Adobe Campaign måste du ange följande:
+Konfigurera **[!UICONTROL Azure external account]** om du vill arbeta med Adobe Campaign måste du ange följande:
 
 * **[!UICONTROL Server]**
 
@@ -463,4 +464,4 @@ Så här konfigurerar du **[!UICONTROL Azure external account]** om du vill arbe
 
 * **[!UICONTROL Access key]**
 
-  Ta reda på var du hittar **[!UICONTROL Access key]**, se [page](https://docs.microsoft.com/en-us/azure/storage/common/storage-account-keys-manage?tabs=azure-portal).
+  Ta reda på var du hittar **[!UICONTROL Access key]**, se det här [page](https://docs.microsoft.com/en-us/azure/storage/common/storage-account-keys-manage?tabs=azure-portal).

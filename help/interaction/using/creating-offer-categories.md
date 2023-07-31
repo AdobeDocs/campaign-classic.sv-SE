@@ -2,14 +2,15 @@
 product: campaign
 title: Skapa erbjudandekategorier
 description: Skapa erbjudandekategorier
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+feature: Interaction, Offers
+badge-v7-only: label="v7" type="Informative" tooltip="Gäller endast Campaign Classic v7"
 audience: interaction
 content-type: reference
 topic-tags: managing-an-offer-catalog
 exl-id: ed97a1b5-c870-4b67-98b6-16adc316fd46
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '266'
+source-wordcount: '273'
 ht-degree: 3%
 
 ---
@@ -44,20 +45,20 @@ Om du vill skapa ytterligare en kategori gör du så här:
 
    * Tilldela berättigandedatum från **[!UICONTROL Eligibility]** -fliken.
 
-      ![](assets/offer_cat_create_004.png)
+     ![](assets/offer_cat_create_004.png)
 
    * Ange nyckelord som kan användas för att välja erbjudanden inom denna kategori med hjälp av **[!UICONTROL Themes]** fält.
 
-      ![](assets/offer_cat_create_005.png)
+     ![](assets/offer_cat_create_005.png)
 
-      >[!NOTE]
-      >
-      >När du anropar erbjudandemotorn väljs bara den del av katalogen där teman eller kategorierna matchar parametrarna.
+     >[!NOTE]
+     >
+     >När du anropar erbjudandemotorn väljs bara den del av katalogen där teman eller kategorierna matchar parametrarna.
 
    * Tillfälligt&quot;öka&quot; erbjudandevikten för en kategori under en viss period via **[!UICONTROL Multiplier weight]** fält.
 
-      ![](assets/offer_cat_create_006.png)
+     ![](assets/offer_cat_create_006.png)
 
-En sammanfattning av reglerna för behörighet finns på kontrollpanelen för de erbjudanden som ingår i kategorin. Om du vill visa dem klickar du på **[!UICONTROL Schedule and eligibility rules of the offer]** länk.
+En sammanfattning av reglerna för behörighet finns på kontrollpanelen för de erbjudanden som ingår i kategorin. Klicka på **[!UICONTROL Schedule and eligibility rules of the offer]** länk.
 
 ![](assets/offer_create_006.png)

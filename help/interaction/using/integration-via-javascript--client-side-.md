@@ -2,14 +2,15 @@
 product: campaign
 title: Integrering via JavaScript (klientsida)
 description: Integrering via JavaScript (klientsida)
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+feature: Interaction, Offers
+badge-v7-only: label="v7" type="Informative" tooltip="Gäller endast Campaign Classic v7"
 audience: interaction
 content-type: reference
 topic-tags: unitary-interactions
 exl-id: a9842e59-120c-4a35-abdf-6540a0bbdd6d
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '1140'
+source-wordcount: '1147'
 ht-degree: 2%
 
 ---
@@ -175,7 +176,7 @@ Den returnerade XML-noden ser ut så här:
 
 Följande exempel visar vilka konfigurationer som ska utföras i Adobe Campaign för att aktivera XML-läget och sedan resultatet av anropet till motorn på HTML-sidan.
 
-1. **Skapa en miljö och ett utrymme för erbjudanden**
+1. **Skapa en miljö och ett tillgängligt utrymme**
 
    Mer information om hur du skapar en miljö finns i [Live-/designmiljöer](../../interaction/using/live-design-environments.md).
 
@@ -183,7 +184,7 @@ Följande exempel visar vilka konfigurationer som ska utföras i Adobe Campaign 
 
 1. **Utöka erbjudandeschemat för att lägga till nya fält**
 
-   Schemat definierar följande fält: Titelnummer 2 och pris.
+   Det här schemat definierar följande fält: Rubrik 2 och pris.
 
    Schemats namn i exemplet är **cus:erbjudande**
 
@@ -222,7 +223,7 @@ Följande exempel visar vilka konfigurationer som ska utföras i Adobe Campaign 
 
 1. **Utöka erbjudandeformeln för att redigera nya fält och ändra ett befintligt fält**
 
-   Redigera **Erbjudande (nsm)** indataformulär.
+   Redigera **Erbjudande (nsm)** inmatningsformulär.
 
    I avsnittet Vyer infogar du de två nya fälten med följande innehåll:
 

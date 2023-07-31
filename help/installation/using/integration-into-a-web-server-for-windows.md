@@ -2,16 +2,17 @@
 product: campaign
 title: Integrering med en webbserver för Windows
 description: Integrering med en webbserver för Windows
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
-badge-v7-prem: label="on-premise & hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html" tooltip="Applies to on-premise and hybrid deployments only"
+feature: Installation, Instance Settings
+badge-v7-only: label="v7" type="Informative" tooltip="Gäller endast Campaign Classic v7"
+badge-v7-prem: label="lokal och hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=sv" tooltip="Gäller endast lokala och hybrida driftsättningar"
 audience: installation
 content-type: reference
 topic-tags: installing-campaign-in-windows-
 exl-id: 041c4431-baae-4e64-9e9a-0daa5123bd8a
-source-git-commit: acfe0c4139671fc3df69ff434ba307aaaaf70676
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '882'
-ht-degree: 4%
+source-wordcount: '907'
+ht-degree: 5%
 
 ---
 
@@ -55,7 +56,7 @@ I IIS 7 måste du, förutom standardtjänster, installera ISAPI-tillägg och ISA
 Använd följande konfigurationssteg:
 
 1. Öppna IIS via **[!UICONTROL Control panel > Administrative tools > Services]** -menyn.
-1. Skapa och konfigurera platsen (t.ex. Adobe Campaign) beroende på nätverkets parametrar (TCP-anslutningsporten, DNS-värden, IP-adress).
+1. Skapa och konfigurera platsen (t.ex. Adobe Campaign) beroende på parametrarna för nätverket (TCP-anslutningsporten, DNS-värden, IP-adressen).
 
    ![](assets/s_ncs_install_iis7_add_site.png)
 
@@ -67,7 +68,7 @@ Använd följande konfigurationssteg:
 
    ![](assets/s_ncs_install_iis7_parameters_step1.png)
 
-1. A **VBS** Med hjälp av skript kan du automatiskt konfigurera de resurser som används av Adobe Campaign-servern i den virtuella katalog som vi just har skapat. Starta programmet genom att dubbelklicka på **iis_neolane_setup.vbs** filen finns i `[INSTALL]\conf` mapp, var `[INSTALL]` är sökvägen till Adobe Campaign installationsmapp.
+1. A **VBS** Med hjälp av skript kan du automatiskt konfigurera de resurser som används av Adobe Campaign-servern i den virtuella katalog som vi just har skapat. Dubbelklicka på **iis_neolane_setup.vbs** filen som finns i `[INSTALL]\conf` mapp, var `[INSTALL]` är sökvägen till Adobe Campaign installationsmapp.
 
    ![](assets/s_ncs_install_iis7_parameters_step2.png)
 
@@ -77,11 +78,11 @@ Använd följande konfigurationssteg:
 
    Klicka **[!UICONTROL OK]** om webbservern används som en server för spårningsomdirigering, i annat fall klickar du **[!UICONTROL Cancel]**.
 
-   När flera platser redan har konfigurerats på webbservern visas en mellanliggande sida som anger vilken webbplats som installationen gäller för: Ange numret som är länkat till platsen och klicka på **[!UICONTROL OK]**.
+   När flera platser redan har konfigurerats på webbservern visas en mellanliggande sida som anger vilken webbplats som installationen gäller för: ange numret som är länkat till platsen och klicka på **[!UICONTROL OK]**.
 
    ![](assets/s_ncs_install_iis7_parameters_step3.png)
 
-   Ett bekräftelsemeddelande ska visas:
+   Ett bekräftelsemeddelande visas:
 
    ![](assets/s_ncs_install_iis7_parameters_step7.png)
 
@@ -144,7 +145,7 @@ Du kan också kontrollera att ISAPI DLL har lästs in korrekt.
 
 Gör så här:
 
-1. Redigera ISAPI-filter för Adobe Campaign webbplats genom att klicka på **[!UICONTROL Driver mapping]** ikon.
+1. Redigera ISAPI-filter för Adobe Campaign webbplats genom att klicka på **[!UICONTROL Driver mapping]** -ikon.
 1. Kontrollera innehållet i ISAPI-filtret:
 
    ![](assets/s_ncs_install_iis7_parameters_step11.png)

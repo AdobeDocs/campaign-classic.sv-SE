@@ -2,14 +2,15 @@
 product: campaign
 title: Kom igång med resurshantering för marknadsföring
 description: Identifiera hantering av marknadsföringsresurser
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+feature: Resource Management
+badge-v7-only: label="v7" type="Informative" tooltip="Gäller endast Campaign Classic v7"
 audience: campaign
 content-type: reference
 topic-tags: tasks--resources-and-budgets
 exl-id: 8cf4d30d-f914-438d-8836-030202b6a449
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '375'
+source-wordcount: '382'
 ht-degree: 1%
 
 ---
@@ -20,11 +21,11 @@ ht-degree: 1%
 
 The **Marknadsföringsresurshantering (MRM)** kan ni styra marknadsföringsåtgärder i ett samverkansbaserat läge genom att tillhandahålla fullständig hantering och realtidsspårning av de uppgifter, budgetar och marknadsföringsresurser som ingår.
 
-Adobe Campaign-operatorer kan koordinera sina åtgärder och godkänna sina framsteg i alla faser via fullständiga valideringsprocesser och lämpliga spårningsverktyg: rapportering, spårning av godkännanden, meddelanden, diskussionsforum osv. De varnas i händelse eller fel eller fördröjning och i varje nytt steg i valideringscykeln.
+Adobe Campaign-operatorer kan samordna sina åtgärder och godkänna deras framsteg i alla faser via fullständiga valideringsprocesser och lämpliga spårningsverktyg: rapportering, spårning av godkännanden, aviseringar, diskussionsforum osv. De varnas i händelse eller fel eller fördröjning och i varje nytt steg i valideringscykeln.
 
 Inom ramen för programmen och delprogrammen i marknadsföringsplanerna kan uppgifter skapas och tilldelas de berörda aktörerna och sedan hanteras under alla faser i dem.
 
-**MRM** kan ni också hantera marknadsföringsresurser där flera deltagare är inblandade: Resursernas integritet och övervakning sker via en särskild kontrollpanel.
+**MRM** kan ni också hantera marknadsföringsresurser där flera deltagare är inblandade: integriteten och övervakningen av resurser utförs via en dedikerad kontrollpanel.
 
 Slutligen utökas budgethanteringsfunktionen till hantering av mål- och utgiftsrader samt utökade inbyggda rapporter. Sedan kan ni övervaka och mäta produktiviteten och resultatet för alla marknadsföringsaktiviteter.
 
@@ -34,15 +35,15 @@ Följande koncept och termer är specifika för Adobe Campaign Marketing Resourc
 
 * **Uppgift**
 
-   En uppgift motsvarar en åtgärd som ska utföras i samband med en kampanj. En uppgift tilldelas en grupp eller person. En underordnad uppgift kan vara beroende av en överordnad uppgift, vilket innebär att den överordnade uppgiften inte kommer att utföras förrän alla underordnade uppgifter har slutförts. Exempel på uppgifter är: som hänvisar till en webbplats, en budgetgranskning, en sammanfattning osv.
+  En uppgift motsvarar en åtgärd som ska utföras i samband med en kampanj. En uppgift tilldelas en grupp eller person. En underordnad uppgift kan vara beroende av en överordnad uppgift, vilket innebär att den överordnade uppgiften inte kommer att utföras förrän alla underordnade uppgifter har slutförts. Exempel på uppgifter är: referera till en webbplats, en budgetgranskning, en sammanfattning, osv.
 
-   Mer information finns i [Skapa och hantera uppgifter](../../mrm/using/creating-and-managing-tasks.md).
+  Mer information finns i [Skapa och hantera uppgifter](../../mrm/using/creating-and-managing-tasks.md).
 
 * **Marknadsföringsresurser**
 
-   Med Adobe Campaign kan ni följa utvecklingen av samverkansbaserade marknadsföringsprojekt som kommunikationsmedier, åtgärdsplaner, nyhetsbrev osv. Framtagnings- och godkännandecykeln för dessa marknadsföringsresurser kan spåras från kontrollpanelen för resurser tills de publiceras.
+  Med Adobe Campaign kan ni följa utvecklingen av samverkansbaserade marknadsföringsprojekt som kommunikationsmedier, åtgärdsplaner, nyhetsbrev osv. Framtagnings- och godkännandecykeln för dessa marknadsföringsresurser kan spåras från kontrollpanelen för resurser tills de publiceras.
 
-   Mer information finns i [Hantera marknadsföringsresurser](../../mrm/using/managing-marketing-resources.md).
+  Mer information finns i [Hantera marknadsföringsresurser](../../mrm/using/managing-marketing-resources.md).
 
 >[!NOTE]
 >

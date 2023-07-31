@@ -2,12 +2,13 @@
 product: campaign
 title: Viral och social marknadsföring
 description: Viral och social marknadsföring
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
+feature: Social Marketing
+badge-v7: label="v7" type="Informative" tooltip="Gäller Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Gäller även Campaign v8"
 exl-id: 10fd561f-1b07-490e-9f66-d67e44a0def5
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '561'
+source-wordcount: '573'
 ht-degree: 2%
 
 ---
@@ -18,13 +19,13 @@ ht-degree: 2%
 
 Med Adobe Campaign kan ni skapa verktyg för att uppmuntra viral marknadsföring.
 
-På så sätt kan mottagare eller besökare dela information med sitt nätverk: från att lägga till en länk till sin Facebook- eller Twitter-profil till att skicka ett meddelande till en vän.
+Detta gör att mottagare eller besökare på en webbplats kan dela information med sitt nätverk: från att lägga till en länk till sin Facebook- eller Twitter-profil till att skicka ett meddelande till en vän.
 
 ![](assets/s_ncs_user_viral_icons.png)
 
 >[!CAUTION]
 >
->För att nya länkar ska fungera på rätt sätt måste den matchande spegelsidan vara tillgänglig. Det gör du genom att inkludera länken till spegelsidan i leveransen.
+>För att de nya länkarna ska fungera på rätt sätt måste den matchande spegelsidan vara tillgänglig. Det gör du genom att inkludera länken till spegelsidan i leveransen.
 
 ## Sociala nätverk: dela en länk {#social-networks--sharing-a-link}
 
@@ -46,18 +47,18 @@ När mottagaren klickar på ikonen för ett av de sociala nätverk som visas omd
 
 >[!NOTE]
 >
->Det här anpassningsblocket innehåller alla länkar (för att skicka och dela meddelanden med alla sociala nätverk). Den kan anpassas efter dina behov. Konfigurationen är dock reserverad för avancerade användare. Om du vill redigera det matchande personaliseringsblocket går du till **[!UICONTROL Resources > Campaign management > Personalization blocks]** noden i Adobe Campaign-trädet.
+>Det här anpassningsblocket innehåller alla länkar (för att skicka och dela meddelanden med alla sociala nätverk). Den kan anpassas efter dina behov. Konfigurationen är dock reserverad för avancerade användare. Om du vill redigera matchande personaliseringsblock går du till **[!UICONTROL Resources > Campaign management > Personalization blocks]** noden i Adobe Campaign-trädet.
 
-## Viral marketing: vidarebefordra till en vän {#viral-marketing--forward-to-a-friend}
+## Virusmarknadsföring: vidarebefordra till en vän {#viral-marketing--forward-to-a-friend}
 
-Med en virustjänst kan hänskjutningsåtgärder utföras: Med dessa åtgärder kan du vidarebefordra ett meddelande till en vän. Referenspersonens profil lagras tillfälligt i databasen (i en dedikerad tabell). Vidarebefordrade meddelanden innehåller en länk där mottagaren kan prenumerera: om de gör det läggs de till i Adobe Campaign-databasen.
+Med en virustjänst kan hänskjutningsåtgärder utföras: dessa åtgärder gör att du kan vidarebefordra ett meddelande till en vän. Referenspersonens profil lagras tillfälligt i databasen (i en särskild tabell). Vidarebefordrade meddelanden innehåller en länk som referenten kan prenumerera på: om de gör det läggs de till i Adobe Campaign-databasen.
 
 Vidarebefordran av meddelanden baseras på samma principer som länkar till sociala nätverk.
 
 Använd följande steg:
 
 1. Lägg till **[!UICONTROL Social network sharing links]** personaliseringsblock i det ursprungliga meddelandets brödtext.
-1. Mottagaren av meddelandet kan klicka på **[!UICONTROL Email]** om du vill skicka det här meddelandet till en eller flera vänner.
+1. Mottagaren kan klicka på **[!UICONTROL Email]** om du vill skicka det här meddelandet till en eller flera vänner.
 
    ![](assets/s_ncs_user_viral_email_link.png)
 
@@ -83,7 +84,7 @@ Använd följande steg:
    >
    >Mer information om webbprogram finns i [det här avsnittet](../../web/using/about-web-applications.md).
 
-   När de har validerat skickas ett bekräftelsemeddelande till dem: de registreras endast för gott när de aktiverar länken i bekräftelsemeddelandet. Det här meddelandet har skapats baserat på **[!UICONTROL Registration confirmation]** -mall som lagras i **[!UICONTROL Administration > Campaign management > Technical delivery templates]** nod.
+   När de har validerat skickas ett bekräftelsemeddelande till dem: de registreras bara för gott när de har aktiverat länken i bekräftelsemeddelandet. Det här meddelandet har skapats baserat på **[!UICONTROL Registration confirmation]** -mall som lagras i **[!UICONTROL Administration > Campaign management > Technical delivery templates]** nod.
 
    Referensen läggs till i **Mottagare** databasmappen och prenumererar (som standard) på **Nyhetsbrev** informationstjänst.
 
@@ -93,8 +94,8 @@ Delning och åtkomst till delad information spåras. Denna information som Adobe
 
 * i **[!UICONTROL Tracking]** Leveransflik (eller individuellt för varje mottagare):
 
-   ![](assets/s_ncs_user_network_del_tracking_tab.png)
+  ![](assets/s_ncs_user_network_del_tracking_tab.png)
 
 * i en dedikerad **[!UICONTROL Sharing to social networks]** rapport:
 
-   ![](assets/s_ncs_user_viral_report.png)
+  ![](assets/s_ncs_user_viral_report.png)

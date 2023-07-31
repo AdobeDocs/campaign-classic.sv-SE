@@ -2,14 +2,14 @@
 product: campaign
 title: Konfigurera åtkomst till rapporten
 description: Konfigurera åtkomst till rapporten
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
-feature: Reporting
+feature: Reporting, Monitoring
+badge-v7: label="v7" type="Informative" tooltip="Gäller Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Gäller även Campaign v8"
 exl-id: 1e5ab922-481c-4dce-a05e-a58408002e24
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '754'
-ht-degree: 1%
+source-wordcount: '766'
+ht-degree: 2%
 
 ---
 
@@ -28,16 +28,16 @@ Definiera rapportens visningssammanhang på Adobe Campaign-plattformen med **[!U
 ![](assets/s_ncs_advuser_report_visibility_4.png)
 
 * **[!UICONTROL Single selection]** : rapporten är bara tillgänglig när en viss enhet har valts.
-* **[!UICONTROL Multiple selection]** : rapporten nås när flera enheter väljs.
-* **[!UICONTROL Global]** : rapporten nås via en lista över tillgängliga rapporter i **[!UICONTROL Reports]** -fliken.
+* **[!UICONTROL Multiple selection]** : rapporten nås när flera enheter har valts.
+* **[!UICONTROL Global]** : rapporten hämtas via en lista över tillgängliga rapporter i **[!UICONTROL Reports]** -fliken.
 
 ### Visningssekvens {#display-sequence}
 
 The **[!UICONTROL Sequence]** I kan du ange ett numeriskt värde som anger rapportens visningssekvens i listan.
 
-Som standard visas rapporter efter relevans: Med det värde som anges i det här fältet kan du sortera rapporter från det högsta (högsta värdet) till det minsta (minsta värdet) som är relevant.
+Som standard visas rapporter efter relevans: med det värde som anges i det här fältet kan du sortera rapporter från det högsta (högsta värdet) till det minsta (minsta värdet) som är relevant.
 
-Du kan välja vilken skala som ska användas beroende på dina behov: 1 till 10, 0 till 100, -10 till 10 osv.
+Du kan välja vilken skala som ska användas baserat på dina behov: 1 till 10, 0 till 100, -10 till 10 osv.
 
 ### Visningsvillkor {#display-conditions}
 
@@ -65,7 +65,7 @@ Rapporten kan också delas med specifika operatorer eller grupper av operatorer 
 
 The **[!UICONTROL Reports]** På -fliken visas alla tillgängliga rapporter på plattformen som den anslutna operatorn har åtkomstbehörighet till.
 
-Som standard sorteras de efter relevans, men du kan använda andra typer av filter: i bokstavsordning, efter ålder osv.
+Som standard sorteras de efter relevans, men du kan använda andra typer av filter: i bokstavsordning, efter ålder, osv.
 
 Du kan även filtrera visningen baserat på rapportkategorin:
 
@@ -127,7 +127,7 @@ Mer information om de här inställningarna finns i **Definiera egenskaper för 
 
 Det är obligatoriskt att publicera rapporten för att dela den med andra operatorer och visa den i listan över tillgängliga rapporter (se även [Rapportens visningssammanhang](#report-display-context)). Denna åtgärd måste utföras igen varje gång rapporten ändras.
 
-1. Öppna publiceringsguiden genom att klicka på **[!UICONTROL Publish]** i verktygsfältet.
+1. Öppna publiceringsguiden genom att klicka **[!UICONTROL Publish]** i verktygsfältet.
 
    ![](assets/s_ncs_advuser_report_publish_01.png)
 

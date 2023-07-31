@@ -2,12 +2,12 @@
 product: campaign
 title: Om kampanjtypologier
 description: Om kampanjtypologier
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
-feature: Typology Rules
+badge-v7-only: label="v7" type="Informative" tooltip="Gäller endast Campaign Classic v7"
+feature: Typology Rules, Campaigns
 exl-id: 6d5b8584-4aa1-4d9a-89d9-d41da75dd323
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '468'
+source-wordcount: '475'
 ht-degree: 18%
 
 ---
@@ -43,7 +43,7 @@ The **[!UICONTROL Rules]** kan du lägga till, ta bort eller visa de typologireg
 
 ## Använda typologier {#applying-typologies}
 
-Steg för att skapa och tillämpa en typologi på leveranser listas nedan:
+Steg för att skapa och tillämpa en typologi på dina leveranser listas nedan:
 
 1. Skapa typologiregler.
 
@@ -68,7 +68,7 @@ I den här videon förklaras hur du implementerar trötthetshantering i Adobe Ca
 
 >[!VIDEO](https://video.tv.adobe.com/v/25090?quality=12)
 
-### Konfigurera trötthetshantering med fördefinierade filter
+### Ställa in trötthetshantering med fördefinierade filter
 
 Trötthetshanteringen styr frekvens och antal meddelanden för att undvika överbelastning av mottagaren. Om du inte har kampanjoptimeringsmodulen i din kampanjinstans kan du konfigurera ett fördefinierat filter som filtrerar målpopulationen efter antalet meddelanden som tas emot I den här videon förklaras hur du implementerar trötthetshantering i Adobe Campaign Classic med hjälp av filter.
 

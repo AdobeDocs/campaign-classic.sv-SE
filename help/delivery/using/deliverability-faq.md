@@ -2,13 +2,13 @@
 product: campaign
 title: Viktiga punkter vid hantering av slutprodukter i Adobe Campaign Classic
 description: Lär dig viktiga saker när du hanterar slutprodukter i Adobe Campaign
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
-feature: Deliverability
+badge-v7: label="v7" type="Informative" tooltip="Gäller Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Gäller även Campaign v8"
+feature: Deliverability, Troubleshooting
 exl-id: f94897c1-b44c-4100-ac50-a89b13fa6f2f
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '654'
+source-wordcount: '666'
 ht-degree: 2%
 
 ---
@@ -51,32 +51,33 @@ Om problemet kvarstår kontaktar du de kommersiella tjänsterna eller leveranstj
    * Status **[!UICONTROL Denylisted]** är ett resultat av en feedbackslinga (när en person rapporterar ett meddelande som skräppost).
 
    * Status **[!UICONTROL Quarantined]** är ett resultat av ett mjukt eller hårt studsande.
-   Mer information finns i [det här avsnittet](understanding-quarantine-management.md#quarantine-vs-denylist).
+
+  Mer information finns i [det här avsnittet](understanding-quarantine-management.md#quarantine-vs-denylist).
 
 * **Vad betyder de olika anledningarna till karantänfel?**
 
-   Här följer tio möjliga orsaker: inte definierad, okänd av användare, ogiltig domän, avslagen på blockeringslista, ignorerat fel, ej tillgänglig, kontot inaktiverat, postlådan full, inte ansluten.
+  Här är tio möjliga orsaker: inte definierad, okänd användare, ogiltig domän, avslagen på blockeringslista, fel ignorerad, ej tillgänglig, kontot inaktiverat, postlådan full, inte ansluten.
 
-   Mer information finns i [Om karantänhantering](understanding-quarantine-management.md).
+  Mer information finns i [Om karantänhantering](understanding-quarantine-management.md).
 
 ## Ta bort från blockeringslista {#remove-from-denylist}
 
-* **En av mina mottagare lades till i blockeringslista av misstag. Hur tar jag bort dem från den så att jag kan börja skicka dem igen?**
+* **En av mina mottagare lades till i blockeringslista av misstag. Hur tar jag bort dem från denyisten så att jag kan börja skicka dem igen?**
 
    * Gå till **[!UICONTROL Administration > Campaign Management > Non deliverables Management > Non deliverables and addresses]**.
    * Ange värdet för **[!UICONTROL Status]** fält till **[!UICONTROL Valid]**.
    * Spara posten.
 
-* **Hur kan jag ta reda på om en av mina IP-adresser är på blockeringslista? Hur tar jag bort mina IP-adresser från ett blockeringslista?**
+* **Hur kan jag ta reda på om en av mina IP-adresser är på blockeringslista? Hur tar jag bort mina IP-adresser från blockeringslista?**
 
-   Om du vill kontrollera om din IP-adress finns på blockeringslista kan du använda olika webbplatser för att verifiera den, till exempel:
+  Om du vill kontrollera om din IP-adress finns på blockeringslista kan du verifiera den på olika webbplatser, till exempel:
    * [MX Toolbox](https://mxtoolbox.com/)
    * [Vad är min IP-adress?](https://whatismyipaddress.com)
 
-   I allmänhet returnerar resultatet av IP-adresskontrollen en lista som innehåller information om blockeringslista och även namnet på den webbplats som nekade IP-adressen.
+  I allmänhet returnerar resultatet av IP-adresskontrollen en lista som innehåller information om blockeringslista och även namnet på den webbplats som nekade IP-adressen.
 
-   Genom att klicka på motsvarande länk kan du komma åt webbplatsinformationen. Sedan kan du begära att din webbplats tas bort från den webbplats som lade till IP-adressen till blockeringslista.
+  Genom att klicka på motsvarande länk kan du komma åt webbplatsinformationen. Sedan kan du begära att din webbplats tas bort från den webbplats som lade till IP-adressen till blockeringslista.
 
-   >[!NOTE]
-   >
-   >Borttagningsprocessen kan variera beroende på webbplatsen. Vissa webbplatser kräver att du skapar ett konto, medan andra bara behöver du ange IP-adressen.
+  >[!NOTE]
+  >
+  >Borttagningsprocessen kan variera beroende på webbplatsen. Vissa webbplatser kräver att du skapar ett konto, medan andra bara behöver du ange IP-adressen.

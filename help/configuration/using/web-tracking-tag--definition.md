@@ -2,11 +2,12 @@
 product: campaign
 title: Definiera webbspårningstagg
 description: Definiera webbspårningstagg
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+feature: Application Settings
+badge-v7-only: label="v7" type="Informative" tooltip="Gäller endast Campaign Classic v7"
 exl-id: 0b5575be-57e7-4eee-9c0a-e9ef4b0931bf
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '353'
+source-wordcount: '360'
 ht-degree: 2%
 
 ---
@@ -44,7 +45,7 @@ I följande tabell visas en lista med särskilda parametrar som stöds av omdiri
                               <p>Sessionscookie</p> 
                            </td>
                            <td>
-                              <p>Leverans-ID och mottagaridentifierare.</p> 
+                              <p>Identifierare för leverans och mottagare.</p> 
                            </td> 
                         </tr>
                         <tr>
@@ -66,7 +67,7 @@ I följande tabell visas en lista med särskilda parametrar som stöds av omdiri
                               <p>URL-parameter</p> 
                            </td>
                            <td>
-                              <p>Identifierare för spårad webbsida: detta är den enda obligatoriska parametern.</p> 
+                              <p>Identifierare för spårad webbsida: Detta är den enda obligatoriska parametern.</p> 
                            </td> 
                         </tr>
                         <tr>
@@ -96,27 +97,27 @@ I följande tabell visas en lista med särskilda parametrar som stöds av omdiri
                      </tbody>  
                   </table>
 
-**Några webbspårnings-URL:er**
+**Några webbspårnings-URL**
 
 * Besök en startsida för identifierare
 
-   **https://myserver.adobe.com/r/9862?tagid=home**
+  **https://myserver.adobe.com/r/9862?tagid=home**
 
 * Samla in data om affärsvolym
 
-   **https://myserver.adobe.com/r/4567?tagid=command&amp;amount=100&amp;article=2l**
+  **https://myserver.adobe.com/r/4567?tagid=command&amp;amount=100&amp;article=2l**
 
 * Ange ett fält för att hitta mottagaren
 
-   **https://myserver.adobe.com/r/2353?tagid=home&amp;rcpid=saccount%3D10**
+  **https://myserver.adobe.com/r/2353?tagid=home&amp;rcpid=saccount%3D10**
 
-   En mottagare vars kontonummer är 10 skickas till startsidan.
+  En mottagare vars kontonummer är 10 skickas till startsidan.
 
 * Använda en standardleverans
 
-   **https://myserver.adobe.com/r/2456?tagid=home&amp;jobid=e6**
+  **https://myserver.adobe.com/r/2456?tagid=home&amp;jobid=e6**
 
-   En mottagare skickas till startsidan. Den här informationen lagras i leveransen med ID 230 (e6 i databas 16) såvida inte en sessions-cookie som innehåller en leveransidentifierare skickas med den här frågan.
+  En mottagare skickas till startsidan. Den här informationen lagras i leveransen med ID 230 (e6 i databas 16) såvida inte en sessions-cookie som innehåller en leveransidentifierare skickas med den här frågan.
 
 >[!NOTE]
 >

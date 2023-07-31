@@ -2,15 +2,16 @@
 product: campaign
 title: Godkänna och aktivera ett erbjudande
 description: Godkänna och aktivera ett erbjudande
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
+feature: Interaction, Offers
+badge-v7: label="v7" type="Informative" tooltip="Gäller Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Gäller även Campaign v8"
 audience: interaction
 content-type: reference
 topic-tags: managing-an-offer-catalog
 exl-id: cf7649fe-f62a-4dfa-a19e-9c1ca545e3e3
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '622'
+source-wordcount: '634'
 ht-degree: 2%
 
 ---
@@ -39,7 +40,7 @@ Du kan godkänna erbjudandeinnehållet på vissa tillgängliga platser och avvis
 
 Så här godkänner du erbjudandeinnehållet:
 
-1. Klicka på **[!UICONTROL Approval]** och markera **[!UICONTROL Approve content]** i popup.
+1. Klicka på **[!UICONTROL Approval]** knapp och markera **[!UICONTROL Approve content]** i popup.
 
    ![](assets/offer_validate_002.png)
 
@@ -65,27 +66,27 @@ Godkännande av berättigande för erbjudanden innebär att acceptera eller avvi
 
 * Du kan visa den fullständiga listan med regler genom att klicka **[!UICONTROL Schedule and eligibility rules]**.
 
-   ![](assets/offer_validate_005.png)
+  ![](assets/offer_validate_005.png)
 
 * Om du vill ändra reglerna för behörighet klickar du på **[!UICONTROL Reject]** och sedan klicka **[!UICONTROL Eligibility approval]**.
 
-   ![](assets/offer_validate_007.png)
+  ![](assets/offer_validate_007.png)
 
-   De olika statusvärdena uppdateras på instrumentpanelen för erbjudanden.
+  De olika statusvärdena uppdateras på instrumentpanelen för erbjudanden.
 
-   ![](assets/offer_validate_006.png)
+  ![](assets/offer_validate_006.png)
 
 * Om du vill acceptera erbjudandet klickar du **[!UICONTROL Approve eligibility]**.
 
-   ![](assets/offer_validate_008.png)
+  ![](assets/offer_validate_008.png)
 
-   Godkänn behörighet, lägg till en kommentar om det behövs och klicka sedan på **[!UICONTROL Eligibility approval]**.
+  Godkänn behörighet, lägg till en kommentar om det behövs och klicka sedan på **[!UICONTROL Eligibility approval]**.
 
-   ![](assets/offer_validate_009.png)
+  ![](assets/offer_validate_009.png)
 
-   De olika statusvärdena uppdateras på instrumentpanelen för erbjudanden.
+  De olika statusvärdena uppdateras på instrumentpanelen för erbjudanden.
 
-   ![](assets/offer_validate_010.png)
+  ![](assets/offer_validate_010.png)
 
 ## Godkännandespårning {#approval-tracking}
 
@@ -115,7 +116,7 @@ Kontrollpanelen för det erbjudande som finns i designmiljön innehåller inform
 
 ![](assets/offer_golive_001.png)
 
-Klicka på erbjudandeetiketten för att visa erbjudandet som finns i den aktiva miljön: live-erbjudandet har en kontrollpanel som innehåller all relevant information.
+Om du vill visa erbjudandet som finns tillgängligt i den aktiva miljön klickar du på erbjudandeetiketten: erbjudandet har en instrumentpanel som innehåller all relevant information.
 
 ![](assets/offer_golive_002.png)
 
@@ -129,6 +130,6 @@ Du kan även inaktivera en kategori direkt genom att gå till **[!UICONTROL Elig
 
 >[!NOTE]
 >
->När ett erbjudande tas bort i en designmiljö inaktiveras det automatiskt i den länkade onlinemiljön. Efter en kvarhållningsperiod tas de inaktiverade erbjudandena bort från onlinemiljön.
+>När ett erbjudande tas bort i en designmiljö inaktiveras det automatiskt i den länkade online-miljön. Efter en kvarhållningsperiod tas de inaktiverade erbjudandena bort från onlinemiljön.
 
 ![](assets/offer_preview_deactivate.png)

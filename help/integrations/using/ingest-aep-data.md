@@ -2,13 +2,14 @@
 product: campaign
 title: Infoga Adobe Experience Platform-segment i Campaign
 description: Lär dig hur du importerar Adobe Experience Platform-målgrupper till Campaign Classic
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+feature: Platform Integration
+badge-v7-only: label="v7" type="Informative" tooltip="Gäller endast Campaign Classic v7"
 audience: integrations
 content-type: reference
 exl-id: 6db8a653-b649-402c-8814-24826edadba7
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '303'
+source-wordcount: '310'
 ht-degree: 0%
 
 ---
@@ -35,7 +36,7 @@ Nu kan du konfigurera ett arbetsflöde i Campaign Classic för att importera seg
 
 När Campaign Classic har konfigurerats som mål måste du skapa ett dedikerat arbetsflöde för att importera filen som har exporterats av Adobe Experience Platform.
 
-För att göra detta måste du lägga till och konfigurera en **[!UICONTROL File transfer]** aktivitet. Mer information om hur du konfigurerar den här aktiviteten finns i [det här avsnittet](../../workflow/using/file-transfer.md).
+Om du vill göra det måste du lägga till och konfigurera en **[!UICONTROL File transfer]** aktivitet. Mer information om hur du konfigurerar den här aktiviteten finns i [det här avsnittet](../../workflow/using/file-transfer.md).
 
 ![](assets/rtcdp-file-transfer.png)
 

@@ -2,14 +2,15 @@
 product: campaign
 title: Konfigurera FDA-anslutningar
 description: Lär dig konfigurationssteg för FDA
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+feature: Installation, Federated Data Access
+badge-v7-only: label="v7" type="Informative" tooltip="Gäller endast Campaign Classic v7"
 audience: platform
 content-type: reference
 topic-tags: connectors
 exl-id: 0b53b165-a6d8-4604-b3f0-3fa6fce35146
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '342'
+source-wordcount: '349'
 ht-degree: 5%
 
 ---
@@ -25,6 +26,7 @@ Som regel måste du installera motsvarande klientlager på den externa databasen
 >[!NOTE]
 >
 >Kompatibla versioner visas i [Matris för kampanjkompatibilitet](../../rn/using/compatibility-matrix.md#FederatedDataAccessFDA).
+>
 
 ## Konfigurationssteg {#fda-configuration-steps}
 
@@ -43,7 +45,7 @@ Beroende på vilka externa databaser du vill kunna komma åt från Adobe Campaig
 
 Följ länkarna nedan om du vill veta mer:
 
-* Connect Campaign och [azure synapse](../../installation/using/configure-fda-synapse.md)
+* Connect Campaign och [Azure synapse](../../installation/using/configure-fda-synapse.md)
 * Connect Campaign och [Google BigQuery](../../installation/using/configure-fda-google-big-query.md)
 * Connect Campaign och [Hadoop](../../installation/using/configure-fda-hadoop.md)
 * Connect Campaign och [Microsoft SQL Server](../../installation/using/configure-fda-sql.md)
@@ -52,6 +54,6 @@ Följ länkarna nedan om du vill veta mer:
 * Connect Campaign och [PostgreSQL](../../installation/using/configure-fda-postgresql.md)
 * Connect Campaign och [SAP HANA](../../installation/using/configure-fda-sap-hana.md)
 * Connect Campaign och [Snowflake](../../installation/using/configure-fda-snowflake.md)
-* Connect Campaign och [sybase IQ](../../installation/using/configure-fda-sybase.md)
+* Connect Campaign och [Sybase IQ](../../installation/using/configure-fda-sybase.md)
 * Connect Campaign och [Teradata](../../installation/using/configure-fda-teradata.md)
-* Connect Campaign och [vertica analytics](../../installation/using/configure-fda-vertica.md)
+* Connect Campaign och [Vertica analytics](../../installation/using/configure-fda-vertica.md)

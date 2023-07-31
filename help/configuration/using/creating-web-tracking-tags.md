@@ -2,11 +2,12 @@
 product: campaign
 title: Skapa webbspårningstaggar
 description: Lär dig hur du skapar webbspårningstaggar
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+feature: Application Settings
+badge-v7-only: label="v7" type="Informative" tooltip="Gäller endast Campaign Classic v7"
 exl-id: 160df6e1-43e5-4eb9-ad2f-5db444e314ea
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '265'
+source-wordcount: '272'
 ht-degree: 0%
 
 ---
@@ -27,7 +28,7 @@ Med den här metoden kan du manuellt definiera sidorna som ska spåras och sedan
 Så här genererar du den HTML-kod som ska infogas på sidan:
 
 * Ange taggens etikett: den kommer att visas i spårningsloggarna,
-* Ange käll-URL: detta fält är avsett som information och gör att du kan ange den spårade sidan (valfritt),
+* Ange käll-URL: det här fältet används i informationssyfte och du kan ange den spårade sidan (valfritt),
 * Ange vid behov en giltighetsperiod,
 * Klicka **[!UICONTROL Generate]** HTML-kod.
 
@@ -37,7 +38,7 @@ Kopiera sedan den genererade koden och klistra in den på sidan som ska spåras.
 
 Du kan skapa URL:er för webbspårning direkt genom att lägga till information till värdet för **tagid** parameter:
 
-* Typ av spårad sida: &#39;w&#39; för WEB eller &#39;t&#39; för TRANSACTION,
+* Typ av spårad sida: &#39;w&#39; för WEB eller &#39;t&#39; för TRANSACTION.
 * Det interna namnet på mappen där URL:en måste skapas.
 
 Dessa två informationsdelar måste sammanfogas med den spårade sidans identifierare genom att tecknet | läggs till:
@@ -50,6 +51,6 @@ tagid=<identifier>|<type>|<foldername>
 >
 >Kom ihåg att koda värdet för **tagid** när den används som en URL-parameter.
 
-**Exempel**: skapa en webbspårnings-URL av transaktionstyp.
+**Exempel**: Skapande av en webbspårnings-URL av transaktionstyp.
 
 **http://myserver.adobe.com/r/a?tagid=home%7Ct%7CMyFolder**

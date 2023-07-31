@@ -2,11 +2,12 @@
 product: campaign
 title: Exempel på schemautgåvor
 description: Exempel på schemautgåvor
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+feature: Schema Extension
+badge-v7-only: label="v7" type="Informative" tooltip="Gäller endast Campaign Classic v7"
 exl-id: b7ee70e0-89c6-4cd3-8116-2f073d4a2f2f
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '663'
+source-wordcount: '670'
 ht-degree: 2%
 
 ---
@@ -45,7 +46,7 @@ Utöka **nms:mottagare** schemats mottagartabell, använd följande procedur:
    >
    >Kom ihåg att lägga till **extendedSchema** för att referera till tilläggsschemat.
 
-1. Kontrollera att det utökade schemat är **nms:mottagare** och att ytterligare data finns:
+1. Kontrollera att det utökade schemat **nms:mottagare** och att ytterligare data finns:
 
    ```
    <schema dependingSchemas="cus:extension" mappingType="sql" name="recipient" namespace="nms" xtkschema="xtk:schema">
@@ -102,7 +103,7 @@ Källschema för orderregister:
 
 Tabelltypen är **autopk** för att skapa en autogenererad primärnyckel som ska användas för kopplingen av länken till mottagartabellen.
 
-Genererat schema:
+Schema som genererats:
 
 ```
 <schema label="Order" mappingType="sql" name="order" namespace="cus" xtkschema="xtk:schema">  
@@ -178,7 +179,7 @@ Skapar ett tilläggsschema i mottagartabellen för att lägga till länken kardi
 >
 >Definitionen av länken mellan mottagartabellen och tilläggstabellen måste fyllas i från schemat som innehåller sekundärnyckeln.
 
-SQL-skriptet som används för att skapa tilläggstabellen är följande:
+SQL-skriptet för att skapa tilläggstabellen är följande:
 
 ```
 CREATE TABLE CusFeature(  iChildren NUMERIC(3) NOT NULL Default 0, iFeatureId INTEGER NOT NULL Default 0, iSingle NUMERIC(3) NOT NULL Default 0, sSpouseFirstName VARCHAR(100));
@@ -196,13 +197,13 @@ ALTER TABLE NmsRecipient ALTER COLUMN iFeatureId SET Default 0;
 CREATE INDEX NmsRecipient_featureId ON NmsRecipient(iFeatureId);
 ```
 
-## Spilltabell {#overflow-table}
+## Överflödestabell {#overflow-table}
 
 En flödestabell är en tilläggstabell (kardinalitet 1-1), men deklarationen av länken till tabellen som ska utökas fylls i schemat för flödestabellen.
 
 Flödestabellen innehåller sekundärnyckeln till tabellen som ska utökas. Den tabell som ska utökas ändras därför inte. Relationen mellan de två tabellerna är värdet på primärnyckeln för den tabell som ska utökas.
 
-Skapar schemat för flödestabellen (**cus:spill**):
+Skapar schemat för flödestabell (**cus:spill**):
 
 ```
 <srcSchema label="Overflow" name="overflow" namespace="cus" xtkschema="xtk:srcSchema">  
@@ -296,7 +297,7 @@ CREATE UNIQUE INDEX CusRcpGrpRel_id ON CusRcpGrpRel(iRcpGroupId, iRecipientId);
 CREATE INDEX CusRcpGrpRel_recipientId ON CusRcpGrpRel(iRecipientId);
 ```
 
-## Användningsfall: länka ett fält till en befintlig referenstabell {#uc-link}
+## Använd skiftläge: länka ett fält till en befintlig referenstabell {#uc-link}
 
 I det här exemplet visas hur du kan använda en befintlig referenstabell som ett alternativ till inbyggda uppräkningsmekanismer för Adobe Campaign (enum, userEnum eller dbEnum).
 
@@ -336,6 +337,6 @@ Användargränssnittet visar inte en länk utan ett fält. När användarna väl
 
 * [Arbeta med uppräkningar](../../platform/using/managing-enumerations.md)
 
-* [Kom igång med Campaign-scheman](../../configuration/using/about-schema-edition.md)
+* [Kom igång med kampanjscheman](../../configuration/using/about-schema-edition.md)
 
 * [Uppdatera databasstrukturen](../../configuration/using/updating-the-database-structure.md)

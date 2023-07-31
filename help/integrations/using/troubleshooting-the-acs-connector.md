@@ -2,16 +2,17 @@
 product: campaign
 title: Felsöka ACS Connector
 description: Felsöka ACS Connector
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+feature: ACS Connector, Troubleshooting
+badge-v7-only: label="v7" type="Informative" tooltip="Gäller endast Campaign Classic v7"
 audience: integrations
 content-type: reference
 topic-tags: acs-connector
 hide: true
 hidefromtoc: true
 exl-id: 4693dca1-ee55-43f0-b3dc-62a5b67a8058
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '870'
+source-wordcount: '877'
 ht-degree: 0%
 
 ---
@@ -24,7 +25,7 @@ Beroende på implementeringen kan du stöta på flera vanliga problem.
 
 * **Vilka är gränssnittsskillnaderna mellan Campaign Standard och Campaign v7?**
 
-   Campaign Standard och Campaign v7 fungerar på ungefär samma sätt. De flesta koncept är desamma, men i vissa fall kan tillvägagångssättet skilja sig något. Här följer några av de koncept som kan skilja sig åt i kontexten för ACS Connector:
+  Campaign Standard och Campaign v7 fungerar på ungefär samma sätt. De flesta koncept är desamma, men i vissa fall kan tillvägagångssättet skilja sig något. Här följer några av de koncept som kan skilja sig åt i kontexten för ACS Connector:
 
 <table> 
  <thead> 
@@ -67,7 +68,7 @@ Beroende på implementeringen kan du stöta på flera vanliga problem.
 
 * **Mottagarna av Campaign v7-instansen är inte synkroniserade eller synliga för Campaign Standarden.**
 
-   Det här fallet kan inträffa av olika orsaker:
+  Det här fallet kan inträffa av olika orsaker:
 
    * Mottagarna skapades eller uppdaterades just i Campaign v7. Synkroniseringen startar var 15:e minut. Detta innebär att uppdaterade eller nyligen skapade mottagare visas i Campaign Standarden efter nästa synkronisering.
    * Implementeringen kan ha ställts in på att bara synkronisera mottagare från specifika mappar. Mottagare från andra mappar är inte synkroniserade.
@@ -75,51 +76,51 @@ Beroende på implementeringen kan du stöta på flera vanliga problem.
 
 * **Jag hittar inte de profilfält som jag behöver basera min fråga på i Campaign Standarden.**
 
-   Som standard synkroniseras 20 fält från nms:mottagartabellen med Campaign Standard. Se den detaljerade listan över synkroniserade fält. Alla ytterligare fält som du behöver hämta i Campaign Standarden måste mappas och konfigureras av din konsult.
+  Som standard synkroniseras 20 fält från nms:mottagartabellen med Campaign Standard. Se den detaljerade listan över synkroniserade fält. Alla ytterligare fält som du behöver hämta i Campaign Standarden måste mappas och konfigureras av din konsult.
 
-   Om du vill vara säker på att fältet som du vill använda är tillgängligt kan du kontrollera profilresursdefinitionen från **[!UICONTROL Administration > Development > Diagnosis > Data schemas]**.
+  Om du vill vara säker på att fältet som du vill använda är tillgängligt kan du kontrollera profilresursdefinitionen från **[!UICONTROL Administration > Development > Diagnosis > Data schemas]**.
 
-   Dessutom synkroniseras inte alla data som bifogas till mottagare och lagras i tabeller som är relaterade till nms:templates som standard med Campaign Standard.
+  Dessutom synkroniseras inte alla data som bifogas till mottagare och lagras i tabeller som är relaterade till nms:templates som standard med Campaign Standard.
 
-   Om du fortfarande vill kunna använda relaterade data kan du utföra målanpassningen i Campaign v7 och lägga till ytterligare data enligt anvisningarna i [Synkronisera målgrupper](../../integrations/using/synchronizing-audiences.md) eller så kan du kontakta en konsult för att utforska olika anpassningsmöjligheter.
+  Om du fortfarande vill kunna använda relaterade data kan du utföra målanpassningen i Campaign v7 och lägga till ytterligare data enligt anvisningarna i [Synkronisera målgrupper](../../integrations/using/synchronizing-audiences.md) eller så kan du kontakta en konsult för att utforska olika anpassningsmöjligheter.
 
 * **Jag använder en annan profildimension än standardvärdet nms:receive i Campaign v7, hur kan jag synkronisera dem med Campaign Standard?**
 
-   Campaign Standarden använder en unik målinriktningsresurs med namnet **profiler**. Den grundläggande implementeringen av funktionen Campaign Standard Connect ger en standardmappning mellan Campaign v7-mottagare och Campaign Standard-profiler.
+  Campaign Standarden använder en unik målinriktningsresurs med namnet **profiler**. Den grundläggande implementeringen av funktionen Campaign Standard Connect ger en standardmappning mellan Campaign v7-mottagare och Campaign Standard-profiler.
 
-   Om du använder en annan profildimension i Campaign v7, eller om du använder flera, måste alla mappas med Campaign Standard-profiler. Kontakta din konsult för att diskutera just detta behov.
+  Om du använder en annan profildimension i Campaign v7, eller om du använder flera, måste alla mappas med Campaign Standard-profiler. Kontakta din konsult för att diskutera just detta behov.
 
 * **Jag vill dela en lista med profiler med Campaign Standard via ett arbetsflöde, men kan inte hitta min målgrupp i Campaign Standard**.
 
-   Målgrupper finns i **[!UICONTROL Audiences]** i Campaign Standard. De har etiketten som anges i **[!UICONTROL List update]** aktivitet i Campaign v7-arbetsflödet. De omfattas av mappmappmappningen som definieras under implementeringen.
+  Målgrupper finns i **[!UICONTROL Audiences]** i Campaign Standard. De har etiketten som anges i **[!UICONTROL List update]** aktivitet i Campaign v7-arbetsflödet. De omfattas av mappmappmappningen som definieras under implementeringen.
 
-   Det första som ska kontrolleras är om arbetsflödet har slutförts utan fel. Om du ser ett fel på **[!UICONTROL List update]** -aktiviteten, vilket innebär att synkroniseringen med Campaign Standarden kan ha misslyckats. Om du vill se mer information om vad som gick fel går du till **[!UICONTROL Administration]** > **[!UICONTROL ACS Connector]** > **[!UICONTROL Process]** > **[!UICONTROL Diagnosis]**. Den här mappen innehåller synkroniseringsarbetsflöden som utlöses av **[!UICONTROL List update]** aktivitetskörning.
+  Det första som ska kontrolleras är om arbetsflödet har slutförts utan fel. Om du ser ett fel på **[!UICONTROL List update]** -aktiviteten, vilket innebär att synkroniseringen med Campaign Standarden kan ha misslyckats. Om du vill se mer information om vad som gick fel går du till **[!UICONTROL Administration]** > **[!UICONTROL ACS Connector]** > **[!UICONTROL Process]** > **[!UICONTROL Diagnosis]**. Den här mappen innehåller synkroniseringsarbetsflöden som utlöses av **[!UICONTROL List update]** aktivitetskörning.
 
-   Se även till att **[!UICONTROL Share with ACS]** alternativet är markerat i **[!UICONTROL List update]** och att arbetsflödet har körts korrekt.
+  Se även till att **[!UICONTROL Share with ACS]** alternativet är markerat i **[!UICONTROL List update]** och att arbetsflödet har körts korrekt.
 
-   Observera att mottagarprofilerna i listan måste ha synkroniserats med Campaign Standarden innan arbetsflödet körs. När Campaign Standarden har delats med Campaign Standarden är mottagarna i listan avstämda med profiler, vilket innebär att de måste finnas där. Mottagare från listan som inte kan avstämas med profiler i Campaign Standarden ignoreras.
+  Observera att mottagarprofilerna i listan måste ha synkroniserats med Campaign Standarden innan arbetsflödet körs. När Campaign Standarden har delats med Campaign Standarden är mottagarna i listan avstämda med profiler, vilket innebär att de måste finnas där. Mottagare från listan som inte kan avstämas med profiler i Campaign Standarden ignoreras.
 
-   Om du delar en lista som består av profiler och om ingen är synkroniserad med Campaign Standard skapas en tom frågepublik i Campaign Standard som inte kan användas.
+  Om du delar en lista som består av profiler och om ingen är synkroniserad med Campaign Standard skapas en tom frågepublik i Campaign Standard som inte kan användas.
 
 * **Jag fick ett meddelande om att ett synkroniseringsarbetsflöde är i feltillstånd. Vad ska jag göra?**
 
-   Kontrollera konfigurationen av det externa kontot i både Campaign Standard och Campaign v7 genom att testa anslutningen:
+  Kontrollera konfigurationen av det externa kontot i både Campaign Standard och Campaign v7 genom att testa anslutningen:
 
    * **[!UICONTROL acsDefaultRelayAccount]** i Campaign Standard.
    * **[!UICONTROL acsDefaultAccount]** i Campaign v7.
 
 * **Jag har ingen säkerhetsgrupp tillgänglig när mappar mappas mellan Campaign v7 och Campaign Standard.**
 
-   Du måste först synkronisera dina säkerhetsgrupper från **[!UICONTROL Administration > ACS Connector > Rights management > Security groups]**. Den här åtgärden kontrollerar vilka säkerhetsgrupper som är tillgängliga i Campaign Standard. När du har synkroniserat kan du hitta säkerhetsgrupperna när du konfigurerar mappmappningen.
+  Du måste först synkronisera dina säkerhetsgrupper från **[!UICONTROL Administration > ACS Connector > Rights management > Security groups]**. Den här åtgärden kontrollerar vilka säkerhetsgrupper som är tillgängliga i Campaign Standard. När du har synkroniserat kan du hitta säkerhetsgrupperna när du konfigurerar mappmappningen.
 
 * **Jag kan inte redigera en profil, en målgrupp eller en landningssida i Campaign Standarden. Vad betyder det?**
 
-   Resurser som synkroniseras från Campaign v7 är i skrivskyddat läge i Campaign Standard för att säkerställa att data är konsekventa. Om du behöver redigera något av dessa element kan du göra det i Campaign v7 och sedan replikera ändringen av Campaign Standarden.
+  Resurser som synkroniseras från Campaign v7 är i skrivskyddat läge i Campaign Standard för att säkerställa att data är konsekventa. Om du behöver redigera något av dessa element kan du göra det i Campaign v7 och sedan replikera ändringen av Campaign Standarden.
 
 * **Fel inträffar i [ACS] Arbetsflöde för replikering av profilleveranslogg. Vad ska jag göra?**
 
-   Om både Campaign Classic och Campaign Standard-instanser används för att skicka e-postmeddelanden med spårade URL:er kan ett problem med duplicerade URL-tagg-ID:n uppstå under synkroniseringen. I det här fallet **[ACS] Replikering av profilleveranslogg** (newRcpDeliveryLogReplication) arbetsflödet misslyckas fortfarande med följande fel:
+  Om både Campaign Classic och Campaign Standard-instanser används för att skicka e-postmeddelanden med spårade URL:er kan ett problem med duplicerade URL-tagg-ID:n uppstå under synkroniseringen. I det här fallet **[ACS] Replikering av profilleveranslogg** (newRcpDeliveryLogReplication) arbetsflödet misslyckas fortfarande med följande fel:
 
-   ```PGS-220000 PostgreSQL error: ERROR: duplicate key value violates unique constraint "nmstrackingurl_tagid" DETAIL: Key (stagid) = (1c7bdec2) already exists.```
+  ```PGS-220000 PostgreSQL error: ERROR: duplicate key value violates unique constraint "nmstrackingurl_tagid" DETAIL: Key (stagid) = (1c7bdec2) already exists.```
 
-   Uppdatera **Uppdatera spårnings-URL:er** (writerTrackingUrls)-aktivitet i arbetsflödet och lägg till prefixet&quot;ACS&quot; i @tagId-källuttrycket.
+  Om du vill lösa problemet och förhindra att det uppstår igen uppdaterar du **Uppdatera spårnings-URL:er** (writerTrackingUrls)-aktivitet i arbetsflödet och lägg till prefixet&quot;ACS&quot; i @tagId-källuttrycket.

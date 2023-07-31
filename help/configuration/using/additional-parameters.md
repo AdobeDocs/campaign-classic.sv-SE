@@ -2,11 +2,12 @@
 product: campaign
 title: Ytterligare parametrar för webbspårning
 description: Läs mer om parametrar för webbspårning
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+feature: Configuration, Instance Settings
+badge-v7-only: label="v7" type="Informative" tooltip="Gäller endast Campaign Classic v7"
 exl-id: d14d94fd-b078-4893-be84-31d37a1d50f5
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '352'
+source-wordcount: '359'
 ht-degree: 0%
 
 ---
@@ -15,10 +16,10 @@ ht-degree: 0%
 
 ## Definition av parametrar {#definition-of-parameters}
 
-På din Adobe Campaign-plattform finns två parametrar av typen TRANSACTION som standard för webbspårning:
+Adobe Campaign-plattformen har två parametrar av typen TRANSACTION som standard:
 
-* **belopp**: representerar beloppet för en transaktion,
-* **artikel**: representerar antalet artiklar i en transaktion.
+* **belopp**: representerar mängden transaktion,
+* **artikel**: representerar antalet objekt i en transaktion.
 
 Dessa parametrar definieras i **nms:webTrackingLog** och är några av de indikatorer som visas i rapporteringen.
 
@@ -48,7 +49,7 @@ I serverkonfigurationen kan du definiera det maximala antal tecken som ska beakt
 >
 >Om du ökar det maximala antalet tecken som ska beaktas kan det påverka plattformens webbspårningsprestanda.
 
-Om du vill göra det ändrar du **webTrackingParamSize** attributet för **`<trackinglogd>`** -elementet i **serverConf.xml** -fil. Den här filen sparas i **conf** underkatalogen till Adobe Campaign installationskatalog.
+Om du vill göra det ändrar du **webTrackingParamSize** attributet för **`<trackinglogd>`** -elementet i **serverConf.xml** -fil. Filen sparas i **conf** underkatalogen till Adobe Campaign installationskatalog.
 
 **Exempel**:
 
@@ -68,16 +69,16 @@ När konfigurationen har ändrats måste du:
 * Stoppa webbservern som är värd för omdirigeringsmodulen (Apache, IIS osv.),
 * Stoppa Adobe Campaign-servern: **net stop nlserver6** i Windows, **/etc/init.d/nlserver6 stop** i Linux,
 
-   >[!NOTE]
-   >
-   >Från och med 20.1 rekommenderar vi att du använder följande kommando i stället (för Linux): **systemctl stop nlserver**
+  >[!NOTE]
+  >
+  >Från och med 20.1 rekommenderar vi att du använder följande kommando i stället (för Linux): **systemctl stop nlserver**
 
 * I Linux tar du bort de delade minnessegmenten med hjälp av **ipcrm** kommando,
 * Starta om Adobe Campaign-servern: **net start nlserver6** i Windows, **/etc/init.d/nlserver6 - start** i Linux,
 
-   >[!NOTE]
-   >
-   >Från och med 20.1 rekommenderar vi att du använder följande kommando i stället (för Linux): **systemctl start nlserver**
+  >[!NOTE]
+  >
+  >Från och med 20.1 rekommenderar vi att du använder följande kommando i stället (för Linux): **systemctl start nlserver**
 
 * Starta om webbservern.
 

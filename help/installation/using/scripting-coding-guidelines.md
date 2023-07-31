@@ -2,14 +2,15 @@
 product: campaign
 title: Riktlinjer för skript och kodning
 description: Läs mer om riktlinjerna som ska följas vid utveckling i Adobe Campaign (arbetsflöden, Javascript, JSSP osv.)
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+feature: Installation, Instance Settings
+badge-v7-only: label="v7" type="Informative" tooltip="Gäller endast Campaign Classic v7"
 audience: installation
 content-type: reference
 topic-tags: prerequisites-and-recommendations-
 exl-id: 1f96c3df-0ef2-4f5f-9c36-988cbcc0769f
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '748'
+source-wordcount: '755'
 ht-degree: 5%
 
 ---
@@ -24,32 +25,32 @@ Mer information finns i [Kampanj-JSAPI-dokumentation](https://experienceleague.a
 
 Om du skriptar med arbetsflöde, webbprogram, jssp, ska du följa dessa rutiner:
 
-* Undvik att använda SQL-satser så mycket du kan.
+* Försök att undvika SQL-satser så mycket du kan.
 
 * Om du behöver det använder du parametriserade funktioner (förbered-sats) i stället för strängsammanfogning.
 
-   Felaktig praxis:
+  Felaktig praxis:
 
-   ```
-   sqlGetInt( "select iRecipientId from NmsRecipient where sEmail ='" + request.getParameter('email') +  "'  limit 1" )
-   ```
+  ```
+  sqlGetInt( "select iRecipientId from NmsRecipient where sEmail ='" + request.getParameter('email') +  "'  limit 1" )
+  ```
 
-   God praxis:
+  God praxis:
 
-   ```
-   sqlGetInt( "select iRecipientId from NmsRecipient where sEmail = $(sz) limit 1", request.getParameter('email'));
-   ```
+  ```
+  sqlGetInt( "select iRecipientId from NmsRecipient where sEmail = $(sz) limit 1", request.getParameter('email'));
+  ```
 
-   >[!IMPORTANT]
-   >
-   >sqlSelect stöder inte den här funktionen, så du måste använda frågefunktionen i klassen DBEngine:
+  >[!IMPORTANT]
+  >
+  >sqlSelect stöder inte den här funktionen, så du måste använda frågefunktionen i klassen DBEngine:
 
-   ```
-   var cnx = application.getConnection()
-   var stmt = cnx.query("SELECT sFirstName, sLastName FROM NmsRecipient where sEmail = $(sz)", request.getParameter('email'))
-   for each(var row in stmt) logInfo(row[0] + " : " + row[1])
-   cnx.dispose()
-   ```
+  ```
+  var cnx = application.getConnection()
+  var stmt = cnx.query("SELECT sFirstName, sLastName FROM NmsRecipient where sEmail = $(sz)", request.getParameter('email'))
+  for each(var row in stmt) logInfo(row[0] + " : " + row[1])
+  cnx.dispose()
+  ```
 
 För att undvika SQL-injektioner måste SQL-funktioner läggas till i tillåtelselista som ska användas i Adobe Campaign. När de har lagts till i tillåtelselista blir de synliga för dina operatorer i uttrycksredigeraren. Se [den här sidan](../../configuration/using/adding-additional-sql-functions.md).
 
@@ -57,7 +58,7 @@ För att undvika SQL-injektioner måste SQL-funktioner läggas till i tillåtels
 >
 >Om du använder en version som är äldre än 8 140 är **XtkPassUnknownSQLFunactionsToRDBMS** kan anges till &quot;1&quot;. Om du vill skydda databasen tar du bort det här alternativet (eller anger värdet 0).
 
-Om du använder användarindata för att skapa filter i frågor eller SQL-satser måste du alltid undvika dem (se [Kampanj-JSAPI-dokumentation](https://experienceleague.adobe.com/developer/campaign-api/api/index.html?lang=sv) - Dataskydd: funktioner). De här funktionerna är:
+Om du använder användarindata för att skapa filter i frågor eller SQL-satser måste du alltid undvika dem (se [Kampanj-JSAPI-dokumentation](https://experienceleague.adobe.com/developer/campaign-api/api/index.html?lang=sv) - Dataskydd: funktioner för flytning). De här funktionerna är:
 
 * NL.XML.escape(data)
 * NL.SQL.escape(data)
@@ -79,29 +80,29 @@ Förutom den mappbaserade säkerhetsmodellen kan du använda namngivna rättighe
 
 * Du kan lägga till vissa systemfilter (sysFilter) för att förhindra att data läses/skrivs (se [den här sidan](../../configuration/using/filtering-schemas.md)).
 
-   ```
-   <sysFilter name="writeAccess">    
-       <condition enabledIf="hasNamedRight('myNewRole')=false" expr="FALSE"/>  
-   </sysFilter>
-   ```
+  ```
+  <sysFilter name="writeAccess">    
+      <condition enabledIf="hasNamedRight('myNewRole')=false" expr="FALSE"/>  
+  </sysFilter>
+  ```
 
 * Du kan även skydda vissa åtgärder (SOAP-metod) som definieras i scheman. Ange bara åtkomstattributet med motsvarande namngiven rättighet som värde.
 
-   ```
-   <method name="grantVIPAccess" access="myNewRole">
-       <parameters>
-   ...
-       </parameters>
-   </method>
-   ```
+  ```
+  <method name="grantVIPAccess" access="myNewRole">
+      <parameters>
+  ...
+      </parameters>
+  </method>
+  ```
 
-   Mer information finns på [den här sidan](../../configuration/using/implementing-soap-methods.md).
+  Mer information finns på [den här sidan](../../configuration/using/implementing-soap-methods.md).
 
 >[!IMPORTANT]
 >
 >Du kan använda namngivna rättigheter i kommandonoden i ett navigeringsträd. Det ger en bättre användarupplevelse men ger inget skydd (använd bara klientsidan för att dölja/inaktivera dem). Du måste använda åtkomstattributet.
 
-### Spilltabell
+### Överflödestabell
 
 Om du behöver skydda konfidentiella data (del av ett schema) beroende på operatörens åtkomstnivå, ska du inte dölja dem i formulärdefinitionen (enabledIf/visibleIf-villkor).
 
@@ -109,7 +110,7 @@ Den fullständiga enheten läses in av skärmen och du kan även visa dem i kolu
 
 ## Lägga till bildtexter i webbprogram
 
-Det är god praxis att lägga till en captcha på offentliga landningssidor/prenumerationssidor. Tyvärr är det inte så enkelt att lägga till en captcha på DCE-sidor (Digital Content Editor). Vi visar hur du lägger till en v5-captcha eller en Google reCAPTCHA.
+Det är en god vana att lägga till en captcha på offentliga landningssidor/prenumerationssidor. Tyvärr är det inte så enkelt att lägga till en captcha på DCE-sidor (Digital Content Editor). Vi visar hur du lägger till en v5-captcha eller en Google reCAPTCHA.
 
 Det allmänna sättet att lägga till en captcha i DCE är att skapa ett personaliseringsblock som enkelt kan inkluderas i sidinnehållet. Du måste lägga till en **Skript** aktivitet och **Testa**.
 
@@ -146,7 +147,8 @@ Det allmänna sättet att lägga till en captcha i DCE är att skapa ett persona
    * Med rad 4 kan du ändra storleken på den inmatade gråa rutan (bredd/höjd) och längden på det genererade ordet (minWordSize/maxWordSize).
    * Innan du använder Google reCAPTCHA måste du registrera dig på Google och skapa en ny reCAPTCHA-webbplats.
 
-      `<div class="g-recaptcha" data-sitekey="YOUR_SITE_KEY"></div>`
+     `<div class="g-recaptcha" data-sitekey="YOUR_SITE_KEY"></div>`
+
    Du bör kunna inaktivera valideringsknappen, men eftersom vi inte har någon standardknapp/länk är det bättre att göra det i själva HTML. Om du vill veta hur du gör det kan du läsa [den här sidan](https://developers.google.com/recaptcha/).
 
 ### Uppdatera ditt webbprogram
@@ -167,7 +169,7 @@ Det allmänna sättet att lägga till en captcha i DCE är att skapa ett persona
 
 1. Redigera **[!UICONTROL Script]** aktivitet. Innehållet beror på den valda captcha-motorn.
 
-1. Slutligen kan du lägga till ditt personliga block på sidan: referera till [den här sidan](../../web/using/editing-content.md).
+1. Slutligen kan du lägga till ditt personliga block på sidan: se [den här sidan](../../web/using/editing-content.md).
 
    ![](assets/scripting-captcha4.png)
 
@@ -195,11 +197,11 @@ else
   ctx.vars.captchaValid = true
 ```
 
-Rad 6: kan du skicka vilket felmeddelande som helst.
+Rad 6: du kan skicka vilket felmeddelande som helst.
 
 ### Google recaptcha
 
-Se [officiell dokumentation](https://developers.google.com/recaptcha/docs/verify).
+Läs mer i [officiell dokumentation](https://developers.google.com/recaptcha/docs/verify).
 
 ```javascript
 ctx.vars.captchaValid = false

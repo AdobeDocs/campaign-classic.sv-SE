@@ -2,13 +2,13 @@
 product: campaign
 title: Elementlayout
 description: Elementlayout
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
-feature: Reporting
+badge-v7: label="v7" type="Informative" tooltip="Gäller Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Gäller även Campaign v8"
+feature: Reporting, Monitoring
 exl-id: 79d5c901-905b-4a0e-adb9-91fd6acb186f
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '415'
+source-wordcount: '427'
 ht-degree: 1%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 1%
 
 Förutom de olika diagrammen [här](../../reporting/using/creating-a-chart.md#chart-types-and-variants)kan du anpassa visningen och lägga till element på rapportsidorna.
 
-Du kan använda behållare: Med dessa kan du länka flera element på en sida och konfigurera deras layout i kolumner och/eller celler. Hur du använder dem beskrivs i [det här avsnittet](../../web/using/defining-web-forms-layout.md#creating-containers).
+Du kan använda behållare: med dessa kan du länka flera element på en sida och konfigurera deras layout i kolumner och/eller celler. Hur du använder dem beskrivs i [det här avsnittet](../../web/using/defining-web-forms-layout.md#creating-containers).
 
 Du kan konfigurera rapportlayouten i roten av trädet och överlagra den för varje behållare. Sidorna sorteras i kolumner. Behållare sorteras också i kolumner. Endast statiska och grafiska objekt sorteras i celler.
 
@@ -39,9 +39,9 @@ Välj de olika alternativen i dialogrutan **[!UICONTROL Browse]** för att godk�
 
 ## Lägga till ett sidhuvud och en sidfot {#adding-a-header-and-a-footer}
 
-I fönstret för rapportegenskaper kan du även definiera layoutelement, till exempel: fönstrets namn, sidhuvuds och sidfötter HTML.
+I fönstret för rapportegenskaper kan du också definiera layoutelement, t.ex. fönstrets titel och HTML i sidhuvuden och sidfötter.
 
-Du öppnar egenskapsfönstret genom att klicka på **[!UICONTROL Properties]** rapportknappen.
+Om du vill öppna egenskapsfönstret klickar du på **[!UICONTROL Properties]** rapportknappen.
 
 ![](assets/reporting_properties.png)
 
@@ -51,7 +51,7 @@ The **[!UICONTROL Page]** kan du anpassa visningen.
 
 Innehållet som är konfigurerat på den här fliken visas på alla rapportsidor.
 
-The **[!UICONTROL Texts]** Med subtab kan du definiera variabelt innehåll: det kommer att beaktas under översättningscykeln om rapporten är avsedd att användas på flera språk.
+The **[!UICONTROL Texts]** Med subtab kan du definiera variabelt innehåll: det kommer att tas med i beräkningen under översättningscykeln om rapporten är avsedd att användas på flera språk.
 
 Detta gör att du kan skapa en lista med textfragment och länka dem till identifierare:
 

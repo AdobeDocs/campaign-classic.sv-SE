@@ -2,12 +2,13 @@
 product: campaign
 title: Konfigurera gränssnittet
 description: Lär dig hur du konfigurerar Campaign-gränssnittet
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
+feature: Application Settings
+badge-v7: label="v7" type="Informative" tooltip="Gäller Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Gäller även Campaign v8"
 exl-id: 9f50f258-845e-4895-b1ef-b73744dea326
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '306'
+source-wordcount: '318'
 ht-degree: 0%
 
 ---
@@ -69,9 +70,9 @@ Om du skapar ett nytt formulär kan du visa och redigera data i den externa mott
 
    >[!NOTE]
    >
-   >Om du vill ha mer information **navtree** typfiler, se [den här sidan](../../platform/using/adobe-campaign-explorer.md#about-navigation-hierarchy).
+   >Om du vill ha mer **navtree** typfiler, se [den här sidan](../../platform/using/adobe-campaign-explorer.md#about-navigation-hierarchy).
 
-   I det aktuella exemplet **navtree** filen måste baseras på **cus:individuell** och därför ha följande form:
+   I det aktuella exemplet **navtree** filen måste baseras på **cus:individuell** schemat och därför ha följande format:
 
    ```
     <model name="root">

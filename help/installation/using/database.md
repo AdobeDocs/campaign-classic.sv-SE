@@ -2,16 +2,17 @@
 product: campaign
 title: Rekommendationer för Campaign Classic-databasen
 description: Databasrekommendationer
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
-badge-v7-prem: label="on-premise & hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html" tooltip="Applies to on-premise and hybrid deployments only"
+feature: Installation, Instance Settings
+badge-v7-only: label="v7" type="Informative" tooltip="Gäller endast Campaign Classic v7"
+badge-v7-prem: label="lokal och hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=sv" tooltip="Gäller endast lokala och hybrida driftsättningar"
 audience: installation
 content-type: reference
 topic-tags: prerequisites-and-recommendations-
 exl-id: 8a0426c1-9e8d-4053-bc2b-6a550e2eed2f
-source-git-commit: 4661688a22bd1a82eaf9c72a739b5a5ecee168b1
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '277'
-ht-degree: 1%
+source-wordcount: '302'
+ht-degree: 4%
 
 ---
 
@@ -47,7 +48,7 @@ Följande åtkomst-DLL måste finnas: **sqlncli11.dll**.
 
 The **NLS_NCHAR_CHARACTERSET** och **NLS_CHARACTERSET** parametrar måste vara korrekt konfigurerade för att databasen ska fungera i Unicode eller ANSI.
 
-Adobe Campaign använder standardkodning för Oraclen. Om du använder annan kodning kan kompatibilitetsproblem uppstå: Kontakta då teknisk support.
+Adobe Campaign använder standardkodning för Oraclen. Om du använder annan kodning kan kompatibilitetsproblem uppstå. Kontakta teknisk support i det här fallet.
 
 Om du vill veta mer om kodningen använder du följande **sqlplus** kommando:
 
@@ -57,10 +58,10 @@ SELECT * FROM nls_database_parameters ;
 
 * För en Unicode-installation stöds följande kodningar:
 
-   ```
-   NLS_NCHAR_CHARACTERSET         AL16UTF16
-   NLS_CHARACTERSET         AL32UTF8
-   ```
+  ```
+  NLS_NCHAR_CHARACTERSET         AL16UTF16
+  NLS_CHARACTERSET         AL32UTF8
+  ```
 
 * För en ANSI-installation (icke-Unicode) stöds endast följande kodning:
 

@@ -2,15 +2,16 @@
 product: campaign
 title: Användningsfall
 description: Användningsfall
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
+feature: Subscriptions, Email, Data Management
+badge-v7: label="v7" type="Informative" tooltip="Gäller Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Gäller även Campaign v8"
 audience: platform
 content-type: reference
 topic-tags: filtering-data
 exl-id: 85ded096-7d27-41b3-8ef2-93f5ca8def82
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '257'
+source-wordcount: '269'
 ht-degree: 2%
 
 ---
@@ -38,7 +39,7 @@ Använd följande steg:
 
    ![](assets/s_ncs_user_filter_select_schema.png)
 
-1. Klicka **[!UICONTROL Edit link]** för att visa fälten i det markerade dokumentet.
+1. Klicka **[!UICONTROL Edit link]** om du vill visa fälten i det markerade dokumentet.
 
    ![](assets/s_ncs_user_filter_edit_schema.png)
 
@@ -53,10 +54,10 @@ Använd följande steg:
    ![](assets/s_ncs_user_filter_parameters.png)
 
 1. Klicka **[!UICONTROL Save]** om du vill lägga till ett filter i de fördefinierade filtren för den här typen av lista.
-1. Nu kan du använda det här filtret i **[!UICONTROL Subscriptions]** fliken för mottagarprofilen, du kommer åt filtret Okänt e-postformat genom att klicka på **[!UICONTROL Filters]** -knappen.
+1. Nu kan du använda det här filtret i **[!UICONTROL Subscriptions]** -fliken i mottagarprofilen. Du kan komma åt filtret Okänt e-postformat genom att klicka på **[!UICONTROL Filters]** -knappen.
 
    ![](assets/s_ncs_user_filter_on_events.png)
 
-   Namnet på det aktuella filtret visas ovanför listan. Om du vill avbryta filtret klickar du på **[!UICONTROL Delete this filter]** ikon.
+   Namnet på det aktuella filtret visas ovanför listan. Klicka på knappen **[!UICONTROL Delete this filter]** -ikon.
 
    ![](assets/s_ncs_user_filter_on_subscriptions.png)

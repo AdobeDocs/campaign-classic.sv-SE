@@ -2,13 +2,13 @@
 product: campaign
 title: Spåra och övervaka meddelanden
 description: Lär dig spåra och övervaka meddelanden
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
-feature: Monitoring
+badge-v7: label="v7" type="Informative" tooltip="Gäller Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Gäller även Campaign v8"
+feature: Monitoring, Reporting
 exl-id: a039a288-2e7b-4f35-9885-ead3ed4347af
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '438'
+source-wordcount: '450'
 ht-degree: 3%
 
 ---
@@ -44,7 +44,7 @@ Om du vill veta mer om mottagarnas beteende kan du spåra hur de reagerar på en
 
 **Tips**: Spårning av meddelanden är aktiverat som standard. Om du vill konfigurera URL-adresser väljer du alternativet Visa URL-adresser i det nedre avsnittet av leveransguiden. För varje URL för meddelandet kan du välja om spårning ska aktiveras.
 
-Mer information finns i [Konfigurera spårning](how-to-configure-tracked-links.md) och [Spårningsindikatorer](../../reporting/using/delivery-reports.md#tracking-indicators) description.
+Mer information finns i [Konfigurera spårning](how-to-configure-tracked-links.md) -avsnittet och [Spårningsindikatorer](../../reporting/using/delivery-reports.md#tracking-indicators) description.
 
 ## Leveransprestanda {#delivery-performances}
 

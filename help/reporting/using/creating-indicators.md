@@ -2,11 +2,11 @@
 product: campaign
 title: Skapa indikatorer
 description: Skapa indikatorer
-feature: Reporting
+feature: Reporting, Monitoring
 hide: true
 hidefromtoc: true
 exl-id: e4806bb8-de9d-47e4-8b37-d6c0565b7f5a
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
 source-wordcount: '715'
 ht-degree: 2%
@@ -32,7 +32,7 @@ Implementeringsstegen beskrivs nedan. Det finns omfattande alternativ och beskri
 
 ## Markera arbetsregistret {#selecting-the-work-table}
 
-Om du vill skapa en kub klickar du på **[!UICONTROL New]** ovanför listan med kuber.
+Skapa en kub genom att klicka på **[!UICONTROL New]** ovanför listan med kuber.
 
 ![](assets/s_advuser_cube_create.png)
 
@@ -40,7 +40,7 @@ Välj faktchemat, d.v.s. schemat som innehåller elementen som du vill utforska.
 
 ![](assets/s_advuser_cube_wz_02.png)
 
-Klicka **[!UICONTROL Save]** så här skapar du kuben: visas i listan över kuber och kan sedan konfigureras med lämpliga flikar.
+Klicka **[!UICONTROL Save]** för att skapa kuben: den visas i listan över kuber och kan sedan konfigureras med lämpliga flikar.
 
 Klicka på **[!UICONTROL Filter the source data...]** om du vill använda beräkningar av den här kuben på ett dataurval i databasen.
 
@@ -58,43 +58,43 @@ Klicka på **[!UICONTROL Add]** för att skapa en ny dimension, sedan i **[!UICO
 
 * Börja med att välja mottagare **Ålder**. I det här fältet kan du definiera bindning till gruppsidor och göra det enklare att läsa information. Vi rekommenderar att du använder bindning när det är möjligt att använda flera olika värden.
 
-   Om du vill göra det går du till **[!UICONTROL Enable binning]** alternativ. Bindningslägena beskrivs i [Databindning](../../reporting/using/concepts-and-methodology.md#data-binning).
+  Om du vill göra det går du till **[!UICONTROL Enable binning]** alternativ. Bindningslägena beskrivs i [Databindning](../../reporting/using/concepts-and-methodology.md#data-binning).
 
-   ![](assets/s_advuser_cube_wz_05.png)
+  ![](assets/s_advuser_cube_wz_05.png)
 
 * Lägg till en **Datum** typdimension. Här vill vi visa datum då mottagarprofilen skapades
 
-   Det gör du genom att klicka **[!UICONTROL Add]** och väljer **[!UICONTROL Creation date]** i mottagartabellen.
+  Det gör du genom att klicka **[!UICONTROL Add]** och väljer **[!UICONTROL Creation date]** i mottagartabellen.
 
-   ![](assets/s_advuser_cube_wz_06.png)
+  ![](assets/s_advuser_cube_wz_06.png)
 
-   Det går att välja datumvisningsläge. Om du vill göra det väljer du den hierarki som ska användas och de nivåer som ska genereras:
+  Det går att välja datumvisningsläge. Välj den hierarki som ska användas och de nivåer som ska genereras:
 
-   ![](assets/s_advuser_cube_wz_07.png)
+  ![](assets/s_advuser_cube_wz_07.png)
 
-   I vårt exempel vill vi bara visa år, månader och dagar eftersom det inte går att arbeta med veckor och semestrar/månader samtidigt: dessa nivåer är inte kompatibla.
+  I vårt exempel vill vi bara visa år, månader och dagar eftersom det inte går att arbeta med veckor och semestrar/månader samtidigt: dessa nivåer är inte kompatibla.
 
 * Skapa en annan dimension för att analysera data i förhållande till mottagarens ort
 
-   Lägg till en ny dimension och välj ort i dialogrutan **[!UICONTROL Location]** noden i mottagarschemat.
+  Lägg till en ny dimension och välj ort i dialogrutan **[!UICONTROL Location]** noden i mottagarschemat.
 
-   ![](assets/s_advuser_cube_wz_08.png)
+  ![](assets/s_advuser_cube_wz_08.png)
 
-   Du kan aktivera bindning för att göra det enklare att läsa information och länka värdena till en uppräkning.
+  Du kan aktivera bindning för att göra det enklare att läsa information och länka värdena till en uppräkning.
 
-   ![](assets/s_advuser_cube_wz_09.png)
+  ![](assets/s_advuser_cube_wz_09.png)
 
-   Välj uppräkningen i listrutan
+  Välj uppräkningen i listrutan
 
-   ![](assets/s_advuser_cube_wz_10.png)
+  ![](assets/s_advuser_cube_wz_10.png)
 
-   Endast värdena i uppräkningen visas. De andra grupperas under den etikett som definieras i **[!UICONTROL Label of the other values]** fält.
+  Endast värdena i uppräkningen visas. De andra grupperas under den etikett som definieras i **[!UICONTROL Label of the other values]** fält.
 
-   Mer information finns i [Hantera behållare dynamiskt](../../reporting/using/concepts-and-methodology.md#dynamically-managing-bins).
+  Mer information finns i [Hantera behållare dynamiskt](../../reporting/using/concepts-and-methodology.md#dynamically-managing-bins).
 
 ## Byggindikatorer {#building-indicators}
 
-När dimensionerna har definierats måste du ange ett beräkningssätt för de värden som ska visas i cellerna. Det gör du genom att skapa matchande indikatorer i **[!UICONTROL Measures]** tab: skapa så många mått som det finns kolumner att visa i rapporten som ska använda kuben.
+När dimensionerna har definierats måste du ange ett beräkningssätt för de värden som ska visas i cellerna. Det gör du genom att skapa matchande indikatorer i **[!UICONTROL Measures]** tabb: skapa så många mått som det finns kolumner att visa i rapporten som ska använda kuben.
 
 Gör så här:
 
@@ -121,11 +121,11 @@ När kuben har konfigurerats kan den användas som mall för att skapa en ny rap
 
 Så här gör du:
 
-1. Klicka på **[!UICONTROL Create]** knappen **[!UICONTROL Reports]** och väljer den kub du just har skapat.
+1. Klicka på **[!UICONTROL Create]** knappen på **[!UICONTROL Reports]** och väljer den kub du just har skapat.
 
    ![](assets/s_advuser_cube_wz_14.png)
 
-1. Klicka på **[!UICONTROL Create]** för att bekräfta: kommer du till sidan för rapportkonfiguration och visning.
+1. Klicka på **[!UICONTROL Create]** för att bekräfta: då kommer du till rapportkonfigurationen och visningssidan.
 
    Som standard visas de två första tillgängliga dimensionerna i rader och kolumner, men inget värde visas i tabellen. Klicka på huvudikonen om du vill generera tabellen:
 

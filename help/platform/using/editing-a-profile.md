@@ -2,14 +2,15 @@
 product: campaign
 title: Redigera en profil
 description: Redigera en profil
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+feature: Profiles
+badge-v7-only: label="v7" type="Informative" tooltip="Gäller endast Campaign Classic v7"
 audience: platform
 content-type: reference
 topic-tags: profile-management
 exl-id: 0f3a5582-5c90-4393-bee8-d9e2f07e5982
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '471'
+source-wordcount: '478'
 ht-degree: 5%
 
 ---
@@ -34,7 +35,7 @@ Flikar och deras innehåll beror på din konfiguration och installerade paket.
 >
 >Mer information finns i [den här sidan](../../configuration/using/about-schema-edition.md).
 
-## Fliken Allmänt {#general-tab}
+## fliken Allmänt {#general-tab}
 
 Den här skärmen innehåller alla allmänna data om den valda profilen. Den innehåller i synnerhet efternamn, förnamn, e-postadress, e-postmottagningsformat osv. Det ser ut så här:
 
@@ -42,7 +43,7 @@ Den här skärmen innehåller alla allmänna data om den valda profilen. Den inn
 
 >[!NOTE]
 >
->När **[!UICONTROL No longer contact (by any channel)]** om du väljer det här alternativet innebär det att profilen är på blockeringslista, dvs. att profilen har uttryckt en önskan om att inte bli kontaktad (t.ex. genom att klicka på en länk för att avbryta prenumerationen i ett nyhetsbrev). De kommer inte längre att vara inriktade på leveranser i någon kanal (e-post, direktreklam osv.). Mer information finns på [den här sidan](../../delivery/using/understanding-quarantine-management.md).
+>När **[!UICONTROL No longer contact (by any channel)]** om du väljer det här alternativet innebär det att profilen är på blockeringslista, dvs. att profilen har uttryckt en önskan om att inte bli kontaktad (till exempel genom att klicka på en länk för att avbryta prenumerationen i ett nyhetsbrev). De kommer inte längre att vara inriktade på leveranser i någon kanal (e-post, direktreklam osv.). Mer information finns på [den här sidan](../../delivery/using/understanding-quarantine-management.md).
 
 ## Fliken Kontaktinformation {#contact-information-tab}
 

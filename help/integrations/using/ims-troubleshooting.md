@@ -2,16 +2,17 @@
 product: campaign
 title: IMS-felsökning
 description: IMS-felsökning
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
+feature: Configuration
+badge-v7: label="v7" type="Informative" tooltip="Gäller Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Gäller även Campaign v8"
 audience: integrations
 content-type: reference
 topic-tags: connecting-via-an-adobe-id
 exl-id: 1ce89c3a-1fe6-4ed6-9547-2eb9713a0ec3
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '407'
-ht-degree: 1%
+source-wordcount: '419'
+ht-degree: 2%
 
 ---
 
@@ -26,7 +27,7 @@ Följande felsökningstips är till hjälp **lokal** -kunder löser de vanligast
 Det ska bara finnas **en** externt konto med följande inställningar:
 
 * **Internt namn**: Adobe_Marketing_Cloud
-* **Typ**: Adobe Marketing Cloud
+* **Typ**: ADOBE MARKETING CLOUD
 
 Ta bort alla dubbletter av externa konton som har samma inställningar.
 
@@ -73,14 +74,14 @@ Starta om servern om några ändringar görs i inställningarna ovan i det exter
 
 **Vanliga typer av fel och möjliga lösningar**
 
-* Användaren omdirigeras till adobe.com-sidan:
+* Användaren omdirigeras till adobe.com:
 
-   Det är problem med **[!UICONTROL Callback URL]**. Gå till föregående steg för att kontrollera **[!UICONTROL Callback URL]** konfiguration.
+  Ett problem har uppstått med **[!UICONTROL Callback URL]**. Gå till föregående steg för att kontrollera **[!UICONTROL Callback URL]** konfiguration.
 
 * Meddelandet&quot;Inloggningen har ingen rättighet som matchar uttrycket&quot;:
 
-   Gå till föregående steg för att kontrollera **[!UICONTROL Association Mask]** och operatorgruppskonfiguration.
+  Gå till föregående steg för att kontrollera **[!UICONTROL Association Mask]** och operatorgruppskonfiguration.
 
 * Användaren har inte åtkomst till Adobe ID inloggningssida:
 
-   Kontrollera scopekonfigurationen i föregående steg.
+  Kontrollera scopekonfigurationen i föregående steg.

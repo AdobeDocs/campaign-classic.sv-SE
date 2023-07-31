@@ -2,16 +2,17 @@
 product: campaign
 title: RDBMS-specifika rekommendationer
 description: RDBMS-specifika rekommendationer
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
-badge-v7-prem: label="on-premise & hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html" tooltip="Applies to on-premise and hybrid deployments only"
+feature: Monitoring
+badge-v7-only: label="v7" type="Informative" tooltip="Gäller endast Campaign Classic v7"
+badge-v7-prem: label="lokal och hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=sv" tooltip="Gäller endast lokala och hybrida driftsättningar"
 audience: production
 content-type: reference
 topic-tags: database-maintenance
 exl-id: a586d70b-1b7f-47c2-a821-635098a70e45
-source-git-commit: 4661688a22bd1a82eaf9c72a739b5a5ecee168b1
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '1176'
-ht-degree: 1%
+source-wordcount: '1201'
+ht-degree: 2%
 
 ---
 
@@ -93,7 +94,7 @@ Om du vill köra VACUUM-åtgärden, analysera och tida den kan du använda den h
 VACUUM (FULL, ANALYZE, VERBOSE) <table>;
 ```
 
-Vi rekommenderar att du inte utelämnar ANALYZE. I annat fall lämnas den tomma tabellen utan statistik. Orsaken är att en ny tabell skapas och den gamla tas bort. Därför ändras tabellens objekt-ID (OID), men ingen statistik beräknas. Det innebär att du omedelbart får prestandaproblem.
+Vi rekommenderar att du inte utelämnar ANALYZE-påståendet. I annat fall lämnas den tomma tabellen utan statistik. Orsaken är att en ny tabell skapas och den gamla tas bort. Därför ändras tabellens objekt-ID (OID), men ingen statistik beräknas. Det innebär att du omedelbart får prestandaproblem.
 
 Här är ett typiskt exempel på en SQL-underhållsplan som ska utföras regelbundet:
 
@@ -137,13 +138,12 @@ VACUUM (FULL, ANALYZE, VERBOSE) nmsmirrorpageinfo;
 
 >[!NOTE]
 >
->* Adobe rekommenderar att du börjar med mindre tabeller: På så sätt har åtminstone en del av underhållet slutförts om processen misslyckas på stora tabeller (där risken för fel är störst).
+>* Adobe rekommenderar att man börjar med mindre tabeller: på det här sättet har åtminstone en del av underhållet slutförts om processen misslyckas på stora tabeller (där risken för fel är störst).
 >* Adobe rekommenderar att du lägger till tabeller som är specifika för din datamodell och som kan uppdateras avsevärt. Detta kan vara fallet för **NmsRecipient** om du har stora dagliga datareplikeringsflöden.
 >* Programsatsen VACUUM låser tabellen, vilket pausar vissa processer medan underhåll utförs.
 >* För mycket stora tabeller (vanligtvis över 5 Gbit) kan VACUUM FULL-satsen bli ganska ineffektiv och ta mycket lång tid. Adobe rekommenderar inte att du använder den för **YyyNmsBroadLogXx** tabell.
 >* Den här underhållsåtgärden kan implementeras i ett Adobe Campaign-arbetsflöde med en **[!UICONTROL SQL]** aktivitet. Mer information om detta finns i [det här avsnittet](../../workflow/using/architecture.md). Se till att du schemalägger underhåll under en tid med låg aktivitet som inte kolliderar med säkerhetskopieringsfönstret.
 >
-
 
 ### Återskapa en databas {#rebuilding-a-database}
 
@@ -403,7 +403,7 @@ function sqlGetMemo(strSql)
 
 ## Oracle {#oracle}
 
-Kontakta databasadministratören för att få information om de procedurer som passar bäst för din version av Oraclet.
+Kontakta databasadministratören för att få information om de procedurer som är bäst lämpade för din version av Oraclet.
 
 ## Microsoft SQL Server {#microsoft-sql-server}
 
@@ -436,19 +436,19 @@ Exemplet nedan gäller Microsoft SQL Server 2005. Om du använder en annan versi
 
    * Om indexfragmenteringsgraden är mellan 10 % och 40 % rekommenderas en omorganisering.
 
-      Välj vilka databaser och objekt (tabeller eller vyer) du vill ordna om och klicka sedan på **[!UICONTROL Next]**.
+     Välj vilka databaser och objekt (tabeller eller vyer) du vill ordna om och klicka sedan på **[!UICONTROL Next]**.
 
-      >[!NOTE]
-      >
-      >Beroende på hur konfigurationen ser ut kan du antingen välja de tidigare markerade tabellerna eller alla tabeller i databasen.
+     >[!NOTE]
+     >
+     >Beroende på hur konfigurationen ser ut kan du antingen välja de tidigare markerade tabellerna eller alla tabeller i databasen.
 
    * Om indexfragmenteringshastigheten är högre än 40 % rekommenderas en omgenerering.
 
-      Välj de alternativ du vill använda för att återskapa index och klicka sedan på **[!UICONTROL Next]**.
+     Välj de alternativ du vill använda för att återskapa index och klicka sedan på **[!UICONTROL Next]**.
 
-      >[!NOTE]
-      >
-      >Återskapandeindexprocessen är mer begränsad vad gäller processoranvändning och låser databasresurserna. Välj **[!UICONTROL Keep index online while reindexing]** om du vill att indexet ska vara tillgängligt under återskapandet.
+     >[!NOTE]
+     >
+     >Återskapandeindexprocessen är mer begränsad vad gäller processoranvändning och låser databasresurserna. Välj **[!UICONTROL Keep index online while reindexing]** om du vill att indexet ska vara tillgängligt under återskapandet.
 
 1. Välj de alternativ som du vill visa i aktivitetsrapporten och klicka sedan på **[!UICONTROL Next]**.
 1. Kontrollera listan över uppgifter som har konfigurerats för underhållsplanen och klicka sedan på **[!UICONTROL Finish]**.
@@ -471,7 +471,7 @@ Exemplet nedan gäller Microsoft SQL Server 2005. Om du använder en annan versi
 >
 >Den här konfigurationen är valfri.
 
-The **WdbcOptions_TempDbName** gör att du kan konfigurera en separat databas för arbetsregister på Microsoft SQL Server. Detta optimerar säkerhetskopiering och replikering.
+The **WdbcOptions_TempDbName** gör att du kan konfigurera en separat databas för arbetstabeller på Microsoft SQL Server. Detta optimerar säkerhetskopiering och replikering.
 
 Det här alternativet kan användas om du vill att arbetsregister (t.ex. tabeller som skapas när ett arbetsflöde körs) ska skapas i en annan databas.
 

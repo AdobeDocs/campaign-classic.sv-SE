@@ -2,13 +2,13 @@
 product: campaign
 title: Interaktion och erbjudandehantering
 description: Lär dig hur du skickar de bästa erbjudandena till dina kontakter baserat på regler för behörighet
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 feature: Interaction, Offers
+badge-v7-only: label="v7" type="Informative" tooltip="Gäller endast Campaign Classic v7"
 exl-id: 62b8fdcd-8423-496c-8407-ab89a3a70721
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '289'
-ht-degree: 6%
+source-wordcount: '296'
+ht-degree: 7%
 
 ---
 
@@ -34,4 +34,4 @@ Med Interaction kan du skapa och hantera en katalog med erbjudanden och konfigur
 |---|---|
 | [Interaktionsimplementeringssteg](../../interaction/using/implementation-steps.md) | [Distribution av testerbjudanden](../../interaction/using/about-offers-simulation.md) |
 | [Live-/designmiljöer](../../interaction/using/live-design-environments.md) | [Lägga till ett erbjudande i ett e-postmeddelande](../../interaction/using/integrating-an-offer-via-the-wizard.md) |
-| [Skapa erbjudandeplatser](../../interaction/using/creating-offer-spaces.md) | [Användningsfall: lägga till ett erbjudande på en webbplats](../../interaction/using/offers-on-an-inbound-channel.md) |
+| [Skapa erbjudandeplatser](../../interaction/using/creating-offer-spaces.md) | [Användningsfall: lägg till ett erbjudande på en webbplats](../../interaction/using/offers-on-an-inbound-channel.md) |

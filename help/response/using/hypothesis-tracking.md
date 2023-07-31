@@ -2,16 +2,17 @@
 product: campaign
 title: Spåra hypotes
 description: Lär dig spåra hypoteser i svarshanteraren för kampanjer
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
+feature: Campaigns, Monitoring, Reporting
+badge-v7: label="v7" type="Informative" tooltip="Gäller Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Gäller även Campaign v8"
 audience: campaign
 content-type: reference
 topic-tags: response-manager
 exl-id: 1dc6d03b-698c-4750-9563-0676fcd185df
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '455'
-ht-degree: 0%
+source-wordcount: '467'
+ht-degree: 1%
 
 ---
 
@@ -19,7 +20,7 @@ ht-degree: 0%
 
 
 
-Resultatet av hypotesberäkningarna finns på olika nivåer i Adobe Campaign: Indikatorer som beräknas utifrån hypoteser och målpopulationens reaktioner är synliga via den faktiska hypotesen, liksom i hypotesrapporter som är tillgängliga via kampanjer och leveranser.
+Resultatet av hypotesberäkningarna är tillgängligt på olika nivåer av Adobe Campaign: indikatorer som beräknas utifrån hypoteser och målpopulationens reaktioner är synliga via den faktiska hypotesen, liksom i hypoterapporterna som är tillgängliga via kampanjer och leveranser.
 
 ## Hyposterresultat {#hypothesis-results}
 
@@ -29,13 +30,13 @@ När hypotesen har beräknats uppdateras flera mätningsindikatorer automatiskt.
 
 ![](assets/response_hypothesis_delivery_example_010.png)
 
-Dessa indikatorer är följande:
+Dessa indikatorer är:
 
-* **Antal respondentkontakter**: Antal kontaktade personer som matchar hypotesen.
-* **Kontaktad svarsfrekvens**: antal kontaktpersoner/totalt antal kontaktade personer under leveransen.
-* **Antal kontakter i kontrollgruppen för svarande**: antalet kontrollgrupper som matchar hypotesen.
+* **Antal respondentkontakter**: antal kontaktade personer som matchar hypotesen.
+* **Kontaktad svarsfrekvens**: antal kontaktpersoner/totalt antal kontaktpersoner under leveransen.
+* **Antal kontakter i kontrollgruppen för svarande**: antal kontrollgrupper som matchar hypotesen.
 * **Kontrollgruppens svarsfrekvens**: antal respondentkontrollgrupper/totalt antal leveranskontrollgrupper.
-* **Antal reaktioner**: antal poster i tabellen som innehåller förhållandet mellan individer, hypotesen och transaktionstabellen.
+* **Antal reaktioner**: antal poster i tabellen som innehåller relationen mellan individer, hypotesen och transaktionsregistret.
 
 Klicka på knappen **[!UICONTROL Display the list]** länk:
 
@@ -43,19 +44,19 @@ Klicka på knappen **[!UICONTROL Display the list]** länk:
 
 Indikatorerna ger följande information:
 
-* **Den totala intäkten hos den kontaktade befolkningen**: Totalt antal kontaktade personer.
-* **Kontrollgruppens totala inkomster**: totalbelopp över antalet kontrollgrupper.
+* **Den totala intäkten hos den kontaktade befolkningen**: totalt antal över antalet kontaktade personer.
+* **Total intäkt för kontrollgruppen**: totala belopp över antalet kontrollgrupper.
 * **Genomsnittlig intäkt per kontakt**: totalt antal/kontaktade.
-* **Genomsnittlig intäkt för kontrollgruppen**: totala belopp/kontrollgrupp.
+* **Genomsnittlig intäkt för kontrollgruppen**: totalt belopp/kontrollgrupp.
 * **Total marginal per kontakt**: total marginal över kontaktad.
-* **Total marginal för kontrollgruppen**: total marginal över kontrollgruppen.
-* **Genomsnittlig marginal per kontakt**: total marginal/kontaktad.
-* **Genomsnittlig marginal för kontrollgrupper**: totala marginaler/kontrollgrupp.
+* **Total marginal för kontrollgruppen**: total marginal över kontrollgrupp.
+* **Genomsnittlig marginal per kontakt**: total marginal / kontaktad.
+* **Genomsnittlig marginal för kontrollgrupper**: total marginal/kontrollgrupp.
 * **Ytterligare intäkter**: (Genomsnittlig intäkt för kontaktad - Genomsnittlig intäkt för kontrollgruppen)&#42;Antal kontaktade
 * **Ytterligare marginal**: (Genomsnittlig kontaktmarginal - genomsnittlig kontrollgruppsmarginal) / antal kontaktade
 * **Genomsnittlig kostnad per kontakt**: beräknad leveranskostnad/antal kontakter.
 * **avkastning**: beräknad kostnad för leveransen/total marginal per kontakt
-* **Effektiv avkastning**: beräknad leveranskostnad/tilläggsmarginal.
+* **Effektiv avkastning**: beräknad leveranskostnad/ytterligare marginal.
 * **Signifikans**: innehåller värdena 0 till 3 beroende på kampanjens betydelse.
 
 ### Reaktioner {#reactions}
@@ -73,8 +74,8 @@ The **[!UICONTROL Hypothesis report]** gör att du kan se resultatet av de hypot
 
 * **På kampanjnivå**: klicka på **[!UICONTROL Reports]** länk till den relevanta kampanjen och välj **[!UICONTROL Hypothesis report]**. Den här rapporten innehåller en lista över kampanjleveranser och de hypoteser som beräknas för varje leverans.
 
-   ![](assets/response_hypothesis_campaign_report_001.png)
+  ![](assets/response_hypothesis_campaign_report_001.png)
 
-* **På leveransnivå**: för att få tillgång till rapporten, öppna den aktuella leveransen, klicka på **[!UICONTROL Reports]** i **[!UICONTROL Summary]** och väljer **[!UICONTROL Hypothesis report]**. Om flera hypoteser har beräknats för samma leverans innehåller rapporten alla hypoteser.
+* **På leveransnivå**: om du vill öppna rapporten öppnar du den aktuella leveransen klickar du på **[!UICONTROL Reports]** i **[!UICONTROL Summary]** och väljer **[!UICONTROL Hypothesis report]**. Om flera hypoteser har beräknats för samma leverans innehåller rapporten alla hypoteser.
 
-   ![](assets/response_hypothesis_delivery_report_001.png)
+  ![](assets/response_hypothesis_delivery_report_001.png)

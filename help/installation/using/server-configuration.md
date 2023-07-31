@@ -2,14 +2,15 @@
 product: campaign
 title: Säkerhetskonfiguration för server
 description: Läs mer om de effektivaste strategierna för serverkonfiguration
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+feature: Installation, Instance Settings
+badge-v7-only: label="v7" type="Informative" tooltip="Gäller endast Campaign Classic v7"
 audience: installation
 content-type: reference
 topic-tags: prerequisites-and-recommendations-
 exl-id: e1aff73a-54fb-444e-b183-df11c9b3df31
-source-git-commit: 3c1a0f435dce5e1f54f701e742f393db066ad78f
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '624'
+source-wordcount: '631'
 ht-degree: 3%
 
 ---
@@ -24,7 +25,7 @@ Kontrollera med de operativa användarna vilken typ av filer de överför till s
 * innehåll (zip, html, css, ...)
 * marknadsföringsmaterial (doc, xls, pdf, psd, tiff, ...)
 * e-postbilaga (doc, pdf, ...)
-* ETL (txt, csv, tab, ...)
+* ETL (text, csv, tab, ...)
 * osv.
 
 Lägg till alla i serverConf/shared/datastore/@uploadAllowlist (giltigt reguljärt java-uttryck). Läs mer i [den här sidan](../../installation/using/file-res-management.md).
@@ -47,9 +48,9 @@ Standardlistan med URL:er som kan anropas av JavaScript-koder (arbetsflöden osv
 
 Det finns tre lägen för anslutningsskydd:
 
-* **Blockera** : Alla URL:er som inte tillhör tillåtelselista blockeras, med ett felmeddelande. Det här är standardläget efter en efteruppgradering.
-* **Tillstånd** : Alla URL:er som inte tillhör tillåtelselista tillåts.
-* **Varning** : alla URL:er som inte finns på tillåtelselista tillåts, men JS-tolken genererar en varning så att administratören kan samla in dem. I det här läget läggs JST-310027-varningsmeddelanden till.
+* **Blockera** : alla URL:er som inte tillhör tillåtelselista blockeras, med ett felmeddelande. Det här är standardläget efter en efteruppgradering.
+* **Tillstånd** : alla URL:er som inte tillhör tillåtelselista tillåts.
+* **Varning** : alla URL:er som inte finns till tillåtelselista tillåts, men JS-tolken genererar en varning så att administratören kan samla in dem. I det här läget läggs JST-310027-varningsmeddelanden till.
 
 ```
 <urlPermission action="warn" debugTrace="true">
@@ -65,7 +66,7 @@ Befintliga kunder som kommer från en migrering kan använda varningsläget en s
 
 ## Kommandobegränsning (på serversidan)
 
-Flera kommandon finns i blockeringslista och kan inte utföras med funktionen execCommand. En extra säkerhetsfunktion tillhandahålls av en dedikerad Unix-användare för att köra externa kommandon. För värdbaserade installationer tillämpas den här begränsningen automatiskt. För lokala installationer kan du konfigurera den här begränsningen manuellt genom att följa instruktionerna från [den här sidan](../../installation/using/configuring-campaign-server.md#restricting-authorized-external-commands). Dessutom **[!UICONTROL Script]** och **[!UICONTROL External task]** arbetsflödesaktiviteter är inte tillgängliga (nyligen installerade instanser).
+Flera kommandon finns i blockeringslista och kan inte utföras med funktionen execCommand. En extra säkerhetsfunktion tillhandahålls av en dedikerad Unix-användare för att köra externa kommandon. För värdbaserade installationer tillämpas denna begränsning automatiskt. För lokala installationer kan du konfigurera den här begränsningen manuellt genom att följa instruktionerna från [den här sidan](../../installation/using/configuring-campaign-server.md#restricting-authorized-external-commands). Dessutom **[!UICONTROL Script]** och **[!UICONTROL External task]** arbetsflödesaktiviteter är inte tillgängliga (nyligen installerade instanser).
 
 ## Andra konfigurationer
 

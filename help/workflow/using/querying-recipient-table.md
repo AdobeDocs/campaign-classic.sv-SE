@@ -2,12 +2,12 @@
 product: campaign
 title: Fråga mottagartabellen
 description: Lär dig ställa frågor i mottagartabellen
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
-feature: Query Editor
+badge-v7-only: label="v7" type="Informative" tooltip="Gäller endast Campaign Classic v7"
+feature: Query Editor, Workflows
 exl-id: 5b037798-b092-4c98-9f6a-4af7fc7941c6
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '392'
+source-wordcount: '399'
 ht-degree: 3%
 
 ---
@@ -20,19 +20,19 @@ I det här exemplet vill vi återskapa namn och e-post för mottagare vars e-pos
 
 * Vilken tabell ska vi välja?
 
-   mottagartabellen (nms:mottagare)
+  mottagartabellen (nms:mottagare)
 
 * Fält som ska markeras som utdatakolumner
 
-   E-post, namn, ort och kontonummer
+  E-post, namn, ort och kontonummer
 
 * Vilka filtervillkor har mottagarna?
 
-   stad- och e-postdomän
+  stad- och e-postdomän
 
 * Är en sortering konfigurerad?
 
-   Ja, baserat på **[!UICONTROL Account number]** och **[!UICONTROL Last name]**
+  Ja, baserat på **[!UICONTROL Account number]** och **[!UICONTROL Last name]**
 
 Så här skapar du det här exemplet:
 
@@ -48,19 +48,19 @@ Så här skapar du det här exemplet:
 1. I **[!UICONTROL Data filtering]** fönster, förfina sökningen: välj **[!UICONTROL Filtering conditions]** och klicka **[!UICONTROL Next]**.
 1. The **[!UICONTROL Target element]** I kan du ange filterinställningarna.
 
-   Definiera följande filtervillkor: mottagare med en e-postdomän som är lika med &quot;orange.co.uk&quot;. Välj **E-postdomän (@email)** i **[!UICONTROL Expression]** kolumn, välja **lika med** i **[!UICONTROL Operator]** kolumn och ange&quot;orange.co.uk&quot; i **[!UICONTROL Value]** kolumn.
+   Definiera följande filtervillkor: mottagare med en e-postdomän som är lika med &quot;orange.co.uk&quot;. Gör detta genom att välja **E-postdomän (@email)** i **[!UICONTROL Expression]** kolumn, välja **lika med** i **[!UICONTROL Operator]** kolumn och ange&quot;orange.co.uk&quot; i **[!UICONTROL Value]** kolumn.
 
    ![](assets/query_editor_05.png)
 
 1. Klicka på **[!UICONTROL Distribution of values]** om du vill visa en distribution baserat på e-postdomänen för potentiella kunder. Det finns en procentandel tillgänglig för varje e-postdomän i databasen. Andra domäner än &quot;orange.co.uk&quot; visas tills filtret tillämpas.
 
-   En sammanfattning av frågan visas längst ned i fönstret: **E-postdomän som är lika med &#39;orange.co.uk&#39;**.
+   En sammanfattning av frågan visas längst ned i fönstret: **E-postdomän som är lika med orange.co.uk**.
 
-1. Klicka på **[!UICONTROL Preview]** för att få en uppfattning om frågeresultatet: Endast e-postdomäner med namnet&quot;orange.co.uk&quot; visas.
+1. Klicka på **[!UICONTROL Preview]** för att få en uppfattning om frågeresultatet: endast e-postdomäner av typen&quot;orange.co.uk&quot; visas.
 
    ![](assets/query_editor_nveau_17.png)
 
-1. Vi kommer nu att ändra frågan för att hitta kontakter som inte bor i London.
+1. Vi ändrar nu frågan för att hitta kontakter som inte bor i London.
 
    Välj **[!UICONTROL City (location/@city)]** i **[!UICONTROL Expression]** kolumn, **[!UICONTROL different from]** som en operator och ange **[!UICONTROL London]** i **[!UICONTROL Value]** kolumn.
 

@@ -2,16 +2,17 @@
 product: campaign
 title: Använda en SFTP-server
 description: Läs mer om de effektivaste strategierna för SFTP-servrar och felsökning
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
+feature: Troubleshooting
+badge-v7: label="v7" type="Informative" tooltip="Gäller Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Gäller även Campaign v8"
 audience: platform
 content-type: reference
 topic-tags: importing-and-exporting-data
 exl-id: d585a5d4-ea33-43c8-aa37-4d892025374a
-source-git-commit: 4661688a22bd1a82eaf9c72a739b5a5ecee168b1
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '1148'
-ht-degree: 14%
+source-wordcount: '1160'
+ht-degree: 15%
 
 ---
 
@@ -23,9 +24,9 @@ ht-degree: 14%
 
 När du hanterar filer och data för ETL-ändamål lagras dessa filer på en SFTP-värdserver som tillhandahålls av Adobe. Se till att du följer rekommendationerna nedan när du använder SFTP-servrar.
 
-* Använd nyckelbaserad autentisering i stället för lösenordsautentisering för att undvika att lösenordet förfaller (lösenord har en giltighetsperiod på 90 dagar). Dessutom kan du med nyckelbaserad autentisering generera flera nycklar, till exempel när du hanterar flera enheter. För lösenordsautentisering krävs däremot att du delar lösenordet med alla enheter som du hanterar.
+* Använd nyckelbaserad autentisering i stället för lösenordsautentisering för att undvika att lösenordet förfaller (lösenord har en giltighetsperiod på 90 dagar). Dessutom kan du med nyckelbaserad autentisering generera flera nycklar, till exempel när du hanterar flera enheter. För lösenordsautentisering krävs tvärtom att du delar lösenordet med alla enheter som du hanterar.
 
-   Nyckelformatet som stöds är SSH-2 RSA 2048. Tangenter kan genereras med verktyg som PyTTY (Windows) eller ssh-keygen (Unix). Du måste ange den offentliga nyckeln till Adobe Support via [Adobe kundtjänst](https://helpx.adobe.com/se/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) om du vill att den ska överföras till Campaign-servern.
+  Nyckelformatet som stöds är SSH-2 RSA 2048. Tangenter kan genereras med verktyg som PyTTY (Windows) eller ssh-keygen (Unix). Du måste ange den offentliga nyckeln till Adobe Support via [Adobe kundtjänst](https://helpx.adobe.com/se/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) om du vill att den ska överföras till Campaign-servern.
 
 * Använd batchbearbetning i SFTP-överföringar och i arbetsflöden.
 
@@ -45,7 +46,7 @@ För att undvika sådana problem rekommenderar Adobe att du följer de bästa me
 
 >[!NOTE]
 >
->Om din instans ligger hos AWS kan du övervaka din SFTP-serverlagring med Campaign Classic [Kontrollpanelen](https://experienceleague.adobe.com/docs/control-panel/using/sftp-management/sftp-storage-management.html). Följ stegen på [den här sidan](https://experienceleague.adobe.com/docs/control-panel/using/faq.html) för att kontrollera om instanser har AWS som värd.
+>Om din instans ligger hos AWS kan du övervaka din SFTP-serverlagring med Campaign Classic [Kontrollpanelen](https://experienceleague.adobe.com/docs/control-panel/using/sftp-management/sftp-storage-management.html). Följ stegen på [den här sidan](https://experienceleague.adobe.com/docs/control-panel/using/faq.html?lang=sv) för att kontrollera om instanser har AWS som värd.
 >
 >Kontrollpanelen är tillgänglig för alla administratörsanvändare. Stegen för att bevilja administratörsåtkomst till en användare finns på [den här sidan](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/managing-permissions.html?lang=sv#discover-control-panel).
 >
@@ -102,10 +103,10 @@ I avsnittet nedan listas den information som ska kontrolleras och tillhandahåll
    >
    >Med nätverksverktyget kan du enkelt hantera nätverksanslutningar på olika operativsystem (se [https://eternallybored.org/misc/netcat/](https://eternallybored.org/misc/netcat/)).
 
-   Om porten inte öppnas kontrollerar du att du har öppnat utgående anslutningar och försöker sedan igen. Om du fortfarande har problem med anslutningen kan du dela utdata från kommandot med [Adobe kundtjänst](https://helpx.adobe.com/se/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) team.
+   Om porten inte är öppen kontrollerar du att du har öppnat utgående anslutningar och försöker sedan igen. Om du fortfarande har problem med anslutningen kan du dela utdata från kommandot med [Adobe kundtjänst](https://helpx.adobe.com/se/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) team.
 
 1. Kontrollera att den offentliga IP-adressen som du försöker initiera SFTP-anslutningen från är den som du skickade till Adobe Support för tillåtelselista.
-1. Om du använder en lösenordsbaserad autentisering kan ditt lösenord ha gått ut (lösenorden har en giltighetsperiod på 90 dagar). Vi rekommenderar därför starkt att du använder nyckelbaserad autentisering (se [Bästa praxis för SFTP-server](#sftp-server-best-practices)).
+1. Om du använder en lösenordsbaserad autentisering kan ditt lösenord ha gått ut (lösenorden har en giltighetsperiod på 90 dagar). Vi rekommenderar därför starkt att du använder en nyckelbaserad autentisering (se [Bästa praxis för SFTP-server](#sftp-server-best-practices)).
 1. Om du använder en nyckelbaserad autentisering kontrollerar du att nyckeln du använder är samma som du angav för [Adobe kundtjänst](https://helpx.adobe.com/se/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) team för instanskonfigurationen.
 1. Om du använder FileZilla eller ett motsvarande FTP-verktyg anger du anslutningsloggarna i supportbiljetten.
 
@@ -125,7 +126,7 @@ I arbetsflödesjournalen visas följande loggar:
 
 Det här felet inträffar när du försöker ansluta FTP-servern från ett arbetsflöde och hämta filerna från servern, medan du fortfarande kan ansluta via FTP med FileZilla eller WinSCP.
 
-Detta fel indikerar att FTP-serverns domännamn inte kunde matchas korrekt. Så här felsöker du:
+Det här felet indikerar att FTP-serverns domännamn inte kunde matchas korrekt. Så här felsöker du:
 
 1. Felsökning **DNS-serverkonfiguration**:
 
@@ -139,7 +140,7 @@ Detta fel indikerar att FTP-serverns domännamn inte kunde matchas korrekt. Så 
 1. Felsökning **sessionsloggar**:
 
    1. Dubbelklicka på [Filöverföring](../../workflow/using/file-transfer.md) aktivitet.
-   1. Gå till **[!UICONTROL File Transfer]** tabbtangenten och sedan klicka **[!UICONTROL Advanced Parameters]**.
+   1. Gå till **[!UICONTROL File Transfer]** tabbtangenten och klicka sedan på **[!UICONTROL Advanced Parameters]**.
    1. Markera alternativet **[!UICONTROL Display the session logs]**.
 
       ![](assets/sftp-error-display-logs.png)

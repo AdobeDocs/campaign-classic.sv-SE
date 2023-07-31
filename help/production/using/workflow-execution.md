@@ -2,16 +2,17 @@
 product: campaign
 title: Arbetsflödeskörning
 description: Arbetsflödeskörning
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
-badge-v7-prem: label="on-premise & hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html" tooltip="Applies to on-premise and hybrid deployments only"
+feature: Monitoring, Workflows
+badge-v7-only: label="v7" type="Informative" tooltip="Gäller endast Campaign Classic v7"
+badge-v7-prem: label="lokal och hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=sv" tooltip="Gäller endast lokala och hybrida driftsättningar"
 audience: production
 content-type: reference
 topic-tags: troubleshooting
 exl-id: b5aa5663-1902-4f50-9202-783e73a28838
-source-git-commit: 4661688a22bd1a82eaf9c72a739b5a5ecee168b1
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '633'
-ht-degree: 3%
+source-wordcount: '658'
+ht-degree: 5%
 
 ---
 
@@ -46,7 +47,7 @@ Det kan finnas flera orsaker till det här problemet, följ stegen nedan för at
 
 1. Kontrollera **[!UICONTROL wfserver]** modulläget i **[!UICONTROL Monitoring]** -flik, tillgänglig från Campaign Classic hemsida (se [Övervaka processer](../../production/using/monitoring-processes.md)). Den här processen ansvarar för att köra alla arbetsflöden.
 
-   En administratörsanvändare kan även kontrollera att **wfserver@`<instance>`** -modulen startas på huvudprogramservern med hjälp av kommandot nedan.
+   En administratör kan även kontrollera att **wfserver@`<instance>`** -modulen startas på huvudprogramservern med hjälp av kommandot nedan.
 
    ```
    nlserver pdump
@@ -89,7 +90,7 @@ Gör så här om du vill kontrollera detta och starta modulen om det behövs:
 
 1. Kontrollera **[!UICONTROL wfserver]** modulläget i **[!UICONTROL Monitoring]** -flik, tillgänglig från Campaign Classic hemsida (se [Övervaka processer](../../production/using/monitoring-processes.md)).
 
-   En administratörsanvändare kan även kontrollera att **wfserver@`<instance>`** -modulen startas på huvudprogramservern med hjälp av kommandot nedan.
+   En administratör kan även kontrollera att **wfserver@`<instance>`** -modulen startas på huvudprogramservern med hjälp av kommandot nedan.
 
    ```
    nlserver pdump
@@ -114,7 +115,7 @@ Gör så här om du vill kontrollera detta och starta modulen om det behövs:
 
    Mer information om hur du startar om moduler finns i [det här avsnittet](../../production/using/usual-commands.md#module-launch-commands).
 
-## Misslyckat arbetsflöde {#failed-workflow}
+## Arbetsflödet misslyckades {#failed-workflow}
 
 Om ett arbetsflöde misslyckas gör du så här:
 

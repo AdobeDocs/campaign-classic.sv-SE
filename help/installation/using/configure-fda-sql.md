@@ -2,11 +2,12 @@
 product: campaign
 title: Konfigurera åtkomst till Microsoft SQL Server
 description: Lär dig konfigurera åtkomst till Microsoft SQL Server
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+feature: Installation, Federated Data Access
+badge-v7-only: label="v7" type="Informative" tooltip="Gäller endast Campaign Classic v7"
 exl-id: 65ab4577-3126-4579-8fcc-e93772ebd1e8
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '493'
+source-wordcount: '500'
 ht-degree: 1%
 
 ---
@@ -96,7 +97,7 @@ Du måste skapa en [!DNL Microsoft SQL Server] externt konto för att ansluta Ca
 
    * **[!UICONTROL Password]**: Lösenord för användarkonto.
 
-   * **[!UICONTROL Database]**: Databasens namn (valfritt).
+   * **[!UICONTROL Database]**: Namn på databasen (valfritt).
 
    * **[!UICONTROL Timezone]**: Tidszon inställd på [!DNL Microsoft SQL Server]. [Läs mer](https://docs.microsoft.com/en-us/sql/t-sql/functions/current-timezone-transact-sql?view=sql-server-ver15)
 
@@ -112,6 +113,6 @@ Kopplingen stöder följande alternativ:
 
 | Option | Beskrivning |
 |---|---|
-| Autentisering | Typ av autentisering som stöds av kopplingen. Aktuellt värde som stöds: ActiveDirectoryMSI. <br> Mer information finns i exempel 8 av [Microsoft-dokumentation](https://docs.microsoft.com/en-us/sql/connect/odbc/using-azure-active-directory?view=sql-server-ver15#example-connection-strings). |
+| Autentisering | Typ av autentisering som stöds av kopplingen. Aktuellt värde: ActiveDirectoryMSI. <br> Mer information finns i exempel 8 av [Microsoft-dokumentation](https://docs.microsoft.com/en-us/sql/connect/odbc/using-azure-active-directory?view=sql-server-ver15#example-connection-strings). |
 | Kryptera | Anger om anslutningar använder TLS-kryptering över nätverket. Möjliga värden är **ja/obligatoriskt (18.0 och senare)**, **no/optional (18.0 and later)** och **strikt (18.0 och senare)**. Standardvärdet är **ja** i version 18.0 och senare och **no** i tidigare versioner. <br>Mer information finns i [Microsoft-dokumentation](https://docs.microsoft.com/en-us/sql/connect/odbc/dsn-connection-string-attribute?view=azure-sqldw-latest#encrypt). |
 | TrustServerCertificate | Aktiverar kryptering med ett självsignerat servercertifikat när det används med **Kryptera**. <br>Godkända värden: **ja** eller **no** (standardvärde, vilket innebär att servercertifikatet valideras). |

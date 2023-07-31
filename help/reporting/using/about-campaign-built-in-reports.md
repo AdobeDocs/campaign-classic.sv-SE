@@ -2,13 +2,13 @@
 product: campaign
 title: Om inbyggda rapporter i Campaign
 description: Om inbyggda rapporter i Campaign
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
-feature: Reporting
+feature: Reporting, Monitoring
+badge-v7: label="v7" type="Informative" tooltip="Gäller Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Gäller även Campaign v8"
 exl-id: afb11ab5-bd60-4262-9dd1-fcda19cdaca0
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '269'
+source-wordcount: '281'
 ht-degree: 4%
 
 ---
@@ -33,7 +33,7 @@ Följande typer av rapporter är tillgängliga:
 * Leveransrapporter, se [Leveransrapporter](../../reporting/using/delivery-reports.md).
 * Ackumulerade rapporter, se [Kumulativa rapporter](../../reporting/using/cumulative-reports.md).
 
-Du kommer åt rapporter från klientkonsolens hemsida, rapportkontrollpanelen eller leveranslistan. Visningsläget för en rapport beror på dess sammanhang. Listan med huvudrapporter är tillgänglig på startsidan och ger dig snabb åtkomst till leveransdata. Listan kan ändras efter dina behov. Se [det här avsnittet](../../reporting/using/about-reports-creation-in-campaign.md) för mer information.
+Du kan få åtkomst till rapporter från klientkonsolens hemsida, rapportkontrollpanelen eller leveranslistan. Visningsläget för en rapport beror på dess sammanhang. Listan med huvudrapporter är tillgänglig på startsidan och ger dig snabb åtkomst till leveransdata. Listan kan ändras efter dina behov. Se [det här avsnittet](../../reporting/using/about-reports-creation-in-campaign.md) för mer information.
 
 Få tillgång till inbyggda rapporter för Campaign:
 
@@ -43,7 +43,7 @@ Få tillgång till inbyggda rapporter för Campaign:
 
 1. Använd sökfälten för att filtrera de visade rapporterna.
 
-1. Klicka sedan på rapporten som du vill visa.
+1. Klicka sedan på den rapport som du vill visa.
 
    ![](assets/reporting_edit_a_report.png)
 
@@ -53,7 +53,7 @@ Få tillgång till inbyggda rapporter för Campaign:
 
 Andra möjliga åtgärder för en rapport som redigeras beskrivs i [den här sidan](../../reporting/using/actions-on-reports.md).
 
-Rapporter som är specifika för en kampanj eller leverans är tillgängliga via deras respektive kontrollpaneler.
+Rapporter som är specifika för en kampanj eller leverans är tillgängliga via respektive instrumentpanel.
 
 ![](assets/reporting_on_a_delivery.png)
 

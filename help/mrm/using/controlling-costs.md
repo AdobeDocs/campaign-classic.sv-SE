@@ -2,14 +2,15 @@
 product: campaign
 title: Kontrollera kostnader
 description: Lär dig hur du styr kostnaderna
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+feature: Resource Management
+badge-v7-only: label="v7" type="Informative" tooltip="Gäller endast Campaign Classic v7"
 audience: campaign
 content-type: reference
 topic-tags: tasks--resources-and-budgets
 exl-id: 6765e307-915a-44d2-a486-85c64e8ec52e
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '2468'
+source-wordcount: '2475'
 ht-degree: 0%
 
 ---
@@ -52,21 +53,21 @@ Budgetar skapas i kartan via **[!UICONTROL Campaign management > Budgets]** nod.
 
 * Lägga till en ny budget
 
-   Klicka på **[!UICONTROL New]** -ikonen, namnge och spara budgeten.
+  Klicka på **[!UICONTROL New]** -ikonen, namnge och spara budgeten.
 
-* Ange startbeloppet
+* Ange det ursprungliga beloppet
 
-   Ange det allokerade beloppet i det relevanta fältet. Övriga belopp anges automatiskt. Se [Beräkna belopp](#calculating-amounts).
+  Ange det allokerade beloppet i det relevanta fältet. Övriga belopp anges automatiskt. Se [Beräkna belopp](#calculating-amounts).
 
 * Definiera giltighetsperioden
 
-   Ange start- och slutdatum. Denna information är endast vägledande.
+  Ange start- och slutdatum. Denna information är endast vägledande.
 
 * Utgifter
 
-   Skapa de utgiftskategorier som den här budgeten har tilldelats för kampanjer, aktiviteter osv. kan länkas. Se [Utgiftskategorier](#expense-categories).
+  Skapa de utgiftskategorier som den här budgeten har tilldelats för kampanjer, aktiviteter osv. kan länkas. Se [Utgiftskategorier](#expense-categories).
 
-   ![](assets/s_ncs_user_budget_create_and_save.png)
+  ![](assets/s_ncs_user_budget_create_and_save.png)
 
 >[!NOTE]
 >
@@ -131,7 +132,7 @@ Du kan välja en kategori bland de befintliga eller definiera en ny kategori gen
 
 ### Länka en budget till en annan {#linking-a-budget-to-another}
 
-Du kan länka en budget till en huvudbudget. Välj huvudbudgeten i **[!UICONTROL related budget]** sekundära budgetar.
+Du kan länka en budget till en huvudbudget. Välj huvudbudgeten i **[!UICONTROL related budget]** i de sekundära budgetarna.
 
 ![](assets/budget_link.png)
 
@@ -147,13 +148,13 @@ Utgiftsrader läggs automatiskt till i budgeten. De skapas under leveransanalyse
 
 ![](assets/s_ncs_user_budget_line_edit.png)
 
-För varje kampanj, leverans eller uppgift grupperas de genererade kostnaderna i utgiftsraderna i den budget som de debiteras. Dessa utgiftsrader skapas enligt den berörda tjänsteleverantörens kostnadsrader och beräknas via de tillhörande kostnadsstrukturerna.
+För varje kampanj, leverans eller uppgift grupperas de genererade kostnaderna i utgiftsraderna i den budget som de debiteras. Dessa utgiftsrader skapas enligt den berörda tjänsteleverantörens kostnadsrader och beräknas via tillhörande kostnadsstrukturer.
 
 Varje utgiftsrad innehåller därför följande information:
 
 * Kampanjen och leveransen eller uppgiften som den hör till
 * Det belopp som beräknas utifrån kostnadsstrukturerna eller den uppskattade preliminära kostnaden
-* Verklig kostnad för den berörda leveransen eller uppgiften
+* Verklig kostnad för leverans eller uppgift
 * Motsvarande fakturarad (endast MRM)
 * Lista över kostnader som beräknats per kostnadskategori (om det finns en kostnadsstruktur)
 
@@ -179,11 +180,11 @@ Kostnader kan åläggas för leveranser och uppgifter. Beroende på förloppet f
 
 Kostnaderna delas in i tre kategorier:
 
-1. Beräknad preliminär kostnad
+1. Uppskattad preliminär kostnad
 
    Den uppskattade preliminära kostnaden är en uppskattning av kostnaderna för kampanjens processer. Så länge som indata redigeras konsolideras inte beloppen. Den måste ha **[!UICONTROL Specified]** status för de belopp som ska beaktas vid beräkningarna.
 
-   Detta belopp matas in manuellt och kan delas upp i flera utgiftskategorier. Klicka på **[!UICONTROL Breakdown...]** och sedan **[!UICONTROL Add]** för att definiera ett nytt belopp.
+   Detta belopp anges manuellt och kan delas upp i flera utgiftskategorier. Klicka på **[!UICONTROL Breakdown...]** och sedan **[!UICONTROL Add]** för att definiera ett nytt belopp.
 
    ![](assets/s_user_edit_budget_tab_ventil.png)
 
@@ -195,7 +196,7 @@ Kostnaderna delas in i tre kategorier:
 
    Om den faktiska kostnaden inte anges gäller följande regler:
 
-   * För en kampanj som redigeras är den beräknade kostnaden den uppskattade preliminära kostnaden för kampanjen eller, om denna kostnad inte definieras, den beräknade kostnaden blir summan av alla preliminära kostnader för kampanjens leveranser och uppgifter. Om kampanjen är avslutad blir kampanjens beräknade kostnad summan av alla beräknade kostnader.
+   * För en kampanj som redigeras är den beräknade kostnaden den uppskattade preliminära kostnaden för kampanjen eller, om denna kostnad inte är definierad, den beräknade kostnaden blir summan av alla preliminära kostnader för kampanjens leveranser och uppgifter. Om kampanjen är avslutad blir kampanjens beräknade kostnad summan av alla beräknade kostnader.
    * För en leverans som ännu inte har analyserats är den beräknade preliminära kostnaden den beräknade kostnaden. Om analysen redan har utförts är den beräknade kostnaden summan av alla kostnader som beräknas utifrån tjänstens kostnadsstrukturer och antalet mottagare.
    * För en pågående uppgift använder den beräknade kostnaden den uppskattade preliminära kostnaden. Om uppgiften är slutförd är den beräknade kostnaden summan av alla kostnader som beräknats från tjänsteleverantörens kostnadsstrukturer och antalet slutförda dagar.
    * För marknadsföringsplanen, liksom för programmet, är den beräknade kostnaden summan av de beräknade kostnaderna för kampanjerna. Om dessa kostnader inte anges kommer den beräknade kostnaden att använda de uppskattade preliminära kostnaderna.
@@ -232,7 +233,7 @@ Vi ska skapa en kampanj med:
 
 #### Steg 2 - Konfigurera tjänsteleverantören och definiera kostnadsstrukturerna {#step-2---configuring-the-service-provider-and-defining-the-cost-structures}
 
-1. Skapa en tjänsteleverantör och en tjänstmall med kostnadsstrukturen från **[!UICONTROL Administration > Campaigns]** nod. Mer information finns i [Skapa en tjänsteleverantör och dess kostnadskategorier](../../campaign/using/providers--stocks-and-budgets.md#creating-a-service-provider-and-its-cost-categories).
+1. Skapa en tjänsteleverantör och en tjänstmall med en kostnadsstruktur från **[!UICONTROL Administration > Campaigns]** nod. Mer information finns i [Skapa en tjänsteleverantör och dess kostnadskategorier](../../campaign/using/providers--stocks-and-budgets.md#creating-a-service-provider-and-its-cost-categories).
 
    Skapa kostnadskategorier för direktreklam **[!UICONTROL Envelopes]** (typerna 114x229 och 162x229), **[!UICONTROL Postage]** och **[!UICONTROL Print]** (typ A3 och A4). Skapa sedan följande kostnadsstrukturer:
 
@@ -272,7 +273,7 @@ Vi ska skapa en kampanj med:
 
 1. Skapa ett arbetsflöde för kampanjen och placera frågeaktiviteterna för att välja målet (varning, mottagarens postadresser måste anges).
 
-1. Skapa en direktutskick och välj den tjänsteleverantör som skapades i steg 2: kostnadskategorierna visas automatiskt.
+1. Skapa en direktleverans och välj den tjänsteleverantör som skapades i steg 2: kostnadskategorierna visas automatiskt.
 
 1. Åsidosätt kostnaden för kuverten och lägg till en fast kostnad. Välj även de kategorier som berörs av dessa kostnader.
 
@@ -318,7 +319,7 @@ Till den här kampanjen ska vi lägga till de två aktiviteterna för vilka kost
 
    När uppgiften är slutförd (status) **[!UICONTROL Finished]** ) uppdateras den beräknade kostnaden automatiskt med kostnaden för det stora rummet enligt vad som anges i kostnadsstrukturen. Denna kostnad visas också i denna kategori i uppdelningen.
 
-1. Skapa sedan en andra uppgift enligt samma förfarande, schemalagd över fem dagar och relaterad till den kostnadsstruktur som skapades tidigare.
+1. Skapa sedan en andra uppgift enligt samma procedur, schemalagd över fem dagar och relaterad till kostnadsstrukturen som skapades tidigare.
 
    ![](assets/s_user_cost_mgmt_sample_16.png)
 
@@ -362,7 +363,7 @@ Fakturor skapas och lagras i **[!UICONTROL MRM > Invoices]** noden i Adobe Campa
 
 ![](assets/s_user_cost_create_invoice.png)
 
-En faktura består av fakturarader vars summa tillåter att beloppet beräknas automatiskt. Dessa rader skapas manuellt från **[!UICONTROL Invoice lines]** -fliken. De kan kopplas till en order om att överföra informationen till beställningarna.
+En faktura består av fakturarader vars summa tillåter att beloppet beräknas automatiskt. De här raderna skapas manuellt från **[!UICONTROL Invoice lines]** -fliken. De kan kopplas till en order om att överföra informationen till beställningarna.
 
 ![](assets/s_user_cost_invoice_add_line.png)
 

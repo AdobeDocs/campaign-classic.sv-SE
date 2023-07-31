@@ -2,16 +2,17 @@
 product: campaign
 title: Infoga webbspårningstaggar på webbplatsen
 description: Lär dig hur du infogar webbspårningstaggar på webbplatsen
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+feature: Configuration
+badge-v7-only: label="v7" type="Informative" tooltip="Gäller endast Campaign Classic v7"
 exl-id: e7fcec75-82fe-45ff-8d45-7d6e95baeb14
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '328'
+source-wordcount: '335'
 ht-degree: 0%
 
 ---
 
-# Infoga spårningstaggar för webben på webbplatsen{#inserting-tags-in-your-site}
+# Infoga spårningstaggar för webben på din webbplats{#inserting-tags-in-your-site}
 
 ## Enkel metod {#simple-method}
 
@@ -87,7 +88,7 @@ Infogning av en webbspårningstagg av typen TRANSACTION på bekräftelsesidan (&
 
 När dina webbsidor genereras dynamiskt kan du lägga till spårningstaggen vid sidgenerering.
 
-**Exempel**: Webbspårning har lagts till i JSP:er.
+**Exempel**: Webbspårning har lagts till i JSP.
 
 ```
 <%@page import="java.util.Random" %>

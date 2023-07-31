@@ -2,13 +2,13 @@
 product: campaign
 title: Kom igång med transaktionsmeddelanden
 description: Läs mer om Adobe Campaign Classic transaktionsregler och viktiga steg
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
-feature: Transactional Messaging
+feature: Transactional Messaging, Message Center
+badge-v7-only: label="v7" type="Informative" tooltip="Gäller endast Campaign Classic v7"
 exl-id: dc52e789-d0bf-4e8f-b448-9d69a2762cc1
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '644'
-ht-degree: 6%
+source-wordcount: '651'
+ht-degree: 7%
 
 ---
 
@@ -53,7 +53,7 @@ Den övergripande processen för transaktionsmeddelanden beskrivs på följande 
 
 Tänk dig att du är ett företag med en webbplats där kunderna kan köpa produkter.
 
-Med Adobe Campaign kan du skicka ett e-postmeddelande till kunder som har lagt till produkter i kundvagnen. När någon av dem lämnar er webbplats utan att gå igenom sina inköp (en extern händelse som utlöser en Campaign-händelse) skickas ett e-postmeddelande om att kunden har lämnat en kundvagn (leverans av transaktionsmeddelande).
+Med Adobe Campaign kan du skicka ett e-postmeddelande till kunder som har lagt till produkter i kundvagnen. När någon av dem lämnar er webbplats utan att gå igenom sina inköp (en extern händelse som utlöser en Campaign-händelse) skickas ett e-postmeddelande om att kunden överger en kundvagn automatiskt till dem (leverans av transaktionsmeddelanden).
 
 De viktigaste stegen för att implementera detta beskrivs nedan i [det här avsnittet](#key-steps).
 

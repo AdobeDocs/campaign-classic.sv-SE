@@ -2,13 +2,14 @@
 product: campaign
 title: Installera servern
 description: Installera servern
+feature: Installation, Instance Settings
 badge-v7-only: label="v7" type="Informative" tooltip="Gäller endast Campaign Classic v7"
 badge-v7-prem: label="lokal och hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=sv" tooltip="Gäller endast lokala och hybrida driftsättningar"
 audience: installation
 content-type: reference
 topic-tags: installing-campaign-in-windows-
 exl-id: c0cb4efa-cae9-4312-88fb-738857a89595
-source-git-commit: b58edd9566d0f3d6aad5d2768706ead66e11e949
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
 source-wordcount: '416'
 ht-degree: 4%
@@ -36,7 +37,7 @@ Installationsstegen för Adobe Campaign-servern är följande:
    Det finns flera installationstyper:
 
    * **[!UICONTROL Installation of an application server]** : Installera Adobe Campaign programserver och klientkonsolen.
-   * **[!UICONTROL Minimal installation (Network)]** : Installation av klientdatorn från nätverket. Endast ett begränsat antal DLL-filer installeras på datorn, om det behövs, och alla andra komponenter används från en nätverksenhet.
+   * **[!UICONTROL Minimal installation (Network)]** : Installation av klientdatorn från nätverket. Endast ett begränsat antal DLL-filer kommer att installeras på datorn, om det behövs, och alla andra komponenter kommer att användas från en nätverksenhet.
    * **[!UICONTROL Installation of a client]** : Installation av nödvändiga komponenter för Adobe Campaign-klienten.
    * **[!UICONTROL Custom installation]** : Användaren väljer vilka element som ska installeras.
 
@@ -82,7 +83,7 @@ No task
 
 ## Serverns första start {#first-start-up-of-the-server}
 
-När installationstestet är klart öppnar du en kommandotolk via **[!UICONTROL Start > Programs > Adobe Campaign]** och ange följande kommando:
+När installationen är klar öppnar du en kommandotolk via **[!UICONTROL Start > Programs > Adobe Campaign]** och ange följande kommando:
 
 ```
 nlserver web
@@ -141,7 +142,7 @@ Adobe Campaign-servern definierar en teknisk inloggning som kallas **internal** 
 
 Läs mer i [det här avsnittet](../../installation/using/configuring-campaign-server.md#internal-identifier).
 
-## Startar Adobe Campaign tjänster {#starting-adobe-campaign-services}
+## Startar Adobe Campaign-tjänster {#starting-adobe-campaign-services}
 
 Om du vill starta Adobe Campaign-tjänsterna kan du använda tjänsthanteraren eller ange följande på kommandoraden (med rätt behörighet):
 
@@ -149,7 +150,7 @@ Om du vill starta Adobe Campaign-tjänsterna kan du använda tjänsthanteraren e
 net start nlserver6
 ```
 
-Om du behöver stoppa Adobe Campaign-processerna senare använder du kommandot:
+Om du behöver stoppa Adobe Campaign-processerna senare kan du använda kommandot:
 
 ```
 net stop nlserver6

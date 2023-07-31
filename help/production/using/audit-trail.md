@@ -2,12 +2,12 @@
 product: campaign
 title: Granskningskedja
 description: Lär dig övervaka instansen med granskningsspår för Campaign
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
-feature: Audit Trail, Monitoring
+feature: Audit Trail, Monitoring, Workflows
+badge-v7-only: label="v7" type="Informative" tooltip="Gäller endast Campaign Classic v7"
 exl-id: 8508d879-fb38-4b1f-9f55-0341bb8d0c67
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '461'
+source-wordcount: '468'
 ht-degree: 3%
 
 ---
@@ -16,9 +16,9 @@ ht-degree: 3%
 
 
 
-I Adobe Campaign **[!UICONTROL Audit trail]** ger dig tillgång till den fullständiga historiken över ändringar som gjorts i instansen.
+I ADOBE CAMPAIGN **[!UICONTROL Audit trail]** ger dig tillgång till den fullständiga historiken över ändringar som gjorts i instansen.
 
-**[!UICONTROL Audit trail]** i realtid innehåller en omfattande lista över åtgärder och händelser som inträffar i din Adobe Campaign-instans. Det innehåller ett självbetjäningssätt att komma åt en datahistorik som kan hjälpa dig att besvara frågor som: vad som hände med dina arbetsflöden och vem som senast uppdaterade dem eller vad gjorde användarna i instansen.
+**[!UICONTROL Audit trail]** i realtid innehåller en omfattande lista över åtgärder och händelser som inträffar i din Adobe Campaign-instans. Det innehåller ett självbetjäningssätt för att få tillgång till en historik med data som kan hjälpa dig att besvara frågor som: vad som hände med dina arbetsflöden och vem som senast uppdaterade dem eller vad som gjorde användarna i instansen.
 
 >[!NOTE]
 >
@@ -29,9 +29,9 @@ Granskningsspårning består av tre komponenter:
 
 * **Schema - granskningsspår**: Kontrollera aktiviteterna och de senaste ändringarna av dina scheman.
 
-   Mer information om scheman finns i [page](../../configuration/using/data-schemas.md).
+  Mer information om scheman finns i [page](../../configuration/using/data-schemas.md).
 
-* **Granskningsspår för arbetsflöde**: Kontrollera aktiviteter och de senaste ändringarna av arbetsflöden, och dessutom status för dina arbetsflöden, till exempel:
+* **Granskningsspår för arbetsflöde**: Kontrollera aktiviteter och de senaste ändringarna av arbetsflöden och dessutom status för dina arbetsflöden, till exempel:
 
    * Starta
    * Pausa
@@ -42,13 +42,13 @@ Granskningsspårning består av tre komponenter:
    * Aktivering som är lika med åtgärden Kör väntande uppgifter nu
    * Ovillkorligt stopp
 
-   Mer information om arbetsflöden finns i [page](../../workflow/using/about-workflows.md).
+  Mer information om arbetsflöden finns i [page](../../workflow/using/about-workflows.md).
 
-   Mer information om hur du övervakar arbetsflöden finns i [dedikerad sektion](../../workflow/using/monitoring-workflow-execution.md).
+  Mer information om hur du övervakar arbetsflöden finns i [dedikerad sektion](../../workflow/using/monitoring-workflow-execution.md).
 
 * **Alternativ granskningsspår**: Kontrollera aktiviteterna och de senaste ändringarna som du gjort.
 
-   Mer information om alternativen finns i [page](../../installation/using/configuring-campaign-options.md).
+  Mer information om alternativen finns i [page](../../installation/using/configuring-campaign-options.md).
 
 ## Åtkomst till granskningsspår {#accessing-audit-trail}
 
@@ -69,7 +69,7 @@ Så här kommer du åt instansens **[!UICONTROL Audit trail]** :
 
    * **[!UICONTROL Type]** : Arbetsflöde, alternativ eller scheman.
    * **[!UICONTROL Entity]** : Internt namn på dina aktiviteter.
-   * **[!UICONTROL Modified by]** : Användarnamn för den senaste personen som senast ändrade den här entiteten.
+   * **[!UICONTROL Modified by]** : Användarnamn för den sista personen som senast ändrade den här entiteten.
    * **[!UICONTROL Action]** : Senaste åtgärden som utfördes på den här entiteten, antingen Skapad, Redigerad eller Borttagen.
    * **[!UICONTROL Modification date]** : Datum för den senaste åtgärden som utfördes på den här entiteten.
 
@@ -79,7 +79,7 @@ Så här kommer du åt instansens **[!UICONTROL Audit trail]** :
 
 >[!NOTE]
 >
->Som standard är kvarhållningsperioden inställd på 180 dagar för **[!UICONTROL Audit logs]** . Mer information om hur du ändrar kvarhållningsperioden finns i [page](../../production/using/database-cleanup-workflow.md#deployment-wizard).
+>Som standard är kvarhållningsperioden 180 dagar för **[!UICONTROL Audit logs]** . Mer information om hur du ändrar kvarhållningsperioden finns i [page](../../production/using/database-cleanup-workflow.md#deployment-wizard).
 
 ## Aktivera/inaktivera granskningsspår {#enable-disable-audit-trail}
 

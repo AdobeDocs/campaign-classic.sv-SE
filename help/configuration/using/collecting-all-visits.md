@@ -2,11 +2,12 @@
 product: campaign
 title: Samla in alla besök
 description: Samla in alla besök
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+feature: Configuration, Instance Settings
+badge-v7-only: label="v7" type="Informative" tooltip="Gäller endast Campaign Classic v7"
 exl-id: cc554d0d-bbab-4f72-b870-5fef5a2fda9d
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '297'
+source-wordcount: '304'
 ht-degree: 3%
 
 ---
@@ -29,7 +30,7 @@ Servrarna konfigureras genom att överlagra vissa element i **serverConf.xml** -
 
 ### Omdirigeringsserver {#redirection-server}
 
-För omdirigeringsservern anger du **trackWebVisitors** attributet för **omdirigering** element till **true**.
+Ange **trackWebVisitors** attributet för **omdirigering** element till **true**.
 
 ```
 <redirection P3PCompactPolicy="CAO DSP COR CURa DEVa TAIa OUR BUS IND UNI COM NAV"

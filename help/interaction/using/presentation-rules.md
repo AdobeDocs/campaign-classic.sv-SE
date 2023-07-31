@@ -2,15 +2,16 @@
 product: campaign
 title: Presentationsregler
 description: Presentationsregler
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
+feature: Interaction, Offers
+badge-v7: label="v7" type="Informative" tooltip="Gäller Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Gäller även Campaign v8"
 audience: interaction
 content-type: reference
 topic-tags: case-study
 exl-id: f9dd9ad6-48da-4a80-9405-109a433a1ed5
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '448'
+source-wordcount: '460'
 ht-degree: 1%
 
 ---
@@ -34,11 +35,11 @@ Vi kommer att konfigurera vår regel så att resan till Kanada endast erbjuds en
 
    ![](assets/offer_typology_example_002.png)
 
-1. Välj **[!UICONTROL All channels]** för att utöka regeln till alla kanaler.
+1. Välj **[!UICONTROL All channels]** om du vill utöka regeln till alla kanaler.
 
    ![](assets/offer_typology_example_003.png)
 
-1. Klicka på **[!UICONTROL Edit expression]** länk och välj **[!UICONTROL Category]** nod som ett uttryck.
+1. Klicka på **[!UICONTROL Edit expression]** länk och välj **[!UICONTROL Category]** som ett uttryck.
 
    ![](assets/offer_typology_example_004.png)
 
@@ -62,11 +63,11 @@ Vi kommer att konfigurera vår regel så att resan till Kanada endast erbjuds en
 
    ![](assets/offer_typology_example_020.png)
 
-1. Välj **[!UICONTROL Rejected propositions]** filtrera så att endast förslag som avvisats av mottagaren tas med i beräkningen.
+1. Välj **[!UICONTROL Rejected propositions]** filtrera så att endast förslag som avvisats av mottagaren beaktas.
 
    ![](assets/offer_typology_example_021.png)
 
-1. Välj de mottagare som den här regeln gäller för.
+1. Välj de mottagare som regeln gäller för.
 
    I vårt exempel väljer vi **Täta resenärer** mottagare.
 
@@ -86,7 +87,7 @@ Här är ett programexempel på den typologiregel som skapades tidigare.
 
 Vi vill skicka ett första erbjudande som tillhör kategorin Kanada. Om någon av mottagarna avvisar erbjudandet kommer det inte att erbjudas igen.
 
-1. I **Täta resenärer** i mottagarmappen väljer du en av profilerna för att kontrollera vilka erbjudanden de är berättigade till: klicka på **[!UICONTROL Propositions]** -fliken och sedan **[!UICONTROL Preview]** -fliken.
+1. I **Täta resenärer** väljer du en av profilerna för att se vilka erbjudanden de är berättigade till: klicka på **[!UICONTROL Propositions]** -fliken och sedan **[!UICONTROL Preview]** -fliken.
 
    I vårt exempel **Tim Ramsey** är berättigade till ett erbjudande som ingår i **Amerika** kategori.
 
@@ -95,11 +96,11 @@ Vi vill skicka ett första erbjudande som tillhör kategorin Kanada. Om någon a
 1. Börja med att skapa en e-postleverans som riktar sig till **Täta resenärer** mottagare med erbjudanden.
 1. Välj parametrarna för anropet till erbjudandemotorn.
 
-   I vårt exempel **Resor i Amerika** väljs, vilket innehåller **Kanada** och **Amerikas förenta stater** underkategorier.
+   I vårt exempel **Resor i Amerika** -kategorin väljs, som innehåller **Kanada** och **Amerikas förenta stater** underkategorier.
 
    ![](assets/offer_typology_example_016.png)
 
-1. Lägg in erbjudandena i meddelandetexten och skicka leveransen. Mer information finns i [Om utgående kanaler](../../interaction/using/about-outbound-channels.md).
+1. Lägg in erbjudandena i meddelandets brödtext och skicka leveransen. Mer information finns i [Om utgående kanaler](../../interaction/using/about-outbound-channels.md).
 
    Mottagaren har fått det erbjudande som de är berättigade till.
 

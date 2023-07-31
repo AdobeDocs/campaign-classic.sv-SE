@@ -2,15 +2,16 @@
 product: campaign
 title: Driftsättning via mid-sourcing
 description: Driftsättning via mid-sourcing
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+feature: Installation, Architecture, Deployment
+badge-v7-only: label="v7" type="Informative" tooltip="Gäller endast Campaign Classic v7"
 audience: installation
 content-type: reference
 topic-tags: deployment-types-
 exl-id: 8a4d7ef1-de5b-4aee-a527-1b74d987ba61
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '351'
-ht-degree: 1%
+source-wordcount: '358'
+ht-degree: 2%
 
 ---
 
@@ -29,16 +30,16 @@ Allmän kommunikation mellan servrar och processer sker enligt följande schema:
 ![](assets/s_ncs_install_midsourcing.png)
 
 * Modulerna för exekvering och studshantering är inaktiverade på instansen.
-* Programmet är konfigurerat att utföra meddelandekörning på en fjärrserver med &quot;mellanlagring&quot; som drivs med SOAP-anrop (via HTTP eller HTTPS).
+* Programmet är konfigurerat för att utföra meddelandekörning på en fjärrserver med &quot;mellanlagring&quot; som drivs med SOAP-anrop (via HTTP eller HTTPS).
 
 ## Funktioner {#features}
 
 ### Fördelar {#advantages}
 
 * Förenklad serverkonfiguration: Kunden behöver inte konfigurera utåtriktade moduler (mta och inMail).
-* Begränsad användning av bandbredd: Eftersom körningen utförs av servern med mellanlagring krävs bara tillräcklig bandbredd för att skicka personaliseringsdata till servern med mellanlagring.
-* Hög tillgänglighet är inte längre något internt problem: Felet har flyttats till servern med mellanlagring (omdirigering, spegelsidor, exekveringsservrar osv.).
-* Databasen lämnar inte företaget: Endast data som är nödvändiga för att samla ihop meddelandena skickas till servern med mellanlagring (HTTPS kan användas för detta).
+* Begränsad användning av bandbredd: Eftersom körningen utförs av servern med mellanlagring behövs bara tillräcklig bandbredd för att skicka personaliseringsdata till servern med mellanlagring.
+* Hög tillgänglighet är inte längre något internt problem: Problemet skiftas till servern med mellanlagring (omdirigering, spegelsidor, exekveringsservrar osv.).
+* Databasen lämnar inte företaget: Endast data som behövs för att samla ihop meddelandena skickas till servern med mellanlagring (HTTPS kan användas för detta).
 * Den här typen av driftsättning kan vara en lösning för arkitekturer med stora volymer (många mottagare i databasen) och ett betydande leveransflöde.
 
 ### Nackdelar {#disadvantages}
@@ -48,12 +49,12 @@ Allmän kommunikation mellan servrar och processer sker enligt följande schema:
 
 ### Rekommenderad utrustning {#recommended-equipment}
 
-* Programserver: 2 GHz processor med fyra kärnor, 4 GB RAM, programvarubaserad RAID 1 80 GB SATA-hårddisk.
+* Programserver: 2 GHz-processor med fyra kärnor, 4 GB RAM-minne, program RAID 1 80 GB SATA-hårddisk.
 * Databasserver: 3 GHz två processorer med fyra kärnor, minst 4 GB RAM, maskinvarubaserad RAID 10 SAS-hårddisk på 1 5 000 v/min, antalet beroende på databasens storlek och förväntade prestanda.
 
 >[!NOTE]
 >
->Omdirigering och hantering från mellanleverantörer är separata element, men spårningsservern delas i allmänhet med servrarna från mellanleverantörer.
+>Omdirigering och hantering från mellanleverantörer är separata element, men spårningsservern kommer i allmänhet att delas med servrarna från mellanleverantörer.
 
 ## Installations- och konfigurationssteg {#installation-and-configuration-steps-}
 

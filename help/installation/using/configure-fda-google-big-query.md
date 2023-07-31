@@ -2,14 +2,15 @@
 product: campaign
 title: Konfigurera åtkomst till Google BigQuery
 description: Lär dig konfigurera åtkomst till Google BigQuery i FDA
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+feature: Installation, Federated Data Access
+badge-v7-only: label="v7" type="Informative" tooltip="Gäller endast Campaign Classic v7"
 audience: platform
 content-type: reference
 topic-tags: connectors
 exl-id: ebaad59f-0607-4090-92d0-e457fbf9a348
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '795'
+source-wordcount: '802'
 ht-degree: 2%
 
 ---
@@ -21,7 +22,7 @@ ht-degree: 2%
 Använd Adobe Campaign Classic **Åtkomst till federerade data** (FDA) om du vill bearbeta information som lagras i en extern databas. Följ stegen nedan för att konfigurera åtkomst till [!DNL Google BigQuery].
 
 1. Konfigurera [!DNL Google BigQuery] på [Windows](#google-windows) eller [Linux](#google-linux)
-1. Konfigurera [!DNL Google BigQuery] [externt konto](#google-external) i Adobe Campaign Classic
+1. Konfigurera [!DNL Google BigQuery] [externt konto](#google-external) i ADOBE CAMPAIGN CLASSIC
 1. Konfigurera [!DNL Google BigQuery] massinläsning av koppling på [Windows](#bulk-load-windows) eller [Linux](#bulk-load-linux)
 
 >[!NOTE]
@@ -42,19 +43,19 @@ Använd Adobe Campaign Classic **Åtkomst till federerade data** (FDA) om du vil
 
    * **[!UICONTROL Project]**: skapa eller använda ett befintligt projekt.
 
-      Mer information finns i [page](https://cloud.google.com/resource-manager/docs/creating-managing-projects).
+     Mer information finns i [page](https://cloud.google.com/resource-manager/docs/creating-managing-projects).
 
    * **[!UICONTROL Service account]**: skapa ett tjänstkonto.
 
-      Mer information finns i [page](https://cloud.google.com/iam/docs/creating-managing-service-accounts).
+     Mer information finns i [page](https://cloud.google.com/iam/docs/creating-managing-service-accounts).
 
-   * **[!UICONTROL Key File Path]**: den **[!UICONTROL Service account]** kräver **[!UICONTROL Key File]** för [!DNL Google BigQuery] anslutning via ODBC.
+   * **[!UICONTROL Key File Path]**: **[!UICONTROL Service account]** kräver **[!UICONTROL Key File]** för [!DNL Google BigQuery] anslutning via ODBC.
 
-      Mer information finns i [page](https://cloud.google.com/iam/docs/creating-managing-service-account-keys).
+     Mer information finns i [page](https://cloud.google.com/iam/docs/creating-managing-service-account-keys).
 
    * **[!UICONTROL Dataset]**: **[!UICONTROL Dataset]** är valfritt för en ODBC-anslutning. Eftersom varje fråga måste ange datauppsättningen där tabellen finns, anger du en **[!UICONTROL Dataset]** är obligatoriskt för [!DNL Google BigQuery] FDA Connector i Adobe Campaign Classic.
 
-      Mer information finns i [page](https://cloud.google.com/bigquery/docs/datasets).
+     Mer information finns i [page](https://cloud.google.com/bigquery/docs/datasets).
 
 1. I Adobe Campaign Classic kan du sedan konfigurera [!DNL Google BigQuery] externt konto. Mer information om hur du konfigurerar ditt externa konto finns i [det här avsnittet](#google-external).
 
@@ -94,35 +95,35 @@ Konfigurera [!DNL Google BigQuery] i Linux följer du stegen nedan:
 
    * För Red Hat/CentOS:
 
-      ```
-      yum update
-      yum upgrade
-      yum install -y grep sed tar wget perl curl
-      ```
+     ```
+     yum update
+     yum upgrade
+     yum install -y grep sed tar wget perl curl
+     ```
 
    * Debian:
 
-      ```
-      apt-get update
-      apt-get upgrade
-      apt-get install -y grep sed tar wget perl curl
-      ```
+     ```
+     apt-get update
+     apt-get upgrade
+     apt-get install -y grep sed tar wget perl curl
+     ```
 
 1. Uppdatera systemet före installation:
 
    * För Red Hat/CentOS:
 
-      ```
-      # install unixODBC driver manager
-      yum install -y unixODBC
-      ```
+     ```
+     # install unixODBC driver manager
+     yum install -y unixODBC
+     ```
 
    * Debian:
 
-      ```
-      # install unixODBC driver manager
-      apt-get install -y odbcinst1debian2 libodbc1 odbcinst unixodbc
-      ```
+     ```
+     # install unixODBC driver manager
+     apt-get install -y odbcinst1debian2 libodbc1 odbcinst unixodbc
+     ```
 
 1. Innan du kör skriptet kan du få mer information genom att ange —help-argumentet:
 
@@ -152,19 +153,19 @@ Med Bulk Load Tool går det snabbare att överföra filer, vilket uppnås med Go
 
    * För Red Hat/CentOS:
 
-      ```
-      yum update
-      yum upgrade
-      yum install -y python3
-      ```
+     ```
+     yum update
+     yum upgrade
+     yum install -y python3
+     ```
 
    * Debian:
 
-      ```
-      apt-get update
-      apt-get upgrade
-      apt-get install -y python3
-      ```
+     ```
+     apt-get update
+     apt-get upgrade
+     apt-get install -y python3
+     ```
 
 1. Gå till katalogen där skriptet finns och kör följande skript:
 
@@ -189,13 +190,14 @@ Du måste skapa en [!DNL Google BigQuery] externt konto för att ansluta din Ado
 
    * **[!UICONTROL Service account]**: E-post till **[!UICONTROL Service account]**. Mer information finns i [Google Cloud-dokumentation](https://cloud.google.com/iam/docs/creating-managing-service-accounts).
 
-   * **[!UICONTROL Project]**: Ditt namn **[!UICONTROL Project]**. Mer information finns i [Google Cloud-dokumentation](https://cloud.google.com/resource-manager/docs/creating-managing-projects).
+   * **[!UICONTROL Project]**: Namn på **[!UICONTROL Project]**. Mer information finns i [Google Cloud-dokumentation](https://cloud.google.com/resource-manager/docs/creating-managing-projects).
 
    * **[!UICONTROL Key file Path]**:
-      * **[!UICONTROL Upload key file to the server]**: välj **[!UICONTROL Click here to upload]** om du väljer att överföra nyckeln via Adobe Campaign Classic.
+      * **[!UICONTROL Upload key file to the server]**: select **[!UICONTROL Click here to upload]** om du väljer att överföra nyckeln via Adobe Campaign Classic.
 
       * **[!UICONTROL Enter manually the key file path]**: kopiera/klistra in den absoluta sökvägen i det här fältet om du väljer att använda en befintlig nyckel.
-   * **[!UICONTROL Dataset]**: Ditt namn **[!UICONTROL Dataset]**. Mer information finns i [Google Cloud-dokumentation](https://cloud.google.com/bigquery/docs/datasets-intro).
+
+   * **[!UICONTROL Dataset]**: Namn på **[!UICONTROL Dataset]**. Mer information finns i [Google Cloud-dokumentation](https://cloud.google.com/bigquery/docs/datasets-intro).
 
    ![](assets/google-big-query.png)
 
@@ -205,7 +207,7 @@ Kopplingen stöder följande alternativ:
 |:-:|:-:|
 | ProxyType | Typ av proxy som används för att ansluta till BigQuery via ODBC- och SDK-anslutningar. </br>HTTP (standard), http_no_tunnel, sockor4 och sockor5 stöds för närvarande. |
 | ProxyHost | Värdnamn eller IP-adress dit proxyn kan nås. |
-| ProxyPort | Portnummer som proxyn körs på, t.ex. 8080 |
-| ProxyUid | Användarnamn som används för den autentiserade proxyn |
+| ProxyPort | Portnummer som proxyn körs på, till exempel 8080 |
+| ProxyUid | Användarnamn som används för autentiserad proxy |
 | ProxyPwd | ProxyUid-lösenord |
 | bqpath | Observera att detta endast gäller för massinläsningsverktyg (Cloud SDK). </br> För att undvika att använda variabeln PATH eller om katalogen google-cloud-sdk måste flyttas till en annan plats, kan du med det här alternativet ange den exakta sökvägen till bin-katalogen i molnet på servern. |

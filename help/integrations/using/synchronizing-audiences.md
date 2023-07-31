@@ -2,14 +2,14 @@
 product: campaign
 title: Synkronisera målgrupper
 description: Lär dig synkronisera målgrupper med ACS Connector
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 feature: ACS Connector
+badge-v7-only: label="v7" type="Informative" tooltip="Gäller endast Campaign Classic v7"
 hide: true
 hidefromtoc: true
 exl-id: 88e581cf-43cd-4c43-9347-d016c62fdf42
-source-git-commit: 4661688a22bd1a82eaf9c72a739b5a5ecee168b1
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '1133'
+source-wordcount: '1140'
 ht-degree: 1%
 
 ---
@@ -52,7 +52,7 @@ När målet och dess ytterligare data har definierats kan du spara det som en li
 Så här får du den slutliga målgruppen och dess ytterligare data:
 
 1. Skapa ett nytt arbetsflöde från **[!UICONTROL Profiles and Targets]** > **[!UICONTROL Jobs]** > **[!UICONTROL Targeting workflows]**.
-1. Lägg till en **[!UICONTROL Query]** och välj de mottagare som du vill skicka det slutliga e-postmeddelandet till. Exempel: alla mottagare mellan 18 och 30 år och bor i Frankrike.
+1. Lägg till en **[!UICONTROL Query]** och välj de mottagare som du vill skicka det slutliga e-postmeddelandet till. Till exempel alla mottagare mellan 18 och 30 år och bor i Frankrike.
 
    ![](assets/acs_connect_query1.png)
 
@@ -68,7 +68,7 @@ Så här får du den slutliga målgruppen och dess ytterligare data:
 
    ![](assets/acs_connect_query3.png)
 
-1. Välj **[!UICONTROL Data linked to the filtering dimension]** och sedan väljer **[!UICONTROL Recipient delivery logs]** nod och klicka **[!UICONTROL Next]**.
+1. Välj **[!UICONTROL Data linked to the filtering dimension]** och sedan väljer **[!UICONTROL Recipient delivery logs]** och klicka på **[!UICONTROL Next]**.
 
    ![](assets/acs_connect_query4.png)
 
@@ -84,7 +84,7 @@ Så här får du den slutliga målgruppen och dess ytterligare data:
 
    * Välj **[!UICONTROL Add]** till höger om fönstret.
    * Från **[!UICONTROL Select field]** fönster, klicka **[!UICONTROL Advanced selection]**.
-   * Välj **[!UICONTROL Aggregate]** sedan **[!UICONTROL Count]**. Kontrollera **[!UICONTROL Distinct]** och klicka **[!UICONTROL Next]**.
+   * Välj **[!UICONTROL Aggregate]** sedan **[!UICONTROL Count]**. Kontrollera **[!UICONTROL Distinct]** och klicka på **[!UICONTROL Next]**.
    * I listan med fält väljer du det fält som används för **Antal** funktion. Välj ett fält som alltid ska fyllas i, till exempel **[!UICONTROL Primary key]** och klicka **[!UICONTROL Finish]**.
    * Ändra uttrycket i **[!UICONTROL Alias]** kolumn. Med det här aliaset kan du enkelt hämta den nya kolumnen i den slutliga leveransen. Till exempel **NBdeliver**.
    * Klicka **[!UICONTROL Finish]** och spara **[!UICONTROL Query]** aktivitetskonfiguration.
@@ -146,9 +146,9 @@ När leveransen och innehållet är klara skickar du leveransen:
 1. Bekräfta manuellt att leveransen kan skickas från kontrollpanelen för leverans.
 1. Övervaka rapporter och loggar för leveransen:
 
-   * **I Campaign Standard**: Åtkomst [rapporter](https://experienceleague.adobe.com/docs/campaign-standard/using/reporting/about-reporting/about-dynamic-reports.html) och [loggar](https://experienceleague.adobe.com/docs/campaign-standard/using/testing-and-sending/monitoring-messages/monitoring-a-delivery.html) för leveransen som för alla leveranser.
+   * **I CAMPAIGN STANDARD**: Åtkomst [rapporter](https://experienceleague.adobe.com/docs/campaign-standard/using/reporting/about-reporting/about-dynamic-reports.html) och [loggar](https://experienceleague.adobe.com/docs/campaign-standard/using/testing-and-sending/monitoring-messages/monitoring-a-delivery.html) för leveransen som för alla leveranser.
    * **i Campaign v7 och Campaign Standard**: Leverans-ID, breda e-postloggar och loggar för e-postspårning synkroniseras med Campaign v7. Sedan kan ni få en helhetsbild av era marknadsföringskampanjer från Campaign v7.
 
-      Kvartalanger synkroniseras automatiskt tillbaka till Campaign v7. På så sätt kan information som inte kan levereras beaktas vid nästa målgruppsanpassning som utförs i Campaign v7.
+     Kvartalanger synkroniseras automatiskt tillbaka till Campaign v7. På så sätt kan information som inte kan levereras beaktas vid nästa målgruppsanpassning som utförs i Campaign v7.
 
-      Mer information om karantänhantering finns i Campaign Standard i [det här avsnittet](https://experienceleague.adobe.com/docs/campaign-standard/using/testing-and-sending/monitoring-messages/understanding-quarantine-management.html).
+     Mer information om karantänhantering finns i Campaign Standard i [det här avsnittet](https://experienceleague.adobe.com/docs/campaign-standard/using/testing-and-sending/monitoring-messages/understanding-quarantine-management.html).

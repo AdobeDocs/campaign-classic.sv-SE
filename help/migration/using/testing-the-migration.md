@@ -2,17 +2,18 @@
 product: campaign
 title: Testa migreringen
 description: Testa migreringen
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+feature: Upgrade
+badge-v7-only: label="v7" type="Informative" tooltip="Gäller endast Campaign Classic v7"
 audience: migration
 content-type: reference
 topic-tags: migration-procedure
 hide: true
 hidefromtoc: true
 exl-id: 228ee9e4-46a0-4d82-b8ba-b019bc0e7cac
-source-git-commit: 4b13e310fcee9ba24e83b697fca57bc494505642
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '706'
-ht-degree: 2%
+source-wordcount: '713'
+ht-degree: 3%
 
 ---
 
@@ -24,7 +25,7 @@ ht-degree: 2%
 
 Beroende på konfigurationen finns det flera sätt att utföra migreringstester.
 
-Du bör ha en test-/utvecklingsmiljö för att utföra migreringstester. För Adobe Campaign-miljöer krävs licens: kontrollera licensavtalet eller kontakta Adobe.
+Du bör ha en test-/utvecklingsmiljö för att utföra migreringstester. Användningen av Adobe Campaign-miljöer regleras av licensavtal: kontrollera licensavtalet eller kontakta Adobe.
 
 1. Stoppa all pågående utveckling och föra över den till produktionsmiljön.
 1. Säkerhetskopiera utvecklingsmiljödatabasen.
@@ -55,47 +56,46 @@ Med olika alternativ kan du mäta effekten av en migrering och identifiera poten
 
 * i **config** kommando:
 
-   ```
-   nlserver.exe config <option> -instance:<instance-name>
-   ```
+  ```
+  nlserver.exe config <option> -instance:<instance-name>
+  ```
 
 * eller vid uppgraderingen:
 
-   ```
-   nlserver.exe config -postupgrade <option> -instance:<instance-name>
-   ```
+  ```
+  nlserver.exe config -postupgrade <option> -instance:<instance-name>
+  ```
 
 >[!NOTE]
 >
 >* Du måste använda **-instance:`<instanceame>`** alternativ. Vi rekommenderar inte att du använder **-allinstances** alternativ.
->* Adobe Campaign-uppdateringskommandot (**postuppgradering**) kan du synkronisera resurser och uppdatera scheman och databasen. Den här åtgärden kan bara utföras en gång på programservern. När resurserna har synkroniserats **postuppgradering** kan du identifiera om synkroniseringen genererar fel eller varningar.
-
+>* Adobe Campaign-kommandot update (**postuppgradering**) kan du synkronisera resurser och uppdatera scheman och databasen. Den här åtgärden kan bara utföras en gång på programservern. När resurserna har synkroniserats **postuppgradering** kan du identifiera om synkroniseringen genererar fel eller varningar.
 
 ### Objekt som inte är standard eller saknas
 
 * The **-showCustomEntities** visas en lista med alla objekt som inte är standard:
 
-   ```
-   nlserver.exe config -showCustomEntities -instance:<instance-name>
-   ```
+  ```
+  nlserver.exe config -showCustomEntities -instance:<instance-name>
+  ```
 
-   Exempel på ett skickat meddelande:
+  Exempel på ett skickat meddelande:
 
-   ```
-   xtk_migration:opsecurity2 xtk:entity
-   ```
+  ```
+  xtk_migration:opsecurity2 xtk:entity
+  ```
 
 * The **-showDeletedEntities** visas en lista med alla standardobjekt som saknas i databasen eller filsystemet. För varje objekt som saknas anges sökvägen.
 
-   ```
-   nlserver.exe config -showDeletedEntities -instance:<instance-name>
-   ```
+  ```
+  nlserver.exe config -showDeletedEntities -instance:<instance-name>
+  ```
 
-   Exempel på ett skickat meddelande:
+  Exempel på ett skickat meddelande:
 
-   ```
-   Out of the box object 'nms:deliveryCustomizationMdl' belonging to the 'xtk:srcSchema' schema has not been found in the file system.
-   ```
+  ```
+  Out of the box object 'nms:deliveryCustomizationMdl' belonging to the 'xtk:srcSchema' schema has not been found in the file system.
+  ```
 
 ### Verifieringsprocess {#verification-process}
 
@@ -119,7 +119,7 @@ Följande uttryck söks efter (skiftlägeskänsliga):
    <th> Uttryck<br /> </th> 
    <th> Felkod<br /> </th> 
    <th> Loggtyp<br /> </th> 
-   <th> Kommentarer<br /> </th> 
+   <th> Kommentar<br /> </th> 
   </tr> 
  </thead> 
  <tbody> 

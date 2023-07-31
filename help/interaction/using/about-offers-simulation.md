@@ -2,8 +2,9 @@
 product: campaign
 title: Om att simulera erbjudanden
 description: Om att simulera erbjudanden
+feature: Interaction, Offers
 exl-id: facaa88e-1fa2-4189-9d8f-348aaef3e235
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
 source-wordcount: '259'
 ht-degree: 5%
@@ -16,7 +17,7 @@ ht-degree: 5%
 
 The **Simulering** Med -modulen kan du testa fördelningen av erbjudanden som tillhör en kategori eller miljö innan du skickar ditt förslag till mottagarna.
 
-Simuleringen tar hänsyn till kontexter och regler för behörighet som tidigare tillämpats på erbjudanden (se [Katalogöversikt](../../interaction/using/offer-catalog-overview.md)) och deras presentationsregler (se [Hantera presentation av erbjudanden](../../interaction/using/managing-offer-presentation.md)). Detta gör att ni kan testa och förfina olika versioner av ert erbjudande utan att faktiskt använda ett erbjudande eller över/under beställning av ett mål, eftersom simuleringen inte har någon effekt på de avsedda mottagarna.
+Simuleringen tar hänsyn till kontexter och regler för behörighet som tidigare tillämpats på erbjudanden (se [Översikt över erbjudandekatalogen](../../interaction/using/offer-catalog-overview.md)) och deras presentationsregler (se [Hantera presentation av erbjudanden](../../interaction/using/managing-offer-presentation.md)). Detta gör att ni kan testa och förfina olika versioner av ert erbjudande utan att faktiskt använda ett erbjudande eller över/under beställning av ett mål, eftersom simuleringen inte har någon effekt på de avsedda mottagarna.
 
 Läs stegen nedan om du vill lära dig hur du simulerar ett erbjudande.
 

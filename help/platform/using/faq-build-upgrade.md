@@ -2,14 +2,15 @@
 product: campaign
 title: Vanliga frågor och svar om builduppgradering
 description: Vanliga frågor om uppgraderingar av Campaign-versioner
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+feature: Upgrade, Troubleshooting
+badge-v7-only: label="v7" type="Informative" tooltip="Gäller endast Campaign Classic v7"
 audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: 85e2135d-a1a3-44f0-a4f9-de38db5c8726
-source-git-commit: acfe0c4139671fc3df69ff434ba307aaaaf70676
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '1995'
+source-wordcount: '2002'
 ht-degree: 2%
 
 ---
@@ -26,7 +27,7 @@ Som värdanvändare får ni automatiskt den årliga uppgraderingen av Campaign m
 
 ## Vad är en bygguppgradering?
 
-En bygguppgradering är när Adobe Campaign Classic uppdateras till det senaste säkra versionsnumret, men ändå ligger kvar på samma huvud-/delnivå. Till exempel: Campaign Classic v7 build 9026 to Campaign v7 build 9032.
+En bygguppgradering är när Adobe Campaign Classic uppdateras till det senaste säkra versionsnumret, men ändå ligger kvar på samma huvud-/delnivå. Exempel: Campaign Classic v7 build 9026 to Campaign v7 build 9032.
 
 Läs mer [i det här avsnittet](../../rn/using/rn-overview.md).
 
@@ -56,11 +57,11 @@ Med serverinformationen från skärmbilden i föregående avsnitt kan du till ex
 
 * En bygguppgradering innebär att man går från build 9342 till valfri version som är större än 9342. Exempel: v7.1 build 9342 to v7.1 build 9342
 
-* En versionsuppgradering innebär att man går från version 6 till en senare version.  Till exempel: v6.1.1 build 8666 to v7.1 build 9342.
+* En versionsuppgradering innebär att man måste gå från version 6 till en senare version.  Exempel: v6.1.1 build 8666 to v7.1 build 9342.
 
 ## Ska jag säkerhetskopiera mina data före dessa uppdateringar?
 
-Adobe gör en säkerhetskopia av ditt system innan några ändringar görs. Men om det finns viktiga anpassningsarbeten i ditt icke-produktionssystem (utvecklings- eller testservrar) rekommenderar vi att du exporterar dessa som ett paket före en uppgradering.
+Adobe kommer att göra en säkerhetskopia av ditt system innan några ändringar görs. Men om det finns viktiga anpassningsarbeten i ditt icke-produktionssystem (utvecklings- eller testservrar) rekommenderar vi att du exporterar dessa som ett paket före en uppgradering.
 
 <!--
 ![](assets/do-not-localize/how-to-video.png) For more information, [watch this how to video](https://helpx.adobe.com/campaign/classic/how-to/generate-packages-in-acv6.html).-->
@@ -81,7 +82,7 @@ Hur lång tid det tar att utföra en bygguppgradering beror på flera faktorer:
 
 Uppgradering är en tvåstegsprocess:
 
-1. Förberedelse av systemet för uppgradering - Med tanke på just din miljö leder den här fasen i princip till en fullständig uppgradering i en icke-produktionsmiljö. När den uppgraderade miljön har speglats ur teknisk och funktionell synpunkt kan fas 2 inträffa. Denna första fas kan, beroende på de ovan nämnda faktorerna, ta från några dagar till några veckor.
+1. Förberedelse av systemet för uppgradering - Med tanke på dina miljöers särdrag leder den här fasen i princip till en fullständig uppgradering i en icke-produktionsmiljö. När den uppgraderade miljön har speglats ur teknisk och funktionell synpunkt kan fas 2 inträffa. Denna första fas kan, beroende på de ovan nämnda faktorerna, ta från några dagar till några veckor.
 
 1. Själva uppgraderingen - produktionsmiljön har uppgraderats. Denna fas utförs vanligtvis på några timmar. I mycket komplexa miljöer bör man förvänta sig längre driftstopp. Om något går fel definieras en återställningsstrategi som kan utföras.
 
@@ -92,8 +93,8 @@ Mer information finns i [referera till det här dokumentet](https://helpx.adobe.
 Bygguppgraderingsprocessen kräver följande resurser:
 
 * Adobe Architect - För värdbaserade eller molnbaserade meddelanden/hybridarkitekturer måste arkitekten koordinera med kundtjänst.
-* Projektledare - värd: värdteamet samarbetar med kundtjänstteamet och kunden för att samordna uppgraderingstiden för alla instanser.
-* Adobe Campaign Administrator - Hosted: värdteamet utför uppgraderingen.
+* Project Manager - Hosted: Värdteamet samarbetar med kundtjänstteamet och kunden för att samordna uppgraderingstidslinjen för alla instanser.
+* Adobe Campaign Administrator - Hosted: Värdteamet utför uppgraderingen.
 * Adobe Campaign operator\marknadsföringsanvändare - Operatorn kör tester på instanser av utveckling, test och produktion.
 
 ## Hur kan jag förbereda mig för uppgraderingen?
@@ -160,7 +161,7 @@ Utvecklings- och scenmiljöer uppgraderas antingen i följd eller tillsammans, m
 
 Se lista [bygg checklista för uppgradering nedan](#check-list). Kunderna bör köra liknande tester liksom andra som de kan behöva för miljön.
 
-## Hur ofta måste jag göra en bygguppgradering?
+## Hur ofta måste jag uppgradera?
 
 För att säkerställa optimala prestanda, tillgänglighet och säkerhet för systemet kommer Adobe att samarbeta med kunder för att säkerställa att systemen uppgraderas minst en gång per år.
 
@@ -180,7 +181,7 @@ Läs mer i [Hjälp- och supportalternativ för Campaign Classic](../../support.m
 
 1. Skicka en testleverans
    1. Validera leveransloggarna och det relaterade arbetsflödet
-   1. Verifiera att spårningsloggarna har uppdaterats
+   1. Verifiera att spårningsloggarna uppdateras
    1. Validera spegelsida och spårningslänkar
 1. Bekräfta att alla tekniska arbetsflöden är i startläge
 1. Kontrollera att alla processer också är aktiva
@@ -189,7 +190,7 @@ Läs mer i [Hjälp- och supportalternativ för Campaign Classic](../../support.m
 
 * Kan du logga in på servern? Kontrollera att Campaign Client Console fungerar utan några fel-/varningspopup-fönster.
 * Se till att använda samma konsolversion som byggversionen efter uppgraderingen.
-* Har du några webbprogram som infogar data i Campaign-databasen? I så fall kör du dem och kontrollerar att de kan infoga nya poster via API.
+* Har du några webbprogram som infogar data i kampanjdatabasen? I så fall kör du dem och kontrollerar att de kan infoga nya poster via API.
 * Kan du skicka ut ett test-e-postmeddelande? Skapa ny leverans med hjälp av en känd mall, skicka den till en testmottagare, verifiera personalisering, ta bort länkar, spegla hela sidor.
 * Körs alla era arbetsflöden för kritiska sökvägar? Kontrollera arbetsflöden, öppna arbetsflödesjournal, verifiera att det inte finns några fel.
 * Är alla dina mappar tillgängliga, synliga och tillgängliga? Bläddra bland olika mappar och kontrollera.
@@ -200,7 +201,7 @@ allt innehåll visas och visas.
    * Verifiera att körningen av schemaläggaren fungerar i ett arbetsflöde vid den angivna tiden
    * Hämta en lista över arbetsflöden som är i PAUSED- och FAILED-läge. Starta och övervaka dem
    * Kör AB Testing i ett scenario
-   * Testa push-meddelanden tillsammans med deras spårningsfunktioner för djupa länkar
+   * Testa push-meddelanden tillsammans med deras spårningsfunktioner för djuplänkar
    * Testa att skicka SMS
    * Om du har någon extern FDA ansluten, testar du om data skickas på båda sätten
    * Om du använder integreringar som Adobe Campaign-Adobe Experience Manager eller Adobe Campaign-Adobe Analytics bör du testa om de fortfarande fungerar som tidigare

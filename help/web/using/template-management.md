@@ -2,14 +2,14 @@
 product: campaign
 title: Mallhantering
 description: Mallhantering
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
-feature: Web Apps, Web Forms, Landing Pages
+badge-v7: label="v7" type="Informative" tooltip="Gäller Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Gäller även Campaign v8"
+feature: Web Apps, Web Forms, Landing Pages, Delivery Templates
 exl-id: 69805e60-8fc6-45d1-9087-5f7d949cc76a
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '114'
-ht-degree: 5%
+source-wordcount: '126'
+ht-degree: 6%
 
 ---
 
@@ -23,7 +23,7 @@ När du skapar ett webbprogram av typen Landningssida kan användaren välja nå
 
 ![](assets/dce_popup_templatechoice.png)
 
-Mer information om hur du lägger till en mall finns i [Globala alternativ](content-editor-interface.md#global-options).
+Om du vill lägga till en mall läser du [Globala alternativ](content-editor-interface.md#global-options).
 
 ## Spara en leverans som en mall {#saving-a-delivery-as-a-template}
 
@@ -33,4 +33,4 @@ I **Kampanjer** öppnar du den valda leveransen. Klicka på **Spara som mall** n
 
 ![](assets/dce_save_model.png)
 
-Den nya mallen sparas under **Resurser > Mallar > Innehållsmallar** i Utforskaren.
+Den nya mallen sparas under **Resources > Templates > Content templates** i Utforskaren.

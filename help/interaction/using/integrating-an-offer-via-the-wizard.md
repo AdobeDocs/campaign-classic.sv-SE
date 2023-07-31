@@ -2,14 +2,15 @@
 product: campaign
 title: Integrera ett erbjudande via guiden
 description: Integrera ett erbjudande via guiden
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+feature: Interaction, Offers
+badge-v7-only: label="v7" type="Informative" tooltip="Gäller endast Campaign Classic v7"
 audience: interaction
 content-type: reference
 topic-tags: delivering-an-offer
 exl-id: 64aea8b9-7f06-4db0-a3e6-6a0e17c3ddcb
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '803'
+source-wordcount: '810'
 ht-degree: 2%
 
 ---
@@ -74,9 +75,9 @@ Så här infogar du offertförslag i en leverans:
 * **[!UICONTROL Space]** : utrymme för den erbjudandemiljö som måste väljas för att aktivera erbjudandemotorn.
 * **[!UICONTROL Category]** : den mapp där erbjudandena sorteras. Om ingen kategori anges kommer alla erbjudanden i miljön att beaktas av erbjudandemotorn, såvida inte ett tema väljs.
 * **[!UICONTROL Themes]** : nyckelord som definieras uppströms i kategorierna. Dessa fungerar som ett filter och låter dig förfina antalet erbjudanden som ska presenteras genom att välja dem i en uppsättning kategorier.
-* **[!UICONTROL Number of propositions]** : Antal erbjudanden som returneras av motorn och som kan infogas i leveransenheten. Om de inte infogas i meddelandet kommer erbjudandena fortfarande att genereras, men inte presenteras.
-* **[!UICONTROL Exclude non-eligible recipients]** : Med det här alternativet kan du aktivera eller inaktivera exkluderingen av mottagare för vilka det inte finns tillräckligt med giltiga erbjudanden. Antalet giltiga förslag kan vara lägre än det begärda antalet. Om den här rutan är markerad kommer mottagare som inte har tillräckligt med erbjudanden att uteslutas från leveransen. Om du inte markerar det här alternativet kommer dessa mottagare inte att uteslutas, men de kommer inte att ha det begärda antalet förslag.
-* **[!UICONTROL Do not display anything if no offer is selected]** : Med det här alternativet kan du välja hur meddelandet ska behandlas om något av förslagen inte finns. När den här rutan är markerad visas inte representationen av det saknade förslaget och inget innehåll visas i meddelandet för det här förslaget. Om rutan inte är markerad avbryts själva meddelandet när det skickas och mottagarna får inte längre några meddelanden.
+* **[!UICONTROL Number of propositions]** : antal erbjudanden som returneras av motorn och som kan infogas i leveransenheten. Om de inte infogas i meddelandet kommer erbjudandena fortfarande att genereras, men de visas inte.
+* **[!UICONTROL Exclude non-eligible recipients]** : Med det här alternativet kan du aktivera eller inaktivera exkludering av mottagare för vilka det inte finns tillräckligt med giltiga erbjudanden. Antalet giltiga förslag kan vara lägre än det begärda antalet. Om den här rutan är markerad kommer mottagare som inte har tillräckligt med erbjudanden att uteslutas från leveransen. Om du inte markerar det här alternativet kommer dessa mottagare inte att uteslutas, men de kommer inte att ha det begärda antalet förslag.
+* **[!UICONTROL Do not display anything if no offer is selected]** : det här alternativet låter dig välja hur meddelandet ska behandlas om något av förslagen inte finns. När den här rutan är markerad visas inte representationen av det saknade förslaget och inget innehåll visas i meddelandet för det här förslaget. Om rutan inte är markerad avbryts själva meddelandet när det skickas och mottagarna får inte längre några meddelanden.
 
 ### Infoga ett offertförslag i en leverans {#inserting-an-offer-proposition-into-a-delivery}
 
@@ -99,11 +100,11 @@ Mer information om leveransdispositioner finns i [Campaign - MRM](../../campaign
    ![](assets/int_compo_offre1.png)
 
 1. Skapa en leverans vars leveranskonturer du har tillgång till (t.ex. en direktleverans).
-1. När du redigerar leveransen klickar du på **[!UICONTROL Select a delivery outline]**.
+1. När du redigerar leveransen klickar du **[!UICONTROL Select a delivery outline]**.
 
    >[!NOTE]
    >
-   >Beroende på typ av leverans finns det här alternativet i **[!UICONTROL Properties]** > **[!UICONTROL Advanced]** meny (t.ex. för e-postleveranser).
+   >Beroende på typ av leverans finns det här alternativet i **[!UICONTROL Properties]** > **[!UICONTROL Advanced]** meny (för e-postleveranser till exempel).
 
    ![](assets/int_compo_offre2.png)
 
@@ -111,7 +112,7 @@ Mer information om leveransdispositioner finns i [Campaign - MRM](../../campaign
 
    ![](assets/int_compo_offre3.png)
 
-1. Lägg till förslagen i leveransbrödtexten med hjälp av anpassningsfälten (mer information finns i [Infoga ett offertförslag i en leverans](#inserting-an-offer-proposition-into-a-delivery) eller vid direktutskick genom att redigera extraheringsfilens format.
+1. Lägg till offerterna i leveransbrödtexten med hjälp av anpassningsfälten (mer information finns i [Infoga ett offertförslag i en leverans](#inserting-an-offer-proposition-into-a-delivery) eller vid direktutskick genom att redigera extraheringsfilens format.
 
    Propositioner väljs ut bland de erbjudanden som refereras i leveransdispositionen.
 

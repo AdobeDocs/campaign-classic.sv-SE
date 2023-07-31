@@ -2,14 +2,15 @@
 product: campaign
 title: Uppdaterar data
 description: Uppdaterar data
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+feature: Data Management
+badge-v7-only: label="v7" type="Informative" tooltip="Gäller endast Campaign Classic v7"
 audience: platform
 content-type: reference
 topic-tags: profile-management
 exl-id: f7dfbc22-4ac3-4b61-927f-34ecc4e35154
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '705'
+source-wordcount: '712'
 ht-degree: 2%
 
 ---
@@ -26,7 +27,7 @@ En automatisk uppdatering kan konfigureras via ett arbetsflöde. Mer information
 
 ## Utför en massuppdatering {#performing-a-mass-update}
 
-Om du vill utföra manuella uppdateringar högerklickar du på de valda mottagarna för att använda **[!UICONTROL Actions]** kortkommandomenyn eller använd **[!UICONTROL Actions]** ikon.
+Om du vill utföra manuella uppdateringar högerklickar du på de valda mottagarna för att använda **[!UICONTROL Actions]** kortkommandomenyn eller använd **[!UICONTROL Actions]** -ikon.
 
 ![](assets/s_ncs_user_action_icon.png)
 
@@ -50,15 +51,15 @@ Välj eller ange de värden som ska användas för de profiler som ska uppdatera
 
 ![](assets/s_ncs_user_update_wizard01_12.png)
 
-Du kan klicka **[!UICONTROL Distribution of values]** om du vill visa fördelningen av värden i det markerade fältet för mottagarna i den aktuella mappen (inte bara de mottagare som påverkas av uppdateringen).
+Klicka **[!UICONTROL Distribution of values]** om du vill visa fördelningen av värden i det markerade fältet för mottagarna i den aktuella mappen (inte bara de mottagare som påverkas av uppdateringen).
 
 ![](assets/s_ncs_user_update_wizard01_2.png)
 
-Du kan definiera filter för att visa värdefördelningen i det här fönstret eller ändra den aktuella mappen för att visa värdefördelningen i en annan mapp. Detta är skrivskyddade åtgärder. påverkar inte konfigurationen för den uppdatering som definieras.
+Du kan definiera filter för att visa värdefördelningen i det här fönstret eller ändra den aktuella mappen för att visa värdefördelningen i en annan mapp. Dessa är skrivskyddade åtgärder. De påverkar inte konfigurationen för den uppdatering som definieras.
 
 ![](assets/s_ncs_user_update_wizard01_3.png)
 
-Stäng det här fönstret och klicka på **[!UICONTROL Next]** för att visa det andra uppdateringsguidesteget. I det här steget kan du starta uppdateringen genom att klicka på **[!UICONTROL Start]**.
+Stäng fönstret och klicka **[!UICONTROL Next]** för att visa det andra uppdateringsguiden. I det här steget kan du starta uppdateringen genom att klicka på **[!UICONTROL Start]**.
 
 ![](assets/s_ncs_user_update_wizard01_4.png)
 
@@ -78,7 +79,7 @@ Klicka **[!UICONTROL Compute]** för att visa valfritt resultat.
 
 ![](assets/s_ncs_user_merge_wizard01_2.png)
 
-Kontrollera **[!UICONTROL Result]** kolumner i båda fönsteravsnitten och klicka **[!UICONTROL Finish]** för att köra sammanfogningen.
+Kontrollera **[!UICONTROL Result]** kolumner i fönstrets båda avsnitt och klicka **[!UICONTROL Finish]** för att köra sammanfogningen.
 
 ## Exportera data {#exporting-data}
 
@@ -97,7 +98,7 @@ Innehållet i en lista kan exporteras. Så här konfigurerar och kör du exporte
 
 ## Prenumerera på en tjänst {#subscribing-to-a-service}
 
-I de flesta fall prenumererar mottagarna på ett nyhetsbrev via en särskild landningssida, vilket förklaras i [det här avsnittet](../../delivery/using/managing-subscriptions.md). Filtrerade mottagarprofiler kan dock prenumerera på en tjänst (nyhetsbrev eller virala tjänster) manuellt. Så här gör du:
+I de flesta fall prenumererar mottagarna på ett nyhetsbrev via en särskild landningssida, vilket förklaras i [det här avsnittet](../../delivery/using/managing-subscriptions.md). Filtrerade mottagares profiler kan dock prenumerera på en tjänst (nyhetsbrev eller virala tjänster) manuellt. Så här gör du:
 
 1. Markera de mottagare som du vill prenumerera på och högerklicka.
 1. Välj **[!UICONTROL Actions > Subscribe selection to a service]**.
@@ -121,7 +122,7 @@ I fönstrets övre del kan du övervaka körningsprocessen. The **[!UICONTROL St
 
 Om du avmarkerar **[!UICONTROL Do not keep a trace of this job in the database]** kan du välja (eller skapa) den körningsmapp där informationen om processen ska lagras.
 
-Om du vill kontrollera processen går du till **[!UICONTROL Subscriptions]** fliken med profilerna för de mottagare som berörs av åtgärden, eller **[!UICONTROL Subscriptions]** via **[!UICONTROL Profiles and Targets > Services and Subscriptions]** nod.
+Om du vill kontrollera processen går du till **[!UICONTROL Subscriptions]** fliken med profilerna för de mottagare som berörs av åtgärden, eller **[!UICONTROL Subscriptions]** som öppnas via **[!UICONTROL Profiles and Targets > Services and Subscriptions]** nod.
 
 ![](assets/s_ncs_user_selection_subscribe_service_4.png)
 

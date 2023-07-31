@@ -2,16 +2,17 @@
 product: campaign
 title: Skapa och konfigurera databasen
 description: Skapa och konfigurera databasen
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
-badge-v7-prem: label="on-premise & hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html" tooltip="Applies to on-premise and hybrid deployments only"
+feature: Installation, Instance Settings
+badge-v7-only: label="v7" type="Informative" tooltip="Gäller endast Campaign Classic v7"
+badge-v7-prem: label="lokal och hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=sv" tooltip="Gäller endast lokala och hybrida driftsättningar"
 audience: installation
 content-type: reference
 topic-tags: initial-configuration
 exl-id: f40bab8c-5064-40d9-beed-101a9f22c094
-source-git-commit: 4661688a22bd1a82eaf9c72a739b5a5ecee168b1
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '1296'
-ht-degree: 2%
+source-wordcount: '1321'
+ht-degree: 3%
 
 ---
 
@@ -19,8 +20,8 @@ ht-degree: 2%
 
 När du skapar en databas finns det två olika alternativ i Adobe Campaign:
 
-1. Skapa eller återvinna en databas: Välj det här alternativet om du vill skapa en ny databas eller återanvända en befintlig databas. Se [Fall 1: Skapa/återvinna en databas](#case-1--creating-recycling-a-database).
-1. Använda en befintlig databas: Välj det här alternativet om en tom databas redan har skapats av administratören och du vill använda den; eller för att utöka strukturen i en befintlig databas. Se [Fall 2: Använda en befintlig databas](#case-2--using-an-existing-database).
+1. Skapa eller återanvända en databas: välj det här alternativet om du vill skapa en ny databas eller återanvända en befintlig databas. Se [Fall 1: Skapa/återvinna en databas](#case-1--creating-recycling-a-database).
+1. Använda en befintlig databas: välj det här alternativet om en tom databas redan har skapats av administratören och du vill använda den, eller om du vill utöka strukturen för en befintlig databas. Se [Fall 2: Använda en befintlig databas](#case-2--using-an-existing-database).
 
 Konfigurationsstegen beskrivs nedan.
 
@@ -59,13 +60,13 @@ Beroende på vilken databasmotor som valts kan serveridentifieringsinformationen
 
 * För **Oracle** motor, fylla i **TNS-namn** definierad för programservern.
 * För **PostgreSQL** eller **DB2** måste du ange det DNS-namn (eller IP-adress) som definierats på programservern för att få åtkomst till databasservern.
-* För **Microsoft SQL Server** måste du definiera: DNS-namnet (eller IP-adressen) som definierats på programservern för åtkomst till databasservern: **DNS** eller **DNS`\<instance>`** (instansläge),
+* För **Microsoft SQL Server** engine, you must define: the DNS name (or IP address) defined on the application server to access the database server: **DNS** eller **DNS`\<instance>`** (instansläge),
 
-   >[!CAUTION]
-   >
-   > Från och med 20.3 har Windows NT-autentisering avaktiverats. **[!UICONTROL SQL Server authentication]** är nu det enda autentiseringsläget som är tillgängligt för Microsoft SQL Server. [Läs mer](../../rn/using/deprecated-features.md)
+  >[!CAUTION]
+  >
+  > Från och med 20.3 har Windows NT-autentisering avaktiverats. **[!UICONTROL SQL Server authentication]** är nu det enda autentiseringsläget som är tillgängligt för Microsoft SQL Server. [Läs mer](../../rn/using/deprecated-features.md)
 
-   ![](assets/s_ncs_install_db_mssql_creation01.png)
+  ![](assets/s_ncs_install_db_mssql_creation01.png)
 
 ### Steg 2 - Ansluta till servern {#step-2---connecting-to-the-server}
 
@@ -73,12 +74,12 @@ I **[!UICONTROL Server access]** anger du databasserveråtkomsten.
 
 ![](assets/s_ncs_install_db_oracle_creation02.png)
 
-Om du vill göra det anger du namnet och lösenordet för en **Administrationssystemkonto** som har behörighet att komma åt databaserna, dvs.
+Om du vill göra det anger du namnet och lösenordet för **Administrationssystemkonto** som har behörighet att komma åt databaserna, dvs.
 
 * **system** för en Oraclena databas,
 * **sa** för en Microsoft SQL Server-databas,
 * **affischer** för en PostgreSQL-databas,
-* **db2inst1** för en DB2-databas.
+* **db2inst1** för en databas2.
 
 ### Steg 3 - Databasens anslutning och egenskaper {#step-3---connection-and-characteristics-of-the-database}
 
@@ -90,24 +91,24 @@ Du måste definiera följande inställningar:
 
 * Ange namnet på den databas som ska skapas.
 
-   >[!NOTE]
-   >
-   >För en DB2-databas får databasens namn inte vara längre än 8 tecken.
+  >[!NOTE]
+  >
+  >För en DB2-databas får databasens namn inte överstiga 8 tecken.
 
 * Ange lösenordet för kontot som är länkat till den här databasen.
 * Ange om databasen måste vara i Unicode eller inte.
 
-   The **[!UICONTROL Unicode database]** kan du lagra alla teckentyper i Unicode oavsett språk.
+  The **[!UICONTROL Unicode database]** Med kan du lagra alla teckentyper i Unicode oavsett språk.
 
-   >[!NOTE]
-   >
-   >Med en Oraclena databas **[!UICONTROL Unicode storage]** kan du använda **NCLOB** och **NVARCHAR** textfält.
-   > 
-   >Om du inte markerar det här alternativet måste teckenuppsättningen (teckenuppsättningen) i Oraclets databas aktivera datalagring på alla språk (AL32UTF8 rekommenderas).
+  >[!NOTE]
+  >
+  >Med en Oraclena databas **[!UICONTROL Unicode storage]** kan du använda **NCLOB** och **NVARCHAR** textfält.
+  > 
+  >Om du inte markerar det här alternativet måste teckenuppsättningen (teckenuppsättningen) i Oraclets databas aktivera datalagring på alla språk (AL32UTF8 rekommenderas).
 
 * Välj en tidszon för databasen och ange om den ska vara i UTC (om tillgängligt).
 
-   Mer information finns i [Tidszonshantering](../../installation/using/time-zone-management.md).
+  Mer information finns i [Tidszonshantering](../../installation/using/time-zone-management.md).
 
 ### Steg 4 - Paket som ska installeras {#step-4---packages-to-install}
 
@@ -125,7 +126,7 @@ The **[!UICONTROL Creation steps]** I kan du visa och redigera SQL-skriptet som 
 
 * För ett Oracle, Microsoft SQL Server eller PostgreSQL-databas kan administratören också definiera **lagringsparametrar** som ska användas när databasobjekt skapas.
 
-   De här parametrarna tar emot de exakta tabellutrymmesnamnen (varning: skiftlägeskänsligt). De lagras i **[!UICONTROL Administration > Platform > Options]** i följande alternativ (se [det här avsnittet](../../installation/using/configuring-campaign-options.md#database)):
+  De här parametrarna tar emot de exakta tabellutrymmesnamnen (varning: skiftlägeskänsligt). De lagras i **[!UICONTROL Administration > Platform > Options]** i följande alternativ (se [det här avsnittet](../../installation/using/configuring-campaign-options.md#database)):
 
    * **WdbcOptions_TableSpaceUser**: användartabeller baserade på ett schema
    * **WdbcOptions_TableSpaceIndex**: index för användartabeller baserat på ett schema
@@ -135,7 +136,7 @@ The **[!UICONTROL Creation steps]** I kan du visa och redigera SQL-skriptet som 
 * För en Oraclena databas måste Adobe Campaign-användaren ha tillgång till Oraclena, vanligtvis som medlem i **oinstall** grupp.
 * The **[!UICONTROL Set or change the administrator password]** gör att du kan ange det lösenord som är länkat till Adobe Campaign-operatorn med administratörsbehörighet.
 
-   Vi rekommenderar att du definierar ett Adobe Campaign-administratörslösenord av säkerhetsskäl.
+  Vi rekommenderar att du definierar ett Adobe Campaign-administratörslösenord av säkerhetsskäl.
 
 ### Steg 6 - Skapa databasen {#step-6---creating-the-database}
 
@@ -159,7 +160,7 @@ Exempel på en Microsoft SQL Server-konfiguration på base61-databasen som är l
 
 Databasen, liksom användaren, måste ha skapats av databasadministratören och behörigheterna måste vara korrekt konfigurerade.
 
-För en Oraclena databas är minimibehörigheten: GE CONNECT, RESURS OCH OBEGRÄNSAT TABLESPACE.
+För en Oracle-databas är minimibehörigheten: GRANT CONNECT, RESOURCE och UNLIMITED TABLESPACE.
 
 Så här använder du en befintlig databas:
 
@@ -201,10 +202,10 @@ Du måste definiera följande inställningar:
 * Ange namnet på den databas som ska användas,
 * Ange namn och lösenord för kontot som är kopplat till den här databasen,
 
-   >[!NOTE]
-   >
-   >Kontrollera att både schemanamnet och användarnamnet matchar. Rekommenderat sätt att skapa databaser är via kampanjkonsolklienten.
-   >För en Oraclena databas behöver du inte ange kontonamnet.
+  >[!NOTE]
+  >
+  >Kontrollera att både schemanamnet och användarnamnet matchar. Rekommenderat sätt att skapa databaser är via kampanjkonsolklienten.
+  >För en Oraclena databas behöver du inte ange kontonamnet.
 
 * Ange om databasen ska vara Unicode eller inte.
 
@@ -226,7 +227,7 @@ The **[!UICONTROL Creation steps]** I kan du visa och redigera SQL-skriptet som 
 * För en Oraclena databas måste Adobe Campaign-användaren ha tillgång till Oraclena, vanligtvis som medlem i **oinstall** grupp.
 * The **[!UICONTROL Set or change the administrator password]** gör att du kan ange det lösenord som är länkat till Adobe Campaign-operatorn med administratörsbehörighet.
 
-   Vi rekommenderar att du definierar ett Adobe Campaign-administratörslösenord av säkerhetsskäl.
+  Vi rekommenderar att du definierar ett Adobe Campaign-administratörslösenord av säkerhetsskäl.
 
 ### Steg 5 - Skapa databasen {#step-5---creating-the-database}
 

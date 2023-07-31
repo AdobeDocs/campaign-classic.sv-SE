@@ -2,14 +2,15 @@
 product: campaign
 title: Driftsättning i företagsklass
 description: Driftsättning i företagsklass
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+feature: Installation, Architecture, Deployment
+badge-v7-only: label="v7" type="Informative" tooltip="Gäller endast Campaign Classic v7"
 audience: installation
 content-type: reference
 topic-tags: deployment-types-
 exl-id: 38c14010-203a-47ab-b23d-6f431dab9a88
-source-git-commit: acfe0c4139671fc3df69ff434ba307aaaaf70676
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '1213'
+source-wordcount: '1220'
 ht-degree: 3%
 
 ---
@@ -34,7 +35,7 @@ Med den här typen av konfiguration kan den förväntade genomströmningen över
 ### Fördelar {#advantages}
 
 * Optimerad säkerhet: Endast de servrar som ska exponeras för utsidan installeras på datorn i DMZ.
-* Hög tillgänglighet som är enklare att säkerställa: Endast den dator som är synlig utifrån behöver hanteras med hög tillgänglighet i åtanke.
+* Hög tillgänglighet som är lättare att säkerställa: Endast den dator som är synlig utifrån behöver hanteras med hög tillgänglighet i åtanke.
 
 ### Nackdelar {#disadvantages}
 
@@ -42,8 +43,8 @@ Högre kostnader för maskinvara och administration.
 
 ### Rekommenderad utrustning {#recommended-equipment}
 
-* Programservrar: 2 GHz processor med fyra kärnor, 4 GB RAM, programvarubaserad RAID 1 80 GB SATA-hårddisk.
-* Omdirigeringsservrar: 2 GHz processor med fyra kärnor, 4 GB RAM, programvarubaserad RAID 1 80 GB SATA-hårddisk.
+* Programservrar: 2 GHz-processor med fyra kärnor, 4 GB RAM-minne, program RAID 1 80 GB SATA-hårddisk.
+* Omdirigeringsservrar: 2 GHz-processor med fyra kärnor, 4 GB RAM-minne, programvara RAID 1 80 GB SATA-hårddisk.
 
 >[!NOTE]
 >
@@ -60,7 +61,7 @@ Högre kostnader för maskinvara och administration.
 * Två DNS-alias skapas på belastningsutjämnaren:
 
    * Den första som exponeras för allmänheten för spårning och som pekar mot belastningsutjämnaren på en virtuell IP-adress (VIP) och som sedan distribueras till de två frontservrarna.
-   * den andra som visas för interna användare för åtkomst via konsolen och som pekar på en belastningsutjämnare på en virtuell IP-adress (VIP) och som sedan distribueras till de två programservrarna.
+   * den andra som exponeras för interna användare för åtkomst via konsolen och som pekar på en belastningsutjämnare på en virtuell IP-adress (VIP) och som sedan distribueras till de två programservrarna.
 
 * Brandväggen har konfigurerats för att öppna STMP (25), DNS (53), HTTP (80), HTTPS (443), SQL (1521 för Oracle, 5432 för PostgreSQL osv.) portar. Mer information finns i avsnittet [Databasåtkomst](../../installation/using/network-configuration.md#database-access).
 
@@ -120,21 +121,21 @@ Stegen för installation av den första servern är:
 
    * Skapa instansen via konsolen:
 
-      ![](assets/install_create_new_connexion.png)
+     ![](assets/install_create_new_connexion.png)
 
-      Mer information finns i [Skapa en instans och logga in](../../installation/using/creating-an-instance-and-logging-on.md).
+     Mer information finns i [Skapa en instans och logga in](../../installation/using/creating-an-instance-and-logging-on.md).
 
-      eller
+     eller
 
    * Skapa instansen med kommandorader:
 
-      ```
-      nlserver config -addinstance:demo/tracking.campaign.net*,console.campaign.net*
-      ```
+     ```
+     nlserver config -addinstance:demo/tracking.campaign.net*,console.campaign.net*
+     ```
 
-      Mer information finns i [Skapa en instans](../../installation/using/command-lines.md#creating-an-instance).
+     Mer information finns i [Skapa en instans](../../installation/using/command-lines.md#creating-an-instance).
 
-1. Redigera **config-demo.xml** filen (skapad med föregående kommando och placerad intill **config-default.xml** -fil), kontrollera att **mta** (leverans), **wfserver** (arbetsflöde), **inMail** (återbundna e-postmeddelanden) och **stat** (statistik) processer aktiveras och sedan konfigureras adressen för **app** statistikserver:
+1. Redigera **config-demo.xml** filen (skapad med föregående kommando och placerad intill **config-default.xml** -fil), kontrollera att **mta** (leverans), **wfserver** (arbetsflöde), **inMail** (återbundna mejl) och **stat** (statistik) processer aktiveras och sedan konfigureras adressen för **app** statistikserver:
 
    ```
    <?xml version='1.0'?>
@@ -212,7 +213,7 @@ Använd följande steg:
    nlserver config -setdblogin:PostgreSQL:campaign:demo@dbsrv -instance:demo
    ```
 
-1. Redigera **config-demo.xml** filen (skapad med föregående kommando och placerad intill **config-default.xml** -fil), kontrollera att **mta** (leverans), **wfserver** (arbetsflöde), **inMail** (återbundna e-postmeddelanden) och **stat** (statistik) processer aktiveras och sedan konfigureras adressen för **app** statistikserver:
+1. Redigera **config-demo.xml** filen (skapad med föregående kommando och placerad intill **config-default.xml** -fil), kontrollera att **mta** (leverans), **wfserver** (arbetsflöde), **inMail** (återbundna mejl) och **stat** (statistik) processer aktiveras och sedan konfigureras adressen för **app** statistikserver:
 
    ```
    <?xml version='1.0'?>
@@ -244,7 +245,7 @@ Använd följande steg:
 
    Mer information finns i [Kampanjserverkonfiguration](../../installation/using/configuring-campaign-server.md).
 
-1. Starta Adobe Campaign-servrarna.
+1. Starta Adobe Campaign servrar.
 
    Mer information finns i följande avsnitt:
 

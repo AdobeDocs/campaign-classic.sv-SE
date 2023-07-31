@@ -2,13 +2,13 @@
 product: campaign
 title: Avancerade funktioner
 description: Läs mer om avancerade funktioner när du arbetar med rapporter
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
-feature: Reporting
+feature: Reporting, Monitoring
+badge-v7: label="v7" type="Informative" tooltip="Gäller Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Gäller även Campaign v8"
 exl-id: 8b51d0fc-1692-41cd-9aa8-3bb8f4ee454e
-source-git-commit: acfe0c4139671fc3df69ff434ba307aaaaf70676
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '600'
+source-wordcount: '612'
 ht-degree: 4%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 4%
 
 
 
-Som teknisk användare [allmänna egenskaper](../../reporting/using/properties-of-the-report.md)kan du utnyttja avancerade funktioner för att konfigurera rapporter, som:
+Som teknisk användare, utöver [allmänna egenskaper](../../reporting/using/properties-of-the-report.md)kan du utnyttja avancerade funktioner för att konfigurera rapporter, som:
 
 * Skapa komplexa frågor för att bearbeta data i en **Skript** aktivitet. [Läs mer](#script-activity)
 
@@ -94,7 +94,7 @@ Så här skapar du en ny inställning:
 The **[!UICONTROL Response HTTP headers]** Med kan du förhindra clickjacking när du inkluderar rapportsidan på en HTML-sida med iframe. För att undvika klickbara objekt kan du välja **[!UICONTROL X-Frame-options header]** beteende:
 
 * **[!UICONTROL None]**: Rapporten kommer inte att ha **[!UICONTROL X-Frame-options header]**.
-* **[!UICONTROL Same as origin]**: Ange som standard för nya rapporter och ompublicerade rapporter. Värdnamnet är samma som rapportens URL.
+* **[!UICONTROL Same as origin]**: Ange som standard för nya rapporter och publicerade rapporter. Värdnamnet är samma som rapportens URL.
 * **[!UICONTROL Deny]**: Rapporten kan inte inkluderas på en HTML-sida med iframe.
 
 ![](assets/s_ncs_advuser_report_properties_09c.png)
@@ -109,7 +109,7 @@ Om du vill visa definitionen för en variabel markerar du den och klickar på kn
 
 ![](assets/s_ncs_advuser_report_properties_10.png)
 
-## Användningsfall: använda variabler och parametrar i en rapport
+## Använd skiftläge: använd variabler och parametrar i en rapport
 
 I videoexemplet nedan får du lära dig hur du lägger till en &quot;_type&quot;-parameter för att skapa olika vyer av en rapport utifrån värdet för det här attributet.
 
@@ -119,4 +119,4 @@ I videoexemplet nedan får du lära dig hur du lägger till en &quot;_type&quot;
 
 ## Anropa en annan rapport {#calling-up-another-report}
 
-A **Hoppa** är som en övergång utan pil: kan du gå från en aktivitet till en annan eller komma åt en annan rapport.
+A **Hoppa** är som en övergång utan pil: du kan gå från en aktivitet till en annan eller öppna en annan rapport.

@@ -2,14 +2,15 @@
 product: campaign
 title: Signaturproblem med spårade URL:er
 description: Signaturproblem med spårade URL:er
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+feature: Technote
+badge-v7-only: label="v7" type="Informative" tooltip="Gäller endast Campaign Classic v7"
 hide: true
 hidefromtoc: true
 exl-id: e7d4331b-7149-4768-8e46-2e2911319074
-source-git-commit: 403d0b7df74b2c958bea9a2d718a15f597ca0d9c
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '351'
-ht-degree: 35%
+source-wordcount: '358'
+ht-degree: 34%
 
 ---
 
@@ -38,11 +39,11 @@ Om miljön körs i någon av versionerna som listas nedan kan du påverkas:
 * Kampanj 19.1.5 (build 9033) till 19.1.7 (build 9036).
 
 
-Lär dig hur du kontrollerar din version [i det här avsnittet](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version).
+Lär dig kontrollera din version [i det här avsnittet](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version).
 
 **Hur uppdaterar jag?**
 
-Som **värdbaserad kund** kommer Adobe att arbeta med dig för att uppdatera din konfiguration inom kort.
+Som en **värdbaserad kund** kommer Adobe att arbeta med dig för att uppdatera din konfiguration inom kort.
 
 Som en **lokal/hybridkund** måste du uppdatera konfigurationen.
 
@@ -58,7 +59,7 @@ Följ stegen nedan:
 
 >[!NOTE]
 >
->The **config-`<instance>`.xml** filen åsidosätter **serverConf.xml** inställningar. Om **signEmailLinks** finns i  **config-`<instance>`.xml** (där **instance** är namnet på din instans) måste den också ändras till **false**.
+>The **config-`<instance>`XML** filen åsidosätter **serverConf.xml** inställningar. Om **signEmailLinks** finns i  **config-`<instance>`XML** (där **instance** är namnet på din instans) måste den också ändras till **false**.
 >
 
 **Vad ändras?**

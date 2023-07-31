@@ -2,15 +2,16 @@
 product: campaign
 title: Felsöka pipelines
 description: Felsöka pipelines
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
+feature: Triggers
+badge-v7: label="v7" type="Informative" tooltip="Gäller Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Gäller även Campaign v8"
 audience: integrations
 content-type: reference
 exl-id: 76645a6f-9536-49d6-b12a-fdd6113d31fa
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '705'
-ht-degree: 1%
+source-wordcount: '717'
+ht-degree: 2%
 
 ---
 
@@ -44,7 +45,7 @@ Parametern @authPrivateKey i instanskonfigurationsfilen är felaktig.
 
 1. Kontrollera att authPrivateKey har angetts.
 1. Kontrollera att authPrivateKey: börjar med @, slutar med = och är ca 4 000 tecken långt.
-1. Leta efter originalnyckeln och kontrollera att den är: i RSA-format, 4096 bitar lång och börjar med `-----BEGIN RSA PRIVATE KEY-----`.
+1. Leta efter originalnyckeln och kontrollera att den är: i RSA-format, 4 096 bitar lång och börjar med `-----BEGIN RSA PRIVATE KEY-----`.
    <br> Om det behövs skapar du nyckeln igen och registrerar den på Adobe Analytics.
 1. Kontrollera att nyckeln har kodats i samma instans som [!DNL pipelined]. <br>Om det behövs kan du göra om kodningen med JavaScript eller arbetsflödet.
 
@@ -54,7 +55,7 @@ Den privata nyckeln har ett ogiltigt format.
 
 1. Kör stegen för nyckelkryptering på den här sidan.
 1. Kontrollera att nyckeln är krypterad på samma instans.
-1. Kontrollera att authPrivateKey i konfigurationsfilen matchar den genererade nyckeln. <br>Se till att använda OpenSSL för att generera nyckelparet. PuttyGen genererar till exempel inte rätt format.
+1. Kontrollera att authPrivateKey i konfigurationsfilen matchar den genererade nyckeln. <br>Generera nyckelparet med OpenSSL. PuttyGen genererar till exempel inte rätt format.
 
 **Pipelined misslyckas med &quot;is not long allowed get access token&quot;**
 
@@ -69,9 +70,9 @@ Loggarna ska vara som följer:
 2021-05-31T08:43:09.160Z        66462   66501   1       error   log     Error while authenticating: '{"error":"This client: df73c224e5-triggers-test is no longer allowed to get access token."}' (iRc=16384)
 ```
 
-Det här felmeddelandet betyder att autentiseringen har konfigurerats med den gamla Omniture base OAuth. Se [Konfigurera Adobe I/O för Adobe Experience Cloud Triggers](../../integrations/using/configuring-adobe-io.md) dokumentation som uppgraderar din autentisering.
+Det här felmeddelandet betyder att autentiseringen har konfigurerats med den gamla Omniture base OAuth. Se [Konfigurera Adobe I/O för Adobe Experience Cloud Triggers](../../integrations/using/configuring-adobe-io.md) dokumentation för att uppgradera din autentisering.
 
-**Inga utlösare har hämtats**
+**Inga utlösare hämtas**
 
 När [!DNL pipelined] processen körs och inga utlösare hämtas:
 
@@ -97,8 +98,8 @@ När tidsstämpeln för Analytics är mycket äldre än datumet då händelsen s
 
 I allmänhet kan en utlösare ta 15-90 minuter att starta en marknadsföringskampanj. Detta varierar beroende på implementering av datainsamling, inläsning på pipeline, anpassad konfiguration av den definierade utlösaren och arbetsflödet i Adobe Campaign.
 
-1. Kontrollera om [!DNL pipelined] processen har körts.
-1. Leta efter fel i pipelined.log som kan orsaka nya försök. Åtgärda eventuella fel.
+1. Kontrollera om [!DNL pipelined] processen körs.
+1. Leta efter fel i pipelined.log som kan orsaka nya försök. Åtgärda felen, om tillämpligt.
 1. Kontrollera [!DNL pipelined] statussida för köstorleken. Om köstorleken är stor kan du förbättra JS-prestanda.
 1. Eftersom en fördröjning verkar öka med volymen bör du konfigurera utlösarna i Analytics med färre meddelanden.
 

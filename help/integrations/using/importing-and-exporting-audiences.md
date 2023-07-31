@@ -2,15 +2,16 @@
 product: campaign
 title: Importera och exportera publiker
 description: Importera och exportera publiker
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
+feature: Audiences, People Core Service Integration
+badge-v7: label="v7" type="Informative" tooltip="Gäller Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Gäller även Campaign v8"
 audience: integrations
 content-type: reference
 topic-tags: audience-sharing
 exl-id: c2293fc5-c9ba-4a73-8f39-fa7cdd06e8dd
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '626'
+source-wordcount: '638'
 ht-degree: 2%
 
 ---
@@ -29,14 +30,14 @@ Du kan importera målgrupper/segment från Audience Manager eller People core se
 
    ![](assets/aam_import_audience.png)
 
-1. I det fönster som öppnas klickar du på **[!UICONTROL Select a shared audience]** om du vill gå till en lista över delade målgrupper/segment som är tillgängliga från andra Adobe Experience Cloud-lösningar.
+1. Klicka på **[!UICONTROL Select a shared audience]** om du vill gå till en lista över delade målgrupper/segment som är tillgängliga från andra Adobe Experience Cloud-lösningar.
 1. Välj en målgrupp och bekräfta. Publiken fylls i automatiskt.
 
    Observera att för att kunna importera delade målgrupper bör du tilldelas **[!UICONTROL Audience library]** i Admin Console och vara administratör i Audience Manager. Mer information finns i [Dokumentation till Admin Console](https://helpx.adobe.com/se/enterprise/managing/user-guide.html).
 
    ![](assets/aam_import_audience_3.png)
 
-1. Välj AMC-datakällan från **[!UICONTROL AMC Data source]** för att definiera den typ av data som förväntas.
+1. Välj AMC-datakällan på menyn **[!UICONTROL AMC Data source]** för att definiera den typ av data som förväntas.
 
    ![](assets/aam_import_audience_2.png)
 

@@ -2,15 +2,16 @@
 product: campaign
 title: CRM-kopplingar
 description: Kom igång med CRM Connectors i Campaign
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+feature: Microsoft CRM Integration, Salesforce Integration
+badge-v7-only: label="v7" type="Informative" tooltip="Gäller endast Campaign Classic v7"
 audience: platform
 content-type: reference
 topic-tags: connectors
 exl-id: 7ccab3a4-f323-464a-9ec4-dd597279d0eb
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '158'
-ht-degree: 55%
+source-wordcount: '165'
+ht-degree: 53%
 
 ---
 

@@ -2,13 +2,13 @@
 product: campaign
 title: Felsöka SMS
 description: Läs mer om felsökning av SMS-kanal
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
-feature: SMS
+badge-v7: label="v7" type="Informative" tooltip="Gäller Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Gäller även Campaign v8"
+feature: SMS, Troubleshooting
 exl-id: 841f0c2f-90ef-4db0-860a-75fc7c48804a
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '2744'
+source-wordcount: '2756'
 ht-degree: 0%
 
 ---
@@ -35,11 +35,11 @@ När du har markerat varje konto separat finns det två möjliga scenarier:
 
 * **Problemet uppstod på ett eller flera konton**
 
-   I så fall kan du tillämpa andra felsökningsprocedurer på varje konto separat. Det är bäst att inaktivera andra konton när du diagnostiserar ett konto för att minska nätverkstrafiken och antalet loggar.
+  I så fall kan du tillämpa andra felsökningsprocedurer på varje konto separat. Det är bäst att inaktivera andra konton när du diagnostiserar ett konto för att minska nätverkstrafiken och antalet loggar.
 
 * **Problemet uppstod inte när bara ett konto var aktivt vid något tillfälle**
 
-   Du har en konflikt mellan konton. Som tidigare nämnts behandlar Adobe Campaign konton individuellt, men leverantören kan behandla dem som ett enda konto.
+  Du har en konflikt mellan konton. Som tidigare nämnts behandlar Adobe Campaign konton individuellt, men leverantören kan behandla dem som ett enda konto.
 
    * Du använder olika kombinationer av inloggning och lösenord för alla dina konton.
 Du måste kontakta leverantören för att diagnostisera potentiella konflikter hos dem.
@@ -54,17 +54,17 @@ Adobe Campaign stöder hantering av flera korta koder på samma externa konto.
 
 * Undersök om kopplingen nyligen har ändrats och av vem (markera Externa konton som en grupp).
 
-   ```
-   select saccount, (sserver ||':'||sport) as serverPort, iextaccountid, CASE WHEN N0.iactive=1 THEN 'Yes' ELSE 'No' END as "(x) Enabled",
-   
-   (select X1.sname from xtkoperator X1 where N0.icreatedbyid = X1.ioperatorid) as "Created By",
-   
-   (select X1.sname from xtkoperator X1 where N0.imodifiedbyid = X1.ioperatorid) as "Last Modified By",
-   
-   N0.slabel as "External Account", N0.tslastmodified as "LastModifiedDate"
-   
-   from nmsextaccount N0 LEFT JOIN xtkoperator X0 ON (N0.icreatedbyid=X0.ioperatorid) order by 8 DESC LIMIT 50;
-   ```
+  ```
+  select saccount, (sserver ||':'||sport) as serverPort, iextaccountid, CASE WHEN N0.iactive=1 THEN 'Yes' ELSE 'No' END as "(x) Enabled",
+  
+  (select X1.sname from xtkoperator X1 where N0.icreatedbyid = X1.ioperatorid) as "Created By",
+  
+  (select X1.sname from xtkoperator X1 where N0.imodifiedbyid = X1.ioperatorid) as "Last Modified By",
+  
+  N0.slabel as "External Account", N0.tslastmodified as "LastModifiedDate"
+  
+  from nmsextaccount N0 LEFT JOIN xtkoperator X0 ON (N0.icreatedbyid=X0.ioperatorid) order by 8 DESC LIMIT 50;
+  ```
 
 * Undersök (i /postupgrade directory) om systemet har uppgraderats och när
 * Undersök om några paket som påverkar SMS kan ha uppgraderats nyligen (/var/log/dpkg.log).
@@ -73,7 +73,7 @@ Adobe Campaign stöder hantering av flera korta koder på samma externa konto.
 
 * Om problemet inträffar i en miljö med medelhög källkod måste du se till att leveransloggarna och de breda loggarna skapas och uppdateras på servern med mellanlagring. Om så inte är fallet är detta inte ett SMS-problem.
 
-* Om allt fungerar på mittservern och SMS-meddelanden skickas korrekt, men marknadsinstansen inte uppdateras korrekt, kan du få ett problem med mellansynkronisering.
+* Om allt fungerar på mittservern och SMS-meddelanden skickas korrekt, men marknadsföringsinstansen inte uppdateras korrekt, kan du få ett problem med mellansynkronisering.
 
 ## Problem vid anslutning till providern {#issue-provider}
 
@@ -99,7 +99,7 @@ En anslutning anses vara instabil om något av följande inträffar:
 
 * `enquire_link` timeout, antingen på Adobe Campaign eller på leverantörssidan. Du kanske ser `ENQUIRE_LINK_RESP` med en felkod som inte är noll i så fall.
 
-* Det finns mycket `BIND PDU`s. Det får inte finnas mer än ett fåtal under en dag, beroende på antalet anslutningar. Mer än 1 BIND PDU per timme ska vara varningar.
+* Det finns mycket `BIND PDU`s. Det får inte finnas fler än ett fåtal under en dag, beroende på antalet anslutningar. Mer än 1 BIND PDU per timme ska vara varningar.
 
 Så här åtgärdar du problem med anslutningsstabilitet:
 
@@ -125,11 +125,11 @@ Så här åtgärdar du problem med anslutningsstabilitet:
 
 * Kontrollera att MTA faktiskt behandlar meddelandet. Om så inte är fallet är det kanske inte ett SMS-problem.
 
-* Kontrollera att SMS-anslutningen är bunden till providerns utrustning. Be leverantören om feedback för att säkerställa att alla system kommunicerar på rätt sätt. Se `BIND_TRANSMITTER` och `BIND_TRANSCEIVER PDU`s om du vill ha information om bindningsprocessen. Du kan behöva aktivera SMPP-spår för korrekt felsökning.
+* Kontrollera att SMS-anslutningen är bunden till providerns utrustning. Be leverantören om feedback för att säkerställa att alla system kommunicerar på rätt sätt. Se `BIND_TRANSMITTER` och `BIND_TRANSCEIVER PDU`s för information om bindningsprocessen. Du kan behöva aktivera SMPP-spår för korrekt felsökning.
 
 * När SMPP-spårningarna är aktiverade kontrollerar du att `SUBMIT_SM PDU` innehåller rätt information.
 
-* Kontrollera att providern svarar med en `SUBMIT_SM_RESP PDU` med ett OK-värde (kod 0). Kontrollera att PDU:n kommer med rimlig fördröjning: om något längre än en sekund måste diskuteras med leverantören, kommer det vanligtvis på mindre än 100 ms.
+* Kontrollera att providern svarar med en `SUBMIT_SM_RESP PDU` med ett OK-värde (kod 0). Kontrollera att PDU:n kommer med en rimlig fördröjning: allt som är längre än en sekund måste diskuteras med leverantören, det kommer vanligtvis om mindre än 100 ms.
 
 * Om alla dessa steg fungerar kan du vara säker på att problemet ligger hos leverantören. De måste göra felsökningen på sin plattform.
 
@@ -141,7 +141,7 @@ Dubbletter orsakas ofta av återförsök. Det är normalt att ha dubbletter när
 
 * Om dubbletter skickas med exakt 60 sekunders mellanrum är det antagligen ett problem på leverantörssidan, de skickar inte någon `SUBMIT_SM_RESP` snabbt nog.
 
-* Om du ser många `BIND/UNBIND`har du en instabil anslutning. Se[Problem med instabila anslutningar](troubleshooting-sms.md#issues-unstable-connection) för lösningar innan du försöker lösa problem med dubblettmeddelanden.
+* Om du ser många `BIND/UNBIND`har du en instabil anslutning. Se[Problem med instabila anslutningar](troubleshooting-sms.md#issues-unstable-connection) för att hitta lösningar innan du försöker lösa problem med dubblettmeddelanden.
 
 Minska antalet dubbletter när ett nytt försök görs:
 
@@ -149,11 +149,11 @@ Minska antalet dubbletter när ett nytt försök görs:
 
 ## Utfärda vid behandling av SR (leveranskvitton) {#issue-process-SR}
 
-* Du måste ha aktiverat SMPP-spår för att kunna utföra någon typ av SR-felsökning.
+* SMPP-spår måste vara aktiverade för att du ska kunna utföra någon typ av SR-felsökning.
 
 * Kontrollera att `DELIVER_SM PDU` kommer från leverantören och är välformad.
 
-* Kontrollera att Adobe Campaign svarar med framgång `DELIVER_SM_RESP PDU` i tid. På Adobe Campaign Classic garanterar detta att SR har införts i `providerMsgId` tabell för uppskjuten behandling av SMS-processen.
+* Kontrollera att Adobe Campaign svarar med framgång `DELIVER_SM_RESP PDU` i rätt tid. På Adobe Campaign Classic garanterar detta att SR har införts i `providerMsgId` tabell för uppskjuten behandling av SMS-processen.
 
 Om `DELIVER_SM PDU` bekräftas inte och du bör kontrollera följande:
 
@@ -177,7 +177,7 @@ Om du har korrigerat allt men vissa ogiltiga SR fortfarande finns i providerns b
 
 * Om automatiska svar är aktiverade kontrollerar du att `SUBMIT_SM` har skickats till providern. Annars kommer det garanterat att hitta ett felmeddelande i SMS-processloggarna.
 
-* Om `SUBMIT_SM MT PDU` som innehåller svaret finns i spårningarna, men SMS:et inte kommer till mobiltelefonen, måste du kontakta leverantören för att få hjälp med felsökningen.
+* Om `SUBMIT_SM MT PDU` som innehåller svaret finns i spårningarna, men SMS:et inte kommer till mobiltelefonen, måste du kontakta leverantören för hjälp med felsökning.
 
 ## Problem vid färdigställande av leveransen, med undantag för mottagare i karantän (i karantän enligt funktionen för autosvar) {#issue-delivery-preparation}
 
@@ -195,13 +195,13 @@ Kontakta dem och se vad som är fel med dem. De bör kunna tala om för dig om p
 
 Unicode tillåter många varianter för likartade tecken och Adobe Campaign kan inte hantera alla.
 
-Den vanligaste källan till problem är en kopiera-klistra in från en ordbehandlare, som ändrar vanliga tecken till typografiskt korrekta versioner: blanksteg ändrade till fasta blanksteg, dubbla citattecken ändrade till inledande och avslutande citattecken, minustecken ändrade till olika typer av bindestreck osv.
+Den vanligaste orsaken till problem är en kopiera-klistra in från en ordbehandlare, som ändrar vanliga tecken till typografiskt korrekta versioner: blanksteg som ändrats till fasta blanksteg, dubbla citattecken som ändrats till inledande och avslutande citattecken, minustecken som ändrats till olika typer av bindestreck osv.
 
 Kopiera inte och klistra in meddelandet när du testar. Skriv det alltid direkt i gränssnittet.
 
 Med hexadecimala tecken kan du se skillnaden mellan liknande tecken. En gemener L, en versal I, O, 0, alla olika typer av citattecken, icke-latinska kodningar eller till och med olika typer av blanksteg kan alla se likadana ut eller kanske inte visas alls.
 
-Om du vill konvertera Unicode till hexadecimal kan du använda onlineverktyg som [Unicode-kodskonverterare](https://r12a.github.io/app-conversion/) webbplats. Skriv texten och kontrollera att det inte finns någon PII-fil, t.ex. telefonnummer, och klicka **Konvertera**. De hexadecimala värdena visas längst ned (UTF-32-zon).
+Om du vill konvertera Unicode till hexadecimal kan du använda onlineverktyg som [Unicode-kodskonverterare](https://r12a.github.io/app-conversion/) webbplats. Skriv texten och kontrollera att det inte finns någon PII-fil, till exempel telefonnummer, och klicka på **Konvertera**. De hexadecimala värdena visas längst ned (UTF-32-zon).
 
 När biljetter om kodningsproblem öppnas, oavsett om det gäller leverantören eller [Adobe kundtjänst](https://helpx.adobe.com/se/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)innehåller alltid en hexadecimal version av det du skriver och det du ser.
 
@@ -209,7 +209,7 @@ När biljetter om kodningsproblem öppnas, oavsett om det gäller leverantören 
 
 Bestäm vilken kodning du förväntar dig ska användas och sök online efter teckentabellen. Kontrollera att de tecken du vill skicka är tillgängliga på målkodsidan. Kontrollera att `data_coding` fältet är korrekt och matchar vad du och leverantören förväntar sig.
 
-**Steg 4: Ta reda på vad du skickade**
+**Steg 4: Ta reda på vad du faktiskt skickade**
 
 Du behöver felsökningsutdata för anslutningen för att se exakt vilka byte du skickar till providern. Kodningsproblem visas i `SUBMIT_SM PDU`s, så var noga med att fånga dem. Skicka distinkta meddelanden som är enkla att hitta i loggen.
 
@@ -221,7 +221,7 @@ När du behöver hjälp med ett SMS-problem, oavsett om det gäller att öppna e
 
 * **Aktivera utförliga SMPP-meddelanden** när problemet uppstår. De flesta SMS-problem är omöjliga att lösa utan detta.
 
-* Om problemet är relaterat till SMS-trafik ska du kontakta leverantören först. Deras plattform är bäst lämpad för effektiv diagnos av SMS-trafikproblem i realtid.
+* Om problemet är relaterat till SMS-trafik ska du kontakta leverantören först. Deras plattform passar bäst för effektiv diagnos av SMS-trafikproblem i realtid.
 
 * Ta med en kort men faktisk beskrivning av problemet.
 
@@ -231,7 +231,7 @@ När du behöver hjälp med ett SMS-problem, oavsett om det gäller att öppna e
 
 * Inkludera relevanta loggar och/eller nätverksinhämtningar. Se till att du återskapar problemet under hämtningen när du gör hämtningar.
 
-* Om du inkluderar loggar, kalkeringar eller klipp bör du identifiera exakt var i filen problemet finns.
+* Om du inkluderar loggar, kalkeringar eller hämtningar pekar du exakt på platsen i filen när problemet uppstår.
 
 * Om du refererar till meddelanden, PDU:er eller loggar måste du tydligt ange deras tidsstämpel för att göra dem lättare att hitta.
 
@@ -263,7 +263,7 @@ I vissa fall behövs ingen hämtning av nätverkstrafik. Här är de vanligaste 
 
 * Timingproblem (`retry timing`, `enquire_link` period, flödeskappning osv.)
 
-* SR-parsning och -bearbetning: utförliga loggar ger mycket mer sammanhang och en bättre presentation.
+* SR-parsning och -bearbetning: utförliga loggar ger mycket mer kontext och en bättre presentation.
 
 * MO-behandling (automatiska svar, karantän).
 

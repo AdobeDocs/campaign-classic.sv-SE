@@ -2,12 +2,12 @@
 product: campaign
 title: CRM Connectors-datasynkronisering
 description: Hantera data mellan Campaign och CRM
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
-feature: Salesforce Integration, Microsoft CRM Integration
+feature: Microsoft CRM Integration, Salesforce Integration
+badge-v7-only: label="v7" type="Informative" tooltip="Gäller endast Campaign Classic v7"
 exl-id: 7f9eda15-76e8-40a1-8302-004cea085778
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '1536'
+source-wordcount: '1543'
 ht-degree: 0%
 
 ---
@@ -28,7 +28,7 @@ The **[!UICONTROL CRM Connector]** aktiviteten måste konfigureras för att synk
 
 ![](assets/crm_connectors_msdynamics_08.png)
 
-Med den här aktiviteten kan du:
+Med den här aktiviteten kan du
 
 * Importera från CRM - [Läs mer](#importing-from-the-crm)
 * Exportera till CRM - [Läs mer](#exporting-to-the-crm)
@@ -37,7 +37,7 @@ Med den här aktiviteten kan du:
 
 ![](assets/crm_task_select_op.png)
 
-Välj det externa konto som matchar det CRM som du vill konfigurera synkroniseringen med och välj sedan det objekt som ska synkroniseras: konton, möjligheter, leads, kontakter osv.
+Välj det externa konto som matchar det CRM-konto som du vill konfigurera synkronisering med och välj sedan det objekt som ska synkroniseras: konton, affärsmöjligheter, leads, kontakter osv.
 
 ![](assets/crm_task_select_obj.png)
 
@@ -55,7 +55,7 @@ För en importaktivitet gäller följande: **[!UICONTROL CRM Connector]** stegen
 1. Gå till **[!UICONTROL Remote object]** nedrullningsbar lista och välj det objekt som berörs av processen. Det här objektet sammanfaller med en av tabellerna som skapas i Adobe Campaign under anslutningskonfigurationen.
 1. Gå till **[!UICONTROL Remote fields]** och ange de fält som ska importeras.
 
-   Om du vill lägga till ett fält klickar du på **[!UICONTROL Add]** i verktygsfältet och klickar sedan på **[!UICONTROL Edit expression]** ikon.
+   Om du vill lägga till ett fält klickar du på **[!UICONTROL Add]** i verktygsfältet och klickar sedan på **[!UICONTROL Edit expression]** -ikon.
 
    ![](assets/crm_task_import_add_field.png)
 
@@ -63,11 +63,11 @@ För en importaktivitet gäller följande: **[!UICONTROL CRM Connector]** stegen
 
    >[!IMPORTANT]
    >
-   >Identifieraren för posten i CRM är obligatorisk för att länka objekt i CRM och Adobe Campaign. Den läggs till automatiskt när förpackningen godkänns.
+   >Identifieraren för posten i CRM är obligatorisk för att länka objekt i CRM och Adobe Campaign. Den läggs till automatiskt när lådan är godkänd.
    >
    >Det sista ändringsdatumet på CRM-sidan är också obligatoriskt för inkrementell dataimport.
 
-1. Du kan även filtrera data som ska importeras efter dina behov. Om du vill göra det klickar du på **[!UICONTROL Edit the filter...]** länk.
+1. Du kan även filtrera data som ska importeras efter dina behov. Klicka på **[!UICONTROL Edit the filter...]** länk.
 
    I följande exempel kommer Adobe Campaign endast att importera kontakter för vilka viss aktivitet har registrerats sedan 1 november 2012.
 
@@ -97,28 +97,28 @@ Datumet för den senaste synkroniseringen lagras som standard i ett alternativ s
 > 
 >Du måste uppdatera det här alternativet manuellt för ytterligare import.
 
-Du kan ange vilket CRM-fjärrfält som ska beaktas för att identifiera de senaste ändringarna.
+Du kan ange vilket fjärr-CRM-fält som ska beaktas för att identifiera de senaste ändringarna.
 
 Som standard används följande fält (i den angivna ordningen):
 
 * För Microsoft Dynamics: **modifiedon**,
 * För Salesforce.com: **SenastÄndradDatum**, **SystemModstamp**.
 
-Aktivera **[!UICONTROL Automatic index]** alternativ genererar tre variabler som kan användas i synkroniseringsarbetsflödet via en **[!UICONTROL JavaScript code]** typaktivitet. Dessa verksamheter är följande:
+Aktiverar **[!UICONTROL Automatic index]** alternativ genererar tre variabler som kan användas i synkroniseringsarbetsflödet via en **[!UICONTROL JavaScript code]** typaktivitet. Dessa verksamheter är följande:
 
-* **vars.crmOptionName**: representerar namnet på alternativet som innehåller det senaste importdatumet.
+* **vars.crmOptionName**: representerar namnet på det alternativ som innehåller det senaste importdatumet.
 * **vars.crmStartImport**: representerar startdatumet (inkluderat) för den senaste dataåterställningen.
 * **var.crmEndDate**: representerar slutdatumet (exkluderat) för den senaste dataåterställningen.
 
-   >[!NOTE]
-   >
-   >Dessa datum visas i följande format: **yyyy/MM/dd hh:mm:ss**.
+  >[!NOTE]
+  >
+  >Dessa datum visas i följande format: **yyyy/MM/dd hh:mm:ss**.
 
 ### Filtrera data {#filtering-data}
 
 För att de olika CRM-systemen ska fungera effektivt måste du skapa filter enligt följande regler:
 
-* Varje filtreringsnivå får endast använda en typ av operator.
+* För varje filtreringsnivå får endast en typ av operator användas.
 * Operatorn AND NOT stöds inte.
 * Jämförelser kan bara gälla null-värden (&#39;är tom&#39;/&#39;är inte tom&#39;) eller tal. Detta innebär att värdet (högerkolumnen) bedöms och att resultatet av denna bedömning måste vara ett tal. JOBIN-typjämförelser stöds därför inte.
 * Värdet i den högra kolumnen utvärderas i JavaScript.
@@ -136,7 +136,7 @@ Följande filtreringsvillkor gäller till exempel INTE för en CRM-import efters
 
 I Microsoft Dynamics och Salesforce.com kan du sortera de fjärrfält som ska importeras i stigande eller fallande ordning.
 
-Om du vill göra det klickar du på **[!UICONTROL Order by]** länka och lägg till kolumnerna i listan.
+Klicka på **[!UICONTROL Order by]** länka och lägg till kolumnerna i listan.
 
 Sorteringsordningen för kolumnerna i listan är:
 
@@ -177,17 +177,17 @@ Använd följande konfiguration för en export på **[!UICONTROL CRM Connector]*
 
    ![](assets/crm_export_config.png)
 
-   Om du vill lägga till ett fält klickar du på **[!UICONTROL Add]** i verktygsfältet och klickar sedan på **[!UICONTROL Edit expression]** ikon.
+   Om du vill lägga till ett fält klickar du på **[!UICONTROL Add]** i verktygsfältet och klickar sedan på **[!UICONTROL Edit expression]** -ikon.
 
    >[!NOTE]
    >
-   >Om ingen matchning har definierats på CRM-sidan för ett givet fält kan värdena inte uppdateras: De infogas direkt i CRM.
+   >Om ingen matchning har definierats på CRM-sidan för ett givet fält kan värdena inte uppdateras: de infogas direkt i CRM.
 
    Om det behövs kan du ändra dataformatet via listrutan i **[!UICONTROL Conversion]** kolumner. Möjliga konverteringstyper beskrivs i [Dataformat](#data-format).
 
    >[!NOTE]
    >
-   >Listan med poster som ska exporteras och resultatet av exporten sparas i en temporär fil som är tillgänglig tills arbetsflödet har slutförts eller startats om. Detta gör att du kan starta processen igen om fel uppstår utan att riskera att exportera samma post flera gånger eller förlora data.
+   >Listan med poster som ska exporteras och resultatet av exporten sparas i en temporär fil som är tillgänglig tills arbetsflödet har slutförts eller startats om. Detta gör att du kan starta processen igen om fel uppstår utan att du riskerar att exportera samma post flera gånger eller förlora data.
 
 ## Ytterligare konfigurationer {#additional-configurations}
 
@@ -203,9 +203,9 @@ The **[!UICONTROL Default]** Läget tillämpar automatisk datakonvertering, som 
 
 Andra konverteringar är:
 
-* **[!UICONTROL Date only]**: I det här läget tas datum- och tidstypsfält bort.
-* **[!UICONTROL Without time offset]**: I det här läget avbryts den tidszonshantering som används i standardläget.
-* **[!UICONTROL Copy/Paste]**: I det här läget används rådata som strängar (ingen konvertering).
+* **[!UICONTROL Date only]**: det här läget tar bort fält av typen Datum + Tid.
+* **[!UICONTROL Without time offset]**: det här läget avbryter den tidszonshantering som används i standardläget.
+* **[!UICONTROL Copy/Paste]**: det här läget använder rådata som strängar (ingen konvertering).
 
 ### Felbearbetning {#error-processing}
 
@@ -219,7 +219,7 @@ Dessa alternativ placerar de matchande utdataövergångarna.
 
 Placera sedan de aktiviteter som är relevanta för de processer du vill tillämpa.
 
-Om du till exempel vill behandla fel kan du lägga till en vänteruta och schemalägga nya försök.
+Om du till exempel vill bearbeta fel kan du lägga till en vänteruta och schemalägga nya försök.
 
 Avvisade registreras med sin felkod och det relaterade meddelandet, vilket innebär att du kan ställa in spårning av avvisade för att optimera synkroniseringsprocessen.
 
@@ -227,7 +227,7 @@ Avvisade registreras med sin felkod och det relaterade meddelandet, vilket inneb
 >
 >Även när **[!UICONTROL Process rejects]** om alternativet inte är aktiverat genereras en varning för varje avvisad kolumn med en felkod och ett meddelande.
 
-The **[!UICONTROL Reject]** Med utdataövergång får du tillgång till det utdataschema som innehåller de specifika kolumner som är relevanta för felmeddelanden och koder. För Salesforce.com är den här kolumnen **errorSymbol** (felsymbol, skiljer sig från felkoden), **errorMessage** (beskrivning av felkontexten).
+The **[!UICONTROL Reject]** Med utdataövergång får du tillgång till det utdataschema som innehåller de specifika kolumner som är relevanta för felmeddelanden och koder. För Salesforce.com är kolumnen **errorSymbol** (felsymbol, skiljer sig från felkoden), **errorMessage** (beskrivning av felkontexten).
 
 ## Importera objekt som tagits bort i CRM {#importing-objects-deleted-in-the-crm}
 
@@ -243,7 +243,7 @@ Gör så här:
 
    >[!IMPORTANT]
    >
-   >Elementets raderingsperiod måste sammanfalla med de begränsningar som är specifika för CRM. Det innebär att för Salesforce.com kan element som togs bort för över 30 dagar sedan inte återställas.
+   >Elementets raderingsperiod måste sammanfalla med de begränsningar som är specifika för CRM. Det innebär att element som togs bort för över 30 dagar sedan inte kan återställas för Salesforce.com.
 
 ## Ta bort objekt i CRM {#deleting-objects-in-the-crm}
 
@@ -256,3 +256,4 @@ The **[!UICONTROL Behavior]** kan du aktivera bearbetning av avvisade. Det här 
 >[!NOTE]
 >
 >Även när **[!UICONTROL Process rejects]** om du avaktiverar det här alternativet genereras en varning för varje avslagen kolumn.
+>

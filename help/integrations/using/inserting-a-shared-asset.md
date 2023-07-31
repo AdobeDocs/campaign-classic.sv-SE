@@ -2,11 +2,12 @@
 product: campaign
 title: Infoga en delad resurs
 description: Infoga en delad resurs
+feature: Asset Sharing
 audience: integrations
 content-type: reference
 topic-tags: asset-sharing
 exl-id: 30a94bce-6d96-4a6d-a62f-7451c822f0e3
-source-git-commit: d399c4800fe6c5b128a6ccb5fec15262cbef5ee8
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
 source-wordcount: '219'
 ht-degree: 7%
@@ -27,15 +28,15 @@ Resurser som delas från Adobe Experience Cloud kan användas i e-postmeddelande
 
    * Om du använder [standardredigeringsläge](../../delivery/using/defining-the-email-content.md#adding-images), markera **[!UICONTROL Image]** > **[!UICONTROL Select a shared asset]**.
 
-      ![](assets/dam_insert_image_standard.png)
+     ![](assets/dam_insert_image_standard.png)
 
    * Om du använder [avancerat redigeringsläge](../../web/using/about-campaign-html-editor.md) (DCE), gå till ett bildblock och välj sedan på snabbmenyn **[!UICONTROL Select a shared asset]**.
 
-      ![](assets/dam_insert_image_dce.png)
+     ![](assets/dam_insert_image_dce.png)
 
-      >[!NOTE]
-      >
-      >Du kan inte infoga delade bilder från Adobe Campaign i [webbåtkomst](../../platform/using/adobe-campaign-workspace.md#console-and-web-access) när du använder DCE.
+     >[!NOTE]
+     >
+     >Du kan inte infoga delade bilder från Adobe Campaign i [webbåtkomst](../../platform/using/adobe-campaign-workspace.md#console-and-web-access) när du använder DCE.
 
 1. Markera en bild i det urvalsfönster som öppnas och bekräfta sedan.
 

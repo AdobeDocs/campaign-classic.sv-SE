@@ -2,16 +2,17 @@
 product: campaign
 title: Säkerhetskopiera
 description: Säkerhetskopiera
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
-badge-v7-prem: label="on-premise & hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html" tooltip="Applies to on-premise and hybrid deployments only"
+feature: Monitoring
+badge-v7-only: label="v7" type="Informative" tooltip="Gäller endast Campaign Classic v7"
+badge-v7-prem: label="lokal och hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=sv" tooltip="Gäller endast lokala och hybrida driftsättningar"
 audience: production
 content-type: reference
 topic-tags: data-processing
 exl-id: e5ef6aba-dc22-4c8d-9fbb-13d507181b65
-source-git-commit: 4661688a22bd1a82eaf9c72a739b5a5ecee168b1
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '198'
-ht-degree: 2%
+source-wordcount: '223'
+ht-degree: 6%
 
 ---
 
@@ -56,4 +57,4 @@ Kataloger som ska säkerhetskopieras är därför:
 
 Databasen innehåller all information som visas i Adobe Campaign Rich Client Console samt alla affärsdata.
 
-Ditt värdföretag och deras databasadministratörer ansvarar för den här åtgärden.
+Ditt värdföretag, och deras databasadministratörer, ansvarar för den här åtgärden.

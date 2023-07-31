@@ -2,16 +2,17 @@
 product: campaign
 title: Anpassa konfigurationen
 description: Lär dig hur du anpassar konfigurationen före och efter en migrering till Campaign v7
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+feature: Upgrade
+badge-v7-only: label="v7" type="Informative" tooltip="Gäller endast Campaign Classic v7"
 audience: migration
 content-type: reference
 topic-tags: migration-procedure
 hide: true
 hidefromtoc: true
 exl-id: ad71dead-c0ca-42d5-baa8-0f340979231a
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '471'
+source-wordcount: '478'
 ht-degree: 2%
 
 ---
@@ -59,7 +60,7 @@ När du migrerar till Adobe Campaign v7 måste följande element konfigureras. D
 
 * Lösenord
 
-   Du måste konfigurera **Administratör** och **Intern** lösenord. [Läs mer](../../migration/using/before-starting-migration.md#user-passwords)
+  Du måste konfigurera **Administratör** och **Intern** lösenord. [Läs mer](../../migration/using/before-starting-migration.md#user-passwords)
 
 <!--
 * Tree structure
@@ -82,33 +83,33 @@ Efter körning **postuppgradering**, kontrollera och konfigurera följande eleme
 
 * Spegla sidor
 
-   Spegelsidans anpassningsblock har ändrats med v6.x. Den här nya versionen förbättrar säkerheten vid åtkomst av dessa sidor.
+  Spegelsidans anpassningsblock har ändrats med v6.x. Den här nya versionen förbättrar säkerheten vid åtkomst av dessa sidor.
 
-   Om du använde v5-anpassningsblocket i dina meddelanden kommer speglingssidan inte att visas. Adobe rekommenderar starkt att du använder det nya anpassningsblocket när du infogar en spegelsida i dina meddelanden.
+  Om du använde v5-anpassningsblocket i dina meddelanden kommer speglingssidan inte att visas. Adobe rekommenderar starkt att du använder det nya anpassningsblocket när du infogar en spegelsida i dina meddelanden.
 
-   Som en tillfällig lösning (och eftersom spegelsidorna fortfarande är aktiva) kan du återgå till det gamla personaliseringsblocket för att undvika det här problemet genom att ändra alternativet **[!UICONTROL XtkAcceptOldPasswords]** och ange **[!UICONTROL 1]**. Detta påverkar inte användningen av det nya v6.x-anpassningsblocket.
+  Som en tillfällig lösning (och eftersom spegelsidorna fortfarande är aktiva) kan du återgå till det gamla personaliseringsblocket för att undvika det här problemet genom att ändra alternativet **[!UICONTROL XtkAcceptOldPasswords]** och ange **[!UICONTROL 1]**. Detta påverkar inte användningen av det nya v6.x-anpassningsblocket.
 
 * Syntax
 
-   Om du får problem med syntaxen under efteruppgraderingen måste du tillfälligt aktivera **allowSQLInjection** i **serverConf.xml** eftersom det ger dig tid att skriva om koden. Se till att återaktivera skyddet när koden har anpassats.
+  Om du får problem med syntaxen under efteruppgraderingen måste du tillfälligt aktivera **allowSQLInjection** i **serverConf.xml** eftersom det ger dig tid att skriva om koden. Se till att återaktivera skyddet när koden har anpassats.
 
 * Konflikter
 
-   Migreringen utförs efter uppgraderingen och konflikter kan uppstå i rapporter, formulär eller webbprogram. Konflikterna kan lösas från konsolen.
+  Migreringen utförs efter uppgraderingen och konflikter kan uppstå i rapporter, formulär eller webbprogram. Konflikterna kan lösas från konsolen.
 
 * Tomcat
 
-   Om du har anpassat installationsmappen kontrollerar du att den har uppdaterats korrekt efter migreringen.
+  Om du har anpassat installationsmappen kontrollerar du att den har uppdaterats korrekt efter migreringen.
 
 * Rapporter
 
-   Alla färdiga rapporter använder för närvarande v6.x-renderingsmotorn. Om du har lagt till JavaScript-kod i rapporterna kan vissa element påverkas.
+  Alla färdiga rapporter använder för närvarande v6.x-renderingsmotorn. Om du har lagt till JavaScript-kod i rapporterna kan vissa element påverkas.
 
 * Webbprogram
 
-   Om du har problem med anslutningen till dina identifierade webbprogram efter uppgraderingen måste du aktivera **allowUserPassword** och **sessionTokenOnly** i **serverConf.xml** -fil. För att undvika säkerhetsproblem måste dessa två alternativ återaktiveras när problemet har lösts.
+  Om du har problem med anslutningen till dina identifierade webbprogram efter uppgraderingen måste du aktivera **allowUserPassword** och **sessionTokenOnly** i **serverConf.xml** -fil. För att undvika säkerhetsproblem måste dessa två alternativ återaktiveras när problemet har lösts.
 
-   Beroende på vilken typ av webbprogram det är och hur de är konfigurerade måste du utföra ytterligare ändringar för att vara säker på att de fungerar som de ska.
+  Beroende på vilken typ av webbprogram det är och hur de är konfigurerade måste du utföra ytterligare ändringar för att vara säker på att de fungerar som de ska.
 
 <!--
   If migrating from a v5.11 platform, additional configurations must be carried out. [Learn more](../../migration/using/general-configurations.md#specific-configurations-in-v5-11.md)
@@ -137,7 +138,7 @@ Efter körning **postuppgradering**, kontrollera och konfigurera följande eleme
 
 * Interaktion
 
-   Om du använder **Interaktion** måste du justera alla parametrar efter migreringen.
+  Om du **Interaktion** måste du justera alla parametrar efter migreringen.
 
 <!--
 

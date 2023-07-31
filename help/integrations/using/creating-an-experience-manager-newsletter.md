@@ -2,15 +2,16 @@
 product: campaign
 title: Skapa ett Experience Manager-nyhetsbrev
 description: Skapa ett Experience Manager-nyhetsbrev
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
+feature: Experience Manager Integration
+badge-v7: label="v7" type="Informative" tooltip="Gäller Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Gäller även Campaign v8"
 audience: integrations
 content-type: reference
 exl-id: 9fa3ce08-3007-4c65-9841-bad339428b7c
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '275'
-ht-degree: 1%
+source-wordcount: '287'
+ht-degree: 2%
 
 ---
 
@@ -50,7 +51,7 @@ Den här integreringen kan till exempel användas för att skapa ett nyhetsbrev 
    ![](assets/aem_uc_6.png)
 
 1. Som föregående steg startar du sedan **[!UICONTROL Approve for Campaign]** arbetsflöde.
-1. En ansvarsfriskrivning visas ovanpå sidan. Klicka **[!UICONTROL Complete]** för att bekräfta granskningen och klicka på **[!UICONTROL Ok]**.
+1. En ansvarsfriskrivning visas ovanpå sidan. Klicka **[!UICONTROL Complete]** bekräfta granskningen och klicka på **[!UICONTROL Ok]**.
 
    ![](assets/aem_uc_7.png)
 

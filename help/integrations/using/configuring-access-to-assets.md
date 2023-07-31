@@ -2,15 +2,16 @@
 product: campaign
 title: Konfigurera åtkomst till resurser
 description: Konfigurera åtkomst till resurser
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
+feature: Asset Sharing
+badge-v7: label="v7" type="Informative" tooltip="Gäller Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Gäller även Campaign v8"
 audience: integrations
 content-type: reference
 topic-tags: asset-sharing
 exl-id: f3897a40-b080-47e5-9e31-4d861c1bacd5
-source-git-commit: 4661688a22bd1a82eaf9c72a739b5a5ecee168b1
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '498'
+source-wordcount: '510'
 ht-degree: 1%
 
 ---
@@ -25,8 +26,8 @@ I det här avsnittet beskrivs de konfigurationssteg som krävs i Adobe Campaign 
 >
 >Dessa integreringar är samtidiga. Läs nedanstående information noggrant innan du gör någon konfiguration.
 
-* Integration med **Experience Cloud Assets**: Med den här integreringen kan du infoga bilder från ditt Adobe Experience Cloud-bibliotek. Integrationen måste konfigureras genom att installera **[!UICONTROL Integration with the Adobe Experience Cloud]** inbyggt paket i Adobe Campaign.
-* Integration med **AEM Assets**: Med den här integreringen kan du infoga bilder från ditt Adobe Experience Manager Assets-bibliotek. Integrationen måste konfigureras genom att installera **[!UICONTROL AEM Integration]** inbyggt paket i Adobe Campaign. Observera att den här integreringen inte längre är tillgänglig från och med Adobe Experience Manager 6.4.
+* Integrering med **Experience Cloud Assets**: den här integreringen gör att du kan infoga bilder från ditt Adobe Experience Cloud-bibliotek. Den här integreringen måste konfigureras genom att installera **[!UICONTROL Integration with the Adobe Experience Cloud]** inbyggd i Adobe Campaign.
+* Integrering med **AEM Assets**: den här integreringen gör att du kan infoga bilder från ditt Adobe Experience Manager Assets-bibliotek. Den här integreringen måste konfigureras genom att installera **[!UICONTROL AEM Integration]** inbyggd i Adobe Campaign. Observera att denna integrering inte längre är tillgänglig från och med Adobe Experience Manager 6.4.
 
 >[!NOTE]
 >
@@ -36,8 +37,8 @@ I det här avsnittet beskrivs de konfigurationssteg som krävs i Adobe Campaign 
 
 För att kunna använda integreringen mellan Adobe Campaign och Experience Cloud Assets måste du ha:
 
-* En Adobe Experience Cloud-organisation
-* Autentiseringsläget för Adobe IMS är aktiverat
+* Adobe Experience Cloud
+* Adobe IMS-autentiseringsläget är aktiverat
 
 Om du vill aktivera anslutningen mellan Adobe Campaign och Adobe Experience Cloud konfigurerar du anslutningen via IMS (Adobe ID anslutningstjänst). Den här konfigurationen beskrivs i [Ansluta via en Adobe ID](../../integrations/using/about-adobe-id.md) -dokument. Den innehåller följande uppgifter:
 
@@ -66,13 +67,13 @@ När integreringen är klar kan du konfigurera en ny leveransmall i Adobe Campai
 
 1. Skapa en ny leveransmall - eller duplicera en befintlig. Mer information om leveransmallar finns i [den här sidan](../../delivery/using/about-templates.md).
 1. Redigera **Egenskaper** för den här mallen.
-1. I **[!UICONTROL Advanced]** -fliken, ange **[!UICONTROL Content editing mode]** till **DCE**.
-1. Välj externa **[!UICONTROL AEM account]** som du behöver använda för att få tillgång till ditt AEM Assets-bibliotek.
+1. I **[!UICONTROL Advanced]** -flik, ange **[!UICONTROL Content editing mode]** till **DCE**.
+1. Välj det externa **[!UICONTROL AEM account]** som du behöver använda för att få tillgång till ditt AEM Assets-bibliotek.
 
    ![](assets/dam_aem_assets1.png)
 
-När du infogar bilder i ett leveransinnehåll baserat på den här mallen **[!UICONTROL Select a shared asset]** kan du sedan bläddra bland bilderna i AEM Assets-biblioteket. Läs mer i [det här avsnittet](../../integrations/using/inserting-a-shared-asset.md).
+När du infogar bilder i ett leveransinnehåll baserat på den här mallen **[!UICONTROL Select a shared asset]** kan du sedan bläddra bland bilderna i AEM Assets bibliotek. Läs mer i [det här avsnittet](../../integrations/using/inserting-a-shared-asset.md).
 
 >[!NOTE]
 >
->Om **[!UICONTROL Integration with the Adobe Experience Cloud]** paketet är även installerat på din Adobe Campaign-instans. Du kan bara använda resurserna som finns i Adobe Experience Cloud-biblioteket. Om du även vill få tillgång till resurserna i ditt AEM Assets-bibliotek måste du synkronisera AEM Assets och Adobe Experience Cloud. Resurserna i AEM Assets finns sedan också i Adobe Experience Cloud bibliotek. I det här fallet behöver du inte skapa någon särskild leveransmall.
+>Om **[!UICONTROL Integration with the Adobe Experience Cloud]** paketet är även installerat på din Adobe Campaign-instans. Du kan bara använda resurserna som finns i Adobe Experience Cloud-biblioteket. Om du även vill få tillgång till resurserna i ditt AEM Assets-bibliotek måste du synkronisera AEM Assets och Adobe Experience Cloud. Resurserna i AEM Assets kommer då också att finnas i Adobe Experience Cloud bibliotek. I det här fallet behöver du inte skapa någon särskild leveransmall.

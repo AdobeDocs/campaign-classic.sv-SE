@@ -2,16 +2,17 @@
 product: campaign
 title: Uppgradera till en ny version
 description: Lär dig tekniska steg att uppgradera till en ny version
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
-badge-v7-prem: label="on-premise & hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html" tooltip="Applies to on-premise and hybrid deployments only"
+feature: Monitoring, Upgrade
+badge-v7-only: label="v7" type="Informative" tooltip="Gäller endast Campaign Classic v7"
+badge-v7-prem: label="lokal och hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=sv" tooltip="Gäller endast lokala och hybrida driftsättningar"
 audience: production
 content-type: reference
 topic-tags: updating-adobe-campaign
 exl-id: 4aaa6256-256a-441d-80c9-430f8e427875
-source-git-commit: 4661688a22bd1a82eaf9c72a739b5a5ecee168b1
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '1145'
-ht-degree: 2%
+source-wordcount: '1170'
+ht-degree: 3%
 
 ---
 
@@ -25,9 +26,8 @@ Innan du påbörjar uppgraderingen bör du kontrollera vilken version av Adobe C
 >
 >* Adobe rekommenderar starkt att du gör en säkerhetskopia av databasen för varje instans innan du uppdaterar. Mer information hittar du i [det här avsnittet](../../production/using/backup.md).
 >* Om du vill uppgradera kontrollerar du att du har behörighet och behörighet att komma åt instanser och loggar.
->* Läs [det här avsnittet](../../installation/using/general-architecture.md) och [uppgradering](https://helpx.adobe.com/se/campaign/kb/acc-build-upgrade.html) kapitel innan du börjar.
+>* Läs [det här avsnittet](../../installation/using/general-architecture.md) och [uppgradering](https://helpx.adobe.com/se/campaign/kb/acc-build-upgrade.html) kapitlet innan du börjar.
 >
-
 
 ## Windows {#in-windows}
 
@@ -48,9 +48,10 @@ Om du vill ersätta alla filer med den nya versionen måste du stänga alla inst
 
    * Webbtjänster (IIS):
 
-      **iisreset /stop**
+     **iisreset /stop**
 
-   * Adobe Campaign: **net stop nlserver6**
+   * Adobe Campaign-tjänst: **net stop nlserver6**
+
    >[!IMPORTANT]
    >
    >Du måste också se till att omdirigeringsservern (webmdl) är stoppad så att **nlsrvmod.dll** som används av IIS kan ersättas med den nya versionen.
@@ -71,7 +72,7 @@ Så här kör du uppgraderingsfilen:
 
 1. Kör **setup.exe**.
 
-   Om du vill hämta den här filen ansluter du till [Programdistributionsportal](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html) med dina användaruppgifter. Läs mer om programvarudistribution i [den här sidan](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html).
+   Om du vill hämta filen ansluter du till [Programdistributionsportal](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html) med dina inloggningsuppgifter. Läs mer om programvarudistribution i [den här sidan](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html).
 
 1. Välj installationsläge: välj **[!UICONTROL Update or repair]**
 1. Klicka på **[!UICONTROL Next]** .
@@ -105,15 +106,15 @@ De tjänster som ska startas om är:
 
 * Webbtjänster (IIS):
 
-   **iisreset /start**
+  **iisreset /start**
 
-* Adobe Campaign: **net start nlserver6**
+* Adobe Campaign-tjänst: **net start nlserver6**
 
 ## Linux {#in-linux}
 
 I en Linux-miljö följer du stegen nedan för att uppdatera Adobe Campaign till en ny version:
 
-* [Hämta uppdaterade paket](#obtain-updated-packages),
+* [Ladda ned uppdaterade paket](#obtain-updated-packages),
 * [Utför uppdateringen](#perform-an-update),
 * [Starta om webbservern](#reboot-the-web-server).
 
@@ -125,7 +126,7 @@ I en Linux-miljö följer du stegen nedan för att uppdatera Adobe Campaign till
 
 ### Hämta uppdaterade paket {#obtain-updated-packages}
 
-Börja med att återställa båda de uppdaterade paketen av Adobe Campaign: ansluta till [Programdistributionsportal](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html) med dina användaruppgifter. Läs mer om programvarudistribution i [den här sidan](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html).
+Börja med att återställa båda de uppdaterade paketen av Adobe Campaign: anslut till [Programdistributionsportal](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html) med dina inloggningsuppgifter. Läs mer om programvarudistribution i [den här sidan](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html).
 
 Filen är **nlserver6-v7-XXX.rpm**
 
@@ -133,27 +134,27 @@ Filen är **nlserver6-v7-XXX.rpm**
 
 * RPM-baserad distribution (RedHat, SuSe)
 
-   Kör som rot för att installera dem:
+  Kör som rot för att installera dem:
 
-   ```
-   $rpm -Uvh nlserver6-v7-XXXX.rpm
-   ```
+  ```
+  $rpm -Uvh nlserver6-v7-XXXX.rpm
+  ```
 
-   Där XXX är versionen av filen.
+  Där XXX är versionen av filen.
 
-   RPM-filen är beroende av paket som du kan hitta på CentOS/Red Hat-distributioner. Om du inte vill använda vissa av dessa beroenden kan du behöva använda alternativet &quot;nodeps&quot; för rpm:
+  RPM-filen är beroende av paket som du kan hitta på CentOS/Red Hat-distributioner. Om du inte vill använda vissa av dessa beroenden kan du behöva använda alternativet &quot;nodeps&quot; för rpm:
 
-   ```
-   rpm --nodeps -Uvh nlserver6-v7-XXXX-0.x86_64.rpm
-   ```
+  ```
+  rpm --nodeps -Uvh nlserver6-v7-XXXX-0.x86_64.rpm
+  ```
 
 * DEB-baserad distribution (Debian)
 
-   Kör som rot för att installera dem:
+  Kör som rot för att installera dem:
 
-   ```
-   dpkg -i nlserver6-v7-XXXX-amd64_debX.deb
-   ```
+  ```
+  dpkg -i nlserver6-v7-XXXX-amd64_debX.deb
+  ```
 
 >[!NOTE]
 >
@@ -173,10 +174,8 @@ Om du vill göra det kör du följande kommando:
 >
 >* Skriptet kan anropas **httpd** i stället för **apache**.
 >* Du MÅSTE köra det här kommandot tills du får följande svar:
-
-   >
-   >   Den här åtgärden krävs för att Apache ska kunna använda det nya biblioteket.
-
+>
+>   Den här åtgärden krävs för att Apache ska kunna använda det nya biblioteket.
 
 Starta sedan om Apache:
 
@@ -194,16 +193,16 @@ Det finns två sätt att visa synkroniseringsresultatet:
 
 * I kommandoradsgränssnittet materialiseras fel med en trippelvinklad **>>** och synkroniseringen stoppas automatiskt. Varningar materialiseras av en dubbel skiftning **>>** och måste lösas när synkroniseringen är klar. När uppgraderingen är klar visas en sammanfattning i kommandotolken. Den kan se ut så här:
 
-   ```
-   2013-04-09 07:48:39.749Z 00002E7A 1 info log =========Summary of the update==========
-   2013-04-09 07:48:39.749Z 00002E7A 1 info log <instance name> instance, 6 warning(s) and 0 error(s) during the update.
-   2013-04-09 07:48:39.749Z 00002E7A 1 warning log The document with identifier 'mobileAppDeliveryFeedback' and type 'xtk:report' is in conflict with the new version.
-   2013-04-09 07:48:39.749Z 00002E7A 1 warning log The document with identifier 'opensByUserAgent' and type 'xtk:report' is in conflict with the new version.
-   2013-04-09 07:48:39.750Z 00002E7A 1 warning log The document with identifier 'deliveryValidation' and type 'nms:webApp' is in conflict with the new version.
-   2013-04-09 07:48:39.750Z 00002E7A 1 warning log Document of identifier 'nms:includeView' and type 'xtk:srcSchema' updated in the database and found in the file system. You will have to merge the two versions manually.
-   ```
+  ```
+  2013-04-09 07:48:39.749Z 00002E7A 1 info log =========Summary of the update==========
+  2013-04-09 07:48:39.749Z 00002E7A 1 info log <instance name> instance, 6 warning(s) and 0 error(s) during the update.
+  2013-04-09 07:48:39.749Z 00002E7A 1 warning log The document with identifier 'mobileAppDeliveryFeedback' and type 'xtk:report' is in conflict with the new version.
+  2013-04-09 07:48:39.749Z 00002E7A 1 warning log The document with identifier 'opensByUserAgent' and type 'xtk:report' is in conflict with the new version.
+  2013-04-09 07:48:39.750Z 00002E7A 1 warning log The document with identifier 'deliveryValidation' and type 'nms:webApp' is in conflict with the new version.
+  2013-04-09 07:48:39.750Z 00002E7A 1 warning log Document of identifier 'nms:includeView' and type 'xtk:srcSchema' updated in the database and found in the file system. You will have to merge the two versions manually.
+  ```
 
-   Om varningen gäller en resurskonflikt måste användaren åtgärda den.
+  Om varningen gäller en resurskonflikt måste användaren åtgärda den.
 
 * The **postupgrade_`<server version number>_<time of postupgrade>`.log** loggfilen innehåller synkroniseringsresultatet. Den är som standard tillgänglig i följande katalog: **`<installation directory>/var/<instance/postupgrade`**. Fel och varningar indikeras av fel- och varningsattributen.
 
@@ -216,17 +215,17 @@ Använd följande process för att lösa konflikter:
 
 Det finns tre sätt att lösa en konflikt:
 
-* **[!UICONTROL Declare as resolved]** : kräver att användaren gör något i förväg.
+* **[!UICONTROL Declare as resolved]** : kräver åtgärd från användaren i förväg.
 * **[!UICONTROL Accept the new version]** : rekommenderas om resurserna som tillhandahålls med Adobe Campaign inte har ändrats av användaren.
 * **[!UICONTROL Keep the current version]** : betyder att uppdateringen inte godkänns.
 
-   >[!IMPORTANT]
-   >
-   >Om du väljer det här upplösningsläget kanske du inte har någon nytta av korrigeringar i den nya versionen.
+  >[!IMPORTANT]
+  >
+  >Om du väljer det här upplösningsläget kanske du inte har någon nytta av korrigeringar i den nya versionen.
 
 Om du väljer att lösa konflikten manuellt gör du så här:
 
-1. I fönstrets nedre del söker du efter **_konflikt_** sträng för att hitta entiteter med konflikter. Enheten som installerats med den nya versionen innehåller **new** argument, entiteten som matchar den tidigare versionen innehåller **kus** argument.
+1. Sök efter **_konflikt_** sträng för att hitta entiteter med konflikter. Enheten som installerats med den nya versionen innehåller **new** argument, entiteten som matchar den tidigare versionen innehåller **kus** argument.
 
    ![](assets/s_ncs_production_conflict002.png)
 
@@ -235,7 +234,7 @@ Om du väljer att lösa konflikten manuellt gör du så här:
    ![](assets/s_ncs_production_conflict003.png)
 
 1. Gå till konflikten som du har löst. Klicka på **[!UICONTROL Actions]** ikon och markera **[!UICONTROL Declare as resolved]** .
-1. Spara ändringarna: konflikten är nu löst.
+1. Spara dina ändringar: konflikten är nu löst.
 
 ### Bästa praxis {#best-practices}
 

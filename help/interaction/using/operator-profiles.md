@@ -2,14 +2,15 @@
 product: campaign
 title: Operatörsprofiler
 description: Operatörsprofiler
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+feature: Interaction, Offers
+badge-v7-only: label="v7" type="Informative" tooltip="Gäller endast Campaign Classic v7"
 audience: interaction
 content-type: reference
 topic-tags: managing-environments
 exl-id: e11fb28c-d530-45a2-862a-ff1c20975577
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '384'
+source-wordcount: '391'
 ht-degree: 5%
 
 ---
@@ -18,7 +19,7 @@ ht-degree: 5%
 
 
 
-Det finns två typer av operatorer som använder Interaction: erbjuder chefer och leveransansvariga. De har specifika rättigheter som bara ger dem tillgång till vissa delar av trädet och plattformen.
+Det finns två typer av operatorer som använder Interaction: offer managers och delivery managers. De har specifika rättigheter som bara ger dem tillgång till vissa delar av trädet och plattformen.
 
 * **[!UICONTROL Offer manager]** : skapar och underhåller erbjudanden. Observera att om erbjudanden används i arbetsflödet måste operatorn finnas i **[!UICONTROL Administrator]** eller **[!UICONTROL Offer managers]** operatörsgrupp för att köra arbetsflödet.
 * **[!UICONTROL Delivery manager]** : godkänner och använder erbjudanden
@@ -42,9 +43,9 @@ Rättigheterna som tilldelats den som ansvarar för erbjudandet gör att de kan 
 * Konfigurera berättigande för erbjudanden.
 * Godkänn erbjudanden.
 
-   >[!NOTE]
-   >
-   >Erbjudandehanteraren kan bara godkänna ett erbjudande i två specifika fall. Det första är om ingen har specificerats som granskare och det andra är om den som ansvarar för att skapa mallar (med behörighet att tilldela granskare) har angett dem som granskare i erbjudandemallen som erbjudandet baseras på.
+  >[!NOTE]
+  >
+  >Erbjudandehanteraren kan bara godkänna ett erbjudande i två specifika fall. Det första är om ingen har specificerats som granskare och det andra är om den som ansvarar för att skapa mallar (med behörighet att tilldela granskare) har angett dem som granskare i erbjudandemallen som erbjudandet baseras på.
 
 ## Delivery manager {#delivery-manager}
 
@@ -59,9 +60,9 @@ De rättigheter som tilldelats till leveransansvariga gör det möjligt för dem
 * Visa och ändra erbjudandekategorier.
 * Godkänn erbjudanden om den här leveranshanteraren har angetts som en av dess granskare.
 
-   >[!NOTE]
-   >
-   >Leveransansvariga kan bara godkänna ett erbjudande om de har definierats som granskare under konfigurationen av erbjudandet.
+  >[!NOTE]
+  >
+  >Leveransansvariga kan bara godkänna ett erbjudande om de har definierats som granskare under konfigurationen av erbjudandet.
 
 ## Återvinning av rättigheter enligt operatör {#recap-of-rights-according-to-operator}
 

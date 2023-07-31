@@ -2,16 +2,17 @@
 product: campaign
 title: Krav för installationen av Campaign i Linux
 description: Krav för installationen av Campaign i Linux
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
-badge-v7-prem: label="on-premise & hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html" tooltip="Applies to on-premise and hybrid deployments only"
+feature: Installation, Instance Settings
+badge-v7-only: label="v7" type="Informative" tooltip="Gäller endast Campaign Classic v7"
+badge-v7-prem: label="lokal och hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=sv" tooltip="Gäller endast lokala och hybrida driftsättningar"
 audience: installation
 content-type: reference
 topic-tags: installing-campaign-in-linux-
 exl-id: acbd2873-7b1c-4d81-bc62-cb1246c330af
-source-git-commit: 4661688a22bd1a82eaf9c72a739b5a5ecee168b1
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '889'
-ht-degree: 1%
+source-wordcount: '914'
+ht-degree: 2%
 
 ---
 
@@ -25,7 +26,7 @@ I det här avsnittet beskrivs de preliminära konfigurationssteg som krävs inna
 
 Den tekniska konfiguration och programkonfiguration som krävs för att installera Adobe Campaign finns i [Kompatibilitetsmatris](../../rn/using/compatibility-matrix.md).
 
-Följande komponenter måste installeras och konfigureras korrekt:
+Som en påminnelse måste följande komponenter installeras och konfigureras korrekt:
 
 * Apache, se [Kompatibilitetsmatris](../../rn/using/compatibility-matrix.md),
 * Java JDK och OpenJDK, se [Java Development Kit - JDK](../../installation/using/application-server.md#java-development-kit---jdk),
@@ -44,33 +45,33 @@ Kontrollera att du har de bibliotek som krävs för att installera Adobe Campaig
 
 * Bibliotek C måste ha stöd för TLS-läge (trådlokal lagring). Det här läget är aktivt i de flesta fall utom med vissa kärnor för vilka Xen-stöd har inaktiverats.
 
-   Om du vill kontrollera detta kan du använda **uname -a | grep xen** -kommando till exempel.
+  Om du vill kontrollera detta kan du använda **uname -a | grep xen** -kommando till exempel.
 
-   Om kommandot inte returnerar något (tom rad) betyder det att konfigurationen är korrekt.
+  Om kommandot inte returnerar något (tom rad) betyder det att konfigurationen är korrekt.
 
 * Du måste ha OpenSSL-version **1.0.2** eller senare.
 
-   För RHEL 7/8-distributioner krävs version 1.0 av OpenSSL.
+  För RHEL 7/8-distributioner krävs version 1.0 av OpenSSL.
 
-* Om du vill använda Adobe Campaign måste du ha **libicu** biblioteket är installerat.
+* Om du vill använda Adobe Campaign måste du ha **libicu** bibliotek installerat.
 
-   Följande versioner av **libicu** stöds (32 eller 64 bitar):
+  Följande versioner av **libicu** stöds (32 eller 64 bitar):
 
    * RHEL 7/8, CentOS 7: libicu50
    * Debian 8: libicu52
    * Debian 9: libicu57
 
-   Om du vill använda Adobe Campaign måste du ha biblioteket för biblioteksservrar installerat. Kör följande kommando på RHEL/CentOS:
+  Om du vill använda Adobe Campaign måste du ha biblioteket för biblioteksservrar installerat. Kör följande kommando på RHEL/CentOS:
 
-   ```
-   yum install c-ares
-   ```
+  ```
+  yum install c-ares
+  ```
 
-   På Debian:
+  På Debian:
 
-   ```
-   aptitude install libc-ares2
-   ```
+  ```
+  aptitude install libc-ares2
+  ```
 
 ### SELinux {#selinux}
 
@@ -114,15 +115,15 @@ Använd följande kommando i Redhat:
 
 * För CentOS/RHEL 7:
 
-   ```
-   yum install xorg-x11-fonts-base xorg-x11-fonts-75dpi bitstream-vera-fonts dejavu-lgc-fonts
-   ```
+  ```
+  yum install xorg-x11-fonts-base xorg-x11-fonts-75dpi bitstream-vera-fonts dejavu-lgc-fonts
+  ```
 
 * För RHEL 8:
 
-   ```
-   dnf install xorg-x11-fonts-misc xorg-x11-fonts-75dpi dejavu-lgc-sans-fonts  dejavu-sans-fonts dejavu-sans-mono-fonts dejavu-serif-fonts
-   ```
+  ```
+  dnf install xorg-x11-fonts-misc xorg-x11-fonts-75dpi dejavu-lgc-sans-fonts  dejavu-sans-fonts dejavu-sans-mono-fonts dejavu-serif-fonts
+  ```
 
 ### Teckensnitt för japanska förekomster {#fonts-for-japanese-instances}
 
@@ -138,15 +139,15 @@ Lägg till kommandot i Red Hat:
 
 * För RHEL 7:
 
-   ```
-   yum install ipa-gothic-fonts ipa-mincho-fonts
-   ```
+  ```
+  yum install ipa-gothic-fonts ipa-mincho-fonts
+  ```
 
 * För RHEL 8:
 
-   ```
-   dnf install vlgothic-fonts
-   ```
+  ```
+  dnf install vlgothic-fonts
+  ```
 
 ### Installerar LibraryOffice för Debian {#installing-libreoffice-for-debian}
 
@@ -188,13 +189,13 @@ Om du använder PostgreSQL med Adobe Campaign måste du även installera motsvar
 
 ### Oracle {#oracle}
 
-Hämta biblioteksversionen för 64-bitars Debian, d.v.s.: **libclntsh.so**, **libclntsh.so.11.1** och **libclntsh.so.10.1**.
+Hämta biblioteksversionen för 64-bitars Debian, dvs: **libclntsh.so**, **libclntsh.so.11.1** och **libclntsh.so.10.1**.
 
 Du kan hämta ett Linux RPM-paket från Oracle Technology Network.
 
 >[!NOTE]
 >
->Om du redan har installerat Oracle-klienten men den globala miljön (till exempel: /etc/profile) inte är korrekt konfigurerad, du kan lägga till saknad information i **nl6/customer.sh** skript Mer information finns i [Miljövariabler](../../installation/using/installing-packages-with-linux.md#environment-variables).
+>Om du redan har installerat Oracle-klienten men den globala miljön (till exempel /etc/profile) inte är korrekt konfigurerad, kan du lägga till saknad information i **nl6/customer.sh** skript Mer information finns i [Miljövariabler](../../installation/using/installing-packages-with-linux.md#environment-variables).
 
 **Felsökning och bästa praxis**
 
@@ -225,6 +226,6 @@ Adobe Campaign-installationer för Linux måste utföras i följande sekvens: se
 Installationsprocessen beskrivs i det här kapitlet. Installationsstegen är följande:
 
 * Steg 1: Installera programservern, se [Installera paket med Linux](../../installation/using/installing-packages-with-linux.md).
-* Steg 2: Integrering med en webbserver (valfritt, beroende på vilka komponenter som används).
+* Steg 2: Integrera med en webbserver (valfritt, beroende på vilka komponenter som används).
 
 När installationen är klar måste du konfigurera instanserna, databasen och servern. Mer information finns i [Om inledande konfiguration](../../installation/using/about-initial-configuration.md).

@@ -2,11 +2,12 @@
 product: campaign
 title: Schema för en befintlig tabell
 description: Schema för en befintlig tabell
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+feature: Custom Resources
+badge-v7-only: label="v7" type="Informative" tooltip="Gäller endast Campaign Classic v7"
 exl-id: 964f1027-627c-4f12-91b5-f258e9ba458b
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '216'
+source-wordcount: '223'
 ht-degree: 9%
 
 ---
@@ -17,10 +18,10 @@ ht-degree: 9%
 
 När programmet behöver komma åt data från en befintlig tabell, en SQL-vy eller data från en fjärrdatabas skapar du dess schema i Adobe Campaign med följande data:
 
-* Tabellnamn: Ange namnet på tabellen (med dess alias när en blink används) med attributet &quot;sqltable&quot;.
-* schemanyckel: hänvisa till avstämningsfält,
+* Tabellens namn: Ange tabellens namn (med dess alias när en blink används) med attributet &quot;sqltable&quot;.
+* schemanyckel: referera till avstämningsfält,
 * index: används för att generera frågor,
-* Fälten och deras plats i XML-strukturen: fylla i endast de fält som används i programmet,
+* Fälten och deras plats i XML-strukturen: fyll endast i de fält som används i programmet,
 * länkar: om det finns kopplingar till andra tabeller i basen.
 
 ## Implementering {#implementation}
@@ -57,6 +58,6 @@ Om du vill skapa motsvarande schema använder du följande steg:
 
 ## Åtkomst till en extern databas {#accessing-an-external-database}
 
-The **Åtkomst till federerade data - FDA** ger åtkomst till data som lagras i en extern databas.
+The **Åtkomst till federerade data - FDA** ger dig åtkomst till data som lagras i en extern databas.
 
 Hur scheman ska konfigureras för att få åtkomst till data i en extern databas beskrivs i [den här sidan](../../installation/using/creating-data-schema.md).

@@ -1,15 +1,15 @@
 ---
 product: campaign
 title: Synkronisera profiler
-description: Lär dig hur du synkroniserar profiler med ACS Connector
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+description: Lär dig synkronisera profiler med ACS Connector
 feature: ACS Connector
+badge-v7-only: label="v7" type="Informative" tooltip="Gäller endast Campaign Classic v7"
 hide: true
 hidefromtoc: true
 exl-id: 27970a6f-fb22-4418-b29c-c687fd62a78e
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '1201'
+source-wordcount: '1208'
 ht-degree: 3%
 
 ---
@@ -22,7 +22,7 @@ ACS Connector replikerar data från Campaign v7 till Campaign Standard. Data som
 
 * **Lägg till nya mottagare**: Skapa en ny mottagare i Campaign v7 och bekräfta att en motsvarande profil har replikerats till Campaign Standarden. Se [Skapa en ny mottagare](#creating-a-new-recipient).
 * **Uppdatera mottagare**: Redigera en ny mottagare i Campaign v7 och visa motsvarande profil i Campaign Standard för att bekräfta att uppdateringen har replikerats. Se [Redigera en mottagare](#editing-a-recipient).
-* **Bygg ett arbetsflöde i Campaign Standard**: Skapa ett arbetsflöde i Campaign Standard som innehåller en fråga med en eller flera målgrupper som replikerats från Campaign v7. Se [Skapa ett arbetsflöde](#creating-a-workflow).
+* **Bygg ett arbetsflöde i Campaign Standard**: Skapa ett arbetsflöde i Campaign Standard som innehåller en fråga med en eller flera målgrupper som replikeras från Campaign v7. Se [Skapa ett arbetsflöde](#creating-a-workflow).
 * **Skapa en leverans i Campaign Standard**: Följ arbetsflödet för att slutföra leveransen. Se [Skapa en leverans](#creating-a-delivery).
 * **Verifiera avprenumerationslänken**: Använd ett Campaign v7-webbprogram för att kontrollera att mottagarens val att avbryta prenumerationen på en tjänst skickas till Campaign v7-databasen. Alternativet att sluta ta emot tjänsten replikeras till Campaign Standarden. Se [Ändra länken för att avbryta prenumerationen](#changing-the-unsubscription-link).
 
@@ -30,7 +30,7 @@ ACS Connector replikerar data från Campaign v7 till Campaign Standard. Data som
 
 I följande avsnitt beskrivs hur ACS Connector hjälper dig att lägga till och redigera mottagare i Campaign v7 och sedan använda dem i en Campaign Standard. ACS Connector kräver följande:
 
-* Mottagare i Campaign v7 replikerade till Campaign Standarden.
+* Mottagare i Campaign v7 har replikerats till Campaign Standarden.
 * Användarrättigheter för att köra arbetsflöden i både Campaign v7 och Campaign Standard.
 * Användarrättigheter för att skapa och köra en leverans i Campaign Standard.
 
@@ -58,7 +58,7 @@ När en mottagare klickar på länken för att avbryta prenumerationen i ett e-p
 
 Stegen nedan för att ändra en enda datapunkt ger ett enkelt exempel på hur Campaign v7 blir den primära databasen för Campaign Standard när datareplikering används. Att ändra eller ta bort replikerade data i Campaign v7 har samma effekt på motsvarande data i Campaign Standarden.
 
-1. Välj den nya mottagaren från [Skapa en ny mottagare](#creating-a-new-recipient) och redigera mottagarens namn. Välj till exempel en **[!UICONTROL Salutation]** för mottagaren (t.ex. herr eller fru). Mer information finns i [Redigera en profil](../../platform/using/editing-a-profile.md).
+1. Välj den nyskapade mottagaren från [Skapa en ny mottagare](#creating-a-new-recipient) och redigera mottagarens namn. Välj till exempel en **[!UICONTROL Salutation]** för mottagaren (t.ex. herr eller fru). Mer information finns i [Redigera en profil](../../platform/using/editing-a-profile.md).
 
    ![](assets/acs_connect_profile_sync_03.png)
 
@@ -85,7 +85,7 @@ Mer information och fullständiga anvisningar om arbetsflöden för Campaign Sta
 
 1. Dubbelklicka på **[!UICONTROL Query]** och väljer en parameter som kan användas med den replikerade databasen. Du kan till exempel:
 
-   * Dra **[!UICONTROL Profiles]** till arbetsytan. Använd fältets nedrullningsbara meny för att välja **[!UICONTROL Is external resource]** för att hitta profiler som replikerats från Campaign v7.
+   * Dra **[!UICONTROL Profiles]** till arbetsytan. Använd fältmenyn för att välja **[!UICONTROL Is external resource]** för att hitta profiler som replikerats från Campaign v7.
    * Dra andra frågeparametrar om du vill ange de replikerade profilerna som mål ytterligare.
 
 ## Skapa en leverans {#creating-a-delivery}

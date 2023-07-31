@@ -2,16 +2,17 @@
 product: campaign
 title: Migrera en Linux-plattform till Adobe Campaign v7
 description: Lär dig hur du migrerar en Linux-plattform till Adobe Campaign v7
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+feature: Upgrade
+badge-v7-only: label="v7" type="Informative" tooltip="Gäller endast Campaign Classic v7"
 audience: migration
 content-type: reference
 topic-tags: migrating-to-adobe-campaign-7
 hide: true
 hidefromtoc: true
 exl-id: 9dc0699c-0fbf-4f8e-81f7-8ca3d7e98798
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '493'
+source-wordcount: '500'
 ht-degree: 0%
 
 ---
@@ -33,7 +34,7 @@ Migreringsstegen i Linux är följande:
 Stoppa först alla processer med tillgång till databasen på alla berörda datorer.
 
 1. Logga in som **root**.
-1. Alla servrar som använder omdirigeringsmodulen (**webmdl** service) måste stoppas. För Apache kör du följande kommando:
+1. Alla servrar som använder omdirigeringsmodulen (**webmdl** måste stoppas. För Apache kör du följande kommando:
 
    ```
    /etc/init.d/apache2 stop
@@ -165,7 +166,7 @@ Stoppa först alla processer med tillgång till databasen på alla berörda dato
 
    >[!IMPORTANT]
    >
-   >Som en försiktighetsåtgärd rekommenderar vi att du packar upp **nl6.back** och spara den på en annan säker plats än servern.
+   >Som en försiktighetsåtgärd rekommenderar vi att du packar **nl6.back** och spara den på en annan säker plats än servern.
 
 ## Avinstallera Adobe Campaign tidigare versionspaket {#uninstalling-adobe-campaign-previous-version-packages}
 
@@ -218,36 +219,36 @@ I det här avsnittet visas hur du avinstallerar Adobe Campaign v6.1-paket.
 
    * I **Debian**:
 
-      ```
-      dpkg -l | grep nl
-      ```
+     ```
+     dpkg -l | grep nl
+     ```
 
-      Listan med installerade paket visas:
+     Listan med installerade paket visas:
 
-      ```
-      ii  nlserver6                       XXXX                     nlserver6-XXXX
-      ii  nlthirdparty6                   XXXX                     nlthirdparty6-XXXX
-      ```
+     ```
+     ii  nlserver6                       XXXX                     nlserver6-XXXX
+     ii  nlthirdparty6                   XXXX                     nlthirdparty6-XXXX
+     ```
 
    * I **Red Hat**:
 
-      ```
-      rpm -qa | grep nl
-      ```
+     ```
+     rpm -qa | grep nl
+     ```
 
 1. Avinstallera Adobe Campaign v6-paket.
 
    * I **Debian**:
 
-      ```
-      dpkg --purge nlserver6 nlthirdparty6
-      ```
+     ```
+     dpkg --purge nlserver6 nlthirdparty6
+     ```
 
    * I **Red Hat**:
 
-      ```
-      rprm -ev nlserver6 nlthirdparty6
-      ```
+     ```
+     rprm -ev nlserver6 nlthirdparty6
+     ```
 
 ## Distribuera Adobe Campaign v7 {#deploying-adobe-campaign-v7}
 
@@ -467,7 +468,7 @@ To deploy Adobe Campaign, apply the following steps:
 Distribuera Adobe Campaign i två steg:
 
 * Installera Adobe Campaign v7-paket: den här åtgärden måste utföras på varje server.
-* Uppgraderingen: det här kommandot måste startas för varje instans.
+* Efteruppgraderingen: det här kommandot måste startas för varje instans.
 
 Så här distribuerar du Adobe Campaign:
 
@@ -475,22 +476,23 @@ Så här distribuerar du Adobe Campaign:
 
    * I **Debian**:
 
-      ```
-      dpkg -i nlserver6-XXXX-amd64_debX.deb
-      ```
+     ```
+     dpkg -i nlserver6-XXXX-amd64_debX.deb
+     ```
 
    * I **Red Hat**:
 
-      ```
-      rpm -Uvh nlserver6-XXXX-x86_64_rhX.rpm
-      ```
+     ```
+     rpm -Uvh nlserver6-XXXX-x86_64_rhX.rpm
+     ```
+
    >[!IMPORTANT]
    >
    >Du måste installera paketen utan problem innan du går vidare till nästa steg.
 
    >[!NOTE]
    >
-   >Adobe Campaign v7 installeras i **/usr/local/neolane/nl6/** som standard.
+   >Adobe Campaign v7 är installerat i **/usr/local/neolane/nl6/** som standard.
 
 1. Om du vill göra installationsprogrammet för klientkonsolen tillgängligt kopierar du det till installationskatalogen för Adobe Campaign:
 

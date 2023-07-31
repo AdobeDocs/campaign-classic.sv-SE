@@ -1,13 +1,13 @@
 ---
 product: campaign
 title: Fråga med grupperingshantering
-description: Lär dig hur du utför frågor med hjälp av grupperingshantering
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
-feature: Query Editor
+description: Lär dig hur du utför frågor med grupperingshantering
+badge-v7-only: label="v7" type="Informative" tooltip="Gäller endast Campaign Classic v7"
+feature: Query Editor, Workflows
 exl-id: 23bccb48-60ab-46c9-be26-2fa35243d61e
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '251'
+source-wordcount: '258'
 ht-degree: 4%
 
 ---
@@ -20,15 +20,15 @@ I det här exemplet vill vi köra en fråga för att hitta alla e-postdomäner s
 
 * Vilken tabell måste markeras?
 
-   mottagartabellen (nms:mottagare)
+  mottagartabellen (nms:mottagare)
 
 * Fält som ska markeras i utdatakolumner?
 
-   E-postdomän och primärnyckel (med antal)
+  E-postdomän och primärnyckel (med antal)
 
 * Datagruppering?
 
-   Baserat på en e-postdomän med ett antal primärnycklar över 30. Denna operation genomförs med **[!UICONTROL Group by + Having]** alternativ. **[!UICONTROL Group by + Having]** I kan du gruppera data (&quot;gruppera efter&quot;) och göra en markering av grupperade data (&quot;ha&quot;).
+  Baserat på en e-postdomän med ett antal primärnycklar över 30. Denna operation genomförs med **[!UICONTROL Group by + Having]** alternativ. **[!UICONTROL Group by + Having]** I kan du gruppera data (&quot;gruppera efter&quot;) och göra en markering av grupperade data (&quot;ha&quot;).
 
 Så här skapar du det här exemplet:
 
@@ -57,11 +57,11 @@ Så här skapar du det här exemplet:
 
 1. I **[!UICONTROL Grouping condition]** anger du ett primärnyckelantal som är större än 30 eftersom vi bara vill att e-postdomäner som är avsedda mer än 30 gånger ska returneras som resultat.
 
-   Det här fönstret visas när **[!UICONTROL Manage groupings (GROUP BY + HAVING)]** kryssrutan har markerats: Det är här grupperingsresultatet filtreras (HAVING).
+   Det här fönstret visas när **[!UICONTROL Manage groupings (GROUP BY + HAVING)]** -rutan har markerats: det är här grupperingsresultatet filtreras (HAVING).
 
    ![](assets/query_editor_blocklist_05.png)
 
 1. I **[!UICONTROL Data formatting]** fönster, klicka **[!UICONTROL Next]**: ingen formatering behövs här.
-1. Klicka på **[!UICONTROL Launch data preview]**: Här returneras tre olika e-postdomäner som är riktade över 30 gånger.
+1. Klicka på **[!UICONTROL Launch data preview]**: här returneras tre olika e-postdomäner som är riktade över 30 gånger.
 
    ![](assets/query_editor_blocklist_06.png)

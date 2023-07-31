@@ -1,15 +1,16 @@
 ---
 product: campaign
 title: Konfigurera åtkomst till Netezza
-description: Lär dig hur du konfigurerar åtkomst till Netezza i FDA
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+description: Lär dig konfigurera åtkomst till Netezza i FDA
+feature: Installation, Federated Data Access
+badge-v7-only: label="v7" type="Informative" tooltip="Gäller endast Campaign Classic v7"
 audience: platform
 content-type: reference
 topic-tags: connectors
 exl-id: b148d34b-4060-4c54-9cb2-9e712a7c17d7
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '374'
+source-wordcount: '381'
 ht-degree: 0%
 
 ---
@@ -25,50 +26,50 @@ Använd kampanj [Åtkomst till federerade data](../../installation/using/about-f
 
 ## Netezza-konfiguration {#netezza-config}
 
-För att ansluta till en extern Netezza-databas i FDA krävs ytterligare konfigurationer nedan på Adobe Campaign-servern:
+För anslutning till en extern Netezza-databas i FDA krävs ytterligare konfigurationer nedan på Adobe Campaign-servern:
 
 1. Installera ODBC-drivrutinerna för Netezza enligt det operativsystem du använder:
 
-   * **nz-linuxclient-v7.2.0.0.tar.gz** för Linux. Markera den mapp som motsvarar ditt operativsystem (Linux eller Linux64) och starta uppackningskommandot. Du kan lämna installationen som ska utföras i den databas som föreslås som standard: &quot;/usr/local/nz&quot;.
-   * **nz-winclient-v7.2.0.0.zip** för Windows. Zippa upp filen och starta det körbara skript som hör till ditt operativsystem: nzodbcsetup.exe eller nzodbcsetup64.exe. Följ instruktionerna i guiden för att slutföra installationen av drivrutinerna.
+   * **nz-linuxclient-v7.2.0.0.tar.gz** för Linux. Markera den mapp som motsvarar ditt operativsystem (Linux eller Linux64) och starta uppackningskommandot. Du kan lämna installationen som ska utföras i den databas som föreslås som standard: /usr/local/nz.
+   * **nz-winclient-v7.2.0.0.zip** för Windows. Zippa upp filen och starta det körbara skript som hör till operativsystemet: nzodbcsetup.exe eller nzodbcsetup64.exe. Följ instruktionerna i guiden för att slutföra installationen av drivrutinerna.
 
 1. Konfigurera ODBC-drivrutinen. Konfigurationen kan utföras i standardfilerna: **/etc/odbc.ini** för allmänna parametrar och **/etc/odbcinst.ini** för att deklarera drivrutiner.
 
    * **/etc/odbc.ini**
 
-      ```
-      [ODBC]
-      InstallDir=/etc/
-      ```
+     ```
+     [ODBC]
+     InstallDir=/etc/
+     ```
 
-      &quot;InstallDir&quot; motsvarar platsen för filen odbcinst.ini.
+     &quot;InstallDir&quot; motsvarar platsen för filen odbcinst.ini.
 
    * **/etc/odbcinst.ini**
 
-      ```
-      [ODBC Drivers]
-      NetezzaSQL = Installed
-      
-      [NetezzaSQL]
-      Driver           = /usr/local/nz/lib/libnzsqlodbc3.so
-      Setup            = /usr/local/nz/lib/libnzsqlodbc3.so
-      APILevel         = 1
-      ConnectFunctions = YYN
-      Description      = Netezza ODBC driver
-      DriverODBCVer    = 03.51
-      DebugLogging     = false
-      LogPath          = /tmp
-      UnicodeTranslationOption = utf8
-      CharacterTranslationOption = all
-      PreFetch         = 256
-      Socket           = 16384
-      ```
+     ```
+     [ODBC Drivers]
+     NetezzaSQL = Installed
+     
+     [NetezzaSQL]
+     Driver           = /usr/local/nz/lib/libnzsqlodbc3.so
+     Setup            = /usr/local/nz/lib/libnzsqlodbc3.so
+     APILevel         = 1
+     ConnectFunctions = YYN
+     Description      = Netezza ODBC driver
+     DriverODBCVer    = 03.51
+     DebugLogging     = false
+     LogPath          = /tmp
+     UnicodeTranslationOption = utf8
+     CharacterTranslationOption = all
+     PreFetch         = 256
+     Socket           = 16384
+     ```
 
 1. Ange miljövariablerna för Adobe Campaign-servern:
 
    * **LD_LIBRARY_PATH**: /usr/local/nz/lib och /usr/local/nz/lib64. &quot;/usr/local/nz&quot; motsvarar den installationsdatabas som finns som standard när du installerar drivrutinerna. Här måste du ange vilken databas du har valt för installationen.
-   * **ODBCINI**: platsen för filen odbc.ini (till exempel /etc/odbc.ini).
-   * **NZ_ODBC_INI_PATH**: platsen för filen odbc.ini. Netezza kräver också den andra variabeln för att använda filen odbc.ini.
+   * **ODBCINI**: plats för filen odbc.ini (till exempel /etc/odbc.ini).
+   * **NZ_ODBC_INI_PATH**: plats för filen odbc.ini. Netezza kräver också den andra variabeln för att kunna använda filen odbc.ini.
 
 ## Netezza external account {#netezza-external}
 
@@ -78,11 +79,11 @@ Med det externa Netezza-kontot kan du ansluta Campaign-instansen till din extern
 
 1. Klicka **[!UICONTROL New]** och markera **[!UICONTROL External database]** as **[!UICONTROL Type]**.
 
-1. Så här konfigurerar du **[!UICONTROL Netezza]** externt konto måste du ange:
+1. Konfigurera **[!UICONTROL Netezza]** externt konto måste du ange:
 
    * **[!UICONTROL Type]**: Netezza
 
-   * **[!UICONTROL Server]**: NETEZZA-serverns URL
+   * **[!UICONTROL Server]**: URL för Netezza-servern
 
    * **[!UICONTROL Account]**: Användarens namn
 

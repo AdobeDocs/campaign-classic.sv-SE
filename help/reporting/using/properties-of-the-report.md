@@ -2,14 +2,14 @@
 product: campaign
 title: Rapportens egenskaper
 description: Läs mer om inställningarna för rapportegenskaper
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
-feature: Reporting
+badge-v7: label="v7" type="Informative" tooltip="Gäller Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Gäller även Campaign v8"
+feature: Reporting, Monitoring
 exl-id: dfa9d329-1086-4f6d-9d03-df159cad5495
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '429'
-ht-degree: 1%
+source-wordcount: '441'
+ht-degree: 2%
 
 ---
 
@@ -25,15 +25,15 @@ Allmänna egenskaper beskrivs nedan. Avancerade funktioner som konfigurerats i *
 
 ## Allmänna egenskaper {#overall-properties}
 
-I **[!UICONTROL General]** på fliken med rapportegenskaperna kan du redigera inställningarna nedan:
+I **[!UICONTROL General]** på fliken med rapportegenskaperna kan du redigera inställningarna som listas nedan:
 
 * Rapportens etikett och interna namn. The **[!UICONTROL Internal name]** används i rapportens slutliga URL. Den ska inte ändras efter att rapporten har skapats.
 
 * Rapporten **Mapp** väljs när rapporten skapas. Det bästa sättet är att skapa en dedikerad mapp för anpassade rapporter så att de inte blandas med [inbyggda rapporter](../../reporting/using/about-campaign-built-in-reports.md).
 
-* The **Lagring** väljs när rapporten skapas. Klicka på knappen **[!UICONTROL Select link]** ikonen till höger om **[!UICONTROL Document type]** fält.
+* The **Lagring** väljs när rapporten skapas. Om du vill ändra datatabellen i rapporten klickar du på **[!UICONTROL Select link]** ikonen till höger om **[!UICONTROL Document type]** fält.
 
-   ![](assets/s_ncs_advuser_report_properties_02.png)
+  ![](assets/s_ncs_advuser_report_properties_02.png)
 
 * The **Åtkomstkontroll** parametrar. Dessa inställningar beskrivs nedan.
 
@@ -47,14 +47,14 @@ Möjliga alternativ är:
 
 * **[!UICONTROL Anonymous access]**: det här alternativet ger obegränsad åtkomst till rapporten. Det går dock inte att manipulera något.
 
-   Behörigheter för den tekniska operatorn&quot;webbapp&quot; används för att visa rapportelement. Läs mer [i det här avsnittet](../../platform/using/access-management-operators.md).
+  Behörigheter för den tekniska operatorn&quot;webbapp&quot; används för att visa rapportelement. Läs mer [i det här avsnittet](../../platform/using/access-management-operators.md).
 
-* **[!UICONTROL Access control]**: Med det här alternativet kan Adobe Campaign-operatörer få åtkomst till det när de har loggat in.
-* **[!UICONTROL Specific account]**: Med det här alternativet kan du köra rapporten med rättigheterna för den operator som valts i **[!UICONTROL Operator]** fält.
+* **[!UICONTROL Access control]**: Med det här alternativet kan Adobe Campaign-operatorer få åtkomst till det när de har loggat in.
+* **[!UICONTROL Specific account]**: det här alternativet gör att du kan köra rapporten med rättigheterna för den operator som valts i **[!UICONTROL Operator]** fält.
 
 ## Översätt din rapport {#report-localization}
 
-Du kan konfigurera de språk som du vill att rapporten ska översättas till. Om du vill göra det klickar du på **[!UICONTROL Localization]** -fliken.
+Du kan konfigurera de språk som du vill att rapporten ska översättas till. Klicka på **[!UICONTROL Localization]** -fliken.
 
 ![](assets/s_ncs_advuser_report_properties_06.png)
 

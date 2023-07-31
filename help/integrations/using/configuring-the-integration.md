@@ -2,15 +2,16 @@
 product: campaign
 title: Konfigurera Adobe Experience Manager-integrering
 description: Lär dig hur du konfigurerar Campaign-AEM-integrering
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
+feature: Experience Manager Integration
+badge-v7: label="v7" type="Informative" tooltip="Gäller Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Gäller även Campaign v8"
 audience: integrations
 content-type: reference
 exl-id: 54ee88b2-e646-4fb9-abec-957f0096f15f
-source-git-commit: acfe0c4139671fc3df69ff434ba307aaaaf70676
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '528'
-ht-degree: 3%
+source-wordcount: '540'
+ht-degree: 4%
 
 ---
 
@@ -26,7 +27,7 @@ Så här startar du konfigurationen i Adobe Campaign:
 
 1. [Installera AEM integreringspaket i Adobe Campaign](#install-the-aem-integration-package-in-adobe-campaign)
 1. [Konfigurera det externa kontot](#configure-the-external-account)
-1. [Konfigurera AEM](#configure-aem-resources-filtering)
+1. [Konfigurera AEM resursfiltrering](#configure-aem-resources-filtering)
 
 För avancerade konfigurationer som hantering av personaliseringsfält och -block. Se Adobe Experience Manager [dokumentation](https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/campaignonpremise.html).
 
@@ -48,13 +49,13 @@ Du måste först installera **[!UICONTROL AEM integration]** paket.
 
 ### Konfigurera säkerhetszonen för AEM {#configure-the-security-zone-for-aem-operator}
 
-The **[!UICONTROL AEM integration]** paketet anger **[!UICONTROL aemserver]** -operator i Campaign. Den här operatorn används för att ansluta Adobe Experience Manager-servern till Adobe Campaign.
+The **[!UICONTROL AEM integration]** paketet anger **[!UICONTROL aemserver]** i Campaign. Operatorn används för att ansluta Adobe Experience Manager-servern till Adobe Campaign.
 
 Du måste konfigurera en säkerhetszon så att den här operatorn kan ansluta till Adobe Campaign via Adobe Experience Manager.
 
 >[!CAUTION]
 >
->Vi rekommenderar starkt att du skapar en säkerhetszon som är dedikerad till AEM för att undvika säkerhetsproblem. Mer information finns i installationsprogrammet [guide](../../installation/using/security-zones.md).
+>Vi rekommenderar starkt att du skapar en säkerhetszon som är dedikerad till AEM för att undvika säkerhetsproblem. Mer information finns i installationsprogrammet [stödlinje](../../installation/using/security-zones.md).
 
 Om din Campaign-instans hanteras av Adobe kontaktar du [Adobe kundtjänst](https://helpx.adobe.com/se/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) team. Om du använder Campaign lokalt följer du stegen nedan:
 
@@ -90,11 +91,11 @@ Så här konfigurerar du det AEM externa kontot:
 1. Kontrollera **[!UICONTROL Enabled]** box.
 1. Klicka på knappen **[!UICONTROL Save]**.
 
-### Konfigurera AEM {#configure-aem-resources-filtering}
+### Konfigurera AEM resursfiltrering {#configure-aem-resources-filtering}
 
 The **AEMResourceTypeFilter** används för att filtrera olika typer av Experience Manager-resurser som kan användas i Adobe Campaign. På så sätt kan Adobe Campaign hämta innehåll i Experience Manager som är särskilt utformat för att endast användas i Adobe Campaign.
 
-Om du vill kontrollera om **[!UICONTROL AEMResourceTypeFilter]** är konfigurerat:
+Kontrollera om **[!UICONTROL AEMResourceTypeFilter]** är konfigurerat:
 
 1. Klicka på knappen **[!UICONTROL Explorer]**.
 1. Välj **[!UICONTROL Administration > Platform > Options]**.
@@ -125,6 +126,6 @@ Så här startar du konfigurationen i Adobe Experience Manager:
 
    Om du vill veta hur du kopplar ihop båda lösningarna via Cloud Services kan du läsa Adobe Experience Manager [dokumentation](https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/campaignonpremise.html#ConfiguringAdobeExperienceManager) .
 
-1. Konfigurera **Tjänsten Externalizer**.
+1. Konfigurera **Externalizer-tjänst**.
 
    Läs mer om hur du konfigurerar den i Adobe Experience Manager [dokumentation](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/externalizer.html).

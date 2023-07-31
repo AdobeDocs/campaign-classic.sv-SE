@@ -2,15 +2,16 @@
 product: campaign
 title: Konfigurationsfaser
 description: Konfigurationsfaser
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+feature: Configuration
+badge-v7-only: label="v7" type="Informative" tooltip="Gäller endast Campaign Classic v7"
 audience: configuration
 content-type: reference
 topic-tags: setting-up-web-tracking
 exl-id: a5ae0b61-3377-46d9-a327-6c897eeda770
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '234'
-ht-degree: 2%
+source-wordcount: '241'
+ht-degree: 3%
 
 ---
 
@@ -20,8 +21,8 @@ Den grundläggande principen är att infoga webbspårningstaggar på vissa sidor
 
 Det finns två typer av taggar:
 
-* **WEB**: den här taggen anger om sidan har besöktes,
-* **TRANSAKTION**: fungerar som en webbtagg, men med möjlighet att lägga till information om den genererade affärsvolymen, t.ex. (transaktionsbelopp, antal inköpta artiklar osv.).
+* **WEB**: den här taggen talar om för dig om sidan har besökts,
+* **TRANSAKTION**: fungerar som en webbtagg, men med möjlighet att lägga till information om den genererade affärsvolymen, t.ex. (transaktionsbelopp, antal inköpta objekt osv.).
 
 Använd följande steg för att konfigurera de här taggarna:
 
@@ -30,7 +31,7 @@ Använd följande steg för att konfigurera de här taggarna:
 1. Skapa webbspårningstaggar. Det finns två sätt att göra detta:
 
    * Infoga de URL:er som motsvarar dessa sidor på din Adobe Campaign-plattform och generera och extrahera sedan de associerade webbspårningstaggarna (från **[!UICONTROL Campaign execution>Resources>Web tracking tags]** klientkonsolens nod).
-   * Skapa webbspårningstaggarna själv i läget&quot;när du skapar&quot;: URL:erna som motsvarar dessa sidor infogas automatiskt på din Adobe Campaign-plattform.
+   * Skapa webbspårningstaggarna själv i läget&quot;när de skapas&quot;: URL:erna som motsvarar de här sidorna infogas automatiskt på din Adobe Campaign-plattform.
 
 1. Lägg till dessa taggar statiskt eller dynamiskt på de sidor som du vill spåra.
 

@@ -2,13 +2,13 @@
 product: campaign
 title: Åtgärder på rapporter
 description: Åtgärder på rapporter
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
-feature: Reporting
+feature: Reporting, Monitoring
+badge-v7: label="v7" type="Informative" tooltip="Gäller Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Gäller även Campaign v8"
 exl-id: b30cdeaf-4ad6-473d-bdbc-91984755b609
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '543'
+source-wordcount: '555'
 ht-degree: 3%
 
 ---
@@ -33,9 +33,9 @@ Välj det format som du vill exportera rapporten till i listrutan. (.xls, .pdf e
 
 När en rapport innehåller flera sidor måste du upprepa åtgärden för varje sida.
 
-Du kan konfigurera rapporten så att den exporteras i PDF-, Excel- eller OpenOffice-format. Öppna Adobe Campaign Utforskaren och välj den aktuella rapporten.
+Du kan konfigurera rapporten så att den exporteras i PDF-, Excel- eller OpenOffice-format. Öppna Adobe Campaign Utforskaren och välj rapporten.
 
-Exportalternativen nås via **[!UICONTROL Page]** verksamheter i rapporten, i **[!UICONTROL Advanced]** -fliken.
+Du hittar exportalternativen via **[!UICONTROL Page]** verksamheter i rapporten, i **[!UICONTROL Advanced]** -fliken.
 
 Ändra inställningarna för **[!UICONTROL Paper]** och **[!UICONTROL Margins]** för att passa dina behov. Du kan också tillåta export av en sida endast i PDF-format. Om du vill göra det avmarkerar du **[!UICONTROL Activate OpenOffice/Microsoft Excel export]** alternativ.
 
@@ -47,16 +47,16 @@ För **[!UICONTROL List with group]** typrapporter som ska exporteras till Excel
 
 * Rapporterna får inte innehålla tomma rader.
 
-   ![](assets/export_limitations_remove_empty_line.png)
+  ![](assets/export_limitations_remove_empty_line.png)
 
 * Förklaringen till listan måste vara dold.
 
-   ![](assets/export_limitations_hide_label.png)
+  ![](assets/export_limitations_hide_label.png)
 
-* Rapporterna behöver inte använda formatering som definierats på cellnivå. Det är att föredra att använda **[!UICONTROL Form rendering]** för att definiera formatet för cellerna i tabellen. The **[!UICONTROL Form rendering]** kan nås via **[!UICONTROL Administration > Configuration > Form rendering]**.
+* Rapporterna behöver inte använda specifik formatering som definierats på cellnivå. Rekommenderas för användning **[!UICONTROL Form rendering]** för att definiera formatet för cellerna i tabellen. The **[!UICONTROL Form rendering]** kan nås via **[!UICONTROL Administration > Configuration > Form rendering]**.
 * Vi rekommenderar inte att du infogar HTML innehåll.
 * Om en rapport innehåller flera tabeller, diagram osv. textelement exporteras de ena under de andra.
-* Du kan tvinga radmatningstecknen i celler: den här konfigurationen sparas i Excel. Mer information om detta finns i [det här avsnittet](../../reporting/using/creating-a-table.md#defining-cell-format).
+* Du kan tvinga vagnreturen i celler: den här konfigurationen behålls i Excel. Mer information om detta finns i [det här avsnittet](../../reporting/using/creating-a-table.md#defining-cell-format).
 
 ### Skjut upp exporten {#postpone-the-export}
 
@@ -72,7 +72,7 @@ Om du vill aktivera exporten och börja konvertera till PDF använder du **docum
 
 När du exporterar vissa stora rapporter kan minnesallokeringsfel uppstå.
 
-I vissa instanser är standardvärdet **maxMB** (**SKMS** för värdbaserade instanser) av JavaScript som anges i **serverConf.xml** konfigurationsfilen är inställd på 64 MB. Om du råkar ut för otillräckligt minne när du exporterar en rapport kan det rekommenderas att du ökar den här siffran till 512 MB:
+I vissa instanser är standardvärdet **maxMB** (**SKISSER** för värdbaserade instanser) av JavaScript som anges i **serverConf.xml** konfigurationsfilen är inställd på 64 MB. Om du råkar ut för otillräckligt minne när du exporterar en rapport kan det rekommenderas att du ökar den här siffran till 512 MB:
 
 ```
 <javaScript maxMB="512" stackSizeKB="8"/>
@@ -86,7 +86,7 @@ Läs mer om **nlserver** tjänst, se [det här avsnittet](../../production/using
 
 ## Skriva ut en rapport {#printing-a-report}
 
-Du kan skriva ut rapporten: Om du vill göra det klickar du på skrivarikonen: Då öppnas dialogrutan.
+Du kan skriva ut rapporten genom att klicka på skrivarikonen. Då öppnas dialogrutan.
 
 Du får ett bättre resultat om du redigerar utskriftsalternativen i Utforskaren och väljer **[!UICONTROL Print background colors and images]**.
 

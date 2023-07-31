@@ -2,11 +2,12 @@
 product: campaign
 title: Databasmappning
 description: Databasmappning
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+feature: Configuration, Instance Settings
+badge-v7-only: label="v7" type="Informative" tooltip="Gäller endast Campaign Classic v7"
 exl-id: 728b509f-2755-48df-8b12-449b7044e317
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '1974'
+source-wordcount: '1981'
 ht-degree: 0%
 
 ---
@@ -46,19 +47,19 @@ Namnreglerna för SQL är följande:
 
 * tabell: sammanfogning av schemanamnrymden och namnet
 
-   I det här exemplet anges namnet på tabellen via huvudelementet i schemat i **sqltable** attribute:
+  I det här exemplet anges namnet på tabellen via huvudelementet i schemat i **sqltable** attribute:
 
-   ```
-   <element name="recipient" sqltable="CusRecipient">
-   ```
+  ```
+  <element name="recipient" sqltable="CusRecipient">
+  ```
 
-* fält: namnet på elementet föregås av ett prefix som definierats enligt typ (&#39;i&#39; för heltal, &#39;d&#39; för double, &#39;s&#39; för sträng, &#39;ts&#39; för datum, osv.)
+* field: name of the element before by a prefix defined as by type (&#39;i&#39; for integer, &#39;d&#39; for double, &#39;s&#39; for string, &#39;ts&#39; for dates, etc.)
 
-   Fältnamnet anges via **sqlname** attribut för varje typ **`<attribute>`** och **`<element>`**:
+  Fältnamnet anges via **sqlname** attribut för varje typ **`<attribute>`** och **`<element>`**:
 
-   ```
-   <attribute desc="Email address of recipient" label="Email" length="80" name="email" sqlname="sEmail" type="string"/> 
-   ```
+  ```
+  <attribute desc="Email address of recipient" label="Email" length="80" name="email" sqlname="sEmail" type="string"/> 
+  ```
 
 >[!NOTE]
 >
@@ -85,21 +86,21 @@ Som standard används alla typer **`<attribute>`** och **`<element>`** -elemente
 
 Om du vill fylla i ett fält i XML måste du lägga till **xml** ett attribut med värdet &quot;true&quot; för det berörda elementet.
 
-**Exempel**: Här är två exempel på hur XML-fält används.
+**Exempel**: här är två exempel på hur XML-fält används.
 
 * Flerradskommentarfält:
 
-   ```
-   <element name="comment" xml="true" type="memo" label="Comment"/>
-   ```
+  ```
+  <element name="comment" xml="true" type="memo" label="Comment"/>
+  ```
 
 * Databeskrivning i HTML-format:
 
-   ```
-   <element name="description" xml="true" type="html" label="Description"/>
-   ```
+  ```
+  <element name="description" xml="true" type="html" label="Description"/>
+  ```
 
-   Med typen html kan du lagra HTML-innehåll i en CDATA-tagg och visa en speciell HTML edit check i Adobe Campaign klientgränssnitt.
+  Med typen html kan du lagra HTML-innehåll i en CDATA-tagg och visa en speciell HTML edit check i Adobe Campaign klientgränssnitt.
 
 Med hjälp av XML-fält kan du lägga till fält utan att behöva ändra databasens fysiska struktur. En annan fördel är att du använder mindre resurser (storlek som tilldelas SQL-fält, gräns för antalet fält per tabell osv.).
 
@@ -137,40 +138,40 @@ Indexen följer följande regler:
 
 * Lägga till ett index till e-postadressen och staden:
 
-   ```
-   <srcSchema name="recipient" namespace="cus">
-     <element name="recipient">
-       <dbindex name="email">
-         <keyfield xpath="@email"/> 
-         <keyfield xpath="location/@city"/> 
-       </dbindex>
-   
-       <attribute name="email" type="string" length="80" label="Email" desc="Email address of recipient"/>
-       <element name="location" label="Location">
-         <attribute name="city" type="string" length="50" label="City" userEnum="city"/>
-       </element>
-     </element>
-   </srcSchema>
-   ```
+  ```
+  <srcSchema name="recipient" namespace="cus">
+    <element name="recipient">
+      <dbindex name="email">
+        <keyfield xpath="@email"/> 
+        <keyfield xpath="location/@city"/> 
+      </dbindex>
+  
+      <attribute name="email" type="string" length="80" label="Email" desc="Email address of recipient"/>
+      <element name="location" label="Location">
+        <attribute name="city" type="string" length="50" label="City" userEnum="city"/>
+      </element>
+    </element>
+  </srcSchema>
+  ```
 
 * Lägga till ett unikt index i namnfältet&quot;id&quot;:
 
-   ```
-   <srcSchema name="recipient" namespace="cus">
-     <element name="recipient">
-       <dbindex name="id" unique="true">
-         <keyfield xpath="@id"/> 
-       </dbindex>
-   
-       <dbindex name="email">
-         <keyfield xpath="@email"/> 
-       </dbindex>
-   
-       <attribute name="id" type="long" label="Identifier"/>
-       <attribute name="email" type="string" length="80" label="Email" desc="Email address of recipient"/>
-     </element>
-   </srcSchema>
-   ```
+  ```
+  <srcSchema name="recipient" namespace="cus">
+    <element name="recipient">
+      <dbindex name="id" unique="true">
+        <keyfield xpath="@id"/> 
+      </dbindex>
+  
+      <dbindex name="email">
+        <keyfield xpath="@email"/> 
+      </dbindex>
+  
+      <attribute name="id" type="long" label="Identifier"/>
+      <attribute name="email" type="string" length="80" label="Email" desc="Email address of recipient"/>
+    </element>
+  </srcSchema>
+  ```
 
 ## Nyckelhantering {#management-of-keys}
 
@@ -204,86 +205,86 @@ Tangenter följer följande regler:
 
 * Lägga till en nyckel till e-postadressen och staden:
 
-   ```
-   <srcSchema name="recipient" namespace="cus">
-     <element name="recipient">
-       <key name="email">
-         <keyfield xpath="@email"/> 
-         <keyfield xpath="location/@city"/> 
-       </key>
-   
-       <attribute name="email" type="string" length="80" label="Email" desc="Email address of recipient"/>
-       <element name="location" label="Location">
-         <attribute name="city" type="string" length="50" label="City" userEnum="city"/>
-       </element>
-     </element>
-   </srcSchema>
-   ```
+  ```
+  <srcSchema name="recipient" namespace="cus">
+    <element name="recipient">
+      <key name="email">
+        <keyfield xpath="@email"/> 
+        <keyfield xpath="location/@city"/> 
+      </key>
+  
+      <attribute name="email" type="string" length="80" label="Email" desc="Email address of recipient"/>
+      <element name="location" label="Location">
+        <attribute name="city" type="string" length="50" label="City" userEnum="city"/>
+      </element>
+    </element>
+  </srcSchema>
+  ```
 
-   Schemat som genererats:
+  Schemat som genererats:
 
-   ```
-   <schema mappingType="sql" name="recipient" namespace="cus" xtkschema="xtk:schema">  
-     <element name="recipient" sqltable="CusRecipient">    
-      <dbindex name="email" unique="true">      
-        <keyfield xpath="@email"/>      
-        <keyfield xpath="location/@city"/>    
-      </dbindex>    
-   
-      <key name="email">      
+  ```
+  <schema mappingType="sql" name="recipient" namespace="cus" xtkschema="xtk:schema">  
+    <element name="recipient" sqltable="CusRecipient">    
+     <dbindex name="email" unique="true">      
        <keyfield xpath="@email"/>      
        <keyfield xpath="location/@city"/>    
-      </key>    
-   
-      <attribute desc="Email address of recipient" label="Email" length="80" name="email" sqlname="sEmail" type="string"/>    
-      <element label="Location" name="location">      
-        <attribute label="City" length="50" name="city" sqlname="sCity" type="string" userEnum="city"/>    
-      </element>  
-     </element>
-   </schema>
-   ```
+     </dbindex>    
+  
+     <key name="email">      
+      <keyfield xpath="@email"/>      
+      <keyfield xpath="location/@city"/>    
+     </key>    
+  
+     <attribute desc="Email address of recipient" label="Email" length="80" name="email" sqlname="sEmail" type="string"/>    
+     <element label="Location" name="location">      
+       <attribute label="City" length="50" name="city" sqlname="sCity" type="string" userEnum="city"/>    
+     </element>  
+    </element>
+  </schema>
+  ```
 
 * Lägga till en primär eller intern nyckel i namnfältet&quot;id&quot;:
 
-   ```
-   <srcSchema name="recipient" namespace="cus">
-     <element name="recipient">
-       <key name="id" internal="true">
-         <keyfield xpath="@id"/> 
-       </key>
-   
-       <key name="email" noDbIndex="true">
-         <keyfield xpath="@email"/> 
-       </key>
-   
-       <attribute name="id" type="long" label="Identifier"/>
-       <attribute name="email" type="string" length="80" label="Email" desc="Email address of recipient"/>
-     </element>
-   </srcSchema>
-   ```
+  ```
+  <srcSchema name="recipient" namespace="cus">
+    <element name="recipient">
+      <key name="id" internal="true">
+        <keyfield xpath="@id"/> 
+      </key>
+  
+      <key name="email" noDbIndex="true">
+        <keyfield xpath="@email"/> 
+      </key>
+  
+      <attribute name="id" type="long" label="Identifier"/>
+      <attribute name="email" type="string" length="80" label="Email" desc="Email address of recipient"/>
+    </element>
+  </srcSchema>
+  ```
 
-   Schemat som genererats:
+  Schemat som genererats:
 
-   ```
-   <schema mappingType="sql" name="recipient" namespace="cus" xtkschema="xtk:schema">  
-     <element name="recipient" sqltable="CusRecipient">    
-       <key name="email">      
-         <keyfield xpath="@email"/>    
-       </key>    
-   
-       <dbindex name="id" unique="true">      
-         <keyfield xpath="@id"/>    
-       </dbindex>    
-   
-       <key internal="true" name="id">      
+  ```
+  <schema mappingType="sql" name="recipient" namespace="cus" xtkschema="xtk:schema">  
+    <element name="recipient" sqltable="CusRecipient">    
+      <key name="email">      
+        <keyfield xpath="@email"/>    
+      </key>    
+  
+      <dbindex name="id" unique="true">      
         <keyfield xpath="@id"/>    
-       </key>    
-   
-       <attribute label="Identifier" name="id" sqlname="iRecipientId" type="long"/>    
-       <attribute desc="Email address of recipient" label="Email" length="80" name="email" sqlname="sEmail" type="string"/>  
-     </element>
-   </schema>
-   ```
+      </dbindex>    
+  
+      <key internal="true" name="id">      
+       <keyfield xpath="@id"/>    
+      </key>    
+  
+      <attribute label="Identifier" name="id" sqlname="iRecipientId" type="long"/>    
+      <attribute desc="Email address of recipient" label="Email" length="80" name="email" sqlname="sEmail" type="string"/>  
+    </element>
+  </schema>
+  ```
 
 ### Automatisk inkrementell nyckel {#auto-incremental-key}
 
@@ -345,7 +346,7 @@ Förutom definitionen av nyckeln och dess index har ett numeriskt fält med namn
 
 En länk beskriver kopplingen mellan en tabell och en annan.
 
-De olika sammanslutningarna (så kallade kardinaliteter) är följande:
+Följande typer av föreningar (så kallade kardinaliteter):
 
 * Kardinalitet 1-1: en förekomst av källtabellen kan ha högst en motsvarande förekomst av måltabellen.
 * Kardinalitet 1-N: en förekomst av källtabellen kan ha flera motsvarande förekomster av måltabellen, men en förekomst av måltabellen kan ha högst en motsvarande förekomst av källtabellen.
@@ -380,27 +381,27 @@ Länkarna följer följande regler:
 
 * Definitionen av en länk anges på en **link**-type **`<element>`** med följande attribut:
 
-   * **name**: Namnet på länken från källtabellen.
+   * **name**: namn på länken från källtabellen,
    * **target**: målschemats namn,
    * **label**: länketikett,
-   * **revLink** (valfritt): Namn på omvänd länk från målschemat (dras automatiskt som standard).
-   * **integritet** (valfritt): referensintegritet för källtabellens förekomst till måltabellens förekomst. Möjliga värden är följande:
+   * **revLink** (valfritt): namn på omvänd länk från målschemat (avdraget automatiskt som standard),
+   * **integritet** (valfritt): referensintegritet för förekomsten av källtabellen till förekomsten av måltabellen. Möjliga värden är följande:
 
       * **define**: det är möjligt att ta bort källförekomsten om den inte längre refereras av en målförekomst,
-      * **normal**: Om du tar bort källförekomsten initieras nycklarna för länken till målförekomsten (standardläge), initierar den här typen av integritet alla sekundärnycklar.
-      * **egen**: Om du tar bort källförekomsten tas målförekomsten bort.
+      * **normal**: om du tar bort källförekomsten initieras nycklarna för länken till målförekomsten (standardläge), initierar den här typen av integritet alla sekundärnycklar,
+      * **egen**: om du tar bort källförekomsten tas målförekomsten bort,
       * **owncopy**: samma som **egen** (vid radering) eller dubblerar förekomsterna (vid dubblering),
       * **neutral**: gör ingenting.
-   * **revIntegrity** (valfritt): integritet i målschemat (valfritt, &quot;normal&quot; som standard),
-   * **revCardinality** (valfritt): med värdet &quot;single&quot; fylls kardinaliteten med typ 1-1 (1-N som standard).
-   * **externalJoin** (valfritt): tvingar det yttre hörnet
-   * **revExternalJoin** (valfritt): tvingar det yttre hörnet på den omvända länken
 
+   * **revIntegrity** (valfritt): integritet i målschemat (valfritt, &quot;normal&quot; som standard),
+   * **revCardinality** (valfritt): med värdet &quot;single&quot; fylls kardinaliteten med typen 1-1 (1-N som standard).
+   * **externalJoin** (valfritt): tvingar den yttre kopplingen
+   * **revExternalJoin** (valfritt): tvingar det yttre hörnet på den omvända länken
 
 * En länk refererar till ett eller flera fält från källtabellen till måltabellen. Fälten som utgör kopplingen ( `<join>`  -element) behöver inte fyllas i eftersom de automatiskt dras av som standard med målschemats interna nyckel.
 * Ett index läggs automatiskt till i länkens sekundärnyckel i det utökade schemat.
 * En länk består av två halvlänkar, där den första deklareras från källschemat och den andra skapas automatiskt i målschemats utökade schema.
-* Ett hörn kan vara ett yttre hörn om **externalJoin** -attributet läggs till med värdet &quot;true&quot; (stöds i PostgreSQL).
+* En join kan vara en yttre join om **externalJoin** -attributet läggs till, med värdet &quot;true&quot; (stöds i PostgreSQL).
 
 >[!NOTE]
 >
@@ -438,7 +439,7 @@ Schemat som genererats:
 
 Länkdefinitionen kompletteras av fälten som utgör kopplingen, dvs. primärnyckeln med XPath (&quot;@id&quot;) i målschemat och sekundärnyckeln med XPath (&quot;@company-id&quot;) i schemat.
 
-Sekundärnyckeln läggs automatiskt till i ett element som använder samma egenskaper som det associerade fältet i måltabellen, med följande namnkonvention: målschemats namn följt av namnet på det associerade fältet (&quot;företag-id&quot; i vårt exempel).
+Sekundärnyckeln läggs automatiskt till i ett element som använder samma egenskaper som det associerade fältet i måltabellen, med följande namnkonvention: namnet på målschemat följt av namnet på det associerade fältet (&quot;företag-id&quot; i vårt exempel).
 
 Utökat schema för målet (&quot;cus:company&quot;):
 
@@ -463,15 +464,15 @@ Utökat schema för målet (&quot;cus:company&quot;):
 
 En omvänd länk till tabellen&quot;cus:mottagare&quot; lades till med följande parametrar:
 
-* **name**: dras automatiskt från källschemats namn (kan framtvingas med attributet &quot;revLink&quot; i länkdefinitionen i källschemat)
+* **name**: dras automatiskt från namnet på källschemat (kan framtvingas med attributet &quot;revLink&quot; i länkdefinitionen i källschemat)
 * **revLink**: namn på omvänd länk
 * **target**: nyckel för länkat schema (&quot;cus:mottagare&quot;-schema)
 * **obunden**: länken deklareras som ett samlingselement för en 1-N-kardinalitet (som standard)
-* **integritet**: &quot;define&quot; som standard (kan framtvingas med attributet &quot;revIntegrity&quot; i länkdefinitionen i källschemat).
+* **integritet**:&quot;define&quot; som standard (kan framtvingas med attributet&quot;revIntegrity&quot; i länkdefinitionen i källschemat).
 
 ### Exempel 2 {#example-2}
 
-I det här exemplet deklarerar vi en länk till schematabellen &quot;nms:address&quot;. Kopplingen är en yttre koppling och fylls i explicit med mottagarens e-postadress och fältet &quot;@address&quot; i den länkade tabellen (&quot;nms:address&quot;).
+I det här exemplet deklarerar vi en länk till schematabellen &quot;nms:address&quot;. Kopplingen är en yttre koppling och fylls i explicit med mottagarens e-postadress och fältet @address i den länkade tabellen (&quot;nms:address&quot;).
 
 ```
 <srcSchema name="recipient" namespace="cus">

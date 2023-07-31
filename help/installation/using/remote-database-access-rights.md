@@ -2,14 +2,15 @@
 product: campaign
 title: Behörigheter för åtkomst till en extern databas
 description: Behörigheter för extern databasåtkomst
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+feature: Installation, Instance Settings, Federated Data Access
+badge-v7-only: label="v7" type="Informative" tooltip="Gäller endast Campaign Classic v7"
 audience: platform
 content-type: reference
 topic-tags: connectors
 exl-id: 3d43010e-53f8-4aa2-a651-c422a02191fe
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '980'
+source-wordcount: '987'
 ht-degree: 1%
 
 ---
@@ -28,9 +29,9 @@ För det första, så att användaren kan utföra åtgärder på en extern datab
    * **bas** motsvarar namnet på den externa databasen.
    * **server** motsvarar namnet på den externa databasservern.
 
-      >[!NOTE]
-      >
-      >The **:base** -delen är valfri i Oraclet.
+     >[!NOTE]
+     >
+     >The **:base** -delen är valfri i Oraclet.
 
 1. Spara den namngivna höger och länka den till den valda användaren från **[!UICONTROL Administration > Access Management > Operators]** noden i Adobe Campaign Explorer.
 
@@ -40,7 +41,7 @@ I allmänhet är följande rättigheter nödvändiga:
 
 * **CONNECT**: anslutning till fjärrdatabasen,
 * **LÄS data**: skrivskyddad åtkomst till tabeller som innehåller kunddata,
-* **LÄS &#39;MetaData&#39;**: åtkomst till serverns datakataloger för att få fram tabellstrukturen,
+* **LÄS &#39;MetaData&#39;**: åtkomst till serverns datakataloger för att hämta tabellstrukturen,
 * **LADDA**: massinläsning i arbetstabeller (krävs vid arbete med samlingar och kopplingar),
 * **SKAPA/SLÄPP** for **TABELL/INDEX/FÖRFARANDE/FUNKTION** (endast för arbetsblad som genererats av Adobe Campaign),
 * **FÖRKLARA** (rekommenderas): för övervakning av prestanda vid problem,
@@ -64,16 +65,16 @@ Databasadministratören måste se till att dessa rättigheter matchar de rättig
 | **Åtkomst till klientdata** | VÄLJ BEHÖRIGHET FÖR (FRAMTIDA) TABELL(ER) ELLER VY(ER) | VÄLJ privilegium | VÄLJ ELLER VÄLJ ETT TABELLprivilegium | VÄLJ behörighet | VÄLJ privilegium | VÄLJ privilegium |
 | **Åtkomst till metadata** | VÄLJ BEHÖRIGHET FÖR INFORMATION_SCHEMA SCHEMA | VÄLJ privilegium | Ingen behörighet krävs för att använda programsatsen DESCRIBE | VISA DEFINITIONSTILLSTÅND | Inget privilegium krävs för att använda kommandot &quot;\d table&quot; | VÄLJ privilegium |
 
-|   | DB2 UDB | teradata | InfiniDB | sybase IQ/Sybase ASE | Netezza | AsterData |
+|   | DB2 UDB | Teradata | InfiniDB | Sybase IQ/Sybase ASE | Netezza | AsterData |
 |:-:|:-:|:-:|:-:|:-:|:-:|:-:|
 | **Ansluter till fjärrdatabas** | CONNECT | CONNECT privilegium | Skapa en användare som är bunden till en fjärrvärddator som har ALLA BEHÖRIGHETER | Ingen behörighet krävs för programsatsen CONNECT | Inget privilegium krävs | CONNECT privilegium |
-| **Skapa tabeller** | CREATETAB-utfärdare | CREATE TABLE or TABLE keyword | SKAPA privilegium | RESURSutfärdare och SKAPA behörighet | TABELLprivilegium | SKAPA privilegium |
+| **Skapa tabeller** | CREATETAB Authority | CREATE TABLE or TABLE keyword | SKAPA privilegium | RESURSutfärdare och SKAPA behörighet | TABELLprivilegium | SKAPA privilegium |
 | **Skapa index** | INDEX-privilegium | CREATE INDEX or INDEX keyword | INDEX-privilegium | RESURSutfärdare och SKAPA behörighet | INDEX-privilegium | SKAPA privilegium |
-| **Skapa funktioner** | IMPLICIT_SCHEMA-behörighet eller CREATEIN-behörighet | CREATE FUNCTION or FUNCTION, nyckelord | SKAPA ROUTINprivilegium | RESURSANSVARIG eller DBA-myndighet för Java-funktioner | BEHÖRIGHET FÖR FUNKTION | SKAPA FUNKTIONSHINDER |
-| **Skapa procedurer** | IMPLICIT_SCHEMA-behörighet eller CREATEIN-behörighet | SKAPA nyckelordet PROCEDUR eller PROCEDURE | SKAPA ROUTINprivilegium | RESURSANSVARIG | BEHÖRIGHET FÖR FÖRFARANDE | SKAPA FUNKTIONSHINDER |
+| **Skapa funktioner** | IMPLICIT_SCHEMA-behörighet eller CREATEIN-behörighet | CREATE FUNCTION or FUNCTION, nyckelord | SKAPA ROUTINprivilegium | RESURSANSVARIG eller DBA-myndighet för Java-funktioner | BEHÖRIGHET FÖR FUNKTION | SKAPA FUNKTIONSBEHÖRIGHET |
+| **Skapa procedurer** | IMPLICIT_SCHEMA-behörighet eller CREATEIN-behörighet | SKAPA nyckelordet PROCEDUR eller PROCEDURE | SKAPA ROUTINprivilegium | RESURSANSVARIG | BEHÖRIGHET FÖR FÖRFARANDE | SKAPA FUNKTIONSBEHÖRIGHET |
 | **Ta bort objekt (tabeller, index, funktioner, procedurer)** | DROPIN-behörighet eller BEHÖRIGHET för KONTROLL eller ägande av objektet | DROP &lt; object > eller objektrelaterat nyckelord | DROP-privilegium | Äger objektet eller DBA-utfärdaren | DROP-privilegium | Äga objektet |
 | **Övervaka körningar** | FÖRKLARING | Inga privilegier krävs för att använda EXPLAIN-programsatsen | VÄLJ privilegium | Endast en systemadministratör kan köra sp_showplan | Inga privilegier krävs för att använda EXPLAIN-programsatsen | Inga privilegier krävs för att använda EXPLAIN-programsatsen |
 | **Skriver data** | INFOGA- och UPPDATERINGSbehörigheter eller DATAACCESS-utfärdare | INSERT- och UPDATE-behörigheter | INSERT- och UPDATE-behörigheter | INFOGA- och UPPDATERINGSbehörigheter | INSERT- och UPDATE-behörigheter | INSERT- och UPDATE-behörigheter |
 | **Läsa in data i tabeller** | BELASTNINGSTILLSTÅND | SELECT- och INSERT-behörighet för att använda COPY TO- respektive COPY FROM-satser | FILE-privilegium | Var ägare av tabellen eller behörigheten ALTER. Beroende på alternativet -gl kan LOAD TABLE bara utföras om användaren har DBA-behörighet | VÄLJ OCH INFOGA BEHÖRIGHETER | VÄLJ OCH INFOGA BEHÖRIGHETER |
 | **Åtkomst till klientdata** | INSERT/UPDATE-behörighet eller DATAACCESS-utfärdare | VÄLJ privilegium | VÄLJ privilegium | VÄLJ behörighet | VÄLJ privilegium | VÄLJ privilegium |
-| **Åtkomst till metadata** | Ingen behörighet krävs för att använda programsatsen DESCRIBE | VISA privilegium | VÄLJ privilegium | Ingen behörighet krävs för att använda programsatsen DESCRIBE | Inget privilegium krävs för att använda kommandot &quot;\d table&quot; | Ingen behörighet krävs för att använda kommandot VISA |
+| **Åtkomst till metadata** | Ingen behörighet krävs för att använda programsatsen DESCRIBE | VISA privilegium | VÄLJ privilegium | Ingen behörighet krävs för programsatsen DESCRIBE | Inget privilegium krävs för att använda kommandot &quot;\d table&quot; | Ingen behörighet krävs för att använda kommandot VISA |

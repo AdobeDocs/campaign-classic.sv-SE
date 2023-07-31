@@ -2,16 +2,17 @@
 product: campaign
 title: Hantera en presentation av erbjudanden
 description: Hantera en presentation av erbjudanden
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
+feature: Interaction, Offers
+badge-v7: label="v7" type="Informative" tooltip="Gäller Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Gäller även Campaign v8"
 audience: interaction
 content-type: reference
 topic-tags: managing-an-offer-catalog
 exl-id: 6158ffaa-cb08-4f77-82b8-b3e5e1bf7fd7
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '995'
-ht-degree: 0%
+source-wordcount: '1007'
+ht-degree: 1%
 
 ---
 
@@ -43,7 +44,7 @@ Med interaktion kan ni styra flödet av erbjudandeförslag med hjälp av present
 
    ![](assets/offer_typology_004.png)
 
-1. I er erbjudandemiljö kan du referera till typologin i listrutan.
+1. I er erbjudandemiljö kan du referera till typologin med hjälp av listrutan.
 
    ![](assets/offer_typology_005.png)
 
@@ -53,7 +54,7 @@ Med interaktion kan ni styra flödet av erbjudandeförslag med hjälp av present
 
 De programvillkor som finns i **[!UICONTROL General]** kan du ange erbjudanden som presentationsregeln ska gälla för. För att kunna göra detta måste du skapa en fråga och välja de aktuella erbjudandena enligt beskrivningen nedan.
 
-1. I din typologiregel klickar du på **[!UICONTROL Edit the rule application conditions...]** för att skapa din fråga.
+1. Klicka på knappen **[!UICONTROL Edit the rule application conditions...]** för att skapa din fråga.
 
    ![](assets/offer_typology_006.png)
 
@@ -67,7 +68,7 @@ De programvillkor som finns i **[!UICONTROL General]** kan du ange erbjudanden s
 
 I **[!UICONTROL Offer presentation]** måste du ange samma dimensioner för presentationsregeln som de som har konfigurerats i miljön.
 
-The **[!UICONTROL Targeting dimension]** sammanfaller med mottagartabellen (som standard: nms:mottagare) som får erbjudandeförslagen. The **[!UICONTROL Storage dimension]** sammanfaller med tabellen som innehåller den förslagshistorik som är länkad till måldimensionen (som standard):nms:propositionRcp).
+The **[!UICONTROL Targeting dimension]** sammanfaller med mottagartabellen (som standard: nms:templates) som får erbjudandeförslagen. The **[!UICONTROL Storage dimension]** sammanfaller med tabellen som innehåller den förslagshistorik som är länkad till måldimensionen (som standard):nms:propositionRcp).
 
 ![](assets/offer_typology_009.png)
 
@@ -79,7 +80,7 @@ The **[!UICONTROL Targeting dimension]** sammanfaller med mottagartabellen (som 
 
 Detta är en glidande period som börjar på presentationsdatumet för erbjudandet. Det fastställer en tidsgräns för giltigheten för erbjudandeförslag. Regeln gäller inte för offertförslag som gjorts efter denna period.
 
-Perioden börjar **n** dagar före förslagsdatumet och slutar **n** dagar därefter, där **n** motsvarar talet som anges i **[!UICONTROL Period considered]** fält:
+Perioden börjar **n** dagar före förslagsdatumet och slutar **n** dagar därefter, **n** motsvarar talet som anges i **[!UICONTROL Period considered]** fält:
 
 * För inkommande blanksteg är förslagsdatumet presentationsdatumet.
 * För utgående blanksteg är förslagsdatumet leveransens kontaktdatum (till exempel leveransdatumet som anges i ett målarbetsflöde).
@@ -110,45 +111,45 @@ Dessa kriterier är de vanligaste tillämpningarna av presentationsregler. Om du
 
 * **Filtrera på kanalen**
 
-   **[!UICONTROL On the same channel only]** : kan du utesluta erbjudandeförslag på den kanal som anges i **[!UICONTROL General]** -fliken.
+  **[!UICONTROL On the same channel only]** : låter dig utesluta erbjudandeförslag på den kanal som anges i **[!UICONTROL General]** -fliken.
 
-   Den kanal som anges för regeln i **[!UICONTROL General]** fliken är e-post. Om de erbjudanden som regeln gäller hittills bara fanns på webbkanalen kan interaktionsmotorn presentera erbjudandena i en e-postleverans. Men när erbjudandena har presenterats via e-post väljer interaktionsmotorn en annan kanal för att presentera erbjudandena.
+  Den kanal som har angetts för regeln i **[!UICONTROL General]** fliken är e-post. Om de erbjudanden som regeln gäller hittills bara fanns på webbkanalen kan interaktionsmotorn presentera erbjudandena i en e-postleverans. Men när erbjudandena har presenterats via e-post väljer interaktionsmotorn en annan kanal för att presentera erbjudandena.
 
-   >[!NOTE]
-   >
-   >Vi pratar om kanalen och inte rymden. Om regeln utesluter ett erbjudande på webbkanalen kommer det erbjudande som ska presenteras på en webbplats i två blanksteg (i en banderoll och till exempel i sidans brödtext) inte att visas på webbplatsen om det redan har presenterats tidigare.
-   >
-   >För ett arbetsflöde som innehåller en erbjudandepresentation beaktas reglerna endast korrekt om de är konfigurerade för **[!UICONTROL All channels]**.
+  >[!NOTE]
+  >
+  >Vi pratar om kanalen och inte rymden. Om regeln utesluter ett erbjudande på webbkanalen kommer det erbjudande som ska presenteras på en webbplats i två blanksteg (i en banderoll och till exempel i sidans brödtext) inte att visas på webbplatsen om det redan har presenterats tidigare.
+  >
+  >För ett arbetsflöde som innehåller en erbjudandepresentation beaktas reglerna endast korrekt om de är konfigurerade för **[!UICONTROL All channels]**.
 
 * **Filtrera på erbjudandet**
 
-   Med det här filtret kan du begränsa antalet erbjudandeförslag som ska räknas till specifika erbjudanden.
+  Med det här filtret kan du begränsa antalet erbjudandeförslag som ska räknas till specifika erbjudanden.
 
-   **[!UICONTROL All offers]** : standardvärde. Inget filter tillämpas på erbjudandena.
+  **[!UICONTROL All offers]** : standardvärde. Inget filter tillämpas på erbjudandena.
 
-   **[!UICONTROL Offer being presented]** : erbjudandet som anges i **[!UICONTROL General]** -fliken tas inte med om den redan har presenterats.
+  **[!UICONTROL Offer being presented]** : erbjudandet som anges i **[!UICONTROL General]** -fliken tas inte med om den redan finns.
 
-   **[!UICONTROL Offers from the same category]** : ett erbjudande utesluts om ett erbjudande från samma kategori redan har lämnats in.
+  **[!UICONTROL Offers from the same category]** : ett erbjudande utesluts om ett erbjudande från samma kategori redan har lämnats in.
 
-   **[!UICONTROL The offers which the rule applies to]** : när flera erbjudanden definieras i **[!UICONTROL General]** tas alla erbjudandeförslag från denna uppsättning med erbjudanden med i beräkningen och avslutas med att alla erbjudanden utesluts om tröskelvärdet för erbjudandet nås.
+  **[!UICONTROL The offers which the rule applies to]** : när flera erbjudanden definieras i **[!UICONTROL General]** tas alla erbjudandeförslag från denna uppsättning med erbjudanden med i beräkningen och avslutas med att alla erbjudanden utesluts om tröskelvärdet för erbjudandet nås.
 
-   Erbjudandena 2, 3 och 5 definieras i **[!UICONTROL General]** -fliken. Det högsta antalet offerter är 2. Om erbjudandena 2 och 5 presenteras en gång, kommer antalet offerter att vara 2. Därför kommer erbjudande 3 aldrig att presenteras.
+  Erbjudandena 2, 3 och 5 definieras i **[!UICONTROL General]** -fliken. Det högsta antalet offerter är 2. Om erbjudandena 2 och 5 presenteras en gång, kommer antalet offerter att vara 2. Därför kommer erbjudande 3 aldrig att presenteras.
 
-* **Filter på förslagsstatus**
+* **Filtrera på förslagsstatus**
 
-   Med det här filtret kan du välja de vanligaste statusvärdena för erbjudandeförslag som ska beaktas i förslagshistoriken.
+  Med det här filtret kan du välja de vanligaste statusvärdena för erbjudandeförslag som ska tas med i offerthistoriken.
 
-   **[!UICONTROL Regardless of the proposition status]** : standardvärde. Inget filter tillämpas på förslagets status.
+  **[!UICONTROL Regardless of the proposition status]** : standardvärde. Inget filter tillämpas på förslagets status.
 
-   **[!UICONTROL Accepted or rejected propositions]** : kan du utesluta tidigare presenterade erbjudanden som har godkänts eller avvisats.
+  **[!UICONTROL Accepted or rejected propositions]** : låter dig utesluta tidigare erbjudanden som har accepterats eller avvisats.
 
-   **[!UICONTROL Accepted propositions]** : kan du utesluta tidigare presenterade erbjudanden som har godkänts.
+  **[!UICONTROL Accepted propositions]** : låter dig utesluta tidigare erbjudanden som har accepterats.
 
-   **[!UICONTROL Rejected propositions]** : kan du utesluta tidigare erbjudanden som har avvisats.
+  **[!UICONTROL Rejected propositions]** : låter dig utesluta tidigare erbjudanden som har avvisats.
 
 ### Definiera mottagare {#defining-recipients}
 
-Klicka på knappen **[!UICONTROL Edit the query from the targeting dimension...]** och välj de mottagare som berörs av regeln.
+Om du vill ange mottagare klickar du på **[!UICONTROL Edit the query from the targeting dimension...]** och välj de mottagare som berörs av regeln.
 
 ![](assets/offer_typology_012.png)
 

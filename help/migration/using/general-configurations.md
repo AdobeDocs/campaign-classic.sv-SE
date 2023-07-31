@@ -2,16 +2,17 @@
 product: campaign
 title: Allmänna konfigurationer
 description: Allmänna konfigurationer
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+feature: Upgrade
+badge-v7-only: label="v7" type="Informative" tooltip="Gäller endast Campaign Classic v7"
 audience: migration
 content-type: reference
 topic-tags: configuration
 hide: true
 hidefromtoc: true
 exl-id: 7aad0e49-8d9c-40c7-9d6a-42fee0ae5870
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '2625'
+source-wordcount: '2632'
 ht-degree: 0%
 
 ---
@@ -41,7 +42,7 @@ Om du vill använda TIMESTAMP MED TIMEZONE-läge måste du även lägga till **-
 
 >[!NOTE]
 >
->Tidszonen kan ändras efter migrering via konsolen (**[!UICONTROL Administration > Platform > Options > WdbcTimeZone]** nod).
+>Det går att ändra tidszonen efter migrering via konsolen (**[!UICONTROL Administration > Platform > Options > WdbcTimeZone]** nod).
 >
 >Mer information om hantering av tidszoner finns i [det här avsnittet](../../installation/using/time-zone-management.md).
 
@@ -79,7 +80,7 @@ Så här kontrollerar du om båda sidorna finns i samma tidszoner:
    select * from v$timezone_file
    ```
 
-1. Om du vill ändra tidszonsfilen på klientsidan använder du **ORA_TZFILE** systemvariabel.
+1. Om du vill ändra tidszonsfilen på klientsidan använder du **ORA_TZFILE** miljövariabel.
 
 ## Säkerhet {#security}
 
@@ -87,7 +88,7 @@ Så här kontrollerar du om båda sidorna finns i samma tidszoner:
 
 >[!IMPORTANT]
 >
->Av säkerhetsskäl är Adobe Campaign-plattformen inte längre tillgänglig som standard: måste du konfigurera säkerhetszonerna och därför samla in operatörens IP-adresser.
+>Av säkerhetsskäl är Adobe Campaign-plattformen inte längre tillgänglig som standard: du måste konfigurera säkerhetszonerna och därför samla in operatörens IP-adresser.
 
 Adobe Campaign v7 innehåller konceptet **säkerhetszoner**. Varje användare måste associeras med en zon för att kunna logga in på en instans och användarens IP-adress måste inkluderas i de adresser eller adressintervall som definieras i säkerhetszonen. Du kan konfigurera säkerhetszoner i Adobe Campaign-serverkonfigurationsfilen. Den säkerhetszon som en användare är kopplad till måste definieras i konsolen (**[!UICONTROL Administration > Access management > Operators]**).
 
@@ -97,9 +98,9 @@ Adobe Campaign v7 innehåller konceptet **säkerhetszoner**. Varje användare m�
 
 Säkerhetszonskonfigurationen finns i [det här avsnittet](../../installation/using/security-zones.md).
 
-### Användarlösenord {#user-passwords}
+### Lösenord {#user-passwords}
 
-In v7, **internal** och **admin** -operatoranslutningen måste skyddas av ett lösenord. Vi rekommenderar starkt att du tilldelar lösenord till dessa konton och alla operatörskonton, **före migrering**. Om du inte har angett något lösenord för **internal** kommer du inte att kunna ansluta. Så här tilldelar du ett lösenord till **internal** anger du följande kommando:
+In v7, **internal** och **admin** -operatoranslutningen måste skyddas av ett lösenord. Vi rekommenderar starkt att du tilldelar lösenord till dessa konton och alla operatörskonton, **före migrering**. Om du inte har angett något lösenord för **internal** kommer du inte att kunna ansluta. Tilldela ett lösenord till **internal** anger du följande kommando:
 
 ```
 nlserver config -internalpassword
@@ -113,10 +114,10 @@ nlserver config -internalpassword
 
 * Användare utan behörighet kan inte längre ansluta till Adobe Campaign. Deras behörigheter måste läggas till manuellt, till exempel genom att skapa en behörighet som kallas **koppla**.
 
-   Användare som påverkas av den här ändringen identifieras och visas under efteruppgraderingen.
+  Användare som påverkas av den här ändringen identifieras och visas under efteruppgraderingen.
 
 * Spårning fungerar inte längre om lösenordet är tomt. Om så är fallet visas ett felmeddelande som talar om det och ber dig konfigurera om det.
-* Användarlösenord sparas inte längre i **xtk:sessionInfo** schema.
+* Lösenord sparas inte längre i **xtk:sessionInfo** schema.
 * Administrationsbehörigheter krävs nu för att använda **xtk:builder:UtvärderaJavaScript** och **xtk:builder:EvaluateJavaScriptTemplate** funktioner.
 
 Vissa färdiga scheman har ändrats och är nu som standard bara tillgängliga med skrivåtkomst för operatorer med **admin** behörighet:
@@ -154,7 +155,7 @@ Vissa färdiga scheman har ändrats och är nu som standard bara tillgängliga m
 
 ### Sessiontoken-parameter {#sessiontoken-parameter}
 
-In v5, the **sessiontoken** fungerar på båda klientsidorna (lista med översiktstypsskärmar, länkredigerare osv.) och serversidan (webbprogram, rapporter, jsp, jssp, osv.). I v7 fungerar den bara på serversidan. Om du vill återgå till full funktionalitet som i v5 måste du ändra länkarna med den här parametern och skicka via anslutningssidan:
+In v5, the **sessiontoken** fungerar på båda klientsidorna (lista med översiktstypsskärmar, ländredigerare osv.) och serversidan (webbprogram, rapporter, jsp, jssp, osv.). I v7 fungerar den bara på serversidan. Om du vill återgå till full funktionalitet som i v5 måste du ändra länkarna med den här parametern och skicka via anslutningssidan:
 
 Länkexempel:
 
@@ -174,7 +175,7 @@ Ny länk med anslutningssidan:
 
 ### SQL-funktioner {#sql-functions}
 
-Okända SQL-funktionsanrop skickas inte längre naturligt till servern. För närvarande måste alla SQL-funktioner läggas till i **xtk:funcList** schema (mer information om detta finns i [det här avsnittet](../../configuration/using/adding-additional-sql-functions.md)). När du migrerar läggs ett alternativ till under efteruppgraderingen som gör att du kan bibehålla kompatibiliteten med gamla odeklarerade SQL-funktioner. Om du vill fortsätta använda dessa funktioner kontrollerar du att **XtkPassUnknownSQLFunactionsToRDBMS** finns definierade på **[!UICONTROL Administration > Platform > Options]** nodnivå.
+Okända SQL-funktionsanrop skickas inte längre naturligt till servern. Alla SQL-funktioner måste läggas till i **xtk:funcList** schema (mer information om detta finns i [det här avsnittet](../../configuration/using/adding-additional-sql-functions.md)). När du migrerar läggs ett alternativ till under efteruppgraderingen som gör att du kan bibehålla kompatibiliteten med gamla odeklarerade SQL-funktioner. Om du vill fortsätta använda dessa funktioner kontrollerar du att **XtkPassUnknownSQLFunactionsToRDBMS** finns definierade på **[!UICONTROL Administration > Platform > Options]** nodnivå.
 
 >[!IMPORTANT]
 >
@@ -205,47 +206,47 @@ Syntaxen är nu för alla andra objekttyper **[!UICONTROL myObject`[`&quot;attri
 
 * Tidigare syntax:
 
-   ```
-   employee.@sn
-   ```
+  ```
+  employee.@sn
+  ```
 
 * Ny syntax:
 
-   ```
-   employee["sn"]
-   ```
+  ```
+  employee["sn"]
+  ```
 
 Om du vill ändra ett värde i ett XML-objekt måste du nu börja med att uppdatera värdet innan du lägger till XML-noden:
 
-* Gammal JavaScript-kod:
+* Tidigare JavaScript-kod:
 
-   ```
-   var cellStyle = node.style.copy();
-   this.styles.appendChild(cellStyle);
-   cellStyle.@width = column.@width;
-   ```
+  ```
+  var cellStyle = node.style.copy();
+  this.styles.appendChild(cellStyle);
+  cellStyle.@width = column.@width;
+  ```
 
 * Ny JavaScript-kod:
 
-   ```
-   var cellStyle = node.style.copy();
-   cellStyle.@width = column.@width;
-   this.styles.appendChild(cellStyle);
-   ```
+  ```
+  var cellStyle = node.style.copy();
+  cellStyle.@width = column.@width;
+  this.styles.appendChild(cellStyle);
+  ```
 
 Du kan inte längre använda ett XML-attribut som tabellnyckel.
 
 * Tidigare syntax:
 
-   ```
-   if(serverForm.activities[ctx.activityHistory.activity[0].@name].type !="end")
-   ```
+  ```
+  if(serverForm.activities[ctx.activityHistory.activity[0].@name].type !="end")
+  ```
 
 * Ny syntax:
 
-   ```
-   if(serverForm.activities[String(ctx.activityHistory.activity[0].@name)].type !="end"
-   ```
+  ```
+  if(serverForm.activities[String(ctx.activityHistory.activity[0].@name)].type !="end"
+  ```
 
 ### SQLData {#sqldata}
 
@@ -263,7 +264,7 @@ Schemat queryDef (xtk:queryDef) har ändrats:
 
 När ett &quot;@expr&quot;-attribut används kan det finnas SQLData. Du kan söka efter följande termer: &quot;SQLData&quot;, &quot;aliasSqlTable&quot;, &quot;sql&quot;.
 
-Adobe Campaign v7-instanser skyddas som standard. Säkerhet anges i definitioner av säkerhetszoner i **[!UICONTROL serverConf.xml]** fil: den **allowSQLInjection** attribut hanterar SQL-syntaxsäkerheten.
+Adobe Campaign v7-instanser skyddas som standard. Säkerhet anges i definitioner av säkerhetszoner i **[!UICONTROL serverConf.xml]** fil: **allowSQLInjection** attribut hanterar SQL-syntaxsäkerheten.
 
 Om ett SQLData-fel inträffar under efteruppgraderingen måste du ändra det här attributet så att SQLData-baserade syntaxer tillfälligt tillåts, så att du kan skriva om koden. För att göra detta måste följande alternativ ändras i **serverConf.xml** fil:
 
@@ -289,53 +290,53 @@ Här nedan hittar du jämförelseexempel mellan den gamla och den nya syntaxen.
 
 * Tidigare syntax:
 
-   ```
-   <condition expr="@id NOT IN ([SQLDATA[SELECT iOperatorId FROM XtkOperatorGroup WHERE iGroupId = $(../@owner-id)]])" enabledIf="$(/ignored/@ownerType)=1"/>
-   ```
+  ```
+  <condition expr="@id NOT IN ([SQLDATA[SELECT iOperatorId FROM XtkOperatorGroup WHERE iGroupId = $(../@owner-id)]])" enabledIf="$(/ignored/@ownerType)=1"/>
+  ```
 
 * Ny syntax:
 
-   ```
-   <condition setOperator="NOT IN" expr="@id" enabledIf="$(/ignored/@ownerType)=1">
-     <subQuery schema="xtk:operatorGroup">
-        <select>
-          <node expr="[@operator-id]" />
-        </select>
-        <where>
-          <condition expr="[@group-id]=$long(../@owner-id)"/>
-        </where>
-      </subQuery>
-   </condition>
-   ```
+  ```
+  <condition setOperator="NOT IN" expr="@id" enabledIf="$(/ignored/@ownerType)=1">
+    <subQuery schema="xtk:operatorGroup">
+       <select>
+         <node expr="[@operator-id]" />
+       </select>
+       <where>
+         <condition expr="[@group-id]=$long(../@owner-id)"/>
+       </where>
+     </subQuery>
+  </condition>
+  ```
 
 * Tidigare syntax:
 
-   ```
-   <queryFilter name="dupEmail" label="Emails duplicated in the folder" schema="nms:recipient">
-       <where>
-         <condition sql="sEmail in (select sEmail from nmsRecipient where iFolderId=$(folderId) group by sEmail having count(sEmail)>1)" internalId="1"/>
-       </where>
-       <folder _operation="none" name="nmsSegment"/>
-     </queryFilter>
-   ```
+  ```
+  <queryFilter name="dupEmail" label="Emails duplicated in the folder" schema="nms:recipient">
+      <where>
+        <condition sql="sEmail in (select sEmail from nmsRecipient where iFolderId=$(folderId) group by sEmail having count(sEmail)>1)" internalId="1"/>
+      </where>
+      <folder _operation="none" name="nmsSegment"/>
+    </queryFilter>
+  ```
 
 * Ny syntax:
 
-   ```
-   <queryFilter name="dupEmail" label=" Emails duplicated in the folder " schema="nms:recipient">
-       <where>
-         <condition expr="@email" setOperator="IN" internalId="1">
-           <subQuery schema="nms:recipient">
-             <select><node expr="@email"/></select>
-             <where><condition expr="[@folder-id]=$(folderId)"/></where>
-             <groupBy><node expr="@email"/></groupBy>
-             <having><condition expr="count(@email)>1"/></having>
-           </subQuery>
-         </condition>
-       </where>
-       <folder _operation="none" name="nmsSegment"/>
-     </queryFilter>
-   ```
+  ```
+  <queryFilter name="dupEmail" label=" Emails duplicated in the folder " schema="nms:recipient">
+      <where>
+        <condition expr="@email" setOperator="IN" internalId="1">
+          <subQuery schema="nms:recipient">
+            <select><node expr="@email"/></select>
+            <where><condition expr="[@folder-id]=$(folderId)"/></where>
+            <groupBy><node expr="@email"/></groupBy>
+            <having><condition expr="count(@email)>1"/></having>
+          </subQuery>
+        </condition>
+      </where>
+      <folder _operation="none" name="nmsSegment"/>
+    </queryFilter>
+  ```
 
 **Sammanställningen**
 
@@ -343,34 +344,34 @@ Sammanställningsfunktion(samling)
 
 * Tidigare syntax:
 
-   ```
-   <node sql="(select count(*) from NmsNewsgroup WHERE O0.iOperationId=iOperationId)" alias="@nbMessages"/>
-   ```
+  ```
+  <node sql="(select count(*) from NmsNewsgroup WHERE O0.iOperationId=iOperationId)" alias="@nbMessages"/>
+  ```
 
 * Ny syntax:
 
-   ```
-   <node expr="count([newsgroup/@id])" alias="../@nbMessages"/>
-   ```
+  ```
+  <node expr="count([newsgroup/@id])" alias="../@nbMessages"/>
+  ```
 
-   >[!NOTE]
-   >
-   >Hörn utförs automatiskt för sammanställningsfunktionerna. Det är inte längre nödvändigt att ange villkoret WHERE O0.iOperationId=iOperationId.
-   >
-   >Det går inte längre att använda &quot;count(&#42;)&quot;. Du måste använda &quot;countall()&quot;.
+  >[!NOTE]
+  >
+  >Hörn utförs automatiskt för sammanställningsfunktionerna. Det är inte längre nödvändigt att ange villkoret WHERE O0.iOperationId=iOperationId.
+  >
+  >Det går inte längre att använda &quot;count(&#42;)&quot;. Du måste använda &quot;countall()&quot;.
 
 * Tidigare syntax:
 
-   ```
-   <node sql="(select Sum(iToDeliver) from NmsDelivery WHERE O0.iOperationId=iOperationId AND iSandboxMode=0 AND iState>=45)" alias="@nbMessages"/>
-   ```
+  ```
+  <node sql="(select Sum(iToDeliver) from NmsDelivery WHERE O0.iOperationId=iOperationId AND iSandboxMode=0 AND iState>=45)" alias="@nbMessages"/>
+  ```
 
 * Ny syntax:
 
-   ```
-   <node expr="Sum([delivery-linkedDelivery/properties/@toDeliver])" alias= "../@sumToDeliver">
-                     <where><condition expr="[validation/@sandboxMode]=0 AND @state>=45" /></where></node>
-   ```
+  ```
+  <node expr="Sum([delivery-linkedDelivery/properties/@toDeliver])" alias= "../@sumToDeliver">
+                    <where><condition expr="[validation/@sandboxMode]=0 AND @state>=45" /></where></node>
+  ```
 
 **Filter efter kopplingar**
 
@@ -380,18 +381,18 @@ Aliaset är valfritt
 
 * Tidigare syntax:
 
-   ```
-   <condition expr={"[" + joinPart.destination.nodePath + "] = [SQLDATA[W." + joinPart.source.SQLName + "]]"}
-                                            aliasSqlTable={nodeSchemaRoot.SQLTable + " W"}/>
-   ```
+  ```
+  <condition expr={"[" + joinPart.destination.nodePath + "] = [SQLDATA[W." + joinPart.source.SQLName + "]]"}
+                                           aliasSqlTable={nodeSchemaRoot.SQLTable + " W"}/>
+  ```
 
 * Ny syntax:
 
-   ```
-   <condition expr={"[" + joinPart.destination.nodePath + "] = [" + nodeSchema.id + ":" + joinPart.source.nodePath + "]]"}/>
-   ```
+  ```
+  <condition expr={"[" + joinPart.destination.nodePath + "] = [" + nodeSchema.id + ":" + joinPart.source.nodePath + "]]"}/>
+  ```
 
-**Tips och tricks**
+**Tips och råd**
 
 I en `<subQuery>` element, för att referera till ett&quot;fält&quot;-fält i huvudfältet `<queryDef>`   -element använder du följande syntax: `[../@field]`
 
@@ -430,16 +431,16 @@ Synkroniseringsresultatet kan visas på två sätt:
 
 * I kommandoradsgränssnittet materialiseras fel med en trippelvinklad **>>** och synkroniseringen stoppas automatiskt. Varningar materialiseras av en dubbel skiftning **>>** och måste lösas när synkroniseringen är klar. När uppgraderingen är klar visas en sammanfattning i kommandotolken. Exempel:
 
-   ```
-   2013-04-09 07:48:39.749Z        00002E7A          1     info    log     =========Summary of the update==========
-   2013-04-09 07:48:39.749Z        00002E7A          1     info    log     test instance, 6 warning(s) and 0 error(s) during the update.
-   2013-04-09 07:48:39.749Z        00002E7A          1     warning log     The document with identifier 'mobileAppDeliveryFeedback' and type 'xtk:report' is in conflict with the new version.
-   2013-04-09 07:48:39.749Z        00002E7A          1     warning log     The document with identifier 'opensByUserAgent' and type 'xtk:report' is in conflict with the new version.
-   2013-04-09 07:48:39.750Z        00002E7A          1     warning log     The document with identifier 'deliveryValidation' and type 'nms:webApp' is in conflict with the new version.
-   2013-04-09 07:48:39.750Z        00002E7A          1     warning log     Document of identifier 'nms:includeView' and type 'xtk:srcSchema' updated in the database and found in the file system. You will have to merge the two versions manually.
-   ```
+  ```
+  2013-04-09 07:48:39.749Z        00002E7A          1     info    log     =========Summary of the update==========
+  2013-04-09 07:48:39.749Z        00002E7A          1     info    log     test instance, 6 warning(s) and 0 error(s) during the update.
+  2013-04-09 07:48:39.749Z        00002E7A          1     warning log     The document with identifier 'mobileAppDeliveryFeedback' and type 'xtk:report' is in conflict with the new version.
+  2013-04-09 07:48:39.749Z        00002E7A          1     warning log     The document with identifier 'opensByUserAgent' and type 'xtk:report' is in conflict with the new version.
+  2013-04-09 07:48:39.750Z        00002E7A          1     warning log     The document with identifier 'deliveryValidation' and type 'nms:webApp' is in conflict with the new version.
+  2013-04-09 07:48:39.750Z        00002E7A          1     warning log     Document of identifier 'nms:includeView' and type 'xtk:srcSchema' updated in the database and found in the file system. You will have to merge the two versions manually.
+  ```
 
-   Om varningen gäller en resurskonflikt måste du åtgärda den.
+  Om varningen gäller en resurskonflikt måste du åtgärda den.
 
 * The **postupgrade_`<server version number>`_tid för efteruppgradering`>`.log** filen innehåller synkroniseringsresultatet. Den är som standard tillgänglig i följande katalog: **installationskatalog/var/`<instance>`postuppgradering**. Fel och varningar anges av **fel** och **varning** attribut.
 
@@ -454,17 +455,17 @@ Så här löser du en konflikt:
 
 Det finns tre möjliga sätt att lösa en konflikt:
 
-* **[!UICONTROL Declared as resolved]**: kräver åtgärd från operatörens sida i förväg.
+* **[!UICONTROL Declared as resolved]**: kräver åtgärd från operatören i förväg.
 * **[!UICONTROL Accept the new version]**: rekommenderas om resurserna som tillhandahålls med Adobe Campaign inte har ändrats av användaren.
 * **[!UICONTROL Keep the current version]**: betyder att uppdateringen inte godkänns.
 
-   >[!IMPORTANT]
-   >
-   >Om du väljer det här upplösningsläget riskerar du att förlora korrigeringar i den nya versionen. Vi rekommenderar därför starkt att detta alternativ inte används eller reserveras enbart för expertoperatorer.
+  >[!IMPORTANT]
+  >
+  >Om du väljer det här upplösningsläget riskerar du att förlora korrigeringar i den nya versionen. Vi rekommenderar därför starkt att detta alternativ inte används eller reserveras enbart för expertoperatorer.
 
 Om du väljer att lösa konflikten manuellt gör du så här:
 
-1. I fönstrets nedre del söker du efter **`_conflict_ string`** för att hitta enheter med konflikter. Enheten som installerats med den nya versionen innehåller **new** argument, entiteten som matchar den tidigare versionen innehåller **kus** argument.
+1. Sök efter **`_conflict_ string`** för att hitta enheter med konflikter. Enheten som installerats med den nya versionen innehåller **new** argument, entiteten som matchar den tidigare versionen innehåller **kus** argument.
 
    ![](assets/s_ncs_production_conflict002.png)
 
@@ -473,7 +474,7 @@ Om du väljer att lösa konflikten manuellt gör du så här:
    ![](assets/s_ncs_production_conflict003.png)
 
 1. Gå till den konflikt du skulle ha löst. Klicka på **[!UICONTROL Actions]** ikon och markera **[!UICONTROL Declare as resolved]**.
-1. Spara ändringarna: konflikten är nu löst.
+1. Spara dina ändringar: konflikten är nu löst.
 
 ## Tomcat {#tomcat}
 
@@ -503,11 +504,11 @@ $(XTK_INSTALL_DIR)/tomcat-8/lib/el-api.jar
 
 ### Erbjud innehåll {#offer-content}
 
-I v7 har erbjudandeinnehållet flyttats. I v6.02 fanns innehållet i varje representationsschema (**nms:emailOfferView**). I v7 finns innehållet nu i erbjudandeschemat. Efter uppgraderingen visas därför inte innehållet i gränssnittet. Efter uppgraderingen måste du återskapa erbjudandeinnehållet eller utveckla ett skript som automatiskt flyttar innehållet från det publiceringsschema som visas till erbjudandeschemat.
+I v7 har erbjudandeinnehållet flyttats. I v6.02 fanns innehållet i varje representationsschema (**nms:emailOfferView**). I v7 finns innehållet nu i erbjudandeschemat. När uppgraderingen är klar visas därför inte innehållet i gränssnittet. Efter uppgraderingen måste du återskapa erbjudandeinnehållet eller utveckla ett skript som automatiskt flyttar innehållet från det publiceringsschema som visas till erbjudandeschemat.
 
 >[!IMPORTANT]
 >
->Om vissa leveranser med konfigurerade erbjudanden skulle skickas efter migreringen måste du ta bort och återskapa alla dessa leveranser i v7. Om du inte kan göra det visas ett kompatibilitetsläge. Det här läget rekommenderas inte eftersom du inte kan utnyttja alla nya funktioner i Interaction v7. Detta är ett övergångsläge som gör att ni kan slutföra pågående kampanjer före den faktiska migreringen av 6.1. Kontakta oss om du vill ha mer information om det här läget.
+>Om vissa leveranser med konfigurerade erbjudanden skulle skickas efter migreringen måste du ta bort och återskapa alla dessa leveranser i v7. Om du inte kan göra det visas ett kompatibilitetsläge. Det här läget rekommenderas inte eftersom du inte kommer att ha nytta av alla nya funktioner i Interaction v7. Detta är ett övergångsläge som gör att ni kan slutföra pågående kampanjer före den faktiska migreringen av 6.1. Kontakta oss om du vill ha mer information om det här läget.
 
 Ett exempel på ett rörelsescript (**interactionTo610_full_XX.js**) finns i **Migrering** i Adobe Campaign v7-mappen. Den här filen visar ett exempel på ett skript för en klient som använder en e-postrepresentation per erbjudande ( **[!UICONTROL htmlSource]** och **[!UICONTROL textSource]** fält). Innehållet som fanns i **NmsEmailOfferView** tabellen har flyttats till erbjudandetabellen.
 
@@ -587,7 +588,7 @@ logInfo("Done");
 
 Så här gör du när du har flyttat erbjudandeinnehållet om du bara har en miljö. I det här fallet tar vi &quot;ENV&quot; som exempel.
 
-1. I alla&quot;ENV&quot;-miljöer finns blanksteg. Uppdatera listan med fält som används. För ett erbjudande som bara använder **[!UICONTROL htmlSource]** måste du lägga till **[!UICONTROL view/htmlSource]**.
+1. I alla&quot;ENV&quot;-miljöer finns blanksteg. Uppdatera listan med fält som används. Till exempel för ett erbjudandeutrymme som bara använder **[!UICONTROL htmlSource]** måste du lägga till **[!UICONTROL view/htmlSource]**.
 
    ![](assets/migration_interaction_2.png)
 
@@ -640,7 +641,7 @@ Det finns två webbprogramfamiljer:
 
 Precis som för rapporter ([läs mer](#reports)) måste du kontrollera och anpassa JavaScript om det behövs. Om du vill använda den blå v7-banderollen (som innehåller de blå flikarna) måste du publicera webbprogrammet igen.
 
-Anslutningsmetoderna för webbprogrammet har ändrats i v7. Om du stöter på anslutningsproblem i dina identifierade webbprogram måste du tillfälligt aktivera **allowUserPassword** och **sessionTokenOnly** i **serverConf.xml** -fil. Ändra följande alternativvärden efter uppgraderingen:
+Anslutningsmetoderna för webbprogrammet har ändrats i v7. Om du får anslutningsproblem i dina identifierade webbprogram måste du tillfälligt aktivera **allowUserPassword** och **sessionTokenOnly** i **serverConf.xml** -fil. Ändra följande alternativvärden efter uppgraderingen:
 
 ```
 allowUserPassword="true"

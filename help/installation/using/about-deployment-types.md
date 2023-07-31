@@ -2,14 +2,15 @@
 product: campaign
 title: Om driftsättningstyper
 description: Om driftsättningstyper
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+feature: Installation, Architecture
+badge-v7-only: label="v7" type="Informative" tooltip="Gäller endast Campaign Classic v7"
 audience: installation
 content-type: reference
 topic-tags: deployment-types-
 exl-id: 08628efb-9186-4b67-9431-310d4bc276b4
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '136'
+source-wordcount: '143'
 ht-degree: 6%
 
 ---
@@ -18,9 +19,9 @@ ht-degree: 6%
 
 
 
-Adobe Campaign modulära design ger ett brett urval av distributionskonfigurationer, från fristående konfigurationer (alla komponenter på en dator) till företagsdistributioner med fullständigt redundant och distribuerad arkitektur som använder flera servrar. Allt beror på den prestanda och säkerhet som krävs.
+Adobe Campaign modulära design ger ett brett urval av driftsättningskonfigurationer, från fristående konfigurationer (alla komponenter på en dator) till företagsdistributioner med fullständigt redundant och distribuerad arkitektur som använder flera servrar. Allt beror på den prestanda och säkerhet som krävs.
 
-Om det finns en konfiguration på flera datorer behöver du inte använda samma operativsystem i hela: Du kan till exempel använda en omdirigeringsserver i Linux + Apache med leveransservrar i Windows.
+Om du har en konfiguration på flera datorer behöver du inte använda samma operativsystem genomgående: du kan till exempel använda en omdirigeringsserver på Linux + Apache med leveransservrar i Windows.
 
 >[!NOTE]
 >

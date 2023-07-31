@@ -2,14 +2,15 @@
 product: campaign
 title: Schemastruktur
 description: Schemastruktur
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+feature: Custom Resources
+badge-v7-only: label="v7" type="Informative" tooltip="Gäller endast Campaign Classic v7"
 audience: configuration
 content-type: reference
 topic-tags: schema-reference
 exl-id: 3405efb8-a37c-4622-a271-63d7a4148751
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '1520'
+source-wordcount: '1527'
 ht-degree: 1%
 
 ---
@@ -117,9 +118,9 @@ Följande regler måste följas:
 
 * Varje **`<element>`** och **`<attribute>`** måste identifieras med namn via **name** -attribut.
 
-   >[!IMPORTANT]
-   >
-   >Elementets namn ska vara kortfattat, helst på engelska, och endast innehålla tillåtna tecken i enlighet med XML-reglerna för namngivning.
+  >[!IMPORTANT]
+  >
+  >Elementets namn ska vara kortfattat, helst på engelska, och endast innehålla tillåtna tecken i enlighet med XML-reglerna för namngivning.
 
 * Endast **`<element>`** -element kan innehålla **`<attribute>`** element och **`<element>`** -element i XML-strukturen.
 * An **`<attribute>`** -elementet måste ha ett unikt namn inom ett **`<element>`**.
@@ -131,26 +132,26 @@ Datatypen anges via **type** i **`<attribute>`** och **`<element>`** -element.
 
 En detaljerad lista finns i beskrivningen av [`<attribute>` element](../../configuration/using/schema/attribute.md) och [`<element>` element](../../configuration/using/schema/element.md)).
 
-När det här attributet inte fylls i, **string** är standarddatatypen såvida inte elementet innehåller underordnade element. Om den gör det används den bara för att strukturera elementen hierarkiskt (**`<location>`** -element i vårt exempel).
+När attributet inte är ifyllt, **string** är standarddatatypen såvida inte elementet innehåller underordnade element. Om den gör det används den bara för att strukturera elementen hierarkiskt (**`<location>`** -element i vårt exempel).
 
 Följande datatyper stöds i scheman:
 
-* **string**: teckensträng. Exempel: ett förnamn, en stad osv.
+* **string**: teckensträng. Exempel: förnamn, stad osv.
 
-   Storleken kan anges via **length** attribute (optional, default value &quot;255&quot;).
+  Storleken kan anges via **length** attribute (optional, default value &quot;255&quot;).
 
-* **boolesk**: Booleskt fält. Exempel på möjliga värden: true/false, 0/1, yes/no, etc.
-* **byte**, **kort**, **long**: heltal (1 byte, 2 byte, 4 byte). Exempel: en ålder, ett kontonummer, ett antal poäng osv.
+* **boolesk**: Booleskt fält. Exempel på möjliga värden: true/false, 0/1, yes/no, osv.
+* **byte**, **kort**, **long**: heltal (1 byte, 2 byte, 4 byte). Exempel: ålder, kontonummer, antal poäng osv.
 * **double**: flyttal med dubbel precision. Exempel: ett pris, en kurs, osv.
 * **datum**, **datetime**: datum och datum + tider. Exempel: födelsedatum, inköpsdatum osv.
 * **datetimenotz**: datum + tid utan tidszonsdata.
 * **tidsintervall**: varaktighet. Exempel: tjänsteålder.
-* **PM**: långa textfält (flera rader). Exempel: en beskrivning, en kommentar osv.
+* **PM**: långa textfält (flera rader). Exempel: en beskrivning, en kommentar, osv.
 * **uuid**: &quot;uniqueidentifier&quot;-fält som stöder ett GUID (stöds endast i Microsoft SQL Server).
 
-   >[!NOTE]
-   >
-   >Innehåller **uuid** i andra motorer än Microsoft SQL Server måste funktionen &quot;newuid()&quot; läggas till och fyllas i med standardvärdet.
+  >[!NOTE]
+  >
+  >Innehåller **uuid** i andra motorer än Microsoft SQL Server måste funktionen &quot;newuid()&quot; läggas till och fyllas i med standardvärdet.
 
 Här är vårt exempelschema med de angivna typerna:
 
@@ -274,33 +275,33 @@ The **`<elements>`** och **`<attributes>`** element i dataschemat kan berikas me
 
 * The **label** kan du ange en kort beskrivning.
 
-   >[!NOTE]
-   >
-   >Etiketten är associerad med instansens aktuella språk.
+  >[!NOTE]
+  >
+  >Etiketten är associerad med instansens aktuella språk.
 
-   **Exempel**:
+  **Exempel**:
 
-   ```
-   <attribute name="email" type="string" length="80" label="Email"/>
-   ```
+  ```
+  <attribute name="email" type="string" length="80" label="Email"/>
+  ```
 
-   Etiketten visas i indataformuläret för Adobe Campaign klientkonsol:
+  Etiketten visas i indataformuläret för Adobe Campaign klientkonsol:
 
-   ![](assets/d_ncs_integration_schema_label.png)
+  ![](assets/d_ncs_integration_schema_label.png)
 
 * The **desc** kan du ange en lång beskrivning.
 
-   Beskrivningen visas från indataformuläret i statusfältet i huvudfönstret i Adobe Campaign klientkonsol.
+  Beskrivningen visas från indataformuläret i statusfältet i huvudfönstret i Adobe Campaign klientkonsol.
 
-   >[!NOTE]
-   >
-   >Beskrivningen är associerad med instansens aktuella språk.
+  >[!NOTE]
+  >
+  >Beskrivningen är associerad med instansens aktuella språk.
 
-   **Exempel**:
+  **Exempel**:
 
-   ```
-   <attribute name="email" type="string" length="80" label="Email" desc="Email of recipient"/>
-   ```
+  ```
+  <attribute name="email" type="string" length="80" label="Email" desc="Email of recipient"/>
+  ```
 
 ### Standardvärden {#default-values}
 
@@ -313,15 +314,15 @@ Värdet måste vara ett uttryck som är kompatibelt med XPath-språket. Mer info
 * Aktuellt datum: **default=&quot;GetDate()&quot;**
 * Räknare: **default=&quot;&#39;FRM&#39;+CounterValue(&#39;myCounter&#39;)&quot;**
 
-   I det här exemplet konstrueras standardvärdet med sammanfogningen av en sträng och anropet till **CounterValue** med ett kostnadsfritt räknarnamn. Det returnerade talet ökas med ett steg vid varje infogning.
+  I det här exemplet konstrueras standardvärdet med sammanfogningen av en sträng och anropet till **CounterValue** med ett kostnadsfritt räknarnamn. Det returnerade talet ökas med ett steg vid varje infogning.
 
-   >[!NOTE]
-   >
-   >I Adobe Campaign klientkonsol **[!UICONTROL Administration>Counters]** noden används för att hantera räknare.
+  >[!NOTE]
+  >
+  >I Adobe Campaign klientkonsol **[!UICONTROL Administration>Counters]** noden används för att hantera räknare.
 
-Om du vill länka ett standardvärde till ett fält kan du använda `<default>  or  <sqldefault>   field.  </sqldefault> </default>`
+Om du vill länka ett standardvärde till ett fält använder du `<default>  or  <sqldefault>   field.  </sqldefault> </default>`
 
-`<default>` : gör att du kan fylla i fältet i förväg med ett standardvärde när du skapar enheter. Värdet kommer inte att vara ett standard-SQL-värde.
+`<default>` : låter dig fylla i fältet i förväg med ett standardvärde när entiteter skapas. Värdet kommer inte att vara ett standard-SQL-värde.
 
 `<sqldefault>` : ger dig ett mervärde när du skapar ett fält. Värdet visas som ett SQL-resultat. Under en schemauppdatering påverkas bara de nya posterna av det här värdet.
 
@@ -367,27 +368,27 @@ En uppräkning deklareras utanför huvudelementet via **`<enumeration>`** -eleme
 
 Uppräkningsegenskaperna är följande:
 
-* **baseType**: Typ av data som är kopplade till värdena.
+* **baseType**: typ av data som är associerade med värdena,
 * **label**: beskrivning av uppräkningen,
-* **name**: Uppräkningens namn.
+* **name**: uppräkningens namn,
 * **standard**: uppräkningens standardvärde.
 
 Uppräkningsvärdena deklareras i **`<value>`** element med följande attribut:
 
-* **name**: Namnet på det internt lagrade värdet.
+* **name**: namn på internt lagrade värden,
 * **label**: etikett som visas via det grafiska gränssnittet.
 
 #### dbenum-uppräkning {#dbenum-enumeration}
 
 * The **dbenum** kan du definiera en uppräkning vars egenskaper liknar de i **enum** -egenskap.
 
-   Men **name** -attributet lagrar inte värdet internt, utan lagrar en kod som gör att du kan utöka de berörda tabellerna utan att ändra deras schema.
+  Men **name** -attributet lagrar inte värdet internt, utan lagrar en kod som gör att du kan utöka de berörda tabellerna utan att ändra deras schema.
 
-   Värdena definieras via **[!UICONTROL Administration>Enumerations]** nod.
+  Värdena definieras via **[!UICONTROL Administration>Enumerations]** nod.
 
-   Den här uppräkningen används till exempel för att ange kampanjens karaktär.
+  Den här uppräkningen används till exempel för att ange kampanjens karaktär.
 
-   ![](assets/d_ncs_configuration_schema_dbenum.png)
+  ![](assets/d_ncs_configuration_schema_dbenum.png)
 
 ### Exempel {#example}
 
@@ -444,24 +445,23 @@ Elementen anges med sitt namn och attributen anges med namnet före tecknet&quot
 **Exempel**:
 
 * **@email**: markerar e-postmeddelandet,
-* **location/@city**: väljer attributet &quot;city&quot; under **`<location>`** element
+* **location/@city**: väljer attributet&quot;city&quot; under **`<location>`** element
 * **../@email**: väljer e-postadressen från det överordnade elementet i det aktuella elementet
-* **grupp`[1]/@label`**: väljer attributet &quot;label&quot; som är underordnat det första **`<group>`** samlingselement
-* **grupp`[@label='test1']`**: väljer attributet &quot;label&quot; som är underordnat **`<group>`** -element och innehåller värdet &quot;test1&quot;
+* **grupp`[1]/@label`**: markerar attributet &quot;label&quot; som är underordnat det första **`<group>`** samlingselement
+* **grupp`[@label='test1']`**: markerar attributet &quot;label&quot; som är underordnat **`<group>`** och innehåller värdet &quot;test1&quot;
 
 >[!NOTE]
 >
 >En ytterligare begränsning läggs till när banan korsar ett underelement. I det här fallet måste följande uttryck placeras inom hakparenteser:
 >
->* **location/@city** är ogiltig, använd **`[location/@city]`**
+>* **location/@city** är inte giltigt. Använd **`[location/@city]`**
 >* **`[@email]`** och **@email** är likvärdiga
 >
-
 
 Det går också att definiera komplexa uttryck, till exempel följande aritmetiska operationer:
 
 * **@kön+1**: lägger till 1 i innehållet i **kön** attribut,
-* **@email + &#39;(&#39;+@created+&#39;)&#39;**: skapar en sträng genom att ta värdet på den e-postadress som lagts till i skapandedatumet mellan parenteser (för strängtypen, ange konstanten inom citattecken).
+* **@email + &#39;(&#39;+@created+&#39;)&#39;**: skapar en sträng genom att ta värdet för den e-postadress som lagts till i skapandedatumet mellan parenteser (för strängtypen, ange konstanten inom citattecken).
 
 Funktioner på hög nivå har lagts till i uttrycken för att berika detta språks potential.
 
@@ -472,10 +472,10 @@ Du kommer åt listan över tillgängliga funktioner via en uttrycksredigerare i 
 **Exempel**:
 
 * **GetDate()**: returnerar aktuellt datum
-* **Year(@created)**: returnerar året för datumet som finns i attributet &quot;created&quot;.
+* **År(@skapad)**: returnerar året för det datum som finns i attributet &quot;created&quot;.
 * **GetEmailDomain(@email)**: returnerar e-postadressens domän.
 
-## Bygga en sträng via beräkningssträngen {#building-a-string-via-the-compute-string}
+## Skapa en sträng via beräkningssträngen {#building-a-string-via-the-compute-string}
 
 A **Beräkningssträng** är ett XPath-uttryck som används för att konstruera en sträng som representerar en post i en tabell som är associerad med schemat. **Beräkningssträng** används främst i det grafiska gränssnittet för att visa etiketten för en markerad post.
 
@@ -492,7 +492,7 @@ The **Beräkningssträng** definieras via **`<compute-string>`** -elementet unde
 </srcSchema>
 ```
 
-Resultat av beräknad sträng för en mottagare: **Doe John (john.doe@aol.com)**
+Resultat av den beräknade strängen för en mottagare: **Doe John (john.doe@aol.com)**
 
 >[!NOTE]
 >

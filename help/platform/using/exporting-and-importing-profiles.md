@@ -2,14 +2,15 @@
 product: campaign
 title: Exportera och importera profiler
 description: Exportera och importera profiler
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+feature: Profiles
+badge-v7-only: label="v7" type="Informative" tooltip="Gäller endast Campaign Classic v7"
 audience: platform
 content-type: reference
 topic-tags: profile-management
 exl-id: fd0f7b6e-84e1-442d-ae88-817fb6758d64
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '145'
+source-wordcount: '152'
 ht-degree: 18%
 
 ---
@@ -30,12 +31,12 @@ Om det behövs kan du skapa ett enstaka import- eller exportjobb via **[!UICONTR
 
 ## Skapa jobb{#create-jobs}
 
-Om du vill konfigurera och köra import- och exportjobb för data går du till **[!UICONTROL Profiles and targets]** och klicka på **[!UICONTROL Jobs]** länk. [Läs mer](../../platform/using/about-generic-imports-exports.md)
+Om du vill konfigurera och köra import- och exportjobb går du till **[!UICONTROL Profiles and targets]** och klicka på **[!UICONTROL Jobs]** länk. [Läs mer](../../platform/using/about-generic-imports-exports.md)
 
 ![](assets/s_ncs_user_interface_import_link.png)
 
 
-## Videokurs {#import-profiles-video}
+## Självstudievideo {#import-profiles-video}
 
 I den här videon förklaras hur du importerar profiler i Adobe Campaign, vid en enstaka import.
 

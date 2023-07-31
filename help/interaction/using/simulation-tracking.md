@@ -2,15 +2,16 @@
 product: campaign
 title: Simuleringsspårning
 description: Simuleringsspårning
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
+feature: Interaction, Offers, Reporting
+badge-v7: label="v7" type="Informative" tooltip="Gäller Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Gäller även Campaign v8"
 audience: interaction
 content-type: reference
 topic-tags: simulating-offers
 exl-id: 490ebbea-9bdc-453e-8a02-c02b095e55e9
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '138'
+source-wordcount: '150'
 ht-degree: 10%
 
 ---
@@ -21,7 +22,7 @@ ht-degree: 10%
 
 När simuleringen är klar kan du analysera resultatet via **[!UICONTROL Results]** som läggs till i simuleringsfönstret och **[!UICONTROL Breakdown of offers by rank]** -rapport som är tillgänglig via kontrollpanelen för simuleringar.
 
-Simuleringsresultaten innehåller en uppdelning av förslag per rangordning och mottagare. Rapporteringsaxlar beaktas också och visas på den här fliken.
+Simuleringsresultaten innehåller en uppdelning av förslag per rankning och per mottagare. Rapporteringsaxlar beaktas också och visas på den här fliken.
 
 Du kan spara dessa resultat och exportera dem om det behövs genom att skapa en beskrivande resultatanalys. Det gör du genom att klicka på lämplig länk i resultatfönstret.
 

@@ -2,12 +2,12 @@
 product: campaign
 title: Använd typologiregler
 description: Lär dig hur du använder typologiregler
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
-feature: Typology Rules
+badge-v7-only: label="v7" type="Informative" tooltip="Gäller endast Campaign Classic v7"
+feature: Typology Rules, Campaigns
 exl-id: 09ec0fc0-76ed-4c73-8bdf-c931e2103aa9
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '983'
+source-wordcount: '990'
 ht-degree: 9%
 
 ---
@@ -26,7 +26,7 @@ Om du vill tillämpa de typologiregler du har skapat måste du koppla den till e
 
    ![](assets/campaign_opt_pressure_sample_1_6.png)
 
-1. Spara typologin: läggs det till i listan över befintliga typologier.
+1. Spara typologin: läggs den till i listan över befintliga typologier.
 1. Öppna den leverans som du vill tillämpa reglerna på.
 1. Öppna leveransegenskaperna och öppna **[!UICONTROL Typology]** -fliken.
 1. Välj typologi i listrutan.
@@ -39,7 +39,7 @@ Om du vill tillämpa de typologiregler du har skapat måste du koppla den till e
 
 ## Definiera programvillkor {#defining-application-conditions}
 
-Du kan begränsa programfältet för en regel efter dina behov (förutom kontrollregler).
+Du kan begränsa programfältet för en regel efter behov (förutom kontrollregler).
 
 Det är möjligt att konfigurera typologiregler så att de endast gäller vissa leveranser som de är kopplade till, eller vissa mottagare bland målet för en leverans.
 
@@ -61,7 +61,7 @@ I vissa beräkningar används värden som inte ändras dagligen. Det skulle där
 
 För att göra detta **[!UICONTROL Frequency]** fält för **[!UICONTROL General]** kan du definiera en maximal period under vilken mål sparas. Som standard är värdet **0** anger att beräkningen fortsätter att gälla till nästa genomförande av den dagliga omskiljningen.
 
-Om du vill spara resultaten efter den här perioden anger du ett värde som är större än 12 i dialogrutan **[!UICONTROL Frequency]** fält: när denna period har löpt ut, tillämpas alla regler på nytt.
+Om du vill spara resultaten efter den här perioden anger du ett värde som är större än 12 i dialogrutan **[!UICONTROL Frequency]** fält: När den här perioden har gått ut tillämpas alla regler igen.
 
 The **[!UICONTROL Re-apply the rule at the start of personalization]** gör att du kan tillämpa regeln automatiskt under personaliseringsfasen, inklusive om den period som anges i **[!UICONTROL Frequency]** fältet är fortfarande giltigt.
 
@@ -76,7 +76,7 @@ I standarddriftsläget används reglerna i följande sekvens:
 1. Kontrollregler, om de tillämpas i början av målinriktningen.
 1. Filtreringsregler:
 
-   * Interna ansökningsregler för adresskvalifikation: angiven adress/overifierad adress/adress på blockeringslista/i karantän-adress/adresskvalitet.
+   * Interna ansökningsregler för adresskvalifikation: definierad adress/ej verifierad adress/adress på blockeringslista/i karantän adress/adresskvalitet.
    * Filtreringsregler som definieras av användaren.
    * Dedupliceringsregel för adressen eller identifieraren (används om det behövs).
 
@@ -104,27 +104,27 @@ Möjliga värden är:
 
 * **[!UICONTROL At the start of targeting]**
 
-   Om du vill förhindra att personaliseringssteget körs om det uppstår fel kan du använda kontrollregeln här.
+  Om du vill förhindra att personaliseringssteget körs om det uppstår fel kan du använda kontrollregeln här.
 
 * **[!UICONTROL After targeting]**
 
-   Om du behöver känna till målvolymen för att kunna använda kontrollregeln väljer du den här fasen.
+  Om du behöver känna till målvolymen för att kunna använda kontrollregeln väljer du den här fasen.
 
-   Till exempel **[!UICONTROL Check proof size]** kontrollregeln gäller efter varje målinriktningsfas: den här regeln förhindrar meddelandepersonalisering om det finns för många korrekturmottagare.
+  Till exempel **[!UICONTROL Check proof size]** kontrollregeln gäller efter varje målfas: den här regeln förhindrar meddelandepersonalisering om det finns för många korrekturmottagare.
 
 * **[!UICONTROL At the start of personalization]**
 
-   Denna fas måste väljas om kontrollen avser godkännande av meddelandepersonalisering. Anpassning av meddelanden utförs under analysfasen.
+  Denna fas måste väljas om kontrollen avser godkännande av meddelandepersonalisering. Anpassning av meddelanden utförs under analysfasen.
 
 * **[!UICONTROL At the end of the analysis]**
 
-   Välj den här fasen när en kontroll kräver att meddelandepersonalisering är slutförd.
+  Välj den här fasen när en kontroll kräver att meddelandepersonalisering är slutförd.
 
 ## Ytterligare konfigurationer {#additional-configurations}
 
 ### Kontrollera utgående SMTP-trafik {#control-outgoing-smtp-traffic}
 
-Du kan också använda **[!UICONTROL Managing affinities with IP addresses]** fält för att länka leveranser till leveransservern (MTA) med den här tillhörigheten. På så sätt kan du begränsa antalet e-postmeddelanden för specifika leveranser till maskiner eller utdatameddelanden.
+Du kan också använda **[!UICONTROL Managing affinities with IP addresses]** fält för att länka leveranser till leveransservern (MTA) med denna tillhörighet. På så sätt kan du begränsa antalet e-postmeddelanden för specifika leveranser till maskiner eller utdatameddelanden.
 
 ![](assets/campaign_opt_select_ip_affinity.png)
 
@@ -141,5 +141,5 @@ The **[!UICONTROL Distributed Marketing]** Med -fliken kan du definiera ommappni
 
 >[!NOTE]
 >
->När det gäller typologier och typologiregler **[!UICONTROL Distributed Marketing]** läggs till om licensen innehåller följande alternativ: kontrollera licensavtalet.\
+>I typologier och typologiregler **[!UICONTROL Distributed Marketing]** läggs till om din licens innehåller det här alternativet: kontrollera licensavtalet.\
 >Mer information om distribuerad marknadsföring finns i [Om distribuerad marknadsföring](../../distributed/using/about-distributed-marketing.md).

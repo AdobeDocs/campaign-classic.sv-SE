@@ -2,16 +2,17 @@
 product: campaign
 title: Tillfälliga filer
 description: Tillfälliga filer
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
-badge-v7-prem: label="on-premise & hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html" tooltip="Applies to on-premise and hybrid deployments only"
+feature: Monitoring
+badge-v7-only: label="v7" type="Informative" tooltip="Gäller endast Campaign Classic v7"
+badge-v7-prem: label="lokal och hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=sv" tooltip="Gäller endast lokala och hybrida driftsättningar"
 audience: production
 content-type: reference
 topic-tags: troubleshooting
 exl-id: e77800f5-c0ae-446d-8ff3-bc8a18c97dbd
-source-git-commit: 4661688a22bd1a82eaf9c72a739b5a5ecee168b1
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '130'
-ht-degree: 4%
+source-wordcount: '155'
+ht-degree: 10%
 
 ---
 
@@ -25,7 +26,7 @@ Felmeddelanden som följande kan visas (särskilt i leveransloggar) när systeme
 
 Orsaken är följande:
 
-Adobe Campaign genererar tillfälliga filer under **/tmp** och byter sedan namn på dem för att flytta dem till **/usr/local/neolane/nl6/var**. Det här felet inträffar när båda mapparna (**/tmp** och **/usr/local/neolane/nl6/var**, som i själva verket är en symbolisk länk till **/var/nl6**) motsvarar olika enheter. The **df** -kommandot används för verifiering.
+Adobe Campaign genererar temporära filer under **/tmp** och byter sedan namn på dem för att flytta dem till **/usr/local/neolane/nl6/var**. Det här felet inträffar när båda mapparna (**/tmp** och **/usr/local/neolane/nl6/var**, som är en symbolisk länk till **/var/nl6**) motsvarar olika enheter. The **df** -kommandot används för verifiering.
 
 För att åtgärda det här problemet måste de temporära filerna genereras på samma enhet som målet.
 

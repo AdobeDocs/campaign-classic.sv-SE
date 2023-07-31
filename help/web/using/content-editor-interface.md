@@ -2,14 +2,14 @@
 product: campaign
 title: Gränssnitt för innehållsredigeraren
 description: Gränssnitt för innehållsredigeraren
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
-feature: Web Apps, Web Forms, Landing Pages
+badge-v7: label="v7" type="Informative" tooltip="Gäller Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Gäller även Campaign v8"
+feature: Web Apps, Web Forms, Landing Pages, Email Design
 exl-id: cb76f3dc-7f3a-49de-89cb-c106865ecb17
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '533'
-ht-degree: 3%
+source-wordcount: '545'
+ht-degree: 4%
 
 ---
 
@@ -25,7 +25,7 @@ DCE-redigeringsfönstret är indelat i tre olika avsnitt. De gör att du kan vis
 
 1. The **top** -avsnittet är ett visningsområde för meddelanden till användaren. Dessa meddelanden anger status för webbprogrammet eller leveransen som skapas, liksom varningar och felmeddelanden för innehållet. Mer information finns i [HTML innehållsstatus](content-editing-best-practices.md#html-content-statuses).
 1. Avsnittet till **vänster** i fönstret är området där du kan redigera innehåll. I det här området kan användaren interagera direkt med innehållet via popup-verktygsfältet: infoga en länk i en bild, ändra teckensnitt, ta bort ett fält osv. Mer information om detta finns i [Redigera formulär](editing-content.md#editing-forms).
-1. Avsnittet till **höger** för fönstret är kontrollpanelens område. I det här området grupperas de olika alternativen för redigeraren, särskilt de som gäller konfigurering av sidrubriken och allmänna alternativ för ett block: lägga till en kant, länka ett databasfält med en indatazon, få åtkomst till egenskaper för webbsidor, osv. Mer information finns i [Globala alternativ](#global-options) och [Redigera innehåll](editing-content.md) -avsnitt.
+1. Avsnittet till **höger** för fönstret är kontrollpanelens område. I det här området grupperas de olika alternativen för redigeraren, särskilt de som gäller konfigurering av sidrubriken och allmänna alternativ för ett block: lägg till en kantlinje, länka ett databasfält med en indatazon, få åtkomst till egenskaper för webbsidor, osv. Mer information finns i [Globala alternativ](#global-options) och [Redigera innehåll](editing-content.md) -avsnitt.
 
 ## Globala alternativ {#global-options}
 
@@ -41,33 +41,33 @@ Den har fyra ikoner:
 
 * The **Välj ett annat innehåll** Med -ikonen kan användaren läsa in nytt innehåll från en mall (en befintlig mall eller en mall som inte är installerad).
 
-   ![](assets/dce_popup_templatechoice.png)
+  ![](assets/dce_popup_templatechoice.png)
 
-   >[!CAUTION]
-   >
-   >Det markerade innehållet ersätter det aktuella innehållet.
+  >[!CAUTION]
+  >
+  >Det markerade innehållet ersätter det aktuella innehållet.
 
-* The **Spara som mall** kan du spara det aktuella innehållet som en mall. Du måste ange mallens etikett och interna namn. Mallar lagras i **[!UICONTROL Resources > Templates > Content templates]** nod.
+* The **Spara som mall** Med -ikonen kan du spara det aktuella innehållet som en mall. Du måste ange mallens etikett och interna namn. Mallar lagras i **[!UICONTROL Resources > Templates > Content templates]** nod.
 
-   ![](assets/dce_popup_savetemplate.png)
+  ![](assets/dce_popup_savetemplate.png)
 
-   När mallen har sparats är den tillgänglig och kan markeras när du skapar nytt innehåll.
+  När mallen har sparats är den tillgänglig och kan markeras när du skapar nytt innehåll.
 
-   ![](assets/dce_create_fromtemplate.png)
+  ![](assets/dce_create_fromtemplate.png)
 
 * The **Sidegenskaper** Med -ikonen kan du markera innehållsinformation högst upp på HTML-sidan.
 
-   ![](assets/dce_popup_headerhtml.png)
+  ![](assets/dce_popup_headerhtml.png)
 
-   >[!NOTE]
-   >
-   >Denna information motsvarar **`<title>`** och **`<meta>`** HTML-taggar på sidan.
-   >
-   >Nyckelorden måste avgränsas med kommatecken.
+  >[!NOTE]
+  >
+  >Denna information motsvarar **`<title>`** och **`<meta>`** HTML-taggar på sidan.
+  >
+  >Nyckelorden måste avgränsas med kommatecken.
 
 ## Blockalternativ {#block-options}
 
-Avsnittet till höger om redigeraren grupperar huvudalternativen som gör att du kan agera på innehållet. Om du vill visa dessa alternativ måste du markera ett block: vilken typ av alternativ det är beror på vilket block som är markerat.
+Avsnittet till höger om redigeraren grupperar huvudalternativen som gör att du kan agera på innehållet. Om du vill visa de här alternativen måste du markera ett block. Vilka alternativ som visas beror på vilket block som är markerat.
 
 ![](assets/dce_right_section.png)
 
@@ -86,4 +86,4 @@ Verktygsfältet är en **popup-element** i DCE-gränssnittet som har olika funkt
 
 >[!CAUTION]
 >
->Du kan formatera HTML-innehållet med vissa verktygsfältsfunktioner. Om sidan innehåller en CSS-formatmall är det emellertid **instruktioner** från formatmallen kan visa sig **prioritet** över instruktionerna som anges i verktygsfältet.
+>Du kan formatera HTML-innehållet med vissa verktygsfältsfunktioner. Om sidan innehåller en CSS-formatmall är det emellertid **instruktioner** från formatmallen kan visa sig vara **prioritet** över instruktionerna som anges i verktygsfältet.

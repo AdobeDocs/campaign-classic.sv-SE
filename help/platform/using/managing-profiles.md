@@ -2,14 +2,15 @@
 product: campaign
 title: Hantera profiler
 description: Hantera profiler
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+feature: Profiles
+badge-v7-only: label="v7" type="Informative" tooltip="Gäller endast Campaign Classic v7"
 audience: platform
 content-type: reference
 topic-tags: profile-management
 exl-id: e1d0556a-6f30-4863-9025-eb9c1b8b53d3
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '229'
+source-wordcount: '236'
 ht-degree: 2%
 
 ---
@@ -20,7 +21,7 @@ ht-degree: 2%
 
 ## Mottagarträd {#recipient-tree}
 
-Om du vill använda de avancerade funktionerna för mottagarhantering måste du redigera Adobe Campaign-trädet. Om du vill göra det klickar du på **[!UICONTROL Explorer]** i verktygsfältet.
+Om du vill använda de avancerade funktionerna för mottagarhantering måste du redigera Adobe Campaign-trädet. Klicka på **[!UICONTROL Explorer]** i verktygsfältet.
 
 Som standard lagras mottagarna i **[!UICONTROL Profiles and targets]** noden i Adobe Campaign-trädet. Från samma nod kan du skapa en eller flera mappar och undermappar för att lagra mottagarprofiler.
 
@@ -40,7 +41,7 @@ Du kan kopiera en mottagare i samma mapp genom att högerklicka på önskad mott
 
 ## Ta bort mottagare {#deleting-recipients}
 
-Om du vill ta bort mottagare flyttar du dem till en viss mapp och tömmer sedan innehållet i den här mappen. Det är **rekommenderas att inte använda** den **[!UICONTROL Delete]** i detta fall.
+Om du vill ta bort mottagare flyttar du dem till en viss mapp och tömmer sedan innehållet i den här mappen. Det är **rekommenderas att inte använda** den **[!UICONTROL Delete]** i det här fallet.
 
 Om du vill rensa en mapp använder du **[!UICONTROL Actions > Purge folder]** -menyn, som du kommer åt genom att högerklicka på önskad mapp.
 

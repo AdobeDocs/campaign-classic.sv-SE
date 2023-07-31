@@ -2,12 +2,12 @@
 product: campaign
 title: Filtreringsregler
 description: Lär dig hur du använder filtreringsregler
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
-feature: Typology Rules
+badge-v7-only: label="v7" type="Informative" tooltip="Gäller endast Campaign Classic v7"
+feature: Typology Rules, Campaigns
 exl-id: a4d12445-5680-4704-9c67-e43e0ea6631b
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '507'
+source-wordcount: '514'
 ht-degree: 2%
 
 ---
@@ -40,7 +40,7 @@ Så här definierar du filtret:
 
    ![](assets/campaign_opt_create_filter_04.png)
 
-När den här regeln används i en leverans, exkluderas undertidsprenumeranter automatiskt. Ett specifikt meddelande indikerar regelprogram:
+När den här regeln används i en leverans, exkluderas underåriga prenumeranter automatiskt. Ett specifikt meddelande indikerar regelprogram:
 
 ![](assets/campaign_opt_create_filter_05.png)
 
@@ -60,15 +60,15 @@ I det här fallet gäller att även om regeln är länkad till alla leveranser, 
 
 ## Skapa och använda en filtertypologi {#creating-and-using-a-filtering-typology}
 
-Du kan skapa **[!UICONTROL Filtering]** typologier: de innehåller bara filtreringsregler.
+Du kan **[!UICONTROL Filtering]** typologier: de innehåller bara filtreringsregler.
 
 ![](assets/campaign_opt_create_typo_filtering.png)
 
-Dessa specifika typologier kan länkas till en leverans när målet har valts: i leveransguiden klickar du på **[!UICONTROL To]** klicka på **[!UICONTROL Exclusions]** -fliken.
+Dessa specifika typologier kan länkas till en leverans när målet har valts: klicka på **[!UICONTROL To]** klicka på **[!UICONTROL Exclusions]** -fliken.
 
 ![](assets/campaign_opt_apply_typo_filtering.png)
 
-Välj sedan den filtreringstyp som ska användas för leveransen. Om du vill göra det klickar du på **[!UICONTROL Add]** och välj de typologier som ska användas.
+Välj sedan den filtreringstyp som ska användas för leveransen. Klicka på **[!UICONTROL Add]** och välj de typologier som ska användas.
 
 Du kan också länka filtreringsregler direkt via den här fliken utan att gruppera dem i en typologi. Använd fönstrets nedre del för att göra detta.
 
@@ -79,6 +79,7 @@ Du kan också länka filtreringsregler direkt via den här fliken utan att grupp
 >Endast typologier och filtreringsregler är tillgängliga i urvalsfönstret.
 >
 >Dessa konfigurationer kan definieras i leveransmallen som automatiskt tillämpas på alla nya leveranser som skapas med hjälp av mallen.
+>
 
 ## Undantagsregler för standardleverans {#default-deliverability-exclusion-rules}
 

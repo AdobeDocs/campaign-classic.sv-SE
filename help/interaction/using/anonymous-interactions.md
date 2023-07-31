@@ -2,14 +2,15 @@
 product: campaign
 title: Anonyma interaktioner
 description: Anonyma interaktioner
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+feature: Interaction, Offers
+badge-v7-only: label="v7" type="Informative" tooltip="Gäller endast Campaign Classic v7"
 audience: interaction
 content-type: reference
 topic-tags: unitary-interactions
 exl-id: a8face46-a933-4f2c-8299-ccb66f05967d
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '429'
+source-wordcount: '436'
 ht-degree: 1%
 
 ---
@@ -28,7 +29,7 @@ När du skapar en anonym miljö via guiden för att skapa mappningar **[!UICONTR
 
 The **[!UICONTROL Targeting dimension]** slutförs automatiskt. Som standard länkas den till besökstabellen.
 
-The **[!UICONTROL Visitor folder]** visas. Det fylls automatiskt i för att länka till **[!UICONTROL Visitors]** mapp. I det här fältet kan du välja var besökarprofiler ska sparas.
+The **[!UICONTROL Visitor folder]** visas. Det görs automatiskt för att länka till **[!UICONTROL Visitors]** mapp. I det här fältet kan du välja var besökarprofiler ska sparas.
 
 ![](assets/anonymous_environment_option.png)
 
@@ -48,7 +49,7 @@ Anonyma besökare kan bli föremål för en process för identifiering av cookie
 
 Under det här steget görs en jämförelse mellan de data som har återställts av cookies och de i din databas. I vissa fall identifieras besökare (de identifieras sedan implicit), i andra fall identifieras de inte (och förblir därför anonyma).
 
-Om du vill köra den här analysen kontrollerar du **[!UICONTROL Implicitly identify the individual based on their browser history]** alternativ.
+Om du vill köra den här analysen kan du kontrollera erbjudandeutrymmet i **[!UICONTROL Implicitly identify the individual based on their browser history]** alternativ.
 
 ![](assets/identification_anonymous_visitors.png)
 

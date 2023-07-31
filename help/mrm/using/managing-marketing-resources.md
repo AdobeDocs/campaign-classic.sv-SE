@@ -2,14 +2,15 @@
 product: campaign
 title: Hantera marknadsföringsresurser
 description: Lär dig hantera marknadsföringsresurser
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+feature: Resource Management
+badge-v7-only: label="v7" type="Informative" tooltip="Gäller endast Campaign Classic v7"
 audience: campaign
 content-type: reference
 topic-tags: tasks--resources-and-budgets
 exl-id: f661e1d1-de2f-4c6a-bbff-e3ffcd1831f0
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '1386'
+source-wordcount: '1393'
 ht-degree: 1%
 
 ---
@@ -45,7 +46,7 @@ Klicka på **[!UICONTROL General]** för att välja operatorer eller grupper av 
 * Operatorn som resursen tilldelas är ansvarig för att spåra den.
 * Godkännandeoperatorn ansvarar för att godkänna marknadsföringsresursen. De meddelas när resursvalideringsprocessen startas.
 
-   Om ingen granskare har valts, resursen **[!UICONTROL cannot be]** efter godkännande.
+  Om ingen granskare är markerad **[!UICONTROL cannot be]** med reservation för godkännande.
 
 * Om det behövs kan du även ange en korrekturläsare.
 
@@ -61,13 +62,13 @@ Du kan ändra och uppdatera en marknadsföringsresurs och vid behov informera an
 
 >[!NOTE]
 >
->The **[!UICONTROL History]** -fliken innehåller hämtnings- och uppdateringsloggen för resursen. The **[!UICONTROL Details]** kan du visa den valda versionen.
+>The **[!UICONTROL History]** innehåller hämtnings- och uppdateringsloggen för resursen. The **[!UICONTROL Details]** kan du visa den valda versionen.
 
 ### Låsa/låsa upp en resurs {#locking-unlocking-a-resource}
 
 När resurserna har skapats är de tillgängliga på kontrollpanelen för marknadsföringsresurser och operatorer kan redigera och ändra dem.
 
-När en operator vill arbeta med en resurs är det bättre att låsa den innan du startar arbetet, så att andra operatorer inte kan ändra den samtidigt. Resursen är sedan reserverad; den förblir tillgänglig, men kan inte publiceras eller uppdateras på servern av en annan operator.
+När en operator vill arbeta med en resurs är det bättre att låsa den innan du startar arbetet, så att andra operatorer inte kan ändra den samtidigt. Resursen är sedan reserverad. Den är fortfarande tillgänglig, men kan inte publiceras eller uppdateras på servern av en annan operator.
 
 Ett specialmeddelande meddelar alla operatorer som försöker få åtkomst till det:
 
@@ -77,7 +78,7 @@ The **[!UICONTROL Tracking]** -fliken anger namnet på den operator som låste r
 
 ![](assets/s_ncs_user_mkg_resource_locked_date.png)
 
-Om du vill låsa en resurs måste du klicka på resursen följt av **[!UICONTROL Lock]** på resurspanelen.
+Du måste klicka på resursen följt av **[!UICONTROL Lock]** på resurspanelen.
 
 ![](assets/s_ncs_user_mkg_resource_lock.png)
 
@@ -99,25 +100,25 @@ Om det behövs kan du även låsa upp det manuellt från kontrollpanelen.
 
 För varje resurs är **[!UICONTROL Forum]** -fliken gör att deltagarna kan utbyta information.
 
-[Diskussionsforum](../../mrm/using/discussion-forums.md) förklarar hur diskussionsforumen fungerar i Adobe Campaign.
+[Diskussionsforum](../../mrm/using/discussion-forums.md) förklarar hur diskussionsforum fungerar i Adobe Campaign.
 
 ## En marknadsföringsresurs livscykel {#life-cycle-of-a-marketing-resource}
 
 När resursen skapas utses Adobe Campaign-operatorer för att utforma, korrekturläsa, godkänna och publicera resursen. En varaktighet kan fastställas för dessa kampanjer.
 
-The **[!UICONTROL Tracking]** kan du övervaka åtgärder som utförs på resursen: godkännanden, godkännanden, avslag, kommentarer eller publikationer.
+The **[!UICONTROL Tracking]** kan du övervaka åtgärder som utförs på resursen: godkännanden, avslag på ansökningar om godkännande, relaterade kommentarer eller publikationer.
 
 The **[!UICONTROL History]** -fliken visar filöverföringar som har utförts för den här resursen.
 
 ### Godkännandeprocess {#approval-process}
 
-Det förväntade tillgänglighetsdatumet visas i resursinformationen, om det angavs i **[!UICONTROL Tracking]** -fliken. När detta datum har nåtts kan du genomföra godkännandeprocessen med hjälp av **[!UICONTROL Submit for approval]** på resurspanelen. Resursstatusen ändras sedan till **[!UICONTROL Approval in progress]**.
+Det förväntade tillgänglighetsdatumet visas i resursinformationen, om det har angetts i **[!UICONTROL Tracking]** -fliken. När detta datum har nåtts kan du genomföra godkännandeprocessen med hjälp av **[!UICONTROL Submit for approval]** på resurspanelen. Resursstatusen ändras sedan till **[!UICONTROL Approval in progress]**.
 
 En resurs kan godkännas via **[!UICONTROL Approve resource]** på kontrollpanelen.
 
 ![](assets/s_ncs_user_task_valid_date.png)
 
-Auktoriserade operatorer kan sedan godkänna eller avvisa godkännande. Den här åtgärden är möjlig: via e-postmeddelandet som skickas (genom att klicka på länken i meddelandet) eller via konsolen (genom att klicka på **[!UICONTROL Approve]** ).
+Auktoriserade operatorer kan sedan godkänna eller avvisa godkännande. Den här åtgärden är möjlig antingen via e-postmeddelandet som skickas (genom att klicka på länken i meddelandet) eller via konsolen (genom att klicka på knappen **[!UICONTROL Approve]** ).
 
 I godkännandefönstret kan du ange en kommentar.
 
@@ -135,13 +136,13 @@ The **[!UICONTROL Tracking]** Med -fliken kan alla operatorer spåra de olika st
 
 Marknadsföringsresursen måste publiceras när den har godkänts. Publiceringsprocessen måste genomföras i enlighet med företagets krav. Detta innebär att resurser kan publiceras på ett extranät eller på en annan server, specifik information kan skickas till en extern tjänsteleverantör osv.
 
-Om du vill publicera en resurs klickar du på **[!UICONTROL Publish]** i redigeringszonen på kontrollpanelen för marknadsföringsresurser.
+Klicka på **[!UICONTROL Publish]** i redigeringszonen på kontrollpanelen för marknadsföringsresurser.
 
 ![](assets/s_ncs_user_mkg_resource_available.png)
 
 Du kan också automatisera publiceringen av en resurs via ett arbetsflöde.
 
-Att publicera en resurs innebär att göra den tillgänglig för användning (till exempel för en annan uppgift). Publikationen varierar beroende på vilken typ av resurs du har: för ett flygblad kan publicering innebära att du skickar filen till ett tryckeri, för en webbbyrå kan det betyda att du publicerar den på en webbplats, osv.
+Att publicera en resurs innebär att göra den tillgänglig för användning (till exempel för en annan uppgift). Publikationen varierar beroende på vilken typ av resurs du har: för ett flygblad kan publicering innebära att du skickar filen till en skrivare, för en webbbyrå kan det betyda att du publicerar den på en webbplats osv.
 
 För att Adobe Campaign ska kunna publicera måste du skapa ett lämpligt arbetsflöde och länka det till resursen. Öppna **[!UICONTROL Advanced settings]** resursens ruta och välj sedan önskat arbetsflöde i **[!UICONTROL Post-processing]** fält.
 

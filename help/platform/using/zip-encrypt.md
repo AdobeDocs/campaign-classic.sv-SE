@@ -1,17 +1,18 @@
 ---
 product: campaign
 title: Zippa eller kryptera en fil
-description: Lär dig hur du komprimerar eller krypterar en fil i Campaign innan du bearbetar den
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
+description: Lär dig zippa eller kryptera en fil i Campaign innan du bearbetar den
+feature: Data Management
+badge-v7: label="v7" type="Informative" tooltip="Gäller Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Gäller även Campaign v8"
 audience: platform
 content-type: reference
 topic-tags: importing-and-exporting-data
 exl-id: 4596638c-d75a-4e07-a2d8-5befcaad3430
-source-git-commit: 4661688a22bd1a82eaf9c72a739b5a5ecee168b1
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '536'
-ht-degree: 6%
+source-wordcount: '548'
+ht-degree: 7%
 
 ---
 
@@ -28,9 +29,10 @@ Så här kan du göra:
    >[!NOTE]
    >
    >Kontrollpanelen är begränsad till administratörsanvändare och endast tillgänglig för vissa Campaign-versioner. [Läs mer](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/key-features.html)
+   >
 
 1. Om din installation av Adobe Campaign ligger hos Adobe kontaktar du [Adobe kundtjänst](https://helpx.adobe.com/se/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) för att ha nödvändiga verktyg installerade på servern.
-1. Om du har en installation av Adobe Campaign installerad installerar du verktyget som du vill använda (till exempel: GPG, GZIP) och nödvändiga nycklar (krypteringsnyckel) på programservern.
+1. Om du har installerat Adobe Campaign lokalt installerar du det verktyg du vill använda (till exempel GPG, GZIP) samt de nödvändiga nycklarna (krypteringsnyckeln) på programservern.
 
 Du kan sedan använda kommandon eller kod i **[!UICONTROL Script]** aktivitetens flik eller i en **[!UICONTROL JavaScript code]** aktivitet. Ett exempel visas i användningsexemplet nedan.
 
@@ -53,10 +55,10 @@ Så här utför du det här användningsfallet:
 
    ![](assets/gpg-workflow-encrypt.png)
 
-   * **[!UICONTROL Query]** aktivitet: I det här exemplet vill vi köra en fråga för att rikta data från den databas som vi vill exportera.
+   * **[!UICONTROL Query]** aktivitet: I det här exemplet vill vi köra en fråga som mål för data från den databas som vi vill exportera.
    * **[!UICONTROL Data extraction (file)]** aktivitet: Extraherar data till en fil.
    * **[!UICONTROL JavaScript code]** aktivitet: Krypterar de data som ska extraheras.
-   * **[!UICONTROL File transfer]** aktivitet: Skickar data till en extern källa (i det här exemplet en SFTP-server).
+   * **[!UICONTROL File transfer]** aktivitet: Skickar data till en extern källa (i detta exempel en SFTP-server).
 
 1. Konfigurera **[!UICONTROL Query]** -aktivitet för att ange önskade data från databasen som mål. Mer information om detta finns i [det här avsnittet](../../workflow/using/query.md).
 
@@ -68,7 +70,7 @@ Så här utför du det här användningsfallet:
 
    >[!IMPORTANT]
    >
-   >Se till att du ersätter **fingeravtryck** från kommandot med fingeravtrycket på den offentliga nyckeln som är installerad på kontrollpanelen.
+   >Se till att du ersätter **fingeravtryck** värdet från kommandot med fingeravtrycket på den offentliga nyckeln som är installerad på kontrollpanelen.
 
    ```
    var cmd='gpg ';
@@ -88,7 +90,7 @@ Så här utför du det här användningsfallet:
 
 1. Du kan nu köra arbetsflödet. När den har körts exporteras datamål som omfattas av frågan till SFTP-servern till en krypterad GPG-fil.
 
-## Videokurs {#video}
+## Självstudievideo {#video}
 
 I den här videon visas hur du använder en GPG-nyckel för att kryptera data som även finns i
 

@@ -1,15 +1,16 @@
 ---
 product: campaign
 title: Installera klientkonsolen
-description: Lär dig hur du installerar klientkonsolen
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+description: Lär dig installera klientkonsolen
+feature: Installation, Upgrade
+badge-v7-only: label="v7" type="Informative" tooltip="Gäller endast Campaign Classic v7"
 audience: installation
 content-type: reference
 topic-tags: installing-campaign-in-windows-
 exl-id: 7cc78214-92b8-4b1f-a307-96ec6af818d1
-source-git-commit: 45bf9d76dc41fd8cecfaab3f258856861201db3f
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '1135'
+source-wordcount: '1142'
 ht-degree: 3%
 
 ---
@@ -42,7 +43,7 @@ Läs informationen nedan för att ta reda på vad som krävs för implementering
 
 Från version Campaign Classic 7.3 krävs installation av Microsoft Edge Webview 2 för alla konsolinstallationer.
 
-Webbvyn installeras som standard som en del av operativsystemet Windows 11. Om det inte redan finns på datorn uppmanas du att hämta det från Campaign Classic Console Installer [Microsoft Developer website](https://www.adobe.com/go/acc-ms-webview2-runtime-download). Observera att nedladdningslänken inte fungerar i webbläsaren Internet Explorer 11 eftersom Microsoft inte längre stöder det. Kontrollera att du använder en annan webbläsare för att komma åt länken.
+Webbvyn installeras som standard som en del av Windows 11. Om det inte redan finns på datorn uppmanas du att hämta det från Campaign Classic Console Installer [Microsoft Developer website](https://www.adobe.com/go/acc-ms-webview2-runtime-download). Observera att nedladdningslänken inte fungerar i webbläsaren Internet Explorer 11 eftersom Microsoft inte längre stöder det. Kontrollera att du använder en annan webbläsare för att komma åt länken.
 
 ## Implementeringar via Adobe Hosted {#hosted-customers}
 
@@ -60,15 +61,15 @@ För att Adobe Campaign-användare ska kunna logga in på den instans som du har
 
 ### Göra konsolen tillgänglig för användare {#make-console-available}
 
-När datorn som används för att starta en Adobe Campaign-programserver (nlserver web) tar emot användaranslutningar från klientkonsolen kan du konfigurera den så att installationsprogrammet för Adobe Campaign RIA-klienten blir tillgängligt via ett HTML-gränssnitt. När det finns en ny version av klientkonsolen får användarna en inbjudan att ladda ned den när de startar klientkonsolen.
+När datorn som används för att starta en Adobe Campaign-programserver (nlserver web) tar emot användaranslutningar från klientkonsolen kan du konfigurera den så att installationsprogrammet för Adobe Campaign RIA-klienten blir tillgängligt via ett HTML-gränssnitt. När det finns en ny version av klientkonsolen får användarna en inbjudan om att ladda ned den när de startar klientkonsolen.
 
 För att göra detta måste du:
 
 1. Välj det paket som innehåller installationsprogrammet för konsolen.
 
-   Filen kallas setup-client-7.X.XXXX.exe, där X är underversionen av Adobe Campaign och XXXX är build-numret.
+   Den här filen kallas setup-client-7.X.XXXX.exe, där X är underversionen av Adobe Campaign och XXXX är build-numret.
 
-1. Kopiera och klistra in det här paketet i installationsmappen för Adobe Campaign (på marknadsföringsservern för hybridinstallationer), under /datakit/nl/eng/jsp.
+1. Kopiera och klistra in det här paketet i Adobe Campaign installationsmapp (på marknadsföringsservern för hybridinstallationer), under /datakit/nl/eng/jsp.
 
 1. Starta Adobe Campaign-servern.
 
@@ -134,7 +135,7 @@ När klientkonsolen har installerats följer du stegen nedan för att skapa ansl
 
 1. Ange en anslutning till Adobe Campaign-programservern via en URL. Använd antingen en DNS eller ett alias för datorn eller din IP-adress.
 
-   Du kan till exempel använda `https://<machine>.<domain>.com` skriv URL.
+   Du kan till exempel använda `https://<machine>.<domain>.com` skriv-URL.
 
 1. Om Adobe IMS är konfigurerat för din organisation markerar du alternativet **[!UICONTROL Connect with an Adobe ID]**
 
@@ -169,7 +170,7 @@ Så här loggar du in på en befintlig instans:
 * [Skapa en instans och logga in](../../installation/using/creating-an-instance-and-logging-on.md).
 * [Kompatibilitetsmatris](https://helpx.adobe.com/se/campaign/kb/compatibility-matrix.html)
 
-## Videokurs
+## Självstudievideo
 
 I den här videon visas hur du installerar och konfigurerar Adobe Campaign Client.
 

@@ -2,14 +2,15 @@
 product: campaign
 title: Miljööversikt
 description: Miljööversikt
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+feature: Interaction, Offers
+badge-v7-only: label="v7" type="Informative" tooltip="Gäller endast Campaign Classic v7"
 audience: interaction
 content-type: reference
 topic-tags: managing-environments
 exl-id: ba588591-5171-4c35-bc8c-3979274e21b2
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '95'
+source-wordcount: '102'
 ht-degree: 6%
 
 ---
@@ -20,7 +21,7 @@ ht-degree: 6%
 
 I det här kapitlet beskrivs hur du hanterar erbjudandemiljöer i Interaction.
 
-Flera olika användarprofiler används vid hantering och användning av erbjudanden. Det första steget handlar därför om att se till att dessa profiler finns, och om inte, skapa dem.
+Flera olika användarprofiler är involverade i hanteringen och användningen av erbjudanden. Det första steget handlar därför om att se till att dessa profiler finns, och om inte, skapa dem.
 
 >[!IMPORTANT]
 >

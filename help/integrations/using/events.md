@@ -1,15 +1,16 @@
 ---
 product: campaign
 title: Konfigurera händelser
-description: Lär dig hur du konfigurerar händelser för anpassad implementering
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
+description: Lär dig konfigurera händelser för anpassad implementering
+feature: Triggers
+badge-v7: label="v7" type="Informative" tooltip="Gäller Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Gäller även Campaign v8"
 audience: integrations
 content-type: reference
 exl-id: 13717b3b-d34a-40bc-9c9e-dcf578fc516e
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '1198'
+source-wordcount: '1210'
 ht-degree: 0%
 
 ---
@@ -32,7 +33,7 @@ Eftersom det krävs tekniska kunskaper för att redigera Javascript-koden bör d
 
 Pipeline använder en JavaScript-funktion för att bearbeta varje meddelande. Den här funktionen är användardefinierad.
 
-Den konfigureras i **[!UICONTROL NmsPipeline_Config]** under attributet &quot;JSConnector&quot;. Detta JavaScript anropas varje gång en händelse tas emot. Det är förbi [!DNL pipelined] -processen.
+Den är konfigurerad i **[!UICONTROL NmsPipeline_Config]** under attributet &quot;JSConnector&quot;. Detta JavaScript anropas varje gång en händelse tas emot. Det är förbi [!DNL pipelined] -processen.
 
 Javascript-exempelfilen är cus:triggers.js.
 
@@ -60,7 +61,7 @@ The [!DNL trigger] data skickas till JS-funktionen i XML-format.
 
 * The **[!UICONTROL @triggerId]** -attributet innehåller namnet på [!DNL trigger].
 * The **berikning** -elementet i JSON-format innehåller data som genererats av Adobe Analytics och är kopplat till utlösaren.
-* **[!UICONTROL @offset]** är pekaren till meddelandet. Den anger ordningen för meddelandet i kön.
+* **[!UICONTROL @offset]** är &quot;pekaren&quot; till meddelandet. Den anger ordningen för meddelandet i kön.
 * **[!UICONTROL @partition]** är en behållare med meddelanden i kön. Förskjutningen är relativ till en partition. <br>Det finns ungefär 15 partitioner i kön.
 
 Exempel:
@@ -81,7 +82,7 @@ Exempel:
 Innehållet definieras i JSON-format i Adobe Analytics för varje utlösare.
 I en utlösare av typen LogoUpload_uploading_Visits:
 
-* **[!UICONTROL eVar01]** kan innehålla Shopper-ID:t i strängformat, som används för att stämma av mot Adobe Campaign-mottagare. <br>Den måste avstämas för att hitta Shopper ID, som är primärnyckeln.
+* **[!UICONTROL eVar01]** kan innehålla Shopper-ID:t i String-format, som används för att stämma av mot Adobe Campaign-mottagare. <br>Den måste avstämas för att hitta Shopper ID, som är primärnyckeln.
 
 * **[!UICONTROL timeGMT]** kan innehålla tiden för utlösaren på Adobe Analytics-sidan i UTC Epoch-format (sekunder sedan 01/01/1970 UTC).
 
@@ -126,7 +127,7 @@ Det finns för närvarande inget sätt att ha olika köer för olika miljöer so
 Loggar som logInfo() dirigeras till [!DNL pipelined] log. Fel som logError() skrivs till [!DNL pipelined] logga och låt händelsen placeras i en kö för återförsök. I det här fallet bör du kontrollera loggen i pipeline.
 Felmeddelanden provas flera gånger under den varaktighet som anges i [!DNL pipelined] alternativ.
 
-För felsökning och övervakning skrivs alla utlösande data i utlösartabellen i fältet&quot;data&quot; i XML-format. En logInfo() som innehåller utlösardata har också samma syfte.
+För felsökning och övervakning skrivs alla utlösande data in i utlösartabellen i fältet&quot;data&quot; i XML-format. En logInfo() som innehåller utlösardata har också samma syfte.
 
 ### Tolka data {#data-parsing}
 
@@ -184,7 +185,7 @@ function processPipelineMessage(xmlTrigger)
 
 Prestanda för denna kod måste vara optimala eftersom den körs med höga frekvenser och kan orsaka potentiella negativa effekter för andra marknadsföringsaktiviteter. Speciellt om mer än en miljon utlöser händelser per timme på marknadsföringsservern eller om det inte är korrekt justerat.
 
-Kontexten för detta JavaScript är begränsad. Alla funktioner i API:t är inte tillgängliga. getOption() eller getCurrentDate() fungerar till exempel inte.
+Kontexten för detta JavaScript är begränsad. Alla funktioner i API är inte tillgängliga. getOption() eller getCurrentDate() fungerar till exempel inte.
 
 För att möjliggöra snabbare bearbetning körs flera trådar i det här skriptet samtidigt. Koden måste vara trådsäker.
 
@@ -207,8 +208,8 @@ Här följer ett exempel på schemakod för den här tabellen:
 | pipelineEventId | Lång | Primär nyckel | Utlösarens interna primärnyckel. |
 | data | PM | Utlösardata | Det fullständiga innehållet i utlösande data i XML-format. För felsökning och revision. |
 | triggerType | Sträng 50 | TriggerType | Namnet på utlösaren. Identifierar kundens beteende på webbplatsen. |
-| shopper_id | Sträng 32 | shopper_id | Köparens interna identifierare. Anges av avstämningsarbetsflödet. Om värdet är noll betyder det att kunden är okänd i Campaign. |
-| shopper_key | Lång | shopper_key | Bugarens externa identifierare som hämtats av Analytics. |
+| shopper_id | Sträng 32 | shopper_id | Köparens interna identifierare. Anges av avstämningsarbetsflödet. Om noll betyder det att kunden är okänd i Campaign. |
+| shopper_key | Lång | shopper_key | Bugarens externa identifierare enligt Analytics. |
 | skapad | Datetime | Skapad | Den tid då händelsen skapades i Campaign. |
 | lastModified | Datetime | Senast ändrad | Den senaste gången händelsen ändrades i Adobe. |
 | timeGMT | Datetime | Tidsstämpel | Den tid då händelsen genererades i Analytics. |
@@ -230,7 +231,7 @@ Händelserna kan visas med ett enkelt formulär baserat på händelseschemat.
 Avstämning är processen att matcha kunden från Adobe Analytics med Adobe Campaign-databasen. Kriterierna för matchning kan till exempel vara shopper_id.
 
 Av prestandaskäl måste matchningen göras i gruppläge av ett arbetsflöde.
-Frekvensen måste anges till 15 minuter för att arbetsbelastningen ska optimeras. Därför är fördröjningen mellan en mottagning i Adobe Campaign och dess bearbetning i ett marknadsföringsarbetsflöde upp till 15 minuter.
+Frekvensen måste vara inställd på 15 minuter för att arbetsbelastningen ska optimeras. Därför är fördröjningen mellan en mottagning i Adobe Campaign och dess bearbetning i ett marknadsföringsarbetsflöde upp till 15 minuter.
 
 ### Alternativ för enhetsavstämning i JavaScript {#options-unit-reconciliation}
 
@@ -245,4 +246,4 @@ Utlösare bearbetas inom en timme. Volymen kan vara cirka 1 miljon utlösare per
 ### Arbetsflöde för kampanj {#campaign-workflow}
 
 Arbetsflödet för utlösarkampanjer liknar ofta andra återkommande kampanjer som har använts.
-Den kan till exempel börja med en fråga om utlösare som letar efter specifika händelser under den sista dagen. Målet används för att skicka e-postmeddelandet. Anrikningar eller data kan komma från utlösaren. Det kan användas säkert av Marketing eftersom det inte kräver någon konfiguration.
+Den kan till exempel börja med en fråga om utlösare som letar efter specifika händelser under den sista dagen. Det målet används för att skicka e-postmeddelandet. Anrikningar eller data kan komma från utlösaren. Det kan användas säkert av Marketing eftersom det inte kräver någon konfiguration.

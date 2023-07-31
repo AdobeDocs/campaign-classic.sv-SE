@@ -2,11 +2,12 @@
 product: campaign
 title: Funktionsmatris för Campaign On-lokalt, Hybrid och Hosted
 description: Lär dig de viktigaste skillnaderna mellan värdbaserade och lokala distributioner
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+feature: Installation, Architecture
+badge-v7-only: label="v7" type="Informative" tooltip="Gäller endast Campaign Classic v7"
 exl-id: a2c425a8-9bde-4259-9140-5ada5397ed5f
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '293'
+source-wordcount: '300'
 ht-degree: 20%
 
 ---
@@ -41,11 +42,12 @@ De olika värdmodellerna introduceras [i det här avsnittet](../../installation/
 
 ## Federerad dataåtkomst{#fda}
 
-Adobe Campaign tillhandahåller **Åtkomst till federerade data** (FDA) för att bearbeta information som lagras i en eller flera externa databaser: kan du få åtkomst till externa data utan att ändra datastrukturen i Adobe Campaign. [Läs mer](../../installation/using/about-fda.md)
+Adobe Campaign tillhandahåller **Åtkomst till federerade data** (FDA) om du vill bearbeta information som lagras i en eller flera externa databaser: du kan komma åt externa data utan att ändra strukturen för Adobe Campaign-data. [Läs mer](../../installation/using/about-fda.md)
 
 >[!CAUTION]
 >
 >Kompatibla externa databassystem beror på din värdmodell. Läs mer i [Matris för kampanjkompatibilitet](../../rn/using/compatibility-matrix.md).
+>
 
 **Se även**
 

@@ -2,15 +2,16 @@
 product: campaign
 title: Övervaka processer
 description: Lär dig övervaka Campaign-processer
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
-badge-v7-prem: label="on-premise & hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html" tooltip="Applies to on-premise and hybrid deployments only"
+feature: Monitoring
+badge-v7-only: label="v7" type="Informative" tooltip="Gäller endast Campaign Classic v7"
+badge-v7-prem: label="lokal och hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=sv" tooltip="Gäller endast lokala och hybrida driftsättningar"
 audience: production
 content-type: reference
 topic-tags: production-procedures
 exl-id: 1f5d8c7e-6f9b-46cd-a9b4-a3b48afb1794
-source-git-commit: 4661688a22bd1a82eaf9c72a739b5a5ecee168b1
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '3598'
+source-wordcount: '3623'
 ht-degree: 0%
 
 ---
@@ -28,7 +29,7 @@ Om du vill gå till Adobe Campaign processövervakningssida går du till **[!UIC
 
 På den sida som visas kan du visa den anslutna instansens tillstånd, dvs:
 
-* information om instansen: version, namn, databasmotor, installerade paket, serversystemindikatorer,
+* Information om instansen: version, namn, databasmotor, installerade paket, serversystemsindikatorer.
 * En förteckning över saknade processer och körningsinformation (startdatum, PID osv.).
 * en översikt över arbetsflöden och leveranser.
 
@@ -36,7 +37,7 @@ Ytterligare sätt att övervaka Campaign-processer presenteras i [den här sidan
 
 ### Loggjournal {#log-journal}
 
-Om du vill visa loggjournalen för en process klickar du på processen, **mta** välj **[!UICONTROL Open the log journal]** .
+Om du vill visa loggjournalen för en process klickar du på processen, **mta** välj sedan **[!UICONTROL Open the log journal]** .
 
 ![](assets/d_ncs_monitoring2.png)
 
@@ -48,57 +49,57 @@ Bläddra till listan med systemindikatorer för att visa information om datorn, 
 
 * **[!UICONTROL Pending events queued]**: indikator specifik för **Meddelandecenter**. [Läs mer](../../message-center/using/additional-configurations.md#monitoring-thresholds)
 
-* **[!UICONTROL Memory]**: Information om det fysiska minnet.
+* **[!UICONTROL Memory]**: information om det fysiska minnet.
 
-   **[!UICONTROL Current value]**: aktuell minnesförbrukning.
+  **[!UICONTROL Current value]**: aktuell minnesförbrukning.
 
-   **[!UICONTROL Max Value]**: den totala mängden installerat minne.
+  **[!UICONTROL Max Value]**: total mängd installerat minne.
 
-   **[!UICONTROL Available]**: mängden tillgängligt minne.
+  **[!UICONTROL Available]**: mängden tillgängligt minne.
 
-   **[!UICONTROL Warning]**: den här indikatorn visas när minnesförbrukningen når 80 % av den totala mängden.
+  **[!UICONTROL Warning]**: den här indikatorn visas när minnesförbrukningen når 80 % av den totala mängden.
 
-   **[!UICONTROL Alert]**: den här indikatorn visas när minnesförbrukningen når 90 % av den totala mängden.
+  **[!UICONTROL Alert]**: den här indikatorn visas när minnesförbrukningen når 90 % av den totala mängden.
 
-   När **[!UICONTROL Warning]** och **[!UICONTROL Alert]** visas så kan du lösa problemet genom att lägga till RAM-minne på den dator där Adobe Campaign-servern är installerad. Du kan också välja att installera Adobe Campaign-servern på en dedikerad dator.
+  När **[!UICONTROL Warning]** och **[!UICONTROL Alert]** visas så kan du lösa problemet genom att lägga till RAM-minne på den dator där Adobe Campaign-servern är installerad. Du kan också välja att installera Adobe Campaign-servern på en dedikerad dator.
 
-* **[!UICONTROL Swap Memory]**: information om det virtuella minnet som matchar en växlingsfil: ett område på hårddisken som används som RAM.
+* **[!UICONTROL Swap Memory]**: information om det virtuella minne som matchar en växlingsfil: ett område på hårddisken som används som om det vore RAM.
 
-   **[!UICONTROL Current value]**: faktisk minnesförbrukning.
+  **[!UICONTROL Current value]**: faktisk minnesförbrukning.
 
-   **[!UICONTROL Max Value]**: den totala mängden minne.
+  **[!UICONTROL Max Value]**: total mängd minne.
 
-   **[!UICONTROL Available]**: mängden tillgängligt minne.
+  **[!UICONTROL Available]**: mängden tillgängligt minne.
 
-   **[!UICONTROL Warning]**: den här indikatorn visas när minnesförbrukningen når 80 % av den totala mängden.
+  **[!UICONTROL Warning]**: den här indikatorn visas när minnesförbrukningen når 80 % av den totala mängden.
 
-   **[!UICONTROL Alert]**: den här indikatorn visas när minnesförbrukningen når 90 % av den totala mängden.
+  **[!UICONTROL Alert]**: den här indikatorn visas när minnesförbrukningen når 90 % av den totala mängden.
 
-   När **[!UICONTROL Warning]** och **[!UICONTROL Alert]** visas så kan du lösa problemet genom att öka utbytesfilens storlek i de avancerade Windows-inställningarna.
+  När **[!UICONTROL Warning]** och **[!UICONTROL Alert]** visas så kan du lösa problemet genom att öka utbytesfilens storlek i de avancerade Windows-inställningarna.
 
-* **[!UICONTROL Disk XXX]**: Information om maskinläsare.
+* **[!UICONTROL Disk XXX]**: information om maskinläsare.
 
-   **[!UICONTROL Current value]**: diskutrymme som faktiskt används.
+  **[!UICONTROL Current value]**: det diskutrymme som faktiskt används.
 
-   **[!UICONTROL Max Value]**: total diskkapacitet.
+  **[!UICONTROL Max Value]**: total diskkapacitet.
 
-   **[!UICONTROL Available]**: tillgängligt diskutrymme.
+  **[!UICONTROL Available]**: tillgängligt diskutrymme.
 
-   **[!UICONTROL Used]**: procentandel av disken som används.
+  **[!UICONTROL Used]**: procent av disken som används.
 
-   **[!UICONTROL Warning]**: den här indikatorn visas när det tillgängliga diskutrymmet når 80 % av den totala kapaciteten.
+  **[!UICONTROL Warning]**: den här indikatorn visas när det tillgängliga diskutrymmet når 80 % av den totala kapaciteten.
 
-   **[!UICONTROL Alert]**: den här indikatorn visas när det tillgängliga diskutrymmet når 90 % av den totala kapaciteten.
+  **[!UICONTROL Alert]**: den här indikatorn visas när det tillgängliga diskutrymmet når 90 % av den totala kapaciteten.
 
-* **[!UICONTROL Number of processes too old]**: Information om Adobe Campaign-processer som har varit aktiva i mer än en dag.
+* **[!UICONTROL Number of processes too old]**: information om Adobe Campaign-processer som har varit aktiva i mer än en dag.
 
-   **[!UICONTROL Current value]**: antalet aktiva processer.
+  **[!UICONTROL Current value]**: antal aktiva processer.
 
-   **[!UICONTROL Max Value]**: maximalt antal godkända processer (1).
+  **[!UICONTROL Max Value]**: högsta antal tillåtna processer (1).
 
-   **[!UICONTROL Alert]**: den här indikatorn visas om antalet processer är lika med 1.
+  **[!UICONTROL Alert]**: den här indikatorn visas om antalet processer är lika med 1.
 
-   När **[!UICONTROL Alert]** Indikatorn visas. Det kan bero på att den berörda processen är låst av SQL-databasmotorn eller att den sitter fast i en oändlig slinga. The **övervakningsenhet** alla processer som tillhandahålls av Adobe Campaign startar automatiskt om varje dag så att du kan lösa det här problemet. Du kan också stoppa den berörda processen själv för att tvinga fram en omstart.
+  När **[!UICONTROL Alert]** Indikatorn visas. Det kan bero på att den berörda processen är låst av SQL-databasmotorn eller att den sitter fast i en oändlig slinga. The **övervakningsenhet** alla processer som tillhandahålls av Adobe Campaign startar automatiskt om varje dag så att du kan lösa det här problemet. Du kan också stoppa den berörda processen själv för att tvinga fram en omstart.
 
 #### Linux {#in-linux}
 
@@ -106,109 +107,109 @@ Bläddra till listan med systemindikatorer för att visa information om datorn, 
 
 * **[!UICONTROL Pending events queued]**: indikator specifik för **Meddelandecenter**. Se [det här avsnittet](../../message-center/using/additional-configurations.md#monitoring-thresholds) för mer information.
 
-* **[!UICONTROL Load average (1/5/15 minutes)]**: Information om belastningen, dvs. processorns användningshastighet för de processer som körs på maskinen under den senaste minuten, fem minuter eller femton minuter.
+* **[!UICONTROL Load average (1/5/15 minutes)]**: information om belastningen, dvs. processorns användningshastighet för de processer som körs på maskinen under den senaste minuten, fem minuter eller femton minuter
 
-   **[!UICONTROL Current value]**: maskinens faktiska belastning.
+  **[!UICONTROL Current value]**: faktisk belastning av datorn.
 
-   **[!UICONTROL Max value]**: högsta användningsbelastning för processen/processerna på datorn
+  **[!UICONTROL Max value]**: högsta användningsbelastning för processen/processerna på datorn
 
-   **[!UICONTROL Warning]**: den här indikatorn visas när belastningen når 80 % av det högsta tillåtna värdet under den senaste minuten, fem minuter eller femton minuter.
+  **[!UICONTROL Warning]**: den här indikatorn visas när belastningen når 80 % av det högsta tillåtna värdet under den senaste minuten, fem minuter eller femton minuter.
 
-   **[!UICONTROL Alert]**: den här indikatorn visas när belastningen når 90 % av det högsta tillåtna värdet för den sista minuten, fem minuter eller femton minuter.
+  **[!UICONTROL Alert]**: den här indikatorn visas när belastningen når 90 % av det högsta tillåtna värdet för den sista minuten, fem minuter eller femton minuter.
 
 * **[!UICONTROL Memory]**  Information om det fysiska minnet.
 
-   **[!UICONTROL Current value]**: faktisk minnesförbrukning.
+  **[!UICONTROL Current value]**: faktisk minnesförbrukning.
 
-   **[!UICONTROL Max Value]**: den totala mängden installerat minne.
+  **[!UICONTROL Max Value]**: total mängd installerat minne.
 
-   **[!UICONTROL Available]**: mängden tillgängligt minne.
+  **[!UICONTROL Available]**: mängden tillgängligt minne.
 
-   **[!UICONTROL Warning]**: den här indikatorn visas när minnesförbrukningen når 80 % av den totala mängden.
+  **[!UICONTROL Warning]**: den här indikatorn visas när minnesförbrukningen når 80 % av den totala mängden.
 
-   **[!UICONTROL Alert]**: den här indikatorn visas när minnesförbrukningen når 90 % av den totala mängden.
+  **[!UICONTROL Alert]**: den här indikatorn visas när minnesförbrukningen når 90 % av den totala mängden.
 
-   När **[!UICONTROL Warning]** och **[!UICONTROL Alert]** visas så kan du lösa problemet genom att lägga till RAM-minne på den dator där Adobe Campaign-servern är installerad. Du kan också välja att installera Adobe Campaign-servern på en dedikerad dator.
+  När **[!UICONTROL Warning]** och **[!UICONTROL Alert]** visas så kan du lösa problemet genom att lägga till RAM-minne på den dator där Adobe Campaign-servern är installerad. Du kan också välja att installera Adobe Campaign-servern på en dedikerad dator.
 
-* **[!UICONTROL Swap Memory]**: information om det virtuella minnet som matchar en växlingsfil: ett område på hårddisken som används som RAM.
+* **[!UICONTROL Swap Memory]**: information om det virtuella minne som matchar en växlingsfil: ett område på hårddisken som används som om det vore RAM.
 
-   **[!UICONTROL Current value]**: faktisk minnesförbrukning.
+  **[!UICONTROL Current value]**: faktisk minnesförbrukning.
 
-   **[!UICONTROL Max Value]**: den totala mängden minne.
+  **[!UICONTROL Max Value]**: total mängd minne.
 
-   **[!UICONTROL Available]**: mängden tillgängligt minne.
+  **[!UICONTROL Available]**: mängden tillgängligt minne.
 
-   **[!UICONTROL Warning]**: den här indikatorn visas när minnesförbrukningen når 80 % av den totala mängden.
+  **[!UICONTROL Warning]**: den här indikatorn visas när minnesförbrukningen når 80 % av den totala mängden.
 
-   **[!UICONTROL Alert]**: den här indikatorn visas när minnesförbrukningen når 90 % av den totala mängden.
+  **[!UICONTROL Alert]**: den här indikatorn visas när minnesförbrukningen når 90 % av den totala mängden.
 
-   När **[!UICONTROL Warning]** och **[!UICONTROL Alert]** visas så kan du lösa problemet genom att öka utbytesfilens storlek.
+  När **[!UICONTROL Warning]** och **[!UICONTROL Alert]** visas så kan du lösa problemet genom att öka utbytesfilens storlek.
 
-* **[!UICONTROL Core Files]**: Information om de filer som genererats efter kraschen i en Adobe Campaign-process. Med de här filerna kan du diagnostisera orsaken till kraschen.
+* **[!UICONTROL Core Files]**: information om de filer som genereras efter kraschen i en Adobe Campaign-process. Med de här filerna kan du diagnostisera orsaken till kraschen.
 
-   **[!UICONTROL Current Value]**: antal befintliga filer.
+  **[!UICONTROL Current Value]**: antal befintliga filer.
 
-   **[!UICONTROL Max Value]**: maximalt antal tillåtna filer (1).
+  **[!UICONTROL Max Value]**: högsta antal tillåtna filer (1).
 
-   **[!UICONTROL Warning]**: den här indikatorn visas när antalet filer blir 1.
+  **[!UICONTROL Warning]**: den här indikatorn visas när antalet filer blir 1.
 
-   **[!UICONTROL Alert]**: den här indikatorn visas när antalet filer är lika med 1.
+  **[!UICONTROL Alert]**: den här indikatorn visas när antalet filer är lika med 1.
 
-   När en process saknas på grund av en krasch visas den i rött i listan över processer och startas om automatiskt av **övervakningsenhet** från Adobe Campaign.
+  När en process saknas på grund av en krasch visas den i rött i listan över processer och startas om automatiskt av **övervakningsenhet** från Adobe Campaign.
 
-* **[!UICONTROL Number of shared memory segments]**: Information om de minnessegment som delas av alla Adobe Campaign-processer.
+* **[!UICONTROL Number of shared memory segments]**: information om de minnessegment som delas av alla Adobe Campaign-processer.
 
-   **[!UICONTROL Current value]**: antalet minnessegment som används.
+  **[!UICONTROL Current value]**: antal minnessegment som används för närvarande.
 
-   **[!UICONTROL Max Value]**: maximalt antal tillåtna minnessegment (2).
+  **[!UICONTROL Max Value]**: maximalt antal tillåtna minnessegment (2).
 
-   **[!UICONTROL Warning]**: den här indikatorn visas när antalet minnessegment når 1.
+  **[!UICONTROL Warning]**: den här indikatorn visas när antalet minnessegment når 1.
 
-   **[!UICONTROL Alert]**: den här indikatorn visas när antalet minnessegment når 2.
+  **[!UICONTROL Alert]**: den här indikatorn visas när antalet minnessegment når 2.
 
-* **[!UICONTROL Number of processes too old]**: Information om processer som har varit aktiva i över en dag.
+* **[!UICONTROL Number of processes too old]**: information om processer som har varit aktiva i över en dag.
 
-   **[!UICONTROL Current value]**: antalet aktiva processer.
+  **[!UICONTROL Current value]**: antal aktiva processer.
 
-   **[!UICONTROL Max Value]**: maximalt antal auktoriserade processer.
+  **[!UICONTROL Max Value]**: maximalt antal auktoriserade processer.
 
-   **[!UICONTROL Warning]**: den här indikatorn visas när antalet processer når 80 % av det godkända tröskelvärdet.
+  **[!UICONTROL Warning]**: den här indikatorn visas när antalet processer når 80 % av det godkända tröskelvärdet.
 
-   **[!UICONTROL Alert]**: den här indikatorn visas när antalet processer når 90 % av det godkända tröskelvärdet.
+  **[!UICONTROL Alert]**: den här indikatorn visas när antalet processer når 90 % av det godkända tröskelvärdet.
 
-* **[!UICONTROL File Handles]**: Information om filbeskrivningarna, dvs. antalet filer som öppnas per process.
+* **[!UICONTROL File Handles]**: information om filbeskrivningarna, dvs. antalet filer som öppnas per process.
 
-   **[!UICONTROL Current value]**: aktuellt antal filbeskrivare.
+  **[!UICONTROL Current value]**: aktuellt antal filbeskrivare.
 
-   **[!UICONTROL Max Value]**: maximalt antal filbeskrivare som tillåts av operativsystemet.
+  **[!UICONTROL Max Value]**: maximalt antal filbeskrivare som tillåts av operativsystemet.
 
-   **[!UICONTROL Warning]**: den här indikatorn visas när antalet godkända filbeskrivare når 80 %-tröskelvärdet.
+  **[!UICONTROL Warning]**: den här indikatorn visas när antalet godkända filbeskrivare når 80 %-tröskelvärdet.
 
-   **[!UICONTROL Alert]**: den här indikatorn visas när antalet godkända filbeskrivare når tröskelvärdet 90 %.
+  **[!UICONTROL Alert]**: den här indikatorn visas när antalet godkända filbeskrivare når tröskelvärdet 90 %.
 
-* **[!UICONTROL Processes]**: Information om maskinprocesserna.
+* **[!UICONTROL Processes]**: information om datorprocesserna.
 
-   **[!UICONTROL Current value]**: antalet aktiva processer.
+  **[!UICONTROL Current value]**: antal aktiva processer.
 
-   **[!UICONTROL Max Value]**: maximalt antal auktoriserade processer.
+  **[!UICONTROL Max Value]**: maximalt antal auktoriserade processer.
 
-   **[!UICONTROL Active Processes]**: antal aktiva processer.
+  **[!UICONTROL Active Processes]**: antal aktiva processer.
 
-   **[!UICONTROL Inactive Processes]**: antal inaktiva processer.
+  **[!UICONTROL Inactive Processes]**: antal inaktiva processer.
 
-   **[!UICONTROL Warning]**: den här indikatorn visas när antalet auktoriserade processer når 80 %-tröskelvärdet.
+  **[!UICONTROL Warning]**: den här indikatorn visas när antalet auktoriserade processer når 80 %-tröskelvärdet.
 
-   **[!UICONTROL Alert]**: den här indikatorn visas när antalet auktoriserade processer når tröskelvärdet på 90 %.
+  **[!UICONTROL Alert]**: den här indikatorn visas när antalet auktoriserade processer når tröskelvärdet på 90 %.
 
 * **[!UICONTROL Zombie Processes]**: information om processer som har stoppats men fortfarande har en process-ID (PID) och som fortfarande är synlig i processtabellen.
 
-   **[!UICONTROL Current value]**: antalet zoomprocesser som för närvarande är aktiva.
+  **[!UICONTROL Current value]**: antal zoomprocesser som är aktiva.
 
-   **[!UICONTROL Max Value]**: maximalt antal auktoriserade zombieprocesser (2).
+  **[!UICONTROL Max Value]**: maximalt antal tillåtna zobiprocesser (2).
 
-   **[!UICONTROL Warning]**: den här indikatorn visas när antalet zoomprocesser närmar sig 2.
+  **[!UICONTROL Warning]**: den här indikatorn visas när antalet zoomprocesser närmar sig 2.
 
-   **[!UICONTROL Alert]**: den här indikatorn visas när antalet zoomprocesser når 2.
+  **[!UICONTROL Alert]**: den här indikatorn visas när antalet zombieprocesser når 2.
 
 #### Anpassa indikatorer {#customized-indicators}
 
@@ -240,7 +241,7 @@ Med Adobe Campaign kan du anpassa indikatorerna enligt nedan:
 
 1. Spara filen i **[!UICONTROL usr/local/neolane/nl6]** mapp.
 
-Den här filen anropas av Adobe Campaign.
+Filen anropas av Adobe Campaign.
 
 ## SMTP-rapporter {#smtp-reports}
 
@@ -258,8 +259,7 @@ De grupperas under **Övervakning** > SMTP-övervakning.
 >* The **[!UICONTROL SMTP sending statistics]** visas bara om statistikservern har startats på instansen.
 >
 
-
-### SMTP-överföringsstatistik {#smtp-sending-statistics}
+### Sändningsstatistik för SMTP {#smtp-sending-statistics}
 
 The **[!UICONTROL SMTP sending statistics]** kan du styra serveraktiviteten. Den visar en syntes av varje dator.
 
@@ -270,11 +270,11 @@ Listan över indikatorer för den här rapporten visas under diagrammet.
 1. Totalt antal skickade meddelanden.
 1. Representerar in-/utmeddelanden:
 
-   * Blå linje: meddelanden som är klara att skickas och som anlänt till Shaper, dvs. sista steget innan SMTP skickas (sammanfaller med inkommande data).
+   * Blå linje: meddelanden som är klara för att skickas och som anlänt till Shaper, dvs. sista steget innan SMTP skickas (sammanfaller med inkommande data).
 
    * Grön linje: meddelanden har skickats (sammanfaller med utgående data).
 
-   * Röd linje: meddelanden som överges av Shaper, returneras till **mta** (sammanfaller med de uppgifter som avvisats vid denna återställning).
+   * Röd linje: meddelanden överges av Shaper, returneras till **mta** (sammanfaller med de uppgifter som avvisats vid denna återställning).
 
    Dessa värden uttrycks i antal meddelanden per timme.
 
@@ -284,7 +284,7 @@ Listan över indikatorer för den här rapporten visas under diagrammet.
 
    * Kaki-kurva: kön med fördröjda överföringar. Dessa meddelanden kan inte returneras för tillfället på grund av begränsning eller på grund av att det inte finns någon anslutning till målet. Försök görs var femte, tionde, tionde, 20:e, 40:e, 2:a minut, osv. för den definierade **MaxAgeSec** tiden innan de överges.
 
-1. I den här tabellen visas en detalj av övergivna meddelanden (röd kurva i det andra diagrammet): visar hur många meddelanden som har övergetts utan återförsök (mauve) jämfört med meddelanden vars sändning misslyckades (red). På så sätt kan du visa andelen meddelanden som inte har bearbetats inom den angivna perioden på grund av begränsningar i statistikservern (strypning) eller på grund av att fjärrservern inte är tillgänglig.
+1. Diagrammet visar en detalj av övergivna meddelanden (röd kurva i det andra diagrammet): visar andelen meddelanden som överges utan återförsök (mauve) jämfört med meddelanden vars sändning misslyckades (röd). På så sätt kan du visa andelen meddelanden som inte har bearbetats inom den angivna perioden på grund av begränsningar i statistikservern (strypning) eller på grund av att fjärrservern inte är tillgänglig.
 1. SMTP-anslutningar öppnas eller öppnas.
 1. Uppskattning av antalet **mtachild**.
 
@@ -304,10 +304,10 @@ Med den här rapporten kan du visa leveransfel, under en angiven period, uppdela
 
 Förteckningen över indikatorer för denna rapport visas under tabellen.
 
-* The **Domän** kolumnen innehåller namnet på den domän som meddelandena skickas till (eller det riktiga domännamnet yahoo.com för yahoo.fr till exempel),
+* The **Domän** kolumnen innehåller namnet på den domän som meddelandena skickas till (eller det riktiga domännamnet, t.ex. yahoo.com for yahoo.fr),
 * The **Cnx** kolumnen visar antalet öppna SMTP-anslutningar för den här domänen,
 * The **Skickat** kolumnen motsvarar antalet meddelanden som skickas till den här domänen,
-* The **Volym** kolumnen visar mängden meddelanden som har försökt skickas till den här domänen (ungefärligt värde),
+* The **Volym** kolumnen visar mängden meddelanden som har försökt att skickas till den här domänen (ungefärligt värde),
 * The **Fel** kolumnen visar en volymindikator för fel i den här domänen under perioden,
 * The **Senaste svar** kolumnen visar det senaste SMTP-svarsmeddelandet som tagits emot för den här domänen,
 * The **Datum** kolumn visar datumet för det senaste SMTP-svaret som togs emot för den här domänen.
@@ -318,7 +318,7 @@ Förteckningen över indikatorer för denna rapport visas under tabellen.
 
 Klicka på ett domännamn för att visa felen.
 
-De kategoriseras av PublicId: den här identifieraren motsvarar en IP-adress som delas av flera Adobe Campaign-matriser bakom en router. Statistikservern använder den här identifieraren för att memorera anslutningen och leveransstatistiken mellan den här startpunkten och målservern.
+De kategoriseras av PublicId: den här identifieraren motsvarar en IP-adress som delas av flera Adobe Campaign-datorer bakom en router. Statistikservern använder den här identifieraren för att memorera anslutningen och leveransstatistiken mellan den här startpunkten och målservern.
 
 ![](assets/smtp_error_report_details.png)
 
@@ -351,9 +351,9 @@ När arbetsflödet har startats var 25:e månad får din faktureringsoperatör f
 Följande mätvärden finns för att spåra dina leveranser:
 
 * **[!UICONTROL Start date]** : Startdatum för leveransen. Observera att det kan vara tidigare än rapportens &quot;från&quot;-datum.
-* **[!UICONTROL Label]** : Leveransens etikett. Leveranser som har färre än 100 meddelanden att skicka anses vara för små och därmed aggregerade efter startdatum, i vilket fall etiketten visar antalet aggregat, t.ex. [Sammanläggning av tre små leveranser].
+* **[!UICONTROL Label]** : Etikett på leveransen. Leveranser som har färre än 100 meddelanden att skicka anses vara för små och därmed aggregerade efter startdatum, i vilket fall etiketten visar antalet aggregat, t.ex. [Sammanläggning av tre små leveranser].
 * **[!UICONTROL Total volume]** : Total volym överförda byte för leveransen.
-* **[!UICONTROL Avg volume]** : Genomsnittlig volym överförda byte. Detta är resultatet av följande formel **(total volym/meddelanden)**, som är beräkningsgrunden för **[!UICONTROL Multiplier]** mätvärden.
+* **[!UICONTROL Avg volume]** : Genomsnittlig mängd överförda byte. Detta är resultatet av följande formel **(total volym/meddelanden)**, som är beräkningsgrunden för **[!UICONTROL Multiplier]** mätvärden.
 * **[!UICONTROL Messages]** : Antal skickade meddelanden. Detta inkluderar både meddelanden som har skickats och försök igen (efter att ett studsmeddelande har tagits emot från den kontaktade servern).
 * **[!UICONTROL Multiplier (x)]** : Multiplikatorns värde dras från meddelandets genomsnittliga volym.
 * **[!UICONTROL Count]** : Resultat av multiplikationen av meddelandena och multiplikatorn.
@@ -394,13 +394,13 @@ Här visas en rad som den här i XML-format:
 <redir status='OK' date='YYYY-MM-DD HH:MM:SS.112Z' build='XXXX' host='<hostname>' localHost='<servername>'/>
 ```
 
-**Frekvens**: Denna provning kräver ingen belastning och kan därför köras mycket ofta (t.ex. en gång i sekunden).
+**Frekvens**: det här testet använder ingen belastning och kan därför köras mycket ofta (t.ex. en gång i sekunden).
 
 #### /nl/jsp/ping.jsp {#nl-jsp-ping-jsp}
 
-Detta **http(s)://`<Application server url>`/nl/jsp/ping.jsp**  sidan fungerar på samma sätt som motsvarande sida i nätverket: Den testar en fullständig fråga som går igenom apache/tomcat/web module/database och överför till klienten. Om allt fungerar som det ska returneras&quot;OK&quot;. Vi rekommenderar att du kör det här testet på datorer med tillgång till databaser (t.ex. matriser och enkäter).
+Detta **http(s)://`<Application server url>`/nl/jsp/ping.jsp**  -sidan fungerar på samma sätt som motsvarande nätverkstjänst: den testar en fullständig fråga som går igenom apache/tomcat/web module/database och överför till klienten. Om allt fungerar som det ska returneras&quot;OK&quot;. Vi rekommenderar att du kör det här testet på datorer med tillgång till databaser (t.ex. matriser och enkäter).
 
-**Användning**: en sessionstoken som är associerad med en användarinloggning måste skickas som ett argument för att fjärrinloggning ska kunna ske (se tipset i [Automatisk övervakning via Adobe Campaign-skript](#automatic-monitoring-via-adobe-campaign-scripts)).
+**Användning**: en sessionstoken som är associerad med en operatorinloggning måste skickas som ett argument för att fjärrinloggning ska kunna ske (se tipset i [Automatisk övervakning via Adobe Campaign-skript](#automatic-monitoring-via-adobe-campaign-scripts)).
 
 Exempel:
 
@@ -410,11 +410,11 @@ Operatornamnet och inloggningen måste tidigare konfigureras i Adobe Campaign kl
 
 ![](assets/ncs_operators_rights_01.png)
 
-**Frekvens**: detta är ett test som använder mycket liten bandbredd. Den kan därför köras ganska ofta, men inte mer än en gång per minut.
+**Frekvens**: det här är ett test som använder mycket liten bandbredd. Den kan därför köras ganska ofta, men inte mer än en gång per minut.
 
 #### /nl/jsp/monitor.jsp {#nl-jsp-monitor-jsp}
 
-Detta är ett test för att kontrollera att en operatör har åtkomst till Adobe Campaign-servern via en webbsida. samma webbsida som den som öppnas via klientkonsolmenyerna. Du kan ringa upp den här sidan från dina övervakningsverktyg (Tivoli, Nagios, etc.).
+Detta är ett test för att kontrollera att en operatör kan komma åt Adobe Campaign-servern via en webbsida, samma webbsida som den som nås via klientkonsolmenyerna. Du kan ringa upp den här sidan från dina övervakningsverktyg (Tivoli, Nagios, etc.).
 
 ![](assets/ncs_monitoring_web.png)
 
@@ -426,7 +426,7 @@ Operatorn och inloggningen måste konfigureras tidigare i Adobe Campaign klientk
 
 #### /nl/jsp/soaprouter.jsp {#nl-jsp-soaprouter-jsp}
 
-Detta **jsp** representerar ingångspunkten för API:er för Adobe Campaign-program. Den kan därför ge detaljerad övervakning av ansökan. Den kan också användas för att övervaka Adobe Campaign webbtjänster. Det används i våra övervakningsskript, men observera att det endast är för avancerade användare.
+Detta **jsp** representerar ingångspunkten för Adobe Campaign API:er. Den kan därför ge detaljerad övervakning av ansökan. Den kan också användas för att övervaka Adobe Campaign webbtjänster. Det används i våra övervakningsskript, men observera att det endast är för avancerade användare.
 
 ### Övervakning baserad på distributionstyper {#monitoring-based-on-deployment-types}
 
@@ -487,7 +487,7 @@ Adobe Campaign kan tillhandahålla ett instansövervakningsverktyg (netreport) s
 
 Följande förinstallationsanvisningar krävs för automatisk övervakning:
 
-* Du måste ha **netreport.tgz** (Linux-installation) eller **netreport.zip** (Windows-installation),
+* Du måste ha **netreport.tgz** (Linux-installation) eller **netreport.zip** filer (Windows-installation),
 * Vi rekommenderar att du inte installerar övervakning på den dator som ska övervakas,
 * Den måste vara installerad på en dator med JRE eller JDK.
 * i Linux måste datorn som ska övervakas ha **bc** paket. Mer information om detta finns i [det här avsnittet](../../installation/using/installing-packages-with-linux.md#distribution-based-on-rpm--packages).
@@ -541,7 +541,7 @@ Här är ett konfigurationsexempel:
 
 >[!NOTE]
 >
->Du kan ange olika konfigurationer genom att lägga till ett suffix i **netconf.xml** file, till exempel **netconf-dev.xml**, **netconf-prod.xml**, osv. Ange sedan den konfiguration som ska användas för att köra netrapporten i **netreport.bat** eller **netreport.sh** filer genom att lägga till **$JAVA_HOME/bin/java netreport dev** eller **@%JAVA_HOME%binjava netreport prod** till exempel.
+>Du kan ange olika konfigurationer genom att lägga till ett suffix i **netconf.xml** file, till exempel **netconf-dev.xml**, **netconf-prod.xml**, osv. Ange sedan den konfiguration som ska användas för att köra netreport i dialogrutan **netreport.bat** eller **netreport.sh** filer genom att lägga till **$JAVA_HOME/bin/java netreport dev** eller **@%JAVA_HOME%binjava netreport prod** till exempel.
 
 >[!IMPORTANT]
 >
@@ -551,17 +551,17 @@ Här är ett konfigurationsexempel:
 
 Det här elementet används för att fylla i konfigurationen av e-postmeddelanden, dvs.
 
-* **mailServer**: SMTP-server som används för att skicka e-post (t.ex.: smtp.domain.net).
-* **mailFrom**: Rapportavsändarens e-postadress (t.ex.: monitoring@domain.net).
-* **receiveList**: en lista över e-postadresser till mottagare som övervakas. Adresser måste avgränsas med kommatecken (inga blanksteg).
+* **mailServer**: SMTP-server som används för att skicka e-post (t.ex. smtp.domain.net).
+* **mailFrom**: rapportavsändarens e-postadress (t.ex. monitoring@domain.net).
+* **receiveList**: listan över e-postadresser till mottagare som övervakas. Adresser måste avgränsas med kommatecken (inga blanksteg).
 * &#39;**natt** Läget (valfritt) används för att undvika att skicka e-post mellan den angivna tidsperioden. I stället konsolideras data och ett e-postmeddelande om nattens aktivitet skickas efter sluttiden (7:00 som standard).
 * The **buildRange** subelement (valfritt) gör att du kan ange ett lägsta och högsta build-nummer. Ett fel genereras för alla datorer vars build-nummer inte faller inom detta intervall
 
-   ```
-   <buildRange minimum="0000" maximum="9999"/>
-   ```
+  ```
+  <buildRange minimum="0000" maximum="9999"/>
+  ```
 
-* Du kan lägga till en **`<sla>`** (valfritt) delelement i **egenskaper** -element. En loggfil genereras varje gång netreport körs. Namnet på filen innehåller till exempel konfigurationsnamnet och datum och tid **dev_06_12_13_16_47_05.tmp**. Filen innehåller följande information: instansnamn, datornamn, allvarlighetsgrad, (0 till 3, från minst kritiskt till mest kritiskt), datum (tidsstämpelformat), förfluten tid (i millisekunder) mellan frågan och svaret, vilken tjänst som används (http, ncs, ncsex, redir). Den här informationen avgränsas av tabellmärken och radbrytningar i slutet av varje tjänst.
+* Du kan lägga till en **`<sla>`** (valfritt) delelement i **egenskaper** -element. En loggfil genereras varje gång netreport körs. Namnet på filen innehåller till exempel konfigurationsnamnet och datum och tid **dev_06_12_13_16_47_05.tmp**. Filen innehåller följande information: instansnamn, datornamn, allvarlighetsgrad, (0 till 3, från minst kritisk till mest kritisk), datum (tidsstämpelformat), förfluten tid (i millisekunder) mellan frågan och svaret, vilken tjänst som används (http, ncs, ncsex, redir). Den här informationen avgränsas av tabellmärken och radbrytningar i slutet av varje tjänst.
 
 >[!NOTE]
 >
@@ -569,7 +569,7 @@ Det här elementet används för att fylla i konfigurationen av e-postmeddelande
 
 #### Instance-element {#instance--element}
 
-Med det här elementet kan du gruppera om flera datorer (värdar) till samma instans. Instansnamnen visas i den första delen av övervaknings-e-postmeddelandet. Du kan klicka på namnet på en instans för att få information om varje dator.
+Med det här elementet kan du gruppera om flera datorer (värdar) till samma instans. Instansnamnen visas i den första delen av övervakningsmeddelandet. Du kan klicka på namnet på en instans för att få information om varje dator.
 
 ```
 instance name="instance-name" recipientList="mail@mail.com,mail2@mail.com">
@@ -583,28 +583,28 @@ instance name="instance-name" recipientList="mail@mail.com,mail2@mail.com">
 ```
 
 * **name**: instansnamn som ska visas i den första delen av e-postmeddelandet.
-* **receiveList** (valfritt): Med kan du skicka en övervakningsrapport för en viss instans via e-post.
+* **receiveList** (valfritt): gör att du kan skicka en övervakningsrapport för en viss instans via e-post.
 
 #### Värdelement {#host--element}
 
 Detta element konfigurerar övervakningen av en viss server på värden, dvs.
 
-* **name**: namnet på datorn som ska övervakas.
+* **name**: namn på datorn som ska övervakas.
 * **alias** (valfritt): namnet på den övervakade datorn så som den kommer att visas i rapporten.
 * **sessionToken**: tillhandahåller inloggningsautentisering via en auktoriserad sessionstoken.
 
-   Om du vill konfigurera sessionstoken väljer du **övervakning** i Adobe Campaign Console. I **Åtkomsträttigheter** anger du IP-adresserna till de datorer som har behörighet att övervaka den här instansen. Sedan kan du ansluta till övervakningssidan från de datorerna med **övervakning** identifierare och utan att behöva ange ett lösenord.
+  Om du vill konfigurera sessionstoken väljer du **övervakning** i Adobe Campaign Console. I **Åtkomsträttigheter** anger du IP-adresserna till de datorer som har behörighet att övervaka den här instansen. Sedan kan du ansluta till övervakningssidan från de datorerna med **övervakning** och utan att behöva ange ett lösenord.
 
-   ![](assets/ncs_operators_rights_02.png)
+  ![](assets/ncs_operators_rights_02.png)
 
-* **criticalLevel** (valfritt): I kan du sortera fel som ska visas efter allvarlighetsgrad. Möjliga värden är &#39;0&#39; (alla nivåer visas), &#39;1&#39; (endast stora och kritiska fel visas) och &#39;2&#39; (endast kritiska fel visas). Om attributet inte anges visas alla felnivåer.
-* **filter** (valfritt): kan du t.ex. utesluta vissa arbetsflödesfel **filter=&quot;wkf;wkf1&quot;**. Arbetsflödesetiketter måste separeras med semikolon.
+* **criticalLevel** (valfritt): gör att du kan sortera fel som visas efter allvarlighetsgrad. Möjliga värden är &#39;0&#39; (alla nivåer visas), &#39;1&#39; (endast stora och kritiska fel visas) och &#39;2&#39; (endast kritiska fel visas). Om det här attributet inte anges visas alla felnivåer.
+* **filter** (valfritt): gör att du kan utesluta vissa arbetsflödesfel, till exempel **filter=&quot;wkf;wkf1&quot;**. Arbetsflödesetiketter måste separeras med semikolon.
 
 #### Underelement {#sub-elements}
 
 * **tcp**: kontrollerar om servern är upp eller ned. Du måste ange ett portnummer.
 * **http**: kontrollerar att webbservern finns (programservern fungerar).
-* **ncs**: kontrollerar processerna för instansen som anges i instansattributet (arbetsflödesfel, minnesanvändning osv.). The **ingår** (obligatoriskt) ger dig möjlighet att visa döda processer (&#39;true&#39; eller &#39;false&#39;-värden).
+* **ncs**: kontrollerar processerna för instansen som anges i attributet instance (arbetsflödesfel, minnesanvändning osv.). The **ingår** (obligatoriskt) ger dig möjlighet att visa döda processer (&#39;true&#39; eller &#39;false&#39;-värden).
 * **redir**: kontrollerar spårningen.
 
 I de flesta fall är det bara **ncs** och **redir** underelement kan behållas.

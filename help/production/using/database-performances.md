@@ -2,16 +2,17 @@
 product: campaign
 title: Databasprestanda
 description: Databasprestanda
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
-badge-v7-prem: label="on-premise & hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html" tooltip="Applies to on-premise and hybrid deployments only"
+feature: Monitoring
+badge-v7-only: label="v7" type="Informative" tooltip="Gäller endast Campaign Classic v7"
+badge-v7-prem: label="lokal och hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=sv" tooltip="Gäller endast lokala och hybrida driftsättningar"
 audience: production
 content-type: reference
 topic-tags: troubleshooting
 exl-id: 33dcfd4b-51fd-44f4-98e0-23eafb79d7da
-source-git-commit: 4661688a22bd1a82eaf9c72a739b5a5ecee168b1
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '481'
-ht-degree: 8%
+source-wordcount: '506'
+ht-degree: 10%
 
 ---
 
@@ -74,7 +75,7 @@ Kontrollera antal och storlek på arbetsregister. När de överskrider en viss s
 
 Beroende på Adobe Campaign installationsinställningar kan två verktyg användas för plattformsövervakning:
 
-* Produktionssidan för instansen. Mer information finns i [Manuell övervakning](../../production/using/monitoring-processes.md#manual-monitoring).
+* Instansproduktionssidan. Mer information finns i [Manuell övervakning](../../production/using/monitoring-processes.md#manual-monitoring).
 * The *netreport* skript. Mer information finns i [Automatisk övervakning via Adobe Campaign-skript](../../production/using/monitoring-processes.md#automatic-monitoring-via-adobe-campaign-scripts).
 
 ## Specifikationer {#specifics}

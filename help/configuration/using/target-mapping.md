@@ -2,12 +2,13 @@
 product: campaign
 title: Målmappning
 description: Lär dig hur du skapar en målmappning
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
+feature: Application Settings
+badge-v7: label="v7" type="Informative" tooltip="Gäller Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Gäller även Campaign v8"
 exl-id: 38333669-5598-4811-a121-b677c1413f56
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '490'
+source-wordcount: '502'
 ht-degree: 2%
 
 ---
@@ -33,7 +34,7 @@ Gör så här:
 
    Mer information finns i [Schemareferens (xtk:srcSchema)](../../configuration/using/about-schema-reference.md).
 
-   I vårt exempel kommer vi att skapa ett kundschema, en mycket enkel tabell som innehåller följande fält: ID, förnamn, efternamn, e-postadress, mobiltelefonnummer. Syftet är att kunna skicka e-post- eller SMS-aviseringar till de personer som lagras i tabellen.
+   I vårt exempel skapar vi ett kundschema, en mycket enkel tabell som innehåller följande fält: ID, förnamn, efternamn, e-postadress, mobiltelefonnummer. Syftet är att kunna skicka e-post- eller SMS-aviseringar till de personer som lagras i tabellen.
 
    Exempelschema (cus:individual)
 

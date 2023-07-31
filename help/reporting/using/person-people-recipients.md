@@ -2,13 +2,13 @@
 product: campaign
 title: Person, personer och mottagare
 description: Person, personer och mottagare
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
-feature: Reporting
+badge-v7: label="v7" type="Informative" tooltip="Gäller Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Gäller även Campaign v8"
+feature: Reporting, Monitoring
 exl-id: 69b810f3-aa8b-4ab5-95c1-831257d7fcb9
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '703'
+source-wordcount: '715'
 ht-degree: 5%
 
 ---
@@ -34,7 +34,7 @@ Tre länkar läggs till i en leverans. Det skickas till fyra mottagare:
 ![](assets/s_ncs_user_indicators_example_1.png)
 
 * **[!UICONTROL John Davis]** : den här mottagaren öppnar inte e-postmeddelandet (och klickar därför inte på några länkar).
-* **[!UICONTROL Marie Stuart]** : öppnar e-postmeddelandet, men klickar inte på några länkar.
+* **[!UICONTROL Marie Stuart]** : öppnar e-postmeddelandet men klickar inte på några länkar.
 * **[!UICONTROL Florian David]** : öppnar e-postmeddelandet och klickar på länkarna 9 gånger. Han vidarebefordrar också e-postmeddelandet till någon som öppnar det och klickar två gånger.
 * **[!UICONTROL Henry Macdonald]** : den här mottagaren har konfigurerat sin webbläsare att avvisa cookies. Han öppnar e-postmeddelandet och klickar på länkarna fyra gånger.
 
@@ -54,7 +54,7 @@ Eftersom John varken öppnade eller klickade i e-postmeddelandet visas han inte 
 
 **Mellanliggande beräkning:**
 
-|  | Mottagare som klickade | Personer som klickade | Mottagare som öppnat |
+|   | Mottagare som klickade | Personer som klickade | Mottagare som öppnat |
 |---|---|---|---|
 | John | - | - | - |
 | Mellanliggande summa | 0 | 0 | 0 |
@@ -73,7 +73,7 @@ Marie&#39;s open visas i följande logg:
 
 **Mellanliggande beräkning:**
 
-|  | Mottagare som klickade | Personer som klickade | Mottagare som öppnat |
+|   | Mottagare som klickade | Personer som klickade | Mottagare som öppnat |
 |---|---|---|---|
 | John | - | - | - |
 | Marie | - | - | +1 |
@@ -89,13 +89,13 @@ Florians åtgärder (ett öppet och nio klick) visas i följande loggar:
 
 ![](assets/s_ncs_user_indicators_example_3bis.png)
 
-**Mottagare**: öppna och klickningar tilldelas samma mottagare (Florian). Eftersom den här mottagaren inte är samma som den tidigare (Marie) lägger Adobe Campaign till en ny mottagare i räkningen.
+**Mottagare**: öppningen och klickningarna tilldelas samma mottagare (Florian). Eftersom den här mottagaren inte är samma som den tidigare (Marie) lägger Adobe Campaign till en ny mottagare i räkningen.
 
 Folk: Eftersom den här mottagarens webbläsare accepterar cookies ser vi att samma identifierare (UUID) är tilldelad alla klickningsloggar: **`fe37a503 [...]`**. Adobe Campaign identifierar dessa klickningar som tillhör samma person. En ny person läggs till i antalet.
 
 **Mellanliggande beräkning:**
 
-|  | Mottagare som klickade | Personer som klickade | Mottagare som öppnat |
+|   | Mottagare som klickade | Personer som klickade | Mottagare som öppnat |
 |---|---|---|---|
 | John | - | - | - |
 | Marie | - | - | +1 |
@@ -110,13 +110,13 @@ Följande loggar sammanfaller med de öppna och två klick som utförts av den p
 
 ![](assets/s_ncs_user_indicators_example_12.png)
 
-**Folk**: När det gäller klickningar ser vi att samma identifierare (UUID) har tilldelats alla loggar: **`9ab648f9 [...]`**. Den här identifieraren har inte räknats än. En ny person läggs därför till i räkningen.
+**Folk**: när det gäller klickningar ser vi att samma identifierare (UUID) är tilldelad alla loggar: **`9ab648f9 [...]`**. Den här identifieraren har inte räknats än. En ny person läggs därför till i räkningen.
 
 ![](assets/s_ncs_user_indicators_example_13.png)
 
 **Mellanliggande beräkning:**
 
-|  | Mottagare som klickade | Personer som klickade | Mottagare som öppnat |
+|   | Mottagare som klickade | Personer som klickade | Mottagare som öppnat |
 |---|---|---|---|
 | John | - | - | - |
 | Marie | - | - | +1 |
@@ -134,13 +134,13 @@ De öppna och fyra klick som Henry utför visas i följande loggar:
 
 ![](assets/s_ncs_user_indicators_example_5bis.png)
 
-**Mottagare**: öppna och klicka tilldelas samma mottagare (Henry). Eftersom den här mottagaren inte har räknats ännu lägger Adobe Campaign till en mottagare i räkningen.
+**Mottagare**: öppningen och klickningarna tilldelas samma mottagare (Henry). Eftersom den här mottagaren inte har räknats ännu lägger Adobe Campaign till en mottagare i räkningen.
 
 **Folk**: Eftersom Henrys webbläsare inte accepterar cookies genereras en ny identifierare (UUID) för varje klick. Var och en av de fyra klickningarna tolkas som att de kommer från en annan person. Eftersom dessa identifierare inte har räknats än läggs de till i räkningen.
 
 **Mellanliggande beräkning:**
 
-|  | Mottagare som klickade | Personer som klickade | Mottagare som öppnat |
+|   | Mottagare som klickade | Personer som klickade | Mottagare som öppnat |
 |---|---|---|---|
 | John | - | - | - |
 | Marie | - | - | +1 |
@@ -172,5 +172,4 @@ Raw-reaktivitet och uppskattning av framåtriktade beräkningar görs enligt fö
 >
 >* A representerar **[!UICONTROL Clicks]** -indikator (mottagare som klickade).
 >* B representerar **[!UICONTROL Distinct clicks for the population reached]** -indikator (personer som klickade).
->* C representerar **[!UICONTROL Distinct opens for the population reached]** -indikator (mottagare som öppnade).
-
+>* C representerar **[!UICONTROL Distinct opens for the population reached]** -indikator (mottagare som öppnat).

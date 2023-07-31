@@ -1,16 +1,17 @@
 ---
 product: campaign
 title: Konfigurera åtkomst till Vertica analytics
-description: Lär dig konfigurera åtkomst till Vertica analytics i FDA
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+description: Lär dig hur du konfigurerar åtkomst till Vertica analytics i FDA
+feature: Installation, Federated Data Access
+badge-v7-only: label="v7" type="Informative" tooltip="Gäller endast Campaign Classic v7"
 audience: platform
 content-type: reference
 topic-tags: connectors
 exl-id: 8b2a9c73-807a-4936-9fd6-9d26c805a31f
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '390'
-ht-degree: 2%
+source-wordcount: '397'
+ht-degree: 3%
 
 ---
 
@@ -25,11 +26,11 @@ Använd kampanj **Åtkomst till federerade data** (FDA) om du vill bearbeta info
 
 ![](assets/snowflake_3.png)
 
-## vertica analytics på CentOS {#vertica-centos}
+## Vertica analytics på CentOS {#vertica-centos}
 
 Konfigurera [!DNL Vertica Analytics] i CentOS följer du stegen nedan:
 
-1. Ladda ned ODBC-drivrutiner för [!DNL Vertica Analytics]. [Klicka här](https://www.vertica.com/download/vertica/client-drivers/) och ladda ned senaste Linux RPM.
+1. Hämta ODBC-drivrutiner för [!DNL Vertica Analytics]. [Klicka här](https://www.vertica.com/download/vertica/client-drivers/) och ladda ned senaste Linux RPM.
 
 1. Därefter måste du installera unixODBC med följande kommando:
 
@@ -79,7 +80,7 @@ Konfigurera [!DNL Vertica Analytics] i CentOS följer du stegen nedan:
 
 1. I Adobe Campaign kan du sedan konfigurera [!DNL Vertica Analytics] externt konto. Mer information om hur du konfigurerar ditt externa konto finns i [det här avsnittet](#vertica-external).
 
-## vertica analytics i Windows {#vertica-windows}
+## Vertica analytics i Windows {#vertica-windows}
 
 1. Ladda ned [ODBC-drivrutin för Windows](https://www.vertica.com/download/vertica/client-drivers/). Om du vill installera drivrutinen för Windows måste du aktivera .NET Framework 3.5, annars försöker installationsguiden automatiskt aktivera och hämta den.
 
@@ -87,9 +88,9 @@ Konfigurera [!DNL Vertica Analytics] i CentOS följer du stegen nedan:
 
 1. I Adobe Campaign kan du sedan konfigurera [!DNL Vertica Analytics] externt konto. Mer information om hur du konfigurerar ditt externa konto finns i [det här avsnittet](#vertical-external).
 
-## vertica analytics på Debian {#vertica-debian}
+## Vertica analytics på Debian {#vertica-debian}
 
-1. Ladda ned ODBC-drivrutiner för [!DNL Vertica Analytics]. [Klicka här](https://sfc-repo.snowflakecomputing.com/odbc/linux/latest/index.html) börja ladda ned.
+1. Hämta ODBC-drivrutiner för [!DNL Vertica Analytics]. [Klicka här](https://sfc-repo.snowflakecomputing.com/odbc/linux/latest/index.html) börja ladda ned.
 
 1. Därefter måste du installera unixODBC med följande kommando:
 
@@ -141,7 +142,7 @@ Konfigurera [!DNL Vertica Analytics] i CentOS följer du stegen nedan:
 
 1. I Adobe Campaign kan du sedan konfigurera [!DNL Vertica Analytics] externt konto. Mer information om hur du konfigurerar ditt externa konto finns i [det här avsnittet](#vertica-external).
 
-## vertica analytics externa konto {#vertica-external}
+## Vertica analytics externa konto {#vertica-external}
 
 Du måste skapa en [!DNL Vertica Analytics] externt konto för att ansluta Campaign-instansen till [!DNL Vertica Analytics] extern databas.
 

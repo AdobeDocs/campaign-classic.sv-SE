@@ -2,16 +2,17 @@
 product: campaign
 title: Konfigurering av inställningar för kampanjleverans
 description: Lär dig hur du konfigurerar inställningar för kampanjleverans
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
-badge-v7-prem: label="on-premise & hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html" tooltip="Applies to on-premise and hybrid deployments only"
+feature: Installation, Channel Configuration
+badge-v7-only: label="v7" type="Informative" tooltip="Gäller endast Campaign Classic v7"
+badge-v7-prem: label="lokal och hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=sv" tooltip="Gäller endast lokala och hybrida driftsättningar"
 audience: installation
 content-type: reference
 topic-tags: initial-configuration
 exl-id: 2968d8db-2b4b-48e6-a22e-daba5ffe0576
-source-git-commit: 4661688a22bd1a82eaf9c72a739b5a5ecee168b1
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '462'
-ht-degree: 5%
+source-wordcount: '487'
+ht-degree: 6%
 
 ---
 
@@ -23,13 +24,13 @@ Leveransparametrarna måste konfigureras i **serverConf.xml** mapp.
 
 * **DNS-konfiguration**: ange leveransdomän och IP-adress (eller värd) för de DNS-servrar som används för att svara på DNS-frågor av MX-typ som görs av MTA-modulen från **`<dnsconfig>`** och framåt.
 
-   >[!NOTE]
-   >
-   >The **nameServers** -parametern är nödvändig för en installation i Windows. För en installation i Linux måste den lämnas tom.
+  >[!NOTE]
+  >
+  >The **nameServers** -parametern är nödvändig för en installation i Windows. För en installation i Linux måste den lämnas tom.
 
-   ```
-   <dnsConfig localDomain="domain.com" nameServers="192.0.0.1,192.0.0.2"/>
-   ```
+  ```
+  <dnsConfig localDomain="domain.com" nameServers="192.0.0.1,192.0.0.2"/>
+  ```
 
 Du kan även göra följande konfigurationer beroende på dina behov och inställningar: konfigurera en [SMTP-relä](#smtp-relay), anpassa antalet [MTA-underprocesser](#mta-child-processes), [Hantera utgående SMTP-trafik](#managing-outbound-smtp-traffic-with-affinities).
 

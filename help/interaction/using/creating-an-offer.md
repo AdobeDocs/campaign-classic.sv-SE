@@ -2,14 +2,15 @@
 product: campaign
 title: Skapa ett erbjudande
 description: Skapa ett erbjudande
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+feature: Interaction, Offers
+badge-v7-only: label="v7" type="Informative" tooltip="Gäller endast Campaign Classic v7"
 audience: interaction
 content-type: reference
 topic-tags: managing-an-offer-catalog
 exl-id: c6dd2709-06e3-4227-bbec-99f3d80144fe
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '803'
+source-wordcount: '810'
 ht-degree: 3%
 
 ---
@@ -58,7 +59,7 @@ Utanför dessa datum kommer erbjudandet inte att väljas av interaktionsmotorn. 
 
 Du kan använda filter på erbjudandemålet.
 
-Om du vill göra det klickar du på **[!UICONTROL Edit query]** och välj det filter som du vill använda. (Se [det här avsnittet](../../platform/using/steps-to-create-a-query.md#step-4---filter-data)).
+Klicka på **[!UICONTROL Edit query]** och välj det filter som du vill använda. (Se [det här avsnittet](../../platform/using/steps-to-create-a-query.md#step-4---filter-data)).
 
 ![](assets/offer_eligibility_create_003.png)
 
@@ -78,7 +79,7 @@ Ett erbjudande kan till exempel ha vikten A för kontakter mellan 18 och 25 år 
 >
 >Den tilldelade vikten kan ändras tillfälligt enligt parametrarna för den kategori som erbjudandet tillhör. Mer information finns i [Skapa erbjudandekategorier](../../interaction/using/creating-offer-categories.md).
 
-Så här skapar du en vikt i ett erbjudande:
+Gör så här för att skapa en vikt i ett erbjudande:
 
 1. Klicka på **[!UICONTROL Add]**.
 
@@ -130,8 +131,8 @@ Klicka på **[!UICONTROL Schedule and eligibility rules]** länk.
 
    * **[!UICONTROL Title]** : Ange den titel som du vill ska visas i erbjudandet. Varning: detta avser inte erbjudandets etikett, som definieras i **[!UICONTROL General]** -fliken.
    * **[!UICONTROL Destination URL]** : ange erbjudandets URL. För att behandlas på rätt sätt måste det börja med&quot;http://&quot; eller&quot;https://&quot;.
-   * **[!UICONTROL Image URL]** : Ange en URL eller en åtkomstsökväg till bilden av erbjudandet.
-   * **[!UICONTROL HTML content]** / **[!UICONTROL Text content]** : Ange innehållet i erbjudandet på fliken som du vill ha. Om du vill generera spårning visas **[!UICONTROL HTML content]** måste bestå av HTML-element som kan omslutas av en `<div>` type-element. Resultatet av en `<table>` -elementet på HTML-sidan kommer att följas:
+   * **[!UICONTROL Image URL]** : ange en URL eller en åtkomstsökväg till bilden av ditt erbjudande.
+   * **[!UICONTROL HTML content]** / **[!UICONTROL Text content]** : Ange innehållet i erbjudandet på den flik du vill ha. Om du vill generera spårning visas **[!UICONTROL HTML content]** måste bestå av HTML-element som kan omslutas av en `<div>` type-element. Resultatet av en `<table>` -elementet på HTML-sidan kommer att följas:
 
    ```
       <div> 
@@ -152,7 +153,7 @@ Klicka på **[!UICONTROL Schedule and eligibility rules]** länk.
 
    ![](assets/offer_content_create_002.png)
 
-   Om du vill hitta de obligatoriska fälten som de definierades under konfigurationen av erbjudandeutrymmet klickar du på knappen **[!UICONTROL Content definitions]** för att visa listan. Mer information finns i [Skapa erbjudandemellanslag](../../interaction/using/creating-offer-spaces.md).
+   Om du vill hitta de obligatoriska fälten som de definierades under konfigurationen av erbjudandeutrymmet klickar du på knappen **[!UICONTROL Content definitions]** länk för att visa listan. Mer information finns i [Skapa erbjudandemellanslag](../../interaction/using/creating-offer-spaces.md).
 
    ![](assets/offer_content_create_003.png)
 

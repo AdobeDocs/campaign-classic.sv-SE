@@ -2,12 +2,12 @@
 product: campaign
 title: Konsekvensregler
 description: Konsekvensregler
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
-feature: Typology Rules
+badge-v7-only: label="v7" type="Informative" tooltip="Gäller endast Campaign Classic v7"
+feature: Typology Rules, Campaigns
 exl-id: 757328fa-4698-4f85-a5fa-074b5152ec45
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '759'
+source-wordcount: '766'
 ht-degree: 3%
 
 ---
@@ -18,7 +18,7 @@ ht-degree: 3%
 
 Adobe Campaign garanterar enhetlig kommunikation tack vare en uppsättning regler som finns i kampanjtypologier. Syftet är att kontrollera de leveranser som skickas till mottagarna, t.ex. volym, art, relevans osv.
 
-**Kapacitet** regler, t.ex. kan undvika att överbelasta den plattform som berörs av meddelandeleveransen. Specialerbjudanden som innehåller en nedladdningslänk får inte skickas till för många personer samtidigt för att undvika att servern blir mättad. Telefonkampanjer får inte överskrida uppringningscentralernas bearbetningskapacitet osv. Mer information finns i [Kontrollkapacitet](#controlling-capacity).
+**Kapacitet** regler, t.ex. kan undvika att överbelasta den plattform som berörs av meddelandeleveransen. Specialerbjudanden som innehåller en nedladdningslänk får till exempel inte skickas till för många personer samtidigt för att undvika att servern blir mättad. Telefonkampanjer får inte överskrida uppspelningskapaciteten hos callcenter osv. Mer information finns i [Kontrollkapacitet](#controlling-capacity).
 
 ## Kontrollkapacitet {#controlling-capacity}
 
@@ -26,7 +26,7 @@ Innan du levererar meddelanden måste du se till att din organisation har kapaci
 
 För att göra detta måste du skapa **[!UICONTROL Capacity]** typologiregler.
 
-I följande exempel skapar vi en typologiregel för en lojalitetskampanj för en telefon. Vi begränsar antalet meddelanden till 20 per dag, dvs. den dagliga bearbetningskapaciteten för ett callcenter. När regeln tillämpas på två leveranser kan vi övervaka förbrukningen via loggar.
+I följande exempel skapar vi en typologiregel för en lojalitetskampanj för en telefon. Vi begränsar antalet meddelanden till 20 per dag, dvs. den dagliga bearbetningskapaciteten hos ett callcenter. När regeln tillämpas på två leveranser kan vi övervaka förbrukningen via loggar.
 
 Så här utformar du en ny kapacitetsregel:
 
@@ -35,7 +35,7 @@ Så här utformar du en ny kapacitetsregel:
 
    ![](assets/campaign_opt_create_capacity_01.png)
 
-1. I **[!UICONTROL Capacity]** skapar du tillgänglighetsraderna: i vårt exempel är detta tidsperioder under vilka samtal kan göras. Välj en period på 24 timmar och ange 150 i den initiala kvantiteten, vilket innebär att callcentret kan hantera 150 samtal per dag.
+1. I **[!UICONTROL Capacity]** skapar du tillgänglighetsraderna: i vårt exempel är det här tidsperioder under vilka anrop kan göras. Välj en period på 24 timmar och ange 150 i den initiala kvantiteten, vilket innebär att callcentret kan hantera 150 samtal per dag.
 
    ![](assets/campaign_opt_create_capacity_02.png)
 
@@ -54,11 +54,11 @@ Så här utformar du en ny kapacitetsregel:
 
 ## Definiera maximal last {#defining-the-maximum-load}
 
-För att definiera den maximala lasten måste du definiera tillgänglighetsrader. Det finns två alternativ: du kan skapa en eller flera tillgänglighetsrader manuellt (se [Lägg till tillgänglighetsrader en efter en](#adding-availability-lines-one-by-one)) eller skapa tillgänglighetsintervall. Frekvensen av dessa tidsperioder kan automatiseras (se [Lägg till en uppsättning tillgänglighetsrader](#add-a-set-of-availability-lines)).
+Om du vill definiera den maximala lasten måste du definiera tillgänglighetsrader. Det finns två alternativ: du kan skapa en eller flera tillgänglighetsrader manuellt (se [Lägg till tillgänglighetsrader en efter en](#adding-availability-lines-one-by-one)) eller skapa tillgänglighetsintervall. Frekvensen av dessa tidsperioder kan automatiseras (se [Lägg till en uppsättning tillgänglighetsrader](#add-a-set-of-availability-lines)).
 
 ### Lägg till tillgänglighetsrader en efter en {#adding-availability-lines-one-by-one}
 
-Om du vill skapa en tillgänglighetsrad klickar du på **[!UICONTROL Add]** och markera **[!UICONTROL Add an availability line]**. Ange tillgänglighetsperioden och tillgänglig last.
+Om du vill skapa en tillgänglighetsrad klickar du på **[!UICONTROL Add]** knapp och markera **[!UICONTROL Add an availability line]**. Ange tillgänglighetsperioden och tillgänglig last.
 
 ![](assets/campaign_opt_create_capacity_02.png)
 
@@ -118,4 +118,4 @@ Om du vill övervaka förbrukning kan du visa värdena som visas i **[!UICONTROL
 
 ![](assets/campaign_opt_create_capacity_04.png)
 
-Om du vill visa förbrukningsrader klickar du på **[!UICONTROL Consumptions]** i regeln.
+Klicka på **[!UICONTROL Consumptions]** i regeln.

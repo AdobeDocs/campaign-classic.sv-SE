@@ -2,13 +2,13 @@
 product: campaign
 title: Redigera innehåll
 description: Redigera innehåll
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
-feature: Web Apps, Web Forms, Landing Pages
+badge-v7: label="v7" type="Informative" tooltip="Gäller Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Gäller även Campaign v8"
+feature: Web Apps, Web Forms, Landing Pages, Email Design
 exl-id: 968430d6-b1dd-47f8-8b31-39aaa18bc05c
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '1214'
+source-wordcount: '1226'
 ht-degree: 1%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 1%
 
 ## Definiera ett synlighetsvillkor {#defining-a-visibility-condition}
 
-Du kan ange ett synlighetsvillkor för ett webbsidelement: det här elementet visas bara om villkoret uppfylls.
+Du kan ange ett synlighetsvillkor för ett webbsideselement: det här elementet visas bara om villkoret uppfylls.
 
 Om du vill lägga till ett synlighetsvillkor markerar du ett block och anger villkoret i **[!UICONTROL Visibility condition]** fält med uttrycksredigeraren.
 
@@ -39,7 +39,7 @@ De här villkoren använder XTK-uttryckssyntaxen (till exempel **ctx.mottagare.@
 
 ## Lägga till en kant och bakgrund {#adding-a-border-and-background}
 
-Du kan lägga till en **border** till ett markerat block. Kanterna definieras med tre alternativ: stil, storlek och färg.
+Du kan lägga till en **border** till ett markerat block. Kanterna definieras med hjälp av tre alternativ: stil, storlek och färg.
 
 ![](assets/dce_popup_border.png)
 
@@ -73,29 +73,29 @@ Om mallen som används inte innehåller ett värde som standard måste du slutf�
 
 Så här gör du:
 
-* Klicka på **[!UICONTROL Edit]** ikon.
+* Klicka på **[!UICONTROL Edit]** -ikon.
 
-   ![](assets/dce_sidebar_options.png)
+  ![](assets/dce_sidebar_options.png)
 
 * Ange det specificerade listvärdet (definierat av det markerade fältet) i dialogrutan **[!UICONTROL Value]** fält.
 
-   ![](assets/dce_sidebar_completeoptionradio.png)
+  ![](assets/dce_sidebar_completeoptionradio.png)
 
 ### Ändra formulärfält {#modifying-form-fields}
 
-Formulärfält som alternativknappar, indatazoner, nedrullningsbara listor osv. kan ändras från verktygsfälten.
+Formulärfält som alternativknappar, indatazoner, listrutor osv. kan ändras från verktygsfälten.
 
 Det innebär att du kan:
 
-* Ta bort blocket som innehåller formulärfälten med **[!UICONTROL Delete]** ikon.
-* Duplicera det markerade fältet genom att skapa ett nytt block med **[!UICONTROL Duplicate]** ikon.
-* Redigera **[!UICONTROL Form data]** fönster för att länka ett databasfält till formulärzonen med **[!UICONTROL Edit]** ikon.
+* Ta bort blocket som innehåller formulärfälten med **[!UICONTROL Delete]** -ikon.
+* Duplicera det markerade fältet genom att skapa ett nytt block med **[!UICONTROL Duplicate]** -ikon.
+* Redigera **[!UICONTROL Form data]** fönster för att länka ett databasfält till formulärzonen med hjälp av **[!UICONTROL Edit]** -ikon.
 
-   ![](assets/dce_toolbar_formblock_edition.png)
+  ![](assets/dce_toolbar_formblock_edition.png)
 
 ## Lägga till en åtgärd till en knapp {#adding-an-action-to-a-button}
 
-När användaren klickar på en knapp kan du definiera en associerad åtgärd. Det gör du genom att välja åtgärden som ska utföras i listrutan.
+När användaren klickar på en knapp kan du definiera en associerad åtgärd. Om du vill göra det väljer du den åtgärd som ska utföras i listrutan.
 
 ![](assets/dce_sidebar_button.png)
 
@@ -113,7 +113,7 @@ Du kan ändra den etikett som är länkad till knappen i motsvarande fält.
 
 ## Lägga till en länk {#adding-a-link}
 
-Du kan infoga en länk i valfritt sidelement: bild, ord, ordgrupp, textblock osv.
+Du kan infoga en länk i vilket sidelement som helst: bild, ord, ordgrupp, textblock osv.
 
 Det gör du genom att markera elementet och sedan använda den första ikonen på snabbmenyn.
 
@@ -127,7 +127,7 @@ Anpassningsblock och fält kan bara infogas i textblock.
 
 >[!NOTE]
 >
->För varje typ av länk kan du konfigurera öppningsläget: välj målfönstret i **Mål** nedrullningsbar lista. Detta värde motsvarar **`<target>`** HTML-tagg.
+>För varje typ av länk kan du konfigurera öppningsläget: välj målfönstret i **Mål** listruta. Detta värde motsvarar **`<target>`** HTML-tagg.
 >
 >Listan med tillgängliga **mål** är som följer:
 >
@@ -138,7 +138,6 @@ Anpassningsblock och fält kan bara infogas i textblock.
 >* Aktuellt fönster (_self)
 >* Standardwebbläsarbeteende
 >
-
 
 ### Länka till en URL {#link-to-a-url}
 
@@ -195,7 +194,7 @@ De tillgängliga alternativen är följande:
 * **Vänsterjustera** ikon: justerar text till vänster om det markerade blocket (add style=&quot;text-align: left;&quot;)
 * **Centrera** ikon: centrerar texten för det markerade blocket (add style=&quot;text-align: center;&quot;)
 * **Högerjustera** ikon: justerar text till höger om det markerade blocket (add style=&quot;text-align: right;&quot;)
-* **Ändra bakgrundsfärg** ikon: Med kan du ändra bakgrundsfärg för det markerade blocket (add style=&quot;background-color: rgba(170, 86, 255, 0,87))
+* **Ändra bakgrundsfärgen** icon: gör att du kan ändra bakgrundsfärgen för det markerade blocket (add style=&quot;background-color: rgba(170, 86, 255, 0.87))
 * **Ändra textfärg** ikon: gör att du kan ändra textfärgen i det markerade blocket eller bara i den markerade texten (`<span style="color: #CODE">`)
 
 >[!NOTE]
@@ -203,7 +202,6 @@ De tillgängliga alternativen är följande:
 >* **Ta bort** ikon: tar bort blocket och allt dess innehåll.
 >
 >* **Duplicera** ikon: duplicerar blocket samt alla format som hör till blocket.
-
 
 ## Hantera bilder och animeringar {#managing-images-and-animations}
 
@@ -215,7 +213,7 @@ Med Digital Content Editor kan du arbeta med **alla typer av bilder** kompatibel
 
 ### Lägga till/ta bort/duplicera en bild {#adding---deleting---duplicating-an-image}
 
-Om du vill infoga en bild markerar du ett bildtypsblock och klickar på knappen **Bild** ikon.
+Om du vill infoga en bild markerar du ett bildtypsblock och klickar på knappen **Bild** -ikon.
 
 ![](assets/dce_insert_image.png)
 
@@ -238,17 +236,17 @@ När du markerar ett block som innehåller en bild får du tillgång till följa
 * **Bildtext** gör att du kan definiera den bildtext som är länkad till bilden (motsvarar **alt** HTML).
 * **Dimensioner** I kan du ange bildstorleken i pixlar.
 
-   ![](assets/dce_popup_imgsize.png)
+  ![](assets/dce_popup_imgsize.png)
 
 ## Lägga till innehåll för personalisering {#adding-personalization-content}
 
 ### Infoga ett personaliserat fält {#inserting-a-personalization-field}
 
-The **Anpassningsfält** Med alternativet för ikonen Infoga kan du lägga till ett databasfält i innehållet, t.ex. mottagarens namn. Det här alternativet är bara tillgängligt för textblock.
+The **Anpassningsfält** Med alternativet för ikonen Infoga kan du lägga till ett databasfält i innehållet, till exempel mottagarens namn. Det här alternativet är bara tillgängligt för textblock.
 
 ![](assets/dce_toolbar_textblock_persofield.png)
 
-Som standard visas fälten på **[!UICONTROL Recipient]** tabell. Redigera webbprogrammets egenskaper och markera en annan tabell om det behövs.
+Som standard visas fälten på **[!UICONTROL Recipient]** tabell. Om det behövs kan du redigera webbprogrammets egenskaper och välja en annan tabell.
 
 Fältnamnet visas i redigeraren, markerat med gult. Den ersätts av målmottagarens profil när personaliseringen genereras (t.ex. när en landningssida förhandsgranskas).
 

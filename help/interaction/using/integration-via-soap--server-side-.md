@@ -2,14 +2,15 @@
 product: campaign
 title: Integrering via SOAP (serversida)
 description: Integrering via SOAP (serversida)
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+feature: Interaction, Offers
+badge-v7-only: label="v7" type="Informative" tooltip="Gäller endast Campaign Classic v7"
 audience: interaction
 content-type: reference
 topic-tags: unitary-interactions
 exl-id: 3eaef689-44fa-41b3-ade8-9fe447e165ec
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '318'
+source-wordcount: '325'
 ht-degree: 3%
 
 ---
@@ -24,14 +25,14 @@ SOAP-webbtjänster för erbjudandehantering skiljer sig från dem som vanligtvis
 
 Lägg till **nms:proposition#Propose** följt av följande parametrar:
 
-* **targetId**: mottagarens primärnyckel (kan vara en sammansatt nyckel).
-* **maxCount**: Anger antalet erbjudandeförslag för kontakten.
-* **kontext**: I kan du lägga till kontextinformation i utrymmesschemat. Om schemat som används är **nms:interaktion**, **`<empty>`** bör läggas till.
-* **kategorier**: anger den eller de kategorier som erbjudandena måste tillhöra.
-* **teman**: anger temat som erbjudandet eller erbjudandena måste tillhöra.
-* **uuid**: värdet på Adobe Campaign permanenta cookie (&quot;uuid230&quot;).
-* **nli**: värdet på Adobe Campaign sessionscookie (&quot;nlid&quot;).
-* **noProp**: Använd värdet &quot;true&quot; för att inaktivera infogning av förslag.
+* **targetId**: primärnyckel för mottagaren (kan vara en sammansatt nyckel).
+* **maxCount**: anger antalet erbjudandeförslag för kontakten.
+* **kontext**: gör att du kan lägga till kontextinformation i utrymmesschemat. Om schemat som används är **nms:interaktion**, **`<empty>`** bör läggas till.
+* **kategorier**: anger vilken kategori/vilka erbjudanden måste tillhöra.
+* **teman**: anger det eller de teman som erbjudandena måste tillhöra.
+* **uuid**: värdet för Adobe Campaign permanenta cookie (&quot;uuid230&quot;).
+* **nli**: värdet för Adobe Campaign sessionscookie (&quot;nlid&quot;).
+* **noProp**: använd värdet &quot;true&quot; för att inaktivera infogning av förslag.
 
 >[!NOTE]
 >
@@ -47,8 +48,8 @@ SOAP-tjänsten returnerar följande parametrar som svar på frågan:
 Lägg till **nms:interaction#UpdateStatus** till URL:en, följt av följande parametrar:
 
 * **offert**: teckensträng, innehåller det förslags-ID som anges som utdata under ett erbjudande. Se [Erbjudandeförslag](#offer-proposition).
-* **status**: strängtyp, anger erbjudandets nya status. Möjliga värden visas i **propositionStatus** uppräkning, i **nms:vanliga** schema. Till exempel motsvarar talet 3 **Accepterad** status.
-* **kontext**: Med XML-element kan du lägga till kontextinformation i utrymmesschemat. Om schemat som används är **nms:interaktion**, **`<empty>`** bör läggas till.
+* **status**: string type, it specifies the new status of the offer. Möjliga värden visas i **propositionStatus** uppräkning, i **nms:vanliga** schema. Till exempel motsvarar talet 3 **Accepterad** status.
+* **kontext**: XML-element, gör att du kan lägga till kontextinformation i utrymmesschemat. Om schemat som används är **nms:interaktion**, **`<empty>`** bör läggas till.
 
 ## Exempel på hur du använder ett SOAP-anrop {#example-using-a-soap-call}
 

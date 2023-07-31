@@ -2,16 +2,17 @@
 product: campaign
 title: Migrera en Microsoft Windows-plattform till Adobe Campaign v7
 description: Lär dig hur du migrerar en Microsoft Windows-plattform till Adobe Campaign v7
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+feature: Upgrade
+badge-v7-only: label="v7" type="Informative" tooltip="Gäller endast Campaign Classic v7"
 audience: migration
 content-type: reference
 topic-tags: migrating-to-adobe-campaign-7
 hide: true
 hidefromtoc: true
 exl-id: 3743d018-3316-4ce3-ae1c-25760aaf5785
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '1092'
+source-wordcount: '1099'
 ht-degree: 0%
 
 ---
@@ -33,7 +34,7 @@ I en Microsoft Windows-miljö är migreringsstegen följande:
 
 Stoppa först alla processer med tillgång till databasen på alla berörda datorer.
 
-1. Alla servrar som använder omdirigeringsmodulen (**webmdl** service) måste stoppas. Kör följande kommando för IIS:
+1. Alla servrar som använder omdirigeringsmodulen (**webmdl** måste stoppas. Kör följande kommando för IIS:
 
    ```
    iisreset /stop
@@ -88,7 +89,7 @@ Stoppa först alla processer med tillgång till databasen på alla berörda dato
    taskkill /F /IM nlserver* /T
    ```
 
-## Säkerhetskopiera Campaign-databasen {#back-up-the-database}
+## Säkerhetskopiera kampanjdatabasen {#back-up-the-database}
 
 Så här säkerhetskopierar du Adobe Campaign v6.1.
 
@@ -188,7 +189,7 @@ Så här säkerhetskopierar du Adobe Campaign v6.1.
 
    >[!IMPORTANT]
    >
-   >Som en försiktighetsåtgärd rekommenderar vi att du packar upp **Adobe Campaign v6.back** och spara den någon annanstans på en säker plats som inte är servern.
+   >Som en försiktighetsåtgärd rekommenderar vi att du packar **Adobe Campaign v6.back** och spara den någon annanstans på en säker plats som inte är servern.
 
 1. I Windows Service Management Console inaktiverar du den automatiska starten av 6.11-programservertjänsten. Du kan också använda följande kommando:
 
@@ -200,8 +201,8 @@ Så här säkerhetskopierar du Adobe Campaign v6.1.
 
 Distribuera Adobe Campaign i två steg:
 
-* Installerar version 7: den här åtgärden måste utföras på varje server.
-* Uppgraderingen: det här kommandot måste startas för varje instans.
+* Installerar build v7: Den här åtgärden måste utföras på varje server.
+* Efteruppgraderingen: det här kommandot måste startas för varje instans.
 
 Så här distribuerar du Adobe Campaign:
 
@@ -275,7 +276,7 @@ Så här distribuerar du Adobe Campaign:
 
 >[!IMPORTANT]
 >
->Starta inte Adobe Campaign tjänster än: vissa ändringar måste göras i IIS.
+>Starta inte Adobe Campaign-tjänster än: vissa ändringar måste göras i IIS.
 
 ## Migrera omdirigeringsservern {#migrating-the-redirection-server--iis-}
 
@@ -288,17 +289,17 @@ I det här skedet måste IIS-servern stoppas. Se [Tjänststopp](#service-stop).
    * För varje typ av lyssningsport (**[!UICONTROL http]** och/eller **[!UICONTROL https]**) väljer du lämplig rad och klickar på **[!UICONTROL Edit]**.
    * Ange en annan port. Som standard är lyssningsporten 80 för http och 443 för https. Kontrollera att den nya porten är tillgänglig.
 
-      ![](assets/_migration_iis_3_611.png)
+     ![](assets/_migration_iis_3_611.png)
 
-      >[!NOTE]
-      >
-      >Om din IIS-server innehåller flera webbplatser för Adobe Campaign med en avancerad konfiguration (delad port och olika IP-adresser) kontaktar du administratören.
+     >[!NOTE]
+     >
+     >Om din IIS-server innehåller flera webbplatser för Adobe Campaign med en avancerad konfiguration (delad port och olika IP-adresser) kontaktar du administratören.
 
 1. Skapa en ny webbplats för Adobe Campaign v7:
 
    * Högerklicka på **[!UICONTROL Sites]** mapp och markera **[!UICONTROL Add Web Site...]**.
 
-      ![](assets/_migration_iis_4.png)
+     ![](assets/_migration_iis_4.png)
 
    * Ange platsens namn, **Adobe Campaign v7** till exempel.
    * Åtkomstsökvägen till webbplatsens grundläggande katalog används inte, men **[!UICONTROL Physical access path]** fältet måste anges. Ange standardåtkomstsökvägen för IIS: **C:\inetpub\wwwroot**.
@@ -306,38 +307,38 @@ I det här skedet måste IIS-servern stoppas. Se [Tjänststopp](#service-stop).
    * Du kan lämna standardvärdena i **[!UICONTROL IP address]** och **[!UICONTROL Port]** fält. Om du vill använda andra värden kontrollerar du att IP-adressen och/eller porten är tillgängliga.
    * Kontrollera **[!UICONTROL Start Web site immediately]** box.
 
-      ![](assets/_migration_iis_5_7.png)
+     ![](assets/_migration_iis_5_7.png)
 
 1. Kör **iis_neolane_setup.vbs** för att automatiskt konfigurera de resurser som används av Adobe Campaign-servern i den virtuella katalog som tidigare skapats.
 
    * Den här filen finns i **`[Adobe Campaign v7]`\conf** katalog, var **`[Adobe Campaign v7]`** är åtkomstsökvägen till Adobe Campaign installationskatalog. Kommandot för att köra skriptet är följande (för administratörer):
 
-      ```
-      cd C:\Program Files (x86)\Adobe Campaign\Adobe Campaign v7\conf
-      cscript iis_neolane_setup.vbs
-      ```
+     ```
+     cd C:\Program Files (x86)\Adobe Campaign\Adobe Campaign v7\conf
+     cscript iis_neolane_setup.vbs
+     ```
 
    * Klicka **[!UICONTROL OK]** för att bekräfta skriptkörning.
 
-      ![](assets/s_ncs_install_iis7_parameters_step2_7.png)
+     ![](assets/s_ncs_install_iis7_parameters_step2_7.png)
 
    * Ange numret på den webbplats som tidigare skapats för Adobe Campaign v7 och klicka på **[!UICONTROL OK]**.
 
-      ![](assets/s_ncs_install_iis7_parameters_step3_7.png)
+     ![](assets/s_ncs_install_iis7_parameters_step3_7.png)
 
-   * Ett bekräftelsemeddelande ska visas:
+   * Ett bekräftelsemeddelande visas:
 
-      ![](assets/s_ncs_install_iis7_parameters_step7_7.png)
+     ![](assets/s_ncs_install_iis7_parameters_step7_7.png)
 
    * I **[!UICONTROL Content view]** kontrollerar du att webbplatskonfigurationen är korrekt konfigurerad med Adobe Campaign-resurser:
 
-      ![](assets/s_ncs_install_iis7_parameters_step6_7.png)
+     ![](assets/s_ncs_install_iis7_parameters_step6_7.png)
 
-      >[!NOTE]
-      >
-      >Om trädstrukturen inte visas startar du om IIS.
-      >
-      >Följande konfigurationssteg för IIS beskrivs i [det här avsnittet](../../installation/using/integration-into-a-web-server-for-windows.md#configuring-the-iis-web-server).
+     >[!NOTE]
+     >
+     >Om trädstrukturen inte visas startar du om IIS.
+     >
+     >Följande konfigurationssteg för IIS beskrivs i [det här avsnittet](../../installation/using/integration-into-a-web-server-for-windows.md#configuring-the-iis-web-server).
 
 <!--
 ## Security zones {#security-zones}

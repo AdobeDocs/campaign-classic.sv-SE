@@ -2,14 +2,15 @@
 product: campaign
 title: Skapa en testmiljö
 description: Skapa en testmiljö
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+feature: Interaction, Offers
+badge-v7-only: label="v7" type="Informative" tooltip="Gäller endast Campaign Classic v7"
 audience: interaction
 content-type: reference
 topic-tags: advanced-parameters
 exl-id: 49ac279b-bc67-4311-b0a4-0e23f2a99c52
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '120'
+source-wordcount: '127'
 ht-degree: 10%
 
 ---
@@ -25,7 +26,7 @@ Så här skapar du en testmiljö (sandlådeläge):
 >Använd bara den här metoden för att skapa miljöer för testmiljöer. I alla andra fall använder du guiden för målmappning. Mer information finns i [Skapa en erbjudandemiljö](../../interaction/using/live-design-environments.md#creating-an-offer-environment).
 
 1. Starta Adobe Campaign Explorer och gå till instansroten.
-1. Högerklicka och lägg till en **[!UICONTROL Generic folder]** i listrutorna.
+1. Högerklicka och lägg till en **[!UICONTROL Generic folder]** med hjälp av listrutorna.
 
    ![](assets/offer_env_creation_001.png)
 

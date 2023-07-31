@@ -2,14 +2,15 @@
 product: campaign
 title: Integrera ett erbjudande via ett arbetsflöde
 description: Integrera ett erbjudande via ett arbetsflöde
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+feature: Interaction, Offers, Workflows
+badge-v7-only: label="v7" type="Informative" tooltip="Gäller endast Campaign Classic v7"
 audience: interaction
 content-type: reference
 topic-tags: delivering-an-offer
 exl-id: 33d318f3-1eb4-4c74-8c20-8b9f0442c7c3
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '1043'
+source-wordcount: '1050'
 ht-degree: 3%
 
 ---
@@ -39,9 +40,10 @@ Med aktiviteten för leveransdisposition, som är tillgänglig i kampanjarbetsfl
 
    * Om du vill ringa erbjudandemotorn kan du kontrollera **[!UICONTROL Restrict the number of propositions selected]** box. Ange erbjudandeutrymme och antalet offerter som ska presenteras i leveransen.
 
-      Anbudsvikterna och reglerna för rätt till uppgradering kommer att beaktas av erbjudandemotorn.
+     Anbudsvikterna och reglerna för rätt till uppgradering kommer att beaktas av erbjudandemotorn.
 
    * Om du inte markerar kryssrutan visas alla erbjudanden i leveransdispositionen utan att du behöver ringa till erbjudandemotorn.
+
    >[!NOTE]
    >
    >Förhandsgranskningen tar hänsyn till antalet erbjudanden som anges i leveransen. När du kör ett arbetsflöde är det numret som anges i leveransdispositionen som beaktas.
@@ -78,13 +80,13 @@ När du har konfigurerat frågan (se [Handbok för arbetsflöden](../../workflow
 1. Ange en identifierare och en etikett för det förslag som ska läggas till.
 1. Ange erbjudandevalet. Det finns två möjliga alternativ:
 
-   * **[!UICONTROL Search for the best offer in a category]** : Markera det här alternativet och ange parametrarna för att ringa in erbjudanden (erbjudandeplats, kategori eller tema, kontaktdatum, antal erbjudanden som ska behållas). Motorn beräknar automatiskt erbjudandena som ska läggas till enligt dessa parametrar. Vi rekommenderar att du fyller i **[!UICONTROL Category]** eller **[!UICONTROL Theme]** i stället för båda samtidigt.
+   * **[!UICONTROL Search for the best offer in a category]** : markera det här alternativet och ange parametrarna för att anropa motorn (erbjudandeutrymme, kategori eller tema, kontaktdatum, antal erbjudanden som ska behållas). Motorn beräknar automatiskt erbjudandena som ska läggas till enligt dessa parametrar. Vi rekommenderar att du fyller i **[!UICONTROL Category]** eller **[!UICONTROL Theme]** i stället för båda samtidigt.
 
-      ![](assets/int_enrichment_offer3.png)
+     ![](assets/int_enrichment_offer3.png)
 
    * **[!UICONTROL A predefined offer]** : markera det här alternativet och ange ett erbjudandeutrymme, ett specifikt erbjudande och ett kontaktdatum för att direkt konfigurera det erbjudande du vill lägga till, utan att anropa erbjudandemotorn.
 
-      ![](assets/int_enrichment_offer4.png)
+     ![](assets/int_enrichment_offer4.png)
 
 1. Konfigurera sedan en leveransaktivitet som motsvarar den valda kanalen. Mer information finns i [Infoga ett offertförslag i en leverans](../../interaction/using/integrating-an-offer-via-the-wizard.md#inserting-an-offer-proposition-into-a-delivery) -avsnitt.
 
@@ -120,12 +122,12 @@ Som standard när **berikning** aktiviteten används för att leverera erbjudand
 
 >[!NOTE]
 >
->Kom ihåg: The **[!UICONTROL Offer engine]** den här informationen lagras som standard i aktiviteten.
+>Kom ihåg: **[!UICONTROL Offer engine]** den här informationen lagras som standard i aktiviteten.
 
 Du kan dock lagra den här informationen på följande sätt:
 
 1. Skapa ett anrop till erbjudandemotorn i en anrikningsaktivitet som placerats efter en fråga och före en leveransaktivitet. Se [Ange ett erbjudande eller ett samtal till erbjudandemotorn](../../interaction/using/integrating-an-offer-via-a-workflow.md#specifying-an-offer-or-a-call-to-the-offer-engine) -avsnitt.
-1. I aktivitetens huvudfönster väljer du **[!UICONTROL Edit additional data...]**.
+1. Välj i aktivitetens huvudfönster **[!UICONTROL Edit additional data...]**.
 
    ![](assets/ita_enrichment_rankweight_1.png)
 
@@ -152,7 +154,7 @@ När du har konfigurerat frågan (se [Handbok för arbetsflöden](../../workflow
 
    >[!NOTE]
    >
-   >Varning: Om du använder den här aktiviteten lagras endast de erbjudandeförslag som används i leveransen.
+   >Varning! Om du använder den här aktiviteten lagras endast de offertförslag som används i leveransen.
 
    ![](assets/int_offerengine_activity1.png)
 
@@ -171,6 +173,6 @@ Gör så här:
    * Ange delmängdsfyllningen med de tillgängliga filtrerings- och begränsningsreglerna.
    * Välj sedan det erbjudande som du vill presentera för undergruppen. De erbjudanden som är tillgängliga är sådana som är berättigade i den erbjudandemiljö som valdes i föregående steg.
 
-      ![](assets/int_offer_per_cell1.png)
+     ![](assets/int_offer_per_cell1.png)
 
 1. Konfigurera sedan en leveransaktivitet som motsvarar den valda kanalen. Mer information finns i [Infoga ett offertförslag i en leverans](../../interaction/using/integrating-an-offer-via-the-wizard.md#inserting-an-offer-proposition-into-a-delivery) -avsnitt.

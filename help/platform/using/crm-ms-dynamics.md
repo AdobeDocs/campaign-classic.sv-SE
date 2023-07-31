@@ -1,14 +1,14 @@
 ---
 product: campaign
 title: Campaign - Microsoft Dynamics CRM Connector
-description: Lär dig hur du ansluter Campaign och Microsoft Dynamics
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+description: Lär dig ansluta Campaign och Microsoft Dynamics
 feature: Microsoft CRM Integration
+badge-v7-only: label="v7" type="Informative" tooltip="Gäller endast Campaign Classic v7"
 exl-id: 26737940-b3ce-425c-9604-f4cefd19afaa
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '1111'
-ht-degree: 2%
+source-wordcount: '1118'
+ht-degree: 3%
 
 ---
 
@@ -49,10 +49,9 @@ I Campaign Classic:
 > * Installera plugin-program som kan ändra CRM-funktionens beteende och leda till kompatibilitetsproblem med Adobe Campaign
 > * Markera flera uppräkningar
 
-
 ## Konfigurera Microsoft Dynamics CRM {#config-crm-microsoft}
 
-Om du vill generera åtkomsttoken och nycklar för att konfigurera kontot måste du logga in på [Microsoft Azure-katalog](https://portal.azure.com) med **Global administratör** autentiseringsuppgifter. Följ sedan instruktionerna nedan.
+Om du vill generera åtkomsttoken och nycklar för att konfigurera kontot måste du logga in på [Microsoft Azure Directory](https://portal.azure.com) med **Global administratör** autentiseringsuppgifter. Följ sedan instruktionerna nedan.
 
 ### Hämta klient-ID för Microsoft Dynamics {#get-client-id-microsoft}
 
@@ -71,7 +70,7 @@ Läs mer i [den här sidan](https://docs.microsoft.com/powerapps/developer/commo
 
 För att få **Identifierare för certifikatnyckel (customKeyIdentifier)** och **Nyckel-ID (keyId)** följer du stegen nedan:
 
-1. Navigera till **Azure Active Directory > App Registrations** och välj programmet som skapades tidigare.
+1. Navigera till **Azure Active Directory > App Registrations** och välj det program som skapades tidigare.
 1. Klicka på **Certifikat och hemlighet**.
 1. Klicka på **Överför certifikat** och sedan bläddra och ladda upp det offentliga certifikat som genererats.
 1. Om du vill generera certifikatet kan du använda openssl.
@@ -86,7 +85,7 @@ För att få **Identifierare för certifikatnyckel (customKeyIdentifier)** och *
    >
    >Du kan ändra antalet dagar här `-days 365`, i kodexemplet för en längre certifikatgiltighetsperiod.
 
-1. Sedan måste du koda den i base64. Om du vill göra det kan du använda hjälp av en Base64-kodare eller kommandoraden `base64 -w0 private.key` för Linux.
+1. Sedan måste du koda den i base64. Du kan göra det med hjälp av en Base64-kodare eller via kommandoraden `base64 -w0 private.key` för Linux.
 
 1. Klicka på **Manifest** länk för att hämta **Identifierare för certifikatnyckel (customKeyIdentifier)** och **Nyckel-ID (keyId)**.
 
@@ -96,7 +95,7 @@ The **Identifierare för certifikatnyckel (customKeyIdentifier)** och **Nyckel-I
 
 **Steg 1**: Konfigurera **Nödvändiga behörigheter** för programmet som skapades.
 
-1. Navigera till **Azure Active Directory > App Registrations** och välj programmet som skapades tidigare.
+1. Navigera till **Azure Active Directory > App Registrations** och välj det program som skapades tidigare.
 1. Klicka **Inställningar** överst till vänster.
 1. På **Nödvändiga behörigheter**, klicka **Lägg till** och **Välj ett API > Dynamics CRM Online**.
 1. Klicka **Välj**, aktivera **Använd Dynamics 365 som organisationsanvändare** kryssruta och klicka **Välj**.
@@ -106,7 +105,7 @@ The **Identifierare för certifikatnyckel (customKeyIdentifier)** och **Nyckel-I
 
 **Steg 2**: Medgivande från bidragsadministratör
 
-1. Navigera till **Azure Active Directory > Enterprise Applications**.
+1. Navigera till **Azure Active Directory > Enterprise-program**.
 
 1. Välj det program som du vill ge innehavaromfattande administratörsgodkännande för.
 
@@ -146,9 +145,10 @@ Appanvändaren är den användare som programmet som registrerats ovan kommer at
    >[!NOTE]
    >
    >Om du använder samma namn genereras ett dubblettnyckelfel, så använd ett annat användarnamn och fortsätt tills vi får en bekräftelse på om det här steget behövs.
+   >
 
 1. Tilldela **Program-ID** for [det program du skapade tidigare](#get-client-id-microsoft).
-1. Klicka på **Hantera roller** och väljer **Systemadministratör** till användaren.
+1. Klicka på **Hantera roller** och väljer **Systemadministratör** roll för användaren.
 
 ## Konfigurera Campaign {#configure-acc-for-microsoft}
 
@@ -198,7 +198,7 @@ Campaign och Microsoft Dynamics är nu anslutna. Du kan konfigurera datasynkroni
 
 >[!NOTE]
 >
-> Du måste se till att lägga till två URL-adresser i tillåtelselista: server-URL och `login.microsoftonline.com` i serverkonfigurationen. Mer information om hur du konfigurerar URL-behörigheter finns i [page](../../installation/using/url-permissions.md).
+> Du måste se till att lägga till två URL:er i tillåtelselista: serverns URL och `login.microsoftonline.com` i serverkonfigurationen. Mer information om hur du konfigurerar URL-behörigheter finns i [page](../../installation/using/url-permissions.md).
 
 ## Datatyper för fält som stöds {#ms-dyn-supported-types}
 
@@ -207,12 +207,12 @@ För Microsoft Dynamics 365 finns följande attributtyper som stöds/inte stöds
 
 | Attributtyp | Stöds |
 | --------------------------------------------------------------------------------- | --------- |
-| Grundläggande typer: boolean, datetime, decimal, float, double, integer, bigint , string | Ja |
+| Grundläggande typer: boolesk, datetime, decimal, float, double, integer, bigint , string | Ja |
 | Pengar (som dubbla) | Ja |
 | memo, entityname , primarykey, uniqueidentifier (som strängar) | Ja |
 | Status, picklist (vi lagrar möjliga värden i uppräkningar), state (sträng) | Ja |
 | ägare (som sträng) | Ja |
-| Uppslag (endast referenssökningar för en enhet) | Ja |
+| Uppslag (endast referenssökningar för en entitet) | Ja |
 | kund | Nej |
 | Angående | Nej |
 | PartyList | Nej |

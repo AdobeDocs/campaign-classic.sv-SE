@@ -2,15 +2,16 @@
 product: campaign
 title: Skapa förfrågningar om användarens information
 description: Läs om hur du skapar och hanterar förfrågningar om användarens information
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+feature: Privacy, Privacy Tools
+badge-v7-only: label="v7" type="Informative" tooltip="Gäller endast Campaign Classic v7"
 audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: 73b90d79-88b6-4aaf-8103-4564de5e06be
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '771'
-ht-degree: 100%
+source-wordcount: '778'
+ht-degree: 99%
 
 ---
 
@@ -68,7 +69,6 @@ Om du har skapat anpassade tabeller som har en länk till mottagartabellen (egen
 >* Radering av profiler via arbetsflöden bearbetar inte underordnade tabeller.
 >* Du måste hantera raderingen för alla underordnade tabeller.
 >* Adobe rekommenderar att du skapar ett ETL-arbetsflöde som lägger till de rader som ska tas bort i tabellen för sekretessåtkomst och låter arbetsflödet **[!UICONTROL Delete privacy requests data]** utföra raderingen. Vi rekommenderar att du av prestandaskäl begränsar dig till att radera 200 profiler per dag.
-
 
 ## Status gällande förfrågningar om användarens information {#privacy-request-statuses}
 

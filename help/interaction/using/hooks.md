@@ -2,14 +2,15 @@
 product: campaign
 title: Hookar
 description: Hookar
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+feature: Interaction, Offers
+badge-v7-only: label="v7" type="Informative" tooltip="Gäller endast Campaign Classic v7"
 audience: interaction
 content-type: reference
 topic-tags: advanced-parameters
 exl-id: e1d7d7c2-61e7-40d6-a8ce-69bc976f8c73
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '513'
+source-wordcount: '520'
 ht-degree: 2%
 
 ---
@@ -37,9 +38,9 @@ Data som samlas in måste infogas i anropsdatanoden (interaktionsnod). Integrato
 **Indataparametrar:**
 
 * xmlInteraction (xml-typ): Interaktionsnod
-* aTargetId (registertyp): målidentifierare
-* sUuid230 (strängtyp): värdet för den permanenta cookien uid230
-* Nlid (strängtyp): värdet på den ogiltiga sessionskakan
+* aTargetId (tabelltyp): målidentifierare
+* sUuid230 (strängtyp): värde för den permanenta cookien uid230
+* sNlid (strängtyp): värdet för den nlid-sessionscookien
 
 **Returparametrar:**
 
@@ -71,19 +72,19 @@ Efterbearbetningen utförs efter typologiregeltillämpningen och den stödberät
 
 **Indataparametrar:**
 
-* Föreslå: Tabell över godtagbara förslag. Här är ett exempel på strukturen för ett element i den här tabellen
+* Förslag: tabell över giltiga förslag. Här är ett exempel på strukturen för ett element i den här tabellen
 
-   ```
-   { offer_id:1234,
-     weight:2}
-   ```
+  ```
+  { offer_id:1234,
+    weight:2}
+  ```
 
-* dicOffer (xml-typ): ordlista över alla attribut för berättigade erbjudanden (erbjudandekod, kategori-ID, kategorins fullständiga namn, startdatum, slutdatum, etikett, internt namn, erbjudandeID, ytterligare erbjudandefält). Exempel
+* dicOffer (xml-typ): ordlista med alla attribut för giltiga erbjudanden (erbjudandekod, kategori-ID, kategorins fullständiga namn, startdatum, slutdatum, etikett, internt namn, erbjudande-ID, ytterligare erbjudandefält). Exempel
 
-   ```
-   { "1242": <offer category-id="61242" categoryFullName="/FULL/PATH/TO/CATEGORY/" code="CODE" endDate="" id="62473" label="LABEL" name="OFR38_OE4" product-id="43" startDate=""/>,
-     "1243": ...}
-   ```
+  ```
+  { "1242": <offer category-id="61242" categoryFullName="/FULL/PATH/TO/CATEGORY/" code="CODE" endDate="" id="62473" label="LABEL" name="OFR38_OE4" product-id="43" startDate=""/>,
+    "1243": ...}
+  ```
 
 * xmlTarget (xml-typ): profildatanod
 * xmlInteraction (xml-typ): anropsdatanod
@@ -92,7 +93,7 @@ Efterbearbetningen utförs efter typologiregeltillämpningen och den stödberät
 **Returparametrar:**
 
 * lista över ändrade förslag (krokens första parameter)
-* Nod för ändrad interaktion
+* modifierad interaktionsnod
 
 **Exempel:**
 
@@ -126,8 +127,8 @@ I förväg ska integratören utöka förslagen **PropositionRcp** med ytterligar
 
 **Indataparametrar:**
 
-* xmlOffer (xml-typ): offer (erbjudandekod, kategori-ID, fullständigt namn för kategori, startdatum, slutdatum, etikett, internt namn, erbjudandeid, extra erbjudandefält)
-* Vikt: snabbvikt (dubbel text)
+* xmlOffer (xml-typ): offer (erbjudandekod, kategori-ID, kategorins fullständiga namn, startdatum, slutdatum, etikett, internt namn, erbjudandeID, ytterligare erbjudandefält)
+* Vikt: sammanhangsberoende vikt (dubbeltyp)
 * xmlTarget (xml-typ): profildatanod
 * xmlInteraction (xml-typ): anropsdatanod
 

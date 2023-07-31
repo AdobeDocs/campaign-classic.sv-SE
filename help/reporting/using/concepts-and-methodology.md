@@ -2,15 +2,15 @@
 product: campaign
 title: Bästa tillvägagångssätt för kuber
 description: Bästa tillvägagångssätt för kuber
+feature: Reporting, Monitoring
 badge: label="v7" type="Informative" tooltip="Gäller endast Campaign Classic v7"
-feature: Reporting
 hide: true
 hidefromtoc: true
 exl-id: 5f22fa2c-b648-4126-9a24-1798adfa8f34
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '1504'
-ht-degree: 0%
+source-wordcount: '1500'
+ht-degree: 1%
 
 ---
 
@@ -25,7 +25,7 @@ Med bindning kan du förenkla visningen av data genom att gruppera värden enlig
 Sammantaget finns det tre typer av bindning:
 
 1. Använda manuellt definierade värdeintervall. Exempel: ålder, genomsnittlig kundvagn, antal öppnade leveranser osv.). Mer information finns i [Definiera varje behållare](#defining-each-bin).
-1. Beroende på uppräkningens värden: visar bara värdena i uppräkningen, övriga värden grupperas i &quot;Övrigt&quot;. Mer information finns i [Hantera behållare dynamiskt](#dynamically-managing-bins).
+1. Beroende på värdena för en uppräkning: bara de värden som finns i uppräkningen visas, grupperas alla andra värden i Övrigt. Mer information finns i [Hantera behållare dynamiskt](#dynamically-managing-bins).
 1. Med värdeintervall grupperas alla andra. Exempel: 18 till 25 åringar, 26 till 59 åringar och andra. Mer information finns i [Skapa värdeintervall](#creating-value-ranges).
 
 Om du vill aktivera bindning markerar du lämplig ruta när du skapar dimensionen.
@@ -34,7 +34,7 @@ Om du vill aktivera bindning markerar du lämplig ruta när du skapar dimensione
 
 Du kan antingen skapa bindningar manuellt eller länka dem till en befintlig uppräkning.
 
-Adobe Campaign har även en assistent för automatisk bindning: värden kan delas upp i N-grupper eller grupperas enligt de vanligaste värdena i databasen.
+Adobe Campaign har också en assistent för automatisk bindning: värden kan delas upp i N-grupper eller grupperas enligt de vanligaste värdena i databasen.
 
 ### Definiera varje behållare {#defining-each-bin}
 
@@ -46,13 +46,13 @@ Klicka på **[!UICONTROL Add]** om du vill skapa en ny behållare och lista de v
 
 ![](assets/s_advuser_cube_class_02.png)
 
-I följande exempel grupperas språk i tre kategorier: Engelska/tyska/nederländska, franska/italienska/spanska, med flera.
+I följande exempel grupperas språken i tre kategorier: engelska/tyska/nederländska, franska/italienska/spanska och andra.
 
 ![](assets/s_advuser_cube_class_03.png)
 
 Du kan använda en SQL-mask för att kombinera flera värden till ett filter. Om du vill göra det markerar du **[!UICONTROL Yes]** i **[!UICONTROL Use an SQL mask]** och ange det SQL-filter som ska användas i **[!UICONTROL Value or expression]** kolumn.
 
-I exemplet nedan börjar alla e-postdomäner med **yahoo** (yahoo.fr, yahoo.com, yahoo.be osv.), eller med **ymail** (ymail.com, ymail.eu osv.) grupperas under etiketten **YAHOO!** samt adresser med **rocketmail.com** domän.
+I exemplet nedan börjar alla e-postdomäner med **yahoo** (yahoo.fr, yahoo.com, yahoo.be osv.), eller med **ymail** (ymail.com, ymail.eu osv.) grupperas under etiketten **YAHOO!**, samt adresser med **rocketmail.com** domän.
 
 ![](assets/s_advuser_cube_class_03b.png)
 
@@ -73,7 +73,7 @@ Så här skapar du den här typen av värdebindning:
 
 Du kan gruppera värdena i intervall baserat på önskat intervall.
 
-Om du vill definiera intervall manuellt klickar du på **[!UICONTROL Add]** och markera **[!UICONTROL Define a range]** :
+Om du vill definiera intervall manuellt klickar du på **[!UICONTROL Add]** knapp och markera **[!UICONTROL Define a range]** :
 
 ![](assets/s_advuser_cube_class_05.png)
 
@@ -81,7 +81,7 @@ Ange sedan de nedre och övre gränserna och klicka på **[!UICONTROL Ok]** för
 
 ### Generera behållare automatiskt {#generating-bins-automatically}
 
-Det går också att generera behållare automatiskt. Om du vill göra det klickar du på **[!UICONTROL Generate bins...]** länk.
+Det går också att generera behållare automatiskt. Klicka på **[!UICONTROL Generate bins...]** länk.
 
 ![](assets/s_advuser_cube_class_06.png)
 
@@ -89,11 +89,11 @@ Du kan antingen:
 
 * Återställa de mest använda värdena
 
-   I följande exempel visas de fyra vanligaste värdena, medan de andra räknas och grupperas i kategorin Övrigt.
+  I följande exempel visas de fyra vanligaste värdena, medan de andra räknas och grupperas i kategorin Övrigt.
 
 * Generera behållare i form av fack
 
-   I följande exempel skapar Adobe Campaign automatiskt fyra värdekortsplatser i samma storlek för att visa värdena i databasen.
+  I följande exempel skapar Adobe Campaign automatiskt fyra värdekortsplatser i samma storlek för att visa värdena i databasen.
 
 I det här fallet ignoreras filtret som är markerat i faktaschemat.
 
@@ -109,7 +109,7 @@ Den har skapats med följande mall:
 
 ![](assets/nmx_enum_domain.png)
 
-Skapa en kub med **[!UICONTROL Email domain]** dimension. Välj **[!UICONTROL Enable binning]** option then **[!UICONTROL Dynamically link the values to an enumeration]**. Välj sedan **Domäner** uppräkning enligt ovan. Alla värden som saknar angivet alias grupperas om under **Övriga** label.
+Skapa en kub med **[!UICONTROL Email domain]** dimension. Välj **[!UICONTROL Enable binning]** option then **[!UICONTROL Dynamically link the values to an enumeration]**. Välj sedan **Domäner** uppräkning enligt ovan. Alla värden som saknar angivet alias grupperas om under **Övriga** etikett.
 
 ![](assets/nmx_add_dimension.png)
 
@@ -137,7 +137,7 @@ Aggregat definieras på den relevanta fliken för varje kub.
 
 Så här skapar du en ny sammanställning:
 
-1. Klicka på **[!UICONTROL Aggregates]** klickar du på **[!UICONTROL Add]** -knappen.
+1. Klicka på **[!UICONTROL Aggregates]** -fliken i kuben och klicka sedan på **[!UICONTROL Add]** -knappen.
 
    ![](assets/s_advuser_cube_agregate_02.png)
 
@@ -151,17 +151,17 @@ Så här skapar du en ny sammanställning:
    ![](assets/s_advuser_cube_agregate_04.png)
 
    * The **[!UICONTROL Scheduler]** kan du definiera frekvensen för uppdateringar av beräkningar. Schemaläggaren beskrivs i [det här avsnittet](../../workflow/using/scheduler.md).
-   * The **[!UICONTROL Aggregate update]** kan du välja det uppdateringsläge som du vill använda: helt eller delvis.
+   * The **[!UICONTROL Aggregate update]** Med -aktiviteten kan du välja det uppdateringsläge som du vill använda: helt eller delvis.
 
-      Som standard utförs en fullständig uppdatering under varje beräkning. Om du vill aktivera en partiell uppdatering väljer du det relevanta alternativet och definierar uppdateringsvillkoren.
+     Som standard utförs en fullständig uppdatering under varje beräkning. Om du vill aktivera en partiell uppdatering väljer du det relevanta alternativet och definierar uppdateringsvillkoren.
 
-      ![](assets/s_advuser_cube_agregate_05.png)
+     ![](assets/s_advuser_cube_agregate_05.png)
 
 ## Definiera mått {#defining-measures}
 
 Typerna av mått definieras i **[!UICONTROL Measures]** -fliken i kuben. Du kan beräkna summor, medelvärden, avvikelser osv.
 
-Du kan skapa så många mått som behövs: markerar du det mått som du vill visa eller dölja i tabellen. Mer information finns i [Visa mått](#displaying-measures).
+Du kan skapa så många mått som behövs. Välj sedan det mått som du vill visa eller dölja i tabellen. Mer information finns i [Visa mått](#displaying-measures).
 
 Så här definierar du ett nytt mått:
 
@@ -169,7 +169,7 @@ Så här definierar du ett nytt mått:
 
    ![](assets/s_advuser_cube_create_a_measure.png)
 
-1. Om det behövs, och beroende på operatorn, väljer du det uttryck som åtgärden gäller.
+1. Om det behövs, och beroende på operatorn, väljer du det uttryck som operationen gäller.
 
    The **[!UICONTROL Advanced selection]** kan du skapa komplexa beräkningsformler. Mer information om detta finns i [det här avsnittet](../../platform/using/about-queries-in-campaign.md).
 
@@ -193,7 +193,7 @@ Du kan konfigurera visningen av mått i tabellen beroende på dina behov:
 
 De mått som beräknas i kuben konfigureras via **[!UICONTROL Measures]** -knappen.
 
-Flytta runt linjerna för att ändra visningssekvensen. I följande exempel flyttas franska data längst ned i listan: det innebär att den visas i den sista kolumnen.
+Flytta runt linjerna för att ändra visningssekvensen. I följande exempel flyttas franska data längst ned i listan, vilket innebär att de visas i den sista kolumnen.
 
 ![](assets/s_advuser_cube_in_report_config_04.png)
 
@@ -203,7 +203,7 @@ Mätningarna, linjerna och kolumnerna kan konfigureras individuellt för varje m
 
 * Klicka på **[!UICONTROL Edit the configuration of the pivot table]** -ikonen för att komma åt konfigurationsfönstret.
 
-   Du kan välja om etiketterna för måtten ska visas eller inte och konfigurera deras layout (rader eller kolumner).
+  Du kan välja om etiketterna för måtten ska visas eller inte och konfigurera deras layout (rader eller kolumner).
 
 ![](assets/s_advuser_cube_in_report_config_05.png)
 
@@ -221,7 +221,7 @@ I varje mått kan du definiera vilken enhet och formatering som ska användas.
 
 När rapporten har konfigurerats kan du spara den och dela den med andra operatorer.
 
-Om du vill göra det klickar du på **[!UICONTROL Show the report properties]** -ikonen och aktivera **[!UICONTROL Share this report]** alternativ.
+Klicka på **[!UICONTROL Show the report properties]** -ikonen och aktivera **[!UICONTROL Share this report]** alternativ.
 
 ![](assets/cube_share_option.png)
 
@@ -237,7 +237,7 @@ Det går att skapa filter för att visa en del av data.
 
 Så här gör du:
 
-1. Klicka på **[!UICONTROL Add a filter]** ikon.
+1. Klicka på **[!UICONTROL Add a filter]** -ikon.
 
    ![](assets/neolap_add_filter.png)
 
@@ -257,13 +257,13 @@ Så här gör du:
 
    Klicka på krysset för att ta bort det.
 
-   Du kan kombinera så många filter som behövs: kommer alla att visas här.
+   Du kan kombinera så många filter som behövs: alla visas i det här området.
 
    ![](assets/neolap_multiple_filters.png)
 
 Varje gång ett filter ändras (lägg till, ta bort, ändra) måste rapporten beräknas om.
 
-Du kan också skapa filter baserat på en markering. Det gör du genom att markera källceller, rader och kolumner och sedan klicka på **[!UICONTROL Add a filter]** ikon.
+Du kan också skapa filter baserat på en markering. Det gör du genom att markera källceller, rader och kolumner och sedan klicka på **[!UICONTROL Add a filter]** -ikon.
 
 Om du vill markera en rad, kolumn eller cell vänsterklickar du på den. Om du vill avmarkera klickar du igen.
 

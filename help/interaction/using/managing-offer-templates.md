@@ -2,16 +2,17 @@
 product: campaign
 title: Hantera mallar för erbjudanden
 description: Hantera mallar för erbjudanden
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
+feature: Interaction, Offers, Templates
+badge-v7: label="v7" type="Informative" tooltip="Gäller Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Gäller även Campaign v8"
 audience: interaction
 content-type: reference
 topic-tags: managing-an-offer-catalog
 exl-id: e4a6cc22-05bd-4b8a-984d-d0706fc210e1
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '165'
-ht-degree: 5%
+source-wordcount: '177'
+ht-degree: 6%
 
 ---
 
@@ -19,14 +20,14 @@ ht-degree: 5%
 
 
 
-Mallar för erbjudanden levereras i Adobe Campaign. Du kan använda dem när du har skapat dina erbjudanden, duplicerat dem eller anpassat deras konfiguration efter dina behov. Du kan också skapa egna mallar. Mallerbjudanden lagras i mappen **Resurser** > **Mallar** > **Erbjudandemallar**.
+Mallar för erbjudanden levereras i Adobe Campaign. Du kan använda dem när du har skapat dina erbjudanden, duplicerat dem eller anpassat deras konfiguration efter dina behov. Du kan också skapa egna mallar. Mallerbjudanden lagras i mappen **Resurs** > **Mallar** > **Erbjudandemallar**.
 
 ## Skapa en erbjudandemall {#creating-an-offer-template}
 
 Så här skapar du ett mallerbjudande:
 
-1. Gå till **Resurser** > **Mallar** > **Erbjudandemallar**.
-1. Klicka på **Nytt** ikon.
+1. Gå till **Resurs** > **Mallar** > **Erbjudandemallar**.
+1. Klicka på **Nytt** -ikon.
 
    ![](assets/offer_model_001.png)
 

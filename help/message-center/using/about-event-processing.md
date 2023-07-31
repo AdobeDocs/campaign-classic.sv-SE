@@ -2,14 +2,15 @@
 product: campaign
 title: Händelsebearbetning
 description: Läs om hur transaktionshändelser behandlas i Adobe Campaign Classic
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+feature: Transactional Messaging, Message Center
+badge-v7-only: label="v7" type="Informative" tooltip="Gäller endast Campaign Classic v7"
 audience: message-center
 content-type: reference
 topic-tags: event-processing
 exl-id: 3d85866a-6339-458c-807a-b267cce772b8
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '691'
+source-wordcount: '698'
 ht-degree: 2%
 
 ---
@@ -47,7 +48,7 @@ När alla steg ovan har utförts via körningsinstansen får varje målmottagare
 
 Händelser som genereras av informationssystemet kan samlas in på två sätt:
 
-* Anrop till SOAP-metoder gör att du kan skicka händelser i Adobe Campaign: Med metoden PushEvent kan du skicka en händelse i taget. Med metoden PushEvents kan du skicka flera händelser samtidigt. Mer information finns i [Händelsebeskrivning](../../message-center/using/event-description.md).
+* Anrop till SOAP-metoder gör att du kan skicka händelser i Adobe Campaign: med metoden PushEvent kan du skicka en händelse i taget, med metoden PushEvents kan du skicka flera händelser samtidigt. Mer information finns i [Händelsebeskrivning](../../message-center/using/event-description.md).
 
 * Genom att skapa ett arbetsflöde kan du återställa händelser genom att importera filer eller via en SQL-gateway (med [Åtkomst till federerade data](../../installation/using/about-fda.md) ).
 
@@ -57,7 +58,7 @@ När de har samlats in delas händelser upp i tekniska arbetsflöden mellan real
 
 >[!NOTE]
 >
->På körningsinstanserna visas **[!UICONTROL Real time events]** eller **[!UICONTROL Batch events]** mappar får inte anges som vyer eftersom detta kan leda till problem med åtkomst. Mer information om hur du anger en mapp som en vy finns i [det här avsnittet](../../platform/using/access-management-folders.md).
+>På körningsinstanserna visas **[!UICONTROL Real time events]** eller **[!UICONTROL Batch events]** mappar får inte anges som vyer eftersom detta kan leda till problem med åtkomst. Mer information om hur du ställer in en mapp som en vy finns i [det här avsnittet](../../platform/using/access-management-folders.md).
 
 ## Routning mot en mall {#routing-towards-a-template}
 
@@ -67,11 +68,11 @@ Vägningssteget består i att länka en händelse till rätt meddelandemall base
 
 * Händelsetypen som anges i egenskaperna för själva händelsen:
 
-   ![](assets/messagecenter_event_type_001.png)
+  ![](assets/messagecenter_event_type_001.png)
 
 * Händelsetypen som anges i meddelandemallens egenskaper:
 
-   ![](assets/messagecenter_event_type_002.png)
+  ![](assets/messagecenter_event_type_002.png)
 
 Som standard används följande information för routning:
 
@@ -86,10 +87,10 @@ The **Händelsehistorik**, under **[!UICONTROL Message Center]** > **[!UICONTROL
 * **Väntande**: Händelsen kan vara:
 
    * En händelse som precis har samlats in och som ännu inte har bearbetats. The **[!UICONTROL Number of errors]** kolumnen visar värdet 0. E-postmallen har ännu inte länkats.
-   * En händelse bearbetades men vars bekräftelse är felaktig. The **[!UICONTROL Number of errors]** kolumnen visar ett värde som inte är 0. Om du vill veta när den här händelsen ska behandlas igen kan du läsa **[!UICONTROL Process requested on]** kolumn.
+   * En händelse bearbetades men vars bekräftelse är felaktig. The **[!UICONTROL Number of errors]** kolumnen visar ett värde som inte är 0. Om du vill veta när den här händelsen kommer att behandlas igen kan du läsa **[!UICONTROL Process requested on]** kolumn.
 
 * **Väntande leverans**: Händelsen bearbetades och leveransmallen är länkad. E-postmeddelandet väntar på att levereras och den klassiska leveransprocessen tillämpas. Du kan öppna leveransen om du vill ha mer information.
-* **Skickat**, **Ignorerad** och **Leveransfel**: Dessa leveransstatusvärden återställs via **updateEventsStatus** arbetsflöde. Mer information får du genom att öppna den relevanta leveransen.
+* **Skickat**, **Ignorerad** och **Leveransfel**: De här leveransstatusarna återställs via **updateEventsStatus** arbetsflöde. Mer information får du om du öppnar leveransformuläret.
 * **Händelsen täcks inte**: Transactional Messaging-routningsfasen misslyckades. Adobe Campaign hittade till exempel inte e-postmeddelandet som fungerar som mall för händelsen.
 * **Händelsen har upphört**: Det maximala antalet sändningsförsök har uppnåtts. Händelsen betraktas som null.
 
@@ -97,7 +98,7 @@ The **Händelsehistorik**, under **[!UICONTROL Message Center]** > **[!UICONTROL
 
 Om det inte går att skicka ett meddelande via en viss kanal kan Adobe Campaign skicka meddelandet igen via en annan kanal. Om till exempel en leverans på SMS-kanalen misslyckas, skickas meddelandet igen med e-postkanalen.
 
-För att göra detta måste du konfigurera ett arbetsflöde som återskapar alla händelser med **Leveransfel** och tilldelar dem en annan kanal.
+För att göra detta måste du konfigurera ett arbetsflöde som återskapar alla händelser med **Leveransfel** och tilldelar en annan kanal till dem.
 
 >[!CAUTION]
 >

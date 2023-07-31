@@ -2,10 +2,11 @@
 product: campaign
 title: Ordlista för Adobe Campaign
 description: Ordlista för Adobe Campaign
+feature: Overview
 role: User, Data Architect
 level: Beginner
 exl-id: 81f207a0-bb72-450b-abe4-0b229b6b1f3a
-source-git-commit: acfe0c4139671fc3df69ff434ba307aaaaf70676
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
 source-wordcount: '5974'
 ht-degree: 2%
@@ -20,7 +21,7 @@ Nedan finns en definition av nyckeltermer och begrepp i Adobe Campaign, med län
 
 +++**A/B-test**
 
-A/B-testning är en funktion som gör att användaren kan definiera två till tre e-postvarianter: varje variant skickas till populationsprover för att fastställa vilket som ger bäst resultat. När det är fastställt skickas därefter den vinnande varianten till den återstående populationen.
+A/B-testning är en funktion som gör att användaren kan definiera två till tre e-postvarianter: varje variant skickas till populationsprover för att avgöra vilket som ger bäst resultat. När det är fastställt skickas därefter den vinnande varianten till den återstående populationen.
 
 Läs mer om [A/B-tester](../../delivery/using/get-started-a-b-testing.md).
 +++
@@ -57,7 +58,7 @@ Läs mer om [Aktiva profiler](../../platform/using/about-profiles.md#active-prof
 
 +++**Arbetsflödesaktivitet för godkännande**
 
-*Kontext: Kampanjdistribuerad marknadsföring*
+*Sammanhang: Campaign Distributed Marketing*
 
 Lokal godkännandeaktivitet är en arbetsflödesaktivitet som används för att ställa in en process för godkännande av leverans innan meddelandena skickas.
 
@@ -73,7 +74,7 @@ Läs mer om [Målgrupper](../../campaign/using/marketing-campaign-target.md).
 
 +++**Verifieringskedja**
 
-Granskningsspår innehåller en omfattande lista i realtid över åtgärder och händelser som inträffar i din Adobe Campaign-instans. Det innehåller ett självbetjäningssätt att komma åt en datahistorik som kan hjälpa dig att besvara frågor som: vad som hände med dina arbetsflöden och vem som senast uppdaterade dem eller vad gjorde användarna i instansen.
+Granskningsspår innehåller en omfattande lista i realtid över åtgärder och händelser som inträffar i din Adobe Campaign-instans. Det innehåller ett självbetjäningssätt för att få tillgång till en historik med data som kan hjälpa dig att besvara frågor som: vad som hände med dina arbetsflöden och vem som senast uppdaterade dem eller vad som gjorde användarna i instansen.
 
 Läs mer om [Granskningsspår](../../production/using/audit-trail.md).
 +++
@@ -90,7 +91,7 @@ Learn more about [Campaigns](../../campaign/using/designing-marketing-campaigns.
 
 +++**Batchläge**
 
-*Kontext: Kampanjinteraktion*
+*Sammanhang: Kampanjinteraktion*
 
 I gruppläget när det gäller Campaign Interaction kan erbjudandemotorn välja det eller de bästa erbjudandena för en uppsättning kontakter. Reglerna för behörighet/prioritering tillämpas på alla kontakter i uppsättningen.
 
@@ -139,14 +140,14 @@ Läs mer om [Godkännande av innehåll](../../campaign/using/marketing-campaign-
 
 +++**Kontrollgrupper**
 
-Använd kontrollgrupper för att mäta effekten av era kampanjer genom att utesluta en del av deras målgrupp. Operatorer kan jämföra beteendet hos målpopulationen som fick meddelandet med beteendet hos kontakter som inte var målgrupper. Operatörerna kan även rikta in sig på en kontrollgrupp i framtida kampanjer utifrån de sändande loggarna.
+Använd kontrollgrupper för att mäta effekten av era kampanjer genom att utesluta en del av deras målgrupp. Operatorer kan jämföra beteendet hos målpopulationen som fick meddelandet med beteendet hos kontakter som inte var målgrupper. Operatörerna kan även rikta in sig på en kontrollgrupp i framtida kampanjer baserat på de sändande loggarna.
 
 Läs mer om [Kontrollgrupper](../../campaign/using/marketing-campaign-target.md#defining-a-control-group).
 +++
 
 +++**Kontrollpanelen**
 
-Kontrollpanelen hjälper produktadministratörer i Adobe Campaign att arbeta effektivare genom att låta dem hantera inställningar och spåra användningar för var och en av deras instanser. Med det intuitiva gränssnittet kan de enkelt övervaka användningen av nyckelresurser och utföra administrativa uppgifter som att lägga till IP-adresser i tillåtelselista, övervaka SFTP-lagring, nyckelhantering och mycket annat.
+Kontrollpanelen hjälper produktadministratörer i Adobe Campaign att arbeta effektivare genom att låta dem hantera inställningar och spåra användningar för var och en av deras instanser. Tack vare det intuitiva gränssnittet kan de enkelt övervaka användningen av nyckelresurser och utföra administrativa uppgifter som att lägga till IP-adresser i tillåtelselista, övervaka SFTP-lagring, nyckelhantering och mycket annat.
 
 Läs mer om [Kontrollpanelen](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/key-features.html).
 +++
@@ -176,7 +177,7 @@ Läs mer om [Datamodell](../../configuration/using/about-data-model.md).
 
 +++**Arbetsflöde för databasrensning**
 
-Arbetsflödet för rensning av databas tar bort föråldrade data för att undvika exponentiell tillväxt i databasen. Arbetsflödet utlöses automatiskt utan att användaren behöver göra något.
+Arbetsflödet för rensning av databas tar bort föråldrade data för att undvika exponentiell tillväxt i databasen. Arbetsflödet utlöses automatiskt utan användaråtgärder.
 
 Läs mer om [Arbetsflöde för databasrensning](../../production/using/database-cleanup-workflow.md).
 +++
@@ -251,16 +252,16 @@ Distributionsguiden definierar parametrarna för Campaign-instansen, till exempe
 Läs mer om [Distributionsguide](../../installation/using/deploying-an-instance.md#deployment-wizard).
 +++
 
-+++**Beskrivande analys**
++++**Beskrivning av analys**
 
 Beskrivande analys är ett sammanhangsberoende rapportverktyg som kan användas för att undersöka data i arbetsflödet, data som valts i en mapp eller för att göra djupdykning i mål och uteslutningar för valda leveranser.
 
-Läs mer om [Beskrivande analys](../../reporting/using/about-descriptive-analysis.md)
+Läs mer om [Beskrivning av analys](../../reporting/using/about-descriptive-analysis.md)
 +++
 
 +++**Distribuerad marknadsföring**
 
-*Kontext: Distribuerad marknadsföring*
+*Sammanhang: Distribuerad marknadsföring*
 
 Tillägget Distributed Marketing ger kampanjansvariga en gemensam arbetsyta för att implementera kampanjer mellan centrala enheter (huvudkontor, marknadsföringsavdelningar osv.) och lokala enheter (säljställen, regionala organ osv.). Detta samarbete bygger på en delad arbetsyta som kallas **lista med Campaign-paket**, där centralt skapade kampanjmallar och instanser erbjuds lokala enheter.
 
@@ -292,18 +293,18 @@ E4X är den version av Javascript som används i Adobe Campaign Classic. Ibland 
 +++
 
 
-+++**Villkor**
++++**Villkor för deltagande**
 
-*Kontext: Kampanjinteraktion*
+*Sammanhang: Kampanjinteraktion*
 
-Behörighetsregler är begränsningar som gäller för en miljö, kategori eller erbjudande som avser giltighetsperiod, mål och vikt. De låter operatörerna se till att ett erbjudande är i linje med den avsedda kontakten. I erbjudandemiljön omfattar reglerna för berättigande presentationer som tillämpas på erbjudandena och mottagarna som ska målgruppsanpassas. I kategorin kan operatörerna begränsa giltigheten för kategorin i tid, definiera programteman och avgöra vilka mottagare som ska målas. De kan också definiera en multiplikatjocklek för en viss tidsperiod. På så sätt kan operatorer dela reglerna för erbjudanden i andra kategorier och på så sätt förenkla hanteringen av dem. I ett erbjudande låter reglerna för behörighet operatörerna begränsa giltigheten för erbjudanden i tid och avgöra vilka mottagare som ska vara målgrupp.
+Behörighetsregler är begränsningar som gäller för en miljö, kategori eller erbjudande som avser giltighetsperiod, mål och vikt. De låter operatörerna se till att ett erbjudande är i linje med den avsedda kontakten. I erbjudandemiljön omfattar reglerna för berättigande presentationer som tillämpas på erbjudandena och mottagarna som ska målgruppsanpassas. I kategorin kan operatörerna begränsa giltigheten för kategorin i tid, definiera programteman och avgöra vilka mottagare som ska vara målgrupp. De kan också definiera en multiplikatjocklek för en viss tidsperiod. På så sätt kan operatorer dela reglerna för erbjudanden i andra kategorier och på så sätt förenkla hanteringen av dem. I ett erbjudande låter reglerna för behörighet operatörerna begränsa giltigheten för erbjudanden i tid och avgöra vilka mottagare som ska vara målgrupp.
 
-Läs mer om [Villkor](../../interaction/using/interaction-and-offer-management.md).
+Läs mer om [Villkor för deltagande](../../interaction/using/interaction-and-offer-management.md).
 +++
 
 +++**Berättigat erbjudande**
 
-*Kontext: Kampanjinteraktion*
+*Sammanhang: Kampanjinteraktion*
 
 Ett kvalificerat erbjudande är ett erbjudande som uppfyller de definierade villkoren uppströms och som konsekvent kan erbjudas ett mål.
 
@@ -356,14 +357,14 @@ Läs mer om [Utforskarvy](../../platform/using/adobe-campaign-explorer.md).
 
 +++**Externa konton**
 
-Externa konton är ingångs- och avslutningspunkter för produkten för anslutning till andra miljöer och tekniker. Externa konton definierar de anslutningsparametrar som produkten använder för att skicka data till eller ta emot data från andra källor. Typiska externa kontotyper är anslutningar för SFTP-platser, telekom som stöder sändning av SMS, postlådor för bearbetningsgränser eller anslutningar till externa databaser.
+Externa konton är ingångs- och avslutningspunkter för produkten för att ansluta till andra miljöer och tekniker. Externa konton definierar de anslutningsparametrar som produkten använder för att skicka data till eller ta emot data från andra källor. Typiska externa kontotyper är anslutningar för SFTP-platser, telekom som stöder sändning av SMS, postlådor för bearbetningsgränser eller anslutningar till externa databaser.
 
 Läs mer om [Externa konton](../../installation/using/external-accounts.md).
 +++
 
 +++**Trötthetshantering**
 
-*Kontext: Kampanjoptimering*
+*Sammanhang: Kampanjoptimering*
 
 Trötthetshanteringen hjälper er att styra frekvens och antal meddelanden för att undvika att mottagare blir överbeställda och används ofta med en typologiregel.
 
@@ -372,7 +373,7 @@ Läs mer om [Trötthetshantering](../../campaign-opt/using/pressure-rules.md).
 
 +++**Federerad dataåtkomst (FDA)**
 
-Federated Data Access har stöd för tillägg av klientdatamodellen till en tredjepartsdatabas. Det identifierar automatiskt strukturen för måltabellerna och använder data från SQL-källorna. Du kan komma åt externa data utan att ändra strukturen på Adobe Campaign-data.
+Federated Data Access har stöd för tillägg av klientdatamodellen till en tredjepartsdatabas. Den identifierar automatiskt strukturen för måltabellerna och använder data från SQL-källorna. Du kan komma åt externa data utan att ändra strukturen på Adobe Campaign-data.
 
 Läs mer om [Åtkomst till federerade data](../../installation/using/about-fda.md).
 +++
@@ -388,7 +389,7 @@ Läs mer om [Godkännande av filextrahering](../../delivery/using/validating.md)
 
 +++**Filtreringsdimension**
 
-Filtreringsdimensionen är det schema som innehåller de data eller attribut som används av en fråga för att filtrera de önskade raderna. Filtreringsdimensionsschemat måste vara direkt länkat till den definierade måldimensionen för att Adobe Campaign ska kunna korsa databaskopplingen och returnera respondentraderna.
+Filtreringsdimensionen är det schema som innehåller de data eller attribut som används av en fråga för att filtrera de önskade raderna. Filtreringsdimensionsschemat måste vara direkt länkat till den definierade måldimensionen för att Adobe Campaign ska kunna korsa databaskopplingen och returnera svarstrader.
 
 Läs mer om [Filtreringsdimension](../../workflow/using/building-a-workflow.md#targeting-and-filtering-dimensions).
 +++
@@ -431,11 +432,11 @@ Campaign Heatmap är en tabell som visar information om arbetsflödeskörning un
 Läs mer om [Heatmap](../../workflow/using/heatmap.md).
 +++
 
-+++**Hybrid-driftsättning**
++++**Hybrid-distribution**
 
 Hybrid-driftsättning är en kombination av on demand-tjänster och lokal programvara som används för att fungera tillsammans.
 
-Läs mer om [Hybrid-driftsättning](../../installation/using/hosting-models.md#hybrid).
+Läs mer om [Hybrid-distribution](../../installation/using/hosting-models.md#hybrid).
 
 +++
 
@@ -444,13 +445,13 @@ Läs mer om [Hybrid-driftsättning](../../installation/using/hosting-models.md#h
 <!-- added more details but maybe still not clear/useful here? -->
 +++**Identifieringsläge**
 
-*Kontext: Kampanjinteraktion*
+*Sammanhang: Kampanjinteraktion*
 
 Identifieringsläget Avser en kontakts status. Den kan vara explicit, implicit eller anonym.
 
-* **explicit**: kontakten identifieras efter deras inloggning i kanalgränssnittet.
+* **explicit**: kontakten identifieras efter inloggning i kanalgränssnittet.
 * **implicit**: kontakten har identifierats genom en cookie (permanent eller session). Den kan behandlas som en anonym eller identifierad kontakt.
-* **anonym**: kontakten inte kan identifieras.
+* **anonym**: det går inte att identifiera kontakten.
 
 Läs mer om [Interaktion](../../interaction/using/interaction-and-offer-management.md).
 +++
@@ -467,7 +468,7 @@ Learn more about [Image serving](../../delivery/using/defining-the-email-content
 
 +++**Inkommande interaktion**
 
-*Kontext: Kampanjinteraktion*
+*Sammanhang: Kampanjinteraktion*
 
 En inkommande interaktion är en interaktion som följer på ett inkommande samtal som genereras av en kontakts åtgärd i en kanal, till exempel webben, callcenter eller mobil. Den här typen av interaktion bearbetas vanligtvis i enskärmsläge (dvs. per mottagare).
 
@@ -514,9 +515,9 @@ Läs mer om [Lokal cache](../../platform/using/faq-campaign-config.md#perform-so
 
 +++**Marknadsföringsresurshantering (MRM)**
 
-*Kontext: Marknadsföringsresurshantering (MRM)*
+*Kontext: Hantering av marknadsföringsresurser (MRM)*
 
-The **Marknadsföringsresurshantering (MRM)** i Adobe Campaign kan ni styra marknadsföringsåtgärder i ett samverkansbaserat läge genom att tillhandahålla fullständig hantering och realtidsspårning av uppgifter, budget och marknadsföringsresurser. Adobe Campaign-operatorer kan koordinera sina åtgärder och godkänna sina framsteg i alla faser via fullständiga valideringsprocesser och lämpliga spårningsverktyg: rapportering, spårning av godkännanden, meddelanden, diskussionsforum osv.
+The **Marknadsföringsresurshantering (MRM)** i Adobe Campaign kan ni styra marknadsföringsåtgärder i ett samverkansbaserat läge genom att tillhandahålla fullständig hantering och realtidsspårning av uppgifter, budget och marknadsföringsresurser. Adobe Campaign-operatorer kan samordna sina åtgärder och godkänna deras framsteg i alla faser via fullständiga valideringsprocesser och lämpliga spårningsverktyg: rapportering, spårning av godkännanden, aviseringar, diskussionsforum osv.
 
 Läs mer om [MRM](../../mrm/using/about-marketing-resource-management.md).
 +++
@@ -555,14 +556,14 @@ Learn more about [Navigation Bar](../../platform/using/adobe-campaign-workspace.
 
 +++**Navigeringsträd**
 
-Navigeringsträdet är huvudnavigeringen i Utforskaren i Adobe Campaign. Navigeringsträdet fungerar som en filläsare (t.ex. Utforskaren i Windows). Mappar kan innehålla undermappar. Om du väljer en nod visas vyn som motsvarar noden. Den vy som visas är en lista som är associerad med ett schema och ett inmatningsformulär för att redigera den markerade raden. Du kan anpassa navigeringsträdet och ange behörigheter för mappar.
+Navigeringsträdet är huvudnavigeringen i Utforskaren i Adobe Campaign. Navigeringsträdet fungerar som en filläsare (t.ex. Utforskaren). Mappar kan innehålla undermappar. Om du väljer en nod visas vyn som motsvarar noden. Den vy som visas är en lista som är associerad med ett schema och ett inmatningsformulär för att redigera den markerade raden. Du kan anpassa navigeringsträdet och ange behörigheter för mappar.
 
 Läs mer om [Navigeringsträd](../../platform/using/adobe-campaign-explorer.md#about-navigation-hierarch).
 +++
 
 +++**Mål**
 
-*Kontext: Marknadsföringsresurshantering (MRM)*
+*Kontext: Hantering av marknadsföringsresurser (MRM)*
 
 Inom ramen för kampanjen, programmet eller planen kan operatörerna ange en lista med mål. Dessa är kvantifierade värden som ska uppnås. När kampanjen, programmet eller planen är slut kan de som ansvarar för driften jämföra målen och resultaten i dedikerade rapporter med hjälp av MRM-modulen.
 
@@ -571,7 +572,7 @@ Läs mer om [Mål](../../mrm/using/creating-and-managing-tasks.md#expenses-and-r
 
 +++**Erbjudandekatalog**
 
-*Kontext: Kampanjinteraktion*
+*Sammanhang: Kampanjinteraktion*
 
 En erbjudandekatalog är en uppsättning erbjudanden som definieras i Adobe Campaign och som kan väljas vid en interaktion. Katalogen ordnas hierarkiskt med varje nod som motsvarar en kategori.
 
@@ -580,7 +581,7 @@ Läs mer om [Erbjudandekatalog](../../interaction/using/offer-catalog-overview.m
 
 +++**Erbjudandekontakt**
 
-*Kontext: Kampanjinteraktion*
+*Sammanhang: Kampanjinteraktion*
 
 En kontaktperson för ett erbjudande är en kontakt från en inkommande interaktion. Under motorsamtalsbearbetningen är kontakten kopplad till en måldimension. Ej identifierade anonyma kontakter tillskrivs besökarens målgruppsdimension. Det finns två typer av kontakter, identifierade och anonyma:
 
@@ -592,16 +593,16 @@ Läs mer om [Interaktion](../../interaction/using/interaction-and-offer-manageme
 
 +++**Designmiljö**
 
-*Kontext: Kampanjinteraktion*
+*Sammanhang: Kampanjinteraktion*
 
-Erbjudandet **Designmiljö** är den miljö i vilken operatorer skapar erbjudanden, definierar typologiregler och väljer det schema som erbjudandena riktar sig till. Registret för lagring av genererade offertförslag definieras också av miljön. Som standard innehåller tilläggsprogrammet Interaction ett **Design** miljö och **Live** miljö som är länkad till den. Båda miljöerna är förkonfigurerade för den inbyggda mottagartabellen.
+Erbjudandet **Designmiljö** är den miljö i vilken operatorer skapar erbjudanden, definierar typologiregler och väljer det schema som erbjudandena ska rikta sig till. Registret för lagring av genererade offertförslag definieras också av miljön. Som standard innehåller tilläggsprogrammet Interaction ett **Design** miljö och **Live** miljö som är länkad till den. Båda miljöerna är förkonfigurerade för den inbyggda mottagartabellen.
 
 Läs mer om [Erbjud designmiljöer](../../interaction/using/fundamental-principles.md).
 +++
 
 +++**Erbjud motorarbitrage**
 
-*Kontext: Kampanjinteraktion*
+*Sammanhang: Kampanjinteraktion*
 
 Erbjudandemotorn väljer de erbjudanden som ska visas i en miljö (giltiga erbjudanden). Principen om arbitrage rangordnar erbjudanden efter prioritet enligt de kriterier som definieras i kategorierna och erbjudandena.
 
@@ -610,7 +611,7 @@ Läs mer om [Interaktion](../../interaction/using/interaction-and-offer-manageme
 
 +++**Erbjudandemotorrensning**
 
-*Kontext: Kampanjinteraktion*
+*Sammanhang: Kampanjinteraktion*
 
 Rensningen av erbjudandemotorn innebär att erbjudanden som inte är valbara tas bort. Kördes före offertmotorns arbitragesteg.
 
@@ -619,16 +620,16 @@ Läs mer om [Interaktion](../../interaction/using/interaction-and-offer-manageme
 
 +++**Erbjudandemiljö**
 
-*Kontext: Kampanjinteraktion*
+*Sammanhang: Kampanjinteraktion*
 
-Erbjudandemiljön är rotmappen som definierar en erbjudandekatalog, dess tillgängliga utrymmen och miljöns fördefinierade filter. Operatörerna måste skapa en miljö för varje målinriktning. Det finns två typer av Erbjudandemiljöer: Design och Live.
+Erbjudandemiljön är rotmappen som definierar en erbjudandekatalog, dess tillgängliga utrymmen och miljöns fördefinierade filter. Operatörerna måste skapa en miljö för varje målinriktningsdimension. Det finns två typer av miljöer: Design och Live.
 
 Läs mer om [Erbjudandemiljöer](../../interaction/using/fundamental-principles.md).
 +++
 
 +++**Erbjud Live-miljö**
 
-*Kontext: Kampanjinteraktion*
+*Sammanhang: Kampanjinteraktion*
 
 Offer Live-miljön är kopplad till en kampanj **Designmiljö**. Den innehåller skrivskyddade erbjudanden vars innehåll och behörighet har godkänts via **Designmiljö**. De kan väljas för presentation på en webbplats eller infogas i ett utgående meddelande.
 
@@ -637,16 +638,16 @@ Läs mer om [Erbjud Live-miljöer](../../interaction/using/fundamental-principle
 
 +++**Presentationsregler**
 
-*Kontext: Kampanjinteraktion*
+*Sammanhang: Kampanjinteraktion*
 
-Presentationsregler för erbjudanden är typologiregler som refereras i erbjudandemiljön, som gör att operatörerna kan exkludera specifika erbjudanden genom att ta hänsyn till mottagarens erbjudandehistorik.
+Presentationsregler för erbjudanden är typologiregler som refereras i erbjudandemiljön, som gör att operatörerna kan exkludera specifika erbjudanden genom att ta hänsyn till mottagarens offerthistorik.
 
 Läs mer om [Presentationsregler](../../interaction/using/managing-offer-presentation.md#presentation-rules-overview).
 +++
 
 +++**Förhandsgranska erbjudande**
 
-*Kontext: Kampanjinteraktion*
+*Sammanhang: Kampanjinteraktion*
 
 Det här är en förhandsgranskning av erbjudandet som det visas i sin mapp. Den är tillgänglig från fliken för förhandsgranskning av erbjudande eller från kontaktprofilen.
 
@@ -655,7 +656,7 @@ Läs mer om [Förhandsgranska erbjudande](../../interaction/using/creating-an-of
 
 +++**Erbjudandeförslag**
 
-*Kontext: Kampanjinteraktion*
+*Sammanhang: Kampanjinteraktion*
 
 Ett erbjudande är resultatet av en åtgärd som består av att presentera ett erbjudande till en kontakt i ett visst erbjudandeutrymme, till exempel banderollen på en webbplats, ett e-postmeddelande eller SMS-innehåll. Detta resultat lagras i offerttabellen som definierar erbjudandet, mottagaren och tidsstämpeln, där alla erbjudanden som en mottagare har fått registreras.
 
@@ -664,25 +665,25 @@ Läs mer om [Erbjudandeförslag](../../interaction/using/creating-offer-spaces.m
 
 +++**Erbjudanderepresentation**
 
-*Kontext: Kampanjinteraktion*
+*Sammanhang: Kampanjinteraktion*
 
 En offertrepresentation är information som används av kanalen för att visa erbjudandet. Erbjudanderepresentationen kan utformas med hjälp av återgivningsfunktionen i det utrymme som erbjudandet avser eller anges direkt i gränssnittet (t.ex. i blocket HTML). Ett erbjudande kan representeras av ett space.
 
 Läs mer om [Interaktion](../../interaction/using/interaction-and-offer-management.md).
 +++
 
-+++**Simulera erbjudanden**
++++**Simulering av erbjudanden**
 
-*Kontext: Kampanjinteraktion*
+*Sammanhang: Kampanjinteraktion*
 
-Med hjälp av en erbjudandesimulering kan operatörerna testa distributionen i ett definierat omfång (leveransdatum, målsegment, antal erbjudanden, tema osv.) innan erbjudandena faktiskt skickas. Det kan användas för att justera prioriteter och regler för erbjudanden för att maximera effektiviteten.
+Med hjälp av en erbjudandesimulering kan operatörerna testa distributionen i ett definierat scope (leveransdatum, målsegment, antal erbjudanden, tema osv.) innan erbjudandena faktiskt skickas. Det kan användas för att justera prioriteter och regler för erbjudanden för att maximera erbjudandets effektivitet.
 
 Läs mer om [Erbjudandesimuleringar](../../interaction/using/about-offers-simulation.md).
 +++
 
 +++**Utrymme**
 
-*Kontext: Kampanjinteraktion*
+*Sammanhang: Kampanjinteraktion*
 
 Ett erbjudandeutrymme är en mapp som definierar platsen där erbjudandet visas. Genom att definiera ett utrymme kan du ange vilken kanal som ska användas, bygga innehållet i erbjudandet och ange vilka erbjudanden som ska visas. Erbjudandeutrymmet är gränssnittet mellan kanalen och erbjudandemotorn.
 
@@ -691,7 +692,7 @@ Läs mer om [Utrymme](../../interaction/using/creating-offer-spaces.md).
 
 +++**Erbjud teman**
 
-*Kontext: Kampanjinteraktion*
+*Sammanhang: Kampanjinteraktion*
 
 Erbjudandeteman är nyckelord som definieras i en kategori, vilket gör att operatorer kan filtrera erbjudanden när de presenteras. Teman gör det möjligt att välja icke-hierarkiska erbjudanden från katalogstrukturen.
 
@@ -700,7 +701,7 @@ Läs mer om [Erbjud teman](../../interaction/using/integrating-an-offer-via-the-
 
 +++**Erbjudandevikt**
 
-*Kontext: Kampanjinteraktion*
+*Sammanhang: Kampanjinteraktion*
 
 Anbudsvikten baseras på formler som exakt definierar relevansen av ett erbjudande så att motorn kan välja det mest relevanta erbjudandet. Vikten definieras i erbjudandena och multiplikatorer definieras i kategorierna. Berättigade erbjudanden beaktas i minskande viktordning.
 
@@ -716,7 +717,7 @@ Läs mer om [Operatorer](../../platform/using/access-management-operators.md).
 
 +++**Operatörsgrupper**
 
-Operatorgrupper gör att du kan hantera roller för kampanjoperatorer. Du definierar grupper av operatorer som du tilldelar rättigheter till och associerar sedan operatorerna med en eller flera grupper. På så sätt kan du återanvända behörigheter och göra användarprofilerna mer enhetliga. Det underlättar också hantering och underhåll av profiler.
+Operatorgrupper gör att du kan hantera roller för kampanjoperatorer. Du definierar grupper av operatorer som du tilldelar rättigheter till och associerar sedan operatorerna med en eller flera grupper. På så sätt kan du återanvända behörigheter och göra operatörsprofilerna mer enhetliga. Det underlättar också hantering och underhåll av profiler.
 
 Läs mer om [Operatörsgrupper](../../platform/using/access-management-groups.md).
 +++
@@ -730,7 +731,7 @@ Läs mer om [Alternativ](../../installation/using/configuring-campaign-options.m
 
 +++**Utgående interaktion**
 
-*Kontext: Kampanjinteraktion*
+*Sammanhang: Kampanjinteraktion*
 
 En utgående interaktion är ett anrop till interaktionsmotorn från en kontaktlista (används för att leverera e-post, direktreklam osv.). Samma regler och processer tillämpas för varje kontakt. Den här typen av interaktion bearbetas vanligtvis i gruppläge.
 
@@ -851,7 +852,7 @@ Läs mer om [Mottagare](../../configuration/using/about-data-model.md).
 
 +++**Återgivningsfunktion**
 
-*Kontext: Kampanjinteraktion*
+*Sammanhang: Kampanjinteraktion*
 
 Återgivningsfunktionen definieras i ett erbjudandeutrymme. Den används för att konstruera sin offertrepresentation baserat på de attribut som anges i erbjudandet. Det finns tre olika återgivningsfunktionslägen: HTML, XML och text.
 
@@ -920,7 +921,7 @@ Läs mer om [Prenumerationstjänster](../../workflow/using/subscription-services
 
 +++**Målgodkännande**
 
-*Kontext: Kampanjdistribuerad marknadsföring*
+*Sammanhang: Campaign Distributed Marketing*
 
 Målgodkännande är processen att låta en separat operator eller en grupp av operatorer godkänna slutmålet för en leverans (efter att analysfasen har genererat målet) innan leveransen kan skickas.
 
@@ -955,13 +956,13 @@ Måldimensionen är den datatyp som skapas (returneras) av en fråga eller andra
 Läs mer om [Måldimension](../../workflow/using/targeting-data.md).
 +++
 
-+++**Aktivitet**
++++**Uppgiftsaktivitet**
 
-*Kontext: Marknadsföringsresurshantering (MRM)*
+*Kontext: Hantering av marknadsföringsresurser (MRM)*
 
-Arbetsflödesaktiviteten Inkluderar mänsklig åtgärd i logiken i ett arbetsflöde. Du kan ange två scenarier: den första om uppgiften är slutförd och den andra om uppgiften inte är slutförd. Vanliga användningsområden är för att införliva offlineåtgärder i en kampanj eller för anpassade åtgärder som godkännanden.
+Arbetsflödesaktiviteten Inkluderar mänsklig åtgärd i logiken i ett arbetsflöde. Du kan ange två scenarier: det första om aktiviteten har slutförts och det andra om aktiviteten inte har slutförts. Vanliga användningsområden är för att införliva offlineåtgärder i en kampanj eller för anpassade åtgärder som godkännanden.
 
-Läs mer om [Aktivitet](../../workflow/using/task.md).
+Läs mer om [Uppgiftsaktivitet](../../workflow/using/task.md).
 +++
 
 <!--
@@ -1033,7 +1034,7 @@ Learn more about [Triggers](../../workflow/using/about-workflows.md).
 
 +++**Typologi**
 
-*Kontext: Kampanjoptimering*
+*Sammanhang: Kampanjoptimering*
 
 En typologi är en gruppering av typologiregler som tillämpas på analysfasen av en leverans. En kampanjtypologi kan innehålla flera typologiregler, men en leverans kan bara referera till en typologi.
 
@@ -1042,7 +1043,7 @@ Läs mer om [Typologier](../../campaign-opt/using/about-campaign-typologies.md#t
 
 +++**Typologiregel**
 
-*Kontext: Kampanjoptimering*
+*Sammanhang: Kampanjoptimering*
 
 Typologiregler är affärsregler som implementeras som en del av leveransens analysfas. Typologiregler är kontroller av innehållet i leveransen (kontrollregler) eller målet för leveransen (filtreringsregler) eller annan logik (tryckregler) som uppfyller affärskraven. Regler är detaljelement som kan inkluderas i en eller flera typologier.
 
@@ -1083,7 +1084,7 @@ Läs mer om [Arbetsflödesjournal](../../workflow/using/monitoring-workflow-exec
 
 +++**Arbetsyta**
 
-Arbetstabellen innehåller all information som följer med arbetsflödesövergångar. Varje arbetsflöde använder flera arbetstabeller. Arbetstabellen innehåller resultatet av sin ursprungliga aktivitet och dess innehåll används som indata till nästa (anslutna) aktivitet i arbetsflödet.  Redigering (tillägg, anpassning) av arbetsflödet är en av Adobe Campaign huvudfärdigheter.
+Arbetstabellen innehåller all information som följer med arbetsflödesövergångar. För varje arbetsflöde används flera arbetstabeller. Arbetstabellen innehåller resultatet av sin ursprungliga aktivitet och dess innehåll används som indata till nästa (anslutna) aktivitet i arbetsflödet.  Redigering (tillägg, anpassning) av arbetsflödet är en av Adobe Campaign huvudfärdigheter.
 
 Läs mer om [Worktables](../../workflow/using/about-workflows.md).
 +++

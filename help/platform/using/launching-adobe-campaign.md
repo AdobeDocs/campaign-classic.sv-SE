@@ -2,14 +2,15 @@
 product: campaign
 title: Starta Adobe Campaign
 description: Starta Adobe Campaign
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+feature: Access Management, Permissions
+badge-v7-only: label="v7" type="Informative" tooltip="Gäller endast Campaign Classic v7"
 audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: 4d9c5b24-83a2-4495-a56c-5bc376d69703
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '513'
+source-wordcount: '520'
 ht-degree: 9%
 
 ---
@@ -51,8 +52,8 @@ Du kan även ansluta med en dedikerad inloggning/ett dedikerat lösenord:
 Nu kan du komma åt [Adobe Campaign arbetsyta](../../platform/using/adobe-campaign-workspace.md).
 
 Vissa kortkommandon finns på **[!UICONTROL Sign in screen]**:
-* Alla åtgärdbara objekt kan markeras via **Tabb** (uppifrån och ned) eller **Tabb** + **Skift** tangenter (nerifrån och upp).
-* Om du vill starta anslutningen trycker du på **Retur** nyckel.
+* Alla åtgärdbara objekt kan markeras via **Tabb** eller uppifrån och ned **Tabb** + **Skift** tangenter (nerifrån och upp).
+* Om du vill starta anslutningen trycker du på **Retur** -tangenten.
 * Du kan använda **Escape** för att återställa **[!UICONTROL Login]** och **[!UICONTROL Password]** till de senast slutförda anslutningsvärdena.
 
 ## Konfigurera anslutningar {#setting-up-connections}
@@ -65,13 +66,13 @@ I **[!UICONTROL Connections]** fönster, klicka **[!UICONTROL Add > Connection]*
 
 Du måste sedan definiera anslutningsinställningarna. Så här gör du:
 
-1. Ange **[!UICONTROL Label]** för att tilldela en databasanslutning ett namn.
+1. Ange en **[!UICONTROL Label]** för att tilldela en databasanslutning ett namn.
 
 1. Lägg till adressen till programservern i **[!UICONTROL URL]** fält. Kontakta administratören om du inte känner till anslutnings-URL:en.
 
 1. Kontrollera **[!UICONTROL Connect with an Adobe ID]** för att operatörerna ska kunna ansluta till konsolen med sin Adobe ID. Mer information finns på [den här sidan](../../integrations/using/about-adobe-id.md).
 
-1. Klicka **[!UICONTROL OK]** att validera.
+1. Klicka **[!UICONTROL OK]** för att validera.
 
 ## Operatörer och behörigheter {#operators-and-permissions}
 
@@ -94,7 +95,7 @@ Om du vill koppla från Adobe Campaign använder du den första ikonen i ikonfä
 The **[!UICONTROL Help > About...]** kan du komma åt följande information:
 
 * **version** nummer för Campaign-klientkonsolen och programservern
-* **bygga** nummer för Campaign-klientkonsolen och programservern
+* **bygg** nummer för Campaign-klientkonsolen och programservern
 * en länk till att kontakta Adobe kundtjänst
 * länkar till Adobe sekretesspolicy, användarvillkor och cookies
 

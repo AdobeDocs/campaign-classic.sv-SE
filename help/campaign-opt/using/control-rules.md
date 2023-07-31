@@ -2,13 +2,13 @@
 product: campaign
 title: Kontrollregler
 description: Kontrollregler
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
-feature: Typology Rules
+badge-v7-only: label="v7" type="Informative" tooltip="Gäller endast Campaign Classic v7"
+feature: Typology Rules, Campaigns
 exl-id: 5a5f26f6-38da-4488-aadb-81fcb5359331
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '353'
-ht-degree: 1%
+source-wordcount: '360'
+ht-degree: 2%
 
 ---
 
@@ -22,12 +22,12 @@ Med en uppsättning färdiga regler kan du utföra vanliga kontroller. Dessa kon
 
 * **[!UICONTROL Object approval]** (e-post): kontrollerar att avsändarobjektet och avsändaradressen inte innehåller specialtecken som kan orsaka problem för vissa e-postagenter.
 * **[!UICONTROL URL label approval]** (e-post): kontrollerar att varje spårnings-URL har en etikett.
-* **[!UICONTROL URL approval]** (e-post): kontrollerar spårnings-URL:er (om tecknet &quot;&amp;&quot; finns).
+* **[!UICONTROL URL approval]** (e-post): kontrollerar spårnings-URL:er (närvaron av tecknet &quot;&amp;&quot;).
 * **[!UICONTROL Message size approval]** (mobil): kontrollerar storleken på SMS-meddelanden.
 * **[!UICONTROL Validity period check]** (e-post): kontrollerar att giltighetsperioden för leveransen är tillräckligt lång för att skicka alla meddelanden.
-* **[!UICONTROL Proof size check]** (alla kanaler): genererar ett felmeddelande om målgruppen för korrektur överstiger 100 mottagare.
-* **[!UICONTROL Wave scheduling check]** (e-post): kontrollerar att den sista leveranspvågen är planerad att påbörjas före utgången av giltighetsperioden, om leveransen delas upp i flera vågor.
-* **[!UICONTROL Unsubscription link approval]** (e-post): kontrollerar om det finns minst en avanmälan (avanmälan)-URL i varje innehåll (HTML och Text).
+* **[!UICONTROL Proof size check]** (alla kanaler): genererar ett felmeddelande om målpopulationen för korrektur överstiger 100 mottagare.
+* **[!UICONTROL Wave scheduling check]** (e-post): kontrollerar att den sista leveranskedjan är schemalagd att påbörjas innan giltighetsperiodens slut, om leveransen delas upp i flera påfyllnader.
+* **[!UICONTROL Unsubscription link approval]** (e-post): kontrollerar om det finns minst en avanmälnings-URL i varje innehåll (HTML och text).
 
 ## Skapa en kontrollregel {#creating-a-control-rule}
 

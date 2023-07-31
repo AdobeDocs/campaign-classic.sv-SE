@@ -1,15 +1,16 @@
 ---
 product: campaign
 title: Testa mallar för transaktionsmeddelanden
-description: Lär dig hur du hanterar dirigerade adresser i transaktionsmeddelanden för att förhandsgranska och testa dem i Adobe Campaign Classic
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+description: Lär dig hantera dirigerade adresser i transaktionsmeddelanden för att förhandsgranska och testa dem i Adobe Campaign Classic
+feature: Transactional Messaging, Message Center, Templates
+badge-v7-only: label="v7" type="Informative" tooltip="Gäller endast Campaign Classic v7"
 audience: message-center
 content-type: reference
 topic-tags: message-templates
 exl-id: 417004c9-ed96-4b98-a518-a3aa6123ee7b
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '560'
+source-wordcount: '567'
 ht-degree: 2%
 
 ---
@@ -105,7 +106,7 @@ När du skickar ett korrektur utförs samma process som för en [normal leverans
 * Skapa en eller flera [dirigeringsadresser](#managing-seed-addresses-in-transactional-messages) med [personaliseringsdata](#personalization-data).
 * [Skapa meddelandeinnehållet](../../message-center/using/creating-the-message-template.md#creating-message-content).
 
-Så här skickar du korrekturet:
+Skicka korrekturet:
 
 1. Klicka på **[!UICONTROL Send a proof]** i leveransfönstret.
 1. Analysera leveransen.
@@ -117,8 +118,8 @@ Så här skickar du korrekturet:
 
    ![](assets/messagecenter_send_proof_002.png)
 
-Korrektur kan öppnas i varje mall via **[!UICONTROL Audit]** -fliken. Mer information finns i [Skicka ett bevis](../../delivery/using/steps-validating-the-delivery.md#sending-a-proof).
+Du kan komma åt korrektur i varje mall via **[!UICONTROL Audit]** -fliken. Mer information finns i [Skicka ett bevis](../../delivery/using/steps-validating-the-delivery.md#sending-a-proof).
 
 ![](assets/messagecenter_send_proof_003.png)
 
-Din meddelandemall är nu klar att användas [publicerad](../../message-center/using/publishing-message-templates.md).
+Din meddelandemall är nu klar [publicerad](../../message-center/using/publishing-message-templates.md).

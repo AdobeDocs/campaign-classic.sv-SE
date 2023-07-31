@@ -2,14 +2,15 @@
 product: campaign
 title: Publicera meddelandemallar
 description: Läs om publicering och borttagning av publicering av transaktionsmeddelandemallar i Adobe Campaign Classic
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+feature: Transactional Messaging, Message Center, Templates
+badge-v7-only: label="v7" type="Informative" tooltip="Gäller endast Campaign Classic v7"
 audience: message-center
 content-type: reference
 topic-tags: message-templates
 exl-id: 1d55f42b-64bf-4b1f-a317-c1f7456aa5b3
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '494'
+source-wordcount: '501'
 ht-degree: 2%
 
 ---
@@ -54,9 +55,9 @@ När en mall har publicerats, om motsvarande händelse aktiveras, kommer körnin
 
 När en meddelandemall har publicerats på körningsinstanserna kan den avpubliceras. Mer information om mallpubliceringsprocessen finns i [det här avsnittet](#template-publication).
 
-* En publicerad mall kan fortfarande anropas om motsvarande händelse aktiveras: Om du inte längre använder en meddelandemall bör du avpublicera den. Detta för att undvika att skicka ett oönskat transaktionsmeddelande av misstag.
+* En publicerad mall kan fortfarande anropas om motsvarande händelse aktiveras: om du inte längre använder en meddelandemall bör du avpublicera den. Detta för att undvika att skicka ett oönskat transaktionsmeddelande av misstag.
 
-   Du publicerade till exempel en meddelandemall som du bara använder för julkampanjer. Du kanske vill avpublicera den när julperioden är slut och publicera den igen nästa år.
+  Du publicerade till exempel en meddelandemall som du bara använder för julkampanjer. Du kanske vill avpublicera den när julperioden är slut och publicera den igen nästa år.
 
 * Du kan inte heller ta bort en transaktionsmeddelandemall som har **[!UICONTROL Published]** status. Du måste avpublicera det först.
 
@@ -82,8 +83,8 @@ När borttagningen är klar:
 
 * Båda meddelandemallarna (som används för batch- och realtidshändelser) tas bort från varje körningsinstans.
 
-   De visas inte längre i **[!UICONTROL Administration > Production > Message Center Execution > Default > Transactional message templates]** mapp (se [det här avsnittet](#template-publication)).
+  De visas inte längre i **[!UICONTROL Administration > Production > Message Center Execution > Default > Transactional message templates]** mapp (se [det här avsnittet](#template-publication)).
 
 * När en mall har avpublicerats kan du ta bort den från kontrollinstansen.
 
-   Om du vill göra det markerar du den i listan och klickar på knappen **[!UICONTROL Delete]** överst till höger på skärmen.
+  Om du vill göra det markerar du den i listan och klickar på **[!UICONTROL Delete]** överst till höger på skärmen.

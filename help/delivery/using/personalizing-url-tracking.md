@@ -1,15 +1,15 @@
 ---
 product: campaign
 title: Konfigurera alternativ för URL-spårning
-description: Lär dig hur du konfigurerar alternativ för URL-spårning
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
-feature: Monitoring, Email Design
+description: Lär dig konfigurera alternativ för URL-spårning
+badge-v7: label="v7" type="Informative" tooltip="Gäller Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Gäller även Campaign v8"
+feature: Monitoring, Email Design, Personalization
 exl-id: 3277726a-fd92-4720-8871-3d0422c7db70
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '167'
-ht-degree: 9%
+source-wordcount: '179'
+ht-degree: 10%
 
 ---
 
@@ -29,9 +29,9 @@ Du kan konfigurera spårningsalternativen:
 
 * Aktivera/inaktivera URL-spårning för alla meddelanden.
 
-   >[!CAUTION]
-   >
-   >När spårning inte är aktiverat för en leverans (dvs. **[!UICONTROL Activate tracking]** inte valt) är rapporter och data för spårning inte tillgängliga: Öppnar, snabbklickningar och spårade URL:er visar inga data, och **[!UICONTROL Tracking logs]** flikar visas inte för den här leveransen.
+  >[!CAUTION]
+  >
+  >När spårning inte är aktiverat för en leverans (dvs. **[!UICONTROL Activate tracking]** inte valt) är rapporter och data som rör spårning inte tillgängliga: Öppnar, snabbklickningar och spårade URL:er visar inga data, och **[!UICONTROL Tracking logs]** flikar visas inte för den här leveransen.
 
 * Aktivera/inaktivera spårning för meddelande öppnas.
 

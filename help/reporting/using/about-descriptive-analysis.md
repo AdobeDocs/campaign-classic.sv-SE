@@ -2,13 +2,13 @@
 product: campaign
 title: Kom igång med beskrivande analys
 description: Kom igång med beskrivande analys
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
-feature: Reporting
+feature: Reporting, Monitoring
+badge-v7: label="v7" type="Informative" tooltip="Gäller Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Gäller även Campaign v8"
 exl-id: 19920058-e8e8-4e17-9cc3-24ddf9f96d04
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '201'
+source-wordcount: '213'
 ht-degree: 0%
 
 ---
@@ -25,15 +25,15 @@ Du kan generera kvantitativa eller kvalitativa analysrapporter. Med kvalitativa 
 
 * Tabell och histogram:
 
-   ![](assets/reporting_descriptive_sample_1.png)
+  ![](assets/reporting_descriptive_sample_1.png)
 
 * Ackumulerade värden, utan tabellen:
 
-   ![](assets/reporting_descriptive_sample_3.png)
+  ![](assets/reporting_descriptive_sample_3.png)
 
 * Uppdelning efter affärsgren
 
-   ![](assets/reporting_descriptive_sample_2.png)
+  ![](assets/reporting_descriptive_sample_2.png)
 
 Kvantitativa analyser ger övergripande statistik om de numeriska uppgifterna i urvalet, vilket visas nedan:
 
@@ -45,4 +45,4 @@ Guider för beskrivande analys är inte lika kraftfulla som Adobe Campaign-rappo
 
 >[!CAUTION]
 >
->Med en beskrivande analys kan du inte utforska stora datavolymer.
+>En beskrivande analys gör det inte möjligt att utforska stora datavolymer.

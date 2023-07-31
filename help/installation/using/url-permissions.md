@@ -2,15 +2,16 @@
 product: campaign
 title: Konfigurera URL-behörigheter
 description: Lär dig hur du konfigurerar URL-behörigheter
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
-badge-v7-prem: label="on-premise & hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html" tooltip="Applies to on-premise and hybrid deployments only"
+feature: Installation, Instance Settings, Permissions
+badge-v7-only: label="v7" type="Informative" tooltip="Gäller endast Campaign Classic v7"
+badge-v7-prem: label="lokal och hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=sv" tooltip="Gäller endast lokala och hybrida driftsättningar"
 audience: installation
 content-type: reference
 topic-tags: additional-configurations
 exl-id: 6fe8da3b-57b9-4a69-8602-a03993630b27
-source-git-commit: 4661688a22bd1a82eaf9c72a739b5a5ecee168b1
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '337'
+source-wordcount: '362'
 ht-degree: 29%
 
 ---
@@ -25,20 +26,21 @@ Som standard tillåts instanser endast att ansluta till interna URL:er. Det är 
 
 >[!NOTE]
 >
->Den här proceduren är begränsad till **lokal** distributioner.
+>Detta förfarande är begränsat till **lokal** distributioner.
 >
->Som **värdbaserad** -kund, om du har åtkomst [Kontrollpanelen för kampanj](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=sv)kan du använda självbetjäningsgränssnittet för URL-behörigheter. [Läs mer](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/url-permissions.html?lang=sv)
+>Som en **värdbaserad** -kund, om du har åtkomst [Kampanjkontrollpanelen](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=sv)kan du använda självbetjäningsgränssnittet för URL-behörigheter. [Läs mer](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/url-permissions.html?lang=sv)
 >
 >Övriga **hybrid/värd** Kunder måste kontakta Adobe supportteam för att lägga till IP i tillåtelselista.
+>
 
 För **Hybrid** och **Lokalt** distributioner måste administratören referera till en ny **urlPermission** i **serverConf.xml** -fil.
 
 
 Tre lägen för anslutningsskydd är tillgängliga:
 
-* **Blockera**: Alla URL:er som inte tillhör tillåtelselista blockeras, med ett felmeddelande. Det här är standardläget efter en efteruppgradering.
-* **Tillstånd**: Alla URL:er som inte tillhör tillåtelselista tillåts.
-* **Varning**: Alla URL:er som inte tillhör tillåtelselista tillåts, men JS-tolken skickar en varning så att administratören kan samla in dem. I det här läget läggs JST-310027-varningsmeddelanden till.
+* **Blockera**: alla URL:er som inte tillhör tillåtelselista blockeras, med ett felmeddelande. Det här är standardläget efter en efteruppgradering.
+* **Tillstånd**: alla URL:er som inte tillhör tillåtelselista tillåts.
+* **Varning**: alla URL:er som inte tillhör tillåtelselista tillåts, men JS-tolken genererar en varning så att administratören kan samla in dem. I det här läget läggs JST-310027-varningsmeddelanden till.
 
 ```
 <urlPermission action="warn" debugTrace="true">
@@ -50,7 +52,7 @@ Tre lägen för anslutningsskydd är tillgängliga:
 
 >[!IMPORTANT]
 >
->Som standard används **Blockera** läge.
+>Nya implementeringar använder som standard **Blockera** läge.
 >
 >Som befintlig kund som kommer från en migrering kan du tillfälligt använda **Varning** läge. Analysera utgående trafik innan URL-adresserna tillåts. När listan över tillåtna URL:er har definierats kan du lägga till URL:er till tillåtelselista och aktivera **Blockera** läge.
 

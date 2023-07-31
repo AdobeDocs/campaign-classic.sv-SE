@@ -2,14 +2,14 @@
 product: campaign
 title: Adobe Analytics Connector
 description: Läs mer om Adobe Analytics Connector
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
-feature: Overview
+badge-v7-only: label="v7" type="Informative" tooltip="Gäller endast Campaign Classic v7"
+feature: Analytics Integration
 role: User, Admin
 level: Beginner
 exl-id: 0dc6ce98-dc3e-4242-953e-e7cec55289ff
-source-git-commit: 4661688a22bd1a82eaf9c72a739b5a5ecee168b1
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '1503'
+source-wordcount: '1510'
 ht-degree: 88%
 
 ---
@@ -28,14 +28,13 @@ Adobe Analytics Connector gör att Adobe Campaign och Adobe Analytics kan intera
 >
 >* Innan du börjar ska du se till att Adobe Identity Management System (IMS) är implementerat i Campaign. [Läs mer på den här sidan](../../integrations/using/about-adobe-id.md).
 
-
 Med Adobe Analytics Connector kan Adobe Campaign mäta internetpublik (Web Analytics). Tack vare dessa integreringar kan Adobe Campaign inhämta data om besökares beteende för en eller flera webbplatser efter en marknadsföringskampanj och (efter analys) köra återmarknadsföringskampanjer i syfte att konvertera dem till köpare. Omvänt gör webbanalysverktygen att Adobe Campaign kan vidarebefordra indikatorer och kampanjattribut till sina plattformar.
 
 Åtgärdsfälten för varje verktyg är följande:
 
 * Webbanalysens roll:
 
-   1. markerar kampanjerna som lanserats med Adobe Campaign,
+   1. markerar de kampanjer som lanserats med Adobe Campaign,
    1. sparar mottagarnas beteende, på den webbplats som de bläddrade efter att de klickat på kampanjen, i form av segment. Segmenten avser övergivna produkter (som visats men inte lagts till i varukorgen eller köpts), inköp eller övergivna varukorgar.
 
 * Adobe Campaigns roll:
@@ -203,12 +202,12 @@ Mer information finns på sidan [Produktprofiler för Adobe Analytics](https://e
 
    >[!IMPORTANT]
    >
-   >Det här konfigurationsläget är reserverat för expertanvändare: alla fel i den här formeln kan resultera i stoppade leveranser.
+   >Det här konfigurationsläget är reserverat för expertanvändare: Alla fel i den här formeln kan resultera i stoppade leveranser.
 
 1. På fliken **[!UICONTROL Advanced]** kan du konfigurera eller ändra fler tekniska inställningar.
 
    * **[!UICONTROL Lifespan]**: Låter dig ange fördröjningen (i dagar) efter vilken webbhändelser återställs i Adobe Campaign av tekniska arbetsflöden. Standard: 180 dagar.
-   * **[!UICONTROL Persistence]**: Med kan du definiera den period under vilken alla webbhändelser (till exempel ett köp) kan tillskrivas en återmarknadsföringskampanj, Standard: 7 dagar.
+   * **[!UICONTROL Persistence]**: låter dig definiera den period under vilken alla webbhändelser (till exempel ett köp) kan tillskrivas en återmarknadsföringskampanj, Standard: 7 dagar.
 
 >[!NOTE]
 >
@@ -225,11 +224,11 @@ De finns i Adobe Campaign-trädet, under mappen **[!UICONTROL Administration]** 
 * **[!UICONTROL Recovering of web events]**: en gång i timmen hämtar det här arbetsflödet segment om hur användare beter sig på en viss webbplats, inkluderar dem i Adobe Campaign-databasen och startar arbetsflödet för återmarknadsföring.
 * **[!UICONTROL Event purge]**: med det här arbetsflödet kan du ta bort alla händelser från databasen beroende på vilken period som har konfigurerats i **[!UICONTROL Lifespan]** fältet. Mer information finns i [Konfigurera ditt externa konto i Adobe Campaign Classic](#external-account-classic).
 * **[!UICONTROL Identification of converted contacts]**: katalog över de besökare som gjorde ett köp efter en återmarknadsföringskampanj. Data som har samlas in av det här arbetsflödet är tillgängliga i rapporten **[!UICONTROL Re-marketing efficiency]**. Se den här [sidan](#creating-a-re-marketing-campaign).
-* **[!UICONTROL Sending of indicators and campaign attributes]**: Med kan ni skicka kampanjindikatorer via Adobe Campaign till Adobe Experience Cloud med Adobe Analytics Connector. Arbetsflödet utlöses kl. 4.00 varje dag och det kan ta 24 timmar innan data skickas till Analytics.
+* **[!UICONTROL Sending of indicators and campaign attributes]**: låter dig skicka kampanjindikatorer via Adobe Campaign till Adobe Experience Cloud med Adobe Analytics Connector. Arbetsflödet utlöses kl. 4.00 varje dag och det kan ta 24 timmar innan data skickas till Analytics.
 
-   Observera att det här arbetsflödet inte ska startas om, annars skickas alla tidigare data på nytt, vilket kan förvränga analysresultaten.
+  Observera att det här arbetsflödet inte ska startas om, annars skickas alla tidigare data på nytt, vilket kan förvränga analysresultaten.
 
-   Följande indikatorer ingår:
+  Följande indikatorer ingår:
 
    * **[!UICONTROL Messages to deliver]** (@toDeliver)
    * **[!UICONTROL Processed]** (@processed)
@@ -242,11 +241,11 @@ De finns i Adobe Campaign-trädet, under mappen **[!UICONTROL Administration]** 
    * **[!UICONTROL Opt-Out]** (@optOut)
    * **[!UICONTROL Errors]** (@error)
 
-   >[!NOTE]
-   >
-   >Skickade data är deltavärdet baserat på den senaste ögonblicksbilden vilket kan leda till ett negativt värde i mätdata.
+  >[!NOTE]
+  >
+  >Skickade data är deltavärdet baserat på den senaste ögonblicksbilden vilket kan leda till ett negativt värde i mätdata.
 
-   Följande attribut skickas:
+  Följande attribut skickas:
 
    * **[!UICONTROL Internal name]** (@internalName)
    * **[!UICONTROL Label]** (@label)
@@ -256,7 +255,6 @@ De finns i Adobe Campaign-trädet, under mappen **[!UICONTROL Administration]** 
    * **[!UICONTROL Tag 2]** (webAnalytics/@tag2)
    * **[!UICONTROL Tag 3]** (webAnalytics/@tag3)
    * **[!UICONTROL Contact date]** (scheduling/@contactDate)
-
 
 ## Spåra leveranser i Adobe Campaign {#tracking-deliveries-in-adobe-campaign}
 

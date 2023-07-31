@@ -2,16 +2,17 @@
 product: campaign
 title: Duplicera miljöer
 description: Duplicera miljöer
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
-badge-v7-prem: label="on-premise & hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html" tooltip="Applies to on-premise and hybrid deployments only"
+feature: Monitoring
+badge-v7-only: label="v7" type="Informative" tooltip="Gäller endast Campaign Classic v7"
+badge-v7-prem: label="lokal och hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=sv" tooltip="Gäller endast lokala och hybrida driftsättningar"
 audience: production
 content-type: reference
 topic-tags: data-processing
 exl-id: 2c933fc5-1c0a-4c2f-9ff2-90d09a79c55a
-source-git-commit: 4661688a22bd1a82eaf9c72a739b5a5ecee168b1
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '1289'
-ht-degree: 1%
+source-wordcount: '1314'
+ht-degree: 2%
 
 ---
 
@@ -29,7 +30,7 @@ ht-degree: 1%
 
 Adobe Campaign kräver installation och konfigurering av en eller flera miljöer: utveckling, testning, förproduktion, produktion osv.
 
-Varje miljö innehåller en Adobe Campaign-instans och varje Adobe Campaign-instans är länkad till en eller flera databaser. Programservern kan köra en eller flera processer: nästan alla dessa har direktåtkomst till instansdatabasen.
+Varje miljö innehåller en Adobe Campaign-instans och varje Adobe Campaign-instans är länkad till en eller flera databaser. Programservern kan köra en eller flera processer: nästan alla har direkt åtkomst till instansdatabasen.
 
 I det här avsnittet beskrivs de processer som ska användas för att duplicera en Adobe Campaign-miljö, dvs. för att återställa en källmiljö till en målmiljö, vilket resulterar i två identiska arbetsmiljöer.
 
@@ -63,9 +64,9 @@ För att den här processen ska fungera måste käll- och målmiljöerna ha samm
 
 ### Överföringsförfarande {#transfer-procedure}
 
-I det här avsnittet får du hjälp med att förstå hur du överför en källmiljö till en målmiljö via en fallstudie: målet är att återställa en produktionsmiljö (**prod** -instans) till en utvecklingsmiljö (**dev** -instans) för att arbeta i ett sammanhang som ligger så nära&quot;live&quot;-plattformen som möjligt.
+I det här avsnittet får du hjälp med att förstå de steg som krävs för att överföra en källmiljö till en målmiljö via en fallstudie: vårt mål är att återställa en produktionsmiljö (**prod** -instans) till en utvecklingsmiljö (**dev** -instans) för att arbeta i ett sammanhang som ligger så nära den aktiva plattformen som möjligt.
 
-Följande steg måste utföras med stor noggrannhet: vissa processer kanske fortfarande pågår när källmiljöns databaser kopieras. Verifiering (steg 3 nedan) förhindrar att meddelanden skickas två gånger och upprätthåller datakonsekvensen.
+Följande steg måste utföras med stor försiktighet: vissa processer kanske fortfarande pågår när källmiljöns databaser kopieras. Verifiering (steg 3 nedan) förhindrar att meddelanden skickas två gånger och upprätthåller datakonsekvensen.
 
 >[!IMPORTANT]
 >
@@ -73,8 +74,7 @@ Följande steg måste utföras med stor noggrannhet: vissa processer kanske fort
 >* Nedanstående kommandon används i ett **prod** -instans och en **dev** -instans under PostgreSQL.
 >
 
-
-### Steg 1 - Säkerhetskopiera källmiljöns (prod) data {#step-1---make-a-backup-of-the-source-environment--prod--data}
+### Steg 1 - Säkerhetskopiera källmiljödata {#step-1---make-a-backup-of-the-source-environment--prod--data}
 
 Kopiera databaserna
 
@@ -88,7 +88,7 @@ pg_dump mydatabase > mydatabase.sql
 
 ### Steg 2 - Exportera målmiljökonfigurationen (dev) {#step-2---export-the-target-environment-configuration--dev-}
 
-De flesta konfigurationselement är olika för olika miljöer: externa konton (mellanleverantörer, routning osv.), tekniska alternativ (plattformsnamn, DatabaseId, e-postadresser och standard-URL:er osv.).
+De flesta konfigurationselement är olika för varje miljö: externa konton (mellanleverantörer, routning osv.), tekniska alternativ (plattformsnamn, databas-ID, e-postadresser och standard-URL:er osv.).
 
 Innan du sparar källdatabasen i måldatabasen måste du exportera dev-konfigurationen (target environment). Det gör du genom att exportera innehållet i de här två tabellerna: **xtkoption** och **nmsextaccount**.
 
@@ -96,7 +96,7 @@ Med den här exporten kan du behålla dev-konfigurationen och bara uppdatera dev
 
 Det gör du genom att utföra en paketexport för följande två element:
 
-* Exportera **xtk:alternativ** till en options_dev.xml-fil, utan posterna med följande interna namn: &#39;WdbcTimeZone&#39;, &#39;NmsServer_LastPostUpgrade&#39; och &#39;NmsBroadcast_RegexRules&#39;.
+* Exportera **xtk:alternativ** till en &#39;options_dev.xml&#39;-fil, utan posterna med följande interna namn: &#39;WdbcTimeZone&#39;, &#39;NmsServer_LastPostUpgrade&#39; och &#39;NmsBroadcast_RegexRules&#39;.
 * I en &#39;extaccount_dev.xml&#39;-fil exporterar du **nms:extAccount** för alla poster vars ID är 0 (@id &lt;> 0).
 
 Kontrollera att antalet exporterade alternativ/konton är lika med antalet rader som ska exporteras i varje fil.
@@ -121,15 +121,15 @@ Om du vill stoppa alla processer använder du följande kommandon:
 
 * I Windows:
 
-   ```
-   net stop nlserver6
-   ```
+  ```
+  net stop nlserver6
+  ```
 
 * I Linux:
 
-   ```
-   /etc/init.d/nlserver6 stop
-   ```
+  ```
+  /etc/init.d/nlserver6 stop
+  ```
 
 Använd följande kommando för att kontrollera att alla processer har stoppats:
 
@@ -145,7 +145,7 @@ Du kan även kontrollera att inga systemprocesser fortfarande körs.
 
 Gör så här:
 
-* I Windows: öppna **Aktivitetshanteraren** och kontrollera att det inte finns **nlserver.exe** -processer.
+* I Windows: öppna **Aktivitetshanteraren** och kontrollera att det inte **nlserver.exe** -processer.
 * I Linux: kör **ps aux | grep nlserver** och kontrollera att det inte finns **nlserver** -processer.
 
 ### Steg 4 - Återställ databaserna i målmiljön (dev) {#step-4---restore-the-databases-in-the-target-environment--dev-}
@@ -217,7 +217,7 @@ Kontrollera åtkomsten till klientkonsolfunktionerna.
 >
 >Det är bara webbprocessen som ska startas i det här steget. Om så inte är fallet ska du stoppa andra processer som körs innan du fortsätter
 
-Kontrollera framför allt värdena för flera rader i filerna innan du importerar (till exempel: &#39;NmsTracking_Pointer&#39; för alternativtabellen och leverans- eller mittleverantörskonton för den externa kontotabellen)
+Kontrollera framför allt värdena för flera rader i filerna innan du importerar (till exempel: &#39;NmsTracking_Pointer&#39; för alternativtabellen och leverans- eller mellanleverantörskonton för den externa kontotabellen)
 
 Så här importerar du konfigurationen från målmiljödatabasen (dev):
 
@@ -236,15 +236,15 @@ Så här startar du Adobe Campaign-processerna:
 
 * I Windows:
 
-   ```
-   net start nlserver6
-   ```
+  ```
+  net start nlserver6
+  ```
 
 * I Linux:
 
-   ```
-   /etc/init.d/nlserver6 start
-   ```
+  ```
+  /etc/init.d/nlserver6 start
+  ```
 
 Använd följande kommando för att kontrollera att processerna har startats:
 

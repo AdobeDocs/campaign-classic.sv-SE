@@ -2,14 +2,15 @@
 product: campaign
 title: Konfigurera åtkomst till Sybase IQ
 description: Lär dig konfigurera åtkomst till Sybase IQ i FDA
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+feature: Installation, Federated Data Access
+badge-v7-only: label="v7" type="Informative" tooltip="Gäller endast Campaign Classic v7"
 audience: platform
 content-type: reference
 topic-tags: connectors
 exl-id: 0fdf8259-5cab-4a9d-adb3-6c55ec5c8851
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '319'
+source-wordcount: '326'
 ht-degree: 0%
 
 ---
@@ -23,7 +24,7 @@ Använd kampanj **Åtkomst till federerade data** (FDA) om du vill bearbeta info
 1. Konfigurera [Sybase IQ-databas](#configuring-sybase)
 1. Konfigurera Sybase IQ [externt konto](#sybase-external) i Campaign
 
-## sybase IQ {#configuring-sybase}
+## Sybase IQ konfiguration {#configuring-sybase}
 
 För att ansluta till en extern Sybase IQ i FDA krävs ytterligare konfigurationer nedan på Adobe Campaign-servern.
 
@@ -39,35 +40,35 @@ För att ansluta till en extern Sybase IQ i FDA krävs ytterligare konfiguration
 
    * **/etc/odbc.ini** (ersätt värden som `<server_alias>` egna tecken):
 
-      ```
-      [ODBC Data Sources]
-      <server_alias>=libdbodbc.so
-      
-      [<server_alias>]
-      Driver=/opt/sybase/IQ-16_0/lib64/libdbodbc16.so
-      Description=<description>
-      Username=<username>
-      Password=<password>
-      ServerName=<server_name>
-      CommLinks=tcpip(host=<host>)
-      ```
+     ```
+     [ODBC Data Sources]
+     <server_alias>=libdbodbc.so
+     
+     [<server_alias>]
+     Driver=/opt/sybase/IQ-16_0/lib64/libdbodbc16.so
+     Description=<description>
+     Username=<username>
+     Password=<password>
+     ServerName=<server_name>
+     CommLinks=tcpip(host=<host>)
+     ```
 
    * **/etc/odbcinst.ini**
 
-      ```
-      [ODBC DRIVERS]
-      SAP SybaseIQ=Installed
-      
-      [SAP SybaseIQ]
-      Driver=/opt/sybase/IQ-16_0/lib64/libdbodbc16.so
-      ```
+     ```
+     [ODBC DRIVERS]
+     SAP SybaseIQ=Installed
+     
+     [SAP SybaseIQ]
+     Driver=/opt/sybase/IQ-16_0/lib64/libdbodbc16.so
+     ```
 
 1. Lägg till sökvägen för det nya biblioteket libodbc16.so i variabeln LD_LIBRARY_PATH. Så här gör du:
 
    * Om du använder en customer.sh-fil för att deklarera sökvägen: lägg till sökvägen /opt/sybase/IQ-16_0/lib64 för variabeln LD_LIBRARY_PATH.
    * Annars använder du ett Unix-kommando.
 
-## sybase IQ externa konto {#sybase-external}
+## Sybase IQ externa konto {#sybase-external}
 
 Med det externa Sybase IQ kan du ansluta Campaign-instansen till din externa Sybase IQ.
 
@@ -75,7 +76,7 @@ Med det externa Sybase IQ kan du ansluta Campaign-instansen till din externa Syb
 
 1. Klicka **[!UICONTROL New]** och markera **[!UICONTROL External database]** as **[!UICONTROL Type]**.
 
-1. Så här konfigurerar du **[!UICONTROL Sybase IQ]** externt konto måste du ange:
+1. Konfigurera **[!UICONTROL Sybase IQ]** externt konto måste du ange:
 
    * **[!UICONTROL Type]**: ODBC (Sybase ASE, Sybase IQ)
 

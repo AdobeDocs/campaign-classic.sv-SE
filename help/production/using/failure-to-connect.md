@@ -2,16 +2,17 @@
 product: campaign
 title: Det gick inte att ansluta
 description: Det gick inte att ansluta
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
-badge-v7-prem: label="on-premise & hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html" tooltip="Applies to on-premise and hybrid deployments only"
+feature: Monitoring
+badge-v7-only: label="v7" type="Informative" tooltip="Gäller endast Campaign Classic v7"
+badge-v7-prem: label="lokal och hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=sv" tooltip="Gäller endast lokala och hybrida driftsättningar"
 audience: production
 content-type: reference
 topic-tags: troubleshooting
 exl-id: 3c793dc1-9654-4289-a3d2-30c3078fd848
-source-git-commit: 4661688a22bd1a82eaf9c72a739b5a5ecee168b1
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '374'
-ht-degree: 4%
+source-wordcount: '399'
+ht-degree: 6%
 
 ---
 
@@ -48,7 +49,7 @@ Du kan testa följande tester och om anslutningsfelet kvarstår kontaktar du [Ad
 <tr> 
 <td>Har Adobe Campaign integrerats korrekt?</td> 
 <td>Logga in på: <b>http(s)://&lt;urlserver&gt;/r/test</b> URL. Servern ska returnera följande typ av meddelande: &lt;redir status="OK" date="YYYY/MM/DD HH&lt;span id="0" translate="no"/&gt;SS" build="XXXX" host="&lt;hostname&gt;" localhost="&lt;server&gt;" /&gt;
-Om du inte får det här resultatet bör du kontrollera i webbserverkonfigurationen att integreringen beaktas.:MM:</td>
+Om du inte får det här resultatet bör du kontrollera i webbserverkonfigurationen att integreringen har beaktats.:MM:</td>
 </tr>
 <tr> 
 <td>Anslut till följande URL: <b>http(s)://&lt;urlserver&gt;/nl/jsp/logon.jsp</b></td>

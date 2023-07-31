@@ -2,14 +2,14 @@
 product: campaign
 title: Adobe Analytics Connector Provisioning
 description: Läs mer om etablering av Adobe Analytics Connector
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
-feature: Overview
+badge-v7-only: label="v7" type="Informative" tooltip="Gäller endast Campaign Classic v7"
+feature: Analytics Integration
 role: User, Admin
 level: Beginner
 exl-id: 24e002aa-4e86-406b-92c7-74f242ee4b86
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '646'
+source-wordcount: '653'
 ht-degree: 3%
 
 ---
@@ -26,9 +26,9 @@ ht-degree: 3%
 
 Integrationen mellan Adobe Campaign Classic och Adobe Analytics autentisering stöder Adobe Identity Management Service (IMS):
 
-* Om du hanterar ett migrerat externt konto måste du implementera Adobe IMS och ansluta till Adobe Campaign via en Adobe ID. Användaren som är inloggad via Adobe ID IMS bör vara ägare till **Dataanslutning** i Adobe Analytics och har en uppsättning behörigheter för **Produktprofil** som nämns nedan.
+* Om du hanterar ett migrerat externt konto måste du implementera Adobe IMS och ansluta till Adobe Campaign via en Adobe ID. Användaren som är inloggad via Adobe ID IMS bör vara ägare till **Dataanslutning** i Adobe Analytics och har en uppsättning behörigheter för **Produktprofil** nedan.
 
-* Om du implementerar en ny koppling är det valfritt att implementera Adobe IMS. Utan en Adobe ID-användare kommer Adobe Campaign att använda en teknisk användare för att synkronisera med Adobe Analytics.
+* Om du implementerar en ny koppling är det valfritt att implementera Adobe IMS. Utan en Adobe ID-användare använder Adobe Campaign en teknisk användare för att synkronisera med Adobe Analytics.
 
 För att den här integreringen ska fungera måste du skapa en Adobe Analytics-produktprofil som används exklusivt för Analytics-kontakten. Sedan måste du skapa ett Adobe I/O-projekt.
 
@@ -118,7 +118,7 @@ Din produktprofil är nu konfigurerad. Sedan måste du skapa projektet Adobe I/O
 
 1. Välj **[!UICONTROL Option 1: Generate a Key-Pair]** och klicka **[!UICONTROL Generate a Key-Pair]**.
 
-   Filen config.zip laddas sedan ned automatiskt.
+   Filen config.zip hämtas sedan automatiskt.
 
    ![](assets/do-not-localize/triggers_9.png)
 
@@ -143,7 +143,7 @@ Din produktprofil är nu konfigurerad. Sedan måste du skapa projektet Adobe I/O
 
 1. Använd den privata nyckel som genereras i steg 6.
 
-   Om du redan har konfigurerat utlösare med dessa autentiseringsuppgifter måste den privata nyckeln vara densamma för den här anslutningskonfigurationen.
+   Om du redan har konfigurerat utlösare med dessa autentiseringsuppgifter måste din privata nyckel vara densamma för den här anslutningskonfigurationen.
 
 1. Koda den privata nyckeln med följande kommando: `base64 ./private.key > private.key.base64`. Detta sparar base64-innehållet i en ny fil `private.key.base64`.
 
@@ -153,10 +153,10 @@ Din produktprofil är nu konfigurerad. Sedan måste du skapa projektet Adobe I/O
 
 1. Kopiera innehållet från filen `private.key.base64`.
 
-1. Logga in via SSH i varje behållare där Adobe Campaign-instansen är installerad och lägg till projektinloggningsuppgifterna i Adobe Campaign genom att köra följande kommando som `neolane` användare. Detta infogar **[!UICONTROL Technical Account]** autentiseringsuppgifter i instanskonfigurationsfilen.
+1. Logga in via SSH i varje behållare där Adobe Campaign-instansen är installerad och lägg till projektinloggningsuppgifterna i Adobe Campaign genom att köra följande kommando som `neolane` användare. Det här infogar **[!UICONTROL Technical Account]** autentiseringsuppgifter i instanskonfigurationsfilen.
 
    ```
    nlserver config -instance:<instance name> -setimsjwtauth:Organization_Id/Client_Id/Technical_Account_ID/<Client_Secret>/<Base64_encoded_Private_Key>
    ```
 
-Nu kan ni börja använda Analytics-kontakten och spåra kundbeteenden.
+Nu kan ni börja använda Analytics-kontakten och spåra era kundbeteenden.

@@ -2,16 +2,17 @@
 product: campaign
 title: Nätverkskonfiguration
 description: Läs riktlinjerna för systemkommunikation
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
-badge-v7-prem: label="on-premise & hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html" tooltip="Applies to on-premise and hybrid deployments only"
+feature: Installation, Instance Settings
+badge-v7-only: label="v7" type="Informative" tooltip="Gäller endast Campaign Classic v7"
+badge-v7-prem: label="lokal och hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=sv" tooltip="Gäller endast lokala och hybrida driftsättningar"
 audience: installation
 content-type: reference
 topic-tags: prerequisites-and-recommendations-
 exl-id: b86236ae-95e9-4406-b60f-6d90ad0d4a01
-source-git-commit: 4661688a22bd1a82eaf9c72a739b5a5ecee168b1
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '666'
-ht-degree: 2%
+source-wordcount: '691'
+ht-degree: 3%
 
 ---
 
@@ -34,7 +35,7 @@ För leveransservern (**nlserver mta**) måste följande portar vara öppna:
   <tr> 
    <td> Portar<br /> </td> 
    <td> Mål<br /> </td> 
-   <td> Kommentarer<br /> </td> 
+   <td> Kommentar<br /> </td> 
   </tr> 
   <tr> 
    <td> 25/tcp (smtp)<br /> </td> 
@@ -68,7 +69,7 @@ För processen för återställning av inkommande e-post (**nlserver inMail**) m
   <tr> 
    <td> Portar<br /> </td> 
    <td> Mål<br /> </td> 
-   <td> Kommentarer<br /> </td> 
+   <td> Kommentar<br /> </td> 
   </tr> 
   <tr> 
    <td> 110/tcp (pop3)<br /> </td> 
@@ -92,7 +93,7 @@ För programservern (**nlserver web**) måste följande portar vara öppna:
   <tr> 
    <td> Portar<br /> </td> 
    <td> Mål<br /> </td> 
-   <td> Kommentarer<br /> </td> 
+   <td> Kommentar<br /> </td> 
   </tr> 
   <tr> 
    <td> 80/tcp (http)<br /> 443/tcp (https)<br /> </td> 
@@ -113,7 +114,7 @@ För att spåra SMS-leveranser (**nlserver sms**) måste följande port vara öp
   <tr> 
    <td> Portar<br /> </td> 
    <td> Mål<br /> </td> 
-   <td> Kommentarer<br /> </td> 
+   <td> Kommentar<br /> </td> 
   </tr> 
   <tr> 
    <td> 38000/tcp (standardport)<br /> </td> 
@@ -132,7 +133,7 @@ För Adobe Campaign Rich Client (**nlclient**) måste följande portar vara öpp
   <tr> 
    <td> Portar<br /> </td> 
    <td> Mål<br /> </td> 
-   <td> Kommentarer<br /> </td> 
+   <td> Kommentar<br /> </td> 
   </tr> 
   <tr> 
    <td><p> 80/tcp (http)</p><p>443/tcp (https)</p><br /> </td> 
@@ -242,7 +243,7 @@ Integrering mellan Adobe Campaign och Adobe Experience Manager kräver att flera
   </tr> 
   <tr> 
    <td><p> 4502</p><p> 4503</p><br /> </td> 
-   <td> Adobe Campaign-anslutning till AEM"authoring" och"publishing"-instanser. Portarna som ska öppnas kan skilja sig från standardportarna, beroende på AEM.<br /> </td> 
+   <td> Adobe Campaign-anslutning till AEM"authoring" och"publishing"-instanser. Portarna som ska öppnas kan skilja sig från standardportarna, beroende på AEM konfiguration.<br /> </td> 
   </tr> 
  </tbody> 
 </table>

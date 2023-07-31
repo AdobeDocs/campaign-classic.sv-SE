@@ -2,14 +2,14 @@
 product: campaign
 title: Kom igång med uppgraderingar
 description: Läs mer om uppgraderingar till Campaign Classic
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
-feature: Overview
+badge-v7-only: label="v7" type="Informative" tooltip="Gäller endast Campaign Classic v7"
+feature: Release Notes
 role: User
 level: Beginner
 exl-id: 7a05fdff-8f9d-4e8d-812e-0f1509db5499
-source-git-commit: f2dc0947a3b1ed17cbc3d88176e7921e80ca1bb5
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '932'
+source-wordcount: '939'
 ht-degree: 97%
 
 ---
@@ -27,7 +27,7 @@ Varje ny version har en status som identifieras av en färg i [Versionsinformati
 
 | Status | Beskrivning |
 |---|---|
-| [!BADGE Allmän tillgänglighet]{type=Positive} | Senaste stabila versionen, validerad i produktion och rekommenderas av Adobe. |
+| [!BADGE Allmän tillgänglighet]{type=Positive} | Senaste stabila bygge, validerad i produktion och rekommenderas av Adobe. |
 | [!BADGE Begränsad tillgänglighet]{type=Neutral} | Endast distribution på begäran. |
 | [!BADGE Frisläppningskandidat]{type=Informative} | Senaste versionen med nya funktioner. |
 | [!BADGE Inte längre tillgänglig]{type=Caution} | Ingen distribution. Ingen felkorrigering. Vi rekommenderar att du uppdaterar till en nyare version. |

@@ -2,12 +2,13 @@
 product: campaign
 title: Formulärstruktur
 description: Formulärstruktur
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
+feature: Application Settings
+badge-v7: label="v7" type="Informative" tooltip="Gäller Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Gäller även Campaign v8"
 exl-id: e61f2b63-06d3-4b8c-867f-1c729176d2da
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '2385'
+source-wordcount: '2397'
 ht-degree: 0%
 
 ---
@@ -26,7 +27,7 @@ XML-dokumentet i indataformuläret måste innehålla `<form>` rotelementet med *
 </form>
 ```
 
-Som standard är ett formulär kopplat till dataschemat med samma namn och namnutrymme. Om du vill associera ett formulär med ett annat namn anger du **enhetstabell** attributet för `<form>` -element till schemanyckelns namn. Om du vill visa strukturen för ett inmatningsformulär kan du beskriva ett gränssnitt med exempelschemat &quot;cus:mottagare&quot;:
+Som standard är ett formulär kopplat till dataschemat med samma namn och namnutrymme. Om du vill koppla ett formulär med ett annat namn anger du **enhetstabell** attributet för `<form>` -element till schemanyckelns namn. Om du vill visa strukturen för ett inmatningsformulär kan du beskriva ett gränssnitt med exempelschemat &quot;cus:mottagare&quot;:
 
 ```xml
 <srcSchema name="recipient" namespace="cus">
@@ -56,7 +57,7 @@ Indataformuläret baserat på exempelschemat:
 </form>
 ```
 
-Beskrivningen av redigeringskontrollerna startar från `<form>` rotelement. En redigeringskontroll anges i en **`<input>`** -element med **xpath** attribut som innehåller sökvägen för fältet i dess schema.
+Beskrivningen av redigeringskontrollerna startar från `<form>` rotelement. En redigeringskontroll anges i en **`<input>`** -elementet med **xpath** attribut som innehåller sökvägen för fältet i dess schema.
 
 Redigeringskontrollen anpassas automatiskt till motsvarande datatyp och använder den etikett som definierats i schemat.
 
@@ -69,7 +70,7 @@ Som standard visas varje fält på en rad och tar upp allt tillgängligt utrymme
 
 ## Formatering {#formatting}
 
-Layouten på kontrollerna ser ut som den layout som används i tabeller i HTML, med möjlighet att dela upp en kontroll i flera kolumner, sammanflätade element eller ange hur mycket utrymme som finns tillgängligt. Tänk dock på att du bara kan dela upp området efter proportioner med formateringen. Du kan inte ange fasta dimensioner för ett objekt.
+Layouten på kontrollerna ser ut som den layout som används i tabeller i HTML, med möjlighet att dela upp en kontroll i flera kolumner, sammanflätade element eller ange hur mycket utrymme som finns tillgängligt. Tänk på att du bara kan dela upp området efter proportioner med formatering. Du kan inte ange fasta dimensioner för ett objekt.
 
 Så här visar du kontrollerna i exemplet ovan i två kolumner:
 
@@ -85,7 +86,7 @@ Så här visar du kontrollerna i exemplet ovan i två kolumner:
 </form>
 ```
 
-The **`<container>`** -element med **colcount** kan du tvinga fram visning av underordnade kontroller i två kolumner.
+The **`<container>`** -elementet med **colcount** kan du tvinga fram visning av underordnade kontroller i två kolumner.
 
 The **kolspan** -attribut i en kontroll utökar kontrollen med antalet kolumner som anges i värdet:
 
@@ -101,7 +102,7 @@ The **kolspan** -attribut i en kontroll utökar kontrollen med antalet kolumner 
 </form> 
 ```
 
-Genom att fylla i **type=&quot;frame&quot;** -attributet lägger behållaren till en ram runt de underordnade kontrollerna med etiketten som finns i **label** attribute:
+Genom att fylla i **type=&quot;frame&quot;** lägger behållaren till en ram runt de underordnade kontrollerna med etiketten som finns i **label** attribute:
 
 ![](assets/d_ncs_integration_form_exemple4.png)
 
@@ -131,7 +132,7 @@ A **`<static>`** -element kan användas för att formatera indataformuläret:
 
 The **`<static>`** -taggen med **avgränsare** kan du lägga till en avgränsare med en etikett i **label** -attribut.
 
-En hjälptext lades till med `<static>` med hjälptyp. Innehållet i texten anges i **label** -attribut.
+En hjälptext lades till med `<static>` -tagg med hjälptyp. Innehållet i texten anges i **label** -attribut.
 
 ## Behållare {#containers}
 
@@ -235,11 +236,11 @@ Exempel på villkorssyntax:
 
 * **visibleIf=&quot;@email=&#39;peter.martinezATneolane.net&#39;&quot;**: testar likhet för strängtypsdata. Jämförelsevärdet måste anges inom citattecken.
 * **visibleIf=&quot;@kön >= 1 och @kön != 2&quot;**: villkor för ett numeriskt värde.
-* **visibleIf=&quot;@boolean1=true eller @boolean2=false&quot;**: test on Boolean fields.
+* **visibleIf=&quot;@boolean1=true eller @boolean2=false&quot;**: test på booleska fält.
 
 #### Aktivera behållare {#enabling-container}
 
-Med den här behållaren kan du aktivera eller inaktivera en uppsättning data från ett dynamiskt villkor. Om du inaktiverar en kontroll kan du inte redigera den. I följande exempel visas aktiveringen av kontroller från värdet i fältet Genus:
+Med den här behållaren kan du aktivera eller inaktivera en uppsättning data från ett dynamiskt villkor. Om du inaktiverar en kontroll kan du inte redigera den. I följande exempel visas aktiveringen av kontroller från värdet i fältet &quot;Kön&quot;:
 
 ```xml
 <container type="enabledGroup" enabledIf="@gender=1">
@@ -272,7 +273,7 @@ Målmarkeringen är tillgänglig via redigeringsfältet. Posten assisteras av ty
 
 En nedrullningsbar lista används för att välja ett målelement från listan med poster som redan har skapats.
 
-The **[!UICONTROL Modify the link]** (mapp) öppnar ett markeringsformulär med listan över målelement och en filterzon:
+The **[!UICONTROL Modify the link]** (mapp) öppnar ett markeringsformulär med en lista över målelement och en filterzon:
 
 ![](assets/d_ncs_integration_form_exemple10.png)
 
@@ -307,7 +308,7 @@ Du kan också sortera listan med **`<orderby>`** element:
    * **inline**: skapar länken med innehållet i redigeringsfältet
    * **utgåva**: visar redigeringsformuläret på länken. När formuläret valideras sparas data (standardläge)
 
-* **noZoom**: inget redigeringsformulär på länken (med värdet &quot;true&quot;)
+* **noZoom**: inget redigeringsformulär finns på länken (med värdet &quot;true&quot;)
 * **formulär**: överför målelementets redigeringsform
 
 ## Länklista {#list-of-links}
@@ -345,7 +346,7 @@ Listan kan filtreras via **[!UICONTROL Filters]** och konfigurerad att lägga ti
 
 The **[!UICONTROL Add]** och **[!UICONTROL Delete]** Med -knappar kan du lägga till och ta bort samlingselement på länken. Om du lägger till ett element startas målschemats redigeringsformulär som standard.
 
-The **[!UICONTROL Detail]** knappen läggs till automatiskt när **zoom=&quot;true&quot;** attributet har fyllts i på **`<input>`** -tagg i listan: kan du starta redigeringsformuläret för den markerade raden.
+The **[!UICONTROL Detail]** knappen läggs till automatiskt när **zoom=&quot;true&quot;** attributet har fyllts i på **`<input>`** -tagg i listan: du kan starta redigeringsformuläret för den markerade raden.
 
 Filtrering och sortering kan användas när listan läses in:
 
@@ -398,7 +399,7 @@ The **xpathChoiceTarget** kan du starta ett urvalsformulär från den angivna l�
 
 * **noToolbar**: döljer verktygsfältet (med värdet &quot;true&quot;)
 * **toolbarCaption**: överför verktygsfältsetiketten
-* **toolbarAlign**: ändrar verktygsfältets lodräta eller vågräta geometri (möjliga värden: &quot;vertical&quot;|&quot;horizontal&quot;)
+* **toolbarAlign**: ändrar den lodräta eller vågräta geometrin i verktygsfältet (möjliga värden: &quot;vertical&quot;|&quot;horizontal&quot;)
 * **img**: visar bilden som är associerad med listan
 * **formulär**: överför målelementets redigeringsform
 * **zooma**: lägger till **[!UICONTROL Zoom]** för att redigera målelementet
@@ -426,7 +427,7 @@ Den här kontrollen visar en redigerbar kolumnlista med ett verktygsfält som in
 
 Listkontrollen måste fyllas i med **type=&quot;list&quot;** och listans sökväg måste referera till samlingselementet.
 
-Kolumnerna deklareras i det underordnade objektet **`<input>`** -taggar i listan. Kolumnetikett och storlek kan tvingas med **label** och **colSize** attribut.
+Kolumnerna deklareras i det underordnade objektet **`<input>`** -taggar i listan. Kolumnetikett och -storlek kan tvingas med **label** och **colSize** attribut.
 
 >[!NOTE]
 >
@@ -495,7 +496,7 @@ Exempel på fältet&quot;Kön&quot;:
 
 ## Alternativknapp {#radio-button}
 
-Med en alternativknapp kan du välja mellan flera alternativ. The **`<input>`** -taggar används för att lista möjliga alternativ och **checkedValue** attribute anger värdet som är associerat med valet.
+Med en alternativknapp kan du välja mellan flera alternativ. The **`<input>`** -taggar används för att lista möjliga alternativ och **checkedValue** -attribut anger det värde som är associerat med valet.
 
 Exempel på fältet&quot;Kön&quot;:
 
@@ -545,7 +546,7 @@ Kontrollerna som ska redigeras grupperas i en **`<container>`** anges under **`<
 
 ## Uttrycksfält {#expression-field}
 
-Ett uttrycksfält uppdaterar ett fält dynamiskt från ett uttryck; den **`<input>`** -taggen används med **xpath** för att ange sökvägen till fältet som ska uppdateras och ett **visa** attribut som innehåller uppdateringsuttrycket.
+Ett uttrycksfält uppdaterar ett fält dynamiskt från ett uttryck. **`<input>`** -taggen används med **xpath** för att ange sökvägen till fältet som ska uppdateras och ett **visa** attribut som innehåller uppdateringsuttrycket.
 
 ```xml
 <!-- Example: updating the boolean1 field from the value contained in the field with path /tmp/@flag -->
@@ -559,16 +560,16 @@ Körningen av ett inmatningsformulär initierar ett XML-dokument som innehåller
 
 ### Uppdaterar kontexten {#updating-the-context}
 
-Om du vill ändra formulärets sammanhang använder du `<set expr="<value>" xpath="<field>"/>` tagg, var `<field>` är målfältet, och `<value>` är uppdateringsuttrycket eller -värdet.
+Om du vill ändra formulärets sammanhang använder du `<set expr="<value>" xpath="<field>"/>` tagg, var `<field>` är målfältet, och `<value>` är uppdateringsuttrycket eller uppdateringsvärdet.
 
 Exempel på användning av `<set>` tagg:
 
 * **`<set expr="'Test'" xpath="/tmp/@test" />`**: placerar värdet för Test på den temporära platsen /tmp/@test1
 * **`<set expr="'Test'" xpath="@lastName" />`**: uppdaterar entiteten för attributet lastName med värdet Test
-* **`<set expr="true" xpath="@boolean1" />`**: ställer in värdet för fältet &quot;boolean1&quot; till &quot;true&quot;
-* **`<set expr="@lastName" xpath="/tmp/@test" />`**: uppdateras med innehållet i attributet&quot;lastName&quot;
+* **`<set expr="true" xpath="@boolean1" />`**: anger värdet för fältet &quot;boolean1&quot; till &quot;true&quot;
+* **`<set expr="@lastName" xpath="/tmp/@test" />`**: uppdaterar med innehållet i attributet&quot;lastName&quot;
 
-Formulärets sammanhang kan uppdateras när formuläret initieras och stängs via **`<enter>`** och **`<leave>`** -taggar.
+Formulärets kontext kan uppdateras när formuläret initieras och stängs via **`<enter>`** och **`<leave>`** -taggar.
 
 ```xml
 <form name="recipient" namespace="cus">
@@ -590,7 +591,7 @@ Formulärets sammanhang kan uppdateras när formuläret initieras och stängs vi
 
 Ett makrospråk kan användas i formulärdefinitionen för att utföra villkorstester.
 
-The **`<if expr="<expression>" />`** -taggen kör instruktionerna som anges under -taggen om uttrycket verifieras:
+The **`<if expr="<expression>" />`** -taggen kör instruktionerna som anges under -taggen om uttrycket har verifierats:
 
 ```xml
 <if expr="([/tmp/@test] == 'Test' or @lastName != 'Doe') and @boolean2 == true">
@@ -648,7 +649,7 @@ The **`<soapcall>`** -taggen innehåller anropet till metoden med följande inda
 </soapCall>
 ```
 
-Namnet på tjänsten och dess implementeringsschema anges via **name** och **service** attribut för **`<soapcall>`** -tagg.
+Namnet på tjänsten och dess implementeringsschema anges via **name** och **service** attributen för **`<soapcall>`** -tagg.
 
 Indataparametrarna beskrivs på **`<param>`** element under **`<soapcall>`** -tagg.
 
@@ -661,7 +662,7 @@ Parametertypen måste anges via **type** -attribut. Möjliga typer är:
 * **long**: 32-bitars heltal
 * **kort**: 16-bitars heltal
 * **double**: flyttal med dubbel precision
-* **DOMElement**: elementtypsnod
+* **DOMElement**: element-type node
 
 The **exprIn** -attributet innehåller platsen för de data som ska skickas som en parameter.
 

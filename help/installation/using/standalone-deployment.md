@@ -2,14 +2,15 @@
 product: campaign
 title: Fristående driftsättning
 description: Fristående driftsättning
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+feature: Installation, Architecture, Deployment
+badge-v7-only: label="v7" type="Informative" tooltip="Gäller endast Campaign Classic v7"
 audience: installation
 content-type: reference
 topic-tags: deployment-types-
 exl-id: 194366ab-fd9f-4431-9163-ae16c1f96db2
-source-git-commit: acfe0c4139671fc3df69ff434ba307aaaaf70676
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '1077'
+source-wordcount: '1084'
 ht-degree: 2%
 
 ---
@@ -119,19 +120,19 @@ Använd följande steg:
 
    * Skapa instansen via konsolen:
 
-      ![](assets/install_create_new_connexion.png)
+     ![](assets/install_create_new_connexion.png)
 
-      Mer information finns i [Skapa en instans och logga in](../../installation/using/creating-an-instance-and-logging-on.md).
+     Mer information finns i [Skapa en instans och logga in](../../installation/using/creating-an-instance-and-logging-on.md).
 
-      eller
+     eller
 
    * Skapa instansen med kommandorader:
 
-      ```
-      nlserver config -addinstance:demo/tracking.campaign.net*,console.campaign.net*
-      ```
+     ```
+     nlserver config -addinstance:demo/tracking.campaign.net*,console.campaign.net*
+     ```
 
-      Mer information finns i [Skapa en instans](../../installation/using/command-lines.md#creating-an-instance).
+     Mer information finns i [Skapa en instans](../../installation/using/command-lines.md#creating-an-instance).
 
 1. Redigera **config-demo.xml** fil (skapad i föregående steg bredvid **config-default.xml**) och se till att **mta** (leverans), **wfserver** (arbetsflöde), **inMail** (studsmeddelanden) och **stat** (statistik) aktiveras. Konfigurera sedan adressen till statistikservern:
 
@@ -204,7 +205,7 @@ Använd följande steg:
 
    Med det här kommandot kan du även se version och versionsnummer för den Adobe Campaign-server som är installerad på datorn.
 
-1. Testa **nlserver web** modul som använder URL: https://console.campaign.net/nl/jsp/logon.jsp
+1. Testa **nlserver web** som använder URL:en: https://console.campaign.net/nl/jsp/logon.jsp
 
    Den här URL:en ger dig åtkomst till hämtningssidan för klientinstallationsprogrammet.
 
@@ -235,13 +236,13 @@ Använd följande steg:
    * E-postleverans: avsändare- och svarsadresser samt felpostlådan för avhoppad e-post.
    * Spårning: Fyll i den externa URL som används för omdirigering och den interna URL:en, klicka på **Registrering på spårningsservrar** och validera den sedan på **demo** -instans för spårningsservern.
 
-      Mer information finns i [Spårningskonfiguration](../../installation/using/deploying-an-instance.md#tracking-configuration).
+     Mer information finns i [Spårningskonfiguration](../../installation/using/deploying-an-instance.md#tracking-configuration).
 
-      ![](assets/s_ncs_install_deployment_wiz_09.png)
+     ![](assets/s_ncs_install_deployment_wiz_09.png)
 
-      Eftersom Adobe Campaign-servern används både som programserver och omdirigeringsserver är den interna URL som används för att samla in spårningsloggar och överföra URL:er en direkt intern anslutning till Tomcat (https://localhost:8080).
+     Eftersom Adobe Campaign-servern används både som programserver och omdirigeringsserver är den interna URL som används för att samla in spårningsloggar och överföra URL:er en direkt intern anslutning till Tomcat (https://localhost:8080).
 
-   * Studsningshantering: Ange parametrar för att hantera studsmeddelanden (ta inte **Obearbetade studsmeddelanden** (med hänsyn till).
-   * Åtkomst från: Ange de två URL:erna för rapporter, webbformulär och spegelsidor.
+   * Studshantering: Ange parametrar för att hantera studsmeddelanden (ta inte **Obearbetade studsmeddelanden** (med hänsyn till).
+   * Åtkomst från: Ange två URL:er för rapporter, webbformulär och spegelsidor.
 
-      ![](assets/d_ncs_install_web_url.png)
+     ![](assets/d_ncs_install_web_url.png)

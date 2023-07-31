@@ -1,15 +1,16 @@
 ---
 product: campaign
 title: Ytterligare konfigurationer
-description: Lär dig hur du konfigurerar ytterligare konfigurationer för Transactional Messaging i Adobe Campaign Classic
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+description: Lär dig hur du konfigurerar ytterligare konfigurationer för transaktionsmeddelanden i Adobe Campaign Classic
+feature: Transactional Messaging, Message Center
+badge-v7-only: label="v7" type="Informative" tooltip="Gäller endast Campaign Classic v7"
 audience: message-center
 content-type: reference
 topic-tags: instance-configuration
 exl-id: 4d25d740-db57-4d18-8cae-2dd49c4a786e
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '747'
+source-wordcount: '754'
 ht-degree: 7%
 
 ---
@@ -40,7 +41,7 @@ Följ stegen nedan för att göra detta:
 
 Du kan använda [distributionsguide](../../production/using/database-cleanup-workflow.md#deployment-wizard) för att konfigurera hur länge data ska lagras i databasen.
 
-Rensa händelser utförs automatiskt av [Arbetsflöde för databasrensning](../../production/using/database-cleanup-workflow.md). Det här arbetsflödet tömmer händelser som tagits emot och lagrats på körningsinstanser och händelser som arkiverats på en kontrollinstans.
+Händelsetömning utförs automatiskt av [Arbetsflöde för databasrensning](../../production/using/database-cleanup-workflow.md). Det här arbetsflödet tömmer händelser som tagits emot och lagrats på körningsinstanser och händelser som arkiverats på en kontrollinstans.
 
 Använd pilarna för att ändra inställningarna för tömning.
 
@@ -80,13 +81,13 @@ Once the control and execution modules are installed on the same instance, you m
 På körningsinstansen/instanserna kan du komma åt de tekniska arbetsflödena för transaktionsmeddelanden via **Administration > Produktion > Meddelandecenter** mapp. Du behöver bara starta dem. Arbetsflödena i listan är:
 
 * **[!UICONTROL Processing batch events]** (internt namn: **[!UICONTROL batchEventsProcessing]** ): Med det här arbetsflödet kan du dela upp grupphändelser i en kö innan de länkas till en meddelandemall.
-* **[!UICONTROL Processing real time events]** (internt namn: **[!UICONTROL rtEventsProcessing]** ): Med det här arbetsflödet kan du bryta ned realtidshändelser i en kö innan de länkas till en meddelandemall.
-* **[!UICONTROL Update event status]** (internt namn: **[!UICONTROL updateEventStatus]** ): det här arbetsflödet gör att du kan tilldela en status till händelsen.
+* **[!UICONTROL Processing real time events]** (internt namn: **[!UICONTROL rtEventsProcessing]** ): Med det här arbetsflödet kan du dela upp realtidshändelser i en kö innan de länkas till en meddelandemall.
+* **[!UICONTROL Update event status]** (internt namn: **[!UICONTROL updateEventStatus]** ): Med det här arbetsflödet kan du tilldela en status till händelsen.
 
-   Följande händelselägen är tillgängliga:
+  Följande händelselägen är tillgängliga:
 
    * **[!UICONTROL Pending]** : händelsen finns i kön. Ingen meddelandemall har ännu tilldelats den.
-   * **[!UICONTROL Pending delivery]** : Om händelsen finns i kön har en meddelandemall tilldelats den och bearbetas av leveransen.
+   * **[!UICONTROL Pending delivery]** : händelsen finns i kön, en meddelandemall har tilldelats den och bearbetas av leveransen.
    * **[!UICONTROL Sent]** : den här statusen kopieras från leveransloggarna. Det betyder att leveransen har skickats.
    * **[!UICONTROL Ignored by the delivery]** : den här statusen kopieras från leveransloggarna. Det betyder att leveransen ignorerats.
    * **[!UICONTROL Delivery failed]** : den här statusen kopieras från leveransloggarna. Det betyder att leveransen misslyckats.

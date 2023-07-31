@@ -2,8 +2,9 @@
 product: campaign
 title: Uppdatera till den nya leveransservern
 description: Lär dig hur du uppdaterar till den nya servern för kampanjleverans
+feature: Technote, Deliverability
 exl-id: bc62ddb9-beff-4861-91ab-dcd0fa1ed199
-source-git-commit: 50ef144950ca9e79b1b3acdf587ffc13e0beeec4
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
 source-wordcount: '1319'
 ht-degree: 3%
@@ -19,12 +20,13 @@ Som Campaign Classic-kund måste du implementera den nya leveransservern **före
 >[!NOTE]
 >
 >Mer information om dessa ändringar finns i [Vanliga frågor](#faq)eller kontakta [Adobe kundtjänst](https://helpx.adobe.com/se/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html){_blank}.
+>
 
 ## Vad har ändrats?{#acc-deliverability-changes}
 
 Adobe tar äldre datacenter ur drift på grund av säkerhetsskäl. Adobe Campaign Classic-klienter måste migrera till den nya slutprodukten, som ligger hos Amazon webbtjänst (AWS).
 
-Den nya servern garanterar hög tillgänglighet (99.9) &#x200B; och tillhandahåller säkra och autentiserade slutpunkter så att kampanjservrar kan hämta nödvändiga data: I stället för att ansluta till databasen för varje begäran, cachelagrar den nya leveransservern data för att hantera förfrågningarna där det är möjligt. Den här funktionen förbättrar svarstiden. &#x200B;
+Den nya servern garanterar hög tillgänglighet (99.9) &#x200B; och tillhandahåller säkra och autentiserade slutpunkter så att kampanjservrar kan hämta nödvändiga data: i stället för att ansluta till databasen för varje begäran, cachelagrar den nya leveransservern data för att hantera förfrågningarna där det är möjligt. Den här funktionen förbättrar svarstiden. &#x200B;
 
 ## Påverkas du?{#acc-deliverability-impacts}
 
@@ -32,7 +34,7 @@ Alla kunder påverkas och måste uppgradera till [Campaign v7.2.2](../../rn/usin
 
 ## Hur uppdaterar jag?{#acc-deliverability-update}
 
-Som **värdbaserad kund** kommer Adobe att arbeta med dig för att uppgradera dina instanser till den nyare versionen och skapa projektet i Adobe Developer Console.
+Som en **värdbaserad kund** kommer Adobe att arbeta med dig för att uppgradera dina instanser till den nyare versionen och skapa projektet i Adobe Developer Console.
 
 Som en **lokal/hybridkund** måste du uppgradera till [Campaign v7.2.2](../../rn/using/latest-release.md#release-7-2-2) (eller mer) om du vill dra nytta av den nya leveransservern. När alla instanser har uppgraderats måste du [implementera den nya integreringen](#implementation-steps) till Adobe-server och säkerställa en smidig övergång.
 
@@ -43,6 +45,7 @@ Campaign måste kommunicera med Adobe Shared Services via en IMS-baserad autenti
 >[!WARNING]
 >
 >Dessa åtgärder bör endast utföras för hybridimplementeringar och lokala implementeringar.
+>
 
 ### Förhandskrav{#prerequisites}
 
@@ -53,19 +56,19 @@ Kontrollera instanskonfigurationen innan du startar implementeringen.
 1. Kontrollera att `DmRendering_cuid` alternativvärdet är ifyllt.
 
    * Om alternativet är ifyllt kan du starta implementeringen.
-   * Om inget värde är ifyllt kontaktar du [Adobe kundtjänst](https://helpx.adobe.com/se/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html){_blank} för att hämta ditt CUID.
+   * Om inget värde är ifyllt kontaktar du [Adobe kundtjänst](https://helpx.adobe.com/se/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html){_blank} för att få ditt CUID.
 
    Det här alternativet måste fyllas i för alla Campaign-instanser (MKT, MID, RT, EXEC) med rätt värde. Som hybridkund kan du kontakta Adobe om du vill att alternativet ska vara inställt på MID-, RT- och EXEC-instanserna.
 
 Som lokal kund måste ni också kontrollera att en kampanj **[!UICONTROL Product profile]** finns för din organisation. Gör så här:
 
 1. Som administratör ansluter du till [Adobe Admin Console](https://adminconsole.adobe.com/){_blank}.
-1. Öppna **Produkter och tjänster** sektion och kontroll **Adobe Campaign** visas.
-Om du inte ser **Adobe Campaign** kontakta [Adobe kundtjänst](https://helpx.adobe.com/se/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html){_blank} för att lägga till den.
+1. Öppna **Produkt och tjänster** sektion och kontroll **Adobe Campaign** visas.
+Om du inte ser **Adobe Campaign** kontakta [Adobe kundtjänst](https://helpx.adobe.com/se/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html){_blank} för att få det tillagt.
 1. Klicka **Adobe Campaign** och väljer organisation.
-   **Varning**: Om du har fler än en organisation måste du välja rätt. Läs mer om organisationer [på den här sidan](https://experienceleague.adobe.com/docs/control-panel/using/faq.html#ims-org-id){_blank}.
+   **Varning**: Om du har fler än en organisation måste du välja rätt organisation. Läs mer om organisationer [på den här sidan](https://experienceleague.adobe.com/docs/control-panel/using/faq.html#ims-org-id){_blank}.
 
-1. Kontrollera att **[!UICONTROL Product profile]** finns. Skapa det om inte. Ingen behörighet krävs för detta **[!UICONTROL Product profile]**.
+1. Kontrollera att **[!UICONTROL Product profile]** finns. Om inte, skapar du den. Ingen behörighet krävs för detta **[!UICONTROL Product profile]**.
 
 
 >[!CAUTION]
@@ -76,7 +79,7 @@ Om du inte ser **Adobe Campaign** kontakta [Adobe kundtjänst](https://helpx.ado
 ### Steg 1: Skapa/uppdatera ditt Adobe Developer-projekt {#adobe-io-project}
 
 1. Åtkomst [Adobe Developer Console](https://developer.adobe.com/console/home) och logga in med utvecklaråtkomst i din organisation. Se till att du är inloggad på rätt organisationsportal.
-   **Varning**: Om du har fler än en organisation måste du välja rätt. Läs mer om organisationer [på den här sidan](https://experienceleague.adobe.com/docs/control-panel/using/faq.html#ims-org-id){_blank}.
+   **Varning**: Om du har fler än en organisation måste du välja rätt organisation. Läs mer om organisationer [på den här sidan](https://experienceleague.adobe.com/docs/control-panel/using/faq.html#ims-org-id){_blank}.
 1. Välj **[!UICONTROL Create new project]**.
    ![](assets/New-Project.png)
 
@@ -117,7 +120,7 @@ Om du inte ser **Adobe Campaign** kontakta [Adobe kundtjänst](https://helpx.ado
 >
 >Adobe Developer-certifikatet upphör att gälla efter 12 månader. Du måste generera ett nytt nyckelpar varje år.
 
-### Steg 2: Lägg till projektautentiseringsuppgifter i Adobe Campaign {#add-credentials-campaign}
+### Steg 2: Lägg till projektautentiseringsuppgifterna i Adobe Campaign {#add-credentials-campaign}
 
 Den privata nyckeln ska kodas i base64 UTF-8-format.
 
@@ -131,7 +134,7 @@ För att göra detta:
    >Extra rader kan ibland läggas till automatiskt när du kopierar/klistrar in den privata nyckeln. Kom ihåg att ta bort den innan du kodar din privata nyckel.
 
 1. Kopiera innehållet från filen `private.key.base64`.
-1. Logga in via SSH i varje behållare där Adobe Campaign-instansen är installerad och lägg till projektinloggningsuppgifterna i Adobe Campaign genom att köra följande kommando som `neolane` användare. Detta infogar **[!UICONTROL Technical Account]** autentiseringsuppgifter i instanskonfigurationsfilen.
+1. Logga in via SSH i varje behållare där Adobe Campaign-instansen är installerad och lägg till projektinloggningsuppgifterna i Adobe Campaign genom att köra följande kommando som `neolane` användare. Det här infogar **[!UICONTROL Technical Account]** autentiseringsuppgifter i instanskonfigurationsfilen.
 
    ```sql
    nlserver config -instance:<instance name> -setimsjwtauth:Organization_Id/Client_Id/Technical_Account_ID/<Client_Secret>/<Base64_encoded_Private_Key>
@@ -147,7 +150,7 @@ Nu kan du aktivera den nya leveransservern. Så här gör du:
 1. Bläddra till **Administration > Plattform > Alternativ**.
 1. Öppna `NewDeliverabilityServer_FeatureFlag` och ange värdet till `1`. Den här konfigurationen bör utföras på alla era Campaign-instanser (MKT, MID, RT, EXEC). Som hybridkund kan du kontakta Adobe om du vill att alternativet ska vara inställt på MID-, RT- och EXEC-instanserna.
 
-### Steg 4: Validera konfigurationen
+### Steg 4: Verifiera konfigurationen
 
 Följ stegen nedan för att kontrollera att integreringen lyckas:
 
@@ -164,7 +167,7 @@ Följ stegen nedan för att kontrollera att integreringen lyckas:
 
 ### Vad är tidslinjen för uppdateringen?
 
-Övergången till den nya leveransservern, som gör det möjligt att lägga till dessa förbättrade funktioner och ökad säkerhet, börjar den 22 juli för värdkunder (Campaign Managed Services). Alla värdkunder kommer att uppdateras i slutet av augusti.
+Övergången till den nya leveransservern, som gör det möjligt att lägga till dessa förbättrade funktioner och ökad säkerhet, börjar den 22 juli för värdkunder (Campaign Managed Services). Alla värdkunder kommer att uppdateras före augusti.
 
 Lokala kunder och hybridkunder måste gå över under samma tidsram.
 

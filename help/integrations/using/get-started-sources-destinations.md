@@ -2,13 +2,14 @@
 product: campaign
 title: Kom igång med källor och destinationer
 description: Läs mer om Adobe Experience Platform Sources and Destinations
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+feature: Platform Integration
+badge-v7-only: label="v7" type="Informative" tooltip="Gäller endast Campaign Classic v7"
 audience: integrations
 content-type: reference
 exl-id: 8cee52c7-ea56-4701-8ebb-eb18afffea51
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '306'
+source-wordcount: '313'
 ht-degree: 15%
 
 ---
@@ -36,7 +37,7 @@ En mer detaljerad översikt över Adobe Real-time Customer Data Platform, Destin
 
 ## Anslut Campaign Classic med Adobe Experience Platform
 
-För att kunna dela data mellan Adobe Experience Platform och Campaign Classic måste du först ansluta Adobe Campaign som en **Mål** och ansluta din AWS S3- eller Azure-blobblagringsplats som en **Källa** i Adobe Experience Platform.
+För att kunna dela data mellan Adobe Experience Platform och Campaign Classic måste du först ansluta Adobe Campaign som en **Mål** och ansluta din AWS S3- eller Azure-blobblagringsplats som **Källa** i Adobe Experience Platform.
 
 När du har konfigurerat anslutningarna kan du konfigurera en dataimport eller exportera till Campaign Classic med hjälp av arbetsflöden.
 

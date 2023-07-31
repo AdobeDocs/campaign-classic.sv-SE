@@ -2,14 +2,15 @@
 product: campaign
 title: Konfigurera pipeline
 description: Lär dig hur du konfigurerar pipeline
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
+feature: Triggers
+badge-v7: label="v7" type="Informative" tooltip="Gäller Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Gäller även Campaign v8"
 audience: integrations
 content-type: reference
 exl-id: 2d214c36-8429-4b2b-b1f5-fe2730581bba
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '907'
+source-wordcount: '919'
 ht-degree: 2%
 
 ---
@@ -20,11 +21,11 @@ ht-degree: 2%
 
 Autentiseringsparametrar som kund-ID, privat nyckel och autentiseringsslutpunkt konfigureras i instanskonfigurationsfilerna.
 Listan med utlösare som ska bearbetas konfigureras i ett alternativ i JSON-format.
-Utlösarna används för målanpassning av ett kampanjarbetsflöde som skickar e-post. Kampanjen är konfigurerad så att en kund som har båda utlösarhändelserna får ett e-postmeddelande.
+Utlösarna används för att målinrikta via ett kampanjarbetsflöde som skickar e-post. Kampanjen är konfigurerad så att en kund som har båda utlösarhändelserna får ett e-postmeddelande.
 
 ## Förhandskrav {#prerequisites}
 
-Kontrollera att du använder:
+Innan du startar konfigurationen bör du kontrollera att du använder:
 
 * Minst en av följande Adobe Campaign-byggen:
    * 19.1.8.9039
@@ -52,7 +53,7 @@ För kunder med värdtjänst kan du skapa en kundtjänstbiljett som gör att din
 
 För On Premise-kunder, se [Konfigurera Adobe I/O för Adobe Experience Cloud Triggers](../../integrations/using/configuring-adobe-io.md) sida. Observera att du måste välja **[!UICONTROL Adobe Analytics]** när API lades till i Adobe I/O-autentiseringsuppgifterna.
 
-## Steg 2: Konfigurerar alternativet för NmsPipeline_Config-pipeline {#configuring-nmspipeline}
+## Steg 2: Konfigurera pipelinealternativet NmsPipeline_Config {#configuring-nmspipeline}
 
 När autentiseringen är klar hämtas händelserna. Det bearbetar bara utlösare som har konfigurerats i Adobe Campaign. Utlösaren måste ha genererats från Adobe Analytics och skickats till pipeline, som endast kommer att bearbeta utlösare som har konfigurerats i Adobe Campaign.
 Alternativet kan också konfigureras med ett jokertecken för att fånga upp alla utlösare oavsett namn.
@@ -104,15 +105,15 @@ Alternativet kan också konfigureras med ett jokertecken för att fånga upp all
 
 ### Parametern Consumer {#consumer-parameter}
 
-Rörledningen fungerar som en leverantör och en konsumentmodell. Meddelanden används endast för enskilda konsumenter: varje konsument får en egen kopia av budskapen.
+Rörledningen fungerar som en leverantör och en konsumentmodell. Meddelanden används endast för en enskild konsument: varje konsument får sin egen kopia av meddelandena.
 
-The **Konsument** parameter identifierar förekomsten som en av dessa konsumenter. Instansens identitet anropar pipeline. Du kan fylla den med instansnamnet som finns på sidan Övervakning på klientkonsolen.
+The **Konsument** parameter identifierar förekomsten som en av dessa konsumenter. Instansens identitet anropar pipelinen. Du kan fylla den med instansnamnet som finns på sidan Övervakning på klientkonsolen.
 
 Pipeline-tjänsten håller reda på meddelanden som hämtats av varje konsument. Om du använder olika konsumenter för olika instanser kan du se till att alla meddelanden skickas till varje instans.
 
 ### Rekommendationer för försäljningsalternativ {#pipeline-option-recommendation}
 
-Så här konfigurerar du alternativet för pipeline:
+Om du vill konfigurera alternativet för pipeline bör du följa dessa rekommendationer:
 
 * Lägg till eller redigera utlösare under **[!UICONTROL Triggers]** ska du inte redigera resten.
 * Kontrollera att JSON är giltig. Du kan använda en JSON-validerare, se [webbplats](https://jsonlint.com/) till exempel.

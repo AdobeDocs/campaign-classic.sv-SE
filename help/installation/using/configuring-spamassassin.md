@@ -2,16 +2,17 @@
 product: campaign
 title: Konfigurera SpamAssassin
 description: Konfigurera SpamAssassin
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
-badge-v7-prem: label="on-premise & hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html" tooltip="Applies to on-premise and hybrid deployments only"
+feature: Installation, Instance Settings
+badge-v7-only: label="v7" type="Informative" tooltip="Gäller endast Campaign Classic v7"
+badge-v7-prem: label="lokal och hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=sv" tooltip="Gäller endast lokala och hybrida driftsättningar"
 audience: installation
 content-type: reference
 topic-tags: additional-configurations
 exl-id: 1f1004e2-dcd2-4ec5-98ec-720c205646d5
-source-git-commit: 4661688a22bd1a82eaf9c72a739b5a5ecee168b1
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '983'
-ht-degree: 1%
+source-wordcount: '1008'
+ht-degree: 2%
 
 ---
 
@@ -50,13 +51,13 @@ Så här installerar och konfigurerar du SpamAssets på Windows för att aktiver
 
 ### Installera SpamAssassin {#installing-spamassassin}
 
-1. Anslut till [Programdistributionsportal](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html) med dina användaruppgifter. Läs mer om programvarudistribution i [den här sidan](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html).
+1. Anslut till [Programdistributionsportal](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html) med dina inloggningsuppgifter. Läs mer om programvarudistribution i [den här sidan](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html).
 1. Ladda ned **Neolane Spam Assassin (Windows-installation) (2.0)** file (neolane_spamassassin.2.0.zip).
 1. Kopiera den här filen till Adobe Campaign-servern och packa upp den.
 
    >[!NOTE]
    >
-   >Du kan välja att packa upp filen var du vill, förutsatt att sökvägen består av något av följande reguljära uttryckstecken: **`-_A-Za-z\xA0-\xFF0-9\.\%\@\=\+\,\/\\\:.`**. Installationssökvägen får inte innehålla blankstegstecken.
+   >Du kan välja att packa upp filen var du vill, förutsatt att sökvägen består av något av följande reguljära uttryckstecken: **`-_A-Za-z\xA0-\xFF0-9\.\%\@\=\+\,\/\\\:.`**. Installationssökvägen får inte innehålla blanksteg.
 
 1. Gå till den fil där du har packat upp filen och dubbelklicka sedan på **run_me.bat** för att starta installationsskriptet.
 
@@ -64,13 +65,13 @@ Så här installerar och konfigurerar du SpamAssets på Windows för att aktiver
 
    Om Windows Shell inte visas eller inte visas innan du försvinner så dubbelklickar du på knappen **portableShell.bat** -fil för att visa ett Windows-gränssnitt och kontrollera att Shell-sökvägen motsvarar den mapp där **spamassassin.zip** filen har packats upp. Om så inte är fallet kan du öppna det med **cd** -kommando.
 
-   Retur **run_me.bat** sedan klicka **Retur** för att starta installations- och uppdateringsprocessen. Åtgärden returnerar ett av följande värden för att ange resultatet av uppdateringen.
+   Retur **run_me.bat** klicka sedan på **Retur** för att starta installations- och uppdateringsprocessen. Åtgärden returnerar ett av följande värden för att ange resultatet av uppdateringen.
 
    * **0**: en uppdatering har utförts.
    * **1**: Det finns ingen ny uppdatering.
-   * **2**: ingen ny uppdatering tillgänglig.
-   * **3**: uppdatering misslyckades under tidigare verifiering.
-   * **4** eller fler: ett fel har inträffat.
+   * **2**: ingen ny uppdatering finns tillgänglig.
+   * **3**: uppdateringen misslyckades under tidigare verifiering.
+   * **4** eller mer: ett fel har inträffat.
 
 1. Om du vill kontrollera att installationen av SpamAssassin lyckades använder du GTUBE-testet (Generic Test for Unsolicited Bulk Email) enligt följande:
 
@@ -116,7 +117,7 @@ Så här installerar och konfigurerar du SpamAssets på Windows för att aktiver
 
 1. Om du vill kontrollera integreringen av SpamAssassin i Adobe Campaign använder du ett GTBUE-test (Generic Test for Unsolicited Bulk Email):
 
-   Dubbelklicka på **portableshell.bat** -fil. Detta aktiverar visningen av ett Windows-gränssnitt. Kör sedan följande kommando:
+   Dubbelklicka på **portableshell.bat** -fil. Detta utlöser visningen av ett Windows-gränssnitt. Kör sedan följande kommando:
 
    ```
    perl "[INSTALL]\bin\spamcheck.pl" "C:\TestSpamMail.txt"
@@ -144,16 +145,16 @@ Så här installerar och konfigurerar du SpamAssets på Windows för att aktiver
 
 * Installera Perl och SpamAssassin med följande kommando om det behövs:
 
-   ```
-   apt-get install spamassassin libxml-writer-perl
-   ```
+  ```
+  apt-get install spamassassin libxml-writer-perl
+  ```
 
 * I **serverConf.xml** fil (tillgänglig i `/usr/local/[INSTALL]/nl6/conf/`), ändra **spamCheck** rad enligt följande:
 
-   ```
-   <spamCheck command="perl
-   /usr/local/[NSTALL]/nl6/bin/spamcheck.pl"/>
-   ```
+  ```
+  <spamCheck command="perl
+  /usr/local/[NSTALL]/nl6/bin/spamcheck.pl"/>
+  ```
 
 ### Installationssteg i RHEL/CentOS {#installation-steps-in-rhel-centos}
 

@@ -2,12 +2,13 @@
 product: campaign
 title: Redigera formulär
 description: Redigera formulär
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
+feature: Configuration
+badge-v7: label="v7" type="Informative" tooltip="Gäller Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Gäller även Campaign v8"
 exl-id: 24604dc9-f675-4e37-a848-f1911be84f3e
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '1698'
+source-wordcount: '1710'
 ht-degree: 2%
 
 ---
@@ -48,39 +49,39 @@ Du kan skapa olika typer av indataformulär. Formulärtypen avgör hur användar
 
 * Konsolskärm
 
-   Det här är standardformulärtypen. Formuläret består av en enda sida.
+  Det här är standardformulärtypen. Formuläret består av en enda sida.
 
-   ![](assets/console_screen_form.png)
+  ![](assets/console_screen_form.png)
 
 * Innehållshantering
 
-   Använd den här formulärtypen för innehållshantering. Se det här [användningsfall](../../delivery/using/use-case--creating-content-management.md).
+  Använd den här formulärtypen för innehållshantering. Se det här [användningsfall](../../delivery/using/use-case--creating-content-management.md).
 
-   ![](../../delivery/using/assets/d_ncs_content_form13.png)
+  ![](../../delivery/using/assets/d_ncs_content_form13.png)
 
 * guide
 
-   Formuläret innehåller flera flytande skärmar som ordnas i en viss sekvens. Användarna navigerar från en skärm till nästa. [Läs mer](form-structure.md#wizards).
+  Formuläret innehåller flera flytande skärmar som ordnas i en viss sekvens. Användarna navigerar från en skärm till nästa. [Läs mer](form-structure.md#wizards).
 
 * Ikoner
 
-   Formuläret består av flera sidor. Användarna kan navigera i formuläret genom att markera ikoner till vänster om formuläret.
+  Formuläret består av flera sidor. Användarna kan navigera i formuläret genom att markera ikoner till vänster om formuläret.
 
-   ![](assets/iconbox_form_preview.png)
+  ![](assets/iconbox_form_preview.png)
 
 * Anteckningsbok
 
-   Formuläret består av flera sidor. Användarna kan navigera i formuläret genom att markera flikar högst upp i formuläret.
+  Formuläret består av flera sidor. Användarna kan navigera i formuläret genom att markera flikar högst upp i formuläret.
 
-   ![](assets/notebook_form_preview.png)
+  ![](assets/notebook_form_preview.png)
 
 * Lodrät ruta
 
-   I det här formuläret visas ett navigeringsträd.
+  I det här formuläret visas ett navigeringsträd.
 
 * Vågrät ruta
 
-   Det här formuläret innehåller en lista med objekt.
+  I det här formuläret visas en lista med objekt.
 
 ## Behållare
 
@@ -88,7 +89,7 @@ I formulär kan du använda behållare för olika syften:
 
 * Ordna innehåll i formulär
 * Definiera åtkomst till inmatningsfält
-* Kapsla formulär i andra formulär
+* Kapsla in formulär i andra formulär
 
 [Läs mer](form-structure.md#containers).
 
@@ -99,7 +100,7 @@ Använd behållare för att ordna innehåll i formulär:
 * Du kan gruppera fält i avsnitt.
 * Du kan lägga till sidor i flersidiga formulär.
 
-Om du vill infoga en behållare använder du `<container>` -element. [Läs mer](form-structure.md#containers).
+Använd kommandot `<container>` -element. [Läs mer](form-structure.md#containers).
 
 #### Gruppera fält
 
@@ -129,7 +130,7 @@ I det här exemplet definierar en behållare **Skapande** som innehåller **[!UI
 
 För flersidiga formulär använder du en behållare för att skapa en formulärsida.
 
-I det här exemplet visas behållare för **Allmänt** och **Detaljer** sidor i ett formulär:
+I det här exemplet visas behållare för **Allmänt** och **Information** sidor i ett formulär:
 
 ```xml
 <container img="ncm:book.png" label="General">
@@ -185,28 +186,28 @@ Så här skapar du ett formulär:
 
    * Ange formulärnamnet och namnutrymmet.
 
-      Formulärnamnet och namnutrymmet kan matcha det relaterade dataschemat.  I det här exemplet visas ett formulär för `cus:order` dataschema:
+     Formulärnamnet och namnutrymmet kan matcha det relaterade dataschemat.  I det här exemplet visas ett formulär för `cus:order` dataschema:
 
-      ```xml
-      <form entitySchema="xtk:form" img="xtk:form.png" label="Order" name="order" namespace="cus" type="iconbox" xtkschema="xtk:form">
-        […]
-      </form>
-      ```
+     ```xml
+     <form entitySchema="xtk:form" img="xtk:form.png" label="Order" name="order" namespace="cus" type="iconbox" xtkschema="xtk:form">
+       […]
+     </form>
+     ```
 
-      Du kan också uttryckligen ange dataschemat i `entity-schema` -attribut.
+     Du kan också uttryckligen ange dataschemat i `entity-schema` -attribut.
 
-      ```xml
-      <form entity-schema="cus:stockLine" entitySchema="xtk:form" img="xtk:form.png" label="Stock order" name="stockOrder" namespace="cus" xtkschema="xtk:form">
-        […]
-      </form>
-      ```
+     ```xml
+     <form entity-schema="cus:stockLine" entitySchema="xtk:form" img="xtk:form.png" label="Stock order" name="stockOrder" namespace="cus" xtkschema="xtk:form">
+       […]
+     </form>
+     ```
 
    * Ange etiketten som ska visas i formuläret.
    * Du kan också ange formulärtypen. Om du inte anger någon formulärtyp används skärmtypen för konsolen som standard.
 
-      ![](assets/input-form-create-2.png)
+     ![](assets/input-form-create-2.png)
 
-      Om du utformar ett flersidigt formulär kan du utesluta formulärtypen i dialogrutan `<form>` och ange typen i en behållare.
+     Om du utformar ett flersidigt formulär kan du utesluta formulärtypen i dialogrutan `<form>` och ange typen i en behållare.
 
 1. Klicka på **[!UICONTROL Save]**.
 
@@ -320,6 +321,7 @@ Använd `iconbox` formulärtyp för att visa ikoner till vänster om formuläret
           </container>
       </form>
       ```
+
    Du kan även ta bort `type="frame"` attribut från befintlig `<container>` -element.
 
 ### Skapa ett anteckningsboksformulär
@@ -372,9 +374,9 @@ Om du vill kapsla ett formulär i ett annat formulär infogar du ett `<container
 
 I det här exemplet visas ett komplext formulär:
 
-* Formuläret på den översta nivån är ett ikonformulär. Detta formulär består av två behållare med etiketten **Allmänt** och **Detaljer**.
+* Formuläret på den översta nivån är ett ikonformulär. Detta formulär består av två behållare med etiketten **Allmänt** och **Information**.
 
-   Det innebär att det yttre formuläret visar **Allmänt** och **Detaljer** sidor på den översta nivån. Användarna kommer åt dessa sidor genom att klicka på ikonerna till vänster i formuläret.
+  Det innebär att det yttre formuläret visar **Allmänt** och **Information** sidor på den översta nivån. Användarna kommer åt dessa sidor genom att klicka på ikonerna till vänster i formuläret.
 
 * Delformuläret är ett anteckningsboksformulär som är kapslat i **Allmänt** behållare. Delformuläret består av två behållare med etiketter **Namn** och **Kontakt**.
 
@@ -409,9 +411,9 @@ Om du vill kapsla ett formulär i ett annat formulär infogar du ett `<container
 
 I det här exemplet visas ett komplext formulär:
 
-* Formuläret på den översta nivån är ett ikonformulär. Detta formulär består av två behållare med etiketten **Allmänt** och **Detaljer**.
+* Formuläret på den översta nivån är ett ikonformulär. Detta formulär består av två behållare med etiketten **Allmänt** och **Information**.
 
-   Det innebär att det yttre formuläret visar **Allmänt** och **Detaljer** sidor på den översta nivån. Användarna kommer åt dessa sidor genom att klicka på ikonerna till vänster i formuläret.
+  Det innebär att det yttre formuläret visar **Allmänt** och **Information** sidor på den översta nivån. Användarna kommer åt dessa sidor genom att klicka på ikonerna till vänster i formuläret.
 
 * Delformuläret är ett anteckningsboksformulär som är kapslat i **Allmänt** behållare. Delformuläret består av två behållare med etiketter **Namn** och **Kontakt**.
 
@@ -461,9 +463,9 @@ Du kan inkludera valideringskontroller i formulär.
 
 ### Bevilja skrivskyddad åtkomst till fält
 
-Om du vill ge skrivskyddad åtkomst till ett fält använder du `readOnly="true"` -attribut. Du kanske vill visa primärnyckeln för en post, men med skrivskyddad åtkomst. [Läs mer](form-structure.md#non-editable-fields).
+Använd alternativet `readOnly="true"` -attribut. Du kanske vill visa primärnyckeln för en post, men med skrivskyddad åtkomst. [Läs mer](form-structure.md#non-editable-fields).
 
-I det här exemplet har primärnyckeln (`iRecipientId`) `nms:recipient` schemat visas med skrivskyddad åtkomst:
+I det här exemplet har primärnyckeln (`iRecipientId`) i `nms:recipient` schemat visas med skrivskyddad åtkomst:
 
 ```xml
 <value xpath="@iRecipientId" readOnly="true"/>
@@ -531,7 +533,7 @@ Du kan använda JavaScript SOAP-anrop för att validera formulärdata från kons
    I det här exemplet `checkValue` -metoden och `nms:recipient` används:
 
    * Tjänsten är namnutrymmet och datatypen.
-   * Metoden är funktionsnamnet. Namnet är skiftlägeskänsligt.
+   * Metoden är funktionsnamnet. Namnet är versalkänsligt.
 
    Anropet utförs synkront.
 

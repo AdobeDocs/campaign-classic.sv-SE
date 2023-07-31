@@ -2,15 +2,16 @@
 product: campaign
 title: Bearbetningstid för meddelandecentret
 description: Läs mer i rapporten om bearbetningstid för Message Center
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+feature: Transactional Messaging, Message Center
+badge-v7-only: label="v7" type="Informative" tooltip="Gäller endast Campaign Classic v7"
 audience: message-center
 content-type: reference
 topic-tags: reports
 exl-id: c797fd94-0c8d-480b-b22a-1489ac331e77
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '217'
-ht-degree: 3%
+source-wordcount: '224'
+ht-degree: 4%
 
 ---
 
@@ -20,7 +21,7 @@ ht-degree: 3%
 
 Den här rapporten innehåller de viktigaste indikatorerna för realtidskön.
 
-Denna rapport, som riktar sig till tekniska administratörer, kan också nås via **[!UICONTROL Monitoring]** -fliken i kontrollinstansen.
+Denna rapport, som riktar sig till tekniska administratörer, kan också nås via **[!UICONTROL Monitoring]** på kontrollinstansen.
 
 ![](assets/mc_reports_2.png)
 
@@ -28,12 +29,12 @@ Precis som i **[!UICONTROL Message Center service level]** kan du välja att vis
 
 Indikatorerna som visas i **[!UICONTROL Indicators over the period]** -avsnittet beräknas över den valda perioden:
 
-* **[!UICONTROL Average queuing time]** : Genomsnittlig tid som har bearbetat händelser som har ägnats åt i meddelandecentret. Endast bearbetningstiden beaktas.
-* **[!UICONTROL Average message sending time (s)]** : Genomsnittlig tid som har bearbetat händelser som har ägnats åt i meddelandecentret. Endast den maximala leveranstiden beaktas.
-* **[!UICONTROL Average processing time (s)]** : Genomsnittlig tid som har bearbetat händelser som har ägnats åt i meddelandecentret. Beräkningen tar hänsyn till bearbetningstiden och den maximala sändningstiden.
+* **[!UICONTROL Average queuing time]** : den genomsnittliga tid som händelser i meddelandecentret bearbetades. Endast bearbetningstiden beaktas.
+* **[!UICONTROL Average message sending time (s)]** : den genomsnittliga tid som händelser i meddelandecentret bearbetades. Endast den maximala leveranstiden beaktas.
+* **[!UICONTROL Average processing time (s)]** : den genomsnittliga tid som händelser i meddelandecentret bearbetades. Beräkningen tar hänsyn till bearbetningstiden och den maximala sändningstiden.
 * **[!UICONTROL Maximum number of queued events]** : maximalt antal händelser i Message Center-kön vid en given tidpunkt.
-* **[!UICONTROL Minimum number of queued events]** : minsta antal händelser som finns i Message Center-kön vid en given tidpunkt.
-* **[!UICONTROL Average number of queued events]** : Genomsnittligt antal händelser i Message Center-kön vid en given tidpunkt.
+* **[!UICONTROL Minimum number of queued events]** : minsta antal händelser i Message Center-kön vid en given tidpunkt.
+* **[!UICONTROL Average number of queued events]** : genomsnittligt antal händelser i Message Center-kön vid en given tidpunkt.
 
 >[!NOTE]
 >

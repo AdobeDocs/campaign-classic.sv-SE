@@ -2,12 +2,12 @@
 product: campaign
 title: Implementeringssteg
 description: Implementeringssteg för Campaign Interaction Module
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 feature: Interaction, Offers
+badge-v7-only: label="v7" type="Informative" tooltip="Gäller endast Campaign Classic v7"
 exl-id: 82b88ab7-6a95-4bb3-b8b3-abea0fdd4ca0
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '288'
+source-wordcount: '295'
 ht-degree: 2%
 
 ---
@@ -47,7 +47,7 @@ ht-degree: 2%
 
 1. Skapa erbjudandekategorier i designmiljöer. Mer information finns i [Skapa erbjudandekategorier](../../interaction/using/creating-offer-categories.md).
 1. Skapa erbjudanden i designmiljöer. Mer information finns i [Skapa ett erbjudande](../../interaction/using/creating-an-offer.md).
-1. Godkänna och publicera erbjudanden på ett eller flera platser för att göra dem tillgängliga för leveranshanteraren. Mer information finns i [Godkänna och aktivera ett erbjudande](../../interaction/using/approving-and-activating-an-offer.md).
+1. Godkänna och publicera erbjudanden på ett eller flera platser för att göra dem tillgängliga för leveranshanteraren i aktiva miljöer. Mer information finns i [Godkänna och aktivera ett erbjudande](../../interaction/using/approving-and-activating-an-offer.md).
 
 ## Använda erbjudandekatalogen {#using-the-offer-catalog-}
 

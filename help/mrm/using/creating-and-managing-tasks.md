@@ -2,14 +2,15 @@
 product: campaign
 title: Skapa och hantera uppgifter
 description: Skapa och hantera uppgifter
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+feature: Resource Management
+badge-v7-only: label="v7" type="Informative" tooltip="Gäller endast Campaign Classic v7"
 audience: campaign
 content-type: reference
 topic-tags: tasks--resources-and-budgets
 exl-id: cc1200fa-f6d8-4f41-aed1-d1a7f229447a
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '3729'
+source-wordcount: '3736'
 ht-degree: 0%
 
 ---
@@ -56,7 +57,7 @@ Klicka på en uppgift för att redigera den.
 
 ## Skapa en ny uppgift {#creating-a-new-task}
 
-Om du vill skapa en uppgift klickar du på **[!UICONTROL Tasks]** i **[!UICONTROL Campaigns]** och markera **[!UICONTROL Create]**.
+Skapa en uppgift genom att klicka på **[!UICONTROL Tasks]** i **[!UICONTROL Campaigns]** och markera **[!UICONTROL Create]**.
 
 ![](assets/s_ncs_user_task_create_new.png)
 
@@ -66,7 +67,7 @@ Klicka **[!UICONTROL Save]** för att skapa uppgiften.
 
 ![](assets/s_ncs_user_task_create_simple.png)
 
-Du kan även skapa en uppgift via kontrollpanelen för en kampanj: i det här fallet länkas den automatiskt till kampanjen som den skapades från.
+Du kan också skapa en uppgift via kontrollpanelen för en kampanj. I det här fallet länkas den automatiskt till den kampanj som den skapades från.
 
 ![](assets/s_ncs_user_task_create_new_from_op.png)
 
@@ -76,11 +77,11 @@ När en uppgift har skapats läggs den till i kampanjschemat och i listan över 
 
 För att konfigurera den måste du ange:
 
-* Chefen och deltagarna: referera till [Chef och deltagare](#manager-and-participants).
-* Skapandeschema: referera till [Körningsschema](#execution-schedule).
-* Utfästa kostnader: referera till [Utgifter och intäkter](#expenses-and-revenues).
+* Chefen och deltagare: se [Chef och deltagare](#manager-and-participants).
+* Skapandeschema: se [Körningsschema](#execution-schedule).
+* Utfästa kostnader: se [Utgifter och intäkter](#expenses-and-revenues).
 
-Det går också att annonsera granskare (se [Granskare](#reviewers)) och refererade dokument (se [Refererade dokument](#documents-referenced)).
+Det går också att annonsera granskare (se [Granskare](#reviewers)) och refererade dokument (se [Dokument som refereras](#documents-referenced)).
 
 Aktivitetens livscykel visas i [Livscykel](#life-cycle).
 
@@ -88,7 +89,7 @@ Aktivitetens livscykel visas i [Livscykel](#life-cycle).
 
 Det är bara operatorn som ansvarar för en uppgift som har behörighet att stänga den.
 
-När en Adobe Campaign-operator skapar en uppgift tilldelas den som standard automatiskt. Om du vill välja en annan operator använder du **[!UICONTROL Assigned to]** fält.
+När en Adobe Campaign-operator skapar en uppgift tilldelas den som standard automatiskt. Använd kommandot **[!UICONTROL Assigned to]** fält.
 
 ![](assets/s_ncs_user_task_edit_simple_general_tab.png)
 
@@ -102,7 +103,7 @@ De markeras med **[!UICONTROL Resources]** i verktygsfältet. Klicka **[!UICONTR
 
 ![](assets/s_ncs_user_task_add_resources.png)
 
-Klicka **[!UICONTROL Ok]** och ange sedan användarfrekvensen: detta representerar den belastning som tilldelats operatorn för uppgiftskörningens varaktighet. Denna procentsats är endast en indikation och uttrycks som en procentandel.
+Klicka **[!UICONTROL Ok]** och ange sedan användarfrekvensen: detta representerar den belastning som tilldelats operatorn under uppgiftskörningens varaktighet. Denna procentsats är endast en indikation och uttrycks som en procentandel.
 
 För en aktivitet vars körningsschema är inställt på 10 dagar, kommer till exempel en operator vars användarfrekvens är 50 % att aktiveras för den här aktiviteten för halva arbetstiden i 10 dagar.
 
@@ -110,7 +111,7 @@ För varje operator kan du ange en schemalagd arbetsbelastning och en faktisk ar
 
 Det går att konfigurera en påminnelse som automatiskt skickas till alla operatorer som arbetar med aktiviteten före slutdatumet.
 
-Du kan visa operatorprofilen för Adobe Campaign via **[!UICONTROL Edit link]** ikon.
+Du kan visa operatorprofilen för Adobe Campaign via **[!UICONTROL Edit link]** -ikon.
 
 ![](assets/s_ncs_user_task_edit_resource_profile.png)
 
@@ -120,7 +121,7 @@ På kontrollpanelen för operatorer kan du kontrollera deras arbetsbelastning (a
 
 ### Granskare {#reviewers}
 
-Förutom deltagarna kan du definiera operatorer som ska granska uppgiften när den har stängts av den ansvarige personen. Om du vill göra det klickar du på **[!UICONTROL Enable task approval]** i nedre vänstra delen av **[!UICONTROL Resources]** -fönstret. Det kan vara en enskild operator, en grupp operatorer eller en lista med operatorer.
+Förutom deltagarna kan du definiera operatorer som ska granska uppgiften när den har stängts av den ansvarige personen. Klicka på **[!UICONTROL Enable task approval]** i nedre vänstra delen av **[!UICONTROL Resources]** -fönstret. Det kan vara en enskild operator, en grupp operatorer eller en lista med operatorer.
 
 ![](assets/s_ncs_user_task_edit_resource_validation.png)
 
@@ -134,9 +135,9 @@ Du kan definiera ett godkännandeschema för uppgiften i det nedre avsnittet av 
 
 Den person som ansvarar för uppgiften kan tilldela sig själv uppgiften att godkänna den, även om andra operatorer redan har tilldelats uppgiften att göra detta. Om ingen granskare har definierats skickas meddelandena till den person som ansvarar för uppgiften. Alla andra Adobe Campaign-operatorer med **[!UICONTROL Administrator]** behörigheter kan också godkänna uppgiften. De får dock inga meddelanden.
 
-### Refererade dokument {#documents-referenced}
+### Dokument som refereras {#documents-referenced}
 
-Det går att lägga till dokument och marknadsföringsresurser i en uppgift (mer information finns i [Hantera marknadsföringsresurser](../../mrm/using/managing-marketing-resources.md)). Om du vill göra det öppnar du uppgiften och klickar på knappen **[!UICONTROL Documents]** i verktygsfältet.
+Det går att lägga till dokument och marknadsföringsresurser i en uppgift (mer information finns i [Hantera marknadsföringsresurser](../../mrm/using/managing-marketing-resources.md)). Öppna uppgiften och klicka på knappen **[!UICONTROL Documents]** i verktygsfältet.
 
 Klicka **[!UICONTROL Add]** och väljer det dokument som ska läggas till i uppgiften. Använd samma process för marknadsföringsresurser.
 
@@ -176,11 +177,11 @@ Mer information finns i [Status för en uppgift](#progress-status-of-a-task).
 
 Du kan definiera relaterade utgifter och prognosintäkter för varje uppgift. Dessa beräknas och konsolideras sedan för den kampanj som aktiviteten är kopplad till.
 
-Om du vill ange den här informationen klickar du på **[!UICONTROL Expenses and revenue]** i verktygsfältet.
+Klicka på knappen **[!UICONTROL Expenses and revenue]** i verktygsfältet.
 
 ![](assets/s_ncs_user_task_edit_costs.png)
 
-Som standard är den debiterade budgeten budgeten för den kampanj som aktiviteten är kopplad till. Den visas i uppgiftsinformationen.
+Som standard är den debiterade budgeten budgeten för den kampanj som aktiviteten är kopplad till. Den visas i aktivitetsinformationen.
 
 >[!NOTE]
 >
@@ -188,7 +189,7 @@ Som standard är den debiterade budgeten budgeten för den kampanj som aktivitet
 
 I det här fönstret kan du också definiera vilka mål som ska uppnås. Målen uttrycks i prognosintäkter för uppgiften.
 
-### Tjänsteleverantörer {#service-providers}
+### Serviceföretag {#service-providers}
 
 En extern tjänsteleverantör kan vara involverad i hanteringen av en uppgift.
 
@@ -210,7 +211,7 @@ När en tjänsteleverantör har valts visas den på kontrollpanelen för uppgift
 
 ### Sena uppgifter {#late-tasks}
 
-En aktivitet är sen om slutdatumet har nåtts utan att dess status ändras till **[!UICONTROL Finished]**. Som standard varnas ingen operator när en uppgift är sen. Du kan konfigurera leveransen av ett e-postmeddelande: alla operatorer kan meddelas även om de inte deltar i uppgiften.
+En aktivitet är sen om slutdatumet har nåtts utan att dess status ändras till **[!UICONTROL Finished]**. Som standard varnas ingen operator när en uppgift är sen. Du kan konfigurera leveransen av ett e-postmeddelande: alla operatorer kan meddelas även om de inte är inblandade i uppgiften.
 
 Gå till **[!UICONTROL Resources]** och lägg till operatorn i **[!UICONTROL Assignation]** fält. Om du vill meddela flera personer väljer du en grupp med operatorer.
 
@@ -239,9 +240,9 @@ Du kan skapa aktiviteter direkt i ett program för att hantera åtgärder som g�
 
 Så här skapar du en uppgift som är länkad direkt till ett program:
 
-1. Öppna programschemat: på startsidan, gå till **[!UICONTROL Campaigns > Browse > Other choices > Programs]**. Det övergripande programschemat öppnas i den högra delen av fönstret.
-1. Klicka på önskat program i schemat: ett fönster öppnas.
-1. I det här fönstret klickar du på **[!UICONTROL Open]**. Programschemat öppnas.
+1. Öppna programschemat: gå till **[!UICONTROL Campaigns > Browse > Other choices > Programs]**. Det övergripande programschemat öppnas i den högra delen av fönstret.
+1. Klicka på önskat program i schemat: ett fönster visas med programmet.
+1. I det här fönstret klickar du **[!UICONTROL Open]**. Programschemat öppnas.
 1. Klicka på **[!UICONTROL Add]** ovanför schemat till höger och klicka sedan på **[!UICONTROL Add a task]**.
 
 ![](assets/mrm_task_create_from_prg.png)
@@ -254,7 +255,7 @@ En ikon bredvid operatorns namn på kontrollpanelen för uppgifter anger att de 
 
 ### Uppgift i ett arbetsflöde {#task-in-a-workflow}
 
-Använda en **[!UICONTROL Task]** kan du definiera två scenarier beroende på om aktiviteten har godkänts eller inte.
+Använda **[!UICONTROL Task]** kan du definiera två scenarier beroende på om aktiviteten har godkänts eller inte.
 
 ![](assets/mrm_task_in_workflow.png)
 
@@ -280,11 +281,11 @@ Följande uppgifter kan schemaläggas:
 
 ### Styra uppgifter {#control-tasks}
 
-A **[!UICONTROL Control task]** är länkat till leveransgodkännande: godkännande av målgruppsanpassning, innehåll, extraheringsfil, budget eller korrektur.
+A **[!UICONTROL Control task]** är länkat till leveransgodkännande: godkännande av mål, innehåll, extraheringsfil, budget eller bevis.
 
 ![](assets/s_ncs_user_task_new_control.png)
 
-När aktiviteten har skapats läggs den till på kampanjkontrollpanelen.
+När aktiviteten har skapats läggs den till på kontrollpanelen för kampanjer.
 
 ![](assets/s_ncs_user_task_edit_from_board.png)
 
@@ -306,12 +307,12 @@ Aktiviteten för att skapa marknadsföringsresurser interagerar med den resurs s
 
 * Schemat för att skapa resurser och de kostnader som är kopplade till det hanteras via aktiviteten.
 * Operatorer kan arbeta med resursen som vanligt (hämta eller ladda upp, låsa och låsa upp): detta påverkar inte aktiviteten.
-* Godkännande och offentliggörande av resurser kan utföras via uppgiften: om **[!UICONTROL Publish the marketing resource]** om alternativet är aktiverat godkänns och publiceras resursen automatiskt när aktiviteten är klar. Om alternativet inte är aktiverat samverkar aktiviteten och resursen inte: Att agera på en påverkar inte den andra.
+* Godkännande och offentliggörande av resurser kan utföras via uppgiften: **[!UICONTROL Publish the marketing resource]** om alternativet är aktiverat godkänns och publiceras resursen automatiskt när aktiviteten är klar. Om alternativet inte är aktiverat interagerar aktiviteten och resursen inte: det ena påverkar inte det andra.
 
-   Du kan använda en serie länkade uppgifter för att definiera en fullständig godkännandecykel. Kontrollera **[!UICONTROL Publish the marketing resource]** endast för den senaste uppgiften: alla aktiviteter måste slutföras för att resursen ska kunna publiceras. När du skapar en underordnad marknadsföringsresursuppgift väljs resursen automatiskt i den underordnade aktiviteten.
+  Du kan använda en serie länkade uppgifter för att definiera en fullständig godkännandecykel. Kontrollera **[!UICONTROL Publish the marketing resource]** endast för den senaste aktiviteten: alla aktiviteter måste slutföras för att resursen ska kunna publiceras. När du skapar en underordnad marknadsföringsresursuppgift väljs resursen automatiskt i den underordnade aktiviteten.
 
-   * **Via resursen**: om du skickar resursen för godkännande eller godkännande kommer dessa åtgärder inte att påverka aktiviteten.
-   * **Via uppgiften**: om **[!UICONTROL Publish the marketing resource]** om alternativet är incheckat i aktiviteten, godkänns resursen och publiceras automatiskt när aktiviteten är klar (se ovan). Om alternativet inte är markerat samverkar aktiviteten och resursen inte: Att agera på en påverkar inte den andra.
+   * **Via resursen**: Om du skickar resursen för godkännande eller godkännande kommer dessa åtgärder inte att påverka aktiviteten.
+   * **Via uppgiften**: om **[!UICONTROL Publish the marketing resource]** om alternativet är incheckat i aktiviteten, godkänns resursen och publiceras automatiskt när aktiviteten är klar (se ovan). Om alternativet inte är markerat interagerar aktiviteten och resursen inte: om du agerar på den ena påverkas inte den andra.
 
 #### Konfigurera en uppgift att skapa en marknadsföringsresurs {#configuring-a-marketing-resource-creation-task}
 
@@ -322,7 +323,7 @@ Den person som granskar uppgiften behöver inte samma person som granskar inneh�
 I **[!UICONTROL Marketing resource]** definierar du den resurs som du vill hantera med den här uppgiften. Du kan:
 
 * Välj en befintlig resurs: listrutan innehåller alla resurser med statusen **[!UICONTROL Being edited]**.
-* Skapa en resurs: klicka på **[!UICONTROL Select the link]** klickar du på **[!UICONTROL Create]** ikon.
+* Skapa en resurs: klicka på **[!UICONTROL Select the link]** klickar du på **[!UICONTROL Create]** -ikon.
 
 The **[!UICONTROL Publish the marketing resource]** kan du automatisera resurspublicering: när uppgiften är **[!UICONTROL Finished]**, ändras resursens status automatiskt till **[!UICONTROL Published]**, även om det inte har skickats för godkännande eller godkännande, inklusive om granskaren som slutför uppgiften inte är den som har definierats i resursen.
 
@@ -360,7 +361,7 @@ Meddelandeaktiviteter kräver inte godkännande. Det innebär att deras livscyke
 
 En meddelandeaktivitet kan ha följande status:
 
-* **[!UICONTROL Scheduled]** tills e-postmeddelandet har skickats
+* **[!UICONTROL Scheduled]** tills meddelandet har skickats
 * **[!UICONTROL In progress]** när e-postmeddelandet har skickats och till slutdatumet har nåtts
 * **[!UICONTROL Finished]** när slutdatumet har nåtts.
 
@@ -372,12 +373,12 @@ När du skapar en uppgift måste du ange följande element:
 
 * **[!UICONTROL Assigned to]** : den operator eller den grupp av operatorer som ska ta emot e-postmeddelandet. Om du tilldelar om uppgiften när e-postmeddelandet har skickats, skickas inte e-postmeddelandet till den nya operatorn (för att detta ska ske måste du initiera om uppgiften och ändra startdatumet).
 * **Startdatum för uppgift**: det datum då e-postmeddelandet skickas. Detta datum måste infalla i framtiden när uppgiften registreras.
-* **Slutdatum för uppgift**: det datum då uppgiftsstatusen ändras till **[!UICONTROL Finished]**. Som standard är slutdatumet identiskt med startdatumet. Om du tilldelar en varaktighet till aktiviteten kan du däremot symbolisera hur lång tid operatorn måste utföra i schemat, om det behövs.
-* **[!UICONTROL Description]** : den text som anges här kommer att visas i meddelandets brödtext.
+* **Slutdatum för uppgift**: det datum då aktivitetsstatusen ändras till **[!UICONTROL Finished]**. Som standard är slutdatumet identiskt med startdatumet. Om du tilldelar en varaktighet till aktiviteten kan du däremot symbolisera hur lång tid operatorn måste utföra i schemat, om det behövs.
+* **[!UICONTROL Description]** : texten som anges här visas i meddelandets brödtext.
 
-   ![](assets/mrm_task_notif_dashboard_msg.png)
+  ![](assets/mrm_task_notif_dashboard_msg.png)
 
-Du kan lägga till en bifogad fil till uppgiften och i e-postmeddelandet. Om du vill göra det klickar du på **[!UICONTROL Documents]** i verktygsfältet i det övre högra hörnet.
+Du kan lägga till en bifogad fil till uppgiften och i e-postmeddelandet. Klicka på **[!UICONTROL Documents]** i verktygsfältet i det övre högra hörnet.
 
 ## Livscykel {#life-cycle-1}
 
@@ -409,13 +410,13 @@ Beroendet mellan aktiviteter representeras av pilar på kontrollpanelen för kam
 
 När det gäller grupperade uppgifter tilldelar Adobe Campaign automatiskt slutdatumet för den överordnade uppgiften till den underordnade aktiviteten som startdatum. Till exempel om en **Skapa inbjudan** aktiviteten upphör den 15 oktober kl. 3:30, **Skicka e-postinbjudan** underordnad aktivitet börjar 15 oktober klockan 17:30.
 
-Om du skjuter upp slutet på en överordnad uppgift kan vissa av dess underordnade uppgifter påverkas: detta är de underordnade uppgifterna vars status är **[!UICONTROL Scheduled]** och vars startdatum är tidigare än det nya slutdatumet för den överordnade uppgiften. Aktivitetens längd ändras inte. Om startdatumet för en underordnad uppgift är senare än det nya slutdatumet för den överordnade aktiviteten påverkas inte den underordnade aktiviteten.
+Om du skjuter upp slutet på en överordnad aktivitet kan vissa av de underordnade aktiviteterna påverkas: det här är de underordnade uppgifter vars status är **[!UICONTROL Scheduled]** och vars startdatum är tidigare än det nya slutdatumet för den överordnade uppgiften. Aktivitetens längd ändras inte. Om startdatumet för en underordnad uppgift är senare än det nya slutdatumet för den överordnade aktiviteten påverkas inte den underordnade aktiviteten.
 
 **Exempel**
 
-En överordnad aktivitet som schemaläggs att avslutas den 9 oktober klockan 17.00 har två underordnade uppgifter, aktivitet A och aktivitet B. Aktivitet A är planerad att påbörjas den 10 oktober kl. 20 och uppgift B är planerad att påbörjas den 12 oktober kl. 8.00.
+En överordnad aktivitet som schemaläggs att avslutas den 9 oktober klockan 17.00 har två underordnade uppgifter, aktivitet A och aktivitet B. Aktivitet A schemaläggs att starta den 10 oktober klockan 20 och aktivitet B schemaläggs att starta den 12 oktober kl. 8.00.
 
-Låt oss skjuta upp den överordnade uppgiften: upphör nu den 11 oktober klockan 11. Endast uppgift A senareläggs och börjar 11 oktober klockan 16.00.
+Låt oss skjuta upp den överordnade uppgiften: den upphör nu den 11 oktober klockan 12. Endast uppgift A senareläggs och börjar 11 oktober klockan 16.00.
 
 ![](assets/mrm_task_parent_postpones_child.png)
 
@@ -437,10 +438,9 @@ En uppgift kan vara: **[!UICONTROL Scheduled]**, **[!UICONTROL In progress]**, *
 >* Även om giltighetsperioden är slut visas uppgifter som inte stängts fortfarande i listan över pågående uppgifter. En varning meddelar operatorer om att aktiviteten är sen.
 >
 
-
 ### Status för en uppgift {#progress-status-of-a-task}
 
-Förutom körningsstatus kan en uppgift associeras med en förloppsstatus: **[!UICONTROL Late]**, **[!UICONTROL To approve]**, **[!UICONTROL To do today]** eller **[!UICONTROL To do this week]**. Den här informationen anges automatiskt i enlighet med aktivitetsschemat.
+Förutom körningsstatus kan en uppgift associeras med en förloppsstatus: **[!UICONTROL Late]**, **[!UICONTROL To approve]**, **[!UICONTROL To do today]** eller **[!UICONTROL To do this week]**. Den här informationen anges automatiskt enligt schemat för aktiviteten.
 
 Du kan filtrera listan över uppgifter efter process- eller förloppsstatus.
 
@@ -456,7 +456,7 @@ Nedan visas de steg i en komplett uppgiftslivscykel för vilka den ansvariga per
 
    ![](assets/s_ncs_user_task_planed_send_message.png)
 
-   Om du vill skicka det här första meddelandet klickar du på **[!UICONTROL Yes]**. Det här meddelandet ger dem information om nästa uppgift och innehåller information om innehållet och antalet dagar som återstår tills tidsgränsen har nåtts.
+   Om du vill skicka det här första meddelandet klickar du **[!UICONTROL Yes]**. Det här meddelandet ger dem information om nästa uppgift och innehåller information om innehållet och antalet dagar som återstår tills tidsgränsen har nåtts.
 
    När en aktivitet skapas och schemaläggs för framtiden är dess status **[!UICONTROL Scheduled]**.
 
@@ -466,7 +466,7 @@ Nedan visas de steg i en komplett uppgiftslivscykel för vilka den ansvariga per
    * via e-postmeddelandet.
    * via konsolen eller webbgränssnittet i kontrollpanelen för uppgifter.
 
-      ![](assets/s_ncs_user_task_start_rea.png)
+     ![](assets/s_ncs_user_task_start_rea.png)
 
 1. Varje gång en deltagare godkänner ett jobb uppdateras uppgiftens förloppsstatus.
 
@@ -478,7 +478,7 @@ Nedan visas de steg i en komplett uppgiftslivscykel för vilka den ansvariga per
 
    ![](assets/s_ncs_user_task_follow_from_dashboard.png)
 
-1. När den person som ansvarar för uppgiften har fastställt att den är slutförd kan han eller hon stänga den med hjälp av länken i e-postmeddelandet som skickades när aktiviteten startades, konsolen eller gränssnittet.
+1. När den person som ansvarar för uppgiften har fastställt att den är klar kan han eller hon stänga den med hjälp av länken i det meddelande som skickades när aktiviteten startades, konsolen eller gränssnittet.
 
    ![](assets/s_ncs_user_task_console_ressource_validation.png)
 

@@ -2,15 +2,16 @@
 product: campaign
 title: Infoga en dynamisk bild
 description: Infoga en dynamisk bild
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
+feature: Target Integration
+badge-v7: label="v7" type="Informative" tooltip="Gäller Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Gäller även Campaign v8"
 audience: integrations
 content-type: reference
 topic-tags: adobe-target
 exl-id: 6177f57b-534c-4d86-8f73-d96980c48a77
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '825'
+source-wordcount: '837'
 ht-degree: 2%
 
 ---
@@ -19,15 +20,15 @@ ht-degree: 2%
 
 
 
-På den här sidan får du lära dig hur du integrerar ett dynamiskt erbjudande från Adobe Target i ett e-postmeddelande i Adobe Campaign.
+På den här sidan får du lära dig att integrera ett dynamiskt erbjudande från Adobe Target i ett e-postmeddelande i Adobe Campaign.
 
-Målet är att skapa en leverans med ett bildblock som dynamiskt ändras beroende på mottagarens land: data skickas med varje mbox-begäran och beror på mottagarens IP-adress.
+Målet är att skapa en leverans med ett bildblock som dynamiskt ändras beroende på mottagarens land: informationen skickas med varje mbox-begäran och beror på mottagarens IP-adress.
 
 I det här meddelandet kan bilderna variera dynamiskt beroende på följande användarupplevelser:
 
 * E-postmeddelandet öppnas i Frankrike.
 * E-postmeddelandet öppnas i USA.
-* Om inget av dessa villkor gäller visas en standardbild.
+* Om inget av dessa villkor är uppfyllda visas en standardbild.
 
 ![](assets/target_4.png)
 
@@ -49,15 +50,15 @@ I Adobe Campaign finns det två sätt att infoga en dynamisk bild från Target i
 
 * Om du använder redigeraren för digitalt innehåll väljer du en befintlig bild och väljer **[!UICONTROL Insert]** > **[!UICONTROL Dynamic image served by Adobe Target]** i verktygsfältet.
 
-   ![](assets/target_5.png)
+  ![](assets/target_5.png)
 
 * Om du använder standardredigeraren placerar du markören där du vill infoga bilden och väljer **[!UICONTROL Include]** > **[!UICONTROL Dynamic image served by Adobe Target...]** från personaliseringsmenyn.
 
-   ![](assets/target_12.png)
+  ![](assets/target_12.png)
 
 ### Definiera bildparametrarna {#defining-image-parameters}
 
-* The **[!UICONTROL Default image]**&#39;s URL: Bilden som visas när inget av villkoren är uppfyllt. Du kan också välja en bild från ditt resursbibliotek.
+* The **[!UICONTROL Default image]**&#39;s URL: Den bild som visas när inget av villkoren är uppfyllt. Du kan också välja en bild från ditt resursbibliotek.
 * The **[!UICONTROL Target location]**: Ange ett namn för platsen för ditt dynamiska erbjudande. Du måste välja den här platsen i din Target-aktivitet.
 * The **[!UICONTROL Landing Page]**: Om du vill att standardbilden ska dirigeras om till en standardstartsida. Den här URL:en är endast till för de fall då standardbilden visas i det slutliga e-postmeddelandet och är valfri.
 * The **[!UICONTROL Additional decision parameters]**: Ange mappningen mellan fälten som definieras i Adobe Target-segmenten och Adobe Campaign-fälten. De Adobe Campaign-fält som används måste ha angetts i rutan. I vårt exempel har vi lagt till fältet Land.
@@ -146,7 +147,7 @@ The **[!UICONTROL Target]** fönstret sammanfattar din aktivitet. Om det behövs
 
 ![](assets/target_experience.png)
 
-The **[!UICONTROL Goal & Settings]** kan du anpassa din aktivitet genom att ange en prioritet, ett mål eller en varaktighet.
+The **[!UICONTROL Goal & Settings]** kan du anpassa din aktivitet genom att ange prioritet, mål eller varaktighet.
 
 The **[!UICONTROL Reporting Settings]** kan du välja en åtgärd och redigera parametrarna som avgör när ditt mål uppnås.
 

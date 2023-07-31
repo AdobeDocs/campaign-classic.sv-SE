@@ -2,12 +2,12 @@
 product: campaign
 title: Kom igång med kuber
 description: Kom igång med kuber
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
-feature: Reporting
+feature: Reporting, Monitoring
+badge-v7-only: label="v7" type="Informative" tooltip="Gäller endast Campaign Classic v7"
 exl-id: 71d24f03-d41d-49bc-b9a5-8237902f7d6a
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '343'
+source-wordcount: '350'
 ht-degree: 24%
 
 ---
@@ -28,12 +28,12 @@ När de har skapats och konfigurerats används kuber i frågeformulär för rapp
 >
 >**Marknadsföringsanalys** är en Adobe Campaign-modul. Den måste installeras på din instans så att du kan använda de funktioner som beskrivs nedan.
 
-Använd modulen Campaign Marketing Analytics för att:
+Använd modulen Campaign Marketing Analytics för att
 
 1. Skapa kuber
 
    * sammanställa och lagra data i en arbetstabell för att på förhand beräkna indikatorer baserat på användarnas behov,
-   * minska datavolymen i de olika beräkningar som används för rapporter och frågor, vilket avsevärt optimerar beräkningstiderna för indikatorn,
+   * minska mängden data som ingår i de olika beräkningar som används för rapporter och frågor, vilket avsevärt optimerar beräkningstiderna för indikatorn,
    * förenkla tillgången till data, göra det möjligt för användarna att hantera data (oavsett om de är i förväg aggregerade eller inte) beroende på olika dimensioner.
 
 1. Skapa pivottabeller
@@ -41,7 +41,7 @@ Använd modulen Campaign Marketing Analytics för att:
    * utforska beräknade data, konfigurerade mått,
    * välja vilka data som ska visas samt dess visningsläge,
    * personalisera de åtgärder och indikatorer som används,
-   * erbjuder interaktiva analysverktyg till användare med icke-teknisk bakgrund.
+   * erbjuder interaktiva analysverktyg till användare med en icke-teknisk bakgrund.
 
 1. Bygg en fråga med data som beräknas och aggregeras i en kub.
 1. Identifiera populationer och referera till dem i listor.

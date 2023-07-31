@@ -2,14 +2,15 @@
 product: campaign
 title: Ansluta till en extern databas
 description: Lär dig ansluta till en extern databas
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+feature: Installation, Federated Data Access
+badge-v7-only: label="v7" type="Informative" tooltip="Gäller endast Campaign Classic v7"
 audience: platform
 content-type: reference
 topic-tags: connectors
 exl-id: 240d7e11-da3a-4d64-8986-1f1c8ebcea3c
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '644'
+source-wordcount: '651'
 ht-degree: 2%
 
 ---
@@ -40,7 +41,7 @@ Om du vill aktivera en anslutning till en delad extern databas kan du komma åt 
 
    ![](assets/wf-external-account-create.png)
 
-1. Om det behövs avmarkerar du **[!UICONTROL Enabled]** om du vill inaktivera åtkomst till den här databasen utan att ta bort dess konfiguration.
+1. Avmarkera vid behov **[!UICONTROL Enabled]** om du vill inaktivera åtkomst till den här databasen utan att ta bort dess konfiguration.
 1. Om du vill att Adobe Campaign ska kunna komma åt den här databasen måste du distribuera SQL-funktionerna. Klicka på **[!UICONTROL Parameters]** tabben **[!UICONTROL Deploy functions]** -knappen.
 
    ![](assets/wf-external-account-functions.png)
@@ -49,13 +50,13 @@ Du kan definiera särskilda arbetskatalogutrymmen för tabellerna och för index
 
 ## Skapa en tillfällig anslutning {#creating-a-temporary-connection}
 
-Du kan definiera en anslutning till en extern databas direkt från arbetsflödesaktiviteter. I det här fallet kommer den att finnas i en lokal extern databas som är reserverad för att användas i ett aktuellt arbetsflöde: den sparas inte på externa konton. Den här typen av punktanslutning kan skapas för olika aktiviteter i arbetsflödet, särskilt **[!UICONTROL Query]**, **[!UICONTROL Data loading (RDBMS)]**, **[!UICONTROL Enrichment]** aktivitet eller **[!UICONTROL Split]** aktivitet.
+Du kan definiera en anslutning till en extern databas direkt från arbetsflödesaktiviteter. I det här fallet kommer den att finnas i en lokal extern databas, reserverad för att användas i ett aktuellt arbetsflöde: den kommer inte att sparas på de externa kontona. Den här typen av punktanslutning kan skapas för olika aktiviteter i arbetsflödet, särskilt **[!UICONTROL Query]**, **[!UICONTROL Data loading (RDBMS)]**, **[!UICONTROL Enrichment]** aktivitet eller **[!UICONTROL Split]** aktivitet.
 
 >[!CAUTION]
 >
 >Den här typen av konfiguration rekommenderas inte, men kan användas regelbundet för att samla in data. Du bör ändå skapa ett externt konto enligt beskrivningen i [Skapa en delad anslutning](#creating-a-shared-connection) -avsnitt.
 
-I frågeaktiviteten är till exempel stegen för att skapa en periodisk anslutning till en extern databas följande:
+I frågeaktiviteten är stegen för att skapa en periodisk anslutning till en extern databas följande:
 
 1. Klicka på **[!UICONTROL Add data...]** och väljer **[!UICONTROL External data]** alternativ.
 1. Välj **[!UICONTROL Locally defining the data source]** alternativ.

@@ -2,16 +2,17 @@
 product: campaign
 title: Vanliga kommandon
 description: Vanliga kommandon
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
-badge-v7-prem: label="on-premise & hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html" tooltip="Applies to on-premise and hybrid deployments only"
+feature: Monitoring
+badge-v7-only: label="v7" type="Informative" tooltip="Gäller endast Campaign Classic v7"
+badge-v7-prem: label="lokal och hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=sv" tooltip="Gäller endast lokala och hybrida driftsättningar"
 audience: production
 content-type: reference
 topic-tags: production-procedures
 exl-id: 472ccc04-e68e-4ccb-90e9-7d626a4e794f
-source-git-commit: 4661688a22bd1a82eaf9c72a739b5a5ecee168b1
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '407'
-ht-degree: 3%
+source-wordcount: '432'
+ht-degree: 5%
 
 ---
 
@@ -32,7 +33,6 @@ Parametern **`<command>`** motsvarar modulen.
 >* I vilket fall som helst kan du lägga till **-noconsole** argument för att ta bort kommentarer som visas när modulerna har startats.
 >* Omvänt kan du lägga till argumentet **-verbose** för att visa mer information.
 >
-
 
 ## Övervakningskommandon {#monitoring-commands-}
 
@@ -100,25 +100,25 @@ Om du vill stoppa Adobe Campaign-tjänster använder du något av följande komm
 
    * I Linux:
 
-      ```
-      /etc/init.d/nlserver6 stop
-      ```
+     ```
+     /etc/init.d/nlserver6 stop
+     ```
 
-      >[!NOTE]
-      >
-      >Från och med 20.1 rekommenderar vi att du använder följande kommando i stället (för Linux): **systemctl stop nlserver**
+     >[!NOTE]
+     >
+     >Från och med 20.1 rekommenderar vi att du använder följande kommando i stället (för Linux): **systemctl stop nlserver**
 
    * I Windows:
 
-      ```
-      net stop nlserver6
-      ```
+     ```
+     net stop nlserver6
+     ```
 
 * Om inte, så i Adobe Campaign-kontot:
 
-   ```
-   nlserver shutdown 
-   ```
+  ```
+  nlserver shutdown 
+  ```
 
 ## Starta om tjänster {#restart-services}
 
@@ -126,11 +126,11 @@ På samma sätt kan du använda något av följande kommandon för att starta om
 
 * Om du har rot- eller administratörsåtkomst:
 
-   * I Linux: /etc/init.d/nlserver6 - start
+   * I Linux: /etc/init.d/nlserver6 start
 
-      >[!NOTE]
-      >
-      >Från och med 20.1 rekommenderar vi att du använder följande kommando i stället (för Linux): **systemctl start nlserver**
+     >[!NOTE]
+     >
+     >Från och med 20.1 rekommenderar vi att du använder följande kommando i stället (för Linux): **systemctl start nlserver**
 
    * I Windows: net start nlserver6
 
@@ -138,9 +138,9 @@ På samma sätt kan du använda något av följande kommandon för att starta om
 
 ## Kommandot config {#the-config-command}
 
-The **config** kan du hantera serverkonfigurationen, inklusive omkonfigurering av databasanslutningen.
+The **config** Med -kommandot kan du hantera serverkonfigurationen, inklusive omkonfigurering av databasanslutningen.
 
-Använd **config** kommandot **nlserver** körbar fil med **-setdblogin** parameter.
+Använd **config** kommando **nlserver** körbar fil med **-setdblogin** parameter.
 
 ```
 nlserver config -setdblogin:<[dbms:]account[:database][/password]@server>
@@ -161,7 +161,8 @@ Ange lösenordet.
 >[!NOTE]
 >
 >* I allmänhet kan du använda **config** kommando
->* Använd kommandot **-?** parameter: **nlserver config -?**
+>* Om du vill visa parameterlistan använder du **-?** parameter: **nlserver config -?**
 >* Om det är en Oraclena databas får du inte ange kontot. Syntaxen är följande:
 >
 >  nlserver config -setdblogin:Oracle:test6@dbserver
+>

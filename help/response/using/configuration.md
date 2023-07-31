@@ -1,16 +1,17 @@
 ---
 product: campaign
 title: Konfigurera kampanjsvarshanteraren
-description: Lär dig hur du konfigurerar svarshanteraren för Campaign
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
+description: Lär dig konfigurera svarshanteraren för Campaign
+feature: Campaigns
+badge-v7: label="v7" type="Informative" tooltip="Gäller Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Gäller även Campaign v8"
 audience: campaign
 content-type: reference
 topic-tags: response-manager
 exl-id: 1a115ca9-2532-4bd3-be77-814e43250c51
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '750'
+source-wordcount: '762'
 ht-degree: 0%
 
 ---
@@ -29,7 +30,7 @@ Mäthypotesen startas av arbetsflödet för operationsprocessen ( **[!UICONTROL 
 
 >[!CAUTION]
 >
->Ändra inte de inbyggda schemana i programmet, utan använd i stället schemautbyggnadsmekanismen. I annat fall kommer ändrade scheman inte att uppdateras vid tidpunkten för framtida uppgraderingar av programmet. Detta kan leda till felfunktioner när Adobe Campaign används.
+>Ändra inte de inbyggda schemana i programmet, utan använd i stället schemautbyggnadsmekanismen. I annat fall kommer ändrade scheman inte att uppdateras när du uppgraderar programmet. Detta kan leda till felfunktioner när Adobe Campaign används.
 
 Programintegrering krävs innan reaktionsmodulen används, för att definiera de olika tabeller (transaktioner, transaktionsdetaljer) som ska mätas samt deras relation till leveranser, erbjudanden och individer.
 
@@ -61,14 +62,14 @@ I följande schema visas kopplingar mellan de olika tabellerna när konfiguratio
 
 I det här exemplet integrerar vi en tabell med inköp i svarsmodulen med den inbyggda mottagartabellen från Adobe Campaign **[!UICONTROL nms:recipient]**.
 
-Svarstabellen loggar på en **[!UICONTROL nms:remaMatchRcp]** mottagaren utökas för att lägga till en länk till inköpstabellschemat. I följande exempel anropas inköpstabellen **demo:köp**.
+Svarstabellen loggar på en **[!UICONTROL nms:remaMatchRcp]** mottagaren utökas för att lägga till en länk till inköpstabellschemat. I följande exempel anropas köptabellen **demo:köp**.
 
 1. Via Adobe Campaign Explorer väljer du **[!UICONTROL Administration]** > **[!UICONTROL Campaign management]** > **[!UICONTROL Target mappings]**.
 1. Högerklicka **Mottagare** välj **[!UICONTROL Actions]** och **[!UICONTROL Modify the options of the targeting dimensions]**.
 
    ![](assets/delivery_mapping1.png)
 
-1. Du kan anpassa **[!UICONTROL Extension namespace]** i nästa fönster klickar du på **[!UICONTROL Next]**.
+1. Ni kan personalisera **[!UICONTROL Extension namespace]** i nästa fönster klickar du på **[!UICONTROL Next]**.
 
    ![](assets/delivery_mapping2.png)
 
@@ -108,43 +109,43 @@ I det här exemplet integrerar vi en inköpstabell i svarsmodulen med hjälp av 
 
 * Skapa ett nytt svarsloggsschema som härleds från **[!UICONTROL nms:remaMatch]** schema.
 
-   Eftersom tabellen med enskilda användare skiljer sig från tabellen med Adobe Campaign-mottagare är det nödvändigt att skapa ett nytt schema med svarsloggarna baserat på **[!UICONTROL nms:remaMatch]** schema. Fyll sedan i den med länkar till leveransloggarna och inköpstabellen.
+  Eftersom tabellen med enskilda användare skiljer sig från tabellen med Adobe Campaign-mottagare är det nödvändigt att skapa ett nytt schema med svarsloggarna baserat på **[!UICONTROL nms:remaMatch]** schema. Fyll sedan i den med länkar till leveransloggarna och inköpstabellen.
 
-   I följande exempel använder vi **demo:broadLogPers** schema och **demo:köp** transaktionsregister:
+  I följande exempel använder vi **demo:broadLogPers** schema och **demo:köp** transaktionsregister:
 
-   ```
-   <srcSchema desc="Linking of a recipient transaction to a hypothesis"    
-   img="nms:remaMatch.png" label="Responses on persons" labelSingular="Responses on a person" name="remaMatchPers" namespace="nms">
-     <element name="remaMatchPers" template="nms:remaMatch">
-       <key internal="true" name="match">
-         <keyfield xlink="hypothesis"/>
-        <keyfield xlink="purchase"/>
-       </key>
-   
-       <element name="hypothesis" revLabel="Response logs for persons" revLink="remaMatchPers"/>
-       <element applicableIf="HasPackage('nms:interaction')" label="Proposition" name="proposition"
-                target="demo:propositionPers" type="link"/>
-       <element label="Delivery log" name="broadLog" target="demo:broadLogPers" type="link"/>
-     </element>
-   </srcSchema>
-   ```
+  ```
+  <srcSchema desc="Linking of a recipient transaction to a hypothesis"    
+  img="nms:remaMatch.png" label="Responses on persons" labelSingular="Responses on a person" name="remaMatchPers" namespace="nms">
+    <element name="remaMatchPers" template="nms:remaMatch">
+      <key internal="true" name="match">
+        <keyfield xlink="hypothesis"/>
+       <keyfield xlink="purchase"/>
+      </key>
+  
+      <element name="hypothesis" revLabel="Response logs for persons" revLink="remaMatchPers"/>
+      <element applicableIf="HasPackage('nms:interaction')" label="Proposition" name="proposition"
+               target="demo:propositionPers" type="link"/>
+      <element label="Delivery log" name="broadLog" target="demo:broadLogPers" type="link"/>
+    </element>
+  </srcSchema>
+  ```
 
 * Ändra hypotesformen i **[!UICONTROL nms:remaHypothesis]** schema.
 
-   Som standard visas svarsloggarna i mottagarloggarna. Du måste därför ändra hypotesformuläret för att kunna visa de nya svarsloggarna som skapades under det föregående steget.
+  Som standard visas svarsloggarna i mottagarloggarna. Du måste därför ändra hypotesformuläret för att kunna visa de nya svarsloggarna som skapades under det föregående steget.
 
-   Exempel:
+  Exempel:
 
-   ```
-    <container type="visibleGroup" visibleIf="[context/@remaMatchStorage]= 'demo:remaMatchPers'">
-                 <input hideEditButtons="true" img="nms:remaMatch.png" nolabel="true" refresh="true"
-                  toolbarCaption="Responses generated by the hypothesis" type="linklist"
-                  xpath="remaMatchPers">
-             <input xpath="[.]"/>
-             <input xpath="@controlGroup"/>
-           </input>
-      </container> 
-   ```
+  ```
+   <container type="visibleGroup" visibleIf="[context/@remaMatchStorage]= 'demo:remaMatchPers'">
+                <input hideEditButtons="true" img="nms:remaMatch.png" nolabel="true" refresh="true"
+                 toolbarCaption="Responses generated by the hypothesis" type="linklist"
+                 xpath="remaMatchPers">
+            <input xpath="[.]"/>
+            <input xpath="@controlGroup"/>
+          </input>
+     </container> 
+  ```
 
 ## Hantera indikatorer {#managing-indicators}
 

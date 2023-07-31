@@ -2,13 +2,13 @@
 product: campaign
 title: Skapa en tabell
 description: Skapa en tabell
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
-feature: Reporting
+badge-v7: label="v7" type="Informative" tooltip="Gäller Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Gäller även Campaign v8"
+feature: Reporting, Monitoring
 exl-id: 05f76bdf-6dcd-4360-9e72-0ba6a4dd0d5e
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '2495'
+source-wordcount: '2507'
 ht-degree: 1%
 
 ---
@@ -23,7 +23,7 @@ Du kan lägga till en tabell i en rapport för att visa data. Detta kan vara en 
 
 ## Skapa en lista med en grupp {#creating-a-list-with-group}
 
-A **[!UICONTROL List with group]** Med typtabell kan du gruppera data i tabellen och producera statistik för den. Du kan t.ex. skapa summor och delsummor för data. Varje grupp har sin egen rubrik, detalj- och sidfotsrad.
+A **[!UICONTROL List with group]** Med en typtabell kan du gruppera data i tabellen och producera statistik för den. Du kan t.ex. skapa summor och delsummor för data. Varje grupp har sin egen rubrik, detalj- och sidfotsrad.
 
 >[!CAUTION]
 >
@@ -62,17 +62,17 @@ Som standard är **[!UICONTROL List with group]** texttabellen innehåller ett s
 
 Själva gruppen innehåller rubrik-, detalj- och sidfotsrader.
 
-* **Rubrikrad**: På den här raden kan du ge tabellkolumnerna en rubrik.
+* **Rubrikrad**: på den här raden kan du ge tabellkolumnerna en rubrik.
 
-   ![](assets/s_advuser_ergo_listgroup_003a.png)
+  ![](assets/s_advuser_ergo_listgroup_003a.png)
 
 * **Detaljrad**: den här raden innehåller statistiska värden.
 
-   ![](assets/s_advuser_ergo_listgroup_004.png)
+  ![](assets/s_advuser_ergo_listgroup_004.png)
 
-* **Sidfotsrad**: På den här raden kan du visa de totala värdena.
+* **Sidfotsrad**: på den här raden kan du visa de totala värdena.
 
-   ![](assets/s_advuser_ergo_listgroup_003.png)
+  ![](assets/s_advuser_ergo_listgroup_003.png)
 
 Linjer och kolumner kan läggas till efter behov.
 
@@ -90,7 +90,7 @@ Vilken typ av rad du lägger till beror på var markören är placerad. Om du ti
 
 Bredden på kolumnerna kan ändras via **[!UICONTROL Column format]** objekt.
 
-**Grupp**: Om du vill lägga till en grupp går du till en rad och väljer matchande alternativ i listrutan.
+**Grupp**: om du vill lägga till en grupp går du till en rad och väljer matchande objekt i listrutan.
 
 ![](assets/s_advuser_ergo_listgroup_007.png)
 
@@ -104,19 +104,19 @@ Använd **[!UICONTROL Expression]** menyalternativ för att välja vilka värden
 
 * Om du vill infoga värdena som ska analyseras direkt i tabellen markerar du dem bland de tillgängliga fälten.
 
-   Listan med tillgängliga fält sammanfaller med innehållet i frågan före tabellen i rapportkonstruktionsdiagrammet.
+  Listan med tillgängliga fält sammanfaller med innehållet i frågan före tabellen i rapportkonstruktionsdiagrammet.
 
-   ![](assets/s_advuser_ergo_listgroup_011.png)
+  ![](assets/s_advuser_ergo_listgroup_011.png)
 
 * Ange en etikett för en cell, till exempel rubrikens.
 
-   Om du vill göra det använder du samma process som när du infogar ett fält i databasen, men markerar inget uttryck. Ange etiketten i dialogrutan **[!UICONTROL Label]** fält. Den visas som den är.
+  Om du vill göra det använder du samma process som när du infogar ett fält i databasen, men markerar inget uttryck. Ange etiketten i dialogrutan **[!UICONTROL Label]** fält. Den visas som den är.
 
 * Beräkna ett aggregat (ett genomsnitt, en summa osv.) och visa den i cellen.
 
-   Om du vill göra det använder du **[!UICONTROL Aggregates]** menyalternativ och välj önskad kampanj.
+  Använd **[!UICONTROL Aggregates]** och välj önskad kampanj.
 
-   ![](assets/s_advuser_ergo_listgroup_008.png)
+  ![](assets/s_advuser_ergo_listgroup_008.png)
 
 ### Definiera cellformat {#defining-cell-format}
 
@@ -126,7 +126,7 @@ Om du vill definiera cellformatet väljer du **[!UICONTROL Cell format...]** kan
 
 Med dessa alternativ kan du anpassa den slutliga återgivningen av rapporten och göra det enklare att läsa information.
 
-Använd **[!UICONTROL Carriage return]** fält vid export av data till Excel: välj **[!UICONTROL Yes]** värde för att framtvinga vagnreturen. Detta värde behålls vid export. Mer information finns i [Exportera en rapport](../../reporting/using/actions-on-reports.md#exporting-a-report).
+Använd **[!UICONTROL Carriage return]** fält vid export av data till Excel: markera **[!UICONTROL Yes]** värde för att framtvinga vagnreturen. Detta värde behålls vid export. Mer information finns i [Exportera en rapport](../../reporting/using/actions-on-reports.md#exporting-a-report).
 
 The **[!UICONTROL Cell format]** -fönstret ger dig åtkomst till följande flik:
 
@@ -139,9 +139,9 @@ The **[!UICONTROL Value]** Med -fliken kan du ändra teckensnitt och olika värd
 
 ![](assets/s_advuser_ergo_listgroup_009.png)
 
-Formatet ändrar visningen av data: till exempel **[!UICONTROL Number]**, **[!UICONTROL Monetary]** och **[!UICONTROL Percentage]** Med kan du justera siffrorna till höger och visa decimalpunkter.
+Formatet ändrar visningen av data: t.ex. **[!UICONTROL Number]**, **[!UICONTROL Monetary]** och **[!UICONTROL Percentage]** Med kan du justera siffrorna till höger och visa decimalpunkter.
 
-Exempel på hur du konfigurerar ett valutaformat: Du kan ange i vilken valuta värdena ska uttryckas, välja om du vill separera tusentals och visa negativa värden i rött. Valutasymbolens position beror på vilket språk operatorn har i sin profil.
+Exempel på hur du konfigurerar ett valutaformat: du kan ange den valuta som värdena uttrycks i, välja om du vill separera tusentals och visa negativa värden i rött eller inte. Valutasymbolens position beror på vilket språk operatorn har i sin profil.
 
 ![](assets/s_advuser_ergo_listgroup_012.png)
 
@@ -189,7 +189,7 @@ På fliken Excel:
 
 The **[!UICONTROL Click]** kan du definiera en åtgärd när användaren klickar på innehållet i en cell eller i tabellen.
 
-I exemplet nedan kan du klicka på värdet i cellen för att visa den andra sidan i rapporten: den kommer att innehålla information om leveransen i cellen.
+I exemplet nedan kan du klicka på värdet i cellen för att visa den andra sidan i rapporten. Den kommer att innehålla information om leveransen i cellen.
 
 ![](assets/s_advuser_ergo_listgroup_015.png)
 
@@ -199,7 +199,7 @@ The **Extra** kan du länka en visuell bild till dina data, t.ex. en färgmarker
 
 ## Användningsfall: Skapa en rapport med en grupplista {#use-case--create-a-report-with-a-group-list}
 
-I det här exemplet ska vi skapa en tvåsidig rapport: den första sidan innehåller listan och de totala leveranserna per kampanj samt antalet skickade meddelanden. Leveransnamnen är klickbara länkar och du kan gå vidare till den andra sidan av rapporten för att visa fördelningen av leveranser per e-postdomän för den valda leveransen med en tabell och ett diagram. På den andra sidan fungerar tabellen som förklaring för diagrammet.
+I det här exemplet ska vi skapa en tvåsidig rapport: den första sidan innehåller listan, de totala leveranserna per kampanj samt antalet skickade meddelanden. Leveransnamnen är klickbara länkar och du kan gå vidare till den andra sidan av rapporten för att visa fördelningen av leveranser per e-postdomän för den valda leveransen med en tabell och ett diagram. På den andra sidan fungerar tabellen som förklaring för diagrammet.
 
 ![](assets/reporting_quick_start_report-final.png)
 
@@ -232,28 +232,27 @@ Dubbelklicka på den första frågan för att redigera den och använd sedan fö
    * Leveransens primärnyckel.
    * kampanjetiketten,
    * Indikatorn för bearbetade leveranser.
-   * den utländska nyckeln för Campaign-länken,
+   * den utländska nyckeln för kampanjlänken,
    * Indikatorn för felfrekvens.
 
    ![](assets/s_advuser_report_listgroup_002.png)
 
-   Länka ett alias till varje fält: Vi rekommenderar att du gör det enklare att välja data från tabellen som ska läggas till på rapportens första sida.
+   Länka ett alias till varje fält: vi rekommenderar att du gör det enklare att välja data från tabellen som ska läggas till på rapportens första sida.
 
    I det här exemplet använder vi följande alias:
 
    * Etikett: **@label**
    * Primär nyckel: **@deliveryId**
-   * Etikett (Campaign): **@label1**
+   * Etikett (kampanj): **@label1**
    * Behandlad: **@bearbetad**
    * Sekundärnyckel för länken&quot;Campaign&quot; (ID-fält): **@operationId**
    * Felfrekvens: **@errorRatio**
-
 
 1. Klicka på **[!UICONTROL Next]** två gånger för att komma till **[!UICONTROL Data filtering]** steg.
 
    Lägg till ett filtreringsvillkor om du bara vill samla in de leveranser som är kopplade till en kampanj.
 
-   Syntaxen för det här filtret är följande: &quot;Sekundärnyckel för länken &#39;Campaigns&#39; som är större än 0&quot;.
+   Syntaxen för det här filtret är följande: &quot;Sekundärnyckel för länken &quot;Kampanjer&quot; som är större än 0&quot;.
 
    ![](assets/reporting_quick_start_query_filter.png)
 
@@ -341,9 +340,9 @@ I det här steget ska vi konfigurera den första sidan i rapporten. Så här kon
 
    ![](assets/s_advuser_report_listgroup_025.png)
 
-   Vi rekommenderar att du använder **[!UICONTROL Preview]** för att säkerställa att data i tabellen är korrekt markerade och konfigurerade. När du är klar kan du fortsätta formatera tabellen.
+   Vi rekommenderar **[!UICONTROL Preview]** för att säkerställa att data i tabellen är korrekt markerade och konfigurerade. När du är klar kan du fortsätta formatera tabellen.
 
-1. Använd **[!UICONTROL Bold]** formatera cellerna som visar det totala antalet per kampanj och det totala antalet bearbetade meddelanden.
+1. Använd **[!UICONTROL Bold]** formatera cellerna som visar totalt per kampanj och det totala antalet bearbetade meddelanden.
 
    ![](assets/s_advuser_report_listgroup_024.png)
 
@@ -363,7 +362,7 @@ I det här steget ska vi konfigurera den första sidan i rapporten. Så här kon
 
 Vi vill lägga till en andra fråga och en andra sida för att visa detaljerna för en leverans när rapportanvändaren klickar på den. Innan du lägger till frågan redigerar du sidan som du har skapat och aktiverar den utgående övergången så att den kan länkas till frågan.
 
-1. Lägg till en ny fråga efter **[!UICONTROL Page]** och redigera schemat: välj **[!UICONTROL Recipient delivery logs]** schema.
+1. Lägg till en ny fråga efter **[!UICONTROL Page]** aktivitet och redigera dess schema: välj **[!UICONTROL Recipient delivery logs]** schema.
 
    ![](assets/reporting_quick_start_query-2.png)
 
@@ -371,9 +370,9 @@ Vi vill lägga till en andra fråga och en andra sida för att visa detaljerna f
 
    * beräkna summan av primärnycklar för att räkna antalet leveransloggar:
 
-      ![](assets/reporting_quick_start_query-2_count.png)
+     ![](assets/reporting_quick_start_query-2_count.png)
 
-   * samla in mottagarnas e-postdomäner och gruppinformation om detta fält: för att göra detta väljer du **[!UICONTROL Group]** i domännamnskolumnen.
+   * samla in mottagarnas e-postdomäner och gruppera information i det här fältet: om du vill göra det väljer du **[!UICONTROL Group]** i domännamnskolumnen.
 
    ![](assets/reporting_quick_start_query-2_filter.png)
 
@@ -382,10 +381,9 @@ Vi vill lägga till en andra fråga och en andra sida för att visa detaljerna f
    * count(primär nyckel): **@count**
    * E-postdomän (mottagare): **@domän**
 
-      ![](assets/reporting_quick_start_query-2_alias.png)
+     ![](assets/reporting_quick_start_query-2_alias.png)
 
-
-1. Klicka på **[!UICONTROL Next]** två gånger: det här tar dig till **[!UICONTROL Data filtering]** steg.
+1. Klicka på **[!UICONTROL Next]** två gånger: då visas **[!UICONTROL Data filtering]** steg.
 
    Lägg till ett filtreringsvillkor om du bara vill samla in den information som är länkad till den valda leveransen.
 
@@ -398,7 +396,7 @@ Vi vill lägga till en andra fråga och en andra sida för att visa detaljerna f
 ### Steg 5 - Skapa den andra sidan {#step-5---create-the-second-page}
 
 1. Redigera sidan och ange dess etikett: **E-postdomäner**.
-1. Avmarkera **[!UICONTROL Enable output transitions]** alternativ: detta är sista sidan i rapporten och kommer inte att följas av någon annan aktivitet.
+1. Avmarkera **[!UICONTROL Enable output transitions]** alternativ: det här är sista sidan i rapporten och kommer inte att följas av någon annan aktivitet.
 
    ![](assets/s_advuser_report_listgroup_028.png)
 
@@ -410,24 +408,24 @@ Vi vill lägga till en andra fråga och en andra sida för att visa detaljerna f
 1. I **[!UICONTROL Data]** anpassar du tabellen enligt följande:
 
    * Lägg till två kolumner till höger.
-   * Lägg till **[!UICONTROL rowNum()-1]** -uttryck för att räkna antalet rader. Ändra sedan cellens format: i **[!UICONTROL Extra]** flik, välja **[!UICONTROL Color tab]** och klicka **[!UICONTROL Ok]**.
+   * Lägg till den första cellen på detaljraden **[!UICONTROL rowNum()-1]** -uttryck för att räkna antalet rader. Ändra sedan cellens format: i **[!UICONTROL Extra]** flik, välja **[!UICONTROL Color tab]** och klicka **[!UICONTROL Ok]**.
 
-      ![](assets/s_advuser_report_listgroup_018.png)
+     ![](assets/s_advuser_report_listgroup_018.png)
 
-      Med den här konfigurationen kan du använda tabellen som bildtext för diagrammet.
+     Med den här konfigurationen kan du använda tabellen som bildtext för diagrammet.
 
    * Lägg till **[!UICONTROL Email domain(Recipient)]** -uttryck.
    * Lägg till **[!UICONTROL count(primary key)]** -uttryck.
 
    ![](assets/s_advuser_report_listgroup_019.png)
 
-1. Lägg till ett cirkeldiagram på sidan med högerklicksmenyn och tilldela **E-postdomäner** etikett. Mer information finns i [Diagramtyper och varianter](../../reporting/using/creating-a-chart.md#chart-types-and-variants).
+1. Lägg till ett cirkeldiagram på sidan med högerklicksmenyn och tilldela **E-postdomäner** etikett till den. Mer information finns i [Diagramtyper och varianter](../../reporting/using/creating-a-chart.md#chart-types-and-variants).
 1. Klicka på **[!UICONTROL Variants]** och avmarkera **[!UICONTROL Display label]** och **[!UICONTROL Display caption]** alternativ.
 1. Kontrollera att ingen värdesortering har konfigurerats. Mer information om detta finns i [det här avsnittet](../../reporting/using/processing-a-report.md#configuring-the-layout-of-a-descriptive-analysis-report).
 
    ![](assets/s_advuser_report_listgroup_0191.png)
 
-1. I **[!UICONTROL Data]** ändrar du datakälla på fliken: välj **[!UICONTROL Context data]** i listrutan.
+1. I **[!UICONTROL Data]** ändrar du datakälla: markera **[!UICONTROL Context data]** i listrutan.
 
    ![](assets/s_advuser_report_listgroup_020.png)
 
@@ -436,7 +434,7 @@ Vi vill lägga till en andra fråga och en andra sida för att visa detaljerna f
    ![](assets/s_advuser_report_listgroup_0201.png)
 
 1. I **[!UICONTROL Chart type]** väljer du **[!UICONTROL Email domain]** variabel.
-1. Lägg sedan till den beräkning som ska utföras: markera summan som en operator.
+1. Lägg sedan till beräkningen som ska utföras: välj summan som operator.
 
    ![](assets/s_advuser_report_listgroup_0202.png)
 
@@ -446,11 +444,11 @@ Vi vill lägga till en andra fråga och en andra sida för att visa detaljerna f
 
 1. Spara rapporten.
 
-   Sidan är nu konfigurerad.
+   Sidan har konfigurerats.
 
 ### Steg 6 - Visa rapporten {#step-6---viewing-the-report}
 
-Om du vill visa resultatet av den här konfigurationen klickar du på **[!UICONTROL Preview]** och väljer **[!UICONTROL Global]** alternativ.
+Om du vill visa resultatet av konfigurationen klickar du på **[!UICONTROL Preview]** och väljer **[!UICONTROL Global]** alternativ.
 
 Den första sidan i rapporten innehåller en lista över alla leveranser som ingår i databasen.
 

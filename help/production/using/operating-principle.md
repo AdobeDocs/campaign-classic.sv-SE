@@ -2,16 +2,17 @@
 product: campaign
 title: Verksamhetsprincip
 description: Verksamhetsprincip
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
-badge-v7-prem: label="on-premise & hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html" tooltip="Applies to on-premise and hybrid deployments only"
+feature: Monitoring
+badge-v7-only: label="v7" type="Informative" tooltip="Gäller endast Campaign Classic v7"
+badge-v7-prem: label="lokal och hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=sv" tooltip="Gäller endast lokala och hybrida driftsättningar"
 audience: production
 content-type: reference
 topic-tags: production-procedures
 exl-id: 1c032ef9-af11-4947-90c6-76cb9434ae85
-source-git-commit: 4661688a22bd1a82eaf9c72a739b5a5ecee168b1
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '495'
-ht-degree: 1%
+source-wordcount: '520'
+ht-degree: 3%
 
 ---
 
@@ -26,10 +27,10 @@ Det finns många Adobe Campaign-moduler. Vissa arbetar kontinuerligt medan andra
 Det finns tre typer av Adobe Campaign-moduler:
 
 * Moduler med flera instanser: en enda process körs för alla instanser. Detta gäller följande moduler: **webb**, **syslogd**, **trackinglogd** och **övervakningsenhet** (aktiviteter från **config-default.xml** fil).
-* Eninstansmoduler: en process körs per instans. Detta gäller följande moduler: **mta**, **wfserver**, **inMail**, **sms** och **stat** (aktiviteter från **config-`<instance>`.xml** fil).
-* Verktygsmoduler: är moduler som körs ibland för att utföra tillfälliga eller återkommande åtgärder (**rensa**, **config**, hämtar spårningsloggar osv.).
+* Eninstansmoduler: en process körs per instans. Detta gäller följande moduler: **mta**, **wfserver**, **inMail**, **sms** och **stat** (aktiviteter från **config-`<instance>`XML** fil).
+* Verktygsmoduler: det här är moduler som körs ibland för att utföra tillfälliga eller återkommande åtgärder (**rensa**, **config**, hämtar spårningsloggar osv.).
 
-Moduladministration utförs med kommandoradsverktyget **nlserver** installeras i **bin** installationsmappens katalog.
+Moduladministration utförs med kommandoradsverktyget **nlserver** som finns i **bin** installationsmappen.
 
 Den allmänna syntaxen för **nlserver** är följande:
 
@@ -43,17 +44,17 @@ De tillgängliga modulerna beskrivs i följande tabell:
 |---|---|
 | aliasCleansing | Standardisera uppräkningsvärden |
 | fakturering | Skicka systemaktivitetsrapporten till billing@neolane.net |
-| rensa | Rensar databasen: tar bort inaktuella data från databasen och kör en uppdatering av statistiken som används av databasmotoroptimeraren. |
+| rensa | Rensar databasen: tar bort föråldrade data från databasen och kör en uppdatering av statistiken som används av databasmotoroptimeraren. |
 | config | Ändrar serverkonfiguration |
 | export | Exportera till kommandorad: gör att du kan skicka en exportmodell som skapats i Adobe Campaign klientkonsol till kommandoraden |
 | filconvert | Konvertera en fil med fast storlek |
-| import | Importera till kommandoraden: Med kan du skicka en importmodell som har skapats i Adobe Campaign klientkonsol till kommandoraden. |
+| import | Importera till kommandoraden: gör att du kan skicka en importmodell som skapats i Adobe Campaign klientkonsol till kommandoraden. |
 | inMail | Analysera inkommande e-post |
 | installsetup | Tillgång till kundinstallationsfilen |
 | javascript | Köra JavaScript-skript med tillgång till SOAP API:er. |
 | jobb | Kommandoradsbearbetning |
-| sammanfoga | Formulärsammanfogning |
-| midSourcing | Återvinning av leveransinformation i läget mitt i källkoden |
+| sammanfoga | Koppla formulär |
+| midSource | Återvinning av leveransinformation i läget mitt i källkoden |
 | monitor | XML Visa status för serverprocesser och schemalagda aktiviteter, som exempel. |
 | mta | Överföringsmeddelande för huvudagent |
 | package | Importera eller exportera enhetspaketfiler |
@@ -66,7 +67,7 @@ De tillgängliga modulerna beskrivs i följande tabell:
 | sql | SQL-skriptkörning |
 | start | Ytterligare starter |
 | stat | Underhåller statistik för MTA-anslutning |
-| stop | Delvis systemavstängning |
+| stop | Delvis avstängning av systemet |
 | inskickad | Skicka en leveransåtgärd |
 | syslogd | Logga och spåra skrivserver |
 | spårning | Konsolidera och hämta spårningsloggar |
@@ -77,7 +78,7 @@ De tillgängliga modulerna beskrivs i följande tabell:
 
 >[!IMPORTANT]
 >
->Det finns en sista modul: Modulen för spårning och vidarebefordran är länkad till programservern som för prestandans skull är integrerad med inbyggda mekanismer i en Apache- eller IIS-webbserver via ett dynamiskt bibliotek. Det finns inget Adobe Campaign-kommando som gör att du kan starta eller administrera den här modulen. Du måste därför använda kommandona från själva webbservern.
+>Det finns en sista modul: Modulen för spårning och vidarebefordran som är länkad till programservern, som för prestandans skull är integrerad via inbyggda mekanismer i en Apache- eller IIS-webbserver via ett dynamiskt bibliotek. Det finns inget Adobe Campaign-kommando som du kan använda för att starta eller administrera den här modulen. Du måste därför använda kommandona från själva webbservern.
 
 Modulanvändning och syntaxen för dess parametrar visas med följande kommando: **nlserver `[module]` -?**
 

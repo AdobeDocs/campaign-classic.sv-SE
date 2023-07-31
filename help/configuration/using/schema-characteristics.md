@@ -2,12 +2,13 @@
 product: campaign
 title: Schemaegenskaper
 description: Schemaegenskaper
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
+feature: Custom Resources
+badge-v7: label="v7" type="Informative" tooltip="Gäller Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Gäller även Campaign v8"
 exl-id: 099161b4-b4cb-433c-aed6-71157269a536
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '380'
+source-wordcount: '392'
 ht-degree: 2%
 
 ---
@@ -28,7 +29,7 @@ Egenskaperna för ett schema som refererar till en befintlig tabell är följand
 
 ## Attributet view {#the-view-attribute}
 
-Källscheman accepterar **visa** attribut för **srcSchema** rotelement. Den måste användas när Adobe Campaign hanteras i anpassade tabeller. The **view=&quot;true&quot;** -attributet instruerar databasstrukturuppdateringsguiden att ignorera det här schemat. Programmet tillåts därför inte att synkronisera tabellen, dess kolumner och index med motsvarande schema.
+Källscheman accepterar **visa** attributet för **srcSchema** rotelement. Den måste användas när Adobe Campaign hanteras i anpassade tabeller. The **view=&quot;true&quot;** -attributet instruerar databasstrukturuppdateringsguiden att ignorera det här schemat. Programmet tillåts därför inte att synkronisera tabellen, dess kolumner och index med motsvarande schema.
 
 När det här attributet är inställt på **true** används schemat bara för att generera SQL-frågor för att komma åt data i den här tabellen.
 

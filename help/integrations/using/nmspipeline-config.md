@@ -2,13 +2,14 @@
 product: campaign
 title: Pipelinealternativet NmsPipeline_Config
 description: Pipelinealternativet NmsPipeline_Config
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
+feature: Triggers
+badge-v7: label="v7" type="Informative" tooltip="Gäller Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Gäller även Campaign v8"
 audience: integrations
 content-type: reference
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '374'
+source-wordcount: '386'
 ht-degree: 3%
 
 ---
@@ -78,7 +79,7 @@ Parametern&quot;Consumer&quot; identifierar förekomsten som en av dessa konsume
 
 ## Konfigurera alternativet Pipeline {#configure-pipeline-option}
 
-Lägg till eller redigera Experience Cloud-utlösare under arrayen&quot;triggers&quot;, redigera inte resten.
+Lägg till eller redigera utlösare för Experience Cloud under arrayen&quot;triggers&quot;. Redigera inte resten.
 Se till att JSON är giltig med hjälp av det här [webbplats](https://jsonlint.com/).
 
 * &quot;name&quot; är utlösar-ID. Ett jokertecken (*) fångar upp alla utlösare.

@@ -2,13 +2,14 @@
 product: campaign
 title: Exportera data från Campaign till Adobe Experience Platform
 description: Lär dig hur du exporterar data från Campaign Classic till Adobe Experience Platform
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+feature: Platform Integration
+badge-v7-only: label="v7" type="Informative" tooltip="Gäller endast Campaign Classic v7"
 audience: integrations
 content-type: reference
 exl-id: 8d1404c5-030b-47fe-a4c3-e72f15f09bbb
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '497'
+source-wordcount: '504'
 ht-degree: 4%
 
 ---
@@ -33,11 +34,11 @@ Lägg till och konfigurera:
 
 * An **[!UICONTROL Data extraction (file)]** -aktivitet för att extrahera måldata till en CSV-fil. Mer information om hur du konfigurerar den här aktiviteten finns i [det här avsnittet](../../workflow/using/extraction--file-.md).
 
-   ![](assets/rtcdp-extract-file.png)
+  ![](assets/rtcdp-extract-file.png)
 
 * A **[!UICONTROL File transfer]** -aktivitet för att överföra CSV-filen till lagringsplatsen. Mer information om hur du konfigurerar den här aktiviteten finns i [det här avsnittet](../../workflow/using/file-transfer.md).
 
-   ![](assets/rtcdp-file-transfer.png)
+  ![](assets/rtcdp-file-transfer.png)
 
 Arbetsflödet nedan extraherar till exempel regelbundet loggar in i en CSV-fil och överför sedan filen till en lagringsplats.
 
@@ -66,4 +67,4 @@ Huvudstegen för att ansluta din S3- eller Azure-blobblagringsplats som en **Kä
 
 1. När källan har konfigurerats importerar Adobe Experience Platform filen från lagringsplatsen som du angav.
 
-   Den här åtgärden kan schemaläggas efter dina behov. Vi rekommenderar att du exporterar upp till 6 gånger per dag, beroende på vilken belastning som finns på instansen.
+   Den här åtgärden kan schemaläggas efter dina behov. Vi rekommenderar att du exporterar upp till 6 gånger per dag, beroende på vilken belastning som redan finns på instansen.

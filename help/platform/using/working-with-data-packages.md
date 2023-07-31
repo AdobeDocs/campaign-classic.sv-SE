@@ -2,16 +2,17 @@
 product: campaign
 title: Arbeta med datapaket
 description: Arbeta med datapaket
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
+feature: Data Management, Package Export/Import
+badge-v7: label="v7" type="Informative" tooltip="Gäller Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Gäller även Campaign v8"
 audience: platform
 content-type: reference
 topic-tags: administration-basics
 exl-id: d3369b63-a29b-43b7-b2ad-d36d4f46c82e
-source-git-commit: acfe0c4139671fc3df69ff434ba307aaaaf70676
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '2442'
-ht-degree: 2%
+source-wordcount: '2454'
+ht-degree: 3%
 
 ---
 
@@ -31,14 +32,14 @@ Principen om **datapaket** är att exportera en datakonfiguration och integrera 
 
 Det finns tre typer av paket som kan exporteras: användarpaket, plattformspaket och administratörspaket.
 
-* **Användarpaket**: gör att du kan välja en lista över enheter som ska exporteras. Den här typen av paket hanterar beroenden och verifierar fel.
-* **Plattformspaket**: Den innehåller alla tillagda tekniska resurser (ej standard): scheman, JavaScript-kod osv.
+* **Användarpaket**: du kan välja en lista med enheter som ska exporteras. Den här typen av paket hanterar beroenden och verifierar fel.
+* **Plattformspaket**: innehåller alla tillagda tekniska resurser (ej standard): scheman, JavaScript-kod osv.
 
-   ![](assets/ncs_datapackage_package_platform.png)
+  ![](assets/ncs_datapackage_package_platform.png)
 
 * **Administratörspaket**: innehåller alla tillagda mallar och affärsobjekt (ej standard): mallar, bibliotek osv.
 
-   ![](assets/ncs_datapackage_package_admin.png)
+  ![](assets/ncs_datapackage_package_admin.png)
 
 >[!CAUTION]
 >
@@ -48,7 +49,7 @@ Det finns tre typer av paket som kan exporteras: användarpaket, plattformspaket
 
 Beskrivningen av ett datapaket är ett strukturerat XML-dokument som överensstämmer med grammatiken i **xrk:navtree** dataschema.
 
-Exempel på datapaket:
+Exempel:
 
 ```
 <package>
@@ -81,7 +82,7 @@ I det här exemplet har kopplingarna på länkarna &quot;mapp&quot; och &quot;f�
 </recipient>
 ```
 
-The **`operation`** -attribut med värdet &quot;none&quot; definierar en avstämningslänk.
+The **`operation`** -attribut med värdet none definierar en avstämningslänk.
 
 Ett datapaket kan skapas manuellt från valfri textredigerare. Se bara till att XML-dokumentets struktur överensstämmer med dataschemat &quot;xtk:navtree&quot;. Adobe Campaign-konsolen har en export- och importmodul för datapaket.
 
@@ -111,7 +112,7 @@ För de tre typerna av paket innehåller guiden följande steg:
 
    >[!CAUTION]
    >
-   >Om du exporterar en **[!UICONTROL Offer category]**, **[!UICONTROL Offer environment]**, **[!UICONTROL Program]** eller **[!UICONTROL Plan]** typmapp, välj aldrig **xtk:mapp** eftersom vissa data kan gå förlorade. Välj den enhet som motsvarar mappen: **nms:offerCategory** för erbjudandekategorier, **nms:offerEnv** för olika erbjudandemiljöer, **nms:program** för program, och **nms:plan** för planer.
+   >Om du exporterar en **[!UICONTROL Offer category]**, **[!UICONTROL Offer environment]**, **[!UICONTROL Program]** eller **[!UICONTROL Plan]** typmapp, välj aldrig **xtk:mapp** eftersom vissa data kan gå förlorade. Välj den enhet som motsvarar mappen: **nms:offerCategory** för erbjudandekategorier, **nms:offerEnv** för olika erbjudandemiljöer **nms:program** för program, och **nms:plan** för planer.
 
    Med listhantering kan du lägga till eller ta bort enheter för export från konfigurationen. Klicka **[!UICONTROL Add]** för att välja en ny enhet.
 
@@ -158,7 +159,7 @@ Den här mekanismen definieras av två regler:
 
 #### Exportera en kampanj {#exporting-a-campaign}
 
-Här är ett exempel på hur du exporterar en kampanj. Marknadsföringskampanjen som ska exporteras innehåller en aktivitet (etikett: &quot;MyTask&quot;) och ett arbetsflöde (etikett: &quot;CampaignWorkflow&quot;) i mappen &quot;MyWorkflow&quot; (nod: Administration / produktion / Tekniska arbetsflöden / Kampanjprocesser / MittArbetsflöde).
+Här är ett exempel på hur du exporterar en kampanj. Marknadsföringskampanjen som ska exporteras innehåller en aktivitet (etikett:&quot;MyTask&quot;) och ett arbetsflöde (etikett:&quot;CampaignWorkflow&quot;) i en&quot;MyWorkflow&quot;-mapp (nod: Administration / Produktion / Tekniska arbetsflöden / Kampanjprocesser / MyWorkflow).
 
 Uppgiften och arbetsflödet exporteras i samma paket som kampanjen eftersom matchande scheman kopplas samman med länkar med en egen typ av integritet.
 
@@ -217,7 +218,7 @@ template="xtk:folder" pkgAdmin="@id != 0">
 Slutligen **@pkgStatus** Med -attribut kan du definiera exportregler för dessa element eller attribut. Beroende på attributets värde finns elementet eller attributet i det exporterade paketet. De tre möjliga värdena för det här attributet är:
 
 * **aldrig**: exporterar inte fältet/länken
-* **alltid**: tvingar export för det här fältet
+* **alltid**: Tvingar fram export för detta fält
 * **preCreate**: tillåter skapande av den länkade entiteten
 
 >[!NOTE]
@@ -239,7 +240,7 @@ Med paketdefinitioner kan du skapa en paketstruktur där du lägger till entitet
 
 Paketdefinitioner kan nås via **[!UICONTROL Administration > Configuration > Package management > Package definitions]** -menyn.
 
-Om du vill skapa en paketdefinition klickar du på **[!UICONTROL New]** och sedan fylla i den allmänna paketdefinitionsinformationen.
+Skapa en paketdefinition genom att klicka på **[!UICONTROL New]** och sedan fylla i den allmänna paketdefinitionsinformationen.
 
 ![](assets/packagedefinition_create.png)
 
@@ -273,29 +274,29 @@ Enheter kan läggas till i en paketdefinition direkt från sin plats i instansen
 
 ### Konfigurera generering av paketdefinitioner {#configuring-package-definitions-generation}
 
-Paketgenerering kan konfigureras från paketdefinitionen **[!UICONTROL Content]** -fliken. Om du vill göra det klickar du på **[!UICONTROL Generation parameters]** länk.
+Paketgenerering kan konfigureras från paketdefinitionen **[!UICONTROL Content]** -fliken. Klicka på **[!UICONTROL Generation parameters]** länk.
 
 ![](assets/packagedefinition_generationparameters.png)
 
 * **[!UICONTROL Include the definition]**: innehåller den definition som för närvarande används i paketdefinitionen.
-* **[!UICONTROL Include an installation script]**: I kan du lägga till ett javascript-skript som ska köras vid paketimporten. När du väljer det här alternativet **[!UICONTROL Script]** läggs till på paketdefinitionsskärmen.
-* **[!UICONTROL Include default values]**: lägger till värdena för alla entiteters attribut i paketet.
+* **[!UICONTROL Include an installation script]**: gör att du kan lägga till ett javascript-skript som ska köras vid paketimporten. När du väljer det här alternativet **[!UICONTROL Script]** läggs till på paketdefinitionsskärmen.
+* **[!UICONTROL Include default values]**: lägger till värdena för alla entiteternas attribut i paketet.
 
-   Det här alternativet är inte markerat som standard för att undvika långa exporter. Det innebär att entiteternas attribut med standardvärden (tom sträng, 0 och false om de inte definieras på annat sätt i schemat) inte läggs till i paketet och därför inte exporteras.
+  Det här alternativet är inte markerat som standard för att undvika långa exporter. Det innebär att entiteternas attribut med standardvärden (tom sträng, 0 och false om de inte definieras på annat sätt i schemat) inte läggs till i paketet och därför inte exporteras.
 
-   >[!CAUTION]
-   >
-   >Om du avmarkerar det här alternativet kan lokala och importerade versioner sammanfogas.
-   >
-   >Om instansen som paketet importeras till innehåller entiteter som är identiska med de i paketet (till exempel med samma externa ID) uppdateras inte deras attribut. Detta kan inträffa om attributen från den tidigare instansen har standardvärden eftersom de inte ingår i paketet.
-   >
-   >I så fall väljer du **[!UICONTROL Include default values]** kan förhindra att versioner sammanfogas, eftersom alla attribut från den tidigare instansen exporteras med paketet.
+  >[!CAUTION]
+  >
+  >Om du avmarkerar det här alternativet kan lokala och importerade versioner sammanfogas.
+  >
+  >Om instansen som paketet importeras till innehåller entiteter som är identiska med de i paketet (till exempel med samma externa ID) uppdateras inte deras attribut. Detta kan inträffa om attributen från den tidigare instansen har standardvärden eftersom de inte ingår i paketet.
+  >
+  >I så fall väljer du **[!UICONTROL Include default values]** kan förhindra att versioner sammanfogas, eftersom alla attribut från den tidigare instansen exporteras med paketet.
 
 ### Exportera paket från en paketdefinition {#exporting-packages-from-a-package-definition}
 
 Om du vill exportera ett paket från en paketdefinition följer du stegen nedan:
 
-1. Välj den paketdefinition som ska exporteras och klicka sedan på **[!UICONTROL Actions]** och markera **[!UICONTROL Export the package]**.
+1. Välj den paketdefinition som ska exporteras och klicka sedan på **[!UICONTROL Actions]** knapp och markera **[!UICONTROL Export the package]**.
 1. En XML-fil som motsvarar det exporterade paketet markeras som standard. Det namnges enligt paketdefinitionens namnutrymme och namn.
 1. När paketnamnet och platsen har definierats klickar du på **[!UICONTROL Start]** för att starta exporten.
 
@@ -388,7 +389,7 @@ Detta paket är inte obligatoriskt. Ibland kan det vara användbart att skapa en
 
 När en funktion har konfigurerats kan den exporteras till en annan miljö. Paketet kan till exempel exporteras från en utvecklingsmiljö till en testmiljö. I det här testet avslöjas en defekt. Först måste den korrigeras i utvecklingsmiljön. Sedan ska plåstret appliceras på testplattformen.
 
-Den första lösningen är att exportera hela funktionen igen. Men för att undvika risker (uppdatera oönskade element) är det säkrare att ha ett paket som bara innehåller korrigeringen.
+Den första lösningen skulle vara att exportera hela funktionen igen. Men för att undvika risker (uppdatera oönskade element) är det säkrare att ha ett paket som bara innehåller korrigeringen.
 
 Därför rekommenderar vi att du skapar ett uppdateringspaket som bara innehåller en enhetstyp av funktionen.
 
@@ -400,8 +401,8 @@ Nu när typerna är definierade bör vi ange en namnkonvention. Adobe Campaign t
 
 * Enhet: från 1 till 99
 * Funktion: från 100 till 199
-* Campaign: från 200 till 299
-* Uppdatering: från 5000 till 5999
+* Kampanj: från 200 till 299
+* Uppdatering: från 5 000 till 5 999
 
 ### Paket {#data-packages}
 
@@ -423,7 +424,7 @@ För att underlätta importen bör entitetspaketen sorteras när de importeras. 
 
 #### Package 200 {#package-200}
 
-Paketnummer 200 ska inte användas för en viss kampanj: det här numret kommer att användas för att uppdatera något som gäller alla kampanjer.
+Paketnumret 200 ska inte användas för en viss kampanj: det här numret används för att uppdatera något som gäller alla kampanjer.
 
 #### Uppdatera paket {#update-package}
 
@@ -434,7 +435,7 @@ Den sista punkten gäller uppdateringspaketnumreringen. Det är ditt paketnummer
 
 Uppdateringspaketet ska bara innehålla en specifik entitet för att vara enkelt att återanvända. Om du vill dela upp dem lägger du till ett nytt nummer (börja från 1). Det finns inga särskilda beställningsregler för dessa paket. Tänk dig att vi har en 101-funktion, en social tillämpning:
 * Den innehåller en webApp och ett externt konto.
-   * Paketetiketten är: 101 - Social tillämpning (socialApplication).
+   * Paketetiketten är: 101 - Socialt program (socialApplication).
 * Det finns en defekt i webApp.
    * The wepApp is correction.
    * Ett korrigeringspaket måste skapas med följande namn: 5101 - 1 - Webbapp för sociala program (socialApplication_webApp).
@@ -442,7 +443,7 @@ Uppdateringspaketet ska bara innehålla en specifik entitet för att vara enkelt
    * Ett externt konto skapas.
    * Det nya paketet är: 5101 - 2 - externt konto för sociala program (socialApplication_extAccount).
    * Parallellt uppdateras 101-paketet för att läggas till det externa kontot, men det distribueras inte.
-      ![](assets/ncs_datapackage_best-practices-1.png)
+     ![](assets/ncs_datapackage_best-practices-1.png)
 
 #### Paketdokumentation {#package-documentation}
 

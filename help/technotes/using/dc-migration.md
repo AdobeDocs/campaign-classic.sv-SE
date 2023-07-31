@@ -2,14 +2,14 @@
 product: campaign
 title: Migrering till Public Cloud
 description: Läs mer om migrering av Campaign Classic till Public Cloud
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
-feature: Overview
+badge-v7-only: label="v7" type="Informative" tooltip="Gäller endast Campaign Classic v7"
+feature: Technote, Upgrade
 role: User
 level: Beginner
 exl-id: 2b282221-d048-4f6e-b52e-f8e584af2c0e
-source-git-commit: a119378e4285d3258a9b4f1f68c0b625264e5d37
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '1533'
+source-wordcount: '1540'
 ht-degree: 2%
 
 ---
@@ -24,13 +24,13 @@ Som värdefull kund hos Adobe Campaign Classic vill vi ge dig den bästa uppleve
 
 Det här programmet har tre huvudmål:
 
-* Som åtgärdar identifierade säkerhetsluckor genom att flytta infrastruktur till en säker och modern miljö (AWS).
+* Som åtgärdar identifierade säkerhetsproblem genom att flytta infrastruktur till en säker och modern miljö (AWS).
 * Eliminera potentiellt krångliga skalningsprocesser, ge tillgång till våra [Förbättrade MTA:er](../../delivery/using//sending-with-enhanced-mta.md) och förbättra alla underhållsnivåer.
 * Förbered din instans för Adobe Campaign Classic framtid, inklusive fler automatiserade, regelbundna uppgraderingar som inte kräver så mycket resurser eller så mycket tid som möjligt.
 
 ### Ordlista
 
-* **Bygg uppgradering** - När Adobe Campaign Classic-programvaran uppdateras till det senaste säkra versionsnumret, men ändå ligger kvar på samma större/mindre nivå. Till exempel: Campaign v7 20.2.3 build 9182 to Campaign v7 21.2.5 build 9188. [Läs mer](../../platform/using/faq-build-upgrade.md).
+* **Bygg uppgradering** - När Adobe Campaign Classic-programvaran uppdateras till det senaste säkra versionsnumret, men ändå ligger kvar på samma större/mindre nivå. Exempel: Campaign v7 20.2.3 build 9182 to Campaign v7 21.2.5 build 9188. [Läs mer](../../platform/using/faq-build-upgrade.md).
 * **MID/RT** - Meddelandekörningsservrar på Adobe Cloud (MID för batchkampanjer och RT för enhetsmeddelanden i realtid)
 * **Årsvis uppgraderingsprogram** - det här programmet ger förbättrad säkerhet, förbättrad support, förbättrat underhåll och stabilitet. Det underlättar också framtida uppgraderingar och ger tillgång till nya funktioner i Campaign.  [Läs mer](../../rn/using/rn-overview.md#yearly-upgrade).
 * **AWS** - Amazon Web Services (Amazon Public Cloud)
@@ -91,7 +91,7 @@ Adobe planerar att avveckla det gamla datacentret. Adobe Campaign-instanser som 
 
 Detta är en viktig väg framåt eftersom din nuvarande plats kan exponeras för **säkerhets- och prestandaproblem**.
 
-Dessutom är migreringen nu en **en förutsättning för framtida uppgraderingar** av din Adobe Campaign. Uppgradering av bygge är inte längre möjligt i äldre datacenter.
+Dessutom är migreringen nu en **en förutsättning för framtida bygguppgraderingar** av din Adobe Campaign. Uppgradering av bygge är inte längre möjligt i äldre datacenter.
 
 Adobe vill skydda era data och få er på rätt spår inför Adobe Campaign framtid. Vi behöver ert partnerskap för att göra det till en gemensam framgång!
 
@@ -144,7 +144,7 @@ Befintliga Campaign-servrar (behållare) kommer att flyttas till Public Cloud (A
 
 **Servernamn**
 
-Under de underdomäner som används för marknadsföringskommunikation: kommer att förbli desamma. Beroende på implementeringen kan det dock behövas åtgärder på klientsidan:
+Inom de underdomäner som används för marknadsföringskommunikation kommer detta att förbli detsamma. Beroende på implementeringen kan det dock behövas åtgärder på klientsidan:
 
 * Vid delegering till underdomäner (normalt fall) kommer Adobe att ta hand om alla ändringar och säkerställa en smidig övergång
 * Vid CNAME-installation (undantag) ombeds klienten att implementera ändringar. Samordning med Adobe kommer att behövas.
@@ -186,7 +186,7 @@ Vi rekommenderar att alla körningar pausas långsammare och idealiskt precis in
 
 **Under migreringen**
 
-När migreringen sker är det bara en tjänst som fungerar: omdirigering av e-postlänkar. Mottagarna kommer med andra ord att kunna nå landningssidan när de klickar i ett e-postmeddelande. Dessa klick spelas dock inte in, så klickfrekvensen för leveranser som påbörjades kort innan migreringen är lägre än normalt.
+Medan migreringen sker kommer endast en tjänst att förbli funktionell: omdirigering av e-postlänkar. Mottagarna kommer med andra ord att kunna nå landningssidan när de klickar i ett e-postmeddelande. Dessa klick spelas dock inte in, så klickfrekvenserna för leveranser som påbörjades kort innan migreringen blir lägre än normalt.
 
 **Starta om**
 

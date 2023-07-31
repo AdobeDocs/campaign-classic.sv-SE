@@ -2,16 +2,17 @@
 product: campaign
 title: Konfigurera IMS
 description: Lär dig ansluta via en Adobe ID
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
+feature: Configuration
+badge-v7: label="v7" type="Informative" tooltip="Gäller Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Gäller även Campaign v8"
 audience: integrations
 content-type: reference
 topic-tags: connecting-via-an-adobe-id
 exl-id: b70ca220-1c81-4b23-b07a-a2cd694877fe
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '345'
-ht-degree: 4%
+source-wordcount: '357'
+ht-degree: 5%
 
 ---
 
@@ -21,7 +22,7 @@ ht-degree: 4%
 
 >[!IMPORTANT]
 >
->Implementeringen av Adobe IMS är strikt förbehållen de tekniska administratörerna på Adobe. Kontakta din Adobe-chef för att starta implementeringsprocessen.
+>Implementeringen av Adobe IMS är strikt förbehållen de tekniska administratörerna på Adobe. Kontakta Adobe för att starta implementeringsprocessen.
 
 ## Förhandskrav {#prerequisites}
 
@@ -58,13 +59,13 @@ Ange följande information:
 
 * Anslutningsinformation för den IMS-server som används (ID och hemlighet). Denna information tillhandahålls av Adobe support. Mer information finns i [Frågor och svar för Adobe Experience Cloud-administratörer](https://experienceleague.adobe.com/docs/core-services/interface/manage-users-and-products/faq.html).
 
-   The **[!UICONTROL Callback server]** adressen måste anges i **https**. Det här fältet motsvarar åtkomst-URL:en för din Adobe Campaign-instans.
+  The **[!UICONTROL Callback server]** adressen måste anges i **https**. Det här fältet motsvarar åtkomst-URL:en för din Adobe Campaign-instans.
 
-* Organisations-ID: för att hitta ditt organisations-ID, se [den här sidan](https://experienceleague.adobe.com/docs/core-services/interface/administration/organizations.html?lang=sv){_blank}.
+* Organisations-ID: om du vill hitta ditt organisations-ID, se [den här sidan](https://experienceleague.adobe.com/docs/core-services/interface/administration/organizations.html?lang=sv){_blank}.
 * Associationsmask: I det här fältet kan du definiera syntaxen som gör att konfigurationsnamnen i Enterprise Dashboard kan synkroniseras med grupperna i Adobe Campaign. Om du använder syntaxen&quot;Campaign - tenant_id - (.&#42;)&quot; länkas säkerhetsgruppen som skapas i Adobe Campaign till konfigurationsnamnet Campaign - tenant_id - internal_name i Enterprise Dashboard.
 
-   >[!CAUTION]
-   >
-   >Kopplingsmasken är nödvändig för att anslutningen via Adobe ID ska fungera korrekt.
+  >[!CAUTION]
+  >
+  >Kopplingsmasken är nödvändig för att anslutningen via Adobe ID ska fungera korrekt.
 
 * Adobe Experience Cloud anslutningsinformation, särskilt namnet på Adobe Experience Cloud-klienten.

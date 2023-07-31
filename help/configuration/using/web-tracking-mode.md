@@ -2,12 +2,13 @@
 product: campaign
 title: Läge för webbspårning
 description: Lär dig välja webbspårningsläge
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+feature: Instance Settings
+badge-v7-only: label="v7" type="Informative" tooltip="Gäller endast Campaign Classic v7"
 exl-id: b0f30c1f-cdc9-4ad2-8a6c-19d5aae4feb3
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '681'
-ht-degree: 0%
+source-wordcount: '688'
+ht-degree: 1%
 
 ---
 
@@ -17,7 +18,7 @@ ht-degree: 0%
 
 I Adobe Campaign kan du välja ett webbspårningsläge som definierar hur spårningsloggar bearbetas i programmet.
 
-Det finns tre tillgängliga spårningslägen: **&quot;Sessionsspårning&quot;**,**&quot;Permanent spårning&quot;** och **&quot;Anonym spårning&quot;**.
+Det finns tre tillgängliga spårningslägen för webben: **Sessionsspårning**,**&quot;Permanent spårning&quot;** och **&quot;Anonym spårning&quot;**.
 
 ![](assets/s_ncs_install_deployment_wiz_tracking_mode.png)
 
@@ -73,7 +74,7 @@ Det här läget är kostsamt när det gäller beräkning vid loggavstämning.
 
 **Egenskaper för det anonyma webbspårningsläget:**
 
-I det här webbspårningsläget kan du hämta en spårningslogg som är länkad till anonym surfning i Adobe Campaign. En spårningslogg skapas automatiskt för varje klick på en spårad URL. Den här loggen har bara värdet uuid230. Under en marknadsföringskampanj skapas en spårningslogg automatiskt med all identifieringsinformation (se sessionsspårning). Adobe Campaign söker automatiskt i tidigare loggar efter ett uuid230-värde som är lika med värdet från spårningsloggen för den här marknadsföringskampanjen. Om identiska värden hittas, anges alla tidigare spårningsloggar tillsammans med all information från spårningsloggen för marknadsföringskampanjer.
+I det här webbspårningsläget kan du hämta en spårningslogg länkad till anonym surfning i Adobe Campaign. En spårningslogg skapas automatiskt för varje klick på en spårad URL. Den här loggen har bara värdet uuid230. Under en marknadsföringskampanj skapas en loggbok automatiskt med all identifieringsinformation (se sessionsspårning). Adobe Campaign söker automatiskt i tidigare loggar efter ett uuid230-värde som är lika med värdet från spårningsloggen för den här marknadsföringskampanjen. Om identiska värden hittas, anges alla tidigare spårningsloggar tillsammans med all information från spårningsloggen för marknadsföringskampanjer.
 
 Det här läget är det mest kostsamma när det gäller beräkning och volym.
 

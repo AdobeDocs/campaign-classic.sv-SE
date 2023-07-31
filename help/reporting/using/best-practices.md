@@ -2,12 +2,12 @@
 product: campaign
 title: Bästa praxis för rapportering
 description: Bästa praxis för kampanjrapportering
+feature: Reporting, Monitoring
 badge: label="v7" type="Informative" tooltip="Gäller endast Campaign Classic v7"
-feature: Reporting
 exl-id: 0c7f00f3-b16d-41c5-a7b1-f5a59201bf8c
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '852'
+source-wordcount: '848'
 ht-degree: 0%
 
 ---
@@ -24,7 +24,7 @@ Om du vill optimera framtagningen, användningen och varaktigheten av en rapport
 
 1. Identifiera behovet
 
-   Det första steget är att tydligt identifiera behovet av vad du vill visa i rapporten och vad målet är (övervakning, analys, dataexport osv.).
+   Det första steget är att tydligt identifiera behovet: vad du vill visa i din rapport och vad målet är (övervakning, analys, dataexport osv.).
 
    Adobe Campaign har ett stort antal rapporttjänster. Det är viktigt att analysera behovet av att identifiera den lämpligaste funktionen.
 
@@ -55,11 +55,11 @@ Om du vill optimera framtagningen, användningen och varaktigheten av en rapport
 
 1. Definiera innehållet
 
-   Sedan måste du ta reda på vilken typ av data du vill visa: leveransindikatorer, rapporter om databasprofiler osv.
+   Sedan måste ni ta reda på vilken typ av data ni vill visa: leveransindikatorer, rapporter om databasprofiler, osv.
 
-   Du måste också känna till vilken typ av data det är (enkel, som är resultatet av en beräkning, signifikant osv.), dess plats (i Adobe Campaign, i ett tredjepartssystem), dess uppdateringsfrekvens för att definiera beräkningsfrekvensen (varje dag, varje vecka, varje gång) samt dess volym.
+   Du måste också känna till vilken typ av data det är (enkel, som ett resultat av en beräkning, signifikant osv.), dess plats (i Adobe Campaign, i ett tredjepartssystem), dess uppdateringsfrekvens för att definiera beräkningsfrekvensen (varje dag, varje vecka, varje gång) samt dess volym.
 
-   De problem som är kopplade till datavolymer och uppdateringar måste undersökas noggrant för att undvika problem med rapportvisningen, särskilt i fråga om tid. Därför rekommenderar vi att man skapar aggregat för att förberäkna vissa data utanför rapporten. Tabeller som innehåller spårnings- och leveransloggar kan innehålla miljontals poster: Detta innebär att data måste aggregeras via ett arbetsflöde för att användas i en rapport.
+   De problem som är kopplade till datavolymer och uppdateringar måste undersökas noggrant för att undvika problem med rapportvisningen, särskilt i fråga om tid. Därför rekommenderar vi att man skapar aggregat för att förberäkna vissa data utanför rapporten. Tabeller som innehåller spårnings- och leveransloggar kan innehålla miljontals poster: det innebär att data måste samlas in via ett arbetsflöde för att användas i en rapport.
 
 ## Optimera rapportdesign{#optimizing-report-creation}
 
@@ -71,7 +71,7 @@ Namn:
 
 * Beräkningstiden för en rapport får inte överstiga 5 minuter.
 
-   På samma sätt måste beräkningsmetoderna ändras under designfasen, med en liten datavolym, om rapportberäkningen överstiger 60 sekunder.
+  På samma sätt måste beräkningsmetoderna ändras under designfasen, med en liten datavolym, om rapportberäkningen överstiger 60 sekunder.
 
 * Rapporteringsdata får inte överstiga 10 miljoner rader när modulen Marketing Analytics används.
 
@@ -89,7 +89,7 @@ I det här fallet bör följande syntax användas:
 if(string(ctx@_historyId)!==""))
 ```
 
-Frågor som gör att du kan samla in de data som visas i rapporterna får inte vara för komplexa, särskilt om de tillämpas på alla data i databasen. Om du vill förbättra prestandan kan det vara praktiskt att filtrera data innan du kör följande frågor: Detta innebär att beräkningen endast gäller en del av uppgifterna.
+Frågor som gör att du kan samla in de data som visas i rapporterna får inte vara för komplexa, särskilt om de tillämpas på alla data i databasen. För att förbättra prestandan kan det vara användbart att filtrera data innan du kör dessa frågor: detta innebär att beräkningen endast gäller en del av data.
 
 ### Prestanda {#performances}
 
@@ -97,19 +97,19 @@ Med rekommendationerna ovan kan du optimera rapportberäkningen.
 
 Dessutom rekommenderar Adobe Campaign följande förbättringar:
 
-* Arbeta med din datamodell: indexerade fält måste huvudsakligen användas för att förbättra beräkningsformler.
+* Arbeta med datamodellen: indexerade fält måste huvudsakligen användas för att förbättra beräkningsformler.
 
-   Om du snabbt vill hitta ett indexerat fält ska du titta på namnet på kolumnen i Adobe Campaign-gränssnittet: sorteringspilen stryks under med rött om fältet är indexerat.
+  Om du snabbt vill hitta ett indexerat fält ska du titta på namnet på kolumnen i Adobe Campaign-gränssnittet: sorteringspilen är röd om fältet är indexerat.
 
-   Mer information om index finns i [det här avsnittet](../../configuration/using/data-model-best-practices.md#indexes).
+  Mer information om index finns i [det här avsnittet](../../configuration/using/data-model-best-practices.md#indexes).
 
-* Se till att rapporten är skalbar: datavolymen kan öka betydligt med tiden.
+* Se till att rapporten är skalbar: datavolymen kan öka avsevärt över tiden.
 
-   På samma sätt kan mängden data som manipuleras under testfaserna skilja sig från den faktiska datavolymen i produktionen. Därför är testfaserna viktiga.
+  På samma sätt kan mängden data som manipuleras under testfaserna skilja sig från den faktiska datavolymen i produktionen. Därför är testfaserna viktiga.
 
-   Slutligen måste förseningar i samband med datarensning vara kända och vid behov anpassas för att underlätta datahanteringen.
+  Slutligen måste förseningar i samband med datarensning vara kända och vid behov anpassas för att underlätta datahanteringen.
 
-   Mer information om rensning och datalagring finns i [det här avsnittet](../../configuration/using/data-model-best-practices.md#data-retention).
+  Mer information om rensning och datalagring finns i [det här avsnittet](../../configuration/using/data-model-best-practices.md#data-retention).
 
 ### Exportera rapporter {#exporting-reports}
 

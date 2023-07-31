@@ -2,12 +2,12 @@
 product: campaign
 title: Fråga med många-till-många-relation
 description: Lär dig hur du utför frågor med hjälp av en många-till-många-relation
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
-feature: Query Editor
+badge-v7-only: label="v7" type="Informative" tooltip="Gäller endast Campaign Classic v7"
+feature: Query Editor, Workflows
 exl-id: e1d40ba1-2493-45c1-bd54-af9cb332028d
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '385'
+source-wordcount: '392'
 ht-degree: 0%
 
 ---
@@ -16,21 +16,21 @@ ht-degree: 0%
 
 
 
-I det här exemplet vill vi återställa mottagare som inte har kontaktats under de senaste 7 dagarna. Den här frågan gäller alla leveranser.
+I det här exemplet vill vi återställa mottagare som inte har kontaktats under de senaste 7 dagarna. Frågan gäller alla leveranser.
 
 I det här exemplet visas även hur du konfigurerar ett filter som är relaterat till valet av ett samlingselement (eller en orange nod). Samlingselement är tillgängliga i **[!UICONTROL Field to select]** -fönstret.
 
 * Vilken tabell måste markeras?
 
-   Mottagartabellen (**nms:mottagare**)
+  Mottagartabellen (**nms:mottagare**)
 
 * Fält som ska markeras för utdatakolumnen
 
-   Primär nyckel, efternamn, förnamn och e-postadress
+  Primär nyckel, efternamn, förnamn och e-postadress
 
 * Baserat på vilka kriterier är den information som filtreras
 
-   Baserat på leveransloggarna för mottagare som går tillbaka 7 dagar före idag
+  Baserat på leveransloggarna för mottagare som går tillbaka 7 dagar före idag
 
 Använd följande steg:
 
@@ -48,21 +48,21 @@ Använd följande steg:
 
    * Börja med att välja **[!UICONTROL Recipient delivery logs (broadlog)]** samlingselement (orange nod) för den första **[!UICONTROL Value]** kolumn.
 
-      ![](assets/query_editor_nveau_67.png)
+     ![](assets/query_editor_nveau_67.png)
 
-      Välj **[!UICONTROL do not exist as]** -operator. Du behöver inte välja ett andra värde på den här raden.
+     Välj **[!UICONTROL do not exist as]** -operator. Du behöver inte välja ett andra värde på den här raden.
 
    * Innehållet i det andra filtervillkoret beror på det första. Här är **[!UICONTROL Event date]** -fältet visas direkt i **[!UICONTROL Recipient delivery logs]** eftersom det finns en länk till den här tabellen.
 
-      ![](assets/query_editor_nveau_36.png)
+     ![](assets/query_editor_nveau_36.png)
 
-      Välj **[!UICONTROL Event date]** med **[!UICONTROL greater than or equal to]** -operator. Välj **[!UICONTROL DaysAgo (7)]** värde. Det gör du genom att klicka **[!UICONTROL Edit expression]** i **[!UICONTROL Value]** fält. I **[!UICONTROL Formula type]** fönster, markera **[!UICONTROL Process on dates]** och **[!UICONTROL Current date minus n days]**, som ger&quot;7&quot; som värde.
+     Välj **[!UICONTROL Event date]** med **[!UICONTROL greater than or equal to]** -operator. Välj **[!UICONTROL DaysAgo (7)]** värde. Det gör du genom att klicka **[!UICONTROL Edit expression]** i **[!UICONTROL Value]** fält. I **[!UICONTROL Formula type]** fönster, markera **[!UICONTROL Process on dates]** och **[!UICONTROL Current date minus n days]**, som ger&quot;7&quot; som värde.
 
-      ![](assets/query_editor_nveau_37.png)
+     ![](assets/query_editor_nveau_37.png)
 
-      Filtervillkoret har konfigurerats.
+     Filtervillkoret har konfigurerats.
 
-      ![](assets/query_editor_nveau_38.png)
+     ![](assets/query_editor_nveau_38.png)
 
 1. I **[!UICONTROL Data formatting]** växlar du efternamnen till versaler. Klicka på **[!UICONTROL Last name]** rad i **[!UICONTROL Transformation]** kolumn och markera **[!UICONTROL Switch to upper case]** i listrutan.
 

@@ -2,14 +2,15 @@
 product: campaign
 title: Händelsebeskrivning
 description: Läs om hur transaktionsmeddelandehändelser hanteras i Adobe Campaign Classic med SOAP-metoder
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+feature: Transactional Messaging, Message Center
+badge-v7-only: label="v7" type="Informative" tooltip="Gäller endast Campaign Classic v7"
 audience: message-center
 content-type: reference
 topic-tags: introduction
 exl-id: 9f7f4b6c-2ee8-4091-847d-f616d6abeb6b
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '761'
+source-wordcount: '768'
 ht-degree: 0%
 
 ---
@@ -80,7 +81,7 @@ Exempel med PushEvent:
 
 >[!NOTE]
 >
->Vid en anrop till **PushEvents** måste vi lägga till ett överordnat XML-element för att följa standard-XML. Det här XML-elementet kommer att rama in de olika **`<rtevent>`** -element i händelsen.
+>Vid en anrop till **PushEvents** måste vi lägga till ett överordnat XML-element för att följa standard-XML. Detta XML-element kommer att rama in de olika **`<rtevent>`** -element i händelsen.
 
 Exempel med PushEvents:
 
@@ -120,7 +121,7 @@ De obligatoriska attributen för **`<rtevent>`** och **`<batchevent>`** elemente
 <rtEvent type="order_confirmation" email="john.doe@domain.com" origin="eCommerce" wishedChannel="0" externalId="1242" mobilePhone="+33620202020"> 
 ```
 
-I det här exemplet finns två kanaler: e-postadressen och mobiltelefonnumret. The **requestedChannel** gör att du kan välja den kanal som du vill använda när du omvandlar händelsen till ett meddelande. Värdet &quot;0&quot; motsvarar e-postkanalen, värdet &quot;1&quot; till mobilkanalen osv.
+I det här exemplet finns det två kanaler: e-postadressen och mobiltelefonnumret. The **requestedChannel** gör att du kan välja den kanal som du vill använda när du omvandlar händelsen till ett meddelande. Värdet &quot;0&quot; motsvarar e-postkanalen, värdet &quot;1&quot; till mobilkanalen osv.
 
 Om du vill skjuta upp en leverans av en händelse lägger du till **[!UICONTROL scheduled]** följt av önskat datum. Händelsen omvandlas till ett meddelande det här datumet.
 
@@ -167,15 +168,15 @@ När Adobe Campaign tar emot en händelse genereras ett unikt retur-ID. Detta ä
 
 * Exempel på en identifierare som returneras av metoden när händelsebearbetningen lyckas:
 
-   ```
-   <SOAP-ENV:Envelope xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ns="http://xml.apache.org/xml-soap" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
-      <SOAP-ENV:Body>
-         <urn:PushEventResponse SOAP-ENV:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" xmlns:urn="urn:nms:rtEvent">
-            <plId xsi:type="xsd:long">72057594037935966</plId>
-         </urn:PushEventResponse>
-      </SOAP-ENV:Body>
-   </SOAP-ENV:Envelope>
-   ```
+  ```
+  <SOAP-ENV:Envelope xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ns="http://xml.apache.org/xml-soap" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
+     <SOAP-ENV:Body>
+        <urn:PushEventResponse SOAP-ENV:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" xmlns:urn="urn:nms:rtEvent">
+           <plId xsi:type="xsd:long">72057594037935966</plId>
+        </urn:PushEventResponse>
+     </SOAP-ENV:Body>
+  </SOAP-ENV:Envelope>
+  ```
 
 Om värdet för returidentifieraren är strikt större än noll betyder det att händelsen har arkiverats i Adobe Campaign.
 
@@ -183,51 +184,51 @@ Om händelsen inte kan bearbetas returnerar metoden ett felmeddelande eller ett 
 
 * Bearbetningsexempel på en händelse som misslyckades när frågan inte innehåller någon inloggning eller när den angivna operatorn inte har de nödvändiga rättigheterna:
 
-   ```
-   <SOAP-ENV:Envelope xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
-      <SOAP-ENV:Body>
-         <SOAP-ENV:Fault>
-            <faultcode>SOAP-ENV:Client</faultcode>
-            <faultstring xsi:type="xsd:string">Error while reading parameters of method 'PushEvent' of service 'nms:rtEvent'.</faultstring>
-            <detail xsi:type="xsd:string">Invalid login or password. Connection denied.</detail>
-         </SOAP-ENV:Fault>
-      </SOAP-ENV:Body>
-   </SOAP-ENV:Envelope>
-   ```
+  ```
+  <SOAP-ENV:Envelope xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
+     <SOAP-ENV:Body>
+        <SOAP-ENV:Fault>
+           <faultcode>SOAP-ENV:Client</faultcode>
+           <faultstring xsi:type="xsd:string">Error while reading parameters of method 'PushEvent' of service 'nms:rtEvent'.</faultstring>
+           <detail xsi:type="xsd:string">Invalid login or password. Connection denied.</detail>
+        </SOAP-ENV:Fault>
+     </SOAP-ENV:Body>
+  </SOAP-ENV:Envelope>
+  ```
 
 * Exempel på en händelse som misslyckades på grund av ett fel i frågan (XML-klassificeringen uppfylls inte):
 
-   ```
-   <SOAP-ENV:Envelope xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
-      <SOAP-ENV:Body>
-         <SOAP-ENV:Fault>
-            <faultcode>SOAP-ENV:Client</faultcode>
-            <faultstring xsi:type="xsd:string">The XML SOAP message is invalid (service 'PushEvent', method 'nms:rtEvent').</faultstring>
-            <detail xsi:type="xsd:string"><![CDATA[(16:8) : Expected end of tag 'rtevent'
-   Error while parsing XML string '<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:urn="urn:nms:rtEvent">
-      <soapenv:Header/>
-      <soapenv:Body>
-         <urn:PushEvent>
-            <urn:sessiontoken>mc/</urn:sessiontoken>
-            <urn:domEvent>
-   <rtevent type="create_account" email="esther.hall@adobe.com" origin="eCommerce" wishedChannel="email" 
-         externalId="1596" language="english" country="EN" emailFormat="2"
-         mobilePhone="+447700123123">
-     <ctx>
-      <website name="eCommerce" url="http://www.eCo']]></detail>
-         </SOAP-ENV:Fault>
-      </SOAP-ENV:Body>
-   </SOAP-ENV:Envelope>
-   ```
+  ```
+  <SOAP-ENV:Envelope xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
+     <SOAP-ENV:Body>
+        <SOAP-ENV:Fault>
+           <faultcode>SOAP-ENV:Client</faultcode>
+           <faultstring xsi:type="xsd:string">The XML SOAP message is invalid (service 'PushEvent', method 'nms:rtEvent').</faultstring>
+           <detail xsi:type="xsd:string"><![CDATA[(16:8) : Expected end of tag 'rtevent'
+  Error while parsing XML string '<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:urn="urn:nms:rtEvent">
+     <soapenv:Header/>
+     <soapenv:Body>
+        <urn:PushEvent>
+           <urn:sessiontoken>mc/</urn:sessiontoken>
+           <urn:domEvent>
+  <rtevent type="create_account" email="esther.hall@adobe.com" origin="eCommerce" wishedChannel="email" 
+        externalId="1596" language="english" country="EN" emailFormat="2"
+        mobilePhone="+447700123123">
+    <ctx>
+     <website name="eCommerce" url="http://www.eCo']]></detail>
+        </SOAP-ENV:Fault>
+     </SOAP-ENV:Body>
+  </SOAP-ENV:Envelope>
+  ```
 
 * Exempel på en händelse som misslyckades och returnerade en nollidentifierare (fel metodnamn):
 
-   ```
-   <SOAP-ENV:Envelope xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ns="http://xml.apache.org/xml-soap" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
-      <SOAP-ENV:Body>
-         <urn:PushEventResponse SOAP-ENV:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" xmlns:urn="urn:nms:rtEvent">
-            <plId xsi:type="xsd:long">0</plId>
-         </urn:PushEventResponse>
-      </SOAP-ENV:Body>
-   </SOAP-ENV:Envelope>
-   ```
+  ```
+  <SOAP-ENV:Envelope xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ns="http://xml.apache.org/xml-soap" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
+     <SOAP-ENV:Body>
+        <urn:PushEventResponse SOAP-ENV:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" xmlns:urn="urn:nms:rtEvent">
+           <plId xsi:type="xsd:long">0</plId>
+        </urn:PushEventResponse>
+     </SOAP-ENV:Body>
+  </SOAP-ENV:Envelope>
+  ```

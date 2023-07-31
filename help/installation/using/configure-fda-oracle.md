@@ -2,14 +2,15 @@
 product: campaign
 title: Konfigurera åtkomst till Oraclet
 description: Lär dig hur du konfigurerar åtkomst till Oraclet i FDA
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+feature: Installation, Federated Data Access
+badge-v7-only: label="v7" type="Informative" tooltip="Gäller endast Campaign Classic v7"
 audience: platform
 content-type: reference
 topic-tags: connectors
 exl-id: 320bfbb4-533b-4c45-a46f-c3c8dd68221f
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '352'
+source-wordcount: '359'
 ht-degree: 0%
 
 ---
@@ -28,13 +29,13 @@ Använd kampanj [Åtkomst till federerade data](../../installation/using/about-f
 Om du vill ansluta till en extern databas i FDA för ett Oracle krävs ytterligare konfigurationer nedan på Adobe Campaign-servern.
 
 1. Installera Oraclets fullständiga klient som motsvarar din version av Oraclet.
-1. Lägg till dina TNS-definitioner i installationen. Om du vill göra det anger du dem i en **namn.ora** i databasen /etc/oracle. Om den här databasen inte finns skapar du den.
+1. Lägg till dina TNS-definitioner i installationen. Om du vill göra det anger du dem i **namn.ora** i databasen /etc/oracle. Om den här databasen inte finns skapar du den.
 
    Skapa sedan en ny TNS_ADMIN-miljövariabel: exportera TNS_ADMIN=/etc/oracle och starta om datorn.
 
 1. Integrera Oracle med Adobe Campaign-servern (nlserver). Om du vill göra det kontrollerar du att **customer.sh** filen finns i mappen &quot;nl6&quot; i Adobe Campaign serverträdstruktur och att den innehåller länkar till Oraclena bibliotek.
 
-   Exempel: för en klient i 11.2:
+   För en klient i 11.2:
 
    ```
    export ORACLE_HOME=/usr/lib/oracle/11.2
@@ -50,18 +51,18 @@ Om du vill ansluta till en extern databas i FDA för ett Oracle krävs ytterliga
 
    * **libclntsh.so**
 
-      ```
-      cd /usr/lib/oracle/<version>/client<architecture>/lib
-      ln -s libclntsh.so.<version> libclntsh.so
-      ```
+     ```
+     cd /usr/lib/oracle/<version>/client<architecture>/lib
+     ln -s libclntsh.so.<version> libclntsh.so
+     ```
 
    * **libaio1**
 
-      ```
-      aptitude install libaio1
-      or
-      yum install libaio1
-      ```
+     ```
+     aptitude install libaio1
+     or
+     yum install libaio1
+     ```
 
 1. I Campaign Classic kan du sedan konfigurera [!DNL Oracle] externt konto. Mer information om hur du konfigurerar ditt externa konto finns i [det här avsnittet](#oracle-external).
 
@@ -69,7 +70,7 @@ Om du vill ansluta till en extern databas i FDA för ett Oracle krävs ytterliga
 
 Om du vill ansluta till en extern databas i FDA för ett Oracle krävs ytterligare konfigurationer nedan på Adobe Campaign-servern.
 
-1. Installera Oracle-klienten.
+1. Installera Oraclet client.
 
 1. Skapa en **namn.ora** som innehåller din TNS-definition.
 
@@ -91,11 +92,12 @@ The [!DNL Oracle] Med ett externt konto kan du ansluta Campaign-instansen till O
 
    * **[!UICONTROL Type]**: Oracle
 
-   * **[!UICONTROL Server]**: DNS-namn
+   * **[!UICONTROL Server]**: Namn på DNS
 
    * **[!UICONTROL Account]**: Användarens namn
 
    * **[!UICONTROL Password]**: Lösenord för användarkonto
 
-   * **[!UICONTROL Time zone]**: Tidszon för server
+   * **[!UICONTROL Time zone]**: Servertidszon
+
    ![](assets/oracle_config.png)

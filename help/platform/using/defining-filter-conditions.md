@@ -2,15 +2,16 @@
 product: campaign
 title: Definiera filtervillkor
 description: Definiera filtervillkor
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
+feature: Query Editor
+badge-v7: label="v7" type="Informative" tooltip="Gäller Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Gäller även Campaign v8"
 audience: platform
 content-type: reference
 topic-tags: creating-queries
 exl-id: b62e23e5-f1b7-44c4-82d9-95c6b3240352
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '3229'
+source-wordcount: '3241'
 ht-degree: 37%
 
 ---
@@ -44,7 +45,7 @@ Nedan finns en lista över tillgängliga operatorer:
   <tr> 
    <td> <span class="uicontrol">Greater than</span> <br /> </td> 
    <td> Returnerar ett värde som är större än det angivna värdet.<br /> </td> 
-   <td> <strong>Ålder (@age) större än 50</strong>, returnerar alla värden som är större än "50", dvs. 51, 52 osv.<br /> </td> 
+   <td> <strong>Ålder (@age) större än 50</strong>, returnerar alla värden som är större än "50", dvs. "51", "52" osv.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">Less than</span> <br /> </td> 
@@ -59,7 +60,7 @@ Nedan finns en lista över tillgängliga operatorer:
   <tr> 
    <td> <span class="uicontrol">Less than or equal to</span> <br /> </td> 
    <td> Returnerar alla värden som är lika med eller lägre än det angivna värdet.<br /> </td> 
-   <td> <strong>Ålder (@age) mindre än eller lika med '60'</strong>, returnerar alla mottagare som är 60 år eller yngre.<br /> </td> 
+   <td> <strong>Ålder (@age) mindre än eller lika med 60</strong>, returnerar alla mottagare som är 60 år eller yngre.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">Inte lika med</span> <br /> </td> 
@@ -93,7 +94,7 @@ Nedan finns en lista över tillgängliga operatorer:
   </tr> 
   <tr> 
    <td> <span class="uicontrol">Not like</span> <br /> </td> 
-   <td> Liknar <span class="uicontrol">Like</span> . Gör att du inte kan återställa det angivna värdet. Även här måste det angivna värdet innehålla jokertecknet <span class="uicontrol">%</span>.<br /> </td> 
+   <td> Liknar <span class="uicontrol">Like</span> . Du kan inte återställa det angivna värdet. Även här måste det angivna värdet innehålla jokertecknet <span class="uicontrol">%</span>.<br /> </td> 
    <td> <strong>Efternamnet (@lastName) är inte som Smi%h</strong>. Här returneras inte mottagare vars efternamn är Smi%h.<br /> </td> 
   </tr> 
   <tr> 
@@ -104,12 +105,12 @@ Nedan finns en lista över tillgängliga operatorer:
   <tr> 
    <td> <span class="uicontrol">Är inte tom</span> <br /> </td> 
    <td> Fungerar baklänges till <span class="uicontrol">Är tom</span> -operator. Du behöver inte ange data i den andra värdekolumnen.<br /> </td> 
-   <td> <strong>E-postadressen (@email) är inte tom</strong>.<br /> </td> 
+   <td> <strong>E-post (@email) är inte tom</strong>.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">Ingår i</span> <br /> </td> 
    <td> Returnerar resultat som ingår i de angivna värdena. Dessa värden måste avgränsas med kommatecken.<br /> </td> 
-   <td> <strong>Födelsedatum (@BirthDate) ingår i '12/10/1979,12/10/1984'</strong>returnerar de mottagare som är födda mellan dessa datum. <br /> </td> 
+   <td> <strong>Födelsedatum (@BirthDate) ingår i '12/10/1979,12/10/1984'</strong>, returnerar de mottagare som är födda mellan dessa datum. <br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">Ingår inte i</span> <br /> </td> 
@@ -134,17 +135,17 @@ Klicka **[!UICONTROL And]** (erbjuds som standard) och välj i listrutan.
 * **[!UICONTROL And]**: lägger till ett villkor och aktiverar överfiltrering.
 * **[!UICONTROL Or]**: lägger till ett villkor och aktiverar överfiltrering.
 
-   I följande exempel kan du söka efter mottagare vars e-postdomän innehåller &quot;orange.co.uk&quot; ELLER vars postkod börjar med &quot;NW&quot;.
+  I följande exempel kan du söka efter mottagare vars e-postdomän innehåller &quot;orange.co.uk&quot; ELLER vars postkod börjar med &quot;NW&quot;.
 
-   ![](assets/query_condition_modif_02.png)
+  ![](assets/query_condition_modif_02.png)
 
-* **[!UICONTROL Except]**: om du har två filter och den första inte returnerar något värde, skapar den här typen av länk ett undantag.
+* **[!UICONTROL Except]**: Om du har två filter och den första inte returnerar något värde, skapar den här typen av länk ett undantag.
 
-   I följande exempel vill vi returnera mottagare vars e-postdomän innehåller &quot;orange.co.uk&quot; EXCEPT om mottagarens efternamn är &quot;Smith&quot;.
+  I följande exempel vill vi returnera mottagare vars e-postdomän innehåller &quot;orange.co.uk&quot; EXCEPT om mottagarens efternamn är &quot;Smith&quot;.
 
-   ![](assets/query_condition_modif_03.png)
+  ![](assets/query_condition_modif_03.png)
 
-I det här exemplet visas ett filter som gör att du kan visa: mottagare som antingen pratar spanska, ELLER är kvinnor med mobilnummer, ELLER mottagare utan kontonummer och vars företagsnamn börjar med bokstaven&quot;N&quot;.
+I det här exemplet visas ett filter som gör att du kan visa: mottagare som antingen talar spanska, ELLER är kvinnor med mobilnummer, ELLER mottagare utan kontonummer och vars företagsnamn börjar med bokstaven&quot;N&quot;.
 
 ![](assets/query_editor_nveau_31.png)
 
@@ -155,7 +156,7 @@ I det här avsnittet beskrivs hur du prioriterar villkor tack vare de blå pilar
 * Med pilen till höger kan du lägga till en nivå med parenteser i filtret.
 * Med pilen som pekar åt vänster kan du ta bort en vald parentesnivå från filtret.
 
-   ![](assets/query_condition_modif_04.png)
+  ![](assets/query_condition_modif_04.png)
 
 * Med de lodräta pilarna kan du flytta ett villkor och på så sätt ändra deras körningssekvens.
 
@@ -179,7 +180,7 @@ Det markerade fältets detaljrikedom visas längst ned i fönstret. Till exempel
 >
 >Använd **[!UICONTROL Search]** för att hitta ett tillgängligt fält.
 
-Dubbelklicka på ett tillgängligt fält för att lägga till det i utdatakolumnerna. I slutet av frågan skapar varje markerat fält en kolumn i **[!UICONTROL Data preview]** -fönstret.
+Dubbelklicka på ett tillgängligt fält för att lägga till det i utdatakolumnerna. I slutet av frågan skapas en kolumn i **[!UICONTROL Data preview]** -fönstret.
 
 ![](assets/query_editor_nveau_01.png)
 
@@ -191,7 +192,7 @@ I följande exempel visas de avancerade fälten i mottagartabellen.
 
 ![](assets/query_editor_nveau_53.png)
 
-De olika fältkategorierna:
+De olika kategorierna av fält:
 
 <table> 
  <thead> 
@@ -266,7 +267,6 @@ Länka till en tabell och ett samlingselement:
 >* Ändra ordningen på utdatakolumnerna med hjälp av pilarna.
 >* The **[!UICONTROL Distribution of values]** används som ett sätt att visa fördelningen av värdena för det valda fältet (t.ex. fördelningar kopplade till mottagarorter, mottagarspråk osv.).
 
-
 ## Skapa beräknade fält {#creating-calculated-fields}
 
 Om det behövs lägger du till en kolumn under dataformatering. Ett beräkningsfält lägger till en kolumn i dataförhandsvisningsavsnittet. Klicka på **[!UICONTROL Add a calculated field]**.
@@ -275,27 +275,27 @@ Om det behövs lägger du till en kolumn under dataformatering. Ett beräkningsf
 
 Det finns fyra typer av beräknade fält:
 
-* **[!UICONTROL Fixed string]**: I kan du lägga till en teckensträng.
+* **[!UICONTROL Fixed string]**: gör att du kan lägga till en teckensträng.
 
-   ![](assets/query_editor_nveau_60.png)
+  ![](assets/query_editor_nveau_60.png)
 
-* **[!UICONTROL String with JavaScript tags]**: Värdet för beräkningsfältet kombinerar en teckensträng och JavaScript-direktiv.
+* **[!UICONTROL String with JavaScript tags]**: värdet för beräkningsfältet kombinerar en teckensträng och JavaScript-direktiv.
 
-   ![](assets/query_editor_nveau_61.png)
+  ![](assets/query_editor_nveau_61.png)
 
 * **[!UICONTROL JavaScript expression]**: värdet för beräkningsfältet är resultatet av en JavaScript-funktionsutvärdering. Det returnerade värdet kan skrivas in (tal, datum osv.).
 
-   ![](assets/query_editor_nveau_62.png)
+  ![](assets/query_editor_nveau_62.png)
 
 * **[!UICONTROL Enumerations]**: Med den här typen av fält kan du använda/ändra innehållet i en av utdatakolumnerna i en ny kolumn.
 
-   Det går att använda källvärdet för en kolumn och ge den ett målvärde. Det här målvärdet visas i den nya utdatakolumnen.
+  Det går att använda källvärdet för en kolumn och ge den ett målvärde. Det här målvärdet visas i den nya utdatakolumnen.
 
-   Ett exempel på hur du lägger till en beräknad fälttyp **[!UICONTROL Enumerations]** är tillgänglig, se [det här avsnittet](../../workflow/using/adding-enumeration-type-calculated-field.md).
+  Ett exempel på hur du lägger till en beräknad fälttyp **[!UICONTROL Enumerations]** är tillgänglig, se [det här avsnittet](../../workflow/using/adding-enumeration-type-calculated-field.md).
 
-   ![](assets/query_editor_nveau_63.png)
+  ![](assets/query_editor_nveau_63.png)
 
-   The **[!UICONTROL Enumerations]** beräkningsfält av typen kan innehålla fyra villkor:
+  The **[!UICONTROL Enumerations]** beräkningsfält av typen kan innehålla fyra villkor:
 
    * **[!UICONTROL Keep the source value]** återställer källvärdet till målet utan att ändra det.
    * **[!UICONTROL Use the following value]** gör att du kan ange ett standardmålvärde för icke-definierade källvärden.
@@ -333,7 +333,7 @@ Här är en detaljerad vy över de alternativ som finns i **[!UICONTROL Formula 
 ![](assets/query_editor_nveau_05.png)
 
 1. **[!UICONTROL Field only]** kan du gå tillbaka till **[!UICONTROL Field to select]** -fönstret.
-1. **[!UICONTROL Aggregate (Process on an aggregate function)]**. Här är några exempel på sammanlagd användning:
+1. **[!UICONTROL Aggregate (Process on an aggregate function)]**. Här är några exempel på användning av ballast:
 
    * **[!UICONTROL Count]** gör att du kan köra ett primärnyckelantal.
    * **[!UICONTROL Sum]** gör att ni kan lägga till alla inköp som görs av en kund under ett år.
@@ -341,7 +341,7 @@ Här är en detaljerad vy över de alternativ som finns i **[!UICONTROL Formula 
    * **[!UICONTROL Minimum value]** kan du sortera bland kunder och hitta dem som senast har prenumererat på ett erbjudande.
    * **[!UICONTROL Average]**. Med den här funktionen kan du beräkna medelåldern för mottagarna.
 
-      The **[!UICONTROL Distinct]** kan du återställa unika värden och värden som inte är noll i en kolumn. Du kan till exempel återställa alla en mottagares spårningsloggar och dessa spårningsloggar ändras till värdet 1 eftersom alla gäller samma mottagare.
+     The **[!UICONTROL Distinct]** kan du återställa unika värden och värden som inte är noll i en kolumn. Du kan till exempel återställa alla en mottagares spårningsloggar och dessa spårningsloggar ändras till värdet 1 eftersom alla gäller samma mottagare.
 
 1. **[!UICONTROL Expression]** öppnar **[!UICONTROL Edit the expression]** -fönstret. Detta gör att du kan identifiera telefonnummer med för många siffror, vilket sannolikt är indatafel.
 
@@ -385,7 +385,7 @@ Här kan du markera fält i databastabellerna och lägga till avancerade funktio
   </tr> 
   <tr> 
    <td> <strong>Motdistinkt</strong><br /> </td> 
-   <td> Räknar distinkta icke-null-värden för en kolumn<br /> </td> 
+   <td> Räknar de distinkta icke-null-värdena för en kolumn<br /> </td> 
    <td> Countdistinct(&lt;värde&gt;)<br /></td> 
   </tr> 
   <tr> 
@@ -395,7 +395,7 @@ Här kan du markera fält i databastabellerna och lägga till avancerade funktio
   </tr> 
   <tr> 
    <td> <strong>Min</strong><br /> </td> 
-   <td> Returnerar det minsta värdet för en tal-, sträng- eller datumtypskolumn<br /> </td> 
+   <td> Returnerar det minsta värdet för en kolumn av typen tal, sträng eller datum<br /> </td> 
    <td> Min(&lt;värde&gt;)<br /></td> 
   </tr> 
   <tr> 
@@ -527,7 +527,7 @@ Här kan du markera fält i databastabellerna och lägga till avancerade funktio
   </tr> 
   <tr> 
    <td> <strong>Substring</strong><br /> </td> 
-   <td> Extraherar delsträngen med början vid tecken n1 i strängen och med längden n2<br /> </td> 
+   <td> Extraherar delsträngen från tecken n1 i strängen och med längden n2<br /> </td> 
    <td> Substring(&lt;sträng&gt;, &lt;offset&gt;, &lt;längd&gt;)<br /> </td>  
   </tr> 
   <tr> 
@@ -956,7 +956,7 @@ Här kan du markera fält i databastabellerna och lägga till avancerade funktio
   </tr> 
   <tr> 
    <td> <strong>Iif</strong><br /> </td> 
-   <td> Returnerar värdet 1 om uttrycket är true. Annars returneras värde 2<br /> </td> 
+   <td> Returnerar värdet 1 om uttrycket är true. Om inte returneras värde 2<br /> </td> 
    <td> Iif(&lt;villkor&gt;, &lt;värde 1&gt;, &lt;värde 2&gt;)<br /> </td>  
   </tr> 
   <tr> 

@@ -2,16 +2,17 @@
 product: campaign
 title: Dela resurser med Adobe Experience Cloud
 description: Dela resurser med Adobe Experience Cloud
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
+feature: Asset Sharing
+badge-v7: label="v7" type="Informative" tooltip="Gäller Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Gäller även Campaign v8"
 audience: integrations
 content-type: reference
 topic-tags: asset-sharing
 exl-id: b28aa5a5-afba-458b-8a85-375493c6c836
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '167'
-ht-degree: 0%
+source-wordcount: '179'
+ht-degree: 1%
 
 ---
 
@@ -21,7 +22,7 @@ ht-degree: 0%
 
 Experience Cloud Assets utgör ett enda centralt arkiv av marknadsföringsmaterial som ni kan dela mellan olika lösningar. En resurs är ett digitalt dokument, en bild, en video eller en ljudfil.
 
-Tillgångstjänster:
+Tillgångstjänster omfattar:
 
 * Resurslagring, hanteringsgränssnitt, inbäddat urvalsgränssnitt (nås via lösningar).
 * Integrering med Creative Cloud och Experience Cloud.
@@ -34,4 +35,4 @@ Läs [Konfigurera åtkomst till resurser](../../integrations/using/configuring-a
 
 >[!NOTE]
 >
->I en Adobe Campaign On-Premise-miljö går det inte att integrera med bastjänsten Assets, såvida inte AEM Assets också är On-Premise.
+>I en Adobe Campaign On-Premise-miljö går det inte att integrera med bastjänsten Assets, såvida inte AEM Assets också är lokal.

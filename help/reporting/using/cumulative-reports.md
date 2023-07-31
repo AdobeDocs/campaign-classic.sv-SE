@@ -2,14 +2,14 @@
 product: campaign
 title: Kumulativa rapporter
 description: Kumulativa rapporter
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
-feature: Reporting
+badge-v7: label="v7" type="Informative" tooltip="Gäller Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Gäller även Campaign v8"
+feature: Reporting, Monitoring
 exl-id: e67748dd-fa50-4992-b85f-474389e876cf
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '69'
-ht-degree: 8%
+source-wordcount: '81'
+ht-degree: 9%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 8%
 
 
 
-Du kan visa kumulerade rapporter om leveranser. Välj de leveranser som ska jämföras för att få en lista över rapporter för dessa leveranser.
+Du kan visa kumulerade rapporter om leveranser. För att göra detta väljer du de leveranser som ska jämföras för att få en lista över rapporter för dessa leveranser.
 
 ![](assets/s_ncs_user_report_compare_tab.png)
 

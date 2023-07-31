@@ -2,16 +2,17 @@
 product: campaign
 title: Kom igång med uppgraderingar
 description: Lär dig de viktigaste stegen för att uppgradera till en ny version
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
-badge-v7-prem: label="on-premise & hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html" tooltip="Applies to on-premise and hybrid deployments only"
+feature: Monitoring, Upgrade
+badge-v7-only: label="v7" type="Informative" tooltip="Gäller endast Campaign Classic v7"
+badge-v7-prem: label="lokal och hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=sv" tooltip="Gäller endast lokala och hybrida driftsättningar"
 audience: production
 content-type: reference
 topic-tags: updating-adobe-campaign
 exl-id: c5a9c99a-4078-45d8-847b-6df9047a2fe2
-source-git-commit: 4661688a22bd1a82eaf9c72a739b5a5ecee168b1
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '2355'
-ht-degree: 2%
+source-wordcount: '2380'
+ht-degree: 3%
 
 ---
 
@@ -25,8 +26,8 @@ Uppgraderingen av bygget måste utföras med försiktighet, dess effekter måste
 
 Följande krav krävs:
 
-* Kampanjarkitekturen
-* Information om system och serversidor
+* Förståelse för Campaign-arkitekturen
+* Kunskap om system och serversidor
 * Administrativa rättigheter och behörigheter
 
 Mer information finns i följande avsnitt: [Uppdaterar Adobe Campaign](../../production/using/upgrading.md), [Migrera till en ny version](../../migration/using/about-migration.md).
@@ -44,16 +45,16 @@ Bygguppgraderingsprocessen kräver följande resurser:
 
 * en Adobe-arkitekt - för att förstå databasstrukturerna (färdiga scheman och eventuella ytterligare scheman som lagts till, kampanjdesign och alla viktiga sökvägsfunktioner som måste startas och testas i en viss ordning).
 * en projektledare - Om bygguppgraderingen omfattar många olika instanser (produktion, testning, testning) och andra tredjepartsservrar och -program (databaser, SFTP-platser, meddelandetjänster), anses det vara en god praxis att ha en projektledare som koordinerar all testning.
-* en Adobe Campaign-administratör - administratören känner till serverkonfigurationen, inklusive men inte begränsat till: säkerhet, mapplayout, rapportering och import\export. Utför ingen bygguppgradering utan att administratören behöver göra det.
+* en Adobe Campaign-administratör - administratören känner till serverns konfiguration, inklusive men inte begränsat till: säkerhet, mapplayout, rapportering och import\export. Utför ingen bygguppgradering utan att administratören behöver göra det.
 * en Adobe Campaign-operator (marknadsföringsanvändare) - en lyckad uppgradering förutsätter att användaren kan utföra sina dagliga uppgifter med framgång. Därför bör du alltid ta med minst en av dina dagliga operatorer när du testar de uppgraderade servrarna.
 
 ### Planering
 
-Här är de viktigaste punkterna på hur du planerar en uppgradering:
+Här är de viktigaste punkterna på hur du planerar en bygguppgradering:
 
 1. Reservera minst 2 timmar för uppgraderingen.
 1. Distribuera kontaktuppgifter för Adobe och kundpersonal.
-1. För värdbaserade instanser: Adobe och kundpersonal kommer att samordna tidpunkten för uppgraderingen och vem som kommer att genomföra den.
+1. För värdinstanser: Adobe och kundpersonal koordinerar tiden för uppgraderingen och vem som ska genomföra den.
 1. För lokala instanser: kundpersonalen hanterar hela processen - om hjälp med testning av anpassade arbetsflöden och leveranslogik behövs bör konsulttjänster tas in.
 1. Bestäm och bekräfta vilken version av Adobe Campaign du vill uppgradera till - se [Versionsinformation för Adobe Campaign Classic](../../rn/using/rn-overview.md).
 1. Bekräfta innehavet av uppgraderingsfiler.
@@ -62,19 +63,19 @@ Här är de viktigaste punkterna på hur du planerar en uppgradering:
 
 Bygguppgraderingsprocessen kräver att följande personer deltar:
 
-* Adobe-arkitekt: för hostingarkitekturer eller hybridarkitekturer måste arkitekten koordinera med Adobe Campaign Client Care.
+* Adobe-arkitekt: för hostade eller hybridarkitekturer måste arkitekten koordinera med Adobe Campaign Client Care.
 
 * Projektledare:
    * för On Premise-installationer: kundens interna projektledare leder uppgraderingen och hanterar livscykeltester.
 
-   * för värdbaserad installation: värdteamet kommer att samarbeta med Adobe Campaign Client Care-teamet och kunden för att samordna uppgraderingstiden för alla instanser.
+   * för värdbaserad installation: värdteamet samarbetar med Adobe Campaign Client Care-teamet och kunden för att samordna uppgraderingstidslinjen för alla instanser.
 
 * Adobe Campaign Administrator:
    * för On Premise-installationer: administratören utför uppgraderingen.
 
    * för värdbaserade installationer: värdteamet utför uppgraderingen.
 
-* Adobe Campaign operator\marknadsföringsanvändare: operatorn kör tester på instanser av utveckling, test och produktion.
+* Adobe Campaign operator\marknadsföringsanvändare: operatorn kör tester på instanser för utveckling, test och produktion.
 
 ### Förbered uppgraderingen av bygget
 
@@ -82,7 +83,7 @@ Innan du påbörjar uppgraderingen måste lokala kunder utföra följande förbe
 
 1. Se till att utvecklingsarbetet kan exporteras före uppgraderingen och exportera som paket.
 
-1. Utför en fullständig säkerhetskopiering av databaserna för alla instanser av käll- och målmiljöer.
+1. Utför en fullständig säkerhetskopiering av databaserna för alla instanser av käll- och målmiljöerna.
 
 1. Skaffa den senaste versionen av [serverkonfigurationsfil](../../installation/using/the-server-configuration-file.md).
 
@@ -90,13 +91,13 @@ Innan du påbörjar uppgraderingen måste lokala kunder utföra följande förbe
 
 Du måste också känna till alla [användbara kommandorader](../../installation/using/command-lines.md) innan du påbörjar en versionsuppgradering:
 
-* **nlserver pdump**: listor över pågående processer
+* **nlserver pdump**: listor med processer som körs
 * **nlserver pdump -vem**: visar aktiva klientsessioner
-* **nlserver monitor -missing**: listor över saknade egenskaper
+* **nlserver monitor -missing**: listor saknade egenskaper
 * **nlserver start process@instance-name**: startar en process
 * **nlserver stop process@instance-name**: stoppar en process
 * **omstart av nlserver process@instance-name**: startar om en process
-* **avstängning av nlserver**: stoppar alla Campaign-processer
+* **avstängning av nlserver**: stoppar alla kampanjprocesser
 * **nlserver watchdog -svc**: startar övervakningsenheten (endast UNIX)
 
 ## Utför uppgraderingen
@@ -115,7 +116,7 @@ Följ stegen nedan för att göra detta:
 
 1. Återställ dessa kopior i alla instanser av målmiljön.
 
-1. Kör **nms:ezeInstance.js** autentiseringsskript i målmiljön innan det startas. Detta stoppar alla processer som interagerar med externa användare: loggar, spårning, leveranser, kampanjarbetsflöden osv.
+1. Kör **nms:ezeInstance.js** autentiseringsskript i målmiljön innan det startas. Detta stoppar alla processer som interagerar med utsidan: loggar, spårning, leveranser, kampanjarbetsflöden osv.
 
    ```
    nlserverjavacsriptnms:freezeInstance.js–instance:<dev> -arg:run
@@ -125,22 +126,22 @@ Följ stegen nedan för att göra detta:
 
    * Kontrollera att den enda leveransdelen är den som ID är inställt på **0**:
 
-      ```
-      SELECT * FROM neolane.nmsdeliverypart;
-      ```
+     ```
+     SELECT * FROM neolane.nmsdeliverypart;
+     ```
 
    * Kontrollera att leveransstatusuppdateringen är korrekt:
 
-      ```
-      SELECT iSate, count(*) FROM neolane.nmsdeliveryGroup By iProd;
-      ```
+     ```
+     SELECT iSate, count(*) FROM neolane.nmsdeliveryGroup By iProd;
+     ```
 
    * Kontrollera att statusuppdateringen för arbetsflödet är korrekt:
 
-      ```
-      SELECT iState, count (*) FROM neolane.xtkworkflowGROUP BY iState;
-      SELECT iStatus, count (*) FROM neolane.xtkworkflowGROUP BY iStatus;
-      ```
+     ```
+     SELECT iState, count (*) FROM neolane.xtkworkflowGROUP BY iState;
+     SELECT iStatus, count (*) FROM neolane.xtkworkflowGROUP BY iStatus;
+     ```
 
 ### Stäng av tjänster
 
@@ -149,11 +150,12 @@ Om du vill ersätta alla filer med den nya versionen måste alla instanser av nl
 1. Stäng av följande tjänster:
 
    * Webbtjänster (IIS): **iisreset /stop**
-   * Adobe Campaign: **net stop nlserver6**
+   * Adobe Campaign-tjänst: **net stop nlserver6**
 
    >[!NOTE]
    >
    >Kontrollera att omdirigeringsservern (webmdl) har stoppats så att filen nlsrvmod.dll som används av IIS kan ersättas med den nya versionen.
+   >
 
 1. Verifiera att inga aktiviteter är aktiva genom att köra **nlserver pdump** -kommando. Om det inte finns några uppgifter bör utdata likna följande:
 
@@ -161,7 +163,7 @@ Om du vill ersätta alla filer med den nya versionen måste alla instanser av nl
    C:\<installation path>\bin>nlserverpdump HH:MM:SS > Application Server for Adobe Campaign version x.x (build xxx) dated xx/xx/xxxx No tasks
    ```
 
-1. Kontrollera att alla processer har stoppats i Aktivitetshanteraren i Windows.
+1. Kontrollera att alla processer har stoppats i Aktivitetshanteraren.
 
 ### Uppgradera Adobe Campaign Server-programmet
 
@@ -188,6 +190,7 @@ Om du vill ersätta alla filer med den nya versionen måste alla instanser av nl
    >[!NOTE]
    >
    >Den här åtgärden ska bara utföras en gång och endast på en nlserverweb-programserver.
+   >
 
    Om du bara vill synkronisera en databas kör du följande kommando:
 
@@ -202,9 +205,9 @@ Om du vill ersätta alla filer med den nya versionen måste alla instanser av nl
 Följande tjänster måste startas om:
 
 * Webbtjänster (IIS): **issreset /start**
-* Adobe Campaign: **net start nlserver6**
+* Adobe Campaign-tjänst: **net start nlserver6**
 
-### Uppdatering av klientkonsoler
+### Klientkonsoluppdatering
 
 Klientkonsolen måste finnas på samma version som serverinstansen.
 
@@ -258,6 +261,7 @@ I en miljö med flera leverantörer behöver du utföra följande steg för att 
 >[!NOTE]
 >
 >Servern för medelhög källkod måste alltid ha samma version (eller senare) som marknadsföringsservrarna.
+>
 
 ## Vid konflikter
 
@@ -305,7 +309,7 @@ Om inget av dessa villkor gäller är detta falskt positivt. Om båda dessa vill
 
 **Har objektet ändrats i den nya versionen?**
 
-1. &quot;Vanliga misstänkta?&quot; Inbyggda webbprogram eller rapporter (t.ex.: &#39;deliveryValidation&#39;, &#39;deliveryOverview&#39;, &#39;budget&#39;).
+1. &quot;Vanliga misstänkta?&quot; Inbyggda webbprogram eller rapporter (t.ex. &#39;deliveryValidation&#39;, &#39;deliveryOverview&#39;, &#39;budget&#39;).
 1. Sök i ändringsloggarna efter uppdateringar.
 1. Fråga Adobe Campaign experter.
 1. Utför en&quot;diff&quot; på koden.
@@ -340,24 +344,25 @@ Det finns tre alternativ för att lösa konflikter: **Acceptera den nya versione
 **Vad händer om jag ignorerar konflikterna?**
 
 * Konflikten kvarstår
-* Objektet kommer inte att uppgraderas
-* Långsiktiga effekter: versionsinkompatibiliteter, kan kunden inte utnyttja buggfixar.
+* Objektet uppgraderas inte
+* Långsiktiga effekter: versionsinkompatibiliteter - kunden har ingen nytta av felkorrigeringar.
 
 >[!IMPORTANT]
 >Vi rekommenderar att du löser konflikter.
+>
 
 ### Utför en sammanslagning{#perform-a-merge}
 
-Det finns olika typer av sammanslagningar:
+Det finns olika typer av sammanfogningar:
 
 1. Enkel sammanslagning: anpassade och nya element är små och orelaterade, och ingen kodning behövs.
 1. Inga ändringar: acceptera ny version, endast senaste uppdateringsdatum ändrat, endast kommentarer, tabbar, blanksteg eller nya rader. Exempel: spara av misstag.
-1. Triviala förändringar: bara en rad har ändrats. Exempel: xpathToLoad
-1. Komplex sammanslagning: när kodning krävs. Utvecklingskunskaper krävs. Se [Komplexa sammanslagningar](#complex-merges).
+1. Triviala ändringar: endast en rad har ändrats. Exempel: xpathToLoad
+1. Komplex sammanfogning: när kodning krävs. Utvecklingskunskaper krävs. Se [Komplexa sammanslagningar](#complex-merges).
 
 #### Hur man sammanfogar?
 
-1. Få alla tre versionerna: den ursprungliga versionen, den nya versionen och den anpassade versionen.
+1. Få alla tre versionerna: originalversionen, den nya versionen och den anpassade versionen.
 1. Kör ett&quot;diff&quot; mellan den ursprungliga och den nya versionen.
 1. Isolera ändringarna.
 1. Lös problemet genom att behålla den aktuella versionen om inga ändringar görs.
@@ -365,7 +370,7 @@ Det finns olika typer av sammanslagningar:
 #### Var hittar du koden?
 
 1. Inbyggd kod lagras i XML-filer i datamappen. Hitta XML-filen som matchar objektet som är i konflikt. Exempel: installationDirectory\datakit\nms\fra\form\recipient.xml
-1. Hämta originalversionen: via [Hämtningscenter](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html) eller en annan icke uppgraderad installation av produkten.
+1. Hämta den ursprungliga versionen: via [Hämtningscenter](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html) eller en annan icke-uppgraderad installation av produkten.
 1. Hämta den nya versionen: via [Hämtningscenter](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html) eller kundens installerade filer.
 1. Hämta den anpassade versionen: hämta objektets källkod från Campaign-klienten.
 
@@ -385,14 +390,14 @@ Det finns olika typer av sammanslagningar:
 
 Om du väljer att lösa konflikten manuellt gör du så här:
 
-1. I fönstrets nedre del söker du efter **_conflict_string_** för att hitta enheter med konflikter. Entiteten som installerades med den nya versionen innehåller det nya argumentet, entiteten som matchar den tidigare versionen innehåller det anpassade argumentet.
+1. Sök efter **_conflict_string_** för att hitta enheter med konflikter. Entiteten som installerades med den nya versionen innehåller det nya argumentet, entiteten som matchar den tidigare versionen innehåller det anpassade argumentet.
 1. Ta bort den version som du inte vill behålla. Ta bort **_conflict_argument_** sträng för den entitet som du håller.
 1. Gå till konflikten som du har löst. Klicka på **Åtgärder** ikon och markera **Deklarera som löst**.
-1. Spara ändringarna: konflikten är nu löst.
+1. Spara dina ändringar: konflikten är nu löst.
 
 #### Komplexa sammanslagningar{#complex-merges}
 
-1. Förstå vad ändringen gör: bakåtkompilera ändringarna, granska ändringsloggarna och följ upp med Adobe Campaign experter.
+1. Förstå vad ändringen innebär: bakåtkompilera ändringarna, granska ändringsloggarna, följ upp med Adobe Campaign experter.
 1. Bestäm vad du ska göra med ändringen.
 1. Förstå vad anpassningarna gör: bakåtkompilera ändringarna
 
@@ -408,6 +413,7 @@ Så här utför du en komplex sammanfogning:
 
 >[!IMPORTANT]
 >Det krävs utvecklingskunskaper för att utföra komplexa sammanfogningar.
+>
 
 **Relaterade ämnen**
 

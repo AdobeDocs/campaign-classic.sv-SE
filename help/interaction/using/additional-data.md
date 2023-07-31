@@ -2,15 +2,16 @@
 product: campaign
 title: Ytterligare data
 description: Ytterligare data
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+feature: Interaction, Offers
+badge-v7-only: label="v7" type="Informative" tooltip="Gäller endast Campaign Classic v7"
 audience: interaction
 content-type: reference
 topic-tags: advanced-parameters
 exl-id: 01adb584-5308-4d41-a6f1-223a97efa10f
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '717'
-ht-degree: 0%
+source-wordcount: '724'
+ht-degree: 1%
 
 ---
 
@@ -40,7 +41,7 @@ För den inkommande kanalen måste du lägga till anropsdatafälten i **Interakt
 >
 >XML-samlingar stöds på den inkommande kanalen, men länkarna till andra scheman stöds inte.
 
-För den utgående kanalen måste du lägga till en **targetData** element som innehåller ytterligare fält i **Interaktion** nod.
+Du måste lägga till en **targetData** -element som innehåller ytterligare fält i **Interaktion** nod.
 
 ```
 <element label="Interactions" labelSingular="Interaction" name="interaction">
@@ -63,7 +64,7 @@ Om du vill lagra dessa data i förslagstabellen måste du också utöka **nms:pr
 </element>
 ```
 
-## Ytterligare dataimplementering {#additional-data-implementation}
+## Implementering av ytterligare data {#additional-data-implementation}
 
 ### Indatakanal (webbsida) {#input-channel--web-page-}
 
@@ -79,11 +80,11 @@ Du måste skapa ett målarbetsflöde som läser in ytterligare data i arbetsregi
 
 ## Använda ytterligare data {#using-additional-data}
 
-### Villkor {#eligibility-rules}
+### Villkor för deltagande {#eligibility-rules}
 
 Du kan använda ytterligare data i reglerna för behörighet för erbjudanden, kategorier och vikter.
 
-Du kan t.ex. välja att endast visa erbjudandet för personer som visar sidan på engelska.
+Du kan t.ex. välja att erbjudandet endast ska visas för personer som tittar på sidan på engelska.
 
 ![](assets/ita_calldata_query.png)
 
@@ -105,7 +106,7 @@ Om du har personaliserat ett erbjudande med ytterligare data visas dessa data in
 
 ![](assets/ita_calldata_preview.png)
 
-När du förhandsgranskar klickar du på **[!UICONTROL Content personalization options for the preview]** och välj ett värde i **[!UICONTROL Call data]** fält.
+Vid förhandsgranskning klickar du på **[!UICONTROL Content personalization options for the preview]** och välj ett värde i **[!UICONTROL Call data]** fält.
 
 ![](assets/ita_calldata_preview2.png)
 
@@ -119,7 +120,7 @@ Under ett anrop till motorn kan du lagra ytterligare data i förslagstabellen f�
 
 Gå till **[!UICONTROL Storage]** och klicka på **[!UICONTROL Add]** -knappen.
 
-I **[!UICONTROL Storage path]** markerar du lagringsfältet i förslagstabellen. I **[!UICONTROL Expression]** markerar du ytterligare fält i **[!UICONTROL Interaction]** nod.
+I **[!UICONTROL Storage path]** markerar du lagringsfältet i tabellen. I **[!UICONTROL Expression]** markerar du ytterligare fält i **[!UICONTROL Interaction]** nod.
 
 Du kan hämta samtalsdata när förslaget genereras eller när det godkänns (när personen klickar på erbjudandet).
 

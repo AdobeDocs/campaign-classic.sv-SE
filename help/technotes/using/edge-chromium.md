@@ -1,12 +1,13 @@
 ---
 product: campaign
 title: TechNote - Aktivera Microsoft Edge Chromium i kampanjmiljön
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+badge-v7-only: label="v7" type="Informative" tooltip="Gäller endast Campaign Classic v7"
 description: Campaign - Edge Chromium
+feature: Technote, Upgrade
 exl-id: 22f4cbaf-ca37-47b9-b7dd-1ee73d5b348d
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '246'
+source-wordcount: '253'
 ht-degree: 11%
 
 ---
@@ -28,13 +29,13 @@ Om din miljö har uppgraderats till Campaign Classic v7.3 (eller senare) påverk
 
 ## Hur uppdaterar jag?
 
-* Som **värdbaserad** Adobe har redan aktiverat Microsoft Edge Chromium på dina instanser. Ingen ytterligare åtgärd krävs.
+* Som en **värdbaserad** Adobe har redan aktiverat Microsoft Edge Chromium på dina instanser. Ingen ytterligare åtgärd krävs.
 
 * Som en **lokal/hybrid** -kund måste du aktivera Microsoft Edge Chromium på dina instanser.
 
-   Vid uppgradering till Campaign Classic v7.3 (och senare) finns en ny `webView2Mode` attributet är tillgängligt i konfigurationsfilen för Campaign-servern `serverConf.xml`. Det här attributet måste aktiveras.
+  Vid uppgradering till Campaign Classic v7.3 (och senare) finns en ny `webView2Mode` attributet är tillgängligt i konfigurationsfilen för Campaign-servern `serverConf.xml`. Det här attributet måste aktiveras.
 
-   Om du vill göra det utför du följande steg i alla miljöer (MKT, MID, RT):
+  Om du vill göra det utför du följande steg i alla miljöer (MKT, MID, RT):
 
    1. Redigera konfigurationsfilen för Campaign-servern (`serverConf.xml`)
    1. I `<web>` modul, ange `webView2Mode = "1"`
@@ -60,6 +61,7 @@ Om din miljö har uppgraderats till Campaign Classic v7.3 (eller senare) påverk
 >[!NOTE]
 >
 >Om du har frågor om de här ändringarna kan du kontakta [Adobes kundtjänst](https://helpx.adobe.com/se/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
+>
 
 ## Relaterade ämnen
 

@@ -2,12 +2,12 @@
 product: campaign
 title: Personalisering och sekretess
 description: Lär dig de effektivaste strategierna för säkerhet när det gäller sekretess och personalisering
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
-feature: URL Personalization, Privacy
+feature: Installation, Privacy, Privacy Tools, URL Personalization
+badge-v7-only: label="v7" type="Informative" tooltip="Gäller endast Campaign Classic v7"
 exl-id: 0a3473bf-0528-486d-a799-8db86fece522
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '845'
+source-wordcount: '852'
 ht-degree: 2%
 
 ---
@@ -29,7 +29,7 @@ När du lägger till anpassade länkar till ditt innehåll bör du alltid undvik
 
 ### Rekommendation
 
-Om du vill validera och se till att du inte använder ovanstående kör du en fråga i URL-spårningstabellen via [Kampanjallmän frågeredigerare](../../platform/using/steps-to-create-a-query.md) eller skapa ett arbetsflöde med filtervillkor i [frågeaktivitet](../../workflow/using/query.md).
+Om du vill validera och se till att du inte använder ovanstående kör du en fråga i URL-spårningstabellen via [Kampanjgenerisk frågeredigerare](../../platform/using/steps-to-create-a-query.md) eller skapa ett arbetsflöde med filtervillkor i [frågeaktivitet](../../workflow/using/query.md).
 
 Exempel:
 
@@ -52,11 +52,11 @@ För att förbättra säkerheten har en signaturmekanism införts för att spår
 
 >[!NOTE]
 >
->När användaren klickar på en felformaterad URL returneras följande fel: `Requested URL '…' was not found.`
+>När användaren klickar på en felformaterad signerad URL returneras följande fel: `Requested URL '…' was not found.`
 
-Dessutom kan du använda en förbättring för att inaktivera URL:er som genererats i tidigare versioner. Den här funktionen är inaktiverad som standard. Du kan nå ut till [Kundtjänst](https://helpx.adobe.com/se/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) för att aktivera den här funktionen.
+Dessutom kan du använda en förbättring för att inaktivera URL:er som genererats i tidigare versioner. Den här funktionen är inaktiverad som standard. Du kan kontakta [Kundtjänst](https://helpx.adobe.com/se/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) för att aktivera den här funktionen.
 
-Om du kör i version 19.1.4 kan du få problem med push-meddelandeleveranser med hjälp av spårningslänkar eller leveranser med hjälp av ankartaggar. I så fall rekommenderar vi att du inaktiverar URL-signatur.
+Om du kör i version 19.1.4 kan du få problem med push-meddelandeleveranser med hjälp av spårningslänkar eller leveranser med ankartaggar. I så fall rekommenderar vi att du inaktiverar URL-signatur.
 
 Som kampanjvärd, hanterad Cloud Services eller hybrid-kund måste ni kontakta [Kundtjänst](https://helpx.adobe.com/se/enterprise/using/support-for-experience-cloud.html) för att inaktivera URL-signatur.
 
@@ -78,7 +78,7 @@ Om du vill inaktivera URL:er som har skapats i tidigare versioner följer du de 
 
 Om du vill aktivera URL-signering följer du de här stegen på alla Campaign-servrar samtidigt:
 
-1. I serverkonfigurationsfilen (`serverConf.xml`), ändra **signEmailLinks** alternativ, till **true**.
+1. I serverkonfigurationsfilen (`serverConf.xml`), ändra **signEmailLinks** till **true**.
 1. Starta om **nlserver** service.
 1. På `tracking` server, starta om `web` server (apache2 på Debian, httpd on CentOS/RedHat, IIS on Windows).
 
@@ -90,7 +90,7 @@ Med den här begränsningen kan du ta bort lösenordsfält men låta det externa
 
 Gör så här:
 
-1. Bläddra till **[!UICONTROL Administration]** > **[!UICONTROL Configuration]** > **[!UICONTROL Data schemas]** mapp för Campaign Explorer.
+1. Gå till **[!UICONTROL Administration]** > **[!UICONTROL Configuration]** > **[!UICONTROL Data schemas]** mapp för Campaign Explorer.
 
 1. Skapa ett dataschema som **[!UICONTROL Extension of a schema]**.
 
@@ -157,7 +157,7 @@ Gör så här:
 
 ## Protect-sidor med PI
 
-Vi rekommenderar starkt att kunder på plats skyddar sidor som kan innehålla personlig information (PI) som spegelsidor, webbtillämpningar osv.
+Vi rekommenderar starkt att kunder på plats skyddar sidor som kan innehålla personlig information (PI) som spegelsidor, webbapplikationer osv.
 
 Målet med detta förfarande är att förhindra att dessa sidor indexeras, vilket förhindrar en potentiell säkerhetsrisk. Här är några användbara artiklar:
 
@@ -187,4 +187,4 @@ Följ de här stegen för att skydda sidorna:
 
 ## Sekretessförfrågningar
 
-Se [den här sidan](../../platform/using/privacy-management.md) om du vill ha allmän information om vad sekretesshantering är och implementeringsstegen i Adobe Campaign. Du hittar även bästa praxis och en översikt över användarprocessen och personerna.
+Se [den här sidan](../../platform/using/privacy-management.md) om du vill ha allmän information om vad sekretesshantering är och implementeringsstegen i Adobe Campaign. Du hittar även bästa praxis och en översikt över användarprocessen och personifierna.

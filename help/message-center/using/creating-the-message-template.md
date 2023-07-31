@@ -2,12 +2,12 @@
 product: campaign
 title: Designa transaktionsmeddelandemallar
 description: Lär dig hur du skapar och utformar en transaktionsmeddelandemall i Adobe Campaign Classic
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
-feature: Transactional Messaging
+feature: Transactional Messaging, Message Center, Templates
+badge-v7-only: label="v7" type="Informative" tooltip="Gäller endast Campaign Classic v7"
 exl-id: a52bc140-072e-4f81-b6da-f1b38662bce5
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '498'
+source-wordcount: '505'
 ht-degree: 0%
 
 ---
@@ -61,7 +61,7 @@ Definitionen av transaktionens meddelandeinnehåll är densamma som för vanliga
 >Bilderna i meddelandet måste vara tillgängliga för alla. Adobe Campaign har ingen mekanism för överföring av bilder för transaktionsmeddelanden.\
 >Till skillnad från i JSSP eller webApp, `<%=` har ingen standardescape-konvertering.
 >
->I det här fallet måste du undvika alla data som kommer från händelsen på rätt sätt. Detta beror på hur det här fältet används. Använd till exempel encodeURIComponent i en URL. Om du vill visas i HTML kan du använda escapeXMLString.
+>I det här fallet måste du undvika alla data som kommer från händelsen på rätt sätt. Den här inställningen beror på hur det här fältet används. Använd till exempel encodeURIComponent i en URL. Om du vill visas i HTML kan du använda escapeXMLString.
 
 När du har definierat meddelandeinnehållet kan du integrera händelseinformation i meddelandetexten och anpassa den. Händelseinformation infogas i texten tack vare personaliseringstaggar.
 

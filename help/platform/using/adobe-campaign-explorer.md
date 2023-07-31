@@ -2,14 +2,15 @@
 product: campaign
 title: Använda Adobe Campaign Explorer
 description: Lär dig använda Campaign Explorer
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+feature: Overview
+badge-v7-only: label="v7" type="Informative" tooltip="Gäller endast Campaign Classic v7"
 audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: f91d69a4-b794-40f0-b450-de862d7333e2
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '442'
+source-wordcount: '449'
 ht-degree: 3%
 
 ---
@@ -24,15 +25,15 @@ The **[!UICONTROL Explorer]** arbetsytan är uppdelad i tre zoner:
 
 ![](assets/s_ncs_user_navigation.png)
 
-**1 - träd**: kan du anpassa innehållet i trädet (lägga till, flytta eller ta bort noder). Den här proceduren är endast avsedd för expertanvändare. Mer information om detta finns i [det här avsnittet](#about-navigation-hierarchy).).
+**1 - träd**: du kan anpassa innehållet i trädet (lägga till, flytta eller ta bort noder). Den här proceduren är endast avsedd för expertanvändare. Mer information om detta finns i [det här avsnittet](#about-navigation-hierarchy).).
 
-**2 - Lista**: kan du filtrera den här listan, köra sökningar, lägga till information eller sortera data. [Läs mer](adobe-campaign-ui-lists.md).
+**2 - Lista**: du kan filtrera den här listan, köra sökningar, lägga till information eller sortera data. [Läs mer](adobe-campaign-ui-lists.md).
 
-**3 - Detaljer**: Du kan visa information om det markerade elementet. Med ikonen i det övre högra avsnittet kan du visa den här informationen i helskärmsläge.
+**3 - Information**: du kan visa information om det markerade elementet. Med ikonen i det övre högra avsnittet kan du visa den här informationen i helskärmsläge.
 
 ## Mappar och navigeringsträd{#about-navigation-hierarchy}
 
-Navigeringsträdet fungerar som en filläsare (t.ex. Utforskaren i Windows). Mappar kan innehålla undermappar. Om du väljer en nod visas vyn som motsvarar noden.
+Navigeringsträdet fungerar som en filläsare (t.ex. Utforskaren). Mappar kan innehålla undermappar. Om du väljer en nod visas vyn som motsvarar noden.
 
 Den vy som visas är en lista som är associerad med ett schema och ett inmatningsformulär för att redigera den markerade raden.
 
@@ -50,24 +51,24 @@ Lär dig hur du anger behörigheter för mappar [i det här avsnittet](access-ma
 
 * **Använd inbyggda mappar**
 
-   Genom att använda de inbyggda mapparna blir det enklare för personer som inte deltar i projektet att använda, underhålla och felsöka programmet. Du bör inte skapa anpassade mappstrukturer för mottagare, listor, leveranser osv., utan använda standardmapparna som Administration, Profiler och mål, Kampanjhantering.
+  Genom att använda de inbyggda mapparna blir det enklare för personer som inte deltar i projektet att använda, underhålla och felsöka programmet. Du bör inte skapa anpassade mappstrukturer för mottagare, listor, leveranser osv., utan använda standardmapparna som Administration, Profiler och mål, Kampanjhantering.
 
 * **Skapa undermappar**
 
-   Placera tekniska arbetsflöden i standardmappen: Administration/produktion/tekniska arbetsflöden och skapa underkataloger per arbetsflödestyp.
+  Placera tekniska arbetsflöden i standardmappen: Administration/Produktion/Tekniska arbetsflöden, och skapa underkataloger per arbetsflödestyp.
 
 * **Ange en namnkonvention**
 
-   Du kan till exempel namnge arbetsflödena i alfabetisk ordning så att de visas sorterade i körningsordningen.
+  Du kan till exempel namnge arbetsflödena i alfabetisk ordning så att de visas sorterade i körningsordningen.
 
-   Exempel:
+  Exempel:
 
    * A1 - importmottagare, börjar 10:00;
    * A2 - importbiljetter, börjar klockan 11:00.
 
 * **Skapa mallar som användarna kan börja med**
 
-   Skapa leveransmallar, arbetsflödesmallar och kampanjmallar som är specifika för användarna. Strukturen kan spara tid och säkerställa att rätt leveranskarta och -typologier används för varje användare.
+  Skapa leveransmallar, arbetsflödesmallar och kampanjmallar som är specifika för användarna. Strukturen kan spara tid och säkerställa att rätt leveranskarta och -typologier används för varje användare.
 
 ## Skärmupplösning {#screen-resolution}
 
@@ -83,4 +84,4 @@ I **[!UICONTROL Explorer]** arbetsytan, om vissa delar av **[!UICONTROL Details]
 
 ## Bläddra bland och anpassa listor {#browsing-lists}
 
-Lär dig hur du bläddrar i, hanterar och anpassar listor [i det här avsnittet](adobe-campaign-ui-lists.md).
+Lär dig att bläddra i, hantera och anpassa listor [i det här avsnittet](adobe-campaign-ui-lists.md).

@@ -2,16 +2,17 @@
 product: campaign
 title: Konfigurera Campaign-servern
 description: Konfigurera Campaign-servern
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
-badge-v7-prem: label="on-premise & hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html" tooltip="Applies to on-premise and hybrid deployments only"
+feature: Installation, Instance Settings
+badge-v7-only: label="v7" type="Informative" tooltip="Gäller endast Campaign Classic v7"
+badge-v7-prem: label="lokal och hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=sv" tooltip="Gäller endast lokala och hybrida driftsättningar"
 audience: installation
 content-type: reference
 topic-tags: additional-configurations
 exl-id: 46c8ed46-0947-47fb-abda-6541b12b6f0c
-source-git-commit: 4661688a22bd1a82eaf9c72a739b5a5ecee168b1
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '1578'
-ht-degree: 1%
+source-wordcount: '1603'
+ht-degree: 2%
 
 ---
 
@@ -25,7 +26,7 @@ I det här kapitlet beskrivs serverkonfigurationer som kan utföras för att pas
 
 Dessa förfaranden är begränsade till **lokal**/**hybrid** distribuerar och kräver administrationsbehörigheter.
 
-För **värdbaserad** -distributioner kan inställningarna på serversidan endast konfigureras av Adobe. Vissa inställningar kan dock ställas in i [Kontrollpanelen för kampanj](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/key-features.html), till exempel hantering av IP-tillåtelselista eller URL-behörigheter. [Läs mer](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/ip-allow-listing-instance-access.html).
+För **värdbaserad** -distributioner kan inställningarna på serversidan endast konfigureras av Adobe. Vissa inställningar kan dock ställas in i [Kampanjkontrollpanelen](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/key-features.html), till exempel hantering av IP-tillåtelselista eller URL-behörigheter. [Läs mer](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/ip-allow-listing-instance-access.html).
 
 Mer information finns i följande avsnitt:
 
@@ -35,10 +36,10 @@ Mer information finns i följande avsnitt:
 
 ## Konfigurationsfiler
 
-Konfigurationsfiler för Campaign Classic lagras i **conf** i installationsmappen för Adobe Campaign. Konfigurationen sprids över två filer:
+Konfigurationsfiler för Campaign Classic lagras i **conf** i Adobe Campaign installationsmapp. Konfigurationen sprids över två filer:
 
-* **serverConf.xml**: allmän konfiguration för alla instanser. Den här filen innehåller de tekniska parametrarna för Adobe Campaign-servern: dessa delas av alla instanser. Beskrivningen av några av dessa parametrar beskrivs nedan. De olika noderna och parametrarna listas i detta [section](../../installation/using/the-server-configuration-file.md).
-* **config-`<instance>`.xml** (där **instance** är namnet på instansen): specifik konfiguration för instansen. Om du delar servern mellan flera instanser anger du parametrarna som är specifika för varje instans i den aktuella filen.
+* **serverConf.xml**: allmän konfiguration för alla instanser. Den här filen kombinerar de tekniska parametrarna för Adobe Campaign-servern: dessa delas av alla instanser. Beskrivningen av några av dessa parametrar beskrivs nedan. De olika noderna och parametrarna listas i detta [section](../../installation/using/the-server-configuration-file.md).
+* **config-`<instance>`XML** (där **instance** är namnet på instansen): specifik konfiguration för instansen. Om du delar servern mellan flera instanser anger du parametrarna som är specifika för varje instans i den aktuella filen.
 
 ## Konfigurationsomfattning
 
@@ -95,49 +96,49 @@ Det finns två typer av processer: flera instanser och en instans.
 
 * **flera instanser**: en enda process startas för alla instanser. Detta är fallet för **webb**, **syslogd** och **trackinglogd** -processer.
 
-   Aktivering kan konfigureras från **config-default.xml** -fil.
+  Aktivering kan konfigureras från **config-default.xml** -fil.
 
-   Deklarera en Adobe Campaign-server för åtkomst till klientkonsoler och för omdirigering (spårning):
+  Deklarera en Adobe Campaign-server för åtkomst till klientkonsoler och för omdirigering (spårning):
 
-   ```
-   vi nl6/conf/config-default.xml
-   <web args="-tomcat" autoStart="true"/>  
-   <!-- to start if the machine is also a redirection server -->  
-   <trackinglogd autoStart="true"/>
-   ```
+  ```
+  vi nl6/conf/config-default.xml
+  <web args="-tomcat" autoStart="true"/>  
+  <!-- to start if the machine is also a redirection server -->  
+  <trackinglogd autoStart="true"/>
+  ```
 
-   I det här exemplet redigeras filen med en **vi** i Linux. Den kan redigeras med valfritt **.txt** eller **.xml** redigerare.
+  I det här exemplet redigeras filen med en **vi** i Linux. Den kan redigeras med valfritt **.txt** eller **XML** redigerare.
 
 * **mono-instance**: en process startas för varje instans (moduler: **mta**, **wfserver**, **inMail**, **sms** och **stat**).
 
-   Aktivering kan konfigureras med hjälp av instansens konfigurationsfil:
+  Aktivering kan konfigureras med hjälp av instansens konfigurationsfil:
 
-   ```
-   config-<instance>.xml
-   ```
+  ```
+  config-<instance>.xml
+  ```
 
-   Deklarera en server för leverans, köra arbetsflödesinstanser och återställa studentpost:
+  Deklarera en server för leverans, köra arbetsflödesinstanser och återställa studentpost:
 
-   ```
-   <mta autoStart="true" statServerAddress="localhost"/>
-   <wfserver autoStart="true"/>  
-   <inMail autoStart="true"/>
-   <stat autoStart="true"/>
-   ```
+  ```
+  <mta autoStart="true" statServerAddress="localhost"/>
+  <wfserver autoStart="true"/>  
+  <inMail autoStart="true"/>
+  <stat autoStart="true"/>
+  ```
 
 **Kampanjdatalagring**
 
-Du kan konfigurera lagringskatalogen (**var** katalog) med Adobe Campaign-data (loggar, nedladdningar, omdirigeringar etc.). Om du vill göra det använder du **XTK_VAR_DIR** systemvariabel:
+Du kan konfigurera lagringskatalogen (**var** katalog) med Adobe Campaign-data (loggar, nedladdningar, omdirigeringar etc.). Använd **XTK_VAR_DIR** systemvariabel:
 
-* I Windows anger du följande värde i **XTK_VAR_DIR** systemvariabel
+* Ange följande värde i Windows **XTK_VAR_DIR** systemvariabel
 
-   ```
-   D:\log\AdobeCampaign
-   ```
+  ```
+  D:\log\AdobeCampaign
+  ```
 
 * I Linux går du till **customer.sh** och ange: **exportera XTK_VAR_DIR=/app/log/AdobeCampaign**.
 
-   Mer information finns i [Anpassa parametrar](../../installation/using/installing-packages-with-linux.md#personalizing-parameters).
+  Mer information finns i [Anpassa parametrar](../../installation/using/installing-packages-with-linux.md#personalizing-parameters).
 
 
 ## Dynamisk sidsäkerhet och vidarebefordran {#dynamic-page-security-and-relays}
@@ -234,7 +235,7 @@ sh
 
 I **exec** noden i serverkonfigurationsfilen måste du referera till den tidigare skapade filen i **svartlistFile** -attribut.
 
-**Endast för Linux**: i serverkonfigurationsfilen rekommenderar vi att du anger en användare som är dedikerad till att köra externa kommandon för att förbättra säkerhetskonfigurationen. Den här användaren anges i **exec** konfigurationsfilens nod. Alla parametrar som är tillgängliga i **serverConf.xml** finns listade i [section](../../installation/using/the-server-configuration-file.md).
+**Endast för Linux**: i serverkonfigurationsfilen rekommenderar vi att du anger en användare som ska köra externa kommandon för att förbättra säkerhetskonfigurationen. Den här användaren anges i **exec** konfigurationsfilens nod. Alla parametrar som är tillgängliga i **serverConf.xml** finns listade i [section](../../installation/using/the-server-configuration-file.md).
 
 >[!NOTE]
 >
@@ -257,7 +258,7 @@ Den här användaren måste läggas till i användarlistan för Adobe Campaign-o
 
 ## Spårning av överflödiga {#redundant-tracking}
 
-När flera servrar används för omdirigering måste de kunna kommunicera med varandra via SOAP-anrop för att kunna dela information från de URL:er som ska omdirigeras. När leveransen påbörjas är det möjligt att inte alla omdirigeringsservrar är tillgängliga. därför kanske de inte har samma informationsnivå.
+När flera servrar används för omdirigering måste de kunna kommunicera med varandra via SOAP-anrop för att kunna dela information från de URL:er som ska omdirigeras. När leveransen startar är det möjligt att inte alla omdirigeringsservrar är tillgängliga. Därför har de kanske inte samma informationsnivå.
 
 >[!NOTE]
 >
@@ -331,4 +332,4 @@ Varje process som konfigureras i den här filen har en **processRestartTime** -a
 
 >[!IMPORTANT]
 >
->Ta inte bort det här attributet. Alla processer måste startas om varje dag.
+>Ta inte bort attributet. Alla processer måste startas om varje dag.

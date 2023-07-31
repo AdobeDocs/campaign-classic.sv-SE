@@ -2,11 +2,12 @@
 product: campaign
 title: Migrera till Adobe Analytics Connector
 description: Campaign - Analytics Connector - frågor och svar
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+feature: Technote, Analytics Integration
+badge-v7-only: label="v7" type="Informative" tooltip="Gäller endast Campaign Classic v7"
 exl-id: 5bf61654-3d68-4560-a93f-7a768a2c5be4
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '858'
+source-wordcount: '865'
 ht-degree: 4%
 
 ---
@@ -31,7 +32,7 @@ Om du har frågor om dessa ändringar kan du läsa [Vanliga frågor](#faq-aa). M
 
 Nu finns det en ny integrering mellan Campaign Classic v7 och Adobe Analytics. Större förändringar visas nedan.
 
-* The **Kontaktdatum** Klassificeringen, som använder typen datum, har ersatts av Adobe Analytics. För migrerade integreringar förblir den fortfarande av samma typ. För alla **Kontaktdatum** som skapats av Campaign, typen kommer att **Sträng**.
+* The **Kontaktdatum** Klassificeringen, som använder typen datum, har ersatts av Adobe Analytics. För migrerade integreringar kommer den fortfarande att vara av samma typ. För alla **Kontaktdatum** som skapats av Campaign, typen kommer att **Sträng**.
 
 * **Bearbetar regler** skapas av Adobe Campaign som en del av nya integreringar. Antingen **Bearbetar regler** ska skapas manuellt från Adobe Analytics eller direkt med JavaScript-implementering på klientsidan. **Bearbetar regler** kommer att förbli intakt för befintliga integreringar.
 
@@ -39,13 +40,13 @@ Nu finns det en ny integrering mellan Campaign Classic v7 och Adobe Analytics. S
 
 * Observera att `nlserver` -processen bör konfigureras med IMS Technical Account User för att den nya anslutningen ska fungera. Denna ändring måste göras av Adobe. Om du vill implementera detta kontaktar du [Adobe kundtjänst](https://helpx.adobe.com/se/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
 
-* Om du var Adobe Genesis-API:er i anpassade arbetsflöden för att hämta in och flytta data från Adobe Analytics måste du nu använda de nya Adobe Analytics 1.4/2.0-API:erna. [Läs mer](https://adobeexchangeec.zendesk.com/hc/en-us/articles/360047148832-Replacements-for-Data-Connector-API-calls)
+* Om du var Adobe Genesis API:er i anpassade arbetsflöden för att hämta in och flytta data från Adobe Analytics måste du nu använda de nya Adobe Analytics 1.4/2.0 API:erna. [Läs mer](https://adobeexchangeec.zendesk.com/hc/en-us/articles/360047148832-Replacements-for-Data-Connector-API-calls)
 
 ## Påverkas du?
 
 Om du använder den befintliga Adobe Analytics Data Connector (som tidigare kallades Genesis-integrering) och integreringen implementerades på en lägre version än Campaign 21.1.3 påverkas du.
 
-Lär dig hur du kontrollerar din version [i det här avsnittet](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version).
+Lär dig kontrollera din version [i det här avsnittet](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version).
 
 ## Hur uppdaterar jag?
 
@@ -66,7 +67,7 @@ I detaljerat läge skrivs begärande- och svarshuvuden också ut för varje API-
 
 Som lokal användare kan du implementera det utförliga läget enligt följande:
 
-* Så här aktiverar du utförligt läge för användargränssnittet: kör om `web` bearbeta i detaljerat läge.
+* Aktivera utförligt läge för användargränssnittet: kör om `web` bearbeta i detaljerat läge.
 * Aktivera utförligt läge för **webAnalytics** arbetsflöden: välj **Kör i motorn** från arbetsflödesegenskaperna och köra om `wfserver` i detaljerat läge.
 
 **Vad betyder felet &#39;Integrationsägare inte administratör&#39;?**
@@ -75,7 +76,7 @@ Läs mer om Data Connectors `Integration Owner Not Admin` Fel i [den här sidan]
 
 **Vad händer med gamla data och rapportsviter när migreringen till den nya kopplingen är klar?**
 
-Efter migreringen kommer en ny koppling (migrerad från den gamla kopplingen) att börja skicka data till samma rapportserie och befintliga data påverkas inte: kommer att läggas till befintliga data.
+Efter migreringen kommer en ny koppling (migrerad från den gamla kopplingen) att börja skicka data till samma rapportsvit och befintliga data kommer inte att påverkas: de läggs till i befintliga data.
 
 **Vissa befintliga evars/händelser/rapportsviter i Analytics är inte synliga i Campaign. Vad ska jag göra?**
 
@@ -83,12 +84,12 @@ Integrationen bygger på data i Token för det tekniska kontot för den dagliga 
 
 Om vi läser information om en Analytics-komponent (som mått/dimensioner/segment/rapportsviter) returnerar API inte dessa komponenter i resultatet (vilket kan se ut som om något har tagits bort på Analytics-sidan eller inte finns). Analys-API:t kommer att ignorera dessa begäranden och felmeddelanden.
 
-Lösningen är att uppdatera **Produktprofil** i Analytics User Context of Technical User Token med de nyskapade/saknade komponenterna genom att lägga till dessa komponenter i [Adobe Admin Console](https://adminconsole.adobe.com/){_blank}. Mer vägledning får du av [Adobe kundtjänst](https://helpx.adobe.com/se/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
+Lösningen är att uppdatera **Produktprofil** i Analytics User Context of Technical User Token med de nyskapade/saknade komponenterna genom att lägga till dessa komponenter i [Adobe Admin Console](https://adminconsole.adobe.com/){_blank}. Om du vill ha mer vägledning kan du kontakta [Adobe kundtjänst](https://helpx.adobe.com/se/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
 
 ## Användbara länkar
 
 * [Uppgradera din miljö](../../production/using/build-upgrade.md)
 * [Vanliga frågor och svar om builduppgradering](../../platform/using/faq-build-upgrade.md)
-* [Ladda ned Campaign Classic build](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html)
+* [Hämta Campaign Classic build](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html)
 * [Gör den nya klientkonsolen tillgänglig för användare](../../installation/using/client-console-availability-for-windows.md)
 * [Installera Campaign Client Console](../../installation/using/installing-the-client-console.md)

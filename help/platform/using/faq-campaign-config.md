@@ -2,14 +2,15 @@
 product: campaign
 title: Vanliga frågor och svar om inställningar i Campaign
 description: Vanliga frågor och svar om Campaign Classic
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+feature: Troubleshooting, Application Settings
+badge-v7-only: label="v7" type="Informative" tooltip="Gäller endast Campaign Classic v7"
 audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: 50bed489-2a0f-4123-a326-3d68c8295662
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '758'
+source-wordcount: '765'
 ht-degree: 92%
 
 ---
@@ -42,7 +43,7 @@ Som expertanvändare kan du konfigurera spårningsfunktioner via instansen i Cam
 
 ## Hur konfigurerar man e-postmeddelandets levererbarhet? {#how-to-configure-email-deliverability-}
 
-Förutom [Adobe Deliverability Best Practice Guide](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html?lang=sv), läs igenom de tekniska rekommendationerna för leverans för att förstå hur ni ska konfigurera instansen för att maximera kapaciteten för kampanjleverans.
+Förutom [Adobe Deliverability Best Practice Guide](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html?lang=sv), läs igenom de tekniska rekommendationerna för leverans för att förstå hur ni ska konfigurera instansen för att maximera kapaciteten för Campaign-leverans.
 
 [Klicka här för att läsa mer](../../delivery/using/about-deliverability.md).
 

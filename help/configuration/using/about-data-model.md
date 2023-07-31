@@ -2,12 +2,12 @@
 product: campaign
 title: Kom igång med datamodellen Campaign Classic
 description: Lär dig hur du utökar datamodellen i Campaign, redigerar scheman, använder API:er med mera
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
-feature: Data Model
+badge-v7-only: label="v7" type="Informative" tooltip="Gäller endast Campaign Classic v7"
+feature: Data Model, Configuration
 exl-id: 655b5928-b005-442f-b026-2f1b0c1abb99
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '980'
+source-wordcount: '987'
 ht-degree: 6%
 
 ---
@@ -46,7 +46,7 @@ Slutligen består en del av datamodellen av tekniska data som används för ans�
 
 Den inbyggda mottagartabellen i Adobe Campaign är en bra startpunkt för att skapa din datamodell. Den har ett antal fördefinierade fält och tabelllänkar som enkelt kan utökas. Detta är särskilt användbart när du främst riktar dig till mottagare, eftersom det passar en enkel mottagarorienterad datamodell.
 
-Fördelarna med att använda den inbyggda mottagartabellen är följande:
+Fördelarna med den inbyggda mottagartabellen är följande:
 
 * Arbeta med funktioner som prenumerationer, listor med mera.
 * Tillhandahåller en marknadsföringsdatabas med en mottagarcentrerad datamodell.
@@ -112,7 +112,7 @@ Läs mer om Campaign-datamodellen i följande avsnitt:
 
 * **Fullständig beskrivning av varje tabell** - Om du vill få tillgång till den fullständiga beskrivningen av varje tabell går du till **[!UICONTROL Admin > Configuration > Data schemas]**, välj en resurs i listan och klicka på **[!UICONTROL Documentation]** -fliken.
 
-   ![](assets/data-model_documentation-tab.png)
+  ![](assets/data-model_documentation-tab.png)
 
 
 * **Kampanjscheman** - Den fysiska och logiska strukturen hos de data som medföljer programmet beskrivs i XML. Den följer en grammatik som är specifik för Adobe Campaign och som kallas för ett schema. Läs mer om Adobe Campaign scheman [det här avsnittet](../../configuration/using/about-schema-reference.md).

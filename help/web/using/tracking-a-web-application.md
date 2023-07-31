@@ -2,13 +2,13 @@
 product: campaign
 title: Spåra besök i en webbapplikation
 description: Spåra besök i en webbapplikation
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
-feature: Web Apps
+badge-v7: label="v7" type="Informative" tooltip="Gäller Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Gäller även Campaign v8"
+feature: Web Apps, Reporting, Monitoring
 exl-id: 07bd36ce-c701-4998-974f-81fd4fac22a0
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '401'
+source-wordcount: '413'
 ht-degree: 4%
 
 ---
@@ -26,26 +26,26 @@ De viktigaste förbättringarna i den här versionen är följande:
 * Möjlighet att infoga flera spårningstaggar på samma sida för att underlätta definitionen av navigeringssökvägar (t.ex. köp, prenumeration, retur osv.).
 * Visa navigeringssökvägar och spårningstaggar för de olika sidorna på kontrollpanelen för webbprogram.
 
-   ![](assets/trackers_1.png)
+  ![](assets/trackers_1.png)
 
 * Genererar en fullständig spårningsrapport.
 
-   ![](assets/trackers_5.png)
+  ![](assets/trackers_5.png)
 
-   De viktigaste indikatorerna är följande:
+  De viktigaste indikatorerna är följande:
 
    * **Konverteringsgrad**: antal personer som visade alla steg i en navigeringssökväg.
    * **Studsfrekvens**: antal personer som endast visade det första steget
-   * **Konverteringstratt**: förlustnivå mellan varje steg.
+   * **Konverteringstratt**: förlustfrekvens mellan varje steg.
 
-   Dessutom har **Sektor** typdiagram visar populationen utifrån dess källa.
+  Dessutom har **Sektor** typdiagram visar populationen utifrån dess källa.
 
 ## Identifiera trafikkällan {#identifying-the-traffic-source}
 
 Två olika lägen kan användas för att identifiera var besökaren kommer ifrån när han eller hon öppnar ett webbprogram:
 
-1. Skicka en viss leverans för att ge åtkomst till webbsidorna: i detta fall är trafikkällan denna leverans,
-1. Koppla webbprogrammet till en dedikerad trafikkälla: i det här fallet måste det vara en extern leverans av typen &quot;trafikkälla&quot;. Den kan väljas från webbprogrammets egenskaper eller från målmappningen.
+1. Skicka en viss leverans för att ge åtkomst till webbsidorna: i det här fallet är trafikkällan den här leveransen,
+1. Kopplar webbprogrammet till en dedikerad trafikkälla: i det här fallet måste det vara en extern leverans av typen &quot;trafikkälla&quot;. Den kan väljas från webbprogrammets egenskaper eller från målmappningen.
 
    ![](assets/trackers_6.png)
 
@@ -61,7 +61,7 @@ För att identifiera trafikkällan i ett webbprogram söker Adobe Campaign efter
 
 ## Webbprogram utformade med DCE (Digital Content Editor) {#web-applications-designed-with-digital-content-editor--dce-}
 
-När ett webbprogram skapas med HTML-innehållsredigeraren - **Digital Content Editor (DCE)** - spårningstaggar infogas från **[!UICONTROL Properties]** -fliken i redigeraren. Mer information om Digital Content Editor (DCE) finns i [det här avsnittet](about-campaign-html-editor.md).
+När ett webbprogram skapas med HTML-innehållsredigeraren - **Digital Content Editor (DCE)** - spårningstaggar infogas från **[!UICONTROL Properties]** i redigeraren. Mer information om Digital Content Editor (DCE) finns i [det här avsnittet](about-campaign-html-editor.md).
 
 ![](assets/trackers_2.png)
 

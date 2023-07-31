@@ -2,14 +2,15 @@
 product: campaign
 title: Programobjekt
 description: Programobjekt
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+feature: Monitoring
+badge-v7-only: label="v7" type="Informative" tooltip="Gäller endast Campaign Classic v7"
 audience: production
 content-type: reference
 topic-tags: database-maintenance
 exl-id: fb4798d7-0a2c-455b-86b6-3dcb5fd25c82
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '459'
+source-wordcount: '466'
 ht-degree: 4%
 
 ---
@@ -20,7 +21,7 @@ ht-degree: 4%
 
 Inbyggda objekt bör övervakas och det är viktigt att förhindra att de växer för mycket.
 
-## Sekvens med ID:n {#sequence-of-ids}
+## Ordning med ID:n {#sequence-of-ids}
 
 Adobe Campaign använder en ID-sekvens som måste användas i enlighet med detta: **xtkNewId**. Om sekvensen konsumeras mycket snabbt (t.ex. från 100 000 per dag) måste du kontrollera att den överensstämmer med dina affärskrav, t.ex. skicka miljontals e-postmeddelanden per dag. Det går att definiera en dedikerad sekvens för särskilda tabeller. Du kan konfigurera ett arbetsflöde för att övervaka ID-användningen.
 
@@ -56,6 +57,6 @@ Om ett arbetsflöde importerar filer och inte använder standardfunktionerna må
 
 Varje [arbetsflöde](../../workflow/using/data-life-cycle.md#work-table) som importerar data till Adobe Campaign gör att databasens storlek växer.
 
-Kontrollera att arbetsflödena för att rensa eller rensa bort körs och att posterna rensas effektivt. Alla transaktionsdata och loggar måste rensas. Rensningsaktiviteten rensar endast standardtabellerna: spårning och breda loggar. Specifika tabeller måste rensas av specifika arbetsflöden. Se [det här avsnittet](../../workflow/using/monitoring-workflow-execution.md#purging-the-logs).
+Kontrollera att arbetsflödena för rensning eller tömning körs och att posterna effektivt rensas. Alla transaktionsdata och loggar måste rensas. Rensningsaktiviteten rensar endast standardtabellerna: spårning och breda loggar. Specifika tabeller måste rensas av specifika arbetsflöden. Se [det här avsnittet](../../workflow/using/monitoring-workflow-execution.md#purging-the-logs).
 
 Håll utkik efter åldersfördelade transaktionsdata genom att kontrollera det äldsta skapandedatumet för posterna.

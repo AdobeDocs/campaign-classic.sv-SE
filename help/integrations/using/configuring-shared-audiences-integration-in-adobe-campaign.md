@@ -2,15 +2,16 @@
 product: campaign
 title: Konfigurera integrering av delade målgrupper i Adobe Campaign
 description: Lär dig konfigurera integrering av delade målgrupper
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
+feature: Audiences, People Core Service Integration
+badge-v7: label="v7" type="Informative" tooltip="Gäller Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Gäller även Campaign v8"
 audience: integrations
 content-type: reference
 topic-tags: audience-sharing
 exl-id: a3e26cff-9609-4d91-8976-9213a30c3fd2
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '484'
+source-wordcount: '496'
 ht-degree: 3%
 
 ---
@@ -34,10 +35,10 @@ När du har skickat in den här begäran fortsätter Adobe till att tillhandahå
 
 Först måste vi konfigurera eller kontrollera externa konton i Adobe Campaign enligt följande:
 
-1. Klicka på **[!UICONTROL Explorer]** ikon.
+1. Klicka på **[!UICONTROL Explorer]** -ikon.
 1. Gå till **[!UICONTROL Administration > Platform > External accounts]**. Adobe borde ha konfigurerat SFTP-kontona och du borde ha fått den information som behövs.
 
-   * **[!UICONTROL importSharedAudience]**: konto för att importera målgrupper.
+   * **[!UICONTROL importSharedAudience]**: konto som används för att importera målgrupper.
    * **[!UICONTROL exportSharedAudience]**: konto som används för att exportera målgrupper.
 
    ![](assets/aam_config_1.png)
@@ -51,9 +52,9 @@ Först måste vi konfigurera eller kontrollera externa konton i Adobe Campaign e
    * **[!UICONTROL AWS S3 Account Server]**
 URL-adressen till servern ska fyllas i enligt följande:
 
-      ```
-      <S3bucket name>.s3.amazonaws.com/<s3object path>
-      ```
+     ```
+     <S3bucket name>.s3.amazonaws.com/<s3object path>
+     ```
 
    * **[!UICONTROL AWS access key ID]**
 Om du vill veta var du hittar ditt ID för AWS-åtkomstnyckel kan du läsa detta [page](https://docs.aws.amazon.com/general/latest/gr/aws-sec-cred-types.html#access-keys-and-secret-access-keys) .
@@ -63,6 +64,7 @@ Om du vill veta var du hittar din hemliga åtkomstnyckel till AWS kan du läsa d
 
    * **[!UICONTROL AWS Region]**
 Läs mer om AWS [page](https://aws.amazon.com/about-aws/global-infrastructure/regions_az/).
+
    ![](assets/aam_config_2.png)
 
 1. Klicka **[!UICONTROL Save]** och konfigurera **[!UICONTROL Import audiences from the Adobe Marketing Cloud]** externt konto enligt beskrivningen i föregående steg.
@@ -73,7 +75,7 @@ Dina externa konton har nu konfigurerats.
 
 The **Mottagare - besökar-ID** skapas inuti Audience Manager. Detta är en användbar datakälla som konfigurerats som standard för besökar-ID. Segment som skapas från Campaign kommer att ingå i den här datakällan.
 
-Så här konfigurerar du **[!UICONTROL Recipient - Visitor ID]** datakälla:
+Konfigurera **[!UICONTROL Recipient - Visitor ID]** datakälla:
 
 1. Från **[!UICONTROL Explorer]** nod, markera **[!UICONTROL Administration > Platform > AMC Data sources]**.
 1. Välj **[!UICONTROL Recipient - Visitor ID]**.

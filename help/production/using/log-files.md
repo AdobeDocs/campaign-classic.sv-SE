@@ -2,16 +2,17 @@
 product: campaign
 title: Loggfiler
 description: Loggfiler
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
-badge-v7-prem: label="on-premise & hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html" tooltip="Applies to on-premise and hybrid deployments only"
+feature: Monitoring
+badge-v7-only: label="v7" type="Informative" tooltip="Gäller endast Campaign Classic v7"
+badge-v7-prem: label="lokal och hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=sv" tooltip="Gäller endast lokala och hybrida driftsättningar"
 audience: production
 content-type: reference
 topic-tags: production-procedures
 exl-id: c9d427da-6965-4945-90f0-d0770701d55e
-source-git-commit: 4661688a22bd1a82eaf9c72a739b5a5ecee168b1
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '431'
-ht-degree: 1%
+source-wordcount: '456'
+ht-degree: 3%
 
 ---
 
@@ -23,11 +24,11 @@ Loggfilerna är ordnade enligt följande:
 
 ![](assets/d_ncs_directory.png)
 
-Varje **nlserver** I modulen genereras en loggfil som har sparats i följande katalog: **`<installation directory>`/var/`<instance>`/log/`<module>`.log**.
+Varje **nlserver** i skapas en loggfil som sparas i följande katalog: **`<installation directory>`/var/`<instance>`/log/`<module>`.log**.
 
-The **nlserver syslogd** sparas loggarna på disken. Den här modulen liknar Unix **syslog daemon**, men har anpassats för kompatibilitet mellan Unix och Windows. De andra Adobe Campaign-modulerna sparar inte sina loggar på disken. de delegerar uppgiften till **syslogd** genom att skicka UDP-paket.
+The **nlserver syslogd** sparas loggarna på disken. Den här modulen liknar Unix **syslog daemon**, men har anpassats för kompatibilitet mellan Unix och Windows. De andra Adobe Campaign-modulerna sparar inte sina loggar på disken utan delegerar uppgiften till **syslogd** genom att skicka UDP-paket.
 
-Som standard har Adobe Campaign **syslogd** som är installerad på den, men det går att använda en annan **syslog daemon**. Den här modulen skapar loggfilerna i **logg** katalog.
+Som standard har Adobe Campaign-plattformen **syslogd** som är installerad på den, men det går att använda en annan **syslog daemon**. Den här modulen skapar loggfilerna i **logg** katalog.
 
 Loggarna för moduler med flera instanser lagras i följande katalog: **`<installation directory>`/var/default/log/**. Samma loggfil delas av alla instanser (t.ex. **web.log**).
 
@@ -46,11 +47,11 @@ Loggfilerna för en instans visas i följande tabell:
 
 | Fil | Beskrivning |
 |---|---|
-| mta.log | loggar för mta-modulen |
+| mta.log | loggar för mta-modul |
 | mtachild.log | Bearbetningsloggar för meddelandeleverans |
 | wfserver.log | Loggar för arbetsflödesservermodulen |
 | runwf.log | Körningsloggar för arbetsflöde |
-| inMail.log | Logg för studsande e-postmodul |
+| inMail.log | Logg för studsmoduler |
 | logins.log | Loggar alla inloggningsförsök till Adobe Campaign (vare sig de lyckas eller inte) |
 
 >[!IMPORTANT]
@@ -59,7 +60,7 @@ Loggfilerna för en instans visas i följande tabell:
 
 För optimering av prestanda och lagring delas filen logins.log upp i flera filer, en varje dag (logins.yy-mm-dd.log) med högst 365 filer. Antalet dagar kan ändras i serverConf.xml, under syslogd (**maxNumberOfLoginsFiles** ). Läs dokumentationen på [serverkonfigurationsfil](../../installation/using/the-server-configuration-file.md#syslogd).
 
-Som standard är loggarna begränsade till två 10 MB-filer per modul och per instans. Den andra filen anropas: **`<modulename>`_2.log**. Storleken på loggarna är därför begränsad till 2&#42;10 MB per modul och per instans.
+Som standard är loggarna begränsade till två 10 MB-filer per modul och per instans. Den andra filen anropas: **`<modulename>`_2.log**. Loggarna är därför begränsade till 2&#42;10 MB per modul och per instans.
 
 Du kan dock behålla större filer. Om du vill aktivera det här ändrar du värdet för **maxFileSizeMb=&quot;10&quot;** i **syslogd** nod på **conf/serverConf.xml** -fil. Detta värde representerar den största tillåtna storleken i MB för en loggfil.
 

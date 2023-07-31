@@ -2,14 +2,14 @@
 product: campaign
 title: Bästa praxis för innehållsredigering
 description: Bästa praxis för innehållsredigering
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
-feature: Web Apps, Web Forms, Landing Pages
+badge-v7: label="v7" type="Informative" tooltip="Gäller Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Gäller även Campaign v8"
+feature: Web Apps, Web Forms, Landing Pages, Email Design
 exl-id: c1eccb48-59bf-412f-9c18-9cda2a022096
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '548'
-ht-degree: 6%
+source-wordcount: '560'
+ht-degree: 7%
 
 ---
 
@@ -23,35 +23,35 @@ För att säkerställa att redigeraren fungerar optimalt rekommenderar vi att du
 * Om HTML-sidan innehåller **JavaScript-skript** måste de köra **utan fel** utanför redigeraren.
 * När du skapar en mall rekommenderar vi att du lägger till ett **&quot;type&quot;**-attribut till taggar. `<input>` Den här informationen bearbetas av redigeraren och hjälper användaren att länka ett databasfält till formulärfältet när webbprogrammet konfigureras.
 
-   Exempel på HTML-kod i mallen:
+  Exempel på HTML-kod i mallen:
 
-   ```
-   <input id="email" type="email" name="email"/>
-   ```
+  ```
+  <input id="email" type="email" name="email"/>
+  ```
 
-   The **type** -attributet är synligt i gränssnittet i följande format:
+  The **type** -attributet är synligt i gränssnittet i följande format:
 
-   ![](assets/dce_sidebar_inputtypechanges.png)
+  ![](assets/dce_sidebar_inputtypechanges.png)
 
-   Den officiella listan med type-attribut är tillgänglig [på denna webbplats](https://www.w3schools.com/tags/att_input_type.asp).
+  Den officiella listan med type-attribut är tillgänglig [på denna webbplats](https://www.w3schools.com/tags/att_input_type.asp).
 
 * Steg för att simulera en slutsida med DCE:
 
-   ![](assets/dce_enchainement.png)
+  ![](assets/dce_enchainement.png)
 
 * Se till att det bara finns en `<body> </body>` på sidan.
 * När en CSS- eller JS-fil överförs, överförs inte bilderna i zip-filen. Referenserna till dessa bilder i CSS uppdateras därför inte.
 
 ## Format som stöds av Content Editor {#content-editor-supported-formats}
 
-Digital Content Editor stöder HTML-formatet: du kan växla till **källa** -läget när som helst.
+Redigeraren för digitalt innehåll har stöd för formatet HTML: du kan växla till **källa** -läget när som helst.
 
 Importfunktionen i Digital Content Editor fungerar enligt följande med följande format som stöds:
 
 * CSS: bilderna i ZIP-filen importeras inte. Referenserna till de här bilderna i CSS uppdateras inte.
 * JS: bilderna i ZIP-filen importeras inte. Referenserna till de här bilderna i JS uppdateras inte.
 * Iframe: de länkade sidorna importeras inte.
-* Landningssidor och webbprogram: om **formulär** -taggen saknas, en varning visas. A `<form> </form>` måste alltid finnas i meddelandetexten.
+* Landningssidor och webbprogram: om en **formulär** -taggen saknas, en varning visas. A `<form> </form>` måste alltid finnas i meddelandetexten.
 
 Digital Content Editor fungerar även med följande kodsidor som stöds:
 

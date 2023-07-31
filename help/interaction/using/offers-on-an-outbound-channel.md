@@ -2,15 +2,16 @@
 product: campaign
 title: Erbjudanden på en utgående kanal
 description: Erbjudanden på en utgående kanal
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
+feature: Interaction, Offers
+badge-v7: label="v7" type="Informative" tooltip="Gäller Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Gäller även Campaign v8"
 audience: interaction
 content-type: reference
 topic-tags: case-study
 exl-id: 77fee343-09d1-4d60-be43-efe02953a70c
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '445'
+source-wordcount: '457'
 ht-degree: 3%
 
 ---
@@ -27,7 +28,7 @@ I vår databas finns det en kategori reseerbjudanden till Afrika. Berättigandet
 
    ![](assets/offer_delivery_example_001.png)
 
-1. Redigera e-postleveransen och klicka på **[!UICONTROL Offers]** ikon.
+1. Redigera e-postleveransen och klicka på **[!UICONTROL Offers]** -ikon.
 
    ![](assets/offer_delivery_example_002.png)
 
@@ -59,8 +60,8 @@ I vår databas finns det en kategori reseerbjudanden till Afrika. Berättigandet
 
    ![](assets/offer_delivery_example_009.png)
 
-1. Spara leveransen och starta arbetsflödet för målinriktning.
-1. Öppna leveransen och klicka på **[!UICONTROL Audit]** leveransflik: ser du att erbjudandemotorn har valt vilka erbjudanden som ska göras från de olika erbjudandena i katalogen.
+1. Spara leveransen och starta arbetsflödet.
+1. Öppna leveransen och klicka på **[!UICONTROL Audit]** under leveransen: du kan se att erbjudandemotorn har valt vilka erbjudanden som ska göras från de olika erbjudandena i katalogen.
 
    ![](assets/offer_delivery_example_010.png)
 
@@ -78,7 +79,7 @@ I vår databas finns det en kategori reseerbjudanden till Afrika. Berättigandet
 
    ![](assets/offer_simulation_example_003.png)
 
-1. Klicka på **[!UICONTROL Edit]** tabben **[!UICONTROL Scope]**.
+1. Klicka på **[!UICONTROL Edit]** tabbtangenten, sedan **[!UICONTROL Scope]**.
 
    ![](assets/offer_simulation_example_004.png)
 
@@ -121,7 +122,7 @@ I vår databas finns det en kategori reseerbjudanden till Afrika. Berättigandet
 
    ![](assets/offer_simulation_example_012.png)
 
-1. Om det behövs kan du ändra omfångsinställningarna och köra simuleringen igen genom att klicka på **[!UICONTROL Start simulation]**.
+1. Om det behövs kan du ändra scopeinställningarna och köra simuleringen igen genom att klicka på **[!UICONTROL Start simulation]**.
 
    ![](assets/offer_simulation_example_010.png)
 

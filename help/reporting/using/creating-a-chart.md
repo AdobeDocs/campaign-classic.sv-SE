@@ -2,13 +2,13 @@
 product: campaign
 title: Skapa ett diagram
 description: Lär dig utforma ett diagram
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
-feature: Reporting
+feature: Reporting, Monitoring
+badge-v7: label="v7" type="Informative" tooltip="Gäller Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Gäller även Campaign v8"
 exl-id: d32b614f-82c1-4363-816c-4ebedaa5cfe9
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '525'
+source-wordcount: '537'
 ht-degree: 3%
 
 ---
@@ -21,7 +21,7 @@ Data i databasen kan också samlas in och visas i ett diagram. Adobe Campaign ha
 
 Diagram infogas direkt på en rapportsida via högerklicksmenyn eller verktygsfältet.
 
-## Skapa steg {#creation-steps}
+## Skapandesteg {#creation-steps}
 
 Så här skapar du ett diagram i en rapport:
 
@@ -39,15 +39,15 @@ Så här skapar du ett diagram i en rapport:
 
    * Klicka på **[!UICONTROL Filter data...]** om du vill definiera filtervillkor för data i databasen.
 
-      ![](assets/reporting_graph_add_filter.png)
+     ![](assets/reporting_graph_add_filter.png)
 
    * Om du vill använda kontextuella data väljer du **[!UICONTROL Context data]** från **[!UICONTROL Source]** och klicka på **[!UICONTROL Advanced settings...]** länk. Välj sedan de data som statistiken ska beröra.
 
-      ![](assets/reporting_graph_from_context.png)
+     ![](assets/reporting_graph_from_context.png)
 
-      Du kan sedan komma åt kontextdata för att definiera de värden som ska visas i diagrammet:
+     Du kan sedan komma åt kontextdata för att definiera de värden som ska visas i diagrammet:
 
-      ![](assets/reporting_graph_select-from_context.png)
+     ![](assets/reporting_graph_select-from_context.png)
 
 ## Diagramtyper och varianter {#chart-types-and-variants}
 
@@ -133,7 +133,7 @@ Med diagram kan du visa statistik om insamlade data.
 
 Statistiken definieras via **[!UICONTROL Series parameters]** i **[!UICONTROL Data]** -fliken.
 
-Om du vill skapa en ny statistik klickar du på **[!UICONTROL Add]** och konfigurera rätt fönster. De tillgängliga beräkningstyperna beskrivs nedan.
+Om du vill skapa ny statistik klickar du på **[!UICONTROL Add]** och konfigurera rätt fönster. De tillgängliga beräkningstyperna beskrivs nedan.
 
 ![](assets/reporting_add_statistics.png)
 

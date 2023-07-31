@@ -2,15 +2,16 @@
 product: campaign
 title: Bästa praxis och begränsningar för FDA-kampanjer
 description: Lär dig bästa praxis och begränsningar när du arbetar med en extern databas (FDA)
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+feature: Installation, Federated Data Access
+badge-v7-only: label="v7" type="Informative" tooltip="Gäller endast Campaign Classic v7"
 audience: platform
 content-type: reference
 topic-tags: connectors
 exl-id: f3980859-2837-416b-a0ef-2b369d2d50bd
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '409'
-ht-degree: 4%
+source-wordcount: '416'
+ht-degree: 5%
 
 ---
 
@@ -20,7 +21,7 @@ ht-degree: 4%
 
 ## Optimera e-postpersonalisering med externa data {#optimizing-email-personalization-with-external-data}
 
-Du kan förbearbeta meddelandepersonalisering i ett dedikerat arbetsflöde. Om du vill göra det använder du **[!UICONTROL Prepare the personalization data with a workflow]** alternativ, finns i **[!UICONTROL Analysis]** -fliken för leveransegenskaperna.
+Du kan förbearbeta meddelandepersonalisering i ett dedikerat arbetsflöde. Använd **[!UICONTROL Prepare the personalization data with a workflow]** alternativ, finns i **[!UICONTROL Analysis]** -fliken för leveransegenskaperna.
 
 Under leveransanalysen skapar och kör det här alternativet automatiskt ett arbetsflöde som lagrar alla data som är länkade till målet i en tillfällig tabell, inklusive data från tabeller som är länkade i en extern databas.
 
@@ -40,7 +41,7 @@ I flera Adobe Campaign-arbetsflödesaktiviteter kan du använda data som lagras 
 
 ## FDA-begränsningar {#limitations}
 
-FDA-alternativet används för att ändra data i externa databaser i batchläge i arbetsflöden. För att undvika prestandaproblem rekommenderar vi inte att du använder FDA-modulen i samband med enhetsåtgärder som: personalisering, interaktion, meddelanden i realtid osv.
+FDA-alternativet används för att ändra data i externa databaser i batchläge i arbetsflöden. För att undvika prestandaproblem bör du inte använda FDA-modulen i samband med enhetsåtgärder som personalisering, interaktion, meddelanden i realtid osv.
 
 Undvik de åtgärder som behöver använda både Adobe Campaign och den externa databasen så mycket som möjligt. Om du vill göra det kan du:
 

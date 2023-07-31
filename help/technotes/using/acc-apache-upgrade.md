@@ -2,10 +2,11 @@
 product: campaign
 title: Technote - Adobe Campaign - säkerhetsuppdatering av Apache-version
 description: Adobe Campaign - säkerhetsuppdatering av Apache-version
+feature: Technote, Upgrade
 hide: true
 hidefromtoc: true
 exl-id: 3d2f5d1d-4b31-4cc6-b6fb-13589856e00c
-source-git-commit: a3eae4e253f66f5a651ffe0458f60b1f8bdf2258
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
 source-wordcount: '539'
 ht-degree: 0%
@@ -25,42 +26,43 @@ Adobe Campaign-teamet kommer att genomföra säkerhetsuppgraderingen av Apache-v
 
 Uppgraderingen förväntas att köras automatiskt utanför kontorstid så att du kan fortsätta använda Campaign-tjänsten utan avbrott.
 
-Din(a) icke-produktionsinstans(er) kommer att uppgraderas av Adobe först, sedan kommer din(a) produktionsinstans(er) att uppgraderas. Eftersom detta är en automatisk uppgraderingsprocess som ägs av Adobe behöver du inte vidta några åtgärder. Om du får problem kan du kontakta [Adobe kundtjänst](https://experienceleague.adobe.com/?support-solution=Campaign#support).
+Din(a) icke-produktionsinstans(er) kommer att uppgraderas av Adobe först, sedan kommer dina produktionsinstanser att uppgraderas. Eftersom detta är en automatisk uppgraderingsprocess som ägs av Adobe behöver du inte vidta några åtgärder. Om du får problem kan du kontakta [Adobe kundtjänst](https://experienceleague.adobe.com/?support-solution=Campaign#support).
 
 
 >[!NOTE]
 >Denna uppgradering kräver att webbservern Apache startas om. Nedtiden överstiger inte 10 minuter inom den tidsperiod som anges nedan.
+> 
 
 ## Vanliga frågor och svar {#apache-faq}
 
 * **Varför är detta en obligatorisk uppgradering?**
 
-   Den aktuella Apache-versionen är sårbar och kan utgöra ett säkerhetshot. Det är viktigt att dina Campaign-instanser uppgraderas till den senaste tillämpliga Apache-versionen för att hantera säkerhetsrisken.
+  Den aktuella Apache-versionen är sårbar och kan utgöra ett säkerhetshot. Det är viktigt att dina Campaign-instanser uppgraderas till den senaste tillämpliga Apache-versionen för att hantera säkerhetsrisken.
 
 * **Vilka kunder vill uppgradera?**
 
-   Alla kunder som använder Campaign-miljöer som har implementerats i äldre Apache-versioner uppgraderas till den senaste tillämpliga Apache-versionen.
+  Alla kunder som använder Campaign-miljöer som har implementerats i äldre Apache-versioner uppgraderas till den senaste tillämpliga Apache-versionen.
 
 * **Vilka är de förväntade driftsavbrotten?**
 
-   Förväntat driftstopp är under 10 minuter.
+  Förväntat driftstopp är under 10 minuter.
 
 * **Kräver kunden några åtgärder för denna säkerhetsuppgradering?**
 
-   Inga åtgärder krävs eftersom säkerhetsuppgraderingen körs automatiskt.
+  Inga åtgärder krävs eftersom säkerhetsuppgraderingen körs automatiskt.
 
 * **Hur påverkar det pågående kampanjerna/arbetsflödena under underhållsperioden?**
 
-   Under underhållsperioden stoppas både arbetsflödet och posttjänsterna och de schemalagda aktiviteterna körs inte. Alla pågående aktiviteter eller processer som körs avbryts under driftstoppet tills servern startas om. När aktiviteten har slutförts och servern har startats om återupptas alla tjänster.
+  Under underhållsperioden stoppas både arbetsflödet och posttjänsterna och de schemalagda aktiviteterna körs inte. Alla pågående aktiviteter eller processer som körs avbryts under driftstoppet tills servern startas om. När aktiviteten har slutförts och servern har startats om återupptas alla tjänster.
 
 * **Vilka valideringar behöver kunderna köra?**
 
-   Ingen specifik testning krävs för denna säkerhetsuppgradering. Om något problem uppstår, var vänlig och kontakta [Adobe kundtjänst](https://experienceleague.adobe.com/?support-solution=Campaign#support).
+  Ingen specifik testning krävs för denna säkerhetsuppgradering. Om något problem uppstår, kontakta [Adobe kundtjänst](https://experienceleague.adobe.com/?support-solution=Campaign#support).
 
 
 * **Kan jag begära en ändring av datum/tid för den schemalagda säkerhetsuppgraderingsplatsen?**
 
-   Eftersom det här är en säkerhetskorrigering rekommenderar vi att du anpassar dig till det befintliga schemat.
+  Eftersom det här är en säkerhetskorrigering rekommenderar vi att du anpassar dig till det befintliga schemat.
 
 
 För alla andra frågor kan du kontakta [Adobe kundtjänst](https://experienceleague.adobe.com/?support-solution=Campaign#support).

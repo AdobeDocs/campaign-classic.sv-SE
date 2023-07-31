@@ -2,10 +2,10 @@
 product: campaign
 title: Skicka transaktionsmeddelanden med bilagor via e-post
 description: Lär dig hur du skickar transaktionsmejl med personliga och/eller personliga bilagor med Adobe Campaign
+feature: Transactional Messaging, Message Center
 badge-v7-only: label="v7" type="Informative" tooltip="Gäller endast Campaign Classic v7"
-feature: Transactional Messaging
 exl-id: 755d2364-f6c4-4943-97e8-3ed52a0f2665
-source-git-commit: 728fc285fbd562003199c53339899bbc4441bfc6
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
 source-wordcount: '670'
 ht-degree: 2%
