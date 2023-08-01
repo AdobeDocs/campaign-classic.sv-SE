@@ -2,13 +2,13 @@
 product: campaign
 title: Förstå leveransfel
 description: Lär dig mer om leveransfel
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
+badge-v7: label="v7" type="Informative" tooltip="Gäller Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Gäller även Campaign v8"
 feature: Monitoring, Deliverability
 exl-id: 86c7169a-2c71-4c43-8a1a-f39871b29856
-source-git-commit: 3c1a0f435dce5e1f54f701e742f393db066ad78f
+source-git-commit: dbbc5d9f354357e5ca13eaeffddf67865480070d
 workflow-type: tm+mt
-source-wordcount: '2614'
+source-wordcount: '2624'
 ht-degree: 14%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 14%
 
 ## Om leveransfel {#about-delivery-failures}
 
-När ett meddelande (e-post, SMS, push-meddelanden) inte kan skickas till en profil skickar fjärrservern automatiskt ett felmeddelande som hämtas av Adobe Campaign-plattformen och är kvalificerat för att avgöra om e-postadressen eller telefonnumret ska placeras i karantän eller inte. Se [E-posthantering](#bounce-mail-management).
+När ett meddelande (e-post, SMS, push-meddelanden) inte kan skickas till en profil skickar fjärrservern automatiskt ett felmeddelande som hämtas av Adobe Campaign-plattformen och är kvalificerat för att avgöra om e-postadressen eller telefonnumret ska placeras i karantän eller inte. Se [E-posthantering med studs](#bounce-mail-management).
 
 >[!NOTE]
 >
@@ -34,7 +34,7 @@ Meddelanden kan också uteslutas under färdigställandet av leveransen om en ad
 **Relaterade ämnen:**
 
 * [Leveransloggar och historik](delivery-dashboard.md#delivery-logs-and-history)
-* [Misslyckad status](delivery-performances.md#failed-status)
+* [Status misslyckades](delivery-performances.md#failed-status)
 * [Typ av leveransfel och orsaker](#delivery-failure-types-and-reasons)
 
 ## Typ av leveransfel och orsaker {#delivery-failure-types-and-reasons}
@@ -89,7 +89,7 @@ Möjliga orsaker till leveransfel är:
    <td> Kontrolladress </td> 
    <td> Ignorerad </td> 
    <td> 127 </td> 
-   <td> Mottagarens adress är en del av kontrollgruppen.<br /> </td> 
+   <td> Mottagarens adress ingår i kontrollgruppen.<br /> </td> 
   </tr> 
   <tr> 
    <td> Dubbel </td> 
@@ -125,7 +125,7 @@ Möjliga orsaker till leveransfel är:
    <td> Postlådan är full </td> 
    <td> Mjuk </td> 
    <td> 5 </td> 
-   <td> Den här användarens postlåda är full och kan inte ta emot fler meddelanden. Den här profilen används igen tills felantalet är 5. Därefter sätts postens status till Karantän och inga nya försök görs.<br /> Den här typen av fel hanteras av en rensningsprocess. Adressen har en giltig status efter 30 dagar.<br /> Varning: För att adressen ska tas bort automatiskt från listan över adresser i karantän måste det tekniska arbetsflödet för databassorensning startas.<br /> </td> 
+   <td> Den här användarens postlåda är full och kan inte ta emot fler meddelanden. Den här profilen används igen tills felantalet är 5. Därefter sätts postens status till Karantän och inga nya försök görs.<br /> Den här typen av fel hanteras av en rensningsprocess. Adressen har en giltig status efter 30 dagar.<br /> Varning! För att adressen ska tas bort automatiskt från listan över adresser i karantän måste det tekniska arbetsflödet för databasrensning startas.<br /> </td> 
   </tr> 
   <tr> 
    <td> Inte ansluten </td> 
@@ -140,7 +140,7 @@ Möjliga orsaker till leveransfel är:
    <td> Adressen kvalificeras eftersom felet inte har ökats ännu. Den här typen av fel inträffar när ett nytt felmeddelande skickas av servern: Det kan vara ett isolerat fel, men om det inträffar igen ökar felräknaren, som varnar de tekniska teamen. De kan sedan göra en meddelandeanalys och kvalificera felet via <span class="uicontrol">Administration</span> / <span class="uicontrol">Campaign Management</span> / <span class="uicontrol">Hantering av ej slutprodukter</span> i trädstrukturen.<br /> </td> 
   </tr> 
   <tr> 
-   <td> Ej berättigade till erbjudandena </td> 
+   <td> Erbjudandena är inte giltiga </td> 
    <td> Ignorerad </td> 
    <td> 16 </td> 
    <td> Mottagaren var inte berättigad till erbjudandena i leveransen.<br /> </td> 
@@ -161,7 +161,7 @@ Möjliga orsaker till leveransfel är:
    <td> Okvalificerad adress </td> 
    <td> Ignorerad </td> 
    <td> 15 </td> 
-   <td> Postadressen har inte kvalificerats.<br /> </td> 
+   <td> Posten har inte kvalificerats.<br /> </td> 
   </tr> 
   <tr> 
    <td> Onåbar </td> 
@@ -196,9 +196,9 @@ Standardkonfigurationen tillåter fem försök med en timmes intervall, följt a
 
 ## Synkrona och asynkrona fel {#synchronous-and-asynchronous-errors}
 
-Ett meddelande kan misslyckas omedelbart (synkront fel), eller senare, efter att det har skickats (asynkront fel).
+Ett meddelande kan misslyckas omedelbart (synkront fel) eller senare efter att det har skickats (asynkront fel).
 
-* Synkront fel: Om fjärre-postservern som kontaktades av Adobe Campaign-leveransservern omedelbart returnerade ett felmeddelande, får leveransen inte skickas till profilens server. Adobe Campaign kvalificerar varje fel för att avgöra om e-postadresserna i fråga ska sättas i karantän eller inte. Se [Kvalifikation av studsmeddelanden](#bounce-mail-qualification).
+* Synkront fel: Fjärre-postservern som kontaktades av Adobe Campaign-leveransservern returnerade omedelbart ett felmeddelande. Leveransen får inte skickas till profilens server. Adobe Campaign kvalificerar varje fel för att avgöra om e-postadresserna i fråga ska sättas i karantän eller inte. Se [Kvalifikation av studsmeddelanden](#bounce-mail-qualification).
 * Asynkront fel: Ett studsmeddelande eller en SR skickades senare av den mottagande servern. Det här e-postmeddelandet läses in i en teknisk postlåda som programmet använder för att etikettera meddelanden med ett fel. Asynkrona fel kan uppstå upp till en vecka efter att en leverans har skickats.
 
   >[!NOTE]
@@ -211,7 +211,7 @@ Ett meddelande kan misslyckas omedelbart (synkront fel), eller senare, efter att
   >
   >Klagomålshanteringen beskrivs närmare i [Leveranshantering](about-deliverability.md) -avsnitt.
 
-## E-posthantering {#bounce-mail-management}
+## E-posthantering med studs {#bounce-mail-management}
 
 På Adobe Campaign-plattformen kan du hantera e-postleveransfel via studsfunktionen.
 
@@ -229,19 +229,19 @@ För lokala installationer och värdbaserade/hybridinstallationer som använder 
 >
 >För värdbaserade eller hybridinstallationer, om du har uppgraderat till [Förbättrad MTA](sending-with-enhanced-mta.md):
 >
->* Studentkvalifikationer i **[!UICONTROL Delivery log qualification]** tabellen används inte längre för **synkron** felmeddelanden vid leveransfel. Den förbättrade MTA-metoden avgör studstyp och kvalifikationer och skickar tillbaka informationen till Campaign.
+>* Studenternas kvalifikationer i **[!UICONTROL Delivery log qualification]** tabellen används inte längre för **synkron** felmeddelanden vid leveransfel. Den förbättrade MTA-metoden avgör studstyp och kvalifikationer och skickar tillbaka informationen till Campaign.
 >
 >* **** Asynkrona studsningar är fortfarande kvalificerade inMail-processen enligt **[!UICONTROL Inbound email]**-reglerna. Mer information finns i [Regler för e-posthantering](#email-management-rules).
 >
->* För instanser som använder den förbättrade MTA-metoden **utan webhooks/EFS**, **[!UICONTROL Inbound email]** regler kommer också att användas för att bearbeta synkrona studsmeddelanden från Förbättrat MTA, med samma e-postadress som för asynkrona studsmeddelanden.
+>* För instanser som använder den förbättrade MTA-metoden **utan Webhooks**, **[!UICONTROL Inbound email]** regler kommer också att användas för att bearbeta synkrona studsmeddelanden från Förbättrat MTA, med samma e-postadress som för asynkrona studsmeddelanden.
 
-För lokala installationer och värdbaserade/hybridinstallationer som använder den äldre Campaign MTA får Adobe Campaign-leveransservern ett felmeddelande från meddelandeservern eller fjärr-DNS-servern när leveransen av ett e-postmeddelande misslyckas. Listan med fel består av strängar i meddelandet som returneras av fjärrservern. Feltyper och orsaker tilldelas till varje felmeddelande.
+För lokala installationer och värdbaserade/hybridinstallationer som använder den äldre Campaign MTA får Adobe Campaign-leveransservern ett felmeddelande från meddelandeservern eller fjärr-DNS-servern när leveransen av ett e-postmeddelande misslyckas. Listan med fel består av strängar som finns i meddelandet som returneras av fjärrservern. Feltyper och orsaker tilldelas till varje felmeddelande.
 
 Den här listan är tillgänglig via **[!UICONTROL Administration > Campaign Management > Non deliverables Management > Delivery log qualification]** nod. Det innehåller alla regler som Adobe Campaign använder för att kvalificera leveransfel. Den är inte uttömmande och uppdateras regelbundet av Adobe Campaign och kan även hanteras av användaren.
 
 ![](assets/tech_quarant_rules_qualif.png)
 
-Meddelandet som returnerades av fjärrservern vid den första förekomsten av den här feltypen visas i **[!UICONTROL First text]** kolumn i **[!UICONTROL Delivery log qualification]** tabell. Om den här kolumnen inte visas klickar du på **[!UICONTROL Configure list]** längst ned till höger i listan för att markera den.
+Meddelandet som returnerades av fjärrservern vid den första förekomsten av den här feltypen visas i **[!UICONTROL First text]** kolumn i **[!UICONTROL Delivery log qualification]** tabell. Om kolumnen inte visas klickar du på **[!UICONTROL Configure list]** längst ned till höger i listan för att markera den.
 
 ![](assets/tech_quarant_rules_qualif_text.png)
 
@@ -255,9 +255,9 @@ Med den här processen kan du sammanföra alla fel av samma typ och undvika fler
 
 Studsade e-postmeddelanden kan ha följande kvalificeringsstatus:
 
-* **[!UICONTROL To qualify]** : studsposten inte kunde kvalificeras. Kvalificering måste tilldelas slutkundsteamet för att garantera effektiv plattformsleverans. Så länge den inte är kvalificerad används studentposten inte för att utöka listan över regler för e-posthantering.
-* **[!UICONTROL Keep]** : studsmeddelandet är kvalificerat och kommer att användas av **Uppdatera för leverans** arbetsflöde som ska jämföras med befintliga regler för e-posthantering och berika listan.
-* **[!UICONTROL Ignore]** : studsmeddelandet ignoreras av Campaign MTA, vilket innebär att den här studsen aldrig kommer att leda till att mottagarens adress sätts i karantän. Den används inte av **Uppdatera för leverans** arbetsflödet och det skickas inte till klientinstanser.
+* **[!UICONTROL To qualify]** : studsmeddelandet kunde inte kvalificeras. Kvalificering måste tilldelas slutkundsteamet för att garantera effektiv plattformsleverans. Så länge den inte är kvalificerad används studentposten inte för att utöka listan över regler för e-posthantering.
+* **[!UICONTROL Keep]** : studsmeddelandet har kvalificerats och kommer att användas av **Uppdatera för leverans** arbetsflöde som ska jämföras med befintliga regler för e-posthantering och berika listan.
+* **[!UICONTROL Ignore]** : studsposten ignoreras av Campaign MTA, vilket innebär att den här studsen aldrig kommer att leda till att mottagarens adress sätts i karantän. Den används inte av **Uppdatera för leverans** arbetsflödet och det skickas inte till klientinstanser.
 
 ![](assets/deliverability_qualif_status.png)
 
@@ -283,14 +283,14 @@ Standardreglerna är följande.
 
 >[!IMPORTANT]
 >
->* Leveransservern (MTA) måste startas om om om parametrarna har ändrats.
+>* Leveransservern måste startas om om parametrarna har ändrats.
 >* Ändringen eller skapandet av hanteringsregler är endast till för expertanvändare.
 
 #### Inkommande e-post {#inbound-email}
 
 >[!IMPORTANT]
 >
->För värdbaserade eller hybridinstallationer, om du har uppgraderat till [Förbättrad MTA](sending-with-enhanced-mta.md)och om instansen har **Webhooks/EFS** funktionalitet, **[!UICONTROL Inbound email]** regler används inte längre för synkrona felmeddelanden vid leveransfel. Mer information finns i [det här avsnittet](#bounce-mail-qualification).
+>För värdbaserade eller hybridinstallationer, om du har uppgraderat till [Förbättrad MTA](sending-with-enhanced-mta.md)och om instansen har **Webhooks** funktionalitet, **[!UICONTROL Inbound email]** regler används inte längre för synkrona felmeddelanden vid leveransfel. Mer information finns i [det här avsnittet](#bounce-mail-qualification).
 
 För lokala installationer och värdbaserade/hybridinstallationer som använder det äldre Campaign MTA innehåller dessa regler en lista över teckensträngar som kan returneras av fjärrservrar och som gör att du kan kvalificera felet (**Hård**, **Mjuk** eller **Ignorerad**).
 
@@ -312,7 +312,7 @@ För lokala installationer och värdbaserade/hybridinstallationer som använder 
 
 <!--![](assets/tech_quarant_domain_rules_02.png)-->
 
-* Du kan välja om du vill aktivera vissa identifieringsstandarder och krypteringsnycklar eller inte för att kontrollera domännamnet, till exempel **Avsändarens ID**, **DomainKeys**, **DKIM** och **S/MIME**.
+* Du kan välja om du vill aktivera vissa identifieringsstandarder och krypteringsnycklar eller inte för att kontrollera domännamnet, som **Avsändarens ID**, **DomainKeys**, **DKIM** och **S/MIME**.
 * The **SMTP-relä** Med parametrar kan du konfigurera IP-adressen och porten för en reläserver för en viss domän. Mer information finns i [det här avsnittet](../../installation/using/configuring-campaign-server.md#smtp-relay).
 
 Om dina meddelanden visas i Outlook med **[!UICONTROL on behalf of]** i avsändarens adress, kontrollera att du inte signerar dina e-postmeddelanden med **Avsändarens ID**, som är den inaktuella autentiseringsstandarden för e-postautentisering från Microsoft. Om **[!UICONTROL Sender ID]** är aktiverat, avmarkera motsvarande ruta och kontakta [Adobe kundtjänst](https://helpx.adobe.com/se/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html). Leveransen påverkas inte.
