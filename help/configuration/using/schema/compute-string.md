@@ -2,8 +2,9 @@
 product: campaign
 title: Element och attribut - compute-string-element
 description: compute-string-element
+feature: Schema Extension
 exl-id: 8a079bb8-3f53-4144-a065-5bd402649cc7
-source-git-commit: 40da5774c8a6a228992c4aa400e2d9924215611e
+source-git-commit: fd5e4bbc87a48f029a09b14ab1d927b9afe4ac52
 workflow-type: tm+mt
 source-wordcount: '90'
 ht-degree: 2%
@@ -40,7 +41,7 @@ När nej `<compute-string>` är definierad, en `<compute-string>` -elementet ang
 
 ## Attributbeskrivning {#attribute-description-1}
 
-* **expr (sträng)**: XTK och/eller Xpath-uttryck
+* **expr (sträng)**: XTK- och/eller Xpath-uttryck
 
 ## Exempel {#examples-1}
 

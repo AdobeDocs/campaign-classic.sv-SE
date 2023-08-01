@@ -2,8 +2,9 @@
 product: campaign
 title: Schemaelement och attribut - metodelement
 description: method-element
+feature: Schema Extension
 exl-id: 0fb74318-fe09-473c-8e33-1f3afd66b4cc
-source-git-commit: 40da5774c8a6a228992c4aa400e2d9924215611e
+source-git-commit: fd5e4bbc87a48f029a09b14ab1d927b9afe4ac52
 workflow-type: tm+mt
 source-wordcount: '207'
 ht-degree: 0%
@@ -27,7 +28,7 @@ method:==( help | parametrar)
 * @label (sträng)
 * @library (string)
 * @name (MNTOKEN)
-* @pkonly (boolesk)
+* @pkonly (boolean)
 * @static (boolesk)
 
 ## Överordnade {#parents-10}
@@ -47,11 +48,11 @@ Med det här elementet kan du definiera en SOAP-metod.
 
 SOAP-metoder möjliggör programprocesser.
 
-&quot;@library&quot; krävs för att deklarera en ny metod (icke-inbyggd): namnutrymmet och namnet som används för biblioteket är oberoende av namnutrymmet och namnet på schemat där deklarationen finns.
+@library krävs för att deklarera en ny metod (icke-inbyggd): namnutrymmet och namnet som används för biblioteket är oberoende av namnutrymmet och namnet på schemat där deklarationen finns.
 
 ## Attributbeskrivning {#attribute-description-10}
 
-* **åtkomst (sträng)**: det här attributet definierar åtkomstkontroll för metoden. Om attributet saknas är identifiering obligatorisk. Tillgängliga värden är: &#39;anonymous&#39;, &#39;admin&#39; och &#39;sql&#39;.
+* **åtkomst (sträng)**: this-attributet definierar åtkomstkontroll för metoden. Om det här attributet saknas är identifiering obligatorisk. Tillgängliga värden är: &quot;anonymous&quot;, &quot;admin&quot; och &quot;sql&quot;.
 * **const (boolean)**: om det är aktiverat betyder det här attributet att den deklarerade metoden ändrar entiteten
 * **label (string)**: metodens etikett.
 * **bibliotek (sträng)**: den här metoden är inte inbyggd i programmet. Det här attributet tar värdet för det metodbibliotek där metoddefinitionen finns (nms:mylibrary.js).

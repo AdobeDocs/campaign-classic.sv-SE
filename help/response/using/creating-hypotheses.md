@@ -1,16 +1,17 @@
 ---
 product: campaign
 title: Skapa hypoteser
-description: Lär dig hur du skapar hypoteser i svarshanteraren för Campaign
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
+description: Lär dig skapa hypoteser i svarshanteraren för Campaign
+feature: Campaigns
+badge-v7: label="v7" type="Informative" tooltip="Gäller Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Gäller även Campaign v8"
 audience: campaign
 content-type: reference
 topic-tags: response-manager
 exl-id: e0b3bc9f-5e81-463f-a59e-cd972a47109b
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: fd5e4bbc87a48f029a09b14ab1d927b9afe4ac52
 workflow-type: tm+mt
-source-wordcount: '1003'
+source-wordcount: '1015'
 ht-degree: 3%
 
 ---
@@ -25,7 +26,7 @@ Det finns olika möjligheter att skapa/länka hypoteser till ett kampanjerbjudan
 * Via **[!UICONTROL Edit]** > **[!UICONTROL Measurement]** i en kampanj.
 * Via **[!UICONTROL Measurement]** alternativ för en leverans som skapats från en kampanj.
 
-Hypoeser kan bara beräknas när marknadsföringskampanjen har startats och mottagarna har fått leveransen. Om hypotesen bygger på ett erbjudande måste det åtminstone presenteras och fortfarande vara aktivt. Erbjudande och leveranssätt skapas via **[!UICONTROL Measurement hypotheses]** och baseras på en hypotesmall. Det är dock möjligt att hänvisa till en hypotes direkt i leveransen eller kampanjen innan kampanjen börjar. I det här fallet beräknas hypoteserna automatiskt när marknadsföringskampanjen startas, baserat på körningsinställningar. [Läs mer](hypothesis-templates.md#hypothesis-template-execution-settings)
+Hypoeser kan bara beräknas när marknadsföringskampanjen har startats och mottagarna har fått leveransen. Om hypotesen bygger på ett erbjudande måste det åtminstone läggas fram och fortfarande vara aktivt. Erbjudande och leveranssätt skapas via **[!UICONTROL Measurement hypotheses]** och baseras på en hypotesmall. Det är dock möjligt att hänvisa till en hypotes direkt i leveransen eller kampanjen innan kampanjen börjar. I det här fallet beräknas hypoteserna automatiskt när marknadsföringskampanjen startas, baserat på körningsinställningar. [Läs mer](hypothesis-templates.md#hypothesis-template-execution-settings)
 
 ## Skapa en hypotes direkt vid leverans {#creating-a-hypothesis-on-the-fly-on-a-delivery}
 
@@ -76,7 +77,7 @@ Gör så här om du vill skapa en hypotes om en befintlig leverans:
 
    ![](assets/response_hypothesis_instance_creation_007.png)
 
-1. Ändra inställningarna om det behövs och starta om hypotesen.
+1. Om det behövs ändrar du inställningarna och startar om hypotesen.
 
 ## Referera till en hypotes i en kampanjleverans {#referencing-a-hypothesis-in-a-campaign-delivery}
 
@@ -84,7 +85,7 @@ Du kan referera till en hypotes i en marknadsföringskampanj innan den börjar. 
 
 1. Beroende på dina behov kan du skapa en eller flera **[!UICONTROL Delivery]** typmallar, enligt beskrivningen i [det här avsnittet](hypothesis-templates.md#creating-a-hypothesis-model)
 1. Skapa en marknadsföringskampanj och arbetsflöden för målinriktning.
-1. I leveransfönstret klickar du på **[!UICONTROL Delivery measurement]** ikon.
+1. Klicka på **[!UICONTROL Delivery measurement]** -ikon.
 1. Välj hypotesmallen (frågan som är konfigurerad i modellen visas i hypotesfönstret).
 
    Hypotesen beräknas automatiskt när kampanjen är avslutad, baserat på de datum som konfigurerats i modellen. [Läs mer](hypothesis-templates.md#hypothesis-template-execution-settings)
@@ -150,7 +151,7 @@ Därefter förfinar vi frågan som ärvts från modellen så att vi kan göra en
 
    Vi använder till exempel en direktutskick.
 
-1. Konfigurera en startadress: den tidigare skapade hypotesmallen har konfigurerats för att ta hänsyn till en kontrollgrupp i reaktionsresultaten.
+1. Konfigurera en dirigeringsadress: den tidigare skapade hypotesmallen har konfigurerats för att ta hänsyn till en kontrollgrupp i reaktionsresultaten.
 
    ![](assets/response_hypothesis_delivery_example_007.png)
 

@@ -2,8 +2,9 @@
 product: campaign
 title: Schemaelement och attribut - nyckelfältselement
 description: nyckelfältelement
+feature: Schema Extension
 exl-id: fb0862f9-5dcc-49f2-b99b-9822aaf3a680
-source-git-commit: 40da5774c8a6a228992c4aa400e2d9924215611e
+source-git-commit: fd5e4bbc87a48f029a09b14ab1d927b9afe4ac52
 workflow-type: tm+mt
 source-wordcount: '103'
 ht-degree: 1%
@@ -37,7 +38,7 @@ Det här elementet definierar de fält som ska integreras i ett index eller en n
 
 ## Attributbeskrivning {#attribute-description-9}
 
-* **xlink (MNTOKEN)**: I kan du automatiskt referera till sekundärnycklar som definieras i kopplingen för en relationstabell (N-N-länk).
+* **xlink (NTOKEN)**: låter dig automatiskt referera till sekundärnycklar som definieras i kopplingen för en relationstabell (N-N-länk).
 * **xpath (MNTOKEN)**: definition av ett index eller en nyckel på ett `<attribute>`  -element. Det här attributet tar emot en Xpath som definierar sökvägen till schemaattributet som definierar nyckeln eller indexet.
 
 ## Exempel {#examples-}

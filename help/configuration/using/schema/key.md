@@ -2,8 +2,9 @@
 product: campaign
 title: Schemaelement och attribut - nyckelelement
 description: nyckelelement
+feature: Schema Extension
 exl-id: 3d0ef574-27a3-40f2-91a0-70e9583d9980
-source-git-commit: 40da5774c8a6a228992c4aa400e2d9924215611e
+source-git-commit: fd5e4bbc87a48f029a09b14ab1d927b9afe4ac52
 workflow-type: tm+mt
 source-wordcount: '319'
 ht-degree: 0%
@@ -53,11 +54,11 @@ De första 1000 identifierarna är reserverade, så om ett intervall med värden
 
 ## Attributbeskrivning {#attribute-description-8}
 
-* **allowEmptyPart (boolean)**: om det här attributet är aktiverat, anses nyckeln vara giltig om minst en av dess nycklar inte är tom. Om så är fallet är det tomma konceptvärdet &quot;0&quot; (booleskt eller för alla typer av numeriska data). Som standard måste alla tangenter som utgör en sammansatt nyckel anges.
-* **applicableIf (string)**: Med det här attributet kan du göra nyckeln valfri. Den definierar det villkor som nyckeldefinitionen ska tillämpas på. Det här attributet tar emot ett XTK-uttryck.
+* **allowEmptyPart (boolean)**: om attributet är aktiverat för en sammansatt nyckel anses nyckeln vara giltig om minst en av nycklarna inte är tom. Om så är fallet är det tomma konceptvärdet &quot;0&quot; (booleskt eller för alla typer av numeriska data). Som standard måste alla tangenter som utgör en sammansatt nyckel anges.
+* **applicableIf (string)**: det här attributet gör att du kan göra nyckeln valfri. Den definierar det villkor som nyckeldefinitionen ska tillämpas på. Attributet tar emot ett XTK-uttryck.
 * **internal (boolesk)**: om den är aktiverad, talar det här attributet om för Adobe Campaign att nyckeln är primär.
 * **label (string)**: nyckelns etikett.
-* **name (MNTOKEN)**: nyckelns interna namn.
+* **name (MNTOKEN)**: internt namn på nyckeln.
 * **noDbIndex (boolesk)**: om den är aktiverad (noDbIndex=&quot;true&quot;) kommer fältet som matchar nyckeln inte att indexeras.
 
 ## Exempel {#examples-------}

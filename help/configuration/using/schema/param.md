@@ -2,8 +2,9 @@
 product: campaign
 title: Schemaelement och attribut - param-element
 description: param-element
+feature: Schema Extension
 exl-id: d8960a2e-6900-4346-9f06-e7dd9d7b5139
-source-git-commit: 40da5774c8a6a228992c4aa400e2d9924215611e
+source-git-commit: fd5e4bbc87a48f029a09b14ab1d927b9afe4ac52
 workflow-type: tm+mt
 source-wordcount: '177'
 ht-degree: 2%
@@ -45,13 +46,13 @@ Med det här elementet kan du definiera en parameter för att anropa en SOAP-met
 ## Attributbeskrivning {#attribute-description-12}
 
 * **desc (sträng)**: beskrivning som gäller `<param>` -element.
-* **inout (sträng)**: det här attributet definierar om parametern finns vid indata (in) eller utdata (ut) för SOAP-anropet eller inte. Om det här attributet inte anges används standardparametern (&quot;@inout=in&quot;).
+* **inout (sträng)**: this-attributet definierar om parametern finns vid indata (in) eller utdata (out) för SOAP-anropet. Om det här attributet inte anges används standardparametern (&quot;@inout=in&quot;).
 * **label (string)**: `<param>` label
-* **localizable (sträng)**: om det är aktiverat anger det här attributet att samlingsverktyget ska återställa värdet för attributet &quot;@label&quot; för översättning (intern användning).
+* **lokaliserbar (sträng)**: om det är aktiverat anger det här attributet att samlingsverktyget ska återställa värdet för attributet @label för översättning (intern användning).
 * **name (MNTOKEN)**: internt namn på `<param>`
 * **type (sträng)**: this-attributet definierar typen av `<param>` element
 
-   Lista över tillgängliga typer:
+  Lista över tillgängliga typer:
 
    * VALFRITT
    * bin

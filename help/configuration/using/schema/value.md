@@ -2,11 +2,12 @@
 product: campaign
 title: Element och attribut - värdeelement
 description: Element och attribut
+feature: Schema Extension
 audience: configuration
 content-type: reference
 topic-tags: schema-reference
 exl-id: bad7fb4b-43d9-4033-ae0d-cf191d89114b
-source-git-commit: 40da5774c8a6a228992c4aa400e2d9924215611e
+source-git-commit: fd5e4bbc87a48f029a09b14ab1d927b9afe4ac52
 workflow-type: tm+mt
 source-wordcount: '149'
 ht-degree: 3%
@@ -45,13 +46,13 @@ Med det här elementet kan du definiera de värden som lagras i en uppräkning.
 
 ## Attributbeskrivning {#attribute-description-16}
 
-* **applicableIf (string)**: Med det här attributet kan du göra ett uppräkningsvärde valfritt. Det tar emot ett XTK-uttryck.
+* **applicableIf (string)**: det här attributet gör att du kan göra ett uppräkningsvärde valfritt. Det tar emot ett XTK-uttryck.
 * **desc (sträng)**: beskrivning av uppräkningsvärdet.
 * **enabledIf (sträng)**: villkor för aktivering av uppräkningsvärdet.
 * **img (sträng)**: bild länkad till uppräkningen i formuläret &quot;namespace:image_name&quot;. Bilden måste importeras till programservern.
-* **label (string)**: uppräkningsvärdets etikett.
-* **name (sträng)**: uppräkningsvärdets interna namn.
-* **värde (sträng)**: uppräkningsvärdets värde. Värdetypen definieras baserat på uppräkningstypen. Om uppräkningen är av strängtyp kan den bara innehålla teckensträngtypsvärden.
+* **label (string)**: etikett för uppräkningsvärdet.
+* **name (sträng)**: internt namn på uppräkningsvärdet.
+* **värde (sträng)**: värdet för uppräkningsvärdet. Värdetypen definieras baserat på uppräkningstypen. Om uppräkningen är av strängtyp kan den bara innehålla teckensträngtypsvärden.
 
 ## Exempel {#examples-13}
 

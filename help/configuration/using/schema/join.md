@@ -2,8 +2,9 @@
 product: campaign
 title: Schemaelement och attribut - join-element
 description: join-element
+feature: Schema Extension
 exl-id: a7ca0300-d250-429c-8ae1-2ae7dee82cf5
-source-git-commit: 40da5774c8a6a228992c4aa400e2d9924215611e
+source-git-commit: fd5e4bbc87a48f029a09b14ab1d927b9afe4ac52
 workflow-type: tm+mt
 source-wordcount: '213'
 ht-degree: 0%
@@ -48,8 +49,8 @@ Om `<join>` -elementet anges inte när länktypselementet definieras, länken pl
 
 ## Attributbeskrivning {#attribute-description-7}
 
-* **dstFilterExpr (sträng)**: Med det här attributet kan du begränsa antalet giltiga värden i fjärrtabellen.
-* **xpath-dst (sträng)**: this-attributet tar emot en Xpath (@name-attribut för fjärrtabellen).
+* **dstFilterExpr (sträng)**: det här attributet låter dig begränsa antalet giltiga värden i fjärrtabellen.
+* **xpath-dst (sträng)**: det här attributet tar emot en Xpath (@name-attribut för fjärrtabellen).
 * **xpath-src (sträng)**: det här attributet tar emot ett Xpath-attribut (@name-attribut i det aktuella schemat).
 
 ## Exempel {#examples-6}
