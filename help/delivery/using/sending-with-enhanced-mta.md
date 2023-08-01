@@ -2,13 +2,13 @@
 product: campaign
 title: S med förbättrad MTA i Adobe Campaign Classic
 description: Läs mer om omfattningen av och egenskaperna hos utskick av e-post med Adobe Campaign Enhanced MTA
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
+badge-v7: label="v7" type="Informative" tooltip="Gäller Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Gäller även Campaign v8"
 feature: Email
 exl-id: 58cc23f4-9ab0-45c7-9aa2-b08487ec7e91
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: 4c0c3007a03d4274fa1b436259cb2d302fcc8185
 workflow-type: tm+mt
-source-wordcount: '1999'
+source-wordcount: '1736'
 ht-degree: 3%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 3%
 
 The **Adobe Campaign Enhanced MTA** (E-postöverföringsagent) tillhandahåller en uppgraderad sändningsinfrastruktur som möjliggör förbättrad leveransförmåga, renommé, genomströmning, rapportering, studshantering, IP-avkodning och hantering av anslutningsinställningar.
 
-Den implementeras för att förbättra skalbarheten, öka leveransflödet och hjälpa till att skicka fler e-postmeddelanden snabbare. Detta uppnås med nya adaptiva leveransmetoder som ändrar e-postsändningsinställningarna i realtid baserat på feedback från Internetleverantörer.
+Den implementeras för att förbättra skalbarheten, öka leveransgenomströmningen och hjälpa till att skicka fler e-postmeddelanden snabbare. Detta uppnås med nya adaptiva leveransmetoder som ändrar e-postsändningsinställningarna i realtid baserat på feedback från Internetleverantörer.
 
 >[!IMPORTANT]
 >
@@ -78,7 +78,7 @@ För alla andra kunder som är värdbaserade eller delvis värdbaserade (hybridk
 
 **Hur uppgraderar jag min instans till Förbättrat MTA?**
 
-Hela processen för dina värdinstanser kräver några minuters driftstopp. Adobe kommer att övervaka e-postflödet och leveransen i upp till 24 timmar efter uppgraderingen för att bedöma om e-postleveranserna påverkas.
+Hela processen för dina värdinstanser kräver några minuters driftstopp. Adobe kommer att övervaka e-postflödet och -leveransen i upp till 24 timmar efter uppgraderingen för att bedöma om e-postleveranserna påverkas.
 
 Om problem upptäcks kan Adobe snabbt och tillfälligt återställa instansen till Adobe Campaign MTA.
 
@@ -90,32 +90,9 @@ Nej. Uppgraderingen kräver inte att du byter till nya IP-adresser, så du kan f
 
 **Kommer en uppgradering till den förbättrade MTA-versionen att påverka pågående kampanjer eller leveranser?**
 
-Eventuella leveranser som förberetts innan din instans uppgraderades för att använda det förbättrade MTA måste förbereds på nytt för att den nya MTA-metoden ska kunna användas korrekt.
-
 För kunder som använder Adobe Campaign transaktionsmeddelandefunktioner köas alla API-anrop för att utlösa ett e-postmeddelande under det mycket korta driftstoppet för uppgraderingen och kommer att provas när uppgraderingen är klar.
 
 ## Förbättrade MTA-egenskaper {#enhanced-mta-impacts}
-
-### Förbättrade MTA-rubriker
-
-De senaste Campaign Classic-instanserna innehåller kod som lägger till de obligatoriska Enhanced MTA-rubrikerna i alla meddelanden. Om du använder Adobe Campaign 19.1 (build 9032) eller senare och om så inte är fallet måste du begära [Adobe kundtjänst](https://helpx.adobe.com/se/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) för att lägga till parametern&quot;useMomentum=true&quot; i körningsinstanskonfigurationen (i [serverConf.xml](../../installation/using/the-server-configuration-file.md#mta) fil), som kan vara din marknadsinstans, [medelkällinstans](../../installation/using/mid-sourcing-server.md), eller [instans för körning av transaktionsmeddelanden](../../message-center/using/configuring-instances.md#execution-instance), beroende på din konfiguration.
-
-Om du använder en äldre instans som inte innehåller den här koden finns det dock en ny typologiregel med namnet **[!UICONTROL Typology Rule for Enhanced MTAs]** måste läggas till i alla befintliga typologier i Campaign-instansen.
-Den här regeln läggs till av en **[!UICONTROL Typology]** som installeras som en del av uppgraderingen till Enhanced MTA.
-
->[!IMPORTANT]
->
->Om du ser den här typologiregeln i din typologi ska du inte ta bort eller ändra den på något sätt. Annars kan e-postleveransen påverkas negativt.
-
-Detta **[!UICONTROL Typology]** paketet måste installeras på Adobe Campaign Marketing Instance.
-
-Om du är en hybridklient får du instruktioner från Adobe Campaign om hur du installerar **[!UICONTROL Typology]** som en del av uppgraderingen till Enhanced MTA. Kontakta er kontoansvarige för att få de fullständiga instruktionerna.
-
->[!IMPORTANT]
->
->Instruktioner från Adobe Campaign team om hur man installerar **[!UICONTROL Typology]** förpackningen ska följas noggrant. Annars kan du råka ut för större problem med dina IP-adresser som används för att skicka e-post.
-
-Mer information om typologier finns i [det här avsnittet](../../campaign-opt/using/about-campaign-typologies.md).
 
 ### Nya MX-regler
 
@@ -190,7 +167,7 @@ Med funktionen för tjänsten för e-postfeedback (EFS) rapporteras status för 
 >
 >Tjänsten för e-postfeedback är för närvarande tillgänglig som en betafunktion.
 >
->Om du är intresserad av att delta i betaprogrammet, fyll i [det här formuläret](https://forms.office.com/Pages/ResponsePage.aspx?id=Wht7-jR7h0OUrtLBeN7O4Rol2vQGupxItW9_BerXV6VUQTJPN1Q5WUI4OFNTWkYzQjg3WllUSDAxWi4u) så kommer vi tillbaka till dig.
+>Om du är intresserad av att delta i betaprogrammet kan du [det här formuläret](https://forms.office.com/Pages/ResponsePage.aspx?id=Wht7-jR7h0OUrtLBeN7O4Rol2vQGupxItW9_BerXV6VUQTJPN1Q5WUI4OFNTWkYzQjg3WllUSDAxWi4u) så kommer vi tillbaka till dig.
 
 När leveransen har startat sker ingen förändring i **[!UICONTROL Success]** procent när meddelandet har skickats från Campaign till det förbättrade MTA-meddelandet.
 
@@ -200,7 +177,7 @@ Leveransloggarna visar **[!UICONTROL Taken into account by the service provider
 
 <!--![](assets/efs-pending.png)-->
 
-När meddelandet faktiskt skickas till målprofilerna och när informationen har rapporterats i realtid från Förbättrat MTA visar leveransloggarna **[!UICONTROL Sent]** status för varje adress som tog emot meddelandet. The **[!UICONTROL Success]** procentandelen ökas i enlighet med varje framgångsrik leverans.
+När meddelandet faktiskt skickas till målprofilerna och när informationen har rapporterats i realtid från Förbättrat MTA visar leveransloggarna **[!UICONTROL Sent]** status för varje adress som har tagit emot meddelandet. The **[!UICONTROL Success]** procentandelen ökas i enlighet med varje lyckad leverans.
 
 När hårda studsmeddelanden rapporteras tillbaka från Förbättrat MTA ändras deras loggstatus från **[!UICONTROL Taken into account by the service provider]** till **[!UICONTROL Failed]**<!-- and the **[!UICONTROL Bounces + errors]** percentage is increased accordingly-->.
 
@@ -217,7 +194,7 @@ När meddelanden med mjuk studsning rapporteras tillbaka från Förbättrat MTA 
 >Mer information om återförsök efter ett tillfälligt leveransfel finns i [det här avsnittet](understanding-delivery-failures.md#retries-after-a-delivery-temporary-failure).
 
 
-Tabellerna nedan visar de förändringar i KPI:er och överföring av loggstatus som införts av EFS-funktionen.
+Tabellerna nedan visar ändringar i KPI:er och överföring av loggstatus som införts av EFS-funktionen.
 
 **Med tjänsten för e-postfeedback**
 
