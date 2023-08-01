@@ -6,9 +6,9 @@ feature: Release Notes
 role: User
 level: Beginner
 exl-id: 0cd6bf20-da72-4cf0-9f5d-d4e8acdd324d
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: dbbc5d9f354357e5ca13eaeffddf67865480070d
 workflow-type: ht
-source-wordcount: '2595'
+source-wordcount: '0'
 ht-degree: 100%
 
 ---
@@ -268,9 +268,6 @@ Läs mer på sidan [Funktioner som är inaktuella eller har tagits bort](../../r
 * Alla kategorier av feedback hämtas nu in för en fullständig och exakt rapportering.
 * Beräkningen av indikatorn Levererad baseras nu på feedback i realtid från det förbättrade MTA-programmet för ökad precision och reaktivitet.
 * EFS löser problemet med förseningar genom synkroniserad rapportering av mjuka studsar.
-
-Mer information finns i den [detaljerade dokumentationen](../../delivery/using/sending-with-enhanced-mta.md#efs).
-Om du är intresserad av att delta i den här privata betaversionen ska du fylla i det här [formuläret](https://forms.office.com/Pages/ResponsePage.aspx?id=Wht7-jR7h0OUrtLBeN7O4Rol2vQGupxItW9_BerXV6VUQTJPN1Q5WUI4OFNTWkYzQjg3WllUSDAxWi4u). Vi kontaktar dig sedan.
 
 **Andra ändringar**
 
