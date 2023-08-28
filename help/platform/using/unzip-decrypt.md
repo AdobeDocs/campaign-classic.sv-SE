@@ -9,22 +9,25 @@ audience: platform
 content-type: reference
 topic-tags: importing-and-exporting-data
 exl-id: 1a79da3b-2abc-4bfc-a0ee-8471c478638d
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: 32c2ce24bdd62724e4b4ff66f4664e8faa259b4b
 workflow-type: tm+mt
-source-wordcount: '725'
+source-wordcount: '739'
 ht-degree: 11%
 
 ---
 
+
 # Zippa upp eller dekryptera en fil {#unzipping-or-decrypting-a-file-before-processing}
-
-
 
 Med Adobe Campaign kan du importera komprimerade eller krypterade filer. Innan de kan läsas i en [Inläsning av data (fil)](../../workflow/using/data-loading--file-.md) kan du definiera en förbearbetning för att packa upp eller dekryptera filen.
 
+>[!IMPORTANT]
+>
+>Du kan inte dekomprimera zippade filer som är större än 4 GB.
+
 Så här kan du göra:
 
-1. Använd [Kontrollpanelen](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/gpg-keys-management.html#decrypting-data) för att skapa ett nyckelpar för offentlig/privat nyckel.
+1. Använd [Kontrollpanelen](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/gpg-keys-management.html#decrypting-data) för att skapa ett nyckelpar för offentlig/privat nyckel för att tillåta fildekryptering.
 
    >[!NOTE]
    >
@@ -32,8 +35,9 @@ Så här kan du göra:
    >
    >Observera att din instans måste lagras på AWS och uppgraderas med [senaste GA-version](../../rn/using/rn-overview.md). Läs om hur du kontrollerar din version i [det här avsnittet](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version). Följ stegen på [den här sidan](https://experienceleague.adobe.com/docs/control-panel/using/faq.html?lang=sv) för att kontrollera om instanser har AWS som värd.
 
-1. Om din installation av Adobe Campaign ligger hos Adobe kontaktar du [Adobe kundtjänst](https://helpx.adobe.com/se/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) för att ha nödvändiga verktyg installerade på servern.
 1. Om du har installerat Adobe Campaign lokalt installerar du det verktyg du vill använda (till exempel GPG, GZIP) samt de nödvändiga nycklarna (krypteringsnyckeln) på programservern.
+
+   Om din installation av Adobe Campaign ligger hos Adobe kontaktar du [Adobe kundtjänst](https://helpx.adobe.com/se/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) för att ha nödvändiga verktyg installerade på servern.
 
 Du kan sedan använda de förbehandlingskommandon du vill i dina arbetsflöden:
 
@@ -62,11 +66,11 @@ Så här utför du det här användningsfallet:
 1. Använd Kontrollpanelen för att generera ett nyckelpar (public/private). Detaljerade steg finns i [Dokumentation för kontrollpanelen](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/gpg-keys-management.html#decrypting-data).
 
    * Den offentliga nyckeln delas med det externa systemet, som kommer att använda den för att kryptera data som ska skickas till Campaign.
-   * Den privata nyckeln används av Campaign Classic för att dekryptera inkommande krypterade data.
+   * Den privata nyckeln används som Campaign Classic för att dekryptera inkommande krypterade data.
 
    ![](assets/gpg_generate.png)
 
-1. I det externa systemet använder du den offentliga nyckel som hämtats från Kontrollpanelen för att kryptera de data som ska importeras till Campaign Classic.
+1. I det externa systemet använder du den offentliga nyckel som hämtats från Kontrollpanelen för att kryptera de data som ska importeras till Campaign Classicen.
 
 1. Bygg ett arbetsflöde i Campaign Classic för att importera krypterade data och dekryptera dem med den privata nyckel som har installerats via Kontrollpanelen. För att göra detta ska vi skapa ett arbetsflöde enligt följande:
 
@@ -107,4 +111,4 @@ I den här videon visas hur du använder en GPG-nyckel för att dekryptera data.
 
 >[!VIDEO](https://video.tv.adobe.com/v/36482?quality=12)
 
-Det finns fler instruktionsvideor för Campaign Classic [här](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=sv).
+Det finns fler videor med Campaign Classic om hur man gör [här](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=sv).
