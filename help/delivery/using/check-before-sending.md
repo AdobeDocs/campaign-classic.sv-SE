@@ -2,20 +2,19 @@
 product: campaign
 title: Kontrollera före sändning
 description: När meddelandet är klart utför du alla kontroller innan du skickar det
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
+badge-v7: label="v7" type="Informative" tooltip="Gäller Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Gäller även Campaign v8"
 feature: Deliverability
+role: User
 exl-id: 50d326b0-3c23-4dbf-9df6-d32b48e30f69
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
 workflow-type: tm+mt
-source-wordcount: '892'
+source-wordcount: '904'
 ht-degree: 4%
 
 ---
 
 # Utför alla kontroller innan du skickar {#perform-all-checks}
-
-
 
 När meddelandet är klart ser du till att innehållet visas korrekt på alla enheter och att det inte innehåller fel som personalisering eller brutna länkar.
 
@@ -35,7 +34,7 @@ Med inkorgsåtergivning kan du förhandsgranska meddelanden på större e-postkl
 
 **Tips**:
 
-* Du kan visa det skickade meddelandet i olika sammanhang där det kan tas emot: webbpost, meddelandetjänst, mobil osv.
+* Du kan visa det skickade meddelandet i olika sammanhang som det kan tas emot i: webbpost, meddelandetjänst, mobil osv.
 
 * Återgivningsfunktioner för inkorgen är avgörande för att du ska kunna identifiera om dina e-postkampanjer fungerar som de ska med filtren hos viktiga internetleverantörer (Internet Service Providers) och webbposttjänster. Sådana verktyg skickar en kopia av ett e-postmeddelande till ett nätverk av testinkorgar, så att du kan se hur meddelandet kommer att visas, eller återges, i alla dessa tjänster. De kan även innehålla rapporter och kodkorrigeringsalternativ som hjälper dig att snabbt identifiera och göra korrigeringar som förbättrar leveransen.
 
@@ -65,7 +64,7 @@ Som ett sista steg kan du maximera dina chanser och utnyttja kraften i Adobe Cam
 
 ### Gå igenom en valideringsprocess
 
-Du kan definiera en fullständig valideringsprocess där Adobe Campaign-operatorer och -grupper deltar för att validera både mål- och meddelandeinnehållet. Detta kommer att säkerställa full övervakning och kontroll av kampanjens olika processer: målgruppsanpassning, innehåll, budget, extrahering och utskick av ett bevis. Beroende på deras behörigheter meddelas användare, får korrektur och kan validera eller avvisa meddelandet. Läs mer [i det här avsnittet](../../campaign/using/marketing-campaign-approval.md).
+Du kan definiera en fullständig valideringsprocess där Adobe Campaign-operatorer och -grupper deltar för att validera både mål- och meddelandeinnehållet. Detta säkerställer full övervakning och kontroll av kampanjens olika processer: målinriktning, innehåll, budget, extrahering och utskick av ett bevis. Beroende på deras behörigheter meddelas användare, får korrektur och kan validera eller avvisa meddelandet. Läs mer [i det här avsnittet](../../campaign/using/marketing-campaign-approval.md).
 
 ### Använd vågor
 
@@ -83,7 +82,7 @@ Du kan ange avsändarordning för leveranser genom att ange prioritetsnivå. Fö
 >
 >Det går inte att definiera ordningen för att skicka meddelanden från en leverans.
 
-### Konfigurera IP-tillhörigheter
+### Inställningar för IP-tillhörigheter
 
 Om du vill ha bättre kontroll över utgående SMTP-trafik kan du hantera tillhörigheter genom att definiera vilka specifika IP-adresser som kan användas för varje tillhörighet. På så sätt kan du begränsa antalet e-postmeddelanden för specifika leveranser till maskiner eller utdatameddelanden. Du kan till exempel använda en affinitet per land eller underdomän. Du kan sedan skapa en typologi per land och länka varje tillhörighet till motsvarande typologi.
 
@@ -97,7 +96,7 @@ Du kan:
 
 * När e-postmeddelandet har skickats kontrollerar du huvudet för att verifiera vilken IP-adress som leveransen skickades från. E-postadministratören bör hjälpa dig att få fram rubrikinformationen.
 
-* För SMS-leveranser måste du se till att SMS-kanalen har en dedikerad tillhörighet begränsad till **en** programserverbehållare. [Läs mer](../../installation/using/configure-delivery-settings.md#managing-outbound-smtp-traffic-with-affinities)
+* Kontrollera att SMS-kanalen har en dedikerad tillhörighet begränsad till **en** programserverbehållare. [Läs mer](../../installation/using/configure-delivery-settings.md#managing-outbound-smtp-traffic-with-affinities)
 
 >[!NOTE]
 >
@@ -105,7 +104,7 @@ Du kan:
 
 ### Använd typologier
 
-Du kan använda typologiregler för att exkludera delar av målet baserat på specifika kriterier. Detta garanterar att de meddelanden som skickas bäst uppfyller kundernas behov och förväntningar i enlighet med företagets kommunikationspolicyer. Du kan till exempel filtrera de mottagare som är minderåriga från målet i nyhetsbrevet. Läs mer [i det här exemplet](../../campaign-opt/using/filtering-rules.md).
+Du kan använda typologiregler för att exkludera delar av målet baserat på specifika kriterier. Detta garanterar att de meddelanden som skickas bäst uppfyller kundernas behov och förväntningar i enlighet med företagets kommunikationspolicyer. Du kan till exempel filtrera de mottagare som är minderåriga från målet i nyhetsbrevet. Läs mer [i detta exempel](../../campaign-opt/using/filtering-rules.md).
 
 ### Undvik bifogade filer
 

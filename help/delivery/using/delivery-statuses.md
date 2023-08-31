@@ -2,13 +2,14 @@
 product: campaign
 title: Leveransstatus
 description: Läs mer om de statusar som finns på kontrollpanelen för leverans
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
+badge-v7: label="v7" type="Informative" tooltip="Gäller Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Gäller även Campaign v8"
 feature: Monitoring, Deliverability
+role: User
 exl-id: 0663257a-3a70-4e0c-bbeb-8242aaa0876d
-source-git-commit: 4b13e310fcee9ba24e83b697fca57bc494505642
+source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
 workflow-type: tm+mt
-source-wordcount: '632'
+source-wordcount: '644'
 ht-degree: 4%
 
 ---
@@ -25,7 +26,7 @@ När en leverans har skickats visar kontrollpanelen en status som gör att du ka
 
 ![](assets/delivery-status.png)
 
-Mer information om olika leveransfel som du kan träffa på och hur du löser dem finns i [den här sidan](understanding-delivery-failures.md).
+Mer information om olika leveransfel som du kan råka ut för och hur du löser dem finns i [den här sidan](understanding-delivery-failures.md).
 
 **Relaterade ämnen:**
 
@@ -64,7 +65,7 @@ Mer information om olika leveransfel som du kan träffa på och hur du löser de
    <td> Leveransen har tagits med i beräkningen av servern (MTA) men har inte bearbetats.<br /> </td> 
   </tr>  
   <tr> 
-   <td> Leveransen har avbrutits<br /> </td> 
+   <td> Leveransen avbröts<br /> </td> 
    <td> Leveransen avbröts av en operator.<br /> </td> 
   </tr> 
   <tr> 
@@ -95,15 +96,15 @@ När du har bekräftat leveransen ser du att leveransstatus är **[!UICONTROL Pe
 
 The **[!UICONTROL Pending]** status kan först innebära att leveransen har schemalagts och väntar tills det angivna datumet. Mer information finns i [Leveransplanering](steps-sending-the-delivery.md#scheduling-the-delivery-sending) -avsnitt.
 
-Om leveransen inte skickas och dess status kvarstår **[!UICONTROL Pending]**, kan det vara resultatet av:
+Om leveransen inte skickas och dess status kvarstår **[!UICONTROL Pending]** kan det vara resultatet av:
 
 * MTA (Message Transfer Agent), som kör moduler och processer på leveransservern och som hanterar e-postutskick, kanske inte har startats eller behöver startas om.
 
-   Gör så här om du vill kontrollera detta och starta modulen om det behövs:
+  Gör så här om du vill kontrollera detta och starta modulen om det behövs:
 
-   >[!NOTE]
-   >
-   >Den här åtgärden kan utföras med en **lokal** eller **hybrid** värdmodell med åtkomst till Campaign-servern (se [värdmodeller](../../installation/using/hosting-models.md)).
+  >[!NOTE]
+  >
+  >Den här åtgärden kan utföras med en **lokal** eller **hybrid** värdmodell med åtkomst till Campaign-servern (se [värdmodeller](../../installation/using/hosting-models.md)).
 
    1. Kontrollera att `mta@<instance>` -moduler startas på dina MTA-servrar.
 
@@ -125,15 +126,15 @@ Om leveransen inte skickas och dess status kvarstår **[!UICONTROL Pending]**, k
       >
       >Ersätt `<instance-name>` med namnet på din instans (produktion, utveckling osv.). Instansnamnet identifieras via konfigurationsfilerna: `[path of application]nl6/conf/config-<instance-name>.xml`
 
-* Leveransen kan ha en tillhörighet som inte har konfigurerats på den sändande servern.
+* Leveransen kan ha en tillhörighet som inte är konfigurerad på den sändande servern.
 
-   I det här fallet kontrollerar du konfigurationen för trafikhanteringen (IP-tillhörighet) och använder **[!UICONTROL Managing affinities with IP addresses]** fält för att länka leveranser till den MTA som hanterar tillhörigheten. Mer information om tillhörigheter finns i [det här avsnittet](../../installation/using/configure-delivery-settings.md).
+  I det här fallet kontrollerar du konfigurationen för trafikhanteringen (IP-tillhörighet) och använder **[!UICONTROL Managing affinities with IP addresses]** fält för att länka leveranser till den MTA som hanterar tillhörigheten. Mer information om tillhörigheter finns i [det här avsnittet](../../installation/using/configure-delivery-settings.md).
 
 * När för många kampanjer körs förblir leveransstatusen Väntande.
 
-   Gränsen för samtidiga kampanjer definieras i **[!UICONTROL NmsOperation_LimitConcurrency]** alternativ. Standardvärdet är 10.
+  Gränsen för samtidiga kampanjer definieras i **[!UICONTROL NmsOperation_LimitConcurrency]** alternativ. Standardvärdet är 10.
 
-   Läs mer om alternativen i [den här sidan](../../installation/using/configuring-campaign-options.md).
+  Läs mer om alternativen i [den här sidan](../../installation/using/configuring-campaign-options.md).
 
 
 **Relaterade ämnen:**

@@ -2,20 +2,19 @@
 product: campaign
 title: Automatisera via arbetsflöden
 description: Lär dig automatisera innehållshantering via arbetsflöden
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
+badge-v7: label="v7" type="Informative" tooltip="Gäller Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Gäller även Campaign v8"
 feature: Workflows
+role: User
 exl-id: bc6ebf5d-cc21-4750-9713-2bf259e7d6bf
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
 workflow-type: tm+mt
-source-wordcount: '1190'
+source-wordcount: '1202'
 ht-degree: 0%
 
 ---
 
 # Automatisera med arbetsflöden{#automating-via-workflows}
-
-
 
 ## Innehållshanteringsaktivitet {#content-management-activity}
 
@@ -25,10 +24,10 @@ The **Innehållshantering** -aktiviteten nås via **[!UICONTROL Tools]** i arbet
 
 Aktivitetsegenskaperna delas in i fyra steg:
 
-* **[!UICONTROL Content]** : gör att du kan ange befintligt innehåll eller skapa innehåll,
-* **[!UICONTROL Update content]** : gör att du kan ändra innehållet eller uppdatera innehållet via ett XML-dataflöde,
-* **[!UICONTROL Action to execute]** : gör att du kan spara eller generera innehåll,
-* **[!UICONTROL Transition]** : Med kan du välja om du vill generera en utdataövergång och ge den ett namn.
+* **[!UICONTROL Content]** : låter dig ange befintligt innehåll eller skapa innehåll,
+* **[!UICONTROL Update content]** : låter dig ändra innehållets ämne eller uppdatera innehållet via ett XML-dataflöde,
+* **[!UICONTROL Action to execute]** : låter dig spara eller generera innehåll,
+* **[!UICONTROL Transition]** : låter dig välja om du vill generera en utdataövergång och ge den ett namn.
 
 ![](assets/d_ncs_content_wf.png)
 
@@ -36,41 +35,41 @@ Aktivitetsegenskaperna delas in i fyra steg:
 
 * **Anges av övergången**
 
-   Innehållet som ska användas har skapats tidigare. Processerna rör den innehållsinstans som sprids av den inkommande händelsen. Innehållsidentifieraren nås via händelsens contentId-variabel.
+  Innehållet som ska användas har skapats tidigare. Processerna rör den innehållsinstans som sprids av den inkommande händelsen. Innehållsidentifieraren nås via händelsens contentId-variabel.
 
 * **Explicit**
 
-   Gör att du kan välja innehåll som du skapat tidigare.
+  Gör att du kan välja innehåll som du skapat tidigare.
 
 * **Beräknas av ett skript**
 
-   Väljer en innehållsinstans baserad på en JavaScript-mall. Med koden som ska utvärderas kan du hämta innehållsidentifieraren.
+  Väljer en innehållsinstans baserad på en JavaScript-mall. Med den kod som ska utvärderas kan du hämta innehållsidentifieraren.
 
 * **Nytt, skapat via en publiceringsmall**
 
-   Skapar ett nytt innehåll via en publiceringsmall. Innehållsinstansen sparas i den ifyllda strängmappen.
+  Skapar ett nytt innehåll via en publiceringsmall. Innehållsinstansen sparas i den ifyllda strängmappen.
 
 ### Uppdatera innehållet {#update-the-content}
 
 * **Ämne**
 
-   Gör att du kan ändra föremålet för leveransåtgärden vid publicering.
+  Gör att du kan ändra föremålet för leveransåtgärden vid publicering.
 
 * **Åtkomst till data från en XML-feed**
 
-   Innehållet uppdateras från en XML-feed från en extern källa. En URL måste anges för att nedladdning av data ska ske.
+  Innehållet uppdateras från en XML-feed från en extern källa. En URL måste anges för att nedladdning av data ska ske.
 
-   En XSL-formatmall kan användas för att omforma inkommande XML-data.
+  En XSL-formatmall kan användas för att omforma inkommande XML-data.
 
 ### Åtgärd som ska köras {#action-to-execute}
 
 * **Spara**
 
-   Sparar det skapade eller ändrade innehållet. Identifieraren för det sparade innehållet sprids i variabeln contentId för den utgående händelsen.
+  Sparar det skapade eller ändrade innehållet. Identifieraren för det sparade innehållet sprids i variabeln contentId för den utgående händelsen.
 
 * **Generera**
 
-   Genererar utdatafilerna för varje omformningsmall med en publikation av typen &quot;Fil&quot;. Den utgående övergången aktiveras för varje genererad fil med följande parametrar: identifieraren för innehållet som har sparats i variabeln contentId och filnamnet i variabeln filename.
+  Genererar utdatafilerna för varje omformningsmall med en publikation av typen &quot;Fil&quot;. Den utgående övergången aktiveras för varje genererad fil med följande parametrar: identifieraren för innehållet som sparats i variabeln contentId och filnamnet i variabeln filename.
 
 ### Övergång {#transition}
 
@@ -103,7 +102,7 @@ Innehållet fylls i automatiskt av ett XML-flöde som kommer från den URL som a
 </book>
 ```
 
-Dataformatet matchar inte det dataschema som anges i publiceringsmallen (**cus:bok** i vårt exempel), den **`<section>`** -elementet måste ersättas med **`<chapter>`** -element. Vi måste använda formatmallen&quot;cus:book-workflow.xsl&quot; för att kunna göra nödvändiga ändringar.
+Dataformatet matchar inte det dataschema som anges i publiceringsmallen (**cus:bok** i vårt exempel); **`<section>`** -elementet måste ersättas med **`<chapter>`** -element. Vi måste använda formatmallen&quot;cus:book-workflow.xsl&quot; för att kunna göra nödvändiga ändringar.
 
 Källkod för XSLT-formatmallen som används:
 
@@ -216,11 +215,11 @@ Den sista åtgärden i aktiviteten är att förbereda och starta leveransen.
 
 ### Importera innehåll från FTP {#importing-content-from-ftp}
 
-Om ditt leveransinnehåll finns i en HTML-fil på FTP- eller SFTP-servrar kan du enkelt läsa in det i Adobe Campaign-leveranser. Se [det här exemplet](../../workflow/using/loading-delivery-content.md).
+Om ditt leveransinnehåll finns i en HTML-fil på FTP- eller SFTP-servrar kan du enkelt läsa in det i Adobe Campaign-leveranser. Se [detta exempel](../../workflow/using/loading-delivery-content.md).
 
 ### Importera innehåll från kopplingen för Amazon Simple Storage Service (S3) {#importing-content-from-amazon-simple-storage-service--s3--connector}
 
-Om ditt leveransinnehåll finns i Amazon Simple Storage Service (S3)-bucket kan du enkelt läsa in det i Adobe Campaign-leveranser. Se [det här exemplet](../../workflow/using/loading-delivery-content.md).
+Om ditt leveransinnehåll finns i Amazon Simple Storage Service (S3)-bucket kan du enkelt läsa in det i Adobe Campaign-leveranser. Se [detta exempel](../../workflow/using/loading-delivery-content.md).
 
 ## Halvautomatisk uppdatering {#semi-automatic-update}
 

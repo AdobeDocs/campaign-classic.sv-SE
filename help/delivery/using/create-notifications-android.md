@@ -2,19 +2,18 @@
 product: campaign
 title: Skapa ett push-meddelande för Android-enheter
 description: Lär dig hur du skapar push-meddelanden för Android
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+badge-v7-only: label="v7" type="Informative" tooltip="Gäller endast Campaign Classic v7"
 feature: Push
+role: User, Developer, Data Engineer
 exl-id: 13ccc5d6-4355-42ba-80dc-30a45d3b69a4
-source-git-commit: 4661688a22bd1a82eaf9c72a739b5a5ecee168b1
+source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
 workflow-type: tm+mt
-source-wordcount: '713'
-ht-degree: 1%
+source-wordcount: '720'
+ht-degree: 2%
 
 ---
 
 # Skapa meddelanden för Android{#create-notificaations-android}
-
-
 
 Använd Adobe Campaign för att skicka push-meddelanden på Android-enheter. Globala koncept för leveransskapande presenteras i [det här avsnittet](steps-about-delivery-creation-steps.md).
 
@@ -25,10 +24,10 @@ Börja med att skapa en ny leverans.
 Med Firebase Cloud Messaging kan du välja mellan två typer av meddelanden:
 
 * **[!UICONTROL Data message]**, hanteras av klientprogrammet.
-   <br>Meddelanden skickas direkt till mobilprogrammet som genererar och visar android-meddelandet till enheten. Datameddelanden innehåller bara dina anpassade programvariabler.
+  <br>Meddelanden skickas direkt till mobilprogrammet som genererar och visar android-meddelandet till enheten. Datameddelanden innehåller bara dina anpassade programvariabler.
 
 * **[!UICONTROL Notification message]**, hanteras automatiskt av FCM SDK.
-   <br> FCM visar automatiskt meddelandet på användarnas enheter för klientprogrammets räkning. Meddelanden innehåller en fördefinierad uppsättning parametrar och alternativ, men de kan fortfarande anpassas ytterligare med anpassade programvariabler.
+  <br> FCM visar automatiskt meddelandet på användarnas enheter för klientprogrammets räkning. Meddelanden innehåller en fördefinierad uppsättning parametrar och alternativ, men de kan fortfarande anpassas ytterligare med anpassade programvariabler.
 
 Mer information om meddelandetyper i Firebase Cloud finns i [FCM-dokumentation](https://firebase.google.com/docs/cloud-messaging/concept-options#notifications_and_data_messages).
 
@@ -61,7 +60,7 @@ The **[!UICONTROL Application variables]** läggs till automatiskt beroende på 
 
 1. Du kan lägga till information i din tidigare konfigurerade **[!UICONTROL Application variables]** vid behov. **[!UICONTROL Application variables]** måste konfigureras i Android-tjänsten och är en del av den meddelandenyttolast som skickas till den mobila enheten.
 
-1. Klicka **[!UICONTROL Save]** och skicka leveransen.
+1. Klicka **[!UICONTROL Save]** och leverera.
 
 Bilden och webbsidan ska visas i push-meddelandet när de tas emot på prenumerantens mobila Android-enheter.
 
@@ -97,12 +96,12 @@ Bilden och webbsidan ska visas i push-meddelandet när de tas emot på prenumera
 
 1. Lägg till en titel och redigera meddelandet. Anpassa push-meddelanden med **[!UICONTROL Notification options]**:
 
-   * **[!UICONTROL Channel ID]**: Ange meddelandets kanal-ID. Appen måste skapa en kanal med detta channel-id innan något meddelande med detta channel-id tas emot.
-   * **[!UICONTROL Sound]**: Ställ in ljudet som ska spelas upp när enheten får ditt meddelande.
+   * **[!UICONTROL Channel ID]**: Ange kanal-ID för meddelandet. Appen måste skapa en kanal med det här channel-id:t innan något meddelande med det här channel-id:t tas emot.
+   * **[!UICONTROL Sound]**: Ange att ljudet ska spelas upp när enheten får ditt meddelande.
    * **[!UICONTROL Color]**: Ange ikonfärgen för meddelandet.
    * **[!UICONTROL Icon]**: Ange meddelandeikonen som ska visas på dina profilers enheter.
    * **[!UICONTROL Tag]**: Ange den identifierare som ska användas för att ersätta befintliga meddelanden i meddelandelådan.
-   * **[!UICONTROL Click action]**: Ange åtgärden som är associerad med en användare genom att klicka på meddelandet.
+   * **[!UICONTROL Click action]**: Ange åtgärden som är kopplad till en användare genom att klicka på meddelandet.
 
    Mer information finns på **[!UICONTROL Notification options]** och hur du fyller i dessa fält, se [FCM-dokumentation](https://firebase.google.com/docs/reference/fcm/rest/v1/projects.messages#androidnotification).
 
@@ -115,7 +114,7 @@ Bilden och webbsidan ska visas i push-meddelandet när de tas emot på prenumera
    * **[!UICONTROL Notification Count]**: Ange antalet nya olästa uppgifter som ska visas direkt på programikonen.
    * **[!UICONTROL Sticky]**: Ange som true eller false. Om värdet är false ignoreras meddelandet automatiskt när användaren klickar på det. Om värdet är true visas meddelandet fortfarande även när användaren klickar på det.
    * **[!UICONTROL Notification Priority]**: Ange prioritetsnivåerna för dina meddelanden till standard, minimum, low eller high. Mer information finns i [FCM-dokumentation](https://firebase.google.com/docs/reference/fcm/rest/v1/projects.messages#NotificationPriority).
-   * **[!UICONTROL Visibility]**: Ange visningsnivåerna för meddelandet till public, private eller secrets. Mer information finns i [FCM-dokumentation](https://firebase.google.com/docs/reference/fcm/rest/v1/projects.messages#visibility).
+   * **[!UICONTROL Visibility]**: Ange synlighetsnivåerna för dina meddelanden till public, private eller secrets. Mer information finns i [FCM-dokumentation](https://firebase.google.com/docs/reference/fcm/rest/v1/projects.messages#visibility).
 
    Mer information finns på **[!UICONTROL HTTP v1 additional options]** och hur du fyller i dessa fält, se [FCM-dokumentation](https://firebase.google.com/docs/reference/fcm/rest/v1/projects.messages#androidnotification).
 
@@ -123,6 +122,6 @@ Bilden och webbsidan ska visas i push-meddelandet när de tas emot på prenumera
 
 1. Du kan lägga till information i din tidigare konfigurerade **[!UICONTROL Application variables]** vid behov. **[!UICONTROL Application variables]** måste konfigureras i Android-tjänsten och är en del av den meddelandenyttolast som skickas till den mobila enheten.
 
-1. Klicka **[!UICONTROL Save]** och skicka leveransen.
+1. Klicka **[!UICONTROL Save]** och leverera.
 
 Bilden och webbsidan ska visas i push-meddelandet när de tas emot på prenumerantens mobila Android-enheter.

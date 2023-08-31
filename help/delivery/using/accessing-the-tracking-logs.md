@@ -2,20 +2,19 @@
 product: campaign
 title: Åtkomst till spårningsloggarna
 description: Åtkomst till spårningsloggarna
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
+badge-v7: label="v7" type="Informative" tooltip="Gäller Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Gäller även Campaign v8"
 feature: Monitoring
+role: User
 exl-id: df494786-5950-4646-aa9c-4dde45845057
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
 workflow-type: tm+mt
-source-wordcount: '89'
+source-wordcount: '101'
 ht-degree: 17%
 
 ---
 
 # Åtkomst till spårningsloggarna{#accessing-the-tracking-logs}
-
-
 
 När leveransen har skickats och spårning aktiverats, **[!UICONTROL Tracking]** det tekniska arbetsflödet ansvarar för att hämta spårningsdata. Den körs som standard varje timme.
 

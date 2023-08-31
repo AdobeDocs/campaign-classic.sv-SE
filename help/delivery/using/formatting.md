@@ -2,20 +2,19 @@
 product: campaign
 title: Formatering
 description: Formatering
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
+badge-v7: label="v7" type="Informative" tooltip="Gäller Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Gäller även Campaign v8"
 feature: Email Design
+role: User, Developer, Data Engineer
 exl-id: d9688dc4-20c6-4a9a-990f-465f39b2faa2
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
 workflow-type: tm+mt
-source-wordcount: '1447'
+source-wordcount: '1459'
 ht-degree: 0%
 
 ---
 
 # Formatering{#formatting}
-
-
 
 ## JavaScript-mallar {#javascript-templates}
 
@@ -46,7 +45,7 @@ Exempel på en JavaScript HTML-formateringsmall som baseras på &quot;cus:book&q
 De olika JavaScript-direktiven visas i följande format:
 
 * Sammanfoga fält: visar innehållet i data med **`<%= <source> %>`** syntax där `<source>`är källfältet för de data som ska visas.
-* Instruktionsblock: kör en serie JavaScript-instruktioner mellan taggarna &lt;% och %>.
+* Instruktionsblock: kör en serie JavaScript-instruktioner som finns mellan &lt;% och %>-taggarna.
 
 The **innehåll** -objektet representerar huvudelementet i XML-indatadokumentet.
 
@@ -68,8 +67,8 @@ Innehållets attribut och element representeras som JavaScript-objekt och följe
 
 **Exempel**:
 
-* **innehåll.@name**: hämtar värdet för &quot;name&quot;-attributet för huvudelementet
-* **innehåll.@`['name']`**: identiskt med **innehåll.@name** syntax
+* **innehåll.@name**: hämtar värdet för huvudelementets name-attribut
+* **innehåll.@`['name']`**: identisk med **innehåll.@name** syntax
 * **content.kapitel.length**: returnerar antalet element på `<chapter` samlingselement
 * **content.kapitel`[0]`.@name**: hämtar namnet på den första `<chapter>` element
 * **chapter.name()**: returnerar namnet på `<chapter>` element
@@ -87,81 +86,81 @@ Exempel:
 
 * Villkorstest:
 
-   ```
-   <% if (content.@number == 1 || content.@language == 'en') { %>
-   <!-- Content to be displayed if test is true--> 
-   <% } %>
-   ```
+  ```
+  <% if (content.@number == 1 || content.@language == 'en') { %>
+  <!-- Content to be displayed if test is true--> 
+  <% } %>
+  ```
 
 * Funktionsanrop:
 
-   ```
-   <!-- Displays a horizontal bar -->
-   ;<% function DisplayHorizontalBar() { %>
-     <hr/>
-   <% } %> 
-   
-   <!-- The same function in a block  -->
-   <% 
-   function DisplayHorizontalBar2()
-   {
-     document.write('<hr/>');
-   }
-   %> 
-   
-   <!-- Returns the value in uppercase -->
-   <% 
-   function formatName(value)
-   { 
-     return value.toUpperCase(); 
-   }
-   %>
-   
-   <!-- Call functions -->
-   <%= DisplayHorizontalBar1() %>
-   <%= DisplayHorizontalBar2() %>
-   <%= formatName(content.@name) %>
-   ```
+  ```
+  <!-- Displays a horizontal bar -->
+  ;<% function DisplayHorizontalBar() { %>
+    <hr/>
+  <% } %> 
+  
+  <!-- The same function in a block  -->
+  <% 
+  function DisplayHorizontalBar2()
+  {
+    document.write('<hr/>');
+  }
+  %> 
+  
+  <!-- Returns the value in uppercase -->
+  <% 
+  function formatName(value)
+  { 
+    return value.toUpperCase(); 
+  }
+  %>
+  
+  <!-- Call functions -->
+  <%= DisplayHorizontalBar1() %>
+  <%= DisplayHorizontalBar2() %>
+  <%= formatName(content.@name) %>
+  ```
 
 * Deklarationer och variabelanrop:
 
-   ```
-   <%  var counter = 0; %>
-   
-   <%= counter += 10 %>
-   ```
+  ```
+  <%  var counter = 0; %>
+  
+  <%= counter += 10 %>
+  ```
 
 * Hämta och visa ett mottagarnamn med statiska metoder:
 
-   ```
-   <% var recipient = nms.recipient.get(1246); %>
-   <%= recipient.lastName %>
-   ```
+  ```
+  <% var recipient = nms.recipient.get(1246); %>
+  <%= recipient.lastName %>
+  ```
 
 * Återställning och visning av ett mottagarnamn med icke-statiska metoder:
 
-   ```
-   <% var query = xtk.queryDef.create(
-     <queryDef schema="nms:recipient" operation="get">
-       <select>
-         <node expr="@lastName"/>
-       </select>
-       <where>
-         <condition expr="@id=1246"/>
-       </where>
-     </queryDef>);
-   
-     var recipient = query.ExecuteQuery();
-   %>
-   
-   <%= recipient.@lastName %>
-   ```
+  ```
+  <% var query = xtk.queryDef.create(
+    <queryDef schema="nms:recipient" operation="get">
+      <select>
+        <node expr="@lastName"/>
+      </select>
+      <where>
+        <condition expr="@id=1246"/>
+      </where>
+    </queryDef>);
+  
+    var recipient = query.ExecuteQuery();
+  %>
+  
+  <%= recipient.@lastName %>
+  ```
 
 ### Inkludera en JavaScript-mall {#including-a-javascript-template}
 
 Du kan skapa ett bibliotek med funktioner eller variabler för senare bruk. Om du vill göra det importerar du JavaScript-mallen med **eval** funktion. På så sätt kan du förbättra kontexter med ytterligare funktioner som deklarerats i andra JavaScript-mallar.
 
-**Exempel**: importera **common.jsp** mall.
+**Exempel**: importerar **common.jsp** mall.
 
 ```
 <% eval(xtk.javascript.get("cus:common.js").data);  %>
@@ -268,101 +267,101 @@ I det här exemplet beskrivs följande steg:
 
    * I vårt exempel, för HTML:
 
-      ```
-      <html>     
-        <head>         
-          <title>Newsletter</title>
-           <style type="text/css">
-            .body {font-family:Verdana, Arial, Helvetica, sans-serif; font-size:10px; color:#514c48; margin-left: auto; margin-right: auto;}
-            .body table {width:748; border: solid 1px; cellpadding:0; cellspacing:0"}
-           </style>
-        </head>     
-        <body>
-          <p><center><%= mirrorPage %></center></p>
-          <center>
-            <table>      
-             <tr>
-              <td>                                                         
-                <img src="[LOGO]"/>                                   
-              </td>
-              <td>
-                <h1><%= content.@title %></h1>
-              </td>
-             </tr>
-             <tr>
-      
+     ```
+     <html>     
+       <head>         
+         <title>Newsletter</title>
+          <style type="text/css">
+           .body {font-family:Verdana, Arial, Helvetica, sans-serif; font-size:10px; color:#514c48; margin-left: auto; margin-right: auto;}
+           .body table {width:748; border: solid 1px; cellpadding:0; cellspacing:0"}
+          </style>
+       </head>     
+       <body>
+         <p><center><%= mirrorPage %></center></p>
+         <center>
+           <table>      
+            <tr>
+             <td>                                                         
+               <img src="[LOGO]"/>                                   
+             </td>
              <td>
-              <div >                                    
-                <h0><%= hello,</h0>                              
-                <p><%= content.presentation %></p>                                          
-      
-                <h0>Useful information</h0>                              
-                <p>                                  
-                  <img src="[IMAGE 1]"/>When? <br/><%= formatDate(content.@date, "%2D %Bl %4Y") %> From 10 AM in your bookshop.</p><br/>                                       
-                <p>                                  
-                  <img src="[IMAGE 2]"/>Who? <br>Meet our favorite authors and illustrators and get a signed copy of their book.</p><br/>                                                         
-                <p>                                  
-                  <img src="[IMAGE 3]"/>Attendance is free but there is a limited number of seats: sign up now!</p>
-            </div>
-            </td>
-      
-              <td>                                                    
-               <div style="text-align:left; width:210; height:400px; background:url([IMAGE DE FOND])">
-      
-                  <h0><%= participant %></h0>
-                  <%
-                  var i
-                  var iLength = content.attendeesList.length()
-                  for (i=0; i<iLength; i++)
-                  { %>
-                  <p>
-                    <%= generateImgTag(content.attendeesList[i].@["image-id"]) %>  <%= content.attendeesList[i].@description %>
-                  </p>  
-                  <% }  
-                  %>                              
-               </div2>
-              </td>
-          </tr>
-        </table>
-      </center>
-      </body>    
-      </html>
-      ```
+               <h1><%= content.@title %></h1>
+             </td>
+            </tr>
+            <tr>
+     
+            <td>
+             <div >                                    
+               <h0><%= hello,</h0>                              
+               <p><%= content.presentation %></p>                                          
+     
+               <h0>Useful information</h0>                              
+               <p>                                  
+                 <img src="[IMAGE 1]"/>When? <br/><%= formatDate(content.@date, "%2D %Bl %4Y") %> From 10 AM in your bookshop.</p><br/>                                       
+               <p>                                  
+                 <img src="[IMAGE 2]"/>Who? <br>Meet our favorite authors and illustrators and get a signed copy of their book.</p><br/>                                                         
+               <p>                                  
+                 <img src="[IMAGE 3]"/>Attendance is free but there is a limited number of seats: sign up now!</p>
+           </div>
+           </td>
+     
+             <td>                                                    
+              <div style="text-align:left; width:210; height:400px; background:url([IMAGE DE FOND])">
+     
+                 <h0><%= participant %></h0>
+                 <%
+                 var i
+                 var iLength = content.attendeesList.length()
+                 for (i=0; i<iLength; i++)
+                 { %>
+                 <p>
+                   <%= generateImgTag(content.attendeesList[i].@["image-id"]) %>  <%= content.attendeesList[i].@description %>
+                 </p>  
+                 <% }  
+                 %>                              
+              </div2>
+             </td>
+         </tr>
+       </table>
+     </center>
+     </body>    
+     </html>
+     ```
 
    * För texten:
 
-      ```
-      <%= content.@title %>
-      <%= content.presentation %>
-      
-      *** When? On <%= formatDate(content.@date, "%2D %Bl %4Y") %> From 10 AM in your bookshop.
-      
-      *** Who? Come and meet our favorite authors and illustrators and get a signed copy of their books. 
-      
-      *** Attendance is free but there is a limited number of seats: sign up now!
-      
-      Guests:
-      ******************
-      <%
-      var i
-      var iLength = content.attendeesList.length()
-      //for (i=(iLength-1); i>-1; i--)
-      for( i=0 ; i<iLength ; i++ )
-        { %>
-        Description <%= i %> : <%= content.attendeesList[i].@description %>
-        <% }  
-      %>
-      ```
+     ```
+     <%= content.@title %>
+     <%= content.presentation %>
+     
+     *** When? On <%= formatDate(content.@date, "%2D %Bl %4Y") %> From 10 AM in your bookshop.
+     
+     *** Who? Come and meet our favorite authors and illustrators and get a signed copy of their books. 
+     
+     *** Attendance is free but there is a limited number of seats: sign up now!
+     
+     Guests:
+     ******************
+     <%
+     var i
+     var iLength = content.attendeesList.length()
+     //for (i=(iLength-1); i>-1; i--)
+     for( i=0 ; i<iLength ; i++ )
+       { %>
+       Description <%= i %> : <%= content.attendeesList[i].@description %>
+       <% }  
+     %>
+     ```
 
 1. Skapa nu en publiceringsmall som används för båda formaten:
 
    * För HTML:
 
-      ![](assets/d_ncs_content_sample_2.png)
+     ![](assets/d_ncs_content_sample_2.png)
 
    * För text:
 
-      ![](assets/d_ncs_content_sample_3.png)
+     ![](assets/d_ncs_content_sample_3.png)
 
 1. Du kan sedan använda den här innehållsmallen i dina leveranser.
 
@@ -378,7 +377,7 @@ Omformningen beskrivs i sin tur i XML i ett dokument som kallas formatmall.
 
 En formatmall identifieras av sitt namn och namnutrymme, precis som scheman och formulär. Vi rekommenderar dock att du lägger till **.xsl** tillägg till formatmallens namn.
 
-Identifieringsnyckeln för en formatmall är en sträng som består av namnutrymmet och namnet avgränsat med kolon. till exempel: **cus:book.xsl**.
+Identifieringsnyckeln för en formatmall är en sträng som består av namnutrymmet och namnet avgränsat med ett kolon, till exempel: **cus:book.xsl**.
 
 ### Struktur för en formatmall {#structure-of-a-stylesheet}
 
@@ -454,29 +453,29 @@ I vårt exempel genereras en HTML-sida från &quot;cus:book&quot;-schemat genom 
 
 ### Visa HTML/XML {#displaying-html-xml}
 
-Så här visar du en **html** fält, använd **disable-output-escape=&quot;yes&quot;** från **`<xsl:value-of>`** -direktivet. På så sätt kan du undvika att ersätta tecken med deras XML-enhet (till exempel &lt; med &lt;).
+Visa en **html** fält, använd **disable-output-escape=&quot;yes&quot;** från **`<xsl:value-of>`** -direktivet. På så sätt kan du undvika att ersätta tecken med deras XML-enhet (till exempel &lt; med &lt;).
 
-The **`<xsl:text>`** med **disable-output-escape=&quot;yes&quot;** gör att du kan infoga JavaScript-taggar för anpassningsfält eller villkorstester.
+The **`<xsl:text>`** -direktivet med **disable-output-escape=&quot;yes&quot;** gör att du kan infoga JavaScript-taggar för anpassningsfält eller villkorstester.
 
 Exempel:
 
 * Visa innehållet i ett fält av typen&quot;html&quot;:
 
-   ```
-   <xsl:value-of select="summary" disable-output-escaping="yes"/>
-   ```
+  ```
+  <xsl:value-of select="summary" disable-output-escaping="yes"/>
+  ```
 
 * Infoga anpassningsfältet **&lt;%= mottagare.email %>**:
 
-   ```
-   <xsl:text disable-output-escaping="yes"><%= recipient.email %></xsl:text>
-   ```
+  ```
+  <xsl:text disable-output-escaping="yes"><%= recipient.email %></xsl:text>
+  ```
 
 * Lägga till villkorstestet **&lt;% if (mottagare.språk == &#39;en&#39;) `{` %>**:
 
-   ```
-   <xsl:text disable-output-escaping="yes"><% if (recipient.language == 'en') { %></xsl:text>
-   ```
+  ```
+  <xsl:text disable-output-escaping="yes"><% if (recipient.language == 'en') { %></xsl:text>
+  ```
 
 ### Inkludera formatmallar {#including-stylesheets}
 
@@ -497,7 +496,7 @@ The **`<xsl:include>`** -direktivet anger namnet på den formatmall som ska inkl
 
 >[!NOTE]
 >
->Namnet på namnutrymmet får inte anges i referensen till formatmallen som ska inkluderas. Som standard skapas den här formatmallen med användarnamnutrymmet.
+>Namnutrymmets namn får inte anges i referensen till den formatmall som ska inkluderas. Som standard skapas den här formatmallen med användarnamnutrymmet.
 
 ### Redigera en formatmall {#editing-a-stylesheet}
 
@@ -562,7 +561,7 @@ I formuläret läggs fältet för att välja bilden till med följande syntax:
 
 >[!NOTE]
 >
->Om du vill ha mer information **[!UICONTROL Public resources]** och hur du konfigurerar och använder dem, se [det här avsnittet](../../installation/using/deploying-an-instance.md#managing-public-resources).
+>Om du vill ha mer **[!UICONTROL Public resources]** och hur du konfigurerar och använder dem, se [det här avsnittet](../../installation/using/deploying-an-instance.md#managing-public-resources).
 
 ## Datumvisning {#date-display}
 
@@ -578,28 +577,28 @@ Exempel:
 
 * Visa datumet i **31/10/2018** format:
 
-   ```
-    <%= formatDate(content.@date, "%2D/%2M/%4Y") %>
-   ```
+  ```
+   <%= formatDate(content.@date, "%2D/%2M/%4Y") %>
+  ```
 
 * Visa datumet i **Juli 2018** format:
 
-   ```
-   <%
-    function displayDate(date)
-     {
-       var aMonth = 
-       [ 'January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December' ];
-   
-       var month = formatDate(content.@date, "%2M")
-       var year = formatDate(content.@date, "%4Y")
-   
-       return aMonth[month-1]+" "+year;
-     }
-   %>
-   
-   <%= displayDate(content.@date) %>
-   ```
+  ```
+  <%
+   function displayDate(date)
+    {
+      var aMonth = 
+      [ 'January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December' ];
+  
+      var month = formatDate(content.@date, "%2M")
+      var year = formatDate(content.@date, "%4Y")
+  
+      return aMonth[month-1]+" "+year;
+    }
+  %>
+  
+  <%= displayDate(content.@date) %>
+  ```
 
 ### XSL-datumformatering {#xsl-date-formatting}
 
@@ -609,38 +608,38 @@ Exempel:
 
 * Visa datumet i **01/10/2018** format:
 
-   ```
-   <xsl:value-of select="external:date-format(@date, '%2D/%2M/%4Y')"/>
-   ```
+  ```
+  <xsl:value-of select="external:date-format(@date, '%2D/%2M/%4Y')"/>
+  ```
 
 * Visa datumet i **Juli 2018** format:
 
-   ```
-   <!-- Returns the month in the form of a string with the month number as input -->
-   <xsl:template name="longMonth">
-     <xsl:param name="monthNumber"/>
-   
-     <xsl:choose>
-       <xsl:when test="$monthNumber = 1">January</xsl:when>
-       <xsl:when test="$monthNumber = 2">February</xsl:when>
-       <xsl:when test="$monthNumber = 3">March</xsl:when>
-       <xsl:when test="$monthNumber = 4">April</xsl:when>
-       <xsl:when test="$monthNumber = 5">May</xsl:when>
-       <xsl:when test="$monthNumber = 6">June</xsl:when>
-       <xsl:when test="$monthNumber = 7">July</xsl:when>
-       <xsl:when test="$monthNumber = 8">August</xsl:when>
-       <xsl:when test="$monthNumber = 9">September</xsl:when>
-       <xsl:when test="$monthNumber = 10">October</xsl:when>
-       <xsl:when test="$monthNumber = 11">November</xsl:when>
-       <xsl:when test="$monthNumber = 12">December</xsl:when>
-     </xsl:choose>
-   </xsl:template> 
-   
-   <!-- Display date -->
-   <xsl:call-template name="longMonth">
-     <xsl:with-param name="monthNumber">
-       <xsl:value-of select="external:date-format(@date, '%2M')"/>
-     </xsl:with-param>
-   </xsl:call-template>
-    <xsl:value-of select="external:date-format(@date, '%4y')"/>
-   ```
+  ```
+  <!-- Returns the month in the form of a string with the month number as input -->
+  <xsl:template name="longMonth">
+    <xsl:param name="monthNumber"/>
+  
+    <xsl:choose>
+      <xsl:when test="$monthNumber = 1">January</xsl:when>
+      <xsl:when test="$monthNumber = 2">February</xsl:when>
+      <xsl:when test="$monthNumber = 3">March</xsl:when>
+      <xsl:when test="$monthNumber = 4">April</xsl:when>
+      <xsl:when test="$monthNumber = 5">May</xsl:when>
+      <xsl:when test="$monthNumber = 6">June</xsl:when>
+      <xsl:when test="$monthNumber = 7">July</xsl:when>
+      <xsl:when test="$monthNumber = 8">August</xsl:when>
+      <xsl:when test="$monthNumber = 9">September</xsl:when>
+      <xsl:when test="$monthNumber = 10">October</xsl:when>
+      <xsl:when test="$monthNumber = 11">November</xsl:when>
+      <xsl:when test="$monthNumber = 12">December</xsl:when>
+    </xsl:choose>
+  </xsl:template> 
+  
+  <!-- Display date -->
+  <xsl:call-template name="longMonth">
+    <xsl:with-param name="monthNumber">
+      <xsl:value-of select="external:date-format(@date, '%2M')"/>
+    </xsl:with-param>
+  </xsl:call-template>
+   <xsl:value-of select="external:date-format(@date, '%4y')"/>
+  ```

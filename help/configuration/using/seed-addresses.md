@@ -2,14 +2,15 @@
 product: campaign
 title: Dirigerade adresser
 description: Dirigerade adresser
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
+role: Data Engineer, Developer
+badge-v7: label="v7" type="Informative" tooltip="Gäller Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Gäller även Campaign v8"
 feature: Seed Address
 exl-id: a16103bf-0498-4f59-ad96-8bfdeea26577
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
 workflow-type: tm+mt
-source-wordcount: '322'
-ht-degree: 6%
+source-wordcount: '334'
+ht-degree: 7%
 
 ---
 
@@ -80,7 +81,8 @@ Använd följande steg:
    >    * Under tillägget måste du ange en **SQL-namn (@sqlname)** för fältet &#39;email&#39;. SQL-namnet måste skilja sig från &#39;sEmail&#39; som är reserverat för mottagarschemat.
    >    * Du måste uppdatera databasstrukturen med det schema som skapades när du utökar **nms:seedMember**.
    >    * I **nms:seedMember** tillägg måste fältet som innehåller e-postadressen ha **name=&quot;email&quot;** som ett attribut. SQL-namnet måste skilja sig från sEmail som redan används för mottagarschemat. Detta attribut måste omedelbart deklareras under **`<element name="custom_cus_person" />`** -element.
-
+   >    
+   >
 
 1. Ändra **[!UICONTROL seedMember]** formulär för att definiera en ny&quot;intern mottagare&quot;-flik i **[!UICONTROL Seed addresses]** -fönstret. Mer information finns på [den här sidan](../../configuration/using/form-structure.md).
 
@@ -97,4 +99,4 @@ Använd följande steg:
      </container>
    ```
 
-Om inga attribut för startadressen anges ersätter Adobe Campaign automatiskt profilerna: kommer de att anges automatiskt under personaliseringen med data från en befintlig profil.
+Om inga attribut för startadressen anges ersätts profilerna automatiskt av Adobe Campaign: de anges automatiskt vid personalisering med data från en befintlig profil.

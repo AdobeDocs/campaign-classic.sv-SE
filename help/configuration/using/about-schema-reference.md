@@ -2,21 +2,22 @@
 product: campaign
 title: Om schemareferens i Adobe Campaign Classic
 description: Lär dig hur du konfigurerar tilläggsscheman för att utöka den konceptuella datamodellen för Adobe Campaign Classic-databasen
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+badge-v7-only: label="v7" type="Informative" tooltip="Gäller endast Campaign Classic v7"
 feature: Schema Extension
+role: Data Engineer, Developer
 exl-id: f36a1b01-a002-4a21-9255-ea78b5f173fe
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
 workflow-type: tm+mt
-source-wordcount: '381'
-ht-degree: 7%
+source-wordcount: '388'
+ht-degree: 9%
 
 ---
 
 # Om schemareferens{#about-schema-reference}
 
-I det här kapitlet beskrivs hur du konfigurerar tilläggsscheman för att utöka Adobe Campaign-databasens konceptuella datamodell.
+I det här kapitlet beskrivs hur du konfigurerar tilläggsscheman för att utöka den konceptuella datamodellen för Adobe Campaign-databasen.
 
-Om du vill få en bättre förståelse för de inbyggda tabellerna i Campaign och deras interaktion kan du läsa [Campaign Classic datamodell](https://helpx.adobe.com/se/campaign/kb/acc-datamodel.html).
+Om du vill få en bättre förståelse för de inbyggda tabellerna i Campaign och deras interaktion kan du läsa [Campaign Classicens datamodell](https://helpx.adobe.com/se/campaign/kb/acc-datamodel.html).
 
 Den fysiska och logiska strukturen hos de data som medföljer programmet beskrivs i XML. Den lyder under en grammatik som är specifik för Adobe Campaign och som kallas **schema**.
 
@@ -73,7 +74,7 @@ Ett dataschema identifieras med sitt namn och namnutrymme.
 
 Med ett namnutrymme kan du gruppera en uppsättning scheman efter intresseområde. Till exempel **kus** namnutrymme används för kundspecifik konfiguration (**kunder**).
 
-Identifieringsnyckeln för ett schema är en sträng som byggts med namnutrymmet och namnet avgränsat med ett kolon. till exempel: **cus:mottagare**.
+Identifieringsnyckeln för ett schema är en sträng som skapats med namnutrymmet och namnet avgränsat med ett kolon, till exempel: **cus:mottagare**.
 
 >[!IMPORTANT]
 >

@@ -1,20 +1,19 @@
 ---
 product: campaign
 title: Skapa ett push-meddelande för iOS-enheter
-description: Lär dig hur du skapar push-meddelanden för iOS
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+description: Lär dig skapa push-meddelanden för iOS
+badge-v7-only: label="v7" type="Informative" tooltip="Gäller endast Campaign Classic v7"
 feature: Push
+role: User, Developer, Data Engineer
 exl-id: 4520504a-0d9f-4ea7-a5a8-0c07948af4f0
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
 workflow-type: tm+mt
-source-wordcount: '965'
-ht-degree: 6%
+source-wordcount: '972'
+ht-degree: 7%
 
 ---
 
 # Skapa meddelanden för iOS{#create-notifications-ios}
-
-
 
 I det här avsnittet beskrivs de element som är specifika för leveransen av iOS-meddelanden. Globala koncept för leveransskapande presenteras i [det här avsnittet](steps-about-delivery-creation-steps.md).
 
@@ -54,7 +53,7 @@ Följ stegen nedan för att skapa ett push-meddelande för iOS-enheter:
 
 1. I **[!UICONTROL Title]** anger du etiketten för den titel som du vill ska visas i listan med meddelanden som är tillgängliga från meddelandecentret.
 
-   I det här fältet kan du definiera värdet för **title** -parametern för iOS-meddelandenyttolasten.
+   I det här fältet kan du definiera värdet för **title** parameter för iOS-meddelandenyttolast.
 
 1. Du kan lägga till en **[!UICONTROL Subtitle]**, värdet för undertitelparametern för iOS-meddelandenyttolasten. Se [det här avsnittet](configuring-the-mobile-application.md).
 
@@ -62,19 +61,20 @@ Följ stegen nedan för att skapa ett push-meddelande för iOS-enheter:
 
    ![](assets/nmac_delivery_ios_5.png)
 
-1. Klicka på **[!UICONTROL Insert emoticon]** om du vill infoga uttryckssymboler i ditt push-meddelande. Information om hur du anpassar uttryckslistan finns i [det här avsnittet](customizing-emoticon-list.md)
+1. Klicka på **[!UICONTROL Insert emoticon]** om du vill infoga uttryckssymboler i ditt push-meddelande. Om du vill anpassa uttryckslistan läser du [det här avsnittet](customizing-emoticon-list.md)
 
 1. Från **[!UICONTROL Sound and Badge]** kan du redigera följande alternativ:
 
    * **[!UICONTROL Clean Badge]**: aktivera det här alternativet för att uppdatera badge-värdet.
 
-   * **[!UICONTROL Value]**: Ange ett tal som ska användas för att visa antalet nya olästa uppgifter direkt på programikonen.
+   * **[!UICONTROL Value]**: ange ett tal som ska användas för att visa antalet nya olästa uppgifter direkt på programikonen.
 
-   * **[!UICONTROL Critical alert mode]**: aktivera det här alternativet för att lägga till ljud i meddelandet även om användarens telefon är inställd på fokusläge eller om iPhone är avstängt.
+   * **[!UICONTROL Critical alert mode]**: aktivera det här alternativet om du vill lägga till ljud i meddelandet även om användarens telefon är inställd på fokusläge eller om iPhone är avstängt.
 
-   * **[!UICONTROL Name]**: Välj det ljud som ska spelas upp av mobilterminalen när meddelandet tas emot.
+   * **[!UICONTROL Name]**: välj det ljud som ska spelas upp av mobilterminalen när meddelandet tas emot.
 
-   * **[!UICONTROL Volume]**: ljudvolymen från 0 till 100.
+   * **[!UICONTROL Volume]**: ljudvolym från 0 till 100.
+
    >[!NOTE]
    >
    >Ljud måste inkluderas i programmet och definieras när tjänsten skapas. Se [det här avsnittet](configuring-the-mobile-application.md#configuring-external-account-ios).
@@ -87,7 +87,7 @@ Följ stegen nedan för att skapa ett push-meddelande för iOS-enheter:
 
 1. Från **[!UICONTROL Advanced]** kan du redigera följande allmänna alternativ:
 
-   * **[!UICONTROL Mutable content]**: aktivera det här alternativet om du vill tillåta att mobilprogrammet hämtar medieinnehåll.
+   * **[!UICONTROL Mutable content]**: aktivera det här alternativet om du vill att mobilprogrammet ska kunna hämta medieinnehåll.
 
    * **[!UICONTROL Thread-id]**: identifierare som används för att gruppera relaterade meddelanden tillsammans.
 
@@ -97,20 +97,21 @@ Följ stegen nedan för att skapa ett push-meddelande för iOS-enheter:
 
 1. För tidskänsliga meddelanden kan du ange följande alternativ:
 
-   * **[!UICONTROL Target content ID]**: Identifierare som används för att ange vilket programfönster som ska flyttas fram när meddelandet öppnas.
+   * **[!UICONTROL Target content ID]**: identifierare som används för att ange vilket programfönster som ska flyttas fram när meddelandet öppnas.
 
    * **[!UICONTROL Launch image]**: namnet på startbildfilen som ska visas. Om användaren väljer att starta programmet visas den valda bilden i stället för programmets startskärm.
 
    * **[!UICONTROL Interruption level]**:
 
-      * **[!UICONTROL Active]**: Som standard visas meddelandet omedelbart, skärmen visas och ett ljud kan spelas upp. Meddelanden går inte igenom fokusläget.
+      * **[!UICONTROL Active]**: Anges som standard visas meddelandet omedelbart, skärmen visas och ett ljud kan spelas upp. Meddelanden går inte igenom fokusläget.
 
-      * **[!UICONTROL Passive]**: Systemet lägger till meddelandet i meddelandelistan utan att skärmen eller ljudet ljussätts upp. Meddelanden går inte igenom fokusläget.
+      * **[!UICONTROL Passive]**: Systemet lägger till meddelandet i meddelandelistan utan att skärmen ljusas eller ett ljud spelas upp. Meddelanden går inte igenom fokusläget.
 
       * **[!UICONTROL Time sensitive]**: Systemet visar meddelandet omedelbart, lyser upp skärmen, kan spela upp ett ljud och gå igenom fokus-lägen. Den här nivån kräver inget särskilt tillstånd från Apple.
 
       * **[!UICONTROL Critical]**: Systemet visar meddelandet omedelbart, lyser upp skärmen och kringgår avstängningsväxeln eller fokusläget. Observera att den här nivån kräver ett särskilt tillstånd från Apple.
-   * **[!UICONTROL Relevance score]**: Ange ett relevansvärde mellan 0 och 100. Systemet använder detta för att sortera meddelandena i meddelandesammanfattningen.
+
+   * **[!UICONTROL Relevance score]**: ange ett relevansvärde mellan 0 och 100. Systemet använder detta för att sortera meddelandena i meddelandesammanfattningen.
 
    ![](assets/nmac_delivery_ios_8.png)
 
@@ -120,7 +121,7 @@ Följ stegen nedan för att skapa ett push-meddelande för iOS-enheter:
 
    >[!NOTE]
    >
-   >Meddelandeformatet (banner eller alert) har inte definierats i Adobe Campaign. Det beror på vilken konfiguration användaren har valt i sina iOS-inställningar. I Adobe Campaign kan du dock förhandsgranska varje typ av meddelandeformat. Klicka på pilen längst ned till höger för att växla från ett format till ett annat.
+   >Meddelandeformatet (banner eller alert) har inte definierats i Adobe Campaign. Det beror på vilken konfiguration som har valts av användaren i deras iOS-inställningar. I Adobe Campaign kan du dock förhandsgranska varje typ av meddelandeformat. Klicka på pilen längst ned till höger för att växla från ett format till ett annat.
    >
    >Förhandsgranskningen använder iOS 10-utseendet.
 
@@ -170,7 +171,7 @@ Nu måste du skapa en ny leverans och länka den till mobilappen som du har skap
 
 1. Från **[!UICONTROL Advanced]** -fliken, kontrollera **[!UICONTROL Mutable content]** så att mobilprogrammet kan hämta medieinnehåll.
 
-1. Klicka **[!UICONTROL Save]** och skicka leveransen.
+1. Klicka **[!UICONTROL Save]** och leverera.
 
 Bilden och webbsidan ska visas i push-meddelandet när de tas emot på prenumerantens mobila iOS-enheter.
 

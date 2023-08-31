@@ -2,20 +2,19 @@
 product: campaign
 title: Använd datamodeller i Campaign
 description: Lär dig hur du använder datamodeller i Campaign
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
+badge-v7: label="v7" type="Informative" tooltip="Gäller Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Gäller även Campaign v8"
 feature: Data Model
+role: User, Developer, Data Engineer
 exl-id: 3e28bfee-0321-40f4-9ef6-1bdb5b25041b
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
 workflow-type: tm+mt
-source-wordcount: '558'
+source-wordcount: '570'
 ht-degree: 1%
 
 ---
 
 # Använd datamodeller i Campaign{#data-schemas}
-
-
 
 Nedan följer några allmänna principer för användningen av datarotor i Adobe Campaign.
 
@@ -73,12 +72,12 @@ Här är ett exempel på ett innehållshanteringsschema där typerna är ifyllda
 
 ## Egenskaper {#properties}
 
-Olika egenskaper kan användas för att berika **`<element>`** och **`<attribute>`** elementen i dataschemat.
+Olika egenskaper kan användas för att förbättra **`<element>`** och **`<attribute>`** elementen i dataschemat.
 
 De huvudegenskaper som används i innehållshantering är följande:
 
 * **label**: kort beskrivning,
-* **desc**: lång beskrivning,
+* **desc**: long description,
 * **standard**: uttryck som returnerar ett standardvärde när innehåll skapas,
 * **userEnum**: kostnadsfri uppräkning för att lagra och visa de värden som anges i detta fält,
 * **enum**: fast uppräkning som används när listan med möjliga värden är känd i förväg.
@@ -130,7 +129,7 @@ Elementreferenser används ofta i innehållsscheman. Det gör att du kan faktori
 
 The **ref** -attributet i det element som ska refereras måste fyllas med sökvägen (XPath) för referenselementet.
 
-**Exempel**: tillägg av **Bilaga** -avsnitt med samma struktur som **`<chapter>`** element i vårt exempelschema.
+**Exempel**: tillägg av en **Bilaga** -avsnitt med samma struktur som **`<chapter>`** element i vårt exempelschema.
 
 ```
 <srcSchema name="book" namespace="cus">

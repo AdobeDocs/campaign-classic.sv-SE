@@ -2,20 +2,19 @@
 product: campaign
 title: Om innehållshantering
 description: Kom igång med modulen Innehållshanteraren för Campaign
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
+badge-v7: label="v7" type="Informative" tooltip="Gäller Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Gäller även Campaign v8"
 feature: Landing Pages, Email Design
+role: User
 exl-id: 87434cc2-1636-4558-ab60-255b7f873c0c
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
 workflow-type: tm+mt
-source-wordcount: '249'
-ht-degree: 2%
+source-wordcount: '261'
+ht-degree: 3%
 
 ---
 
 # Om innehållshantering{#about-content-management}
-
-
 
 Adobe Campaign Content Manager-modulen är en specifik Campaign Classic [inbyggt paket](../../installation/using/installing-campaign-standard-packages.md) som du kan installera för att skapa återkommande nyhetsbrev eller webbplatser. Det kan hjälpa dig att skapa, validera och publicera meddelanden.
 
@@ -41,7 +40,7 @@ Innehållshantering har följande fördelar:
 * Återställning och automatisk sammanställning av externa innehållsflöden.
 * Samarbeta med arbetsflöden för datavalidering och -kontroll.
 
-Det här sättet att skapa innehåll har dock vissa begränsningar. bland annat följande:
+Det här sättet att skapa innehåll har dock vissa begränsningar, bland annat:
 
 * Begränsad frihet när det gäller den slutliga dokumentdesignen.
 * Kravanalysen måste vara rigorös så att slutanvändarna inte drabbas av en funktion som saknas.

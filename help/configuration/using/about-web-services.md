@@ -2,13 +2,14 @@
 product: campaign
 title: Om webbtjänster
 description: Om webbtjänster
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+badge-v7-only: label="v7" type="Informative" tooltip="Gäller endast Campaign Classic v7"
 feature: API
+role: Data Engineer, Developer
 exl-id: 7aa2aef1-2eb6-48a6-82fa-4451bed66216
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
 workflow-type: tm+mt
-source-wordcount: '655'
-ht-degree: 3%
+source-wordcount: '662'
+ht-degree: 4%
 
 ---
 
@@ -23,7 +24,7 @@ Adobe Campaign API:er används i JavaScript i programmet och i SOAP utanför det
 >[!IMPORTANT]
 >
 >Antalet auktoriserade motorsamtal per dag varierar beroende på ditt licensavtal. Mer information finns på [den här sidan](https://helpx.adobe.com/legal/product-descriptions/adobe-campaign-classic---product-description.html).\
->En lista över alla API:er med fullständig beskrivning finns i [denna dedikerade dokumentation](https://experienceleague.adobe.com/developer/campaign-api/api/index.html.
+>En lista över alla API:er med fullständig beskrivning finns i [den här dedikerade dokumentationen](https://experienceleague.adobe.com/developer/campaign-api/api/index.html.
 
 ## Förhandskrav {#prerequisites}
 
@@ -93,7 +94,7 @@ The `<soap-env:envelope>` är det första elementet i meddelandet som represente
 
 The `<soap-env:body>` är det första underordnade elementet i omslaget. Den innehåller beskrivningen av meddelandet, dvs. innehållet i frågan eller svaret.
 
-Den metod som ska anropas anges i `<executequery>` -element från texten i SOAP-meddelandet.
+Den metod som ska anropas anges i `<executequery>` från texten i SOAP-meddelandet.
 
 I SOAP identifieras parametrarna i den ordning de visas. Den första parametern, `<__sessiontoken>`, tar autentiseringskedjan, den andra parametern är XML-beskrivningen av frågan från `<querydef>` -element.
 
@@ -139,7 +140,7 @@ The `<soap-env:fault>` -elementet i SOAP-meddelandets brödtext används för at
    * &quot;VersionMismatch&quot; i händelse av inkompatibilitet med den SOAP-version som används,
    * &quot;MustUnderstand&quot; i händelse av problem i meddelandehuvudet,
    * &quot;Klient&quot; om klienten saknar viss information,
-   * &quot;Server&quot; om servern har problem med att köra bearbetningen.
+   * &quot;Server&quot; om servern inte kan köra bearbetningen.
 
 * `<faultstring>` : meddelande som beskriver felet
 * `<detail>` : långt felmeddelande

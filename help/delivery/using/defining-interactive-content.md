@@ -2,20 +2,19 @@
 product: campaign
 title: Definiera interaktivt material i Adobe Campaign Classic
 description: Lär dig definiera interaktivt och dynamiskt e-postinnehåll med AMP i Adobe Campaign
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
+badge-v7: label="v7" type="Informative" tooltip="Gäller Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Gäller även Campaign v8"
 feature: Email Design
+role: User
 exl-id: 3110c371-bbf2-4ab2-a701-3f348b5c1e7f
-source-git-commit: ae7aa6989314677a839795e8caa8ba0f95009e09
+source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
 workflow-type: tm+mt
-source-wordcount: '1499'
+source-wordcount: '1511'
 ht-degree: 4%
 
 ---
 
 # Definiera interaktivt innehåll{#defining-interactive-content}
-
-
 
 Med Adobe Campaign kan du använda de interaktiva [AMP för e-post](https://amp.dev/about/email/) format, som gör det möjligt att skicka dynamiska e-postmeddelanden under vissa förhållanden.
 
@@ -73,7 +72,7 @@ Följ stegen nedan för att skapa ett e-postmeddelande i AMP-format.
 
    >[!NOTE]
    >
-   >En viss AMP-mall innehåller ett exempel på de viktigaste kapaciteter du kan använda: produktlista, karusell, dubbel anmälan, undersökning och avancerad serverbegäran.
+   >En viss AMP-mall innehåller ett exempel på de viktigaste kapaciteterna du kan använda: produktlista, karusell, dubbel anmälan, undersökning och avancerad serverbegäran.
 
 1. Klicka på **[!UICONTROL AMP content]** -fliken.
 
@@ -87,11 +86,11 @@ Följ stegen nedan för att skapa ett e-postmeddelande i AMP-format.
 
    Du kan till exempel använda produktlistkomponenten från AMP-mallen och upprätthålla en lista över produkter från ett tredjepartssystem eller till och med inuti Adobe Campaign. När du justerar ett pris eller något annat element visas det automatiskt när mottagarna öppnar e-postmeddelandet från sin postlåda.
 
-1. Anpassa ert AMP-innehåll efter behov, precis som ni brukar göra med HTML i Adobe Campaign, med personaliseringsfält och personaliseringsblock.
+1. Anpassa ert AMP-innehåll efter behov, precis som ni brukar göra med HTML-formatet i Adobe Campaign, med personaliseringsfält och personaliseringsblock.
 
    ![](assets/amp_tab_perso.png)
 
-1. När du är klar med redigeringen markerar du hela AMP-innehållet och kopierar och klistrar in det i [Webbaserad AMP-validerare](https://validator.ampproject.org) eller en liknande webbplats.
+1. När redigeringen är klar markerar du hela AMP-innehållet och kopierar och klistrar in det i [Webbaserad AMP-validerare](https://validator.ampproject.org) eller en liknande webbplats.
 
    >[!NOTE]
    >
@@ -204,7 +203,7 @@ Om du till exempel har tagit med en produktlista i e-postmeddelandet justeras pr
 >
 >Som standard är **[!UICONTROL AMP inclusion]** option is set to **[!UICONTROL No]**.
 
-## Videokurs {#amp-email-video}
+## Självstudievideo {#amp-email-video}
 
 I videon nedan förklaras hur du aktiverar och använder AMP i Adobe Campaign 
 

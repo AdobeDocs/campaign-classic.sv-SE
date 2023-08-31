@@ -2,13 +2,14 @@
 product: campaign
 title: Begränsa PI-vy
 description: Lär dig hur du begränsar PI-vyn
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+badge-v7-only: label="v7" type="Informative" tooltip="Gäller endast Campaign Classic v7"
 feature: PI
+role: Data Engineer, Developer
 exl-id: 0f32d62d-a10a-4feb-99fe-4679b98957d4
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
 workflow-type: tm+mt
-source-wordcount: '390'
-ht-degree: 0%
+source-wordcount: '397'
+ht-degree: 2%
 
 ---
 
@@ -20,9 +21,9 @@ Vissa kunder behöver marknadsföringsanvändare för att få tillgång till dat
 
 ## Implementering {#implementation}
 
-Ett nytt attribut som kan tillämpas på vilket element eller attribut som helst har lagts till i scheman, det kompletterar det befintliga attributet **[!UICONTROL visibleIf]** . Attributet är: **[!UICONTROL accessibleIf]** . När det innehåller ett XTK-uttryck som är relaterat till den aktuella användarkontexten kan det utnyttja **[!UICONTROL HasNamedRight]** eller **[!UICONTROL $(login)]** , till exempel.
+Ett nytt attribut som kan tillämpas på alla element eller attribut har lagts till i scheman, det kompletterar det befintliga attributet **[!UICONTROL visibleIf]** . Attributet är: **[!UICONTROL accessibleIf]** . När det innehåller ett XTK-uttryck som är relaterat till den aktuella användarkontexten kan det utnyttja **[!UICONTROL HasNamedRight]** eller **[!UICONTROL $(login)]** , till exempel.
 
-Du kan hitta ett exempel på ett mottagarschematillägg som visar den här användningen nedan:
+Du kan hitta ett exempel på ett mottagarschematillägg som visar användningen nedan:
 
 ```
 <srcSchema desc="Recipient table (profiles" entitySchema="xtk:srcSchema" extendedSchema="nms:recipient"
@@ -39,8 +40,8 @@ Du kan hitta ett exempel på ett mottagarschematillägg som visar den här anvä
 
 Huvudegenskaperna är:
 
-* **[!UICONTROL visibleIf]** : Döljer fälten från metadata, vilket innebär att de inte kan nås i en schemavy, kolumnmarkering eller ett uttrycksbyggare. Men detta döljer inga data. Om fältnamnet anges manuellt i ett uttryck visas värdet.
-* **[!UICONTROL accessibleIf]** : Döljer data (ersätter dem med tomma värden) från den resulterande frågan. Om visibleIf är tomt får den samma uttryck som **[!UICONTROL accessibleIf]** .
+* **[!UICONTROL visibleIf]** : döljer fälten från metadata, vilket innebär att de inte kan nås i en schemavy, kolumnmarkering eller ett uttrycksbyggare. Men detta döljer inga data. Om fältnamnet anges manuellt i ett uttryck visas värdet.
+* **[!UICONTROL accessibleIf]** : döljer data (ersätter dem med tomma värden) från den resulterande frågan. Om visibleIf är tomt får den samma uttryck som **[!UICONTROL accessibleIf]** .
 
 Här följer konsekvenserna av att använda det här attributet i Campaign:
 
@@ -48,14 +49,14 @@ Här följer konsekvenserna av att använda det här attributet i Campaign:
 * Data visas inte i översiktslistorna eller i postlistan (konsolen).
 * Data blir skrivskyddade i detaljerad vy.
 * Data kan bara användas i filter (vilket innebär att du fortfarande kan gissa värden om du använder vissa dikotomstrategier).
-* Alla uttryck som byggs med ett begränsat fält blir begränsade till: lower(@email) blir lika tillgängligt som @email.
+* Alla uttryck som skapas med ett begränsat fält blir begränsade till: lower(@email) blir lika tillgängliga som @email.
 * I ett arbetsflöde kan du lägga till den begränsade kolumnen i målpopulationen som en extra kolumn i övergången, men den är fortfarande inte tillgänglig för Adobe Campaign-användare.
 * När målpopulationen lagras i en grupp (lista) är de lagrade fälten desamma som datakällan.
 * Data är inte tillgängliga för JS-kod som standard.
 
 ## Rekommendationer {#recommendations}
 
-I varje leverans kopieras e-postadresser till **[!UICONTROL broadLog]** och **[!UICONTROL forecastLog]** tabeller: Därför måste även dessa fält skyddas.
+I varje leverans kopieras e-postadresser till **[!UICONTROL broadLog]** och **[!UICONTROL forecastLog]** tabeller: därför måste även dessa fält skyddas.
 
 Nedan visas ett exempel på ett loggtabellstillägg som implementerar detta:
 
@@ -88,4 +89,4 @@ Nedan visas ett exempel på ett loggtabellstillägg som implementerar detta:
 
 >[!NOTE]
 >
->Denna begränsning gäller icke-tekniska användare: en teknisk användare med tillhörande behörigheter kan hämta data. Denna metod är därför inte helt säker.
+>Begränsningen gäller icke-tekniska användare: en teknisk användare med tillhörande behörigheter kan hämta data. Den här metoden är därför inte helt säker.

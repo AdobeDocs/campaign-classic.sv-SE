@@ -2,27 +2,26 @@
 product: campaign
 title: Om e-postkanal i Adobe Campaign Classic
 description: Det här avsnittet innehåller allmän information om e-postkanalen i Adobe Campaign
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
+badge-v7: label="v7" type="Informative" tooltip="Gäller Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Gäller även Campaign v8"
 feature: Email
+role: User
 exl-id: dbdfc04a-691b-470d-b96d-4c8a9531327d
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
 workflow-type: tm+mt
-source-wordcount: '136'
+source-wordcount: '148'
 ht-degree: 12%
 
 ---
 
 # Om e-postkanalen{#about-email-channel}
 
-
-
 Med Adobe Campaign kan ni massleverera personaliserade elektroniska meddelanden till en målgrupp.
 
 Innan du börjar skicka e-post:
 
 * Kontrollera att mottagarprofilerna innehåller minst en e-postadress.
-* Läs mer om Adobe Campaign [Bästa praxis](delivery-best-practices.md).
+* Läs mer om Adobe Campaign [Bästa praxis för leverans](delivery-best-practices.md).
 * Läs mer om Deliverability: [Leveranshantering i Campaign](about-deliverability.md) och [Guide för bästa praxis vid leverans](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html?lang=sv).
 
 De viktigaste stegen för att skicka e-post är följande:

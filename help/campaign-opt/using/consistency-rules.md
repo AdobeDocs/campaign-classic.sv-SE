@@ -1,14 +1,15 @@
 ---
 product: campaign
 title: Konsekvensregler
-description: Konsekvensregler
+description: Lär dig arbeta med enhetliga regler i Adobe Campaign
+role: User, Data Engineer
 badge-v7-only: label="v7" type="Informative" tooltip="Gäller endast Campaign Classic v7"
 feature: Typology Rules, Campaigns
 exl-id: 757328fa-4698-4f85-a5fa-074b5152ec45
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
 workflow-type: tm+mt
-source-wordcount: '766'
-ht-degree: 3%
+source-wordcount: '774'
+ht-degree: 4%
 
 ---
 
@@ -26,7 +27,7 @@ Innan du levererar meddelanden måste du se till att din organisation har kapaci
 
 För att göra detta måste du skapa **[!UICONTROL Capacity]** typologiregler.
 
-I följande exempel skapar vi en typologiregel för en lojalitetskampanj för en telefon. Vi begränsar antalet meddelanden till 20 per dag, dvs. den dagliga bearbetningskapaciteten hos ett callcenter. När regeln tillämpas på två leveranser kan vi övervaka förbrukningen via loggar.
+I följande exempel skapar vi en typologiregel för en lojalitetskampanj för en telefon. Vi begränsar antalet meddelanden till 20 per dag, dvs. den dagliga bearbetningskapaciteten för ett callcenter. När regeln tillämpas på två leveranser kan vi övervaka förbrukningen via loggar.
 
 Så här utformar du en ny kapacitetsregel:
 

@@ -2,25 +2,24 @@
 product: campaign
 title: Konfigurera Android-mobilprogrammet i Adobe Campaign
 description: Lär dig hur du konfigurerar ditt mobilprogram för Android
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+badge-v7-only: label="v7" type="Informative" tooltip="Gäller endast Campaign Classic v7"
 feature: Push
+role: User, Developer
 exl-id: 32c35e61-d0a3-478f-b73b-396e2becf7f9
-source-git-commit: 4661688a22bd1a82eaf9c72a739b5a5ecee168b1
+source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
 workflow-type: tm+mt
-source-wordcount: '959'
+source-wordcount: '966'
 ht-degree: 4%
 
 ---
 
 # Konfigurationssteg för Android
 
-
-
-När paketet har installerats kan du definiera dina Android-appinställningar i Adobe Campaign Classic.
+När paketet har installerats kan du definiera inställningarna för Android-appen i Adobe Campaign Classic.
 
 >[!NOTE]
 >
->Mer information om hur du konfigurerar din app för iOS och hur du skapar en leverans för iOS finns i [section](configuring-the-mobile-application.md).
+>Mer information om hur du konfigurerar din app för iOS och hur du skapar en leverans för iOS finns i detta [section](configuring-the-mobile-application.md).
 
 Viktiga steg är:
 
@@ -60,7 +59,7 @@ Så här väljer du vilken koppling du vill använda:
 
 ![](assets/do-not-localize/how-to-video.png) [Lär dig hur du konfigurerar en Android-tjänst i video](https://experienceleague.adobe.com/docs/campaign-classic-learn/getting-started-with-push-notifications-for-android/configuring-an-android-service-in-campaign.html#configuring-an-android-service-and-creating-an-android-mobile-application-in-campaign)
 
-1. Gå till **[!UICONTROL Profiles and Targets > Services and subscriptions]** nod och klicka **[!UICONTROL New]**.
+1. Gå till **[!UICONTROL Profiles and Targets > Services and subscriptions]** och klicka på **[!UICONTROL New]**.
 
    ![](assets/nmac_service_1.png)
 
@@ -131,7 +130,7 @@ Följ stegen nedan för att konfigurera API-versionen för HTTP v1:
 
    >[!CAUTION]
    >
-   >För resursdistributionen kan du **[!UICONTROL Test connection]** kommer inte att kontrollera om MID-servern har åtkomst till FCM-servern.
+   >För resursdistributionen kan du **[!UICONTROL Test connection]** kontrollerar inte om MID-servern har åtkomst till FCM-servern.
 
    ![](assets/nmac_android_11.png)
 
@@ -144,7 +143,7 @@ Nedan visas FCM-nyttolastsnamnen för att ytterligare anpassa ditt push-meddelan
 | Meddelandetyp | Konfigurerbart meddelandeelement (FCM-nyttolastnamn) | Konfigurerbara alternativ (FCM-nyttolastnamn) |
 |:-:|:-:|:-:|
 | datameddelande | N/A | validate_only |
-| meddelande | title, body, android_channel_id, icon, sound, tag, color, click_action, image, ticker, sticky, visibility, notification_priority, notification_count <br> | validate_only |
+| meddelandemeddelande | title, body, android_channel_id, icon, sound, tag, color, click_action, image, ticker, sticky, visibility, notification_priority, notification_count <br> | validate_only |
 
 <br>
 <br>
@@ -170,13 +169,13 @@ Nedan visas FCM-nyttolastsnamnen för att ytterligare anpassa ditt push-meddelan
 | Meddelandetyp | Konfigurerbart meddelandeelement (FCM-nyttolastnamn) | Konfigurerbara alternativ (FCM-nyttolastnamn) |
 |:-:|:-:|:-:|
 | datameddelande | N/A | dryRun |
-| meddelande | title, body, android_channel_id, icon, sound, tag, color, click_action <br> | dryRun |
+| meddelandemeddelande | title, body, android_channel_id, icon, sound, tag, color, click_action <br> | dryRun |
 
 <br>
 
 ## Utöka appsubscriptionRcp-schemat {#extend-subscription-schema}
 
-![](assets/do-not-localize/how-to-video.png) [Lär dig hur du utökar appsubscriptionRcp-schemat i en video](https://experienceleague.adobe.com/docs/campaign-classic-learn/getting-started-with-push-notifications-for-android/extending-the-app-subscription-schema.html#extending-the-app-subscription-schema-to-personalize-push-notifications)
+![](assets/do-not-localize/how-to-video.png) [Lär dig hur du utökar appsubscriptionRcp-schemat i video](https://experienceleague.adobe.com/docs/campaign-classic-learn/getting-started-with-push-notifications-for-android/extending-the-app-subscription-schema.html#extending-the-app-subscription-schema-to-personalize-push-notifications)
 
 Du måste utöka **appsubscriptionRcp** om du vill definiera nya ytterligare fält för att lagra parametrar från appen i Campaign-databasen. Dessa fält kommer till exempel att användas för personalisering. Så här gör du:
 
@@ -186,4 +185,4 @@ Du måste utöka **appsubscriptionRcp** om du vill definiera nya ytterligare fä
 
    >[!CAUTION]
    >
-   >Kontrollera konfigurationsnamnen i **[!UICONTROL Subscription parameters]** -fliken är densamma som i mobilprogramkoden. Se [det här avsnittet](integrating-campaign-sdk-into-the-mobile-application.md).
+   >Kontrollera konfigurationsnamnen i dialogrutan **[!UICONTROL Subscription parameters]** -fliken är densamma som i mobilprogramkoden. Se [det här avsnittet](integrating-campaign-sdk-into-the-mobile-application.md).

@@ -2,19 +2,20 @@
 product: campaign
 title: Marknadsföringskampanjdokument och leveransdispositioner
 description: Läs mer om kampanjdokument och leveransdispositioner för marknadsföring
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+role: User
+badge-v7-only: label="v7" type="Informative" tooltip="Gäller endast Campaign Classic v7"
 feature: Campaigns
 exl-id: 891252b0-4700-4a2a-a632-63aad5ce75d7
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
 workflow-type: tm+mt
-source-wordcount: '755'
+source-wordcount: '762'
 ht-degree: 1%
 
 ---
 
 # Hantera associerade dokument {#managing-associated-documents}
 
-Du kan koppla olika dokument till en kampanj: rapporter, foton, webbsidor, diagram osv. Dessa dokument kan ha vilket format som helst (Microsoft Word, PowerPoint, PNG, JPG, Acrobat PDF).
+Du kan associera olika dokument med en kampanj: rapporter, foton, webbsidor, diagram osv. Dessa dokument kan ha vilket format som helst (Microsoft Word, PowerPoint, PNG, JPG, Acrobat PDF).
 
 >[!IMPORTANT]
 >
@@ -30,7 +31,7 @@ I en kampanj kan du även hänvisa till andra saker, som kampanjkuponger, specia
 
 Dokument kan kopplas på kampanjnivå (sammanhangsberoende dokument) eller på programnivå (allmänna dokument).
 
-The **[!UICONTROL Documents]** -fliken innehåller:
+The **[!UICONTROL Documents]** innehåller:
 
 * Listan över alla dokument som krävs för innehållet (mall, bilder osv.) som kan laddas ned lokalt av Adobe Campaign-operatörer med lämpliga rättigheter,
 * Dokument som innehåller information för routern, om sådan finns.
@@ -47,7 +48,7 @@ Klicka på **[!UICONTROL Details]** -ikon för att visa innehållet i en fil och
 
 ![](assets/s_ncs_user_op_add_document_details.png)
 
-På kontrollpanelen grupperas dokument som är kopplade till kampanjen i **[!UICONTROL Document(s)]** som i följande exempel:
+På kontrollpanelen grupperas dokument som är kopplade till kampanjen i **[!UICONTROL Document(s)]** -avsnittet, som i följande exempel:
 
 ![](assets/s_ncs_user_op_edit_document.png)
 
@@ -57,17 +58,17 @@ De kan också redigeras och ändras i den här vyn.
 
 >[!NOTE]
 >
->Leveranskonturer används endast i samband med direktreklamkampanjer.
+>Leveranskonturer används endast för direktreklamkampanjer.
 
 En leveransöversikt betecknar en strukturerad uppsättning element (dokument, butiker, kampanjkuponger osv.) som skapats av företaget och för en viss kampanj.
 
-Dessa element grupperas i leveransdispositioner och varje leveransdisposition kopplas till en leverans. den kommer att refereras i extraheringsfilen som skickas till **tjänstleverantör** för att bifogas leveransen. Du kan till exempel skapa en leveransdisposition som refererar till en gren och de marknadsföringsbroschyrer som används i den.
+Dessa element grupperas i leveransdispositioner och varje leveransdisposition kopplas till en leverans. Den refereras till i extraheringsfilen som skickas till **tjänstleverantör** för att bifogas leveransen. Du kan till exempel skapa en leveransdisposition som refererar till en gren och de marknadsföringsbroschyrer som används i den.
 
-För en kampanj kan du strukturera externa element som ska kopplas till leveransen enligt vissa kriterier: närliggande filial, kampanjerbjudande, inbjudan till ett lokalt evenemang osv.
+För en kampanj kan du strukturera externa element som ska kopplas till leveransen enligt vissa kriterier: relaterad gren, kampanjerbjudande, inbjudan till en lokal händelse osv.
 
 ### Skapa en disposition {#creating-an-outline}
 
-Om du vill skapa en kontur klickar du på **[!UICONTROL Delivery outlines]** underflik i **[!UICONTROL Edit > Documents]** fliken för den berörda kampanjen.
+Skapa en kontur genom att klicka på **[!UICONTROL Delivery outlines]** underflik i **[!UICONTROL Edit > Documents]** fliken för den berörda kampanjen.
 
 >[!NOTE]
 >
@@ -77,7 +78,7 @@ Om du vill skapa en kontur klickar du på **[!UICONTROL Delivery outlines]** und
 
 ![](assets/s_ncs_user_op_composition_link.png)
 
-Klicka på **[!UICONTROL Add a delivery outline]** och skapa en hierarki av konturer för kampanjen:
+Klicka på Nästa **[!UICONTROL Add a delivery outline]** och skapa en hierarki av konturer för kampanjen:
 
 1. Högerklicka på trädets rot och välj **[!UICONTROL New > Delivery outlines]**.
 1. Högerklicka på den kontur du just har skapat och markera **[!UICONTROL New > Item]** eller **[!UICONTROL New > Personalization fields]**.
@@ -89,27 +90,27 @@ En disposition kan innehålla objekt och personaliseringsfält, resurser och erb
 * Objekten kan till exempel vara fysiska dokument som refereras och beskrivs här och bifogas till leveransen.
 * Med personaliseringsfält kan du skapa personaliseringselement för leveranser i stället för mottagare. Det är därför möjligt att skapa värden som ska användas i leveranser för ett specifikt mål (välkomsterbjudande, rabatt osv.) De skapas i Adobe Campaign och importeras till dispositionen via **[!UICONTROL Import personalization fields...]** länk.
 
-   ![](assets/s_ncs_user_op_add_composition_field.png)
+  ![](assets/s_ncs_user_op_add_composition_field.png)
 
-   Du kan också skapa dem direkt i dispositionen genom att klicka på **[!UICONTROL Add]** till höger om listzonen.
+  Du kan också skapa dem direkt i dispositionen genom att klicka på **[!UICONTROL Add]** till höger om listzonen.
 
-   ![](assets/s_ncs_user_op_add_composition_field_button.png)
+  ![](assets/s_ncs_user_op_add_composition_field_button.png)
 
 * Resurserna är marknadsföringsresurser som genereras i kontrollpanelen för marknadsföringsresurser som nås via **[!UICONTROL Resources]** länk till **[!UICONTROL Campaigns]** -fliken.
 
-   ![](assets/s_ncs_user_mkg_resource_ovv.png)
+  ![](assets/s_ncs_user_mkg_resource_ovv.png)
 
-   >[!NOTE]
-   >
-   >Mer information om marknadsföringsresurser finns i [det här avsnittet](../../mrm/using/managing-marketing-resources.md).
+  >[!NOTE]
+  >
+  >Mer information om marknadsföringsresurser finns i [det här avsnittet](../../mrm/using/managing-marketing-resources.md).
 
 ### Markera en kontur {#selecting-an-outline}
 
-För varje leverans kan du välja den disposition som ska kopplas från det avsnitt som är reserverat för dispositionen, som i följande exempel:
+För varje leverans kan du välja den disposition som ska kopplas från det avsnitt som är reserverat för extraheringsdispositionen, som i följande exempel:
 
 ![](assets/s_ncs_user_op_select_composition.png)
 
-Den markerade dispositionen visas sedan i fönstrets nedre del. Den kan redigeras med ikonen till höger om fältet eller ändras med hjälp av listrutan:
+Den markerade dispositionen visas sedan i fönstrets nedre del. Du kan redigera den med ikonen till höger om fältet eller ändra den med hjälp av listrutan:
 
 ![](assets/s_ncs_user_op_select_composition_b.png)
 

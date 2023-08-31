@@ -2,24 +2,23 @@
 product: campaign
 title: Skapa dirigerade adresser
 description: Lär dig hur du skapar och använder dirigerade adresser
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
+badge-v7: label="v7" type="Informative" tooltip="Gäller Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Gäller även Campaign v8"
 feature: Seed Address
+role: User, Data Engineer
 exl-id: f7dc97f0-3423-4b6f-88e2-08180f9adf8a
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
 workflow-type: tm+mt
-source-wordcount: '413'
+source-wordcount: '425'
 ht-degree: 1%
 
 ---
 
 # Skapa dirigerade adresser{#creating-seed-addresses}
 
-
-
 Seed-adresser hanteras inte via standardprofiler och -mål, utan i en dedikerad nod i Adobe Campaign-hierarkin **[!UICONTROL Resources > Campaign management > Seed addresses]**.
 
-Du kan skapa undermappar för att ordna startadresserna. Om du vill göra det högerklickar du på **[!UICONTROL Seed addresses]** nod och markera **[!UICONTROL Create a new 'Seed addresses' folder]**. Namnge undermappen och tryck sedan på **[!UICONTROL Enter]** att validera. Nu kan du skapa eller kopiera dirigerade adresser till den här undermappen. Mer information finns i [Definiera adresser](#defining-addresses).
+Du kan skapa undermappar för att ordna startadresserna. Om du vill göra det högerklickar du på **[!UICONTROL Seed addresses]** nod och markera **[!UICONTROL Create a new 'Seed addresses' folder]**. Namnge undermappen och tryck sedan på **[!UICONTROL Enter]** för att validera. Nu kan du skapa eller kopiera dirigerade adresser till den här undermappen. Mer information finns i [Definiera adresser](#defining-addresses).
 
 Med Adobe Campaign kan ni också skapa mallar för dirigerade adresser som importeras till leveranser eller kampanjer och som anpassas utifrån de specifika behoven hos de aktuella leveranserna och kampanjerna. Se [Skapa mallar för dirigerade adresser](#creating-seed-address-templates).
 
@@ -28,7 +27,7 @@ Med Adobe Campaign kan ni också skapa mallar för dirigerade adresser som impor
 Följ stegen nedan för att skapa dirigerade adresser:
 
 1. Klicka på **[!UICONTROL New]** ovanför listan med dirigerade adresser.
-1. Ange data som är länkade till adressen i matchande fält från **[!UICONTROL Recipient]** -fliken. De tillgängliga fälten motsvarar standardfälten i leveransmottagarnas profiler (nms:mottagartabellen): namn, förnamn, e-postadress osv.
+1. Ange data som är länkade till adressen i matchande fält från **[!UICONTROL Recipient]** -fliken. De tillgängliga fälten motsvarar standardfälten i leveransmottagarnas profiler (nms:mottagartabell): namn, förnamn, e-post osv.
 
    >[!NOTE]
    >
@@ -44,9 +43,9 @@ Följ stegen nedan för att skapa dirigerade adresser:
 
    >[!NOTE]
    >
-   >Kontrollera att ytterligare måldata har definierats med ett alias som börjar med @ i **[!UICONTROL Enrichment]** aktivitet. Annars kan du inte använda dem på rätt sätt med dina dirigerade adresser i leveransaktiviteten.
+   >Se till att ytterligare måldata har definierats med ett alias som börjar med @ i **[!UICONTROL Enrichment]** aktivitet. Annars kan du inte använda dem på rätt sätt med dina dirigerade adresser i leveransaktiviteten.
 
-## Skapa mallar för dirigerade adresser {#creating-seed-address-templates}
+## Skapar mallar för dirigerade adresser {#creating-seed-address-templates}
 
 Om du vill skapa adressmallar som ska importeras och ändras för varje leverans, är processen densamma som när du definierar en ny dirigeringsadress. Den enda skillnaden är att adresser för startadressmallar måste lagras i en mapp av typen &quot;Mall&quot;.
 

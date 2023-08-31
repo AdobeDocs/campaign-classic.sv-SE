@@ -2,12 +2,13 @@
 product: campaign
 title: Webbtjänstanrop
 description: Webbtjänstanrop
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+badge-v7-only: label="v7" type="Informative" tooltip="Gäller endast Campaign Classic v7"
 feature: API
+role: Data Engineer, Developer
 exl-id: ce94e7e7-b8f8-4c82-937f-e87d15e50c34
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
 workflow-type: tm+mt
-source-wordcount: '922'
+source-wordcount: '929'
 ht-degree: 1%
 
 ---
@@ -79,7 +80,7 @@ https://`<server>`/nl/jsp/schemawsdl.jsp?schema=`<schema>`
 Med:
 
 * **`<server>`**: Adobe Campaign programserver (nlserver web)
-* **`<schema>`**: schema-ID-nyckel (namespace:schema_name)
+* **`<schema>`**: schemaidentifieringsnyckel (namnrymd:schema_name)
 
 ### Exempel på metoden ExecuteQuery i schemat xtk:queryDef {#example-on-the--executequery--method-of-schema--xtk-querydef-}
 
@@ -154,7 +155,7 @@ The `<porttype>` associerar meddelandena för åtgärden &quot;ExecuteQuery&quot
 
 #### Bindning {#binding}
 
-The `<binding>` part anger SOAP-kommunikationsprotokollet ( `<soap:binding>` ), datatransport i HTTP (värdet för attributet &quot;transport&quot;) och dataformatet för åtgärden &quot;ExecuteQuery&quot;. Innehållet i SOAP-kuvertet innehåller meddelandesegmenten direkt utan omformning.
+The `<binding>` part anger SOAP-kommunikationsprotokollet ( `<soap:binding>` ), datatransport i HTTP (värdet för attributet transport) och dataformatet för åtgärden ExecuteQuery. Innehållet i SOAP-kuvertet innehåller meddelandesegmenten direkt utan omformning.
 
 ```
 <binding name="queryDefMethodsSoap" type="tns:queryDefMethodsSoap">
@@ -193,7 +194,7 @@ Det finns två autentiseringslägen:
 
 eller
 
-* **via Adobe Campaign inloggning + lösenord** som skapar en sessionstoken. Sessionstoken upphör automatiskt efter en angiven period. Det här läget rekommenderas inte och kräver att säkerhetsinställningarna för vissa zoninställningar reduceras (allowUserPassword=&quot;true&quot; och sessionTokenOnly=&quot;true&quot;).
+* **via Adobe Campaign inloggning + lösenord** som skapar en sessionstoken. Sessionstoken upphör automatiskt att gälla efter en angiven period. Det här läget rekommenderas inte och kräver att säkerhetsinställningarna för vissa zoninställningar reduceras (allowUserPassword=&quot;true&quot; och sessionTokenOnly=&quot;true&quot;).
 
 ### Sessionstokensegenskaper {#session-token-characteristics}
 
@@ -276,7 +277,7 @@ Från ett SOAP-anrop:
 >
 >De URL:er som används i följande **HttpServletRequest** anrop måste finnas på tillåtelselista i delen URL-behörigheter i **serverConf.xml** -fil. Detta gäller även för serverns URL.
 
-Inloggningskörning():
+Inloggningskörning:
 
 ```
 var req = new HttpClientRequest("https://serverURL/nl/jsp/soaprouter.jsp");

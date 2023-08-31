@@ -2,20 +2,19 @@
 product: campaign
 title: E-postparametrar
 description: Läs mer om alternativ och inställningar som är specifika för e-postleverans
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
+badge-v7: label="v7" type="Informative" tooltip="Gäller Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Gäller även Campaign v8"
 feature: Email
+role: User, Developer, Data Engineer
 exl-id: 1bb36e71-9f1a-4553-b266-eca3f48688e2
-source-git-commit: 43158445f688f4c2612d4dad76f2243b2e358b35
+source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
 workflow-type: tm+mt
-source-wordcount: '900'
+source-wordcount: '912'
 ht-degree: 8%
 
 ---
 
 # E-postparametrar {#email-parameters}
-
-
 
 I det här avsnittet visas alternativ och parametrar som är specifika för e-postleverans.
 
@@ -83,7 +82,7 @@ Välj formatet för e-postmeddelandet i fönstrets nedre del:
 
 Spegelsidan är en HTML-sida som är tillgänglig online via en webbläsare. Innehållet är identiskt med e-postmeddelandet.
 
-Spegelsidan genereras som standard om länken infogas i postens innehåll. Mer information om infogning av anpassningsblock finns i [Personaliseringsblock](personalization-blocks.md).
+Spegelsidan genereras som standard om länken infogas i postens innehåll. Mer information om infogning av personaliseringsblock finns i [Personaliseringsblock](personalization-blocks.md).
 
 I leveransegenskaperna visas **[!UICONTROL Mode]** fält för **[!UICONTROL Validity]** kan du ändra genereringsläget för den här sidan.
 
@@ -95,7 +94,7 @@ I leveransegenskaperna visas **[!UICONTROL Mode]** fält för **[!UICONTROL Vali
 
 Förutom standardläget är följande alternativ också tillgängliga:
 
-* **[!UICONTROL Force the generation of the mirror page]**: även om ingen länk till spegelsidan infogas i leveransen, skapas spegelsidan.
+* **[!UICONTROL Force the generation of the mirror page]**: även om ingen länk till spegelsidan infogas i leveransen skapas spegelsidan.
 * **[!UICONTROL Do not generate the mirror page]**: ingen spegelsida genereras, även om länken finns i leveransen.
 * **[!UICONTROL Generates a mirror page accessible using only the message identifier]**: Med det här alternativet kan du komma åt spegelsidans innehåll, med anpassningsinformation, i leveransloggfönstret. Det gör du genom att klicka på **[!UICONTROL Delivery]** och väljer den rad för mottagaren vars spegelsida du vill visa. Klicka på länken **[!UICONTROL Display the mirror page for this message...]**.
 
@@ -127,7 +126,7 @@ Mer information om hantering av studsade e-postmeddelanden finns i [det här avs
 
 ## Lägga till SMTP-rubriker {#adding-smtp-headers}
 
-Det går att lägga till SMTP-huvuden i leveranserna. Använd relevanta avsnitt i **[!UICONTROL SMTP]** -fliken i leveransen.
+Det går att lägga till SMTP-huvuden i leveranserna. Använd relevanta avsnitt i **[!UICONTROL SMTP]** i leveransen.
 
 Skriptet som anges i det här fönstret måste referera till en rubrik per rad i följande formulär: **name:value**.
 

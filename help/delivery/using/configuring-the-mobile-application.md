@@ -2,13 +2,14 @@
 product: campaign
 title: Konfigurera iOS mobilprogram i Adobe Campaign
 description: Lär dig hur du konfigurerar ditt mobilprogram för iOS
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+badge-v7-only: label="v7" type="Informative" tooltip="Gäller endast Campaign Classic v7"
 feature: Push
+role: User, Developer
 exl-id: 67eee1c5-a918-46b9-875d-7c3c71c00635
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
 workflow-type: tm+mt
-source-wordcount: '651'
-ht-degree: 7%
+source-wordcount: '658'
+ht-degree: 8%
 
 ---
 
@@ -55,7 +56,7 @@ Din iOS-anslutning är nu konfigurerad. Du kan börja skapa tjänsten.
 >
 >Om så inte är fallet, se [den här sidan](https://developer.apple.com/documentation/usernotifications).
 
-1. Gå till **[!UICONTROL Profiles and Targets > Services and subscriptions]** nod och klicka **[!UICONTROL New]**.
+1. Gå till **[!UICONTROL Profiles and Targets > Services and subscriptions]** och klicka på **[!UICONTROL New]**.
 
    ![](assets/nmac_service_1.png)
 
@@ -107,11 +108,11 @@ I följande exempel lägger vi till **mediaURl** och **mediaExt** för att skapa
    >
    > The **[!UICONTROL Integration key]** är helt anpassningsbart med strängvärde, men måste vara exakt densamma som den som anges i SDK:n.
 
-1. Välj en av de färdiga ikonerna i dialogrutan **[!UICONTROL Application icon]** fält för att anpassa mobilapplikationer i din tjänst.
+1. Välj en av de färdiga ikonerna i dialogrutan **[!UICONTROL Application icon]** för att personalisera mobilapplikationer i din tjänst.
 
 1. Markera **[!UICONTROL Authentication mode]**. Observera att du alltid kan ändra autentiseringsläget senare i dialogrutan **[!UICONTROL Certificate]** -fliken i ditt mobilprogram.
    * **[!UICONTROL Certificate-based authentication]**: Klicka **[!UICONTROL Enter the certificate...]**  välj sedan din p12-nyckel och ange lösenordet som angavs av mobilprogramutvecklaren.
-   * **[!UICONTROL Token-based authentication]**: Fylla i anslutningsinställningarna **[!UICONTROL Key ID]**, **[!UICONTROL Team ID]** och **[!UICONTROL Bundle ID]** välj sedan ditt p8-certifikat genom att klicka på **[!UICONTROL Enter the private key]**. Om du vill ha mer information **[!UICONTROL Token-based authentication]**, se [Apple-dokumentation](https://developer.apple.com/documentation/usernotifications/setting_up_a_remote_notification_server/establishing_a_token-based_connection_to_apns).
+   * **[!UICONTROL Token-based authentication]**: Fyll i anslutningsinställningarna **[!UICONTROL Key ID]**, **[!UICONTROL Team ID]** och **[!UICONTROL Bundle ID]** välj sedan ditt p8-certifikat genom att klicka på **[!UICONTROL Enter the private key]**. Om du vill ha mer **[!UICONTROL Token-based authentication]**, se [Apple-dokumentation](https://developer.apple.com/documentation/usernotifications/setting_up_a_remote_notification_server/establishing_a_token-based_connection_to_apns).
 
    >[!NOTE]
    >
@@ -119,7 +120,7 @@ I följande exempel lägger vi till **mediaURl** och **mediaExt** för att skapa
 
    ![](assets/nmac_ios_4.png)
 
-1. Du kan klicka **[!UICONTROL Test the connection]** för att vara säker på att det fungerar.
+1. Klicka **[!UICONTROL Test the connection]** för att vara säker på att det fungerar.
 
 1. Klicka **[!UICONTROL Next]** för att börja konfigurera produktionsprogrammet och följa de steg som beskrivs ovan.
 

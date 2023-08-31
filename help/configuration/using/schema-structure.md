@@ -3,15 +3,16 @@ product: campaign
 title: Schemastruktur
 description: Schemastruktur
 feature: Custom Resources
+role: Data Engineer, Developer
 badge-v7-only: label="v7" type="Informative" tooltip="Gäller endast Campaign Classic v7"
 audience: configuration
 content-type: reference
 topic-tags: schema-reference
 exl-id: 3405efb8-a37c-4622-a271-63d7a4148751
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
 workflow-type: tm+mt
 source-wordcount: '1527'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 

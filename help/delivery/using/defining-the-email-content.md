@@ -5,8 +5,9 @@ description: Lär dig definiera e-postinnehåll när du använder Adobe Campaign
 badge-v7: label="v7" type="Informative" tooltip="Gäller Campaign Classic v7"
 badge-v8: label="v8" type="Positive" tooltip="Gäller även Campaign v8"
 feature: Email Design
+role: User
 exl-id: 46212929-fd2d-44a2-897e-35f98e88af36
-source-git-commit: 728fc285fbd562003199c53339899bbc4441bfc6
+source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
 workflow-type: tm+mt
 source-wordcount: '1955'
 ht-degree: 1%
@@ -17,7 +18,7 @@ ht-degree: 1%
 
 ## Avsändare {#sender}
 
-Om du vill definiera namn och adress för avsändaren som ska visas i huvudet för skickade meddelanden klickar du på knappen **[!UICONTROL From]** länk.
+Om du vill ange namn och adress för avsändaren som ska visas i huvudet för skickade meddelanden klickar du på knappen **[!UICONTROL From]** länk.
 
 ![](assets/s_ncs_user_wizard_email02.png)
 
@@ -151,7 +152,7 @@ E-postleveranser i HTML-format kan innehålla bilder. I leveransguiden kan du im
 
 För att undvika prestandaproblem får bilderna i e-postmeddelanden inte överstiga 100 kB. Den här begränsningen, som är inställd som standard, kan ändras från `NmsDelivery_MaxDownloadedImageSize` alternativ. Adobe rekommenderar dock att du undviker stora bilder i e-postutskick.
 
-Läs mer i [listan över alternativ för Campaign Classic](../../installation/using/configuring-campaign-options.md#delivery).
+Läs mer i [listan med alternativ för Campaign Classic](../../installation/using/configuring-campaign-options.md#delivery).
 
 ### Typer av bilder {#img-types}
 

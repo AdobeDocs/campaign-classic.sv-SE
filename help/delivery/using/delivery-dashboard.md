@@ -2,19 +2,19 @@
 product: campaign
 title: Kontrollpanel för leverans
 description: Läs mer om hur du använder kontrollpanelen för leverans för att övervaka leveranser
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
+badge-v7: label="v7" type="Informative" tooltip="Gäller Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Gäller även Campaign v8"
 feature: Monitoring
+role: User, Data Engineer
 exl-id: 44ecc8c6-6584-43eb-96b4-7d8463053123
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
 workflow-type: tm+mt
-source-wordcount: '1174'
+source-wordcount: '1186'
 ht-degree: 4%
 
 ---
 
 # Kontrollpanel för leverans {#delivery-dashboard}
-
 
 
 The **kontrollpanel för leverans** är nyckeln för att övervaka leveranser och eventuella problem som uppstår när meddelanden skickas.
@@ -41,11 +41,11 @@ Här är den information du kan övervaka med hjälp av flera flikar som är til
 
 ## Leveranssammanfattning {#delivery-summary}
 
-The **[!UICONTROL Summary]** -fliken innehåller egenskaper för leveransen: leveransstatus, kanal som används, information om avsändare, ämne, information om exekvering.
+The **[!UICONTROL Summary]** -fliken innehåller information om leveransstatus: leveransstatus, kanal som används, information om avsändare, ämne, information om utförande.
 
 ## Leveransrapporter {#delivery-reports}
 
-The **[!UICONTROL Reports]** -länk, som du kommer åt från **[!UICONTROL Summary]** kan du titta på en uppsättning rapporter som relaterar till leveransåtgärden: allmän leveransrapport, detaljerad rapport, leveransrapport, distribution av felmeddelanden, öppningsfrekvens, klick och transaktioner osv.
+The **[!UICONTROL Reports]** -länk, som du kommer åt från **[!UICONTROL Summary]** kan du titta på en uppsättning rapporter som rör leveransåtgärden: allmän leveransrapport, detaljerad rapport, leveransrapport, distribution av misslyckade meddelanden, öppningsfrekvens, klick och transaktioner osv.
 
 Innehållet på den här fliken kan konfigureras enligt dina krav. Mer information om leveransrapporter finns i [det här avsnittet](../../reporting/using/delivery-reports.md).
 
@@ -55,11 +55,11 @@ Innehållet på den här fliken kan konfigureras enligt dina krav. Mer informati
 
 The **[!UICONTROL Delivery]** -fliken innehåller en historik över förekomsterna i den här leveransen. Den innehåller leveransloggarna, dvs. en lista över skickade meddelanden och deras status samt tillhörande meddelanden.
 
-För en leverans kan du till exempel bara visa mottagare med en misslyckad leverans eller en adress i karantän. Om du vill göra det klickar du på **[!UICONTROL Filters]** och markera **[!UICONTROL By state]**. Välj sedan läget i listrutan. Olika statusvärden visas i [den här sidan](delivery-statuses.md).
+För en leverans kan du till exempel bara visa mottagare med en misslyckad leverans eller en adress i karantän. Klicka på **[!UICONTROL Filters]** knapp och markera **[!UICONTROL By state]**. Välj sedan läget i listrutan. Olika statusvärden visas i [den här sidan](delivery-statuses.md).
 
 >[!NOTE]
 >
->Listan med leveransloggar kan anpassas, precis som alla andra listor i Campaign Classic. Du kan till exempel lägga till en kolumn för att veta vilken IP-adress som skickade varje e-post i en leverans. Mer information finns i användningsexemplet i [det här avsnittet](#use-case).
+>Listan som visar leveransloggarna kan anpassas som alla listor i Campaign Classicen. Du kan till exempel lägga till en kolumn för att veta vilken IP-adress som skickade varje e-post i en leverans. Mer information finns i användningsexemplet i [det här avsnittet](#use-case).
 
 ![](assets/s_ncs_user_delivery_delivery_tab.png)
 
@@ -105,7 +105,7 @@ The **[!UICONTROL Proofs]** kan du visa en lista med de korrektur som har skicka
 
 ![](assets/s_ncs_user_delivery_log_tab.png)
 
-Du kan ändra den information som visas i det här fönstret (och i **[!UICONTROL Delivery]** och **[!UICONTROL Tracking]** genom att markera de kolumner som ska visas. Om du vill göra det klickar du på **[!UICONTROL Configure list]** ikonen i det nedre högra hörnet. Mer information om hur du konfigurerar listvisning finns i [det här avsnittet](../../platform/using/adobe-campaign-workspace.md#configuring-lists).
+Du kan ändra den information som visas i det här fönstret (och i **[!UICONTROL Delivery]** och **[!UICONTROL Tracking]** genom att markera de kolumner som ska visas. Klicka på **[!UICONTROL Configure list]** ikonen i det nedre högra hörnet. Mer information om hur du konfigurerar listvisning finns i [det här avsnittet](../../platform/using/adobe-campaign-workspace.md#configuring-lists).
 
 ## Synkronisering av kontrollpanel för leverans {#delivery-dashboard-synchronization}
 
@@ -164,7 +164,7 @@ Lägg till **publicID** i leveransloggarna måste du utöka schemat först. Du k
 
    ![](assets/edit-schema.png)
 
-### Steg 2: Uppdatera databasstruktur
+### Steg 2: Uppdatera databasstrukturen
 
 När ändringarna är klara måste du uppdatera databasstrukturen så att den anpassas till den logiska beskrivningen.
 
@@ -182,7 +182,7 @@ Följ stegen nedan för att göra detta:
    >
    >Se alltid till att det inte finns några andra ändringar förutom **[!UICONTROL NmsBroadLoGRcp]** tabell (eller **[!UICONTROL broadLogMid]** om du arbetar i en miljö där flera leverantörer arbetar). Om så är fallet avmarkerar du andra tabeller.
 
-1. Klicka **[!UICONTROL Next]** att validera. Följande skärm visas:
+1. Klicka **[!UICONTROL Next]** för att validera. Följande skärm visas:
 
    ![](assets/update-script.png)
 
@@ -204,7 +204,7 @@ Det gör du genom att öppna leveransloggarna och lägga till kolumnen&quot;IP-i
 
 >[!NOTE]
 >
->Mer information om hur du konfigurerar listor i Campaign Classic-gränssnittet finns i [den här sidan](../../platform/using/adobe-campaign-workspace.md).
+>Mer information om hur du konfigurerar listor i Campaign Classicens gränssnitt finns i [den här sidan](../../platform/using/adobe-campaign-workspace.md).
 
 Nedan visas vad du bör se i **[!UICONTROL Delivery]** tabb efter ändringar:
 

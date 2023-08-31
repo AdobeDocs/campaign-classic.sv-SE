@@ -2,13 +2,14 @@
 product: campaign
 title: Kom igång med spårning
 description: Läs mer om de allmänna riktlinjerna för spårning i Adobe Campaign
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
+badge-v7: label="v7" type="Informative" tooltip="Gäller Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Gäller även Campaign v8"
 feature: Monitoring, Email
+role: User
 exl-id: 43779505-9917-4e99-af25-b00a9d29a645
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
 workflow-type: tm+mt
-source-wordcount: '683'
+source-wordcount: '695'
 ht-degree: 9%
 
 ---
@@ -19,7 +20,7 @@ ht-degree: 9%
 
 Tack vare spårningsfunktionerna i Adobe Campaign kan du spåra skickade meddelanden och kontrollera mottagarnas beteende: öppna, klicka på länkar, ta bort prenumeration osv.
 
-Den här informationen hämtas i **[!UICONTROL Tracking]** -fliken för profilen för varje mottagare av leveransen. På den här fliken visas alla URL-länkar som spårats och klickats av mottagaren som valts i listan. Detta är en ackumulering av alla URL:er som spåras i leveranser som fortfarande finns på leveransskärmen. Listan kan konfigureras och innehåller vanligtvis: den URL som klickades på, datum och tid för klickningen samt det dokument där URL:en hittades. Mer information om detta finns i [det här avsnittet](../../platform/using/editing-a-profile.md#tracking-tab).
+Den här informationen hämtas i **[!UICONTROL Tracking]** -fliken för profilen för varje mottagare av leveransen. På den här fliken visas alla URL-länkar som spårats och klickats av mottagaren som valts i listan. Detta är en ackumulering av alla URL:er som spåras i leveranser som fortfarande finns på leveransskärmen. Listan kan konfigureras och innehåller vanligtvis: den URL-adress som klickades på, datum och tid för klickningen samt det dokument där URL-adressen hittades. Mer information om detta finns i [det här avsnittet](../../platform/using/editing-a-profile.md#tracking-tab).
 
 The **kontrollpanel för leverans** är också avgörande för att övervaka leveranser och eventuella problem som uppstår när meddelanden skickas. Mer information om detta finns i [det här avsnittet](delivery-dashboard.md).
 
@@ -51,13 +52,13 @@ När spårning har konfigurerats och URL:erna har fyllts i måste spårningsserv
 
 Du kan spåra mottagning av meddelanden och aktivering av länkar som infogats i meddelandeinnehållet för att bättre förstå mottagarnas beteende. [Läs mer](how-to-configure-tracked-links.md)
 
-**URL-spårning**
+**URL-uppföljning**
 
 Spårningsalternativen kan konfigureras genom att aktivera eller inaktivera spårade URL:er. [Läs mer](personalizing-url-tracking.md)
 
 **Spårad länkpersonalisering**
 
-Med spårningsfunktionerna i Campaign Classic kan du lägga till länkar i e-postmeddelanden som kan personaliseras och som stöder spårning. [Läs mer](tracking-personalized-links.md)
+Med spårningsfunktionerna kan du lägga till länkar i e-postmeddelanden som kan personaliseras och som stöder spårning. [Läs mer](tracking-personalized-links.md)
 
 **Spårningsloggar**
 
@@ -93,7 +94,7 @@ Den här rapporten innehåller en lista över besökta sidor efter en leverans. 
 
 **Person/personer och mottagare**
 
-I det här exemplet är det lättare att förstå skillnaden mellan en person/person och en mottagare i Adobe Campaign. [Läs mer](../../reporting/using/person-people-recipients.md)
+I det här exemplet är det lättare att förstå skillnaden mellan en person/en person och en mottagare i Adobe Campaign. [Läs mer](../../reporting/using/person-people-recipients.md)
 
 **Spårningsindikatorer**
 
@@ -107,16 +108,16 @@ De olika tabellerna ger dig en lista över indikatorer som används i de olika r
 
 <img src="assets/do-not-localize/icon-troubleshooting.svg" width="60px">
 
-Följande felsökningstips hjälper dig att lösa de vanligaste problemen som inträffar när du använder spårning i Adobe Campaign Classic. Mer avancerad felsökning finns i [det här avsnittet](tracking-troubleshooting.md).
+Följande felsökningstips hjälper dig att lösa de vanligaste problemen som inträffar när du använder spårning i Adobe Campaign Classic. Om du vill ha en mer avancerad felsökning går du till [det här avsnittet](tracking-troubleshooting.md).
 
 * Kontrollera att spårningsloggsprocessen körs
 
-   Den här processen läser från det delade minnet för IIS/Web Server och skriver omdirigeringsloggarna.
+  Den här processen läser från det delade minnet för IIS/webbservern och skriver omdirigeringsloggarna.
 
-   Du kommer åt den från hemsidan genom att välja fliken Övervakning i din instans. Du kan också köra följande kommando på instansen: `<user>@<instance>:~$ nlserver pdump`
+  Du kommer åt den från hemsidan genom att välja fliken Övervakning i din instans. Du kan också köra följande kommando på instansen: `<user>@<instance>:~$ nlserver pdump`
 
-   Om spårningsprocessen inte visas i listan startar du den med följande kommando på instansen: `<user>@<instance>:~$ nlserver start trackinglogd`
+  Om spårningsloggsprocessen inte visas i listan startar du den med följande kommando på instansen: `<user>@<instance>:~$ nlserver start trackinglogd`
 
 * Kontrollera att det tekniska arbetsflödet för spårning har körts nyligen.
 
-   Du hittar det tekniska arbetsflödet för spårning i mapparna Administration > Produktion > Tekniska arbetsflöden.
+  Du hittar det tekniska arbetsflödet för spårning i mapparna Administration > Produktion > Tekniska arbetsflöden.

@@ -2,19 +2,20 @@
 product: campaign
 title: Verksamhetsorienterade API:er
 description: Verksamhetsorienterade API:er
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+badge-v7-only: label="v7" type="Informative" tooltip="Gäller endast Campaign Classic v7"
 feature: API
+role: Data Engineer, Developer
 exl-id: e6638870-3141-4f12-b904-db436127c0d1
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
 workflow-type: tm+mt
-source-wordcount: '632'
-ht-degree: 3%
+source-wordcount: '639'
+ht-degree: 4%
 
 ---
 
 # Verksamhetsorienterade API:er{#business-oriented-apis}
 
-Business API är specifikt för varje typ av objekt. De har en effekt på:
+Business API är specifikt för varje typ av objekt. De har effekt på:
 
 * Leveranser:
 
@@ -27,7 +28,7 @@ Business API är specifikt för varje typ av objekt. De har en effekt på:
    * starta ett arbetsflöde,
    * verifiera processer osv.
 
-      Se [SOAP-metoder i JavaScript](../../configuration/using/soap-methods-in-javascript.md).
+     Se [SOAP-metoder i JavaScript](../../configuration/using/soap-methods-in-javascript.md).
 
 * Innehållshantering
 * Prenumerationshantering, se [Prenumerera (nms:subscription)](#subscribe--nms-subscription-) och [Avbeställ prenumerationen (nms:subscription)](#unsubscribe--nms-subscription-).
@@ -50,7 +51,7 @@ Följande parametrar krävs för att anropa tjänsten:
 * ett XML-dokument som innehåller mottagarinformationen (från schemat &quot;nms:mottagare&quot;),
 * ett booleskt värde för att skapa mottagare om det inte redan finns ett.
 
-Beskrivning av prenumerationsmetoden i schemat nms:subscription:
+Beskrivning av &quot;subscribe&quot;-metoden i schemat &quot;nms:subscription&quot;:
 
 ```
 <method name="Subscribe" static="true">
@@ -84,33 +85,33 @@ Uppdaterar både mottagaren och prenumerationen.
 
 * Fråga:
 
-   ```
-   <?xml version='1.0' encoding='ISO-8859-1'?>
-   <SOAP-ENV:Envelope xmlns:xsd='http://www.w3.org/2001/XMLSchema' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:SOAP-ENV='http://schemas.xmlsoap.org/soap/envelope/'>
-     <SOAP-ENV:Body>
-       <m:Subscribe xmlns:m='urn:nms:subscription' SOAP-ENV:encodingStyle='http://schemas.xmlsoap.org/soap/encoding/'>
-         <sessiontoken xsi:type='xsd:string'/>
-         <service xsi:type='xsd:string'>SVC1</service>
-         <content xsi:type='' SOAP-ENV:encodingStyle='http://xml.apache.org/xml-soap/literalxml'>
-           <recipient _key="@email" email= "john.doe@adobe.com/>
-         </content>
-         <create xsi:type='xsd:boolean'>true</create>
-       </m:Subscribe>
-     </SOAP-ENV:Body>
-   </SOAP-ENV:Envelope>
-   ```
+  ```
+  <?xml version='1.0' encoding='ISO-8859-1'?>
+  <SOAP-ENV:Envelope xmlns:xsd='http://www.w3.org/2001/XMLSchema' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:SOAP-ENV='http://schemas.xmlsoap.org/soap/envelope/'>
+    <SOAP-ENV:Body>
+      <m:Subscribe xmlns:m='urn:nms:subscription' SOAP-ENV:encodingStyle='http://schemas.xmlsoap.org/soap/encoding/'>
+        <sessiontoken xsi:type='xsd:string'/>
+        <service xsi:type='xsd:string'>SVC1</service>
+        <content xsi:type='' SOAP-ENV:encodingStyle='http://xml.apache.org/xml-soap/literalxml'>
+          <recipient _key="@email" email= "john.doe@adobe.com/>
+        </content>
+        <create xsi:type='xsd:boolean'>true</create>
+      </m:Subscribe>
+    </SOAP-ENV:Body>
+  </SOAP-ENV:Envelope>
+  ```
 
 * Svar:
 
-   ```
-   <?xml version='1.0' encoding='ISO-8859-1'?>
-   <SOAP-ENV:Envelope xmlns:xsd='http://www.w3.org/2001/XMLSchema' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:ns='http://xml.apache.org/xml-soap' xmlns:SOAP-ENV='http://schemas.xmlsoap.org/soap/envelope/'>
-     <SOAP-ENV:Body>
-       <m:SubscribeResponse xmlns:m='urn:nms:subscription' SOAP-ENV:encodingStyle='http://schemas.xmlsoap.org/soap/encoding/'>
-       </m:SubscribeResponse>
-     </SOAP-ENV:Body>
-   </SOAP-ENV:Envelope>
-   ```
+  ```
+  <?xml version='1.0' encoding='ISO-8859-1'?>
+  <SOAP-ENV:Envelope xmlns:xsd='http://www.w3.org/2001/XMLSchema' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:ns='http://xml.apache.org/xml-soap' xmlns:SOAP-ENV='http://schemas.xmlsoap.org/soap/envelope/'>
+    <SOAP-ENV:Body>
+      <m:SubscribeResponse xmlns:m='urn:nms:subscription' SOAP-ENV:encodingStyle='http://schemas.xmlsoap.org/soap/encoding/'>
+      </m:SubscribeResponse>
+    </SOAP-ENV:Body>
+  </SOAP-ENV:Envelope>
+  ```
 
 ## Avbeställ prenumerationen (nms:subscription) {#unsubscribe--nms-subscription-}
 
@@ -198,11 +199,11 @@ Beskrivning av metoden i dess schema:
 
 En leveransmall måste skapas från Adobe Campaign klientkonsol. Den innehåller de parametrar som är gemensamma för alla leveranser (avsändarens adress eller meddelandets giltighetstid).
 
-XML-indatadokumentet är ett leveransmallfragment som följer strukturen i schemat nms:delivery. Den kommer att innehålla alla ytterligare data som inte kan definieras statiskt i leveransmallen (t.ex. en lista över mottagare som ska anges som mål).
+Indata-XML-dokumentet är ett leveransmallfragment som följer strukturen i schemat nms:delivery. Den kommer att innehålla alla ytterligare data som inte kan definieras statiskt i leveransmallen (t.ex. en lista över mottagare som ska användas).
 
 Anropet returnerar inga data, förutom fel.
 
-### XML-dokumentexempel {#xml-document-example}
+### Exempel på XML-dokument {#xml-document-example}
 
 Det här exemplet är baserat på en anpassad leveransmall från en extern datakälla (en fil i det här fallet). Konfigurationen beskrivs i sin helhet i leveransmallen, så allt som återstår att skicka när anropet görs är innehållet i filen från `<externalsource>` -element.
 

@@ -2,20 +2,19 @@
 product: campaign
 title: Villkorligt innehåll
 description: Lär dig hur du lägger till villkorsstyrt innehåll
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
+badge-v7: label="v7" type="Informative" tooltip="Gäller Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Gäller även Campaign v8"
 feature: Personalization, Multilingual Messages
+role: User
 exl-id: 12595ee4-6a52-4e06-b80d-85fe633a5a11
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
 workflow-type: tm+mt
-source-wordcount: '482'
+source-wordcount: '494'
 ht-degree: 7%
 
 ---
 
 # Villkorligt innehåll{#conditional-content}
-
-
 
 Genom att konfigurera fält för villkorligt innehåll kan du skapa dynamisk personalisering baserat på mottagarens profil, till exempel. Textblock och/eller bilder ersätts när ett visst villkor uppfylls.
 
@@ -48,22 +47,22 @@ Om du vill skapa villkorligt innehåll enligt värdet för ett fält gör du så
 
    * Markera det första elementet i uttrycket, **`<field>`**, (som standard markeras det här elementet när du infogar **if** och klicka på personaliseringsikonen för att ersätta den med testfältet.
 
-      ![](assets/s_ncs_user_conditional_content03.png)
+     ![](assets/s_ncs_user_conditional_content03.png)
 
-   * Ersätt **`<value>`** med värdet för det fält som villkoret ska uppfyllas för. Värdet måste vara inom citattecken.
+   * Ersätt **`<value>`** med värdet för det fält för vilket villkoret kommer att uppfyllas. Värdet måste vara inom citattecken.
    * Ange det innehåll som ska infogas när villkoret är uppfyllt. Detta kan bestå av text, en bild, ett formulär, en hypertextlänk osv.
 
-      ![](assets/s_ncs_user_conditional_content04.png)
+     ![](assets/s_ncs_user_conditional_content04.png)
 
 1. Klicka på **[!UICONTROL Preview]** för att visa innehållet i meddelandet enligt leveransmottagaren:
 
    * Välja en mottagare för vilken villkoret är sant:
 
-      ![](assets/s_ncs_user_conditional_content05.png)
+     ![](assets/s_ncs_user_conditional_content05.png)
 
    * Välja en mottagare för vilken villkoret inte är sant:
 
-      ![](assets/s_ncs_user_conditional_content06.png)
+     ![](assets/s_ncs_user_conditional_content06.png)
 
 Du kan lägga till andra fall och definiera olika innehåll utifrån värdena i ett eller flera fält. Om du vill göra det använder du **[!UICONTROL Conditional content > Else]** och **[!UICONTROL Conditional content > Else if]**. Uttrycken är konfigurerade på samma sätt som **if** -uttryck.
 
@@ -71,7 +70,7 @@ Du kan lägga till andra fall och definiera olika innehåll utifrån värdena i 
 
 >[!CAUTION]
 >
->Om du vill följa JavaScript-syntaxen **%> &lt;%** tecken måste tas bort efter att de har lagts till **Annars** och **Annars om** villkor.
+>Om du vill följa JavaScript-syntaxen **%> &lt;%** tecken måste tas bort efter att de lagts till **Annars** och **Annars om** villkor.
 
 Klicka **[!UICONTROL Preview]** och välj en mottagare för att visa det villkorliga innehållet.
 
@@ -81,7 +80,7 @@ Klicka **[!UICONTROL Preview]** och välj en mottagare för att visa det villkor
 
 I exemplet nedan får du lära dig att skapa ett flerspråkigt e-postmeddelande. Innehållet visas på det ena språket eller det andra beroende på vilket språk mottagaren föredrar.
 
-1. Skapa ett e-postmeddelande och välj målpopulation. I det här exemplet baseras villkoret för att visa en version eller den andra på **Språk** värdet för mottagarens profil. I det här exemplet är värdena inställda på **EN**, **FR**, **ES**.
+1. Skapa ett e-postmeddelande och välj målpopulation. I det här exemplet baseras villkoret för att visa en version eller den andra på **Språk** värdet för mottagarens profil. I det här exemplet är dessa värden inställda på **EN**, **FR**, **ES**.
 1. I e-postinnehållet i HTML klickar du på **[!UICONTROL Source]** och klistra in följande kod:
 
    ```
@@ -109,10 +108,10 @@ I exemplet nedan får du lära dig att skapa ett flerspråkigt e-postmeddelande.
    >
    >Eftersom ingen alternativ version har definierats i e-postinnehållet måste du filtrera målpopulationen innan du skickar e-postmeddelandet.
 
-## Videokurs {#conditionnal-content-video}
+## Självstudievideo {#conditionnal-content-video}
 
 Lär dig hur du lägger till villkorsstyrt innehåll i en leverans med ett exempel som visar ett flerspråkigt nyhetsbrev.
 
 >[!VIDEO](https://video.tv.adobe.com/v/24926?quality=12)
 
-Det finns fler instruktionsvideor för Campaign Classic [här](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=sv).
+Det finns fler videor med Campaign Classic om hur man gör [här](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=sv).

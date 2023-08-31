@@ -2,20 +2,19 @@
 product: campaign
 title: Lägg till dirigerade adresser
 description: Lägg till dirigerade adresser
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
+badge-v7: label="v7" type="Informative" tooltip="Gäller Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Gäller även Campaign v8"
 feature: Seed Address
+role: User
 exl-id: ae6eb4b0-b419-4661-9d63-e758f0242a0f
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
 workflow-type: tm+mt
-source-wordcount: '327'
+source-wordcount: '339'
 ht-degree: 5%
 
 ---
 
 # Lägg till dirigerade adresser{#adding-seed-addresses}
-
-
 
 ## Utsändningsadresser i en leverans {#seed-addresses-in-a-delivery}
 
@@ -27,19 +26,19 @@ Det finns tre möjliga insättningslägen:
 
 1. Ange enskilda dirigeringsadresser.
 
-   Om du vill göra det klickar du på **[!UICONTROL Add]** och definiera innehållet i adressfälten. Upprepa för varje adress.
+   Klicka på **[!UICONTROL Add]** och definiera innehållet i adressfälten. Upprepa för varje adress.
 
 1. Importera adressmallar och anpassa dem efter dina behov.
 
-   Om du vill göra det klickar du på **[!UICONTROL Import seed templates...]** och välj den mapp som innehåller adressmallarna. Mer information om detta finns i [det här avsnittet](creating-seed-addresses.md#creating-seed-address-templates).
+   Klicka på **[!UICONTROL Import seed templates...]** och välj den mapp som innehåller adressmallarna. Mer information om detta finns i [det här avsnittet](creating-seed-addresses.md#creating-seed-address-templates).
 
-   När de har lagts till kan du dubbelklicka på dem eller klicka på **[!UICONTROL Detail...]** för att anpassa innehållet i varje adress.
+   Om det behövs kan du dubbelklicka på dem eller klicka på **[!UICONTROL Detail...]** för att anpassa innehållet i varje adress.
 
 1. Skapa ett villkor som dynamiskt markerar de kontrolladresser som ska infogas.
 
-   Om du vill göra det klickar du på **[!UICONTROL Edit the dynamic condition...]** och ange parametrar för val av dirigeringsadress. Du kan t.ex. inkludera alla dirigerade adresser i en viss mapp eller dirigerade adresser som tillhör en viss avdelning i organisationen.
+   Klicka på **[!UICONTROL Edit the dynamic condition...]** och ange parametrar för val av dirigeringsadress. Du kan t.ex. inkludera alla dirigerade adresser i en viss mapp eller dirigerade adresser som tillhör en viss avdelning i organisationen.
 
-   Ett exempel visas i det här avsnittet: [Användningsfall: välj startadresser enligt villkor](use-case--selecting-seed-addresses-on-criteria.md).
+   Ett exempel visas i det här avsnittet: [Använd skiftläge: välj startadresser på villkor](use-case--selecting-seed-addresses-on-criteria.md).
 
 >[!NOTE]
 >

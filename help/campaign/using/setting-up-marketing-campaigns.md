@@ -1,14 +1,15 @@
 ---
 product: campaign
 title: Skapa marknadsföringskampanjer
-description: Lär dig hur du skapar och genomför marknadsföringskampanjer
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+description: Lär dig skapa och genomföra marknadsföringskampanjer
+role: User
+badge-v7-only: label="v7" type="Informative" tooltip="Gäller endast Campaign Classic v7"
 feature: Campaigns, Cross Channel Orchestration, Programs
 exl-id: a8fce21f-ffe3-4819-87ca-ac0ad9f21e41
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
 workflow-type: tm+mt
-source-wordcount: '1253'
-ht-degree: 2%
+source-wordcount: '1260'
+ht-degree: 3%
 
 ---
 
@@ -22,9 +23,9 @@ Så här skapar du en marknadsföringskampanj:
 
 1. Skapa en kampanj: identifiera kampanjer och deras egenskaper: etikett, typ, start- och slutdatum, budget, associerade resurser, chefer och deltagare. [Läs mer](#creating-a-campaign).
 
-1. Definiera målpopulationer: skapa ett arbetsflöde med riktade frågor. [Läs mer](../../campaign/using/marketing-campaign-deliveries.md#selecting-the-target-population).
+1. Definiera målgrupper: skapa ett arbetsflöde med målfrågor. [Läs mer](../../campaign/using/marketing-campaign-deliveries.md#selecting-the-target-population).
 
-1. Skapa leveranser: markera kanaler och definiera innehållet som ska skickas. [Läs mer](../../campaign/using/marketing-campaign-deliveries.md#creating-deliveries).
+1. Skapa leveranser: välj kanaler och definiera innehållet som ska skickas. [Läs mer](../../campaign/using/marketing-campaign-deliveries.md#creating-deliveries).
 
 1. Godkänn leveranser. [Läs mer](../../campaign/using/marketing-campaign-approval.md).
 
@@ -38,7 +39,7 @@ När de här stegen har slutförts kan du starta leveranserna (se [det här avsn
 
 Så här konfigurerar du din mapphierarki för marknadsföringsplaner och program:
 
-1. Klicka på **Utforskaren** på startsidan.
+1. Klicka på **Explorer** på startsidan.
 1. Högerklicka på den mapp där du vill skapa din plan.
 1. Välj **Lägg till ny mapp > Campaign Management > Plan**.
 
@@ -66,7 +67,7 @@ The **[!UICONTROL Program]** kan du välja det program som kampanjen ska kopplas
 
 ![](assets/s_ncs_user_new_op_wz_a.png)
 
-Kampanjer kan också skapas via ett program. Om du vill göra det klickar du på **[!UICONTROL Add]** i **[!UICONTROL Schedule]** fliken för det berörda programmet.
+Kampanjer kan också skapas via ett program. Klicka på **[!UICONTROL Add]** knappen i **[!UICONTROL Schedule]** fliken för det berörda programmet.
 
 ![](assets/s_ncs_user_add_an_op.png)
 
@@ -153,7 +154,7 @@ Om du vill skapa den återkommande kampanjen och köra dess arbetsflöden enligt
    För varje rad kan du lägga till följande alternativ:
 
    * **[!UICONTROL To be approved]** : gör att du kan framtvinga begäranden om leveransgodkännande i arbetsflödet.
-   * **[!UICONTROL To be started]** : Med kan du starta arbetsflödet när startdatumet har nåtts.
+   * **[!UICONTROL To be started]** : gör att du kan starta arbetsflödet när startdatumet har nåtts.
 
    The **[!UICONTROL Create in advance for]** kan du skapa alla arbetsflöden som täcker den angivna perioden.
 
@@ -218,7 +219,7 @@ En periodisk kampanj är en kampanj som baseras på en viss mall som gör att du
 
 Varje periodisk kampanj innehåller samma element. När den väl har skapats hanteras den som en standardkampanj.
 
-## Videokurs {#video}
+## Självstudievideo {#video}
 
 Den här videon visar hur du skapar en marknadsföringsplan, ett program och en kampanj.
 

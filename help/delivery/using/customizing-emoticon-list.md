@@ -2,20 +2,19 @@
 product: campaign
 title: Anpassa listan över uttryckssymboler
 description: Lär dig hur du anpassar uttryckslistan när du använder Adobe Campaign
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
+badge-v7: label="v7" type="Informative" tooltip="Gäller Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Gäller även Campaign v8"
 feature: Email, Push
+role: User, Data Engineer
 exl-id: b8642df3-1960-4f2c-8273-c3988a3e85f0
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
 workflow-type: tm+mt
-source-wordcount: '442'
-ht-degree: 3%
+source-wordcount: '454'
+ht-degree: 4%
 
 ---
 
 # Anpassa listan över uttryckssymboler {#customize-emoticons}
-
-
 
 Uttryckslistan som visas i popup-fönstret styrs av en uppräkning som gör att du kan visa värden i en lista för att begränsa vilka val användaren har för ett visst fält.
 Ordningen på uttryckslistan kan anpassas. Du kan också lägga till andra uttryckssymboler i listan.
@@ -51,7 +50,7 @@ För att undvika kompatibilitetsproblem rekommenderar vi att du väljer uttrycks
 1. Klicka **[!UICONTROL Ok]** sedan **[!UICONTROL Save]** när konfigurationen är klar.
 Din nya uttryckssymbol placeras automatiskt i butiken.
 
-1. Visa den i **[!UICONTROL Insert emoticon]** välj den nya uttryckssymbolen genom att dubbelklicka på den.
+1. Så här visar du den i **[!UICONTROL Insert emoticon]** fönstret med dina leveranser väljer du din nya uttryckssymbol genom att dubbelklicka på den.
 
 1. Välj i dialogrutan **[!UICONTROL Display order]** i vilken ordning din nya uttryckssymbol ska visas. Observera att om du väljer en redan tilldelad visningsordning flyttas den befintliga uttryckssymbolen automatiskt till butiken.
 

@@ -2,20 +2,19 @@
 product: campaign
 title: Berika innehåll
 description: Berika innehåll
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
+badge-v7: label="v7" type="Informative" tooltip="Gäller Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Gäller även Campaign v8"
 feature: Data Management
+role: User, Developer, Data Engineer
 exl-id: a4472a7c-a16b-4d10-a8ca-f74ca5f62de4
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
 workflow-type: tm+mt
-source-wordcount: '661'
-ht-degree: 0%
+source-wordcount: '673'
+ht-degree: 1%
 
 ---
 
 # Berika innehåll{#enriching-content}
-
-
 
 Med aggregatorer kan du utöka innehållet med externa data. Dessa data kommer från generiska frågor eller länkade tabeller.
 
@@ -37,7 +36,7 @@ Exempel på retur från en fråga i mottagarschemat (**nms:mottagare**):
 </book>
 ```
 
-The **`<collection-recipient>`** -elementet representerar indataelementet i dokumentet som är ett resultat av en fråga. De data som hämtas returneras under detta element. i vårt exempel en mottagarlista.
+The **`<collection-recipient>`** -elementet representerar indataelementet i dokumentet som är ett resultat av en fråga. De data som hämtas returneras under det här elementet, i vårt exempel en mottagarlista.
 
 ### Lägga till en fråga {#adding-a-query}
 
@@ -55,7 +54,7 @@ Frågeparametrarna redigeras med en guide.
 
    ![](assets/d_ncs_content_query2.png)
 
-1. Nästa sida definierar filtervillkoren.
+1. På nästa sida definieras filtervillkoren.
 
    ![](assets/d_ncs_content_query3.png)
 
@@ -69,7 +68,7 @@ Med länkar kan du hämta externa data som är länkade till innehållet.
 
 Det finns två typer av länkade data:
 
-* Innehållslänkar: det här är det inbyggda innehållshanteringsläget. Länkens innehåll integreras automatiskt i XML-utdatadokumentet.
+* Innehållslänkar: Detta är det inbyggda innehållshanteringsläget. Länkens innehåll integreras automatiskt i XML-utdatadokumentet.
 * Länkar till externa tabeller ger åtkomst till alla andra tabeller i databasen med begränsningen att hämta data från den markerade länken med en aggregator.
 
 ### Länka till ett innehållsschema {#link-to-a-content-schema}
@@ -106,7 +105,7 @@ The **[!UICONTROL Magnifier]** Med ikonen kan du öppna redigeringsformuläret f
 
 #### Länksamling {#link-collection}
 
-Om du vill fylla i en samling länkar lägger du till **unbound=&quot;true&quot;** attribut till definitionen av länkelementet i dataschemat:
+Om du vill fylla en samling länkar lägger du till **unbound=&quot;true&quot;** attribut till definitionen av länkelementet i dataschemat:
 
 ```
 <element expandSchemaTarget="cus:chapter" label="List of chapters" name="chapter"  ordered="true" unbound="true"/>
@@ -158,7 +157,7 @@ Länkredigeringskontrollen deklareras enligt följande:
 
 ![](assets/d_ncs_content_link3.png)
 
-Du kan begränsa valet av målelement genom att lägga till **`<sysfilter>`** via länkdefinitionen i indataformuläret:
+Du kan begränsa valet av målelement genom att lägga till **`<sysfilter>`** -element via länkdefinitionen i indataformuläret:
 
 ```
 <input xpath="mainContact">

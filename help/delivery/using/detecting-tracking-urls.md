@@ -3,8 +3,9 @@ product: campaign
 title: Identifiera URL:er för spårning
 description: Läs mer om rekommenderat mönster för att spåra URL:er
 feature: Monitoring
+role: User, Developer, Data Engineer
 exl-id: 7611d6a1-6c55-4ba3-b905-58426c944991
-source-git-commit: 9839dbacda475c2a586811e3c4f686b1b1baab05
+source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
 workflow-type: tm+mt
 source-wordcount: '297'
 ht-degree: 2%
@@ -15,7 +16,7 @@ ht-degree: 2%
 
 ## Exempel på icke-identifiering
 
-`<%= getURL("http://mynewsletter.com") %>` fungerar och skickar det faktiska innehållet på webbsidan via e-post till mottagarna. Men ingen av länkarna spåras. Orsaken till detta är att MTA verkställer `"<%=getURL(..."` för varje e-postmeddelande innan det skickas. Det kan vara olika för varje mottagare, så Adobe Campaign kan inte känna till URL:erna för att spåra och tilldela dem ett tagg-ID.
+`<%= getURL("http://mynewsletter.com") %>` fungerar och skickar det faktiska innehållet på webbsidan via e-post till mottagarna. Men ingen länk spåras. Orsaken till detta är att MTA verkställer `"<%=getURL(..."` för varje e-postmeddelande innan det skickas. Det kan vara olika för varje mottagare, så Adobe Campaign kan inte känna till URL:erna för att spåra och tilldela dem ett tagg-ID.
 
 När sidan som ska hämtas är densamma för alla mottagare är det bästa sättet att göra följande:
 

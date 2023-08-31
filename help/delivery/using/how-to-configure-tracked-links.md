@@ -2,13 +2,14 @@
 product: campaign
 title: Så här konfigurerar du spårade länkar
 description: Så här konfigurerar du spårade länkar
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
+badge-v7: label="v7" type="Informative" tooltip="Gäller Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Gäller även Campaign v8"
 feature: Monitoring
+role: User, Developer
 exl-id: ed88e1d6-c0d5-4a85-9f3e-be670f4bcc10
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
 workflow-type: tm+mt
-source-wordcount: '582'
+source-wordcount: '594'
 ht-degree: 10%
 
 ---
@@ -27,7 +28,7 @@ Spårning gäller för meddelanden, men med webbspårning kan du övervaka hur m
 
 Vi rekommenderar att du omsluter URL:er i avgränsare i dialogrutan **[!UICONTROL Text content]** innan du använder spårningsformeln. De URL-avgränsare som du anger på den här fliken används av Adobe Campaign för att identifiera URL:er i teckensträngar. Du kan använda dessa par med avgränsare:
 * Parenteser ( )
-* Hakparenteser [ ]
+* Parenteser [ ]
 * Klammerparenteser {}
 
 I det här exemplet följs URL:en https://www.adobe.com av ett semikolon. Semikolon kan tolkas av mottagarens e-postklienter som en del av URL:en. Därför kan länken brytas. För att undvika det här problemet kan du omge URL-adressen i avgränsare på något av följande sätt:
@@ -69,7 +70,7 @@ Spårning av meddelanden är aktiverat som standard. Följ stegen nedan för att
    * **[!UICONTROL Not tracked]** : inaktiverar spårning på den här URL:en.
    * **[!UICONTROL Always enabled]** : aktiverar alltid spårning av den här URL:en. Den här informationen sparas så att spårningen aktiveras nästa gång URL:en visas igen i ett framtida meddelandeinnehåll.
    * **[!UICONTROL Never tracked]** : aktiverar aldrig spårning av den här URL:en. Den här informationen sparas så att spårningen inaktiveras nästa gång URL:en visas igen i ett framtida meddelande.
-   * **[!UICONTROL Opt-out]** : hanterar denna URL som en avanmälnings- eller avanmälnings-URL.
-   * **[!UICONTROL Mirror page]** : anser att denna URL är en URL för en speglad sida.
+   * **[!UICONTROL Opt-out]** : hanterar den här URL:en som en avanmälnings- eller avanmälnings-URL.
+   * **[!UICONTROL Mirror page]** : anser att den här URL:en är en URL för en speglad sida.
 
 1. Du kan dessutom välja en kategori för varje spårad URL i listrutan i **[!UICONTROL Category]** kolumn. Dessa kategorier kan visa rapporter, som i **[!UICONTROL URLs and click streams]** (se [det här avsnittet](../../reporting/using/reports-on-deliveries.md#urls-and-click-streams)). Kategorierna definieras i en viss uppräkning: **[!UICONTROL urlCategory]** (se [Hantera uppräkningar](../../platform/using/managing-enumerations.md)).

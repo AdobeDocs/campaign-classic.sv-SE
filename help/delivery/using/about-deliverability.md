@@ -2,20 +2,19 @@
 product: campaign
 title: Kom igång med leverans i Campaign
 description: Lär dig god praxis vad gäller leverans
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
+badge-v7: label="v7" type="Informative" tooltip="Gäller Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Gäller även Campaign v8"
 feature: Deliverability
+role: User
 exl-id: f301b34c-244c-4279-b23f-8224ea8eedbe
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
 workflow-type: tm+mt
-source-wordcount: '724'
-ht-degree: 8%
+source-wordcount: '736'
+ht-degree: 9%
 
 ---
 
 # Vad är levererbarhet?{#about-deliverability}
-
-
 
 Leveransmöjligheterna gör att ni kan mäta framgången för era kampanjer som når mottagarnas inkorgar utan att studsa, eller markeras som skräppost. [Läs varför leveranssäkerhet är viktigt](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/deliverability-strategy-and-definition.html#why-deliverability-matters).
 
@@ -42,13 +41,13 @@ Leveransgraden är antalet meddelanden som når mottagarnas inkorgar jämfört m
 Med Adobe Campaign beror leveransgraden på många faktorer, bland annat:
 
 * Korrekt konfiguration av dina instanser: kontakta din Adobe-representant för att få hjälp.
-* Legitimal nätverkskonfiguration: se [det här avsnittet](optimize-delivery.md#network-config) och [Domäninställningar och -strategi](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html#domain-setup-and-strategy).
-* Din IP-adress: se [IP-strategi](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html#ip-strategy).
+* Legitimerad nätverkskonfiguration: se [det här avsnittet](optimize-delivery.md#network-config) och [Domäninställningar och -strategi](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html#domain-setup-and-strategy).
+* Din IP-adress är känd: se [IP-strategi](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html#ip-strategy).
 * Kvaliteten på adresserna: se [Karantänhantering](optimize-delivery.md#quarantine-management).
 * Låg [klagomål](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/metrics-for-deliverability/complaints.html) och [hård studsa](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/metrics-for-deliverability/bounces.html#hard-bounces) räntenivåer.
 * Ditt meddelandeinnehåll: se [Styr e-postinnehållet](control-message-content.md).
 * Meddelandeautentisering (SPF, DKIM, DMARC): se [det här avsnittet](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html#authentication).
-* Avsändarens rykte: om du vill veta hur de viktigaste internetleverantörerna utvärderar ett avsändarrykte kan du läsa [det här avsnittet](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/internet-service-provider-specifics/overview.html).
+* Avsändarens rykte: om du vill veta hur de viktigaste internetleverantörerna utvärderar ett avsändarens rykte kan du läsa [det här avsnittet](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/internet-service-provider-specifics/overview.html).
 
 ## Verktyg för kampanjleverans {#deliverability-tools}
 
@@ -88,7 +87,7 @@ Mer information finns i följande avsnitt:
 
 ### Använd övervaknings- och rapporteringsverktyg
 
-Använd Adobe Campaign funktioner för att övervaka leveransen.
+Använd de funktioner som Adobe Campaign erbjuder för att övervaka leveransen.
 
 Med Adobe Campaign kan ni kontrollera hur era leveranser fungerar med hjälp av en uppsättning inbyggda realtidsindikatorer och rapporter för att få bättre insikt i era leveranser.
 

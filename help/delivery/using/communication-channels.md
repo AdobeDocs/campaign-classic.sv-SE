@@ -2,20 +2,19 @@
 product: campaign
 title: Kommunikationskanaler
 description: Skapa leveranser för att skicka personanpassade meddelanden i olika kanaler
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
+badge-v7: label="v7" type="Informative" tooltip="Gäller Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Gäller även Campaign v8"
 feature: Cross Channel Orchestration, Email, SMS, In App, Direct Mail, Push
+role: User
 exl-id: 92b5e013-b619-4f0b-b0b1-1fc2e653ceac
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
 workflow-type: tm+mt
-source-wordcount: '1204'
+source-wordcount: '1216'
 ht-degree: 12%
 
 ---
 
 # Kommunikationskanaler{#communication-channels}
-
-
 
 Med Adobe Campaign kan ni skicka flerkanalskampanjer, inklusive e-post, SMS, LINE-meddelanden, push-meddelanden och direktreklam, och mäta hur effektiva de är med hjälp av olika dedikerade [rapporter](../../reporting/using/delivery-reports.md). Dessa meddelanden är utformade och skickas genom leveranser och kan anpassas för varje mottagare.
 
@@ -32,7 +31,7 @@ Adobe Campaign erbjuder följande leveranskanaler:
 1. **E-postkanal**: Med e-postleveranser kan du skicka personaliserade e-postmeddelanden till målpopulationen. Se [Om e-postkanal](about-email-channel.md).
 1. **Direktpostkanal**: Med direktutskick kan du generera en extraheringsfil som innehåller data om målpopulationen. Se [Om kanal för direktreklam](about-direct-mail-channel.md).
 1. **Mobilkanal**: leveranser i mobilkanaler gör att du kan skicka personaliserade SMS- eller LINE-meddelanden till målpopulationen. Se [SMS-kanal](sms-channel.md).
-1. **Mobil programkanal**: mobilappsleveranser gör att du kan skicka meddelanden till iOS- och Android-system. Se [Mobilappskanal](about-mobile-app-channel.md) kapitel.
+1. **Mobil programkanal**: vid leverans av mobilappar kan du skicka meddelanden till iOS och Android-system. Se [Mobilappskanal](about-mobile-app-channel.md) kapitel.
 
    Andra kanaler beskrivs på [den här sidan](steps-about-delivery-creation-steps.md#other-channels).
 
@@ -55,11 +54,11 @@ The [E-postkanal](about-email-channel.md) är en av huvudkanalerna i Adobe Campa
 
 Du kan skicka olika typer av e-postmeddelanden:
 
-* E-post för enstaka sändning: e-postmeddelanden som du kan skicka en gång till ett definierat mål. De används vanligtvis för att marknadsföra ett visst innehåll som bara ska förberedas och skickas en gång (nyhetsbrev, e-postreklam osv.).
-* Återkommande e-postmeddelanden: i en kampanj skicka samma e-postmeddelande regelbundet och sammanställa varje sändning och dess rapporter regelbundet. Samma e-post skickas, men vanligtvis till ett annat mål, baserat på det giltiga målet för den dag då meddelandet skickas. Ett vanligt exempel är ett födelsedagsmeddelande. Mer information finns i [Återkommande leveranser](../../workflow/using/recurring-delivery.md).
-* Transactional emails: enhetliga e-postmeddelanden som triggas utifrån kundernas beteende. Se [Transaktionsmeddelanden](../../message-center/using/about-transactional-messaging.md).
+* Skicka e-post en gång: e-postmeddelanden som du kan skicka en gång till ett definierat mål. De används vanligtvis för att marknadsföra ett visst innehåll som bara ska förberedas och skickas en gång (nyhetsbrev, e-postreklam osv.).
+* Återkommande e-postmeddelanden: skicka samma e-postmeddelande regelbundet i en kampanj och samla varje sändning och dess rapporter regelbundet. Samma e-post skickas, men vanligtvis till ett annat mål, baserat på det giltiga målet för den dag då meddelandet skickas. Ett vanligt exempel är ett födelsedagsmeddelande. Mer information finns i [Återkommande leveranser](../../workflow/using/recurring-delivery.md).
+* Transaktionsbaserade e-postmeddelanden: enhetliga e-postmeddelanden som utlöses utifrån kundernas beteende. Se [Transaktionsmeddelanden](../../message-center/using/about-transactional-messaging.md).
 
-Läs mer om leveransanvändning och rekommendationer i Campaign [Bästa praxis](delivery-best-practices.md).
+Läs mer om leveransanvändning och rekommendationer i Campaign [Bästa praxis för leverans](delivery-best-practices.md).
 
 Mer information om olika typer av leveranser finns i [det här avsnittet](#types-of-deliveries).
 
@@ -92,9 +91,9 @@ Adobe Campaign erbjuder en mall för telefonleverans som används för att skapa
 
 >[!NOTE]
 >
->Telefonkanalen är inte tillgänglig direkt. För att genomföra detta krävs att Adobe Consulting eller en Adobe Partner deltar. Kontakta din Adobe-representant för mer information.
+>Telefonkanalen är inte tillgänglig direkt. För att genomföra detta krävs att Adobe Consulting eller en Adobe Partner deltar. Kontakta din Adobe-representant om du vill ha mer information.
 
-För leveranser av typen Annan används dessutom en specifik teknisk mall som inte utför någon process: på så sätt kan de hantera marknadsföringsåtgärder som utförs utanför Adobe Campaign.
+För leveranser av typen Annan används dessutom en specifik teknisk mall som inte utför någon process: på så sätt kan de hantera marknadsföringsåtgärder som utförs utanför Adobe Campaign-plattformen.
 
 Den här kanalen har ingen specifik mekanism. Det är en allmän kanal som har ett eget alternativ för extern kontodirigering, leveransmalltyp och kampanjarbetsflödesaktivitet, precis som alla andra kommunikationskanaler som finns i Adobe Campaign.
 
@@ -124,7 +123,7 @@ Om du till exempel kör den här typen av aktivitet en gång i månaden får du 
 
 A **kontinuerlig leverans** Med kan du lägga till nya mottagare i en befintlig leverans, vilket innebär att du slipper skapa en ny leverans varje gång den körs.
 
-Om en information i leveransen ändras (innehåll, namn osv.) skapas ett nytt leveransobjekt vid leveranskörningen. Om ingen information ändrades återanvänds samma leveransobjekt och leverans- och spårningsloggarna läggs till i samma objekt.
+Om en information i leveransen ändras (innehåll, namn osv.) skapas ett nytt leveransobjekt vid leveranskörningen. Om ingen information har ändrats återanvänds samma leveransobjekt och leverans- och spårningsloggarna läggs till i samma objekt.
 
 Om du till exempel kör den här typen av aktivitet en gång i månaden får du en leverans efter ett år (förutsatt att du inte har ändrat leveransen).
 

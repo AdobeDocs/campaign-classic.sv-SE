@@ -2,24 +2,23 @@
 product: campaign
 title: Skapa leveransmallarna
 description: Lär dig hur du utför A/B-testning via ett dedikerat användningsfall
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
+role: User
+badge-v7: label="v7" type="Informative" tooltip="Gäller Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Gäller även Campaign v8"
 feature: A/B Testing
 exl-id: 77b3a906-b76e-49e1-b524-b6f1ae537259
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
 workflow-type: tm+mt
-source-wordcount: '86'
-ht-degree: 20%
+source-wordcount: '100'
+ht-degree: 16%
 
 ---
 
-# Skapa leveransmallarna {#step-3--creating-two-delivery-templates}
+# AB-testning: Skapa leveransmallar {#step-3--creating-two-delivery-templates}
 
+Vi vill nu skapa två leveransmallar. Varje mall refereras i en **[!UICONTROL Email delivery]** aktivitet länkad till **[!UICONTROL Split]** aktivitet. Mer information om detta finns i [det här avsnittet](about-templates.md).
 
-
-Vi vill nu skapa två leveransmallar. Varje mall refereras i en **[!UICONTROL Email delivery]** aktivitet som är länkad till **[!UICONTROL Split]** aktivitet. Mer information om detta finns i [det här avsnittet](about-templates.md).
-
-1. Bläddra till **[!UICONTROL Resources > Delivery template]** mapp.
+1. Gå till **[!UICONTROL Resources > Delivery template]** mapp.
 1. Duplicera **[!UICONTROL Email]** leveransmall.
 
    ![](assets/use_case_abtesting_deliverymodel_001.png)

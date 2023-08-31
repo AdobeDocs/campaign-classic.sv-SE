@@ -5,8 +5,9 @@ description: Bifoga filer
 badge-v7: label="v7" type="Informative" tooltip="Gäller Campaign Classic v7"
 badge-v8: label="v8" type="Positive" tooltip="Gäller även Campaign v8"
 feature: Email
+role: User
 exl-id: db65e83e-276f-4163-98c3-3658a48acffc
-source-git-commit: 728fc285fbd562003199c53339899bbc4441bfc6
+source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
 workflow-type: tm+mt
 source-wordcount: '978'
 ht-degree: 1%
@@ -21,7 +22,7 @@ Du kan bifoga en eller flera filer till en e-postleverans.
 
 >[!NOTE]
 >
->För att undvika prestandaproblem rekommenderar vi att du inte tar med mer än en bifogad fil per e-post. Det rekommenderade tröskelvärdet kan konfigureras från [listan över alternativ för Campaign Classic](../../installation/using/configuring-campaign-options.md#delivery).
+>För att undvika prestandaproblem rekommenderar vi att du inte inkluderar mer än en bifogad fil per e-post. Det rekommenderade tröskelvärdet kan konfigureras från [listan med alternativ för Campaign Classic](../../installation/using/configuring-campaign-options.md#delivery).
 
 Det finns två möjliga fall:
 
@@ -38,7 +39,7 @@ För att undvika prestandaproblem får bilderna i e-postmeddelanden inte överst
 
 Adobe rekommenderar också att du begränsar storleken och antalet bifogade filer. Som standard kan du bara lägga till en fil som en bifogad fil i ett e-postmeddelande. Det här tröskelvärdet kan konfigureras från `NmsDelivery_MaxRecommendedAttachments` alternativ.
 
-Läs mer i [listan över alternativ för Campaign Classic](../../installation/using/configuring-campaign-options.md#delivery).
+Läs mer i [listan med alternativ för Campaign Classic](../../installation/using/configuring-campaign-options.md#delivery).
 
 ## Bifoga en lokal fil {#attaching-a-local-file}
 

@@ -2,20 +2,21 @@
 product: campaign
 title: Guiden Nytt fält
 description: Guiden Nytt fält
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+badge-v7-only: label="v7" type="Informative" tooltip="Gäller endast Campaign Classic v7"
 feature: Schema Extension
+role: Data Engineer, Developer
 exl-id: 2350a531-7a26-4f26-90fe-8dac0cc26605
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
 workflow-type: tm+mt
-source-wordcount: '200'
-ht-degree: 4%
+source-wordcount: '207'
+ht-degree: 7%
 
 ---
 
 # Guiden Nytt fält{#new-field-wizard}
 
 
-En guide tillgänglig via **[!UICONTROL Tools > Advanced > Add new fields]** I kan du lägga till ett eller flera fält i en tabell i databasen.
+En guide som är tillgänglig via **[!UICONTROL Tools > Advanced > Add new fields]** I kan du lägga till ett eller flera fält i en tabell i databasen.
 
 När du validerar guiden uppdateras tilläggsschemat för den tabell som ska utökas och SQL-skriptet startas för att ändra databasens fysiska struktur.
 

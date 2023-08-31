@@ -2,12 +2,13 @@
 product: campaign
 title: Simuleringar i Campaign
 description: Kom igång med Campaign-simuleringar
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+role: User, Data Engineer
+badge-v7-only: label="v7" type="Informative" tooltip="Gäller endast Campaign Classic v7"
 feature: Campaigns
 exl-id: 709c64a8-34bf-43fa-a820-238295fb26b8
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
 workflow-type: tm+mt
-source-wordcount: '1245'
+source-wordcount: '1252'
 ht-degree: 1%
 
 ---
@@ -16,7 +17,7 @@ ht-degree: 1%
 
 ## Om simuleringar {#about-simulations}
 
-Med Campaign Optimization kan ni testa effektiviteten i en kampanjplan med simuleringar. Detta gör att ni kan mäta en kampanjs potentiella framgång: genererade intäkter, målvolym baserat på tillämpade typologiregler osv.
+Med Campaign Optimization kan ni testa effektiviteten i en kampanjplan med hjälp av simuleringar. Detta gör att ni kan mäta den potentiella framgången för en kampanj: genererade intäkter, målvolym baserat på de typologiregler som tillämpas osv.
 
 Med simulering kan du övervaka och jämföra effekterna av leveranser.
 
@@ -34,7 +35,7 @@ Med simulering kan du övervaka och jämföra effekterna av leveranser.
 
 Så här skapar du en simulering:
 
-1. Öppna **[!UICONTROL Campaigns]** klickar du på **[!UICONTROL More]** i **[!UICONTROL Create]** och väljer **[!UICONTROL Simulation]** alternativ.
+1. Öppna **[!UICONTROL Campaigns]** klickar du på **[!UICONTROL More]** -länken i **[!UICONTROL Create]** -avsnittet och välj **[!UICONTROL Simulation]** alternativ.
 
    ![](assets/simu_campaign_opti_01.png)
 
@@ -46,7 +47,7 @@ Så här skapar du en simulering:
 
    ![](assets/simu_campaign_opti_edit.png)
 
-1. I **[!UICONTROL Scope]** anger du de leveranser du vill ta hänsyn till för den här simuleringen. Om du vill göra det klickar du på **[!UICONTROL Add]** och ange vilket leveranssätt som ska användas.
+1. I **[!UICONTROL Scope]** anger du de leveranser du vill ta hänsyn till för den här simuleringen. Klicka på **[!UICONTROL Add]** och ange vilket leveranssätt som ska användas.
 
    ![](assets/simu_campaign_opti_edit_scope.png)
 
@@ -56,11 +57,11 @@ Så här skapar du en simulering:
    >
    >Om du väljer leveranser via en plan, ett program eller en kampanj kan Adobe Campaign automatiskt uppdatera listan med leveranser som ska beaktas när en simulering startas. Om du vill göra det går du till **[!UICONTROL Refresh the selection of deliveries each time the simulation is started]** alternativ.
    >  
-   >Om du inte gör detta kommer alla leveranser som inte är tillgängliga i planen, programmet eller kampanjen när simuleringen skapas inte att beaktas: leveranser som läggs till senare ignoreras.
+   >Om du inte gör detta kommer alla leveranser som inte är tillgängliga i planen, programmet eller kampanjen när simuleringen skapas inte att tas med i beräkningen: leveranser som läggs till senare kommer att ignoreras.
 
    ![](assets/simu_campaign_opti_edit_scope_update.png)
 
-1. Välj de element som ska ingå i simuleringsomfånget. Om det behövs markerar du flera element med hjälp av SKIFT- och CTRL-tangenterna.
+1. Markera de element som ska ingå i simuleringsomfånget. Om det behövs markerar du flera element med hjälp av SKIFT- och CTRL-tangenterna.
 
    ![](assets/simu_campaign_opti_edit_scope_select.png)
 
@@ -113,9 +114,9 @@ När körningen är klar öppnar du simuleringen och klickar på **[!UICONTROL R
    * The **[!UICONTROL Initial count]** är målet så som det beräknats under uppskattningen av leveransen.
    * The **[!UICONTROL Final count]** är antalet mottagare som räknas efter simulering.
 
-      Skillnaden mellan inledande och avslutande antal återspeglar tillämpningen av de olika regler eller filter som konfigurerats före simuleringen.
+     Skillnaden mellan inledande och avslutande antal återspeglar tillämpningen av de olika regler eller filter som konfigurerats före simuleringen.
 
-      Om du vill veta mer om den här beräkningen kan du redigera **[!UICONTROL Exclusions]** underflik.
+     Om du vill veta mer om den här beräkningen kan du redigera **[!UICONTROL Exclusions]** underflik.
 
 1. The **[!UICONTROL Exclusions]** på underfliken kan du visa exkluderingen.
 
@@ -130,7 +131,7 @@ När körningen är klar öppnar du simuleringen och klickar på **[!UICONTROL R
 
 #### Granskning {#audit}
 
-The **[!UICONTROL Audit]** kan du övervaka simuleringskörning. The **[!UICONTROL SQL Logs]** subtab är användbar för expertanvändare. Körningsloggar visas i SQL-format. Dessa loggar visas bara om **[!UICONTROL Save SQL queries in the log]** har valts i **[!UICONTROL General]** innan simuleringskörning.
+The **[!UICONTROL Audit]** använder du för att övervaka simuleringskörning. The **[!UICONTROL SQL Logs]** subtab är användbar för expertanvändare. Körningsloggar visas i SQL-format. Dessa loggar visas bara om **[!UICONTROL Save SQL queries in the log]** har valts i **[!UICONTROL General]** innan simuleringskörning.
 
 ![](assets/simu_campaign_opti_11.png)
 
@@ -150,9 +151,9 @@ Om du vill analysera resultatet av en simulering redigerar du dess rapporter: de
 
 Följande rapporter tillhandahålls som standard:
 
-* **[!UICONTROL Detail of simulation exclusions]** : Denna rapport innehåller en detaljerad förteckning över orsaker till uteslutning för alla berörda leveranser.
-* **[!UICONTROL Simulation summary]** : Denna rapport visar vilka populationer som har uteslutits från simuleringen under de olika leveranserna.
-* **[!UICONTROL Summary of exclusions linked to the simulation]** : I den här rapporten visas ett diagram över uteslutningar som orsakats av simuleringen tillsammans med den tillämpade typologiregeln och ett diagram över uteslutningsförhållandet per regel.
+* **[!UICONTROL Detail of simulation exclusions]** : Den här rapporten innehåller en detaljerad förteckning över orsaker till uteslutning för alla berörda leveranser.
+* **[!UICONTROL Simulation summary]** : Denna rapport visar vilka populationer som uteslutits från simuleringen under de olika leveranserna.
+* **[!UICONTROL Summary of exclusions linked to the simulation]** : den här rapporten innehåller ett diagram över undantag som orsakas av simuleringen tillsammans med den tillämpade typologiregeln och ett diagram som visar exkluderingsförhållandet per regel.
 
 >[!NOTE]
 >
@@ -166,14 +167,14 @@ Du kan även redigera rapporter med **[!UICONTROL Reports]** -länk som är till
 
 ### Jämför simuleringar {#comparing-simulations-}
 
-Varje gång en simulering körs ersätter resultatet eventuella tidigare resultat: du kan inte visa och jämföra resultat från en körning till en annan.
+Varje gång en simulering körs ersätter resultatet alla tidigare resultat: du kan inte visa och jämföra resultat från en körning med en annan.
 
 Om du vill jämföra resultaten måste du använda rapporter. I Adobe Campaign kan du spara en rapporthistorik och visa den igen senare. Den här historiken sparas under simuleringens livscykel.
 
 **Exempel:**
 
 1. Skapa en simulering av en leverans som typologi **A** används på.
-1. I **[!UICONTROL Reports]** kan du redigera någon av de tillgängliga rapporterna, t.ex. **[!UICONTROL Detail of simulation exclusions]** till exempel.
+1. I **[!UICONTROL Reports]** kan du redigera någon av de tillgängliga rapporterna, som **[!UICONTROL Detail of simulation exclusions]** till exempel.
 1. Klicka på ikonen längst upp till höger i rapporten för att skapa en ny historik.
 
    ![](assets/campaign_opt_reporting_create_hist.png)
@@ -207,15 +208,15 @@ I exemplet nedan vill vi skapa ytterligare en rapporteringsaxel baserat på mott
 
    * **[!UICONTROL Generate target overlap statistics]** Med kan du återställa all överlappande statistik i simuleringsrapporten. Överlappningar är mottagare som används för minst två leveranser inom en simulering.
 
-      >[!IMPORTANT]
-      >
-      >Om du väljer det här alternativet ökar simuleringskörningstiden avsevärt.
+     >[!IMPORTANT]
+     >
+     >Om du väljer det här alternativet ökar simuleringskörningstiden avsevärt.
 
    * **[!UICONTROL Keep the simulation work table]** I kan du behålla simuleringsspår.
 
-      >[!IMPORTANT]
-      >
-      >Det automatiska sparandet av dessa tabeller kräver en betydande lagringskapacitet: kontrollera att databasen är tillräckligt stor.
+     >[!IMPORTANT]
+     >
+     >Det automatiska sparandet av dessa tabeller kräver en betydande lagringskapacitet: se till att databasen är tillräckligt stor.
 
 När simuleringsresultatet visas visas informationen om det valda uttrycket i **[!UICONTROL Overlaps]** underflik.
 

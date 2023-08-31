@@ -1,13 +1,14 @@
 ---
 product: campaign
 title: Tryckregler
-description: Tryckregler
+description: Lär dig arbeta med tryckregler i Adobe Campaign
+role: User, Data Engineer
 badge-v7-only: label="v7" type="Informative" tooltip="Gäller endast Campaign Classic v7"
 feature: Fatigue Management, Typology Rules, Campaigns
 exl-id: c23212f2-fdf8-4820-b389-546f7c84db27
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
 workflow-type: tm+mt
-source-wordcount: '3266'
+source-wordcount: '3274'
 ht-degree: 4%
 
 ---
@@ -148,7 +149,7 @@ Med grupperingstypen kan du utöka **[!UICONTROL Period considered]** till hela 
 
 En tryckregel som definierar ett tröskelvärde på 2 meddelanden per vecka, med en gruppering för varje kalendermånad, förhindrar till exempel att fler än 2 meddelanden levereras inom samma vecka OCH inom samma kalendermånad. Varning! Om perioden överlappar två månader kommer beräkningströskeln att ta hänsyn till leveranser från dessa två kalendermånader och kan därför förhindra alla nya leveranser under den andra månaden.
 
-Observera att som standard beaktas endast leveranser som redan har skickats vid beräkningen av tröskelvärdet. I Campaign Classic v7 kan du kontrollera **[!UICONTROL Take the deliveries into account in the provisional calendar]** om du även vill ta hänsyn till planerade leveranser för den aktuella perioden. I detta fall fördubblas skadeundersökningsperioden för att möjliggöra integrering av såväl framtida leveranser som tidigare leveranser.
+Observera att som standard beaktas endast leveranser som redan har skickats vid beräkningen av tröskelvärdet. I Campaign Classic v7 markerar du **[!UICONTROL Take the deliveries into account in the provisional calendar]** om du även vill ta hänsyn till planerade leveranser för den aktuella perioden. I detta fall fördubblas skadeundersökningsperioden för att möjliggöra integrering av såväl framtida leveranser som tidigare leveranser.
 
 Om du vill begränsa antalet leveranser som beaktas till en tvåveckorsperiod kan du antingen:
 

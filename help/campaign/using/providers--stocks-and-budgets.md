@@ -2,12 +2,13 @@
 product: campaign
 title: Leverantörer, lager och budgetar
 description: Leverantörer, lager och budgetar
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+role: User
+badge-v7-only: label="v7" type="Informative" tooltip="Gäller endast Campaign Classic v7"
 feature: Budget Management, Campaigns
 exl-id: c60c4f86-a957-4c44-a0fe-39b6e3f0e5d6
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
 workflow-type: tm+mt
-source-wordcount: '1902'
+source-wordcount: '1909'
 ht-degree: 0%
 
 ---
@@ -36,7 +37,7 @@ De jobb som utförs under leveranser utförs av tjänsteleverantörer, särskilt
 
    Se [Konfigurera processer som är kopplade till en tjänst](#configuring-processes-associated-with-a-service).
 
-1. Referera tjänstleverantören på kampanjnivå
+1. Referera till tjänstleverantören på kampanjnivå
 
    Se [Associera en tjänst med en kampanj](#associating-a-service-with-a-campaign).
 
@@ -69,18 +70,18 @@ Så här skapar du en tjänstmall och definierar dess innehåll:
 
    ![](assets/s_ncs_user_supplier_node_create_template.png)
 
-1. Skapa kostnadskategorier för varje typ av process (direktreklam/e-post/etc.). eller uppgift). Om du vill göra det klickar du på **[!UICONTROL Cost categories]** och sedan **[!UICONTROL Add]** och ange parametrarna för varje kostnadskategori.
+1. Skapa kostnadskategorier för varje typ av process (direktreklam/e-post/etc.). eller uppgift). Klicka på **[!UICONTROL Cost categories]** -fliken och sedan **[!UICONTROL Add]** och ange parametrarna för varje kostnadskategori.
 
    ![](assets/s_ncs_user_supplier_node_03.png)
 
-   * Ange en etikett för kostnadskategorin och välj typ av process: Leverans **[!UICONTROL Direct mail]**, **[!UICONTROL Email]**, **[!UICONTROL Mobile]**, **[!UICONTROL Telephone]** eller **[!UICONTROL Task]**.
+   * Ange en etikett för kostnadskategorin och välj typ av process: Leverans per **[!UICONTROL Direct mail]**, **[!UICONTROL Email]**, **[!UICONTROL Mobile]**, **[!UICONTROL Telephone]** eller **[!UICONTROL Task]**.
    * Klicka på **[!UICONTROL Add]** för att definiera de typer av kostnader som är kopplade till den här kategorin.
    * Vid behov skall en lagerlinje kopplas till varje typ av kostnad så att de använda kvantiteterna automatiskt kopplas till de befintliga lagren.
 
-      >[!NOTE]
-      >
-      >Lagerraderna definieras i **[!UICONTROL Stock management]** nod.\
-      >Mer information finns i [Lager- och orderhantering](#stock-and-order-management).
+     >[!NOTE]
+     >
+     >Lagerraderna definieras i **[!UICONTROL Stock management]** nod.\
+     >Mer information finns i [Lager- och orderhantering](#stock-and-order-management).
 
 1. Du kan i förväg välja ett värde för den här kostnadskategorin, som erbjuds som standard i tjänsteleverantörens kostnadskategorier (i stället för ett tomt värde). Det gör du genom att välja alternativet i **[!UICONTROL Selected]** Kolumn för den berörda kategorin:
 
@@ -100,15 +101,15 @@ Klicka på **[!UICONTROL Cost structure]** för att konfigurera kostnadsberäkni
 
 * Om du vill skapa kostnadsstrukturen väljer du typ av meddelande och den berörda kostnadskategorin i listrutorna samt den typ av kostnad som beräkningsregeln ska gälla för. Innehållet i listrutorna kommer från den information som anges via **[!UICONTROL Cost categories]** -fliken.
 
-   Du måste tilldela en etikett till kostnadsstrukturen. Som standard har den följande leveransdisposition: **Kostnadskategori - typ av kostnad**.
+  Du måste tilldela en etikett till kostnadsstrukturen. Som standard har den följande leveransdisposition: **Kostnadskategori - typ av kostnad**.
 
-   Du kan dock byta namn på den: ange det önskade värdet direkt i dialogrutan **[!UICONTROL Label]** fält.
+  Du kan ändra namnet: ange det önskade värdet direkt i dialogrutan **[!UICONTROL Label]** fält.
 
 * Kostnadsberäkningsformeln definieras i fönstrets nedre del.
 
-   Den här formeln kan vara fast (för valfritt antal meddelanden) eller beräknas utifrån antalet meddelanden.
+  Den här formeln kan vara fast (för valfritt antal meddelanden) eller beräknas utifrån antalet meddelanden.
 
-   När det beror på antalet meddelanden kan kostnadsberäkningsstrukturen vara **[!UICONTROL Linear]**, **[!UICONTROL Linear by threshold]**, eller **[!UICONTROL Constant by threshold]**.
+  När det beror på antalet meddelanden kan kostnadsberäkningsstrukturen vara **[!UICONTROL Linear]**, **[!UICONTROL Linear by threshold]**, eller **[!UICONTROL Constant by threshold]**.
 
 #### Linjär struktur {#linear-structure}
 
@@ -132,7 +133,7 @@ Om du vill lägga till ett tröskelvärde klickar du på **[!UICONTROL Add]** ti
 
 #### Konstant struktur efter tröskelvärde {#constant-structure-by-threshold}
 
-Slutligen kan du konfigurera en kostnadsberäkning utifrån det totala antalet meddelanden. Välj en **[!UICONTROL Constant by threshold]** beräkningsstruktur. Kostnaden sätts till exempel till ett fast belopp på 12,00 för 1 till 100 meddelanden och till 100,00 för leverans av 101 till 1000 meddelanden och till 500,00 för alla leveranser av över 1000 meddelanden, oavsett totalt antal.
+Slutligen kan du konfigurera en kostnadsberäkning baserat på det totala antalet meddelanden. Välj en **[!UICONTROL Constant by threshold]** beräkningsstruktur. Kostnaden sätts till exempel till ett fast belopp på 12,00 för 1 till 100 meddelanden och till 100,00 för leverans av 101 till 1000 meddelanden och till 500,00 för alla leveranser av över 1000 meddelanden, oavsett totalt antal.
 
 ![](assets/s_ncs_user_supplier_cost_structure_calc_04.png)
 
@@ -140,17 +141,17 @@ Slutligen kan du konfigurera en kostnadsberäkning utifrån det totala antalet m
 
 Du kan associera information om processerna som är kopplade till tjänsten via **[!UICONTROL Processes]** -fliken.
 
-Om du vill göra det klickar du på **[!UICONTROL Processes]** för att konfigurera överföring av information till routern.
+Klicka på **[!UICONTROL Processes]** för att konfigurera överföring av information till routern.
 
 ![](assets/s_ncs_user_supplier_node_02.png)
 
 * The **[!UICONTROL File extraction]** anger exportmallen som används för leverans när den här tjänsten väljs. Du kan ange namnet på utdatafilen i dialogrutan **[!UICONTROL Extraction file]** fält. Med knappen till höger om fältet kan du infoga variabler.
 
-   ![](assets/s_ncs_user_supplier_node_02a.png)
+  ![](assets/s_ncs_user_supplier_node_02a.png)
 
 * The **[!UICONTROL Notification email]** kan du ange en mall som ska meddela tjänsteleverantörer när filerna har skickats. Välj den mall som används för att skapa varningsmeddelandet och gruppen med mottagare.
 
-   Leveransmallar för meddelanden sparas som standard i **[!UICONTROL Administration > Campaign management > Technical delivery templates]** som är tillgänglig från den allmänna vyn.
+  Leveransmallar för meddelanden sparas som standard i **[!UICONTROL Administration > Campaign management > Technical delivery templates]** som är tillgänglig från den allmänna vyn.
 
 * The **[!UICONTROL Post-processing]** kan du välja vilket arbetsflöde som ska startas när leveransen har godkänts. Om en arbetsflödesmall anges skapas en arbetsflödesinstans automatiskt och startas så snart godkännandet börjar gälla. Det här arbetsflödet kan till exempel skicka extraheringsfilen till en extern tjänsteleverantör för bearbetning.
 
@@ -158,7 +159,7 @@ Om du vill göra det klickar du på **[!UICONTROL Processes]** för att konfigur
 
 Tjänster är kopplade till kampanjer via leveranser eller aktiviteter. Tjänsteleverantörer är länkade till leveransmallar för att erbjuda sina tjänster i leveranser som skapas via den här mallen.
 
-När en tjänst har valts, de kostnadskategorier som motsvarar leveranstypen (direktreklam, e-post, osv.) visas automatiskt i den centrala tabellen tillsammans med de bearbetningsalternativ som har definierats.
+När en tjänst har valts, de kostnadskategorier som motsvarar leveranstypen (direktreklam, e-post, osv.) anges automatiskt i den centrala tabellen tillsammans med de bearbetningsalternativ som har definierats.
 
 >[!NOTE]
 >
@@ -166,16 +167,16 @@ När en tjänst har valts, de kostnadskategorier som motsvarar leveranstypen (di
 
 * Om du vill få direktreklam kan du välja tjänsten i konfigurationsfönstret.
 
-   ![](assets/s_ncs_user_supplier_mail_delivery_select.png)
+  ![](assets/s_ncs_user_supplier_mail_delivery_select.png)
 
 * För leverans i mobilkanaler eller via telefon gäller samma urvalsmodell.
 * För en e-postleverans väljs tjänsten från **[!UICONTROL Advanced]** -fliken i leveransegenskaperna, som i följande exempel:
 
-   ![](assets/s_ncs_user_supplier_email_delivery_select.png)
+  ![](assets/s_ncs_user_supplier_email_delivery_select.png)
 
 The **[!UICONTROL Amount to surcharge]** kan du lägga till en kostnad för den här kategorin i samband med den aktuella leveransen eller uppgiften.
 
-Du kan införa obligatoriskt val av en kostnadstyp under definitionen av kostnadskategorier för en leverans. Välj **[!UICONTROL A cost type must be selected]**.
+Du kan införa obligatoriskt val av en kostnadstyp under definitionen av kostnadskategorier för en leverans. Gör detta genom att välja **[!UICONTROL A cost type must be selected]**.
 
 ![](assets/s_ncs_user_supplier_cost_structure_select.png)
 
@@ -224,7 +225,7 @@ Så här skapar du en ny aktie:
 
 En aktie består av olika stocklinjer. En lagerrad innehåller en ursprunglig kvantitet resurser som förbrukas av leveranser. Varje lagerrad anger förbrukad kvantitet, lagerkvantitet och beställd kvantitet.
 
-När du skapar en aktie klickar du på **[!UICONTROL Stock lines]** för att lägga till nya rader.
+När du skapar en resurs klickar du på **[!UICONTROL Stock lines]** för att lägga till nya rader.
 
 ![](assets/s_ncs_user_stocks_display_line.png)
 
@@ -236,7 +237,7 @@ Klicka på **[!UICONTROL Create]** för att definiera parametrar.
 
 * Ange den ursprungliga lagerkvantiteten i **[!UICONTROL Initial stock]** fält. The **[!UICONTROL Consumed]** och **[!UICONTROL In stock]** fälten beräknas automatiskt och uppdateras allt eftersom kampanjer pågår.
 
-   ![](assets/s_ncs_user_stocks_create_line.png)
+  ![](assets/s_ncs_user_stocks_create_line.png)
 
 * Ange det tröskelvärde från vilket operatorer ska larmas för att beställa lager i **[!UICONTROL Alert level]** fält. När varningsnivån nås visas ett varningsmeddelande i godkännandefönstret för leveranser som använder detta lager.
 
@@ -256,7 +257,7 @@ En varning visas när ett lager som refereras i en leverans inte räcker till. F
 
 #### Beställningar {#orders}
 
-The **[!UICONTROL Orders]** Med underfliken kan du visa aktuella order och spara nya order.
+The **[!UICONTROL Orders]** kan du visa aktuella order och spara nya order.
 
 ![](assets/s_ncs_user_stocks_edit_from_board.png)
 

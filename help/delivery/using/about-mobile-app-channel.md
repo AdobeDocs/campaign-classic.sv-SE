@@ -2,20 +2,19 @@
 product: campaign
 title: Kom igång med mobilappskanalen
 description: Kom igång med mobilappskanalen i Adobe Campaign
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
+badge-v7: label="v7" type="Informative" tooltip="Gäller Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Gäller även Campaign v8"
 feature: Push
+role: User
 exl-id: c3b0406f-f652-42f4-ad0d-23fb719cd1b6
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
 workflow-type: tm+mt
-source-wordcount: '665'
+source-wordcount: '677'
 ht-degree: 2%
 
 ---
 
 # Kom igång med mobilappskanalen{#about-mobile-app-channel}
-
-
 
 The **Mobilappskanal** Med kan du använda Adobe Campaign-plattformen för att skicka personaliserade push-meddelanden till iOS- och Android-terminaler via appar.
 
@@ -27,11 +26,11 @@ Det finns två leveranskanaler:
 
 * En iOS-kanal som gör att du kan skicka meddelanden till Apple mobila enheter.
 
-   ![](assets/nmac_intro_2.png)
+  ![](assets/nmac_intro_2.png)
 
 * En Android-kanal som gör att du kan skicka datameddelanden till mobila Android-enheter.
 
-   ![](assets/nmac_intro_1.png)
+  ![](assets/nmac_intro_1.png)
 
 Motsvarar dessa två kanaler finns det två leveransaktiviteter i kampanjarbetsflödena:
 
@@ -50,8 +49,7 @@ Du kan definiera programbeteendet för när användaren aktiverar meddelandet f�
 >[!CAUTION]
 >
 >* Du måste kontrollera att de meddelanden som skickas till ett mobilprogram är kompatibla med de krav och villkor som anges av Apple (Apple Push Notification Service) och Google (Firebase Cloud Messaging).
->* Varning: I vissa länder kräver lagen att du informerar användarna om dina insamlade datatyper för mobilprogram och syftet med deras behandling. Ni måste kontrollera lagstiftningen.
-
+>* Varning! I vissa länder kräver lagen att du informerar användarna om dina insamlade datatyper för mobilprogram och syftet med deras behandling. Ni måste kontrollera lagstiftningen.
 
 The **[!UICONTROL NMAC opt-out management]** (mobileAppOptOutMgt) Arbetsflödet uppdaterar meddelanden om att prenumerationen har avbrutits på mobila enheter. Mer information om arbetsflödet finns i [förteckning över tekniska arbetsflöden](../../workflow/using/about-technical-workflows.md).
 
@@ -61,17 +59,17 @@ Global information om hur du skapar en leverans finns i [det här avsnittet](st
 
 ## Datasökväg {#data-path}
 
-I följande scheman beskrivs de steg som gör att mobilprogram kan utbyta data med Adobe Campaign. Denna process inbegriper tre enheter:
+I följande scheman beskrivs de steg som gör att mobilprogram kan utbyta data med Adobe Campaign. Den här processen omfattar tre enheter:
 
 * mobilapplikationen
-* meddelandetjänsten: APN:er (Apple Push Notification Service) för Apple och FCM (Firebase Cloud Messaging) för Android
+* meddelandetjänsten: APN (Apple Push Notification Service) för Apple och FCM (Firebase Cloud Messaging) för Android
 * Adobe Campaign
 
-De tre huvudstegen i anmälningsprocessen är: registrering av programmet i Adobe Campaign (prenumerationssamling), leveranser och spårning.
+De tre huvudstegen i meddelandeprocessen är: registrering av programmet i Adobe Campaign (prenumerationssamling), leveranser och spårning.
 
 ### Steg 1: Prenumerationssamling {#step-1--subscription-collection}
 
-Mobilprogrammet hämtas av användaren från App Store eller Google Play. Det här programmet innehåller anslutningsinställningarna (iOS-certifikat och projektnyckel för Android) och integrationsnyckeln. Första gången programmet öppnas (beroende på konfiguration) kan användaren uppmanas att ange registreringsinformation (@userKey: e-post eller kontonummer (till exempel). Samtidigt skickar programmet frågor till meddelandetjänsten för att samla in ett meddelande-ID (push-ID). All den här informationen (anslutningsinställningar, integrationsnyckel, meddelandeidentifierare, userKey) skickas till Adobe Campaign.
+Mobilprogrammet hämtas av användaren från App Store eller Google Play. Det här programmet innehåller anslutningsinställningarna (iOS-certifikat och projektnyckel för Android) och integrationsnyckeln. Första gången programmet öppnas (beroende på konfiguration) kan användaren uppmanas att ange registreringsinformation (@userKey: exempel på e-post eller kontonummer). Samtidigt skickar programmet frågor till meddelandetjänsten för att samla in ett meddelande-ID (push-ID). All den här informationen (anslutningsinställningar, integrationsnyckel, meddelandeidentifierare, userKey) skickas till Adobe Campaign.
 
 ![](assets/nmac_register_view.png)
 
@@ -81,7 +79,7 @@ Marknadsförarna riktar sig till programprenumeranter. Leveransprocessen skickar
 
 Följande information finns i Adobe Campaign:
 
-* Endast Android: antal enheter som har visat meddelandet (avtryck)
+* Endast Android: antal enheter som har visat meddelandet (visningar)
 * Android och iOS: antal klick i meddelandet
 
 ![](assets/nmac_delivery_view.png)
@@ -92,15 +90,15 @@ Använd följande kommandon för att kontrollera att den fungerar som den ska:
 
 * För provningar:
 
-   ```
-   api.development.push.apple.com:443
-   ```
+  ```
+  api.development.push.apple.com:443
+  ```
 
 * I produktion:
 
-   ```
-   api.push.apple.com:443
-   ```
+  ```
+  api.push.apple.com:443
+  ```
 
 Med iOS HTTP/2-kontakten måste MTA och webbservern kunna kontakta APN på port 443.
 

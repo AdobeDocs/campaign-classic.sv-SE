@@ -1,21 +1,20 @@
 ---
 product: campaign
 title: Skapa en leverans från en mall
-description: Lär dig hur du skapar en leverans från en mall
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
+description: Lär dig skapa en leverans från en mall
+badge-v7: label="v7" type="Informative" tooltip="Gäller Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Gäller även Campaign v8"
 feature: Delivery Templates
+role: User
 exl-id: 7ffb649e-801f-4568-a86b-7982448e3c30
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
 workflow-type: tm+mt
-source-wordcount: '178'
+source-wordcount: '190'
 ht-degree: 7%
 
 ---
 
 # Skapa en leverans från en mall{#creating-a-delivery-from-a-template}
-
-
 
 ## Länka mallen till en leverans {#linking-the-template-to-a-delivery}
 
@@ -23,7 +22,7 @@ Om du vill skapa en leverans baserad på en befintlig mall väljer du mallen i l
 
 ![](assets/s_ncs_user_wizard_select_template.png)
 
-I annat fall klickar du på **[!UICONTROL Select link]** till höger om fältet för att bläddra i trädet.
+Annars klickar du på **[!UICONTROL Select link]** till höger om fältet för att bläddra i trädet.
 
 ![](assets/s_ncs_user_wizard_choose_link.png)
 

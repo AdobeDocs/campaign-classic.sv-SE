@@ -2,20 +2,19 @@
 product: campaign
 title: Skapa en leverans av direktutskick
 description: Lär dig hur du skapar direktreklam
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
+badge-v7: label="v7" type="Informative" tooltip="Gäller Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Gäller även Campaign v8"
 feature: Direct Mail
+role: User
 exl-id: 964cc600-19b8-449e-bac6-dc9da2b5ea12
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
 workflow-type: tm+mt
-source-wordcount: '87'
+source-wordcount: '99'
 ht-degree: 20%
 
 ---
 
 # Skapa en leverans av direktutskick{#creating-a-direct-mail-delivery}
-
-
 
 Så här skapar du en ny direktutskick:
 

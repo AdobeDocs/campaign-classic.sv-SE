@@ -2,19 +2,19 @@
 product: campaign
 title: Skapa skriptet
 description: Lär dig hur du utför A/B-testning via ett dedikerat användningsfall
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
+badge-v7: label="v7" type="Informative" tooltip="Gäller Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Gäller även Campaign v8"
 feature: A/B Testing
+role: User
 exl-id: 4143d1b7-0e2b-4672-ad57-e4d7f8fea028
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
 workflow-type: tm+mt
-source-wordcount: '330'
+source-wordcount: '344'
 ht-degree: 4%
 
 ---
 
-# Skapa skriptet {#step-5--creating-the-script}
-
+# AB-testning: Skapa skriptet {#step-5--creating-the-script}
 
 
 Valet av leveransinnehåll som är avsett för den återstående populationen beräknas av ett skript. Det här skriptet återställer information om leveransen med det högsta antalet öppningar och kopierar innehållet till den slutliga leveransen.
@@ -93,70 +93,70 @@ I det här avsnittet beskrivs de olika delarna av skriptet och deras operativsys
 
 * Den första delen av skriptet är en fråga. The **queryDef** kan du återställa från **NmsDelivery** Om du vill ange de leveranser som skapas genom att målinrikta-arbetsflödet utförs och sortera dem baserat på deras uppskattade öppningsfrekvens, återställs informationen från leveransen med den högsta öppningsfrekvensen.
 
-   ```
-   // query the database to find the winner (best open rate)
-      var winner = xtk.queryDef.create(
-        <queryDef schema="nms:delivery" operation="get">
-          <select>
-            <node expr="@id"/>
-            <node expr="@label"/>
-            <node expr="[@operation-id]"/>
-          </select>
-          <where>
-            <condition expr={"@FCP=0 and [@workflow-id]= " + instance.id}/>
-          </where>
-          <orderBy>
-            <node expr="[indicators/@estimatedRecipientOpenRatio]" sortDesc="true"/>
-          </orderBy>
-        </queryDef>).ExecuteQuery()
-   ```
+  ```
+  // query the database to find the winner (best open rate)
+     var winner = xtk.queryDef.create(
+       <queryDef schema="nms:delivery" operation="get">
+         <select>
+           <node expr="@id"/>
+           <node expr="@label"/>
+           <node expr="[@operation-id]"/>
+         </select>
+         <where>
+           <condition expr={"@FCP=0 and [@workflow-id]= " + instance.id}/>
+         </where>
+         <orderBy>
+           <node expr="[indicators/@estimatedRecipientOpenRatio]" sortDesc="true"/>
+         </orderBy>
+       </queryDef>).ExecuteQuery()
+  ```
 
 * Leveransen med den högsta öppningsfrekvensen dupliceras.
 
-   ```
-    // create a new delivery object and initialize it by doing a copy of
-    // the winner delivery
-   var delivery = nms.delivery.create()
-   delivery.Duplicate("nms:delivery|" + winner.@id)
-   ```
+  ```
+   // create a new delivery object and initialize it by doing a copy of
+   // the winner delivery
+  var delivery = nms.delivery.create()
+  delivery.Duplicate("nms:delivery|" + winner.@id)
+  ```
 
 * Etiketten för den duplicerade leveransen ändras och ordet **final** läggs till i den.
 
-   ```
-   // append 'final' to the delivery label
-   delivery.label = winner.@label + " final"
-   ```
+  ```
+  // append 'final' to the delivery label
+  delivery.label = winner.@label + " final"
+  ```
 
 * Leveransen kopieras till kampanjinstrumentpanelen.
 
-   ```
-   // link the delivery to the operation to make sure it will be displayed in
-   // the campaign dashboard. This attribute needs to be set manually here since 
-   // the Duplicate() method has reset it to its default value => 0
-   delivery.operation_id = winner.@["operation-id"]
-   delivery.workflow_id = winner.@["workflow-id"]
-   ```
+  ```
+  // link the delivery to the operation to make sure it will be displayed in
+  // the campaign dashboard. This attribute needs to be set manually here since 
+  // the Duplicate() method has reset it to its default value => 0
+  delivery.operation_id = winner.@["operation-id"]
+  delivery.workflow_id = winner.@["workflow-id"]
+  ```
 
-   ```
-   // adjust some delivery parameters to make it compatible with the 
-   // "Prepare and start" option selected in the Delivery tab of this activity
-   delivery.scheduling.validationMode = "manual"
-   delivery.scheduling.delayed = 0
-   ```
+  ```
+  // adjust some delivery parameters to make it compatible with the 
+  // "Prepare and start" option selected in the Delivery tab of this activity
+  delivery.scheduling.validationMode = "manual"
+  delivery.scheduling.delayed = 0
+  ```
 
 * Leveransen sparas i databasen.
 
-   ```
-   // save the delivery in database
-   delivery.save()
-   ```
+  ```
+  // save the delivery in database
+  delivery.save()
+  ```
 
 * Den unika identifieraren för den duplicerade leveransen lagras i arbetsflödesvariabeln.
 
-   ```
-   // store the new delivery Id in event variables
-   vars.deliveryId = delivery.id
-   ```
+  ```
+  // store the new delivery Id in event variables
+  vars.deliveryId = delivery.id
+  ```
 
 ## Andra urvalskriterier {#other-selection-criteria}
 

@@ -2,20 +2,19 @@
 product: campaign
 title: Skapa en e-postleverans
 description: Lär dig hur du skapar en e-postleverans
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
+badge-v7: label="v7" type="Informative" tooltip="Gäller Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Gäller även Campaign v8"
 feature: Email
+role: User
 exl-id: 7f44e732-4257-4d2a-800c-bde847e20f52
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
 workflow-type: tm+mt
-source-wordcount: '98'
+source-wordcount: '110'
 ht-degree: 16%
 
 ---
 
 # Skapa en e-postleverans{#creating-an-email-delivery}
-
-
 
 Följ stegen nedan för att skapa en ny e-postleverans:
 

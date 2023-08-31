@@ -1,13 +1,14 @@
 ---
 product: campaign
 title: Om schemautgåva
-description: Kom igång med schemaversionen
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+description: Kom igång med schemautgåvan
+badge-v7-only: label="v7" type="Informative" tooltip="Gäller endast Campaign Classic v7"
 feature: Schema Extension
+role: Data Engineer, Developer
 exl-id: 9e10b24e-c4de-4e76-bbed-0d05f62120b7
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
 workflow-type: tm+mt
-source-wordcount: '1004'
+source-wordcount: '1011'
 ht-degree: 7%
 
 ---
@@ -90,7 +91,7 @@ Mer information om index finns i [Indexerade fält](../../configuration/using/da
 
 ## Tangenter {#keys}
 
-Alla tabeller måste ha minst en nyckel och ofta etableras de automatiskt i schemats huvudelement med hjälp av **@autopk=true** -attributet är inställt på &quot;true&quot;.
+Alla tabeller måste ha minst en nyckel och ofta etableras de automatiskt i schemats huvudelement med hjälp av **@autopk=true** -attributet har värdet &quot;true&quot;.
 
 Primärnyckeln kan också definieras med **internal** -attribut.
 
@@ -102,7 +103,7 @@ Exempel:
 </key>
 ```
 
-I det här exemplet ska du i stället för att låta **@autopk** för att skapa en standardprimärnyckel med namnet&quot;id&quot; anger vi vår egen primärnyckel för&quot;houseid&quot;.
+I det här exemplet ska du inte låta **@autopk** för att skapa en standardprimärnyckel med namnet&quot;id&quot; anger vi vår egen primärnyckel för&quot;houseid&quot;.
 
 >[!IMPORTANT]
 >
@@ -133,7 +134,7 @@ Den fullständiga listan med attribut finns i [`<attribute>` element](../../conf
 * **@xml**
 * **@type**
 
-   Om du vill visa en tabell över mappningarna för de datatyper som genereras av Adobe Campaign för de olika databashanteringssystemen, se [Mappa typer av Adobe Campaign-/DBMS-data](../../configuration/using/schema-structure.md#mapping-the-types-of-adobe-campaign-dbms-data) -avsnitt.
+  Om du vill visa en tabell över mappningarna för de datatyper som genereras av Adobe Campaign för de olika databashanteringssystemen, se [Mappa typer av Adobe Campaign-/DBMS-data](../../configuration/using/schema-structure.md#mapping-the-types-of-adobe-campaign-dbms-data) -avsnitt.
 
 Mer information om respektive attribut finns i [Attributbeskrivning](../../configuration/using/schema/attribute.md) -avsnitt.
 

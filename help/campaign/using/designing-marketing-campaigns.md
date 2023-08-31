@@ -2,13 +2,14 @@
 product: campaign
 title: Utforma och genomför marknadsföringskampanjer
 description: Definiera, optimera, genomföra och analysera marknadsföringskampanjer
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+role: User
+badge-v7-only: label="v7" type="Informative" tooltip="Gäller endast Campaign Classic v7"
 feature: Campaigns
 exl-id: 4e0df18f-3623-4dfb-a2f8-ad293dbc4dd5
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
 workflow-type: tm+mt
-source-wordcount: '443'
-ht-degree: 9%
+source-wordcount: '450'
+ht-degree: 11%
 
 ---
 
@@ -32,40 +33,40 @@ Följande koncept måste vara kända i samband med Campaign:
 
 * **Campaign**
 
-   En kampanj centraliserar alla element som hör till en marknadsföringskampanj: leveranser, regler för målinriktning, kostnader, exportfiler, relaterade dokument osv. Varje kampanj är kopplad till ett program.
+  En kampanj centraliserar alla element som hör till en marknadsföringskampanj: leveranser, målinriktningsregler, kostnader, exportfiler, relaterade dokument osv. Varje kampanj är kopplad till ett program.
 
-   Mer information finns i [Lägga till en kampanj](../../campaign/using/setting-up-marketing-campaigns.md#adding-a-campaign).
+  Mer information finns i [Lägga till en kampanj](../../campaign/using/setting-up-marketing-campaigns.md#adding-a-campaign).
 
 * **Program**
 
-   Med ett program kan du definiera marknadsföringsåtgärder för en kalenderperiod: lansering, kanvantning, lojalitet osv. Varje program innehåller kampanjer som är länkade till en kalender, som ger en övergripande bild.
+  Med ett program kan ni definiera marknadsföringsåtgärder för en kalenderperiod: lansering, skanning, lojalitet osv. Varje program innehåller kampanjer som är länkade till en kalender, som ger en övergripande bild.
 
 * **Plan**
 
-   Marknadsföringsplanen kan innehålla flera program. Den är kopplad till en kalenderperiod, har en tilldelad budget och kan även kopplas ihop med dokument och mål.
+  Marknadsföringsplanen kan innehålla flera program. Den är kopplad till en kalenderperiod, har en tilldelad budget och kan även kopplas ihop med dokument och mål.
 
-   Mer information finns i [Kampanjkalender](../../campaign/using/accessing-marketing-campaigns.md#campaign-calendar).
+  Mer information finns i [Kampanjkalender](../../campaign/using/accessing-marketing-campaigns.md#campaign-calendar).
 
 * **Arbetsflöde**
 
-   Ett kampanjarbetsflöde innehåller samma aktiviteter som för alla arbetsflöden, men är specifikt för kampanjen. Det gör att du kan skapa och konfigurera leveranser för alla tillgängliga kanaler.
+  Ett kampanjarbetsflöde innehåller samma aktiviteter som för alla arbetsflöden, men är specifikt för kampanjen. Det gör att du kan skapa och konfigurera leveranser för alla tillgängliga kanaler.
 
-   Mer information om detta finns i [det här avsnittet](../../campaign/using/marketing-campaign-deliveries.md#building-the-main-target-in-a-workflow).
+  Mer information om detta finns i [det här avsnittet](../../campaign/using/marketing-campaign-deliveries.md#building-the-main-target-in-a-workflow).
 
 * **Mål**
 
-   I kampanjen, programmet eller planen kan ni ange en lista med mål. Dessa är kvantifierade värden som ska uppnås. I slutet av kampanjen, programmet eller planen kan ni med MRM-modulen jämföra målen och resultaten i dedikerade rapporter.
+  I kampanjen, programmet eller planen kan ni ange en lista med mål. Dessa är kvantifierade värden som ska uppnås. I slutet av kampanjen, programmet eller planen kan ni med MRM-modulen jämföra målen och resultaten i dedikerade rapporter.
 
 * **Leveransbeskrivning**
 
-   En leveransdisposition är en strukturerad beskrivning av en leverans. Varje leverans kan referera till en leveransdisposition som t.ex. innehåller relaterade erbjudanden, dokument som ska bifogas eller en länk till butiker. Det går att referera till ett erbjudande i leveransen enligt den valda leveransdispositionen.
+  En leveransdisposition är en strukturerad beskrivning av en leverans. Varje leverans kan referera till en leveransdisposition som t.ex. innehåller relaterade erbjudanden, dokument som ska bifogas eller en länk till butiker. Det går att referera till ett erbjudande i leveransen enligt den valda leveransdispositionen.
 
-   Mer information om detta finns i [det här avsnittet](../../campaign/using/marketing-campaign-deliveries.md#associating-and-structuring-resources-linked-via-a-delivery-outline).
+  Mer information om detta finns i [det här avsnittet](../../campaign/using/marketing-campaign-deliveries.md#associating-and-structuring-resources-linked-via-a-delivery-outline).
 
 ## Självstudiekurs {#video}
 
-I den här videon presenteras de viktigaste begreppen för marknadsföringskampanjer.
+I den här videon presenteras viktiga begrepp för marknadsföringskampanjer.
 
 >[!VIDEO](https://video.tv.adobe.com/v/35131?quality=12)
 
-Det finns fler instruktionsvideor för Campaign Classic [här](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=sv).
+Det finns fler videor med Campaign Classic om hur man gör [här](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=sv).

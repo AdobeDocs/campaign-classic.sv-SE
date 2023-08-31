@@ -2,20 +2,19 @@
 product: campaign
 title: Om dirigerade adresser
 description: Kom igång med dirigerade adresser
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
+badge-v7: label="v7" type="Informative" tooltip="Gäller Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Gäller även Campaign v8"
 feature: Seed Address
+role: User
 exl-id: 1f55eda8-c393-4f86-9118-01bcd981c6df
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
 workflow-type: tm+mt
-source-wordcount: '379'
-ht-degree: 8%
+source-wordcount: '391'
+ht-degree: 9%
 
 ---
 
 # Om dirigerade adresser{#about-seed-addresses}
-
-
 
 Fröadresser används för mottagare i målgruppen som inte matchar dess definierade villkor. På så sätt kan mottagare som ligger utanför leveransomfånget ta emot leveransen, precis som andra målmottagare gör.
 
@@ -27,8 +26,8 @@ Dessutom kan du använda fröadresser **förhandsgranska och testa leveransperso
 
 Funktionen för dirigerade adresser har följande fördelar:
 
-* Slumpmässig ersättning av fält med data från mottagarprofiler: så att du bara kan ange e-postadressen, till exempel i avsnittet för startadressen, och låta Campaign automatiskt fylla i de andra fälten från profilen (se [Användningsfall: konfigurera fältersättning](use-case--configuring-the-field-substitution.md)).
-* När du använder ett arbetsflöde med datahanteringsfunktioner kan ytterligare data som bearbetas i leveranser anges på dirigeringsadressnivå för att framtvinga värden: den här sidan gör att slumpmässiga värden byts ut.
+* Slumpmässig ersättning av fält med data från mottagarprofiler: Detta gör att du bara kan ange e-postadressen, till exempel i avsnittet dirigerad adress, och låta Campaign automatiskt fylla i de andra fälten från profilen (se [Användningsfall: konfigurera fältersättning](use-case--configuring-the-field-substitution.md)).
+* När du använder ett arbetsflöde med datahanteringsfunktioner kan ytterligare data som bearbetas i leveranser anges på dirigeringsadressnivå för att framtvinga värden: detta innebär att slumpmässiga värden ersätts.
 * dirigeringsadresser exkluderas automatiskt från rapporter om följande leveransstatistik: **[!UICONTROL Clicks]**, **[!UICONTROL Opens]**, **[!UICONTROL Unsubscriptions]**.
 
 Seed-adresser läggs till i målet för leveranser genom att importeras eller skapas direkt i leveransen eller kampanjen.
@@ -37,7 +36,7 @@ Seed-adresser läggs till i målet för leveranser genom att importeras eller sk
 >
 >Seed-adresserna tillhör inte mottagartabellen, de skapas i en separat tabell. Om du utökar mottagartabellen med nya data måste du utöka både dirigerade adresstabellen och samma data. I annat fall kommer de utökade fälten inte att beaktas för dirigerade adresser.
 >
->Ett exempel på hur du kan utöka tabellen med dirigerade adresser visas i det här avsnittet: [Användningsfall: välj startadresser enligt villkor](use-case--selecting-seed-addresses-on-criteria.md).
+>Ett exempel på hur du kan utöka tabellen med dirigerade adresser visas i det här avsnittet: [Använd skiftläge: välj startadresser på villkor](use-case--selecting-seed-addresses-on-criteria.md).
 
 Vid direktutskick läggs startadresser till under extraheringen och blandas i utdatadokumentet.
 
@@ -48,4 +47,3 @@ Vid direktutskick läggs startadresser till under extraheringen och blandas i ut
 >* Det får inte använda alternativet **[!UICONTROL Handle groupings (GROUP BY+HAVING)]**.
 >* Om elementsamlingar extraheras får dessa fält ett tomt värde för startadresserna, såvida inte **[!UICONTROL Single row (expert user)]** är markerat. Mer information om detta finns i [det här avsnittet](../../platform/using/executing-export-jobs.md#step-7---data-formatting).
 >
-

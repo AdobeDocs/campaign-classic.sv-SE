@@ -2,20 +2,19 @@
 product: campaign
 title: Skapa en leveransmall
 description: Skapa en leveransmall
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
+badge-v7: label="v7" type="Informative" tooltip="Gäller Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Gäller även Campaign v8"
 feature: Delivery Templates
+role: User
 exl-id: 40a03e04-56c7-48c0-95b8-aa7bf1121048
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
 workflow-type: tm+mt
-source-wordcount: '383'
+source-wordcount: '395'
 ht-degree: 11%
 
 ---
 
 # Skapa en leveransmall{#creating-a-delivery-template}
-
-
 
 ![](assets/do-not-localize/how-to-video.png) [Upptäck den här funktionen i en video](#delivery-template-video)
 
@@ -42,7 +41,7 @@ Mer information om konfigurationsläget finns i [Länka mallen till en leverans]
 Så här konfigurerar du en leveransmall:
 
 1. Öppna Campaign Explorer.
-1. I **Resurser** mapp, markera **Mallar** sedan **Leveransmallar**.
+1. I **Resurs** mapp, markera **Mallar** sedan **Leveransmallar**.
 
    ![](assets/delivery_template_1.png)
 
@@ -56,7 +55,7 @@ Så här konfigurerar du en leveransmall:
 
    ![](assets/delivery_template_3.png)
 
-1. I **Allmänt** kan du bekräfta eller ändra de platser som du har valt på fliken **Körningsmapp**, **Mapp** och **Routning** nedrullningsbara menyer.
+1. I **Allmänt** kan du bekräfta eller ändra de platser som du har valt på fliken **Körningsmapp**, **Mapp** och **Routning** menyer.
 
    ![](assets/delivery_template_4.png)
 
@@ -83,10 +82,10 @@ I följande video visas hur du ställer in leveransmallsegenskaperna och förkla
 
 >[!VIDEO](https://video.tv.adobe.com/v/24067?quality=12)
 
-### Distribuera en ad hoc-leveransmall
+### Så här distribuerar du en ad hoc-leveransmall
 
 I den här videon förklaras hur du distribuerar en mall för ad hoc-e-postleverans och den förklarar skillnaden mellan en e-postleverans och ett leveransarbetsflöde.
 
 >[!VIDEO](https://video.tv.adobe.com/v/24065?quality=12)
 
-Det finns fler instruktionsvideor för Campaign Classic [här](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=sv).
+Det finns fler videor med Campaign Classic om hur man gör [här](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=sv).

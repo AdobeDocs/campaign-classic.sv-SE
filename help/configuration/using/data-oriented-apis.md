@@ -2,13 +2,14 @@
 product: campaign
 title: Dataorienterade API:er
 description: Dataorienterade API:er
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+badge-v7-only: label="v7" type="Informative" tooltip="Gäller endast Campaign Classic v7"
 feature: API
+role: Data Engineer, Developer
 exl-id: a392c55e-541a-40b1-a910-4a6dc79abd2d
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
 workflow-type: tm+mt
-source-wordcount: '1857'
-ht-degree: 0%
+source-wordcount: '1864'
+ht-degree: 1%
 
 ---
 
@@ -20,7 +21,7 @@ Med dataorienterade API:er kan du hantera hela datamodellen.
 
 Adobe Campaign erbjuder inte ett dedikerat läs-API per entitet (ingen getRecipient- eller getDelivery-funktion, osv.). Använd metoderna för läsning och ändring av QUERY- och WRITER-data för att komma åt modellens data.
 
-Med Adobe Campaign kan du hantera samlingar: Med frågor kan du återställa en uppsättning information som samlats in i hela basen. Till skillnad från åtkomst i SQL-läge returnerar Adobe Campaign API:er ett XML-träd i stället för datakolumner. Adobe Campaign skapar alltså sammansatta dokument med alla insamlade data.
+Med Adobe Campaign kan du hantera samlingar: frågor gör att du kan återställa en uppsättning information som samlats in i hela basen. Till skillnad från åtkomst i SQL-läge returnerar Adobe Campaign API:er ett XML-träd i stället för datakolumner. Adobe Campaign skapar alltså sammansatta dokument med alla insamlade data.
 
 Det här operativläget erbjuder inte en-till-en-mappning mellan attributen och elementen i XML-dokumenten och kolumnerna i tabellerna i databasen.
 
@@ -52,7 +53,7 @@ The **ExecuteQuery** metoden presenteras i [ExecuteQuery (xtk:queryDef)](#execut
 
 Med skrivkommandon kan du skriva enkla eller komplexa dokument, med poster i en eller flera tabeller i basen.
 
-Med transaktions-API:er kan du hantera avstämningar via **updateOrInsert** kommando: med ett kommando kan du skapa eller uppdatera data. Du kan också konfigurera ändringssammanfogning (**sammanfoga**): I det här operativläget kan du godkänna partiella uppdateringar.
+Med transaktions-API:er kan du hantera avstämningar via **updateOrInsert** kommando: ett kommando som du kan använda för att skapa eller uppdatera data. Du kan också konfigurera ändringssammanfogning (**sammanfoga**): i det här operativläget kan du godkänna partiella uppdateringar.
 
 XML-strukturen ger en logisk vy av data och gör att du kan stega dig förbi den fysiska strukturen i SQL-tabellen.
 
@@ -78,7 +79,7 @@ Definition av metoden &quot;ExecuteQuery&quot; i schemat &quot;xtk:queryDef&quot
 
 ### Format för XML-dokumentet i indatafrågan {#format-of-the-xml-document-of-the-input-query}
 
-XML-dokumentets struktur för frågan beskrivs i schemat &quot;xtk:queryDef&quot;. I det här dokumentet beskrivs satserna i en SQL-fråga: &quot;select&quot;, &quot;where&quot;, &quot;order by&quot;, &quot;group by&quot;, &quot;having&quot;.
+XML-dokumentets struktur för frågan beskrivs i schemat &quot;xtk:queryDef&quot;. Det här dokumentet beskriver satserna i en SQL-fråga: &quot;select&quot;, &quot;where&quot;, &quot;order by&quot;, &quot;group by&quot;, &quot;having&quot;.
 
 ```
 <queryDef schema="schema_key" operation="operation_type">
@@ -134,8 +135,8 @@ Du anger önskad typ av åtgärd i **operation** och innehåller något av följ
 
 * **get**: hämtar en post från tabellen och returnerar ett fel om data inte finns,
 * **getIfExists**: hämtar en post från tabellen och returnerar ett tomt dokument om data inte finns,
-* **välj**: skapar en markör som returnerar flera poster och returnerar ett tomt dokument om det inte finns några data,
-* **antal**: returnerar ett antal data.
+* **välj**: skapar en markör som returnerar flera poster och returnerar ett tomt dokument om inga data finns,
+* **antal**: returnerar ett dataantal.
 
 The **XPath** syntaxen används för att hitta data baserat på indatabchemat. Mer information om XPaths finns i [Datamodeller](../../configuration/using/data-schemas.md).
 
@@ -218,7 +219,7 @@ Så här räknar du antalet poster i en fråga:
 >
 >Återigen använder vi villkoret från föregående exempel. The `<select>` och -satser används inte. `</select>`
 
-#### Datagrupper {#data-grouping}
+#### Datagruppering {#data-grouping}
 
 Så här hämtar du e-postadresser som refereras mer än en gång:
 
@@ -260,26 +261,26 @@ Här är två exempel på hakparenteser på samma villkor.
 
 * Den enkla versionen i ett enda uttryck:
 
-   ```
-   <where>
-     <condition expr="(@age > 15 or @age <= 45) and  (@city = 'Newton' or @city = 'Culver City') "/>
-   </where>
-   ```
+  ```
+  <where>
+    <condition expr="(@age > 15 or @age <= 45) and  (@city = 'Newton' or @city = 'Culver City') "/>
+  </where>
+  ```
 
 * Den strukturerade versionen med `<condition>` element:
 
-   ```
-   <where>
-     <condition bool-operator="AND">
-       <condition expr="@age > 15" bool-operator="OR"/>
-       <condition expr="@age <= 45"/>
-     </condition>
-     <condition>
-       <condition expr="@city = 'Newton'" bool-operator="OR"/>
-       <condition expr="@city = 'Culver City'"/>
-     </condition>
-   </where>
-   ```
+  ```
+  <where>
+    <condition bool-operator="AND">
+      <condition expr="@age > 15" bool-operator="OR"/>
+      <condition expr="@age <= 45"/>
+    </condition>
+    <condition>
+      <condition expr="@city = 'Newton'" bool-operator="OR"/>
+      <condition expr="@city = 'Culver City'"/>
+    </condition>
+  </where>
+  ```
 
 Det går att ersätta operatorn &quot;OR&quot; med operatorn &quot;IN&quot; när flera villkor gäller för samma fält:
 
@@ -296,74 +297,74 @@ Den här syntaxen förenklar frågan när mer än två data används i villkoret
 
 #### Exempel på länkar {#examples-on-links}
 
-* Länkarna 1-1 eller N1: när tabellen har sekundärnyckeln (länken startar från tabellen) kan fälten i den länkade tabellen filtreras eller hämtas direkt.
+* Länkarna 1-1 och N1: När tabellen har sekundärnyckeln (länken startar från tabellen) kan fälten i den länkade tabellen filtreras eller hämtas direkt.
 
-   Exempel på ett filter på mappetiketten:
+  Exempel på ett filter på mappetiketten:
 
-   ```
-   <where>
-     <condition expr="[folder/@label] like 'Segment%'"/>
-   </where>
-   ```
+  ```
+  <where>
+    <condition expr="[folder/@label] like 'Segment%'"/>
+  </where>
+  ```
 
-   Så här hämtar du mappens fält från schemat &quot;nms:receive&quot;:
+  Så här hämtar du mappens fält från schemat &quot;nms:receive&quot;:
 
-   ```
-   <select>
-     <!-- label of recipient folder -->
-     <node expr="[folder/@label]"/>
-     <!-- displays the string count of the folder -->
-     <node expr="partition"/>
-   </select>
-   ```
+  ```
+  <select>
+    <!-- label of recipient folder -->
+    <node expr="[folder/@label]"/>
+    <!-- displays the string count of the folder -->
+    <node expr="partition"/>
+  </select>
+  ```
 
 * Samlingslänkar (1N): filtreringen av fälten i en samlingstabell måste utföras via **EXISTS** eller **FINNS INTE** -operator.
 
-   Så här filtrerar du de mottagare som har prenumererat på informationstjänsten Newsletter:
+  Så här filtrerar du mottagare som prenumererar på informationstjänsten Newsletter:
 
-   ```
-   <where>
-     <condition expr="subscription" setOperator="EXISTS">
-       <condition expr="@name = 'Newsletter'"/>
-     </condition>
-   </where>
-   ```
+  ```
+  <where>
+    <condition expr="subscription" setOperator="EXISTS">
+      <condition expr="@name = 'Newsletter'"/>
+    </condition>
+  </where>
+  ```
 
-   Direkthämtning av fälten för en samlingslänk från `<select>` -satsen rekommenderas inte eftersom frågan returnerar en kardinalprodukt. Det används bara när den länkade tabellen bara innehåller en post (exempel) `<node expr="">`).
+  Direkthämtning av fälten för en samlingslänk från `<select>` -satsen rekommenderas inte eftersom frågan returnerar en kardinalprodukt. Det används bara när den länkade tabellen bara innehåller en post (exempel) `<node expr="">`).
 
-   Exempel på prenumerationslänken:
+  Exempel på prenumerationslänken:
 
-   ```
-   <select>
-     <node expr="subscription/@label"/>
-   </select>
-   ```
+  ```
+  <select>
+    <node expr="subscription/@label"/>
+  </select>
+  ```
 
-   Det går att hämta en underlista som innehåller elementen i en samlingslänk i `<select>` -sats. XPaths för de refererade fälten är sammanhangsberoende från samlingselementet.
+  Det går att hämta en underlista som innehåller elementen i en samlingslänk i `<select>` -sats. XPaths för de refererade fälten är sammanhangsberoende från samlingselementet.
 
-   Filtreringen ( `<orderby>`  ) och begränsning (  `<where>`  ) kan läggas till i samlingselementet.
+  Filtreringen ( `<orderby>`  ) och begränsning (  `<where>`  ) kan läggas till i samlingselementet.
 
-   I det här exemplet returnerar frågan e-post och en lista över informationstjänster som mottagaren prenumererar på:
+  I det här exemplet returnerar frågan e-post och en lista över informationstjänster som mottagaren prenumererar på:
 
-   ```
-   <queryDef schema="nms:recipient" operation="select">
-     <select>
-       <node expr="@email"/>
-   
-       <!-- collection table (unbound type) -->
-       <node expr="subscription">  
-         <node expr="[service/@label]"/>    
-         <!-- sub-condition on the collection table -->
-         <where>  
-           <condition expr="@expirationDate >= GetDate()"/>
-         </where>
-         <orderBy>
-           <node expr="@expirationDate"/> 
-         </orderBy>
-       </node>
-     </select> 
-   </queryDef>
-   ```
+  ```
+  <queryDef schema="nms:recipient" operation="select">
+    <select>
+      <node expr="@email"/>
+  
+      <!-- collection table (unbound type) -->
+      <node expr="subscription">  
+        <node expr="[service/@label]"/>    
+        <!-- sub-condition on the collection table -->
+        <where>  
+          <condition expr="@expirationDate >= GetDate()"/>
+        </where>
+        <orderBy>
+          <node expr="@expirationDate"/> 
+        </orderBy>
+      </node>
+    </select> 
+  </queryDef>
+  ```
 
 #### Binda parametrarna för var- och select-satsen {#binding-the-parameters-of-the--where--and--select--clause}
 
@@ -380,7 +381,7 @@ När en fråga skapas ersätts de bundna värdena med ett tecken (? i ODBC, `#[i
 </select>
 ```
 
-För att undvika bindning av en parameter måste attributet noSqlBind fyllas i med värdet true.
+För att undvika bindning av en parameter måste attributet &quot;noSqlBind&quot; fyllas i med värdet &quot;true&quot;.
 
 >[!IMPORTANT]
 >
@@ -461,43 +462,43 @@ I stället för:
 
 * Fråga:
 
-   ```
-   <?xml version='1.0' encoding='ISO-8859-1'?>
-   <SOAP-ENV:Envelope xmlns:xsd='http://www.w3.org/2001/XMLSchema' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:ns='http://xml.apache.org/xml-soap' xmlns:SOAP-ENV='http://schemas.xmlsoap.org/soap/envelope/'>
-     <SOAP-ENV:Body>
-       <ExecuteQuery xmlns='urn:xtk:queryDef' SOAP-ENV:encodingStyle='http://schemas.xmlsoap.org/soap/encoding/'>
-         <__sessiontoken xsi:type='xsd:string'/>
-         <entity xsi:type='ns:Element' SOAP-ENV:encodingStyle='http://xml.apache.org/xml-soap/literalxml'>
-           <queryDef operation="get" schema="nms:recipient" xtkschema="xtk:queryDef">
-             <select>
-               <node expr="@email"/>
-               <node expr="@lastName"/>
-               <node expr="@firstName"/>
-             </select>
-             <where>
-               <condition expr="@id = 3599"/>
-             </where>
-           </queryDef>
-         </entity>
-       </ExecuteQuery>
-     </SOAP-ENV:Body>
-   </SOAP-ENV:Envelope>
-   ```
+  ```
+  <?xml version='1.0' encoding='ISO-8859-1'?>
+  <SOAP-ENV:Envelope xmlns:xsd='http://www.w3.org/2001/XMLSchema' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:ns='http://xml.apache.org/xml-soap' xmlns:SOAP-ENV='http://schemas.xmlsoap.org/soap/envelope/'>
+    <SOAP-ENV:Body>
+      <ExecuteQuery xmlns='urn:xtk:queryDef' SOAP-ENV:encodingStyle='http://schemas.xmlsoap.org/soap/encoding/'>
+        <__sessiontoken xsi:type='xsd:string'/>
+        <entity xsi:type='ns:Element' SOAP-ENV:encodingStyle='http://xml.apache.org/xml-soap/literalxml'>
+          <queryDef operation="get" schema="nms:recipient" xtkschema="xtk:queryDef">
+            <select>
+              <node expr="@email"/>
+              <node expr="@lastName"/>
+              <node expr="@firstName"/>
+            </select>
+            <where>
+              <condition expr="@id = 3599"/>
+            </where>
+          </queryDef>
+        </entity>
+      </ExecuteQuery>
+    </SOAP-ENV:Body>
+  </SOAP-ENV:Envelope>
+  ```
 
 * Svar:
 
-   ```
-   <?xml version='1.0' encoding='ISO-8859-1'?>
-   <SOAP-ENV:Envelope xmlns:xsd='http://www.w3.org/2001/XMLSchema' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:ns='http://xml.apache.org/xml-soap' xmlns:SOAP-ENV='http://schemas.xmlsoap.org/soap/envelope/'>
-     <SOAP-ENV:Body>
-       <ExecuteQueryResponse xmlns='urn:xtk:queryDef' SOAP-ENV:encodingStyle='http://schemas.xmlsoap.org/soap/encoding/'>
-         <pdomOutput xsi:type='ns:Element' SOAP-ENV:encodingStyle='http://xml.apache.org/xml-soap/literalxml'>
-           <recipient email="john.doe@adobe.com" lastName"Doe" firstName="John"/>
-         </pdomOutput>
-       </ExecuteQueryResponse>
-     </SOAP-ENV:Body>
-   </SOAP-ENV:Envelope>
-   ```
+  ```
+  <?xml version='1.0' encoding='ISO-8859-1'?>
+  <SOAP-ENV:Envelope xmlns:xsd='http://www.w3.org/2001/XMLSchema' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:ns='http://xml.apache.org/xml-soap' xmlns:SOAP-ENV='http://schemas.xmlsoap.org/soap/envelope/'>
+    <SOAP-ENV:Body>
+      <ExecuteQueryResponse xmlns='urn:xtk:queryDef' SOAP-ENV:encodingStyle='http://schemas.xmlsoap.org/soap/encoding/'>
+        <pdomOutput xsi:type='ns:Element' SOAP-ENV:encodingStyle='http://xml.apache.org/xml-soap/literalxml'>
+          <recipient email="john.doe@adobe.com" lastName"Doe" firstName="John"/>
+        </pdomOutput>
+      </ExecuteQueryResponse>
+    </SOAP-ENV:Body>
+  </SOAP-ENV:Envelope>
+  ```
 
 ## Write/WriteCollection (xtk:session) {#write---writecollection--xtk-session-}
 
@@ -532,7 +533,7 @@ Definition av metoderna &quot;Write&quot; och &quot;WriteCollection&quot; i sche
 
 Datavstämningen utförs baserat på definitionen av nycklarna som anges i det associerade schemat. Skrivproceduren söker efter den första valbara nyckeln baserat på de data som anges i indatadokumentet. Enheten infogas eller uppdateras baserat på dess existens i databasen.
 
-Nyckeln till schemat för den entitet som ska uppdateras har slutförts baserat på **xtkschema** -attribut.
+Nyckeln till schemat för den entitet som ska uppdateras är slutförd baserat på **xtkschema** -attribut.
 
 Avstämningsnyckeln kan därför tvingas med **tangent** -attribut som innehåller listan med XPaths som nyckeln består av (avgränsade med kommatecken).
 
@@ -540,11 +541,11 @@ Det går att tvinga fram typen av åtgärd genom att fylla i **operation** -attr
 
 * **infoga**: tvingar in posten (avstämningsnyckeln används inte),
 * **insertOrUpdate**: uppdaterar eller infogar posten beroende på avstämningsnyckeln (standardläge),
-* **uppdatera**: uppdaterar posten, gör ingenting om data inte finns,
+* **uppdatera**: uppdaterar posten; gör ingenting om informationen inte finns,
 * **delete**: tar bort posterna,
 * **ingen**: används endast för länkavstämning, utan uppdatering eller infogning.
 
-### Exempel med metoden &#39;Write&#39; {#example-with-the--write--method}
+### Exempel med metoden Write {#example-with-the--write--method}
 
 Uppdatera eller infoga en mottagare (implicit&quot;insertOrUpdate&quot;-åtgärd) med e-postadress, födelsedatum och ort:
 
@@ -630,43 +631,43 @@ Som standard måste alla samlingselement fyllas i för att XML-samlingens elemen
 
 * Fråga:
 
-   ```
-   <?xml version='1.0' encoding='ISO-8859-1'?>
-   <SOAP-ENV:Envelope xmlns:xsd='http://www.w3.org/2001/XMLSchema' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:ns='http://xml.apache.org/xml-soap' xmlns:SOAP-ENV='http://schemas.xmlsoap.org/soap/envelope/'>
-     <SOAP-ENV:Body>
-       <Write xmlns='urn:xtk:persist' SOAP-ENV:encodingStyle='http://schemas.xmlsoap.org/soap/encoding/'>
-         <__sessiontoken xsi:type='xsd:string'/>
-         <domDoc xsi:type='ns:Element' SOAP-ENV:encodingStyle='http://xml.apache.org/xml-soap/literalxml'>
-           <recipient xtkschema="nms:recipient" email="rene.dupont@adobe.com" firstName="René" lastName="Dupont" _key="@email">
-         </domDoc>
-       </Write>
-     </SOAP-ENV:Body>
-   </SOAP-ENV:Envelope>
-   ```
+  ```
+  <?xml version='1.0' encoding='ISO-8859-1'?>
+  <SOAP-ENV:Envelope xmlns:xsd='http://www.w3.org/2001/XMLSchema' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:ns='http://xml.apache.org/xml-soap' xmlns:SOAP-ENV='http://schemas.xmlsoap.org/soap/envelope/'>
+    <SOAP-ENV:Body>
+      <Write xmlns='urn:xtk:persist' SOAP-ENV:encodingStyle='http://schemas.xmlsoap.org/soap/encoding/'>
+        <__sessiontoken xsi:type='xsd:string'/>
+        <domDoc xsi:type='ns:Element' SOAP-ENV:encodingStyle='http://xml.apache.org/xml-soap/literalxml'>
+          <recipient xtkschema="nms:recipient" email="rene.dupont@adobe.com" firstName="René" lastName="Dupont" _key="@email">
+        </domDoc>
+      </Write>
+    </SOAP-ENV:Body>
+  </SOAP-ENV:Envelope>
+  ```
 
 * Svar:
 
-   ```
-   <?xml version='1.0' encoding='ISO-8859-1'?>
-   <SOAP-ENV:Envelope xmlns:xsd='http://www.w3.org/2001/XMLSchema' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:ns='http://xml.apache.org/xml-soap' xmlns:SOAP-ENV='http://schemas.xmlsoap.org/soap/envelope/'>
-     <SOAP-ENV:Body>
-       <WriteResponse xmlns='urn:' SOAP-ENV:encodingStyle='http://schemas.xmlsoap.org/soap/encoding/'>
-       </WriteResponse>
-     </SOAP-ENV:Body>
-   </SOAP-ENV:Envelope>
-   ```
+  ```
+  <?xml version='1.0' encoding='ISO-8859-1'?>
+  <SOAP-ENV:Envelope xmlns:xsd='http://www.w3.org/2001/XMLSchema' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:ns='http://xml.apache.org/xml-soap' xmlns:SOAP-ENV='http://schemas.xmlsoap.org/soap/envelope/'>
+    <SOAP-ENV:Body>
+      <WriteResponse xmlns='urn:' SOAP-ENV:encodingStyle='http://schemas.xmlsoap.org/soap/encoding/'>
+      </WriteResponse>
+    </SOAP-ENV:Body>
+  </SOAP-ENV:Envelope>
+  ```
 
-   Returnera med fel:
+  Returnera med fel:
 
-   ```
-   <?xml version='1.0'?>
-   <SOAP-ENV:Envelope xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:SOAP-ENV='http://schemas.xmlsoap.org/soap/envelope/'>
-     <SOAP-ENV:Body>
-       <SOAP-ENV:Fault>
-         <faultcode>SOAP-ENV:Server</faultcode>
-         <faultstring xsi:type="xsd:string">Error while executing the method 'Write' of service 'xtk:persist'.</faultstring>
-         <detail xsi:type="xsd:string">PostgreSQL error: ERROR:  duplicate key violates unique constraint &quot;nmsrecipient_id&quot;Impossible to save document of type 'Recipients (nms:recipient)'</detail>
-       </SOAP-ENV:Fault>
-     </SOAP-ENV:Body>
-   </SOAP-ENV:Envelope>
-   ```
+  ```
+  <?xml version='1.0'?>
+  <SOAP-ENV:Envelope xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:SOAP-ENV='http://schemas.xmlsoap.org/soap/envelope/'>
+    <SOAP-ENV:Body>
+      <SOAP-ENV:Fault>
+        <faultcode>SOAP-ENV:Server</faultcode>
+        <faultstring xsi:type="xsd:string">Error while executing the method 'Write' of service 'xtk:persist'.</faultstring>
+        <detail xsi:type="xsd:string">PostgreSQL error: ERROR:  duplicate key violates unique constraint &quot;nmsrecipient_id&quot;Impossible to save document of type 'Recipients (nms:recipient)'</detail>
+      </SOAP-ENV:Fault>
+    </SOAP-ENV:Body>
+  </SOAP-ENV:Envelope>
+  ```

@@ -2,22 +2,21 @@
 product: campaign
 title: Definiera rätt målgrupp
 description: Lär dig de bästa sätten att välja målgrupp
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
+badge-v7: label="v7" type="Informative" tooltip="Gäller Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Gäller även Campaign v8"
 feature: Audiences
+role: User
 exl-id: c0533148-b027-4158-9b95-8d2df769e963
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
 workflow-type: tm+mt
-source-wordcount: '487'
-ht-degree: 3%
+source-wordcount: '499'
+ht-degree: 4%
 
 ---
 
 # Definiera rätt målgrupp {#define-the-right-audience}
 
-
-
-Målgruppen är följande: skapa listor noggrant, testa e-postmeddelanden på populära e-postklienter och mobila enheter och se till att e-postlistorna är aktuella (utan okända eller föråldrade adresser). Du kan också skicka korrektur som hjälper dig att konfigurera en komplett valideringscykel.
+Målgruppspopulationen är avgörande: skapa listor noggrant, testa e-postmeddelanden på populära e-postklienter och mobila enheter och se till att e-postlistorna är aktuella (utan okända eller föråldrade adresser). Du kan också skicka korrektur som hjälper dig att konfigurera en komplett valideringscykel.
 
 Läs mer om målpopulationer [i det här avsnittet](steps-defining-the-target-population.md)
 
@@ -25,11 +24,11 @@ Läs mer om målpopulationer [i det här avsnittet](steps-defining-the-target-po
 
 När innehållet är klart måste du noga definiera vem som ska få meddelandet.
 
-För att leveransen ska bli framgångsrik vill ni skicka det mest relevanta personaliserade innehållet till rätt mottagare. Med Adobe Campaign kan ni skapa det mest korrekta målet: kan du välja mottagare utifrån deras ålder, lokalisering, vad de har köpt, om de har klickat på en länk i en tidigare leverans osv. Med Adobe Campaign kan du även definiera testprofiler, kontrollgrupper och startadresser för att vara säker på att målet är korrekt.
+För att leveransen ska bli framgångsrik vill ni skicka det mest relevanta personaliserade innehållet till rätt mottagare. Med Adobe Campaign kan du skapa det mest korrekta målet: du kan välja mottagare utifrån deras ålder, lokalisering, vad de köpt, om de klickat på en länk i en tidigare leverans osv. Med Adobe Campaign kan du även definiera testprofiler, kontrollgrupper och startadresser för att vara säker på att målet är korrekt.
 
 ## Målmappningar {#target-mappings}
 
-I Campaign Classic som standard har leveransmallarna som mål **Mottagare**. Adobe Campaign erbjuder andra målmappningar för leveranser som du kan ändra efter behov.
+I Campaign Classic är målet för leveransmallar som standard **Mottagare**. Adobe Campaign erbjuder andra målmappningar för leveranser som du kan ändra efter behov.
 
 Du kan till exempel leverera till besökare vars profiler har samlats in via sociala nätverk eller till besökare som prenumererar på en informationstjänst.
 

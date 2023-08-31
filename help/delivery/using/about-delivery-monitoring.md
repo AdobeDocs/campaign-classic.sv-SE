@@ -1,21 +1,20 @@
 ---
 product: campaign
 title: Kom igång med leveransövervakning
-description: Läs mer om funktioner för leveransövervakning i Campaign Classic
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
+description: Läs mer om funktioner för övervakning av Campaign Classic
+badge-v7: label="v7" type="Informative" tooltip="Gäller Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Gäller även Campaign v8"
 feature: Monitoring, Deliverability
+role: User
 exl-id: 9ce11da0-e37b-459e-8ec7-d2bddf59bdf7
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
 workflow-type: tm+mt
-source-wordcount: '288'
+source-wordcount: '300'
 ht-degree: 16%
 
 ---
 
 # Kom igång med leveransövervakning {#about-delivery-monitoring}
-
-
 
 Att övervaka era leveranser efter att de har skickats är ett viktigt steg för att se till att era marknadsföringskampanjer är effektiva och når ut till era kunder.
 
@@ -47,7 +46,7 @@ Flera riktlinjer bör följas för att leveranserna ska gå bra. Vanliga problem
 
 När det inte går att skicka ett meddelande till en profil skickar fjärrservern automatiskt ett felmeddelande som hämtas av Adobe Campaign-plattformen och kvalificeras för att avgöra om e-postadressen eller telefonnumret ska sättas i karantän eller inte.
 
-[Om leveransfel](understanding-delivery-failures.md) är ett viktigt steg som hjälper er att förbättra era marknadsföringskampanjer.
+[Om leveransfel](understanding-delivery-failures.md) är ett viktigt steg för att förbättra era marknadsföringskampanjer.
 
 <img src="assets/do-not-localize/icon_quarantine.svg" width="60px">
 

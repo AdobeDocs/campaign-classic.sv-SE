@@ -5,8 +5,9 @@ description: Lär dig viktiga saker när du hanterar slutprodukter i Adobe Campa
 badge-v7: label="v7" type="Informative" tooltip="Gäller Campaign Classic v7"
 badge-v8: label="v8" type="Positive" tooltip="Gäller även Campaign v8"
 feature: Deliverability, Troubleshooting
+role: User
 exl-id: f94897c1-b44c-4100-ac50-a89b13fa6f2f
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
 workflow-type: tm+mt
 source-wordcount: '666'
 ht-degree: 2%
@@ -14,8 +15,6 @@ ht-degree: 2%
 ---
 
 # Felsökning av slutprodukter{#deliverability-faq}
-
-
 
 Har du något leveransproblem? Du kan hitta lösningen här.
 
@@ -60,7 +59,7 @@ Om problemet kvarstår kontaktar du de kommersiella tjänsterna eller leveranstj
 
   Mer information finns i [Om karantänhantering](understanding-quarantine-management.md).
 
-## Ta bort från blockeringslista {#remove-from-denylist}
+## Tar bort från blockeringslista {#remove-from-denylist}
 
 * **En av mina mottagare lades till i blockeringslista av misstag. Hur tar jag bort dem från denyisten så att jag kan börja skicka dem igen?**
 

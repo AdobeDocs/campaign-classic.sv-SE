@@ -2,26 +2,25 @@
 product: campaign
 title: Skapa personaliserade PDF-dokument
 description: Lär dig generera skräddarsydda PDF-dokument
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
+badge-v7: label="v7" type="Informative" tooltip="Gäller Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Gäller även Campaign v8"
 feature: Personalization
+role: User
 exl-id: e5239d99-256b-412b-be20-f64f822da9c3
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
 workflow-type: tm+mt
-source-wordcount: '442'
-ht-degree: 1%
+source-wordcount: '454'
+ht-degree: 2%
 
 ---
 
 # Skapa personaliserade PDF-dokument{#generating-personalized-pdf-documents}
 
-
-
 ## Om PDF-dokument med variabel kod {#about-variable-pdf-documents}
 
 Med Adobe Campaign kan du generera variabla PDF-dokument för e-postbilagor från dokument i LibreOffice eller Microsoft Word.
 
-Följande tillägg stöds: &quot;.docx&quot;, &quot;.doc&quot; och &quot;.odt&quot;.
+Följande tillägg stöds: .docx, .doc och .odt.
 
 För att personalisera dina dokument finns samma JavaScript-funktioner som för e-postpersonalisering.
 
@@ -43,9 +42,9 @@ Så här genererar du dynamiska tabeller:
 * I varje cell på den andra raden i tabellen infogar du skript som returnerar de värden som ska visas.
 * Stäng slingan på tabellens tredje och sista rad.
 
-   Exempel på en dynamisk tabelldefinition:
+  Exempel på en dynamisk tabelldefinition:
 
-   ![](assets/s_ncs_pdf_table.png)
+  ![](assets/s_ncs_pdf_table.png)
 
 ## Infoga externa bilder {#inserting-external-images}
 
@@ -55,22 +54,22 @@ För att göra detta måste du konfigurera ett personaliseringsblock och sedan t
 
 **Exempel: infoga en personlig logotyp beroende på mottagarens land**
 
-**Steg 1: skapa den bifogade filen:**
+**Steg 1: Skapa den bifogade filen:**
 
 * Infoga anropet till personaliseringsblocket: **&lt;%@ include view=&quot;blockname&quot; %>**.
 * Infoga innehållet (anpassat eller inte) i filens brödtext.
 
 ![](assets/s_ncs_open_office_blocdeperso.png)
 
-**Steg 2: skapa personaliseringsblocket:**
+**Steg 2: Skapa personaliseringsblocket:**
 
-* Gå till **[!UICONTROL Resources > Campaign management > Personalization blocks]** Adobe Campaign-konsolens meny.
-* Skapa ett nytt anpassningsblock för&quot;Min logotyp&quot; med&quot;Min_logotyp&quot; som internt namn.
+* Gå till **[!UICONTROL Resources > Campaign management > Personalization blocks]** Adobe Campaign Console-menyn.
+* Skapa ett nytt anpassningsblock för Min logotyp med&quot;Min_logotyp&quot; som internt namn.
 * Klicka på **[!UICONTROL Advanced parameters...]** sedan kontrollera **[!UICONTROL "The content of the block is included in an attachment"]** alternativ. Detta gör att du kan kopiera definitionen av anpassningsblocket direkt till innehållet i OpenOffice-filen.
 
-   ![](assets/s_ncs_pdf_bloc_option.png)
+  ![](assets/s_ncs_pdf_bloc_option.png)
 
-   Ni måste skilja på två typer av deklarationer inom personaliseringsblocket:
+  Ni måste skilja på två typer av deklarationer inom personaliseringsblocket:
 
    * Adobe Campaign-koden för de anpassningsfält där&quot;öppna&quot;- och&quot;stängda&quot;-texterna måste ersättas med escape-tecken (respektive) `&lt;` och `&gt;`).
    * Hela OpenOffice XML-koden kopieras till OpenOffice-dokumentet.

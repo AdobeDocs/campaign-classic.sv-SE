@@ -2,13 +2,14 @@
 product: campaign
 title: Utöka ett schema
 description: Lär dig hur du utökar ett schema
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+role: Data Engineer, Developer
+badge-v7-only: label="v7" type="Informative" tooltip="Gäller endast Campaign Classic v7"
 feature: Schema Extension
 exl-id: 6e3e666d-6ab3-4346-93ca-fb0155a4660d
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
 workflow-type: tm+mt
-source-wordcount: '327'
-ht-degree: 4%
+source-wordcount: '334'
+ht-degree: 6%
 
 ---
 
@@ -28,13 +29,13 @@ Det finns två metoder för att utöka ett befintligt schema:
 
    Schemats rotelement måste innehålla **extendedSchema** attribut med namnet på schemat som ska utökas som dess värde.
 
-   Ett tilläggsschema har inte ett eget schema: schemat som genereras från källschemat fylls i med fälten i tilläggsschemat.
+   Ett tilläggsschema har inget eget schema: schemat som genereras från källschemat fylls i med fälten i tilläggsschemat.
 
    >[!IMPORTANT]
    >
-   >Du får inte ändra de inbyggda schemana i programmet, utan i stället schemautbyggnadsmekanismen. I annat fall kommer ändrade scheman inte att uppdateras vid tidpunkten för framtida uppgraderingar av programmet. Detta kan leda till felfunktioner vid användning av Adobe Campaign.
+   >Du får inte ändra de inbyggda schemana i programmet, utan i stället schemautbyggnadsmekanismen. I annat fall kommer ändrade scheman inte att uppdateras när du uppgraderar programmet. Detta kan leda till felfunktioner vid användning av Adobe Campaign.
 
-   **Exempel**: utvidgning av **nms:mottagare** schema.
+   **Exempel**: tillägg av **nms:mottagare** schema.
 
    ```
    <srcSchema extendedSchema="nms:recipient" name="recipient" namespace="cus">

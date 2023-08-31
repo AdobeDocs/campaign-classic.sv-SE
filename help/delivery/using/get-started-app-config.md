@@ -2,13 +2,14 @@
 product: campaign
 title: Konfigurera mobilprogrammet i Adobe Campaign
 description: Lär dig hur du börjar med konfigurationen för mobilprogrammet
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+badge-v7-only: label="v7" type="Informative" tooltip="Gäller endast Campaign Classic v7"
 feature: Push
+role: User, Developer
 exl-id: 95bc07cc-8837-4511-81bc-05fad28191c9
-source-git-commit: 4661688a22bd1a82eaf9c72a739b5a5ecee168b1
+source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
 workflow-type: tm+mt
-source-wordcount: '306'
-ht-degree: 10%
+source-wordcount: '313'
+ht-degree: 12%
 
 ---
 

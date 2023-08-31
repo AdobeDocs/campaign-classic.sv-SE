@@ -1,11 +1,12 @@
 ---
 product: campaign
-title: Kom igång med datamodellen Campaign Classic
+title: Kom igång med Campaign Classicens datamodell
 description: Lär dig hur du utökar datamodellen i Campaign, redigerar scheman, använder API:er med mera
 badge-v7-only: label="v7" type="Informative" tooltip="Gäller endast Campaign Classic v7"
 feature: Data Model, Configuration
+role: Data Engineer, Developer
 exl-id: 655b5928-b005-442f-b026-2f1b0c1abb99
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
 workflow-type: tm+mt
 source-wordcount: '987'
 ht-degree: 6%
@@ -108,7 +109,7 @@ Fördelarna med att använda en anpassad mottagartabell är följande:
 
 Läs mer om Campaign-datamodellen i följande avsnitt:
 
-* **Beskrivning av huvudtabellerna** - Mer information om standarddatamodellen för Campaign Classic finns i [det här avsnittet](../../configuration/using/data-model-description.md).
+* **Beskrivning av huvudtabellerna** - Mer information om Campaign Classicens standarddatamodell finns i [det här avsnittet](../../configuration/using/data-model-description.md).
 
 * **Fullständig beskrivning av varje tabell** - Om du vill få tillgång till den fullständiga beskrivningen av varje tabell går du till **[!UICONTROL Admin > Configuration > Data schemas]**, välj en resurs i listan och klicka på **[!UICONTROL Documentation]** -fliken.
 
