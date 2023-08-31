@@ -1,21 +1,20 @@
 ---
 product: campaign
 title: Kom igång med spårning av personaliserade länkar
-description: Lär dig hur du skriver länkar i e-postmeddelanden som kan personaliseras och supportspårning i Campaign
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
+description: Lär dig skriva länkar i e-postmeddelanden som kan personaliseras och supportspårning i Campaign
+badge-v7: label="v7" type="Informative" tooltip="Gäller Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Gäller även Campaign v8"
 feature: Personalization
+role: User
 exl-id: d0e00b40-e7dd-4484-b37c-fd3f3ac70fda
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: d2f5f2a662c022e258fb3cc56c8502c4f4cb2849
 workflow-type: tm+mt
-source-wordcount: '218'
+source-wordcount: '230'
 ht-degree: 7%
 
 ---
 
 # Kom igång med spårning av personaliserade länkar {#tracking-personalized-links}
-
-
 
 Länkarna i e-postinnehåll som innehåller personalisering måste spåras med specifik syntax.
 
@@ -32,8 +31,8 @@ I det ursprungliga innehållet: `http://myurl.com/a.php?name=<%=escapeUrl(recipi
 
 Var:
 
-* &quot;h&quot; betyder innehåll i HTML (eller &quot;t&quot; för textinnehåll).
+* &quot;h&quot; betyder HTML (eller &quot;t&quot; för textinnehåll).
 * 617791 är meddelande-ID:t / brustlogg-ID (hexadecimalt).
 * 71ffa3 är NmsDelivery-ID (hexadecimalt).
-* 71ffa8 är NmsTrackingUrl-ID:t (hexadecimalt).
+* 71ffa8 är NmsTrackingUrl-ID (hexadecimalt).
 * p1, p2 och så vidare, är alla parametrar som ska ersättas i URL:en.

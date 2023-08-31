@@ -5,8 +5,9 @@ description: Läs mer om omfattningen av och egenskaperna hos utskick av e-post 
 badge-v7: label="v7" type="Informative" tooltip="Gäller Campaign Classic v7"
 badge-v8: label="v8" type="Positive" tooltip="Gäller även Campaign v8"
 feature: Email
+role: User, Admin, Developer
 exl-id: 58cc23f4-9ab0-45c7-9aa2-b08487ec7e91
-source-git-commit: e83d85a26a5c8dd26ea2468246ef448edf8fee9b
+source-git-commit: d2f5f2a662c022e258fb3cc56c8502c4f4cb2849
 workflow-type: tm+mt
 source-wordcount: '1352'
 ht-degree: 3%
@@ -14,8 +15,6 @@ ht-degree: 3%
 ---
 
 # Skicka med förbättrad MTA {#sending-with-enhanced-mta}
-
-
 
 The **Adobe Campaign Enhanced MTA** (E-postöverföringsagent) tillhandahåller en uppgraderad sändningsinfrastruktur som möjliggör förbättrad leveransförmåga, renommé, genomströmning, rapportering, studshantering, IP-avkodning och hantering av anslutningsinställningar.
 

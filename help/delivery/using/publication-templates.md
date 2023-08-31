@@ -2,24 +2,23 @@
 product: campaign
 title: Publiceringsmallar
 description: Publiceringsmallar
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
+badge-v7: label="v7" type="Informative" tooltip="Gäller Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Gäller även Campaign v8"
 feature: Templates
+role: User
 exl-id: 3b6e4974-4551-4da2-8eca-577c4f9cbd91
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: d2f5f2a662c022e258fb3cc56c8502c4f4cb2849
 workflow-type: tm+mt
-source-wordcount: '824'
-ht-degree: 0%
+source-wordcount: '825'
+ht-degree: 1%
 
 ---
 
 # Publiceringsmallar{#publication-templates}
 
-
-
 ## Om publiceringsmallar {#about-publication-templates}
 
-Publikationsmallen är identitetskortet för innehållet som ska publiceras. Det refererar till de resurser som används i publiceringsprocessen, dvs.:
+Publikationsmallen refererar till de resurser som används i publiceringsprocessen, dvs.:
 
 * dataschemat,
 * Inmatningsformuläret.
@@ -29,7 +28,7 @@ Publikationsmallen är identitetskortet för innehållet som ska publiceras. Det
 
 En publikationsmall identifieras av sitt namn och namnutrymme.
 
-Identifieringsnyckeln för en formatmall är en sträng som består av namnutrymmet och namnet avgränsat med kolon. till exempel: **cus:nyhetsbrev**.
+Identifieringsnyckeln för en formatmall är en sträng som består av namnutrymmet och namnet avgränsat med ett kolon, till exempel: **cus:nyhetsbrev**.
 
 >[!NOTE]
 >
@@ -57,8 +56,8 @@ The **[!UICONTROL Name of template]** fältet är en kostnadsfri etikett som bes
 
 The **[!UICONTROL Rendering]** väljer du:
 
-* vilken typ av återgivning som används för att projicera utdatadokumentet: XSL-formatmall eller JavaScript-mall,
-* utdatadokumentets format: HTML, Text, XML eller RTF,
+* Den typ av återgivning som används för att projicera utdatadokumentet: XSL-formatmall eller JavaScript-mall.
+* Utdatadokumentets format: HTML, Text, XML eller RTF.
 * den mall som innehåller konstruktionsdata, dvs. den formatmall eller JavaScript-mall som ska användas.
 
 ### Publicering {#publication}
@@ -70,24 +69,24 @@ Publikationen innebär att utdatadokumentet genereras i form av en fil, om den v
 Följande publiceringsalternativ är tillgängliga:
 
 * Teckenuppsättningen för kodning av utdatafil kan framtvingas via **[!UICONTROL Encoding]** fält. Teckenuppsättningen Latin 1 (1252) används som standard.
-* The **[!UICONTROL Multi-file generation]** aktiverar ett särskilt dokumentpubliceringsläge. Det här alternativet innebär att en partitioneringstagg fylls i i början av varje sida i utdatadokumentet. När du genererar innehållet skapas en fil för varje ifylld partitionstagg. Det här läget används för att generera miniwebbplatser från ett innehållsblock. Mer information finns i [Skapa flera filer samtidigt](#multi-file-generation).
+* The **[!UICONTROL Multi-file generation]** aktiverar ett särskilt dokumentpubliceringsläge. Det här alternativet innebär att en partitioneringstagg fylls i i början av varje sida i utdatadokumentet. När du genererar innehållet skapas en fil för varje ifylld partitionstagg. Det här läget används för att generera miniwebbplatser från ett innehållsblock. för mer information om detta, se [Skapa flera filer samtidigt](#multi-file-generation).
 * The **[!UICONTROL Location]** fältet innehåller namnet på utdatafilen. Namnet kan bestå av variabler för att generera ett automatiskt filnamn.
 
-   En variabel har följande format: **`$(<xpath>)`**, där **`<xpath>`** är sökvägen till ett fält i publiceringsmallens dataschema.
+  En variabel har följande format: **`$(<xpath>)`**, där **`<xpath>`** är sökvägen till ett fält i publiceringsmallens dataschema.
 
-   Namnet på en fil kan bestå av ett datumtypsfält. Om du vill formatera fältet korrekt använder du **$date-format** -funktion, med fältets sökväg och utdataformatet som parametrar.
+  Namnet på en fil kan bestå av ett datumtypsfält. Använd knappen **$date-format** -funktion, med fältets sökväg och utdataformatet som parametrar.
 
-   Som standard används variablerna i fälten &quot;@name&quot; och &quot;@date&quot; för filnamnets konstruktionsformat:
+  Som standard används variablerna i fälten &quot;@name&quot; och &quot;@date&quot; för filnamnets konstruktionsformat:
 
-   ```
-   ct_$(@name)_$date-format(@date,'%4Y%2M%2D').htm
-   ```
+  ```
+  ct_$(@name)_$date-format(@date,'%4Y%2M%2D').htm
+  ```
 
-   Det genererade filnamnet ser ut så här: ct_news12_20110901.htm.
+  Det genererade filnamnet ser ut så här: ct_news12_20110901.htm.
 
-   >[!NOTE]
-   >
-   >Mer information om innehållsgenerering finns i [Skapa en innehållsinstans](using-a-content-template.md#creating-a-content-instance).
+  >[!NOTE]
+  >
+  >Mer information om innehållsgenerering finns i [Skapa en innehållsinstans](using-a-content-template.md#creating-a-content-instance).
 
 ### Leverans {#delivery}
 
@@ -109,7 +108,7 @@ Om du vill aktivera flera filgenereringar väljer du **[!UICONTROL Multi-file ge
 
 Partitionstaggen som ska integreras i formatmallen är följande:
 
-**`<xsl:comment> #nl:output_replace(<name_of_file>) </xsl:comment>`** där **`<name_of_file>`** är filnamnet på sidan som ska genereras.
+**`<xsl:comment> #nl:output_replace(<name_of_file>) </xsl:comment>`** där **`<name_of_file>`** är filnamnet på sidan som ska skapas.
 
 **Exempel:** Skapa flera filer med hjälp av&quot;cus:book&quot;-schemat.
 

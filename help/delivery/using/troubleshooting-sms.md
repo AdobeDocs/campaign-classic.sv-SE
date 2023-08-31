@@ -5,8 +5,9 @@ description: Läs mer om felsökning av SMS-kanal
 badge-v7: label="v7" type="Informative" tooltip="Gäller Campaign Classic v7"
 badge-v8: label="v8" type="Positive" tooltip="Gäller även Campaign v8"
 feature: SMS, Troubleshooting
+role: User
 exl-id: 841f0c2f-90ef-4db0-860a-75fc7c48804a
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: d2f5f2a662c022e258fb3cc56c8502c4f4cb2849
 workflow-type: tm+mt
 source-wordcount: '2756'
 ht-degree: 0%
@@ -14,8 +15,6 @@ ht-degree: 0%
 ---
 
 # Felsökning av SMS {#troubleshooting-sms}
-
-
 
 ## Konflikt mellan olika externa konton {#external-account-conflict}
 
@@ -41,11 +40,11 @@ När du har markerat varje konto separat finns det två möjliga scenarier:
 
   Du har en konflikt mellan konton. Som tidigare nämnts behandlar Adobe Campaign konton individuellt, men leverantören kan behandla dem som ett enda konto.
 
-   * Du använder olika kombinationer av inloggning och lösenord för alla dina konton.
-Du måste kontakta leverantören för att diagnostisera potentiella konflikter hos dem.
+   * Du använder olika kombinationer av inloggning / lösenord mellan alla dina konton.
+Du måste kontakta leverantören för att diagnostisera potentiella konflikter på deras sida.
 
-   * Vissa externa konton har samma kombination av inloggning och lösenord.
-Leverantören kan inte avgöra vilket externt konto som `BIND PDU` kommer från, så de behandlar alla anslutningar från flera konton som ett enda. De kan ha cirkulerat MO och SR slumpmässigt över de två kontona, vilket kan orsaka problem.
+   * Några av de externa kontona delar samma kombination av inloggning / lösenord.
+Leverantören har inget sätt att berätta från vilket externt konto det `BIND PDU` kommer från, så de behandlar alla anslutningar från flera konton som en enda. De kan ha cirkulerat MO och SR slumpmässigt över de två kontona, vilket kan orsaka problem.
 Om providern stöder flera korta koder för samma kombination av inloggning och lösenord måste du fråga var den korta koden ska placeras i `BIND PDU`. Observera att den här informationen måste placeras inuti `BIND PDU`och inte i `SUBMIT_SM`, sedan `BIND PDU` är den enda plats där du kan dirigera MO korrekt.
 Se [Information i varje typ av PDU](sms-protocol.md#information-pdu) om du vill veta vilket fält som är tillgängligt i `BIND PDU`, vanligtvis lägger du till den korta koden i `address_range`, men det kräver särskild support från leverantören. Kontakta dem för att få veta hur de förväntar sig att skicka flera korta koder oberoende av varandra.
 Adobe Campaign stöder hantering av flera korta koder på samma externa konto.
@@ -66,24 +65,24 @@ Adobe Campaign stöder hantering av flera korta koder på samma externa konto.
   from nmsextaccount N0 LEFT JOIN xtkoperator X0 ON (N0.icreatedbyid=X0.ioperatorid) order by 8 DESC LIMIT 50;
   ```
 
-* Undersök (i /postupgrade directory) om systemet har uppgraderats och när
+* Undersök (i katalogen /postupgrade) om systemet har uppgraderats och när
 * Undersök om några paket som påverkar SMS kan ha uppgraderats nyligen (/var/log/dpkg.log).
 
-## Problem med hosting (hosted){#issue-mid-sourcing}
+## Problem med mid-sourcing (värd){#issue-mid-sourcing}
 
 * Om problemet inträffar i en miljö med medelhög källkod måste du se till att leveransloggarna och de breda loggarna skapas och uppdateras på servern med mellanlagring. Om så inte är fallet är detta inte ett SMS-problem.
 
 * Om allt fungerar på mittservern och SMS-meddelanden skickas korrekt, men marknadsföringsinstansen inte uppdateras korrekt, kan du få ett problem med mellansynkronisering.
 
-## Problem vid anslutning till providern {#issue-provider}
+## Problem vid anslutning till leverantören {#issue-provider}
 
-* Om `BIND PDU` returnerar ett värde som inte är noll `command_status` ber du leverantören om mer information.
+* Om den returnerar en kod som `BIND PDU` inte är noll `command_status` ber du leverantören om mer information.
 
-* Kontrollera att nätverket är korrekt konfigurerat så att TCP-anslutningen kan göras till providern.
+* Kontrollera att nätverket är korrekt konfigurerat så att TCP-anslutningen kan göras till leverantören.
 
-* Be leverantören kontrollera att de har lagt till IP-adresserna till tillåtelselista i Adobe Campaign-instansen.
+* Be leverantören att kontrollera att de har lagt till IP-adresserna korrekt i godkännandelistan för Adobe Campaign-instansen.
 
-* Kontrollera **Externt konto** inställningar. Fråga leverantören vilket värde fälten har.
+* Kontrollera **Inställningar för externt konto** . Fråga leverantören värdet på fälten.
 
 * Om anslutningen lyckas men inte fungerar kontrollerar du [Problem med instabila anslutningar](troubleshooting-sms.md#issues-unstable-connection) -avsnitt.
 
@@ -145,9 +144,9 @@ Dubbletter orsakas ofta av återförsök. Det är normalt att ha dubbletter när
 
 Minska antalet dubbletter när ett nytt försök görs:
 
-* Sänk sändningsfönstret. Sändande fönster ska vara tillräckligt stort för att täcka `SUBMIT_SM_RESP` latens. Dess värde representerar det maximala antalet meddelanden som kan dupliceras om ett fel inträffar när fönstret är fullt.
+* Sänk sändningsfönstret. Sändningsfönstret bör vara tillräckligt stort för att täcka för `SUBMIT_SM_RESP` latens. Dess värde representerar det maximala antalet meddelanden som kan dupliceras om ett fel inträffar medan fönstret är fullt.
 
-## Utfärda vid behandling av SR (leveranskvitton) {#issue-process-SR}
+## Utfärda vid bearbetning av SR (leveranskvitton) {#issue-process-SR}
 
 * SMPP-spår måste vara aktiverade för att du ska kunna utföra någon typ av SR-felsökning.
 
@@ -157,9 +156,9 @@ Minska antalet dubbletter när ett nytt försök görs:
 
 Om `DELIVER_SM PDU` bekräftas inte och du bör kontrollera följande:
 
-* Kontrollera regex för id-extrahering och felbearbetning i **Externt konto**. Du kan behöva validera dem mot innehållet i `DELIVER_SM PDU`.
+* Kontrollera regex för id-extrahering och felbearbetning i **Externt konto**. Du kan behöva validera dem mot innehållet `DELIVER_SM PDU`i .
 
-* Kontrollera att fel har etablerats korrekt i `broadLogMsg` tabell.
+* Kontrollera att fel är korrekt etablerade i tabellen `broadLogMsg` .
 
 Om `DELIVER_SM PDU` har bekräftats av Adobe Campaign Classic utökade SMPP-anslutning, men broadLog uppdateras inte korrekt, kontrollera ID-avstämningsprocessen som beskrivs i avsnittet [Matchande MT-, SR- och broadcast-poster](sms-protocol.md#matching-mt).
 
@@ -167,7 +166,7 @@ Om du har korrigerat allt men vissa ogiltiga SR fortfarande finns i providerns b
 
 ## Problem vid bearbetning av MO (och svartlistning/autosvar){#issue-process-MO}
 
-* Aktivera SMPP-spår under tester. Om du inte aktiverar TLS bör du göra en nätverksinhämtning när du felsöker MO för att kontrollera att PDU:er innehåller rätt information och är korrekt formaterade.
+* Aktivera SMPP-spårningar under tester. Om du inte aktiverar TLS bör du göra en nätverksavbildning när du felsöker MO för att kontrollera att PDU:er innehåller rätt information och är korrekt formaterade.
 
 * När du hämtar nätverkstrafik eller analyserar SMPP-spår, se till att du fångar in hela konversationen med MO och dess MT-svar om ett svar har konfigurerats.
 
@@ -235,9 +234,9 @@ När du behöver hjälp med ett SMS-problem, oavsett om det gäller att öppna e
 
 * Om du refererar till meddelanden, PDU:er eller loggar måste du tydligt ange deras tidsstämpel för att göra dem lättare att hitta.
 
-* Försök återskapa problemet i en testmiljö. Om du är osäker på en inställning kan du testa den i testmiljön och kontrollera resultatet med SMPP-spår. Det är oftast bättre att rapportera problem som replikeras i testmiljöer än att rapportera direkt i produktionsmiljöer.
+* Försök återskapa problemet i en testmiljö. Om du är osäker på en inställning kan du testa den i testmiljön och kontrollera resultatet med SMPP-spår. Det är vanligtvis bättre att rapportera problem som replikeras i testmiljöer än att direkt rapportera problem i produktionsmiljöer.
 
-* Inkludera alla ändringar eller förbättringar som gjorts på plattformen. Ta även med eventuella ändringar som leverantören kan ha gjort på sin sida.
+* Inkludera eventuella ändringar eller justeringar som gjorts på plattformen. Inkludera också eventuella ändringar som leverantören kan ha gjort på deras sida.
 
 ### Nätverksinspelning {#network-capture}
 
@@ -296,7 +295,7 @@ I `config-instance.xml` anger du följande parametrar:
 Om du vill kontrollera antalet öppna anslutningar i en behållare kan du använda det här kommandot:
 
 ```
-(for pid in $(ss -neopts  | sed -n ‘s/^.*:3600[ \t].*users:(([0-9A-Za-z”]*,pid=\([0-9]*\),.*$/\1/p’ | sort ); do  cat /proc/$pid/cmdline; echo  ” $pid” ;done;) | uniq --count
+(for pid in $(ss -neopts  | sed -n 's/^.*:3600[ \t].*users:(([0-9A-Za-z"]*,pid=\([0-9]*\),.*$/\1/p' | sort ); do  cat /proc/$pid/cmdline; echo  " $pid" ;done;) | uniq --count
 ```
 
 Här visas antalet anslutningar som är öppna för en viss port. Här använder vi port 3600.

@@ -2,20 +2,19 @@
 product: campaign
 title: Testa meddelandespårning
 description: Lär dig hur du testar meddelandespårning
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
+badge-v7: label="v7" type="Informative" tooltip="Gäller Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Gäller även Campaign v8"
 feature: Monitoring
+role: User
 exl-id: 16ad36b7-c13e-4b77-86ca-41c9ef174172
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: d2f5f2a662c022e258fb3cc56c8502c4f4cb2849
 workflow-type: tm+mt
-source-wordcount: '256'
+source-wordcount: '268'
 ht-degree: 1%
 
 ---
 
 # Testa meddelandespårning{#testing-tracking}
-
-
 
 Du kan testa spårning på spegelsidor, e-postloggar och länkar. Så här gör du:
 
@@ -28,7 +27,7 @@ Du kan testa spårning på spegelsidor, e-postloggar och länkar. Så här gör 
 1. Starta arbetsflödet, högerklicka på **Schemaläggare** aktivitet och välj **Kör väntande uppgift nu**.
 1. Vänta i cirka 30 sekunder och välj sedan **Granskning** -fliken. Se till att minst en loggpost för spårning hittas.
 
-   Klicka **Uppdatera** om du inte ser några nya loggar.
+   Klicka **Uppdatera** om inga nya loggar visas.
 
 1. Gå till profilsidan för mottagaren som du använde för testet och välj **Spårning** -fliken. Vissa poster ska visas med **Spegelsida** värdet i **Typ** kolumn.
 

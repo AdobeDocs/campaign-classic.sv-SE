@@ -2,28 +2,26 @@
 product: campaign
 title: Kom igång med SMS-kanal
 description: Kom igång med SMS-kanal
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
+badge-v7: label="v7" type="Informative" tooltip="Gäller Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Gäller även Campaign v8"
 feature: SMS
+role: User
 exl-id: 6fc2ab09-8ea7-4865-88ad-bd45eee68958
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: d2f5f2a662c022e258fb3cc56c8502c4f4cb2849
 workflow-type: tm+mt
-source-wordcount: '154'
+source-wordcount: '166'
 ht-degree: 7%
 
 ---
 
 # Kom igång med SMS-kanal{#sms-channel}
 
-
-
-
 Använd Adobe Campaign för att skicka personaliserade SMS-meddelanden.
 
 Innan du börjar skicka SMS:
 
 * Kontrollera att mottagarprofilerna innehåller minst en mobiltelefon i profilen.
-* Läs mer om Adobe Campaign [Bästa praxis](delivery-best-practices.md).
+* Läs mer om Adobe Campaign [Bästa praxis för leverans](delivery-best-practices.md).
 
 De viktigaste stegen för att skicka ett SMS är följande:
 

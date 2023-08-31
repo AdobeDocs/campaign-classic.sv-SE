@@ -1,52 +1,50 @@
 ---
 product: campaign
 title: Konfigurera och skicka leveransen
-description: Lär dig hur du konfigurerar och skickar leveransen
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
+description: Lär dig konfigurera och skicka leveransen
+badge-v7: label="v7" type="Informative" tooltip="Gäller Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Gäller även Campaign v8"
 feature: Channel Configuration
+role: User
 exl-id: 0411686e-4f13-401e-9333-e14b05ebe9cd
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: d2f5f2a662c022e258fb3cc56c8502c4f4cb2849
 workflow-type: tm+mt
-source-wordcount: '1502'
+source-wordcount: '1514'
 ht-degree: 4%
 
 ---
 
 # Konfigurera och skicka leveransen {#configuring-and-sending-the-delivery}
 
-
-
 ## Behörigheter{#delivery-permissions}
 
 Endast leveransägaren kan påbörja en leverans. För att andra operatorer (eller operatörsgrupper) ska kunna påbörja en leverans lägger du till dem som granskare i **[!UICONTROL Delivery start:]** fält. [Läs mer](../../campaign/using/marketing-campaign-approval.md#selecting-reviewers).
 
-## Ytterligare parametrar för leverans {#delivery-additiona-parameters}
+## Ytterligare leveransparametrar {#delivery-additiona-parameters}
 
 Innan du skickar leveransen kan du definiera sändningsparametrarna i leveransegenskaperna via **[!UICONTROL Delivery]** -fliken.
 
 ![](assets/s_ncs_user_wizard_delivery.png)
 
-* **[!UICONTROL Delivery priority]**: Använd det här alternativet om du vill ändra utskicksordningen för dina leveranser genom att ange deras prioritetsnivå: normal, hög eller låg.
+* **[!UICONTROL Delivery priority]**: använd det här alternativet om du vill ändra utskicksordningen för dina leveranser genom att ange deras prioritetsnivå: normal, hög eller låg.
 
-* **[!UICONTROL Message batch quantity]**: Använd det här alternativet för att definiera antalet meddelanden som grupperas i samma XML-leveranspaket. Om parametern är inställd på 0 grupperas meddelandena automatiskt. Paketstorleken definieras av beräkningen `<delivery size>/1024`, med minst 8 och högst 256 meddelanden per paket.
+* **[!UICONTROL Message batch quantity]**: använd det här alternativet för att definiera antalet meddelanden som grupperas i samma XML-leveranspaket. Om parametern är inställd på 0 grupperas meddelandena automatiskt. Paketstorleken definieras av beräkningen `<delivery size>/1024`, med minst 8 och högst 256 meddelanden per paket.
 
-   >[!IMPORTANT]
-   >
-   >När leveransen skapas genom duplicering av en befintlig, återställs den här parametern.
+  >[!IMPORTANT]
+  >
+  >När leveransen skapas genom duplicering av en befintlig, återställs den här parametern.
 
-* **[!UICONTROL Send using multiple waves]**: Använd det här alternativet om du vill skicka meddelanden gruppvis i stället för till hela målgruppen samtidigt. [Läs mer](#sending-using-multiple-waves).
+* **[!UICONTROL Send using multiple waves]**: använd det här alternativet om du vill skicka meddelanden gruppvis i stället för till hela målgruppen samtidigt. [Läs mer](#sending-using-multiple-waves).
 
-* **[!UICONTROL Test SMTP delivery]**: Använd det här alternativet om du vill testa att skicka via SMTP. Leveransen behandlas upp till anslutningen till SMTP-servern men skickas inte: för varje mottagare av leveransen ansluter Campaign till SMTP-providerservern, kör SMTP RCPT TO-kommandot och stänger anslutningen före SMTP DATA-kommandot.
+* **[!UICONTROL Test SMTP delivery]**: använd det här alternativet för att testa att skicka via SMTP. Leveransen behandlas upp till anslutning till SMTP-servern men skickas inte: För varje mottagare av leveransen ansluter Campaign till SMTP-providerservern, kör SMTP RCPT TO-kommandot och stänger anslutningen före SMTP DATA-kommandot.
 
-   >[!NOTE]
-   >
-   >* Det här alternativet får inte ställas in i mitten av källkoden.
-   >
-   >* Läs mer om SMTP-serverkonfigurationen i [det här avsnittet](../../installation/using/configure-delivery-settings.md).
+  >[!NOTE]
+  >
+  >* Det här alternativet får inte ställas in i mitten av källkoden.
+  >
+  >* Läs mer om SMTP-serverkonfigurationen i [det här avsnittet](../../installation/using/configure-delivery-settings.md).
 
-
-* **[!UICONTROL Email BCC]**: Använd det här alternativet om du vill lagra e-post på ett externt system via BCC genom att lägga till en e-postadress för hemlig kopia till meddelandemålet. [Läs mer](sending-messages.md#archiving-emails).
+* **[!UICONTROL Email BCC]**: använd det här alternativet för att lagra e-post på ett externt system via BCC genom att lägga till en e-postadress för hemlig kopia till meddelandemålet. [Läs mer](sending-messages.md#archiving-emails).
 
 ## Bekräfta leverans {#confirming-delivery}
 
@@ -56,7 +54,7 @@ Det gör du genom att klicka **[!UICONTROL Send]**, markerar önskad åtgärd oc
 
 ![](assets/s_ncs_user_email_del_send.png)
 
-När du är klar klickar du på **[!UICONTROL Confirm delivery]** för att starta meddelandeleveransen.
+När du är klar klickar du **[!UICONTROL Confirm delivery]** för att starta meddelandeleveransen.
 
 Du kan sedan stänga leveransguiden och spåra leveransen från **[!UICONTROL Delivery]** -fliken, tillgänglig via detaljer om leveransen eller via listan över leveranser.
 
@@ -66,7 +64,7 @@ När du har skickat meddelanden kan du övervaka och spåra dina leveranser. Mer
 * [Förstå leveransfel](understanding-delivery-failures.md)
 * [Om att spåra meddelanden](about-message-tracking.md)
 
-## Schemalägg sändning {#scheduling-the-delivery-sending}
+## Schemalägg leverans som skickas {#scheduling-the-delivery-sending}
 
 Du kan skjuta upp sändningen genom att schemalägga leveransen.
 
@@ -84,7 +82,7 @@ Du kan skjuta upp sändningen genom att schemalägga leveransen.
 
 ![](assets/s_ncs_user_email_del_start_delayed.png)
 
-I leveranslistan visas leveransen med **[!UICONTROL Pending]** status.
+Leveransen visas med **[!UICONTROL Pending]** status.
 
 ![](assets/s_ncs_user_email_del_waiting.png)
 
@@ -96,11 +94,11 @@ Du kan skjuta upp leveransen till ett senare datum eller spara leveransen i den 
 
 * The **[!UICONTROL Schedule delivery (no automatic execution)]** kan du schemalägga en preliminär analys av leveransen.
 
-   När konfigurationen sparas ändras leveransen till **[!UICONTROL Targeting pending]** status. Analysen startas på det angivna datumet.
+  När konfigurationen sparas ändras leveransen till **[!UICONTROL Targeting pending]** status. Analysen startas på det angivna datumet.
 
 * The **[!UICONTROL Schedule delivery (automatic execution on planned date)]** gör att du kan ange leveransdatum.
 
-   Klicka **[!UICONTROL Send]** och markera **[!UICONTROL Postpone delivery]** starta analysen och bekräfta leveransen. När analysen är klar är leveransmålet klart och meddelanden skickas automatiskt det angivna datumet.
+  Klicka **[!UICONTROL Send]** och markera **[!UICONTROL Postpone delivery]** starta analysen och bekräfta leveransen. När analysen är klar är leveransmålet klart och meddelanden skickas automatiskt det angivna datumet.
 
 Datum och tider anges i tidszonen för den aktuella operatorn. The **[!UICONTROL Time zone]** Med den nedrullningsbara listan under inmatningsfältet för kontaktdatum kan du automatiskt konvertera det angivna datumet och den angivna tiden till den valda tidszonen.
 
@@ -121,21 +119,22 @@ För att balansera lasten kan du dela upp leveranser i flera satser. Konfigurera
 
    ![](assets/s_ncs_user_wizard_waves.png)
 
-1. Om du vill konfigurera påfyllnader kan du antingen:
+1. Så här konfigurerar du påfyllnader:
 
    * Definiera storleken för varje våg. Om du till exempel skriver **[!UICONTROL 30%]** i motsvarande fält representerar varje våg 30 % av de meddelanden som ingår i leveransen, utom den sista, som representerar 10 % av meddelandena.
 
-      I **[!UICONTROL Period]** anger du fördröjningen mellan början av två påfyllnader i följd. Om du till exempel skriver **[!UICONTROL 2d]**, startar den första vågen omedelbart, den andra om två dagar, den tredje vågen om fyra dagar och så vidare.
+     I **[!UICONTROL Period]** anger du fördröjningen mellan början av två påfyllnader i följd. Om du till exempel skriver **[!UICONTROL 2d]**, startar den första vågen omedelbart, den andra om två dagar, den tredje vågen om fyra dagar och så vidare.
 
-      ![](assets/s_ncs_user_wizard_waves_create_size.png)
+     ![](assets/s_ncs_user_wizard_waves_create_size.png)
 
    * Definiera en kalender för att skicka varje påfyllnad.
 
-      I **[!UICONTROL Start]** anger du fördröjningen mellan början av två på varandra följande påfyllnader. I **[!UICONTROL Size]** anger du ett fast tal eller ett procenttal.
+     I **[!UICONTROL Start]** -kolumnen anger du fördröjningen mellan början av två på varandra följande påfyllnader. I **[!UICONTROL Size]** anger du ett fast tal eller ett procenttal.
 
-      I exemplet nedan representerar den första vågen 25 % av det totala antalet meddelanden som ingår i leveransen och börjar omedelbart. Nästa två vågor slutför leveransen och är inställda på att börja med 6 timmars intervall.
+     I exemplet nedan representerar den första vågen 25 % av det totala antalet meddelanden som ingår i leveransen och börjar omedelbart. Nästa två vågor slutför leveransen och är inställda på att börja med 6 timmars intervall.
 
-      ![](assets/s_ncs_user_wizard_waves_create.png)
+     ![](assets/s_ncs_user_wizard_waves_create.png)
+
    En specifik typologiregel, **[!UICONTROL Wave scheduling check]**, säkerställer att den sista vågen planeras före leveransens giltighetsgräns. Kampanjtypologier och deras regler, konfigurerade i **[!UICONTROL Typology]** -fliken för leveransegenskaperna visas i [Valideringsprocess med typologier](steps-validating-the-delivery.md#validation-process-with-typologies).
 
    >[!IMPORTANT]
@@ -152,23 +151,23 @@ De två exemplen nedan är de vanligaste användningsområdena när du använder
 
 * **Under avstämningsprocessen**
 
-   När e-postmeddelanden skickas via en ny plattform, är Internetleverantörer (ISP) misstänkta för IP-adresser som inte känns igen. Om stora mängder e-postmeddelanden plötsligt skickas markerar internetleverantörerna dem ofta som skräppost.
+  När e-postmeddelanden skickas via en ny plattform, är Internetleverantörer (ISP) misstänkta för IP-adresser som inte känns igen. Om stora mängder e-postmeddelanden plötsligt skickas markerar internetleverantörerna dem ofta som skräppost.
 
-   För att undvika att markeras som skräppost kan du stegvis öka volymen som skickas med vågor. Detta bör säkerställa en smidig utveckling av startfasen och göra det möjligt att minska den totala frekvensen av ogiltiga adresser.
+  För att undvika att markeras som skräppost kan du stegvis öka volymen som skickas med vågor. Detta bör säkerställa en smidig utveckling av startfasen och göra det möjligt att minska den totala frekvensen av ogiltiga adresser.
 
-   Om du vill göra det använder du **[!UICONTROL Schedule waves according to a calendar]** alternativ. Du kan till exempel ställa in den första vågen på 10 %, den andra på 15 % och så vidare.
+  Använd **[!UICONTROL Schedule waves according to a calendar]** alternativ. Du kan till exempel ställa in den första vågen på 10 %, den andra på 15 % och så vidare.
 
-   ![](assets/s_ncs_user_wizard_waves_ramp-up.png)
+  ![](assets/s_ncs_user_wizard_waves_ramp-up.png)
 
 * **Kampanjer som involverar ett callcenter**
 
-   När ni hanterar en lojalitetskampanj via telefon har er organisation begränsad kapacitet att behandla antalet samtal till kontaktabonnenter.
+  När ni hanterar en lojalitetskampanj via telefon har er organisation begränsad kapacitet att behandla antalet samtal till kontaktabonnenter.
 
-   Med hjälp av vågor kan du begränsa antalet meddelanden till 20 per dag, vilket är den dagliga bearbetningskapaciteten för ett callcenter.
+  Med hjälp av vågor kan du begränsa antalet meddelanden till 20 per dag, vilket är den dagliga bearbetningskapaciteten för ett callcenter.
 
-   Om du vill göra det väljer du **[!UICONTROL Schedule multiple waves of the same size]** alternativ. Retur **[!UICONTROL 20]** som vågens storlek och **[!UICONTROL 1d]** i **[!UICONTROL Period]** fält.
+  Om du vill göra det väljer du **[!UICONTROL Schedule multiple waves of the same size]** alternativ. Retur **[!UICONTROL 20]** som vågens storlek och **[!UICONTROL 1d]** i **[!UICONTROL Period]** fält.
 
-   ![](assets/s_ncs_user_wizard_waves_call_center.png)
+  ![](assets/s_ncs_user_wizard_waves_call_center.png)
 
 ## Konfigurera återförsök {#configuring-retries}
 
@@ -182,7 +181,7 @@ För anläggningsinstallationer och värdbaserade/hybridinstallationer som anvä
 
 ![](assets/s_ncs_user_wizard_retry_param.png)
 
-Som standard schemaläggs fem återförsök till leveransdagens första dag med ett minsta intervall på en timme som sprids ut över dagens 24 timmar. Ett nytt försök per dag planeras efter detta och fram till leveransdatumet, som definieras i **[!UICONTROL Validity]** -fliken. Se [Definiera giltighetsperioden](#defining-validity-period).
+Som standard schemaläggs fem återförsök till den första dagen i leveransen med ett minsta intervall på en timme som sprids ut över dygnets 24 timmar. Ett nytt försök per dag planeras efter detta och fram till leveransdatumet, som definieras i **[!UICONTROL Validity]** -fliken. Se [Definiera giltighetsperioden](#defining-validity-period).
 
 ## Definiera giltighetsperioden {#defining-validity-period}
 
@@ -192,12 +191,12 @@ När leveransen har startats kan meddelandena (och eventuella försök) skickas 
 
 * The **[!UICONTROL Delivery duration]** kan du ange gränsen för globala leveransförsök. Detta innebär att Adobe Campaign skickar meddelanden som börjar på startdatumet och sedan, för meddelanden som bara returnerar ett fel, kommer regelbundna, konfigurerbara försök att utföras tills giltighetsgränsen nås.
 
-   Du kan också välja att ange datum. Välj **[!UICONTROL Explicitly set validity dates]**. I det här fallet kan du även ange datum för leveransdatum och giltighetsgräns. Den aktuella tiden används som standard, men du kan ändra den direkt i indatafältet.
+  Du kan också välja att ange datum. Gör detta genom att välja **[!UICONTROL Explicitly set validity dates]**. I det här fallet kan du även ange datum för leveransdatum och giltighetsgräns. Den aktuella tiden används som standard, men du kan ändra den direkt i indatafältet.
 
-   >[!IMPORTANT]
-   >
-   >För värdbaserade eller hybridinstallationer, om du har uppgraderat till [Förbättrad MTA](sending-with-enhanced-mta.md), **[!UICONTROL Delivery duration]** inställning i e-postleveranser för Campaign kommer endast att användas om den är inställd på **3,5 dagar eller mindre**. Om du anger ett värde som är högre än 3,5 dagar kommer det inte att tas med i beräkningen.
+  >[!IMPORTANT]
+  >
+  >För värdbaserade eller hybridinstallationer, om du har uppgraderat till [Förbättrad MTA](sending-with-enhanced-mta.md), **[!UICONTROL Delivery duration]** inställning i e-postleveranser för Campaign kommer endast att användas om den är inställd på **3,5 dagar eller mindre**. Om du anger ett värde som är högre än 3,5 dagar kommer det inte att tas med i beräkningen.
 
-* **Giltighetsgräns för resurser**: The **[!UICONTROL Validity limit]** -fältet används för överförda resurser, huvudsakligen för spegelsidan och bilder. Resurserna på den här sidan är giltiga under en begränsad tid (för att spara diskutrymme).
+* **Giltighetsgräns för resurser**: **[!UICONTROL Validity limit]** -fältet används för överförda resurser, huvudsakligen för spegelsidan och bilder. Resurserna på den här sidan är giltiga under en begränsad tid (för att spara diskutrymme).
 
-   Värdena i det här fältet kan uttryckas i de enheter som anges i [det här avsnittet](../../platform/using/adobe-campaign-workspace.md#default-units).
+  Värdena i det här fältet kan uttryckas i de enheter som anges i [det här avsnittet](../../platform/using/adobe-campaign-workspace.md#default-units).

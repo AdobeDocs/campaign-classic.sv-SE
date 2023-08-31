@@ -2,24 +2,22 @@
 product: campaign
 title: Uppdatera studskompetens efter avbrott i Apple 2021
 description: Lär dig hur du uppdaterar studskvalifikation efter ett avbrott i Apple 2021
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
+badge-v7: label="v7" type="Informative" tooltip="Gäller Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Gäller även Campaign v8"
 feature: Deliverability
 exl-id: 34be23f7-17fa-475e-9663-2e353d76b172
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: d2f5f2a662c022e258fb3cc56c8502c4f4cb2849
 workflow-type: tm+mt
-source-wordcount: '425'
+source-wordcount: '437'
 ht-degree: 1%
 
 ---
 
 # Uppdatera felaktiga hårddiskmarkeringar efter Apple avbrott {#update-bounce-qualification.md}
 
-
-
 ## Kontext
 
-Den 26 april 2021 resulterade ett globalt problem på Apple i att vissa e-postmeddelanden som skickades till giltiga Apple-e-postadresser felaktigt studsade som ogiltiga e-postadresser av Apple-servrar med följande studssvar: &quot;550 5.1.1 &#39;e-postadress&#39;: användarsökningen lyckades, men ingen användarpost hittades.&quot;
+Den 26 april 2021 resulterade ett globalt problem på Apple i att vissa e-postmeddelanden som skickades till giltiga Apple-e-postadresser felaktigt studsade som ogiltiga e-postadresser av Apple-servrar med följande studs:&quot;550 5.1.1 &quot;email address&quot;: user lookup success but no user record.&quot;
 
 Problemet inträffade den 26/4 och varade 07:00-17:00 EST.
 
@@ -27,17 +25,17 @@ Problemet inträffade den 26/4 och varade 07:00-17:00 EST.
 >
 >Du kan kontrollera Apple System Status Dashboard på [den här sidan](https://www.apple.com/support/systemstatus/).
 
-Om en Internet-leverantör skulle råka ut kan e-post som skickas via Campaign inte levereras till mottagaren: dessa e-postmeddelanden markeras felaktigt som studsar.
+Om en Internet-leverantör skulle råka ut kan e-postmeddelanden som skickas via Campaign inte levereras till mottagaren: dessa e-postmeddelanden markeras felaktigt som studsar.
 
-Adobe Campaign har automatiskt lagt till de här mottagarna i karantänlistan med en **[!UICONTROL Status]** inställning för **[!UICONTROL Quarantine]**. För att korrigera detta måste du uppdatera din karantäntabell i Campaign genom att hitta och ta bort de här mottagarna eller ändra deras **[!UICONTROL Status]** till **[!UICONTROL Valid]** så att nattrensningsarbetsflödet tar bort dem.
+Enligt standardlogiken för studshantering har Adobe Campaign automatiskt lagt till dessa mottagare i karantänlistan med en **[!UICONTROL Status]** inställning för **[!UICONTROL Quarantine]**. För att korrigera detta måste du uppdatera din karantäntabell i Campaign genom att söka efter och ta bort de här mottagarna eller ändra deras **[!UICONTROL Status]** till **[!UICONTROL Valid]** så att nattrensningsarbetsflödet tar bort dem.
 
 Om du vill hitta de mottagare som påverkades av det här problemet, eller om det händer igen med någon annan Internet-leverantör, kan du läsa instruktionerna nedan.
 
 ## Process som ska uppdateras
 
-Du måste köra en fråga i din karantäntabell för att filtrera bort alla Apple-mottagare - inklusive @icloud.com, @me.com, @mac.com - som eventuellt påverkades av driftsavbrottet så att de kan tas bort från karantänlistan och inkluderas i framtida e-postleveranser för Campaign.
+Du måste köra en fråga i din karantäntabell för att filtrera bort alla Apple-mottagare - som innehåller @icloud.com, @me.com, @mac.com - som eventuellt påverkades av driftsavbrottet så att de kan tas bort från karantänlistan och inkluderas i framtida e-postleveranser för Campaign.
 
-Baserat på tidsramen för incidenten rekommenderas följande riktlinjer för frågan.
+Baserat på tidsramen för incidenten är nedanstående de rekommenderade riktlinjerna för frågan.
 
 >[!IMPORTANT]
 >

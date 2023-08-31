@@ -1,21 +1,20 @@
 ---
 product: campaign
 title: Personaliserade kuponger
-description: Lär dig hur du skapar och infogar personliga kuponger
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
+description: Lär dig skapa och infoga skräddarsydda kuponger
+badge-v7: label="v7" type="Informative" tooltip="Gäller Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Gäller även Campaign v8"
 feature: Personalization
+role: User
 exl-id: 182939bb-7aff-4667-bda9-c5d48be3b946
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: d2f5f2a662c022e258fb3cc56c8502c4f4cb2849
 workflow-type: tm+mt
-source-wordcount: '885'
+source-wordcount: '897'
 ht-degree: 1%
 
 ---
 
 # Personaliserade kuponger{#personalized-coupons}
-
-
 
 Genom att lägga till kuponger i leveranserna kan mottagarna få bättre värde för produkter och tjänster. Du kan använda Campaign-kupongmodulen för att skapa en uppsättning kuponger som du förväntar dig ska läggas till kommande marknadsföringserbjudanden. När du är redo att skapa en leverans tilldelar du tillämpliga kuponger. Eftersom kuponger är giltiga för en viss period är en tilldelad kupong unikt kopplad till leveransmeddelandet. Dessutom bekräftar Campaign att det finns tillräckligt många kuponger för antalet meddelanden innan leveransen skickas.
 
@@ -29,7 +28,7 @@ Genom att lägga till kuponger i leveranserna kan mottagarna få bättre värde 
 
 Med kupongmodulen får du två alternativ när du skapar kuponger:
 
-* **Anonym**: En allmän kupong för valda mottagare eller listor med mottagare.
+* **Anonym**: En allmän kupong för utvalda mottagare eller listor med mottagare.
 * **Enskild**: En anpassad kupong för utvalda mottagare.
 
 Innan du följer stegen nedan bör du kontrollera vilken typ av kupong du vill skapa.
@@ -39,7 +38,7 @@ Innan du följer stegen nedan bör du kontrollera vilken typ av kupong du vill s
    ![](assets/deliv_coup_01.png)
 
 1. Klicka på knappen **[!UICONTROL New]**.
-1. Ange namnet på kupongen i **[!UICONTROL Label]** fält. En unik kod har automatiskt angetts i **[!UICONTROL Coupon code]**. Du kan behålla koden eller ange en ny.
+1. Ange kupongnamnet i **[!UICONTROL Label]** fält. En unik kod har automatiskt angetts i **[!UICONTROL Coupon code]**. Du kan behålla koden eller ange en ny.
 
    ![](assets/deliv_coup_02.png)
 
@@ -68,7 +67,7 @@ Fliken Kuponger är bara tillgänglig med enskilda kuponger. När en kupong har 
 
 * **[!UICONTROL Status]** : Kupongtillgänglighet.
 * **[!UICONTROL Redeemed on]** : Datumet då kupongen löses in.
-* **[!UICONTROL Channel]** : Kanalen som användes för att skicka kupongen.
+* **[!UICONTROL Channel]** : Den kanal som användes för att skicka kupongen.
 * **[!UICONTROL Address]** : Mottagarnas e-postadresser.
 
 Värden för **[!UICONTROL status]**, **[!UICONTROL channel]** och **[!UICONTROL address]** slutförs automatiskt. Värdena för **[!UICONTROL redeemed on]** återställs inte av Campaign. De kan slutföras genom att en fil som innehåller information om kuponginlösen importeras.
@@ -109,13 +108,14 @@ I exemplet nedan skapas leveransen från hemsidan. Detaljerade instruktioner om 
 
    * Anonym kupong: **[!UICONTROL Coupon > Coupon code]**
 
-      ![](assets/deliv_coup_10.png)
+     ![](assets/deliv_coup_10.png)
 
    * Enskild kupong: **[!UICONTROL Coupon value > Coupon code]**
 
-      ![](assets/deliv_coup_11.png)
+     ![](assets/deliv_coup_11.png)
 
-      Kupongen infogas i meddelandet som kod i stället för det namn du tilldelade. Koden används i Campaign-objektets datamodell.
+     Kupongen infogas i meddelandet som kod i stället för det namn du tilldelade. Koden används i Campaign-objektets datamodell.
+
    ![](assets/deliv_coup_12.png)
 
 1. Kör ett test för att bekräfta namnet som du tilldelade kupongen. Gå till **[!UICONTROL Preview]** och klicka **[!UICONTROL Test personalization]**. Välj en mottagare för testet.
@@ -145,13 +145,13 @@ Så här bekräftar du att leveransen lyckades:
 
    ![](assets/deliv_coup_17.png)
 
-   Statusen läses som **[!UICONTROL Finished]** för en framgångsrik leverans.
+   Status läses som **[!UICONTROL Finished]** för en lyckad leverans.
 
 >[!NOTE]
 >
 >Kuponghanteringsmodulen använder som standard en **nms:mottagare** tabell. [Läs mer](../../configuration/using/about-data-model.md#default-recipient-table).
 >
->Lär dig hur du använder en anpassad mottagartabell [på den här sidan](../../configuration/using/about-custom-recipient-table.md).
+>Lär dig använda en anpassad mottagartabell [på den här sidan](../../configuration/using/about-custom-recipient-table.md).
 
 ## Hantera otillräckliga kuponger {#managing-insufficient-coupons}
 

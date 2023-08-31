@@ -2,20 +2,18 @@
 product: campaign
 title: Infoga en streckkod i ett e-postmeddelande
 description: Infoga en streckkod i ett e-postmeddelande
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
+badge-v7: label="v7" type="Informative" tooltip="Gäller Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Gäller även Campaign v8"
 feature: Email Design
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+role: User
+source-git-commit: d2f5f2a662c022e258fb3cc56c8502c4f4cb2849
 workflow-type: tm+mt
-source-wordcount: '513'
+source-wordcount: '525'
 ht-degree: 0%
 
 ---
 
-
 # Infoga en streckkod i ett e-postmeddelande{#insert-a-barcode-in-an-email}
-
-
 
 Med modulen för streckkodsgenerering kan du skapa flera typer av streckkoder som följer många vanliga standarder, inklusive 2D-streckkoder.
 
@@ -29,30 +27,30 @@ Konfigurera sedan följande element efter dina behov:
 
 1. Välj typ av streckkod.
 
-   * För 1D-format finns följande typer i Adobe Campaign: Codabar, Code 128, GS1-128 (tidigare EAN-128), UPC-A, UPC-E, ISBN, EAN-8, Code39, Interleaved 2 of 5, POSTNET and Royal Mail (RM4SCC).
+   * För 1D-format finns följande typer i Adobe Campaign: Codabar, Code 128, GS1-128 (tidigare EAN-128), UPC-A, UPC-E, ISBN, EAN-8, Code39, Interleaved 2 of 5, POSTNET och Royal Mail (RM4SCC).
 
-      Exempel på en 1D-streckkod:
+     Exempel på en 1D-streckkod:
 
-      ![](assets/barcode_insert_08.png)
+     ![](assets/barcode_insert_08.png)
 
    * Typerna DataMatrix och PDF417 gäller 2D-formatet.
 
-      Exempel på en 2D-streckkod:
+     Exempel på en 2D-streckkod:
 
-      ![](assets/barcode_insert_09.png)
+     ![](assets/barcode_insert_09.png)
 
    * Om du vill infoga en QR-kod väljer du den här typen och anger den felkorrigeringsgrad som ska användas. Denna frekvens definierar mängden information som upprepas och toleransen för försämring.
 
-      ![](assets/barcode_insert_06.png)
+     ![](assets/barcode_insert_06.png)
 
-      Exempel på en QR-kod:
+     Exempel på en QR-kod:
 
-      ![](assets/barcode_insert_12.png)
+     ![](assets/barcode_insert_12.png)
 
-1. Ange storleken på streckkoden som du vill infoga i e-postmeddelandet: Om du konfigurerar skalan kan du öka eller minska storleken på streckkoden, från x1 till x10.
+1. Ange storleken på streckkoden som du vill infoga i e-postmeddelandet: om du konfigurerar skalan kan du öka eller minska storleken på streckkoden, från x1 till x10.
 1. The **[!UICONTROL Value]** I kan du definiera värdet för streckkoden. Ett värde kan matcha ett specialerbjudande och kan vara funktionen för ett villkor, det kan vara värdet för ett databasfält som är länkat till kunderna.
 
-   I det här exemplet visas en EAN-8-typstreckkod, till vilken en mottagares kontonummer har lagts till. Om du vill lägga till det här kontonumret klickar du på personaliseringsknappen till höger om **[!UICONTROL Value]** fält och markera **[!UICONTROL Recipient > Account number]**.
+   I det här exemplet visas en EAN-8-typstreckkod, till vilken en mottagares kontonummer har lagts till. Om du vill lägga till det här kontonumret klickar du på knappen för anpassning till höger om **[!UICONTROL Value]** fält och markera **[!UICONTROL Recipient > Account number]**.
 
    ![](assets/barcode_insert_15.png)
 

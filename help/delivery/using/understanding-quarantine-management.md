@@ -2,26 +2,25 @@
 product: campaign
 title: Förstå karantänhantering
 description: Förstå karantänhantering
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
+badge-v7: label="v7" type="Informative" tooltip="Gäller Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Gäller även Campaign v8"
 feature: Monitoring, Deliverability
+role: User
 exl-id: cfd8f5c9-f368-4a31-a1e2-1d77ceae5ced
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: d2f5f2a662c022e258fb3cc56c8502c4f4cb2849
 workflow-type: tm+mt
-source-wordcount: '2997'
+source-wordcount: '3009'
 ht-degree: 9%
 
 ---
 
 # Förstå karantänhantering{#understanding-quarantine-management}
 
-
-
 Adobe Campaign hanterar en lista med adresser i karantän. Mottagare vars adress sätts i karantän exkluderas som standard vid leveransanalys och anges inte som mål. En e-postadress kan sättas i karantän när till exempel postlådan är full eller om adressen inte finns. Under alla omständigheter uppfyller karantänförfarandet de särskilda regler som beskrivs nedan.
 
 >[!NOTE]
 >
->Detta avsnitt gäller för onlinekanaler: e-post, SMS, push-meddelanden.
+>Det här avsnittet gäller för onlinekanaler: e-post, SMS, push-meddelanden.
 
 ## Optimera leveransen genom karantänhantering {#optimizing-your-delivery-through-quarantines}
 
@@ -39,11 +38,11 @@ Karantän och blockeringslista gäller inte för samma objekt:
 
 * **Karantän** gäller endast för **adress** (eller telefonnummer osv.), inte själva profilen. En profil vars e-postadress är placerad i karantän kan till exempel uppdatera sin profil och ange en ny adress. Därefter kan den användas av leveransåtgärder igen. Om två profiler råkar ha samma telefonnummer, påverkas båda om numret sätts i karantän.
 
-   Adresserna eller telefonnumren i karantän visas i [exkluderingsloggar](#identifying-quarantined-addresses-for-a-delivery) (för leverans) eller i [karantänlista](#identifying-quarantined-addresses-for-the-entire-platform) (för hela plattformen).
+  Adresserna eller telefonnumren i karantän visas i [exkluderingsloggar](#identifying-quarantined-addresses-for-a-delivery) (för leverans) eller i [karantänlista](#identifying-quarantined-addresses-for-the-entire-platform) (för hela plattformen).
 
 * Att vara på **blockeringslista**&#x200B;å andra sidan resulterar det i **profil** som inte längre används av leveransen, t.ex. efter en avanmälan (avanmälan), för en viss kanal. Om en profil på blockeringslista för e-postkanalen till exempel har två e-postadresser, kommer båda adresserna inte att levereras.
 
-   Du kan kontrollera om det finns en profil på blockeringslista för en eller flera kanaler i dialogrutan **[!UICONTROL No longer contact]** i profilens **[!UICONTROL General]** -fliken. Se [det här avsnittet](../../platform/using/editing-a-profile.md#general-tab).
+  Du kan kontrollera om det finns en profil på blockeringslista för en eller flera kanaler i dialogrutan **[!UICONTROL No longer contact]** del av profilens **[!UICONTROL General]** -fliken. Se [det här avsnittet](../../platform/using/editing-a-profile.md#general-tab).
 
 >[!NOTE]
 >
@@ -73,9 +72,9 @@ Följande information finns för varje adress:
 >
 >Ökningen av antalet karantän är en normal effekt som har samband med databasens slitage. Om en e-postadress till exempel anses ha en livslängd på tre år och mottagartabellen ökar med 50 % varje år, kan ökningen av antalet karantän beräknas enligt följande:
 >
->Slutet av år 1: (1&#42;0,33)/(1+0.5)=22 %.
+>Efter år 1: (1)&#42;0,33)/(1+0.5)=22 %.
 >
->Slutet av år 2: (1.22)&#42;0,33)+0,33)/(1,5+0,75)=32,5 %.
+>Slutet av år 2: ((1.22)&#42;0,33)+0,33)/(1,5+0,75)=32,5 %.
 
 ### Identifiera adresser i karantän i leveransrapporter {#identifying-quarantined-addresses-in-delivery-reports}
 
@@ -93,7 +92,7 @@ Du kan söka efter den här informationen för alla leveranser av plattformen (*
 
 ### Identifiera adresser i karantän för en mottagare {#identifying-quarantined-addresses-for-a-recipient}
 
-Du kan slå upp status för e-postadressen för alla mottagare. Det gör du genom att markera mottagarprofilen och klicka på knappen **[!UICONTROL Deliveries]** -fliken. För alla leveranser till den mottagaren kan du ta reda på om adressen misslyckades, placerades i karantän under analysen osv. För varje mapp kan du bara visa mottagare vars e-postadress är i karantän. Om du vill göra det använder du **[!UICONTROL Quarantined email address]** programfilter.
+Du kan slå upp status för e-postadressen för alla mottagare. Det gör du genom att markera mottagarprofilen och klicka på knappen **[!UICONTROL Deliveries]** -fliken. För alla leveranser till den mottagaren kan du ta reda på om adressen misslyckades, placerades i karantän under analysen osv. För varje mapp kan du bara visa mottagare vars e-postadress är i karantän. Använd **[!UICONTROL Quarantined email address]** programfilter.
 
 ![](assets/tech_quarant_recipients_filter.png)
 
@@ -173,17 +172,16 @@ Nedan följer de rekommenderade riktlinjerna för den här frågan:
 
    * **Feltext (karantäntext)** innehåller &quot;550-5.1.1&quot; AND **Feltext (karantäntext)** innehåller &quot;support.ISP.com&quot;
 
-   där &quot;support.ISP.com&quot; kan vara: &quot;support.apple.com&quot; eller &quot;support.google.com&quot;, till exempel
+  där &quot;support.ISP.com&quot; kan vara: &quot;support.apple.com&quot; eller &quot;support.google.com&quot;, till exempel
 
    * **Uppdateringsstatus (@lastModified)** på eller efter MM/DD/ÅÅÅÅ HH:MM:SS AM
    * **Uppdateringsstatus (@lastModified)** på eller före MM/DD/ÅÅÅÅ HH:MM:SS PM
-
 
 När du har en lista över mottagare som påverkas lägger du till en **[!UICONTROL Update data]** aktivitet för att ange e-postadressstatus till **[!UICONTROL Valid]** så att de tas bort från karantänlistan av **[!UICONTROL Database cleanup]** arbetsflöde. Du kan även ta bort dem från karantäntabellen.
 
 ## Kantlinjer för push-meddelanden {#push-notification-quarantines}
 
-Karantänmekanismen för push-meddelanden är globalt densamma som den allmänna processen. Vissa fel hanteras dock på olika sätt för push-meddelanden. För vissa mjuka fel utförs till exempel inga försök inom samma leverans. Specifikationerna för push-meddelanden anges nedan. Mekanismen för återförsök (antal återförsök, frekvens) är densamma som för e-postmeddelanden.
+Karantänmekanismen för push-meddelanden är globalt densamma som den allmänna processen. Vissa fel hanteras dock på olika sätt för push-meddelanden. För vissa mjuka fel utförs till exempel inga försök inom samma leverans. Specifikationerna för push-meddelanden anges nedan. Mekanismen för återförsök (antal återförsök, frekvens) är densamma som för e-post.
 
 Objekten som sätts i karantän är enhetstoken.
 
@@ -212,7 +210,7 @@ Synkront, om APN:er returnerar status &quot;unregistered&quot; för ett meddelan
    <td> </td> 
   </tr> 
   <tr> 
-   <td> Målenhet avstängd<br /> </td> 
+   <td> Målenheten är avstängd<br /> </td> 
    <td> OK<br /> </td> 
    <td> </td> 
    <td> </td> 
@@ -270,7 +268,7 @@ Synkront, om APN:er returnerar status &quot;unregistered&quot; för ett meddelan
   <tr> 
    <td> Avvisning av APN-meddelande: alla andra fel<br /> </td> 
    <td> Fel<br /> </td> 
-   <td> Felavvisande orsak kommer att finnas i felmeddelandet<br /> </td> 
+   <td> Felavvisandeorsaken kommer att finnas i felmeddelandet<br /> </td> 
    <td> Mjuk<br /> </td> 
    <td> Avvisad<br /> </td> 
    <td> Nej<br /> </td> 
@@ -285,7 +283,7 @@ Synkront, om APN:er returnerar status &quot;unregistered&quot; för ett meddelan
 För varje meddelande får Adobe Campaign synkrona fel direkt från FCM-servern. Adobe-kampanjen hanterar dem i farten och genererar hårda eller mjuka fel beroende på hur allvarligt felet är, och nya försök kan utföras:
 
 * Nyttolastlängden har överskridits, anslutningsproblem, problem med tjänsttillgänglighet: återförsök utförd, mjukt fel, felorsak **[!UICONTROL Refused]**.
-* Enhetskvoten har överskridits: inget nytt försök, mjukt fel, felorsak: **[!UICONTROL Refused]**.
+* Enhetskvoten har överskridits: inga nya försök, mjukt fel, felorsak **[!UICONTROL Refused]**.
 * Ogiltig eller oregistrerad token, oväntat fel, problem med avsändarkontot: inget nytt försök, hårt fel, felorsaken är **[!UICONTROL Refused]**.
 
 The **[!UICONTROL mobileAppOptOutMgt]** arbetsflödet körs var 6:e timme för att uppdatera **AppSubscriptionRcp** tabell. Fältet för tokens som har deklarerats som oregistrerade eller inte längre giltiga **Handikappade** är inställd på **True** och prenumerationen som är länkad till denna enhetstoken exkluderas automatiskt från framtida leveranser.
@@ -297,8 +295,8 @@ Under leveransanalysen läggs alla enheter som är undantagna från målet autom
 >Här är olika typer av fel för kunder som använder Baidu-kontakten:
 >
 >* Anslutningsproblem i början av leveransen: feltyp **[!UICONTROL Undefined]**, felorsak **[!UICONTROL Unreachable]**, återförsök utförs.
->* Förlorad anslutning under leverans: mjukt fel, felorsak **[!UICONTROL Refused]**, återförsök utförs.
->* Synkront fel returnerades av Baidu under sändning: allvarligt fel, felorsak **[!UICONTROL Refused]**, inga nya försök utförs.
+>* Anslutningen bröts under leveransen: mjukt fel, felorsak **[!UICONTROL Refused]**, återförsök utförs.
+>* Synkront fel returnerades av Baidu under sändning: hårt fel, felorsak **[!UICONTROL Refused]**, inga nya försök utförs.
 >
 >Adobe Campaign kontaktar Baidu-servern var 10:e minut för att hämta det skickade meddelandets status och uppdaterar sändningarna. Om ett meddelande deklareras som skickat anges meddelandets status i utsändningsloggarna till **[!UICONTROL Received]**. Om Baidu deklarerar ett fel ställs statusen in på **[!UICONTROL Failed]**.
 
@@ -317,7 +315,7 @@ Android V2-karantänmekanismen använder samma process som Android V1, samma gä
    <td> <strong>Försök igen</strong><br /> </td> 
   </tr> 
   <tr> 
-   <td> Fas för skapande/analys av meddelanden: ogiltiga nyckelord som används i anpassade fält<br /> </td> 
+   <td> Fas för skapande/analys av meddelanden: ogiltiga nyckelord används i anpassade fält<br /> </td> 
    <td> Fel<br /> </td> 
    <td> Följande nyckelord kan inte användas: {1}<br /> </td> 
    <td> Mjuk<br /> </td> 
@@ -325,9 +323,9 @@ Android V2-karantänmekanismen använder samma process som Android V1, samma gä
    <td> Nej<br /> </td> 
   </tr> 
   <tr> 
-   <td> Fas för skapande/analys av meddelanden: nyttolasten är för stor<br /> </td> 
+   <td> Fas för att skapa/analysera meddelanden: nyttolasten är för stor<br /> </td> 
    <td> Fel<br /> </td> 
-   <td> Meddelandet är för stort: {1} bitar, medan endast {2} är behöriga<br /> </td> 
+   <td> Meddelandet är för stort: {1} bitar, endast {2} är tillåtna<br /> </td> 
    <td> Mjuk<br /> </td> 
    <td> Avvisad<br /> </td> 
    <td> Nej<br /> </td> 
@@ -341,7 +339,7 @@ Android V2-karantänmekanismen använder samma process som Android V1, samma gä
    <td> Ja<br /> </td> 
   </tr> 
   <tr> 
-   <td> Avvisning av FCM-meddelande: FCM-servern är inte tillgänglig för tillfället (till exempel med timeout). <br /> </td> 
+   <td> FCM-meddelandeavvisande: FCM-servern är inte tillgänglig för tillfället (till exempel med timeout). <br /> </td> 
    <td> Fel<br /> </td> 
    <td> Tjänsten Firebase Cloud Messaging är inte tillgänglig för tillfället<br /> </td> 
    <td> Mjuk<br /> </td> 
@@ -349,7 +347,7 @@ Android V2-karantänmekanismen använder samma process som Android V1, samma gä
    <td> Ja<br /> </td> 
   </tr> 
   <tr> 
-   <td> Avvisning av FCM-meddelande: Fel vid autentisering av avsändarkontot<br /> </td> 
+   <td> FCM-meddelandeavvisande: Fel vid autentisering av avsändarkontot<br /> </td> 
    <td> Fel<br /> </td> 
    <td> Det gick inte att identifiera utvecklarkontot. Kontrollera ditt ID och lösenord<br /> </td> 
    <td> Mjuk<br /> </td> 
@@ -357,7 +355,7 @@ Android V2-karantänmekanismen använder samma process som Android V1, samma gä
    <td> Nej<br /> </td> 
   </tr> 
   <tr> 
-   <td> Avvisning av FCM-meddelande: Enhetskvoten har överskridits<br /> </td> 
+   <td> FCM-meddelandeavvisande: Enhetskvoten har överskridits<br /> </td> 
    <td> Fel<br /> </td> 
    <td> </td> 
    <td> Mjuk<br /> </td> 
@@ -365,7 +363,7 @@ Android V2-karantänmekanismen använder samma process som Android V1, samma gä
    <td> Ja<br /> </td> 
   </tr> 
   <tr> 
-   <td> Avvisning av FCM-meddelande: Ogiltig registrering/är inte registrerad<br /> </td> 
+   <td> FCM-meddelandeavvisande: Ogiltig registrering/inte registrerad<br /> </td> 
    <td> Fel<br /> </td> 
    <td> </td> 
    <td> Hård<br /> </td> 
@@ -373,15 +371,15 @@ Android V2-karantänmekanismen använder samma process som Android V1, samma gä
    <td> Nej<br /> </td> 
   </tr> 
   <tr> 
-   <td> Avvisning av FCM-meddelande: Alla andra fel<br /> </td> 
+   <td> FCM-meddelandeavvisande: Alla andra fel<br /> </td> 
    <td> Fel<br /> </td> 
-   <td> Felkoden har returnerats från Firebase Cloud Messaging-servern: {1} </td> 
+   <td> Firebase Cloud Messaging-servern returnerade en oväntad felkod: {1} </td> 
    <td> </td> 
    <td> Avvisad<br /> </td> 
    <td> Nej<br /> </td> 
   </tr> 
     <tr> 
-   <td> Avvisning av FCM-meddelande: Ogiltigt argument<br /> </td> 
+   <td> FCM-meddelandeavvisande: Ogiltigt argument<br /> </td> 
    <td> Fel<br /> </td> 
    <td> INVALID_ARGUMENT </td> 
    <td> Ignorerad</td> 
@@ -389,7 +387,7 @@ Android V2-karantänmekanismen använder samma process som Android V1, samma gä
    <td> Nej<br /> </td> 
   </tr>
     <tr> 
-   <td> Avvisning av FCM-meddelande: Autentiseringsfel från tredje part<br /> </td> 
+   <td> FCM-meddelandeavvisande: autentiseringsfel från tredje part<br /> </td> 
    <td> Fel<br /> </td> 
    <td> THIRD_PARTY_AUTH_ERROR </td> 
    <td> Ignorerad</td>
@@ -397,7 +395,7 @@ Android V2-karantänmekanismen använder samma process som Android V1, samma gä
    <td> Ja<br /> </td> 
   </tr>
     <tr> 
-   <td> Avvisning av FCM-meddelande: Avsändarens ID matchar inte<br /> </td> 
+   <td> FCM-meddelandeavvisande: Avsändarens ID matchar inte<br /> </td> 
    <td> Fel<br /> </td> 
    <td> SENDER_ID_MISMATCH </td> 
    <td> Mjuk</td>
@@ -413,7 +411,7 @@ Android V2-karantänmekanismen använder samma process som Android V1, samma gä
    <td> Nej<br /> </td> 
   </tr>
     <tr> 
-   <td> Avvisning av FCM-meddelande: Intern<br /> </td> 
+   <td> Avvisning av FCM-meddelande: Internt<br /> </td> 
    <td> Fel<br /> </td> 
    <td> INTERN </td> 
    <td> Ignorerad</td> 
@@ -421,7 +419,7 @@ Android V2-karantänmekanismen använder samma process som Android V1, samma gä
    <td> Ja<br /> </td> 
   </tr>
     <tr> 
-   <td> Avvisning av FCM-meddelande: Otillgänglig<br /> </td> 
+   <td> FCM-meddelandeavvisande: Otillgängligt<br /> </td> 
    <td> Fel<br /> </td> 
    <td> OTILLGÄNGLIG</td> 
    <td> Ignorerad</td> 
@@ -429,7 +427,7 @@ Android V2-karantänmekanismen använder samma process som Android V1, samma gä
    <td> Ja<br /> </td> 
   </tr>
     <tr> 
-   <td> Avvisning av FCM-meddelande: oväntad felkod<br /> </td> 
+   <td> FCM-meddelandeavvisande: oväntad felkod<br /> </td> 
    <td> Fel<br /> </td> 
    <td> oväntad felkod</td> 
    <td> Ignorerad</td> 
@@ -453,7 +451,7 @@ Android V2-karantänmekanismen använder samma process som Android V1, samma gä
    <td> Nej<br /> </td> 
   </tr>
     <tr> 
-   <td> Autentisering: Klienten är inte behörig att hämta åtkomsttoken med den här metoden, eller så är klienten inte auktoriserad för något av de begärda scopen.<br /> </td> 
+   <td> Autentisering: Klienten saknar behörighet att hämta åtkomsttoken med den här metoden, eller klienten har inte behörighet för de begärda scopen.<br /> </td> 
    <td> Fel<br /> </td> 
    <td> unauthorized_client </td> 
    <td> Ignorerad</td>
@@ -570,7 +568,7 @@ Karantänmekanismen för SMS-meddelanden är globalt densamma som den allmänna 
 
 **För den utökade generiska SMPP-anslutningen**
 
-När SMPP-protokollet används för att skicka SMS-meddelanden hanteras felhanteringen på ett annat sätt. Mer information om den utökade allmänna SMPP-anslutningen finns i [den här sidan](sms-set-up.md#creating-an-smpp-external-account).
+När SMPP-protokollet används för att skicka SMS-meddelanden hanteras felhanteringen på ett annat sätt. Mer information om den utökade generiska SMPP-anslutningen finns i [den här sidan](sms-set-up.md#creating-an-smpp-external-account).
 
 SMPP-kopplingen hämtar data från SR-meddelandet (statusrapport) som returneras med reguljära uttryck (regex) för att filtrera innehållet. Dessa data matchas sedan mot informationen i **[!UICONTROL Delivery log qualification]** tabell (tillgänglig via **[!UICONTROL Administration]** > **[!UICONTROL Campaign Management]** > **[!UICONTROL Non deliverables Management]** meny).
 
@@ -591,22 +589,22 @@ SR Generic DELIVRD 000|#MESSAGE#
 * Alla felmeddelanden börjar med **SR** för att skilja mellan SMS-felkoder och e-postfelkoder.
 * Andra delen (**Allmän** i det här exemplet) refererar felmeddelandet till namnet på SMSC-implementeringen som definieras i **[!UICONTROL SMSC implementation name]** fält för SMS-externt konto. Läs [den här sidan](sms-set-up.md#creating-an-smpp-external-account).
 
-   Eftersom samma felkod kan ha olika innebörd för varje provider kan du med det här fältet veta vilken provider som genererade felkoden. Du kan sedan hitta felet i den aktuella providerns dokumentation.
+  Eftersom samma felkod kan ha olika innebörd för varje provider kan du med det här fältet veta vilken provider som genererade felkoden. Du kan sedan hitta felet i den aktuella providerns dokumentation.
 
 * Den tredje delen (**LEVERERA** i det här exemplet) motsvarar felmeddelandet statuskoden som hämtats från SR med statusextraheringsregex som definierats i det externa SMS-kontot.
 
-   Denna region anges i **[!UICONTROL SMSC specificities]** fliken för det externa kontot. Läs [den här sidan](sms-set-up.md#creating-an-smpp-external-account).
+  Denna region anges i **[!UICONTROL SMSC specificities]** fliken för det externa kontot. Läs [den här sidan](sms-set-up.md#creating-an-smpp-external-account).
 
-   ![](assets/tech_quarant_error_regex.png)
+  ![](assets/tech_quarant_error_regex.png)
 
-   Regexen extraherar som standard **stat:** fält enligt definitionen i **Tillägg B** i **Specifikation för SMPP 3.4**.
+  Regexen extraherar som standard **stat:** fält enligt definitionen i **Tillägg B** i **Specifikation för SMPP 3.4**.
 
 * Fjärde delen (**000** i det här exemplet) motsvarar felmeddelandet den felkod som extraheras från SR med den felkodsextraheringsregex som definieras i det externa SMS-kontot.
 
-   Denna region anges i **[!UICONTROL SMSC specificities]** fliken för det externa kontot. Läs [den här sidan](sms-set-up.md#creating-an-smpp-external-account).
+  Denna region anges i **[!UICONTROL SMSC specificities]** fliken för det externa kontot. Läs [den här sidan](sms-set-up.md#creating-an-smpp-external-account).
 
-   Regexen extraherar som standard **err:** fält enligt definitionen i **Tillägg B** i **Specifikation för SMPP 3.4**.
+  Regexen extraherar som standard **err:** fält enligt definitionen i **Tillägg B** i **Specifikation för SMPP 3.4**.
 
 * Allt som kommer efter rörlighetssymbolen (|) visas bara i **[!UICONTROL First text]** kolumn i **[!UICONTROL Delivery log qualification]** tabell. Det här innehållet ersätts alltid av **#MESSAGE#** när meddelandet har normaliserats. Med den här processen undviker du att ha flera poster för liknande fel och den är samma som för e-postmeddelanden. Mer information finns i [E-poststudsar](understanding-delivery-failures.md#bounce-mail-qualification).
 
-Den utökade generiska SMPP-anslutningen använder en heuristisk metod för att hitta rimliga standardvärden: om statusen börjar med **DELIV** anses det vara en framgång eftersom det matchar de vanliga statusvärdena **LEVERERA** eller **LEVERERAD** används av de flesta leverantörer. All annan status leder till ett allvarligt fel.
+Den utökade generiska SMPP-anslutningen använder en heuristisk kod för att hitta rimliga standardvärden: om statusen börjar med **DELIV** anses det vara en framgång eftersom det matchar de vanliga statusvärdena **LEVERERA** eller **LEVERERAD** används av de flesta leverantörer. All annan status leder till ett allvarligt fel.

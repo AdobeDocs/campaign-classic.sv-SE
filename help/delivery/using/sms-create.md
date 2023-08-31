@@ -1,21 +1,20 @@
 ---
 product: campaign
 title: Skapa SMS med Campaign
-description: Lär dig hur du skapar SMS med Campaign
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
+description: Lär dig skapa SMS med Campaign
+badge-v7: label="v7" type="Informative" tooltip="Gäller Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Gäller även Campaign v8"
 feature: SMS
+role: User
 exl-id: 94aa4628-d973-433d-b963-b078e2d6672b
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: d2f5f2a662c022e258fb3cc56c8502c4f4cb2849
 workflow-type: tm+mt
-source-wordcount: '432'
-ht-degree: 3%
+source-wordcount: '444'
+ht-degree: 4%
 
 ---
 
 # Skapa en SMS-leverans {#creating-a-sms-delivery}
-
-
 
 ## Välj leveranskanal {#selecting-the-delivery-channel}
 

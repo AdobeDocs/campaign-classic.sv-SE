@@ -2,30 +2,29 @@
 product: campaign
 title: Förbearbetningsinstruktioner för spårade URL:er
 description: Läs mer om förbearbetningsinstruktioner som du kan använda för att skripta URL:en för ett e-postmeddelande och fortfarande spåra den
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
+badge-v7: label="v7" type="Informative" tooltip="Gäller Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Gäller även Campaign v8"
 feature: Monitoring
+role: User, Data Engineer, Developer
 exl-id: 9d3f5c74-377a-4e24-81e5-bb605f69cf8a
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: d2f5f2a662c022e258fb3cc56c8502c4f4cb2849
 workflow-type: tm+mt
-source-wordcount: '642'
+source-wordcount: '654'
 ht-degree: 1%
 
 ---
 
 # Instruktioner för förbehandling {#pre-processing-instructions}
 
-
-
-Du kan använda en specifik syntax i leveransinnehållet för att lägga till instruktioner och skripta URL:en för det spårade e-postmeddelandet. &lt;%@-instruktionerna är inte JavaScript: syntaxen är specifik för Adobe Campaign.
+Du kan använda en specifik syntax i leveransinnehållet för att lägga till instruktioner och skripta URL:en för det spårade e-postmeddelandet. &lt;%@-instruktionerna är inte JavaScript: den här syntaxen är specifik för Adobe Campaign.
 
 De gäller endast för leveransinnehåll. Det är det enda sättet att skripta URL:en för ett e-postmeddelande och fortfarande spåra den (förutom URL-parametrar). De kan ses som en automatisk kopiera/klistra in som tillämpas under leveransanalysen innan länkarna som ska spåras identifieras.
 
 Det finns tre typer av instruktioner:
 
-* **[!DNL include]**: främst för att faktorisera viss kod i alternativ, anpassningsblock, externa filer eller sidor. [Läs mer](#include)
-* **[!DNL value]**: för att ge åtkomst till fält för leverans, leveransvariabler och anpassade objekt som lästs in i leveransen. [Läs mer](#value)
-* **[!DNL foreach]**: för att slinga en array som lästs in som ett anpassat objekt. [Läs mer](#foreach)
+* **[!DNL include]**: huvudsakligen för att faktorisera viss kod i alternativ, anpassningsblock, externa filer eller sidor. [Läs mer](#include)
+* **[!DNL value]**: för att ge åtkomst till fält för leveransen, leveransvariabler och anpassade objekt som lästs in i leveransen. [Läs mer](#value)
+* **[!DNL foreach]**: för att loopa en array som har lästs in som ett anpassat objekt. [Läs mer](#foreach)
 
 De kan testas direkt från leveransguiden. De används i innehållsförhandsgranskningen och när du klickar på spårningsknappen för att visa en lista över URL-adresser.
 
@@ -35,31 +34,31 @@ Följande exempel är bland de vanligaste:
 
 * Inklusive spegelsidans länk:
 
-   ```
-   <%@ include view="MirrorPage" %>  
-   ```
+  ```
+  <%@ include view="MirrorPage" %>  
+  ```
 
 * URL för speglingssida:
 
-   ```
-   View as a <a href="<%@ include view='MirrorPageUrl' %>" _label="Mirror Page" _type="mirrorPage">web page.
-   ```
+  ```
+  View as a <a href="<%@ include view='MirrorPageUrl' %>" _label="Mirror Page" _type="mirrorPage">web page.
+  ```
 
 * Oanvändbar url för avprenumeration:
 
-   ```
-   <%@ include option='NmsServer_URL' %>/webApp/unsub?id=<%= escapeUrl(recipient.cryptedId)%>
-   ```
+  ```
+  <%@ include option='NmsServer_URL' %>/webApp/unsub?id=<%= escapeUrl(recipient.cryptedId)%>
+  ```
 
 * Andra exempel:
 
-   ```
-   <%@ include file='http://www.google.com' %>
-   <%@ include file='file:///X:/france/service/test.html' %>
-   <%@ include option='NmsServer_URL' %>
-   ```
+  ```
+  <%@ include file='http://www.google.com' %>
+  <%@ include file='file:///X:/france/service/test.html' %>
+  <%@ include option='NmsServer_URL' %>
+  ```
 
-   Använd personaliseringsknappen i leveransguiden för att få rätt syntax.
+  Använd personaliseringsknappen i leveransguiden för att få rätt syntax.
 
 ## [!DNL value] {#value}
 
@@ -75,12 +74,12 @@ Var:
 
 * **[!DNL object]**: objektets namn (exempel: leverans, provider och så vidare).
 Objektet kan vara:
-   * **[!DNL delivery]**: för aktuell leverans (se närmare uppgifter och begränsningar i underavsnittet nedan).
+   * **[!DNL delivery]**: för aktuell leverans (se detaljer och begränsningar i underavsnittet nedan).
    * **[!DNL provider]**: för aktuell leveransleverantör/routning (nms:externalAccount).
-   * Ett extra skriptobjekt: om ett objekt läses in i kontexten via: **Egenskaper** > **Personalisering** > **Lägga till objekt i körningskontexten**.
+   * Ett extra skriptobjekt: Om ett objekt läses in i kontexten via: **Egenskaper** > **Personalisering** > **Lägga till objekt i körningskontexten**.
    * Objekt i foreach-slingan: se [Foreach](#foreach) nedan.
-* **[!DNL xpath]**: fältets xpath.
-* **[!DNL index]** (valfritt): if **[!DNL object]** är en array (för extra skriptobjekt), objektindex i arrayen (börjar vid 0).
+* **[!DNL xpath]**: xpath of the field.
+* **[!DNL index]** (valfritt): om **[!DNL object]** är en array (för extra skriptobjekt), objektindex i arrayen (börjar vid 0).
 
 ### [!DNL delivery] object {#delivery-object}
 
@@ -88,17 +87,17 @@ För e-postpersonalisering är leveransobjektet tillgängligt på två sätt:
 
 * Använda JavaScript:
 
-   ```
-   <%= delivery.myField %>`.
-   ```
+  ```
+  <%= delivery.myField %>`.
+  ```
 
-   I JavaScript-objektet stöds inte anpassade fält för leverans. De fungerar i förhandsgranskningen, men inte i MTA eftersom MTA bara kan komma åt leveransschemat som är klart att användas.
+  I JavaScript-objektet stöds inte anpassade fält för leverans. De fungerar i förhandsgranskningen, men inte i MTA eftersom MTA bara kan komma åt leveransschemat som är klart att användas.
 
 * Med förbehandling:
 
-   ```
-   <%@ value object="delivery"
-   ```
+  ```
+  <%@ value object="delivery"
+  ```
 
 
 **Varning**
@@ -144,15 +143,15 @@ Syntax:
 Var:
 
 * **[!DNL object]**: namnet på objektet som ska börja från, vanligtvis ett extra skriptobjekt, men det kan vara en leverans.
-* **[!DNL xpath]** (valfritt): xpath för den samling som ska slingas. Standardvärdet är &quot;.&quot;, vilket innebär att objektet är den array som ska upprepas.
+* **[!DNL xpath]** (valfritt): XPath för samlingen som ska slingas. Standardvärdet är &quot;.&quot;, vilket innebär att objektet är den array som ska upprepas.
 * **[!DNL index]** (valfritt): om xpath inte är &quot;.&quot; och objektet är en array, objektindex för objektet (börjar vid 0).
-* **[!DNL item]** (valfritt): namnet på ett nytt objekt som är tillgängligt med värdet &lt;%@ inuti förgreningsslingan. Standard med länknamnet i schemat.
+* **[!DNL item]** (valfritt): namn på ett nytt objekt som är tillgängligt med värdet &lt;%@ inuti förgreningsslingan. Standard med länknamnet i schemat.
 
 Exempel:
 
 Läs in en array med artiklar och en relationstabell mellan mottagare och artiklar i leveransegenskaperna/personaliseringen.
 
-Du kan visa länkar till dessa artiklar med ett JavaScript-skript på följande sätt:
+Du kan visa länkar till de här artiklarna med hjälp av ett JavaScript-skript på följande sätt:
 
 ```
 <%

@@ -2,20 +2,19 @@
 product: campaign
 title: Viktiga steg för att skicka e-post
 description: Lär dig hur du bekräftar leveransen av ett e-postmeddelande och hur du kan leverera e-postmeddelanden
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
+badge-v7: label="v7" type="Informative" tooltip="Gäller Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Gäller även Campaign v8"
 feature: Email
+role: User
 exl-id: c75a5ea2-8d62-4f98-bccd-7116a4d404fd
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: d2f5f2a662c022e258fb3cc56c8502c4f4cb2849
 workflow-type: tm+mt
-source-wordcount: '214'
-ht-degree: 0%
+source-wordcount: '226'
+ht-degree: 1%
 
 ---
 
 # Viktiga steg för att skicka e-post {#key-steps-to-send-an-email}
-
-
 
 När e-postmeddelandet har skapats och konfigurerats kan du skicka det till huvudmålet. I det här avsnittet beskrivs de viktigaste stegen för att kontrollera och bekräfta leveransen av ett e-postmeddelande.
 
@@ -24,7 +23,7 @@ När e-postmeddelandet har skapats och konfigurerats kan du skicka det till huvu
 
 1. När du är klar måste du validera e-postmeddelandet genom att starta analysen. Det gör du genom att klicka **[!UICONTROL Send]**, välj en åtgärd och klicka på **[!UICONTROL Analyze]**. Mer information finns i [Starta analysen](steps-validating-the-delivery.md#analyzing-the-delivery).
 
-1. När analysen är klar klickar du på **[!UICONTROL Confirm delivery]** för att skicka meddelanden till målmottagarna. Mer information finns i [Bekräfta leverans](steps-sending-the-delivery.md#confirming-delivery).
+1. När analysen är klar klickar du **[!UICONTROL Confirm delivery]** för att skicka meddelanden till målmottagarna. Mer information finns i [Bekräfta leverans](steps-sending-the-delivery.md#confirming-delivery).
 
    <!--Add screenshot with analysis done and Confirm delivery button activated.-->
 

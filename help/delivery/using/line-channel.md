@@ -2,13 +2,14 @@
 product: campaign
 title: Skapa radleveranser
 description: Lär dig hur du skapar LINE-meddelanden
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
+badge-v7: label="v7" type="Informative" tooltip="Gäller Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Gäller även Campaign v8"
 feature: Line App
+role: User
 exl-id: 1baaabbd-9fd7-4d9b-b78e-d2a559d7dddb
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: d2f5f2a662c022e258fb3cc56c8502c4f4cb2849
 workflow-type: tm+mt
-source-wordcount: '1153'
+source-wordcount: '1165'
 ht-degree: 2%
 
 ---
@@ -23,7 +24,7 @@ ht-degree: 2%
 
 ![](assets/line_message.png)
 
-Stegen för att använda [!DNL LINE] kanalen är:
+Stegen för att använda [!DNL LINE] kanalen:
 
 1. [Konfigurera LINE-kanal](#setting-up-line-channel)
 1. [Skapa en leverans](#creating-the-delivery)
@@ -32,7 +33,7 @@ Stegen för att använda [!DNL LINE] kanalen är:
 
 ## Konfigurera LINE-kanal {#setting-up-line-channel}
 
-Innan du skapar en [!DNL LINE] konto och externt konto måste du först installera LINE-paketet på din instans. Mer information finns i [det här avsnittet](../../installation/using/installing-campaign-standard-packages.md#line-package).
+Innan du skapar [!DNL LINE] konto och externt konto måste du först installera LINE-paketet på din instans. Mer information finns i [det här avsnittet](../../installation/using/installing-campaign-standard-packages.md#line-package).
 
 Du måste först skapa en [!DNL LINE] så att du kan länka det till Adobe Campaign. Sedan kan du skicka [!DNL LINE] meddelanden till de användare som har lagt till [!DNL LINE] i mobilapplikationen. Externa konton och [!DNL LINE] kontot kan bara hanteras av plattformens funktionsadministratör.
 
@@ -68,7 +69,7 @@ När du har skapat [!DNL LINE] måste du konfigurera [!DNL LINE] externt konto p
 
    ![](assets/line_config.png)
 
-1. Klicka på **[!UICONTROL LINE]** för att börja konfigurera ditt externa konto. Fyll i följande fält:
+1. Klicka på **[!UICONTROL LINE]** från ditt externa konto för att börja konfigurera ditt externa konto. Fyll i följande fält:
 
    ![](assets/line_config_2.png)
 
@@ -76,7 +77,7 @@ När du har skapat [!DNL LINE] måste du konfigurera [!DNL LINE] externt konto p
    * **[!UICONTROL Channel ID]**: tillhandahålls via [!DNL LINE] kontot i **[!UICONTROL Channels]** > **[!UICONTROL Basic Information panel]** -fliken.
    * **[!UICONTROL Channel secret key]**: tillhandahålls via [!DNL LINE] kontot i **[!UICONTROL Channels]** > **[!UICONTROL Basic Information panel]** -fliken.
    * **[!UICONTROL Access token]**: tillhandahålls via [!DNL LINE] på utvecklarportalen eller genom att klicka på **[!UICONTROL Get access token]** -knappen.
-   * **[!UICONTROL Access token expiration date]**: gör att du kan ange förfallodatum för åtkomsttoken.
+   * **[!UICONTROL Access token expiration date]**: låter dig ange förfallodatum för åtkomsttoken.
    * **[!UICONTROL LINE subscription service]**: gör att du kan ange vilka tjänster som användarna ska prenumerera på.
 
 1. När konfigurationen är klar klickar du på **[!UICONTROL Save]**.
@@ -117,11 +118,11 @@ Skapa en [!DNL LINE] leverans du måste följa dessa steg:
 
 1. Välj om du vill ange mål [!DNL LINE] prenumeranter direkt eller om du vill rikta in användare beroende på deras [!DNL LINE] prenumerera och klicka på **[!UICONTROL Next]**. I det här exemplet har vi valt **[!UICONTROL By LINE V2 subscription]**.
 
-1. Välj **[!UICONTROL Line-V2]** i **[!UICONTROL Folder]** rullgardinsmeny och sedan [!DNL LINE] service. Klicka **[!UICONTROL Finish]** sedan **[!UICONTROL Ok]** för att personalisera leveransen.
+1. Välj **[!UICONTROL Line-V2]** i **[!UICONTROL Folder]** rullgardinsmeny och [!DNL LINE] service. Klicka **[!UICONTROL Finish]** sedan **[!UICONTROL Ok]** för att personalisera leveransen.
 
    ![](assets/line_message_10.png)
 
-1. I leveransredigeraren klickar du på **[!UICONTROL Add]** för att lägga till ett eller flera meddelanden och markera **[!UICONTROL Content type]**.
+1. I leveransprogrammet klickar du på **[!UICONTROL Add]** för att lägga till ett eller flera meddelanden och markera **[!UICONTROL Content type]**.
 
    Mer information om de olika **[!UICONTROL Content type]** tillgänglig, se [Definiera innehållstypen](#defining-the-content).
 
@@ -161,23 +162,23 @@ Konfigurationen för den här typen av meddelande liknar konfigurationen för **
 
 An **[!UICONTROL Image and link]** [!DNL LINE] leverans är ett meddelande som skickas till mottagarna i form av en bild som kan innehålla en eller flera URL:er.
 
-Du kan använda:
+Du kan använda
 
 * a **[!UICONTROL Personalized image]**,
 
-   >[!NOTE]
-   >
-   >Du kan använda **%SIZE%** variabel för att optimera bildvisningen enligt skärmstorleken för mottagarens mobila enhet.
+  >[!NOTE]
+  >
+  >Du kan använda **%SIZE%** variabel för att optimera bildvisningen enligt skärmstorleken för mottagarens mobila enhet.
 
-   ![](assets/line_message_04.png)
+  ![](assets/line_message_04.png)
 
 * en **[!UICONTROL Image URL]** skärmstorlek per enhet,
 
-   ![](assets/line_message_03.png)
+  ![](assets/line_message_03.png)
 
-   The **[!UICONTROL Define images per device screen size]** kan du använda olika bildupplösningar för att optimera synligheten för leverans på mobila enheter. Endast bilder med samma höjd och bredd stöds.
+  The **[!UICONTROL Define images per device screen size]** kan du använda olika bildupplösningar för att optimera synligheten för leverans på mobila enheter. Endast bilder med samma höjd och bredd stöds.
 
-   Bilder kan definieras enligt skärmstorleken:
+  Bilder kan definieras enligt skärmstorleken:
 
    * 1040px
    * 700px
@@ -185,17 +186,17 @@ Du kan använda:
    * 300px
    * 240px
 
-   >[!CAUTION]
-   >
-   >Storleken 1 040 × 1 040 px är obligatorisk för varje LINE-bild med länk.
+  >[!CAUTION]
+  >
+  >Storleken 1 040 × 1 040 px är obligatorisk för varje LINE-bild med länk.
 
-   Sedan måste du lägga till alternativ text som visas på mottagarens mobila enhet.
+  Sedan måste du lägga till alternativ text som visas på mottagarens mobila enhet.
 
 * och **[!UICONTROL Links]**.
 
-   The **[!UICONTROL Links]** kan du välja mellan olika layouter som delar upp bilden i flera klickbara områden. Du kan sedan tilldela var och en av dem en dedikerad **[!UICONTROL Link URL]**.
+  The **[!UICONTROL Links]** kan du välja mellan olika layouter som delar upp bilden i flera klickbara områden. Du kan sedan tilldela var och en av dem en dedikerad **[!UICONTROL Link URL]**.
 
-   ![](assets/line_message_05.png)
+  ![](assets/line_message_05.png)
 
 ### Konfigurera leverans av videomeddelanden {#configuring-a-video-message-delivery}
 

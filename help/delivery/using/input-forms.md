@@ -1,21 +1,20 @@
 ---
 product: campaign
 title: Inmatningsformulär
-description: Lär dig hur du använder indataformulär i Campaign
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
+description: Lär dig använda indataformulär i Campaign
+badge-v7: label="v7" type="Informative" tooltip="Gäller Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Gäller även Campaign v8"
 feature: Data Management
+role: User, Developer
 exl-id: 8ec52c96-44a2-4544-93b6-9ba251510682
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: d2f5f2a662c022e258fb3cc56c8502c4f4cb2849
 workflow-type: tm+mt
-source-wordcount: '832'
+source-wordcount: '844'
 ht-degree: 2%
 
 ---
 
 # Inmatningsformulär{#input-forms}
-
-
 
 Nedan följer några allmänna principer för användning av indataformulär i Adobe Campaign.
 
@@ -33,7 +32,7 @@ XML-dokumentet i ett indataformulär måste innehålla **`<form>`** rotelementet
 
 Som standard är ett formulär associerat med dataschemat som har samma namn och namnutrymme. Om du vill associera ett formulär med ett annat namn anger du schematangenten i dialogrutan **enhetstabell** attributet för **`<form>`** -element.
 
-För att illustrera strukturen för ett indataformulär beskriver vi ett gränssnitt baserat på vårt exempelschema&quot;cus:book&quot;:
+För att illustrera strukturen för ett inmatningsformulär beskriver vi ett gränssnitt baserat på vårt exempelschema &quot;cus:book&quot;:
 
 ![](assets/d_ncs_content_form1.png)
 
@@ -49,7 +48,7 @@ Det här är motsvarande indataformulär:
 
 Beskrivningen av redigeringselementen börjar med **`<form>`** rotelement.
 
-En redigeringskontroll anges i en **`<input>`** -element med **xpath** attribut som innehåller sökvägen för fältet i dess schema.
+En redigeringskontroll anges i en **`<input>`** -elementet med **xpath** attribut som innehåller sökvägen för fältet i dess schema.
 
 **Påminnelse gällande XPath-syntax:**
 
@@ -62,7 +61,7 @@ Elementen anges med sitt namn och attributen anges med namnet före tecknet&quot
 Exempel:
 
 * **@date**: markerar attributet med namnet &quot;date&quot;
-* **kapitel/@titel**: väljer attributet &quot;title&quot; under `<chapter>` element
+* **kapitel/@titel**: markerar attributet &quot;title&quot; under `<chapter>` element
 * **../@datum**: väljer datumet från det överordnade elementet för det aktuella elementet
 
 Redigeringskontrollen anpassas automatiskt till motsvarande datatyp och använder den etikett som definierats i schemat.

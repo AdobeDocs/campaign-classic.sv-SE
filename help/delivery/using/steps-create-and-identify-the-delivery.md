@@ -2,31 +2,30 @@
 product: campaign
 title: Skapa och identifiera leveransen
 description: Skapa och identifiera leveransen
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
+badge-v7: label="v7" type="Informative" tooltip="Gäller Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Gäller även Campaign v8"
 feature: Channel Configuration
+role: User
 exl-id: 6e37bc14-b1a9-42af-8c28-ae4b5bcaa055
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: d2f5f2a662c022e258fb3cc56c8502c4f4cb2849
 workflow-type: tm+mt
-source-wordcount: '271'
-ht-degree: 6%
+source-wordcount: '283'
+ht-degree: 7%
 
 ---
 
 # Skapa och identifiera leveransen {#create-and-identify-the-delivery}
-
-
 
 ## Skapa leveransen {#creating-the-delivery}
 
 Du kan skapa en leverans via översikten eller via **[!UICONTROL Create > Delivery]** -menyn.
 
 
-Om du vill skapa en leverans klickar du på **[!UICONTROL Create]** ovanför listan över leveranser. När du skapar en ny leverans måste du ange vilken leveranskanal som används. Det gör du genom att välja lämplig leveransmall i listrutan i dialogrutan **[!UICONTROL Delivery template]** fält.
+Om du vill skapa en leverans klickar du **[!UICONTROL Create]** ovanför listan över leveranser. När du skapar en ny leverans måste du ange vilken leveranskanal som används. Det gör du genom att välja lämplig leveransmall i listrutan i dialogrutan **[!UICONTROL Delivery template]** fält.
 
 ![](assets/s_ncs_user_wizard_email01_1.png)
 
-En standardmall finns för varje kanal som du har installerat: direktreklam, e-post, fax, telefon, mobilkanal (SMS), Facebook, Twitter osv.
+En standardmall finns för varje installerad kanal: direktreklam, e-post, fax, telefon, mobilkanal (SMS), Facebook, Twitter osv.
 
 >[!NOTE]
 >
@@ -43,13 +42,13 @@ Du måste ange parametrar för att kunna identifiera leveransen. Så här gör d
    Leveransen kan även tilldelas en leveranskod. Namnet på leveransen och dess kod visas i listan över leveranser, men kan inte ses av mottagarna.
 
 1. Lägg till en beskrivning i **[!UICONTROL Description]** fält.
-1. Välj leveranstyp i det relevanta fältet. Den här informationen är användbar för leveransspårning: Du kan filtrera baserat på det här kriteriet i leveranslistan eller skapa frågor med det här urvalskriteriet.
+1. Välj leveranstyp i det relevanta fältet. Den här informationen är användbar för leveransspårning: du kan filtrera baserat på det här villkoret i leveranslistan eller skapa frågor med det här urvalskriteriet.
 
    ![](assets/s_ncs_user_email_del_nature.png)
 
 1. Klicka **[!UICONTROL Continue]** för att bekräfta den här informationen och visa meddelandekonfigurationsfönstret.
 
-Leveransinnehållet är klart att konfigureras. Definitionen av leveransinnehåll är specifik för varje kanal. Mer information finns i det dedikerade avsnittet:
+Leveransinnehållet kan konfigureras. Definitionen av leveransinnehåll är specifik för varje kanal. Mer information finns i det dedikerade avsnittet:
 
 * [Definiera e-postinnehållet](defining-the-email-content.md)
 * [Definiera SMS-innehållet](sms-create.md#defining-the-sms-content)

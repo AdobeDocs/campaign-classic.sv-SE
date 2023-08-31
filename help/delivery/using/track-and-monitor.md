@@ -5,8 +5,9 @@ description: Lär dig spåra och övervaka meddelanden
 badge-v7: label="v7" type="Informative" tooltip="Gäller Campaign Classic v7"
 badge-v8: label="v8" type="Positive" tooltip="Gäller även Campaign v8"
 feature: Monitoring, Reporting
+role: User
 exl-id: a039a288-2e7b-4f35-9885-ead3ed4347af
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: d2f5f2a662c022e258fb3cc56c8502c4f4cb2849
 workflow-type: tm+mt
 source-wordcount: '450'
 ht-degree: 3%
@@ -14,8 +15,6 @@ ht-degree: 3%
 ---
 
 # Spåra och övervaka {#track-and-monitor}
-
-
 
 Du klickade på **Skicka** -knapp? Låt oss se vad som händer. När leveransen har skickats kan du med Adobe Campaign hålla reda på skickade meddelanden och se hur mottagarna svarar på leveransen. Detta hjälper er att förbättra era framtida utskick och optimera era nästa kampanjer.
 

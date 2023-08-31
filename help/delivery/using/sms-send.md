@@ -2,20 +2,19 @@
 product: campaign
 title: Skicka, övervaka och spåra SMS
 description: Lär dig hur du skickar, övervakar och spårar SMS i Campaign
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
+badge-v7: label="v7" type="Informative" tooltip="Gäller Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Gäller även Campaign v8"
 feature: SMS
+role: User
 exl-id: 442672ee-5037-49b7-a06f-3a99920ce2b6
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: d2f5f2a662c022e258fb3cc56c8502c4f4cb2849
 workflow-type: tm+mt
-source-wordcount: '958'
+source-wordcount: '970'
 ht-degree: 3%
 
 ---
 
 # Skicka, övervaka och spåra SMS-leveranser{#sms-properties}
-
-
 
 ## Skicka SMS-meddelanden {#sending-sms-messages}
 
@@ -32,25 +31,25 @@ The **[!UICONTROL Properties]** ger åtkomst till den avancerade parametern för
 
 Följande alternativ är tillgängliga:
 
-* **Avsändarens adress**: Med kan du anpassa namnet på avsändaren med en alfanumerisk teckensträng som är begränsad till elva tecken. Fältet får inte uteslutande bestå av siffror. Du kan definiera ett villkor som ska visas, t.ex. med olika namn beroende på mottagarens riktnummer:
+* **Avsändarens adress**: gör att du kan anpassa namnet på avsändaren med en alfanumerisk teckensträng som är begränsad till elva tecken. Fältet får inte uteslutande bestå av siffror. Du kan definiera ett villkor som ska visas, t.ex. med olika namn beroende på mottagarens riktnummer:
 
-   ```
-   <% if( String(recipient.mobilePhone).indexOf("+1") == 0){ %>NeoShopUS<%} else {%>NeoShopWorld<%}%>
-   ```
+  ```
+  <% if( String(recipient.mobilePhone).indexOf("+1") == 0){ %>NeoShopUS<%} else {%>NeoShopWorld<%}%>
+  ```
 
-   >[!IMPORTANT]
-   >
-   >Läs lagen i ditt land om hur du redigerar avsändarnamn. Du bör också fråga din operatör om de erbjuder den här funktionen.
+  >[!IMPORTANT]
+  >
+  >Läs lagen i ditt land om hur du redigerar avsändarnamn. Du bör också fråga din operatör om de erbjuder den här funktionen.
 
 * **Överföringsläge**: meddelandeöverföring via SMS.
-* **Prioritet**: prioritetsnivå som tilldelats ett meddelande. **[!UICONTROL Normal]** som standard är prioritet vald. Fråga tjänsteleverantören om kostnaden för SMS som skickas med **[!UICONTROL High]** prioritet.
-* **Typ av tillämpning**: välj det program som du vill tilldela din SMS-leverans. The **[!UICONTROL Direct Marketing]** är markerat som standard och är det vanligaste alternativet.
+* **Prioritet**: prioritetsnivå för ett meddelande. **[!UICONTROL Normal]** som standard är prioriteten vald. Fråga tjänsteleverantören om kostnaden för SMS som skickas med **[!UICONTROL High]** prioritet.
+* **Typ av tillämpning**: välj det program som du vill tilldela SMS-leveransen. The **[!UICONTROL Direct Marketing]** är markerat som standard och är det vanligaste alternativet.
 
 **Parametrar som är specifika för NetSize-kopplingen**
 
 ![](assets/s_user_mobile_sms_adv_netsize.png)
 
-* **Använd flera SMS för ett enda meddelande**: Detta gör att du kan skicka ett meddelande som är längre än 160 tecken via flera SMS-meddelanden.
+* **Använd flera SMS för ett enda meddelande**: du kan då skicka ett meddelande med mer än 160 tecken via flera SMS-meddelanden.
 
 **Parametrar som är specifika för en SMPP-anslutning**
 
@@ -72,41 +71,40 @@ The **nlserver sms** Modulen frågar SMS-routern med regelbundna intervall. Dett
 
 * **Statusrapporter**: visa leveransloggar för att kontrollera status för dina meddelanden.
 
-   >[!NOTE]
-   >
-   >Varje SMS som skickas är länkat till ett externt konto och dess primärnyckel. På det här sättet:
-   >
-   > * Statusrapporter från ett borttaget externt SMS-konto bearbetas inte korrekt.
-   > * Ett SMS-konto kan bara länkas till ett enda externt konto för att säkerställa att statusrapporter tilldelas rätt konto
-
+  >[!NOTE]
+  >
+  >Varje SMS som skickas är länkat till ett externt konto och dess primärnyckel. Så här:
+  >
+  > * Statusrapporter från ett borttaget externt SMS-konto bearbetas inte korrekt.
+  > * Ett SMS-konto kan bara länkas till ett enda externt konto för att säkerställa att statusrapporter tilldelas rätt konto
 
 * **Avsluta prenumeration**: Mottagare som inte längre vill ta emot SMS-leveranser kan returnera ett meddelande som innehåller ordet STOP. Om din leverantör tillåter det enligt avtalsvillkoren kan du hämta meddelanden via **Inkommande SMS** arbetsflödesaktivitet och skapa sedan en fråga för att aktivera **Kontakta inte längre den här mottagaren** möjlighet för de berörda mottagarna.
 
-   Se [Arbetsflöden](../../workflow/using/architecture.md) guide.
+  Se [Arbetsflöden](../../workflow/using/architecture.md) guide.
 
 ## InSMS-schema {#insms-schema}
 
 InSMS-schemat innehåller information som är relevant för inkommande SMS. En beskrivning av dessa fält är tillgänglig via attributet desc.
 
-* **message**: det SMS som togs emot.
+* **message**: innehållet i det SMS som togs emot.
 * **ursprung**: mobilnummer i meddelandets ursprung.
-* **providerId**: Identifierare för det meddelande som returneras av SMSC (meddelandecenter).
-* **skapad**: datum då inkommande meddelande infogades i Adobe Campaign.
-* **extAccount**: Adobe Campaign externa konto.
+* **providerId**: identifierare för det meddelande som returneras av SMSC (meddelandecenter).
+* **skapad**: datum för inkommande meddelande infogades i Adobe Campaign.
+* **extAccount**: Adobe Campaign externt konto.
 
-   >[!IMPORTANT]
-   >
-   >Följande fält är specifika för NetSize.
-   >
-   >Om operatorn som används inte är NetSize, betraktas dessa fält som tomma.
+  >[!IMPORTANT]
+  >
+  >Följande fält är specifika för NetSize.
+  >
+  >Om operatorn som används inte är NetSize, betraktas dessa fält som tomma.
 
 * **alias**: alias för inkommande meddelande.
-* **avgränsare**: avgränsare mellan aliaset och meddelandets brödtext.
+* **avgränsare**: avgränsare mellan alias och meddelandets brödtext.
 * **messageDate**: meddelandedatum angivet av operator.
-* **receiveDate**: Datummeddelande från operatorn togs emot av SMSC (meddelandecenter).
-* **deliveryDate**: Datummeddelande från SMSC (meddelandecenter).
+* **receiveDate**: datummeddelande från operatorn togs emot av SMSC (meddelandecenter).
+* **deliveryDate**: datummeddelande skickat av SMSC (meddelandecenter).
 * **largeAccount**: kundkontokod länkad till inkommande SMS.
-* **countryCode**: landskod för operator.
+* **countryCode**: operatorns landskod.
 * **operatorCode**: operatörens nätverkskod.
 * **linkedSmsId**: Adobe Campaign-identifierare (broadlogId) länkad till utgående SMS, där detta SMS är svaret.
 
@@ -159,11 +157,11 @@ Avsändarnamnet för den här meddelandetypen är en kort kod som vanligtvis anv
    <reply keyword="QUIT" text="You will not receive SMS anymore" />
    ```
 
-1. När du är klar sparar du filen under namnet **smsAutoReply.xml**.
+1. När du är klar sparar du den här filen under namnet **smsAutoReply.xml**.
 
    Observera att filens namn är skiftlägeskänsligt i Linux.
 
-1. Kopiera den här filen till **conf** i Adobe Campaign, på samma plats som webbservern.
+1. Kopiera filen till **conf** i Adobe Campaign, på samma plats som webbservern.
 
 >[!IMPORTANT]
 >

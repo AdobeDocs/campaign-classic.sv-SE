@@ -1,31 +1,30 @@
 ---
 product: campaign
 title: Validera leveransen
-description: Lär dig hur du validerar en leverans
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
+description: Lär dig validera en leverans
+badge-v7: label="v7" type="Informative" tooltip="Gäller Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Gäller även Campaign v8"
 feature: Deliverability, Email Rendering, Proofs
+role: User
 exl-id: c2f4d8d0-f0fe-4d1a-92fd-91edaf9729f3
-source-git-commit: 3c1a0f435dce5e1f54f701e742f393db066ad78f
+source-git-commit: d2f5f2a662c022e258fb3cc56c8502c4f4cb2849
 workflow-type: tm+mt
-source-wordcount: '1666'
-ht-degree: 4%
+source-wordcount: '1678'
+ht-degree: 5%
 
 ---
 
 # Validera leveransen {#validating-the-delivery}
 
-
-
 När en leverans har skapats och konfigurerats måste du validera den innan du skickar den till huvudmålet.
 
 Så här gör du:
 
-1. **Analysera leveransen**: Med det här steget kan du förbereda meddelanden som ska levereras. [Läs mer](#analyzing-the-delivery).
+1. **Analysera leveransen**: i det här steget kan du förbereda meddelanden som ska levereras. [Läs mer](#analyzing-the-delivery).
 
    De regler som tillämpas under analysen presenteras i [det här avsnittet](#validation-process-with-typologies). De tillgängliga valideringslägena beskrivs i [Ändra godkännandeläge](#changing-the-approval-mode) -avsnitt.
 
-1. **Skicka korrektur**: I det här steget kan du styra innehåll, URL-adresser, personalisering osv. Läs mer i [Skicka ett bevis](steps-validating-the-delivery.md#sending-a-proof) och [Definiera ett specifikt korrekturmål](steps-defining-the-target-population.md#defining-a-specific-proof-target).
+1. **Skicka korrektur**: det här steget låter dig styra innehåll, URL:er, personalisering osv. Läs mer i [Skicka ett bevis](steps-validating-the-delivery.md#sending-a-proof) och [Definiera ett specifikt korrekturmål](steps-defining-the-target-population.md#defining-a-specific-proof-target).
 
 >[!IMPORTANT]
 >
@@ -37,7 +36,7 @@ Analysen är den fas då målpopulationen beräknas och leveransinnehållet fär
 
 ### Starta analysen {#launching-the-analysis}
 
-1. Klicka på **[!UICONTROL Send]**.
+1. Klicka för att starta leveransanalysen **[!UICONTROL Send]**.
 1. Välj **[!UICONTROL Deliver as soon as possible]**.
 
    ![](assets/s_ncs_user_email_del_send.png)
@@ -60,7 +59,7 @@ Analysen är den fas då målpopulationen beräknas och leveransinnehållet fär
 
    >[!IMPORTANT]
    >
-   >Vid körning fryser analysen leveransen (eller korrekturet). Alla ändringar av leveransen (eller beviset) måste följas av en annan analys innan de blir tillämpliga.
+   >Vid körning fryser analysen leveransen (eller beviset). Alla ändringar av leveransen (eller beviset) måste följas av en annan analys innan de blir tillämpliga.
 
 1. Vänta tills analysen är klar.
 
@@ -75,7 +74,7 @@ Analysen är den fas då målpopulationen beräknas och leveransinnehållet fär
 
 1. När du har gjort ändringarna startar du om analysklickningen **[!UICONTROL Analyze]**.
 
-När du har kontrollerat resultatet av analysen kan du klicka **[!UICONTROL Confirm delivery]** för att skicka meddelandet till det angivna målet. Med ett bekräftelsemeddelande kan du starta leveransen.
+När du har kontrollerat resultatet kan du klicka **[!UICONTROL Confirm delivery]** för att skicka meddelandet till det angivna målet. Med ett bekräftelsemeddelande kan du starta leveransen.
 
 ![](assets/s_ncs_user_email_del_analyze_ok.png)
 
@@ -91,13 +90,13 @@ The **[!UICONTROL Analysis]** Med hjälp av fliken för leveransegenskaperna kan
 
 På den här fliken finns följande alternativ:
 
-* **[!UICONTROL Label and code of the delivery]** : Alternativen i detta avsnitt används för att beräkna värdena för dessa fält under leveransanalysfasen. The **[!UICONTROL Compute the execution folder during the delivery analysis]** field beräknar namnet på mappen som kommer att innehålla den här leveransåtgärden under analysfasen.
-* **[!UICONTROL Approval mode]** : I det här fältet kan du definiera manuell eller automatisk leverans när analysen är klar. Valideringslägena visas i [Ändra godkännandeläge](#changing-the-approval-mode) -avsnitt.
-* **[!UICONTROL Prepare the delivery parts in the database]** : Med det här alternativet kan du förbättra resultatet för leveransanalysen. Mer information finns i [det här avsnittet](#improving-delivery-analysis).
-* **[!UICONTROL Prepare the personalization data with a workflow]** : Med det här alternativet kan du förbereda personaliseringsdata i leveransen i ett automatiskt arbetsflöde, vilket kan göra att du kan uppnå en avsevärd prestandaökning för personalisering. Mer information finns i [Optimera personalisering](personalization-fields.md#optimizing-personalization).
-* **[!UICONTROL Start job in a detached process]** : Med det här alternativet kan du påbörja leveransanalysen i en separat process. Analysfunktionen använder som standard Adobe Campaign programserverprocess (webbserver). Om du väljer det här alternativet ser du till att analysen slutförs även om ett programserverfel inträffar.
-* **[!UICONTROL Log SQL queries generated during the analysis in the journal]** : Med det här alternativet läggs SQL-frågeloggarna till i leveransjournalen under analysfasen.
-* **[!UICONTROL Ignore personalization scripts during sending]** : Med det här alternativet kan du kringgå tolkningen av JavaScript-direktiv som finns i HTML. De visas som i det levererade innehållet. Dessa direktiv införs med **&lt;%=** tagg).
+* **[!UICONTROL Label and code of the delivery]** : alternativen i det här avsnittet används för att beräkna värdena för dessa fält under leveransanalysfasen. The **[!UICONTROL Compute the execution folder during the delivery analysis]** field beräknar namnet på mappen som kommer att innehålla den här leveransåtgärden under analysfasen.
+* **[!UICONTROL Approval mode]** : i det här fältet kan du definiera manuell eller automatisk leverans när analysen är klar. Valideringslägena visas i [Ändra godkännandeläge](#changing-the-approval-mode) -avsnitt.
+* **[!UICONTROL Prepare the delivery parts in the database]** : med det här alternativet kan du förbättra resultatet för leveransanalysen. Mer information finns i [det här avsnittet](#improving-delivery-analysis).
+* **[!UICONTROL Prepare the personalization data with a workflow]** : det här alternativet gör att du kan förbereda personaliseringsdata som levereras i ett automatiskt arbetsflöde, vilket kan göra att du kan uppnå en avsevärd prestandaökning för personalisering. Mer information finns i [Optimera personalisering](personalization-fields.md#optimizing-personalization).
+* **[!UICONTROL Start job in a detached process]** : Med det här alternativet kan du starta leveransanalysen i en separat process. Analysfunktionen använder som standard Adobe Campaign programserverprocess (webbserver). Om du väljer det här alternativet ser du till att analysen slutförs även om ett programserverfel inträffar.
+* **[!UICONTROL Log SQL queries generated during the analysis in the journal]** : det här alternativet lägger till SQL-frågeloggarna i leveransjournalen under analysfasen.
+* **[!UICONTROL Ignore personalization scripts during sending]** : det här alternativet gör att du kan åsidosätta tolkningen av JavaScript-direktiv som finns i HTML-innehåll. De visas som i det levererade innehållet. Dessa direktiv införs med **&lt;%=** tagg).
 
 ### Förbättra resultatet av leveransanalysen {#improving-delivery-analysis}
 
@@ -114,7 +113,7 @@ För närvarande är det här alternativet endast tillgängligt när följande v
 
 ### Konfigurera analysprioriteten {#analysis-priority-}
 
-När leveransen ingår i en kampanj **[!UICONTROL Advanced]** på fliken finns ytterligare ett alternativ. På så sätt kan du ordna bearbetningsordningen för leveranser i samma kampanj.
+När leveransen ingår i en kampanj **[!UICONTROL Advanced]** finns det ytterligare ett alternativ på fliken. På så sätt kan du ordna bearbetningsordningen för leveranser i samma kampanj.
 
 Innan leveransen skickas analyseras varje leverans. Analysens längd beror på leveransens extraheringsfil. Ju större filstorlek, desto längre tid tar analysen och följande leveranser väntar.
 
@@ -138,7 +137,7 @@ För att upptäcka eventuella fel i meddelandekonfigurationen rekommenderar Adob
 >* Korrekturmålets konfiguration förklaras i [Definiera ett specifikt korrekturmål](steps-defining-the-target-population.md#defining-a-specific-proof-target).
 >
 
-Följ stegen nedan för att skicka ett bevis:
+Följ stegen nedan när du vill skicka ett bevis:
 
 1. Kontrollera att korrekturmålet har konfigurerats enligt beskrivningen i [Definiera ett specifikt korrekturmål](steps-defining-the-target-population.md#defining-a-specific-proof-target).
 1. Klicka **[!UICONTROL Send a proof]** i det övre fältet i leveransguiden.
@@ -197,7 +196,7 @@ Du kan skapa nya regler och definiera nya typologier från den här noden. Dessa
 
 Mer information om typologiregler finns i [den här sidan](../../campaign-opt/using/about-campaign-typologies.md).
 
-Om du vill redigera den aktuella typologin klickar du på **[!UICONTROL Edit link]** ikonen till höger om **[!UICONTROL Typology]** fält.
+Om du vill redigera aktuell typologi klickar du på **[!UICONTROL Edit link]** ikonen till höger om **[!UICONTROL Typology]** fält.
 
 ![](assets/s_ncs_user_email_del_typo_tab.png)
 
@@ -219,6 +218,6 @@ Välj ett annat godkännandeläge i listrutan i lämpligt fält.
 
 Följande godkännandelägen är tillgängliga:
 
-* **[!UICONTROL Manual]**: I slutet av analysfasen måste användaren bekräfta leveransen för att kunna börja skicka. Om du vill göra det klickar du på **[!UICONTROL Start]** för att starta leveransen.
-* **[!UICONTROL Semi-automatic]**: Skicka börjar automatiskt om analysfasen inte genererar några varningsmeddelanden.
+* **[!UICONTROL Manual]**: I slutet av analysfasen måste användaren bekräfta leveransen för att kunna börja skicka. Klicka på **[!UICONTROL Start]** för att starta leveransen.
+* **[!UICONTROL Semi-automatic]**: Sändningen börjar automatiskt om analysfasen inte genererar några varningsmeddelanden.
 * **[!UICONTROL Automatic]**: Sändningen börjar automatiskt i slutet av analysfasen, oavsett resultatet.

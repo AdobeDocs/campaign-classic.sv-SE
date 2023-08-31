@@ -1,21 +1,20 @@
 ---
 product: campaign
 title: Fält för personalisering
-description: Lär dig hur du använder personaliseringsfält
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
+description: Lär dig använda personaliseringsfält
+badge-v7: label="v7" type="Informative" tooltip="Gäller Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Gäller även Campaign v8"
 feature: Personalization
+role: User
 exl-id: 67fd9a67-cb05-46cd-acd5-e42fde6f4d4f
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: d2f5f2a662c022e258fb3cc56c8502c4f4cb2849
 workflow-type: tm+mt
-source-wordcount: '884'
+source-wordcount: '896'
 ht-degree: 10%
 
 ---
 
 # Fält för personalisering{#personalization-fields}
-
-
 
 Personaliseringsfält används för att personalisera innehållet i levererade meddelanden på första nivån. Fälten som infogas i ett huvudinnehåll visar var data från den valda datakällan ska infogas.
 
@@ -31,7 +30,7 @@ Ett exempel är anpassningsfältet med **&lt;%= mottagare.Efternamn %>** anger a
 
 Anpassningsfält kan komma från två typer av datakällor, beroende på valt leveranssätt:
 
-* Adobe Campaign-databasen är datakällan. Detta är det vanligaste fallet, till exempel&quot;fält för mottagaranpassning&quot;. Det här är alla fält som definieras i mottagartabellen, oavsett om det är standardfält (vanligtvis: efternamn, förnamn, adress, ort, födelsedatum osv.) eller användardefinierade fält.
+* Adobe Campaign-databasen är datakällan. Detta är det vanligaste fallet, till exempel&quot;fält för mottagaranpassning&quot;. Det här är alla fält som definieras i mottagartabellen, oavsett om det är standardfält (vanligtvis efternamn, förnamn, adress, ort, födelsedatum osv.) eller användardefinierade fält.
 * En extern fil är datakällan. Detta är alla fält som definieras i kolumnerna i filen som presenteras som indata vid en leverans med hjälp av data som hittas i en extern fil.
 
 >[!NOTE]
@@ -57,7 +56,7 @@ Vi skapar ett e-postmeddelande där vi först infogar namnet på mottagaren och 
    ![](assets/s_ncs_user_insert_custom_field.png)
 
 1. Upprepa åtgärden för att infoga namnet på mottagaren. Infoga mellanslag mellan alla anpassningsfält.
-1. Klicka **[!UICONTROL OK]** att validera.
+1. Klicka **[!UICONTROL OK]** för att validera.
 1. Infoga personaliseringen i meddelandetexten. Det gör du genom att klicka i meddelandeinnehållet och klicka på fältinfogningsknappen.
 1. Välj **[!UICONTROL Recipient>Other...]**.
 
@@ -73,7 +72,7 @@ Vi skapar ett e-postmeddelande där vi först infogar namnet på mottagaren och 
 
    >[!NOTE]
    >
-   >När en leverans ingår i ett arbetsflöde kan du använda data från den tillfälliga arbetsflödestabellen. Dessa data grupperas i **[!UICONTROL Target extension]** -menyn. Mer information om detta finns i [det här avsnittet](../../workflow/using/data-life-cycle.md#target-data).
+   >När en leverans ingår i ett arbetsflöde kan du använda data från den tillfälliga arbetsflödestabellen. Dessa data är grupperade i **[!UICONTROL Target extension]** -menyn. Mer information om detta finns i [det här avsnittet](../../workflow/using/data-life-cycle.md#target-data).
 
 ## Optimera personalisering {#optimizing-personalization}
 
@@ -88,7 +87,7 @@ Om du till exempel får prestandaproblem när du levererar till ett stort antal 
 Följ stegen nedan om du vill använda det här alternativet:
 
 1. Skapa en kampanj. Mer information om detta finns i [det här avsnittet](../../campaign/using/setting-up-marketing-campaigns.md#creating-a-campaign).
-1. I **[!UICONTROL Targeting and workflows]** fliken med kampanjen, lägg till en **Fråga** till arbetsflödet. Mer information om hur du använder den här aktiviteten finns i [det här avsnittet](../../workflow/using/query.md).
+1. I **[!UICONTROL Targeting and workflows]** fliken med kampanjen, lägg till en **Fråga** till ditt arbetsflöde. Mer information om hur du använder den här aktiviteten finns i [det här avsnittet](../../workflow/using/query.md).
 1. Lägg till en **[!UICONTROL Email delivery]** till arbetsflödet och öppna det. Mer information om hur du använder den här aktiviteten finns i [det här avsnittet](../../workflow/using/delivery.md).
 1. Gå till **[!UICONTROL Analysis]** -fliken i **[!UICONTROL Delivery properties]** och väljer **[!UICONTROL Prepare the personalization data with a workflow]** alternativ.
 
@@ -118,10 +117,10 @@ Standardvärdet är 5 sekunder.
 
 Om du ställer in det här alternativet på 0 kommer det inte att finnas någon tidsgräns för personaliseringsfasen.
 
-## Videokurs {#personalization-fields-video}
+## Självstudievideo {#personalization-fields-video}
 
 Lär dig hur du lägger till ett personaliseringsfält på ämnesraden och i innehållet i en e-postleverans.
 
 >[!VIDEO](https://video.tv.adobe.com/v/24925?quality=12)
 
-Det finns fler instruktionsvideor för Campaign Classic [här](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=sv).
+Det finns fler videor med Campaign Classic om hur man gör [här](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=sv).

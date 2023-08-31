@@ -2,20 +2,19 @@
 product: campaign
 title: Skicka e-post till japanska mobiler med Adobe Campaign Classic
 description: Lär dig hur du konfigurerar, utformar och skickar e-postmeddelanden som ska läsas på japanska mobiler
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
+badge-v7: label="v7" type="Informative" tooltip="Gäller Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Gäller även Campaign v8"
 feature: Email, Email Design
+role: User
 exl-id: 44634227-2340-49c4-b330-740c739ea551
-source-git-commit: 403227736e2e8c606204e9324d0afb5b71be62a5
+source-git-commit: d2f5f2a662c022e258fb3cc56c8502c4f4cb2849
 workflow-type: tm+mt
-source-wordcount: '720'
+source-wordcount: '732'
 ht-degree: 0%
 
 ---
 
 # Skicka e-post till japanska mobiler {#sending-emails-on-japanese-mobiles}
-
-
 
 ## E-postformat för japanska mobiler {#email-formats-for-japanese-mobiles}
 
@@ -43,7 +42,7 @@ Därför måste du:
 
 >[!NOTE]
 >
->Begränsningar som är specifika för varje operator måste beaktas när du skapar meddelandet. Läs produktdokumentationen.
+>Begränsningar som är specifika för varje operator måste beaktas när du skapar meddelandet. Läs produktdokumentationen för dem.
 
 
 ## Testa e-postinnehållet {#testing-the-email-content}
@@ -54,17 +53,17 @@ Med Adobe Campaign kan du kontrollera att meddelandeformatet är anpassat för a
 
 När du har definierat innehållet och angett ämnet för e-postmeddelandet kan du kontrollera visningen och formateringen när meddelandet skapas.
 
-I **[!UICONTROL Preview]** fliken i innehållsredigeringsfönstret, klicka **[!UICONTROL More... > Deco-mail diagnostic]** gör att du kan:
+I **[!UICONTROL Preview]** fliken i innehållsredigeringsfönstret, klicka **[!UICONTROL More... > Deco-mail diagnostic]** kan du:
 
 * Kontrollera att innehållstaggarna för HTML följer de japanska formatbegränsningarna
 * Kontrollera att antalet bilder i meddelandet inte överstiger gränsen för formatet (20 bilder)
 * Kontrollera den totala meddelandestorleken (mindre än 100 kB)
 
-   ![](assets/deco-mail_06.png)
+  ![](assets/deco-mail_06.png)
 
 ### Kör typologiregel {#running-typology-rule}
 
-Förutom förhandsgranskningsdiagnosen utförs en andra kontroll när du skickar ett bevis eller en leverans: en specifik typologiregel, **[!UICONTROL Deco-mail check]**, startas under analysen.
+Förutom förhandsgranskningsdiagnosen utförs en andra kontroll när ett bevis eller en leverans skickas: en viss typologiregel. **[!UICONTROL Deco-mail check]**, startas under analysen.
 
 >[!IMPORTANT]
 >
@@ -89,15 +88,15 @@ Om du vill skicka ett e-postmeddelande till mottagare med japanska e-postformat 
 
 ### Designa en specifik leverans för japanska format {#designing-a-specific-delivery-for-japanese-formats}
 
-Du kan skapa ett arbetsflöde som innehåller två leveranser: en som ska läsas på japanska mobiler och en annan för mottagare med ett standardformat för e-post.
+Du kan skapa ett arbetsflöde som innehåller två leveranser: en som ska läsas på en japansk mobil och en annan för mottagare med ett standardformat för e-post.
 
-Om du vill göra det använder du **[!UICONTROL Split]** i arbetsflödet och definiera de japanska e-postformaten (Deco-mail, Decoration Mail och Decore Mail) som filtreringsvillkor.
+Använd **[!UICONTROL Split]** i arbetsflödet och definiera de japanska e-postformaten (Deco-mail, Decoration Mail och Decore Mail) som filtreringsvillkor.
 
 ![](assets/deco-mail_08.png)
 
 ![](assets/deco-mail_07.png)
 
-### Designa en leverans för alla format {#designing-a-delivery-for-all-formats}
+### Designa för alla format {#designing-a-delivery-for-all-formats}
 
 När Adobe Campaign dynamiskt hanterar formaten enligt domänen (profiler med e-postformat definierade som **[!UICONTROL Unknown]**, **[!UICONTROL HTML]** eller **[!UICONTROL Text]** ) kan du skicka samma leverans till alla mottagare.
 
