@@ -1,12 +1,12 @@
 ---
 product: campaign
-title: S med förbättrad MTA i Adobe Campaign Classic
+title: Skicka med Enhanced MTA i Adobe Campaign Classic
 description: Läs mer om omfattningen av och egenskaperna hos utskick av e-post med Adobe Campaign Enhanced MTA
 badge-v7: label="v7" type="Informative" tooltip="Gäller Campaign Classic v7"
 badge-v8: label="v8" type="Positive" tooltip="Gäller även Campaign v8"
 feature: Email
 exl-id: 58cc23f4-9ab0-45c7-9aa2-b08487ec7e91
-source-git-commit: dbbc5d9f354357e5ca13eaeffddf67865480070d
+source-git-commit: e83d85a26a5c8dd26ea2468246ef448edf8fee9b
 workflow-type: tm+mt
 source-wordcount: '1352'
 ht-degree: 3%
@@ -23,9 +23,9 @@ Den implementeras för att förbättra skalbarheten, öka leveransgenomströmnin
 
 >[!IMPORTANT]
 >
->Adobe Campaign Enhanced MTA är endast tillgängligt för kunder med värdtjänster eller hybridkunder i Campaign Classic. Anläggningar på plats i Campaign Classic kan inte uppgraderas till att använda den förbättrade MTA-metoden.
+>Adobe Campaign Enhanced MTA är endast tillgängligt för Campaign Classic som är värdbaserade eller hybridkunder. Campaign Classic på plats-installationer kan inte uppgraderas till att använda den förbättrade MTA-metoden.
 
-Om du har etablerats en Campaign Classic-instans efter september 2018 använder du Förbättrad MTA. För alla andra Campaign Classic-kunder finns [Frågor och svar](#enhanced-mta-faq) nedan.
+Om du har etablerats en Campaign Classic-instans efter september 2018 använder du Förbättrad MTA. Alla andra Campaign Classic hittar du på [Frågor och svar](#enhanced-mta-faq) nedan.
 
 Den förbättrade MTA-implementeringen kan påverka vissa av de befintliga Campaign-funktionerna. Mer information finns i [Förbättrade MTA-egenskaper](#enhanced-mta-impacts).
 
@@ -68,9 +68,9 @@ No, there is no extra fee associated with the upgrade process to enable the use 
 
 **Vad krävs för att uppgradera till Enhanced MTA?**
 
-Om du har etablerats en Campaign Classic-instans efter september 2018 krävs ingen åtgärd eftersom du redan använder den förbättrade MTA-metoden.
+Om du har etablerats en Campaign Classic-instans efter september 2018 krävs ingen åtgärd eftersom du redan använder den förbättrade MTA-filen.
 
-För alla andra kunder som är värdbaserade eller delvis värdbaserade (hybridkunder) kommer Adobe Campaign-teamet att nå ut för att koordinera ett migreringsdatum och komma med information om lämpliga åtgärder för migrering.
+För alla andra värdbaserade eller delvis värdbaserade (hybridkunder) kommer Adobe Campaign-teamet att nå ut för att samordna ett migreringsdatum och komma med information om de steg som krävs för migreringen.
 
 >[!IMPORTANT]
 >
