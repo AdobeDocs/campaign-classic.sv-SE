@@ -8,9 +8,9 @@ audience: installation
 content-type: reference
 topic-tags: appendices
 exl-id: 70cd6a4b-c839-4bd9-b9a7-5a12e59c0cbf
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: a94c361c5bdd9d61ae9232224af910a78245a889
 workflow-type: tm+mt
-source-wordcount: '7962'
+source-wordcount: '8056'
 ht-degree: 5%
 
 ---
@@ -43,6 +43,7 @@ De första parametrarna finns i **delad** nod. Dessa är relaterade till instans
 * [proxyConfig](#proxyconfig)
 * [threadPool](#threadpool)
 * [urlPermission](#urlpermission)
+* [cusHeaders](#cusheaders)
 * [xtkJobs](#xtkjobs)
 
 **Andra parametrar**
@@ -998,6 +999,29 @@ Mer information finns i [Skydd av utgående anslutning](../../installation/using
  </tbody> 
 </table>
 
+## cusHeaders {#cusheaders}
+
+Med den här noden kan du lägga till specifika huvuden i begäranden som utförs när en fil överförs från en extern server. CND (Content Delivery Networks) kan begära en specifik rubrik för att lita på den som gjorde begäran. Dessa rubriker kan användas för att förbättra förtroendet för Campaign-begäranden, särskilt när skräddarsydda dokument laddas ned för varje mottagare i leveranssteget. Ett stort antal resurshämtningsbegäranden kan tolkas som en DDos-attack. Med dnsPattern kan du ange specifika rubriknamn och värden för olika CDN:er utifrån deras domännamn.
+
+```
+  <!-- List of custom headers added to request. 
+         -->
+    <cusHeaders>
+
+    <!-- Pattern of DNS name or domain 
+         value :  dnsPattern: All or part of the URL's domain to verify, * is a wild card Default:  -->
+      <dnsPattern value="">
+
+    <!-- Header Name and Value 
+           headerName :  Header Name 
+           headerValue :  Header Value -->
+        <headerDef headerName="" headerValue=""/>
+
+      </dnsPattern>
+
+    </cusHeaders> 
+```
+
 ### url {#url}
 
 Lägg till en **url** nod med följande parametrar:
@@ -1720,9 +1744,9 @@ Mer information finns i [SMTP-relä](../../installation/using/configuring-campai
  </tbody> 
 </table>
 
-### överordnad {#master}
+### master {#master}
 
-I **mta > överordnad** -nod konfigurerar du följande parametrar. Detta är huvudserverns konfiguration.
+I **mta > master** -nod konfigurerar du följande parametrar. Detta är huvudserverns konfiguration.
 
 Mer information finns i [section](../../installation/using/configuring-campaign-server.md#mta-child-processes).
 
@@ -1874,7 +1898,7 @@ I **mta > child > smtp** -nod konfigurerar du följande parametrar. Detta är ko
   </tr> 
   <tr> 
    <td> idleSessionTimeoutSec<br /> </td> 
-   <td> Tidsgräns för inaktiv session. Den här parametern används bara om sessionen återanvänds för att skicka flera meddelanden till en viss domän. När MTA har slutfört meddelandeöverföringen stängs inte den SMTP-session som den har använt systematiskt. Om ett meddelande är klart att skickas för samma domän återanvänds samma SMTP-session och därför stängs sessionen inte automatiskt. Med parametern IdleSessionTimeout kan du definiera den tid under vilken en SMTP-session kan vara aktiv och vänta på ett annat meddelande. När tiden har gått ut stängs sessionen automatiskt.<br /> </td> 
+   <td> Tidsgräns för inaktiv session. Den här parametern används bara om sessionen återanvänds för att skicka flera meddelanden till en viss domän. När MTA har slutfört meddelandeöverföringen stängs inte den SMTP-session som den har använt systematiskt. Om ett meddelande är klart att skickas för samma domän återanvänds samma SMTP-session och därför stängs inte sessionen automatiskt. Med parametern IdleSessionTimeout kan du definiera den tid under vilken en SMTP-session kan vara aktiv och vänta på ett annat meddelande. När tiden har gått ut stängs sessionen automatiskt.<br /> </td> 
    <td> Lång<br /> </td> 
    <td> 5<br /> </td> 
   </tr> 

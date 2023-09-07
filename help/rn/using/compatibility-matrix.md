@@ -7,10 +7,10 @@ badge-v7-only: label="v7" type="Informative" tooltip="Gäller endast Campaign Cl
 role: User
 level: Beginner
 exl-id: b8c1f287-06f4-4c34-8cca-b0c7676abbc2
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
-workflow-type: ht
-source-wordcount: '809'
-ht-degree: 100%
+source-git-commit: a94c361c5bdd9d61ae9232224af910a78245a889
+workflow-type: tm+mt
+source-wordcount: '784'
+ht-degree: 99%
 
 ---
 
@@ -43,7 +43,6 @@ Besök [den här sidan](../../rn/using/deprecated-features.md) för mer informat
 <td>
 <p>7.x</p>
 <p><strong>Viktigt:</strong> Om du använder RHEL måste du kunna inaktivera SELinux eller låta dina utvecklare skriva anpassade SELinux-regler för att kontrollera att en aktiverad SELinux inte orsakar problem med åtgärder i Campaign.</p>
-<p>8.x</br><strong>Viktigt:</strong> CentOS Linux 8 når slutet av sin livscykel (EOL) den 31 december 2021. Mer information finns på sidan <a href="../../rn/using/deprecated-features.md">Inaktuella funktioner</a>.</p>
 </td>
 </tr>
 <tr>
@@ -51,7 +50,6 @@ Besök [den här sidan](../../rn/using/deprecated-features.md) för mer informat
 <td>
 <p>11 (från och med Campaign v7.3)</p>
 <p>10</p>
-<p>9</p>
 </td>
 </tr>
 <tr>
@@ -143,7 +141,6 @@ Besök [den här sidan](../../rn/using/deprecated-features.md) för mer informat
 <p>13.x</p>
 <p>12.x</p>
 <p>11.x</p>
-<p>10.x</p>
 <p><strong>Obs!</strong> Du kan också använda Amazon RDS för PostgreSQL med de versioner som anges ovan.</p>
 </td>
 </tr>
@@ -217,7 +214,6 @@ Miljöerna **Managed Services** (värd), **Hybrid** och **Lokal** kan ansluta Ca
 <p>13.x</p>
 <p>12.x</p>
 <p>11.x</p>
-<p>10.x</p>
 </td>
 <td>Minst v7.0 19.1.4</td>
 </tr>
@@ -306,11 +302,8 @@ Miljöerna **Hybrid** och **Lokal** kan dessutom ansluta Campaign till följande
 <tr>
 <td>Teradata</td>
 <td>
-<p>17</p>
-<p>16.20</p>
-<p>16</p>
-<p>15.10</p>
-<p>15.0</p>
+<p>17.x</p>
+<p>16.x (senaste versionen)</p>
 </td>
 <td>minst v7.0</td>
 </tr>

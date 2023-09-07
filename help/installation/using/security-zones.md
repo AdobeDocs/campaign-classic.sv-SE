@@ -9,9 +9,9 @@ audience: installation
 content-type: reference
 topic-tags: additional-configurations
 exl-id: 67dda58f-97d1-4df5-9648-5f8a1453b814
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: a94c361c5bdd9d61ae9232224af910a78245a889
 workflow-type: tm+mt
-source-wordcount: '1489'
+source-wordcount: '1475'
 ht-degree: 1%
 
 ---
@@ -252,7 +252,7 @@ När zonerna har definierats och **[!UICONTROL Security zone]** uppräkningen ä
      <redir status='OK' date='...' build='...' OR version='...' sha1='...' instance='...' sourceIP='...' host='...' localHost='...'/>
      ```
 
-* Ange aldrig allowEmptyPassword, allowUserPassword, allowSQLInjection till true. Attributen är bara här för att möjliggöra en smidig migrering från v5 och v6.0:
+* Ange aldrig allowEmptyPassword, allowUserPassword, allowSQLInjection till true.
 
    * **allowEmptyPassword** låter operatorer ha ett tomt lösenord. Om så är fallet ska du meddela alla operatorer att de måste ange ett lösenord med en tidsgräns. När den här tidsgränsen har passerats ändrar du attributet till false.
 

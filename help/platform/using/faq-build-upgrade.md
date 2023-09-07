@@ -8,10 +8,10 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: 85e2135d-a1a3-44f0-a4f9-de38db5c8726
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: a94c361c5bdd9d61ae9232224af910a78245a889
 workflow-type: tm+mt
-source-wordcount: '2002'
-ht-degree: 2%
+source-wordcount: '1998'
+ht-degree: 3%
 
 ---
 
@@ -33,7 +33,7 @@ Läs mer [i det här avsnittet](../../rn/using/rn-overview.md).
 
 ## Vilken är den senaste versionen av Adobe Campaign Classic?
 
-Den senaste versionen av Campaign Classic, med nya funktioner och dokumentation, finns i den senaste [Versionsinformation](../../rn/using/latest-release.md).
+Den senaste Campaign Classicen, med nya funktioner och dokumentation, finns i den senaste [Versionsinformation](../../rn/using/latest-release.md).
 
 ## Hur vet jag vilken version jag har?
 
@@ -57,7 +57,7 @@ Med serverinformationen från skärmbilden i föregående avsnitt kan du till ex
 
 * En bygguppgradering innebär att man går från build 9342 till valfri version som är större än 9342. Exempel: v7.1 build 9342 to v7.1 build 9342
 
-* En versionsuppgradering innebär att man måste gå från version 6 till en senare version.  Exempel: v6.1.1 build 8666 to v7.1 build 9342.
+* En versionsuppgradering innebär att man måste gå från en tidigare större version till en senare version.
 
 ## Ska jag säkerhetskopiera mina data före dessa uppdateringar?
 
@@ -209,6 +209,6 @@ allt innehåll visas och visas.
 **Se även**
 
 * [Utföra en uppgradering av din build](../../production/using/build-upgrade.md)
-* [Versionsinformation för Campaign Classic](../../rn/using/rn-overview.md)
+* [Versionsinformation om Campaign Classic](../../rn/using/rn-overview.md)
 * [Hjälp- och supportalternativ för Campaign Classic](../../support.md)
 * [Årligt uppgraderingsprogram](../../rn/using/rn-overview.md#yearly-upgrade)

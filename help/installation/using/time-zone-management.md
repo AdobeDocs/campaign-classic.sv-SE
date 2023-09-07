@@ -9,9 +9,9 @@ audience: installation
 content-type: reference
 topic-tags: additional-configurations
 exl-id: e5ed96cc-3fc7-4af4-a29e-5a4c81f4fe39
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: a94c361c5bdd9d61ae9232224af910a78245a889
 workflow-type: tm+mt
-source-wordcount: '911'
+source-wordcount: '978'
 ht-degree: 2%
 
 ---
@@ -102,3 +102,7 @@ Exempel på möjliga värden:
 * America/New_York, osv.
 
   Dessa värden hämtas från tz-databasen (Olson). Mer information finns i [https://en.wikipedia.org/wiki/List_of_tz_database_time_zones](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones).
+
+## Oraclets databas- och servertidszon
+
+För huvuddatabasen använder Campaign serverns tidszon för att ange sessionens tidszon för databasanslutningen. Alternativet WdbcTimeZone har ingen effekt. Serverns tidszon ska därför matcha tidszonen för huvuddatabasen som används av Campaign. Om du inte kan ändra serverns tidszon kan tidszonen som används av Campaign åsidosättas genom att TZ-miljövariabeln anges i customer.sh.

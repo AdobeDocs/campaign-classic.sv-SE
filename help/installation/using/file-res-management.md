@@ -9,10 +9,10 @@ audience: installation
 content-type: reference
 topic-tags: initial-configuration
 exl-id: 236afdfe-fb23-4ebb-b000-76e14bf01d9e
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: a94c361c5bdd9d61ae9232224af910a78245a889
 workflow-type: tm+mt
-source-wordcount: '663'
-ht-degree: 2%
+source-wordcount: '664'
+ht-degree: 3%
 
 ---
 
@@ -104,7 +104,7 @@ FTP-/FTPS-anslutningar definieras i parametern proxyFTP:
 
 Om du använder samma proxy för flera anslutningstyper definieras bara proxyHTTP med useSingleProxy inställt på &quot;1&quot; eller &quot;true&quot;.
 
-Om du har interna anslutningar som ska gå igenom proxyn lägger du till dem i parametern override.
+Om du har interna anslutningar som inte ska gå igenom proxyn lägger du till dem i parametern override.
 
 Om du tillfälligt vill inaktivera proxyanslutningen anger du parametern enabled till &quot;false&quot; eller &quot;0&quot;.
 

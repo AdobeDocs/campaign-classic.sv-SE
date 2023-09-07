@@ -8,9 +8,9 @@ audience: installation
 content-type: reference
 topic-tags: appendices
 exl-id: a979cd99-afa7-4ce6-ba0f-9495089cba08
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: a94c361c5bdd9d61ae9232224af910a78245a889
 workflow-type: tm+mt
-source-wordcount: '4012'
+source-wordcount: '4004'
 ht-degree: 1%
 
 ---
@@ -157,7 +157,7 @@ The **[!UICONTROL Administration / Platform / Options]** Med -noden kan du konfi
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsEmail_ReplyToName</span> <br /> </td> 
-   <td> Standardetiketten för att svara till e-postmeddelanden på instansnivå som används för e-postleverans om den lämnas tom av användaren.<br /> </td> 
+   <td> Standardetiketten för e-post som svarar på instansnivå som används för e-postleverans om den lämnas tom av användaren.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsEmail_RetryCount</span> <br /> </td> 
@@ -696,7 +696,7 @@ The **[!UICONTROL Administration / Platform / Options]** Med -noden kan du konfi
     <ul> 
      <li> <p> <span class="uicontrol">Datatyp:</span> Heltal</p> </li> 
      <li> <p> <span class="uicontrol">Värde (text)</span> : 1 </p> </li> 
-    </ul> Det här alternativet bör endast användas om navigeringsträdet som ligger utanför rutan har genomgått för många ändringar.<br /> Mer information om detta finns i <a href="../../migration/using/configuring-your-platform.md#specific-configurations-in-v5-11">det här avsnittet</a>.<br /> </td> 
+    </ul> Det här alternativet bör endast användas om navigeringsträdet som ligger utanför rutan har genomgått för många ändringar.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsLastErrorStatCoalesce</span> <br /> </td> 
