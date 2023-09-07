@@ -7,10 +7,10 @@ badge-v7-only: label="v7" type="Informative" tooltip="Gäller endast Campaign Cl
 role: User
 level: Beginner
 exl-id: d65869ca-a785-4327-8e8d-791c28e4696c
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: 155fbcd2846cfc5a8db25194bd8d7007356db24e
 workflow-type: tm+mt
-source-wordcount: '993'
-ht-degree: 100%
+source-wordcount: '1869'
+ht-degree: 57%
 
 ---
 
@@ -18,9 +18,77 @@ ht-degree: 100%
 
 Den här sidan listar nya funktioner, förbättringar och korrigeringar som kommer med den **senaste versionen av Campaign Classic v7**. Varje ny version kommer med en status som visas med en färg. Läs mer om versionsstatusen för Campaign Classic v7 på [den här sidan](rn-overview.md).
 
-## Version 7.3.3 – build 9359 {#release-7-3-3}
+## Version 7.3.4 – build 9364 {#release-7-3-4}
 
 [!BADGE Allmän tillgänglighet]{type=Informative url="https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/rn-overview.html?lang=sv#rn-statuses" tooltip="Allmän tillgänglighet"}
+
+>[!CAUTION]
+>
+>Uppgradering av klientkonsolen är obligatorisk. Lär dig hur du uppgraderar din klientkonsol på den här [sidan](../../installation/using/installing-the-client-console.md).
+>
+> Om du använder [Campaign - Microsoft Dynamics CRM Connector](../../platform/using/crm-connectors.md)måste ni uppgradera både er marknadsföring och era mellanleverantörsservrar med den här nya versionen.
+
+_7 september 2023_
+
+**Säkerhetsförbättring**
+
+* Säkerheten har förbättrats i IMS API:er. Klientkänslig information (t.ex. åtkomsttoken) har tagits bort från URL-parametrar. Dessa autentiseringsuppgifter skickas nu i post data- eller auktoriseringshuvudet, vilket ger en säkrare kommunikationsprocess. (NEO-63045)
+* Säkerheten har förbättrats i webbprogram för att förhindra DDOS-attacker. (NEO-50757)
+* Skyddet har förbättrats för att förhindra att PII-data visas i webbloggfelen. (NEO-46827)
+* Säkerheten har optimerats för att förhindra att säkerhetstoken inkluderas i URL:en för Campaign-hemsidan. (NEO-38519)
+
+**Kompatibilitetsuppdateringar**
+
+* Tomcat har uppdaterats till version 8.5.91
+* Libexpat-biblioteket har uppdaterats till 2.5.0 för att förbättra säkerheten. (NEO-51023)
+
+**Förbättringar**
+
+* Parametern MaxWorkingSetMb i serverkonfigurationsfilen (serverConf.xml) har ändrats för att optimera minnesallokeringen för leveranser. (NEO-49204)
+* Det externa BigQuery-kontot har förbättrats med nya alternativ som används för att konfigurera GCloud SDK. (NEO-63879) [Läs mer](../../installation/using/configure-fda-google-big-query.md#google-external)
+* En ny `cusHeader` har lagts till i serverkonfigurationsfilen (serverConf.xml). Du kan lägga till anpassade rubriker när du överför en fil från en extern server. (NEO-58339) [Läs mer](../../installation/using/the-server-configuration-file.md#cusheaders).
+* Hanteringen av spårningsloggen har förbättrats för att undvika negativa ID:n för lastMsgId. Den har ändrats från int32 till int64. (NEO-52290)
+* Arbetsflödet för leverans mellan olika källor (leveransstatistik) har lagts till automatiskt. Det nya arbetsflödet synkroniserar leveransstatistik (nms:deliveryStat) från mitten till marknadsinstans. (NEO-36802)
+
+**Korrigeringar**
+
+* Korrigerade ett problem som kunde inträffa när en tjänstbegäran gjordes före IMS-inloggning, om autentiseringen av anropet till tjänsten använde en tjänsttoken. (NEO-64903)
+* Ett regressionsproblem som kan leda till rullningsproblem har korrigerats i Digital Content Editor. (NEO-64671, NEO-59256)
+* Korrigerade ett regressionsproblem när innehåll klistrades in från Excel till Digital Content Editor. (NEO-63287)
+* Korrigerade ett problem som kunde förhindra att webbprogram visas korrekt i v5-kompatibilitetsläge. (NEO-63174)
+* Korrigerade ett problem som förhindrade icke-adminoperatorer från att skicka webAnalytics-leveranser. (NEO-62750)
+* Ett problem har korrigerats som förhindrar att webbläsare lägger till extra mellanslag när villkorsstyrt innehåll används i en leverans. (NEO-62132)
+* Korrigerade ett regressionsproblem som förhindrade att den aktiva kontaktberäkningen fungerade korrekt i faktureringsarbetsflödet när målscheman som är associerade med flera loggscheman användes. (NEO-61468)
+* Korrigerade ett problem som kan leda till ett fel och förhindra att du rullar när du redigerar innehållet i en leverans. (NEO-61364)
+* Ett problem som gjorde att ett popup-fönster öppnades när du klickade på en bild i e-postredigeraren har åtgärdats. (NEO-60752)
+* Korrigerade ett problem som kunde leda till att specialtecken i HTML-innehållet i en leverans kodades felaktigt i flera webbläsare. (NEO-60081)
+* Ett synkroniseringsfel som kan uppstå när arbetsflödesaktiviteten i InSMS används har korrigerats. (NEO-59544)
+* Ett problem har korrigerats när Big Query-kopplingen användes med tidsstämpel- eller datetime-fält. (NEO-59502, NEO-49768)
+* Ett problem som gjorde att du inte kunde använda kumulativa leveransrapporter har korrigerats. (NEO-59211)
+* Korrigerade ett problem som kunde leda till fel när målgrupper delades med People Core Service. (NEO-58637)
+* Ett problem har korrigerats när spegelsidan för en leverans visades. (NEO-58325)
+* Ett problem som gjorde att xtk-uttrycket XtkLibrary.Right() inte fungerade har åtgärdats. (NEO-57870)
+* Korrigerade ett problem som ledde till att formategenskapen för body-taggen ändrades när en bild överfördes i Digital Content Editor. (NEO-57697)
+* Ett problem med specialtecken vid batchexport med CRM-anslutningsaktiviteten har korrigerats. (NEO-54300)
+* Korrigerade ett problem som förhindrade massinläsning från att arbeta med datatyperna &quot;string&quot; när en datainläsningsaktivitet och Big Query-kopplingen användes. (NEO-53748)
+* Korrigerade ett cachenyckelproblem som kunde leda till problem med återgivningen. (NEO-51516, NEO-49995)
+* Korrigerade ett problem som kan leda till ett valideringsfel när en direktmeddelandeleverans skickas med targetMapping med godkännanden. (NEO-50758)
+* Korrigerade ett frågehanteringsproblem som kunde påverka leveransresultatet. (NEO-49991)
+* Ett problem har korrigerats när externa konton används i aktiviteter för kampanjarbetsflöde, vilket kan leda till problem med konfigurationen av externa konton. (NEO-49959)
+* Korrigerade ett prestandaproblem när push-meddelanden skickades. (NEO-49953) Korrigerade ett fel som kunde medföra att japanska tecken inte visades korrekt vid export av rapporter (NEO-49308).
+* Korrigerade ett fel som gjorde att Tomcat-felrapporten visade för mycket felinformation. (NEO-49029)
+* Korrigerade ett problem som kunde leda till ett leveransfel vid användning av ett stort antal erbjudanden. (NEO-48807)
+* Ett problem som kunde förhindra **Uppdatera data** arbetsflödesaktiviteten fungerar inte som den ska. (NEO-48140)
+* Korrigerade ett problem som kunde förhindra att klickspårningsdata synkroniseras för leveranser med ett annat externt konto än e-post.(NEO-47277)
+* Korrigerade ett problem som kunde förhindra att loggar för realtidsspårning synkroniseras på Message Center-marknadsinstansen. (NEO-42540)
+* Ett problem som gjorde att arbetsyteprefixet inte kunde visas i identifieringsfönstret för ett schema för databastabeller i Snowflake har korrigerats. (NEO-40297)
+* Korrigerade ett fel som förhindrade `<img-amp>` taggar från att arbeta med e-postinnehåll. (NEO-38685)
+* Korrigerade ett problem som kunde få arkiveringsarbetsflödet i Message Center att misslyckas när ett HTTP-relä användes. (NEO-33783)
+* Korrigerade ett problem som kunde orsaka fel i teckensnittsnamn och storlek i e-postinnehållets redigerare. (NEO-61342)
+
+## Version 7.3.3 – build 9359 {#release-7-3-3}
+
+[!BADGE Begränsad tillgänglighet]{type=Neutral url="https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/rn-overview.html?lang=sv#rn-statuses" tooltip="Begränsad tillgänglighet"}
 
 >[!CAUTION]
 >
