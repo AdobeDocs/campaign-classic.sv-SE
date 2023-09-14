@@ -8,9 +8,9 @@ role: User
 level: Beginner
 exl-id: d65869ca-a785-4327-8e8d-791c28e4696c
 source-git-commit: 155fbcd2846cfc5a8db25194bd8d7007356db24e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1869'
-ht-degree: 57%
+ht-degree: 100%
 
 ---
 
@@ -26,15 +26,15 @@ Den här sidan listar nya funktioner, förbättringar och korrigeringar som komm
 >
 >Uppgradering av klientkonsolen är obligatorisk. Lär dig hur du uppgraderar din klientkonsol på den här [sidan](../../installation/using/installing-the-client-console.md).
 >
-> Om du använder [Campaign - Microsoft Dynamics CRM Connector](../../platform/using/crm-connectors.md)måste ni uppgradera både er marknadsföring och era mellanleverantörsservrar med den här nya versionen.
+> Om du använder [Campaign – Microsoft Dynamics CRM Connector](../../platform/using/crm-connectors.md)måste du uppgradera både din marknadsföring och dina mid-sourcingsservrar med den här nya builden.
 
 _7 september 2023_
 
 **Säkerhetsförbättring**
 
-* Säkerheten har förbättrats i IMS API:er. Klientkänslig information (t.ex. åtkomsttoken) har tagits bort från URL-parametrar. Dessa autentiseringsuppgifter skickas nu i post data- eller auktoriseringshuvudet, vilket ger en säkrare kommunikationsprocess. (NEO-63045)
+* Säkerheten har förbättrats i API:erna för IMS. Klientkänslig information (t.ex. åtkomsttoken) har tagits bort från URL-parametrar. Dessa referenser skickas nu i postdata- eller auktoriseringshuvudet, vilket säkerställer en säkrare kommunikationsprocess. (NEO-63045)
 * Säkerheten har förbättrats i webbprogram för att förhindra DDOS-attacker. (NEO-50757)
-* Skyddet har förbättrats för att förhindra att PII-data visas i webbloggfelen. (NEO-46827)
+* Säkerheten har förbättrats för att förhindra att PII-data visas i webbloggfelen. (NEO-46827)
 * Säkerheten har optimerats för att förhindra att säkerhetstoken inkluderas i URL:en för Campaign-hemsidan. (NEO-38519)
 
 **Kompatibilitetsuppdateringar**
@@ -46,43 +46,44 @@ _7 september 2023_
 
 * Parametern MaxWorkingSetMb i serverkonfigurationsfilen (serverConf.xml) har ändrats för att optimera minnesallokeringen för leveranser. (NEO-49204)
 * Det externa BigQuery-kontot har förbättrats med nya alternativ som används för att konfigurera GCloud SDK. (NEO-63879) [Läs mer](../../installation/using/configure-fda-google-big-query.md#google-external)
-* En ny `cusHeader` har lagts till i serverkonfigurationsfilen (serverConf.xml). Du kan lägga till anpassade rubriker när du överför en fil från en extern server. (NEO-58339) [Läs mer](../../installation/using/the-server-configuration-file.md#cusheaders).
+* En ny `cusHeader` har lagts till i serverkonfigurationsfilen (serverConf.xml). Den låter dig lägga till anpassade rubriker när du laddar upp en fil från en extern server. (NEO-58339) [Läs mer](../../installation/using/the-server-configuration-file.md#cusheaders).
 * Hanteringen av spårningsloggen har förbättrats för att undvika negativa ID:n för lastMsgId. Den har ändrats från int32 till int64. (NEO-52290)
-* Arbetsflödet för leverans mellan olika källor (leveransstatistik) har lagts till automatiskt. Det nya arbetsflödet synkroniserar leveransstatistik (nms:deliveryStat) från mitten till marknadsinstans. (NEO-36802)
+* Mid-sourcingsarbetsflödet (leveransstatistik) har lagts till direkt. Det nya arbetsflödet synkroniserar leveransstatistik (nms:deliveryStat) från mitten till marknadsinstansen. (NEO-36802)
 
 **Korrigeringar**
 
 * Korrigerade ett problem som kunde inträffa när en tjänstbegäran gjordes före IMS-inloggning, om autentiseringen av anropet till tjänsten använde en tjänsttoken. (NEO-64903)
-* Ett regressionsproblem som kan leda till rullningsproblem har korrigerats i Digital Content Editor. (NEO-64671, NEO-59256)
-* Korrigerade ett regressionsproblem när innehåll klistrades in från Excel till Digital Content Editor. (NEO-63287)
+* Korrigerade ett regressionsproblem som kan leda till skrollningsproblem när du använder Redigeraren för digitalt innehåll. (NEO-64671, NEO-59256)
+* Korrigerade ett regressionsproblem när innehåll klistrades in från Excel till Redigeraren för digitalt innehåll. (NEO-63287)
 * Korrigerade ett problem som kunde förhindra att webbprogram visas korrekt i v5-kompatibilitetsläge. (NEO-63174)
-* Korrigerade ett problem som förhindrade icke-adminoperatorer från att skicka webAnalytics-leveranser. (NEO-62750)
-* Ett problem har korrigerats som förhindrar att webbläsare lägger till extra mellanslag när villkorsstyrt innehåll används i en leverans. (NEO-62132)
+* Korrigerade ett problem som förhindrade icke-adminoperatörer från att skicka webAnalytics-leveranser. (NEO-62750)
+* Korrigerade ett problem som förhindrar att webbläsare lägger till extra mellanslag när villkorsstyrt innehåll används i en leverans. (NEO-62132)
 * Korrigerade ett regressionsproblem som förhindrade att den aktiva kontaktberäkningen fungerade korrekt i faktureringsarbetsflödet när målscheman som är associerade med flera loggscheman användes. (NEO-61468)
-* Korrigerade ett problem som kan leda till ett fel och förhindra att du rullar när du redigerar innehållet i en leverans. (NEO-61364)
-* Ett problem som gjorde att ett popup-fönster öppnades när du klickade på en bild i e-postredigeraren har åtgärdats. (NEO-60752)
+* Korrigerade ett problem som kan leda till ett fel och förhindra att du skrollar när du redigerar innehållet i en leverans. (NEO-61364)
+* Korrigerade ett problem som gjorde att ett popup-fönster öppnades när du klickade på en bild i e-postredigeraren. (NEO-60752)
 * Korrigerade ett problem som kunde leda till att specialtecken i HTML-innehållet i en leverans kodades felaktigt i flera webbläsare. (NEO-60081)
-* Ett synkroniseringsfel som kan uppstå när arbetsflödesaktiviteten i InSMS används har korrigerats. (NEO-59544)
-* Ett problem har korrigerats när Big Query-kopplingen användes med tidsstämpel- eller datetime-fält. (NEO-59502, NEO-49768)
-* Ett problem som gjorde att du inte kunde använda kumulativa leveransrapporter har korrigerats. (NEO-59211)
+* Korrigerade ett synkroniseringsfel som kan uppstå när arbetsflödesaktiviteten i InSMS används. (NEO-59544)
+* Korrigerade ett problem när Big Query-anslutningen användes med fält för tidsstämpel eller datum/tid. (NEO-59502, NEO-49768)
+* Korrigerade ett problem som gjorde att du inte kunde använda kumulativa leveransrapporter. (NEO-59211)
 * Korrigerade ett problem som kunde leda till fel när målgrupper delades med People Core Service. (NEO-58637)
-* Ett problem har korrigerats när spegelsidan för en leverans visades. (NEO-58325)
-* Ett problem som gjorde att xtk-uttrycket XtkLibrary.Right() inte fungerade har åtgärdats. (NEO-57870)
-* Korrigerade ett problem som ledde till att formategenskapen för body-taggen ändrades när en bild överfördes i Digital Content Editor. (NEO-57697)
-* Ett problem med specialtecken vid batchexport med CRM-anslutningsaktiviteten har korrigerats. (NEO-54300)
-* Korrigerade ett problem som förhindrade massinläsning från att arbeta med datatyperna &quot;string&quot; när en datainläsningsaktivitet och Big Query-kopplingen användes. (NEO-53748)
+* Korrigerade ett problem när spegelsidan för en leverans visades. (NEO-58325)
+* Korrigerade ett problem som gjorde att xtk-uttrycket XtkLibrary.Right() inte fungerade. (NEO-57870)
+* Korrigerade ett problem som ledde till att formategenskapen för brödtexttaggen ändrades när en bild laddades upp i Redigeraren för digitalt innehåll. (NEO-57697)
+* Korrigerade ett problem med specialtecken vid utförandet av massexport med CRM-anslutningsaktiviteten. (NEO-54300)
+* Korrigerade ett problem som förhindrade massinläsning från att arbeta med datatyperna ”sträng” när en datainläsningsaktivitet och Big Query-anslutningen användes. (NEO-53748)
 * Korrigerade ett cachenyckelproblem som kunde leda till problem med återgivningen. (NEO-51516, NEO-49995)
-* Korrigerade ett problem som kan leda till ett valideringsfel när en direktmeddelandeleverans skickas med targetMapping med godkännanden. (NEO-50758)
+* Korrigerade ett problem som kan leda till ett valideringsfel när en leverans med direktmeddelanden skickas med targetMapping med godkännanden. (NEO-50758)
 * Korrigerade ett frågehanteringsproblem som kunde påverka leveransresultatet. (NEO-49991)
-* Ett problem har korrigerats när externa konton används i aktiviteter för kampanjarbetsflöde, vilket kan leda till problem med konfigurationen av externa konton. (NEO-49959)
-* Korrigerade ett prestandaproblem när push-meddelanden skickades. (NEO-49953) Korrigerade ett fel som kunde medföra att japanska tecken inte visades korrekt vid export av rapporter (NEO-49308).
+* Korrigerade ett problem när externa konton används i aktiviteter för Campaign-arbetsflöde, vilket kan leda till problem med konfigurationen av externa konton. (NEO-49959)
+* Korrigerade ett prestandaproblem när push-meddelanden skickades. (NEO-49953) 
+Korrigerade ett fel som kunde medföra att japanska tecken inte visades korrekt vid export av rapporter (NEO-49308).
 * Korrigerade ett fel som gjorde att Tomcat-felrapporten visade för mycket felinformation. (NEO-49029)
 * Korrigerade ett problem som kunde leda till ett leveransfel vid användning av ett stort antal erbjudanden. (NEO-48807)
-* Ett problem som kunde förhindra **Uppdatera data** arbetsflödesaktiviteten fungerar inte som den ska. (NEO-48140)
+* Korrigerade ett problem som kunde förhindra att arbetsflödesaktiviteten **Uppdatera data** fungerade korrekt. (NEO-48140)
 * Korrigerade ett problem som kunde förhindra att klickspårningsdata synkroniseras för leveranser med ett annat externt konto än e-post.(NEO-47277)
 * Korrigerade ett problem som kunde förhindra att loggar för realtidsspårning synkroniseras på Message Center-marknadsinstansen. (NEO-42540)
-* Ett problem som gjorde att arbetsyteprefixet inte kunde visas i identifieringsfönstret för ett schema för databastabeller i Snowflake har korrigerats. (NEO-40297)
-* Korrigerade ett fel som förhindrade `<img-amp>` taggar från att arbeta med e-postinnehåll. (NEO-38685)
+* Korrigerade ett problem som gjorde att arbetsyteprefixet inte kunde visas i identifieringsfönstret för ett schema för databastabeller i Snowflake. (NEO-40297)
+* Korrigerade ett fel som förhindrade `<img-amp>`-taggar från att arbeta med e-postinnehåll. (NEO-38685)
 * Korrigerade ett problem som kunde få arkiveringsarbetsflödet i Message Center att misslyckas när ett HTTP-relä användes. (NEO-33783)
 * Korrigerade ett problem som kunde orsaka fel i teckensnittsnamn och storlek i e-postinnehållets redigerare. (NEO-61342)
 
