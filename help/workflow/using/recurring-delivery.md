@@ -2,13 +2,13 @@
 product: campaign
 title: Återkommande leverans
 description: Läs mer om arbetsflödesaktiviteten Återkommande leverans
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+badge-v7-only: label="v7" type="Informative" tooltip="Gäller endast Campaign Classic v7"
 feature: Workflows
 exl-id: efd2cdfb-2e5f-4672-8be8-a424481b11ed
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 05210269da2a32310c19911a3bc32240c84dc7ad
 workflow-type: tm+mt
-source-wordcount: '271'
-ht-degree: 17%
+source-wordcount: '277'
+ht-degree: 19%
 
 ---
 
@@ -34,24 +34,24 @@ Konfigurationsprocessen för den här aktiviteten liknar den för att skapa en l
 
 Ett exempel på den här aktiviteten som används finns i [section](sending-a-birthday-email.md#creating-a-recurring-delivery-in-a-targeting-workflow).
 
-## Så här ställer du in återkommande leverans
+## Så här ställer du in återkommande leverans {#set-up-recurring-delivery}
 
 A **återkommande leverans** skapar en ny leveransinstans varje gång den körs. Om arbetsflödet till exempel är schemalagt att köras en gång i veckan resulterar det i 52 leveranser efter ett år. Det innebär också att de breda loggarna och spårningsloggarna separeras av varje leveransinstans.
 
 ![Återkommande leverans](assets/delivery_recurring.jpg)
 
-Om du vill stoppa en återkommande leverans från att köras bör du helt avbryta kampanjen eller stoppa arbetsflödet som körs. Om du stoppar leveransen från kontrollpanelen för Campaign stoppas endast leveransförekomsten: nästa instans av den återkommande leveransen fortsätter att skapas vid varje körning av arbetsflödet.
+Om du vill stoppa en återkommande leverans från att köras bör du helt avbryta kampanjen eller stoppa arbetsflödet som körs. Om du stoppar leveransen från kontrollpanelen för Campaign kommer leveransförekomsten endast att stoppas: nästa instans av den återkommande leveransen kommer att fortsätta skapas vid varje arbetsflödeskörning.
 
 >[!NOTE]
 >
->Det går inte att skicka ett korrektur från en **[!UICONTROL Recurring delivery]** typaktivitet.
+>Det går inte att skicka ett bevis från en **[!UICONTROL Recurring delivery]** typaktivitet.
 > 
->Om du vill skapa en leverans direkt via ett kampanjarbetsflöde använder du de kanalspecifika aktiviteter som är förkonfigurerade (t.ex. **[!UICONTROL Email delivery]**).
+>Om du vill skapa en leverans direkt via ett kampanjarbetsflöde använder du de kanalspecifika aktiviteter som är förkonfigurerade (t.ex. **[!UICONTROL Recurring delivery]**).
 
-## Självstudievideo (#reciing-delivery-video)
+## Självstudievideo {#recurring-delivery-video}
 
 I den här videon förklaras hur du konfigurerar en återkommande leverans och en schemaläggningsaktivitet.
 
 >[!VIDEO](https://video.tv.adobe.com/v/25040?quality=12)
 
-Det finns fler instruktionsvideor för Campaign Classic [här](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=sv).
+Det finns fler videor med Campaign Classic om hur man gör [här](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=sv).
