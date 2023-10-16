@@ -2,15 +2,15 @@
 product: campaign
 title: Exportera data från Campaign till Adobe Experience Platform
 description: Lär dig hur du exporterar data från Campaign Classic till Adobe Experience Platform
-feature: Platform Integration
+feature: Experience Platform Integration
 badge-v7-only: label="v7" type="Informative" tooltip="Gäller endast Campaign Classic v7"
 audience: integrations
 content-type: reference
 exl-id: 8d1404c5-030b-47fe-a4c3-e72f15f09bbb
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: d15592aaccf036fc956049e611139ea5a46e9fc0
 workflow-type: tm+mt
 source-wordcount: '504'
-ht-degree: 4%
+ht-degree: 5%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 4%
 
 
 
-Om du vill exportera Campaign Classic-data till Adobe Real-time Customer Data Platform (RTCDP) måste du först skapa ett arbetsflöde i Campaign Classic för att exportera de data du vill dela till din S3- eller Azure-blob-lagringsplats.
+Om du vill exportera data till Adobe Real-time Customer Data Platform (RTCDP) måste du först skapa ett arbetsflöde i Campaign Classic för att kunna exportera de data du vill dela till din S3- eller Azure-blob-lagringsplats.
 
 När arbetsflödet har konfigurerats och data har skickats till din lagringsplats måste du ansluta din S3- eller Azure-blob-lagringsplats som en **Källa** i Adobe Experience Platform.
 
@@ -48,7 +48,7 @@ Arbetsflödet nedan extraherar till exempel regelbundet loggar in i en CSV-fil o
 
 Huvudstegen för att ansluta din S3- eller Azure-blobblagringsplats som en **Källa** i Adobe Experience Platform listas nedan. Detaljerad information om varje steg finns i [Dokumentation för källkopplingar](https://experienceleague.adobe.com/docs/experience-platform/sources/home.htmll?lang=sv).
 
-1. På Adobe Experience-plattformen **[!UICONTROL Sources]** skapar du en anslutning till lagringsplatsen:
+1. I Adobe Experience Platform **[!UICONTROL Sources]** skapar du en anslutning till lagringsplatsen:
 
    * [Skapa en Amazon S3-källanslutning](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/cloud-storage/s3.html)
    * [Azure Blob-koppling](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/cloud-storage/blob.html)
