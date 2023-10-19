@@ -4,10 +4,10 @@ product: campaign
 title: Produktdokumentation för Adobe Campaign Classic v7
 feature: Overview
 exl-id: 6b3f1689-80de-49fd-b7ee-7a2a1931d157
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: baa1cfe3b8e65daee7902c85c0ca3ef293b44657
 workflow-type: tm+mt
-source-wordcount: '183'
-ht-degree: 60%
+source-wordcount: '171'
+ht-degree: 64%
 
 ---
 
@@ -17,13 +17,11 @@ ht-degree: 60%
 
 ## Nyheter
 
-* **[Marsutgåvan är live!](rn/using/latest-release.md)**<br/> Upptäck nya funktioner, förbättringar och korrigeringar i versionsinformationen
-
-* **[Versionsprogram 2022](technotes/using/dc-migration.md)**<br/> Uppgradera din miljö och förbättra säkerhet, infrastruktur och prestanda
+* **[Septemberversionen är live!](rn/using/latest-release.md)**<br/> Upptäck nya funktioner, förbättringar och korrigeringar i versionsinformationen
 
 <!--* **[Secure your Campaign environment](technotes/using/tech-stack-upgrade.md)**<br/> Update to the latest versions to secure your Campaign platform-->
 
-* **[Uppdatera integreringen med Adobe Experience Cloud Triggers](integrations/using/configuring-adobe-io.md)**<br/> Den gamla autentiseringstjänsten för autentisering har nått slutet av livscykeln: du måste migrera till Adobe I/O
+* **[Uppdatera integreringen med Adobe Experience Cloud](integrations/using/configuring-adobe-io.md)**<br/> Den gamla autentiseringstjänsten för autentisering har nått slutet av livscykeln: du måste migrera till Adobe I/O
 
 [Fler uppdateringar](rn/using/documentation-updates.md)
 
