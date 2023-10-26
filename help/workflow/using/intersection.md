@@ -2,13 +2,13 @@
 product: campaign
 title: Skärningspunkt
 description: Skärningspunkt
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+badge-v7-only: label="v7" type="Informative" tooltip="Gäller endast Campaign Classic v7"
 feature: Workflows, Targeting Activity
 exl-id: f426bf02-9899-49eb-b699-728d51b57c64
 source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
-source-wordcount: '436'
-ht-degree: 1%
+source-wordcount: '443'
+ht-degree: 2%
 
 ---
 
@@ -25,7 +25,7 @@ ht-degree: 1%
 
 An **Skärningspunkt** Aktivitet av typen -typ skapar ett mål från skärningspunkten för de mottagna målen.
 
-Med en skärningspunkt kan du bara extrahera den population som är gemensam för alla inkommande aktivitetsresultat. Målet skapas med alla mottagna resultat: Alla tidigare aktiviteter måste därför avslutas innan skärningen kan utföras. Om du vill konfigurera den här aktiviteten måste du ange en etikett för den samt alternativ för resultatet.
+Med en skärningspunkt kan du bara extrahera den population som är gemensam för alla inkommande aktivitetsresultat. Målet skapas med alla mottagna resultat: alla tidigare aktiviteter måste därför avslutas innan skärningspunkten kan utföras. Om du vill konfigurera den här aktiviteten måste du ange en etikett för den samt alternativ för resultatet.
 
 ![](assets/s_user_segmentation_inter.png)
 
@@ -41,7 +41,7 @@ I följande exempel är syftet med skärningen att beräkna mottagarna som är g
 
 1. Efter tre enkla frågor infogar du en **[!UICONTROL Intersection]** -type-aktivitet.
 
-   I detta exempel sökningarna avser män, mottagare i Paris och mottagare mellan 18 och 30 år.
+   I det här exemplet är frågorna avsedda för män, mottagare i Paris och mottagare mellan 18 och 30 år.
 
 1. Konfigurera skärningspunkten. Om du vill göra det väljer du **[!UICONTROL Keys only]** avstämningsmetod eftersom populationerna som är ett resultat av frågorna innehåller konsekventa data.
 1. Om du har angett ytterligare data för frågorna kan du välja att behålla endast de som är delade av mottagarna genom att markera den relevanta rutan.
