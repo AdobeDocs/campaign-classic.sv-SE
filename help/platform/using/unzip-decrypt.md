@@ -2,14 +2,14 @@
 product: campaign
 title: Zippa upp eller dekryptera en fil
 description: Lär dig packa upp eller dekryptera en fil i Campaign innan du bearbetar den
-feature: Workflows
+feature: Workflows, Encryption
 badge-v7: label="v7" type="Informative" tooltip="Gäller Campaign Classic v7"
 badge-v8: label="v8" type="Positive" tooltip="Gäller även Campaign v8"
 audience: platform
 content-type: reference
 topic-tags: importing-and-exporting-data
 exl-id: 1a79da3b-2abc-4bfc-a0ee-8471c478638d
-source-git-commit: 32c2ce24bdd62724e4b4ff66f4664e8faa259b4b
+source-git-commit: a2106e55617209f28da42c50008d16188563b2da
 workflow-type: tm+mt
 source-wordcount: '739'
 ht-degree: 11%

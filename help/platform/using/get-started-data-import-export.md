@@ -2,14 +2,14 @@
 product: campaign
 title: Kom igång med dataimport och export
 description: Läs mer om import och export av data i Campaign
-feature: Data Management
+feature: Data Management, Encryption
 badge-v7: label="v7" type="Informative" tooltip="Gäller Campaign Classic v7"
 badge-v8: label="v8" type="Positive" tooltip="Gäller även Campaign v8"
 audience: platform
 content-type: reference
 topic-tags: importing-and-exporting-data
 exl-id: d6055d97-75fc-4ed7-89bd-8336157454eb
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: a2106e55617209f28da42c50008d16188563b2da
 workflow-type: tm+mt
 source-wordcount: '337'
 ht-degree: 12%
@@ -40,7 +40,7 @@ Mer information om detta finns i [det här avsnittet](../../platform/using/impor
 
 <img src="assets/do-not-localize/icon_templates.svg" width="60px">
 
-Dessutom tillhandahåller Campaign Classic **allmän import och export** som gör att du kan skapa tillfälliga import- eller exportjobb.
+Dessutom innehåller Campaign Classicen **allmän import och export** som gör att du kan skapa tillfälliga import- eller exportjobb.
 
 Import och export konfigureras i dedikerade mallar som du kan konfigurera och använda för att starta och övervaka import- och exportjobb.
 
@@ -53,7 +53,7 @@ Mer information om generisk import och export finns i [det här avsnittet](../..
 
 <img src="assets/do-not-localize/icon_encrypt.svg" width="60px">
 
-I Campaign Classic kan du importera komprimerade eller krypterade filer och exportera komprimerade eller krypterade filer.
+Med Campaign Classic kan du importera komprimerade eller krypterade filer och exportera komprimerade eller krypterade filer.
 
 Dessa åtgärder utförs i arbetsflöden genom att förbearbetningssteg tillämpas på de data som du vill utnyttja.
 

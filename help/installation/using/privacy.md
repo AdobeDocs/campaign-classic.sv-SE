@@ -5,17 +5,14 @@ description: Lär dig de effektivaste strategierna för säkerhet när det gäll
 feature: Installation, Privacy, Privacy Tools, URL Personalization
 badge-v7-only: label="v7" type="Informative" tooltip="Gäller endast Campaign Classic v7"
 exl-id: 0a3473bf-0528-486d-a799-8db86fece522
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: a2106e55617209f28da42c50008d16188563b2da
 workflow-type: tm+mt
 source-wordcount: '852'
-ht-degree: 2%
+ht-degree: 3%
 
 ---
 
 # Personalisering och sekretess {#privacy}
-
-
-
 
 ## URL-anpassning {#url-personalization}
 
@@ -58,7 +55,7 @@ Dessutom kan du använda en förbättring för att inaktivera URL:er som generer
 
 Om du kör i version 19.1.4 kan du få problem med push-meddelandeleveranser med hjälp av spårningslänkar eller leveranser med ankartaggar. I så fall rekommenderar vi att du inaktiverar URL-signatur.
 
-Som kampanjvärd, hanterad Cloud Services eller hybrid-kund måste ni kontakta [Kundtjänst](https://helpx.adobe.com/se/enterprise/using/support-for-experience-cloud.html) för att inaktivera URL-signatur.
+Som kampanjvärd, hanterad Cloud Service eller hybrid-kund måste ni kontakta [Kundtjänst](https://helpx.adobe.com/se/enterprise/using/support-for-experience-cloud.html) för att inaktivera URL-signatur.
 
 Om du kör Campaign i en hybridarkitektur måste du se till att den värdbaserade mellankällinstansen har uppgraderats enligt följande innan du aktiverar URL-signatur:
 
