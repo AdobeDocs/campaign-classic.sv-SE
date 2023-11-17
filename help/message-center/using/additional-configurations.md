@@ -8,9 +8,9 @@ audience: message-center
 content-type: reference
 topic-tags: instance-configuration
 exl-id: 4d25d740-db57-4d18-8cae-2dd49c4a786e
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: 52dcc8c01c5ce2421bfb59235bd0e458e7c8122f
 workflow-type: tm+mt
-source-wordcount: '754'
+source-wordcount: '812'
 ht-degree: 7%
 
 ---
@@ -92,6 +92,12 @@ På körningsinstansen/instanserna kan du komma åt de tekniska arbetsflödena f
    * **[!UICONTROL Ignored by the delivery]** : den här statusen kopieras från leveransloggarna. Det betyder att leveransen ignorerats.
    * **[!UICONTROL Delivery failed]** : den här statusen kopieras från leveransloggarna. Det betyder att leveransen misslyckats.
    * **[!UICONTROL Event not taken into account]** : händelsen kunde inte länkas till en meddelandemall. Händelsen kommer inte att bearbetas.
+
+### Arbetsflödesschema för arkivering
+
+Undvik att ändra **arkiveringsflöde** schema som körs på kontrollinstansen. Annars kan vissa spårningsdata som hämtas från körningsinstansen gå förlorade.
+
+Om du ändrar schemat för arkiveringsarbetsflödet måste du också ändra **arbetsflöde för spårning** schemalägg körningsinstansen så att den matchar arbetsflödesschemat för arkivering i kontrollinstansen.
 
 ## Konfigurera multibranding {#configuring-multibranding}
 
