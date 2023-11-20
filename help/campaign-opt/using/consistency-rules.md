@@ -6,9 +6,9 @@ role: User, Data Engineer
 badge-v7-only: label="v7" type="Informative" tooltip="Gäller endast Campaign Classic v7"
 feature: Typology Rules, Campaigns
 exl-id: 757328fa-4698-4f85-a5fa-074b5152ec45
-source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
+source-git-commit: a37e67ef3f348737a099dab00a84b6854bd52e57
 workflow-type: tm+mt
-source-wordcount: '774'
+source-wordcount: '776'
 ht-degree: 4%
 
 ---
@@ -101,7 +101,7 @@ Tillgänglighetsraderna är endast avsedda som information. Om du vill exkludera
 
 ![](assets/campaign_opt_create_capacity_04.png)
 
-Antalet meddelanden som ska bearbetas är jämnt fördelat över det definierade tillgänglighetsintervallet. Detta är särskilt relevant för callcenters eftersom deras högsta antal samtal per dag är begränsat. När det gäller e-postleveranser **[!UICONTROL Do not limit instantaneous delivery capacity]** kan du ignorera det här tillgänglighetsintervallet och skicka e-postmeddelanden samtidigt.
+Det högsta antalet meddelanden som kan bearbetas är jämnt fördelat över det definierade tillgänglighetsintervallet. Detta är särskilt relevant för callcenters eftersom deras högsta antal samtal per dag är begränsat. När det gäller e-postleveranser **[!UICONTROL Do not limit instantaneous delivery capacity]** kan du ignorera det här tillgänglighetsintervallet och skicka e-postmeddelanden samtidigt.
 
 ![](assets/campaign_opt_create_capacity_05.png)
 
