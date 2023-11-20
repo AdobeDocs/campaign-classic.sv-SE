@@ -7,16 +7,14 @@ feature: Analytics Integration
 role: User, Admin
 level: Beginner
 exl-id: 24e002aa-4e86-406b-92c7-74f242ee4b86
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: ccc48c93d81266b0971acc3a549458e0823eeb37
 workflow-type: tm+mt
-source-wordcount: '653'
-ht-degree: 3%
+source-wordcount: '673'
+ht-degree: 4%
 
 ---
 
 # Etablering av Adobe Analytics Connector {#adobe-analytics-connector-provisioning}
-
-
 
 >[!IMPORTANT]
 >
@@ -31,6 +29,12 @@ Integrationen mellan Adobe Campaign Classic och Adobe Analytics autentisering st
 * Om du implementerar en ny koppling är det valfritt att implementera Adobe IMS. Utan en Adobe ID-användare använder Adobe Campaign en teknisk användare för att synkronisera med Adobe Analytics.
 
 För att den här integreringen ska fungera måste du skapa en Adobe Analytics-produktprofil som används exklusivt för Analytics-kontakten. Sedan måste du skapa ett Adobe I/O-projekt.
+
+<!--
+>[!AVAILABILITY]
+>
+> JWT (JSON Web Tokens) is currently in the process of depreciation and is being replaced with OAuth. The transition is being carried out progressively within Campaign's upcoming releases and documentation will be updated to reflect these updates.
+-->
 
 ## Skapa en Adobe Analytics-produktprofil {#analytics-product-profile}
 
@@ -72,7 +76,9 @@ Mer information om produktprofiler finns i [Dokumentation till Admin Console](ht
 
    ![](assets/do-not-localize/triggers_13.png)
 
-1. För **[!UICONTROL Dimensions]** funktioner, lägga till **[!UICONTROL Dimensions]** måste du konfigurera senare.
+1. För **[!UICONTROL Dimensions]** funktioner, lägga till **[!UICONTROL Dimensions]** behövs för framtida konfiguration.
+
+   Kontrollera att de valda Dimensionerna matchar de som ska konfigureras i [Externt konto](adobe-analytics-connector.md#external-account-classic) och justeras mot motsvarande eVars-nummer från [Adobe Analytics](adobe-analytics-connector.md#configure-conversion-success).
 
 1. För **[!UICONTROL Report Suite Tools]** lägger du till följande behörigheter:
 
