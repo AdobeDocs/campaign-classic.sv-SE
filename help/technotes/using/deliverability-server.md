@@ -4,10 +4,10 @@ title: Uppdatera till den nya leveransservern
 description: Lär dig hur du uppdaterar till den nya servern för kampanjleverans
 feature: Technote, Deliverability
 exl-id: bc62ddb9-beff-4861-91ab-dcd0fa1ed199
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: 65b6f91e083c955df044ffeb10f5338104d1ce56
 workflow-type: tm+mt
-source-wordcount: '1319'
-ht-degree: 3%
+source-wordcount: '1356'
+ht-degree: 2%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 3%
 
 Startar [Version v7.2.2](../../rn/using/latest-release.md#release-7-2-2), förlitar sig Adobe Campaign på en ny server för leverans med hög tillgänglighet och som åtgärdar problem med säkerhetsefterlevnad. Campaign Classic synkroniserar nu leveransregler, utsändningsloggar och undertryckningsadress från och till en ny leveransserver. Den gamla leveransservern kommer att avvecklas den 31 augusti 2022.
 
-Som Campaign Classic-kund måste du implementera den nya leveransservern **före 31 augusti 2022**.
+Som Campaign Classic måste ni implementera den nya leveransservern **före 31 augusti 2022**.
 
 >[!NOTE]
 >
@@ -40,12 +40,15 @@ Som en **lokal/hybridkund** måste du uppgradera till [Campaign v7.2.2](../../rn
 
 ## Implementeringssteg {#implementation-steps}
 
-Campaign måste kommunicera med Adobe Shared Services via en IMS-baserad autentisering, vilket ingår i den nya integreringen av leveransservern. Det bästa sättet är att använda den Adobe Developer-baserade gatewaytoken (kallas även Token för tekniskt konto eller Adobe IO JWT).
-
 >[!WARNING]
 >
 >Dessa åtgärder bör endast utföras för hybridimplementeringar och lokala implementeringar.
+
+Campaign måste kommunicera med Adobe Shared Services via en IMS-baserad autentisering, vilket ingår i den nya integreringen av leveransservern. Det bästa sättet är att använda den Adobe Developer-baserade gatewaytoken (kallas även Token för tekniskt konto eller Adobe IO JWT).
+
+>[!AVAILABILITY]
 >
+> JWT (JSON Web Tokens) håller på att skrivas av och ersätts med OAuth. Övergången genomförs stegvis i de kommande versionerna av Campaign och dokumentationen kommer att uppdateras för att återspegla dessa uppdateringar.
 
 ### Förhandskrav{#prerequisites}
 

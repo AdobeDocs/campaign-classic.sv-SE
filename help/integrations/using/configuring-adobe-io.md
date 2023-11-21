@@ -10,16 +10,14 @@ index: y
 internal: n
 snippet: y
 exl-id: ab30f697-3022-4a29-bbdb-14ca12ec9c3e
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: 65b6f91e083c955df044ffeb10f5338104d1ce56
 workflow-type: tm+mt
-source-wordcount: '724'
-ht-degree: 4%
+source-wordcount: '761'
+ht-degree: 5%
 
 ---
 
 # Konfigurera Adobe I/O för utlösare i Adobe Experience Cloud {#configuring-adobe-io}
-
-
 
 >[!CAUTION]
 >
@@ -39,11 +37,11 @@ Kontrollera att du har:
 
 ## Steg 1: Skapa/uppdatera Adobe I/O-projekt {#creating-adobe-io-project}
 
-1. Åtkomst [!DNL Adobe I/O] och logga in med utvecklaråtkomst i din organisation.
+>[!AVAILABILITY]
+>
+> JWT (JSON Web Tokens) håller på att skrivas av och ersätts med OAuth. Övergången genomförs stegvis i de kommande versionerna av Campaign och dokumentationen kommer att uppdateras för att återspegla dessa uppdateringar.
 
-   >[!NOTE]
-   >
-   > Se till att du är inloggad på rätt organisationsportal.
+1. Åtkomst [!DNL Adobe I/O] och logga in med utvecklaråtkomst i din organisation. Se till att du är inloggad på rätt organisationsportal.
 
 1. Extrahera befintlig integrationsklientidentifierare (klient-ID) från instanskonfigurationsfilen ims/authIMSTAClientId. Ett attribut som inte finns eller är tomt anger att Klient-ID inte har konfigurerats.
 
