@@ -7,22 +7,24 @@ badge-v7-only: label="v7" type="Informative" tooltip="Gäller endast Campaign Cl
 role: User
 level: Beginner
 exl-id: 07c1f4a3-cf16-4a9b-b402-e13258799f91
-source-git-commit: 324e26ba1db14e10bb79eee60ba43ddc36e8e94f
+source-git-commit: 8ecb5aba9a070276927e97586ed463ab485717d6
 workflow-type: tm+mt
-source-wordcount: '3607'
-ht-degree: 100%
+source-wordcount: '3645'
+ht-degree: 98%
 
 ---
 
 # Dokumentationsuppdateringar{#documentation-updates}
-
-
 
 Den här sidan visar alla nya funktioner och dokumentationsuppdateringar efter månad och version av Campaign.
 
 Se [Versionsinformationen för Adobe Campaign Classic](../../rn/using/latest-release.md) beträffande versionsrelaterade uppdateringar.
 
 ## 2023
+
+### November 2023
+
+JWT (JSON Web Tokens) håller på att skrivas av och ersätts med OAuth. Övergången genomförs stegvis i de kommande versionerna av Campaign och dokumentationen kommer att uppdateras för att återspegla dessa uppdateringar.
 
 ### Augusti 2023
 
@@ -183,7 +185,7 @@ Ny Vertica Analytics FDA-anslutning – [Läs mer](../../installation/using/conf
 
 Ny Google BigQuery FDA connector – [Läs mer](../../installation/using/configure-fda-google-big-query.md)
 
-Den tekniska arbetsflödesbeskrivningen &quot;Fakturering (fakturering)&quot; omfattar nu de uppgifter som ursprungligen utfördes av &quot;Antal aktiva faktureringsprofiler (billingActiveContactCount)&quot;. [Läs mer](../../workflow/using/about-technical-workflows.md)
+Den tekniska arbetsflödesbeskrivningen Fakturering (fakturering) omfattar nu de uppgifter som ursprungligen utfördes av Antal aktiva faktureringsprofiler (faktureringActiveContactCount). [Läs mer](../../workflow/using/about-technical-workflows.md)
 
 ## Maj 2021 {#may-2021}
 
