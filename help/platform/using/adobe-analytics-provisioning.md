@@ -3,24 +3,25 @@ product: campaign
 title: Adobe Analytics Connector Provisioning
 description: Läs mer om etablering av Adobe Analytics Connector
 badge-v7-only: label="v7" type="Informative" tooltip="Gäller endast Campaign Classic v7"
+badge-v7-prem: label="lokal och hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=sv" tooltip="Gäller endast lokala och hybrida driftsättningar"
 feature: Analytics Integration
 role: User, Admin
 level: Beginner
 exl-id: 24e002aa-4e86-406b-92c7-74f242ee4b86
-source-git-commit: 65b6f91e083c955df044ffeb10f5338104d1ce56
+source-git-commit: 26d1b0bc9886988ff636d322c781a23f95a9bcd0
 workflow-type: tm+mt
-source-wordcount: '710'
-ht-degree: 3%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
 # Etablering av Adobe Analytics Connector {#adobe-analytics-connector-provisioning}
 
->[!IMPORTANT]
+>[!CAUTION]
 >
 > Dessa åtgärder bör endast utföras av Hybrid- och On-Premise-implementeringar.
 >
->För implementeringar via värdtjänst, kontakta [Adobe kundtjänst](https://helpx.adobe.com/se/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) team.
+>För implementeringar av Hosted och Campaign Managed Services kontaktar du [Adobe kundtjänst](https://helpx.adobe.com/se/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) team.
 
 Integrationen mellan Adobe Campaign Classic och Adobe Analytics autentisering stöder Adobe Identity Management Service (IMS):
 
