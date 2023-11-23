@@ -6,10 +6,10 @@ title: Användarhandbok för Campaign Classic v7
 user-guide-description: Med Adobe Campaign kan du använda omfattande kunddata för att skapa, samordna och leverera dynamiska kampanjer som kunderna verkligen vill ha – via e-post, mobiler, offlinekanaler med mera.
 sub-product: adobe campaign classic
 type: Documentation
-source-git-commit: 88ee8d1575f6397a35fb6f7412cd08119a75c131
-workflow-type: ht
-source-wordcount: '2529'
-ht-degree: 100%
+source-git-commit: 6939307c0b33ff662fe4ef9ae0192ae7b500a95c
+workflow-type: tm+mt
+source-wordcount: '2532'
+ht-degree: 99%
 
 ---
 
@@ -652,6 +652,7 @@ ht-degree: 100%
          + [Bästa praxis och begränsningar](installation/using/fda-best-practices.md)
          + Konfigurationsriktlinjer {#config-databases}
             + [Konfigurationssteg](installation/using/configure-fda.md)
+            + [Konfigurera Amazon Redshift](installation/using/configure-fda-redshift.md)
             + [Konfigurera Azure Synapse](installation/using/configure-fda-synapse.md)
             + [Konfigurera Google BigQuery](installation/using/configure-fda-google-big-query.md)
             + [Konfigurera Hadoop](installation/using/configure-fda-hadoop.md)
