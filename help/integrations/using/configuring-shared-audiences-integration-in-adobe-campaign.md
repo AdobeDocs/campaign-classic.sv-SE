@@ -9,10 +9,10 @@ audience: integrations
 content-type: reference
 topic-tags: audience-sharing
 exl-id: a3e26cff-9609-4d91-8976-9213a30c3fd2
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: e6a2986e5355b32164386e1f6d64f52dc6977632
 workflow-type: tm+mt
-source-wordcount: '496'
-ht-degree: 3%
+source-wordcount: '582'
+ht-degree: 4%
 
 ---
 
@@ -30,6 +30,10 @@ När du har skickat in den här begäran fortsätter Adobe till att tillhandahå
 >[!IMPORTANT]
 >
 >Om du använder demodomänen och följer syntaxen **ftp-out.demdex.com** för det externa importkontot och **ftp-in.demdex.com** för det externa exportkontot måste du anpassa implementeringen och gå över till kopplingen för Amazon Simple Storage Service (S3) för att importera eller exportera data. Mer information om hur du konfigurerar dina externa konton med Amazon S3 finns i [section](../../integrations/using/configuring-shared-audiences-integration-in-adobe-campaign.md#step-1--configure-or-check-the-external-accounts-in-adobe-campaign).
+
+Följande diagram visar hur den här integreringen fungerar. Här står AAM för Adobe Audience Manager och AC för Adobe Campaign.
+
+![](assets/aam_diagram.png){align="center"}
 
 ## Steg 1: Konfigurera eller kontrollera externa konton i Adobe Campaign {#step-1--configure-or-check-the-external-accounts-in-adobe-campaign}
 
@@ -87,10 +91,16 @@ Konfigurera **[!UICONTROL Recipient - Visitor ID]** datakälla:
 
 För konfigurationen av integreringen med tjänsten People Core eller Audience Manager måste vi även konfigurera Campaign Tracking-servern.
 
-Du måste kontrollera att Campaign Tracking Server är registrerad på domänen (CNAME). Mer information om delegering av domännamn finns i [den här artikeln](https://experienceleague.adobe.com/docs/control-panel/using/subdomains-and-certificates/setting-up-new-subdomain.html?lang=sv).
+Om du vill att delade målgrupper ska kunna fungera med besökar-ID, måste spårningsserverdomänen vara en underdomän till den klickade URL:en eller huvudwebbplatsen.
+
+>[!IMPORTANT]
+>
+>Du måste kontrollera att Campaign Tracking Server är registrerad på domänen (CNAME). Mer information om delegering av domännamn finns i [den här artikeln](https://experienceleague.adobe.com/docs/control-panel/using/subdomains-and-certificates/setting-up-new-subdomain.html?lang=sv).
 
 ## Steg 4: Konfigurera besökar-ID-tjänsten {#step-4--configure-the-visitor-id-service}
 
 Om din Visitor ID-tjänst aldrig har konfigurerats på dina webbegenskaper eller webbplatser kan du läsa följande [dokument](https://experienceleague.adobe.com/docs/id-service/using/implementation/setup-aam-analytics.html) om du vill veta mer om hur du konfigurerar tjänsten eller följande [video](https://helpx.adobe.com/marketing-cloud/how-to/email-marketing.html#step-two).
+
+Synkronisera kundidentifierare med deklarerat ID med `setCustomerID` i Experience Cloud ID-tjänsten med integreringskoden: `AdobeCampaignID`. The `AdobeCampaignID` ska matcha värdet för avstämningsnyckeln som angetts i mottagardatakällan som konfigurerats i [Steg 2: Konfigurera datakällorna](#step-2--configure-the-data-sources).
 
 Din konfiguration och etablering är färdiga, och integreringen kan nu användas för att importera och exportera målgrupper eller segment.
