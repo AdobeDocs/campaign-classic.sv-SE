@@ -8,7 +8,7 @@ audience: production
 content-type: reference
 topic-tags: data-processing
 exl-id: 75d3a0af-9a14-4083-b1da-2c1b22f57cbe
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: 624978901943b4c74f50c20298c9596f73b25b1b
 workflow-type: tm+mt
 source-wordcount: '2830'
 ht-degree: 0%
@@ -282,7 +282,7 @@ Den här uppgiften tar bort alla arbetsregister som matchar leveranser vars stat
 1. Listan med tabeller med namn som börjar med **wkDlv_** återställs först med följande fråga (postgresq):
 
    ```sql
-   SELECT relname FROM pg_class WHERE relname LIKE Lower('wkDlv_') ESCAPE E'\\' AND relkind IN ('r','v') AND pg_get_userbyid(relowner)<>'postgres'
+   SELECT relname FROM pg_class WHERE relname LIKE Lower('wkDlv_%') ESCAPE E'\\' AND relkind IN ('r','v') AND pg_get_userbyid(relowner)<>'postgres'
    ```
 
 1. Tabellerna som används av pågående arbetsflöden exkluderas sedan. För att göra detta återställs listan över pågående leveranser med följande fråga:

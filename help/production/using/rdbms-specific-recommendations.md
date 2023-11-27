@@ -9,9 +9,9 @@ audience: production
 content-type: reference
 topic-tags: database-maintenance
 exl-id: a586d70b-1b7f-47c2-a821-635098a70e45
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: 624978901943b4c74f50c20298c9596f73b25b1b
 workflow-type: tm+mt
-source-wordcount: '1201'
+source-wordcount: '1256'
 ht-degree: 2%
 
 ---
@@ -82,6 +82,10 @@ I det här avsnittet beskrivs några rekommendationer och bästa metoder som är
    ```
 
 ### Enkelt underhåll {#simple-maintenance}
+
+>[!IMPORTANT]
+>
+>Adobe föreslår starkt att VACUUM FULL inte ska köras på databaskonfigurationer som körs på Campaign Adobe. Det föreslagna underhållet är endast en guide för ON-PREMISE-installationer. För anpassade tabellimplementeringar och scheman kan du använda VACUUM FULL på egen risk eftersom VACUUM (utan övervakning) kan låsa tabeller exklusivt som orsakar fasta frågor - och i vissa fall låsa hela databasen.
 
 I PostgreSQL kan du använda följande vanliga nyckelord:
 
@@ -440,7 +444,7 @@ Exemplet nedan gäller Microsoft SQL Server 2005. Om du använder en annan versi
 
      >[!NOTE]
      >
-     >Beroende på hur konfigurationen ser ut kan du antingen välja de tidigare markerade tabellerna eller alla tabeller i databasen.
+     >Beroende på hur konfigurationen ser ut kan du välja antingen de tidigare markerade tabellerna eller alla tabeller i databasen.
 
    * Om indexfragmenteringshastigheten är högre än 40 % rekommenderas en omgenerering.
 
