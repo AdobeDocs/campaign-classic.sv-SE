@@ -8,10 +8,10 @@ feature: Analytics Integration
 role: User, Admin
 level: Beginner
 exl-id: 24e002aa-4e86-406b-92c7-74f242ee4b86
-source-git-commit: 26d1b0bc9886988ff636d322c781a23f95a9bcd0
+source-git-commit: d690a5c4b9779ccd90b50bfbc74df18f0ac60d14
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '761'
+ht-degree: 9%
 
 ---
 
@@ -25,7 +25,11 @@ ht-degree: 0%
 
 Integrationen mellan Adobe Campaign Classic och Adobe Analytics autentisering stöder Adobe Identity Management Service (IMS):
 
-* Om du hanterar ett migrerat externt konto måste du implementera Adobe IMS och ansluta till Adobe Campaign via en Adobe ID. Användaren som är inloggad via Adobe ID IMS bör vara ägare till **Dataanslutning** i Adobe Analytics och har en uppsättning behörigheter för **Produktprofil** nedan.
+* Om du hanterar ett migrerat externt konto måste du implementera Adobe IMS och ansluta till Adobe Campaign via en Adobe ID.
+
+  Observera att den användare som är inloggad via Adobe ID IMS måste vara ägare till **Dataanslutning** i Adobe Analytics och har behörigheter för **Produktprofil** nämnd [nedan](#analytics-product-profile).
+
+Problemet var att ägaren till dataanslutningen var en annan användare än användaren som loggade in på Campaign och testade integreringen med Analytics.
 
 * Om du implementerar en ny koppling är det valfritt att implementera Adobe IMS. Utan en Adobe ID-användare använder Adobe Campaign en teknisk användare för att synkronisera med Adobe Analytics.
 
@@ -33,7 +37,7 @@ För att den här integreringen ska fungera måste du skapa en Adobe Analytics-p
 
 >[!AVAILABILITY]
 >
-> JWT (JSON Web Tokens) håller på att skrivas av och ersätts med OAuth. Övergången genomförs stegvis i de kommande versionerna av Campaign och dokumentationen kommer att uppdateras för att återspegla dessa uppdateringar.
+> JWT (JSON Web Tokens) håller på att fasas ut och ersätts med OAuth. Övergången genomförs stegvis i de kommande versionerna av Campaign och dokumentationen kommer att uppdateras för att återspegla dessa uppdateringar.
 
 ## Skapa en Adobe Analytics-produktprofil {#analytics-product-profile}
 
