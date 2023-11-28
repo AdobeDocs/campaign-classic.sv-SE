@@ -7,10 +7,10 @@ badge-v7-only: label="v7" type="Informative" tooltip="Gäller endast Campaign Cl
 role: User
 level: Beginner
 exl-id: d60d67de-6618-4f3b-be4a-ad7633ab5645
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
-workflow-type: ht
-source-wordcount: '1515'
-ht-degree: 100%
+source-git-commit: abaeef25b03a9699a4851786380d467bfa299c9f
+workflow-type: tm+mt
+source-wordcount: '1519'
+ht-degree: 98%
 
 ---
 
@@ -46,7 +46,7 @@ Kunder uppmanas att se över om de använder funktionen i den aktuella driftsät
   </tr>
 <tr>
  <td>Social marknadsföring med Facebook</td>
- <td>Social marknadsföring med Facebook är nu inaktuell. Du kan använda Twitter-integrering för att publicera på sociala medier, eller arbeta med Adobe för att skapa en anpassad kanal.
+ <td>Social marknadsföring med Facebook är nu inaktuell. Du kan använda X-integrering (tidigare Twitter) för att publicera på sociala medier, eller arbeta med Adobe för att skapa en anpassad kanal.
  <p></p>
   <p>Måldatum för borttagning: i slutet av 2023</p>
   </td>

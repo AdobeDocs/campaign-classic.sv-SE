@@ -8,10 +8,10 @@ audience: platform
 content-type: reference
 topic-tags: administration-basics
 exl-id: 4a17d5e8-c73f-42e7-b641-0fee6a52c5c0
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: abaeef25b03a9699a4851786380d467bfa299c9f
 workflow-type: tm+mt
-source-wordcount: '1837'
-ht-degree: 7%
+source-wordcount: '1841'
+ht-degree: 8%
 
 ---
 
@@ -119,7 +119,7 @@ Följande kanaler kan konfigureras:
 * [Telefon](../../delivery/using/steps-about-delivery-creation-steps.md#other-channels)
 * [Direktmeddelande](../../delivery/using/about-direct-mail-channel.md)
 * [Byrå](../../delivery/using/steps-about-delivery-creation-steps.md#other-channels)
-* [Twitter](../../social/using/about-social-marketing.md)
+* [X (tidigare Twitter)](../../social/using/about-social-marketing.md)
 * [iOS](../../delivery/using/configuring-the-mobile-application.md)
 * [Android-kanal](../../delivery/using/configuring-the-mobile-application-android.md)
 

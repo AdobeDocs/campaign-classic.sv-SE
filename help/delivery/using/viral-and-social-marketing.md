@@ -6,20 +6,18 @@ feature: Social Marketing
 badge-v7: label="v7" type="Informative" tooltip="Gäller Campaign Classic v7"
 badge-v8: label="v8" type="Positive" tooltip="Gäller även Campaign v8"
 exl-id: 10fd561f-1b07-490e-9f66-d67e44a0def5
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: abaeef25b03a9699a4851786380d467bfa299c9f
 workflow-type: tm+mt
-source-wordcount: '573'
+source-wordcount: '577'
 ht-degree: 2%
 
 ---
 
 # Viral och social marknadsföring{#viral-and-social-marketing}
 
-
-
 Med Adobe Campaign kan ni skapa verktyg för att uppmuntra viral marknadsföring.
 
-Detta gör att mottagare eller besökare på en webbplats kan dela information med sitt nätverk: från att lägga till en länk till sin Facebook- eller Twitter-profil till att skicka ett meddelande till en vän.
+Detta gör att mottagare eller besökare på webbplatser kan dela information med sitt nätverk: från att lägga till en länk till sin Facebook- eller X-profil (tidigare kallad Twitter) till att skicka ett meddelande till en vän.
 
 ![](assets/s_ncs_user_viral_icons.png)
 

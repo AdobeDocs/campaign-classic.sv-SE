@@ -6,10 +6,10 @@ feature: Release Notes
 role: User
 level: Beginner
 exl-id: 0cd6bf20-da72-4cf0-9f5d-d4e8acdd324d
-source-git-commit: dbbc5d9f354357e5ca13eaeffddf67865480070d
+source-git-commit: abaeef25b03a9699a4851786380d467bfa299c9f
 workflow-type: tm+mt
-source-wordcount: '2549'
-ht-degree: 100%
+source-wordcount: '2553'
+ht-degree: 98%
 
 ---
 
@@ -291,7 +291,7 @@ Läs mer på sidan [Funktioner som är inaktuella eller har tagits bort](../../r
 * Korrigerade ett problem som kunde minska minnesanvändningen på servern vid leveransanalys.
 * Korrigerade ett problem som kunde förhindra instansen från att fungera när vissa komplexa frågor skulle köras.
 * Korrigerade ett problem som kunde förhindra att det tekniska arbetsflödet för **synkronisering av Twitter-sidor** kördes. (NEO-28634)
-* Korrigerade ett problem som kunde visa ett felmeddelande relaterat till funktionen decryptPassword när man försökte publicera på Twitter med hjälp av leveransmallen **Tweet (twitter)**. (NEO-28216)
+* Korrigerade ett problem som kunde visa ett felmeddelande relaterat till funktionen decryptPassword vid publicering på X (tidigare Twitter) med **Tweet (twitter)** leveransmall. (NEO-28216)
 * Korrigerade ett fel som uppstod när en **Javascript**-aktivitet användes för att göra en HTTP-begäran i ett arbetsflöde. När portnumret hade definierats i värdnamnet misslyckades anropet med följande fel (NEO-29146):
 
 ```

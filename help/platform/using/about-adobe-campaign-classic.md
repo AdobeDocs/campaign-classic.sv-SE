@@ -7,10 +7,10 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: 8febceb0-9694-4045-a630-a7ff2fd18943
-source-git-commit: be57635a6165790b8c8964d106ed0a3cb76c63af
+source-git-commit: abaeef25b03a9699a4851786380d467bfa299c9f
 workflow-type: tm+mt
-source-wordcount: '930'
-ht-degree: 92%
+source-wordcount: '934'
+ht-degree: 91%
 
 ---
 
@@ -77,7 +77,7 @@ Följande funktioner finns tillgängliga. Beroende på vilket licensavtal du har
 * [MRM](../../mrm/using/about-marketing-resource-management.md) – hantera marknadsföringsresurser och budgetar,
 * [Interaktion](../../interaction/using/interaction-and-offer-management.md) – hantera erbjudanden med Campaign,
 * [Meddelandecenter](../../message-center/using/about-transactional-messaging.md) – skicka transaktionsmeddelanden via e-post, SMS eller mobilappar,
-* [Social marknadsföring](../../social/using/about-social-marketing.md) – kommunicera i sociala medier: Facebook och Twitter,
+* [Social marknadsföring](../../social/using/about-social-marketing.md) - kommunicera i sociala medier: Facebook, X (tidigare Twitter),
 * [Arbetsflöde](../../workflow/using/about-workflows.md)/datahantering – automatisera processer och hantera data med arbetsflöden,
 * [Webbapplikationer](../../web/using/about-web-applications.md) – skapa webbsidor och formulär,
 * [Survey Manager](../../surveys/using/about-surveys.md) – skapa undersökningar och omröstningar online,
@@ -90,8 +90,8 @@ Följande funktioner finns tillgängliga. Beroende på vilket licensavtal du har
 
 ## Självstudievideo {#video}
 
-I den här videon visas huvudfunktionerna och funktionerna för Campaign Classic.
+I den här videon visas Campaign Classicens viktigaste funktioner.
 
 >[!VIDEO](https://video.tv.adobe.com/v/35129?quality=12)
 
-Det finns fler instruktionsvideor för Campaign Classic [här](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=sv).
+Det finns fler videor med Campaign Classic om hur man gör [här](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=sv).

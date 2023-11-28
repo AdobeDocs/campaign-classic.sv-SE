@@ -7,10 +7,10 @@ badge-v7-only: label="v7" type="Informative" tooltip="Gäller endast Campaign Cl
 role: User
 level: Beginner
 exl-id: d65869ca-a785-4327-8e8d-791c28e4696c
-source-git-commit: 155fbcd2846cfc5a8db25194bd8d7007356db24e
-workflow-type: ht
-source-wordcount: '1869'
-ht-degree: 100%
+source-git-commit: abaeef25b03a9699a4851786380d467bfa299c9f
+workflow-type: tm+mt
+source-wordcount: '1873'
+ht-degree: 98%
 
 ---
 
@@ -141,7 +141,7 @@ Läs mer i [kompatibilitetsmatrisen för Campaign](../../rn/using/compatibility-
 
 **Inaktuella funktioner**
 
-* Social marknadsföring med Facebook är nu inaktuell. Du kan använda Twitter-integrering för att publicera på sociala medier, eller arbeta med Adobe för att skapa en anpassad kanal.
+* Social marknadsföring med Facebook är nu inaktuell. Du kan använda X-integrering (tidigare Twitter) för att publicera på sociala medier, eller arbeta med Adobe för att skapa en anpassad kanal.
 * ACS-anslutning (Prime-erbjudande) är nu inaktuell. Du kan använda funktionerna export/import för Campaign för att extrahera och mata in data i båda produkterna.
 
 Läs mer på sidan [Funktioner som är inaktuella eller har tagits bort](deprecated-features.md).

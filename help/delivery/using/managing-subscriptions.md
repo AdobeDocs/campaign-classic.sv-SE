@@ -7,9 +7,9 @@ badge-v8: label="v8" type="Positive" tooltip="Gäller även Campaign v8"
 feature: Subscriptions
 role: User
 exl-id: 16dddd4a-2e1a-4c78-8168-f656657bb9b8
-source-git-commit: d2f5f2a662c022e258fb3cc56c8502c4f4cb2849
+source-git-commit: abaeef25b03a9699a4851786380d467bfa299c9f
 workflow-type: tm+mt
-source-wordcount: '1116'
+source-wordcount: '1120'
 ht-degree: 2%
 
 ---
@@ -51,11 +51,11 @@ Om du vill redigera en befintlig tjänst klickar du på dess namn. Klicka på kn
 
 ![](assets/s_ncs_user_services_add.png)
 
-* Ange namnet på tjänsten i **[!UICONTROL Label]** och välj leveranskanal: e-post, mobil, Facebook, Twitter eller mobilappar.
+* Ange namnet på tjänsten i **[!UICONTROL Label]** och välj leveranskanal: e-post, mobil, Facebook, X (tidigare Twitter) eller mobilapplikationer.
 
   >[!NOTE]
   >
-  >Prenumerationer på facebook och Twitter finns i [det här avsnittet](../../social/using/about-social-marketing.md). Prenumerationer på mobilapplikationer beskrivs i [Om mobilappskanal](about-mobile-app-channel.md).
+  >Facebook- och X-prenumerationer beskrivs i [det här avsnittet](../../social/using/about-social-marketing.md). Prenumerationer på mobilapplikationer beskrivs i [Om mobilappskanal](about-mobile-app-channel.md).
 
 * För en e-posttjänst väljer du **Leveransläge**. Möjliga lägen är: **[!UICONTROL Newsletter]** eller **[!UICONTROL Viral]**.
 * Du kan skicka **bekräftelsemeddelanden** för en prenumeration eller en prenumeration. Välj de leveransmallar som ska användas för att skapa motsvarande leveranser från **[!UICONTROL Subscription]** och **[!UICONTROL Unsubscription]** fält. Dessa mallar måste konfigureras med en **[!UICONTROL Subscription]** målmappning för typ, utan ett definierat mål. Se avsnitt [Om e-postkanal](about-email-channel.md).

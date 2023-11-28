@@ -6,9 +6,9 @@ feature: Overview
 role: User, Data Architect
 level: Beginner
 exl-id: 81f207a0-bb72-450b-abe4-0b229b6b1f3a
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: abaeef25b03a9699a4851786380d467bfa299c9f
 workflow-type: tm+mt
-source-wordcount: '5974'
+source-wordcount: '5978'
 ht-degree: 2%
 
 ---
@@ -119,7 +119,7 @@ Learn more about [Interaction](../../interaction/using/interaction-and-offer-man
 
 +++**Kanal**
 
-En kanal är ett medium genom vilket en kommunikation skickas. Inbyggda kanaler i Adobe Campaign är e-post, SMS, direktreklam, push-meddelanden, LINE och Twitter. Anpassade kanaler kan implementeras för kanalkrav som inte är standard.
+En kanal är ett medium genom vilket en kommunikation skickas. Inbyggda kanaler i Adobe Campaign är e-post, SMS, direktreklam, push-meddelanden, LINE och X (tidigare Twitter). Anpassade kanaler kan implementeras för kanalkrav som inte är standard.
 
 Läs mer om [Kanaler](../../delivery/using/communication-channels.md).
 +++

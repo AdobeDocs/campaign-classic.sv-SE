@@ -1,19 +1,19 @@
 ---
 product: campaign
-title: Installera inbyggda Campaign Classic-paket
+title: Installera inbyggda paket med Campaign Classic
 description: Lär dig hur du installerar inbyggda Campaign-paket
 feature: Installation, Application Settings
 badge-v7-only: label="v7" type="Informative" tooltip="Gäller endast Campaign Classic v7"
 badge-v7-prem: label="lokal och hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=sv" tooltip="Gäller endast lokala och hybrida driftsättningar"
 exl-id: 2bc077c4-ed65-4157-bfc9-df5d0442f476
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: abaeef25b03a9699a4851786380d467bfa299c9f
 workflow-type: tm+mt
-source-wordcount: '1278'
-ht-degree: 5%
+source-wordcount: '1282'
+ht-degree: 6%
 
 ---
 
-# Installera inbyggda Campaign Classic-paket{#installing-campaign-standard-packages}
+# Installera inbyggda paket med Campaign Classic{#installing-campaign-standard-packages}
 
 
 
@@ -98,7 +98,7 @@ I följande tabell visas alla inbyggda Campaign-paket.
   </tr--> 
   <tr> 
    <td> Sociala nätverk (social marknadsföring) <br /> </td> 
-   <td> Synkroniserar Adobe Campaign med Twitter och Facebook. <a href="../../social/using/about-social-marketing.md">Läs mer</a> <br /> </td> 
+   <td> Synkroniserar Adobe Campaign med X (tidigare Twitter) och Facebook. <a href="../../social/using/about-social-marketing.md">Läs mer</a> <br /> </td> 
    <td> Alla</td> 
   </tr> 
   <tr> 
@@ -213,7 +213,7 @@ I följande tabell visas alla inbyggda Campaign-paket.
   </tr> 
   <tr> 
    <td> Sekretessdataskyddsförordningen<br /> </td> 
-   <td> Innehåller ytterligare funktionalitet som kan hjälpa dig att följa sekretesskraven i Campaign Classic. <a href="https://helpx.adobe.com/se/campaign/kb/acc-privacy.html">Läs mer</a> <br /> </td> 
+   <td> Innehåller ytterligare funktionalitet som hjälper dig att följa sekretesskraven i Campaign Classic. <a href="https://helpx.adobe.com/se/campaign/kb/acc-privacy.html">Läs mer</a> <br /> </td> 
    <td> Alla</td> 
   </tr> 
   <tr> 
@@ -241,7 +241,7 @@ I följande tabell visas alla inbyggda Campaign-paket.
 
 ### Paket för meddelandecenter {#message-center-package}
 
-Du måste installera leveranskanaler (e-post, mobilkanal, mobilappskanal, LINE osv.) innan du installerar Transactional Messaging (Message Center-paket). Om du har startat ett meddelandecenterprojekt som bara är till för e-post och behöver lägga till en ny kanal efteråt måste du följa dessa steg:
+Du måste installera leveranskanaler (e-post, mobilkanal, mobilappskanal, LINE osv.) innan du installerar Transactional Messaging (Message Center-paket). Om du har startat ett meddelandecenterprojekt som bara är till för e-post och behöver lägga till en ny kanal i efterhand måste du följa dessa steg:
 
 1. Installera den nya kanalen, till exempel **Mobilkanal**, med hjälp av guiden för paketimport ( **[!UICONTROL Tools > Advanced > Import package > Adobe Campaign package]**).
 1. Importera filen ( **[!UICONTROL Tools > Advanced > Import package > File]**) och välj:

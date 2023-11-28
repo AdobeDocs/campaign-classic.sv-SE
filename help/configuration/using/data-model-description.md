@@ -6,9 +6,9 @@ badge-v7-only: label="v7" type="Informative" tooltip="Gäller endast Campaign Cl
 feature: Data Model
 role: Data Engineer, Developer
 exl-id: fc0fd23c-f9ea-4e30-b47b-a84143d882ca
-source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
+source-git-commit: abaeef25b03a9699a4851786380d467bfa299c9f
 workflow-type: tm+mt
-source-wordcount: '2381'
+source-wordcount: '2385'
 ht-degree: 1%
 
 ---
@@ -261,12 +261,12 @@ Den här tabelluppsättningen är länkad till **Mobilappskanal**, som gör det 
 
 ## Modul för social marknadsföring {#social-marketing-module}
 
-Den här tabelluppsättningen är länkad till **Hantera sociala nätverk** som gör det möjligt att interagera med kunder och potentiella kunder via Facebook och Twitter. Mer information finns i [Om social marknadsföring](../../social/using/about-social-marketing.md).
+Den här tabelluppsättningen är länkad till **Hantera sociala nätverk** som gör det möjligt att interagera med kunder och potentiella kunder via Facebook och X (tidigare Twitter). Mer information finns i [Om social marknadsföring](../../social/using/about-social-marketing.md).
 
 ![](assets/data-model_social.png)
 
 * **NmsVisitor**: Den här tabellen matchar **nms:besökare** schema. Det innehåller information om besökare.
-* **NmsVisitorSub**: Den här tabellen matchar **nms:visitorSub** schema. Det gör att du kan länka en besökare till de tjänster som de har prenumererat på (Twitter eller Facebook).
+* **NmsVisitorSub**: Den här tabellen matchar **nms:visitorSub** schema. Det gör att du kan länka en besökare till de tjänster som de har prenumererat på (X eller Facebook).
 * **NmsFriendShipRel**: Den här tabellen matchar **nms:vänskapRel** schema. Det gör att du kan länka besökare till deras vänner inom ramen för Facebook-tjänsten.
 * **NmsVisitorInterestRel**: Den här tabellen matchar **nms:visitorInterestRel** schema. Det gör det möjligt för er att länka samman besökare och deras intressen.
 * **NmsInterest**: Den här tabellen matchar **nms:interest** schema. Den innehåller en lista med intressen för varje besökare.

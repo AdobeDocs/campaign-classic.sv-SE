@@ -7,10 +7,10 @@ badge-v8: label="v8" type="Positive" tooltip="Gäller även Campaign v8"
 feature: Channel Configuration
 role: User
 exl-id: 6e37bc14-b1a9-42af-8c28-ae4b5bcaa055
-source-git-commit: d2f5f2a662c022e258fb3cc56c8502c4f4cb2849
+source-git-commit: abaeef25b03a9699a4851786380d467bfa299c9f
 workflow-type: tm+mt
-source-wordcount: '283'
-ht-degree: 7%
+source-wordcount: '287'
+ht-degree: 6%
 
 ---
 
@@ -25,7 +25,7 @@ Om du vill skapa en leverans klickar du **[!UICONTROL Create]** ovanför listan 
 
 ![](assets/s_ncs_user_wizard_email01_1.png)
 
-En standardmall finns för varje installerad kanal: direktreklam, e-post, fax, telefon, mobilkanal (SMS), Facebook, Twitter osv.
+En standardmall finns för varje installerad kanal: direktreklam, e-post, fax, telefon, mobilkanal (SMS), Facebook, X (tidigare Twitter) osv.
 
 >[!NOTE]
 >

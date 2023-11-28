@@ -5,10 +5,10 @@ description: Lista över rapporter
 badge: label="v7" type="Informative" tooltip="Gäller endast Campaign Classic v7"
 feature: Reporting, Monitoring
 exl-id: c01f4850-ab17-44ac-a5e0-ff082ec206b3
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: abaeef25b03a9699a4851786380d467bfa299c9f
 workflow-type: tm+mt
-source-wordcount: '1014'
-ht-degree: 1%
+source-wordcount: '1018'
+ht-degree: 2%
 
 ---
 
@@ -360,7 +360,7 @@ Följande rapporter finns också inbyggda. Mer information finns i dokumentet om
   </tr> 
   <tr> 
    <td> Historik över förvärv av sociala potentiella kunder (socialVisitorStatistics)<br /> </td> 
-   <td> Historiken över köp av potentiella kunder från Twitter och Facebook beror på tillägget för social marknadsföring.<br /> </td> 
+   <td> Historiken för köp av potentiella kunder i X (tidigare Twitter) och Facebook beror på tillägget för social marknadsföring.<br /> </td> 
    <td> nms:besökare<br /> </td> 
   </tr> 
   <tr> 

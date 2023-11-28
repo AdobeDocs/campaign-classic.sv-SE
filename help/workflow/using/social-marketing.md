@@ -2,12 +2,12 @@
 product: campaign
 title: Social marknadsföring
 description: Läs mer om tekniska arbetsflöden för social marknadsföring
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+badge-v7-only: label="v7" type="Informative" tooltip="Gäller endast Campaign Classic v7"
 feature: Workflows
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: abaeef25b03a9699a4851786380d467bfa299c9f
 workflow-type: tm+mt
-source-wordcount: '118'
-ht-degree: 6%
+source-wordcount: '129'
+ht-degree: 11%
 
 ---
 
@@ -45,14 +45,14 @@ Arbetsflödena nedan installeras tillsammans med **Social marknadsföring** som 
    <td> Det här arbetsflödet synkroniserar Facebook-sidor med Adobe Campaign varje dag kl. 7.00.<br /> </td> 
   </tr> 
   <tr> 
-   <td> <span class="uicontrol">Beräkning av Twitter-statistik</span> <br /> </td> 
+   <td> <span class="uicontrol">Beräkning av statistik över Twitter</span> <br /> </td> 
    <td> <span class="uicontrol">statsTwitter</span> <br /> </td> 
-   <td> Det här arbetsflödet beräknar statistik som är länkad till retweets och besök på Twitter.<br /> </td> 
+   <td> Det här arbetsflödet beräknar statistik som är länkad till retweets och besök på X (tidigare Twitter).<br /> </td> 
   </tr> 
   <tr> 
-   <td> <span class="uicontrol">Synkronisera Twitter-sidor</span> <br /> </td> 
+   <td> <span class="uicontrol">Synkronisera Twitter</span> <br /> </td> 
    <td> <span class="uicontrol">syncTwitter</span> <br /> </td> 
-   <td> Det här arbetsflödet importerar Twitter följare till Adobe Campaign varje dag kl. 7.00.<br /> </td> 
+   <td> Det här arbetsflödet importerar X-följare till Adobe Campaign varje dag kl. 7.00.<br /> </td> 
   </tr> 
  </tbody> 
 </table>

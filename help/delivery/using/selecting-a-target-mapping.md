@@ -7,9 +7,9 @@ badge-v8: label="v8" type="Positive" tooltip="Gäller även Campaign v8"
 feature: Delivery Templates
 role: User
 exl-id: b5514fa3-1e65-45dc-8e40-d1ba3b673e7a
-source-git-commit: d2f5f2a662c022e258fb3cc56c8502c4f4cb2849
+source-git-commit: abaeef25b03a9699a4851786380d467bfa299c9f
 workflow-type: tm+mt
-source-wordcount: '192'
+source-wordcount: '196'
 ht-degree: 10%
 
 ---
@@ -25,10 +25,10 @@ Mappningarna är följande:
 | Namn | Använd | Standardschema |
 |---|---|---|
 | Mottagare | Leverera till mottagare av Adobe Campaign-databasen | nms:mottagare |
-| Besökare | Leverera till besökare vars profiler har samlats in via hänskjutning (viral marknadsföring) eller via sociala nätverk (Facebook, Twitter), till exempel. | mns:besökare |
+| Besökare | Leverera till besökare vars profiler har samlats in via hänskjutning (viral marknadsföring) eller via sociala nätverk (Facebook, X - tidigare Twitter), till exempel. | mns:besökare |
 | Prenumerationer | Leverera till mottagare som prenumererar på en informationstjänst som ett nyhetsbrev | nms:prenumeration |
 | Prenumerationer på besökare | Skicka till besökare som prenumererar på en informationstjänst | nms:visitorSub |
-| Tjänst | Publicera till ett Twitter- eller Facebook-konto | nms:service |
+| Tjänst | Publicera till ett X-konto eller en Facebook-sida | nms:service |
 | Operatorer | Leverera till Adobe Campaign | nms:operator |
 | Extern fil | Leverera via en fil som innehåller all information som behövs för leveransen | Inget länkat schema, inget mål har angetts |
 

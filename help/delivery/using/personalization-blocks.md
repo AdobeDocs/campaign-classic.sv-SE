@@ -7,9 +7,9 @@ badge-v8: label="v8" type="Positive" tooltip="Gäller även Campaign v8"
 feature: Personalization
 role: User
 exl-id: 8d155844-d18a-4165-9886-c3b144109f6e
-source-git-commit: d2f5f2a662c022e258fb3cc56c8502c4f4cb2849
+source-git-commit: abaeef25b03a9699a4851786380d467bfa299c9f
 workflow-type: tm+mt
-source-wordcount: '873'
+source-wordcount: '877'
 ht-degree: 2%
 
 ---
@@ -115,7 +115,7 @@ En lista med personaliseringsblock är som standard tillgänglig för att hjälp
   >Det här blocket kan bara användas för leveranser till besökare.
 
 * **[!UICONTROL Registration confirmation]** : infogar en länk som bekräftar prenumerationen.
-* **[!UICONTROL Social network sharing links]** : infogar knappar som gör att mottagaren kan dela en länk till det spegelvända sidinnehållet med e-postklienten, Facebook, Twitter och LinkedIn (se [Virusmarknadsföring: vidarebefordra till en vän](viral-and-social-marketing.md#viral-marketing--forward-to-a-friend)).
+* **[!UICONTROL Social network sharing links]** : infogar knappar som gör att mottagaren kan dela en länk till det spegelvända sidinnehållet med e-postklienten, Facebook, X (tidigare Twitter) och LinkedIn (se [Virusmarknadsföring: vidarebefordra till en vän](viral-and-social-marketing.md#viral-marketing--forward-to-a-friend)).
 * **[!UICONTROL Style of content emails]** och **[!UICONTROL Notification style]** : generera kod som formaterar ett e-postmeddelande med fördefinierade HTML-format. Dessa block måste infogas i källkoden för leveransen, i **[!UICONTROL ...]** avsnitt, till **`<style>...</style>`** -taggar.
 * **[!UICONTROL Offer acceptance URL in unitary mode]** : infogar en URL som gör att ett interaktionserbjudande kan anges till **[!UICONTROL Accepted]** (se [det här avsnittet](../../interaction/using/offer-analysis-report.md)).
 
