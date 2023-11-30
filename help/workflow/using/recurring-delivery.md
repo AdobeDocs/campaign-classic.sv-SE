@@ -5,16 +5,14 @@ description: Läs mer om arbetsflödesaktiviteten Återkommande leverans
 badge-v7-only: label="v7" type="Informative" tooltip="Gäller endast Campaign Classic v7"
 feature: Workflows
 exl-id: efd2cdfb-2e5f-4672-8be8-a424481b11ed
-source-git-commit: 05210269da2a32310c19911a3bc32240c84dc7ad
+source-git-commit: 198921813ff097db0d4ba0a8203fef65bb591af7
 workflow-type: tm+mt
-source-wordcount: '277'
-ht-degree: 19%
+source-wordcount: '289'
+ht-degree: 12%
 
 ---
 
 # Återkommande leverans{#recurring-delivery}
-
-
 
 A **[!UICONTROL Recurring delivery]** Med -aktivitet kan du konfigurera en förekomst av en leveransmall som är specifik för en kampanj.
 
@@ -31,6 +29,10 @@ Så här gör du:
 1. Konfigurera leveransmallen.
 
 Konfigurationsprocessen för den här aktiviteten liknar den för att skapa en leveransmall utifrån tillgängliga alternativ. Mer information om detta hittar du i det här [avsnittet](../../delivery/using/about-templates.md).
+
+>[!CAUTION]
+>
+>Återkommande leveranser stöder inte utskick av korrektur, inklusive [måldata](../../workflow/using/data-life-cycle.md#target-data) personaliseringselement.
 
 Ett exempel på den här aktiviteten som används finns i [section](sending-a-birthday-email.md#creating-a-recurring-delivery-in-a-targeting-workflow).
 
