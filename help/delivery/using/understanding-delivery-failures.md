@@ -7,9 +7,9 @@ badge-v8: label="v8" type="Positive" tooltip="Gäller även Campaign v8"
 feature: Monitoring, Deliverability
 role: User
 exl-id: 86c7169a-2c71-4c43-8a1a-f39871b29856
-source-git-commit: d2f5f2a662c022e258fb3cc56c8502c4f4cb2849
+source-git-commit: 8b0162680d6a3a2d4891d1f71020b44b28046ad7
 workflow-type: tm+mt
-source-wordcount: '2624'
+source-wordcount: '2573'
 ht-degree: 14%
 
 ---
@@ -287,11 +287,13 @@ Standardreglerna är följande.
 
 #### Inkommande e-post {#inbound-email}
 
->[!IMPORTANT]
->
->För värdbaserade eller hybridinstallationer, om du har uppgraderat till [Förbättrad MTA](sending-with-enhanced-mta.md)och om instansen har **Webhooks** funktionalitet, **[!UICONTROL Inbound email]** regler används inte längre för synkrona felmeddelanden vid leveransfel. Mer information finns i [det här avsnittet](#bounce-mail-qualification).
+<!--
+STATEMENT ONLY TRUE with Momentum and EFS+:
+For hosted or hybrid installations, if you have upgraded to the [Enhanced MTA](sending-with-enhanced-mta.md), and if your instance has **Webhooks** functionality, the **[!UICONTROL Inbound email]** rules are no longer used for synchronous delivery failure error messages. For more on this, see [this section](#bounce-mail-qualification).
 
-För lokala installationer och värdbaserade/hybridinstallationer som använder det äldre Campaign MTA innehåller dessa regler en lista över teckensträngar som kan returneras av fjärrservrar och som gör att du kan kvalificera felet (**Hård**, **Mjuk** eller **Ignorerad**).
+For on-premise installations and hosted/hybrid installations using the legacy Campaign MTA, these rules contain the list of character strings which can be returned by remote servers and which let you qualify the error (**Hard**, **Soft** or **Ignored**).-->
+
+The **[!UICONTROL Inbound email]** regler innehåller en lista med teckensträngar som kan returneras av fjärrservrar och som gör att du kan kvalificera felet (**Hård**, **Mjuk** eller **Ignorerad**).
 
 När ett e-postmeddelande misslyckas returnerar fjärrservern ett studsmeddelande till den adress som anges i [plattformsparametrar](../../installation/using/deploying-an-instance.md). Adobe Campaign jämför innehållet i varje studentpost med strängarna i listan över regler och tilldelar det sedan till en av de tre [feltyper](#delivery-failure-types-and-reasons).
 
