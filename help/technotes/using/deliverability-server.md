@@ -4,10 +4,10 @@ title: Uppdatera till den nya leveransservern
 description: Lär dig hur du uppdaterar till den nya servern för kampanjleverans
 feature: Technote, Deliverability
 exl-id: bc62ddb9-beff-4861-91ab-dcd0fa1ed199
-source-git-commit: 65b6f91e083c955df044ffeb10f5338104d1ce56
+source-git-commit: eea3657f1cffa215e1fc1cb1eb8782b83321aae4
 workflow-type: tm+mt
-source-wordcount: '1356'
-ht-degree: 2%
+source-wordcount: '1252'
+ht-degree: 4%
 
 ---
 
@@ -48,7 +48,7 @@ Campaign måste kommunicera med Adobe Shared Services via en IMS-baserad autenti
 
 >[!AVAILABILITY]
 >
-> JWT (JSON Web Tokens) håller på att skrivas av och ersätts med OAuth. Övergången genomförs stegvis i de kommande versionerna av Campaign och dokumentationen kommer att uppdateras för att återspegla dessa uppdateringar.
+> JWT (JSON Web Tokens) håller på att tas ur bruk och ersätts med OAuth. Övergången genomförs stegvis i de kommande versionerna av Campaign och dokumentationen kommer att uppdateras för att återspegla dessa uppdateringar.
 
 ### Förhandskrav{#prerequisites}
 
@@ -145,15 +145,7 @@ För att göra detta:
 
 1. Du måste stoppa och sedan starta om servern för att ändringen ska kunna beaktas. Du kan också köra en `config -reload` -kommando.
 
-### Steg 3: Aktivera den nya leveransservern
-
-Nu kan du aktivera den nya leveransservern. Så här gör du:
-
-1. Öppna klientkonsolen och logga in på Adobe Campaign som administratör.
-1. Bläddra till **Administration > Plattform > Alternativ**.
-1. Öppna `NewDeliverabilityServer_FeatureFlag` och ange värdet till `1`. Den här konfigurationen bör utföras på alla era Campaign-instanser (MKT, MID, RT, EXEC). Som hybridkund kan du kontakta Adobe om du vill att alternativet ska vara inställt på MID-, RT- och EXEC-instanserna.
-
-### Steg 4: Verifiera konfigurationen
+### Steg 3: Validera konfigurationen
 
 Följ stegen nedan för att kontrollera att integreringen lyckas:
 
