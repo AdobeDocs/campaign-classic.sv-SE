@@ -4,10 +4,10 @@ product: campaign
 title: Produktdokumentation för Adobe Campaign Classic v7
 feature: Overview
 exl-id: 6b3f1689-80de-49fd-b7ee-7a2a1931d157
-source-git-commit: 038239cf15dc49e6e84ca31a94ef61029c66c4b7
+source-git-commit: b280a75c7bd34d81657d6c7f1a859890c963352b
 workflow-type: tm+mt
-source-wordcount: '171'
-ht-degree: 64%
+source-wordcount: '283'
+ht-degree: 3%
 
 ---
 
@@ -17,67 +17,92 @@ ht-degree: 64%
 
 ## Nyheter
 
-* **[Septemberversionen är live!](rn/using/latest-release.md)**<br/> Upptäck nya funktioner, förbättringar och korrigeringar i versionsinformationen
+Få en glimt av de senaste förbättringarna i Adobe Campaign Classic v7 - produkt och dokumentation! En omfattande lista över funktioner, förbättringar och korrigeringar finns i [Versionsinformation](rn/using/latest-release.md).  Håll dig uppdaterad om de senaste ändringarna i vår dokumentation genom att besöka [dokumentuppdateringssida](rn/using/documentation-updates.md).
 
-<!--* **[Secure your Campaign environment](technotes/using/tech-stack-upgrade.md)**<br/> Update to the latest versions to secure your Campaign platform-->
+>[!BEGINTABS]
 
-* **[Uppdatera integreringen med Adobe Experience Cloud](integrations/using/configuring-adobe-io.md)**<br/> Den gamla autentiseringstjänsten för autentisering har nått slutet av livscykeln: du måste migrera till Adobe I/O
+>[!TAB Uppdatera integreringen med Adobe Experience Cloud]
 
-[Fler uppdateringar](rn/using/documentation-updates.md)
+Den gamla autentiseringstjänsten för autentisering har nått slutet av livscykeln: du måste migrera till Adobe I/O
 
-## De vanligaste sidorna
+[![image](assets/do-not-localize/learn-more-button.svg)](integrations/using/configuring-adobe-io.md)
+
+>[!TAB September-versionen är live!]
+
+Upptäck de säkerhets- och kompatibilitetsuppdateringar, förbättringar och korrigeringar som den nya versionen ger.
+
+[![image](assets/do-not-localize/learn-more-button.svg)](rn/using/latest-release.md)
+
+>[!ENDTABS]
+
+## Börja med grunderna
 
 <table style="table-layout:fixed">
-<tr>
-  <td>
-    <a href="platform/using/common-questions.md">
-      <img alt="Vanliga frågor och svar " src="platform/using/assets/FAQ.png"/>
-    </a>
-    <div>
-      <a href="platform/using/common-questions.md">
-    <strong>Vanliga frågor och svar</strong>
-    </a>
-    </div>
-    <p>
-    <em>Hitta svar på vanliga frågor som dyker upp när du använder Campaign Classic</em>
-    <p>
-  </td>
-   <td>
-    <a href="production/using/build-upgrade.md">
-      <img alt="Builduppgradering" src="platform/using/assets/upgrade.png" />
-    </a>
-    <div>
-      <a href="production/using/build-upgrade.md">
-    <strong>Uppgradera till den senaste versionen</strong>
-    </a>
-    </div>
-    <p>
-    <em>Lär dig viktiga steg och bästa praxis för att utföra en versionsuppgradering</em>
-    <p>
-  </td>
-  <td>
-    <a href="delivery/using/create-notifications-ios.md">
-       <img alt="Push-meddelanden" src="platform/using/assets/push.png" />
-    </a>
-    <div>
-       <a href="delivery/using/create-notifications-ios.md">
-    <strong>Skicka push-meddelanden</strong>
-    </a>
-    </div>
-    <p>
-    <em>Utforma och skicka personaliserade push-meddelanden på mobiltelefoner</em>
-    <p>
-  </td>
-</tr>
+  <tr style="border: 0;">
+    <td>
+    <a href="platform/using/launching-adobe-campaign.md"><img src="assets/do-not-localize/start-launch.png"></a></a>
+    <div><strong>Starta Adobe Campaign</strong><br/>Lär dig hur du startar Campaign Client-konsolen och ansluter till era Campaign-programservrar.</div>
+    </td>
+    <td>
+    <a href="platform/using/about-profiles.md"><img src="assets/do-not-localize/start-profiles.png"></a>
+    <div><strong>Lägga till och hantera profiler</strong><br/>Utforska enkelt profilhanteringen i Adobe Campaign v7-databasen. Lägg till profiler manuellt eller via importer, förfina kunddata och anpassa kampanjer enkelt.</div>
+    </td>
+    <td>
+    <a href="workflow/using/about-workflows.md"><img src="assets/do-not-localize/start-workflows.jpeg"></a>
+    <div><strong>Automatisera med arbetsflöden</strong><br/>Lär dig hur du kan utnyttja arbetsflödet för att utforma processer som segmentering, kampanjkörning, filhantering, medarbetare med flera.
+    </div></td>
+    <td>
+    <a href="delivery/using/steps-about-delivery-creation-steps.md"><img src="assets/do-not-localize/start-deliveries.jpeg"></a>
+    <div><strong>Skapa leveranser</strong><br/>Lär dig hur du skickar meddelanden över olika kanaler, som e-post, SMS, push-meddelanden osv.</div>
+    </td>
+  </tr>
+  <tr style="border: 0;">
+    <td align="center"><a href="platform/using/launching-adobe-campaign.md"><img src="assets/do-not-localize/learn-more-button.svg"></a></td>
+    <td align="center"><a href="platform/using/about-profiles.md"><img src="assets/do-not-localize/learn-more-button.svg"></a></td>
+    <td align="center"><a href="workflow/using/about-workflows.md"><img src="assets/do-not-localize/learn-more-button.svg"></a></td>
+    <td align="center"><a href="delivery/using/steps-about-delivery-creation-steps.md"><img src="assets/do-not-localize/learn-more-button.svg"></a></td>
+    </tr>
+</table>
+
+## Utforska dokumentationen
+
+<table style="table-layout:auto">
+  <tr style="border: 0;">
+    <td>
+      <img src="assets/do-not-localize/icon-start.svg" width="35px">
+    <br/>
+      <strong>Kom igång</strong><br/><a href="platform/using/adobe-campaign-workspace.md">Användargränssnitt</a> - <a href="platform/using/ac-glossary.md">Ordlista</a> - <a href="platform/using/launching-adobe-campaign.md">Anslut till Campaign</a> - <a href="platform/using/get-started-data-import-export.md">Importera och exportera data</a> - <a href="platform/using/access-management.md">Behörigheter</a>
+    </td>
+    <td>
+      <img src="assets/do-not-localize/icon-experience.svg" width="35px">
+    <br/>
+      <strong>Kundens upplevelse</strong><br/><a href="workflow/using/about-workflows.md">Automatisera med arbetsflöden</a> - <a href="campaign/using/setting-up-marketing-campaigns.md">Marknadsföringskampanj</a> - <a href="interaction/using/interaction-and-offer-management.md">Hantering av samverkan och erbjudanden</a> - <a href="delivery/using/about-personalization.md">Personalisering</a> - <a href="reporting/using/about-adobe-campaign-reporting-tools.md">Rapportering</a>
+    </td>
+    <td>
+      <img src="assets/do-not-localize/icon-send.svg" width="35px">
+    <br/>
+      <strong>Skicka meddelanden</strong><br/><a href="delivery/using/communication-channels.md">Kommunikationskanaler</a> - <a href="delivery/using/steps-about-delivery-creation-steps.md#sending-a-proof">Skicka korrektur</a> - <a href="delivery/using/get-started-a-b-testing.md">A/B-tester</a> - <a href="delivery/using/about-message-tracking.md">Meddelandespårning</a> - <a href="delivery/using/about-deliverability.md">Leverans</a> - <a href="message-center/using/about-transactional-messaging.md">Transaktionsmeddelanden</a>
+    </td>
+  </tr>
+  <tr style="border: 0;">
+    <td>
+      <img src="assets/do-not-localize/icon_profile-audience.svg" width="35px">
+      <br/>
+      <strong>Profiler och målgrupper</strong><br/><a href="platform/using/adding-profiles.md">Lägg till profiler</a> - <a href="platform/using/creating-and-managing-lists.md">Skapa listor</a> - <a href="delivery/using/about-services-and-subscriptions.md">Tjänster och prenumerationer</a> - <a href="platform/using/privacy-management.md">Sekretess och samtycke</a>
+    </td>
+    <td>
+      <img src="assets/do-not-localize/icon-configure.svg" width="35px">
+      <br/>
+      <strong>Arkitektur och konfiguration</strong><br/><a href="production/using/general-architecture.md">Arkitekturprinciper</a> - <a href="production/using/build-upgrade.md">Utföra en bygguppgradering</a> - <a href="production/using/configuration.md">Konfigurera kampanj</a> - <a href="installation/using/external-accounts.md">Ansluta till externa system</a>
+    </td>
+    <td>
+      <img src="assets/do-not-localize/icon-dev.svg" width="35px">
+      <br/>
+      <strong>Resurser för utvecklare</strong><br/><a href="configuration/using/about-data-model.md">Beskrivning av datamodell</a> - <a href="configuration/using/about-schema-reference.md">Schemastruktur</a> - <a href="configuration/using/editing-forms.md">Schemastruktur</a> - <a href="configuration/using/about-web-services.md">API:er</a> - <a href="configuration/using/about-custom-recipient-table.md">Anpassad mottagartabell</a>
+    </td>
+  </tr>
 </table>
 
 ## Ytterligare resurser
 
-| Användbara sidor | Resurser för utvecklare |
-|---|---|
-| [Versionsinformation](rn/using/latest-release.md) | [Lista över felmeddelanden](https://experienceleague.adobe.com/developer/campaign-errors/error_codes.html?lang=sv) |
-| [Instruktionsvideor](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=sv) | [Datamodell i Campaign](configuration/using/about-data-model.md) |
-| [Kompatibilitetsmatris](rn/using/compatibility-matrix.md) | [JSAPI i Campaign](https://experienceleague.adobe.com/developer/campaign-api/api/p-1.html) |
-| [Kom igång med uppgraderingar](rn/using/rn-overview.md) | [Spårningsguide](delivery/using/about-message-tracking.md) |
-| [Inaktuella funktioner](rn/using/deprecated-features.md) | [Checklista för säkerhet och integritet](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/security-privacy/get-started-security-privacy.html) |
-| [Kontrollpanelen i Campaign](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=sv) | [Riktlinjer för övervakning](production/using/monitoring-guidelines.md) |
+[Lista över felmeddelanden](https://experienceleague.adobe.com/developer/campaign-errors/error_codes.html?lang=sv) - [Adobe Campaign produktbeskrivning](https://helpx.adobe.com/legal/product-descriptions/adobe-campaign-managed-cloud-services.html){target="_blank"} - [Compatibility matrix](rn/using/compatibility-matrix.md) - [Tutorials](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=sv){target="_blank"} - [Control Panel for Campaign](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/key-features.html){target="_blank"}
