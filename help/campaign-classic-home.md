@@ -3,9 +3,9 @@ keywords: Campaign Classic;hem;populära ämnen
 product: campaign
 title: Produktdokumentation för Adobe Campaign Classic v7
 exl-id: 6b3f1689-80de-49fd-b7ee-7a2a1931d157
-source-git-commit: 41dcf70724761237a8230bad04322bd3322c0e6f
+source-git-commit: 5fe07c7955b529cd7f1a481167dd4139aa886bb0
 workflow-type: tm+mt
-source-wordcount: '314'
+source-wordcount: '292'
 ht-degree: 3%
 
 ---
@@ -32,12 +32,6 @@ Upptäck uppdateringar, förbättringar och korrigeringar som ingår i Campaign 
 För att förbättra säkerhets- och autentiseringsprocessen rekommenderar Adobe Campaign att man migrerar slutanvändarens autentiseringsläge från den inbyggda autentiseringen av inloggnings-/lösenord till Adobe Identity Management System (IMS).
 
 [![image](assets/do-not-localize/learn-more-button.svg)](technotes/using/migrate-users-to-ims.md)
-
->[!TAB Uppdatera integreringen med Adobe Experience Cloud]
-
-Den gamla autentiseringstjänsten för autentisering har nått slutet av livscykeln: du måste migrera till Adobe I/O.
-
-[![image](assets/do-not-localize/learn-more-button.svg)](integrations/using/configuring-adobe-io.md)
 
 >[!ENDTABS]
 
