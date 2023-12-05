@@ -8,10 +8,10 @@ audience: installation
 content-type: reference
 topic-tags: additional-configurations
 exl-id: 424faf25-2fd5-40d1-a2fc-c715fc0b8190
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: e808e71ccf949bdaf735cdb2895389f03638bd71
 workflow-type: tm+mt
-source-wordcount: '1366'
-ht-degree: 5%
+source-wordcount: '1218'
+ht-degree: 2%
 
 ---
 
@@ -80,7 +80,7 @@ När den lokala mappsökvägen har definierats lägger du till och redigerar fö
 
 ```
 <archiving autoStart="false" compressionFormat="0" compressBatchSize="10000"
-           archivingType="0" expirationDelay="2" purgeArchivesDelay="7"
+           archivingType="1" expirationDelay="2" purgeArchivesDelay="7"
            pollDelay="600" acquireLimit="5000" smtpNbConnection="2"/>
 ```
 
@@ -91,11 +91,12 @@ När den lokala mappsökvägen har definierats lägger du till och redigerar fö
   **1**: komprimering (.zip-format)
 
 * **compressBatchSize**: antal .eml-filer som lagts till i ett arkiv (.zip-fil).
-* **archivingType**: arkiveringsstrategi som ska användas. Möjliga värden är:
 
-  **0**: obearbetade kopior av skickade e-postmeddelanden sparas i .eml-format till **dataLogPath** mapp (standardvärde). En arkiverande kopia av **`<deliveryid>-<broadlogid>-sent.eml`** filen sparas i **dataLogPath/archives** mapp. Sökvägen till den skickade e-postfilen ändras **`<datalogpath>archivesYYYY-MM-DDHHh <deliveryid>-<broadlogid>-sent.eml`**.
 
-  **1**: obearbetade kopior av skickade e-postmeddelanden sparas i .eml-format till **dataLogPath** och skickas till BCC-e-postadressen via SMTP. När e-postkopiorna har skickats till BCC-adressen blir arkivfilens namn **`<deliveryid>-<broadlogid>-sent-archived.eml`** och filen flyttas till **dataLogPath/archives** mapp. Sökvägen till den skickade och BCC-arkiverade e-postfilen är sedan **`<datalogpath>archivesYYYY-MM-DDHHh<deliveryid>- <broadlogid>-sent-archived.eml`**.
+* **archivingType**: arkiveringsstrategi som ska användas. Det enda möjliga värdet är **1**. Raw-kopior av skickade e-postmeddelanden sparas i .eml-format till **dataLogPath** och skickas till BCC-e-postadressen via SMTP. När e-postkopiorna har skickats till BCC-adressen blir arkivfilens namn **`<deliveryid>-<broadlogid>-sent-archived.eml`** och filen flyttas till **dataLogPath/archives** mapp. Sökvägen till den skickade och BCC-arkiverade e-postfilen är sedan **`<datalogpath>archivesYYYY-MM-DDHHh<deliveryid>- <broadlogid>-sent-archived.eml`**.
+
+  <!--
+  **0**: raw copies of sent emails are saved in .eml format to the **dataLogPath** folder (default value). An archiving copy of the **`<deliveryid>-<broadlogid>-sent.eml`** file is saved to the **dataLogPath/archives** folder. The sent email file path becomes **`<datalogpath>archivesYYYY-MM-DDHHh <deliveryid>-<broadlogid>-sent.eml`**.-->
 
 * **expirationDelay**: antal dagar som .eml-filer sparas för arkivering. Efter den fördröjningen flyttas de automatiskt till **dataLogPath/archives** mapp för komprimering. Som standard upphör .eml-filer att gälla efter två dagar.
 * **purgeArchivesDelay**: antal dagar arkiveras i **dataLogPath/`<archives>`** mapp. Efter den perioden tas de bort permanent. Tömningen börjar när MTA startas. Som standard utförs den var sjunde dag.
@@ -131,23 +132,23 @@ I **config-`<instance name>.xml`** använder du följande parametrar för att de
 >
 >Dessutom tilldelar reläet **[!UICONTROL Sent]** status för alla e-postmeddelanden, även de som inte skickas. Därför arkiveras alla meddelanden.
 
-## Byt till den nya e-postkontrollen {#updated-email-archiving-system--bcc-}
+<!--
+## Moving to the new Email BCC {#updated-email-archiving-system--bcc-}
 
-[!BADGE Lokal och hybrid]{type=Caution url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=sv" tooltip="Gäller endast lokala och hybrida driftsättningar"}
-
-
+[!BADGE On-premise & Hybrid]{type=Caution url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html" tooltip="Applies to on-premise and hybrid deployments only"}
 
 >[!IMPORTANT]
 >
->BCC (e-postarkivering) har ändrats med Adobe Campaign 17.2 (build 8795). Om du uppgraderar från en äldre version och redan har använt e-postarkiveringsfunktioner måste du uppgradera manuellt till det nya systemet för e-postarkivering.
+>The email archiving system (BCC) changed with Adobe Campaign 17.2 (build 8795). If you are upgrading from an older build and were already using email archiving capabilities, you must upgrade manually to the new email archiving system (BCC).
 
-Om du vill göra det gör du följande ändringar i **`config-<instance>.xml`** fil:
+To do this, make the following changes to the **`config-<instance>.xml`** file:
 
-1. Ta bort **zipPath** parametern från **`<archiving>`** nod.
-1. Ange **compressionFormat** parameter till **1** vid behov.
-1. Ange **archivingType** parameter till **1**.
+1. Remove the **zipPath** parameter from the **`<archiving>`** node.
+1. Set the **compressionFormat** parameter to **1** if needed.
+1. Set the **archivingType** parameter to **1**.
 
-Kontrollera att du har valt **[!UICONTROL Email BCC]** i leveransmallen eller leveransformuläret. Mer information finns i [det här avsnittet](../../delivery/using/sending-messages.md#archiving-emails).
+Once email BCC is configured, make sure you select the **[!UICONTROL Email BCC]** option in the delivery template or the delivery. For more on this, see [this section](../../delivery/using/sending-messages.md#archiving-emails).
+-->
 
 ## Bästa praxis för e-postkopia {#best-practices}
 
