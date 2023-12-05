@@ -7,7 +7,7 @@ badge-v7-only: label="v7" type="Informative" tooltip="Gäller endast Campaign Cl
 role: User
 level: Beginner
 exl-id: 07c1f4a3-cf16-4a9b-b402-e13258799f91
-source-git-commit: 38cd50072bdedbac566eb3a56d86328d1e5e1883
+source-git-commit: cc6d85bcf822ba9be99e39cf459a5aa20cc2d4fe
 workflow-type: tm+mt
 source-wordcount: '3648'
 ht-degree: 99%
@@ -22,21 +22,21 @@ Se [Versionsinformationen för Adobe Campaign Classic](../../rn/using/latest-rel
 
 ## 2023
 
-### December 2023
+### December 2023 {#dec-2023}
 
 JWT (JSON Web Tokens) håller på att tas ur bruk och ersätts med OAuth. Övergången genomförs stegvis i de kommande versionerna av Campaign och dokumentationen kommer att uppdateras för att återspegla dessa uppdateringar.
 
 Tillagd konfiguration av externt FDA-konto för Amazon Redshift. [Läs mer](../../installation/using/configure-fda-redshift.md)
 
-### Augusti 2023
+### Augusti 2023 {#aug-2023}
 
 En begränsning har lagts till för att ange att du inte kan använda Adobe Campaign för att dekomprimera zippade filer som är större än 4 GB. [Läs mer](../../platform/using/unzip-decrypt.md)
 
-### April 2023
+### April 2023 {#apr-2023}
 
 Lade till ett tekniskt dokument om hur du aktiverar Microsoft Edge Chromium på lokala/hybridmiljöer. [Läs mer](../../technotes/using/edge-chromium.md)
 
-### Mars 2023
+### Mars 2023 {#mar-2023}
 
 Uppdaterat avsnitt med versionsinformation med förbättringar och korrigeringar för 7.3.3. [Läs mer](latest-release.md)
 
