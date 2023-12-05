@@ -7,10 +7,10 @@ badge-v7-only: label="v7" type="Informative" tooltip="Gäller endast Campaign Cl
 role: User
 level: Beginner
 exl-id: d65869ca-a785-4327-8e8d-791c28e4696c
-source-git-commit: abaeef25b03a9699a4851786380d467bfa299c9f
+source-git-commit: f2e6db9e198f96e1e0250d461b419ac00e39bf45
 workflow-type: tm+mt
-source-wordcount: '1873'
-ht-degree: 98%
+source-wordcount: '2221'
+ht-degree: 88%
 
 ---
 
@@ -18,9 +18,35 @@ ht-degree: 98%
 
 Den här sidan listar nya funktioner, förbättringar och korrigeringar som kommer med den **senaste versionen av Campaign Classic v7**. Varje ny version kommer med en status som visas med en färg. Läs mer om versionsstatusen för Campaign Classic v7 på [den här sidan](rn-overview.md).
 
-## Version 7.3.4 – build 9364 {#release-7-3-4}
+## Version 7.3.5 – build 9368 {#release-7-3-5}
 
 [!BADGE Allmän tillgänglighet]{type=Informative url="https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/rn-overview.html?lang=sv#rn-statuses" tooltip="Allmän tillgänglighet"}
+
+
+_5 december 2023_
+
+
+**Säkerhetsförbättringar**
+
+
+* Med Campaign Classic v7.3.5 har autentiseringsprocessen förbättrats och säkrats. Tekniska operatörer bör nu använda Adobe Identity Management System (IMS) för att ansluta till Campaign. Lär dig hur du migrerar dina befintliga tekniska konton i [den här teknologin](../../technotes/using/ims-migration.md).
+
+* Som ett led i arbetet med att stärka säkerhets- och autentiseringsprocessen rekommenderar Adobe Campaign att man migrerar inloggningsläget från inloggnings-/lösenordsautentiseringen till Adobe Identity Management System (IMS). Lär dig hur du migrerar dina operatorer i [den här teknologin](../../technotes/using/migrate-users-to-ims.md).
+
+**Korrigeringar**
+
+* Ett problem har korrigerats när data från en Google Big Query-databas användes och data uppdaterades i en Oraclena databas: alla nycklar var inställda på `0` i arbetsflödets temporära tabell. (NEO-65091)
+* Korrigerade ett problem som medförde att en arbetsflödeskörning misslyckades när två frågor i en Google Big Query-databas kombinerades i en **Union** arbetsflödesaktivitet. (NEO-63705)
+* Ett problem som begärde att användaren skulle autentisera sig igen när användaren klickade på `Back` i en kampanjrapport. (NEO-65087)
+* Ett fel i arbetsflödet för databasrensning som inträffade när en leverans togs bort före leveransen har korrigerats. (NEO-48114)
+* Ett problem har korrigerats vid anslutning till klientkonsolen: senaste uppdateringar av TLS-verifiering ledde till anslutningsfel. (NEO-50488)
+* Korrigerade ett problem med HTTP-proxyautentiseringen efter Campaign-efteruppgraderingen till 7.3.1. HTTP-begäranden i Campaign-arbetsflöden misslyckades med `error 407 – proxy auth required is returned`. (NEO-49624)
+* Ett tillfälligt fel med GPG-dekryptering i har korrigerats **Skript** arbetsflödesaktiviteter. Det associerade felmeddelandet var: `gpg: decryption failed: No secret key`. (NEO-50257)
+  <!--* Workflow temporary tables now have a primary index in Teradata with a Federated Data Access (FDA) connection. (NEO-62575)-->
+
+## Version 7.3.4 – build 9364 {#release-7-3-4}
+
+[!BADGE Begränsad tillgänglighet]{type=Neutral url="https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/rn-overview.html?lang=sv#rn-statuses" tooltip="Begränsad tillgänglighet"}
 
 >[!CAUTION]
 >
