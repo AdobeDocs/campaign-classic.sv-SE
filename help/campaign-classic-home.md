@@ -3,9 +3,9 @@ keywords: Campaign Classic;hem;populära ämnen
 product: campaign
 title: Produktdokumentation för Adobe Campaign Classic v7
 exl-id: 6b3f1689-80de-49fd-b7ee-7a2a1931d157
-source-git-commit: 93d6ffc4ac3047ab6a9a41859bed48f6ffac605b
+source-git-commit: 41dcf70724761237a8230bad04322bd3322c0e6f
 workflow-type: tm+mt
-source-wordcount: '283'
+source-wordcount: '314'
 ht-degree: 3%
 
 ---
@@ -20,17 +20,24 @@ Få en glimt av de senaste förbättringarna i Adobe Campaign Classic v7 - produ
 
 >[!BEGINTABS]
 
->[!TAB Uppdatera integreringen med Adobe Experience Cloud]
 
-Den gamla autentiseringstjänsten för autentisering har nått slutet av livscykeln: du måste migrera till Adobe I/O
+>[!TAB December-versionen är live!]
 
-[![image](assets/do-not-localize/learn-more-button.svg)](integrations/using/configuring-adobe-io.md)
-
->[!TAB September-versionen är live!]
-
-Upptäck de säkerhets- och kompatibilitetsuppdateringar, förbättringar och korrigeringar som den nya versionen ger.
+Upptäck uppdateringar, förbättringar och korrigeringar som ingår i Campaign Classic v7.3.5.
 
 [![image](assets/do-not-localize/learn-more-button.svg)](rn/using/latest-release.md)
+
+>[!TAB Flytta till Adobe Identity Management-tjänst]
+
+För att förbättra säkerhets- och autentiseringsprocessen rekommenderar Adobe Campaign att man migrerar slutanvändarens autentiseringsläge från den inbyggda autentiseringen av inloggnings-/lösenord till Adobe Identity Management System (IMS).
+
+[![image](assets/do-not-localize/learn-more-button.svg)](technotes/using/migrate-users-to-ims.md)
+
+>[!TAB Uppdatera integreringen med Adobe Experience Cloud]
+
+Den gamla autentiseringstjänsten för autentisering har nått slutet av livscykeln: du måste migrera till Adobe I/O.
+
+[![image](assets/do-not-localize/learn-more-button.svg)](integrations/using/configuring-adobe-io.md)
 
 >[!ENDTABS]
 
