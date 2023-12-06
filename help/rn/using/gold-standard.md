@@ -8,9 +8,9 @@ role: User
 level: Beginner
 exl-id: 9e3a11b1-3070-4d90-91d5-7c559bdd500e
 source-git-commit: abaeef25b03a9699a4851786380d467bfa299c9f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1791'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -164,7 +164,7 @@ _17 december 2019_
 
 Build 9032@d6b8062 har följande korrigering:
 
-* Korrigerade ett spårningsproblem i följande kommunikationskanaler: mobil (SMS, MMS), push (iOS, Android) och sociala nätverk (Facebook, X - tidigare Twitter). (NEO-19595)
+* Åtgärdade ett spårningsproblem på följande kommunikationskanaler: mobil (SMS, MMS), push (iOS, Android) och sociala nätverk (Facebook, X – tidigare känt som Twitter). (NEO-19595)
 
 ### [!DNL Gold Standard] version 4{#gs-4}
 
