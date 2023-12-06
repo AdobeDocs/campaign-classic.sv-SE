@@ -10,7 +10,7 @@ exl-id: d65869ca-a785-4327-8e8d-791c28e4696c
 source-git-commit: f2e6db9e198f96e1e0250d461b419ac00e39bf45
 workflow-type: tm+mt
 source-wordcount: '2221'
-ht-degree: 88%
+ht-degree: 89%
 
 ---
 
@@ -167,7 +167,7 @@ Läs mer i [kompatibilitetsmatrisen för Campaign](../../rn/using/compatibility-
 
 **Inaktuella funktioner**
 
-* Social marknadsföring med Facebook är nu inaktuell. Du kan använda X-integrering (tidigare Twitter) för att publicera på sociala medier, eller arbeta med Adobe för att skapa en anpassad kanal.
+* Social marknadsföring med Facebook är nu inaktuell. Du kan använda X (tidigare Twitter) för att publicera inlägg på sociala medier, eller samarbeta med Adobe för att skapa en anpassad kanal.
 * ACS-anslutning (Prime-erbjudande) är nu inaktuell. Du kan använda funktionerna export/import för Campaign för att extrahera och mata in data i båda produkterna.
 
 Läs mer på sidan [Funktioner som är inaktuella eller har tagits bort](deprecated-features.md).
