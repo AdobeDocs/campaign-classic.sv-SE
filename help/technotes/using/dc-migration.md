@@ -6,8 +6,10 @@ badge-v7-only: label="v7" type="Informative" tooltip="Gäller endast Campaign Cl
 feature: Technote, Upgrade
 role: User
 level: Beginner
+solution: Campaign
+version: Classic v7
 exl-id: 2b282221-d048-4f6e-b52e-f8e584af2c0e
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: 87a27eb96fe9fbcb68a5e961b95cb4588eee85e3
 workflow-type: tm+mt
 source-wordcount: '1540'
 ht-degree: 2%
@@ -38,7 +40,7 @@ Det här programmet har tre huvudmål:
 
 
 >[!NOTE]
->Migrering från Campaign Classic v7 till Public Cloud påverkar kunder som använder **Adobes hanterade tjänster** endast.
+>Migrering av Campaign Classic v7 till Public Cloud påverkar kunder som använder **Adobe Managed Services** endast.
 
 
 ## Fördelar
@@ -85,7 +87,7 @@ En migrering kan initieras av [öppna ett nytt supportärende för kundtjänst](
 
 Migreringen till molnet är **första steget till [årligt uppgraderingsprogram](../../rn/using/rn-overview.md#yearly-upgrade)** av dina Adobe Campaign-förekomster. Migreringen är obligatorisk om du är värd i ett datacenter som inte är det offentliga molnet (AWS).
 
-Adobe Managed Services-molnet ligger på Amazon Web Services (AWS), en modern, säker och optimerad miljö. [Läs mer om AWS](https://aws.amazon.com/application-hosting/benefits/).
+Molnet för Adobe Managed Services ligger på Amazon Web Services (AWS), en modern, säker och optimerad miljö. [Läs mer om AWS](https://aws.amazon.com/application-hosting/benefits/).
 
 Adobe planerar att avveckla det gamla datacentret. Adobe Campaign-instanser som körs där måste överföras till det nya referensdatacentret, AWS.
 
@@ -121,7 +123,7 @@ Adobe hanterar de flesta av åtgärderna. Vi behöver dig för validering och go
 
 **Databas**
 
-Databasen kommer att dumpas från det gamla datacentret och återställas i Public Cloud (AWS). När programmet startas om på det nya datacentret återupptas det från exakt det tillstånd det var innan det stängdes. Användarna ser ingen skillnad förutom att vissa schemalagda aktiviteter kommer att ha fördröjts.
+Databasen kommer att dumpas från det gamla datacentret och återställas i Public Cloud (AWS). När programmet startas om på det nya datacentret återupptas det från exakt det tillstånd det var innan det stängdes. Användarna ser ingen skillnad förutom att vissa schemalagda aktiviteter har fördröjts.
 
 **Skicka IP-adresser via e-post**
 
