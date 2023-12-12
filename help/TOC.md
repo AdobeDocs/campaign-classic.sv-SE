@@ -7,9 +7,9 @@ user-guide-description: Med Adobe Campaign kan du använda omfattande kunddata f
 sub-product: adobe campaign classic
 type: Documentation
 source-git-commit: c2ac8fcf1d9746dbddffc90491a6f214e2c3df2e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2544'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -158,7 +158,7 @@ ht-degree: 99%
       + Skapa ett push-meddelande{#create-a-push-msg}
          + [Skapa ett push-meddelande för iOS](delivery/using/create-notifications-ios.md)
          + [Skapa ett push-meddelande för Android](delivery/using/create-notifications-android.md)
-      + [Felsöka](delivery/using/troubleshooting.md)
+      + [Felsökning](delivery/using/troubleshooting.md)
    + Skicka direktutskick {#sending-direct-mail}
       + [Om direktutskickskanalen](delivery/using/about-direct-mail-channel.md)
       + [Skapa en leverans av direktutskick](delivery/using/creating-a-direct-mail-delivery.md)
