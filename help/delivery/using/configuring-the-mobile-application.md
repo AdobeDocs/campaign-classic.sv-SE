@@ -6,22 +6,16 @@ badge-v7-only: label="v7" type="Informative" tooltip="Gäller endast Campaign Cl
 feature: Push
 role: User, Developer
 exl-id: 67eee1c5-a918-46b9-875d-7c3c71c00635
-source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
+source-git-commit: 9756f05e3887bc74578bae00138c4d1317a480f8
 workflow-type: tm+mt
-source-wordcount: '658'
-ht-degree: 8%
+source-wordcount: '621'
+ht-degree: 4%
 
 ---
 
 # Konfigurationssteg för iOS {#configuring-the-mobile-application-in-adobe-campaign-ios}
 
-
-
 När paketet har installerats kan du definiera dina programinställningar för iOS i Adobe Campaign Classic.
-
->[!NOTE]
->
->Mer information om hur du konfigurerar din app för Android och hur du skapar en leverans för Android finns i den här [section](configuring-the-mobile-application-android.md).
 
 Viktiga steg är:
 
@@ -30,7 +24,6 @@ Viktiga steg är:
 1. [Integrera iOS mobilapp i Campaign](#creating-ios-app)
 
 Då kan du [skapa ett push-meddelande för iOS-enheter](create-notifications-ios.md).
-
 
 ## Konfigurera iOS externa konto {#configuring-external-account-ios}
 
@@ -102,7 +95,7 @@ I följande exempel lägger vi till **mediaURl** och **mediaExt** för att skapa
 
 1. Klicka **[!UICONTROL Next]** för att börja konfigurera utvecklingsprogrammet.
 
-1. Se till att samma **[!UICONTROL Integration key]** definieras i Adobe Campaign och i programkoden via SDK. Mer information finns på [den här sidan](integrating-campaign-sdk-into-the-mobile-application.md). Med den här integrationsnyckeln, som är specifik för varje program, kan du länka mobilprogrammet till Adobe Campaign-plattformen.
+1. Se till att samma **[!UICONTROL Integration key]** definieras i Adobe Campaign och i programkoden via SDK. Mer information finns i [den här sidan](integrating-campaign-sdk-into-the-mobile-application.md). Med den här integrationsnyckeln, som är specifik för varje program, kan du länka mobilprogrammet till Adobe Campaign-plattformen.
 
    >[!NOTE]
    >

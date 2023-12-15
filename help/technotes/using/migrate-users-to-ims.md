@@ -1,7 +1,8 @@
 ---
 title: Migrera kampanjoperatorer till Adobe Identity Management System (IMS)
 description: Lär dig hur du migrerar kampanjoperatorer till Adobe Identity Management System (IMS)
-source-git-commit: 18166dd389847d6b844ed478e19c42e457abeb80
+exl-id: f01948c7-b523-492d-a4e8-67f4adde5fc5
+source-git-commit: bc9367d598474b7971f25c27980ff25dd93bf87a
 workflow-type: tm+mt
 source-wordcount: '1153'
 ht-degree: 0%

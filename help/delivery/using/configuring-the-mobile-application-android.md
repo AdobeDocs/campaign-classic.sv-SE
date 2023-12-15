@@ -6,9 +6,9 @@ badge-v7-only: label="v7" type="Informative" tooltip="Gäller endast Campaign Cl
 feature: Push
 role: User, Developer
 exl-id: 32c35e61-d0a3-478f-b73b-396e2becf7f9
-source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
+source-git-commit: 9756f05e3887bc74578bae00138c4d1317a480f8
 workflow-type: tm+mt
-source-wordcount: '966'
+source-wordcount: '856'
 ht-degree: 4%
 
 ---
@@ -16,10 +16,6 @@ ht-degree: 4%
 # Konfigurationssteg för Android
 
 När paketet har installerats kan du definiera inställningarna för Android-appen i Adobe Campaign Classic.
-
->[!NOTE]
->
->Mer information om hur du konfigurerar din app för iOS och hur du skapar en leverans för iOS finns i detta [section](configuring-the-mobile-application.md).
 
 Viktiga steg är:
 
@@ -29,6 +25,11 @@ Viktiga steg är:
 1. [Utöka appschemat med ytterligare data](#extend-subscription-schema)
 
 Då kan du [skapa ett omfattande meddelande för Android](create-notifications-android.md).
+
+>[!IMPORTANT]
+>
+>Vissa viktiga ändringar av tjänsten Android Firebase Cloud Messaging (FCM) kommer att släppas 2024 och kan påverka din Adobe Campaign-implementering. Din prenumerationstjänstkonfiguration för push-meddelanden för Android kan behöva uppdateras för att den här ändringen ska fungera. Du kan redan kontrollera och vidta åtgärder. Läs mer om detta [Adobe Campaign v8-teknik](https://experienceleague.corp.adobe.com/docs/campaign/technotes-ac/tn-new/push-technote.html){target="_blank"}.
+
 
 ## Konfigurera externt Android-konto {#configuring-external-account-android}
 
@@ -57,7 +58,7 @@ Så här väljer du vilken koppling du vill använda:
 
 ## Konfigurera en Android-tjänst {#configuring-android-service}
 
-![](assets/do-not-localize/how-to-video.png) [Lär dig hur du konfigurerar en Android-tjänst i video](https://experienceleague.adobe.com/docs/campaign-classic-learn/getting-started-with-push-notifications-for-android/configuring-an-android-service-in-campaign.html#configuring-an-android-service-and-creating-an-android-mobile-application-in-campaign)
+![](assets/do-not-localize/how-to-video.png) [Lär dig hur du konfigurerar en Android-tjänst i video](https://experienceleague.adobe.com/docs/campaign-classic-learn/getting-started-with-push-notifications-for-android/configuring-an-android-service-in-campaign.html#configuring-an-android-service-and-creating-an-android-mobile-application-in-campaign){target="_blank"}.
 
 1. Gå till **[!UICONTROL Profiles and Targets > Services and subscriptions]** och klicka på **[!UICONTROL New]**.
 
@@ -100,18 +101,17 @@ När du har skapat tjänsten måste du nu skapa ditt Android-program:
 
 1. Fyll i **[!UICONTROL Firebase Cloud Messaging the Android connection settings]** fält.
 
-1. Klicka **[!UICONTROL Finish]** och sen **[!UICONTROL Save]**. Android-programmet kan nu användas i Campaign Classic.
+1. Klicka **[!UICONTROL Finish]** sedan **[!UICONTROL Save]**. Android-programmet kan nu användas i Campaign Classic.
 
 Som standard sparar Adobe Campaign en tangent i **[!UICONTROL User identifier]** (@userKey) i fältet **[!UICONTROL Subscriber applications (nms:appSubscriptionRcp)]** tabell. Med den här nyckeln kan du länka en prenumeration till en mottagare. Om du vill samla in ytterligare data (till exempel en komplex avstämningsnyckel) måste du använda följande konfiguration:
 
-### Välj API-version{#select-api-version}
+### Konfigurera API-versionen{#select-api-version}
 
-När du har skapat en tjänst och ett nytt mobilprogram måste du konfigurera ditt mobilprogram beroende på den valda API-versionen.
+>[!IMPORTANT]
+>
+>Vissa viktiga ändringar av tjänsten Android Firebase Cloud Messaging (FCM) kommer att släppas 2024 och kan påverka din Adobe Campaign-implementering. Som en del av Google kontinuerliga arbete med att förbättra sina tjänster kommer de äldre FCM-API:erna att upphöra på **20 juni 2024**. Läs mer om detta [Adobe Campaign v8-teknik](https://experienceleague.corp.adobe.com/docs/campaign/technotes-ac/tn-new/push-technote.html){target="_blank"}.
 
-* **HTTP v1** konfigurationen anges i [det här avsnittet](configuring-the-mobile-application-android.md#android-service-httpv1).
-* **HTTP (äldre)** konfigurationen anges i [det här avsnittet](configuring-the-mobile-application-android.md#android-service-http).
-
-#### Konfigurera HTTP v1 API{#android-service-httpv1}
+När du har skapat en tjänst och ett nytt mobilprogram måste du konfigurera ditt mobilprogram. The **HTTP (äldre)** API bör inte väljas eftersom det har tagits bort av Google.
 
 Följ stegen nedan för att konfigurera API-versionen för HTTP v1:
 
@@ -136,7 +136,7 @@ Följ stegen nedan för att konfigurera API-versionen för HTTP v1:
 
 1. Som ett alternativ kan du utöka ett push-meddelandeinnehåll med **[!UICONTROL Application variables]** vid behov. Dessa är helt anpassningsbara och utgör en del av den meddelandenyttolast som skickas till den mobila enheten.
 
-1. Klicka **[!UICONTROL Finish]** och sen **[!UICONTROL Save]**. Android-programmet kan nu användas i Campaign Classic.
+1. Klicka **[!UICONTROL Finish]** sedan **[!UICONTROL Save]**. Android-programmet kan nu användas i Campaign Classic.
 
 Nedan visas FCM-nyttolastsnamnen för att ytterligare anpassa ditt push-meddelande:
 
@@ -145,39 +145,11 @@ Nedan visas FCM-nyttolastsnamnen för att ytterligare anpassa ditt push-meddelan
 | datameddelande | N/A | validate_only |
 | meddelandemeddelande | title, body, android_channel_id, icon, sound, tag, color, click_action, image, ticker, sticky, visibility, notification_priority, notification_count <br> | validate_only |
 
-<br>
-<br>
-
-#### Konfigurera HTTP-API (äldre){#android-service-http}
-
-Följ stegen nedan för att konfigurera API-versionen för HTTP (äldre):
-
-1. I **[!UICONTROL Mobile application creation wizard]** fönster, markera **[!UICONTROL HTTP (legacy)]** i **[!UICONTROL API version]** nedrullningsbar meny.
-
-1. Ange **[!UICONTROL Project key]** som tillhandahålls av utvecklaren av mobilapplikationen.
-
-1. Som ett alternativ kan du utöka ett push-meddelandeinnehåll med **[!UICONTROL Application variables]** vid behov. Dessa är helt anpassningsbara och utgör en del av den meddelandenyttolast som skickas till den mobila enheten.
-
-   I följande exempel lägger vi till **title**, **imageURL** och **iconURL** för att skapa omfattande push-meddelanden och sedan förse programmet med bilden, titeln och ikonen som ska visas i meddelandet.
-
-   ![](assets/nmac_android_2.png)
-
-1. Klicka **[!UICONTROL Finish]** och sen **[!UICONTROL Save]**. Android-programmet kan nu användas i Campaign Classic.
-
-Nedan visas FCM-nyttolastsnamnen för att ytterligare anpassa ditt push-meddelande:
-
-| Meddelandetyp | Konfigurerbart meddelandeelement (FCM-nyttolastnamn) | Konfigurerbara alternativ (FCM-nyttolastnamn) |
-|:-:|:-:|:-:|
-| datameddelande | N/A | dryRun |
-| meddelandemeddelande | title, body, android_channel_id, icon, sound, tag, color, click_action <br> | dryRun |
-
-<br>
-
 ## Utöka appsubscriptionRcp-schemat {#extend-subscription-schema}
 
 ![](assets/do-not-localize/how-to-video.png) [Lär dig hur du utökar appsubscriptionRcp-schemat i video](https://experienceleague.adobe.com/docs/campaign-classic-learn/getting-started-with-push-notifications-for-android/extending-the-app-subscription-schema.html#extending-the-app-subscription-schema-to-personalize-push-notifications)
 
-Du måste utöka **appsubscriptionRcp** om du vill definiera nya ytterligare fält för att lagra parametrar från appen i Campaign-databasen. Dessa fält kommer till exempel att användas för personalisering. Så här gör du:
+Du måste utöka **appsubscriptionRcp** om du vill definiera nya fält för att lagra parametrar från appen i Campaign-databasen. De här fälten används till exempel för personalisering. Så här gör du:
 
 1. Skapa ett tillägg till **[!UICONTROL Subscriber applications (nms:appsubscriptionRcp)]** och definiera de nya fälten. Läs mer om schemautökning i [den här sidan](../../configuration/using/about-schema-edition.md)
 

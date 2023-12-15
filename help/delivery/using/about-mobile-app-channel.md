@@ -7,9 +7,9 @@ badge-v8: label="v8" type="Positive" tooltip="Gäller även Campaign v8"
 feature: Push
 role: User
 exl-id: c3b0406f-f652-42f4-ad0d-23fb719cd1b6
-source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
+source-git-commit: 9756f05e3887bc74578bae00138c4d1317a480f8
 workflow-type: tm+mt
-source-wordcount: '677'
+source-wordcount: '684'
 ht-degree: 2%
 
 ---
@@ -17,10 +17,6 @@ ht-degree: 2%
 # Kom igång med mobilappskanalen{#about-mobile-app-channel}
 
 The **Mobilappskanal** Med kan du använda Adobe Campaign-plattformen för att skicka personaliserade push-meddelanden till iOS- och Android-terminaler via appar.
-
->[!CAUTION]
->
->I det här dokumentet beskrivs hur du integrerar mobilapplikationer med Adobe Campaign. Det innehåller ingen information om hur du skapar mobilprogrammet eller hur du konfigurerar det för att hantera meddelanden. Om du vill ha mer information om detta, se den officiella Apple [dokumentation](https://developer.apple.com/) och Android [dokumentation](https://developer.android.com/index.html).
 
 Det finns två leveranskanaler:
 
@@ -32,14 +28,14 @@ Det finns två leveranskanaler:
 
   ![](assets/nmac_intro_1.png)
 
-Motsvarar dessa två kanaler finns det två leveransaktiviteter i kampanjarbetsflödena:
+  >[!IMPORTANT]
+  >
+  >Vissa viktiga ändringar av tjänsten Android Firebase Cloud Messaging (FCM) kommer att släppas 2024 och kan påverka din Adobe Campaign-implementering. Din prenumerationstjänstkonfiguration för push-meddelanden för Android kan behöva uppdateras för att den här ändringen ska fungera. Du kan redan kontrollera och vidta åtgärder. Läs mer om detta [Adobe Campaign v8-teknik](https://experienceleague.corp.adobe.com/docs/campaign/technotes-ac/tn-new/push-technote.html){target="_blank"}.
+
+Motsvarar dessa två kanaler finns det två leveransaktiviteter i kampanjarbetsflödena. Det finns även två mallar för transaktionsmeddelanden.
 
 ![](assets/nmac_intro_3.png)
 
-
->[!NOTE]
->
->Det finns även två mallar för transaktionsmeddelanden.
 
 Du kan definiera programbeteendet för när användaren aktiverar meddelandet för att visa skärmen som matchar programsammanhanget. Exempel:
 
