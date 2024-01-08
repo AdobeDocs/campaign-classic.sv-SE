@@ -7,10 +7,10 @@ badge-v7-only: label="v7" type="Informative" tooltip="Gäller endast Campaign Cl
 role: User
 level: Beginner
 exl-id: d65869ca-a785-4327-8e8d-791c28e4696c
-source-git-commit: f2e6db9e198f96e1e0250d461b419ac00e39bf45
-workflow-type: ht
-source-wordcount: '2221'
-ht-degree: 100%
+source-git-commit: 9083c9c11b6b9c695cc98882e99ceb3cffc20ec7
+workflow-type: tm+mt
+source-wordcount: '2258'
+ht-degree: 97%
 
 ---
 
@@ -20,20 +20,20 @@ Den här sidan listar nya funktioner, förbättringar och korrigeringar som komm
 
 ## Version 7.3.5 – build 9368 {#release-7-3-5}
 
-[!BADGE Allmän tillgänglighet]{type=Informative url="https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/rn-overview.html?lang=sv#rn-statuses" tooltip="Allmän tillgänglighet"}
+[!BADGE Allmän tillgänglighet]{type=Positive url="https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/rn-overview.html?lang=sv#rn-statuses" tooltip="Allmän tillgänglighet"}
 
 
 _5 december 2023_
 
 
-**Säkerhetsförbättringar**
+### Säkerhetsförbättringar {#release-7-3-5-security}
 
 
 * Med Campaign Classic v7.3.5 har autentiseringsprocessen förbättrats och säkrats. Tekniska operatörer bör nu använda Adobe Identity Management System (IMS) för att ansluta till Campaign. Lär dig hur du migrerar dina befintliga tekniska konton i [det här tekniska dokumentet](../../technotes/using/ims-migration.md).
 
 * Dessutom, som en del av arbetet med att förstärka säkerheten och autentiseringsprocessen, rekommenderar Adobe Campaign starkt att du migrerar slutanvändarautentiseringsläget från den inbyggda inloggnings-/lösenordsautentiseringen till Adobe Identity Management System (IMS). Läs om hur du migrerar dina operatörer i [det här tekniska dokumentet](../../technotes/using/migrate-users-to-ims.md).
 
-**Korrigeringar**
+### Korrigeringar {#release-7-3-5-patches}
 
 * Korrigerade ett problem när data från en Google Big Query-databas användes och data uppdaterades i en Oracle-databas: alla nycklar var inställda på `0` i arbetsflödets temporära tabell. (NEO-65091)
 * Korrigerade ett problem som medförde att en arbetsflödeskörning misslyckades när två frågor i en Google Big Query-databas kombinerades i en arbetsflödesaktivitet med **sammanslutning**. (NEO-63705)
@@ -48,27 +48,28 @@ _5 december 2023_
 
 [!BADGE Begränsad tillgänglighet]{type=Neutral url="https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/rn-overview.html?lang=sv#rn-statuses" tooltip="Begränsad tillgänglighet"}
 
+
 >[!CAUTION]
 >
 >Uppgradering av klientkonsolen är obligatorisk. Lär dig hur du uppgraderar din klientkonsol på den här [sidan](../../installation/using/installing-the-client-console.md).
 >
-> Om du använder [Campaign – Microsoft Dynamics CRM Connector](../../platform/using/crm-connectors.md)måste du uppgradera både din marknadsföring och dina mid-sourcingsservrar med den här nya builden.
+>Om du använder [Campaign – Microsoft Dynamics CRM Connector](../../platform/using/crm-connectors.md)måste du uppgradera både din marknadsföring och dina mid-sourcingsservrar med den här nya builden.
 
 _7 september 2023_
 
-**Säkerhetsförbättring**
+### Säkerhetsförbättringar {#release-7-3-4-security}
 
 * Säkerheten har förbättrats i API:erna för IMS. Klientkänslig information (t.ex. åtkomsttoken) har tagits bort från URL-parametrar. Dessa referenser skickas nu i postdata- eller auktoriseringshuvudet, vilket säkerställer en säkrare kommunikationsprocess. (NEO-63045)
 * Säkerheten har förbättrats i webbprogram för att förhindra DDOS-attacker. (NEO-50757)
 * Säkerheten har förbättrats för att förhindra att PII-data visas i webbloggfelen. (NEO-46827)
 * Säkerheten har optimerats för att förhindra att säkerhetstoken inkluderas i URL:en för Campaign-hemsidan. (NEO-38519)
 
-**Kompatibilitetsuppdateringar**
+### Uppdateringar av kompatibilitet  {#release-7-3-4-compat}
 
 * Tomcat har uppdaterats till version 8.5.91
 * Libexpat-biblioteket har uppdaterats till 2.5.0 för att förbättra säkerheten. (NEO-51023)
 
-**Förbättringar**
+### Förbättringar {#release-7-3-4-improvements}
 
 * Parametern MaxWorkingSetMb i serverkonfigurationsfilen (serverConf.xml) har ändrats för att optimera minnesallokeringen för leveranser. (NEO-49204)
 * Det externa BigQuery-kontot har förbättrats med nya alternativ som används för att konfigurera GCloud SDK. (NEO-63879) [Läs mer](../../installation/using/configure-fda-google-big-query.md#google-external)
@@ -76,7 +77,7 @@ _7 september 2023_
 * Hanteringen av spårningsloggen har förbättrats för att undvika negativa ID:n för lastMsgId. Den har ändrats från int32 till int64. (NEO-52290)
 * Mid-sourcingsarbetsflödet (leveransstatistik) har lagts till direkt. Det nya arbetsflödet synkroniserar leveransstatistik (nms:deliveryStat) från mitten till marknadsinstansen. (NEO-36802)
 
-**Korrigeringar**
+### Korrigeringar {#release-7-3-4-patches}
 
 * Korrigerade ett problem som kunde inträffa när en tjänstbegäran gjordes före IMS-inloggning, om autentiseringen av anropet till tjänsten använde en tjänsttoken. (NEO-64903)
 * Korrigerade ett regressionsproblem som kan leda till skrollningsproblem när du använder Redigeraren för digitalt innehåll. (NEO-64671, NEO-59256)
@@ -117,17 +118,21 @@ Korrigerade ett fel som kunde medföra att japanska tecken inte visades korrekt 
 
 [!BADGE Begränsad tillgänglighet]{type=Neutral url="https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/rn-overview.html?lang=sv#rn-statuses" tooltip="Begränsad tillgänglighet"}
 
->[!CAUTION]
+>[!AVAILABILITY]
 >
->Uppgradering av klientkonsolen är obligatorisk. Lär dig hur du uppgraderar din klientkonsol på den här [sidan](../../installation/using/installing-the-client-console.md).
+>Det finns en specifik korrigeringsuppgradering för Campaign v7.3.3.IMS för den här versionen, om ingen annan korrigeringsfil har installerats i din miljö. Den ger [IMS-säkerhetsuppdateringar (Adobe Identity Management System) som ingår i v7.3.5](#release-7-3-5-security) till befintliga v7.3.3-miljöer.
+
 
 _20 mars 2023_
 
-**Säkerhetsförbättring**
+
+### Säkerhetsförbättring {#release-7-3-3-security}
 
 * För att optimera säkerheten har Tomcat uppdaterats från version 8.5.81 till 8.5.85. (NEO-56936)
 
-**Förbättringar**
+
+
+### Förbättringar {#release-7-3-3-improvements}
 
 * Arbetsflödet för fakturering har förbättrats för att optimera prestanda. (NEO-47658)
 * Arbetsflödet för spårning har förbättrats för att optimera prestanda om leveransstorleken är hög. (NEO-45064)
@@ -135,7 +140,11 @@ _20 mars 2023_
 
 <!--To apply this change, the marketing, tracking and mid servers need to be updated to 7.3.3. To enable the new tracking management mode, set the `emailLinksVersion` parameter to '3' in the configuration file of the marketing server. (NEO-46535)-->
 
-**Korrigeringar**
+>[!CAUTION]
+>
+>Uppgradering av klientkonsolen är obligatorisk. Lär dig hur du uppgraderar din klientkonsol på den här [sidan](../../installation/using/installing-the-client-console.md).
+
+### Korrigeringar {#release-7-3-3-patches}
 
 * Korrigerade ett problem som kunde förhindra att push-meddelanden för korrektur i iOS skickades från kontrollinstansen (kontext för transaktionsmeddelanden). (NEO-54713)
 * Korrigerade ett problem som kunde förhindra dig från att skrolla i fliken **Redigera** i Redigeraren för digitalt innehåll (DCE). (NEO-54474)
@@ -145,13 +154,14 @@ _20 mars 2023_
 
 [!BADGE Begränsad tillgänglighet]{type=Neutral url="https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/rn-overview.html?lang=sv#rn-statuses" tooltip="Begränsad tillgänglighet"}
 
+<!--
+>[!AVAILABILITY]
+>
+>A specific Campaign v7.3.2.IMS patch upgrade is available for this version - if no other patch has been applied to your environment. It brings [Adobe Identity Management System (IMS) security updates coming with v7.3.5](#release-7-3-5-security) to existing v7.3.3 environments.-->
+
 _21 november 2022_
 
->[!CAUTION]
->
->Uppgradering av klientkonsolen är obligatorisk. Lär dig hur du uppgraderar din klientkonsol på den här [sidan](../../installation/using/installing-the-client-console.md).
-
-**Kompatibilitetsuppdateringar**
+### Uppdateringar av kompatibilitet {#release-7-3-2-compat}
 
 * Adobe Campaign är nu kompatibelt med PostgreSQL 14. Mer information hittar du i detta [tekniska dokument](../../technotes/using/tech-stack-upgrade.md).
 
@@ -159,20 +169,24 @@ _21 november 2022_
 
 Läs mer i [kompatibilitetsmatrisen för Campaign](../../rn/using/compatibility-matrix.md#RDBMSservers).
 
-**Förbättringar**
+>[!CAUTION]
+>
+>Uppgradering av klientkonsolen är obligatorisk. Lär dig hur du uppgraderar din klientkonsol på den här [sidan](../../installation/using/installing-the-client-console.md).
+
+### Förbättringar {#release-7-3-2-improvements}
 
 * Google BigQuery-anslutningen har nu fullständigt stöd för booleska fält. (NEO-49181)
 * Nu kan du konfigurera giltighetsperioden för IMS-cookies i avsnittet `Configuration for the redirection service` i filen serverConf.xml. Detta gäller följande cookies: `uuid230`, `nllastdelid` och `AMCV_` (NEO-42541)
 * IP-adressen kan nu döljas i begäran /r/test genom att ange `showSourceIP` som felaktig i omdirigeringsnoden för filen serverConf.xml. [Läs mer](../../installation/using/the-server-configuration-file.md#redirection-redirection)(NEO-46656)
 
-**Inaktuella funktioner**
+### Inaktuella funktioner  {#release-7-3-2-deprecated}
 
 * Social marknadsföring med Facebook är nu inaktuell. Du kan använda X (tidigare Twitter) för att publicera inlägg på sociala medier, eller samarbeta med Adobe för att skapa en anpassad kanal.
 * ACS-anslutning (Prime-erbjudande) är nu inaktuell. Du kan använda funktionerna export/import för Campaign för att extrahera och mata in data i båda produkterna.
 
 Läs mer på sidan [Funktioner som är inaktuella eller har tagits bort](deprecated-features.md).
 
-**Andra ändringar**
+### Andra ändringar  {#release-7-3-2-other}
 
 * Webbloggarna har förbättrats: `logonEscalation` varningar visas nu endast för användare med administratörsbehörighet. (NEO-47167)
 * För att undvika fel stoppas nu arbetsflödet **Samla in data för tjänsten Heatmap** (collectDataHeatMapService) som standard. (NEO-33959)
@@ -180,7 +194,7 @@ Läs mer på sidan [Funktioner som är inaktuella eller har tagits bort](depreca
 * För att förhindra krascher har JS-metoden loadLibraryDebug tagits bort. (NEO-46968)
 * Återstående referenser till log4j-biblioteket har tagits bort från Campaign-installationen i Windows. (NEO-44851)
 
-**Korrigeringar**
+### Korrigeringar {#release-7-3-2-patches}
 
 * Korrigerade ett problem som hindrade dig från att använda arbetsflödesalternativet **Sammanfoga markerade rader**. (NEO-48488)
 * Korrigerade ett problem som förhindrade leveransindikatorn **Lyckades** från att uppdateras korrekt när du använder Adobe Campaign Enhanced MTA. (NEO-50462)

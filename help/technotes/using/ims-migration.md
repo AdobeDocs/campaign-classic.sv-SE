@@ -4,9 +4,9 @@ description: Lär dig hur du migrerar tekniska kampanjoperatörer till ett tekni
 feature: Technote
 role: Admin
 exl-id: 1a409daf-57be-43c9-a3d9-b8ab54c88068
-source-git-commit: bc9367d598474b7971f25c27980ff25dd93bf87a
+source-git-commit: 9083c9c11b6b9c695cc98882e99ceb3cffc20ec7
 workflow-type: tm+mt
-source-wordcount: '1646'
+source-wordcount: '1694'
 ht-degree: 0%
 
 ---
@@ -22,7 +22,7 @@ En teknisk operator är en Campaign-användarprofil som uttryckligen har skapats
 
 Om du gör API-anrop från ett externt system till Campaign till antingen din Campaign Marketing-instans eller till meddelandecenterinstansen i realtid rekommenderar Adobe dig att migrera de tekniska operatörerna till tekniska konton via Adobe Developer Console enligt beskrivningen nedan.
 
-Den här ändringen gäller från och med Campaign Classic v7.3.5 och är **obligatoriskt** för att gå över till Adobe Campaign v8.
+Den här ändringen gäller från och med Campaign Classic v7.3.5 (och senaste [IMS-migreringskompatibla versioner](#ims-versions-tech)) och är **obligatoriskt** för att gå över till Adobe Campaign v8.
 
 ## Migreringsprocess {#ims-migration-procedure}
 
@@ -36,13 +36,24 @@ En översikt över stegen är:
 * Uppdatera dina API:er för att använda de nya inloggningsuppgifterna för det tekniska kontot
 * Ta bort äldre tekniska operatorer från Campaign-instansen
 
+
+### IMS-migreringskompatibla versioner {#ims-versions-tech}
+
+En förutsättning för migreringen är att du uppgraderar miljön till någon av följande produktversioner:
+
+* Campaign v7.3.5 (rekommenderas)
+* Campaign v7.3.3.IMS
+  <!--* Campaign v7.3.2.IMS-->
+
+De här kampanjversionerna finns i [Versionsinformation](../../rn/using/latest-release.md).
+
 ### Krav för migreringen{#ims-migration-prerequisites}
 
 <!--To be able to create the technical accounts which replace the technical operators, the prerequisite that the proper Campaign Product Profiles exist within the Admin Console for all Campaign instances need to be validated. You can learn more about Product Profiles within the Adobe Console in [Adobe Developer Console documentation](https://developer.adobe.com/developer-console/docs/guides/projects/){target="_blank"}.-->
 
 * Campaign Hosted och Managed Services
 
-  För API-anrop till Message Center-instansen/instanserna bör en produktprofil ha skapats under uppgraderingen till Campaign v7.3.5 eller under etableringen av instansen. Den här produktprofilen heter:
+  För API-anrop till Message Center-instansen/instanserna, ska en produktprofil ha skapats under uppgraderingen till Campaign v7.3.5 (eller andra [IMS-migreringskompatibel version](#ims-versions-tech)) eller under etableringen av instansen. Den här produktprofilen heter:
 
   `campaign - <your campaign instance> - messagecenter`
 
@@ -227,7 +238,7 @@ Observera att den tekniska kontoanvändaren INTE finns i Adobe Campaign förrän
 
    ![](assets/do-not-translate/ims-updates-07.png)
 
-   Bläddra nedåt på skärmen Autentiseringsuppgifter för att hitta e-postadressen för det tekniska kontot **och klicka på **Kopiera** -knappen.
+   I **Information om autentiseringsuppgifter** bläddra nedåt för att hitta **E-post för tekniskt konto** och klicka på **Kopiera** -knappen.
 
    ![](assets/do-not-translate/ims-updates-08.png)
 
