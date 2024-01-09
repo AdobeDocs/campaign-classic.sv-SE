@@ -3,18 +3,18 @@ audience: end-user
 breadcrumb-title: Dokumentation om Campaign Classic v7
 product: campaign
 title: Användarhandbok för Campaign Classic v7
-user-guide-description: Med Adobe Campaign kan du använda omfattande kunddata för att skapa, samordna och leverera dynamiska kampanjer som kunderna verkligen vill ha – via e-post, mobiler, offlinekanaler med mera.
+user-guide-description: Produktdokumentation för Adobe Campaign Classic v7.
 sub-product: adobe campaign classic
 type: Documentation
-source-git-commit: c2ac8fcf1d9746dbddffc90491a6f214e2c3df2e
-workflow-type: ht
-source-wordcount: '2544'
-ht-degree: 100%
+source-git-commit: cb1f079fbb7af6bb6645aae86261ca723fd97c3a
+workflow-type: tm+mt
+source-wordcount: '2524'
+ht-degree: 99%
 
 ---
 
 
-# Dokumentation om Adobe Campaign Classic v7 {#using}
+# Adobe Campaign Classic v7-dokumentation {#using}
 
 + [Dokumentation om Campaign v7](campaign-classic-home.md)
 + [Senaste uppdateringar](rn/using/documentation-updates.md)
@@ -841,3 +841,7 @@ ht-degree: 100%
       + [Migrering till Public Cloud](technotes/using/dc-migration.md)
       + [Vanliga frågor och svar ](technotes/using/dc-migration-faq.md)
 + [Kontrollpanelen i Campaign](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=sv)
+
+<!--
+With Adobe Campaign Classic v7, you can use rich customer data to create, coordinate, and deliver dynamic campaigns that customers actually want — through email, mobile, offline channels, and more.
+-->
