@@ -7,9 +7,9 @@ badge-v8: label="v8" type="Positive" tooltip="Gäller även Campaign v8"
 feature: SMS
 role: Developer, Data Engineer
 exl-id: fded088a-11a2-4b87-a368-7b197334aca4
-source-git-commit: d2f5f2a662c022e258fb3cc56c8502c4f4cb2849
+source-git-commit: 73fd678d54ba1db647c1c188e8064b28466b3cd2
 workflow-type: tm+mt
-source-wordcount: '8458'
+source-wordcount: '8448'
 ht-degree: 0%
 
 ---
@@ -412,7 +412,7 @@ Adobe Campaign Classic Extended SMPP-kontakten kan styra antalet anslutningar pe
 
 För Adobe Campaign Classic kan det finnas ett annat antal mottagar- och sändaranslutningar:
 
-* **Transmitteranslutningar = Antal MTA-underordnade anslutningar * antal MTA-underordnade processer * antal MTA-underprocesser </br> (om autosvar är inställt) + Antal underordnade MTA-anslutningar**
+* **Transmitteranslutningar = Antal MTA-underordnade anslutningar * antal MTA-underordnade processer * antal MTA-filer (om autosvar har angetts) * antal MTA-underordnade anslutningar**
 
 Som tidigare nämnts öppnar Adobe Campaign Classic SMS-processen fler sändaranslutningar om autosvar är aktiverat. Dessa extra anslutningar används för att skicka de automatiska svaren.
 
@@ -716,7 +716,7 @@ Tillåter att en anpassad TLV läggs till. Det här fältet anger taggdelen. Vä
 
 Med den här inställningen kan du bara lägga till ett TLV-alternativ per meddelande.
 
-### Automatiskt svar skickat till MO {#automatic-reply}
+### Automatiskt svar skickat till flerlägesobjektet {#automatic-reply}
 
 >[!IMPORTANT]
 >
