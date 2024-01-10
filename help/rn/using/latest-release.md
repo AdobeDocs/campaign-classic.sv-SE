@@ -8,9 +8,9 @@ role: User
 level: Beginner
 exl-id: d65869ca-a785-4327-8e8d-791c28e4696c
 source-git-commit: 9083c9c11b6b9c695cc98882e99ceb3cffc20ec7
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2258'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -64,7 +64,7 @@ _7 september 2023_
 * Säkerheten har förbättrats för att förhindra att PII-data visas i webbloggfelen. (NEO-46827)
 * Säkerheten har optimerats för att förhindra att säkerhetstoken inkluderas i URL:en för Campaign-hemsidan. (NEO-38519)
 
-### Uppdateringar av kompatibilitet  {#release-7-3-4-compat}
+### Kompatibilitetsuppdateringar  {#release-7-3-4-compat}
 
 * Tomcat har uppdaterats till version 8.5.91
 * Libexpat-biblioteket har uppdaterats till 2.5.0 för att förbättra säkerheten. (NEO-51023)
@@ -102,7 +102,7 @@ _7 september 2023_
 * Korrigerade ett problem som kan leda till ett valideringsfel när en leverans med direktmeddelanden skickas med targetMapping med godkännanden. (NEO-50758)
 * Korrigerade ett frågehanteringsproblem som kunde påverka leveransresultatet. (NEO-49991)
 * Korrigerade ett problem när externa konton används i aktiviteter för Campaign-arbetsflöde, vilket kan leda till problem med konfigurationen av externa konton. (NEO-49959)
-* Korrigerade ett prestandaproblem när push-meddelanden skickades. (NEO-49953) 
+* Korrigerade ett prestandaproblem när push-meddelanden skickades. (NEO-49953)
 Korrigerade ett fel som kunde medföra att japanska tecken inte visades korrekt vid export av rapporter (NEO-49308).
 * Korrigerade ett fel som gjorde att Tomcat-felrapporten visade för mycket felinformation. (NEO-49029)
 * Korrigerade ett problem som kunde leda till ett leveransfel vid användning av ett stort antal erbjudanden. (NEO-48807)
@@ -120,7 +120,7 @@ Korrigerade ett fel som kunde medföra att japanska tecken inte visades korrekt 
 
 >[!AVAILABILITY]
 >
->Det finns en specifik korrigeringsuppgradering för Campaign v7.3.3.IMS för den här versionen, om ingen annan korrigeringsfil har installerats i din miljö. Den ger [IMS-säkerhetsuppdateringar (Adobe Identity Management System) som ingår i v7.3.5](#release-7-3-5-security) till befintliga v7.3.3-miljöer.
+>Det finns en specifik korrigeringsuppgradering för Campaign v7.3.3.IMS för den här versionen, om ingen annan korrigeringsfil har tillämpats i din miljö. Den ger [IMS-säkerhetsuppdateringar (Adobe Identity Management System) som ingår i v7.3.5](#release-7-3-5-security) till befintliga v7.3.3-miljöer.
 
 
 _20 mars 2023_
@@ -161,7 +161,7 @@ _20 mars 2023_
 
 _21 november 2022_
 
-### Uppdateringar av kompatibilitet {#release-7-3-2-compat}
+### Kompatibilitetsuppdateringar {#release-7-3-2-compat}
 
 * Adobe Campaign är nu kompatibelt med PostgreSQL 14. Mer information hittar du i detta [tekniska dokument](../../technotes/using/tech-stack-upgrade.md).
 
