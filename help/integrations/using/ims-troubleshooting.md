@@ -4,23 +4,22 @@ title: IMS-felsökning
 description: IMS-felsökning
 feature: Configuration
 badge-v7: label="v7" type="Informative" tooltip="Gäller Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Gäller även Campaign v8"
+badge-v7-prem: label="lokal och hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=sv" tooltip="Gäller endast lokala och hybrida driftsättningar"
 audience: integrations
 content-type: reference
 topic-tags: connecting-via-an-adobe-id
 exl-id: 1ce89c3a-1fe6-4ed6-9547-2eb9713a0ec3
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: 49271e291953483ee14709b26ec053217a336718
 workflow-type: tm+mt
-source-wordcount: '419'
-ht-degree: 2%
+source-wordcount: '418'
+ht-degree: 1%
 
 ---
 
 # IMS-felsökning{#ims-troubleshooting}
 
 
-
-Följande felsökningstips är till hjälp **lokal** -kunder löser de vanligaste problemen som uppstår när IMS-integreringen används. För **värdbaserad** kontakta Adobe.
+Följande felsökningstips är till hjälp **lokal** och **hybrid** -kunder löser de vanligaste problemen som uppstår när IMS-integreringen används. För **värdbaserad** kontakta Adobe.
 
 **Externt konto**
 

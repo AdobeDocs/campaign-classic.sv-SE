@@ -4,29 +4,26 @@ title: Konfigurera IMS
 description: Lär dig ansluta via en Adobe ID
 feature: Configuration
 badge-v7: label="v7" type="Informative" tooltip="Gäller Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Gäller även Campaign v8"
+badge-v7-prem: label="lokal och hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=sv" tooltip="Gäller endast lokala och hybrida driftsättningar"
 audience: integrations
 content-type: reference
 topic-tags: connecting-via-an-adobe-id
 exl-id: b70ca220-1c81-4b23-b07a-a2cd694877fe
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: 49271e291953483ee14709b26ec053217a336718
 workflow-type: tm+mt
-source-wordcount: '357'
-ht-degree: 5%
+source-wordcount: '334'
+ht-degree: 2%
 
 ---
 
 # Konfigurera IMS{#configuring-ims}
 
-
-
 >[!IMPORTANT]
 >
->Implementeringen av Adobe IMS är strikt förbehållen de tekniska administratörerna på Adobe. Kontakta Adobe för att starta implementeringsprocessen.
+>Som en Campaign-värd eller hanterad tjänstanvändare ägs IMS-implementeringen av Adobe. De steg som beskrivs nedan gäller endast lokala kunder och hybridkunder.
+> Implementeringen av Adobe IMS får endast utföras av Adobe tekniska administratörer. Kontakta Adobe för att starta implementeringsprocessen.
 
 ## Förhandskrav {#prerequisites}
-
-Så här använder du integreringen med IMS:
 
 * Du måste ha ett namn och ett ID för Adobe Experience Cloud-organisationen. Om du vill hitta ditt organisations-ID går du till [den här sidan](https://experienceleague.adobe.com/docs/core-services/interface/administration/organizations.html?lang=sv){_blank}.
 * Du måste lägga till användare i Experience Cloud. Mer information finns i [den här sidan](https://experienceleague.adobe.com/docs/core-services/interface/administration/admin-getting-started.html){_blank}.
@@ -37,7 +34,7 @@ Så här använder du integreringen med IMS:
 
 ## Konsolen uppdateras {#updating-the-console}
 
-Om du vill använda den här funktionen måste du installera den senaste versionen av konsolen.
+Om du vill använda den här funktionen måste du installera den senaste versionen av klientkonsolen.
 
 ## Installera paketet {#installing-the-package}
 
@@ -49,23 +46,16 @@ Du måste installera det inbyggda **[!UICONTROL Integration with the Adobe Exper
 
 Konfigurera **Adobe Experience Cloud** externt konto i **[!UICONTROL Administration > Platform > External accounts]**.
 
->[!CAUTION]
->
->Den här konfigurationen är reserverad för den tekniska administratören.
-
 ![](assets/ims_5.png)
 
 Ange följande information:
 
-* Anslutningsinformation för den IMS-server som används (ID och hemlighet). Denna information tillhandahålls av Adobe support. Mer information finns i [Frågor och svar för Adobe Experience Cloud-administratörer](https://experienceleague.adobe.com/docs/core-services/interface/manage-users-and-products/faq.html).
+* Anslutningsinformation för den IMS-server som används (ID och hemlighet). Denna information tillhandahålls av Adobe kundtjänstteam. Mer information finns i [Frågor och svar för Adobe Experience Cloud-administratörer](https://experienceleague.adobe.com/docs/core-services/interface/manage-users-and-products/faq.html).
 
   The **[!UICONTROL Callback server]** adressen måste anges i **https**. Det här fältet motsvarar åtkomst-URL:en för din Adobe Campaign-instans.
 
 * Organisations-ID: om du vill hitta ditt organisations-ID, se [den här sidan](https://experienceleague.adobe.com/docs/core-services/interface/administration/organizations.html?lang=sv){_blank}.
+
 * Associationsmask: I det här fältet kan du definiera syntaxen som gör att konfigurationsnamnen i Enterprise Dashboard kan synkroniseras med grupperna i Adobe Campaign. Om du använder syntaxen&quot;Campaign - tenant_id - (.&#42;)&quot; länkas säkerhetsgruppen som skapas i Adobe Campaign till konfigurationsnamnet Campaign - tenant_id - internal_name i Enterprise Dashboard.
 
-  >[!CAUTION]
-  >
-  >Kopplingsmasken är nödvändig för att anslutningen via Adobe ID ska fungera korrekt.
-
-* Adobe Experience Cloud anslutningsinformation, särskilt namnet på Adobe Experience Cloud-klienten.
+* Adobe Experience Cloud-anslutningsinformation, som är namnet på Adobe Experience Cloud-klienten.
