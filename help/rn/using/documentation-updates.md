@@ -8,9 +8,9 @@ role: User
 level: Beginner
 exl-id: 07c1f4a3-cf16-4a9b-b402-e13258799f91
 source-git-commit: 31705e7dd0ecb4e66fe4a22369995384d3ce39d4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3680'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -24,7 +24,7 @@ Se [Versionsinformationen för Adobe Campaign Classic](../../rn/using/latest-rel
 
 ### Januari 2024 {#jan-2024}
 
-Information har lagts till om hur standardfältet för postadress för Direct Mail definieras och varför det är viktigt att se till att adresserna är fullständiga. [Läs mer](../../delivery/using/about-direct-mail-channel.md)
+Information har lagts till om hur standardfältet postalAddress för direktreklam definieras och varför det är viktigt att se till att adresserna är fullständiga. [Läs mer](../../delivery/using/about-direct-mail-channel.md)
 
 ## 2023
 
