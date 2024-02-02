@@ -7,10 +7,10 @@ badge-v7-only: label="v7" type="Informative" tooltip="Gäller endast Campaign Cl
 role: User
 level: Beginner
 exl-id: 07c1f4a3-cf16-4a9b-b402-e13258799f91
-source-git-commit: 31705e7dd0ecb4e66fe4a22369995384d3ce39d4
-workflow-type: ht
-source-wordcount: '3680'
-ht-degree: 100%
+source-git-commit: 4165f5988dfeee2f3b4d872c445ace11c9aa4fe1
+workflow-type: tm+mt
+source-wordcount: '3699'
+ht-degree: 99%
 
 ---
 
@@ -25,6 +25,8 @@ Se [Versionsinformationen för Adobe Campaign Classic](../../rn/using/latest-rel
 ### Januari 2024 {#jan-2024}
 
 Information har lagts till om hur standardfältet postalAddress för direktreklam definieras och varför det är viktigt att se till att adresserna är fullständiga. [Läs mer](../../delivery/using/about-direct-mail-channel.md)
+
+En ny sida om hur du konfigurerar SMS-kanalen i Campaign för en infrastruktur med mellanleverantörer har lagts till. [Läs mer](../../delivery/using/sms-set-up-mid.md)
 
 ## 2023
 

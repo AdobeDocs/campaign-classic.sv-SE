@@ -6,10 +6,10 @@ title: Användarhandbok för Campaign Classic v7
 user-guide-description: Produktdokumentation för Adobe Campaign Classic v7.
 sub-product: adobe campaign classic
 type: Documentation
-source-git-commit: cb1f079fbb7af6bb6645aae86261ca723fd97c3a
-workflow-type: ht
-source-wordcount: '2524'
-ht-degree: 100%
+source-git-commit: 4165f5988dfeee2f3b4d872c445ace11c9aa4fe1
+workflow-type: tm+mt
+source-wordcount: '2536'
+ht-degree: 99%
 
 ---
 
@@ -141,7 +141,9 @@ ht-degree: 100%
       + [Bifoga filer](delivery/using/attaching-files.md)
    + Skicka SMS {#sending-messages-on-mobiles}
       + [Kom igång med SMS](delivery/using/sms-channel.md)
-      + [Konfigurera SMS-kanal](delivery/using/sms-set-up.md)
+      + Konfigurera SMS-kanal {#sms-set-up}
+         + [Konfigurera SMS på en fristående instans](delivery/using/sms-set-up.md)
+         + [Konfigurera SMS i en infrastruktur med mellanleverantörer](delivery/using/sms-set-up-mid.md)
       + [Skapa ett SMS](delivery/using/sms-create.md)
       + [Skicka och spåra SMS](delivery/using/sms-send.md)
       + [Protokoll och inställningar för SMS-koppling](delivery/using/sms-protocol.md)

@@ -7,14 +7,14 @@ badge-v8: label="v8" type="Positive" tooltip="Gäller även Campaign v8"
 feature: SMS
 role: User, Developer, Admin
 exl-id: a2783a5e-6d38-41a1-b5c6-24ab489116f8
-source-git-commit: d2f5f2a662c022e258fb3cc56c8502c4f4cb2849
+source-git-commit: 4165f5988dfeee2f3b4d872c445ace11c9aa4fe1
 workflow-type: tm+mt
-source-wordcount: '1734'
-ht-degree: 34%
+source-wordcount: '1751'
+ht-degree: 26%
 
 ---
 
-# Konfigurera SMS-kanal {#setting-up-sms-channel}
+# Konfigurera SMS-kanal på en fristående instans {#setting-up-sms-channel}
 
 Om du vill skicka till en mobiltelefon behöver du:
 
@@ -37,7 +37,7 @@ Om du vill skicka till en mobiltelefon behöver du:
 Om du vill skicka ett SMS till en mobiltelefon måste du först skapa ett externt SMPP-konto.
 Mer information om SMS-protokoll och inställningar finns i [page](sms-protocol.md).
 
-Följ stegen nedan för att göra detta:
+Gör så här:
 
 1. I **[!UICONTROL Platform]** > **[!UICONTROL External accounts]** trädnod, klicka på **[!UICONTROL New]** -ikon.
 1. Definiera kontotypen som **Routning**, kanalen **Mobil (SMS)** och leveranssättet som **Massleverans**.
@@ -67,7 +67,7 @@ Följ stegen nedan för att göra detta:
 
    >[!NOTE]
    >
-   >Vissa tecken räknas som två (parenteser, hakparanteser, eurosymbolen etc.).  
+   >Vissa tecken räknas som två (klammerparenteser, eurosymbolen osv.).
    >
    >Nedan visas en lista över tillgängliga GSM-tecken.
 
@@ -106,13 +106,13 @@ Transkriberingen ersätter ett tecken i ett SMS med ett annat om det tecknet int
 
 >[!IMPORTANT]
 >
->Om du infogar anpassningsfält i innehållet av SMS-meddelandet kan det medföra tecken som GSM-kodningen inte tar hänsyn till.  
+>Om du infogar anpassningsfält i innehållet i SMS-meddelandet kan det medföra tecken som GSM-kodningen inte tar hänsyn till.
 
 Som standard är teckentranskribering inaktiverat.  Om du vill att samtliga tecken i SMS-meddelanden ska behållas som de är bör du inte aktivera det här alternativet.
 
 Om dina SMS-meddelanden innehåller många tecken som genererar Unicode-meddelanden kan du välja att aktivera det här alternativet för att begränsa kostnaderna för att skicka meddelanden.
 
-I följande tabell visas de tecken som GSM-standarden tar hänsyn till. Alla tecken som infogats i meddelandetexten förutom de som nämns nedan konverterar hela meddelandet till binärt format (Unicode) och begränsar det därför till 70 tecken.  
+I följande tabell visas de tecken som GSM-standarden tar hänsyn till. Alla tecken som infogats i meddelandetexten, förutom de som nämns nedan, konverterar hela meddelandet till binärt format (Unicode) och begränsar det därför till 70 tecken.
 
 **Grundläggande tecken**
 
@@ -123,9 +123,9 @@ I följande tabell visas de tecken som GSM-standarden tar hänsyn till. Alla tec
    <td> <img height="21px" src="assets/delta.png" /> </td> 
    <td> SP </td> 
    <td> 0 </td> 
-   <td> ¡ </td> 
+   <td> ○ </td> 
    <td> P </td> 
-   <td> ¿ </td> 
+   <td> as </td> 
    <td> p </td> 
   </tr> 
   <tr> 
@@ -159,7 +159,7 @@ I följande tabell visas de tecken som GSM-standarden tar hänsyn till. Alla tec
    <td> s </td> 
   </tr> 
   <tr> 
-   <td> è </td> 
+   <td> É </td> 
    <td> <img height="21px" src="assets/delta.png" /> </td> 
    <td> ¤ </td> 
    <td> 4 </td> 
@@ -179,7 +179,7 @@ I följande tabell visas de tecken som GSM-standarden tar hänsyn till. Alla tec
    <td> u </td> 
   </tr> 
   <tr> 
-   <td> ù </td> 
+   <td> ñ </td> 
    <td> <img height="21px" src="assets/pi.png" /> </td> 
    <td> &amp; </td> 
    <td> 6 </td> 
@@ -189,17 +189,17 @@ I följande tabell visas de tecken som GSM-standarden tar hänsyn till. Alla tec
    <td> v </td> 
   </tr> 
   <tr> 
-   <td> ì </td> 
+   <td> Maximum </td> 
    <td> <img height="21px" src="assets/psi.png" /> </td> 
    <td> ' </td> 
    <td> 7 </td> 
    <td> G </td> 
-   <td> W </td> 
+   <td> B </td> 
    <td> g </td> 
    <td> w </td> 
   </tr> 
   <tr> 
-   <td> ò </td> 
+   <td> systemkrav </td> 
    <td> <img height="21px" src="assets/sigma.png" /> </td> 
    <td> ( </td> 
    <td> 8 </td> 
@@ -209,7 +209,7 @@ I följande tabell visas de tecken som GSM-standarden tar hänsyn till. Alla tec
    <td> x </td> 
   </tr> 
   <tr> 
-   <td> Ç </td> 
+   <td> else </td> 
    <td> <img height="21px" src="assets/theta.png" /> </td> 
    <td> ) </td> 
    <td> 9 </td> 
@@ -240,7 +240,7 @@ I följande tabell visas de tecken som GSM-standarden tar hänsyn till. Alla tec
   </tr> 
   <tr> 
    <td> ø </td> 
-   <td> Æ </td> 
+   <td> AE </td> 
    <td> , </td> 
    <td> &lt; </td> 
    <td> L </td> 
@@ -254,7 +254,7 @@ I följande tabell visas de tecken som GSM-standarden tar hänsyn till. Alla tec
    <td> - </td> 
    <td> = </td> 
    <td> M </td> 
-   <td> Ñ </td> 
+   <td> Ð </td> 
    <td> m </td> 
    <td> ñ </td> 
   </tr> 
@@ -266,7 +266,7 @@ I följande tabell visas de tecken som GSM-standarden tar hänsyn till. Alla tec
    <td> N </td> 
    <td> Ü </td> 
    <td> n </td> 
-   <td> ü </td> 
+   <td> ä </td> 
   </tr> 
   <tr> 
    <td> å </td> 
@@ -291,7 +291,7 @@ CR: Radretur
 
 **Avancerade tecken (räknas två gånger)**
 
-^ { } `[ ~ ]` | €
+^ {} `[ ~ ]` | €
 
 ## Textkodning {#about-text-encodings}
 
