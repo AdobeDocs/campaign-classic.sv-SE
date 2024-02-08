@@ -8,9 +8,9 @@ role: User
 level: Beginner
 exl-id: 07c1f4a3-cf16-4a9b-b402-e13258799f91
 source-git-commit: 4165f5988dfeee2f3b4d872c445ace11c9aa4fe1
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3699'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -26,7 +26,7 @@ Se [Versionsinformationen för Adobe Campaign Classic](../../rn/using/latest-rel
 
 Information har lagts till om hur standardfältet postalAddress för direktreklam definieras och varför det är viktigt att se till att adresserna är fullständiga. [Läs mer](../../delivery/using/about-direct-mail-channel.md)
 
-En ny sida om hur du konfigurerar SMS-kanalen i Campaign för en infrastruktur med mellanleverantörer har lagts till. [Läs mer](../../delivery/using/sms-set-up-mid.md)
+Lade till en ny sida om hur du konfigurerar SMS-kanalen i Campaign i en mid-sourcingsinfrastruktur. [Läs mer](../../delivery/using/sms-set-up-mid.md)
 
 ## 2023
 
