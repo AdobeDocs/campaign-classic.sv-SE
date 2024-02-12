@@ -2,9 +2,9 @@
 title: Migrera kampanjoperatorer till Adobe Identity Management System (IMS)
 description: Lär dig hur du migrerar kampanjoperatorer till Adobe Identity Management System (IMS)
 exl-id: f01948c7-b523-492d-a4e8-67f4adde5fc5
-source-git-commit: da35a3050d838cd8e57bf802dc066e32f22f8273
+source-git-commit: 1879fe179381be654bad876de2423d25049db43c
 workflow-type: tm+mt
-source-wordcount: '1223'
+source-wordcount: '1280'
 ht-degree: 0%
 
 ---
@@ -132,6 +132,24 @@ Adobe rekommenderar starkt att alla användare loggas ut under migreringsfönstr
 Det finns två aspekter av migreringen: migrering av slutanvändare (plus produktprofiler) och migrering av tekniska användare (används i API:er i din anpassade kod).
 
 Om alla användare (kampanjansvariga) använder IMS måste du ändå kontakta din Adobe-representant/kundsupport för att planera migreringen av produktprofiler. Du måste också migrera tekniska användare som du kan ha använt i anpassad kod. Läs mer i [den här sidan](ims-migration.md).
+
+### Hur visar jag din operatörs autentiseringstyp?
+
+Lär dig hur du visar operatörernas autentiseringstyp i Campaign:
+
+1. Från **Explorer**, åtkomst **Administration** `>` **Åtkomsthantering** `>` **Operatorer**.
+
+1. Högerklicka på rubrikraden och välj alternativet **Konfigurera lista** -menyn.
+
+   ![](assets/ims_2.png)
+
+1. Lägg till **Konto inaktiverat** och **Autentiseringstyp** as **Utdatakolumner**.
+
+   ![](assets/ims_1.png)
+
+Nu kan du se listan med **Operatorer** och **Autentiseringstyp**.
+
+![](assets/ims_3.png)
 
 ## Användbara länkar {#ims-useful-links}
 
