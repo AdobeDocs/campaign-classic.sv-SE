@@ -7,10 +7,10 @@ badge-v7-only: label="v7" type="Informative" tooltip="Gäller endast Campaign Cl
 role: User
 level: Beginner
 exl-id: b8c1f287-06f4-4c34-8cca-b0c7676abbc2
-source-git-commit: 3db5242e2074c6d0530258073ae83c11164d7365
-workflow-type: ht
-source-wordcount: '772'
-ht-degree: 100%
+source-git-commit: e430978dd182eaea082122ef748118e5210b05d5
+workflow-type: tm+mt
+source-wordcount: '805'
+ht-degree: 96%
 
 ---
 
@@ -41,6 +41,7 @@ Besök [den här sidan](../../rn/using/deprecated-features.md) för mer informat
 <tr> 
 <td>CentOs</td>
 <td>
+<p>8.x (endast för hybridmiljöer)</p>
 <p>7.x</p>
 <p><strong>Viktigt:</strong> Om du använder RHEL måste du kunna inaktivera SELinux eller låta dina utvecklare skriva anpassade SELinux-regler för att kontrollera att en aktiverad SELinux inte orsakar problem med åtgärder i Campaign.</p>
 </td>
@@ -77,7 +78,7 @@ Besök [den här sidan](../../rn/using/deprecated-features.md) för mer informat
 <tr>
 <td>Microsoft IIS</td>
 <td>
-<p>10.0 i Windows Server 2016  och 2019</p>
+<p>10.0 i Windows Server 2016 och 2019</p>
 </td>
 </tr>
 <tr>
@@ -353,7 +354,7 @@ Följande operativsystem och webbläsare **krävs** för att använda [klientkon
 
 ### Microsoft WebView2-körtid
 
-Microsoft Edge WebView2-körtid den senaste versionen är obligatorisk för Campaign-klientkonsolen.
+Den senaste versionen av Microsoft Edge WebView2 är obligatorisk för Campaign-klientkonsolen.
 
 Ladda ned Microsoft Edge WebView2 från [webbplatsen för Microsoft Developer](https://www.adobe.com/go/acc-ms-webview2-runtime-download).
 
