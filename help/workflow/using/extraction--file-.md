@@ -2,13 +2,13 @@
 product: campaign
 title: Dataextrahering (fil)
 description: Läs mer om arbetsflödesaktiviteten för dataextrahering (fil)
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+badge-v7-only: label="v7" type="Informative" tooltip="Gäller endast Campaign Classic v7"
 feature: Workflows, Data Management Activity
 exl-id: 06eafedd-6386-498f-a80d-7f57ddcccad6
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 58998fa2480a33776507a434ed846541ac19e58b
 workflow-type: tm+mt
-source-wordcount: '324'
-ht-degree: 1%
+source-wordcount: '332'
+ht-degree: 3%
 
 ---
 
@@ -24,14 +24,14 @@ Du kan extrahera data från en arbetsflödestabell i en extern fil med **[!UICON
 
 Så här konfigurerar du dataextrahering:
 
-1. Ange namnet på utdatafilen: det här namnet kan innehålla variabler, infogade via personaliseringsknappen till höger om fältet.
+1. Ange namnet på utdatafilen: det här namnet kan innehålla variabler, som infogats via personaliseringsknappen till höger om fältet.
 1. Klicka **[!UICONTROL Edit the file format...]** för att markera de data som ska extraheras.
 
    ![](assets/s_advuser_extract_file_param.png)
 
-   The **[!UICONTROL Handle groupings (GROUP BY + HAVING)]** tillför ett extra steg för att filtrera slutresultatet av sammanställningen, t.ex. för en viss inköpsordertyp, kunder som har beställt mer än 10 gånger osv.
+   The **[!UICONTROL Handle groupings (GROUP BY + HAVING)]** tillför ett extra steg för att filtrera slutresultatet av sammanställningen, till exempel för en viss inköpsordertyp, kunder som har beställt mer än 10 gånger osv.
 
-1. Om det behövs kan du lägga till nya kolumner i utdatafilen, t.ex. genom att beräkna eller bearbeta resultat. Om du vill göra det klickar du på **[!UICONTROL Add]** ikon.
+1. Om det behövs kan du lägga till nya kolumner i utdatafilen, t.ex. genom att beräkna eller bearbeta resultat. Klicka på **[!UICONTROL Add]** -ikon.
 
    ![](assets/s_advuser_extract_file_add_col.png)
 
@@ -49,7 +49,7 @@ Så här konfigurerar du dataextrahering:
 
 Du kan definiera en efterprocess som ska köras under dataextraheringen så att du kan komprimera eller kryptera filerna. För att göra detta måste du lägga till det önskade kommandot i **[!UICONTROL Script]** aktivitetens flik.
 
-Mer information finns i följande avsnitt: [Zippa eller kryptera en fil](how-to-use-workflow-data.md#zipping-or-encrypting-a-file).
+Mer information finns i följande avsnitt: [Zippa eller kryptera en fil](../../platform/using/zip-encrypt.md)
 
 ![](assets/postprocessing_dataextraction.png)
 
@@ -59,7 +59,7 @@ Här följer en lista över tillgängliga sammanställningsfunktioner:
 
 * **[!UICONTROL Count]** att räkna alla värden som inte är null i det fält som ska aggregeras, inklusive dubblettvärden (i det aggregerade fältet),
 
-   **[!UICONTROL Distinct]** att räkna det totala antalet olika och icke-null-värden för det fält som ska aggregeras (dubblettvärden exkluderas före beräkningen),
+  **[!UICONTROL Distinct]** att räkna det totala antalet olika och icke-null-värden för det fält som ska aggregeras (dubblettvärden exkluderas före beräkningen),
 
 * **[!UICONTROL Sum]** beräkna summan av värdena för ett numeriskt fält,
 * **[!UICONTROL Minimum value]** beräkna minimivärdena för ett fält (numeriskt eller på annat sätt),
