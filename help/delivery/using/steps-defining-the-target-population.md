@@ -7,9 +7,9 @@ badge-v8: label="v8" type="Positive" tooltip="Gäller även Campaign v8"
 feature: Audiences, Proofs
 role: User
 exl-id: d0ed7be7-3147-4cb8-9ce7-ea51602e9048
-source-git-commit: d2f5f2a662c022e258fb3cc56c8502c4f4cb2849
+source-git-commit: 668cee663890fafe27f86f2afd3752f7e2ab347a
 workflow-type: tm+mt
-source-wordcount: '1610'
+source-wordcount: '1605'
 ht-degree: 2%
 
 ---
@@ -226,7 +226,7 @@ Se även:
 
 * [Välj korrekturmål](#selecting-the-proof-target)
 * [Om dirigerade adresser](about-seed-addresses.md)
-* [Användningsfall: välj dirigerade adresser enligt villkor](use-case--selecting-seed-addresses-on-criteria.md)
+* [Användningsfall: välj dirigerade adresser enligt villkor](use-case-selecting-seed-addresses-on-criteria.md)
 
 ## Självstudievideo {#seeds-and-proofs-video}
 

@@ -2,13 +2,13 @@
 product: campaign
 title: Använd en innehållsmall
 description: Använd en innehållsmall
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
+badge-v7: label="v7" type="Informative" tooltip="Gäller Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Gäller även Campaign v8"
 feature: Templates
 exl-id: e43dd68e-2e95-4367-9029-4622fbcb1759
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: 668cee663890fafe27f86f2afd3752f7e2ab347a
 workflow-type: tm+mt
-source-wordcount: '427'
+source-wordcount: '439'
 ht-degree: 2%
 
 ---
@@ -33,7 +33,7 @@ Layouten används automatiskt baserat på de valda inställningarna. Klicka på 
 
 ![](assets/s_ncs_content_deliver_a_content_html.png)
 
-Mer information finns i det fullständiga implementeringsexemplet: [Skapa innehåll i leveransguiden](use-case--creating-content-management.md#creating-content-in-the-delivery-wizard).
+Mer information finns i det fullständiga implementeringsexemplet: [Skapa innehåll i leveransguiden](use-case-creating-content-management.md#creating-content-in-the-delivery-wizard).
 
 ## Skapa en innehållsinstans {#creating-a-content-instance}
 
@@ -71,9 +71,9 @@ Använd följande steg:
 
    >[!NOTE]
    >
-   >Du kan auktorisera generering av icke godkänt innehåll. Om du vill göra det ändrar du det relevanta alternativet i publiceringsmallen. Mer information finns i [Skapa och konfigurera mallen](publication-templates.md#creating-and-configuring-the-template).
+   >Du kan auktorisera generering av icke-godkänt innehåll. Om du vill göra det ändrar du det relevanta alternativet i publiceringsmallen. Mer information finns i [Skapa och konfigurera mallen](publication-templates.md#creating-and-configuring-the-template).
 
-   Innehållet i HTML och text genereras som standard i **publicera** Adobe Campaign-instansens mapp. Du kan ändra publikationsmappen tack vare **NcmPublishingDir** alternativ.
+   HTML och textinnehåll genereras som standard i **publicera** Adobe Campaign-instansens mapp. Du kan ändra publikationsmappen med **NcmPublishingDir** alternativ.
 
 ## Leverera en innehållsinstans {#delivering-a-content-instance}
 

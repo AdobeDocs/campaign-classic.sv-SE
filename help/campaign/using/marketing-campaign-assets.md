@@ -6,7 +6,7 @@ role: User
 badge-v7-only: label="v7" type="Informative" tooltip="Gäller endast Campaign Classic v7"
 feature: Campaigns
 exl-id: 891252b0-4700-4a2a-a632-63aad5ce75d7
-source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
+source-git-commit: 668cee663890fafe27f86f2afd3752f7e2ab347a
 workflow-type: tm+mt
 source-wordcount: '762'
 ht-degree: 1%
@@ -126,7 +126,7 @@ I följande exempel läggs etiketten, den uppskattade kostnaden och beskrivninge
 
 ![](assets/s_ncs_user_op_composition_in_export_template.png)
 
-Exportmodellen måste vara kopplad till den tjänsteleverantör som valts för den aktuella leveransen. Se [det här avsnittet](../../campaign/using/providers--stocks-and-budgets.md#creating-service-providers-and-their-cost-structures).
+Exportmodellen måste vara kopplad till den tjänsteleverantör som valts för den aktuella leveransen. Se [det här avsnittet](../../campaign/using/providers-stocks-and-budgets.md#creating-service-providers-and-their-cost-structures).
 
 >[!NOTE]
 >

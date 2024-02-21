@@ -7,10 +7,10 @@ badge-v8: label="v8" type="Positive" tooltip="Gäller även Campaign v8"
 feature: Seed Address
 role: User
 exl-id: 1f55eda8-c393-4f86-9118-01bcd981c6df
-source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
+source-git-commit: 668cee663890fafe27f86f2afd3752f7e2ab347a
 workflow-type: tm+mt
 source-wordcount: '391'
-ht-degree: 9%
+ht-degree: 8%
 
 ---
 
@@ -26,7 +26,7 @@ Dessutom kan du använda fröadresser **förhandsgranska och testa leveransperso
 
 Funktionen för dirigerade adresser har följande fördelar:
 
-* Slumpmässig ersättning av fält med data från mottagarprofiler: Detta gör att du bara kan ange e-postadressen, till exempel i avsnittet dirigerad adress, och låta Campaign automatiskt fylla i de andra fälten från profilen (se [Användningsfall: konfigurera fältersättning](use-case--configuring-the-field-substitution.md)).
+* Slumpmässig ersättning av fält med data från mottagarprofiler: Detta gör att du bara kan ange e-postadressen, till exempel i avsnittet dirigerad adress, och låta Campaign automatiskt fylla i de andra fälten från profilen (se [Användningsfall: konfigurera fältersättning](use-case-configuring-the-field-substitution.md)).
 * När du använder ett arbetsflöde med datahanteringsfunktioner kan ytterligare data som bearbetas i leveranser anges på dirigeringsadressnivå för att framtvinga värden: detta innebär att slumpmässiga värden ersätts.
 * dirigeringsadresser exkluderas automatiskt från rapporter om följande leveransstatistik: **[!UICONTROL Clicks]**, **[!UICONTROL Opens]**, **[!UICONTROL Unsubscriptions]**.
 
@@ -36,7 +36,7 @@ Seed-adresser läggs till i målet för leveranser genom att importeras eller sk
 >
 >Seed-adresserna tillhör inte mottagartabellen, de skapas i en separat tabell. Om du utökar mottagartabellen med nya data måste du utöka både dirigerade adresstabellen och samma data. I annat fall kommer de utökade fälten inte att beaktas för dirigerade adresser.
 >
->Ett exempel på hur du kan utöka tabellen med dirigerade adresser visas i det här avsnittet: [Använd skiftläge: välj startadresser på villkor](use-case--selecting-seed-addresses-on-criteria.md).
+>Ett exempel på hur du kan utöka tabellen med dirigerade adresser visas i det här avsnittet: [Använd skiftläge: välj startadresser på villkor](use-case-selecting-seed-addresses-on-criteria.md).
 
 Vid direktutskick läggs startadresser till under extraheringen och blandas i utdatadokumentet.
 

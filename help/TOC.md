@@ -6,8 +6,8 @@ title: Användarhandbok för Campaign Classic v7
 user-guide-description: Produktdokumentation för Adobe Campaign Classic v7.
 sub-product: adobe campaign classic
 type: Documentation
-source-git-commit: 4165f5988dfeee2f3b4d872c445ace11c9aa4fe1
-workflow-type: ht
+source-git-commit: 668cee663890fafe27f86f2afd3752f7e2ab347a
+workflow-type: tm+mt
 source-wordcount: '2536'
 ht-degree: 100%
 
@@ -23,8 +23,8 @@ ht-degree: 100%
    + [Senaste versionen](rn/using/latest-release.md)
    + Tidigare versioner {#previous-releases}
       + [[!DNL Gold Standard]](rn/using/gold-standard.md)
-      + [2021](rn/using/release--2021.md)
-      + [2022](rn/using/release--2022.md)
+      + [2021](rn/using/release-2021.md)
+      + [2022](rn/using/release-2022.md)
    + [Inaktuella funktioner](rn/using/deprecated-features.md)
    + [Kompatibilitetsmatris](rn/using/compatibility-matrix.md)
 + Komma igång {#getting-started}
@@ -184,8 +184,8 @@ ht-degree: 100%
       + [Skapa dirigerade adresser](delivery/using/creating-seed-addresses.md)
       + [Lägg till dirigerade adresser](delivery/using/adding-seed-addresses.md)
       + [Använd en extern mottagartabell](delivery/using/using-an-external-recipient-table.md)
-      + [Användningsfall: välj dirigerade adresser enligt villkor](delivery/using/use-case--selecting-seed-addresses-on-criteria.md)
-      + [Användningsfall: konfigurera fältersättningen](delivery/using/use-case--configuring-the-field-substitution.md)
+      + [Användningsfall: välj dirigerade adresser enligt villkor](delivery/using/use-case-selecting-seed-addresses-on-criteria.md)
+      + [Användningsfall: konfigurera fältersättningen](delivery/using/use-case-configuring-the-field-substitution.md)
    + A/B-test {#a-b-testing}
       + [Kom igång med A/B-tester](delivery/using/get-started-a-b-testing.md)
       + [Konfigurera A/B-tester](delivery/using/configuring-a-b-testing.md)
@@ -233,7 +233,7 @@ ht-degree: 100%
    + Modul för innehållshantering {#content-management}
       + [Om innehållshantering](delivery/using/about-content-management.md)
       + [Resurser och principer för innehållshanteraren](delivery/using/content-manager-resources-and-principles.md)
-      + [Användningsfall: skapa innehållshantering](delivery/using/use-case--creating-content-management.md)
+      + [Användningsfall: skapa innehållshantering](delivery/using/use-case-creating-content-management.md)
       + [Datascheman](delivery/using/data-schemas.md)
       + [Inmatningsformulär](delivery/using/input-forms.md)
       + [Formatering](delivery/using/formatting.md)
@@ -253,7 +253,7 @@ ht-degree: 100%
       + [Hantera dokument och resurser](campaign/using/marketing-campaign-assets.md)
       + [Konfigurera och hantera godkännanden](campaign/using/marketing-campaign-approval.md)
       + [Övervaka dina kampanjer](campaign/using/marketing-campaign-monitoring.md)
-      + [Leverantörer, lager och budgetar](campaign/using/providers--stocks-and-budgets.md)
+      + [Leverantörer, lager och budgetar](campaign/using/providers-stocks-and-budgets.md)
    + Kampanjoptimering {#campaign-optimization}
       + [Om kampanjtypologier](campaign-opt/using/about-campaign-typologies.md)
       + [Tryckregler](campaign-opt/using/pressure-rules.md)
@@ -320,7 +320,7 @@ ht-degree: 100%
       + [Kom igång med webbapplikationer ](web/using/about-web-applications.md)
       + [Skapa en ny webbapplikation](web/using/creating-a-new-web-application.md)
       + [Designa en webbapplikation](web/using/designing-a-web-application.md)
-      + [Användningsfall: skapa översikter](web/using/use-cases--creating-overviews.md)
+      + [Användningsfall: skapa översikter](web/using/use-cases-creating-overviews.md)
       + [Översätt en webbapplikation](web/using/translating-a-web-application.md)
       + [Spåra besök i en webbapplikation](web/using/tracking-a-web-application.md)
       + [Välj att inte delta i spårning i webbapplikation](web/using/web-application-tracking-opt-out.md)
@@ -331,7 +331,7 @@ ht-degree: 100%
       + [Redigera innehåll](web/using/editing-content.md)
       + [Bästa praxis för innehållsredigering](web/using/content-editing-best-practices.md)
       + [Skapa en landningssida](web/using/creating-a-landing-page.md)
-      + [Användningsfall: skapa en e-postleverans](web/using/use-case--creating-an-email-delivery.md)
+      + [Användningsfall: skapa en e-postleverans](web/using/use-case-creating-an-email-delivery.md)
    + Webbformulär {#web-forms}
       + [Kom igång med webbformulär](web/using/about-web-forms.md)
       + [Använd en webbformulärsmall](web/using/using-a-web-form-template.md)
@@ -344,16 +344,16 @@ ht-degree: 100%
       + [Publicera ett webbformulär](web/using/publishing-a-web-form.md)
       + [Definiera egenskaper för webbformulär](web/using/defining-web-forms-properties.md)
       + [Översätt ett webbformulär](web/using/translating-a-web-form.md)
-      + [Användningsfall: webbformulär](web/using/use-cases--web-forms.md)
+      + [Användningsfall: webbformulär](web/using/use-cases-web-forms.md)
 + Skapa onlineundersökningar {#online-surveys}
    + [Kom igång med undersökningar](surveys/using/about-surveys.md)
    + [Viktiga steg för att skapa en undersökning](surveys/using/getting-started-with-surveys.md)
    + [Designa en undersökning](surveys/using/building-a-survey.md)
    + [Hantera svar](surveys/using/managing-answers.md)
-   + [Publicera, spåra och använd insamlade data](surveys/using/publish--track-and-use-collected-data.md)
+   + [Publicera, spåra och använd insamlade data](surveys/using/publish-track-and-use-collected-data.md)
    + [Konfigurera undersökningar](surveys/using/configuring-surveys.md)
-   + [Användningsfall: skapa ett hänvisningsformulär](surveys/using/use-case--creating-a-refer-a-friend-form.md)
-   + [Användningsfall: visa rapport om svar på en onlineundersökning](surveys/using/use-case--displaying-report-on-answers-to-an-online-survey.md)
+   + [Användningsfall: skapa ett hänvisningsformulär](surveys/using/use-case-creating-a-refer-a-friend-form.md)
+   + [Användningsfall: visa rapport om svar på en onlineundersökning](surveys/using/use-case-displaying-report-on-answers-to-an-online-survey.md)
 + Integrera med Adobe Experience Cloud {#integrating-with-adobe-experience-cloud}
    + [Om integreringar i Campaign](integrations/using/about-campaign-integrations.md)
    + Dela målgrupper {#audience-sharing}
@@ -437,7 +437,7 @@ ht-degree: 100%
       + [Vänta](workflow/using/wait.md)
       + [Tidsbegränsning](workflow/using/time-constraint.md)
       + [Delarbetsflöde](workflow/using/sub-workflow.md)
-      + [Hoppa (startpunkt och slutpunkt)](workflow/using/jump--start-point-and-end-point-.md)
+      + [Hoppa (startpunkt och slutpunkt)](workflow/using/jump-start-point-and-end-point.md)
       + [Extern signal](workflow/using/external-signal.md)
       + [Godkännande](workflow/using/approval.md)
       + [Varning](workflow/using/alert.md)
@@ -450,11 +450,11 @@ ht-degree: 100%
       + [Återkommande leverans](workflow/using/recurring-delivery.md)
       + [Leveranser över flera kanaler](workflow/using/cross-channel-deliveries.md)
       + [Lokalt godkännande](workflow/using/local-approval.md)
-      + [Datainläsning (RDBMS)](workflow/using/data-loading--rdbms-.md)
-      + [Läsa in (SOAP)](workflow/using/loading--soap-.md)
-      + [Läsa in data (fil)](workflow/using/data-loading--file-.md)
+      + [Datainläsning (RDBMS)](workflow/using/data-loading-rdbms.md)
+      + [Läsa in (SOAP)](workflow/using/loading-soap.md)
+      + [Läsa in data (fil)](workflow/using/data-loading-file.md)
       + [Innehållshantering](workflow/using/content-management.md)
-      + [Dataextrahering (fil)](workflow/using/extraction--file-.md)
+      + [Dataextrahering (fil)](workflow/using/extraction-file.md)
       + [SQL-kod och JavaScript-kod](workflow/using/sql-code-and-javascript-code.md)
       + [SQL-datahantering](workflow/using/sql-data-management.md)
       + [Nlserver-modul](workflow/using/nlserver-module.md)
@@ -505,7 +505,7 @@ ht-degree: 100%
       + [Avancerade parametrar](workflow/using/advanced-parameters.md)
       + [JavaScript-skript och mallar](workflow/using/javascript-scripts-and-templates.md)
       + [Exempel på JavaScript-kod i arbetsflöden](workflow/using/javascript-in-workflows.md)
-      + [Åtkomst till en extern databas](workflow/using/accessing-an-external-database--fda-.md)
+      + [Åtkomst till en extern databas](workflow/using/accessing-an-external-database-fda.md)
       + [Hantera behörigheter](workflow/using/managing-rights.md)
       + [Ändra aktivitetsbilder](workflow/using/managing-activity-images.md)
       + [Hantera tidszoner](workflow/using/managing-time-zones.md)
@@ -543,8 +543,8 @@ ht-degree: 100%
       + [Integrera ett erbjudande via ett arbetsflöde](interaction/using/integrating-an-offer-via-a-workflow.md)
    + Enhetliga interaktioner {#unitary-interactions}
       + [Om inkommande kanaler](interaction/using/about-inbound-channels.md)
-      + [Integrering via JavaScript (klientsida)](interaction/using/integration-via-javascript--client-side-.md)
-      + [Integrering via SOAP (serversida)](interaction/using/integration-via-soap--server-side-.md)
+      + [Integrering via JavaScript (klientsida)](interaction/using/integration-via-javascript-client-side.md)
+      + [Integrering via SOAP (serversida)](interaction/using/integration-via-soap-server-side.md)
       + [Anonyma interaktioner](interaction/using/anonymous-interactions.md)
    + Spåra erbjudanden {#tracking-offers}
       + [Historik över erbjudandeförslag](interaction/using/offer-proposition-history.md)
@@ -556,7 +556,7 @@ ht-degree: 100%
       + [Skapa en testmiljö](interaction/using/creating-a-test-environment.md)
       + [Ändra standardmotorns beteende](interaction/using/hooks.md)
       + [Distribuerade arkitekturer](interaction/using/distributed-architectures.md)
-      + [Konfigurering av databuffert](installation/using/interaction---data-buffer.md)
+      + [Konfigurering av databuffert](installation/using/interaction-data-buffer.md)
    + Användningsfall {#case-study}
       + [Presentationsregler](interaction/using/presentation-rules.md)
       + [Erbjudanden på en inkommande kanal](interaction/using/offers-on-an-inbound-channel.md)
@@ -590,7 +590,7 @@ ht-degree: 100%
       + Värdbaserade modeller{#hosting-models-lp}
          + [Värdmodeller i Campaign](installation/using/hosting-models.md)
          + [Funktionsmatris](installation/using/capability-matrix.md)
-   + Driftsättningstyper {#deployment-types-}
+   + Driftsättningstyper {#deployment-types}
       + [Om driftsättningstyper](installation/using/about-deployment-types.md)
       + [Fristående driftsättning](installation/using/standalone-deployment.md)
       + [Standardiserad driftsättning](installation/using/standard-deployment.md)
@@ -611,12 +611,12 @@ ht-degree: 100%
          + [Programserver](installation/using/application-server.md)
          + [Meddelandeserver](installation/using/messaging-server.md)
          + [Nätverkskonfiguration](installation/using/network-configuration.md)
-      + Campaign i Windows {#installing-campaign-in-windows-}
+      + Campaign i Windows {#installing-campaign-in-windows}
          + [Kom igång](installation/using/prerequisites-of-campaign-installation-in-windows.md)
          + [Installera servern](installation/using/installing-the-server.md)
          + [Integrera i en webbserver (Windows)](installation/using/integration-into-a-web-server-for-windows.md)
          + [Klientkonsolens tillgänglighet i Windows](installation/using/client-console-availability-for-windows.md)
-      + Campaign i Linux {#installing-campaign-in-linux-}
+      + Campaign i Linux {#installing-campaign-in-linux}
          + [Förhandskrav](installation/using/prerequisites-of-campaign-installation-in-linux.md)
          + [Installera paket](installation/using/installing-packages-with-linux.md)
          + [Integrera i en webbserver](installation/using/integration-into-a-web-server-for-linux.md)
@@ -803,7 +803,7 @@ ht-degree: 100%
    + Konfigurera webbspårning {#setting-up-web-tracking}
       + [Om webbspårning](configuration/using/about-web-tracking.md)
       + [Läge för webbspårning](configuration/using/web-tracking-mode.md)
-      + [Webbspårningstagg: definition](configuration/using/web-tracking-tag--definition.md)
+      + [Webbspårningstagg: definition](configuration/using/web-tracking-tag-definition.md)
       + [Konfigurationsfaser](configuration/using/setup-stages.md)
       + [Ytterligare parametrar](configuration/using/additional-parameters.md)
       + [Skapa webbspårningstaggar](configuration/using/creating-web-tracking-tags.md)

@@ -9,10 +9,10 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: e612a4e7-f4ef-4db4-afab-5544b73430d3
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: 668cee663890fafe27f86f2afd3752f7e2ab347a
 workflow-type: tm+mt
-source-wordcount: '376'
-ht-degree: 7%
+source-wordcount: '344'
+ht-degree: 2%
 
 ---
 
@@ -25,18 +25,18 @@ ht-degree: 7%
 Kom igång med Adobe Campaign genom att läsa våra intuitiva stegvisa guider.
 
 * [Sekretesshantering](https://helpx.adobe.com/se/campaign/kb/acc-privacy.html): Upptäck vad Adobe Campaign Classic tillhandahåller för att hjälpa dig att uppfylla din sekretesskrav när du använder vår tjänst.
-* [Integrera dynamiskt innehåll i ett e-postmeddelande](https://experienceleague.adobe.com/docs/campaign-classic/using/integrating-with-adobe-experience-cloud/adobe-target/inserting-a-dynamic-image.html): Upptäck grunderna för att komma igång med integrationen mellan Campaign Classic och Target Standard.
+* [Integrera dynamiskt innehåll i ett e-postmeddelande](https://experienceleague.adobe.com/docs/campaign-classic/using/integrating-with-adobe-experience-cloud/adobe-target/inserting-a-dynamic-image.html): Identifiera grunderna för att komma igång med integrationen mellan Campaign Classic och Target Standard.
 * [Hantera leveranser](../../delivery/using/about-deliverability.md): Lär dig mer om koncept och bästa metoder för att leverera samt de verktyg som Adobe Campaign Classic erbjuder för att optimera leveransen.
 * [Bästa praxis för leverans](../../delivery/using/delivery-best-practices.md): Lär dig mer om de bästa sätten att leverera och skicka med Adobe Campaign Classic.
-* [Utföra en bygguppgradering](https://helpx.adobe.com/se/campaign/kb/acc-build-upgrade.html): den här guiden presenterar de viktigaste stegen och de bästa sätten att utföra en bygguppgradering med Campaign Classic.
+* [Utföra en bygguppgradering](https://helpx.adobe.com/se/campaign/kb/acc-build-upgrade.html): den här guiden beskriver de viktigaste stegen och de bästa metoderna för att utföra en bygguppgradering med Campaign Classic.
 * [Checklista för säkerhetskonfiguration](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/security-privacy/get-started-security-privacy.html?lang=sv): Identifiera nyckelelement för att kontrollera säkerhetskonfigurationen och åtkomsten till driftsättningen på plats
 
 Läs mer om Adobe Campaign genom att kontrollera följande användningsexempel och exempel:
 
 * [Skapa ett filter för e-postformat för prenumeranter](../../platform/using/use-case.md#creating-a-filter-on-the-email-format-of-subscribers): läs om hur du skapar ett filter för att sortera nyhetsbrevsprenumerationer baserat på mottagarnas e-postformat.
-* [Skapa ett prenumerationsformulär med dubbel anmälan](../../web/using/use-cases--web-forms.md#create-a-subscription--form-with-double-opt-in): läs hur du skickar en bekräftelsebegäran om prenumeration för att skapa en dubbel anmälan för att se till att mottagaren prenumererar avsiktligt.
-* [Skapa en e-postleverans](../../web/using/use-case--creating-an-email-delivery.md): lär dig skapa e-postleveranser med Digital Content Editor.
-* [Skapa översikter](../../web/using/use-cases--creating-overviews.md): skapa webbprogram av översiktstyp för att visa alla webbprogram i databasen.
+* [Skapa ett prenumerationsformulär med dubbel anmälan](../../web/using/use-cases-web-forms.md#create-a-subscription--form-with-double-opt-in): läs hur du skickar en bekräftelsebegäran om prenumeration för att skapa en dubbel anmälan för att se till att mottagaren prenumererar avsiktligt.
+* [Skapa en e-postleverans](../../web/using/use-case-creating-an-email-delivery.md): lär dig skapa e-postleveranser med Digital Content Editor.
+* [Skapa översikter](../../web/using/use-cases-creating-overviews.md): skapa webbprogram av översiktstyp för att visa alla webbprogram i databasen.
 * [Användningsexempel för arbetsflöde](../../workflow/using/about-workflow-use-cases.md): Identifiera olika sätt att använda arbetsflöden med hjälp av dessa användningsfall.
 
 ## Självhjälp {#how-to-videos}

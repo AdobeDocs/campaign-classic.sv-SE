@@ -8,7 +8,7 @@ audience: campaign
 content-type: reference
 topic-tags: tasks--resources-and-budgets
 exl-id: f661e1d1-de2f-4c6a-bbff-e3ffcd1831f0
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: 668cee663890fafe27f86f2afd3752f7e2ab347a
 workflow-type: tm+mt
 source-wordcount: '1393'
 ht-degree: 1%
@@ -195,7 +195,7 @@ Du kan associera en marknadsföringsresurs med en eller flera lager för att han
 
 >[!NOTE]
 >
->Mer information om aktiehantering i Adobe Campaign finns i [Stock-hantering](../../campaign/using/providers--stocks-and-budgets.md#stock-management).
+>Mer information om aktiehantering i Adobe Campaign finns i [Stock-hantering](../../campaign/using/providers-stocks-and-budgets.md#stock-management).
 
 Om du vill associera en marknadsföringsresurs med en aktie redigerar du aktiekartan och redigerar eller skapar en aktie. Lägg till en aktierad och välj motsvarande marknadsföringsresurs.
 

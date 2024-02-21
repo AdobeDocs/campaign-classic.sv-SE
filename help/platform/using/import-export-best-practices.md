@@ -9,10 +9,10 @@ audience: automating
 content-type: reference
 topic-tags: workflow-general-operation
 exl-id: 03d35202-d221-4136-aad4-00704aabb356
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: 668cee663890fafe27f86f2afd3752f7e2ab347a
 workflow-type: tm+mt
 source-wordcount: '523'
-ht-degree: 3%
+ht-degree: 2%
 
 ---
 
@@ -30,7 +30,7 @@ Med hjälp av arbetsflödesmallar är det mycket bekvämt att förbereda liknand
 
 I många projekt byggs import utan **[!UICONTROL Deduplication]** eftersom filerna som används i projektet inte har dubbletter. Det kan ibland visas dubbletter när du importerar olika filer. Det är då svårt att deduplicera. Därför är ett borttagningssteg en bra försiktighetsåtgärd i alla importarbetsflöden.
 
-Du kan inte utgå från att inkommande data är konsekventa och korrekta eller att IT-avdelningen eller Adobe Campaign-administratören kommer att ta hand om dem. Under projektet bör du tänka på datarensningen. Ta bort dubbletter, stämma av och bibehåll enhetligheten när du importerar data.
+Du kan inte utgå från att inkommande data är konsekventa och korrekta, eller att IT-avdelningen eller Adobe Campaign-administratören kommer att ta hand om dem. Under projektet bör du tänka på datarensningen. Ta bort dubbletter, stämma av och bibehåll enhetligheten när du importerar data.
 
 Ett exempel på en allmän arbetsflödesmall som utformats för import av data finns i [Exempel: Arbetsflödesmall för import av data](../../platform/using/creating-import-export-templates.md) -avsnitt.
 
@@ -61,8 +61,8 @@ Använd zippade filer för import och export när det är möjligt. GZIP stöds 
 
 **Relaterade ämnen:**
 
-* [Aktivitet för inläsning av data (fil)](../../workflow/using/data-loading--file-.md)
-* [Aktivitet för dataextrahering (fil)](../../workflow/using/extraction--file-.md)
+* [Aktivitet för inläsning av data (fil)](../../workflow/using/data-loading-file.md)
+* [Aktivitet för dataextrahering (fil)](../../workflow/using/extraction-file.md)
 
 ## Importera i Delta-läge {#importing-in-delta-mode}
 

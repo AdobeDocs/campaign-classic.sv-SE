@@ -2,13 +2,13 @@
 product: campaign
 title: Viktiga steg för att skapa en undersökning
 description: Skapa din första enkät med Campaign
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
+badge-v7: label="v7" type="Informative" tooltip="Gäller Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Gäller även Campaign v8"
 feature: Surveys
 exl-id: 22e14b24-59ba-4a92-8ffb-f5336793d64f
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: 668cee663890fafe27f86f2afd3752f7e2ab347a
 workflow-type: tm+mt
-source-wordcount: '916'
+source-wordcount: '942'
 ht-degree: 1%
 
 ---
@@ -45,7 +45,7 @@ Välj en undersökningsmall och ge sedan undersökningen ett namn. Det här namn
 
 ## Steg 3 - Skapa enkäten {#step-3---building-the-survey}
 
-Undersökningar byggs i ett diagram där följande element är placerade: sidan/sidorna där innehållet ska skapas, stegen för att ladda in och spara data samt testfaserna. Skript och frågor kan också infogas.
+Undersökningar byggs i ett diagram där följande element är placerade: den eller de sidor där innehållet ska skapas, stegen för att förhandsladda och spara data samt testfaserna. Skript och frågor kan också infogas.
 
 Klicka på knappen **[!UICONTROL Edit]** Typ av undersökning.
 
@@ -53,12 +53,12 @@ En undersökning måste innehålla **minst** följande tre komponenter: en sida,
 
 * Om du vill skapa en sida väljer du **[!UICONTROL Page]** -objektet i den vänstra delen av redigeraren och placera det i den mellersta delen, som visas nedan:
 
-   ![](assets/s_ncs_admin_survey_new_page.png)
+  ![](assets/s_ncs_admin_survey_new_page.png)
 
-* Välj sedan **[!UICONTROL Storage]** och montera det på sidans utdataövergång.
+* Nästa steg är att välja **[!UICONTROL Storage]** och montera det på sidans utdataövergång.
 * Slutligen väljer du **[!UICONTROL End]** och placera den i slutet av lagringsrutans utdataövergång för att få följande diagram:
 
-   ![](assets/s_ncs_admin_survey_end.png)
+  ![](assets/s_ncs_admin_survey_end.png)
 
 ## Steg 4 - Skapa sidinnehållet {#step-4---creating-the-page-content}
 
@@ -68,51 +68,51 @@ I följande exempel använder vi en **[!UICONTROL Page (v5 compatibility)]** tex
 
 * **Lägg till inmatningsfält**
 
-   Om du vill skapa sidans innehåll måste du redigera det: om du vill göra det dubbelklickar du på **[!UICONTROL Page]** -objekt. Klicka på den första ikonen i verktygsfältet för att öppna guiden för att skapa fält. Om du vill skapa ett inmatningsfält för användarnamnet som ska lagras i det matchande fältet i mottagarens profil, väljer du **[!UICONTROL Edit a recipient]**.
+  Om du vill skapa sidans innehåll måste du redigera det: om du vill göra det dubbelklickar du på **[!UICONTROL Page]** -objekt. Klicka på den första ikonen i verktygsfältet för att öppna guiden för att skapa fält. Om du vill skapa ett inmatningsfält för användarnamnet som ska lagras i det matchande fältet i mottagarens profil, väljer du **[!UICONTROL Edit a recipient]**.
 
-   ![](assets/s_ncs_admin_survey_add_field_menu.png)
+  ![](assets/s_ncs_admin_survey_add_field_menu.png)
 
-   Klicka på **[!UICONTROL Next]** för att markera fältet för datalagring i databasen. I det här fallet fältet &#39;Efternamn&#39;.
+  Klicka på **[!UICONTROL Next]** för att markera fältet för datalagring i databasen. I det här fallet fältet &#39;Efternamn&#39;.
 
-   ![](assets/s_ncs_admin_survey_choose_field.png)
+  ![](assets/s_ncs_admin_survey_choose_field.png)
 
-   Klicka **[!UICONTROL Finish]** för att bekräfta att fält har skapats.
+  Klicka **[!UICONTROL Finish]** för att bekräfta att fält har skapats.
 
-   När informationen lagras i ett fält som redan finns i databasen får fältet som standard det markerade fältets namn, dvs. &#39;Efternamn&#39; i det här exemplet. Du kan ändra den här etiketten enligt nedan:
+  När informationen lagras i ett fält som redan finns i databasen får fältet som standard det markerade fältets namn, dvs. &quot;Efternamn&quot; i det här exemplet. Du kan ändra den här etiketten enligt nedan:
 
-   ![](assets/s_ncs_admin_survey_change_label.png)
+  ![](assets/s_ncs_admin_survey_change_label.png)
 
-   Skapa nu ett inmatningsfält för användarkontonumret. Upprepa åtgärden och välj Kontonr fält.
+  Skapa nu ett inmatningsfält för användarkontonumret. Upprepa åtgärden och välj Kontonr fält.
 
-   Använd samma procedur för att lägga till ett fält där användaren kan ange en e-postadress.
+  Använd samma procedur för att lägga till ett fält där användaren kan ange en e-postadress.
 
 * **Skapa en fråga**
 
-   Om du vill skapa en fråga högerklickar du på det sista elementet i trädet och väljer **[!UICONTROL Containers > Question]** eller klicka på **[!UICONTROL Containers]** ikon och markera **[!UICONTROL Question]**.
+  Om du vill skapa en fråga högerklickar du på det sista elementet i trädet och väljer **[!UICONTROL Containers > Question]** eller klicka på **[!UICONTROL Containers]** ikon och markera **[!UICONTROL Question]**.
 
-   ![](assets/s_ncs_admin_survey_add_qu.png)
+  ![](assets/s_ncs_admin_survey_add_qu.png)
 
-   Ange etiketten för frågan och infoga svarsfälten som en underavdelning till frågan. För att göra detta måste den nod som är länkad till frågan vara markerad när du skapar svarsfältet. Lägg till en **[!UICONTROL drop-down listx]** med **[!UICONTROL Selection controls]** eller genom att högerklicka, som visas nedan:
+  Ange etiketten för frågan och infoga svarsfälten som en underavdelning till frågan. För att göra detta måste den nod som är länkad till frågan vara markerad när du skapar svarsfältet. Lägg till en **[!UICONTROL drop-down listx]** med **[!UICONTROL Selection controls]** eller genom att högerklicka, som visas nedan:
 
-   ![](assets/s_ncs_admin_survey_add_list.png)
+  ![](assets/s_ncs_admin_survey_add_list.png)
 
-   Välj ett lagringsutrymme: välj ett uppräkningsfält för att hämta värdena automatiskt (i det här fallet e-postformatet).
+  Välj ett lagringsutrymme: välj ett uppräkningsfält om du vill hämta värdena automatiskt (i det här fallet e-postformatet).
 
-   ![](assets/s_ncs_admin_survey_add_itz_list.png)
+  ![](assets/s_ncs_admin_survey_add_itz_list.png)
 
-   I **[!UICONTROL General]** klickar du på **[!UICONTROL Initialize the list of values from the database]** länk: värdetabellen anges automatiskt.
+  I **[!UICONTROL General]** klickar du på **[!UICONTROL Initialize the list of values from the database]** link: värdetabellen anges automatiskt.
 
-   ![](assets/s_ncs_admin_survey_add_value.png)
+  ![](assets/s_ncs_admin_survey_add_value.png)
 
-   Klicka **[!UICONTROL OK]** för att stänga redigeraren, och **[!UICONTROL Save]** för att spara ändringar.
+  Klicka **[!UICONTROL OK]** för att stänga redigeraren, och **[!UICONTROL Save]** för att spara ändringar.
 
-   >[!NOTE]
-   >
-   >För varje fält eller fråga kan du anpassa sidlayouten efter dina behov, tack vare alternativen i **[!UICONTROL Advanced]** -fliken. Layouten för undersökningsskärmar beskrivs i [det här avsnittet](../../web/using/about-web-forms.md).
+  >[!NOTE]
+  >
+  >För varje fält eller fråga kan du anpassa sidlayouten efter dina behov, tack vare alternativen i **[!UICONTROL Advanced]** -fliken. Layouten för undersökningsskärmar beskrivs i [det här avsnittet](../../web/using/about-web-forms.md).
 
-   Klicka på knappen **[!UICONTROL Preview]** för att visa återgivningen av den undersökning du just har skapat.
+  På detaljskärmen klickar du på **[!UICONTROL Preview]** för att visa återgivningen av den undersökning du just har skapat.
 
-   ![](assets/s_ncs_admin_survey_preview.png)
+  ![](assets/s_ncs_admin_survey_preview.png)
 
 ## Steg 5 - Lagra undersökningsdata {#step-5---storing-the-survey-data-}
 
@@ -128,16 +128,16 @@ Klicka **[!UICONTROL OK]** för att bekräfta, klicka sedan på **[!UICONTROL Sa
 
 ## Steg 6 - Publicera sidorna {#step-6---publishing-the-pages}
 
-För att användare ska kunna komma åt HTML-sidorna måste programmet vara tillgängligt. Den får inte längre vara i redigeringsskedet utan i produktionen. Om du vill publicera en undersökning måste du publicera den. Så här gör du:
+För att användare ska kunna komma åt HTML-sidorna måste programmet vara tillgängligt. Den får inte längre vara i redigeringsskedet, utan i produktion. Om du vill publicera en undersökning måste du publicera den. Så här gör du:
 
 * Klicka på **[!UICONTROL Publish]** som finns ovanför kontrollpanelen för undersökningen.
 * Klicka **[!UICONTROL Start]** för att starta publikationen och stänga guiden.
 
-   ![](assets/s_ncs_admin_survey_start_publ.png)
+  ![](assets/s_ncs_admin_survey_start_publ.png)
 
-   Status för undersökningen ändras till: **Online**.
+  Status för undersökningen ändras till: **Online**.
 
-   ![](assets/survey_published.png)
+  ![](assets/survey_published.png)
 
 ## Steg 7 - Dela din nätundersökning {#step-7---sharing-your-online-survey}
 
@@ -147,10 +147,10 @@ När enkäten är i produktion är den tillgänglig på servern och du kan lever
 
 Om du vill leverera enkäten kan du skicka ett meddelande som innehåller en åtkomstlänk till målpopulationen eller placera URL:en för enkäten på en webbsida, till exempel.
 
-Du kan sedan övervaka användarsvar via rapporter och loggar. Se [Svarsspårning](../../surveys/using/publish--track-and-use-collected-data.md#response-tracking).
+Du kan sedan övervaka användarsvar via rapporter och loggar. Se [Svarsspårning](../../surveys/using/publish-track-and-use-collected-data.md#response-tracking).
 
 >[!CAUTION]
 >
->Den offentliga URL:en innehåller undersökningens interna namn. När det interna namnet ändras uppdateras URL-adressen automatiskt: Alla länkar till undersökningen måste också uppdateras.
+>Den offentliga URL:en innehåller undersökningens interna namn. När det interna namnet ändras uppdateras URL:en automatiskt: alla länkar till undersökningen måste också uppdateras.
 >
 >Om leveranser som innehåller länken till formuläret redan har skickats, kommer länken inte längre att fungera.

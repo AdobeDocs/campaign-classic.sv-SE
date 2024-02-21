@@ -9,7 +9,7 @@ audience: platform
 content-type: reference
 topic-tags: importing-and-exporting-data
 exl-id: 4596638c-d75a-4e07-a2d8-5befcaad3430
-source-git-commit: 58998fa2480a33776507a434ed846541ac19e58b
+source-git-commit: 668cee663890fafe27f86f2afd3752f7e2ab347a
 workflow-type: tm+mt
 source-wordcount: '517'
 ht-degree: 5%
@@ -37,7 +37,7 @@ Du kan sedan använda kommandon eller kod i **[!UICONTROL Script]** aktivitetens
 **Relaterade ämnen:**
 
 * [Zippa upp eller dekryptera en fil före bearbetning](../../platform/using/unzip-decrypt.md)
-* [Aktivitet för dataextrahering (fil)](../../workflow/using/extraction--file-.md).
+* [Aktivitet för dataextrahering (fil)](../../workflow/using/extraction-file.md).
 
 ## Användningsfall: Kryptera och exportera data med en tangent som är installerad på Kontrollpanelen {#use-case-gpg-encrypt}
 
@@ -60,7 +60,7 @@ Så här utför du det här användningsfallet:
 
 1. Konfigurera **[!UICONTROL Query]** -aktivitet för att ange önskade data från databasen som mål. Mer information om detta finns i [det här avsnittet](../../workflow/using/query.md).
 
-1. Öppna **[!UICONTROL Data extraction (file)]** och sedan konfigurera den efter dina behov. Globala koncept för hur du konfigurerar aktiviteten finns i [det här avsnittet](../../workflow/using/extraction--file-.md).
+1. Öppna **[!UICONTROL Data extraction (file)]** och sedan konfigurera den efter dina behov. Globala koncept för hur du konfigurerar aktiviteten finns i [det här avsnittet](../../workflow/using/extraction-file.md).
 
    ![](assets/gpg-data-extraction.png)
 

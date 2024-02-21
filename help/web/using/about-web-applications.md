@@ -2,14 +2,14 @@
 product: campaign
 title: Kom igång med webbapplikationer
 description: Skapa och dela dynamiska webbapplikationer, landningssidor och enkäter
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
+badge-v7: label="v7" type="Informative" tooltip="Gäller Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Gäller även Campaign v8"
 feature: Landing Pages, Web Apps
 exl-id: df58221f-f71b-49d5-a6a1-c81ddff27fdb
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: 668cee663890fafe27f86f2afd3752f7e2ab347a
 workflow-type: tm+mt
-source-wordcount: '689'
-ht-degree: 20%
+source-wordcount: '697'
+ht-degree: 19%
 
 ---
 
@@ -40,22 +40,22 @@ I det här kapitlet finns en översikt över hur du hanterar webbprogram.
 Webbprogram i Adobe Campaign har följande funktioner:
 
 * Skapa flersidiga formulär. Se denna [sida](about-web-forms.md) för mer information om detta.
-* Hantering av flerspråkiga enkäter med ett integrerat översättningsverktyg. Se denna [sida](translating-a-web-application.md) för mer information om detta.
+* Hantering av flerspråkiga undersökningar med ett integrerat översättningsverktyg. Se denna [sida](translating-a-web-application.md) för mer information om detta.
 * Grafiskt sidhanteringsgränssnitt, sidlayout med flera kolumner. Se denna [sida](designing-a-web-application.md) för mer information om detta.
 * Återger personalisering och fältposition. Se denna [sida](editing-content.md#adding-personalization-content) för mer information om detta.
 * Villkorlig visning av undersökningsfält enligt svar. Se denna [sida](form-rendering.md#defining-fields-conditional-display) för mer information om detta.
 * Slumpmässig visning av frågor. Se denna [sida](../../surveys/using/building-a-survey.md#adding-questions) för mer information om detta.
 * Villkorlig sidvisning. Se denna [sida](defining-web-forms-page-sequencing.md#conditional-page-display) för mer information om detta.
-* Informationskontroll före validering beroende på den förväntade datatypen (nummer, e-postadress, datum osv.) och de obligatoriska fälten. Se denna [sida](form-rendering.md#defining-control-settings) för mer information om detta.
+* Informationskontroll före validering beroende på den förväntade datatypen (nummer, e-postadress, datum osv.) och obligatoriska fält. Se denna [sida](form-rendering.md#defining-control-settings) för mer information om detta.
 * E-postinbjudningar eller meddelanden. Se denna [sida](publishing-a-web-form.md#delivering-a-form-via-email) för mer information om detta.
 * Personalisering av fel- och slutmeddelanden. Se denna [sida](defining-web-forms-properties.md#setting-up-an-error-page) för mer information om detta.
 * Användning av bilder, videor, hypertextlänkar, captcha osv. Se denna [sida](editing-content.md) för mer information om detta.
-* Övervakning av svar i realtid. Se denna [sida](../../surveys/using/publish--track-and-use-collected-data.md#response-tracking) för mer information om detta.
+* Övervakning av svar i realtid. Se denna [sida](../../surveys/using/publish-track-and-use-collected-data.md#response-tracking) för mer information om detta.
 
-Valfritt **Undersökning** i modulen Skapa finns följande funktioner:
+Valfritt **Undersökning** i modulen för att skapa finns följande funktioner:
 
-* Databasens dynamiska tillägg: Skapa svar som inte ingår i den ursprungliga datamallen. Se denna [sida](../../surveys/using/managing-answers.md#storing-collected-answers) för mer information om detta.
-* Genererar dedikerade rapporter. Se denna [sida](../../surveys/using/publish--track-and-use-collected-data.md#reports-on-surveys) för mer information om detta.
+* Dynamiskt tillägg för databasen: skapande av svar som inte ingår i den ursprungliga datamallen. Se denna [sida](../../surveys/using/managing-answers.md#storing-collected-answers) för mer information om detta.
+* Genererar dedikerade rapporter. Se denna [sida](../../surveys/using/publish-track-and-use-collected-data.md#reports-on-surveys) för mer information om detta.
 
 Jämfört med webbprogram har enkäterna ett förenklat grafiskt gränssnitt med ett reducerat antal redigeringskontroller.
 
@@ -71,7 +71,7 @@ Om du vill skapa och publicera ett webbprogram måste du:
 
 1. Skapa innehållet (fält, listor, tabeller, diagram osv.).
 
-   Du kan även visa avsnittet som innehåller information om tillgängliga formulärfält: alla dessa fält är också tillgängliga för webbprogram. Denna information finns i [den här sidan](adding-fields-to-a-web-form.md).
+   Du kan även visa avsnittet som innehåller information om tillgängliga formulärfält: alla dessa fält är också tillgängliga för webbprogram. Den här informationen finns i [den här sidan](adding-fields-to-a-web-form.md).
 
 1. Vid behov kan du lägga till förinläsnings-, test- och sparningssteg och konfigurera åtkomstkontrollsystemet (huvudsakligen inom ramen för en extranätpublikation).
 1. Publicera webbprogrammet så att det blir tillgängligt på ett extranät eller i Adobe Campaign.

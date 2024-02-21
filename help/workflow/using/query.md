@@ -2,12 +2,12 @@
 product: campaign
 title: Fråga
 description: Läs mer om arbetsflödesaktiviteten Fråga
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+badge-v7-only: label="v7" type="Informative" tooltip="Gäller endast Campaign Classic v7"
 feature: Workflows, Targeting Activity, Query Editor
 exl-id: 20d03627-cd56-46da-bc02-73b48a02a350
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 668cee663890fafe27f86f2afd3752f7e2ab347a
 workflow-type: tm+mt
-source-wordcount: '1629'
+source-wordcount: '1638'
 ht-degree: 0%
 
 ---
@@ -29,7 +29,7 @@ Mer information om frågeexempel finns i [det här avsnittet](querying-recipient
 
 Mer information om hur du använder och hanterar ytterligare data finns i [Lägg till data](#adding-data).
 
-The **[!UICONTROL Edit query...]** -länken kan du definiera måltypen, begränsningarna och urvalskriterierna för populationen på följande sätt:
+The **[!UICONTROL Edit query...]** Med -länken kan du definiera måltypen, begränsningarna och urvalskriterierna för populationen på följande sätt:
 
 1. Välj målinriktning och filtreringsdimension. Som standard är målet markerat bland mottagarna. Listan med begränsningsfilter är densamma som de som används för leveransmål.
 
@@ -41,11 +41,11 @@ The **[!UICONTROL Edit query...]** -länken kan du definiera måltypen, begräns
 
    ![](assets/s_user_segmentation_query_edit.png)
 
-   En fråga kan vid behov baseras på data från den inkommande övergången genom att välja **[!UICONTROL Temporary schema]** när du väljer målinriktning och filtreringsdimensioner.
+   En fråga kan vid behov baseras på data från den inkommande övergången genom att välja **[!UICONTROL Temporary schema]** när du väljer mål och filtreringsdimensioner.
 
    ![](assets/query_temporary_table.png)
 
-1. Definiera populationerna med guiden. Fälten som ska anges kan variera beroende på måltyp. Du kan förhandsgranska målpopulationen med de aktuella villkoren med hjälp av **[!UICONTROL Preview]** -fliken.
+1. Definiera populationerna med guiden. De fält som ska anges kan vara olika beroende på måltyp. Du kan förhandsgranska målpopulationen med de aktuella villkoren med hjälp av **[!UICONTROL Preview]** -fliken.
 
    Mer information om hur du skapar och använder filter och frågor finns i [section](../../platform/using/filtering-options.md).
 
@@ -74,7 +74,7 @@ Börja med att välja vilken typ av data som ska läggas till:
 ![](assets/wf_add_data_1st_option.png)
 
 * Välj **[!UICONTROL Data linked to the filtering dimension]** för att markera data i Adobe Campaign-databasen.
-* Välj **[!UICONTROL External data]** för att lägga till data från en extern databas. Det här alternativet är bara tillgängligt om du har köpt **Åtkomst till federerade data** alternativ. Mer information finns i [Åtkomst till en extern databas (FDA)](accessing-an-external-database--fda-.md).
+* Välj **[!UICONTROL External data]** för att lägga till data från en extern databas. Det här alternativet är bara tillgängligt om du har köpt **Åtkomst till federerade data** alternativ. Mer information finns i [Åtkomst till en extern databas (FDA)](accessing-an-external-database-fda.md).
 * Välj **[!UICONTROL An offer proposition]** om du vill lägga till en uppsättning kolumner som gör att du kan lagra det bästa erbjudande som genereras av erbjudandemotorn. Det här alternativet är bara tillgängligt om du har köpt **Interaktion** -modul.
 
 Om ingen valfri modul är installerad på plattformen visas inte det här steget. Du kommer att gå direkt till nästa steg.
@@ -94,7 +94,7 @@ Så här lägger du till data från Adobe Campaign-databasen:
    * Ett fält som beräknas baserat på data från målpopulationen eller ett aggregat (antal väntande inköp under den senaste månaden, genomsnittligt belopp för ett kvitto osv.). Till exempel, gå till [Markera data](targeting-data.md#selecting-data).
    * Ett nytt fält som skapats med **[!UICONTROL Add]** till höger om listan med utdatakolumner.
 
-      Du kan också lägga till en samling information, till exempel en lista över kontrakt, de fem senaste leveranserna osv. Samlingar sammanfaller med fält som kan ha flera värden för samma profil (1-N-relation). Mer information finns i [Redigera ytterligare data](targeting-data.md#editing-additional-data).
+     Du kan också lägga till en samling information, till exempel en lista över kontrakt, de fem senaste leveranserna osv. Samlingar sammanfaller med fält som kan ha flera värden för samma profil (1-N-relation). Mer information finns i [Redigera ytterligare data](targeting-data.md#editing-additional-data).
 
 Så här lägger du till en samling information som är länkad till en målpopulation:
 
@@ -107,18 +107,18 @@ Så här lägger du till en samling information som är länkad till en målpopu
 
    * Om ett enskilt element i samlingen sammanfaller med filtervillkoren för den här samlingen väljer du **[!UICONTROL Single row]** i **[!UICONTROL Data collected]** fält.
 
-      >[!IMPORTANT]
-      >
-      >I det här läget optimeras SQL-frågan som genereras tack vare en direkt koppling till samlingselementen.
-      >
-      >Om det ursprungliga villkoret inte uppfylls kan resultatet bli bristfälligt (saknade eller överlappande linjer).
+     >[!IMPORTANT]
+     >
+     >I det här läget optimeras den SQL-fråga som genereras tack vare en direkt överlappning av samlingselementen.
+     >
+     >Om det ursprungliga villkoret inte uppfylls kan resultatet bli bristfälligt (saknade eller överlappande linjer).
 
    * Om du väljer att återställa flera rader (**[!UICONTROL Limit the line count]**) kan du ange hur många rader som ska samlas in.
    * Om de insamlade kolumnerna innehåller aggregat, t.ex. antalet fel som deklarerats, genomsnittliga utgifter på en webbplats, osv. du kan använda **[!UICONTROL Aggregates]** värde.
 
    ![](assets/query_add_collection_param.png)
 
-1. Ange delmarkeringen för samlingen. Till exempel: endast de senaste 15 dagarna.
+1. Ange delmarkeringen för samlingen. Exempel: endast köp under de senaste 15 dagarna.
 
    ![](assets/query_add_columns_collection_filter.png)
 
@@ -126,7 +126,7 @@ Så här lägger du till en samling information som är länkad till en målpopu
 
 ## Exempel: Riktning på enkla mottagarattribut {#example--targeting-on-simple-recipient-attributes}
 
-I följande exempel syftar frågan till att identifiera män mellan 18 och 30 år och som bor i Frankrike. Den här frågan kommer att användas i ett arbetsflöde som t.ex. syftar till att göra dem till ett exklusivt erbjudande.
+I följande exempel syftar frågan till att identifiera män mellan 18 och 30 år och som bor i Frankrike. Den här frågan används i ett arbetsflöde som t.ex. syftar till att göra dem till ett exklusivt erbjudande.
 
 >[!NOTE]
 >
@@ -179,24 +179,24 @@ I avsnittet nedan beskrivs de effektivaste strategierna för att optimera frågo
 * Undvik yttre kopplingar. Använd posten med noll-ID när det är möjligt för att få en yttre kopplingsfunktion.
 * Använd rätt datatyp för kopplingar.
 
-   Se till att `where` -satsen är av samma typ som fältet.
+  Se till att `where` -satsen är av samma typ som fältet.
 
-   Ett vanligt misstag är: `iBlacklist='3'` där `iBlacklist` är ett numeriskt fält, och `3` anger ett textvärde.
+  Ett vanligt misstag är: `iBlacklist='3'` där `iBlacklist` är ett numeriskt fält, och `3` anger ett textvärde.
 
-   Kontrollera att du vet vilken körningsplan din fråga kommer att ha. Undvik fullständiga tabellsökningar, särskilt för realtidsfrågor eller nästan realtidsfrågor som körs varje minut.
+  Kontrollera att du vet vilken körningsplan din fråga kommer att ha. Undvik fullständiga tabellsökningar, särskilt för realtidsfrågor eller nästan realtidsfrågor som körs varje minut.
 
-   Beroende på vilken Campaign-version du har finns mer information i följande avsnitt:
+  Beroende på vilken Campaign-version du har finns mer information i följande avsnitt:
 
-   ![](assets/do-not-localize/v7.jpeg)[  Dokumentation om Campaign v7](../../configuration/using/database-mapping.md)
+  ![](assets/do-not-localize/v7.jpeg)[Dokumentation för Campaign v7](../../configuration/using/database-mapping.md)
 
-   ![](assets/do-not-localize/v8.png)[  Dokumentation om Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/architecture/shemas-forms/database-mapping.html)
+  ![](assets/do-not-localize/v8.png)[Kampanjdokumentation v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/architecture/shemas-forms/database-mapping.html)
 
 ### Funktioner {#functions}
 
 * Se upp för funktioner som `Lower(...)`. När funktionen Nedre används används inte indexvärdet.
 * Kontrollera frågor med &quot;gilla&quot;-instruktionen eller &quot;övre&quot; eller &quot;nedre&quot; instruktionerna noggrant. Använd &quot;Upper&quot; på användarindata, inte i databasfältet.
 
-   Mer information om funktioner finns i [det här avsnittet](../../platform/using/defining-filter-conditions.md#list-of-functions).
+  Mer information om funktioner finns i [det här avsnittet](../../platform/using/defining-filter-conditions.md#list-of-functions).
 
 ### Filtrera dimensioner {#filtering-dimensions}
 
@@ -229,10 +229,10 @@ Mer information om filtreringsdimensioner finns i [det här avsnittet](building-
    * Program,
    * Volymer.
 
-   >[!NOTE]
-   >
-   >En funktion som fungerar i en utvecklingsmiljö kanske inte fungerar i en produktionsmiljö där data kan vara annorlunda. Försök att identifiera de viktigaste skillnaderna för att förutse risker och förbereda lösningar.
+  >[!NOTE]
+  >
+  >En funktion som fungerar i en utvecklingsmiljö kanske inte fungerar i en produktionsmiljö där data kan vara annorlunda. Försök att identifiera de viktigaste skillnaderna för att förutse risker och förbereda lösningar.
 
 * Gör konfigurationer som matchar målvolymerna. Stora volymer kräver särskilda konfigurationer. En konfiguration som fungerade för 100 000 mottagare kanske inte fungerar för 10 000 000 mottagare.
 
-   Tänk på hur systemet skalförändras när det publiceras. Bara för att något fungerar i liten skala innebär det inte att det är lämpligt med större volymer. Testerna bör utföras med liknande volymer som produktionsvolymen. Du bör också utvärdera effekten av volymförändringar (antal anrop, databasens storlek) vid högsta antal timmar, högsta antal dagar och under projektets hela livstid.
+  Tänk på hur systemet skalförändras när det publiceras. Bara för att något fungerar i liten skala innebär det inte att det är lämpligt med större volymer. Testerna bör utföras med liknande volymer som produktionsvolymen. Du bör också utvärdera effekten av volymförändringar (antal anrop, databasens storlek) vid högsta antal timmar, högsta antal dagar och under projektets hela livstid.

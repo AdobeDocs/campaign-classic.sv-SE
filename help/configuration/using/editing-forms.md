@@ -7,10 +7,10 @@ role: Data Engineer, Developer
 badge-v7: label="v7" type="Informative" tooltip="Gäller Campaign Classic v7"
 badge-v8: label="v8" type="Positive" tooltip="Gäller även Campaign v8"
 exl-id: 24604dc9-f675-4e37-a848-f1911be84f3e
-source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
+source-git-commit: 668cee663890fafe27f86f2afd3752f7e2ab347a
 workflow-type: tm+mt
 source-wordcount: '1710'
-ht-degree: 2%
+ht-degree: 1%
 
 ---
 
@@ -54,7 +54,7 @@ Du kan skapa olika typer av indataformulär. Formulärtypen avgör hur användar
 
 * Innehållshantering
 
-  Använd den här formulärtypen för innehållshantering. Se det här [användningsfall](../../delivery/using/use-case--creating-content-management.md).
+  Använd den här formulärtypen för innehållshantering. Se det här [användningsfall](../../delivery/using/use-case-creating-content-management.md).
 
   ![](../../delivery/using/assets/d_ncs_content_form13.png)
 
@@ -223,7 +223,7 @@ Så här skapar du ett formulär:
 
 1. Om formuläret baseras på en viss schematyp kan du söka efter fälten för det här schemat:
 
-   1. Klicka på **[!UICONTROL Insert]** > **[!UICONTROL Document fields]**.
+   1. Klicka **[!UICONTROL Insert]** > **[!UICONTROL Document fields]**.
 
       ![](assets/input-form-create-4.png)
 

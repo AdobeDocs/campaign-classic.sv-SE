@@ -1,13 +1,13 @@
 ---
 product: campaign
-title: Målinrikta data
+title: Måldata
 description: Läs mer om måldata i ett arbetsflöde
 badge-v7-only: label="v7" type="Informative" tooltip="Gäller endast Campaign Classic v7"
 feature: Query Editor, Data Management, Workflows
 exl-id: 74b82019-bdab-4442-84cf-5ad18d0db788
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: 668cee663890fafe27f86f2afd3752f7e2ab347a
 workflow-type: tm+mt
-source-wordcount: '1929'
+source-wordcount: '1926'
 ht-degree: 4%
 
 ---
@@ -178,9 +178,9 @@ För att konfigurera det måste du först välja villkor:
 
    Beroende på vilken Campaign-version du har finns mer information i följande avsnitt:
 
-   ![](assets/do-not-localize/v7.jpeg)[Dokumentation om Campaign v7](../../installation/using/about-fda.md)
+   ![](assets/do-not-localize/v7.jpeg)[Dokumentation för Campaign v7](../../installation/using/about-fda.md)
 
-   ![](assets/do-not-localize/v8.png)[Dokumentation om Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/connect/fda.html)
+   ![](assets/do-not-localize/v8.png)[Kampanjdokumentation v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/connect/fda.html)
 
 Sedan måste vi lägga till nya delmängder:
 
@@ -198,7 +198,7 @@ Sedan måste vi lägga till nya delmängder:
 
    >[!NOTE]
    >
-   >Om du har skaffat **Åtkomst till federerade data** kan du skapa delmängder baserat på informationen i en extern bas. Det gör du genom att välja schemat för den externa tabellen i **[!UICONTROL Targeting dimension]** fält. Mer information finns i [Åtkomst till en extern databas (FDA)](accessing-an-external-database--fda-.md).
+   >Om du har skaffat **Åtkomst till federerade data** kan du skapa delmängder baserat på informationen i en extern bas. Det gör du genom att välja schemat för den externa tabellen i **[!UICONTROL Targeting dimension]** fält. Mer information finns i [Åtkomst till en extern databas (FDA)](accessing-an-external-database-fda.md).
 
 När deluppsättningar har skapats visar den delade aktiviteten som standard så många utdataövergångar som det finns deluppsättningar:
 
@@ -240,7 +240,7 @@ I Adobe Campaign kombinerar datahanteringen en uppsättning aktiviteter för att
 
 För att genomföra dessa åtgärder erbjuder Adobe Campaign
 
-* Datainsamling: [Filöverföring](file-transfer.md), [Inläsning av data (fil)](data-loading--file-.md), [Datainläsning (RDBMS)](data-loading--rdbms-.md), [Uppdatera data](update-data.md). Detta första steg i datainsamlingen förbereder data så att de kan behandlas i andra aktiviteter. Flera parametrar måste övervakas för att arbetsflödet ska kunna köras korrekt och ge de förväntade resultaten. När du till exempel importerar data måste primärnyckeln (Pkey) för dessa data vara unik för varje post.
+* Datainsamling: [Filöverföring](file-transfer.md), [Inläsning av data (fil)](data-loading-file.md), [Datainläsning (RDBMS)](data-loading-rdbms.md), [Uppdatera data](update-data.md). Detta första steg i datainsamlingen förbereder data så att de kan behandlas i andra aktiviteter. Flera parametrar måste övervakas för att arbetsflödet ska kunna köras korrekt och ge de förväntade resultaten. När du till exempel importerar data måste primärnyckeln (Pkey) för dessa data vara unik för varje post.
 * Målinriktade aktiviteter har förbättrats med datahanteringsalternativ: [Fråga](query.md), [Union](union.md), [Skärningspunkt](intersection.md), [Dela](split.md). På så sätt kan du konfigurera en union eller en skärning mellan data från flera olika måldimensioner, så länge datavstämning är möjligt.
 * Dataomvandlingsaktiviteter: [Berikning](enrichment.md), [Ändra dimension](change-dimension.md).
 

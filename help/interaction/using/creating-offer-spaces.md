@@ -1,21 +1,21 @@
 ---
 product: campaign
-title: Skapa erbjudandeplatser
-description: Skapa erbjudandeplatser
+title: Skapa erbjudandemellanslag
+description: Skapa erbjudandemellanslag
 feature: Interaction, Offers
 badge-v7-only: label="v7" type="Informative" tooltip="Gäller endast Campaign Classic v7"
 audience: interaction
 content-type: reference
 topic-tags: managing-environments
 exl-id: bdda98f7-a083-4f3b-b691-c28ec79af780
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: 668cee663890fafe27f86f2afd3752f7e2ab347a
 workflow-type: tm+mt
-source-wordcount: '988'
+source-wordcount: '993'
 ht-degree: 1%
 
 ---
 
-# Skapa erbjudandeplatser{#creating-offer-spaces}
+# Skapa erbjudandemellanslag{#creating-offer-spaces}
 
 
 
@@ -23,7 +23,7 @@ Gäller endast **teknisk administratör** med tillgång till undermappen för er
 
 Innehållet i katalogerbjudandena konfigureras i erbjudandeutrymmena. Som standard kan innehållet innehålla följande fält: **[!UICONTROL Title]**, **[!UICONTROL Destination URL]**, **[!UICONTROL Image URL]**, **[!UICONTROL HTML content]** och **[!UICONTROL Text content]**. Fältsekvensen är konfigurerad i erbjudandeutrymmet.
 
-Med avancerade parametrar kan du ange en kontaktidentifieringsnyckel (som kan bestå av olika element, till exempel namn- och e-postfältet, samtidigt). Mer information finns i [Presentera ett identifierat erbjudande](../../interaction/using/integration-via-javascript--client-side-.md#presenting-an-identified-offer) -avsnitt.
+Med avancerade parametrar kan du ange en kontaktidentifieringsnyckel (som kan bestå av olika element, till exempel namn- och e-postfältet, samtidigt). Mer information finns i [Presentera ett identifierat erbjudande](../../interaction/using/integration-via-javascript-client-side.md#presenting-an-identified-offer) -avsnitt.
 
 Återgivningen av HTML eller XML skapas via en återgivningsfunktion. Sekvensen för fälten som definieras i återgivningsfunktionen måste vara identisk med sekvensen som konfigurerats i innehållet.
 

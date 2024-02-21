@@ -8,10 +8,10 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: 48926e87-03d9-4aa0-89cb-e3fb4f99c1f5
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: 668cee663890fafe27f86f2afd3752f7e2ab347a
 workflow-type: tm+mt
 source-wordcount: '348'
-ht-degree: 98%
+ht-degree: 82%
 
 ---
 
@@ -33,15 +33,15 @@ Leveranskonfiguration och -parametrar kan sparas i en leveransmall för att anv�
 
 [Klicka här för att läsa mer](../../delivery/using/about-templates.md).
 
-## Kan jag enkelt importera en befintlig HTML-kod för att skapa ett e-postmeddelande i Campaign? {#can-i-easily-import-an-existing-html-to-create-an-email-in-campaign-}
+## Kan jag enkelt importera ett befintligt HTML för att skapa ett e-postmeddelande i Campaign? {#can-i-easily-import-an-existing-html-to-create-an-email-in-campaign-}
 
 Lär dig hur du importerar en befintlig HTML-kod för att skapa och skicka ett e-postmeddelande i Adobe Campaign med ett enda klick.
 
 [Klicka här för att läsa mer](../../delivery/using/defining-the-email-content.md#message-content).
 
-## Hur skapar man e-postinnehåll med DCE i Campaign? {#how-to-use-campaign-dce-to-create-an-email-content-}
+## Hur skapar man e-postinnehåll med Campaign DCE? {#how-to-use-campaign-dce-to-create-an-email-content-}
 
-[Utforma ett e-postmeddelande med redigeraren för digitalt innehåll i Campaign](../../web/using/use-case--creating-an-email-delivery.md). Lär dig hur du använder DCE i Campaign för att utforma ett e-postmeddelande med hjälp av ett exempel.
+[Utforma ett e-postmeddelande med redigeraren för digitalt innehåll i Campaign](../../web/using/use-case-creating-an-email-delivery.md). Lär dig hur du använder DCE i Campaign för att utforma ett e-postmeddelande med hjälp av ett exempel.
 
 ## Hur skapar jag ett prenumerationsbaserat nyhetsbrev i Campaign? {#how-can-i-create-a-subscription-based-newsletter-in-campaign-}
 

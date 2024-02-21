@@ -1,15 +1,15 @@
 ---
 product: campaign
-title: "Användningsfall: visa rapport om svar på en onlineundersökning"
-description: "Användningsfall: visa rapport om svar på en onlineundersökning"
+title: "Användningsfall: visa rapport om svar på en nätundersökning"
+description: "Användningsfall: visa rapport om svar på en nätundersökning"
 badge-v7: label="v7" type="Informative" tooltip="Gäller Campaign Classic v7"
 badge-v8: label="v8" type="Positive" tooltip="Gäller även Campaign v8"
 feature: Reporting, Monitoring, Surveys
 exl-id: 6be12518-86d1-4a13-bbc2-b2ec5141b505
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: 668cee663890fafe27f86f2afd3752f7e2ab347a
 workflow-type: tm+mt
-source-wordcount: '487'
-ht-degree: 5%
+source-wordcount: '490'
+ht-degree: 1%
 
 ---
 
@@ -37,7 +37,7 @@ Innan du börjar använda det här användningsexemplet måste du ha tillgång t
 
 Så här samlar du in svaren på enkäten:
 
-1. Skapa ett arbetsflöde och montera en **[!UICONTROL Answers to a survey]** aktivitet. Mer information om hur du använder den här aktiviteten finns i [det här avsnittet](../../surveys/using/publish--track-and-use-collected-data.md#using-the-collected-data).
+1. Skapa ett arbetsflöde och montera en **[!UICONTROL Answers to a survey]** aktivitet. Mer information om hur du använder den här aktiviteten finns i [det här avsnittet](../../surveys/using/publish-track-and-use-collected-data.md#using-the-collected-data).
 1. Redigera aktiviteten och välj den undersökning vars svar du vill analysera.
 1. Aktivera **[!UICONTROL Select all the answer data]** möjlighet att samla in all information.
 

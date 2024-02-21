@@ -8,10 +8,10 @@ audience: installation
 content-type: reference
 topic-tags: appendices
 exl-id: 70cd6a4b-c839-4bd9-b9a7-5a12e59c0cbf
-source-git-commit: a94c361c5bdd9d61ae9232224af910a78245a889
+source-git-commit: 668cee663890fafe27f86f2afd3752f7e2ab347a
 workflow-type: tm+mt
-source-wordcount: '8056'
-ht-degree: 5%
+source-wordcount: '8075'
+ht-degree: 1%
 
 ---
 
@@ -94,7 +94,7 @@ Här är de olika parametrarna för **autentisering** nod:
    <td> longSessionTimeOutSec<br /> </td> 
    <td> Timeout för långa sessioner i sekunder.<br /> </td> 
    <td> Lång<br /> </td> 
-   <td> 1296000<br /> </td> 
+   <td> 129600<br /> </td> 
   </tr> 
   <tr> 
    <td> securityTimeOutSec<br /> </td> 
@@ -182,7 +182,7 @@ Här är de olika parametrarna för **dataStore** nod. Det är här serverdatak�
    <td> värdar<br /> </td> 
    <td> DNS-masker: lista med DNS-masker som den här instansen använder (kommaseparerade, kan använda * och ? mönster).<br /> </td> 
    <td> Sträng<br /> </td> 
-   <td> '*'<br /> </td> 
+   <td> *'<br /> </td> 
   </tr> 
   <tr> 
    <td> interactionCacheTimeToLive<br /> </td> 
@@ -342,7 +342,7 @@ I **dataStore > dataSource > dbcnx** -nod, konfigurera anslutningsinställningar
    <td> provider<br /> </td> 
    <td> Typ (uppräkning). Möjliga värden är 'Oracle', 'MSSQL' (Microsoft SQL Server), 'PostgreSQL' (PostgreSQL), 'Teradata', 'DB2', 'MySQL', 'Netezza', 'AsterData', 'SAPHANA' (SAP HANA), 'RedShift' (Amazon Redshift), 'ODBC' (ODBC (Sybase ASE), Sybase IQ), 'Relay' (HTTP-relä till fjärrdatabas).<br /> </td> 
    <td> Sträng<br /> </td> 
-   <td> 'Oracle'<br /> </td> 
+   <td> oracle<br /> </td> 
   </tr> 
   <tr> 
    <td> server<br /> </td> 
@@ -1056,7 +1056,7 @@ Om du till exempel vill tillåta åtkomst till alla URL:er för domänen busines
 
 dnsSuffix=&quot;business.com&quot; urlRegEx=&quot;http://.&#42;&quot;
 
-och 
+och
 
 dnsSuffix=&quot;business.com&quot; urlRegEx=&quot;https://.&#42;&quot;
 
@@ -1186,7 +1186,7 @@ Mer information finns i [Aktivera e-postarkivering (lokalt)](../../installation/
    <td> processRestartTime<br /> </td> 
    <td> Tid på dagen då processen startas om automatiskt. Se <a href="../../installation/using/configuring-campaign-server.md#automatic-process-restart" target="_blank">Automatisk processomstart</a>.<br /> </td> 
    <td> Sträng<br /> </td> 
-   <td> '06:00:00' <br /> </td> 
+   <td> 06:00:00' <br /> </td> 
   </tr> 
   <tr> 
    <td> purgeArchivesDelay<br /> </td> 
@@ -1347,7 +1347,7 @@ Här är de olika parametrarna för **inMail** nod. Detta är konfigurationen f�
    <td> processRestartTime<br /> </td> 
    <td> Tid på dagen då processen startas om automatiskt. Se <a href="../../installation/using/configuring-campaign-server.md#automatic-process-restart" target="_blank">Automatisk processomstart</a>.<br /> </td> 
    <td> Sträng<br /> </td> 
-   <td> '06:00:00' <br /> </td> 
+   <td> 06:00:00' <br /> </td> 
   </tr> 
   <tr> 
    <td> reloadPeriodSec<br /> </td> 
@@ -1397,7 +1397,7 @@ I **inMail > msgDump** -nod konfigurerar du följande parametrar. Detta är konf
 
 Här är de olika parametrarna för **interactiond** nod. Detta är konfigurationen av skrivdaemon för inkommande interaktionshändelser.
 
-Mer information finns i [Interaktion - databuffert](../../installation/using/interaction---data-buffer.md).
+Mer information finns i [Interaktion - databuffert](../../installation/using/interaction-data-buffer.md).
 
 <table> 
  <thead> 
@@ -1461,7 +1461,7 @@ Mer information finns i [Interaktion - databuffert](../../installation/using/int
    <td> processRestartTime<br /> </td> 
    <td> Tid på dagen då processen startas om automatiskt. Se <a href="../../installation/using/configuring-campaign-server.md#automatic-process-restart" target="_blank">Automatisk processomstart</a>.<br /> </td> 
    <td> Sträng<br /> </td> 
-   <td> '06:00:00' <br /> </td> 
+   <td> 06:00:00' <br /> </td> 
   </tr> 
   <tr> 
    <td> runLevel<br /> </td> 
@@ -1598,7 +1598,7 @@ Här är de olika parametrarna för **mta** nod. Detta är konfigurationen för 
    <td> processRestartTime<br /> </td> 
    <td> Tid på dagen då processen startas om automatiskt. Se <a href="../../installation/using/configuring-campaign-server.md#automatic-process-restart" target="_blank">Automatisk processomstart</a>.<br /> </td> 
    <td> Sträng<br /> </td> 
-   <td> '06:00:00' <br /> </td> 
+   <td> 06:00:00' <br /> </td> 
   </tr> 
   <tr> 
    <td> purgeDataLogDelay<br /> </td> 
@@ -2155,7 +2155,7 @@ Här är de olika parametrarna för **rörlig** nod. Det här är konfiguratione
    <td> processRestartTime<br /> </td> 
    <td> Tid på dagen då processen startas om automatiskt. Se <a href="../../installation/using/configuring-campaign-server.md#automatic-process-restart" target="_blank">Automatisk processomstart</a>.<br /> </td> 
    <td> Sträng<br /> </td> 
-   <td> '06:00:00' <br /> </td> 
+   <td> 06:00:00' <br /> </td> 
   </tr> 
   <tr> 
    <td> processingJSThreads<br /> </td> 
@@ -2426,7 +2426,7 @@ Här är de olika parametrarna för **sms** nod. Detta är konfigurationen för 
    <td> processRestartTime<br /> </td> 
    <td> Tid på dagen då processen startas om automatiskt. Se <a href="../../installation/using/configuring-campaign-server.md#automatic-process-restart" target="_blank">Automatisk processomstart</a>.<br /> </td> 
    <td> Sträng<br /> </td> 
-   <td> '06:00:00' <br /> </td> 
+   <td> 06:00:00' <br /> </td> 
   </tr> 
   <tr> 
    <td> reloadPeriod<br /> </td> 
@@ -2532,7 +2532,7 @@ Här är de olika parametrarna för **stat** nod. Detta är konfigurationen för
    <td> processRestartTime<br /> </td> 
    <td> Tid på dagen då processen startas om automatiskt. Se <a href="../../installation/using/configuring-campaign-server.md#automatic-process-restart" target="_blank">Automatisk processomstart</a>.<br /> </td> 
    <td> Sträng<br /> </td> 
-   <td> '06:00:00' <br /> </td> 
+   <td> 06:00:00' <br /> </td> 
   </tr> 
   <tr> 
    <td> runLevel<br /> </td> 
@@ -2603,7 +2603,7 @@ Här är de olika parametrarna för **syslogd** nod. Detta är konfigurationen f
    <td> processRestartTime<br /> </td> 
    <td> Tid på dagen då processen startas om automatiskt. Se <a href="../../installation/using/configuring-campaign-server.md#automatic-process-restart" target="_blank">Automatisk processomstart</a>.<br /> </td> 
    <td> Sträng<br /> </td> 
-   <td> '06:00:00' <br /> </td> 
+   <td> 06:00:00' <br /> </td> 
   </tr> 
   <tr> 
    <td> runLevel<br /> </td> 
@@ -2716,7 +2716,7 @@ Här är de olika parametrarna för **spårning** nod. Detta är spårningsserve
    <td> processRestartTime<br /> </td> 
    <td> Tid på dagen då processen startas om automatiskt. Se <a href="../../installation/using/configuring-campaign-server.md#automatic-process-restart" target="_blank">Automatisk processomstart</a>.<br /> </td> 
    <td> Sträng<br /> </td> 
-   <td> '06:00:00' <br /> </td> 
+   <td> 06:00:00' <br /> </td> 
   </tr> 
   <tr> 
    <td> runLevel<br /> </td> 
@@ -2811,7 +2811,7 @@ Här är de olika parametrarna för **trackinglogd** nod. Detta är konfiguratio
    <td> processRestartTime<br /> </td> 
    <td> Tid på dagen då processen startas om automatiskt. Se <a href="../../installation/using/configuring-campaign-server.md#automatic-process-restart" target="_blank">Automatisk processomstart</a>.<br /> </td> 
    <td> Sträng<br /> </td> 
-   <td> '06:00:00' <br /> </td> 
+   <td> 06:00:00' <br /> </td> 
   </tr> 
   <tr> 
    <td> purgeLogsPeriod<br /> </td> 
@@ -2926,7 +2926,7 @@ Mer information finns i [section](configuring-campaign-server.md#default-port-fo
    <td> processRestartTime<br /> </td> 
    <td> Tid på dagen då processen startas om automatiskt. Se <a href="../../installation/using/configuring-campaign-server.md#automatic-process-restart" target="_blank">Automatisk processomstart</a>.<br /> </td> 
    <td> Sträng<br /> </td> 
-   <td> '06:00:00' <br /> </td> 
+   <td> 06:00:00' <br /> </td> 
   </tr> 
   <tr> 
    <td> runLevel<br /> </td> 
@@ -3505,7 +3505,7 @@ Mer information finns i [Arbetsflöden och tillhörighet med hög tillgänglighe
    <td> processRestartTime<br /> </td> 
    <td> Tid på dagen då processen startas om automatiskt. Se <a href="../../installation/using/configuring-campaign-server.md#automatic-process-restart" target="_blank">Automatisk processomstart</a>.<br /> </td> 
    <td> Sträng<br /> </td> 
-   <td> '06:00:00' <br /> </td> 
+   <td> 06:00:00' <br /> </td> 
   </tr> 
   <tr> 
    <td> runLevel<br /> </td> 

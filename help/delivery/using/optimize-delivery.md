@@ -7,10 +7,10 @@ badge-v8: label="v8" type="Positive" tooltip="Gäller även Campaign v8"
 feature: Deliverability
 role: User
 exl-id: 24b2ee47-bec7-43ce-81b3-0b2d1a5cebae
-source-git-commit: d2f5f2a662c022e258fb3cc56c8502c4f4cb2849
+source-git-commit: 668cee663890fafe27f86f2afd3752f7e2ab347a
 workflow-type: tm+mt
-source-wordcount: '748'
-ht-degree: 7%
+source-wordcount: '736'
+ht-degree: 4%
 
 ---
 
@@ -40,7 +40,7 @@ Om du vill optimera leveransen när du hanterar e-post i stora volymer och undvi
 
 **Tips**: Använd en transparent avsändaradress som motsvarar ert varumärkes webbplats. Exempel: företaget TravelAgency hanterar hotellkedjan Valentino. Företaget äger valentino.com domän för sin webbplats. För att marknadsföra alla hjärtans dag-hotell i Paris använder man underdomänen paris.valentino.com. Därför kan en relevant avsändaradress vara hotel@paris.valentino.com.
 
-## Levererbarhetshantering {#deliverability-management}
+## Leveranshantering {#deliverability-management}
 
 Om du vill nå mottagarnas inkorg utan att studsa eller markeras som skräppost måste du förbättra leveransfrekvensen för dina meddelanden.
 
@@ -64,7 +64,7 @@ När du börjar skicka e-post på en ny plattform kan du använda en lista med a
 
 * Om du har en lista över ogiltiga adresser rekommenderar Adobe att du importerar den till karantäntabellen via **[!UICONTROL Administration]** > **[!UICONTROL Campaign Management]** > **[!UICONTROL Non deliverables Management]** > **[!UICONTROL Non deliverables and addresses]**.
 
-* Mottagare vars adresser sätts i karantän exkluderas som standard under leveransanalysen: de är inte riktade. Detta snabbar upp leveranserna eftersom felfrekvensen avsevärt påverkar leveranshastigheten. En e-postadress kan sättas i karantän när inkorgen är full eller om adressen inte finns. [Läs mer](#identifying-quarantined-addresses-for-a-delivery)
+* Mottagare vars adresser sätts i karantän exkluderas som standard under leveransanalysen: de är inte riktade. Detta snabbar upp leveranserna eftersom felfrekvensen påverkar leveranshastigheten avsevärt. En e-postadress kan sättas i karantän när inkorgen är full eller om adressen inte finns. [Läs mer](#identifying-quarantined-addresses-for-a-delivery)
 
 * Adobe Campaign hanterar felaktiga adresser beroende på vilken typ av fel som returneras. Mer information om detta finns i [det här avsnittet](understanding-quarantine-management.md).
 
@@ -77,4 +77,4 @@ När du börjar skicka e-post på en ny plattform kan du använda en lista med a
 
 För att undvika att skicka meddelanden till ogiltiga adresser, begränsa felaktig kommunikation och förbättra avsändarens anseende rekommenderar Adobe att du använder en dubbel anmälningsmekanism för bekräftelse efter prenumeration. Detta bidrar till att säkerställa att mottagaren prenumererar avsiktligt.
 
-Information om hur denna mekanism genomförs finns i [det här avsnittet](../../web/using/use-cases--web-forms.md).
+Information om hur denna mekanism genomförs finns i [det här avsnittet](../../web/using/use-cases-web-forms.md).

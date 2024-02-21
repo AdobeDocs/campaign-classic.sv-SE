@@ -1,15 +1,15 @@
 ---
 product: campaign
 title: Kom igång med undersökningar
-description: Kom igång med Campaign-enkäter
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
+description: Kom igång med Campaign-undersökningar
+badge-v7: label="v7" type="Informative" tooltip="Gäller Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Gäller även Campaign v8"
 feature: Surveys
 exl-id: 7061a4f1-006f-4f19-8761-918d8930d885
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: 668cee663890fafe27f86f2afd3752f7e2ab347a
 workflow-type: tm+mt
-source-wordcount: '522'
-ht-degree: 4%
+source-wordcount: '534'
+ht-degree: 3%
 
 ---
 
@@ -31,7 +31,6 @@ Lär dig hur du skapar din första enkät i [den här sidan](getting-started-wit
 >
 >* Hantering av webbapplikationer beskrivs i [det här dokumentet](../../web/using/about-web-applications.md). Mer information finns i det här kapitlet.
 
-
 ## Funktionsomfång {#campaign-surveys-scope}
 
 I Adobe Campaign använder du [Webbprogram](../../web/using/about-web-forms.md) till:
@@ -49,11 +48,11 @@ I Adobe Campaign använder du [Webbprogram](../../web/using/about-web-forms.md) 
 
 Modulen för att skapa enkäter erbjuder ett användarvänligt gränssnitt och följande extrafunktioner:
 
-* Databasens dynamiska tillägg: skapa svar som inte ingår i den ursprungliga datamodellen. [Läs mer](../../surveys/using/managing-answers.md#storing-collected-answers).
+* Dynamiskt tillägg för databasen: skapande av svar som inte ingår i den ursprungliga datamodellen. [Läs mer](../../surveys/using/managing-answers.md#storing-collected-answers).
 * Poänghantering. [Läs mer](../../surveys/using/managing-answers.md#score-management).
 * Slumpmässig visning av frågor. [Läs mer](../../surveys/using/building-a-survey.md#adding-questions).
-* Spårning av svar i realtid. [Läs mer](../../surveys/using/publish--track-and-use-collected-data.md#response-tracking).
-* Genererar dedikerade rapporter. [Läs mer](../../surveys/using/publish--track-and-use-collected-data.md#reports-on-surveys).
+* Spårning av svar i realtid. [Läs mer](../../surveys/using/publish-track-and-use-collected-data.md#response-tracking).
+* Genererar dedikerade rapporter. [Läs mer](../../surveys/using/publish-track-and-use-collected-data.md#reports-on-surveys).
 
 
 ## Implementeringssteg {#surveys-implementation-steps}
@@ -61,7 +60,7 @@ Modulen för att skapa enkäter erbjuder ett användarvänligt gränssnitt och f
 Följ de här stegen för att skapa och leverera en enkät och bearbeta resultaten:
 
 1. Skapa sidorna i undersökningen och deras innehåll (inmatningsfält, nedrullningsbara listor, frågor osv.).
-1. Definiera hur svaren ska sparas. Det går att infoga ett steg för förhandsladdning av data så att formuläret kan läsas in i förväg med data som redan finns i databasen. Du kan också lägga till en testruta.
+1. Definiera hur svaren ska sparas. Det går att infoga ett steg för förhandsladdning av data så att formuläret redan finns i databasen. Du kan också lägga till en testruta.
 1. Publicera och skicka sedan enkäten till mottagarna (t.ex. ta med en länk i en leverans eller på en webbplats).
 1. Övervaka svar och visa rapporter.
 

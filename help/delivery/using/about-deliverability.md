@@ -7,10 +7,10 @@ badge-v8: label="v8" type="Positive" tooltip="Gäller även Campaign v8"
 feature: Deliverability
 role: User
 exl-id: f301b34c-244c-4279-b23f-8224ea8eedbe
-source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
+source-git-commit: 668cee663890fafe27f86f2afd3752f7e2ab347a
 workflow-type: tm+mt
-source-wordcount: '736'
-ht-degree: 9%
+source-wordcount: '668'
+ht-degree: 7%
 
 ---
 
@@ -61,13 +61,13 @@ När du konfigurerar, utformar och testar ett meddelande måste du följa de rik
 * [God praxis för leverans](delivery-best-practices.md)
 * [Styr e-postinnehållet](control-message-content.md)
 * [Inkorgsåtergivning](inbox-rendering.md)
-* [Skicka en korrektur](steps-validating-the-delivery.md#sending-a-proof)
+* [Skicka ett bevis](steps-validating-the-delivery.md#sending-a-proof)
 
 ### Verifiera samtycke genom dubbel anmälan {#double-opt-in}
 
 För att undvika att skicka meddelanden till ogiltiga adresser, begränsa felaktig kommunikation och förbättra avsändarens anseende rekommenderar Adobe att du använder en mekanism för dubbel anmälan. Med den här metoden kan du säkerställa att mottagarna prenumererar avsiktligt.
 
-Mer information om det här finns i [Skapa ett prenumerationsformulär med dubbel anmälan](../../web/using/use-cases--web-forms.md#create-a-subscription--form-with-double-opt-in).
+Mer information om det här finns i [Skapa ett prenumerationsformulär med dubbel anmälan](../../web/using/use-cases-web-forms.md#create-a-subscription--form-with-double-opt-in).
 
 Mer information om de bästa metoderna för att samla in data från kunderna finns i [Adobe Deliverability Best Practice Guide](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/first-impressions/address-collection-and-list-growth.html#data-quality-and-hygiene).
 

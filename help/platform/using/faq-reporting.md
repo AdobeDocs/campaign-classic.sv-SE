@@ -8,10 +8,10 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: b29340a0-954d-41e4-b0a3-9d356e4dc753
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: 668cee663890fafe27f86f2afd3752f7e2ab347a
 workflow-type: tm+mt
 source-wordcount: '324'
-ht-degree: 98%
+ht-degree: 82%
 
 ---
 
@@ -27,13 +27,13 @@ Adobe Campaign är inte ett specialiserat rapporteringsverktyg. Rapporter som sk
 
 [Klicka här för att läsa mer](../../reporting/using/about-adobe-campaign-reporting-tools.md) om rapportfunktionerna i Campaign.
 
-## Hur kan jag utforma och dela statistiska rapporter om befolkningar? {#how-can-i-design-and-share-statistic-reports-on-populations-}
+## Hur kan jag utforma och dela statistiska rapporter om populationer? {#how-can-i-design-and-share-statistic-reports-on-populations-}
 
 Med [beskrivande analysrapporter](../../reporting/using/about-descriptive-analysis.md) i Adobe Campaign kan du utforma och dela statistiska rapporter om befolkningar, [utforska en publik för ett nyhetsbrev](../../reporting/using/use-cases.md#analyzing-a-population) eller [skapa en rapport om befolkningen i en arbetsflödesövergång](../../reporting/using/use-cases.md#analyzing-a-transition-target-in-a-workflow). Du kan också, till exempel, [analysera reaktivitetsfrekvensen hos nyhetsbrevets mottagare](../../reporting/using/use-cases.md#analyzing-recipient-tracking-logs).
 
 [Klicka här för mer information om detta](../../reporting/using/about-descriptive-analysis.md).
 
-## Hur kan jag utforma avancerade rapporter utifrån mina data? {#how-can-i-design-advanced-reports-on-my-data-}
+## Hur kan jag utforma avancerade rapporter på mina data? {#how-can-i-design-advanced-reports-on-my-data-}
 
 Med Campaign Classic kan du [skapa avancerade rapporter](../../reporting/using/about-reports-creation-in-campaign.md). Som expertanvändare kan du skapa uppdateringar och distribuera anpassade rapporter utifrån dina data.
 
@@ -47,10 +47,10 @@ När de har skapats och konfigurerats används kuber i frågeformulär för rapp
 
 Läs mer om hur du kan [utforskar data](../../reporting/using/ac-cubes.md) med kuber.
 
-## Kan jag skapa en rapport från svaren på en undersökning online? {#can-i-create-a-report-from-answers-to-an-online-survey-}
+## Kan jag skapa en rapport från svaren till en nätundersökning? {#can-i-create-a-report-from-answers-to-an-online-survey-}
 
-Läs om [det här användningsfallet](../../surveys/using/use-case--displaying-report-on-answers-to-an-online-survey.md) och lär dig hur du skapar en rapport som visar svar på en undersökning online.
+Läs om [det här användningsfallet](../../surveys/using/use-case-displaying-report-on-answers-to-an-online-survey.md) och lär dig hur du skapar en rapport som visar svar på en undersökning online.
 
-## Hur kan jag dela åtkomst till min rapport via gränssnittet i Campaign? {#how-can-i-share-access-to-my-report}
+## Hur kan jag dela åtkomst till min rapport i Campaign-gränssnittet? {#how-can-i-share-access-to-my-report}
 
 Du kan definiera i vilket sammanhang rapporten ska visas i användargränssnittet i Adobe Campaign. Mer information om åtkomst till rapporter finns i [det här avsnittet](../../reporting/using/configuring-access-to-the-report.md).

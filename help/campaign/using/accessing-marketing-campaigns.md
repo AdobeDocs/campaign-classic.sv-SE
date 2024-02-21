@@ -6,10 +6,10 @@ role: User
 badge-v7-only: label="v7" type="Informative" tooltip="Gäller endast Campaign Classic v7"
 feature: Campaigns, Cross Channel Orchestration
 exl-id: 1278bda1-f83c-4d38-8042-e6611755cf36
-source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
+source-git-commit: 668cee663890fafe27f86f2afd3752f7e2ab347a
 workflow-type: tm+mt
 source-wordcount: '1206'
-ht-degree: 2%
+ht-degree: 1%
 
 ---
 
@@ -142,7 +142,7 @@ The **[!UICONTROL Reports]** kan du komma åt kampanjrapporterna.
 Kampanjer skapas via kampanjmallar. Du kan konfigurera återanvändbara mallar för vilka vissa alternativ har valts och andra inställningar redan har sparats. För varje kampanj finns följande funktioner:
 
 * Referens till [dokument och resurser](../../campaign/using/marketing-campaign-deliveries.md#managing-associated-documents): du kan associera dokument med kampanjen (i korthet, rapport, bilder osv.). Alla dokumentformat stöds.
-* Definiera kostnader: för varje kampanj kan Adobe Campaign definiera [kostnadsposter och kostnadsberäkningsstrukturer](../../campaign/using/providers--stocks-and-budgets.md#defining-cost-categories) som kan användas när marknadsföringskampanjen skapas. Exempel: tryckkostnader, användning av en extern byrå, rumshyrning.
+* Definiera kostnader: för varje kampanj kan Adobe Campaign definiera [kostnadsposter och kostnadsberäkningsstrukturer](../../campaign/using/providers-stocks-and-budgets.md#defining-cost-categories) som kan användas när marknadsföringskampanjen skapas. Exempel: tryckkostnader, användning av en extern byrå, rumshyrning.
 * Definiera mål: du kan definiera kvantifierbara mål för en kampanj, t.ex. antal prenumeranter, affärsvolym osv. Den här informationen används senare i kampanjrapporter.
 * Hantera [dirigeringsadresser](../../delivery/using/about-seed-addresses.md) och [kontrollgrupper](../../campaign/using/marketing-campaign-deliveries.md#defining-a-control-group).
 * Hantera godkännanden: du kan välja de behandlingar som ska godkännas och, om det behövs, välja granskningsoperatorer eller grupper av operatorer. [Läs mer](../../campaign/using/marketing-campaign-approval.md#checking-and-approving-deliveries)
@@ -184,7 +184,7 @@ I tabellen sammanfattas de åtgärder du kan vidta i kampanjer från en webbläs
 | Stock | Ta bort en aktierad |
 | Simulering av erbjudanden | Starta och stoppa en simulering |
 | Målarbetsflöde | Starta, pausa och stoppa ett arbetsflöde |
-| Rapportera | Spara aktuella data i rapporthistoriken |
+| Rapport | Spara aktuella data i rapporthistoriken |
 | Forum | Lägg till en diskussion<br/>Svara på ett meddelande i en diskussion<br/>Följ en diskussion och avsluta prenumerationen på den |
 
 ### Godkännanden

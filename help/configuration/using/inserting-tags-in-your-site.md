@@ -6,9 +6,9 @@ feature: Configuration
 role: Data Engineer, Developer
 badge-v7-only: label="v7" type="Informative" tooltip="Gäller endast Campaign Classic v7"
 exl-id: e7fcec75-82fe-45ff-8d45-7d6e95baeb14
-source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
+source-git-commit: 668cee663890fafe27f86f2afd3752f7e2ab347a
 workflow-type: tm+mt
-source-wordcount: '335'
+source-wordcount: '336'
 ht-degree: 2%
 
 ---
@@ -126,7 +126,7 @@ När dina webbsidor genereras dynamiskt kan du lägga till spårningstaggen vid 
 
 Om du vill styra informationen som skickas till omdirigeringsservern är det mest tillförlitliga sättet att utföra HTTP-frågan synkront själv med ett sidgenereringsspråk.
 
-Den URL som du skapar måste följa de syntaxregler som definieras i [Webbspårningstagg: definition](../../configuration/using/web-tracking-tag--definition.md).
+Den URL som du skapar måste följa de syntaxregler som definieras i [Webbspårningstagg: definition](../../configuration/using/web-tracking-tag-definition.md).
 
 ![](assets/d_ncs_integration_webtracking_structure3.png)
 

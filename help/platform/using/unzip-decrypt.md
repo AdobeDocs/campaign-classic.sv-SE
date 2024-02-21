@@ -9,17 +9,17 @@ audience: platform
 content-type: reference
 topic-tags: importing-and-exporting-data
 exl-id: 1a79da3b-2abc-4bfc-a0ee-8471c478638d
-source-git-commit: a2106e55617209f28da42c50008d16188563b2da
+source-git-commit: 668cee663890fafe27f86f2afd3752f7e2ab347a
 workflow-type: tm+mt
-source-wordcount: '739'
-ht-degree: 11%
+source-wordcount: '702'
+ht-degree: 8%
 
 ---
 
 
 # Zippa upp eller dekryptera en fil {#unzipping-or-decrypting-a-file-before-processing}
 
-Med Adobe Campaign kan du importera komprimerade eller krypterade filer. Innan de kan läsas i en [Inläsning av data (fil)](../../workflow/using/data-loading--file-.md) kan du definiera en förbearbetning för att packa upp eller dekryptera filen.
+Med Adobe Campaign kan du importera komprimerade eller krypterade filer. Innan de kan läsas i en [Inläsning av data (fil)](../../workflow/using/data-loading-file.md) kan du definiera en förbearbetning för att packa upp eller dekryptera filen.
 
 >[!IMPORTANT]
 >
@@ -52,7 +52,7 @@ Ett exempel visas i användningsexemplet nedan.
 
 **Relaterade ämnen:**
 
-* [Aktivitet för inläsning av data (fil)](../../workflow/using/data-loading--file-.md).
+* [Aktivitet för inläsning av data (fil)](../../workflow/using/data-loading-file.md).
 * [Zippa eller kryptera en fil](../../workflow/using/how-to-use-workflow-data.md#zipping-or-encrypting-a-file).
 
 ## Användningsfall: Importera data som krypterats med en nyckel som genererats av Kontrollpanelen {#use-case-gpg-decrypt}
@@ -85,7 +85,7 @@ Så här utför du det här användningsfallet:
 
    Globala koncept för hur du konfigurerar aktiviteten finns i [det här avsnittet](../../workflow/using/file-transfer.md).
 
-1. Öppna **[!UICONTROL Data loading (file)]** och sedan konfigurera den efter dina behov. Globala koncept för hur du konfigurerar aktiviteten finns i [det här avsnittet](../../workflow/using/data-loading--file-.md).
+1. Öppna **[!UICONTROL Data loading (file)]** och sedan konfigurera den efter dina behov. Globala koncept för hur du konfigurerar aktiviteten finns i [det här avsnittet](../../workflow/using/data-loading-file.md).
 
    Lägg till en förbearbetningsfas i aktiviteten för att dekryptera inkommande data. Om du vill göra det väljer du **[!UICONTROL Pre-process the file]** och sedan kopiera och klistra in dekrypteringskommandot i **[!UICONTROL Command]** fält:
 

@@ -7,9 +7,9 @@ badge-v7-only: label="v7" type="Informative" tooltip="Gäller endast Campaign Cl
 audience: integrations
 content-type: reference
 exl-id: 8d1404c5-030b-47fe-a4c3-e72f15f09bbb
-source-git-commit: d15592aaccf036fc956049e611139ea5a46e9fc0
+source-git-commit: 668cee663890fafe27f86f2afd3752f7e2ab347a
 workflow-type: tm+mt
-source-wordcount: '504'
+source-wordcount: '477'
 ht-degree: 5%
 
 ---
@@ -32,7 +32,7 @@ Om du vill exportera data från Campaign Classic till din S3- eller Azure Blob-l
 
 Lägg till och konfigurera:
 
-* An **[!UICONTROL Data extraction (file)]** -aktivitet för att extrahera måldata till en CSV-fil. Mer information om hur du konfigurerar den här aktiviteten finns i [det här avsnittet](../../workflow/using/extraction--file-.md).
+* An **[!UICONTROL Data extraction (file)]** -aktivitet för att extrahera måldata till en CSV-fil. Mer information om hur du konfigurerar den här aktiviteten finns i [det här avsnittet](../../workflow/using/extraction-file.md).
 
   ![](assets/rtcdp-extract-file.png)
 

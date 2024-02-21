@@ -6,7 +6,7 @@ feature: Web Apps, Web Forms, Landing Pages, Email Design
 badge-v7: label="v7" type="Informative" tooltip="Gäller Campaign Classic v7"
 badge-v8: label="v8" type="Positive" tooltip="Gäller även Campaign v8"
 exl-id: f5d65e89-6b18-482b-97d8-11ab94f6775e
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: 668cee663890fafe27f86f2afd3752f7e2ab347a
 workflow-type: tm+mt
 source-wordcount: '268'
 ht-degree: 1%
@@ -50,11 +50,11 @@ Så här skapar du en enkel **webbprogram** måste du:
 
 Skapa en **e-postleverans** måste du:
 
-1. Skapa en leverans från en DCE-mall - [Läs mer](use-case--creating-an-email-delivery.md)
+1. Skapa en leverans från en DCE-mall - [Läs mer](use-case-creating-an-email-delivery.md)
 1. Välj ett befintligt innehåll eller skapa innehåll från en [standardmall](template-management.md)
 1. Redigera och konfigurera onlinematerial
 1. Skicka leveransen - [Läs mer](../../delivery/using/steps-about-delivery-creation-steps.md)
 
 >[!NOTE]
 >
->Ett fullständigt implementeringsexempel i samband med en e-postleverans finns i [det här användningsfallet](use-case--creating-an-email-delivery.md).
+>Ett fullständigt implementeringsexempel i samband med en e-postleverans finns i [det här användningsfallet](use-case-creating-an-email-delivery.md).

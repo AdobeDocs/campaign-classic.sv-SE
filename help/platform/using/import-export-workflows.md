@@ -1,6 +1,6 @@
 ---
 product: campaign
-title: Importera och exportera data med hjälp av arbetsflöden
+title: Importera och exportera data med arbetsflöden
 description: Lär dig hur du importerar och exporterar data med arbetsflöden i Campaign
 feature: Data Management, Workflows
 badge-v7: label="v7" type="Informative" tooltip="Gäller Campaign Classic v7"
@@ -9,10 +9,10 @@ audience: platform
 content-type: reference
 topic-tags: importing-and-exporting-data
 exl-id: 266ecd49-7101-4ff1-941f-1f9b39b44955
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: 668cee663890fafe27f86f2afd3752f7e2ab347a
 workflow-type: tm+mt
 source-wordcount: '272'
-ht-degree: 5%
+ht-degree: 3%
 
 ---
 
@@ -36,7 +36,7 @@ Mer information om hur du använder läslisteaktiviteten i ett arbetsflöde finn
 
 De data som bearbetas i ett arbetsflöde kan extraheras från en strukturerad fil så att de kan importeras till Adobe Campaign.
 
-En beskrivning av inläsningsdataaktiviteten finns i [Inläsning av data (fil)](../../workflow/using/data-loading--file-.md) -avsnitt.
+En beskrivning av inläsningsdataaktiviteten finns i [Inläsning av data (fil)](../../workflow/using/data-loading-file.md) -avsnitt.
 
 Exempel på strukturerad fil som ska importeras:
 
@@ -54,4 +54,4 @@ När data har samlats in kan du använda dem i dina arbetsflöden, till exempel 
 
 Arbetsflöden kan vara ett användbart sätt att automatisera vissa av dina exportprocesser eller exportera exakta datauppsättningar efter att ha använt några av de tillgängliga datahanteringsaktiviteterna för att omvandla dina data.
 
-Exportåtgärder utförs med en **[!UICONTROL Data extraction (file) activity]**. Mer information om hur du konfigurerar och använder aktiviteten finns i [den här sidan](../../workflow/using/extraction--file-.md).
+Exportåtgärder utförs med en **[!UICONTROL Data extraction (file) activity]**. Mer information om hur du konfigurerar och använder aktiviteten finns i [den här sidan](../../workflow/using/extraction-file.md).

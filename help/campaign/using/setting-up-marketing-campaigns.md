@@ -6,10 +6,10 @@ role: User
 badge-v7-only: label="v7" type="Informative" tooltip="Gäller endast Campaign Classic v7"
 feature: Campaigns, Cross Channel Orchestration, Programs
 exl-id: a8fce21f-ffe3-4819-87ca-ac0ad9f21e41
-source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
+source-git-commit: 668cee663890fafe27f86f2afd3752f7e2ab347a
 workflow-type: tm+mt
-source-wordcount: '1260'
-ht-degree: 3%
+source-wordcount: '1255'
+ht-degree: 2%
 
 ---
 
@@ -31,7 +31,7 @@ Så här skapar du en marknadsföringskampanj:
 
 1. Övervaka leveranser. [Läs mer](../../campaign/using/marketing-campaign-monitoring.md).
 
-1. Planera kampanjer och tillhörande kostnader. [Läs mer](../../campaign/using/providers--stocks-and-budgets.md#creating-service-providers-and-their-cost-structures).
+1. Planera kampanjer och tillhörande kostnader. [Läs mer](../../campaign/using/providers-stocks-and-budgets.md#creating-service-providers-and-their-cost-structures).
 
 När de här stegen har slutförts kan du starta leveranserna (se [det här avsnittet](../../campaign/using/marketing-campaign-deliveries.md#starting-a-delivery)), kontrollera data, processer och information som rör leveranserna och, vid behov, hantera tillhörande dokument (se [det här avsnittet](../../campaign/using/marketing-campaign-deliveries.md#managing-associated-documents)). Du kan också spåra körningen av processerna för kampanjer och leveranser (se [det här avsnittet](../../campaign/using/marketing-campaign-monitoring.md)).
 

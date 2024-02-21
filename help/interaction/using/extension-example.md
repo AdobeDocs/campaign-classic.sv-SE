@@ -9,7 +9,7 @@ audience: interaction
 content-type: reference
 topic-tags: advanced-parameters
 exl-id: d4acf99b-cef4-48f7-b4cd-c032ec12592f
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: 668cee663890fafe27f86f2afd3752f7e2ab347a
 workflow-type: tm+mt
 source-wordcount: '165'
 ht-degree: 4%
@@ -34,4 +34,4 @@ Vid inkommande kontakt (kundtjänst eller webbplats) föreslås de mest relevant
 
   ![](assets/s_ncs_configuration_offer_context.png)
 
-* När SOAP-anrop konfigureras infogar du **kontext** XML-element för att referera till kontextinformation som lagts till i interaktionsschemat. Mer information finns i [Integrering via SOAP (serversida)](../../interaction/using/integration-via-soap--server-side-.md).
+* När SOAP-anrop konfigureras infogar du **kontext** XML-element för att referera till kontextinformation som lagts till i interaktionsschemat. Mer information finns i [Integrering via SOAP (serversida)](../../interaction/using/integration-via-soap-server-side.md).

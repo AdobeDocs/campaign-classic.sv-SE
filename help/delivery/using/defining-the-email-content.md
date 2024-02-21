@@ -7,9 +7,9 @@ badge-v8: label="v8" type="Positive" tooltip="Gäller även Campaign v8"
 feature: Email Design
 role: User
 exl-id: 46212929-fd2d-44a2-897e-35f98e88af36
-source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
+source-git-commit: 668cee663890fafe27f86f2afd3752f7e2ab347a
 workflow-type: tm+mt
-source-wordcount: '1955'
+source-wordcount: '1961'
 ht-degree: 1%
 
 ---
@@ -22,7 +22,7 @@ Om du vill ange namn och adress för avsändaren som ska visas i huvudet för sk
 
 ![](assets/s_ncs_user_wizard_email02.png)
 
-I det här fönstret kan du ange all information som krävs för att skapa e-postmeddelanderubriker. Den här informationen kan anpassas. Det gör du genom att använda knapparna till höger om inmatningsfälten för att infoga anpassningsfält.
+I det här fönstret kan du ange all information som krävs för att skapa e-postmeddelanderubriker. Informationen kan personaliseras. Det gör du genom att använda knapparna till höger om inmatningsfälten för att infoga anpassningsfält.
 
 Information om hur du infogar och använder anpassningsfält finns i [Om personalisering](about-personalization.md) -avsnitt.
 
@@ -69,7 +69,7 @@ Meddelanden skickas som standard i HTML eller textformat enligt mottagarens öns
 
 * Om du vill importera ett HTML-innehåll använder du **[!UICONTROL Open]** -knappen. Du kan också klistra in källkoden direkt i **[!UICONTROL Source]** underflik.
 
-  Om du använder [Digital Content Editor](../../web/using/about-campaign-html-editor.md) (DCE), se [Välja en innehållsmall](../../web/using/use-case--creating-an-email-delivery.md#step-3---selecting-a-content).
+  Om du använder [Digital Content Editor](../../web/using/about-campaign-html-editor.md) (DCE), se [Välja en innehållsmall](../../web/using/use-case-creating-an-email-delivery.md#step-3---selecting-a-content).
 
   >[!IMPORTANT]
   >

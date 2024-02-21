@@ -8,14 +8,14 @@ audience: platform
 content-type: reference
 topic-tags: connectors
 exl-id: 0b53b165-a6d8-4604-b3f0-3fa6fce35146
-source-git-commit: 6939307c0b33ff662fe4ef9ae0192ae7b500a95c
+source-git-commit: 668cee663890fafe27f86f2afd3752f7e2ab347a
 workflow-type: tm+mt
 source-wordcount: '354'
-ht-degree: 7%
+ht-degree: 6%
 
 ---
 
-# Konfigurera FDA-kopplingar {#specific-configurations-by-database-type}
+# Konfigurera FDA-anslutningar {#specific-configurations-by-database-type}
 
 
 
@@ -37,7 +37,7 @@ Så här ställer du in åtkomst till en extern databas med FDA:
 1. Skapa schemat för den externa databasen i Adobe Campaign. På så sätt kan du identifiera den externa databasens datastruktur. [Läs mer](../../installation/using/creating-data-schema.md)
 1. Skapa vid behov en ny målmappning från det schema som skapades tidigare. Detta är nödvändigt om mottagarna av leveranserna kommer från den externa databasen. Den här implementeringen har begränsningar som rör meddelandepersonalisering. [Läs mer](../../installation/using/defining-data-mapping.md)
 
-När dataschemat har skapats kan data bearbetas i Adobe Campaign arbetsflöden. Mer information om detta finns i [det här avsnittet](../../workflow/using/accessing-an-external-database--fda-.md).
+När dataschemat har skapats kan data bearbetas i Adobe Campaign arbetsflöden. Mer information om detta finns i [det här avsnittet](../../workflow/using/accessing-an-external-database-fda.md).
 
 ## Databasspecifik konfiguration {#fda-specific-configuration}
 

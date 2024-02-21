@@ -7,7 +7,7 @@ badge-v8: label="v8" type="Positive" tooltip="Gäller även Campaign v8"
 feature: Seed Address
 role: User
 exl-id: ae6eb4b0-b419-4661-9d63-e758f0242a0f
-source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
+source-git-commit: 668cee663890fafe27f86f2afd3752f7e2ab347a
 workflow-type: tm+mt
 source-wordcount: '339'
 ht-degree: 5%
@@ -38,7 +38,7 @@ Det finns tre möjliga insättningslägen:
 
    Klicka på **[!UICONTROL Edit the dynamic condition...]** och ange parametrar för val av dirigeringsadress. Du kan t.ex. inkludera alla dirigerade adresser i en viss mapp eller dirigerade adresser som tillhör en viss avdelning i organisationen.
 
-   Ett exempel visas i det här avsnittet: [Använd skiftläge: välj startadresser på villkor](use-case--selecting-seed-addresses-on-criteria.md).
+   Ett exempel visas i det här avsnittet: [Använd skiftläge: välj startadresser på villkor](use-case-selecting-seed-addresses-on-criteria.md).
 
 >[!NOTE]
 >

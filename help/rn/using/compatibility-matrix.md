@@ -7,7 +7,7 @@ badge-v7-only: label="v7" type="Informative" tooltip="Gäller endast Campaign Cl
 role: User
 level: Beginner
 exl-id: b8c1f287-06f4-4c34-8cca-b0c7676abbc2
-source-git-commit: e430978dd182eaea082122ef748118e5210b05d5
+source-git-commit: 668cee663890fafe27f86f2afd3752f7e2ab347a
 workflow-type: tm+mt
 source-wordcount: '805'
 ht-degree: 96%
@@ -149,7 +149,7 @@ Besök [den här sidan](../../rn/using/deprecated-features.md) för mer informat
 <p>2016</p>
 <p>2014</p>
 <p>2012 – SP1 och SP2</p>
-<p><strong>Viktigt:</strong>Microsoft SQL Server stöds inte som primär databas när Campaign-servern körs i Linux. <a href="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/install-campaign-on-prem/installing-campaign-in-linux-/prerequisites-of-campaign-installation-in-linux.html?lang=sv#database-access-layers">Läs mer</a>.</p>
+<p><strong>Viktigt:</strong>Microsoft SQL Server stöds inte som primär databas när Campaign-servern körs i Linux. <a href="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/install-campaign-on-prem/installing-campaign-in-linux/prerequisites-of-campaign-installation-in-linux.html#database-access-layers">Läs mer</a>.</p>
 </td>
 </tr>
 </tbody>

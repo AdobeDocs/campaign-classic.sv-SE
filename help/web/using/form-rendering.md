@@ -2,13 +2,13 @@
 product: campaign
 title: Formuläråtergivning
 description: Formuläråtergivning
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
+badge-v7: label="v7" type="Informative" tooltip="Gäller Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Gäller även Campaign v8"
 feature: Web Forms
 exl-id: 723a6c47-5323-4914-a014-58be493852cc
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: 668cee663890fafe27f86f2afd3752f7e2ab347a
 workflow-type: tm+mt
-source-wordcount: '987'
+source-wordcount: '999'
 ht-degree: 2%
 
 ---
@@ -29,7 +29,7 @@ Med zoomfunktionen kan du redigera den valda mallen.
 
 ![](assets/s_ncs_admin_survey_render_edit.png)
 
-Du kan ändra eller åsidosätta de här mallarna. Om du vill göra det klickar du på **[!UICONTROL Page layout...]** länka och personalisera informationen.
+Du kan ändra eller åsidosätta dessa mallar. Klicka på **[!UICONTROL Page layout...]** länka och personalisera informationen.
 
 ![](assets/s_ncs_admin_survey_render_edit_param.png)
 
@@ -44,7 +44,7 @@ The **[!UICONTROL Headers/Footers]** Med -fliken kan du ändra den information s
 
 Varje rad i **[!UICONTROL Page headers]** och **[!UICONTROL Page footers]** motsvarar en linje på HTML-sidan. Klicka **[!UICONTROL Add]** för att skapa en ny rad.
 
-Markera en befintlig rad och klicka på **[!UICONTROL Detail]** för att anpassa den.
+Markera en befintlig rad och klicka på **[!UICONTROL Detail]** för att personalisera det.
 
 ![](assets/s_ncs_admin_survey_render_edit_header_detail.png)
 
@@ -61,11 +61,11 @@ The **[!UICONTROL Position]** I -fält kan du definiera placeringen av element i
 
 ## Anpassa formuläråtergivning {#customizing-form-rendering}
 
-### Ändra layout för element {#changing-the-layout-of-elements}
+### Ändra layouten för element {#changing-the-layout-of-elements}
 
 Du kan överlagra formatmallen för varje element i formuläret (inmatningsfält, bilder, alternativknappar etc.).
 
-Om du vill göra det använder du **[!UICONTROL Advanced]** -fliken.
+Använd **[!UICONTROL Advanced]** -fliken.
 
 ![](assets/s_ncs_admin_survey_advanced_tab.png)
 
@@ -78,9 +78,9 @@ Här kan du definiera följande egenskaper:
 * **[!UICONTROL Width]** för zonen: detta kan uttryckas i procent eller i måttenheter, punkter eller pixlar (standardvärde),
 * Maximal **[!UICONTROL Length]**: Högsta antal tillåtna tecken (för typografierna Text, Number och Password),
 * **[!UICONTROL Lines]**: antal rader för en **[!UICONTROL Multi-line text]** typzon,
-* **[!UICONTROL Style inline]**: I kan du överlagra CSS-formatmallen med ytterligare inställningar. Dessa separeras med **;** tecken enligt exemplet nedan:
+* **[!UICONTROL Style inline]**: gör att du kan överlagra CSS-formatmallen med ytterligare inställningar. Dessa separeras med **;** tecken enligt exemplet nedan:
 
-   ![](assets/s_ncs_admin_survey_advanced_tab_inline.png)
+  ![](assets/s_ncs_admin_survey_advanced_tab_inline.png)
 
 ### Definiera sidhuvuden och sidfötter {#defining-headers-and-footers}
 
@@ -92,7 +92,7 @@ Fönstrets namn måste anges i **[!UICONTROL Page]** -fliken i fönstret för fo
 
 ### Lägga till element i sidhuvudet HTML {#adding-elements-to-html-header}
 
-Du kan ange ytterligare element som ska infogas i formulärsidans HTML-huvud. Om du vill göra det anger du elementen i **[!UICONTROL Header]** -fliken på den relevanta sidan.
+Du kan ange ytterligare element som ska infogas i formulärsidans HTML-sidhuvud. Om du vill göra det anger du elementen i **[!UICONTROL Header]** -fliken på den relevanta sidan.
 
 Då kan du t.ex. referera till en ikon som visas i sidans namnlist.
 
@@ -112,7 +112,7 @@ Om användaren godkänner den här sidan utan att ha skrivit in fältet visas f�
 
 ![](assets/s_ncs_admin_survey_required_default_msg.png)
 
-Du kan anpassa det här meddelandet genom att klicka på **[!UICONTROL Personalize this message]** länk.
+Du kan anpassa meddelandet genom att klicka på knappen **[!UICONTROL Personalize this message]** länk.
 
 ![](assets/s_ncs_admin_survey_required_custom_msg.png)
 
@@ -148,15 +148,15 @@ I fältvalsfönstret kan du välja bland följande data:
 
 * Huvudträdet innehåller parametrarna för formulärkontexten. Standardparametrarna är identifieraren (som matchar mottagarens krypterade identifierare), språk och ursprung.
 
-   Se denna [sida](defining-web-forms-properties.md#form-url-parameters) för mer information om detta.
+  Se denna [sida](defining-web-forms-properties.md#form-url-parameters) för mer information om detta.
 
 * The **[!UICONTROL Recipients]** underträdet innehåller inmatningsfälten som infogats i formuläret och lagrats i databasen.
 
-   Mer information finns i [Lagra data i databasen](web-forms-answers.md#storing-data-in-the-database).
+  Mer information finns i [Lagra data i databasen](web-forms-answers.md#storing-data-in-the-database).
 
 * The **[!UICONTROL Variables]** underträdet innehåller de tillgängliga variablerna för det här formuläret. Mer information finns i [Lagra data i en lokal variabel](web-forms-answers.md#storing-data-in-a-local-variable).
 
-Mer information finns i användningsexemplet här: [Visa olika alternativ beroende på de valda värdena](use-cases--web-forms.md#displaying-different-options-depending-on-the-selected-values).
+Mer information finns i användningsexemplet här: [Visa olika alternativ beroende på de valda värdena](use-cases-web-forms.md#displaying-different-options-depending-on-the-selected-values).
 
 Du kan även ange villkor för hur formulärsidor ska visas med **[!UICONTROL Test]** -objekt. Se denna [sida](defining-web-forms-page-sequencing.md#conditional-page-display) för mer information om detta.
 

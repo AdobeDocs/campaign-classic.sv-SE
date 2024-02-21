@@ -6,10 +6,10 @@ role: User
 badge-v7-only: label="v7" type="Informative" tooltip="Gäller endast Campaign Classic v7"
 feature: Campaigns, Resource Management, Cross Channel Orchestration
 exl-id: 1dd3c080-444d-45f8-9562-d2d01a9d2860
-source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
+source-git-commit: 668cee663890fafe27f86f2afd3752f7e2ab347a
 workflow-type: tm+mt
-source-wordcount: '1494'
-ht-degree: 3%
+source-wordcount: '1492'
+ht-degree: 1%
 
 ---
 
@@ -19,7 +19,7 @@ Leveranser kan skapas via kampanjkontrollpanelen, ett kampanjarbetsflöde eller 
 
 När leveranser skapas från en kampanj länkas de till den här kampanjen och konsolideras på kampanjnivå.
 
-![](assets/do-not-localize/how-to-video.png)[Upptäck den här funktionen i en video](#create-email-video)
+![](assets/do-not-localize/how-to-video.png)[Upptäck den här funktionen i video](#create-email-video)
 
 ## Skapa leveranser {#creating-deliveries}
 
@@ -112,7 +112,7 @@ Filextraheringen startar två åtgärder: budgetberäkning och lagerberäkning. 
 
 >[!NOTE]
 >
->Mer information om kostnadsberäkningar och lagerhantering finns i [Leverantörer, stockar och budgetar](../../campaign/using/providers--stocks-and-budgets.md).
+>Mer information om kostnadsberäkningar och lagerhantering finns i [Leverantörer, stockar och budgetar](../../campaign/using/providers-stocks-and-budgets.md).
 
 ## Hantera associerade dokument {#managing-associated-documents}
 
@@ -227,7 +227,7 @@ I följande exempel läggs etiketten, den uppskattade kostnaden och beskrivninge
 
 ![](assets/s_ncs_user_op_composition_in_export_template.png)
 
-Exportmodellen måste vara kopplad till den tjänsteleverantör som valts för den aktuella leveransen. Se [Skapa tjänsteleverantörer och deras kostnadsstrukturer](../../campaign/using/providers--stocks-and-budgets.md#creating-service-providers-and-their-cost-structures).
+Exportmodellen måste vara kopplad till den tjänsteleverantör som valts för den aktuella leveransen. Se [Skapa tjänsteleverantörer och deras kostnadsstrukturer](../../campaign/using/providers-stocks-and-budgets.md#creating-service-providers-and-their-cost-structures).
 
 >[!NOTE]
 >

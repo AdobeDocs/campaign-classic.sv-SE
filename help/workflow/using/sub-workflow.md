@@ -2,13 +2,13 @@
 product: campaign
 title: Delarbetsflöde
 description: Läs mer om aktiviteten Delarbetsflöde
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+badge-v7-only: label="v7" type="Informative" tooltip="Gäller endast Campaign Classic v7"
 feature: Workflows
 exl-id: bc64ca11-2c50-4896-b6c6-ae42c0315924
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 668cee663890fafe27f86f2afd3752f7e2ab347a
 workflow-type: tm+mt
-source-wordcount: '417'
-ht-degree: 0%
+source-wordcount: '426'
+ht-degree: 2%
 
 ---
 
@@ -20,7 +20,7 @@ The **[!UICONTROL Sub-workflow]** kan du aktivera körningen av ett annat arbets
 
 Du kan anropa flera delarbetsflöden i ett enda arbetsflöde. Delarbetsflöden körs synkront.
 
-I exemplet nedan anropar ett primärt arbetsflöde ett delarbetsflöde med jumps. Mer information om grafiska objekt av typen fortsättningstecken finns i [det här avsnittet](jump--start-point-and-end-point-.md).
+I exemplet nedan anropar ett primärt arbetsflöde ett delarbetsflöde med jumps. Mer information om grafiska objekt av typen fortsättningstecken finns i [det här avsnittet](jump-start-point-and-end-point.md).
 
 1. Skapa ett arbetsflöde som du vill använda som ett underarbetsflöde i ett annat arbetsflöde.
 1. Infoga en **[!UICONTROL Jump (end point)]** aktivitet med prioritet 1 i början av arbetsflödet. Om du har flera&quot;slutpunkttypshopp&quot; använder Adobe Campaign&quot;slutpunktshoppet&quot; med det lägsta talet.
@@ -37,7 +37,7 @@ I exemplet nedan anropar ett primärt arbetsflöde ett delarbetsflöde med jumps
 1. Slutför och spara det här delarbetsflödet.
 1. Skapa ett primärt arbetsflöde.
 1. Infoga en **[!UICONTROL Sub-workflow]** och öppna den.
-1. Välj det arbetsflöde som du vill använda i dialogrutan **[!UICONTROL Workflow template]** nedrullningsbar lista.
+1. Välj det arbetsflöde som du vill använda i dialogrutan **[!UICONTROL Workflow template]** listruta.
 
    ![](assets/subworkflow_selection.png)
 
@@ -54,7 +54,7 @@ När arbetsflödet som anropades som ett underarbetsflöde körs förblir det **
 * Antalet mellanliggande populationer kan inte visas.
 * Delarbetsflödets loggar visas i det primära arbetsflödet.
 
-   ![](assets/subworkflow_logs.png)
+  ![](assets/subworkflow_logs.png)
 
 >[!NOTE]
 >

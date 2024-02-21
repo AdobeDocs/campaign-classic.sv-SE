@@ -6,9 +6,9 @@ role: User, Data Engineer
 badge-v7-only: label="v7" type="Informative" tooltip="Gäller endast Campaign Classic v7"
 feature: Fatigue Management, Typology Rules, Campaigns
 exl-id: c23212f2-fdf8-4820-b389-546f7c84db27
-source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
+source-git-commit: 668cee663890fafe27f86f2afd3752f7e2ab347a
 workflow-type: tm+mt
-source-wordcount: '3274'
+source-wordcount: '3343'
 ht-degree: 4%
 
 ---
@@ -113,7 +113,7 @@ Du kan indexera antalet auktoriserade meddelanden beroende på vilket segment mo
 
 ![](assets/campaign_opt_pressure_sample.png)
 
-Om du vill definiera tröskelvärdet kan du använda en dimension som är länkad till måldimensionen: t.ex. för att inkludera meddelanden som levereras till mottagarprofilerna som lagras i besökstabellen (mer information i besökstabellen finns i [det här avsnittet](../../surveys/using/use-case--creating-a-refer-a-friend-form.md)) eller för att undvika att skicka mer än ett meddelande per vecka till samma hushåll (som kan hänvisa till flera e-postadresser) som identifieras i en dimension som är länkad till mottagarnas.
+Om du vill definiera tröskelvärdet kan du använda en dimension som är länkad till måldimensionen: t.ex. för att inkludera meddelanden som levereras till mottagarprofilerna som lagras i besökstabellen (mer information i besökstabellen finns i [det här avsnittet](../../surveys/using/use-case-creating-a-refer-a-friend-form.md)) eller för att undvika att skicka mer än ett meddelande per vecka till samma hushåll (som kan hänvisa till flera e-postadresser) som identifieras i en dimension som är länkad till mottagarnas.
 
 Om du vill göra det väljer du **[!UICONTROL Count messages on a linked dimension]** väljer du sedan besökaren eller kontakttabellen.
 
@@ -383,9 +383,9 @@ Med tanke på att ett e-postmeddelande redan har skickats till de berörda motta
    <td> Leverans 1<br /> </td> 
    <td> Handikappade<br /> </td> 
    <td> 5<br /> </td> 
-   <td> 3pm<br /> </td> 
+   <td> 13:00<br /> </td> 
    <td> 08:00 (nästa dag)<br /> </td> 
-   <td> 2pm<br /> </td> 
+   <td> 2:00<br /> </td> 
    <td> Nightly<br /> </td> 
    <td> Exkluderad<br /> </td> 
    <td> Exkluderad<br /> </td> 
@@ -394,9 +394,9 @@ Med tanke på att ett e-postmeddelande redan har skickats till de berörda motta
    <td> Leverans 2<br /> </td> 
    <td> Handikappade<br /> </td> 
    <td> 10<br /> </td> 
-   <td> 4pm<br /> </td> 
+   <td> 16:00<br /> </td> 
    <td> 09:00 (nästa dag)<br /> </td> 
-   <td> 2pm<br /> </td> 
+   <td> 2:00<br /> </td> 
    <td> Nightly<br /> </td> 
    <td> Skickat<br /> </td> 
    <td> 09:00 (nästa dag)<br /> </td> 

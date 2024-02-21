@@ -8,10 +8,10 @@ audience: platform
 content-type: reference
 topic-tags: connectors
 exl-id: f3980859-2837-416b-a0ef-2b369d2d50bd
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: 668cee663890fafe27f86f2afd3752f7e2ab347a
 workflow-type: tm+mt
 source-wordcount: '416'
-ht-degree: 5%
+ht-degree: 6%
 
 ---
 
@@ -35,7 +35,7 @@ I flera Adobe Campaign-arbetsflödesaktiviteter kan du använda data som lagras 
 
 * **Skapa underuppsättningar** - [Dela](../../workflow/using/split.md) kan du skapa delmängder. Du kan använda externa data för att definiera de filtervillkor som ska användas. Mer information finns på [den här sidan](../../workflow/using/split.md).
 
-* **Läs in extern databas** - Du kan använda externa data i [Datainläsning](../../workflow/using/data-loading--rdbms-.md) (RDBMS) aktivitet. Läs mer i [den här sidan](../../workflow/using/data-loading--rdbms-.md).
+* **Läs in extern databas** - Du kan använda externa data i [Datainläsning](../../workflow/using/data-loading-rdbms.md) (RDBMS) aktivitet. Läs mer i [den här sidan](../../workflow/using/data-loading-rdbms.md).
 
 * **Lägga till information och länkar** - [Berikning](../../workflow/using/enrichment.md) Med -aktivitet kan du lägga till ytterligare data i arbetsflödet och länka till en extern tabell. I det här sammanhanget kan den använda data från en extern databas. Läs mer i [den här sidan](../../workflow/using/enrichment.md).
 

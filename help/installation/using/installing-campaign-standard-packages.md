@@ -6,10 +6,10 @@ feature: Installation, Application Settings
 badge-v7-only: label="v7" type="Informative" tooltip="Gäller endast Campaign Classic v7"
 badge-v7-prem: label="lokal och hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=sv" tooltip="Gäller endast lokala och hybrida driftsättningar"
 exl-id: 2bc077c4-ed65-4157-bfc9-df5d0442f476
-source-git-commit: abaeef25b03a9699a4851786380d467bfa299c9f
+source-git-commit: 668cee663890fafe27f86f2afd3752f7e2ab347a
 workflow-type: tm+mt
-source-wordcount: '1282'
-ht-degree: 6%
+source-wordcount: '1271'
+ht-degree: 1%
 
 ---
 
@@ -132,7 +132,7 @@ I följande tabell visas alla inbyggda Campaign-paket.
    <td> Alla<br /> </td> 
   </tr> 
   <tr> 
-   <td> Mobilappskanalen<br /> </td> 
+   <td> Mobilappskanal<br /> </td> 
    <td> Använder Adobe Campaign-plattformen för att skicka personaliserade meddelanden till iOS- och Android-terminaler via appar. Valfritt. <a href="../../delivery/using/about-mobile-app-channel.md">Läs mer</a> <br /> </td> 
    <td> Alla<br /> </td> 
   </tr> 
@@ -152,13 +152,13 @@ I följande tabell visas alla inbyggda Campaign-paket.
    <td> Marknadsföring<br /> </td> 
   </tr> 
   <tr> 
-   <td> Responshanteraren<br /> </td> 
+   <td> Svarshanteraren<br /> </td> 
    <td> Mäter framgången och lönsamheten för marknadsföringskampanjer eller erbjuder förslag för alla kommunikationskanaler.  Valfritt. <a href="../../response/using/about-response-manager.md">Läs mer</a> <br /> </td> 
    <td> Marknadsföring<br /> </td> 
   </tr> 
   <tr> 
    <td> Åtkomst till externa data (federerad dataåtkomst)<br /> </td> 
-   <td> Tillhandahåller alternativet FDA (Federated Data Access) för att bearbeta information som lagras i en eller flera externa databaser så att du kan komma åt externa data utan att ändra datastrukturen i Adobe Campaign.  Valfritt. <a href="../../workflow/using/accessing-an-external-database--fda-.md">Läs mer</a> <br /> </td> 
+   <td> Tillhandahåller alternativet FDA (Federated Data Access) för att bearbeta information som lagras i en eller flera externa databaser så att du kan komma åt externa data utan att ändra datastrukturen i Adobe Campaign.  Valfritt. <a href="../../workflow/using/accessing-an-external-database-fda.md">Läs mer</a> <br /> </td> 
    <td> Alla<br /> </td> 
   </tr> 
   <tr> 
@@ -212,7 +212,7 @@ I följande tabell visas alla inbyggda Campaign-paket.
    <td> Marknadsföring</td> 
   </tr> 
   <tr> 
-   <td> Sekretessdataskyddsförordningen<br /> </td> 
+   <td> Skyddsförordningen för personuppgifter<br /> </td> 
    <td> Innehåller ytterligare funktionalitet som hjälper dig att följa sekretesskraven i Campaign Classic. <a href="https://helpx.adobe.com/se/campaign/kb/acc-privacy.html">Läs mer</a> <br /> </td> 
    <td> Alla</td> 
   </tr> 
@@ -222,7 +222,7 @@ I följande tabell visas alla inbyggda Campaign-paket.
    <td> Marknadsföring </td> 
   </tr> 
   <tr> 
-   <td> Plattform för mid-sourcing<br /> </td> 
+   <td> Plattform för mellanleverantörer<br /> </td> 
    <td> Denna konfiguration är en optimal mellanlösning mellan en värdkonfiguration (ASP) och internalisering. Utomvända körningskomponenter utförs på en"server med mellanleverantörer" på Adobe Campaign. Valfritt. <a href="../../installation/using/mid-sourcing-server.md">Läs mer</a> <br /> </td> 
    <td> Mid-sourcing </td> 
   </tr> 
