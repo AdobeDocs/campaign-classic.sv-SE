@@ -6,10 +6,10 @@ title: Användarhandbok för Campaign Classic v7
 user-guide-description: Produktdokumentation för Adobe Campaign Classic v7.
 sub-product: adobe campaign classic
 type: Documentation
-source-git-commit: 668cee663890fafe27f86f2afd3752f7e2ab347a
-workflow-type: ht
+source-git-commit: f3dc9d56c693f334923d627a28a9e45b92b1c0c3
+workflow-type: tm+mt
 source-wordcount: '2536'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -22,9 +22,9 @@ ht-degree: 100%
    + [Kom igång med uppgraderingar](rn/using/rn-overview.md)
    + [Senaste versionen](rn/using/latest-release.md)
    + Tidigare versioner {#previous-releases}
-      + [[!DNL Gold Standard]](rn/using/gold-standard.md)
-      + [2021](rn/using/release-2021.md)
       + [2022](rn/using/release-2022.md)
+      + [2021](rn/using/release-2021.md)
+      + [[!DNL Gold Standard]](rn/using/gold-standard.md)
    + [Inaktuella funktioner](rn/using/deprecated-features.md)
    + [Kompatibilitetsmatris](rn/using/compatibility-matrix.md)
 + Komma igång {#getting-started}

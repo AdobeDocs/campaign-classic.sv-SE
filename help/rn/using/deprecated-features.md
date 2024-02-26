@@ -7,9 +7,9 @@ badge-v7-only: label="v7" type="Informative" tooltip="Gäller endast Campaign Cl
 role: User
 level: Beginner
 exl-id: d60d67de-6618-4f3b-be4a-ad7633ab5645
-source-git-commit: abaeef25b03a9699a4851786380d467bfa299c9f
-workflow-type: ht
-source-wordcount: '1519'
+source-git-commit: f3dc9d56c693f334923d627a28a9e45b92b1c0c3
+workflow-type: tm+mt
+source-wordcount: '1558'
 ht-degree: 100%
 
 ---
@@ -48,13 +48,13 @@ Kunder uppmanas att se över om de använder funktionen i den aktuella driftsät
  <td>Social marknadsföring med Facebook</td>
  <td>Social marknadsföring med Facebook är nu inaktuell. Du kan använda X (tidigare Twitter) för att publicera inlägg på sociala medier, eller samarbeta med Adobe för att skapa en anpassad kanal.
  <p></p>
-  <p>Måldatum för borttagning: i slutet av 2023</p>
+  <!--p>Target removal date: End of 2023</p-->
   </td>
 </tr>
 <tr>
  <td>ACS-anslutning</td>
  <td>ACS-anslutning (Prime-erbjudande) är nu inaktuell. Du kan använda funktionerna export/import för Campaign för att extrahera och mata in data i båda produkterna.<p></p>
-  <p>Måldatum för borttagning: i slutet av 2023</p>
+  <!--p>Target removal date: End of 2023</p-->
   </td>
 </tr>
  </tbody> 
