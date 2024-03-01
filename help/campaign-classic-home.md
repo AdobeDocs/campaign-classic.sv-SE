@@ -3,10 +3,10 @@ keywords: Campaign Classic;hem;populära ämnen
 product: campaign
 title: Produktdokumentation för Adobe Campaign Classic v7
 exl-id: 6b3f1689-80de-49fd-b7ee-7a2a1931d157
-source-git-commit: 23f2565cc847805cff6df028935f74404cdcff24
+source-git-commit: b74ae2335fa5ba7a2cc4c3a0fdb375d7698dcd81
 workflow-type: tm+mt
-source-wordcount: '354'
-ht-degree: 9%
+source-wordcount: '346'
+ht-degree: 10%
 
 ---
 
@@ -106,7 +106,7 @@ Vissa viktiga ändringar av tjänsten Android Firebase Cloud Messaging (FCM) kom
     <td>
       <img src="assets/do-not-localize/icon-dev.svg" width="35px">
       <br/>
-      <strong>Resurser för utvecklare</strong><br/><a href="configuration/using/about-data-model.md">Beskrivning av datamodell</a> - <a href="configuration/using/about-schema-reference.md">Schemastruktur</a> - <a href="configuration/using/editing-forms.md">Schemastruktur</a> - <a href="configuration/using/about-web-services.md">API:er</a> - <a href="https://experienceleague.adobe.com/developer/campaign-api/api/index.html&gt;JSAPI-referensdokumentation&lt;/a&gt; - &lt;a href=&quot;&quot;&gt;" configuration/using/about-custom-recipient-table.md">Anpassad mottagartabell</a>
+      <strong>Resurser för utvecklare</strong><br/><a href="configuration/using/about-data-model.md">Beskrivning av datamodell</a> - <a href="configuration/using/about-schema-reference.md">Schemastruktur</a> - <a href="configuration/using/editing-forms.md">Schemastruktur</a> - <a href="configuration/using/about-web-services.md">API:er</a> - <a href="https://experienceleague.adobe.com/developer/campaign-api/api/index.html?lang=sv">Referensdokumentation för JSAPI</a> - <a href="configuration/using/about-custom-recipient-table.md">Anpassad mottagartabell</a>
     </td>
   </tr>
 </table>
