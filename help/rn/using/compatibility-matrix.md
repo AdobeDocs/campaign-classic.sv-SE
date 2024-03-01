@@ -7,7 +7,7 @@ badge-v7-only: label="v7" type="Informative" tooltip="Gäller endast Campaign Cl
 role: User
 level: Beginner
 exl-id: b8c1f287-06f4-4c34-8cca-b0c7676abbc2
-source-git-commit: 915b550c28c8d7dd9c29ce5142a4a835a39019b4
+source-git-commit: 3e771d9a18c083bee8239b95d1d68d63928217c2
 workflow-type: tm+mt
 source-wordcount: '764'
 ht-degree: 92%
@@ -68,7 +68,7 @@ Besök [den här sidan](../../rn/using/deprecated-features.md) för mer informat
 </tbody>
 </table>
 
->[!NOTE]
+>[!IMPORTANT]
 >
 >Om du använder RHEL måste du kunna inaktivera SELinux eller låta dina arkitekter skriva anpassade SELinux-regler för att kontrollera att en aktiverad SELinux inte orsakar problem med Campaign-åtgärder.
 
