@@ -7,9 +7,9 @@ badge-v7-only: label="v7" type="Informative" tooltip="Gäller endast Campaign Cl
 role: User
 level: Beginner
 exl-id: d65869ca-a785-4327-8e8d-791c28e4696c
-source-git-commit: da35a3050d838cd8e57bf802dc066e32f22f8273
-workflow-type: ht
-source-wordcount: '2295'
+source-git-commit: 23f2565cc847805cff6df028935f74404cdcff24
+workflow-type: tm+mt
+source-wordcount: '2278'
 ht-degree: 100%
 
 ---
@@ -188,7 +188,7 @@ Läs mer på sidan [Funktioner som är inaktuella eller har tagits bort](depreca
 
 ### Andra ändringar  {#release-7-3-2-other}
 
-* Webbloggarna har förbättrats: `logonEscalation` varningar visas nu endast för användare med administratörsbehörighet. (NEO-47167)
+<!--* Web logs have been improved: `logonEscalation` warnings are now only displayed for users with admin privileges. (NEO-47167)-->
 * För att undvika fel stoppas nu arbetsflödet **Samla in data för tjänsten Heatmap** (collectDataHeatMapService) som standard. (NEO-33959)
 * Flera förbättringar har implementerats för att optimera processoranvändningen för kontrollpanelen för kampanjer. (NEO-46417)
 * För att förhindra krascher har JS-metoden loadLibraryDebug tagits bort. (NEO-46968)

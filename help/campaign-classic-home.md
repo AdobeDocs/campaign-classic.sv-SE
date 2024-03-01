@@ -3,10 +3,10 @@ keywords: Campaign Classic;hem;populära ämnen
 product: campaign
 title: Produktdokumentation för Adobe Campaign Classic v7
 exl-id: 6b3f1689-80de-49fd-b7ee-7a2a1931d157
-source-git-commit: 6dd2a2343c0204c01dd0fa4910299efa15c29849
+source-git-commit: 23f2565cc847805cff6df028935f74404cdcff24
 workflow-type: tm+mt
-source-wordcount: '342'
-ht-degree: 2%
+source-wordcount: '354'
+ht-degree: 9%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 2%
 
 ## Nyheter
 
-Få en glimt av de senaste förbättringarna i Adobe Campaign Classic v7 - produkt och dokumentation! En omfattande lista över funktioner, förbättringar och korrigeringar finns i [Versionsinformation](rn/using/latest-release.md).  Håll dig uppdaterad om de senaste ändringarna i vår dokumentation genom att besöka [dokumentuppdateringssida](rn/using/documentation-updates.md).
+Få en glimt av de senaste förbättringarna i Adobe Campaign Classic v7 - produkt och dokumentation! En omfattande lista över funktioner, förbättringar och korrigeringar finns i [Versionsinformation](rn/using/latest-release.md).  Håll dig uppdaterad om de senaste ändringarna i vår dokumentation genom att besöka [dokumentuppdateringssidan](rn/using/documentation-updates.md).
 
 >[!BEGINTABS]
 
@@ -25,13 +25,13 @@ Få en glimt av de senaste förbättringarna i Adobe Campaign Classic v7 - produ
 
 Upptäck uppdateringar, förbättringar och korrigeringar som ingår i Campaign Classic v7.3.5.
 
-[![image](assets/do-not-localize/learn-more-button.svg)](rn/using/latest-release.md)
+[![Bild](assets/do-not-localize/learn-more-button.svg)](rn/using/latest-release.md)
 
 >[!TAB Flytta till Adobe IMS]
 
 För att förbättra säkerhets- och autentiseringsprocessen rekommenderar Adobe Campaign att man migrerar slutanvändarens autentiseringsläge från den inbyggda autentiseringen av inloggnings-/lösenord till Adobe Identity Management System (IMS).
 
-[![image](assets/do-not-localize/learn-more-button.svg)](technotes/using/migrate-users-to-ims.md)
+[![Bild](assets/do-not-localize/learn-more-button.svg)](technotes/using/migrate-users-to-ims.md)
 
 
 >[!TAB Push-kanalsändringar]
@@ -106,7 +106,7 @@ Vissa viktiga ändringar av tjänsten Android Firebase Cloud Messaging (FCM) kom
     <td>
       <img src="assets/do-not-localize/icon-dev.svg" width="35px">
       <br/>
-      <strong>Resurser för utvecklare</strong><br/><a href="configuration/using/about-data-model.md">Beskrivning av datamodell</a> - <a href="configuration/using/about-schema-reference.md">Schemastruktur</a> - <a href="configuration/using/editing-forms.md">Schemastruktur</a> - <a href="configuration/using/about-web-services.md">API:er</a> - <a href="configuration/using/about-custom-recipient-table.md">Anpassad mottagartabell</a>
+      <strong>Resurser för utvecklare</strong><br/><a href="configuration/using/about-data-model.md">Beskrivning av datamodell</a> - <a href="configuration/using/about-schema-reference.md">Schemastruktur</a> - <a href="configuration/using/editing-forms.md">Schemastruktur</a> - <a href="configuration/using/about-web-services.md">API:er</a> - <a href="https://experienceleague.adobe.com/developer/campaign-api/api/index.html&gt;JSAPI-referensdokumentation&lt;/a&gt; - &lt;a href=&quot;&quot;&gt;" configuration/using/about-custom-recipient-table.md">Anpassad mottagartabell</a>
     </td>
   </tr>
 </table>
