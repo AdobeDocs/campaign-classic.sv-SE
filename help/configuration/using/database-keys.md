@@ -5,7 +5,7 @@ description: Förstå nyckelhantering i datamodeller
 feature: Configuration, Instance Settings
 role: Data Engineer, Developer
 badge-v7-only: label="v7" type="Informative" tooltip="Gäller endast Campaign Classic v7"
-source-git-commit: 46220dcfdddb8f6f1e7026cafc503aaeecb7e0fa
+source-git-commit: 4a29c189e1e438bbb90067ece63ced0196c618ec
 workflow-type: tm+mt
 source-wordcount: '625'
 ht-degree: 2%
@@ -28,7 +28,6 @@ En nyckel deklareras från huvudelementet i dataschemat.
 ```
 
 En nyckel kallas för &#39;primärnyckel&#39; när den är den första i schemat som ska fyllas i, eller om den innehåller `internal` -attributet har värdet &quot;true&quot;.
-
 
 Följande regler gäller för nycklar:
 
