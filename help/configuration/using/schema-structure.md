@@ -1,6 +1,6 @@
 ---
 product: campaign
-title: Schemastruktur
+title: Förstå schemastrukturen i Adobe Campaign
 description: Schemastruktur
 feature: Custom Resources
 role: Data Engineer, Developer
@@ -9,18 +9,22 @@ audience: configuration
 content-type: reference
 topic-tags: schema-reference
 exl-id: 3405efb8-a37c-4622-a271-63d7a4148751
-source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
+source-git-commit: bd1007ffcfa58ee60fdafa424c7827e267845679
 workflow-type: tm+mt
-source-wordcount: '1527'
-ht-degree: 2%
+source-wordcount: '1496'
+ht-degree: 1%
 
 ---
 
-# Schemastruktur{#schema-structure}
+# Förstå schemastrukturen {#schema-structure}
 
-Grundstrukturen för en `<srcschema>` är som följer:
+Grundstrukturen för ett schema beskrivs nedan.
 
-```
+## Datascheman  {#data-schema}
+
+För `<srcschema>`är strukturen följande:
+
+```sql
 <srcSchema>
     <enumeration>
         ...          //definition of enumerations
@@ -63,7 +67,7 @@ Grundstrukturen för en `<srcschema>` är som följer:
 
 XML-dokumentet i ett dataschema måste innehålla **`<srcschema>`** rotelementet med **name** och **namespace** attribut för att fylla i schemanamnet och dess namnutrymme.
 
-```
+```sql
 <srcSchema name="schema_name" namespace="namespace">
 ...
 </srcSchema>
@@ -71,7 +75,7 @@ XML-dokumentet i ett dataschema måste innehålla **`<srcschema>`** rotelementet
 
 Låt oss använda följande XML-innehåll för att illustrera strukturen i ett dataschema:
 
-```
+```sql
 <recipient email="John.doe@aol.com" created="2009/03/12" gender="1"> 
   <location city="London"/>
 </recipient>
@@ -79,7 +83,7 @@ Låt oss använda följande XML-innehåll för att illustrera strukturen i ett d
 
 Med motsvarande dataschema:
 
-```
+```sql
 <srcSchema name="recipient" namespace="cus">
   <element name="recipient">
     <attribute name="email"/>
@@ -102,11 +106,11 @@ I det här exemplet representeras huvudelementet av följande rad:
 <element name="recipient">
 ```
 
-Elementen **`<attribute>`** och **`<element>`** som följer huvudelementet gör att du kan definiera plats och namn för dataobjekten i XML-strukturen.
+The **`<attribute>`** och **`<element>`** -element som följer efter huvudelementet används för att definiera placeringen och namnen på dataobjekten i XML-strukturen.
 
 I vårt exempelschema är följande:
 
-```
+```sql
 <attribute name="email"/>
 <attribute name="created"/>
 <attribute name="gender"/>
@@ -115,13 +119,13 @@ I vårt exempelschema är följande:
 </element>
 ```
 
-Följande regler måste följas:
+Följande regler gäller:
 
 * Varje **`<element>`** och **`<attribute>`** måste identifieras med namn via **name** -attribut.
 
   >[!IMPORTANT]
   >
-  >Elementets namn ska vara kortfattat, helst på engelska, och endast innehålla tillåtna tecken i enlighet med XML-reglerna för namngivning.
+  >Elementets namn ska vara kortfattat, helst på engelska, och endast innehålla tecken som tillåts i XML-namnregler.
 
 * Endast **`<element>`** -element kan innehålla **`<attribute>`** element och **`<element>`** -element i XML-strukturen.
 * An **`<attribute>`** -elementet måste ha ett unikt namn inom ett **`<element>`**.
@@ -131,7 +135,7 @@ Följande regler måste följas:
 
 Datatypen anges via **type** i **`<attribute>`** och **`<element>`** -element.
 
-En detaljerad lista finns i beskrivningen av [`<attribute>` element](../../configuration/using/schema/attribute.md) och [`<element>` element](../../configuration/using/schema/element.md)).
+En detaljerad lista finns i beskrivningen av [`<attribute>` element](../../configuration/using/schema/attribute.md) och [`<element>` element](../../configuration/using/schema/element.md).
 
 När attributet inte är ifyllt, **string** är standarddatatypen såvida inte elementet innehåller underordnade element. Om den gör det används den bara för att strukturera elementen hierarkiskt (**`<location>`** -element i vårt exempel).
 
@@ -152,11 +156,11 @@ Följande datatyper stöds i scheman:
 
   >[!NOTE]
   >
-  >Innehåller **uuid** i andra motorer än Microsoft SQL Server måste funktionen &quot;newuid()&quot; läggas till och fyllas i med standardvärdet.
+  >Innehåller **uuid** fält i andra RDBMS än Microsoft SQL Server, `the newuuid()` -funktionen måste läggas till och slutföras med standardvärdet.
 
 Här är vårt exempelschema med de angivna typerna:
 
-```
+```sql
 <srcSchema name="recipient" namespace="cus">
   <element name="recipient">
     <attribute name="email" type="string" length="80"/>
@@ -179,91 +183,76 @@ Tabellen nedan visar mappningarna för de typer av data som genereras av Adobe C
    <td> <strong>Adobe Campaign</strong><br /> </td> 
    <td> <strong>PosgreSQL</strong><br /> </td> 
    <td> <strong>Oracle</strong><br /> </td> 
-   <td> <strong>MS SQL</strong><br /> </td> 
   </tr> 
   <tr> 
    <td> Sträng<br /> </td> 
    <td> VARCHAR(255)<br /> </td> 
    <td> VARCHAR2 (NVARCHAR2 om unicode används)<br /> </td> 
-   <td> VARCHAR (NVARCHAR if unicode)<br /> </td> 
   </tr> 
   <tr> 
    <td> Boolean<br /> </td> 
    <td> SMALLINT<br /> </td> 
    <td> NUMBER(3)<br /> </td> 
-   <td> TINYINT<br /> </td> 
   </tr> 
   <tr> 
    <td> Byte<br /> </td> 
    <td> SMALLINT<br /> </td> 
    <td> NUMBER(3)<br /> </td> 
-   <td> TINYINT<br /> </td> 
   </tr> 
   <tr> 
    <td> Kort<br /> </td> 
    <td> SMALLINT<br /> </td> 
    <td> NUMBER(5)<br /> </td> 
-   <td> SMALLINT<br /> </td> 
   </tr> 
   <tr> 
    <td> Dubbel<br /> </td> 
    <td> DUBBEL PRECISION<br /> </td> 
-   <td> FLOAT<br /> </td> 
    <td> FLOAT<br /> </td> 
   </tr> 
   <tr> 
    <td> Lång<br /> </td> 
    <td> INTEGER<br /> </td> 
    <td> NUMBER(10)<br /> </td> 
-   <td> INT<br /> </td> 
   </tr> 
   <tr> 
    <td> Int64<br /> </td> 
    <td> BIGINT<br /> </td> 
    <td> NUMBER(20)<br /> </td> 
-   <td> BIGINT<br /> </td> 
   </tr> 
   <tr> 
    <td> Datum<br /> </td> 
    <td> DATUM<br /> </td> 
    <td> DATUM<br /> </td> 
-   <td> DATETIME<br /> </td> 
   </tr> 
   <tr> 
    <td> Tid<br /> </td> 
    <td> TID<br /> </td> 
-   <td> FLOAT<br /> </td> 
    <td> FLOAT<br /> </td> 
   </tr> 
   <tr> 
    <td> Datetime<br /> </td> 
    <td> TIMESTAMPZ<br /> </td> 
    <td> DATUM<br /> </td> 
-   <td> MS SQL &lt; 2008: DATETIME<br /> MS SQL &gt;= 2012: DATETIMEOFFSET<br /> </td> 
   </tr> 
   <tr> 
    <td> Datetimenotz<br /> </td> 
    <td> TIMESTAMPZ<br /> </td> 
    <td> DATUM<br /> </td> 
-   <td> MS SQL &lt; 2008: DATETIME<br /> MS SQL &gt;= 2012: DATETIME2<br /> </td> 
   </tr> 
   <tr> 
    <td> Tidsintervall<br /> </td> 
    <td> DUBBEL PRECISION<br /> </td> 
-   <td> FLOAT<br /> </td> 
    <td> FLOAT<br /> </td> 
   </tr> 
   <tr> 
    <td> PM<br /> </td> 
    <td> TEXT<br /> </td> 
    <td> CLOB (NCLOB if Unicode)<br /> </td> 
-   <td> TEXT (NTEXT om Unicode)<br /> </td> 
   </tr> 
   <tr> 
    <td> Blob<br /> </td> 
    <td> BLOB<br /> </td> 
    <td> BLOB<br /> </td> 
-   <td> BILD<br /> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -282,7 +271,7 @@ The **`<elements>`** och **`<attributes>`** element i dataschemat kan berikas me
 
   **Exempel**:
 
-  ```
+  ```sql
   <attribute name="email" type="string" length="80" label="Email"/>
   ```
 
@@ -292,7 +281,7 @@ The **`<elements>`** och **`<attributes>`** element i dataschemat kan berikas me
 
 * The **desc** kan du ange en lång beskrivning.
 
-  Beskrivningen visas från indataformuläret i statusfältet i huvudfönstret i Adobe Campaign klientkonsol.
+  Beskrivningen visas i indataformuläret i statusfältet i huvudfönstret i Adobe Campaign klientkonsol.
 
   >[!NOTE]
   >
@@ -300,13 +289,13 @@ The **`<elements>`** och **`<attributes>`** element i dataschemat kan berikas me
 
   **Exempel**:
 
-  ```
+  ```sql
   <attribute name="email" type="string" length="80" label="Email" desc="Email of recipient"/>
   ```
 
 ### Standardvärden {#default-values}
 
-The **standard** kan du definiera ett uttryck som returnerar ett standardvärde när innehåll skapas.
+Använd **standard** för att definiera ett uttryck som returnerar ett standardvärde när innehåll skapas.
 
 Värdet måste vara ett uttryck som är kompatibelt med XPath-språket. Mer information finns i [Referera med XPath](../../configuration/using/schema-structure.md#referencing-with-xpath).
 
@@ -319,9 +308,9 @@ Värdet måste vara ett uttryck som är kompatibelt med XPath-språket. Mer info
 
   >[!NOTE]
   >
-  >I Adobe Campaign klientkonsol **[!UICONTROL Administration>Counters]** noden används för att hantera räknare.
+  >Gå till Adobe Campaign klientkonsol **[!UICONTROL Administration > Counters]** mapp i Utforskaren för att hantera räknare.
 
-Om du vill länka ett standardvärde till ett fält använder du `<default>  or  <sqldefault>   field.  </sqldefault> </default>`
+Om du vill länka ett standardvärde till ett fält använder du `<default>`  eller  `<sqldefault>`   fält.
 
 `<default>` : låter dig fylla i fältet i förväg med ett standardvärde när entiteter skapas. Värdet kommer inte att vara ett standard-SQL-värde.
 
@@ -329,13 +318,13 @@ Om du vill länka ett standardvärde till ett fält använder du `<default>  or 
 
 ### Uppräkningar {#enumerations}
 
-#### Kostnadsfri uppräkning {#free-enumeration}
+#### Öppna uppräkning {#free-enumeration}
 
-The **userEnum** kan du definiera en kostnadsfri uppräkning för att memorera och visa de värden som anges i det här fältet. Syntaxen är följande:
+The **userEnum** kan du definiera en öppen uppräkning för att lagra och visa de värden som anges i det här fältet.
 
-**userEnum=&quot;uppräkningens namn&quot;**
+Syntaxen är följande:
 
-Det namn som anges för uppräkningen kan väljas fritt och delas med andra fält.
+`userEnum="name of enumeration"`
 
 Dessa värden visas i en nedrullningsbar lista från indataformuläret:
 
@@ -343,7 +332,7 @@ Dessa värden visas i en nedrullningsbar lista från indataformuläret:
 
 >[!NOTE]
 >
->I Adobe Campaign klientkonsol **[!UICONTROL Administration > Enumerations]** noden används för att hantera uppräkningar.
+>Gå till Adobe Campaign klientkonsol **[!UICONTROL Administration > Enumerations]** mappen i Utforskaren för att hantera uppräkningar.
 
 #### Ange uppräkning {#set-enumeration}
 
@@ -357,7 +346,7 @@ Uppräkningar gör att användaren kan välja ett värde i en nedrullningsbar li
 
 Exempel på en uppräkningsdeklaration i dataschemat:
 
-```
+```sql
 <enumeration name="gender" basetype="byte" default="0">    
   <value name="unknown" label="Not specified" value="0"/>    
   <value name="male" label="male" value="1"/>   
@@ -369,33 +358,31 @@ En uppräkning deklareras utanför huvudelementet via **`<enumeration>`** -eleme
 
 Uppräkningsegenskaperna är följande:
 
-* **baseType**: typ av data som är associerade med värdena,
-* **label**: beskrivning av uppräkningen,
-* **name**: uppräkningens namn,
-* **standard**: uppräkningens standardvärde.
+* **baseType**: typ av data som är associerade med värdena
+* **label**: beskrivning av uppräkningen
+* **name**: uppräkningens namn
+* **standard**: standardvärde för uppräkningen
 
 Uppräkningsvärdena deklareras i **`<value>`** element med följande attribut:
 
-* **name**: namn på internt lagrade värden,
-* **label**: etikett som visas via det grafiska gränssnittet.
+* **name**: namnet på värdet som lagras internt
+* **label**: etikett som visas i det grafiska gränssnittet
 
 #### dbenum-uppräkning {#dbenum-enumeration}
 
-* The **dbenum** kan du definiera en uppräkning vars egenskaper liknar de i **enum** -egenskap.
+*De **dbenum** kan du definiera en uppräkning vars egenskaper liknar de i **enum** -egenskap.
 
-  Men **name** -attributet lagrar inte värdet internt, utan lagrar en kod som gör att du kan utöka de berörda tabellerna utan att ändra deras schema.
+Men **name** -attributet lagrar inte värdet internt, utan lagrar en kod som gör att du kan utöka de berörda tabellerna utan att ändra deras schema.
 
-  Värdena definieras via **[!UICONTROL Administration>Enumerations]** nod.
+Den här uppräkningen används till exempel för att ange kampanjens karaktär.
 
-  Den här uppräkningen används till exempel för att ange kampanjens karaktär.
-
-  ![](assets/d_ncs_configuration_schema_dbenum.png)
+![](assets/d_ncs_configuration_schema_dbenum.png)
 
 ### Exempel {#example}
 
 Här är vårt exempelschema med egenskaperna ifyllda:
 
-```
+```sql
 <srcSchema name="recipient" namespace="cus">
   <enumeration name="gender" basetype="byte">    
     <value name="unknown" label="Not specified" value="0"/>    
@@ -422,7 +409,7 @@ The **obunden** -attribut med värdet &quot;true&quot; kan du fylla i ett samlin
 
 **Exempel**: definition av **`<group>`** samlingselement i schemat.
 
-```
+```sql
 <element name="group" unbound="true" label="List of groups">
   <attribute name="label" type="string" label="Label"/>
 </element>
@@ -430,7 +417,7 @@ The **obunden** -attribut med värdet &quot;true&quot; kan du fylla i ett samlin
 
 Med projektion av XML-innehållet:
 
-```
+```sql
 <group label="Group1"/>
 <group label="Group2"/>
 ```
@@ -473,8 +460,8 @@ Du kommer åt listan över tillgängliga funktioner via en uttrycksredigerare i 
 **Exempel**:
 
 * **GetDate()**: returnerar aktuellt datum
-* **År(@skapad)**: returnerar året för det datum som finns i attributet &quot;created&quot;.
-* **GetEmailDomain(@email)**: returnerar e-postadressens domän.
+* **År(@skapad)**: returnerar året för det datum som finns i attributet &quot;created&quot;
+* **GetEmailDomain(@email)**: returnerar e-postadressens domän
 
 ## Skapa en sträng via beräkningssträngen {#building-a-string-via-the-compute-string}
 
@@ -484,7 +471,7 @@ The **Beräkningssträng** definieras via **`<compute-string>`** -elementet unde
 
 **Exempel**: beräkningssträng för mottagartabellen.
 
-```
+```sql
 <srcSchema name="recipient" namespace="nms">  
   <element name="recipient">
     <compute-string expr="@lastName + ' ' + @firstName +' (' + @email + ')' "/>

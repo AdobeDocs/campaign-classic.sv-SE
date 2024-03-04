@@ -6,9 +6,9 @@ title: Användarhandbok för Campaign Classic v7
 user-guide-description: Produktdokumentation för Adobe Campaign Classic v7.
 sub-product: adobe campaign classic
 type: Documentation
-source-git-commit: f3dc9d56c693f334923d627a28a9e45b92b1c0c3
+source-git-commit: bd1007ffcfa58ee60fdafa424c7827e267845679
 workflow-type: tm+mt
-source-wordcount: '2536'
+source-wordcount: '2538'
 ht-degree: 99%
 
 ---
@@ -740,8 +740,8 @@ ht-degree: 99%
       + [Om datamodellen](configuration/using/about-data-model.md)
       + [Beskrivning av datamodellen](configuration/using/data-model-description.md)
       + [Bästa praxis](configuration/using/data-model-best-practices.md)
-   + Schemareferens {#schema-reference}
-      + [Om schemareferens](configuration/using/about-schema-reference.md)
+   + Arbeta med scheman {#schema-reference}
+      + [Kom igång med scheman](configuration/using/about-schema-reference.md)
       + [Schemastruktur](configuration/using/schema-structure.md)
       + [Databasmappning](configuration/using/database-mapping.md)
       + Element och attribut {#elements-attributes}

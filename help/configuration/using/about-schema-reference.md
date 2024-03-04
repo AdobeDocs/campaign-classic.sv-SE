@@ -1,27 +1,27 @@
 ---
 product: campaign
-title: Om schemareferens i Adobe Campaign Classic
-description: Lär dig hur du konfigurerar tilläggsscheman för att utöka den konceptuella datamodellen för Adobe Campaign Classic-databasen
+title: Kom igång med scheman i Adobe Campaign
+description: Lär dig hur du arbetar med scheman och utökar den konceptuella datamodellen i Adobe Campaign-databasen
 badge-v7-only: label="v7" type="Informative" tooltip="Gäller endast Campaign Classic v7"
 feature: Schema Extension
 role: Data Engineer, Developer
 exl-id: f36a1b01-a002-4a21-9255-ea78b5f173fe
-source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
+source-git-commit: bd1007ffcfa58ee60fdafa424c7827e267845679
 workflow-type: tm+mt
-source-wordcount: '388'
-ht-degree: 9%
+source-wordcount: '376'
+ht-degree: 1%
 
 ---
 
-# Om schemareferens{#about-schema-reference}
+# Kom igång med scheman {#about-schema-reference}
+
+## Vad är ett schema? {#what-is-a-schema}
 
 I det här kapitlet beskrivs hur du konfigurerar tilläggsscheman för att utöka den konceptuella datamodellen för Adobe Campaign-databasen.
 
-Om du vill få en bättre förståelse för de inbyggda tabellerna i Campaign och deras interaktion kan du läsa [Campaign Classicens datamodell](https://helpx.adobe.com/se/campaign/kb/acc-datamodel.html).
+Om du vill få en bättre förståelse för de inbyggda tabellerna i Campaign och deras interaktion kan du läsa [Campaign Classicens datamodell](about-data-model.md).
 
-Den fysiska och logiska strukturen hos de data som medföljer programmet beskrivs i XML. Den lyder under en grammatik som är specifik för Adobe Campaign och som kallas **schema**.
-
-Ett schema är ett XML-dokument som är associerat med en databastabell. Den definierar datastrukturen och beskriver tabellens SQL-definition:
+I Adobe Campaign beskrivs den fysiska och logiska strukturen för de data som finns i programmet i XML-format. A **schema** är ett XML-dokument som är associerat med en databastabell. Den definierar datastrukturen och beskriver tabellens SQL-definition:
 
 * Tabellens namn
 * Fält

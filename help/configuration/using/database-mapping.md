@@ -6,18 +6,18 @@ feature: Configuration, Instance Settings
 role: Data Engineer, Developer
 badge-v7-only: label="v7" type="Informative" tooltip="Gäller endast Campaign Classic v7"
 exl-id: 728b509f-2755-48df-8b12-449b7044e317
-source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
+source-git-commit: bd1007ffcfa58ee60fdafa424c7827e267845679
 workflow-type: tm+mt
-source-wordcount: '1981'
+source-wordcount: '1984'
 ht-degree: 0%
 
 ---
 
 # Databasmappning{#database-mapping}
 
-SQL-mappningen i vårt exempelschema ger följande XML-dokument:
+SQL-mappningen för exempelschemat som beskrivs [på den här sidan](schema-structure.md) genererar följande XML-dokument:
 
-```
+```sql
 <schema mappingType="sql" name="recipient" namespace="cus" xtkschema="xtk:schema">
   <enumeration basetype="byte" name="gender">    
     <value label="Not specified" name="unknown" value="0"/>    
@@ -38,27 +38,27 @@ SQL-mappningen i vårt exempelschema ger följande XML-dokument:
 
 ## Beskrivning {#description}
 
-Schemats rotelement är inte längre **`<srcschema>`**, men **`<schema>`**.
+Rotelementet i schemat har ändrats till **`<srcschema>`** till **`<schema>`**.
 
-Detta tar oss till en annan typ av dokument, som genereras automatiskt från källschemat, som helt enkelt kallas schema. Det här schemat kommer att användas av Adobe Campaign-programmet.
+Den andra typen av dokument genereras automatiskt från källschemat och kallas helt enkelt för schema.
 
 SQL-namnen bestäms automatiskt utifrån elementnamn och typ.
 
 Namnreglerna för SQL är följande:
 
-* tabell: sammanfogning av schemanamnrymden och namnet
+* **table**: sammanfogning av schemanamnrymden och namnet
 
   I det här exemplet anges namnet på tabellen via huvudelementet i schemat i **sqltable** attribute:
 
-  ```
+  ```sql
   <element name="recipient" sqltable="CusRecipient">
   ```
 
-* field: name of the element before by a prefix defined as by type (&#39;i&#39; for integer, &#39;d&#39; for double, &#39;s&#39; for string, &#39;ts&#39; for dates, etc.)
+* **fält**: elementets namn föregås av ett prefix som definierats enligt typ: &#39;i&#39; för heltal, &#39;d&#39; för double, &#39;s&#39; för sträng, &#39;ts&#39; för datum, osv.
 
   Fältnamnet anges via **sqlname** attribut för varje typ **`<attribute>`** och **`<element>`**:
 
-  ```
+  ```sql
   <attribute desc="Email address of recipient" label="Email" length="80" name="email" sqlname="sEmail" type="string"/> 
   ```
 
@@ -68,7 +68,7 @@ Namnreglerna för SQL är följande:
 
 SQL-skriptet som skapar tabellen som genereras från det utökade schemat är följande:
 
-```
+```sql
 CREATE TABLE CusRecipient(
   iGender NUMERIC(3) NOT NULL Default 0,   
   sCity VARCHAR(50),   
@@ -78,12 +78,12 @@ CREATE TABLE CusRecipient(
 
 SQL-fältbegränsningarna är följande:
 
-* inga null-värden i numeriska fält och datumfält,
-* numeriska fält initieras till 0.
+* inga null-värden i numeriska fält och datumfält
+* numeriska fält initieras till 0
 
 ## XML-fält {#xml-fields}
 
-Som standard används alla typer **`<attribute>`** och **`<element>`** -elementet mappas till ett SQL-fält i databchematabellen. Du kan emellertid referera till det här fältet i XML i stället för SQL, vilket betyder att data lagras i ett PM-fält (&quot;mData&quot;) i tabellen som innehåller värdena för alla XML-fält. Lagringen av dessa data är ett XML-dokument som observerar schemastrukturen.
+Som standard är alla  **`<attribute>`** och **`<element>`** -typed-element mappas till ett SQL-fält i databchematabellen. Du kan emellertid referera till det här fältet i XML i stället för SQL, vilket betyder att data lagras i ett PM-fält (&quot;mData&quot;) i tabellen som innehåller värdena för alla XML-fält. Lagringen av dessa data är ett XML-dokument som observerar schemastrukturen.
 
 Om du vill fylla i ett fält i XML måste du lägga till **xml** ett attribut med värdet &quot;true&quot; för det berörda elementet.
 
@@ -91,21 +91,19 @@ Om du vill fylla i ett fält i XML måste du lägga till **xml** ett attribut me
 
 * Flerradskommentarfält:
 
-  ```
+  ```sql
   <element name="comment" xml="true" type="memo" label="Comment"/>
   ```
 
 * Databeskrivning i HTML-format:
 
-  ```
+  ```sql
   <element name="description" xml="true" type="html" label="Description"/>
   ```
 
   Med typen html kan du lagra HTML-innehåll i en CDATA-tagg och visa en speciell HTML edit check i Adobe Campaign klientgränssnitt.
 
-Med hjälp av XML-fält kan du lägga till fält utan att behöva ändra databasens fysiska struktur. En annan fördel är att du använder mindre resurser (storlek som tilldelas SQL-fält, gräns för antalet fält per tabell osv.).
-
-Den största nackdelen är att det är omöjligt att indexera eller filtrera ett XML-fält.
+Använd XML-fält för att lägga till nya fält utan att ändra databasens fysiska struktur. En annan fördel är att du använder mindre resurser (storlek som tilldelas SQL-fält, gräns för antalet fält per tabell osv.). Observera dock att du inte kan indexera eller filtrera ett XML-fält.
 
 ## Indexerade fält {#indexed-fields}
 
@@ -113,7 +111,7 @@ Med index kan du optimera prestanda för de SQL-frågor som används i programme
 
 Ett index deklareras från huvudelementet i dataschemat.
 
-```
+```sql
 <dbindex name="name_of_index" unique="true/false">
   <keyfield xpath="xpath_of_field1"/>
   <keyfield xpath="xpath_of_field2"/>
@@ -123,23 +121,21 @@ Ett index deklareras från huvudelementet i dataschemat.
 
 Indexen följer följande regler:
 
-* Ett index kan referera till ett eller flera fält i tabellen.
-* Ett index kan vara unikt (för att undvika dubbletter) i alla fält om **unik** -attributet innehåller värdet &quot;true&quot;.
-* Indexets SQL-namn bestäms av tabellens SQL-namn och indexets namn.
+* Ett index kan referera till ett eller flera fält i tabellen
+* Ett index kan vara unikt (för att undvika dubbletter) i alla fält om **unik** -attributet innehåller värdet &quot;true&quot;
+* Indexets SQL-namn bestäms av tabellens SQL-namn och indexets namn
 
 >[!NOTE]
 >
->Som standard är index de första elementen som deklareras från schemats huvudelement.
-
->[!NOTE]
+>* Som standard är index de första elementen som deklareras från schemats huvudelement.
 >
->Index skapas automatiskt vid tabellmappning (standard eller FDA).
+>* Index skapas automatiskt vid tabellmappning (standard eller FDA).
 
 **Exempel**:
 
 * Lägga till ett index till e-postadressen och staden:
 
-  ```
+  ```sql
   <srcSchema name="recipient" namespace="cus">
     <element name="recipient">
       <dbindex name="email">
@@ -157,7 +153,7 @@ Indexen följer följande regler:
 
 * Lägga till ett unikt index i namnfältet&quot;id&quot;:
 
-  ```
+  ```sql
   <srcSchema name="recipient" namespace="cus">
     <element name="recipient">
       <dbindex name="id" unique="true">
@@ -180,7 +176,7 @@ En tabell måste ha minst en nyckel för att identifiera en post i tabellen.
 
 En nyckel deklareras från huvudelementet i dataschemat.
 
-```
+```sql
 <key name="name_of_key">
   <keyfield xpath="xpath_of_field1"/>
   <keyfield xpath="xpath_of_field2"/>
@@ -188,25 +184,23 @@ En nyckel deklareras från huvudelementet i dataschemat.
 </key>
 ```
 
-Tangenter följer följande regler:
+Följande regler gäller för nycklar:
 
-* En nyckel kan referera till ett eller flera fält i tabellen.
-* En nyckel kallas för primär (eller prioritet) när den är den första i schemat som ska fyllas i eller om den innehåller **internal** -attribut med värdet &quot;true&quot;.
-* Ett unikt index deklareras implicit för varje nyckeldefinition. Det går inte att skapa ett index på nyckeln genom att lägga till **noDbIndex** -attribut med värdet &quot;true&quot;.
-
->[!NOTE]
->
->Som standard är nycklar de element som deklarerats från huvudelementet i schemat efter att index har definierats.
+* En nyckel kan referera till ett eller flera fält i tabellen
+* En nyckel kallas för primär (eller prioritet) när den är den första i schemat som ska fyllas i eller om den innehåller **internal** -attribut med värdet &quot;true&quot;
+* Ett unikt index deklareras implicit för varje nyckeldefinition. Det går inte att skapa ett index på nyckeln genom att lägga till **noDbIndex** -attribut med värdet &quot;true&quot;
 
 >[!NOTE]
 >
->Tangenter skapas vid tabellmappning (standard eller FDA). Adobe Campaign hittar unika index.
+>* Som standard är nycklar de element som deklarerats från huvudelementet i schemat efter att index har definierats.
+>
+>* Tangenter skapas vid tabellmappning (standard eller FDA). Adobe Campaign hittar unika index.
 
 **Exempel**:
 
 * Lägga till en nyckel till e-postadressen och staden:
 
-  ```
+  ```sql
   <srcSchema name="recipient" namespace="cus">
     <element name="recipient">
       <key name="email">
@@ -224,7 +218,7 @@ Tangenter följer följande regler:
 
   Schemat som genererats:
 
-  ```
+  ```sql
   <schema mappingType="sql" name="recipient" namespace="cus" xtkschema="xtk:schema">  
     <element name="recipient" sqltable="CusRecipient">    
      <dbindex name="email" unique="true">      
@@ -247,7 +241,7 @@ Tangenter följer följande regler:
 
 * Lägga till en primär eller intern nyckel i namnfältet&quot;id&quot;:
 
-  ```
+  ```sql
   <srcSchema name="recipient" namespace="cus">
     <element name="recipient">
       <key name="id" internal="true">
@@ -266,7 +260,7 @@ Tangenter följer följande regler:
 
   Schemat som genererats:
 
-  ```
+  ```sql
   <schema mappingType="sql" name="recipient" namespace="cus" xtkschema="xtk:schema">  
     <element name="recipient" sqltable="CusRecipient">    
       <key name="email">      
@@ -311,7 +305,7 @@ Om du vill deklarera en unik nyckel fyller du i **autopk** attribute (with value
 
 Deklarera en inkrementell nyckel i källschemat:
 
-```
+```sql
 <srcSchema name="recipient" namespace="cus">
   <element name="recipient" autopk="true">
   ...
@@ -321,7 +315,7 @@ Deklarera en inkrementell nyckel i källschemat:
 
 Schemat som genererats:
 
-```
+```sql
 <schema mappingType="sql" name="recipient" namespace="cus" xtkschema="xtk:schema">  
   <element name="recipient" autopk="true" pkSequence="XtkNewId" sqltable="CusRecipient"> 
     <dbindex name="id" unique="true">
@@ -370,7 +364,7 @@ Mer information om FDA-tabeller finns i [Åtkomst till en extern databas](../../
 
 En länk måste deklareras i schemat som innehåller sekundärnyckeln för tabellen som är länkad via huvudelementet:
 
-```
+```sql
 <element name="name_of_link" type="link" target="key_of_destination_schema">
   <join xpath-dst="xpath_of_field1_destination_table" xpath-src="xpath_of_field1_source_table"/>
   <join xpath-dst="xpath_of_field2_destination_table" xpath-src="xpath_of_field2_source_table"/>
@@ -412,7 +406,7 @@ Länkarna följer följande regler:
 
 1-N-relation till schematabellen&quot;cus:company&quot;:
 
-```
+```sql
 <srcSchema name="recipient" namespace="cus">
   <element name="recipient">
     ...
@@ -423,7 +417,7 @@ Länkarna följer följande regler:
 
 Schemat som genererats:
 
-```
+```sql
 <schema mappingType="sql" name="recipient" namespace="cus" xtkschema="xtk:schema">  
   <element name="recipient" sqltable="CusRecipient"> 
     <dbindex name="companyId">      
@@ -444,7 +438,7 @@ Sekundärnyckeln läggs automatiskt till i ett element som använder samma egens
 
 Utökat schema för målet (&quot;cus:company&quot;):
 
-```
+```sql
 <schema mappingType="sql" name="company" namespace="cus" xtkschema="xtk:schema">  
   <element name="company" sqltable="CusCompany" autopk="true"> 
     <dbindex name="id" unique="true">     
@@ -475,7 +469,7 @@ En omvänd länk till tabellen&quot;cus:mottagare&quot; lades till med följande
 
 I det här exemplet deklarerar vi en länk till schematabellen &quot;nms:address&quot;. Kopplingen är en yttre koppling och fylls i explicit med mottagarens e-postadress och fältet @address i den länkade tabellen (&quot;nms:address&quot;).
 
-```
+```sql
 <srcSchema name="recipient" namespace="cus">
   <element name="recipient"> 
     ...
@@ -490,7 +484,7 @@ I det här exemplet deklarerar vi en länk till schematabellen &quot;nms:address
 
 1-1 relation till schematabellen &quot;cus:extension&quot;:
 
-```
+```sql
 <element integrity="own" label="Extension" name="extension" revCardinality="single" revLink="recipient" target="cus:extension" type="link"/>
 ```
 
@@ -498,7 +492,7 @@ I det här exemplet deklarerar vi en länk till schematabellen &quot;nms:address
 
 Länka till en mapp (&quot;xtk:folder&quot;-schema):
 
-```
+```sql
 <element default="DefaultFolder('nmsFolder')" label="Folder" name="folder" revDesc="Recipients in the folder" revIntegrity="own" revLabel="Recipients" target="xtk:folder" type="link"/>
 ```
 
@@ -508,7 +502,7 @@ Standardvärdet returnerar identifieraren för den första giltiga parametertypf
 
 I det här exemplet vill vi skapa en nyckel på en länk (&quot;företag&quot; till&quot;cus:company&quot;-schema) med **xlink** och ett fält i tabellen (&quot;email&quot;):
 
-```
+```sql
 <srcSchema name="recipient" namespace="cus">
   <element name="recipient">
     <key name="companyEmail"> 
@@ -524,7 +518,7 @@ I det här exemplet vill vi skapa en nyckel på en länk (&quot;företag&quot; t
 
 Schemat som genererats:
 
-```
+```sql
 <schema mappingType="sql" name="recipient" namespace="cus" xtkschema="xtk:schema">  
   <element name="recipient" sqltable="CusRecipient"> 
     <dbindex name="companyId">      
