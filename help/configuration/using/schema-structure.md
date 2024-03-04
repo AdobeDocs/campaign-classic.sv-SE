@@ -9,9 +9,9 @@ audience: configuration
 content-type: reference
 topic-tags: schema-reference
 exl-id: 3405efb8-a37c-4622-a271-63d7a4148751
-source-git-commit: bd1007ffcfa58ee60fdafa424c7827e267845679
+source-git-commit: 46220dcfdddb8f6f1e7026cafc503aaeecb7e0fa
 workflow-type: tm+mt
-source-wordcount: '1496'
+source-wordcount: '1517'
 ht-degree: 1%
 
 ---
@@ -485,3 +485,14 @@ Resultat av den beräknade strängen för en mottagare: **Doe John (john.doe@aol
 >[!NOTE]
 >
 >Om schemat inte innehåller någon beräkningssträng fylls en beräkningssträng i som standard med värdena för schemats primärnyckel.
+
+
+## Läs mer
+
+Klicka på följande länkar om du vill veta mer:
+
+* [Kom igång med scheman](about-schema-reference.md)
+* [Databasmappning](database-mapping.md)
+* [Länkhantering](database-links.md)
+* [Nyckelhantering](database-keys.md)
+* [Kampanjdatamodell](about-data-model.md)

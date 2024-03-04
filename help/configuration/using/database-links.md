@@ -5,10 +5,10 @@ description: Databasmappning
 feature: Configuration, Instance Settings
 role: Data Engineer, Developer
 badge-v7-only: label="v7" type="Informative" tooltip="Gäller endast Campaign Classic v7"
-source-git-commit: f03e72d4ecd17446264adf74603aefca95f99d41
+source-git-commit: 46220dcfdddb8f6f1e7026cafc503aaeecb7e0fa
 workflow-type: tm+mt
-source-wordcount: '918'
-ht-degree: 1%
+source-wordcount: '939'
+ht-degree: 2%
 
 ---
 
@@ -222,3 +222,13 @@ Schemat som genererats:
 ```
 
 Definitionen av namnnyckeln&quot;companyEmail&quot; utökades med sekundärnyckeln för länken&quot;company&quot;. Den här nyckeln genererar ett unikt index för båda fälten.
+
+## Läs mer
+
+Klicka på följande länkar om du vill veta mer:
+
+* [Kom igång med scheman](about-schema-reference.md)
+* [Schemastruktur](schema-structure.md)
+* [Databasmappning](database-mapping.md)
+* [Nyckelhantering](database-keys.md)
+* [Kampanjdatamodell](about-data-model.md)
