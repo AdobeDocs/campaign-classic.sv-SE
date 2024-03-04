@@ -5,181 +5,25 @@ description: Databasmappning
 feature: Configuration, Instance Settings
 role: Data Engineer, Developer
 badge-v7-only: label="v7" type="Informative" tooltip="Gäller endast Campaign Classic v7"
-exl-id: 728b509f-2755-48df-8b12-449b7044e317
 source-git-commit: f03e72d4ecd17446264adf74603aefca95f99d41
 workflow-type: tm+mt
-source-wordcount: '1397'
-ht-degree: 0%
+source-wordcount: '918'
+ht-degree: 1%
 
 ---
 
-# Databasmappning{#database-mapping}
 
-SQL-mappningen för exempelschemat som beskrivs [på den här sidan](schema-structure.md) genererar följande XML-dokument:
-
-```sql
-<schema mappingType="sql" name="recipient" namespace="cus" xtkschema="xtk:schema">
-  <enumeration basetype="byte" name="gender">    
-    <value label="Not specified" name="unknown" value="0"/>    
-    <value label="Male" name="male" value="1"/>    
-    <value label="Female" name="female" value="2"/> 
-  </enumeration>  
-
-  <element name="recipient" sqltable="CusRecipient">    
-    <attribute desc="Recipient email address" label="Email" length="80" name="email" sqlname="sEmail" type="string"/>    
-    <attribute default="GetDate()" label="Date of creation" name="created" sqlname="tsCreated" type="datetime"/>    
-    <attribute enum="gender" label="Gender" name="gender" sqlname="iGender" type="byte"/>    
-    <element label="Location" name="location">      
-      <attribute label="City" length="50" name="city" sqlname="sCity" type="string" userEnum="city"/>    
-    </element>  
-  </element>
-</schema>
-```
-
-Rotelementet i schemat har ändrats till **`<srcschema>`** till **`<schema>`**.
-
-Den andra typen av dokument genereras automatiskt från källschemat och kallas helt enkelt för schema.
-
-SQL-namnen bestäms automatiskt utifrån elementnamn och typ.
-
-Namnreglerna för SQL är följande:
-
-* **table**: sammanfogning av schemanamnrymden och namnet
-
-  I det här exemplet anges namnet på tabellen via huvudelementet i schemat i **sqltable** attribute:
-
-  ```sql
-  <element name="recipient" sqltable="CusRecipient">
-  ```
-
-* **fält**: elementets namn föregås av ett prefix som definierats enligt typ: &#39;i&#39; för heltal, &#39;d&#39; för double, &#39;s&#39; för sträng, &#39;ts&#39; för datum, osv.
-
-  Fältnamnet anges via **sqlname** attribut för varje typ **`<attribute>`** och **`<element>`**:
-
-  ```sql
-  <attribute desc="Email address of recipient" label="Email" length="80" name="email" sqlname="sEmail" type="string"/> 
-  ```
-
->[!NOTE]
->
->SQL-namn kan överladdas från källschemat. Det gör du genom att fylla i attributen &quot;sqltable&quot; eller &quot;sqlname&quot; för det berörda elementet.
-
-SQL-skriptet som skapar tabellen som genereras från det utökade schemat är följande:
-
-```sql
-CREATE TABLE CusRecipient(
-  iGender NUMERIC(3) NOT NULL Default 0,   
-  sCity VARCHAR(50),   
-  sEmail VARCHAR(80),
-  tsCreated TIMESTAMP Default NULL);
-```
-
-SQL-fältbegränsningarna är följande:
-
-* inga null-värden i numeriska fält och datumfält
-* numeriska fält initieras till 0
-
-## XML-fält {#xml-fields}
-
-Som standard är alla  **`<attribute>`** och **`<element>`** -typed-element mappas till ett SQL-fält i databchematabellen. Du kan emellertid referera till det här fältet i XML i stället för SQL, vilket betyder att data lagras i ett PM-fält (&quot;mData&quot;) i tabellen som innehåller värdena för alla XML-fält. Lagringen av dessa data är ett XML-dokument som observerar schemastrukturen.
-
-Om du vill fylla i ett fält i XML måste du lägga till **xml** ett attribut med värdet &quot;true&quot; för det berörda elementet.
-
-**Exempel**: här är två exempel på hur XML-fält används.
-
-* Flerradskommentarfält:
-
-  ```sql
-  <element name="comment" xml="true" type="memo" label="Comment"/>
-  ```
-
-* Databeskrivning i HTML-format:
-
-  ```sql
-  <element name="description" xml="true" type="html" label="Description"/>
-  ```
-
-  Med typen html kan du lagra HTML-innehåll i en CDATA-tagg och visa en speciell HTML edit check i Adobe Campaign klientgränssnitt.
-
-Använd XML-fält för att lägga till nya fält utan att ändra databasens fysiska struktur. En annan fördel är att du använder mindre resurser (storlek som tilldelas SQL-fält, gräns för antalet fält per tabell osv.). Observera dock att du inte kan indexera eller filtrera ett XML-fält.
-
-## Indexerade fält {#indexed-fields}
-
-Med index kan du optimera prestanda för de SQL-frågor som används i programmet.
-
-Ett index deklareras från huvudelementet i dataschemat.
-
-```sql
-<dbindex name="name_of_index" unique="true/false">
-  <keyfield xpath="xpath_of_field1"/>
-  <keyfield xpath="xpath_of_field2"/>
-  ...
-</key>
-```
-
-Indexen följer följande regler:
-
-* Ett index kan referera till ett eller flera fält i tabellen
-* Ett index kan vara unikt (för att undvika dubbletter) i alla fält om **unik** -attributet innehåller värdet &quot;true&quot;
-* Indexets SQL-namn bestäms av tabellens SQL-namn och indexets namn
-
->[!NOTE]
->
->* Som standard är index de första elementen som deklareras från schemats huvudelement.
->
->* Index skapas automatiskt vid tabellmappning (standard eller FDA).
-
-**Exempel**:
-
-* Lägga till ett index till e-postadressen och staden:
-
-  ```sql
-  <srcSchema name="recipient" namespace="cus">
-    <element name="recipient">
-      <dbindex name="email">
-        <keyfield xpath="@email"/> 
-        <keyfield xpath="location/@city"/> 
-      </dbindex>
-  
-      <attribute name="email" type="string" length="80" label="Email" desc="Email address of recipient"/>
-      <element name="location" label="Location">
-        <attribute name="city" type="string" length="50" label="City" userEnum="city"/>
-      </element>
-    </element>
-  </srcSchema>
-  ```
-
-* Lägga till ett unikt index i namnfältet&quot;id&quot;:
-
-  ```sql
-  <srcSchema name="recipient" namespace="cus">
-    <element name="recipient">
-      <dbindex name="id" unique="true">
-        <keyfield xpath="@id"/> 
-      </dbindex>
-  
-      <dbindex name="email">
-        <keyfield xpath="@email"/> 
-      </dbindex>
-  
-      <attribute name="id" type="long" label="Identifier"/>
-      <attribute name="email" type="string" length="80" label="Email" desc="Email address of recipient"/>
-    </element>
-  </srcSchema>
-  ```
-
-
-## Länkhantering {#links--relation-between-tables}
+# Länkhantering {#links--relation-between-tables}
 
 En länk beskriver kopplingen mellan en tabell och en annan.
 
-Följande typer av föreningar (så kallade kardinaliteter):
+Olika typer av föreningar, även kallade kardinaliteter, listas nedan.
 
 * Kardinalitet 1-1: en förekomst av källtabellen kan ha högst en motsvarande förekomst av måltabellen.
 * Kardinalitet 1-N: en förekomst av källtabellen kan ha flera motsvarande förekomster av måltabellen, men en förekomst av måltabellen kan ha högst en motsvarande förekomst av källtabellen.
 * Kardinalitet N-N: en förekomst av källtabellen kan ha flera motsvarande förekomster av måltabellen och vice versa.
 
-I gränssnittet kan du enkelt skilja mellan olika typer av relationer tack vare deras ikoner.
+I användargränssnittet representeras kardinalerna med en specifik ikon.
 
 För kopplingsrelationer med en kampanjtabell/databas:
 
@@ -187,7 +31,7 @@ För kopplingsrelationer med en kampanjtabell/databas:
 * ![](assets/externaljoin11.png) : Kardinalitet 1-1, extern koppling. Till exempel mellan en mottagare och deras land. En mottagare kan bara vara relaterad till en förekomst av registerlandet. Innehållet i landstabellen sparas inte.
 * ![](assets/join_with_campaign1n.png) : Kardinalitet 1-N. Till exempel mellan en mottagare och prenumerationstabellen. En mottagare kan vara relaterad till flera förekomster i prenumerationstabellen.
 
-För anslutningsrelationer med Federated Database Access:
+För anslutningsrelationer med FDA (Federated Database Access):
 
 * ![](assets/join_fda_11.png) : Kardinalitet 1-1
 * ![](assets/join_fda_1m.png) : Kardinalitet 1-N
@@ -208,20 +52,21 @@ Länkarna följer följande regler:
 
 * Definitionen av en länk anges på en **link**-type **`<element>`** med följande attribut:
 
-   * **name**: namn på länken från källtabellen,
-   * **target**: målschemats namn,
-   * **label**: länketikett,
-   * **revLink** (valfritt): namn på omvänd länk från målschemat (avdraget automatiskt som standard),
-   * **integritet** (valfritt): referensintegritet för förekomsten av källtabellen till förekomsten av måltabellen. Möjliga värden är följande:
+   * **name**: namn på länken från källtabellen
+   * **target**: namn på målschema
+   * **label**: länketikett
+   * **revLink** (valfritt): namn på omvänd länk från målschemat (dras automatiskt som standard)
+   * **integritet** (valfritt): referensintegritet för förekomsten av källtabellen till förekomsten av måltabellen.
+Möjliga värden är:
 
-      * **define**: det är möjligt att ta bort källförekomsten om den inte längre refereras av en målförekomst,
-      * **normal**: om du tar bort källförekomsten initieras nycklarna för länken till målförekomsten (standardläge), initierar den här typen av integritet alla sekundärnycklar,
-      * **egen**: om du tar bort källförekomsten tas målförekomsten bort,
-      * **owncopy**: samma som **egen** (vid radering) eller dubblerar förekomsterna (vid dubblering),
-      * **neutral**: gör ingenting.
+      * **define**: det går att ta bort källförekomsten om den inte längre refereras av en målförekomst
+      * **normal**: om du tar bort källförekomsten initieras tangenterna för länken till målförekomsten (standardläge), den här typen av integritet initierar alla sekundärnycklar
+      * **egen**: om du tar bort källförekomsten tas målförekomsten bort
+      * **owncopy**: samma som **egen** (vid borttagning) eller dubblerar förekomsterna (vid duplicering)
+      * **neutral**: inget specifikt beteende
 
-   * **revIntegrity** (valfritt): integritet i målschemat (valfritt, &quot;normal&quot; som standard),
-   * **revCardinality** (valfritt): med värdet &quot;single&quot; fylls kardinaliteten med typen 1-1 (1-N som standard).
+   * **revIntegrity** (valfritt): integritet i målschemat (valfritt, &quot;normal&quot; som standard)
+   * **revCardinality** (valfritt): med värdet &quot;single&quot; fylls kardinaliteten med typen 1-1 (1-N som standard)
    * **externalJoin** (valfritt): tvingar den yttre kopplingen
    * **revExternalJoin** (valfritt): tvingar det yttre hörnet på den omvända länken
 
@@ -234,9 +79,9 @@ Länkarna följer följande regler:
 >
 >Som standard är länkar de element som deklarerats i slutet av schemat.
 
-### Exempel 1 {#example-1}
+## Exempel: omvänd länk {#example-1}
 
-1-N-relation till schematabellen&quot;cus:company&quot;:
+I exemplet nedan deklarerar vi en 1-N-relation till schematabellen &quot;cus:company&quot;:
 
 ```sql
 <srcSchema name="recipient" namespace="cus">
@@ -297,7 +142,7 @@ En omvänd länk till tabellen&quot;cus:mottagare&quot; lades till med följande
 * **obunden**: länken deklareras som ett samlingselement för en 1-N-kardinalitet (som standard)
 * **integritet**:&quot;define&quot; som standard (kan framtvingas med attributet&quot;revIntegrity&quot; i länkdefinitionen i källschemat).
 
-### Exempel 2 {#example-2}
+## Exempel: enkel länk {#example-2}
 
 I det här exemplet deklarerar vi en länk till schematabellen &quot;nms:address&quot;. Kopplingen är en yttre koppling och fylls i explicit med mottagarens e-postadress och fältet @address i den länkade tabellen (&quot;nms:address&quot;).
 
@@ -312,17 +157,17 @@ I det här exemplet deklarerar vi en länk till schematabellen &quot;nms:address
 </srcSchema>
 ```
 
-### Exempel 3 {#example-3}
+## Exempel: unik kardinalitet {#example-3}
 
-1-1 relation till schematabellen &quot;cus:extension&quot;:
+I det här exemplet skapar vi en 1-1-relation till schematabellen&quot;cus:extension&quot;:
 
 ```sql
 <element integrity="own" label="Extension" name="extension" revCardinality="single" revLink="recipient" target="cus:extension" type="link"/>
 ```
 
-### Exempel 4 {#example-4}
+## Exempel: länk till en mapp {#example-4}
 
-Länka till en mapp (&quot;xtk:folder&quot;-schema):
+I det här exemplet deklarerar vi en länk till en mapp (&quot;xtk:folder&quot;-schema):
 
 ```sql
 <element default="DefaultFolder('nmsFolder')" label="Folder" name="folder" revDesc="Recipients in the folder" revIntegrity="own" revLabel="Recipients" target="xtk:folder" type="link"/>
@@ -330,9 +175,9 @@ Länka till en mapp (&quot;xtk:folder&quot;-schema):
 
 Standardvärdet returnerar identifieraren för den första giltiga parametertypfilen som anges i funktionen &quot;DefaultFolder(&#39;nmsFolder&#39;)&quot;.
 
-### Exempel 5 {#example-5}
+## Exempel: skapa en nyckel för en länk {#example-5}
 
-I det här exemplet vill vi skapa en nyckel på en länk (&quot;företag&quot; till&quot;cus:company&quot;-schema) med **xlink** och ett fält i tabellen (&quot;email&quot;):
+I det här exemplet skapar vi en nyckel på en länk (&quot;företag&quot; till&quot;cus:company&quot;-schema) med **xlink** och ett fält i tabellen (&quot;email&quot;):
 
 ```sql
 <srcSchema name="recipient" namespace="cus">
