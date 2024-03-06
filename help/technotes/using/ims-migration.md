@@ -4,9 +4,9 @@ description: Lär dig hur du migrerar tekniska kampanjoperatörer till ett tekni
 feature: Technote
 role: Admin
 exl-id: 1a409daf-57be-43c9-a3d9-b8ab54c88068
-source-git-commit: b2c37e2426d3b6ba5174d4a446320e0f50485a76
+source-git-commit: 17a43a6e2e3ee7a3a2b81545bf96d766e6e97a05
 workflow-type: tm+mt
-source-wordcount: '1702'
+source-wordcount: '1734'
 ht-degree: 0%
 
 ---
@@ -16,7 +16,6 @@ ht-degree: 0%
 Som en del i arbetet med att stärka säkerhets- och autentiseringsprocessen, från och med Campaign Classic v7.3.5, förbättras autentiseringsprocessen till Campaign Classicen. Tekniska operatörer bör nu använda [Adobe Identity Management System (IMS)](https://helpx.adobe.com/enterprise/using/identity.html){target="_blank"} to connect to Campaign. Learn more about the new server to server authentication process in [Adobe Developer Console documentation](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/){target="_blank"}. **Adobe rekommenderar att du utför den här migreringen i Campaign v7.3.5 för att smidigt kunna migrera till Campaign v8.**
 
 En teknisk operator är en Campaign-användarprofil som uttryckligen har skapats för API-integrering. I den här artikeln beskrivs stegen som krävs för att migrera en teknisk operatör till ett tekniskt konto via Adobe Developer-konsolen.
-
 
 ## Påverkas du?{#ims-impacts}
 
@@ -53,7 +52,7 @@ De här kampanjversionerna finns i [Versionsinformation](../../rn/using/latest-r
 
 * Campaign Hosted och Managed Services
 
-  För API-anrop till Message Center-instansen/instanserna, ska en produktprofil ha skapats under uppgraderingen till Campaign v7.3.5 (eller andra [IMS-migreringskompatibel version](#ims-versions-tech)) eller under etableringen av instansen. Den här produktprofilen heter:
+  För API-anrop till Message Center-instansen/instanserna bör produktprofilen (som nämns nedan) skapas under uppgraderingen till Campaign v7.3.5 (eller andra [IMS-migreringskompatibel version](#ims-versions-tech)) eller under etableringen av instansen. Observera att om du inte ser produktprofilen bör du kontakta din Transition Manager eller kundsupport för att få produktprofilen skapad innan du startar IMS-migreringen. Den här produktprofilen heter:
 
   `campaign - <your campaign instance> - messagecenter`
 
