@@ -9,9 +9,9 @@ audience: automating
 content-type: reference
 topic-tags: workflow-general-operation
 exl-id: 03d35202-d221-4136-aad4-00704aabb356
-source-git-commit: 668cee663890fafe27f86f2afd3752f7e2ab347a
+source-git-commit: 209ccbcac20052826dad0c55b35173be20b10114
 workflow-type: tm+mt
-source-wordcount: '523'
+source-wordcount: '518'
 ht-degree: 2%
 
 ---
@@ -43,7 +43,7 @@ Exempel:
 * Avgränsare: tabb eller semikolon
 * Första raden med rubriker
 * Ingen strängavgränsare
-* Datumformat: ÅÅÅ/MM/DD HH:mm:SS
+* Datum: `YYYY/MM/DD HH:mm:SS`
 
 Exempel på fil som ska importeras:
 

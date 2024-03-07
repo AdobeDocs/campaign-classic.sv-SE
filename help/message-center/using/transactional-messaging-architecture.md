@@ -5,9 +5,9 @@ description: Detta avsnitt beskriver Adobe Campaign Classic transaktionsmeddelan
 feature: Transactional Messaging, Message Center, Architecture
 badge-v7-only: label="v7" type="Informative" tooltip="Gäller endast Campaign Classic v7"
 exl-id: 0a059397-b037-405b-b9c1-94a4a072674d
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: 209ccbcac20052826dad0c55b35173be20b10114
 workflow-type: tm+mt
-source-wordcount: '1099'
+source-wordcount: '1110'
 ht-degree: 1%
 
 ---
@@ -40,7 +40,7 @@ Om du behöver använda flera kanaler måste du installera och konfigurera relat
 
 ## Kontrollinstans {#control-instance}
 
-Om du vill installera kontrollinstansen på datorn väljer du **[!UICONTROL Transactional message control]** via **[!UICONTROL Tools]** > **[!UICONTROL Advanced]** > **[!UICONTROL Import package]** -menyn. Mer information finns i [Installera Campaign Classic-standardpaket](../../installation/using/installing-campaign-standard-packages.md).
+Om du vill installera kontrollinstansen på datorn väljer du **[!UICONTROL Transactional message control]** via **[!UICONTROL Tools]** > **[!UICONTROL Advanced]** > **[!UICONTROL Import package]** -menyn. Mer information finns i [Installera standardpaket för Campaign Classic](../../installation/using/installing-campaign-standard-packages.md).
 
 ![](assets/messagecenter_install_controlinstance_001.png)
 
@@ -62,7 +62,7 @@ Det går att dela ett körningskluster mellan flera kontrollinstanser. Om du til
 
 ## Körningsinstans {#execution-instance}
 
-Om du vill installera en körningsinstans på datorn väljer du **[!UICONTROL Transactional message execution]** via **[!UICONTROL Tools]** > **[!UICONTROL Advanced]** > **[!UICONTROL Import package]** -menyn. Mer information finns i [Installera Campaign Classic-standardpaket](../../installation/using/installing-campaign-standard-packages.md).
+Om du vill installera en körningsinstans på datorn väljer du **[!UICONTROL Transactional message execution]** via **[!UICONTROL Tools]** > **[!UICONTROL Advanced]** > **[!UICONTROL Import package]** -menyn. Mer information finns i [Installera standardpaket för Campaign Classic](../../installation/using/installing-campaign-standard-packages.md).
 
 ![](assets/messagecenter_install_executioninstance_001.png)
 
@@ -157,7 +157,7 @@ Här är ett exempel på en händelse som innehåller den här informationen:
          <urn:domEvent>
 
               <rtEvent wishedChannel="41" type="DELIVERY" registrationToken="2cefnefzef758398493srefzefkzq483974">
-                <mobileApp _operation=”none” uuid="com.adobe.NeoMiles"/>
+                <mobileApp _operation="none" uuid="com.adobe.NeoMiles"/>
                 <ctx>
                     <deliveryTime>1:30 PM</deliveryTime>
                     <url>http://www.adobe.com</url>
@@ -222,7 +222,7 @@ Sedan, från **[!UICONTROL Explorer]** , in **[!UICONTROL Platform]** > **[!UICO
    * **[!UICONTROL Server]** : Ange kampanjens server-URL för körningsinstansen.
    * **[!UICONTROL Account]** : Ange det konto som används för att komma åt din körningsinstans.
    * **[!UICONTROL Password]** : Ange lösenordet för kontot som används för att komma åt din körningsinstans.
-   * **[!UICONTROL Data Source]** : ange följande syntax **[!UICONTROL nms:extAccount:ID of your external database account in the execution instance]** .
+   * **[!UICONTROL Data Source]** : ange följande syntax **`nms:extAccount:ID`** för ditt externa databaskonto i körningsinstansen.
 
 1. Skapa en **[!UICONTROL Execution instance]** externt konto i **marknadsföring** -instans med följande konfiguration för att skapa arbetsflödet för datasynkronisering:
 

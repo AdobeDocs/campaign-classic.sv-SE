@@ -2,13 +2,13 @@
 product: campaign
 title: Uppgift
 description: Läs mer om aktivitetsarbetsflödesaktiviteten
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+badge-v7-only: label="v7" type="Informative" tooltip="Gäller endast Campaign Classic v7"
 feature: Workflows
 exl-id: 8549bf8c-ba23-44cb-95f2-c50f2d0f5479
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 209ccbcac20052826dad0c55b35173be20b10114
 workflow-type: tm+mt
-source-wordcount: '103'
-ht-degree: 3%
+source-wordcount: '110'
+ht-degree: 10%
 
 ---
 
@@ -18,13 +18,13 @@ ht-degree: 3%
 
 >[!AVAILABILITY]
 >
->:warning: Den här funktionen är bara tillgänglig i Campaign Classic v7. [Läs mer](../../mrm/using/creating-and-managing-tasks.md)
+>`:warning:` Den här funktionen är bara tillgänglig i Campaign Classic v7. [Läs mer](../../mrm/using/creating-and-managing-tasks.md)
 
-I ett kampanjarbetsflöde **[!UICONTROL Task]** kan du ange två scenarier: den första om uppgiften är slutförd och den andra om uppgiften inte är slutförd (om den markerats manuellt som ofullständig eller om den förfaller).
+I ett kampanjarbetsflöde **[!UICONTROL Task]** Med -aktivitet kan du ange två scenarier: den första om aktiviteten är slutförd och den andra om aktiviteten inte är slutförd (om den är manuellt markerad som ofullständig eller om den går ut).
 
 ![](assets/mrm_task_in_workflow.png)
 
-Information om hur du konfigurerar och kör en uppgift finns i [Campaign Classic v7-dokumentation](../../mrm/using/creating-and-managing-tasks.md).
+Information om hur du konfigurerar och kör en uppgift finns i [Campaign Classic v7 - dokumentation](../../mrm/using/creating-and-managing-tasks.md).
 
 ![](assets/wkf_task_activity.png)
 

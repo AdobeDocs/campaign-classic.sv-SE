@@ -5,10 +5,10 @@ description: Hantera data mellan Campaign och CRM
 feature: Microsoft CRM Integration, Salesforce Integration
 badge-v7-only: label="v7" type="Informative" tooltip="Gäller endast Campaign Classic v7"
 exl-id: 7f9eda15-76e8-40a1-8302-004cea085778
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: 209ccbcac20052826dad0c55b35173be20b10114
 workflow-type: tm+mt
-source-wordcount: '1543'
-ht-degree: 0%
+source-wordcount: '1536'
+ht-degree: 1%
 
 ---
 
@@ -93,7 +93,7 @@ Datumet för den senaste synkroniseringen lagras som standard i ett alternativ s
 >
 >Den här anmärkningen gäller endast för generiska **[!UICONTROL CRM Connector]** aktivitet. För andra CRM-aktiviteter är processen automatisk.
 >
->Det här alternativet måste skapas manuellt och fyllas i under **[!UICONTROL Administration]** > **[!UICONTROL Platform]** > **[!UICONTROL Options]**. Det måste vara ett textalternativ och dess värde måste matcha följande format: **yyyy/MM/dd hh:mm:ss**.
+>Det här alternativet måste skapas manuellt och fyllas i under **[!UICONTROL Administration]** > **[!UICONTROL Platform]** > **[!UICONTROL Options]**. Det måste vara ett textalternativ och dess värde måste matcha följande format: **`yyyy/MM/dd hh:mm:ss`**.
 > 
 >Du måste uppdatera det här alternativet manuellt för ytterligare import.
 
@@ -112,7 +112,7 @@ Aktiverar **[!UICONTROL Automatic index]** alternativ genererar tre variabler so
 
   >[!NOTE]
   >
-  >Dessa datum visas i följande format: **yyyy/MM/dd hh:mm:ss**.
+  >Dessa datum visas i följande format: **`yyyy/MM/dd hh:mm:ss`**.
 
 ### Filtrera data {#filtering-data}
 

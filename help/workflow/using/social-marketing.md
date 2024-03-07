@@ -4,10 +4,10 @@ title: Social marknadsföring
 description: Läs mer om tekniska arbetsflöden för social marknadsföring
 badge-v7-only: label="v7" type="Informative" tooltip="Gäller endast Campaign Classic v7"
 feature: Workflows
-source-git-commit: abaeef25b03a9699a4851786380d467bfa299c9f
+source-git-commit: 209ccbcac20052826dad0c55b35173be20b10114
 workflow-type: tm+mt
 source-wordcount: '129'
-ht-degree: 11%
+ht-degree: 8%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 11%
 
 >[!AVAILABILITY]
 >
->:warning: Den här funktionen är bara tillgänglig i Campaign Classic v7. [Läs mer](../../social/using/about-social-marketing.md)
+>`:warning:` Den här funktionen är bara tillgänglig i Campaign Classic v7. [Läs mer](../../social/using/about-social-marketing.md)
 
 Arbetsflödena nedan installeras tillsammans med **Social marknadsföring** som standard.
 

@@ -10,9 +10,9 @@ topic-tags: configuration
 hide: true
 hidefromtoc: true
 exl-id: 7aad0e49-8d9c-40c7-9d6a-42fee0ae5870
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: 209ccbcac20052826dad0c55b35173be20b10114
 workflow-type: tm+mt
-source-wordcount: '2632'
+source-wordcount: '2607'
 ht-degree: 0%
 
 ---
@@ -118,7 +118,7 @@ nlserver config -internalpassword
 
 * Spårning fungerar inte längre om lösenordet är tomt. Om så är fallet visas ett felmeddelande som talar om det och ber dig konfigurera om det.
 * Lösenord sparas inte längre i **xtk:sessionInfo** schema.
-* Administrationsbehörigheter krävs nu för att använda **xtk:builder:UtvärderaJavaScript** och **xtk:builder:EvaluateJavaScriptTemplate** funktioner.
+* Administrationsbehörigheter krävs nu för att använda **`xtk:builder:EvaluateJavaScript`** och **`xtk:builder:EvaluateJavaScriptTemplate`** funktioner.
 
 Vissa färdiga scheman har ändrats och är nu som standard bara tillgängliga med skrivåtkomst för operatorer med **admin** behörighet:
 
@@ -461,7 +461,7 @@ Det finns tre möjliga sätt att lösa en konflikt:
 
   >[!IMPORTANT]
   >
-  >Om du väljer det här upplösningsläget riskerar du att förlora korrigeringar i den nya versionen. Vi rekommenderar därför starkt att detta alternativ inte används eller reserveras enbart för expertoperatorer.
+  Om du väljer det här upplösningsläget riskerar du att förlora korrigeringar i den nya versionen. Vi rekommenderar därför starkt att detta alternativ inte används eller reserveras enbart för expertoperatorer.
 
 Om du väljer att lösa konflikten manuellt gör du så här:
 
@@ -508,13 +508,13 @@ I v7 har erbjudandeinnehållet flyttats. I v6.02 fanns innehållet i varje repre
 
 >[!IMPORTANT]
 >
->Om vissa leveranser med konfigurerade erbjudanden skulle skickas efter migreringen måste du ta bort och återskapa alla dessa leveranser i v7. Om du inte kan göra det visas ett kompatibilitetsläge. Det här läget rekommenderas inte eftersom du inte kommer att ha nytta av alla nya funktioner i Interaction v7. Detta är ett övergångsläge som gör att ni kan slutföra pågående kampanjer före den faktiska migreringen av 6.1. Kontakta oss om du vill ha mer information om det här läget.
+Om vissa leveranser med konfigurerade erbjudanden skulle skickas efter migreringen måste du ta bort och återskapa alla dessa leveranser i v7. Om du inte kan göra det visas ett kompatibilitetsläge. Det här läget rekommenderas inte eftersom du inte kommer att ha nytta av alla nya funktioner i Interaction v7. Detta är ett övergångsläge som gör att ni kan slutföra pågående kampanjer före den faktiska migreringen av 6.1. Kontakta oss om du vill ha mer information om det här läget.
 
 Ett exempel på ett rörelsescript (**interactionTo610_full_XX.js**) finns i **Migrering** i Adobe Campaign v7-mappen. Den här filen visar ett exempel på ett skript för en klient som använder en e-postrepresentation per erbjudande ( **[!UICONTROL htmlSource]** och **[!UICONTROL textSource]** fält). Innehållet som fanns i **NmsEmailOfferView** tabellen har flyttats till erbjudandetabellen.
 
 >[!NOTE]
 >
->Om du använder det här skriptet kan du inte utnyttja alternativen för innehållshantering och återgivningsfunktioner. För att kunna dra nytta av dessa funktioner måste du tänka om katalogen erbjuder, särskilt erbjudandeinnehållet och konfigurationsutrymmena.
+Om du använder det här skriptet kan du inte utnyttja alternativen för innehållshantering och återgivningsfunktioner. För att kunna dra nytta av dessa funktioner måste du tänka om katalogen erbjuder, särskilt erbjudandeinnehållet och konfigurationsutrymmena.
 
 ```
 loadLibrary("/nl/core/shared/nl.js");
@@ -614,7 +614,7 @@ Så här gör du när du har flyttat erbjudandeinnehållet om du bara har en mil
 
    >[!NOTE]
    >
-   >Namnen på kategorier och erbjudanden online ändras när de publicerats. Uppdatera alla referenser till erbjudanden och kategorier i den inkommande kanalen.
+   Namnen på kategorier och erbjudanden online ändras när de publicerats. Uppdatera alla referenser till erbjudanden och kategorier i den inkommande kanalen.
 
 ## Rapporter {#reports}
 
@@ -630,7 +630,7 @@ Alla standardrapporter använder för närvarande återgivningsmotorn v6.x. Om d
 -->
 Om du vill dra nytta av de nya rapportfunktionerna måste du publicera om rapporterna. I det här fallet kontrollerar du alla skript och ändrar dem om det behövs. När det gäller export från PDF kommer detta inte längre att fungera med den nya exportmotorn PDF (PhantomJS) om du har lagt till ett särskilt skript för Open Office.
 
-## Webbapplikationer {#web-applications}
+## Webbprogram {#web-applications}
 
 Det finns två webbprogramfamiljer:
 

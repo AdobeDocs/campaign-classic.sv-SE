@@ -7,9 +7,9 @@ badge-v8: label="v8" type="Positive" tooltip="Gäller även Campaign v8"
 feature: Email Design
 role: User, Developer, Data Engineer
 exl-id: d9688dc4-20c6-4a9a-990f-465f39b2faa2
-source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
+source-git-commit: 209ccbcac20052826dad0c55b35173be20b10114
 workflow-type: tm+mt
-source-wordcount: '1459'
+source-wordcount: '1454'
 ht-degree: 0%
 
 ---
@@ -78,7 +78,7 @@ Innehållets attribut och element representeras som JavaScript-objekt och följe
 >
 >Eftersom tecknet &#39;-&#39; är reserverat i JavaScript-språket måste alla attribut och element som innehåller det här tecknet återställas via `['<field>']` syntax.
 >
->Exempel: `content.@['offer-id']`.
+>Till exempel: `content.@['offer-id']`.
 
 Alla funktioner i ett programmeringsspråk (variabler, slingor, villkorstester, funktioner etc.). ) är tillgängligt för att skapa utdatadokumentet. SOAP API:er är tillgängliga för att berika utdatadokumentet.
 
@@ -565,7 +565,7 @@ I formuläret läggs fältet för att välja bilden till med följande syntax:
 
 ## Datumvisning {#date-display}
 
-I XML-indatadokumentet sparas datumen i ett internt XML-format: **YYYY/MM/DD HH:MM:SS** (exempel 2018/10/01 12):23:30).
+I XML-indatadokumentet sparas datumen i ett internt XML-format: **`YYYY/MM/DD HH:MM:SS`** (exempel `2018/10/01 12:23:30`).
 
 Adobe Campaign tillhandahåller datumformateringsfunktioner för JavaScript-mallar och XSL-formatmallar som beskrivs nedan.
 

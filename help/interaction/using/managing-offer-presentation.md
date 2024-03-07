@@ -1,7 +1,7 @@
 ---
 product: campaign
-title: Hantera en presentation av erbjudanden
-description: Hantera en presentation av erbjudanden
+title: Hantera presentation av erbjudanden
+description: Hantera presentation av erbjudanden
 feature: Interaction, Offers
 badge-v7: label="v7" type="Informative" tooltip="Gäller Campaign Classic v7"
 badge-v8: label="v8" type="Positive" tooltip="Gäller även Campaign v8"
@@ -9,14 +9,14 @@ audience: interaction
 content-type: reference
 topic-tags: managing-an-offer-catalog
 exl-id: 6158ffaa-cb08-4f77-82b8-b3e5e1bf7fd7
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: 209ccbcac20052826dad0c55b35173be20b10114
 workflow-type: tm+mt
-source-wordcount: '1007'
-ht-degree: 1%
+source-wordcount: '1013'
+ht-degree: 0%
 
 ---
 
-# Hantera en presentation av erbjudanden{#managing-offer-presentation}
+# Hantera presentation av erbjudanden{#managing-offer-presentation}
 
 
 
@@ -68,7 +68,7 @@ De programvillkor som finns i **[!UICONTROL General]** kan du ange erbjudanden s
 
 I **[!UICONTROL Offer presentation]** måste du ange samma dimensioner för presentationsregeln som de som har konfigurerats i miljön.
 
-The **[!UICONTROL Targeting dimension]** sammanfaller med mottagartabellen (som standard: nms:templates) som får erbjudandeförslagen. The **[!UICONTROL Storage dimension]** sammanfaller med tabellen som innehåller den förslagshistorik som är länkad till måldimensionen (som standard):nms:propositionRcp).
+The **[!UICONTROL Targeting dimension]** sammanfaller med mottagartabellen (som standard: `nms:recipients`) som får erbjudandeerbjudandena. The **[!UICONTROL Storage dimension]** sammanfaller med tabellen som innehåller den förslagshistorik som är länkad till måldimensionen (som standard: `nms:propositionRcp`).
 
 ![](assets/offer_typology_009.png)
 

@@ -7,16 +7,16 @@ badge-v8: label="v8" type="Positive" tooltip="Gäller även Campaign v8"
 feature: Monitoring, Deliverability
 role: User
 exl-id: cfd8f5c9-f368-4a31-a1e2-1d77ceae5ced
-source-git-commit: d2f5f2a662c022e258fb3cc56c8502c4f4cb2849
+source-git-commit: 209ccbcac20052826dad0c55b35173be20b10114
 workflow-type: tm+mt
-source-wordcount: '3009'
-ht-degree: 9%
+source-wordcount: '2990'
+ht-degree: 7%
 
 ---
 
 # Förstå karantänhantering{#understanding-quarantine-management}
 
-Adobe Campaign hanterar en lista med adresser i karantän. Mottagare vars adress sätts i karantän exkluderas som standard vid leveransanalys och anges inte som mål. En e-postadress kan sättas i karantän när till exempel postlådan är full eller om adressen inte finns. Under alla omständigheter uppfyller karantänförfarandet de särskilda regler som beskrivs nedan.
+Adobe Campaign hanterar en lista med adresser i karantän. Mottagare vars adress sätts i karantän exkluderas som standard vid leveransanalys och anges inte som mål. En e-postadress kan sättas i karantän, till exempel när postlådan är full eller om adressen inte finns. Under alla omständigheter uppfyller karantänförfarandet de särskilda regler som beskrivs nedan.
 
 >[!NOTE]
 >
@@ -74,7 +74,7 @@ Följande information finns för varje adress:
 >
 >Efter år 1: (1)&#42;0,33)/(1+0.5)=22 %.
 >
->Slutet av år 2: ((1.22)&#42;0,33)+0,33)/(1,5+0,75)=32,5 %.
+Slutet av år 2: ((1.22)&#42;0,33)+0,33)/(1,5+0,75)=32,5 %.
 
 ### Identifiera adresser i karantän i leveransrapporter {#identifying-quarantined-addresses-in-delivery-reports}
 
@@ -109,7 +109,7 @@ Om en användare kvalificerar ett e-postmeddelande som skräppost ([feedback-sli
 
 >[!NOTE]
 >
->Karantänen i Adobe Campaign är skiftlägeskänslig.    Se till att importera e-postadresser med små bokstäver så att inte e-postadresserna fortsätter att ta emot meddelanden.
+Karantänen i Adobe Campaign är skiftlägeskänslig.    Se till att importera e-postadresser med små bokstäver så att inte e-postadresserna fortsätter att ta emot meddelanden.
 
 I listan över adresser i karantän (se [Identifiera adresser i karantän för hela plattformen](#identifying-quarantined-addresses-for-the-entire-platform)), **[!UICONTROL Error reason]** anger varför den valda adressen placerades i karantän.
 
@@ -145,7 +145,7 @@ Status ändras sedan till **[!UICONTROL Valid]**.
 
 >[!IMPORTANT]
 >
->Mottagare med en adress i en **[!UICONTROL Quarantine]** eller **[!UICONTROL Denylisted]** status tas aldrig bort, även om de får ett e-postmeddelande.
+Mottagare med en adress i en **[!UICONTROL Quarantine]** eller **[!UICONTROL Denylisted]** status tas aldrig bort, även om de får ett e-postmeddelande.
 
 ### Manuella uppdateringar {#unquarantine-manual}
 
@@ -165,8 +165,8 @@ Nedan följer de rekommenderade riktlinjerna för den här frågan:
 
    * **Feltext (karantäntext)** innehåller &quot;Momen_Code10_InvalidRecipient&quot;
    * **E-postdomän (@domän)** lika med domain1.com OR **E-postdomän (@domän)** lika med domain2.com OR **E-postdomän (@domän)** lika med domain3.com
-   * **Uppdateringsstatus (@lastModified)** på eller efter MM/DD/ÅÅÅÅ HH:MM:SS AM
-   * **Uppdateringsstatus (@lastModified)** på eller före MM/DD/ÅÅÅÅ HH:MM:SS PM
+   * **Uppdateringsstatus (@lastModified)** på eller efter `MM/DD/YYYY HH:MM:SS AM`
+   * **Uppdateringsstatus (@lastModified)** på eller före `MM/DD/YYYY HH:MM:SS PM`
 
 * För Campaign Classic v7-instanser med SMTP-studssvarsinformation i **[!UICONTROL Error text]** karantänlistans fält:
 
@@ -174,8 +174,8 @@ Nedan följer de rekommenderade riktlinjerna för den här frågan:
 
   där &quot;support.ISP.com&quot; kan vara: &quot;support.apple.com&quot; eller &quot;support.google.com&quot;, till exempel
 
-   * **Uppdateringsstatus (@lastModified)** på eller efter MM/DD/ÅÅÅÅ HH:MM:SS AM
-   * **Uppdateringsstatus (@lastModified)** på eller före MM/DD/ÅÅÅÅ HH:MM:SS PM
+   * **Uppdateringsstatus (@lastModified)** på eller efter `MM/DD/YYYY HH:MM:SS AM`
+   * **Uppdateringsstatus (@lastModified)** på eller före  `MM/DD/YYYY HH:MM:SS PM`
 
 När du har en lista över mottagare som påverkas lägger du till en **[!UICONTROL Update data]** aktivitet för att ange e-postadressstatus till **[!UICONTROL Valid]** så att de tas bort från karantänlistan av **[!UICONTROL Database cleanup]** arbetsflöde. Du kan även ta bort dem från karantäntabellen.
 
@@ -292,13 +292,13 @@ Under leveransanalysen läggs alla enheter som är undantagna från målet autom
 
 >[!NOTE]
 >
->Här är olika typer av fel för kunder som använder Baidu-kontakten:
+Här är olika typer av fel för kunder som använder Baidu-kontakten:
 >
->* Anslutningsproblem i början av leveransen: feltyp **[!UICONTROL Undefined]**, felorsak **[!UICONTROL Unreachable]**, återförsök utförs.
->* Anslutningen bröts under leveransen: mjukt fel, felorsak **[!UICONTROL Refused]**, återförsök utförs.
->* Synkront fel returnerades av Baidu under sändning: hårt fel, felorsak **[!UICONTROL Refused]**, inga nya försök utförs.
+* Anslutningsproblem i början av leveransen: feltyp **[!UICONTROL Undefined]**, felorsak **[!UICONTROL Unreachable]**, återförsök utförs.
+* Anslutningen bröts under leveransen: mjukt fel, felorsak **[!UICONTROL Refused]**, återförsök utförs.
+* Synkront fel returnerades av Baidu under sändning: hårt fel, felorsak **[!UICONTROL Refused]**, inga nya försök utförs.
 >
->Adobe Campaign kontaktar Baidu-servern var 10:e minut för att hämta det skickade meddelandets status och uppdaterar sändningarna. Om ett meddelande deklareras som skickat anges meddelandets status i utsändningsloggarna till **[!UICONTROL Received]**. Om Baidu deklarerar ett fel ställs statusen in på **[!UICONTROL Failed]**.
+Adobe Campaign kontaktar Baidu-servern var 10:e minut för att hämta det skickade meddelandets status och uppdaterar sändningarna. Om ett meddelande deklareras som skickat anges meddelandets status i utsändningsloggarna till **[!UICONTROL Received]**. Om Baidu deklarerar ett fel ställs statusen in på **[!UICONTROL Failed]**.
 
 **För Android V2**
 
@@ -517,7 +517,7 @@ Karantänmekanismen för SMS-meddelanden är globalt densamma som den allmänna 
 
 >[!NOTE]
 >
->The **[!UICONTROL Delivery log qualification]** tabellen gäller inte för **Utökad allmän SMPP** koppling.
+The **[!UICONTROL Delivery log qualification]** tabellen gäller inte för **Utökad allmän SMPP** koppling.
 
 <table> 
  <tbody> 
@@ -576,9 +576,9 @@ Innan en ny typ av fel har kvalificerats anges felorsaken alltid till **Avvisad*
 
 >[!NOTE]
 >
->Feltyperna och orsakerna till felet är desamma som för e-postmeddelanden. Se [Typ av leveransfel och orsaker](understanding-delivery-failures.md#delivery-failure-types-and-reasons).
+Feltyperna och orsakerna till felet är desamma som för e-postmeddelanden. Se [Typ av leveransfel och orsaker](understanding-delivery-failures.md#delivery-failure-types-and-reasons).
 >
->Be leverantören om en lista över status- och felkoder för att ange korrekta feltyper och orsaker till felet i tabellen för leveransloggens kvalificeringsregister.
+Be leverantören om en lista över status- och felkoder för att ange korrekta feltyper och orsaker till felet i tabellen för leveransloggens kvalificeringsregister.
 
 Exempel på ett genererat meddelande:
 
