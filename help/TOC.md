@@ -6,9 +6,9 @@ title: Användarhandbok för Campaign Classic v7
 user-guide-description: Produktdokumentation för Adobe Campaign Classic v7.
 sub-product: adobe campaign classic
 type: Documentation
-source-git-commit: e4d57effe5cae1effcd6fbcd716b9dcf4eec6189
+source-git-commit: 834d6c02536187b348842e6d524c4a83d02b355d
 workflow-type: tm+mt
-source-wordcount: '2549'
+source-wordcount: '2552'
 ht-degree: 99%
 
 ---
@@ -17,16 +17,16 @@ ht-degree: 99%
 # Dokumentation för Adobe Campaign Classic v7 {#using}
 
 + [Dokumentation om Campaign v7](campaign-classic-home.md)
-+ [Senaste uppdateringar](rn/using/documentation-updates.md)
 + Versionsinformation {#release-notes}
    + [Kom igång med uppgraderingar](rn/using/rn-overview.md)
    + [Senaste versionen](rn/using/latest-release.md)
    + Tidigare versioner {#previous-releases}
-      + [2022](rn/using/release-2022.md)
-      + [2021](rn/using/release-2021.md)
-      + [[!DNL Gold Standard]](rn/using/gold-standard.md)
+      + [2022 års utgåvor](rn/using/release-2022.md)
+      + [2021-versioner](rn/using/release-2021.md)
+      + [[!DNL Gold Standard]-versioner ](rn/using/gold-standard.md)
    + [Inaktuella funktioner](rn/using/deprecated-features.md)
    + [Kompatibilitetsmatris](rn/using/compatibility-matrix.md)
+   + [Dokumentationsuppdateringar](rn/using/documentation-updates.md)
 + Komma igång {#getting-started}
    + Kom igång med Adobe Campaign {#starting-with-adobe-campaign}
       + [Kom igång med Adobe Campaign Classic](platform/using/about-adobe-campaign-classic.md)
