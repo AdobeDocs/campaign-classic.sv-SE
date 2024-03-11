@@ -6,9 +6,9 @@ title: Användarhandbok för Campaign Classic v7
 user-guide-description: Produktdokumentation för Adobe Campaign Classic v7.
 sub-product: adobe campaign classic
 type: Documentation
-source-git-commit: f03e72d4ecd17446264adf74603aefca95f99d41
+source-git-commit: de57e7aec255ab2995d1a758642e6a73cafa91b3
 workflow-type: tm+mt
-source-wordcount: '2542'
+source-wordcount: '2549'
 ht-degree: 99%
 
 ---
@@ -824,6 +824,7 @@ ht-degree: 99%
    + [Återställningsförfarande](migration/using/about-rollback.md)
 + Tekniska anmärkningar {#technotes}
    + [Rekommendationer på maskinvarustorlek](technotes/using/hardware-sizing.md)
+   + [Inkommande SMS-arbetsflödesaktivitet för infrastruktur med mellanleverantörer](technotes/using/inbound-sms.md)
    + Uppgradera till IMS{#ims}
       + [Migrera användare till IMS](technotes/using/migrate-users-to-ims.md)
       + [Migrera tekniska operatorer till Developer Console](technotes/using/ims-migration.md)
