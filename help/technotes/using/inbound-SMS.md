@@ -4,9 +4,9 @@ title: Inkommande SMS-arbetsflödesaktivitet för infrastruktur med mellanlevera
 description: Inkommande SMS-arbetsflödesaktivitet för infrastruktur med mellanleverantörer
 feature: Technote, SMS
 badge-v7-only: label="v7" type="Informative" tooltip="Gäller endast Campaign Classic v7"
-source-git-commit: de57e7aec255ab2995d1a758642e6a73cafa91b3
+source-git-commit: 5667cb6b45742638f8c984d7eb9633660f64fc0f
 workflow-type: tm+mt
-source-wordcount: '409'
+source-wordcount: '430'
 ht-degree: 2%
 
 ---
@@ -70,11 +70,20 @@ ht-degree: 2%
    ```
 
    Med följande nya anpassade skript för att uppdatera inSMS-data baserat på en sammansatt nyckel, som kombinerar primärnyckeln för posten för Mid-sourcing och det externa konto-ID:t för SMS-routningen för marknadsföring.
+Följ förfrågorna nedan:
 
-   ```
+   * Ange det verkliga värdet för `<EXTERNAL_ACCOUNT_ID>`, t,g, `var iExtAccountId=72733155`.
+   * Se till att du behåller följande element i det anpassade skriptet:
+      * `_operation="insertOrUpdate"`
+      * `_key="@midInSMSId,@extAccount-id"`
+      * `midInSMSId={smsMessage.id}`
+      * `inSms.@["extAccount-id"] = iExtAccountId;{}`
+
+   ```Javascript
    // please enter real external account ID to replace <EXTERNAL ACCOUNT ID>
    var iExtAccountId=<EXTERNAL_ACCOUNT_ID>;
-   // make sure to keep the following elements in the custom script (the rest is optional and custom code can be added): _operation="insertOrUpdate", _key="@midInSMSId,@extAccount-id", midInSMSId={smsMessage.id}, inSms.@["extAccount-id"] = iExtAccountId;, var inSms = <inSMS xtkschema="nms:inSMS" _operation="insertOrUpdate"
+   
+   var inSms = <inSMS xtkschema="nms:inSMS" _operation="insertOrUpdate"
    
                _key="@midInSMSId,@extAccount-id"
                midInSMSId={smsMessage.id}
@@ -90,6 +99,7 @@ ht-degree: 2%
                operatorCode = {smsMessage.operatorCode}
                linkedSmsId={smsMessage.linkedSmsId}
                separator = {smsMessage.separator}/>
+   
    inSms.@["extAccount-id"] = iExtAccountId;
    
    xtk.session.Write(inSms);
