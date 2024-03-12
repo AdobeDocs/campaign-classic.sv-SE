@@ -7,14 +7,14 @@ badge-v8: label="v8" type="Positive" tooltip="Gäller även Campaign v8"
 feature: Email
 role: User, Admin, Developer
 exl-id: 58cc23f4-9ab0-45c7-9aa2-b08487ec7e91
-source-git-commit: d2f5f2a662c022e258fb3cc56c8502c4f4cb2849
+source-git-commit: bc6f5d569d0c8a5eba4499a854af370258ce83a2
 workflow-type: tm+mt
-source-wordcount: '1352'
-ht-degree: 3%
+source-wordcount: '1380'
+ht-degree: 0%
 
 ---
 
-# Skicka med förbättrad MTA {#sending-with-enhanced-mta}
+# Skicka med Förbättrad MTA {#sending-with-enhanced-mta}
 
 The **Adobe Campaign Enhanced MTA** (E-postöverföringsagent) tillhandahåller en uppgraderad sändningsinfrastruktur som möjliggör förbättrad leveransförmåga, renommé, genomströmning, rapportering, studshantering, IP-avkodning och hantering av anslutningsinställningar.
 
@@ -109,13 +109,17 @@ Studentkvalifikationerna i Campaign **[!UICONTROL Delivery log qualification]** 
 
 Mer information om studskvalifikationer finns i [det här avsnittet](understanding-delivery-failures.md#bounce-mail-qualification).
 
+### Leverans
+
+En leverans kan inte stoppas när den har överförts till det förbättrade MTA-avtalet - även om den visas med **[!UICONTROL Stopped]** status i Campaign.
+
 ### Leveranskapacitet
 
 Dataflödesdiagrammet för Campaign Delivery visar inte längre dataflödet för dina e-postmottagare. I det diagrammet visas nu dataöverföringshastigheten för vidarebefordran av meddelanden från Campaign till det förbättrade MTA-avtalet.
 
 Mer information om leveransflöde finns i [det här avsnittet](../../reporting/using/global-reports.md#delivery-throughput).
 
-### Återförsök
+### Försök igen
 
 Inställningarna för nya försök i leveransen används inte längre av Campaign. Mjuka avhoppsförsök och hur lång tid det tar mellan dem bestäms av den förbättrade MTA-metoden baserat på typ och allvarlighetsgrad för de avhoppssvar som kommer tillbaka från meddelandets e-postdomän.
 
@@ -127,7 +131,7 @@ Inställningen för giltighetsperiod i kampanjleveranserna kommer endast att anv
 
 Om giltighetsperioden till exempel är inställd på standardvärdet 5 dagar i Campaign kommer meddelanden med mjuk studsning att hamna i den förbättrade MTA-återförsökskön och provas igen i upp till 3,5 dagar från den dag då meddelandet nådde den förbättrade MTA-gränsen. I så fall används inte det värde som angetts i Campaign.
 
-När ett meddelande har varit i Enhanced MTA-kön i 3,5 dagar och inte kunnat levereras, kommer det att löpa ut och status uppdateras från **[!UICONTROL Sent]** till **[!UICONTROL Failed]** i leveransloggarna.
+När ett meddelande har varit i den förbättrade MTA-kön i 3,5 dagar och inte kunnat levereras, kommer det att gå ut och statusen uppdateras från **[!UICONTROL Sent]** till **[!UICONTROL Failed]** i leveransloggarna.
 
 Mer information om giltighetsperioden finns i [det här avsnittet](steps-sending-the-delivery.md#defining-validity-period).
 
