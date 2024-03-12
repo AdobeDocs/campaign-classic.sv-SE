@@ -4,7 +4,7 @@ title: Inkommande SMS-arbetsflödesaktivitet för infrastruktur med mellanlevera
 description: Inkommande SMS-arbetsflödesaktivitet för infrastruktur med mellanleverantörer
 feature: Technote, SMS
 badge-v7-only: label="v7" type="Informative" tooltip="Gäller endast Campaign Classic v7"
-source-git-commit: 5667cb6b45742638f8c984d7eb9633660f64fc0f
+source-git-commit: 85adfe3515480bed559091427ff1acec14a70320
 workflow-type: tm+mt
 source-wordcount: '430'
 ht-degree: 2%
@@ -23,7 +23,7 @@ ht-degree: 2%
 
 1. Lägg till ett tillägg i `nms:inSMS` schema på din Marketing-instans. Tillägget lägger till ett nytt attribut i `nms:inSMS` och håll reda på primärnyckeln för inSMS-posten som kommer från Mid-sourcing-instansen.
 
-   ```
+   ```xml
    <element img="nms:miniatures/mini-sms.png" label="Incoming SMS"
           labelSingular="Incoming SMS" name="inSMS">
    <dbindex name="midInSMSId" unique="false">
@@ -55,7 +55,7 @@ ht-degree: 2%
 
    Ersätt nedanstående block. Observera att skriptet kan variera om du tidigare har anpassat den här koden.
 
-   ```
+   ```Javascript
    var lastSynchKey = getOption('SMS_MO_INDEX_WKF1105_inSmsUS_smsmidus');
    
    var smsId = application.getNewIds(1);
@@ -70,7 +70,8 @@ ht-degree: 2%
    ```
 
    Med följande nya anpassade skript för att uppdatera inSMS-data baserat på en sammansatt nyckel, som kombinerar primärnyckeln för posten för Mid-sourcing och det externa konto-ID:t för SMS-routningen för marknadsföring.
-Följ förfrågorna nedan:
+
+   Följ förfrågorna nedan:
 
    * Ange det verkliga värdet för `<EXTERNAL_ACCOUNT_ID>`, t,g, `var iExtAccountId=72733155`.
    * Se till att du behåller följande element i det anpassade skriptet:
@@ -111,7 +112,7 @@ Följ förfrågorna nedan:
 
    Skriptet återställer pekaren för primärnyckeln till 24 timmar före. Arbetsflödet kommer att försöka bearbeta om alla inSMS-data från Mid-sourcing-instansen under de senaste 24 timmarna och lägga till saknade data i Marketing-instansen.
 
-   ```
+   ```Javascript
    // please enter real external account ID to replace <EXTERNAL_ACCOUNT_ID>
    // please enter real pointer option name to replace '<POINTER_OPTION_NAME>'
    // OPTION NAME format: SMS_MO_INDEX_{internal name of the workflow}_inSms_{internal name of the external account to access the mid}
