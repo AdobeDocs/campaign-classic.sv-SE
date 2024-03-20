@@ -9,9 +9,9 @@ audience: platform
 content-type: reference
 topic-tags: importing-and-exporting-data
 exl-id: 1a79da3b-2abc-4bfc-a0ee-8471c478638d
-source-git-commit: 668cee663890fafe27f86f2afd3752f7e2ab347a
+source-git-commit: 67a6e03318a74b665dc6928028470f98c0abae5e
 workflow-type: tm+mt
-source-wordcount: '702'
+source-wordcount: '703'
 ht-degree: 8%
 
 ---
@@ -44,7 +44,7 @@ Du kan sedan använda de förbehandlingskommandon du vill i dina arbetsflöden:
 1. Lägg till och konfigurera en **[!UICONTROL File transfer]** i ditt arbetsflöde.
 1. Lägg till en **[!UICONTROL Data loading (file)]** och definiera filformatet.
 1. Markera alternativet **[!UICONTROL Pre-process the file]**.
-1. Ange det förbehandlingskommando som du vill använda.
+1. Välj det förbehandlingskommando som du vill använda.
 1. Lägg till andra aktiviteter för att hantera data som kommer från filen.
 1. Spara och kör arbetsflödet.
 
@@ -87,17 +87,15 @@ Så här utför du det här användningsfallet:
 
 1. Öppna **[!UICONTROL Data loading (file)]** och sedan konfigurera den efter dina behov. Globala koncept för hur du konfigurerar aktiviteten finns i [det här avsnittet](../../workflow/using/data-loading-file.md).
 
-   Lägg till en förbearbetningsfas i aktiviteten för att dekryptera inkommande data. Om du vill göra det väljer du **[!UICONTROL Pre-process the file]** och sedan kopiera och klistra in dekrypteringskommandot i **[!UICONTROL Command]** fält:
-
-   `gpg --batch --passphrase passphrase --decrypt <%=vars.filename%>`
+   Lägg till en förbearbetningsfas i aktiviteten för att dekryptera inkommande data. Om du vill göra det väljer du **[!UICONTROL Pre-process the file]** välj **[!UICONTROL Decrypt]** från **[!UICONTROL Command]** listruta:
 
    ![](assets/gpg_load.png)
 
-   >[!CAUTION]
+   >[!NOTE]
    >
-   >I det här exemplet använder vi den lösenfras som används som standard av Kontrollpanelen, som är&quot;lösenfras&quot;.
+   >Om det behövs ändringar av de tillgängliga kommandona kan du kontakta [Adobe kundtjänst](https://helpx.adobe.com/se/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) om du vill justera inställningarna för preProcessCommand.
    >
-   >Om du redan har installerat GPG-nycklar på din instans via en kundtjänstförfrågan tidigare kan lösenfrasen ha ändrats och vara en annan som standard.
+   >Om du arbetar med en hybriddistribution kan du konfigurera kommandona direkt från serverkonfigurationsfilen (serverConf.xml). [Lär dig konfigurera förbehandlingskommandon i serverkonfigurationsfilen](../../installation/using/the-server-configuration-file.md#preprocesscommand)
 
 1. Klicka **[!UICONTROL OK]** för att bekräfta aktivitetskonfigurationen.
 
