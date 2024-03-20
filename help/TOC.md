@@ -1,15 +1,15 @@
 ---
 audience: end-user
-breadcrumb-title: Dokumentation om Campaign Classic v7
+breadcrumb-title: Dokumentation för Campaign Classic v7
 product: campaign
 title: Användarhandbok för Campaign Classic v7
 user-guide-description: Produktdokumentation för Adobe Campaign Classic v7.
 sub-product: adobe campaign classic
 type: Documentation
 source-git-commit: 834d6c02536187b348842e6d524c4a83d02b355d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2552'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 99%
    + [Kom igång med uppgraderingar](rn/using/rn-overview.md)
    + [Senaste versionen](rn/using/latest-release.md)
    + Tidigare versioner {#previous-releases}
-      + [2022 års utgåvor](rn/using/release-2022.md)
+      + [2022-versioner](rn/using/release-2022.md)
       + [2021-versioner](rn/using/release-2021.md)
       + [[!DNL Gold Standard]-versioner ](rn/using/gold-standard.md)
    + [Inaktuella funktioner](rn/using/deprecated-features.md)
@@ -824,7 +824,7 @@ ht-degree: 99%
    + [Återställningsförfarande](migration/using/about-rollback.md)
 + Tekniska anmärkningar {#technotes}
    + [Rekommendationer på maskinvarustorlek](technotes/using/hardware-sizing.md)
-   + [Inkommande SMS-arbetsflödesaktivitet för infrastruktur med mellanleverantörer](technotes/using/inbound-SMS.md)
+   + [Inkommande SMS-arbetsflödesaktivitet för mid-sourcingsinfrastruktur](technotes/using/inbound-SMS.md)
    + Uppgradera till IMS{#ims}
       + [Migrera användare till IMS](technotes/using/migrate-users-to-ims.md)
       + [Migrera tekniska operatorer till Developer Console](technotes/using/ims-migration.md)

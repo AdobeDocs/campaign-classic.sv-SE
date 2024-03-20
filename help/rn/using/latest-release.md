@@ -8,9 +8,9 @@ role: User
 level: Beginner
 exl-id: d65869ca-a785-4327-8e8d-791c28e4696c
 source-git-commit: 517f09e508207b14e6b870f926753b2d9a547262
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2319'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -33,7 +33,7 @@ _5 december 2023_
 
 * Dessutom, som en del av arbetet med att förstärka säkerheten och autentiseringsprocessen, rekommenderar Adobe Campaign starkt att du migrerar slutanvändarautentiseringsläget från den inbyggda inloggnings-/lösenordsautentiseringen till Adobe Identity Management System (IMS). Läs om hur du migrerar dina operatörer i [det här tekniska dokumentet](../../technotes/using/migrate-users-to-ims.md).
 
-* Nu när ett webbformulär har **Väntande publikation** status, blir den inte automatiskt live. För att förhindra säkerhetsproblem måste den publiceras innan den kan tas bort **Online** och kan nås via webbformulärets URL i en webbläsare. [Läs mer](../../web/using/publishing-a-web-form.md#life-cycle-of-a-form)
+* När ett webbformulär har statusen **Väntande publikation** blir den inte automatiskt aktiv. För att förhindra säkerhetsproblem måste den publiceras innan den kommer **Online** och kan nås via webbformulärets URL i en webbläsare. [Läs mer](../../web/using/publishing-a-web-form.md#life-cycle-of-a-form)
 
 ### Korrigeringar {#release-7-3-5-patches}
 
