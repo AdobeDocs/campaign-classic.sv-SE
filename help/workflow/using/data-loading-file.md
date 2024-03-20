@@ -5,10 +5,10 @@ description: Läs mer om arbetsflödesaktiviteten Datainläsning (fil)
 badge-v7-only: label="v7" type="Informative" tooltip="Gäller endast Campaign Classic v7"
 feature: Workflows, Data Management Activity
 exl-id: a380e486-a40c-4bf6-b7f4-7dcd76c34085
-source-git-commit: 67a6e03318a74b665dc6928028470f98c0abae5e
+source-git-commit: 229844437770c460d958724e2dc15941e35939a6
 workflow-type: tm+mt
-source-wordcount: '1087'
-ht-degree: 15%
+source-wordcount: '1147'
+ht-degree: 14%
 
 ---
 
@@ -28,11 +28,17 @@ I det övre avsnittet av konfigurationsfönstret för den här aktiviteten kan d
 
 ![](assets/s_advuser_wf_etl_file.png)
 
-Du kan definiera en förprocess som ska utföras under filimport, t.ex. för att inte behöva packa upp filen på servern (och därför spara utrymme för den uppzippade filen) utan för att inkludera uppzippning i filbearbetningen. Välj **[!UICONTROL Pre-process the file]** och välj något av tre alternativ: **[!UICONTROL None]**, **[!UICONTROL Decompression]** (zcat) eller **[!UICONTROL Decrypt]** (gpg)
+## Använd förbearbetningsfas {#pre-processing}
+
+Du kan definiera en förprocess som ska utföras under filimport, t.ex. för att inte behöva packa upp filen på servern (och därför spara utrymme för den uppzippade filen) utan för att inkludera uppzippning i filbearbetningen. [Lär dig packa upp eller dekryptera en fil innan du bearbetar den](../../platform/using/unzip-decrypt.md).
+
+Om du vill göra det väljer du **[!UICONTROL Pre-process the file]** och välj något av tre alternativ: **[!UICONTROL None]**, **[!UICONTROL Decompression]** (zcat) eller **[!UICONTROL Decrypt]** (gpg)
 
 ![](assets/preprocessing-dataloading.png)
 
-Mer information finns i följande avsnitt: [Zippa upp eller dekryptera en fil före bearbetning](../../platform/using/unzip-decrypt.md).
+>[!CAUTION]
+>
+>Om du arbetar med en hybriddistribution eller en lokal distribution kanske inte förbehandlingskommandon fungerar som de ska, eftersom standardkonfigurationen använder zcat, som inte är tillgängligt i Windows. I så fall måste du justera **preProcessCommand** i serverkonfigurationsfilen (serverConf.xml) efter dina behov. [Lär dig konfigurera förbehandlingskommandon i serverkonfigurationsfilen](../../installation/using/the-server-configuration-file.md#preprocesscommand)
 
 ## Definiera filformatet {#defining-the-file-format}
 
