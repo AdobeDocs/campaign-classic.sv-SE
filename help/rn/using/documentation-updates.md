@@ -7,10 +7,10 @@ badge-v7-only: label="v7" type="Informative" tooltip="Gäller endast Campaign Cl
 role: User
 level: Beginner
 exl-id: 07c1f4a3-cf16-4a9b-b402-e13258799f91
-source-git-commit: 668cee663890fafe27f86f2afd3752f7e2ab347a
-workflow-type: ht
-source-wordcount: '3699'
-ht-degree: 100%
+source-git-commit: a6113868f5e22583c8017b1134f69d66b92e92f1
+workflow-type: tm+mt
+source-wordcount: '3716'
+ht-degree: 99%
 
 ---
 
@@ -21,6 +21,10 @@ Den här sidan visar alla nya funktioner och dokumentationsuppdateringar efter m
 Se [Versionsinformationen för Adobe Campaign Classic](../../rn/using/latest-release.md) beträffande versionsrelaterade uppdateringar.
 
 ## 2024
+
+### Mars 2024 {#mar-2024}
+
+Konfigurationsavsnittet för mobilappar har uppdaterats för iOS-tokenbaserad anslutning till APN:er. [Läs mer](../../delivery/using/configuring-the-mobile-application.md#creating-ios-app)
 
 ### Januari 2024 {#jan-2024}
 
