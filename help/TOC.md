@@ -6,10 +6,10 @@ title: Användarhandbok för Campaign Classic v7
 user-guide-description: Produktdokumentation för Adobe Campaign Classic v7.
 sub-product: adobe campaign classic
 type: Documentation
-source-git-commit: 834d6c02536187b348842e6d524c4a83d02b355d
-workflow-type: ht
-source-wordcount: '2552'
-ht-degree: 100%
+source-git-commit: 59156851156338c9462781d31ce81a651362f2da
+workflow-type: tm+mt
+source-wordcount: '2558'
+ht-degree: 99%
 
 ---
 
@@ -107,8 +107,9 @@ ht-degree: 100%
          + [Anslut till Salesforce.com](platform/using/crm-sfdc.md)
          + [Synkronisera data med din CRM](platform/using/crm-data-sync.md)
       + Adobe Analytics Connector{#analytics-connector}
-         + [Etablering av Adobe Analytics Connector](platform/using/adobe-analytics-provisioning.md)
+         + [Kom igång med Adobe Analytics Connector](platform/using/gs-aa.md)
          + [Integrering med Adobe Analytics Connector](platform/using/adobe-analytics-connector.md)
+         + [Etablering av Adobe Analytics Connector](platform/using/adobe-analytics-provisioning.md)
          + [Så här migrerar du till Adobe Analytics Connector](technotes/using/aa-connector-migration.md)
          + [Datakopplingen i Adobe Analytics](platform/using/adobe-analytics-data-connector-legacy.md)
    + [Hjälp- och supportalternativ](support.md)

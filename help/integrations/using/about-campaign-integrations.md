@@ -9,10 +9,10 @@ audience: integrations
 content-type: reference
 topic-tags: campaign-integrations
 exl-id: ceb584da-bc97-4b71-9499-59df5e6d10c3
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: 59156851156338c9462781d31ce81a651362f2da
 workflow-type: tm+mt
-source-wordcount: '769'
-ht-degree: 12%
+source-wordcount: '736'
+ht-degree: 7%
 
 ---
 
@@ -90,12 +90,12 @@ Följande tabell visar tillgänglig integreringsdokumentation för Experience Cl
    <td> Gör att du kan infoga resurser från dina <strong>AEM Assets</strong> bibliotek till e-postmeddelanden och landningssidor som skapats i Adobe Campaign.<br /> <p><a href="../../integrations/using/configuring-access-to-assets.md#integrating-with-aem-assets">Läs mer</a> om Adobe Campaign - integrering med AEM Assets.</p><br /> </td> 
   </tr> 
   <tr> 
-   <td> <strong>Utlösare i Experience Cloud</strong><br /> </td> 
+   <td> <strong>Experience Cloud-utlösare</strong><br /> </td> 
    <td> Integration mellan <strong>Startar bastjänst</strong> och Adobe Campaign gör att ni kan skicka personaliserade e-postmeddelanden till era kunder som en reaktion på specifika beteenden som spåras på er webbplats av Adobe Analytics.<br /> <p><a href="https://helpx.adobe.com/se/campaign/kb/triggers-and-campaign.html">Läs mer</a> om Adobe Campaign - integrering av utlösare för Experience Cloud.</p><br /> </td> 
   </tr> 
   <tr> 
    <td> <strong>Adobe Analytics Connector</strong><br /> </td> 
-   <td> <strong>Adobe Analytics Connector</strong> gör att Adobe Campaign och Adobe Analytics kan interagera genom segment som rör användarbeteende efter en e-postkampanj. Omvänt skickas indikatorer och attribut för e-postkampanjer från Adobe Campaign till Adobe Analytics.<br /> <p><a href="../../platform/using/adobe-analytics-connector.md">Läs mer</a> om Campaign - Integrering med Analytics Connectors.</p><br /> </td> 
+   <td> <strong>Adobe Analytics Connector</strong> gör att Adobe Campaign och Adobe Analytics kan interagera genom segment som rör användarbeteende efter en e-postkampanj. Omvänt skickas indikatorer och attribut för e-postkampanjer från Adobe Campaign till Adobe Analytics.<br /> <p><a href="../../platform/using/gs-aa.md">Läs mer</a> om Campaign - Integrering med Analytics Connectors.</p><br /> </td> 
   </tr> 
  </tbody> 
 </table>

@@ -1,22 +1,22 @@
 ---
 product: campaign
-title: Webbanalys
+title: Web Analytics
 description: Läs mer om Web Analytics-paketet
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+badge-v7-only: label="v7" type="Informative" tooltip="Gäller endast Campaign Classic v7"
 feature: Workflows, Analytics Integration
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 59156851156338c9462781d31ce81a651362f2da
 workflow-type: tm+mt
-source-wordcount: '182'
-ht-degree: 3%
+source-wordcount: '185'
+ht-degree: 4%
 
 ---
 
 
-# Webbanalys{#web-analytics}
+# Web Analytics{#web-analytics}
 
 
 
-Arbetsflödena nedan installeras tillsammans med **Web Analytics-anslutningar** som standard. Mer information om den här modulen finns i [section](../../platform/using/adobe-analytics-connector.md).
+Arbetsflödena nedan installeras tillsammans med **Web Analytics-anslutningar** som standard. Mer information om modulen finns i [section](../../platform/using/gs-aa.md).
 
 <table> 
  <tbody> 
@@ -28,12 +28,12 @@ Arbetsflödena nedan installeras tillsammans med **Web Analytics-anslutningar** 
   <tr> 
    <td> <span class="uicontrol">Skicka indikatorer och kampanjattribut</span> <br /> </td> 
    <td> <span class="uicontrol">webAnalyticsSendMetrics</span> <br /> </td> 
-   <td> Med det här arbetsflödet kan ni skicka kampanjindikatorer från Adobe Campaign till Adobe Experience Cloud Suite via Adobe® Analytics-kontakten. De berörda indikatorerna är följande: <strong>Skickat</strong> (Skickat), <strong>Totalt antal öppningar</strong> (iTotalRecipientOpen), <strong>Totalt antal mottagare som klickat</strong> (iTotalRecipientClick), <strong>Fel</strong> (iError), <strong>Avanmäl dig</strong> (avanmäl dig) (avanmäl dig).<br /> </td> 
+   <td> Med det här arbetsflödet kan ni skicka kampanjindikatorer från Adobe Campaign till Adobe Experience Cloud Suite via Adobe® Analytics-kontakten. Följande indikatorer är berörda: <strong>Skickat</strong> (Skickat) <strong>Totalt antal öppningar</strong> (iTotalRecipientOpen), <strong>Totalt antal mottagare som klickat</strong> (iTotalRecipientClick), <strong>Fel</strong> (iError), <strong>Avanmäl dig</strong> (avanmäl dig) (avanmäl dig).<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">Identifiering av konverterade kontakter</span> <br /> </td> 
    <td> <span class="uicontrol">webAnalyticsFindConverted</span> <br /> </td> 
-   <td> Det här arbetsflödet indexerar besökare som har slutfört sitt köp efter en ny marknadsföringskampanj. Data som återställs av det här arbetsflödet kan nås via <span class="uicontrol">Rapport om effektivitet vid återmarknadsföring</span> (Se denna <a href="../../platform/using/adobe-analytics-connector.md#creating-a-re-marketing-campaign"> page</a>). <br /> </td> 
+   <td> Det här arbetsflödet indexerar besökare som har slutfört sitt köp efter en ny marknadsföringskampanj. Data som återställs av det här arbetsflödet kan nås via <span class="uicontrol">Rapport om effektivitet vid återmarknadsföring</span>. <br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">Rensa händelse</span> <br /> </td> 

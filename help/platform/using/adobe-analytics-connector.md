@@ -6,10 +6,12 @@ badge-v7-only: label="v7" type="Informative" tooltip="Gäller endast Campaign Cl
 feature: Analytics Integration
 role: User, Admin
 level: Beginner
+hide: true
+hidefromtoc: true
 exl-id: 0dc6ce98-dc3e-4242-953e-e7cec55289ff
-source-git-commit: ccc48c93d81266b0971acc3a549458e0823eeb37
+source-git-commit: 59156851156338c9462781d31ce81a651362f2da
 workflow-type: tm+mt
-source-wordcount: '1510'
+source-wordcount: '1489'
 ht-degree: 89%
 
 ---
@@ -121,7 +123,7 @@ Du måste konfigurera dina **[!UICONTROL Conversion variables]** och **[!UICONTR
    * **[!UICONTROL Unique Opens]**
    * **[!UICONTROL Unsubscribed]**
 
-   Mer information om hur du konfigurerar **[!UICONTROL Success events]** finns i det här [avsnittet](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/success-events/t-success-events.html#admin-tools).
+   Så här lär du dig konfigurera **[!UICONTROL Success events]**, se det här [section](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/success-events/t-success-events.html#admin-tools).
 
    >[!NOTE]
    >

@@ -2,10 +2,10 @@
 title: Migrera kampanjoperatorer till Adobe Identity Management System (IMS)
 description: Lär dig hur du migrerar kampanjoperatorer till Adobe Identity Management System (IMS)
 exl-id: f01948c7-b523-492d-a4e8-67f4adde5fc5
-source-git-commit: 1879fe179381be654bad876de2423d25049db43c
+source-git-commit: 59156851156338c9462781d31ce81a651362f2da
 workflow-type: tm+mt
-source-wordcount: '1280'
-ht-degree: 0%
+source-wordcount: '1278'
+ht-degree: 1%
 
 ---
 
@@ -13,9 +13,7 @@ ht-degree: 0%
 
 Som en del i arbetet med att stärka säkerhets- och autentiseringsprocessen rekommenderar Adobe Campaign att man migrerar slutanvändarens autentiseringsläge från den inbyggda autentiseringen av inloggnings-/lösenordsinformationen till Adobe Identity Management System (IMS). Alla operatorer ska implementera [Adobe Identity Management System (IMS)](https://helpx.adobe.com/enterprise/using/identity.html){target="_blank"} för att ansluta till Campaign.
 
-Observera att i Campaign v8 tillåts inte längre anslutning med användare/lösenord (dvs. inbyggd autentisering). **Adobe rekommenderar att du utför den här migreringen i Campaign v7.3.5 för att smidigt kunna migrera till Campaign v8.**
-
-
+Observera att det inte är tillåtet att ansluta till användare/lösenord (dvs. inbyggd autentisering) i Campaign v8. **Adobe rekommenderar att du utför den här migreringen i Campaign v7.3.5 för att smidigt kunna migrera till Campaign v8.**
 
 ## Vad har ändrats?{#move-to-ims-changes}
 
@@ -131,7 +129,7 @@ Adobe rekommenderar starkt att alla användare loggas ut under migreringsfönstr
 
 Det finns två aspekter av migreringen: migrering av slutanvändare (plus produktprofiler) och migrering av tekniska användare (används i API:er i din anpassade kod).
 
-Om alla användare (kampanjansvariga) använder IMS måste du ändå kontakta din Adobe-representant/kundsupport för att planera migreringen av produktprofiler. Du måste också migrera tekniska användare som du kan ha använt i anpassad kod. Läs mer i [den här sidan](ims-migration.md).
+Om alla användare (kampanjansvariga) använder IMS måste du ändå kontakta din Adobe-representant/kundsupport för att planera migreringen av produktprofiler. Du måste också migrera tekniska användare som du kan ha använt i anpassad kod. Läs mer på [den här sidan](ims-migration.md).
 
 ### Hur visar jag din operatörs autentiseringstyp?
 

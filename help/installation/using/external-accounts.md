@@ -8,10 +8,10 @@ audience: platform
 content-type: reference
 topic-tags: administration-basics
 exl-id: 4a17d5e8-c73f-42e7-b641-0fee6a52c5c0
-source-git-commit: abaeef25b03a9699a4851786380d467bfa299c9f
+source-git-commit: 59156851156338c9462781d31ce81a651362f2da
 workflow-type: tm+mt
-source-wordcount: '1841'
-ht-degree: 8%
+source-wordcount: '1794'
+ht-degree: 7%
 
 ---
 
@@ -48,7 +48,7 @@ Det externa kontot skapas och läggs till i listan över externa konton.
 
 ## Kampanjspecifika externa konton
 
-### Studsmeddelanden {#bounce-mails-external-account}
+### Studsa e-post {#bounce-mails-external-account}
 
 The **Studsa e-post** externt konto anger det externa POP3-konto som ska användas för att ansluta till e-posttjänsten. Mer information om det här externa kontot finns i [page](../../workflow/using/inbound-emails.md).
 
@@ -106,7 +106,7 @@ Konfigurera en POP3 extern med **Microsoft OAuth 2.0**, kontrollera **[!UICONTRO
 
 När du har angett de olika inloggningsuppgifterna kan du klicka på **[!UICONTROL Setup the connection]** för att slutföra konfigurationen av ditt externa konto.
 
-### Dirigering{#routing-external-account}
+### Routning{#routing-external-account}
 
 The **[!UICONTROL Routing]** Med ett externt konto kan du konfigurera varje kanal som är tillgänglig i Adobe Campaign beroende på vilka paket som är installerade.
 
@@ -288,13 +288,13 @@ Om du vill ansluta till Adobe Campaign-konsolen med en Adobe ID måste du konfig
 
 Mer information om den här konfigurationen finns i [den här sidan](../../integrations/using/configuring-ims.md).
 
-## Webbanalys {#web-analytics-external-account}
+## Web Analytics {#web-analytics-external-account}
 
 The **[!UICONTROL Web Analytics]** Med ett externt konto kan du vidarebefordra data från Adobe Analytics till Adobe Campaign i form av segment. Omvänt skickas indikatorer och attribut för e-postkampanjer som levereras av Adobe Campaign till Adobe Analytics Connector.
 
 ![](assets/ext_account_10.png)
 
-För det här externa kontot måste beräkningsformeln för spårade URL:er förbättras och anslutningen mellan de två lösningarna måste godkännas. Se denna [sida](../../platform/using/adobe-analytics-connector.md#external-account-classic) för mer information om detta.
+För det här externa kontot måste beräkningsformeln för spårade URL:er förbättras och anslutningen mellan de två lösningarna måste godkännas. Se denna [sida](../../platform/using/gs-aa.md) för mer information om detta.
 
 ### Adobe Experience Manager {#adobe-experience-manager-external-account}
 

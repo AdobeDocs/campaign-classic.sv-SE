@@ -9,10 +9,10 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: d2451b62-bddf-4dee-8789-35aaae8348e1
-source-git-commit: 668cee663890fafe27f86f2afd3752f7e2ab347a
+source-git-commit: 59156851156338c9462781d31ce81a651362f2da
 workflow-type: tm+mt
 source-wordcount: '1980'
-ht-degree: 99%
+ht-degree: 98%
 
 ---
 
@@ -79,9 +79,9 @@ Se [den här sidan](https://www.adobe.com/se/privacy/marketing-cloud.html) för 
 
 När integritet hanteras är det viktigt att definiera vilka data som ska hanteras med försiktighet och av vem.
 * **Personuppgifter** är information som direkt eller indirekt kan identifiera en levande individ.
-* **Känsliga personuppgifter** är information som är relaterad till en individs ras, politiska åsikter, religiösa övertygelser, kriminella bakgrund, genetiska uppgifter, hälsodata, sexuella preferenser, biometrisk information samt medlemskap i fackföreningar.
+* **Känsliga personuppgifter** är information om en persons etnicitet, politiska åsikter, religiösa övertygelser, brottsregister, genetiska uppgifter, hälsouppgifter, sexuell läggning, biometriska uppgifter samt medlemskap i fackföreningar.
 
-När du integrerar Campaign med andra Experience Cloud-lösningar där målgrupper kan överföras från ett system till ett annat, som till exempel [Adobe Analytics](../../platform/using/adobe-analytics-connector.md), [Audience Manager eller den grundläggande tjänsten People](../../integrations/using/sharing-audiences-with-adobe-experience-cloud.md), [Campaign Standard](../../integrations/using/synchronizing-audiences.md) eller med andra lösningar med [CRM-kopplingar](../../platform/using/crm-connectors.md) måste du vara extra noga med att skydda personuppgifter.
+När du integrerar Campaign med andra Experience Cloud-lösningar där målgrupper kan överföras från ett system till ett annat, som till exempel [Adobe Analytics](../../platform/using/gs-aa.md), [Audience Manager eller den grundläggande tjänsten People](../../integrations/using/sharing-audiences-with-adobe-experience-cloud.md), [Campaign Standard](../../integrations/using/synchronizing-audiences.md) eller med andra lösningar med [CRM-kopplingar](../../platform/using/crm-connectors.md) måste du vara extra noga med att skydda personuppgifter.
 
 De [viktigaste föreskrifterna](#privacy-regulations) avser de olika enheter som hanterar data enligt följande:
 * Ett **personuppgiftsansvarig** är den myndighet som bestämmer syftet med att samla in, använda och dela personuppgifter och hur det ska göras.
@@ -100,7 +100,7 @@ Dessa är de olika personerna som används i det här exemplet:
 
 * **Laura** är den **registrerade**. Hon är mottagaren som får meddelanden från flygbolaget. Laura är kanske en person som flyger ofta men kan vid något tillfälle besluta att hon inte vill ha någon personlig reklam eller marknadsföringsmeddelanden från flygbolaget. Hon ber flygbolaget (baserat på deras process) att ta bort sitt nummer som frekvent flygresenär.
 
-* **Anne** är **personuppgiftsansvarig** hos flygbolaget. Hon tar emot Lauras begäran, erhåller de ID-nummer som efterfrågas för att identifiera den registrerade och lämnar in begäran i Adobe Campaign.
+* **Anne** är **personuppgiftsansvarig** hos flygbolaget. Hon tar emot Laura begäran, hämtar användbara ID:n som efterfrågas för att identifiera den registrerade och skickar in begäran i Adobe Campaign.
 
 * **Adobe Campaign** är **personuppgiftsbiträdet**.
 

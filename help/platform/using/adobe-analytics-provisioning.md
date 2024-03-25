@@ -2,16 +2,15 @@
 product: campaign
 title: Adobe Analytics Connector Provisioning
 description: Läs mer om etablering av Adobe Analytics Connector
-badge-v7-only: label="v7" type="Informative" tooltip="Gäller endast Campaign Classic v7"
-badge-v7-prem: label="lokal och hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=sv" tooltip="Gäller endast lokala och hybrida driftsättningar"
+badge-v7-prem: label="lokal och hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=sv" tooltip="Gäller endast för v7-driftsättningar på plats och hybriddriftsättningar"
 feature: Analytics Integration
 role: User, Admin
 level: Beginner
 exl-id: 24e002aa-4e86-406b-92c7-74f242ee4b86
-source-git-commit: d690a5c4b9779ccd90b50bfbc74df18f0ac60d14
+source-git-commit: 59156851156338c9462781d31ce81a651362f2da
 workflow-type: tm+mt
-source-wordcount: '761'
-ht-degree: 9%
+source-wordcount: '728'
+ht-degree: 6%
 
 ---
 
@@ -37,7 +36,7 @@ För att den här integreringen ska fungera måste du skapa en Adobe Analytics-p
 
 >[!AVAILABILITY]
 >
-> JWT (JSON Web Tokens) håller på att fasas ut och ersätts med OAuth. Övergången genomförs stegvis i de kommande versionerna av Campaign och dokumentationen kommer att uppdateras för att återspegla dessa uppdateringar.
+> JWT (JSON Web Tokens) håller på att tas ur bruk och ersätts med OAuth. Övergången genomförs stegvis i de kommande versionerna av Campaign och dokumentationen kommer att uppdateras för att återspegla dessa uppdateringar.
 
 ## Skapa en Adobe Analytics-produktprofil {#analytics-product-profile}
 
@@ -69,7 +68,7 @@ Mer information om produktprofiler finns i [Dokumentation till Admin Console](ht
 
 1. För **[!UICONTROL Report Suites]** funktioner, lägga till **[!UICONTROL Report Suites]** du måste använda senare.
 
-   Om du inte har några rapportsviter kan du skapa dem enligt följande [dessa steg](../../platform/using/adobe-analytics-connector.md#report-suite-analytics).
+   Om du inte har några rapportsviter kan du skapa dem enligt följande [dessa steg](../../platform/using/gs-aa.md).
 
    ![](assets/do-not-localize/triggers_4.png)
 
@@ -81,7 +80,7 @@ Mer information om produktprofiler finns i [Dokumentation till Admin Console](ht
 
 1. För **[!UICONTROL Dimensions]** funktioner, lägga till **[!UICONTROL Dimensions]** behövs för framtida konfiguration.
 
-   Kontrollera att de valda Dimensionerna matchar de som ska konfigureras i [Externt konto](adobe-analytics-connector.md#external-account-classic) och justeras mot motsvarande eVars-nummer från [Adobe Analytics](adobe-analytics-connector.md#configure-conversion-success).
+   Kontrollera att de valda Dimensionerna överensstämmer med de som ska konfigureras i det externa kontot och att de är anpassade till motsvarande eVars-nummer från Adobe Analytics.
 
 1. För **[!UICONTROL Report Suite Tools]** lägger du till följande behörigheter:
 
@@ -113,7 +112,7 @@ Din produktprofil är nu konfigurerad. Sedan måste du skapa projektet Adobe I/O
 
    ![](assets/do-not-localize/triggers_5.png)
 
-1. Klicka på **[!UICONTROL Add to Project]** och välj **[!UICONTROL API]**.
+1. Klicka **[!UICONTROL Add to Project]** och markera **[!UICONTROL API]**.
 
    ![](assets/do-not-localize/triggers_6.png)
 

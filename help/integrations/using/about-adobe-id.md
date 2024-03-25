@@ -8,10 +8,10 @@ audience: integrations
 content-type: reference
 topic-tags: connecting-via-an-adobe-id
 exl-id: 8dad8fa9-674c-433c-af30-8c6d0aadf525
-source-git-commit: 49271e291953483ee14709b26ec053217a336718
+source-git-commit: 59156851156338c9462781d31ce81a651362f2da
 workflow-type: tm+mt
-source-wordcount: '143'
-ht-degree: 18%
+source-wordcount: '176'
+ht-degree: 14%
 
 ---
 
@@ -25,6 +25,11 @@ Kampanjanvändare kan ansluta till Adobe Campaign-konsolen med sin Adobe ID ist�
 * Anslutningen behålls när du använder Adobe Campaign med olika integreringar.
 * Skyddar lösenordshanteringsprincip som inte är för inbyggd inloggning/lösenord.
 * Använda Federated ID-konton (extern ID-leverantör).
+
+>[!IMPORTANT]
+>
+> Observera att det inte är tillåtet att ansluta till användare/lösenord (dvs. inbyggd autentisering) i Campaign v8. **Adobe rekommenderar att du utför den här migreringen i Campaign v7.3.5 för att smidigt kunna migrera till Campaign v8.**
+
 
 <!--
 >[!IMPORTANT]
