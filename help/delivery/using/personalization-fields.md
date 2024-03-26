@@ -9,8 +9,8 @@ role: User
 exl-id: 67fd9a67-cb05-46cd-acd5-e42fde6f4d4f
 source-git-commit: d2f5f2a662c022e258fb3cc56c8502c4f4cb2849
 workflow-type: tm+mt
-source-wordcount: '896'
-ht-degree: 10%
+source-wordcount: '894'
+ht-degree: 9%
 
 ---
 
@@ -37,7 +37,7 @@ Anpassningsfält kan komma från två typer av datakällor, beroende på valt le
 >
 >En Adobe Campaign-personaliseringstagg har alltid följande format **&lt;%=table.field%>**.
 
-## Infoga ett personaliserat fält {#inserting-a-personalization-field}
+## Infoga ett anpassningsfält {#inserting-a-personalization-field}
 
 Om du vill infoga anpassningsfält klickar du på listruteikonen som är tillgänglig från redigeringsfält för rubrik, ämne eller meddelandetext.
 

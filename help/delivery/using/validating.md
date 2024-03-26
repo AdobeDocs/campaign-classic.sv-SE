@@ -2,13 +2,13 @@
 product: campaign
 title: Validera
 description: Validera
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
+badge-v7: label="v7" type="Informative" tooltip="Gäller Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Gäller även Campaign v8"
 feature: Direct Mail
 exl-id: 42bb395b-b3fe-4d48-8720-5a4cae191984
 source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
-source-wordcount: '241'
+source-wordcount: '253'
 ht-degree: 1%
 
 ---
@@ -40,8 +40,8 @@ Du kan konfigurera hämtningsläget för leveransloggar från **[!UICONTROL Anal
 Det finns två lägen:
 
 * **[!UICONTROL Messages are considered sent after validation]** (standardläge): i det här funktionsläget uppdateras alla utsändningsloggar när operatorn bekräftar sändningen (deras status går från Väntande leverans till Skickat) och leveransen ställs automatiskt in på **[!UICONTROL Finished]**.
-* **[!UICONTROL A file of results determines the messages that are sent and those that have failed]** : I det här läget kan du uppdatera utsändningsloggarna via en extern fil som skickas av tjänsteleverantören. I det här fallet måste ett arbetsflöde för att bearbeta informationen användas för att uppdatera sändningsstatusen.
+* **[!UICONTROL A file of results determines the messages that are sent and those that have failed]** : det här läget gör att du kan uppdatera utsändningsloggarna via en extern fil som skickas av tjänsteleverantören. I det här fallet måste ett arbetsflöde för att bearbeta informationen användas för att uppdatera sändningsstatusen.
 
-   >[!NOTE]
-   >
-   >I det här fallet måste även leveransens status ändras till **[!UICONTROL Finished]** av användaren så snart som sändningsloggarna uppdateras.
+  >[!NOTE]
+  >
+  >I det här fallet måste även leveransens status ändras till **[!UICONTROL Finished]** av användaren så snart som sändningsloggarna uppdateras.

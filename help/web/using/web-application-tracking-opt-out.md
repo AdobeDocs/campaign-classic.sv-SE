@@ -2,14 +2,14 @@
 product: campaign
 title: Välj att inte delta i spårning i webbapplikation
 description: Välj att inte delta i spårning i webbapplikation
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
+badge-v7: label="v7" type="Informative" tooltip="Gäller Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Gäller även Campaign v8"
 feature: Web Apps
 exl-id: 4bff6b55-3335-433e-a2ff-5d8c83e8f0d3
 source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
-source-wordcount: '670'
-ht-degree: 2%
+source-wordcount: '679'
+ht-degree: 3%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 2%
 
 
 
-Med Adobe Campaign kan du sluta spåra webbbeteenden för slutanvändare som avanmäler sig från beteendespårning via cookies eller webbfyrar. Funktionen innefattar möjligheten att visa en banderoll för att ge slutanvändaren det alternativet. kan du lägga till dessa banners i webbapplikationer eller landningssidor.
+Med Adobe Campaign kan du sluta spåra webbbeteenden för slutanvändare som avanmäler sig från beteendespårning via cookies eller webbfyrar. Funktionen inkluderar möjligheten att visa en banderoll för att ge slutanvändaren det alternativet. Du kan lägga till dessa banderoller i webbprogram eller landningssidor.
 
 Om en slutanvändare väljer bort beteendespårning via cookies eller webbfyrar överförs den informationen till Adobe Campaign spårningsserver med JavaScript API:er. Observera att vissa jurisdiktioner kan kräva att kunden gör en anmälan till slutanvändarna innan en avanmälan kan erbjudas (eller har andra juridiska krav), och det är kundens ansvar att följa tillämpliga lagar.
 
@@ -39,14 +39,14 @@ Om du vill aktivera banderollen måste du konfigurera webbprogrammets egenskaper
 
 Om spårning av webbsidor är aktiverat kan du antingen ha:
 
-* Ingen banderoll.
+* Ingen banner.
 * Konfigurera banderollen manuellt på varje sida: markera det här alternativet och markera banderollen på varje sida i sidegenskaperna.
 
-   ![](assets/pageproperties.png)
+  ![](assets/pageproperties.png)
 
 * Lägg automatiskt till banderollen på alla sidor: markera banderollen direkt i webbprogrammets egenskaper.
 
-   ![](assets/optoutconfig.png)
+  ![](assets/optoutconfig.png)
 
 >[!NOTE]
 >
@@ -80,11 +80,11 @@ Cookie-namnet är **acoptout**. De gemensamma värdena är:
 
 De tillgängliga API:erna på klientsidan för att anpassa banderollen är:
 
-* **NL.ClientWebTracking.allow()**: Ställer in värdet för avanmälningscookie så att webbspårning tillåts. Webbspårning är tillåtet som standard.
-* **NL.ClientWebTracking.forbid()**: Ställer in värdet för cookie för avanmälan så att webbarklänkning förbjuds. Webbspårning kräver att användarindata är förbjudna.
+* **NL.ClientWebTracking.allow()**: Anger värdet för avanmälningscookie som tillåter webbspårning. Webbspårning är tillåtet som standard.
+* **NL.ClientWebTracking.forbid()**: Anger värdet för cookie för avanmälan så att webbspårning förbjuds. Webbspårning kräver att användarindata tillåts.
 * **NL.ClientWebTracking.closeOptOutBanner(bannerDomElt)**: Stänger bannern för att avanmäla sig efter att användaren har klickat på knappen Godkänn eller Avvisa. (under klickhändelsebubblingsfasen)
 
-   bannerDomElt {DOMElement} är rotelementet DOM för den cookie-banderoll som behöver tas bort
+  bannerDomElt {DOMElement} rotelementet DOM för den cookie-banderoll som måste tas bort
 
 * **NL.ClientWebTracking.hasUserPrefs()**: Returnerar true om användaren har valt sina inställningar för webbspårning.
 * **NL.ClientWebTracking.getUserPrefs()**: Returnerar värdet för den cookie som definierar användarens inställningar.
@@ -93,23 +93,23 @@ Om du måste skriva en JSSP är API:er på serversidan tillgängliga:
 
 * **NL.ServerWebTracking.generateOptOutBanner(escapeJs)**: Skapar koden för den avanmälningsbanderoll som ska infogas på JSSP-sidan
 
-   **escapeJs {Boolean}**: true när den genererade koden måste escape-konverteras för att användas i JavaScript.
+  **escapeJs {Boolean}**: true när den genererade koden måste escape-konverteras för att kunna användas i JavaScript.
 
-   Den returnerar HTML till den avanmälningsbanderollkod som måste skrivas ut på sidan.
+  Den returnerar HTML till den avanmälningsbanderollkod som måste skrivas ut på sidan.
 
 * **NL.ServerWebTracking._displayOptOutBanner()**
 
-   Returnerar &quot;true&quot; om avanmälningsbanderollen ska visas efter att en avanmälningsbanderoll har valts av administratören
+  Returnerar &quot;true&quot; om avanmälningsbanderollen ska visas efter att en avanmälningsbanderoll har valts av administratören
 
-   Den här koden anropas när administratören redan har valt att använda bannern för avanmälan av webbspårning.
+  Den här koden anropas när administratören redan har valt att använda bannern för avanmälan av webbspårning.
 
-   Banderollen bör visas om användaren ännu inte har valt att spåras eller inte.
+  Banderollen bör visas om användaren ännu inte har valt att spåras eller inte.
 
 * **NL.ServerWebTracking.renderOptOutBanner(escapeJs)**
 
-   Återger markeringen för avanmälningsbanderollen genom att infoga den på JSSP-sidan. Den anropas som i Jssp mellan &lt;% %>
+  Återger markeringen för avanmälningsbanderollen genom att infoga den på JSSP-sidan. Den anropas som i Jssp mellan &lt;% %>
 
-   **escapeJs {Boolean}**: true när den genererade koden måste escape-konverteras för att användas i JavaScript
+  **escapeJs {Boolean}**: true när den genererade koden måste escape-konverteras för att kunna användas i JavaScript
 
 JSSP-exempel:
 

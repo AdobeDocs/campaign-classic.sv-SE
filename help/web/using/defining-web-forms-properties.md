@@ -2,13 +2,13 @@
 product: campaign
 title: Definiera egenskaper för webbformulär
 description: Definiera egenskaper för webbformulär
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
+badge-v7: label="v7" type="Informative" tooltip="Gäller Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Gäller även Campaign v8"
 feature: Web Forms
 exl-id: 37aaaa03-0656-4a9b-bcae-74de33e3737b
 source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
-source-wordcount: '1206'
+source-wordcount: '1223'
 ht-degree: 1%
 
 ---
@@ -75,7 +75,7 @@ Dessa element visas längst ned på varje sida. Deras positioner kan ändras. Om
 
 >[!NOTE]
 >
->Det går att dölja **[!UICONTROL Previous]** på vissa sidor. Det gör du genom att gå till den aktuella sidan och kontrollera **[!UICONTROL Disallow returning to the previous page]** alternativ. Det här alternativet är tillgängligt när sidträdets rot är markerat.
+>Det går att dölja **[!UICONTROL Previous]** på vissa sidor. Det gör du genom att gå till sidan och kontrollera **[!UICONTROL Disallow returning to the previous page]** alternativ. Det här alternativet är tillgängligt när sidträdets rot är markerat.
 
 The **[!UICONTROL Template]** fält för **[!UICONTROL Rendering]** kan du välja ett tema bland de tillgängliga.
 
@@ -101,11 +101,11 @@ Giltighetsperioden är från **[!UICONTROL Start]** datum till **[!UICONTROL End
 
 >[!NOTE]
 >
->Om formuläret är stängt och dess giltighetsperiod därför inte har nåtts eller löpt ut, eller om det stängts av Adobe Campaign-operatorn, visas ett meddelande när användaren försöker få åtkomst till det. Du kan anpassa det här meddelandet genom att klicka **[!UICONTROL Personalize the message displayed if the form is closed...]**.
+>Om formuläret är stängt och dess giltighetsperiod därför inte har nåtts eller löpt ut, eller om det stängts av Adobe Campaign-operatorn, visas ett meddelande när användaren försöker få åtkomst till det. Du kan anpassa meddelandet genom att klicka **[!UICONTROL Personalize the message displayed if the form is closed...]**.
 
 ## Åtkomstkontroll {#form-access-control}
 
-Som standard görs åtkomsten till webbformulären i anonymt läge: alla operatorer som har åtkomst till formuläret tilldelas WebApp-operatörsrättigheter.
+Som standard ges åtkomst till webbformulär i anonymt läge: alla operatorer som har åtkomst till formuläret tilldelas behörigheter för WebApp-operatorn.
 
 Du kan aktivera åtkomstkontroll för att visa formuläret, t.ex. när du levererar ett formulär på en intranätsplats, för att autentisera användare. Om du vill göra det visar du **[!UICONTROL Properties]** det berörda formulärets fönster och klicka på **[!UICONTROL Enable access control]** enligt nedan:
 
@@ -134,17 +134,17 @@ Följande parametrar är tillgängliga som standard:
 * **id** för att ange den krypterade identifieraren.
 * **lang** om du vill ändra visningsspråk.
 * **ursprung** för att ange den svarande personens ursprung.
-* **uuuid** aktiverar formulärvisning före publicering och felspårning. Den här parametern är avsedd för internt bruk (skapande och felsökning): När du öppnar webbformuläret via den här URL:en, beaktas inte de poster som skapas i spårningen (rapporter). Ursprunget tvingas till **[!UICONTROL Adobe Campaign]** värde.
+* **uuuid** aktiverar formulärvisning före publicering och felspårning. Den här parametern är avsedd för internt bruk (skapande och felsökning): när du öppnar webbformuläret via den här URL:en beaktas inte de skapade posterna i spårningen (rapporter). Ursprunget tvingas till **[!UICONTROL Adobe Campaign]** värde.
 
-   Det används tillsammans med **förhandsgranska** parametrar och/eller **debug**:
+  Det används tillsammans med **förhandsgranska** parametrar och/eller **debug**:
 
-   **förhandsgranska** för att visa den senast sparade versionen. Denna parameter får endast användas i testfasen.
+  **förhandsgranska** för att visa den senast sparade versionen. Denna parameter får endast användas i testfasen.
 
-   **debug** för att visa datainmatningens spårning eller beräknade på formulärets sidor. Detta används för att få mer information om fel, även när formuläret har publicerats.
+  **debug** för att visa datainmatningens spårning eller beräknade på formulärets sidor. Detta används för att få mer information om fel, även när formuläret har publicerats.
 
-   >[!CAUTION]
-   >
-   >När formuläret visas via en URL med **uuuid** parameter, värdet för **[!UICONTROL origin]** parametern måste **Adobe Campaign**.
+  >[!CAUTION]
+  >
+  >När formuläret visas via en URL med **uuuid** parameter, värdet för **[!UICONTROL origin]** parametern måste **Adobe Campaign**.
 
 ## Lägga till parametrar {#adding-parameters}
 
@@ -152,7 +152,7 @@ Parametrar kan läggas till via **[!UICONTROL Parameters...]** i formulärets eg
 
 ![](assets/s_ncs_admin_survey_properties_param.png)
 
-Du måste ange en lagringsplats som parametervärdet hämtas från. Om du vill göra det väljer du ett av lagringsalternativen och klickar sedan på **[!UICONTROL Storage]** för att markera fältet eller variabeln i fråga. Lagringsalternativen finns i [Svarslagringsfält](web-forms-answers.md#response-storage-fields).
+Du måste ange en lagringsplats som parametervärdet hämtas från. Välj ett av lagringsalternativen och klicka sedan på **[!UICONTROL Storage]** för att markera fältet eller variabeln i fråga. Lagringsalternativen finns i [Svarslagringsfält](web-forms-answers.md#response-storage-fields).
 
 Svarandens status (0, 1 eller något annat värde) kan sedan läggas till i URL:en för att komma åt formuläret. Informationen kan återanvändas på formulärets sidor eller i en testruta. De sidor som visas kan villkoras baserat på värdet för sammanhanget, vilket visas nedan:
 

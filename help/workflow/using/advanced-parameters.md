@@ -2,13 +2,13 @@
 product: campaign
 title: Avancerade parametrar
 description: Avancerade parametrar
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+badge-v7-only: label="v7" type="Informative" tooltip="Gäller endast Campaign Classic v7"
 feature: Workflows, Data Management
 exl-id: 6c90ac2f-0d2b-48b0-9245-3e5e3a3d027c
 source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
-source-wordcount: '501'
-ht-degree: 1%
+source-wordcount: '508'
+ht-degree: 3%
 
 ---
 
@@ -16,15 +16,15 @@ ht-degree: 1%
 
 
 
-Egenskapsskärmen för en aktivitet har en **[!UICONTROL Advanced]** -flik som gör att du kan definiera ett beteende i händelse av fel, körningsperioden för aktiviteten; och gör att du kan ange ett initieringsskript. Det finns två versioner av den här fliken:
+Egenskapsskärmen för en aktivitet har en **[!UICONTROL Advanced]** -fliken som gör att du kan definiera ett beteende i händelse av fel, körningsperioden för aktiviteten och gör att du kan ange ett initieringsskript. Det finns två versioner av den här fliken:
 
 * en förenklad version (för **[!UICONTROL Start]** och **[!UICONTROL End]** aktiviteter, till exempel)
 
-   ![](assets/wf-advanced-basic.png)
+  ![](assets/wf-advanced-basic.png)
 
-* en mer detaljerad version (för **[!UICONTROL Query]** -aktivitet, till exempel)
+* en mer detaljerad version **[!UICONTROL Query]** -aktivitet, till exempel)
 
-   ![](assets/wf-advanced-full.png)
+  ![](assets/wf-advanced-full.png)
 
 Fälten som ska anges i **[!UICONTROL Advanced]** -fliken beskrivs i följande avsnitt.
 
@@ -42,8 +42,8 @@ I det här fältet kan du definiera vilken åtgärd som ska utföras när aktivi
 
 De här alternativen är vanligtvis markerade i kundvagnen genom att högerklicka på aktiviteten.
 
-* **[!UICONTROL Normal]**: aktiviteten utförs som vanligt.
-* **[!UICONTROL Do not activate]**: den här aktiviteten och alla följande uppgifter (i samma gren) körs inte.
+* **[!UICONTROL Normal]**: aktiviteten körs som vanligt.
+* **[!UICONTROL Do not activate]**: den här aktiviteten och alla följande åtgärder (i samma gren) körs inte.
 * **[!UICONTROL Activate but do not execute]**: den här aktiviteten och alla följande uppgifter (i samma gren) stoppas automatiskt. Detta kan vara användbart om du vill vara där när aktiviteten startas. Om du vill utföra åtgärden manuellt högerklickar du på aktiviteten och väljer **[!UICONTROL Normal execution]**.
 
 ## Tillhörighet {#affinity}
@@ -61,14 +61,14 @@ I det här fältet kan du ange en varning för när aktiviteten tar för lång t
 
 I det här fältet kan du definiera det beteende som ska användas för asynkrona uppgifter. Det finns två möjliga alternativ:
 
-* **[!UICONTROL Several tasks authorized]**: flera åtgärder kan utföras samtidigt, även om den första inte är klar.
+* **[!UICONTROL Several tasks authorized]**: flera åtgärder kan utföras samtidigt, även om den första inte har slutförts.
 * **[!UICONTROL The current task has priority]**: pågående uppgifter får prioritet. Så länge en uppgift pågår kommer ingen annan åtgärd att utföras.
 
 ## Tidszon {#time-zone}
 
 I det här fältet kan du välja aktivitetens tidszon. Mer information: [Hantera tidszoner](managing-time-zones.md).
 
-## Vid fel {#in-case-of-errors}
+## Om fel uppstår {#in-case-of-errors}
 
 I det här fältet kan du definiera vilken åtgärd som ska utföras när aktiviteten innehåller fel. Det finns två möjliga alternativ:
 

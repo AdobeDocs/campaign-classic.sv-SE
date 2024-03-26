@@ -11,7 +11,7 @@ exl-id: b8dc9891-84c8-445d-ad6a-d06048c8faaf
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
 source-wordcount: '244'
-ht-degree: 3%
+ht-degree: 6%
 
 ---
 
@@ -34,7 +34,7 @@ Indikatorerna som visas i **[!UICONTROL Indicators over the period]** -avsnittet
 * **[!UICONTROL Outgoing (throughput msg/h)]** : genomsnittligt antal utgående Message Center-händelser per timme (skickas av en leverans).
 * **[!UICONTROL Outgoing (msg vol)]** : antal slutförda utgående Message Center-händelser (skickade av en leverans).
 * **[!UICONTROL Average sending time (seconds)]** : Genomsnittlig tid i meddelandecentret för lyckade bearbetade händelser. Beräkningen tar hänsyn till bearbetningstiden och den maximala sändningstiden.
-* **[!UICONTROL Error rate]** : antal händelser med fel jämfört med antalet händelser som har angetts i Message Center-kön. Följande fel beaktas: routningsfel, utgången händelse (händelse som har varit i kön för lång), leveransfel, ignorerad av leveransen (karantän, osv.).
+* **[!UICONTROL Error rate]** : antal händelser med fel jämfört med antalet händelser som har angetts i Message Center-kön. Följande fel beaktas: routningsfel, utgångna händelser (händelse som har varit i kön för lång), leveransfel, ignoreras av leveransen (karantän, osv.).
 
 >[!NOTE]
 >

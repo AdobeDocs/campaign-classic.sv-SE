@@ -9,8 +9,8 @@ level: Beginner
 exl-id: d5833d3d-e8ef-4f2b-8084-4ba825c79525
 source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
-source-wordcount: '509'
-ht-degree: 0%
+source-wordcount: '505'
+ht-degree: 1%
 
 ---
 
@@ -32,7 +32,7 @@ Så här skapar du en ny operatorgrupp:
 1. Klicka på **[!UICONTROL Content]** för att definiera auktoriseringar för den här gruppen.
 1. Klicka på **[!UICONTROL Add]** för att välja en utsedd rättighet eller en operator att koppla till gruppen.
 1. Klicka på listrutan eller på mappen till höger om **[!UICONTROL Folder]** fält för att hitta de utsedda rättigheter eller operatörer som ska associeras med den här gruppen.
-1. Välj rättigheter eller operatorer att lägga till och klicka på **[!UICONTROL OK]** att validera.
+1. Välj rättigheter eller operatorer att lägga till och klicka på **[!UICONTROL OK]** för att validera.
 
    ![](assets/s_ncs_user_create_operator_gp03.png)
 
@@ -54,7 +54,7 @@ Standardoperatorgrupperna är:
 
 1. **[!UICONTROL Delivery operators]**
 
-   Operatörerna i den här gruppen ansvarar för hanteringen av leveranser: de ger tillgång till de viktigaste resurser som krävs för att skapa och förbereda leveranser (kampanjtyper, leveransmappningar, standardmallar, personaliseringsblock osv.).
+   Operatörerna i den här gruppen ansvarar för att hantera leveranser: de ger åtkomst till de viktigaste resurser som krävs för att skapa och förbereda leveranser (kampanjtyper, leveransmappningar, standardmallar, personaliseringsblock osv.).
 
    Den här gruppen innehåller följande namngivna rättigheter:
 
@@ -63,12 +63,13 @@ Standardoperatorgrupperna är:
 
 1. **[!UICONTROL Campaign managers]**
 
-   Operatörerna i den här gruppen kan hantera marknadsföringskampanjer: gör att du kan komma åt objekt som är kopplade till kampanjer (planer, program, arbetsflöden, budgetar osv.) inom ramen för **[!UICONTROL Campaign]** (Adobe Campaign-modul som tillval).
+   Operatörerna i den här gruppen kan hantera marknadsföringskampanjer: ni får tillgång till objekt som är kopplade till kampanjer (planer, program, arbetsflöden, budgetar osv.) inom ramen för **[!UICONTROL Campaign]** (Adobe Campaign-modul som tillval).
 
    Den här gruppen innehåller följande namngivna rättigheter:
 
    * **[!UICONTROL INSERT FOLDERS]**: rätt att lägga in mappar i Adobe Campaign-trädet (förutsatt att du har redigeringsbehörighet för de berörda grenarna),
    * **[!UICONTROL WORKFLOW]**: rätt att använda arbetsflöden.
+
    >[!NOTE]
    >
    >Den här gruppen tillåter inte att operatorer påbörjar leveranser.

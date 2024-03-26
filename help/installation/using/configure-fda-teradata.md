@@ -10,8 +10,8 @@ topic-tags: connectors
 exl-id: 3a5856c3-b642-4722-97ff-6ae7107efdbe
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '1767'
-ht-degree: 1%
+source-wordcount: '1636'
+ht-degree: 0%
 
 ---
 
@@ -101,12 +101,12 @@ Med det externa Teradatan kan du ansluta Campaign-instansen till din Teradatas e
 
 Kopplingen stöder följande alternativ:
 
-| Option | Beskrivning |
+| Alternativ | Beskrivning |
 |---|---|
 | TD_MAX_SESSIONS | Anger det maximala antalet inloggningssessioner som Teradata Parallel Transporter kan hämta för ett operatorjobb. |
 | TimeZoneName | Namn på serverns tidszon. |
-| CharacterSet | Används för att konfigurera teckenuppsättningen Teradata. <br>Mer information finns på [den här sidan](https://docs.teradata.com/r/ODBC-Driver-for-Teradata-User-Guide/May-2017/Configuration-of-odbc.ini-in-UNIX/Linux-and-Apple-OS-X/Teradata-DSN-Options#rub1478609534082__table_N102D3_N102B6_N102B3_N10001). |
-| IANAAppCodePage | Kodsida för ODBC-program. <br>Mer information finns på [den här sidan](https://docs.teradata.com/r/ODBC-Driver-for-Teradata-User-Guide/May-2017/ODBC-Driver-for-Teradata-Application-Development/International-Character-Set-Support/Application-Code-Page) |
+| CharacterSet | Används för att konfigurera teckenuppsättningen Teradata. <br>Mer information finns i [den här sidan](https://docs.teradata.com/r/ODBC-Driver-for-Teradata-User-Guide/May-2017/Configuration-of-odbc.ini-in-UNIX/Linux-and-Apple-OS-X/Teradata-DSN-Options#rub1478609534082__table_N102D3_N102B6_N102B3_N10001). |
+| IANAAppCodePage | Kodsida för ODBC-program. <br>Mer information finns i [den här sidan](https://docs.teradata.com/r/ODBC-Driver-for-Teradata-User-Guide/May-2017/ODBC-Driver-for-Teradata-Application-Development/International-Character-Set-Support/Application-Code-Page) |
 
 ### Lägg till ytterligare ODBC-externa konton {#add-external}
 

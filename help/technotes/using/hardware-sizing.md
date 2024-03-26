@@ -7,7 +7,7 @@ badge-v7-only: label="v7" type="Informative" tooltip="Gäller endast Campaign Cl
 exl-id: c47e73a0-dbd8-43f5-a363-7e6783dc7685
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '2519'
+source-wordcount: '2576'
 ht-degree: 1%
 
 ---
@@ -28,7 +28,7 @@ Marknadsföringsinstansen är den del av Adobe Campaign-arkitekturen som driver 
 
 >[!CAUTION]
 >
->Informationen i det här dokumentet gäller inte om du använder en Adobe Campaign-instans som är helt värd (distribuerad i Adobe-Cloud Services).
+>Informationen i det här dokumentet gäller inte om du använder en Adobe Campaign-instans som är helt värd (distribuerad i Adobe-Cloud Service).
 
 Programkompatibiliteten beskrivs i [Kompatibilitetsmatris](../../rn/using/compatibility-matrix.md).
 
@@ -139,7 +139,7 @@ Beräknad volym:
 | E-post | 42 miljoner/månad |
 | Direktmeddelande | 10 miljoner/månad |
 | SMS för mobiler | 1 000 000/månad |
-| Högsta dagliga e-postvolym | 5,000,000 |
+| Högsta dagliga e-postvolym | 5 000 000 |
 
 ### Webb- och programservrar
 

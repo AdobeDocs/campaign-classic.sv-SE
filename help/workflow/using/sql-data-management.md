@@ -2,12 +2,12 @@
 product: campaign
 title: SQL-datahantering
 description: Läs mer om arbetsflödesaktiviteten för SQL Data Management
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+badge-v7-only: label="v7" type="Informative" tooltip="Gäller endast Campaign Classic v7"
 feature: Workflows
 exl-id: cada78cb-658f-4b9e-8136-31c17cb1d82f
 source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
-source-wordcount: '418'
+source-wordcount: '419'
 ht-degree: 4%
 
 ---
@@ -24,11 +24,11 @@ Innan du konfigurerar aktiviteten bör du kontrollera att följande krav är upp
 
 * Aktiviteten är endast tillgänglig för fjärrdatakällor. The **[!UICONTROL FDA]** (Federated Data Access)-paketet måste därför installeras på din instans. [Läs mer](../../installation/using/about-fda.md).
 
-   Beroende på vilken Campaign-version du har finns mer information i följande avsnitt:
+  Beroende på vilken Campaign-version du har finns mer information i följande avsnitt:
 
-   ![](assets/do-not-localize/v7.jpeg)[  Dokumentation om Campaign v7](../../installation/using/about-fda.md)
+  ![](assets/do-not-localize/v7.jpeg)[Dokumentation för Campaign v7](../../installation/using/about-fda.md)
 
-   ![](assets/do-not-localize/v8.png)[  Dokumentation om Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/connect/fda.html)
+  ![](assets/do-not-localize/v8.png)[Kampanjdokumentation v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/connect/fda.html)
 
 * Det utgående schemat måste finnas i databasen och vara länkat till en FDA-databas.
 * Operatorn som kör arbetsflödet måste ha **[!UICONTROL USE SQL DATA MANAGEMENT ACTIVITY (useSqlDmActivity)]** namngiven höger. [Läs mer](../../platform/using/access-management-named-rights.md).
@@ -46,7 +46,7 @@ Innan du konfigurerar aktiviteten bör du kontrollera att följande krav är upp
 
    >[!CAUTION]
    >
-   >Det är SQL-skriptets skrivares ansvar att se till att SQL-skriptet fungerar och att dess referenser (fältnamn, etc.) är i enlighet med det utgående schemat.
+   >Det är SQL-skriptets skrivares ansvar att se till att SQL-skriptet fungerar och att dess referenser (fältnamn, etc.) är i enlighet med utgående schema.
 
    Om du vill läsa in en befintlig SQL-kod väljer du **[!UICONTROL The SQL script is contained in an entity stored in the database]** alternativ. SQL-skript måste skapas och lagras i **[!UICONTROL Administration]** / **[!UICONTROL Configuration]** / **[!UICONTROL SQL scripts]** -menyn.
 
@@ -57,11 +57,11 @@ Innan du konfigurerar aktiviteten bör du kontrollera att följande krav är upp
    Med aktiviteten kan du använda följande variabler i skriptet:
 
    * **activity.tableName**: SQL-namn för utgående arbetstabell.
-   * **task.inkommandeTransitionByName(&quot;name&quot;).tableName**: SQL-namn för arbetsregistret som medföljer den inkommande övergången som ska användas (övergången identifieras med sitt namn).
+   * **task.inkommandeTransitionByName(&quot;name&quot;).tableName**: SQL-namn på arbetsregistret som medföljer den inkommande övergången som ska användas (övergången identifieras med sitt namn).
 
-      >[!NOTE]
-      >
-      >Värdet (&#39;name&#39;) motsvarar värdet **[!UICONTROL Name]** från övergångsegenskaperna.
+     >[!NOTE]
+     >
+     >Värdet (&#39;name&#39;) motsvarar värdet **[!UICONTROL Name]** -fält från övergångsegenskaperna.
 
 1. Om SQL-skriptet redan innehåller kommandon för att skapa en utgående arbetstabell avmarkerar du **[!UICONTROL Automatically create work table]** alternativ. I annat fall skapas en arbetstabell automatiskt när arbetsflödet körs.
 1. Klicka **[!UICONTROL Ok]** för att bekräfta aktivitetskonfigurationen.

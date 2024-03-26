@@ -6,7 +6,7 @@ feature: Schema Extension
 exl-id: 60f15ae5-b2bd-48f9-aa45-8f795a3071aa
 source-git-commit: fd5e4bbc87a48f029a09b14ab1d927b9afe4ac52
 workflow-type: tm+mt
-source-wordcount: '2014'
+source-wordcount: '2016'
 ht-degree: 0%
 
 ---
@@ -17,11 +17,11 @@ ht-degree: 0%
 
 ## Innehållsmodell {#content-model-4}
 
-element:==(attribute) | compute-string | dbindex | standard | element | hjälp | join | nyckel | sysFilter | translatDefault)
+element:==(attribute) | compute-string | dbindex | standard | element | help | join | key | sysFilter | translatDefault)
 
 ## Attribut {#attributes-4}
 
-_operation (string), advanced (boolean), aggregate (string), applicableIf (string), autopk (boolean), beginTo (string), convDate (string), dataPolicy (string), dataSource (string), dbEnum (string), defOnDuplicate (boolean), default (string), desc (string), displayAsField (boobox) lean), doesNotSupportDiff (booleskt), edit (string), emptyKeyValue (string), enum (string), enumImage (string), expandSchemaTarget (string), expr (string), externalJoin (booleskt), feature (string), featureDate (booleskt), filterPath (string), folderLink (string), folderModelModel (string) string), folderProcess (string), fullLoad (boolesk), hierarkisk (boolesk), hierarkisk sökväg (sträng), img (sträng), inout (sträng), integritet (sträng), label (sträng), labelSingular (sträng), length (sträng), localizable (boolesk), name (MNTOKEN), noDbIndex (boolesk), no Nyckel (booleskt), sorterad (booleskt), överflödig (booleskt), pkSequence (sträng), pkgStatus (sträng), ref (sträng), obligatoriskt (booleskt), revAdvanced (booleskt), revCardinality (sträng), revDesc (sträng), revExternalJoin (booleskt), revIntegrity (sträng) sträng), revLink (sträng), revTarget (sträng), revVisibleIf (sträng), sql (booleskt), sqlname (sträng), sqltable (sträng), tableSpace (sträng), tableSpaceIndex (sträng), target (MNTOKEN), template (sträng), temporaryTable (booleskt), translatedDefault (sträng), translateExpr (sträng) sträng), type (MNTOKEN), unbound (boolean), user (boolean), userEnum (string), visibleIf (string), xml (boolean), xmlChildren (boolean)
+_operation (string), advanced (boolean), aggregate (string), applicableIf (string), autopk (boolean), beginTo (string), convDate (string), dataPolicy (string), dataSource (string), dbEnum (string), defOnDuplicate (boolean), default (string), desc (string), displayAsField (boobox) lean), doesNotSupportDiff (booleskt), edit (string), emptyKeyValue (string), enum (string), enumImage (string), expandSchemaTarget (string), expr (string), externalJoin (booleskt), feature (string), featureDate (booleskt), filterPath (sträng), folderLink (sträng), folderModelModel (model string), folderProcess (string), fullLoad (boolesk), hierarkisk (boolesk), hierarkisk sökväg (sträng), img (sträng), inout (sträng), integritet (sträng), label (sträng), labelSingular (sträng), length (sträng), localizable (boolesk), name (MNTOKEN), noDbIndex (boolesk), no Nyckel (booleskt), sorterad (booleskt), överflödig (booleskt), pkSequence (sträng), pkgStatus (sträng), ref (sträng), obligatoriskt (booleskt), revAdvanced (booleskt), revCardinality (sträng), revDesc (sträng), revExternalJoin (booleskt), revIntegrity (sträng) sträng), revLink (sträng), revTarget (sträng), revVisibleIf (sträng), sql (booleskt), sqlname (sträng), sqltable (sträng), tableSpace (sträng), tableSpaceIndex (sträng), target (MNTOKEN), template (sträng), temporaryTable (booleskt), translatedDefault (sträng), translateExpr (sträng) sträng), type (MNTOKEN), unbound (boolean), user (boolean), userEnum (string), visibleIf (string), xml (boolean), xmlChildren (boolean)
 
 ## Överordnade {#parents-4}
 

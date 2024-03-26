@@ -2,13 +2,13 @@
 product: campaign
 title: Celler
 description: Celler
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+badge-v7-only: label="v7" type="Informative" tooltip="Gäller endast Campaign Classic v7"
 feature: Workflows, Targeting Activity
 exl-id: 7b562dba-7e4b-40a7-91db-7b9379de44ca
 source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
-source-wordcount: '127'
-ht-degree: 8%
+source-wordcount: '134'
+ht-degree: 13%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 8%
 
 
 
-The **[!UICONTROL Cells]** -aktiviteten ger en vy över de olika deluppsättningarna i form av datakolumner. Den underlättar delmängdsmanipulation och är även utformad för att uppmuntra personaliseringsmöjligheter.
+The **[!UICONTROL Cells]** -aktiviteten ger en vy över de olika deluppsättningarna i form av datakolumner. Det underlättar delmängdsmanipulation och är även utformat för att uppmuntra personaliseringsmöjligheter.
 
 ![](assets/wf_split_cells.png)
 
@@ -24,7 +24,7 @@ Den här aktiviteten kan konfigureras för att ange specifika parametrar baserat
 
 ![](assets/wf_split_cells_with_customization.png)
 
-Följande information har lagts till i arbetsflödesformuläret (i **[!UICONTROL Administration > Configurations > Input forms]** nod i Adobe Campaign-trädet):
+Följande information har lagts till i arbetsflödesformuläret (i **[!UICONTROL Administration > Configurations > Input forms]** nod i Adobe Campaign):
 
 ```
 <container img="nms:miniatures/mini-enrich.png" label="Data">

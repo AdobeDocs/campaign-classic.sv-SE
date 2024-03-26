@@ -10,8 +10,8 @@ topic-tags: connectors
 exl-id: 8b2a9c73-807a-4936-9fd6-9d26c805a31f
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '397'
-ht-degree: 3%
+source-wordcount: '376'
+ht-degree: 2%
 
 ---
 
@@ -84,7 +84,7 @@ Konfigurera [!DNL Vertica Analytics] i CentOS följer du stegen nedan:
 
 1. Ladda ned [ODBC-drivrutin för Windows](https://www.vertica.com/download/vertica/client-drivers/). Om du vill installera drivrutinen för Windows måste du aktivera .NET Framework 3.5, annars försöker installationsguiden automatiskt aktivera och hämta den.
 
-1. Konfigurera ODBC-drivrutinen i Windows. Mer information finns på [den här sidan](https://www.vertica.com/docs/9.2.x/HTML/Content/Authoring/ConnectingToVertica/ClientODBC/SettingUpADSN.htm)
+1. Konfigurera ODBC-drivrutinen i Windows. Mer information finns i [den här sidan](https://www.vertica.com/docs/9.2.x/HTML/Content/Authoring/ConnectingToVertica/ClientODBC/SettingUpADSN.htm)
 
 1. I Adobe Campaign kan du sedan konfigurera [!DNL Vertica Analytics] externt konto. Mer information om hur du konfigurerar ditt externa konto finns i [det här avsnittet](#vertical-external).
 
@@ -168,7 +168,7 @@ Du måste skapa en [!DNL Vertica Analytics] externt konto för att ansluta Campa
 
 Kopplingen stöder följande alternativ:
 
-| Option | Beskrivning |
+| Alternativ | Beskrivning |
 |---|---|
-| TimeZoneName | Som standard är den tom, vilket innebär att systemtidszonen för programservern i Campaign Classic används. Alternativet kan användas för att framtvinga TIMEZONE-sessionsparametern. |
+| TimeZoneName | Som standard är den tom, vilket innebär att systemtidszonen för Campaign Classicens programserver används. Alternativet kan användas för att framtvinga TIMEZONE-sessionsparametern. |
 

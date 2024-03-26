@@ -2,13 +2,13 @@
 product: campaign
 title: Test
 description: Läs mer om aktiviteten Testa arbetsflöde
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+badge-v7-only: label="v7" type="Informative" tooltip="Gäller endast Campaign Classic v7"
 feature: Workflows
 exl-id: 6f246d56-01c8-43f5-b12b-c40d258b93c8
 source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
-source-wordcount: '192'
-ht-degree: 4%
+source-wordcount: '194'
+ht-degree: 5%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 4%
 
 A **Testa** type-aktivitet aktiverar den första övergång som uppfyller det villkor som är kopplat till den. Om inget villkor är uppfyllt och om **[!UICONTROL Use the default fork]** om du väljer det här alternativet aktiveras standardövergången.
 
-Ett villkor är ett JavaScript-uttryck som måste utvärderas till true eller false. Om du vill ange uttrycket klickar du på ikonen till höger om namnet på villkoret och väljer sedan **[!UICONTROL Edit...]**.
+Ett villkor är ett JavaScript-uttryck som måste utvärderas till &quot;true&quot; eller &quot;false&quot;. Om du vill ange uttrycket klickar du på ikonen till höger om namnet på villkoret och väljer sedan **[!UICONTROL Edit...]**.
 
 ![](assets/edit_test.png)
 

@@ -7,8 +7,8 @@ badge-v7-only: label="v7" type="Informative" tooltip="Gäller endast Campaign Cl
 exl-id: 263fb4b5-ca62-4b92-a82d-8820ee998296
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '156'
-ht-degree: 0%
+source-wordcount: '148'
+ht-degree: 4%
 
 ---
 
@@ -28,7 +28,7 @@ Följ stegen nedan för att införliva det nya certifikatet:
 
 1. Ladda ned **AAACertificateServices 5/12/2020** rotcertifikat [från den här sidan](https://support.sectigo.com/Com_KnowledgeDetailPage?Id=kA03l00000117cL).
 
-1. Kontrollera att AAA-certifikatet finns i både ditt operativsystem och JAVA-förvaltare. Om inte, lägg till den.
+1. Kontrollera att AAA-certifikatet finns i både ditt operativsystem och JAVA-förtroenden. Om inte, lägg till den.
 
 1. Starta om Adobe Campaign webbtjänst:
 

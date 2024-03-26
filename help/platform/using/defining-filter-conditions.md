@@ -11,8 +11,8 @@ topic-tags: creating-queries
 exl-id: b62e23e5-f1b7-44c4-82d9-95c6b3240352
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '3241'
-ht-degree: 37%
+source-wordcount: '3307'
+ht-degree: 34%
 
 ---
 
@@ -94,7 +94,7 @@ Nedan finns en lista över tillgängliga operatorer:
   </tr> 
   <tr> 
    <td> <span class="uicontrol">Not like</span> <br /> </td> 
-   <td> Liknar <span class="uicontrol">Like</span> . Du kan inte återställa det angivna värdet. Även här måste det angivna värdet innehålla jokertecknet <span class="uicontrol">%</span>.<br /> </td> 
+   <td> Liknar <span class="uicontrol">Gilla</span> . Du kan inte återställa det angivna värdet. Även här måste det angivna värdet innehålla jokertecknet <span class="uicontrol">%</span>.<br /> </td> 
    <td> <strong>Efternamnet (@lastName) är inte som Smi%h</strong>. Här returneras inte mottagare vars efternamn är Smi%h.<br /> </td> 
   </tr> 
   <tr> 
@@ -320,7 +320,7 @@ Använd följande steg:
 
    Det finns flera typer av formler: **[!UICONTROL Field only]**, **[!UICONTROL Aggregate]**, **[!UICONTROL Expression]**.
 
-   Välj **[!UICONTROL Process on an aggregate function]** och **[!UICONTROL Count]**. Klicka **[!UICONTROL Next]**.
+   Välj **[!UICONTROL Process on an aggregate function]** och **[!UICONTROL Count]**. Klicka på **[!UICONTROL Next]**.
 
    ![](assets/query_editor_nveau_54.png)
 
@@ -359,7 +359,7 @@ Uttrycksredigeraren ser ut så här:
 
 Här kan du markera fält i databastabellerna och lägga till avancerade funktioner. Följande funktioner är tillgängliga:
 
-**Sammanställning**
+**Aggregat**
 
 <table> 
  <tbody> 
@@ -371,12 +371,12 @@ Här kan du markera fält i databastabellerna och lägga till avancerade funktio
   <tr> 
    <td> <strong>Genomsnittlig</strong><br /> </td> 
    <td> Returnerar medelvärdet för en taltypskolumn<br /> </td> 
-   <td> Avg(&lt;värde&gt;)<br /></td> 
+   <td> Avg(&lt;value&gt;)<br /></td> 
   </tr> 
   <tr> 
    <td> <strong>Antal</strong><br /> </td> 
    <td> Räknar värden som inte är null i en kolumn<br /> </td> 
-   <td> Count(&lt;värde&gt;)<br /></td>  
+   <td> Count(&lt;value&gt;)<br /></td>  
   </tr> 
   <tr> 
    <td> <strong>CountAll</strong><br /> </td> 
@@ -386,17 +386,17 @@ Här kan du markera fält i databastabellerna och lägga till avancerade funktio
   <tr> 
    <td> <strong>Motdistinkt</strong><br /> </td> 
    <td> Räknar de distinkta icke-null-värdena för en kolumn<br /> </td> 
-   <td> Countdistinct(&lt;värde&gt;)<br /></td> 
+   <td> CountDict(&lt;value&gt;)<br /></td> 
   </tr> 
   <tr> 
    <td> <strong>Max</strong><br /> </td> 
    <td> Returnerar det maximala värdet för en kolumn av typen tal, sträng eller datum<br /> </td> 
-   <td> Max(&lt;värde&gt;)<br /></td>  
+   <td> Max(&lt;value&gt;)<br /></td>  
   </tr> 
   <tr> 
    <td> <strong>Min</strong><br /> </td> 
    <td> Returnerar det minsta värdet för en kolumn av typen tal, sträng eller datum<br /> </td> 
-   <td> Min(&lt;värde&gt;)<br /></td> 
+   <td> Min(&lt;value&gt;)<br /></td> 
   </tr> 
   <tr> 
    <td> <strong>StdDev</strong><br /> </td> 
@@ -406,7 +406,7 @@ Här kan du markera fält i databastabellerna och lägga till avancerade funktio
   <tr> 
    <td> <strong>Summa</strong><br /> </td> 
    <td> Returnerar summan av värdena för en kolumn av typen tal, sträng eller datum<br /> </td> 
-   <td> Sum(&lt;värde&gt;)<br /></td> 
+   <td> Sum(&lt;value&gt;)<br /></td> 
   </tr> 
  </tbody> 
 </table>
@@ -423,37 +423,37 @@ Här kan du markera fält i databastabellerna och lägga till avancerade funktio
   <tr> 
    <td> <strong>AllNonNull2</strong><br /> </td> 
    <td> Anger om alla parametrar inte är null och inte tomma<br /> </td> 
-   <td> AllNonNull2(&lt;sträng&gt;, &lt;sträng&gt;)<br /></td> 
+   <td> AllNonNull2(&lt;string&gt;, &lt;string&gt;)<br /></td> 
   </tr> 
   <tr> 
    <td> <strong>AllNonNull3</strong><br /> </td> 
    <td> Anger om alla parametrar inte är null och inte tomma<br /> </td> 
-   <td> AllNonNull3(&lt;sträng&gt;, &lt;sträng&gt;, &lt;sträng&gt;)<br /></td> 
+   <td> AllNonNull3(&lt;string&gt;, &lt;string&gt;, &lt;string&gt;)<br /></td> 
   </tr> 
   <tr> 
    <td> <strong>Ascii</strong><br /> </td> 
    <td> Returnerar ASCII-värdet för det första tecknet i strängen.<br /> </td> 
-   <td> Ascii(&lt;sträng&gt;)<br /></td> 
+   <td> Ascii()&lt;string&gt;)<br /></td> 
   </tr> 
   <tr> 
    <td> <strong>Char</strong><br /> </td> 
    <td> Returnerar tecknet som motsvarar ASCII-koden "n"<br /> </td> 
-   <td> Char(&lt;tal&gt;)<br /></td>  
+   <td> Char(&lt;number&gt;)<br /></td>  
   </tr> 
   <tr> 
    <td> <strong>Charindex</strong><br /> </td> 
    <td> Returnerar positionen för sträng 2 i sträng 1.<br /> </td> 
-   <td> Charindex(&lt;sträng&gt;, &lt;sträng&gt;)<br /></td> 
+   <td> Charindex(&lt;string&gt;, &lt;string&gt;)<br /></td> 
   </tr> 
   <tr> 
    <td> <strong>GetLine</strong><br /> </td> 
    <td> Returnerar den n:e raden (från 1 till n) i strängen<br /> </td> 
-   <td> GetLine(&lt;sträng&gt;)<br /></td> 
+   <td> GetLine(&lt;string&gt;)<br /></td> 
   </tr> 
   <tr> 
    <td> <strong>IfEquals</strong><br /> </td> 
    <td> Returnerar den tredje parametern om de två första parametrarna är lika. Om inte returneras den sista parametern<br /> </td> 
-   <td> IfEquals(&lt;sträng&gt;, &lt;sträng&gt;, &lt;sträng&gt;, &lt;sträng&gt;)<br /></td> 
+   <td> IfEquals(&lt;string&gt;, &lt;string&gt;, &lt;string&gt;, &lt;string&gt;)<br /></td> 
   </tr> 
   <tr> 
    <td> <strong>IsMemoNull</strong><br /> </td> 
@@ -463,12 +463,12 @@ Här kan du markera fält i databastabellerna och lägga till avancerade funktio
   <tr> 
    <td> <strong>JuxtWords</strong><br /> </td> 
    <td> Sammanfogar de strängar som skickas som parametrar. Lägger till mellanrum mellan strängarna om det behövs.<br /> </td> 
-   <td> JuxtWords(&lt;sträng&gt;, &lt;sträng&gt;)<br /></td> 
+   <td> JuxtWords(&lt;string&gt;, &lt;string&gt;)<br /></td> 
   </tr> 
   <tr> 
    <td> <strong>JuxtWords3</strong><br /> </td> 
    <td> Sammanfogar de strängar som skickas som parametrar. Lägger till mellanrum mellan strängarna om det behövs<br /> </td> 
-   <td> JuxtWords3(&lt;sträng&gt;, &lt;sträng&gt;, &lt;sträng&gt;)<br /></td>  
+   <td> JuxtWords3(&lt;string&gt;, &lt;string&gt;, &lt;string&gt;)<br /></td>  
   </tr> 
   <tr> 
    <td> <strong>LPad</strong><br /> </td> 
@@ -478,37 +478,37 @@ Här kan du markera fält i databastabellerna och lägga till avancerade funktio
   <tr> 
    <td> <strong>Left</strong><br /> </td> 
    <td> Returnerar de första n tecknen i strängen<br /> </td> 
-   <td> Left(&lt;sträng&gt;, &lt;tal&gt;)<br /></td> 
+   <td> Left()&lt;string&gt;, &lt;number&gt;)<br /></td> 
   </tr> 
   <tr> 
    <td> <strong>Length</strong><br /> </td> 
    <td> Returnerar strängens längd<br /> </td> 
-   <td> Length(&lt;sträng&gt;)<br /></td> 
+   <td> Length(&lt;string&gt;)<br /></td> 
   </tr> 
   <tr> 
    <td> <strong>Lower</strong><br /> </td> 
    <td> Returnerar strängen i gemener<br /> </td> 
-   <td> Lower(&lt;sträng&gt;)<br /></td> 
+   <td> Lower(&lt;string&gt;)<br /></td> 
   </tr> 
   <tr> 
    <td> <strong>Ltrim</strong><br /> </td> 
    <td> Tar bort blanksteg till vänster om strängen<br /> </td> 
-   <td> Ltrim(&lt;sträng&gt;)<br /></td> 
+   <td> Ltrim(&lt;string&gt;)<br /></td> 
   </tr> 
   <tr> 
    <td> <strong>Md5Digest</strong><br /> </td> 
    <td> Returnerar en hexadecimal representation av MD5-nyckeln för en sträng<br /> </td> 
-   <td> Md5Digest(&lt;sträng&gt;)<br /></td> 
+   <td> Md5Digest()&lt;string&gt;)<br /></td> 
   </tr> 
   <tr> 
    <td> <strong>PMContains</strong><br /> </td> 
    <td> Anger om PM:et innehåller den sträng som skickas som en parameter<br /> </td> 
-   <td> MemoContains(&lt;PM&gt;, &lt;sträng&gt;)<br /></td> 
+   <td> MemoContains(&lt;memo&gt;, &lt;string&gt;)<br /></td> 
   </tr> 
   <tr> 
    <td> <strong>RPad</strong><br /> </td> 
    <td> Returnerar den slutförda strängen till höger<br /> </td> 
-   <td> RPad(&lt;sträng&gt;, &lt;tal&gt;, &lt;tecken&gt;)<br /></td> 
+   <td> RPad(&lt;string&gt;, &lt;number&gt;, &lt;character&gt;)<br /></td> 
   </tr> 
   <tr> 
    <td> <strong>Right</strong><br /> </td> 
@@ -893,7 +893,7 @@ Här kan du markera fält i databastabellerna och lägga till avancerade funktio
  </tbody> 
 </table>
 
-**Geomarknadsföring**
+**Geomarketing**
 
 <table> 
  <tbody> 
@@ -910,7 +910,7 @@ Här kan du markera fält i databastabellerna och lägga till avancerade funktio
  </tbody> 
 </table>
 
-**Övrigt**
+**Övriga**
 
 <table> 
  <tbody> 

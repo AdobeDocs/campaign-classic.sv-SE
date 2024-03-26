@@ -2,13 +2,13 @@
 product: campaign
 title: Kontinuerlig leverans
 description: Kontinuerlig leverans
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+badge-v7-only: label="v7" type="Informative" tooltip="Gäller endast Campaign Classic v7"
 feature: Workflows, Channels Activity
 exl-id: 9c228cdb-331e-476e-a24c-3c7e23add3bf
 source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
-source-wordcount: '364'
-ht-degree: 10%
+source-wordcount: '366'
+ht-degree: 11%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 10%
 
 
 
-A **Kontinuerlig leverans** kan du lägga till nya mottagare i en befintlig leverans. Med den här leveranstypen slipper du skapa en ny leverans varje gång: Det här läget är ofta mer effektivt, särskilt när det gäller meddelanden om låga volymer eller meddelanden som skickas ut vid behov.
+A **Kontinuerlig leverans** kan du lägga till nya mottagare i en befintlig leverans. Med den här leveranstypen slipper du skapa en ny leverans varje gång: Det här läget är ofta mer effektivt, särskilt för meddelanden med låg volym eller meddelanden som skickas vid behov.
 
 ![](assets/do-not-localize/how-to-video.png) [Upptäck den här funktionen i en video](#continuous-delivery-video)
 
@@ -59,10 +59,10 @@ En kontinuerlig leverans skapar en enda leverans- och leveranslogg (broadLog) oc
 
 ![Kontinuerlig leverans](assets/delivery_continuous.jpg)
 
-## Videokurs {#continuous-delivery-video}
+## Självstudievideo {#continuous-delivery-video}
 
 Den här videon visar hur du konfigurerar en kontinuerlig leverans med en stegvis frågeställning.
 
 >[!VIDEO](https://video.tv.adobe.com/v/25039?quality=12)
 
-Det finns fler instruktionsvideor för Campaign Classic [här](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=sv).
+Det finns fler videor med Campaign Classic om hur man gör [här](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=sv).

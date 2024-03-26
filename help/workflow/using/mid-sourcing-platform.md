@@ -1,22 +1,22 @@
 ---
 product: campaign
-title: Plattform för mid-sourcing
-description: Plattform för mid-sourcing
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+title: Plattform för mellanleverantörer
+description: Plattform för mellanleverantörer
+badge-v7-only: label="v7" type="Informative" tooltip="Gäller endast Campaign Classic v7"
 feature: Workflows
 source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
-source-wordcount: '52'
+source-wordcount: '59'
 ht-degree: 15%
 
 ---
 
 
-# Plattform för mid-sourcing{#mid-sourcing-platform}
+# Plattform för mellanleverantörer{#mid-sourcing-platform}
 
 
 
-Arbetsflödet som beskrivs nedan installeras med **Plattform för medelhög källkod** som standard. Mer information om den här modulen finns i [section](../../installation/using/mid-sourcing-deployment.md).
+Arbetsflödet som beskrivs nedan installeras med **Plattform för medelkälla** som standard. Mer information om modulen finns i [section](../../installation/using/mid-sourcing-deployment.md).
 
 <table> 
  <tbody> 

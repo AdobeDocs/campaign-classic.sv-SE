@@ -2,13 +2,13 @@
 product: campaign
 title: Datas livscykel
 description: Läs mer om datalivscykler i arbetsflöden
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+badge-v7-only: label="v7" type="Informative" tooltip="Gäller endast Campaign Classic v7"
 feature: Workflows, Data Management
 exl-id: 366acc1e-d769-4053-9fa1-f47182627c07
 source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
-source-wordcount: '509'
-ht-degree: 4%
+source-wordcount: '517'
+ht-degree: 5%
 
 ---
 
@@ -28,17 +28,17 @@ Välj den relevanta menyn för att göra detta:
 
 * Visa målet
 
-   På den här menyn visas tillgängliga data om målpopulationen samt arbetstabellens struktur (**[!UICONTROL Schema]** -fliken).
+  På den här menyn visas tillgängliga data om målpopulationen samt arbetstabellens struktur (**[!UICONTROL Schema]** -fliken).
 
-   ![](assets/wf-right-click-display.png)
+  ![](assets/wf-right-click-display.png)
 
-   Mer information finns i [Arbetstabeller och arbetsflödesschema](monitoring-workflow-execution.md#worktables-and-workflow-schema).
+  Mer information finns i [Arbetstabeller och arbetsflödesschema](monitoring-workflow-execution.md#worktables-and-workflow-schema).
 
 * Analysera målet
 
-   På den här menyn kan du komma åt guiden för beskrivande analys där du kan ta fram statistik och rapporter om övergångsdata.
+  På den här menyn kan du komma åt guiden för beskrivande analys där du kan ta fram statistik och rapporter om övergångsdata.
 
-   Mer information om detta hittar du i det här [avsnittet](../../reporting/using/using-the-descriptive-analysis-wizard.md).
+  Mer information om detta hittar du i det här [avsnittet](../../reporting/using/using-the-descriptive-analysis-wizard.md).
 
 Måldata rensas när arbetsflödet körs. Endast den sista arbetstabellen är tillgänglig. Du kan konfigurera arbetsflödet så att alla arbetsregister förblir tillgängliga: kontrollera **[!UICONTROL Keep the result of interim populations between two executions]** i arbetsflödesegenskaperna.
 
@@ -56,7 +56,7 @@ På så sätt kan du använda data som samlats in via en lista eller baserat på
 %= targetData.FIELD %
 ```
 
-**[!UICONTROL Target extension]** (targetData)-typografiska element är inte tillgängliga för riktade arbetsflöden. Leveransmålet måste byggas in i arbetsflödet och anges i leveransens ingående övergång.
+**[!UICONTROL Target extension]** (targetData)-typografiska element är inte tillgängliga för riktade arbetsflöden. Leveransmålet måste byggas in i arbetsflödet och anges i den inkommande övergången för leveransen.
 
 Om du vill skapa leveranskorrektur måste korrekturmålet byggas baserat på **[!UICONTROL Address substitution]** läge så att personaliseringsdata kan anges. Mer information om detta hittar du i det här [avsnittet](../../delivery/using/steps-defining-the-target-population.md#using-address-substitution-in-proof).
 
@@ -90,7 +90,7 @@ Använd följande steg:
 
    ![](assets/wf-targetdata-sample-3.png)
 
-1. Konfigurera sedan **[!UICONTROL Delivery]**: skapas baserat på en mall och mottagarna anges av den inkommande övergången.
+1. Konfigurera sedan **[!UICONTROL Delivery]**: den skapas baserat på en mall och mottagarna anges av den inkommande övergången.
 
    ![](assets/wf-targetdata-sample-4.png)
 

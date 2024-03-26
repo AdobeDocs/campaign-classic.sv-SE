@@ -1,14 +1,14 @@
 ---
 product: campaign
 title: Definiera godkännanden
-description: Godkännanden gör det möjligt för operatörer att fatta beslut som styr ett arbetsflöde eller att bekräfta att det fortsätter att köras
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+description: Godkännanden gör det möjligt för operatorer att fatta beslut som styr ett arbetsflöde eller att bekräfta att det fortsätter att köras
+badge-v7-only: label="v7" type="Informative" tooltip="Gäller endast Campaign Classic v7"
 feature: Approvals
 exl-id: 4d413d51-ae5d-4e5e-bfaf-4160a6075281
 source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
-source-wordcount: '841'
-ht-degree: 4%
+source-wordcount: '849'
+ht-degree: 3%
 
 ---
 
@@ -30,7 +30,7 @@ I operationer baseras alla faser som kräver godkännande på samma princip.
 
 Exempel på godkännanden finns i [det här avsnittet](../../campaign/using/marketing-campaign-approval.md#checking-and-approving-deliveries).
 
-En operator kan svara på ett av två sätt: validera med webbsidan som är länkad i e-postmeddelandet eller via konsolen.
+En operator kan svara på ett av två sätt: validera med den webbsida som är länkad i e-postmeddelandet eller via konsolen.
 
 >[!NOTE]
 >
@@ -38,9 +38,9 @@ En operator kan svara på ett av två sätt: validera med webbsidan som är län
 
 ## Godkännanden via e-post {#sending-emails}
 
-Det går att få ett meddelande om godkännande som innehåller en länk till en webbsida där det går att svara. Om måloperatorn ska få ett e-postmeddelande om godkännande måste operatörens e-postadress vara fullständig. Om så inte är fallet måste operatören använda konsolen för att svara
+Det går att få ett meddelande om godkännande som innehåller en länk till en webbsida där det går att svara. För att måloperatorn ska få ett e-postmeddelande om godkännande måste operatörens e-postadress vara fullständig. Om så inte är fallet måste operatören använda konsolen för att svara
 
-Operatörshantering beskrivs i detta [section](../../platform/using/access-management.md).
+Operatörshantering beskrivs i det här [section](../../platform/using/access-management.md).
 
 E-postmeddelanden om godkännande skickas kontinuerligt. Standardleveransmallen är **[!UICONTROL notifyAssignee]**: Den sparas i **[!UICONTROL Administration > Campaign management > Technical delivery templates]** mapp. Scenariot kan anpassas och vi rekommenderar att du skapar en kopia och ändrar mallar för varje aktivitet.
 
@@ -80,24 +80,24 @@ Om du vill lägga till ett nytt förfallodatum klickar du på **[!UICONTROL Add]
 >
 >Det är inte nödvändigt att ange en ordning för förfallodatumen eftersom de bearbetas i kronologisk ordning.
 
-The **[!UICONTROL Do not terminate the task]** låter alternativet godkännandet vara aktivt när fördröjningen överskrids. I det här läget kan du hantera påminnelser medan du låter godkännandet vara aktivt: -operatorer kan fortfarande svara. Det här alternativet är inaktiverat som standard, vilket innebär att uppgiften anses vara slutförd när den upphör att gälla och att operatorerna kanske inte längre svarar.
+The **[!UICONTROL Do not terminate the task]** låter alternativet godkännandet vara aktivt när fördröjningen överskrids. I det här läget kan du hantera påminnelser medan du låter godkännandet vara aktivt: operatorerna kan fortfarande svara. Det här alternativet är inaktiverat som standard, vilket innebär att uppgiften anses vara slutförd när den upphör att gälla och att operatorerna kanske inte längre svarar.
 
 Du kan skapa fyra typer av förfallodatum:
 
-* **Fördröjning efter aktivitetens start**: Utgångsdatumet beräknas genom att en angiven tidsperiod läggs till det datum då godkännandet aktiveras.
+* **Fördröjning efter att aktiviteten har startats**: Förfallotiden beräknas genom att en angiven tidsperiod läggs till det datum då godkännandet aktiveras.
 * **Fördröjning efter ett visst datum**: Förfallotiden beräknas genom att lägga till en tidslängd till ett datum som du anger.
-* **Fördröjning före ett visst datum**: Förfallodatumet beräknas genom att en tidslängd subtraheras från ett datum som du anger.
+* **Fördröjning före ett visst datum**: Förfallotiden beräknas genom att subtrahera en tid från ett datum som du anger.
 * **Förfallotid beräknat av skript**: Förfallotiden beräknas med JavaScript.
 
-   I följande exempel beräknas ett utgångsdatum 24 timmar innan ett leveransdatum påbörjas (identifieras av **vars.deliveryId**):
+  I följande exempel beräknas ett utgångsdatum 24 timmar innan ett leveransdatum påbörjas (identifieras av **vars.deliveryId**):
 
-   ```
-   var delivery = nms.delivery.get(vars.deliveryId)
-   var expiration = delivery.scheduling.contactDate
-   var oneDay = 1000*60*60*24
-   expiration.setTime(expiration.getTime() - oneDay)
-   return expiration
-   ```
+  ```
+  var delivery = nms.delivery.get(vars.deliveryId)
+  var expiration = delivery.scheduling.contactDate
+  var oneDay = 1000*60*60*24
+  expiration.setTime(expiration.getTime() - oneDay)
+  return expiration
+  ```
 
 ## Flera godkännanden {#multiple-approval}
 

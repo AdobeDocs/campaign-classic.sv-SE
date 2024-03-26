@@ -11,7 +11,7 @@ exl-id: 78c65b31-e3d9-4a46-a101-26f35d00a4ee
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
 source-wordcount: '226'
-ht-degree: 18%
+ht-degree: 15%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 18%
 
 Det här avsnittet innehåller felsökningsprocedurer som rör Adobe Campaign allmänna produktionsproblem, som leverans- och arbetsflödeskörning, övervakning, databasunderhåll, anslutning osv.
 
-## Vanliga och allmänna problem {#common-and-general-issues}
+## Vanliga och allmänna frågor {#common-and-general-issues}
 
 * Detta [page](../../production/using/modules-and-frequent-issues.md) visar de vanligaste problemen som uppstått för de listade modulerna.
 * Detta [page](../../production/using/workflow-execution.md) visar vanliga felsökningsprocedurer som du bör följa när du stöter på problem med arbetsflödeskörning.
@@ -54,7 +54,7 @@ Upptäck hur du kan lösa prestandaproblem genom att läsa upp följande avsnitt
 * [Databasprestanda](../../production/using/database-performances.md)
 * [Kodning av Oracle-databasen](../../production/using/encoding-of-the-oracle-database.md)
 
-## Anslutningsförbättringar {#connection-improvements}
+## Förbättrade anslutningsmöjligheter {#connection-improvements}
 
 Om du stöter på anslutningsproblem kan du åtgärda dem på följande sätt:
 

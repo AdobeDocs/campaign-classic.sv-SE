@@ -11,8 +11,8 @@ topic-tags: administration-basics
 exl-id: d3369b63-a29b-43b7-b2ad-d36d4f46c82e
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '2454'
-ht-degree: 3%
+source-wordcount: '2477'
+ht-degree: 2%
 
 ---
 
@@ -258,7 +258,7 @@ I **[!UICONTROL Content]** klickar du på **[!UICONTROL Add]** om du vill marker
 
 ![](assets/packagedefinition_addentities.png)
 
-Enheter kan läggas till i en paketdefinition direkt från sin plats i instansen. Följ stegen nedan för att göra detta:
+Enheter kan läggas till i en paketdefinition direkt från sin plats i instansen. Gör så här:
 
 1. Högerklicka på önskad enhet och välj sedan **[!UICONTROL Actions > Export in a package]**.
 

@@ -2,13 +2,13 @@
 product: campaign
 title: Använd en webbformulärsmall
 description: Använd en webbformulärsmall
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
+badge-v7: label="v7" type="Informative" tooltip="Gäller Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Gäller även Campaign v8"
 feature: Web Forms
 exl-id: 0cbb8e4c-8cb4-4dd7-ad09-b8b3165c19a8
 source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
-source-wordcount: '211'
+source-wordcount: '223'
 ht-degree: 7%
 
 ---
@@ -23,7 +23,7 @@ Härifrån kan du antingen skapa nya mallar eller konvertera ett befintligt form
 
 ## Konvertera ett befintligt formulär till en mall {#convert-an-existing-form-into-a-template}
 
-Ett formulär kan ändras till en mall och dess konfiguration återanvänds. Det gör du genom att markera formuläret, högerklicka och välja **[!UICONTROL Actions > Save as template...]**.
+Ett formulär kan ändras till en mall och dess konfiguration återanvänds. Markera formuläret, högerklicka och välj **[!UICONTROL Actions > Save as template...]**.
 
 ![](assets/s_ncs_admin_survey_saveastemplate.png)
 

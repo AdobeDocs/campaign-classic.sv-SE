@@ -11,8 +11,8 @@ topic-tags: asset-sharing
 exl-id: b28aa5a5-afba-458b-8a85-375493c6c836
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '179'
-ht-degree: 1%
+source-wordcount: '173'
+ht-degree: 0%
 
 ---
 
@@ -27,7 +27,7 @@ Tillgångstjänster omfattar:
 * Resurslagring, hanteringsgränssnitt, inbäddat urvalsgränssnitt (nås via lösningar).
 * Integrering med Creative Cloud och Experience Cloud.
 
-När du redigerar en e-postleverans eller en landningssida i Adobe Campaign kan du placera resurser från dina Adobe Experience Cloud-bibliotek. Beroende på vilka lösningar du använder kan dessa resurser lagras i bastjänsten Assets eller Adobe Experience Manager Assets.
+När du redigerar en e-postleverans eller en landningssida i Adobe Campaign kan du placera resurser från dina Adobe Experience Cloud-bibliotek. Beroende på vilka lösningar du använder kan dessa resurser lagras i Assets core service eller Adobe Experience Manager Assets.
 
 De olika tillgängliga biblioteken beskrivs i [det här dokumentet](https://experienceleague.adobe.com/docs/core-services/interface/assets/experience-cloud-assets.html).
 

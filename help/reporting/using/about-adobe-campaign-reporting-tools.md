@@ -8,12 +8,12 @@ badge-v8: label="v8" type="Positive" tooltip="Gäller även Campaign v8"
 exl-id: 1ef30004-e1b0-4dde-8104-0ee9e8aa9d8b
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '346'
-ht-degree: 16%
+source-wordcount: '347'
+ht-degree: 14%
 
 ---
 
-# Kom igång med rapportering {#about-adobe-campaign-reporting-tools}
+# Kom igång med rapporter {#about-adobe-campaign-reporting-tools}
 
 
 

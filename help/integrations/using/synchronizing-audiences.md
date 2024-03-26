@@ -9,7 +9,7 @@ hidefromtoc: true
 exl-id: 88e581cf-43cd-4c43-9347-d016c62fdf42
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '1140'
+source-wordcount: '1117'
 ht-degree: 1%
 
 ---
@@ -52,7 +52,7 @@ När målet och dess ytterligare data har definierats kan du spara det som en li
 Så här får du den slutliga målgruppen och dess ytterligare data:
 
 1. Skapa ett nytt arbetsflöde från **[!UICONTROL Profiles and Targets]** > **[!UICONTROL Jobs]** > **[!UICONTROL Targeting workflows]**.
-1. Lägg till en **[!UICONTROL Query]** och välj de mottagare som du vill skicka det slutliga e-postmeddelandet till. Till exempel alla mottagare mellan 18 och 30 år och bor i Frankrike.
+1. Lägg till en **[!UICONTROL Query]** och välj de mottagare som du vill skicka det slutliga e-postmeddelandet till. Exempel: alla mottagare mellan 18 och 30 år och bor i Frankrike.
 
    ![](assets/acs_connect_query1.png)
 

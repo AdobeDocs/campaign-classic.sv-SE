@@ -10,8 +10,8 @@ topic-tags: connectors
 exl-id: e3a97e55-dd8b-41e1-b48c-816d973f62a8
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '609'
-ht-degree: 1%
+source-wordcount: '590'
+ht-degree: 2%
 
 ---
 
@@ -32,14 +32,14 @@ För att ansluta till en extern Hadoop-databas i FDA krävs följande konfigurat
 
 1. Du måste sedan installera ODBC-drivrutinerna och skapa ett DSN för din Hive-anslutning. Instruktioner finns i [den här sidan](https://docs.cloudera.com/documentation/other/connectors/hive-odbc/2-6-5/Cloudera-ODBC-Driver-for-Apache-Hive-Install-Guide.pdf)
 
-1. När du har hämtat och installerat ODBC-drivrutinerna måste du starta om Campaign Classic. Om du vill göra det kör du följande kommando:
+1. När du har hämtat och installerat ODBC-drivrutinerna måste du starta om Campaign Classicen. Om du vill göra det kör du följande kommando:
 
    ```
    systemctl stop nlserver.service
    systemctl start nlserver.service
    ```
 
-1. I Campaign Classic kan du sedan konfigurera [!DNL Hadoop] externt konto. Mer information om hur du konfigurerar ditt externa konto finns i [det här avsnittet](#hadoop-external).
+1. I Campaign Classicen kan du sedan konfigurera [!DNL Hadoop] externt konto. Mer information om hur du konfigurerar ditt externa konto finns i [det här avsnittet](#hadoop-external).
 
 ## Hadoopets externa konto {#hadoop-external}
 

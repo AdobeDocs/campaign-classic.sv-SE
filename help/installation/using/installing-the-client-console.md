@@ -10,8 +10,8 @@ topic-tags: installing-campaign-in-windows-
 exl-id: 7cc78214-92b8-4b1f-a307-96ec6af818d1
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '1142'
-ht-degree: 3%
+source-wordcount: '1131'
+ht-degree: 1%
 
 ---
 
@@ -24,7 +24,7 @@ Innan du börjar installera klientkonsolen måste du:
 * Kontrollera system- och verktygskompatibiliteten med Adobe Campaign i [Kompatibilitetsmatris](../../rn/using/compatibility-matrix.md#ClientConsoleoperatingsystems)
 * Hämta webbadressen till Campaign-servern
 * Hämta inloggningsuppgifter
-* Låt Microsoft Edge Webview2-miljön vara installerad på datorn (från version Campaign Classic 7.3). [Läs mer](#webview)
+* Ha Microsoft Edge Webview2 installerat på datorn (från version 7.3 av Campaign Classic). [Läs mer](#webview)
 
 Processen att installera eller uppdatera klientkonsolen skiljer sig åt beroende på hur du implementerar Adobe Campaign Classic.
 Läs informationen nedan för att ta reda på vad som krävs för implementeringen.
@@ -41,9 +41,9 @@ Läs informationen nedan för att ta reda på vad som krävs för implementering
 
 ## Installation av Microsoft Edge Webview2 {#webview}
 
-Från version Campaign Classic 7.3 krävs installation av Microsoft Edge Webview 2 för alla konsolinstallationer.
+Från och med version 7.3 av Campaign Classic krävs installation av Microsoft Edge Webview 2 för alla konsolinstallationer.
 
-Webbvyn installeras som standard som en del av Windows 11. Om det inte redan finns på datorn uppmanas du att hämta det från Campaign Classic Console Installer [Microsoft Developer website](https://www.adobe.com/go/acc-ms-webview2-runtime-download). Observera att nedladdningslänken inte fungerar i webbläsaren Internet Explorer 11 eftersom Microsoft inte längre stöder det. Kontrollera att du använder en annan webbläsare för att komma åt länken.
+Webbvyn installeras som standard som en del av Windows 11. Om Campaign Classic Console Installer inte redan finns på datorn uppmanas du att hämta det från [Microsoft Developer website](https://www.adobe.com/go/acc-ms-webview2-runtime-download). Observera att nedladdningslänken inte fungerar i webbläsaren Internet Explorer 11 eftersom Microsoft inte längre stöder det. Kontrollera att du använder en annan webbläsare för att komma åt länken.
 
 ## Implementeringar via Adobe Hosted {#hosted-customers}
 
@@ -117,7 +117,7 @@ Användare bör nu hämta och installera konsolen genom att följa stegen nedan:
 
 1. Klicka på **[!UICONTROL Download]** på installationssidan.
 1. Hämta och spara klientinstallationsfilen.
-1. Kör den hämtade filen på en dator i Windows: Installationen startar. Standardinstallationssökvägen för klientkonsolen är **$PROGRAMFILES$/Adobe/Adobe Campaign Classic vX Client**, där X är 6 eller 7 enligt din Adobe Campaign-version.
+1. Kör den hämtade filen på en dator i Windows: Installationen startar. Standardinstallationssökvägen för klientkonsolen är **$PROGRAMFILES$/Adobe/Adobe Campaign Classic vX-klient**, där X är 6 eller 7 enligt din Adobe Campaign-version.
 
 ### Skapa anslutningen - endast för första gången{#create-the-connection}
 
@@ -157,7 +157,7 @@ Så här loggar du in på en befintlig instans:
 
 1. Välj den Campaign-instans som du måste logga in på.
 
-1. Klicka på **[!UICONTROL Ok]**
+1. Klicka **[!UICONTROL Ok]**
 
 1. Ange dina inloggningsuppgifter och klicka på **[!UICONTROL Log in]**
 
@@ -176,4 +176,4 @@ I den här videon visas hur du installerar och konfigurerar Adobe Campaign Clien
 
 >[!VIDEO](https://video.tv.adobe.com/v/35124?quality=12)
 
-Det finns fler instruktionsvideor för Campaign Classic [här](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=sv).
+Det finns fler videor med Campaign Classic om hur man gör [här](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=sv).

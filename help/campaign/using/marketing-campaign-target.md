@@ -9,7 +9,7 @@ exl-id: 04daa67c-4057-42a7-b993-a6eddf2b883d
 source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
 workflow-type: tm+mt
 source-wordcount: '1492'
-ht-degree: 3%
+ht-degree: 1%
 
 ---
 
@@ -27,7 +27,7 @@ Om du vill skapa leveransmålet kan du definiera filtreringsvillkor för mottaga
 
 ## Skicka till en grupp
 
-Du kan importera en population till en lista och sedan ange den här listan som mål i leveranser. Följ stegen nedan för att göra detta:
+Du kan importera en population till en lista och sedan ange den här listan som mål i leveranser. Gör så här:
 
 1. Redigera den aktuella leveransen och klicka på **[!UICONTROL To]** länk för att ändra målpopulationen.
 
@@ -218,7 +218,7 @@ Du kan extrahera mottagare från huvudmålet för leveransen. I det här fallet 
 Om du vill extrahera en kontrollgrupp aktiverar du kontrollgruppen för kampanjen eller leveransen och väljer något av följande alternativ: **[!UICONTROL Activate random sampling]** eller **[!UICONTROL Keep only the first records after sorting]**.
 
 * **[!UICONTROL Activate random sampling]** : det här alternativet använder slumpmässigt urval för mottagarna i målpopulationen. Om du sedan anger tröskelvärdet till 100 kommer kontrollgruppen att bestå av 100 mottagare som väljs slumpmässigt från målpopulationen. Det slumpmässiga urvalet beror på databasmotorn.
-* **[!UICONTROL Keep only the first records after sorting]** : med det här alternativet kan du definiera en begränsning baserat på en eller flera sorteringsvillkor. Om du väljer **[!UICONTROL Age]** som sorteringskriterium och sedan definiera 100 som ett tröskelvärde, kommer kontrollgruppen att bestå av de 100 yngsta mottagarna. Det kan till exempel vara intressant att definiera en kontrollgrupp som innehåller mottagare som gör få inköp, eller mottagare som gör vanliga inköp, och att jämföra deras beteende med de kontaktade mottagarna.
+* **[!UICONTROL Keep only the first records after sorting]** : Med det här alternativet kan du definiera en begränsning baserat på en eller flera sorteringsordningar. Om du väljer **[!UICONTROL Age]** som sorteringskriterium och sedan definiera 100 som ett tröskelvärde, kommer kontrollgruppen att bestå av de 100 yngsta mottagarna. Det kan till exempel vara intressant att definiera en kontrollgrupp som innehåller mottagare som gör få inköp, eller mottagare som gör vanliga inköp, och att jämföra deras beteende med de kontaktade mottagarna.
 
 Klicka **[!UICONTROL Next]** om du vill definiera sorteringsordningen (om det behövs) och välja mottagarbegränsningsläget.
 

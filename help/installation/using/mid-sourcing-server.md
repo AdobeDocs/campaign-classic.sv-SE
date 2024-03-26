@@ -11,12 +11,12 @@ topic-tags: additional-configurations
 exl-id: 3e55d7f5-2858-4390-bba9-8fb5be0c3d98
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '1020'
+source-wordcount: '1013'
 ht-degree: 1%
 
 ---
 
-# Server för mid-sourcing{#mid-sourcing-server}
+# Server för mellanleverantörer{#mid-sourcing-server}
 
 
 

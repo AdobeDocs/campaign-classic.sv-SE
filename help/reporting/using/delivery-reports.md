@@ -8,8 +8,8 @@ feature: Reporting, Monitoring
 exl-id: 74feb13f-0994-4a6a-ae4f-2538b07cc9c0
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '1463'
-ht-degree: 2%
+source-wordcount: '1464'
+ht-degree: 1%
 
 ---
 
@@ -87,7 +87,7 @@ Den här värdetabellen visar hur leveranser, öppningar, klickningar och rårea
 
 >[!NOTE]
 >
->Domännamnen som visas i den här rapporten definieras i den specificerade lista som används på kubnivå. Redigera **[!UICONTROL Domains]** specificera lista och ändra värden och alias. Mer information om detta finns i [det här avsnittet](../../platform/using/managing-enumerations.md). The **[!UICONTROL Others]** -kategorin innehåller domännamn som inte tillhör något värde i den specificerade listan.
+>Domännamnen som visas i den här rapporten definieras i den specificerade lista som används på kubnivå. Redigera **[!UICONTROL Domains]** specificera lista och ändra värden och alias. Mer information finns i [det här avsnittet](../../platform/using/managing-enumerations.md). The **[!UICONTROL Others]** -kategorin innehåller domännamn som inte tillhör något värde i den specificerade listan.
 
 **[!UICONTROL 4. Generated click streams]**
 
@@ -124,7 +124,7 @@ Den här rapporten innehåller en lista över besökta sidor efter en leverans.
 
 ![](assets/s_ncs_user_url_report.png)
 
-Du kan konfigurera innehållet i den här rapporten genom att välja: poängdiagrammet som ska visas, tidsfiltret (sedan åtgärden startades, under de första 6 timmarna efter start osv.) och datavisningsläget (per etikett, per URL, per kategori). Klicka **[!UICONTROL Refresh]** för att bekräfta valet.  
+Du kan konfigurera innehållet i den här rapporten genom att välja: poängdiagrammet som ska visas, tidsfiltret (sedan åtgärden startades, under de första 6 timmarna efter start osv.) och datavisningsläget (per etikett, per URL, per kategori). Klicka **[!UICONTROL Refresh]** för att bekräfta ditt val.
 
 Följande frekvenser visas i rapportens övre del:
 
@@ -190,7 +190,7 @@ Rapporten innehåller statistik om öppningar, klick och transaktioner.
 
 ![](assets/s_ncs_user_stat_report.png)
 
-Med den kan ni spåra effekten av leveransen på marknaden. Du kan konfigurera hur värden visas genom att ändra tidsskalan (1 timme, 3 timmar eller 24 timmar). Klicka **[!UICONTROL Refresh]** för att bekräfta valet.  
+Med den kan ni spåra effekten av leveransen på marknaden. Du kan konfigurera hur värden visas genom att ändra tidsskalan (1 timme, 3 timmar eller 24 timmar). Klicka **[!UICONTROL Refresh]** för att bekräfta ditt val.
 
 Den här rapporten innehåller en värdetabell och ett Pareto-diagram som visar hur lång tid det tar att leverera för att uppnå maximal effektivitet. Följande indikatorer används:
 

@@ -9,8 +9,8 @@ role: User
 exl-id: 0411686e-4f13-401e-9333-e14b05ebe9cd
 source-git-commit: d2f5f2a662c022e258fb3cc56c8502c4f4cb2849
 workflow-type: tm+mt
-source-wordcount: '1514'
-ht-degree: 4%
+source-wordcount: '1527'
+ht-degree: 3%
 
 ---
 
@@ -195,7 +195,7 @@ När leveransen har startats kan meddelandena (och eventuella försök) skickas 
 
   >[!IMPORTANT]
   >
-  >För värdbaserade eller hybridinstallationer, om du har uppgraderat till [Förbättrad MTA](sending-with-enhanced-mta.md), **[!UICONTROL Delivery duration]** inställning i e-postleveranser för Campaign kommer endast att användas om den är inställd på **3,5 dagar eller mindre**. Om du anger ett värde som är högre än 3,5 dagar kommer det inte att tas med i beräkningen.
+  >För värdbaserade eller hybridinstallationer, om du har uppgraderat till [Förbättrad MTA](sending-with-enhanced-mta.md), **[!UICONTROL Delivery duration]** inställning i e-postleveranser för Campaign kommer endast att användas om den är inställd på **3,5 dagar eller mindre**. Om du anger ett värde som är högre än 3,5 dagar kommer det inte att beaktas.
 
 * **Giltighetsgräns för resurser**: **[!UICONTROL Validity limit]** -fältet används för överförda resurser, huvudsakligen för spegelsidan och bilder. Resurserna på den här sidan är giltiga under en begränsad tid (för att spara diskutrymme).
 

@@ -6,7 +6,7 @@ exl-id: d7bf9d62-6f9e-415f-8160-446210f6392e
 source-git-commit: b94c4bfd478b4a8fbcefe6341608dd6a14bb31d3
 workflow-type: tm+mt
 source-wordcount: '267'
-ht-degree: 3%
+ht-degree: 2%
 
 ---
 
@@ -22,11 +22,11 @@ The **[!UICONTROL Working table]** gör att Adobe Campaign Classic arbetsflöde 
 Som standard är **[!UICONTROL Working table]** skapas i samma databas som källan för de data som vi frågar efter.
 
 När du till exempel frågar **[!UICONTROL Profiles]** tabellen, som lagras i molndatabasen, skapar du en **[!UICONTROL Working table]** i samma molndatabas.
-Om du vill ändra detta kan du lägga till **[!UICONTROL Change Data Source]** aktivitet för att välja en annan datakälla för **[!UICONTROL Working table]**.
+Om du vill ändra detta kan du lägga till **[!UICONTROL Change Data Source]** väljer du en annan datakälla för **[!UICONTROL Working table]**.
 
 Observera att när du använder **[!UICONTROL Change Data Source]** måste du växla tillbaka till molndatabasen för att kunna fortsätta med arbetsflödeskörningen.
 
-Så här använder du **[!UICONTROL Change Data Source]** aktivitet:
+Använd **[!UICONTROL Change Data Source]** aktivitet:
 
 1. Skapa ett arbetsflöde.
 

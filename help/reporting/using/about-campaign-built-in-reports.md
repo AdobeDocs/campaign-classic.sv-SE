@@ -1,7 +1,7 @@
 ---
 product: campaign
-title: Om inbyggda rapporter i Campaign
-description: Om inbyggda rapporter i Campaign
+title: Om inbyggda rapporter för Campaign
+description: Om inbyggda rapporter för Campaign
 feature: Reporting, Monitoring
 badge-v7: label="v7" type="Informative" tooltip="Gäller Campaign Classic v7"
 badge-v8: label="v8" type="Positive" tooltip="Gäller även Campaign v8"
@@ -9,11 +9,11 @@ exl-id: afb11ab5-bd60-4262-9dd1-fcda19cdaca0
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
 source-wordcount: '281'
-ht-degree: 4%
+ht-degree: 0%
 
 ---
 
-# Om inbyggda rapporter i Campaign{#about-campaign-built-in-reports}
+# Om inbyggda rapporter för Campaign{#about-campaign-built-in-reports}
 
 
 

@@ -10,7 +10,7 @@ exl-id: bc4329b4-d272-4d32-bdaa-290cb9912af4
 source-git-commit: fd5e4bbc87a48f029a09b14ab1d927b9afe4ac52
 workflow-type: tm+mt
 source-wordcount: '456'
-ht-degree: 1%
+ht-degree: 0%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 1%
 
 ## Innehållsmodell {#content-model-14}
 
-srcSchema:=(attribut) | createdBy | data | element | uppräkning | hjälp | gränssnitt |-metoder | modifiedBy)
+srcSchema:=(attribut) | createdBy | data | element | uppräkning | help | gränssnitt | metoder | modifiedBy)
 
 ## Attribut {#attributes-14}
 

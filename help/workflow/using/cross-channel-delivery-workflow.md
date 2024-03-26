@@ -2,13 +2,13 @@
 product: campaign
 title: Arbetsflöde för leveranser över flera kanaler
 description: Läs mer om arbetsflöden för flerkanalsleverans
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+badge-v7-only: label="v7" type="Informative" tooltip="Gäller endast Campaign Classic v7"
 feature: Workflows, Channels Activity
 exl-id: dfd36d2c-44ff-49a9-80b4-09eaf3377072
 source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
-source-wordcount: '666'
-ht-degree: 3%
+source-wordcount: '677'
+ht-degree: 4%
 
 ---
 
@@ -24,7 +24,7 @@ De huvudsakliga implementeringsstegen för det här fallet är följande:
 
 1. Skapa en **[!UICONTROL Query]** målgruppsaktiviteter.
 1. Skapa en **[!UICONTROL Email delivery]** aktivitet som innehåller en länk till ett erbjudande.
-1. Använda en **[!UICONTROL Split]** aktivitet till:
+1. Använda **[!UICONTROL Split]** aktivitet till:
 
    * Skicka ytterligare ett e-postmeddelande till mottagare som inte öppnade det första e-postmeddelandet.
    * Skicka ett SMS till mottagarna som öppnade e-postmeddelandet men inte klickade på länken till erbjudandet.
@@ -37,7 +37,7 @@ De huvudsakliga implementeringsstegen för det här fallet är följande:
 Om du vill definiera målet skapar du en fråga som identifierar mottagarna.
 
 1. Skapa en kampanj. Mer information om detta finns i [det här avsnittet](../../campaign/using/setting-up-marketing-campaigns.md#creating-a-campaign).
-1. I **[!UICONTROL Targeting and workflows]** fliken med kampanjen, lägg till en **Fråga** till arbetsflödet. Mer information om hur du använder den här aktiviteten finns i [det här avsnittet](query.md).
+1. I **[!UICONTROL Targeting and workflows]** fliken med kampanjen, lägg till en **Fråga** till ditt arbetsflöde. Mer information om hur du använder den här aktiviteten finns i [det här avsnittet](query.md).
 1. Definiera de mottagare som ska ta emot leveranserna. Välj till exempel Guldmedlemmar som måldimension.
 1. Lägg till filtervillkor i frågan. I det här exemplet väljer du mottagare som har en e-postadress och ett mobilnummer.
 
@@ -62,7 +62,7 @@ Om du vill definiera målet skapar du en fråga som identifierar mottagarna.
 
    På så sätt kan du använda den här informationen för att skicka ytterligare leveranser beroende på mottagarnas beteenden när du tar emot det första e-postmeddelandet.
 
-1. Lägg till en **[!UICONTROL Wait]** för att ge mottagarna några dagar att öppna e-postmeddelandet.
+1. Lägg till en **[!UICONTROL Wait]** om du vill att mottagarna ska kunna öppna e-postmeddelandet i några dagar.
 
    ![](assets/wkf_cross-channel_4.png)
 
@@ -83,7 +83,7 @@ När målet har identifierats och första leveransen har skapats måste du segme
 
    ![](assets/wkf_cross-channel_9.png)
 
-1. I filterinställningarna väljer du **[!UICONTROL Recipients who have not opened or clicked (email)]** från **[!UICONTROL Behavior]** nedrullningsbar lista och välj e-postmeddelandet med det erbjudande du vill skicka från leveranslistan. Klicka på **[!UICONTROL Finish]**.
+1. Välj **[!UICONTROL Recipients who have not opened or clicked (email)]** från **[!UICONTROL Behavior]** nedrullningsbar lista och välj e-postmeddelandet med det erbjudande du vill skicka från leveranslistan. Klicka på **[!UICONTROL Finish]**.
 
    ![](assets/wkf_cross-channel_10.png)
 
@@ -91,7 +91,7 @@ När målet har identifierats och första leveransen har skapats måste du segme
 
    ![](assets/wkf_cross-channel_11.png)
 
-1. För den tredje delmängden efter att du har valt **[!UICONTROL Add a filtering condition on the inbound population]** och klicka **[!UICONTROL Edit]** väljer du **[!UICONTROL Use a specific filtering dimension]** alternativ.
+1. För den tredje delmängden, efter att du har valt **[!UICONTROL Add a filtering condition on the inbound population]** och klicka **[!UICONTROL Edit]** väljer du **[!UICONTROL Use a specific filtering dimension]** alternativ.
 1. Välj **[!UICONTROL Recipient tracking log]** från **[!UICONTROL Filtering dimension]** nedrullningsbar lista, markera **[!UICONTROL Filtering conditions]** från **[!UICONTROL List of restriction filters]** och klicka **[!UICONTROL Next]**.
 
    ![](assets/wkf_cross-channel_12.png)

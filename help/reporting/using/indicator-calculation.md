@@ -7,8 +7,8 @@ feature: Reporting, Monitoring
 exl-id: 52ca1595-16b3-4323-9122-d1ac13c08147
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '2979'
-ht-degree: 2%
+source-wordcount: '3049'
+ht-degree: 0%
 
 ---
 
@@ -245,7 +245,7 @@ Den här rapporten baseras på **[!UICONTROL Delivery]** (nms:delivery), **[!UIC
   <tr> 
    <td> Twitter<br /> </td> 
    <td> @twitter<br /> </td> 
-   <td> Summan av alla @totalClicks som URL-kategorin är lika med"twitter".<br /> </td> 
+   <td> Summan av alla @totalClicks för vilka URL-kategorin är lika med "twitter".<br /> </td> 
    <td> Sum(iIf([url/@category]='twitter',@totalClicks,0))<br /> </td> 
   </tr> 
   <tr> 
@@ -473,7 +473,7 @@ Den här rapporten baseras på **[!UICONTROL Services]** tabell (nms:service).
    <td> sum(Iif(@action = 1 och @date &gt; addDays(getDate(), (-1)), 1, 0))<br /> </td> 
   </tr> 
   <tr> 
-   <td> Avprenumerationer<br /> </td> 
+   <td> Avbeställ<br /> </td> 
    <td> @_unsubscription<br /> </td> 
    <td> antal avbeställningar (åtgärd = 0) föregående dag.<br /> </td> 
    <td> sum(Iif(@action = 0 och @date &gt; addDays(getDate(), (-1)), 1, 0))<br /> </td> 
@@ -563,13 +563,13 @@ Den här rapporten baseras på **[!UICONTROL Delivery and tracking statistics]**
   </tr> 
   <tr> 
    <td> Öppnar<br /> </td> 
-   <td> @recipientOpen<br /> </td> 
+   <td> @receiveOpen<br /> </td> 
    <td> Antal alla @broadLog-id i alla spårningsloggar.<br /> </td> 
    <td> Motskild ([@broadLog-id])<br /> </td> 
   </tr> 
   <tr> 
    <td> Klickningar<br /> </td> 
-   <td> @recipientClick<br /> </td> 
+   <td> @receiveClick<br /> </td> 
    <td> Distinkt antal @broadLog-id med en URL-typ som är lika med "Email click". <br /> </td> 
    <td> Countdistans(Iif([url/@type]=1, @broadLog-id, 0))<br /> </td> 
   </tr> 
@@ -581,7 +581,7 @@ Den här rapporten baseras på **[!UICONTROL Delivery and tracking statistics]**
   </tr> 
   <tr> 
    <td> distinkta klickningar på den uppnådda populationen<br /> </td> 
-   <td> @personClick<br /> </td> 
+   <td> @personKlicka<br /> </td> 
    <td> Antal alla @source-id med en URL-kategori som är lika med "Email click".<br /> </td> 
    <td> Countdistans(Iif([url/@type]=1, @source-id, 0))<br /> </td> 
   </tr> 
@@ -593,7 +593,7 @@ Den här rapporten baseras på **[!UICONTROL Delivery and tracking statistics]**
   </tr> 
   <tr> 
    <td> Mottagarklickningar<br /> </td> 
-   <td> @recipientClick<br /> </td> 
+   <td> @receiveClick<br /> </td> 
    <td> Distinkt antal av @broadLog-ids med en URL-typ som är lika med"Email click".<br /> </td> 
    <td> Countdistans(Iif([url/@type]=1, @broadLog-id, 0))<br /> </td> 
   </tr> 
@@ -660,7 +660,7 @@ Den här rapporten baseras på **[!UICONTROL Delivery and tracking statistics]**
   <tr> 
    <td> Twitter<br /> </td> 
    <td> @twitter<br /> </td> 
-   <td> Summan av alla @totalClicks med en URL-kategori som är lika med"twitter".<br /> </td> 
+   <td> Summan av alla @totalClicks med en URL-kategori som är lika med "twitter".<br /> </td> 
    <td> Sum(iIf([url/@category]='twitter',@totalClicks,0))<br /> </td> 
   </tr> 
   <tr> 
@@ -847,7 +847,7 @@ Den här rapporten baseras på **[!UICONTROL Delivery and tracking statistics]**
  <tbody> 
   <tr> 
    <td> Bearbetade e-postmeddelanden<br /> </td> 
-   <td> @processed<br /> </td> 
+   <td> @bearbetad<br /> </td> 
    <td> Totalt antal meddelanden med en status som är lika med"Klart","Skickat" eller"Misslyckat".<br /> </td> 
    <td> @preparerad + @error + @success<br /> </td> 
   </tr> 
@@ -871,18 +871,18 @@ Den här rapporten baseras på **[!UICONTROL Delivery and tracking statistics]**
   </tr> 
   <tr> 
    <td> Öppnar<br /> </td> 
-   <td> @recipientOpen<br /> </td> 
+   <td> @receiveOpen<br /> </td> 
    <td> Totalt antal @broadLog-id i spårningsloggarna.<br /> </td> 
    <td> Motskild ([@broadLog-id])<br /> </td> 
   </tr> 
   <tr> 
    <td> Klickningar<br /> </td> 
-   <td> @personClick<br /> </td> 
+   <td> @personKlicka<br /> </td> 
    <td> Totalt antal @source-ids som URL-kategorin är lika med"Email click". <br /> </td> 
    <td> Countdistans(Iif([url/@type]=1, @source-id, 0)) <br /> </td> 
   </tr> 
   <tr> 
-   <td> Avprenumerationer<br /> </td> 
+   <td> Avbeställ<br /> </td> 
    <td> @optOut<br /> </td> 
    <td> Totalt antal @ids som URL-kategorin är lika med "Opt-out".<br /> </td> 
    <td> count(Iif([url/@type]=3, @id, 0))<br /> </td> 

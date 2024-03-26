@@ -12,7 +12,7 @@ hidefromtoc: true
 exl-id: 4693dca1-ee55-43f0-b3dc-62a5b67a8058
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '877'
+source-wordcount: '879'
 ht-degree: 0%
 
 ---
@@ -119,7 +119,7 @@ Beroende på implementeringen kan du stöta på flera vanliga problem.
 
 * **Fel inträffar i [ACS] Arbetsflöde för replikering av profilleveranslogg. Vad ska jag göra?**
 
-  Om både Campaign Classic och Campaign Standard-instanser används för att skicka e-postmeddelanden med spårade URL:er kan ett problem med duplicerade URL-tagg-ID:n uppstå under synkroniseringen. I det här fallet **[ACS] Replikering av profilleveranslogg** (newRcpDeliveryLogReplication) arbetsflödet misslyckas fortfarande med följande fel:
+  Om både Campaign Classic- och Campaign Standard-instanser används för att skicka e-postmeddelanden med spårade URL-adresser kan ett problem med duplicerade URL-tagg-ID:n uppstå under synkroniseringen. I det här fallet **[ACS] Replikering av profilleveranslogg** (newRcpDeliveryLogReplication) arbetsflödet misslyckas fortfarande med följande fel:
 
   ```PGS-220000 PostgreSQL error: ERROR: duplicate key value violates unique constraint "nmstrackingurl_tagid" DETAIL: Key (stagid) = (1c7bdec2) already exists.```
 

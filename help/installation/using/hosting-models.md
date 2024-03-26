@@ -1,6 +1,6 @@
 ---
 product: campaign
-title: Värdbaserade modeller
+title: Värdmodeller
 description: Upptäck värdmodeller för Campaign
 feature: Installation, Architecture, Deployment
 badge-v7-only: label="v7" type="Informative" tooltip="Gäller endast Campaign Classic v7"
@@ -9,12 +9,12 @@ level: Beginner
 exl-id: a06b1365-d487-4df1-8f4a-7268b871a427
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '630'
-ht-degree: 2%
+source-wordcount: '622'
+ht-degree: 1%
 
 ---
 
-# Värdbaserade modeller{#hosting-models}
+# Värdmodeller{#hosting-models}
 
 
 
@@ -44,7 +44,7 @@ Adobe Campaign kan driftsättas lokalt: alla komponenter i Adobe Campaign, inklu
 
 ![](assets/deployment_onpremise.png)
 
-Som lokal kund, innan du börjar distribuera Campaign Classic, tar du hand om följande krav och rekommendationer:
+Som en lokal kund ska du, innan du börjar distribuera Campaign Classic, ta hand om följande krav och rekommendationer:
 
 * Läs mer om [Kompatibilitetsmatris](../../rn/using/compatibility-matrix.md) som innehåller alla versioner av de system och komponenter som stöds för Adobe Campaign.
 * Läs mer om [krav för Windows](../../installation/using/prerequisites-of-campaign-installation-in-windows.md) och [krav för Linux](../../installation/using/prerequisites-of-campaign-installation-in-linux.md).

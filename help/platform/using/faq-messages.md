@@ -11,7 +11,7 @@ exl-id: 7fc24ef2-b021-440b-b1f2-8c77e2425328
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
 source-wordcount: '742'
-ht-degree: 97%
+ht-degree: 83%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 97%
 
 
 
-## Testa och validera {#test-and-validate-before-sending}
+## Testning och validering {#test-and-validate-before-sending}
 
 Läs mer om hur man utför test- och valideringssteg innan du skickar meddelanden inom Adobe Campaign.
 
@@ -29,13 +29,13 @@ Leveransanalysen är den fas under vilken målgruppen beräknas och leveransinne
 
 [Klicka här för att läsa mer](../../delivery/using/steps-validating-the-delivery.md).
 
-### Varför ska jag skapa korrekturer? {#why-should-i-create-proofs-}
+### Varför ska jag skapa korrektur? {#why-should-i-create-proofs-}
 
 Adobe rekommenderar starkt att du skapar korrekturmeddelanden för att testa leveransen med en godkännandegrupp innan den skickas till huvudmålet. Då kan du validera meddelandeinnehåll, personalisering och leveransparametrar.
 
 [Klicka här för att läsa mer](../../delivery/using/steps-validating-the-delivery.md#sending-a-proof).
 
-### Så använder du fröadresser i Adobe Campaign.  {#how-to-use-seed-addresses-in-adobe-campaign-}
+### Hur använder man startadresser i Adobe Campaign? {#how-to-use-seed-addresses-in-adobe-campaign-}
 
 Fröadresser används för mottagare i målgruppen som inte matchar dess definierade villkor. Dessa mottagare läggs till i målgruppen. De kan importeras eller skapas direkt i leveransen eller kampanjen. För leveranser med direktutskick läggs de till vid extraheringen och blandas i dokumentet med utdata.
 
@@ -46,7 +46,7 @@ Detta har följande fördelar:
 
 [Klicka här för att läsa mer om fröadresser](../../delivery/using/about-seed-addresses.md).
 
-### Hur kan jag ställa in en godkännandeprocess innan jag skickar meddelanden? {#how-can-i-set-up-an-approval-process-before-sending-messages-}
+### Hur kan jag konfigurera en godkännandeprocess innan jag skickar meddelanden? {#how-can-i-set-up-an-approval-process-before-sending-messages-}
 
 För att upptäcka eventuella fel i meddelandekonfigurationen rekommenderar Adobe att du skapar en leveransvalideringscykel. Se till att innehållet godkänns så ofta som det behövs genom att skicka korrekturer till testmottagare. Ett korrektur ska skickas varje gång en ändring görs för att godkänna innehållet.
 
@@ -62,7 +62,7 @@ För att undvika konflikter mellan kampanjer kan Adobe Campaign testa olika komb
 
 Läs mer om hur man skickar meddelanden över olika kanaler med Adobe Campaign.
 
-### Hur skickar jag e-post i omgångar? {#how-can-i-send-emails-in-waves-}
+### Hur kan jag skicka e-post i påfyllnader? {#how-can-i-send-emails-in-waves-}
 
 Innan du skickar en leverans till en stort antal personer kan du [konfigurera omgångar](../../delivery/using/steps-sending-the-delivery.md#sending-using-multiple-waves) vilket innebär att meddelanden delas upp i flera grupper och balanserar belastningen.
 
@@ -72,7 +72,7 @@ När e-postleveransen har skapats och validerats kan du skicka den. Du kan välj
 
 [Klicka här för att läsa mer](../../delivery/using/steps-validating-the-delivery.md#sending-a-proof).
 
-### Så schemalägger man en leverans.  {#how-to-schedule-a-delivery-}
+### Hur schemalägger jag en leverans? {#how-to-schedule-a-delivery-}
 
 Du kan skjuta upp leveransen av meddelanden för att schemalägga den eller för att hantera säljtrycket och undvika att överbelasta en grupp.
 
@@ -84,7 +84,7 @@ Med Campaign Classic kan du lägga till personliga bilagor i alla e-postmeddelan
 
 [Klicka här för att läsa mer om e-postbilagor](../../delivery/using/attaching-files.md).
 
-## Spåra dina meddelanden och mät deras inverkan {#track-your-messages-and-measure-their-impact}
+## Spåra era meddelanden och mät deras effekt {#track-your-messages-and-measure-their-impact}
 
 Läs mer om hur man spårar och mäter inverkan av skickade meddelanden med Adobe Campaign.
 

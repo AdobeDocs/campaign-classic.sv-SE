@@ -2,13 +2,13 @@
 product: campaign
 title: Övervaka arbetsflödeskörning
 description: Övervaka arbetsflödeskörning
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+badge-v7-only: label="v7" type="Informative" tooltip="Gäller endast Campaign Classic v7"
 feature: Workflows
 exl-id: d589180b-8e1d-4149-9b16-3f541018a41f
 source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
-source-wordcount: '2016'
-ht-degree: 0%
+source-wordcount: '2025'
+ht-degree: 1%
 
 ---
 
@@ -42,23 +42,23 @@ Loggen innehåller historiken eller granskningsspåret för arbetsflödet. Den r
 
 * Välj **[!UICONTROL Tracking]** -fliken i detaljerna. Den här listan innehåller alla arbetsflödesmeddelanden.
 
-   ![](assets/new-workflow-display-log-tab.png)
+  ![](assets/new-workflow-display-log-tab.png)
 
 * Filtrera loggmeddelanden efter aktivitet. Det gör du genom att klicka **[!UICONTROL Display the tasks and the log]** i verktygsfältet ovanför diagrammet för att visa **[!UICONTROL Log]** och **[!UICONTROL Tasks]** under diagrammet. Välj en aktivitet om du vill visa alla relaterade meddelanden. Den här listan innehåller alla meddelanden när ingen aktivitet har valts.
 
-   ![](assets/new-workflow-display-log-activity.png)
+  ![](assets/new-workflow-display-log-activity.png)
 
-   >[!NOTE]
-   >
-   >Klicka på bakgrunden i diagrammet för att avmarkera alla element.
+  >[!NOTE]
+  >
+  >Klicka på bakgrunden i diagrammet för att avmarkera alla element.
 
-* Visa endast meddelanden som är länkade till en viss uppgift. Om du vill göra det väljer du **[!UICONTROL Tasks]** och sedan välja en aktivitet i diagrammet för att begränsa listan. Dubbelklicka på en uppgift för att visa informationen; den sista fliken i fönstret innehåller loggen.
+* Visa endast meddelanden som är länkade till en viss uppgift. Om du vill göra det väljer du **[!UICONTROL Tasks]** och sedan välja en aktivitet i diagrammet för att begränsa listan. Dubbelklicka på en uppgift för att visa informationen. Loggen finns på den sista fliken i fönstret.
 
-   ![](assets/new-workflow-display-tasks-activity.png)
+  ![](assets/new-workflow-display-tasks-activity.png)
 
-   The **[!UICONTROL Details...]** kan du visa all ytterligare information om aktivitetskörning. Du kan till exempel visa valideringsoperatorn och, i tillämpliga fall, kommentaren som de angav vid godkännandet, som i följande exempel:
+  The **[!UICONTROL Details...]** kan du visa all ytterligare information om aktivitetskörning. Du kan till exempel visa valideringsoperatorn och, i tillämpliga fall, kommentaren som de angav vid godkännandet, som i följande exempel:
 
-   ![](assets/new-workflow-display-tasks-activity-details.png)
+  ![](assets/new-workflow-display-tasks-activity-details.png)
 
 >[!NOTE]
 >
@@ -68,21 +68,21 @@ I loggen visas den kronologiska listan med körningsmeddelanden som rör arbetsf
 
 * Logg över en målinriktningskampanj
 
-   När en målinriktningskampanj har körts klickar du på **[!UICONTROL Tracking]** för att visa körningsspårningen.
+  När en målinriktningskampanj har körts klickar du på **[!UICONTROL Tracking]** för att visa körningsspårningen.
 
-   ![](assets/s_user_segmentation_journal.png)
+  ![](assets/s_user_segmentation_journal.png)
 
-   Alla kampanjmeddelanden visas: utförda kampanjer samt varningar och fel.
+  Alla kampanjmeddelanden visas: genomförda kampanjer samt varningar och fel.
 
 * Logg över en aktivitet
 
-   Du kan också visa körningsloggen och information om varje aktivitet. Det finns två sätt att göra detta:
+  Du kan också visa körningsloggen och information om varje aktivitet. Det finns två sätt att göra detta:
 
-   1. Välj målaktiviteten och klicka på **[!UICONTROL Display the tasks and the log]** ikon.
+   1. Välj målaktiviteten och klicka på **[!UICONTROL Display the tasks and the log]** -ikon.
 
       ![](assets/s_user_segmentation_show_logs.png)
 
-      I diagrammets nedre del visas två flikar: Logg och uppgifter.
+      I det nedre avsnittet av diagrammet visas två flikar: Logg och Uppgifter.
 
       Aktiviteter som väljs i diagrammet fungerar som filter i loggen och uppgiftslistan.
 
@@ -96,7 +96,7 @@ I loggen visas den kronologiska listan med körningsmeddelanden som rör arbetsf
 
 ## Rensar loggarna {#purging-the-logs}
 
-Arbetsflödeshistorik rensas inte automatiskt: alla meddelanden behålls som standard. Historiken kan rensas via **[!UICONTROL File > Actions]** eller genom att klicka på **[!UICONTROL Actions]** i verktygsfältet ovanför listan. Välj **[!UICONTROL Purge history]**.  De alternativ som finns i **[!UICONTROL Actions]** menyn finns i [Verktygsfältet Åtgärder](starting-a-workflow.md) -avsnitt.
+Arbetsflödeshistorik rensas inte automatiskt: alla meddelanden behålls som standard. Historiken kan rensas via **[!UICONTROL File > Actions]** eller genom att klicka på **[!UICONTROL Actions]** i verktygsfältet ovanför listan. Välj **[!UICONTROL Purge history]**.  De alternativ som är tillgängliga i **[!UICONTROL Actions]** menyn finns i [Verktygsfältet Åtgärder](starting-a-workflow.md) -avsnitt.
 
 ![](assets/purge_historique.png)
 
@@ -110,7 +110,7 @@ Arbetstabellerna i arbetsflödet tas bort automatiskt när arbetsflödet försä
 
 ## Hantera fel {#managing-errors}
 
-När ett fel inträffar pausas arbetsflödet och aktiviteten körs när felet blinkar till rött. I arbetsflödesöversikten, under **[!UICONTROL Monitoring]** tab -  **[!UICONTROL Workflows]** kan du bara visa arbetsflöden med fel, vilket visas nedan.
+När ett fel inträffar pausas arbetsflödet och aktiviteten körs när felet blinkar. I arbetsflödesöversikten, under **[!UICONTROL Monitoring]** tab -  **[!UICONTROL Workflows]** kan du bara visa arbetsflöden med fel, vilket visas nedan.
 
 ![](assets/wf-global-view_filter_only_errors.png)
 
@@ -124,7 +124,7 @@ När ett arbetsflöde är felaktigt meddelas de operatorer som tillhör arbetsfl
 
 Meddelandeinnehållet är konfigurerat i **[!UICONTROL Workflow manager notification]** standardmall: Den här mallen är markerad i **[!UICONTROL Execution]** -fliken i arbetsflödesegenskaperna. Meddelandet visar namnet på felarbetsflödet och den berörda uppgiften.
 
-Exempel:
+Exempel på meddelande:
 
 ![](assets/wf-notification_error-msg.png)
 
@@ -132,7 +132,7 @@ Med länken kan du komma åt Adobe Campaign-konsolen i webbläge och arbeta med 
 
 ![](assets/wf-notification_error-console.png)
 
-Du kan konfigurera arbetsflödet så att det inte pausar och fortsätter att köras om fel uppstår. Om du vill göra det redigerar du arbetsflödet **[!UICONTROL Properties]** och **[!UICONTROL Error management]** väljer du **[!UICONTROL Ignore]** i **[!UICONTROL In case of error]** fält. Du kan sedan ange antalet efterföljande fel som kan ignoreras innan processen pausas.
+Du kan konfigurera arbetsflödet så att det inte pausar och fortsätter att köras om fel uppstår. Om du vill göra det redigerar du arbetsflödet **[!UICONTROL Properties]** och **[!UICONTROL Error management]** väljer du **[!UICONTROL Ignore]** i **[!UICONTROL In case of error]** fält. Du kan sedan ange antalet på varandra följande fel som kan ignoreras innan processen pausas.
 
 I det här fallet avbryts felaktiviteten. Det här läget passar särskilt bra för arbetsflöden som är utformade för att försöka göra om kampanjen senare (periodiska åtgärder).
 
@@ -146,7 +146,7 @@ Mer information om felsökning av arbetsflödenas körning finns i [Campaign Cla
 
 ## Bearbetningsfel {#processing-errors}
 
-När det gäller verksamheter **[!UICONTROL Process errors]** I visas en viss övergång som aktiveras om ett fel genereras. I det här fallet försätts arbetsflödet inte i felläge och körningen fortsätter.
+När det gäller verksamheter, **[!UICONTROL Process errors]** I visas en viss övergång som aktiveras om ett fel genereras. I det här fallet försätts arbetsflödet inte i felläge och körningen fortsätter.
 
 Fel som beaktas är filsystemfel (filen kunde inte flyttas, katalogen kunde inte nås osv.).
 
@@ -180,7 +180,7 @@ Klicka på länken i ett arbetsflöde med fel för att öppna det och visa logge
 
 ![](assets/wf-monitoring_edit-task-wf.png)
 
-## Förhindra samtidiga körningar {#preventing-simultaneous-multiple-executions}
+## Förhindra samtidig körning av flera program {#preventing-simultaneous-multiple-executions}
 
 Ett arbetsflöde kan ha flera körningar samtidigt. I vissa fall bör du förhindra att detta händer.
 
@@ -192,7 +192,7 @@ Den allmänna principen är följande:
 
 ![](assets/workflow-reentrancy-protection-principle.png)
 
-Lösningen är att använda en instansvariabel. Förekomstvariabler delas av alla parallella körningar i arbetsflödena.
+Lösningen är att använda en förekomstvariabel. Förekomstvariabler delas av alla parallella körningar i arbetsflödena.
 
 Här är ett enkelt testarbetsflöde:
 
@@ -220,14 +220,14 @@ instance.vars.isRunning = false
 
 Observera att:
 
-* Du kan kontrollera det aktuella värdet för instansvariabeln via **Variabler** -fliken i arbetsflödet **Egenskaper**.
-* Instansvariabler återställs när du startar om ett arbetsflöde.
+* Du kan kontrollera det aktuella värdet för instansvariabeln via **Variabel** i arbetsflödet **Egenskaper**.
+* Förekomstvariabler återställs när du startar om ett arbetsflöde.
 * I JavaScript är ett odefinierat värde false i ett test, vilket gör att instansvariabeln kan testas även innan den har initierats.
 * Du kan övervaka aktiviteter som inte bearbetas på grund av den här mekanismen genom att lägga till en loggningsinstruktion i initieringsskriptet för &quot;nej&quot;-slutet.
 
-   ```
-   logInfo("Workflow already running, parallel execution not allowed.");
-   ```
+  ```
+  logInfo("Workflow already running, parallel execution not allowed.");
+  ```
 
 Ett användningsexempel presenteras i detta avsnitt: [Samordna datauppdateringar](coordinating-data-updates.md).
 
@@ -235,7 +235,7 @@ Ett användningsexempel presenteras i detta avsnitt: [Samordna datauppdateringar
 
 I arbetsflöden används många arbetstabeller som förbrukar utrymme och gör att hela plattformen blir långsammare om den inte underhålls. Mer information om databasunderhåll finns i [section](../../production/using/tables-to-maintain.md) .
 
-The **Databasrensning** arbetsflöde tillgängligt via **Administration > Produktion > Tekniska arbetsflöden** kan du ta bort föråldrade data för att undvika exponentiell tillväxt i databasen. Arbetsflödet utlöses automatiskt utan att användaren behöver göra något. Se [Campaign Classic v7 Production Guide](../../production/using/database-cleanup-workflow.md).
+The **Databasrensning** arbetsflöde tillgängligt via **Administration > Produktion > Tekniska arbetsflöden** -nod, kan du ta bort föråldrade data för att undvika exponentiell tillväxt i databasen. Arbetsflödet utlöses automatiskt utan användaråtgärder. Se [Campaign Classic v7 Production Guide](../../production/using/database-cleanup-workflow.md).
 
 Du kan också skapa specifika tekniska arbetsflöden för att rensa bort onödiga datamängder. Se [Campaign Classic v7 Production Guide](../../production/using/application-objects.md) och [section](#purging-the-logs).
 
@@ -244,7 +244,7 @@ Du kan också skapa specifika tekniska arbetsflöden för att rensa bort onödig
 Om ett arbetsflöde pausas rensas aldrig arbetsflödets arbetsregister som standard. Från och med bygge 880 stoppas automatiskt arbetsflöden som har pausats för länge och arbetsflödena töms. Detta beteende aktiveras enligt följande:
 
 * Arbetsflöden som har pausats sedan mer än 7 dagar visas som en varning på kontrollpanelen (och övervaknings-API:t) och ett meddelande skickas till den övervakande gruppen.
-* Samma sak händer varje vecka, när **[!UICONTROL cleanupPausedWorkflows]** det tekniska arbetsflödet aktiveras. Mer information om arbetsflödet finns i [det här avsnittet](delivery.md).
+* Samma sak händer varje vecka, när **[!UICONTROL cleanupPausedWorkflows]** det tekniska arbetsflödet utlöses. Mer information om arbetsflödet finns i [det här avsnittet](delivery.md).
 * Efter fyra meddelanden (en månad i pausat läge som standard) stoppas arbetsflödet ovillkorligt. En logg visas i arbetsflödet när det har stoppats. Tabellerna rensas vid nästa körning **[!UICONTROL cleanup]** arbetsflöde
 
 Dessa punkter kan konfigureras via alternativet NmsServer_PausedWorkflowPeriod.
@@ -253,7 +253,7 @@ Arbetsflödesansvariga meddelas. Den som skapade arbetsflödet och den sista anv
 
 ## Filtrera arbetsflöden utifrån deras status {#filtering-workflows-status}
 
-Med Campaign Classic-gränssnittet kan du övervaka körningsstatusen för alla arbetsflöden i instansen med hjälp av fördefinierade **vyer**. Öppna **[!UICONTROL Administration]** / **[!UICONTROL Audit]** / **[!UICONTROL Workflows Status]** nod.
+Med hjälp av gränssnittet Campaign Classic kan du övervaka körningsstatusen för alla arbetsflöden i instansen med hjälp av fördefinierade **vyer**. Öppna **[!UICONTROL Administration]** / **[!UICONTROL Audit]** / **[!UICONTROL Workflows Status]** nod.
 
 Följande vyer är tillgängliga:
 

@@ -2,13 +2,13 @@
 product: campaign
 title: SQL-kod och JavaScript-kod
 description: Läs mer om arbetsflödesaktiviteter för SQL- och JavaScript-koder
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+badge-v7-only: label="v7" type="Informative" tooltip="Gäller endast Campaign Classic v7"
 feature: Workflows
 exl-id: 729a2010-c2d8-481b-8c9e-780b9e5f97ef
 source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
-source-wordcount: '267'
-ht-degree: 7%
+source-wordcount: '277'
+ht-degree: 9%
 
 ---
 
@@ -24,11 +24,11 @@ An **[!UICONTROL SQL code]** aktiviteten kör ett SQL-skript. Skriptet är en JS
 
 * **[!UICONTROL Script]**
 
-   Redigerarens centrala del innehåller skriptet som ska köras. Skriptet är en JST-mall och kan därför konfigureras enligt arbetsflödeskontexten.
+  Redigerarens centrala del innehåller skriptet som ska köras. Skriptet är en JST-mall och kan därför konfigureras enligt arbetsflödeskontexten.
 
 * **[!UICONTROL Processing errors]**
 
-   Se [Bearbetningsfel](monitoring-workflow-execution.md#processing-errors).
+  Se [Bearbetningsfel](monitoring-workflow-execution.md#processing-errors).
 
 ## JavaScript-kod och avancerad JavaScript-kod {#javascript-code}
 
@@ -41,7 +41,7 @@ An **[!UICONTROL SQL code]** aktiviteten kör ett SQL-skript. Skriptet är en JS
 
 Från och med version 20.2 har en körningsfördröjning lagts till i **[!UICONTROL JavaScript code]** och **[!UICONTROL Advanced JavaScript code]** verksamhet. Som standard får körningsfasen inte överskrida 1 timme. Efter den här fördröjningen avbryts processen med ett felmeddelande och aktivitetskörningen misslyckas.
 
-Du kan ändra den här fördröjningen i **[!UICONTROL Stop execution after]** fält som är tillgängliga i dessa aktiviteter.
+Du kan ändra fördröjningen i **[!UICONTROL Stop execution after]** fält som är tillgängliga i dessa aktiviteter.
 
 Om du vill ignorera den här gränsen måste du ange värdet till **0**.
 
@@ -49,7 +49,7 @@ Om du vill ignorera den här gränsen måste du ange värdet till **0**.
 
 ![](assets/javascript_code.png)
 
-* **[!UICONTROL Script]**: Redigerarens centrala del innehåller skriptet som ska köras.
+* **[!UICONTROL Script]**: Redigerarens centrala del innehåller det skript som ska köras.
 
 * **[!UICONTROL Process errors]**: Se [Bearbetningsfel](monitoring-workflow-execution.md#processing-errors).
 
@@ -60,7 +60,7 @@ Om du vill ignorera den här gränsen måste du ange värdet till **0**.
 * **[!UICONTROL First call]**: Den första zonen i redigeraren innehåller skriptet som ska köras under det första anropet.
 * **[!UICONTROL Next calls]**: Den andra zonen i redigeraren innehåller skriptet som ska köras under nästa anrop.
 * **[!UICONTROL Transitions]**: Du kan definiera flera aktivitetsutdatagränser.
-* **[!UICONTROL Schedule]**: The **[!UICONTROL Schedule]** kan du schemalägga när aktiviteten ska utlösas.
+* **[!UICONTROL Schedule]**: **[!UICONTROL Schedule]** kan du schemalägga när aktiviteten ska utlösas.
 
 Avancerad JavaScript är en beständig uppgift och återkommer regelbundet om den inte har markerats som slutförd. Om du vill avbryta uppgiften och förhindra att den återkallas i framtiden måste du använda **task.setCompleted()** metoden i **[!UICONTROL Next calls]** avsnitt:
 

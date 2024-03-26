@@ -11,8 +11,8 @@ topic-tags: initial-configuration
 exl-id: a2126458-2ae5-47c6-ad13-925f0e067ecf
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '296'
-ht-degree: 4%
+source-wordcount: '293'
+ht-degree: 2%
 
 ---
 
@@ -56,7 +56,7 @@ Om det behövs kan den här åtgärden reproduceras på serversidan.
 
 ## Dölj Tomcat-felrapporten {#hide-tomcat-error-report}
 
-Av säkerhetsskäl rekommenderar vi starkt att du döljer Tomcat-felrapporten. Gör följande.
+Av säkerhetsskäl rekommenderar vi starkt att du döljer Tomcat-felrapporten. Här är stegen.
 
 1. Öppna **server.xml** filen som finns i **/tomcat-8/conf** katalog i Adobe Campaign installationsmapp:  `/usr/local/neolane/nl6/tomcat-8/conf`
 1. Lägg till följande element längst ned efter alla befintliga kontextelement:

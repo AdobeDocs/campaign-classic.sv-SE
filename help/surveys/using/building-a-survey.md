@@ -2,14 +2,14 @@
 product: campaign
 title: Designa en undersökning
 description: Lär dig viktiga steg för att utforma en enkät
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
+badge-v7: label="v7" type="Informative" tooltip="Gäller Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Gäller även Campaign v8"
 feature: Surveys
 exl-id: 8d83dfd5-70ec-4656-965b-f6b5e6f9eec1
 source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
-source-wordcount: '782'
-ht-degree: 2%
+source-wordcount: '796'
+ht-degree: 1%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 2%
 
 I det här kapitlet beskrivs hur du utformar en **Undersökning** skriv formulär med Adobe Campaign, samt tillgängliga alternativ och konfigurationer. Med Adobe Campaign kan du göra enkäten tillgänglig för användare och samla in och arkivera svar i databasen.
 
-Webbformulär öppnas via **[!UICONTROL Resources > Online > Web applications]** trädnod. Om du vill skapa en undersökning klickar du på **[!UICONTROL New]** eller högerklicka på listan och välj **[!UICONTROL New]**.
+Webbformulär öppnas via **[!UICONTROL Resources > Online > Web applications]** trädnod. Klicka på **[!UICONTROL New]** eller högerklicka på listan och välj **[!UICONTROL New]**.
 
 Välj undersökningsmall (**[!UICONTROL newSurvey]** som standard).
 
@@ -54,7 +54,7 @@ När du lägger till ett fält i en undersökning måste du välja dess typ. Fö
 
    >[!NOTE]
    >
-   >Lagringslägen och fältimporter anges i [det här avsnittet](../../surveys/using/managing-answers.md#storing-collected-answers).
+   >Lagringslägen och fältimporter beskrivs i [det här avsnittet](../../surveys/using/managing-answers.md#storing-collected-answers).
 
 Typ av fält som ska läggas till (nedrullningsbar lista, textfält, kryssrutor osv.) anpassar sig till det valda lagringsläget. Du kan ändra den med **[!UICONTROL Type]** fält för **[!UICONTROL General]** men se till att datatypen är konsekvent.
 
@@ -93,12 +93,11 @@ Dessutom måste lagringsplatsen för det här inmatningsfältet vara en **[!UICO
 >* Den här funktionen är bara tillgänglig för **Undersökning** typformulär.
 >* Det här alternativet är inte kompatibelt med slumpmässig frågevisning. [Läs mer](#adding-questions).
 
-
 ### Lägg till frågor {#adding-questions}
 
 Det finns två typer av behållare: standard och fråga. Standardbehållare används för att konfigurera sidlayout och villkorsstyrd visning på en sida. [Läs mer](../../web/using/about-web-forms.md).
 
-Använd en **Fråga** behållare för att lägga till en fråga på sidan och för att infoga möjliga svar nedan i hierarkin. Användarsvar på frågor som placeras i den här typen av behållare kan analyseras i rapporter.
+Använd en **Fråga** behållare för att lägga till en fråga på sidan och för att infoga möjliga svar nedan i hierarkin. Användarsvar på frågor som placerats i den här typen av behållare kan analyseras i rapporter.
 
 >[!CAUTION]
 >
@@ -116,7 +115,7 @@ Exempel:
 
 ![](assets/s_ncs_admin_survey_containers_qu_arbo.png)
 
-I exemplet ovan återges på följande sätt:
+I exemplet ovan kommer återgivningen att se ut så här:
 
 ![](assets/s_ncs_admin_survey_containers_qu_ex.png)
 
@@ -132,7 +131,7 @@ Du kan aktivera slumpmässig anpassning av frågor via Adobe Campaign. Det går 
 
 ![](assets/s_ncs_admin_survey_containers_qu_display_rendering.png)
 
-När sidan uppdateras är de visade frågorna inte desamma.
+När sidan uppdateras är frågorna inte desamma.
 
 >[!CAUTION]
 >

@@ -1,7 +1,7 @@
 ---
 product: campaign
 title: Läs in leveransinnehåll
-description: Läsa in leveransinnehåll
+description: Läser in leveransinnehåll
 badge-v7-only: label="v7" type="Informative" tooltip="Gäller endast Campaign Classic v7"
 feature: Workflows
 exl-id: a52baffd-402b-4b33-ab72-ac954e4dee85
@@ -16,7 +16,7 @@ ht-degree: 4%
 
 
 
-Om ditt leveransinnehåll är tillgängligt i en HTML-fil som finns på Amazon S3-, FTP- eller SFTP-servrar kan du enkelt läsa in det här innehållet i Adobe Campaign-leveranser.
+Om ditt leveransinnehåll finns i en HTML-fil på Amazon S3-, FTP- eller SFTP-servrar kan du enkelt läsa in det i Adobe Campaign-leveranser.
 
 Så här gör du:
 
@@ -27,18 +27,18 @@ Så här gör du:
    ![](assets/delivery_loadcontent_filetransfertexamples3.png)
 
 1. Skapa ett nytt arbetsflöde, till exempel från **[!UICONTROL Profiles and Targets]** > **[!UICONTROL Jobs]** > **[!UICONTROL Targeting workflows]**.
-1. Lägg till en **[!UICONTROL File transfer]** aktivitet i arbetsflödet och konfigurera det genom att ange
+1. Lägg till en **[!UICONTROL File transfer]** -aktivitet i arbetsflödet och konfigurera det genom att ange
 
    * Det externa konto som ska användas för att ansluta till S3- eller (S)FTP-servern.
    * Sökvägen till filen på S3- eller (S)FTP-servern.
 
    ![](assets/delivery_loadcontent_filetransfertexample.png)
 
-1. Lägg till en **[!UICONTROL Delivery]** och koppla den till den utgående övergången för **[!UICONTROL File transfer]** aktivitet. Konfigurera den enligt följande:
+1. Lägg till en **[!UICONTROL Delivery]** och koppla den till den utgående övergången för **[!UICONTROL File transfer]** aktivitet. Konfigurera den på följande sätt:
 
    * Leverans: Beroende på dina behov kan det vara en specifik leverans som redan har skapats i systemet eller en ny leverans som baseras på en befintlig mall.
    * Mottagare: I det här exemplet anses målet vara angivet i själva leveransen.
-   * Innehåll: Även om innehållet har importerats i föregående aktivitet väljer du **[!UICONTROL Specified in the delivery]**. Eftersom innehållet importeras direkt från en fil som finns på en fjärrserver har det ingen identifierare när det bearbetas av arbetsflödet och kan inte identifieras som om det kommer från den inkommande händelsen.
+   * Innehåll: Även om innehållet importeras i den tidigare aktiviteten väljer du **[!UICONTROL Specified in the delivery]**. Eftersom innehållet importeras direkt från en fil som finns på en fjärrserver har det ingen identifierare när det bearbetas av arbetsflödet och kan inte identifieras som om det kommer från den inkommande händelsen.
    * Åtgärd som ska utföras: Välj **[!UICONTROL Save]** för att spara leveransen och kunna komma åt den från **[!UICONTROL Campaign management]** > **[!UICONTROL Deliveries]** när arbetsflödet är klart.
 
    ![](assets/delivery_loadcontent_activityexample.png)

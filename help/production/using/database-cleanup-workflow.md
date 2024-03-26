@@ -10,7 +10,7 @@ topic-tags: data-processing
 exl-id: 75d3a0af-9a14-4083-b1da-2c1b22f57cbe
 source-git-commit: 624978901943b4c74f50c20298c9596f73b25b1b
 workflow-type: tm+mt
-source-wordcount: '2830'
+source-wordcount: '2834'
 ht-degree: 0%
 
 ---
@@ -23,7 +23,7 @@ ht-degree: 0%
 
 The **[!UICONTROL Database cleanup]** arbetsflöde tillgängligt via **[!UICONTROL Administration > Production > Technical workflows]** -nod, kan du ta bort föråldrade data för att undvika exponentiell tillväxt i databasen. Arbetsflödet utlöses automatiskt utan användaråtgärder.
 
-![cleanup](assets/ncs_cleanup_workflow.png)
+![rensa](assets/ncs_cleanup_workflow.png)
 
 ## Konfiguration {#configuration}
 

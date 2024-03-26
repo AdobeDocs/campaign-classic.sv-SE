@@ -1,14 +1,14 @@
 ---
 product: campaign
 title: Kampanj - Salesforce CRM Connector
-description: Lär dig hur du ansluter Campaign och Salesforce
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+description: Lär dig ansluta Campaign och Salesforce
+badge-v7-only: label="v7" type="Informative" tooltip="Gäller endast Campaign Classic v7"
 feature: Salesforce Integration
 exl-id: 94a1f00d-e952-4edd-9012-f71c87b897ca
 source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
-source-wordcount: '329'
-ht-degree: 0%
+source-wordcount: '328'
+ht-degree: 3%
 
 ---
 
@@ -46,7 +46,7 @@ Om du vill veta var du hittar din säkerhetstoken kan du läsa detta [page](http
 
    * **[!UICONTROL API version]**
 Välj version av API:t.
-1. Kör konfigurationsguiden för att generera den tillgängliga CRM-tabellen: Med konfigurationsguiden kan du samla in tabeller och skapa det matchande schemat.
+1. Kör konfigurationsguiden för att generera den tillgängliga CRM-tabellen: med konfigurationsguiden kan du samla in tabeller och skapa det matchande schemat.
 
    ![](assets/crm_connectors_sfdc_launch.png)
 
@@ -62,7 +62,7 @@ Välj version av API:t.
 
 1. När schemat har skapats kan du synkronisera uppräkningar automatiskt från Salesforce till Adobe Campaign.
 
-   Om du vill göra det klickar du på **[!UICONTROL Synchronizing enumerations...]** och välj den Adobe Campaign-uppräkning som matchar Salesforce-uppräkningen.
+   Klicka på **[!UICONTROL Synchronizing enumerations...]** länka och välj den Adobe Campaign-uppräkning som matchar Salesforce-uppräkningen.
 
 
 
@@ -70,7 +70,7 @@ Välj version av API:t.
 
    >[!NOTE]
    >
-   >Du kan ersätta alla värden i en Adobe Campaign-uppräkning med dem i CRM: för att göra detta väljer du **[!UICONTROL Yes]** i **[!UICONTROL Replace]** kolumn.
+   >Du kan ersätta alla värden i en Adobe Campaign-uppräkning med dem i CRM: om du vill göra det väljer du **[!UICONTROL Yes]** i **[!UICONTROL Replace]** kolumn.
 
 
    Klicka **[!UICONTROL Next]** och sedan **[!UICONTROL Start]** för att börja importera listan.
@@ -83,7 +83,7 @@ Välj version av API:t.
    >
    > Uppräkningar av flera markeringar stöds inte.
 
-Campaign och Salesforce.com är nu anslutna. Du kan konfigurera datasynkronisering mellan de två systemen.
+Campaign och Salesforce.com är nu sammankopplade. Du kan konfigurera datasynkronisering mellan de två systemen.
 
 Om du vill synkronisera data mellan Adobe Campaign-data och SFDC måste du skapa ett arbetsflöde och använda **[!UICONTROL CRM connector]** aktivitet.
 

@@ -1,18 +1,18 @@
 ---
 product: campaign
-title: Övervaka arbetsflöden
+title: Arbetsflöden för övervakning
 description: Lär dig hur ni övervakar Campaign-arbetsflöden
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+badge-v7-only: label="v7" type="Informative" tooltip="Gäller endast Campaign Classic v7"
 feature: Workflows
 exl-id: ca6d4bf4-7b3a-4d36-9fc3-0b83531d0132
 source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
-source-wordcount: '646'
-ht-degree: 0%
+source-wordcount: '657'
+ht-degree: 1%
 
 ---
 
-# Användningsfall: övervaka era arbetsflöden{#supervising-workflows}
+# Användningsexempel: övervaka dina arbetsflöden{#supervising-workflows}
 
 
 
@@ -20,7 +20,7 @@ Här beskrivs hur du skapar ett arbetsflöde där du kan övervaka statusen för
 
 Syftet är att
 
-* Använd ett arbetsflöde för att övervaka en grupp arbetsflöden.
+* Använd ett arbetsflöde för att övervaka en grupp av affärsarbetsflöden.
 * Skicka ett meddelande till en ansvarig via en leveransaktivitet.
 
 Om du vill övervaka statusen för en uppsättning arbetsflöden måste du följa dessa steg:
@@ -38,7 +38,7 @@ Om du vill övervaka statusen för en uppsättning arbetsflöden måste du följ
 
 ## Steg 1: Skapa övervakningsarbetsflödet {#step-1--creating-the-monitoring-workflow}
 
-Den arbetsflödesmapp som vi ska övervaka är **&quot;CustomWorkflows&quot;** mapp som lagras i **Administration > Produktion > Tekniska arbetsflöden** nod. Den här mappen innehåller en uppsättning affärsarbetsflöden.
+Den arbetsflödesmapp som vi ska övervaka är **&quot;CustomWorkflows&quot;** mapp som finns lagrad i **Administration > Produktion > Tekniska arbetsflöden** nod. Den här mappen innehåller en uppsättning affärsarbetsflöden.
 
 The **Övervaka arbetsflöde** lagras i roten av mappen Technical Workflows. Etiketten som används är **&quot;Övervakning&quot;**.
 
@@ -137,17 +137,17 @@ Den här mallen måste innehålla:
 * **e-postadressen till den ansvarige**.
 * **HTML content** för att infoga anpassad text.
 
-   ![](assets/uc_monitoring_workflow_variables_diffusion.png)
+  ![](assets/uc_monitoring_workflow_variables_diffusion.png)
 
-   De tre deklarerade variablerna (WF_Stop, WF_Paused, WF_Error) matchar de tre arbetsflödeshändelsevariablerna.
+  De tre deklarerade variablerna (WF_Stop, WF_Paused, WF_Error) matchar de tre arbetsflödeshändelsevariablerna.
 
-   Dessa variabler måste deklareras i **Variabler** -fliken i leveransmallens egenskaper.
+  Dessa variabler måste deklareras i **Variabel** -fliken i leveransmallens egenskaper.
 
-   Återställning **innehållet i arbetsflödeshändelsevariablerna** måste du deklarera de variabler som är specifika för leveransen som ska initieras med värden som returneras av JavaScript-koden.
+  Återställning **innehållet i arbetsflödeshändelsevariablerna** måste du deklarera de variabler som är specifika för leveransen som ska initieras med värden som returneras av JavaScript-koden.
 
-   Leveransmallen har följande innehåll:
+  Leveransmallen har följande innehåll:
 
-   ![](assets/uc_monitoring_workflow_model_diffusion.png)
+  ![](assets/uc_monitoring_workflow_model_diffusion.png)
 
 När mallen har skapats och godkänts måste du konfigurera **Leverans** aktivitet till:
 
@@ -161,21 +161,21 @@ Dubbelklicka på **Leverans** och välj följande alternativ:
 * Åtgärd som ska köras: välj **Förbered och starta**.
 * Avmarkera **Processfel** alternativ.
 
-   ![](assets/uc_monitoring_workflow_optionmodel.png)
+  ![](assets/uc_monitoring_workflow_optionmodel.png)
 
 * Gå till **Skript** -fliken i **Leverans** aktivitet, lägg till tre **teckensträng** typvariabler via personaliseringsfältmenyn.
 
-   ![](assets/uc_monitoring_workflow_selectlinkvariables.png)
+  ![](assets/uc_monitoring_workflow_selectlinkvariables.png)
 
-   ![](assets/uc_monitoring_workflow_linkvariables.png)
+  ![](assets/uc_monitoring_workflow_linkvariables.png)
 
-   De tre deklarerade variablerna är:
+  De tre deklarerade variablerna är:
 
-   ```
-   delivery.variables._var[0].stringValue = vars.strWorkflowError;
-   delivery.variables._var[1].stringValue = vars.strWorkflowPaused;
-   delivery.variables._var[2].stringValue = vars.strWorkflowStop; 
-   ```
+  ```
+  delivery.variables._var[0].stringValue = vars.strWorkflowError;
+  delivery.variables._var[1].stringValue = vars.strWorkflowPaused;
+  delivery.variables._var[2].stringValue = vars.strWorkflowStop; 
+  ```
 
 När övervakningsarbetsflödet har startats skickas följande sammanfattning till mottagaren:
 

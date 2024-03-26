@@ -2,14 +2,14 @@
 product: campaign
 title: Definiera sidsekvenser för webbformulär
 description: Definiera sidsekvenser för webbformulär
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
+badge-v7: label="v7" type="Informative" tooltip="Gäller Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Gäller även Campaign v8"
 feature: Web Forms
 exl-id: c5b5c398-c13b-4ebe-88b2-8ff84741422e
 source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
-source-wordcount: '702'
-ht-degree: 0%
+source-wordcount: '714'
+ht-degree: 1%
 
 ---
 
@@ -33,27 +33,27 @@ The **[!UICONTROL Jump]** ger åtkomst till en annan sida eller ett annat formul
 
 Målet kan vara:
 
-* En annan sida i formuläret. Välj **[!UICONTROL Internal activity]** och ange sedan önskad sida enligt nedan:
+* En annan sida i formuläret. Gör detta genom att välja **[!UICONTROL Internal activity]** och ange sedan önskad sida enligt nedan:
 
-   ![](assets/s_ncs_admin_jump_param1.png)
+  ![](assets/s_ncs_admin_jump_param1.png)
 
 * Ett annat formulär. Om du vill göra det väljer du **[!UICONTROL Explicit]** och ange målformuläret.
 
-   ![](assets/s_ncs_admin_jump_param2.png)
+  ![](assets/s_ncs_admin_jump_param2.png)
 
-* Målet kan lagras i en variabel. I så fall väljer du den i listrutan enligt nedan:
+* Målet kan lagras i en variabel. I det här fallet väljer du den i listrutan enligt nedan:
 
-   ![](assets/s_ncs_admin_jump_param3.png)
+  ![](assets/s_ncs_admin_jump_param3.png)
 
-* The **[!UICONTROL Comment]** Med -fliken kan du ange information som ska vara synlig för operatorn när han/hon klickar på objektet i diagrammet.
+* The **[!UICONTROL Comment]** Med -fliken kan du ange information som ska visas av operatorn när han/hon klickar på objektet i diagrammet.
 
-   ![](assets/s_ncs_admin_survey_jump_comment.png)
+  ![](assets/s_ncs_admin_survey_jump_comment.png)
 
-## Exempel: använda ett annat formulär enligt en URL-parameter {#example--accessing-another-form-according-to-a-parameter-of-the-url}
+## Exempel: få åtkomst till ett annat formulär enligt en URL-parameter {#example--accessing-another-form-according-to-a-parameter-of-the-url}
 
 I följande exempel vill vi konfigurera ett webbformulär som, när det godkänns, visar ett annat formulär som anges av en URL-parameter. Gör så här:
 
-1. Infoga ett hopp i slutet av ett formulär: this ersätter **[!UICONTROL End]** box.
+1. Infoga ett hopp i slutet av ett formulär: detta ersätter **[!UICONTROL End]** box.
 
    ![](assets/s_ncs_admin_survey_jump_sample1.png)
 
@@ -124,4 +124,4 @@ Om du vill anpassa sidan dubbelklickar du **[!UICONTROL End]** och ange sidans i
 ![](assets/s_ncs_admin_survey_end_page_edit.png)
 
 * Du kan kopiera och klistra in befintligt HTML-innehåll. Det gör du genom att klicka **[!UICONTROL Display source code]** och infoga HTML-koden.
-* Du kan använda en extern URL; Om du vill göra det väljer du motsvarande alternativ och anger URL-adressen till sidan som ska visas.
+* Du kan använda en extern URL. Om du vill göra det väljer du motsvarande alternativ och anger URL-adressen till sidan som ska visas.

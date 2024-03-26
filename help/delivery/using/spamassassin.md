@@ -9,8 +9,8 @@ role: User
 exl-id: 8be6836d-f7dc-4199-b2b2-b6a9cac9d162
 source-git-commit: d2f5f2a662c022e258fb3cc56c8502c4f4cb2849
 workflow-type: tm+mt
-source-wordcount: '267'
-ht-degree: 7%
+source-wordcount: '266'
+ht-degree: 5%
 
 ---
 
@@ -38,7 +38,7 @@ När du har skapat din e-postleverans och definierat innehållet följer du steg
 
 Mer information om hur du skapar och utformar en leverans finns i [det här avsnittet](about-email-channel.md).
 
-1. Gå till fliken **[!UICONTROL Preview]**.
+1. Gå till **[!UICONTROL Preview]** -fliken.
 1. Välj en mottagare om du vill förhandsgranska leveransen.
 
    ![](assets/s_tn_del_preview_spamassassin_recipient.png)

@@ -10,12 +10,12 @@ topic-tags: appendices
 exl-id: a979cd99-afa7-4ce6-ba0f-9495089cba08
 source-git-commit: a94c361c5bdd9d61ae9232224af910a78245a889
 workflow-type: tm+mt
-source-wordcount: '4004'
-ht-degree: 1%
+source-wordcount: '3838'
+ht-degree: 0%
 
 ---
 
-# Lista över alternativ för Campaign Classic{#configuring-campaign-options}
+# Lista med alternativ för Campaign Classic{#configuring-campaign-options}
 
 The **[!UICONTROL Administration / Platform / Options]** Med -noden kan du konfigurera Adobe Campaign-alternativ. Vissa av dem är inbyggda när du installerar Campaign och andra kan läggas till manuellt vid behov. Vilka alternativ som är tillgängliga varierar beroende på vilka paket som installeras med instansen.
 
@@ -276,7 +276,7 @@ The **[!UICONTROL Administration / Platform / Options]** Med -noden kan du konfi
   </tr>
 -->
 
-## Resurser {#resources}
+## Resurs {#resources}
 
 <table> 
  <thead> 

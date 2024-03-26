@@ -11,8 +11,8 @@ topic-tags: additional-configurations
 exl-id: 515adad2-6129-450a-bb9e-fc80127835af
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '3048'
-ht-degree: 1%
+source-wordcount: '3100'
+ht-degree: 0%
 
 ---
 
@@ -220,7 +220,7 @@ De regler som ska följas för MX anges i **[!UICONTROL MX management]** dokumen
 Om **[!UICONTROL MX management]** dokumentet finns inte i noden, du kan skapa det manuellt. Så här gör du:
 
 1. Skapa en ny uppsättning postregler.
-1. Välj **[!UICONTROL MX management]**-läget.
+1. Välj **[!UICONTROL MX management]** läge.
 
    ![](assets/s_ncs_install_mx_mgt_rule.png)
 
@@ -396,14 +396,14 @@ Parametrarna är följande:
 
 I det föregående exemplet, med normala villkor, distribueras adresserna enligt följande:
 
-    * &quot;1&quot;: 5 / (5+5+1) = 45%
-    * &quot;2&quot;: 5 / (5+5+1) = 45%
-    * &quot;3&quot;: 1 / (5+5+1) = 10%
+    * &quot;1&quot;: 5 / (5+5+1) = 45 %
+    * &quot;2&quot;: 5 / (5+5+1) = 45 %
+    * &quot;3&quot;: 1 / (5+5+1) = 10 %
 
 Om till exempel den första adressen inte kan användas för ett givet MX, skickas meddelanden enligt följande:
 
-    * &quot;2&quot;: 5 / (5+1) = 83%
-    * &quot;3&quot;: 1 / (5+1) = 17%
+    * &quot;2&quot;: 5 / (5+1) = 83 %
+    * &quot;3&quot;: 1 / (5+1) = 17 %
 
 * **includeDomains**: låter dig reservera den här IP-adressen för e-post som tillhör en viss domän. Det här är en lista med masker som kan innehålla ett eller flera jokertecken (&#39;&#42;&#39;). Om attributet inte anges kan alla domäner använda den här IP-adressen.
 

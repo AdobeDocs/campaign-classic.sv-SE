@@ -9,7 +9,7 @@ hidefromtoc: true
 exl-id: 689b6117-5143-4f85-8582-2c74cae72ca2
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '2045'
+source-wordcount: '2043'
 ht-degree: 0%
 
 ---
@@ -153,7 +153,7 @@ Följande replikeringsarbetsflöden är tillgängliga som mallar som är klara a
 
   >[!NOTE]
   >
-  > Om både Campaign Classic och Campaign Standard-instanser används för att skicka e-postmeddelanden med spårade URL:er kan ett problem med duplicerade URL-tagg-ID:n uppstå under synkroniseringen. Uppdatera **Uppdatera spårnings-URL:er** (writerTrackingUrls)-aktivitet i arbetsflödet och lägg till prefixet&quot;ACS&quot; i @tagId-källuttrycket.
+  > Om både Campaign Classic- och Campaign Standard-instanser används för att skicka e-postmeddelanden med spårade URL-adresser kan ett problem med duplicerade URL-tagg-ID:n uppstå under synkroniseringen. Uppdatera **Uppdatera spårnings-URL:er** (writerTrackingUrls)-aktivitet i arbetsflödet och lägg till prefixet&quot;ACS&quot; i @tagId-källuttrycket.
 
 * **[!UICONTROL `[ACS] New delivery log replication`]** (newRcpDeliveryLogReplication): Detta inkrementella arbetsflöde replikerar leverans-ID:n, breda e-postloggar och loggar för e-postspårning från Campaign Standard till Campaign v7. Det tar endast hänsyn till leveranser som skickas från Campaign Standard till profiler som ingår i en viss tabell (för att definiera, utom nms:templates) i Campaign v7.
 

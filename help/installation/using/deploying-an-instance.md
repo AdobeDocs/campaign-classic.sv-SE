@@ -1,6 +1,6 @@
 ---
 product: campaign
-title: Driftsätta en instans
+title: Distribuera en instans
 description: Läs mer om guiden för Campaign-driftsättning
 feature: Installation, Instance Settings, Deployment
 badge-v7-only: label="v7" type="Informative" tooltip="Gäller endast Campaign Classic v7"
@@ -11,12 +11,12 @@ topic-tags: initial-configuration
 exl-id: 8b07447c-9a86-4b56-8d29-e0b01357a6ec
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '3391'
-ht-degree: 2%
+source-wordcount: '3395'
+ht-degree: 1%
 
 ---
 
-# Driftsätta en instans{#deploying-an-instance}
+# Distribuera en instans{#deploying-an-instance}
 
 >[!NOTE]
 >
@@ -125,7 +125,7 @@ Följande alternativ är tillgängliga:
 
 >[!NOTE]
 >
->För värdbaserade eller hybridinstallationer, om du har uppgraderat till [Förbättrad MTA](../../delivery/using/sending-with-enhanced-mta.md), **[!UICONTROL Delivery duration of the messages]** kommer endast att användas om det är inställt på **3,5 dagar eller mindre**. Om du anger ett värde som är högre än 3,5 dagar kommer det inte att tas med i beräkningen.
+>För värdbaserade eller hybridinstallationer, om du har uppgraderat till [Förbättrad MTA](../../delivery/using/sending-with-enhanced-mta.md), **[!UICONTROL Delivery duration of the messages]** kommer endast att användas om det är inställt på **3,5 dagar eller mindre**. Om du anger ett värde som är högre än 3,5 dagar kommer det inte att beaktas.
 
 ### Försök igen med parametrar {#retry-parameters}
 

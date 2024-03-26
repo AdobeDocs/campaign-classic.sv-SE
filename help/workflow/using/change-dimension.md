@@ -2,13 +2,13 @@
 product: campaign
 title: Ändra dimension
 description: Ändra dimension
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+badge-v7-only: label="v7" type="Informative" tooltip="Gäller endast Campaign Classic v7"
 feature: Workflows, Targeting Activity
 exl-id: c3de99f8-089f-4c7c-be11-f375a9463eaa
 source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
-source-wordcount: '370'
-ht-degree: 2%
+source-wordcount: '378'
+ht-degree: 4%
 
 ---
 
@@ -34,7 +34,7 @@ Så här konfigurerar du ändringsdimensionsaktiviteten:
 
    ![](assets/s_user_change_dimension_limit.png)
 
-   När du väljer att bara behålla en post visas en samling i arbetsschemat: Den här samlingen representerar alla poster som inte kommer att användas som mål i det slutliga resultatet (eftersom endast en post behålls). I likhet med alla andra samlingar kan du med den här metoden beräkna aggregeringar eller återställa information i kolumner.
+   När du väljer att bara behålla en post visas en samling i arbetsschemat: Den här samlingen representerar alla poster som inte kommer att ingå i slutresultatet (eftersom endast en post behålls). I likhet med alla andra samlingar kan du med den här metoden beräkna aggregeringar eller återställa information i kolumner.
 
    Om du till exempel ändrar **[!UICONTROL Customers]** dimension till **[!UICONTROL Recipients]** är det möjligt att rikta in sig på kunder i en viss butik samtidigt som man lägger till antalet inköp.
 
@@ -50,29 +50,29 @@ Så här konfigurerar du ändringsdimensionsaktiviteten:
 
    Du kan till exempel återställa regionen baserat på postnumret genom att använda en **Delsträng** type-funktion. Så här gör du:
 
-   * Klicka på **[!UICONTROL Add data...]** länk och markera **[!UICONTROL Data linked to the filtering dimension]**.
+   * Klicka på **[!UICONTROL Add data...]** länka och markera **[!UICONTROL Data linked to the filtering dimension]**.
 
-      ![](assets/wf_change-dimension_sample_01.png)
+     ![](assets/wf_change-dimension_sample_01.png)
 
-      >[!NOTE]
-      >
-      >Mer information om hur du skapar och hanterar ytterligare kolumner finns i [Lägga till data](query.md#adding-data).
+     >[!NOTE]
+     >
+     >Mer information om hur du skapar och hanterar ytterligare kolumner finns i [Lägga till data](query.md#adding-data).
 
    * Markera föregående måldimension (före axelväxling) och välj **[!UICONTROL Zip Code]** i mottagarens **[!UICONTROL Location]** underträd, klicka sedan på **[!UICONTROL Edit expression]**.
 
-      ![](assets/wf_change-dimension_sample_02.png)
+     ![](assets/wf_change-dimension_sample_02.png)
 
    * Klicka **[!UICONTROL Advanced selection]** och välja **[!UICONTROL Edit the formula using an expression]**.
 
-      ![](assets/wf_change-dimension_sample_03.png)
+     ![](assets/wf_change-dimension_sample_03.png)
 
    * Använd funktionerna i listan och ange vilken beräkning som ska utföras.
 
-      ![](assets/wf_change-dimension_sample_04.png)
+     ![](assets/wf_change-dimension_sample_04.png)
 
-   * Ange slutligen etiketten för den kolumn som du nyss skapade.
+   * Ange slutligen etiketten för den kolumn som du just har skapat.
 
-      ![](assets/wf_change-dimension_sample_05.png)
+     ![](assets/wf_change-dimension_sample_05.png)
 
 1. Kör arbetsflödet för att visa resultatet av den här konfigurationen. Jämför data i tabellerna före och efter ändringsdimensionsaktiviteten och jämför arbetsflödestabellernas struktur, vilket visas i följande exempel:
 

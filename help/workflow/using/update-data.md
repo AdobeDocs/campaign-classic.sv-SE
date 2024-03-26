@@ -2,12 +2,12 @@
 product: campaign
 title: Uppdatera data
 description: Läs mer om arbetsflödesaktiviteten Uppdatera data
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+badge-v7-only: label="v7" type="Informative" tooltip="Gäller endast Campaign Classic v7"
 feature: Workflows, Targeting Activity, Data Management
 exl-id: 9f5735d2-73b8-469f-bc10-482c99cdd4a1
 source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
-source-wordcount: '849'
+source-wordcount: '859'
 ht-degree: 2%
 
 ---
@@ -22,9 +22,9 @@ An **Uppdatera data**-type-aktivitet utför en massuppdatering av fälten i data
 
 The **[!UICONTROL Operation type]** kan du välja vilken process som ska utföras på data i databasen:
 
-* **[!UICONTROL Insert or update]**: lägga till eller uppdatera data om de redan har lagts till.
-* **[!UICONTROL Insert]**: bara lägga till data.
-* **[!UICONTROL Update]**: bara uppdatera data.
+* **[!UICONTROL Insert or update]**: lägg till data eller uppdatera dem om de redan har lagts till.
+* **[!UICONTROL Insert]**: lägg bara till data.
+* **[!UICONTROL Update]**: endast uppdatera data.
 * **[!UICONTROL Update and merge collections]**: uppdaterar data och väljer en primär post och länkar sedan element som är länkade till dubbletterna i den här primära posten. Dubbletter kan sedan tas bort utan att överordnade element skapas.
 * **[!UICONTROL Delete]**: ta bort data.
 
@@ -38,9 +38,9 @@ Ange hur posterna i databasen ska identifieras:
 
 * Om datainmatningarna relaterar till en befintlig måldimension väljer du **[!UICONTROL By directly using the targeting dimension]** och markera det i dialogrutan **[!UICONTROL Updated dimension]** fält.
 
-   Du kan visa fälten för den valda dimensionen med **[!UICONTROL Edit this link]** förstoringsglasknapp.
+  Du kan visa fälten för den valda dimensionen med **[!UICONTROL Edit this link]** förstoringsglas.
 
-* I annat fall anger du en eller flera länkar som gör det möjligt att identifiera data i databasen eller att använda avstämningsnycklar direkt.
+* Annars anger du en eller flera länkar som gör det möjligt att identifiera data i databasen eller att använda avstämningsnycklar direkt.
 
 ![](assets/s_advuser_update_data_2.png)
 
@@ -66,7 +66,7 @@ The **[!UICONTROL modifiedDate]**, **[!UICONTROL modifiedBy]**, **[!UICONTROL cr
 
 Postuppdatering utförs bara för poster som innehåller minst en skillnad. Om värdena är desamma utförs ingen uppdatering.
 
-The **[!UICONTROL Advanced parameters]** Med -länken kan du ange ytterligare alternativ för att hantera både uppdatering och dubbletter. Du kan också:
+The **[!UICONTROL Advanced parameters]** Med -länken kan du ange ytterligare alternativ för att hantera både uppdatering av data och dubbletter. Du kan också:
 
 * **[!UICONTROL Disable automatic key management]**.
 * **[!UICONTROL Disable audit]**.
@@ -101,7 +101,7 @@ Genom att uppdatera data och sammanfoga samlingar kan du uppdatera data i en pos
 
 1. Markera de samlingar som ska flyttas till den primära posten och de fält som ska uppdateras.
 
-   Ange de regler som gäller för dessa när en eller flera sekundära poster identifieras. Du kan använda uttrycksverktyget för att göra detta. Mer information om detta hittar du i det här [avsnittet](../../platform/using/defining-filter-conditions.md#building-expressions). Genom att till exempel ange att det är det senast uppdaterade värdet av alla olika poster som måste behållas.
+   Ange de regler som gäller för dessa när en eller flera sekundära poster identifieras. Du kan använda uttrycksverktyget för att göra detta. Mer information finns i [section](../../platform/using/defining-filter-conditions.md#building-expressions). Genom att till exempel ange att det är det senast uppdaterade värdet av alla olika poster som måste behållas.
 
    Ange sedan de villkor som ska beaktas för regeln.
 
@@ -117,7 +117,7 @@ Data för sekundära poster kopplas till huvudposten om de definierade reglerna 
 
 ## Exempel: Uppdatera data efter en anrikning {#example--update-data-following-an-enrichment}
 
-The [Steg 2: Skriva data i registret &#39;Inköp&#39;](creating-a-summary-list.md#step-2--writing-enriched-data-to-the--purchases--table) i användningsexemplet där detaljerad information om att skapa en sammanfattning ger ett exempel på en datauppdatering efter en anrikningsaktivitet.
+The [Steg 2: Skriva data i tabellen&quot;Inköp&quot;](creating-a-summary-list.md#step-2--writing-enriched-data-to-the--purchases--table) i användningsexemplet där detaljerad information om att skapa en sammanfattning ger ett exempel på en datauppdatering efter en anrikningsaktivitet.
 
 ## Indataparametrar {#input-parameters}
 

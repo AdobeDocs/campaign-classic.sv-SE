@@ -1,7 +1,7 @@
 ---
 product: campaign
-title: Vanliga frågor och svar för utvecklare
-description: Vanliga frågor och svar för utvecklare
+title: Utvecklare - frågor och svar
+description: Utvecklare - frågor och svar
 feature: Troubleshooting, Configuration
 badge-v7-only: label="v7" type="Informative" tooltip="Gäller endast Campaign Classic v7"
 audience: platform
@@ -10,18 +10,18 @@ topic-tags: starting-with-adobe-campaign
 exl-id: 20552812-5c58-4d48-9636-d5135197685d
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '524'
-ht-degree: 95%
+source-wordcount: '515'
+ht-degree: 86%
 
 ---
 
-# Vanliga frågor och svar för utvecklare {#dev-faq}
+# Utvecklare - frågor och svar {#dev-faq}
 
 
 
 Adobe Campaign är en öppen lösning som är redo för personalisering och avancerad utveckling av applikationer.
 
-## Vad är datamodellen i Campaign? {#what-is-the-campaign-data-model}
+## Vad är Campaign-datamodellen? {#what-is-the-campaign-data-model}
 
 Den konceptuella datamodellen av databasen i Adobe Campaign består av en uppsättning inbyggda tabeller och deras interaktion. Den fysiska och logiska strukturen hos de data som medföljer programmet beskrivs i XML. Den följer en grammatik som är specifik för Adobe Campaign och som kallas för ett schema. Se [det här avsnittet](../../configuration/using/about-schema-edition.md) för mer information om scheman i Adobe Campaign.
 
@@ -29,7 +29,7 @@ Den konceptuella datamodellen av databasen i Adobe Campaign består av en uppsä
 
 Bästa praxis beskrivs [i den här artikeln](../../configuration/using/data-model-best-practices.md).
 
-## Hur arbetar man med scheman i Campaign? {#how-to-work-with-campaign-schemas-}
+## Hur arbetar man med Campaign-scheman? {#how-to-work-with-campaign-schemas-}
 
 I Adobe Campaign används datascheman för att:
 
@@ -43,9 +43,9 @@ Läs mer i [Komma igång med tabeller och scheman](../../configuration/using/abo
 
 Du kan skapa och implementera en icke-inbyggd mottagartabell i Campaign för att skicka meddelanden.
 
-[Klicka här för att läsa mer](../../configuration/using/about-custom-recipient-table.md)
+[Klicka här om du vill veta mer](../../configuration/using/about-custom-recipient-table.md)
 
-## Vad är bästa praxis för att definiera frågor i Campaign? {#what-are-the-best-practices-to-define-queries-in-campaign-}
+## Vilka är de bästa sätten att definiera frågor i Campaign? {#what-are-the-best-practices-to-define-queries-in-campaign-}
 
 Frågeredigeraren i Adobe Campaign är ett kraftfullt verktyg som låter dig utforska data och bygga segment.
 
@@ -65,6 +65,6 @@ Principen med datapaket är att exportera en datakonfiguration och integrera den
 
 [Klicka här](../../platform/using/working-with-data-packages.md) för att lära dig hur du arbetar med datapaket för att importera och exportera konfigurationer i Campaign.
 
-## Var hittar jag listan över API:er i Campaign Classic? {#where-can-i-find-the-list-of-campaign-classic-apis}
+## Var finns listan över Campaign Classic-API:er? {#where-can-i-find-the-list-of-campaign-classic-apis}
 
 Alla API:er i Campaign inklusive deras fullständiga beskrivning finns i den här [dedikerade dokumentationen](https://experienceleague.adobe.com/developer/campaign-api/api/index.html?lang=sv).

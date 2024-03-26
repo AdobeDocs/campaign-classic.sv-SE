@@ -2,13 +2,13 @@
 product: campaign
 title: Spåra en kampanj
 description: Lär dig spåra en kampanj med Campaign Distributed Marketing
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+badge-v7-only: label="v7" type="Informative" tooltip="Gäller endast Campaign Classic v7"
 feature: Distributed Marketing
 exl-id: 87d1909c-d2eb-47ce-a860-0e78a64d2914
 source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
-source-wordcount: '416'
-ht-degree: 1%
+source-wordcount: '423'
+ht-degree: 3%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 1%
 
 Operatorer för central enhet kan spåra kampanjorder i listan över kampanjpaket.
 
-På så sätt kan de
+Detta gör att de kan:
 
 * [Filterpaket](#filter-packages),
 * [Redigera paket](#edit-packages),
@@ -35,7 +35,7 @@ Från **[!UICONTROL Campaigns]** kan du visa listan med **[!UICONTROL Campaign p
 
 The **[!UICONTROL Campaign packages]** kan du visa sammanfattningen för varje paket.
 
-Sammanfattningen innehåller följande information: etikett, kampanjtyp, namnet på kampanjen som kampanjen skapades från samt mappen.
+Sammanfattningen visar följande information: etikett, kampanjtyp, namnet på kampanjen som den skapades från samt mappen.
 
 Klicka på paketnamnet för att redigera det. Du kan också visa order efter deras lokala enheter och deras status.
 
@@ -45,7 +45,7 @@ Denna information finns också i **[!UICONTROL Campaign orders]** visa alla orde
 
 Den centrala operatorn kan redigera ordern. Det finns två sätt att göra detta:
 
-1. Operatorn kan klicka på ordningens namn för att redigera den: Här visas orderinformationen.
+1. Operatorn kan klicka på ordernamnet för att redigera det: här visas orderinformationen.
 
    ![](assets/mkg_dist_catalog_op_command_edit1.png)
 

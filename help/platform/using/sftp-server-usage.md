@@ -1,6 +1,6 @@
 ---
 product: campaign
-title: Använda en SFTP-server
+title: Användning av SFTP-server
 description: Läs mer om de effektivaste strategierna för SFTP-servrar och felsökning
 feature: Troubleshooting
 badge-v7: label="v7" type="Informative" tooltip="Gäller Campaign Classic v7"
@@ -11,8 +11,8 @@ topic-tags: importing-and-exporting-data
 exl-id: d585a5d4-ea33-43c8-aa37-4d892025374a
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '1160'
-ht-degree: 15%
+source-wordcount: '1112'
+ht-degree: 11%
 
 ---
 
@@ -46,11 +46,11 @@ För att undvika sådana problem rekommenderar Adobe att du följer de bästa me
 
 >[!NOTE]
 >
->Om din instans ligger hos AWS kan du övervaka din SFTP-serverlagring med Campaign Classic [Kontrollpanelen](https://experienceleague.adobe.com/docs/control-panel/using/sftp-management/sftp-storage-management.html). Följ stegen på [den här sidan](https://experienceleague.adobe.com/docs/control-panel/using/faq.html?lang=sv) för att kontrollera om instanser har AWS som värd.
+>Om din instans lagras på AWS kan du övervaka din SFTP-serverlagring med Campaign Classicen [Kontrollpanelen](https://experienceleague.adobe.com/docs/control-panel/using/sftp-management/sftp-storage-management.html). Följ stegen på [den här sidan](https://experienceleague.adobe.com/docs/control-panel/using/faq.html?lang=sv) för att kontrollera om instanser har AWS som värd.
 >
 >Kontrollpanelen är tillgänglig för alla administratörsanvändare. Stegen för att bevilja administratörsåtkomst till en användare finns på [den här sidan](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/managing-permissions.html?lang=sv#discover-control-panel).
 >
->Observera att din instans måste uppgraderas med [senaste GA-version](../../rn/using/rn-overview.md). Läs om hur du kontrollerar din version i [det här avsnittet](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version).
+>Observera att din instans måste uppgraderas med [senaste GA-version](../../rn/using/rn-overview.md). Lär dig hur du checkar in din version [det här avsnittet](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version).
 
 * Serverstorleksmöjligheterna varierar beroende på din licens. Under alla omständigheter bör du behålla minsta möjliga antal uppgifter och endast lagra data så länge som krävs (15 dagar är den högsta tillåtna tidsgränsen).
 
@@ -112,7 +112,7 @@ I avsnittet nedan listas den information som ska kontrolleras och tillhandahåll
 
 ## Felet &quot;Det gick inte att matcha värdnamnet&quot;
 
-I det här avsnittet finns information om de kontroller och åtgärder som ska utföras vid hämtning av felet&quot;Det gick inte att lösa värdnamnet&quot; efter anslutning till FTP-servern från Campaign Classic.
+I det här avsnittet finns information om de kontroller och åtgärder som ska utföras vid hämtning av felet&quot;Det gick inte att lösa värdnamnet&quot; efter anslutning till FTP-servern från Campaign Classicen.
 
 I arbetsflödesjournalen visas följande loggar:
 

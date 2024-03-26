@@ -2,13 +2,13 @@
 product: campaign
 title: Inkommande e-postmeddelanden
 description: Läs mer om arbetsflödesaktiviteten för inkommande e-post
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+badge-v7-only: label="v7" type="Informative" tooltip="Gäller endast Campaign Classic v7"
 feature: Workflows, Channels Activity
 exl-id: b2a05e07-a7d7-436b-b2c6-90ab55d031cd
 source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
-source-wordcount: '337'
-ht-degree: 1%
+source-wordcount: '349'
+ht-degree: 3%
 
 ---
 
@@ -26,31 +26,31 @@ Den första fliken i **Inkommande e-postmeddelanden** Med -aktivitet kan du ange
 
    * **[!UICONTROL Use an external account]**
 
-      När det här alternativet är aktiverat kan du välja ett externt POP3-konto i stället för att ange anslutningsparametrarna. The **[!UICONTROL External account]** -fältet anger det externa POP3-konto som ska användas för att ansluta till e-posttjänsten. Det här fältet är bara synligt om alternativet Använd ett externt konto är aktiverat.
+     När det här alternativet är aktiverat kan du välja ett externt POP3-konto i stället för att ange anslutningsparametrarna. The **[!UICONTROL External account]** -fältet anger det externa POP3-konto som ska användas för att ansluta till e-posttjänsten. Det här fältet är bara synligt om alternativet Använd ett externt konto är aktiverat.
 
-      Om det här alternativet inte är markerat måste du ange följande parametrar:
+     Om det här alternativet inte är markerat måste du ange följande parametrar:
 
-      ![](assets/email_rec_edit_1b.png)
+     ![](assets/email_rec_edit_1b.png)
 
       * **[!UICONTROL POP3 server]**
 
-         Namn på POP3-servern.
+        Namn på POP3-servern.
 
       * **[!UICONTROL POP3 account]**
 
-         Användarens namn.
+        Användarens namn.
 
       * **[!UICONTROL Password]**
 
-         Lösenord för användarkonto.
+        Lösenord för användarkonto.
 
       * **[!UICONTROL Port]**
 
-         Portnummer för POP3-anslutning. Standardporten är 110.
+        Portnummer för POP3-anslutning. Standardporten är 10.
+
    * **[!UICONTROL Stop as soon as email is processed]**
 
-      Med det här alternativet kan du bearbeta e-postmeddelanden en i taget. Aktiviteten aktiverar endast övergången en gång och slutför sedan bearbetningen, vilket lämnar obearbetade meddelanden på servern.
-
+     Med det här alternativet kan du bearbeta e-postmeddelanden en i taget. Aktiviteten aktiverar endast övergången en gång och slutför sedan bearbetningen, vilket lämnar obearbetade meddelanden på servern.
 
 1. **[!UICONTROL Script]**
 

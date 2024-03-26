@@ -2,13 +2,13 @@
 product: campaign
 title: Berikning
 description: Läs mer om arbetsflödesaktiviteten för anrikning
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+badge-v7-only: label="v7" type="Informative" tooltip="Gäller endast Campaign Classic v7"
 feature: Workflows, Enrichment Activity, Targeting Activity
 exl-id: 4c7bc0f3-5877-47dc-bd72-dc94fb7bd479
 source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
-source-wordcount: '1291'
-ht-degree: 2%
+source-wordcount: '1304'
+ht-degree: 1%
 
 ---
 
@@ -28,8 +28,8 @@ Om du vill använda anrikningsaktiviteten måste du känna till de olika alterna
 
 The **[!UICONTROL Data linked to the filtering dimension]** ger dig tillgång till
 
-* Filtreringsdimensionens data: åtkomst till arbetstabelldata
-* Data länkade till filtreringsdimensionen: åtkomst till data som är länkade till arbetsregistret
+* Filtreringsdimensionens data: åtkomst till arbetsregisterdata
+* Data länkade till filtreringsdimensionen: åtkomst till data länkade till arbetsregistret
 
 ![](assets/wf_enrich_linkoptions.png)
 
@@ -39,29 +39,29 @@ The **[!UICONTROL A link]** gör att du kan skapa en join i valfri databastabell
 
 Det finns fyra typer av länkar:
 
-* **[!UICONTROL Define a collection]**: I kan du definiera en länk med en 1-N-kardinalitet mellan tabellerna.
-* **[!UICONTROL Define a link whose target is still available]**: I kan du definiera en länk med en 1-1-kardinalitet mellan tabeller. Kopplingsvillkoren måste definieras av en enda post i måltabellen.
-* **[!UICONTROL Define a link whose target does not necessarily exist in the base]**: I kan du definiera en länk med 0-1-kardinalitet mellan tabeller. Kopplingsvillkoret måste definieras med 0 eller 1 (max) i måltabellen.
+* **[!UICONTROL Define a collection]**: gör att du kan definiera en länk med en 1-N-kardinalitet mellan tabellerna.
+* **[!UICONTROL Define a link whose target is still available]**: gör att du kan definiera en länk med en 1-1-kardinalitet mellan tabeller. Kopplingsvillkoren måste definieras av en enda post i måltabellen.
+* **[!UICONTROL Define a link whose target does not necessarily exist in the base]**: gör att du kan definiera en länk med 0-1-kardinalitet mellan tabeller. Kopplingsvillkoret måste definieras med 0 eller 1 (max) i måltabellen.
 
-   Det här alternativet är konfigurerat i **[!UICONTROL Simple Join]** som du kommer åt via **[!UICONTROL Edit additional data]** länk till **[!UICONTROL Enrichment]** aktivitet.
+  Det här alternativet är konfigurerat i **[!UICONTROL Simple Join]** som du kommer åt via **[!UICONTROL Edit additional data]** länk till **[!UICONTROL Enrichment]** aktivitet.
 
 * **[!UICONTROL Define a link by searching for a reference among several options]**: den här typen av länk definierar en avstämning mot en unik post. Adobe Campaign skapar en länk till en måltabell genom att lägga till en sekundärnyckel i måltabellen för lagring av en referens till den unika posten.
 
-   Det här alternativet är konfigurerat i **[!UICONTROL Reconciliation and deduplication]** som du kommer åt via **[!UICONTROL Edit additional data]** länk till **[!UICONTROL Enrichment]** aktivitet.
+  Det här alternativet är konfigurerat i **[!UICONTROL Reconciliation and deduplication]** som du kommer åt via **[!UICONTROL Edit additional data]** länk till **[!UICONTROL Enrichment]** aktivitet.
 
 Användningsexempel som beskriver hur anrikningsaktiviteter fungerar i sitt sammanhang finns också i följande avsnitt:
 
-* [E-postberikande med anpassade datumfält](email-enrichment-with-custom-date-fields.md).
-* [Berika data](enriching-data.md)
+* [E-postberikning med anpassade datumfält](email-enrichment-with-custom-date-fields.md).
+* [Förbättra data](enriching-data.md)
 * [Skapa en sammanfattningslista](creating-a-summary-list.md)
 
 ## Lägga till information {#adding-information}
 
-Använd **[!UICONTROL Enrichment]** aktivitet för att lägga till kolumner i en arbetstabell: den här aktiviteten kan användas som komplement till en frågeaktivitet.
+Använd **[!UICONTROL Enrichment]** aktivitet som du vill lägga till kolumner i en arbetstabell: den här aktiviteten kan användas som komplement till en frågeaktivitet.
 
 Konfigurationen av ytterligare kolumner finns i [Lägga till data](query.md#adding-data).
 
-The **[!UICONTROL Primary set]** kan du välja ingående övergång: uppgifterna om den här aktivitetens arbetsyta skall berikas.
+The **[!UICONTROL Primary set]** I det här fältet kan du välja den inkommande övergången: data i den här aktivitetens arbetstabell kommer att berikas.
 
 Klicka på **[!UICONTROL Add data]** och välj vilken typ av data som ska läggas till. Listan över datatyper som erbjuds beror på vilka moduler och alternativ som är installerade på din plattform. I en minimal konfiguration kan du alltid lägga till data som är länkade till filtreringsdimensionen och en länk.
 
@@ -101,7 +101,7 @@ Data och schemat vid anrikningsfasutdata blir följande:
 
 ## Skapa en länk {#creating-a-link}
 
-Du kan använda anrikningsaktiviteten för att skapa en länk mellan arbetsdata och Adobe Campaign-databasen: detta blir en lokal länk till arbetsflödet mellan inkommande data.
+Du kan använda anrikningsaktiviteten för att skapa en länk mellan arbetsdata och Adobe Campaign-databasen: det här blir en lokal länk till arbetsflödet mellan inkommande data.
 
 Om du till exempel läser in data från en fil som innehåller mottagarnas kontonummer, land och e-postadress måste du skapa en länk till landstabellen för att kunna uppdatera informationen i deras profiler.
 
@@ -124,7 +124,7 @@ Gör så här:
 
    ![](assets/enrichment_edit_after_file_box.png)
 
-1. Välj **[!UICONTROL Link definition]** och klicka på **[!UICONTROL Next]** -knappen. Ange vilken typ av länk som ska skapas. I det här exemplet vill vi att filmottagarens land ska stämma överens med ett land i listan över tillgängliga länder i den dedikerade databastabellen. Välj alternativet **[!UICONTROL Define a link by searching for a reference among several options]**. Välj landstabellen i dialogrutan **[!UICONTROL Target schema]** fält.
+1. Välj **[!UICONTROL Link definition]** och klicka på **[!UICONTROL Next]** -knappen. Ange vilken typ av länk som ska skapas. I det här exemplet vill vi att filmottagarens land ska stämma överens med ett land i listan över tillgängliga länder i den dedikerade databastabellen. Välj **[!UICONTROL Define a link by searching for a reference among several options]** alternativ. Välj landstabellen i dialogrutan **[!UICONTROL Target schema]** fält.
 
    ![](assets/enrichment_add_a_link_select_option4.png)
 
@@ -140,7 +140,7 @@ I resultatet av den här anrikningsaktiviteten kommer det tillfälliga schemat a
 
 Anrikningsaktiviteten kan användas för att konfigurera datavstämning, inklusive när data har lästs in i databasen. I det här fallet **[!UICONTROL Reconciliation]** kan du definiera länken mellan data i Adobe Campaign-databasen och data i arbetstabellen.
 
-Välj **[!UICONTROL Identify the targeting document based on work data]** anger du det schema som du vill skapa en länk till och definierar kopplingsvillkoren: för att göra detta väljer du fälten som ska förenas i arbetsdata (**[!UICONTROL Source expression]**) och i målgruppsdimensionen (**[!UICONTROL Destination expression]**).
+Välj **[!UICONTROL Identify the targeting document based on work data]** anger du det schema som du vill skapa en länk till och definierar kopplingsvillkoren: för att göra detta markerar du de fält som ska förenas i arbetsdata (**[!UICONTROL Source expression]**) och i målgruppsdimensionen (**[!UICONTROL Destination expression]**).
 
 Du kan använda ett eller flera avstämningskriterier.
 
@@ -161,7 +161,7 @@ Du kan till exempel förbättra data för en mottagarfråga före en leverans.
 När du har konfigurerat frågan (se [section](query.md)):
 
 1. Lägg till och öppna en anrikningsaktivitet.
-1. Välj **[!UICONTROL Enrichment]** **[!UICONTROL Add data]** i flik .
+1. I **[!UICONTROL Enrichment]** flik, välja **[!UICONTROL Add data]**.
 1. Välj **[!UICONTROL An offer proposition]** i de typer av data som ska läggas till.
 
    ![](assets/int_enrichment_offer2.png)
@@ -169,13 +169,13 @@ När du har konfigurerat frågan (se [section](query.md)):
 1. Ange en identifierare och en etikett för det förslag som ska läggas till.
 1. Ange erbjudandevalet. Det finns två möjliga alternativ:
 
-   * **[!UICONTROL Search for the best offer in a category]**: Markera det här alternativet och ange parametrarna för att ringa in erbjudanden (erbjudandeplats, kategori eller tema, kontaktdatum, antal erbjudanden som ska behållas). Motorn beräknar automatiskt erbjudandena som ska läggas till enligt dessa parametrar. Vi rekommenderar att du fyller i **[!UICONTROL Category]** eller **[!UICONTROL Theme]** i stället för båda samtidigt.
+   * **[!UICONTROL Search for the best offer in a category]**: markera det här alternativet och ange parametrarna för att anropa motorn (erbjudandeutrymme, kategori eller tema, kontaktdatum, antal erbjudanden som ska behållas). Motorn beräknar automatiskt erbjudandena som ska läggas till enligt dessa parametrar. Vi rekommenderar att du fyller i **[!UICONTROL Category]** eller **[!UICONTROL Theme]** i stället för båda samtidigt.
 
-      ![](assets/int_enrichment_offer3.png)
+     ![](assets/int_enrichment_offer3.png)
 
    * **[!UICONTROL A predefined offer]**: markera det här alternativet och ange ett erbjudandeutrymme, ett specifikt erbjudande och ett kontaktdatum för att direkt konfigurera det erbjudande du vill lägga till, utan att anropa erbjudandemotorn.
 
-      ![](assets/int_enrichment_offer4.png)
+     ![](assets/int_enrichment_offer4.png)
 
 1. Konfigurera sedan en leveransaktivitet som motsvarar den valda kanalen. Se [Flerkanalsleveranser](cross-channel-deliveries.md).
 
@@ -214,7 +214,7 @@ The **[!UICONTROL Offer engine]** den här informationen lagras som standard i a
 Du kan dock lagra den här informationen på följande sätt:
 
 1. Skapa ett anrop till erbjudandemotorn i en anrikningsaktivitet som placerats efter en fråga och före en leveransaktivitet.
-1. I aktivitetens huvudfönster väljer du **[!UICONTROL Edit additional data...]**.
+1. Välj i aktivitetens huvudfönster **[!UICONTROL Edit additional data...]**.
 
    ![](assets/ita_enrichment_rankweight_1.png)
 

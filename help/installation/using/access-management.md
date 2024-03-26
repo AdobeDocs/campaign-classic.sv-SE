@@ -7,8 +7,8 @@ badge-v7-only: label="v7" type="Informative" tooltip="Gäller endast Campaign Cl
 exl-id: af88e4e7-0ee3-48b4-9db4-7dd390d9d46a
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '383'
-ht-degree: 6%
+source-wordcount: '381'
+ht-degree: 10%
 
 ---
 
@@ -30,7 +30,7 @@ WebApp-operatorn är administratör. Följ dessa riktlinjer för att förbättra
 
    1. Ange ett namn för varje dubblett. Exempel: webapp_brand, webapp_brand2, osv.
 
-   1. Duplicera en webbprogrammall så att den har en mall per varumärke och redigera egenskaperna för att ändra operator genom att välja Använd ett specifikt konto.  Läs mer i [den här sidan](../../web/using/defining-web-forms-properties.md).
+   1. Duplicera en webbprogrammall så att den har en mall per varumärke och redigera egenskaperna för att ändra operator genom att välja Använd ett specifikt konto.  Läs mer på [den här sidan](../../web/using/defining-web-forms-properties.md).
 
 ## Säkerhetsgrupper och administratörsoperatörer
 
@@ -46,6 +46,6 @@ Adobe Campaign ger tre högnivåbehörigheter genom [namngiven rättighet](../..
 
 * **PROGRAMKÖRNING** (createProcess): tillåter att externa program körs (på servern)
 
-* **SQL**: tillåter att SQL-skript körs i databasen (så att säkerhetsmodellen kan kringgås). Obs! Om du behöver utföra komplexa beräkningar (till exempel filtrering) kan du be databasadministratören att skapa en SQL-funktion och lägga till dem i tillåtelselista. Läs mer i [den här sidan](../../installation/using/scripting-coding-guidelines.md).
+* **SQL**: tillåter att SQL-skript körs i databasen (så att säkerhetsmodellen kan kringgås). Obs! Om du behöver utföra komplexa beräkningar (till exempel filtrering) kan du be databasadministratören att skapa en SQL-funktion och lägga till dem i tillåtelselista. Läs mer på [den här sidan](../../installation/using/scripting-coding-guidelines.md).
 
 * **Bevilja dem till mycket få (och betrodda) operatorer**

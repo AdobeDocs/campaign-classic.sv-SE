@@ -1,14 +1,14 @@
 ---
 product: campaign
 title: Ändra aktivitetsbilder
-description: Lär dig hur du ändrar aktivitetsbilden
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+description: Lär dig ändra aktivitetsbilden
+badge-v7-only: label="v7" type="Informative" tooltip="Gäller endast Campaign Classic v7"
 feature: Workflows
 exl-id: cafdbc10-9c10-4d42-a485-c9880df8d371
 source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
-source-wordcount: '156'
-ht-degree: 3%
+source-wordcount: '165'
+ht-degree: 7%
 
 ---
 
@@ -20,30 +20,30 @@ De bilder som används i diagrammen för de olika arbetsflödena kan ändras. De
 
 * Om du vill ändra bakgrundsbilden väljer du önskat målarbetsflöde och klickar sedan på **[!UICONTROL Properties]** -fliken.
 
-   ![](assets/s_user_segmentation_properties_tab.png)
+  ![](assets/s_user_segmentation_properties_tab.png)
 
-   Om du vill välja vilken bild som ska användas klickar du på **[!UICONTROL Select link]** ikonen till höger om **[!UICONTROL Background image]** fält.
+  Om du vill välja vilken bild som ska användas klickar du på **[!UICONTROL Select link]** ikonen till höger om **[!UICONTROL Background image]** fält.
 
-   >[!NOTE]
-   >
-   >Bredden i pixlar för bakgrundsbilden måste vara en multipel av 4.
+  >[!NOTE]
+  >
+  >Bredden i pixlar för bakgrundsbilden måste vara en multipel av 4.
 
-   ![](assets/s_user_segmentation_background_select.png)
+  ![](assets/s_user_segmentation_background_select.png)
 
-   The **[!UICONTROL Edit link]** kan du visa den markerade bilden.
+  The **[!UICONTROL Edit link]** kan du visa den markerade bilden.
 
 * Om du vill ändra bilden som är associerad med en aktivitet dubbelklickar du på objektet och klickar sedan på **[!UICONTROL Advanced]** -fliken.
 
-   Om du vill välja vilken bild som ska användas klickar du på **[!UICONTROL Select link]** ikonen till höger om **[!UICONTROL Image]** fält.
+  Om du vill välja vilken bild som ska användas klickar du på **[!UICONTROL Select link]** ikonen till höger om **[!UICONTROL Image]** fält.
 
-   ![](assets/s_user_segmentation_activity_image.png)
+  ![](assets/s_user_segmentation_activity_image.png)
 
-   The **[!UICONTROL Edit link]** kan du visa den markerade bilden.
+  The **[!UICONTROL Edit link]** kan du visa den markerade bilden.
 
-   ![](assets/s_user_segmentation_activity_image_select.png)
+  ![](assets/s_user_segmentation_activity_image_select.png)
 
 >[!NOTE]
 >
->Bilderna som har sparats i **[!UICONTROL Administration > Configuration > Images]** trädnoden är tillgänglig för markering.
+>Bilderna som har sparats i **[!UICONTROL Administration > Configuration > Images]** trädnoden kan väljas.
 >  
 >Bilderna måste vara i PNG-format med 48 x 48 pixlar, 16 miljoner färger och en genomskinlig bakgrund.

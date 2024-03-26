@@ -2,13 +2,13 @@
 product: campaign
 title: Värmekarta för kampanjarbetsflöde
 description: Övervaka arbetsflödena med Workflow HeatMap
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+badge-v7-only: label="v7" type="Informative" tooltip="Gäller endast Campaign Classic v7"
 feature: Workflows, Heatmap
 exl-id: f1016ddf-0c87-4611-a878-d01f3684935f
 source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
-source-wordcount: '1128'
-ht-degree: 3%
+source-wordcount: '1145'
+ht-degree: 4%
 
 ---
 
@@ -30,7 +30,7 @@ Mer exakt hjälper det plattformsadministratörerna att:
 * filtrera arbetsflöden per varaktighet för att se vilka arbetsflöden som kan stöta på problem
 * Filtrera aktiviteter efter varaktighet för att se vilka aktiviteter som kan stöta på problem
 * enkelt hitta enskilda arbetsflöden och alla relaterade aktiviteter (med deras varaktighet)
-* Filtrera efter arbetsflödestyp: [tekniska arbetsflöden](building-a-workflow.md#technical-workflows) eller [kampanjarbetsflöden](building-a-workflow.md#campaign-workflows)
+* Filter efter arbetsflödestyp: [tekniska arbetsflöden](building-a-workflow.md#technical-workflows) eller [kampanjarbetsflöden](building-a-workflow.md#campaign-workflows)
 * leta efter ett specifikt arbetsflöde att analysera
 
 >[!NOTE]
@@ -49,13 +49,13 @@ Om du använder Workflow HeatMap måste du ha god förståelse för följande ko
 
    ![](assets/wkf_monitoring_path.png)
 
-1. Klicka på kalendern för att välja en dag.
+1. Välj en dag i kalendern.
 
    Som standard visas arbetsflödesaktiviteten för den aktuella dagen på sidan. Du kan ändra den och välja vilken dag som helst i det förflutna.
 
    >[!NOTE]
    >
-   >Endast de arbetsflöden som inte har tagits bort av **[!UICONTROL Database cleanup]** arbetsflödet är synligt. Mer information om arbetsflödet för databasrensning finns i [det här avsnittet](../../production/using/database-cleanup-workflow.md).\
+   >Endast de arbetsflöden som inte har tagits bort av **[!UICONTROL Database cleanup]** arbetsflödet visas. Mer information om arbetsflödet för databasrensning finns i [det här avsnittet](../../production/using/database-cleanup-workflow.md).\
    >Som standard är tidszonen för Workflow HeatMap den som är definierad för den aktuella administratörsanvändaren. Du kan till exempel vilja ändra den om du inte befinner dig inom samma område som de marknadsföringsanvändare du arbetar med.
 
 1. Klicka på knappen **[!UICONTROL Filters]**.
@@ -66,18 +66,18 @@ Om du använder Workflow HeatMap måste du ha god förståelse för följande ko
 
    ![](assets/wkf_monitoring_filters_duration.png)
 
-1. Du kan också välja ett specifikt arbetsflöde i **[!UICONTROL Workflows]** nedrullningsbar lista.
+1. Du kan också välja ett specifikt arbetsflöde i **[!UICONTROL Workflows]** listruta.
 
    ![](assets/wkf_monitoring_filters_workflows.png)
 
    >[!NOTE]
    >
-   >The **[!UICONTROL Min duration]** filter används. Om du inte kan hitta ett visst arbetsflöde återställer du den kortaste tiden till 0 så att alla arbetsflöden visas i listan.
+   >The **[!UICONTROL Min duration]** filtret används. Om du inte kan hitta ett visst arbetsflöde återställer du den kortaste tiden till 0 så att alla arbetsflöden visas i listan.
 
 1. Du kan även filtrera på **[!UICONTROL Workflow type]** :
 
    * **[!UICONTROL Technical]** : Endast [färdiga tekniska arbetsflöden](building-a-workflow.md#technical-workflows) och [arbetsflöden för datahantering](targeting-data.md#data-management) visas.
-   * **[!UICONTROL Marketing]** : Endast arbetsflöden som är kopplade till en marknadsföringskampanj, s.k. [kampanjarbetsflöden](building-a-workflow.md#campaign-workflows), visas.
+   * **[!UICONTROL Marketing]** : Endast arbetsflöden kopplade till en marknadsföringskampanj, s.k. [kampanjarbetsflöden](building-a-workflow.md#campaign-workflows), visas.
 
 1. Om du vill söka efter ett specifikt arbetsflöde efter namn kan du även använda **[!UICONTROL Workflow name filter]** fält.
 
@@ -108,10 +108,10 @@ I exemplet nedan körs tre arbetsflöden mellan 08:05 och 8:05 (oavsett hur lån
 
    För varje arbetsflöde visas alla aktiviteter som det innehåller, med deras varaktighet.
 
-1. Klicka på arbetsflödes-ID:t eller namnet för att öppna ett arbetsflöde direkt.
+1. Klicka på arbetsflödes-ID eller namn för att öppna ett arbetsflöde direkt.
 1. Gå tillbaka till **[!UICONTROL Campaign Workflow HeatMap]** visa klickar du på **[!UICONTROL Home]** -knappen.
 
-## Användningsexempel: använda HeatMap för att vidta åtgärder {#use-cases--using-the-heatmap-to-take-actions}
+## Användningsexempel: använd HeatMap för att vidta åtgärder {#use-cases--using-the-heatmap-to-take-actions}
 
 Det finns två huvudfall där HeatMap för kampanjarbetsflödet kan vara användbart.
 

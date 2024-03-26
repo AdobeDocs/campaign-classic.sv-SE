@@ -11,7 +11,7 @@ topic-tags: asset-sharing
 exl-id: f3897a40-b080-47e5-9e31-4d861c1bacd5
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '510'
+source-wordcount: '506'
 ht-degree: 1%
 
 ---
@@ -20,7 +20,7 @@ ht-degree: 1%
 
 
 
-I det här avsnittet beskrivs de konfigurationssteg som krävs i Adobe Campaign för att använda integreringsfunktionerna med bastjänsten Assets eller Adobe Experience Manager Assets-biblioteket (AEM Assets).
+I det här avsnittet beskrivs de nödvändiga konfigurationsstegen i Adobe Campaign för att använda integreringsfunktionerna med bastjänsten Assets eller i Adobe Experience Manager Assets (AEM Assets) bibliotek.
 
 >[!CAUTION]
 >
@@ -63,7 +63,7 @@ Om du vill integrera AEM Assets med Adobe Campaign måste du först konfigurera 
 
 Läs om hur du integrerar Adobe Campaign och Adobe Experience Manager i [detaljerad dokumentation](../../integrations/using/about-adobe-experience-manager.md).
 
-När integreringen är klar kan du konfigurera en ny leveransmall i Adobe Campaign så att den kan använda AEM Assets-biblioteket. Följ stegen nedan för att göra detta:
+När integreringen är klar kan du konfigurera en ny leveransmall i Adobe Campaign så att den kan använda AEM Assets-biblioteket. Gör så här:
 
 1. Skapa en ny leveransmall - eller duplicera en befintlig. Mer information om leveransmallar finns i [den här sidan](../../delivery/using/about-templates.md).
 1. Redigera **Egenskaper** för den här mallen.

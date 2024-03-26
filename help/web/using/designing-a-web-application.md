@@ -2,13 +2,13 @@
 product: campaign
 title: Designa en webbapplikation
 description: Designa en webbapplikation
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
+badge-v7: label="v7" type="Informative" tooltip="Gäller Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Gäller även Campaign v8"
 feature: Web Apps
 exl-id: dcdf6afc-321e-4027-a350-fff6bbf22e71
 source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
-source-wordcount: '277'
+source-wordcount: '289'
 ht-degree: 4%
 
 ---
@@ -39,7 +39,7 @@ Om du vill lägga till en tabell använder du listrutan med tabeller i aktivitet
 
 ![](assets/s_ncs_admin_webapps_bar_table.png)
 
-Du kan också välja tabelltyp i listrutan.
+Du kan också välja tabelltyp i den nedrullningsbara menyn.
 
 ![](assets/s_ncs_admin_webapps_table.png)
 
@@ -57,10 +57,10 @@ Redigera webbtillämpningar för ett extranät kännetecknas av:
 
 * En förinläsningsruta
 
-   I de flesta fall måste de data som ska visas vara förinlästa. Eftersom de användare som använder formulären identifieras (via en åtkomstkontroll) behöver inte förinläsningen krypteras.
+  I de flesta fall måste de data som ska visas vara förinlästa. Eftersom de användare som använder formulären identifieras (via en åtkomstkontroll) behöver inte förinläsningen krypteras.
 
 * En sparruta
 * Lägga till sidor
 
-   Medan webbapplikationer av typen &quot;Översikt&quot; alla har en enda sida kan redigeringsformulären innehålla en serie sidor som bygger på specifika kriterier (tester, val, profil för ansluten operator osv.).
+  Medan webbapplikationer av typen &quot;Översikt&quot; alla har en enda sida kan redigeringsformulären innehålla en serie sidor som bygger på specifika kriterier (tester, val, profil för ansluten operator osv.).
 

@@ -7,8 +7,8 @@ badge-v7-only: label="v7" type="Informative" tooltip="Gäller endast Campaign Cl
 exl-id: ca0c33c5-7350-462a-bc65-4cab51e529d9
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '767'
-ht-degree: 22%
+source-wordcount: '750'
+ht-degree: 18%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 22%
 
 ## Instansövervakningsinstrumentpanel {#instance-monitoring-dashboard}
 
-The **[!UICONTROL Monitoring]** -fliken, som är tillgänglig från Campaign Classic hemsida, är den viktigaste startpunkten som hjälper dig att övervaka din instans.
+The **[!UICONTROL Monitoring]** -fliken, som är tillgänglig från Campaign Classicens hemsida, är den viktigaste startpunkten som hjälper dig att övervaka instansen.
 
 Här finns en kontrollpanel med information om vad som händer i instansen: status (version av bygge, installerade paket, osv.), systemindikatorer, loggar, arbetsflöden som körs, status för senaste skickade leveranser osv.
 
@@ -26,12 +26,12 @@ Detaljerad information finns [här](../../production/using/monitoring-processes.
 
 ![](assets/monitoring_tab.png)
 
-## Övervaka Campaign Classic-processer {#monitoring-campaign-classic-processes}
+## Övervaka Campaign Classicens processer {#monitoring-campaign-classic-processes}
 
 <table>
 <tr><td><img src="assets/do-not-localize/icon_system.svg" width="60px"><p><a href="#monitoring-instance">Övervaka instansen</a></p></td>
 <td><img src="assets/do-not-localize/icon_workflows.svg" width="60px"><p><a href="#monitoring-workflows">Övervaka arbetsflöden</a></p></td>
-<td><img src="assets/do-not-localize/icon_send.svg" width="60px"><p><a href="#monitoring-deliveries">Övervaka leveranser</a></p></td>
+<td><img src="assets/do-not-localize/icon_send.svg" width="60px"><p><a href="#monitoring-deliveries">Bildskärmsleveranser</a></p></td>
 <td><img src="assets/do-not-localize/icon_database.svg" width="60px"><p><a href="#monitoring-database">Övervaka databasen</a></p></td></tr>
 </table>
 
@@ -128,9 +128,9 @@ Vi rekommenderar att du regelbundet utför databasunderhåll för att undvika ö
 
 Säkerhetskopiering är nödvändigt för att undvika dataförlust i händelse av problem (oavsett om det är fysiskt eller systemrelaterat) på en dator. [Klicka här](../../production/using/backup.md) för mer information. Återställningsproceduren beskrivs i [det här avsnittet](../../production/using/restoration.md).
 
-## Campaign Classic tekniska principer {#campaign-classic-technical-principles}
+## Tekniska principer för Campaign Classic {#campaign-classic-technical-principles}
 
-Tekniska resurser finns i Campaign Classic dokumentation. Vi rekommenderar att du lär dig mer om dessa ämnen innan du utför någon teknisk åtgärd på din instans.
+Tekniska resurser finns i Campaign Classicens dokumentation. Vi rekommenderar att du lär dig mer om dessa ämnen innan du utför någon teknisk åtgärd på din instans.
 
 **Värdmodeller och funktioner**
 
@@ -148,8 +148,8 @@ Tekniska resurser finns i Campaign Classic dokumentation. Vi rekommenderar att d
 
 **Allmänna principer**
 
-* [Campaign Classic-arkitektur](../../production/using/general-architecture.md)
-* [Campaign Classic-moduler](../../production/using/operating-principle.md)
+* [Campaign Classicens arkitektur](../../production/using/general-architecture.md)
+* [Moduler för Campaign Classic](../../production/using/operating-principle.md)
 * [Alternativ för Campaign Classic](../../installation/using/configuring-campaign-options.md)
 * [Så här ställer du in modulernas automatiska start](../../production/using/administration.md)
 * [Princip för kampanjkonfiguration](../../production/using/configuration-principle.md)

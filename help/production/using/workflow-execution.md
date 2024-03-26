@@ -11,8 +11,8 @@ topic-tags: troubleshooting
 exl-id: b5aa5663-1902-4f50-9202-783e73a28838
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '658'
-ht-degree: 5%
+source-wordcount: '650'
+ht-degree: 4%
 
 ---
 
@@ -45,7 +45,7 @@ Det kan finnas flera orsaker till det här problemet, följ stegen nedan för at
 
    Om arbetsflödet fortfarande inte fungerar kontrollerar du om det finns ett specifikt fel i granskningsloggen, felsöker därefter och startar sedan om arbetsflödet igen.
 
-1. Kontrollera **[!UICONTROL wfserver]** modulläget i **[!UICONTROL Monitoring]** -flik, tillgänglig från Campaign Classic hemsida (se [Övervaka processer](../../production/using/monitoring-processes.md)). Den här processen ansvarar för att köra alla arbetsflöden.
+1. Kontrollera **[!UICONTROL wfserver]** modulläget i **[!UICONTROL Monitoring]** -flik, tillgänglig från Campaign Classicens hemsida (se [Övervaka processer](../../production/using/monitoring-processes.md)). Den här processen ansvarar för att köra alla arbetsflöden.
 
    En administratör kan även kontrollera att **wfserver@`<instance>`** -modulen startas på huvudprogramservern med hjälp av kommandot nedan.
 
@@ -88,7 +88,7 @@ Om arbetsflöden inte körs och deras status är **Pågående start** kan det in
 
 Gör så här om du vill kontrollera detta och starta modulen om det behövs:
 
-1. Kontrollera **[!UICONTROL wfserver]** modulläget i **[!UICONTROL Monitoring]** -flik, tillgänglig från Campaign Classic hemsida (se [Övervaka processer](../../production/using/monitoring-processes.md)).
+1. Kontrollera **[!UICONTROL wfserver]** modulläget i **[!UICONTROL Monitoring]** -flik, tillgänglig från Campaign Classicens hemsida (se [Övervaka processer](../../production/using/monitoring-processes.md)).
 
    En administratör kan även kontrollera att **wfserver@`<instance>`** -modulen startas på huvudprogramservern med hjälp av kommandot nedan.
 

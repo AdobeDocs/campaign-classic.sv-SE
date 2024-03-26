@@ -1,7 +1,7 @@
 ---
 product: campaign
-title: Om responshanteraren
-description: Om responshanteraren
+title: Om svarshanteraren
+description: Om svarshanteraren
 feature: Campaigns
 badge-v7: label="v7" type="Informative" tooltip="Gäller Campaign Classic v7"
 badge-v8: label="v8" type="Positive" tooltip="Gäller även Campaign v8"
@@ -9,7 +9,7 @@ exl-id: b5c0e960-2afe-4a98-b82c-d47a74659703
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
 source-wordcount: '418'
-ht-degree: 6%
+ht-degree: 4%
 
 ---
 

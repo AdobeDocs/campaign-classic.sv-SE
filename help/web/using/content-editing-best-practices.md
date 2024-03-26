@@ -8,8 +8,8 @@ feature: Web Apps, Web Forms, Landing Pages, Email Design
 exl-id: c1eccb48-59bf-412f-9c18-9cda2a022096
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '560'
-ht-degree: 7%
+source-wordcount: '566'
+ht-degree: 3%
 
 ---
 
@@ -21,7 +21,7 @@ För att säkerställa att redigeraren fungerar optimalt rekommenderar vi att du
 
 * Före **importera en sidmall för HTML** i Adobe Campaign kontrollerar du att mallen öppnas och visas korrekt i de olika webbläsarna.
 * Om HTML-sidan innehåller **JavaScript-skript** måste de köra **utan fel** utanför redigeraren.
-* När du skapar en mall rekommenderar vi att du lägger till ett **&quot;type&quot;**-attribut till taggar. `<input>` Den här informationen bearbetas av redigeraren och hjälper användaren att länka ett databasfält till formulärfältet när webbprogrammet konfigureras.
+* När du skapar en mall rekommenderar vi att du lägger till **type** attribut till `<input>` -taggar. Den här informationen bearbetas av redigeraren och hjälper användaren att länka ett databasfält till formulärfältet när webbprogrammet konfigureras.
 
   Exempel på HTML-kod i mallen:
 

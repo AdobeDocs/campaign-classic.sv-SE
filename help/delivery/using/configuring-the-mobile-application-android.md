@@ -9,7 +9,7 @@ exl-id: 32c35e61-d0a3-478f-b73b-396e2becf7f9
 source-git-commit: 92c79e7050124bc707f4d6b87c7952016586002c
 workflow-type: tm+mt
 source-wordcount: '856'
-ht-degree: 4%
+ht-degree: 11%
 
 ---
 
@@ -28,7 +28,7 @@ Då kan du [skapa ett omfattande meddelande för Android](create-notifications-a
 
 >[!IMPORTANT]
 >
->Vissa viktiga ändringar av tjänsten Android Firebase Cloud Messaging (FCM) kommer att släppas 2024 och kan påverka din Adobe Campaign-implementering. Din prenumerationstjänstkonfiguration för push-meddelanden för Android kan behöva uppdateras för att den här ändringen ska fungera. Du kan redan kontrollera och vidta åtgärder. Läs mer om detta [Adobe Campaign v8-teknik](https://experienceleague.adobe.com/docs/campaign/technotes-ac/tn-new/push-technote.html){target="_blank"}.
+>Vissa viktiga ändringar av tjänsten Android Firebase Cloud Messaging (FCM) kommer att släppas 2024 och kan komma att påverka din Adobe Campaign-implementering. Konfigurationen för prenumerationstjänster för push-meddelanden för Android kan behöva uppdateras för att den här ändringen ska fungera. Du kan redan kontrollera och vidta åtgärder. Läs mer om detta [Adobe Campaign v8-teknik](https://experienceleague.adobe.com/docs/campaign/technotes-ac/tn-new/push-technote.html?lang=sv){target="_blank"}.
 
 
 ## Konfigurera externt Android-konto {#configuring-external-account-android}
@@ -109,7 +109,7 @@ Som standard sparar Adobe Campaign en tangent i **[!UICONTROL User identifier]**
 
 >[!IMPORTANT]
 >
->Vissa viktiga ändringar av tjänsten Android Firebase Cloud Messaging (FCM) kommer att släppas 2024 och kan påverka din Adobe Campaign-implementering. Som en del av Google kontinuerliga arbete med att förbättra sina tjänster kommer de äldre FCM-API:erna att upphöra på **20 juni 2024**. Läs mer om detta [Adobe Campaign v8-teknik](https://experienceleague.adobe.com/docs/campaign/technotes-ac/tn-new/push-technote.html){target="_blank"}.
+>Vissa viktiga ändringar av tjänsten Android Firebase Cloud Messaging (FCM) kommer att släppas 2024 och kan komma att påverka din Adobe Campaign-implementering. Som en del av Google kontinuerliga arbete med att förbättra sina tjänster kommer de äldre FCM-API:erna att upphöra på **20 juni 2024**. Läs mer om detta [Adobe Campaign v8-teknik](https://experienceleague.adobe.com/docs/campaign/technotes-ac/tn-new/push-technote.html?lang=sv){target="_blank"}.
 
 När du har skapat en tjänst och ett nytt mobilprogram måste du konfigurera ditt mobilprogram. The **HTTP (äldre)** API bör inte väljas eftersom det har tagits bort av Google.
 

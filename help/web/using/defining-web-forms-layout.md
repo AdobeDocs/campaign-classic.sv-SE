@@ -2,13 +2,13 @@
 product: campaign
 title: Definiera layout hos webbformulär
 description: Definiera layout hos webbformulär
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
+badge-v7: label="v7" type="Informative" tooltip="Gäller Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Gäller även Campaign v8"
 feature: Web Forms
 exl-id: 23ca17f8-de1a-4f9c-8357-3965dc3329b1
 source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
-source-wordcount: '523'
+source-wordcount: '536'
 ht-degree: 2%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 2%
 
 ## Skapar behållare {#creating-containers}
 
-Med behållare kan du kombinera fälten på en sida och konfigurera deras layout; för att ordna elementen på sidan.
+Med behållare kan du kombinera fälten på en sida och konfigurera layouten för dem, för att ordna elementen på sidan.
 
 För varje sida i formuläret skapas behållare via **[!UICONTROL Containers]** i verktygsfältet.
 
@@ -69,7 +69,7 @@ Du kan ändra formateringen i varje behållare. I vårt exempel kan du sprida in
 
 ![](assets/s_ncs_admin_survey_container_ex2_rend.png)
 
-Titeln och listan upptar en cell var (och därmed en hel rad i behållaren) och kryssrutan sträcker sig över två celler. Antalet celler som är kopplade till indatafältet definieras i **[!UICONTROL General]** -fliken eller **[!UICONTROL Advanced]** -tabb, beroende på fälttyp:
+Titeln och listan upptar en cell var (och därmed en hel rad i behållaren) och kryssrutan sträcker sig över två celler. Antalet celler som är kopplade till indatafältet definieras i **[!UICONTROL General]** eller **[!UICONTROL Advanced]** -tabb, beroende på fälttyp:
 
 ![](assets/s_ncs_admin_survey_container_ex2.png)
 
@@ -88,6 +88,6 @@ Den här positionen kan överladdas för varje sida, varje behållare och varje 
 Följande justeringar stöds:
 
 * Ärvd: justeringen ärvs från det överordnade elementet (standardvärde), dvs. den överordnade behållaren om sådan finns, eller i annat fall sidan.
-* Vänster/höger: etiketten placeras till höger eller till vänster om fältet,
-* Över/under: Etiketten är placerad ovanför eller under fältet.
-* Dold: etiketten inte visas.
+* Vänster/höger: etiketten är placerad till höger eller till vänster om fältet,
+* Ovanför/nedanför: etiketten är placerad ovanför eller under fältet,
+* Dold: etiketten visas inte.

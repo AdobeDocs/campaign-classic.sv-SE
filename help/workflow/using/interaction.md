@@ -6,8 +6,8 @@ feature: Workflows, Interaction, Offers
 badge-v7-only: label="v7" type="Informative" tooltip="Gäller endast Campaign Classic v7"
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '178'
-ht-degree: 6%
+source-wordcount: '167'
+ht-degree: 5%
 
 ---
 
@@ -20,9 +20,9 @@ Arbetsflödena nedan installeras tillsammans med **Erbjudandemotor (interaktion)
 
 Beroende på vilken Campaign-version du har finns mer information i följande avsnitt:
 
-![](assets/do-not-localize/v7.jpeg)[Dokumentation om Campaign v7](../../interaction/using/interaction-and-offer-management.md)
+![](assets/do-not-localize/v7.jpeg)[Dokumentation för Campaign v7](../../interaction/using/interaction-and-offer-management.md)
 
-![](assets/do-not-localize/v8.png)[Dokumentation om Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/interaction/interaction.html)
+![](assets/do-not-localize/v8.png)[Kampanjdokumentation v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/interaction/interaction.html)
 
 
 <table> 

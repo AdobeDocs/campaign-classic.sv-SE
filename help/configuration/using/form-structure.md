@@ -9,7 +9,7 @@ badge-v8: label="v8" type="Positive" tooltip="Gäller även Campaign v8"
 exl-id: e61f2b63-06d3-4b8c-867f-1c729176d2da
 source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
 workflow-type: tm+mt
-source-wordcount: '2397'
+source-wordcount: '2401'
 ht-degree: 0%
 
 ---
@@ -188,7 +188,7 @@ Huvudbehållaren definieras av **type=&quot;anteckningsbok&quot;** -attribut. Ta
 
 >[!NOTE]
 >
->A **style=&quot;down|up**(som standard)**&quot;** -funktionen tvingar den lodräta placeringen av tabbetiketter under eller över kontrollen. Den här funktionen är valfri.  
+>A **style=&quot;down|up**(som standard)**&quot;** -funktionen tvingar den lodräta placeringen av tabbetiketter under eller över kontrollen. Den här funktionen är valfri.
 >`<container style="down" type="notebook">  … </container>`
 
 #### Ikonlista {#icon-list}

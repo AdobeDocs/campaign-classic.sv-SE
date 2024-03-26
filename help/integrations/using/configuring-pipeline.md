@@ -10,12 +10,12 @@ content-type: reference
 exl-id: 2d214c36-8429-4b2b-b1f5-fe2730581bba
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '919'
-ht-degree: 2%
+source-wordcount: '920'
+ht-degree: 1%
 
 ---
 
-# Konfigurera pipeline {#configuring-pipeline}
+# Konfigurerar pipeline {#configuring-pipeline}
 
 
 
@@ -128,7 +128,7 @@ Du kan ändra vissa interna parametrar utifrån dina lastkrav, men se till att t
 
 Listan med valfria parametrar finns nedan:
 
-| Option | Beskrivning |
+| Alternativ | Beskrivning |
 |:-:|:-:|
 | appName(Legacy) | AppID för OAuth-programmet som är registrerat i det äldre Oath-programmet där den offentliga nyckeln överfördes. Se denna [sida](https://www.adobe.io/authentication/auth-methods.html#!AdobeDocs/adobeio-auth/master/AuthenticationOverview/ServiceAccountIntegration.md) för mer information om detta |
 | authGatewayEndpoint(Legacy) | URL för att hämta gatewaytoken. Standard: ```https://api.omniture.com``` |

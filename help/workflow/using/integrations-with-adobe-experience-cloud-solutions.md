@@ -13,7 +13,7 @@ ht-degree: 8%
 ---
 
 
-# Integrering med lösningar i Adobe Experience Cloud{#integrations-with-adobe-experience-cloud-solutions}
+# Integrering med Adobe Experience Cloud lösningar{#integrations-with-adobe-experience-cloud-solutions}
 
 
 

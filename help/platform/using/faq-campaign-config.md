@@ -10,8 +10,8 @@ topic-tags: starting-with-adobe-campaign
 exl-id: 50bed489-2a0f-4123-a326-3d68c8295662
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '765'
-ht-degree: 92%
+source-wordcount: '759'
+ht-degree: 76%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 92%
 
 Lär dig viktiga konfigurationer för att ställa in instansen i Campaign så att den passar dina behov.
 
-## Kan jag ändra språket på gränssnittet i Campaign? {#can-i-change-the-language-of-campaign-interface-}
+## Kan jag ändra språket i Campaign-gränssnittet? {#can-i-change-the-language-of-campaign-interface-}
 
 Språket i Campaign väljs när instansen skapas. Du kan inte ändra det i efterhand. Mer information om detta finns i [det här avsnittet](../../installation/using/creating-an-instance-and-logging-on.md).
 
@@ -29,19 +29,19 @@ Användargränssnittet i Adobe Campaign finns på fyra språk: engelska, franska
 
 För engelska kan du välja antingen amerikansk engelska eller brittisk engelska när du installerar Campaign. De skiljer sig åt när det gäller datum- och tidsformat. Mer information om dessa skillnader finns i [det här avsnittet](../../platform/using/adobe-campaign-workspace.md#date-and-time).
 
-## Kan jag använda Campaign Classic tillsammans med andra Adobe-lösningar? {#can-i-use-campaign-classic-with-other-adobe-solutions-}
+## Kan jag använda Campaign Classic med andra Adobe-lösningar? {#can-i-use-campaign-classic-with-other-adobe-solutions-}
 
 Du kan kombinera leveransfunktionerna och de avancerade funktionerna för kampanjhantering i Adobe Campaign med en uppsättning lösningar som hjälper till att personalisera användarnas upplevelse.
 
 Klicka här för att läsa mer om [hur man arbetar med andra Adobe-lösningar](../../integrations/using/about-campaign-integrations.md) och [hur man konfigurerar IMS i Campaign](../../integrations/using/about-adobe-id.md).
 
-## Hur ställer jag in spårningsfunktioner för min instans i Campaign? {#how-can-i-set-up-tracking-capabilities-on-my-campaign-instance-}
+## Hur ställer jag in spårningsfunktioner för min Campaign-instans? {#how-can-i-set-up-tracking-capabilities-on-my-campaign-instance-}
 
 Som expertanvändare kan du konfigurera spårningsfunktioner via instansen i Campaign.
 
 [Klicka här för att läsa mer](../../installation/using/deploying-an-instance.md#tracking-configuration).
 
-## Hur konfigurerar man e-postmeddelandets levererbarhet? {#how-to-configure-email-deliverability-}
+## Hur konfigurerar man e-postleveransen? {#how-to-configure-email-deliverability-}
 
 Förutom [Adobe Deliverability Best Practice Guide](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html?lang=sv), läs igenom de tekniska rekommendationerna för leverans för att förstå hur ni ska konfigurera instansen för att maximera kapaciteten för Campaign-leverans.
 
@@ -69,17 +69,17 @@ Som lokal/hybrid-kund kan du integrera Campaign Classic med LDAP-katalogen.
 
 [Klicka här för att läsa mer](../../installation/using/connecting-through-ldap.md).
 
-## Hur konfigurerar jag CRM-kopplingar i Campaign? {#how-can-i-set-up-crm-connectors-in-campaign-}
+## Hur konfigurerar jag CRM-anslutningar i Campaign? {#how-can-i-set-up-crm-connectors-in-campaign-}
 
 Adobe Campaign tillhandahåller olika CRM-kopplingar för att länka din plattform i Adobe Campaign till dina tredjepartssystem. Med dessa CRM-kopplingar kan du synkronisera kontakter, konton och inköp osv. De låter dig enkelt integrera din applikation med olika tredjeparts- och företagsapplikationer.
 
 Dessa kopplingar möjliggör snabb och enkel dataintegrering. Adobe Campaign erbjuder en dedikerad guide för att samla in och välja bland tabellerna i CRM. Detta garanterar dubbelriktad synkronisering för att säkerställa att data alltid är aktuella i alla system.
 
-Läs mer i [Konfigurera CRM-kopplingar](../../platform/using/crm-connectors.md) för att veta hur du synkroniserar CRM-verktyget med Adobe Campaign.
+Läs [Konfigurera CRM-anslutningar](../../platform/using/crm-connectors.md) om du vill veta hur du synkroniserar CRM-verktyget med Adobe Campaign.
 
-![](assets/do-not-localize/how-to-video.png) Titta på den här videon med användningsfall om [integrering mellan Adobe Campaign och Microsoft Dynamics 365](https://helpx.adobe.com/campaign/kt/acc/using/acc-integrate-dynamics365-with-acc-feature-video-set-up.html).
+![](assets/do-not-localize/how-to-video.png) Se fallvideon på [Integrering av Adobe Campaign och Microsoft Dynamics 365](https://helpx.adobe.com/campaign/kt/acc/using/acc-integrate-dynamics365-with-acc-feature-video-set-up.html).
 
-## Hur utför jag en rensning av mjukt cacheminne när problemen är dator- eller användarspecifika? {#perform-soft-cache-clear}
+## Hur utför jag rensning av mjuk cache när problemen är datorspecifika eller användarspecifika? {#perform-soft-cache-clear}
 
 Om du har problem med till exempel att de nya logotyperna återspeglas korrekt och att kunna exportera data som är datorspecifika/användarspecifika kan du behöva utföra en rensning av mjukt cacheminne med Windows (Windows 7, Windows XP och Windows 10).
 
@@ -89,7 +89,7 @@ Logga ut och gå till **[!UICONTROL File]** > **[!UICONTROL Clear the local cach
 
 Om detta fortfarande inte hjälper kan du försöka utföra en rensning av hårt cacheminne genom att utföra stegen nedan.
 
-## Hur utför jag en rensning av hårt cacheminne när problemen är dator- eller användarspecifika? {#perform-hard-cache-clear}
+## Hur rensar du hårddisken när problemen är datorspecifika eller användarspecifika? {#perform-hard-cache-clear}
 
 Om du har problem med till exempel att de nya logotyperna återspeglas korrekt och att kunna exportera data som är datorspecifika/användarspecifika kan du behöva utföra en rensning av hårt cacheminne med Windows (Windows 7, Windows XP och Windows 10).
 

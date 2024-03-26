@@ -2,12 +2,12 @@
 product: campaign
 title: JavaScript-skript och mallar
 description: JavaScript-skript och mallar
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+badge-v7-only: label="v7" type="Informative" tooltip="Gäller endast Campaign Classic v7"
 feature: Workflows
 exl-id: 4a3647d1-cf8c-4867-871e-472287be7c6a
 source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
-source-wordcount: '1242'
+source-wordcount: '1254'
 ht-degree: 2%
 
 ---
@@ -25,7 +25,7 @@ Skript är vanliga i ett arbetsflödesdiagram:
 * Aktiviteten Test utvärderar JavaScript-uttryck för att aktivera lämplig övergång.
 * De flesta textfält är JavaScript-mallar: JavaScript-uttryck kan inkluderas mellan &lt;%= och %>. Dessa fält har en knapp som öppnar en nedrullningsbar lista där du kan ange uttryck.
 
-   ![](assets/script-button.png)
+  ![](assets/script-button.png)
 
 ## Objekt som exponeras {#objects-exposed}
 
@@ -34,8 +34,8 @@ JavaScript-skript som körs i ett arbetsflödes-sammanhang får tillgång till e
 * **instance**: Representerar arbetsflödet som körs. Det här objektets schema är **xtk:arbetsflöde**.
 * **uppgift**: Representerar de uppgifter som körs. Det här objektets schema är **xtk:workflowTask**.
 * **event**: Representerar händelserna som aktiverade aktiviteten som körs. Det här objektets schema är **xtk:workflowEvent**. Det här objektet har inte initierats för **AND-join** typaktiviteter som har aktiverats från flera övergångar.
-* **händelser**: Representerar listan med händelser som har aktiverat den aktuella aktiviteten. Det här objektets schema är **xtk:workflowEvent**. Tabellen innehåller vanligtvis ett element men kan innehålla flera för **AND-join** typaktiviteter som har aktiverats baserat på flera övergångar.
-* **aktivitet**: Representerar modellen för aktiviteten som körs. Det här objektets schema beror på aktivitetstypen. Det här objektet kan ändras av initieringsskriptet, i andra skript, med obestämda effekter.
+* **händelser**: Representerar listan med händelser som aktiverade den aktuella aktiviteten. Det här objektets schema är **xtk:workflowEvent**. Tabellen innehåller vanligtvis ett element men kan innehålla flera för **AND-join** typaktiviteter som har aktiverats baserat på flera övergångar.
+* **aktivitet**: Representerar modellen för den uppgift som körs. Det här objektets schema beror på aktivitetstypen. Det här objektet kan ändras av initieringsskriptet, i andra skript, med obestämda effekter.
 
 De tillgängliga egenskaperna för dessa objekt kan visas i en nedrullningsbar lista genom att klicka på knappen till höger om skriptverktygsfältet.
 
@@ -60,9 +60,9 @@ logInfo("Start date: " + task.creationDate)
 
 The **[!UICONTROL logInfo(message)]** infogar ett meddelande i loggen.
 
-Klicka **[!UICONTROL OK]** när du vill stänga guiden startar du arbetsflödet med åtgärdsknapparna längst upp till höger i listan med arbetsflöden. När körningen är klar, se loggen. Du bör se två meddelanden som motsvarar skriptet: den ena visar arbetsflödets etikett och den andra visar det datum då skriptet aktiverades.
+Klicka **[!UICONTROL OK]** när du vill stänga guiden startar du arbetsflödet med åtgärdsknapparna längst upp till höger i listan med arbetsflöden. När körningen är klar, se loggen. Du bör se två meddelanden som motsvarar skriptet: den ena visar arbetsflödets etikett, den andra visar det datum då skriptet aktiverades.
 
-## Variabler {#variables}
+## Variabel {#variables}
 
 Variablerna är de kostnadsfria egenskaperna för **[!UICONTROL instance]**, **[!UICONTROL task]** och **[!UICONTROL event]** objekt. De JavaScript-typer som tillåts för dessa variabler är **[!UICONTROL string]**, **[!UICONTROL number]** och **[!UICONTROL Date]**.
 
@@ -82,7 +82,7 @@ Händelsevariabler (**[!UICONTROL vars.xxx]**) möjliggör datautbyte mellan de 
 >
 >Om [AND-join](and-join.md) typaktiviteter sammanfogas variablerna, men om samma variabel definieras två gånger uppstår en konflikt och värdet är obestämt.
 
-Händelsen är de vanligaste variablerna och bör användas i stället för förekomstvariabler.
+Händelsen är de vanligaste variablerna, och de bör användas i stället för förekomstvariabler.
 
 Vissa händelsevariabler ändras eller läses av de olika aktiviteterna. Dessa är alla strängtypsvariabler. En export ställer till exempel in **[!UICONTROL vars.filename]** variabeln med det fullständiga namnet på den fil som just har exporterats. Alla dessa lästa eller ändrade variabler beskrivs i [Om aktiviteter](about-activities.md), i avsnitten **Indataparametrar** och **Utdataparametrar** av verksamheterna.
 
@@ -100,7 +100,7 @@ I det här exemplet används en instansvariabel för att dynamiskt beräkna den 
 
 1. Lägg till och konfigurera en JavaScript-kodsaktivitet för att definiera en instansvariabel.
 
-   Exempel: `instance.vars.segmentpercent = 10;`
+   Till exempel: `instance.vars.segmentpercent = 10;`
 
    ![](assets/js_ex1.png)
 

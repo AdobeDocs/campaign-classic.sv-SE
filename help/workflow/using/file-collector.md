@@ -2,13 +2,13 @@
 product: campaign
 title: Filhämtare
 description: Läs mer om arbetsflödesaktiviteten för filinsamlaren
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+badge-v7-only: label="v7" type="Informative" tooltip="Gäller endast Campaign Classic v7"
 feature: Workflows, Data Management
 exl-id: bbec389e-c2ba-4b23-847f-b01dca6b8d5a
 source-git-commit: 1f87a5fba1298955fa07b9a045b21718c76a7fce
 workflow-type: tm+mt
-source-wordcount: '524'
-ht-degree: 0%
+source-wordcount: '531'
+ht-degree: 2%
 
 ---
 
@@ -16,11 +16,11 @@ ht-degree: 0%
 
 
 
-The **Filinsamlare** övervakar hur en eller flera filer kommer in i en katalog och aktiverar övergången för varje mottagen fil. För varje händelse, en **[!UICONTROL filename]** variabeln innehåller det fullständiga namnet på den mottagna filen. De insamlade filerna flyttas till en annan katalog för arkivering och för att säkerställa att de bara räknas en gång.
+The **Filinsamlare** övervakar hur en eller flera filer kommer in i en katalog och aktiverar övergången för varje mottagen fil. För varje händelse, en **[!UICONTROL filename]** variabeln innehåller det fullständiga namnet på den mottagna filen. De insamlade filerna flyttas till en annan katalog för arkiveringsändamål och för att säkerställa att de bara räknas en gång.
 
-Som standard är filinsamlaren en beständig uppgift som testar om det finns filer vid de tidpunkter som anges i schemat.
+Som standard är filinsamlaren en beständig uppgift som testar förekomsten av filer vid de tidpunkter som anges i schemat.
 
-Filerna måste finnas på den server där den servermodul som ansvarar för det här arbetsflödet körs. Om flera wfserver-moduler distribueras på en enda instans måste tillhörigheten för de aktiviteter som använder dessa filer eller arbetsflödets totala tillhörighet anges.
+Filerna måste finnas på den server där den servermodul som ansvarar för det här arbetsflödet körs. Om flera wfserver-moduler distribueras på en enda instans måste antingen tillhörigheten för de aktiviteter som använder dessa filer eller arbetsflödets totala tillhörighet anges.
 
 ## Egenskaper {#properties}
 
@@ -36,7 +36,7 @@ Den första fliken i **[!UICONTROL File collector]** kan du välja källkatalog 
 
    * **[!UICONTROL Filter]**
 
-     Endast filer som matchar det här filtret tas med i beräkningen. De andra filerna i katalogen ignoreras. Om filtret är tomt beaktas alla filer i katalogen. Exempel på filter: **&#42;.zip**, **import-&#42;.txt**.
+     Endast filer som matchar det här filtret beaktas. De andra filerna i katalogen ignoreras. Om filtret är tomt beaktas alla filer i katalogen. Exempel på filter: **&#42;.zip**, **import-&#42;.txt**.
 
    * **[!UICONTROL Stop as soon as a file has been processed]**
 
@@ -54,7 +54,7 @@ Den första fliken i **[!UICONTROL File collector]** kan du välja källkatalog 
 
    * **[!UICONTROL Process missing file]**
 
-     Det här alternativet startar en speciell övergång varje gång ingen fil som matchar filtret hittas i den angivna katalogen.
+     Med det här alternativet initieras en speciell övergång varje gång ingen fil som matchar filtret hittas i den angivna katalogen.
 
      Om aktiviteten inte är schemalagd kommer den här övergången endast att aktiveras en gång.
 
@@ -76,4 +76,4 @@ Filbearbetningsordningen kan inte bestämmas. Om du vill bearbeta en uppsättnin
 
 ## Utdataparametrar {#output-parameters}
 
-* filnamn: Fullständigt filnamn. Det här är filnamnet när det har flyttats till historikkatalogen. Sökvägen är därför annorlunda, men namnet är också annorlunda om det redan finns en fil med samma namn i katalogen. Utbyggnaden behålls.
+* filnamn: Fullständigt filnamn. Det här är filnamnet när det har flyttats till historikkatalogen. Sökvägen är därför annorlunda, men namnet är också annorlunda om det redan finns en annan fil med samma namn i katalogen. Utbyggnaden behålls.

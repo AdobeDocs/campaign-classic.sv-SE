@@ -12,8 +12,8 @@ hidefromtoc: true
 exl-id: 228ee9e4-46a0-4d82-b8ba-b019bc0e7cac
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '713'
-ht-degree: 3%
+source-wordcount: '722'
+ht-degree: 1%
 
 ---
 
@@ -165,7 +165,7 @@ Följande uttryck söks efter (skiftlägeskänsliga):
    <td> CRM v1(mscrmArbetsflöde/sfdcArbetsflöde)<br /> </td> 
    <td> PU-0008<br /> </td> 
    <td> Fel<br /> </td> 
-   <td> Åtgärdsaktiviteter på begäran i Microsoft CRM, Salesforce och Oracle CRM är inte längre tillgängliga. Om du vill konfigurera datasynkroniseringen mellan Adobe Campaign och ett CRM-system måste du använda <a href="../../workflow/using/crm-connector.md" target="_blank">CRM-koppling</a> målinriktning.<br /> </td>
+   <td> Åtgärder i Microsoft CRM, Salesforce och Oracle CRM On Demand är inte längre tillgängliga. Om du vill konfigurera datasynkroniseringen mellan Adobe Campaign och ett CRM-system måste du använda <a href="../../workflow/using/crm-connector.md" target="_blank">CRM-koppling</a> målinriktning.<br /> </td>
   </tr> 
  </tbody> 
 </table>

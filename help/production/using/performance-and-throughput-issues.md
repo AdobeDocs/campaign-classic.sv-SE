@@ -11,8 +11,8 @@ topic-tags: troubleshooting
 exl-id: fe69efda-a052-4f67-9c13-665f011d0a2b
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '736'
-ht-degree: 5%
+source-wordcount: '702'
+ht-degree: 3%
 
 ---
 
@@ -26,7 +26,7 @@ Se [Versionsinformation](../../rn/using/latest-release.md) om du vill ha mer inf
 
 ## Maskinvara och infrastruktur {#hardware-and-infrastructure}
 
-Allmänna riktlinjer för maskinvarukrav för Campaign Classic på plats finns i detta avsnitt [page](https://helpx.adobe.com/se/campaign/kb/hardware-sizing-guide.html).
+Allmänna riktlinjer för maskinvarukrav för lokal Campaign Classic finns i detta [page](https://helpx.adobe.com/se/campaign/kb/hardware-sizing-guide.html).
 
 Konsultteamet kan ge värdkunder ett verktyg som gör att du enkelt kan se hur mycket utrymme som används av olika typer av tabeller i databasen samt hur mycket utrymme som används på SFTP-webbplatsen. Dessutom innehåller det verktyg som du kan använda för att rensa bort onödiga data. Kontakt [Adobe kundtjänst](https://helpx.adobe.com/se/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) om du behöver det här verktyget. Här är några viktiga saker du bör kontrollera med det här verktyget:
 

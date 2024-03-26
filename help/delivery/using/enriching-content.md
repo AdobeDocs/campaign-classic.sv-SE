@@ -1,7 +1,7 @@
 ---
 product: campaign
-title: Berika innehåll
-description: Berika innehåll
+title: Förbättra innehåll
+description: Förbättra innehåll
 badge-v7: label="v7" type="Informative" tooltip="Gäller Campaign Classic v7"
 badge-v8: label="v8" type="Positive" tooltip="Gäller även Campaign v8"
 feature: Data Management
@@ -10,11 +10,11 @@ exl-id: a4472a7c-a16b-4d10-a8ca-f74ca5f62de4
 source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
 workflow-type: tm+mt
 source-wordcount: '673'
-ht-degree: 1%
+ht-degree: 0%
 
 ---
 
-# Berika innehåll{#enriching-content}
+# Förbättra innehåll{#enriching-content}
 
 Med aggregatorer kan du utöka innehållet med externa data. Dessa data kommer från generiska frågor eller länkade tabeller.
 

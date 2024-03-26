@@ -2,12 +2,12 @@
 product: campaign
 title: Övervaka tekniska arbetsflöden
 description: Övervaka tekniska arbetsflöden
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+badge-v7-only: label="v7" type="Informative" tooltip="Gäller endast Campaign Classic v7"
 feature: Workflows
 exl-id: 5e77d196-5c71-438e-8dae-10c6a6e4f29c
 source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
-source-wordcount: '504'
+source-wordcount: '511'
 ht-degree: 6%
 
 ---
@@ -42,7 +42,7 @@ Mer information om vad varje tekniskt arbetsflöde ska göra finns i [section](a
 
 För **[!UICONTROL Database Cleanup workflow (‘cleanup’)]**:
 
-1. Kontrollera att **[!UICONTROL Database Cleanup]** arbetsflödet körs och avslutas framgångsrikt varje dag. Mer information om detta hittar du på den här [sidan](../../production/using/database-cleanup-workflow.md)..
+1. Kontrollera att **[!UICONTROL Database Cleanup]** arbetsflödet körs och avslutas framgångsrikt varje dag. Mer information finns i [page](../../production/using/database-cleanup-workflow.md)..
 1. Titta i journalen för att kontrollera att förfluten tid är relativt konstant över tid och inte stör andra arbetsflöden.
 
 För **[!UICONTROL Tracking workflow (‘tracking’)]**:
@@ -69,7 +69,7 @@ En varning ska genereras och skickas till rätt grupp om ett problem uppstår.
 
 Kontrollera att alla operatorer har en giltig e-postadress.
 
-Alla arbetsflöden som ska köras för att plattformen ska fungera, till exempel daglig dataimport, ska deklareras som &quot;Produktion&quot; (kryssruta) och visas i fet stil.
+Alla arbetsflöden som ska köras för att plattformen ska fungera, t.ex. daglig dataimport, ska deklareras som &quot;Produktion&quot; (kryssruta) och visas i fet stil.
 
 ## Underhållslista för arbetsflöde {#workflow-maintenance-list}
 
@@ -77,7 +77,7 @@ Alla anpassade tekniska arbetsflöden bör dokumenteras i ett kalkylblad som inn
 
 * Arbetsflödets namn och plats.
 * Syfte.
-* Schemaläggning och beroenden.
+* Planering och beroenden.
 * Ansvarig för övervakning.
 * Instruktioner om vad som ska göras om fel uppstår.
 

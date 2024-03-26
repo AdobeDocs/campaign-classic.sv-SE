@@ -10,7 +10,7 @@ topic-tags: starting-with-adobe-campaign
 exl-id: f91d69a4-b794-40f0-b450-de862d7333e2
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '449'
+source-wordcount: '454'
 ht-degree: 3%
 
 ---
@@ -25,7 +25,7 @@ The **[!UICONTROL Explorer]** arbetsytan är uppdelad i tre zoner:
 
 ![](assets/s_ncs_user_navigation.png)
 
-**1 - träd**: du kan anpassa innehållet i trädet (lägga till, flytta eller ta bort noder). Den här proceduren är endast avsedd för expertanvändare. Mer information om detta finns i [det här avsnittet](#about-navigation-hierarchy).).
+**1 - träd**: du kan anpassa innehållet i trädet (lägga till, flytta eller ta bort noder). Den här proceduren är endast avsedd för expertanvändare. Mer information finns i  [det här avsnittet](#about-navigation-hierarchy).).
 
 **2 - Lista**: du kan filtrera den här listan, köra sökningar, lägga till information eller sortera data. [Läs mer](adobe-campaign-ui-lists.md).
 

@@ -9,8 +9,8 @@ role: User
 exl-id: eb5ad5a4-f640-4b26-b04f-b5567761d996
 source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
 workflow-type: tm+mt
-source-wordcount: '115'
-ht-degree: 22%
+source-wordcount: '111'
+ht-degree: 5%
 
 ---
 
@@ -27,7 +27,7 @@ Lär dig de bästa metoderna för leveransdesign och att skicka med Adobe Campai
     </a>
     <div>
       <a href="optimize-delivery.md">
-    <strong>Optimera leverans</strong>
+    <strong>Optimera leveransen</strong>
     </a>
     </div>
     <p>
@@ -77,7 +77,7 @@ Lär dig de bästa metoderna för leveransdesign och att skicka med Adobe Campai
   </td>
    <td>
     <a href="check-before-sending.md">
-      <img alt="Markera" src="assets/do-not-localize/start.svg" width="60px"/>
+      <img alt="Kontrollera" src="assets/do-not-localize/start.svg" width="60px"/>
     </a>
     <div>
       <a href="check-before-sending.md">

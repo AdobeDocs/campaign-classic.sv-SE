@@ -8,8 +8,8 @@ feature: Typology Rules, Campaigns
 exl-id: 6d5b8584-4aa1-4d9a-89d9-d41da75dd323
 source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
 workflow-type: tm+mt
-source-wordcount: '475'
-ht-degree: 19%
+source-wordcount: '470'
+ht-degree: 14%
 
 ---
 
@@ -59,11 +59,11 @@ Steg för att skapa och tillämpa en typologi på dina leveranser listas nedan:
 1. Konfigurera leveransen för att använda den typologi du skapade. Mer information om detta finns i [det här avsnittet](applying-rules.md#applying-a-typology-to-a-delivery).
 1. Testa och kontrollera beteendet med kampanjsimuleringar. Mer information om kampanjsimuleringar finns i [det här avsnittet](campaign-simulations.md).
 
-Vid färdigställande av leveransen utesluts mottagarna när kriteriet är uppfyllt. Du kan kontrollera loggar för att övervaka uteslutningar. Exempel på användningsområden för regler för trycktypologi finns i [den här sidan](pressure-rules.md#use-cases-on-pressure-rules).
+Vid färdigställande av leveransen utesluts mottagarna när kriteriet är uppfyllt. Du kan kontrollera loggar för att övervaka undantag. Exempel på användningsområden för regler för trycktypologi finns i [den här sidan](pressure-rules.md#use-cases-on-pressure-rules).
 
 ## Självstudievideor {#typologies-video}
 
-### Hur man ställer in trötthetshantering med typologiregler
+### Ställa in trötthetshantering med typologiregler
 
 I den här videon förklaras hur du implementerar trötthetshantering i Adobe Campaign genom att utnyttja typologiregler.
 

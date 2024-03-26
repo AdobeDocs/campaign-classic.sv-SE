@@ -1,20 +1,20 @@
 ---
 product: campaign
-title: Arbetsyta i Adobe Campaign
+title: Adobe Campaign arbetsyta
 description: Lär dig hur du använder och anpassar arbetsytan i Campaign
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+badge-v7-only: label="v7" type="Informative" tooltip="Gäller endast Campaign Classic v7"
 feature: Overview
 role: Data Engineer
 level: Beginner
 exl-id: 5f689679-7148-4abd-a9bf-185854c64b13
 source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
-source-wordcount: '909'
-ht-degree: 3%
+source-wordcount: '923'
+ht-degree: 2%
 
 ---
 
-# Arbetsyta i Adobe Campaign{#adobe-campaign-workspace}
+# Adobe Campaign arbetsyta{#adobe-campaign-workspace}
 
 
 
@@ -26,7 +26,7 @@ Från den centrala delen av startsidan kan du använda länkar för att få åtk
 
 ![](assets/d_ncs_user_interface_home.png)
 
-![](assets/do-not-localize/how-to-video.png)[ Upptäck arbetsytan i Campaign via en video](#video)
+![](assets/do-not-localize/how-to-video.png) Upptäck arbetsytan Campaign i [video](#video)
 
 >[!NOTE]
 >
@@ -82,19 +82,19 @@ Listan över kärnfunktioner som du kan komma åt beror på vilka paket och till
 
 Varje funktion innehåller en uppsättning funktioner som bygger på uppgiftsrelaterade behov och användningssammanhanget. Till exempel **[!UICONTROL Profiles and targets]** -länken ger dig tillgång till mottagarlistor, prenumerationstjänster, befintliga arbetsflöden för målinriktning och genvägar för att skapa dessa element.
 
-Listorna är tillgängliga via **[!UICONTROL Lists]** i den vänstra delen av **[!UICONTROL Profiles and Targets]** gränssnitt.
+Listorna är tillgängliga via **[!UICONTROL Lists]** till vänster i **[!UICONTROL Profiles and Targets]** gränssnitt.
 
 ![](assets/recipient_list_overview.png)
 
-### Använd tabbar {#using-tabs}
+### Använda tabbar {#using-tabs}
 
 * När du klickar på en kärnfunktion eller en länk ersätter den relevanta sidan den aktuella sidan. Om du vill gå tillbaka till föregående sida klickar du på **[!UICONTROL Back]** i verktygsfältet. Om du vill gå tillbaka till startsidan klickar du på **[!UICONTROL Home]** -knappen.
 
-   ![](assets/d_ncs_user_interface_back_home_buttons.png)
+  ![](assets/d_ncs_user_interface_back_home_buttons.png)
 
 * När det gäller en meny eller ett kortkommando för en visningsskärm (t.ex. ett webbprogram, program, leverans, rapport) visas den matchande sidan på en annan flik. På så sätt kan du bläddra mellan sidorna med hjälp av flikarna.
 
-   ![](assets/d_ncs_user_interface_tabs.png)
+  ![](assets/d_ncs_user_interface_tabs.png)
 
 ### Skapa ett element {#creating-an-element}
 
@@ -113,7 +113,7 @@ På leveranssidan kan du till exempel använda **[!UICONTROL Create]** för att 
 
 Språket i din Adobe Campaign Classic-instans påverkar datum- och tidsformat.
 
-Språk väljs vid installation av Campaign och kan inte ändras efteråt. Du kan välja: Engelska (USA), engelska (EN), franska, tyska eller japanska. Mer information finns på [den här sidan](../../installation/using/creating-an-instance-and-logging-on.md).
+Språk väljs vid installation av Campaign och kan inte ändras efteråt. Du kan välja: engelska (USA), engelska (EN), franska, tyska eller japanska. Mer information finns på [den här sidan](../../installation/using/creating-an-instance-and-logging-on.md).
 
 De största skillnaderna mellan amerikansk engelska och brittisk engelska är:
 
@@ -150,7 +150,7 @@ Med hjälp av inmatningsfälten i en nedrullningsbar lista kan du ange ett uppr�
 
 ![](assets/s_ncs_user_wizard_email_bat_substitute_email.png)
 
-Om du klickar **[!UICONTROL Yes]** kommer detta värde att vara tillgängligt i kombinationsrutan för det relevanta fältet (i detta fall: **[!UICONTROL London]**).
+Klicka **[!UICONTROL Yes]** kommer detta värde att vara tillgängligt i kombinationsrutan för det relevanta fältet (i detta fall: **[!UICONTROL London]**).
 
 >[!NOTE]
 >
@@ -167,10 +167,10 @@ I de fält som uttrycker en varaktighet (t.ex. giltighetsperiod för resurserna 
 
 ![](assets/enter_unit_sample.png)
 
-## Videokurs {#video}
+## Självstudievideo {#video}
 
-I den här videon visas arbetsytan i Campaign Classic.
+I den här videon visas Campaign Classicens arbetsyta.
 
 >[!VIDEO](https://video.tv.adobe.com/v/35130?quality=12)
 
-Det finns fler instruktionsvideor för Campaign Classic [här](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=sv).
+Det finns fler videor med Campaign Classic om hur man gör [här](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=sv).

@@ -9,8 +9,8 @@ hidefromtoc: true
 exl-id: 7db02123-2e2a-40d9-8385-728ff69985e4
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '1104'
-ht-degree: 10%
+source-wordcount: '1110'
+ht-degree: 8%
 
 ---
 
@@ -54,7 +54,7 @@ Du måste uppgradera till en av de nyare byggen som listas ovan.
 
 * Som hybridkund informerar Adobe dig om de schemalagda uppgraderingsdatumen för dina mellanleverantörer. Adobe rekommenderar starkt att du uppgraderar din marknadsinstans också.
 
-  Den nya versionen är bakåtkompatibel med version 17.9 av Campaign Classic, men Adobe rekommenderar starkt en uppgradering för alla instanser för att åtgärda säkerhetsluckor
+  Den nya versionen är bakåtkompatibel med Campaign Classic 17.9, men Adobe rekommenderar starkt en uppgradering för alla instanser för att åtgärda säkerhetsluckor
 
 * Som lokal kund ombeds ni att uppgradera alla instanser av marknadsföring och mellanprodukter till den senaste versionen.
 
@@ -170,5 +170,5 @@ Som lokal/hybridkund måste du uppdatera din konfiguration för att säkerställ
 
 * [Uppgradera din miljö](../../production/using/build-upgrade.md)
 * [Vanliga frågor och svar om builduppgradering](../../platform/using/faq-build-upgrade.md)
-* [Hämta Campaign Classic build](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html)
+* [Ladda ned Campaign Classic](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html)
 * [Gör den nya klientkonsolen tillgänglig för användare](../../installation/using/client-console-availability-for-windows.md)

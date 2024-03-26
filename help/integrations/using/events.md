@@ -10,7 +10,7 @@ content-type: reference
 exl-id: 13717b3b-d34a-40bc-9c9e-dcf578fc516e
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '1210'
+source-wordcount: '1209'
 ht-degree: 0%
 
 ---
@@ -131,7 +131,7 @@ För felsökning och övervakning skrivs alla utlösande data in i utlösartabel
 
 ### Tolka data {#data-parsing}
 
-Detta exempel på JavaScript-kod tolkar eVar01 i anrikningarna.
+Detta exempel på Javascript-kod tolkar eVar01 i anrikningarna.
 
 ```
 function processPipelineMessage(xmlTrigger)

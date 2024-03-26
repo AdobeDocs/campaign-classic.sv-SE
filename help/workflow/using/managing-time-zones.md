@@ -2,13 +2,13 @@
 product: campaign
 title: Hantera tidszoner
 description: Hantera tidszoner
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+badge-v7-only: label="v7" type="Informative" tooltip="Gäller endast Campaign Classic v7"
 feature: Workflows
 exl-id: c2f6033c-30cd-4eb4-adf1-ab2de7510220
 source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
-source-wordcount: '282'
-ht-degree: 3%
+source-wordcount: '289'
+ht-degree: 4%
 
 ---
 
@@ -34,19 +34,19 @@ Möjliga värden är:
 
 * Tidszon för server
 
-   Använder tidszonen för Adobe Campaign-programservern.
+  Använder tidszonen för Adobe Campaign-programservern.
 
 * Användarens tidszon
 
-   Använder tidszonen för den Adobe Campaign-operator som kör arbetsflödet.
+  Använder tidszonen för den Adobe Campaign-operator som kör arbetsflödet.
 
 * Tidszon för databas
 
-   Använder tidszonen för databasservern som används.
+  Använder tidszonen för databasservern som används.
 
 * Särskilda tidszoner
 
-   Använder den markerade tidszonen.
+  Använder den markerade tidszonen.
 
 Om **[!UICONTROL By default]** värdet är markerat används arbetsflödets tidszon eller, i annat fall, programserverns tidszon.
 

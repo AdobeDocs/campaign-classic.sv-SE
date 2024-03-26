@@ -7,8 +7,8 @@ hidefromtoc: true
 exl-id: 3a84236f-89e5-4b8b-9a98-afdc006fd6e0
 source-git-commit: fd5e4bbc87a48f029a09b14ab1d927b9afe4ac52
 workflow-type: tm+mt
-source-wordcount: '755'
-ht-degree: 63%
+source-wordcount: '657'
+ht-degree: 60%
 
 ---
 
@@ -55,7 +55,7 @@ Hur uppgraderar jag till en ny version? hur man övervakar arbetsflödeskörning
         <li><a href="delivery/using/delivery-performances.md">Leveransprestanda</a></li>
         <li><a href="workflow/using/workflow-best-practices.md">Optimera arbetsflödets prestanda</a></li>
         <li><a href="workflow/using/monitoring-workflow-execution.md">Felsökning av arbetsflödeskörning</a></li>
-        <li><a href="platform/using/sftp-server-usage.md">Använda en SFTP-server</a></li>
+        <li><a href="platform/using/sftp-server-usage.md">Användning av SFTP-server</a></li>
         <li><a href="delivery/using/understanding-delivery-failures.md">Förstå leveransfel</a></li>
         </ul>
     </td>
@@ -93,8 +93,8 @@ Hur uppgraderar jag till en ny version? hur man övervakar arbetsflödeskörning
 
 ### Vad är Kontrollpanelen?
 
-Med Campaign Control Panel kan ni effektivisera arbetet som produktadministratör för Campaign Classic genom att hantera inställningar och spåra användningen för var och en av instanserna.
-[Klicka här](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/key-features.html) för mer information.
+Med Campaign Control Panel kan ni effektivisera arbetet som produktadministratör, eftersom ni kan hantera inställningar och spåra Campaign Classic för var och en av instanserna.
+[Klicka här](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/key-features.html?lang=sv) för mer information.
 
 >[!NOTE]
 >
@@ -123,7 +123,7 @@ Du kan övervaka dina underdomäner och deras certifikat. Läs mer på dessa sid
 
 ### Instansinställningar
 
-Lär dig hur du hanterar inställningarna för Campaign Classic-instanser på Kontrollpanelen. Läs mer på dessa sidor:
+Lär dig hur du hanterar Campaign Classicens instansinställningar på Kontrollpanelen. Läs mer på dessa sidor:
 * [Lägg till IP-adresser till tillåtelselista](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/ip-allow-listing-instance-access.html) för att komma åt dina Campaign-instanser
 * [Hantera URL-behörigheter](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/url-permissions.html?lang=sv)
 * [Åtkomstinstansinformation](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/instance-details.html)

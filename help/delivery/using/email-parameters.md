@@ -9,8 +9,8 @@ role: User, Developer, Data Engineer
 exl-id: 1bb36e71-9f1a-4553-b266-eca3f48688e2
 source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
 workflow-type: tm+mt
-source-wordcount: '912'
-ht-degree: 8%
+source-wordcount: '915'
+ht-degree: 7%
 
 ---
 
@@ -134,6 +134,6 @@ Värden kodas automatiskt om det behövs.
 
 >[!IMPORTANT]
 >
->Tillägg av ett skript för att infoga ytterligare SMTP-rubriker är reserverat för avancerade användare.
+>Att lägga till ett skript för att infoga ytterligare SMTP-rubriker är reserverat för avancerade användare.
 >
 >Syntaxen för det här skriptet måste uppfylla kraven för den här innehållstypen: Inget oanvänt utrymme, ingen tom rad, o.s.v.

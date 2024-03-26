@@ -7,8 +7,8 @@ badge-v7-only: label="v7" type="Informative" tooltip="Gäller endast Campaign Cl
 exl-id: 8508d879-fb38-4b1f-9f55-0341bb8d0c67
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '468'
-ht-degree: 3%
+source-wordcount: '471'
+ht-degree: 4%
 
 ---
 
@@ -37,7 +37,7 @@ Granskningsspårning består av tre komponenter:
    * Pausa
    * Stoppa
    * Starta om
-   * Rensa som är lika med åtgärden Rensa historik
+   * Rensning som motsvarar åtgärden Rensa historik
    * Simulera vilket motsvarar åtgärden Starta i simuleringsläge
    * Aktivering som är lika med åtgärden Kör väntande uppgifter nu
    * Ovillkorligt stopp
@@ -105,4 +105,4 @@ För att göra detta:
 
    ![](assets/audit_trail_6.png)
 
-1. Klicka på **[!UICONTROL Save]** .
+1. Klicka **[!UICONTROL Save]** .

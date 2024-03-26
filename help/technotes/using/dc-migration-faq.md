@@ -9,7 +9,7 @@ level: Beginner
 exl-id: a9cd08b0-55c2-4405-9fb8-f0c623cd4ccb
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '2222'
+source-wordcount: '2211'
 ht-degree: 0%
 
 ---
@@ -18,7 +18,7 @@ ht-degree: 0%
 
 
 
-Adobe tar bort det gamla datacentret: Campaign Classic instanser måste överföras till Public Cloud Amazon Web Services (AWS). [Läs mer om det här initiativet](dc-migration.md).
+Adobe tar bort det gamla datacentret: Campaign Classic måste överföras till Public Cloud Amazon Web Services (AWS). [Läs mer om det här initiativet](dc-migration.md).
 
 Nedan finns en uppsättning vanliga frågor om det här projektet, effekten på Campaign-miljöer och andra användbara resurser.
 
@@ -46,9 +46,9 @@ Global påverkan på databaser och infrastruktur listas nedan.
 
 * **Kommer versionsnumret eller Campaign-versionen att ändras?**
 
-  Som ett första steg kommer vi att behålla samma Campaign Classic-byggnad med migrering.
+  Som ett första steg kommer vi att behålla samma Campaign Classic som migreringen.
 
-  I ytterligare ett steg ska vi uppgradera till den senaste Campaign Classic GA-versionen. Mer information finns på [den här sidan](../../rn/using/rn-overview.md).
+  I ytterligare ett steg ska vi uppgradera till den senaste Campaign Classicen av GA-bygget. Mer information finns på [den här sidan](../../rn/using/rn-overview.md).
 
 * **Vad finns det för plan för att lösa eventuella problem efter migrationen?**
 

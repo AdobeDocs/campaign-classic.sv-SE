@@ -8,8 +8,8 @@ role: Data Engineer, Developer
 exl-id: 9e10b24e-c4de-4e76-bbed-0d05f62120b7
 source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
 workflow-type: tm+mt
-source-wordcount: '1011'
-ht-degree: 7%
+source-wordcount: '1013'
+ht-degree: 6%
 
 ---
 

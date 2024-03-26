@@ -1,6 +1,6 @@
 ---
 product: campaign
-title: Identifiera URL:er för spårning
+title: Identifierar spårnings-URL:er
 description: Läs mer om rekommenderat mönster för att spåra URL:er
 feature: Monitoring
 role: User, Developer, Data Engineer
@@ -34,7 +34,7 @@ Efter bearbetning `<%@` instruktionerna har URL:en som ska spåras följande syn
 
 ## Oskyddat mönster
 
-När du lägger till anpassade länkar till ditt innehåll bör du alltid undvika att ha en personalisering i värdnamnsdelen av webbadressen för att undvika eventuella säkerhetsbrister. Läs mer i [den här sidan](../../installation/using/privacy.md#url-personalization).
+När du lägger till anpassade länkar till ditt innehåll bör du alltid undvika att ha en personalisering i värdnamnsdelen av webbadressen för att undvika eventuella säkerhetsbrister. Läs mer på [den här sidan](../../installation/using/privacy.md#url-personalization).
 
 Till exempel `<a href="http://<%=myURL%>">` syntaxen är **inte säker** och måste undvikas.
 

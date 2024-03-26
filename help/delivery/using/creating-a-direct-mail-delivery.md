@@ -10,7 +10,7 @@ exl-id: 964cc600-19b8-449e-bac6-dc9da2b5ea12
 source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
 workflow-type: tm+mt
 source-wordcount: '99'
-ht-degree: 20%
+ht-degree: 11%
 
 ---
 
@@ -27,5 +27,5 @@ Så här skapar du en ny direktutskick:
 
    ![](assets/direct_mail.png)
 
-1. Identifiera leveransen med en etikett, kod och beskrivning. Mer information om detta finns i [det här avsnittet](steps-create-and-identify-the-delivery.md#identifying-the-delivery)
+1. Identifiera leveransen med en etikett, kod och beskrivning. Mer information finns i [det här avsnittet](steps-create-and-identify-the-delivery.md#identifying-the-delivery)
 1. Klicka **Fortsätt** för att bekräfta den här informationen och visa meddelandekonfigurationsfönstret.

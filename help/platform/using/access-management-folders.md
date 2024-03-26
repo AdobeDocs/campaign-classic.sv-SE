@@ -9,8 +9,8 @@ level: Beginner
 exl-id: 0ba8a3d0-36d7-42f3-b281-0255e49b5fa3
 source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
-source-wordcount: '762'
-ht-degree: 0%
+source-wordcount: '758'
+ht-degree: 1%
 
 ---
 
@@ -61,7 +61,7 @@ I exemplet nedan skapar vi nya mappar för att visa specifika data:
 
    ![](assets/s_ncs_user_add_folder_exple01.png)
 
-1. Definiera villkor för leveransfilter från frågeredigeraren i fönstrets mellersta del: kampanjer som motsvarar det definierade filtret visas sedan.
+1. Definiera leveransfiltervillkoren från frågeredigeraren i fönstrets mellersta del: kampanjerna som motsvarar det definierade filtret visas sedan.
 
    >[!NOTE]
    >
@@ -99,13 +99,13 @@ Om du vill ändra behörigheter kan du:
 
 * **Ersätta en grupp eller en operator**. Det gör du genom att klicka på en av grupperna (eller operatorerna) med rättigheter till mappen och välja en ny grupp (eller en ny operator) i listrutan:
 
-   ![](assets/s_ncs_user_folder_properties_security02.png)
+  ![](assets/s_ncs_user_folder_properties_security02.png)
 
-* **Auktorisera en grupp eller en operator**. Om du vill göra det klickar du på **[!UICONTROL Add]** och välj den grupp eller operator som du vill tilldela behörigheter till den här mappen.
+* **Auktorisera en grupp eller en operator**. Klicka på **[!UICONTROL Add]** och välj den grupp eller operator som du vill tilldela behörigheter till den här mappen.
 * **Förbjud en grupp eller en operatör**. Det gör du genom att klicka **[!UICONTROL Delete]** och välj den grupp eller operator som du vill ta bort behörigheten för den här mappen från.
 * **Välj rättigheter som tilldelats en grupp eller en operator**. Det gör du genom att klicka på gruppen eller operatorn i fråga och sedan markera de åtkomsträttigheter som du vill ge och avmarkera de andra.
 
-   ![](assets/s_ncs_user_folder_properties_security03.png)
+  ![](assets/s_ncs_user_folder_properties_security03.png)
 
 ### Sprid behörigheter {#propagate-permissions}
 

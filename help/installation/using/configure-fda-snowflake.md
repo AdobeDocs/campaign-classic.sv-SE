@@ -10,8 +10,8 @@ topic-tags: connectors
 exl-id: bdb5e422-ecfe-42eb-bd15-39fe5ec0ff1d
 source-git-commit: 6939307c0b33ff662fe4ef9ae0192ae7b500a95c
 workflow-type: tm+mt
-source-wordcount: '519'
-ht-degree: 8%
+source-wordcount: '499'
+ht-degree: 3%
 
 ---
 
@@ -115,13 +115,13 @@ Du måste skapa en [!DNL Snowflake] externt konto för att ansluta Campaign-inst
 
 Kopplingen stöder följande alternativ:
 
-| Option | Beskrivning |
+| Alternativ | Beskrivning |
 |---|---|
 | arbetsschema | Databasschema som ska användas för arbetsregister |
 | lagerställe | Namnet på standardlagerstället som ska användas. Det åsidosätter användarens standardvärde. |
-| TimeZoneName | Som standard är den tom, vilket innebär att systemtidszonen för Campaign Classicens programserver används. Alternativet kan användas för att framtvinga TIMEZONE-sessionsparametern. <br>Mer information finns på [den här sidan](https://docs.snowflake.net/manuals/sql-reference/parameters.html#timezone). |
-| WeekStart | WEEK_START-sessionsparameter. Standardinställningen är 0. <br>Mer information finns på [den här sidan](https://docs.snowflake.com/en/sql-reference/parameters.html#week-start). |
-| AnvändCachedResult | USE_CACHED_RESULTS sessionsparameter. Standardinställningen är TRUE. Det här alternativet kan användas för att inaktivera cachelagrade resultat i Snowflake. <br>Mer information finns på [den här sidan](https://docs.snowflake.net/manuals/user-guide/querying-persisted-results.html). |
+| TimeZoneName | Som standard är den tom, vilket innebär att systemtidszonen för Campaign Classicens programserver används. Alternativet kan användas för att framtvinga TIMEZONE-sessionsparametern. <br>Mer information finns i [den här sidan](https://docs.snowflake.net/manuals/sql-reference/parameters.html#timezone). |
+| WeekStart | WEEK_START-sessionsparameter. Standardinställningen är 0. <br>Mer information finns i [den här sidan](https://docs.snowflake.com/en/sql-reference/parameters.html#week-start). |
+| AnvändCachedResult | USE_CACHED_RESULTS sessionsparameter. Standardinställningen är TRUE. Det här alternativet kan användas för att inaktivera cachelagrade resultat i Snowflake. <br>Mer information finns i [den här sidan](https://docs.snowflake.net/manuals/user-guide/querying-persisted-results.html). |
 | bulkThreads | Antal trådar som ska användas för Snowflake-massinläsare, fler trådar innebär bättre prestanda för större massinläsningar. Standardinställningen är 1. Numret kan justeras beroende på antalet datortrådar. |
 | chunkSize | Bestämmer filstorleken för gruppinläsarsegmentet. Standardinställningen är 128 MB. Kan ändras för att få optimala prestanda när de används med bulkThreads. Fler samtidiga aktiva trådar innebär bättre prestanda. <br>Mer information finns i [Snowflake dokumentation](https://docs.snowflake.net/manuals/sql-reference/sql/put.html). |
 | StageName | Namnet på den förallokerade interna scenen. Den används i massinläsning i stället för att skapa en ny tillfällig fas. |

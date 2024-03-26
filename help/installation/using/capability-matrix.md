@@ -7,8 +7,8 @@ badge-v7-only: label="v7" type="Informative" tooltip="Gäller endast Campaign Cl
 exl-id: a2c425a8-9bde-4259-9140-5ada5397ed5f
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '300'
-ht-degree: 20%
+source-wordcount: '294'
+ht-degree: 19%
 
 ---
 
@@ -26,7 +26,7 @@ De olika värdmodellerna introduceras [i det här avsnittet](../../installation/
 
 | Funktion | Värdbaserad | Hybrid | Lokalt | Information |
 |-----------------------------------------------|------------------|-----------|---------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Konfigurera Campaign-servern | On-demand | Tillgänglig | Tillgänglig | [Läs mer](../../installation/using/the-server-configuration-file.md) |
+| Konfigurera Campaign-server | On-demand | Tillgänglig | Tillgänglig | [Läs mer](../../installation/using/the-server-configuration-file.md) |
 | BCC för e-post | On-demand | On-demand | Tillgänglig | [Läs mer](../../installation/using/email-archiving.md) |
 | Hantera körningsinstans för Message Center | On-demand | On-demand | Tillgänglig | [Läs mer](../../message-center/using/about-transactional-messaging.md) |
 | Hantera en plattform med flera leverantörer | On-demand | On-demand | Tillgänglig | [Läs mer](../../installation/using/mid-sourcing-server.md) |
@@ -53,6 +53,6 @@ Adobe Campaign tillhandahåller **Åtkomst till federerade data** (FDA) om du vi
 
 * [Kompatibilitetsmatris](../../rn/using/compatibility-matrix.md)
 * [Versionsinformation](../../rn/using/latest-release.md)
-* [Campaign Classic-uppgraderingar](../../rn/using/rn-overview.md)
+* [Campaign Classic](../../rn/using/rn-overview.md)
 * [Inaktuella och borttagna funktioner](../../rn/using/deprecated-features.md)
 * [[!DNL Gold Standard]-versioner ](../../rn/using/gold-standard.md)

@@ -1,6 +1,6 @@
 ---
 product: campaign
-title: Konfigurera Adobe I/O för utlösare i Adobe Experience Cloud
+title: Konfigurera Adobe I/O för Adobe Experience Cloud Triggers
 description: Lär dig hur du konfigurerar Adobe I/O för Adobe Experience Cloud Triggers
 feature: Triggers
 badge-v7-only: label="v7" type="Informative" tooltip="Gäller endast Campaign Classic v7"
@@ -12,12 +12,12 @@ snippet: y
 exl-id: ab30f697-3022-4a29-bbdb-14ca12ec9c3e
 source-git-commit: 65b6f91e083c955df044ffeb10f5338104d1ce56
 workflow-type: tm+mt
-source-wordcount: '761'
-ht-degree: 5%
+source-wordcount: '753'
+ht-degree: 6%
 
 ---
 
-# Konfigurera Adobe I/O för utlösare i Adobe Experience Cloud {#configuring-adobe-io}
+# Konfigurera Adobe I/O för Adobe Experience Cloud Triggers {#configuring-adobe-io}
 
 >[!CAUTION]
 >
@@ -39,7 +39,7 @@ Kontrollera att du har:
 
 >[!AVAILABILITY]
 >
-> JWT (JSON Web Tokens) håller på att skrivas av och ersätts med OAuth. Övergången genomförs stegvis i de kommande versionerna av Campaign och dokumentationen kommer att uppdateras för att återspegla dessa uppdateringar.
+> JWT (JSON Web Tokens) håller på att tas ur bruk och ersätts med OAuth. Övergången genomförs stegvis i de kommande versionerna av Campaign och dokumentationen kommer att uppdateras för att återspegla dessa uppdateringar.
 
 1. Åtkomst [!DNL Adobe I/O] och logga in med utvecklaråtkomst i din organisation. Se till att du är inloggad på rätt organisationsportal.
 

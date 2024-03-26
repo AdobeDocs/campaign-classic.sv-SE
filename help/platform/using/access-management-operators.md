@@ -1,6 +1,6 @@
 ---
 product: campaign
-title: Kom igång med Campaign-operatorer
+title: Kom igång med Campaign-operatörer
 description: Lär dig hur du skapar och hanterar kampanjanvändare
 badge: label="v7" type="Informative" tooltip="Gäller endast Campaign Classic v7"
 feature: Access Management, Permissions
@@ -9,7 +9,7 @@ level: Beginner
 exl-id: 580282ce-ee30-422a-8724-9c328637cc39
 source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
-source-wordcount: '1160'
+source-wordcount: '1152'
 ht-degree: 2%
 
 ---
@@ -18,7 +18,7 @@ ht-degree: 2%
 
 
 
-## Kom igång med Campaign-operatorer  {#about-operators}
+## Kom igång med Campaign-operatörer  {#about-operators}
 
 En operator är en Adobe Campaign-användare som har behörighet att logga in och utföra åtgärder.
 
@@ -46,13 +46,13 @@ Så här skapar du en ny operator och tilldelar behörigheter:
 
    ![](assets/s_ncs_user_operator_new.png)
 
-1. Ange **[!UICONTROL Identification parameters]** för användaren: användar-ID, lösenord och namn. Inloggningen och lösenordet används av operatören för att logga in på Adobe Campaign. När användaren är inloggad kan han/hon ändra sitt lösenord via **[!UICONTROL Tools > Change password]** -menyn. Operatorns e-postadress är viktig eftersom den gör det möjligt för operatorn att ta emot meddelanden, till exempel när godkännanden behandlas.
+1. Ange **[!UICONTROL Identification parameters]** för användaren: användarens inloggning, lösenord och namn. Inloggningen och lösenordet används av operatören för att logga in på Adobe Campaign. När användaren är inloggad kan han/hon ändra sitt lösenord via **[!UICONTROL Tools > Change password]** -menyn. Operatorns e-postadress är viktig eftersom den gör det möjligt för operatorn att ta emot meddelanden, till exempel när godkännanden bearbetas.
 
    I det här avsnittet kan du även länka en operator till en organisationsenhet. Mer information finns i [den här sidan](../../distributed/using/about-distributed-marketing.md).
 
 1. Välj behörigheter för operatorn i dialogrutan **[!UICONTROL Operator access rights]** -avsnitt.
 
-   Klicka på knappen **[!UICONTROL Add]** ovanför behörighetslistan och välj sedan en grupp operatorer i listan över tillgängliga grupper:
+   Om du vill tilldela behörigheter till operatorn klickar du på **[!UICONTROL Add]** ovanför behörighetslistan och välj sedan en grupp operatorer i listan över tillgängliga grupper:
 
    ![](assets/s_ncs_user_permissions_operators.png)
 
@@ -60,9 +60,9 @@ Så här skapar du en ny operator och tilldelar behörigheter:
 
    ![](assets/s_ncs_user_rights_operators.png)
 
-   Välj grupper och/eller namngivna rättigheter som ska tilldelas och klicka på **[!UICONTROL OK]** att validera.
+   Välj grupper och/eller namngivna rättigheter som ska tilldelas och klicka på **[!UICONTROL OK]** för att validera.
 
-1. Klicka **[!UICONTROL Ok]** så här skapar du operatorn: profilen läggs till i listan över befintliga operatorer.
+1. Klicka **[!UICONTROL Ok]** för att skapa operatorn: profilen läggs till i listan över befintliga operatorer.
 
    ![](assets/operator_profile_new.png)
 
@@ -70,7 +70,7 @@ Så här skapar du en ny operator och tilldelar behörigheter:
 >
 >Du kan ordna operatorerna efter dina behov genom att skapa nya operatormappar. Om du vill göra det högerklickar du på mappen operator och väljer **[!UICONTROL Add an 'Operators' folder]**.
 
-När operatörens profil har skapats kan du lägga till eller uppdatera informationen för den. Om du vill göra det klickar du på **[!UICONTROL Edit]** -fliken.
+När operatörens profil har skapats kan du lägga till eller uppdatera informationen för den. Klicka på **[!UICONTROL Edit]** -fliken.
 
 ![](assets/operator_edit_profile.png)
 
@@ -80,7 +80,7 @@ När operatörens profil har skapats kan du lägga till eller uppdatera informat
 
 ## Definiera operatorns tidszon {#time-zone-of-the-operator}
 
-I **[!UICONTROL General]** kan du välja operatörens tidszon. Som standard arbetar operatorer i serverns tidszon. Det går dock att välja en annan tidszon i listrutan.
+I **[!UICONTROL General]** kan du välja operatörens tidszon. Som standard arbetar operatorer i serverns tidszon. Det går dock att välja en annan tidszon med hjälp av listrutan.
 
 Konfigurationen av tidszoner beskrivs i [den här sidan](../../installation/using/time-zone-management.md).
 
@@ -100,33 +100,33 @@ Använd **[!UICONTROL Access rights]** för att uppdatera grupper och namngivna 
 
 The **[!UICONTROL Edit the access parameters...]** kan du använda följande alternativ:
 
-* The **[!UICONTROL Disable account]** kan du inaktivera operatörens konto: den här användaren inte längre kommer att få åtkomst till Adobe Campaign.
+* The **[!UICONTROL Disable account]** kan du inaktivera operatörens konto: den här användaren kommer inte längre att ha åtkomst till Adobe Campaign.
 
-   >[!NOTE]
-   >
-   >Även om deras konto är inaktiverat kan operatorn fortfarande ta emot aviseringar eller meddelanden från Campaign. Om du inte längre vill skicka Campaign-meddelanden till den här operatorn rekommenderar Adobe att du tar bort e-postadressen från deras profil.
+  >[!NOTE]
+  >
+  >Även om deras konto är inaktiverat kan operatorn fortfarande ta emot aviseringar eller meddelanden från Campaign. Om du inte längre vill skicka Campaign-meddelanden till den här operatorn rekommenderar Adobe att du tar bort e-postadressen från deras profil.
 
-* The **[!UICONTROL Forbid access from the rich client]** kan du begränsa användningen av Adobe Campaign till [Webbåtkomst](../../platform/using/adobe-campaign-workspace.md#console-and-web-access) eller via API:er: åtkomst till Adobe Campaign klientkonsol inte längre är tillgänglig.
+* The **[!UICONTROL Forbid access from the rich client]** kan du begränsa användningen av Adobe Campaign till [Webbåtkomst](../../platform/using/adobe-campaign-workspace.md#console-and-web-access) eller via API:er: åtkomst till Adobe Campaign klientkonsol är inte längre tillgängligt.
 * Det går att länka en säkerhetszon till operatören. Mer information finns på [den här sidan](../../installation/using/security-zones.md).
 * Du kan också definiera en betrodd IP-mask med hjälp av lämplig länk.
 
-   Operatören kan ansluta till Adobe Campaign utan att ange sitt lösenord om IP-adressen finns i listan.
+  Operatören kan ansluta till Adobe Campaign utan att ange sitt lösenord om IP-adressen finns i listan.
 
-   Du kan också ange en uppsättning IP-adresser som ska auktoriseras att ansluta utan lösenord, som i följande exempel:
+  Du kan också ange en uppsättning IP-adresser som ska auktoriseras att ansluta utan lösenord, som i följande exempel:
 
-   ![](assets/operator_trustip.png)
+  ![](assets/operator_trustip.png)
 
-   >[!NOTE]
-   >
-   >För att åtkomsten till din plattform ska vara säker måste det här alternativet användas med försiktighet.
+  >[!NOTE]
+  >
+  >För att åtkomsten till din plattform ska vara säker måste det här alternativet användas med försiktighet.
 
 * The **[!UICONTROL Restrict to information found in sub-folders of:]** kan du begränsa de rättigheter som tilldelas en mapps operator. Endast undermapparna för noden som anges i det här alternativet visas för användaren:
 
-   ![](assets/s_ncs_user_restrictions_operators.png)
+  ![](assets/s_ncs_user_restrictions_operators.png)
 
-   >[!IMPORTANT]
-   >
-   >Detta är en mycket noggrann restriktion som måste användas med försiktighet. En operator som är inloggad med den här typen av rättigheter kan BARA se innehållet i den angivna mappen och har inte åtkomst till någon annan nod i trädet via Utforskaren. Beroende på vilka funktioner som den här operatorn har åtkomst till (till exempel: arbetsflöden) kan användaren visa data som vanligtvis lagras i noder som inte är tillgängliga.
+  >[!IMPORTANT]
+  >
+  >Detta är en mycket noggrann restriktion som måste användas med försiktighet. En operator som är inloggad med den här typen av rättigheter kan BARA se innehållet i den angivna mappen och har inte åtkomst till någon annan nod i trädet via Utforskaren. Beroende på vilka funktioner den här operatorn har åtkomst till (till exempel arbetsflöden) kan användaren visa data som vanligtvis lagras i noder som inte är tillgängliga.
 
 ### Kontrollera inställningar {#check-settings}
 
@@ -136,15 +136,15 @@ Du kan komma åt:
 
 * Listan över rättigheter för mappar som är länkade till operatorn.
 
-   ![](assets/operator_folder_permissions.png)
+  ![](assets/operator_folder_permissions.png)
 
-   >[!NOTE]
-   >
-   >Mer information finns i [Hantering av mappåtkomst](#folder-access-management).
+  >[!NOTE]
+  >
+  >Mer information finns i [Hantering av mappåtkomst](#folder-access-management).
 
 * Operatörens godkännandelogg.
 
-   ![](assets/operator_profile_validations.png)
+  ![](assets/operator_profile_validations.png)
 
 * Listan med diskussionsforum som de prenumererar på.
 * Händelser i deras kalender.
@@ -152,7 +152,7 @@ Du kan komma åt:
 
 ## Standardoperatorer {#default-operators}
 
-Adobe Campaign använder tekniska operatorer med profiler som är konfigurerade som standard: Administratör (&#39;admin&#39;), fakturering (&#39;billing&#39;), övervakning, webbprogramagent (&#39;webapp&#39;) osv. Vissa av dessa beror på vilka program och alternativ som är installerade på plattformen: Operatorer av typen central och lokal är till exempel bara synliga om alternativet Distribuerad marknadsföring är installerat.
+Adobe Campaign använder tekniska operatorer med profiler som konfigurerats som standard: Administratör (&#39;admin&#39;), Fakturering (&#39;billing&#39;), Övervakning, Webbprogramagent (&#39;webapp&#39;) osv. Vissa av dessa är beroende av vilka program och alternativ som är installerade på plattformen: till exempel operatorerna central och lokal bara visas om alternativet Distribuerad marknadsföring är installerat.
 
 >[!IMPORTANT]
 >
@@ -160,7 +160,7 @@ Adobe Campaign använder tekniska operatorer med profiler som är konfigurerade 
 >
 >För att webbprogrammen ska fungera på rätt sätt rekommenderar vi att du inte definierar specifika regionala inställningar för webbprogramsoperatorn.
 
-Som standard har den tekniska operatorn&quot;webapp&quot; namngiven ADMINISTRATION-behörighet, vilket kan leda till säkerhetsrisker. För att åtgärda det här problemet rekommenderar vi att du tar bort den här rättigheten. Så här gör du:
+Som standard har den tekniska operatorn&quot;webapp&quot; namngiven ADMINISTRATION-behörighet, vilket kan leda till säkerhetsrisker. Vi rekommenderar att du tar bort den här rättigheten för att åtgärda problemet. Så här gör du:
 
 1. Från **[!UICONTROL Administration > Access management > Named rights]** nod, klicka **[!UICONTROL New]** för att skapa en rättighet och ge den namnet WEBAPP.
 

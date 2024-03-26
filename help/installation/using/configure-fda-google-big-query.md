@@ -10,7 +10,7 @@ topic-tags: connectors
 exl-id: ebaad59f-0607-4090-92d0-e457fbf9a348
 source-git-commit: a94c361c5bdd9d61ae9232224af910a78245a889
 workflow-type: tm+mt
-source-wordcount: '1015'
+source-wordcount: '967'
 ht-degree: 2%
 
 ---
@@ -203,7 +203,7 @@ Du måste skapa en [!DNL Google BigQuery] externt konto för att ansluta din Ado
 
 Kopplingen stöder följande alternativ:
 
-| Option | Beskrivning |
+| Alternativ | Beskrivning |
 |:-:|:-:|
 | ProxyType | Typ av proxy som används för att ansluta till BigQuery via ODBC- och SDK-anslutningar. </br>HTTP (standard), http_no_tunnel, sockor4 och sockor5 stöds för närvarande. |
 | ProxyHost | Värdnamn eller IP-adress dit proxyn kan nås. |

@@ -7,8 +7,8 @@ feature: Workflows
 exl-id: 39c57f61-2629-4214-91e4-cb97dc039deb
 source-git-commit: 1baf424138c95b16add37d9d556e3a2566a869c2
 workflow-type: tm+mt
-source-wordcount: '1385'
-ht-degree: 7%
+source-wordcount: '1388'
+ht-degree: 5%
 
 ---
 
@@ -123,7 +123,7 @@ Aktivitetsnamnet finns i **[!UICONTROL Advanced]** -fliken. Ge dem inte namn **[
 ### Första och sista aktiviteten {#first-and-last-activities}
 
 * Starta alltid arbetsflödet med en **[!UICONTROL Start]** aktivitet eller **[!UICONTROL Scheduler]** aktivitet. När det är relevant kan du även använda en **[!UICONTROL External signal]** aktivitet.
-* När du skapar arbetsflödet ska du bara använda ett **[!UICONTROL Scheduler]** aktivitet per gren. Om samma gren i ett arbetsflöde har flera schemaläggare (länkade till varandra) så multipliceras antalet uppgifter som ska utföras exponentiellt vilket skulle innebära att databasen överbelastas avsevärt. Den här regeln gäller även alla aktiviteter med en **[!UICONTROL Scheduling & History]** -fliken. Läs mer på [Schemaläggning](scheduler.md).
+* När du skapar arbetsflödet ska du bara använda ett **[!UICONTROL Scheduler]** aktivitet per gren. Om samma gren i ett arbetsflöde har flera schemaläggare (länkade till varandra), multipliceras antalet uppgifter som ska utföras exponentiellt, vilket skulle innebära att databasen överbelastas avsevärt. Den här regeln gäller även alla aktiviteter med en **[!UICONTROL Scheduling & History]** -fliken. Läs mer på [Schemaläggning](scheduler.md).
 
   ![](assets/wf-scheduler.png)
 

@@ -10,11 +10,11 @@ exl-id: d8cea496-b3f3-420a-bf6e-b7cbb321b30d
 source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
 workflow-type: tm+mt
 source-wordcount: '679'
-ht-degree: 2%
+ht-degree: 1%
 
 ---
 
-# Använd en anpassad mottagartabell{#about-custom-recipient-table}
+# Använda en anpassad mottagartabell{#about-custom-recipient-table}
 
 I det här avsnittet beskrivs principerna för hur du använder en anpassad (eller extern) mottagartabell.
 

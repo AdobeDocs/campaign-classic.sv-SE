@@ -1,22 +1,22 @@
 ---
 product: campaign
-title: Marknadsföringsresurser (MRM)
-description: Marknadsföringsresurser (MRM)
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+title: Marknadsföringsresurser
+description: Marknadsföringsresurser
+badge-v7-only: label="v7" type="Informative" tooltip="Gäller endast Campaign Classic v7"
 feature: Workflows, Targeting Activity
 source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
-source-wordcount: '92'
-ht-degree: 11%
+source-wordcount: '99'
+ht-degree: 9%
 
 ---
 
 
-# Marknadsföringsresurser (MRM){#marketing-resources-mrm}
+# Marknadsföringsresurser{#marketing-resources-mrm}
 
 
 
-Arbetsflödena nedan installeras tillsammans med **Marknadsföringsresurser** som standard. Mer information om den här modulen finns i [section](../../campaign/using/designing-marketing-campaigns.md).
+Arbetsflödena nedan installeras tillsammans med **Marknadsföringsresurser** som standard. Mer information om modulen finns i [section](../../campaign/using/designing-marketing-campaigns.md).
 
 <table> 
  <tbody> 

@@ -8,8 +8,8 @@ feature: Web Apps, Web Forms, Landing Pages, Email Design
 exl-id: 968430d6-b1dd-47f8-8b31-39aaa18bc05c
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '1226'
-ht-degree: 1%
+source-wordcount: '1230'
+ht-degree: 0%
 
 ---
 
@@ -240,7 +240,7 @@ När du markerar ett block som innehåller en bild får du tillgång till följa
 
 ## Lägga till innehåll för personalisering {#adding-personalization-content}
 
-### Infoga ett personaliserat fält {#inserting-a-personalization-field}
+### Infoga ett anpassningsfält {#inserting-a-personalization-field}
 
 The **Anpassningsfält** Med alternativet för ikonen Infoga kan du lägga till ett databasfält i innehållet, till exempel mottagarens namn. Det här alternativet är bara tillgängligt för textblock.
 

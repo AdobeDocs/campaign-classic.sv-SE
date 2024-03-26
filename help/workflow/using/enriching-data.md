@@ -1,18 +1,18 @@
 ---
 product: campaign
-title: Berika data
+title: Förbättra data
 description: Läs mer om arbetsflödesaktiviteten för anrikning
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+badge-v7-only: label="v7" type="Informative" tooltip="Gäller endast Campaign Classic v7"
 feature: Workflows, Enrichment Activity
 exl-id: ab786cf1-74a4-4185-a63d-84e776a2f776
 source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
-source-wordcount: '747'
+source-wordcount: '759'
 ht-degree: 1%
 
 ---
 
-# Berika data{#enriching-data}
+# Förbättra data{#enriching-data}
 
 
 
@@ -47,19 +47,19 @@ Så här skapar du arbetsflödet:
 1. The **[!UICONTROL Split]** typaktivitet gör att vi kan skapa delmängder av mottagare baserat på poängvärden.
 1. För varje delmängd av **[!UICONTROL Delivery]** typaktivitet läggs till.
 
-## Steg 1: Målinriktning {#step-1--targeting}
+## Steg 1: Riktning {#step-1--targeting}
 
 Den första frågan gör att vi kan rikta in oss på mottagare som lagts till i databasen under de senaste sex månaderna.
 
 ![](assets/uc1_enrich_4.png)
 
-Den andra frågan gör att vi kan rikta in oss på de mottagare som deltog i den senaste tävlingen.
+Den andra frågan gör det möjligt för oss att rikta in oss på de mottagare som deltog i den senaste tävlingen.
 
 ![](assets/uc1_enrich_5.png)
 
 An **[!UICONTROL Intersection]** Typaktivitet läggs sedan till för att rikta sig till de mottagare som lagts till i databasen under de senaste sex månaderna och som gick in i den sista tävlingen.
 
-## Steg 2: Berikning {#step-2--enrichment}
+## Steg 2: Anrikning {#step-2--enrichment}
 
 I det här exemplet vill vi personalisera leveranser enligt **[!UICONTROL Score]** fält som lagras i **[!UICONTROL Competition results]** tabell. Den här tabellen har en 1:n-typrelation med mottagartabellen. The **[!UICONTROL Enrichment]** Med hjälp av aktivitet kan vi lägga till data från en tabell som är länkad till filtreringsdimensionen i arbetsflödets arbetsregister.
 
@@ -71,11 +71,11 @@ I det här exemplet vill vi personalisera leveranser enligt **[!UICONTROL Score]
 
    ![](assets/uc1_enrich_7.png)
 
-1. Ange ett ID och en etikett och välj **[!UICONTROL Limit the line count]** i **[!UICONTROL Data collected]** fält. I **[!UICONTROL Lines to retrieve]** väljer du 1 som värde. För varje mottagare läggs en rad till i anrikningsaktiviteten från **[!UICONTROL Competition results]** till arbetsflödets arbetsregister. Klicka på **[!UICONTROL Next]**.
+1. Ange ett ID och en etikett och välj **[!UICONTROL Limit the line count]** i **[!UICONTROL Data collected]** fält. I **[!UICONTROL Lines to retrieve]** väljer du 1 som värde. För varje mottagare läggs en rad till i anrikningsaktiviteten **[!UICONTROL Competition results]** till arbetsflödets arbetsregister. Klicka på **[!UICONTROL Next]**.
 
    ![](assets/uc1_enrich_8.png)
 
-1. I det här exemplet vill vi återfå mottagarens högsta poäng, men bara för den sista tävlingen. Om du vill göra det lägger du till ett filter i **[!UICONTROL Competition name]** fält för att exkludera alla rader som hör till tidigare tävlingar. Klicka på **[!UICONTROL Next]**.
+1. I det här exemplet vill vi återfå mottagarens högsta poäng, men bara för den sista tävlingen. Lägg till ett filter i **[!UICONTROL Competition name]** fält för att exkludera alla rader som hör till tidigare tävlingar. Klicka på **[!UICONTROL Next]**.
 
    ![](assets/uc1_enrich_9.png)
 

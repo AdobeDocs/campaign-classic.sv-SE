@@ -9,8 +9,8 @@ role: User
 exl-id: 86c7169a-2c71-4c43-8a1a-f39871b29856
 source-git-commit: 8b0162680d6a3a2d4891d1f71020b44b28046ad7
 workflow-type: tm+mt
-source-wordcount: '2573'
-ht-degree: 14%
+source-wordcount: '2570'
+ht-degree: 10%
 
 ---
 
@@ -118,7 +118,7 @@ Möjliga orsaker till leveransfel är:
    <td> Ogiltig domän </td> 
    <td> Mjuk </td> 
    <td> 2 </td> 
-   <td> Domänen för e-postadressen är felaktig eller finns inte längre. Den här profilen används igen tills felantalet är 5. Därefter sätts postens status till Karantän och inga nya försök görs.<br /> </td> 
+   <td> Domänen för e-postadressen är felaktig eller finns inte längre. Den här profilen används igen tills felantalet är 5. Därefter anges posten till Karantänstatus och inga nya försök följer.<br /> </td> 
   </tr> 
   <tr> 
    <td> Postlådan är full </td> 
@@ -136,7 +136,7 @@ Möjliga orsaker till leveransfel är:
    <td> Ej definierad </td> 
    <td> Ej definierad </td> 
    <td> 0 </td> 
-   <td> Adressen kvalificeras eftersom felet inte har ökats ännu. Den här typen av fel inträffar när ett nytt felmeddelande skickas av servern: Det kan vara ett isolerat fel, men om det inträffar igen ökar felräknaren, som varnar de tekniska teamen. De kan sedan göra en meddelandeanalys och kvalificera felet via <span class="uicontrol">Administration</span> / <span class="uicontrol">Campaign Management</span> / <span class="uicontrol">Hantering av ej slutprodukter</span> i trädstrukturen.<br /> </td> 
+   <td> Adressen kvalificeras eftersom felet inte har ökats ännu. Den här typen av fel inträffar när ett nytt felmeddelande skickas av servern: det kan vara ett isolerat fel, men om det inträffar igen ökar felräknaren, som varnar de tekniska teamen. De kan sedan göra en meddelandeanalys och kvalificera felet via <span class="uicontrol">Administration</span> / <span class="uicontrol">Campaign Management</span> / <span class="uicontrol">Hantering av ej slutprodukter</span> i trädstrukturen.<br /> </td> 
   </tr> 
   <tr> 
    <td> Erbjudandena är inte giltiga </td> 
@@ -198,7 +198,7 @@ Standardkonfigurationen tillåter fem försök med en timmes intervall, följt a
 Ett meddelande kan misslyckas omedelbart (synkront fel) eller senare efter att det har skickats (asynkront fel).
 
 * Synkront fel: Fjärre-postservern som kontaktades av Adobe Campaign-leveransservern returnerade omedelbart ett felmeddelande. Leveransen får inte skickas till profilens server. Adobe Campaign kvalificerar varje fel för att avgöra om e-postadresserna i fråga ska sättas i karantän eller inte. Se [Kvalifikation av studsmeddelanden](#bounce-mail-qualification).
-* Asynkront fel: Ett studsmeddelande eller en SR skickades senare av den mottagande servern. Det här e-postmeddelandet läses in i en teknisk postlåda som programmet använder för att etikettera meddelanden med ett fel. Asynkrona fel kan uppstå upp till en vecka efter att en leverans har skickats.
+* Asynkront fel: ett studsmeddelande eller en SR skickades senare av den mottagande servern. Det här e-postmeddelandet läses in i en teknisk postlåda som programmet använder för att etikettera meddelanden med ett fel. Asynkrona fel kan uppstå upp till en vecka efter att en leverans har skickats.
 
   >[!NOTE]
   >
@@ -222,7 +222,7 @@ För lokala installationer och värdbaserade/hybridinstallationer som använder 
 >
 >För värdbaserade eller hybridinstallationer, om du har uppgraderat till [Förbättrad MTA](sending-with-enhanced-mta.md)används inte längre de flesta regler för e-posthantering. Mer information finns i [det här avsnittet](#email-management-rules).
 
-### Kvalifikation av studsmeddelanden {#bounce-mail-qualification}
+### E-poststudsar {#bounce-mail-qualification}
 
 >[!IMPORTANT]
 >
@@ -230,7 +230,7 @@ För lokala installationer och värdbaserade/hybridinstallationer som använder 
 >
 >* Studenternas kvalifikationer i **[!UICONTROL Delivery log qualification]** tabellen används inte längre för **synkron** felmeddelanden vid leveransfel. Den förbättrade MTA-metoden avgör studstyp och kvalifikationer och skickar tillbaka informationen till Campaign.
 >
->* **** Asynkrona studsningar är fortfarande kvalificerade inMail-processen enligt **[!UICONTROL Inbound email]**-reglerna. Mer information finns i [Regler för e-posthantering](#email-management-rules).
+>* **Asynkron** studenterna är fortfarande kvalificerade av inMail-processen via **[!UICONTROL Inbound email]** regler. Mer information finns i [Regler för e-posthantering](#email-management-rules).
 >
 >* För instanser som använder den förbättrade MTA-metoden **utan Webhooks**, **[!UICONTROL Inbound email]** regler kommer också att användas för att bearbeta synkrona studsmeddelanden från Förbättrat MTA, med samma e-postadress som för asynkrona studsmeddelanden.
 

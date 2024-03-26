@@ -2,13 +2,13 @@
 product: campaign
 title: Webbhämtning
 description: Läs mer om arbetsflödet för nedladdning av webbsidor
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+badge-v7-only: label="v7" type="Informative" tooltip="Gäller endast Campaign Classic v7"
 feature: Workflows
 exl-id: b6005eae-5fbc-4e22-ab3a-c9b7ed6506f6
 source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
-source-wordcount: '405'
-ht-degree: 1%
+source-wordcount: '415'
+ht-degree: 3%
 
 ---
 
@@ -24,19 +24,19 @@ The **Webbnedladdning** startar nedladdningen av en fil på en explicit URL, ett
 
    Om du vill ange vilken fil som ska laddas ned kan du ange fil-URL:en, använda det externa HTTP-kontot där filen lagras eller läsa in filen via en Adobe Campaign-instans. Tillgängliga parametrar beskrivs nedan:
 
-   * Om du vill ange URL:en för filen som ska laddas ned direkt väljer du **[!UICONTROL Explicit URL]** och ange URL-adressen i lämpligt fält. Denna URL kan konstrueras med variabeldata.
+   * Om du vill ange URL:en för filen som ska laddas ned direkt väljer du **[!UICONTROL Explicit URL]** och ange URL-adressen i lämpligt fält. Den här URL:en kan konstrueras med variabeldata.
 
-      ![](assets/download_web_edit.png)
+     ![](assets/download_web_edit.png)
 
-   * Så här använder du en **[!UICONTROL External account]** väljer du kontot i listrutan och anger vilken fil som ska hämtas.
+   * Så här använder du **[!UICONTROL External account]** väljer du kontot i listrutan och anger vilken fil som ska hämtas.
 
-      Externa konton konfigureras från **[!UICONTROL Administration > Platform > External accounts]** noden i Adobe Campaign-trädet. Kontoparametrarna kan redigeras via **[!UICONTROL Edit link]** ikon.
+     Externa konton konfigureras från **[!UICONTROL Administration > Platform > External accounts]** noden i Adobe Campaign-trädet. Kontoparametrarna kan redigeras via **[!UICONTROL Edit link]** -ikon.
 
-      ![](assets/download_web_edit_external.png)
+     ![](assets/download_web_edit_external.png)
 
    * Om du vill hämta filen från Adobe Campaign-instansen väljer du **[!UICONTROL Adobe Campaign Instance]** alternativ.
 
-      ![](assets/download_web_edit_instance.png)
+     ![](assets/download_web_edit_instance.png)
 
 1. **Filhistorik**
 
@@ -46,9 +46,9 @@ The **Webbnedladdning** startar nedladdningen av en fil på en explicit URL, ett
 
    Följande alternativ är tillgängliga:
 
-   * **[!UICONTROL Use a default storage directory]**: filen alltid flyttas innan den bearbetas. Om det här alternativet är markerat flyttas filen till standardlagringskatalogen ( **vars** i Adobe Campaign installationsmapp). Om du vill ange en lagringskatalog avmarkerar du kryssrutan och anger sökvägen i dialogrutan **[!UICONTROL Storage directory]** fält
+   * **[!UICONTROL Use a default storage directory]**: filen flyttas alltid innan den bearbetas. Om det här alternativet är markerat flyttas filen till standardlagringskatalogen ( **vars** i Adobe Campaign installationsmapp). Om du vill ange en lagringskatalog avmarkerar du kryssrutan och anger sökvägen i dialogrutan **[!UICONTROL Storage directory]** fält
    * **[!UICONTROL Number of files]**: Ange det maximala antalet filer som ska lagras i lagringskatalogen.
-   * **[!UICONTROL Maximum size (in Mb)]**: Ange maximal lagringskatalogkapacitet (i megabyte).
+   * **[!UICONTROL Maximum size (in Mb)]**: Ange maximal kapacitet för lagringskatalogen (i MB).
 
    Varje fil sparas i 24 timmar innan den omfattas av de definierade reningsreglerna. Rensa sker precis innan aktiviteten startas och tar därför inte hänsyn till den aktuella arbetsflödesfilen.
 

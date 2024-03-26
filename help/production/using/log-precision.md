@@ -11,7 +11,7 @@ topic-tags: troubleshooting
 exl-id: c2470098-62f3-4fee-b1c5-800ed0e91f75
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '345'
+source-wordcount: '333'
 ht-degree: 4%
 
 ---
@@ -51,8 +51,8 @@ Adobe Campaign kan arbeta med två loggnivåer:
    >[!NOTE]
    >
    >Om du **tracefilter:&#42;**, alla loggtyper aktiveras: ncm, rdr, nms, jst, timing, wdbc, ldap, soap, xtk, xtkquery, session, xtkwriter, nätverk, pop3, inmail\
-   >De mest användbara loggtyperna är: **wdbc** (visar alla SQL-frågor), **soppa** (visar alla SOAP-anrop), **ldap** (visar alla LDAP-frågor efter autentisering), **xtkquery** (visar listan med alla frågor).\
-   >Du kan använda dem var för sig (**tracefilter:soap,wdbc** till exempel). Du kan också aktivera alla och välja att utesluta vissa andra: **-tracefilter:&#42;,!soap**
+   De mest användbara loggtyperna är: **wdbc** (visar alla SQL-frågor), **soppa** (visar alla SOAP-anrop), **ldap** (visar alla LDAP-frågor efter autentisering), **xtkquery** (visar listan med alla frågor).\
+   Du kan använda dem var för sig (**tracefilter:soap,wdbc** till exempel). Du kan också aktivera alla och välja att utesluta vissa andra: **-tracefilter:&#42;,!soap**
 
    Kontrollera att felet verkligen uppstod och starta sedan om processen på normalt sätt:
 
@@ -62,7 +62,7 @@ Adobe Campaign kan arbeta med två loggnivåer:
 
 >[!IMPORTANT]
 >
->Loggarna för dessa kommandon lagras i modulens loggfil.
+Loggarna för dessa kommandon lagras i modulens loggfil.
 
 Här är ett exempel som är specifikt för modulen Webb. De övriga modulerna fungerar enligt ovan.
 
@@ -86,12 +86,12 @@ nlserver stop mta@<INSTANCE_NAME>; nlserver mta -instance:<INSTANCE_NAME> -trace
 
 >[!NOTE]
 >
->The **Tracefile** I kan du spara loggarna. I exemplen ovan sparas loggarna i **var/`<instance-name>`/mta_debug.log** och **var/default/web_debug.log** filer.
+The **Tracefile** I kan du spara loggarna. I exemplen ovan sparas loggarna i **var/`<instance-name>`/mta_debug.log** och **var/default/web_debug.log** filer.
 
 >[!IMPORTANT]
 >
->I Windows ska du inte lägga till alternativet LD_PRELOAD. Följande kommando är tillräckligt:\
->nlserver web -tomcat -verbose -tracefilter:&#42;
+I Windows ska du inte lägga till alternativet LD_PRELOAD. Följande kommando är tillräckligt:\
+nlserver web -tomcat -verbose -tracefilter:&#42;
 
 Kontrollera att problemet inträffar igen och starta sedan om modulen:
 

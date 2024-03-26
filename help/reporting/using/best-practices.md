@@ -7,8 +7,8 @@ badge: label="v7" type="Informative" tooltip="Gäller endast Campaign Classic v7
 exl-id: 0c7f00f3-b16d-41c5-a7b1-f5a59201bf8c
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '848'
-ht-degree: 0%
+source-wordcount: '851'
+ht-degree: 1%
 
 ---
 

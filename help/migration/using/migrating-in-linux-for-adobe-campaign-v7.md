@@ -12,8 +12,8 @@ hidefromtoc: true
 exl-id: 9dc0699c-0fbf-4f8e-81f7-8ca3d7e98798
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '500'
-ht-degree: 0%
+source-wordcount: '498'
+ht-degree: 1%
 
 ---
 
@@ -671,7 +671,7 @@ Fully test the new installation, check that it does not regress and make sure th
 Starta Apache och Adobe Campaign på var och en av följande servrar:
 
 1. Spårnings- och omdirigeringsserver.
-1. Server för mid-sourcing.
+1. Server för mellanpublicering.
 1. Marknadsföringsserver.
 
 Testa den nya installationen fullständigt, kontrollera att den inte går tillbaka och se till att allt fungerar som det ska.

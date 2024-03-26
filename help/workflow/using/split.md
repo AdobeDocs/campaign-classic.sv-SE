@@ -2,12 +2,12 @@
 product: campaign
 title: Dela
 description: Läs mer om aktiviteten Dela arbetsflöde
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+badge-v7-only: label="v7" type="Informative" tooltip="Gäller endast Campaign Classic v7"
 feature: Workflows, Targeting Activity
 exl-id: 4204350a-c2d2-4033-9bdf-87b49d8211b9
 source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
-source-wordcount: '1935'
+source-wordcount: '1953'
 ht-degree: 0%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 0%
 
 
 
-A **Dela** Med aktiviteten -type kan du dela upp ett mål i flera deluppsättningar. Målet konstrueras med alla mottagna resultat: Alla tidigare aktiviteter måste därför ha avslutats för att denna aktivitet ska kunna utföras.
+A **Dela** Med aktiviteten -type kan du dela upp ett mål i flera deluppsättningar. Målet har konstruerats med alla mottagna resultat: alla tidigare aktiviteter måste därför ha avslutats för att den här aktiviteten ska kunna utföras.
 
 Denna aktivitet utlöser inte någon union av inkommande populationer. Om flera övergångar landar i en delad aktivitet rekommenderar vi att du infogar en **[!UICONTROL Union]** verksamhet framför den.
 
@@ -26,14 +26,14 @@ Ett exempel som illustrerar hur du använder Dela-aktiviteten för att segmenter
 
 Ett exempel som visar hur du använder en förekomstvariabel i en delad aktivitet finns i [det här avsnittet](javascript-scripts-and-templates.md).
 
-Om du vill konfigurera den här aktiviteten definierar du delmängdens innehåll och etikett i dialogrutan **[!UICONTROL Subsets]** och sedan välja måldimensionen i **[!UICONTROL General]** -fliken.
+Om du vill konfigurera den här aktiviteten definierar du delmängdens innehåll och etikett i **[!UICONTROL Subsets]** och sedan välja måldimensionen i **[!UICONTROL General]** -fliken.
 
 ## Skapa delmängder {#creating-subsets}
 
 Så här skapar du en delmängd:
 
 1. Klicka på etiketten i det matchande fältet och välj det filter som ska användas.
-1. Om du vill filtrera den inkommande populationen väljer du **[!UICONTROL Add a filtering condition]** och klicka på **[!UICONTROL Edit...]** länk.
+1. Välj **[!UICONTROL Add a filtering condition]** och klicka på **[!UICONTROL Edit...]** länk.
 
    Välj vilken typ av filter som ska användas på data som ska inkluderas i uppsättningen.
 
@@ -61,7 +61,7 @@ Så här skapar du en delmängd:
 
    ![](assets/s_user_segmentation_partage_add2.png)
 
-   Du kan välja att generera en enskild utgående övergång (och identifiera uppsättningar med segmentkoden, till exempel): för att göra detta väljer du **[!UICONTROL Generate subsets in the same table]** i **[!UICONTROL General]** -fliken.
+   Du kan välja att generera en enskild utgående övergång (och identifiera uppsättningar med exempelvis segmentkoden): om du vill göra det väljer du **[!UICONTROL Generate subsets in the same table]** i **[!UICONTROL General]** -fliken.
 
    Om den är klar sparas segmentkoden för varje delmängd automatiskt i en extra kolumn. Den här kolumnen är tillgänglig i personaliseringsfälten på leveransnivå.
 
@@ -76,7 +76,8 @@ Om du inte vill använda hela populationen i en delmängd kan du begränsa antal
    * **[!UICONTROL Keep only the first records after sorting]**: Med det här alternativet kan du definiera en begränsning baserat på en eller flera sorteringsordningar. Om du väljer **[!UICONTROL Age]** fält som sorteringskriterium och 100 som gräns, endast de yngsta 100 mottagarna behålls.
    * **[!UICONTROL Keep the first ones after sorting (criteria, random)]**: Det här alternativet kombinerar de två föregående alternativen. Du kan definiera en begränsning baserat på en eller flera sorteringsordningar och sedan göra ett slumpmässigt urval på de första posterna om vissa poster har samma värden som de definierade villkoren.
 
-      Om du till exempel väljer **[!UICONTROL Age]** -fält som sorteringsvillkor, och du definierar sedan en gräns på 100, men de 2 000 yngsta mottagarna i databasen är alla 18, så väljs 100 mottagare slumpmässigt bland dessa 2 000.
+     Om du t.ex. väljer **[!UICONTROL Age]** -fält som sorteringsvillkor, och du definierar sedan en gräns på 100, men de 2 000 yngsta mottagarna i databasen är alla 18, så väljs 100 mottagare slumpmässigt bland dessa 2 000.
+
    ![](assets/s_user_segmentation_partage_wz1.png)
 
 1. Om du vill definiera sorteringsvillkor kan du definiera kolumnerna och sorteringsordningen med ett extra steg.
@@ -91,27 +92,27 @@ Om du inte vill använda hela populationen i en delmängd kan du begränsa antal
 
    * **[!UICONTROL Size (in %)]**: en procentandel av posterna. Till exempel extraherar konfigurationen nedan 10 % av den totala populationen.
 
-      Procentandelen gäller den inledande populationen, inte resultatet av aktiviteten.
+     Procentandelen gäller den inledande populationen, inte resultatet av aktiviteten.
 
-   * **[!UICONTROL Size (as a % of the segment)]**: en procentandel av uppgifterna som endast avser delmängderna och inte den ursprungliga populationen.
+   * **[!UICONTROL Size (as a % of the segment)]**: en procentandel av posterna som endast avser delmängderna och inte den ursprungliga populationen.
    * **[!UICONTROL Maximum size]**: ett maximalt antal poster.
-   * **[!UICONTROL By data grouping]**: Du kan ange en gräns för antalet poster beroende på värdena i ett angivet fält i den inkommande populationen. Mer information om detta finns i [Begränsa antalet delmängdsposter efter datagruppering](#limiting-the-number-of-subset-records-by-data-grouping).
-   * **[!UICONTROL By data grouping (in %)]**: Du kan ange en gräns för antalet poster beroende på värdena i ett angivet fält i den inkommande populationen med en procentsats. Mer information om detta finns i [Begränsa antalet delmängdsposter efter datagruppering](#limiting-the-number-of-subset-records-by-data-grouping).
-   * **[!UICONTROL By data distribution]**: Om grupperingsfälten har för många värden eller om du inte vill ange värden igen för varje ny delad aktivitet, kan du konfigurera en **[!UICONTROL By data distribution]** begränsning (valfri modul för distribuerad marknadsföring). Mer information finns i [Begränsa antalet delmängdsposter per datadistribution](#limiting-the-number-of-subset-records-per-data-distribution).
+   * **[!UICONTROL By data grouping]**: du kan ange en gräns för antalet poster beroende på värdena i ett angivet fält i den inkommande populationen. Mer information om detta finns i [Begränsa antalet delmängdsposter efter datagruppering](#limiting-the-number-of-subset-records-by-data-grouping).
+   * **[!UICONTROL By data grouping (in %)]**: du kan ange en gräns för antalet poster beroende på värdena i ett angivet fält i den inkommande populationen med en procentandel. Mer information om detta finns i [Begränsa antalet delmängdsposter efter datagruppering](#limiting-the-number-of-subset-records-by-data-grouping).
+   * **[!UICONTROL By data distribution]**: Om grupperingsfälten har för många värden eller om du inte vill ange värden igen för varje ny delad aktivitet kan du konfigurera en **[!UICONTROL By data distribution]** begränsning (valfri modul för distribuerad marknadsföring). Mer information finns i [Begränsa antalet delmängdsposter per datadistribution](#limiting-the-number-of-subset-records-per-data-distribution).
 
 1. Klicka **[!UICONTROL Finish]** för att godkänna urvalskriterierna för posten. Den definierade konfigurationen visas sedan i redigerarens mittersta fönster.
 
 ## Begränsa antalet delmängdsposter efter datagruppering {#limiting-the-number-of-subset-records-by-data-grouping}
 
-Du kan begränsa antalet poster per datagrupp. Denna gräns kan göras med ett fast värde eller en procentsats.
+Du kan begränsa antalet poster per datagrupp. Denna gräns kan göras med hjälp av ett fast värde eller en procentsats.
 
 Om du till exempel väljer **[!UICONTROL Language]** som gruppfält kan du definiera en lista med poster för varje språk.
 
-1. Välj **[!UICONTROL By data grouping]** eller **[!UICONTROL By data grouping (as a %)]** och klicka **[!UICONTROL Next]**.
+1. När du har valt värden för databegränsning väljer du **[!UICONTROL By data grouping]** eller **[!UICONTROL By data grouping (as a %)]** och klicka **[!UICONTROL Next]**.
 
    ![](assets/s_user_segmentation_partage_wz3.png)
 
-1. Markera sedan grupperingsfälten ( **[!UICONTROL Language]** fält) och klicka **[!UICONTROL Next]**.
+1. Markera sedan grupperingsfälten (den **[!UICONTROL Language]** fält) och klicka **[!UICONTROL Next]**.
 
    ![](assets/s_user_segmentation_partage_wz4.png)
 
@@ -135,7 +136,7 @@ Ett exempel på **[!UICONTROL Local approval]** aktivitet med en distributionsma
 
 Med mallen för datadistribution kan du begränsa antalet poster med hjälp av en lista med grupperingsvärden. Så här skapar du en mall för datadistribution:
 
-1. Om du vill skapa en mall för datadistribution går du till **[!UICONTROL Resources > Campaign management > Data distribution]** nod och klicka **[!UICONTROL New]**.
+1. Om du vill skapa en mall går du till **[!UICONTROL Resources > Campaign management > Data distribution]** och klicka på **[!UICONTROL New]**.
 
    ![](assets/local_validation_data_distribution_1.png)
 
@@ -145,14 +146,14 @@ Med mallen för datadistribution kan du begränsa antalet poster med hjälp av e
 
    Följande fält måste anges:
 
-   * **[!UICONTROL Label]**: distributionsmallens etikett.
-   * **[!UICONTROL Targeting dimension]**: Ange den måldimension som datafördelningen ska tillämpas på. **[!UICONTROL Recipient]** till exempel. Det här schemat måste alltid vara kompatibelt med de data som används i målarbetsflödet.
-   * **[!UICONTROL Distribution field]**: markera ett fält via måldimensionen. Om du till exempel väljer **[!UICONTROL Email domain]** -fältet kommer listan över mottagare att delas upp efter domän.
+   * **[!UICONTROL Label]**: etikett för distributionsmallen.
+   * **[!UICONTROL Targeting dimension]**: Ange måldimensionen som datafördelningen ska tillämpas på. **[!UICONTROL Recipient]** till exempel. Det här schemat måste alltid vara kompatibelt med de data som används i målarbetsflödet.
+   * **[!UICONTROL Distribution field]**: välj ett fält via måldimensionen. Om du till exempel väljer **[!UICONTROL Email domain]** -fältet kommer listan över mottagare att delas upp efter domän.
    * **[!UICONTROL Distribution type]**: välj hur målets begränsningsvärde ska delas upp i **[!UICONTROL Distribution]** tab: **[!UICONTROL Percentage]** eller **[!UICONTROL Set]**.
    * **[!UICONTROL Assignment type]**: välj tilldelningstypen för datadistribution. Du kan välja mellan tilldelning efter grupp eller operator eller tilldelning efter lokal enhet. Tilldelning via lokal enhet används i **Distribuerad marknadsföring**. Mer information finns i [section](../../distributed/using/about-distributed-marketing.md).
-   * **[!UICONTROL Approval storage]**: om du använder **[!UICONTROL Local approval]** aktiviteter i målarbetsflödet (se [Lokalt godkännande](local-approval.md)) anger du det schema som godkännanderesultaten ska lagras i. Du måste ange ett lagringsschema per målschema. Om du använder **[!UICONTROL Recipients]** målschema, ange standard **[!UICONTROL Local approval of recipients]** lagringsschema.
+   * **[!UICONTROL Approval storage]**: om du använder en **[!UICONTROL Local approval]** aktiviteter i målarbetsflödet (se [Lokalt godkännande](local-approval.md)) anger du det schema som godkännanderesultaten ska lagras i. Du måste ange ett lagringsschema per målschema. Om du använder **[!UICONTROL Recipients]** målschema, ange standard **[!UICONTROL Local approval of recipients]** lagringsschema.
 
-      Om en enkel begränsning är per datagrupp utan lokalt godkännande behöver du inte ange **[!UICONTROL Approvals storage]** fält.
+     Om en enkel begränsning är per datagrupp utan lokalt godkännande behöver du inte ange **[!UICONTROL Approvals storage]** fält.
 
 1. Om du använder en **[!UICONTROL Local approval]** aktivitet (se [Lokalt godkännande](local-approval.md)) anger du **[!UICONTROL Advanced settings]** för distributionsmallen:
 
@@ -160,45 +161,45 @@ Med mallen för datadistribution kan du begränsa antalet poster med hjälp av e
 
    Följande fält måste anges:
 
-   * **[!UICONTROL Approve targeted messages]**: Markera det här alternativet om du vill att alla mottagare ska vara förmarkerade i listan över mottagare som ska godkännas. Om alternativet inte är markerat markeras ingen mottagare i förväg.
+   * **[!UICONTROL Approve targeted messages]**: markera det här alternativet om du vill att alla mottagare ska vara förmarkerade i listan över mottagare som ska godkännas. Om alternativet inte är markerat markeras ingen mottagare i förväg.
 
-      >[!NOTE]
-      >
-      >Det här alternativet är markerat som standard.
+     >[!NOTE]
+     >
+     >Det här alternativet är markerat som standard.
 
-      ![](assets/local_validation_notification.png)
+     ![](assets/local_validation_notification.png)
 
-   * **[!UICONTROL Delivery label]**: I kan du definiera ett uttryck som visar leveransetiketten i returmeddelandet. Standarduttrycket innehåller information om leveransens standardetikett (beräkningssträng). Du kan ändra det här uttrycket.
+   * **[!UICONTROL Delivery label]**: låter dig definiera ett uttryck som visar leveransetiketten i returmeddelandet. Standarduttrycket innehåller information om leveransens standardetikett (beräkningssträng). Du kan ändra det här uttrycket.
 
-      ![](assets/local_validation_notification_3.png)
+     ![](assets/local_validation_notification_3.png)
 
-   * **[!UICONTROL Grouping field]**: I det här fältet kan du definiera den gruppering som används för att visa mottagare i godkännande- och returmeddelanden.
+   * **[!UICONTROL Grouping field]**: det här fältet gör att du kan definiera den gruppering som används för att visa mottagare i godkännande- och returmeddelanden.
 
-      ![](assets/local_validation_notification_4.png)
+     ![](assets/local_validation_notification_4.png)
 
-   * **[!UICONTROL Web Interface]**: Med kan du länka ett webbprogram till mottagarlistan. I meddelandet för godkännande och retur kan varje mottagare klickas och länkas till det valda webbprogrammet. The **[!UICONTROL Parameters]** fält (till exempel **[!UICONTROL recipientId]**) kan du konfigurera den extra parametern som ska användas i URL:en och webbprogrammet.
+   * **[!UICONTROL Web Interface]**: gör att du kan länka ett webbprogram till mottagarlistan. I meddelandet för godkännande och retur kan varje mottagare klickas och länkas till det valda webbprogrammet. The **[!UICONTROL Parameters]** fält (till exempel **[!UICONTROL recipientId]**) kan du konfigurera den extra parametern som ska användas i URL:en och webbprogrammet.
 
-      ![](assets/local_validation_notification_5.png)
+     ![](assets/local_validation_notification_5.png)
 
 1. The **[!UICONTROL Breakdown]** kan du definiera en lista med distributionsvärden.
 
    ![](assets/local_validation_data_distribution_4.png)
 
    * **[!UICONTROL Value]**: ange fördelningsvärdena.
-   * **[!UICONTROL Percentage / Set]**: Ange postens gräns (fast eller procentuell) som är kopplad till varje värde.
+   * **[!UICONTROL Percentage / Set]**: Ange postgränsen (fast eller i procent) för varje värde.
 
-      Den här kolumnen definieras av **[!UICONTROL Distribution type]** fält i **[!UICONTROL General]** -fliken.
+     Den här kolumnen definieras av **[!UICONTROL Distribution type]** fält i **[!UICONTROL General]** -fliken.
 
    * **[!UICONTROL Label]**: Ange den etikett som är länkad till varje värde.
    * **[!UICONTROL Group or operator]**: om du använder en **[!UICONTROL Local approval]** aktivitet (se [Lokalt godkännande](local-approval.md)) väljer du operatorn eller gruppen med operatorer som tilldelas varje distributionsvärde.
 
-      Om en enkel begränsning är per datagrupp utan lokalt godkännande behöver du inte ange **[!UICONTROL Group or operator]** fält.
+     Om en enkel begränsning är per datagrupp utan lokalt godkännande behöver du inte ange **[!UICONTROL Group or operator]** fält.
 
-      >[!IMPORTANT]
-      >
-      >Se till att operatorerna har tilldelats rätt behörighet.
+     >[!IMPORTANT]
+     >
+     >Se till att operatorerna har tilldelats rätt behörighet.
 
-   * **[!UICONTROL Local entity]**: välj den lokala entitet som tilldelats varje distributionsvärde. Lokala enheter används i **Distribuerad marknadsföring**. Mer information finns i [section](../../distributed/using/about-distributed-marketing.md).
+   * **[!UICONTROL Local entity]**: välj den lokala entitet som tilldelas varje distributionsvärde. Lokala enheter används i **Distribuerad marknadsföring**. Mer information finns i [section](../../distributed/using/about-distributed-marketing.md).
 
 ## Filtreringsparametrar {#filtering-parameters}
 

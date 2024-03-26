@@ -1,18 +1,18 @@
 ---
 product: campaign
-title: Krav för installationen av Campaign i Linux
-description: Krav för installationen av Campaign i Linux
+title: Krav för Campaign-installation i Linux
+description: Krav för Campaign-installation i Linux
 feature: Installation, Instance Settings
 badge-v7-only: label="v7" type="Informative" tooltip="Gäller endast Campaign Classic v7"
-badge-v7-prem: label="lokal och hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=sv" tooltip="Gäller endast lokala och hybrida driftsättningar"
+badge-v7-prem: label="lokal och hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=sv" tooltip="Gäller endast lokala distributioner och hybriddistributioner"
 audience: installation
 content-type: reference
 topic-tags: installing-campaign-in-linux-
 exl-id: acbd2873-7b1c-4d81-bc62-cb1246c330af
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '914'
-ht-degree: 2%
+source-wordcount: '923'
+ht-degree: 1%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 2%
 
 
 
-## Programvarukrav {#software-prerequisites}
+## Krav för programvara {#software-prerequisites}
 
 I det här avsnittet beskrivs de preliminära konfigurationssteg som krävs innan du installerar Adobe Campaign.
 
@@ -43,9 +43,9 @@ Som en påminnelse måste följande komponenter installeras och konfigureras kor
 
 Kontrollera att du har de bibliotek som krävs för att installera Adobe Campaign i Linux.
 
-* Bibliotek C måste ha stöd för TLS-läge (trådlokal lagring). Det här läget är aktivt i de flesta fall utom med vissa kärnor för vilka Xen-stöd har inaktiverats.
+* Bibliotek C måste ha stöd för TLS-läge (Thread Local Storage). Detta läge är aktivt i de flesta fall förutom med vissa kärnor för vilka Xen-stöd har inaktiverats.
 
-  Om du vill kontrollera detta kan du använda **uname -a | grep xen** -kommando till exempel.
+  För att kontrollera detta kan du till exempel använda **kommandot uname -a | grep xen** .
 
   Om kommandot inte returnerar något (tom rad) betyder det att konfigurationen är korrekt.
 
@@ -53,15 +53,15 @@ Kontrollera att du har de bibliotek som krävs för att installera Adobe Campaig
 
   För RHEL 7/8-distributioner krävs version 1.0 av OpenSSL.
 
-* Om du vill använda Adobe Campaign måste du ha **libicu** bibliotek installerat.
+* Om du vill använda Adobe Campaign måste du ha libicu-biblioteket **** installerat.
 
-  Följande versioner av **libicu** stöds (32 eller 64 bitar):
+  Följande versioner av **libicu** stöds (32-bitars eller 64-bitars):
 
    * RHEL 7/8, CentOS 7: libicu50
    * Debian 8: libicu52
    * Debian 9: libicu57
 
-  Om du vill använda Adobe Campaign måste du ha biblioteket för biblioteksservrar installerat. Kör följande kommando på RHEL/CentOS:
+  Om du vill använda Adobe Campaign måste du ha libc-ares-biblioteket installerat. Kör följande kommando på RHEL/CentOS:
 
   ```
   yum install c-ares
@@ -103,7 +103,7 @@ SELINUX=disabled
 
 ### Teckensnitt för MTA-statistik {#fonts-for-mta-statistics}
 
-Lägg till teckensnitt för att rapporter om MTA-statistik (nms/fra/jsp/stat.jsp) ska visas korrekt.
+Om du vill att rapporter om MTA-statistik (nms/fra/jsp/stat.jsp) ska visas korrekt lägger du till teckensnitt.
 
 I Debian lägger du till kommandot:
 
@@ -183,13 +183,13 @@ Kontrollera även det allmänna [Databas](../../installation/using/database.md) 
 
 ### PostgreSQL {#postgresql}
 
-Adobe Campaign stöder alla versioner av PostgreSQL-klientbibliotek från version 7.2: (**libpq.so.5**, **libpq.so.4**, **libpq.so.3.2** och **libpq.so.3.1**).
+Adobe Campaign har stöd för alla versioner av PostgreSQL-klientbiblioteken från version 7.2: (libpq.so.5, libpq.so.4 **,** libpq.so.3.2 **och** libpq.so.3.1 **).******
 
-Om du använder PostgreSQL med Adobe Campaign måste du även installera motsvarande **pgcrypto** bibliotek.
+Om du använder PostgreSQL med Adobe Campaign måste du också installera motsvarande **pgcrypto-bibliotek** .
 
 ### Oracle {#oracle}
 
-Hämta biblioteksversionen för 64-bitars Debian, dvs: **libclntsh.so**, **libclntsh.so.11.1** och **libclntsh.so.10.1**.
+Hämta biblioteksversionen för 64-bitars Debian, d.v.s.: **libclntsh.so**, **libclntsh.so.11.1** och **libclntsh.so.10.1**.
 
 Du kan hämta ett Linux RPM-paket från Oracle Technology Network.
 
@@ -215,7 +215,7 @@ Om du på klientkonsolen ser att det finns oväntade tidsfördröjningar (en ell
 
 1. Se till att klienten och servern använder samma **tidszonsfil**.
 
-### DB2 {#db2}
+### DB2 (på engelska) {#db2}
 
 Den biblioteksversion som stöds är **libdb2.so**.
 
@@ -226,6 +226,6 @@ Adobe Campaign-installationer för Linux måste utföras i följande sekvens: se
 Installationsprocessen beskrivs i det här kapitlet. Installationsstegen är följande:
 
 * Steg 1: Installera programservern, se [Installera paket med Linux](../../installation/using/installing-packages-with-linux.md).
-* Steg 2: Integrera med en webbserver (valfritt, beroende på vilka komponenter som används).
+* Steg 2: Integrera med en webbserver (valfritt, beroende på vilka komponenter som distribueras).
 
-När installationen är klar måste du konfigurera instanserna, databasen och servern. Mer information finns i [Om inledande konfiguration](../../installation/using/about-initial-configuration.md).
+När installationsstegen är klara måste du konfigurera instanserna, databasen och servern. Mer information finns i [Om inledande konfiguration](../../installation/using/about-initial-configuration.md).

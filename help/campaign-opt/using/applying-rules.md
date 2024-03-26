@@ -8,8 +8,8 @@ feature: Typology Rules, Campaigns
 exl-id: 09ec0fc0-76ed-4c73-8bdf-c931e2103aa9
 source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
 workflow-type: tm+mt
-source-wordcount: '990'
-ht-degree: 9%
+source-wordcount: '994'
+ht-degree: 8%
 
 ---
 
@@ -81,10 +81,10 @@ I standarddriftsläget används reglerna i följande sekvens:
    * Filtreringsregler som definieras av användaren.
    * Dedupliceringsregel för adressen eller identifieraren (används om det behövs).
 
-1. Tryckregler.
+1. Tryckregler
 1. Kapacitetsregler.
 1. Kontrollregler, om de tillämpas när målinriktningen är slut.
-1. Kontrollregler, om de tillämpas i början av anpassningen. Om användarreglerna (filtrering/tryck/aktivering) har upphört att gälla och behöver beräknas om, kommer de att tillämpas under det här steget.
+1. Styr regler, om de tillämpas i början av personaliseringen. Om användarreglerna (filtrering/tryck/aktivering) har upphört att gälla och behöver beräknas om, kommer de att tillämpas under det här steget.
 1. Styr reglerna, om de gäller när personaliseringen är klar.
 
 >[!NOTE]

@@ -1,13 +1,13 @@
 ---
 product: campaign
 title: Hantera och anpassa listor
-description: Lär dig hur du bläddrar i och konfigurerar listor
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+description: Lär dig att söka i och konfigurera listor
+badge-v7-only: label="v7" type="Informative" tooltip="Gäller endast Campaign Classic v7"
 feature: Audiences, Data Management
 exl-id: 21656cc2-15a1-4156-8897-ea4fe3e9b97f
 source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
-source-wordcount: '1151'
+source-wordcount: '1160'
 ht-degree: 2%
 
 ---
@@ -42,7 +42,7 @@ Om du vill läsa in alla poster högerklickar du på listan och väljer **[!UICO
 
 ### Ändra standardantal poster {#change-default-number-of-records}
 
-Om du vill ändra standardantalet inlästa poster klickar du på **[!UICONTROL Configure list]** längst ned till höger i listan.
+Om du vill ändra standardantalet inlästa poster klickar du på **[!UICONTROL Configure list]** i listans nedre högra hörn.
 
 ![](assets/s_ncs_user_configure_list.png)
 
@@ -77,13 +77,13 @@ Ett annat sätt att lägga till kolumner, till exempel om du vill visa data som 
 
    >[!NOTE]
    >
-   >Som standard visas inte avancerade fält. Om du vill visa dem klickar du på **Visa avancerade fält** nedan och till höger om listan med tillgängliga fält.
+   >Som standard visas inte avancerade fält. Om du vill visa dem klickar du **Visa avancerade fält** nedan och till höger om listan med tillgängliga fält.
    >
    >Etiketterna visas per tabell och sedan i alfabetisk ordning.
    >
    >Använd **Sök** om du vill göra en sökning i de tillgängliga fälten. Mer information finns i [det här avsnittet](#sorting-a-list).
    >
-   >Fält identifieras av specifika ikoner: SQL-fält, länkade tabeller, beräknade fält osv. För varje markerat fält visas beskrivningen under listan med tillgängliga fält. [Läs mer](#configuring-lists).
+   >Fält identifieras av specifika ikoner: SQL-fält, länkade tabeller, beräkningsfält osv. För varje markerat fält visas beskrivningen under listan med tillgängliga fält. [Läs mer](#configuring-lists).
    >
    >Du kan också sortera och filtrera data. Se [det här avsnittet](../../platform/using/filtering-options.md).
 
@@ -107,7 +107,7 @@ Du kan skapa nya kolumner för att visa ytterligare fält i listan. Så här gö
 
 ### Ta bort en kolumn {#remove-a-column}
 
-Du kan maskera en eller flera kolumner i en lista med poster med **[!UICONTROL Configure list]** som finns nedanför och till höger om listan.
+Du kan maskera en eller flera kolumner i en lista med poster med hjälp av **[!UICONTROL Configure list]** som finns nedanför och till höger om listan.
 
 ![](assets/s_ncs_user_configure_list.png)
 
@@ -138,7 +138,7 @@ Listkonfigurationerna definieras lokalt på arbetsstationsnivå. När den lokala
 
 Som standard gäller de definierade visningsparametrarna för alla listor med motsvarande mapptyp. När du ändrar hur listan med mottagare visas från en mapp kommer den här konfigurationen att användas för alla övriga mottagarmappar.
 
-Det går dock att spara mer än en konfiguration som ska användas på olika mappar av samma typ. Konfigurationen sparas med egenskaperna för den mapp som innehåller data och kan tillämpas igen.
+Det går dock att spara mer än en konfiguration som ska användas på olika mappar av samma typ. Konfigurationen sparas med egenskaperna för den mapp som innehåller data och kan tillämpas på nytt.
 
 För en leveransmapp är det till exempel möjligt att konfigurera följande visning:
 
@@ -164,7 +164,7 @@ Klicka **[!UICONTROL Save]** i fönstret för mappegenskaper. Listvisningen har 
 
 ## Exportera en lista {#exporting-a-list}
 
-Om du vill exportera data från en lista måste du använda en exportguide. Du kommer åt den genom att markera elementen som ska exporteras i listan, högerklicka och välja **[!UICONTROL Export...]**.
+Om du vill exportera data från en lista måste du använda en exportguide. Du kommer åt den genom att markera de element som ska exporteras i listan, högerklicka och välja **[!UICONTROL Export...]**.
 
 Användningen av import- och exportfunktionerna förklaras i [Allmän import och export](../../platform/using/about-generic-imports-exports.md).
 
@@ -178,13 +178,13 @@ Listor kan innehålla en stor mängd data. Du kan sortera dessa data eller anvä
 
 Klicka på kolumnrubriken om du vill använda en stigande eller fallande sortering eller om du vill avbryta sorteringen. Aktiv sorteringsstatus och sorteringsordning anges med en blå pil före kolumnetiketten. Ett rött streck före kolumnetiketten betyder att sorteringen tillämpas på data som indexeras från databasen. Den här sorteringsmetoden används för att optimera sorteringsjobb.
 
-Du kan också konfigurera sortering eller kombinera sorteringsvillkor. Följ stegen nedan för att göra detta:
+Du kan också konfigurera sortering eller kombinera sorteringsvillkor. Gör så här:
 
 1. **[!UICONTROL Configure list]** nedan och till höger om listan.
 
    ![](assets/s_ncs_user_configure_list.png)
 
-1. Klicka på knappen **[!UICONTROL Sorting]** -fliken.
+1. I fönstret för listkonfiguration klickar du på **[!UICONTROL Sorting]** -fliken.
 1. Markera de fält som ska sorteras och sorteringsriktningen (stigande eller fallande).
 
    ![](assets/s_ncs_user_configurelist_sort.png)

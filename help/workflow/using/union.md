@@ -2,13 +2,13 @@
 product: campaign
 title: Sammanslutning
 description: Läs mer om unionens arbetsflödesaktivitet
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+badge-v7-only: label="v7" type="Informative" tooltip="Gäller endast Campaign Classic v7"
 feature: Workflows, Targeting Activity
 exl-id: 1cda3146-c333-4743-a871-c44583b6e5b2
 source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
-source-wordcount: '305'
-ht-degree: 1%
+source-wordcount: '312'
+ht-degree: 2%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 1%
 
 
 
-En union grupperar resultatet av flera inkommande aktiviteter i ett enda mål. Målet skapas med alla mottagna resultat: Alla tidigare aktiviteter måste därför avslutas för att unionen ska kunna genomföras.
+En union grupperar resultatet av flera inkommande aktiviteter i ett enda mål. Målet skapas med alla erhållna resultat: alla tidigare aktiviteter måste därför avslutas för att unionen ska kunna köras.
 
 ![](assets/s_user_segmentation_union.png)
 
@@ -31,7 +31,7 @@ I följande exempel har resultaten från två frågor kombinerats för att uppda
 1. Infoga en **[!UICONTROL Union]** -type-aktivitet direkt efter de två frågorna och innan en aktivitet av typen update i listan startar du den.
 1. Du kan ange en etikett.
 1. Välj **[!UICONTROL Keys only]** avstämningsmetod eftersom populationen som är ett resultat av frågor i det här exemplet innehåller konsekventa data.
-1. Om du har lagt till ytterligare data för frågorna kan du bestämma dig för att bara behålla de data som delas.
+1. Om du har lagt till ytterligare data för frågorna kan du bestämma dig för att behålla endast de data som delas.
 1. Om du vill begränsa storleken på den slutliga populationen kontrollerar du **[!UICONTROL Limit size of generated population]** box.
 
    Ange det slutliga talet genom att ange det maximala antalet mottagare och genom att välja frågan vars population ska prioriteras.

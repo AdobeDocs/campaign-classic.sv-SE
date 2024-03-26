@@ -7,8 +7,8 @@ badge-v7-only: label="v7" type="Informative" tooltip="Gäller endast Campaign Cl
 exl-id: 2c678f45-2555-4647-9885-bd002db7df37
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '372'
-ht-degree: 2%
+source-wordcount: '343'
+ht-degree: 3%
 
 ---
 
@@ -74,7 +74,7 @@ Du måste skapa en [!DNL PostgreSQL] externt konto för att ansluta Campaign-ins
 
 Kopplingen stöder följande alternativ:
 
-| Option | Beskrivning |
+| Alternativ | Beskrivning |
 |:-:|:-:|
 | PGSQL_CONNECT_TIMEOUT | Maximal väntetid på anslutningen, i sekunder. <br>Mer information finns i [PostgreSQL-dokumentation](https://www.postgresql.org/docs/12/libpq-connect.html#LIBPQ-CONNECT-CONNECT-TIMEOUT). |
 | PGSQL_KEEPALIVES_IDLE | Antal sekunder av inaktivitet efter vilket TCP ska skicka ett meddelande om keepalive till servern. <br>Mer information finns i [PostgreSQL-dokumentation](https://www.postgresql.org/docs/12/libpq-connect.html#LIBPQ-KEEPALIVES-IDLE). |

@@ -1,14 +1,14 @@
 ---
 product: campaign
 title: Bygg ett arbetsflöde
-description: Lär dig hur du skapar ett arbetsflöde
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+description: Lär dig skapa ett arbetsflöde
+badge-v7-only: label="v7" type="Informative" tooltip="Gäller endast Campaign Classic v7"
 feature: Workflows
 exl-id: 8ba20ccd-b03f-4c4f-87c1-a21e80d8e4be
 source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
-source-wordcount: '1623'
-ht-degree: 3%
+source-wordcount: '1631'
+ht-degree: 1%
 
 ---
 
@@ -46,7 +46,7 @@ Ange en etikett och klicka på **[!UICONTROL Save]**.
 
 ## Lägg till och länka aktiviteter {#adding-and-linking-activities}
 
-Du måste nu definiera de olika aktiviteterna och koppla samman dem i diagrammet. I det här skedet av konfigurationen kan vi se diagrametiketten och arbetsflödesstatusen (Redigering pågår). Fönstrets nedre del används endast för att redigera diagrammet. Den innehåller ett verktygsfält, en palett med aktiviteter (till vänster) och själva diagrammet (till höger).
+Du måste nu definiera de olika aktiviteterna och länka samman dem i diagrammet. I det här skedet av konfigurationen kan vi se diagrametiketten och arbetsflödesstatusen (Redigering pågår). Fönstrets nedre del används endast för att redigera diagrammet. Den innehåller ett verktygsfält, en palett med aktiviteter (till vänster) och själva diagrammet (till höger).
 
 ![](assets/new-workflow-2.png)
 
@@ -61,9 +61,9 @@ Aktiviteter grupperas efter kategori på palettens olika flikar. Tillgängliga f
 * Den tredje fliken innehåller verktyg och åtgärder som kan användas i arbetsflödet. Dessa aktiviteter beskrivs närmare i [Verksamheter](about-action-activities.md).
 * Den fjärde fliken innehåller aktiviteter som är beroende av en viss händelse, till exempel att ett e-postmeddelande tas emot eller att en fil tas emot på en server. Dessa aktiviteter beskrivs närmare i [Evenemangsaktiviteter](about-event-activities.md).
 
-Så här skapar du diagrammet
+Skapa diagrammet
 
-1. Lägg till en aktivitet genom att markera den på paletten och flytta den till diagrammet med dra-och-släpp.
+1. Lägg till en aktivitet genom att markera den på paletten och flytta den till diagrammet med dra-och-släpp-funktionen.
 
    Lägg till en **Starta** aktivitet och sedan en **Leverans** aktivitet i diagrammet.
 
@@ -87,28 +87,28 @@ Du kan ändra visning och layout för diagrammet med följande element:
 
 * **Använda verktygsfältet**
 
-   Verktygsfältet för diagramredigering ger dig tillgång till arbetsflödets layout- och körningsfunktioner.
+  Verktygsfältet för diagramredigering ger dig tillgång till arbetsflödets layout- och körningsfunktioner.
 
-   ![](assets/s_user_segmentation_wizard_10.png)
+  ![](assets/s_user_segmentation_wizard_10.png)
 
-   På så sätt kan du anpassa layouten för redigeringsverktyget: visning av paletten och översikt, storlek och justering av grafiska objekt.
+  På så sätt kan du anpassa layouten för redigeringsverktyget: hur paletten visas och översikten, storleken och justeringen av grafiska objekt.
 
-   ![](assets/s_user_segmentation_toolbar.png)
+  ![](assets/s_user_segmentation_toolbar.png)
 
-   Ikoner för förlopp och visning av loggar beskrivs i följande avsnitt:
+  Ikoner för förlopp och visning av loggar beskrivs i följande avsnitt:
 
    * [Visa förlopp](../../workflow/using/monitoring-workflow-execution.md#displaying-progress)
    * [Visa loggar](../../workflow/using/monitoring-workflow-execution.md#displaying-logs)
 
 * **Objektjustering**
 
-   Om du vill justera ikoner markerar du dem och klickar på **[!UICONTROL Align vertically]** eller **[!UICONTROL Align horizontally]** ikon.
+  Om du vill justera ikoner markerar du dem och klickar på **[!UICONTROL Align vertically]** eller **[!UICONTROL Align horizontally]** -ikon.
 
-   Använd **CTRL** för att markera flera utspridda aktiviteter eller för att avmarkera en eller flera aktiviteter. Klicka på diagrambakgrunden för att avmarkera allt.
+  Använd **CTRL** för att markera flera utspridda aktiviteter eller för att avmarkera en eller flera aktiviteter. Klicka på diagrambakgrunden för att avmarkera allt.
 
 * **Bildhantering**
 
-   Du kan anpassa bakgrundsbilden för diagrammet samt de som hör till de olika aktiviteterna. Se [Ändra aktivitetsbilder](managing-activity-images.md).
+  Du kan anpassa bakgrundsbilden för diagrammet samt de som hör till de olika aktiviteterna. Se [Ändra aktivitetsbilder](managing-activity-images.md).
 
 ## Konfigurera aktiviteter {#configuring-activities}
 
@@ -120,11 +120,11 @@ Dubbelklicka på en aktivitet för att konfigurera den eller högerklicka och v�
 
 Den första fliken innehåller den grundläggande konfigurationen. The **[!UICONTROL Advanced]** -fliken innehåller ytterligare parametrar, som används särskilt för att definiera beteenden när ett fel påträffas, ange körningstiden för en aktivitet och för att ange ett initieringsskript.
 
-Om du vill få en bättre förståelse för aktiviteterna och om du vill förbättra arbetsflödets läsbarhet kan du skriva kommentarer i aktiviteterna: dessa visas automatiskt när operatorer rullar över aktiviteten.
+För att få en bättre förståelse för aktiviteterna och för att arbetsflödet ska bli mer lättläst kan du ange kommentarer i aktiviteterna: dessa visas automatiskt när operatorer rullar över aktiviteten.
 
 ![](assets/example1-comment.png)
 
-## Arbetsflöden för målinriktning {#targeting-workflows}
+## Målarbetsflöden {#targeting-workflows}
 
 Med målarbetsflöden kan du skapa flera leveransmål. Du kan skapa frågor, definiera fackföreningar eller undantag baserat på specifika villkor, lägga till schemaläggning tack vare arbetsflödesaktiviteter. Resultatet av den här målsättningen kan automatiskt överföras till en lista som kan fungera som mål för leveransåtgärder
 
@@ -154,7 +154,7 @@ Resultaten av alla berikningar och all hantering som utförs under målgruppsanp
 
 ### Målinriktning och filtrering {#targeting-and-filtering-dimensions}
 
-Vid datasegmenteringsåtgärder mappas målnyckeln till en filtreringsdimension. Med måldimensionen kan du definiera målgruppen för åtgärden: mottagare, mottagare, mottagare, operatör, abonnenter osv. Filtreringsdimensionen gör att du kan välja populationen baserat på vissa kriterier: kontraktsägare, nyhetsbrev, prenumeranter osv.
+Vid datasegmenteringsåtgärder mappas målnyckeln till en filtreringsdimension. Med målinriktningsdimensionen kan du definiera målgruppen för operationen: mottagare, mottagare, operatör, prenumeranter osv. Med filtreringsdimensionen kan du välja populationen baserat på vissa kriterier: avtalsägare, nyhetsbrevets prenumeranter osv.
 
 Om du till exempel vill välja kunder som har haft en livförsäkring i över 5 år väljer du följande målgruppsdimension: **Klienter** och följande filterdimension: **Kontraktsinnehavare**. Du kan sedan definiera filtervillkoren i frågeaktiviteten
 
@@ -194,7 +194,7 @@ Tekniska arbetsflöden medföljer Adobe Campaign. De är åtgärder eller jobb s
 
 Inbyggda mallar finns för att skapa tekniska arbetsflöden. De kan konfigureras så att de passar dina behov.
 
-The **[!UICONTROL Campaign process]** undermappen centraliserar de arbetsflöden som krävs för att köra processer i kampanjer: aktivitetsavisering, lagerhantering, kostnadsberäkning osv.
+The **[!UICONTROL Campaign process]** undermappen centraliserar de arbetsflöden som krävs för att köra processer inom kampanjer: aktivitetsmeddelande, lagerhantering, kostnadsberäkning osv.
 
 >[!NOTE]
 >
@@ -240,7 +240,7 @@ Men du kan skapa en vy som visar alla arbetsflöden i instansen. I den här vyn 
 
 **Skapa en vy**
 
-1. I **Utforskaren** går du till den mapp du behöver för att skapa vyn i.
+1. I **Explorer** går du till den mapp du behöver för att skapa vyn i.
 1. Högerklicka och gå till **Lägg till en ny mapp** > **Process**, markera **Arbetsflöden**.
 
    ![](assets/add-new-folder-workflows.png)

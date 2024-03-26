@@ -10,8 +10,8 @@ topic-tags: advanced-parameters
 exl-id: 083be073-aad4-4c81-aff2-77f5ef3e80db
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '1018'
-ht-degree: 1%
+source-wordcount: '1021'
+ht-degree: 2%
 
 ---
 
@@ -64,7 +64,7 @@ Interaktionspaketet måste installeras på alla instanser (kontroll och körning
 
 >[!NOTE]
 >
->När du installerar paketet **long** typfält i **nms:förslag** tabell som t.ex. förslags-ID, blir **int64** textfält. Den här typen av data beskrivs i [det här avsnittet](../../configuration/using/schema-structure.md#mapping-the-types-of-adobe-campaign-dbms-data).
+>När du installerar paketet **long** typfält för **nms:förslag** tabell som t.ex. förslags-ID, blir **int64** textfält. Den här typen av data beskrivs i [det här avsnittet](../../configuration/using/schema-structure.md#mapping-the-types-of-adobe-campaign-dbms-data).
 
 Varaktigheten för datalagring måste konfigureras för varje instans (via **[!UICONTROL Data purge]** i distributionsguiden). För körningsinstanser måste denna period motsvara det historiska djup som krävs för att typologiregler (glidande period) och regler för stödberättigande ska kunna beräknas.
 

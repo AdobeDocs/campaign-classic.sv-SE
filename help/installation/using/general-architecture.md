@@ -1,6 +1,6 @@
 ---
 product: campaign
-title: Campaign Classic allmän arkitektur
+title: Campaign Classicens allmänna arkitektur
 description: Lär dig installera och konfigurera Campaign Classic
 feature: Installation, Architecture
 badge-v7-only: label="v7" type="Informative" tooltip="Gäller endast Campaign Classic v7"

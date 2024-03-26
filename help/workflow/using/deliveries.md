@@ -2,12 +2,12 @@
 product: campaign
 title: Leveranser
 description: Läs mer om standardarbetsflöden för leveranser
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+badge-v7-only: label="v7" type="Informative" tooltip="Gäller endast Campaign Classic v7"
 feature: Workflows
 source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
-source-wordcount: '323'
-ht-degree: 4%
+source-wordcount: '331'
+ht-degree: 6%
 
 ---
 
@@ -28,7 +28,7 @@ Arbetsflödena nedan installeras tillsammans med **Leveranser** som standard.
   <tr> 
    <td> <span class="uicontrol">Rapporteringsaggregat</span> <br /> </td> 
    <td> <span class="uicontrol">reportingAggregates</span> <br /> </td> 
-   <td> Det här arbetsflödet uppdaterar aggregat som används i rapporter. Den aktiveras varje dag klockan 2 som standard.<br /> </td> 
+   <td> Det här arbetsflödet uppdaterar aggregat som används i rapporter. Den aktiveras varje dag kl. 2.00 som standard.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">Fakturering</span> <br /> </td> 
@@ -48,12 +48,12 @@ Arbetsflödena nedan installeras tillsammans med **Leveranser** som standard.
   <tr> 
    <td> <span class="uicontrol">Databasrensning</span> <br /> </td> 
    <td> <span class="uicontrol">cleanup</span> <br /> </td> 
-   <td> <p>Det här arbetsflödet är arbetsflödet för databasunderhåll: utför olika beräkningar från statistiken och processerna och tar bort föråldrade data från databasen enligt den definierade konfigurationen i distributionsassistenten. Den aktiveras varje dag klockan fyra som standard.</p> <p>Mer information finns i <a href="../../production/using/database-cleanup-workflow.md">page</a>.</p> </td> 
+   <td> <p>Det här arbetsflödet är arbetsflödet för databasunderhåll: det utför andra beräkningar än statistik och processer och tar bort föråldrade data från databasen enligt den definierade konfigurationen i distributionsassistenten. Den aktiveras varje dag klockan fyra som standard.</p> <p>Mer information finns i <a href="../../production/using/database-cleanup-workflow.md">page</a>.</p> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">Rensa pausade arbetsflöden</span> <br /> </td> 
    <td> <span class="uicontrol">cleanupPausedWorkflows</span> <br /> </td> 
-   <td> <p>Det här arbetsflödet analyserar pausade arbetsflöden som har allvarlighetsgraden inställd på normal och utlöser varningar och meddelanden när de har pausats för länge. Efter en månad stoppas de pausade tekniska arbetsflödena ovillkorligt. Som standard utlöses den varje måndag kl. 5.</p> <p>Mer information finns i <a href="monitoring-workflow-execution.md#handling-of-paused-workflows" target="_blank">Hantering av pausade arbetsflöden</a>.</p></td> 
+   <td> <p>Det här arbetsflödet analyserar pausade arbetsflöden som har allvarlighetsgraden inställd på normal och utlöser varningar och meddelanden när de har pausats för länge. Efter en månad stoppas tekniska arbetsflöden ovillkorligt. Som standard utlöses den varje måndag kl. 5.</p> <p>Mer information finns i <a href="monitoring-workflow-execution.md#handling-of-paused-workflows" target="_blank">Hantering av pausade arbetsflöden</a>.</p></td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">Meddelande om erbjudande</span> <br /> </td> 

@@ -2,12 +2,12 @@
 product: campaign
 title: Om arbetsflöden
 description: Automatisera processerna med arbetsflöden, hantera data och målgrupper, skicka meddelanden med mera
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+badge-v7-only: label="v7" type="Informative" tooltip="Gäller endast Campaign Classic v7"
 feature: Workflows, Data Management
 exl-id: 51be6b90-2a7a-4757-9754-d16c540a87ff
 source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
-source-wordcount: '650'
+source-wordcount: '657'
 ht-degree: 26%
 
 ---
@@ -29,8 +29,8 @@ Arbetsflöden sker i olika sammanhang och under olika faser av kampanjhanterings
 Adobe Campaign använder arbetsflöden för att
 
 * Utför riktade kampanjer. [Läs mer](building-a-workflow.md#implementation-steps-)
-* Skapa kampanjer: för varje kampanj, **[!UICONTROL Workflow]** kan du skapa målet och leverera. [Läs mer](building-a-workflow.md#campaign-workflows)
-* Utför tekniska processer: rensning, insamling av spårningsinformation eller preliminära beräkningar. [Läs mer](building-a-workflow.md#technical-workflows)
+* Skapa kampanjer: för varje kampanj finns **[!UICONTROL Workflow]** kan du skapa målet och leverera. [Läs mer](building-a-workflow.md#campaign-workflows)
+* Utför tekniska processer: rensa, samla in spårningsinformation eller preliminära beräkningar. [Läs mer](building-a-workflow.md#technical-workflows)
 
 Ett arbetsflöde kan betyda både en processdefinition (arbetsflödesmodellen, som är en representation av vad som ska hända) och en instans av den här processen (en arbetsflödesinstans, som är en representation av vad som faktiskt händer).
 
@@ -42,36 +42,36 @@ Varje arbetsflöde innehåller:
 
 * **[!UICONTROL Activities]**
 
-   En aktivitet beskriver en uppgiftsmall. De olika aktiviteterna som är tillgängliga visas i diagrammet med ikoner. Varje typ har gemensamma egenskaper och specifika egenskaper. Alla aktiviteter har till exempel ett namn och en etikett, men bara **[!UICONTROL Approval]** aktiviteten har ett uppdrag.
+  En aktivitet beskriver en uppgiftsmall. De olika aktiviteterna som är tillgängliga visas i diagrammet med ikoner. Varje typ har gemensamma egenskaper och specifika egenskaper. Alla aktiviteter har till exempel ett namn och en etikett, men bara **[!UICONTROL Approval]** aktiviteten har ett uppdrag.
 
-   I ett arbetsflödesdiagram kan en viss aktivitet producera flera uppgifter, särskilt när det finns en slinga eller återkommande (periodiska) åtgärder.
+  I ett arbetsflödesdiagram kan en viss aktivitet producera flera uppgifter, särskilt när det finns en slinga eller återkommande (periodiska) åtgärder.
 
-   Alla arbetsflödesaktiviteter listas i [det här avsnittet](about-activities.md), inklusive användningsfall och prover.
+  Alla arbetsflödesaktiviteter listas i [det här avsnittet](about-activities.md), inklusive användningsfall och prover.
 
 * **[!UICONTROL Transitions]**
 
-   Med övergångar kan du länka aktiviteter och definiera deras sekvens. En övergång länkar en källaktivitet till en målaktivitet. Det finns flera typer av övergångar, som är beroende av källaktiviteten. Vissa övergångar har ytterligare parametrar som längd, villkor eller filter.
+  Med övergångar kan du länka aktiviteter och definiera deras sekvens. En övergång länkar en källaktivitet till en målaktivitet. Det finns flera typer av övergångar, som är beroende av källaktiviteten. Vissa övergångar har ytterligare parametrar som längd, villkor eller filter.
 
-   En övergång som inte är länkad till en målaktivitet får färgen orange och pilhuvudet visas som en romb.
+  En övergång som inte är länkad till en målaktivitet får färgen orange och pilhuvudet visas som en romb.
 
-   >[!NOTE]
-   >
-   >Ett arbetsflöde som innehåller oavslutade övergångar kan fortfarande köras: ett varningsmeddelande genereras och arbetsflödet pausas när övergången är klar, men det genererar inget fel. Det är alltså möjligt att starta ett arbetsflöde utan att det är färdigt och att lägga till i det när du går vidare.
+  >[!NOTE]
+  >
+  >Ett arbetsflöde som innehåller oavslutade övergångar kan fortfarande köras: ett varningsmeddelande genereras och arbetsflödet pausas när det når övergången, men det genererar inget fel. Det är alltså möjligt att starta ett arbetsflöde utan att det är färdigt och att lägga till i det när du går vidare.
 
-   Mer information om hur du skapar ett arbetsflöde finns i [det här avsnittet](building-a-workflow.md).
+  Mer information om hur du skapar ett arbetsflöde finns i [det här avsnittet](building-a-workflow.md).
 
 * **[!UICONTROL Worktables]**
 
-   Arbetstabellen innehåller all information som övergången innehåller. Varje arbetsflöde använder flera arbetstabeller. Data som förmedlas i dessa tabeller kan accelereras och användas under arbetsflödets hela livscykel, så länge de inte rensas. Det går att tömma tabeller som inte behövs varje gång arbetsflödet är passivat och eventuellt under körningen av de största arbetsflödena för att undvika att servern överbelastas.
+  Arbetstabellen innehåller all information som övergången innehåller. För varje arbetsflöde används flera arbetstabeller. Data som förmedlas i dessa tabeller kan accelereras och användas under arbetsflödets hela livscykel, så länge de inte rensas. Det går att tömma tabeller som inte behövs varje gång arbetsflödet är passivat och eventuellt under körningen av de största arbetsflödena för att undvika att servern överbelastas.
 
-   Läs mer om arbetsflödesdata och tabeller i [det här avsnittet](how-to-use-workflow-data.md).
+  Läs mer om arbetsflödesdata och tabeller i [det här avsnittet](how-to-use-workflow-data.md).
 
 ## Viktiga principer och bästa metoder{#principles-workflows}
 
 I dessa avsnitt hittar du vägledning och bästa metoder för att automatisera processer med arbetsflöden:
 
 * Läs mer om arbetsflödesaktiviteter i [den här sidan](how-to-use-workflow-data.md).
-* Lär dig hur du skapar ett arbetsflöde i [det här avsnittet](building-a-workflow.md).
+* Lär dig skapa ett arbetsflöde i [det här avsnittet](building-a-workflow.md).
 * Upptäck hur du använder arbetsflöden för att importera data i Campaign i [det här avsnittet](../../platform/using/import-export-workflows.md).
 * De effektivaste strategierna för arbetsflöden beskrivs i [den här sidan](workflow-best-practices.md).
 * Hitta vägledning om arbetsflödeskörning i [det här avsnittet](starting-a-workflow.md).

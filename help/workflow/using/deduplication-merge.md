@@ -1,13 +1,13 @@
 ---
 title: Använda sammanfogningsfunktionen för aktiviteten Deduplicering
-description: Lär dig hur du använder funktionen för sammanfogning av dedupliceringsaktiviteter
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+description: Lär dig hur du använder funktionen för sammanfogning av borttagning av dubbletter i aktiviteten
+badge-v7-only: label="v7" type="Informative" tooltip="Gäller endast Campaign Classic v7"
 feature: Workflows, Data Management
 exl-id: a6b10585-7bf9-4fef-b886-db081b6d3acc
 source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
-source-wordcount: '550'
-ht-degree: 5%
+source-wordcount: '577'
+ht-degree: 3%
 
 ---
 
@@ -25,9 +25,9 @@ The **[!UICONTROL Deduplication]** används för att ta bort dubblettrader från
 
 | Senaste ändringsdatum | Förnamn | Efternamn | E-post | Mobiltelefon | Telefon |
 |-----|------------|-----------|-------|--------------|------|
-| 5/19/2020 | Robert | Tisner | bob@mycompany.com | 444-444-444 | 777-777-7777 |
-| 7/22/2020 | Bobby | Tisner | bob@mycompany.com |  | 777-777-7777 |
-| 10/03/2020 | Bob |  | bob@mycompany.com |  | 888-888-8888 |
+| 5/19/2020 | Robert | Tisner | bob@mycompany.com | 444-444-444 | 777-777-777 |
+| 7/22/2020 | Bobby | Tisner | bob@mycompany.com | | 777-777-777 |
+| 10/03/2020 | Bob |  | bob@mycompany.com | | 888-888-8888 |
 
 Med dedupliceringsaktivitetens **[!UICONTROL Merge]** kan du konfigurera en uppsättning regler för borttagning av dubbletter för att definiera en grupp med fält som ska sammanfogas till en enda resulterande datapost. Om du till exempel har en uppsättning dubblettposter kan du välja att behålla det äldsta telefonnumret eller det senaste namnet.
 
@@ -42,7 +42,7 @@ Om du vill aktivera sammanfogningsfunktionen måste du först konfigurera **[!UI
 
    ![](assets/uc_merge_edit.png)
 
-1. Klicka på **[!UICONTROL Advanced parameters]** aktivera sedan **[!UICONTROL Merge records]** och **[!UICONTROL Use several record merging criteria]** alternativ.
+1. Klicka på **[!UICONTROL Advanced parameters]** länk, aktivera sedan **[!UICONTROL Merge records]** och **[!UICONTROL Use several record merging criteria]** alternativ.
 
    ![](assets/uc_merge_advanced_parameters.png)
 
@@ -53,7 +53,7 @@ Om du vill aktivera sammanfogningsfunktionen måste du först konfigurera **[!UI
 Här är de regler vi vill använda för att sammanfoga data till en enda post:
 
 * Behåll det senaste namnet (för- och efternamnsfält).
-* Behåll den senaste mobiltelefonen,
+* Behåll den senaste mobiltelefonen
 * Behåll det äldsta telefonnumret,
 * Alla fält i en grupp måste vara icke-null för att vara kvalificerade för den sista posten.
 
@@ -93,9 +93,9 @@ När dessa regler har konfigurerats tas följande data emot i slutet av **[!UICO
 
 | Ändringsdatum | Förnamn | Efternamn | E-post | Mobiltelefon | Telefon |
 |-----|------------|-----------|-------|--------------|------|
-| 5/19/2020 | Robert | Tisner | bob@mycompany.com | 444-444-444 | 777-777-7777 |
-| 7/22/2020 | Bobby | Tisner | bob@mycompany.com |  | 777-777-7777 |
-| 10/03/2020 | Bob |  | bob@mycompany.com |  | 888-888-8888 |
+| 5/19/2020 | Robert | Tisner | bob@mycompany.com | 444-444-444 | 777-777-777 |
+| 7/22/2020 | Bobby | Tisner | bob@mycompany.com | | 777-777-777 |
+| 10/03/2020 | Bob |  | bob@mycompany.com | | 888-888-8888 |
 
 Resultatet sammanfogas från de tre posterna enligt reglerna som konfigurerats tidigare. Efter jämförelsen dras slutsatsen att det senaste namnet och mobiltelefonen används tillsammans med det ursprungliga telefonnumret.
 

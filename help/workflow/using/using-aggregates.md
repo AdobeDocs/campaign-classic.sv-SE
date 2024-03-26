@@ -1,14 +1,14 @@
 ---
 product: campaign
 title: Använd aggregat
-description: Lär dig använda aggregat
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+description: Lär dig hur du använder aggregat
+badge-v7-only: label="v7" type="Informative" tooltip="Gäller endast Campaign Classic v7"
 feature: Workflows
 exl-id: 12b173e9-5068-4d45-9e1e-2aecc9866e9c
 source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
-source-wordcount: '612'
-ht-degree: 2%
+source-wordcount: '622'
+ht-degree: 3%
 
 ---
 
@@ -38,7 +38,7 @@ Att utföra en **Skapad = max (Skapad den)** type-filter på mottagarna måste d
 
    ![](assets/datamanagement_usecase_2.png)
 
-1. Klicka **[!UICONTROL Edit additional data]** och sen **[!UICONTROL Advanced parameters...]**. Markera alternativet **[!UICONTROL Disable automatic adding of the primary keys of the targeting dimension]**.
+1. Klicka **[!UICONTROL Edit additional data]** sedan **[!UICONTROL Advanced parameters...]**. Markera alternativet **[!UICONTROL Disable automatic adding of the primary keys of the targeting dimension]**.
 
    Med det här alternativet ser du till att alla mottagare inte visas som ett resultat och att data som läggs till explicit inte behålls. I det här fallet avser det det senaste datumet då en mottagare skapades.
 
@@ -64,12 +64,12 @@ Sammanställningsresultatet är därför kopplat till alla mottagare.
 När länken har upprättats utgör det sammanställda resultatet och mottagarna en del av samma tillfälliga schema. Det är därför möjligt att skapa ett filter i schemat för att jämföra det datum när mottagarna skapades och det senaste kända skapandedatumet, som representeras av aggregeringsfunktionen. Filtret utförs med en delad aktivitet.
 
 1. I **[!UICONTROL General]** flik, välja **Mottagare** som målgruppsdimension och **Redigera schema** som filtreringsdimension (för att filtrera på aktiviteten för inkommande övergångsschema).
-1. I **[!UICONTROL subsets]** flik, välja **[!UICONTROL Add a filtering condition on the inbound population]** sedan klicka **[!UICONTROL Edit...]**.
+1. I **[!UICONTROL subsets]** flik, välja **[!UICONTROL Add a filtering condition on the inbound population]** klicka sedan på **[!UICONTROL Edit...]**.
 1. Använd uttrycksredigeraren för att lägga till ett likhetskriterium mellan det datum då mottagarna skapades och det datum när de skapades som beräknas av sammanställningen.
 
-   Datumtypsfälten i databasen sparas vanligtvis på millisekunder. Du måste därför utöka dessa för hela dagen för att undvika att ta emot mottagare som bara skapats för samma millisekund.
+   Datumtypsfälten i databasen sparas vanligtvis på millisekunderna. Du måste därför utöka dessa för hela dagen för att undvika att ta emot mottagare som bara skapats för samma millisekund.
 
-   Om du vill göra det använder du **TillDatum** -funktion, som finns i uttrycksredigeraren, som konverterar datum och timmar till enkla datum.
+   Använd **TillDatum** -funktion, som finns i uttrycksredigeraren, som konverterar datum och timmar till enkla datum.
 
    De uttryck som ska användas för kriterierna är därför:
 
@@ -80,4 +80,4 @@ När länken har upprättats utgör det sammanställda resultatet och mottagarna
 
 Resultatet av den delade aktiviteten relaterar därmed till mottagarna som skapades samma dag som det senast kända skapandedatumet.
 
-Du kan sedan lägga till andra aktiviteter, till exempel en listuppdatering eller leverans, för att förbättra arbetsflödet.
+Du kan sedan lägga till andra aktiviteter, till exempel en listuppdatering eller en leverans, för att förbättra arbetsflödet.

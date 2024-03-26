@@ -12,7 +12,7 @@ hidefromtoc: true
 exl-id: 3743d018-3316-4ce3-ae1c-25760aaf5785
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '1099'
+source-wordcount: '1095'
 ht-degree: 0%
 
 ---
@@ -351,7 +351,7 @@ If you are migrating from v6.02 or earlier, you must configure your security zon
 Starta IIS- och Adobe Campaign-tjänsterna på följande servrar:
 
 1. Spårnings- och omdirigeringsserver.
-1. Server för mid-sourcing.
+1. Server för mellanpublicering.
 1. Marknadsföringsserver.
 
 Innan du går vidare till nästa steg kör du ett fullständigt test av den nya installationen, kontrollerar att det inte finns några regressioner och att allt fungerar.

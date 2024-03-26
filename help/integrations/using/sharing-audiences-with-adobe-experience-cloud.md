@@ -11,8 +11,8 @@ topic-tags: audience-sharing
 exl-id: 1c90e913-3375-476c-ab60-89f20239eb0d
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '314'
-ht-degree: 6%
+source-wordcount: '307'
+ht-degree: 0%
 
 ---
 
@@ -41,6 +41,6 @@ Den här integreringen stöder två typer av Adobe Experience Cloud ID:
 
   >[!NOTE]
   >
-  > Deklarerad  ID-datakälla kan nu även användas med integreringen av den grundläggande tjänsten People.
+  > Deklarerad ID-datakälla kan nu även användas med integreringen av huvudtjänsten People.
   >
   >Om du använder integreringen med huvudtjänsten Kontakter och vill lägga till integreringen med Audience Manager måste du få hjälp av en Adobe Audience Manager-konsults för att undvika att förlora alla ID-synkroniseringar som samlas in när du går över till att använda den här deklarerade ID-datakällan i ett Adobe Audience Manager-sammanhang.

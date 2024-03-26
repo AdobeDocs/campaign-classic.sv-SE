@@ -9,8 +9,8 @@ role: User
 exl-id: 8d155844-d18a-4165-9886-c3b144109f6e
 source-git-commit: abaeef25b03a9699a4851786380d467bfa299c9f
 workflow-type: tm+mt
-source-wordcount: '877'
-ht-degree: 2%
+source-wordcount: '873'
+ht-degree: 1%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 2%
 
 Personaliseringsblock är dynamiska, personaliserade och innehåller en specifik rendering som du kan infoga i leveranserna. Du kan till exempel lägga till en logotyp, ett gratulationsmeddelande eller en länk till en spegelsida. Se [Infoga personaliseringsblock](#inserting-personalization-blocks).
 
-![](assets/do-not-localize/how-to-video.png)[ Upptäck den här funktionen i en video](#personalization-blocks-video)
+![](assets/do-not-localize/how-to-video.png) Upptäck den här funktionen [i video](#personalization-blocks-video)
 
 Personaliseringsblocken nås via **[!UICONTROL Resources > Campaign Management > Personalization blocks]** noden i Adobe Campaign Explorer. Flera block är tillgängliga som standard (se [Körklara personaliseringsblock](#out-of-the-box-personalization-blocks)).
 

@@ -7,8 +7,8 @@ feature: Technote, Upgrade
 exl-id: 22f4cbaf-ca37-47b9-b7dd-1ee73d5b348d
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '253'
-ht-degree: 11%
+source-wordcount: '249'
+ht-degree: 8%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 11%
 
 ## Vad har ändrats?
 
-Efter att Microsoft Internet Explorer 11 har upphört att gälla använder återgivningsmotorn HTML för kontrollpaneler i klientkonsolen Edge Chromium från och med Campaign Classic v7.3.
+Efter att Microsoft Internet Explorer 11 har upphört att gälla använder återgivningsmotorn HTML för kontrollpaneler i klientkonsolen Edge Chromium, med början från Campaign Classic v7.3.
 
 Förutom installationen av Microsoft Edge Webview 2, som nu [krävs för installation av klientkonsolen](../../installation/using/installing-the-client-console.md#webview)måste Microsoft Edge Chromium vara aktiverat på dina instanser.
 

@@ -1,15 +1,15 @@
 ---
 product: campaign
 title: Skapa och hantera listor
-description: Lär dig hur du skapar och hanterar listor
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+description: Lär dig skapa och hantera listor
+badge-v7-only: label="v7" type="Informative" tooltip="Gäller endast Campaign Classic v7"
 feature: Profiles
 role: User
 level: Beginner
 exl-id: 711b84cd-bac8-4f1a-9999-0124fbfc3a01
 source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
-source-wordcount: '804'
+source-wordcount: '806'
 ht-degree: 9%
 
 ---
@@ -28,13 +28,13 @@ Listor skapas och hanteras via **[!UICONTROL Lists]** i **[!UICONTROL Profiles a
 
 Det finns två typer av listor i Adobe Campaign:
 
-* **[!UICONTROL Group]** typ: The **[!UICONTROL Group]** typlistor tillhör en **static** lista över personer som valts enligt specifika kriterier. Listan är som en ögonblicksbild av en uppsättning profiler. Observera att den inte uppdateras automatiskt om profiler läggs till i databasen.
+* **[!UICONTROL Group]** type: **[!UICONTROL Group]** typlistor tillhör en **static** lista över personer som valts enligt specifika kriterier. Listan är som en ögonblicksbild av en uppsättning profiler. Observera att den inte uppdateras automatiskt om profiler läggs till i databasen.
 
-   Mer information om hur du skapar en **[!UICONTROL Group]** typlista, se [page](#creating-a-profile-list-from-a-group).
+  Mer information om hur du skapar en **[!UICONTROL Group]** typlista, se denna [page](#creating-a-profile-list-from-a-group).
 
-* **[!UICONTROL List]** typ: The **[!UICONTROL List]** typlistor gör att du kan använda arbetsflöden för att skapa och hantera listor. De här listorna är specifika från dataimport som kan uppdateras via den dedikerade **[!UICONTROL List update]** arbetsflödesaktivitet.
+* **[!UICONTROL List]** type: **[!UICONTROL List]** typlistor gör att du kan använda arbetsflöden för att skapa och hantera listor. De här listorna är specifika från dataimport som kan uppdateras via den dedikerade **[!UICONTROL List update]** arbetsflödesaktivitet.
 
-   Till skillnad från **[!UICONTROL Group]** typlista kan den här typlistan uppdateras automatiskt med en **[!UICONTROL Scheduler]** aktivitet. Observera att som ett exempel på hur du skapar **[!UICONTROL List]** typlistor, se [den här sidan](../../workflow/using/list-update.md).
+  Till skillnad från **[!UICONTROL Group]** typlista kan den här typlistan uppdateras automatiskt med en **[!UICONTROL Scheduler]** aktivitet. Observera att som ett exempel på hur du skapar **[!UICONTROL List]** typlistor, se [den här sidan](../../workflow/using/list-update.md).
 
 ![](assets/do-not-localize/how-to-video.png) [Upptäck den här funktionen i en video](#create-list-video)
 
@@ -46,19 +46,19 @@ Det finns två typer av listor i Adobe Campaign:
 >
 >Om du vill skapa listor som innehåller andra typer av data måste du köra ett arbetsflöde. Om du till exempel använder en fråga i besökstabellen och sedan uppdaterar listan, kan du skapa en besökslista. Mer information om arbetsflöden finns i [det här avsnittet](../../workflow/using/about-workflows.md).
 
-Skapa en ny **[!UICONTROL Group]** gör du så här:
+Så här skapar du en ny **[!UICONTROL Group]** använd följande steg i typlistan:
 
-1. Klicka på **[!UICONTROL Create]** och markera **[!UICONTROL New list]**.
+1. Klicka på **[!UICONTROL Create]** knapp och markera **[!UICONTROL New list]**.
 
    ![](assets/s_ncs_user_new_group.png)
 
-1. Ange informationen i dialogrutan **[!UICONTROL Edit]** i fönstret där listan skapades.
+1. Ange informationen i dialogrutan **[!UICONTROL Edit]** -fliken i fönstret där listan skapades.
 
    * Ange listnamnet i dialogrutan **[!UICONTROL Label]** och vid behov ändra det interna namnet.
    * Lägg till en beskrivning av den här listan.
-   * Du kan ange ett förfallodatum: när det här datumet har nåtts rensas listan och tas automatiskt bort.
+   * Du kan ange ett förfallodatum: när det här datumet nås rensas listan och tas automatiskt bort.
 
-      ![](assets/list_expiration_date.png)
+     ![](assets/list_expiration_date.png)
 
 1. I **[!UICONTROL Content]** flik, klicka **[!UICONTROL Add]** för att välja de profiler som tillhör listan.
 
@@ -85,7 +85,7 @@ Profilerna för en uppsättning profiler kan filtreras och länkas till en lista
 
    ![](assets/s_ncs_user_add_selection_to_group.png)
 
-1. Välj önskad lista eller skapa en ny lista med **[!UICONTROL Create]** och sedan klicka **[!UICONTROL Next]**.
+1. Välj önskad lista eller skapa en ny lista med **[!UICONTROL Create]** knapp och sedan klicka **[!UICONTROL Next]**.
 
    ![](assets/s_ncs_user_add_selection_to_group_2.png)
 
@@ -111,13 +111,13 @@ Du kan även redigera listan via Adobe Campaign hemsida: klicka på **[!UICONTRO
 
 Om du vill ta bort en profil från en lista kan du:
 
-* Redigera listan, välj profilen i dialogrutan **[!UICONTROL Content]** klickar du på **[!UICONTROL Delete]** ikon.
+* Redigera listan, välj profilen i dialogrutan **[!UICONTROL Content]** klickar du på **[!UICONTROL Delete]** -ikon.
 
-   ![](assets/list_remove_a_recipient.png)
+  ![](assets/list_remove_a_recipient.png)
 
-* Redigera profilen, klicka på **[!UICONTROL List]** klickar du på **[!UICONTROL Delete]** ikon.
+* Redigera profilen, klicka på knappen **[!UICONTROL List]** klickar du på **[!UICONTROL Delete]** -ikon.
 
-   ![](assets/recipient_remove_a_list.png)
+  ![](assets/recipient_remove_a_list.png)
 
 ## Ta bort en lista med profiler {#deleting-a-list-of-profiles}
 
@@ -127,7 +127,7 @@ Du kan ta bort en eller flera listor från grupplistan i Adobe Campaign-trädet.
 >
 >När du tar bort en lista påverkas inte profilerna i listan, men data i deras profil uppdateras.
 
-## Videokurs {#create-list-video}
+## Självstudievideo {#create-list-video}
 
 ### Skapa en lista med mottagare
 
@@ -143,4 +143,4 @@ Lär dig hur du skapar ett arbetsflöde för att rikta in dig på mottagare och 
 
 >[!VIDEO](https://video.tv.adobe.com/v/25603?quality=12)
 
-Det finns fler instruktionsvideor för Campaign Classic [här](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=sv).
+Det finns fler videor med Campaign Classic om hur man gör [här](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=sv).

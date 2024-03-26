@@ -6,7 +6,7 @@ description: Läs mer om hur era kampanjer kan påverkas av Apple funktion för 
 exl-id: e044b35a-b49f-408a-900d-2afe8ff10212
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '2056'
+source-wordcount: '2064'
 ht-degree: 0%
 
 ---

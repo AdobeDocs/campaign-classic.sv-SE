@@ -10,8 +10,8 @@ topic-tags: instance-configuration
 exl-id: 4d25d740-db57-4d18-8cae-2dd49c4a786e
 source-git-commit: 52dcc8c01c5ce2421bfb59235bd0e458e7c8122f
 workflow-type: tm+mt
-source-wordcount: '812'
-ht-degree: 7%
+source-wordcount: '811'
+ht-degree: 5%
 
 ---
 
@@ -23,7 +23,7 @@ ht-degree: 7%
 
 Du kan konfigurera varningströskeln (orange) och varningströskeln (röd) för de indikatorer som visas i **Tjänstnivå för meddelandecenter** och **Bearbetningstid för meddelandecenter** rapporter (se [Få tillgång till transaktionsrapporter](../../message-center/using/about-transactional-messaging-reports.md)).
 
-Följ stegen nedan för att göra detta:
+Gör så här:
 
 1. Öppna distributionsguiden på **körningsinstans**.
 
@@ -166,7 +166,7 @@ Följ stegen nedan på körningsinstansen/körningsinstanserna:
 
 I kontrollinstansen måste du länka leveransmallar och externa konton.
 
-Följ stegen nedan för att göra detta:
+Gör så här:
 
 1. Skapa ett externt konto per varumärke med samma interna namn som på [körningsinstans](#execution-instance) (steg 1).
 

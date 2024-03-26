@@ -11,8 +11,8 @@ topic-tags: troubleshooting
 exl-id: 064eb41f-6685-4ac1-adc5-40f9d5a2f96d
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '196'
-ht-degree: 12%
+source-wordcount: '188'
+ht-degree: 7%
 
 ---
 
@@ -29,7 +29,7 @@ Det finns två möjliga scenarier:
 ## Lösenord som har gått förlorat av en kampanjoperator {#password-lost-by-campaign-operator}
 
 Om en Adobe Campaign-operator förlorar sitt lösenord kan du ändra det.
-Följ stegen nedan för att göra detta:
+Gör så här:
 
 1. Anslut via en operator med administratörsbehörighet.
 1. Högerklicka på en operator.

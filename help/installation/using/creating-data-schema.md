@@ -7,12 +7,12 @@ badge-v7-only: label="v7" type="Informative" tooltip="Gäller endast Campaign Cl
 exl-id: 8702499b-1700-4d1f-a0e0-f7a9dfb4b88f
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '194'
-ht-degree: 4%
+source-wordcount: '190'
+ht-degree: 3%
 
 ---
 
-# Skapa dataschemat {#creating-the-data-schema}
+# Skapar dataschemat {#creating-the-data-schema}
 
 
 
@@ -32,7 +32,7 @@ Så här skapar du ett schema i en extern databas:
 
    ![](assets/wf_new_schema_select_table_fda.png)
 
-1. Klicka på **[!UICONTROL OK]** för att bekräfta. Adobe Campaign identifierar automatiskt strukturen i den markerade tabellen och genererar det logiska schemat. Observera att Adobe Campaign inte genererar några länkar.
+1. Klicka **[!UICONTROL OK]** för att bekräfta. Adobe Campaign identifierar automatiskt strukturen i den markerade tabellen och genererar det logiska schemat. Observera att Adobe Campaign inte genererar några länkar.
 
 1. Klicka **[!UICONTROL Save]** för att bekräfta skapandet.
 

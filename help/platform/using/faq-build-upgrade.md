@@ -10,8 +10,8 @@ topic-tags: starting-with-adobe-campaign
 exl-id: 85e2135d-a1a3-44f0-a4f9-de38db5c8726
 source-git-commit: a94c361c5bdd9d61ae9232224af910a78245a889
 workflow-type: tm+mt
-source-wordcount: '1998'
-ht-degree: 3%
+source-wordcount: '2003'
+ht-degree: 1%
 
 ---
 
@@ -19,11 +19,11 @@ ht-degree: 3%
 
 
 
-Adobe Campaign uppdateras regelbundet. Om du känner till vår publicerade [Versionsinformation](../../rn/using/rn-overview.md)är du antagligen medveten om att i genomsnitt 2/3 mindre versioner med nya funktioner släpps förbättringar och korrigeringar varje år. Dessutom släpper vi regelbundet mindre builder med kumulativa korrigeringar. Denna regelbundna uppdateringsfrekvens syftar till att få den senaste och bästa informationen i händerna, så att miljön är helt säker och så tydligt som möjligt förbättrar upplevelsen av vår produkt.
+Adobe Campaign uppdateras regelbundet. Om du känner till vår publicerade [Versionsinformation](../../rn/using/rn-overview.md)är du antagligen medveten om att i genomsnitt 2/3 mindre versioner med nya funktioner släpps förbättringar och korrigeringar varje år. Dessutom släpper vi regelbundet bara byggen med kumulativa korrigeringar. Denna regelbundna uppdateringsfrekvens syftar till att få den senaste och bästa informationen i händerna, så att miljön är helt säker och så tydligt som möjligt förbättrar upplevelsen av vår produkt.
 
 Det är viktigt att våra kunder kör den senaste versionen av Adobe Campaign. Det gör också att Adobe kan hjälpa till mycket effektivare om du stöter på problem - det tar ofta längre tid att identifiera, återge och åtgärda ett fel i en gammal version, för att inte tala om att vissa problem som du kanske stöter på redan har åtgärdats i en nyligen gjord version.
 
-Som värdanvändare får ni automatiskt den årliga uppgraderingen av Campaign med den senaste stabila versionen utan någon åtgärd. Även kunder som har lokaler och hybridkunder kan dra nytta av den här versionen. Om du migrerar från en gammal build rekommenderar vi att du uppgraderar till den här versionen först. [Läs mer](../../rn/using/rn-overview.md).
+Som värdanvändare får ni automatiskt den årliga uppgraderingen av Campaign med den senaste stabila versionen utan någon åtgärd. Även kunder som har lokaler och hybridkunder kan dra nytta av den här versionen. Om du migrerar från en gammal version rekommenderar vi att du först uppgraderar till den här versionen. [Läs mer](../../rn/using/rn-overview.md).
 
 ## Vad är en bygguppgradering?
 
@@ -208,7 +208,7 @@ allt innehåll visas och visas.
 
 **Se även**
 
-* [Utföra en uppgradering av din build](../../production/using/build-upgrade.md)
+* [Utföra en bygguppgradering](../../production/using/build-upgrade.md)
 * [Versionsinformation om Campaign Classic](../../rn/using/rn-overview.md)
 * [Hjälp- och supportalternativ för Campaign Classic](../../support.md)
 * [Årligt uppgraderingsprogram](../../rn/using/rn-overview.md#yearly-upgrade)

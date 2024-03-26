@@ -8,8 +8,8 @@ level: Beginner
 exl-id: 81f207a0-bb72-450b-abe4-0b229b6b1f3a
 source-git-commit: abaeef25b03a9699a4851786380d467bfa299c9f
 workflow-type: tm+mt
-source-wordcount: '5978'
-ht-degree: 2%
+source-wordcount: '5959'
+ht-degree: 1%
 
 ---
 
@@ -51,7 +51,7 @@ Läs mer om [Arbetsflödesaktiviteter](../../workflow/using/about-activities.md)
 
 +++**Aktiv profil**
 
-Profiler anses vara aktiva om de har riktats in på eller kommunicerats med under de senaste tolv månaderna via någon kanal. Enligt ert avtal har var och en av era Campaign-instanser ett visst antal aktiva profiler som räknas för faktureringsändamål.
+Profiler anses vara aktiva om de har delats ut eller kommunicerats med via någon kanal under de senaste tolv månaderna. Enligt ert avtal har var och en av era Campaign-instanser ett visst antal aktiva profiler som räknas för faktureringsändamål.
 
 Läs mer om [Aktiva profiler](../../platform/using/about-profiles.md#active-profiles).
 +++
@@ -149,7 +149,7 @@ Läs mer om [Kontrollgrupper](../../campaign/using/marketing-campaign-target.md#
 
 Kontrollpanelen hjälper produktadministratörer i Adobe Campaign att arbeta effektivare genom att låta dem hantera inställningar och spåra användningar för var och en av deras instanser. Tack vare det intuitiva gränssnittet kan de enkelt övervaka användningen av nyckelresurser och utföra administrativa uppgifter som att lägga till IP-adresser i tillåtelselista, övervaka SFTP-lagring, nyckelhantering och mycket annat.
 
-Läs mer om [Kontrollpanelen](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/key-features.html).
+Läs mer om [Kontrollpanelen](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/key-features.html?lang=sv).
 +++
 
 +++**Kuber**
@@ -371,7 +371,7 @@ Trötthetshanteringen hjälper er att styra frekvens och antal meddelanden för 
 Läs mer om [Trötthetshantering](../../campaign-opt/using/pressure-rules.md).
 +++
 
-+++**Federerad dataåtkomst (FDA)**
++++**FDA (Federated Data Access)**
 
 Federated Data Access har stöd för tillägg av klientdatamodellen till en tredjepartsdatabas. Den identifierar automatiskt strukturen för måltabellerna och använder data från SQL-källorna. Du kan komma åt externa data utan att ändra strukturen på Adobe Campaign-data.
 
@@ -425,7 +425,7 @@ Learn more about [Generated SQL queries](../../platform/using/steps-to-create-a-
 +++
 -->
 
-+++**Värmekarta**
++++**Heatmap**
 
 Campaign Heatmap är en tabell som visar information om arbetsflödeskörning under en 24-timmarsperiod. Här visas arbetsflödenas fördelning över perioden per timme och med 5 minuters intervall. Heatmap används för att utvärdera serverbelastningen och för att fastställa vilka arbetsflödesaktiviteter som förbrukar mest resurser.
 
@@ -708,7 +708,7 @@ Anbudsvikten baseras på formler som exakt definierar relevansen av ett erbjudan
 Läs mer om [Erbjudandevikt](../../interaction/using/creating-an-offer.md#offer-weight).
 +++
 
-+++**Operatör**
++++**Operator**
 
 En operator är en Adobe Campaign-användare som har behörighet att logga in och utföra åtgärder. Operatorer är associerade med operatorgrupper och ärver rättigheterna och behörigheterna för dessa grupper. Du kan också tilldela namngivna rättigheter direkt till operatorer.
 
@@ -942,7 +942,7 @@ Målmappning är mappningen av leveranskanaler till en viss datatyp. Målmappnin
 Läs mer om [Målmappning](../../delivery/using/selecting-a-target-mapping.md).
 +++
 
-+++**Målinriktade aktiviteter**
++++**Verksamheter som riktar sig till**
 
 Målaktiviteter är arbetsflödesaktiviteter som är specifika för målgruppsanpassning, ändring av populationsdata och filtrering. De gör att operatorer kan skapa ett eller flera mål genom att definiera uppsättningar och dela eller kombinera dessa uppsättningar med hjälp av skärnings-, union- eller exkluderingsåtgärder.
 
@@ -1061,7 +1061,7 @@ I enskärmsläge bearbetas en enskild kontakt av erbjudandemotorn vid körning. 
 Läs mer om [Enhetsläge](../../interaction/using/about-inbound-channels.md).
 +++
 
-+++**Webbapplikationer**
++++**Webbprogram**
 
 Webbprogram är dynamiska och interaktiva programsidor som hanteras av Campaign-instansen. De innehåller data från databasen och innehåll som är anpassat till den anslutna användarens rättigheter. Du kan t.ex. skapa ett redigeringsformulär på ett extranät eller meddelandeformulär som innehåller data från databasen med tabeller, diagram, indataformulär osv. Med den här funktionen kan du utforma och publicera webbsidor där användarna kan leta upp eller ange information.
 

@@ -2,13 +2,13 @@
 product: campaign
 title: Arbetsflödets livscykel
 description: Läs mer om arbetsflödets livscykel
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+badge-v7-only: label="v7" type="Informative" tooltip="Gäller endast Campaign Classic v7"
 feature: Workflows
 exl-id: fceb5752-dc73-4386-8c18-c4f3e6110ca5
 source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
-source-wordcount: '267'
-ht-degree: 2%
+source-wordcount: '276'
+ht-degree: 4%
 
 ---
 
@@ -20,15 +20,15 @@ Arbetsflödescykeln består av tre huvudsteg.
 
 * **Redigeras**
 
-   Detta är den inledande designfasen: När ett nytt arbetsflöde skapas är dess status&quot;Redigeras&quot;. Arbetsflödet hanteras ännu inte av servern och kan ändras utan risk.
+  Detta är den inledande designfasen: När ett nytt arbetsflöde skapas är dess status&quot;Redigeras&quot;. Arbetsflödet hanteras ännu inte av servern och kan ändras utan risk.
 
 * **Startat**
 
-   När den inledande designfasen är klar kan arbetsflödet startas. I den här fasen hanteras instansen av servern och de enskilda åtgärderna körs. Arbetsflödet kan fortfarande ändras med vissa försiktighetsåtgärder.
+  När den inledande designfasen är klar kan arbetsflödet startas. I den här fasen hanteras instansen av servern och de enskilda åtgärderna körs. Arbetsflödet kan fortfarande ändras med vissa försiktighetsåtgärder.
 
 * **Slutförd**
 
-   Ett arbetsflöde är&quot;Slutfört&quot; när det inte längre finns några pågående uppgifter eller när en operator uttryckligen har stoppat instansen.
+  Ett arbetsflöde är&quot;Slutfört&quot; när det inte längre finns några pågående uppgifter eller när en operator uttryckligen har stoppat instansen.
 
 Till exempel **Starta** och **Leverans** aktiviteter anges medan **Godkännande** aktivitetsfel i arbetsflödet nedan.
 
@@ -40,6 +40,6 @@ Tecknen **574 -OK** visas ovanför övergången efter **Leverans** aktiviteten i
 
 Arbetsflödet startas och väntar på en operator som tillhör gruppen som anges i **Godkännande** att fatta ett beslut. Operatörer som tillhör gruppen och som har en e-postadress eller ett mobiltelefonnummer meddelas.
 
-Operatörshantering beskrivs i detta [section](../../platform/using/access-management.md).
+Operatörshantering beskrivs i det här [section](../../platform/using/access-management.md).
 
 Mer information om hur du övervakar arbetsflöden finns i [det här avsnittet](monitoring-workflow-execution.md).

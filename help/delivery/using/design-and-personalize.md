@@ -9,8 +9,8 @@ role: User
 exl-id: 5bf727d2-83b1-4a99-be25-041eee8d234c
 source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
 workflow-type: tm+mt
-source-wordcount: '1300'
-ht-degree: 7%
+source-wordcount: '1296'
+ht-degree: 3%
 
 ---
 
@@ -69,7 +69,7 @@ Arbeta på [ämnesrad](defining-the-email-content.md#message-content) för att f
 
 Inkludera alltid en länk för spegelsida. Önskad position är högst upp i e-postmeddelandet. [Läs mer](sending-messages.md#generating-the-mirror-page)
 
-### Avprenumerationslänk
+### Länk för att avbryta prenumeration
 
 Länken för att avbeställa prenumerationer är viktig. Den måste vara synlig och giltig och formuläret måste vara funktionellt. Som standard är en [typologiregel](steps-validating-the-delivery.md#validation-process-with-typologies) kontrollerar om en avanmälningslänk har inkluderats och genererar en varning om den saknas.
 
@@ -93,9 +93,9 @@ Kontrollera att du har testat alla ändringar innan du skickar det
 
 ### SMS-längd
 
-Som standard uppfyller antalet tecken i ett SMS-meddelande GSM-standarden (Global System for Mobile Communications). SMS-meddelanden som använder GSM-kodning kan innehålla högst 160 tecken eller 153 tecken per SMS för meddelanden som skickas i flera delar.
+Som standard uppfyller antalet tecken i ett SMS GSM-system (Global System for Mobile Communications). SMS-meddelanden som använder GSM-kodning kan innehålla högst 160 tecken eller 153 tecken per SMS för meddelanden som skickas i flera delar.
 
-Transkriberingen ersätter ett tecken i ett SMS med ett annat om det tecknet inte beaktas av GSM-standarden. Observera att om du infogar anpassningsfält i innehållet i SMS-meddelandet kan det medföra tecken som GSM-kodningen inte tar hänsyn till. Du kan auktorisera teckentranskribering genom att markera motsvarande ruta på fliken SMPP-kanalinställningar i motsvarande **[!UICONTROL External account]**.
+Translitterering består i att ersätta ett tecken i ett SMS med ett annat om det tecknet inte beaktas av GSM-standarden. Observera att om du infogar anpassningsfält i innehållet i SMS-meddelandet kan det medföra tecken som GSM-kodningen inte tar hänsyn till. Du kan auktorisera teckentranskribering genom att markera motsvarande ruta på fliken SMPP-kanalinställningar i motsvarande **[!UICONTROL External account]**.
 Läs mer [i det här avsnittet](sms-set-up.md#creating-an-smpp-external-account).
 
 **Tips**:

@@ -9,8 +9,8 @@ level: Beginner
 exl-id: 07470a91-d8d2-4c41-9555-05522c8068f0
 source-git-commit: 4661688a22bd1a82eaf9c72a739b5a5ecee168b1
 workflow-type: tm+mt
-source-wordcount: '512'
-ht-degree: 5%
+source-wordcount: '499'
+ht-degree: 6%
 
 ---
 
@@ -26,7 +26,7 @@ Dessa rättigheter är följande:
 
 * **[!UICONTROL ADMINISTRATION]**: Operatorer med **[!UICONTROL ADMINISTRATION]** har fullständig åtkomst till instansen. Administratörsanvändare kan köra/skapa/redigera/ta bort objekt som arbetsflöde, leverans, skript osv.
 
-* **[!UICONTROL APPROVAL ADMINISTRATION]**: Du kan ange flera godkännandesteg i arbetsflöden och leveranser för att säkerställa att det aktuella läget har godkänts av en tilldelad operator eller grupp. Användare med **[!UICONTROL APPROVAL ADMINISTRATION]** kan ange godkännandesteg och även tilldela en operator eller operatörsgrupp som ska godkänna dessa steg.
+* **[!UICONTROL APPROVAL ADMINISTRATION]**: Du kan ange flera godkännandesteg i arbetsflöden och leveranser för att säkerställa att det aktuella tillståndet har godkänts av en tilldelad operator eller grupp. Användare med **[!UICONTROL APPROVAL ADMINISTRATION]** kan ange godkännandesteg och även tilldela en operator eller operatörsgrupp som ska godkänna dessa steg.
 
 * **[!UICONTROL CENTRAL]**: Rätt till central hantering (distribuerad marknadsföring).
 
@@ -44,11 +44,11 @@ Dessa rättigheter är följande:
 
 * **[!UICONTROL LOCAL]**: Rätt till lokal hantering (distribuerad marknadsföring).
 
-* **[!UICONTROL MERGE]**: Höger om du vill sammanfoga de markerade posterna till en. Om mottagarna finns som dubbletter visas **[!UICONTROL MERGE]** ger användaren möjlighet att välja dubbletter och sammanfoga dem till en primär mottagare.
+* **[!UICONTROL MERGE]**: Höger att sammanfoga de markerade posterna till en. Om mottagarna finns som dubbletter visas **[!UICONTROL MERGE]** ger användaren möjlighet att välja dubbletter och sammanfoga dem till en primär mottagare.
 
 * **[!UICONTROL PREPARE DELIVERIES]**: Rätt att skapa, redigera och spara en leverans. Användare med **[!UICONTROL PREPARE DELIVERIES]** kan också starta leveransanalysprocessen.
 
-* **[!UICONTROL PRIVACY DATA RIGHT]**: Rätt att samla in och ta bort personuppgifter. Se denna [sida](https://helpx.adobe.com/se/campaign/kb/acc-privacy.html) för mer information om detta.
+* **[!UICONTROL PRIVACY DATA RIGHT]**: Rätt att samla in och ta bort sekretessdata. Se denna [sida](https://helpx.adobe.com/se/campaign/kb/acc-privacy.html) för mer information om detta.
 
 * **[!UICONTROL PROGRAM EXECUTION]**: Rätt att köra kommandon på olika programmeringsspråk.
 

@@ -1,13 +1,13 @@
 ---
 product: campaign
 title: Distribuerad marknadsföring
-description: Läs mer om paketet Distributed Marketing
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+description: Läs mer om Distributed Marketing-paketet
+badge-v7-only: label="v7" type="Informative" tooltip="Gäller endast Campaign Classic v7"
 feature: Workflows, Data Management, Distributed Marketing
 source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
-source-wordcount: '69'
-ht-degree: 8%
+source-wordcount: '76'
+ht-degree: 11%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 8%
 
 
 
-Arbetsflödet som beskrivs nedan installeras med **Distribuerad marknadsföring** som standard. Mer information om den här modulen finns i [section](../../distributed/using/about-distributed-marketing.md).
+Arbetsflödet som beskrivs nedan installeras med **Distribuerad marknadsföring** som standard. Mer information om modulen finns i [section](../../distributed/using/about-distributed-marketing.md).
 
 <table> 
  <tbody> 

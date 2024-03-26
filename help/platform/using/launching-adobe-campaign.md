@@ -1,7 +1,7 @@
 ---
 product: campaign
-title: Starta Adobe Campaign
-description: Starta Adobe Campaign
+title: Startar Adobe Campaign
+description: Startar Adobe Campaign
 feature: Access Management, Permissions
 badge-v7-only: label="v7" type="Informative" tooltip="Gäller endast Campaign Classic v7"
 audience: platform
@@ -10,8 +10,8 @@ topic-tags: starting-with-adobe-campaign
 exl-id: 4d9c5b24-83a2-4495-a56c-5bc376d69703
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '520'
-ht-degree: 9%
+source-wordcount: '508'
+ht-degree: 6%
 
 ---
 
@@ -47,7 +47,7 @@ Du kan även ansluta med en dedikerad inloggning/ett dedikerat lösenord:
 
    Första gången du öppnar databasen är ditt lösenord det du får av administratören. När du är ansluten kan du ändra ditt lösenord via **[!UICONTROL Tools > Change password...]** -menyn. Information om operatorer och anslutningar finns i [Åtkomsthantering](../../platform/using/access-management.md).
 
-1. Klicka på **[!UICONTROL LOG IN]** för att bekräfta.<!--You can also press the **Enter** key to launch connection.-->
+1. Klicka **[!UICONTROL LOG IN]** för att bekräfta.<!--You can also press the **Enter** key to launch connection.-->
 
 Nu kan du komma åt [Adobe Campaign arbetsyta](../../platform/using/adobe-campaign-workspace.md).
 

@@ -1,18 +1,18 @@
 ---
 product: campaign
-title: Så använder du arbetsflödesdata
+title: Så här använder du arbetsflödesdata
 description: Lär dig hur du använder arbetsflödesdata
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+badge-v7-only: label="v7" type="Informative" tooltip="Gäller endast Campaign Classic v7"
 feature: Workflows, Data Management
 exl-id: 5354d608-2fea-45f9-a0aa-11c7e965ab04
 source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
-source-wordcount: '408'
-ht-degree: 2%
+source-wordcount: '416'
+ht-degree: 1%
 
 ---
 
-# Så använder du arbetsflödesdata{#how-to-use-workflow-data}
+# Så här använder du arbetsflödesdata{#how-to-use-workflow-data}
 
 
 
@@ -26,15 +26,15 @@ Data från Adobe Campaign-databasen och de befintliga listorna kan uppdateras me
 
 * The **[!UICONTROL List update]** kan du lagra arbetsdokument i en datalist.
 
-   Du kan välja en befintlig lista eller skapa den. I det här fallet beräknas namnet och eventuellt postmappen.
+  Du kan välja en befintlig lista eller skapa den. I det här fallet beräknas namnet och eventuellt postmappen.
 
-   ![](assets/s_user_create_list.png)
+  ![](assets/s_user_create_list.png)
 
-   Se [Listuppdatering](list-update.md).
+  Se [Listuppdatering](list-update.md).
 
 * The **[!UICONTROL Update data]** aktiviteten utför en massuppdatering av fälten i databasen.
 
-   Mer information finns i [Uppdatera data](update-data.md).
+  Mer information finns i [Uppdatera data](update-data.md).
 
 ### Prenumerations-/prenumerationshantering {#subscription-unsubscription-management}
 
@@ -58,7 +58,7 @@ Förutom de vanliga personaliseringsfälten kan du lägga till anpassningsfält 
 
 ![](assets/s_advuser_using_additional_data.png)
 
-Data i arbetsflödestabellen identifieras med sitt namn: den alltid består av **targetData** länk. Mer information finns i [Måldata](data-life-cycle.md#target-data).
+Data i arbetsflödestabellen identifieras med sitt namn: de består alltid av **targetData** länk. Mer information finns i [Måldata](data-life-cycle.md#target-data).
 
 Inom ramen för e-postleverans kan personaliseringsfält även använda data från måltillägg som har utförts i arbetsflödesfaserna för målanpassning, vilket visas i exemplet nedan:
 

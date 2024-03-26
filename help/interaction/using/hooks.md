@@ -79,7 +79,7 @@ Efterbearbetningen utförs efter typologiregeltillämpningen och den stödberät
     weight:2}
   ```
 
-* dicOffer (xml-typ): ordlista med alla attribut för giltiga erbjudanden (erbjudandekod, kategori-ID, kategorins fullständiga namn, startdatum, slutdatum, etikett, internt namn, erbjudande-ID, ytterligare erbjudandefält). Exempel
+* dicOffer (xml-typ): ordlista med alla attribut för giltiga erbjudanden (erbjudandekod, kategori-ID, kategorins fullständiga namn, startdatum, slutdatum, etikett, internt namn, erbjudande-ID, ytterligare erbjudandefält). Till exempel
 
   ```
   { "1242": <offer category-id="61242" categoryFullName="/FULL/PATH/TO/CATEGORY/" code="CODE" endDate="" id="62473" label="LABEL" name="OFR38_OE4" product-id="43" startDate=""/>,

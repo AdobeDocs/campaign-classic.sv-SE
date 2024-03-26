@@ -1,17 +1,18 @@
 ---
 product: campaign
-title: Inkommande SMS-arbetsflödesaktivitet för infrastruktur med mellanleverantörer
-description: Inkommande SMS-arbetsflödesaktivitet för infrastruktur med mellanleverantörer
+title: Inkommande SMS-arbetsflödesaktivitet för mid-sourcingsinfrastruktur
+description: Inkommande SMS-arbetsflödesaktivitet för mid-sourcingsinfrastruktur
 feature: Technote, SMS
 badge-v7-only: label="v7" type="Informative" tooltip="Gäller endast Campaign Classic v7"
-source-git-commit: 85adfe3515480bed559091427ff1acec14a70320
+exl-id: 756039b2-5f57-4dc5-8166-a421206b886b
+source-git-commit: f9a17541596ba2afa96502dc99408b6f99d2cb2b
 workflow-type: tm+mt
 source-wordcount: '430'
-ht-degree: 2%
+ht-degree: 7%
 
 ---
 
-# Inkommande SMS-arbetsflödesaktivitet för infrastruktur med mellanleverantörer {#inbound-sms}
+# Inkommande SMS-arbetsflödesaktivitet för mid-sourcingsinfrastruktur {#inbound-sms}
 
 ## Begränsningar {#limitations}
 
@@ -145,5 +146,3 @@ ht-degree: 2%
    > * Om det finns flera inSMS-arbetsflöden per instans av Mid-sourcing kan dataduplicering ske eftersom SMS-ID:t från mellanleverantörer förblir konstant medan ID:n för det externa kontot varierar.
 
 1. Spara och starta om arbetsflödet.
-
-

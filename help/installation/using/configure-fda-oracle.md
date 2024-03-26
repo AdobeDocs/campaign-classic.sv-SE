@@ -10,8 +10,8 @@ topic-tags: connectors
 exl-id: 320bfbb4-533b-4c45-a46f-c3c8dd68221f
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '359'
-ht-degree: 0%
+source-wordcount: '356'
+ht-degree: 1%
 
 ---
 
@@ -64,7 +64,7 @@ Om du vill ansluta till en extern databas i FDA för ett Oracle krävs ytterliga
      yum install libaio1
      ```
 
-1. I Campaign Classic kan du sedan konfigurera [!DNL Oracle] externt konto. Mer information om hur du konfigurerar ditt externa konto finns i [det här avsnittet](#oracle-external).
+1. I Campaign Classicen kan du sedan konfigurera [!DNL Oracle] externt konto. Mer information om hur du konfigurerar ditt externa konto finns i [det här avsnittet](#oracle-external).
 
 ## Oracle i Windows {#oracle-windows}
 
@@ -76,7 +76,7 @@ Om du vill ansluta till en extern databas i FDA för ett Oracle krävs ytterliga
 
 1. Lägg till en TNS_ADMIN-miljövariabel med C:Oracle som värde och starta om datorn.
 
-1. I Campaign Classic kan du sedan konfigurera [!DNL Oracle] externt konto. Mer information om hur du konfigurerar ditt externa konto finns i [det här avsnittet](#oracle-external).
+1. I Campaign Classicen kan du sedan konfigurera [!DNL Oracle] externt konto. Mer information om hur du konfigurerar ditt externa konto finns i [det här avsnittet](#oracle-external).
 
 ## Oraclets externa konto {#oracle-external}
 
@@ -90,7 +90,7 @@ The [!DNL Oracle] Med ett externt konto kan du ansluta Campaign-instansen till O
 
 1. Konfigurera **[!UICONTROL Oracle]** externt konto måste du ange:
 
-   * **[!UICONTROL Type]**: Oracle
+   * **[!UICONTROL Type]**: ORACLE
 
    * **[!UICONTROL Server]**: Namn på DNS
 

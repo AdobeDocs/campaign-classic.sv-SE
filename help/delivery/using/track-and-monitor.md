@@ -9,8 +9,8 @@ role: User
 exl-id: a039a288-2e7b-4f35-9885-ead3ed4347af
 source-git-commit: d2f5f2a662c022e258fb3cc56c8502c4f4cb2849
 workflow-type: tm+mt
-source-wordcount: '450'
-ht-degree: 3%
+source-wordcount: '452'
+ht-degree: 2%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 3%
 
 Du klickade på **Skicka** -knapp? Låt oss se vad som händer. När leveransen har skickats kan du med Adobe Campaign hålla reda på skickade meddelanden och se hur mottagarna svarar på leveransen. Detta hjälper er att förbättra era framtida utskick och optimera era nästa kampanjer.
 
-## Övervaka leveranser {#monitoring-deliveries}
+## Bildskärmsleveranser {#monitoring-deliveries}
 
 För att kunna styra era kampanjer måste ni se till att meddelandet verkligen har levererats till mottagarna.
 

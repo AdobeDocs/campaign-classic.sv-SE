@@ -7,8 +7,8 @@ badge-v7-only: label="v7" type="Informative" tooltip="Gäller endast Campaign Cl
 exl-id: dc52e789-d0bf-4e8f-b448-9d69a2762cc1
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '651'
-ht-degree: 7%
+source-wordcount: '647'
+ht-degree: 5%
 
 ---
 
@@ -29,7 +29,7 @@ Funktioner för transaktionsmeddelanden är utformade för att stödja skalbarhe
 
 * **Varför är det viktigt?** Vanligtvis har ett transaktionsmeddelande höga öppningsfrekvenser. Den bör därför utformas noggrant, eftersom den kan ha stor inverkan på kundernas beteende när den definierar kundrelationen.
 
-* **Exempel?** Det kan vara ett välkomstmeddelande när du har skapat ett konto, en bekräftelse på att en beställning har skickats, en faktura, ett meddelande som bekräftar en lösenordsändring, ett meddelande efter att en kund har bläddrat på din webbplats, ett meddelande om att produkten inte är tillgänglig, ett kontoutdrag osv.
+* **Till exempel?** Det kan vara ett välkomstmeddelande när du har skapat ett konto, en bekräftelse på att en beställning har skickats, en faktura, ett meddelande som bekräftar en lösenordsändring, ett meddelande efter att en kund har bläddrat på din webbplats, ett meddelande om att produkten inte är tillgänglig, ett kontoutdrag osv.
 
 >[!IMPORTANT]
 >
@@ -37,7 +37,7 @@ Funktioner för transaktionsmeddelanden är utformade för att stödja skalbarhe
 
 <!--Before starting with transactional messaging, make sure you read the corresponding [best practices and limitations]().-->
 
-## Driftspolicy för transaktionsmeddelanden {#transactional-messaging-operating-principle}
+## Transactional messaging operating policy policy {#transactional-messaging-operating-principle}
 
 Adobe Campaign Transactional Messaging-modulen integreras i ett informationssystem som returnerar händelser som ska ändras till personaliserade transaktionsmeddelanden. Dessa meddelanden kan skickas individuellt eller gruppvis via e-post, SMS eller push-meddelanden.
 

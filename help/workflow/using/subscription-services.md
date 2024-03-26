@@ -2,13 +2,13 @@
 product: campaign
 title: Prenumerationstjänster
 description: Läs mer om arbetsflödesaktiviteten för prenumerationstjänster
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+badge-v7-only: label="v7" type="Informative" tooltip="Gäller endast Campaign Classic v7"
 feature: Workflows, Targeting Activity, Subscription Services Activity
 exl-id: 1b526d1c-4a33-45a1-98f4-dcb803c8d228
 source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
-source-wordcount: '407'
-ht-degree: 2%
+source-wordcount: '416'
+ht-degree: 4%
 
 ---
 
@@ -32,7 +32,7 @@ Om du vill konfigurera den redigerar du aktiviteten och anger dess etikett och v
 
    Innehållet i det här meddelandet anges i en leveransmall som är relaterad till informationstjänsten. Mer information om detta hittar du i det här [avsnittet](../../delivery/using/managing-subscriptions.md).
 
-## Exempel: Prenumerera på en lista över mottagare i ett nyhetsbrev {#example--subscribe-a-list-of-recipients-to-a-newsletter}
+## Exempel: Prenumerera en lista över mottagare i ett nyhetsbrev {#example--subscribe-a-list-of-recipients-to-a-newsletter}
 
 I en och samma åtgärd syftar följande arbetsflöde till att göra en lista över mottagare som är berättigade till ett nyhetsbrev, avsett att arbeta i Paris, för att få dem att prenumerera.
 
@@ -55,14 +55,14 @@ Om du vill göra det måste du även utesluta mottagare som redan har prenumerer
 1. Infoga en prenumerationstjänstaktivitet och dubbelklicka sedan på den för att konfigurera den.
 1. Ange aktivitetsetiketten och välj **[!UICONTROL Subscription]**.
 
-   Om du vill kan du informera mottagarna om deras nyhetsbrevprenumeration genom att kontrollera **[!UICONTROL Send a confirmation message]** box.
+   Om du vill kan du informera mottagarna om deras nyhetsbrev genom att kontrollera **[!UICONTROL Send a confirmation message]** box.
 
 1. Markera den mapp som nyhetsbrevet finns i och välj sedan nyhetsbrevet i listan som visas.
 1. Lämna **[!UICONTROL Generate outbound transition]** avmarkerad så att aktiviteten markerar slutet av arbetsflödet och sedan klickar du **[!UICONTROL Ok]**.
 
 Under arbetsflödeskörningen läggs de mottagare som motsvarar alla tre frågorna till i listan och prenumereras på nyhetsbrevet.
 
-Du kan kontrollera att prenumerationen lyckades genom att gå till **[!UICONTROL Subscription]** -fliken för dina mottagare.
+Du kan kontrollera att prenumerationen lyckades genom att gå till **[!UICONTROL Subscription]** -fliken för mottagarna.
 
 ## Indataparametrar {#input-parameters}
 

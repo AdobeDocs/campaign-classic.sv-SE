@@ -2,13 +2,13 @@
 product: campaign
 title: Läslista
 description: Läs mer om arbetsflödesaktiviteten Läs lista
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+badge-v7-only: label="v7" type="Informative" tooltip="Gäller endast Campaign Classic v7"
 feature: Workflows, Targeting Activity
 exl-id: 99f82e91-45cd-4dff-b8a4-3ad87f2f9639
 source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
-source-wordcount: '488'
-ht-degree: 0%
+source-wordcount: '495'
+ht-degree: 2%
 
 ---
 
@@ -54,7 +54,7 @@ Profilerna i **Nya kontakter** -mappen måste ha en leveransåtgärd som mål. D
 
    ![](assets/s_advuser_list_read_sample_2.png)
 
-1. Om du vill utesluta e-postadresserna för den externa listan från huvudmålet måste du konfigurera undantagsaktiviteten och ange att **Nya kontakter** mappen innehåller de data som ska sparas. Kopplingsdata mellan den här uppsättningen och andra inkommande uppsättningar från exkluderingsaktiviteten tas bort från målet.
+1. Om du vill utesluta e-postadresserna för den externa listan från huvudmålet måste du konfigurera undantagsaktiviteten och ange att **Nya kontakter** -mappen innehåller de data som ska sparas. Kopplingsdata mellan den här uppsättningen och andra inkommande uppsättningar från exkluderingsaktiviteten tas bort från målet.
 
    ![](assets/s_advuser_list_read_sample_3.png)
 
@@ -62,9 +62,9 @@ Profilerna i **Nya kontakter** -mappen måste ha en leveransåtgärd som mål. D
 
    Du kan definiera flera undantag beroende på antalet inkommande övergångar för aktiviteten.
 
-1. I **[!UICONTROL Exclusion set]** välj **[!UICONTROL Read list]** aktivitet: uppgifterna i denna verksamhet ska uteslutas från huvudgruppen.
+1. I **[!UICONTROL Exclusion set]** fält, välj **[!UICONTROL Read list]** aktivitet: uppgifterna i den här aktiviteten ska uteslutas från huvuduppsättningen.
 
-   I vårt exempel har vi ett undantag för kopplingar: uppgifterna i listan kommer att stämma överens med uppgifterna i huvuduppsättningen via fältet som innehåller e-postadressen. Om du vill konfigurera kopplingen väljer du **[!UICONTROL Joins]** i **[!UICONTROL Change dimension]** fält.
+   I vårt exempel har vi ett undantag för kopplingar: data i listan kommer att stämma överens med data i huvuduppsättningen via fältet som innehåller e-postadressen. Om du vill konfigurera kopplingen väljer du **[!UICONTROL Joins]** i **[!UICONTROL Change dimension]** fält.
 
    ![](assets/s_advuser_list_read_sample_4.png)
 

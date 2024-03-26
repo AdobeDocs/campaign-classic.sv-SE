@@ -2,13 +2,13 @@
 product: campaign
 title: Filtrera duplicerade mottagare
 description: Lär dig filtrera duplicerade mottagare
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+badge-v7-only: label="v7" type="Informative" tooltip="Gäller endast Campaign Classic v7"
 feature: Workflows
 exl-id: 7cbabbae-375f-4336-9afa-6356f37a79d0
 source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
-source-wordcount: '147'
-ht-degree: 4%
+source-wordcount: '154'
+ht-degree: 8%
 
 ---
 
@@ -25,7 +25,7 @@ Så här skapar du det här exemplet:
 
    ![](assets/query_recipients_1.png)
 
-1. Definiera följande filtervillkor för målmottagaren som finns i leveransloggen. Välj **Mottagarens leveranslogg (utsändning)** i **Uttryck** kolumn, välja **finns som** i **Operator** kolumn.
+1. Definiera följande filtervillkor för målmottagaren som finns i leveransloggen. Välj **Mottagarens leveranslogg (utsändningslogg)** i **Uttryck** kolumn, välja **finns som** i **Operator** kolumn.
 
    ![](assets/query_recipients_2.png)
 

@@ -10,8 +10,8 @@ topic-tags: starting-with-adobe-campaign
 exl-id: f0d884ae-0789-4ad9-a8fa-adeffbb560ea
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '873'
-ht-degree: 97%
+source-wordcount: '835'
+ht-degree: 82%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 97%
 
 Lär dig viktiga steg för att komma igång med Adobe Campaign.
 
-## Kan jag ansluta till Campaign Classic med ett Adobe ID? {#can-i-connect-to-campaign-classic-with-an-adobe-id-}
+## Kan jag ansluta till Campaign Classic med en Adobe ID? {#can-i-connect-to-campaign-classic-with-an-adobe-id-}
 
 Tack vare integreringen med IMS (Adobe Identity Management System) kan användare ansluta till konsolen i Adobe Campaign med sitt Adobe ID. Integreringen ger följande fördelar:
 
@@ -32,11 +32,11 @@ Tack vare integreringen med IMS (Adobe Identity Management System) kan användar
 
 [Klicka här för att läsa mer](../../integrations/using/about-adobe-id.md) om hur man använder Campaign Classic med ett Adobe ID.
 
-## Vilken är min version av Campaign? {#what-is-my-version-of-campaign-}
+## Vad är min version av Campaign? {#what-is-my-version-of-campaign-}
 
 Kontrollera [versions- och build-numret](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version) i menyn **Hjälp > Om ...** på klientkonsolen i Campaign.
 
-## Vilka är skillnaderna när man arbetar lokalt jämfört med i en värdhanterad miljö? {#what-are-the-differences-when-working-on-premise-vs--in-a-hosted-environment-}
+## Vilka är skillnaderna när du arbetar lokalt jämfört med i en hostingmiljö? {#what-are-the-differences-when-working-on-premise-vs--in-a-hosted-environment-}
 
 Med Adobe Campaign Classic medföljer en uppsättning moduler och alternativ. Vilka moduler som är tillgängliga och vilka konfigurationer de har beror på [vilken typ av driftsättning](../../installation/using/hosting-models.md) din installation har: värdbaserad (hanterade tjänster), hybrid eller lokal.
 
@@ -54,19 +54,19 @@ Detta är en uppsättning rättigheter och begränsningar som tillåter eller ne
 
 [Klicka här för att läsa mer](../../platform/using/access-management.md) om användarbehörigheter.
 
-## Hur säkrar man integritetsefterlevnaden med Campaign? {#how-to-be-gdpr-compliant-with-campaign-}
+## Hur säkrar jag integritetsefterlevnaden med Campaign? {#how-to-be-gdpr-compliant-with-campaign-}
 
 Adobe Campaign har en uppsättning verktyg som hjälper dig att följa integritetsefterlevnaden i GDPR och CCPA.
 
 Läs [det här dokumentet](privacy-and-recommendations.md) för att få en förståelse av de verktyg och funktioner som Adobe Campaign erbjuder, samt bästa praxis, för att hjälpa dig att uppfylla GDPR-kraven när du använder vår tjänst. Implementeringsstegen för Campaign Classic beskrivs i [den här artikeln](https://helpx.adobe.com/se/campaign/kb/acc-privacy.html).
 
-## Vilka är koncepten för användargränssnitt i Campaign som jag bör känna till? {#what-are-campaign-user-interface-concepts-i-should-know-}
+## Vad är Campaign-användargränssnittskoncept jag bör känna till? {#what-are-campaign-user-interface-concepts-i-should-know-}
 
 Läs [det här avsnittet](../../platform/using/adobe-campaign-workspace.md) för att veta mer om grunderna för arbetsytan i Adobe Campaign.
 
 ![](assets/do-not-localize/how-to-video.png) [Upptäck arbetsytan i Campaign via en video](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/getting-started/exploring-the-adobe-campaign-classic-user-interface.html)
 
-## Hur väljer jag publiken för mina meddelanden? {#how-can-i-select-the-target-population-of-my-messages-}
+## Hur väljer jag målgrupp för mina meddelanden? {#how-can-i-select-the-target-population-of-my-messages-}
 
 Med Adobe Campaign kan du använda olika strategier för att skapa publiker och välja målmottagare.
 
@@ -96,7 +96,7 @@ Läs mer [i det här avsnittet](../../delivery/using/sms-channel.md) om hur man 
 
 Läs mer om hur man använder Adobe Campaign för att [skicka personaliserade push-meddelanden](../../delivery/using/create-notifications-ios.md) till iOS- och Android-enheter via appar.
 
-## Hur utformar och delar man en undersökning online? {#how-to-design-and-share-an-online-survey-}
+## Hur designar och delar man en enkät online? {#how-to-design-and-share-an-online-survey-}
 
 Läs mer om de viktigaste stegen för hur man [skapar en undersökning online](../../surveys/using/getting-started-with-surveys.md) för att utforma och publicera den med Campaign Classic.
 
@@ -112,7 +112,7 @@ Du kan spåra leveranser som skickas med Campaign Classic via dedikerade [levera
 
 Läs mer om spårningshantering i Campaign på [den här sidan](https://helpx.adobe.com/se/campaign/kb/acc-tracking.html).
 
-## Vad är bästa praxis för säkerhet (lokalt)? {#what-are-security-best-practices--on-premise--}
+## Vilka är de bästa säkerhetsrutinerna (lokalt)? {#what-are-security-best-practices--on-premise--}
 
 Läs [checklistan för säkerhetskonfiguration](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/security-privacy/get-started-security-privacy.html?lang=sv) för att hitta de viktigaste elementen att kolla för säkerhetskonfigurationen och åtkomsten till lokala driftsättningar.
 
@@ -120,7 +120,7 @@ Läs [checklistan för säkerhetskonfiguration](https://experienceleague.adobe.c
 
 Visas ett felmeddelande på ett främmande språk? Alla felmeddelanden och deras översättning listas på [den här sidan](https://experienceleague.adobe.com/developer/campaign-errors/error_codes.html?lang=sv).
 
-## Kan jag skapa ett webbformulär och samla svar i Campaign? {#can-i-create-a-webform-and-collect-answers-in-campaign-}
+## Kan jag skapa ett webbformulär och samla in svar i Campaign? {#can-i-create-a-webform-and-collect-answers-in-campaign-}
 
 Läs mer om hur man [skapar ett webbformulär](../../web/using/about-web-forms.md). Utforma, testa och publicera ett webbformulär samt samla in svar.
 

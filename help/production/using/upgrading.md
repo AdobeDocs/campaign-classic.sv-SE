@@ -11,8 +11,8 @@ topic-tags: updating-adobe-campaign
 exl-id: 4aaa6256-256a-441d-80c9-430f8e427875
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '1170'
-ht-degree: 3%
+source-wordcount: '1133'
+ht-degree: 1%
 
 ---
 
@@ -75,8 +75,8 @@ Så här kör du uppgraderingsfilen:
    Om du vill hämta filen ansluter du till [Programdistributionsportal](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html) med dina inloggningsuppgifter. Läs mer om programvarudistribution i [den här sidan](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html).
 
 1. Välj installationsläge: välj **[!UICONTROL Update or repair]**
-1. Klicka på **[!UICONTROL Next]** .
-1. Klicka på **[!UICONTROL Finish]** .
+1. Klicka **[!UICONTROL Next]** .
+1. Klicka **[!UICONTROL Finish]** .
 
    Installationsprogrammet kopierar sedan de nya filerna.
 

@@ -2,13 +2,13 @@
 product: campaign
 title: Översätt ett webbformulär
 description: Översätt ett webbformulär
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
+badge-v7: label="v7" type="Informative" tooltip="Gäller Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Gäller även Campaign v8"
 feature: Web Forms
 exl-id: 72959141-ca18-4512-80c7-239efd31f711
 source-git-commit: 4661688a22bd1a82eaf9c72a739b5a5ecee168b1
 workflow-type: tm+mt
-source-wordcount: '1563'
+source-wordcount: '1547'
 ht-degree: 1%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 1%
 
 Det går att lokalisera ett webbprogram till flera språk.
 
-Du kan utföra översättningar direkt i Adobe Campaign-konsolen (se [Hantera översättningar i redigeraren](#managing-translations-in-the-editor)), eller exportera och importera strängar för att externalisera översättning (se [Extern översättning](#externalizing-translation)).
+Du kan utföra översättningar direkt i Adobe Campaign-konsolen (se [Hantera översättningar i redigeraren](#managing-translations-in-the-editor)), eller exportera och importera strängar för att externalisera översättning (se [Externaliserar översättning](#externalizing-translation)).
 
 Listan över översättningsspråk som är tillgängliga som standard finns i [Ändra visningsspråk för formulär](#changing-forms-display-language).
 
@@ -53,7 +53,7 @@ The **[!UICONTROL Translations]** -fliken gör att du kan ange översättningar 
 
 Första gången du öppnar den här fliken innehåller den inga data. Klicka på **[!UICONTROL Collect the strings to translate]** för att uppdatera strängarna i webbprogrammet.
 
-Adobe Campaign samlar in etiketter för fält och strängar som definieras i **[!UICONTROL Texts]** tabbar för alla statiska element: HTML block, Javascript osv. Statiska element beskrivs i [Statiska element i ett webbformulär](static-elements-in-a-web-form.md).
+Adobe Campaign samlar in etiketter för fält och strängar som definieras i **[!UICONTROL Texts]** tabbar för alla statiska element: HTML-block, Javascript osv. Statiska element beskrivs i [Statiska element i ett webbformulär](static-elements-in-a-web-form.md).
 
 ![](assets/s_ncs_admin_survey_trad_tab.png)
 
@@ -71,13 +71,13 @@ För teckensträngar som aldrig har översatts visas **[!UICONTROL Text]** fält
 
 ### Filtrera strängar {#filtering-strings}
 
-Som standard visas varje översättningsspråk i webbprogrammet. Det finns två standardfilter: språk och status. Klicka på **[!UICONTROL Filters]** och sedan klicka **[!UICONTROL By language or status]** för att visa de matchande listrutorna. Du kan också skapa ett avancerat filter. Mer information finns på [den här sidan](../../platform/using/creating-filters.md#creating-an-advanced-filter).
+Som standard visas varje översättningsspråk i webbprogrammet. Det finns två standardfilter: språk och status. Klicka på **[!UICONTROL Filters]** knapp och sedan klicka **[!UICONTROL By language or status]** för att visa de matchande listrutorna. Du kan också skapa ett avancerat filter. Mer information finns på [den här sidan](../../platform/using/creating-filters.md#creating-an-advanced-filter).
 
 ![](assets/s_ncs_admin_survey_trad_tab_en.png)
 
 Gå till **[!UICONTROL Language]** för att välja översättningsspråk.
 
-Om du bara vill visa oöversatta strängar väljer du **[!UICONTROL To translate]** i **[!UICONTROL Status]** nedrullningsbar listruta. Du kan även visa endast översatta eller godkända strängar.
+Om du bara vill visa oöversatta strängar väljer du **[!UICONTROL To translate]** i **[!UICONTROL Status]** listruta. Du kan även visa endast översatta eller godkända strängar.
 
 ### Översätta strängar {#translating-strings}
 
@@ -95,7 +95,7 @@ Om du bara vill visa oöversatta strängar väljer du **[!UICONTROL To translate
 
    Ej godkända översättningar visas som **[!UICONTROL Translated]**. Godkända översättningar visas som **[!UICONTROL Approved]**.
 
-## Extern översättning {#externalizing-translation}
+## Externaliserar översättning {#externalizing-translation}
 
 Du kan exportera och importera teckensträngar för att översätta dem med ett annat verktyg än Adobe Campaign.
 
@@ -112,18 +112,18 @@ Du kan exportera och importera teckensträngar för att översätta dem med ett 
 1. Välj en **[!UICONTROL Export strategy]** :
 
    * **[!UICONTROL One file per language]**: vid exporten genereras en fil per översättningsspråk. Varje fil är gemensam för alla valda webbprogram.
-   * **[!UICONTROL One file per Web application]**: vid exporten skapas en fil per valt webbprogram. Varje fil kommer att innehålla alla översättningsspråk.
+   * **[!UICONTROL One file per Web application]**: vid exporten skapas en fil per valt webbprogram. Varje fil innehåller alla översättningsspråk.
 
-      >[!NOTE]
-      >
-      >Den här typen av export är inte tillgänglig för XLIFF-export.
+     >[!NOTE]
+     >
+     >Den här typen av export är inte tillgänglig för XLIFF-export.
 
-   * **[!UICONTROL One file per language and per Web application]**: flera filer genereras vid exporten. Varje fil kommer att innehålla ett översättningsspråk per webbprogram.
+   * **[!UICONTROL One file per language and per Web application]**: exporten genererar flera filer. Varje fil kommer att innehålla ett översättningsspråk per webbprogram.
    * **[!UICONTROL One file for all]**: vid exporten skapas en flerspråkig fil för alla webbprogram. Den kommer att innehålla alla översättningsspråk för alla valda webbprogram.
 
-      >[!NOTE]
-      >
-      >Den här typen av export är inte tillgänglig för XLIFF-export.
+     >[!NOTE]
+     >
+     >Den här typen av export är inte tillgänglig för XLIFF-export.
 
 1. Välj sedan **[!UICONTROL Target folder]** var filerna ska registreras.
 1. Välj filformat ( **[!UICONTROL CSV]** eller **[!UICONTROL XLIFF]** ) och klicka på **[!UICONTROL Start]**.
@@ -414,7 +414,7 @@ De översättningsspråk och ordlistor som är tillgängliga som standard visas 
 
 ## Exempel: visa ett webbprogram på flera språk {#example--displaying-a-web-application-in-several-languages}
 
-Följande webbformulär finns på fyra språk: Engelska, franska, tyska och spanska. Teckensträngarna har översatts via **[!UICONTROL Translation]** webbformulärets flik. Eftersom standardspråket är engelska kan du använda standard-URL:en för att visa den på engelska när enkäten publiceras.
+Följande webbformulär finns på fyra språk: engelska, franska, tyska och spanska. Teckensträngarna har översatts via **[!UICONTROL Translation]** webbformulärets flik. Eftersom standardspråket är engelska kan du använda standard-URL:en för att visa den på engelska när enkäten publiceras.
 
 ![](assets/s_ncs_admin_survey_trad_sample_fr.png)
 
@@ -430,7 +430,7 @@ Du kan lägga till **?lang=es** eller **?lang=de** för att visa den på spanska
 
 >[!NOTE]
 >
->Om andra parametrar redan används för det här webbprogrammet lägger du till **&amp;lang=**.\
+>Om andra parametrar redan används för webbprogrammet lägger du till **&amp;lang=**.\
 >Till exempel: **https://myserver/webApp/APP34?status=1&amp;lang=en**
 
 ## Avancerad översättningskonfiguration {#advanced-translation-configuration}
@@ -441,7 +441,7 @@ Du kan lägga till **?lang=es** eller **?lang=de** för att visa den på spanska
 
 ### Översätta systemsträngar {#translating-the-system-strings}
 
-Systemsträngar är färdiga teckensträngar som används i alla webbprogram. Till exempel: **[!UICONTROL Next]** , **[!UICONTROL Previous]**, **[!UICONTROL Approve]** knappar, **[!UICONTROL Loading]** meddelanden osv. Som standard innehåller vissa språk en ordlista med översättningar för dessa strängar. Listan med språk finns i [Ändra visningsspråk för formulär](#changing-forms-display-language).
+Systemsträngar är färdiga teckensträngar som används i alla webbprogram. Till exempel: **[!UICONTROL Next]** , **[!UICONTROL Previous]**, **[!UICONTROL Approve]** knappar, **[!UICONTROL Loading]** meddelanden, osv. Som standard innehåller vissa språk en ordlista med översättningar för dessa strängar. Listan med språk finns i [Ändra visningsspråk för formulär](#changing-forms-display-language).
 
 Om du översätter webbprogrammet till ett språk som inte har översatts av systemordlistan visas ett varningsmeddelande om att vissa översättningar saknas.
 

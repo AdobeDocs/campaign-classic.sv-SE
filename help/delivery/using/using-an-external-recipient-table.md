@@ -2,14 +2,14 @@
 product: campaign
 title: Använd en extern mottagartabell
 description: Använd en extern mottagartabell
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
+badge-v7: label="v7" type="Informative" tooltip="Gäller Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Gäller även Campaign v8"
 feature: Audiences
 exl-id: b6aabc68-707d-4c6c-b008-277609166c6c
 source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
-source-wordcount: '83'
-ht-degree: 18%
+source-wordcount: '95'
+ht-degree: 16%
 
 ---
 

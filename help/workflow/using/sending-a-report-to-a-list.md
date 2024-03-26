@@ -1,14 +1,14 @@
 ---
 product: campaign
 title: Skicka en rapport till en lista
-description: Lär dig hur du skickar en rapport till en lista med ett arbetsflöde
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+description: Lär dig skicka en rapport till en lista med ett arbetsflöde
+badge-v7-only: label="v7" type="Informative" tooltip="Gäller endast Campaign Classic v7"
 feature: Workflows
 exl-id: cb24aea5-f3c7-4b17-8899-1792ea18c235
 source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
-source-wordcount: '623'
-ht-degree: 1%
+source-wordcount: '639'
+ht-degree: 2%
 
 ---
 
@@ -42,7 +42,7 @@ Mer information om hur du skapar listor finns i [section](../../platform/using/c
 
    Mer information om hur du skapar en leveransmall finns i [section](../../delivery/using/about-templates.md).
 
-1. Ange de olika mallparametrarna: label, target (the list of earlier eived), subject and content.
+1. Ange de olika mallparametrarna: label, target (listan med tidigare skapade mottagare), subject och content.
 
    ![](assets/use_case_report_3.png)
 
@@ -52,25 +52,25 @@ Mer information om hur du skapar listor finns i [section](../../platform/using/c
 
    * Klicka på **[!UICONTROL Attachments]** länk och klicka **[!UICONTROL Add]** väljer **[!UICONTROL Calculated attachment]**.
 
-      ![](assets/use_case_report_4.png)
+     ![](assets/use_case_report_4.png)
 
    * Gå till **[!UICONTROL Type]** och välj det fjärde alternativet: **[!UICONTROL File name is computed during delivery of each message (it may then depend on the recipient profile)]**.
 
-      ![](assets/use_case_report_5.png)
+     ![](assets/use_case_report_5.png)
 
-      Värdet som anges i **[!UICONTROL Label]** fältet visas inte i den slutliga leveransen.
+     Värdet som anges i **[!UICONTROL Label]** fältet visas inte i den slutliga leveransen.
 
    * Gå till redigeringszonen och ange filens åtkomstsökväg och namn.
 
-      ![](assets/use_case_report_6.png)
+     ![](assets/use_case_report_6.png)
 
-      >[!CAUTION]
-      >
-      >Filen måste finnas på servern. Sökvägen och namnet måste vara identiska med de som anges i **[!UICONTROL JavaScript code]** typ av aktivitet i arbetsflödet (se: [Steg 3: Skapa arbetsflödet](#step-3--creating-the-workflow)).
+     >[!CAUTION]
+     >
+     >Filen måste finnas på servern. Sökvägen och namnet måste vara identiska med de som anges i **[!UICONTROL JavaScript code]** typ av aktivitet i arbetsflödet (se: [Steg 3: Skapa arbetsflödet](#step-3--creating-the-workflow)).
 
    * Välj **[!UICONTROL Advanced]** tabb och kontrollera **[!UICONTROL Script the name of the file name displayed in the mails sent]**. Gå till redigeringszonen och ange det namn du vill ge den bifogade filen i den slutliga leveransen.
 
-      ![](assets/use_case_report_6bis.png)
+     ![](assets/use_case_report_6bis.png)
 
 ## Steg 3: Skapa arbetsflödet {#step-3--creating-the-workflow}
 
@@ -112,19 +112,20 @@ Följande arbetsflöde skapades för det här användningsfallet. Den har tre ve
    Följande variabler används:
 
    * **var reportName**: Ange rapportens interna namn med citattecken. I det här fallet är det interna namnet på **Spårningsindikator** rapporten är&quot;deliveryFeedback&quot;.
-   * **var path**: Ange filens sparningssökväg (&quot;tmp/files/&quot;), det namn du vill ge filen (&quot;deliveryFeedback&quot;) och filnamnstillägget (&quot;.pdf&quot;). I det här fallet har vi använt det interna namnet som filnamn. Värdena måste vara mellan dubbla citattecken och avgränsade med plustecknet (+).
+   * **var path**: ange filens sparningssökväg (&quot;tmp/files/&quot;), namnet på filen (&quot;deliveryFeedback&quot;) och filnamnstillägget (&quot;.pdf&quot;). I det här fallet har vi använt det interna namnet som filnamn. Värdena måste vara mellan dubbla citattecken och avgränsade med plustecknet (+).
 
-      >[!CAUTION]
-      >
-      >Filen måste sparas på servern. Du måste ange samma sökväg och samma namn i **[!UICONTROL General]** fliken i redigeringsfönstret för den beräknade bilagan (se: [Steg 2: Skapa leveransmallen](#step-2--creating-the-delivery-template)).
+     >[!CAUTION]
+     >
+     >Filen måste sparas på servern. Du måste ange samma sökväg och samma namn i **[!UICONTROL General]** fliken i redigeringsfönstret för den beräknade bilagan (se: [Steg 2: Skapa leveransmallen](#step-2--creating-the-delivery-template)).
 
-   * **var exportFormat**: Ange exportformatet för filen (&quot;PDF&quot;).
+   * **var exportFormat**: ange filens exportformat (&quot;PDF&quot;).
    * **var _ctx** (kontext): i det här fallet använder vi **[!UICONTROL Tracking indicators]** rapportera i sitt globala sammanhang.
 
 1. Slutför genom att lägga till en **[!UICONTROL Delivery]** typaktivitet med följande alternativ:
 
-   * **[!UICONTROL Delivery]**: välj **[!UICONTROL New, created from a template]** och välj den leveransmall som skapades tidigare.
+   * **[!UICONTROL Delivery]**: select **[!UICONTROL New, created from a template]** och välj den leveransmall som skapades tidigare.
    * För **[!UICONTROL Recipients]** och **[!UICONTROL Content]** fält, markera **[!UICONTROL Specified in the delivery]**.
-   * **[!UICONTROL Action to execute]**: välj **[!UICONTROL Prepare and start]**.
+   * **[!UICONTROL Action to execute]**: select **[!UICONTROL Prepare and start]**.
    * Avmarkera **[!UICONTROL Generate an outbound transition]** och **[!UICONTROL Process errors]**.
+
    ![](assets/use_case_report_11.png)

@@ -17,7 +17,7 @@ ht-degree: 2%
 
 ## Innehållsmodell {#content-model-5}
 
-uppräkning:==(help| value)
+uppräkning:==(help| värde)
 
 ## Attribut {#attributes-5}
 

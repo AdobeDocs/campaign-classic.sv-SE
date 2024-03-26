@@ -11,8 +11,8 @@ topic-tags: database-maintenance
 exl-id: a586d70b-1b7f-47c2-a821-635098a70e45
 source-git-commit: 624978901943b4c74f50c20298c9596f73b25b1b
 workflow-type: tm+mt
-source-wordcount: '1256'
-ht-degree: 2%
+source-wordcount: '1249'
+ht-degree: 1%
 
 ---
 
@@ -146,7 +146,7 @@ VACUUM (FULL, ANALYZE, VERBOSE) nmsmirrorpageinfo;
 >* Adobe rekommenderar att du lägger till tabeller som är specifika för din datamodell och som kan uppdateras avsevärt. Detta kan vara fallet för **NmsRecipient** om du har stora dagliga datareplikeringsflöden.
 >* Programsatsen VACUUM låser tabellen, vilket pausar vissa processer medan underhåll utförs.
 >* För mycket stora tabeller (vanligtvis över 5 Gbit) kan VACUUM FULL-satsen bli ganska ineffektiv och ta mycket lång tid. Adobe rekommenderar inte att du använder den för **YyyNmsBroadLogXx** tabell.
->* Den här underhållsåtgärden kan implementeras i ett Adobe Campaign-arbetsflöde med en **[!UICONTROL SQL]** aktivitet. Mer information om detta finns i [det här avsnittet](../../workflow/using/architecture.md). Se till att du schemalägger underhåll under en tid med låg aktivitet som inte kolliderar med säkerhetskopieringsfönstret.
+>* Den här underhållsåtgärden kan implementeras i ett Adobe Campaign-arbetsflöde med en **[!UICONTROL SQL]** aktivitet. Mer information finns i [det här avsnittet](../../workflow/using/architecture.md). Se till att du schemalägger underhåll under en tid med låg aktivitet som inte kolliderar med säkerhetskopieringsfönstret.
 >
 
 ### Återskapa en databas {#rebuilding-a-database}

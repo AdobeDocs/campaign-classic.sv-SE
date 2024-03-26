@@ -1,22 +1,22 @@
 ---
 product: campaign
-title: LINE-kanal
-description: LINE-kanal
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+title: LINJEKanal
+description: LINJEKanal
+badge-v7-only: label="v7" type="Informative" tooltip="Gäller endast Campaign Classic v7"
 feature: Workflows
 source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
-source-wordcount: '95'
-ht-degree: 11%
+source-wordcount: '102'
+ht-degree: 8%
 
 ---
 
 
-# LINE-kanal{#line-channel}
+# LINJEKanal{#line-channel}
 
 
 
-Arbetsflödena nedan installeras tillsammans med **LINE-kanal** som standard. Mer information om den här modulen finns i [section](../../delivery/using/line-channel.md).
+Arbetsflödena nedan installeras tillsammans med **LINE-kanal** som standard. Mer information om modulen finns i [section](../../delivery/using/line-channel.md).
 
 <table> 
  <tbody> 

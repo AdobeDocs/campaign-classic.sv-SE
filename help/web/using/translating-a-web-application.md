@@ -2,13 +2,13 @@
 product: campaign
 title: Översätt en webbapplikation
 description: Översätt en webbapplikation
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
+badge-v7: label="v7" type="Informative" tooltip="Gäller Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Gäller även Campaign v8"
 feature: Web Apps
 exl-id: 82c5c610-8161-4686-aa79-1b690e763765
 source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
-source-wordcount: '363'
+source-wordcount: '376'
 ht-degree: 5%
 
 ---
@@ -45,11 +45,11 @@ Så här flaggar du strängar som ska översättas:
    * När det markerade blocket innehåller flera strängar/block flaggas det som en sträng som ska översättas. Strängen innehåller sedan HTML-koden för elementen i det här blocket.
    * När du vill flagga ett block som innehåller flera strängar och om minst en av strängarna redan är flaggad visas en varning. Du kan sedan ta bort flaggan från den isolerade strängen och lägga till hela blocket.
 
-      ![](assets/dce_translation_4.png)
+     ![](assets/dce_translation_4.png)
 
    * När du vill ta bort flaggan från en sträng i ett block som redan är flaggat kan du inte ändra strängöversättningsalternativet direkt. Du kan emellertid komma åt blocket som innehåller strängen för att ändra den.
 
-      ![](assets/dce_translation_2.png)
+     ![](assets/dce_translation_2.png)
 
 1. När du är klar med att flagga strängarna går du tillbaka till webbprogrammet och väljer **[!UICONTROL Translations]** -fliken.
 1. Välj **[!UICONTROL Collect the strings to translate]**.  Strängarna som är flaggade i DCE läggs till i webbprogrammets strängar.

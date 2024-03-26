@@ -7,8 +7,8 @@ feature: Query Editor, Workflows
 exl-id: 23bccb48-60ab-46c9-be26-2fa35243d61e
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '258'
-ht-degree: 4%
+source-wordcount: '263'
+ht-degree: 6%
 
 ---
 
@@ -48,7 +48,7 @@ Så här skapar du det här exemplet:
 
    ![](assets/query_editor_nveau_70.png)
 
-1. I **[!UICONTROL Data filtering]** väljer du **[!UICONTROL Filtering conditions]**. Gå till **[!UICONTROL Target elements]** fönster och klicka **[!UICONTROL Next]**.
+1. I **[!UICONTROL Data filtering]**, markera **[!UICONTROL Filtering conditions]**. Gå till **[!UICONTROL Target elements]** fönster och klicka **[!UICONTROL Next]**.
 1. I **[!UICONTROL Data grouping]** väljer du **[!UICONTROL Email domain]** genom att klicka **[!UICONTROL Add]**.
 
    Det här fönstret för datagruppering visas bara om **[!UICONTROL Handle groupings (GROUP BY + HAVING]**) har markerats.

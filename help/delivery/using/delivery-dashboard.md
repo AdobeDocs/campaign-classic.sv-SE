@@ -9,8 +9,8 @@ role: User, Data Engineer
 exl-id: 44ecc8c6-6584-43eb-96b4-7d8463053123
 source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
 workflow-type: tm+mt
-source-wordcount: '1186'
-ht-degree: 4%
+source-wordcount: '1189'
+ht-degree: 3%
 
 ---
 
@@ -37,7 +37,7 @@ Här är den information du kan övervaka med hjälp av flera flikar som är til
 * [Förstå leveransfel](understanding-delivery-failures.md)
 * [Förstå karantänshantering](understanding-quarantine-management.md)
 * [God praxis för leverans](delivery-best-practices.md)
-* [Hantera levererbarhet](about-deliverability.md)
+* [Hantera leveranser](about-deliverability.md)
 
 ## Leveranssammanfattning {#delivery-summary}
 
@@ -168,7 +168,7 @@ Lägg till **publicID** i leveransloggarna måste du utöka schemat först. Du k
 
 När ändringarna är klara måste du uppdatera databasstrukturen så att den anpassas till den logiska beskrivningen.
 
-Följ stegen nedan för att göra detta:
+Gör så här:
 
 1. Klicka på **[!UICONTROL Tools]** > **[!UICONTROL Advanced]** > **[!UICONTROL Update database structure...]** -menyn.
 

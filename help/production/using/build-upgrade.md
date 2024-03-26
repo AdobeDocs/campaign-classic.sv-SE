@@ -11,12 +11,12 @@ topic-tags: updating-adobe-campaign
 exl-id: c5a9c99a-4078-45d8-847b-6df9047a2fe2
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '2380'
-ht-degree: 3%
+source-wordcount: '2330'
+ht-degree: 0%
 
 ---
 
-# Utföra en uppgradering av din build{#performing-a-build-upgrade}
+# Utföra en bygguppgradering{#performing-a-build-upgrade}
 
 
 
@@ -110,7 +110,7 @@ Procedurer nedan utförs endast av **lokal** kunder. För värdkunder hanteras d
 
 Så här duplicerar du en Adobe Campaign-miljö för att återställa en källmiljö till en målmiljö, vilket ger två identiska arbetsmiljöer.
 
-Följ stegen nedan för att göra detta:
+Gör så här:
 
 1. Skapa en kopia av databaserna på alla instanser i källmiljön.
 
@@ -418,6 +418,6 @@ Så här utför du en komplex sammanfogning:
 **Relaterade ämnen**
 
 * [Vanliga frågor och svar om builduppgradering](../../platform/using/faq-build-upgrade.md)
-* [Versionsinformation för Campaign Classic](../../rn/using/rn-overview.md)
+* [Versionsinformation om Campaign Classic](../../rn/using/rn-overview.md)
 * [Hjälp- och supportalternativ för Campaign Classic](../../support.md)
 * [Kampanjårsuppgraderingsprogram](../../rn/using/rn-overview.md)

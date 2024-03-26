@@ -32,7 +32,7 @@ Flera faktorer kan direkt påverka serverprestanda och göra plattformen långsa
 
 * Arbetsflödeskörning: det är viktigt att du övervakar arbetsflödena för att undvika problem med plattformsprestanda. Följ riktlinjerna som anges [i det här dokumentet](../../workflow/using/workflow-best-practices.md#execution-and-performance).
 
-* Om du är berättigad kan du utnyttja [Funktioner i Campaign Control Panel](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/key-features.html) övervaka plattformen med [prestandaövervakning](https://experienceleague.adobe.com/docs/control-panel/using/performance-monitoring/about-performance-monitoring.html?lang=sv) funktioner.
+* Om du är berättigad kan du utnyttja [Funktioner i Campaign Control Panel](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/key-features.html?lang=sv) övervaka plattformen med [prestandaövervakning](https://experienceleague.adobe.com/docs/control-panel/using/performance-monitoring/about-performance-monitoring.html?lang=sv) funktioner.
 
 ## Kontrollera nätverkskonfiguration {#network-config}
 

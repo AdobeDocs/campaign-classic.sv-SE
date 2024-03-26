@@ -2,14 +2,14 @@
 product: campaign
 title: Kom igång med webbformulär
 description: Kom igång med webbformulär i Campaign
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
+badge-v7: label="v7" type="Informative" tooltip="Gäller Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Gäller även Campaign v8"
 feature: Landing Pages, Web Forms
 exl-id: 63602bed-ace6-4632-a735-5d268a7d72d0
 source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
-source-wordcount: '497'
-ht-degree: 5%
+source-wordcount: '510'
+ht-degree: 2%
 
 ---
 
@@ -31,11 +31,11 @@ I det här kapitlet beskrivs stegen som krävs för att utforma en **webForm** s
 
 >[!CAUTION]
 >
->När du konfigurerar webbprogram och webbformulär behöver du en lodrät upplösning på minst 900 pixlar (t.ex.: 1600x900).
+>När du konfigurerar webbprogram och webbformulär behöver du en lodrät upplösning på minst 900 pixlar (t.ex. 1 600 × 900).
 
 Webbformulären öppnas via webbprogrammenyn i **Kampanjer** -fliken. I Adobe Campaign-trädet grupperas de under **[!UICONTROL Resources > Online > Web Applications]** nod.
 
-Om du vill skapa ett webbformulär klickar du på **[!UICONTROL Create]** ovanför listan med webbprogram.
+Skapa ett webbformulär genom att klicka på **[!UICONTROL Create]** ovanför listan med webbprogram.
 
 ![](assets/webapp_create_new.png)
 
@@ -53,17 +53,17 @@ The **[!UICONTROL Edit]** använder du för att skapa innehåll.
 
 Så här definierar du konfigurationen och innehållet i webbformuläret:
 
-* Börja med att skapa de sidor och kontroller som krävs: inmatningsfält, nedrullningsbara listor, HTML-innehåll osv.
+* Börja med att skapa de sidor och kontroller som krävs: inmatningsfält, listrutor, HTML-innehåll osv.
 
-   Det här steget beskrivs nedan.
+  Det här steget beskrivs nedan.
 
 * Definiera sidsekvenser och villkor för visningen.
 
-   Det här steget beskrivs i [Definiera sidsekvenser för webbformulär](defining-web-forms-page-sequencing.md).
+  Det här steget beskrivs i [Definiera sidsekvenser för webbformulär](defining-web-forms-page-sequencing.md).
 
 * Översätt innehållet om det behövs.
 
-   Det här steget beskrivs i [Översätta ett webbformulär](translating-a-web-form.md).
+  Det här steget beskrivs i [Översätta ett webbformulär](translating-a-web-form.md).
 
 ## Om webbformulär {#about-web-forms-designing}
 
@@ -74,14 +74,13 @@ I följande avsnitt beskrivs hur du definierar innehåll och layout för formul�
 * [Lägga till fält i ett webbformulär](adding-fields-to-a-web-form.md),
 * [Infoga HTML-innehåll](static-elements-in-a-web-form.md#inserting-html-content),
 * [Statiska element i ett webbformulär](static-elements-in-a-web-form.md),
-* [Definiera ett webbformulärs layout](defining-web-forms-layout.md).
+* [Definiera webbformulärslayout](defining-web-forms-layout.md).
 
 >[!NOTE]
 >
 >* Under siddesignen kan du visa den slutliga återgivningen i **[!UICONTROL Preview]** -fliken. Spara formuläret först om du vill se ändringarna. Eventuella fel visas i **[!UICONTROL Log]** -fliken.
 >* Aktivera felsökningsläget i webbformuläret för att säkerställa att sidvisning och informationslagring sker i rätt sekvens. För att göra det går du till **[!UICONTROL Preview]** underfliken och kontrollera **[!UICONTROL Enable debug mode]** box: all insamlad information och eventuella körningsfel visas längst ned på varje sida.
 >
-
 
 ### Använda ikonerna i verktygsfältet {#using-the-icons-in-the-toolbar}
 

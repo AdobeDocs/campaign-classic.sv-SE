@@ -7,8 +7,8 @@ badge-v7-only: label="v7" type="Informative" tooltip="Gäller endast Campaign Cl
 exl-id: ecb5a258-a150-46a3-8b83-2b2c06d873ee
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '586'
-ht-degree: 7%
+source-wordcount: '569'
+ht-degree: 5%
 
 ---
 
@@ -95,4 +95,4 @@ Om du inte har uppdaterat din Internet Explorer-version visas följande meddelan
 * [Gör den nya klientkonsolen tillgänglig för användare](../../installation/using/client-console-availability-for-windows.md)
 * [Installera Campaign Client Console](../../installation/using/installing-the-client-console.md)
 * [Access Adobe Software Distribution](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html)
-* [Hämta Campaign Classic build](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html)
+* [Ladda ned Campaign Classic](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html)

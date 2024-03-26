@@ -10,8 +10,8 @@ topic-tags: profile-management
 exl-id: fd0f7b6e-84e1-442d-ae88-817fb6758d64
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '152'
-ht-degree: 18%
+source-wordcount: '147'
+ht-degree: 14%
 
 ---
 
@@ -42,4 +42,4 @@ I den här videon förklaras hur du importerar profiler i Adobe Campaign, vid en
 
 >[!VIDEO](https://video.tv.adobe.com/v/25608?quality=12)
 
-Det finns fler instruktionsvideor för Campaign Classic [här](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=sv).
+Det finns fler videor med Campaign Classic om hur man gör [här](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=sv).

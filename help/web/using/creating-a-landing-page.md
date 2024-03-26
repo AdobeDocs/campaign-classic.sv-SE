@@ -2,14 +2,14 @@
 product: campaign
 title: Skapa en landningssida
 description: Skapa en landningssida
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
+badge-v7: label="v7" type="Informative" tooltip="Gäller Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Gäller även Campaign v8"
 feature: Landing Pages
 exl-id: 71c737c2-b0d6-4ae8-a5df-28a08dff82d7
 source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
-source-wordcount: '721'
-ht-degree: 3%
+source-wordcount: '739'
+ht-degree: 2%
 
 ---
 
@@ -36,14 +36,14 @@ Så här skapar du ett nytt webbprogram av typen Landing Page:
 
 1. Klicka på **[!UICONTROL Edit]** -fliken.
 1. Ta bort **End** aktivitet.
-1. Lägg till en **[!UICONTROL Page]** efter **[!UICONTROL Storage]** aktivitet.
+1. Lägg till en **[!UICONTROL Page]** aktivitet efter **[!UICONTROL Storage]** aktivitet.
 1. Redigera **Sidan 2** sedan avmarkera **[!UICONTROL Activate outbound transitions]** i **[!UICONTROL Properties]** -fliken.
 
    ![](assets/dce_uc1_transition.png)
 
 1. Spara ändringar.
 
-Därefter får du följande ordningsföljd:
+Du får sedan följande sekvensering:
 
 ![](assets/dce_uc1_edition_activity.png)
 
@@ -82,7 +82,7 @@ Så här läser du in mallen på den första sidan:
    >Du måste vänta tills du får följande meddelande innan du stänger: **[!UICONTROL The external resources have been successfully published]** .
 
 1. Klicka på **[!UICONTROL Properties]** -fliken.
-1. Ange **label** för varje sida (till exempel: Sida 1= Samla in, sida 2=Tack).
+1. Ange en **label** för varje sida (till exempel: Sida 1= Samla in, sida 2=Tack).
 
    ![](assets/dce_uc1_pagelabel.png)
 
@@ -94,7 +94,7 @@ Använd dessa steg för varje sida som infogas i webbprogrammet.
 
 ## Steg 2 - Konfigurera innehållet {#step-2---configuring-the-content}
 
-I det här avsnittet ska vi justera importerat innehåll och länka databasens fält till webbsidans format. Webbprogrammet som skapats tidigare är:
+I det här avsnittet ska vi justera importerat innehåll och länka databasens fält till webbsidans format. Det webbprogram som skapats tidigare är:
 
 ![](assets/dce_uc1_lp_enchainement.png)
 
@@ -126,27 +126,27 @@ Vi kommer att länka fälten på sidan till fälten i databasen för att spara d
 
 1. Upprepa den här processen för varje fält på sidan.
 
-Du kan göra ett fält obligatoriskt: till exempel klickar du på **[!UICONTROL Email]** aktivera sedan **Obligatoriskt** alternativ.
+Du kan göra ett fält obligatoriskt: klicka till exempel på **[!UICONTROL Email]** aktiverar du sedan **Obligatoriskt** alternativ.
 
 ![](assets/dce_uc1_fieldmandatory.png)
 
 ### Skapa en länk till nästa sida {#creating-a-link-to-the-next-page}
 
-Det här steget är obligatoriskt eftersom det gör att webbprogrammet kan bestämma sekvensen för nästa steg: Sparar insamlade data i databasen och visar sedan nästa sida (**Tack** sida).
+Det här steget är obligatoriskt eftersom det gör att webbprogrammet kan bestämma sekvensen för nästa steg: Spara insamlade data i databasen och sedan visa nästa sida (**Tack** sida).
 
-1. Välj **[!UICONTROL Send it!]** knappen **[!UICONTROL Collection]** sida.
-1. Klicka på **[!UICONTROL Action]** nedrullningsbar meny.
+1. Välj **[!UICONTROL Send it!]** knappen på **[!UICONTROL Collection]** sida.
+1. Klicka på **[!UICONTROL Action]** listruta.
 1. Välj **[!UICONTROL Next page]** åtgärd.
 
    ![](assets/dce_uc1_actionbouton.png)
 
-### Infoga ett personaliserat fält {#inserting-a-personalization-field}
+### Infoga ett anpassningsfält {#inserting-a-personalization-field}
 
 I det här steget kan du anpassa sidan Tack. Så här gör du:
 
 1. Öppna **[!UICONTROL Thank you]** sida.
 1. Placera markören i ett textområde där du vill infoga mottagarens förnamn.
-1. Välj **[!UICONTROL Personalization field]** i **[!UICONTROL Insert]** verktygsfältets meny.
+1. Välj **[!UICONTROL Personalization field]** i **[!UICONTROL Insert]** i verktygsfältet.
 1. Markera förnamnet.
 
    ![](assets/dce_uc1_persochamp.png)
@@ -169,4 +169,4 @@ Under publiceringen visas en logg. Publiceringssystemet analyserar allt innehål
 >
 >I publiceringsloggen sorteras varningar och fel efter aktivitet.
 
-Formuläret är nu tillgängligt: URL:en är tillgänglig i programkontrollpanelen och kan skickas till mottagarna.
+Formuläret är nu tillgängligt: URL:en är tillgänglig på kontrollpanelen för programmet och kan skickas till mottagarna.

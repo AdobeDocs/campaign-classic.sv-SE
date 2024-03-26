@@ -2,13 +2,13 @@
 product: campaign
 title: Uteslutning
 description: Läs mer om arbetsflödesaktiviteten Uteslutning
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+badge-v7-only: label="v7" type="Informative" tooltip="Gäller endast Campaign Classic v7"
 feature: Workflows, Targeting Activity
 exl-id: f4fe97d9-6571-4aa5-8022-b0af9d5a6a13
 source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
-source-wordcount: '349'
-ht-degree: 0%
+source-wordcount: '366'
+ht-degree: 2%
 
 ---
 
@@ -16,9 +16,9 @@ ht-degree: 0%
 
 
 
-An **Uteslutning** aktivitet av typen -skapar ett mål baserat på ett huvudmål som ett eller flera andra mål extraheras från.
+An **Uteslutning** Aktivitet av typen -skapar ett mål baserat på ett huvudmål som ett eller flera andra mål extraheras från.
 
-Om du vill konfigurera den här aktiviteten anger du dess etikett och väljer huvudmottagaruppsättningen: kan du skapa resultatet med hjälp av populationen från huvuduppsättningen. Profiler som delas av huvuduppsättningen och minst en av tävlingsaktiviteterna kommer att uteslutas.
+Om du vill konfigurera den här aktiviteten anger du dess etikett och väljer huvudmottagaruppsättningen: med hjälp av populationen i huvuduppsättningen kan du skapa resultatet. Profiler som delas av huvuduppsättningen och minst en av tävlingsaktiviteterna kommer att uteslutas.
 
 ![](assets/s_user_segmentation_exclu.png)
 
@@ -34,9 +34,9 @@ Kontrollera **[!UICONTROL Generate complement]** om du vill utnyttja den återst
 
 Följande exempel söker efter en lista över mottagare i åldrarna 18 till 30 år, med undantag för personer bosatta i Paris.
 
-1. Infoga och öppna en **[!UICONTROL Exclusion]** Aktivitet av typen -efter två frågor. Den första frågan riktar sig till mottagare som bor i Paris. Den andra frågan riktar sig till 18 till 30 år.
+1. Infoga och öppna en **[!UICONTROL Exclusion]** -type aktivitet efter två frågor. Den första frågan riktar sig till mottagare i Paris. Den andra frågan riktar sig till 18 till 30 år.
 1. Ange huvuduppsättningen. Här är huvudscenen **18-30 år** fråga. Element som hör till den andra uppsättningen tas inte med i slutresultatet.
-1. Kontrollera **[!UICONTROL Generate complement]** om du vill utnyttja de data som återstår efter uteslutningen. I detta fall består komplementet av mottagare i åldrarna 18 till 30 år som bor i Paris.
+1. Kontrollera **[!UICONTROL Generate complement]** om du vill utnyttja de data som finns kvar efter uteslutningen. I detta fall består komplementet av mottagare i åldrarna 18 till 30 år som bor i Paris.
 1. Godkänn undantagskonfigurationen och infoga sedan en uppdateringslistaktivitet i resultatet. Du kan också infoga ytterligare en listuppdatering till komplementet där det behövs.
 1. Kör arbetsflödet. I det här exemplet består resultatet av mottagare mellan 18 och 30 år, men de som bor i Paris utesluts och skickas till komplementet.
 

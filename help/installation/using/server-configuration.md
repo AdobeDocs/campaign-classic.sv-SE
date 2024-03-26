@@ -10,8 +10,8 @@ topic-tags: prerequisites-and-recommendations-
 exl-id: e1aff73a-54fb-444e-b183-df11c9b3df31
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '631'
-ht-degree: 3%
+source-wordcount: '632'
+ht-degree: 5%
 
 ---
 
@@ -28,7 +28,7 @@ Kontrollera med de operativa användarna vilken typ av filer de överför till s
 * ETL (text, csv, tab, ...)
 * osv.
 
-Lägg till alla i serverConf/shared/datastore/@uploadAllowlist (giltigt reguljärt java-uttryck). Läs mer i [den här sidan](../../installation/using/file-res-management.md).
+Lägg till alla i serverConf/shared/datastore/@uploadAllowlist (giltigt reguljärt java-uttryck). Läs mer på [den här sidan](../../installation/using/file-res-management.md).
 
 Adobe Campaign begränsar inte filstorleken. Men du kan göra det genom att konfigurera IIS/Apache. Läs mer i [det här avsnittet](../../installation/using/web-server-configuration.md).
 
@@ -42,7 +42,7 @@ Från och med nu har vi tvingat fram möjligheten att visa slutanvändarresurser
 
 Om du använder olika värdnamn (en offentlig och en för operatorer) kan du även förhindra att vissa resurser som behövs av operatorer skickas vidare över det offentliga DNS-namnet.
 
-## Skydd för utgående anslutningar
+## Skydd av utgående anslutning
 
 Standardlistan med URL:er som kan anropas av JavaScript-koder (arbetsflöden osv.) är begränsad. Om du vill tillåta en ny URL måste administratören referera till den i [filen serverConf.xml](../../installation/using/the-server-configuration-file.md).
 

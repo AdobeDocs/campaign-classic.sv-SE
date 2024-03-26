@@ -7,8 +7,8 @@ badge-v7-only: label="v7" type="Informative" tooltip="Gäller endast Campaign Cl
 exl-id: 26737940-b3ce-425c-9604-f4cefd19afaa
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '1118'
-ht-degree: 3%
+source-wordcount: '1111'
+ht-degree: 2%
 
 ---
 
@@ -64,7 +64,7 @@ Om du vill hämta klient-ID:t måste du registrera en app i Azure Active Directo
 
 När du sparar får du en **Program-ID** som är klient-ID för Campaign.
 
-Läs mer i [den här sidan](https://docs.microsoft.com/powerapps/developer/common-data-service/walkthrough-register-app-azure-active-directory).
+Läs mer på [den här sidan](https://docs.microsoft.com/powerapps/developer/common-data-service/walkthrough-register-app-azure-active-directory).
 
 ### Generera nyckelidentifierare och nyckel-ID för Microsoft Dynamics-certifikat {#config-certificate-key-id}
 
@@ -150,7 +150,7 @@ Appanvändaren är den användare som programmet som registrerats ovan kommer at
 1. Tilldela **Program-ID** for [det program du skapade tidigare](#get-client-id-microsoft).
 1. Klicka på **Hantera roller** och väljer **Systemadministratör** roll för användaren.
 
-## Konfigurera Campaign {#configure-acc-for-microsoft}
+## Konfigurera kampanj {#configure-acc-for-microsoft}
 
 >[!NOTE]
 >
@@ -170,7 +170,7 @@ Om du vill ansluta Microsoft Dynamics 365 och Campaign måste du skapa och konfi
 
    ![](assets/crm-ms-dynamics-ext-account.png)
 
-1. Klicka på länken **[!UICONTROL Microsoft CRM configuration wizard...]**. Adobe Campaign identifierar automatiskt tabellerna från datamallen i Microsoft Dynamics.
+1. Klicka på **[!UICONTROL Microsoft CRM configuration wizard...]** länk. Adobe Campaign identifierar automatiskt tabellerna från datamallen i Microsoft Dynamics.
 
    ![](assets/crm_connectors_msdynamics_02.png)
 

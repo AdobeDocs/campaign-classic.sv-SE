@@ -2,13 +2,13 @@
 product: campaign
 title: Skicka ett födelsedagsmeddelande via e-post
 description: Lär dig hur du skickar ett födelsedagsmeddelande med ett arbetsflöde
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+badge-v7-only: label="v7" type="Informative" tooltip="Gäller endast Campaign Classic v7"
 feature: Workflows
 exl-id: 38006cca-e945-4b9d-8e2d-ed537b8541d9
 source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
-source-wordcount: '879'
-ht-degree: 2%
+source-wordcount: '885'
+ht-degree: 3%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 2%
 
 ## Introduktion {#introduction}
 
-I det här användningsexemplet visas hur du planerar att skicka ett återkommande e-postmeddelande till en lista över mottagare på dagen för deras födelsedag.
+I det här användningsexemplet visas hur du planerar att skicka ett återkommande e-postmeddelande till en lista över mottagare på deras födelsedag.
 
 Vi har skapat följande arbetsflöde för målinriktning för att konfigurera det här användningsexemplet:
 
@@ -28,7 +28,7 @@ Det här arbetsflödet (daglig körning) markerar alla mottagare som har sin fö
 
 ![](assets/do-not-localize/how-to-video.png) Det här användningsexemplet finns också i form av en video. Mer information finns i [Skapa ett arbetsflöde](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/automating-with-workflows/creating-a-workflow.html) video.
 
-Skapa en kampanj och klicka på **[!UICONTROL Targeting and workflows]** -fliken. Mer information finns i [Bygga huvudmålet i ett arbetsflöde](../../campaign/using/marketing-campaign-deliveries.md#building-the-main-target-in-a-workflow) -avsnitt.
+Skapa en kampanj och klicka på **[!UICONTROL Targeting and workflows]** -fliken. Mer information finns i [Skapa huvudmålet i ett arbetsflöde](../../campaign/using/marketing-campaign-deliveries.md#building-the-main-target-in-a-workflow) -avsnitt.
 
 Följ sedan dessa steg:
 
@@ -39,14 +39,14 @@ Följ sedan dessa steg:
    ![](assets/recur_delivery2.png)
 
 
-## Identifiera mottagare vars födelsedag det är {#identifying-recipients-whose-birthday-it-is}
+## Identifiera mottagare vars födelsedag är {#identifying-recipients-whose-birthday-it-is}
 
 När du har konfigurerat **[!UICONTROL Scheduler]** så att arbetsflödet startar varje dag och identifierar alla mottagare vars födelsedatum är lika med det aktuella datumet.
 
 Gör så här:
 
 1. Dra och släpp en **[!UICONTROL Query]** -aktiviteten i arbetsflödet och dubbelklicka på den.
-1. Klicka på **Redigera fråga** länk och markera **[!UICONTROL Filtering conditions]**.
+1. Klicka på **Redigera fråga** länka och markera **[!UICONTROL Filtering conditions]**.
 
    ![](assets/s_ncs_user_create_exp_exple00.png)
 
@@ -59,7 +59,7 @@ Gör så här:
    ![](assets/s_ncs_user_create_exp_exple_a.png)
 
 1. Välj **[!UICONTROL Edit the formula using an expression]** och klicka **[!UICONTROL Next]** för att visa uttrycksredigeraren.
-1. Dubbelklicka i listan med funktioner **[!UICONTROL Day]**, som du når via **[!UICONTROL Date]** nod. Den här funktionen returnerar talet som representerar dagen som motsvarar datumet som skickades som en parameter.
+1. Dubbelklicka i listan med funktioner **[!UICONTROL Day]**, som du kommer åt via **[!UICONTROL Date]** nod. Den här funktionen returnerar talet som representerar dagen som motsvarar datumet som skickades som en parameter.
 
    ![](assets/s_ncs_user_create_exp_exple01.png)
 
@@ -76,7 +76,7 @@ Gör så här:
    ![](assets/s_ncs_user_create_exp_exple02.png)
 
 1. Klicka sedan på den första cellen i den andra kolumnen (**[!UICONTROL Value]**) och klicka på **[!UICONTROL Edit expression]** för att öppna uttrycksredigeraren.
-1. Dubbelklicka i listan med funktioner **[!UICONTROL Day]**, som du når via **[!UICONTROL Date]** nod.
+1. Dubbelklicka i listan med funktioner **[!UICONTROL Day]**, som du kommer åt via **[!UICONTROL Date]** nod.
 1. Dubbelklicka på **[!UICONTROL GetDate]** funktion för att hämta aktuellt datum.
 
    ![](assets/s_ncs_user_create_exp_exple04.png)
@@ -89,7 +89,7 @@ Gör så här:
 
    Klicka på **[!UICONTROL Finish]** för att bekräfta.
 
-1. Upprepa den här proceduren för att hämta födelsemånaden som motsvarar den aktuella månaden. Om du vill göra det klickar du på **[!UICONTROL Add]** och upprepa steg 3 till 10, ersätta **[!UICONTROL Day]** med **[!UICONTROL Month]**.
+1. Upprepa den här proceduren för att hämta födelsemånaden som motsvarar den aktuella månaden. Klicka på **[!UICONTROL Add]** och upprepa steg 3 till 10, ersätta **[!UICONTROL Day]** med **[!UICONTROL Month]**.
 
    Den fullständiga frågan är följande:
 
@@ -123,13 +123,13 @@ När du har konfigurerat **[!UICONTROL Scheduler]** så att arbetsflödet starta
 
 ![](assets/birthday-workflow_usecase_2.png)
 
-Välja mottagare vars födelsedag motsvarar det aktuella datumet visas i dialogrutan [Identifiera mottagare vars födelsedag det är](#identifying-recipients-whose-birthday-it-is) -avsnitt.
+Välja mottagare vars födelsedag motsvarar det aktuella datumet visas i dialogrutan [Identifiera mottagare vars födelsedag är](#identifying-recipients-whose-birthday-it-is) -avsnitt.
 
 ### Steg 2: Välj om det är ett skottår eller inte {#step-2--select-whether-or-not-it-is-a-leap-year}
 
 The **[!UICONTROL Test]** Med -aktiviteten kan du kontrollera om det är ett skottår och om det aktuella datumet är den 1 mars eller inte.
 
-Om testet verifieras (året är inte ett skottår - det finns ingen 29 februari - och det aktuella datumet är den 1 mars) är **[!UICONTROL True]** övergången är aktiverad och de mottagare som är födda den 29 februari kommer att läggas till den 1 mars. I annat fall visas **[!UICONTROL False]** övergången är aktiverad och endast de mottagare som är födda det aktuella datumet kommer att få leveransen.
+Om testet verifieras (året är inte ett skottår - det finns ingen 29 februari - och det aktuella datumet är den 1 mars) är **[!UICONTROL True]** övergången är aktiverad och de mottagare som är födda den 29 februari läggs till den 1 mars. I annat fall **[!UICONTROL False]** övergången är aktiverad och endast de mottagare som är födda det aktuella datumet kommer att få leveransen.
 
 Kopiera och klistra in koden nedan i **[!UICONTROL Initialization script]** i **[!UICONTROL Advanced]** -fliken.
 
@@ -185,7 +185,7 @@ vars.currentIsALeapYear == 0 && vars.firstOfMarch == 1
 
 ![](assets/birthday-workflow_usecase_4.png)
 
-### Steg 3: Markera alla mottagare som är födda den 29 februari {#step-3--select-any-recipients-born-on-february-29th}
+### Steg 3: Välj eventuella mottagare som är födda den 29 februari {#step-3--select-any-recipients-born-on-february-29th}
 
 Skapa en **[!UICONTROL Fork]** aktivitet och länka en av de utgående övergångarna till en **[!UICONTROL Query]** aktivitet.
 

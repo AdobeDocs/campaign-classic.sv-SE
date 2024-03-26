@@ -2,13 +2,13 @@
 product: campaign
 title: Uppdatera aggregat
 description: Läs mer om aktiviteten Uppdatera aggregerat arbetsflöde
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+badge-v7-only: label="v7" type="Informative" tooltip="Gäller endast Campaign Classic v7"
 feature: Workflows
 exl-id: d2b26af0-30a1-4852-acd5-996795f198a1
 source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
-source-wordcount: '123'
-ht-degree: 3%
+source-wordcount: '130'
+ht-degree: 8%
 
 ---
 
@@ -25,7 +25,7 @@ Aggregat definieras på den relevanta fliken för varje kub.
 ![](assets/s_advuser_cube_agregate_01.png)
 
 
-The **[!UICONTROL Update aggregate]** kan du välja vilket uppdateringsläge som ska användas: helt eller delvis.
+The **[!UICONTROL Update aggregate]** Med -aktiviteten kan du välja det uppdateringsläge som ska användas: helt eller delvis.
 
 Som standard utförs en fullständig uppdatering under varje beräkning. Om du vill aktivera en partiell uppdatering väljer du det relevanta alternativet och definierar uppdateringsvillkoren.
 

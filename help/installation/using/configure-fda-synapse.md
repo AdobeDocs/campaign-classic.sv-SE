@@ -10,8 +10,8 @@ topic-tags: connectors
 exl-id: 59d0277a-7588-4504-94e3-50f87b60da8a
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '779'
-ht-degree: 1%
+source-wordcount: '742'
+ht-degree: 2%
 
 ---
 
@@ -125,13 +125,13 @@ Så här konfigurerar du Azure synapse i Windows:
 
 1. När ODBC-drivrutinen har installerats kan du testa den om det behövs. Se denna [sida](https://docs.microsoft.com/en-us/sql/connect/odbc/windows/system-requirements-installation-and-driver-files?view=sql-server-ver15#installing-microsoft-odbc-driver-for-sql-server) för mer information om detta.
 
-1. I Campaign Classic kan du sedan konfigurera [!DNL Azure Synapse] externt konto. Mer information om hur du konfigurerar ditt externa konto finns i [det här avsnittet](#azure-external).
+1. I Campaign Classicen kan du sedan konfigurera [!DNL Azure Synapse] externt konto. Mer information om hur du konfigurerar ditt externa konto finns i [det här avsnittet](#azure-external).
 
 1. Eftersom Azure synapse Analytics kommunicerar via TCP 1433-porten måste du öppna den här porten i Windows Defender-brandväggen. Mer information finns i [Windows-dokumentation](https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-firewall/create-an-outbound-program-or-service-rule).
 
 ## Azure synapse på Debian {#azure-debian}
 
-**Förhandskrav:**
+**Förutsättningar:**
 
 * Du måste ha rotbehörighet för att installera en ODBC-drivrutin.
 * Rullning krävs för att installera paketet mSolbcsql. Om du inte har det installerat kör du följande kommando:
@@ -180,7 +180,7 @@ Så här konfigurerar du Azure synapse på Debian:
    /opt/mssql-tools/bin/sqlcmd -S yourServer -U yourUserName -P yourPassword -q "your query" # for example -q "select 1"
    ```
 
-1. I Campaign Classic kan du nu konfigurera [!DNL Azure Synapse] externt konto. Mer information om hur du konfigurerar ditt externa konto finns i [det här avsnittet](#azure-external).
+1. I Campaign Classicen kan du nu konfigurera [!DNL Azure Synapse] externt konto. Mer information om hur du konfigurerar ditt externa konto finns i [det här avsnittet](#azure-external).
 
 1. Aktivera den utgående TCP 1433-porten för värdnamnet med följande kommando för att konfigurera iptables på Debian för att säkerställa anslutningen med Azure synapse Analytics:
 
@@ -238,6 +238,6 @@ Skapa [!DNL Azure Synapse] externt konto följer du stegen nedan:
 
 Kopplingen stöder följande alternativ:
 
-| Option | Beskrivning |
+| Alternativ | Beskrivning |
 |---|---|
 | Autentisering | Typ av autentisering som stöds av kopplingen. Aktuellt värde: ActiveDirectoryMSI. </br>Mer information finns i [SQL-dokument](https://docs.microsoft.com/en-us/sql/connect/odbc/using-azure-active-directory?view=sql-server-ver15#example-connection-strings) (Exempel på anslutningssträngar nr 8). |

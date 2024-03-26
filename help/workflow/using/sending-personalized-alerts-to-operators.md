@@ -2,13 +2,13 @@
 product: campaign
 title: Skicka personaliserade aviseringar till operatörer
 description: Lär dig hur du skickar personaliserade aviseringar till operatorer
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+badge-v7-only: label="v7" type="Informative" tooltip="Gäller endast Campaign Classic v7"
 feature: Workflows
 exl-id: 21c97eb3-60cd-4d19-bc0f-5ba9ec17e70a
 source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
-source-wordcount: '343'
-ht-degree: 2%
+source-wordcount: '351'
+ht-degree: 4%
 
 ---
 
@@ -62,7 +62,7 @@ Följ stegen nedan för att hämta informationen:
 
    ![](assets/uc_operator_5.png)
 
-1. Frågemålets dimension och fältnamn visas i listan.
+1. Frågemålets dimension- och fältnamn visas i listan.
 
    ![](assets/uc_operator_6.png)
 
@@ -76,11 +76,11 @@ var.recCount>0
 
 ![](assets/uc_operator_7.png)
 
-## Konfigurera aviseringen {#setting-up-the-alert}
+## Ställa in aviseringen {#setting-up-the-alert}
 
 Nu när populationen har lagts till i instansvariabeln med de önskade fälten kan du lägga till dessa uppgifter i **[!UICONTROL Alert]** aktivitet.
 
-Om du vill göra det lägger du till **[!UICONTROL Source]** tabba koden nedan:
+Gör detta genom att lägga till **[!UICONTROL Source]** tabba koden nedan:
 
 ```
 <ul>

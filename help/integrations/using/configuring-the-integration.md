@@ -10,8 +10,8 @@ content-type: reference
 exl-id: 54ee88b2-e646-4fb9-abec-957f0096f15f
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '540'
-ht-degree: 4%
+source-wordcount: '509'
+ht-degree: 2%
 
 ---
 
@@ -124,7 +124,7 @@ Så här startar du konfigurationen i Adobe Experience Manager:
 
 1. Anslut Adobe Experience Manager till Adobe Campaign genom att konfigurera en dedikerad **Cloud Service**.
 
-   Om du vill veta hur du kopplar ihop båda lösningarna via Cloud Services kan du läsa Adobe Experience Manager [dokumentation](https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/campaignonpremise.html#ConfiguringAdobeExperienceManager) .
+   Om du vill veta hur du kopplar ihop båda lösningarna via Cloud Service kan du läsa Adobe Experience Manager [dokumentation](https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/campaignonpremise.html#ConfiguringAdobeExperienceManager) .
 
 1. Konfigurera **Externalizer-tjänst**.
 

@@ -7,8 +7,8 @@ feature: Access Management, Permissions
 exl-id: 9b616715-33cd-43ba-8548-8d96a179408e
 source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
-source-wordcount: '264'
-ht-degree: 4%
+source-wordcount: '256'
+ht-degree: 6%
 
 ---
 
@@ -28,7 +28,7 @@ De fylls i av säkerhetsparametrar som är kopplade till operatörens anslutning
 
 Det finns två typer av behörigheter som du kan ge en användare:
 
-* Du kan definiera grupper av operatorer som du tilldelar rättigheter till och sedan associera operatorerna med en eller flera grupper. På så sätt kan du återanvända behörigheter och göra användarprofilerna mer enhetliga. Det underlättar också hantering och underhåll av profiler. Framtagning och hantering av grupper presenteras i [det här avsnittet](access-management-groups.md).
+* Du kan definiera grupper av operatorer som du tilldelar rättigheter till och sedan associera operatorerna med en eller flera grupper. På så sätt kan du återanvända behörigheter och göra operatörsprofilerna mer enhetliga. Det underlättar också hantering och underhåll av profiler. Framtagning och hantering av grupper presenteras i [det här avsnittet](access-management-groups.md).
 
 * Du kan tilldela namngivna rättigheter direkt till användare, i vissa fall för att överlagra rättigheterna som tilldelats via grupper. Dessa rättigheter presenteras i [den här sidan](access-management-named-rights.md).
 
@@ -44,7 +44,7 @@ Lär dig hur du ger åtkomst och konfigurerar behörigheter i följande avsnitt:
 
 * [Lägg till namngivna rättigheter](access-management-named-rights.md)
 
-* [Hantera åtkomst till Campaign-mappen](access-management-folders.md)
+* [Hantera mappåtkomst för kampanj](access-management-folders.md)
 
 * [Matris för åtkomsträttigheter](access-management-named-rights.md#access-rights-matrix)
 

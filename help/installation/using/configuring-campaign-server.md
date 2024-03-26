@@ -1,7 +1,7 @@
 ---
 product: campaign
-title: Konfigurera Campaign-servern
-description: Konfigurera Campaign-servern
+title: Konfigurerar Campaign-server
+description: Konfigurerar Campaign-server
 feature: Installation, Instance Settings
 badge-v7-only: label="v7" type="Informative" tooltip="Gäller endast Campaign Classic v7"
 badge-v7-prem: label="lokal och hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=sv" tooltip="Gäller endast lokala och hybrida driftsättningar"
@@ -11,8 +11,8 @@ topic-tags: additional-configurations
 exl-id: 46c8ed46-0947-47fb-abda-6541b12b6f0c
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '1603'
-ht-degree: 2%
+source-wordcount: '1575'
+ht-degree: 1%
 
 ---
 
@@ -26,12 +26,12 @@ I det här kapitlet beskrivs serverkonfigurationer som kan utföras för att pas
 
 Dessa förfaranden är begränsade till **lokal**/**hybrid** distribuerar och kräver administrationsbehörigheter.
 
-För **värdbaserad** -distributioner kan inställningarna på serversidan endast konfigureras av Adobe. Vissa inställningar kan dock ställas in i [Kampanjkontrollpanelen](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/key-features.html), till exempel hantering av IP-tillåtelselista eller URL-behörigheter. [Läs mer](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/ip-allow-listing-instance-access.html).
+För **värdbaserad** -distributioner kan inställningarna på serversidan endast konfigureras av Adobe. Vissa inställningar kan dock ställas in i [Kampanjkontrollpanelen](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/key-features.html?lang=sv), till exempel hantering av IP-tillåtelselista eller URL-behörigheter. [Läs mer](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/ip-allow-listing-instance-access.html).
 
 Mer information finns i följande avsnitt:
 
 * [Dokumentation för kontrollpanelen](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=sv)
-* [Värdbaserade modeller](../../installation/using/hosting-models.md)
+* [Värdmodeller](../../installation/using/hosting-models.md)
 * [Funktionsmatris för lokal och värdbaserad Campaign Classic](../../installation/using/capability-matrix.md)
 
 ## Konfigurationsfiler

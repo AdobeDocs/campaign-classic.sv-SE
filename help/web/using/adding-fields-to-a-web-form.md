@@ -2,14 +2,14 @@
 product: campaign
 title: Lägg till fält i ett webbformulär
 description: Lägg till fält i ett webbformulär
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
+badge-v7: label="v7" type="Informative" tooltip="Gäller Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Gäller även Campaign v8"
 feature: Web Forms, Landing Pages
 exl-id: 827b6575-7206-4dfc-b2c6-b95a6d5730b1
 source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
-source-wordcount: '2368'
-ht-degree: 1%
+source-wordcount: '2376'
+ht-degree: 0%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 1%
 
 I ett webbformulär gör fälten det möjligt för användare att ange information och välja alternativ. Webbformulär kan innehålla inmatningsfält, urvalsfält, statiskt och avancerat innehåll (bildtexter, prenumerationer osv.).
 
-När du använder guiden för att lägga till fält identifieras fälttypen automatiskt baserat på det valda fältet eller lagringsvariabeln. Du kan redigera den med **[!UICONTROL Type]** nedrullningsbar listruta i **[!UICONTROL General]** -fliken.
+När du använder guiden för att lägga till fält identifieras fälttypen automatiskt baserat på det valda fältet eller lagringsvariabeln. Du kan redigera den med **[!UICONTROL Type]** listrutan i **[!UICONTROL General]** -fliken.
 
 ![](assets/s_ncs_admin_webform_change_type.png)
 
@@ -38,7 +38,7 @@ Följande fälttyper är tillgängliga:
 * Knappen Hämta. [Överföra en fil](#uploading-a-file).
 * Dold konstant. Se [Infoga en dold konstant](#inserting-a-hidden-constant).
 
-Ange svarslagringsläget: uppdaterar ett fält i databasen (lagrar endast det senast sparade värdet) eller lagrar det i en variabel (svaret lagras inte). Mer information finns i [Svarslagringsfält](web-forms-answers.md#response-storage-fields).
+Ange svarslagringsläget: uppdatera ett fält i databasen (lagrar endast det senast sparade värdet) eller lagra i en variabel (svaret lagras inte). Mer information finns i [Svarslagringsfält](web-forms-answers.md#response-storage-fields).
 
 >[!NOTE]
 >
@@ -50,7 +50,7 @@ För varje sida i formuläret kan du lägga till ett fält via den första knapp
 
 ![](assets/s_ncs_admin_survey_add_field_menu.png)
 
-Välj den typ av fält som du vill skapa: du kan välja att lägga till ett fält i databasen, en variabel eller att importera en grupp med fält som har skapats i ett annat formulär och samlats in i en behållare.
+Välj den typ av fält som du vill skapa: du kan välja att lägga till ett fält i databasen, en variabel eller att importera en grupp med fält som har skapats i ett annat formulär och samlats i en behållare.
 
 Klicka **[!UICONTROL Next]** och markerar lagringsfältet eller variabeln, eller den behållare som du vill importera.
 
@@ -70,41 +70,42 @@ Om du vill lägga till ett inmatningsfält klickar du på **[!UICONTROL Input co
 
 Fem olika typer av textfält kan infogas på en formulärsida:
 
-* **Text**: gör att användaren kan skriva en text på en rad.
+* **Text**: låter användaren ange en text på en rad.
 
-   ![](assets/s_ncs_admin_survey_txt_ex.png)
+  ![](assets/s_ncs_admin_survey_txt_ex.png)
 
-* **Nummer**: gör att användaren kan ange ett nummer på en rad. Mer information finns i [Lägga till tal](#adding-numbers).
+* **Nummer**: låter användaren ange en siffra på en rad. för mer information om detta, se [Lägga till tal](#adding-numbers).
 
-   När sidan har godkänts kontrolleras fältinnehållet för att kontrollera att det angivna värdet är kompatibelt med fältet. Mer information finns i [Definiera kontrollinställningar](form-rendering.md#defining-control-settings).
+  När sidan har godkänts kontrolleras fältinnehållet för att kontrollera att det angivna värdet är kompatibelt med fältet. Mer information finns i [Definiera kontrollinställningar](form-rendering.md#defining-control-settings).
 
-* **Lösenord**: gör att användaren kan skriva text på en rad. Under textinmatning ersätts tecknen med punkter:
+* **Lösenord**: låter användaren skriva text på en rad. Under textinmatning ersätts tecknen med punkter:
 
-   ![](assets/s_ncs_admin_survey_passwd_ex.png)
+  ![](assets/s_ncs_admin_survey_passwd_ex.png)
 
-   >[!CAUTION]
-   >
-   >Lösenord lagras okrypterade i databasen.
+  >[!CAUTION]
+  >
+  >Lösenord lagras okrypterade i databasen.
 
-* **Flerradstext**: gör att användaren kan skriva text på flera rader.
+* **Flerradstext**: låter användaren skriva text på flera rader.
 
-   ![](assets/s_ncs_admin_survey_txtmulti_ex.png)
+  ![](assets/s_ncs_admin_survey_txtmulti_ex.png)
 
-   >[!CAUTION]
-   >
-   >Flerradiga textfält är specifika fält som kan innehålla vagnreturer. Deras lagringsutrymme måste associeras med ett fält som är mappat till ett XML-element, inte ett XML-attribut.
+  >[!CAUTION]
+  >
+  >Flerradiga textfält är specifika fält som kan innehålla vagnreturer. Deras lagringsutrymme måste associeras med ett fält som är mappat till ett XML-element, inte ett XML-attribut.
+  >   
 
-* **Förbättrad text med flera rader**: gör att användaren kan skriva text med en layout som ska sparas i HTML-format.
+* **Förbättrad text med flera rader**: låter användaren skriva text med en layout som ska sparas i HTML-format.
 
-   ![](assets/s_ncs_admin_survey_txthtmli_ex.png)
+  ![](assets/s_ncs_admin_survey_txthtmli_ex.png)
 
-   Du kan välja vilken typ av redigerare som ska vara tillgänglig för användarna. Använd listrutan i dialogrutan **[!UICONTROL HTML editor]** i **[!UICONTROL Advanced]** -fliken.
+  Du kan välja vilken typ av redigerare som ska vara tillgänglig för användarna. Använd listrutan i dialogrutan **[!UICONTROL HTML editor]** fältet i **[!UICONTROL Advanced]** -fliken.
 
-   ![](assets/webapp_enrich_text_type.png)
+  ![](assets/webapp_enrich_text_type.png)
 
-   Hur många ikoner som visas varierar beroende på vilken typ av redigerare som används. För **[!UICONTROL Advanced]** redigeraren kommer återgivningen att se ut så här:
+  Hur många ikoner som visas varierar beroende på vilken typ av redigerare som används. För **[!UICONTROL Advanced]** redigeraren kommer återgivningen att se ut så här:
 
-   ![](assets/webapp_enrich_text_max.png)
+  ![](assets/webapp_enrich_text_max.png)
 
 ### Konfigurera inmatningsfält {#configure-input-fields}
 
@@ -114,13 +115,13 @@ Indatafält konfigureras alla baserat på samma läge med följande alternativ:
 
 The **[!UICONTROL General]** kan du ange fältets namn och vid behov tilldela det ett standardvärde.
 
-Svarslagringsläget kan ändras via **[!UICONTROL Edit storage...]** länk. Värdena kan lagras i ett befintligt fält i databasen. eller så kan du välja att inte spara information i databasen (använd en lokal variabel).
+Svarslagringsläget kan ändras via **[!UICONTROL Edit storage...]** länk. Värden kan lagras i ett befintligt fält i databasen eller så kan du välja att inte spara information i databasen (använd en lokal variabel).
 
 >[!NOTE]
 >
 >Lagringslägen beskrivs i [Svarslagringsfält](web-forms-answers.md#response-storage-fields)
 
-The **[!UICONTROL Advanced]** Med -fliken kan du definiera visningsparametrar för fältet (placering av etiketter, justering osv.). Se [Definiera webbformulärslayout](defining-web-forms-layout.md).
+The **[!UICONTROL Advanced]** kan du definiera visningsparametrar för fältet (placering av etiketter, justering osv.). Se [Definiera webbformulärslayout](defining-web-forms-layout.md).
 
 ## Lägga till nedrullningsbara listor {#adding-drop-down-lists}
 
@@ -210,7 +211,7 @@ Alternativknappar konfigureras på ungefär samma sätt som kryssrutor (se [Läg
 
 ### Lägga till en lista med knappar {#add-a-list-of-buttons}
 
-Om du vill lägga till alternativknappar via en lista går du till **[!UICONTROL Selection controls>Multiple choice]** i verktygsfältet i sidredigeraren.
+Gå till **[!UICONTROL Selection controls>Multiple choice]** i verktygsfältet i sidredigeraren.
 
 ![](assets/s_ncs_admin_survey_radio_button_sample2.png)
 
@@ -239,7 +240,7 @@ Endast ett alternativ kan väljas per stödlinje.
 
 >[!NOTE]
 >
->I vårt exempel är rutnätets etikett dold. För att göra det går du till **[!UICONTROL Advanced]** -fliken **[!UICONTROL Label position]** display definieras som **[!UICONTROL Hidden]** . Se [Definiera placeringen av etiketter](defining-web-forms-layout.md#defining-the-position-of-labels).
+>I vårt exempel är rutnätets etikett dold. För att göra det går du till **[!UICONTROL Advanced]** -fliken, **[!UICONTROL Label position]** display definieras som **[!UICONTROL Hidden]** . Se [Definiera placeringen av etiketter](defining-web-forms-layout.md#defining-the-position-of-labels).
 
 ## Lägga till datum och nummer {#adding-dates-and-numbers}
 
@@ -271,7 +272,7 @@ I vissa fall kan det dock vara enklare att använda nedrullningsbara listor (til
 
 ![](assets/s_ncs_admin_survey_date_list_select.png)
 
-Om du vill göra det klickar du på **[!UICONTROL Advanced]** och välj indataläge med **[!UICONTROL Drop-down lists]**.
+Klicka på **[!UICONTROL Advanced]** och välj indataläge med **[!UICONTROL Drop-down lists]**.
 
 ![](assets/s_ncs_admin_survey_date_selection.png)
 
@@ -305,11 +306,11 @@ I formuläret kommer återgivningen att se ut så här:
 
 Du kan lägga till kontroller som tillåter användare att prenumerera på eller avbryta prenumerationen på en eller flera informationstjänster (nyhetsbrev, varningar, meddelanden i realtid osv.). Användaren kontrollerar motsvarande tjänst för att prenumerera.
 
-Om du vill skapa en prenumeration klickar du på **[!UICONTROL Advanced controls>Subscription]**.
+Om du vill skapa en prenumeration markerar du kryssrutan **[!UICONTROL Advanced controls>Subscription]**.
 
 ![](assets/s_ncs_admin_survey_subscription_edit.png)
 
-Ange kryssrutans etikett och välj informationstjänst med **[!UICONTROL Service]** nedrullningsbar listruta.
+Ange kryssrutans etikett och välj informationstjänst med **[!UICONTROL Service]** listruta.
 
 >[!NOTE]
 >
@@ -335,7 +336,7 @@ Om du vill infoga en Captcha i ett formulär klickar du på den första knappen 
 
 ![](assets/s_ncs_admin_survey_add_captcha.png)
 
-Ange fältets etikett. Den här etiketten visas framför Captcha-visningsområdet. Du kan ändra placeringen av den här etiketten i dialogrutan **[!UICONTROL Advanced]** -fliken.
+Ange fältets etikett. Den här etiketten visas framför Captcha-visningsområdet. Du kan ändra placeringen av den här etiketten i **[!UICONTROL Advanced]** -fliken.
 
 ![](assets/s_ncs_admin_survey_captcha_adv.png)
 
@@ -374,11 +375,10 @@ Du kan lagra länken till dessa filer i en lokal variabel eller i ett databasfä
 >[!CAUTION]
 >
 >* Den här filtypen måste reserveras för formulär med säker åtkomst (med hjälp av autentiseringsuppgifter).
->* Adobe Campaign kontrollerar inte storleken eller typen av resurs som överförts: Därför rekommenderar vi att du endast använder överföringsfält för säkra intranätplatser.
+>* Adobe Campaign styr inte storleken eller typen av överförd resurs: vi rekommenderar därför att du endast använder överföringsfält för säkra intranätplatser.
 >* Om flera servrar är länkade till instansen (belastningsutjämningsarkitektur) måste du se till att anrop till webbformuläret kommer fram på samma server.
 >* Dessa implementeringar kräver hjälp av Adobe Campaign Consulting-teamet.
 >
-
 
 ## Infoga en dold konstant {#inserting-a-hidden-constant}
 
@@ -386,7 +386,7 @@ När användaren validerar en av sidorna i formuläret kan du ange ett specifikt
 
 Det här fältet är inte synligt för användaren, men kan användas för att utöka data i användarprofilen.
 
-Om du vill göra det placerar du en **konstant** på sidan och ange värde och lagringsplats.
+Gör detta genom att placera en **konstant** på sidan och ange värde och lagringsplats.
 
 I följande exempel **ursprung** fält i mottagarprofilen fylls i automatiskt när en användare godkänner den här sidan. Konstanten visas inte på sidan.
 

@@ -9,11 +9,11 @@ exl-id: 655b5928-b005-442f-b026-2f1b0c1abb99
 source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
 workflow-type: tm+mt
 source-wordcount: '987'
-ht-degree: 6%
+ht-degree: 5%
 
 ---
 
-# Kom igång med datamodellen i Campaign {#about-data-model}
+# Kom igång med Campaign-datamodellen{#about-data-model}
 
 Den konceptuella datamodellen av databasen i Adobe Campaign består av en uppsättning inbyggda tabeller och deras interaktion. Huvudtabeller och begrepp listas på den här sidan.
 

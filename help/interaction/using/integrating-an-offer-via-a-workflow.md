@@ -11,7 +11,7 @@ exl-id: 33d318f3-1eb4-4c74-8c20-8b9f0442c7c3
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
 source-wordcount: '1050'
-ht-degree: 3%
+ht-degree: 2%
 
 ---
 
@@ -72,7 +72,7 @@ Det finns två metoder för att ange erbjudandeförslag.
 När du har konfigurerat frågan (se [Handbok för arbetsflöden](../../workflow/using/query.md)):
 
 1. Lägg till och öppna en anrikningsaktivitet.
-1. Välj **[!UICONTROL Enrichment]** **[!UICONTROL Add data]** i flik .
+1. I **[!UICONTROL Enrichment]** flik, välja **[!UICONTROL Add data]**.
 1. Välj **[!UICONTROL An offer proposition]** i de typer av data som ska läggas till.
 
    ![](assets/int_enrichment_offer2.png)

@@ -2,13 +2,13 @@
 product: campaign
 title: Schemaläggare
 description: Läs mer om arbetsflödesaktiviteten i schemaläggaren
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+badge-v7-only: label="v7" type="Informative" tooltip="Gäller endast Campaign Classic v7"
 feature: Workflows
 exl-id: 30a9bd2a-afb1-481c-ab5f-5acebd9cbb5a
 source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
-source-wordcount: '332'
-ht-degree: 10%
+source-wordcount: '340'
+ht-degree: 12%
 
 ---
 
@@ -28,7 +28,7 @@ The **Schemaläggare** är en beständig uppgift som aktiverar övergången vid 
 
 * Användning av en schemaläggaraktivitet kan leda till att ett arbetsflöde körs flera gånger samtidigt. Du kan till exempel ha en schemaläggare som utlöser arbetsflödeskörningen varje timme, men ibland tar körningen av hela arbetsflödet mer än en timme.
 
-   Du kanske vill hoppa över körningen om arbetsflödet redan körs. Mer information om hur du förhindrar samtidig körning av ett arbetsflöde finns i [den här sidan](monitoring-workflow-execution.md#preventing-simultaneous-multiple-executions).
+  Du kanske vill hoppa över körningen om arbetsflödet redan körs. Mer information om hur du förhindrar samtidig körning av ett arbetsflöde finns i [den här sidan](monitoring-workflow-execution.md#preventing-simultaneous-multiple-executions).
 
 * Observera att övergången kan aktiveras flera timmar senare om arbetsflödet utförde en långvarig uppgift, till exempel en import, eller om wfserver-modulen stoppades en tid. I det här fallet kan det vara nödvändigt att begränsa körningen av den uppgift som har aktiverats av schemaläggaren till ett visst tidsintervall.
 

@@ -8,7 +8,7 @@ exl-id: 755d2364-f6c4-4943-97e8-3ed52a0f2665
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
 source-wordcount: '670'
-ht-degree: 2%
+ht-degree: 3%
 
 ---
 
@@ -44,7 +44,7 @@ För att undvika prestandaproblem får bilderna i e-postmeddelanden inte överst
 
 Adobe rekommenderar också att du begränsar storleken och antalet bifogade filer. Som standard kan du bara lägga till en fil som en bifogad fil i ett e-postmeddelande. Det här tröskelvärdet kan konfigureras från `NmsDelivery_MaxRecommendedAttachments` alternativ.
 
-Läs mer i [listan över alternativ för Campaign Classic](../../installation/using/configuring-campaign-options.md#delivery).
+Läs mer i [listan med alternativ för Campaign Classic](../../installation/using/configuring-campaign-options.md#delivery).
 
 Läs riktlinjerna nedan innan du implementerar detta scenario:
 
@@ -55,7 +55,7 @@ Läs riktlinjerna nedan innan du implementerar detta scenario:
 
 >[!NOTE]
 >
->För att undvika prestandaproblem rekommenderar vi att du inte tar med mer än en bifogad fil per e-post. Det rekommenderade tröskelvärdet kan konfigureras från [listan över alternativ för Campaign Classic](../../installation/using/configuring-campaign-options.md#delivery).
+>För att undvika prestandaproblem rekommenderar vi att du inte inkluderar mer än en bifogad fil per e-post. Det rekommenderade tröskelvärdet kan konfigureras från [listan med alternativ för Campaign Classic](../../installation/using/configuring-campaign-options.md#delivery).
 
 ## Implementering {#implementation}
 

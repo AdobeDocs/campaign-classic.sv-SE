@@ -2,13 +2,13 @@
 product: campaign
 title: Inkrementell fråga
 description: Läs mer om arbetsflödesaktiviteten Inkrementell fråga
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+badge-v7-only: label="v7" type="Informative" tooltip="Gäller endast Campaign Classic v7"
 feature: Workflows, Targeting Activity
 exl-id: abc08232-1a92-41e8-90f1-02e0a673539b
 source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
-source-wordcount: '355'
-ht-degree: 3%
+source-wordcount: '363'
+ht-degree: 5%
 
 ---
 
@@ -24,12 +24,12 @@ Frågan definieras på samma sätt som för vanliga frågor, men körningen är 
 
 **Relaterade ämnen:**
 
-* [Användningsfall: Kvartalslistuppdatering med inkrementell fråga](quarterly-list-update.md)
+* [Användningsfall: Kvartalsvis listuppdatering med en inkrementell fråga](quarterly-list-update.md)
 * [Skapa en fråga](query.md#creating-a-query)
 
 >[!CAUTION]
 >
->Om resultatet av en inkrementell fråga är lika med **0** under en av körningarna pausas arbetsflödet tills frågan körs nästa gång. De övergångar och aktiviteter som följer efter den stegvisa frågan bearbetas därför inte före nästa körning.
+>Om resultatet av en stegvis fråga är lika med **0** under en av körningarna pausas arbetsflödet tills frågan körs nästa gång. De övergångar och aktiviteter som följer efter den stegvisa frågan bearbetas därför inte före nästa körning.
 
 Så här gör du:
 
@@ -50,15 +50,15 @@ Så här gör du:
 
    * **[!UICONTROL History in days]**
 
-      Mottagare som redan är målinriktade kan loggas i högst ett antal dagar från den dag då de var målinriktade. Om värdet är noll rensas mottagarna aldrig från loggen.
+     Mottagare som redan är målinriktade kan loggas i högst ett antal dagar från den dag då de var målinriktade. Om värdet är noll rensas mottagarna aldrig från loggen.
 
    * **[!UICONTROL Keep history when starting]**
 
-      Med det här alternativet kan du inte rensa loggen när aktiviteten är aktiverad.
+     Med det här alternativet kan du inte rensa loggen när aktiviteten är aktiverad.
 
    * **[!UICONTROL SQL table name]**
 
-      Med den här parametern kan du överlagra SQL-standardtabellen som innehåller historikdata.
+     Med den här parametern kan du överlagra SQL-standardtabellen som innehåller historikdata.
 
 ## Utdataparametrar {#output-parameters}
 

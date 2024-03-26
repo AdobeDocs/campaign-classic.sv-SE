@@ -1,7 +1,7 @@
 ---
 product: campaign
-title: Importera och exportera publiker
-description: Importera och exportera publiker
+title: Importera och exportera målgrupper
+description: Importera och exportera målgrupper
 feature: Audiences, People Core Service Integration
 badge-v7: label="v7" type="Informative" tooltip="Gäller Campaign Classic v7"
 badge-v8: label="v8" type="Positive" tooltip="Gäller även Campaign v8"
@@ -11,13 +11,13 @@ topic-tags: audience-sharing
 exl-id: c2293fc5-c9ba-4a73-8f39-fa7cdd06e8dd
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '638'
-ht-degree: 2%
+source-wordcount: '630'
+ht-degree: 0%
 
 ---
 
 
-# Importera och exportera publiker{#importing-and-exporting-audiences}
+# Importera och exportera målgrupper{#importing-and-exporting-audiences}
 
 
 

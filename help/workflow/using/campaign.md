@@ -2,13 +2,13 @@
 product: campaign
 title: Campaign
 description: Campaign
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+badge-v7-only: label="v7" type="Informative" tooltip="Gäller endast Campaign Classic v7"
 feature: Workflows
 topic-tags: technical-workflows
 source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
-source-wordcount: '164'
-ht-degree: 3%
+source-wordcount: '171'
+ht-degree: 7%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 3%
 
 
 
-Arbetsflödena nedan installeras tillsammans med **Campaign** som standard. Mer information om den här modulen finns i [section](../../campaign/using/designing-marketing-campaigns.md).
+Arbetsflödena nedan installeras tillsammans med **Campaign** som standard. Mer information om modulen finns i [section](../../campaign/using/designing-marketing-campaigns.md).
 
 >[!CAUTION]
 >
@@ -36,7 +36,7 @@ Arbetsflödena nedan installeras tillsammans med **Campaign** som standard. Mer 
    <td> Det här arbetsflödet startar beräkningen av utgifts- och kostnadsrader för budgetar, planer, program, kampanjer, leveranser och uppgifter.<br /> </td> 
   </tr> 
   <tr> 
-   <td> <span class="uicontrol">Stock: Beställningar och varningar</span> <br /> </td> 
+   <td> <span class="uicontrol">Stock: Beställningar och larm</span> <br /> </td> 
    <td> <span class="uicontrol">stockMgt</span> <br /> </td> 
    <td> Det här arbetsflödet startar lagerberäkning på orderraderna och hanterar varningsaviseringströsklar.<br /> </td> 
   </tr> 

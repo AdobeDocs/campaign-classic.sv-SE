@@ -2,21 +2,21 @@
 product: campaign
 title: Arbetsflöden för dataskyddsförordningen
 description: Läs mer om arbetsflödena i förordningen om skydd av personuppgifter
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+badge-v7-only: label="v7" type="Informative" tooltip="Gäller endast Campaign Classic v7"
 feature: Workflows, Privacy
 source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
-source-wordcount: '107'
-ht-degree: 10%
+source-wordcount: '111'
+ht-degree: 9%
 
 ---
 
 
-# Sekretessdataskyddsförordningen{#general-data-protection-regulation-gdpr}
+# Skyddsförordningen för personuppgifter{#general-data-protection-regulation-gdpr}
 
 
 
-Arbetsflödena nedan installeras tillsammans med **Skyddsförordningen för personuppgifter** som standard. Mer information om den här modulen finns i [artikel](https://helpx.adobe.com/se/campaign/kb/acc-privacy.html).
+Arbetsflödena nedan installeras tillsammans med **Skyddsförordningen för personuppgifter** som standard. Mer information om modulen finns i [artikel](https://helpx.adobe.com/se/campaign/kb/acc-privacy.html).
 
 <table> 
  <tbody> 

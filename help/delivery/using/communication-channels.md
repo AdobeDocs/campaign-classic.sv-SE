@@ -9,8 +9,8 @@ role: User
 exl-id: 92b5e013-b619-4f0b-b0b1-1fc2e653ceac
 source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
 workflow-type: tm+mt
-source-wordcount: '1216'
-ht-degree: 12%
+source-wordcount: '1217'
+ht-degree: 10%
 
 ---
 
@@ -81,7 +81,7 @@ Med Adobe Campaign kan ni skicka personaliserade och segmenterade [push-meddelan
 
 ## Direktmeddelande {#direct-mail}
 
-[Direktmeddelanden är en offlinekanal som gör att du kan anpassa och generera den fil som leverantören av direktmeddelanden behöver.  ](about-direct-mail-channel.md) Det ger dig möjligheten att blanda online- och offline-kanaler i kundresorna.
+[Direktreklam](about-direct-mail-channel.md) är en offlinekanal som gör att du kan anpassa och generera den fil som direktreklamleverantörer behöver. Det ger dig möjligheten att blanda online- och offline-kanaler i kundresorna.
 
 Med onlinekanaler kan du skapa meddelanden (e-post, SMS, leveransmeddelanden för mobilappar etc.)  och skicka dem till din målgrupp direkt från Adobe Campaign.  Med offlinekanaler fungerar det annorlunda.  När du förbereder ett direktutskick genererar Adobe Campaign en fil som innehåller samtliga målprofiler och den valda kontaktinformationen (exempelvis postadress).  Du kan sedan skicka den här filen till din leverantör för direktmeddelanden som i sin tur tar hand om själva utskicket.
 

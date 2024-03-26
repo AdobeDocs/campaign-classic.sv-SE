@@ -2,13 +2,13 @@
 product: campaign
 title: Kvartalsvis listuppdatering med en inkrementell fråga
 description: I det här fallet används en stegvis fråga för att automatiskt uppdatera en mottagarlista
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+badge-v7-only: label="v7" type="Informative" tooltip="Gäller endast Campaign Classic v7"
 feature: Workflows
 exl-id: 0d3e7046-313a-42a6-9155-3365e8d60bac
 source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
-source-wordcount: '274'
-ht-degree: 5%
+source-wordcount: '284'
+ht-degree: 7%
 
 ---
 
@@ -34,6 +34,6 @@ Eftersom dessa kampanjer lanseras i början av varje säsong för att erbjuda re
 
    ![](assets/incremental_query_example_2.png)
 
-1. När du har godkänt den inkrementella frågan konfigurerar du listuppdateringsaktiviteten enligt anvisningarna i [Listuppdatering](list-update.md).
+1. När du har godkänt den stegvisa frågan konfigurerar du listuppdateringsaktiviteten enligt anvisningarna i [Listuppdatering](list-update.md).
 
 Arbetsflödet kommer därför att startas automatiskt precis innan säsongen börjar. Listan kommer att uppdateras med nya, berättigade mottagare som kan ta emot erbjudandena.

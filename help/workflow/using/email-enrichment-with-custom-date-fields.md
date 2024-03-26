@@ -2,13 +2,13 @@
 product: campaign
 title: E-postberikande med anpassade datumfält
 description: Lär dig att förbättra e-postmeddelanden med anpassade datumfält
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+badge-v7-only: label="v7" type="Informative" tooltip="Gäller endast Campaign Classic v7"
 feature: Workflows
 exl-id: 85e0ec2a-b7cb-4d0b-a281-9ad72594403a
 source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
-source-wordcount: '538'
-ht-degree: 3%
+source-wordcount: '545'
+ht-degree: 4%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 3%
 
 I det här exemplet vill vi skicka ett e-postmeddelande med anpassade datafält till mottagare som kommer att fira sina födelsedagar den här månaden. E-postmeddelandet innehåller en kupong som är giltig en vecka före och efter deras födelsedagar.
 
-Vi måste inrikta oss på mottagare från en lista som kommer att fira sina födelsedagar den här månaden med en **[!UICONTROL Split]** aktivitet. Sedan använder du **[!UICONTROL Enrichment]** är det anpassade datafältet som fungerar som giltighetsdatum i e-postmeddelandet för kundens specialerbjudande.
+Vi måste rikta in oss på mottagare från en lista som kommer att fira sina födelsedagar den här månaden med en **[!UICONTROL Split]** aktivitet. Sedan använder du **[!UICONTROL Enrichment]** är det anpassade datafältet som fungerar som giltighetsdatum i e-postmeddelandet för kundens specialerbjudande.
 
 ![](assets/uc_enrichment.png)
 
@@ -38,7 +38,7 @@ Så här skapar du det här exemplet:
 
    ![](assets/uc_enrichment_3.png)
 
-1. Klicka **[!UICONTROL Advanced Selection]** sedan **[!UICONTROL Edit the formula using an expression]** och lägga till följande uttryck: Month(@bornDate).
+1. Klicka **[!UICONTROL Advanced Selection]** sedan **[!UICONTROL Edit the formula using an expression]** och lägg till följande uttryck: Month(@bornDate).
 1. I **[!UICONTROL Operator]** kolumn väljer du **[!UICONTROL equal to]**.
 1. Filtrera villkoret ytterligare genom att lägga till **[!UICONTROL Value]** månad för aktuellt datum: Month(GetDate()).
 
@@ -108,7 +108,7 @@ Nu kan du börja designa din e-postleverans med de anpassade datumfälten i **[!
            formatDate(targetData.alias of your expression,"%2D.%2M")  %>
    ```
 
-1. Klicka på ![](assets/uc_enrichment_16.png) . Välj **[!UICONTROL Target extension]** och tidigare skapade anpassade giltighetsdatum med **[!UICONTROL Enrichment]** aktivitet som lägger till tillägget i formatetDate-uttrycket.
+1. Klicka ![](assets/uc_enrichment_16.png) . Välj **[!UICONTROL Target extension]** och tidigare skapade anpassade giltighetsdatum med **[!UICONTROL Enrichment]** -aktivitet för att lägga till tillägget i formatetDate-uttrycket.
 
    ![](assets/uc_enrichment_19.png)
 

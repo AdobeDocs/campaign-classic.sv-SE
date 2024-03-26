@@ -11,7 +11,7 @@ topic-tags: filtering-data
 exl-id: 58e54f67-dc87-42f1-8426-6f801e8e4fb6
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '1975'
+source-wordcount: '1982'
 ht-degree: 0%
 
 ---
@@ -113,7 +113,7 @@ Skapa en **enkelt filter** använder du följande steg:
 
 1. Aktivera filtret genom att trycka på Enter på tangentbordet eller klicka på den gröna pilen till höger om filterfälten.
 
-Om fältet som du vill filtrera data i inte visas som en profil kan du lägga till det i de kolumner som visas och sedan filtrera på den kolumnen. Så här gör du,
+Om fältet som du vill filtrera data i inte visas som en profil kan du lägga till det i de kolumner som visas och sedan filtrera på den kolumnen. För att göra detta
 
 1. Klicka på **[!UICONTROL Configure the list]** -ikon.
 
@@ -203,7 +203,7 @@ Avancerade filter kan använda funktioner; **filter med funktioner** skapas med 
 
 Filter är specifika för varje operator och initieras om varje gång operatorn rensar cachen för sin klientkonsol.
 
-Du kan skapa en **programfilter** genom att spara ett avancerat filter: det kan återanvändas genom att högerklicka i en lista eller via **[!UICONTROL Filters]** knappen ovanför listorna.
+Du kan skapa en **programfilter** genom att spara ett avancerat filter: det kan återanvändas genom att högerklicka i valfri lista eller via **[!UICONTROL Filters]** knappen ovanför listorna.
 
 Dessa filter kan också nås direkt via leveransguiden i målurvalsfasen (se [det här avsnittet](../../delivery/using/creating-an-email-delivery.md) om du vill ha mer information om hur du skapar leveranser). Om du vill skapa programfiltret kan du:
 

@@ -8,8 +8,8 @@ feature: Deliverability
 exl-id: 34be23f7-17fa-475e-9663-2e353d76b172
 source-git-commit: d2f5f2a662c022e258fb3cc56c8502c4f4cb2849
 workflow-type: tm+mt
-source-wordcount: '437'
-ht-degree: 1%
+source-wordcount: '453'
+ht-degree: 0%
 
 ---
 
@@ -58,4 +58,4 @@ När du har en lista över mottagare som påverkas kan du antingen ställa in de
 
 **Relaterade ämnen:**
 * [Förstå leveransfel](understanding-delivery-failures.md)
-* [Kvalifikation av studsmeddelanden](understanding-delivery-failures.md#bounce-mail-qualification)
+* [E-poststudsar](understanding-delivery-failures.md#bounce-mail-qualification)

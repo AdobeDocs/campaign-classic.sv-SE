@@ -2,13 +2,13 @@
 product: campaign
 title: Skapa ett filter
 description: Lär dig hur du skapar ett filter när du utför frågor
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+badge-v7-only: label="v7" type="Informative" tooltip="Gäller endast Campaign Classic v7"
 feature: Query Editor, Workflows
 exl-id: 297ea1e1-39ef-4b99-aaaa-9e88611fb1bf
 source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
-source-wordcount: '210'
-ht-degree: 2%
+source-wordcount: '220'
+ht-degree: 5%
 
 ---
 
@@ -36,7 +36,7 @@ För samma lista **[!UICONTROL By login or label]** Med -filter kan du filtrera 
 
 ![](assets/query_editor_filter_sample_3.png)
 
-Den är byggd på följande sätt:
+Den är uppbyggd på följande sätt:
 
 ![](assets/query_editor_filter_sample_4.png)
 
@@ -50,7 +50,7 @@ Om du vill matcha filtreringsvillkoren måste operatörskontot kontrollera någo
 >
 >The **[!UICONTROL Upper]** kan du inaktivera skiftlägeskänslig funktion.
 
-The **[!UICONTROL Taken into account if]** Med -kolumnen kan du definiera programvillkoren för dessa filtervillkor. Här är **$(/tmp/@text)** tecken representerar innehållet i det inmatningsfält som är länkat till filtret:
+The **[!UICONTROL Taken into account if]** kan du definiera programvillkoren för dessa filtervillkor. Här är **$(/tmp/@text)** tecken representerar innehållet i det inmatningsfält som är länkat till filtret:
 
 ![](assets/query_editor_filter_sample_5.png)
 

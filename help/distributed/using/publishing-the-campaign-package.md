@@ -2,13 +2,13 @@
 product: campaign
 title: Publicera kampanjpaketet
 description: Publicera kampanjpaketet
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+badge-v7-only: label="v7" type="Informative" tooltip="Gäller endast Campaign Classic v7"
 feature: Distributed Marketing
 exl-id: e96add16-cbc8-43af-acff-06a95d5b7749
 source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
-source-wordcount: '456'
-ht-degree: 2%
+source-wordcount: '466'
+ht-degree: 4%
 
 ---
 
@@ -48,7 +48,7 @@ Du kan lägga till andra granskare från **[!UICONTROL Edit...]** länk, finns i
 
 Som standard får granskarna tre dagar på sig att bearbeta godkännandet.
 
-I fönstret Redigera granskare kan du även ange påminnelser för att skicka ett eller flera meddelanden om ett kampanjpaket inte har godkänts. Om du vill göra det klickar du på **[!UICONTROL Add reminder]** länk, sedan **[!UICONTROL Add]** -knappen.
+I fönstret Redigera granskare kan du även ange påminnelser för att skicka ett eller flera meddelanden om ett kampanjpaket inte har godkänts. Klicka på **[!UICONTROL Add reminder]** länk, sedan **[!UICONTROL Add]** -knappen.
 
 Påminnelser kan skickas ut antingen på ett visst datum och/eller **x** dagar efter inlämningsdatumet. Typen av påminnelse kan konfigureras i den första kolumnen i tabellen med påminnelser. I exemplet nedan får granskarna ett påminnelsemeddelande den 29/01/2014, dvs. två dagar före det datum som valts i **[!UICONTROL Date]** och en andra påminnelse en dag före godkännandeperiodens slut, dvs. två dagar efter inlämningsdatumet för godkännandet.
 

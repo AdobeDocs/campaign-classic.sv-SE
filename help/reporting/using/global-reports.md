@@ -7,8 +7,8 @@ feature: Reporting, Monitoring
 exl-id: 6839fd7e-ecf4-4504-90a8-0207bc3991e4
 source-git-commit: abaeef25b03a9699a4851786380d467bfa299c9f
 workflow-type: tm+mt
-source-wordcount: '2308'
-ht-degree: 4%
+source-wordcount: '2292'
+ht-degree: 3%
 
 ---
 
@@ -48,7 +48,7 @@ Den här rapporten innehåller information om leveransflödet för hela plattfor
 
 ![](assets/s_ncs_user_report_toolbar.png)
 
-Du kan konfigurera de värden som visas genom att ändra tidsskalan: 1-timmars vy, 3-timmars vy, 24-timmars vy osv. Klicka **[!UICONTROL Refresh]** för att bekräfta valet.  
+Du kan konfigurera de värden som visas genom att ändra tidsskalan: 1-timmars vy, 3-timmars vy, 24-timmars vy osv. Klicka **[!UICONTROL Refresh]** för att bekräfta ditt val.
 
 >[!NOTE]
 >
@@ -56,7 +56,7 @@ Du kan konfigurera de värden som visas genom att ändra tidsskalan: 1-timmars v
 >
 >Kontrollpanelen är tillgänglig för alla administratörsanvändare. Stegen för att bevilja administratörsåtkomst till en användare finns på [den här sidan](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/managing-permissions.html?lang=sv#discover-control-panel).
 >
->Observera att din instans måste uppgraderas med den senaste [Gold Standard](../../rn/using/gold-standard.md) bygg eller [senaste GA-bygge (21.1.3)](../../rn/using/latest-release.md). Läs om hur du kontrollerar din version i [det här avsnittet](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version).
+>Observera att din instans måste uppgraderas med den senaste [Gold Standard](../../rn/using/gold-standard.md) bygg eller [senaste GA-bygge (21.1.3)](../../rn/using/latest-release.md). Lär dig hur du checkar in din version [det här avsnittet](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version).
 
 ## Användaraktiviteter {#user-activities}
 
@@ -126,7 +126,7 @@ Du kan öppna varje rad i värdetabellen genom att klicka på [+] symbol. För v
 
 >[!NOTE]
 >
->Domännamnen som visas i den här rapporten definieras på kubnivå. Om du vill ändra dessa värden redigerar du **[!UICONTROL Delivery logs (broadlogrcp)]** kub. Mer information om detta finns i [det här avsnittet](../../reporting/using/ac-cubes.md). The **[!UICONTROL Others]** omfattar domännamn som inte tillhör en viss klass.
+>Domännamnen som visas i den här rapporten definieras på kubnivå. Om du vill ändra dessa värden redigerar du **[!UICONTROL Delivery logs (broadlogrcp)]** kub. Mer information finns i [det här avsnittet](../../reporting/using/ac-cubes.md). The **[!UICONTROL Others]** omfattar domännamn som inte tillhör en viss klass.
 
 ## Webbläsare {#browsers}
 
