@@ -7,10 +7,10 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: 8febceb0-9694-4045-a630-a7ff2fd18943
-source-git-commit: abaeef25b03a9699a4851786380d467bfa299c9f
+source-git-commit: 776560c5f9ba91a5864a7dc950fd7499ceb37d1b
 workflow-type: tm+mt
-source-wordcount: '920'
-ht-degree: 89%
+source-wordcount: '919'
+ht-degree: 87%
 
 ---
 
@@ -68,7 +68,7 @@ Du kan kombinera leveransfunktionerna och de avancerade funktionerna för kampan
 
 ## Kärnfunktioner och tillägg {#core-capabilities-and-add-ons}
 
-Adobe Campaign har en uppsättning funktioner som hjälper till att implementera och optimera personaliserad marknadsföring beroende på dina behov och arkitektur. Vissa av dem är centrala funktioner och andra är beroende av att ett paket installeras och din konfiguration. En detaljerad produktbeskrivning finns här: [Adobe Campaign Classic – produktbeskrivning](https://helpx.adobe.com/legal/product-descriptions/adobe-campaign-classic---product-description.html).
+Adobe Campaign har en uppsättning funktioner som hjälper till att implementera och optimera personaliserad marknadsföring beroende på dina behov och arkitektur. Vissa av dem är centrala funktioner och andra är beroende av att ett paket installeras och din konfiguration. En detaljerad produktbeskrivning finns här: [Adobe Campaign produktbeskrivning](https://helpx.adobe.com/se/legal/product-descriptions/adobe-campaign-managed-cloud-services.html){target="_blank"}.
 
 Följande funktioner finns tillgängliga. Beroende på vilket licensavtal du har kan vissa av dessa funktioner vara tillgängliga eller inte i din instans.
 
