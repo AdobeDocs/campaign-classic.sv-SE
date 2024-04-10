@@ -7,10 +7,10 @@ feature: Profiles, Audiences
 role: User, Data Architect
 level: Beginner
 exl-id: 54f1ad6c-54b0-4448-8c38-806dd75c1dae
-source-git-commit: abaeef25b03a9699a4851786380d467bfa299c9f
+source-git-commit: c4fa3ea6d5a9d9acae267fc1ca27cf3bc140683c
 workflow-type: tm+mt
-source-wordcount: '839'
-ht-degree: 13%
+source-wordcount: '912'
+ht-degree: 15%
 
 ---
 
@@ -90,21 +90,19 @@ Den allmänna layouten för Adobe Campaign Explorer presenteras i [den här sida
 
 ## Aktiva profiler {#active-profiles}
 
-Aktiva profiler är de profiler som räknas i faktureringssyfte.
+En aktiv profil är en profil som kunden har försökt kommunicera med under de senaste 12 månaderna via valfri kanal.
 
-Fakturering gäller endast profiler som **aktiv**. En profil anses vara aktiv om profilen har delats eller kommunicerats med via någon kanal under de senaste 12 månaderna.
+Enligt avtalet har var och en av instanserna i Campaign ett visst antal aktiva profiler som räknas för faktureringsändamål. Se ditt senaste kontrakt för referens om antalet köpta aktiva profiler. Läs mer i [Adobe Campaign produktbeskrivning](https://helpx.adobe.com/se/legal/product-descriptions/adobe-campaign-managed-cloud-services.html){target="_blank"}.
 
-En profil som har valts av flera leveranser räknas bara en gång.
+Du kan övervaka antalet aktiva profiler på instansen direkt från Campaign-kontrollpanelen. Mer information finns i [Dokumentation för kontrollpanelen](https://experienceleague.adobe.com/docs/control-panel/using/performance-monitoring/active-profiles-monitoring.html){target="_blank"}.
 
->[!NOTE]
->
->Facebook- och X-kanaler (tidigare Twitter) beaktas inte.
+Följande skyddsräcken och begränsningar gäller:
 
-Antal aktiva profiler är tillgängligt för **Marknadsföringsinstanser** endast. Den är inte tillgänglig för körningsinstanser, vilket innebär MID-instanser (mellanleverantörer) och RT-instanser (Message Center/Real-time Messaging).
+* En profil som har valts av flera leveranser räknas bara en gång.
+* Profiler som är inriktade på social marknadsföring på X (Twitter) eller Facebook räknas inte som aktiva profiler.
+* Antalet aktiva profiler är tillgängligt för **Marknadsföringsinstanser** endast. Den är inte tillgänglig för körningsinstanser, vilket innebär MID-instanser (mellanleverantörer) och RT-instanser (Message Center/Real-time Messaging).
+* Antalet baseras på mottagarens primärnyckel. Om det finns en profil i två olika mottagartabeller kan den därför räknas två gånger som en aktiv profil.
 
->[!NOTE]
->
->Du kan också övervaka antalet aktiva profiler på instansen direkt från Campaign-kontrollpanelen. Mer information finns i [Dokumentation för kontrollpanelen](https://experienceleague.adobe.com/docs/control-panel/using/performance-monitoring/active-profiles-monitoring.html).
 
 ## Självstudievideo {#create-profiles-video}
 
