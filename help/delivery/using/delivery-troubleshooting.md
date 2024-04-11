@@ -2,14 +2,13 @@
 product: campaign
 title: Felsökning av leverans
 description: Lär dig mer om leveransresultat och hur du felsöker problem med leveransövervakning
-badge-v7: label="v7" type="Informative" tooltip="Gäller Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Gäller även Campaign v8"
+badge-v8: label="Gäller även för v8" type="Positive" tooltip="Gäller även Campaign v8"
 feature: Monitoring, Deliverability, Troubleshooting
 role: User
 exl-id: 37b1d7fb-7ceb-4647-9aac-c8a80495c5bf
-source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
+source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
 workflow-type: tm+mt
-source-wordcount: '804'
+source-wordcount: '801'
 ht-degree: 1%
 
 ---

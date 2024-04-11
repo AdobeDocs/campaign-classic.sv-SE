@@ -3,16 +3,15 @@ product: campaign
 title: Exempel på tillägg
 description: Exempel på tillägg
 feature: Interaction, Offers
-badge-v7: label="v7" type="Informative" tooltip="Gäller Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Gäller även Campaign v8"
+badge-v8: label="Gäller även för v8" type="Positive" tooltip="Gäller även Campaign v8"
 audience: interaction
 content-type: reference
 topic-tags: advanced-parameters
 exl-id: d4acf99b-cef4-48f7-b4cd-c032ec12592f
-source-git-commit: 668cee663890fafe27f86f2afd3752f7e2ab347a
+source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
 workflow-type: tm+mt
-source-wordcount: '165'
-ht-degree: 4%
+source-wordcount: '162'
+ht-degree: 3%
 
 ---
 

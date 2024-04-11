@@ -2,14 +2,13 @@
 product: campaign
 title: Skapa en referensundersökning för en vän
 description: Lär dig steg för att skapa ett formulär för att referera till en vän
-badge-v7: label="v7" type="Informative" tooltip="Gäller Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Gäller även Campaign v8"
+badge-v8: label="Gäller även för v8" type="Positive" tooltip="Gäller även Campaign v8"
 feature: Surveys
 exl-id: bd94c41a-813a-4ddb-a2bd-c3deab022482
-source-git-commit: 668cee663890fafe27f86f2afd3752f7e2ab347a
+source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
 workflow-type: tm+mt
-source-wordcount: '631'
-ht-degree: 1%
+source-wordcount: '628'
+ht-degree: 0%
 
 ---
 

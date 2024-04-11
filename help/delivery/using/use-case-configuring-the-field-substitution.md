@@ -2,14 +2,13 @@
 product: campaign
 title: "Användningsfall: konfigurera fältersättning"
 description: "Användningsfall: konfigurera fältersättning"
-badge-v7: label="v7" type="Informative" tooltip="Gäller Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Gäller även Campaign v8"
+badge-v8: label="Gäller även för v8" type="Positive" tooltip="Gäller även Campaign v8"
 feature: Seed Address
 exl-id: 3f567b2d-6f98-4831-af84-7db17fd12c6e
-source-git-commit: 668cee663890fafe27f86f2afd3752f7e2ab347a
+source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
 workflow-type: tm+mt
-source-wordcount: '460'
-ht-degree: 2%
+source-wordcount: '457'
+ht-degree: 1%
 
 ---
 

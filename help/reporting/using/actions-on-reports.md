@@ -3,12 +3,11 @@ product: campaign
 title: Åtgärder på rapporter
 description: Åtgärder på rapporter
 feature: Reporting, Monitoring
-badge-v7: label="v7" type="Informative" tooltip="Gäller Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Gäller även Campaign v8"
+badge-v8: label="Gäller även för v8" type="Positive" tooltip="Gäller även Campaign v8"
 exl-id: b30cdeaf-4ad6-473d-bdbc-91984755b609
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
 workflow-type: tm+mt
-source-wordcount: '554'
+source-wordcount: '551'
 ht-degree: 3%
 
 ---

@@ -2,14 +2,13 @@
 product: campaign
 title: Resurser och principer för innehållshanteraren
 description: Resurser och principer för Content Manager
-badge-v7: label="v7" type="Informative" tooltip="Gäller Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Gäller även Campaign v8"
+badge-v8: label="Gäller även för v8" type="Positive" tooltip="Gäller även Campaign v8"
 feature: Templates
 role: User, Developer, Data Engineer
 exl-id: ade3f1d1-2235-4148-9b6f-721d3f521a15
-source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
+source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
 workflow-type: tm+mt
-source-wordcount: '250'
+source-wordcount: '247'
 ht-degree: 4%
 
 ---

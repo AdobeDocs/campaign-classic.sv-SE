@@ -2,14 +2,13 @@
 product: campaign
 title: Kom igång med mobilappskanalen
 description: Kom igång med mobilappskanalen i Adobe Campaign
-badge-v7: label="v7" type="Informative" tooltip="Gäller Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Gäller även Campaign v8"
+badge-v8: label="Gäller även för v8" type="Positive" tooltip="Gäller även Campaign v8"
 feature: Push
 role: User
 exl-id: c3b0406f-f652-42f4-ad0d-23fb719cd1b6
-source-git-commit: 92c79e7050124bc707f4d6b87c7952016586002c
+source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
 workflow-type: tm+mt
-source-wordcount: '684'
+source-wordcount: '681'
 ht-degree: 8%
 
 ---

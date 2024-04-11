@@ -2,14 +2,13 @@
 product: campaign
 title: Felsöka SMS
 description: Läs mer om felsökning av SMS-kanal
-badge-v7: label="v7" type="Informative" tooltip="Gäller Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Gäller även Campaign v8"
+badge-v8: label="Gäller även för v8" type="Positive" tooltip="Gäller även Campaign v8"
 feature: SMS, Troubleshooting
 role: User
 exl-id: 841f0c2f-90ef-4db0-860a-75fc7c48804a
-source-git-commit: d2f5f2a662c022e258fb3cc56c8502c4f4cb2849
+source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
 workflow-type: tm+mt
-source-wordcount: '2767'
+source-wordcount: '2764'
 ht-degree: 0%
 
 ---
@@ -46,12 +45,12 @@ Du måste kontakta leverantören för att diagnostisera potentiella konflikter p
    * Vissa av de externa kontona delar samma kombination av inloggning och lösenord.
 Leverantören har inget sätt att avgöra från vilket externt konto de `BIND PDU` kommer från, så de behandlar alla anslutningar från flera konton som en enda. De kan ha cirkulerat MO och SR slumpmässigt över de två kontona, vilket kan orsaka problem.
 Om providern stöder flera korta koder för samma kombination av inloggning och lösenord måste du fråga var den korta koden ska placeras i `BIND PDU`. Observera att den här informationen måste placeras inuti `BIND PDU`och inte i `SUBMIT_SM`, sedan `BIND PDU` är den enda plats där du kan dirigera MO korrekt.
-Se [Information i varje typ av PDU](sms-protocol.md#information-pdu) om du vill veta vilket fält som är tillgängligt i `BIND PDU`, vanligtvis lägger du till den korta koden i `address_range`, men det kräver särskild support från leverantören. Kontakta dem för att få veta hur de förväntar sig att skicka flera korta koder oberoende av varandra.
-Adobe Campaign stöder hantering av flera korta koder på samma externa konto.
+Se [Information i varje typ av PDU](sms-protocol.md#information-pdu) om du vill veta vilket fält som är tillgängligt i `BIND PDU`, vanligtvis lägger du till den korta koden i `address_range`, men det kräver särskild support från leverantören. Kontakta dem för att få veta hur de förväntar sig att dirigera flera korta koder oberoende av varandra.
+Adobe Campaign har stöd för hantering av flera korta koder på samma externa konto.
 
 ## Problem med externt konto i allmänhet {#external-account-issues}
 
-* Undersök om kopplingen nyligen har ändrats och av vem (markera Externa konton som en grupp).
+* Undersök om anslutningsappen har ändrats nyligen och av vem (kontrollera Externa konton som en grupp).
 
   ```
   select saccount, (sserver ||':'||sport) as serverPort, iextaccountid, CASE WHEN N0.iactive=1 THEN 'Yes' ELSE 'No' END as "(x) Enabled",
@@ -68,7 +67,7 @@ Adobe Campaign stöder hantering av flera korta koder på samma externa konto.
 * Undersök (i /postupgrade-katalogen) om systemet uppgraderades och när
 * Undersök om några paket som påverkar SMS kan ha uppgraderats nyligen (/var/log/dpkg.log).
 
-## Problem med mellanleverantörer (värdbaserad){#issue-mid-sourcing}
+## Problem med hosting (hosted){#issue-mid-sourcing}
 
 * Om problemet inträffar i en miljö med medelhög källkod måste du se till att leveransloggarna och de breda loggarna skapas och uppdateras på servern med mellanlagring. Om så inte är fallet är detta inte ett SMS-problem.
 
@@ -76,13 +75,13 @@ Adobe Campaign stöder hantering av flera korta koder på samma externa konto.
 
 ## Problem vid anslutning till providern {#issue-provider}
 
-* Om returnerar en kod som `BIND PDU` inte är noll `command_status` ber du providern om mer information.
+* Om `BIND PDU` returnerar ett värde som inte är noll `command_status` ber du leverantören om mer information.
 
 * Kontrollera att nätverket är korrekt konfigurerat så att TCP-anslutningen kan göras till providern.
 
-* Be leverantören att kontrollera att IP-adresserna har lagts till korrekt i tillåtelselistan för Adobe Campaign-instansen.
+* Be leverantören kontrollera att de har lagt till IP-adresserna till tillåtelselista i Adobe Campaign-instansen.
 
-* Kontrollera **inställningarna för externt konto** . Fråga leverantören om värdet på fälten.
+* Kontrollera **Externt konto** inställningar. Fråga leverantören vilket värde fälten har.
 
 * Om anslutningen lyckas men inte fungerar kontrollerar du [Problem med instabila anslutningar](troubleshooting-sms.md#issues-unstable-connection) -avsnitt.
 
@@ -142,21 +141,21 @@ Dubbletter orsakas ofta av återförsök. Det är normalt att ha dubbletter när
 
 * Om du ser många `BIND/UNBIND`har du en instabil anslutning. Se[Problem med instabila anslutningar](troubleshooting-sms.md#issues-unstable-connection) för att hitta lösningar innan du försöker lösa problem med dubblettmeddelanden.
 
-Minska antalet dubbletter när ett nytt försök görs:
+Minska antalet dubbletter när det görs ett nytt försök:
 
 * Sänk sändningsfönstret. Sändningsfönstret bör vara tillräckligt stort för `SUBMIT_SM_RESP` att täcka svarstiden. Dess värde representerar det maximala antalet meddelanden som kan dupliceras om ett fel inträffar när fönstret är fullt.
 
-## Problem vid bearbetning av SR (leveranskvitton) {#issue-process-SR}
+## Utfärda vid behandling av SR (leveranskvitton) {#issue-process-SR}
 
 * SMPP-spår måste vara aktiverade för att du ska kunna utföra någon typ av SR-felsökning.
 
 * Kontrollera att `DELIVER_SM PDU` kommer från leverantören och är välformad.
 
-* Kontrollera att Adobe Campaign svarar med framgång `DELIVER_SM_RESP PDU` i rätt tid. På Adobe Campaign Classic garanterar detta att SR har införts i `providerMsgId` tabell för uppskjuten behandling av SMS-processen.
+* Kontrollera att Adobe Campaign svarar med ett lyckat `DELIVER_SM_RESP PDU` i tid. På Adobe Campaign Classic garanterar detta att SR har infogats i `providerMsgId` tabellen för uppskjuten bearbetning av SMS-processen.
 
-Om `DELIVER_SM PDU` bekräftas inte och du bör kontrollera följande:
+Om det `DELIVER_SM PDU` inte lyckas bör du kontrollera följande:
 
-* Kontrollera regex för id-extrahering och felbearbetning i **Externt konto**. Du kan behöva validera dem mot innehållet `DELIVER_SM PDU`i .
+* Kontrollera regex som rör ID-extrahering och felbearbetning i det externa kontot ****. Du kan behöva validera dem mot innehållet `DELIVER_SM PDU`i .
 
 * Kontrollera att felen är korrekt etablerade i tabellen `broadLogMsg` .
 
@@ -166,7 +165,7 @@ Om du har korrigerat allt men vissa ogiltiga SR fortfarande finns i providerns b
 
 ## Problem vid bearbetning av MO (och svartlistning/autosvar){#issue-process-MO}
 
-* Aktivera SMPP-spårningar under tester. Om du inte aktiverar TLS bör du göra en nätverksavbildning när du felsöker MO för att kontrollera att PDU:er innehåller rätt information och är korrekt formaterade.
+* Aktivera SMPP-spår under tester. Om du inte aktiverar TLS bör du göra en nätverksinhämtning när du felsöker MO för att kontrollera att PDU:er innehåller rätt information och är korrekt formaterade.
 
 * När du hämtar nätverkstrafik eller analyserar SMPP-spår, se till att du fångar in hela konversationen med MO och dess MT-svar om ett svar har konfigurerats.
 
@@ -238,13 +237,13 @@ När du behöver hjälp med ett SMS-problem, oavsett om det gäller att öppna e
 
 * Inkludera alla ändringar eller justeringar som gjorts på plattformen. Inkludera också eventuella ändringar som leverantören kan ha gjort på sin sida.
 
-### Avbildning av nätverk {#network-capture}
+### Nätverksinspelning {#network-capture}
 
 Nätverksinspelning behövs inte alltid, vanligen räcker det med omfattande SMPP-meddelanden. Här följer några riktlinjer som hjälper dig att avgöra om en nätverksinhämtning behövs:
 
 * Anslutningsproblem, men de detaljerade meddelandena visar inga `BIND_RESP PDU`.
 
-* Oförklarliga frånkopplingar utan felmeddelande, det vanliga beteendet för kopplingen när den upptäcker ett protokollfel på låg nivå.
+* Oförklarliga frånkopplingar utan felmeddelande, det vanliga beteendet för anslutningsappen när den identifierar ett protokollfel på låg nivå.
 
 * Providern klagar över avbindnings-/frånkopplingsprocessen.
 

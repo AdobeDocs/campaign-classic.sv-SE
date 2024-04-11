@@ -2,15 +2,14 @@
 product: campaign
 title: Åtkomst till listan över leveranser
 description: Lär dig hur du får tillgång till listan över skapade leveranser
-badge-v7: label="v7" type="Informative" tooltip="Gäller Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Gäller även Campaign v8"
+badge-v8: label="Gäller även för v8" type="Positive" tooltip="Gäller även Campaign v8"
 feature: Monitoring
 role: User
 exl-id: 6c0fd76f-3d79-4b69-b911-f8d99dd18c4b
-source-git-commit: d2f5f2a662c022e258fb3cc56c8502c4f4cb2849
+source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
 workflow-type: tm+mt
-source-wordcount: '172'
-ht-degree: 4%
+source-wordcount: '169'
+ht-degree: 3%
 
 ---
 

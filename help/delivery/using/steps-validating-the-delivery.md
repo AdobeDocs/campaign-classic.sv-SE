@@ -2,15 +2,14 @@
 product: campaign
 title: Validera leveransen
 description: Lär dig validera en leverans
-badge-v7: label="v7" type="Informative" tooltip="Gäller Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Gäller även Campaign v8"
+badge-v8: label="Gäller även för v8" type="Positive" tooltip="Gäller även Campaign v8"
 feature: Deliverability, Email Rendering, Proofs
 role: User
 exl-id: c2f4d8d0-f0fe-4d1a-92fd-91edaf9729f3
-source-git-commit: cfc38df8184a8f59d49ce27eb7875783e8941611
+source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
 workflow-type: tm+mt
-source-wordcount: '1665'
-ht-degree: 5%
+source-wordcount: '1662'
+ht-degree: 4%
 
 ---
 

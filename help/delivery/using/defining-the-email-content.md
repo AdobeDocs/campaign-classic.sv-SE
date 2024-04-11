@@ -2,14 +2,13 @@
 product: campaign
 title: Definiera e-postinnehållet i Adobe Campaign Classic
 description: Lär dig definiera e-postinnehåll när du använder Adobe Campaign
-badge-v7: label="v7" type="Informative" tooltip="Gäller Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Gäller även Campaign v8"
+badge-v8: label="Gäller även för v8" type="Positive" tooltip="Gäller även Campaign v8"
 feature: Email Design
 role: User
 exl-id: 46212929-fd2d-44a2-897e-35f98e88af36
-source-git-commit: 668cee663890fafe27f86f2afd3752f7e2ab347a
+source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
 workflow-type: tm+mt
-source-wordcount: '1961'
+source-wordcount: '1958'
 ht-degree: 1%
 
 ---

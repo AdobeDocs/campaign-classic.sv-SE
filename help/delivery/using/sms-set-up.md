@@ -2,14 +2,13 @@
 product: campaign
 title: Konfigurera kampanj-SMS-kanal
 description: Lär dig konfigurera SMS-kanalen i Campaign
-badge-v7: label="v7" type="Informative" tooltip="Gäller Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Gäller även Campaign v8"
+badge-v8: label="Gäller även för v8" type="Positive" tooltip="Gäller även Campaign v8"
 feature: SMS
 role: User, Developer, Admin
 exl-id: a2783a5e-6d38-41a1-b5c6-24ab489116f8
-source-git-commit: 4165f5988dfeee2f3b4d872c445ace11c9aa4fe1
+source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
 workflow-type: tm+mt
-source-wordcount: '1751'
+source-wordcount: '1748'
 ht-degree: 26%
 
 ---

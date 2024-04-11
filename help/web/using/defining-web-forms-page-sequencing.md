@@ -2,14 +2,13 @@
 product: campaign
 title: Definiera sidsekvenser för webbformulär
 description: Definiera sidsekvenser för webbformulär
-badge-v7: label="v7" type="Informative" tooltip="Gäller Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Gäller även Campaign v8"
+badge-v8: label="Gäller även för v8" type="Positive" tooltip="Gäller även Campaign v8"
 feature: Web Forms
 exl-id: c5b5c398-c13b-4ebe-88b2-8ff84741422e
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
 workflow-type: tm+mt
-source-wordcount: '714'
-ht-degree: 1%
+source-wordcount: '711'
+ht-degree: 0%
 
 ---
 

@@ -2,15 +2,14 @@
 product: campaign
 title: Skapa skriptet
 description: Lär dig hur du utför A/B-testning via ett dedikerat användningsfall
-badge-v7: label="v7" type="Informative" tooltip="Gäller Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Gäller även Campaign v8"
+badge-v8: label="Gäller även för v8" type="Positive" tooltip="Gäller även Campaign v8"
 feature: A/B Testing
 role: User
 exl-id: 4143d1b7-0e2b-4672-ad57-e4d7f8fea028
-source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
+source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
 workflow-type: tm+mt
-source-wordcount: '344'
-ht-degree: 4%
+source-wordcount: '341'
+ht-degree: 3%
 
 ---
 
