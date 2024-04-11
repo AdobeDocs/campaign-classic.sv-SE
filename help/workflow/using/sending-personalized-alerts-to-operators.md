@@ -2,13 +2,12 @@
 product: campaign
 title: Skicka personaliserade aviseringar till operatörer
 description: Lär dig hur du skickar personaliserade aviseringar till operatorer
-badge-v7-only: label="v7" type="Informative" tooltip="Gäller endast Campaign Classic v7"
 feature: Workflows
 exl-id: 21c97eb3-60cd-4d19-bc0f-5ba9ec17e70a
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
 workflow-type: tm+mt
-source-wordcount: '351'
-ht-degree: 4%
+source-wordcount: '344'
+ht-degree: 2%
 
 ---
 

@@ -3,14 +3,13 @@ product: campaign
 title: Konfigurera åtkomst till Google BigQuery
 description: Lär dig konfigurera åtkomst till Google BigQuery i FDA
 feature: Installation, Federated Data Access
-badge-v7-only: label="v7" type="Informative" tooltip="Gäller endast Campaign Classic v7"
 audience: platform
 content-type: reference
 topic-tags: connectors
 exl-id: ebaad59f-0607-4090-92d0-e457fbf9a348
-source-git-commit: a94c361c5bdd9d61ae9232224af910a78245a889
+source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
 workflow-type: tm+mt
-source-wordcount: '967'
+source-wordcount: '960'
 ht-degree: 2%
 
 ---

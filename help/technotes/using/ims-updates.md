@@ -3,12 +3,11 @@ product: campaign
 title: Technote - Uppdatera miljön för att ansluta till Adobe Campaign med IMS
 description: Campaign - IMS-uppdateringar
 feature: Technote, Upgrade
-badge-v7-only: label="v7" type="Informative" tooltip="Gäller endast Campaign Classic v7"
 exl-id: ecb5a258-a150-46a3-8b83-2b2c06d873ee
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
 workflow-type: tm+mt
-source-wordcount: '569'
-ht-degree: 5%
+source-wordcount: '562'
+ht-degree: 4%
 
 ---
 

@@ -3,15 +3,14 @@ product: campaign
 title: Tjänstenivå för meddelandecentret
 description: Läs mer i rapporten om servicenivån i meddelandecentret
 feature: Transactional Messaging, Message Center
-badge-v7-only: label="v7" type="Informative" tooltip="Gäller endast Campaign Classic v7"
 audience: message-center
 content-type: reference
 topic-tags: reports
 exl-id: b8dc9891-84c8-445d-ad6a-d06048c8faaf
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
 workflow-type: tm+mt
-source-wordcount: '244'
-ht-degree: 6%
+source-wordcount: '237'
+ht-degree: 3%
 
 ---
 

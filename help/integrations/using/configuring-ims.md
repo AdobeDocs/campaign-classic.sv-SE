@@ -3,16 +3,15 @@ product: campaign
 title: Konfigurera IMS
 description: Lär dig ansluta via en Adobe ID
 feature: Configuration
-badge-v7: label="v7" type="Informative" tooltip="Gäller Campaign Classic v7"
 badge-v7-prem: label="lokal och hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=sv" tooltip="Gäller endast lokala och hybrida driftsättningar"
 audience: integrations
 content-type: reference
 topic-tags: connecting-via-an-adobe-id
 exl-id: b70ca220-1c81-4b23-b07a-a2cd694877fe
-source-git-commit: 49271e291953483ee14709b26ec053217a336718
+source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
 workflow-type: tm+mt
-source-wordcount: '334'
-ht-degree: 2%
+source-wordcount: '328'
+ht-degree: 1%
 
 ---
 

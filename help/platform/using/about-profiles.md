@@ -2,15 +2,14 @@
 product: campaign
 title: Kom igång med profiler
 description: Arbeta med profiler i Adobe Campaign
-badge-v7-only: label="v7" type="Informative" tooltip="Gäller endast Campaign Classic v7"
 feature: Profiles, Audiences
 role: User, Data Architect
 level: Beginner
 exl-id: 54f1ad6c-54b0-4448-8c38-806dd75c1dae
-source-git-commit: c4fa3ea6d5a9d9acae267fc1ca27cf3bc140683c
+source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
 workflow-type: tm+mt
-source-wordcount: '912'
-ht-degree: 15%
+source-wordcount: '905'
+ht-degree: 14%
 
 ---
 

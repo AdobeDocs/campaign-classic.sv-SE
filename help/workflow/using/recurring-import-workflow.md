@@ -2,13 +2,12 @@
 product: campaign
 title: Konfigurera en återkommande import
 description: Lär dig hur du konfigurerar en arbetsflödesmall för återkommande importer
-badge-v7-only: label="v7" type="Informative" tooltip="Gäller endast Campaign Classic v7"
 feature: Workflows, Data Management
 exl-id: e6e140cb-8de0-4ab9-bddc-95abe04124c6
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
 workflow-type: tm+mt
-source-wordcount: '1022'
-ht-degree: 1%
+source-wordcount: '1015'
+ht-degree: 0%
 
 ---
 

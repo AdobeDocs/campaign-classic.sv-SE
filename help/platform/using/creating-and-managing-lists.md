@@ -2,15 +2,14 @@
 product: campaign
 title: Skapa och hantera listor
 description: Lär dig skapa och hantera listor
-badge-v7-only: label="v7" type="Informative" tooltip="Gäller endast Campaign Classic v7"
 feature: Profiles
 role: User
 level: Beginner
 exl-id: 711b84cd-bac8-4f1a-9999-0124fbfc3a01
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
 workflow-type: tm+mt
-source-wordcount: '806'
-ht-degree: 9%
+source-wordcount: '799'
+ht-degree: 8%
 
 ---
 

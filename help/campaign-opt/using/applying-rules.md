@@ -3,13 +3,12 @@ product: campaign
 title: Använd typologiregler
 description: Lär dig hur du använder typologiregler
 role: User, Data Engineer
-badge-v7-only: label="v7" type="Informative" tooltip="Gäller endast Campaign Classic v7"
 feature: Typology Rules, Campaigns
 exl-id: 09ec0fc0-76ed-4c73-8bdf-c931e2103aa9
-source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
+source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
 workflow-type: tm+mt
-source-wordcount: '994'
-ht-degree: 8%
+source-wordcount: '987'
+ht-degree: 7%
 
 ---
 

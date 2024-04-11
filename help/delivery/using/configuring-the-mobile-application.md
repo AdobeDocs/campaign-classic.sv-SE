@@ -2,14 +2,13 @@
 product: campaign
 title: Konfigurera iOS mobilprogram i Adobe Campaign
 description: Lär dig hur du konfigurerar ditt mobilprogram för iOS
-badge-v7-only: label="v7" type="Informative" tooltip="Gäller endast Campaign Classic v7"
 feature: Push
 role: User, Developer
 exl-id: 67eee1c5-a918-46b9-875d-7c3c71c00635
-source-git-commit: 466f04bce8f4c62b5dbb0e9d15150ab0c3bf2fbd
+source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
 workflow-type: tm+mt
-source-wordcount: '603'
-ht-degree: 4%
+source-wordcount: '596'
+ht-degree: 3%
 
 ---
 

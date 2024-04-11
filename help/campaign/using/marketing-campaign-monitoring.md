@@ -3,13 +3,12 @@ product: campaign
 title: Övervaka marknadsföringskampanjer
 description: Övervaka marknadsföringskampanjer
 role: User
-badge-v7-only: label="v7" type="Informative" tooltip="Gäller endast Campaign Classic v7"
 feature: Campaigns, Monitoring
 exl-id: c2b523ac-e900-4db8-85b0-dafc6ddb3eca
-source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
+source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
 workflow-type: tm+mt
-source-wordcount: '252'
-ht-degree: 4%
+source-wordcount: '245'
+ht-degree: 2%
 
 ---
 

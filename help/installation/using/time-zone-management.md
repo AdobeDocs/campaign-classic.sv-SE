@@ -3,16 +3,15 @@ product: campaign
 title: Hantering av tidszoner
 description: Hantering av tidszoner
 feature: Installation, Instance Settings
-badge-v7-only: label="v7" type="Informative" tooltip="Gäller endast Campaign Classic v7"
 badge-v7-prem: label="lokal och hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=sv" tooltip="Gäller endast lokala och hybrida driftsättningar"
 audience: installation
 content-type: reference
 topic-tags: additional-configurations
 exl-id: e5ed96cc-3fc7-4af4-a29e-5a4c81f4fe39
-source-git-commit: a94c361c5bdd9d61ae9232224af910a78245a889
+source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
 workflow-type: tm+mt
-source-wordcount: '957'
-ht-degree: 2%
+source-wordcount: '950'
+ht-degree: 1%
 
 ---
 

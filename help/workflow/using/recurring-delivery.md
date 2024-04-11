@@ -2,13 +2,12 @@
 product: campaign
 title: Återkommande leverans
 description: Läs mer om arbetsflödesaktiviteten Återkommande leverans
-badge-v7-only: label="v7" type="Informative" tooltip="Gäller endast Campaign Classic v7"
 feature: Workflows
 exl-id: efd2cdfb-2e5f-4672-8be8-a424481b11ed
-source-git-commit: cfc38df8184a8f59d49ce27eb7875783e8941611
+source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
 workflow-type: tm+mt
-source-wordcount: '288'
-ht-degree: 10%
+source-wordcount: '281'
+ht-degree: 8%
 
 ---
 

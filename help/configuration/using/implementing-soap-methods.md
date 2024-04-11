@@ -4,12 +4,11 @@ title: Implementera SOAP-metoder
 description: Implementera SOAP-metoder
 feature: Configuration
 role: Data Engineer, Developer
-badge-v7-only: label="v7" type="Informative" tooltip="Gäller endast Campaign Classic v7"
 exl-id: 441a0e5c-fa7f-46c8-a65a-5cca4c846d43
-source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
+source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
 workflow-type: tm+mt
-source-wordcount: '426'
-ht-degree: 3%
+source-wordcount: '419'
+ht-degree: 2%
 
 ---
 

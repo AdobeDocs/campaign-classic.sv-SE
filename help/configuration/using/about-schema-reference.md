@@ -2,14 +2,13 @@
 product: campaign
 title: Kom igång med scheman i Adobe Campaign
 description: Lär dig hur du arbetar med scheman och utökar den konceptuella datamodellen i Adobe Campaign-databasen
-badge-v7-only: label="v7" type="Informative" tooltip="Gäller endast Campaign Classic v7"
 feature: Schema Extension
 role: Data Engineer, Developer
 exl-id: f36a1b01-a002-4a21-9255-ea78b5f173fe
-source-git-commit: bd1007ffcfa58ee60fdafa424c7827e267845679
+source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
 workflow-type: tm+mt
-source-wordcount: '376'
-ht-degree: 2%
+source-wordcount: '369'
+ht-degree: 1%
 
 ---
 

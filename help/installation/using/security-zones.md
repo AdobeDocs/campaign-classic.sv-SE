@@ -3,15 +3,14 @@ product: campaign
 title: Konfigurera säkerhetszoner
 description: Lär dig konfigurera säkerhetszoner
 feature: Installation, Instance Settings
-badge-v7-only: label="v7" type="Informative" tooltip="Gäller endast Campaign Classic v7"
 badge-v7-prem: label="lokal och hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=sv" tooltip="Gäller endast lokala och hybrida driftsättningar"
 audience: installation
 content-type: reference
 topic-tags: additional-configurations
 exl-id: 67dda58f-97d1-4df5-9648-5f8a1453b814
-source-git-commit: a94c361c5bdd9d61ae9232224af910a78245a889
+source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
 workflow-type: tm+mt
-source-wordcount: '1458'
+source-wordcount: '1451'
 ht-degree: 0%
 
 ---

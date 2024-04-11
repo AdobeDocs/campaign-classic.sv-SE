@@ -2,12 +2,11 @@
 product: campaign
 title: Web Analytics
 description: Läs mer om Web Analytics-paketet
-badge-v7-only: label="v7" type="Informative" tooltip="Gäller endast Campaign Classic v7"
 feature: Workflows, Analytics Integration
-source-git-commit: 59156851156338c9462781d31ce81a651362f2da
+source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
 workflow-type: tm+mt
-source-wordcount: '185'
-ht-degree: 4%
+source-wordcount: '178'
+ht-degree: 1%
 
 ---
 

@@ -3,15 +3,14 @@ product: campaign
 title: Publicera meddelandemallar
 description: Läs om publicering och borttagning av publicering av transaktionsmeddelandemallar i Adobe Campaign Classic
 feature: Transactional Messaging, Message Center, Templates
-badge-v7-only: label="v7" type="Informative" tooltip="Gäller endast Campaign Classic v7"
 audience: message-center
 content-type: reference
 topic-tags: message-templates
 exl-id: 1d55f42b-64bf-4b1f-a317-c1f7456aa5b3
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
 workflow-type: tm+mt
-source-wordcount: '502'
-ht-degree: 3%
+source-wordcount: '495'
+ht-degree: 2%
 
 ---
 

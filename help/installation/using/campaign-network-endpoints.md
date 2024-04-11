@@ -3,12 +3,11 @@ product: campaign
 title: Nätverksslutpunkter i Campaign
 description: Nätverksslutpunkter i Campaign
 feature: Installation, Application Settings
-badge-v7-only: label="v7" type="Informative" tooltip="Gäller endast Campaign Classic v7"
 exl-id: 027ed2b6-365f-434f-9a18-2140512168e9
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
 workflow-type: tm+mt
-source-wordcount: '55'
-ht-degree: 30%
+source-wordcount: '48'
+ht-degree: 20%
 
 ---
 
