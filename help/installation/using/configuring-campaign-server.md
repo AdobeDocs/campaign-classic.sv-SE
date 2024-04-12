@@ -3,14 +3,14 @@ product: campaign
 title: Konfigurerar Campaign-server
 description: Konfigurerar Campaign-server
 feature: Installation, Instance Settings
-badge-v7-prem: label="lokal och hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=sv" tooltip="Gäller endast lokala och hybrida driftsättningar"
+badge-v7-prem: label="Endast lokal/hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=sv" tooltip="Gäller endast lokala och hybrida driftsättningar"
 audience: installation
 content-type: reference
 topic-tags: additional-configurations
 exl-id: 46c8ed46-0947-47fb-abda-6541b12b6f0c
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: fa089574b028193b6da346482d6ea42b1d19f0aa
 workflow-type: tm+mt
-source-wordcount: '1568'
+source-wordcount: '1569'
 ht-degree: 1%
 
 ---
