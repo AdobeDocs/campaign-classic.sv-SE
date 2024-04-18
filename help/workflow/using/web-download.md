@@ -4,9 +4,9 @@ title: Webbhämtning
 description: Läs mer om arbetsflödet för nedladdning av webbsidor
 feature: Workflows
 exl-id: b6005eae-5fbc-4e22-ab3a-c9b7ed6506f6
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: a0c0c7d13704b0155004e578d6739852ceb43c81
 workflow-type: tm+mt
-source-wordcount: '408'
+source-wordcount: '483'
 ht-degree: 1%
 
 ---
@@ -58,6 +58,10 @@ The **Webbnedladdning** startar nedladdningen av en fil på en explicit URL, ett
 1. **Avancerade parametrar**
 
    The **[!UICONTROL Advanced parameters...]** kan du ange ytterligare alternativ som visas nedan:
+
+   * **[!UICONTROL Follow redirections]**: Med filomdirigering kan du använda åsidosättningar för att dirigera datainmatning eller utdata till en enhet av en annan typ.
+   * **[!UICONTROL Add the HTTP headers to the file]**: I vissa fall kanske du vill lägga till ytterligare HTTP-huvuden i en fil. Vanligtvis används dessa rubriker för att ge ytterligare information i felsökningssyfte, för [Cross-Origin Resource Sharing (CORS)](https://developer.mozilla.org/docs/Web/HTTP/CORS)eller för att ange specifika cachelagringsdirektiv.
+   * **[!UICONTROL Ignore the HTTP return code]**: HTTP-returkoder, som också kallas HTTP-statuskoder, visar resultatet av en HTTP-begäran.
 
    ![](assets/download_web_edit_advanced.png)
 
