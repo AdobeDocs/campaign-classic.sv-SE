@@ -5,15 +5,23 @@ description: Lär dig hur du ger tillgång till Campaign-funktioner
 badge: label="v7" type="Informative" tooltip="Gäller endast Campaign Classic v7"
 feature: Access Management, Permissions
 exl-id: 9b616715-33cd-43ba-8548-8d96a179408e
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: e1a085384fb27ec165c487c112fbc70fe9738d9e
 workflow-type: tm+mt
-source-wordcount: '256'
-ht-degree: 6%
+source-wordcount: '342'
+ht-degree: 4%
 
 ---
 
 # Kom igång med behörigheter{#access-management}
 
+
+>[!CAUTION]
+>
+>Från och med Campaign Classic v7.3.1 bör alla operatorer använda [Adobe Identity Management System (IMS)](https://helpx.adobe.com/enterprise/using/identity.html){target="_blank"} för att ansluta till Campaign.
+>
+>Som en del i arbetet med att stärka säkerhets- och autentiseringsprocessen rekommenderar Adobe Campaign att man migrerar alla befintliga operatörers autentiseringsläge från den inbyggda autentiseringen av inloggnings-/lösenordsinformationen till Adobe Identity Management System (IMS). Lär dig hur du migrerar dina operatorer i [den här sidan](../../technotes/using/migrate-users-to-ims.md).
+> 
+>Observera att följande avsnitt inte längre gäller efter migreringen.  Lär dig hur du ställer in behörigheter med Adobe IMS i [Kampanjdokumentation v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/admin/permissions/gs-permissions.html){target="_blank"}.
 
 
 Med Adobe Campaign kan du definiera och hantera de rättigheter som tilldelats de olika operatorerna. Detta är en uppsättning rättigheter och begränsningar som tillåter eller nekar:

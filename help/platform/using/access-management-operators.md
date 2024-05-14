@@ -7,15 +7,22 @@ feature: Access Management, Permissions
 role: User, Admin
 level: Beginner
 exl-id: 580282ce-ee30-422a-8724-9c328637cc39
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: e1a085384fb27ec165c487c112fbc70fe9738d9e
 workflow-type: tm+mt
-source-wordcount: '1152'
+source-wordcount: '1238'
 ht-degree: 2%
 
 ---
 
 # Skapa och hantera operatörer {#operators}
 
+>[!CAUTION]
+>
+>Från och med Campaign Classic v7.3.1 bör alla operatorer använda [Adobe Identity Management System (IMS)](https://helpx.adobe.com/enterprise/using/identity.html){target="_blank"} för att ansluta till Campaign.
+>
+>Som en del i arbetet med att stärka säkerhets- och autentiseringsprocessen rekommenderar Adobe Campaign att man migrerar alla befintliga operatörers autentiseringsläge från den inbyggda autentiseringen av inloggnings-/lösenordsinformationen till Adobe Identity Management System (IMS). Lär dig hur du migrerar dina operatorer i [den här sidan](../../technotes/using/migrate-users-to-ims.md).
+> 
+>Observera att följande avsnitt inte längre gäller efter migreringen.  Lär dig hur du ställer in behörigheter med Adobe IMS i [Kampanjdokumentation v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/admin/permissions/gs-permissions.html){target="_blank"}.
 
 
 ## Kom igång med Campaign-operatörer  {#about-operators}
