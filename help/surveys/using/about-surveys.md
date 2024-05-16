@@ -5,18 +5,21 @@ description: Kom igång med Campaign-undersökningar
 badge-v8: label="Gäller även för v8" type="Positive" tooltip="Gäller även Campaign v8"
 feature: Surveys
 exl-id: 7061a4f1-006f-4f19-8761-918d8930d885
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: 8e5a328bee7701adfedec6a533cc21b4ce548187
 workflow-type: tm+mt
-source-wordcount: '531'
+source-wordcount: '554'
 ht-degree: 3%
 
 ---
 
 # Kom igång med undersökningar{#about-surveys}
 
-
-
 Adobe Campaign innehåller en grafisk modul för att definiera och publicera webbapplikationer. Detta används för att skapa sidor, t.ex. ett redigeringsformulär på ett extranät, eller meddelandeformulär som innehåller data från databasen med tabeller, diagram, indataformulär osv. Använd den här funktionen för att utforma och publicera webbsidor där användarna kan söka efter eller ange information.
+
+>[!AVAILABILITY]
+>
+>Undersökningshantering är inte tillgängligt i Campaign v8 i samband med en företagsdistribution (FFDA). Läs mer i [Kampanjdokumentation v8](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/config/architecture/ffda/enterprise-deployment){target="_blank"}.
+
 
 Valfritt **Undersökning** Med kan du skapa en ny typ av webbprogram för att skapa och hantera onlineenkäter, t.ex. formulär för att lägga till eller ändra profilinformation, för att prenumerera på eller avbryta en prenumeration på en informationstjänst eller ett tävlingsformulär. När svaren har samlats in lagras de i databasen eller i lokala variabler. Datamodellen kan utökas dynamiskt via svar på enkäter. Du kan visa resultaten i realtid, filtrera svaren och analysera dem med dedikerade diagram.
 

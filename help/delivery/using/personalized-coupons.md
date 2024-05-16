@@ -6,9 +6,9 @@ badge-v8: label="Gäller även för v8" type="Positive" tooltip="Gäller även C
 feature: Personalization
 role: User
 exl-id: 182939bb-7aff-4667-bda9-c5d48be3b946
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: 8e5a328bee7701adfedec6a533cc21b4ce548187
 workflow-type: tm+mt
-source-wordcount: '894'
+source-wordcount: '911'
 ht-degree: 1%
 
 ---
@@ -17,15 +17,17 @@ ht-degree: 1%
 
 Genom att lägga till kuponger i leveranserna kan mottagarna få bättre värde för produkter och tjänster. Du kan använda Campaign-kupongmodulen för att skapa en uppsättning kuponger som du förväntar dig ska läggas till kommande marknadsföringserbjudanden. När du är redo att skapa en leverans tilldelar du tillämpliga kuponger. Eftersom kuponger är giltiga för en viss period är en tilldelad kupong unikt kopplad till leveransmeddelandet. Dessutom bekräftar Campaign att det finns tillräckligt många kuponger för antalet meddelanden innan leveransen skickas.
 
->[!NOTE]
+>[!AVAILABILITY]
 >
->Kuponghantering är ett paket som måste installeras. Kontrollera att du har kuponghantering genom att markera **[!UICONTROL Administration > Configuration > Package management > Installed packages.]**
->
->Kupongdata kan importeras och exporteras med CSV- och XML-format. Mer information om import och export finns i [det här avsnittet](../../platform/using/get-started-data-import-export.md).
+>Kuponghantering är inte tillgängligt i Campaign v8 i samband med en företagsdistribution (FFDA). Läs mer i [Kampanjdokumentation v8](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/config/architecture/ffda/enterprise-deployment){target="_blank"}.
+
+Kuponghantering bygger på ett paket som måste installeras. Kontrollera att du har kuponghantering genom att markera **[!UICONTROL Administration > Configuration > Package management > Installed packages.]**
+
+Kupongdata kan importeras och exporteras med CSV- och XML-format. [Läs mer](../../platform/using/get-started-data-import-export.md).
 
 ## Skapa en kupong {#creating-a-coupon}
 
-Med kupongmodulen får du två alternativ när du skapar kuponger:
+Modulen Kuponghantering ger två alternativ när du skapar kuponger:
 
 * **Anonym**: En allmän kupong för utvalda mottagare eller listor med mottagare.
 * **Enskild**: En anpassad kupong för utvalda mottagare.
