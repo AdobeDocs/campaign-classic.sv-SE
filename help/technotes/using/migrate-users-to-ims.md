@@ -2,9 +2,9 @@
 title: Migrera kampanjoperatorer till Adobe Identity Management System (IMS)
 description: Lär dig hur du migrerar kampanjoperatorer till Adobe Identity Management System (IMS)
 exl-id: f01948c7-b523-492d-a4e8-67f4adde5fc5
-source-git-commit: 59156851156338c9462781d31ce81a651362f2da
+source-git-commit: c8cd1ef5e79e14c3ce804c32be0e995408d9358c
 workflow-type: tm+mt
-source-wordcount: '1278'
+source-wordcount: '1279'
 ht-degree: 1%
 
 ---
@@ -77,6 +77,7 @@ Viktiga steg för migreringen visas nedan:
 1. Implementera Adobe IMS för din anslutning enligt informationen i [den här sidan](../../integrations/using/implementing-ims.md).
 
 Du kan också migrera tekniska operatorer till Adobe Developer Console enligt informationen i [den här teknologin](ims-migration.md).
+
 
 
 ## Vanliga frågor och svar {#ims-migration-faq}
@@ -152,5 +153,5 @@ Nu kan du se listan med **Operatorer** och **Autentiseringstyp**.
 ## Användbara länkar {#ims-useful-links}
 
 * [Migrering av tekniska användare till Adobe Developer Console](ims-migration.md)
-* [Versionsinformation för Adobe Campaign v8](../../rn/using/latest-release.md)
+* [Versionsinformation om Adobe Campaign Classic v7](../../rn/using/latest-release.md)
 * [Vad är Adobe Identity Management System (IMS)](https://helpx.adobe.com/enterprise/using/identity.html){target="_blank"}
