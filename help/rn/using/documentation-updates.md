@@ -7,9 +7,9 @@ role: User
 level: Beginner
 exl-id: 07c1f4a3-cf16-4a9b-b402-e13258799f91
 source-git-commit: c736ac1cda9490548f1e4b56142d61fccaca5c4a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3764'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -27,7 +27,7 @@ Ett varningsmeddelande har lagts till om att användare har skapats med Adobe Id
 
 Alternativ saknas för arbetsflödesaktiviteten för webbhämtning har lagts till. [Läs mer](../../workflow/using/web-download.md)
 
-Ett varningsmeddelande har lagts till i **Ändra dimension** och **Ändra datakälla** aktiviteter om hur de används i ett arbetsflöde. [Läs mer](../../workflow/using/change-data-source.md)
+Ett varningsmeddelande har lagts till i aktiviteterna **Ändringsdimension** och **Ändra datakälla** om hur de används i ett arbetsflöde. [Läs mer](../../workflow/using/change-data-source.md)
 
 ### Mars 2024 {#mar-2024}
 
