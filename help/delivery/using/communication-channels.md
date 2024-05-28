@@ -6,7 +6,7 @@ badge-v8: label="Gäller även för v8" type="Positive" tooltip="Gäller även C
 feature: Cross Channel Orchestration, Email, SMS, In App, Direct Mail, Push
 role: User
 exl-id: 92b5e013-b619-4f0b-b0b1-1fc2e653ceac
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: 8fbfc211c4e791b324c34d3d180daa7597c00c7f
 workflow-type: tm+mt
 source-wordcount: '1214'
 ht-degree: 10%
@@ -32,7 +32,7 @@ Adobe Campaign erbjuder följande leveranskanaler:
 1. **Mobilkanal**: leveranser i mobilkanaler gör att du kan skicka personaliserade SMS- eller LINE-meddelanden till målpopulationen. Se [SMS-kanal](sms-channel.md).
 1. **Mobil programkanal**: vid leverans av mobilappar kan du skicka meddelanden till iOS och Android-system. Se [Mobilappskanal](about-mobile-app-channel.md) kapitel.
 
-   Andra kanaler beskrivs på [den här sidan](steps-about-delivery-creation-steps.md#other-channels).
+   Andra kanaler beskrivs på [det här avsnittet](#other-channels).
 
    >[!NOTE]
    >
