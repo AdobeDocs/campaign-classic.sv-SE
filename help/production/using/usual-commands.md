@@ -8,9 +8,9 @@ audience: production
 content-type: reference
 topic-tags: production-procedures
 exl-id: 472ccc04-e68e-4ccb-90e9-7d626a4e794f
-source-git-commit: 14ba450ebff9bba6a36c0df07d715b7279604222
+source-git-commit: b7dedddc080d1ea8db700fabc9ee03238b3706cc
 workflow-type: tm+mt
-source-wordcount: '415'
+source-wordcount: '408'
 ht-degree: 3%
 
 ---
@@ -41,7 +41,7 @@ Parametern **`<command>`** motsvarar modulen.
 
 Du kan lägga till parametern **-vem** för att lista pågående anslutningar (databas och program).
 
-```
+```sql
 nlserver pdump -who
 HH:MM:SS > Application server for Adobe Campaign Classic (7.X YY.R build XXX@SHA1) of DD/MM/YYYY
 web@default (9984) - 50.1 Mo
@@ -65,7 +65,7 @@ Ett annat användbart kommando är **nlserver monitor**. Den listar XML-filen f�
 
 Du kan lägga till parametern **-missing** för att lista saknade moduler (fel i moduler, stängda moduler osv.)
 
-```
+```sql
 nlserver monitor -missing
 HH:MM:SS > Application server for Adobe Campaign Classic (7.X YY.R build XXX@SHA1) of DD/MM/YYYY
 inMail@test
@@ -79,11 +79,11 @@ Detta motsvarar modulerna med automatisk start men som inte har startats.
 
 Syntaxen för att starta moduler har fortfarande följande format:
 
-```
+```sql
 nlserver start <module>@<INSTANCE>
 ```
 
-```
+```sql
 nlserver stop <module>@<INSTANCE>
 ```
 
@@ -99,7 +99,7 @@ Om du vill stoppa Adobe Campaign-tjänster använder du något av följande komm
 
    * I Linux:
 
-     ```
+     ```sql
      /etc/init.d/nlserver6 stop
      ```
 
@@ -109,13 +109,13 @@ Om du vill stoppa Adobe Campaign-tjänster använder du något av följande komm
 
    * I Windows:
 
-     ```
+     ```sql
      net stop nlserver6
      ```
 
 * Om inte, så i Adobe Campaign-kontot:
 
-  ```
+  ```sql
   nlserver shutdown 
   ```
 
@@ -125,13 +125,13 @@ På samma sätt kan du använda något av följande kommandon för att starta om
 
 * Om du har rot- eller administratörsåtkomst:
 
-   * I Linux: /etc/init.d/nlserver6 start
+   * I Linux: `/etc/init.d/nlserver6 start`
 
      >[!NOTE]
      >
      >Från och med 20.1 rekommenderar vi att du använder följande kommando i stället (för Linux): **systemctl start nlserver**
 
-   * I Windows: net start nlserver6
+   * I Windows: `net start nlserver6`
 
 * I annat fall, på Adobe Campaign-kontot: **nlserver watchdog -svc -noconsole**
 
@@ -141,11 +141,11 @@ The **config** Med -kommandot kan du hantera serverkonfigurationen, inklusive om
 
 Använd **config** kommando **nlserver** körbar fil med **-setdblogin** parameter.
 
-```
+```sql
 nlserver config -setdblogin:<[dbms:]account[:database][/password]@server>
 ```
 
-```
+```sql
 nlserver config -setdblogin:PostgreSQL:<accountName>:test6@dbserver
 ```
 

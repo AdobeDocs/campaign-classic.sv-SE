@@ -8,7 +8,7 @@ audience: installation
 content-type: reference
 topic-tags: installing-campaign-in-windows-
 exl-id: c0cb4efa-cae9-4312-88fb-738857a89595
-source-git-commit: 14ba450ebff9bba6a36c0df07d715b7279604222
+source-git-commit: b7dedddc080d1ea8db700fabc9ee03238b3706cc
 workflow-type: tm+mt
 source-wordcount: '406'
 ht-degree: 1%
@@ -16,8 +16,6 @@ ht-degree: 1%
 ---
 
 # Installera servern{#installing-the-server}
-
-
 
 ## Köra installationsprogrammet {#executing-the-installation-program}
 
@@ -70,13 +68,13 @@ Installationsstegen för Adobe Campaign-servern är följande:
 
 Du kan testa den inledande installationen med följande kommando:
 
-```
+```sql
 nlserver pdump
 ```
 
 Om Adobe Campaign inte startas är svaret:
 
-```
+```sql
 No task
 ```
 
@@ -84,7 +82,7 @@ No task
 
 När installationen är klar öppnar du en kommandotolk via **[!UICONTROL Start > Programs > Adobe Campaign]** och ange följande kommando:
 
-```
+```sql
 nlserver web
 ```
 
@@ -104,13 +102,13 @@ Följande information visas:
 
 Tryck **Ctrl+C** om du vill stoppa processen anger du följande kommando:
 
-```
+```sql
 nlserver start web
 ```
 
 Följande information visas:
 
-```
+```sql
 12:17:21 >   Application server for Adobe Campaign Classic (7.X YY.R build XXX@SHA1) of DD/MM/YYYY
 12:17:21 >   Start of the 'web@default' ('nlserver web -tracefile:web@default -instance:default -detach -tomcat -autorepair') task in a new process 
 12:17:21 >   Application server for Adobe Campaign Classic (7.X YY.R build XXX@SHA1) of DD/MM/YYYY
@@ -122,13 +120,13 @@ Följande information visas:
 
 Om du vill stoppa den anger du:
 
-```
+```sql
 nlserver stop web
 ```
 
 Följande information visas:
 
-```
+```sql
 12:18:31 >   Application server for Adobe Campaign Classic (7.X YY.R build XXX@SHA1) of DD/MM/YYYY
 12:18:31 >   Stop requested for 'web@default' ('nlserver web -tracefile:web@default -instance:default -detach -tomcat -autorepair', pid=29188, tid=-1224824320)...
 12:18:31 >   Stop requested (pid=29188)
@@ -145,13 +143,13 @@ Läs mer i [det här avsnittet](../../installation/using/configuring-campaign-se
 
 Om du vill starta Adobe Campaign-tjänsterna kan du använda tjänsthanteraren eller ange följande på kommandoraden (med rätt behörighet):
 
-```
+```sql
 net start nlserver6
 ```
 
 Om du behöver stoppa Adobe Campaign-processerna senare kan du använda kommandot:
 
-```
+```sql
 net stop nlserver6
 ```
 
@@ -161,6 +159,6 @@ Ladda ned LibraryOffice och följ de vanliga installationsstegen.
 
 Lägg till följande miljövariabel:
 
-```
+```sql
 OOO_BASIS_INSTALL_DIR="C:\Program Files (x86)\LibreOffice 6\"
 ```

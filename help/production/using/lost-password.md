@@ -8,7 +8,7 @@ audience: production
 content-type: reference
 topic-tags: troubleshooting
 exl-id: 064eb41f-6685-4ac1-adc5-40f9d5a2f96d
-source-git-commit: ef7f3888e010cbe331b5e06cd1ea5e07127a47d2
+source-git-commit: b7dedddc080d1ea8db700fabc9ee03238b3706cc
 workflow-type: tm+mt
 source-wordcount: '209'
 ht-degree: 3%
@@ -71,7 +71,7 @@ Gör så här:
 
 1. Spara ändringarna och stäng filen.
 
-1. Stoppa `nlserver` process
+1. Stoppa `nlserver` -processen.
 
 1. Konfigurera det nya lösenordet. Ange följande kommandon om du vill göra det:
 
@@ -85,6 +85,6 @@ Gör så här:
    Confirmation 
    ```
 
-1. Starta `nlserver` process
+1. Starta `nlserver` -processen.
 
 1. Nu kan du använda ditt nya lösenord för att ansluta till **Intern** läge.
