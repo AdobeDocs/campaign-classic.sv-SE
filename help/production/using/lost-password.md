@@ -8,9 +8,9 @@ audience: production
 content-type: reference
 topic-tags: troubleshooting
 exl-id: 064eb41f-6685-4ac1-adc5-40f9d5a2f96d
-source-git-commit: 14ba450ebff9bba6a36c0df07d715b7279604222
+source-git-commit: ef7f3888e010cbe331b5e06cd1ea5e07127a47d2
 workflow-type: tm+mt
-source-wordcount: '182'
+source-wordcount: '209'
 ht-degree: 3%
 
 ---
@@ -28,7 +28,12 @@ Det finns två möjliga scenarier:
 ## Lösenord som har gått förlorat av en kampanjoperator {#password-lost-by-campaign-operator}
 
 Om en Adobe Campaign-operator förlorar sitt lösenord kan du ändra det.
-Gör så här:
+
+>[!NOTE]
+>
+>Den här proceduren gäller endast för operatorer som ansluter till Campaign med inbyggd autentisering. För Adobe IMS-autentisering, se [den här dokumentationen](https://helpx.adobe.com/ie/manage-account/using/change-or-reset-password.html){target="_blank"}.
+
+Så här återställer du ett Campaign-lösenord:
 
 1. Anslut via en operator med administratörsbehörighet.
 1. Högerklicka på en operator.
@@ -45,31 +50,32 @@ Gör så här:
 >Detta avsnitt gäller endast lokala kunder.
 
 Om det interna lösenordet går förlorat måste du initiera om det.
+
 Gör så här:
 
 1. Redigera **/usr/local/neolane/nl6/conf/serverConf.xml** -fil.
 
 1. Gå till **internalPassword** linje.
 
-   ```
+   ```xml
    <!-- XTK authentication mode internalPassword : Password of internal account -->
    <xtk internalPassword="myPassword"/>
    ```
 
-1. Ta bort strängen inom citattecken, i det här fallet: **myPassword**
+1. Ta bort strängen inom citattecken, i det här fallet: `myPassword`. Du får följande rad:
 
-   Du får alltså följande rad:
-
-   ```
-   !-- XTK authentication mode internalPassword : Password of internal account -->
-   <xtk internalPassword=""/
+   ```xml
+   <!-- XTK authentication mode internalPassword : Password of internal account -->
+   <xtk internalPassword=""/>
    ```
 
 1. Spara ändringarna och stäng filen.
 
+1. Stoppa `nlserver` process
+
 1. Konfigurera det nya lösenordet. Ange följande kommandon om du vill göra det:
 
-   ```
+   ```javascript
    nlserver config -internalpassword
    HH:MM:SS > Application server for Adobe Campaign Classic (7.X YY.R build XXX@SHA1) of DD/MM/YYYY
    Enter current password.
@@ -78,5 +84,7 @@ Gör så här:
    Password: 
    Confirmation 
    ```
+
+1. Starta `nlserver` process
 
 1. Nu kan du använda ditt nya lösenord för att ansluta till **Intern** läge.
