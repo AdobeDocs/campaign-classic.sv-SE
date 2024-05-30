@@ -8,20 +8,20 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: 23c873fd-9016-4d32-842c-772cfff0e23e
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: 5d237d42adabe42a07bc759913dd9453df650671
 workflow-type: tm+mt
-source-wordcount: '883'
-ht-degree: 98%
+source-wordcount: '905'
+ht-degree: 80%
 
 ---
 
 # Sekretesshantering {#privacy-management}
 
 
-
 Adobe Campaign erbjuder en uppsättning verktyg som hjälper dig att följa [integritetsregleringen](#privacy-management-regulations) (inklusive GDPR, CCPA, PDPA och LGPD).
 
-Här följer de fem viktigaste funktionerna som Adobe Campaign erbjuder för att säkerställa beredskap för GDPR och andra integritetsregleringar:
+Här är de fem viktigaste funktionerna från Adobe Campaign för att säkerställa sekretessregler:
+
 * **Åtkomsträttigheter**
 * **Rätt att radera**
 * **Medgivandehantering**
@@ -40,12 +40,14 @@ It also contains information on important features to manage Privacy ([Consent, 
 
 Funktionerna i Adobe Campaign hjälper dig att efterleva följande regler:
 
-* **GDPR** ([allmänna dataskyddsförordningen](https://ec.europa.eu/info/law/law-topic/data-protection/reform/what-does-general-data-protection-regulation-gdpr-govern_en)) är EU:s integritetslagstiftning som harmoniserar och moderniserar kraven på skydd av personuppgifter.
-* **CCPA** ([California Consumer Privacy Act](https://leginfo.legislature.ca.gov/faces/codes_displayText.xhtml?lawCode=CIV&amp;division=3.&amp;title=1.81.5.&amp;part=4.&amp;chapter=&amp;article=)) ger personer bosatta i Kalifornien nya rättigheter när det gäller deras personuppgifter och ålägger vissa enheter som bedriver verksamhet i Kalifornien skyldigheter när det gäller dataskydd.
-* **PDPA** ([Personal Data Protection Act](https://secureprivacy.ai/thailand-pdpa-summary-what-businesses-need-to-know/)) är den nya integritetslagstiftningen som harmoniserar och moderniserar dataskyddskraven i Thailand.
-* **LGPD** ([Lei Geral de Proteção de Dados](https://iapp.org/media/pdf/resource_center/Brazilian_General_Data_Protection_Law.pdf)) börjar gälla i början av 2021 för alla företag som samlar in eller behandlar personuppgifter i Brasilien.
+* **GDPR** (Allmänna dataskyddsförordningen) är Europeiska unionens (EU) integritetslagstiftning som harmoniserar och moderniserar dataskyddskraven för EU:s länder.
+* **CCPA** (California Consumer Privacy Act) ger personer bosatta i Kalifornien nya rättigheter när det gäller deras personuppgifter och ålägger vissa företag som bedriver verksamhet i Kalifornien dataskyddsansvar.
+* **PDPA** (lagen om skydd av personuppgifter) är den integritetslagstiftning som harmoniserar och moderniserar dataskyddskraven för Thailand.
+* **LGPD** (Lei Geral de Proteção de Dados) gäller alla företag som samlar in eller behandlar personuppgifter i Brasilien.
+* **CASL** (Canadian Anti Spam Law) omfattar alla meddelanden som skickas till eller från Kanada, men inte meddelanden som skickas via Kanada.
+* **VCDPA** (Virginia Consumer Data Protection Act) och **CPA** (Colorado Privacy Act) gäller alla företag som bedriver verksamhet eller är målobjekt i dessa delstater.
 
-Alla dessa bestämmelser gäller för kunder i Adobe Campaign som innehar data för registrerade personer i de respektive regioner eller länder som nämns ovan (EU, Kalifornien, Thailand och Brasilien).
+Alla dessa bestämmelser gäller för Adobe Campaign-kunder som har data för registrerade i de respektive regioner eller länder som nämns ovan.
 
 <!--Several Privacy capabilities are available in Adobe Campaign, including consent management, data retention settings, and rights management. See [Consent, Retention and Roles](#consent-retention-roles). In addition to this, Adobe Campaign helps facilitate your readiness as Data Controller for certain Privacy requests. See [Right to Access and Right to be Forgotten](#right-access-forgotten).-->
 

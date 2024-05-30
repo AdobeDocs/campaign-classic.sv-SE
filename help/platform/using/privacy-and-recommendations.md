@@ -8,15 +8,14 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: d2451b62-bddf-4dee-8789-35aaae8348e1
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: 5d237d42adabe42a07bc759913dd9453df650671
 workflow-type: tm+mt
-source-wordcount: '1977'
-ht-degree: 98%
+source-wordcount: '1910'
+ht-degree: 97%
 
 ---
 
 # Integritet och medgivande{#privacy-and-recommendations}
-
 
 
 ## Allmänna rekommendationer {#general-recommendations}
@@ -31,18 +30,7 @@ Ta dig tid att gå igenom [Checklistan för säkerhet och sekretess](../../insta
 
 ### Integritetsbestämmelser {#privacy-regulations}
 
-För att kunna hantera personuppgifter på ett korrekt sätt bör du arbeta i enlighet med lagstiftningen i den eller de regioner där du bedriver verksamhet. Dessa regler omfattar:
-* [GDPR](https://ec.europa.eu/info/law/law-topic/data-protection/reform/what-does-general-data-protection-regulation-gdpr-govern_en) (Europeiska allmänna dataskyddsförordningen)
-* [DPA](https://www.gov.uk/data-protection) (Storbritanniens genomförande av GDPR)
-* [Europas direktiv om integritet och elektronisk kommunikation](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02002L0058-20091219)
-* [CAN-SPAM Act](https://www.ftc.gov/tips-advice/business-center/guidance/can-spam-act-compliance-guide-business) (amerikansk lagstiftning gällande regler och krav på kommersiell e-post)
-* [CCPA](https://leginfo.legislature.ca.gov/faces/codes_displayText.xhtml?lawCode=CIV&amp;division=3.&amp;title=1.81.5.&amp;part=4.&amp;chapter=&amp;article=) (California Consumer Privacy Act)
-* [PDPA](https://secureprivacy.ai/thailand-pdpa-summary-what-businesses-need-to-know/) (Thailand Personal Data Protection Act)
-* [LGPD](https://iapp.org/media/pdf/resource_center/Brazilian_General_Data_Protection_Law.pdf) (Brasiliens allmänna dataskyddslag)
-
->[!NOTE]
->
->Mer information om hur GDPR, CCPA, PDPA och LGPD påverkar Adobe Campaign finns på [den här sidan](../../platform/using/privacy-management.md#privacy-management-regulations).
+För att kunna hantera personuppgifter på ett korrekt sätt bör du arbeta i enlighet med lagstiftningen i den eller de regioner där du bedriver verksamhet. Adobe Campaign funktioner hjälper dig att följa de regler som anges i [den här sidan](../../platform/using/privacy-management.md#privacy-management-regulations).
 
 ### Integritet i Adobe Experience Cloud {#experience-cloud-privacy}
 
