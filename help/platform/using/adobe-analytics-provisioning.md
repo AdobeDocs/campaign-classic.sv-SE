@@ -7,10 +7,10 @@ feature: Analytics Integration
 role: User, Admin
 level: Beginner
 exl-id: 24e002aa-4e86-406b-92c7-74f242ee4b86
-source-git-commit: 14ba450ebff9bba6a36c0df07d715b7279604222
+source-git-commit: a08b386ff73fd9a2e9b3909c8f8de5e419104ce4
 workflow-type: tm+mt
-source-wordcount: '729'
-ht-degree: 6%
+source-wordcount: '857'
+ht-degree: 1%
 
 ---
 
@@ -36,7 +36,11 @@ För att den här integreringen ska fungera måste du skapa en Adobe Analytics-p
 
 >[!AVAILABILITY]
 >
-> JWT (JSON Web Tokens) håller på att tas ur bruk och ersätts med OAuth. Övergången genomförs stegvis i de kommande versionerna av Campaign och dokumentationen kommer att uppdateras för att återspegla dessa uppdateringar.
+> JWT-autentiseringsuppgifterna (Service Account) har tagits bort av Adobe, och Campaign-integreringar med Adobe-lösningar och appar måste nu förlita sig på autentiseringsuppgifter för OAuth Server-till-Server. </br>
+>
+> * Om du har implementerat inkommande integreringar med Campaign måste du migrera ditt tekniska konto enligt beskrivningen i den här dokumentationen. Befintliga JWT-referenser (Service Account) kommer att fortsätta att fungera fram till 27 januari 2025. Dessutom går det inte längre att skapa nya JWT-referenser (Service Account) i Developer Console från och med 3 juni 2024. Det går inte att skapa eller lägga till en ny JWT-autentiseringsuppgift (Service Account) i ett projekt efter detta datum. </br>
+>
+> * Om ni har implementerat utgående integreringar, som integrering med Campaign-Analytics eller integrering med Experience Cloud-utlösare, fortsätter de att fungera fram till 27 januari 2025. Innan detta datum måste ni dock uppgradera er Campaign-miljö till v7.4.1 och migrera ert tekniska konto till Autentisering. Eftersom det inte längre är möjligt att skapa nya JWT-referenser (Service Account) i Developer Console från och med 3 juni 2024, kan du inte skapa en ny utgående integrering som är beroende av JWT efter detta datum
 
 ## Skapa en Adobe Analytics-produktprofil {#analytics-product-profile}
 
