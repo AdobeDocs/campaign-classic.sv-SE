@@ -8,20 +8,20 @@ audience: installation
 content-type: reference
 topic-tags: prerequisites-and-recommendations-
 exl-id: 87103c31-1530-4f8d-ab3a-6ff73093b80c
-source-git-commit: 14ba450ebff9bba6a36c0df07d715b7279604222
+source-git-commit: 30670fba2fb84b968ef2e8a8f24746c81cc05f57
 workflow-type: tm+mt
-source-wordcount: '496'
+source-wordcount: '565'
 ht-degree: 1%
 
 ---
 
 # Programserver{#application-server}
 
-
-
 De nödvändiga lagren för databasåtkomst måste vara installerade på servern och tillgängliga från Adobe Campaign-kontot.
 
 ## Java Development Kit - JDK {#java-development-kit---jdk}
+
+Java Development Kit, eller JDK, är ett programutvecklingspaket. Det är den grundläggande komponenten som möjliggör utveckling av Java-program och Java-applet.
 
 Den dynamiska generatorn för webbsidor använder JSP 1.2-teknik. För detta ingår en Tomcat-motor (från Apache) i programmet. Det kräver ett Java Development Kit (JDK) som är installerat på alla servrar där Adobe Campaign-programmet är installerat.
 
@@ -31,33 +31,46 @@ Ansökan har godkänts för Java Development Kit (JDK) som utvecklats av Oraclet
 
 Versionerna som stöds finns i Campaign [Kompatibilitetsmatris](../../rn/using/compatibility-matrix.md).
 
->[!NOTE]
->
->Den kan installeras med rätt JDK-version som redan används av andra program på datorn.
->  
->När du installerar behöver du inte utföra integreringen med webbläsarna.
->
->På en dator som bara kör leveransagenter (**nlserver mta** process) eller arbetsflödesservern (**nlserver wfserver** ) behöver du inte installera JDK.
 
-Om du vill hämta Java JDK ansluter du till: [https://www.oracle.com/technetwork/java/javase/downloads/index.html](https://www.oracle.com/technetwork/java/javase/downloads/index.html).
 
-**Varning: du måste hämta en JDK, inte en JRE.**
+### Rekommendationer
+
+Java Development Kit kan installeras med rätt JDK-version som redan används av andra program på datorn.
+
+När du installerar JDK krävs ingen integration med webbläsarna.
+
+På en dator som bara kör leveransagenter (**nlserver mta** process) eller arbetsflödesservern (**nlserver wfserver** ) krävs inte installation av JDK.
+
 
 >[!CAUTION]
 >
->För att bevara prestanda för plattformsåtgärder och säkerställa kompatibilitet med den installerade versionen måste du inaktivera automatiska JDK-uppdateringsfunktioner i Windows och Linux.
+> För att bevara prestanda för plattformsåtgärder och säkerställa kompatibilitet med den installerade versionen måste du inaktivera automatiska JDK-uppdateringsfunktioner i Windows och Linux.
+>
+> När du uppgraderar din Java-version måste du först avinstallera den tidigare versionen. Båda versionerna av Java som är installerade på samma dator kan orsaka konflikter.
 
-Om du vill installera JDSL i en Linux-miljö bör du använda en pakethanterare.
 
-I Debian 8 och 9 använder du följande kommando:
+### Installationssteg
 
-```
+Java Development Kit är plattformsspecifikt: separata installationsprogram krävs för varje operativsystem.
+
+Om du vill hämta Java JDK ansluter du till [Oraclets webbplats](https://www.oracle.com/technetwork/java/javase/downloads/index.html){target="_blank"}.
+
+>[!CAUTION]
+>
+> Se till att hämta ett Java Development Kit (JDK), inte en Java Runtime Environment (JRE).
+
+
+Om du vill installera JDSL i en Linux-miljö rekommenderar Adobe att du använder en pakethanterare.
+
+Använd följande kommando för Debian:
+
+```sql
 aptitude install openjdk-8-jdk
 ```
 
-Använd följande kommando för RHEL 7:
+Använd följande kommando för RHEL:
 
-```
+```sql
 yum install java-1.8.0-openjdk
 ```
 
@@ -67,7 +80,11 @@ I Linux måste OpenSSL vara installerat. Adobe Campaign stöder OpenSSL version 
 
 ## Exportera rapporter {#exporting-reports}
 
-Med Adobe Campaign kan du exportera plattformsrapporter i Microsoft Excel- och Adobe PDF-format. För Microsoft Excel-formatet använder Adobe Campaign **LibreOffice**. För Adobe PDF-formatet använder Adobe Campaign **PhantomJS** konverterare. PhantomJs ingår i fabrikspaketet och LibreOffice måste vara installerat på de datorer som Adobe Campaign-programservern körs på (**nlserver web** -processen).
+Du kan använda Adobe Campaign för att exportera rapporter till Microsoft Excel och Adobe PDF.
+
+* För Microsoft Excel-formatet använder Adobe Campaign **LibreOffice**.
+
+* För Adobe PDF-formatet använder Adobe Campaign **PhantomJS** konverterare. PhantomJs ingår i fabrikspaketet och LibreOffice måste vara installerat på de datorer som Adobe Campaign-programservern körs på (**nlserver web** -processen).
 
 >[!NOTE]
 >
