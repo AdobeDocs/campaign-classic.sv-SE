@@ -6,7 +6,7 @@ badge-v8: label="Gäller även för v8" type="Positive" tooltip="Gäller även C
 feature: Templates
 role: User
 exl-id: 3b6e4974-4551-4da2-8eca-577c4f9cbd91
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: a94774daa4005fe95066b85f921d9baa981b2a7c
 workflow-type: tm+mt
 source-wordcount: '823'
 ht-degree: 0%
@@ -77,7 +77,7 @@ Följande publiceringsalternativ är tillgängliga:
 
   Som standard används variablerna i fälten &quot;@name&quot; och &quot;@date&quot; för filnamnets konstruktionsformat:
 
-  ```
+  ```xml
   ct_$(@name)_$date-format(@date,'%4Y%2M%2D').htm
   ```
 
@@ -117,7 +117,7 @@ Principen är att skapa en huvudsida som listar kapitlen, med möjlighet att vis
 
 Motsvarande formatmall (&quot;cus:book.xsl&quot;) är:
 
-```
+```xml
 <?xml version="1.0" encoding="ISO-8859-1" ?>
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="1.0">
   <xsl:output encoding="ISO-8859-1" method="html"/>
@@ -140,7 +140,7 @@ Motsvarande formatmall (&quot;cus:book.xsl&quot;) är:
 
 En andra formatmall (&quot;cus:chapter.xsl&quot;) krävs för att generera detaljer i kapitlen:
 
-```
+```xml
 <?xml version="1.0" encoding="ISO-8859-1" ?>
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="1.0">
   <xsl:output encoding="ISO-8859-1" method="html"/>
@@ -167,7 +167,7 @@ En andra formatmall (&quot;cus:chapter.xsl&quot;) krävs för att generera detal
 
 Partitionstaggen fylls i i början av sidan som ska inkluderas i filen som ska genereras.
 
-```
+```xml
 <xsl:comment> #nl:output_replace($(path)/<xsl:value-of select="@id"/>.htm)</xsl:comment>
 ```
 
