@@ -8,9 +8,9 @@ audience: installation
 content-type: reference
 topic-tags: prerequisites-and-recommendations-
 exl-id: 87103c31-1530-4f8d-ab3a-6ff73093b80c
-source-git-commit: 30670fba2fb84b968ef2e8a8f24746c81cc05f57
+source-git-commit: 7e1c3b256cf43232e49d9daa0bf44d1e114b565b
 workflow-type: tm+mt
-source-wordcount: '565'
+source-wordcount: '622'
 ht-degree: 1%
 
 ---
@@ -32,28 +32,28 @@ Ansökan har godkänts för Java Development Kit (JDK) som utvecklats av Oraclet
 Versionerna som stöds finns i Campaign [Kompatibilitetsmatris](../../rn/using/compatibility-matrix.md).
 
 
-
 ### Rekommendationer
 
-Java Development Kit kan installeras med rätt JDK-version som redan används av andra program på datorn.
+När du installerar och uppgraderar ditt Java Development Kit bör du följa följande rekommendationer:
 
-När du installerar JDK krävs ingen integration med webbläsarna.
+* Java Development Kit kan installeras med rätt JDK-version som redan används av andra program på datorn.
 
-På en dator som bara kör leveransagenter (**nlserver mta** process) eller arbetsflödesservern (**nlserver wfserver** ) krävs inte installation av JDK.
+* När du installerar JDK krävs ingen integration med webbläsarna.
 
+* På en dator som bara kör leveransagenter (**nlserver mta** process) eller arbetsflödesservern (**nlserver wfserver** ) krävs inte installation av JDK.
 
->[!CAUTION]
->
-> För att bevara prestanda för plattformsåtgärder och säkerställa kompatibilitet med den installerade versionen måste du inaktivera automatiska JDK-uppdateringsfunktioner i Windows och Linux.
->
-> När du uppgraderar din Java-version måste du först avinstallera den tidigare versionen. Båda versionerna av Java som är installerade på samma dator kan orsaka konflikter.
+* För att bevara prestanda för plattformsåtgärder och säkerställa kompatibilitet med den installerade versionen måste du inaktivera automatiska JDK-uppdateringsfunktioner i Windows och Linux.
+
+* När du uppgraderar din Java-version måste du först avinstallera den tidigare versionen. Båda versionerna av Java som är installerade på samma dator kan orsaka konflikter.
+
+  Som lokal kund kan du kontrollera `LD_LIBRARY_PATH` [miljövariabel](installing-packages-with-linux.md#environment-variables) är inställd på den senaste versionen (t.ex. java1). Om den är inställd på en tidigare version (t.ex. Java8) behöver uppdateras. För JDK 11 är sökvägen till JDK-bibliotek `/usr/lib/jvm/java-11-openjdk-amd64/lib`.
 
 
 ### Installationssteg
 
 Java Development Kit är plattformsspecifikt: separata installationsprogram krävs för varje operativsystem.
 
-Om du vill hämta Java JDK ansluter du till [Oraclets webbplats](https://www.oracle.com/technetwork/java/javase/downloads/index.html){target="_blank"}.
+Om du vill hämta JDK ansluter du till [Oraclets webbplats](https://www.oracle.com/technetwork/java/javase/downloads/index.html){target="_blank"}.
 
 >[!CAUTION]
 >
@@ -73,6 +73,7 @@ Använd följande kommando för RHEL:
 ```sql
 yum install java-1.8.0-openjdk
 ```
+
 
 ## OpenSSL {#openssl}
 
