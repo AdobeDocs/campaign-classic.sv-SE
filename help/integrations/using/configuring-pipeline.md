@@ -1,60 +1,50 @@
 ---
 product: campaign
 title: Konfigurera pipeline
-description: Lär dig hur du konfigurerar pipeline
+description: Lär dig hur du konfigurerar pipeline för integrering av Campaign - utlösare
 feature: Triggers
 badge-v8: label="Gäller även för v8" type="Positive" tooltip="Gäller även Campaign v8"
 audience: integrations
 content-type: reference
 exl-id: 2d214c36-8429-4b2b-b1f5-fe2730581bba
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: 271e0f9fde0cbfb016e201c8390b26673d8fc696
 workflow-type: tm+mt
-source-wordcount: '917'
+source-wordcount: '875'
 ht-degree: 1%
 
 ---
 
-# Konfigurerar pipeline {#configuring-pipeline}
-
-
+# Konfigurera pipeline {#configuring-pipeline}
 
 Autentiseringsparametrar som kund-ID, privat nyckel och autentiseringsslutpunkt konfigureras i instanskonfigurationsfilerna.
+
 Listan med utlösare som ska bearbetas konfigureras i ett alternativ i JSON-format.
+
 Utlösarna används för att målinrikta via ett kampanjarbetsflöde som skickar e-post. Kampanjen är konfigurerad så att en kund som har båda utlösarhändelserna får ett e-postmeddelande.
 
 ## Förhandskrav {#prerequisites}
 
-Innan du startar konfigurationen bör du kontrollera att du använder:
+Kontrollera att du har:
 
-* Minst en av följande Adobe Campaign-byggen:
-   * 19.1.8.9039
-   * 19.1.4.9032 - Gold Standard 11
-   * 20.2.4.9187
-   * 20.3.1
-* Adobe Analytics Standard
-
-Du behöver också:
-
-* Adobe I/O projektautentisering
-* ett giltigt organisations-ID - Om du vill hitta ditt organisations-ID, se [den här sidan](https://experienceleague.adobe.com/docs/core-services/interface/administration/organizations.html?lang=sv){_blank}
-* en utvecklaråtkomst till din organisation
-* utlöser konfiguration som gjorts i Adobe Analytics
+* Ett Adobe Developer-projekt
+* Ett giltigt organisations-ID - För att hitta ditt organisations-ID, se [den här sidan](https://experienceleague.adobe.com/en/docs/core-services/interface/administration/organizations#concept_EA8AEE5B02CF46ACBDAD6A8508646255){_blank}
+* En utvecklaråtkomst till din organisation
+* En giltig utlösarkonfiguration i Adobe Analytics
 
 ## Autentiserings- och konfigurationsfiler {#authentication-configuration}
 
-Autentisering krävs eftersom pipeline lagras i Adobe Experience Cloud.
-Den använder ett par offentliga och privata nycklar. Den här processen har samma funktion som en användare/ett lösenord, men är säkrare.
-Autentisering stöds för Marketing Cloud via Adobe I/O Project.
+Autentisering krävs eftersom pipeline lagras i Adobe Experience Cloud. Den använder ett par offentliga och privata nycklar. Den här processen har samma funktion som en användare/ett lösenord, men är säkrare. Autentisering stöds för Marketing Cloud via Adobe Developer Project.
 
-## Steg 1: Skapa/uppdatera Adobe I/O-projekt {#creating-adobe-io-project}
+## Steg 1: Skapa/uppdatera ditt Adobe Developer-projekt {#creating-adobe-io-project}
 
-För kunder med värdtjänst kan du skapa en kundtjänstbiljett som gör att din organisation kan använda Adobe I/O Technical Account Tokens för integrering av utlösare.
+För kunder som har värdtjänster kan du samarbeta med din Adobe-representant/kundtjänst för att göra det möjligt för din organisation med Adobe Developer Kontotoken för integrering av utlösare.
 
-För On Premise-kunder, se [Konfigurera Adobe I/O för Adobe Experience Cloud Triggers](../../integrations/using/configuring-adobe-io.md) sida. Observera att du måste välja **[!UICONTROL Adobe Analytics]** när API lades till i Adobe I/O-autentiseringsuppgifterna.
+För lokala kunder/hybridkunder, se [Konfigurera Adobe I/O för Adobe Experience Cloud Triggers](../../integrations/using/configuring-adobe-io.md) sida. Observera att du måste välja **[!UICONTROL Adobe Analytics]** när API lades till i Adobe Developer-autentiseringsuppgifter.
 
-## Steg 2: Konfigurera pipelinealternativet NmsPipeline_Config {#configuring-nmspipeline}
+## Steg 2: Konfigurera alternativet för pipeline {#configuring-nmspipeline}
 
 När autentiseringen är klar hämtas händelserna. Det bearbetar bara utlösare som har konfigurerats i Adobe Campaign. Utlösaren måste ha genererats från Adobe Analytics och skickats till pipeline, som endast kommer att bearbeta utlösare som har konfigurerats i Adobe Campaign.
+
 Alternativet kan också konfigureras med ett jokertecken för att fånga upp alla utlösare oavsett namn.
 
 1. I Adobe Campaign finns alternativmenyn under **[!UICONTROL Administration]** > **[!UICONTROL Platform]**  > **[!UICONTROL Options]** i **[!UICONTROL Explorer]**.
@@ -63,7 +53,7 @@ Alternativet kan också konfigureras med ett jokertecken för att fånga upp all
 
 1. I **[!UICONTROL Value (long text)]** kan du klistra in följande JSON-kod som anger två utlösare. Du måste se till att ta bort kommentarer.
 
-   ```
+   ```json
    {
    "topics": [ // list of "topics" that the pipelined is listening to.
       {
@@ -85,7 +75,7 @@ Alternativet kan också konfigureras med ett jokertecken för att fånga upp all
 
 1. Du kan också välja att klistra in följande JSON-kod som fångar alla utlösare.
 
-   ```
+   ```json
    {
    "topics": [
      {
@@ -102,7 +92,7 @@ Alternativet kan också konfigureras med ett jokertecken för att fånga upp all
    }
    ```
 
-### Parametern Consumer {#consumer-parameter}
+### Ange parametern Consumer {#consumer-parameter}
 
 Rörledningen fungerar som en leverantör och en konsumentmodell. Meddelanden används endast för en enskild konsument: varje konsument får sin egen kopia av meddelandena.
 
@@ -114,18 +104,18 @@ Pipeline-tjänsten håller reda på meddelanden som hämtats av varje konsument.
 
 Om du vill konfigurera alternativet för pipeline bör du följa dessa rekommendationer:
 
-* Lägg till eller redigera utlösare under **[!UICONTROL Triggers]** ska du inte redigera resten.
-* Kontrollera att JSON är giltig. Du kan använda en JSON-validerare, se [webbplats](https://jsonlint.com/) till exempel.
-* &quot;name&quot; motsvarar utlösar-ID:t. Ett jokertecken &quot;*&quot; fångar upp alla utlösare.
-* &quot;Consumer&quot; motsvarar namnet på den anropande instansen eller det anropande programmet.
-* Pipelined har också stöd för ämnet&quot;alias&quot;.
-* Du bör alltid starta om pipelined när du har gjort ändringar.
+* Lägg till eller redigera utlösare under **[!UICONTROL Triggers]**.
+* Kontrollera att JSON är giltig.
+* The **Namn** motsvarar utlösar-ID:t. Ett jokertecken &quot;*&quot; fångar upp alla utlösare.
+* The **Konsument** parametern motsvarar namnet på den anropande instansen eller det anropande programmet.
+* den `pipelined`-processen har också stöd för ämnet&quot;alias&quot;.
+* Du bör alltid starta om `pipelined`när du har gjort ändringar.
 
 ## Steg 3: Valfri konfiguration {#step-optional}
 
-Du kan ändra vissa interna parametrar utifrån dina lastkrav, men se till att testa dem innan du sätter dem i produktion.
+Du kan ändra vissa interna parametrar utifrån dina lastkrav, men se till att testa dem innan du använder dem i produktionsmiljön.
 
-Listan med valfria parametrar finns nedan:
+Listan med valfria parametrar är:
 
 | Alternativ | Beskrivning |
 |:-:|:-:|
@@ -146,11 +136,11 @@ Listan med valfria parametrar finns nedan:
 
 ### Automatisk processstart i pipeline {#pipelined-process-autostart}
 
-Processen med rörlig orientering måste startas automatiskt.
+The `pipelined` processen måste startas automatiskt.
 
-För detta anger du elementet &lt; pipelined > i konfigurationsfilen som autostart=&quot;true&quot;:
+För detta anger du `<`rörlig`>` -element i config-filen till autostart=&quot;true&quot;:
 
-```
+```sql
  <pipelined autoStart="true" ... "/>
 ```
 
@@ -158,7 +148,7 @@ För detta anger du elementet &lt; pipelined > i konfigurationsfilen som autosta
 
 En omstart krävs för att ändringarna ska börja gälla:
 
-```
+```sql
 nlserver restart pipelined@instance
 ```
 
@@ -166,6 +156,6 @@ nlserver restart pipelined@instance
 
 Följ stegen nedan för att validera pipeline-konfigurationen för etablering:
 
-* Se till att [!DNL pipelined] processen körs.
-* Kontrollera om det finns anslutningsloggar för pipeline i filen pipelined.log.
+* Se till att `pipelined` processen körs.
+* Kontrollera `pipelined.log` för anslutningsloggar för pipeline.
 * Kontrollera anslutningen och om ping-filer tas emot. Värdkunder kan använda övervakning från klientkonsolen.
