@@ -7,9 +7,9 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: 85e2135d-a1a3-44f0-a4f9-de38db5c8726
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: 991ad88101468c3e7f5d676586dfdd05d63e7c6d
 workflow-type: tm+mt
-source-wordcount: '1996'
+source-wordcount: '2042'
 ht-degree: 0%
 
 ---
@@ -121,6 +121,10 @@ Det kostar inget att installera bygguppgraderingen för kunder som har värdtjä
 ## Kommer du att få åtkomst till instansen under uppgraderingsprocessen?
 
 Nej. Servern stängs av under en uppgradering för att säkerställa att dataintegriteten bevaras när produkten uppgraderas. När allt är klart startas det om och alla tjänster återupptas.
+
+## Kan jag fortfarande använda min Campaign-instans under uppgraderingsprocessen?
+
+Nej. Adobe rekommenderar att du inaktiverar alla åtgärder i kampanjen under underhållsperioden för att undvika att data saknas eller går förlorade. Du får inte skapa eller distribuera kampanjer, frågor, arbetsflöden eller leveranser under uppgraderingen.
 
 ## Kommer e-postmeddelandena att fortsätta att skickas från Message Center under uppgraderingsprocessen?
 
