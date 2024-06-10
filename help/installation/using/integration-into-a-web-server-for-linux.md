@@ -8,15 +8,14 @@ audience: installation
 content-type: reference
 topic-tags: installing-campaign-in-linux-
 exl-id: 4f8ea358-a38d-4137-9dea-f398e60c5f5d
-source-git-commit: 14ba450ebff9bba6a36c0df07d715b7279604222
+source-git-commit: 0e88ac270423ad419237264e562a03ab0c42efb5
 workflow-type: tm+mt
 source-wordcount: '565'
 ht-degree: 0%
 
 ---
 
-# Integrering med en webbserver för Linux{#integration-into-a-web-server-for-linux}
-
+# Integrering med en webbserver för Linux {#integration-into-a-web-server-for-linux}
 
 
 Adobe Campaign innehåller Apache Tomcat som fungerar som startpunkt i programservern via HTTP (och SOAP).
@@ -29,7 +28,7 @@ I detta fall:
 * Klientkonsolerna ansluter sedan med en URL som:
 
   ```
-  http://<computer>:8080
+  https://<computer>:8080
   ```
 
 Av säkerhets- och administrationsskäl rekommenderar vi dock att du använder en dedikerad webbserver som huvudstartpunkt för HTTP-trafik när datorn som kör Adobe Campaign exponeras på Internet och du vill öppna konsolen utanför nätverket.

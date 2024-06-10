@@ -6,10 +6,10 @@ feature: Release Notes
 role: User
 level: Beginner
 exl-id: b8c1f287-06f4-4c34-8cca-b0c7676abbc2
-source-git-commit: a94774daa4005fe95066b85f921d9baa981b2a7c
+source-git-commit: 0e88ac270423ad419237264e562a03ab0c42efb5
 workflow-type: tm+mt
-source-wordcount: '751'
-ht-degree: 98%
+source-wordcount: '856'
+ht-degree: 86%
 
 ---
 
@@ -33,7 +33,10 @@ Besök [den här sidan](../../rn/using/deprecated-features.md) för mer informat
 >
 >Den här matrisen uppdateras regelbundet med nya objekt som stöds och inaktuella objekt som tas bort.
 
-## Operativsystem{#OperatingSystems}
+## Operativsystem {#OperatingSystems}
+
+Om du är en lokal/hybrid-kund måste du installera Adobe Campaign i något av operativsystemen som listas nedan. Läs mer om installationsstegen för Campaign Classic v7 i [den här sidan](../../installation/using/application-server.md).
+
 
 <table> 
 <tbody> 
@@ -71,7 +74,9 @@ Besök [den här sidan](../../rn/using/deprecated-features.md) för mer informat
 >
 >Om du använder RHEL måste du kunna inaktivera SELinux eller låta dina utvecklare skriva anpassade SELinux-regler för att kontrollera att en aktiverad SELinux inte orsakar problem med åtgärder i Campaign.
 
-## Webbservrar{#WebServers}
+## Webbservrar {#WebServers}
+
+Om ni är en lokal/hybridkund måste ni, beroende på vilket operativsystem ni använder, integrera Campaign i någon av de webbservrar som listas nedan. Läs mer om konfigurationssteg för webbservrar i [den här sidan](../../installation/using/integration-into-a-web-server-for-windows.md) (för Windows) och [den här sidan](../../installation/using/integration-into-a-web-server-for-linux.md) (för Linux) .
 
 <table>
 <tbody>
@@ -90,7 +95,9 @@ Besök [den här sidan](../../rn/using/deprecated-features.md) för mer informat
 </tbody>
 </table>
 
-## Verktyg{#Tools}
+## Verktyg {#Tools}
+
+Om du är en lokal/hybrid-kund måste du installera och konfigurera de verktyg som listas nedan. [Läs mer](../../installation/using/application-server.md).
 
 <table>
 <tbody>
@@ -119,6 +126,9 @@ Besök [den här sidan](../../rn/using/deprecated-features.md) för mer informat
 </table>
 
 ## Relation Database Management Systems (RDBMS){#RDBMSservers}
+
+Om du är en lokal/hybrid-kund måste du installera och konfigurera en av de databaser som listas nedan. [Läs mer](../../installation/using/database.md).
+
 
 <table>
 <tbody>
@@ -158,7 +168,7 @@ Besök [den här sidan](../../rn/using/deprecated-features.md) för mer informat
 >
 >* RDBMS-drivrutinen måste matcha RDBMS-serverversionen.
 >
->* PostgreSQL är RDBMS för värdbaserade miljöer.
+>* PostgreSQL är RDBMS för miljöer med värdbaserade/hanterade Cloud Service.
 
 ## CRM-kopplingar{#CRMconnectors}
 
@@ -394,7 +404,7 @@ Följande webbläsare, i sin senaste versionen, är kompatibla med Campaign för
 
 
 
-## Mer som det här{#Morelikethis}
+## Mer som det här {#Morelikethis}
 
 * [Versionsinformation om Campaign Classic ](../../rn/using/latest-release.md)
 * [Allmän arkitektur i Campaign](../../installation/using/general-architecture.md)
