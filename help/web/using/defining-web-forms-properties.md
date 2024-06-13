@@ -5,9 +5,9 @@ description: Definiera egenskaper för webbformulär
 badge-v8: label="Gäller även för v8" type="Positive" tooltip="Gäller även Campaign v8"
 feature: Web Forms
 exl-id: 37aaaa03-0656-4a9b-bcae-74de33e3737b
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: 1d4990917fea54e67ed23cd0771295de03a4f01a
 workflow-type: tm+mt
-source-wordcount: '1220'
+source-wordcount: '1375'
 ht-degree: 1%
 
 ---
@@ -83,6 +83,32 @@ Teman sparas i **[!UICONTROL Administration>Configuration>Form rendering]** trä
 En exempelåtergivning visas i den nedre delen av egenskapsfönstret. The **[!UICONTROL Edit link]** Med -ikonen kan du visa konfigurationen för det valda temat.
 
 ![](assets/s_ncs_admin_survey_properties_render.png)
+
+## Logotyp i formuläret {#logo-in-the-form}
+
+Du kan ändra logotypen som används i formuläret med din egen logotyp.
+
+I **[!UICONTROL Rendering]** -fliken i **[!UICONTROL Properties]** Klicka på glasikonen för din mall i webbappen:
+
+![](assets/logo_glass.png)
+
+Klicka på **[!UICONTROL Page layout]** link:
+
+![](assets/logo_pagelayout.png)
+
+Du kan ändra sökvägen för logotypbilden här:
+
+![](assets/logo_path.png)
+
+De tillgängliga bilderna finns under **[!UICONTROL Administration]** > **[!UICONTROL Configuration]** > **[!UICONTROL Images]**. Du kan lägga till din logotyp här.
+
+Dessa bilder placeras i instansens bakomliggande katalog *datakit\nms\fra\img\activities* eller *datakit\nms\eng\img\activities* (ett eller flera, beroende på instansens språk).
+
+Om du vill ha en ny bild tillgänglig i den här katalogen (och i Bilder) kontaktar du Adobe support för att göra ändringar i backend-katalogerna.
+
+För lokala instanser kan du lägga till bilder i data själv.
+
+Den överförda bilden behöver inte vara synlig från Campaign-klienten. Den rätta sökvägen räcker för att använda som ny logotyp.
 
 ## Texter i formuläret {#texts-in-the-form}
 
