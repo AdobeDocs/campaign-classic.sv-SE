@@ -1,18 +1,19 @@
 ---
 product: campaign
-title: Campaign Classic 2023-versioner
-description: Läs mer om Campaign Classic 2023-utgåvor
+title: Campanj Classic 2023-versioner
+description: Läs mer om Campaign Classic 2023-versioner
 feature: Release Notes
 role: User
 level: Beginner
-source-git-commit: 8fec4d038eddaa3c5a2aade1b619f2543453d4de
-workflow-type: tm+mt
+exl-id: 8ed11e96-9f23-4e2e-bae2-25c51cfb549a
+source-git-commit: ac086604b17df96355563308c3dec3096b407542
+workflow-type: ht
 source-wordcount: '1973'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
-# 2023 års utgåvor{#release-2023}
+# 2023-versioner{#release-2023}
 
 
 ## Version 7.3.4 – build 9364 {#release-7-3-4}

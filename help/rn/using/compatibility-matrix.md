@@ -7,9 +7,9 @@ role: User
 level: Beginner
 exl-id: b8c1f287-06f4-4c34-8cca-b0c7676abbc2
 source-git-commit: 28302b40d4fa43b400a3e1b6dd3e133976a01418
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '856'
-ht-degree: 86%
+ht-degree: 100%
 
 ---
 
@@ -35,7 +35,7 @@ Besök [den här sidan](../../rn/using/deprecated-features.md) för mer informat
 
 ## Operativsystem {#OperatingSystems}
 
-Om du är en lokal/hybrid-kund måste du installera Adobe Campaign i något av operativsystemen som listas nedan. Läs mer om installationsstegen för Campaign Classic v7 i [den här sidan](../../installation/using/application-server.md).
+Om du är en lokal/hybrid-kund måste du installera Adobe Campaign i något av operativsystemen som listas nedan. Läs mer om installationsstegen för Campaign Classic v7 på [den här sidan](../../installation/using/application-server.md).
 
 
 <table> 
@@ -76,7 +76,7 @@ Om du är en lokal/hybrid-kund måste du installera Adobe Campaign i något av o
 
 ## Webbservrar {#WebServers}
 
-Om ni är en lokal/hybridkund måste ni, beroende på vilket operativsystem ni använder, integrera Campaign i någon av de webbservrar som listas nedan. Läs mer om konfigurationssteg för webbservrar i [den här sidan](../../installation/using/integration-into-a-web-server-for-windows.md) (för Windows) och [den här sidan](../../installation/using/integration-into-a-web-server-for-linux.md) (för Linux) .
+Som lokal kund/hybridkund måste du, beroende på ditt operativsystem, integrera Campaign i en av de webbservrar som anges nedan. Mer information om konfigurationssteg för webbservrar finns på [den här sidan](../../installation/using/integration-into-a-web-server-for-windows.md) (för Windows) och [den här sidan](../../installation/using/integration-into-a-web-server-for-linux.md) (för Linux).
 
 <table>
 <tbody>
@@ -97,7 +97,7 @@ Om ni är en lokal/hybridkund måste ni, beroende på vilket operativsystem ni a
 
 ## Verktyg {#Tools}
 
-Om du är en lokal/hybrid-kund måste du installera och konfigurera de verktyg som listas nedan. [Läs mer](../../installation/using/application-server.md).
+Som lokal kund/hybridkund måste du installera och konfigurera de verktyg som anges nedan. [Läs mer](../../installation/using/application-server.md).
 
 <table>
 <tbody>
@@ -107,7 +107,7 @@ Om du är en lokal/hybrid-kund måste du installera och konfigurera de verktyg s
 <p>11</p>
 <p>9</p>
 <p>8</p>
-<p>Läs mer om JDK och Campaign i <a href="https://experienceleague.adobe.com/en/docs/campaign-classic/using/installing-campaign-classic/install-campaign-on-prem/deployment-guidelines/application-server#java-development-kit---jdk" target="_blank">den här sidan</a>.</p>
+<p>Läs mer om JDK och Campaign på <a href="https://experienceleague.adobe.com/sv/docs/campaign-classic/using/installing-campaign-classic/install-campaign-on-prem/deployment-guidelines/application-server#java-development-kit---jdk" target="_blank">den här sidan</a>.</p>
 </td>
 </tr>
 <tr>
@@ -127,7 +127,7 @@ Om du är en lokal/hybrid-kund måste du installera och konfigurera de verktyg s
 
 ## Relation Database Management Systems (RDBMS){#RDBMSservers}
 
-Om du är en lokal/hybrid-kund måste du installera och konfigurera en av de databaser som listas nedan. [Läs mer](../../installation/using/creating-and-configuring-the-database.md).
+Om du är en lokal kund/hybridkund måste du installera och konfigurera en av de databaser som listas nedan. [Läs mer](../../installation/using/creating-and-configuring-the-database.md).
 
 
 <table>
@@ -168,7 +168,7 @@ Om du är en lokal/hybrid-kund måste du installera och konfigurera en av de dat
 >
 >* RDBMS-drivrutinen måste matcha RDBMS-serverversionen.
 >
->* PostgreSQL är RDBMS för miljöer med värdbaserade/hanterade Cloud Service.
+>* PostgreSQL är RDBMS för värd/hanterade molntjänstmiljöer.
 
 ## CRM-kopplingar{#CRMconnectors}
 
