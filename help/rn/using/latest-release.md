@@ -6,42 +6,52 @@ feature: Release Notes
 role: User
 level: Beginner
 exl-id: d65869ca-a785-4327-8e8d-791c28e4696c
-source-git-commit: 8fec4d038eddaa3c5a2aade1b619f2543453d4de
-workflow-type: ht
-source-wordcount: '352'
-ht-degree: 100%
+source-git-commit: d31aa28da06e65664da655b6b082563767b35f7a
+workflow-type: tm+mt
+source-wordcount: '357'
+ht-degree: 19%
 
 ---
 
-# Senaste versionen{#latest-release}
+# Senaste versionen {#latest-release}
 
 Den här sidan listar nya funktioner, förbättringar och korrigeringar som kommer med den **senaste versionen av Campaign Classic v7**. Varje ny version kommer med en status som visas med en färg. Läs mer om versionsstatusen för Campaign Classic v7 på [den här sidan](rn-overview.md).
 
-## Version 7.3.5 – build 9368 {#release-7-3-5}
+## Version 7.4.1 – build 9383 {#release-7-4-1}
 
 [!BADGE Allmän tillgänglighet]{type=Positive url="https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/rn-overview.html?lang=sv#rn-statuses" tooltip="Allmän tillgänglighet"}
 
+_18 juni 2024_
 
-_5 december 2023_
+### Ändringar och förbättringar {#release-7-4-1-changes}
+
+* Eftersom JWT-autentiseringsuppgifterna (Service Account) har tagits bort av Adobe är Campaign-integreringar med Adobe-lösningar och appar nu beroende av autentiseringsuppgifter för OAuth Server-till-Server. Om du har implementerat utgående integreringar, som integrering med Campaign-Analytics eller integrering med Experience Cloud-utlösare, måste du uppgradera din Campaign-miljö till v7.4.1 och migrera ditt tekniska konto till Auto före den 27 januari 2025. [Läs mer](../../integrations/using/oauth-technical-account.md)
+
+* När du har [migrerade era era tekniska kampanjoperatörer till Developer Console](../../technotes/using/ims-migration.md) och [har överförts till IMS för autentisering av slutanvändare](../../technotes/using/migrate-users-to-ims.md)kan du nu aktivera användargränssnittet och API-begränsningarna för att ta bort alternativ och funktioner som är specifika för inbyggd autentisering. [Läs mer](../../technotes/using/impact-ims-migration.md)
 
 
-### Säkerhetsförbättringar {#release-7-3-5-security}
+
+### Kompatibilitetsuppdateringar {#release-7-4-1-compat}
+
+The [kompatibilitetsmatris för Adobe Campaign](compatibility-matrix.md) har uppdaterats med de ändringar som kommer i den nya versionen och som anges nedan.
+
+* Adobe Campaign är nu kompatibelt med **Microsoft Server 2022** och **RHEL 9** som operativsystem.
+
+* Adobe Campaign är nu kompatibelt med **Microsoft SQL Server 2022** och **Oracle 23c** som hanteringssystem för relationsdatabaser och i FDA (Federated Data Access).
+
+* Adobe Campaign kräver nu minst Java Development Kit (JDK) 11. I Windows måste JRE vara tillgängligt enligt beskrivningen i [det här avsnittet](../../installation/using/application-server.md#jdk).
+
+* Kampanjens (Neolane) SDK för mobilprogram är nu föråldrat. Nu måste du gå över till Adobe Experience Platform SDK. [Läs mer](deprecated-features.md).
+
+  Under tiden har Campaign v7.4 följande för att säkerställa kontinuitet:
+
+   * en ny Campaign SDK 1.0.27 för iOS som är kompatibel med iOS 16 och 17 samt den senaste [Krav för Apple iOS sekretesspolicy](https://developer.apple.com/news/?id=r1henawx){target="_blank"}.
+   * en ny Campaign SDK för Android 14.
 
 
-* Med Campaign Classic v7.3.5 har autentiseringsprocessen förbättrats och säkrats. Tekniska operatörer bör nu använda Adobe Identity Management System (IMS) för att ansluta till Campaign. Lär dig hur du migrerar dina befintliga tekniska konton i [det här tekniska dokumentet](../../technotes/using/ims-migration.md).
+### Korrigeringar {#release-7-4-1-patches}
 
-* Dessutom, som en del av arbetet med att förstärka säkerheten och autentiseringsprocessen, rekommenderar Adobe Campaign starkt att du migrerar slutanvändarautentiseringsläget från den inbyggda inloggnings-/lösenordsautentiseringen till Adobe Identity Management System (IMS). Läs om hur du migrerar dina operatörer i [det här tekniska dokumentet](../../technotes/using/migrate-users-to-ims.md).
+Den här versionen innehåller följande korrigeringar:
 
-* När ett webbformulär har statusen **Väntande publikation** blir den inte automatiskt aktiv. För att förhindra säkerhetsproblem måste den publiceras innan den kommer **Online** och kan nås via webbformulärets URL i en webbläsare. [Läs mer](../../web/using/publishing-a-web-form.md#life-cycle-of-a-form)
-
-### Korrigeringar {#release-7-3-5-patches}
-
-* Korrigerade ett problem när data från en Google Big Query-databas användes och data uppdaterades i en Oracle-databas: alla nycklar var inställda på `0` i arbetsflödets temporära tabell. (NEO-65091)
-* Korrigerade ett problem som medförde att en arbetsflödeskörning misslyckades när två frågor i en Google Big Query-databas kombinerades i en arbetsflödesaktivitet med **sammanslutning**. (NEO-63705)
-* Korrigerade ett problem som begärde att användaren skulle autentisera sig igen när användaren klickade på knappen `Back` i en Campaign-rapport. (NEO-65087)
-* Korrigerade ett fel i arbetsflödet för databasrensning som inträffade när en leverans togs bort före leveransen. (NEO-48114)
-* Korrigerade ett problem vid anslutning till klientkonsolen: senaste uppdateringar av TLS-verifiering ledde till anslutningsfel. (NEO-50488)
-* Korrigerade ett problem med HTTP-proxyautentiseringen efter det att Campaign-efteruppgraderingen till 7.3.1. HTTP-begäranden i Campaign-arbetsflöden misslyckades med `error 407 – proxy auth required is returned`. (NEO-49624)
-* Korrigerade ett tillfälligt fel med GPG-dekryptering i arbetsflödesaktiviteter med **skript**. Det associerade felmeddelandet var: `gpg: decryption failed: No secret key`. (NEO-50257)
-  <!--* Workflow temporary tables now have a primary index in Teradata with a Federated Data Access (FDA) connection. (NEO-62575)-->
+NEO-74754, NEO-73174, NEO-72504, NEO-71534, NEO-71473, NEO-70195, NEO-6963, NEO-696 51, NEO-67620, NEO-67235, NEO-66797, NEO-64680, NEO-63706, NEO-63657, NEO-62964, NEO-66 2575, NEO-58734, NEO-40531, NEO-36189, NEO-29592
 
