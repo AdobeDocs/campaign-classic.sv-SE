@@ -6,10 +6,10 @@ feature: Release Notes
 role: User
 level: Beginner
 exl-id: 07c1f4a3-cf16-4a9b-b402-e13258799f91
-source-git-commit: c736ac1cda9490548f1e4b56142d61fccaca5c4a
-workflow-type: ht
-source-wordcount: '3764'
-ht-degree: 100%
+source-git-commit: 98859f6452b5f1008a19a48b9b77edd9acf49261
+workflow-type: tm+mt
+source-wordcount: '3746'
+ht-degree: 99%
 
 ---
 
@@ -20,6 +20,10 @@ Den här sidan visar alla nya funktioner och dokumentationsuppdateringar efter m
 Se [Versionsinformationen för Adobe Campaign Classic](../../rn/using/latest-release.md) beträffande versionsrelaterade uppdateringar.
 
 ## 2024
+
+### Juni 2024 {#june-2024}
+
+En anteckning har lagts till för att ange hur instansvariabler ska rensas när arbetsflöden startas om. [Läs mer](../../workflow/using/starting-a-workflow.md)
 
 ### April 2024 {#apr-2024}
 
@@ -78,7 +82,7 @@ Migreringshandboken har uppdaterats. Referenser till Adobe Campaign-versioner so
 
 ## Juli 2022 {#july-2022}
 
-Övergången till den nya levererbarhetsservern beskrivs i ett nytt tekniskt dokument. [Läs mer](../../technotes/using/deliverability-server.md)
+<!--Transition to the new deliverability server is detailed in a new technote. [Read more](../../technotes/using/deliverability-server.md)-->
 
 **Dokumentationsuppdateringar för version 7.3.1**
 
@@ -151,11 +155,9 @@ Lade till en begränsning för inkommande SMS (MO). [Läs mer](../../delivery/us
 
 Uppdaterade logguppgifterna om migreringsprocessen för CRM-anslutningsdistribution. [Läs mer](../../migration/using/testing-the-migration.md#verification-process)
 
-Lade till krav om IMS-behörigheter för att implementera integrering mellan Adobe Campaign och Adobe Analytics. [Läs mer](../../platform/using/adobe-analytics-provisioning.md)
+Lade till krav om IMS-behörigheter för att implementera integrering mellan Adobe Campaign och Adobe Analytics. [Läs mer](../../integrations/using/adobe-analytics-provisioning.md)
 
 Uppdaterade datumet för slutet på livscykeln för Adobe Analytics Data Connector från den 1 mars 2022 till den 17 augusti 2022. [Läs mer](deprecated-features.md)
-
-Lade till en länk till den mobila SDK-dokumentationen för Adobe Experience Platform för att förklara hur du konfigurerar Campaign-tillägget i Adobe Launch. [Läs mer](../../delivery/using/integrating-campaign-sdk-into-the-mobile-application.md)
 
 Lade till ett avsnitt om hur du använder JavaScript för att beräkna värden, utbyta data och utföra specifika åtgärder med SOAP-anrop.[Läs mer](../../workflow/using/javascript-scripts-and-templates.md)
 
@@ -346,7 +348,7 @@ Sidan Inaktuella och borttagna funktioner har uppdaterats. [Läs mer](../../rn/u
 Versionsinformation och kompatibilitetsmatris för [!DNL Gold Standard]-versionen finns nu tillgängliga på en dedikerad sida.
 [Läs mer](../../rn/using/gold-standard.md).
 
-Integrering av utlösare som ursprungligen baserades på oAUTH-autentiseringsinställningar för åtkomst till pipelines har nu ändrats och flyttats till Adobe I/O. [Läs mer](../../integrations/using/configuring-adobe-io.md)
+Integrering av utlösare som ursprungligen baserades på oAUTH-autentiseringsinställningar för åtkomst till pipelines har nu ändrats och flyttats till Adobe I/O. [Läs mer](../../integrations/using/about-triggers.md#implement)
 
 **Andra uppdateringar**
 

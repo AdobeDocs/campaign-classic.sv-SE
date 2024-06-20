@@ -6,14 +6,46 @@ feature: Release Notes
 role: User
 level: Beginner
 exl-id: 8ed11e96-9f23-4e2e-bae2-25c51cfb549a
-source-git-commit: ac086604b17df96355563308c3dec3096b407542
-workflow-type: ht
-source-wordcount: '1973'
-ht-degree: 100%
+source-git-commit: f39dc6077a7ddc3fb9b53d4082c08e65e7683f10
+workflow-type: tm+mt
+source-wordcount: '2337'
+ht-degree: 97%
 
 ---
 
 # 2023-versioner{#release-2023}
+
+## Version 7.3.5 – build 9368 {#release-7-3-5}
+
+[!BADGE Begränsad tillgänglighet]{type=Neutral url="https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/rn-overview.html?lang=sv#rn-statuses" tooltip="Begränsad tillgänglighet"}
+
+_5 december 2023_
+
+### Säkerhetsförbättringar {#release-7-3-5-security}
+
+
+* Med Campaign Classic v7.3.5 har autentiseringsprocessen förbättrats och säkrats. Tekniska operatörer bör nu använda Adobe Identity Management System (IMS) för att ansluta till Campaign. Lär dig hur du migrerar dina befintliga tekniska konton i [det här tekniska dokumentet](../../technotes/using/ims-migration.md).
+
+* Dessutom, som en del av arbetet med att förstärka säkerheten och autentiseringsprocessen, rekommenderar Adobe Campaign starkt att du migrerar slutanvändarautentiseringsläget från den inbyggda inloggnings-/lösenordsautentiseringen till Adobe Identity Management System (IMS). Läs om hur du migrerar dina operatörer i [det här tekniska dokumentet](../../technotes/using/migrate-users-to-ims.md).
+
+* När ett webbformulär har statusen **Väntande publikation** blir den inte automatiskt aktiv. För att förhindra säkerhetsproblem måste den publiceras innan den kommer **Online** och kan nås via webbformulärets URL i en webbläsare. [Läs mer](../../web/using/publishing-a-web-form.md#life-cycle-of-a-form)
+
+### Andra förbättringar {#release-7-3-5-other}
+
+Från och med den här versionen kommer spårning av länkar i e-postmeddelanden som redan har skickats fortfarande att fungera under uppgraderingen. [Läs mer](../../platform/using/faq-build-upgrade.md)
+
+### Korrigeringar {#release-7-3-5-patches}
+
+* Korrigerade ett problem när data från en Google Big Query-databas användes och data uppdaterades i en Oracle-databas: alla nycklar var inställda på `0` i arbetsflödets temporära tabell. (NEO-65091)
+* Korrigerade ett problem som medförde att en arbetsflödeskörning misslyckades när två frågor i en Google Big Query-databas kombinerades i en arbetsflödesaktivitet med **sammanslutning**. (NEO-63705)
+* Korrigerade ett problem som begärde att användaren skulle autentisera sig igen när användaren klickade på knappen `Back` i en Campaign-rapport. (NEO-65087)
+* Korrigerade ett fel i arbetsflödet för databasrensning som inträffade när en leverans togs bort före leveransen. (NEO-48114)
+* Korrigerade ett problem vid anslutning till klientkonsolen: senaste uppdateringar av TLS-verifiering ledde till anslutningsfel. (NEO-50488)
+* Korrigerade ett problem med HTTP-proxyautentiseringen efter det att Campaign-efteruppgraderingen till 7.3.1. HTTP-begäranden i Campaign-arbetsflöden misslyckades med `error 407 – proxy auth required is returned`. (NEO-49624)
+* Korrigerade ett tillfälligt fel med GPG-dekryptering i arbetsflödesaktiviteter med **skript**. Det associerade felmeddelandet var: `gpg: decryption failed: No secret key`. (NEO-50257)
+  <!--* Workflow temporary tables now have a primary index in Teradata with a Federated Data Access (FDA) connection. (NEO-62575)-->
+
+
 
 
 ## Version 7.3.4 – build 9364 {#release-7-3-4}
@@ -103,12 +135,12 @@ _20 mars 2023_
 * För att optimera säkerheten har Tomcat uppdaterats från version 8.5.81 till 8.5.85. (NEO-56936)
 
 
-
 ### Förbättringar {#release-7-3-3-improvements}
 
 * Arbetsflödet för fakturering har förbättrats för att optimera prestanda. (NEO-47658)
 * Arbetsflödet för spårning har förbättrats för att optimera prestanda om leveransstorleken är hög. (NEO-45064)
 * Spårningshanteraren har förbättrats för att åtgärda eventuella problem med dynamiska parametrar i URL:er. Spårningshanteraren v3 hanterar nu URL:er av typen ajax (med parametrar efter ”#”) och förhindrar att verktyg från tredje part ändrar spårnings-URL:er. Om du vill tillämpa den här ändringen måste du kontakta Adobe. (NEO-46535)
+* Från och med den här versionen kommer spårning av länkar i e-postmeddelanden som redan har skickats fortfarande att fungera under uppgraderingen. [Läs mer](../../platform/using/faq-build-upgrade.md)
 
 <!--To apply this change, the marketing, tracking and mid servers need to be updated to 7.3.3. To enable the new tracking management mode, set the `emailLinksVersion` parameter to '3' in the configuration file of the marketing server. (NEO-46535)-->
 
@@ -150,6 +182,8 @@ Läs mer i [kompatibilitetsmatrisen för Campaign](../../rn/using/compatibility-
 * Google BigQuery-anslutningen har nu fullständigt stöd för booleska fält. (NEO-49181)
 * Nu kan du konfigurera giltighetsperioden för IMS-cookies i avsnittet `Configuration for the redirection service` i filen serverConf.xml. Detta gäller följande cookies: `uuid230`, `nllastdelid` och `AMCV_` (NEO-42541)
 * IP-adressen kan nu döljas i begäran /r/test genom att ange `showSourceIP` som felaktig i omdirigeringsnoden för filen serverConf.xml. [Läs mer](../../installation/using/the-server-configuration-file.md#redirection-redirection)(NEO-46656)
+* Från och med den här versionen kommer spårning av länkar i e-postmeddelanden som redan har skickats fortfarande att fungera under uppgraderingen. [Läs mer](../../platform/using/faq-build-upgrade.md)
+
 
 ### Inaktuella funktioner  {#release-7-3-2-deprecated}
 

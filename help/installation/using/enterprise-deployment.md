@@ -7,7 +7,7 @@ audience: installation
 content-type: reference
 topic-tags: deployment-types-
 exl-id: 38c14010-203a-47ab-b23d-6f431dab9a88
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: 1be1528d657537786c430ea9c8bdb3aad58ba20d
 workflow-type: tm+mt
 source-wordcount: '1218'
 ht-degree: 3%
@@ -70,7 +70,7 @@ Högre kostnader för maskinvara och administration.
 >  
 >Om programservrarna pekar på en enda databasinstans läses schemat inte in på den andra instansen efter att schemat ändrats för en instans.
 >
->Om du vill återställa dessa problem måste du starta om web@default i den andra instansen där ett fel uppstod.
+>Om du vill återställa dessa problem måste du starta om web@default på den andra instansen där ett fel uppstod.
 
 ### Installera och konfigurera programservern 1 {#installing-and-configuring-the-application-server-1}
 
@@ -89,7 +89,7 @@ Stegen för installation av den första servern är:
 
 1. När Adobe Campaign-servern är installerad startar du programservern (webben) med kommandot **nlserver web -tomcat** (Med webbmodulen kan du starta Tomcat i fristående läge för webbserver som lyssnar på port 8080) och se till att Tomcat startar korrekt:
 
-   ```
+   ```sql
    12:08:18 >   Application server for Adobe Campaign Classic (7.X YY.R build XXX@SHA1) of DD/MM/YYYY
    12:08:18 >   Starting Web server module (pid=28505, tid=-1225184768)...
    12:08:18 >   Tomcat started
@@ -136,7 +136,7 @@ Stegen för installation av den första servern är:
 
 1. Redigera **config-demo.xml** filen (skapad med föregående kommando och placerad intill **config-default.xml** -fil), kontrollera att **mta** (leverans), **wfserver** (arbetsflöde), **inMail** (återbundna mejl) och **stat** (statistik) processer aktiveras och sedan konfigureras adressen för **app** statistikserver:
 
-   ```
+   ```xml
    <?xml version='1.0'?>
    <serverconf>  
      <shared>    
@@ -156,7 +156,7 @@ Stegen för installation av den första servern är:
 
 1. Redigera **serverConf.xml** och ange leveransdomänen och ange sedan IP-adresserna (eller värdadresserna) för de DNS-servrar som används av MTA-modulen för att svara på DNS-frågor av MX-typ.
 
-   ```
+   ```xml
    <dnsConfig localDomain="campaign.com" nameServers="192.0.0.1, 192.0.0.2"/>
    ```
 
@@ -175,7 +175,7 @@ Stegen för installation av den första servern är:
    >Från och med 20.1 rekommenderar vi att du använder följande kommando i stället (för Linux): **systemctl start nlserver**
 
 
-   ```
+   ```sql
    12:09:54 >   Application server for Adobe Campaign Classic (7.X YY.R build XXX@SHA1) of DD/MM/YYYY
    syslogd@default (7611) - 9.2 MB
    stat@demo (5988) - 1.5 MB
@@ -214,7 +214,7 @@ Använd följande steg:
 
 1. Redigera **config-demo.xml** filen (skapad med föregående kommando och placerad intill **config-default.xml** -fil), kontrollera att **mta** (leverans), **wfserver** (arbetsflöde), **inMail** (återbundna mejl) och **stat** (statistik) processer aktiveras och sedan konfigureras adressen för **app** statistikserver:
 
-   ```
+   ```xml
    <?xml version='1.0'?>
    <serverconf>  
      <shared>    
@@ -234,7 +234,7 @@ Använd följande steg:
 
 1. Redigera **serverConf.xml** och fylla i DNS-konfigurationen för MTA-modulen:
 
-   ```
+   ```xml
    <dnsConfig localDomain="campaign.com" nameServers="192.0.0.1, 192.0.0.2"/>
    ```
 
@@ -266,7 +266,7 @@ Stegen är följande:
 1. Kopiera **config-demo.xml** och **serverConf.xml** filer som skapas under installationen. I **config-demo.xml** -fil, aktivera **trackinglogd** bearbeta och inaktivera **mta**, **inmail**, **wfserver** och **stat** -processer.
 1. Redigera **serverConf.xml** och fylla i de redundanta spårningsservrarna i parametrarna för omdirigeringen:
 
-   ```
+   ```xml
    <spareServer enabledIf="$(hostname)!='front_srv1'" id="1" url="https://front_srv1:8080"/>
    <spareServer enabledIf="$(hostname)!='front_srv2'" id="2" url="https://front_srv2:8080"/>
    ```
@@ -275,13 +275,13 @@ Stegen är följande:
 
    Webbläsaren bör visa följande meddelanden (beroende på vilken URL som omdirigeras av belastningsutjämnaren):
 
-   ```
+   ```xml
    <redir status="OK" date="AAAA/MM/JJ HH:MM:SS" build="XXXX" host="tracking.campaign.net" localHost="front_srv1"/>
    ```
 
    eller
 
-   ```
+   ```xml
    <redir status="OK" date="AAAA/MM/JJ HH:MM:SS" build="XXXX" host="tracking.campaign.net" localHost="front_srv2"/>
    ```
 

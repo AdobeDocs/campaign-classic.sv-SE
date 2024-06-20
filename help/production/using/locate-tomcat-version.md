@@ -8,16 +8,14 @@ audience: production
 content-type: reference
 topic-tags: troubleshooting
 exl-id: 76411b29-d300-4aaa-8d3b-d8ff74c3ce93
-source-git-commit: 14ba450ebff9bba6a36c0df07d715b7279604222
+source-git-commit: 757e3a5395f24e0bdd04737aba0458881e4ea780
 workflow-type: tm+mt
-source-wordcount: '497'
+source-wordcount: '505'
 ht-degree: 0%
 
 ---
 
 # Sök efter Tomcat-version{#locate-tomcat-version}
-
-
 
 Adobe Campaign använder **inbäddad webbserver som heter Apache Tomcat** för att bearbeta HTTP/HTTPS-begäranden mellan programmet och ett externt gränssnitt (inklusive klientkonsolen, spårade URL-länkar, SOAP-anrop med flera). Det finns ofta en extern webbserver (vanligtvis IIS eller Apache) framför detta för alla externa Adobe Campaign-instanser.
 
@@ -31,6 +29,12 @@ Tomcat som används i Adobe Campaign är en skräddarsydd inbäddad version som 
 
 Nya eller uppgraderade versioner av de inbäddade versionerna av Tomcat släpps endast med nya versioner av Adobe Campaign, inte som separata korrigeringsfiler utanför Adobe Campaign.
 
+>[!AVAILABILITY]
+>
+>
+> Med början från Campaign v7.4.1 är Tomcat 10.1 standardversionen.
+>
+
 ## Hitta versionen av inbäddad Tomcat
 
 Följ stegen nedan för att hitta versionen av inbäddad Tomcat i en instans av Adobe Campaign.
@@ -39,7 +43,7 @@ Följ stegen nedan för att hitta versionen av inbäddad Tomcat i en instans av 
 >
 >Du måste ha tillgång till de filer på Adobe Campaign-servern som du behöver kontrollera. Den procedur som beskrivs nedan gäller endast för **lokala värdmodeller**.
 
-1. Navigera till *\tomcat-7\lib* undermapp i installationsmappen för Adobe Campaign (till exempel *C:\Program filer\ [Installation_folder]* i Windows, eller */usr/local/neolane/nl6* i Linux).
+1. Navigera till *\tomcat-11\lib* undermapp i installationsmappen för Adobe Campaign (till exempel *C:\Program filer\ [Installation_folder]* i Windows, eller */usr/local/neolane/nl6* i Linux).
 
 1. Kopiera filen *catalina.jar* till en extern tillfällig mapp (till exempel skrivbordet) och ändra namnet på tillägget från .jar till .zip.
 
@@ -49,11 +53,11 @@ Följ stegen nedan för att hitta versionen av inbäddad Tomcat i en instans av 
 
 1. När du är klar tar du bort de temporära filerna som du skapade om de finns på en serverdator.
 
-Som ett exempel *ServerInfo.properties* filen för Adobe Campaign kommer att innehålla följande information, som anger Tomcat v8.5.X:
+Som ett exempel *ServerInfo.properties* filen för Adobe Campaign innehåller följande information, som anger Tomcat v11.X:
 
-*`server.info=Apache Tomcat/8.5.X`*
+*`server.info=Apache Tomcat/11.X`*
 
-*`server.number=8.5.X.Y`*
+*`server.number=A.B.X.Y`*
 
 *`server.built=MM DD YYY HH:MM:SS`*
 

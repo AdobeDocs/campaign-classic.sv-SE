@@ -2,9 +2,9 @@
 title: Migrera kampanjoperatorer till Adobe Identity Management System (IMS)
 description: Lär dig hur du migrerar kampanjoperatorer till Adobe Identity Management System (IMS)
 exl-id: f01948c7-b523-492d-a4e8-67f4adde5fc5
-source-git-commit: c8cd1ef5e79e14c3ce804c32be0e995408d9358c
+source-git-commit: 89255032afb61801d6e38d2b1acfcfc2e7fdb620
 workflow-type: tm+mt
-source-wordcount: '1279'
+source-wordcount: '1127'
 ht-degree: 1%
 
 ---
@@ -13,9 +13,9 @@ ht-degree: 1%
 
 Som en del i arbetet med att stärka säkerhets- och autentiseringsprocessen rekommenderar Adobe Campaign att man migrerar slutanvändarens autentiseringsläge från den inbyggda autentiseringen av inloggnings-/lösenordsinformationen till Adobe Identity Management System (IMS). Alla operatorer ska implementera [Adobe Identity Management System (IMS)](https://helpx.adobe.com/enterprise/using/identity.html){target="_blank"} för att ansluta till Campaign.
 
-Observera att det inte är tillåtet att ansluta till användare/lösenord (dvs. inbyggd autentisering) i Campaign v8. **Adobe rekommenderar att du utför den här migreringen i Campaign v7.3.5 för att smidigt kunna migrera till Campaign v8.**
+Läs mer om migreringen i [den här sidan](ac-ims.md).
 
-## Vad har ändrats?{#move-to-ims-changes}
+## Vad har ändrats? {#move-to-ims-changes}
 
 Med Campaign Classic kan alla vanliga användare redan ansluta till Adobe Campaign klientkonsol via Adobe ID via Adobe Identity Management System (IMS). Det finns dock fortfarande användar-/lösenordsanslutningar. Detta är inte längre tillåtet med Campaign v8.
 
@@ -33,27 +33,20 @@ Om operatörer i organisationen ansluter till Campaign-klientkonsolen med hjälp
 
 Migrering till [Adobe Identity Management System (IMS)](https://helpx.adobe.com/enterprise/using/identity.html){target="_blank"} är en säkerhetsnödvändighet för att göra dina miljöer säkra och standardiserade, eftersom de flesta andra Adobe Experience Cloud-lösningar och program redan finns på IMS.
 
+Den här ändringen gäller från och med Campaign Classic v7.4.1 (och senaste [IMS-migreringskompatibla versioner](ac-ims.md#ims-versions)) och är **obligatoriskt** för att gå över till Adobe Campaign v8.
+
+
 ## Hur migrerar värdmiljöer och Managed Services-miljöer? {#ims-migration-procedure}
 
 ### Förhandskrav {#ims-migration-prerequisites}
 
 Innan du startar migreringsprocessen måste du kontakta din Adobe Transition Manager (för Managed Services-kunder) eller Adobe kundtjänst (för andra värdkunder) så att Adobe tekniska team kan migrera dina befintliga Operator-grupper och namngivna rättigheter till Adobe Identity Management System (IMS).
 
-### IMS-migreringskompatibla versioner {#ims-versions}
-
-En förutsättning för migreringen är att du uppgraderar miljön till någon av följande produktversioner:
-
-* Campaign v7.3.5 (rekommenderas)
-* Campaign v7.3.3.IMS
-* Campaign v7.3.2.IMS
-
-De här kampanjversionerna finns i [Versionsinformation](../../rn/using/latest-release.md).
-
 ### Viktiga steg {#ims-migration-steps}
 
 Viktiga steg för migreringen visas nedan:
 
-1. Adobe uppgraderar dina miljöer till Campaign v7.3.5 (eller en [IMS-migreringskompatibel version](#ims-versions)).
+1. Adobe uppgraderar dina miljöer till Campaign v7.4.1 (eller en [IMS-migreringskompatibel version](ac-ims.md#ims-versions)).
 1. Efter uppgraderingen kan du fortfarande skapa nya användare med båda metoderna, som systemspecifik användare eller med IMS.
 1. Din interna Campaign-administratör måste lägga till unika e-postmeddelanden till alla inbyggda användare på Campaign-klientkonsolen och bekräfta för din Adobe-representant/kundtjänst när detta är klart.  Det här steget beskrivs i [det här avsnittet](#ims-migration-id).
 1. Samarbeta med er Adobe-representant/kundtjänst för att säkra ett datum då Adobe kan genomföra automatiserad migrering för icke-tekniska användare (operatörer) och produktprofiler. Det här steget kräver ett timmars fönster utan driftstopp för någon av dina tjänster.
@@ -68,7 +61,7 @@ När migreringen är klar bekräftar du till din Adobe Transition Manager (för 
 
 Viktiga steg för migreringen visas nedan:
 
-1. Uppgradera dina miljöer till Campaign v7.3.5 (eller en [IMS-migreringskompatibel version](#ims-versions)).
+1. Uppgradera dina miljöer till Campaign v7.4.1 (eller en [IMS-migreringskompatibel version](#ims-versions)).
 1. Efter uppgraderingen kan du fortfarande skapa nya användare med båda metoderna, som systemspecifik användare eller med IMS.
 1. Din interna Campaign-administratör måste konfigurera Adobe IMS enligt anvisningarna i [det här avsnittet](../../integrations/using/configuring-ims.md).
 1. Lägg sedan till unika e-postmeddelanden till alla inbyggda användare på Campaign-klientkonsolen. Det här steget beskrivs i [det här avsnittet](#ims-migration-id).
@@ -79,26 +72,12 @@ Viktiga steg för migreringen visas nedan:
 Du kan också migrera tekniska operatorer till Adobe Developer Console enligt informationen i [den här teknologin](ims-migration.md).
 
 
-
 ## Vanliga frågor och svar {#ims-migration-faq}
-
-### När kan jag starta migreringen? {#ims-migration-start}
-
-En rekommendation för migrering till [Adobe Identity Management System (IMS)](https://helpx.adobe.com/enterprise/using/identity.html){target="_blank"} är att uppgradera till Campaign Classic v7.3.5 (eller en [IMS-migreringskompatibel version](#ims-versions)).
-
-Du kan starta IMS-migrering på din scenmiljö när den har uppgraderats till den senaste versionen och därefter planera för produktionsmiljön.
-
-### Vad händer efter en uppgradering till Campaign Classic v7.3.5? {#ims-migration-after-upgrade}
-
-När dina miljöer har uppgraderats till Campaign Classic v7.3.5 (eller en [IMS-migreringskompatibel version](#ims-versions)) kan du starta övergången till [Adobe Identity Management System (IMS)](https://helpx.adobe.com/enterprise/using/identity.html){target="_blank"}.
-
-### När är migreringen klar? {#ims-migration-end}
-
-När migreringen av slutanvändare och den tekniska migreringen till Adobe Identity Management System (IMS) är klar måste du kontakta din Adobe-representant/kundsupport så att Adobe kan ange att migreringen är slutförd.
 
 ### Hur skapar man användare efter migreringen? {#ims-migration-native}
 
-Adobe rekommenderar att du bara skapar IMS-användare efter uppgradering till Campaign Classic v7.3.5 (eller en [IMS-migreringskompatibel version](#ims-versions)).
+Adobe rekommenderar att du bara skapar IMS-användare efter uppgradering till Campaign Classic v7.4.1 (eller en [IMS-migreringskompatibel version](#ims-versions)).
+Från och med Campaign v7.4.1 kan du förhindra att interna operatorer skapas genom att uppdatera instanskonfigurationen enligt anvisningarna i [den här sidan](impact-ims-migration.md).
 
 Som Campaign-administratör kan du bevilja behörigheter till användare i din organisation via Adobe Admin Console och Campaign Client Console. Användare loggar in på Adobe Campaign med sin Adobe ID. Lär dig hur du ställer in behörigheter med IMS i [Kampanjdokumentation v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/admin/permissions/gs-permissions.html){target="_blank"}.
 
@@ -150,8 +129,9 @@ Nu kan du se listan med **Operatorer** och **Autentiseringstyp**.
 
 ![](assets/ims_3.png)
 
-## Användbara länkar {#ims-useful-links}
 
-* [Migrering av tekniska användare till Adobe Developer Console](ims-migration.md)
-* [Versionsinformation om Adobe Campaign Classic v7](../../rn/using/latest-release.md)
-* [Vad är Adobe Identity Management System (IMS)](https://helpx.adobe.com/enterprise/using/identity.html){target="_blank"}
+>[!MORELIKETHIS]
+>
+>* [Migrering av tekniska användare till Adobe Developer Console](ims-migration.md)
+>* [Versionsinformation om Adobe Campaign Classic v7](../../rn/using/latest-release.md)
+>* [Vad är Adobe Identity Management System (IMS)](https://helpx.adobe.com/enterprise/using/identity.html){target="_blank"}

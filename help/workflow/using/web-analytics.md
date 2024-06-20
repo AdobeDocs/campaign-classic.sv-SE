@@ -3,7 +3,7 @@ product: campaign
 title: Web Analytics
 description: Läs mer om Web Analytics-paketet
 feature: Workflows, Analytics Integration
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: a1dbef3e1feca1e3347de013db8bd7809d315016
 workflow-type: tm+mt
 source-wordcount: '178'
 ht-degree: 1%
@@ -15,7 +15,7 @@ ht-degree: 1%
 
 
 
-Arbetsflödena nedan installeras tillsammans med **Web Analytics-anslutningar** som standard. Mer information om modulen finns i [section](../../platform/using/gs-aa.md).
+Arbetsflödena nedan installeras tillsammans med **Web Analytics-anslutningar** som standard. Mer information om modulen finns i [section](../../integrations/using/gs-aa.md).
 
 <table> 
  <tbody> 

@@ -6,10 +6,10 @@ feature: Release Notes
 role: User
 level: Beginner
 exl-id: d60d67de-6618-4f3b-be4a-ad7633ab5645
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
-workflow-type: ht
-source-wordcount: '1551'
-ht-degree: 100%
+source-git-commit: 8de62db2499449fc9966b6464862748e2514a774
+workflow-type: tm+mt
+source-wordcount: '1637'
+ht-degree: 93%
 
 ---
 
@@ -43,16 +43,21 @@ Kunder uppmanas att se över om de använder funktionen i den aktuella driftsät
    <td><strong>Funktion</strong></td>
    <td><strong>Information</strong></td>
   </tr>
+  <tr>
+ <td>Kampanj (Neolane) - äldre SDK</td>
+ <td><p>Kampanjens (Neolane) SDK för mobilprogram är nu föråldrat. Använd i stället Adobe Experience Platform Mobile SDK genom att konfigurera tillägget Adobe Campaign i användargränssnittet för datainsamling. Adobe Experience Platform Mobile SDK hjälper er att driva lösningar och tjänster från Adobe Experience Cloud i era mobilappar. SDK-konfigurationen hanteras via användargränssnittet för datainsamling för flexibel konfiguration och utbyggbara, regelbaserade integreringar. Lär dig hur du konfigurerar mobilappskanalen i <a href="https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/push/push-settings">Kampanjdokumentation v8</a>.</p>
+<p>Måldatum för borttagning: i slutet av 2024 </p>
+</td>
+</tr>
 <tr>
  <td>Social marknadsföring med Facebook</td>
- <td>Social marknadsföring med Facebook är nu inaktuell. Du kan använda X (tidigare Twitter) för att publicera inlägg på sociala medier, eller samarbeta med Adobe för att skapa en anpassad kanal.
- <p></p>
+ <td><p>Social marknadsföring med Facebook är nu inaktuell. Du kan använda X (tidigare Twitter) för att publicera inlägg på sociala medier, eller samarbeta med Adobe för att skapa en anpassad kanal.</p>
   <!--p>Target removal date: End of 2023</p-->
   </td>
 </tr>
 <tr>
  <td>ACS-anslutning</td>
- <td>ACS-anslutning (Prime-erbjudande) är nu inaktuell. Du kan använda funktionerna export/import för Campaign för att extrahera och mata in data i båda produkterna.<p></p>
+ <td><p>ACS-anslutning (Prime-erbjudande) är nu inaktuell. Du kan använda funktionerna export/import för Campaign för att extrahera och mata in data i båda produkterna.</p>
   <!--p>Target removal date: End of 2023</p-->
   </td>
 </tr>
@@ -72,7 +77,7 @@ I det här avsnittet visas funktioner som har tagits bort från Campaign Classic
       <tr>
   <td>Adobe Analytics Data Connector<br></td>
    <td><p>Adobe Analytics Data Connector togs bort den 17 augusti 2022. Den hade tagits bort i Campaign 21.1.3-versionen.</p>
-   <p>Om du använder den här kopplingen måste du anpassa implementeringen efter den. <a href="../../platform/using/gs-aa.md">Läs mer</a></p>
+   <p>Om du använder den här kopplingen måste du anpassa implementeringen efter den. <a href="../../integrations/using/gs-aa.md">Läs mer</a></p>
   </td>
  </tr>
     <tr>
@@ -83,8 +88,8 @@ I det här avsnittet visas funktioner som har tagits bort från Campaign Classic
  </tr>
   <tr>
   <td>OAuth-autentisering (OAuth och JWT)<br></td>
-  <td><p> Integreringsautentisering med utlösare som ursprungligen baserades på oAUTH-autentiseringsinställningar för åtkomst till pipeline har nu ändrats och flyttats till Adobe I/O. Detta autentiseringsläge har nu fasats ut med versionen Campaign 20.3.<p>
-  <p>Om du använde integrering med utlösare kan du lära dig hur du anpassar implementeringen <a href="../../integrations/using/configuring-adobe-io.md">på den här sidan</a>.</p> 
+  <td><p> Integreringsautentisering med utlösare som ursprungligen baserades på OAuth-autentiseringsinställningar för åtkomst av pipeline har nu ändrats och flyttats till Adobe I/O. Autentiseringsläget har tagits bort i Campaign 20.3.<p>
+  <p>Om du använde integrering med utlösare kan du lära dig hur du anpassar implementeringen <a href="../../integrations/using/about-triggers.md#implement">på den här sidan</a>.</p> 
   <p>Mer information om inaktuell OAauth-autentisering finns på den här <a href="https://github.com/AdobeDocs/analytics-1.4-apis/blob/master/docs/APIEOL.md">sidan</a></p> 
   <!--p><em>Target removal date: October 20, 2021. Hosted environments benefit from an extension until May 25, 2022. </em></p-->
   </td>

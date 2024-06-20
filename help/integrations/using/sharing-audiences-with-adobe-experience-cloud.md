@@ -2,32 +2,31 @@
 product: campaign
 title: Dela målgrupper med Adobe Experience Cloud
 description: Dela målgrupper med Adobe Experience Cloud
-feature: Audiences, People Core Service Integration
+feature: Audiences
 badge-v8: label="Gäller även för v8" type="Positive" tooltip="Gäller även Campaign v8"
 audience: integrations
 content-type: reference
 topic-tags: audience-sharing
 exl-id: 1c90e913-3375-476c-ab60-89f20239eb0d
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: b11185da8236d6100d98eabcc9dc1cf2cffa70af
 workflow-type: tm+mt
-source-wordcount: '304'
+source-wordcount: '242'
 ht-degree: 0%
 
 ---
 
-# Dela målgrupper med Adobe Experience Cloud{#sharing-audiences-with-adobe-experience-cloud}
-
+# Dela målgrupper med Adobe Experience Cloud {#sharing-audiences-with-adobe-experience-cloud}
 
 
 >[!CAUTION]
 >
 >För att kunna dela målgrupper med Adobe Experience Cloud lösningar måste ni implementera Adobe Identity Management System. [Läs mer om IMS](../../integrations/using/about-adobe-id.md).
 
-Med Adobe Campaign kan ni dela målgrupper och segment med Adobe Experience Cloud lösningar och bastjänster. Det finns två alternativ:
+Med Adobe Campaign kan ni dela målgrupper och segment med Adobe Experience Cloud tjänster. Det finns två alternativ:
 
-1. Skicka Adobe Experience Platform segmentdata till Adobe Campaign. För att implementera integreringen måste ni koppla Real-time Customer Data Platform till Campaign (RTCDP). [Läs mer i det här avsnittet](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/email-marketing/adobe-campaign.html).
+1. Skicka Adobe Experience Platform segmentdata till Adobe Campaign. För att implementera integreringen måste ni koppla Real-time Customer Data Platform till Campaign (RTCDP). [Läs mer i det här avsnittet](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/email-marketing/adobe-campaign.html){target="_blank"}.
 
-1. Integrera **Adobe Campaign** med **Bastjänst för människor** (kallas även **Bastjänst för profiler och målgrupper**) eller Adobe Audience Manager. Då kan du:
+1. Integrera **Adobe Campaign** med  **Experience Cloud målgrupper** eller **Adobe Audience Manager**. Då kan du:
 
    * Importera delade målgrupper/segment från olika Adobe Experience Cloud-lösningar till Adobe Campaign. Publiker kan importeras via listor i Adobe Campaign.
 
@@ -40,6 +39,5 @@ Den här integreringen stöder två typer av Adobe Experience Cloud ID:
 
   >[!NOTE]
   >
-  > Deklarerad ID-datakälla kan nu även användas med integreringen av huvudtjänsten People.
+  > Deklarerad ID-datakälla kan nu även användas med integrering av Experience Cloud Assets.
   >
-  >Om du använder integreringen med huvudtjänsten Kontakter och vill lägga till integreringen med Audience Manager måste du få hjälp av en Adobe Audience Manager-konsults för att undvika att förlora alla ID-synkroniseringar som samlas in när du går över till att använda den här deklarerade ID-datakällan i ett Adobe Audience Manager-sammanhang.

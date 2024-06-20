@@ -7,10 +7,10 @@ audience: integrations
 content-type: reference
 topic-tags: connecting-via-an-adobe-id
 exl-id: 8dad8fa9-674c-433c-af30-8c6d0aadf525
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: ffab91fc9fa7e60973fdda930239f5836671a341
 workflow-type: tm+mt
-source-wordcount: '170'
-ht-degree: 14%
+source-wordcount: '180'
+ht-degree: 13%
 
 ---
 
@@ -27,7 +27,10 @@ Kampanjanvändare kan ansluta till Adobe Campaign-konsolen med sin Adobe ID ist�
 
 >[!IMPORTANT]
 >
-> Observera att det inte är tillåtet att ansluta till användare/lösenord (dvs. inbyggd autentisering) i Campaign v8. **Adobe rekommenderar att du utför den här migreringen i Campaign v7.3.5 för att smidigt kunna migrera till Campaign v8.**
+> Observera att det inte är tillåtet att ansluta till användare/lösenord (dvs. inbyggd autentisering) i Campaign v8. **Adobe rekommenderar att du utför migreringen från och med Campaign v7.3.5 för att smidigt kunna migrera till Campaign v8.**
+>
+>Lär dig hur du migrerar till Adobe IMS i [det här avsnittet](../../technotes/using/ac-ims.md).
+>
 
 
 <!--

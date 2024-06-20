@@ -6,7 +6,7 @@ feature: Technote, Upgrade
 hide: true
 hidefromtoc: true
 exl-id: 7db02123-2e2a-40d9-8385-728ff69985e4
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: 8de62db2499449fc9966b6464862748e2514a774
 workflow-type: tm+mt
 source-wordcount: '1103'
 ht-degree: 8%
@@ -123,11 +123,11 @@ Lär dig kontrollera din version [i det här avsnittet](../../platform/using/lau
 
 **Hur uppdaterar jag?**
 
-När instanserna har uppgraderats till en nyare version måste alla kunder följa [proceduren flyttas till det nya autentiseringsläget](../../integrations/using/configuring-adobe-io.md). Detta kräver att du skapar den nya Adobe I/O-token och använder den i implementeringen.  
+När instanserna har uppgraderats till en nyare version måste alla kunder följa [proceduren flyttas till det nya autentiseringsläget](../../integrations/using/about-triggers.md#implement). Detta kräver att du skapar den nya Adobe I/O-token och använder den i implementeringen.  
 
 För hybridmiljöer måste kunderna dessutom se till att pipeline är konfigurerad på en instans av mellanleverantörer. [Läs mer](../../integrations/using/configuring-pipeline.md).
 
-[Lär dig hur du migrerar till Adobe I/O](../../integrations/using/configuring-adobe-io.md).
+[Lär dig hur du migrerar till Adobe I/O](../../integrations/using/about-triggers.md#implement).
 
 ## APNs-uppdateringar {#acc-apns-updates}
 

@@ -7,9 +7,9 @@ audience: installation
 content-type: reference
 topic-tags: prerequisites-and-recommendations-
 exl-id: ec40498e-e673-4792-8dcf-8bb7e852b532
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: 19b40f0b827c4b5b7b6484fe4953aebe61d00d1d
 workflow-type: tm+mt
-source-wordcount: '484'
+source-wordcount: '445'
 ht-degree: 7%
 
 ---
@@ -69,9 +69,6 @@ Det är också viktigt att du följer datasäkerheten för databasmotorn.
 
 [Läs mer](../../installation/using/network-database.md)
 
->[!CAUTION]
->
->Från och med den 14 juli 2021 förlorar alla klientsystem som inte har stöd för TLS 1.2-protokollet åtkomst till alla Adobe-produkter och -tjänster. Kontrollera att alla användar- och klientsystem är TLS 1.2-kompatibla före detta datum. [Läs mer](https://helpx.adobe.com/x-productkb/multi/eol-tls-support.html)
 
 ## Serverkonfiguration
 

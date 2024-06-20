@@ -5,9 +5,9 @@ description: Lär dig hur du installerar inbyggda Campaign-paket
 feature: Installation, Application Settings
 badge-v7-prem: label="Endast lokal/hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=sv" tooltip="Gäller endast lokala och hybrida driftsättningar"
 exl-id: 2bc077c4-ed65-4157-bfc9-df5d0442f476
-source-git-commit: 14ba450ebff9bba6a36c0df07d715b7279604222
+source-git-commit: b11185da8236d6100d98eabcc9dc1cf2cffa70af
 workflow-type: tm+mt
-source-wordcount: '1265'
+source-wordcount: '1264'
 ht-degree: 1%
 
 ---
@@ -192,7 +192,7 @@ I följande tabell visas alla inbyggda Campaign-paket.
   </tr> 
   <tr> 
    <td> Web Analytics-anslutningar<br /> </td> 
-   <td> Gör att Adobe Campaign och Adobe Analytics kan interagera via Web Analytics-anslutningspaketet. Inte kompatibelt med Transactional Messaging (Message Center-paket). <a href="../../platform/using/gs-aa.md">Läs mer</a><br /> </td> 
+   <td> Gör att Adobe Campaign och Adobe Analytics kan interagera via Web Analytics-anslutningspaketet. Inte kompatibelt med Transactional Messaging (Message Center-paket). <a href="../../integrations/using/gs-aa.md">Läs mer</a><br /> </td> 
    <td> Marknadsföring </td> 
   </tr> 
   <tr> 
@@ -202,7 +202,7 @@ I följande tabell visas alla inbyggda Campaign-paket.
   </tr> 
   <tr> 
    <td> Integrering av Adobe Experience Cloud delade målgrupper<br /> </td> 
-   <td> Gör att ni kan utbyta och dela målgrupper/segment med Adobe Experience Cloud lösningar och bastjänster. Kräver IMS. <a href="../../integrations/using/sharing-audiences-with-adobe-experience-cloud.md">Läs mer</a> <br /> </td> 
+   <td> Gör att ni kan utbyta och dela målgrupper/segment med Adobe Experience Cloud lösningar och appar. Kräver IMS. <a href="../../integrations/using/sharing-audiences-with-adobe-experience-cloud.md">Läs mer</a> <br /> </td> 
    <td> Marknadsföring<br /> </td> 
   </tr> 
   <tr> 

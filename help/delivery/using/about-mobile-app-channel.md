@@ -6,10 +6,10 @@ badge-v8: label="Gäller även för v8" type="Positive" tooltip="Gäller även C
 feature: Push
 role: User
 exl-id: c3b0406f-f652-42f4-ad0d-23fb719cd1b6
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: 81b47231b027a189bc8b9029b7d48939734d08ed
 workflow-type: tm+mt
-source-wordcount: '681'
-ht-degree: 8%
+source-wordcount: '772'
+ht-degree: 7%
 
 ---
 
@@ -51,6 +51,12 @@ The **[!UICONTROL NMAC opt-out management]** (mobileAppOptOutMgt) Arbetsflödet 
 Adobe Campaign är kompatibelt med HTTP/2 APN:er. Mer information om konfigurationsstegen finns i [det här avsnittet](configuring-the-mobile-application.md) -avsnitt.
 
 Global information om hur du skapar en leverans finns i [det här avsnittet](steps-about-delivery-creation-steps.md).
+
+
+## Konfigurera kanal för push-meddelanden {#push-notification-configuration}
+
+Om du vill skicka push-meddelanden med Adobe Campaign måste du först konfigurera miljön och appen. Innan du börjar skicka push-meddelanden med Adobe Campaign måste du se till att det finns konfigurationer och integreringar på mobilappen och för taggar i Adobe Experience Platform. Adobe Experience Platform Mobile SDK innehåller API:er för integrering på klientsidan för mobiler via Android och iOS-kompatibla SDK:er. SDK-konfigurationen hanteras via användargränssnittet för datainsamling för flexibel konfiguration och utbyggbara, regelbaserade integreringar. Läs mer i [Adobe Campaign v8-dokumentation](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/push/push-settings).
+
 
 ## Datasökväg {#data-path}
 

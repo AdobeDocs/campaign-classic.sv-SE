@@ -5,9 +5,9 @@ description: Lär dig hur du konfigurerar ditt mobilprogram för iOS
 feature: Push
 role: User, Developer
 exl-id: 67eee1c5-a918-46b9-875d-7c3c71c00635
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: 81b47231b027a189bc8b9029b7d48939734d08ed
 workflow-type: tm+mt
-source-wordcount: '596'
+source-wordcount: '588'
 ht-degree: 3%
 
 ---
@@ -94,7 +94,7 @@ I följande exempel lägger vi till **mediaURl** och **mediaExt** för att skapa
 
 1. Klicka **[!UICONTROL Next]** för att börja konfigurera utvecklingsprogrammet.
 
-1. Se till att samma **[!UICONTROL Integration key]** definieras i Adobe Campaign och i programkoden via SDK. Mer information finns i [den här sidan](integrating-campaign-sdk-into-the-mobile-application.md). Med den här integrationsnyckeln, som är specifik för varje program, kan du länka mobilprogrammet till Adobe Campaign-plattformen.
+1. Se till att samma **[!UICONTROL Integration key]** definieras i Adobe Campaign och i programkoden via SDK. <!--For more on this, refer to [this page](integrating-campaign-sdk-into-the-mobile-application.md).--> Med den här integrationsnyckeln, som är specifik för varje program, kan du länka mobilprogrammet till Adobe Campaign-plattformen.
 
    >[!NOTE]
    >

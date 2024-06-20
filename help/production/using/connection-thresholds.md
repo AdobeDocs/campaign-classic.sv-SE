@@ -8,9 +8,9 @@ audience: production
 content-type: reference
 topic-tags: troubleshooting
 exl-id: 4ee05559-e719-4e6e-b42c-1e82df428871
-source-git-commit: 14ba450ebff9bba6a36c0df07d715b7279604222
+source-git-commit: 757e3a5395f24e0bdd04737aba0458881e4ea780
 workflow-type: tm+mt
-source-wordcount: '169'
+source-wordcount: '168'
 ht-degree: 4%
 
 ---
@@ -31,7 +31,7 @@ Det finns tre olika tröskelvärden:
 
    * **Tomcat** sida: alla frågor som faktiskt kommer från Adobe Campaign Tomcat-klienten.
 
-     Detta tröskelvärde konfigureras i **nl6/tomcat-8/conf/server.xml** -fil. The **maxThreads** kan du öka tröskelvärdet för antalet frågor som bearbetas samtidigt. Den kan till exempel ändras till 250.
+     Detta tröskelvärde konfigureras i **nl6/tomcat-X/conf/server.xml** -fil. The **maxThreads** kan du öka tröskelvärdet för antalet frågor som bearbetas samtidigt. Den kan till exempel ändras till 250.
 
      ```
      <Connector protocol="HTTP/1.1" port="8080"

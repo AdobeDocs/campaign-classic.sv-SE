@@ -7,9 +7,9 @@ badge-v8: label="Gäller även för v8" type="Positive" tooltip="Gäller även C
 audience: integrations
 content-type: reference
 exl-id: 0e337620-a49f-4e14-8c67-9279d74736f1
-source-git-commit: 271e0f9fde0cbfb016e201c8390b26673d8fc696
+source-git-commit: 8de62db2499449fc9966b6464862748e2514a774
 workflow-type: tm+mt
-source-wordcount: '258'
+source-wordcount: '398'
 ht-degree: 7%
 
 ---
@@ -37,4 +37,26 @@ The [!DNL pipelined] körs alltid på Adobe Campaign marknadsföringsserver. Den
 
 The [!DNL pipelined] loggar in på Experience Cloud med en autentiseringstjänst och skickar en privat nyckel. Autentiseringstjänsten returnerar en token. Token används för att autentisera vid hämtning av händelser.
 
-Mer information om autentisering finns i [page](../../integrations/using/configuring-adobe-io.md).
+## Förhandskrav {#adobe-io-prerequisites}
+
+Kontrollera att du har:
+
+* en giltig **Organisationens identifierare**: Organisations-ID är den unika identifieraren inom Adobe Experience Cloud, som används t.ex. för tjänsten VisitorID och IMS Single-Sign On (SSO). [Läs mer](https://experienceleague.adobe.com/docs/core-services/interface/administration/organizations.html?lang=sv)
+* a **Åtkomst för utvecklare** till din organisation. Organisationens systemadministratör måste följa **Lägga till utvecklare i en enda produktprofil** detaljerad [på den här sidan](https://helpx.adobe.com/enterprise/using/manage-developers.html) för att ge utvecklare åtkomst till `Analytics - {tenantID}` Produktprofil för den Adobe Analytics-produkt som är kopplad till utlösare.
+
+## Implementeringssteg {#implement}
+
+Följ stegen nedan för att implementera Campaign och Experience Cloud Triggers:
+
+1. Skapa ett OAuth-projekt. [Läs mer](oauth-technical-account.md#oauth-service)
+
+1. Lägg till dina OAuth-projektbehörigheter i Adobe Campaign. [Läs mer](oauth-technical-account.md#add-credentials)
+
+1. Uppdatera autentiseringstypen till utvecklarkonsolprojektet i konfigurationsfilen **config-&lt; instance-name >.xml** enligt följande:
+
+   ```
+   <pipelined ... authType="imsJwtToken"  ... />
+   ```
+
+   Kör sedan en `config -reload` och en omstart av [!DNL pipelined] för de ändringar som ska beaktas.
+

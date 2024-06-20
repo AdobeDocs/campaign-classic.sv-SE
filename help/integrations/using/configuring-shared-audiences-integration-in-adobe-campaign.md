@@ -2,21 +2,20 @@
 product: campaign
 title: Konfigurera integrering av delade målgrupper i Adobe Campaign
 description: Lär dig konfigurera integrering av delade målgrupper
-feature: Audiences, People Core Service Integration
+feature: Audiences
 badge-v8: label="Gäller även för v8" type="Positive" tooltip="Gäller även Campaign v8"
 audience: integrations
 content-type: reference
 topic-tags: audience-sharing
 exl-id: a3e26cff-9609-4d91-8976-9213a30c3fd2
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: b11185da8236d6100d98eabcc9dc1cf2cffa70af
 workflow-type: tm+mt
-source-wordcount: '555'
+source-wordcount: '551'
 ht-degree: 0%
 
 ---
 
 # Konfigurera integrering av delade målgrupper i Adobe Campaign{#configuring-shared-audiences-integration-in-adobe-campaign}
-
 
 
 När du har skickat in den här begäran fortsätter Adobe till att tillhandahålla integreringen åt dig och kontaktar dig för att ange information och information som du måste slutföra konfigurationen:
@@ -88,7 +87,7 @@ Konfigurera **[!UICONTROL Recipient - Visitor ID]** datakälla:
 
 ## Steg 3: Konfigurera kampanjspårningsserver {#step-3--configure-campaign-tracking-server}
 
-För konfigurationen av integreringen med tjänsten People Core eller Audience Manager måste vi även konfigurera Campaign Tracking-servern.
+För konfigurationen av integreringen med Audience Manager måste vi också konfigurera Campaign Tracking-servern.
 
 Om du vill att delade målgrupper ska kunna fungera med besökar-ID, måste spårningsserverdomänen vara en underdomän till den klickade URL:en eller huvudwebbplatsen.
 

@@ -8,9 +8,9 @@ audience: installation
 content-type: reference
 topic-tags: initial-configuration
 exl-id: f40bab8c-5064-40d9-beed-101a9f22c094
-source-git-commit: 14ba450ebff9bba6a36c0df07d715b7279604222
+source-git-commit: f032ed3bdc0b402c8281bc34e6cb29f3c575aaf9
 workflow-type: tm+mt
-source-wordcount: '1329'
+source-wordcount: '1306'
 ht-degree: 1%
 
 ---
@@ -58,7 +58,7 @@ Identifiera servern och välj vilken typ av åtgärd som ska utföras. I detta f
 Beroende på vilken databasmotor som valts kan serveridentifieringsinformationen variera.
 
 * För **Oracle** motor, fylla i **TNS-namn** definierad för programservern.
-* För **PostgreSQL** eller **DB2** måste du ange det DNS-namn (eller IP-adress) som definierats på programservern för att få åtkomst till databasservern.
+* För **PostgreSQL** måste du ange det DNS-namn (eller IP-adress) som definierats på programservern för att få åtkomst till databasservern.
 * För **Microsoft SQL Server** engine, you must define: the DNS name (or IP address) defined on the application server to access the database server: **DNS** eller **DNS`\<instance>`** (instansläge),
 
   >[!CAUTION]
@@ -78,7 +78,6 @@ Om du vill göra det anger du namnet och lösenordet för **Administrationssyste
 * **system** för en Oraclena databas,
 * **sa** för en Microsoft SQL Server-databas,
 * **affischer** för en PostgreSQL-databas,
-* **db2inst1** för en databas2.
 
 ### Steg 3 - Databasens anslutning och egenskaper {#step-3---connection-and-characteristics-of-the-database}
 
@@ -89,11 +88,6 @@ I följande steg kan du konfigurera inställningarna för inloggning i databasen
 Du måste definiera följande inställningar:
 
 * Ange namnet på den databas som ska skapas.
-
-  >[!NOTE]
-  >
-  >För en DB2-databas får databasens namn inte överstiga 8 tecken.
-
 * Ange lösenordet för kontot som är länkat till den här databasen.
 * Ange om databasen måste vara i Unicode eller inte.
 
@@ -182,7 +176,7 @@ Identifiera servern och välj vilken typ av åtgärd du vill utföra. I detta fa
 Beroende på vilken databasmotor som valts kan serveridentifieringsinformationen variera.
 
 * För **Oracle** motor, fylla i **TNS-namn** definierad för programservern.
-* För **PostgreSQL** eller **DB2** måste du ange det DNS-namn (eller IP-adress) som definierats på programservern för att få åtkomst till databasservern.
+* För **PostgreSQL** måste du ange det DNS-namn (eller IP-adress) som definierats på programservern för att få åtkomst till databasservern.
 * För **Microsoft SQL Server** måste du definiera:
 
    1. det DNS-namn (eller den IP-adress) som definierats på programservern för åtkomst till databasservern,

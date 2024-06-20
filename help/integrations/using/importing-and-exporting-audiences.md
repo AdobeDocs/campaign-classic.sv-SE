@@ -2,15 +2,15 @@
 product: campaign
 title: Importera och exportera målgrupper
 description: Importera och exportera målgrupper
-feature: Audiences, People Core Service Integration
+feature: Audiences
 badge-v8: label="Gäller även för v8" type="Positive" tooltip="Gäller även Campaign v8"
 audience: integrations
 content-type: reference
 topic-tags: audience-sharing
 exl-id: c2293fc5-c9ba-4a73-8f39-fa7cdd06e8dd
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: b11185da8236d6100d98eabcc9dc1cf2cffa70af
 workflow-type: tm+mt
-source-wordcount: '627'
+source-wordcount: '589'
 ht-degree: 0%
 
 ---
@@ -22,7 +22,7 @@ ht-degree: 0%
 
 ## Importera en målgrupp {#importing-an-audience}
 
-Du kan importera målgrupper/segment från Audience Manager eller People core service till Adobe Campaign via mottagarlistorna.
+Du kan importera målgrupper/segment från Audience Manager till Adobe Campaign via mottagarlistorna.
 
 1. Gå till **[!UICONTROL Profiles and Targets]** > **[!UICONTROL Lists]** i Adobe Campaign Explorer.
 1. Välj **[!UICONTROL New]** > **[!UICONTROL Create a shared audience...]**.
@@ -44,19 +44,19 @@ Du kan importera målgrupper/segment från Audience Manager eller People core se
 
 Publiken importeras via ett tekniskt arbetsflöde. Den importerade listan innehåller element som kan förenas med hjälp av AMC-datakällan. Elementen som inte känns igen av Adobe Campaign importeras inte.
 
-Det tar 24-36 timmar att synkronisera importprocessen när segment importeras direkt från personbastjänsten eller Audience Manager. Efter den här perioden kan du hitta och använda din nya målgrupp i Adobe Campaign.
+Det tar 24-36 timmar att synkronisera importprocessen när segment importeras direkt från Audience Manager. Efter den här perioden kan du hitta och använda din nya målgrupp i Adobe Campaign.
 
 >[!NOTE]
 >
->Om du importerar målgrupper från Adobe Analytics till Adobe Campaign måste dessa målgrupper först delas i People Core Service eller Audience Manager. Den här processen tar 12-24 timmar, vilket måste läggas till i synkroniseringen av 24-36 timmar med Campaign.
+>Om du importerar målgrupper från Adobe Analytics till Adobe Campaign måste dessa målgrupper först delas i Audience Manager. Den här processen tar 12-24 timmar, vilket måste läggas till i synkroniseringen av 24-36 timmar med Campaign.
 >
->I det specifika fallet kan tidsramen för målgruppsdelning vara upp till 60 timmar. Mer information om Adobe Analytics målgruppsdelning i tjänsten People Core och Audience Manager finns i [Adobe Analytics-dokumentation](https://experienceleague.adobe.com/docs/analytics/components/segmentation/segmentation-workflow/seg-publish.html).
+>I det specifika fallet kan tidsramen för målgruppsdelning vara upp till 60 timmar. Mer information om Adobe Analytics målgruppsdelning i Audience Manager finns i [Adobe Analytics-dokumentation](https://experienceleague.adobe.com/docs/analytics/components/segmentation/segmentation-workflow/seg-publish.html){target="_blank"}.
 
 Publiken ersätts helt och hållet varje gång den synkroniseras. Endast segment kan importeras. Detaljerade data som nyckelvärdepar, egenskaper och regler stöds inte.
 
 ## Exportera en målgrupp {#exporting-an-audience}
 
-Du kan exportera en målgrupp från Adobe Campaign till Audience Manager eller People core service med hjälp av ett arbetsflöde. Processerna för att skapa och använda ett arbetsflöde beskrivs i [det här dokumentet](../../workflow/using/building-a-workflow.md). De exporterade målgrupperna sparas som segment i bastjänsten Folk:
+Du kan exportera en målgrupp från Adobe Campaign till Audience Manager med hjälp av ett arbetsflöde. Processerna för att skapa och använda ett arbetsflöde beskrivs i [det här dokumentet](../../workflow/using/building-a-workflow.md). De exporterade målgrupperna sparas som segment:
 
 1. Skapa ett nytt arbetsflöde för målinriktning.
 1. Använd olika aktiviteter för att ange en uppsättning mottagare som mål.
@@ -80,7 +80,7 @@ Du kan exportera en målgrupp från Adobe Campaign till Audience Manager eller P
 
 Publiken exporteras sedan. Det finns två utgående övergångar för aktiviteten Spara målgrupp. Huvudövergången innehåller de mottagare som exporterades. Den extra övergången innehåller de mottagare som inte kunde mappas med ett besökar-ID eller deklarerat ID.
 
-Synkronisering mellan Adobe Campaign och People Core Service tar 24-36 timmar. Efter den här perioden kan du hitta din nya målgrupp i bastjänsten People och återanvända den i andra Adobe Experience Cloud-lösningar. Mer information om hur du använder en delad Adobe Campaign-målgrupp i Adobe People-bastjänsten finns i [dokumentation](https://experienceleague.adobe.com/docs/core-services/interface/audiences/t-audience-create.html).
+Synkronisering mellan lösningar tar 24-36 timmar. Efter denna period kan ni hitta er nya målgrupp och återanvända den i andra Adobe Experience Cloud-lösningar. Mer information om hur du använder en delad målgrupp från Adobe Campaign finns i [dokumentation](https://experienceleague.adobe.com/en/docs/core-services/interface/services/audiences/create){target="_blank"}.
 
 >[!NOTE]
 >

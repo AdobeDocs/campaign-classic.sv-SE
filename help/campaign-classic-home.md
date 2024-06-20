@@ -3,10 +3,10 @@ keywords: Campaign Classic, starstida, populära ämnen
 product: campaign
 title: Produktdokumentation för Adobe Campaign Classic v7
 exl-id: 6b3f1689-80de-49fd-b7ee-7a2a1931d157
-source-git-commit: b74ae2335fa5ba7a2cc4c3a0fdb375d7698dcd81
-workflow-type: ht
-source-wordcount: '346'
-ht-degree: 100%
+source-git-commit: fb19195c7331a2adc0bcf7a37ae7678078dce5e6
+workflow-type: tm+mt
+source-wordcount: '353'
+ht-degree: 91%
 
 ---
 
@@ -21,9 +21,9 @@ Få en glimt av de senaste förbättringarna i produkterna och dokumentationen f
 >[!BEGINTABS]
 
 
->[!TAB December-versionen är här!]
+>[!TAB Juniversionen är live!]
 
-Upptäck uppdateringar, förbättringar och korrigeringar som ingår i Campaign Classic v7.3.5.
+Upptäck uppdateringar, förbättringar och korrigeringar som ingår i Campaign Classic v7.4.1.
 
 [![Bild](assets/do-not-localize/learn-more-button.svg)](rn/using/latest-release.md)
 
@@ -31,7 +31,7 @@ Upptäck uppdateringar, förbättringar och korrigeringar som ingår i Campaign 
 
 För att förstärka säkerheten och autentiseringsprocessen rekommenderar Adobe Campaign starkt att du migrerar slutanvändarautentiseringsläget från inloggnings-/lösenordsautentiseringen till Adobe Identity Management System (IMS).
 
-[![Bild](assets/do-not-localize/learn-more-button.svg)](technotes/using/migrate-users-to-ims.md)
+[![Bild](assets/do-not-localize/learn-more-button.svg)](technotes/using/ac-ims.md)
 
 
 >[!TAB Push-kanalsändringar]
@@ -113,4 +113,4 @@ Vissa viktiga ändringar av tjänsten Android Firebase Cloud Messaging (FCM) kom
 
 ## Ytterligare resurser
 
-[Lista över felmeddelanden](https://experienceleague.adobe.com/developer/campaign-errors/error_codes.html?lang=sv) – [Adobe Campaign-produktbeskrivning](https://helpx.adobe.com/se/legal/product-descriptions/adobe-campaign-managed-cloud-services.html){target="_blank"} - [Compatibility matrix](rn/using/compatibility-matrix.md) - [Tutorials](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=sv){target="_blank"} - [Control Panel for Campaign](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/key-features.html?lang=sv){target="_blank"}
+[Lista över felmeddelanden](https://experienceleague.adobe.com/developer/campaign-errors/error_codes.html?lang=sv) - [Adobe Campaign produktbeskrivning](https://helpx.adobe.com/se/legal/product-descriptions/adobe-campaign-managed-cloud-services.html){target="_blank"} - [Kompatibilitetsmatris](rn/using/compatibility-matrix.md) - [Tutorials](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=sv){target="_blank"} - [Kontrollpanelen för Campaign](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/key-features.html?lang=sv){target="_blank"}

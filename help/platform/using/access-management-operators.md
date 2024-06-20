@@ -7,9 +7,9 @@ feature: Access Management, Permissions
 role: User, Admin
 level: Beginner
 exl-id: 580282ce-ee30-422a-8724-9c328637cc39
-source-git-commit: e1a085384fb27ec165c487c112fbc70fe9738d9e
+source-git-commit: 8aceafa362b80f6e34edfd91a71551a58501a3d0
 workflow-type: tm+mt
-source-wordcount: '1238'
+source-wordcount: '1259'
 ht-degree: 2%
 
 ---
@@ -25,7 +25,11 @@ ht-degree: 2%
 >Observera att följande avsnitt inte längre gäller efter migreringen.  Lär dig hur du ställer in behörigheter med Adobe IMS i [Kampanjdokumentation v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/admin/permissions/gs-permissions.html){target="_blank"}.
 
 
-## Kom igång med Campaign-operatörer  {#about-operators}
+## Kom igång med Campaign-operatörer {#about-operators}
+
+>[!NOTE]
+>
+>Dessa procedurer gäller endast för operatorer som ansluter till Campaign med inbyggd autentisering. För Adobe IMS-autentisering, se [den här dokumentationen](https://helpx.adobe.com/enterprise/using/manage-users-individually.html#_blank).
 
 En operator är en Adobe Campaign-användare som har behörighet att logga in och utföra åtgärder.
 

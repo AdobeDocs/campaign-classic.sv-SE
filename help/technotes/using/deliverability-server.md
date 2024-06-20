@@ -3,10 +3,12 @@ product: campaign
 title: Uppdatera till den nya leveransservern
 description: Lär dig hur du uppdaterar till den nya servern för kampanjleverans
 feature: Technote, Deliverability
+hide: true
+hidefromtoc: true
 exl-id: bc62ddb9-beff-4861-91ab-dcd0fa1ed199
-source-git-commit: 514f390b5615a504f3805de68f882af54e0c3949
+source-git-commit: 19b40f0b827c4b5b7b6484fe4953aebe61d00d1d
 workflow-type: tm+mt
-source-wordcount: '1381'
+source-wordcount: '991'
 ht-degree: 1%
 
 ---
@@ -50,9 +52,9 @@ Campaign måste kommunicera med Adobe Shared Services via en IMS-baserad autenti
 >
 > JWT-autentiseringsuppgifterna (Service Account) har tagits bort av Adobe, och Campaign-integreringar med Adobe-lösningar och appar måste nu förlita sig på autentiseringsuppgifter för OAuth Server-till-Server. </br>
 >
-> * Om du har implementerat inkommande integreringar med Campaign måste du migrera ditt tekniska konto enligt informationen i [den här dokumentationen](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration/#_blank). Befintliga JWT-referenser (Service Account) kommer att fortsätta att fungera fram till 27 januari 2025. Dessutom går det inte längre att skapa nya JWT-referenser (Service Account) i Developer Console från och med 3 juni 2024. Det går inte att skapa eller lägga till en ny JWT-autentiseringsuppgift (Service Account) i ett projekt efter detta datum. </br>
+> * Om du har implementerat inkommande integreringar med Campaign måste du migrera ditt tekniska konto enligt informationen i [den här dokumentationen](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration/#_blank). Befintliga JWT-referenser (Service Account) kommer att fortsätta att fungera fram till 27 januari 2025. </br>
 >
-> * Om ni har implementerat utgående integreringar, som integrering med Campaign-Analytics eller integrering med Experience Cloud-utlösare, fortsätter de att fungera fram till 27 januari 2025. Innan detta datum måste ni dock uppgradera er Campaign-miljö till v7.4.1 och migrera ert tekniska konto till Autentisering. Eftersom det inte längre är möjligt att skapa nya JWT-referenser (Service Account) i Developer Console från och med 3 juni 2024, kan du inte skapa en ny utgående integrering som är beroende av JWT efter detta datum
+> * Om ni har implementerat utgående integreringar, som integrering med Campaign-Analytics eller integrering med Experience Cloud-utlösare, fortsätter de att fungera fram till 27 januari 2025. Innan detta datum måste ni dock uppgradera er Campaign-miljö till v7.4.1 och migrera ert tekniska konto till Autentisering.
 
 ### Förhandskrav{#prerequisites}
 
@@ -85,69 +87,13 @@ Om du inte ser **Adobe Campaign** kontakta [Adobe kundtjänst](https://helpx.ado
 
 ### Steg 1: Skapa/uppdatera ditt Adobe Developer-projekt {#adobe-io-project}
 
-1. Åtkomst [Adobe Developer Console](https://developer.adobe.com/console/home) och logga in med utvecklaråtkomst i din organisation. Se till att du är inloggad på rätt organisationsportal.
-   **Varning**: Om du har fler än en organisation måste du välja rätt organisation. Läs mer om organisationer [på den här sidan](https://experienceleague.adobe.com/docs/control-panel/using/faq.html#ims-org-id){_blank}.
-1. Välj **[!UICONTROL Create new project]**.
-   ![](assets/New-Project.png)
+Om du vill fortsätta konfigurera din Adobe Analytics-anslutning öppnar du Adobe Developer-konsolen och skapar ett OAuth Server-till-Server-projekt.
 
-   >[!CAUTION]
-   >
-   >Om du redan använder Adobe IO JWT-autentiseringsfunktioner för en annan integrering, till exempel Analytics Connector eller Adobe Triggers, måste du uppdatera projektet genom att lägga till **Kampanj-API** till det projektet.
-
-1. Välj **[!UICONTROL Add API]**.
-   ![](assets/Add-API.png)
-1. I **[!UICONTROL Add an API]** fönster, markera **[!UICONTROL Adobe Campaign]**.
-   ![](assets/AC-API.png)
-1. Om ditt klient-ID var tomt väljer du **[!UICONTROL Generate a key pair]** för att skapa ett nyckelpar för offentlig och privat nyckel.
-   ![](assets/Generate-a-key-pair.png)
-
-   Nycklarna laddas sedan ned automatiskt med ett standardutgångsdatum på 365 dagar. När det har gått ut måste du skapa ett nytt nyckelpar och uppdatera integreringen i konfigurationsfilen. Med alternativ 2 kan du välja att manuellt skapa och överföra **[!UICONTROL Public key]** med ett längre utgångsdatum.
-   ![](assets/New-key-pair.png)
-
-   >[!CAUTION]
-   >
-   >Du bör spara `config.zip` när nedladdningsprompten visas eftersom du inte kan ladda ned den igen.
-
-1. Klicka på **[!UICONTROL Next]**.
-1. Välj en befintlig **[!UICONTROL Product profile]** eller skapa en ny vid behov. Ingen behörighet krävs för detta **[!UICONTROL Product profile]**. Mer information om **[!UICONTROL Product Profiles]**, se [den här sidan](https://helpx.adobe.com/enterprise/using/manage-developers.html){_blank}.
-   ![](assets/Product-Profile-API.png)
-
-   Klicka sedan på **[!UICONTROL Save configured API]**.
-
-1. Välj **[!UICONTROL Adobe Campaign]** och kopiera följande information under **[!UICONTROL Service Account (JWT)]**
-
-   ![](assets/Config-API.png)
-
-   * **[!UICONTROL Client ID]**
-   * **[!UICONTROL Client Secret]**
-   * **[!UICONTROL Technical account ID]**
-   * **[!UICONTROL Organization ID]**
-
->[!CAUTION]
->
->Adobe Developer-certifikatet upphör att gälla efter 12 månader. Du måste generera ett nytt nyckelpar varje år.
+Se [den här sidan](../../integrations/using/oauth-technical-account.md#oauth-service) för detaljerad dokumentation.
 
 ### Steg 2: Lägg till projektautentiseringsuppgifterna i Adobe Campaign {#add-credentials-campaign}
 
-Den privata nyckeln ska kodas i base64 UTF-8-format.
-
-För att göra detta:
-
-1. Använd den privata nyckel som genereras i stegen ovan.
-1. Koda den privata nyckeln med följande kommando: `base64 ./private.key > private.key.base64`. Detta sparar base64-innehållet i en ny fil `private.key.base64`.
-
-   >[!NOTE]
-   >
-   >Extra rader kan ibland läggas till automatiskt när du kopierar/klistrar in den privata nyckeln. Kom ihåg att ta bort den innan du kodar din privata nyckel.
-
-1. Kopiera innehållet från filen `private.key.base64`.
-1. Logga in via SSH i varje behållare där Adobe Campaign-instansen är installerad och lägg till projektinloggningsuppgifterna i Adobe Campaign genom att köra följande kommando som `neolane` användare. Det här infogar **[!UICONTROL Technical Account]** autentiseringsuppgifter i instanskonfigurationsfilen.
-
-   ```sql
-   nlserver config -instance:<instance name> -setimsjwtauth:Organization_Id/Client_Id/Technical_Account_ID/<Client_Secret>/<Base64_encoded_Private_Key>
-   ```
-
-1. Du måste stoppa och sedan starta om servern för att ändringen ska kunna beaktas. Du kan också köra en `config -reload` -kommando.
+Följ stegen i [den här sidan](../../integrations/using/oauth-technical-account.md#add-credentials) för att lägga till dina OAuth-projektbehörigheter i Adobe Campaign.
 
 ### Steg 3: Validera konfigurationen
 

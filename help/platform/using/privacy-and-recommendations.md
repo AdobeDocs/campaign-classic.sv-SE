@@ -8,10 +8,10 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: d2451b62-bddf-4dee-8789-35aaae8348e1
-source-git-commit: 5d237d42adabe42a07bc759913dd9453df650671
+source-git-commit: b11185da8236d6100d98eabcc9dc1cf2cffa70af
 workflow-type: tm+mt
-source-wordcount: '1910'
-ht-degree: 97%
+source-wordcount: '1907'
+ht-degree: 95%
 
 ---
 
@@ -68,11 +68,14 @@ När integritet hanteras är det viktigt att definiera vilka data som ska hanter
 * **Personuppgifter** är information som direkt eller indirekt kan identifiera en levande individ.
 * **Känsliga personuppgifter** är information om en persons etnicitet, politiska åsikter, religiösa övertygelser, brottsregister, genetiska uppgifter, hälsouppgifter, sexuell läggning, biometriska uppgifter samt medlemskap i fackföreningar.
 
-När du integrerar Campaign med andra Experience Cloud-lösningar där målgrupper kan överföras från ett system till ett annat, som till exempel [Adobe Analytics](../../platform/using/gs-aa.md), [Audience Manager eller den grundläggande tjänsten People](../../integrations/using/sharing-audiences-with-adobe-experience-cloud.md), [Campaign Standard](../../integrations/using/synchronizing-audiences.md) eller med andra lösningar med [CRM-kopplingar](../../platform/using/crm-connectors.md) måste du vara extra noga med att skydda personuppgifter.
+När Campaign integreras med andra Experience Cloud-lösningar där målgrupper kan överföras från ett system till ett annat, som [Adobe Analytics](../../integrations/using/gs-aa.md), [Experience Cloud målgrupper](../../integrations/using/sharing-audiences-with-adobe-experience-cloud.md), [Campaign Standard](../../integrations/using/synchronizing-audiences.md)eller med andra lösningar genom [CRM Connectors](../../platform/using/crm-connectors.md)måste ni vara extra noga med att skydda personuppgifter.
 
 De [viktigaste föreskrifterna](#privacy-regulations) avser de olika enheter som hanterar data enligt följande:
+
 * Ett **personuppgiftsansvarig** är den myndighet som bestämmer syftet med att samla in, använda och dela personuppgifter och hur det ska göras.
+
 * Ett **personuppgiftsbiträde** är en individ eller part som samlar in, använder eller delar personuppgifter enligt den personuppgiftsansvariges anvisningar.
+
 * En **registrerad** är en levande individ vars personuppgifter samlas in, används eller delas och som direkt eller indirekt kan identifieras genom hänvisning till dessa personuppgifter.
 
 Som företag som samlar in och delar personuppgifter är du den personuppgiftsansvarige, dina kunder är de registrerade och Adobe Campaign fungerar som personuppgiftsbiträde när vi hanterar deras personuppgifter enligt dina anvisningar. Observera att det är ditt ansvar som personuppgiftsansvarige att hantera relationen med de registrerade såsom vid hantering av [förfrågningar om användarens information](#privacy-requests).

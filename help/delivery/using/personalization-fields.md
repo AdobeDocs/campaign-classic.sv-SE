@@ -6,10 +6,10 @@ badge-v8: label="Gäller även för v8" type="Positive" tooltip="Gäller även C
 feature: Personalization
 role: User
 exl-id: 67fd9a67-cb05-46cd-acd5-e42fde6f4d4f
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: 0cf7f249f366a6ef0e9bd0326ec14131fcf7dc18
 workflow-type: tm+mt
-source-wordcount: '891'
-ht-degree: 9%
+source-wordcount: '1024'
+ht-degree: 8%
 
 ---
 
@@ -115,6 +115,26 @@ Om personaliseringsfasen överskrider den maximala tiden som du anger i det här
 Standardvärdet är 5 sekunder.
 
 Om du ställer in det här alternativet på 0 kommer det inte att finnas någon tidsgräns för personaliseringsfasen.
+
+## Fliken Personalisering {#personalization-tab}
+
+I Leveransegenskaper har du fliken Personalisering.
+
+Du kan lägga till data i profilfrågan för måldimensionen genom att klicka på **&quot;Redigera inläsningsfråga för mottagarprofil&quot;**. Du kan använda de data som extraheras direkt i ett uttryck för att extrahera det du verkligen behöver. Dessa data läggs till i sammanhanget.
+
+![](assets/persotab-edit.png){zoomable="yes"}
+
+Om de data du vill lägga till inte finns i måldimensionen kan du klicka på **&quot;Lägg till objekt i körningskontexten för skripten&quot;**.
+
+![](assets/persotab_addobjects.png){zoomable="yes"}
+
+Där kan du välja vilket objektschema som du behöver och sedan använda dessa data i JavaScript-koden, som kommer att köras under leveransförberedelsen.
+
+![](assets/persotab_addobjects_articles.png){zoomable="yes"}
+
+Genom att lägga till objektschemat kan du markera de fält som du vill lägga till i kontexten:
+
+![](assets/persotab_addobjects_fields.png){zoomable="yes"}
 
 ## Självstudievideo {#personalization-fields-video}
 

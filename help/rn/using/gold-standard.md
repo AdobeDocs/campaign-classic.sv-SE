@@ -6,11 +6,12 @@ feature: Release Notes
 role: User
 level: Beginner
 hidefromtoc: true
+hide: true
 exl-id: 9e3a11b1-3070-4d90-91d5-7c559bdd500e
-source-git-commit: 1e738bb4a81e0d497dfe4cdacac33728f106c014
-workflow-type: ht
+source-git-commit: 8de62db2499449fc9966b6464862748e2514a774
+workflow-type: tm+mt
 source-wordcount: '1774'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -57,7 +58,7 @@ Build 9032@d030c36 innehåller följande korrigering:
 >
 > * Om du ansluter till Campaign med ditt Adobe ID via Adobe Identity Management Service (IMS), är uppgradering obligatoriskt för både Campaign-servern och klientkonsolen för att kunna ansluta till Campaign efter **den 30 juni 2021**. [Läs mer](../../technotes/using/ims-updates.md)
 > * Den här versionen innehåller en [säkerhetskorrigering](https://helpx.adobe.com/se/security/products/campaign/apsb21-04.html): Uppgraderingen är obligatorisk för att öka din miljösäkerhet.
-> * Om du använder integreringen av Experience Cloud Triggers via oAuth-autentisering måste du gå över till Adobe I/O som beskrivs [på den här sidan](../../integrations/using/configuring-adobe-io.md). Det inaktuella autentiseringsläget oAuth med Campaign [har tagits bort](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-discussions/adobe-analytics-legacy-api-end-of-life-notice/td-p/385411) i **september 2021**. Värdmiljöer drar nytta av en förlängning till **23 februari 2022**. Kontakta Adobes kundtjänst för att förlänga supporten till februari 2022 om du är en lokal- eller hybridkund. Du måste ange [AppID:et för OAuth-applikationen](../../integrations/using/configuring-pipeline.md#step-optional) till Adobe.
+> * Om du använder integreringen av Experience Cloud-utlösare via OAuth-autentisering måste du gå till Adobe I/O enligt beskrivningen [på den här sidan](../../integrations/using/about-triggers.md#implement). Det inaktuella autentiseringsläget oAuth med Campaign [har tagits bort](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-discussions/adobe-analytics-legacy-api-end-of-life-notice/td-p/385411) i **september 2021**. Värdmiljöer drar nytta av en förlängning till **23 februari 2022**. Kontakta Adobes kundtjänst för att förlänga supporten till februari 2022 om du är en lokal- eller hybridkund. Du måste ange [AppID:et för OAuth-applikationen](../../integrations/using/configuring-pipeline.md#step-optional) till Adobe.
 >
 >Läs mer i [[!DNL Gold Standard] avsnittet](../../rn/using/gold-standard.md)
 
@@ -79,7 +80,7 @@ Version 9032@d3b452f innehåller följande förbättringar och korrigeringar:
 
 * Anslutningsprotokollet har uppdaterats för att följa den nya IMS-autentiseringsmekanismen.
 
-* Integreringsautentisering för utlösare som ursprungligen baserades på oAUTH-autentiseringsinställningar för åtkomst till pipelines har nu ändrats och flyttats till Adobe I/O. [Läs mer](../../integrations/using/configuring-adobe-io.md)
+* Integreringsautentisering för utlösare som ursprungligen baserades på oAUTH-autentiseringsinställningar för åtkomst till pipelines har nu ändrats och flyttats till Adobe I/O. [Läs mer](../../integrations/using/about-triggers.md#implement)
 
 * Då [support för det äldre binära protokollet i iOS APN:er har upphört](https://developer.apple.com/news/?id=c88acm2b) uppdateras alla instanser som använder det här protokollet till HTTP/2-protokollet under efteruppgraderingen.
 

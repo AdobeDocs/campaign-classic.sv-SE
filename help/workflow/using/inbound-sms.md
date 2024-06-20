@@ -4,14 +4,14 @@ title: Inkommande SMS
 description: Läs mer om arbetsflödesaktiviteten för inkommande SMS
 feature: Workflows, Channels Activity
 exl-id: 94a9d50b-4ead-4815-8d12-942fa78b4e8a
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: 5c42ff45b4d0bc4d61f4fccdba4518801ea4c9da
 workflow-type: tm+mt
 source-wordcount: '106'
 ht-degree: 4%
 
 ---
 
-# Inkommande SMS{#inbound-sms}
+# Inkommande SMS {#inbound-sms}
 
 
 

@@ -3,21 +3,19 @@ product: campaign
 title: Krav för Campaign-installation i Linux
 description: Krav för Campaign-installation i Linux
 feature: Installation, Instance Settings
-badge-v7-prem: label="Endast lokal/hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=sv" tooltip="Gäller endast lokala och hybrida driftsättningar"
+badge-v7-prem: label="Endast på plats/hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=sv" tooltip="Gäller endast lokala distributioner och hybriddistributioner"
 audience: installation
 content-type: reference
 topic-tags: installing-campaign-in-linux-
 exl-id: acbd2873-7b1c-4d81-bc62-cb1246c330af
-source-git-commit: 14ba450ebff9bba6a36c0df07d715b7279604222
+source-git-commit: f032ed3bdc0b402c8281bc34e6cb29f3c575aaf9
 workflow-type: tm+mt
-source-wordcount: '917'
+source-wordcount: '829'
 ht-degree: 0%
 
 ---
 
 # Krav för att installera Campaign på Linux{#prerequisites-of-campaign-installation-in-linux}
-
-
 
 ## Programvarukrav {#software-prerequisites}
 
@@ -28,15 +26,12 @@ Den tekniska konfiguration och programkonfiguration som krävs för att installe
 Som en påminnelse måste följande komponenter installeras och konfigureras korrekt:
 
 * Apache, se [Kompatibilitetsmatris](../../rn/using/compatibility-matrix.md),
-* Java JDK och OpenJDK, se [Java Development Kit - JDK,](../../installation/using/application-server.md#java-development-kit---jdk)
+* Java JDK och OpenJDK, se [Java Development Kit - JDK](../../installation/using/application-server.md#jdk),
 * Bibliotek, se [Bibliotek](#libraries),
 * Lager för databasåtkomst, se [Åtkomstlager för databaser](#database-access-layers),
 * LibreOffice, se [Installerar LibraryOffice för Debian](#installing-libreoffice-for-debian) och [Installerar LibraryOffice för CentOS](#installing-libreoffice-for-centos),
 * Teckensnitt, se [Teckensnitt för MTA-statistik](#fonts-for-mta-statistics) och [Teckensnitt för japanska förekomster](#fonts-for-japanese-instances).
 
->[!NOTE]
->
->Om du vill installera ett bygge som är lägre än eller lika med 8 709 på plattformarna CentOS 7 och Debian 8 måste modulen apache access_compat vara aktiverad.
 
 ### Bibliotek {#libraries}
 
@@ -46,31 +41,13 @@ Om du vill installera Adobe Campaign i Linux måste du se till att du har de bib
 
   För att kontrollera detta kan du till exempel använda **kommandot uname -a | grep xen** .
 
-  Om kommandot inte returnerar något (tom rad) betyder det att konfigurationen är korrekt.
+  Om kommandot inte returnerar en tom rad betyder det att konfigurationen är korrekt.
 
 * Du måste ha OpenSSL-version **1.0.2** eller senare.
 
-  För RHEL 7/8-distributioner krävs version 1.0 av OpenSSL.
+  För RHEL-distributioner krävs version 1.0 av OpenSSL.
 
 * Om du vill använda Adobe Campaign måste du ha **libicu** bibliotek installerat.
-
-  Följande versioner av **libicu** stöds (32 eller 64 bitar):
-
-   * RHEL 7/8, CentOS 7: libicu50
-   * Debian 8: libicu52
-   * Debian 9: libicu57
-
-  Om du vill använda Adobe Campaign måste du ha biblioteket för biblioteksservrar installerat. Kör följande kommando på RHEL/CentOS:
-
-  ```
-  yum install c-ares
-  ```
-
-  På Debian:
-
-  ```
-  aptitude install libc-ares2
-  ```
 
 ### SELinux {#selinux}
 
@@ -94,7 +71,7 @@ I RHEL och CentOS noterades kompatibilitetsproblem med klientlagren i databaser 
 
 * Redigera filen **/etc/selinux/config**
 
-* Ändra SELINUX-raden på följande sätt:
+* Ändra SELINUX-raden enligt följande:
 
 ```
 SELINUX=disabled
@@ -102,51 +79,36 @@ SELINUX=disabled
 
 ### Teckensnitt för MTA-statistik {#fonts-for-mta-statistics}
 
-Om du vill att rapporter om MTA-statistik (nms/fra/jsp/stat.jsp) ska visas korrekt lägger du till teckensnitt.
-
-I Debian, lägg till kommandot:
-
-```
-aptitude install xfonts-base xfonts-75dpi ttf-bitstream-vera ttf-dejavu
-```
-
-Använd följande kommando i Redhat:
-
-* För CentOS/RHEL 7:
-
-  ```
-  yum install xorg-x11-fonts-base xorg-x11-fonts-75dpi bitstream-vera-fonts dejavu-lgc-fonts
-  ```
-
-* För RHEL 8:
-
-  ```
-  dnf install xorg-x11-fonts-misc xorg-x11-fonts-75dpi dejavu-lgc-sans-fonts  dejavu-sans-fonts dejavu-sans-mono-fonts dejavu-serif-fonts
-  ```
-
-### Teckensnitt för japanska förekomster {#fonts-for-japanese-instances}
-
-Teckensnitt med särskilda tecken krävs för de japanska instanserna för att du ska kunna exportera rapporterna till PDF-format.
+Lägg till teckensnitt för att rapporter om MTA-statistik (nms/fra/jsp/stat.jsp) ska visas korrekt.
 
 I Debian lägger du till kommandot:
 
 ```
-aptitude install fonts-ipafont
+apt install xfonts-base xfonts-75dpi ttf-bitstream-vera ttf-dejavu
 ```
 
-I Red Hat lägger du till kommandot:
+Använd följande kommando för RHEL:
 
-* För RHEL 7:
+```
+dnf install xorg-x11-fonts-misc xorg-x11-fonts-75dpi dejavu-lgc-sans-fonts  dejavu-sans-fonts dejavu-sans-mono-fonts dejavu-serif-fonts
+```
 
-  ```
-  yum install ipa-gothic-fonts ipa-mincho-fonts
-  ```
+### Teckensnitt för japanska förekomster {#fonts-for-japanese-instances}
 
-* För RHEL 8:
+Teckensnitt med specifika tecken är nödvändiga för de japanska instanserna för att kunna exportera rapporterna till PDF-format.
 
-  ```
-  dnf install vlgothic-fonts
-  ```
+I Debian, lägg till kommandot:
+
+```
+apt install fonts-ipafont
+```
+
+För RHEL lägger du till följande kommando:
+
+```
+dnf install epel-release # if required
+dnf install vlgothic-fonts
+```
 
 ### Installerar LibraryOffice för Debian {#installing-libreoffice-for-debian}
 
@@ -158,7 +120,7 @@ För Debian krävs följande konfigurationer:
    apt-get install libreoffice-writer libreoffice-calc libreoffice-java-common
    ```
 
-1. Installera följande teckensnitt (valfritt, men rekommenderas varmt för japanska förekomster):
+1. Installera följande teckensnitt (valfritt men rekommenderas starkt för japanska instanser):
 
    ```
    apt-get install fonts-ipafont
@@ -174,7 +136,7 @@ yum install libreoffice-headless libreoffice-writer libreoffice-calc
 
 ## Lager för databasåtkomst {#database-access-layers}
 
-Åtkomstlagren för databasmotorn som du använder måste vara installerade på servern och tillgängliga via Adobe Campaign-kontot. Versioner och installationslägen kan variera beroende på vilken databasmotor som används.
+Åtkomstlagren för den databasmotor du använder måste vara installerade på servern och vara tillgängliga via Adobe Campaign-kontot. Versioner och installationslägen kan variera beroende på vilken databasmotor som används.
 
 Pilotversionen som stöds finns i [Kompatibilitetsmatris](../../rn/using/compatibility-matrix.md).
 
@@ -182,41 +144,37 @@ Kontrollera även det allmänna [Databas](../../installation/using/database.md) 
 
 ### PostgreSQL {#postgresql}
 
-Adobe Campaign stöder alla versioner av PostgreSQL-klientbibliotek från version 7.2: (**libpq.so.5**, **libpq.so.4**, **libpq.so.3.2** och **libpq.so.3.1**).
+Adobe Campaign stöder alla versioner av PostgreSQL-klientbibliotek från version 9.6: **libpq.so.5**.
 
 Om du använder PostgreSQL med Adobe Campaign måste du även installera motsvarande **pgcrypto** bibliotek.
 
 ### Oracle {#oracle}
 
-Hämta biblioteksversionen för 64-bitars Debian, dvs: **libclntsh.so**, **libclntsh.so.11.1** och **libclntsh.so.10.1**.
+Hämta biblioteksversionen för 64-bitars Debian, d.v.s.: libclntsh.so, libclntsh.so.19.1 **,** libclntsh.so.18.1 **,** libclntsh.so.12.1 **,** libclntsh.so.11.1 **eller** libclntsh.so.10.1 **.******
 
 Du kan hämta ett Linux RPM-paket från Oracle Technology Network.
 
 >[!NOTE]
 >
->Om du redan har installerat Oracle-klienten men den globala miljön (till exempel /etc/profile) inte är korrekt konfigurerad, kan du lägga till saknad information i **nl6/customer.sh** skript Mer information finns i [Miljövariabler](../../installation/using/installing-packages-with-linux.md#environment-variables).
+>Om du redan har installerat Oracle-klienten men den globala miljön (till exempel: /etc/profile) inte är korrekt konfigurerad kan du lägga till information som saknas i nl6/customer.sh skriptet **Mer information finns i [Miljövariabler](../../installation/using/installing-packages-with-linux.md#environment-variables).**
 
-**Felsökning och bästa praxis**
+**Felsökning och metodtips**
 
-Problem kan uppstå efter en Oracle-klient- eller serveruppdatering, versionsändring eller vid den första installationen av instansen.
+Problem kan uppstå efter en Oraclena klient eller serveruppdatering, vid versionsändring eller vid den första installationen av instansen.
 
-Om du märker på klientkonsolen att det finns oväntade tidsfördröjningar (en eller flera timmar) i loggar, arbetsflödets senaste bearbetning, nästa bearbetning och så vidare, kan det finnas ett problem mellan Oracle-klientens bibliotek och Oracle Server. För att undvika sådana problem
+Om du på klientkonsolen ser att det finns oväntade tidsfördröjningar (en eller flera timmar) i loggar, senaste arbetsflödesbearbetning, nästa bearbetning och så vidare, kan det vara problem mellan Oraclets bibliotek och Oracle Server. För att undvika sådana problem
 
 1. Se till att du använder **fullständig klient**.
 
-   Olika problem har identifierats när du använder Oraclet Instant Client-version. Dessutom är det omöjligt att ändra tidszonsfilen på snabbklienten.
+   Olika problem har identifierats vid användning av Oracle Instant Client-versionen. Dessutom är det omöjligt att ändra tidszonsfilen på direktklienten.
 
-1. Se till att **klientversion** och **databasserverversion** är **samma**.
+1. Kontrollera att klientversionen och databasserverversionen **är desamma****.******
 
-   Att blanda versioner trots Oracles kompatibilitetsmatris och rekommendation att justera klient- och serverversioner är känt för att orsaka problem.
+   Att blanda versioner trots Oraclets kompatibilitetsmatris och rekommendation att justera klient- och serverversioner är känt för att orsaka problem.
 
-   Kontrollera också ORACLE_HOME värdet för att se till att det pekar på den förväntade klientversionen (om flera versioner är installerade på datorn).
+   Kontrollera även ORACLE_HOME-värdet för att se till att det pekar på den förväntade klientversionen (om flera versioner är installerade på datorn).
 
-1. Kontrollera att klienten och servern använder samma **tidszonsfil**.
-
-### DB2 (på engelska) {#db2}
-
-Den biblioteksversion som stöds är **libdb2.so**.
+1. Se till att klienten och servern använder samma **tidszonsfil**.
 
 ## Implementeringssteg {#implementation-steps}
 

@@ -5,7 +5,9 @@ description: Campaign - Analytics Connector - frågor och svar
 feature: Technote, Analytics Integration
 badge-v7-prem: label="Endast lokal/hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=sv" tooltip="Gäller endast för v7-driftsättningar på plats och hybriddriftsättningar"
 exl-id: 5bf61654-3d68-4560-a93f-7a768a2c5be4
-source-git-commit: 14ba450ebff9bba6a36c0df07d715b7279604222
+hide: true
+hidefromtoc: true
+source-git-commit: a1dbef3e1feca1e3347de013db8bd7809d315016
 workflow-type: tm+mt
 source-wordcount: '841'
 ht-degree: 1%
@@ -14,13 +16,11 @@ ht-degree: 1%
 
 # Så här migrerar du befintliga Genesis-integreringar till Adobe Analytics Connector {#acc-aa-faq}
 
-
-
 Från och med Campaign Classic v7 version 21.1.3 är Adobe Analytics Data Connector föråldrat. [Läs mer](https://experienceleague.adobe.com/docs/analytics/import/dataconnectors/data-connectors-eol.html)
 
 Den 1 augusti 2021 har Adobe Campaign Classic tagits bort från det tidigare Data Connectors-gränssnittet, men befintliga Campaign-integreringar kommer att fortsätta att samla in och skicka data till Adobe Analytics fram till den 17 augusti 2022. Efter detta datum upphör integreringen att samla in och skicka data till Adobe Analytics.
 
-Du **måste implementera** den nya integreringen av Adobe Analytics Connector på Adobe Exchange som ersätter den gamla Data Connectors-integreringen. Mer information om Adobe Analytics Connector finns i [den här sidan](../../platform/using/gs-aa.md).
+Du **måste implementera** den nya integreringen av Adobe Analytics Connector på Adobe Exchange som ersätter den gamla Data Connectors Integration. Mer information om Adobe Analytics Connector finns i [den här sidan](../../integrations/using/gs-aa.md).
 
 Om du har frågor om dessa ändringar kan du läsa [Vanliga frågor](#faq-aa). Mer information får du av [Adobe kundtjänst](https://helpx.adobe.com/se/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
 
@@ -46,7 +46,7 @@ Nu finns det en ny integrering mellan Campaign Classic v7 och Adobe Analytics. S
 
 Om du använder den befintliga Adobe Analytics Data Connector (som tidigare kallades Genesis-integrering) och integreringen implementerades på en lägre version än Campaign 21.1.3 påverkas du.
 
-Lär dig kontrollera din version [i det här avsnittet](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version).
+Lär dig kontrollera din version [i det här avsnittet](../../integrations/using/launching-adobe-campaign.md#getting-your-campaign-version).
 
 ## Hur uppdaterar jag?
 
@@ -55,7 +55,7 @@ Du måste uppgradera till Campaign 21.1.3 (eller mer) **före 17 augusti 2022**.
 Som värdkund kommer Adobe att arbeta med dig för att uppgradera dina instanser till den nyare versionen. Du kan sedan använda [Adobe Analytics Connector](../../platform/using/gs-aa.md).
 
 Som lokalt/hybridkund måste ni uppgradera till en av de nyare versionerna för att dra nytta av den nya integreringen.
-När alla instanser har uppgraderats kan du [implementera den nya integreringen](../../platform/using/adobe-analytics-provisioning.md) till Adobe Analytics Connector och säkerställa en smidig övergång.
+När alla instanser har uppgraderats kan du [implementera den nya integreringen](../../integrations/using/adobe-analytics-provisioning.md) till Adobe Analytics Connector och säkerställa en smidig övergång.
 
 ## Vanliga frågor och svar {#faq-aa}
 

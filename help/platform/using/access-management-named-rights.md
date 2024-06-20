@@ -7,16 +7,18 @@ feature: Access Management, Permissions
 role: User, Admin
 level: Beginner
 exl-id: 07470a91-d8d2-4c41-9555-05522c8068f0
-source-git-commit: 4661688a22bd1a82eaf9c72a739b5a5ecee168b1
+source-git-commit: 8aceafa362b80f6e34edfd91a71551a58501a3d0
 workflow-type: tm+mt
-source-wordcount: '499'
-ht-degree: 6%
+source-wordcount: '520'
+ht-degree: 5%
 
 ---
 
 # Använd namngivna rättigheter för att ställa in behörigheter{#named-rights}
 
-
+>[!NOTE]
+>
+>Den här sidan gäller endast för operatorer som ansluter till Campaign med inbyggd autentisering. För Adobe IMS-autentisering, se [den här dokumentationen](https://helpx.adobe.com/enterprise/using/manage-permissions-and-roles.html).
 
 Som standard föreslår Adobe Campaign en uppsättning namngivna rättigheter som gör att du kan definiera de behörigheter som tilldelats operatorer och grupper av operatorer. Dessa rättigheter kan redigeras via **[!UICONTROL Administration > Access management > Named rights]** trädnod.
 

@@ -6,7 +6,7 @@ feature: Installation, Architecture, Deployment
 role: Architect
 level: Beginner
 exl-id: a06b1365-d487-4df1-8f4a-7268b871a427
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: a38d53f4b37aadbc53446b5e399af2eae56c12af
 workflow-type: tm+mt
 source-wordcount: '615'
 ht-degree: 0%
@@ -55,7 +55,7 @@ Som en lokal kund ska du, innan du börjar distribuera Campaign Classic, ta hand
 
 ## Hybrid
 
-När Adobe Campaign-lösningen driftsätts som en hybridmodell finns den på plats hos kunden och körningshanteringen levereras som en molntjänst av Adobe. Adobe Campaign marknadsinstans installeras inuti en kunds brandvägg, så personligt identifierbar information (PII) finns kvar internt och endast data som krävs för att personalisera e-post skickas till molnet för e-postkörning. Körningsinstansen, som finns i molnet, tar emot förfrågningar från instansen On-Premise om att leverera e-postmeddelanden. Den här instansen personaliserar alla e-postmeddelanden och levererar dem. Inga data av något slag lagras permanent i molnet.
+När Adobe Campaign-lösningen driftsätts som en hybridmodell finns den på plats hos kunden och körningshanteringen levereras som en molntjänst av Adobe. Adobe Campaign marknadsinstans installeras inuti en kunds brandvägg, så personligt identifierbar information (PII) finns kvar internt och endast data som krävs för att personalisera e-post skickas till molnet för e-postkörning. Körningsinstansen, som finns i molnet, tar emot förfrågningar från den lokala instansen om att leverera e-postmeddelanden. Den här instansen personaliserar alla e-postmeddelanden och levererar dem. Inga data av något slag lagras permanent i molnet.
 
 ![](assets/deployment_hybrid.png)
 

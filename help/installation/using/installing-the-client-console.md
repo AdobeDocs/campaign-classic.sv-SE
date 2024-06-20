@@ -7,7 +7,7 @@ audience: installation
 content-type: reference
 topic-tags: installing-campaign-in-windows-
 exl-id: 7cc78214-92b8-4b1f-a307-96ec6af818d1
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: a38d53f4b37aadbc53446b5e399af2eae56c12af
 workflow-type: tm+mt
 source-wordcount: '1124'
 ht-degree: 0%
@@ -54,7 +54,7 @@ Som värdkund har du två alternativ för att installera eller uppdatera klientk
 
    **Användarna måste ha administratörsåtkomst för att kunna slutföra uppdateringen. Om användarna inte har administratörsbehörighet måste systemadministratören distribuera till alla klientkonsoler**
 
-## Hybrid- och On-Premise-implementeringar {#hybrid-onprem-customers}
+## Hybrid- och lokala implementeringar {#hybrid-onprem-customers}
 
 För att Adobe Campaign-användare ska kunna logga in på den instans som du har skapat och konfigurerat måste de använda klientkonsolen.
 

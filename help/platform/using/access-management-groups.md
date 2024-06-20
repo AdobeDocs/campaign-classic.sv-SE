@@ -7,16 +7,18 @@ feature: Access Management, Permissions
 role: User, Admin
 level: Beginner
 exl-id: d5833d3d-e8ef-4f2b-8084-4ba825c79525
-source-git-commit: 4e99ec73f99264e91ca427542e29bd42da88a3f9
+source-git-commit: 8aceafa362b80f6e34edfd91a71551a58501a3d0
 workflow-type: tm+mt
-source-wordcount: '512'
+source-wordcount: '533'
 ht-degree: 1%
 
 ---
 
 # Skapa och hantera operatorgrupper {#operator-groups}
 
-
+>[!NOTE]
+>
+>Dessa procedurer gäller endast för operatorer som ansluter till Campaign med inbyggd autentisering. För Adobe IMS-autentisering, se [den här dokumentationen](https://helpx.adobe.com/se/enterprise/using/user-groups.html).
 
 Operatorgrupper skapas via **[!UICONTROL Administration > Access management > Operator groups]** i trädet.
 

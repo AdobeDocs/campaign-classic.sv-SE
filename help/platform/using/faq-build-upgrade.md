@@ -7,15 +7,14 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: 85e2135d-a1a3-44f0-a4f9-de38db5c8726
-source-git-commit: 991ad88101468c3e7f5d676586dfdd05d63e7c6d
+source-git-commit: f39dc6077a7ddc3fb9b53d4082c08e65e7683f10
 workflow-type: tm+mt
-source-wordcount: '2042'
+source-wordcount: '2026'
 ht-degree: 0%
 
 ---
 
 # Vanliga frågor om uppgradering {#build-upgrade-faq}
-
 
 
 Adobe Campaign uppdateras regelbundet. Om du känner till vår publicerade [Versionsinformation](../../rn/using/rn-overview.md)är du antagligen medveten om att i genomsnitt 2/3 mindre versioner med nya funktioner släpps förbättringar och korrigeringar varje år. Dessutom släpper vi regelbundet bara byggen med kumulativa korrigeringar. Denna regelbundna uppdateringsfrekvens syftar till att få den senaste och bästa informationen i händerna, så att miljön är helt säker och så tydligt som möjligt förbättrar upplevelsen av vår produkt.
@@ -136,7 +135,7 @@ Nej. Under bygguppgraderingen stoppas både arbetsflödes- och e-posttjänster. 
 
 ## Fungerar mina spårningslänkar fortfarande under uppgraderingen?
 
-Spårning av länkar i e-postmeddelanden som redan har skickats kommer inte att fungera under uppgraderingen eftersom alla servrar har stoppats. De kommer att fungera igen när uppgraderingen är klar och servrarna har startats om.
+Från och med Campaign Classic v7.3.5 fungerar fortfarande spårning av länkar i e-postmeddelanden som redan har skickats under uppgraderingen.
 
 ## Måste jag vara tillgänglig under uppgraderingsprocessen?
 

@@ -6,10 +6,10 @@ title: Användarhandbok för Campaign Classic v7
 user-guide-description: Produktdokumentation för Adobe Campaign Classic v7.
 sub-product: adobe campaign classic
 type: Documentation
-source-git-commit: efd333aed2b14667dc95f92341fc16482f0fb6aa
-workflow-type: ht
-source-wordcount: '2548'
-ht-degree: 100%
+source-git-commit: 3307c75ed7df0fcd357dd7c684481c62e0457e04
+workflow-type: tm+mt
+source-wordcount: '2552'
+ht-degree: 99%
 
 ---
 
@@ -21,6 +21,7 @@ ht-degree: 100%
    + [Kom igång med uppgraderingar](rn/using/rn-overview.md)
    + [Senaste versionen](rn/using/latest-release.md)
    + Tidigare versioner {#previous-releases}
+      + [2024](rn/using/release-2024.md)
       + [2023](rn/using/release-2023.md)
       + [2022](rn/using/release-2022.md)
       + [2021](rn/using/release-2021.md)
@@ -36,6 +37,7 @@ ht-degree: 100%
          + [Kom igång med Campaign UI](platform/using/adobe-campaign-workspace.md)
          + [Använd Campaign Explorer](platform/using/adobe-campaign-explorer.md)
          + [Bläddra bland och anpassa listor](platform/using/adobe-campaign-ui-lists.md)
+      + [Kampanjkopplingar](platform/using/about-connectors.md)
       + Vanliga frågor och svar {#faq}
          + [De vanligaste frågorna](platform/using/common-questions.md)
          + [Globala begrepp](platform/using/faq-key-concepts.md)
@@ -100,17 +102,11 @@ ht-degree: 100%
    + Datapaket och uppräkningar {#administration-basics}
       + [Datapaket](platform/using/working-with-data-packages.md)
       + [Uppräkningar](platform/using/managing-enumerations.md)
-   + Kopplingar {#connectors}
-      + [Om kopplingar](platform/using/about-connectors.md)
-      + CRM-kopplingar{#crm-connectors}
-         + [Kom igång med CRM-kopplingar](platform/using/crm-connectors.md)
-         + [Anslut till Microsoft Dynamics 365](platform/using/crm-ms-dynamics.md)
-         + [Anslut till Salesforce.com](platform/using/crm-sfdc.md)
-         + [Synkronisera data med din CRM](platform/using/crm-data-sync.md)
-      + Adobe Analytics Connector{#analytics-connector}
-         + [Kom igång med Adobe Analytics Connector](platform/using/gs-aa.md)
-         + [Etablering av Adobe Analytics Connector](platform/using/adobe-analytics-provisioning.md)
-         + [Så här migrerar du till Adobe Analytics Connector](technotes/using/aa-connector-migration.md)
+   + CRM-anslutningar {#connectors}
+      + [Kom igång med CRM-kopplingar](platform/using/crm-connectors.md)
+      + [Anslut till Microsoft Dynamics 365](platform/using/crm-ms-dynamics.md)
+      + [Anslut till Salesforce.com](platform/using/crm-sfdc.md)
+      + [Synkronisera data med din CRM](platform/using/crm-data-sync.md)
    + [Hjälp- och supportalternativ](support.md)
 + Skapa och skicka meddelanden {#sending-messages}
    + [Kom igång med meddelanden](delivery/using/communication-channels.md)
@@ -355,7 +351,21 @@ ht-degree: 100%
    + [Användningsfall: skapa ett hänvisningsformulär](surveys/using/use-case-creating-a-refer-a-friend-form.md)
    + [Användningsfall: visa rapport om svar på en onlineundersökning](surveys/using/use-case-displaying-report-on-answers-to-an-online-survey.md)
 + Integrera med Adobe Experience Cloud {#integrating-with-adobe-experience-cloud}
-   + [Om integreringar i Campaign](integrations/using/about-campaign-integrations.md)
+   + [Kom igång med Campaign-integrationer](integrations/using/about-campaign-integrations.md)
+   + [Skapa ett Adobe-konto](integrations/using/oauth-technical-account.md)
+   + Utlösare i Adobe Experience Cloud {#experience-triggers}
+      + [Arbeta med [!DNL Experience Cloud Triggers]](integrations/using/about-triggers.md)
+      + [Konfigurera pipeline](integrations/using/configuring-pipeline.md)
+      + [Konfigurera händelser för anpassad implementering](integrations/using/events.md)
+      + [Övervaka pipelines](integrations/using/pipeline-monitoring.md)
+      + [Felsöka pipelines](integrations/using/pipeline-troubleshooting.md)
+   + Källor och destinationer i Adobe Experience Platform {#aep-sources-destinations}
+      + [Arbeta med källor och destinationer](integrations/using/get-started-sources-destinations.md)
+      + [Mata in målgrupper från Adobe Experience Platform i Campaign](integrations/using/ingest-aep-data.md)
+      + [Exportera data från Campaign till Adobe Experience Platform](integrations/using/export-campaign-data.md)
+   + Adobe Analytics Connector{#analytics-connector}
+      + [Kom igång med Adobe Analytics Connector](integrations/using/gs-aa.md)
+      + [Etablering av Adobe Analytics Connector](integrations/using/adobe-analytics-provisioning.md)
    + Dela målgrupper {#audience-sharing}
       + [Dela målgrupper med [!DNL Adobe Experience Cloud]](integrations/using/sharing-audiences-with-adobe-experience-cloud.md)
       + [Skicka förfrågningar till Adobe](integrations/using/submitting-request-to-adobe.md)
@@ -380,17 +390,6 @@ ht-degree: 100%
       + [Synkronisera målgrupper](integrations/using/synchronizing-audiences.md)
       + [Synkronisera webbapplikationer](integrations/using/synchronizing-web-applications.md)
       + [Felsök [!DNL ACS Connector]](integrations/using/troubleshooting-the-acs-connector.md)
-   + Utlösare i Adobe Experience Cloud {#experience-triggers}
-      + [Arbeta med [!DNL Experience Cloud Triggers]](integrations/using/about-triggers.md)
-      + [Konfigurera pipeline](integrations/using/configuring-pipeline.md)
-      + [Konfigurera Adobe I/O för [!DNL Experience Cloud Triggers]](integrations/using/configuring-adobe-io.md)
-      + [Konfigurera händelser för anpassad implementering](integrations/using/events.md)
-      + [Övervaka pipelines](integrations/using/pipeline-monitoring.md)
-      + [Felsöka pipelines](integrations/using/pipeline-troubleshooting.md)
-   + Källor och destinationer i Adobe Experience Platform {#aep-sources-destinations}
-      + [Arbeta med källor och destinationer](integrations/using/get-started-sources-destinations.md)
-      + [Mata in målgrupper från Adobe Experience Platform i Campaign](integrations/using/ingest-aep-data.md)
-      + [Exportera data från Campaign till Adobe Experience Platform](integrations/using/export-campaign-data.md)
 + Automatisera med arbetsflöden {#automating-with-workflows}
    + Kom igång med arbetsflöden {#introduction}
       + [Om arbetsflöden](workflow/using/about-workflows.md)
@@ -824,10 +823,12 @@ ht-degree: 100%
    + [Återställningsförfarande](migration/using/about-rollback.md)
 + Tekniska anmärkningar {#technotes}
    + [Rekommendationer på maskinvarustorlek](technotes/using/hardware-sizing.md)
-   + [Inkommande SMS-arbetsflödesaktivitet för mid-sourcingsinfrastruktur](technotes/using/inbound-SMS.md)
+   + [Inkommande SMS-arbetsflödesaktivitet för mid-sourcingsinfrastruktur](technotes/using/inbound-sms-wf.md)
    + Uppgradera till IMS{#ims}
+      + [Övergång till Adobe IMS](technotes/using/ac-ims.md)
       + [Migrera användare till IMS](technotes/using/migrate-users-to-ims.md)
       + [Migrera tekniska operatorer till Developer Console](technotes/using/ims-migration.md)
+      + [Gränssnittseffekt efter IMS-migrering](technotes/using/impact-ims-migration.md)
    + Uppgraderingar och kompatibilitet{#technote-migration}
       + [Tekniska anmärkningar](technotes/using/technote.md)
       + [Aktivera Microsoft Edge Chromium](technotes/using/edge-chromium.md)

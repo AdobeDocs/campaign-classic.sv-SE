@@ -7,16 +7,18 @@ audience: platform
 content-type: reference
 topic-tags: profile-management
 exl-id: f7dfbc22-4ac3-4b61-927f-34ecc4e35154
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: 8aceafa362b80f6e34edfd91a71551a58501a3d0
 workflow-type: tm+mt
-source-wordcount: '705'
+source-wordcount: '717'
 ht-degree: 1%
 
 ---
 
 # Uppdatera data{#updating-data}
 
-
+>[!NOTE]
+>
+>Den här sidan gäller endast för operatorer som ansluter till Campaign med inbyggd autentisering.
 
 De data som är länkade till en mottagares profil kan uppdateras manuellt eller automatiskt.
 

@@ -5,10 +5,10 @@ description: Lär dig hur du konfigurerar ditt mobilprogram för Android
 feature: Push
 role: User, Developer
 exl-id: 32c35e61-d0a3-478f-b73b-396e2becf7f9
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: 81b47231b027a189bc8b9029b7d48939734d08ed
 workflow-type: tm+mt
-source-wordcount: '849'
-ht-degree: 11%
+source-wordcount: '837'
+ht-degree: 9%
 
 ---
 
@@ -90,7 +90,7 @@ När du har skapat tjänsten måste du nu skapa ditt Android-program:
 
    ![](assets/nmac_android.png)
 
-1. Se till att samma **[!UICONTROL Integration key]** definieras i Adobe Campaign och i programkoden via SDK. Mer information om detta finns i [det här avsnittet](integrating-campaign-sdk-into-the-mobile-application.md).
+1. Se till att samma **[!UICONTROL Integration key]** definieras i Adobe Campaign och i programkoden via SDK. <!--For more on this, refer to [this section](integrating-campaign-sdk-into-the-mobile-application.md).-->
 
    >[!NOTE]
    >
@@ -156,4 +156,4 @@ Du måste utöka **appsubscriptionRcp** om du vill definiera nya fält för att 
 
    >[!CAUTION]
    >
-   >Kontrollera konfigurationsnamnen i dialogrutan **[!UICONTROL Subscription parameters]** -fliken är densamma som i mobilprogramkoden. Se [det här avsnittet](integrating-campaign-sdk-into-the-mobile-application.md).
+   >Kontrollera konfigurationsnamnen i dialogrutan **[!UICONTROL Subscription parameters]** -fliken är densamma som i mobilprogramkoden. <!--Refer to [this section](integrating-campaign-sdk-into-the-mobile-application.md).-->

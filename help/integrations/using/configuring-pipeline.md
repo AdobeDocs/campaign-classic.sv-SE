@@ -7,9 +7,9 @@ badge-v8: label="Gäller även för v8" type="Positive" tooltip="Gäller även C
 audience: integrations
 content-type: reference
 exl-id: 2d214c36-8429-4b2b-b1f5-fe2730581bba
-source-git-commit: 271e0f9fde0cbfb016e201c8390b26673d8fc696
+source-git-commit: b11185da8236d6100d98eabcc9dc1cf2cffa70af
 workflow-type: tm+mt
-source-wordcount: '875'
+source-wordcount: '833'
 ht-degree: 1%
 
 ---
@@ -31,19 +31,17 @@ Kontrollera att du har:
 * En utvecklaråtkomst till din organisation
 * En giltig utlösarkonfiguration i Adobe Analytics
 
-## Autentiserings- och konfigurationsfiler {#authentication-configuration}
-
-Autentisering krävs eftersom pipeline lagras i Adobe Experience Cloud. Den använder ett par offentliga och privata nycklar. Den här processen har samma funktion som en användare/ett lösenord, men är säkrare. Autentisering stöds för Marketing Cloud via Adobe Developer Project.
+Autentisering krävs eftersom pipeline lagras i Adobe Experience Cloud. Den använder en autentisering som stöds via ett Adobe Developer-projekt.
 
 ## Steg 1: Skapa/uppdatera ditt Adobe Developer-projekt {#creating-adobe-io-project}
 
-För kunder som har värdtjänster kan du samarbeta med din Adobe-representant/kundtjänst för att göra det möjligt för din organisation med Adobe Developer Kontotoken för integrering av utlösare.
+Du måste aktivera din organisation med Adobe Developer Kontotoken för integreringen av utlösare.
 
-För lokala kunder/hybridkunder, se [Konfigurera Adobe I/O för Adobe Experience Cloud Triggers](../../integrations/using/configuring-adobe-io.md) sida. Observera att du måste välja **[!UICONTROL Adobe Analytics]** när API lades till i Adobe Developer-autentiseringsuppgifter.
+Lär dig hur du skapar ditt Adobe-konto i [den här sidan](../../integrations/using/oauth-technical-account.md). Observera att du måste välja **[!UICONTROL Adobe Analytics]** när API lades till i Adobe Developer-autentiseringsuppgifter.
 
 ## Steg 2: Konfigurera alternativet för pipeline {#configuring-nmspipeline}
 
-När autentiseringen är klar hämtas händelserna. Det bearbetar bara utlösare som har konfigurerats i Adobe Campaign. Utlösaren måste ha genererats från Adobe Analytics och skickats till pipeline, som endast kommer att bearbeta utlösare som har konfigurerats i Adobe Campaign.
+När autentiseringen är inställd hämtas händelserna i pipeline. Den behandlar endast utlösare som har konfigurerats i Adobe Campaign. Utlösaren måste ha genererats från Adobe Analytics och skickats till pipeline, som endast kommer att bearbeta utlösare som har konfigurerats i Adobe Campaign.
 
 Alternativet kan också konfigureras med ett jokertecken för att fånga upp alla utlösare oavsett namn.
 
@@ -51,7 +49,7 @@ Alternativet kan också konfigureras med ett jokertecken för att fånga upp all
 
 1. Välj **[!UICONTROL NmsPipeline_Config]** alternativ.
 
-1. I **[!UICONTROL Value (long text)]** kan du klistra in följande JSON-kod som anger två utlösare. Du måste se till att ta bort kommentarer.
+1. I **[!UICONTROL Value (long text)]** kan du klistra in följande JSON-kod som anger två utlösare. Se till att du tar bort kommentarer.
 
    ```json
    {
@@ -111,7 +109,7 @@ Om du vill konfigurera alternativet för pipeline bör du följa dessa rekommend
 * den `pipelined`-processen har också stöd för ämnet&quot;alias&quot;.
 * Du bör alltid starta om `pipelined`när du har gjort ändringar.
 
-## Steg 3: Valfri konfiguration {#step-optional}
+## (valfritt) Steg 3: Ytterligare konfiguration {#step-optional}
 
 Du kan ändra vissa interna parametrar utifrån dina lastkrav, men se till att testa dem innan du använder dem i produktionsmiljön.
 
