@@ -4,9 +4,9 @@ title: Starta ett arbetsflöde
 description: Lär dig hur du startar ett arbetsflöde och identifierar arbetsflöden, verktygsfältet och högerklicksmenyn
 feature: Workflows
 exl-id: d345ba62-c2fb-43df-a2a1-e9e4292d301a
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: 98815fe0417f9126826e0273caa80888164793ec
 workflow-type: tm+mt
-source-wordcount: '1109'
+source-wordcount: '1172'
 ht-degree: 1%
 
 ---
@@ -64,6 +64,16 @@ Verktygsfältsknapparna beskrivs här [section](../../campaign/using/marketing-c
   Den här åtgärden avbryter och startar sedan om arbetsflödet. I de flesta fall går det att starta om snabbare. Det är också användbart att automatisera omstarten när stoppet tar en viss tid: det beror på att kommandot Stoppa inte är tillgängligt när arbetsflödet stoppas.
 
   The **[!UICONTROL Start / Pause / Stop / Restart]** åtgärder är också tillgängliga via körningsikonerna i verktygsfältet. Mer information om detta hittar du i det här [avsnittet](../../campaign/using/marketing-campaign-deliveries.md#creating-a-targeting-workflow).
+
+  Observera att **Starta om** åtgärden tar inte bort arbetsflödesinstansvariablerna jämfört med **Körning**, **Stoppa** och **Starta** åtgärder (instansvariablerna som rensas när Start-åtgärden utförs). När du startar om ett arbetsflöde är förekomstvariablerna fortfarande tillgängliga för användning med bevarade värden. Om du vill rensa dem kan du antingen:
+   * Utför **Stoppa** och **Starta** åtgärder.
+   * Lägg till nedan javascript-kod i slutet av arbetsflödeskörningen:
+
+     ```
+     var wkf = xtk.workflow.load(instance.id)
+     wkf.variables='<variables/>'
+     wkf.save()
+     ```
 
 * **[!UICONTROL Purge history]**
 
