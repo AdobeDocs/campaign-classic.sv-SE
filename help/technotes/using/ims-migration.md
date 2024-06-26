@@ -4,16 +4,16 @@ description: Lär dig hur du migrerar tekniska kampanjoperatörer till ett tekni
 feature: Technote
 role: Admin
 exl-id: 1a409daf-57be-43c9-a3d9-b8ab54c88068
-source-git-commit: c8ff250c1e4013d4c8271a3a388ddbabcfaeea38
+source-git-commit: af811b2df325efcaee38a967252b6952e67680d1
 workflow-type: tm+mt
-source-wordcount: '1744'
+source-wordcount: '1775'
 ht-degree: 0%
 
 ---
 
 # Migrering av tekniska aktörer från Campaign till Adobe Developer Console {#migrate-tech-users-to-ims}
 
-Som en del i arbetet med att stärka säkerhets- och autentiseringsprocessen, från och med Campaign Classic v7.3.5, förbättras autentiseringsprocessen till Campaign Classicen. Tekniska operatörer bör nu använda [Adobe Identity Management System (IMS)](https://helpx.adobe.com/enterprise/using/identity.html){target="_blank"} to connect to Campaign. Learn more about the new server to server authentication process in [Adobe Developer Console documentation](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/){target="_blank"}. **Adobe rekommenderar att du utför den här migreringen i Campaign v7.3.5 för att smidigt kunna migrera till Campaign v8.**
+Som en del i arbetet med att stärka säkerhets- och autentiseringsprocessen, från och med Campaign Classic v7.3.5, förbättras autentiseringsprocessen till Campaign Classicen. Tekniska operatörer bör nu använda [Adobe Identity Management System (IMS)](https://helpx.adobe.com/enterprise/using/identity.html){target="_blank"} för att ansluta till Campaign. Läs mer om autentiseringsprocessen från den nya servern till servern i [Adobe Developer Console-dokumentation](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/){target="_blank"}. **Adobe rekommenderar att du utför migreringen i v7 för att smidigt kunna migrera till Campaign v8.**
 
 En teknisk operator är en Campaign-användarprofil som uttryckligen har skapats för API-integrering. I den här artikeln beskrivs stegen som krävs för att migrera en teknisk operatör till ett tekniskt konto via Adobe Developer-konsolen.
 
@@ -21,7 +21,7 @@ En teknisk operator är en Campaign-användarprofil som uttryckligen har skapats
 
 Om du gör API-anrop från ett externt system till Campaign till antingen din Campaign Marketing-instans eller till meddelandecenterinstansen i realtid rekommenderar Adobe dig att migrera de tekniska operatörerna till tekniska konton via Adobe Developer Console enligt beskrivningen nedan.
 
-Den här ändringen gäller från och med Campaign Classic v7.3.5 (och senaste [IMS-migreringskompatibla versioner](#ims-versions-tech)) och är **obligatoriskt** för att gå över till Adobe Campaign v8.
+Den här ändringen gäller från och med Campaign Classic v7.3.5 (och senaste [IMS-migreringskompatibla versioner](ac-ims.md#ims-versions)) och är **obligatoriskt** för att gå över till Adobe Campaign v8.
 
 ## Migreringsprocess {#ims-migration-procedure}
 
@@ -31,20 +31,10 @@ En översikt över stegen är:
 
 * Skapa ett projekt i Adobe Developer Console
 * Tilldela lämpliga API:er till det nyskapade projektet
-* Bevilja nödvändiga kampanjproduktprofiler för projektet
-* Uppdatera dina API:er för att använda de nya inloggningsuppgifterna för det tekniska kontot
+* Bevilja nödvändiga kampanjproduktprofiler till projektet
+* Uppdatera dina API:er så att de använder de nya inloggningsuppgifterna för det tekniska kontot
 * Ta bort äldre tekniska operatorer från Campaign-instansen
 
-
-### IMS-migreringskompatibla versioner {#ims-versions-tech}
-
-En förutsättning för migreringen är att du uppgraderar miljön till någon av följande produktversioner:
-
-* Campaign v7.3.5 (rekommenderas)
-* Campaign v7.3.3.IMS
-* Campaign v7.3.2.IMS
-
-De här kampanjversionerna finns i [Versionsinformation](../../rn/using/latest-release.md).
 
 ### Krav för migreringen{#ims-migration-prerequisites}
 
@@ -52,7 +42,7 @@ De här kampanjversionerna finns i [Versionsinformation](../../rn/using/latest-r
 
 * Campaign Hosted och Managed Services
 
-  För API-anrop till Message Center-instansen/instanserna bör produktprofilen (som nämns nedan) skapas under uppgraderingen till Campaign v7.3.5 (eller andra [IMS-migreringskompatibel version](#ims-versions-tech)) eller under etableringen av instansen. Observera att om du inte ser produktprofilen bör du kontakta din Transition Manager eller kundsupport för att få produktprofilen skapad innan du startar IMS-migreringen. Den här produktprofilen heter:
+  För API-anrop till Message Center-instansen/instanserna bör produktprofilen (som nämns nedan) skapas under uppgraderingen till Campaign v7.4.1 (eller andra [IMS-migreringskompatibel version](ac-ims.md#ims-versions)) eller under etableringen av instansen. Observera att om du inte ser produktprofilen bör du kontakta din Transition Manager eller kundsupport för att få produktprofilen skapad innan du startar IMS-migreringen. Den här produktprofilen heter:
 
   `campaign - <your campaign marketing instance> - messagecenter`
 
@@ -170,9 +160,15 @@ Du måste nu uppdatera alla API-integreringar som gör anrop till Adobe Campaign
 
 Mer information om API-integreringssteg finns i kodexemplen nedan.
 
+När du använder IMS-autentisering (Adobe Identity Management System) bör du lägga till behörigheten Authorization: Bearer för att skapa en WSDL-fil &lt;ims_technical_token_token> på postmansamtalet:
+
+```
+curl --location --request POST 'https://<instance_url>/nl/jsp/schemawsdl.jsp?schema=nms:rtEvent' \--header 'Authorization: Bearer <Technical account access token>'
+```
+
 >[!BEGINTABS]
 
->[!TAB SOAP-anrop]
+>[!TAB SOAP]
 
 ```
 curl --location --request POST 'https://<instance_name>.campaign.adobe.com/nl/jsp/soaprouter.jsp' \
@@ -399,7 +395,7 @@ response = requests.post(url, headers=headers, data=xml_data)
 
 Mer information finns i [Autentiseringsdokumentation för Adobe Developer Console](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/){target="_blank"}.
 
-Nedan visas exempel på SOAP-anrop som visar före och efter migreringsanrop för tredjepartssystem.
+Nedan visas exempel på SOAP samtal som visar anrop före och efter migrering för tredjepartssystem.
 
 När migreringsprocessen har uppnåtts och validerats uppdateras Soap-anropen enligt nedan:
 
@@ -489,3 +485,12 @@ Observera att den tekniska kontoanvändaren INTE finns i Adobe Campaign förrän
 När du har migrerat alla tredjepartssystem för att använda det nya tekniska kontot med IMS-autentisering kan du ta bort den gamla tekniska operatorn från Campaign Client Console.
 
 Du gör detta genom att logga in på Campaign Client Console och navigera till **Administration > Åtkomsthantering > Operatorer** och hitta de gamla tekniska användarna och ta bort dem.
+
+
+>[!MORELIKETHIS]
+>
+>* [Migrering av slutanvändare till IMS](migrate-users-to-ims.md)
+>* [Uppdatera Campaign-gränssnittet efter IMS-migrering](impact-ims-migration.md)
+>* [Adobe Campaign Classic v7 senaste versionsinformation](../../rn/using/latest-release.md)
+>* [Vad är Adobe Identity Management System (IMS)](https://helpx.adobe.com/enterprise/using/identity.html){target="_blank"}
+

@@ -4,26 +4,26 @@ title: Dela
 description: Läs mer om aktiviteten Dela arbetsflöde
 feature: Workflows, Targeting Activity
 exl-id: 4204350a-c2d2-4033-9bdf-87b49d8211b9
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: 13eb777e96602ddd3463f721c6b2a3e6b67cb329
 workflow-type: tm+mt
-source-wordcount: '1946'
+source-wordcount: '1971'
 ht-degree: 0%
 
 ---
 
 # Dela{#split}
 
-
-
 A **Dela** Med aktiviteten -type kan du dela upp ett mål i flera deluppsättningar. Målet har konstruerats med alla mottagna resultat: alla tidigare aktiviteter måste därför ha avslutats för att den här aktiviteten ska kunna utföras.
 
 Denna aktivitet utlöser inte någon union av inkommande populationer. Om flera övergångar landar i en delad aktivitet rekommenderar vi att du infogar en **[!UICONTROL Union]** verksamhet framför den.
 
-Ett exempel på den delade aktivitet som används finns i [Skapa delmängder med aktiviteten Dela](targeting-data.md#creating-subsets-using-the-split-activity).
+>[!NOTE]
+>
+>Det går inte att utföra delade åtgärder för tabeller som har olika källor. Därför måste du lägga till en **Berikning** aktivitet före **Dela** aktivitet.
 
-Ett exempel som illustrerar hur du använder Dela-aktiviteten för att segmentera målet i olika populationer med filtervillkor beskrivs i [det här avsnittet](cross-channel-delivery-workflow.md).
-
-Ett exempel som visar hur du använder en förekomstvariabel i en delad aktivitet finns i [det här avsnittet](javascript-scripts-and-templates.md).
+* Ett exempel på den delade aktivitet som används finns i [Skapa delmängder med aktiviteten Dela](targeting-data.md#creating-subsets-using-the-split-activity).
+* Ett exempel som illustrerar hur du använder Dela-aktiviteten för att segmentera målet i olika populationer med filtervillkor beskrivs i [det här avsnittet](cross-channel-delivery-workflow.md).
+* Ett exempel som visar hur du använder en förekomstvariabel i en delad aktivitet finns i [det här avsnittet](javascript-scripts-and-templates.md).
 
 Om du vill konfigurera den här aktiviteten definierar du delmängdens innehåll och etikett i **[!UICONTROL Subsets]** och sedan välja måldimensionen i **[!UICONTROL General]** -fliken.
 
