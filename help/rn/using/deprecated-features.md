@@ -9,7 +9,7 @@ exl-id: d60d67de-6618-4f3b-be4a-ad7633ab5645
 source-git-commit: 33d06c00ca9c7cd0ff077341df2b5b52ddf747a4
 workflow-type: tm+mt
 source-wordcount: '1636'
-ht-degree: 92%
+ht-degree: 99%
 
 ---
 
@@ -44,8 +44,8 @@ Kunder uppmanas att se över om de använder funktionen i den aktuella driftsät
    <td><strong>Information</strong></td>
   </tr>
   <tr>
- <td>Kampanj (Neolane) - äldre SDK</td>
- <td><p>Kampanjens (Neolane) SDK för mobilprogram är nu föråldrat. Använd i stället Adobe Experience Platform Mobile SDK genom att konfigurera tillägget Adobe Campaign i användargränssnittet för datainsamling. Adobe Experience Platform Mobile SDK hjälper er att driva lösningar och tjänster från Adobe Experience Cloud i era mobilappar. SDK-konfigurationen hanteras via användargränssnittet för datainsamling för flexibel konfiguration och utbyggbara, regelbaserade integreringar. Lär dig hur du konfigurerar mobilappskanalen i <a href="https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/push/push-settings">Kampanjdokumentation v8</a>.</p>
+ <td>Campaign (Neolane) – äldre SDK</td>
+ <td><p>SDK:et för mobilprogram i Campaign (Neolane) är nu föråldrat. Du kan istället använda mobil-SDK:et i Adobe Experience Platform genom att konfigurera Adobe Campaign-tillägget i användargränssnittet för datainsamling. Mobil-SDK:et i Adobe Experience Platform hjälper dig att driva lösningar och tjänster från Adobe Experience Cloud i dina mobilappar. Konfigurationen av SDK:er hanteras via användargränssnittet för datainsamling för flexibel konfiguration och utbyggbara, regelbaserade integreringar. Läs om hur du konfigurerar mobilappskanalen i <a href="https://experienceleague.adobe.com/sv/docs/campaign/campaign-v8/send/push/push-settings">dokumentationen om Campaign v8</a>.</p>
 <p>Måldatum: Sommaren 2025 </p>
 </td>
 </tr>
@@ -88,7 +88,7 @@ I det här avsnittet visas funktioner som har tagits bort från Campaign Classic
  </tr>
   <tr>
   <td>OAuth-autentisering (OAuth och JWT)<br></td>
-  <td><p> Integreringsautentisering med utlösare som ursprungligen baserades på OAuth-autentiseringsinställningar för åtkomst av pipeline har nu ändrats och flyttats till Adobe I/O. Autentiseringsläget har tagits bort i Campaign 20.3.<p>
+  <td><p> Integreringsautentisering med utlösare som ursprungligen baserades på OAuth-autentiseringsinställningar för åtkomst till pipeline har nu ändrats och flyttats till Adobe I/O. Det här autentiseringsläget har nu fasats ut med Campaign version 20.3.<p>
   <p>Om du använde integrering med utlösare kan du lära dig hur du anpassar implementeringen <a href="../../integrations/using/about-triggers.md#implement">på den här sidan</a>.</p> 
   <p>Mer information om inaktuell OAauth-autentisering finns på den här <a href="https://github.com/AdobeDocs/analytics-1.4-apis/blob/master/docs/APIEOL.md">sidan</a></p> 
   <!--p><em>Target removal date: October 20, 2021. Hosted environments benefit from an extension until May 25, 2022. </em></p-->
