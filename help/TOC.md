@@ -7,9 +7,9 @@ user-guide-description: Produktdokumentation för Adobe Campaign Classic v7.
 sub-product: adobe campaign classic
 type: Documentation
 source-git-commit: 3307c75ed7df0fcd357dd7c684481c62e0457e04
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2552'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -102,7 +102,7 @@ ht-degree: 99%
    + Datapaket och uppräkningar {#administration-basics}
       + [Datapaket](platform/using/working-with-data-packages.md)
       + [Uppräkningar](platform/using/managing-enumerations.md)
-   + CRM-anslutningar {#connectors}
+   + CRM-kopplingar {#connectors}
       + [Kom igång med CRM-kopplingar](platform/using/crm-connectors.md)
       + [Anslut till Microsoft Dynamics 365](platform/using/crm-ms-dynamics.md)
       + [Anslut till Salesforce.com](platform/using/crm-sfdc.md)
@@ -352,7 +352,7 @@ ht-degree: 99%
    + [Användningsfall: visa rapport om svar på en onlineundersökning](surveys/using/use-case-displaying-report-on-answers-to-an-online-survey.md)
 + Integrera med Adobe Experience Cloud {#integrating-with-adobe-experience-cloud}
    + [Kom igång med Campaign-integrationer](integrations/using/about-campaign-integrations.md)
-   + [Skapa ett Adobe-konto](integrations/using/oauth-technical-account.md)
+   + [Skapa ett tekniskt Adobe-konto](integrations/using/oauth-technical-account.md)
    + Utlösare i Adobe Experience Cloud {#experience-triggers}
       + [Arbeta med [!DNL Experience Cloud Triggers]](integrations/using/about-triggers.md)
       + [Konfigurera pipeline](integrations/using/configuring-pipeline.md)
@@ -825,10 +825,10 @@ ht-degree: 99%
    + [Rekommendationer på maskinvarustorlek](technotes/using/hardware-sizing.md)
    + [Inkommande SMS-arbetsflödesaktivitet för mid-sourcingsinfrastruktur](technotes/using/inbound-sms-wf.md)
    + Uppgradera till IMS{#ims}
-      + [Övergång till Adobe IMS](technotes/using/ac-ims.md)
+      + [Gå över till Adobe IMS](technotes/using/ac-ims.md)
       + [Migrera användare till IMS](technotes/using/migrate-users-to-ims.md)
       + [Migrera tekniska operatorer till Developer Console](technotes/using/ims-migration.md)
-      + [Gränssnittseffekt efter IMS-migrering](technotes/using/impact-ims-migration.md)
+      + [Påverkan på gränssnitt efter IMS-migrering](technotes/using/impact-ims-migration.md)
    + Uppgraderingar och kompatibilitet{#technote-migration}
       + [Tekniska anmärkningar](technotes/using/technote.md)
       + [Aktivera Microsoft Edge Chromium](technotes/using/edge-chromium.md)

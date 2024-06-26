@@ -4,9 +4,9 @@ product: campaign
 title: Produktdokumentation för Adobe Campaign Classic v7
 exl-id: 6b3f1689-80de-49fd-b7ee-7a2a1931d157
 source-git-commit: fb19195c7331a2adc0bcf7a37ae7678078dce5e6
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '353'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
@@ -21,7 +21,7 @@ Få en glimt av de senaste förbättringarna i produkterna och dokumentationen f
 >[!BEGINTABS]
 
 
->[!TAB Juniversionen är live!]
+>[!TAB Juni-versionen är här!]
 
 Upptäck uppdateringar, förbättringar och korrigeringar som ingår i Campaign Classic v7.4.1.
 
@@ -113,4 +113,4 @@ Vissa viktiga ändringar av tjänsten Android Firebase Cloud Messaging (FCM) kom
 
 ## Ytterligare resurser
 
-[Lista över felmeddelanden](https://experienceleague.adobe.com/developer/campaign-errors/error_codes.html?lang=sv) - [Adobe Campaign produktbeskrivning](https://helpx.adobe.com/se/legal/product-descriptions/adobe-campaign-managed-cloud-services.html){target="_blank"} - [Kompatibilitetsmatris](rn/using/compatibility-matrix.md) - [Tutorials](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=sv){target="_blank"} - [Kontrollpanelen för Campaign](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/key-features.html?lang=sv){target="_blank"}
+[Lista över felmeddelanden](https://experienceleague.adobe.com/developer/campaign-errors/error_codes.html?lang=sv) – [Produktbeskrivning för Adobe Campaign ](https://helpx.adobe.com/se/legal/product-descriptions/adobe-campaign-managed-cloud-services.html){target="_blank"} – [Kompatibilitetsmatris](rn/using/compatibility-matrix.md) – [Självstudiekurser](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=sv){target="_blank"} - [Kontrollpanel för Campaign](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/key-features.html?lang=sv){target="_blank"}

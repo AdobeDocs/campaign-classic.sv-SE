@@ -9,9 +9,9 @@ hidefromtoc: true
 hide: true
 exl-id: 9e3a11b1-3070-4d90-91d5-7c559bdd500e
 source-git-commit: 8de62db2499449fc9966b6464862748e2514a774
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1774'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -58,7 +58,7 @@ Build 9032@d030c36 innehåller följande korrigering:
 >
 > * Om du ansluter till Campaign med ditt Adobe ID via Adobe Identity Management Service (IMS), är uppgradering obligatoriskt för både Campaign-servern och klientkonsolen för att kunna ansluta till Campaign efter **den 30 juni 2021**. [Läs mer](../../technotes/using/ims-updates.md)
 > * Den här versionen innehåller en [säkerhetskorrigering](https://helpx.adobe.com/se/security/products/campaign/apsb21-04.html): Uppgraderingen är obligatorisk för att öka din miljösäkerhet.
-> * Om du använder integreringen av Experience Cloud-utlösare via OAuth-autentisering måste du gå till Adobe I/O enligt beskrivningen [på den här sidan](../../integrations/using/about-triggers.md#implement). Det inaktuella autentiseringsläget oAuth med Campaign [har tagits bort](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-discussions/adobe-analytics-legacy-api-end-of-life-notice/td-p/385411) i **september 2021**. Värdmiljöer drar nytta av en förlängning till **23 februari 2022**. Kontakta Adobes kundtjänst för att förlänga supporten till februari 2022 om du är en lokal- eller hybridkund. Du måste ange [AppID:et för OAuth-applikationen](../../integrations/using/configuring-pipeline.md#step-optional) till Adobe.
+> * Om du använder integreringen av Experience Cloud Triggers via oAuth-autentisering måste du gå över till Adobe I/O såsom beskrivs [på den här sidan](../../integrations/using/about-triggers.md#implement). Det inaktuella autentiseringsläget oAuth med Campaign [har tagits bort](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-discussions/adobe-analytics-legacy-api-end-of-life-notice/td-p/385411) i **september 2021**. Värdmiljöer drar nytta av en förlängning till **23 februari 2022**. Kontakta Adobes kundtjänst för att förlänga supporten till februari 2022 om du är en lokal- eller hybridkund. Du måste ange [AppID:et för OAuth-applikationen](../../integrations/using/configuring-pipeline.md#step-optional) till Adobe.
 >
 >Läs mer i [[!DNL Gold Standard] avsnittet](../../rn/using/gold-standard.md)
 
@@ -505,7 +505,7 @@ Det här avsnittet listar alla system och komponenter som stöds för versioner 
 </tbody>
 </table>
 
-### Mobilt SDK{#MobileSDK}
+### Mobil-SDK{#MobileSDK}
 
 <table>
 <tbody>

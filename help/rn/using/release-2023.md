@@ -7,9 +7,9 @@ role: User
 level: Beginner
 exl-id: 8ed11e96-9f23-4e2e-bae2-25c51cfb549a
 source-git-commit: f39dc6077a7ddc3fb9b53d4082c08e65e7683f10
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2337'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -32,7 +32,7 @@ _5 december 2023_
 
 ### Andra förbättringar {#release-7-3-5-other}
 
-Från och med den här versionen kommer spårning av länkar i e-postmeddelanden som redan har skickats fortfarande att fungera under uppgraderingen. [Läs mer](../../platform/using/faq-build-upgrade.md)
+Från och med den här versionen fungerar fortfarande spårning av länkar i e-postmeddelanden som redan har skickats under uppgraderingen. [Läs mer](../../platform/using/faq-build-upgrade.md)
 
 ### Korrigeringar {#release-7-3-5-patches}
 
@@ -140,7 +140,7 @@ _20 mars 2023_
 * Arbetsflödet för fakturering har förbättrats för att optimera prestanda. (NEO-47658)
 * Arbetsflödet för spårning har förbättrats för att optimera prestanda om leveransstorleken är hög. (NEO-45064)
 * Spårningshanteraren har förbättrats för att åtgärda eventuella problem med dynamiska parametrar i URL:er. Spårningshanteraren v3 hanterar nu URL:er av typen ajax (med parametrar efter ”#”) och förhindrar att verktyg från tredje part ändrar spårnings-URL:er. Om du vill tillämpa den här ändringen måste du kontakta Adobe. (NEO-46535)
-* Från och med den här versionen kommer spårning av länkar i e-postmeddelanden som redan har skickats fortfarande att fungera under uppgraderingen. [Läs mer](../../platform/using/faq-build-upgrade.md)
+* Från och med den här versionen fungerar fortfarande spårning av länkar i e-postmeddelanden som redan har skickats under uppgraderingen. [Läs mer](../../platform/using/faq-build-upgrade.md)
 
 <!--To apply this change, the marketing, tracking and mid servers need to be updated to 7.3.3. To enable the new tracking management mode, set the `emailLinksVersion` parameter to '3' in the configuration file of the marketing server. (NEO-46535)-->
 
@@ -182,7 +182,7 @@ Läs mer i [kompatibilitetsmatrisen för Campaign](../../rn/using/compatibility-
 * Google BigQuery-anslutningen har nu fullständigt stöd för booleska fält. (NEO-49181)
 * Nu kan du konfigurera giltighetsperioden för IMS-cookies i avsnittet `Configuration for the redirection service` i filen serverConf.xml. Detta gäller följande cookies: `uuid230`, `nllastdelid` och `AMCV_` (NEO-42541)
 * IP-adressen kan nu döljas i begäran /r/test genom att ange `showSourceIP` som felaktig i omdirigeringsnoden för filen serverConf.xml. [Läs mer](../../installation/using/the-server-configuration-file.md#redirection-redirection)(NEO-46656)
-* Från och med den här versionen kommer spårning av länkar i e-postmeddelanden som redan har skickats fortfarande att fungera under uppgraderingen. [Läs mer](../../platform/using/faq-build-upgrade.md)
+* Från och med den här versionen fungerar fortfarande spårning av länkar i e-postmeddelanden som redan har skickats under uppgraderingen. [Läs mer](../../platform/using/faq-build-upgrade.md)
 
 
 ### Inaktuella funktioner  {#release-7-3-2-deprecated}

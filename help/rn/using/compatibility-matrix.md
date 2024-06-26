@@ -7,21 +7,21 @@ role: User
 level: Beginner
 exl-id: b8c1f287-06f4-4c34-8cca-b0c7676abbc2
 source-git-commit: b23632d0718d62d61e94e636937b93aa39bbe43f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '840'
-ht-degree: 63%
+ht-degree: 100%
 
 ---
 
 # Kompatibilitetsmatris {#compatibility-matrix}
 
-I [senaste versionen](../../rn/using/latest-release.md)är Adobe Campaign Classic v7 kompatibelt med alla system och verktyg som listas på den här sidan. När specifika versioner av dessa system och verktyg från tredje part når slutet av sin livscykel med sina respektive utgivare är Adobe Campaign inte längre kompatibelt med dessa versioner. De tas sedan bort från vår kompatibilitetsmatris i följande produktversion. Kontrollera att du har de versioner av system som stöds i den här kompatibilitetsmatrisen för att undvika problem. Besök [den här sidan](../../rn/using/deprecated-features.md) för mer information om inaktuella objekt.
+Den [senaste versionen](../../rn/using/latest-release.md) av Adobe Campaign Classic v7 är kompatibel med alla system och verktyg på den här sidan. När specifika versioner av dessa system och verktyg från tredje part når slutet av sin livscykel med sina respektive utgivare är Adobe Campaign inte längre kompatibelt med dessa versioner. De tas sedan bort från vår kompatibilitetsmatris i följande produktversion. Se till att du använder versioner av system som stöds i kompatibilitetsmatrisen för att undvika problem. Besök [den här sidan](../../rn/using/deprecated-features.md) för mer information om inaktuella objekt.
 
 Om inget annat anges stöds alla mindre versioner.
 
 >[!CAUTION]
 >
->Den här matrisen uppdateras regelbundet med nya system och verktyg som stöds som läggs till och tas bort.
+>Den här matrisen uppdateras regelbundet med nya system och verktyg som stöds och inaktuella som tas bort.
 
 ## Operativsystem {#OperatingSystems}
 
@@ -31,7 +31,7 @@ Om du är en lokal/hybrid-kund måste du installera Adobe Campaign i något av o
 <tbody> 
 <td><strong>Operativsystem</strong></td>
 <td><strong>Operativsystemversion</strong></td>
-<td><strong>Lägsta kampanjversion</strong></td>
+<td><strong>Lägsta Campaign-version</strong></td>
 <tr> 
 <td>CentOs</td>
 <td>
@@ -83,7 +83,7 @@ Om du är en lokal/hybrid-kund måste du installera Adobe Campaign i något av o
 
 >[!IMPORTANT]
 >
->Om du använder RHEL måste du kunna inaktivera [SELinux](../../installation/using/prerequisites-of-campaign-installation-in-linux.md#selinux) eller låta arkitekterna skriva anpassade SELinux-regler för att kontrollera att en aktiverad SELinux inte orsakar problem med Campaign-åtgärder.
+>Om du använder RHEL måste du kunna inaktivera [SELinux](../../installation/using/prerequisites-of-campaign-installation-in-linux.md#selinux) eller låta dina utvecklare skriva anpassade SELinux-regler för att kontrollera att en aktiverad SELinux inte orsakar problem med åtgärder i Campaign.
 
 ## Webbservrar {#WebServers}
 
@@ -114,7 +114,7 @@ Som lokal kund/hybridkund måste du installera och konfigurera de verktyg som an
 <tbody>
 <td><strong>Verktyg</strong></td>
 <td><strong>Version</strong></td>
-<td><strong>Minimal kampanjversion</strong></td>
+<td><strong>Lägsta Campaign-version</strong></td>
 <tr>
 <td><p>Java Development Kit (JDK)</p>
 <p>Läs mer på <a href="../../installation/using/application-server.md#jdk" target="_blank">den här sidan</a>.</p>
@@ -127,8 +127,8 @@ Som lokal kund/hybridkund måste du installera och konfigurera de verktyg som an
 </td>
 <td>
 <p>krävs från och med v7.4.1</p>
-<p>till v7.4.1</p>
-<p>till v7.4.1</p>
+<p>tills v7.4.1</p>
+<p>tills v7.4.1</p>
 </tr>
 <tr>
 <td><p>Libre Office</p></td>
@@ -159,7 +159,7 @@ Om du är en lokal kund/hybridkund måste du installera och konfigurera en av de
 <tbody>
 <td><strong>Databassystem</strong></td>
 <td><strong>Databasversion</strong></td>
-<td><strong>Lägsta kampanjversion</strong></td>
+<td><strong>Lägsta Campaign-version</strong></td>
 <tr>
 <td>Oracle</td>
 <td>
@@ -218,7 +218,7 @@ Om du är en lokal kund/hybridkund måste du installera och konfigurera en av de
 >
 >* Microsoft SQL Server stöds inte som primär databas när Campaign-servern körs i Linux. [Läs mer](../../installation/using/prerequisites-of-campaign-installation-in-linux.md#database-access-layers).
 >
->* Du kan också använda Amazon RDS för PostgreSQL med de versioner som anges ovan.
+>* Du kan också använda Amazon RDS för PostgreSQL med versionerna som anges ovan.
 >
 >* PostgreSQL är RDBMS för värd/hanterade molntjänstmiljöer.
 
@@ -254,7 +254,7 @@ Miljöerna **Managed Services** (värd), **Hybrid** och **Lokal** kan ansluta Ca
 <tbody>
 <td><strong>Databassystem</strong></td>
 <td><strong>Databasversion</strong></td>
-<td><strong>Lägsta kampanjversion</strong></td>
+<td><strong>Lägsta Campaign-version</strong></td>
 <tr>
 <td>Amazon Redshift</td>
 <td><p> </p>
@@ -295,7 +295,7 @@ Miljöerna **Hybrid** och **Lokal** kan dessutom ansluta Campaign till följande
 <tbody>
 <td><strong>Databassystem</strong></td>
 <td><strong>Databasversion</strong></td>
-<td><strong>Lägsta kampanjversion</strong></td>
+<td><strong>Lägsta Campaign-version</strong></td>
 <tr>
 <td>Microsoft Azure Synapse Analytics</td>
 <td> </td>
@@ -344,7 +344,7 @@ Miljöerna **Hybrid** och **Lokal** kan dessutom ansluta Campaign till följande
 </tr>
 <tr><td>SQL Server</td>
 <td>
-<p>2022 (med början Campaign v7.4)</p>
+<p>2022 (från och med Campaign v7.4)</p>
 <p>2019</p>
 <p>2017</p>
 <p>2016</p>
@@ -391,7 +391,7 @@ Följande operativsystem och webbläsare **krävs** för att använda [klientkon
 <tbody>
 <td><strong>System</strong></td>
 <td><strong>OS-version</strong></td>
-<td><strong>Minimal kampanjversion</strong></td>
+<td><strong>Lägsta Campaign-version</strong></td>
 <tr>
 <td>Microsoft Windows</td>
 <td>
@@ -426,9 +426,9 @@ Ladda ned Microsoft Edge WebView2 från [webbplatsen för Microsoft Developer](h
 
 ## Mobil-SDK {#MobileSDK}
 
-Du kan använda Campaign för [skicka push-meddelanden](../../delivery/using/about-mobile-app-channel.md), via Adobe Experience Platform Mobile SDK genom att konfigurera Adobe Campaign-tillägget i användargränssnittet för datainsamling.
+Du kan också använda Campaign för att [skicka pushnotiser](../../delivery/using/about-mobile-app-channel.md) via mobil-SDK:et i Adobe Experience Platform genom att konfigurera Adobe Campaign-tillägget i användargränssnittet för datainsamling.
 
-Kampanjens SDK är [inaktuell](deprecated-features.md) starta Campaign v7.4. För att säkerställa en smidig övergång för befintlig implementering till AEP Mobile SDK kan du fortfarande använda den i de operativsystem som listas nedan<!--, using the associated [mobile SDK](../../delivery/using/integrating-campaign-sdk-into-the-mobile-application.md)-->.
+Campaign-SDK:et är [inaktuellt](deprecated-features.md) från och med Campaign v7.4. För att säkerställa en smidig övergång för den befintlig implementeringen till AEP mobilt SDK kan du fortfarande använda det i operativsystemen som anges nedan<!--, using the associated [mobile SDK](../../delivery/using/integrating-campaign-sdk-into-the-mobile-application.md)-->.
 
 
 <table>
@@ -436,7 +436,7 @@ Kampanjens SDK är [inaktuell](deprecated-features.md) starta Campaign v7.4. Fö
 <tr>
 <td>Google Android</td>
 <td>
-<p>7-14</p>
+<p>7–14</p>
 <p>med mobil SDK version 1.1.1.</p>
 <p>Android 13 och 14 stöds från och med Campaign v7.4.</p>
 <p>Android 12 stöds från och med Campaign v7.3.</p>
@@ -445,7 +445,7 @@ Kampanjens SDK är [inaktuell](deprecated-features.md) starta Campaign v7.4. Fö
 <tr>
 <td>Apple iOS</td>
 <td>
-<p>iOS 9 - 17</p>
+<p>iOS 9–17</p>
 <p>med mobil SDK version 1.0.26.</p>
 <p>Apple iOS 15 stöds från och med Campaign v7.3. </p>
 <p>Apple iOS 16 och 17 stöds från och med Campaign v7.4.</p>
@@ -468,7 +468,7 @@ Följande webbläsare, i sin senaste versionen, är kompatibla med Campaign för
 >[!MORELIKETHIS]
 >
 >* [Versionsinformation om Campaign Classic ](../../rn/using/latest-release.md)
->* [Kampanjens allmänna arkitektur](../../installation/using/general-architecture.md)
->* [Rekommendationer för maskinvarustorlek](../../technotes/using/hardware-sizing.md)
+>* [Allmän arkitektur i Campaign](../../installation/using/general-architecture.md)
+>* [Rekommendationer på maskinvarustorlek](../../technotes/using/hardware-sizing.md)
 >* [Inaktuella funktioner och system](../../rn/using/deprecated-features.md)
 >* [Procedur för versionsuppgradering](../../production/using/build-upgrade.md)
