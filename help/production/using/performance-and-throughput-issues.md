@@ -8,16 +8,14 @@ audience: production
 content-type: reference
 topic-tags: troubleshooting
 exl-id: fe69efda-a052-4f67-9c13-665f011d0a2b
-source-git-commit: 14ba450ebff9bba6a36c0df07d715b7279604222
+source-git-commit: 6803b6628313db9108a191fd143dac68ee799149
 workflow-type: tm+mt
-source-wordcount: '696'
+source-wordcount: '738'
 ht-degree: 2%
 
 ---
 
 # Prestanda- och dataflödesproblem{#performance-and-throughput-issues}
-
-
 
 Först och främst bör du kontrollera att du har den senaste versionen installerad. Detta garanterar att du har de senaste funktionerna och felkorrigeringarna.
 
@@ -54,6 +52,11 @@ Här är en lista över artiklar som rör bästa praxis för programkonfiguratio
 
 * MTA och MTAChild-processer och minne: **mta** distribuerar meddelanden till **mtachild** underordnade moduler. Varje **mtachild** förbereder meddelanden innan en auktorisering begärs från statistikservern och skickar dem. Se detta [page](../../installation/using/email-deliverability.md) för mer information.
 * TLS-konfiguration: du bör inte aktivera TLS globalt eftersom det kan minska genomströmningen. I stället bör TLS-inställningar per domän, som hanteras av leveransteamet, justeras efter behov. Se detta [page](../../installation/using/email-deliverability.md#mx-configuration) för mer information.
+
+  >[!NOTE]
+  >
+  >Engagemanget i Deliverability-teamet bygger på kontrakt och kunderna bör kontakta sin Adobe-representant för att få information om Deliverability Engagement.
+
 * DKIM: 1024b är den rekommenderade krypteringsstorleken för att säkerställa säkerhetsnivån för DKIM. Lägre DKIM-nycklar anses inte giltiga av de flesta åtkomstleverantörer. Se [den här sidan](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html#authentication).
 
 ## Leveransproblem {#deliverability-issues}
@@ -62,10 +65,15 @@ Här är en lista över bästa praxis och artiklar som rör slutbarhet:
 
 * IP-anseende: om IP-anseendet inte är tillräckligt bra kommer det att påverka resultatet. The **Leveransövervakning** I modulen finns olika verktyg för att spåra plattformens leveransförmåga. Se detta [page](../../delivery/using/monitoring-deliverability.md).
 * IP-uppvärmning: IP-uppvärmningen utförs av leveransgruppen. Detta innebär att antalet e-postmeddelanden som skickas via nya IP-adresser gradvis ökar under några veckor.
+
+  >[!NOTE]
+  >
+  >Engagemanget i Deliverability-teamet bygger på kontrakt och kunderna bör kontakta sin Adobe-representant för att få information om Deliverability Engagement.
+
 * Inställning av IP-tillhörighet: en felaktig inställning av IP-tillhörighet kan stoppa alla e-postmeddelanden (felaktigt operatörs-/tillhörighetsnamn i konfigurationen) eller minska genomströmningen (ett litet antal IP-adresser i tillhörigheten). Se detta [page](../../installation/using/email-deliverability.md#list-of-ip-addresses-to-use).
 * E-poststorlek: e-poststorleken spelar en viktig roll för dataflödet. Den rekommenderade maximala e-poststorleken är 60 kB. Se detta [page](https://helpx.adobe.com/legal/product-descriptions/campaign.html). I [Leveransflöde](../../reporting/using/global-reports.md#delivery-throughput) kontrollerar du antalet byte som har överförts per timme.
 * Ett stort antal ogiltiga mottagare: om det finns ett stort antal ogiltiga mottagare kan det påverka dataflödet. MTA fortsätter att försöka skicka e-post till ogiltiga mottagare. Se till att din databas underhålls väl.
-* Mängd personalisering: Om en leverans förblir i&quot;personalisering pågår&quot;, kontrollerar du det JavaScript som används i personaliseringsblock.
+* Mängd personalisering: Om en leverans fortsätter i&quot;pågående Personalization&quot; ska du kontrollera den JavaScript som används i personaliseringsblocken.
 
 >[!NOTE]
 >

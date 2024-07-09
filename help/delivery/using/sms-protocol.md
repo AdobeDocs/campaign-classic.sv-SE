@@ -6,9 +6,9 @@ badge-v8: label="Gäller även för v8" type="Positive" tooltip="Gäller även C
 feature: SMS
 role: Developer, Data Engineer
 exl-id: fded088a-11a2-4b87-a368-7b197334aca4
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: 6803b6628313db9108a191fd143dac68ee799149
 workflow-type: tm+mt
-source-wordcount: '8445'
+source-wordcount: '8466'
 ht-degree: 0%
 
 ---
@@ -383,6 +383,10 @@ Om du behöver kontrollera exakt antalet anslutningar, t.ex. leverantörskrav, b
 
 Anger namnet på SMSC-implementeringen. Den ska anges med namnet på din leverantör. Kontakta administratören eller leveransgruppen om du vill veta vad du ska lägga till i det här fältet. Fältets roll beskrivs i [SR-felhantering](sms-protocol.md#sr-error-management) -avsnitt.
 
+>[!NOTE]
+>
+>Engagemanget i Deliverability-teamet bygger på kontrakt och kunderna bör kontakta sin Adobe-representant för att få information om Deliverability Engagement.
+
 #### Server {#server}
 
 DNS-namnet eller IP-adressen för servern som ska anslutas.
@@ -469,7 +473,7 @@ Nackdelen kan vara låg på grund av den databaskonflikt som genereras. Om det �
 
 Adobe Campaign Classic har en helt annan mekanism för nyckeltal, så det här alternativet är inte tillgängligt.
 
-#### Källnummer {#source-number}
+#### Source {#source-number}
 
 Definierar standardkälladressen för meddelanden. Den här inställningen gäller endast om källnumret inte har angetts i leveransen.
 
@@ -487,7 +491,7 @@ Det kan vara praktiskt att ange kort kod för två funktioner:
 
 * Inställningen blockeringslista för funktionen för automatiskt svar skickar bara till karantänen för en viss kort kod.
 
-#### Käll-TON/NPI, mål-TON/NPI {#ton-npi}
+#### Source TON/NPI, mål-TON/NPI {#ton-npi}
 
 TON (typ av nummer) och NPI (Numreringsplansindikator) beskrivs i avsnitt 5.2.5 i [Specifikation för SMPP 3.4](https://smpp.org/SMPP_v3_4_Issue1_2.pdf) (sidan 117). Dessa värden ska ställas in efter providerns behov.
 

@@ -6,9 +6,9 @@ feature: Technote, Upgrade
 role: User
 level: Beginner
 exl-id: a9cd08b0-55c2-4405-9fb8-f0c623cd4ccb
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: 6803b6628313db9108a191fd143dac68ee799149
 workflow-type: tm+mt
-source-wordcount: '2204'
+source-wordcount: '2225'
 ht-degree: 0%
 
 ---
@@ -37,7 +37,7 @@ Global påverkan på databaser och infrastruktur listas nedan.
 
 * **Finns det risk för dataförlust?**
 
-  Databasen dumpas från det gamla datacentret och återställs i Public Cloud (AWS). När programmet startas om på det nya datacentret återupptas det från exakt det tillstånd det hade innan migreringen. Användarna ser ingen skillnad förutom att vissa schemalagda aktiviteter kommer att ha fördröjts.
+  Databasen dumpas från det gamla datacentret och återställs i Public Cloud (AWS). När programmet startas om på det nya datacentret återupptas det från exakt det tillstånd det hade innan migreringen. Användarna ser ingen skillnad förutom att vissa schemalagda aktiviteter har fördröjts.
 
 * **Finns det några skillnader i paketets storlek mellan det äldre datacentret och det offentliga molnet?**
 
@@ -78,6 +78,10 @@ Global påverkan på IP-adresser, blockeringslista, underdomäner och URL-adress
 * **Hur hanteras underdomänsdelegering?**
 
   Befintliga underdomäner flyttas från äldre datacenter till offentliga moln (AWS). Den här delen kommer att hanteras av Adobe Deliverability-teamet som en del av migreringsprocessen.
+
+  >[!NOTE]
+  >
+  >Engagemanget i Deliverability-teamet bygger på kontrakt och kunderna bör kontakta sin Adobe-representant för att få information om Deliverability Engagement.
 
   Adobe kommer att vägleda kunden genom de tester som krävs för att säkerställa att konfigurationen körs på nya offentliga molnservrar (AWS) efter migreringen.
 
@@ -157,7 +161,7 @@ Global påverkan på konfiguration, anslutning till andra system och produkter, 
 
   [Läs mer](#config) om IP på tillåtelselista.
 
-* **Ser vi till att alla parametrar för JavaScript-minneskonfiguration ställs in korrekt efter migreringen?**
+* **Ser vi till att alla JavaScript-minneskonfigurationsparametrar anges korrekt efter migreringen?**
 
   Vi kopierar instanskonfiguration från äldre datacenter till Public Cloud (AWS), så dessa värden bevaras efter migreringen.
 
