@@ -8,16 +8,14 @@ audience: platform
 content-type: reference
 topic-tags: importing-and-exporting-data
 exl-id: d585a5d4-ea33-43c8-aa37-4d892025374a
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: b02089bd205de58c6af86fc8de3d5b3294ec9975
 workflow-type: tm+mt
-source-wordcount: '1109'
-ht-degree: 11%
+source-wordcount: '1060'
+ht-degree: 8%
 
 ---
 
 # Bästa praxis och felsökning för SFTP-servrar {#sftp-server-usage}
-
-
 
 ## Globala rekommendationer för SFTP-server {#global-recommendations}
 
@@ -25,7 +23,7 @@ När du hanterar filer och data för ETL-ändamål lagras dessa filer på en SFT
 
 * Använd nyckelbaserad autentisering i stället för lösenordsautentisering för att undvika att lösenordet förfaller (lösenord har en giltighetsperiod på 90 dagar). Dessutom kan du med nyckelbaserad autentisering generera flera nycklar, till exempel när du hanterar flera enheter. För lösenordsautentisering krävs tvärtom att du delar lösenordet med alla enheter som du hanterar.
 
-  Nyckelformatet som stöds är SSH-2 RSA 2048. Tangenter kan genereras med verktyg som PyTTY (Windows) eller ssh-keygen (Unix). Du måste ange den offentliga nyckeln till Adobe Support via [Adobe kundtjänst](https://helpx.adobe.com/se/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) om du vill att den ska överföras till Campaign-servern.
+  Nyckelformatet som stöds är SSH-2 RSA 2048. Verktyget för att generera SSH-nycklar för Windows är PuTTYgen och ssh-keygen för Linux. Du kan överföra offentliga SSH-nycklar via Campaign-kontrollpanelen. [Läs mer](https://experienceleague.adobe.com/en/docs/control-panel/using/sftp-management/key-management){target="_blank"}
 
 * Använd batchbearbetning i SFTP-överföringar och i arbetsflöden.
 
@@ -33,9 +31,9 @@ När du hanterar filer och data för ETL-ändamål lagras dessa filer på en SFT
 
 * Som standard är alla mappar som du skapar i läs-/skrivläge endast för din identifierare. När du skapar mappar som ska vara tillgängliga för Campaign måste du konfigurera dem med läs- och skrivbehörighet för hela gruppen. I annat fall kan arbetsflöden av säkerhetsskäl inte skapa eller ta bort filer eftersom de körs med en annan identifierare inom samma grupp.
 
-* De offentliga IP-adresserna som du försöker initiera SFTP-anslutningen från måste läggas till i tillåtelselista i Campaign-instansen. Du kan begära att få lägga till IP-adresser till tillåtelselista via [Adobe kundtjänst](https://helpx.adobe.com/se/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
+* De offentliga IP-adresserna som du försöker initiera SFTP-anslutningen från måste läggas till i tillåtelselista i Campaign-instansen. De offentliga IP-adresserna kan läggas till via Kontrollpanelen. [Läs mer](https://experienceleague.adobe.com/en/docs/control-panel/using/sftp-management/ip-range-allow-listing){target="_blank"}
 
-## Bästa praxis för databasanvändning {#sftp-server-best-practices}
+## Bästa praxis för användning av SFTP-lagring {#sftp-server-best-practices}
 
 SFTP-servrar är avsedda att vara tillfälliga lagringsutrymmen där du kan styra kvarhållande och borttagning av filer.
 
@@ -45,11 +43,11 @@ För att undvika sådana problem rekommenderar Adobe att du följer de bästa me
 
 >[!NOTE]
 >
->Om din instans lagras på AWS kan du övervaka din SFTP-serverlagring med Campaign Classicen [Kontrollpanelen](https://experienceleague.adobe.com/docs/control-panel/using/sftp-management/sftp-storage-management.html). Följ stegen på [den här sidan](https://experienceleague.adobe.com/docs/control-panel/using/faq.html?lang=sv) för att kontrollera om instanser har AWS som värd.
+>Du kan övervaka din SFTP-serverlagring med Campaign Classicen [Kontrollpanelen](https://experienceleague.adobe.com/docs/control-panel/using/sftp-management/sftp-storage-management.html){target="_blank"}.
 >
->Kontrollpanelen är tillgänglig för alla administratörsanvändare. Stegen för att bevilja administratörsåtkomst till en användare finns på [den här sidan](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/managing-permissions.html?lang=sv#discover-control-panel).
+>Kontrollpanelen är tillgänglig för alla administratörsanvändare. Anvisningar om hur du ger administratörsåtkomst till en användare finns i [den här sidan](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/managing-permissions.html?lang=sv#discover-control-panel){target="_blank"}.
 >
->Observera att din instans måste uppgraderas med [senaste GA-version](../../rn/using/rn-overview.md). Lär dig hur du checkar in din version [det här avsnittet](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version).
+>Observera att din instans måste uppgraderas med [senaste GA-version](../../rn/using/rn-overview.md). Lär dig hur du checkar in din version [det här avsnittet](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version){target="_blank"}.
 
 * Serverstorleksmöjligheterna varierar beroende på din licens. Under alla omständigheter bör du behålla minsta möjliga antal uppgifter och endast lagra data så länge som krävs (15 dagar är den högsta tillåtna tidsgränsen).
 
@@ -70,7 +68,7 @@ När du i Campaign Classic anger en sökväg till en extern SFTP-server skiljer 
 
 ## Anslutningsproblem med värdserver för Adobe SFTP-server {#sftp-server-troubleshooting}
 
-I avsnittet nedan listas den information som ska kontrolleras och tillhandahållas Adobe supportteam via [Adobe kundtjänst](https://helpx.adobe.com/se/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) när du stöter på anslutningsproblem med värdbaserade SFTP-servrar i Adobe.
+I avsnittet nedan listas den information som ska kontrolleras och tillhandahållas Adobe supportteam via [Adobe kundtjänst](https://helpx.adobe.com/se/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html){target="_blank"} när du stöter på anslutningsproblem med värdbaserade SFTP-servrar i Adobe.
 
 1. Kontrollera att instansen körs. Det gör du genom att öppna webbläsaren och sedan skapa en **[!UICONTROL GET]** anrop till instansen **[!UICONTROL /r/test]** slutpunkt:
 
@@ -97,10 +95,6 @@ I avsnittet nedan listas den information som ska kontrolleras och tillhandahåll
    bash-3.2$ nc -vz myCompagny-stage-sftp.neolane.net 22
    myCompany-stage-sftp.neolane.net [AAA.BBB.CCC.D] 22 (ssh) open
    ```
-
-   >[!NOTE]
-   >
-   >Med nätverksverktyget kan du enkelt hantera nätverksanslutningar på olika operativsystem (se [https://eternallybored.org/misc/netcat/](https://eternallybored.org/misc/netcat/)).
 
    Om porten inte är öppen kontrollerar du att du har öppnat utgående anslutningar och försöker sedan igen. Om du fortfarande har problem med anslutningen kan du dela utdata från kommandot med [Adobe kundtjänst](https://helpx.adobe.com/se/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) team.
 
