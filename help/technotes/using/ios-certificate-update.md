@@ -15,17 +15,17 @@ ht-degree: 0%
 
 
 
-Den 29 mars 2021 påverkade en infrastrukturuppdatering för Apple Push Notification service (APNs) Adobe Campaign Classic iOS-kanal. En ändring av operativsystemets konfiguration är **obligatoriskt** för att undvika avbrott i iOS-kanaler.
+Den 29 mars 2021 påverkade en infrastrukturuppdatering för Apple Push Notification service (APNs) Adobe Campaign Classic iOS-kanal. En ändring av operativsystemets konfiguration är **obligatorisk** för att undvika avbrott i iOS push-kanaler.
 
-Läs mer om ändringar i APN:er [på den här sidan](https://developer.apple.com/news/?id=7gx0a2lp).
+Läs mer om ändringar av APN:er [på den här sidan](https://developer.apple.com/news/?id=7gx0a2lp).
 
 Som värdkund behövs ingen åtgärd: Adobe har redan införlivat det nya rotcertifikatet i din miljö.
 
-Som lokal/hybridkund måste du uppdatera din konfiguration för att säkerställa en smidig övergång **före den 29 mars 2021**.
+Som lokal/hybridkund måste du uppdatera konfigurationen för att säkerställa en sömlös övergång **före den 29 mars 2021**.
 
 Följ stegen nedan för att införliva det nya certifikatet:
 
-1. Ladda ned **AAACertificateServices 5/12/2020** rotcertifikat [från den här sidan](https://support.sectigo.com/Com_KnowledgeDetailPage?Id=kA03l00000117cL).
+1. Hämta **AAACertificateServices 5/12/2020**-rotcertifikatet [ från den här sidan](https://support.sectigo.com/Com_KnowledgeDetailPage?Id=kA03l00000117cL).
 
 1. Kontrollera att AAA-certifikatet finns i både ditt operativsystem och JAVA-förtroenden. Om inte, lägg till den.
 

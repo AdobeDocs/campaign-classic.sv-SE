@@ -14,45 +14,45 @@ ht-degree: 3%
 
 ---
 
-# Integrering via SOAP (server-side){#integration-via-soap-server-side}
+# Integrering via SOAP (serversidan){#integration-via-soap-server-side}
 
 
 
-SOAP-webbtjänster för erbjudandehantering skiljer sig från dem som vanligtvis används i Adobe Campaign. De kan nås via den interaktions-URL som beskrivs i föregående avsnitt och du kan presentera eller uppdatera erbjudanden för en viss kontakt.
+De SOAP webbtjänsterna som tillhandahålls för hantering av erbjudanden skiljer sig från de som vanligtvis används i Adobe Campaign. De kan nås via den interaktions-URL som beskrivs i föregående avsnitt och du kan presentera eller uppdatera erbjudanden för en viss kontakt.
 
 ## Erbjudandeförslag {#offer-proposition}
 
-Lägg till **nms:proposition#Propose** följt av följande parametrar:
+Lägg till kommandot **nms:proposition#Propose** följt av följande parametrar för ett erbjudande via SOAP:
 
 * **targetId**: primärnyckel för mottagaren (kan vara en sammansatt nyckel).
 * **maxCount**: anger antalet erbjudandeförslag för kontakten.
-* **kontext**: gör att du kan lägga till kontextinformation i utrymmesschemat. Om schemat som används är **nms:interaktion**, **`<empty>`** bör läggas till.
-* **kategorier**: anger vilken kategori/vilka erbjudanden måste tillhöra.
-* **teman**: anger det eller de teman som erbjudandena måste tillhöra.
-* **uuid**: värdet för Adobe Campaign permanenta cookie (&quot;uuid230&quot;).
+* **kontext**: gör att du kan lägga till kontextinformation i utrymmesschemat. Om schemat som används är **nms:interaction** bör **`<empty>`** läggas till.
+* **kategorier**: anger den eller de kategorier som erbjudandena måste tillhöra.
+* **teman**: anger teman som erbjudandena måste tillhöra.
+* **uid**: värdet för Adobe Campaign permanenta cookie (&quot;uuid230&quot;).
 * **nli**: värdet för Adobe Campaign sessionscookie (&quot;nlid&quot;).
-* **noProp**: använd värdet &quot;true&quot; för att inaktivera infogning av förslag.
+* **noProp**: använd värdet true om du vill inaktivera infogning av förslag.
 
 >[!NOTE]
 >
->The **targetId** och **maxCount** är obligatoriska. De andra är valfria.
+>Inställningarna **targetId** och **maxCount** är obligatoriska. De andra är valfria.
 
-SOAP-tjänsten returnerar följande parametrar som svar på frågan:
+Som svar på frågan returnerar SOAP följande parametrar:
 
 * **interactionId**: ID för interaktionen.
-* **förslag**: XML-element, innehåller en lista med förslag, där vart och ett har ett eget ID och HTML.
+* **propositioner**: XML-elementet innehåller en lista med förslag, där vart och ett har ett eget ID och HTML.
 
 ## Erbjudandeuppdatering {#offer-update}
 
-Lägg till **nms:interaction#UpdateStatus** till URL:en, följt av följande parametrar:
+Lägg till kommandot **nms:interaction#UpdateStatus** i URL:en, följt av följande parametrar:
 
-* **offert**: teckensträng, innehåller det förslags-ID som anges som utdata under ett erbjudande. Se [Erbjudandeförslag](#offer-proposition).
-* **status**: string type, it specifies the new status of the offer. Möjliga värden visas i **propositionStatus** uppräkning, i **nms:vanliga** schema. Till exempel motsvarar talet 3 **Accepterad** status.
-* **kontext**: XML-element, gör att du kan lägga till kontextinformation i utrymmesschemat. Om schemat som används är **nms:interaktion**, **`<empty>`** bör läggas till.
+* **proposition**: teckensträng, den innehåller det förslag-ID som angetts som utdata under ett erbjudande. Se [Erbjudandeerbjudande](#offer-proposition).
+* **status**: strängtyp, den anger erbjudandets nya status. Möjliga värden visas i uppräkningen **propositionStatus** i schemat **nms:common**. Till exempel motsvarar talet 3 statusen **Accepterad**.
+* **context**: Med XML-element kan du lägga till kontextinformation i utrymmesschemat. Om schemat som används är **nms:interaction** bör **`<empty>`** läggas till.
 
-## Exempel på hur du använder ett SOAP-anrop {#example-using-a-soap-call}
+## Exempel på hur du använder ett SOAP {#example-using-a-soap-call}
 
-Här är ett exempel på kod för ett SOAP-anrop:
+Här är ett exempel på kod för ett SOAP anrop:
 
 ```
 <%

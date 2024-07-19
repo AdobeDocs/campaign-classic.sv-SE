@@ -17,11 +17,11 @@ ht-degree: 5%
 
 Tekniska arbetsflöden måste övervakas, och åtgärder måste vidtas när de misslyckas.
 
-Ytterligare sätt att övervaka olika Campaign-processer presenteras i [den här sidan](../../production/using/monitoring-guidelines.md).
+Ytterligare sätt att övervaka olika Campaign-processer presenteras på [den här sidan](../../production/using/monitoring-guidelines.md).
 
 ## Instansövervakningsinstrumentpanel {#instance-monitoring-dashboard}
 
-Instansövervakningens kontrollpanel är tillgänglig via **[!UICONTROL Monitoring]** -fliken.
+Instansövervakningens kontrollpanel kan nås via fliken **[!UICONTROL Monitoring]**.
 
 ![](assets/monitoring_technical_workflows1.png)
 
@@ -37,11 +37,11 @@ Tekniska arbetsflöden är tillgängliga från **[!UICONTROL Administration]** >
 
 Beroende på det tekniska arbetsflödet följer du stegen nedan för att kontrollera att allt fungerar som det ska.
 
-Mer information om vad varje tekniskt arbetsflöde ska göra finns i [section](about-technical-workflows.md).
+Mer information om vad varje tekniskt arbetsflöde ska göra finns i det här [avsnittet](about-technical-workflows.md).
 
 För **[!UICONTROL Database Cleanup workflow (‘cleanup’)]**:
 
-1. Kontrollera att **[!UICONTROL Database Cleanup]** arbetsflödet körs och avslutas framgångsrikt varje dag. Mer information finns i [page](../../production/using/database-cleanup-workflow.md)..
+1. Kontrollera att arbetsflödet för **[!UICONTROL Database Cleanup]** körs och avslutas varje dag. Mer information finns på [sidan](../../production/using/database-cleanup-workflow.md).
 1. Titta i journalen för att kontrollera att förfluten tid är relativt konstant över tid och inte stör andra arbetsflöden.
 
 För **[!UICONTROL Tracking workflow (‘tracking’)]**:
@@ -50,17 +50,17 @@ Kontrollera att spårningsarbetsflödet körs som schemalagt (varje timme som st
 
 För **[!UICONTROL Refresh for Deliverability (deliverabilityUpdate)]**:
 
-1. Kontrollera att **[!UICONTROL Refresh for Deliverability]** arbetsflödet körs och avslutas framgångsrikt varje dag.
+1. Kontrollera att arbetsflödet för **[!UICONTROL Refresh for Deliverability]** körs och avslutas varje dag.
 1. Kontrollera i journalen att reglerna uppdateras regelbundet.
 
 För **[!UICONTROL Campaign process ('operationMgt', 'deliveryMgt', ...)]**:
 
-1. Titta på alla arbetsflöden som finns under **[!UICONTROL Campaign process]** mapp. Se denna [sida](about-technical-workflows.md) för mer information om detta.
+1. Titta på alla arbetsflöden som finns i mappen **[!UICONTROL Campaign process]**. Se denna [sida](about-technical-workflows.md) för mer information om detta.
 1. Kontrollera att arbetsflödena körs som schemalagda och att journalen inte visar återkommande fel.
 
 ## Arbetsflödesövervakning {#workflow-supervision}
 
-The **[!UICONTROL Workflow supervisors]** Gruppen bör innehålla operatorer som måste hållas informerade om misslyckanden och som kan vidta åtgärder i tid.
+Gruppen **[!UICONTROL Workflow supervisors]** ska innehålla operatorer som måste hållas informerade om fel och som kan vidta åtgärder i tid.
 
 ![](assets/monitoring_technical_workflows3.png)
 

@@ -18,7 +18,7 @@ ht-degree: 1%
 
 
 
-The [!DNL pipelined] statuswebbtjänsten ger information om statusen för [!DNL pipelined] -processen.
+Statuswebbtjänsten [!DNL pipelined] ger information om statusen för [!DNL pipelined]-processen.
 
 Den kan nås manuellt via en webbläsare eller automatiskt med ett övervakningsprogram.
 
@@ -43,7 +43,7 @@ Rekommenderade indikatorer för övervakning markeras.
    * next-offsets-flush: time to wait until the next batch, when complete.
    * bearbetad sedan senaste-tömning: antal utlösare som bearbetats i den senaste batchen.
 * routning
-   * utlösare: lista över utlösare som har hämtats. Konfigureras i [!DNL pipelined] alternativ.
+   * utlösare: lista över utlösare som har hämtats. Konfigureras i alternativet [!DNL pipelined].
 * status
    * genomsnittlig-peinter-flush-time-ms: genomsnittlig bearbetningstid för en grupp utlösare.
    * genomsnittlig-trigger-processing-time-ms: Genomsnittlig tid för tolkning av utlösardata.

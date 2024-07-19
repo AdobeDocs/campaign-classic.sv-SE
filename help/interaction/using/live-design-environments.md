@@ -27,9 +27,9 @@ Interaktionen fungerar med två typer av erbjudandemiljöer:
 
 ![](assets/offer_environments_overview_001.png)
 
-Varje **[!UICONTROL Design]** miljön är länkad till en **[!UICONTROL Live]** miljö. När ett erbjudande är klart blir dess innehåll och behörighetskrav föremål för en godkännandecykel. När den här cykeln är slutförd distribueras det aktuella erbjudandet automatiskt till **[!UICONTROL Live]** miljö. Från och med nu finns den tillgänglig för leverans.
+Varje **[!UICONTROL Design]**-miljö är länkad till en **[!UICONTROL Live]**-miljö. När ett erbjudande är klart blir dess innehåll och behörighetskrav föremål för en godkännandecykel. När den här cykeln är slutförd distribueras det aktuella erbjudandet automatiskt till miljön **[!UICONTROL Live]**. Från och med nu finns den tillgänglig för leverans.
 
-Som standard innehåller Interaction en **[!UICONTROL Design]** miljö och **[!UICONTROL Live]** miljö som är länkad till den. Båda miljöerna är förkonfigurerade för den inbyggda mottagartabellen.
+Som standard levereras interaktion med en **[!UICONTROL Design]**-miljö och en **[!UICONTROL Live]**-miljö länkad till den. Båda miljöerna är förkonfigurerade för den inbyggda mottagartabellen.
 
 >[!NOTE]
 >
@@ -37,17 +37,17 @@ Som standard innehåller Interaction en **[!UICONTROL Design]** miljö och **[!U
 
 ![](assets/offer_environments_overview_002.png)
 
-Erbjudandeansvariga och leveranschefer har tillgång till olika miljövyer. Leveransansvariga kan bara visa **[!UICONTROL Live]** erbjuder miljö och använder erbjudanden för att leverera dem. Erbjudandehanterarna kan visa och ändra **[!UICONTROL Design]** miljö och visa **[!UICONTROL Live]** miljö. Mer information finns i [Operatörsprofiler](../../interaction/using/operator-profiles.md).
+Erbjudandeansvariga och leveranschefer har tillgång till olika miljövyer. Leveransansvariga kan bara visa erbjudandemiljön **[!UICONTROL Live]** och använda erbjudanden för att leverera dem. Erbjudandehanterare kan visa och ändra miljön **[!UICONTROL Design]** och visa miljön **[!UICONTROL Live]**. Mer information finns i [Operatorprofiler](../../interaction/using/operator-profiles.md).
 
 ## Skapa en erbjudandemiljö {#creating-an-offer-environment}
 
 Som standard levereras Interaction med en förkonfigurerad miljö för att rikta sig till mottagartabellen (identifierade erbjudanden). Om du vill ha en annan tabell som mål (besökstabell för anonyma erbjudanden eller en viss mottagartabell) måste du använda följande konfigurationer:
 
-1. Placera markören på **[!UICONTROL Administration]** > **[!UICONTROL Campaign management]** > **[!UICONTROL Delivery mappings]** nod. Högerklicka på den leveransavbildning som du vill använda (**[!UICONTROL Visitors]** om du vill använda anonyma erbjudanden) och välja **[!UICONTROL Actions]** > **[!UICONTROL Modify the options of the targeting dimension]**.
+1. Placera markören på noden **[!UICONTROL Administration]** > **[!UICONTROL Campaign management]** > **[!UICONTROL Delivery mappings]**. Högerklicka på den leveranskarta som du vill använda (**[!UICONTROL Visitors]** om du vill använda anonyma erbjudanden) och välj **[!UICONTROL Actions]** > **[!UICONTROL Modify the options of the targeting dimension]**.
 
    ![](assets/offer_env_anonymous_001.png)
 
-1. Klicka **[!UICONTROL Next]** om du vill fortsätta till nästa skärm i guiden kontrollerar du **[!UICONTROL Generate a storage schema for propositions]** och klicka **[!UICONTROL Save]**.
+1. Klicka på **[!UICONTROL Next]** för att fortsätta till nästa skärm i guiden, markera kryssrutan **[!UICONTROL Generate a storage schema for propositions]** och klicka på **[!UICONTROL Save]**.
 
    ![](assets/offer_env_anonymous_002.png)
 
@@ -55,9 +55,9 @@ Som standard levereras Interaction med en förkonfigurerad miljö för att rikta
    >
    >Om rutan redan är markerad avmarkerar du den och markerar den sedan igen.
 
-1. Adobe Campaign skapar två miljöer (**[!UICONTROL Design]** och **[!UICONTROL Live]** ) med målinformation från den tidigare aktiverade målmappningen. Miljön är förkonfigurerad med målinformationen.
+1. Adobe Campaign skapar två miljöer (**[!UICONTROL Design]** och **[!UICONTROL Live]**) med målinformation från den målmappning som tidigare aktiverats. Miljön är förkonfigurerad med målinformationen.
 
-   Om du har aktiverat **[!UICONTROL Visitor]** mappning, **[!UICONTROL Environment dedicated to incoming anonymous interactions]** -rutan markeras automatiskt i miljöns **[!UICONTROL General]** -fliken.
+   Om du har aktiverat **[!UICONTROL Visitor]**-mappning kontrolleras rutan **[!UICONTROL Environment dedicated to incoming anonymous interactions]** automatiskt på miljöns **[!UICONTROL General]**-flik.
 
    Med det här alternativet kan du aktivera anonyma interaktionsspecifika funktioner, särskilt när du konfigurerar miljön, som innehåller blanksteg. Du kan också konfigurera alternativ som gör att du kan växla från en identifierad miljö till en anonym miljö.
 

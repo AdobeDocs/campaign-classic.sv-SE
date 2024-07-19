@@ -31,12 +31,12 @@ De viktigaste stegen för att skicka ett SMS är följande:
 * [Skicka, övervaka och spåra SMS](sms-send.md)
 * [Felsökning](troubleshooting-sms.md)
 
-Dessutom måste du känna till SMS-protokoll och inställningar. Gå igenom uppkopplingen mellan Adobe Campaign och en SMPP-leverantör i [det här dokumentet](sms-protocol.md)
+Dessutom måste du känna till SMS-protokoll och inställningar. Gå igenom anslutningskonfigurationen mellan Adobe Campaign och en SMPP-leverantör i [det här dokumentet](sms-protocol.md)
 
 Global information om hur du skapar en leverans finns i [det här avsnittet](steps-about-delivery-creation-steps.md).
 
 >[!NOTE]
 >
->Med Adobe Campaign kan du även skicka meddelanden på mobilterminaler via dess **Adobe Campaign Mobile App Channel (NMAC)** alternativ.
+>Med Adobe Campaign kan du även skicka meddelanden på mobilterminaler via dess **Adobe Campaign Mobile App Channel (NMAC)**-alternativ.
 > 
->Mer information finns i [Kom igång med mobilappskanalen](about-mobile-app-channel.md) -avsnitt.
+>Mer information finns i avsnittet [Kom igång med mobilappskanalen](about-mobile-app-channel.md).

@@ -19,21 +19,21 @@ I det här avsnittet beskrivs de viktigaste principerna och de bästa metoderna 
 
 * Skapa ett arbetsflöde, se [Skapa ett nytt arbetsflöde](#creating-a-new-workflow)
 * Utforma arbetsflödesdiagrammet, se [Lägga till och länka aktiviteter](#adding-and-linking-activities)
-* Åtkomstparametrar och egenskaper för aktiviteter, se [Konfigurera aktiviteter](#configuring-activities)
-* Arbetsflöden för målinriktning, se [Målarbetsflöden](#targeting-workflows)
-* Använda arbetsflöden för att köra en kampanj, se [Kampanjarbetsflöden](#campaign-workflows)
+* Åtkomstparametrar och aktivitetsegenskaper, se [Konfigurera aktiviteter](#configuring-activities)
+* Designa arbetsflöden för målinriktning, se [Målarbetsflöden](#targeting-workflows)
+* Använd arbetsflöden för att köra en kampanj, se [Kampanjarbetsflöden](#campaign-workflows)
 * Få åtkomst till och skapa tekniska arbetsflöden, se [Tekniska arbetsflöden](#technical-workflows)
-* Använda mallar för att skapa arbetsflöden, se [Arbetsflödesmallar](#workflow-templates)
+* Använd mallar för att skapa arbetsflöden, se [Arbetsflödesmallar](#workflow-templates)
 
 ## Skapa ett nytt arbetsflöde {#creating-a-new-workflow}
 
-Från **[!UICONTROL Explorer]**&#x200B;öppnar du en arbetsflödesmapp. Som standard kan du använda **[!UICONTROL Profiles and Targets]** > **[!UICONTROL Jobs]** > **[!UICONTROL Targeting workflows]**.
+Öppna en arbetsflödesmapp från **[!UICONTROL Explorer]**. Som standard kan du använda **[!UICONTROL Profiles and Targets]** > **[!UICONTROL Jobs]** > **[!UICONTROL Targeting workflows]**.
 
-Klicka på **[!UICONTROL New]** ovanför listan med arbetsflöden.
+Klicka på knappen **[!UICONTROL New]** ovanför listan med arbetsflöden.
 
 ![](assets/create_a_wf_icon.png)
 
-Du kan också använda **[!UICONTROL Create]** knappen i arbetsflödesöversikten (**[!UICONTROL Monitoring]** > **[!UICONTROL Workflow]** länk).
+Du kan också använda knappen **[!UICONTROL Create]** i arbetsflödesöversikten (**[!UICONTROL Monitoring]** > länken **[!UICONTROL Workflow]**).
 
 ![](assets/create_a_wf.png)
 
@@ -55,20 +55,20 @@ Du måste nu definiera de olika aktiviteterna och länka samman dem i diagrammet
 
 Aktiviteter grupperas efter kategori på palettens olika flikar. Tillgängliga flikar och aktiviteter kan variera beroende på arbetsflödestyp (teknik, målgruppsanpassning eller kampanjarbetsflöde).
 
-* Den första fliken innehåller målgrupps- och datahanteringsaktiviteter. Dessa aktiviteter beskrivs närmare i [Verksamheter som riktar sig till](about-targeting-activities.md).
-* På den andra fliken finns schemaläggningsaktiviteter, som huvudsakligen används för att samordna andra aktiviteter. Dessa aktiviteter beskrivs närmare i [Flödeskontroll](about-flow-control-activities.md).
-* Den tredje fliken innehåller verktyg och åtgärder som kan användas i arbetsflödet. Dessa aktiviteter beskrivs närmare i [Verksamheter](about-action-activities.md).
-* Den fjärde fliken innehåller aktiviteter som är beroende av en viss händelse, till exempel att ett e-postmeddelande tas emot eller att en fil tas emot på en server. Dessa aktiviteter beskrivs närmare i [Evenemangsaktiviteter](about-event-activities.md).
+* Den första fliken innehåller målgrupps- och datahanteringsaktiviteter. Dessa aktiviteter beskrivs i [Målaktiviteter](about-targeting-activities.md).
+* På den andra fliken finns schemaläggningsaktiviteter, som huvudsakligen används för att samordna andra aktiviteter. De här aktiviteterna beskrivs i [Flödeskontrollaktiviteter](about-flow-control-activities.md).
+* Den tredje fliken innehåller verktyg och åtgärder som kan användas i arbetsflödet. De här aktiviteterna beskrivs i [Åtgärdsaktiviteter](about-action-activities.md).
+* Den fjärde fliken innehåller aktiviteter som är beroende av en viss händelse, till exempel att ett e-postmeddelande tas emot eller att en fil tas emot på en server. De här aktiviteterna beskrivs i [Händelseaktiviteter](about-event-activities.md).
 
 Skapa diagrammet
 
 1. Lägg till en aktivitet genom att markera den på paletten och flytta den till diagrammet med dra-och-släpp-funktionen.
 
-   Lägg till en **Starta** aktivitet och sedan en **Leverans** aktivitet i diagrammet.
+   Lägg till en **Start**-aktivitet och sedan en **Delivery**-aktivitet i diagrammet.
 
    ![](assets/new-workflow-3.png)
 
-1. Länka samman aktiviteterna genom att dra i **Starta** aktivitetsövergång och släppa den på **Leverans** aktivitet.
+1. Länka samman aktiviteterna genom att dra aktivitetsövergången **Start** och släppa den på aktiviteten **Leverans**.
 
    ![](assets/new-workflow-4.png)
 
@@ -80,11 +80,11 @@ Skapa diagrammet
 
 >[!CAUTION]
 >
->Du kan kopiera och klistra in aktiviteter i samma arbetsflöde. Vi rekommenderar dock inte att du kopierar inklistringsaktiviteter i olika arbetsflöden. Vissa inställningar som är kopplade till aktiviteter som Leveranser och Schemaläggare kan leda till konflikter och fel när målarbetsflödet körs. I stället rekommenderar vi att du  **Duplicera** arbetsflöden. Mer information finns i [Duplicera arbetsflöden](#duplicating-workflows).
+>Du kan kopiera och klistra in aktiviteter i samma arbetsflöde. Vi rekommenderar dock inte att du kopierar inklistringsaktiviteter i olika arbetsflöden. Vissa inställningar som är kopplade till aktiviteter som Leveranser och Schemaläggare kan leda till konflikter och fel när målarbetsflödet körs. Vi rekommenderar i stället att du **duplicerar** arbetsflöden. Mer information finns i [Duplicera arbetsflöden](#duplicating-workflows).
 
 Du kan ändra visning och layout för diagrammet med följande element:
 
-* **Använda verktygsfältet**
+* **Använd verktygsfältet**
 
   Verktygsfältet för diagramredigering ger dig tillgång till arbetsflödets layout- och körningsfunktioner.
 
@@ -101,9 +101,9 @@ Du kan ändra visning och layout för diagrammet med följande element:
 
 * **Objektjustering**
 
-  Om du vill justera ikoner markerar du dem och klickar på **[!UICONTROL Align vertically]** eller **[!UICONTROL Align horizontally]** -ikon.
+  Om du vill justera ikoner markerar du dem och klickar på ikonen **[!UICONTROL Align vertically]** eller **[!UICONTROL Align horizontally]** .
 
-  Använd **CTRL** för att markera flera utspridda aktiviteter eller för att avmarkera en eller flera aktiviteter. Klicka på diagrambakgrunden för att avmarkera allt.
+  Använd nyckeln **CTRL** för att markera flera spridda aktiviteter eller för att avmarkera en eller flera aktiviteter. Klicka på diagrambakgrunden för att avmarkera allt.
 
 * **Bildhantering**
 
@@ -117,7 +117,7 @@ Dubbelklicka på en aktivitet för att konfigurera den eller högerklicka och v�
 >
 >Kampanjarbetsflödesaktiviteter beskrivs i [det här avsnittet](about-activities.md).
 
-Den första fliken innehåller den grundläggande konfigurationen. The **[!UICONTROL Advanced]** -fliken innehåller ytterligare parametrar, som används särskilt för att definiera beteenden när ett fel påträffas, ange körningstiden för en aktivitet och för att ange ett initieringsskript.
+Den första fliken innehåller den grundläggande konfigurationen. Fliken **[!UICONTROL Advanced]** innehåller ytterligare parametrar, som används särskilt för att definiera beteenden när ett fel påträffas, ange körningstid för en aktivitet och för att ange ett initieringsskript.
 
 För att få en bättre förståelse för aktiviteterna och för att arbetsflödet ska bli mer lättläst kan du ange kommentarer i aktiviteterna: dessa visas automatiskt när operatorer rullar över aktiviteten.
 
@@ -135,7 +135,7 @@ Alla dessa aktiviteter finns på den första arbetsflödesfliken.
 >
 >Målinriktade aktiviteter beskrivs i [det här avsnittet](about-activities.md).
 
-Målarbetsflöden kan skapas och redigeras via **[!UICONTROL Profiles and Targets > Jobs > Targeting workflows]** noden i Adobe Campaign-trädet eller via **[!UICONTROL Profiles and Targets > Targeting workflows]** hemsidans meny.
+Målarbetsflöden kan skapas och redigeras via noden **[!UICONTROL Profiles and Targets > Jobs > Targeting workflows]** i Adobe Campaign-trädet eller via hemsidans **[!UICONTROL Profiles and Targets > Targeting workflows]**-meny.
 
 ![](assets/target_wf.png)
 
@@ -145,9 +145,9 @@ Målarbetsflöden inom ramen för en kampanj lagras med alla kampanjarbetsflöde
 
 Steg för att skapa ett arbetsflöde för målinriktning finns i följande avsnitt:
 
-1. **Identifiera** data i databasen - se [Skapa frågor](targeting-data.md#creating-queries)
-1. **Förbered** data för att tillgodose leveransbehov - se [Förbättra och ändra data](targeting-data.md#enriching-and-modifying-data)
-1. **Använd** data för att utföra uppdateringar eller inom en leverans - se [Uppdatera databasen](how-to-use-workflow-data.md#updating-the-database)
+1. **Identifiera**-data i databasen - Se [Skapa frågor](targeting-data.md#creating-queries)
+1. **Förbered**-data för leverans - Se [Förbättra och ändra data](targeting-data.md#enriching-and-modifying-data)
+1. **Använd**-data för att utföra uppdateringar eller inom en leverans - Se [Uppdatera databasen](how-to-use-workflow-data.md#updating-the-database)
 
 Resultaten av alla berikningar och all hantering som utförs under målgruppsanpassningen lagras och är tillgängliga i personaliseringsfält, särskilt för användning när personaliserade meddelanden skapas. Mer information finns i [Måldata](data-life-cycle.md#target-data)
 
@@ -155,23 +155,23 @@ Resultaten av alla berikningar och all hantering som utförs under målgruppsanp
 
 Vid datasegmenteringsåtgärder mappas målnyckeln till en filtreringsdimension. Med målinriktningsdimensionen kan du definiera målgruppen för operationen: mottagare, mottagare, operatör, prenumeranter osv. Med filtreringsdimensionen kan du välja populationen baserat på vissa kriterier: avtalsägare, nyhetsbrevets prenumeranter osv.
 
-Om du till exempel vill välja kunder som har haft en livförsäkring i över 5 år väljer du följande målgruppsdimension: **Klienter** och följande filterdimension: **Kontraktsinnehavare**. Du kan sedan definiera filtervillkoren i frågeaktiviteten
+Om du till exempel vill välja klienter som har haft en livförsäkring i över 5 år, väljer du följande måldimension: **Klienter** och följande filtreringsdimension: **Kontraktsinnehavare**. Du kan sedan definiera filtervillkoren i frågeaktiviteten
 
 Under måldimensionens urvalsfas finns endast kompatibla filtreringsdimensioner i gränssnittet.
 
-Dessa två dimensioner måste vara relaterade. Innehållet i **[!UICONTROL Filtering dimension]** -listan beror på måldimensionen som anges i det första fältet.
+Dessa två dimensioner måste vara relaterade. Innehållet i listan **[!UICONTROL Filtering dimension]** beror alltså på måldimensionen som anges i det första fältet.
 
-Till exempel för mottagare (**mottagare**) kommer följande filterdimensioner att vara tillgängliga:
+För mottagare (**mottagare**) är följande filtreringsdimensioner tillgängliga:
 
 ![](assets/query_filter_target_dimensions_1.png)
 
-Med **Webbprogram** innehåller listan följande filterdimensioner:
+I **Webbprogram** kommer listan att innehålla följande filtreringsdimensioner:
 
 ![](assets/query_filter_target_dimensions_2.png)
 
 ## Kampanjarbetsflöden {#campaign-workflows}
 
-För varje kampanj kan du skapa arbetsflöden som ska köras från **[!UICONTROL Targeting and workflows]** -fliken. Dessa arbetsflöden är specifika för kampanjen.
+För varje kampanj kan du skapa arbetsflöden som ska köras från fliken **[!UICONTROL Targeting and workflows]**. Dessa arbetsflöden är specifika för kampanjen.
 
 ![](assets/wf-in-op-edit-delivery-tab.png)
 
@@ -179,27 +179,27 @@ Fliken innehåller samma aktiviteter som för alla arbetsflöden. [Läs mer](#im
 
 Förutom att rikta kampanjer kan ni med kampanjarbetsflöden skapa och konfigurera leveranser helt för alla tillgängliga kanaler. När leveransen har skapats i arbetsflödet är den tillgänglig från kontrollpanelen för kampanjen. [Läs mer](../../campaign/using/marketing-campaign-deliveries.md)
 
-Alla kampanjarbetsflöden centraliseras via **[!UICONTROL Administration > Production > Objects created automatically > Campaign workflows]** nod.
+Alla kampanjarbetsflöden är centraliserade under noden **[!UICONTROL Administration > Production > Objects created automatically > Campaign workflows]**.
 
 ![](assets/campaigns_wf.png)
 
-Kampanjarbetsflöden och implementeringsexempel finns i [den här sidan](../../campaign/using/marketing-campaign-deliveries.md#building-the-main-target-in-a-workflow).
+Kampanjarbetsflöden och implementeringsexempel finns på [den här sidan](../../campaign/using/marketing-campaign-deliveries.md#building-the-main-target-in-a-workflow).
 
 ## Tekniska arbetsflöden {#technical-workflows}
 
-Tekniska arbetsflöden medföljer Adobe Campaign. De är åtgärder eller jobb som schemalagts för periodisk körning på servern. De gör att du kan utföra underhåll i databasen, vidarebefordra spårningsinformation om leveranser och konfigurera provisoriska processer för leveranser. Tekniska arbetsflöden konfigureras via **[!UICONTROL Administration > Production > Technical workflows]** nod.
+Tekniska arbetsflöden medföljer Adobe Campaign. De är åtgärder eller jobb som schemalagts för periodisk körning på servern. De gör att du kan utföra underhåll i databasen, vidarebefordra spårningsinformation om leveranser och konfigurera provisoriska processer för leveranser. Tekniska arbetsflöden konfigureras via noden **[!UICONTROL Administration > Production > Technical workflows]**.
 
 ![](assets/navtree.png)
 
 Inbyggda mallar finns för att skapa tekniska arbetsflöden. De kan konfigureras så att de passar dina behov.
 
-The **[!UICONTROL Campaign process]** undermappen centraliserar de arbetsflöden som krävs för att köra processer inom kampanjer: aktivitetsmeddelande, lagerhantering, kostnadsberäkning osv.
+Undermappen **[!UICONTROL Campaign process]** centraliserar de arbetsflöden som krävs för att köra processer inom kampanjer: aktivitetsmeddelande, lagerhantering, kostnadsberäkning osv.
 
 >[!NOTE]
 >
->En lista över tekniska arbetsflöden som installeras med varje modul finns i en [dedikerad sektion](about-technical-workflows.md).
+>En lista över tekniska arbetsflöden som installeras med varje modul finns i ett [dedikerat avsnitt](about-technical-workflows.md).
 
-Du kan skapa andra tekniska arbetsflöden i **[!UICONTROL Administration > Production > Technical workflows]** trädstrukturens nod. Den här processen är dock reserverad för expertanvändare.
+Du kan skapa andra tekniska arbetsflöden i noden **[!UICONTROL Administration > Production > Technical workflows]** i trädstrukturen. Den här processen är dock reserverad för expertanvändare.
 
 De aktiviteter som erbjuds är desamma som för arbetsflöden med målinriktning. [Läs mer](#implementation-steps-)
 
@@ -209,7 +209,7 @@ Arbetsflödesmallar innehåller den övergripande konfigurationen av egenskaper 
 
 Du kan skapa nya arbetsflödesmallar som baseras på befintliga mallar eller ändra ett arbetsflöde direkt till en mall.
 
-Arbetsflödesmallar lagras i **[!UICONTROL Resources > Templates > Workflow templates]** noden i Adobe Campaign-trädet.
+Arbetsflödesmallar lagras i noden **[!UICONTROL Resources > Templates > Workflow templates]** i Adobe Campaign-trädet.
 
 ![](assets/s_advuser_wf_template_tree.png)
 
@@ -226,12 +226,12 @@ Du kan duplicera olika typer av arbetsflöden. När du har duplicerat arbetsflö
 >Kopiera och klistra in är tillgängligt i arbetsflöden, men vi rekommenderar att du använder **Duplicera**. När en aktivitet har kopierats behålls hela dess konfiguration. För leveransaktiviteter (e-post, SMS, push-meddelanden..) kopieras även det leveransobjekt som är kopplat till aktiviteten, vilket kan orsaka krasch.
 
 1. Högerklicka på ett arbetsflöde.
-1. Klicka **Duplicera**.
+1. Klicka på **Duplicera**.
 
    ![](assets/duplicate-workflows.png)
 
 1. Ändra arbetsflödesetiketten i arbetsflödesfönstret.
-1. Klicka **Spara**.
+1. Klicka på **Spara**.
 
 Dubblettfunktionen är inte direkt tillgänglig i kampanjvyn.
 
@@ -239,15 +239,15 @@ Men du kan skapa en vy som visar alla arbetsflöden i instansen. I den här vyn 
 
 **Skapa en vy**
 
-1. I **Explorer** går du till den mapp du behöver för att skapa vyn i.
-1. Högerklicka och gå till **Lägg till en ny mapp** > **Process**, markera **Arbetsflöden**.
+1. I **Utforskaren** går du till den mapp du behöver för att skapa vyn i.
+1. Högerklicka och gå till **Lägg till en ny mapp** > **Process**, välj **Arbetsflöden**.
 
    ![](assets/add-new-folder-workflows.png)
 
 Den nya mappen **Arbetsflöden** skapas.
 
 1. Högerklicka och välj **Egenskaper**.
-1. I **Begränsning**, kontrollera **Mappen är en vy** och klicka **Spara**.
+1. I **Begränsning** kontrollerar du att mappen är en vy **och klickar på** Spara **.**
 
    ![](assets/folder-is-a-view.png)
 
@@ -256,9 +256,9 @@ Mappen innehåller nu alla arbetsflöden för din instans.
 **Duplicera ett kampanjarbetsflöde**
 
 1. Välj ett kampanjarbetsflöde i arbetsflödesvyn.
-1. Högerklicka **Duplicera till**.
+1. Högerklicka på **Duplicera till**.
    ![](assets/duplicate-to-right-click.png)
 1. Ändra etiketten.
-1. Klicka **Spara**.
+1. Klicka på **Spara**.
 
 Du kan se det duplicerade arbetsflödet i arbetsflödesvyn.

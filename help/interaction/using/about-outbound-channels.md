@@ -17,10 +17,10 @@ ht-degree: 6%
 
 Erbjudandena kan presenteras i olika utrymmen via inkommande eller utgående kanaler. I det här kapitlet beskrivs utgående kanaler.
 
-![](assets/do-not-localize/how-to-video.png) Du kan också titta på det här [video](https://helpx.adobe.com/campaign/classic/how-to/deliver-an-offer-on-outbound-channel-in-acv6.html?playlist=/ccx/v1/collection/product/campaign/classic/segment/digital-marketers/explevel/intermediate/applaunch/get-started/collection.ccx.js&amp;ref=helpx.adobe.com) som beskriver hur man kan leverera ett erbjudande via en utgående kanal.
+![](assets/do-not-localize/how-to-video.png) Du kan också titta på den här [videon](https://helpx.adobe.com/campaign/classic/how-to/deliver-an-offer-on-outbound-channel-in-acv6.html?playlist=/ccx/v1/collection/product/campaign/classic/segment/digital-marketers/explevel/intermediate/applaunch/get-started/collection.ccx.js&amp;ref=helpx.adobe.com) som beskriver hur du levererar ett erbjudande på en utgående kanal.
 
 För att ett erbjudande ska kunna väljas ut av erbjudandemotorn måste det ha godkänts och vara tillgängligt i en live-miljö. Mer information finns i [Godkänna och aktivera ett erbjudande](../../interaction/using/approving-and-activating-an-offer.md).
 
-Erbjudandet presenteras via en utgående kommunikationskanal via direktreklam, e-post eller SMS-kampanjer osv., vanligtvis i gruppläge (se [Ordlista](../../interaction/using/i-glossary.md)). Du kan också använda enhetsläget, särskilt i Meddelandecenter (mer information finns i [Meddelandecenter](../../message-center/using/about-transactional-messaging.md) guide).
+Erbjudandet visas via en utgående kommunikationskanal via direktreklam, e-post eller SMS-kampanjer osv., vanligtvis i gruppläge (se [Ordlista](../../interaction/using/i-glossary.md)). Du kan också använda enhetsläge, särskilt med Message Center (mer information finns i guiden [Message Center](../../message-center/using/about-transactional-messaging.md)).
 
 Det finns olika alternativ för att presentera ett erbjudande. Till exempel via en leverans, en kampanj, leveransdispositioner eller till och med via arbetsflödesaktiviteter.

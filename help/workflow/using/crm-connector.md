@@ -14,9 +14,9 @@ ht-degree: 3%
 
 
 
-The **CRM-koppling** kan du konfigurera datasynkroniseringen mellan Adobe Campaign och ett CRM-system.
+Med aktiviteten **CRM-koppling** kan du konfigurera datasynkroniseringen mellan Adobe Campaign och ett CRM-system.
 
-Mer information om CRM-anslutningar i Adobe Campaign finns i [section](../../platform/using/crm-connectors.md).
+Mer information om CRM-anslutningar i Adobe Campaign finns i det här [avsnittet](../../platform/using/crm-connectors.md).
 
 Med den här aktiviteten kan du:
 
@@ -31,4 +31,4 @@ Välj det externa konto som matchar det CRM-konto som du vill konfigurera synkro
 
 ![](assets/crm_task_select_obj.png)
 
-Aktivitetens konfiguration beror på vilken process som ska utföras. Olika konfigurationer är detaljerade [på den här sidan](../../platform/using/crm-data-sync.md).
+Aktivitetens konfiguration beror på vilken process som ska utföras. Olika konfigurationer beskrivs [på den här sidan](../../platform/using/crm-data-sync.md).

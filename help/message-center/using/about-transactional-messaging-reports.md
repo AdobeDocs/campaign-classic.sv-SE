@@ -20,6 +20,6 @@ ht-degree: 15%
 
 Adobe Campaign erbjuder flera rapporter som gör att du kan styra aktiviteten och köra körningsinstanserna smidigt.
 
-Du kommer åt dessa rapporter från meddelandecentret via **[!UICONTROL Reports]** -fliken i **kontrollinstans**.
+Du kommer åt dessa meddelandecenterrapporter från fliken **[!UICONTROL Reports]** i **kontrollinstansen**.
 
 ![](assets/messagecenter_reporting_002.png)

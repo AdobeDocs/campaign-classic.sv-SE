@@ -27,7 +27,7 @@ Den läggs till i detaljerna för matchningsordningen och kan redigeras. Med den
 
 ![](assets/mkg_dist_local_op_edit_new_op1.png)
 
-Kampanjen är fortfarande tillgänglig i Campaign-översikten, som du hittar via **[!UICONTROL Campaigns]** på startsidan.
+Kampanjen är fortfarande tillgänglig i Campaign-översikten, som du hittar via länken **[!UICONTROL Campaigns]** på startsidan.
 
 ## Tillgängliga inställningar {#available-settings}
 

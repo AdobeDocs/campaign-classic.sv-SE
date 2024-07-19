@@ -19,9 +19,9 @@ ht-degree: 9%
 
 Tack vare spårningsfunktionerna i Adobe Campaign kan du spåra skickade meddelanden och kontrollera mottagarnas beteende: öppna, klicka på länkar, ta bort prenumeration osv.
 
-Den här informationen hämtas i **[!UICONTROL Tracking]** -fliken för profilen för varje mottagare av leveransen. På den här fliken visas alla URL-länkar som spårats och klickats av mottagaren som valts i listan. Detta är en ackumulering av alla URL:er som spåras i leveranser som fortfarande finns på leveransskärmen. Listan kan konfigureras och innehåller vanligtvis: den URL-adress som klickades på, datum och tid för klickningen samt det dokument där URL-adressen hittades. Mer information om detta finns i [det här avsnittet](../../platform/using/editing-a-profile.md#tracking-tab).
+Den här informationen hämtas på fliken **[!UICONTROL Tracking]** i profilen för varje mottagare av leveransen. På den här fliken visas alla URL-länkar som spårats och klickats av mottagaren som valts i listan. Detta är en ackumulering av alla URL:er som spåras i leveranser som fortfarande finns på leveransskärmen. Listan kan konfigureras och innehåller vanligtvis: den URL-adress som klickades på, datum och tid för klickningen samt det dokument där URL-adressen hittades. Mer information om detta finns i [det här avsnittet](../../platform/using/editing-a-profile.md#tracking-tab).
 
-The **kontrollpanel för leverans** är också avgörande för att övervaka leveranser och eventuella problem som uppstår när meddelanden skickas. Mer information om detta finns i [det här avsnittet](delivery-dashboard.md).
+Kontrollpanelen **för leverans** är också viktig för att övervaka dina leveranser och eventuella problem som uppstår när meddelanden skickas. Mer information finns i [det här avsnittet](delivery-dashboard.md).
 
 I följande diagram visas de olika stegen i dialogen mellan användaren och de olika servrarna.
 
@@ -39,7 +39,7 @@ Innan du använder spårning måste du först konfigurera den för din instans. 
 
 Om du vill konfigurera spårning måste instansen deklareras och registreras hos spårningsservern(arna). [Läs mer](../../installation/using/deploying-an-instance.md#tracking-server)
 
-**Spårning sparas**
+**Sparar spårning**
 
 När spårning har konfigurerats och URL:erna har fyllts i måste spårningsservern registreras. [Läs mer](../../installation/using/deploying-an-instance.md#saving-tracking)
 
@@ -51,7 +51,7 @@ När spårning har konfigurerats och URL:erna har fyllts i måste spårningsserv
 
 Du kan spåra mottagning av meddelanden och aktivering av länkar som infogats i meddelandeinnehållet för att bättre förstå mottagarnas beteende. [Läs mer](how-to-configure-tracked-links.md)
 
-**URL-uppföljning**
+**URL-spårning**
 
 Spårningsalternativen kan konfigureras genom att aktivera eller inaktivera spårade URL:er. [Läs mer](personalizing-url-tracking.md)
 
@@ -107,7 +107,7 @@ De olika tabellerna ger dig en lista över indikatorer som används i de olika r
 
 <img src="assets/do-not-localize/icon-troubleshooting.svg" width="60px">
 
-Följande felsökningstips hjälper dig att lösa de vanligaste problemen som inträffar när du använder spårning i Adobe Campaign Classic. Om du vill ha en mer avancerad felsökning går du till [det här avsnittet](tracking-troubleshooting.md).
+Följande felsökningstips hjälper dig att lösa de vanligaste problemen som inträffar när du använder spårning i Adobe Campaign Classic. Mer avancerad felsökning finns i [det här avsnittet](tracking-troubleshooting.md).
 
 * Kontrollera att spårningsloggsprocessen körs
 
@@ -115,7 +115,7 @@ Följande felsökningstips hjälper dig att lösa de vanligaste problemen som in
 
   Du kommer åt den från hemsidan genom att välja fliken Övervakning i din instans. Du kan också köra följande kommando på instansen: `<user>@<instance>:~$ nlserver pdump`
 
-  Om spårningsloggsprocessen inte visas i listan startar du den med följande kommando på instansen: `<user>@<instance>:~$ nlserver start trackinglogd`
+  Om spårningsprocessen inte visas i listan startar du den med följande kommando på instansen: `<user>@<instance>:~$ nlserver start trackinglogd`
 
 * Kontrollera att det tekniska arbetsflödet för spårning har körts nyligen.
 

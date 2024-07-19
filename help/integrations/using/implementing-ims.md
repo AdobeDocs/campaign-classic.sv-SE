@@ -17,13 +17,13 @@ ht-degree: 1%
 
 # Implementera IMS{#implementing-ims}
 
-En gång [IMS-konfiguration](configuring-ims.md) När du är klar kan du aktivera anslutningen.
+När [IMS-konfigurationen](configuring-ims.md) är klar kan du aktivera anslutningen.
 
 Så här aktiverar du IMS-autentiseringsläget i Adobe Campaign:
 
 1. Öppna anslutningsskärmen för klientkonsolen.
 1. Välj den miljö som du vill aktivera anslutningen för.
-1. Kontrollera **[!UICONTROL Connect with an Adobe ID]** och spara ändringarna.
+1. Markera alternativet **[!UICONTROL Connect with an Adobe ID]** och spara ändringarna.
 
    ![](assets/ims_1.png)
 

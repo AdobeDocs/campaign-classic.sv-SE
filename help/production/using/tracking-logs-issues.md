@@ -20,13 +20,13 @@ ht-degree: 13%
 
 Det kan finnas flera orsaker till att loggar inte vidarebefordras. Vi rekommenderar att du kontrollerar följande information:
 
-* **Gör** Spårning **Har arbetsflödet fel?**
+* **Har arbetsflödet** Spårning **fel?**
 
   Se [Övervaka tekniska arbetsflöden](../../workflow/using/monitoring-technical-workflows.md).
 
   ![](assets/tracking_scheduled_task.png)
 
-* **Är modulen** trackinglogd **körs på servern?**
+* **Kör modulen** trackinglog **på servern?**
 
   Se [Loggfiler](../../production/using/log-files.md).
 

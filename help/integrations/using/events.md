@@ -28,17 +28,17 @@ Eftersom det krävs tekniska kunskaper för att redigera Javascript-koden bör d
 
 ## Bearbeta händelser i JavaScript {#events-javascript}
 
-### JavaScript-fil {#file-js}
+### JavaScript {#file-js}
 
 Pipeline använder en JavaScript-funktion för att bearbeta varje meddelande. Den här funktionen är användardefinierad.
 
-Den är konfigurerad i **[!UICONTROL NmsPipeline_Config]** under attributet &quot;JSConnector&quot;. Detta JavaScript anropas varje gång en händelse tas emot. Det är förbi [!DNL pipelined] -processen.
+Den har konfigurerats i alternativet **[!UICONTROL NmsPipeline_Config]** under attributet JSConnector. Denna JavaScript anropas varje gång en händelse tas emot. Den körs av processen [!DNL pipelined].
 
 Javascript-exempelfilen är cus:triggers.js.
 
-### JavaScript-funktion {#function-js}
+### Funktionen JavaScript {#function-js}
 
-The [!DNL pipelined] Javascript måste börja med en viss funktion.
+JavaScript [!DNL pipelined] måste börja med en specifik funktion.
 
 Den här funktionen anropas en gång för varje händelse:
 
@@ -52,15 +52,15 @@ Den ska returnera som
 <undefined/>
 ```
 
-Du bör starta om [!DNL pipelined] efter redigering av Javascript.
+Du bör starta om [!DNL pipelined] när du har redigerat JavaScript.
 
 ### Utlös dataformat {#trigger-format}
 
-The [!DNL trigger] data skickas till JS-funktionen i XML-format.
+Data [!DNL trigger] skickas till JS-funktionen i XML-format.
 
-* The **[!UICONTROL @triggerId]** -attributet innehåller namnet på [!DNL trigger].
-* The **berikning** -elementet i JSON-format innehåller data som genererats av Adobe Analytics och är kopplat till utlösaren.
-* **[!UICONTROL @offset]** är &quot;pekaren&quot; till meddelandet. Den anger ordningen för meddelandet i kön.
+* Attributet **[!UICONTROL @triggerId]** innehåller namnet på [!DNL trigger].
+* Elementet **enrichments** i JSON-format innehåller data som genererats av Adobe Analytics och är kopplat till utlösaren.
+* **[!UICONTROL @offset]** är pekaren till meddelandet. Den anger ordningen för meddelandet i kön.
 * **[!UICONTROL @partition]** är en behållare med meddelanden i kön. Förskjutningen är relativ till en partition. <br>Det finns ungefär 15 partitioner i kön.
 
 Exempel:
@@ -81,7 +81,7 @@ Exempel:
 Innehållet definieras i JSON-format i Adobe Analytics för varje utlösare.
 I en utlösare av typen LogoUpload_uploading_Visits:
 
-* **[!UICONTROL eVar01]** kan innehålla Shopper-ID:t i String-format, som används för att stämma av mot Adobe Campaign-mottagare. <br>Den måste avstämas för att hitta Shopper ID, som är primärnyckeln.
+* **[!UICONTROL eVar01]** kan innehålla Shopper-ID:t i strängformat, som används för att stämma av mot Adobe Campaign-mottagare. <br>Det måste avstämas för att hitta Shopper ID:t, som är primärnyckeln.
 
 * **[!UICONTROL timeGMT]** kan innehålla tiden för utlösaren på Adobe Analytics-sidan i UTC Epoch-format (sekunder sedan 01/01/1970 UTC).
 
@@ -117,14 +117,14 @@ Händelserna bearbetas en i taget i förskjutningsordning. Varje tråd i [!DNL p
 
 Den här pekaren är specifik för varje förekomst och varje konsument. När många instanser använder samma pipeline med olika konsumenter får de därför alla meddelanden och i samma ordning.
 
-The **konsument** parametern för pipeline-alternativet identifierar den anropande instansen.
+Parametern **Consumer** i pipeline-alternativet identifierar den anropande instansen.
 
 Det finns för närvarande inget sätt att ha olika köer för olika miljöer som&quot;staging&quot; eller&quot;dev&quot;.
 
 ### Loggning och felhantering {#logging-error-handling}
 
-Loggar som logInfo() dirigeras till [!DNL pipelined] log. Fel som logError() skrivs till [!DNL pipelined] logga och låt händelsen placeras i en kö för återförsök. I det här fallet bör du kontrollera loggen i pipeline.
-Felmeddelanden provas flera gånger under den varaktighet som anges i [!DNL pipelined] alternativ.
+Loggar som logInfo() dirigeras till loggen [!DNL pipelined]. Fel som logError() skrivs till loggen [!DNL pipelined] och gör att händelsen placeras i en ny försökskö. I det här fallet bör du kontrollera loggen i pipeline.
+Felmeddelanden provas flera gånger under den varaktighet som angetts för alternativen [!DNL pipelined].
 
 För felsökning och övervakning skrivs alla utlösande data in i utlösartabellen i fältet&quot;data&quot; i XML-format. En logInfo() som innehåller utlösardata har också samma syfte.
 
@@ -219,7 +219,7 @@ Händelserna kan visas med ett enkelt formulär baserat på händelseschemat.
 
 >[!NOTE]
 >
->Pipeline Event-noden är inte inbyggd och måste läggas till, liksom det relaterade formuläret måste skapas i Campaign. De här åtgärderna är begränsade till expertanvändare. Mer information finns i följande avsnitt: [Navigeringshierarki](../../platform/using/adobe-campaign-explorer.md#about-navigation-hierarchy). och [Redigera formulär](../../configuration/using/editing-forms.md).
+>Pipeline Event-noden är inte inbyggd och måste läggas till, liksom det relaterade formuläret måste skapas i Campaign. De här åtgärderna är begränsade till expertanvändare. Mer information finns i följande avsnitt: [Navigeringshierarki](../../platform/using/adobe-campaign-explorer.md#about-navigation-hierarchy). och [Redigerar formulär](../../configuration/using/editing-forms.md).
 
 ![](assets/triggers_7.png)
 

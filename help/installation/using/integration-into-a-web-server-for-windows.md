@@ -23,7 +23,7 @@ Du kan använda den här integrerade Tomcat-servern för att hantera HTTP-begär
 
 I detta fall:
 
-* Standardlyssningsporten är 8080. Om du vill ändra den kan du läsa [det här avsnittet](../../installation/using/configure-tomcat.md).
+* Standardlyssningsporten är 8080. Om du vill ändra den läser du [det här avsnittet](../../installation/using/configure-tomcat.md).
 * Klientkonsolerna ansluter sedan med en URL som ```https:// `<computer>`:8080```.
 
 Av säkerhets- och administrationsskäl rekommenderar vi dock att du använder en dedikerad webbserver som huvudstartpunkt för HTTP-trafik när datorn som kör Adobe Campaign exponeras på Internet och du vill öppna konsolen utanför nätverket.
@@ -52,17 +52,17 @@ Så här integrerar du Adobe Campaign med Microsoft IIS-webbserver:
 
    ![](assets/s_ncs_install_iis7_parameters_step1.png)
 
-1. A **VBS** Med hjälp av skript kan du automatiskt konfigurera de resurser som används av Adobe Campaign-servern i den virtuella katalog som vi just har skapat. Dubbelklicka på **iis_neolane_setup.vbs** filen som finns i `[INSTALL]\conf` mapp, var `[INSTALL]` är sökvägen till Adobe Campaign installationsmapp.
+1. Med ett **VBS**-skript kan du automatiskt konfigurera de resurser som används av Adobe Campaign-servern i den virtuella katalog som vi just har skapat. Om du vill starta den dubbelklickar du på filen **iis_neolane_setup.vbs** i mappen `[INSTALL]\conf` där `[INSTALL]` är sökvägen till Adobe Campaign-installationsmappen.
 
    >[!NOTE]
    >
    >Du måste vara inloggad som administratör för att kunna köra VBS-skriptet eller köra skriptet som administratör.
 
-   Klicka **[!UICONTROL OK]** om webbservern används som en server för spårningsomdirigering, i annat fall klickar du **[!UICONTROL Cancel]**.
+   Klicka på **[!UICONTROL OK]** om webbservern används som en omdirigeringsserver för spårning, och klicka annars på **[!UICONTROL Cancel]**.
 
-   När flera platser redan har konfigurerats på webbservern visas en mellanliggande sida som anger vilken webbplats som installationen gäller för: ange numret som är länkat till platsen och klicka på **[!UICONTROL OK]**.
+   När flera webbplatser redan har konfigurerats på webbservern visas en mellanliggande sida som anger vilken webbplats som installationen gäller för: ange numret som är länkat till platsen och klicka på **[!UICONTROL OK]**.
 
-1. I **[!UICONTROL Content View]** kontrollerar du att webbplatsen är korrekt konfigurerad med Adobe Campaign resurser:
+1. Kontrollera att webbplatsen är korrekt konfigurerad med Adobe Campaign-resurserna på fliken **[!UICONTROL Content View]**:
 
    Om trädet inte visas startar du om Microsoft IIS.
 
@@ -72,11 +72,11 @@ Du måste sedan konfigurera säkerhetsinställningarna för ISAPI DLL och för r
 
 Gör så här:
 
-1. Välj **[!UICONTROL Features View]** och dubbelklicka på **Autentisering** länk.
+1. Välj fliken **[!UICONTROL Features View]** och dubbelklicka på länken **Autentisering**.
 
    ![](assets/s_ncs_install_iis7_parameters_step8.png)
 
-1. I **Katalogsäkerhet** se till att anonym åtkomst är aktiverat. Klicka vid behov på **[!UICONTROL Edit]** om du vill ändra inställningarna.
+1. Kontrollera att anonym åtkomst är aktiverat på fliken **Katalogsäkerhet** på webbplatsen. Om det behövs klickar du på länken **[!UICONTROL Edit]** för att ändra inställningarna.
 
    ![](assets/s_ncs_install_iis7_parameters_step9.png)
 
@@ -86,7 +86,7 @@ Du måste nu testa om konfigurationen är korrekt.
 
 Gör så här:
 
-1. Starta om Microsoft IIS-servern med **iisreset** kommandorad.
+1. Starta om Microsoft IIS-servern med kommandoraden **iisreset**.
 
 1. Starta tjänsten Adobe Campaign och kontrollera att den körs.
 
@@ -119,7 +119,7 @@ Du kan också kontrollera att ISAPI DLL har lästs in korrekt.
 
 Gör så här:
 
-1. Redigera ISAPI-filter för Adobe Campaign webbplats genom att klicka på **[!UICONTROL Driver mapping]** -ikon.
+1. Redigera ISAPI-filtren för Adobe Campaign-webbplatsen genom att klicka på ikonen **[!UICONTROL Driver mapping]**.
 1. Kontrollera innehållet i ISAPI-filtret.
 
 
@@ -129,9 +129,9 @@ När du konfigurerar IIS-webbservern är en gräns på cirka 28 MB automatiskt f
 
 Detta kan påverka Adobe Campaign, särskilt om du vill överföra filer som är större än denna gräns.
 
-Om du till exempel använder en **Inläsning av data (fil)** typaktivitet i ett arbetsflöde för att importera en 50 MB-fil kommer ett fel att stoppa arbetsflödet från att köras korrekt.
+Om du till exempel använder en **datainläsningsaktivitet (fil)** i ett arbetsflöde för att importera en 50 MB-fil kommer ett fel att stoppa arbetsflödet från att köras korrekt.
 
 I så fall måste du öka den här gränsen.
 
-Mer information om det här Microsoft IIS-alternativet finns i avsnittet &quot;HowTo&quot; i [Microsoft-dokumentation](https://learn.microsoft.com/en-us/iis/configuration/system.webServer/security/requestFiltering/requestLimits/){target="_blank"}.
+Mer information om det här Microsoft IIS-alternativet finns i avsnittet &quot;HowTo&quot; i [Microsoft-dokumentationen](https://learn.microsoft.com/en-us/iis/configuration/system.webServer/security/requestFiltering/requestLimits/){target="_blank"}.
 

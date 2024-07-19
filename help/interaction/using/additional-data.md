@@ -26,9 +26,9 @@ I ett målarbetsflöde (utgående kanal) kan du använda måldata under ett anro
 
 ## Ytterligare datakonfiguration {#additional-data-configuration}
 
-Du måste utöka **nms:interaktion** schema länkat till miljön och deklarerar listan med ytterligare fält som ska användas under ett anrop till interaktionsmotorn. När du skapar en regel för behörighet eller personaliserar ett erbjudande blir dessa fält tillgängliga från **Interaktion** nod (se [Använda ytterligare data](#using-additional-data)).
+Du måste utöka schemat **nms:interaction** som är länkat till miljön och deklarera listan med ytterligare fält som ska användas under ett anrop till interaktionsmotorn. När du skapar berättiganderegeln eller anpassar ett erbjudande blir dessa fält tillgängliga från noden **Interaktion** (se [Använda ytterligare data](#using-additional-data)).
 
-För den inkommande kanalen måste du lägga till anropsdatafälten i **Interaktion** nod.
+För den inkommande kanalen måste du lägga till anropsdatafälten i noden **Interaction** .
 
 ```
 <element label="Interactions" labelSingular="Interaction" name="interaction">
@@ -40,7 +40,7 @@ För den inkommande kanalen måste du lägga till anropsdatafälten i **Interakt
 >
 >XML-samlingar stöds på den inkommande kanalen, men länkarna till andra scheman stöds inte.
 
-Du måste lägga till en **targetData** -element som innehåller ytterligare fält i **Interaktion** nod.
+För den utgående kanalen måste du lägga till ett **targetData**-element som innehåller ytterligare fält i noden **Interaction**.
 
 ```
 <element label="Interactions" labelSingular="Interaction" name="interaction">
@@ -54,7 +54,7 @@ Du måste lägga till en **targetData** -element som innehåller ytterligare fä
 >
 >Samlingar stöds inte för den utgående kanalen. Du kan dock skapa länkar till andra scheman.
 
-Om du vill lagra dessa data i förslagstabellen måste du också utöka **nms:propositionRcp** och deklarera dessa fält.
+Om du vill lagra dessa data i förslagstabellen måste du också utöka schemat **nms:propositionRcp** och deklarera dessa fält.
 
 ```
 <element label="Recipient offer propositions" labelSingular="Recipient offer proposition" name="propositionRcp">
@@ -67,7 +67,7 @@ Om du vill lagra dessa data i förslagstabellen måste du också utöka **nms:pr
 
 ### Indatakanal (webbsida) {#input-channel--web-page-}
 
-Om du vill överföra ytterligare data när du anropar motorn måste du lägga till **interactionGlobalCtx** i webbsidans JavaScript-kod. Infoga **Interaktion** nod som innehåller anropsdata i den här variabeln. Du måste respektera samma XML-struktur som finns i **nms:interaktion** schema. Se: [Ytterligare datakonfiguration](#additional-data-configuration).
+Om du vill överföra ytterligare data när du anropar motorn måste du lägga till variabeln **interactionGlobalCtx** i webbsidans JavaScript-kod. Infoga noden **Interaktion** som innehåller anropsdata i den här variabeln. Du måste respektera samma XML-struktur som finns i **nms:interaction** -schemat. Se: [Ytterligare datakonfiguration](#additional-data-configuration).
 
 ```
 interactionGlobalCtx = "<interaction navigationLanguage='"+myLanguage+"'/>";
@@ -75,7 +75,7 @@ interactionGlobalCtx = "<interaction navigationLanguage='"+myLanguage+"'/>";
 
 ### Utkanal {#output-channel}
 
-Du måste skapa ett målarbetsflöde som läser in ytterligare data i arbetsregistret genom att respektera samma XML-struktur och samma interna namn som i **nms:interaktion** schema. Se: [Ytterligare datakonfiguration](#additional-data-configuration).
+Du måste skapa ett målarbetsflöde som läser in ytterligare data i arbetstabellen genom att respektera samma XML-struktur och samma interna namn som i **nms:interaction** -schemat. Se: [Ytterligare datakonfiguration](#additional-data-configuration).
 
 ## Använda ytterligare data {#using-additional-data}
 
@@ -89,9 +89,9 @@ Du kan t.ex. välja att erbjudandet endast ska visas för personer som tittar p�
 
 >[!NOTE]
 >
->Du måste begränsa regeln för de kanaler som data har definierats för. I vårt exempel begränsar vi regeln för inkommande webbkanal (**[!UICONTROL Taken into account if]** fält).
+>Du måste begränsa regeln för de kanaler som data har definierats för. I vårt exempel begränsar vi regeln för den inkommande webbkanalen (**[!UICONTROL Taken into account if]** fält).
 
-### Personalisering {#personalization}
+### Personalization {#personalization}
 
 Du kan också använda dessa ytterligare data när du personaliserar ett erbjudande. Du kan till exempel lägga till ett villkor för navigeringsspråket
 
@@ -101,11 +101,11 @@ Du kan också använda dessa ytterligare data när du personaliserar ett erbjuda
 >
 >Du måste begränsa personaliseringen för de kanaler som data definieras för. I vårt exempel begränsar vi regeln för den inkommande webbkanalen.
 
-Om du har personaliserat ett erbjudande med ytterligare data visas dessa data inte som standard i förhandsgranskningen eftersom de inte är tillgängliga i databasen. I miljön **[!UICONTROL Example of call data]** måste du lägga till värdeexempel som ska användas i förhandsgranskningen. Använd samma XML-struktur som finns i **nms:interaktion** schematillägg. Mer information finns i [Ytterligare datakonfiguration](#additional-data-configuration).
+Om du har personaliserat ett erbjudande med ytterligare data visas dessa data inte som standard i förhandsgranskningen eftersom de inte är tillgängliga i databasen. På miljöns **[!UICONTROL Example of call data]**-flik måste du lägga till värdeexempel som ska användas i förhandsgranskningen. Respektera samma XML-struktur som finns i schematillägget **nms:interaction**. Mer information finns i [Ytterligare datakonfiguration](#additional-data-configuration).
 
 ![](assets/ita_calldata_preview.png)
 
-Vid förhandsgranskning klickar du på **[!UICONTROL Content personalization options for the preview]** och välj ett värde i **[!UICONTROL Call data]** fält.
+När du förhandsgranskar klickar du på **[!UICONTROL Content personalization options for the preview]** och väljer ett värde i fältet **[!UICONTROL Call data]**.
 
 ![](assets/ita_calldata_preview2.png)
 
@@ -115,11 +115,11 @@ Under ett anrop till motorn kan du lagra ytterligare data i förslagstabellen f�
 
 >[!NOTE]
 >
->Du måste ha förlängt **nms:propositionRcp** schemat och deklarerade de fält som ska innehålla de data som ska lagras. Mer information: [Ytterligare datakonfiguration](#additional-data-configuration).
+>Du måste ha utökat schemat **nms:propositionRcp** och deklarerat de fält som ska innehålla de data som ska lagras. Mer information om detta: [Ytterligare datakonfiguration](#additional-data-configuration).
 
-Gå till **[!UICONTROL Storage]** och klicka på **[!UICONTROL Add]** -knappen.
+Gå till fliken **[!UICONTROL Storage]** i erbjudandeutrymmet och klicka på knappen **[!UICONTROL Add]**.
 
-I **[!UICONTROL Storage path]** markerar du lagringsfältet i tabellen. I **[!UICONTROL Expression]** markerar du ytterligare fält i **[!UICONTROL Interaction]** nod.
+I kolumnen **[!UICONTROL Storage path]** markerar du lagringsfältet i förslagstabellen. I kolumnen **[!UICONTROL Expression]** markerar du det extra fältet i noden **[!UICONTROL Interaction]**.
 
 Du kan hämta samtalsdata när förslaget genereras eller när det godkänns (när personen klickar på erbjudandet).
 

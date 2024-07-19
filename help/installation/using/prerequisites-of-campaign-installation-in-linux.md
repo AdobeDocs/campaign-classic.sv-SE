@@ -1,7 +1,7 @@
 ---
 product: campaign
 title: Krav för Campaign-installation i Linux
-description: Krav för Campaign-installation i Linux
+description: Förutsättningar för Campaign-installation i Linux
 feature: Installation, Instance Settings
 badge-v7-prem: label="Endast på plats/hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=sv" tooltip="Gäller endast lokala distributioner och hybriddistributioner"
 audience: installation
@@ -21,23 +21,23 @@ ht-degree: 0%
 
 I det här avsnittet beskrivs de preliminära konfigurationssteg som krävs innan du installerar Adobe Campaign.
 
-Den tekniska konfiguration och programkonfiguration som krävs för att installera Adobe Campaign finns i [Kompatibilitetsmatris](../../rn/using/compatibility-matrix.md).
+Den tekniska konfiguration och programkonfiguration som krävs för att installera Adobe Campaign finns i [kompatibilitetsmatrisen](../../rn/using/compatibility-matrix.md).
 
 Som en påminnelse måste följande komponenter installeras och konfigureras korrekt:
 
 * Apache, se [Kompatibilitetsmatris](../../rn/using/compatibility-matrix.md),
 * Java JDK och OpenJDK, se [Java Development Kit - JDK](../../installation/using/application-server.md#jdk),
 * Bibliotek, se [Bibliotek](#libraries),
-* Lager för databasåtkomst, se [Åtkomstlager för databaser](#database-access-layers),
-* LibreOffice, se [Installerar LibraryOffice för Debian](#installing-libreoffice-for-debian) och [Installerar LibraryOffice för CentOS](#installing-libreoffice-for-centos),
-* Teckensnitt, se [Teckensnitt för MTA-statistik](#fonts-for-mta-statistics) och [Teckensnitt för japanska förekomster](#fonts-for-japanese-instances).
+* Lager för databasåtkomst, se [Lager för databasåtkomst](#database-access-layers),
+* LibreOffice, se [Installera LibraryOffice för Debian](#installing-libreoffice-for-debian) och [Installera LibraryOffice för CentOS](#installing-libreoffice-for-centos),
+* Teckensnitt finns i [Teckensnitt för MTA-statistik](#fonts-for-mta-statistics) och [Teckensnitt för japanska förekomster](#fonts-for-japanese-instances).
 
 
 ### Bibliotek {#libraries}
 
 Om du vill installera Adobe Campaign i Linux måste du se till att du har de bibliotek som krävs.
 
-* Bibliotek C måste ha stöd för TLS-läge (Thread Local Storage). Detta läge är aktivt i de flesta fall förutom med vissa kärnor för vilka Xen-stöd har inaktiverats.
+* Bibliotek C måste ha stöd för TLS-läge (Thread Local Storage). Det här läget är aktivt i de flesta fall förutom med vissa kärnor för vilka Xen-stöd har inaktiverats.
 
   För att kontrollera detta kan du till exempel använda **kommandot uname -a | grep xen** .
 
@@ -47,11 +47,11 @@ Om du vill installera Adobe Campaign i Linux måste du se till att du har de bib
 
   För RHEL-distributioner krävs version 1.0 av OpenSSL.
 
-* Om du vill använda Adobe Campaign måste du ha **libicu** bibliotek installerat.
+* Om du vill använda Adobe Campaign måste du ha **libicu**-biblioteket installerat.
 
 ### SELinux {#selinux}
 
-När SELinux-modulen används måste den vara korrekt konfigurerad.
+När den används måste SELinux-modulen vara korrekt konfigurerad.
 
 Om du vill göra det loggar du in som rot och anger följande kommando:
 
@@ -59,7 +59,7 @@ Om du vill göra det loggar du in som rot och anger följande kommando:
 echo 0 >/selinux/enforce
 ```
 
-Förutom detta finns i **/etc/sysconfig/httpd** filen lades följande rad till som referens till konfigurationsskriptet för Adobe Campaign-miljön:
+I filen **/etc/sysconfig/httpd** lades dessutom följande rad till som referens till konfigurationsskriptet för Adobe Campaign-miljön:
 
 ```
 . ~neolane/nl6/env.sh
@@ -138,25 +138,25 @@ yum install libreoffice-headless libreoffice-writer libreoffice-calc
 
 Åtkomstlagren för den databasmotor du använder måste vara installerade på servern och vara tillgängliga via Adobe Campaign-kontot. Versioner och installationslägen kan variera beroende på vilken databasmotor som används.
 
-Pilotversionen som stöds finns i [Kompatibilitetsmatris](../../rn/using/compatibility-matrix.md).
+Den pilotversion som stöds finns i [kompatibilitetsmatrisen](../../rn/using/compatibility-matrix.md).
 
-Kontrollera även det allmänna [Databas](../../installation/using/database.md) -avsnitt.
+Kontrollera även det allmänna avsnittet [Databas](../../installation/using/database.md).
 
 ### PostgreSQL {#postgresql}
 
 Adobe Campaign stöder alla versioner av PostgreSQL-klientbibliotek från version 9.6: **libpq.so.5**.
 
-Om du använder PostgreSQL med Adobe Campaign måste du även installera motsvarande **pgcrypto** bibliotek.
+Om du använder PostgreSQL med Adobe Campaign måste du även installera motsvarande **pgcrypto** -bibliotek.
 
 ### Oracle {#oracle}
 
-Hämta biblioteksversionen för 64-bitars Debian, d.v.s.: libclntsh.so, libclntsh.so.19.1 **,** libclntsh.so.18.1 **,** libclntsh.so.12.1 **,** libclntsh.so.11.1 **eller** libclntsh.so.10.1 **.******
+Hämta biblioteksversionen för 64-bitars Debian, d.v.s. **: libclntsh.so**, **libclntsh.so.19.1**, **libclntsh.so.18.1**, **libclntsh.so.12.1**, **libclntsh.so.11.1** eller **libclntsh.so.10.1**.
 
 Du kan hämta ett Linux RPM-paket från Oracle Technology Network.
 
 >[!NOTE]
 >
->Om du redan har installerat Oracle-klienten men den globala miljön (till exempel: /etc/profile) inte är korrekt konfigurerad kan du lägga till information som saknas i nl6/customer.sh skriptet **Mer information finns i [Miljövariabler](../../installation/using/installing-packages-with-linux.md#environment-variables).**
+>Om du redan har installerat Oracle-klienten men den globala miljön (till exempel: /etc/profile) inte är korrekt konfigurerad kan du lägga till information som saknas i skriptet **nl6/customer.sh** Mer information finns i [Miljövariabler](../../installation/using/installing-packages-with-linux.md#environment-variables).
 
 **Felsökning och metodtips**
 
@@ -164,7 +164,7 @@ Problem kan uppstå efter en Oraclena klient eller serveruppdatering, vid versio
 
 Om du på klientkonsolen ser att det finns oväntade tidsfördröjningar (en eller flera timmar) i loggar, senaste arbetsflödesbearbetning, nästa bearbetning och så vidare, kan det vara problem mellan Oraclets bibliotek och Oracle Server. För att undvika sådana problem
 
-1. Se till att du använder **fullständig klient**.
+1. Se till att använda den **fullständiga klienten**.
 
    Olika problem har identifierats vid användning av Oracle Instant Client-versionen. Dessutom är det omöjligt att ändra tidszonsfilen på direktklienten.
 
@@ -174,7 +174,7 @@ Om du på klientkonsolen ser att det finns oväntade tidsfördröjningar (en ell
 
    Kontrollera även ORACLE_HOME-värdet för att se till att det pekar på den förväntade klientversionen (om flera versioner är installerade på datorn).
 
-1. Se till att klienten och servern använder samma **tidszonsfil**.
+1. Kontrollera att klienten och servern använder samma **timezone-fil**.
 
 ## Implementeringssteg {#implementation-steps}
 
@@ -185,4 +185,4 @@ Installationsprocessen beskrivs i det här kapitlet. Installationsstegen är fö
 * Steg 1: Installera programservern, se [Installera paket med Linux](../../installation/using/installing-packages-with-linux.md).
 * Steg 2: Integrera med en webbserver (valfritt, beroende på vilka komponenter som används).
 
-När installationen är klar måste du konfigurera instanserna, databasen och servern. Mer information finns i [Om inledande konfiguration](../../installation/using/about-initial-configuration.md).
+När installationen är klar måste du konfigurera instanserna, databasen och servern. Mer information finns i [Om den inledande konfigurationen](../../installation/using/about-initial-configuration.md).

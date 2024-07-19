@@ -19,19 +19,19 @@ ht-degree: 2%
 
 Först och främst bör du kontrollera att du har den senaste versionen installerad. Detta garanterar att du har de senaste funktionerna och felkorrigeringarna.
 
-Se [Versionsinformation](../../rn/using/latest-release.md) om du vill ha mer information om innehållet i varje release.
+Mer information om innehållet i varje release finns i [versionsinformationen](../../rn/using/latest-release.md).
 
 ## Maskinvara och infrastruktur {#hardware-and-infrastructure}
 
-Allmänna riktlinjer för maskinvarukrav för lokal Campaign Classic finns i detta [page](https://helpx.adobe.com/se/campaign/kb/hardware-sizing-guide.html).
+Allmänna riktlinjer för maskinvarukrav för lokal Campaign Classic finns på den här [sidan](https://helpx.adobe.com/se/campaign/kb/hardware-sizing-guide.html).
 
-Konsultteamet kan ge värdkunder ett verktyg som gör att du enkelt kan se hur mycket utrymme som används av olika typer av tabeller i databasen samt hur mycket utrymme som används på SFTP-webbplatsen. Dessutom innehåller det verktyg som du kan använda för att rensa bort onödiga data. Kontakt [Adobe kundtjänst](https://helpx.adobe.com/se/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) om du behöver det här verktyget. Här är några viktiga saker du bör kontrollera med det här verktyget:
+Konsultteamet kan ge värdkunder ett verktyg som gör att du enkelt kan se hur mycket utrymme som används av olika typer av tabeller i databasen samt hur mycket utrymme som används på SFTP-webbplatsen. Dessutom innehåller det verktyg som du kan använda för att rensa bort onödiga data. Kontakta [Adobe kundtjänst](https://helpx.adobe.com/se/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) om du behöver det här verktyget. Här är några viktiga saker du bör kontrollera med det här verktyget:
 
 * Om indexstorleken är större än tabellstorleken krävs ett vakuum.
 * Kontrollera de tabeller som har den maximala blotten. Om dessa tabeller används ofta måste de semitueras.
 * Databasblockering kan göra att e-postmeddelanden inte skickas.
 
-Adobe Campaign har också en [verktyg](../../production/using/monitoring-processes.md#manual-monitoring) för att kontrollera processor- och RAM-användning. Använd det här verktyget och se specifika indikatorer som: **Minne**, **Växla minne**, **Skiva**, **Aktiva processer**. Om värdena är för höga kan du försöka minska antalet arbetsflöden eller schemalägga arbetsflöden att starta vid olika tidpunkter.
+Adobe Campaign tillhandahåller också ett [verktyg](../../production/using/monitoring-processes.md#manual-monitoring) för att kontrollera processor- och RAM-användning. Använd det här verktyget och titta på specifika indikatorer som: **Minne**, **Växla minne**, **Skiva**, **Aktiva processer**. Om värdena är för höga kan du försöka minska antalet arbetsflöden eller schemalägga arbetsflöden att starta vid olika tidpunkter.
 
 ## Databaskontroll {#database-performances}
 
@@ -50,8 +50,8 @@ För det mesta är prestandaproblem kopplade till databasunderhåll. Här är de
 
 Här är en lista över artiklar som rör bästa praxis för programkonfiguration:
 
-* MTA och MTAChild-processer och minne: **mta** distribuerar meddelanden till **mtachild** underordnade moduler. Varje **mtachild** förbereder meddelanden innan en auktorisering begärs från statistikservern och skickar dem. Se detta [page](../../installation/using/email-deliverability.md) för mer information.
-* TLS-konfiguration: du bör inte aktivera TLS globalt eftersom det kan minska genomströmningen. I stället bör TLS-inställningar per domän, som hanteras av leveransteamet, justeras efter behov. Se detta [page](../../installation/using/email-deliverability.md#mx-configuration) för mer information.
+* MTA- och MTAChild-processer och minne: modulen **mta** distribuerar meddelanden till de underordnade **mtachild**-modulerna. Varje **mtachild** förbereder meddelanden innan de begär en auktorisering från statistikservern och skickar dem. Mer information finns på [sidan](../../installation/using/email-deliverability.md).
+* TLS-konfiguration: du bör inte aktivera TLS globalt eftersom det kan minska genomströmningen. I stället bör TLS-inställningar per domän, som hanteras av leveransteamet, justeras efter behov. Mer information finns på [sidan](../../installation/using/email-deliverability.md#mx-configuration).
 
   >[!NOTE]
   >
@@ -63,18 +63,18 @@ Här är en lista över artiklar som rör bästa praxis för programkonfiguratio
 
 Här är en lista över bästa praxis och artiklar som rör slutbarhet:
 
-* IP-anseende: om IP-anseendet inte är tillräckligt bra kommer det att påverka resultatet. The **Leveransövervakning** I modulen finns olika verktyg för att spåra plattformens leveransförmåga. Se detta [page](../../delivery/using/monitoring-deliverability.md).
+* IP-anseende: om IP-anseendet inte är tillräckligt bra kommer det att påverka resultatet. Modulen **Leveransövervakning** innehåller olika verktyg för att spåra plattformens leveransprestanda. Se den här [sidan](../../delivery/using/monitoring-deliverability.md).
 * IP-uppvärmning: IP-uppvärmningen utförs av leveransgruppen. Detta innebär att antalet e-postmeddelanden som skickas via nya IP-adresser gradvis ökar under några veckor.
 
   >[!NOTE]
   >
   >Engagemanget i Deliverability-teamet bygger på kontrakt och kunderna bör kontakta sin Adobe-representant för att få information om Deliverability Engagement.
 
-* Inställning av IP-tillhörighet: en felaktig inställning av IP-tillhörighet kan stoppa alla e-postmeddelanden (felaktigt operatörs-/tillhörighetsnamn i konfigurationen) eller minska genomströmningen (ett litet antal IP-adresser i tillhörigheten). Se detta [page](../../installation/using/email-deliverability.md#list-of-ip-addresses-to-use).
-* E-poststorlek: e-poststorleken spelar en viktig roll för dataflödet. Den rekommenderade maximala e-poststorleken är 60 kB. Se detta [page](https://helpx.adobe.com/legal/product-descriptions/campaign.html). I [Leveransflöde](../../reporting/using/global-reports.md#delivery-throughput) kontrollerar du antalet byte som har överförts per timme.
+* Inställning av IP-tillhörighet: en felaktig inställning av IP-tillhörighet kan stoppa alla e-postmeddelanden (felaktigt operatörs-/tillhörighetsnamn i konfigurationen) eller minska genomströmningen (ett litet antal IP-adresser i tillhörigheten). Se den här [sidan](../../installation/using/email-deliverability.md#list-of-ip-addresses-to-use).
+* E-poststorlek: e-poststorleken spelar en viktig roll för dataflödet. Den rekommenderade maximala e-poststorleken är 60 kB. Se den här [sidan](https://helpx.adobe.com/legal/product-descriptions/campaign.html). Kontrollera antalet byte som har överförts per timme i rapporten [Leveransflöde](../../reporting/using/global-reports.md#delivery-throughput).
 * Ett stort antal ogiltiga mottagare: om det finns ett stort antal ogiltiga mottagare kan det påverka dataflödet. MTA fortsätter att försöka skicka e-post till ogiltiga mottagare. Se till att din databas underhålls väl.
 * Mängd personalisering: Om en leverans fortsätter i&quot;pågående Personalization&quot; ska du kontrollera den JavaScript som används i personaliseringsblocken.
 
 >[!NOTE]
 >
->Se även [Leverans](../../delivery/using/about-deliverability.md) -avsnitt. En djupdykning i leveransförmågan finns i [Adobe Deliverability Best Practice Guide](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html?lang=sv).
+>Se även avsnittet [Slutprodukt](../../delivery/using/about-deliverability.md). Mer information om leveransbarhet finns i [Adobe Deliverability Best Practice Guide](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html?lang=sv).

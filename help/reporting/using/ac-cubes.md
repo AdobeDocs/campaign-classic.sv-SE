@@ -15,7 +15,7 @@ ht-degree: 24%
 
 
 
-Utforska data i databasen via **Marknadsföringsanalys** -modul. Det gör att ni kan analysera och mäta data, beräkna statistik, förenkla och optimera framtagning och beräkning av rapporter. Förutom detta kan ni med Marketing Analytics skapa rapporter och bygga upp målpopulationer. När de har identifierats lagras de i listor som kan användas i Adobe Campaign (målinriktning, segmentering osv.).
+Utforska data i databasen via modulen **Marknadsföringsanalys**. Det gör att ni kan analysera och mäta data, beräkna statistik, förenkla och optimera framtagning och beräkning av rapporter. Förutom detta kan ni med Marketing Analytics skapa rapporter och bygga upp målpopulationer. När de har identifierats lagras de i listor som kan användas i Adobe Campaign (målinriktning, segmentering osv.).
 
 Kuber används för att generera vissa inbyggda rapporter, inklusive leveransrapporter (leveransspårning, klickningar, öppningar osv.). Rapporter som baseras på kuber får endast användas som standard för datavolymer under 5 miljoner faktarader.
 
@@ -45,4 +45,4 @@ Använd modulen Campaign Marketing Analytics för att
 1. Bygg en fråga med data som beräknas och aggregeras i en kub.
 1. Identifiera populationer och referera till dem i listor.
 
-Lär dig hur du skapar och använder kuber i [Adobe Campaign v8-dokumentation](https://experienceleague.adobe.com/docs/campaign/campaign-v8/analytics/reports/cubes/gs-cubes.html){target="_blank"}.
+Lär dig hur du skapar och använder kuber i [Adobe Campaign v8-dokumentationen](https://experienceleague.adobe.com/docs/campaign/campaign-v8/analytics/reports/cubes/gs-cubes.html){target="_blank"}.

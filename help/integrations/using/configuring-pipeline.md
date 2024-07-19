@@ -27,7 +27,7 @@ Utlösarna används för att målinrikta via ett kampanjarbetsflöde som skickar
 Kontrollera att du har:
 
 * Ett Adobe Developer-projekt
-* Ett giltigt organisations-ID - För att hitta ditt organisations-ID, se [den här sidan](https://experienceleague.adobe.com/en/docs/core-services/interface/administration/organizations#concept_EA8AEE5B02CF46ACBDAD6A8508646255){_blank}
+* Ett giltigt organisations-ID - Du hittar ditt organisations-ID på [den här sidan](https://experienceleague.adobe.com/en/docs/core-services/interface/administration/organizations#concept_EA8AEE5B02CF46ACBDAD6A8508646255){_blank}
 * En utvecklaråtkomst till din organisation
 * En giltig utlösarkonfiguration i Adobe Analytics
 
@@ -37,7 +37,7 @@ Autentisering krävs eftersom pipeline lagras i Adobe Experience Cloud. Den anv�
 
 Du måste aktivera din organisation med Adobe Developer Kontotoken för integreringen av utlösare.
 
-Lär dig hur du skapar ditt Adobe-konto i [den här sidan](../../integrations/using/oauth-technical-account.md). Observera att du måste välja **[!UICONTROL Adobe Analytics]** när API lades till i Adobe Developer-autentiseringsuppgifter.
+Lär dig hur du skapar ditt Adobe-tekniska konto på [den här sidan](../../integrations/using/oauth-technical-account.md). Observera att du måste välja **[!UICONTROL Adobe Analytics]** när du lägger till API i Adobe Developer-autentiseringsuppgifter.
 
 ## Steg 2: Konfigurera alternativet för pipeline {#configuring-nmspipeline}
 
@@ -45,11 +45,11 @@ När autentiseringen är inställd hämtas händelserna i pipeline. Den behandla
 
 Alternativet kan också konfigureras med ett jokertecken för att fånga upp alla utlösare oavsett namn.
 
-1. I Adobe Campaign finns alternativmenyn under **[!UICONTROL Administration]** > **[!UICONTROL Platform]**  > **[!UICONTROL Options]** i **[!UICONTROL Explorer]**.
+1. Gå till Alternativ-menyn under **[!UICONTROL Administration]** > **[!UICONTROL Platform]** > **[!UICONTROL Options]** i **[!UICONTROL Explorer]** i Adobe Campaign.
 
-1. Välj **[!UICONTROL NmsPipeline_Config]** alternativ.
+1. Välj alternativet **[!UICONTROL NmsPipeline_Config]**.
 
-1. I **[!UICONTROL Value (long text)]** kan du klistra in följande JSON-kod som anger två utlösare. Se till att du tar bort kommentarer.
+1. I fältet **[!UICONTROL Value (long text)]** kan du klistra in följande JSON-kod som anger två utlösare. Se till att du tar bort kommentarer.
 
    ```json
    {
@@ -94,7 +94,7 @@ Alternativet kan också konfigureras med ett jokertecken för att fånga upp all
 
 Rörledningen fungerar som en leverantör och en konsumentmodell. Meddelanden används endast för en enskild konsument: varje konsument får sin egen kopia av meddelandena.
 
-The **Konsument** parameter identifierar förekomsten som en av dessa konsumenter. Instansens identitet anropar pipelinen. Du kan fylla den med instansnamnet som finns på sidan Övervakning på klientkonsolen.
+Parametern **Consumer** identifierar instansen som en av de här konsumenterna. Instansens identitet anropar pipelinen. Du kan fylla den med instansnamnet som finns på sidan Övervakning på klientkonsolen.
 
 Pipeline-tjänsten håller reda på meddelanden som hämtats av varje konsument. Om du använder olika konsumenter för olika instanser kan du se till att alla meddelanden skickas till varje instans.
 
@@ -104,10 +104,10 @@ Om du vill konfigurera alternativet för pipeline bör du följa dessa rekommend
 
 * Lägg till eller redigera utlösare under **[!UICONTROL Triggers]**.
 * Kontrollera att JSON är giltig.
-* The **Namn** motsvarar utlösar-ID:t. Ett jokertecken &quot;*&quot; fångar upp alla utlösare.
-* The **Konsument** parametern motsvarar namnet på den anropande instansen eller det anropande programmet.
-* den `pipelined`-processen har också stöd för ämnet&quot;alias&quot;.
-* Du bör alltid starta om `pipelined`när du har gjort ändringar.
+* Parametern **Name** motsvarar utlösar-ID:t. Ett jokertecken &quot;*&quot; fångar upp alla utlösare.
+* Parametern **Consumer** motsvarar namnet på den anropande instansen eller det anropande programmet.
+* `pipelined`processen har också stöd för avsnittet&quot;alias&quot;.
+* Du bör alltid starta om `pipelined`processen när du har gjort ändringar.
 
 ## (valfritt) Steg 3: Ytterligare konfiguration {#step-optional}
 
@@ -119,24 +119,24 @@ Listan med valfria parametrar är:
 |:-:|:-:|
 | appName(Legacy) | AppID för OAuth-programmet som är registrerat i det äldre Oath-programmet där den offentliga nyckeln överfördes. Se denna [sida](https://www.adobe.io/authentication/auth-methods.html#!AdobeDocs/adobeio-auth/master/AuthenticationOverview/ServiceAccountIntegration.md) för mer information om detta |
 | authGatewayEndpoint(Legacy) | URL för att hämta gatewaytoken. Standard: ```https://api.omniture.com``` |
-| authPrivateKey(Legacy) | Den privata nyckeln, den offentliga delen som överförts i det äldre Oath-programmet, AES som krypterats med alternativet XtkKey: ```cryptString("PRIVATE_KEY")``` |
+| authPrivateKey(Legacy) | Den privata nyckeln, den offentliga delen som har överförts i det äldre Oath-programmet, AES som har krypterats med alternativet XtkKey: ```cryptString("PRIVATE_KEY")``` |
 | disableAuth(Legacy) | Inaktivera autentisering, anslutning utan gatewaytoken accepteras bara av vissa slutpunkter i utvecklingsfasen. |
 | discoverPipelineEndpoint | URL för att hitta slutpunkten för Pipeline Services som ska användas för den här klienten. Standard: ```https://producer-pipeline-pnw.adobe.net``` |
-| dumpStatePeriodSec | Period mellan två dumpar av den interna tillståndsprocessen i ```var/INSTANCE/pipelined.json.``` <br> Den interna statusen är även tillgänglig på begäran här: ```http://INSTANCE:7781/pipelined/status``` |
+| dumpStatePeriodSec | Period mellan två dumpar av den interna tillståndsprocessen i det interna tillståndet ```var/INSTANCE/pipelined.json.``` <br> är också tillgänglig på begäran här: ```http://INSTANCE:7781/pipelined/status``` |
 | forceradPipelineEndpoint | Inaktivera identifiering av PipelineServicesEndpoint för att framtvinga den |
-| monitorServerPort | Den rörliga processen avlyssnar den här porten för att tillhandahålla den interna tillståndsprocessen här: ```http://INSTANCE:PORT/pipelined/status```. <br>Standardvärdet är 7781 |
-| pointerFlushMessageCount | När det här antalet meddelanden bearbetas sparas förskjutningarna i databasen. <br> Standardvärdet är 1000 |
-| pekareFlushPeriodSec | Efter den här perioden sparas förskjutningarna i databasen. <br>Standardvärdet är 5 (sek) |
-| processingJSThreads | Antal dedikerade trådar som bearbetar meddelanden med anpassade JS-anslutningar. <br> Standard är 4 |
-| processingThreads | Antal dedikerade trådar som bearbetar meddelanden med inbyggd kod. <br>Standard är 4 |
+| monitorServerPort | Processen med rörlig orientering lyssnar på den här porten för att tillhandahålla den interna tillståndsprocessen här: ```http://INSTANCE:PORT/pipelined/status```. <br>Standardvärdet är 7781 |
+| pointerFlushMessageCount | När det här antalet meddelanden bearbetas sparas förskjutningarna i databasen. <br> Standard är 1000 |
+| pekareFlushPeriodSec | Efter den här perioden sparas förskjutningarna i databasen. <br>Standardvärdet är 5 (sekunder) |
+| processingJSThreads | Antal dedikerade trådar som bearbetar meddelanden med anpassade JS-anslutningar. <br> Standardvärdet är 4 |
+| processingThreads | Antal dedikerade trådar som bearbetar meddelanden med inbyggd kod. <br>Standardvärdet är 4 |
 | retryPeriodSec | Fördröjning mellan återförsök vid fel vid bearbetning. <br>Standardvärdet är 30 (sekunder) |
 | retryValiditySec | Ignorera meddelandet om det inte har bearbetats korrekt efter den här perioden (för många försök). <br>Standardvärdet är 300 (sekunder) |
 
 ### Automatisk processstart i pipeline {#pipelined-process-autostart}
 
-The `pipelined` processen måste startas automatiskt.
+Processen `pipelined` måste startas automatiskt.
 
-För detta anger du `<`rörlig`>` -element i config-filen till autostart=&quot;true&quot;:
+För detta anger du elementet `<`pipelined`>` i konfigurationsfilen som autostart=&quot;true&quot;:
 
 ```sql
  <pipelined autoStart="true" ... "/>
@@ -154,6 +154,6 @@ nlserver restart pipelined@instance
 
 Följ stegen nedan för att validera pipeline-konfigurationen för etablering:
 
-* Se till att `pipelined` processen körs.
-* Kontrollera `pipelined.log` för anslutningsloggar för pipeline.
+* Kontrollera att processen `pipelined` körs.
+* Kontrollera om det finns anslutningsloggar för pipeline i `pipelined.log`.
 * Kontrollera anslutningen och om ping-filer tas emot. Värdkunder kan använda övervakning från klientkonsolen.

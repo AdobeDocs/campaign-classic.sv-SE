@@ -27,7 +27,7 @@ Vissa konsolfält har definierats med den här typen av uppräkningar. Uppräkni
 
 ## Åtkomst till värden {#access-to-values}
 
-Värdena för den här typen av fält definieras och den övergripande administrationen av dessa fält (genom att lägga till/ta bort ett värde) utförs via **[!UICONTROL Administration > Platform > Enumerations]** trädnod.
+Värdena för den här typen av fält definieras och den övergripande administrationen av dessa fält (genom att lägga till/ta bort ett värde) utförs via noden **[!UICONTROL Administration > Platform > Enumerations]** i trädet.
 
 ![](assets/s_ncs_user_itemized_list_node.png)
 
@@ -36,15 +36,15 @@ Värdena för den här typen av fält definieras och den övergripande administr
 
   ![](assets/s_ncs_user_itemized_list_values.png)
 
-  Om du vill skapa ett nytt uppräkningsvärde klickar du **[!UICONTROL Add]**.
+  Om du vill skapa ett nytt uppräkningsvärde klickar du på **[!UICONTROL Add]**.
 
   ![](assets/s_ncs_user_itemized_list.png)
 
-  Om **[!UICONTROL Open]** om du väljer det här alternativet kan användaren lägga till ett nytt specificerat listvärde direkt i motsvarande fält. Ett bekräftelsemeddelande låter dig skapa det här värdet.
+  Om alternativet **[!UICONTROL Open]** är markerat kan användaren lägga till ett nytt specificerat listvärde direkt i motsvarande fält. Ett bekräftelsemeddelande låter dig skapa det här värdet.
 
   ![](assets/s_ncs_user_itemized_list_new_value.png)
 
-* Om **[!UICONTROL Closed]** om du väljer det här alternativet kan användarna inte skapa nya värden, utan bara välja bland de tillgängliga värdena.
+* Om alternativet **[!UICONTROL Closed]** är markerat kan användarna inte skapa nya värden, utan bara välja bland de tillgängliga värdena.
 
 ## Standardisera data {#standardizing-data}
 
@@ -58,23 +58,23 @@ I de specificerade listfälten kan du ange andra värden än uppräkningsvärden
 
 Det angivna värdet är då antingen:
 
-* Tillagt till de angivna listvärdena: i det här fallet **[!UICONTROL Open]** måste väljas,
-* eller ersätts automatiskt av motsvarande alias: I det här fallet måste det definieras i **[!UICONTROL Alias]** fliken i den specificerade listan,
+* Tillagd i de specificerade listvärdena: i det här fallet måste alternativet **[!UICONTROL Open]** väljas,
+* eller ersätts automatiskt av motsvarande alias: I det här fallet måste det definieras på fliken **[!UICONTROL Alias]** i den specificerade listan.
 * eller lagras i listan med alias: ett alias kan tilldelas senare.
 
   >[!NOTE]
   >
-  >Om du behöver använda datarensningsfunktionerna väljer du **[!UICONTROL Alias cleansing]** i listan.
+  >Om du behöver använda datarensningsfunktioner väljer du alternativet **[!UICONTROL Alias cleansing]** i den specificerade listan.
 
 ### Använda alias {#using-aliases}
 
-Alternativet **[!UICONTROL Alias cleansing]** gör det möjligt att använda alias för den valda specificerade listan. När det här alternativet är markerat visas **[!UICONTROL Alias]** visas längst ned i fönstret.
+Alternativet **[!UICONTROL Alias cleansing]** gör det möjligt att använda alias för den valda specificerade listan. När det här alternativet är markerat visas fliken **[!UICONTROL Alias]** längst ned i fönstret.
 
 ![](assets/s_ncs_user_itemized_list_alias_option.png)
 
 #### Skapa ett alias {#creating-an-alias}
 
-Om du vill skapa ett alias klickar du **[!UICONTROL Add]**.
+Klicka på **[!UICONTROL Add]** om du vill skapa ett alias.
 
 ![](assets/s_ncs_user_itemized_list_alias_create.png)
 
@@ -90,7 +90,7 @@ Kontrollera parametrarna innan du bekräftar den här åtgärden.
 
 ![](assets/s_ncs_user_itemized_list_alias_create_3.png)
 
-Så när en användare anger värdet **NEILSEN** i ett&quot;företag&quot;-fält (i Adobe Campaign-konsolen eller i ett formulär) ersätts det automatiskt av värdet **NIELSEN Ltd**. Värderingsersättning utförs av **Rensa alias** arbetsflöde. Se [Kör datarensning](#running-data-cleansing).
+När en användare anger värdet **NEILSEN** i ett&quot;företag&quot;-fält (i Adobe Campaign-konsolen eller i ett formulär) ersätts det automatiskt av värdet **NIELSEN Ltd**. Värderelsersättning utförs av **aliasrensningsarbetsflödet**. Se [Kör datarensning](#running-data-cleansing).
 
 ![](assets/s_ncs_user_itemized_list_alias_use.png)
 
@@ -104,7 +104,7 @@ Välj de värden som du vill konvertera och klicka på **[!UICONTROL Next]**.
 
 ![](assets/s_ncs_user_itemized_list_alias_transform.png)
 
-Klicka **[!UICONTROL Start]** för att köra konverteringen.
+Klicka på **[!UICONTROL Start]** för att köra konverteringen.
 
 ![](assets/s_ncs_user_itemized_list_alias_detail1.png)
 
@@ -114,52 +114,52 @@ När körningen är klar läggs aliaset till i listan över alias.
 
 #### Hämta aliasträffar {#retrieving-alias-hits}
 
-De värden som anges av användarna kan konverteras till alias. När användaren anger ett värde som inte finns med i den specificerade listan lagras värdet i **[!UICONTROL Alias]** -fliken.
+De värden som anges av användarna kan konverteras till alias. När användaren anger ett värde som inte finns med i den specificerade listan lagras värdet på fliken **[!UICONTROL Alias]**.
 
-The **Rensa alias** tekniska arbetsflöden återställer dessa värden varje kväll för att uppdatera den specificerade listan. Se [Kör datarensning](#running-data-cleansing)
+Det tekniska arbetsflödet för **Aliasrensning** återställer dessa värden varje kväll för att uppdatera den specificerade listan. Se [Kör datarensning](#running-data-cleansing)
 
-Om det behövs kan **[!UICONTROL Hits]** -kolumnen kan visa hur många gånger det här värdet har angetts. Det kan ta både tid och minne att beräkna det här värdet. Mer information finns i [Beräkna anmälningsförekomster](#calculating-entry-occurrences).
+Om det behövs kan kolumnen **[!UICONTROL Hits]** visa hur många gånger det här värdet har angetts. Det kan ta både tid och minne att beräkna det här värdet. Mer information finns i [Beräkna inmatningsförekomster](#calculating-entry-occurrences).
 
 ### Kör datarensning {#running-data-cleansing}
 
-Datarensning utförs av **[!UICONTROL Alias cleansing]** tekniskt arbetsflöde. De konfigurationer som definieras för uppräkningar tillämpas under körningen. Se [Rensningsarbetsflöde för alias](#alias-cleansing-workflow).
+Datarensning utförs av det tekniska arbetsflödet **[!UICONTROL Alias cleansing]**. De konfigurationer som definieras för uppräkningar tillämpas under körningen. Se [Aliasrensningsarbetsflöde](#alias-cleansing-workflow).
 
-Rensningen kan aktiveras via **[!UICONTROL Cleanse values...]** länk.
+Rensningen kan utlösas via länken **[!UICONTROL Cleanse values...]**.
 
 ![](assets/s_ncs_user_itemized_list_alias_start_normalize.png)
 
-The **[!UICONTROL Advanced parameters...]** -länken kan du ange det datum från vilket insamlade värden ska beaktas.
+Med länken **[!UICONTROL Advanced parameters...]** kan du ange från vilket datum insamlade värden ska tas med i beräkningen.
 
 ![](assets/s_ncs_user_itemized_list_alias_normalize.png)
 
-Klicka på **[!UICONTROL Start]** för att köra datarensning.
+Klicka på knappen **[!UICONTROL Start]** om du vill köra datarensning.
 
 #### Beräkna anmälningsförekomster {#calculating-entry-occurrences}
 
-The **[!UICONTROL Alias]** -fliken i en specificerad lista kan visa antalet förekomster av ett alias bland alla värden som anges. Den här informationen är en uppskattning och visas i **[!UICONTROL Hits]** kolumn.
+Underfliken **[!UICONTROL Alias]** i en specificerad lista kan visa antalet förekomster av ett alias bland alla angivna värden. Den här informationen är en uppskattning och visas i kolumnen **[!UICONTROL Hits]**.
 
 >[!CAUTION]
 >
 >Det kan ta lång tid att beräkna aliaspostförekomster. Därför bör försiktighet iakttas när den här funktionen används.
 
-Du kan köra träffberäkning manuellt via **[!UICONTROL Cleanse values...]** länk. Klicka på **[!UICONTROL Advanced parameters...]** och välj önskade alternativ.
+Du kan köra träffberäkning manuellt via länken **[!UICONTROL Cleanse values...]**. Om du vill göra det klickar du på länken **[!UICONTROL Advanced parameters...]** och väljer önskade alternativ.
 
 ![](assets/s_ncs_user_itemized_list_alias_hits.png)
 
-* **[!UICONTROL Update the number of alias hits]**: detta gör att du kan uppdatera träffar som redan har beräknats, baserat på det angivna datumet.
-* **[!UICONTROL Recalculate the number of alias hits from the start]**: gör att du kan köra beräkningen på hela Adobe Campaign-plattformen.
+* **[!UICONTROL Update the number of alias hits]**: Detta gör att du kan uppdatera träffar som redan har beräknats baserat på det angivna datumet.
+* **[!UICONTROL Recalculate the number of alias hits from the start]**: gör att du kan köra beräkning på hela Adobe Campaign-plattformen.
 
 Du kan också skapa ett dedikerat arbetsflöde så att beräkningen körs automatiskt för en viss period, till exempel en gång i veckan.
 
-Om du vill göra det skapar du en kopia av **[!UICONTROL Alias cleansing]** ändrar du schemaläggaren och använder följande inställningar i **[!UICONTROL Enumeration value cleansing]** aktivitet:
+Det gör du genom att skapa en kopia av arbetsflödet **[!UICONTROL Alias cleansing]**, ändra schemaläggaren och använda följande inställningar i aktiviteten **[!UICONTROL Enumeration value cleansing]**:
 
-* **-updateHits** för att uppdatera antalet aliasträffar,
+* **-updateHits** om du vill uppdatera antalet aliasträffar,
 * **-updateHits:full** om du vill beräkna om alla aliasträffar.
 
 #### Rensningsarbetsflöde för alias {#alias-cleansing-workflow}
 
-The **Rensa alias** arbetsflödet kör uppräkningsvärderensning. Som standard utförs den dagligen.
+Arbetsflödet **Aliasrensning** kör uppräkningsvärderensning. Som standard utförs den dagligen.
 
-Den öppnas via **[!UICONTROL Administration > Production > Technical workflows]** nod.
+Den nås via noden **[!UICONTROL Administration > Production > Technical workflows]**.
 
 ![](assets/s_ncs_user_itemized_list_alias_wf.png)

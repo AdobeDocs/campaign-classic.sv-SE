@@ -24,4 +24,4 @@ Med Adobe Campaign kan ni producera filer för att leverera personaliserade brev
 >
 >En adress anses vara fullständig om fälten för namn, postnummer och ort inte är tomma. Mottagare med ofullständiga adresser utesluts från direktutskick.
 
-Avsnitten nedan innehåller information som är specifik för direktreklamkanalen. Global information om hur du skapar och skickar en leverans finns i [det här avsnittet](steps-about-delivery-creation-steps.md).
+Avsnitten nedan innehåller information som är specifik för direktreklamkanalen. Global information om hur du skapar och skickar en leverans finns i [det här avsnittet](steps-about-delivery-creation-steps.md).

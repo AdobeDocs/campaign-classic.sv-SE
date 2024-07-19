@@ -28,4 +28,4 @@ Innan du skapar dina erbjudanden måste du ange en miljö (se [Miljööversikt](
 
 >[!IMPORTANT]
 >
->Ansvaret för att skapa erbjudandekatalogen, dvs. kategorierna och erbjudandena, är **[!UICONTROL Offer manager]**.
+>Ansvaret för att skapa erbjudandekatalogen, dvs. kategorierna och erbjudandena, ligger hos **[!UICONTROL Offer manager]**.

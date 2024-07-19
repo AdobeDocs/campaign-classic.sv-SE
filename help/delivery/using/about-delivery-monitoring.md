@@ -21,7 +21,7 @@ I det här avsnittet får du lära dig mer om den information du kan övervaka e
 
 <img src="assets/do-not-localize/icon_monitor.svg" width="60px">
 
-**Övervaka leveranser**
+**Övervaka dina leveranser**
 
 Med listan över leveranser kan du se alla skapade leveranser till en enda plats.
 
@@ -45,7 +45,7 @@ Flera riktlinjer bör följas för att leveranserna ska gå bra. Vanliga problem
 
 När det inte går att skicka ett meddelande till en profil skickar fjärrservern automatiskt ett felmeddelande som hämtas av Adobe Campaign-plattformen och kvalificeras för att avgöra om e-postadressen eller telefonnumret ska sättas i karantän eller inte.
 
-[Om leveransfel](understanding-delivery-failures.md) är ett viktigt steg för att förbättra era marknadsföringskampanjer.
+[Att förstå leveransfel](understanding-delivery-failures.md) är ett viktigt steg för att förbättra era marknadsföringskampanjer.
 
 <img src="assets/do-not-localize/icon_quarantine.svg" width="60px">
 
@@ -53,4 +53,4 @@ När det inte går att skicka ett meddelande till en profil skickar fjärrserver
 
 Adobe Campaign hanterar en lista med adresser i karantän. Mottagare vars adress sätts i karantän exkluderas som standard vid leveransanalys och anges inte som mål.
 
-I [det här avsnittet](understanding-quarantine-management.md)hittar du information om hur du identifierar och hanterar adresser i karantän och får veta mer om villkoren för att skicka en adress till karantän.
+I [det här avsnittet](understanding-quarantine-management.md) hittar du information om hur du identifierar och hanterar adresser i karantän, och får lära dig mer om villkoren för att skicka en adress till karantän.

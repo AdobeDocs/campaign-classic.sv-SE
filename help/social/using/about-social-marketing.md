@@ -16,10 +16,10 @@ ht-degree: 6%
 
 # Om social marknadsföring{#about-social-marketing}
 
-The **Hantera sociala nätverk** (Social Marketing)-applikation som är utformad för att hantera sociala nätverk gör att ni kan interagera med kunder och potentiella kunder via X (tidigare Twitter).
+Programmet **Hantera sociala nätverk** (social marknadsföring) som är utformat för att hantera sociala nätverk gör att du kan interagera med kunder och potentiella kunder via X (tidigare Twitter).
 
-Lär dig de viktigaste stegen för att integrera Campaign och X i [Kampanjdokumentation v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/connect/ac-tw.html){target="_blank"}.
+Lär dig viktiga steg för att integrera Campaign och X i [dokumentationen för Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/connect/ac-tw.html){target="_blank"}.
 
-Som lokal kund eller hybridkund måste ditt X External-konto vara konfigurerat och aktiverat. För hybridkonfigurationer är **Mid-sourcing** -fliken måste även anges med en aktiv anslutning till mittkällplattformen.
+Som lokal kund eller hybridkund måste ditt X External-konto vara konfigurerat och aktiverat. För hybridkonfigurationer måste även fliken **Mid-sourcing** anges med en aktiv anslutning till mittkällplattformen.
 
 ![](assets/tw-external-account.png)

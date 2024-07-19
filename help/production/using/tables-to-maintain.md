@@ -33,8 +33,8 @@ Följande lista innehåller endast de tabeller som är mest fragmenterade. Effek
   <tr> 
    <th> <strong>Tabellnamn </strong><br /> </th> 
    <th> <strong>Storlek</strong><br /> </th> 
-   <th> <strong>Huvudtyp av verksamhet</strong><br /> </th> 
-   <th> <strong>Kommentar</strong><br /> </th> 
+   <th> <strong>Huvudtyp av aktivitet</strong><br /> </th> 
+   <th> <strong>Kommentarer</strong><br /> </th> 
   </tr> 
  </thead> 
  <tbody> 
@@ -46,9 +46,9 @@ Följande lista innehåller endast de tabeller som är mest fragmenterade. Effek
   </tr> 
   <tr> 
    <td> NmsDeliveryPart<br /> </td> 
-   <td> Medel<br /> </td> 
+   <td> Medium<br /> </td> 
    <td> Infogningar, uppdateringar, borttagningar<br /> </td> 
-   <td> Arbetsregister som poster infogas i under leveransförberedelsen. De uppdateras sedan under leveransen och tas slutligen bort när leveransen är klar.<br /> Tabellen brukar fragmenteras snabbt även om dess genomsnittliga storlek är ganska begränsad.<br /> </td> 
+   <td> Arbetsregister som poster infogas i under leveransförberedelsen. De uppdateras sedan under leveransen och tas slutligen bort när leveransen är klar.<br /> Den här tabellen brukar fragmenteras snabbt även om dess genomsnittliga storlek är ganska begränsad.<br /> </td> 
   </tr> 
   <tr> 
    <td> NmsMirrorPageInfo<br /> </td> 
@@ -58,21 +58,21 @@ Följande lista innehåller endast de tabeller som är mest fragmenterade. Effek
   </tr> 
   <tr> 
    <td> NmsDeliveryStat<br /> </td> 
-   <td> Medel<br /> </td> 
+   <td> Medium<br /> </td> 
    <td> Infogningar, uppdateringar, borttagningar<br /> </td> 
    <td> Det här registret innehåller statistik om leveransprocessen. Dess register uppdateras regelbundet. <br /> </td> 
   </tr> 
   <tr> 
    <td> NmsAddress<br /> </td> 
-   <td> Medel<br /> </td> 
-   <td> Uppdateringar, infogningar<br /> </td> 
+   <td> Medium<br /> </td> 
+   <td> Uppdateringar, infogningar <br /> </td> 
    <td> Tabellen innehåller information om e-postadresser. Den uppdateras ofta som en del av karantänprocessen (poster skapas vid det första leveransfelet, uppdateras när räknarna ändras och tas bort när leveransen har slutförts). <br /> </td> 
   </tr> 
   <tr> 
    <td> XtkWorkflow<br /> </td> 
    <td> Liten<br /> </td> 
    <td> Uppdateringar<br /> </td> 
-   <td> Det finns en post per arbetsflödesinstans, så få poster. Tabellen uppdateras dock regelbundet för att återspegla status och framsteg.<br /> </td> 
+   <td> Det finns en post per arbetsflödesinstans, så få poster. Tabellen uppdateras dock regelbundet för att återspegla status och förlopp.<br /> </td> 
   </tr> 
   <tr> 
    <td> XtkWorkflowTask<br /> </td> 
@@ -90,11 +90,11 @@ Följande lista innehåller endast de tabeller som är mest fragmenterade. Effek
    <td> XtkWorkflowJob<br /> </td> 
    <td> Mycket liten <br /> </td> 
    <td> Infogningar, uppdateringar, borttagningar<br /> </td> 
-   <td> Det här registret är specifikt för arbetsflödesmotorn. Det gör det möjligt att skicka kommandon till arbetsflöden (till exempel Start, Stop, Pause). Även om den är liten beaktas den här tabellen när du tömmer transaktionsregister som är länkade till arbetsflöden.<br /> </td> 
+   <td> Det här registret är specifikt för arbetsflödesmotorn. Det gör det möjligt att skicka kommandon till arbetsflöden (till exempel Start, Stop, Pause). Även om den är liten beaktas den här tabellen när transaktionsregister som är länkade till arbetsflöden rensas.<br /> </td> 
   </tr> 
   <tr> 
    <td> NmsBroadLog<br /> </td> 
-   <td> Störst<br /> </td> 
+   <td> Största<br /> </td> 
    <td> Infogningar, uppdateringar, borttagningar<br /> </td> 
    <td> Det här är den största tabellen i systemet. Det finns en post per skickat meddelande och dessa poster infogas, uppdateras för att spåra leveransstatus och tas bort när historiken rensas. <br /> </td> 
   </tr> 
@@ -112,7 +112,7 @@ Följande lista innehåller endast de tabeller som är mest fragmenterade. Effek
   </tr> 
   <tr> 
    <td> NmsEmailErrorStat<br /> </td> 
-   <td> Medel<br /> </td> 
+   <td> Medium<br /> </td> 
    <td> Infogningar, uppdateringar, borttagningar<br /> </td> 
    <td> Den här tabellen innehåller aggregaten för SMTP-fel sorterade efter domän. Den innehåller inledningsvis detaljerad information som sammanställs av rensningsaktiviteten när den blir inaktuell. <br /> </td> 
   </tr> 
@@ -168,18 +168,18 @@ Följande lista innehåller endast de tabeller som är mest fragmenterade. Effek
    <td> NmsEventHistory (kontrollinstansen Message Center)<br /> </td> 
    <td> Stor<br /> </td> 
    <td> Infogningar, uppdateringar, borttagningar<br /> </td> 
-   <td> Liknar NmsRtEvent. Den här tabellen arkiverar alla händelser från alla körningsinstanser. Den används inte av någon realtidsprocess, utan endast av rapporter.<br /> </td> 
+   <td> Liknar NmsRtEvent. Den här tabellen arkiverar alla händelser från alla körningsinstanser. Den används av ingen realtidsprocess, endast av rapporter.<br /> </td> 
   </tr> 
   <tr> 
    <td> NmsMobileApp<br /> </td> 
-   <td> Mycket liten<br /> </td> 
+   <td> Mycket liten <br /> </td> 
    <td> Infogningar, uppdateringar, borttagningar<br /> </td> 
    <td> Tabeller som innehåller mobilprogram och deras konfiguration.<br /> </td> 
   </tr> 
   <tr> 
    <td> NmsAppSubscriptionRcp<br /> </td> 
    <td> Stor<br /> </td> 
-   <td> Infogningar, uppdateringar<br /> </td> 
+   <td> Infogningar, uppdateringar <br /> </td> 
    <td> Tabell som innehåller identifierare för mobila enheter (adresser) som används för att skicka meddelandet (liknar en mottagartabell).<br /> </td> 
   </tr> 
   <tr> 

@@ -23,14 +23,14 @@ ht-degree: 2%
 
 I det här exemplet visas hur du skapar ett filter för att sortera nyhetsbrevsprenumerationer baserat på mottagarnas e-postformat.
 
-För att göra detta måste vi använda en fördefinierad filhanterare: dessa filter är länkade till en dokumenttyp och nås via **[!UICONTROL Administration > Configuration > Predefined filters]** nod. Dessa datafilter kan användas för varje typ av redigerare (eller dokument) i programmet.
+För att göra detta måste vi använda en fördefinierad filhanterare: dessa filter är länkade till en dokumenttyp och nås via noden **[!UICONTROL Administration > Configuration > Predefined filters]**. Dessa datafilter kan användas för varje typ av redigerare (eller dokument) i programmet.
 
 Datafilter skapas på samma sätt som fördefinierade filter, men det finns ytterligare ett fält där du kan välja dokumenttypen som filtret ska tillämpas på.
 
 Använd följande steg:
 
-1. Skapa ett nytt filter via **[!UICONTROL Administration > Configuration > Predefined filters]** nod.
-1. Klicka på **[!UICONTROL Select link]** ikon för att välja det berörda dokumentet:
+1. Skapa ett nytt filter via noden **[!UICONTROL Administration > Configuration > Predefined filters]**.
+1. Klicka på ikonen **[!UICONTROL Select link]** för att välja det aktuella dokumentet:
 
    ![](assets/s_ncs_user_filter_choose_schema.png)
 
@@ -38,7 +38,7 @@ Använd följande steg:
 
    ![](assets/s_ncs_user_filter_select_schema.png)
 
-1. Klicka **[!UICONTROL Edit link]** om du vill visa fälten i det markerade dokumentet.
+1. Klicka på **[!UICONTROL Edit link]** om du vill visa fälten i det markerade dokumentet.
 
    ![](assets/s_ncs_user_filter_edit_schema.png)
 
@@ -52,11 +52,11 @@ Använd följande steg:
 
    ![](assets/s_ncs_user_filter_parameters.png)
 
-1. Klicka **[!UICONTROL Save]** om du vill lägga till ett filter i de fördefinierade filtren för den här typen av lista.
-1. Nu kan du använda det här filtret i **[!UICONTROL Subscriptions]** -fliken i mottagarprofilen. Du kan komma åt filtret Okänt e-postformat genom att klicka på **[!UICONTROL Filters]** -knappen.
+1. Klicka på **[!UICONTROL Save]** om du vill lägga till ett filter i de fördefinierade filtren för den här typen av lista.
+1. Du kan nu använda det här filtret på fliken **[!UICONTROL Subscriptions]** i mottagarprofilen. Du kan komma åt filtret Okänt e-postformat genom att klicka på knappen **[!UICONTROL Filters]**.
 
    ![](assets/s_ncs_user_filter_on_events.png)
 
-   Namnet på det aktuella filtret visas ovanför listan. Klicka på knappen **[!UICONTROL Delete this filter]** -ikon.
+   Namnet på det aktuella filtret visas ovanför listan. Klicka på ikonen **[!UICONTROL Delete this filter]** om du vill avbryta filtret.
 
    ![](assets/s_ncs_user_filter_on_subscriptions.png)

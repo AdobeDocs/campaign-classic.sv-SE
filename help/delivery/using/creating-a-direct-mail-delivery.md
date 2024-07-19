@@ -22,9 +22,9 @@ Så här skapar du en ny direktutskick:
 >Globala koncept för leveransskapande presenteras i [det här avsnittet](steps-about-delivery-creation-steps.md).
 
 1. Skapa en ny leverans, till exempel från kontrollpanelen Leverans.
-1. Välj leveransmall **Leverera via direktreklam (papper)**.
+1. Välj leveransmallen **Leverera via direktreklam (papper)**.
 
    ![](assets/direct_mail.png)
 
 1. Identifiera leveransen med en etikett, kod och beskrivning. Mer information finns i [det här avsnittet](steps-create-and-identify-the-delivery.md#identifying-the-delivery)
-1. Klicka **Fortsätt** för att bekräfta den här informationen och visa meddelandekonfigurationsfönstret.
+1. Klicka på **Fortsätt** för att bekräfta den här informationen och visa meddelandekonfigurationsfönstret.

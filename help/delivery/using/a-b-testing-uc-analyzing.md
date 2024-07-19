@@ -17,11 +17,11 @@ ht-degree: 2%
 
 När testleveranserna har skickats kan du kontrollera vilka mottagare de har skickats till och om de öppnats eller inte.
 
-* Om du vill ta reda på vilka mottagare som har angetts som mål öppnar du en leverans via kontrollpanelen för kampanjer och klickar på **[!UICONTROL Delivery]** -fliken.
+* Om du vill ta reda på vilka mottagare som har angetts som mål öppnar du en leverans via kampanjkontrollpanelen och klickar på fliken **[!UICONTROL Delivery]**.
 
   ![](assets/use_case_abtesting_analysis_001.png)
 
-* Om du vill ta reda på om leveransen har öppnats går du till **[!UICONTROL Tracking]** -fliken.
+* Om du vill ta reda på om leveransen har öppnats går du till fliken **[!UICONTROL Tracking]**.
 
   ![](assets/use_case_abtesting_analysis_002.png)
 

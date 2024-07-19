@@ -17,13 +17,13 @@ ht-degree: 5%
 
 När skriptet har skapats för att välja vinnare av A/B-tester kan du definiera parametrarna för den slutliga leveransen.
 
-1. Anslut **[!UICONTROL JavaScript code]** aktivitet till återstående **[!UICONTROL Delivery]** aktivitet.
-1. Öppna **[!UICONTROL Delivery]** aktivitet.
-1. Avmarkera **[!UICONTROL Generate an outbound transition]** för att slutföra arbetsflödet med den här aktiviteten.
+1. Anslut aktiviteten **[!UICONTROL JavaScript code]** till den återstående **[!UICONTROL Delivery]**-aktiviteten.
+1. Öppna aktiviteten **[!UICONTROL Delivery]**.
+1. Avmarkera alternativet **[!UICONTROL Generate an outbound transition]** om du vill slutföra arbetsflödet med den här aktiviteten.
 1. Låt de andra alternativen behålla standardvärdena.
 
    ![](assets/ab_test_final_delivery.png)
 
-Genom att förbereda leveransen som anges i övergången (definieras via **[!UICONTROL Javascript Code]** -aktivitet) kan du sedan godkänna den och starta sändningen, enligt beskrivningen i nästa steg.
+Genom att förbereda leveransen som anges i övergången (definieras via aktiviteten **[!UICONTROL Javascript Code]**) kan du sedan godkänna den och starta sändningen, enligt beskrivningen i nästa steg.
 
 Du kan nu starta arbetsflödet. [Läs mer](a-b-testing-uc-start-workflow.md).

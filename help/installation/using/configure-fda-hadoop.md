@@ -18,7 +18,7 @@ ht-degree: 0%
 
 
 
-Använd kampanj **Åtkomst till federerade data** (FDA) om du vill bearbeta information som lagras i en extern databas. Följ stegen nedan för att konfigurera åtkomst till Hadoopet.
+Använd alternativet **FDA (Federated Data Access**) i kampanjen om du vill bearbeta information som lagras i en extern databas. Följ stegen nedan för att konfigurera åtkomst till Hadoopet.
 
 1. Konfigurera [Hadoopen databas](#configuring-hadoop)
 1. Konfigurera Hadoopet [externt konto](#hadoop-external) i Campaign
@@ -29,7 +29,7 @@ För att ansluta till en extern Hadoop-databas i FDA krävs följande konfigurat
 
 1. Hämta ODBC-drivrutinerna för Hadoop beroende på vilken OS-version du har. Drivrutiner finns på [den här sidan](https://www.cloudera.com/downloads.html).
 
-1. Du måste sedan installera ODBC-drivrutinerna och skapa ett DSN för din Hive-anslutning. Instruktioner finns i [den här sidan](https://docs.cloudera.com/documentation/other/connectors/hive-odbc/2-6-5/Cloudera-ODBC-Driver-for-Apache-Hive-Install-Guide.pdf)
+1. Du måste sedan installera ODBC-drivrutinerna och skapa ett DSN för din Hive-anslutning. Instruktioner finns på [den här sidan](https://docs.cloudera.com/documentation/other/connectors/hive-odbc/2-6-5/Cloudera-ODBC-Driver-for-Apache-Hive-Install-Guide.pdf)
 
 1. När du har hämtat och installerat ODBC-drivrutinerna måste du starta om Campaign Classicen. Om du vill göra det kör du följande kommando:
 
@@ -38,19 +38,19 @@ För att ansluta till en extern Hadoop-databas i FDA krävs följande konfigurat
    systemctl start nlserver.service
    ```
 
-1. I Campaign Classicen kan du sedan konfigurera [!DNL Hadoop] externt konto. Mer information om hur du konfigurerar ditt externa konto finns i [det här avsnittet](#hadoop-external).
+1. I Campaign Classicen kan du sedan konfigurera ditt [!DNL Hadoop]-externa konto. Mer information om hur du konfigurerar ditt externa konto finns i [det här avsnittet](#hadoop-external).
 
 ## Hadoopets externa konto {#hadoop-external}
 
-The [!DNL Hadoop] Med ett externt konto kan du ansluta Campaign-instansen till Hadoopets externa databas.
+Med det externa kontot [!DNL Hadoop] kan du ansluta Campaign-instansen till Hadoopets externa databas.
 
-1. I Campaign Classic konfigurerar du [!DNL Hadoop] externt konto. Från **[!UICONTROL Explorer]**, klicka **[!UICONTROL Administration]** / **[!UICONTROL Platform]** / **[!UICONTROL External accounts]**.
+1. Konfigurera ditt externa [!DNL Hadoop]-konto i Campaign Classicen. Klicka på **[!UICONTROL Administration]** / **[!UICONTROL Platform]** / **[!UICONTROL External accounts]** i **[!UICONTROL Explorer]**.
 
 1. Klicka på **[!UICONTROL New]**.
 
-1. Välj **[!UICONTROL External database]** som ditt externa konto **[!UICONTROL Type]**.
+1. Välj **[!UICONTROL External database]** som det externa kontots **[!UICONTROL Type]**.
 
-1. Konfigurera **[!UICONTROL Hadoop]** externt konto måste du ange:
+1. Konfigurera det externa **[!UICONTROL Hadoop]**-kontot måste du ange:
 
    * **[!UICONTROL Type]**: ODBC (Sybase ASE, Sybase IQ)
 
@@ -62,7 +62,7 @@ The [!DNL Hadoop] Med ett externt konto kan du ansluta Campaign-instansen till H
 
    * **[!UICONTROL Database]**: Namnet på databasen om det inte anges i DSN. Den kan lämnas tom om den anges i DSN
 
-   * **[!UICONTROL Time zone]**: Servertidszon
+   * **[!UICONTROL Time zone]**: Serverns tidszon
 
    ![](assets/hadoop3.png)
 
@@ -78,19 +78,19 @@ Kopplingen har även stöd för följande Hive-alternativ:
 | Namn | Värde | Beskrivning |
 |---|---|---|
 | bulkKey | Åtkomstnyckel för Azure-blob eller DataLake | För wasb:// eller wasbs:// massinläsare (dvs. om massinläsningsverktyget börjar med wasb:// eller wasbs://). <br>Det är åtkomstnyckeln för blob- eller DataLake-bucket för massinläsning. |
-| hdfsPort | portnummer <br>inställd på 8020 som standard | För HDFS-massinläsning (dvs. om massinläsningsverktyget börjar med webhdfs:// eller webhdfss://). |
+| hdfsPort | portnummer <br>som standard är 8020 | För HDFS-massinläsning (dvs. om massinläsningsverktyget börjar med webhdfs:// eller webhdfss://). |
 | bucketNumber | 20 | Antal grupper när en klustrad tabell skapas. |
 | fileFormat | PARQUET | Standardfilformat för arbetsregister. |
 
 
 ## Konfigurerar Hadoop 2.1 {#configure-access-hadoop-2}
 
-Om du behöver ansluta till Hadoop 2.1 följer du stegen nedan [Windows](#for-windows) eller [Linux](#for-linux).
+Om du behöver ansluta till Hadoop 2.1 följer du stegen som beskrivs nedan för [Windows](#for-windows) eller [Linux](#for-linux).
 
 ### Hadoop 2.1 för Windows {#for-windows}
 
-1. Installera ODBC och [Azure HD Insight](https://www.microsoft.com/en-us/download/details.aspx?id=40886) för Windows.
-1. Skapa DSN (namn på datakälla) genom att köra administratörsverktyget för ODBC-datakälla. Du kan ändra ett system-DSN-exempel för Hive.
+1. Installera ODBC- och [Azure HD Insight](https://www.microsoft.com/en-us/download/details.aspx?id=40886)-drivrutiner för Windows.
+1. Skapa DSN (Data Source Name) genom att köra administrationsverktyget ODBC DataSource. Du kan ändra ett system-DSN-exempel för Hive.
 
    ```
    Description: vorac (or any name you like)
@@ -101,7 +101,7 @@ Om du behöver ansluta till Hadoop 2.1 följer du stegen nedan [Windows](#for-wi
    User/Password: admin/<your password here>
    ```
 
-1. Skapa Hadoopets externa konto enligt anvisningarna i [det här avsnittet](#hadoop-external).
+1. Skapa Hadoopets externa konto, vilket beskrivs i [det här avsnittet](#hadoop-external).
 
 ### Hadoop 2.1 för Linux {#for-linux}
 
@@ -154,9 +154,9 @@ Om du behöver ansluta till Hadoop 2.1 följer du stegen nedan [Windows](#for-wi
 
    >[!NOTE]
    >
-   >The **UseNativeQuery** parametern här är mycket viktig. Campaign är Hive-medveten och fungerar inte korrekt om inte UseNativeQuery har angetts. Vanligtvis skriver drivrutinen eller Hive SQL Connector om frågor och ändrar kolumnordningen.
+   >Parametern **UseNativeQuery** här är mycket viktig. Campaign är Hive-medveten och fungerar inte korrekt om inte UseNativeQuery har angetts. Vanligtvis skriver drivrutinen eller Hive SQL Connector om frågor och ändrar kolumnordningen.
 
-   Inställningen av autentisering beror på konfigurationen av Hive/Hadoop. För HD Insight använder du till exempel AuthMech=6 för autentisering av användare/lösenord enligt beskrivningen [här](https://www.simba.com/products/Spark/doc/ODBC_InstallGuide/unix/content/odbc/hi/configuring/authenticating/azuresvc.htm).
+   Inställningen av autentisering beror på konfigurationen av Hive/Hadoop. För HD Insight använder du till exempel AuthMech=6 för användar-/lösenordsautentisering enligt beskrivningen [här](https://www.simba.com/products/Spark/doc/ODBC_InstallGuide/unix/content/odbc/hi/configuring/authenticating/azuresvc.htm).
 
 1. Exportera variablerna.
 
@@ -188,4 +188,4 @@ Om du behöver ansluta till Hadoop 2.1 följer du stegen nedan [Windows](#for-wi
    isql vorac -v
    ```
 
-1. Skapa Hadoopets externa konto enligt anvisningarna i [det här avsnittet](#hadoop-external).
+1. Skapa Hadoopets externa konto, vilket beskrivs i [det här avsnittet](#hadoop-external).

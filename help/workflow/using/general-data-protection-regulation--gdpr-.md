@@ -15,7 +15,7 @@ ht-degree: 2%
 
 
 
-Arbetsflödena nedan installeras tillsammans med **Skyddsförordningen för personuppgifter** som standard. Mer information om modulen finns i [artikel](https://helpx.adobe.com/se/campaign/kb/acc-privacy.html).
+Arbetsflödena som beskrivs nedan installeras som standard med modulen **Sekretessdataskydd** . Mer information om den här modulen finns i [artikeln](https://helpx.adobe.com/se/campaign/kb/acc-privacy.html).
 
 <table> 
  <tbody> 
@@ -27,7 +27,7 @@ Arbetsflödena nedan installeras tillsammans med **Skyddsförordningen för pers
   <tr> 
    <td> <span class="uicontrol">Samla in sekretessförfrågningar</span> <br /> </td> 
    <td> <span class="uicontrol">collectPrivacyRequests</span> <br /> </td> 
-   <td> Det här arbetsflödet genererar mottagarens data som lagras i Adobe Campaign och gör dem tillgängliga för hämtning på skärmen för sekretesspolicy.<br /> </td> 
+   <td> Det här arbetsflödet genererar mottagarens data som lagras i Adobe Campaign och gör dem tillgängliga för hämtning på sekretesförfrågningens skärm.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">Ta bort data för sekretessförfrågningar</span> <br /> </td> 

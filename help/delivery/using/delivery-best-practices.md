@@ -26,11 +26,11 @@ Lär dig de bästa metoderna för leveransdesign och att skicka med Adobe Campai
     </a>
     <div>
       <a href="optimize-delivery.md">
-    <strong>Optimera leveransen</strong>
+    <strong> Optimera leveransen </strong>
     </a>
     </div>
     <p>
-    <em>Säkra och optimera sändningsprocessen</em>
+    <em>Skydda och optimera sändningsprocessen</em>
     <p>
   </td>
    <td>
@@ -39,11 +39,11 @@ Lär dig de bästa metoderna för leveransdesign och att skicka med Adobe Campai
     </a>
     <div>
       <a href="use-templates.md">
-    <strong>Använd mallar</strong>
+    <strong> Använda mallar </strong>
     </a>
     </div>
     <p>
-    <em>Underlätta och snabba nya leveranser</em>
+    <em>Underlätta och snabba upp nya leveranser</em>
     <p>
   </td>
   <td>
@@ -52,11 +52,11 @@ Lär dig de bästa metoderna för leveransdesign och att skicka med Adobe Campai
     </a>
     <div>
       <a href="design-and-personalize.md">
-    <strong>Anpassa innehåll</strong>
+    <strong> Anpassa innehåll </strong>
     </a>
     </div>
     <p>
-    <em>Använd korrekta inställningar</em>
+    <em>Använd rätt inställningar</em>
     <p>
   </td>
 </tr>
@@ -67,11 +67,11 @@ Lär dig de bästa metoderna för leveransdesign och att skicka med Adobe Campai
     </a>
     <div>
       <a href="define-the-right-audience.md">
-    <strong>Definiera rätt målgrupp</strong>
+    <strong> Definiera rätt målgrupp </strong>
     </a>
     </div>
     <p>
-    <em>Målgruppen är</em>
+    <em>Målpopulationen är nyckel</em>
     <p>
   </td>
    <td>
@@ -80,7 +80,7 @@ Lär dig de bästa metoderna för leveransdesign och att skicka med Adobe Campai
     </a>
     <div>
       <a href="check-before-sending.md">
-    <strong>Kontrollera före sändning</strong>
+    <strong>Kontrollera innan du skickar </strong>
     </a>
     </div>
     <p>
@@ -93,11 +93,11 @@ Lär dig de bästa metoderna för leveransdesign och att skicka med Adobe Campai
     </a>
     <div>
       <a href="track-and-monitor.md">
-    <strong>Spåra och övervaka</strong>
+    <strong> Spåra och övervaka </strong>
     </a>
     </div>
     <p>
-    <em>Kontroll för att skicka och felsöka</em>
+    <em>Kontrollera att du skickar och felsöker</em>
     <p>
   </td>
 </tr>
@@ -109,4 +109,4 @@ Se även:
 
 * [Steg för att skapa leverans](steps-about-delivery-creation-steps.md)
 
-* [Checklista för säkerhet och integritet](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/security-privacy/get-started-security-privacy.html?lang=sv)
+* [Checklista för säkerhet och sekretess](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/security-privacy/get-started-security-privacy.html?lang=sv)

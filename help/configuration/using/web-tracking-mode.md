@@ -18,7 +18,7 @@ ht-degree: 0%
 
 I Adobe Campaign kan du välja ett webbspårningsläge som definierar hur spårningsloggar bearbetas i programmet.
 
-Det finns tre tillgängliga spårningslägen för webben: **Sessionsspårning**,**&quot;Permanent spårning&quot;** och **&quot;Anonym spårning&quot;**.
+Det finns tre tillgängliga spårningslägen för webben: **&quot;Sessionsspårning&quot;**,**&quot;Permanent spårning&quot;** och **&quot;Anonym spårning&quot;**.
 
 ![](assets/s_ncs_install_deployment_wiz_tracking_mode.png)
 
@@ -30,7 +30,7 @@ Varje läge har specifika egenskaper. Det &quot;permanenta&quot; läget för web
 >
 >Du kan när som helst ändra standardläget i instansdistributionsguiden.
 
-Observera att om du använder **permanent webb** eller **anonym** spårningsläget måste du lägga till ett index i kolumnen&quot;sourceID&quot; (uuid230) i spårningstabellerna (trackingLogXXX):
+Observera att om du använder spårningsläget **permanent webb** eller **anonym** måste du lägga till ett index i kolumnen&quot;sourceID&quot; (uuid230) i spårningstabellerna (trackingLogXXX):
 
 1. Identifiera spårningstabellerna som berörs av permanent spårning.
 1. Utöka de scheman som matchar de här tabellerna genom att lägga till följande rader:
@@ -41,11 +41,11 @@ Observera att om du använder **permanent webb** eller **anonym** spårningsläg
 </dbindex>
 ```
 
-**Permanent** och **Anonym** Webbspårningslägena har två alternativ: **Tvingad leverans** och **Senaste leverans**.
+Lägen för **permanent** och **anonym** webbspårning innehåller två alternativ: **Tvingad leverans** och **Senaste leverans**.
 
-The **Tvingad leverans** gör att du kan ange identifieraren för leveransen (@jobid) under spårning.
+Med alternativet **Tvingad leverans** kan du ange identifieraren för leveransen (@jobid) under spårning.
 
-The **Senaste leverans** kan du länka den aktuella spårningsloggen till den senast spårade leveransen.
+Med alternativet **Senaste leverans** kan du länka den aktuella spårningsloggen till den senast spårade leveransen.
 
 **Egenskaper för sessionswebbspårning:**
 
@@ -62,7 +62,7 @@ I det här webbspårningsläget skapas ingen spårningslogg i programmet om en d
 
 Det här läget är ekonomiskt när det gäller volym (begränsat antal poster i registret trackingLog) och beräkning (ingen avstämning).
 
-**Egenskaper för permanent webbspårningsläge:**
+**Egenskaper för det permanenta webbspårningsläget:**
 
 I det här webbspårningsläget kan du skapa en spårningslogg baserat på förekomsten av den permanenta uid230-cookien. Om en besökare stänger sin session använder Adobe Campaign den permanenta cookien för att återställa information om dem från tidigare spårningsloggar. Adobe Campaign infogar en spårningslogg igen om uuid230 för den aktuella sessionen har samma värde som en uuid230 som redan lagrats i spårningstabellen.
 
@@ -80,7 +80,7 @@ Det här läget är det mest kostsamma när det gäller beräkning och volym.
 
 >[!NOTE]
 >
->Om **[!UICONTROL Leads]** paketet är installerat måste du göra samma sak med aktivitetstabellen (**crm:inkommandeLead**)
+>Om paketet **[!UICONTROL Leads]** är installerat måste du göra samma sak med aktivitetstabellen (**crm:inkommandeLead**)
 
 I följande schema sammanfattas funktionerna för alla tre webbspårningslägena:
 

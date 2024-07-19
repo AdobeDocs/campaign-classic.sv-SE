@@ -15,7 +15,7 @@ ht-degree: 2%
 
 
 
-Arbetsflödena nedan installeras tillsammans med **LINE-kanal** som standard. Mer information om modulen finns i [section](../../delivery/using/line-channel.md).
+Arbetsflödena som anges nedan installeras som standard med **LINE-kanalmodulen**. Mer information om den här modulen finns i [avsnittet](../../delivery/using/line-channel.md).
 
 <table> 
  <tbody> 
@@ -32,7 +32,7 @@ Arbetsflödena nedan installeras tillsammans med **LINE-kanal** som standard. Me
   <tr> 
    <td> <span class="uicontrol">Ta bort blockerade LINE-användare</span> <br /> </td> 
    <td> <span class="uicontrol">deleteBlockedLineUsersV2</span> <br /> </td> 
-   <td> Det här arbetsflödet säkerställer att LINE V2-användarnas data tas bort efter att de har blockerat LINE-kontot i 180 dagar.<br /> </td> 
+   <td> Det här arbetsflödet säkerställer att LINE V2-användarnas data tas bort efter att de har blockerat LINE-officiella kontot i 180 dagar.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">MID till LineUserID-migrering</span> <br /> </td> 

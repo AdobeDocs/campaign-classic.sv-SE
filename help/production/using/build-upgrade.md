@@ -29,16 +29,16 @@ Följande krav krävs:
 * Kunskap om system och serversidor
 * Administrativa rättigheter och behörigheter
 
-Mer information finns i följande avsnitt: [Uppdaterar Adobe Campaign](../../production/using/upgrading.md), [Migrera till en ny version](../../migration/using/about-migration.md).
+Mer information finns i följande avsnitt: [Uppdatera Adobe Campaign](../../production/using/upgrading.md), [Migrerar till en ny version](../../migration/using/about-migration.md).
 
-För värdbaserade och hybridinstanser måste du begära en uppgradering till Adobe Technical Operations Team. Mer information finns i avsnittet Frågor och svar längst ned på den här sidan. Se även [frågor och svar om uppgraderingar](../../platform/using/faq-build-upgrade.md).
+För värdbaserade och hybridinstanser måste du begära en uppgradering till Adobe Technical Operations Team. Mer information finns i avsnittet Frågor och svar längst ned på den här sidan. Se även [frågor och svar om uppgradering av bygget](../../platform/using/faq-build-upgrade.md).
 
 ## Förbered uppgraderingen
 
 ![](assets/do-not-localize/icon_planification.png)
 
 Innan du påbörjar uppgraderingen måste du utföra en fullständig förberedelse enligt beskrivningen nedan.
-När systemet är klart att uppgraderas krävs en uppgradering **minst** 2 timmar.
+När systemet är klart för uppgradering tar en bygguppgradering **minst** 2 timmar.
 
 Bygguppgraderingsprocessen kräver följande resurser:
 
@@ -55,7 +55,7 @@ Här är de viktigaste punkterna på hur du planerar en bygguppgradering:
 1. Distribuera kontaktuppgifter för Adobe och kundpersonal.
 1. För värdinstanser: Adobe och kundpersonal koordinerar tiden för uppgraderingen och vem som ska genomföra den.
 1. För lokala instanser: kundpersonalen hanterar hela processen - om hjälp med testning av anpassade arbetsflöden och leveranslogik behövs bör konsulttjänster tas in.
-1. Bestäm och bekräfta vilken version av Adobe Campaign du vill uppgradera till - se [Versionsinformation för Adobe Campaign Classic](../../rn/using/rn-overview.md).
+1. Kontrollera vilken version av Adobe Campaign du vill uppgradera till i [versionsinformationen för Adobe Campaign Classic](../../rn/using/rn-overview.md).
 1. Bekräfta innehavet av uppgraderingsfiler.
 
 ### Viktiga personer
@@ -84,26 +84,26 @@ Innan du påbörjar uppgraderingen måste lokala kunder utföra följande förbe
 
 1. Utför en fullständig säkerhetskopiering av databaserna för alla instanser av käll- och målmiljöerna.
 
-1. Skaffa den senaste versionen av [serverkonfigurationsfil](../../installation/using/the-server-configuration-file.md).
+1. Hämta den senaste versionen av [serverkonfigurationsfilen](../../installation/using/the-server-configuration-file.md).
 
-1. [Ladda ned den senaste versionen](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html). [Läs mer](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html).
+1. [Hämta den senaste versionen](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html). [Läs mer](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html).
 
-Du måste också känna till alla [användbara kommandorader](../../installation/using/command-lines.md) innan du påbörjar en versionsuppgradering:
+Du måste också känna till alla [användbara kommandorader](../../installation/using/command-lines.md) innan du påbörjar en bygguppgradering:
 
-* **nlserver pdump**: listor med processer som körs
-* **nlserver pdump -vem**: visar aktiva klientsessioner
-* **nlserver monitor -missing**: listor saknade egenskaper
+* **nlserver pdump**: visar processer som körs
+* **nlserver pdump -who**: visar aktiva klientsessioner
+* **nlserver monitor -missing**: visar saknade egenskaper
 * **nlserver start process@instance-name**: startar en process
 * **nlserver stop process@instance-name**: stoppar en process
-* **omstart av nlserver process@instance-name**: startar om en process
-* **avstängning av nlserver**: stoppar alla kampanjprocesser
+* **nlserver startar om process@instance-name**: startar om en process
+* **ingen avstängning**: stoppar alla Campaign-processer
 * **nlserver watchdog -svc**: startar övervakningsenheten (endast UNIX)
 
 ## Utför uppgraderingen
 
 ![](assets/do-not-localize/icon_process.png)
 
-Procedurer nedan utförs endast av **lokal** kunder. För värdkunder hanteras det av värdteamet. Nedan beskrivs hur du uppdaterar Adobe Campaign till en ny version.
+Procedurer nedan utförs endast av **lokala**-kunder. För värdkunder hanteras det av värdteamet. Nedan beskrivs hur du uppdaterar Adobe Campaign till en ny version.
 
 ### Duplicera miljön
 
@@ -115,7 +115,7 @@ Gör så här:
 
 1. Återställ dessa kopior i alla instanser av målmiljön.
 
-1. Kör **nms:ezeInstance.js** autentiseringsskript i målmiljön innan det startas. Detta stoppar alla processer som interagerar med utsidan: loggar, spårning, leveranser, kampanjarbetsflöden osv.
+1. Kör autentiseringsskriptet **nms:ezeInstance.js** i målmiljön innan du startar det. Detta stoppar alla processer som interagerar med utsidan: loggar, spårning, leveranser, kampanjarbetsflöden osv.
 
    ```
    nlserverjavacsriptnms:freezeInstance.js–instance:<dev> -arg:run
@@ -123,7 +123,7 @@ Gör så här:
 
 1. Kontrollera auktorisering enligt följande:
 
-   * Kontrollera att den enda leveransdelen är den som ID är inställt på **0**:
+   * Kontrollera att den enda leveransdelen är den som har ID inställt på **0**:
 
      ```
      SELECT * FROM neolane.nmsdeliverypart;
@@ -156,7 +156,7 @@ Om du vill ersätta alla filer med den nya versionen måste alla instanser av nl
    >Kontrollera att omdirigeringsservern (webmdl) har stoppats så att filen nlsrvmod.dll som används av IIS kan ersättas med den nya versionen.
    >
 
-1. Verifiera att inga aktiviteter är aktiva genom att köra **nlserver pdump** -kommando. Om det inte finns några uppgifter bör utdata likna följande:
+1. Verifiera att inga aktiviteter är aktiva genom att köra kommandot **nlserver pdump**. Om det inte finns några uppgifter bör utdata likna följande:
 
    ```
    C:\<installation path>\bin>nlserverpdump HH:MM:SS > Application Server for Adobe Campaign version x.x (build xxx) dated xx/xx/xxxx No tasks
@@ -166,13 +166,13 @@ Om du vill ersätta alla filer med den nya versionen måste alla instanser av nl
 
 ### Uppgradera Adobe Campaign Server-programmet
 
-1. Kör **Setup.exe** -fil. Om du behöver ladda ned den här filen kan du få åtkomst [Hämtningscenter](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html).
+1. Kör filen **Setup.exe**. Om du behöver hämta den här filen öppnar du [Hämtningscenter](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html).
 
 1. Välj installationsläge: **Uppdatera** eller **Reparera**.
 
-1. Klicka **Nästa**.
+1. Klicka på **Nästa**.
 
-1. Klicka **Slutför**: installationsprogrammet kopierar de nya filerna.
+1. Klicka på **Slutför**: installationsprogrammet kopierar de nya filerna.
 
 1. När åtgärden är klar klickar du på **Slutför**.
 
@@ -242,7 +242,7 @@ När Transactional Messaging (Message Center) är aktiverat i Campaign-instansen
    * Koppla från och koppla från
    * Genomför en snabb rimlighetskontroll av arbetsflöden
 
-1. Publicera meddelandecentermallar för att se till att gränssnittet mellan servrar och meddelandecenterinstansen fungerar.
+1. Publish Message Center-mallar för att säkerställa att gränssnittet mellan servrar och Message Center-instansen fungerar.
 1. Kör tester för att se till att e-postmeddelanden tas emot via produktionsinstansen i meddelandecentret.
 1. Kör arbetsflödestester i produktionen för att säkerställa att leveranser tas emot.
 
@@ -250,7 +250,7 @@ När Transactional Messaging (Message Center) är aktiverat i Campaign-instansen
 
 I en miljö med flera leverantörer behöver du utföra följande steg för att uppgradera:
 
-1. Kontakt [Adobe kundtjänst](https://helpx.adobe.com/se/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) för att koordinera uppgraderingen av servern för medelhög källkod.
+1. Kontakta [Adobe kundtjänst](https://helpx.adobe.com/se/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) för att koordinera uppgraderingen av MID-Source-servern.
 1. Verifiera att versionen har uppdaterats genom att köra en testlänk. Exempel:
 
    ```
@@ -281,7 +281,7 @@ YYYY-MM-DD HH:MM:SS.750Z 00002E7A 1 warning log Document of identifier 'nms:incl
 
 Om varningen gäller en resurskonflikt måste användaren åtgärda den.
 
-The **postupgrade_ServerVersionNumber_TimeOfPodumgrade.log** filen innehåller synkroniseringsresultatet. Den är som standard tillgänglig i följande katalog: **installDirectory/var/`<instance-name>`/postupgrade**. Fel och varningar indikeras av fel- och varningsattributen.
+Filen **postupgrade_ServerVersionNumber_TimeOfPodumgrade.log** innehåller synkroniseringsresultatet. Den är som standard tillgänglig i följande katalog: **installationDirectory/var/`<instance-name>`/postupgrade**. Fel och varningar indikeras av fel- och varningsattributen.
 
 ### Analysera konflikter
 
@@ -317,10 +317,10 @@ Om inget av dessa villkor gäller är detta falskt positivt. Om båda dessa vill
 
 Använd följande process för att lösa konflikter:
 
-1. I Adobe Campaign Explorer går du till **Administration > Konfiguration > Pakethantering > Redigera konflikter**.
+1. Gå till **Administration > Konfiguration > Pakethantering > Redigera konflikter** i Adobe Campaign Utforskaren.
 
 1. Markera den konflikt som du vill lösa i listan.
-Det finns tre alternativ för att lösa konflikter: **Acceptera den nya versionen**, **Behåll aktuell version**, **Sammanfoga koden (och deklarera som löst)**, **Ignorera konflikten (rekommenderas inte)**.
+Det finns tre alternativ för att lösa konflikter: **Acceptera den nya versionen**, **Behåll den aktuella versionen**, **Sammanfoga koden (och deklarera som löst)**, **Ignorera konflikten (rekommenderas inte)**.
 
 **När kan jag godkänna den nya versionen?**
 
@@ -333,7 +333,7 @@ Det finns tre alternativ för att lösa konflikter: **Acceptera den nya versione
 * Om du inte vill sammanfoga
 * Om du inte behöver åtgärda det objekt som står i konflikt från uppgraderingen
 
-**När ska en sammanfogning utföras?**
+**När ska en sammanslagning utföras?**
 
 * Endast formulär, rapporter och webbprogram kan sammanfogas.
 * Vissa små sammanfogningar kan lösas utan att koden tolkas.
@@ -369,7 +369,7 @@ Det finns olika typer av sammanfogningar:
 #### Var hittar du koden?
 
 1. Inbyggd kod lagras i XML-filer i datamappen. Hitta XML-filen som matchar objektet som är i konflikt. Exempel: installationDirectory\datakit\nms\fra\form\recipient.xml
-1. Hämta den ursprungliga versionen: via [Hämtningscenter](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html) eller en annan icke-uppgraderad installation av produkten.
+1. Hämta den ursprungliga versionen: via [Hämtningscenter](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html) eller någon annan ej uppgraderad installation av produkten.
 1. Hämta den nya versionen: via [Hämtningscenter](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html) eller kundens installerade filer.
 1. Hämta den anpassade versionen: hämta objektets källkod från Campaign-klienten.
 
@@ -389,9 +389,9 @@ Det finns olika typer av sammanfogningar:
 
 Om du väljer att lösa konflikten manuellt gör du så här:
 
-1. Sök efter **_conflict_string_** för att hitta enheter med konflikter. Entiteten som installerades med den nya versionen innehåller det nya argumentet, entiteten som matchar den tidigare versionen innehåller det anpassade argumentet.
-1. Ta bort den version som du inte vill behålla. Ta bort **_conflict_argument_** sträng för den entitet som du håller.
-1. Gå till konflikten som du har löst. Klicka på **Åtgärder** ikon och markera **Deklarera som löst**.
+1. I fönstrets nedre del söker du efter **_conflict_string_** för att hitta entiteterna med konflikter. Entiteten som installerades med den nya versionen innehåller det nya argumentet, entiteten som matchar den tidigare versionen innehåller det anpassade argumentet.
+1. Ta bort den version som du inte vill behålla. Ta bort strängen **_conflict_argument_** för entiteten som du håller kvar.
+1. Gå till konflikten som du har löst. Klicka på ikonen **Åtgärder** och välj **Deklarera som löst**.
 1. Spara dina ändringar: konflikten är nu löst.
 
 #### Komplexa sammanslagningar{#complex-merges}

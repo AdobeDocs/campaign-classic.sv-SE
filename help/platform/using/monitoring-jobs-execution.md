@@ -23,10 +23,10 @@ Du kan spåra körningen av import- och exportjobb direkt i listan över import-
 
 ![](assets/s_ncs_user_export_list_and_details.png)
 
-* The **[!UICONTROL Journal]** -fliken kan du titta i loggmeddelanden som rör körning.
-* The **[!UICONTROL Rejects]** -fliken innehåller de avvisade posterna. Se [det här avsnittet](../../platform/using/executing-import-jobs.md#behavior-in-the-event-of-an-error).
+* På fliken **[!UICONTROL Journal]** kan du titta på loggmeddelanden om körning.
+* Fliken **[!UICONTROL Rejects]** innehåller de avvisade posterna. Se [det här avsnittet](../../platform/using/executing-import-jobs.md#behavior-in-the-event-of-an-error).
 
-I **[!UICONTROL General]** -fliken, **[!UICONTROL Status]** fältet anger aktuell status för ett jobb.
+På fliken **[!UICONTROL General]** anger fältet **[!UICONTROL Status]** aktuell status för ett jobb.
 
 Varje status representeras av en speciell ikon och etikett. Statuserna och ikonerna för dem listas nedan:
 
@@ -42,19 +42,19 @@ Varje status representeras av en speciell ikon och etikett. Statuserna och ikone
 
 * **Avbryt**
 
-  Klicka på **[!UICONTROL Cancel]** knapp: det pågående jobbet avbryts.
+  Klicka på knappen **[!UICONTROL Cancel]**: det pågående jobbet avbryts.
 
-* **Avbokning pågår**
+* **Avbryter**
 
   Kommandot för att avbryta har tagits med i beräkningen och jobbet avbryts.
 
 * **Paus pågår**
 
-  Klicka **[!UICONTROL Pause]**: jobbet pausas.
+  Klicka på **[!UICONTROL Pause]**: Jobbet pausas.
 
 * **Pausad**
 
-  Klicka **[!UICONTROL Pause]**: jobbet har pausats. Du kan starta om programmet genom att klicka på **[!UICONTROL Start]**.
+  Klicka på **[!UICONTROL Pause]**: Jobbet har pausats. Den kan startas om genom att klicka på **[!UICONTROL Start]**.
 
 * **Slutförd**
 

@@ -25,7 +25,7 @@ Observera att prenumerationslänkar inte kan användas som andra länkar. Frekve
 
 **Påverkas du?**
 
-För att förbättra säkerheten har signaturfunktionen för att spåra länkar i e-postmeddelanden introducerats i [Campaign Gold Standard 8](../../rn/using/gold-standard.md#gs8) - April 2020 - och är aktiverat som standard för alla kunder från och med Build 19.1.4 (9032@3a9dc9c) och Campaign 20.2.
+För att förbättra säkerheten introducerades signaturfunktionen för att spåra länkar i e-postmeddelanden i [Campaign Gold Standard 8](../../rn/using/gold-standard.md#gs8) - april 2020 - och är aktiverad som standard för alla kunder med början Build 19.1.4 (9032@3a9dc9c) och Campaign 20.2.
 
 Om miljön körs i någon av versionerna som listas nedan kan du påverkas:
 
@@ -38,18 +38,18 @@ Om miljön körs i någon av versionerna som listas nedan kan du påverkas:
 * Kampanj 19.1.5 (build 9033) till 19.1.7 (build 9036).
 
 
-Lär dig kontrollera din version [i det här avsnittet](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version).
+Lär dig hur du kontrollerar version [ i det här avsnittet](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version).
 
 **Hur uppdaterar jag?**
 
-Som en **värdbaserad kund** kommer Adobe att arbeta med dig för att uppdatera din konfiguration inom kort.
+Som **värdkund** arbetar Adobe med dig för att uppdatera din konfiguration inom kort.
 
-Som en **lokal/hybridkund** måste du uppdatera konfigurationen.
+Som **lokal/hybridkund** måste du uppdatera din konfiguration.
 
 Följ stegen nedan:
 
-1. I [serverkonfigurationsfil](../../installation/using/the-server-configuration-file.md) (serverConf.xml), ändra **signEmailLinks** till **false**.
-1. Starta om **nlserver** service.
+1. I [serverkonfigurationsfilen](../../installation/using/the-server-configuration-file.md) (serverConf.xml) ändrar du **signEmailLinks** till **false**.
+1. Starta om tjänsten **nlserver**.
 1. Starta om webbservern på spårningsservern (apache2 på Debian, httpd on CentOS/RedHat, IIS on Windows).
 
    ```
@@ -58,7 +58,7 @@ Följ stegen nedan:
 
 >[!NOTE]
 >
->The **config-`<instance>`XML** filen åsidosätter **serverConf.xml** inställningar. Om **signEmailLinks** finns i  **config-`<instance>`XML** (där **instance** är namnet på din instans) måste den också ändras till **false**.
+>Filen **config-`<instance>`.xml** åsidosätter inställningarna för **serverConf.xml**. Om **signEmailLinks** finns i **config-`<instance>`.xml** (där **instance** är namnet på din instans) måste den också vara **false**.
 >
 
 **Vad ändras?**

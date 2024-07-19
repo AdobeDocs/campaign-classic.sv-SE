@@ -16,7 +16,7 @@ ht-degree: 14%
 
 
 
-Förutom [inbyggda rapporter](../../reporting/using/about-campaign-built-in-reports.md)Med Adobe Campaign kan du generera rapporter i olika sammanhang och för att uppfylla olika behov. Principer för användning och implementeringslägen beskrivs i detta dokument.
+Förutom [inbyggda rapporter](../../reporting/using/about-campaign-built-in-reports.md) kan du i Adobe Campaign generera rapporter i olika sammanhang och för att uppfylla olika behov. Principer för användning och implementeringslägen beskrivs i detta dokument.
 
 Adobe Campaign är inget specialiserat rapporteringsverktyg: rapporter som skapats i Adobe Campaign gör det i huvudsak möjligt att visa aggregerade data. Adobe Campaign-rapporter, som används för att analysera och representera data, är inte utformade för databasexport.
 
@@ -24,7 +24,7 @@ Om du vill exportera data från Adobe Campaign-databasen måste du skapa ett arb
 
 Adobe Campaign har flera rapportverktyg:
 
-1. **Inbyggda rapporter**: Adobe Campaign erbjuder en uppsättning rapporter om leveranser, kampanjer, plattformsaktiviteter, valfria funktioner etc. Rapporterna finns tillgängliga via de olika funktioner som de avser. De kan anpassas efter dina specifika behov.
+1. **Inbyggda rapporter**: Adobe Campaign erbjuder en uppsättning rapporter om leveranser, kampanjer, plattformsaktiviteter, valfria funktioner osv. Rapporterna finns tillgängliga via de olika funktioner som de avser. De kan anpassas efter dina specifika behov.
 
    Mer information om detta finns i [det här avsnittet](../../reporting/using/about-campaign-built-in-reports.md).
 

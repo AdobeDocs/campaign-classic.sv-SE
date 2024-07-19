@@ -16,14 +16,14 @@ ht-degree: 1%
 
 # Konfigurera åtkomst till Amazon Redshift {#configure-access-to-redshift}
 
-Använd kampanj **Åtkomst till federerade data** (FDA) om du vill bearbeta information som lagras i en extern databas. Följ stegen nedan för att konfigurera åtkomst till Amazon Redshift.
+Använd alternativet **FDA (Federated Data Access**) i kampanjen om du vill bearbeta information som lagras i en extern databas. Följ stegen nedan för att konfigurera åtkomst till Amazon Redshift.
 
-1. Konfigurera [Amazon Redshift-databas](#configuring-redshift)
-1. Konfigurera Amazon Redshift [externt konto](#redshift-external) i Campaign
+1. Konfigurera [Amazon Redshift-databasen](#configuring-redshift)
+1. Konfigurera det [externa Amazon Redshift-kontot](#redshift-external) i Campaign
 
 ## Amazon Redshift i Linux {#redshift-linux}
 
-Konfigurera [!DNL Amazon Redshift] i Linux följer du stegen nedan:
+Så här konfigurerar du [!DNL Amazon Redshift] i Linux:
 
 1. Kontrollera att följande paket är installerade på din Linux-distribution före ODBC-installationen:
 
@@ -43,7 +43,7 @@ Konfigurera [!DNL Amazon Redshift] i Linux följer du stegen nedan:
       apt-get install -y grep sed tar wget perl curl
      ```
 
-1. Innan du kör skriptet har du tillgång till mer information med `--help` alternativ:
+1. Innan du kör skriptet har du tillgång till mer information med alternativet `--help`:
 
    ```
    cd /usr/local/neolane/nl6/bin/fda-setup-scripts/
@@ -64,19 +64,19 @@ Konfigurera [!DNL Amazon Redshift] i Linux följer du stegen nedan:
    systemctl start nlserver.service
    ```
 
-1. I Campaign kan du sedan konfigurera [!DNL Amazon Redshift] externt konto. Mer information om hur du konfigurerar ditt externa konto finns i [det här avsnittet](#redshift-external).
+1. I Campaign kan du sedan konfigurera ditt [!DNL Amazon Redshift]-externa konto. Mer information om hur du konfigurerar ditt externa konto finns i [det här avsnittet](#redshift-external).
 
 ## Externt Amazon Redshift-konto {#redshift-external}
 
-The [!DNL Amazon Redshift] Med ett externt konto kan du ansluta Campaign-instansen till din externa Amazon Redshift-databas.
+Med det externa [!DNL Amazon Redshift]-kontot kan du ansluta Campaign-instansen till den externa Amazon Redshift-databasen.
 
-1. I Campaign Classic konfigurerar du [!DNL Amazon Redshift] externt konto. Från **[!UICONTROL Explorer]**, klicka **[!UICONTROL Administration]** / **[!UICONTROL Platform]** / **[!UICONTROL External accounts]**.
+1. Konfigurera ditt externa [!DNL Amazon Redshift]-konto i Campaign Classicen. Klicka på **[!UICONTROL Administration]** / **[!UICONTROL Platform]** / **[!UICONTROL External accounts]** i **[!UICONTROL Explorer]**.
 
 1. Klicka på **[!UICONTROL New]**.
 
-1. Välj **[!UICONTROL External database]** som ditt externa konto **[!UICONTROL Type]**.
+1. Välj **[!UICONTROL External database]** som det externa kontots **[!UICONTROL Type]**.
 
-1. Konfigurera **[!UICONTROL Amazon Redshift]** externt konto måste du ange:
+1. Konfigurera det externa **[!UICONTROL Amazon Redshift]**-kontot måste du ange:
 
    * **[!UICONTROL Type]**: Amazon Redshift
 
@@ -90,7 +90,7 @@ The [!DNL Amazon Redshift] Med ett externt konto kan du ansluta Campaign-instans
 
    * **[!UICONTROL Working schema]**: Namnet på ditt arbetsschema. [Läs mer](https://docs.aws.amazon.com/redshift/latest/dg/r_Schemas_and_tables.html)
 
-   * **[!UICONTROL Time zone]**: Servertidszon
+   * **[!UICONTROL Time zone]**: Serverns tidszon
 
    ![](assets/amazon_redshift.png)
 

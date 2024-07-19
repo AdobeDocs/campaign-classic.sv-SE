@@ -18,7 +18,7 @@ ht-degree: 2%
 
 
 
-När du [meddelandemall](../../message-center/using/creating-the-message-template.md) är klart följer du stegen nedan för att förhandsgranska och testa det.
+När din [meddelandemall](../../message-center/using/creating-the-message-template.md) är klar följer du stegen nedan för att förhandsgranska och testa den.
 
 ## Hantera dirigerade adresser i transaktionsmeddelanden {#managing-seed-addresses-in-transactional-messages}
 
@@ -26,7 +26,7 @@ Med en dirigerad adress kan du visa en förhandsgranskning av ditt meddelande, s
 
 Följ stegen nedan för att skapa dirigerade adresser i ett transaktionsmeddelande:
 
-1. Klicka på knappen **[!UICONTROL Seed addresses]** -fliken.
+1. Klicka på fliken **[!UICONTROL Seed addresses]** i mallen för transaktionsmeddelanden.
 
    ![](assets/messagecenter_create_seedaddr_001.png)
 
@@ -42,12 +42,12 @@ Följ stegen nedan för att skapa dirigerade adresser i ett transaktionsmeddelan
 
    ![](assets/messagecenter_create_seedaddr_003bis.png)
 
-1. Infoga testdata (se [Personaliseringsdata](#personalization-data)).
+1. Infoga testdata (se [Personalization-data](#personalization-data)).
 
    ![](assets/messagecenter_create_custo_001.png)
 
    <!--## Creating several seed addresses {#creating-several-seed-addresses}-->
-1. Klicka på **[!UICONTROL Add other seed addresses]** klicka på **[!UICONTROL Add]** -knappen.
+1. Klicka på länken **[!UICONTROL Add other seed addresses]** och sedan på knappen **[!UICONTROL Add]**.
 
    ![](assets/messagecenter_create_seedaddr_004.png)
 
@@ -60,7 +60,7 @@ När adresserna har skapats kan du visa deras förhandsgranskning och personalis
 
 ## Personaliseringsdata {#personalization-data}
 
-Det går att använda data i meddelandemallen för att testa anpassning av transaktionsmeddelanden. Den här funktionen används för att generera en förhandsgranskning eller skicka ett korrektur. Du kan även visa återgivningen av meddelandet för olika Internetåtkomstleverantörer. Mer information finns i [Inkorgsåtergivning](../../delivery/using/inbox-rendering.md).
+Det går att använda data i meddelandemallen för att testa anpassning av transaktionsmeddelanden. Den här funktionen används för att generera en förhandsgranskning eller skicka ett korrektur. Du kan även visa återgivningen av meddelandet för olika Internetåtkomstleverantörer. Mer information finns i [Återgivning av inkorgen](../../delivery/using/inbox-rendering.md).
 
 Syftet med dessa data är att testa dina meddelanden innan de levereras. Dessa meddelanden sammanfaller inte med faktiska data som ska behandlas. XML-strukturen måste dock vara identisk med den för händelsen som lagras i körningsinstansen, vilket visas nedan:
 
@@ -70,7 +70,7 @@ Med den här informationen kan du anpassa meddelandeinnehåll med personaliserin
 
 1. Välj transaktionsmeddelandemallen.
 
-1. Klicka på **[!UICONTROL Seed addresses]** -fliken.
+1. Klicka på fliken **[!UICONTROL Seed addresses]** i mallen.
 
 1. I händelseinnehållet anger du testinformationen i XML-format.
 
@@ -82,7 +82,7 @@ Med den här informationen kan du anpassa meddelandeinnehåll med personaliserin
 
 När du har skapat en eller flera dirigerade adresser och meddelandetexten kan du förhandsgranska meddelandet och kontrollera dess personalisering.
 
-1. Klicka på knappen **[!UICONTROL Preview]** -fliken.
+1. Klicka på fliken **[!UICONTROL Preview]** i meddelandemallen.
 
    ![](assets/messagecenter_preview_001.png)
 
@@ -94,20 +94,20 @@ När du har skapat en eller flera dirigerade adresser och meddelandetexten kan d
 
    ![](assets/messagecenter_create_seedaddr_009.png)
 
-Med hjälp av dirigerade adresser kan du även visa återgivningen av meddelandet för olika leverantörer av Internetåtkomst. Mer information finns i [Inkorgsåtergivning](../../delivery/using/inbox-rendering.md).
+Med hjälp av dirigerade adresser kan du även visa återgivningen av meddelandet för olika leverantörer av Internetåtkomst. Mer information finns i [Återgivning av inkorgen](../../delivery/using/inbox-rendering.md).
 
 ## Skicka en korrektur {#sending-a-proof}
 
 Du kan testa meddelandeleveransen genom att skicka ett korrektur till en startadress som skapats tidigare.
 
-När du skickar ett korrektur utförs samma process som för en [normal leverans](../../delivery/using/steps-validating-the-delivery.md#sending-a-proof). Med transaktionsmeddelanden måste du dock utföra följande åtgärder i förväg:
+När du skickar ett korrektur utförs samma process som för en [vanlig leverans](../../delivery/using/steps-validating-the-delivery.md#sending-a-proof). Med transaktionsmeddelanden måste du dock utföra följande åtgärder i förväg:
 
-* Skapa en eller flera [dirigeringsadresser](#managing-seed-addresses-in-transactional-messages) med [personaliseringsdata](#personalization-data).
+* Skapa en eller flera [dirigerade adresser](#managing-seed-addresses-in-transactional-messages) med [personaliseringsdata](#personalization-data).
 * [Skapa meddelandeinnehållet](../../message-center/using/creating-the-message-template.md#creating-message-content).
 
 Skicka korrekturet:
 
-1. Klicka på **[!UICONTROL Send a proof]** i leveransfönstret.
+1. Klicka på knappen **[!UICONTROL Send a proof]** i leveransfönstret.
 1. Analysera leveransen.
 1. Åtgärda eventuella fel och bekräfta leveransen.
 
@@ -117,8 +117,8 @@ Skicka korrekturet:
 
    ![](assets/messagecenter_send_proof_002.png)
 
-Du kan komma åt korrektur i varje mall via **[!UICONTROL Audit]** -fliken. Mer information finns i [Skicka ett bevis](../../delivery/using/steps-validating-the-delivery.md#sending-a-proof).
+Du kan komma åt korrektur i varje mall via fliken **[!UICONTROL Audit]**. Mer information finns i [Skicka ett korrektur](../../delivery/using/steps-validating-the-delivery.md#sending-a-proof).
 
 ![](assets/messagecenter_send_proof_003.png)
 
-Din meddelandemall är nu klar [publicerad](../../message-center/using/publishing-message-templates.md).
+Din meddelandemall är nu klar att [publiceras](../../message-center/using/publishing-message-templates.md).

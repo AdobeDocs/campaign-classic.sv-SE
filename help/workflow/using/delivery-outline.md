@@ -15,29 +15,29 @@ ht-degree: 1%
 
 
 
-The **leveransdisposition** I kan du använda en disposition i ett kampanjarbetsflöde. Dispositionen måste ha skapats i kampanjen i förväg.
+Med **leveransdispositionen** kan du använda en disposition i ett kampanjarbetsflöde. Dispositionen måste ha skapats i kampanjen i förväg.
 
-Mer information om leveransdispositioner i Adobe Campaign finns i [section](../../campaign/using/marketing-campaign-deliveries.md#associating-and-structuring-resources-linked-via-a-delivery-outline).
+Mer information om leveransdispositioner i Adobe Campaign finns i det här [avsnittet](../../campaign/using/marketing-campaign-deliveries.md#associating-and-structuring-resources-linked-via-a-delivery-outline).
 
 Om du vill konfigurera aktiviteten behöver du bara markera den disposition du vill ha samt det planerade kontaktdatumet. Du kan lägga till filtreringsregler genom att lägga till typologier eller typologiregler.
 
 ## Exempel: Infoga ett erbjudande via en leveransdisposition {#example--inserting-an-offer-via-a-delivery-outline}
 
-The **leveransdisposition** -aktivitet, som finns i kampanjarbetsflödena, gör att du kan presentera erbjudanden som refereras i en leveransöversikt från den pågående kampanjen.
+Med aktiviteten **leveransdisposition**, som är tillgänglig i kampanjarbetsflödena, kan du presentera erbjudanden som refereras i en leveransdisposition från den pågående kampanjen.
 
 >[!NOTE]
 >
->The **Interaktion** paketet måste installeras.
+>Paketet **Interaction** måste vara installerat.
 
 1. Lägg till en dispositionsaktivitet för leverans i ett arbetsflöde innan du lägger till en leveransaktivitet.
 1. I dispositionsaktiviteten för leverans anger du den disposition du vill använda.
 
-   Mer information om hur du anger leveransdispositioner finns i [section](../../campaign/using/marketing-campaign-deliveries.md#associating-and-structuring-resources-linked-via-a-delivery-outline).
+   Mer information om hur du anger leveransdispositioner finns i [avsnittet](../../campaign/using/marketing-campaign-deliveries.md#associating-and-structuring-resources-linked-via-a-delivery-outline).
 
 1. Fyll i de tillgängliga fälten efter leverans.
 1. Det finns två möjliga fall:
 
-   * Om du vill ringa erbjudandemotorn kan du kontrollera **[!UICONTROL Restrict the number of propositions selected]** box. Ange erbjudandeutrymme och antalet offerter som ska presenteras i leveransen.
+   * Om du vill ringa erbjudandemotorn markerar du kryssrutan **[!UICONTROL Restrict the number of propositions selected]**. Ange erbjudandeutrymme och antalet offerter som ska presenteras i leveransen.
 
      Anbudsvikterna och reglerna för rätt till uppgradering kommer att beaktas av erbjudandemotorn.
 

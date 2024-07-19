@@ -13,11 +13,11 @@ ht-degree: 8%
 
 # Återkommande leverans{#recurring-delivery}
 
-A **[!UICONTROL Recurring delivery]** Med -aktivitet kan du konfigurera en förekomst av en leveransmall som är specifik för en kampanj.
+Med en **[!UICONTROL Recurring delivery]**-aktivitet kan du konfigurera en leveransmallförekomst som är specifik för en kampanj.
 
 ![](assets/do-not-localize/how-to-video.png) [Upptäck den här funktionen i en video](#recurring-delivery-video)
 
-Den här aktiviteten är bara tillgänglig från **[!UICONTROL Targeting and workflows]** som finns i en kampanj.
+Den här aktiviteten är bara tillgänglig från fliken **[!UICONTROL Targeting and workflows]** som finns i en kampanj.
 
 Så här gör du:
 
@@ -31,13 +31,13 @@ Konfigurationsprocessen för den här aktiviteten liknar den för att skapa en l
 
 >[!CAUTION]
 >
->Återkommande leveranser stöder inte förhandsgranskning av innehåll eller utskick av korrektur, inklusive [måldata](../../workflow/using/data-life-cycle.md#target-data) personaliseringselement.
+>Återkommande leveranser stöder inte förhandsgranskning av innehåll eller sändning av korrektur, inklusive [måldata](../../workflow/using/data-life-cycle.md#target-data)-personaliseringselement.
 
-Ett exempel på den här aktiviteten som används finns i [section](sending-a-birthday-email.md#creating-a-recurring-delivery-in-a-targeting-workflow).
+Ett exempel på den här aktiviteten som används finns i [avsnittet](sending-a-birthday-email.md#creating-a-recurring-delivery-in-a-targeting-workflow).
 
 ## Så här ställer du in återkommande leverans {#set-up-recurring-delivery}
 
-A **återkommande leverans** skapar en ny leveransinstans varje gång den körs. Om arbetsflödet till exempel är schemalagt att köras en gång i veckan resulterar det i 52 leveranser efter ett år. Det innebär också att de breda loggarna och spårningsloggarna separeras av varje leveransinstans.
+En **återkommande leverans** skapar en ny leveransinstans varje gång den körs. Om arbetsflödet till exempel är schemalagt att köras en gång i veckan resulterar det i 52 leveranser efter ett år. Det innebär också att de breda loggarna och spårningsloggarna separeras av varje leveransinstans.
 
 ![Återkommande leverans](assets/delivery_recurring.jpg)
 
@@ -45,7 +45,7 @@ Om du vill stoppa en återkommande leverans från att köras bör du helt avbryt
 
 >[!NOTE]
 >
->Det går inte att skicka ett bevis från en **[!UICONTROL Recurring delivery]** typaktivitet.
+>Det går inte att skicka ett bevis från en aktivitet av typen **[!UICONTROL Recurring delivery]**.
 > 
 >Om du vill skapa en leverans direkt via ett kampanjarbetsflöde använder du de kanalspecifika aktiviteter som är förkonfigurerade (t.ex. **[!UICONTROL Recurring delivery]**).
 
@@ -55,4 +55,4 @@ I den här videon förklaras hur du konfigurerar en återkommande leverans och e
 
 >[!VIDEO](https://video.tv.adobe.com/v/25040?quality=12)
 
-Det finns fler videor med Campaign Classic om hur man gör [här](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=sv).
+Ytterligare Campaign Classic om instruktionsvideor finns [här](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=sv).

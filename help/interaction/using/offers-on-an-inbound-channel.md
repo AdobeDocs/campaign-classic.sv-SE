@@ -33,7 +33,7 @@ För att lägga upp den här interaktionen ska vi:
 
 ### Skapa en anonym miljö {#creating-an-anonymous-environment}
 
-Följ anvisningarna i [Skapa en erbjudandemiljö](../../interaction/using/live-design-environments.md#creating-an-offer-environment) för att skapa en anonym miljö baserad på **Besökare**&#39; dimensioner.
+Följ anvisningarna i [Skapa en erbjudandemiljö](../../interaction/using/live-design-environments.md#creating-an-offer-environment) om du vill skapa en anonym miljö utifrån dimensionerna för **besökare**.
 
 Du får en trädstruktur som innehåller din nya miljö:
 
@@ -41,8 +41,8 @@ Du får en trädstruktur som innehåller din nya miljö:
 
 ### Skapa anonyma erbjudandeplatser {#creating-anonymous-offer-spaces}
 
-1. I er anonyma miljö (**Besökare**) går du till **[!UICONTROL Administration]** > **[!UICONTROL Spaces]** nod.
-1. Klicka **[!UICONTROL New]** för att skapa samtalskanaler.
+1. I din anonyma miljö (**Besökare**) går du till noden **[!UICONTROL Administration]** > **[!UICONTROL Spaces]** .
+1. Klicka på **[!UICONTROL New]** för att skapa anropskanaler.
 
    ![](assets/offer_inbound_anonymous_example_010.png)
 
@@ -50,7 +50,7 @@ Du får en trädstruktur som innehåller din nya miljö:
    >
    >Utrymmet länkas automatiskt till den anonyma miljön.
 
-1. Ändra etiketten och välj **[!UICONTROL Inbound Web]** kanal. Du måste även kontrollera **[!UICONTROL Enable unitary mode]** box.
+1. Ändra etiketten och välj kanalen **[!UICONTROL Inbound Web]**. Du måste även markera rutan **[!UICONTROL Enable unitary mode]**.
 
    ![](assets/offer_inbound_anonymous_example_006.png)
 
@@ -86,12 +86,12 @@ Du får en trädstruktur som innehåller din nya miljö:
 
 ### Skapa en erbjudandekategori och ett tema {#creating-an-offer-category-and-a-theme}
 
-1. Gå till **[!UICONTROL Offer catalog]** i den miljö du just har skapat.
-1. Högerklicka på **[!UICONTROL Offer catalog]** nod och markera **[!UICONTROL Create a new 'Offer category' folder]**.
+1. Gå till noden **[!UICONTROL Offer catalog]** i miljön som du just har skapat.
+1. Högerklicka på noden **[!UICONTROL Offer catalog]** och välj **[!UICONTROL Create a new 'Offer category' folder]**.
 
-   Namnge den nya kategorin, **Finansiella produkter** till exempel.
+   Ge den nya kategorin namnet **Finansiella produkter** till exempel.
 
-1. Gå till kategorins **[!UICONTROL Eligibility]** tabb och ange **finansiering** som ett tema och spara sedan ändringarna.
+1. Gå till fliken **[!UICONTROL Eligibility]** för kategorin och ange **finansiering** som ett tema. Spara sedan ändringarna.
 
    ![](assets/offer_inbound_anonymous_example_023.png)
 
@@ -110,17 +110,17 @@ Du får en trädstruktur som innehåller din nya miljö:
 
    ![](assets/offer_inbound_anonymous_example_015.png)
 
-1. Gå till **[!UICONTROL Eligibility]** och ange erbjudandenas vikt enligt programkontexterna.
+1. Gå till fliken **[!UICONTROL Eligibility]** och ange erbjudandenas vikt enligt programkontexterna.
 
    I det här exemplet är erbjudandet konfigurerat att visas som en prioritet på webbplatsens hemsida till slutet av året.
 
    ![](assets/offer_inbound_anonymous_example_016.png)
 
-1. Gå till **[!UICONTROL Content]** och definiera innehållet i erbjudandet.
+1. Gå till fliken **[!UICONTROL Content]** och definiera innehållet i erbjudandet.
 
    >[!NOTE]
    >
-   >Du kan välja **[!UICONTROL Content definitions]** om du vill visa en lista med element som krävs för webbrymden.
+   >Du kan välja **[!UICONTROL Content definitions]** om du vill visa listan över element som krävs för webbsidan.
 
    ![](assets/offer_inbound_anonymous_example_017.png)
 
@@ -128,14 +128,14 @@ Du får en trädstruktur som innehåller din nya miljö:
 
    ![](assets/offer_inbound_anonymous_example_018.png)
 
-1. Gå till **[!UICONTROL Eligibility]** och lägga in samma vikt som för det första erbjudandet.
+1. Gå till fliken **[!UICONTROL Eligibility]** och tillämpa samma vikt som för det första erbjudandet.
 1. Kör godkännandecykeln för varje erbjudande för att göra dem, samt deras godkända erbjudandeplatser, tillgängliga i onlinemiljön.
 
 ### Konfigurera utrymmet för webberbjudandet på webbplatsen {#configure-the-web-offer-space-on-the-website}
 
 Om du vill att de erbjudanden du just har konfigurerat ska vara synliga på webbplatsen infogar du en JavaScript-kod på HTML-sidan på webbplatsen för att anropa interaktionsmotorn (mer information finns i [Om inkommande kanaler](../../interaction/using/about-inbound-channels.md)).
 
-1. Gå till sidan HTML och infoga ett @id-attribut med ett värde som matchar det interna namnet på det anonyma erbjudandeutrymmet som skapats tidigare (se [Skapa anonyma erbjudandeplatser](#creating-anonymous-offer-spaces)), föregås av **i_**.
+1. Gå till HTML-sidan och infoga ett @id-attribut med ett värde som matchar det interna namnet på det anonyma erbjudandeutrymmet som skapats tidigare (se [Skapa anonyma erbjudandeutrymmen](#creating-anonymous-offer-spaces)), föregånget av **i_**.
 
    ![](assets/offer_inbound_anonymous_example_019.png)
 
@@ -143,9 +143,9 @@ Om du vill att de erbjudanden du just har konfigurerat ska vara synliga på webb
 
    ![](assets/offer_inbound_anonymous_example_020.png)
 
-   De blå URL-rutorna ovan motsvarar instansnamnet, det interna namnet på miljön (se [Skapa en anonym miljö](#creating-an-anonymous-environment)) och det tema som är kopplat till kategorin ([Skapa en erbjudandekategori och ett tema](#creating-an-offer-category-and-a-theme)). Den senare är valfri.
+   De blå URL-rutorna ovan motsvarar instansnamnet, miljöns interna namn (se [Skapa en anonym miljö](#creating-an-anonymous-environment)) och det tema som är länkat till kategorin ([Skapa en erbjudandekategori och ett tema](#creating-an-offer-category-and-a-theme)). Den senare är valfri.
 
-När en besökare kommer åt webbplatsens hemsida erbjuder **finansiering** temat visas som det är konfigurerat på HTML-sidan.
+När en besökare kommer åt webbplatsens hemsida visas erbjudandena med temat **finansiering** så som de har konfigurerats på HTML-sidan.
 
 ![](assets/offer_inbound_anonymous_example_022.png)
 
@@ -161,7 +161,7 @@ Denna fallstudie bygger på följande scenario:
 
    ![](assets/offer_inbound_fallback_example_050.png)
 
-   Tre anonyma erbjudanden visas på sidan: två **Bästa erbjudande** erbjudanden för Neobank-produkter och ett erbjudande från en Neobank-partner.
+   Tre anonyma erbjudanden visas på sidan: två **bästa erbjudanden** för Neobank-produkter och ett erbjudande från en Neobank-partner.
 
    ![](assets/offer_inbound_fallback_example_051.png)
 
@@ -197,7 +197,7 @@ Använd följande steg:
 
 ### Skapa en miljö för anonyma kontakter {#creating-an-environment-for-anonymous-contacts}
 
-1. Skapa en erbjudandemiljö för anonyma inkommande interaktioner via guiden för leveranskarta (**Besökare** mappning). Mer information finns i [Skapa en erbjudandemiljö](../../interaction/using/live-design-environments.md#creating-an-offer-environment).
+1. Skapa en erbjudandemiljö för anonym inkommande interaktion via guiden för leveranskarta (**Visitor**-mappning). Mer information finns i [Skapa en erbjudandemiljö](../../interaction/using/live-design-environments.md#creating-an-offer-environment).
 
    ![](assets/offer_env_anonymous_003.png)
 
@@ -205,17 +205,17 @@ Använd följande steg:
 
 Erbjudandena som måste presenteras på webbplatsen tillhör två olika kategorier: **Bästa erbjudande** och **Partner**. I det här exemplet ska vi skapa ett specifikt erbjudandeutrymme för varje kategori.
 
-För att skapa erbjudandeutrymme som matchar **Bästa erbjudande** -kategori använder du följande process:
+Gör så här för att skapa erbjudandeutrymme som matchar kategorin **Bästa erbjudande**:
 
 1. Gå till den anonyma miljön som du just har skapat i Adobe Campaign-trädet och lägg till ett utrymme för erbjudanden.
 
    ![](assets/offer_inbound_fallback_example_023.png)
 
-1. Skapa ett nytt **[!UICONTROL Inbound web]** textutrymme.
+1. Skapa en ny **[!UICONTROL Inbound web]**-typmodell.
 
    ![](assets/offer_inbound_fallback_example_024.png)
 
-1. Ange en etikett för den: **Bästa anonyma webblösningar** till exempel.
+1. Ange en etikett för det: **Bästa anonyma erbjudande** till exempel.
 1. Lägg till de innehållsfält för erbjudandet som används för erbjudandeutrymmet och konfigurera återgivningsfunktionerna.
 
    ![](assets/offer_inbound_fallback_example_025.png)
@@ -224,20 +224,20 @@ För att skapa erbjudandeutrymme som matchar **Bästa erbjudande** -kategori anv
    >
    >Återgivningsfunktionen måste namnge fälten som används för utrymmet i den ordning som de markerades tidigare, så att erbjudandena visas korrekt.
 
-1. Använd samma process för att skapa ett erbjudande för inkommande webbkanal som matchar **Partner** kategori.
+1. Använd samma process för att skapa ett erbjudande för inkommande webbkanal som matchar kategorin **Partner**.
 
    ![](assets/offer_inbound_fallback_example_026.png)
 
 ### Skapa erbjudandekategorier i en anonym miljö {#creating-offer-categories-in-an-anonymous-environment}
 
-Börja med att skapa två erbjudandekategorier: **Bästa erbjudande** kategori och **Partner** kategori. Varje kategori innehåller två erbjudanden för anonyma kontakter.
+Börja med att skapa två erbjudandekategorier: kategorin **Bästa erbjudande** och kategorin **Partner**. Varje kategori innehåller två erbjudanden för anonyma kontakter.
 
 1. Gå till **[!UICONTROL Offer catalog]** i den anonyma miljö som du just har skapat.
-1. Lägg till en **[!UICONTROL Offer category]** mapp med **Bästa erbjudande** som en etikett.
+1. Lägg till en **[!UICONTROL Offer category]**-mapp med **Bästa erbjudande** som etikett.
 
    ![](assets/offer_inbound_fallback_example_027.png)
 
-1. Skapa en andra kategori med **Partner** som en etikett.
+1. Skapa en andra kategori med **Partner** som etikett.
 
    ![](assets/offer_inbound_fallback_example_028.png)
 
@@ -245,57 +245,57 @@ Börja med att skapa två erbjudandekategorier: **Bästa erbjudande** kategori o
 
 Vi kommer nu att skapa två erbjudanden i var och en av de kategorier som skapas ovan.
 
-1. Gå till **Bästa erbjudande** och skapa ett anonymt erbjudande.
+1. Gå till kategorin **Bästa erbjudande** och skapa ett anonymt erbjudande.
 
    ![](assets/offer_inbound_fallback_example_029.png)
 
-1. Gå till **[!UICONTROL Eligibility]** och ange erbjudandenas vikt enligt programkontexterna.
+1. Gå till fliken **[!UICONTROL Eligibility]** och ange erbjudandenas vikt enligt programkontexterna.
 
    ![](assets/offer_inbound_fallback_example_030.png)
 
-1. Gå till **[!UICONTROL Content]** och definiera innehållet i erbjudandet.
+1. Gå till fliken **[!UICONTROL Content]** och definiera innehållet i erbjudandet.
 
    ![](assets/offer_inbound_fallback_example_032.png)
 
-1. Skapa ett andra erbjudande i **Bästa erbjudande** kategori.
+1. Skapa ett andra erbjudande i kategorin **Bästa erbjudande**.
 
    ![](assets/offer_inbound_fallback_example_031.png)
 
-1. Gå till **Partner** och skapa ett anonymt erbjudande.
-1. Gå till **[!UICONTROL Content]** och definiera innehållet i erbjudandet.
+1. Gå till kategorin **Partner** och skapa ett anonymt erbjudande.
+1. Gå till fliken **[!UICONTROL Content]** och definiera innehållet i erbjudandet.
 
    ![](assets/offer_inbound_fallback_example_033.png)
 
-1. Gå till **[!UICONTROL Eligibility]** och ange erbjudandenas vikt enligt programkontexterna.
+1. Gå till fliken **[!UICONTROL Eligibility]** och ange erbjudandenas vikt enligt programkontexterna.
 
    ![](assets/offer_inbound_fallback_example_034.png)
 
-1. Skapa ett andra erbjudande för **Partner** kategori.
+1. Skapa ett andra erbjudande för kategorin **Partner**.
 
    ![](assets/offer_inbound_fallback_example_035.png)
 
-1. Gå till **[!UICONTROL Eligibility]** och lägga in samma vikt som du lade på det första erbjudandet i den här kategorin, så att erbjudandena visas i följd på webbplatsen.
+1. Gå till fliken **[!UICONTROL Eligibility]** och tillämpa samma vikt som du lade på det första erbjudandet i den här kategorin så att erbjudandena visas på webbplatsen i följd.
 
    ![](assets/offer_inbound_fallback_example_036.png)
 
-1. Kör godkännandecykeln för varje erbjudande för att börja göra det live. När du godkänner innehåll aktiverar du **Partner** eller **Bästa erbjudande** erbjudandet ger utrymme, beroende på vilket erbjudande det gäller.
+1. Kör godkännandecykeln för varje erbjudande för att börja göra det live. När du godkänner innehåll ska du aktivera erbjudandeutrymmet **Partner** eller **Best Offer** enligt erbjudandet.
 
 ### Konfigurera erbjudandeutrymmena i den identifierade miljön {#configure-the-offer-spaces-in-the-identified-environment}
 
-Erbjudandena som du kommer att presentera på webbplatsen är uppdelade i två olika kategorier: **Bästa erbjudande** och **Partner**. I det här exemplet vill vi skapa ett specifikt utrymme för varje kategori.
+Erbjudandena som du ska presentera på webbplatsen är från två olika kategorier: **Bästa erbjudande** och **Partner**. I det här exemplet vill vi skapa ett specifikt utrymme för varje kategori.
 
-Om du vill skapa de två erbjudandeutrymmena använder du samma procedur som för anonyma erbjudandeutrymmen. Se [Konfigurera erbjudandeplatser för den anonyma miljön](#configuring-offer-spaces-for-the-anonymous-environment).
+Om du vill skapa de två erbjudandeutrymmena använder du samma procedur som för anonyma erbjudandeutrymmen. Se [Konfigurera erbjudandeutrymmen för den anonyma miljön](#configuring-offer-spaces-for-the-anonymous-environment).
 
-1. Gå till den miljö du just har skapat i Adobe Campaign-trädet och lägg till **Bästa erbjudande** och **Partner** erbjuder blanksteg.
-1. Använda processen som beskrivs i [Konfigurera erbjudandeplatser för den anonyma miljön](#configuring-offer-spaces-for-the-anonymous-environment).
+1. Gå till den miljö du just har skapat i Adobe Campaign-trädet och lägg till **Bästa erbjudandet** och **Partner** erbjudanden.
+1. Använd den process som beskrivs i [Konfigurera erbjudandeutrymmen för den anonyma miljön](#configuring-offer-spaces-for-the-anonymous-environment).
 
    ![](assets/offer_inbound_fallback_example_005.png)
 
-1. Välj **[!UICONTROL Fall back on an anonymous environment if no individuals were identified]** alternativ.
+1. Välj alternativet **[!UICONTROL Fall back on an anonymous environment if no individuals were identified]**.
 
    ![](assets/offer_inbound_fallback_example_006.png)
 
-1. Välj det anonyma webberbjudandeutrymme som skapats tidigare i listrutan (se [Konfigurera erbjudandeplatser för den anonyma miljön](#configuring-offer-spaces-for-the-anonymous-environment)).
+1. Använd listrutan för att markera det anonyma webberbjudandeutrymme som skapats tidigare (se [Konfigurera erbjudandeutrymmen för den anonyma miljön](#configuring-offer-spaces-for-the-anonymous-environment)).
 
    ![](assets/offer_inbound_fallback_example_007.png)
 
@@ -304,7 +304,7 @@ Om du vill skapa de två erbjudandeutrymmena använder du samma procedur som fö
 I det här exemplet sker en kontaktidentifiering tack vare e-postadressen i Adobe Campaign-databasen. Gör så här om du vill lägga till mottagarens e-postadress i utrymmet:
 
 1. I den identifierade miljön går du till mappen för erbjudandeutrymme.
-1. Välj **Bästa erbjudande** erbjud utrymme och klicka **[!UICONTROL Advanced parameters]**.
+1. Välj utrymmet för **bästa erbjudandet** och klicka på **[!UICONTROL Advanced parameters]**.
 
    ![](assets/offer_inbound_fallback_example_044.png)
 
@@ -312,21 +312,21 @@ I det här exemplet sker en kontaktidentifiering tack vare e-postadressen i Adob
 
    ![](assets/offer_inbound_fallback_example_046.png)
 
-1. Klicka **[!UICONTROL Edit expression]**, går till mottagartabellen och väljer **[!UICONTROL Email]** fält.
+1. Klicka på **[!UICONTROL Edit expression]**, gå till mottagartabellen och markera fältet **[!UICONTROL Email]**.
 
    ![](assets/offer_inbound_fallback_example_047.png)
 
-1. Klicka **[!UICONTROL OK]** för att stänga **[!UICONTROL Advanced parameters]** och slutföra konfigurationen av **Bästa erbjudande** erbjuder utrymme.
-1. Använd samma process för **Partner** erbjuder utrymme.
+1. Klicka på **[!UICONTROL OK]** för att stänga fönstret **[!UICONTROL Advanced parameters]** och slutföra konfigurationen av utrymmet för **bästa erbjudandet**.
+1. Använd samma process för erbjudandeutrymmet **Partner**.
 
    ![](assets/offer_inbound_fallback_example_048.png)
 
 ### Skapa erbjudandekategorier i en identifierad miljö {#creating-offer-categories-in-an-identified-environment}
 
-Vi ska skapa två separata kategorier: **Bästa erbjudande** kategori och **Partner** -kategori, var och en med två personaliserade erbjudanden.
+Vi kommer att skapa två separata kategorier: kategorin **Bästa erbjudande** och kategorin **Partner**, var och en med två personaliserade erbjudanden.
 
-1. Gå till **[!UICONTROL Offer catalogs]** i den identifierade miljön.
-1. Som i den anonyma miljön lägger du till två **[!UICONTROL Offer category]** mappar med **Bästa erbjudande** och **Partner** som etiketter.
+1. Gå till noden **[!UICONTROL Offer catalogs]** i den identifierade miljön.
+1. Som i den anonyma miljön lägger du till två **[!UICONTROL Offer category]**-mappar med **Bästa erbjudande** och **Partner** som etiketter.
 
    ![](assets/offer_inbound_fallback_example_009.png)
 
@@ -334,40 +334,40 @@ Vi ska skapa två separata kategorier: **Bästa erbjudande** kategori och **Part
 
 Vi vill skapa två personaliserade erbjudanden för varje kategori, nämligen fyra.
 
-1. Gå till **Bästa erbjudande** och skapa ett första personaliserat erbjudande.
+1. Gå till kategorin **Bästa erbjudande** och skapa ett första personaliserat erbjudande.
 
    ![](assets/offer_inbound_fallback_example_011.png)
 
-1. Gå till **[!UICONTROL Eligibility]** och ange erbjudandenas vikt enligt programkontexterna.
+1. Gå till fliken **[!UICONTROL Eligibility]** och ange erbjudandenas vikt enligt programkontexterna.
 
    ![](assets/offer_inbound_fallback_example_012.png)
 
-1. Gå till **[!UICONTROL Content]** och definiera innehållet i erbjudandet.
+1. Gå till fliken **[!UICONTROL Content]** och definiera innehållet i erbjudandet.
 
    ![](assets/offer_inbound_fallback_example_013.png)
 
-1. Skapa ett andra erbjudande i **Bästa erbjudande** kategori.
+1. Skapa ett andra erbjudande i kategorin **Bästa erbjudande**.
 
    ![](assets/offer_inbound_fallback_example_014.png)
 
-1. Gå till **Partner** och skapa ett personaliserat erbjudande.
+1. Gå till kategorin **Partner** och skapa ett personligt erbjudande.
 
    ![](assets/offer_inbound_fallback_example_015.png)
 
-1. Gå till **[!UICONTROL Eligibility]** och ange erbjudandenas vikt enligt programkontexterna.
+1. Gå till fliken **[!UICONTROL Eligibility]** och ange erbjudandenas vikt enligt programkontexterna.
 
    ![](assets/offer_inbound_fallback_example_016.png)
 
-1. Skapa ett andra erbjudande för **Partner** kategori.
+1. Skapa ett andra erbjudande för kategorin **Partner**.
 
    ![](assets/offer_inbound_fallback_example_017.png)
 
-1. Gå till **[!UICONTROL Eligibility]** och lägga in samma vikt som du lade på det första erbjudandet i den här kategorin, så att erbjudandena visas i följd på webbplatsen.
-1. Kör godkännandecykeln för varje erbjudande för att börja uppdatera dem. Aktivera **Partner** eller **Bästa erbjudande** erbjuder blanksteg.
+1. Gå till fliken **[!UICONTROL Eligibility]** och tillämpa samma vikt som du lade på det första erbjudandet i den här kategorin så att erbjudandena visas på webbplatsen i följd.
+1. Kör godkännandecykeln för varje erbjudande för att börja uppdatera dem. Aktivera **partnern** eller **det bästa erbjudandet** när innehåll godkänns.
 
 ### Konfigurera erbjudandeutrymmen på webbsidan {#configuring-offer-spaces-on-the-web-page}
 
-På Neobank-företagets webbplats finns tre erbjudanden: två för bankrelaterade erbjudanden från **Bästa erbjudande** och en för erbjudanden från **Partner** kategori.
+På webbplatsen för Neobank-företaget finns tre erbjudanden: två för bankrelaterade erbjudanden från kategorin **Bästa erbjudandet** och en för erbjudanden från kategorin **Partner**.
 
 ![](assets/offer_inbound_fallback_example_038.png)
 
@@ -383,19 +383,19 @@ Gör så här om du vill konfigurera de här erbjudandeutrymmena HTML på webbpl
 
    ![](assets/offer_inbound_fallback_example_040.png)
 
-   I detta exempel **ContBO1** och **ContBO2** ta emot värdet **OsWebBestOfferIdentified**, dvs. det interna namnet på **Bästa erbjudande** erbjuder utrymme som skapats tidigare i den identifierade miljön. The **CatBestOffer** och **CatBestOfferAnonym** värdena matchar det interna namnet på **Bästa erbjudande** kategorier för anonyma och identifierade miljöer.
+   I det här exemplet tar **ContBO1** och **ContBO2** emot värdet **OsWebBestOfferIdentified**, dvs. det interna namnet på det **bästa erbjudandeutrymmet** som skapats tidigare i den identifierade miljön. Värdena **CatBestOffer** och **CatBestOfferAnonym** matchar det interna namnet för kategorierna **Best Offer** för anonyma och identifierade miljöer.
 
    ![](assets/offer_inbound_fallback_example_041.png)
 
-   På samma sätt **ContPtn** får **OSWebPartnerIdentified** värde, som matchar det interna namnet på **Partner** erbjuder utrymme som skapats i den identifierade miljön. **CatPartner** och **CatPartnerAnonym** matchar det interna namnet på **Partner** kategorier för anonyma och identifierade miljöer.
+   På samma sätt tar **ContPtn** emot värdet **OSWebPartnerIdentified** som matchar det interna namnet på erbjudandeutrymmet **Partner** som skapats i den identifierade miljön. **CatPartner** och **CatPartnerAnonym** matchar det interna namnet för kategorierna **Partner** för anonyma och identifierade miljöer.
 
    ![](assets/offer_inbound_fallback_example_042.png)
 
-1. Tilldela den information som gör att du kan identifiera den person som loggar in på Neobank-webbplatsen för **interactionTarget** variabel.
+1. Tilldela informationen som gör att du kan identifiera den person som loggar in på Neobank-webbplatsen för variabeln **interactionTarget** .
 
    ![](assets/offer_inbound_fallback_example_043.png)
 
-   Personens identifiering kan baseras på en webbläsarcookie, en läsparameter i URL:en, e-postadressen eller identifieraren för personen. Om ett annat fält i mottagartabellen än primärnyckeln används, måste det definieras i de avancerade parametrarna för blanksteget (se [Ange avancerade inställningar för de identifierade erbjudandeutrymmena](#specifying-the-advanced-settings-of-the-identified-offer-spaces)).
+   Personens identifiering kan baseras på en webbläsarcookie, en läsparameter i URL:en, e-postadressen eller identifieraren för personen. Om ett annat fält i mottagartabellen än primärnyckeln används måste det definieras i de avancerade parametrarna för utrymmet (se [Ange avancerade inställningar för de identifierade erbjudandeutrymmena](#specifying-the-advanced-settings-of-the-identified-offer-spaces)).
 
 1. Ange anrops-URL:en.
 
@@ -405,6 +405,6 @@ Gör så här om du vill konfigurera de här erbjudandeutrymmena HTML på webbpl
 
 När du öppnar webbsidan kan du med skriptet anropa interaktionsmotorn för att visa innehållet i erbjudandena i de relevanta utrymmena på webbsidan. I ett enda anrop till Adobe Campaign-servern avgör motorn miljön, erbjudandeutrymmet och de kategorier som ska väljas.
 
-I det här exemplet känner motorn igen den identifierade miljön (**EnvNeobankIdRecip**). Här anges erbjudandeutrymmet (**OSWebBestOfferIdentified**) och **Bästa erbjudande** kategori (**CatBestOffer**) för det första och andra erbjudandet på webbsidan samt (**OSWebPartnerIdentified**) erbjuder utrymme och **Partner** kategori (**CatPartner**) för det tredje erbjudandeutrymmet på webbplatsen.
+I det här exemplet känner motorn igen den identifierade miljön (**EnvNeobankIdRecip**). Det identifierar erbjudandeutrymmet (**OSWebBestOfferIdentified**) och kategorin **Best Offer** (**CatBestOffer**) för det första och andra erbjudandeutrymmet på webbsidan, samt erbjudandeutrymmet (**OSWebPartnerIdentified**) och kategorin **Partner** (**** CatPartner) för det tredje erbjudandeutrymmet på webbplatsen.
 
-Om motorn inte kan identifiera mottagaren växlar den till de anonyma erbjudandeutrymmena som refereras i de identifierade erbjudandeutrymmena och till de anonyma kategorierna (**CatPartner** och **CatPartnerAnonym**) enligt skriptet.
+Om motorn inte kan identifiera mottagaren växlar den till de anonyma erbjudandeutrymmena som refereras i de identifierade erbjudandeutrymmena och till de anonyma kategorierna (**CatPartner** och **CatPartnerAnonym**) som anges i skriptet.

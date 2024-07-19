@@ -18,11 +18,11 @@ ht-degree: 0%
 
 
 
-Gäller endast **teknisk administratör** med tillgång till undermappen för erbjudandeutrymme. Utrymmen kan bara skapas i designmiljön och dupliceras automatiskt till den aktiva miljön när erbjudandet godkänns.
+Skapande av erbjudandeutrymme får endast utföras av en **teknisk administratör** med tillgång till undermappen för erbjudandeutrymme. Utrymmen kan bara skapas i designmiljön och dupliceras automatiskt till den aktiva miljön när erbjudandet godkänns.
 
 Innehållet i katalogerbjudandena konfigureras i erbjudandeutrymmena. Som standard kan innehållet innehålla följande fält: **[!UICONTROL Title]**, **[!UICONTROL Destination URL]**, **[!UICONTROL Image URL]**, **[!UICONTROL HTML content]** och **[!UICONTROL Text content]**. Fältsekvensen är konfigurerad i erbjudandeutrymmet.
 
-Med avancerade parametrar kan du ange en kontaktidentifieringsnyckel (som kan bestå av olika element, till exempel namn- och e-postfältet, samtidigt). Mer information finns i [Presentera ett identifierat erbjudande](../../interaction/using/integration-via-javascript-client-side.md#presenting-an-identified-offer) -avsnitt.
+Med avancerade parametrar kan du ange en kontaktidentifieringsnyckel (som kan bestå av olika element, till exempel namn- och e-postfältet, samtidigt). Mer information finns i avsnittet [Presentera ett identifierat erbjudande](../../interaction/using/integration-via-javascript-client-side.md#presenting-an-identified-offer).
 
 Återgivningen av HTML eller XML skapas via en återgivningsfunktion. Sekvensen för fälten som definieras i återgivningsfunktionen måste vara identisk med sekvensen som konfigurerats i innehållet.
 
@@ -38,20 +38,20 @@ Gör så här för att skapa ett nytt erbjudande:
 
    ![](assets/offer_space_create_002.png)
 
-1. Kontrollera **[!UICONTROL Enable unitary mode]** om något av följande gäller dig:
+1. Markera rutan **[!UICONTROL Enable unitary mode]** om något av följande gäller dig:
 
    * Du använder Interaktion med Message Center
    * Du använder Unikt läge för interaktion (inkommande interaktioner)
 
-1. Gå till **[!UICONTROL Content field]** fönster och klicka **[!UICONTROL Add]**.
+1. Gå till fönstret **[!UICONTROL Content field]** och klicka på **[!UICONTROL Add]**.
 
    ![](assets/offer_space_create_003.png)
 
-1. Gå till **[!UICONTROL Content]** och markera fälten i följande ordning: **[!UICONTROL Title]** sedan **[!UICONTROL Image URL]** sedan **[!UICONTROL HTML content]** sedan **[!UICONTROL Destination URL]**.
+1. Gå till noden **[!UICONTROL Content]** och markera fälten i följande ordning: **[!UICONTROL Title]**, sedan **[!UICONTROL Image URL]**, sedan **[!UICONTROL HTML content]** och sedan **[!UICONTROL Destination URL]**.
 
    ![](assets/offer_space_create_004.png)
 
-1. Kontrollera **[!UICONTROL Required]** för att göra varje fält obligatoriskt.
+1. Markera rutan **[!UICONTROL Required]** om du vill göra varje fält obligatoriskt.
 
    >[!NOTE]
    >
@@ -59,13 +59,13 @@ Gör så här för att skapa ett nytt erbjudande:
 
    ![](assets/offer_space_create_005.png)
 
-1. Klicka **[!UICONTROL Edit functions]** för att skapa en återgivningsfunktion.
+1. Klicka på **[!UICONTROL Edit functions]** för att skapa en återgivningsfunktion.
 
    Dessa funktioner används för att generera offertrepresentationer på ett visst erbjudandeutrymme. Det finns flera möjliga format: HTML eller text för utgående interaktioner och XML för inkommande interaktioner.
 
    ![](assets/offer_space_create_006.png)
 
-1. Gå till **[!UICONTROL HTML rendering]** och markera **[!UICONTROL Overload the HTML rendering function]**.
+1. Gå till fliken **[!UICONTROL HTML rendering]** och välj **[!UICONTROL Overload the HTML rendering function]**.
 1. Infoga återgivningsfunktionen.
 
    ![](assets/offer_space_create_007.png)
@@ -99,13 +99,13 @@ De här värdena används inte som standard: de måste konfigureras.
 
 ### Konfigurera status när förslaget skapas {#configuring-the-status-when-the-proposition-is-created}
 
-När ett erbjudande skapas av interaktionsmotorn ändras dess status, oavsett om det är en inkommande eller en utgående interaktion. Valet mellan dessa två värden beror på hur erbjudandeutrymmet konfigurerades i **[!UICONTROL Design]** miljö
+När ett erbjudande skapas av interaktionsmotorn ändras dess status, oavsett om det är en inkommande eller en utgående interaktion. Valet mellan dessa två värden beror på hur erbjudandeutrymmet konfigurerades i **[!UICONTROL Design]**-miljön
 
 För varje space kan du konfigurera den status som du vill använda när ett förslag skapas, beroende på vilken information som ska visas i erbjudanderapporten.
 
 Gör så här:
 
-1. Gå till **[!UICONTROL Storage]** -fliken för det önskade utrymmet.
+1. Gå till fliken **[!UICONTROL Storage]** för önskat utrymme.
 1. Välj den status som du vill tillämpa på utkastet när det skapas.
 
    ![](assets/offer_update_status_001.png)
@@ -116,36 +116,36 @@ När ett offertförslag har godkänts kan du använda ett av de värden som ange
 
 Gör så här:
 
-1. Gå till **[!UICONTROL Storage]** -fliken för det önskade utrymmet.
+1. Gå till fliken **[!UICONTROL Storage]** för önskat utrymme.
 1. Välj den status som du vill tillämpa på förslaget när det godkänns.
 
    ![](assets/offer_update_status_002.png)
 
 **Inkommande interaktion**
 
-The **[!UICONTROL Storage]** kan du definiera status för **föreslaget** och **accepterad** endast erbjudanden. För inkommande interaktion ska status för erbjudandeförslag anges direkt i URL:en för anrop av erbjudandemotorn, i stället för via gränssnittet. På så sätt kan du ange vilken status som ska gälla i andra fall, t.ex. om ett erbjudande avvisas.
+På fliken **[!UICONTROL Storage]** kan du bara definiera status för **föreslagen** och **accepterad** erbjudandeförslag. För inkommande interaktion ska status för erbjudandeförslag anges direkt i URL:en för anrop av erbjudandemotorn, i stället för via gränssnittet. På så sätt kan du ange vilken status som ska gälla i andra fall, t.ex. om ett erbjudande avvisas.
 
 ```
 <BASE_URL>?a=UpdateStatus&p=<PRIMARY_KEY_OF_THE_PROPOSITION>&st=<NEW_STATUS_OF_THE_PROPOSITION>&r=<REDIRECT_URL>
 ```
 
-Exempel: dispositionen (identifieraren) **40004**) som matchar **Hemförsäkring** erbjudandet visas på **Neobank** -platsen innehåller följande URL:
+Det erbjudande (identifierare **40004**) som matchar erbjudandet om **hemförsäkring** som visas på webbplatsen **Neobank** innehåller följande URL:
 
 ```
 <BASE_URL>?a=UpdateStatus&p=<40004>&st=<3>&r=<"http://www.neobank.com/insurance/subscribe.html">
 ```
 
-Så snart en besökare klickar på erbjudandet, och därmed webbadressen, **[!UICONTROL Accepted]** status (värde) **3**) används i förslaget och besökaren omdirigeras till en ny sida i **Neobank** Anläggning för teckning av försäkringsavtalet.
+Så snart en besökare klickar på erbjudandet, och därmed URL:en, tillämpas statusen **[!UICONTROL Accepted]** (värdet **3**) på erbjudandet och besökaren omdirigeras till en ny sida på webbplatsen **Neobank** för att teckna försäkringsavtalet.
 
 >[!NOTE]
 >
 >Om du vill ange en annan status på URL:en (till exempel om ett erbjudande avvisas) använder du värdet som motsvarar önskad status. Exempel: **[!UICONTROL Rejected]** = &quot;5&quot;, **[!UICONTROL Presented]** = &quot;1&quot; och så vidare.
 >
->Status och deras värden kan hämtas i **[!UICONTROL Offer propositions (nms)]** dataschema. Mer information finns på [den här sidan](../../configuration/using/data-schemas.md).
+>Statuser och deras värden kan hämtas i databasschemat **[!UICONTROL Offer propositions (nms)]**. Mer information finns på [den här sidan](../../configuration/using/data-schemas.md).
 
 **Utgående interaktion**
 
-Om det är en utgående interaktion kan du automatiskt använda **[!UICONTROL Interested]** status till ett erbjudande när leveransen innehåller en länk. Lägg bara till **_urlType=&quot;11&quot;** värde för länken:
+Om det gäller en utgående interaktion kan du automatiskt tillämpa statusen **[!UICONTROL Interested]** på ett erbjudande när leveransen innehåller en länk. Lägg bara till värdet **_urlType=&quot;11&quot;** till länken:
 
 ```
 <a _urlType="11" href="<DEST_URL>">Link inserted into the delivery</a>

@@ -24,32 +24,32 @@ För varje marknadsföringsresurs som hanteras via Adobe Campaign kan du när so
 
 ## Lägga till en marknadsföringsresurs {#adding-a-marketing-resource}
 
-Marknadsföringsresurser nås via **[!UICONTROL Campaigns]** -fliken.
+Marknadsföringsresurser nås via fliken **[!UICONTROL Campaigns]**.
 
-Om du vill lägga till en resurs klickar du på **[!UICONTROL Create]** -knappen.
+Klicka på knappen **[!UICONTROL Create]** om du vill lägga till en resurs.
 
 ![](assets/s_ncs_user_mkg_resource_add.png)
 
-Om du vill göra en resurs tillgänglig på Adobe Campaign-servern måste du lägga till den genom att dra och släppa den i mitten av redigeraren. Du kan också klicka på **[!UICONTROL Upload file to server...]** länk.
+Om du vill göra en resurs tillgänglig på Adobe Campaign-servern måste du lägga till den genom att dra och släppa den i mitten av redigeraren. Du kan också klicka på länken **[!UICONTROL Upload file to server...]**.
 
 ![](assets/s_ncs_user_mkg_resource_file.png)
 
 Ett bekräftelsemeddelande låter dig starta överföringen.
 
-När överföringen är klar läggs resursen till i listan över tillgängliga resurser. Den är tillgänglig för Adobe Campaign-operatörer. De kan visa den (via **[!UICONTROL Preview]** , gör en kopia för att ändra den eller uppdatera filen på servern (med **[!UICONTROL Edit]** -fliken).
+När överföringen är klar läggs resursen till i listan över tillgängliga resurser. Den är tillgänglig för Adobe Campaign-operatörer. De kan visa den (via fliken **[!UICONTROL Preview]**), göra en kopia för att ändra den eller uppdatera filen på servern (med fliken **[!UICONTROL Edit]**).
 
 ![](assets/s_ncs_user_mkg_resource_extract.png)
 
-Klicka på **[!UICONTROL General]** för att välja operatorer eller grupper av operatorer som ansvarar för övervakning, spårning och godkännande av resursen. Välja granskare görs via **[!UICONTROL Advanced parameters]** länk.
+Klicka på fliken **[!UICONTROL General]** för att välja operatorer eller grupper av operatorer som ansvarar för övervakning, spårning och godkännande av den här resursen. Granskaren har valts via länken **[!UICONTROL Advanced parameters]**.
 
 * Operatorn som resursen tilldelas är ansvarig för att spåra den.
 * Godkännandeoperatorn ansvarar för att godkänna marknadsföringsresursen. De meddelas när resursvalideringsprocessen startas.
 
-  Om ingen granskare är markerad **[!UICONTROL cannot be]** med reservation för godkännande.
+  Om ingen granskare har valts måste resursen **[!UICONTROL cannot be]** godkännas.
 
 * Om det behövs kan du även ange en korrekturläsare.
 
-Du kan ange ett (vägledande) tillgänglighetsdatum för resursen. Efter detta datum visas den med **[!UICONTROL Late]** status.
+Du kan ange ett (vägledande) tillgänglighetsdatum för resursen. Efter detta datum visas den med statusen **[!UICONTROL Late]**.
 
 ## Samarbete kring resurser {#collaborative-work-on-resources}
 
@@ -61,7 +61,7 @@ Du kan ändra och uppdatera en marknadsföringsresurs och vid behov informera an
 
 >[!NOTE]
 >
->The **[!UICONTROL History]** innehåller hämtnings- och uppdateringsloggen för resursen. The **[!UICONTROL Details]** kan du visa den valda versionen.
+>Fliken **[!UICONTROL History]** innehåller hämtnings- och uppdateringsloggen för resursen. Med knappen **[!UICONTROL Details]** kan du visa den valda versionen.
 
 ### Låsa/låsa upp en resurs {#locking-unlocking-a-resource}
 
@@ -73,15 +73,15 @@ Ett specialmeddelande meddelar alla operatorer som försöker få åtkomst till 
 
 ![](assets/s_ncs_user_mkg_resource_locked.png)
 
-The **[!UICONTROL Tracking]** -fliken anger namnet på den operator som låste resursen och det planerade uppdateringsdatumet.
+Fliken **[!UICONTROL Tracking]** anger namnet på operatorn som låste resursen och det planerade uppdateringsdatumet.
 
 ![](assets/s_ncs_user_mkg_resource_locked_date.png)
 
-Du måste klicka på resursen följt av **[!UICONTROL Lock]** på resurspanelen.
+Om du vill låsa en resurs måste du klicka på resursen följt av knappen **[!UICONTROL Lock]** på kontrollpanelen för resurser.
 
 ![](assets/s_ncs_user_mkg_resource_lock.png)
 
-Du kan ange det planerade returdatumet i **[!UICONTROL Tracking]** -fliken för resursen.
+Du kan ange det planerade returdatumet på fliken **[!UICONTROL Tracking]** för resursen.
 
 ![](assets/s_ncs_user_mkg_resource_lock_date.png)
 
@@ -97,33 +97,33 @@ Om det behövs kan du även låsa upp det manuellt från kontrollpanelen.
 
 ### Diskussionsforum {#discussion-forums}
 
-För varje resurs är **[!UICONTROL Forum]** -fliken gör att deltagarna kan utbyta information.
+På fliken **[!UICONTROL Forum]** kan deltagare utbyta information för varje resurs.
 
-[Diskussionsforum](../../mrm/using/discussion-forums.md) förklarar hur diskussionsforum fungerar i Adobe Campaign.
+[Diskussionsforum](../../mrm/using/discussion-forums.md) förklarar hur diskussionsforumen fungerar i Adobe Campaign.
 
 ## En marknadsföringsresurs livscykel {#life-cycle-of-a-marketing-resource}
 
 När resursen skapas utses Adobe Campaign-operatorer för att utforma, korrekturläsa, godkänna och publicera resursen. En varaktighet kan fastställas för dessa kampanjer.
 
-The **[!UICONTROL Tracking]** kan du övervaka åtgärder som utförs på resursen: godkännanden, avslag på ansökningar om godkännande, relaterade kommentarer eller publikationer.
+På fliken **[!UICONTROL Tracking]** kan du övervaka åtgärder som utförs på resursen: godkännanden, avslag på godkännanden, relaterade kommentarer eller publikationer.
 
-The **[!UICONTROL History]** -fliken visar filöverföringar som har utförts för den här resursen.
+Fliken **[!UICONTROL History]** visar filöverföringar som har utförts för resursen.
 
 ### Godkännandeprocess {#approval-process}
 
-Det förväntade tillgänglighetsdatumet visas i resursinformationen, om det har angetts i **[!UICONTROL Tracking]** -fliken. När detta datum har nåtts kan du genomföra godkännandeprocessen med hjälp av **[!UICONTROL Submit for approval]** på resurspanelen. Resursstatusen ändras sedan till **[!UICONTROL Approval in progress]**.
+Det förväntade tillgänglighetsdatumet visas i resursinformationen, om det har angetts på fliken **[!UICONTROL Tracking]**. När det här datumet har nåtts kan du köra godkännandeprocessen med knappen **[!UICONTROL Submit for approval]** på resurspanelen. Resursstatusen ändras sedan till **[!UICONTROL Approval in progress]**.
 
-En resurs kan godkännas via **[!UICONTROL Approve resource]** på kontrollpanelen.
+En resurs kan godkännas via knappen **[!UICONTROL Approve resource]** på kontrollpanelen.
 
 ![](assets/s_ncs_user_task_valid_date.png)
 
-Auktoriserade operatorer kan sedan godkänna eller avvisa godkännande. Den här åtgärden är möjlig antingen via e-postmeddelandet som skickas (genom att klicka på länken i meddelandet) eller via konsolen (genom att klicka på knappen **[!UICONTROL Approve]** ).
+Auktoriserade operatorer kan sedan godkänna eller avvisa godkännande. Den här åtgärden är möjlig antingen: via det e-postmeddelande som skickas (genom att klicka på länken i meddelandemeddelandet) eller via konsolen (genom att klicka på knappen **[!UICONTROL Approve]** ).
 
 I godkännandefönstret kan du ange en kommentar.
 
 ![](assets/s_ncs_user_mkg_resource_valid_ok.png)
 
-The **[!UICONTROL Tracking]** Med -fliken kan alla operatorer spåra de olika stegen i godkännandeprocessen.
+På fliken **[!UICONTROL Tracking]** kan alla operatorer spåra de olika stegen i godkännandeprocessen.
 
 ![](assets/s_ncs_user_mkg_resource_log.png)
 
@@ -135,7 +135,7 @@ The **[!UICONTROL Tracking]** Med -fliken kan alla operatorer spåra de olika st
 
 Marknadsföringsresursen måste publiceras när den har godkänts. Publiceringsprocessen måste genomföras i enlighet med företagets krav. Detta innebär att resurser kan publiceras på ett extranät eller på en annan server, specifik information kan skickas till en extern tjänsteleverantör osv.
 
-Klicka på **[!UICONTROL Publish]** i redigeringszonen på kontrollpanelen för marknadsföringsresurser.
+Om du vill publicera en resurs klickar du på knappen **[!UICONTROL Publish]** i redigeringszonen på kontrollpanelen för marknadsföringsresurser.
 
 ![](assets/s_ncs_user_mkg_resource_available.png)
 
@@ -143,16 +143,16 @@ Du kan också automatisera publiceringen av en resurs via ett arbetsflöde.
 
 Att publicera en resurs innebär att göra den tillgänglig för användning (till exempel för en annan uppgift). Publikationen varierar beroende på vilken typ av resurs du har: för ett flygblad kan publicering innebära att du skickar filen till en skrivare, för en webbbyrå kan det betyda att du publicerar den på en webbplats osv.
 
-För att Adobe Campaign ska kunna publicera måste du skapa ett lämpligt arbetsflöde och länka det till resursen. Öppna **[!UICONTROL Advanced settings]** resursens ruta och välj sedan önskat arbetsflöde i **[!UICONTROL Post-processing]** fält.
+För att Adobe Campaign ska kunna publicera måste du skapa ett lämpligt arbetsflöde och länka det till resursen. Det gör du genom att öppna resursens **[!UICONTROL Advanced settings]**-ruta och sedan välja önskat arbetsflöde i fältet **[!UICONTROL Post-processing]**.
 
 ![](assets/mrm_asset_postprocessing_workflow.png)
 
 Arbetsflödet kommer att köras:
 
-* När granskaren klickar på **[!UICONTROL Publish resource]** länk (eller, om ingen granskare har definierats, den person som ansvarar för resursen).
-* Om resursen hanteras via en marknadsföringsresursuppgift körs den när aktiviteten är inställd på **[!UICONTROL Finished]**, förutsatt att **[!UICONTROL Publish the marketing resource]** är incheckad i uppgiften (se [Skapande av marknadsföringsresurs](../../mrm/using/creating-and-managing-tasks.md#marketing-resource-creation-task))
+* När granskaren klickar på länken **[!UICONTROL Publish resource]** (eller, om ingen granskare har definierats, den person som ansvarar för resursen).
+* Om resursen hanteras via en marknadsföringsresursuppgift, kommer den att köras när aktiviteten är inställd på **[!UICONTROL Finished]**, så länge som rutan **[!UICONTROL Publish the marketing resource]** är incheckad i aktiviteten (se [aktiviteten Skapa marknadsföringsresurs](../../mrm/using/creating-and-managing-tasks.md#marketing-resource-creation-task))
 
-Om ett arbetsflöde inte startas omedelbart (om arbetsflödet till exempel stoppas) ändras resursens status till **[!UICONTROL Pending publication]**. När arbetsflödet har startats ändras resursens status till **[!UICONTROL Published]**. Denna status tar inte hänsyn till eventuella fel i publiceringsprocessen. Kontrollera arbetsflödets status för att kontrollera att det har körts korrekt.
+Om ett arbetsflöde inte startas omedelbart (om arbetsflödet till exempel stoppas) ändras resursstatusen till **[!UICONTROL Pending publication]**. När arbetsflödet har startats ändras resursens status till **[!UICONTROL Published]**. Denna status tar inte hänsyn till eventuella fel i publiceringsprocessen. Kontrollera arbetsflödets status för att kontrollera att det har körts korrekt.
 
 ## Länka en resurs till en kampanj {#linking-a-resource-to-a-campaign}
 
@@ -164,7 +164,7 @@ Marknadsföringsresurser kan associeras med kampanjer, förutsatt att den här f
 >
 >Mer information om hur du skapar och konfigurerar kampanjmallar finns i [Kampanjmallar](../../campaign/using/marketing-campaign-templates.md#campaign-templates).
 
-Klicka på **[!UICONTROL Documents > Resources]** i kampanjkontrollpanelen klickar du på **[!UICONTROL Add]** för att välja den berörda resursen.
+Klicka på fliken **[!UICONTROL Documents > Resources]** på kontrollpanelen för kampanjer och klicka sedan på **[!UICONTROL Add]** för att välja den aktuella resursen.
 
 ![](assets/s_ncs_user_mkg_resource_ref.png)
 
@@ -172,9 +172,9 @@ Du kan filtrera resurser efter status, typ eller typ, eller använda ett anpassa
 
 ![](assets/s_ncs_user_mkg_resource_ref_filter.png)
 
-Klicka **[!UICONTROL OK]** om du vill lägga till resursen i listan över marknadsföringsresurser som refereras för den här kampanjen.
+Klicka på **[!UICONTROL OK]** om du vill lägga till resursen i listan över marknadsföringsresurser som refereras till för den här kampanjen.
 
-The **[!UICONTROL Details]** kan du redigera och visa den.
+Med knappen **[!UICONTROL Details]** kan du redigera och visa den.
 
 De tillagda resurserna visas på kontrollpanelen. De kan också redigeras där.
 
@@ -186,7 +186,7 @@ Marknadsföringsresurser kan associeras med leveranser via leveranskonturer.
 
 >[!NOTE]
 >
->Mer information om leveransdispositioner finns i [Associera och strukturera resurser som är länkade via en leveransöversikt](../../campaign/using/marketing-campaign-deliveries.md#associating-and-structuring-resources-linked-via-a-delivery-outline).
+>Mer information om leveransdispositioner finns i [Associera och strukturera resurser som är länkade via en leveransdisposition](../../campaign/using/marketing-campaign-deliveries.md#associating-and-structuring-resources-linked-via-a-delivery-outline).
 
 ## Stock-hantering {#stock-management}
 
@@ -194,13 +194,13 @@ Du kan associera en marknadsföringsresurs med en eller flera lager för att han
 
 >[!NOTE]
 >
->Mer information om aktiehantering i Adobe Campaign finns i [Stock-hantering](../../campaign/using/providers-stocks-and-budgets.md#stock-management).
+>Mer information om arkivhantering i Adobe Campaign finns i [Stock-hantering](../../campaign/using/providers-stocks-and-budgets.md#stock-management).
 
 Om du vill associera en marknadsföringsresurs med en aktie redigerar du aktiekartan och redigerar eller skapar en aktie. Lägg till en aktierad och välj motsvarande marknadsföringsresurs.
 
 ![](assets/s_ncs_user_task_in_a_stock.png)
 
-Om det behövs kan du redigera den valda resursen via **[!UICONTROL Edit the link]** ikon (förstoringsglas) till höger om resursen när den har valts.
+Om det behövs kan du redigera den valda resursen via ikonen **[!UICONTROL Edit the link]** (förstoringsglas) som finns till höger om resursen när den har valts.
 
 Ange det ursprungliga lagret och larmlagret och spara sedan.
 
@@ -212,9 +212,9 @@ När beståndet är otillräckligt skickas en varning till de berörda aktörern
 
 ## Avancerade funktioner {#advanced-functions}
 
-Med kontrollpanelen för marknadsföringsresurser kan du utföra vanliga typer av åtgärder: lägga till, redigera, låsa/låsa upp, godkänna, publicera. Du kan skapa andra typer av marknadsföringsresurser och komma åt avancerade funktioner via Adobe Campaign-trädet. Det gör du genom att klicka **[!UICONTROL Explorer]** på Adobe Campaign hemsida.
+Med kontrollpanelen för marknadsföringsresurser kan du utföra vanliga typer av åtgärder: lägga till, redigera, låsa/låsa upp, godkänna, publicera. Du kan skapa andra typer av marknadsföringsresurser och komma åt avancerade funktioner via Adobe Campaign-trädet. Det gör du genom att klicka på **[!UICONTROL Explorer]** på Adobe Campaign hemsida.
 
-Som standard lagras marknadsföringsresurser i **[!UICONTROL MRM > Marketing resources]** trädnod.
+Som standard lagras marknadsföringsresurser i noden **[!UICONTROL MRM > Marketing resources]** i trädet.
 
 ![](assets/s_ncs_user_mkg_resource_create_from_list.png)
 

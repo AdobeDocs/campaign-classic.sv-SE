@@ -39,9 +39,9 @@ I det här scenariot är de bifogade filerna inte färdiga, utan läggs till dir
 
 ## Recommendations och skyddsräcken {#important-notes}
 
-För att undvika prestandaproblem får bilderna i e-postmeddelanden inte överstiga 100 kB. Den här begränsningen, som är inställd som standard, kan ändras från `NmsDelivery_MaxDownloadedImageSize` alternativ. Adobe rekommenderar dock att du undviker stora bilder i e-postutskick.
+För att undvika prestandaproblem får bilderna i e-postmeddelanden inte överstiga 100 kB. Den här gränsen, som är inställd som standard, kan ändras från alternativet `NmsDelivery_MaxDownloadedImageSize`. Adobe rekommenderar dock att du undviker stora bilder i e-postutskick.
 
-Adobe rekommenderar också att du begränsar storleken och antalet bifogade filer. Som standard kan du bara lägga till en fil som en bifogad fil i ett e-postmeddelande. Det här tröskelvärdet kan konfigureras från `NmsDelivery_MaxRecommendedAttachments` alternativ.
+Adobe rekommenderar också att du begränsar storleken och antalet bifogade filer. Som standard kan du bara lägga till en fil som en bifogad fil i ett e-postmeddelande. Det här tröskelvärdet kan konfigureras från alternativet `NmsDelivery_MaxRecommendedAttachments`.
 
 Läs mer i [listan med alternativ för Campaign Classic](../../installation/using/configuring-campaign-options.md#delivery).
 
@@ -68,13 +68,13 @@ Om du vill lägga till en e-postbilaga i ett transaktionsmeddelande följer du s
 
    Detta gör att du kan bifoga filerna till ett e-postmeddelande, även om de inte finns på körningsinstansen.
 
-1. Du kan skicka e-postmeddelanden via en SOAP-utlösare. I SOAP-anropet finns det en URL-parameter (attachmentURL).
+1. Du kan skicka e-postmeddelanden via en SOAP utlösare. I det SOAP anropet finns det en URL-parameter (attachmentURL).
 
-   Mer information om SOAP-begäranden finns i [Händelsebeskrivning](../../message-center/using/event-description.md).
+   Mer information om SOAP finns i [Händelsebeskrivning](../../message-center/using/event-description.md).
 
-1. När du utformar e-postmeddelandet klickar du på **[!UICONTROL Attachment]**.
+1. När du utformar din e-post klickar du på **[!UICONTROL Attachment]**.
 
-1. I **[!UICONTROL Attachment definition]** på skärmen anger du parametern SOAP attachment:
+1. På skärmen **[!UICONTROL Attachment definition]** anger du parametern SOAP attachment:
 
    ```
    <%= rtEvent.ctx.attachmentUrl %>
@@ -82,6 +82,6 @@ Om du vill lägga till en e-postbilaga i ett transaktionsmeddelande följer du s
 
 1. När meddelandet bearbetas hämtar systemet filen från fjärrplatsen (tredjepartsserver) och bifogar den till det enskilda meddelandet.
 
-   Eftersom den här parametern kan vara en variabel bör den acceptera den fullständiga URL-variabeln för filen, som skickas via SOAP-anropet.
+   Eftersom den här parametern kan vara en variabel bör den acceptera den fullständiga URL-variabeln för filen, som skickas via SOAP.
 
    ![](assets/message-center-uc2.png)

@@ -23,13 +23,13 @@ Loggfilerna är ordnade enligt följande:
 
 ![](assets/d_ncs_directory.png)
 
-Varje **nlserver** i skapas en loggfil som sparas i följande katalog: **`<installation directory>`/var/`<instance>`/log/`<module>`.log**.
+Varje **nlserver**-modul genererar en loggfil som har sparats i följande katalog: **`<installation directory>`/var/`<instance>`/log/`<module>`.log**.
 
-The **nlserver syslogd** sparas loggarna på disken. Den här modulen liknar Unix **syslog daemon**, men har anpassats för kompatibilitet mellan Unix och Windows. De andra Adobe Campaign-modulerna sparar inte sina loggar på disken utan delegerar uppgiften till **syslogd** genom att skicka UDP-paket.
+Modulen **nlserver syslogd** sparar loggarna på disken. Den här modulen liknar Unix **syslog daemon**, men har anpassats för kompatibilitet mellan Unix och Windows. De andra Adobe Campaign-modulerna sparar inte sina loggar på disken. De delegerar uppgiften till modulen **syslogd** genom att skicka UDP-paket.
 
-Som standard har Adobe Campaign-plattformen **syslogd** som är installerad på den, men det går att använda en annan **syslog daemon**. Den här modulen skapar loggfilerna i **logg** katalog.
+Som standard har Adobe Campaign-plattformen **syslogd**-modulen installerad, men det går att använda en annan **syslog-daemon**. Den här modulen skapar loggfilerna i katalogen **log**.
 
-Loggarna för moduler med flera instanser lagras i följande katalog: **`<installation directory>`/var/default/log/**. Samma loggfil delas av alla instanser (t.ex. **web.log**).
+Loggarna för moduler med flera instanser lagras i följande katalog: **`<installation directory>`/var/default/log/**. Samma loggfil delas av alla instanser (till exempel **web.log**).
 
 Loggarna för de andra modulerna lagras i en undermapp som heter efter instansen. Varje instans har sina egna loggfiler.
 
@@ -37,7 +37,7 @@ Loggfiler med flera instanser visas i följande tabell:
 
 | Fil | Beskrivning |
 |---|---|
-| web.log | Loggar för webbmodulen (klientkonsol, rapporter, SOAP API osv.) |
+| web.log | Loggar för webbmodulen (klientkonsol, rapporter, SOAP API, etc.) |
 | webmdl.log | Loggar från omdirigeringsmodulen |
 | watchdog.log | Loggar från Adobe Campaign processövervakningsmodul |
 | trackinglogd.log | Spårningsloggar |
@@ -55,14 +55,14 @@ Loggfilerna för en instans visas i följande tabell:
 
 >[!IMPORTANT]
 >
->The **redir** katalogen finns bara på omdirigeringsservrar. The **url** underkatalogen innehåller matchningarna för de URL:er som ska omdirigeras samt underkatalogen **logg** innehåller spårningsloggarna. Om du vill generera spårningsloggar **trackinglogd** modulen måste köras.
+>Katalogen **redir** finns bara på omdirigeringsservrar. Underkatalogen **url** innehåller matchningar för de URL:er som ska omdirigeras och underkatalogen **log** innehåller spårningsloggarna. **trackinglogd**-modulen måste köras för att spårningsloggar ska kunna genereras.
 
-För optimering av prestanda och lagring delas filen logins.log upp i flera filer, en varje dag (logins.yy-mm-dd.log) med högst 365 filer. Antalet dagar kan ändras i serverConf.xml, under syslogd (**maxNumberOfLoginsFiles** ). Läs dokumentationen på [serverkonfigurationsfil](../../installation/using/the-server-configuration-file.md#syslogd).
+För optimering av prestanda och lagring delas filen logins.log upp i flera filer, en varje dag (logins.yy-mm-dd.log) med högst 365 filer. Antalet dagar kan ändras i serverConf.xml, under syslogd (**maxNumberOfLoginsFiles** alternativ). Läs dokumentationen om [serverkonfigurationsfilen](../../installation/using/the-server-configuration-file.md#syslogd).
 
-Som standard är loggarna begränsade till två 10 MB-filer per modul och per instans. Den andra filen anropas: **`<modulename>`_2.log**. Loggarna är därför begränsade till 2&#42;10 MB per modul och per instans.
+Som standard är loggarna begränsade till två 10 MB-filer per modul och per instans. Den andra filen anropas: **`<modulename>`_2.log**. Storleken på loggarna är därför begränsad till 2&#42;,10 MB per modul och per instans.
 
-Du kan dock behålla större filer. Om du vill aktivera det här ändrar du värdet för **maxFileSizeMb=&quot;10&quot;** i **syslogd** nod på **conf/serverConf.xml** -fil. Detta värde representerar den största tillåtna storleken i MB för en loggfil.
+Du kan dock behålla större filer. Om du vill aktivera det här ändrar du värdet för inställningen **maxFileSizeMb=&quot;10&quot;** i noden **syslog** i filen **conf/serverConf.xml** . Detta värde representerar den största tillåtna storleken i MB för en loggfil.
 
-Om du vill behålla fler detaljnivåer i loggarna kan du starta Adobe Campaign-modulerna med **-verbose** parameter:
+Om du vill behålla fler detaljnivåer i loggarna kan du starta Adobe Campaign-modulerna med parametern **-verbose**:
 
 **nlserver start `<MODULE>`@`<INSTANCE>` -verbose**

@@ -20,7 +20,7 @@ ht-degree: 66%
 
 Du kan hitta frågeverktyget i Adobe Campaign på flera nivåer i programmet. Du kan skapa en målgrupp, segmentera kunder, extrahera och filtrera spårningsloggar och bygga filter osv.
 
-Med Adobe Campaign-frågeverktyget kan du fråga en databas med en dedikerad guide: den allmänna frågeredigeraren. Den öppnas via **[!UICONTROL Tools > Generic query editor...]** -menyn. Den låter dig extrahera information som finns lagrad i en databas och ordna, gruppera och sortera osv. Användaren kan till exempel hämta mottagare som har klickat mer än &quot;n&quot; gånger på länken i ett nyhetsbrev under en viss period. Med det här verktyget kan du samla in, sortera och visa resultat utifrån dina behov.
+Med Adobe Campaign-frågeverktyget kan du fråga en databas med en dedikerad guide: den allmänna frågeredigeraren. Den nås via menyn **[!UICONTROL Tools > Generic query editor...]**. Den låter dig extrahera information som finns lagrad i en databas och ordna, gruppera och sortera osv. Användaren kan till exempel hämta mottagare som har klickat mer än &quot;n&quot; gånger på länken i ett nyhetsbrev under en viss period. Med det här verktyget kan du samla in, sortera och visa resultat utifrån dina behov.
 
 Det här verktyget kombinerar alla frågemöjligheter i Adobe Campaign. Du kan till exempel skapa och spara begränsningsfilter. Det innebär att ett användarfilter som har skapats i den allmänna frågeredigeraren kan användas i frågeformuläret i ett arbetsflöde för målgrupper osv.
 

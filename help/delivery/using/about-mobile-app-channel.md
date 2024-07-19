@@ -9,13 +9,13 @@ exl-id: c3b0406f-f652-42f4-ad0d-23fb719cd1b6
 source-git-commit: 81b47231b027a189bc8b9029b7d48939734d08ed
 workflow-type: tm+mt
 source-wordcount: '772'
-ht-degree: 7%
+ht-degree: 9%
 
 ---
 
 # Kom igång med mobilappskanalen{#about-mobile-app-channel}
 
-The **Mobilappskanal** Med kan du använda Adobe Campaign-plattformen för att skicka personaliserade push-meddelanden till iOS- och Android-terminaler via appar.
+Med **mobilappskanalen** kan du använda Adobe Campaign-plattformen för att skicka personaliserade push-meddelanden till iOS- och Android-terminaler via appar.
 
 Det finns två leveranskanaler:
 
@@ -23,13 +23,13 @@ Det finns två leveranskanaler:
 
   ![](assets/nmac_intro_2.png)
 
-* En Android-kanal som gör att du kan skicka datameddelanden till mobila Android-enheter.
+* En Android-kanal som gör att du kan skicka datameddelanden till Android mobila enheter.
 
   ![](assets/nmac_intro_1.png)
 
   >[!IMPORTANT]
   >
-  >Vissa viktiga ändringar av tjänsten Android Firebase Cloud Messaging (FCM) kommer att släppas 2024 och kan komma att påverka din Adobe Campaign-implementering. Konfigurationen för prenumerationstjänster för push-meddelanden för Android kan behöva uppdateras för att den här ändringen ska fungera. Du kan redan kontrollera och vidta åtgärder. Läs mer om detta [Adobe Campaign v8-teknik](https://experienceleague.adobe.com/docs/campaign/technotes-ac/tn-new/push-technote.html?lang=sv){target="_blank"}.
+  >Vissa viktiga ändringar av tjänsten Android Firebase Cloud Messaging (FCM) kommer att släppas 2024 och kan komma att påverka din Adobe Campaign-implementering. Konfigurationen för prenumerationstjänster för push-meddelanden för Android kan behöva uppdateras för att den här ändringen ska fungera. Du kan redan kontrollera och vidta åtgärder. Läs mer i den här [Adobe Campaign v8-tekniken](https://experienceleague.adobe.com/docs/campaign/technotes-ac/tn-new/push-technote.html?lang=sv){target="_blank"}.
 
 Motsvarar dessa två kanaler finns det två leveransaktiviteter i kampanjarbetsflödena. Det finns även två mallar för transaktionsmeddelanden.
 
@@ -46,16 +46,16 @@ Du kan definiera programbeteendet för när användaren aktiverar meddelandet f�
 >* Du måste kontrollera att de meddelanden som skickas till ett mobilprogram är kompatibla med de krav och villkor som anges av Apple (Apple Push Notification Service) och Google (Firebase Cloud Messaging).
 >* Varning! I vissa länder kräver lagen att du informerar användarna om dina insamlade datatyper för mobilprogram och syftet med deras behandling. Ni måste kontrollera lagstiftningen.
 
-The **[!UICONTROL NMAC opt-out management]** (mobileAppOptOutMgt) Arbetsflödet uppdaterar meddelanden om att prenumerationen har avbrutits på mobila enheter. Mer information om arbetsflödet finns i [förteckning över tekniska arbetsflöden](../../workflow/using/about-technical-workflows.md).
+Arbetsflödet **[!UICONTROL NMAC opt-out management]** (mobileAppOptOutMgt) uppdaterar meddelanden om att prenumerationen har avbrutits på mobila enheter. Mer information om det här arbetsflödet finns i [listan över tekniska arbetsflöden](../../workflow/using/about-technical-workflows.md).
 
-Adobe Campaign är kompatibelt med HTTP/2 APN:er. Mer information om konfigurationsstegen finns i [det här avsnittet](configuring-the-mobile-application.md) -avsnitt.
+Adobe Campaign är kompatibelt med HTTP/2 APN:er. Mer information om konfigurationsstegen finns i avsnittet [this](configuring-the-mobile-application.md).
 
-Global information om hur du skapar en leverans finns i [det här avsnittet](steps-about-delivery-creation-steps.md).
+Global information om hur du skapar en leverans finns i [det här avsnittet](steps-about-delivery-creation-steps.md).
 
 
 ## Konfigurera kanal för push-meddelanden {#push-notification-configuration}
 
-Om du vill skicka push-meddelanden med Adobe Campaign måste du först konfigurera miljön och appen. Innan du börjar skicka push-meddelanden med Adobe Campaign måste du se till att det finns konfigurationer och integreringar på mobilappen och för taggar i Adobe Experience Platform. Adobe Experience Platform Mobile SDK innehåller API:er för integrering på klientsidan för mobiler via Android och iOS-kompatibla SDK:er. SDK-konfigurationen hanteras via användargränssnittet för datainsamling för flexibel konfiguration och utbyggbara, regelbaserade integreringar. Läs mer i [Adobe Campaign v8-dokumentation](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/push/push-settings).
+Om du vill skicka push-meddelanden med Adobe Campaign måste du först konfigurera miljön och appen. Innan du börjar skicka push-meddelanden med Adobe Campaign måste du se till att det finns konfigurationer och integreringar på mobilappen och för taggar i Adobe Experience Platform. Adobe Experience Platform Mobile SDK innehåller API:er för integrering på klientsidan för mobiler via Android och iOS-kompatibla SDK:er. Konfigurationen av SDK:er hanteras via användargränssnittet för datainsamling för flexibel konfiguration och utbyggbara, regelbaserade integreringar. Läs mer i [Adobe Campaign v8-dokumentationen](https://experienceleague.adobe.com/sv/docs/campaign/campaign-v8/send/push/push-settings).
 
 
 ## Datasökväg {#data-path}
@@ -103,4 +103,4 @@ Använd följande kommandon för att kontrollera att den fungerar som den ska:
 
 Med iOS HTTP/2-kontakten måste MTA och webbservern kunna kontakta APN på port 443.
 
-Om du behöver använda iOS HTTP/2-kontakten via en proxy, se denna [page](../../installation/using/file-res-management.md#proxy-connection-configuration).
+Om du behöver använda iOS HTTP/2-anslutningen via en proxy, se [sidan](../../installation/using/file-res-management.md#proxy-connection-configuration).

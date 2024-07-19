@@ -17,9 +17,9 @@ ht-degree: 2%
 
 ## Utöka en tabell {#extending-a-table}
 
-Utöka **nms:mottagare** schemats mottagartabell, använd följande procedur:
+Om du vill utöka mottagartabellen för **nms:receive**-schemat gör du så här:
 
-1. Skapa tilläggsschemat (**cus:tillägg**) med följande data:
+1. Skapa tilläggsschemat (**cus:extension**) med följande data:
 
    ```
    <srcSchema mappingType="sql" name="extension" namespace="cus" xtkschema="xtk:srcSchema" extendedSchema="nms:recipient">  
@@ -40,13 +40,13 @@ Utöka **nms:mottagare** schemats mottagartabell, använd följande procedur:
    </srcSchema>
    ```
 
-   I det här exemplet har ett indexerat fält (**återgivning**) läggs till och **plats** element (som redan fanns i **nms:mottagare** schema) kompletteras med ett numrerat fält (**area**).
+   I det här exemplet läggs ett indexerat fält (**följsamhet**) till, och elementet **location** (som redan fanns i schemat **nms:mottagare**) kompletteras med ett numrerat fält (**område**).
 
    >[!IMPORTANT]
    >
-   >Kom ihåg att lägga till **extendedSchema** för att referera till tilläggsschemat.
+   >Kom ihåg att lägga till attributet **extendedSchema** för att referera till tilläggsschemat.
 
-1. Kontrollera att det utökade schemat **nms:mottagare** och att ytterligare data finns:
+1. Kontrollera att det utökade schemat är schemat **nms:receiver** och att det finns ytterligare data:
 
    ```
    <schema dependingSchemas="cus:extension" mappingType="sql" name="recipient" namespace="nms" xtkschema="xtk:schema">
@@ -153,7 +153,7 @@ Med en tilläggstabell kan du utöka innehållet i en befintlig tabell i en län
 
 Syftet med en tilläggstabell är att undvika begränsningar av antalet fält som stöds i en tabell eller att optimera utrymmet som upptas av data, som förbrukas på begäran.
 
-Skapar tilläggsschemat (**cus:funktion**):
+Skapar tilläggsschemat (**cus:feature**):
 
 ```
 <srcSchema mappingType="sql" name="feature" namespace="cus" xtkschema="xtk:srcSchema">  
@@ -203,7 +203,7 @@ En flödestabell är en tilläggstabell (kardinalitet 1-1), men deklarationen av
 
 Flödestabellen innehåller sekundärnyckeln till tabellen som ska utökas. Den tabell som ska utökas ändras därför inte. Relationen mellan de två tabellerna är värdet på primärnyckeln för den tabell som ska utökas.
 
-Skapar schemat för flödestabell (**cus:spill**):
+Skapar schemat för flödestabellen (**cus:overflow**):
 
 ```
 <srcSchema label="Overflow" name="overflow" namespace="cus" xtkschema="xtk:srcSchema">  
@@ -235,9 +235,9 @@ CREATE UNIQUE INDEX CusOverflow2_id ON CusOverflow2(iRecipientId);
 
 Med en relationstabell kan du länka två tabeller med kardinaliteten N-N. Tabellen innehåller bara sekundärnycklarna för de tabeller som ska länkas.
 
-Exempel på en relationstabell mellan grupper (**nms:grupp**) och mottagare (**nms:mottagare**).
+Exempel på en relationstabell mellan grupper (**nms:group**) och mottagare (**nms:mottagare**).
 
-Relationstabellens källschema:
+Source-schema för relationstabellen:
 
 ```
 <srcSchema name="rcpGrpRel" namespace="cus">
@@ -301,7 +301,7 @@ CREATE INDEX CusRcpGrpRel_recipientId ON CusRcpGrpRel(iRecipientId);
 
 I det här exemplet visas hur du kan använda en befintlig referenstabell som ett alternativ till inbyggda uppräkningsmekanismer för Adobe Campaign (enum, userEnum eller dbEnum).
 
-Du kan också använda en befintlig referenstabell som uppräkning i dina scheman. Detta kan du göra genom att skapa en länk mellan en tabell och referenstabellen, och genom att lägga till attributet **displayAsField=&quot;true&quot;**.
+Du kan också använda en befintlig referenstabell som uppräkning i dina scheman. Detta kan uppnås genom att skapa en länk mellan en tabell och referenstabellen och genom att lägga till attributet **displayAsField=&quot;true&quot;**.
 
 I det här exemplet innehåller referenstabellen en lista med banknamn och identifierare:
 
@@ -319,7 +319,7 @@ xtkschema="xtk:srcSchema">
 </srcSchema>
 ```
 
-Definiera en länk och lägg till **displayAsField=&quot;true&quot;** -attribut.
+I alla tabeller som använder den här referenstabellen definierar du en länk och lägger till attributet **displayAsField=&quot;true&quot;**.
 
 ```
 <element displayAsField="true" label="Bank" name="bank" target="cus:bank" type="link" noDbIndex="true"/>
@@ -331,7 +331,7 @@ Användargränssnittet visar inte en länk utan ett fält. När användarna väl
 
 * För att den ska kunna slutföras automatiskt måste du definiera en beräkningssträng i referenstabellen.
 
-* Lägg till **noDbIndex=&quot;true&quot;** i länkdefinitionen för att förhindra att Adobe Campaign skapar ett index för de värden som lagras i länkens källtabell.
+* Lägg till attributet **noDbIndex=&quot;true&quot;** i länkdefinitionen för att förhindra att Adobe Campaign skapar ett index för de värden som lagras i länkens källtabell.
 
 ## Relaterade ämnen
 

@@ -33,7 +33,7 @@ method:==( help | parametrar)
 
 ## Överordnade {#parents-10}
 
-`<methods>`  ,  `<interface />`
+`<methods>`, `<interface />`
 
 ## Barn {#children-10}
 
@@ -42,22 +42,22 @@ method:==( help | parametrar)
 
 ## Beskrivning {#description-10}
 
-Med det här elementet kan du definiera en SOAP-metod.
+Med det här elementet kan du definiera en SOAP.
 
 ## Användning och användningssammanhang {#use-and-context-of-use-7}
 
-SOAP-metoder möjliggör programprocesser.
+SOAP metoder möjliggör programprocesser.
 
 @library krävs för att deklarera en ny metod (icke-inbyggd): namnutrymmet och namnet som används för biblioteket är oberoende av namnutrymmet och namnet på schemat där deklarationen finns.
 
 ## Attributbeskrivning {#attribute-description-10}
 
-* **åtkomst (sträng)**: this-attributet definierar åtkomstkontroll för metoden. Om det här attributet saknas är identifiering obligatorisk. Tillgängliga värden är: &quot;anonymous&quot;, &quot;admin&quot; och &quot;sql&quot;.
-* **const (boolean)**: om det är aktiverat betyder det här attributet att den deklarerade metoden ändrar entiteten
+* **access (string)**: det här attributet definierar åtkomstkontroll för användning av metoden. Om det här attributet saknas är identifiering obligatorisk. Tillgängliga värden är: &quot;anonymous&quot;, &quot;admin&quot; och &quot;sql&quot;.
+* **const (boolean)**: om det aktiveras innebär det här attributet att den deklarerade metoden ändrar entiteten
 * **label (string)**: metodens etikett.
-* **bibliotek (sträng)**: den här metoden är inte inbyggd i programmet. Det här attributet tar värdet för det metodbibliotek där metoddefinitionen finns (nms:mylibrary.js).
+* **library (string)**: den här metoden är inte inbyggd i programmet. Det här attributet tar värdet för det metodbibliotek där metoddefinitionen finns (nms:mylibrary.js).
 * **name (MNTOKEN)**: unikt metodnamn.
-* **static (boolesk)**: Om det här attributet aktiveras betraktas metoden som självständig, och alla parametrar måste anges för metoden när den anropas.
+* **static (boolean)**: Om det här attributet aktiveras betraktas metoden som självständig, alla parametrar måste anges för metoden när den anropas.
 
 ## Exempel {#examples-7}
 

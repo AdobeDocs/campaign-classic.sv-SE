@@ -16,26 +16,26 @@ ht-degree: 1%
 
 
 
-Du kan inkludera element som användaren inte har någon interaktion med på formulärets sidor. Det här är statiska element som bilder, HTML, ett vågrätt fält eller en hypertextlänk. Dessa element skapas med den första knappen i verktygsfältet genom att du väljer **[!UICONTROL Static elements]**.
+Du kan inkludera element som användaren inte har någon interaktion med på formulärets sidor. Det här är statiska element som bilder, HTML, ett vågrätt fält eller en hypertextlänk. Dessa element skapas med den första knappen i verktygsfältet genom att välja **[!UICONTROL Static elements]**.
 
 ![](assets/s_ncs_admin_survey_add_static_element.png)
 
 Följande fälttyper är tillgängliga:
 
 * Värdet baseras på tidigare svar (i formulärsammanhang) eller på databasen.
-* Hypertextlänk, HTML, vågrätt fält. Se [Infoga HTML-innehåll](#inserting-html-content).
+* Hypertextlänk, HTML, vågrätt fält. Se [Infoga innehåll från HTML](#inserting-html-content).
 * Bild sparad i resursbiblioteket eller på en server som är tillgänglig för användare. Se [Infoga bilder](#inserting-images).
-* Skript som körs på klientsidan och/eller serversidan. Den måste vara skriven i JavaScript och kompatibel med de flesta webbläsare för att säkerställa korrekt körning på klientsidan.
+* Skript som körs på klientsidan och/eller serversidan. Den måste vara skriven i JavaScript och kompatibel med de flesta webbläsare för att säkerställa att den körs korrekt på klientsidan.
 
   >[!NOTE]
   >
-  >På serversidan kan skriptet använda funktionerna som definierats i [Kampanj-JSAPI-dokumentation](https://experienceleague.adobe.com/developer/campaign-api/api/index.html?lang=sv).
+  >På serversidan kan skriptet använda de funktioner som definieras i [Kampanjens JSAPI-dokumentation](https://experienceleague.adobe.com/developer/campaign-api/api/index.html?lang=sv).
 
 ## Infoga HTML-innehåll {#inserting-html-content}
 
 Du kan inkludera HTML-innehåll på en formulärsida: hypertextlänkar, bilder, formaterade stycken, videor osv.
 
-I HTML-redigeraren kan du ange det innehåll som ska infogas på formulärsidan. Klicka på för att öppna redigeraren **[!UICONTROL Static elements]** > **[!UICONTROL HTML]** .
+I HTML-redigeraren kan du ange det innehåll som ska infogas på formulärsidan. Om du vill öppna redigeraren klickar du på **[!UICONTROL Static elements]** > **[!UICONTROL HTML]** .
 
 Du kan ange och formatera innehållet direkt eller visa källkodsfönstret för att klistra in externt innehåll. Om du vill växla till källkodsläge klickar du på den första ikonen i verktygsfältet:
 
@@ -47,7 +47,7 @@ Om du vill infoga ett databasfält använder du personaliseringsknappen.
 
 >[!NOTE]
 >
->Strängarna som anges i HTML-redigeraren översätts bara om de definieras i **[!UICONTROL Texts]** underflik. Annars samlas de inte in. Mer information finns i [Översätta ett webbformulär](translating-a-web-form.md).
+>Strängarna som anges i HTML-redigeraren översätts bara om de definieras på underfliken **[!UICONTROL Texts]**. Annars samlas de inte in. Mer information finns i [Översätta ett webbformulär](translating-a-web-form.md).
 
 ### Infoga en länk {#inserting-a-link}
 
@@ -57,14 +57,14 @@ Om du vill lägga till en hypertextlänk går du till **[!UICONTROL Static eleme
 
 ![](assets/s_ncs_admin_survey_add_link.png)
 
-* The **[!UICONTROL Label]** är innehållet i hypertextlänken så som den kommer att visas på formulärsidan.
-* The **[!UICONTROL URL]** är den önskade adressen, t.ex.: [https://www.adobe.com](https://www.adobe.com) för en webbplats, eller [info@adobe.com](mailto:info@adobe.com) för att skicka ett meddelande.
-* The **[!UICONTROL Window]** I kan du välja visningsläge för länken när det gäller en plats. Du kan välja att öppna länken i ett nytt fönster, det aktuella fönstret eller i ett annat fönster.
+* **[!UICONTROL Label]** är innehållet i hypertextlänken så som den kommer att visas på formulärsidan.
+* **[!UICONTROL URL]** är den önskade adressen, t.ex.: [https://www.adobe.com](https://www.adobe.com) för en webbplats eller [info@adobe.com](mailto:info@adobe.com) för att skicka ett meddelande.
+* I fältet **[!UICONTROL Window]** kan du välja visningsläge för länken när det gäller en plats. Du kan välja att öppna länken i ett nytt fönster, det aktuella fönstret eller i ett annat fönster.
 * Du kan lägga till en knappbeskrivning enligt nedan:
 
   ![](assets/s_ncs_admin_survey_send_an_email.png)
 
-* Du kan välja att visa länken som en knapp eller som en bild. Det gör du genom att välja typ av visning i dialogrutan **[!UICONTROL Type]** fält.
+* Du kan välja att visa länken som en knapp eller som en bild. Det gör du genom att välja typ av visning i fältet **[!UICONTROL Type]**.
 
 ### Typ av länkar {#types-of-links}
 
@@ -76,29 +76,29 @@ Du kan definiera andra åtgärder för länken så att användaren kan klicka p�
 
 * Uppdatera sidan
 
-  Om du vill göra det väljer du **[!UICONTROL Refresh page]** i listrutan i **[!UICONTROL Action]** fält.
+  Det gör du genom att välja alternativet **[!UICONTROL Refresh page]** i listrutan i fältet **[!UICONTROL Action]**.
 
   ![](assets/s_ncs_admin_survey_link_refresh.png)
 
 * Visa nästa/föregående sida
 
-  Om du vill göra det väljer du **[!UICONTROL Next page]** eller **[!UICONTROL Previous page]** i listrutan i **[!UICONTROL Action]** fält.
+  Det gör du genom att välja alternativet **[!UICONTROL Next page]** eller **[!UICONTROL Previous page]** i listrutan i fältet **[!UICONTROL Action]**.
 
   ![](assets/s_ncs_admin_survey_link_next.png)
 
-  Du kan dölja **[!UICONTROL Next]** och/eller **[!UICONTROL Back]** om de ska ersättas av en länk. Se detta [page](defining-web-forms-page-sequencing.md).
+  Du kan dölja knapparna **[!UICONTROL Next]** och/eller **[!UICONTROL Back]** om de ska ersättas av en länk. Se den här [sidan](defining-web-forms-page-sequencing.md).
 
-  Länken ersätter **[!UICONTROL Next]** som används som standard.
+  Länken ersätter knappen **[!UICONTROL Next]** som används som standard.
 
   ![](assets/s_ncs_admin_survey_link_next_ex.png)
 
 * Visa en annan sida
 
-  The **[!UICONTROL Enable a transition]** gör att du kan visa en viss sida som är kopplad till den utgående övergången som är vald i **[!UICONTROL Transition]** fält.
+  Med alternativet **[!UICONTROL Enable a transition]** kan du visa en specifik sida som är associerad med den utgående övergång som är markerad i fältet **[!UICONTROL Transition]**.
 
   ![](assets/s_ncs_admin_survey_link_viral.png)
 
-  Som standard har en sida bara en utdataövergång. Om du vill skapa nya övergångar markerar du sidan och klickar sedan på knappen **[!UICONTROL Add]** knappen i **[!UICONTROL Output transitions]** enligt nedan:
+  Som standard har en sida bara en utdataövergång. Om du vill skapa nya övergångar markerar du sidan och klickar sedan på knappen **[!UICONTROL Add]** i avsnittet **[!UICONTROL Output transitions]** enligt nedan:
 
   ![](assets/s_ncs_admin_survey_add_transition.png)
 
@@ -108,7 +108,7 @@ Du kan definiera andra åtgärder för länken så att användaren kan klicka p�
 
   >[!NOTE]
   >
-  >Mer information om sidordningsföljd i ett webbformulär finns i [Definiera sidsekvenser för webbformulär](defining-web-forms-page-sequencing.md).
+  >Mer information om sidsekvenser i ett webbformulär finns i [Definiera sidsekvenser för webbformulär](defining-web-forms-page-sequencing.md).
 
 ### Anpassa HTML-innehåll {#personalizing-html-content}
 
@@ -116,11 +116,11 @@ Du kan anpassa HTML-innehållet på en formulärsida med data som registrerats p
 
 ![](assets/s_ncs_admin_survey_tag_ctx_1.png)
 
-Använd anpassningsfält för att mata in användarnamnet och det valda varumärket på nytt på nästa sida. Vilken syntax som ska användas beror på informationslagringsläget. Mer information finns i [Använda insamlade uppgifter](web-forms-answers.md#using-collected-information).
+Använd anpassningsfält för att mata in användarnamnet och det valda varumärket på nytt på nästa sida. Vilken syntax som ska användas beror på informationslagringsläget. Mer information finns i [Använda insamlad information](web-forms-answers.md#using-collected-information).
 
 >[!NOTE]
 >
->Av säkerhetsskäl anges värdet i **`<%=`** formeln ersätts med escape-tecken.
+>Av säkerhetsskäl ersätts det värde som anges i formeln **`<%=`** med escape-tecken.
 
 I det här exemplet lagras mottagarens för- och efternamn i ett databasfält, medan deras bilmärke lagras i en variabel. Meddelandet som personaliserats på sidan 2 ska ha följande syntax:
 
@@ -137,28 +137,28 @@ Detta ger följande resultat:
 
 ### Använda textvariabler {#using-text-variables}
 
-The **[!UICONTROL Text]** Med -fliken kan du skapa variabelfält som kan användas i HTML mellan &lt;%= och %>-tecken med följande syntax: **$(IDENTIFIER)**.
+På fliken **[!UICONTROL Text]** kan du skapa variabelfält som kan användas i HTML mellan &lt;%= och %> tecken med följande syntax: **$(IDENTIFIER)**.
 
 Använd den här metoden om du enkelt vill att strängarna ska vara lokaliserade. Se [Översätta ett webbformulär](translating-a-web-form.md)
 
-Du kan till exempel skapa en **Kontakt** fält som gör att du kan visa strängen &quot;Datum för senaste kontakt:&quot; för HTML-innehållet. Gör så här:
+Du kan till exempel skapa ett **kontaktfält** som gör att du kan visa strängen&quot;Datum för senaste kontakt:&quot; för HTML-innehållet. Gör så här:
 
-1. Klicka på **[!UICONTROL Text]** -fliken i HTML.
-1. Klicka på **[!UICONTROL Add]** -ikon.
-1. I **[!UICONTROL Identifier]** kolumn anger du namnet på variabeln
-1. I **[!UICONTROL Text]** -kolumnen anger du standardvärdet.
+1. Klicka på fliken **[!UICONTROL Text]** i HTML.
+1. Klicka på ikonen **[!UICONTROL Add]**.
+1. I kolumnen **[!UICONTROL Identifier]** anger du namnet på variabeln
+1. Ange standardvärdet i kolumnen **[!UICONTROL Text]**.
 
    ![](assets/s_ncs_admin_survey_html_text.png)
 
-1. I HTML infogar du den här textvariabeln via **&lt;%= $(Kontakt) %>** syntax.
+1. Infoga den här textvariabeln via syntaxen **&lt;%= $(Contact) %>** i innehållet i HTML.
 
    ![](assets/s_ncs_admin_survey_html_content.png)
 
    >[!CAUTION]
    >
-   >Om du anger dessa tecken i HTML-redigeraren visas **&lt;** och **>** fälten ersätts med deras escape-tecken. I det här fallet måste du korrigera källkoden genom att klicka på **[!UICONTROL Display source code]** ikon för textredigeraren i HTML.
+   >Om du anger dessa tecken i redigeraren i HTML ersätts fälten **&lt;** och **>** med deras escape-tecken. I det här fallet måste du korrigera källkoden genom att klicka på ikonen **[!UICONTROL Display source code]** i textredigeraren i HTML.
 
-1. Öppna **[!UICONTROL Preview]** formulärets etikett för att visa det värde som anges i HTML:
+1. Öppna formulärets **[!UICONTROL Preview]**-etikett för att visa det värde som anges i HTML:
 
    ![](assets/s_ncs_admin_survey_html_content_preview.png)
 
@@ -168,7 +168,7 @@ I det här läget kan du bara definiera texten i webbformulär en gång och hant
 
 För att bilder ska kunna inkluderas i formulär måste de sparas på en server som är tillgänglig utifrån.
 
-Välj **[!UICONTROL Static elements]** > **[!UICONTROL Image]** -menyn.
+Välj menyn **[!UICONTROL Static elements]** > **[!UICONTROL Image]**.
 
 Välj källan för bilden som ska infogas: den kan komma från det offentliga resursbiblioteket eller lagras på en extern server som är tillgänglig utifrån.
 

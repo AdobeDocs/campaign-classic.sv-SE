@@ -20,15 +20,15 @@ Använd den dedikerade guiden för att skapa en beskrivande analysrapport. Konfi
 
 ## Analysera data i databasen {#analyzing-data-in-the-database}
 
-Den beskrivande analysguiden kan startas via **[!UICONTROL Tools > Descriptive analysis]** meny: i det här fallet gäller analysen mottagare som standard (**nms:mottagare**). Det gäller alla data i Adobe Campaign-databasen.
+Den beskrivande analysguiden kan startas via menyn **[!UICONTROL Tools > Descriptive analysis]**: i det här fallet gäller analysen mottagare som standard (**nms:mottagare**). Det gäller alla data i Adobe Campaign-databasen.
 
 ![](assets/reporting_descriptive_wz_launch.png)
 
-Analysera en annan tabell än standardmottagarna en (**nms:mottagare**) klickar du på **[!UICONTROL Advanced settings...]** i det sista steget i guiden och markera tabellen som matchar dina inställningar, i det här fallet **cus:individuell**:
+Om du vill analysera en annan tabell än standardmottagarna en (**nms:receiver**) klickar du på länken **[!UICONTROL Advanced settings...]** i det sista steget i guiden och väljer den tabell som matchar dina inställningar, i det här fallet **cus:individual** :
 
 ![](assets/reporting_descriptive_other_schema.png)
 
-Om du vill producera statistik för en del av data kan du definiera ett filter: om du vill göra det klickar du på **[!UICONTROL Advanced settings...]** länka och definiera det filter som ska användas, enligt nedan:
+Om du vill producera statistik för en del av data kan du definiera ett filter: om du vill göra det klickar du på länken **[!UICONTROL Advanced settings...]** och definierar det filter som ska användas, så som visas nedan:
 
 ![](assets/reporting_descriptive_wz_filter.png)
 
@@ -44,25 +44,25 @@ Det är tillgängligt via flera noder i Adobe Campaign-trädet som pekar på mot
 
 ![](assets/reporting_descriptive_from_recipients.png)
 
-* För en uppsättning **mottagare**, välj de mottagare som ska analyseras, högerklicka och välj **[!UICONTROL Actions > Explore...]**, som visas ovan. Om ett filter används i listan med mottagare analyseras bara dess innehåll.
+* För en uppsättning med **mottagare** väljer du de mottagare som ska analyseras, högerklickar och väljer **[!UICONTROL Actions > Explore...]**, vilket visas ovan. Om ett filter används i listan med mottagare analyseras bara dess innehåll.
 
   Om du vill markera alla mottagare i mappen eller det aktuella filtret använder du kortkommandot CTRL+A. Detta innebär att även mottagare som inte visas markeras.
 
-  Ett exempel på en beskrivande analys av mottagare finns i: [Kvalitativ dataanalys](../../reporting/using/use-cases.md#qualitative-data-analysis).
+  Ett exempel på den beskrivande analysen av mottagare finns i: [Kvalitativ dataanalys](../../reporting/using/use-cases.md#qualitative-data-analysis).
 
-* När det gäller **arbetsflöde** placerar du markören på en övergång som pekar mot mottagartabellen, högerklickar och väljer **[!UICONTROL Analyze target]**. Mer information om detta finns i exemplet i [Analysera ett övergångsmål i ett arbetsflöde](../../reporting/using/use-cases.md#analyzing-a-transition-target-in-a-workflow).
-* För **listor** markerar du en eller flera listor och använder samma process som för mottagarna.
-* När det gäller **leverans**, välj de leveranser vars mål du vill analysera, högerklicka och välj **[!UICONTROL Actions > Explore the target]**, enligt nedan:
+* Placera markören på en övergång som pekar mot mottagartabellen i ett **arbetsflöde**, högerklicka och välj **[!UICONTROL Analyze target]**. Mer information finns i exemplet i [Analysera ett övergångsmål i ett arbetsflöde](../../reporting/using/use-cases.md#analyzing-a-transition-target-in-a-workflow).
+* För **listor** väljer du en eller flera listor och använder samma process som för mottagare.
+* I kontexten för en **leverans** väljer du de leveranser vars mål du vill analysera, högerklickar och väljer **[!UICONTROL Actions > Explore the target]** enligt nedan:
 
   ![](assets/reporting_descriptive_from_deliveries.png)
 
-  Här finns exempel på beskrivande analyser av leveranser: [Analysera en population](../../reporting/using/use-cases.md#analyzing-a-population) och här: [Analysera loggar för mottagarspårning](../../reporting/using/use-cases.md#analyzing-recipient-tracking-logs).
+  Här finns exempel på beskrivande analyser av leveranser: [Analysera en population](../../reporting/using/use-cases.md#analyzing-a-population) och här: [Analysera mottagarspårningsloggar](../../reporting/using/use-cases.md#analyzing-recipient-tracking-logs).
 
 ## Konfigurera den kvalitativa distributionsmallen {#configuring-the-qualitative-distribution-template}
 
-The **[!UICONTROL Qualitative distribution]** kan du skapa statistik för alla typer av data (t.ex. företagsnamn, e-postdomän).
+Med mallen **[!UICONTROL Qualitative distribution]** kan du skapa statistik för alla typer av data (t.ex. företagsnamn, e-postdomän).
 
-Konfigurationsalternativ som är tillgängliga för en rapport som skapats via **[!UICONTROL Qualitative distribution]** -mallar finns i [Visa data i tabellen](#displaying-data-in-the-table). Ett fullständigt exempel finns i [Analysera en population](../../reporting/using/use-cases.md#analyzing-a-population).
+Konfigurationsalternativ som är tillgängliga för en rapport som skapats med mallen **[!UICONTROL Qualitative distribution]** finns i [Visa data i tabellen](#displaying-data-in-the-table). Ett fullständigt exempel finns i [Analysera en population](../../reporting/using/use-cases.md#analyzing-a-population).
 
 När du använder den beskrivande analysguiden för att analysera dina data, beror de tillgängliga alternativen på de valda inställningarna. Dessa beskrivs nedan.
 
@@ -74,7 +74,7 @@ När du väljer vilka variabler som ska visas kan du definiera databindning, d.v
 
 >[!NOTE]
 >
->När fältet som berörs av beräkningen beräknas med hjälp av ett aggregat, kontrollera **[!UICONTROL The data is already aggregated]** för att förbättra prestandan.
+>När fältet som berörs av beräkningen beräknas med en mängd kontrollerar du **[!UICONTROL The data is already aggregated]** för att förbättra prestanda.
 
 Alternativen varierar beroende på fältets innehåll:
 
@@ -84,10 +84,10 @@ Alternativen varierar beroende på fältets innehåll:
   >
   >Det här alternativet bör användas med försiktighet: det kan ha stor inverkan på rapporten och på datorns prestanda.
 
-* **[!UICONTROL Auto]** : det här alternativet gör att du kan visa de n som visas oftast. De beräknas automatiskt och var och en representerar en procentandel av variablerna jämfört med antalet behållare. För numeriska värden genererar Adobe Campaign automatiskt n klasser att sortera data i.
-* **[!UICONTROL Manual]** : det här alternativet fungerar som **[!UICONTROL Auto]** förutom att du kan ange dessa värden manuellt. Klicka på **[!UICONTROL Add]** till höger om värdetabellen.
+* **[!UICONTROL Auto]** : Med det här alternativet kan du visa de n värden som representeras mest. De beräknas automatiskt och var och en representerar en procentandel av variablerna jämfört med antalet behållare. För numeriska värden genererar Adobe Campaign automatiskt n klasser att sortera data i.
+* **[!UICONTROL Manual]** : Det här alternativet fungerar som alternativet **[!UICONTROL Auto]** förutom att du kan ange dessa värden manuellt. Det gör du genom att klicka på knappen **[!UICONTROL Add]** till höger om värdetabellen.
 
-  Värdena kan initieras automatiskt av Adobe Campaign före personalisering: om du vill göra det anger du antalet behållare som du vill generera och klickar på **[!UICONTROL Initialize with]** länk, enligt nedan:
+  Värden kan initieras automatiskt av Adobe Campaign före personalisering: om du vill göra det anger du antalet behållare som du vill generera och klickar på länken **[!UICONTROL Initialize with]**, vilket visas nedan:
 
   ![](assets/reporting_descriptive_initialize.png)
 
@@ -99,7 +99,7 @@ Alternativen varierar beroende på fältets innehåll:
 
   ![](assets/reporting_descriptive_group_by_year.png)
 
-* **[!UICONTROL Modulo]** : gör att du kan skapa grupper med värden när det gäller numeriska värden. Med en modulo med värdet 10 kan du till exempel skapa ett intervall med värden som ändras tio gånger tio.
+* **[!UICONTROL Modulo]** : gör att du kan skapa grupper med värden om numeriska värden används. Med en modulo med värdet 10 kan du till exempel skapa ett intervall med värden som ändras tio gånger tio.
 
   ![](assets/reporting_descriptive_initialize_modulo.png)
 
@@ -129,9 +129,9 @@ Välj sedan önskad diagramtyp.
 
 >[!NOTE]
 >
->Du kan visa variablerna i ett diagram och i en tabell samtidigt. Om du vill göra det anger du variablerna i **[!UICONTROL Table configuration]** -fönstret. Klicka **[!UICONTROL Next]** och välj diagramtyp i diagramkonfigurationsfönstret. Om deldimensioner definieras i tabellen visas de inte i diagrammet.
+>Du kan visa variablerna i ett diagram och i en tabell samtidigt. Om du vill göra det anger du variablerna i fönstret **[!UICONTROL Table configuration]**. Klicka på **[!UICONTROL Next]** och välj diagramtyp i diagramkonfigurationsfönstret. Om deldimensioner definieras i tabellen visas de inte i diagrammet.
 
-Klicka på **[!UICONTROL Variants]** om du vill ändra diagramegenskaperna.
+Klicka på länken **[!UICONTROL Variants]** om du vill ändra diagramegenskaperna.
 
 ![](assets/reporting_descriptive_graphe_options.png)
 
@@ -141,25 +141,25 @@ Vilka alternativ som visas beror på vilken typ av diagram som är vald. För me
 
 Med guiden för beskrivande analys kan du beräkna flera typer av statistik för data. Som standard konfigureras bara ett enkelt antal.
 
-Klicka **[!UICONTROL Add]** för att skapa en ny statistik.
+Klicka på **[!UICONTROL Add]** om du vill skapa en ny statistik.
 
 ![](assets/reporting_descriptive_create_stat.png)
 
 Följande åtgärder är möjliga:
 
-* **[!UICONTROL Count]** att räkna alla värden som inte är null i det fält som ska aggregeras, inklusive dubblettvärden (i det aggregerade fältet),
-* **[!UICONTROL Average]** för att beräkna medelvärdet av värdena i ett numeriskt fält,
-* **[!UICONTROL Minimum]** beräkna det minsta värdet i ett numeriskt fält,
-* **[!UICONTROL Maximum]** för att beräkna det maximala värdet för ett numeriskt fält,
-* **[!UICONTROL Sum]** beräkna summan av värdena i ett numeriskt fält,
+* **[!UICONTROL Count]** för att räkna alla värden som inte är null i det fält som ska aggregeras, inklusive dubblettvärden (för det aggregerade fältet),
+* **[!UICONTROL Average]** för att beräkna medelvärdet för värdena i ett numeriskt fält,
+* **[!UICONTROL Minimum]** för att beräkna det minsta värdet i ett numeriskt fält,
+* **[!UICONTROL Maximum]** för att beräkna det maximala värdet för värden i ett numeriskt fält,
+* **[!UICONTROL Sum]** för att beräkna summan av värdena i ett numeriskt fält,
 * **[!UICONTROL Standard deviation]** för att beräkna hur de returnerade värdena fördelas runt genomsnittet,
 * **[!UICONTROL Row percentage distribution]** för att beräkna förhållandet mellan värdet i en kolumn och värdet i en rad (endast tillgängligt för tabeller),
 * **[!UICONTROL Column percentage distribution]** för att beräkna förhållandet mellan värdet i en rad och värdet i en kolumn (endast tillgängligt för tabeller),
-* **[!UICONTROL Total percentage distribution]** beräkna fördelningen av de mottagare som berörs av värdena,
+* **[!UICONTROL Total percentage distribution]** för att beräkna fördelningen av mottagare som berörs av värdena,
 
   ![](assets/s_ncs_user_report_wizard_026.png)
 
-* **[!UICONTROL Calculated field]** för att skapa en anpassad operator (endast tillgänglig för tabeller). The **[!UICONTROL User function]** kan du ange den beräkning som ska användas för data.
+* **[!UICONTROL Calculated field]** om du vill skapa en anpassad operator (endast tillgänglig för tabeller). I fältet **[!UICONTROL User function]** kan du ange den beräkning som ska användas för data.
 
   Exempel: Beräkna det genomsnittliga inköpsbeloppet per kund baserat på land och ursprung
 
@@ -173,11 +173,11 @@ Följande åtgärder är möjliga:
 
       ![](assets/report_compute_data_sample2.png)
 
-   1. Den här statistiken visas inte i tabellen. Du måste avmarkera **[!UICONTROL Display in the table]** alternativ för **[!UICONTROL Advanced]** -fliken.
+   1. Den här statistiken visas inte i tabellen. Du måste avmarkera alternativet **[!UICONTROL Display in the table]** på fliken **[!UICONTROL Advanced]**.
 
       ![](assets/report_compute_data_sample3.png)
 
-   1. Skapa ett nytt **[!UICONTROL Calculated field]** typstatistik och ange följande formel i **[!UICONTROL User function]** fält: **@purchase/@count**.
+   1. Skapa en ny **[!UICONTROL Calculated field]**-typstatistik och ange följande formel i fältet **[!UICONTROL User function]**: **@purchase/@count**.
 
       ![](assets/report_compute_data_sample4.png)
 
@@ -199,11 +199,11 @@ När rapporten innehåller ett diagram kan du filtrera den visade informationen 
 
 ## Konfigurera den kvantitativa distributionsmallen {#configuring-the-quantitative-distribution-template}
 
-Om du vill generera en beskrivande analys själv väljer du **Ny beskrivande analys från en mall** om det inte är inställt som standard.
+Om du vill generera en beskrivande analys själv väljer du alternativet **Ny beskrivande analys från en mall** om den inte är inställd som standard.
 
-The **[!UICONTROL Quantitative distribution]** mall som gör att du kan generera statistik om data som kan mätas eller räknas (t.ex. fakturabelopp, mottagarnas ålder).
+Mallen **[!UICONTROL Quantitative distribution]** som gör att du kan generera statistik om data som kan mätas eller räknas (t.ex. fakturabelopp, mottagarnas ålder).
 
-Konfigurationsläget för en analysrapport som skapats via **[!UICONTROL Quantitative distribution]** mall anges i ett implementeringsexempel [Kvantitativ dataanalys](../../reporting/using/use-cases.md#quantitative-data-analysis).
+Konfigurationsläget för en analysrapport som skapats med mallen **[!UICONTROL Quantitative distribution]** beskrivs i ett implementeringsexempel [Kvantitativ dataanalys](../../reporting/using/use-cases.md#quantitative-data-analysis).
 
 De alternativ som är tillgängliga när du skapar en kvantitativ rapport med hjälp av den beskrivande analysguiden beskrivs nedan.
 
@@ -215,17 +215,17 @@ Som standard erbjuder Adobe Campaign en serie statistik som ska beräknas för d
 
 Följande åtgärder är möjliga:
 
-* **[!UICONTROL Count]** att räkna alla värden som inte är null i det fält som ska aggregeras, inklusive dubblettvärden (i det aggregerade fältet),
-* **[!UICONTROL Average]** för att beräkna medelvärdet av värdena i ett numeriskt fält,
-* **[!UICONTROL Minimum]** beräkna det minsta värdet i ett numeriskt fält,
-* **[!UICONTROL Maximum]** för att beräkna det maximala värdet för ett numeriskt fält.
-* **[!UICONTROL Sum]** beräkna summan av värdena i ett numeriskt fält,
-* **[!UICONTROL Standard deviation]** för att beräkna hur de returnerade värdena fördelas runt genomsnittet.
+* **[!UICONTROL Count]** för att räkna alla värden som inte är null i det fält som ska aggregeras, inklusive dubblettvärden (för det aggregerade fältet),
+* **[!UICONTROL Average]** för att beräkna medelvärdet för värdena i ett numeriskt fält,
+* **[!UICONTROL Minimum]** för att beräkna det minsta värdet i ett numeriskt fält,
+* **[!UICONTROL Maximum]** om du vill beräkna det maximala värdet i ett numeriskt fält.
+* **[!UICONTROL Sum]** för att beräkna summan av värdena i ett numeriskt fält,
+* **[!UICONTROL Standard deviation]** för att beräkna hur returnerade värden fördelas runt genomsnittet.
 * **[!UICONTROL Number of missing values]** för att beräkna antalet numeriska fält utan definierade värden.
 * **[!UICONTROL Decile distribution]** för att distribuera de returnerade värdena så att var och en representerar 1/10 av värdena i ett numeriskt fält.
 * **[!UICONTROL Custom distribution]** för att distribuera de returnerade värdena baserat på användardefinierade tröskelvärden.
 
-  The **[!UICONTROL Detail...]** kan du redigera en statistik och vid behov anpassa beräkningen eller visningen av den:
+  Med knappen **[!UICONTROL Detail...]** kan du redigera en statistik och vid behov anpassa beräkningen eller visningen av den:
 
   ![](assets/s_ncs_user_report_wizard_030.png)
 
@@ -233,4 +233,4 @@ Följande åtgärder är möjliga:
 
   ![](assets/reporting_descriptive_view_report.png)
 
-  Om du vill göra ändringar i rapporten ska du läsa [Bearbeta en rapport](../../reporting/using/processing-a-report.md).
+  Se [Bearbeta en rapport](../../reporting/using/processing-a-report.md) om du vill göra ändringar i rapporten.

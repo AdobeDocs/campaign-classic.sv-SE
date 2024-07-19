@@ -15,10 +15,10 @@ ht-degree: 14%
 
 # AB-testning: Skapa leveransmallar {#step-3--creating-two-delivery-templates}
 
-Vi vill nu skapa två leveransmallar. Varje mall refereras i en **[!UICONTROL Email delivery]** aktivitet länkad till **[!UICONTROL Split]** aktivitet. Mer information om detta finns i [det här avsnittet](about-templates.md).
+Vi vill nu skapa två leveransmallar. Varje mall refereras i en **[!UICONTROL Email delivery]**-aktivitet som är länkad till **[!UICONTROL Split]**-aktiviteten. Mer information om detta finns i [det här avsnittet](about-templates.md).
 
-1. Gå till **[!UICONTROL Resources > Delivery template]** mapp.
-1. Duplicera **[!UICONTROL Email]** leveransmall.
+1. Gå till mappen **[!UICONTROL Resources > Delivery template]**.
+1. Duplicera leveransmallen **[!UICONTROL Email]**.
 
    ![](assets/use_case_abtesting_deliverymodel_001.png)
 

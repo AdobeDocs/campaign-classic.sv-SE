@@ -21,11 +21,11 @@ Om du vill skapa en leverans baserad på en befintlig mall väljer du mallen i l
 
 ![](assets/s_ncs_user_wizard_select_template.png)
 
-Annars klickar du på **[!UICONTROL Select link]** till höger om fältet för att bläddra i trädet.
+Annars klickar du på mappen **[!UICONTROL Select link]** till höger om fältet för att bläddra i trädet.
 
 ![](assets/s_ncs_user_wizard_choose_link.png)
 
-Välj önskad katalog i dialogrutan **[!UICONTROL Folder]** eller klicka på **[!UICONTROL Display sub-levels]** om du vill visa innehållet i katalogerna i underträden till den aktuella katalogen.
+Välj önskad katalog i fältet **[!UICONTROL Folder]** eller klicka på ikonen **[!UICONTROL Display sub-levels]** för att visa innehållet i katalogerna i underträden till den aktuella katalogen.
 
 Välj den leveransmall som ska användas och klicka på **[!UICONTROL Ok]**.
 

@@ -18,13 +18,13 @@ ht-degree: 19%
 
 Webbprogramstyper väljs när de skapas.
 
-Gå till **Kampanjer** och väljer **[!UICONTROL Web Applications]** -menyn. Klicka på knappen **[!UICONTROL Create]**. Välj den webbprogrammall som du vill använda:
+Gå till fliken **Kampanjer** och välj menyn **[!UICONTROL Web Applications]**. Klicka på knappen **[!UICONTROL Create]**. Välj den webbprogrammall som du vill använda:
 
 ![](assets/webapp_create_from_campaign.png)
 
 >[!NOTE]
 >
->Skydda alltid de sidor som kan innehålla personlig information. Se [Checklista för säkerhet och integritet](https://helpx.adobe.com/campaign/kb/acc-security.html#privacy).
+>Skydda alltid de sidor som kan innehålla personlig information. Se checklistan [Säkerhet och sekretess](https://helpx.adobe.com/campaign/kb/acc-security.html#privacy).
 
 Den här mallen avgör typen av webbprogram. Du kan skapa
 
@@ -42,18 +42,18 @@ Den här mallen avgör typen av webbprogram. Du kan skapa
 
 1. Undersökningar
 
-   Med Adobe Campaign kan du **Survey Manager** för att utforma och hantera onlineundersökningar och bearbeta resultaten: dynamiskt fältskapande, poänghantering, export av svar och dedikerade rapporter. Mer information om detta finns i [det här avsnittet](../../surveys/using/about-surveys.md).
+   Med Adobe Campaign kan du, via alternativet **Survey Manager**, utforma och hantera onlineundersökningar och bearbeta deras resultat: dynamisk fältgenerering, poänghantering, export av svar och dedikerade rapporter. Mer information om detta finns i [det här avsnittet](../../surveys/using/about-surveys.md).
 
    >[!CAUTION]
    >
-   >**Survey Manager** är en Adobe Campaign-modul som tillval. Kontrollera licensavtalet.
+   >**Undersökningshanteraren** är en Adobe Campaign-modul (tillval). Kontrollera licensavtalet.
 
 1. Facebook-program
 
-   Tack vare **Social marknadsföring** Med Adobe Campaign kan du publicera personaliserat innehåll i ett Facebook-program. Mer information om detta finns i [det här avsnittet](../../social/using/about-social-marketing.md).
+   Tack vare alternativet **Social marknadsföring** kan du med Adobe Campaign publicera personaliserat innehåll i ett Facebook-program. Mer information om detta finns i [det här avsnittet](../../social/using/about-social-marketing.md).
 
    >[!CAUTION]
    >
-   >**Social marknadsföring** är en Adobe Campaign-modul som tillval. Kontrollera licensavtalet.
+   >**Social marknadsföring** är en valfri Adobe Campaign-modul. Kontrollera licensavtalet.
 
 Sidkonfigurationsläget och de tillgängliga konfigurationerna kan vara identiska för flera webbprogramstyper. Mer information om detta finns i [det här avsnittet](about-web-forms.md).

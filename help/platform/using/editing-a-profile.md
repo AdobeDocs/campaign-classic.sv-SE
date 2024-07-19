@@ -30,9 +30,9 @@ Flikar och deras innehåll beror på din konfiguration och installerade paket.
 
 >[!CAUTION]
 >
->XML-schemat och formuläret som gäller fälten i profiltabellen är tillgängliga via **[!UICONTROL Administration > Configuration > Data schemas]** noden i Adobe Campaign-trädet. Endast expertanvändare får göra ändringar i dessa scheman.
+>XML-schemat och formuläret som gäller fälten i profiltabellen nås via noden **[!UICONTROL Administration > Configuration > Data schemas]** i Adobe Campaign-trädet. Endast expertanvändare får göra ändringar i dessa scheman.
 >
->Mer information finns i [den här sidan](../../configuration/using/about-schema-edition.md).
+>Mer information finns på [den här sidan](../../configuration/using/about-schema-edition.md).
 
 ## fliken Allmänt {#general-tab}
 
@@ -42,7 +42,7 @@ Den här skärmen innehåller alla allmänna data om den valda profilen. Den inn
 
 >[!NOTE]
 >
->När **[!UICONTROL No longer contact (by any channel)]** om du väljer det här alternativet innebär det att profilen är på blockeringslista, dvs. att profilen har uttryckt en önskan om att inte bli kontaktad (till exempel genom att klicka på en länk för att avbryta prenumerationen i ett nyhetsbrev). De kommer inte längre att vara inriktade på leveranser i någon kanal (e-post, direktreklam osv.). Mer information finns på [den här sidan](../../delivery/using/understanding-quarantine-management.md).
+>När alternativet **[!UICONTROL No longer contact (by any channel)]** har valts innebär det att profilen är på blockeringslista, dvs. att profilen har uttryckt en önskan om att inte bli kontaktad (t.ex. genom att klicka på en länk för att avbryta prenumerationen i ett nyhetsbrev). De kommer inte längre att vara inriktade på leveranser i någon kanal (e-post, direktreklam osv.). Mer information finns på [den här sidan](../../delivery/using/understanding-quarantine-management.md).
 
 ## Fliken Kontaktinformation {#contact-information-tab}
 
@@ -54,17 +54,17 @@ På den här skärmen visas adressens kvalitetsindex samt hur många fel adresse
 
 ## Fliken Annan {#other-tab}
 
-Den här skärmen innehåller användardefinierade fält som kan anpassas efter behov. Du kan också ändra fältnamnen och definiera deras format via **[!UICONTROL Field properties...]**, enligt nedan:
+Den här skärmen innehåller användardefinierade fält som kan anpassas efter behov. Du kan också ändra namn på fälten och definiera deras format via **[!UICONTROL Field properties...]**, vilket visas nedan:
 
 ![](assets/s_ncs_user_profile_others_tab.png)
 
 >[!NOTE]
 >
->Mer information om fältegenskaper och om hur du lägger till fält finns i [den här sidan](../../configuration/using/new-field-wizard.md).
+>Mer information om fältegenskaper och om hur du lägger till fält finns på [den här sidan](../../configuration/using/new-field-wizard.md).
 
 ## Fliken Listor {#lists-tab}
 
-På den här skärmen visas de grupper som den valda profilen tillhör. Klicka **[!UICONTROL Add]** om du vill prenumerera profilen på en lista. Klicka **[!UICONTROL Detail]** för att visa beskrivningen och listan med profiler i den markerade listan.
+På den här skärmen visas de grupper som den valda profilen tillhör. Klicka på **[!UICONTROL Add]** om du vill prenumerera på profilen i en lista. Klicka på **[!UICONTROL Detail]** om du vill visa beskrivningen och listan med profiler i den markerade listan.
 
 ![](assets/s_ncs_user_profile_groups_tab_details.png)
 
@@ -76,7 +76,7 @@ Den här skärmen innehåller de informationstjänster som profilen har prenumer
 
 ![](assets/s_ncs_user_profile_subscript_tab_details.png)
 
-The **[!UICONTROL Detail]** visas egenskaperna för den valda prenumerationen. The **[!UICONTROL Add]** används för att lägga till en ny prenumeration manuellt.
+Knappen **[!UICONTROL Detail]** visar egenskaperna för den valda prenumerationen. Knappen **[!UICONTROL Add]** används för att lägga till en ny prenumeration manuellt.
 
 Mer information finns på [den här sidan](../../delivery/using/managing-subscriptions.md).
 
@@ -98,4 +98,4 @@ Listan är konfigurerbar och innehåller vanligtvis: klickad URL-adress, datum o
 
 >[!NOTE]
 >
->Mer information om spårningsfunktioner finns i [den här sidan](../../delivery/using/delivery-dashboard.md).
+>Mer information om spårningsfunktioner finns på [den här sidan](../../delivery/using/delivery-dashboard.md).

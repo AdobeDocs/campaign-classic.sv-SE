@@ -20,23 +20,23 @@ Formuläret kan innehålla en eller flera sidor. Den byggs via ett diagram som l
 
 ## Om föregående sida och nästa sida {#about-previous-page-and-next-page}
 
-För varje sida kan du ta bort **[!UICONTROL Next]** eller **[!UICONTROL Previous]** knappar. Markera den aktuella sidan och välj ett alternativ **[!UICONTROL Disable next page]** eller **[!UICONTROL Disallow returning to the previous page]** .
+Du kan ta bort knapparna **[!UICONTROL Next]** eller **[!UICONTROL Previous]** för varje sida. Om du vill göra det markerar du den aktuella sidan och väljer alternativet **[!UICONTROL Disable next page]** eller **[!UICONTROL Disallow returning to the previous page]** .
 
 ![](assets/s_ncs_admin_survey_no_next_page.png)
 
-Du kan ersätta de här knapparna med länkar. Se [Infoga HTML-innehåll](static-elements-in-a-web-form.md#inserting-html-content).
+Du kan ersätta de här knapparna med länkar. Se [Infoga innehåll från HTML](static-elements-in-a-web-form.md#inserting-html-content).
 
 ## Infoga ett hopp {#inserting-a-jump}
 
-The **[!UICONTROL Jump]** ger åtkomst till en annan sida eller ett annat formulär när användaren klickar på **[!UICONTROL Next]**.
+Objektet **[!UICONTROL Jump]** ger åtkomst till en annan sida eller ett annat formulär när användaren klickar på **[!UICONTROL Next]**.
 
 Målet kan vara:
 
-* En annan sida i formuläret. Gör detta genom att välja **[!UICONTROL Internal activity]** och ange sedan önskad sida enligt nedan:
+* En annan sida i formuläret. Om du vill göra det väljer du **[!UICONTROL Internal activity]** och anger sedan önskad sida enligt nedan:
 
   ![](assets/s_ncs_admin_jump_param1.png)
 
-* Ett annat formulär. Om du vill göra det väljer du **[!UICONTROL Explicit]** och ange målformuläret.
+* Ett annat formulär. Det gör du genom att markera alternativet **[!UICONTROL Explicit]** och ange målformuläret.
 
   ![](assets/s_ncs_admin_jump_param2.png)
 
@@ -44,7 +44,7 @@ Målet kan vara:
 
   ![](assets/s_ncs_admin_jump_param3.png)
 
-* The **[!UICONTROL Comment]** Med -fliken kan du ange information som ska visas av operatorn när han/hon klickar på objektet i diagrammet.
+* På fliken **[!UICONTROL Comment]** kan du ange information som ska vara synlig för operatorn när de klickar på objektet i diagrammet.
 
   ![](assets/s_ncs_admin_survey_jump_comment.png)
 
@@ -52,15 +52,15 @@ Målet kan vara:
 
 I följande exempel vill vi konfigurera ett webbformulär som, när det godkänns, visar ett annat formulär som anges av en URL-parameter. Gör så här:
 
-1. Infoga ett hopp i slutet av ett formulär: detta ersätter **[!UICONTROL End]** box.
+1. Infoga ett hopp i slutet av ett formulär: detta ersätter rutan **[!UICONTROL End]**.
 
    ![](assets/s_ncs_admin_survey_jump_sample1.png)
 
-1. Lägg till en parameter (**nästa**) som lagras i en lokal variabel (**nästa**). Lokala variabler beskrivs i [Lagra data i en lokal variabel](web-forms-answers.md#storing-data-in-a-local-variable).
+1. Lägg till en parameter (**next**) som lagras i en lokal variabel (**next**) i formuläregenskaperna. Lokala variabler beskrivs i [Lagra data i en lokal variabel](web-forms-answers.md#storing-data-in-a-local-variable).
 
    ![](assets/s_ncs_admin_survey_jump_sample2.png)
 
-1. Redigera **[!UICONTROL Jump]** objekt, markera **[!UICONTROL Stored in a variable]** och väljer **nästa** i listrutan.
+1. Redigera objektet **[!UICONTROL Jump]**, markera alternativet **[!UICONTROL Stored in a variable]** och välj variabeln **next** i listrutan.
 
    ![](assets/s_ncs_admin_survey_jump_sample3.png)
 
@@ -70,19 +70,19 @@ I följande exempel vill vi konfigurera ett webbformulär som, när det godkänn
    https://[myserver]/webForm/APP62?&next=APP22
    ```
 
-   När användaren klickar på **[!UICONTROL Approve]** knapp, formulär **APP22** visas.
+   När användaren klickar på knappen **[!UICONTROL Approve]** visas formuläret **APP22**.
 
 ## Infoga en länk till en annan sida i formuläret {#inserting-a-link-to-another-page-of-the-form}
 
-Du kan infoga länkar till andra sidor i formuläret. Lägg till en **[!UICONTROL Link]** skriv statiskt element på sidan. Mer information finns i [Infoga en länk](static-elements-in-a-web-form.md#inserting-a-link).
+Du kan infoga länkar till andra sidor i formuläret. Om du vill göra det lägger du till ett statiskt element av typen **[!UICONTROL Link]** på sidan. Mer information finns i [Infoga en länk](static-elements-in-a-web-form.md#inserting-a-link).
 
 ## Villkorlig sidvisning {#conditional-page-display}
 
 ### Visa baserat på svar {#display-based-on-responses}
 
-The **[!UICONTROL Test]** kan du ställa in ordningsföljden för sidorna i ett formulär. Du kan definiera olika grenlinjer beroende på testresultaten. På så sätt kan du visa olika sidor beroende på vilka svar användarna ger.
+I rutan **[!UICONTROL Test]** kan du ställa in ordningsföljden för sidor i ett formulär. Du kan definiera olika grenlinjer beroende på testresultaten. På så sätt kan du visa olika sidor beroende på vilka svar användarna ger.
 
-Du kan till exempel visa en annan sida för kunder som redan beställt online och en annan för dem som gjort över tio beställningar. Det gör du genom att infoga en **[!UICONTROL Number]** skriv ett inmatningsfält där användaren kan ange hur många order han/hon har placerat.
+Du kan till exempel visa en annan sida för kunder som redan beställt online och en annan för dem som gjort över tio beställningar. Det gör du genom att infoga ett inmatningsfält av typen **[!UICONTROL Number]** på formulärets första sida, där användaren kan ange hur många order han/hon har placerat.
 
 ![](assets/s_ncs_admin_survey_test_ex0.png)
 
@@ -100,7 +100,7 @@ I formulärets diagram infogar du en testruta för att definiera villkoren. För
 
 ![](assets/s_ncs_admin_survey_test_ex2.png)
 
-Välj **[!UICONTROL Activate the default branching]** om du vill lägga till en övergång för fall där inga villkor är uppfyllda. Det här alternativet är inte nödvändigt om alla möjliga fall täcks av de definierade villkoren.
+Välj alternativet **[!UICONTROL Activate the default branching]** om du vill lägga till en övergång för fall där inga av villkoren är uppfyllda. Det här alternativet är inte nödvändigt om alla möjliga fall täcks av de definierade villkoren.
 
 Definiera sedan sidsekvensen när ett eller flera av villkoren är true, till exempel:
 
@@ -108,19 +108,19 @@ Definiera sedan sidsekvensen när ett eller flera av villkoren är true, till ex
 
 ### Visa baserat på parametrar {#display-based-on-parameters}
 
-Du kan också anpassa sidordningen enligt webbformulärets initieringsparametrar eller enligt de värden som lagras i databasen. Se [URL-parametrar för formulär](defining-web-forms-properties.md#form-url-parameters).
+Du kan också anpassa sidordningen enligt webbformulärets initieringsparametrar eller enligt de värden som lagras i databasen. Se [Parametrar för formulär-URL](defining-web-forms-properties.md#form-url-parameters).
 
 ## Lägga till skript {#adding-scripts}
 
-The **[!UICONTROL Script]** Med -objekt kan du ange ett JavaScript-skript direkt, t.ex. för att ändra värdet på ett fält, hämta data från databasen eller anropa ett Adobe Campaign-API.
+Med objektet **[!UICONTROL Script]** kan du ange ett JavaScript-skript direkt, t.ex. för att ändra ett fälts värde, hämta data från databasen eller anropa ett Adobe Campaign-API.
 
 ## Anpassa slutsidan {#personalizing-the-end-page}
 
-Du måste placera en slutsida i slutet av diagrammet. Slutsidan visas när användaren klickar på **[!UICONTROL Approve]** i webbformuläret.
+Du måste placera en slutsida i slutet av diagrammet. Slutsidan visas när användaren klickar på knappen **[!UICONTROL Approve]** i webbformuläret.
 
-Om du vill anpassa sidan dubbelklickar du **[!UICONTROL End]** och ange sidans innehåll i den centrala redigeraren.
+Om du vill anpassa sidan dubbelklickar du på **[!UICONTROL End]** och anger sidans innehåll i den centrala redigeraren.
 
 ![](assets/s_ncs_admin_survey_end_page_edit.png)
 
-* Du kan kopiera och klistra in befintligt HTML-innehåll. Det gör du genom att klicka **[!UICONTROL Display source code]** och infoga HTML-koden.
+* Du kan kopiera och klistra in befintligt HTML-innehåll. Det gör du genom att klicka på **[!UICONTROL Display source code]** och infoga HTML-koden.
 * Du kan använda en extern URL. Om du vill göra det väljer du motsvarande alternativ och anger URL-adressen till sidan som ska visas.

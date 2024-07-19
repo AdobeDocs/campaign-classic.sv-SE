@@ -22,18 +22,18 @@ ht-degree: 1%
 
 Vissa större förändringar i Adobe Campaign v7 kräver specifik konfiguration. Dessa konfigurationer kan vara nödvändiga före eller efter migrering.
 
-Under migreringen kommer **NmsRecipient** tabellen återskapas från schemadefinitionen. Alla ändringar som görs i SQL-strukturen för den här tabellen utanför Adobe Campaign går förlorade.
+Under migreringen återskapas tabellen **NmsRecipient** från schemadefinitionen. Alla ändringar som görs i SQL-strukturen för den här tabellen utanför Adobe Campaign går förlorade.
 
 Exempel på element som ska kontrolleras:
 
-* Om du har lagt till en kolumn (eller ett index) i **NmsRecipient** tabellen, men du har inte detaljerat den i schemat, kommer den inte att sparas.
-* The **tabellutrymme** som standard återfår attributets värden, dvs. de som definieras i distributionsguiden.
-* Om du har lagt till en referensvy i **NmsRecipient** måste du ta bort den innan du migrerar den.
+* Om du har lagt till en kolumn (eller ett index) i tabellen **NmsRecipient** men inte har detaljerat den i schemat, sparas inte den här kolumnen.
+* Attributet **tabellutrymme** tar tillbaka sina värden som standard, det vill säga de som definieras i distributionsguiden.
+* Om du har lagt till en referensvy i tabellen **NmsRecipient** måste du ta bort den innan du migrerar.
 
 
 ## Före migreringen {#before-the-migration}
 
-När du migrerar till Adobe Campaign v7 måste följande element konfigureras. Dessa element måste åtgärdas innan du startar **postuppgradering**.
+När du migrerar till Adobe Campaign v7 måste följande element konfigureras. Dessa element måste åtgärdas innan du startar **efteruppgraderingen**.
 
 <!--
 
@@ -59,7 +59,7 @@ När du migrerar till Adobe Campaign v7 måste följande element konfigureras. D
 
 * Lösenord
 
-  Du måste konfigurera **Administratör** och **Intern** lösenord. [Läs mer](../../migration/using/before-starting-migration.md#user-passwords)
+  Du måste konfigurera **Admin**- och **Internal**-lösenorden. [Läs mer](../../migration/using/before-starting-migration.md#user-passwords)
 
 <!--
 * Tree structure
@@ -78,7 +78,7 @@ När du migrerar till Adobe Campaign v7 måste följande element konfigureras. D
 
 ## Efter migreringen {#after-the-migration}
 
-Efter körning **postuppgradering**, kontrollera och konfigurera följande element:
+Kontrollera och konfigurera följande element efter att du har kört **postupgrade**:
 
 * Spegla sidor
 
@@ -86,11 +86,11 @@ Efter körning **postuppgradering**, kontrollera och konfigurera följande eleme
 
   Om du använde v5-anpassningsblocket i dina meddelanden kommer speglingssidan inte att visas. Adobe rekommenderar starkt att du använder det nya anpassningsblocket när du infogar en spegelsida i dina meddelanden.
 
-  Som en tillfällig lösning (och eftersom spegelsidorna fortfarande är aktiva) kan du återgå till det gamla personaliseringsblocket för att undvika det här problemet genom att ändra alternativet **[!UICONTROL XtkAcceptOldPasswords]** och ange **[!UICONTROL 1]**. Detta påverkar inte användningen av det nya v6.x-anpassningsblocket.
+  Som en tillfällig lösning (och eftersom spegelsidorna fortfarande är aktiva) kan du återgå till det gamla personaliseringsblocket för att undvika det här problemet genom att ändra alternativet **[!UICONTROL XtkAcceptOldPasswords]** och ange det som **[!UICONTROL 1]**. Detta påverkar inte användningen av det nya v6.x-anpassningsblocket.
 
 * Syntax
 
-  Om du får problem med syntaxen under efteruppgraderingen måste du tillfälligt aktivera **allowSQLInjection** i **serverConf.xml** eftersom det ger dig tid att skriva om koden. Se till att återaktivera skyddet när koden har anpassats.
+  Om du får problem med syntaxen under efteruppgraderingen måste du tillfälligt aktivera alternativet **allowSQLInjection** i filen **serverConf.xml** eftersom det ger dig tid att skriva om koden. Se till att återaktivera skyddet när koden har anpassats.
 
 * Konflikter
 
@@ -106,7 +106,7 @@ Efter körning **postuppgradering**, kontrollera och konfigurera följande eleme
 
 * Webbprogram
 
-  Om du har problem med anslutningen till dina identifierade webbprogram efter uppgraderingen måste du aktivera **allowUserPassword** och **sessionTokenOnly** i **serverConf.xml** -fil. För att undvika säkerhetsproblem måste dessa två alternativ återaktiveras när problemet har lösts.
+  Efter efteruppgraderingen måste du aktivera alternativen **allowUserPassword** och **sessionTokenOnly** i filen **serverConf.xml** om du har problem med att ansluta till dina identifierade webbprogram. För att undvika säkerhetsproblem måste dessa två alternativ återaktiveras när problemet har lösts.
 
   Beroende på vilken typ av webbprogram det är och hur de är konfigurerade måste du utföra ytterligare ändringar för att vara säker på att de fungerar som de ska.
 
@@ -137,7 +137,7 @@ Efter körning **postuppgradering**, kontrollera och konfigurera följande eleme
 
 * Interaktion
 
-  Om du **Interaktion** måste du justera alla parametrar efter migreringen.
+  Om du använder **Interaktion** måste du justera alla parametrar efter migreringen.
 
 <!--
 

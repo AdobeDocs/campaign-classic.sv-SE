@@ -18,11 +18,11 @@ Leveranser kan skapas via kampanjkontrollpanelen, ett kampanjarbetsflöde eller 
 
 När leveranser skapas från en kampanj länkas de till den här kampanjen och konsolideras på kampanjnivå.
 
-![](assets/do-not-localize/how-to-video.png)[Upptäck den här funktionen i video](#create-email-video)
+![](assets/do-not-localize/how-to-video.png)[Upptäck den här funktionen i videon](#create-email-video)
 
 ## Skapa leveranser {#creating-deliveries}
 
-Om du vill skapa en leverans länkad till en kampanj klickar du på **[!UICONTROL Add a delivery]** -länk på kampanjkontrollpanelen.
+Om du vill skapa en leverans som är länkad till en kampanj klickar du på länken **[!UICONTROL Add a delivery]** på kontrollpanelen för kampanjer.
 
 ![](assets/campaign_op_add_delivery.png)
 
@@ -30,7 +30,7 @@ De föreslagna konfigurationerna passar för de olika typerna av leverans: direk
 
 ## Starta en leverans {#starting-a-delivery}
 
-När alla godkännanden har beviljats är leveransen klar att startas. Leveransproceduren beror sedan på typen av leverans. Information om e-post- och mobilkanalsleveranser finns i [Starta en onlineleverans](#starting-an-online-delivery)och om du vill ha information om direktreklam går du till [Starta en offlineleverans](#starting-an-offline-delivery).
+När alla godkännanden har beviljats är leveransen klar att startas. Leveransproceduren beror sedan på typen av leverans. Information om leveranser via e-post eller mobilkanal finns i [Starta en onlineleverans](#starting-an-online-delivery) och för leveranser via direktreklam, se [Starta en offlineleverans](#starting-an-offline-delivery).
 
 ### Starta en onlineleverans {#starting-an-online-delivery}
 
@@ -38,13 +38,13 @@ När alla godkännandebegäranden har beviljats ändras leveransstatusen till **
 
 >[!NOTE]
 >
->Om en viss operator eller grupp av operatorer har utsetts för att starta en leverans i leveransegenskaperna, kan du även tillåta den operator som ansvarar för leveransen att bekräfta sändningen. Aktivera **NMS_ActivateOwnerConfirmation** alternativ genom att ange **1** som värdet. Alternativen hanteras från **[!UICONTROL Administration]** > **[!UICONTROL Platform]** > **[!UICONTROL Options]** i Adobe Campaign Explorer.
+>Om en viss operator eller grupp av operatorer har utsetts för att starta en leverans i leveransegenskaperna, kan du även tillåta den operator som ansvarar för leveransen att bekräfta sändningen. Aktivera alternativet **NMS_ActivateOwnerConfirmation** genom att ange **1** som värde. Alternativen hanteras från noden **[!UICONTROL Administration]** > **[!UICONTROL Platform]** > **[!UICONTROL Options]** i Adobe Campaign Utforskaren.
 >  
->Om du vill inaktivera det här alternativet anger du **0** som värdet. Bekräftelseprocessen för att skicka kommer då att fungera som standard: endast den operator eller grupp av operatorer som har angetts för sändning i leveransegenskaperna (eller en administratör) kommer att kunna bekräfta och utföra sändningen.
+>Om du vill inaktivera det här alternativet anger du **0** som värde. Bekräftelseprocessen för att skicka kommer då att fungera som standard: endast den operator eller grupp av operatorer som har angetts för sändning i leveransegenskaperna (eller en administratör) kommer att kunna bekräfta och utföra sändningen.
 
 ![](assets/s_ncs_user_edit_del_to_start_from_del.png)
 
-Informationen visas också på kampanjkontrollpanelen. The **[!UICONTROL Confirm delivery]** kan du påbörja leveransen.
+Informationen visas också på kampanjkontrollpanelen. Med länken **[!UICONTROL Confirm delivery]** kan du påbörja leveransen.
 
 ![](assets/s_ncs_user_edit_del_to_start.png)
 
@@ -56,7 +56,7 @@ När alla godkännanden har beviljats ändras leveransstatusen till **[!UICONTRO
 
 >[!NOTE]
 >
->De tekniska arbetsflödena för Campaign-paketet presenteras i [Förteckning över tekniska arbetsflöden](../../workflow/using/about-technical-workflows.md).
+>De tekniska arbetsflödena för Campaign-paketet visas i [Lista över tekniska arbetsflöden](../../workflow/using/about-technical-workflows.md).
 
 **Steg 1 - Godkännande av fil**
 
@@ -64,7 +64,7 @@ När extraheringsarbetsflödet har körts måste extraheringsfilen godkännas (f
 
 Mer information finns i [Godkänn en extraheringsfil](../../campaign/using/marketing-campaign-approval.md#approving-an-extraction-file).
 
-**Steg 2 - Godkännande av meddelandet till tjänsteleverantören**
+**Steg 2 - Godkännande av meddelandet till tjänstleverantören**
 
 * När extraheringsfilen har godkänts kan du generera ett korrektur av routerns e-postmeddelande. Det här e-postmeddelandet är konstruerat baserat på en leveransmall. Det måste godkännas.
 
@@ -75,19 +75,19 @@ Mer information finns i [Godkänn en extraheringsfil](../../campaign/using/marke
 ![](assets/s_ncs_user_file_valid_select_BAT.png)
 
 
-* Klicka på **[!UICONTROL Send a proof]** för att skapa korrektur.
+* Klicka på knappen **[!UICONTROL Send a proof]** för att skapa korrektur.
 
   Korrekturmålet måste definieras i förväg.
 
-  Du kan skapa så många korrektur som behövs. De här är tillgängliga via **[!UICONTROL Direct mail...]** leveransinformationens länk.
+  Du kan skapa så många korrektur som behövs. Dessa nås via länken **[!UICONTROL Direct mail...]** i leveransinformationen.
 
   ![](assets/s_ncs_user_file_notif_submit_proof.png)
 
-* Leveransstatusen ändras till **[!UICONTROL To submit]**. Klicka på **[!UICONTROL Submit proofs]** för att starta godkännandeprocessen.
+* Leveransstatusen ändras till **[!UICONTROL To submit]**. Klicka på knappen **[!UICONTROL Submit proofs]** för att starta godkännandeprocessen.
 
   ![](assets/s_ncs_user_file_notif_submit_proof_validation.png)
 
-* Leveransstatusen ändras till **[!UICONTROL Proof to validate]** och en knapp kan du godkänna eller avvisa.
+* Leveransstatusen ändras till **[!UICONTROL Proof to validate]** och med en knapp kan du acceptera eller avvisa godkännande.
 
   ![](assets/s_ncs_user_file_notif_supplier_link.png)
 
@@ -101,11 +101,11 @@ Mer information finns i [Godkänn en extraheringsfil](../../campaign/using/marke
 
 Filextraheringen startar två åtgärder: budgetberäkning och lagerberäkning. Budgetposterna uppdateras.
 
-* The **[!UICONTROL Budget]** kan du hantera budgeten för kampanjen. Summan av kostnadsposterna visas i **[!UICONTROL Calculates cost]** fält på kampanjens huvudflik och det program den tillhör. Beloppen återspeglas också i kampanjbudgeten.
+* På fliken **[!UICONTROL Budget]** kan du hantera budgeten för kampanjen. Summan av kostnadsposterna visas i fältet **[!UICONTROL Calculates cost]** på kampanjens huvudflik och det program som den tillhör. Beloppen återspeglas också i kampanjbudgeten.
 
   Den verkliga kostnaden kommer till slut att beräknas utifrån information som tillhandahålls av routern. Endast meddelanden som skickas faktureras.
 
-* Lager definieras i **[!UICONTROL Administration > Campaign management > Stocks]** trädnod och kostnadsstrukturer i **[!UICONTROL Administration > Campaign management > Service providers]** nod.
+* Stock definieras i noden **[!UICONTROL Administration > Campaign management > Stocks]** i trädet och kostnadsstrukturer i noden **[!UICONTROL Administration > Campaign management > Service providers]**.
 
   Lagerrader visas i lagersektionen. Om du vill definiera det ursprungliga lagret öppnar du en aktielinje. Lagret minskas varje gång en leverans sker. Du kan definiera en varningsnivå och meddelanden.
 
@@ -115,7 +115,7 @@ Filextraheringen startar två åtgärder: budgetberäkning och lagerberäkning. 
 
 ## Hantera associerade dokument {#managing-associated-documents}
 
-Du kan associera olika dokument med en kampanj: rapport, foto, webbsida, diagram osv. Dessa dokument kan ha vilket format som helst (Microsoft Word, PowerPoint, PNG, JPG, Acrobat PDF). Lär dig länka dokument med en kampanj [i det här avsnittet](../../campaign/using/marketing-campaign-assets.md).
+Du kan associera olika dokument med en kampanj: rapport, foto, webbsida, diagram osv. Dessa dokument kan ha vilket format som helst (Microsoft Word, PowerPoint, PNG, JPG, Acrobat PDF). Lär dig hur du länkar dokument med en kampanj [i det här avsnittet](../../campaign/using/marketing-campaign-assets.md).
 
 >[!IMPORTANT]
 >
@@ -131,12 +131,12 @@ I en kampanj kan du även hänvisa till andra poster, t.ex. kampanjkuponger, spe
 
 Dokument kan kopplas på kampanjnivå (sammanhangsberoende dokument) eller på programnivå (allmänna dokument).
 
-The **[!UICONTROL Documents]** innehåller:
+Fliken **[!UICONTROL Documents]** innehåller:
 
 * Listan över alla dokument som krävs för innehållet (mall, bilder osv.) som kan laddas ned lokalt av Adobe Campaign-operatörer med lämpliga rättigheter,
 * Dokument som innehåller information för routern, om sådan finns.
 
-Dokumenten är länkade till programmet eller kampanjen via **[!UICONTROL Edit > Documents]** -fliken.
+Dokumenten är länkade till programmet eller kampanjen via fliken **[!UICONTROL Edit > Documents]**.
 
 ![](assets/s_ncs_user_op_add_document.png)
 
@@ -144,11 +144,11 @@ Du kan också lägga till ett dokument i en kampanj via länken på kontrollpane
 
 ![](assets/add_a_document_in_op.png)
 
-Klicka på **[!UICONTROL Details]** -ikon för att visa innehållet i en fil och lägga till information:
+Klicka på ikonen **[!UICONTROL Details]** om du vill visa innehållet i en fil och lägga till information:
 
 ![](assets/s_ncs_user_op_add_document_details.png)
 
-På kontrollpanelen grupperas dokument som är kopplade till kampanjen i **[!UICONTROL Document(s)]** -avsnittet, som i följande exempel:
+I kontrollpanelen grupperas dokument som är kopplade till kampanjen i avsnittet **[!UICONTROL Document(s)]**, som i följande exempel:
 
 ![](assets/s_ncs_user_op_edit_document.png)
 
@@ -162,13 +162,13 @@ De kan också redigeras och ändras i den här vyn.
 
 En leveransöversikt betecknar en strukturerad uppsättning element (dokument, filialer/butiker, kampanjkuponger osv.) som skapats i företaget och för en viss kampanj.
 
-Dessa element grupperas i leveransdispositioner och en viss leveransdisposition kopplas till en leverans. Den refereras till i extraheringsfilen som skickas till **tjänstleverantör** för att bifogas leveransen. Du kan till exempel skapa en leveransdisposition som refererar till en gren och de marknadsföringsbroschyrer som används i den.
+Dessa element grupperas i leveranskonturer och en viss leveransdisposition kopplas till en leverans. Den refereras till i extraheringsfilen som skickas till **tjänstleverantören** för att kunna kopplas till leveransen. Du kan till exempel skapa en leveransdisposition som refererar till en gren och de marknadsföringsbroschyrer som används i den.
 
 För en kampanj kan du strukturera externa element som ska kopplas till leveransen enligt vissa kriterier: relaterad gren, kampanjerbjudande, inbjudan till en lokal händelse osv.
 
 #### Skapa en disposition {#creating-an-outline}
 
-Skapa en kontur genom att klicka på **[!UICONTROL Delivery outlines]** underflik i **[!UICONTROL Edit > Documents]** fliken för den berörda kampanjen.
+Om du vill skapa en disposition klickar du på underfliken **[!UICONTROL Delivery outlines]** på fliken **[!UICONTROL Edit > Documents]** i den aktuella kampanjen.
 
 >[!NOTE]
 >
@@ -178,25 +178,25 @@ Skapa en kontur genom att klicka på **[!UICONTROL Delivery outlines]** underfli
 
 ![](assets/s_ncs_user_op_composition_link.png)
 
-Klicka på Nästa **[!UICONTROL Add a delivery outline]** och skapa en hierarki av konturer för kampanjen:
+Klicka sedan på **[!UICONTROL Add a delivery outline]** och skapa en hierarki med konturer för kampanjen:
 
 1. Högerklicka på trädets rot och välj **[!UICONTROL New > Delivery outlines]**.
-1. Högerklicka på den kontur du just har skapat och markera **[!UICONTROL New > Item]** eller **[!UICONTROL New > Personalization fields]**.
+1. Högerklicka på konturen som du just har skapat och välj **[!UICONTROL New > Item]** eller **[!UICONTROL New > Personalization fields]**.
 
 ![](assets/s_ncs_user_op_add_composition.png)
 
 En disposition kan innehålla objekt och personaliseringsfält, resurser och erbjudanden:
 
 * Objekten kan till exempel vara fysiska dokument som refereras och beskrivs här och bifogas till leveransen.
-* Med personaliseringsfält kan du skapa personaliseringselement för leveranser i stället för mottagare. Det är därför möjligt att skapa värden som ska användas i leveranser för ett specifikt mål (välkomsterbjudande, rabatt osv.) De skapas i Adobe Campaign och importeras till dispositionen via **[!UICONTROL Import personalization fields...]** länk.
+* Med personaliseringsfält kan du skapa personaliseringselement för leveranser i stället för mottagare. Det är därför möjligt att skapa värden som ska användas i leveranser för ett specifikt mål (välkomsterbjudande, rabatt osv.) De skapas i Adobe Campaign och importeras till dispositionen via länken **[!UICONTROL Import personalization fields...]**.
 
   ![](assets/s_ncs_user_op_add_composition_field.png)
 
-  Du kan också skapa dem direkt i dispositionen genom att klicka på **[!UICONTROL Add]** till höger om listzonen.
+  De kan också skapas direkt i dispositionen genom att klicka på ikonen **[!UICONTROL Add]** till höger om listzonen.
 
   ![](assets/s_ncs_user_op_add_composition_field_button.png)
 
-* Resurserna är marknadsföringsresurser som genereras i kontrollpanelen för marknadsföringsresurser som nås via **[!UICONTROL Resources]** länk till **[!UICONTROL Campaigns]** -fliken.
+* Resurserna är marknadsföringsresurser som genereras i kontrollpanelen för marknadsföringsresurser som nås via länken **[!UICONTROL Resources]** på fliken **[!UICONTROL Campaigns]**.
 
   ![](assets/s_ncs_user_mkg_resource_ovv.png)
 
@@ -214,7 +214,7 @@ Den markerade dispositionen visas sedan i fönstrets nedre del. Du kan redigera 
 
 ![](assets/s_ncs_user_op_select_composition_b.png)
 
-The **[!UICONTROL Summary]** på leveransfliken visas även följande information:
+På fliken **[!UICONTROL Summary]** i leveransen visas även den här informationen:
 
 ![](assets/s_ncs_user_op_select_composition_c.png)
 
@@ -230,7 +230,7 @@ Exportmodellen måste vara kopplad till den tjänsteleverantör som valts för d
 
 >[!NOTE]
 >
->Mer information om export finns i [Komma igång](../../platform/using/get-started-data-import-export.md) -avsnitt.
+>Mer information om export finns i avsnittet [Komma igång](../../platform/using/get-started-data-import-export.md).
 
 #### Självstudievideo {#create-email-video}
 
@@ -238,4 +238,4 @@ I den här videon förklaras hur du skapar en kampanj och ett e-postmeddelande i
 
 >[!VIDEO](https://video.tv.adobe.com/v/25604?quality=12)
 
-Det finns ytterligare utbildningsvideor för Campaign [här](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=sv).
+Ytterligare utbildningsvideor för Campaign är tillgängliga [här](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=sv).

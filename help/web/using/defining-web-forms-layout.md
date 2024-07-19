@@ -20,7 +20,7 @@ ht-degree: 2%
 
 Med behållare kan du kombinera fälten på en sida och konfigurera layouten för dem, för att ordna elementen på sidan.
 
-För varje sida i formuläret skapas behållare via **[!UICONTROL Containers]** i verktygsfältet.
+För varje sida i formuläret skapas behållare med knappen **[!UICONTROL Containers]** i verktygsfältet.
 
 ![](assets/s_ncs_admin_survey_containers_add.png)
 
@@ -40,7 +40,7 @@ I exemplet ovan återges följande:
 
 Webbformulärets layout definieras sida för sida i varje behållare och kan vid behov överladdas.
 
-Sidorna är uppdelade i kolumner: varje sida innehåller ett visst antal kolumner. Varje fält på sidan upptar **n** celler. Behållare upptar också ett visst antal kolumner och fälten som de innehåller upptar ett visst antal celler.
+Sidorna är uppdelade i kolumner: varje sida innehåller ett visst antal kolumner. Varje fält på sidan tar upp **n** celler. Behållare upptar också ett visst antal kolumner och fälten som de innehåller upptar ett visst antal celler.
 
 Som standard byggs sidorna på en enda kolumn och varje element upptar en cell. Det innebär att fält visas under varandra, där var och en tar upp en hel rad, vilket visas nedan:
 
@@ -68,7 +68,7 @@ Du kan ändra formateringen i varje behållare. I vårt exempel kan du sprida in
 
 ![](assets/s_ncs_admin_survey_container_ex2_rend.png)
 
-Titeln och listan upptar en cell var (och därmed en hel rad i behållaren) och kryssrutan sträcker sig över två celler. Antalet celler som är kopplade till indatafältet definieras i **[!UICONTROL General]** eller **[!UICONTROL Advanced]** -tabb, beroende på fälttyp:
+Titeln och listan upptar en cell var (och därmed en hel rad i behållaren) och kryssrutan sträcker sig över två celler. Antalet celler som är kopplade till indatafältet definieras på fliken **[!UICONTROL General]** eller fliken **[!UICONTROL Advanced]** enligt fälttypen:
 
 ![](assets/s_ncs_admin_survey_container_ex2.png)
 
@@ -78,11 +78,11 @@ Du kan definiera justeringen av fält och etiketter i formuläret.
 
 Som standard ärvs visningsparametrarna för fält och annat innehåll på sidan från formulärets allmänna konfiguration, sidans konfiguration eller den överordnade behållarens konfiguration, om sådan finns.
 
-De globala visningsparametrarna för hela formuläret anges i rutan för formuläregenskaper. The **[!UICONTROL Rendering]** kan du välja placering för etiketter.
+De globala visningsparametrarna för hela formuläret anges i rutan för formuläregenskaper. På fliken **[!UICONTROL Rendering]** kan du välja placering för etiketter.
 
 ![](assets/s_ncs_admin_survey_label_position.png)
 
-Den här positionen kan överladdas för varje sida, varje behållare och varje fält via **[!UICONTROL Advanced]** -fliken.
+Den här positionen kan överladdas för varje sida, varje behållare och varje fält via fliken **[!UICONTROL Advanced]**.
 
 Följande justeringar stöds:
 

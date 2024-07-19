@@ -19,7 +19,7 @@ Med Adobe Campaign Classic medföljer en uppsättning moduler och alternativ. Vi
 
 På den här sidan visas de viktigaste skillnaderna mellan värdbaserade (Managed Services) och lokala distributioner. Specifikationer för hybriddriftsättningar beror på vilka element som ligger hos Adobe och hos er.
 
-De olika värdmodellerna introduceras [i det här avsnittet](../../installation/using/hosting-models.md).
+De olika värdmodellerna introduceras [ i det här avsnittet](../../installation/using/hosting-models.md).
 
 ## Tillgänglighet per distributionsmodell {#capability-matrix}
 
@@ -41,7 +41,7 @@ De olika värdmodellerna introduceras [i det här avsnittet](../../installation/
 
 ## Federerad dataåtkomst{#fda}
 
-Adobe Campaign tillhandahåller **Åtkomst till federerade data** (FDA) om du vill bearbeta information som lagras i en eller flera externa databaser: du kan komma åt externa data utan att ändra strukturen för Adobe Campaign-data. [Läs mer](../../installation/using/about-fda.md)
+Adobe Campaign tillhandahåller alternativet **FDA (Federated Data Access**) för att bearbeta information som lagras i en eller flera externa databaser: du kan få åtkomst till externa data utan att ändra strukturen för Adobe Campaign-data. [Läs mer](../../installation/using/about-fda.md)
 
 >[!CAUTION]
 >

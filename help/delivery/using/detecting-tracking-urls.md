@@ -16,7 +16,7 @@ ht-degree: 2%
 
 ## Exempel på icke-identifiering
 
-`<%= getURL("http://mynewsletter.com") %>` fungerar och skickar det faktiska innehållet på webbsidan via e-post till mottagarna. Men ingen länk spåras. Orsaken till detta är att MTA verkställer `"<%=getURL(..."` för varje e-postmeddelande innan det skickas. Det kan vara olika för varje mottagare, så Adobe Campaign kan inte känna till URL:erna för att spåra och tilldela dem ett tagg-ID.
+`<%= getURL("http://mynewsletter.com") %>` fungerar och skickar det faktiska innehållet på webbsidan via e-post till mottagarna. Men ingen länk spåras. Orsaken till detta är att MTA kör `"<%=getURL(..."` för varje e-postmeddelande innan det skickas. Det kan vara olika för varje mottagare, så Adobe Campaign kan inte känna till URL:erna för att spåra och tilldela dem ett tagg-ID.
 
 När sidan som ska hämtas är densamma för alla mottagare är det bästa sättet att göra följande:
 
@@ -26,7 +26,7 @@ I så fall hämtas sidan under analysen, innan spårningsidentifieringen. Det g�
 
 ## Rekommenderat mönster
 
-Efter bearbetning `<%@` instruktionerna har URL:en som ska spåras följande syntax: `<a href="http://myurl.com/a.php?param1=aaa&param2=<%=escapeUrl(recipient.xxx)%>&param3=<%=escapeUrl(recipient.xxx)%>">`
+Efter bearbetning av `<%@`-instruktioner har URL:en som ska spåras följande syntax: `<a href="http://myurl.com/a.php?param1=aaa&param2=<%=escapeUrl(recipient.xxx)%>&param3=<%=escapeUrl(recipient.xxx)%>">`
 
 >[!IMPORTANT]
 >
@@ -36,7 +36,7 @@ Efter bearbetning `<%@` instruktionerna har URL:en som ska spåras följande syn
 
 När du lägger till anpassade länkar till ditt innehåll bör du alltid undvika att ha en personalisering i värdnamnsdelen av webbadressen för att undvika eventuella säkerhetsbrister. Läs mer på [den här sidan](../../installation/using/privacy.md#url-personalization).
 
-Till exempel `<a href="http://<%=myURL%>">` syntaxen är **inte säker** och måste undvikas.
+Syntaxen `<a href="http://<%=myURL%>">` är till exempel **inte säker** och måste undvikas.
 
 * Om du använder den här syntaxen kan det leda till säkerhetsproblem om länken som genereras av Adobe Campaign innehåller en eller flera parametrar.
 * Tidy kan korrigera vissa av länkarna felaktigt, vilket kan hända slumpmässigt. Det typiska symtomet är HTML som visas i e-postkorrekturet men inte i förhandsgranskningen.

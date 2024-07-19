@@ -17,24 +17,24 @@ ht-degree: 3%
 
 Med de här aktiviteterna kan du skapa ett eller flera mål genom att definiera uppsättningar och dela eller kombinera dem med hjälp av korsnings-, union- eller exkluderingsåtgärder.
 
-* **Fråga**: låter dig köra en fråga. Se [Skapa en fråga](query.md#creating-a-query).
-* **Inkrementell fråga**: låter dig utföra en fråga och planera dess körning. Se [Inkrementell fråga](incremental-query.md) -avsnitt.
-* **Läslista**: gör att du kan använda data i en lista. Se [Använda data från en lista: Läslista](../../platform/using/import-export-workflows.md#using-data-from-a-list--read-list) -avsnitt.
-* **Union**: gör att du kan gruppera resultatet av flera aktiviteter till ett enda mål. Se [Union](union.md) -avsnitt.
-* **Skärningspunkt**: gör att du bara kan extrahera populationen med samma inkommande aktivitetsresultat. Se [Skärningspunkt](intersection.md) -avsnitt.
-* **Uteslutning**: gör att du kan skapa ett mål baserat på ett huvudmål som ett eller flera andra mål extraheras från. Se [Uteslutning](exclusion.md) -avsnitt.
-* **Dela**: låter dig dela upp ett mål i flera deluppsättningar. Se [Dela](split.md) -avsnitt.
-* **Celler**: ger en vy över de olika delmängderna i form av datakolumner och underlättar manipuleringen av dessa delmängder när det finns många sådana. Mer information finns i [Celler](cells.md) -avsnitt.
-* **Erbjudanden per cell**: låter dig länka olika erbjudanden till varje delmängd av en population. Se [Erbjudanden per cell](offers-by-cell.md) -avsnitt.
-* **Enkätsvar**: kan du återställa information som samlats in under en undersökning. Mer information om detta hittar du i det här [avsnittet](../../surveys/using/getting-started-with-surveys.md).
-* **Leveransöversikt**: låter dig lägga till en leveransdisposition. Se [Leveransöversikt](../../workflow/using/delivery-outline.md) -avsnitt.
-* **Berikning**: gör att du kan lägga till kolumner i en fungerande tabell eller ett arbetsflöde. Se [Berikning](../../workflow/using/enrichment.md) -avsnitt.
-* **Redigera schema**: gör att du kan omforma, standardisera och vid behov förbättra data. Mer information finns i [Redigera schema](../../workflow/using/edit-schema.md) -avsnitt.
-* **Erbjudandemotor**: låter dig anropa interaktionserbjudandemotorn i ett arbetsflöde. Se [Erbjudandemotor](../../workflow/using/offer-engine.md) -avsnitt.
-* **Deduplicering**: gör att du kan ta bort dubbletter från inkommande aktiviteter. Se [Deduplicering](../../workflow/using/deduplication.md) -avsnitt.
-* **Ändra dimension**: gör att du kan ändra målinriktningsdimensionen under arbetsflödets konstruktionscykel. Se [Ändra dimension](../../workflow/using/change-dimension.md) -avsnitt.
-* **Prenumerationstjänster**: låter dig hantera målprenumerationer och avbeställningar av en informationstjänst. Se [Prenumerationstjänster](../../workflow/using/subscription-services.md) -avsnitt.
-* **Listuppdatering**: registrerar resultatet av inkommande aktiviteter i en lista. Se [Listuppdatering](../../workflow/using/list-update.md) -avsnitt.
-* **Uppdatera data**: gör att du kan uppdatera data i databasen i stor omfattning. Se [Uppdatera data](../../workflow/using/update-data.md) -avsnitt.
-* **CRM-koppling**: låter dig konfigurera synkroniseringen mellan Adobe Campaign och en CRM. Se [CRM Connector](../../workflow/using/crm-connector.md) -avsnitt.
-* **[!UICONTROL Change data source]**: låter dig ändra datakällan för ett arbetsflöde **[!UICONTROL Working table]**. Detta ger större flexibilitet att hantera data över olika datakällor, som FDA, FFDA och lokala databaser. Se [CRM Connector](../../workflow/using/change-data-source.md) -avsnitt.
+* **Fråga**: Här kan du köra en fråga. Se [Skapa en fråga](query.md#creating-a-query).
+* **Inkrementell fråga**: gör att du kan utföra en fråga och planera dess körning. Se avsnittet [Inkrementell fråga](incremental-query.md).
+* **Läslista**: gör att du kan använda data i en lista. Se avsnittet [Använda data från en lista: ](../../platform/using/import-export-workflows.md#using-data-from-a-list--read-list).
+* **Förening**: gör att du kan gruppera resultatet av flera aktiviteter till ett enda mål. Se avsnittet [Förening](union.md).
+* **Skärning**: gör att du bara kan extrahera populationen med samma inkommande aktivitetsresultat. Se avsnittet [Skärningspunkt](intersection.md).
+* **Uteslutning**: gör att du kan skapa ett mål baserat på ett huvudmål som ett eller flera andra mål extraheras från. Se avsnittet [Uteslutning](exclusion.md).
+* **Dela**: gör att du kan dela ett mål i flera deluppsättningar. Se avsnittet [Dela](split.md).
+* **Celler**: ger en vy över de olika delmängderna i form av datakolumner och underlättar manipuleringen av dessa delmängder när det finns många av dem. Mer information finns i avsnittet [Celler](cells.md).
+* **Erbjudanden per cell**: gör att du kan länka olika erbjudanden till varje delmängd av en population. Se avsnittet [Erbjudanden per cell](offers-by-cell.md).
+* **Undersökningssvar**: Du kan återställa information som samlats in under en undersökning. Mer information om detta hittar du i det här [avsnittet](../../surveys/using/getting-started-with-surveys.md).
+* **Leveransdisposition**: gör att du kan lägga till en leveransdisposition. Se avsnittet [Leveransdisposition](../../workflow/using/delivery-outline.md).
+* **Berikning**: gör att du kan lägga till kolumner i en arbetstabell eller ett arbetsflöde. Se avsnittet [Berikning](../../workflow/using/enrichment.md).
+* **Redigera schema**: gör att du kan omforma, standardisera och vid behov förbättra data. Mer information finns i avsnittet [Redigera schema](../../workflow/using/edit-schema.md).
+* **Erbjudandemotor**: gör att du kan anropa interaktionserbjudandemotorn i ett arbetsflöde. Se avsnittet [Erbjudandemotor](../../workflow/using/offer-engine.md).
+* **Deduplicering**: gör att du kan ta bort dubbletter från inkommande aktiviteter. Se avsnittet [Deduplicering](../../workflow/using/deduplication.md).
+* **Ändra dimension**: gör att du kan ändra måldimensionen under arbetsflödets konstruktionscykel. Se avsnittet [Ändra dimension](../../workflow/using/change-dimension.md).
+* **Prenumerationstjänster**: gör att du kan hantera målprenumerationer och avbryta prenumerationer på en informationstjänst. Se avsnittet [Prenumerationstjänster](../../workflow/using/subscription-services.md).
+* **Listuppdatering**: registrerar resultatet av inkommande aktiviteter i en lista. Se avsnittet [Listuppdatering](../../workflow/using/list-update.md).
+* **Uppdatera data**: gör att du kan uppdatera data i databasen i stor skala. Se avsnittet [Uppdatera data](../../workflow/using/update-data.md).
+* **CRM-koppling**: gör att du kan konfigurera synkroniseringen mellan Adobe Campaign och CRM. Se avsnittet [CRM Connector](../../workflow/using/crm-connector.md).
+* **[!UICONTROL Change data source]**: låter dig ändra datakällan för ett arbetsflöde **[!UICONTROL Working table]**. Detta ger större flexibilitet att hantera data över olika datakällor, som FDA, FFDA och lokala databaser. Se avsnittet [CRM Connector](../../workflow/using/change-data-source.md).

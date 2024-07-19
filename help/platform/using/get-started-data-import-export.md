@@ -39,7 +39,7 @@ Mer information om detta finns i [det här avsnittet](../../platform/using/impor
 
 <img src="assets/do-not-localize/icon_templates.svg" width="60px">
 
-Dessutom innehåller Campaign Classicen **allmän import och export** som gör att du kan skapa tillfälliga import- eller exportjobb.
+Dessutom innehåller Campaign Classic **generisk import och export** som gör att du kan skapa tillfälliga import- eller exportjobb.
 
 Import och export konfigureras i dedikerade mallar som du kan konfigurera och använda för att starta och övervaka import- och exportjobb.
 
@@ -65,6 +65,6 @@ Mer information om detta hittar du i dessa avsnitt.
 
 <img src="assets/do-not-localize/icon_bestpractices.svg" width="60px">
 
-Du bör följa flera [bästa praxis](../../platform/using/import-export-best-practices.md) när du importerar och exporterar för att säkerställa att data är konsekventa i databasen och undvika vanliga fel vid uppdatering och export.
+Du bör följa flera [bästa praxis](../../platform/using/import-export-best-practices.md) när du utför import- och exportåtgärder för att säkerställa att data är konsekventa i databasen och undvika vanliga fel vid uppdatering och export.
 
 Dessutom finns rekommendationer och vanliga problem med användningen av SFTP-servrar i [det här avsnittet](../../platform/using/sftp-server-usage.md).

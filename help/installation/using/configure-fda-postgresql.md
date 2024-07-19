@@ -15,7 +15,7 @@ ht-degree: 1%
 
 
 
-Använd kampanj **Åtkomst till federerade data** (FDA) om du vill bearbeta information som lagras i en extern PostgreSQL-databas.
+Använd alternativet **FDA (Federated Data Access**) för Campaign om du vill bearbeta information som lagras i en extern PostgreSQL-databas.
 
 ## PostgreSQL-konfiguration {#postgresql-configuration}
 
@@ -23,13 +23,13 @@ Du måste först installera Libpq. Med Libpq kan klientprogram skicka frågor ti
 
 Följ stegen nedan för att konfigurera åtkomst till [!DNL PostgreSQL]:
 
-* För CentOS kör du följande kommando `sudo apt-get -y install libpq-dev`.
+* Kör följande kommando `sudo apt-get -y install libpq-dev` för CentOS.
 
-* För Linux kör du följande kommando `yum install postgresql-devel`.
+* Kör följande kommando `yum install postgresql-devel` för Linux.
 
-* För Windows implementeras Libpq via `libpq.dll` som ingår i Adobe Campaign-installationen.
+* För Windows implementeras Libpq via `libpq.dll`, som ingår i Adobe Campaign-installationen.
 
-I Adobe Campaign kan du sedan konfigurera [!DNL PostgreSQL] externt konto. Mer information om hur du konfigurerar ditt externa konto finns i [det här avsnittet](#postgresql-external).
+I Adobe Campaign kan du sedan konfigurera ditt [!DNL PostgreSQL]-externa konto. Mer information om hur du konfigurerar ditt externa konto finns i [det här avsnittet](#postgresql-external).
 
 ## PostgreSQL-externt konto {#postgresql-external}
 
@@ -37,21 +37,21 @@ I Adobe Campaign kan du sedan konfigurera [!DNL PostgreSQL] externt konto. Mer i
 >
 > PostgreSQL finns i CentOS 7 och 6.
 
-Du måste skapa en [!DNL PostgreSQL] externt konto för att ansluta Campaign-instansen till [!DNL PostgreSQL] extern databas.
+Du måste skapa ett externt [!DNL PostgreSQL]-konto för att ansluta Campaign-instansen till din [!DNL PostgreSQL]-externa databas.
 
-1. Från kampanj **[!UICONTROL Explorer]**, klicka **[!UICONTROL Administration]** &#39;>&#39; **[!UICONTROL Platform]** &#39;>&#39; **[!UICONTROL External accounts]**.
+1. Klicka på **[!UICONTROL Administration]** > **[!UICONTROL Platform]** > **[!UICONTROL External accounts]** i Campaign **[!UICONTROL Explorer]**.
 
 1. Klicka på **[!UICONTROL New]**.
 
-1. Välj **[!UICONTROL External database]** som ditt externa konto **[!UICONTROL Type]**.
+1. Välj **[!UICONTROL External database]** som det externa kontots **[!UICONTROL Type]**.
 
-1. Under **[!UICONTROL Configuration]**, markera [!DNL PostgreSQL, Greenplum] från **[!UICONTROL Type]** nedrullningsbar meny.
+1. Under **[!UICONTROL Configuration]** väljer du [!DNL PostgreSQL, Greenplum] i listrutan **[!UICONTROL Type]**.
 
    ![](assets/postgresql_1.png)
 
-1. Konfigurera **[!UICONTROL PostgreSQL]** autentisering av externt konto:
+1. Konfigurera autentiseringen av det externa kontot **[!UICONTROL PostgreSQL]**:
 
-   * **[!UICONTROL Server]**: URL för [!DNL PostgreSQL] server.
+   * **[!UICONTROL Server]**: URL för servern [!DNL PostgreSQL].
 
    * **[!UICONTROL Account]**: Användarens namn.
 
@@ -61,15 +61,15 @@ Du måste skapa en [!DNL PostgreSQL] externt konto för att ansluta Campaign-ins
 
    * **[!UICONTROL Working schema]**: Namnet på ditt arbetsschema. [Läs mer](https://www.postgresql.org/docs/current/ddl-schemas.html)
 
-   * **[!UICONTROL Timezone]**: Tidszon inställd på [!DNL PostgreSQL]. [Läs mer](https://www.postgresql.org/docs/7.2/timezones.html)
+   * **[!UICONTROL Timezone]**: Tidszonen har angetts i [!DNL PostgreSQL]. [Läs mer](https://www.postgresql.org/docs/7.2/timezones.html)
 
-1. Klicka på **[!UICONTROL Parameters]** tabben **[!UICONTROL Deploy functions]** för att skapa funktioner.
+1. Klicka på fliken **[!UICONTROL Parameters]** och sedan på knappen **[!UICONTROL Deploy functions]** för att skapa funktioner.
 
    >[!NOTE]
    >
-   >För att alla funktioner ska vara tillgängliga måste du skapa Adobe Campaign SQL-funktionerna i fjärrdatabasen. Mer information finns i [page](../../configuration/using/adding-additional-sql-functions.md).
+   >För att alla funktioner ska vara tillgängliga måste du skapa Adobe Campaign SQL-funktionerna i fjärrdatabasen. Mer information finns på [sidan](../../configuration/using/adding-additional-sql-functions.md).
 
-1. Klicka **[!UICONTROL Save]** när konfigurationen är klar.
+1. Klicka på **[!UICONTROL Save]** när konfigurationen är klar.
 
 Kopplingen stöder följande alternativ:
 

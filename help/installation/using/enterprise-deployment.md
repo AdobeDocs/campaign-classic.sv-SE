@@ -77,17 +77,17 @@ Högre kostnader för maskinvara och administration.
 I följande exempel är parametrarna för instansen:
 
 * Instansens namn: demo
-* DNS-mask: tracking.campaign.net&#42;, console.campaign.net&#42; (programservern hanterar URL:er för klientkonsolanslutningar och rapporter och för spegelsidor och sidor som inte kan prenumereras)
+* DNS-mask: tracking.campaign.net&#42;, console.campaign.net&#42; (programservern hanterar URL:er för klientkonsolanslutningar och rapporter samt för spegelsidor och avprenumerationssidor)
 * Språk: Engelska
 * Databas: kampanj:demo@dbsrv
 
 Stegen för installation av den första servern är:
 
-1. Följ installationsproceduren för Adobe Campaign-servern: **nlserver** paket i Linux eller **setup.exe** i Windows.
+1. Följ installationsproceduren för Adobe Campaign-servern: **nlserver**-paket i Linux eller **setup.exe** i Windows.
 
    Mer information finns i [Krav för Campaign-installation i Linux](../../installation/using/prerequisites-of-campaign-installation-in-linux.md) (Linux) och [Krav för Campaign-installation i Windows](../../installation/using/prerequisites-of-campaign-installation-in-windows.md) (Windows).
 
-1. När Adobe Campaign-servern är installerad startar du programservern (webben) med kommandot **nlserver web -tomcat** (Med webbmodulen kan du starta Tomcat i fristående läge för webbserver som lyssnar på port 8080) och se till att Tomcat startar korrekt:
+1. När Adobe Campaign-servern har installerats startar du programservern (webben) med kommandot **nlserver web -tomcat** (med webbmodulen kan du starta Tomcat i fristående webbserverläge (avlyssning på port 8080) och se till att Tomcat startar korrekt:
 
    ```sql
    12:08:18 >   Application server for Adobe Campaign Classic (7.X YY.R build XXX@SHA1) of DD/MM/YYYY
@@ -99,16 +99,16 @@ Stegen för installation av den första servern är:
 
    >[!NOTE]
    >
-   >Första gången webbmodulen körs skapas **config-default.xml** och **serverConf.xml** filer i **conf** under installationsmappen. Alla parametrar som är tillgängliga i **serverConf.xml** finns listade i [section](../../installation/using/the-server-configuration-file.md).
+   >Första gången webbmodulen körs skapas filerna **config-default.xml** och **serverConf.xml** i katalogen **conf** i installationsmappen. Alla parametrar som är tillgängliga i **serverConf.xml** listas i det här [avsnittet](../../installation/using/the-server-configuration-file.md).
 
-   Tryck **Ctrl+C** för att stoppa servern.
+   Tryck på **Ctrl+C** för att stoppa servern.
 
    Mer information finns i följande avsnitt:
 
-   * För Linux: [Serverns första start](../../installation/using/installing-packages-with-linux.md#first-start-up-of-the-server)
-   * För Windows: [Serverns första start](../../installation/using/installing-the-server.md#first-start-up-of-the-server)
+   * För Linux: [Första starten av servern](../../installation/using/installing-packages-with-linux.md#first-start-up-of-the-server)
+   * För Windows: [Första starten av servern](../../installation/using/installing-the-server.md#first-start-up-of-the-server)
 
-1. Ändra **internal** lösenord med kommandot:
+1. Ändra det **interna** lösenordet med kommandot:
 
    ```
    nlserver config -internalpassword
@@ -116,7 +116,7 @@ Stegen för installation av den första servern är:
 
    Mer information om detta finns i [det här avsnittet](../../installation/using/configuring-campaign-server.md#internal-identifier).
 
-1. Skapa **demo** instans med DNS-masker för spårning (i det här fallet **tracking.campaign.net**) och åtkomst till klientkonsoler (i det här fallet **console.campaign.net**). Det finns två sätt att göra detta:
+1. Skapa instansen **demo** med DNS-masker för spårning (i det här fallet **tracking.campaign.net**) och åtkomst till klientkonsoler (i det här fallet **console.campaign.net**). Det finns två sätt att göra detta:
 
    * Skapa instansen via konsolen:
 
@@ -134,7 +134,7 @@ Stegen för installation av den första servern är:
 
      Mer information finns i [Skapa en instans](../../installation/using/command-lines.md#creating-an-instance).
 
-1. Redigera **config-demo.xml** filen (skapad med föregående kommando och placerad intill **config-default.xml** -fil), kontrollera att **mta** (leverans), **wfserver** (arbetsflöde), **inMail** (återbundna mejl) och **stat** (statistik) processer aktiveras och sedan konfigureras adressen för **app** statistikserver:
+1. Redigera filen **config-demo.xml** (skapad via föregående kommando och placerad intill filen **config-default.xml**), kontrollera att filen **mta** (leverans), **wfserver** (arbetsflöde), **inMail** (återbundna e-postmeddelanden) och **stat** (2}) statistik) aktiveras och därefter konfigureras adressen för **app** -statistikservern:
 
    ```xml
    <?xml version='1.0'?>
@@ -154,7 +154,7 @@ Stegen för installation av den första servern är:
 
    Mer information om detta finns i [det här avsnittet](../../installation/using/configuring-campaign-server.md#enabling-processes).
 
-1. Redigera **serverConf.xml** och ange leveransdomänen och ange sedan IP-adresserna (eller värdadresserna) för de DNS-servrar som används av MTA-modulen för att svara på DNS-frågor av MX-typ.
+1. Redigera filen **serverConf.xml** och ange leveransdomänen. Ange sedan IP-adresserna (eller värdadresserna) för de DNS-servrar som används av MTA-modulen för att svara på DNS-frågor av MX-typ.
 
    ```xml
    <dnsConfig localDomain="campaign.com" nameServers="192.0.0.1, 192.0.0.2"/>
@@ -162,17 +162,17 @@ Stegen för installation av den första servern är:
 
    >[!NOTE]
    >
-   >The **nameServers** parametrar används bara i Windows.
+   >Parametrarna **nameServers** används bara i Windows.
 
    Mer information finns i [Kampanjserverkonfiguration](../../installation/using/configuring-campaign-server.md).
 
-1. Kopiera installationsprogrammet för klientkonsolen **setup-client-7.XX**, **YYYY.exe** till **/datakit/nl/eng/jsp** mapp. [Läs mer](../../installation/using/client-console-availability-for-windows.md).
+1. Kopiera klientkonsolens installationsprogram **setup-client-7.XX**, **YYY.exe** till mappen **/data/nl/eng/jsp** . [Läs mer](../../installation/using/client-console-availability-for-windows.md).
 
-1. Starta Adobe Campaign-servern (**net start nlserver6** i Windows, **/etc/init.d/nlserver6 - start** i Linux) och köra kommandot **nlserver pdump** en gång till för att kontrollera om det finns alla aktiverade moduler.
+1. Starta Adobe Campaign-servern (**net start nlserver6** i Windows, **/etc/init.d/nlserver6 start** i Linux) och kör kommandot **nlserver pdump** en gång till för att kontrollera om alla aktiverade moduler finns.
 
    >[!NOTE]
    >
-   >Från och med 20.1 rekommenderar vi att du använder följande kommando i stället (för Linux): **systemctl start nlserver**
+   >Från 20.1 rekommenderar vi att du använder följande kommando i stället (för Linux): **systemctl start nlserver**
 
 
    ```sql
@@ -188,11 +188,11 @@ Stegen för installation av den första servern är:
 
    Med det här kommandot kan du även se version och versionsnummer för den Adobe Campaign-server som är installerad på datorn.
 
-1. Testa **nlserver web** modul som använder URL: [https://console.campaign.net/nl/jsp/logon.jsp](https://tracking.campaign.net/r/test).
+1. Testa webbmodulen **nlserver** med URL:en: [https://console.campaign.net/nl/jsp/logon.jsp](https://tracking.campaign.net/r/test).
 
    Den här URL:en ger dig åtkomst till hämtningssidan för klientinstallationsprogrammet. [Läs mer](../../installation/using/client-console-availability-for-windows.md).
 
-   Ange **internal** inloggning och tillhörande lösenord när du kommer till åtkomstkontrollsidan.
+   Ange inloggningsnamnet **internal** och det associerade lösenordet när du kommer till åtkomstkontrollsidan.
 
    ![](assets/s_ncs_install_access_client.png)
 
@@ -205,14 +205,14 @@ Använd följande steg:
 
    Vi behåller samma instansnamn som programservern 1.
 
-1. Ändra **internal** på samma sätt som programserver 1.
+1. Ändra **internal** till samma som programserver 1.
 1. Länka databasen till instansen:
 
    ```
    nlserver config -setdblogin:PostgreSQL:campaign:demo@dbsrv -instance:demo
    ```
 
-1. Redigera **config-demo.xml** filen (skapad med föregående kommando och placerad intill **config-default.xml** -fil), kontrollera att **mta** (leverans), **wfserver** (arbetsflöde), **inMail** (återbundna mejl) och **stat** (statistik) processer aktiveras och sedan konfigureras adressen för **app** statistikserver:
+1. Redigera filen **config-demo.xml** (skapad via föregående kommando och placerad intill filen **config-default.xml**), kontrollera att filen **mta** (leverans), **wfserver** (arbetsflöde), **inMail** (återbundna e-postmeddelanden) och **stat** (2}) statistik) aktiveras och därefter konfigureras adressen för **app** -statistikservern:
 
    ```xml
    <?xml version='1.0'?>
@@ -232,7 +232,7 @@ Använd följande steg:
 
    Mer information om detta finns i [det här avsnittet](../../installation/using/configuring-campaign-server.md#enabling-processes).
 
-1. Redigera **serverConf.xml** och fylla i DNS-konfigurationen för MTA-modulen:
+1. Redigera filen **serverConf.xml** och fyll i DNS-konfigurationen för MTA-modulen:
 
    ```xml
    <dnsConfig localDomain="campaign.com" nameServers="192.0.0.1, 192.0.0.2"/>
@@ -240,7 +240,7 @@ Använd följande steg:
 
    >[!NOTE]
    >
-   >The **nameServers** parametern används bara i Windows.
+   >Parametern **nameServers** används bara i Windows.
 
    Mer information finns i [Kampanjserverkonfiguration](../../installation/using/configuring-campaign-server.md).
 
@@ -248,8 +248,8 @@ Använd följande steg:
 
    Mer information finns i följande avsnitt:
 
-   * För Linux: [Serverns första start](../../installation/using/installing-packages-with-linux.md#first-start-up-of-the-server)
-   * För Windows: [Serverns första start](../../installation/using/installing-the-server.md#first-start-up-of-the-server)
+   * För Linux: [Första starten av servern](../../installation/using/installing-packages-with-linux.md#first-start-up-of-the-server)
+   * För Windows: [Första starten av servern](../../installation/using/installing-the-server.md#first-start-up-of-the-server)
 
 ### Installera och konfigurera frontservrarna {#installing-and-configuring-the-frontal-servers}
 
@@ -263,8 +263,8 @@ Stegen är följande:
    * För Linux: [Integrering med en webbserver för Linux](../../installation/using/integration-into-a-web-server-for-linux.md),
    * För Windows: [Integrering med en webbserver för Windows](../../installation/using/integration-into-a-web-server-for-windows.md).
 
-1. Kopiera **config-demo.xml** och **serverConf.xml** filer som skapas under installationen. I **config-demo.xml** -fil, aktivera **trackinglogd** bearbeta och inaktivera **mta**, **inmail**, **wfserver** och **stat** -processer.
-1. Redigera **serverConf.xml** och fylla i de redundanta spårningsservrarna i parametrarna för omdirigeringen:
+1. Kopiera filerna **config-demo.xml** och **serverConf.xml** som skapades under installationen. Aktivera processen **trackinglog** i filen **config-demo.xml** och inaktivera processerna **mta**, **inmail**, **wfserver** och **stat**.
+1. Redigera filen **serverConf.xml** och fyll i de redundanta spårningsservrarna i parametrarna för omdirigeringen:
 
    ```xml
    <spareServer enabledIf="$(hostname)!='front_srv1'" id="1" url="https://front_srv1:8080"/>
@@ -288,6 +288,6 @@ Stegen är följande:
    Mer information finns i följande avsnitt:
 
    * För Linux: [Starta webbservern och testa konfigurationen](../../installation/using/integration-into-a-web-server-for-linux.md#launching-the-web-server-and-testing-the-configuration),
-   * För Windows: [Starta webbservern och testa konfigurationen](../../installation/using/integration-into-a-web-server-for-windows.md#launching-the-web-server-and-testing-the-configuration).
+   * För Windows: [Startar webbservern och testar konfigurationen](../../installation/using/integration-into-a-web-server-for-windows.md#launching-the-web-server-and-testing-the-configuration).
 
 1. Starta Adobe Campaign-servern.

@@ -22,7 +22,7 @@ Viktiga steg är:
 1. [Konfigurera iOS-tjänsten](#configuring-ios-service)
 1. [Integrera iOS mobilapp i Campaign](#creating-ios-app)
 
-Då kan du [skapa ett push-meddelande för iOS-enheter](create-notifications-ios.md).
+Du kan sedan [skapa ett push-meddelande för iOS-enheter](create-notifications-ios.md).
 
 ## Konfigurera iOS externa konto {#configuring-external-account-ios}
 
@@ -31,8 +31,8 @@ För iOS skickar iOS HTTP/2-anslutningen meddelanden till HTTP/2 APN:er.
 Så här konfigurerar du den här kopplingen:
 
 1. Gå till **[!UICONTROL Administration > Platform > External accounts]**.
-1. Välj **[!UICONTROL iOS routing]** externt konto.
-1. I **[!UICONTROL Connector]** -flik, fylla i **[!UICONTROL Access URL of the connector]** fält med följande URL: ```http://localhost:8080/nms/jsp/iosHTTP2.jsp```
+1. Välj det **[!UICONTROL iOS routing]** externa kontot.
+1. På fliken **[!UICONTROL Connector]** fyller du i fältet **[!UICONTROL Access URL of the connector]** med följande URL: ```http://localhost:8080/nms/jsp/iosHTTP2.jsp```
 
    ![](assets/nmac_connectors.png)
 
@@ -48,20 +48,20 @@ Din iOS-anslutning är nu konfigurerad. Du kan börja skapa tjänsten.
 >
 >Om så inte är fallet, se [den här sidan](https://developer.apple.com/documentation/usernotifications).
 
-1. Gå till **[!UICONTROL Profiles and Targets > Services and subscriptions]** och klicka på **[!UICONTROL New]**.
+1. Gå till noden **[!UICONTROL Profiles and Targets > Services and subscriptions]** och klicka på **[!UICONTROL New]**.
 
    ![](assets/nmac_service_1.png)
 
-1. Definiera en **[!UICONTROL Label]** och **[!UICONTROL Internal name]**.
-1. Gå till **[!UICONTROL Type]** fält och markera **[!UICONTROL Mobile application]**.
+1. Definiera en **[!UICONTROL Label]** och en **[!UICONTROL Internal name]**.
+1. Gå till fältet **[!UICONTROL Type]** och välj **[!UICONTROL Mobile application]**.
 
    >[!NOTE]
    >
-   >Standardvärdet **[!UICONTROL Subscriber applications (nms:appSubscriptionRcp)]** målmappningen är länkad till mottagartabellen. Om du vill använda en annan målmappning måste du skapa en ny målmappning och ange den i **[!UICONTROL Target mapping]** tjänstens fält. Mer information om hur du skapar målmappning finns i [Konfigurationsguide](../../configuration/using/about-custom-recipient-table.md).
+   >Standardmålmappningen för **[!UICONTROL Subscriber applications (nms:appSubscriptionRcp)]** är länkad till mottagartabellen. Om du vill använda en annan målmappning måste du skapa en ny målmappning och ange den i fältet **[!UICONTROL Target mapping]** för tjänsten. Mer information om hur du skapar målmappning finns i [Konfigurationsguiden](../../configuration/using/about-custom-recipient-table.md).
 
    ![](assets/nmac_ios.png)
 
-1. Klicka sedan på **[!UICONTROL Add]** för att välja programtyp.
+1. Klicka sedan på knappen **[!UICONTROL Add]** för att välja programtyp.
 
    ![](assets/nmac_service_2.png)
 
@@ -71,7 +71,7 @@ Din iOS-anslutning är nu konfigurerad. Du kan börja skapa tjänsten.
 
 Skapa iOS-programmet i Campaign när du har skapat tjänsten. Följ stegen nedan:
 
-1. Klicka på **[!UICONTROL Add]** för att välja programtyp.
+1. Klicka på knappen **[!UICONTROL Add]** för att välja programtyp i den nya tjänsten.
 
    ![](assets/nmac_service_2.png)
 
@@ -79,28 +79,28 @@ Skapa iOS-programmet i Campaign när du har skapat tjänsten. Följ stegen nedan
 
    ![](assets/nmac_ios_2.png)
 
-1. Som ett alternativ kan du utöka ett push-meddelandeinnehåll med **[!UICONTROL Application variables]** vid behov. Dessa är helt anpassningsbara och utgör en del av den meddelandenyttolast som skickas till den mobila enheten.
-I följande exempel lägger vi till **mediaURl** och **mediaExt** för att skapa omfattande push-meddelanden och sedan förse programmet med den bild som ska visas i meddelandet.
+1. Som ett alternativ kan du utöka ett push-meddelandeinnehåll med vissa **[!UICONTROL Application variables]** vid behov. Dessa är helt anpassningsbara och utgör en del av den meddelandenyttolast som skickas till den mobila enheten.
+I följande exempel lägger vi till **mediaURl** och **mediaExt** för att skapa ett omfattande push-meddelande och förser sedan programmet med bilden som ska visas i meddelandet.
 
    ![](assets/nmac_ios_3.png)
 
-1. The **[!UICONTROL Subscription parameters]** kan du definiera mappningen med ett tillägg till **[!UICONTROL Subscriber applications (nms:appsubscriptionRcp)]** schema.
+1. På fliken **[!UICONTROL Subscription parameters]** kan du definiera mappningen med ett tillägg till schemat **[!UICONTROL Subscriber applications (nms:appsubscriptionRcp)]**.
 
    >[!NOTE]
    >
    >Se till att du inte använder samma certifikat för utvecklingsversionen (sandlådan) och produktionsversionen av programmet.
 
-1. The **[!UICONTROL Sounds]** kan du ange vilket ljud som ska spelas upp. Klicka **[!UICONTROL Add]** och fylla **[!UICONTROL Internal name]** fält som måste innehålla namnet på filen som är inbäddad i programmet eller namnet på systemljudet.
+1. På fliken **[!UICONTROL Sounds]** kan du ange ett ljud som ska spelas upp. Klicka på **[!UICONTROL Add]** och fyll i fältet **[!UICONTROL Internal name]** som måste innehålla namnet på filen som är inbäddad i programmet eller namnet på systemljudet.
 
-1. Klicka **[!UICONTROL Next]** för att börja konfigurera utvecklingsprogrammet.
+1. Klicka på **[!UICONTROL Next]** för att börja konfigurera utvecklingsprogrammet.
 
-1. Se till att samma **[!UICONTROL Integration key]** definieras i Adobe Campaign och i programkoden via SDK. <!--For more on this, refer to [this page](integrating-campaign-sdk-into-the-mobile-application.md).--> Med den här integrationsnyckeln, som är specifik för varje program, kan du länka mobilprogrammet till Adobe Campaign-plattformen.
+1. Kontrollera att samma **[!UICONTROL Integration key]** har definierats i Adobe Campaign och i programkoden via SDK. <!--For more on this, refer to [this page](integrating-campaign-sdk-into-the-mobile-application.md).--> Med den här integrationsnyckeln, som är specifik för varje program, kan du länka mobilprogrammet till Adobe Campaign-plattformen.
 
    >[!NOTE]
    >
-   > The **[!UICONTROL Integration key]** är helt anpassningsbart med strängvärde, men måste vara exakt densamma som den som anges i SDK:n.
+   > **[!UICONTROL Integration key]** är helt anpassningsbar med strängvärde, men måste vara exakt densamma som den som anges i SDK:n.
 
-1. Välj en av de färdiga ikonerna i dialogrutan **[!UICONTROL Application icon]** för att personalisera mobilapplikationer i din tjänst.
+1. Välj en av de färdiga ikonerna i fältet **[!UICONTROL Application icon]** för att anpassa mobilprogrammet i tjänsten.
 
 1. Markera **[!UICONTROL Authentication mode]**.
 
@@ -108,17 +108,17 @@ I följande exempel lägger vi till **mediaURl** och **mediaExt** för att skapa
 
    Det finns två lägen:
 
-   * (Rekommenderas) **[!UICONTROL Token-based authentication]**: Fyll i APN-anslutningsinställningarna **[!UICONTROL Key Id]**, **[!UICONTROL Team Id]** och **[!UICONTROL Bundle Id]** välj sedan ditt p8-certifikat genom att klicka på **[!UICONTROL Enter the private key...]**. Om du vill ha mer **[!UICONTROL Token-based authentication]**, se [Apple-dokumentation](https://developer.apple.com/documentation/usernotifications/setting_up_a_remote_notification_server/establishing_a_token-based_connection_to_apns){target="_blank"}.
+   * (Rekommenderas) **[!UICONTROL Token-based authentication]**: Fyll i APN-anslutningsinställningarna **[!UICONTROL Key Id]**, **[!UICONTROL Team Id]** och **[!UICONTROL Bundle Id]** och välj sedan ditt p8-certifikat genom att klicka på **[!UICONTROL Enter the private key...]**. Mer information om **[!UICONTROL Token-based authentication]** finns i [Apple-dokumentationen](https://developer.apple.com/documentation/usernotifications/setting_up_a_remote_notification_server/establishing_a_token-based_connection_to_apns){target="_blank"}.
 
-   * **[!UICONTROL Certificate-based authentication]**: Klicka **[!UICONTROL Enter the certificate...]**  välj sedan din p12-nyckel och ange lösenordet som angavs av mobilprogramutvecklaren.
+   * **[!UICONTROL Certificate-based authentication]**: Klicka på **[!UICONTROL Enter the certificate...]**, markera din p12-nyckel och ange lösenordet som angavs av utvecklaren av mobilprogrammet.
 
    >[!NOTE]
    >
-   > Adobe rekommenderar att du använder **[!UICONTROL Token-based authentication]** för din iOS-konfiguration eftersom autentiseringsnycklarna för P8 är nyare och säkrare.
+   > Adobe rekommenderar att du använder **[!UICONTROL Token-based authentication]** för din iOS-konfiguration eftersom autentiseringsnycklarna P8 är nyare och säkrare.
 
-1. Använd **[!UICONTROL Test the connection]** för att validera konfigurationen.
+1. Använd knappen **[!UICONTROL Test the connection]** för att validera konfigurationen.
 
-1. Klicka **[!UICONTROL Next]** för att börja konfigurera produktionsprogrammet och följa de steg som beskrivs ovan.
+1. Klicka på **[!UICONTROL Next]** för att börja konfigurera produktionsprogrammet och följ stegen som anges ovan.
 
 
 1. Klicka på **[!UICONTROL Finish]**.

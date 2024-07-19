@@ -23,15 +23,15 @@ För servrar med stor belastning kan anslutningens tröskelvärde överskridas. 
 
 Det finns tre olika tröskelvärden:
 
-* The **Tröskelvärde för webbanslutning**, konfigurerad på webbservern. Kontakta systemadministratören om du vill ändra den.
+* Tröskelvärdet **för webbanslutning**, konfigurerat på webbservern. Kontakta systemadministratören om du vill ändra den.
 
-* The **tröskelvärde för databasanslutning**. Kontakta databasadministratören om du vill ändra den.
+* Tröskelvärdet **för databasanslutning**. Kontakta databasadministratören om du vill ändra den.
 
-* The **Tröskelvärde för Adobe Campaign-anslutning**, finns på två platser:
+* Tröskelvärdet **för Adobe Campaign-anslutningen**, finns på två platser:
 
-   * **Tomcat** sida: alla frågor som faktiskt kommer från Adobe Campaign Tomcat-klienten.
+   * **Tomcat** sida: alla frågor som verkligen kommer från Adobe Campaign Tomcat-klienten.
 
-     Detta tröskelvärde konfigureras i **nl6/tomcat-X/conf/server.xml** -fil. The **maxThreads** kan du öka tröskelvärdet för antalet frågor som bearbetas samtidigt. Den kan till exempel ändras till 250.
+     Det här tröskelvärdet har konfigurerats i filen **nl6/tomcat-X/conf/server.xml**. Med attributet **maxThreads** kan du öka tröskelvärdet för antalet frågor som bearbetas samtidigt. Den kan till exempel ändras till 250.
 
      ```
      <Connector protocol="HTTP/1.1" port="8080"
@@ -45,9 +45,9 @@ Det finns tre olika tröskelvärden:
                  unpackWARs="true" autoDeploy="true">
      ```
 
-   * **Databas**: en uppsättning av alla anslutningar som öppnas samtidigt i databasen av en process.
+   * **Database**: set of all connections open at the same time on the database by a process.
 
-     Detta tröskelvärde är konfigurerat i filen **nl6/conf/serverConf.xml**. The **maxCnx** attribut finns i **datakällpool** Med kan du öka tröskelvärdet för frågor som behandlas samtidigt.
+     Det här tröskelvärdet har konfigurerats i filen **nl6/conf/serverConf.xml**. Med attributet **maxCnx** i **datakällpoolen** kan du öka tröskelvärdet för frågor som bearbetas samtidigt.
 
      ```
          <!-- Data source

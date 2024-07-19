@@ -19,15 +19,15 @@ ht-degree: 0%
 
 
 
-I det här avsnittet finns information om installation och konfiguration av en server med mellanlagring, samt om distributionen av en instans som gör det möjligt för tredje part att skicka meddelanden i **medelleverantörer** läge.
+I det här avsnittet beskrivs installation och konfiguration av en server med mellanlagring samt distributionen av en instans som gör det möjligt för tredje part att skicka meddelanden i läget **med mellanlagring**.
 
-Arkitekturen med&quot;mellanleverantörer&quot; presenteras i [Distribution från olika källor](../../installation/using/mid-sourcing-deployment.md).
+Arkitekturen för&quot;mellanleverantörer&quot; presenteras i [Distributionen ](../../installation/using/mid-sourcing-deployment.md) med mellanleverantörer.
 
 När du installerar en server med mellanlagring utförs samma process som när du installerar en server på det vanliga sättet (se standardkonfigurationen). Det är en oberoende instans med en egen databas som kan användas för att köra leveranser. Kort och gott: den innehåller en extra konfiguration som tillåter att fjärrinstanser kör leveranser via den i läget mitt i källkoden.
 
 >[!CAUTION]
 >
->När mittkällservern har konfigurerats och [synkronisera arbetsflöden](../../workflow/using/about-technical-workflows.md) måste du se till att du inte uppdaterar det interna namnet för de externa konton som används från mellanleverantörer.
+>När servern för mellanlagring har konfigurerats och [synkroniseringsarbetsflödena](../../workflow/using/about-technical-workflows.md) har körts för första gången, ska du inte uppdatera det interna namnet för de externa konton som mellanlagras.
 
 ## Steg för att installera och konfigurera en instans {#steps-for-installing-and-configuring-an-instance}
 
@@ -45,7 +45,7 @@ Installationsproceduren är identisk med den för en fristående instans. Se [In
 
 Du måste dock göra följande:
 
-* I steg **5** måste du inaktivera **mta** (leverans) **inMail** (studsmoduler). The **wfserver** (arbetsflöde) måste dock förbli aktiverat.
+* I steg **5** måste du inaktivera modulerna **mta** (leverans) och **inMail** (studsmeddelanden). **wfserver** (arbetsflöde)-modulen måste dock fortfarande vara aktiverad.
 
   ```
   <?xml version='1.0'?>
@@ -66,7 +66,7 @@ Du måste dock göra följande:
   Mer information om detta finns i [det här avsnittet](../../installation/using/configuring-campaign-server.md#enabling-processes).
 
 * Steg **6**, **9** och **10** behövs inte.
-* Under steg **12** och **13** måste du ange porten 8080 i anslutnings-URL:en (eftersom konsolen kommunicerar direkt med Tomcat, inte via webbservern). URL:en blir `http://console.campaign.net:8080`. Under steg **13** väljer du **[!UICONTROL Issue towards Mid-sourcing]** samt de som ska installeras.
+* Under steg **12** och **13** måste du ange porten 8080 i anslutnings-URL:en (eftersom konsolen kommunicerar direkt med Tomcat, inte via webbservern). URL:en blir `http://console.campaign.net:8080`. Under steg **13** väljer du paketet **[!UICONTROL Issue towards Mid-sourcing]** samt de som ska installeras.
 
   ![](assets/s_ncs_install_midsourcing02.png)
 
@@ -76,11 +76,11 @@ Du måste dock göra följande:
 
 ### Installera och konfigurera servern för mellanlagring {#installing-and-configuring-the-mid-sourcing-server}
 
-Gå till klientkonsolen och leta upp **E-postroutning med medelkällkod** mittleverantörskonto (i **/Administration/Externa konton/** mapp). Fyll i **URL för servern**, **konto**, **lösenord** och **URL för speglingssida** inställningarna med den information som tillhandahålls av den serverleverantör som är värd för den server som använder mellanleverantörer. Testa anslutningen.
+Gå till klientkonsolen och leta upp **e-postroutningen med mellankällkonto** (i mappen **/Administration/Externa konton/**). Fyll i URL:en **för server**, **konto**, **password** och **Spegelvänd sidadress** med informationen som tillhandahålls av serverprovidern som är värd för mittkällservern. Testa anslutningen.
 
 >[!NOTE]
 >
->The **midsourcingEmitter** option skapar två **Mid-sourcing** arbetsflöden. Det är en process som körs som standard var 1 timme och 20:e minut och som samlar in leveransinformation på servern med mellanlagring.
+>Alternativet **midsourcingEmitter** skapar två **Mid-sourcing**-arbetsflöden. Det är en process som körs som standard var 1 timme och 20:e minut och som samlar in leveransinformation på servern med mellanlagring.
 
 ## Distribuera en server med mellanleverantörer {#deploying-a-mid-sourcing-server}
 
@@ -90,15 +90,15 @@ Gå till klientkonsolen och leta upp **E-postroutning med medelkällkod** mittle
    >
    >Om du installerar servern för mellanlagring och vill installera extra Adobe Campaign-moduler rekommenderar vi att du använder modulen Leverans och inte Campaign.
 
-   Följ samma procedur som för standarddistributionen och välj bara **[!UICONTROL Mid-sourcing platform]** alternativ.
+   Följ samma procedur som för standarddistributionen och välj bara alternativet **[!UICONTROL Mid-sourcing platform]**.
 
    ![](assets/s_ncs_install_midsourcing01.png)
 
 1. Konfiguration för att ta emot i läget mitt i källkoden
 
-   Ange lösenord för överföringskonto: I **/Mid-sourcing/Access Management/Operators/** mapp, **mitten** -operatorn används av fjärrinstansen för att skicka in material i mellankälläge. Du måste ange ett lösenord för den här operatorn och ge det till administratören för inskickningsinstansen.
+   Ange lösenord för inskickningskonto: I mappen **/Mid-sourcing/Access Management/Operators/** används operatorn **mid** av fjärrinstansen för inskickning i mellankälläge. Du måste ange ett lösenord för den här operatorn och ge det till administratören för inskickningsinstansen.
 
-   The **Plattform för mellanleverantörer** skapar standardmapparna för lagring av skickade leveranser och standardoperatorn som utför skickade leveranser.
+   Alternativet **Plattform för mellanlagring** skapar standardmapparna för lagring av skickade leveranser och standardoperatorn som utför skickade leveranser.
 
 ## Multiplexing av servern med mellanlagring {#multiplexing-the-mid-sourcing-server}
 
@@ -108,24 +108,24 @@ Gå till klientkonsolen och leta upp **E-postroutning med medelkällkod** mittle
 
 Det är möjligt att dela en instans med mellanleverantörer genom att skicka in flera instanser. Var och en av de här instanserna måste kopplas till en operator i databasen för mellanleverantörer. Så här skapar du ett andra konto på servern:
 
-1. Skapa en mapp i **[!UICONTROL Mid-sourcing > Deliveries]** nod som ska associeras med standardkontot för mellanleverantörer (till exempel: prod).
-1. Skapa en mapp i **[!UICONTROL Mid-sourcing > Deliveries]** nod med samma namn som kontot (till exempel: accept_test).
+1. Skapa en mapp i noden **[!UICONTROL Mid-sourcing > Deliveries]** som ska associeras med standardkontot för mellanlagring (till exempel: prod).
+1. Skapa en mapp i noden **[!UICONTROL Mid-sourcing > Deliveries]** med samma namn som kontot (till exempel: accept_test).
 
    ![](assets/mid_recette_account.png)
 
-1. I **[!UICONTROL Mid-sourcing > Access Management > Operators]** skapar du ett nytt konto.
+1. Skapa ett nytt konto i **[!UICONTROL Mid-sourcing > Access Management > Operators]**.
 
    ![](assets/mid_recette_user_create.png)
 
-1. I **[!UICONTROL Access rights]** ger du den här operatorn rättigheterna för **Mid-sourcing** grupp. Den här åtkomsträttigheten är tillgänglig i **[!UICONTROL Mid-sourcing > Access Management > Operator groups]**.
+1. På fliken **[!UICONTROL Access rights]** ger du den här operatorn behörighet för gruppen **Mid-sourcing-överföringar**. Den här åtkomsträttigheten är tillgänglig i **[!UICONTROL Mid-sourcing > Access Management > Operator groups]**.
 
    ![](assets/mid_recette_user_rights.png)
 
-1. Välj **[!UICONTROL Restrict to data in the sub-folders of]** och markera leveransmappen för att begränsa den här operatorn till leveransmappen från mitten.
+1. Välj alternativet **[!UICONTROL Restrict to data in the sub-folders of]** och markera mappen Leveranser för att begränsa den här operatorn till mappen för leveranser på mellannivå.
 
    ![](assets/mid_recette_user_restrictions.png)
 
-1. Starta om modulen Webb med följande kommando: **omstart av webbserver**.
+1. Starta om webbmodulen med följande kommando: **nlserver start web**.
 
 Du måste ändra serverinställningen för mellanlagring i filen serverConf.xml. Följande rad måste läggas till i avsnittet &quot;Hantering av tillhörigheter med IP-adresser&quot;, under den befintliga raden:
 
@@ -135,7 +135,7 @@ Du måste ändra serverinställningen för mellanlagring i filen serverConf.xml.
 
 Attributet &#39;@name&#39; måste följa följande regler:
 
-**marketing_account_operator_name.affinity_name&#39;.&#39;affinity_group&#39;**
+**&#39;marketing_account_operator_name&#39;.&#39;affinity_name&#39;.&#39;affinity_group&#39;**
 
 &#39;marketing_account_operator_name&#39; relaterar till det interna namnet på mittkällkontot som deklarerats i mittkällinstansen.
 
@@ -147,10 +147,10 @@ Du måste stoppa och sedan starta om servern för att ändringen ska kunna beakt
 
 ## Konfigurera spårning på en server med flera källor {#configuring-tracking-on-a-mid-sourcing-server}
 
-**Konfigurera servern för mellanlagring**
+**Konfigurerar servern** från mellanleverantörer
 
 1. Gå till operatorer och välj operatorn **[!UICONTROL mid]**.
-1. I **[!UICONTROL Frontal servers]** anger du spårningsserverns anslutningsparametrar.
+1. Ange spårningsserveranslutningsparametrarna på fliken **[!UICONTROL Frontal servers]**.
 
    Om du vill skapa en spårningsinstans anger du URL:en för spårningsservern, det interna kontolösenordet för spårningsservern och namnet på instansen, dess lösenord och de DNS-masker som är associerade med den.
 
@@ -161,12 +161,12 @@ Du måste stoppa och sedan starta om servern för att ändringen ska kunna beakt
 
    ![](assets/s_ncs_install_midsourcing_tracking03.png)
 
-   Om du väljer **[!UICONTROL Tracking server(s)]** om du väljer det här alternativet kopieras bilderna till servern för mellanlagring.
+   Om du väljer alternativet **[!UICONTROL Tracking server(s)]** kopieras bilderna till servern med mellanlagring.
 
-**Konfigurera kundplattformen**
+**Konfigurerar kundplattformen**
 
 1. Gå till det externa kontot för leverans mot mellanleverantörer.
-1. I **[!UICONTROL Mid-Sourcing]** anger du anslutningsparametrarna för servern med mellankällkod.
+1. På fliken **[!UICONTROL Mid-Sourcing]** anger du anslutningsparametrarna för serveranslutning från mitten.
 
    ![](assets/s_ncs_install_midsourcing_tracking06.png)
 
@@ -179,6 +179,6 @@ Du måste stoppa och sedan starta om servern för att ändringen ska kunna beakt
 
    ![](assets/s_ncs_install_midsourcing_tracking05.png)
 
-Om leveransen av meddelanden ska hanteras av flera servrar med mellanleverantörer väljer du alternativet **[!UICONTROL Routing with alternating mid-sourcing accounts]** och ange olika servrar.
+Om leveransen av meddelanden ska hanteras av flera servrar med mellankällor väljer du alternativet **[!UICONTROL Routing with alternating mid-sourcing accounts]** och anger de olika servrarna.
 
 ![](assets/s_ncs_install_midsourcing_tracking04.png)

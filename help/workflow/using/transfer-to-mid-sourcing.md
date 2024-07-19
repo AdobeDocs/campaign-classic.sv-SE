@@ -15,7 +15,7 @@ ht-degree: 1%
 
 
 
-Arbetsflödena nedan installeras tillsammans med **Överföring till medelkälla** som standard. Mer information om den här modulen finns i [Installationshandbok för Campaign Classic v7](../../installation/using/mid-sourcing-deployment.md).
+Arbetsflödena som anges nedan installeras som standard med modulen **Överför till medelkälla**. Mer information om den här modulen finns i [Campaign Classic v7 Installationshandbok](../../installation/using/mid-sourcing-deployment.md).
 
 <table> 
  <tbody> 

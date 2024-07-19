@@ -22,7 +22,7 @@ ht-degree: 2%
 Så här skapar du en fråga i Adobe Campaign:
 
 1. Markera arbetsregistret. Se [Steg 1 - Välj en tabell](#step-1---choose-a-table).
-1. Markera de data som ska extraheras. Se [Steg 2 - Välj data att extrahera](#step-2---choose-data-to-extract).
+1. Markera de data som ska extraheras. Se [Steg 2 - Välj data som ska extraheras](#step-2---choose-data-to-extract).
 1. Definiera datasorteringssekvensen. Se [Steg 3 - Sortera data](#step-3---sort-data).
 1. Filtrera data. Se [Steg 4 - Filtrera data](#step-4---filter-data).
 1. Formatera data. Se [Steg 5 - Formatera data](#step-5---format-data).
@@ -35,38 +35,38 @@ Så här skapar du en fråga i Adobe Campaign:
 
 ## Steg 1 - Välj en tabell {#step-1---choose-a-table}
 
-Markera tabellen som innehåller de data du vill fråga i dialogrutan **[!UICONTROL Document type]** -fönstret. Om det behövs kan du filtrera data med filterfältet eller **[!UICONTROL Filters]** -knappen.
+Markera tabellen som innehåller de data som du vill fråga i fönstret **[!UICONTROL Document type]**. Om det behövs kan du filtrera data med filterfältet eller knappen **[!UICONTROL Filters]**.
 
 ![](assets/query_editor_nveau_21.png)
 
 ## Steg 2 - Välj data att extrahera {#step-2---choose-data-to-extract}
 
-I **[!UICONTROL Data to extract]** markerar du de data som ska visas: dessa fält utgör utdatakolumnerna.
+I fönstret **[!UICONTROL Data to extract]** väljer du de data som ska visas: dessa fält utgör utdatakolumnerna.
 
 Välj till exempel **[!UICONTROL Age]**, **[!UICONTROL Primary key]**, **[!UICONTROL Email domain]** och **[!UICONTROL City]**. Resultatet ordnas utifrån det här valet. Använd de blå pilarna till höger om fönstret för att ändra kolumnordningen.
 
 ![](assets/query_editor_nveau_01.png)
 
-Du kan redigera ett uttryck genom att infoga en formel i det eller köra en process på en sammanställningsfunktion. Klicka på **[!UICONTROL Expression]** kolumnfält och sedan markera **[!UICONTROL Edit expression]**.
+Du kan redigera ett uttryck genom att infoga en formel i det eller köra en process på en sammanställningsfunktion. Det gör du genom att klicka på kolumnfältet **[!UICONTROL Expression]** och sedan välja **[!UICONTROL Edit expression]**.
 
 ![](assets/query_editor_nveau_97.png)
 
-Det går att gruppera utdatakolumndata: det gör du genom att markera **[!UICONTROL Yes]** i **[!UICONTROL Group]** kolumn i **[!UICONTROL Data to extract]** -fönstret. Den här funktionen genererar ett resultat runt den markerade grupperingsaxeln. Ett exempel på en fråga med gruppering finns i [det här avsnittet](../../workflow/using/querying-delivery-information.md).
+Det går att gruppera utdatakolumndata. Det gör du genom att kontrollera **[!UICONTROL Yes]** i kolumnen **[!UICONTROL Group]** i fönstret **[!UICONTROL Data to extract]**. Den här funktionen genererar ett resultat runt den markerade grupperingsaxeln. Ett exempel på en fråga med gruppering finns i [det här avsnittet](../../workflow/using/querying-delivery-information.md).
 
 ![](assets/query_editor_nveau_56.png)
 
-* The **[!UICONTROL Handle groupings (GROUP BY + HAVING)]** kan du &quot;gruppera efter&quot; och välja vad som har grupperats (&quot;att&quot;). Den här funktionen gäller för alla fält i utdatakolumnen. Med det här alternativet kan du till exempel gruppera alla val för en utdatakolumn och återställa en viss typ av information, till exempel mottagare mellan 35 och 50.
+* Med funktionen **[!UICONTROL Handle groupings (GROUP BY + HAVING)]** kan du gruppera efter och välja vad som har grupperats (&quot;HAVING&quot;). Den här funktionen gäller för alla fält i utdatakolumnen. Med det här alternativet kan du till exempel gruppera alla val för en utdatakolumn och återställa en viss typ av information, till exempel mottagare mellan 35 och 50.
 
   Mer information om detta finns i [det här avsnittet](../../workflow/using/querying-using-grouping-management.md).
 
-* The **[!UICONTROL Remove duplicate rows (DISTINCT)]** kan du duplicera identiska resultat som du får i utdatakolumnen. Om du till exempel gör en inventering genom att markera fälten Efternamn, Förnamn och E-post i utdatakolumnen, kommer de som har identiska data att tas bort, eftersom det innebär att samma kontakt har angetts flera gånger i databasen: endast ett resultat kommer att tas med i beräkningen.
+* Med funktionen **[!UICONTROL Remove duplicate rows (DISTINCT)]** kan du duplicera identiska resultat som hämtats i utdatakolumnen. Om du till exempel gör en inventering genom att markera fälten Efternamn, Förnamn och E-post i utdatakolumnen, kommer de som har identiska data att tas bort, eftersom det innebär att samma kontakt har angetts flera gånger i databasen: endast ett resultat kommer att tas med i beräkningen.
 
 ## Steg 3 - Sortera data {#step-3---sort-data}
 
-The **[!UICONTROL Sorting]** I kan du sortera kolumninnehåll. Använd pilarna för att ändra kolumnordningen:
+I fönstret **[!UICONTROL Sorting]** kan du sortera kolumninnehåll. Använd pilarna för att ändra kolumnordningen:
 
-* The **[!UICONTROL Sorting]** I kan du sortera och ordna kolumninnehåll från A till Z eller i stigande ordning.
-* The **[!UICONTROL Descending sort]** Ordnar innehållet från Z till A och i fallande ordning. Det här är användbart för att visa postförsäljning, till exempel: de högsta siffrorna visas högst upp i listan.
+* I kolumnen **[!UICONTROL Sorting]** kan du sortera och ordna kolumninnehåll från A till Z eller i stigande ordning.
+* **[!UICONTROL Descending sort]** ordnar innehållet från Z till A och i fallande ordning. Det här är användbart för att visa postförsäljning, till exempel: de högsta siffrorna visas högst upp i listan.
 
 I det här exemplet sorteras data i stigande ordning baserat på mottagarens ålder.
 
@@ -80,48 +80,48 @@ Vilka filter som visas beror på vilken tabell frågan gäller.
 
 ![](assets/query_editor_nveau_09.png)
 
-När du valt **[!UICONTROL Filtering conditions]** du kommer åt **[!UICONTROL Target elements]** -sektion: här kan du definiera hur data ska filtreras.
+När du har valt **[!UICONTROL Filtering conditions]** får du tillgång till avsnittet **[!UICONTROL Target elements]**. På så sätt kan du definiera hur data som ska samlas in ska filtreras.
 
 * Om du vill skapa ett nytt filter markerar du de fält, operatorer och värden som krävs för att skapa formeln som ska verifieras för att data ska kunna väljas. Det går att kombinera flera villkor (mer information finns i [Definiera filtervillkor](../../platform/using/defining-filter-conditions.md)).
-* Om du vill använda tidigare sparade filter öppnar du listrutan genom att klicka på **[!UICONTROL Add]** knapp, klicka **[!UICONTROL Predefined filter]** och välj den du vill ha.
+* Om du vill använda tidigare sparade filter öppnar du listrutan genom att klicka på knappen **[!UICONTROL Add]**, klickar på **[!UICONTROL Predefined filter]** och väljer det du vill använda.
 
   ![](assets/query_editor_15.png)
 
-* De filter som skapas i **[!UICONTROL Generic query editor]** är tillgängliga i andra frågeprogram och vice versa. Om du vill spara ett filter klickar du på **[!UICONTROL Save]** -ikon.
+* De filter som skapas i **[!UICONTROL Generic query editor]** är tillgängliga i andra frågeprogram och vice versa. Klicka på ikonen **[!UICONTROL Save]** om du vill spara ett filter.
 
   >[!NOTE]
   >
   >Mer information om hur du skapar och använder filter finns i [Filtreringsalternativ](../../platform/using/filtering-options.md).
 
-Om du vill återställa alla mottagare med engelskspråkighet, som visas i följande exempel, väljer du:&quot;mottagarspråk **lika med** EN&quot;.
+Om du vill återställa alla mottagare med engelskspråkighet, som visas i följande exempel, väljer du: &quot;mottagarspråk **lika med** EN&quot;.
 
 ![](assets/query_editor_nveau_89.png)
 
 >[!NOTE]
 >
->Du kommer åt ett alternativ direkt genom att skriva följande formel i **Värde** fält: **$(options:OPTION_NAME)**.
+>Du kan komma åt ett alternativ direkt genom att skriva följande formel i fältet **Värde**: **$(options:OPTION_NAME)**.
 
-Klicka på **[!UICONTROL Preview]** om du vill visa resultatet av filtreringsvillkoret. I det här fallet visas alla mottagare på engelska med namn, förnamn och e-postadress.
+Klicka på fliken **[!UICONTROL Preview]** för att visa resultatet av filtreringsvillkoret. I det här fallet visas alla mottagare på engelska med namn, förnamn och e-postadress.
 
 ![](assets/query_editor_nveau_98.png)
 
-Användare som är bekanta med SQL-språket kan klicka **[!UICONTROL Generate SQL query]** för att visa frågan i SQL.
+Användare som är bekanta med SQL-språk kan klicka på **[!UICONTROL Generate SQL query]** för att visa frågan i SQL.
 
 ![](assets/query_editor_nveau_99.png)
 
 ## Steg 5 - Formatera data {#step-5---format-data}
 
-När du har konfigurerat begränsningsfiltren får du tillgång till **[!UICONTROL Data formatting]** -fönstret. I det här fönstret kan du ordna om utdatakolumner, omforma data och ändra kolumnrubrikernas övre/nedre gemener. Du kan också använda en formel för slutresultatet med hjälp av ett beräkningsfält.
+När du har konfigurerat begränsningsfiltren kommer du åt fönstret **[!UICONTROL Data formatting]**. I det här fönstret kan du ordna om utdatakolumner, omforma data och ändra kolumnrubrikernas övre/nedre gemener. Du kan också använda en formel för slutresultatet med hjälp av ett beräkningsfält.
 
 >[!NOTE]
 >
->Mer information om olika typer av beräkningsfält finns i [Skapa beräknade fält](../../platform/using/defining-filter-conditions.md#creating-calculated-fields).
+>Mer information om typerna av beräkningsfält finns i [Skapa beräknade fält](../../platform/using/defining-filter-conditions.md#creating-calculated-fields).
 
 Omarkerade kolumner visas inte i dataförhandsgranskningsfönstret.
 
 ![](assets/query_editor_nveau_10.png)
 
-The **[!UICONTROL Transformation]** kan du ändra en kolumnetikett till versaler eller gemener. Markera kolumnen och klicka på **[!UICONTROL Transformation]** kolumn. Du kan välja:
+I kolumnen **[!UICONTROL Transformation]** kan du ändra en kolumnetikett till versaler eller gemener. Markera kolumnen och klicka i kolumnen **[!UICONTROL Transformation]**. Du kan välja:
 
 * **[!UICONTROL Switch to lower case]**,
 * **[!UICONTROL Switch to upper case]**,
@@ -131,7 +131,7 @@ The **[!UICONTROL Transformation]** kan du ändra en kolumnetikett till versaler
 
 ## Steg 6 - Förhandsgranska data {#step-6---preview-data}
 
-The **[!UICONTROL Data preview]** -fönstret är det sista steget. Klicka **[!UICONTROL Start the preview of the data]** för att få fram resultatet av din fråga. Den är tillgänglig i kolumner eller i XML-format. Klicka på **[!UICONTROL Generated SQL queries]** för att visa frågan i SQL-format.
+Fönstret **[!UICONTROL Data preview]** är det sista steget. Klicka på **[!UICONTROL Start the preview of the data]** för att hämta frågeresultatet. Den är tillgänglig i kolumner eller i XML-format. Klicka på fliken **[!UICONTROL Generated SQL queries]** för att visa frågan i SQL-format.
 
 I det här exemplet sorteras data i stigande ordning baserat på mottagarens ålder.
 
@@ -139,4 +139,4 @@ I det här exemplet sorteras data i stigande ordning baserat på mottagarens ål
 
 >[!NOTE]
 >
->Som standard visas endast de första 200 raderna i **[!UICONTROL Data preview]** -fönstret. Om du vill ändra det här anger du ett tal i dialogrutan **[!UICONTROL Lines to display]** och klicka **[!UICONTROL Start the preview of the data]**.
+>Som standard visas endast de första 200 raderna i fönstret **[!UICONTROL Data preview]**. Om du vill ändra det här anger du ett nummer i rutan **[!UICONTROL Lines to display]** och klickar på **[!UICONTROL Start the preview of the data]**.

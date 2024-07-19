@@ -21,7 +21,7 @@ Innan du börjar skicka e-post:
 
 * Kontrollera att mottagarprofilerna innehåller minst en e-postadress.
 * Läs mer om Adobe Campaign [Bästa praxis för leverans](delivery-best-practices.md).
-* Läs mer om Deliverability: [Leveranshantering i Campaign](about-deliverability.md) och [Guide för bästa praxis vid leverans](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html?lang=sv).
+* Läs igenom de här avsnitten för att lära dig mer om leveransbarhet: [Leveranshantering i Campaign](about-deliverability.md) och [Bästa praxis för slutprodukter](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html?lang=sv).
 
 De viktigaste stegen för att skicka e-post är följande:
 

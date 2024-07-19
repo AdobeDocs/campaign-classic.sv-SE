@@ -21,13 +21,13 @@ För att vara säker på att varje händelse kan ändras till ett anpassat medde
 >
 >Händelsetyper måste skapas i förväg. Mer information finns i [Skapa händelsetyper](../../message-center/using/creating-event-types.md).
 
-Mallar för transaktionsmeddelanden innehåller den information som krävs för att personalisera transaktionsmeddelandet. Du kan också använda mallar för att testa förhandsvisningen av meddelanden och skicka korrektur med dirigerade adresser innan du levererar till det slutliga målet. Mer information finns i [Testa mallar för transaktionsmeddelanden](../../message-center/using/testing-message-templates.md).
+Mallar för transaktionsmeddelanden innehåller den information som krävs för att personalisera transaktionsmeddelandet. Du kan också använda mallar för att testa förhandsvisningen av meddelanden och skicka korrektur med dirigerade adresser innan du levererar till det slutliga målet. Mer information finns i [Testa transaktionsmeddelandemallar](../../message-center/using/testing-message-templates.md).
 
 ## Skapa meddelandemallen {#creating-message-template}
 
-1. Gå till **[!UICONTROL Message Center >Transactional message templates]** i Adobe Campaign-trädet.
+1. Gå till mappen **[!UICONTROL Message Center >Transactional message templates]** i Adobe Campaign-trädet.
 
-1. Högerklicka och välj i listan över transaktionsmeddelandemallar **[!UICONTROL New]** i listrutan eller klicka på **[!UICONTROL New]** ovanför listan med transaktionsmeddelandemallar.
+1. Högerklicka och välj **[!UICONTROL New]** i listrutan i listan över transaktionsmeddelandemallar eller klicka på knappen **[!UICONTROL New]** ovanför listan med transaktionsmeddelandemallar.
 
    ![](assets/messagecenter_create_model_001.png)
 
@@ -47,18 +47,18 @@ Mallar för transaktionsmeddelanden innehåller den information som krävs för 
    >
    >En händelsetyp kan inte länkas till mer än en mall.
 
-1. Ange en natur och en beskrivning och klicka sedan på **[!UICONTROL Continue]** för att skapa meddelandetexten (se [Skapa meddelandeinnehållet](#creating-message-content)).
+1. Ange en typ och en beskrivning och klicka sedan på **[!UICONTROL Continue]** för att skapa meddelandetexten (se [Skapa meddelandeinnehållet](#creating-message-content)).
 
    ![](assets/messagecenter_create_model_004.png)
 
 ## Skapa meddelandeinnehållet {#creating-message-content}
 
-Definitionen av transaktionens meddelandeinnehåll är densamma som för vanliga leveranser i Adobe Campaign. För e-postleveranser kan du till exempel skapa innehåll i HTML eller textformat, lägga till bilagor eller anpassa leveransobjektet. Mer information finns i [E-postleverans](../../delivery/using/about-email-channel.md) kapitel.
+Definitionen av transaktionens meddelandeinnehåll är densamma som för vanliga leveranser i Adobe Campaign. För e-postleveranser kan du till exempel skapa innehåll i HTML eller textformat, lägga till bilagor eller anpassa leveransobjektet. Mer information finns i kapitlet [E-postleverans](../../delivery/using/about-email-channel.md).
 
 >[!IMPORTANT]
 >
 >Bilderna i meddelandet måste vara tillgängliga för alla. Adobe Campaign har ingen mekanism för överföring av bilder för transaktionsmeddelanden.\
->Till skillnad från i JSSP eller webApp, `<%=` har ingen standardescape-konvertering.
+>Till skillnad från i JSSP och webApp har `<%=` ingen standardflytning.
 >
 >I det här fallet måste du undvika alla data som kommer från händelsen på rätt sätt. Den här inställningen beror på hur det här fältet används. Använd till exempel encodeURIComponent i en URL. Om du vill visas i HTML kan du använda escapeXMLString.
 
@@ -75,7 +75,7 @@ Gör så här om du vill infoga personaliseringstaggar i brödtexten i ett e-pos
 
 1. Ange meddelandets brödtext.
 
-1. Infoga taggen med hjälp av **[!UICONTROL Real time events > Event XML]** -menyn.
+1. Infoga taggen på menyn **[!UICONTROL Real time events > Event XML]** i texten.
 
    ![](assets/messagecenter_create_custo_002.png)
 
@@ -85,4 +85,4 @@ Gör så här om du vill infoga personaliseringstaggar i brödtexten i ett e-pos
 
 1. Spara innehållet.
 
-Meddelandet är nu klart att skickas [testad](../../message-center/using/testing-message-templates.md).
+Meddelandet är nu klart att [testas](../../message-center/using/testing-message-templates.md).

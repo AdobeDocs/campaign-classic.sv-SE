@@ -34,14 +34,14 @@ Observera att om uppskjutande studsar med meddelandet&quot;452 requested action 
 >
 >Du kan kontrollera Apple System Status Dashboard på [den här sidan](https://www.apple.com/support/systemstatus/){_blank}.
 >
->Du kan kontrollera statusinstrumentpanelen för Google Workspace på [den här sidan](https://www.google.com/appsstatus#hl=en&amp;v=status){_blank}.
+>Du kan kontrollera Google Workspace Status Dashboard på [den här sidan](https://www.google.com/appsstatus#hl=en&amp;v=status){_blank}.
 >
 
 ## Effekt{#update-bounce-impact}
 
 Om en Internet-leverantör skulle råka ut kan e-postmeddelanden som skickas via Campaign inte levereras till mottagaren: dessa e-postmeddelanden markeras felaktigt som studsar.
 
-Enligt standardlogiken för studshantering har Adobe Campaign automatiskt lagt till dessa mottagare i karantänlistan med en **[!UICONTROL Status]** inställning för **[!UICONTROL Quarantine]**. För att korrigera detta måste du uppdatera din karantäntabell i Campaign genom att söka efter och ta bort de här mottagarna eller ändra deras **[!UICONTROL Status]** till **[!UICONTROL Valid]** så att nattrensningsarbetsflödet tar bort dem.
+Med hjälp av standardlogik för studshantering har Adobe Campaign automatiskt lagt till de här mottagarna i karantänlistan med **[!UICONTROL Status]**-inställningen **[!UICONTROL Quarantine]**. För att korrigera detta måste du uppdatera karantäntabellen i Campaign genom att hitta och ta bort de här mottagarna, eller ändra deras **[!UICONTROL Status]** till **[!UICONTROL Valid]** så att de tas bort i nattrensningsarbetsflödet.
 
 Om du vill hitta de mottagare som påverkades av problemet kan du läsa instruktionerna nedan.
 
@@ -51,24 +51,24 @@ Du måste köra en fråga i karantäntabellen för att filtrera bort alla mottag
 
 Baserat på tidsramen för incidenten och Internet-leverantören nedan är de rekommenderade riktlinjerna för frågan.
 
-* För Campaign-miljöer med regelinformation för inkommande e-post i **[!UICONTROL Error text]** karantänlistans fält:
+* För Campaign-miljöer med regelinformation för inkommande e-post i fältet **[!UICONTROL Error text]** i karantänlistan:
 
    * **Feltext (karantäntext)** innehåller &quot;Momen_Code10_InvalidRecipient&quot;
-   * **E-postdomän (@domän)** lika med domain1.com OR **E-postdomän (@domän)** lika med domain2.com OR **E-postdomän (@domän)** lika med domain3.com
-   * **Uppdateringsstatus (@lastModified)** på eller efter `MM/DD/YYYY HH:MM:SS AM`
-   * **Uppdateringsstatus (@lastModified)** på eller före `MM/DD/YYYY HH:MM:SS PM`
+   * **E-postdomänen (@domain)** är lika med domain1.com ELLER **E-postdomänen (@domain)** är lika med domain2.com ELLER **E-postdomän (@domain)** är lika med domain3.com
+   * **Uppdatera status (@lastModified)** på eller efter `MM/DD/YYYY HH:MM:SS AM`
+   * **Uppdatera status (@lastModified)** på eller före `MM/DD/YYYY HH:MM:SS PM`
 
-* För Campaign-miljöer med SMTP-studssvarsinformation i **[!UICONTROL Error text]** karantänlistans fält:
+* För Campaign-miljöer med SMTP-studssvarsinformation i fältet **[!UICONTROL Error text]** i karantänlistan:
 
-   * **Feltext (karantäntext)** innehåller &quot;550-5.1.1&quot; AND **Feltext (karantäntext)** innehåller &quot;support.ISP.com&quot;
+   * **Feltext (karantäntext)** innehåller &quot;550-5.1.1&quot; OCH **Feltexten (karantäntext)** innehåller &quot;support.ISP.com&quot;
 
      där &quot;support.ISP.com&quot; kan vara: &quot;support.apple.com&quot; eller &quot;support.google.com&quot;, till exempel
 
-   * **Uppdateringsstatus (@lastModified)** på eller efter `MM/DD/YYYY HH:MM:SS AM`
-   * **Uppdateringsstatus (@lastModified)** på eller före  `MM/DD/YYYY HH:MM:SS PM`
+   * **Uppdatera status (@lastModified)** på eller efter `MM/DD/YYYY HH:MM:SS AM`
+   * **Uppdatera status (@lastModified)** på eller före `MM/DD/YYYY HH:MM:SS PM`
 
 
-När du har en lista över mottagare som påverkas kan du antingen ställa in deras status **[!UICONTROL Valid]** så att de tas bort från karantänlistan av **[!UICONTROL Database cleanup]** eller bara ta bort dem från tabellen.
+När du har en lista över berörda mottagare kan du antingen ange statusen **[!UICONTROL Valid]** så att de tas bort från karantänlistan av arbetsflödet i **[!UICONTROL Database cleanup]** eller bara ta bort dem från tabellen.
 
 **Relaterade ämnen:**
 * [Förstå leveransfel](understanding-delivery-failures.md)

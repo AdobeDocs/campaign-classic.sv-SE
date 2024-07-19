@@ -44,27 +44,27 @@ Nedan finns en lista över tillgängliga operatorer:
   <tr> 
    <td> <span class="uicontrol">Greater than</span> <br /> </td> 
    <td> Returnerar ett värde som är större än det angivna värdet.<br /> </td> 
-   <td> <strong>Ålder (@age) större än 50</strong>, returnerar alla värden som är större än "50", dvs. "51", "52" osv.<br /> </td> 
+   <td> <strong>Ålder (@age) större än 50</strong>, returnerar alla värden större än 50, dvs. 51, 52 osv.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">Less than</span> <br /> </td> 
    <td> Returnerar ett värde som är mindre än det angivna värdet.<br /> </td> 
-   <td> <strong>Skapad (@created) före 'DaysAgo(100)'</strong>, returnerar alla mottagare som skapades för mindre än 100 dagar sedan.<br /> </td> 
+   <td> <strong>Skapad (@created) före 'DaysAgo(100)'</strong>, returnerar alla mottagare som skapats för mindre än 100 dagar sedan.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">Greater than or equal to</span> <br /> </td> 
    <td> Returnerar alla värden som är lika med eller större än det angivna värdet.<br /> </td> 
-   <td> <strong>Ålder (@age) större än eller lika med 30</strong>, returnerar alla mottagare som är 30 år eller äldre.<br /> </td> 
+   <td> <strong>Ålder (@age) som är större än eller lika med 30</strong> returnerar alla mottagare som är 30 år eller äldre.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">Less than or equal to</span> <br /> </td> 
    <td> Returnerar alla värden som är lika med eller lägre än det angivna värdet.<br /> </td> 
-   <td> <strong>Ålder (@age) mindre än eller lika med 60</strong>, returnerar alla mottagare som är 60 år eller yngre.<br /> </td> 
+   <td> <strong>Ålder (@age) mindre än eller lika med '60'</strong>, returnerar alla mottagare som är 60 år eller yngre.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">Inte lika med</span> <br /> </td> 
    <td> Returnerar alla värden som inte är identiska med det angivna värdet.<br /> </td> 
-   <td> <strong>Språk (@language) till samma som "English"</strong>.<br /> </td> 
+   <td> <strong>Språket (@language) är lika med "English"</strong>.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">Börjar med</span> <br /> </td> 
@@ -72,28 +72,28 @@ Nedan finns en lista över tillgängliga operatorer:
    <td> <strong>Kontonr (@account) börjar med 32010.</strong><br /> </td> 
   </tr> 
   <tr> 
-   <td> <span class="uicontrol">Börjar inte med</span> <br /> </td> 
-   <td> Returnerar resultat som inte börjar med det angivna värdet<br /> </td> 
-   <td> <strong>Kontonr (@account) börjar inte med 20</strong>.<br /> </td> 
+   <td> <span class="uicontrol">Börjar inte med </span> <br /> </td> 
+   <td> Returnerar resultat som inte börjar med det angivna värdet <br /> </td> 
+   <td> <strong>Kontonumret (@account) börjar inte med <br /></strong>. </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">Contains</span> <br /> </td> 
-   <td> Returnerar resultatet som innehåller minst det angivna värdet.<br /> </td> 
-   <td> <strong>E-postdomänen (@domain) innehåller 'mail'</strong>, returnerar alla domännamn som innehåller "mail". Domänen gmail.com returneras alltså också.<br /> </td> 
+   <td> Returnerar resultaten som innehåller minst det angivna värdet.<br /> </td> 
+   <td> <strong>E-postdomänen (@domain) innehåller mail</strong>, returnerar alla domännamn som innehåller mail. Domänen gmail.com returneras alltså också.<br /> </td> 
   </tr> 
   <tr> 
-   <td> <span class="uicontrol">Innehåller inte</span> <br /> </td> 
+   <td> <span class="uicontrol">Innehåller inte </span> <br /> </td> 
    <td> Returnerar resultat som inte innehåller det angivna värdet.<br /> </td> 
    <td> <strong>E-postdomänen (@domain) innehåller inte 'vo'</strong>. I det här fallet returneras inte domännamn som innehåller "vo". Domännamnet voila.fr visas inte i resultatet.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">Like</span> <br /> </td> 
-   <td> <span class="uicontrol">Like</span> är mycket lik operatören <span class="uicontrol">Contains</span>. Du kan infoga en <span class="uicontrol">%</span> jokertecken i värdet.<br /> </td> 
-   <td> <strong>Efternamn (@lastName) som 'Jon%s'</strong>. Här används jokertecknet som"joker" för att hitta namnet"Jones", om operatorn hade glömt den saknade bokstaven mellan"n" och"s".<br /> </td> 
+   <td> <span class="uicontrol">Like</span> är mycket lik operatören <span class="uicontrol">Contains</span>. Du kan infoga ett <span class="uicontrol">%</span> jokertecken i värdet.<br /> </td> 
+   <td> <strong>Efternamn (@lastName) som Jon%s</strong>. Här används jokertecknet som joker för att hitta namnet Jones om operatorn hade glömt den saknade bokstaven mellan n och s.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">Not like</span> <br /> </td> 
-   <td> Liknar <span class="uicontrol">Gilla</span> . Du kan inte återställa det angivna värdet. Även här måste det angivna värdet innehålla jokertecknet <span class="uicontrol">%</span>.<br /> </td> 
+   <td> liknar <span class="uicontrol">Gilla</span> . Du kan inte återställa det angivna värdet. Även här måste det angivna värdet innehålla jokertecknet <span class="uicontrol">%</span>.<br /> </td> 
    <td> <strong>Efternamnet (@lastName) är inte som Smi%h</strong>. Här returneras inte mottagare vars efternamn är Smi%h.<br /> </td> 
   </tr> 
   <tr> 
@@ -103,18 +103,18 @@ Nedan finns en lista över tillgängliga operatorer:
   </tr> 
   <tr> 
    <td> <span class="uicontrol">Är inte tom</span> <br /> </td> 
-   <td> Fungerar baklänges till <span class="uicontrol">Är tom</span> -operator. Du behöver inte ange data i den andra värdekolumnen.<br /> </td> 
+   <td> Fungerar i motsatt riktning till operatorn <span class="uicontrol">Är tom</span>. Du behöver inte ange data i den andra värdekolumnen.<br /> </td> 
    <td> <strong>E-post (@email) är inte tom</strong>.<br /> </td> 
   </tr> 
   <tr> 
-   <td> <span class="uicontrol">Ingår i</span> <br /> </td> 
+   <td> <span class="uicontrol">Ingår i </span> <br /> </td> 
    <td> Returnerar resultat som ingår i de angivna värdena. Dessa värden måste avgränsas med kommatecken.<br /> </td> 
-   <td> <strong>Födelsedatum (@BirthDate) ingår i '12/10/1979,12/10/1984'</strong>, returnerar de mottagare som är födda mellan dessa datum. <br /> </td> 
+   <td> <strong>Födelsedatum (@bornDate) ingår i </strong> (12/10/1979, 12/10/1984), returnerar de mottagare som är födda mellan dessa datum. <br /> </td> 
   </tr> 
   <tr> 
-   <td> <span class="uicontrol">Ingår inte i</span> <br /> </td> 
-   <td> Fungerar som <span class="uicontrol">Ingår i</span> -operator. Här vill vi exkludera mottagare baserat på de angivna värdena.<br /> </td> 
-   <td> <strong>Födelsedatum (@BirthDate) ingår inte i '12/10/1979,12/10/1984'</strong>. Till skillnad från i föregående exempel returneras inte mottagare som fötts inom dessa datum.<br /> </td> 
+   <td> <span class="uicontrol">Ingår inte i </span> <br /> </td> 
+   <td> Fungerar som operatorn <span class="uicontrol">Ingår i</span>. Här vill vi exkludera mottagare baserat på de angivna värdena.<br /> </td> 
+   <td> <strong>Födelsedatum (@BirthDate) ingår inte i </strong> (12/10/1979, 12/10/1984). Till skillnad från i föregående exempel returneras inte mottagare som fötts inom dessa datum.<br /> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -123,11 +123,11 @@ Nedan finns en lista över tillgängliga operatorer:
 
 För frågor som använder flera filtervillkor måste du definiera länkar mellan villkoren. Det finns tre möjliga länkar:
 
-* **[!UICONTROL And]** använder du för att kombinera två filtervillkor,
+* **[!UICONTROL And]** låter dig kombinera två filtreringsvillkor,
 * **[!UICONTROL Or]** låter dig erbjuda ett alternativ,
-* **[!UICONTROL Except]** gör att du kan definiera ett undantag.
+* Med **[!UICONTROL Except]** kan du definiera ett undantag.
 
-Klicka **[!UICONTROL And]** (erbjuds som standard) och välj i listrutan.
+Klicka på **[!UICONTROL And]** (erbjuds som standard) och välj i listrutan.
 
 ![](assets/query_condition_modif_01.png)
 
@@ -159,33 +159,33 @@ I det här avsnittet beskrivs hur du prioriterar villkor tack vare de blå pilar
 
 * Med de lodräta pilarna kan du flytta ett villkor och på så sätt ändra deras körningssekvens.
 
-I det här exemplet visas hur du använder pilen för att ta bort en parentesnivå. Börja med följande filtreringsvillkor: **[!UICONTROL City equal to London OR gender equal to male and mobile not indicated OR account # starts with "95" and company name starts with "A"]**.
+I det här exemplet visas hur du använder pilen för att ta bort en parentesnivå. Starta från följande filtreringsvillkor: **[!UICONTROL City equal to London OR gender equal to male and mobile not indicated OR account # starts with "95" and company name starts with "A"]**.
 
-Placera markören på **[!UICONTROL Gender (@gender) equal to Male]** filtreringsvillkor och klicka på **[!UICONTROL Remove a parenthesis level]** pil.
+Placera markören på filtervillkoret **[!UICONTROL Gender (@gender) equal to Male]** och klicka på pilen **[!UICONTROL Remove a parenthesis level]**.
 
 ![](assets/query_editor_nveau_32.png)
 
-The **[!UICONTROL Gender (@gender) equal to Male]** villkoret har tagits bort ur parentesen. Den har flyttat till samma nivå som villkoret&quot;City equal to London&quot;. Dessa villkor är sammankopplade (**[!UICONTROL And]**).
+Villkoret **[!UICONTROL Gender (@gender) equal to Male]** har tagits bort ur parentesen. Den har flyttat till samma nivå som villkoret&quot;City equal to London&quot;. De här villkoren är sammankopplade (**[!UICONTROL And]**).
 
 ## Välj data som ska extraheras {#selecting-data-to-extract}
 
 De tillgängliga fälten varierar mellan olika tabeller. Alla fält lagras i en huvudnod som kallas **[!UICONTROL Main element]**. I följande exempel finns de tillgängliga fälten i mottagartabellen. Fält visas alltid i bokstavsordning.
 
-Det markerade fältets detaljrikedom visas längst ned i fönstret. Till exempel **[!UICONTROL Email domain]** fältet är ett **[!UICONTROL Calculated SQL field]** och dess förlängning är **[!UICONTROL (@domain)]**.
+Det markerade fältets detaljrikedom visas längst ned i fönstret. Fältet **[!UICONTROL Email domain]** är till exempel ett **[!UICONTROL Calculated SQL field]** och dess tillägg är **[!UICONTROL (@domain)]**.
 
 ![](assets/query_editor_nveau_59.png)
 
 >[!NOTE]
 >
->Använd **[!UICONTROL Search]** för att hitta ett tillgängligt fält.
+>Använd verktyget **[!UICONTROL Search]** för att hitta ett tillgängligt fält.
 
-Dubbelklicka på ett tillgängligt fält för att lägga till det i utdatakolumnerna. I slutet av frågan skapas en kolumn i **[!UICONTROL Data preview]** -fönstret.
+Dubbelklicka på ett tillgängligt fält för att lägga till det i utdatakolumnerna. I slutet av frågan skapar varje markerat fält en kolumn i fönstret **[!UICONTROL Data preview]**.
 
 ![](assets/query_editor_nveau_01.png)
 
-Avancerade fält visas inte som standard. Klicka **[!UICONTROL Display advanced fields]** i det nedre högra hörnet av de tillgängliga fälten för att visa allt. Klicka en gång till för att återgå till den tidigare vyn.
+Avancerade fält visas inte som standard. Klicka på **[!UICONTROL Display advanced fields]** längst ned till höger i de tillgängliga fälten för att visa allt. Klicka en gång till för att återgå till den tidigare vyn.
 
-I mottagartabellen är till exempel de avancerade fälten **Boolean 1**, **[!UICONTROL Boolean 2]**, **[!UICONTROL Boolean 3]**, **[!UICONTROL Foreign key of "Folder" link]**, osv.
+I mottagartabellen är de avancerade fälten till exempel **Boolean 1**, **[!UICONTROL Boolean 2]**, **[!UICONTROL Boolean 3]**, **[!UICONTROL Foreign key of "Folder" link]**.
 
 I följande exempel visas de avancerade fälten i mottagartabellen.
 
@@ -198,13 +198,13 @@ De olika kategorierna av fält:
   <tr> 
    <th> Ikon<br /> </th> 
    <th> Beskrivning<br /> </th> 
-   <th> Exempel<br /> </th> 
+   <th> Exempel <br /> </th> 
   </tr> 
  </thead> 
  <tbody> 
   <tr> 
    <td> <img height="21px" src="assets/query_editor_nveau_47.png" /> </td> 
-   <td> Enkelt fält<br /> </td> 
+   <td> Enkelt fält <br /> </td> 
    <td> E-post, kön osv.<br /> </td> 
   </tr> 
   <tr> 
@@ -215,7 +215,7 @@ De olika kategorierna av fält:
   <tr> 
    <td> <img height="21px" src="assets/query_editor_nveau_02.png" /> </td> 
    <td> Sekundärnyckel. Används som en länk till en annan tabell.<br /> </td> 
-   <td> Mottagarens främmande nyckel, tjänstens externa nyckel osv.<br /> </td> 
+   <td> Mottagarens sekundärnyckel, tjänstens externa nyckel osv.<br /> </td> 
   </tr> 
   <tr> 
    <td> <img height="21px" src="assets/query_editor_nveau_46.png" /> </td> 
@@ -253,7 +253,7 @@ Länka till en tabell och ett samlingselement:
   </tr> 
   <tr> 
    <td> <img height="21px" src="assets/query_editor_nveau_52.png" /> </td> 
-   <td> Samlingselement i en viss tabell. Dessa sammanfaller med 1-N-typassociationer. En källtabellförekomst kan sammanfalla med flera förekomster av måltabellen, men en förekomst av måltabellen kan sammanfalla med endast en förekomst av källtabellen. En mottagare kan t.ex. prenumerera på 'n'.<br /> </td> 
+   <td> Samlingselement i en viss tabell. Dessa sammanfaller med 1-N-typassociationer. En källtabellförekomst kan sammanfalla med flera förekomster av måltabellen, men en förekomst av måltabellen kan sammanfalla med endast en förekomst av källtabellen. En mottagare kan till exempel prenumerera på 'n'-prenumerationsbrev.<br /> </td> 
    <td> Prenumerationer, listor, undantagsloggar osv.<br /> </td> 
   </tr> 
  </tbody> 
@@ -261,10 +261,10 @@ Länka till en tabell och ett samlingselement:
 
 >[!NOTE]
 >
->* Använd **[!UICONTROL Add]** (ovanför sidikonfältet) för att lägga till en utdatakolumn där vi vill redigera uttrycket. Mer information om hur du redigerar ett uttryck finns i [det här avsnittet](#building-expressions).
->* Ta bort en utdatakolumn genom att klicka på det röda x-tecknet (**Ta bort**).
+>* Använd knappen **[!UICONTROL Add]** (ovanför sidikonfältet) för att lägga till en utdatakolumn där vi vill redigera uttrycket. Mer information om hur du redigerar ett uttryck finns i [det här avsnittet](#building-expressions).
+>* Ta bort en utdatakolumn genom att klicka på den röda x (**Ta bort**).
 >* Ändra ordningen på utdatakolumnerna med hjälp av pilarna.
->* The **[!UICONTROL Distribution of values]** används som ett sätt att visa fördelningen av värdena för det valda fältet (t.ex. fördelningar kopplade till mottagarorter, mottagarspråk osv.).
+>* **[!UICONTROL Distribution of values]** fungerar som ett sätt att visa fördelningen av värdena för det valda fältet (t.ex. distributioner som är kopplade till mottagarorter, mottagarspråk osv.).
 
 ## Skapa beräknade fält {#creating-calculated-fields}
 
@@ -278,11 +278,11 @@ Det finns fyra typer av beräknade fält:
 
   ![](assets/query_editor_nveau_60.png)
 
-* **[!UICONTROL String with JavaScript tags]**: värdet för beräkningsfältet kombinerar en teckensträng och JavaScript-direktiv.
+* **[!UICONTROL String with JavaScript tags]**: Värdet för beräkningsfältet kombinerar en teckensträng och JavaScript-direktiv.
 
   ![](assets/query_editor_nveau_61.png)
 
-* **[!UICONTROL JavaScript expression]**: värdet för beräkningsfältet är resultatet av en JavaScript-funktionsutvärdering. Det returnerade värdet kan skrivas in (tal, datum osv.).
+* **[!UICONTROL JavaScript expression]**: Värdet för beräkningsfältet är resultatet av en JavaScript-funktionsutvärdering. Det returnerade värdet kan skrivas in (tal, datum osv.).
 
   ![](assets/query_editor_nveau_62.png)
 
@@ -290,20 +290,20 @@ Det finns fyra typer av beräknade fält:
 
   Det går att använda källvärdet för en kolumn och ge den ett målvärde. Det här målvärdet visas i den nya utdatakolumnen.
 
-  Ett exempel på hur du lägger till en beräknad fälttyp **[!UICONTROL Enumerations]** är tillgänglig, se [det här avsnittet](../../workflow/using/adding-enumeration-type-calculated-field.md).
+  Ett exempel på hur du lägger till den beräknade fälttypen **[!UICONTROL Enumerations]** finns i [det här avsnittet](../../workflow/using/adding-enumeration-type-calculated-field.md).
 
   ![](assets/query_editor_nveau_63.png)
 
-  The **[!UICONTROL Enumerations]** beräkningsfält av typen kan innehålla fyra villkor:
+  Beräkningsfältet av typen **[!UICONTROL Enumerations]** kan innehålla fyra villkor:
 
    * **[!UICONTROL Keep the source value]** återställer källvärdet till målet utan att ändra det.
-   * **[!UICONTROL Use the following value]** gör att du kan ange ett standardmålvärde för icke-definierade källvärden.
+   * Med **[!UICONTROL Use the following value]** kan du ange ett standardmålvärde för icke-definierade källvärden.
    * **[!UICONTROL Generate a warning and continue]** varnar användaren om att källvärdet inte kan ändras.
    * **[!UICONTROL Generate an error and reject the line]** förhindrar att raden beräknas och importeras.
 
 Klicka på **[!UICONTROL Detail of calculated field]** om du vill visa detaljerna för det infogade fältet.
 
-Om du vill ta bort det här beräknade fältet klickar du på **[!UICONTROL Remove the calculated field]** kors.
+Klicka på krysset **[!UICONTROL Remove the calculated field]** om du vill ta bort det här beräknade fältet.
 
 ![](assets/query_editor_nveau_58.png)
 
@@ -315,7 +315,7 @@ I följande exempel visas hur du kör ett antal på en primärnyckel.
 
 Använd följande steg:
 
-1. Klicka **[!UICONTROL Add]** i **[!UICONTROL Data to extract]** -fönstret. I **[!UICONTROL Formula type]** väljer du en typ av formel som du vill ange uttrycket för.
+1. Klicka på **[!UICONTROL Add]** i fönstret **[!UICONTROL Data to extract]**. I fönstret **[!UICONTROL Formula type]** väljer du en typ av formel att ange uttrycket för.
 
    Det finns flera typer av formler: **[!UICONTROL Field only]**, **[!UICONTROL Aggregate]**, **[!UICONTROL Expression]**.
 
@@ -327,22 +327,22 @@ Använd följande steg:
 
    ![](assets/query_editor_nveau_88.png)
 
-Här är en detaljerad vy över de alternativ som finns i **[!UICONTROL Formula types]** window:
+Här är en detaljerad vy över de alternativ som är tillgängliga i fönstret **[!UICONTROL Formula types]**:
 
 ![](assets/query_editor_nveau_05.png)
 
-1. **[!UICONTROL Field only]** kan du gå tillbaka till **[!UICONTROL Field to select]** -fönstret.
+1. **[!UICONTROL Field only]** låter dig återgå till fönstret **[!UICONTROL Field to select]**.
 1. **[!UICONTROL Aggregate (Process on an aggregate function)]**. Här är några exempel på användning av ballast:
 
-   * **[!UICONTROL Count]** gör att du kan köra ett primärnyckelantal.
-   * **[!UICONTROL Sum]** gör att ni kan lägga till alla inköp som görs av en kund under ett år.
-   * **[!UICONTROL Maximum value]** Här kan du hitta de kunder som har köpt de mest&quot;n&quot;-produkterna.
-   * **[!UICONTROL Minimum value]** kan du sortera bland kunder och hitta dem som senast har prenumererat på ett erbjudande.
+   * Med **[!UICONTROL Count]** kan du köra ett primärnyckelantal.
+   * Med **[!UICONTROL Sum]** kan du lägga till alla inköp som gjorts av en kund under ett år.
+   * Med **[!UICONTROL Maximum value]** kan du hitta de kunder som har köpt de mest&quot;n&quot;-produkterna.
+   * Med **[!UICONTROL Minimum value]** kan du sortera bland kunder och hitta de som senast har prenumererat på ett erbjudande.
    * **[!UICONTROL Average]**. Med den här funktionen kan du beräkna medelåldern för mottagarna.
 
-     The **[!UICONTROL Distinct]** kan du återställa unika värden och värden som inte är noll i en kolumn. Du kan till exempel återställa alla en mottagares spårningsloggar och dessa spårningsloggar ändras till värdet 1 eftersom alla gäller samma mottagare.
+     I rutan **[!UICONTROL Distinct]** kan du återställa unika värden och värden som inte är noll i en kolumn. Du kan till exempel återställa alla en mottagares spårningsloggar och dessa spårningsloggar ändras till värdet 1 eftersom alla gäller samma mottagare.
 
-1. **[!UICONTROL Expression]** öppnar **[!UICONTROL Edit the expression]** -fönstret. Detta gör att du kan identifiera telefonnummer med för många siffror, vilket sannolikt är indatafel.
+1. **[!UICONTROL Expression]** öppnar fönstret **[!UICONTROL Edit the expression]**. Detta gör att du kan identifiera telefonnummer med för många siffror, vilket sannolikt är indatafel.
 
    ![](assets/query_editor_nveau_71.png)
 
@@ -350,7 +350,7 @@ Här är en detaljerad vy över de alternativ som finns i **[!UICONTROL Formula 
 
 ## Lista över funktioner {#list-of-functions}
 
-Om en **[!UICONTROL Expression]** När du väljer typograf kommer du till fönstret&quot;redigera uttrycket&quot;. Olika funktionskategorier kan kopplas till de tillgängliga fälten: **[!UICONTROL Aggregates]**, **[!UICONTROL String]**, **[!UICONTROL Date]**, **[!UICONTROL Numerical]**, **[!UICONTROL Currency]**, **[!UICONTROL Geomarketing]**, **[!UICONTROL Windowing function]** och **[!UICONTROL Others]**.
+Om du väljer en **[!UICONTROL Expression]**-typformel kommer du till fönstret&quot;redigera uttrycket&quot;. Olika funktionskategorier kan kopplas till de tillgängliga fälten: **[!UICONTROL Aggregates]**, **[!UICONTROL String]**, **[!UICONTROL Date]**, **[!UICONTROL Numerical]**, **[!UICONTROL Currency]**, **[!UICONTROL Geomarketing]**, **[!UICONTROL Windowing function]** och **[!UICONTROL Others]**.
 
 Uttrycksredigeraren ser ut så här:
 
@@ -368,14 +368,14 @@ Här kan du markera fält i databastabellerna och lägga till avancerade funktio
    <td> <strong>Syntax</strong><br /> </td> 
   </tr> 
   <tr> 
-   <td> <strong>Genomsnittlig</strong><br /> </td> 
-   <td> Returnerar medelvärdet för en taltypskolumn<br /> </td> 
-   <td> Avg(&lt;value&gt;)<br /></td> 
+   <td> <strong>Medel</strong><br /> </td> 
+   <td> Returnerar medelvärdet för en taltypskolumn <br /> </td> 
+   <td> Avg(&lt;värde&gt;)<br /></td> 
   </tr> 
   <tr> 
    <td> <strong>Antal</strong><br /> </td> 
-   <td> Räknar värden som inte är null i en kolumn<br /> </td> 
-   <td> Count(&lt;value&gt;)<br /></td>  
+   <td> Räknar värden som inte är null i en kolumn <br /> </td> 
+   <td> Count(&lt;värde&gt;)<br /></td>  
   </tr> 
   <tr> 
    <td> <strong>CountAll</strong><br /> </td> 
@@ -383,29 +383,29 @@ Här kan du markera fält i databastabellerna och lägga till avancerade funktio
    <td> CountAll()<br /> </td> 
   </tr> 
   <tr> 
-   <td> <strong>Motdistinkt</strong><br /> </td> 
-   <td> Räknar de distinkta icke-null-värdena för en kolumn<br /> </td> 
-   <td> CountDict(&lt;value&gt;)<br /></td> 
+   <td> <strong>Motskild</strong><br /> </td> 
+   <td> Räknar distinkta icke-null-värden för en kolumn <br /> </td> 
+   <td> Countdistans(&lt;värde&gt;)<br /></td> 
   </tr> 
   <tr> 
    <td> <strong>Max</strong><br /> </td> 
-   <td> Returnerar det maximala värdet för en kolumn av typen tal, sträng eller datum<br /> </td> 
-   <td> Max(&lt;value&gt;)<br /></td>  
+   <td> Returnerar det maximala värdet för en tal-, sträng- eller datumtypskolumn <br /> </td> 
+   <td> Max(&lt;värde&gt;)<br /></td>  
   </tr> 
   <tr> 
    <td> <strong>Min</strong><br /> </td> 
-   <td> Returnerar det minsta värdet för en kolumn av typen tal, sträng eller datum<br /> </td> 
-   <td> Min(&lt;value&gt;)<br /></td> 
+   <td> Returnerar det minsta värdet för en tal-, sträng- eller datumtypskolumn <br /> </td> 
+   <td> Min(&lt;värde&gt;)<br /></td> 
   </tr> 
   <tr> 
    <td> <strong>StdDev</strong><br /> </td> 
-   <td> Returnerar standardavvikelsen för ett tal, en sträng eller en datumkolumn<br /> </td> 
-   <td> StdDev(&lt;value&gt;)<br /></td> 
+   <td> Returnerar standardavvikelsen för ett tal, en sträng eller en datumkolumn <br /> </td> 
+   <td> StdDev(&lt;värde&gt;)<br /></td> 
   </tr> 
   <tr> 
    <td> <strong>Summa</strong><br /> </td> 
-   <td> Returnerar summan av värdena för en kolumn av typen tal, sträng eller datum<br /> </td> 
-   <td> Sum(&lt;value&gt;)<br /></td> 
+   <td> Returnerar summan av värdena för en tal-, sträng- eller datumtypskolumn <br /> </td> 
+   <td> Sum(&lt;värde&gt;)<br /></td> 
   </tr> 
  </tbody> 
 </table>
@@ -422,92 +422,92 @@ Här kan du markera fält i databastabellerna och lägga till avancerade funktio
   <tr> 
    <td> <strong>AllNonNull2</strong><br /> </td> 
    <td> Anger om alla parametrar inte är null och inte tomma<br /> </td> 
-   <td> AllNonNull2(&lt;string&gt;, &lt;string&gt;)<br /></td> 
+   <td> AllNonNull2(&lt;sträng&gt;, &lt;sträng&gt;)<br /></td> 
   </tr> 
   <tr> 
    <td> <strong>AllNonNull3</strong><br /> </td> 
    <td> Anger om alla parametrar inte är null och inte tomma<br /> </td> 
-   <td> AllNonNull3(&lt;string&gt;, &lt;string&gt;, &lt;string&gt;)<br /></td> 
+   <td> AllNonNull3(&lt;sträng&gt;, &lt;sträng&gt;, &lt;sträng&gt;)<br /></td> 
   </tr> 
   <tr> 
    <td> <strong>Ascii</strong><br /> </td> 
    <td> Returnerar ASCII-värdet för det första tecknet i strängen.<br /> </td> 
-   <td> Ascii()&lt;string&gt;)<br /></td> 
+   <td> Ascii(&lt;sträng&gt;)<br /></td> 
   </tr> 
   <tr> 
    <td> <strong>Char</strong><br /> </td> 
    <td> Returnerar tecknet som motsvarar ASCII-koden "n"<br /> </td> 
-   <td> Char(&lt;number&gt;)<br /></td>  
+   <td> Char(&lt;tal&gt;)<br /></td>  
   </tr> 
   <tr> 
    <td> <strong>Charindex</strong><br /> </td> 
    <td> Returnerar positionen för sträng 2 i sträng 1.<br /> </td> 
-   <td> Charindex(&lt;string&gt;, &lt;string&gt;)<br /></td> 
+   <td> Charindex(&lt;sträng&gt;, &lt;sträng&gt;)<br /></td> 
   </tr> 
   <tr> 
    <td> <strong>GetLine</strong><br /> </td> 
    <td> Returnerar den n:e raden (från 1 till n) i strängen<br /> </td> 
-   <td> GetLine(&lt;string&gt;)<br /></td> 
+   <td> GetLine(&lt;sträng&gt;)<br /></td> 
   </tr> 
   <tr> 
    <td> <strong>IfEquals</strong><br /> </td> 
-   <td> Returnerar den tredje parametern om de två första parametrarna är lika. Om inte returneras den sista parametern<br /> </td> 
-   <td> IfEquals(&lt;string&gt;, &lt;string&gt;, &lt;string&gt;, &lt;string&gt;)<br /></td> 
+   <td> Returnerar den tredje parametern om de två första parametrarna är lika. Om inte returneras den sista parametern <br /> </td> 
+   <td> IfEquals(&lt;sträng&gt;, &lt;sträng&gt;, &lt;sträng&gt;, &lt;sträng&gt;)<br /></td> 
   </tr> 
   <tr> 
    <td> <strong>IsMemoNull</strong><br /> </td> 
    <td> Anger om PM:et som skickas som en parameter är null<br /> </td> 
-   <td> IsMemoNull()&lt;memo&gt;)<br /></td> 
+   <td> IsMemoNull(&lt;PM&gt;)<br /></td> 
   </tr> 
   <tr> 
    <td> <strong>JuxtWords</strong><br /> </td> 
-   <td> Sammanfogar de strängar som skickas som parametrar. Lägger till mellanrum mellan strängarna om det behövs.<br /> </td> 
-   <td> JuxtWords(&lt;string&gt;, &lt;string&gt;)<br /></td> 
+   <td> Sammanfogar de strängar som skickas som parametrar. Lägger till blanksteg mellan strängarna om det behövs.<br /> </td> 
+   <td> JuxtWords(&lt;sträng&gt;, &lt;sträng&gt;)<br /></td> 
   </tr> 
   <tr> 
    <td> <strong>JuxtWords3</strong><br /> </td> 
-   <td> Sammanfogar de strängar som skickas som parametrar. Lägger till mellanrum mellan strängarna om det behövs<br /> </td> 
-   <td> JuxtWords3(&lt;string&gt;, &lt;string&gt;, &lt;string&gt;)<br /></td>  
+   <td> Sammanfogar de strängar som skickas som parametrar. Lägger till blanksteg mellan strängarna om det behövs <br /> </td> 
+   <td> JuxtWords3(&lt;sträng&gt;, &lt;sträng&gt;, &lt;sträng&gt;)<br /></td>  
   </tr> 
   <tr> 
    <td> <strong>LPad</strong><br /> </td> 
    <td> Returnerar den slutförda strängen till vänster<br /> </td> 
-   <td> LPad(&lt;string&gt;, &lt;number&gt;, &lt;character&gt;)<br /></td> 
+   <td> LPad(&lt;sträng&gt;, &lt;tal&gt;, &lt;tecken&gt;)<br /></td> 
   </tr> 
   <tr> 
    <td> <strong>Left</strong><br /> </td> 
    <td> Returnerar de första n tecknen i strängen<br /> </td> 
-   <td> Left()&lt;string&gt;, &lt;number&gt;)<br /></td> 
+   <td> Left(&lt;sträng&gt;, &lt;tal&gt;)<br /></td> 
   </tr> 
   <tr> 
    <td> <strong>Length</strong><br /> </td> 
-   <td> Returnerar strängens längd<br /> </td> 
-   <td> Length(&lt;string&gt;)<br /></td> 
+   <td> Returnerar längden på strängen <br /> </td> 
+   <td> Length(&lt;sträng&gt;)<br /></td> 
   </tr> 
   <tr> 
    <td> <strong>Lower</strong><br /> </td> 
    <td> Returnerar strängen i gemener<br /> </td> 
-   <td> Lower(&lt;string&gt;)<br /></td> 
+   <td> Lower(&lt;sträng&gt;)<br /></td> 
   </tr> 
   <tr> 
    <td> <strong>Ltrim</strong><br /> </td> 
    <td> Tar bort blanksteg till vänster om strängen<br /> </td> 
-   <td> Ltrim(&lt;string&gt;)<br /></td> 
+   <td> Ltrim(&lt;sträng&gt;)<br /></td> 
   </tr> 
   <tr> 
    <td> <strong>Md5Digest</strong><br /> </td> 
    <td> Returnerar en hexadecimal representation av MD5-nyckeln för en sträng<br /> </td> 
-   <td> Md5Digest()&lt;string&gt;)<br /></td> 
+   <td> Md5Digest(&lt;sträng&gt;)<br /></td> 
   </tr> 
   <tr> 
    <td> <strong>PMContains</strong><br /> </td> 
    <td> Anger om PM:et innehåller den sträng som skickas som en parameter<br /> </td> 
-   <td> MemoContains(&lt;memo&gt;, &lt;string&gt;)<br /></td> 
+   <td> MemoContains(&lt;PM&gt;, &lt;sträng&gt;)<br /></td> 
   </tr> 
   <tr> 
    <td> <strong>RPad</strong><br /> </td> 
    <td> Returnerar den slutförda strängen till höger<br /> </td> 
-   <td> RPad(&lt;string&gt;, &lt;number&gt;, &lt;character&gt;)<br /></td> 
+   <td> RPad(&lt;sträng&gt;, &lt;tal&gt;, &lt;tecken&gt;)<br /></td> 
   </tr> 
   <tr> 
    <td> <strong>Right</strong><br /> </td> 
@@ -532,7 +532,7 @@ Här kan du markera fält i databastabellerna och lägga till avancerade funktio
   <tr> 
    <td> <strong>ToString</strong><br /> </td> 
    <td> Konverterar talet till en sträng<br /> </td> 
-   <td> ToString()&lt;number&gt;, &lt;number&gt;)<br /> </td>  
+   <td> ToString(&lt;tal&gt;, &lt;tal&gt;)<br /> </td>  
   </tr> 
   <tr> 
    <td> <strong>Upper</strong><br /> </td> 
@@ -551,8 +551,8 @@ Här kan du markera fält i databastabellerna och lägga till avancerade funktio
   </tr> 
   <tr> 
    <td> <strong>dataLength</strong><br /> </td> 
-   <td> Returnerar strängstorleken<br /> </td> 
-   <td> dataLength(&lt;string&gt;)<br /> </td>  
+   <td> Returnerar strängstorleken <br /> </td> 
+   <td> dataLength(&lt;sträng&gt;)<br /> </td>  
   </tr> 
  </tbody> 
 </table>
@@ -608,17 +608,17 @@ Här kan du markera fält i databastabellerna och lägga till avancerade funktio
   </tr> 
   <tr> 
    <td> <strong>DayOfYear</strong><br /> </td> 
-   <td> Returnerar numret på dagen i datumåret<br /> </td> 
+   <td> Returnerar antalet dagar i året för datumet <br /> </td> 
    <td> DayOfYear(&lt;datum&gt;)<br /> </td>  
   </tr> 
   <tr> 
    <td> <strong>DaysAgo</strong><br /> </td> 
-   <td> Returnerar det datum som motsvarar aktuellt datum minus n dagar<br /> </td> 
+   <td> Returnerar det datum som motsvarar aktuellt datum minus n dagar <br /> </td> 
    <td> DaysAgo(&lt;tal&gt;)<br /> </td>  
   </tr> 
   <tr> 
    <td> <strong>DaysAgoInt</strong><br /> </td> 
-   <td> Returnerar det datum (heltal åååmmdd) som motsvarar det aktuella datumet minus n dagar<br /> </td> 
+   <td> Returnerar det datum (heltal åååmmdd) som motsvarar det aktuella datumet minus n dagar <br /> </td> 
    <td> DaysAgoInt(&lt;tal&gt;)<br /> </td>  
   </tr> 
   <tr> 
@@ -744,7 +744,7 @@ Här kan du markera fält i databastabellerna och lägga till avancerade funktio
   <tr> 
    <td> <strong>TruncTime</strong><br /> </td> 
    <td> Avrundar tidsdelen upp till närmaste sekund<br /> </td> 
-   <td> TruncTim(e)&lt;date&gt;, &lt;number of="" seconds=""&gt;)<br /> </td>  
+   <td> TruncTim(e&lt;datum&gt;, &lt;antal sekunder&gt;)<br /> </td>  
   </tr> 
   <tr> 
    <td> <strong>TruncWeek</strong><br /> </td> 
@@ -786,7 +786,7 @@ Här kan du markera fält i databastabellerna och lägga till avancerade funktio
 
 >[!NOTE]
 >
->Observera att **Endast datum** funktionen tar hänsyn till serverns tidszon, inte operatorns.
+>Observera att funktionen **Dateonly** tar hänsyn till serverns tidszon, inte till operatorns.
 
 **Numeriskt**
 
@@ -809,7 +809,7 @@ Här kan du markera fält i databastabellerna och lägga till avancerade funktio
   </tr> 
   <tr> 
    <td> <strong>Floor</strong><br /> </td> 
-   <td> Returnerar det största heltalet större än eller lika med ett tal<br /> </td> 
+   <td> Returnerar det största heltalet större än eller lika med ett tal <br /> </td> 
    <td> Floor(&lt;tal&gt;)<br /> </td>  
   </tr> 
   <tr> 
@@ -881,13 +881,13 @@ Här kan du markera fält i databastabellerna och lägga till avancerade funktio
   </tr> 
   <tr> 
    <td> <strong>ConvertCurrency</strong><br /> </td> 
-   <td> Konverterar ett belopp i en källvaluta till ett belopp i en målvaluta<br /> </td> 
-   <td> ConvertCurrency()&lt;amount&gt;, &lt;source currency=""&gt;, &lt;target currency=""&gt;, &lt;conversion date=""&gt;)<br /> </td>  
+   <td> Konverterar ett belopp i en källvaluta till ett belopp i målvalutan <br /> </td> 
+   <td> ConvertCurrency(&lt;belopp&gt;, &lt;källvaluta&gt;, &lt;målvaluta&gt;, &lt;konverteringsdatum&gt;)<br /> </td>  
   </tr> 
   <tr> 
    <td> <strong>FormatCurrency</strong><br /> </td> 
-   <td> Formaterar det belopp som visas baserat på de valda valutainställningarna<br /> </td> 
-   <td> FormatCurrency()&lt;amount&gt;, &lt;currency&gt;)<br /> </td>  
+   <td> Formaterar det belopp som visas baserat på de valda valutainställningarna <br /> </td> 
+   <td> FormatCurrency(&lt;belopp&gt;, &lt;valuta&gt;)<br /> </td>  
   </tr> 
  </tbody> 
 </table>
@@ -903,7 +903,7 @@ Här kan du markera fält i databastabellerna och lägga till avancerade funktio
   </tr> 
   <tr> 
    <td> <strong>Avstånd</strong><br /> </td> 
-   <td> Returnerar avståndet mellan två punkter som definieras av longitud och latitud, uttryckt i grader.<br /> </td> 
+   <td> Returnerar avståndet mellan två punkter som definieras av deras longitud och latitud, uttryckt i grader.<br /> </td> 
    <td> Distance(&lt;longitud A&gt;, &lt;latitud A&gt;, &lt;longitud B&gt;, &lt;latitud B&gt;)<br /> </td>  
   </tr> 
  </tbody> 
@@ -941,7 +941,7 @@ Här kan du markera fält i databastabellerna och lägga till avancerade funktio
   <tr> 
    <td> <strong>Else</strong><br /> </td> 
    <td> Returnerar värde 1 (kan endast användas som en parameter för case-funktionen)<br /> </td> 
-   <td> Else(&lt;value&gt;, &lt;value&gt;)<br /> </td>  
+   <td> Else(&lt;värde 1&gt;, &lt;värde 2&gt;)<br /> </td>  
   </tr> 
   <tr> 
    <td> <strong>GetEmailDomain</strong><br /> </td> 
@@ -955,7 +955,7 @@ Här kan du markera fält i databastabellerna och lägga till avancerade funktio
   </tr> 
   <tr> 
    <td> <strong>Iif</strong><br /> </td> 
-   <td> Returnerar värdet 1 om uttrycket är true. Om inte returneras värde 2<br /> </td> 
+   <td> Returnerar värdet 1 om uttrycket är true. Om inte returneras värdet 2<br /> </td> 
    <td> Iif(&lt;villkor&gt;, &lt;värde 1&gt;, &lt;värde 2&gt;)<br /> </td>  
   </tr> 
   <tr> 
@@ -965,8 +965,8 @@ Här kan du markera fält i databastabellerna och lägga till avancerade funktio
   </tr> 
   <tr> 
    <td> <strong>IsEmptyString</strong><br /> </td> 
-   <td> Returnerar värde 2 om sträng 1 är tom, annars returneras värde 3<br /> </td> 
-   <td> IsEmptyString()&lt;value&gt;, &lt;value&gt;, &lt;value&gt;)<br /> </td>  
+   <td> Returnerar värdet 2 om strängen 1 är tom, annars returneras värdet 3<br /> </td> 
+   <td> IsEmptyString(&lt;värde 1&gt;, &lt;värde 2&gt;, &lt;värde 3&gt;)<br /> </td>  
   </tr> 
   <tr> 
    <td> <strong>NoNull</strong><br /> </td> 
@@ -990,7 +990,7 @@ Här kan du markera fält i databastabellerna och lägga till avancerade funktio
   </tr> 
   <tr> 
    <td> <strong>When</strong><br /> </td> 
-   <td> Returnerar värdet 1 om uttrycket är true. Annars returneras värde 2 (kan bara användas som en parameter i case-funktionen)<br /> </td> 
+   <td> Returnerar värdet 1 om uttrycket är true. Annars returnerar den värde 2 (kan bara användas som en parameter för fallfunktionen)<br /> </td> 
    <td> When(&lt;tillstånd&gt;, &lt;värde 1&gt;)<br /> </td>  
   </tr> 
  </tbody> 

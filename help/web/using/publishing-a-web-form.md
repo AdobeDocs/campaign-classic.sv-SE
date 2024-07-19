@@ -26,13 +26,13 @@ Följande identifieringsmetoder är möjliga:
 
   Den här krypteringsmetoden använder krypterad Adobe Campaign-identifierare (ID). Den här metoden kan bara användas på ett Adobe Campaign-objekt och det krypterade ID:t kan bara genereras av Adobe Campaign-plattformen.
 
-  När du använder den här metoden måste du anpassa formulärets URL för att kunna leverera till e-postadressen genom att lägga till **`<%=escapeUrl(recipient.cryptedId) %>`** parameter. Mer information finns i [Leverera ett formulär via e-post](#delivering-a-form-via-email).
+  När du använder den här metoden måste du anpassa formulärets URL för att kunna leverera till e-postadressen genom att lägga till parametern **`<%=escapeUrl(recipient.cryptedId) %>`**. Mer information finns i [Leverera ett formulär via e-post](#delivering-a-form-via-email).
 
 * **[!UICONTROL DES encryption]**
 
   ![](assets/s_ncs_admin_survey_preload_methods_001.png)
 
-  Den här krypteringsmetoden använder en extern identifierare (ID) som är länkad till en nyckel som delas av Adobe Campaign och den externa providern. The **[!UICONTROL Des key]** kan du ange den här krypteringsnyckeln.
+  Den här krypteringsmetoden använder en extern identifierare (ID) som är länkad till en nyckel som delas av Adobe Campaign och den externa providern. I fältet **[!UICONTROL Des key]** kan du ange den här krypteringsnyckeln.
 
 * **[!UICONTROL List of fields]**
 
@@ -40,11 +40,11 @@ Följande identifieringsmetoder är möjliga:
 
   ![](assets/s_ncs_admin_survey_preload_methods_002.png)
 
-  Fält kan läggas till i formuläregenskaperna via **[!UICONTROL Parameters]** flik (se [Lägga till parametrar](defining-web-forms-properties.md#adding-parameters)). De placeras i formulärets URL-adress eller indatazoner.
+  Du kan lägga till fält i formuläregenskaperna via fliken **[!UICONTROL Parameters]** (se [Lägga till parametrar](defining-web-forms-properties.md#adding-parameters)). De placeras i formulärets URL-adress eller indatazoner.
 
   >[!CAUTION]
   >
-  >Data i de markerade fälten är inte krypterade. Den får inte tillhandahållas i krypterad form eftersom Adobe Campaign inte kan dekryptera den om **[!UICONTROL Field list]** är markerat.
+  >Data i de markerade fälten är inte krypterade. Den får inte anges i krypterad form eftersom Adobe Campaign inte kan dekryptera den om alternativet **[!UICONTROL Field list]** har valts.
 
   I följande exempel baseras förinläsningen av profiler på e-postadressen.
 
@@ -58,15 +58,15 @@ Följande identifieringsmetoder är möjliga:
 
   >[!CAUTION]
   >
-  >Om flera fält anges i listan är data från **ALLA FÄLT** måste matcha de data som lagras i databasen för att profilen ska kunna uppdateras. I annat fall skapas en ny profil.
+  >Om flera fält anges i listan måste data för **ALLA FÄLT** matcha data som lagras i databasen för att profilen ska kunna uppdateras. I annat fall skapas en ny profil.
   > 
   >Den här funktionen är särskilt användbar för webbprogram, men rekommenderas inte för offentliga formulär. Det valda åtkomstkontrollalternativet måste vara &quot;Aktivera åtkomstkontroll&quot;.
 
-The **[!UICONTROL Skip preloading if no ID]** Du måste markera det här alternativet om du inte vill uppdatera profiler. I det här fallet läggs alla profiler som anges till i databasen när formuläret har godkänts. Det här alternativet används till exempel när formuläret publiceras på en webbplats.
+Alternativet **[!UICONTROL Skip preloading if no ID]** måste vara markerat om du inte vill uppdatera profiler. I det här fallet läggs alla profiler som anges till i databasen när formuläret har godkänts. Det här alternativet används till exempel när formuläret publiceras på en webbplats.
 
-The **[!UICONTROL Auto-load data referenced in the form]** kan du automatiskt förhandsladda data som matchar inmatnings- och kopplingsfält i formuläret. Data som refereras i **[!UICONTROL Script]** och **[!UICONTROL Test]** verksamheten inte berörs. Om det här alternativet inte är markerat måste du definiera fälten med **[!UICONTROL Load additional data]** alternativ.
+Med alternativet **[!UICONTROL Auto-load data referenced in the form]** kan du automatiskt förhandsladda data som matchar inmatnings- och kopplingsfält i formuläret. Data som refereras i **[!UICONTROL Script]**- och **[!UICONTROL Test]**-aktiviteter berörs dock inte. Om det här alternativet inte är markerat måste du definiera fälten med alternativet **[!UICONTROL Load additional data]**.
 
-The **[!UICONTROL Load additional data]** Med kan du lägga till information som inte används på formulärets sidor, men som ändå kommer att läsas in i förväg.
+Med alternativet **[!UICONTROL Load additional data]** kan du lägga till information som inte används på formulärets sidor, men som ändå kommer att läsas in i förväg.
 
 Du kan till exempel förhandsladda mottagarens kön och automatiskt dirigera dem till rätt sida via en testruta.
 
@@ -82,7 +82,7 @@ En forms livscykel består av tre steg:
 
 1. **Redigeras**
 
-   Detta är den inledande designfasen. När ett nytt formulär skapas är det i redigeringsfasen. Åtkomst till formuläret, endast i testsyfte, kräver sedan parametern **[!UICONTROL __uuid]** som ska användas i dess URL. Den här URL:en finns i **[!UICONTROL Preview]** underflik. Se [URL-parametrar för formulär](defining-web-forms-properties.md#form-url-parameters).
+   Detta är den inledande designfasen. När ett nytt formulär skapas är det i redigeringsfasen. Åtkomst till formuläret, endast i testningssyfte, kräver sedan att parametern **[!UICONTROL __uuid]** används i dess URL. Den här URL:en är tillgänglig på underfliken **[!UICONTROL Preview]**. Se [Parametrar för formulär-URL](defining-web-forms-properties.md#form-url-parameters).
 
    >[!CAUTION]
    >
@@ -90,25 +90,25 @@ En forms livscykel består av tre steg:
 
 1. **Väntande publikation**
 
-   I vissa fall (till exempel när [importera ett formulär via ett paket](#import-web-packages)) kan ett webbformulär ha **[!UICONTROL Pending publication]** status tills den är live.
+   I vissa fall (till exempel när du [importerar ett formulär via ett paket](#import-web-packages)) kan ett webbformulär ha statusen **[!UICONTROL Pending publication]** tills det är live.
 
    >[!NOTE]
    >
-   >För tekniska webbprogram (tillgängligt via **[!UICONTROL Administration]** > **[!UICONTROL Configuration]** > **[!UICONTROL Web applications]** meny), ett formulär med **[!UICONTROL Pending publication]** status anges automatiskt [publicerad](#publishing-a-form) och får **[!UICONTROL Online]** status.
+   >För tekniska webbprogram (som är tillgängliga via menyn **[!UICONTROL Administration]** > **[!UICONTROL Configuration]** > **[!UICONTROL Web applications]**) blir ett formulär med statusen **[!UICONTROL Pending publication]** automatiskt [ publicerat](#publishing-a-form) och får statusen **[!UICONTROL Online]**.
 
 1. **Online**
 
    När designfasen är klar kan blanketten skickas.
 
-   När ett formulär har **[!UICONTROL Being edited]** eller **[!UICONTROL Pending publication]** status, måste vara [publicerad](#publishing-a-form) vara online och åtkomlig via webbformulärets URL i en webbläsare.
+   När ett formulär har statusen **[!UICONTROL Being edited]** eller **[!UICONTROL Pending publication]** måste det [publiceras](#publishing-a-form) för att vara online och tillgängligt via webbformulärets URL i en webbläsare.
 
    När formuläret har publicerats kommer det att vara öppet tills det går ut.
 
-   Formuläret blir **[!UICONTROL Live]** tills det upphör att gälla.
+   Formuläret kommer att vara **[!UICONTROL Live]** tills det förfaller.
 
    >[!CAUTION]
    >
-   >Formulärets URL får inte innehålla **[!UICONTROL __uuid]** parameter.
+   >Formulärets URL får inte innehålla parametern **[!UICONTROL __uuid]** för att kunna levereras.
 
 1. **Stängd**
 
@@ -122,47 +122,47 @@ Ett formulärs publiceringsstatus visas i formulärlistan.
 
 ### Publicera ett formulär {#publishing-a-form}
 
-Om du vill ändra ett formulärs status måste du publicera det. Klicka på **[!UICONTROL Publication]** ovanför listan med webbformulär och välj läge i listrutan.
+Om du vill ändra ett formulärs status måste du publicera det. Om du vill göra det klickar du på knappen **[!UICONTROL Publication]** ovanför listan med webbformulär och väljer läge i listrutan.
 
 ![](assets/webapp_publish_webform.png)
 
 ### Göra ett formulär tillgängligt online {#making-a-form-available-online}
 
-För att användarna ska kunna komma åt formuläret måste det vara i produktion och ha startats, dvs. inom giltighetsperioden. Giltighetsdatumen anges via **[!UICONTROL Properties]** formulärets länk.
+För att användarna ska kunna komma åt formuläret måste det vara i produktion och ha startats, dvs. inom giltighetsperioden. Giltighetsdatumen anges via länken **[!UICONTROL Properties]** i formuläret.
 
-* Använd fälten i **[!UICONTROL Project]** för att ange start- och slutdatum för formuläret.
+* Använd fälten i avsnittet **[!UICONTROL Project]** för att ange start- och slutdatum för formuläret.
 
   ![](assets/webapp_availability_date.png)
 
-* Klicka på **[!UICONTROL Personalize the message displayed if the form is closed...]** länk för att definiera felmeddelandet som ska visas om användaren försöker få åtkomst till formuläret medan det inte är giltigt.
+* Klicka på länken **[!UICONTROL Personalize the message displayed if the form is closed...]** för att definiera felmeddelandet som ska visas om användaren försöker få åtkomst till formuläret medan det inte är giltigt.
 
   Se [Formulärets tillgänglighet](defining-web-forms-properties.md#accessibility-of-the-form).
 
 ### Leverera ett formulär via e-post {#delivering-a-form-via-email}
 
-När du skickar en inbjudan via e-post kan du använda **[!UICONTROL Adobe Campaign Encryption]** alternativ för datavstämning. Det gör du genom att gå till leveransguiden och anpassa länken till formuläret genom att lägga till följande parameter:
+När du skickar en inbjudan via e-post kan du använda alternativet **[!UICONTROL Adobe Campaign Encryption]** för datavstämning. Det gör du genom att gå till leveransguiden och anpassa länken till formuläret genom att lägga till följande parameter:
 
 ```
 <a href="https://server/webApp/APP264?&id=<%=escapeUrl(recipient.cryptedId) %>">
 ```
 
-I det här fallet måste avstämningsnyckeln för datalagring vara mottagarens krypterade identifierare. Mer information finns i [Läs in formulärdata i förväg](#pre-loading-the-form-data).
+I det här fallet måste avstämningsnyckeln för datalagring vara mottagarens krypterade identifierare. Mer information finns i [Förinläsning av formulärdata](#pre-loading-the-form-data).
 
-I så fall måste du kontrollera **[!UICONTROL Update the preloaded record]** i postrutan. Mer information finns i [Spara svar på webbformulär](web-forms-answers.md#saving-web-forms-answers).
+I det här fallet måste du markera alternativet **[!UICONTROL Update the preloaded record]** i postrutan. Mer information finns i [Spara svar på webbformulär](web-forms-answers.md#saving-web-forms-answers).
 
 ![](assets/s_ncs_admin_survey_save_box_option.png)
 
 ### Loggsvar {#log-responses}
 
-Svarsspårning kan aktiveras på en dedikerad flik för att övervaka effekten av webbformuläret. Klicka på **[!UICONTROL Advanced parameters...]** i fönstret för formuläregenskaper och välj **[!UICONTROL Log responses]** alternativ.
+Svarsspårning kan aktiveras på en dedikerad flik för att övervaka effekten av webbformuläret. Det gör du genom att klicka på länken **[!UICONTROL Advanced parameters...]** i fönstret för formuläregenskaper och välja alternativet **[!UICONTROL Log responses]**.
 
 ![](assets/s_ncs_admin_survey_trace.png)
 
-The **[!UICONTROL Responses]** visas så att du kan visa respondenternas identitet.
+Fliken **[!UICONTROL Responses]** visas så att du kan visa svarandens identitet.
 
 ![](assets/s_ncs_admin_survey_trace_tab.png)
 
-Välj en mottagare och klicka på **[!UICONTROL Detail...]** för att visa de svar som ges.
+Välj en mottagare och klicka på knappen **[!UICONTROL Detail...]** för att visa de svar som ges.
 
 ![](assets/s_ncs_admin_survey_trace_edit.png)
 
@@ -178,23 +178,23 @@ Läs mer om de olika statusvärdena för ett webbformulär i [det här avsnittet
 >
 >När du exporterar ett webbformulär via ett paket visas formulärstatusen i innehållet i det resulterande paketet.
 
-* Om webbformulärets status var **[!UICONTROL Pending publication]** eller **[!UICONTROL Online]** vid export från den första instansen:
+* Om webbformulärets status var **[!UICONTROL Pending publication]** eller **[!UICONTROL Online]** när den exporterades från den första instansen:
 
-   * Webbformuläret får **[!UICONTROL Pending publication]** status när den importeras till den nya instansen.
+   * Webbformuläret får statusen **[!UICONTROL Pending publication]** när det importeras till den nya instansen.
 
-   * Om webbformuläret redan finns på den nya instansen ersätts det med den nya versionen av formuläret och får **[!UICONTROL Pending publication]** status, även om den gamla versionen av formuläret **[!UICONTROL Online]**.
+   * Om webbformuläret redan finns på den nya instansen ersätts det med den nya versionen av formuläret och får statusen **[!UICONTROL Pending publication]**, även om den gamla versionen av formuläret var **[!UICONTROL Online]**.
 
-   * Formuläret måste vara [publicerad](#publishing-a-form) att bli **[!UICONTROL Online]** på den nya instansen och är tillgänglig via webbformulärets URL i en webbläsare.
+   * Oavsett om formuläret fanns eller inte måste formuläret vara [publicerat](#publishing-a-form) för att bli **[!UICONTROL Online]** på den nya instansen och tillgängligt via webbformulärets URL i en webbläsare.
 
 * Om webbformulärets status var **[!UICONTROL Being edited]** vid export:
 
-   * Om webbformuläret är nytt i den instans där paketet importeras, hämtas **[!UICONTROL Being edited]** status.
+   * Om webbformuläret är nytt i den instans där paketet importeras får webbformuläret statusen **[!UICONTROL Being edited]**.
 
-   * Om webbformuläret redan finns på den nya instansen är detta en ändring i ett befintligt formulär. Om den gamla versionen av formuläret var **[!UICONTROL Online]**&#x200B;är den gamla versionen online tills den nya versionen av formuläret är [publicerad](#publishing-a-form) igen på den nya instansen.
+   * Om webbformuläret redan finns på den nya instansen är detta en ändring i ett befintligt formulär. Om den gamla versionen av formuläret var **[!UICONTROL Online]** är den gamla versionen fortfarande online tills den nya versionen av formuläret [publiceras](#publishing-a-form) igen på den nya instansen.
 
   >[!NOTE]
   >
-  >Du kan kontrollera den senaste versionen av webbformuläret med **[!UICONTROL Preview]** -fliken.
+  >Du kan kontrollera den senaste versionen av ditt webbformulär på fliken **[!UICONTROL Preview]**.
 
 <!--For RN:
 * Now, when a web form has the **Pending publication** status, it must be published before it becomes **Online** and accessible through the web form URL in a web browser. [Read more](../../web/using/publishing-a-web-form.md#life-cycle-of-a-form)

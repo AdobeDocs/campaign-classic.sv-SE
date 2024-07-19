@@ -20,4 +20,4 @@ ht-degree: 0%
 
 Så här kan du installera nya teckensnitt på Campaign-programservern.
 
-Nya teckensnitt kan placeras i `/usr/local/share/` på alla behållare där MTA-processen körs.
+Nya teckensnitt kan placeras i mappen `/usr/local/share/` på alla behållare där MTA-processen körs.

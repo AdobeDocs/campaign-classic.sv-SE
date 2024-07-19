@@ -25,8 +25,8 @@ I vår databas finns flera reseerbjudanden för Europa, Afrika, USA och Kanada. 
 
 Vi kommer att konfigurera vår regel så att resan till Kanada endast erbjuds en gång per mottagare och inte erbjuds igen om den avvisas.
 
-1. Gå till Adobe Campaign **[!UICONTROL Administration]** > **[!UICONTROL Campaign management]** > **[!UICONTROL Typology management]** > **[!UICONTROL Typology rules]** nod.
-1. Skapa ett nytt **[!UICONTROL Offer presentation]** typregel.
+1. Gå till noden **[!UICONTROL Administration]** > **[!UICONTROL Campaign management]** > **[!UICONTROL Typology management]** > **[!UICONTROL Typology rules]** i Adobe Campaign-trädet.
+1. Skapa en ny **[!UICONTROL Offer presentation]**-typregel.
 
    ![](assets/offer_typology_example_001.png)
 
@@ -34,11 +34,11 @@ Vi kommer att konfigurera vår regel så att resan till Kanada endast erbjuds en
 
    ![](assets/offer_typology_example_002.png)
 
-1. Välj **[!UICONTROL All channels]** om du vill utöka regeln till alla kanaler.
+1. Välj alternativet **[!UICONTROL All channels]** om du vill utöka regeln till alla kanaler.
 
    ![](assets/offer_typology_example_003.png)
 
-1. Klicka på **[!UICONTROL Edit expression]** länk och välj **[!UICONTROL Category]** som ett uttryck.
+1. Klicka på länken **[!UICONTROL Edit expression]** och välj noden **[!UICONTROL Category]** som ett uttryck.
 
    ![](assets/offer_typology_example_004.png)
 
@@ -46,7 +46,7 @@ Vi kommer att konfigurera vår regel så att resan till Kanada endast erbjuds en
 
    ![](assets/offer_typology_example_005.png)
 
-1. I **[!UICONTROL Offer presentation]** väljer du samma dimensioner som de som har konfigurerats i miljön.
+1. Välj samma dimensioner som de som konfigurerats i miljön på fliken **[!UICONTROL Offer presentation]**.
 
    ![](assets/offer_typology_example_006.png)
 
@@ -58,17 +58,17 @@ Vi kommer att konfigurera vår regel så att resan till Kanada endast erbjuds en
 
    ![](assets/offer_typology_example_008.png)
 
-1. Välj **[!UICONTROL Offers for the same category]** filtrera för att exkludera alla erbjudanden från **Kanada** kategori.
+1. Välj filtret **[!UICONTROL Offers for the same category]** om du vill exkludera alla erbjudanden från kategorin **Kanada**.
 
    ![](assets/offer_typology_example_020.png)
 
-1. Välj **[!UICONTROL Rejected propositions]** filtrera så att endast förslag som avvisats av mottagaren beaktas.
+1. Välj filtret **[!UICONTROL Rejected propositions]** om du bara vill ta med förslag som avvisats av mottagaren.
 
    ![](assets/offer_typology_example_021.png)
 
 1. Välj de mottagare som regeln gäller för.
 
-   I vårt exempel väljer vi **Täta resenärer** mottagare.
+   I vårt exempel väljer vi **Vanliga resenärer**.
 
    ![](assets/offer_typology_example_009.png)
 
@@ -76,7 +76,7 @@ Vi kommer att konfigurera vår regel så att resan till Kanada endast erbjuds en
 
    ![](assets/offer_typology_example_013.png)
 
-1. Gå till erbjudandemiljön, (**Miljö - mottagare** i det här fallet) och hänvisa till den nya typologi som just skapats med listrutan i **[!UICONTROL Eligibility]** -fliken.
+1. Gå till erbjudandemiljön, (**Miljö - mottagare** i det här fallet) och referera till den nya typologin som just skapats med listrutan på fliken **[!UICONTROL Eligibility]**.
 
    ![](assets/offer_typology_example_014.png)
 
@@ -86,16 +86,16 @@ Här är ett programexempel på den typologiregel som skapades tidigare.
 
 Vi vill skicka ett första erbjudande som tillhör kategorin Kanada. Om någon av mottagarna avvisar erbjudandet kommer det inte att erbjudas igen.
 
-1. I **Täta resenärer** väljer du en av profilerna för att se vilka erbjudanden de är berättigade till: klicka på **[!UICONTROL Propositions]** -fliken och sedan **[!UICONTROL Preview]** -fliken.
+1. I mottagarmappen **Frequent travelers** väljer du en av profilerna för att kontrollera de erbjudanden som de är berättigade till: klicka på fliken **[!UICONTROL Propositions]** och sedan på fliken **[!UICONTROL Preview]** .
 
-   I vårt exempel **Tim Ramsey** är berättigade till ett erbjudande som ingår i **Amerika** kategori.
+   I vårt exempel är **Tim Ramsey** berättigad till ett erbjudande som ingår i kategorin **Amerika**.
 
    ![](assets/offer_typology_example_015.png)
 
-1. Börja med att skapa en e-postleverans som riktar sig till **Täta resenärer** mottagare med erbjudanden.
+1. Börja med att skapa en e-postleverans som riktar sig till dina **återkommande resenärer** med erbjudanden.
 1. Välj parametrarna för anropet till erbjudandemotorn.
 
-   I vårt exempel **Resor i Amerika** -kategorin väljs, som innehåller **Kanada** och **Amerikas förenta stater** underkategorier.
+   I vårt exempel väljs kategorin **Resa i Amerika**, som innehåller underkategorierna **Kanada** och **USA**.
 
    ![](assets/offer_typology_example_016.png)
 

@@ -27,7 +27,7 @@ Det här exemplet baseras på följande scenario:
 
 ### Steg 1 - Skapa informationstjänster {#step-1---creating-information-services}
 
-1. Skapa den prenumerationstjänst för nyhetsbrev som ska erbjudas dina mottagare. Mer information om hur du skapar nyhetsbrev finns i [det här avsnittet](../../delivery/using/about-services-and-subscriptions.md).
+1. Skapa den prenumerationstjänst för nyhetsbrev som ska erbjudas dina mottagare. Mer information om hur du skapar ett nyhetsbrev finns i [det här avsnittet](../../delivery/using/about-services-and-subscriptions.md).
 
    ![](assets/s_ncs_admin_survey_double-opt-in_sample_1.png)
 
@@ -39,17 +39,17 @@ Det här exemplet baseras på följande scenario:
 
 Bekräftelsemeddelanden skickas via en dedikerad leveransmall som refereras till på tillfällig tjänstnivå.
 
-1. I **[!UICONTROL Explorer]** , markera **[!UICONTROL Resources > Templates > Delivery templates]**.
+1. I **[!UICONTROL Explorer]** väljer du **[!UICONTROL Resources > Templates > Delivery templates]**.
 1. Skapa en leveransmall för att skicka bekräftelsemeddelanden för prenumerationer.
-1. Klicka på **[!UICONTROL To]** knappen i **[!UICONTROL Email parameters]** om du vill associera leveransmallen med målmappningen för prenumerationer i stället för mottagare.
+1. Klicka på knappen **[!UICONTROL To]** i **[!UICONTROL Email parameters]** för att associera leveransmallen med målmappningen för prenumerationer i stället för mottagare.
 
    ![](assets/s_ncs_admin_survey_double-opt-in_sample_1d.png)
 
 1. Eftersom mottagarna av den här leveransen inte har bekräftat sitt godkännande finns de fortfarande på blockeringslista i databasen. För att de ska kunna ta emot det här meddelandet måste du godkänna leveranser som baseras på den här mallen för att rikta sig till mottagare på blockeringslista.
 
-   Klicka på **[!UICONTROL Exclusions]** -fliken.
+   Klicka på fliken **[!UICONTROL Exclusions]** om du vill göra det.
 
-1. Klicka på **[!UICONTROL Edit...]** länk och avmarkera **[!UICONTROL Exclude recipients who no longer want to be contacted]** alternativ.
+1. Klicka på länken **[!UICONTROL Edit...]** och avmarkera alternativet **[!UICONTROL Exclude recipients who no longer want to be contacted]**.
 
    <!-- ![](assets/s_ncs_admin_survey_double-opt-in_sample_4d.png)-->
 
@@ -79,23 +79,23 @@ Arbetsflödet för webbformulär kommer att innehålla följande aktiviteter:
 
 Gör så här:
 
-1. Skapa ett webbformulär och välj en mall **[!UICONTROL Newsletter subscription (subNewsletter)]**.
+1. Skapa ett webbformulär och välj mallen **[!UICONTROL Newsletter subscription (subNewsletter)]**.
 
    ![](assets/s_ncs_admin_survey_double-opt-in_sample_5a.png)
 
-1. I **[!UICONTROL Edit]** måste vi konfigurera det befintliga arbetsflödet eftersom vi vill lägga till ett bekräftelsemeddelande till mottagarna som vill prenumerera.
+1. På fliken **[!UICONTROL Edit]** måste vi konfigurera det befintliga arbetsflödet eftersom vi vill lägga till ett bekräftelsemeddelande till mottagarna som vill prenumerera.
 
-   Om du vill göra det dubbelklickar du på **[!UICONTROL Preloading]** och konfigurera enligt följande.
+   Om du vill göra det dubbelklickar du på rutan **[!UICONTROL Preloading]** och konfigurerar den enligt följande.
 
    ![](assets/s_ncs_admin_survey_double-opt-in_sample_5b.png)
 
    Det innebär att om användaren öppnar formuläret via länken i bekräftelsemeddelandet, läses profilinformationen in. Om de öppnar webbformuläret via en sida på webbplatsen läses ingen information in.
 
-1. Lägg till en **[!UICONTROL Test]** till ditt arbetsflöde.
+1. Lägg till en **[!UICONTROL Test]**-aktivitet i arbetsflödet.
 
    ![](assets/s_ncs_admin_survey_double-opt-in_sample_6e.png)
 
-   The **[!UICONTROL Test]** aktiviteten kan beröra mottagarens e-postadress. I det här fallet ska du konfigurera det på följande sätt:
+   Aktiviteten **[!UICONTROL Test]** kan beröra mottagarens e-postadress. I det här fallet ska du konfigurera det på följande sätt:
 
    ![](assets/s_ncs_admin_survey_double-opt-in_sample_6d.png)
 
@@ -103,7 +103,7 @@ Gör så här:
 
    ![](assets/s_ncs_admin_survey_double-opt-in_sample_6f.png)
 
-   Den första **[!UICONTROL Script]** aktiviteten lägger till mottagare på blockeringslista tills de har bekräftat sin prenumeration på nyhetsbrevet. Innehållet ska vara följande:
+   Den första **[!UICONTROL Script]**-aktiviteten lägger till mottagare på blockeringslista tills de har bekräftat sin prenumeration på nyhetsbrevet. Innehållet ska vara följande:
 
    ```
    ctx.recipient.@blackList=1
@@ -111,7 +111,7 @@ Gör så här:
 
    ![](assets/s_ncs_admin_survey_double-opt-in_sample_6bbis.png)
 
-   Den andra **[!UICONTROL Script]** aktiviteten tillåter att leveranser skickas till användarna och prenumererar på nyhetsbrevet. De sista två raderna i skriptet gör att du kan överföra dina mottagare från den tillfälliga mappen till en annan mapp och stämma av med befintliga profiler så fort de har bekräftat prenumerationen.
+   Den andra **[!UICONTROL Script]**-aktiviteten tillåter att leveranser skickas till användarna och prenumererar på dem i nyhetsbrevet. De sista två raderna i skriptet gör att du kan överföra dina mottagare från den tillfälliga mappen till en annan mapp och stämma av med befintliga profiler så fort de har bekräftat prenumerationen.
 
    ```
    ctx.recipient.@blackList=0
@@ -122,15 +122,15 @@ Gör så här:
 
    >[!NOTE]
    >
-   >The **[!UICONTROL Temp]** kan även rensas regelbundet med hjälp av ett arbetsflöde.
+   >Partitionen **[!UICONTROL Temp]** kan även rensas regelbundet med hjälp av ett arbetsflöde.
 
    ![](assets/s_ncs_admin_survey_double-opt-in_sample_6b.png)
 
-1. Dubbelklicka på **[!UICONTROL Subscription]** aktivitet för att anpassa prenumerationsformuläret och länka en kryssruta till den temporära tjänst som skapats tidigare.
+1. Dubbelklicka på aktiviteten **[!UICONTROL Subscription]** för att anpassa prenumerationsformuläret och länka en kryssruta till den tillfälliga tjänst som skapats tidigare.
 
    ![](assets/s_ncs_admin_survey_double-opt-in_sample_5c.png)
 
-1. Konfigurera **[!UICONTROL Storage]** för att spara den information som har angetts på formulärsidan.
+1. Konfigurera aktiviteten **[!UICONTROL Storage]** för att spara informationen som anges på formulärsidan.
 
    Med den här aktiviteten kan du skapa mottagarprofiler i en dedikerad tillfällig mapp för att skilja dem från profilerna i databasen som kommunikationen kan skickas till.
 
@@ -142,7 +142,7 @@ Gör så här:
 
 1. Lägg till två **[!UICONTROL End]** aktiviteter för att visa ett meddelande för användaren.
 
-   Den andra **[!UICONTROL End]** visas bekräftelsemeddelandet när prenumerationen är klar.
+   I den andra **[!UICONTROL End]**-rutan visas bekräftelsemeddelandet när prenumerationen är klar.
 
    ![](assets/s_ncs_admin_survey_double-opt-in_sample_5h.png)
 
@@ -166,7 +166,7 @@ Prenumerationen på nyhetsbrevet omfattar följande steg:
 
    ![](assets/s_ncs_admin_survey_double-opt-in_sample_8d.png)
 
-   Användaren läggs till i Adobe Campaign-databasen i **[!UICONTROL Temp]** och deras profil finns på blockeringslista tills de bekräftar sin prenumeration med e-postmeddelandet.
+   Användaren läggs till i Adobe Campaign-databasen i mappen **[!UICONTROL Temp]** och deras profil är på blockeringslista tills de bekräftar sin prenumeration med e-postmeddelandet.
 
    ![](assets/s_ncs_admin_survey_double-opt-in_sample_8f.png)
 

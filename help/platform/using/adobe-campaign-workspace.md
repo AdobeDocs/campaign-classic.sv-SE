@@ -35,11 +35,11 @@ Från den centrala delen av startsidan kan du använda länkar för att få åtk
 
 ### Konsol- och webbåtkomst {#console-and-web-access}
 
-Adobe Campaign-plattformen är tillgänglig via en konsol eller en webbläsare. Se kompatibla webbläsare i [kompatibilitetsmatris](../../rn/using/compatibility-matrix.md#Browsers).
+Adobe Campaign-plattformen är tillgänglig via en konsol eller en webbläsare. Se kompatibla webbläsare i [kompatibilitetsmatrisen](../../rn/using/compatibility-matrix.md#Browsers).
 
 Webbgränssnittet liknar konsolgränssnittet. Från en webbläsare kan du använda samma navigerings- och visningsfunktioner som i konsolen, men du kan bara utföra en reducerad uppsättning åtgärder på kampanjer. Du kan till exempel visa och avbryta kampanjer, men du kan inte ändra dem. För en viss operator visas en kampanj med följande alternativ i konsolen:
 
-![Från kontrollpanelen för en kampanj kan operatorn visa och avbryta en kampanj, men även ändra den och lägga till leveranser, dokument och uppgifter i den.](assets/operation_from_console.png)
+![Operatören kan visa och avbryta en kampanj på kontrollpanelen för en kampanj, men även ändra den och lägga till leveranser, dokument och uppgifter i den.](assets/operation_from_console.png)
 
 När det gäller webbåtkomst kommer alternativen främst att göra det möjligt att se
 
@@ -63,7 +63,7 @@ Du kan välja mellan fem olika språk:
 
 Språket du valde för din Adobe Campaign Classic-instans kan påverka datum- och tidsformat. Mer information om detta hittar du i det här [avsnittet](../../platform/using/adobe-campaign-workspace.md#date-and-time).
 
-Mer information om hur du skapar en instans finns i [page](../../installation/using/creating-an-instance-and-logging-on.md).
+Mer information om hur du skapar en instans finns på [sidan](../../installation/using/creating-an-instance-and-logging-on.md).
 
 >[!CAUTION]
 >
@@ -79,15 +79,15 @@ Plattformens olika funktioner är uppdelade i kärnfunktioner: använd länkarna
 
 Listan över kärnfunktioner som du kan komma åt beror på vilka paket och tillägg du har installerat och på din åtkomstbehörighet.
 
-Varje funktion innehåller en uppsättning funktioner som bygger på uppgiftsrelaterade behov och användningssammanhanget. Till exempel **[!UICONTROL Profiles and targets]** -länken ger dig tillgång till mottagarlistor, prenumerationstjänster, befintliga arbetsflöden för målinriktning och genvägar för att skapa dessa element.
+Varje funktion innehåller en uppsättning funktioner som bygger på uppgiftsrelaterade behov och användningssammanhanget. Länken **[!UICONTROL Profiles and targets]** ger dig till exempel till mottagarlistor, prenumerationstjänster, befintliga arbetsflöden för målinriktning och genvägar för att skapa dessa element.
 
-Listorna är tillgängliga via **[!UICONTROL Lists]** till vänster i **[!UICONTROL Profiles and Targets]** gränssnitt.
+Listorna är tillgängliga via länken **[!UICONTROL Lists]** i den vänstra delen av gränssnittet i **[!UICONTROL Profiles and Targets]**.
 
 ![](assets/recipient_list_overview.png)
 
 ### Använda tabbar {#using-tabs}
 
-* När du klickar på en kärnfunktion eller en länk ersätter den relevanta sidan den aktuella sidan. Om du vill gå tillbaka till föregående sida klickar du på **[!UICONTROL Back]** i verktygsfältet. Om du vill gå tillbaka till startsidan klickar du på **[!UICONTROL Home]** -knappen.
+* När du klickar på en kärnfunktion eller en länk ersätter den relevanta sidan den aktuella sidan. Om du vill gå tillbaka till föregående sida klickar du på knappen **[!UICONTROL Back]** i verktygsfältet. Klicka på knappen **[!UICONTROL Home]** om du vill gå tillbaka till startsidan.
 
   ![](assets/d_ncs_user_interface_back_home_buttons.png)
 
@@ -97,11 +97,11 @@ Listorna är tillgängliga via **[!UICONTROL Lists]** till vänster i **[!UICONT
 
 ### Skapa ett element {#creating-an-element}
 
-I varje kärnfunktionsavsnitt kan du bläddra bland de tillgängliga elementen. Använd kortkommandona i dialogrutan **[!UICONTROL Browsing]** -avsnitt. The **[!UICONTROL Other choices]** kan du komma åt alla andra sidor, oavsett miljö.
+I varje kärnfunktionsavsnitt kan du bläddra bland de tillgängliga elementen. Använd kortkommandona i avsnittet **[!UICONTROL Browsing]** för att göra detta. Med länken **[!UICONTROL Other choices]** kan du komma åt alla andra sidor, oavsett miljö.
 
-Du kan skapa ett nytt element (leverans, webbprogram, arbetsflöde osv.) med kortkommandona i **[!UICONTROL Create]** till vänster på skärmen. Använd **[!UICONTROL Create]** ovanför listan för att lägga till nya element i listan.
+Du kan skapa ett nytt element (leverans, webbprogram, arbetsflöde osv.) med kortkommandona i avsnittet **[!UICONTROL Create]** till vänster på skärmen. Använd knappen **[!UICONTROL Create]** ovanför listan för att lägga till nya element i listan.
 
-På leveranssidan kan du till exempel använda **[!UICONTROL Create]** för att skapa en ny leverans.
+Använd till exempel knappen **[!UICONTROL Create]** på leveranssidan för att skapa en ny leverans.
 
 ![](assets/d_ncs_user_interface_tab_add_del.png)
 
@@ -131,12 +131,12 @@ De största skillnaderna mellan amerikansk engelska och brittisk engelska är:
    <td> Veckan börjar på måndag<br /> </td> 
   </tr> 
   <tr> 
-   <td> Kort datum<br /> </td> 
+   <td> Kort datum <br /> </td> 
    <td> <p>%2M/%2D/%4Y</p><p><strong>ex: 09/25/2018</strong></p> </td> 
    <td> <p>%2D/%2M/%4Y</p><p><strong>ex: 25/09/2018</strong></p> </td> 
   </tr> 
   <tr> 
-   <td> Kort datum med tid<br /> </td> 
+   <td> Kort datum med tiden <br /> </td> 
    <td> <p>%2M/%2D/%4Y %I:%2N:%2S %P</p><p><strong>ex: 09/25/2018 10:47:25 PM</strong></p> </td> 
    <td> <p>%2D/%2M/%4Y %2H:%2N:%2S</p><p><strong>ex: 25/09/2018 22:47:25</strong></p> </td> 
   </tr> 
@@ -145,19 +145,19 @@ De största skillnaderna mellan amerikansk engelska och brittisk engelska är:
 
 ### Lägga till värden i en uppräkning {#add-values-in-an-enumeration}
 
-Med hjälp av inmatningsfälten i en nedrullningsbar lista kan du ange ett uppräkningsvärde som kan lagras och sedan visas som ett alternativ i listrutan. I **[!UICONTROL City]** fält för **[!UICONTROL General]** för en mottagarprofil kan du ange London. När du trycker på Retur för att bekräfta det här värdet tillfrågas du om du vill spara det här värdet för uppräkningen som är associerad med fältet.
+Med hjälp av inmatningsfälten i en nedrullningsbar lista kan du ange ett uppräkningsvärde som kan lagras och sedan visas som ett alternativ i listrutan. I fältet **[!UICONTROL City]** på fliken **[!UICONTROL General]** i en mottagarprofil kan du till exempel ange London. När du trycker på Retur för att bekräfta det här värdet tillfrågas du om du vill spara det här värdet för uppräkningen som är associerad med fältet.
 
 ![](assets/s_ncs_user_wizard_email_bat_substitute_email.png)
 
-Klicka **[!UICONTROL Yes]** kommer detta värde att vara tillgängligt i kombinationsrutan för det relevanta fältet (i detta fall: **[!UICONTROL London]**).
+Om du klickar på **[!UICONTROL Yes]** är det här värdet tillgängligt i kombinationsrutan för det relevanta fältet (i det här fallet: **[!UICONTROL London]**).
 
 >[!NOTE]
 >
->Uppräkningar (kallas även&quot;specificerade listor&quot;) hanteras av administratören via **[!UICONTROL Administration > Platform > Enumerations]** -avsnitt. Mer information finns i [Hantera uppräkningar](../../platform/using/managing-enumerations.md).
+>Uppräkningar (kallas även&quot;specificerade listor&quot;) hanteras av administratören via avsnittet **[!UICONTROL Administration > Platform > Enumerations]**. Mer information finns i [Hantera uppräkningar](../../platform/using/managing-enumerations.md).
 
 ### Standardenheter {#default-units}
 
-I de fält som uttrycker en varaktighet (t.ex. giltighetsperiod för resurserna för en leverans, sista ansökningsdag för en uppgift osv.) kan värdet uttryckas i följande **enheter**:
+I fälten som uttrycker en varaktighet (t.ex. giltighetsperiod för resurserna för en leverans, sista datum för godkännande av en aktivitet, osv.) kan värdet uttryckas i följande **enheter**:
 
 * **[!UICONTROL s]** i sekunder,
 * **[!UICONTROL mn]** i minuter,
@@ -172,4 +172,4 @@ I den här videon visas Campaign Classicens arbetsyta.
 
 >[!VIDEO](https://video.tv.adobe.com/v/35130?quality=12)
 
-Det finns fler videor med Campaign Classic om hur man gör [här](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=sv).
+Ytterligare Campaign Classic om instruktionsvideor finns [här](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=sv).

@@ -27,11 +27,11 @@ För att leveransen ska bli framgångsrik vill ni skicka det mest relevanta pers
 
 ## Målmappningar {#target-mappings}
 
-I Campaign Classic är målet för leveransmallar som standard **Mottagare**. Adobe Campaign erbjuder andra målmappningar för leveranser som du kan ändra efter behov.
+I Campaign Classic är leveransmallarna som standard avsedda för **mottagare**. Adobe Campaign erbjuder andra målmappningar för leveranser som du kan ändra efter behov.
 
 Du kan till exempel leverera till besökare vars profiler har samlats in via sociala nätverk eller till besökare som prenumererar på en informationstjänst.
 
-De här mappningarna visas [i det här avsnittet](selecting-a-target-mapping.md).
+Dessa mappningar presenteras [ i det här avsnittet](selecting-a-target-mapping.md).
 
 Du kan också skapa och använda en anpassad målmappning. Mer information om detta finns i [det här avsnittet](../../configuration/using/target-mapping.md).
 
@@ -50,7 +50,7 @@ Om du vill testa leveransen använder du korrektur innan du skickar till huvudm�
 
 Se till att du väljer rätt korrekturmottagare eftersom de validerar formuläret och meddelandets innehåll. Stegen för att definiera korrekturmottagare visas [i det här avsnittet](steps-defining-the-target-population.md#selecting-the-proof-target).
 
-Seed-adresser används för målmottagare som inte matchar de definierade målvillkoren för att testa en leverans innan den skickas till huvudmålet. De presenteras [i det här avsnittet](about-seed-addresses.md).
+Seed-adresser används för målmottagare som inte matchar de definierade målvillkoren för att testa en leverans innan den skickas till huvudmålet. De visas [ i det här avsnittet](about-seed-addresses.md).
 
 ## Deduplicera adresser {#deduplicate-addresses}
 

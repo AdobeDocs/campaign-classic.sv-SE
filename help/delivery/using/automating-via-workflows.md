@@ -19,7 +19,7 @@ ht-degree: 0%
 
 Det går att automatisera skapandet, redigeringen och publiceringen med hjälp av ett arbetsflöde som konfigurerats via Adobe Campaign klientgränssnitt.
 
-The **Innehållshantering** -aktiviteten nås via **[!UICONTROL Tools]** i arbetsflödesdiagrammet.
+**Aktiviteten för innehållshantering** nås via verktygsfältet **[!UICONTROL Tools]** i arbetsflödesdiagrammet.
 
 Aktivitetsegenskaperna delas in i fyra steg:
 
@@ -72,7 +72,7 @@ Aktivitetsegenskaperna delas in i fyra steg:
 
 ### Övergång {#transition}
 
-The **Generera en utdataövergång** kan du lägga till en utdataövergång i **[!UICONTROL Content management]** aktivitet som länkar en ny aktivitet till körning av arbetsflöde. När du har markerat det här alternativet anger du en etikett för övergången.
+Med alternativet **Generera en utdataövergång** kan du lägga till en utdataövergång i aktiviteten **[!UICONTROL Content management]** för att länka en ny aktivitet till arbetsflödeskörningen. När du har markerat det här alternativet anger du en etikett för övergången.
 
 ## Exempel {#examples}
 
@@ -88,7 +88,7 @@ Innehållet konfigureras via aktiviteten Innehållshantering:
 
 En ny innehållsinstans skapas via publiceringsmodellen och innehållssträngsmappen.
 
-I vårt exempel har vi överbelastat leveransämnet. Den kommer att tas med i stället för den som anges i **[!UICONTROL Delivery]** mall.
+I vårt exempel har vi överbelastat leveransämnet. Den kommer att beaktas i stället för den som anges i mallen **[!UICONTROL Delivery]**.
 
 Innehållet fylls i automatiskt av ett XML-flöde som kommer från den URL som anges:
 
@@ -101,9 +101,9 @@ Innehållet fylls i automatiskt av ett XML-flöde som kommer från den URL som a
 </book>
 ```
 
-Dataformatet matchar inte det dataschema som anges i publiceringsmallen (**cus:bok** i vårt exempel); **`<section>`** -elementet måste ersättas med **`<chapter>`** -element. Vi måste använda formatmallen&quot;cus:book-workflow.xsl&quot; för att kunna göra nödvändiga ändringar.
+Dataformatet stämmer inte överens med det dataschema som anges i publiceringsmallen (**cus:book** i vårt exempel). **`<section>`** -elementet måste ersättas med **`<chapter>`** -elementet. Vi måste använda formatmallen&quot;cus:book-workflow.xsl&quot; för att kunna göra nödvändiga ändringar.
 
-Källkod för XSLT-formatmallen som används:
+Source-kod för XSLT-formatmallen som används:
 
 ```
 <?xml version="1.0" encoding="utf-8"?>
@@ -140,11 +140,11 @@ Källkod för XSLT-formatmallen som används:
 
 Den sista åtgärden i aktiviteten är att spara innehållsinstansen och fortsätta till nästa uppgift.
 
-Riktlinjerna genomförs via **Fråga** aktivitet.
+Målsättningen utförs via aktiviteten **Fråga**.
 
-An **AND-join** aktiviteten lades till för att säkerställa att leveransen bara startas när målfrågan och innehållsuppdateringarna är klara.
+En **AND-join**-aktivitet lades till för att säkerställa att leveransen bara startas när målfrågan och innehållsuppdateringarna är klara.
 
-Leveransåtgärden konfigureras via **Leverans** aktivitet:
+Leveransåtgärden har konfigurerats via aktiviteten **Leverans**:
 
 ![](assets/d_ncs_content_workflow4.png)
 
@@ -164,13 +164,13 @@ I det här exemplet skapas ett innehållsblock och filpubliceringen startas efte
 
 ![](assets/d_ncs_content_workflow5.png)
 
-Den första **Innehållshantering** skapar en innehållsinstans.
+Den första **innehållshanteringsåtgärden** skapar en innehållsinstans.
 
 ![](assets/d_ncs_content_workflow6.png)
 
 >[!NOTE]
 >
->The **[!UICONTROL Publication]** -fliken i fönstret med omformningsmallar måste fyllas i med platsen för det mål som ska genereras.
+>Fliken **[!UICONTROL Publication]** i fönstret med omformningsmallar måste fyllas i med platsen för målet som ska genereras.
 
 En väntande aktivitet läggs till för att pausa nästa övergång i en vecka.
 
@@ -186,7 +186,7 @@ Innehållet som ska publiceras anges via den inkommande övergången.
 
 Den sista åtgärden är att generera innehållet genom att tvinga fram publikationskatalogen.
 
-The **JavaScript-kod** aktiviteten hämtar det fullständiga namnet för varje genererad fil.
+Aktiviteten **JavaScript Code** hämtar det fullständiga namnet för varje genererad fil.
 
 ![](assets/d_ncs_content_workflow9.png)
 
@@ -196,11 +196,11 @@ I det här exemplet används samma koncept som i det första exemplet, men bara 
 
 ![](assets/d_ncs_content_workflow10.png)
 
-Den första **Skapa leverans** skapar leveransåtgärden.
+Den första **Skapa leverans**-aktiviteten skapar leveransåtgärden.
 
 Med gaffelaktiviteten kan du starta målberäkning och skapa innehållsinstansen parallellt.
 
-När åtgärderna har utförts aktiverar AND-join-rutan **Leverans** för att lansera den tidigare leveransen av innehåll och målinriktning.
+När uppgifterna har körts aktiverar AND-join-rutan **Delivery** -aktiviteten för att starta den tidigare leveransen för innehåll och mål.
 
 ![](assets/d_ncs_content_workflow11.png)
 
@@ -214,11 +214,11 @@ Den sista åtgärden i aktiviteten är att förbereda och starta leveransen.
 
 ### Importera innehåll från FTP {#importing-content-from-ftp}
 
-Om ditt leveransinnehåll finns i en HTML-fil på FTP- eller SFTP-servrar kan du enkelt läsa in det i Adobe Campaign-leveranser. Se [detta exempel](../../workflow/using/loading-delivery-content.md).
+Om ditt leveransinnehåll finns i en HTML-fil på FTP- eller SFTP-servrar kan du enkelt läsa in det i Adobe Campaign-leveranser. Se [det här exemplet](../../workflow/using/loading-delivery-content.md).
 
 ### Importera innehåll från kopplingen för Amazon Simple Storage Service (S3) {#importing-content-from-amazon-simple-storage-service--s3--connector}
 
-Om ditt leveransinnehåll finns i Amazon Simple Storage Service (S3)-bucket kan du enkelt läsa in det i Adobe Campaign-leveranser. Se [detta exempel](../../workflow/using/loading-delivery-content.md).
+Om ditt leveransinnehåll finns i Amazon Simple Storage Service (S3)-bucket kan du enkelt läsa in det i Adobe Campaign-leveranser. Se [det här exemplet](../../workflow/using/loading-delivery-content.md).
 
 ## Halvautomatisk uppdatering {#semi-automatic-update}
 
@@ -226,11 +226,11 @@ Innehållsdata kan uppdateras i halvautomatiskt läge. Data återställs från e
 
 Aktiveringen av dataåterställning sker manuellt via inmatningsformuläret.
 
-Målet är att deklarera en **editBtn** type **`<input>`** i formuläret. Den här kontrollen består av en redigeringszon och en knapp för att starta bearbetningen.
+Målet är att deklarera ett **editBtn** type **`<input>`** -fält i formuläret. Den här kontrollen består av en redigeringszon och en knapp för att starta bearbetningen.
 
 Med redigeringszonen kan du fylla i variabeldata som används för att skapa URL:en för XML-flödet med data som ska hämtas.
 
-Knappen kör **GetAndTransform** SOAP-metod ifylld under **`<input>`** -tagg.
+Knappen kör SOAP **GetAndTransform** som fylls i under taggen **`<input>`**.
 
 Kontrolldeklarationen i formuläret är följande:
 
@@ -246,7 +246,7 @@ Kontrolldeklarationen i formuläret är följande:
 </input>
 ```
 
-The **GetAndTransform** -metoden måste deklareras under **`<enter>`** -elementet i **`<input>`** -tagg. Den här taggen fungerar som parametrar för URL-återställningen av XML-data från ett uttryck som konstruerats dynamiskt. Den andra parametern för funktionen är valfri och refererar till en formatmall som används för en mellanliggande omformning när inkommande XML-data inte har samma format som innehållet.
+Metoden **GetAndTransform** måste deklareras under elementet **`<enter>`** i taggen **`<input>`**. Den här taggen fungerar som parametrar för URL-återställningen av XML-data från ett uttryck som konstruerats dynamiskt. Den andra parametern för funktionen är valfri och refererar till en formatmall som används för en mellanliggande omformning när inkommande XML-data inte har samma format som innehållet.
 
 Utdata uppdaterar innehållet baserat på den sökväg som angavs i den sista parametern.
 

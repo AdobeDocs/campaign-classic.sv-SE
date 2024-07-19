@@ -18,10 +18,10 @@ ht-degree: 0%
 
 
 
-Använd kampanj [Åtkomst till federerade data](../../installation/using/about-fda.md) (FDA) om du vill bearbeta information som lagras i en extern databas. Följ stegen nedan för att konfigurera åtkomst till Netezza.
+Använd alternativet [FDA (Federated Data Access](../../installation/using/about-fda.md)) i kampanjen om du vill bearbeta information som lagras i en extern databas. Följ stegen nedan för att konfigurera åtkomst till Netezza.
 
 1. Installera och konfigurera [Netezza-drivrutiner](#netezza-config)
-1. Konfigurera Netezza [externt konto](#netezza-external) i Campaign
+1. Konfigurera det [externa Netezza-kontot](#netezza-external) i Campaign
 
 ## Netezza-konfiguration {#netezza-config}
 
@@ -74,13 +74,13 @@ För anslutning till en extern Netezza-databas i FDA krävs ytterligare konfigur
 
 Med det externa Netezza-kontot kan du ansluta Campaign-instansen till din externa Netezza-databas.
 
-1. Från kampanj **[!UICONTROL Explorer]**, klicka **[!UICONTROL Administration]** &#39;>&#39; **[!UICONTROL Platform]** &#39;>&#39; **[!UICONTROL External accounts]**.
+1. Klicka på **[!UICONTROL Administration]** > **[!UICONTROL Platform]** > **[!UICONTROL External accounts]** i Campaign **[!UICONTROL Explorer]**.
 
-1. Klicka **[!UICONTROL New]** och markera **[!UICONTROL External database]** as **[!UICONTROL Type]**.
+1. Klicka på **[!UICONTROL New]** och välj **[!UICONTROL External database]** som **[!UICONTROL Type]**.
 
-1. Konfigurera **[!UICONTROL Netezza]** externt konto måste du ange:
+1. Om du vill konfigurera det externa kontot **[!UICONTROL Netezza]** måste du ange:
 
-   * **[!UICONTROL Type]**: NETEZZA
+   * **[!UICONTROL Type]**: Netezza
 
    * **[!UICONTROL Server]**: URL för Netezza-servern
 
@@ -94,4 +94,4 @@ Med det externa Netezza-kontot kan du ansluta Campaign-instansen till din extern
 >
 >Åtgärder för scheman som innehåller automatiskt genererade primärnycklar beaktas inte.
 >
->Tabellen använder **Ordna på** -satsen i det första index som definieras i schemat. Eftersom den här satsen är begränsad till 1 till 4 kolumner med Netezza får indexet inte innehålla fler än 4 kolumner.
+>Tabellen använder satsen **Organize on** på det första indexvärdet som definieras i schemat. Eftersom den här satsen är begränsad till 1 till 4 kolumner med Netezza får indexet inte innehålla fler än 4 kolumner.

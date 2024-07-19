@@ -24,24 +24,24 @@ Följ stegen nedan för att skapa en ny SMS-leverans:
 >Globala koncept för leveransskapande presenteras i [det här avsnittet](steps-about-delivery-creation-steps.md).
 
 1. Skapa en ny leverans, till exempel från kontrollpanelen Leverans.
-1. Välj leveransmall **Skickat till mobiler (SMPP)** som du skapade tidigare. Mer information finns i [Ändra leveransmallen](sms-set-up.md#changing-the-delivery-template) -avsnitt.
+1. Välj leveransmallen **Skickat till mobiler (SMPP)** som du skapade tidigare. Mer information finns i avsnittet [Ändra leveransmallen](sms-set-up.md#changing-the-delivery-template).
 
    ![](assets/s_user_mobile_wizard.png)
 
 1. Identifiera leveransen med en etikett, kod och beskrivning. Mer information om detta finns i [det här avsnittet](steps-create-and-identify-the-delivery.md#identifying-the-delivery).
-1. Klicka **[!UICONTROL Continue]** för att bekräfta den här informationen och visa meddelandekonfigurationsfönstret.
+1. Klicka på **[!UICONTROL Continue]** för att bekräfta den här informationen och visa meddelandekonfigurationsfönstret.
 
 ## Definiera SMS-innehållet {#defining-the-sms-content}
 
 Följ stegen nedan för att skapa innehållet i SMS:et:
 
-1. Ange innehållet i meddelandet i **[!UICONTROL Text content]** i guiden. Med verktygsfältsknapparna kan du importera, spara och söka i innehåll. Den sista knappen används för att infoga anpassningsfält.
+1. Ange innehållet i meddelandet i avsnittet **[!UICONTROL Text content]** i guiden. Med verktygsfältsknapparna kan du importera, spara och söka i innehåll. Den sista knappen används för att infoga anpassningsfält.
 
    ![](assets/s_ncs_user_wizard_sms01_138.png)
 
-   Användningen av personaliseringsfält beskrivs i [Om personalisering](about-personalization.md) -avsnitt.
+   Användningen av anpassningsfält beskrivs i avsnittet [Om anpassning](about-personalization.md).
 
-1. Klicka **[!UICONTROL Preview]** längst ned på sidan för att visa återgivningen av meddelandet med dess personalisering. Om du vill starta förhandsgranskningen väljer du en mottagare med **[!UICONTROL Test personalization]** i verktygsfältet. Du kan välja en mottagare bland de definierade målen eller en annan mottagare.
+1. Klicka på **[!UICONTROL Preview]** längst ned på sidan för att visa återgivningen av meddelandet med dess personalisering. Om du vill starta förhandsgranskningen väljer du en mottagare med knappen **[!UICONTROL Test personalization]** i verktygsfältet. Du kan välja en mottagare bland de definierade målen eller en annan mottagare.
 
    ![](assets/s_ncs_user_wizard_sms01_139.png)
 
@@ -49,24 +49,24 @@ Följ stegen nedan för att skapa innehållet i SMS:et:
 
    ![](assets/s_ncs_user_wizard_sms01_140.png)
 
-1. Klicka på **[!UICONTROL Data loaded]** om du vill visa information om mottagaren.
+1. Klicka på länken **[!UICONTROL Data loaded]** om du vill visa information om mottagaren.
 
    ![](assets/s_user_mobile_wizard_sms_02.png)
 
    >[!NOTE]
    >
-   >SMS-meddelanden är begränsade till en längd på 160 tecken om den latinska 1-teckentabellen (ISO-8859-1) används. Om meddelandet skrivs i Unicode får det inte innehålla fler än 70 tecken. Vissa specialtecken kan påverka meddelandets längd. Mer information om meddelandets längd finns i [SMS-teckentranskribering](#about-character-transliteration) -avsnitt.
+   >SMS-meddelanden är begränsade till en längd på 160 tecken om den latinska 1-teckentabellen (ISO-8859-1) används. Om meddelandet skrivs i Unicode får det inte innehålla fler än 70 tecken. Vissa specialtecken kan påverka meddelandets längd. Mer information om meddelandets längd finns i avsnittet [SMS-teckentranslittation](#about-character-transliteration).
    >
    >När det finns anpassningsfält eller fält för villkorligt innehåll varierar meddelandets storlek från en mottagare till en annan. Meddelandets längd måste utvärderas när personalisering har utförts.
    >
    >När du startar analysen kontrolleras meddelandets längd och en varning visas om det skulle uppstå ett spill.
 
-1. Om du använder NetSize-anslutningen eller en SMPP-anslutning kan du anpassa namnet på leveransavsändaren. Mer information finns i [Avancerade parametrar](#advanced-parameters) -avsnitt.
+1. Om du använder NetSize-anslutningen eller en SMPP-anslutning kan du anpassa namnet på leveransavsändaren. Mer information finns i avsnittet [Avancerade parametrar](#advanced-parameters).
 
 ## Välj målpopulation {#selecting-the-target-population}
 
-Den detaljerade processen när målpopulationen för en leverans väljs presenteras i [det här avsnittet](steps-defining-the-target-population.md).
+Den detaljerade processen när målpopulationen för en leverans väljs visas i [det här avsnittet](steps-defining-the-target-population.md).
 
 Mer information om användning av anpassningsfält finns i [det här avsnittet](about-personalization.md).
 
-Mer information om hur du tar med en lista med startvärden finns i [den här sidan](about-seed-addresses.md).
+Mer information om att ta med en dirigeringslista finns på [den här sidan](about-seed-addresses.md).

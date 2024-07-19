@@ -22,7 +22,7 @@ ht-degree: 1%
 
 Så här skapar du ett erbjudande:
 
-1. Gå till **[!UICONTROL Campaigns]** och klicka på **[!UICONTROL Offers]** länk.
+1. Gå till fliken **[!UICONTROL Campaigns]** och klicka på länken **[!UICONTROL Offers]**.
 
    ![](assets/offer_create_001.png)
 
@@ -34,7 +34,7 @@ Så här skapar du ett erbjudande:
 
    ![](assets/offer_create_002.png)
 
-1. Klicka **[!UICONTROL Save]** för att skapa erbjudandet.
+1. Klicka på **[!UICONTROL Save]** för att skapa erbjudandet.
 
    ![](assets/offer_create_003.png)
 
@@ -44,7 +44,7 @@ Så här skapar du ett erbjudande:
 
 ## Konfigurera anbudsberättigande {#configuring-offer-eligibility}
 
-I **[!UICONTROL Eligibility]** kan du definiera den period som erbjudandet gäller och kan presenteras, de filter som ska gälla för målet och erbjudandets vikt.
+På fliken **[!UICONTROL Eligibility]** anger du den period som erbjudandet gäller för och kan visas, vilka filter som ska gälla för målet och erbjudandevikten.
 
 ### Definiera berättigandeperioden för ett erbjudande {#defining-the-eligibility-period-of-an-offer}
 
@@ -58,7 +58,7 @@ Utanför dessa datum kommer erbjudandet inte att väljas av interaktionsmotorn. 
 
 Du kan använda filter på erbjudandemålet.
 
-Klicka på **[!UICONTROL Edit query]** och välj det filter som du vill använda. (Se [det här avsnittet](../../platform/using/steps-to-create-a-query.md#step-4---filter-data)).
+Klicka på länken **[!UICONTROL Edit query]** och markera det filter som du vill använda. (Se [det här avsnittet](../../platform/using/steps-to-create-a-query.md#step-4---filter-data)).
 
 ![](assets/offer_eligibility_create_003.png)
 
@@ -104,7 +104,7 @@ Gör så här för att skapa en vikt i ett erbjudande:
 
    ![](assets/offer_weight_create_004.png)
 
-1. Klicka **[!UICONTROL OK]** för att spara vikt.
+1. Klicka på **[!UICONTROL OK]** för att spara bredden.
 
    ![](assets/offer_weight_create_005.png)
 
@@ -116,22 +116,22 @@ Gör så här för att skapa en vikt i ett erbjudande:
 
 När konfigurationen är klar finns en sammanfattning av berättigandereglerna på instrumentpanelen för erbjudanden.
 
-Klicka på **[!UICONTROL Schedule and eligibility rules]** länk.
+Klicka på länken **[!UICONTROL Schedule and eligibility rules]** om du vill visa den.
 
 ![](assets/offer_eligibility_create_005.png)
 
 ## Skapa erbjudandeinnehåll {#creating-the-offer-content}
 
-1. Klicka på **[!UICONTROL Edit]** klickar du på **[!UICONTROL Content]** -fliken.
+1. Klicka på fliken **[!UICONTROL Edit]** och sedan på fliken **[!UICONTROL Content]**.
 
    ![](assets/offer_content_create_001.png)
 
 1. Fyll i de olika fälten i erbjudandeinnehållet.
 
-   * **[!UICONTROL Title]** : Ange den titel som du vill ska visas i erbjudandet. Varning: detta avser inte erbjudandets etikett, som definieras i **[!UICONTROL General]** -fliken.
+   * **[!UICONTROL Title]** : Ange den titel som du vill ska visas i erbjudandet. Varning! Det här refererar inte till erbjudandets etikett, som definieras på fliken **[!UICONTROL General]**.
    * **[!UICONTROL Destination URL]** : ange erbjudandets URL. För att behandlas på rätt sätt måste det börja med&quot;http://&quot; eller&quot;https://&quot;.
-   * **[!UICONTROL Image URL]** : ange en URL eller en åtkomstsökväg till bilden av ditt erbjudande.
-   * **[!UICONTROL HTML content]** / **[!UICONTROL Text content]** : Ange innehållet i erbjudandet på den flik du vill ha. Om du vill generera spårning visas **[!UICONTROL HTML content]** måste bestå av HTML-element som kan omslutas av en `<div>` type-element. Resultatet av en `<table>` -elementet på HTML-sidan kommer att följas:
+   * **[!UICONTROL Image URL]** : Ange en URL eller en åtkomstsökväg till bilden av ditt erbjudande.
+   * **[!UICONTROL HTML content]** / **[!UICONTROL Text content]** : ange erbjudandets innehåll på den flik du vill använda. Om du vill generera spårning måste **[!UICONTROL HTML content]** bestå av HTML-element som kan omslutas av ett `<div>`-tytelement. Resultatet av ett `<table>`-element på HTML-sidan blir följande:
 
    ```
       <div> 
@@ -148,11 +148,11 @@ Klicka på **[!UICONTROL Schedule and eligibility rules]** länk.
       </div>
    ```
 
-   Definiera accepterings-URL:en visas i [Konfigurera status när förslaget godkänns](../../interaction/using/creating-offer-spaces.md#configuring-the-status-when-the-proposition-is-accepted) -avsnitt.
+   Definitionen av accepterings-URL:en visas i avsnittet [Konfigurera statusen när förslaget accepteras](../../interaction/using/creating-offer-spaces.md#configuring-the-status-when-the-proposition-is-accepted).
 
    ![](assets/offer_content_create_002.png)
 
-   Om du vill hitta de obligatoriska fälten som de definierades under konfigurationen av erbjudandeutrymmet klickar du på knappen **[!UICONTROL Content definitions]** länk för att visa listan. Mer information finns i [Skapa erbjudandemellanslag](../../interaction/using/creating-offer-spaces.md).
+   Om du vill hitta de obligatoriska fälten så som de definierades under konfigurationen av erbjudandeutrymmet klickar du på länken **[!UICONTROL Content definitions]** för att visa listan. Mer information finns i [Skapa erbjudandemellanslag](../../interaction/using/creating-offer-spaces.md).
 
    ![](assets/offer_content_create_003.png)
 
@@ -162,7 +162,7 @@ Klicka på **[!UICONTROL Schedule and eligibility rules]** länk.
 
 Så snart innehållet i erbjudandet har konfigurerats kan du förhandsgranska erbjudandet så som det kommer att visas för mottagaren. Så här gör du:
 
-1. Klicka på **[!UICONTROL Preview]** -fliken.
+1. Klicka på fliken **[!UICONTROL Preview]**.
 
    ![](assets/offer_preview_create_001.png)
 
@@ -182,8 +182,8 @@ Du kan skapa hypoteser om dina erbjudanden. På så sätt kan du avgöra hur era
 >
 >Dessa hypoteser utförs via Response Manager. Kontrollera licensavtalet.
 
-Hypoeser som utförs på ett offertförslag hänvisas till i deras **[!UICONTROL Measure]** -fliken.
+Hypoeser som utförs på ett erbjudande refereras på fliken **[!UICONTROL Measure]**.
 
-Skapa hypoteser beskrivs i [den här sidan](../../response/using/about-response-manager.md).
+Skapa hypoteser beskrivs närmare på [den här sidan](../../response/using/about-response-manager.md).
 
 ![](assets/offer_hypothesis_001.png)

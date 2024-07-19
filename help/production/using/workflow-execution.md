@@ -30,23 +30,23 @@ Mer information om arbetsflöden finns i följande avsnitt:
 
 ## Börja så snart som möjligt i kampanjer {#start-as-soon-as-possible-in-campaigns}
 
-I vissa fall startar inte arbetsflöden som körs från en kampanj när du klickar på **[!UICONTROL Start]** -knappen. I stället för att börja går den till läget&quot;Starta så snart som möjligt&quot;.
+I vissa fall startar inte arbetsflöden som körs från en kampanj när du klickar på knappen **[!UICONTROL Start]**. I stället för att börja går den till läget&quot;Starta så snart som möjligt&quot;.
 
 Det kan finnas flera orsaker till det här problemet, följ stegen nedan för att lösa det:
 
-1. Kontrollera [**[!UICONTROL operationMgt]**](../../workflow/using/about-technical-workflows.md) teknisk arbetsflödesstatus. Det här arbetsflödet hanterar jobb eller arbetsflöden inuti en kampanj. Om det misslyckas resulterar det i arbetsflöden som inte startar/stoppas. Starta om den för att fortsätta köra kampanjarbetsflöden.
+1. Kontrollera den tekniska arbetsflödesstatusen för [**[!UICONTROL operationMgt]**](../../workflow/using/about-technical-workflows.md). Det här arbetsflödet hanterar jobb eller arbetsflöden inuti en kampanj. Om det misslyckas resulterar det i arbetsflöden som inte startar/stoppas. Starta om den för att fortsätta köra kampanjarbetsflöden.
 
-   Mer information om övervakning av tekniska arbetsflöden finns i [den här sidan](../../workflow/using/monitoring-technical-workflows.md).
+   Mer information om övervakning av tekniska arbetsflöden finns på [den här sidan](../../workflow/using/monitoring-technical-workflows.md).
 
    >[!NOTE]
    >
-   >När arbetsflödet har startats om kontrollerar du att du kör väntande uppgifter (högerklicka på **[!UICONTROL Scheduler]** aktivitet / **[!UICONTROL Execute pending task(s) now]**) för att kontrollera om det inte fungerar igen på någon av aktiviteterna.
+   >När arbetsflödet har startats om kontrollerar du att du har utfört väntande uppgifter (högerklicka på aktiviteten **[!UICONTROL Scheduler]** / **[!UICONTROL Execute pending task(s) now]**) för att kontrollera om det inte fungerar igen på någon av aktiviteterna.
 
    Om arbetsflödet fortfarande inte fungerar kontrollerar du om det finns ett specifikt fel i granskningsloggen, felsöker därefter och startar sedan om arbetsflödet igen.
 
-1. Kontrollera **[!UICONTROL wfserver]** modulläget i **[!UICONTROL Monitoring]** -flik, tillgänglig från Campaign Classicens hemsida (se [Övervaka processer](../../production/using/monitoring-processes.md)). Den här processen ansvarar för att köra alla arbetsflöden.
+1. Kontrollera modulläget **[!UICONTROL wfserver]** på fliken **[!UICONTROL Monitoring]** som är tillgänglig från Campaign Classicens hemsida (se [Övervaka processer](../../production/using/monitoring-processes.md)). Den här processen ansvarar för att köra alla arbetsflöden.
 
-   En administratör kan även kontrollera att **wfserver@`<instance>`** -modulen startas på huvudprogramservern med hjälp av kommandot nedan.
+   En administratörsanvändare kan också kontrollera att modulen **wfserver@`<instance>`** startas på huvudprogramservern med hjälp av kommandot nedan.
 
    ```
    nlserver pdump
@@ -69,27 +69,27 @@ Det kan finnas flera orsaker till det här problemet, följ stegen nedan för at
 
    Mer information om hur du startar om moduler finns i [det här avsnittet](../../production/using/usual-commands.md#module-launch-commands).
 
-1. Kontrollera om **antal kampanjprocesser som körs** på instansen är större än tröskelvärdet. Det finns en gräns som definieras av [**[!UICONTROL NmsOperation_LimitConcurrency]**](../../installation/using/configuring-campaign-options.md#campaign-e-workflow-management) alternativ för hur många kampanjprocesser som kan köras på instansen parallellt. När den här gränsen nås stannar arbetsflödet kvar i läget&quot;Starta så snart som möjligt&quot; så länge antalet arbetsflöden som körs är över gränsen.
+1. Kontrollera om **antalet kampanjprocesser som körs** på instansen överstiger tröskelvärdet. Det finns en gräns som definieras av alternativet [**[!UICONTROL NmsOperation_LimitConcurrency]**](../../installation/using/configuring-campaign-options.md#campaign-e-workflow-management) för hur många kampanjprocesser som kan köras på instansen parallellt. När den här gränsen nås stannar arbetsflödet kvar i läget&quot;Starta så snart som möjligt&quot; så länge antalet arbetsflöden som körs är över gränsen.
 
    Du kan lösa problemet genom att stoppa oönskade arbetsflöden och ta bort misslyckade leveranser. Om tröskelvärdet uppnås kan nya processer köras.
 
-   Om du vill kontrollera antalet arbetsflöden som körs för instansen rekommenderar vi att du använder de fördefinierade vyerna, som är tillgängliga som standard i **[!UICONTROL Administration]** / **[!UICONTROL Audit]** mapp. För mer information om detta hittar du i [det här avsnittet](../../workflow/using/monitoring-workflow-execution.md#filtering-workflows-status).
+   Om du vill kontrollera antalet arbetsflöden som körs för instansen rekommenderar vi att du använder de fördefinierade vyerna, som är tillgängliga som standard i mappen **[!UICONTROL Administration]** / **[!UICONTROL Audit]**. För mer information om detta hittar du i [det här avsnittet](../../workflow/using/monitoring-workflow-execution.md#filtering-workflows-status).
 
    >[!IMPORTANT]
    >
-   >Öka **[!UICONTROL NmsOperation_LimitConcurrency]** tröskelvärdet för alternativ kan leda till prestandaproblem i din instans. Utför inte detta på egen hand och kontakta Adobe Campaign.
+   >Om du ökar tröskelvärdet för alternativet **[!UICONTROL NmsOperation_LimitConcurrency]** kan det leda till prestandaproblem i din instans. Utför inte detta på egen hand och kontakta Adobe Campaign.
 
 Mer information om hur du övervakar arbetsflöden finns i [det här avsnittet](../../workflow/using/monitoring-workflow-execution.md).
 
 ## Pågående start {#start-in-progress}
 
-Om arbetsflöden inte körs och deras status är **Pågående start** kan det innebära att arbetsflödesmodulen inte startas.
+Om arbetsflöden inte körs och deras status är **Påbörja** kan det innebära att arbetsflödesmodulen inte startas.
 
 Gör så här om du vill kontrollera detta och starta modulen om det behövs:
 
-1. Kontrollera **[!UICONTROL wfserver]** modulläget i **[!UICONTROL Monitoring]** -flik, tillgänglig från Campaign Classicens hemsida (se [Övervaka processer](../../production/using/monitoring-processes.md)).
+1. Kontrollera modulläget **[!UICONTROL wfserver]** på fliken **[!UICONTROL Monitoring]** som är tillgänglig från Campaign Classicens hemsida (se [Övervaka processer](../../production/using/monitoring-processes.md)).
 
-   En administratör kan även kontrollera att **wfserver@`<instance>`** -modulen startas på huvudprogramservern med hjälp av kommandot nedan.
+   En administratörsanvändare kan också kontrollera att modulen **wfserver@`<instance>`** startas på huvudprogramservern med hjälp av kommandot nedan.
 
    ```sql
    nlserver pdump
@@ -118,6 +118,6 @@ Gör så här om du vill kontrollera detta och starta modulen om det behövs:
 
 Om ett arbetsflöde misslyckas gör du så här:
 
-1. Kontrollera arbetsflödesjournalen. Mer information finns i [Övervaka körning av arbetsflöde](../../workflow/using/monitoring-workflow-execution.md) och [Visningsloggar](../../workflow/using/monitoring-workflow-execution.md#displaying-logs) -avsnitt.
-1. Övervaka tekniska arbetsflöden. Mer information finns i [det här avsnittet](../../workflow/using/monitoring-technical-workflows.md).
+1. Kontrollera arbetsflödesjournalen. Mer information finns i avsnitten [Övervaka arbetsflödeskörning](../../workflow/using/monitoring-workflow-execution.md) och [Visningsloggar](../../workflow/using/monitoring-workflow-execution.md#displaying-logs).
+1. Övervaka tekniska arbetsflöden. Mer information finns i avsnittet [this](../../workflow/using/monitoring-technical-workflows.md).
 1. Leta efter fel i de enskilda arbetsflödesaktiviteterna.

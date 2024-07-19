@@ -25,56 +25,56 @@ Resultatet av hypotesberäkningarna är tillgängligt på olika nivåer av Adobe
 
 ### Indikatorer {#indicators}
 
-När hypotesen har beräknats uppdateras flera mätningsindikatorer automatiskt. Dessa finns i **[!UICONTROL General]** hypotesens.
+När hypotesen har beräknats uppdateras flera mätningsindikatorer automatiskt. Dessa finns på fliken **[!UICONTROL General]** i hypotesen.
 
 ![](assets/response_hypothesis_delivery_example_010.png)
 
 Dessa indikatorer är:
 
-* **Antal respondentkontakter**: antal kontaktade personer som matchar hypotesen.
-* **Kontaktad svarsfrekvens**: antal kontaktpersoner/totalt antal kontaktpersoner under leveransen.
+* **Antal kontaktade**: antal kontaktade personer som matchar hypotesen.
+* **Kontaktad svarsfrekvens**: antal kontaktpersoner/totalt antal kontaktade personer under leveransen.
 * **Antal kontakter i kontrollgruppen för svarande**: antal kontrollgrupper som matchar hypotesen.
-* **Kontrollgruppens svarsfrekvens**: antal respondentkontrollgrupper/totalt antal leveranskontrollgrupper.
-* **Antal reaktioner**: antal poster i tabellen som innehåller relationen mellan individer, hypotesen och transaktionsregistret.
+* **Svarsfrekvens för kontrollgruppen**: antal respondentkontrollgrupper/totalt antal leveranskontrollgrupper.
+* **Antal reaktioner**: antal poster i tabellen som innehåller relationen mellan individer, hypotesen och transaktionstabellen.
 
-Klicka på knappen **[!UICONTROL Display the list]** länk:
+Klicka på länken **[!UICONTROL Display the list]** om du vill se en fullständig lista över indikatorer:
 
 ![](assets/response_hypothesis_indicators_002.png)
 
 Indikatorerna ger följande information:
 
-* **Den totala intäkten hos den kontaktade befolkningen**: totalt antal över antalet kontaktade personer.
+* **Total intäkt för den kontaktade befolkningen**: totalt antal personer som kontaktats.
 * **Total intäkt för kontrollgruppen**: totala belopp över antalet kontrollgrupper.
-* **Genomsnittlig intäkt per kontakt**: totalt antal/kontaktade.
-* **Genomsnittlig intäkt för kontrollgruppen**: totalt belopp/kontrollgrupp.
-* **Total marginal per kontakt**: total marginal över kontaktad.
-* **Total marginal för kontrollgruppen**: total marginal över kontrollgrupp.
-* **Genomsnittlig marginal per kontakt**: total marginal / kontaktad.
-* **Genomsnittlig marginal för kontrollgrupper**: total marginal/kontrollgrupp.
-* **Ytterligare intäkter**: (Genomsnittlig intäkt för kontaktad - Genomsnittlig intäkt för kontrollgruppen)&#42;Antal kontaktade
-* **Ytterligare marginal**: (Genomsnittlig kontaktmarginal - genomsnittlig kontrollgruppsmarginal) / antal kontaktade
-* **Genomsnittlig kostnad per kontakt**: beräknad leveranskostnad/antal kontakter.
-* **avkastning**: beräknad kostnad för leveransen/total marginal per kontakt
-* **Effektiv avkastning**: beräknad leveranskostnad/ytterligare marginal.
+* **Genomsnittlig intäkt per kontakt**: totala belopp/kontaktade.
+* **Genomsnittlig intäkt för kontrollgrupp**: totala belopp/kontrollgrupp.
+* **Total marginal per kontakt**: total marginal som kontaktats.
+* **Total marginal för kontrollgruppen**: total marginal över kontrollgruppen.
+* **Genomsnittlig marginal per kontakt**: total marginal/kontaktad.
+* **Genomsnittlig marginal för kontrollgrupper**: totala marginaler/kontrollgrupp.
+* **Ytterligare intäkter**: (Genomsnittlig intäkt för kontaktad/genomsnittlig intäkt för kontrollgruppen)&#42;Antal kontaktade
+* **Ytterligare marginal**: (genomsnittlig marginal för kontaktad/genomsnittlig marginal för kontrollgrupp) / antal kontaktade
+* **Genomsnittskostnad per kontakt**: beräknad leveranskostnad/antal kontakter.
+* **ROI**: beräknad kostnad för leveransen/total marginal per kontakt
+* **Effektiv avkastning på investering**: beräknad leveranskostnad/tilläggsmarginal.
 * **Signifikans**: innehåller värdena 0 till 3 beroende på kampanjens betydelse.
 
 ### Reaktioner {#reactions}
 
-Du kan visa mottagarnas reaktioner på hypoteserna via **[!UICONTROL Reactions]** -fliken.
+Du kan visa mottagarnas reaktioner på hypoteserna via fliken **[!UICONTROL Reactions]**.
 
-1. När hypotesberäkningen är klar går du till **[!UICONTROL Campaign management > Measurement hypotheses]** noden i Adobe Campaign-trädet.
-1. Välj önskad hypotes och klicka på **[!UICONTROL Reactions]** för att visa en lista över mottagare som kan köpa något efter marknadsföringskampanjen.
+1. När hypotesberäkningen är klar går du till noden **[!UICONTROL Campaign management > Measurement hypotheses]** i Adobe Campaign-trädet.
+1. Välj önskad hypotes och klicka på fliken **[!UICONTROL Reactions]** för att visa en lista över mottagare som kan köpa något efter marknadsföringskampanjen.
 
    ![](assets/response_hypothesis_reactions_001.png)
 
 ## Rapporter {#reports}
 
-The **[!UICONTROL Hypothesis report]** gör att du kan se resultatet av de hypoteser som utförts på kampanjer och leveranser. Denna rapport innehåller de indikatorer som beräknats av hypotesen (för mer information, se [Indikatorer](#indicators)).
+Med **[!UICONTROL Hypothesis report]** kan du visa resultatet av de hypoteser som har utförts på kampanjer och leveranser. Den här rapporten innehåller de indikatorer som beräknats av hypotesen (mer information finns i [Indikatorer](#indicators)).
 
-* **På kampanjnivå**: klicka på **[!UICONTROL Reports]** länk till den relevanta kampanjen och välj **[!UICONTROL Hypothesis report]**. Den här rapporten innehåller en lista över kampanjleveranser och de hypoteser som beräknas för varje leverans.
+* **På kampanjnivå**: klicka på länken **[!UICONTROL Reports]** för den aktuella kampanjen och välj **[!UICONTROL Hypothesis report]**. Den här rapporten innehåller en lista över kampanjleveranser och de hypoteser som beräknas för varje leverans.
 
   ![](assets/response_hypothesis_campaign_report_001.png)
 
-* **På leveransnivå**: om du vill öppna rapporten öppnar du den aktuella leveransen klickar du på **[!UICONTROL Reports]** i **[!UICONTROL Summary]** och väljer **[!UICONTROL Hypothesis report]**. Om flera hypoteser har beräknats för samma leverans innehåller rapporten alla hypoteser.
+* **Vid leveransnivå**: öppna rapporten genom att öppna den aktuella leveransen, klicka på **[!UICONTROL Reports]** på fliken **[!UICONTROL Summary]** och markera **[!UICONTROL Hypothesis report]**. Om flera hypoteser har beräknats för samma leverans innehåller rapporten alla hypoteser.
 
   ![](assets/response_hypothesis_delivery_report_001.png)

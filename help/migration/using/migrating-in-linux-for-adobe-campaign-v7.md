@@ -33,7 +33,7 @@ Migreringsstegen i Linux är följande:
 Stoppa först alla processer med tillgång till databasen på alla berörda datorer.
 
 1. Logga in som **root**.
-1. Alla servrar som använder omdirigeringsmodulen (**webmdl** måste stoppas. För Apache kör du följande kommando:
+1. Alla servrar som använder omdirigeringsmodulen (**webmdl**-tjänsten) måste stoppas. För Apache kör du följande kommando:
 
    ```
    /etc/init.d/apache2 stop
@@ -156,7 +156,7 @@ Stoppa först alla processer med tillgång till databasen på alla berörda dato
 -->
 
 1. Säkerhetskopiera Adobe Campaign-databasen.
-1. Logga in som **neolan** och gör en säkerhetskopia av **nl6** katalog med följande kommando:
+1. Logga in som **neolane** och gör en säkerhetskopia av katalogen **nl6** med följande kommando:
 
    ```
    su - neolane
@@ -165,7 +165,7 @@ Stoppa först alla processer med tillgång till databasen på alla berörda dato
 
    >[!IMPORTANT]
    >
-   >Som en försiktighetsåtgärd rekommenderar vi att du packar **nl6.back** och spara den på en annan säker plats än servern.
+   >Som en försiktighetsåtgärd rekommenderar vi att du packar mappen **nl6.back** och sparar den på en annan säker plats än servern.
 
 ## Avinstallera Adobe Campaign tidigare versionspaket {#uninstalling-adobe-campaign-previous-version-packages}
 
@@ -229,7 +229,7 @@ I det här avsnittet visas hur du avinstallerar Adobe Campaign v6.1-paket.
      ii  nlthirdparty6                   XXXX                     nlthirdparty6-XXXX
      ```
 
-   * I **Red Hat**:
+   * I **röd hatt**:
 
      ```
      rpm -qa | grep nl
@@ -243,7 +243,7 @@ I det här avsnittet visas hur du avinstallerar Adobe Campaign v6.1-paket.
      dpkg --purge nlserver6 nlthirdparty6
      ```
 
-   * I **Red Hat**:
+   * I **röd hatt**:
 
      ```
      rprm -ev nlserver6 nlthirdparty6
@@ -479,7 +479,7 @@ Så här distribuerar du Adobe Campaign:
      dpkg -i nlserver6-XXXX-amd64_debX.deb
      ```
 
-   * I **Red Hat**:
+   * I **röd hatt**:
 
      ```
      rpm -Uvh nlserver6-XXXX-x86_64_rhX.rpm
@@ -491,7 +491,7 @@ Så här distribuerar du Adobe Campaign:
 
    >[!NOTE]
    >
-   >Adobe Campaign v7 är installerat i **/usr/local/neolane/nl6/** som standard.
+   >Adobe Campaign v7 installeras som standard i katalogen **/usr/local/neolane/nl6/** .
 
 1. Om du vill göra installationsprogrammet för klientkonsolen tillgängligt kopierar du det till installationskatalogen för Adobe Campaign:
 
@@ -503,7 +503,7 @@ Så här distribuerar du Adobe Campaign:
    >
    >Mer information om hur du installerar Adobe Campaign i Linux finns i [det här avsnittet](../../installation/using/installing-campaign-standard-packages.md).
 
-1. Gå till **nl6.back** säkerhetskopiera mapp och kopiera (skriv över) konfigurationsfilerna och undermapparna för varje instans. Logga in som **neolan** och kör följande kommando:
+1. Gå till säkerhetskopiemappen **nl6.back** och kopiera (skriv över) konfigurationsfilerna och undermapparna för varje instans. Logga in som **neolane** och kör följande kommando:
 
    ```
    su - neolane
@@ -520,7 +520,7 @@ Så här distribuerar du Adobe Campaign:
    nlserver config -reload
    ```
 
-1. Starta efteruppgraderingen med följande kommando (fortfarande som **neolan**):
+1. Starta efteruppgraderingsprocessen med följande kommando (fortfarande som **neolane**):
 
    ```
    su - neolane

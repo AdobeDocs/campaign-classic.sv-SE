@@ -22,13 +22,13 @@ ht-degree: 2%
 
 Det här dokumentet innehåller information om förutsättningarna för en migrering, stegen för en migrering till Adobe Campaign Classic v7. Steg och valfria inställningar beror på din konfiguration.
 
-Migreringsprocessen måste utföras med försiktighet, dess konsekvenser måste beaktas fullt ut i förväg och förfarandet måste utföras rigoröst. Den får endast utföras av en expertanvändare. Vi rekommenderar att du kontaktar [Adobe kundtjänst](https://helpx.adobe.com/se/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) innan någon migreringsprocess inleds.
+Migreringsprocessen måste utföras med försiktighet, dess konsekvenser måste beaktas fullt ut i förväg och förfarandet måste utföras rigoröst. Den får endast utföras av en expertanvändare. Vi rekommenderar att du kontaktar [Adobe kundtjänst](https://helpx.adobe.com/se/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) innan du påbörjar en migreringsprocedur.
 
 Migreringen måste testas i test-/scenmiljön i förväg för att säkerställa att den fungerar smidigt och utan fel. Migrering av produktionsmiljön får endast utföras när den migrerade testmiljön har validerats fullständigt.
 
 >[!NOTE]
 >
->De nya funktionerna och förbättringarna i Adobe Campaign v7 beskrivs närmare i [Versionsinformation](../../rn/using/latest-release.md).
+>Nya funktioner och förbättringar som ingår i Adobe Campaign v7 beskrivs i [versionsinformationen](../../rn/using/latest-release.md).
 
 
 ## Förhandskrav
@@ -40,7 +40,7 @@ Migreringen måste testas i test-/scenmiljön i förväg för att säkerställa 
 * Det kan ta flera dagar innan migreringen är klar.
 * Adobe Campaign v7 är en säkrare version än de tidigare: detta påverkar konfigurationsriktlinjerna för att undvika problem som till exempel korrupta data och bevara databasens dataintegritet. Som kund ansvarar du för att testa alla konfigurationer, inklusive arbetsflöden.
 
-Fler förutsättningar finns i [den här sidan](../../migration/using/before-starting-migration.md).
+Fler förutsättningar finns på [den här sidan](../../migration/using/before-starting-migration.md).
 
 
 ## Moderniserad miljö {#modernizing-your-environment}
@@ -49,11 +49,11 @@ Att utföra en migrering kan vara en chans att uppdatera miljön (databasmotorer
 
 >[!CAUTION]
 >
->Mer information om vilka versioner som stöds av Adobe Campaign v7 finns i [Kompatibilitetsmatris](../../rn/using/compatibility-matrix.md).
+>Mer information om vilka versioner som stöds av Adobe Campaign v7 finns i [kompatibilitetsmatrisen](../../rn/using/compatibility-matrix.md).
 
 ## Viktiga migreringssteg {#key-migration-steps}
 
-Det allmänna tillvägagångssättet för migrering till Adobe Campaign v7 beskrivs i [den här sidan](../../migration/using/before-starting-migration.md).
+Den allmänna proceduren för migrering till Adobe Campaign v7 beskrivs på [den här sidan](../../migration/using/before-starting-migration.md).
 
 
 ## Specifika konfigurationer {#specific-configurations}

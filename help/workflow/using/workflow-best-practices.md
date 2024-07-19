@@ -19,19 +19,19 @@ ht-degree: 5%
 
 Nedan visas allmänna riktlinjer för hur du optimerar Campaign-prestanda, inklusive bästa praxis för dina arbetsflöden.
 
-Felsökningsriktlinjer för arbetsflödeskörning finns även i [Campaign Classic v7 Production Guide](../../production/using/workflow-execution.md).
+Felsökningsriktlinjer för arbetsflödeskörning finns också i [Campaign Classic v7 Production Guide](../../production/using/workflow-execution.md).
 
 ### Loggar {#logs}
 
-JavaScript-metoden **[!UICONTROL logInfo()]** är en bra lösning för att felsöka ett arbetsflöde. Den är användbar men måste användas med försiktighet, särskilt för aktiviteter som ofta körs: den kan överlagra loggarna och avsevärt öka storleken på loggtabellen. Men du kanske också behöver mer än **[!UICONTROL logInfo()]**.
+JavaScript-metoden **[!UICONTROL logInfo()]** är en bra lösning för att felsöka ett arbetsflöde. Den är användbar men måste användas med försiktighet, särskilt för aktiviteter som ofta körs: den kan överlagra loggarna och avsevärt öka storleken på loggtabellen. Men du kan också behöva mer än **[!UICONTROL logInfo()]**.
 
 Det finns ytterligare två lösningar:
 
-* **Behåll resultatet från mellanliggande populationer mellan två exekveringar**
+* **Behåll resultatet av interimpopulationer mellan två exekveringar**
 
-  Med det här alternativet behålls temporära tabeller mellan två körningar av ett arbetsflöde. Den är tillgänglig i arbetsflödesegenskapernas **[!UICONTROL General]** och kan användas för utveckling och testning för att övervaka data och kontrollera resultat. Du kan använda det här alternativet i utvecklingsmiljöer, men aldrig använda det i produktionsmiljöer. Om du behåller tillfälliga tabeller kan databasens storlek öka avsevärt och så småningom kan storleksgränsen nås. Dessutom kommer säkerhetskopieringen att bli långsammare.
+  Med det här alternativet behålls temporära tabeller mellan två körningar av ett arbetsflöde. Den är tillgänglig på fliken **[!UICONTROL General]** i arbetsflödesegenskaperna och kan användas för att övervaka data och kontrollera resultat i utvecklings- och testsyfte. Du kan använda det här alternativet i utvecklingsmiljöer, men aldrig använda det i produktionsmiljöer. Om du behåller tillfälliga tabeller kan databasens storlek öka avsevärt och så småningom kan storleksgränsen nås. Dessutom kommer säkerhetskopieringen att bli långsammare.
 
-  Endast arbetsregister för den senaste körningen av arbetsflödet behålls. Arbetsregister från tidigare körningar rensas av **[!UICONTROL cleanup]** arbetsflöde, som körs dagligen.
+  Endast arbetsregister för den senaste körningen av arbetsflödet behålls. Arbetsregister från tidigare körningar rensas av arbetsflödet **[!UICONTROL cleanup]**, som körs dagligen.
 
   >[!CAUTION]
   >
@@ -39,10 +39,10 @@ Det finns ytterligare två lösningar:
 
 * **Logga SQL-frågor i journalen**
 
-  Finns i **[!UICONTROL Execution]** på fliken med arbetsflödesegenskaper loggas alla SQL-frågor som genereras av verktyget från de olika aktiviteterna. Det är ett bra sätt att se vad som faktiskt utförs av plattformen. Detta alternativ bör dock endast användas tillfälligt under utvecklingen och inte aktiveras i produktionen.
+  På fliken **[!UICONTROL Execution]** i arbetsflödesegenskaperna loggas alla SQL-frågor som genererats av verktyget från de olika aktiviteterna. Det är ett bra sätt att se vad som faktiskt utförs av plattformen. Detta alternativ bör dock endast användas tillfälligt under utvecklingen och inte aktiveras i produktionen.
 
-Rensa loggarna när de inte behövs längre. Arbetsflödeshistorik rensas inte automatiskt: alla meddelanden behålls som standard. Historiken kan rensas via **[!UICONTROL File > Actions]** eller genom att klicka på knappen Åtgärder i verktygsfältet ovanför listan. Välj Rensa historik.
-Mer information om hur du tömmer dina loggar finns i [dokumentation](starting-a-workflow.md).
+Rensa loggarna när de inte behövs längre. Arbetsflödeshistorik rensas inte automatiskt: alla meddelanden behålls som standard. Historiken kan rensas via menyn **[!UICONTROL File > Actions]** eller genom att klicka på knappen Åtgärder i verktygsfältet ovanför listan. Välj Rensa historik.
+Mer information om hur du tömmer dina loggar finns i [dokumentationen](starting-a-workflow.md).
 
 ### Arbetsflödesplanering {#workflow-planning}
 
@@ -50,12 +50,12 @@ Mer information om hur du tömmer dina loggar finns i [dokumentation](starting-a
 * Schemalägg datainläsning över en natt för att minska resurskonflikter.
 * Långa arbetsflöden kan eventuellt påverka server- och databasresurserna. Dela de längsta arbetsflödena för att minska bearbetningstiden.
 * Om du vill minska den totala körtiden ersätter du tidskrävande aktiviteter med förenklade och snabbare aktiviteter.
-* Undvik att köra fler än 20 arbetsflöden samtidigt. När alltför många arbetsflöden körs samtidigt kan systemet få slut på resurser och bli instabilt. Mer information om varför arbetsflödet kanske inte startar finns i [artikel](https://helpx.adobe.com/ie/campaign/kb/workflows-not-starting-in-a-campaign-technical-workflows.html).
+* Undvik att köra fler än 20 arbetsflöden samtidigt. När alltför många arbetsflöden körs samtidigt kan systemet få slut på resurser och bli instabilt. Mer information om varför arbetsflödet kanske inte startar finns i den här [artikeln](https://helpx.adobe.com/ie/campaign/kb/workflows-not-starting-in-a-campaign-technical-workflows.html).
 
 
 ### Kör i motoralternativet {#execute-in-the-engine-option}
 
-I **[!UICONTROL Workflow properties]** window, never check the **[!UICONTROL Execute in the engine]** alternativ. När det här alternativet är aktiverat får arbetsflödet prioritet och alla andra arbetsflöden stoppas av arbetsflödesmotorn tills det är klart.
+Kontrollera aldrig alternativet **[!UICONTROL Execute in the engine]** i fönstret **[!UICONTROL Workflow properties]**. När det här alternativet är aktiverat får arbetsflödet prioritet och alla andra arbetsflöden stoppas av arbetsflödesmotorn tills det är klart.
 
 ![](assets/wf-execute-in-engine.png)
 
@@ -65,7 +65,7 @@ I **[!UICONTROL Workflow properties]** window, never check the **[!UICONTROL Exe
 
 Adobe rekommenderar att du skapar arbetsflöden i en dedikerad mapp.
 
-Om arbetsflödet påverkar hela plattformen (till exempel rensningsprocesser) kan du lägga till en undermapp i den inbyggda **[!UICONTROL Technical Workflows]** mapp.
+Om arbetsflödet påverkar hela plattformen (till exempel rensningsprocesser) kan du lägga till en undermapp i den inbyggda **[!UICONTROL Technical Workflows]**-mappen.
 
 ### Namnge arbetsflöde {#workflow-naming}
 
@@ -83,7 +83,7 @@ Exempel:
 
 ### Arbetsflödets allvarlighetsgrad {#workflow-severity}
 
-Du kan konfigurera ett arbetsflödes svårighetsgrad i arbetsflödesegenskaperna i **[!UICONTROL Execution]** tab:
+Du kan konfigurera ett arbetsflödes svårighetsgrad i arbetsflödesegenskaperna på fliken **[!UICONTROL Execution]**:
 
 * Normal
 * Produktion
@@ -103,7 +103,7 @@ I arbetsflödesegenskaperna väljer du en Supervisor-grupp, antingen standardgru
 
 Innan du börjar skapa ett arbetsflöde måste du definiera arbetsflödesansvariga. De meddelas via e-post om fel uppstår. Mer information finns i [Hantera fel](monitoring-workflow-execution.md#managing-errors).
 
-Kontrollera regelbundet **[!UICONTROL Monitoring]** om du vill visa den övergripande statusen för de aktiva arbetsflödena. Mer information finns i [Instansövervakning](monitoring-workflow-execution.md#instance-supervision).
+Kontrollera regelbundet fliken **[!UICONTROL Monitoring]** för att visa den övergripande statusen för de aktiva arbetsflödena. Mer information finns i [Instansövervakning](monitoring-workflow-execution.md#instance-supervision).
 
 Med Workflow HeatMap kan Adobe Campaign plattformsadministratörer övervaka inläsningen av instansen och planera arbetsflödena utifrån detta. Mer information finns i [Arbetsflödesövervakning](heatmap.md).
 
@@ -111,18 +111,18 @@ Med Workflow HeatMap kan Adobe Campaign plattformsadministratörer övervaka inl
 
 >[!CAUTION]
 >
->Du kan kopiera och klistra in aktiviteter i samma arbetsflöde. Vi rekommenderar dock inte att du kopierar inklistringsaktiviteter i olika arbetsflöden. Vissa inställningar som är kopplade till aktiviteter som Leveranser och Schemaläggare kan leda till konflikter och fel när målarbetsflödet körs. I stället rekommenderar vi att du  **Duplicera** arbetsflöden. Mer information finns i [Duplicera arbetsflöden](building-a-workflow.md#duplicating-workflows).
+>Du kan kopiera och klistra in aktiviteter i samma arbetsflöde. Vi rekommenderar dock inte att du kopierar inklistringsaktiviteter i olika arbetsflöden. Vissa inställningar som är kopplade till aktiviteter som Leveranser och Schemaläggare kan leda till konflikter och fel när målarbetsflödet körs. Vi rekommenderar i stället att du **duplicerar** arbetsflöden. Mer information finns i [Duplicera arbetsflöden](building-a-workflow.md#duplicating-workflows).
 
 ### Namn på aktiviteten {#name-of-the-activity}
 
 När du utvecklar ditt arbetsflöde får alla aktiviteter ett namn, liksom alla Adobe Campaign-objekt. När namnet genereras av verktyget rekommenderar vi att du byter namn på det med ett explicit namn när du konfigurerar det. Risken med att göra det senare är att det kan avbryta arbetsflödet med aktiviteter med hjälp av namnet på en annan tidigare aktivitet. Det skulle därför vara svårt att uppdatera namnen efteråt.
 
-Aktivitetsnamnet finns i **[!UICONTROL Advanced]** -fliken. Ge dem inte namn **[!UICONTROL query]**, **[!UICONTROL query1]**, **[!UICONTROL query11]**, men ge dem explicita namn som **[!UICONTROL querySubscribedRecipients]**. Det här namnet visas i journalen, och om tillämpligt i SQL-loggarna, och det hjälper till att felsöka arbetsflödet när det konfigureras.
+Aktivitetsnamnet finns på fliken **[!UICONTROL Advanced]**. Ge dem inte namnen **[!UICONTROL query]**, **[!UICONTROL query1]**, **[!UICONTROL query11]**, men ge dem explicita namn som **[!UICONTROL querySubscribedRecipients]**. Det här namnet visas i journalen, och om tillämpligt i SQL-loggarna, och det hjälper till att felsöka arbetsflödet när det konfigureras.
 
 ### Första och sista aktiviteten {#first-and-last-activities}
 
-* Starta alltid arbetsflödet med en **[!UICONTROL Start]** aktivitet eller **[!UICONTROL Scheduler]** aktivitet. När det är relevant kan du även använda en **[!UICONTROL External signal]** aktivitet.
-* När du skapar arbetsflödet ska du bara använda ett **[!UICONTROL Scheduler]** aktivitet per gren. Om samma gren i ett arbetsflöde har flera schemaläggare (länkade till varandra), multipliceras antalet uppgifter som ska utföras exponentiellt, vilket skulle innebära att databasen överbelastas avsevärt. Den här regeln gäller även alla aktiviteter med en **[!UICONTROL Scheduling & History]** -fliken. Läs mer på [Schemaläggning](scheduler.md).
+* Starta alltid arbetsflödet med en **[!UICONTROL Start]**-aktivitet eller en **[!UICONTROL Scheduler]**-aktivitet. När det är relevant kan du även använda en **[!UICONTROL External signal]**-aktivitet.
+* När du skapar ditt arbetsflöde ska du bara använda en **[!UICONTROL Scheduler]**-aktivitet per gren. Om samma gren i ett arbetsflöde har flera schemaläggare (länkade till varandra), multipliceras antalet uppgifter som ska utföras exponentiellt, vilket skulle innebära att databasen överbelastas avsevärt. Den här regeln gäller även för alla aktiviteter med en **[!UICONTROL Scheduling & History]**-flik. Läs mer om [Schemaläggning](scheduler.md).
 
   ![](assets/wf-scheduler.png)
 
@@ -130,13 +130,13 @@ Aktivitetsnamnet finns i **[!UICONTROL Advanced]** -fliken. Ge dem inte namn **[
 
 ### Javascript inom en aktivitet {#javascript-within-an-activity}
 
-Du kanske vill lägga till JavaScript när du initierar en arbetsflödesaktivitet. Detta kan göras i en aktivitets **[!UICONTROL Advanced]** aktivitetens flik.
+Du kanske vill lägga till JavaScript när du initierar en arbetsflödesaktivitet. Detta kan göras på aktivitetens **[!UICONTROL Advanced]**-flik.
 
 För att underlätta spärrning av arbetsflödet rekommenderar vi att du använder dubbla streck i början och slutet av aktivitetsetiketten enligt följande: — Min etikett —.
 
 ### Signal {#signal}
 
-Oftast vet du inte varifrån signalen anropas. För att undvika det här problemet använder du **[!UICONTROL Comment]** fält i **[!UICONTROL Advanced]** signalaktivitetens flik för att dokumentera det förväntade ursprunget för en signal för denna aktivitet.
+Oftast vet du inte varifrån signalen anropas. För att undvika det här problemet kan du använda fältet **[!UICONTROL Comment]** på fliken **[!UICONTROL Advanced]** i signalaktiviteten för att dokumentera den förväntade källan för en signal för den här aktiviteten.
 
 ![](assets/workflow-signal-bp.png)
 

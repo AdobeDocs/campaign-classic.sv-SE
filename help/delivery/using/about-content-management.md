@@ -15,7 +15,7 @@ ht-degree: 2%
 
 # Om innehållshantering{#about-content-management}
 
-Adobe Campaign Content Manager-modulen är en specifik Campaign Classic [inbyggt paket](../../installation/using/installing-campaign-standard-packages.md) som du kan installera för att skapa återkommande nyhetsbrev eller webbplatser. Det kan hjälpa dig att skapa, validera och publicera meddelanden.
+Adobe Campaign Content Manager-modulen är en specifik Campaign Classic, [inbyggt paket](../../installation/using/installing-campaign-standard-packages.md), som du kan installera för att skapa återkommande nyhetsbrev eller webbplatser. Det kan hjälpa dig att skapa, validera och publicera meddelanden.
 
 >[!NOTE]
 >
@@ -37,7 +37,7 @@ Innehållshantering har följande fördelar:
 * Separation av datainnehåll och hur det presenteras (genereras i XML-format).
 * Dokumentgenerering i flera format (html, txt, XML osv.) som bygger på formatmallar för att säkerställa att grafiska tecken följs,
 * Återställning och automatisk sammanställning av externa innehållsflöden.
-* Samarbeta med arbetsflöden för datavalidering och -kontroll.
+* Collaboration med arbetsflöde för datavalidering och -kontroll.
 
 Det här sättet att skapa innehåll har dock vissa begränsningar, bland annat:
 

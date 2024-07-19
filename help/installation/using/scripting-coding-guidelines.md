@@ -20,7 +20,7 @@ ht-degree: 3%
 
 ## Skript
 
-Mer information finns i [Kampanj-JSAPI-dokumentation](https://experienceleague.adobe.com/developer/campaign-api/api/index.html?lang=sv).
+Mer information finns i [Kampanjens JSAPI-dokumentation](https://experienceleague.adobe.com/developer/campaign-api/api/index.html?lang=sv).
 
 Om du skriptar med arbetsflöde, webbprogram, jssp, ska du följa dessa rutiner:
 
@@ -55,9 +55,9 @@ För att undvika SQL-injektioner måste SQL-funktioner läggas till i tillåtels
 
 >[!IMPORTANT]
 >
->Om du använder en version som är äldre än 8 140 är **XtkPassUnknownSQLFunactionsToRDBMS** kan anges till &quot;1&quot;. Om du vill skydda databasen tar du bort det här alternativet (eller anger värdet 0).
+>Om du använder en version som är äldre än 8140 kan alternativet **XtkPassUnknownSQLFunactionsToRDBMS** anges till 1. Om du vill skydda databasen tar du bort det här alternativet (eller anger värdet 0).
 
-Om du använder användarindata för att skapa filter i frågor eller SQL-satser måste du alltid undvika dem (se [Kampanj-JSAPI-dokumentation](https://experienceleague.adobe.com/developer/campaign-api/api/index.html?lang=sv) - Dataskydd: funktioner för flytning). De här funktionerna är:
+Om du använder användarindata för att skapa filter i frågor eller SQL-satser, måste du alltid undvika dem (se [Kampanjens JSAPI-dokumentation](https://experienceleague.adobe.com/developer/campaign-api/api/index.html?lang=sv) - Dataskydd: funktioner som kan kringgås). De här funktionerna är:
 
 * NL.XML.escape(data)
 * NL.SQL.escape(data)
@@ -77,7 +77,7 @@ Se följande sidor:
 
 Förutom den mappbaserade säkerhetsmodellen kan du använda namngivna rättigheter för att begränsa operatoråtgärder:
 
-* Du kan lägga till vissa systemfilter (sysFilter) för att förhindra att data läses/skrivs (se [den här sidan](../../configuration/using/filtering-schemas.md)).
+* Du kan lägga till systemfilter (sysFilter) för att förhindra att data läses/skrivs (se [den här sidan](../../configuration/using/filtering-schemas.md)).
 
   ```
   <sysFilter name="writeAccess">    
@@ -85,7 +85,7 @@ Förutom den mappbaserade säkerhetsmodellen kan du använda namngivna rättighe
   </sysFilter>
   ```
 
-* Du kan även skydda vissa åtgärder (SOAP-metod) som definieras i scheman. Ange bara åtkomstattributet med motsvarande namngiven rättighet som värde.
+* Du kan också skydda vissa åtgärder (SOAP metod) som definieras i scheman. Ange bara åtkomstattributet med motsvarande namngiven rättighet som värde.
 
   ```
   <method name="grantVIPAccess" access="myNewRole">
@@ -105,23 +105,23 @@ Förutom den mappbaserade säkerhetsmodellen kan du använda namngivna rättighe
 
 Om du behöver skydda konfidentiella data (del av ett schema) beroende på operatörens åtkomstnivå, ska du inte dölja dem i formulärdefinitionen (enabledIf/visibleIf-villkor).
 
-Den fullständiga enheten läses in av skärmen och du kan även visa dem i kolumndefinitionen. För att göra detta måste du skapa en flödestabell. Referens [den här sidan](../../configuration/using/examples-of-schemas-edition.md#overflow-table).
+Den fullständiga enheten läses in av skärmen och du kan även visa dem i kolumndefinitionen. För att göra detta måste du skapa en flödestabell. Se [den här sidan](../../configuration/using/examples-of-schemas-edition.md#overflow-table).
 
 ## Lägga till bildtexter i webbprogram
 
 Det är en god vana att lägga till en captcha på offentliga landningssidor/prenumerationssidor. Tyvärr är det inte så enkelt att lägga till en captcha på DCE-sidor (Digital Content Editor). Vi visar hur du lägger till en v5-captcha eller en Google reCAPTCHA.
 
-Det allmänna sättet att lägga till en captcha i DCE är att skapa ett personaliseringsblock som enkelt kan inkluderas i sidinnehållet. Du måste lägga till en **Skript** aktivitet och **Testa**.
+Det allmänna sättet att lägga till en captcha i DCE är att skapa ett personaliseringsblock som enkelt kan inkluderas i sidinnehållet. Du måste lägga till en **Script**-aktivitet och en **Test**.
 
-### Personaliseringsblock
+### Personalization block
 
 1. Gå till **[!UICONTROL Resources]** > **[!UICONTROL Campaign Management]** > **[!UICONTROL Personalization blocks]** och skapa en ny.
 
-1. Använd **[!UICONTROL Web application]** innehållstyp och kontroll **[!UICONTROL Visible in the customization menus]**.
+1. Använd innehållstypen **[!UICONTROL Web application]** och kontrollera **[!UICONTROL Visible in the customization menus]**.
 
    För mer information om detta hittar du i [det här avsnittet](../../delivery/using/personalization-blocks.md).
 
-   Här är ett exempel på en **Campaign captcha**:
+   Här är ett exempel på en **kampanjbeskrivning**:
 
    ```javascript
    <%
@@ -148,7 +148,7 @@ Det allmänna sättet att lägga till en captcha i DCE är att skapa ett persona
 
      `<div class="g-recaptcha" data-sitekey="YOUR_SITE_KEY"></div>`
 
-   Du bör kunna inaktivera valideringsknappen, men eftersom vi inte har någon standardknapp/länk är det bättre att göra det i själva HTML. Om du vill veta hur du gör det kan du läsa [den här sidan](https://developers.google.com/recaptcha/).
+   Du bör kunna inaktivera valideringsknappen, men eftersom vi inte har någon standardknapp/länk är det bättre att göra det i själva HTML. Mer information finns på [den här sidan](https://developers.google.com/recaptcha/).
 
 ### Uppdatera ditt webbprogram
 
@@ -156,9 +156,9 @@ Det allmänna sättet att lägga till en captcha i DCE är att skapa ett persona
 
    ![](assets/scripting-captcha.png)
 
-1. Mellan den sista sidan och **[!UICONTROL Storage]** aktivitet, lägga till **[!UICONTROL Script]** och **[!UICONTROL Test]**.
+1. Lägg till **[!UICONTROL Script]** och **[!UICONTROL Test]** mellan den sista sidan och aktiviteten **[!UICONTROL Storage]**.
 
-   Anslut grenen **[!UICONTROL True]** till **[!UICONTROL Storage]** och den andra till sidan som ska ha captcha.
+   Koppla grenen **[!UICONTROL True]** till **[!UICONTROL Storage]** och den andra till sidan som ska ha captcha.
 
    ![](assets/scripting-captcha2.png)
 
@@ -166,7 +166,7 @@ Det allmänna sättet att lägga till en captcha i DCE är att skapa ett persona
 
    ![](assets/scripting-captcha3.png)
 
-1. Redigera **[!UICONTROL Script]** aktivitet. Innehållet beror på den valda captcha-motorn.
+1. Redigera aktiviteten **[!UICONTROL Script]**. Innehållet beror på den valda captcha-motorn.
 
 1. Slutligen kan du lägga till ditt personliga block på sidan: se [den här sidan](../../web/using/editing-content.md).
 
@@ -200,7 +200,7 @@ Rad 6: du kan skicka vilket felmeddelande som helst.
 
 ### Google recaptcha
 
-Läs mer i [officiell dokumentation](https://developers.google.com/recaptcha/docs/verify).
+Se den [officiella dokumentationen](https://developers.google.com/recaptcha/docs/verify).
 
 ```javascript
 ctx.vars.captchaValid = false

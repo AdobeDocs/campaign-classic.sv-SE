@@ -26,12 +26,12 @@ En nyckel deklareras från huvudelementet i dataschemat.
 </key>
 ```
 
-En nyckel kallas för &#39;primärnyckel&#39; när den är den första i schemat som ska fyllas i, eller om den innehåller `internal` -attributet har värdet &quot;true&quot;.
+En nyckel kallas för primärnyckel när den är den första i schemat som ska fyllas i, eller om den innehåller attributet `internal` inställt på true.
 
 Följande regler gäller för nycklar:
 
 * En nyckel kan referera till ett eller flera fält i tabellen
-* Ett unikt index deklareras implicit för varje nyckeldefinition. Det går inte att skapa ett index på nyckeln genom att ange `noDbIndex` -attributet är &quot;true&quot;.
+* Ett unikt index deklareras implicit för varje nyckeldefinition. Det går inte att skapa ett index för nyckeln genom att ange attributet `noDbIndex` till &quot;true&quot;.
 
 >[!NOTE]
 >
@@ -126,21 +126,21 @@ Följande regler gäller för nycklar:
 
 ## Automatisk inkrementell nyckel {#auto-incremental-key}
 
-Huvudnyckeln i de flesta Adobe Campaign-tabeller är ett 32-bitars heltal som genereras automatiskt av databasmotorn. Beräkningen av nyckelvärdet beror på en sekvens (som standard är **XtkNewId** SQL-funktion) som genererar ett tal som är unikt i hela databasen. Innehållet i nyckeln anges automatiskt när posten infogas.
+Huvudnyckeln i de flesta Adobe Campaign-tabeller är ett 32-bitars heltal som genereras automatiskt av databasmotorn. Beräkningen av nyckelvärdet beror på en sekvens (som standard SQL-funktionen **XtkNewId**) som genererar ett tal som är unikt i hela databasen. Innehållet i nyckeln anges automatiskt när posten infogas.
 
 Fördelen med en inkrementell nyckel är att den ger en icke-modifierbar teknisk nyckel för kopplingarna mellan tabellerna. Dessutom tar den här nyckeln inte upp så mycket minne eftersom ett heltal med dubbla byte används.
 
-I källschemat kan du ange namnet på den sekvens som ska användas med **pkSequence** -attribut. Om attributet inte anges i källschemat **XtkNewId** standardsekvens används. Programmet använder dedikerade sekvenser för **nms:broadLog** och **nms:trackingLog** scheman (**NmsBroadLogId** och **NmsTrackingLogId** eftersom dessa är de tabeller som innehåller flest poster.
+I källschemat kan du ange namnet på den sekvens som ska användas med attributet **pkSequence**. Om det här attributet inte anges i källschemat används standardsekvensen **XtkNewId**. Programmet använder dedikerade sekvenser för scheman **nms:broadLog** och **nms:trackingLog** (**NmsBroadLogId** respektive **NmsTrackingLogId**) eftersom det är de tabeller som innehåller de flesta posterna.
 
-Från ACC 18.10, **XtkNewId** är inte längre standardvärdet för sekvensen i scheman som är klara att användas. Du kan nu skapa ett schema eller utöka ett befintligt schema med en dedikerad sekvens.
+Från ACC 18.10 är **XtkNewId** inte längre standardvärdet för sekvensen i scheman som är klara att användas. Du kan nu skapa ett schema eller utöka ett befintligt schema med en dedikerad sekvens.
 
 >[!IMPORTANT]
 >
 >När du skapar ett nytt schema eller under ett schematillägg måste du behålla samma sekvensvärde för primärnyckeln (@pkSequence) för hela schemat.
 
-En sekvens som refereras i ett Adobe Campaign-schema (**NmsTrackingLogId** t.ex.) måste associeras med en SQL-funktion som returnerar antalet ID:n i parametrarna, avgränsade med kommatecken. Den här funktionen måste anropas **GetNew** XXX **ID**, där **XXX** är namnet på sekvensen (**GetNewNmsTrackingLogIds** till exempel). Visa **postgres-nms.sql**, **mssql-nms.sql** eller **oracle-nms.sql** filer som ingår i programmet i **datakit/nms/eng/sql/** för att återställa exemplet på en NmsTrackingLogId-sekvensgenerering för varje databasmotor.
+En sekvens som refereras i ett Adobe Campaign-schema (**NmsTrackingLogId** till exempel) måste associeras med en SQL-funktion som returnerar antalet ID:n i parametrarna, avgränsade med kommatecken. Den här funktionen måste anropas som **GetNew** XXX **Ids**, där **XXX** är sekvensens namn (**GetNewNmsTrackingLogIds** till exempel). Visa filerna **postgres-nms.sql**, **mssql-nms.sql** eller **oracle-nms.sql** som följer med programmet i katalogen **data/nms/eng/sql/** för att återställa exemplet på en NmsTrackingLogId-sekvens för varje gång databasmotor.
 
-Om du vill deklarera en unik nyckel fyller du i **autopk** attribute (with value &quot;true&quot;) on the main element of the data schema.
+Om du vill deklarera en unik nyckel fyller du i attributet **autopk** (med värdet &quot;true&quot;) i huvudelementet i dataschemat.
 
 **Exempel**:
 

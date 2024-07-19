@@ -24,7 +24,7 @@ Operatörer kan prenumerera på ett forum och få ett e-postmeddelande varje gå
 
 ## Gå till ett forum {#accessing-a-forum}
 
-Gå till kontrollpanelen och klicka på **[!UICONTROL Forum]** i det övre högra hörnet. Den här länken ger dig även information om det totala antalet meddelanden i forumet.
+Gå till kontrollpanelen och klicka på länken **[!UICONTROL Forum]** i det övre högra hörnet om du vill besöka forumet för en kampanj, en operator osv. Den här länken ger dig även information om det totala antalet meddelanden i forumet.
 
 ![](assets/mrm_forum_access_link.png)
 
@@ -38,13 +38,13 @@ Om du vill visa innehållet i ett meddelande klickar du på meddelandehuvudet.
 
 **Starta en ny diskussion**
 
-Om du vill starta en ny diskussion klickar du på **[!UICONTROL Add a discussion]** längst upp till höger. The **[!UICONTROL Discussion forum]** öppnas (se nedan).
+Om du vill starta en ny diskussion klickar du på knappen **[!UICONTROL Add a discussion]** i det övre högra hörnet. **[!UICONTROL Discussion forum]**-rutan visas (se nedan).
 
 ![](assets/mrm_forum_new_thread.png)
 
 **Publicera ett meddelande till en befintlig diskussion**
 
-Om du vill skicka ett meddelande till en befintlig diskussion öppnar du meddelandet som du vill svara på och klickar sedan på knappen **[!UICONTROL Reply]** i det övre vänstra hörnet. The **[!UICONTROL Discussion forum]** öppnas (se nedan).
+Om du vill skicka ett meddelande till en befintlig diskussion öppnar du meddelandet som du vill svara på och klickar sedan på länken **[!UICONTROL Reply]** i det övre vänstra hörnet. **[!UICONTROL Discussion forum]**-rutan visas (se nedan).
 
 ![](assets/mrm_forum_answer_msg.png)
 
@@ -52,18 +52,18 @@ När du svarar på ett meddelande får den som publicerade det ursprungliga medd
 
 **Skriv ett meddelande**
 
-I **[!UICONTROL Discussion forum]** box:
+I rutan **[!UICONTROL Discussion forum]**:
 
-1. Ange texten i dialogrutan **[!UICONTROL Message]** -fält och en diskussionsrubrik i **[!UICONTROL Subject]** fält.
+1. Ange texten i fältet **[!UICONTROL Message]** och en diskussionsrubrik i fältet **[!UICONTROL Subject]**.
 
    ![](assets/mrm_forum_edit_msg.png)
 
 1. Vid behov:
 
-   * Använd dialogrutan **[!UICONTROL Operator to notify]** fält. Operatorn får ett e-postmeddelande för det här specifika meddelandet (de kommer inte att prenumerera på forumet). Om du vill meddela flera operatorer väljer du en grupp med operatorer.
-   * Om du vill lägga till en bifogad fil i meddelandet klickar du på **[!UICONTROL Browse]**. Den bifogade filen kommer också att inkluderas i e-postmeddelandet. Bifogade filer kan bara skickas individuellt: om du vill skicka flera filer måste du zippa dem.
+   * Använd fältet **[!UICONTROL Operator to notify]** om du vill att någon ska delta i diskussionen som inte prenumererar på forumet. Operatorn får ett e-postmeddelande för det här specifika meddelandet (de kommer inte att prenumerera på forumet). Om du vill meddela flera operatorer väljer du en grupp med operatorer.
+   * Klicka på **[!UICONTROL Browse]** om du vill lägga till en bifogad fil i meddelandet. Den bifogade filen kommer också att inkluderas i e-postmeddelandet. Bifogade filer kan bara skickas individuellt: om du vill skicka flera filer måste du zippa dem.
 
-1. Klicka **[!UICONTROL Create the message]** för att lägga ut det på forumet.
+1. Klicka på **[!UICONTROL Create the message]** för att publicera den på forumet.
 
 >[!NOTE]
 >
@@ -75,30 +75,30 @@ Du kan skicka ett meddelande till en operatörs forum om ditt meddelande t.ex. i
 
 Så här kommer du åt en operatörs forum:
 
-* Om du har de rättigheter som krävs för att få åtkomst till **[!UICONTROL Administration > Access management > Operators]** noden i Utforskaren, öppnar kontrollpanelen för den önskade operatorn och klickar på **[!UICONTROL Forum]** i det övre högra hörnet.
+* Om du har behörighet att komma åt noden **[!UICONTROL Administration > Access management > Operators]** i utforskaren öppnar du instrumentpanelen för den önskade operatorn och klickar på länken **[!UICONTROL Forum]** i det övre högra hörnet.
 * Om inte, leta reda på namnet på operatorn i Adobe Campaign (via ett meddelande som skickats till forumet av den här operatorn, en uppgift som tilldelats dem) och klicka på den för att komma åt deras instrumentpanel. Du kan också be administratören att skapa en vy över operatörsmappen.
 
 ## Prenumerera på ett forum {#subscribing-to-a-forum}
 
 Genom att prenumerera på ett forum kan du följa diskussioner. Du får ett e-postmeddelande varje gång ett meddelande skickas till forumet. Det här e-postmeddelandet innehåller meddelandetexten och eventuella bilagor. Om du vill svara på ett meddelande klickar du i e-postmeddelandet och loggar sedan in på Adobe Campaign webbgränssnitt. När du prenumererar på ett forum visas den här informationen för alla.
 
-* Klicka på **[!UICONTROL Follow discussions]** i det övre högra avsnittet ovanför listan med meddelanden.
+* Om du vill prenumerera på ett forum klickar du på knappen **[!UICONTROL Follow discussions]** i det övre högra avsnittet ovanför listan med meddelanden.
 
   ![](assets/mrm_forum_subscribe.png)
 
   Avsnittet blir blått och visar att du prenumererar på forumet.
 
-* Om du vill avbryta prenumerationen klickar du på **[!UICONTROL Unsubscribe]** -knappen.
+* Om du vill avbryta prenumerationen på ett forum klickar du på knappen **[!UICONTROL Unsubscribe]**.
 
   ![](assets/mrm_forum_unsubscribe.png)
 
-* På din personliga instrumentpanel visas de forum som du prenumererar på. Klicka på **[!UICONTROL Subscription to discussion forums]** för att visa listan och sedan klicka på det objekt som intresserar dig för att komma åt dess forum.
+* På din personliga instrumentpanel visas de forum som du prenumererar på. Klicka på länken **[!UICONTROL Subscription to discussion forums]** för att visa listan och klicka sedan på det objekt som är intressant för dig för att komma åt dess forum.
 
   ![](assets/platform_dashboard_operator_subscr_forums.png)
 
   Mer information om personliga instrumentpaneler finns i [det här avsnittet](../../platform/using/access-management-operators.md).
 
-* Klicka på knappen **[!UICONTROL List of subscribers to this discussion forum]** -länken ovanför listan med meddelanden.
+* Om du vill se vem som prenumererar på ett forum klickar du på länken **[!UICONTROL List of subscribers to this discussion forum]** ovanför listan med meddelanden.
 
   ![](assets/mrm_forum_subscribers.png)
 
@@ -107,10 +107,10 @@ Genom att prenumerera på ett forum kan du följa diskussioner. Du får ett e-po
 Om operatorer som prenumererar på ett forum inte får meddelanden som förväntat:
 
 * Kontrollera att e-postadresser anges i operatörens profiler.
-* Gå till **[!UICONTROL Administration > Production > Technical workflows > Campaign processes]** och kontrollera att **[!UICONTROL Jobs in discussion forums]** arbetsflödet har startats och är felfritt.
+* Gå till noden **[!UICONTROL Administration > Production > Technical workflows > Campaign processes]** och kontrollera att arbetsflödet för **[!UICONTROL Jobs in discussion forums]** har startats utan fel.
 * Visa leveransloggarna:
 
-   * På Adobe Campaign hemsida går du till **[!UICONTROL Campaigns > Navigation > Deliveries]** och sedan öppna **[!UICONTROL Discussion forum notification]** leverans.
-   * Gå till Utforskaren **[!UICONTROL Administration > Production > Objects created automatically > Technical deliveries > Workflow notifications]** och sedan klicka **[!UICONTROL Discussion forum notifications]**.
+   * Gå till **[!UICONTROL Campaigns > Navigation > Deliveries]** på startsidan för Adobe Campaign och öppna sedan leveransen av **[!UICONTROL Discussion forum notification]**.
+   * Gå till **[!UICONTROL Administration > Production > Objects created automatically > Technical deliveries > Workflow notifications]** i Utforskaren och klicka sedan på **[!UICONTROL Discussion forum notifications]**.
 
-  I **[!UICONTROL Discussion forum notifications]** finns leveransloggarna i **[!UICONTROL Edit > Delivery]** -fliken. Du kan även visa **[!UICONTROL Tracking > Log]** och **[!UICONTROL Exclusion causes]** -tabbar.
+  I rutan **[!UICONTROL Discussion forum notifications]** finns leveransloggarna på fliken **[!UICONTROL Edit > Delivery]**. Du kan även visa flikarna **[!UICONTROL Tracking > Log]** och **[!UICONTROL Exclusion causes]**.

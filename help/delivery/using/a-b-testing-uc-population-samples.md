@@ -17,15 +17,15 @@ ht-degree: 2%
 
 ## Konfigurera aktiviteten Fråga {#configuring-the-query-activity}
 
-* Dubbelklicka på **[!UICONTROL Query]** aktivitet.
+* Dubbelklicka på aktiviteten **[!UICONTROL Query]**.
 
   ![](assets/use_case_abtesting_createrecipients_001.png)
 
-* Klicka på **[!UICONTROL Edit query]** och markera de mottagare som du vill ange som mål.
+* Klicka på länken **[!UICONTROL Edit query]** och välj de mottagare som du vill ange som mål.
 
   ![](assets/use_case_abtesting_createrecipients_002.png)
 
-* Länka **[!UICONTROL Query]** till **[!UICONTROL Split]** aktivitet.
+* Länka aktiviteten **[!UICONTROL Query]** till aktiviteten **[!UICONTROL Split]**.
 
   ![](assets/use_case_abtesting_createrecipients_003.png)
 
@@ -35,7 +35,7 @@ Med den här aktiviteten kan du skapa flera populationer: den som får A, den so
 
 1. Skapar population A:
 
-   * Dubbelklicka på **[!UICONTROL Split]** aktivitet.
+   * Dubbelklicka på aktiviteten **[!UICONTROL Split]**.
 
      ![](assets/use_case_abtesting_createrecipients_004.png)
 
@@ -43,11 +43,11 @@ Med den här aktiviteten kan du skapa flera populationer: den som får A, den so
 
      ![](assets/use_case_abtesting_createrecipients_005.png)
 
-   * Välj **[!UICONTROL Limit the selected records]** alternativ.
+   * Välj alternativet **[!UICONTROL Limit the selected records]**.
 
      ![](assets/use_case_abtesting_createrecipients_006.png)
 
-   * Klicka på **[!UICONTROL Edit]** länk, markera **[!UICONTROL Activate random sampling]** och klicka **[!UICONTROL Next]**.
+   * Klicka på länken **[!UICONTROL Edit]**, markera **[!UICONTROL Activate random sampling]** och klicka på **[!UICONTROL Next]**.
 
      ![](assets/use_case_abtesting_createrecipients_007.png)
 
@@ -57,7 +57,7 @@ Med den här aktiviteten kan du skapa flera populationer: den som får A, den so
 
 1. Skapar population B:
 
-   * Klicka **[!UICONTROL Add]** för att skapa en ny flik för population B.
+   * Klicka på **[!UICONTROL Add]** för att skapa en ny flik för population B.
 
      ![](assets/use_case_abtesting_createrecipients_009.png)
 
@@ -67,7 +67,7 @@ Med den här aktiviteten kan du skapa flera populationer: den som får A, den so
 
 1. Skapar den återstående populationen:
 
-   * Gå till **[!UICONTROL General]** -fliken.
+   * Gå till fliken **[!UICONTROL General]**.
 
      ![](assets/use_case_abtesting_createrecipients_011.png)
 

@@ -24,14 +24,14 @@ När dina offertförslag är klara kan du se presentationshistoriken.
 >
 >Den här funktionen är bara synlig online och endast för leveranshanteraren.
 
-* På erbjudandenivå, på **[!UICONTROL Edit]** flik, klicka **[!UICONTROL Propositions]**.
+* Klicka på **[!UICONTROL Propositions]** på erbjudandenivån på fliken **[!UICONTROL Edit]**.
 
   ![](assets/offer_followup_006.png)
 
-* Klicka på **[!UICONTROL Propositions]** -fliken.
+* Klicka på fliken **[!UICONTROL Propositions]** i en mottagares profil.
 
   ![](assets/offer_followup_002.png)
 
-* Klicka på **[!UICONTROL Propositions]** -fliken.
+* Klicka på fliken **[!UICONTROL Propositions]** på erbjudandeutrymmesnivån.
 
   ![](assets/offer_space_prop_001_b.png)

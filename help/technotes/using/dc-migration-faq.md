@@ -21,7 +21,7 @@ Adobe tar bort det gamla datacentret: Campaign Classic måste överföras till P
 
 Nedan finns en uppsättning vanliga frågor om det här projektet, effekten på Campaign-miljöer och andra användbara resurser.
 
-För alla andra frågor kan du kontakta [Adobe kundtjänst](https://experienceleague.adobe.com/?support-solution=Campaign#support).
+Om du har andra frågor kan du kontakta [Adobe kundtjänst](https://experienceleague.adobe.com/?support-solution=Campaign#support).
 
 ## Infrastrukturpåverkan
 
@@ -43,15 +43,15 @@ Global påverkan på databaser och infrastruktur listas nedan.
 
   Vi etablerar oss i Public Cloud (AWS) med nya paketdefinitioner som baseras på databasstorlek, diskstorlek osv. Om en kund till exempel har en programserver i äldre datacenter kan de ha två programservrar i Public Cloud (AWS) baserat på paketdefinitioner.
 
-* **Kommer versionsnumret eller Campaign-versionen att ändras?**
+* **Kommer versionsnumret eller kampanjversionen att ändras?**
 
   Som ett första steg kommer vi att behålla samma Campaign Classic som migreringen.
 
   I ytterligare ett steg ska vi uppgradera till den senaste Campaign Classicen av GA-bygget. Mer information finns på [den här sidan](../../rn/using/rn-overview.md).
 
-* **Vad finns det för plan för att lösa eventuella problem efter migrationen?**
+* **Vad är planen för att åtgärda eventuella problem efter migrering?**
 
-  Omfattande testning utförs innan produktionssystemen migreras. I händelse av problem [Adobe kundtjänst](https://experienceleague.adobe.com/?support-solution=Campaign#support) kommer att förbli huvudkontaktpunkt. Adobe har inrättat ett expertteam för att vid behov ge avancerat stöd.
+  Omfattande testning utförs innan produktionssystemen migreras. Om du får problem är [Adobe kundtjänst](https://experienceleague.adobe.com/?support-solution=Campaign#support) fortfarande den viktigaste kontaktpunkten. Adobe har inrättat ett expertteam för att vid behov ge avancerat stöd.
 
 ## Leveranseffekter
 
@@ -59,13 +59,13 @@ Global påverkan på databaser och infrastruktur listas nedan.
 
 Global påverkan på IP-adresser, blockeringslista, underdomäner och URL-adresser anges nedan.
 
-* **Hur ska IP på tillåtelselista hanteras? Kommer kunderna att behöva lägga till nya IP-adresser i tillåtelselista för inkommande trafik från Campaign?**
+* **Hur hanteras IP på tillåtelselista? Behöver kunderna lägga till nya IP-adresser i tillåtelselista för inkommande trafik från Campaign?**
 
   IP-adressen för Adobe-servrarna kommer att ändras. Kunderna kan behöva lägga till de nya IP-adresserna i tillåtelselista i systemet.
 
   [Läs mer](#config) om IP på tillåtelselista.
 
-* **Hur hanterar vi port som lagts till i tillåtelselista för SFTP/FTP-åtkomst?**
+* **Hur hanterar vi porten som lagts till i tillåtelselista för SFTP/FTP-åtkomst?**
 
   SFTP-konfigurationen (offentliga nycklar + IP till tillåtelselista) kommer också att flyttas från äldre datacenter till offentliga moln (AWS). Ingen åtgärd förväntas från kunden.
 
@@ -85,19 +85,19 @@ Global påverkan på IP-adresser, blockeringslista, underdomäner och URL-adress
 
   Adobe kommer att vägleda kunden genom de tester som krävs för att säkerställa att konfigurationen körs på nya offentliga molnservrar (AWS) efter migreringen.
 
-* **Kommer migreringen att skapa nya URL:er för spårning, resurser och webbprogram?**
+* **Kommer migreringen att generera nya URL:er för spårning, resurser och webbprogram?**
 
   Nej, befintliga URL:er bevaras.
 
-* **Kommer det att bli någon förändring i underdomänen från Neolane.net till campaign.adobe.com?**
+* **Kommer det att ske en ändring i underdomänen från Neolane.net till campaign.adobe.com?**
 
-  Båda `neolane.net` och `campaign.adobe.com` kommer att finnas på plats efter migreringen. Så här gör vi det enkelt: vi dirigerar om neolane.net till nya instanser i Public Cloud (AWS), så att inga ändringar krävs från kunden.
+  Både `neolane.net` och `campaign.adobe.com` kommer att finnas på plats efter migreringen. Så här gör vi det enkelt: vi dirigerar om neolane.net till nya instanser i Public Cloud (AWS), så att inga ändringar krävs från kunden.
 
 * **Vad är planen för IP-uppvärmning?**
 
   Först och främst kommer Adobe Deliverability att utvärdera plattformens leveransstatus och rekommendera en plan för övergången till de nya IP-adresserna
 
-  Ingen uppvärmning krävs efter migreringen. Det kan vara ett undantag och i så fall [Adobe kundtjänst](https://experienceleague.adobe.com/?support-solution=Campaign#support) kommer att nå ut till kunderna.
+  Ingen uppvärmning krävs efter migreringen. Det kan vara ett undantag och i så fall kommer [Adobe kundtjänst](https://experienceleague.adobe.com/?support-solution=Campaign#support) att kontakta kunderna.
 
   Planen är dock att göra den här operationen genomskinlig för företaget, till skillnad från den initiala påfarten som görs vid publicering.
 
@@ -141,7 +141,7 @@ Global påverkan på konfiguration, anslutning till andra system och produkter, 
 
   IP-adresserna för Adobe Campaign-programservrar ändras. Det här steget hanteras av Adobe kundtjänst efter migreringen.
 
-* **Kommer migreringen att påverka anslutningen till andra Adobe-lösningar (AEM, Target, osv.)?**
+* **Kommer migreringen att påverka anslutningen till andra Adobe-lösningar (AEM, mål osv.)?**
 
   Integreringar är en kombination av IP-adresser som deklarerats i tillåtelselista och webbtjänstens kontokonfiguration. Detta redovisas och ägs av Adobe kundtjänst.
 
@@ -151,11 +151,11 @@ Global påverkan på konfiguration, anslutning till andra system och produkter, 
 
   Kunder som inte har IMS kommer att få ett: ett organisations-ID kommer att bifogas till deras instans.
 
-* **Påverkar migreringen konfigurationer av flera varumärken?**
+* **Påverkar migreringen konfigurationer för flera varumärken?**
 
   Så snart en underdomän och alla relaterade konfigurationer har flyttats/omdirigerats korrekt från ett äldre datacenter till ett offentligt moln (AWS) förväntar vi oss ingen effekt.
 
-* **Påverkas API-anslutningen av migreringen?**
+* **Påverkar API-anslutningen migreringen?**
 
   IP-adressen för Adobe-servrarna kommer att ändras. Kunderna kan behöva lägga till de nya IP-adresserna till tillåtelselista i systemet.
 
@@ -167,7 +167,7 @@ Global påverkan på konfiguration, anslutning till andra system och produkter, 
 
 * **Finns det någon risk för åtkomst till vissa filtillägg?**
 
-  Kunden kanske vill tillåta att teckensnittsfiler, Outlook-mötesfiler läses in i mappen för offentliga resurser. Den här konfigurationen görs i den aktuella `config-<instance>.xml` -fil. Detta kopieras över med konfigurationsfiler.
+  Kunden kanske vill tillåta att teckensnittsfiler, Outlook-mötesfiler läses in i mappen för offentliga resurser. Den här konfigurationen görs i den aktuella `config-<instance>.xml`-filen. Detta kopieras över med konfigurationsfiler.
 
 * **Ändrar tidszonen på den nya servern? Kommer kunden att kunna behålla sin aktuella tidszon?**
 
@@ -200,7 +200,7 @@ Hur behörigheter, certifikat och SFTP-åtkomst påverkas visas nedan.
 
   Vi ser till att nya SFTP-servrar, användare, kataloger och filer har exakt samma behörighetsnivåer.
 
-* **Om SFTP-anslutningen inte kunde upprättas, vad är lösningen för att hålla kunden i drift?**
+* **Om det inte gick att upprätta SFTP-anslutningen, vad är lösningen/planen för att hålla kunden i drift?**
 
   Det enda anslutningsproblem som kan uppstå är tillåtelselista på kundsidan. Kunden bör lägga till det här testet i icke-produktionsmiljö för att se till att det fungerar innan man går över till produkten.
 
@@ -214,7 +214,7 @@ Hur behörigheter, certifikat och SFTP-åtkomst påverkas visas nedan.
 
   På värdinstansen körs skript bara via JavaScript-motorn. Dessa specifika implementeringar kan orsaka säkerhetsluckor och problem efter uppgraderingen. De stöds inte.
 
-* **Fungerar IMS-integreringen som den är i den nya instansen, eller behövs det någon ytterligare konfigurationsuppdatering?**
+* **Med IMS-integrering, fungerar den som den är i den nya instansen eller behövs det någon ytterligare konfigurationsuppdatering?**
 
   Eftersom vi behåller samma DNS-namn bör det fungera som efter migreringen.
 
@@ -229,7 +229,7 @@ De globala effekterna under migreringen listas nedan.
 
   Adobe rekommenderar att alla körningar pausas långsammare och idealiskt precis innan programmet stängs i det äldre datacentret: leveranser och arbetsflöden. Det underlättar omstarten på molnservern (AWS) eftersom processerna har fått tid att pausa&quot;utan problem&quot; och spara eventuella pågående körningstillstånd.
 
-* **Förväntar vi oss driftavbrott i vår Adobe Campaign-tjänst?**
+* **Förväntar vi oss att Adobe Campaign-tjänsten kommer att bli driftstört?**
 
   Migreringen kommer att innebära ett oundvikligt driftstopp på plattformen. Syftet med denna plan är att ge vägledning om hur man minimerar driftstoppen.
 
@@ -243,15 +243,15 @@ De globala effekterna under migreringen listas nedan.
    * Minska kvarhållningsperioderna för historiska data (leveransloggar, spårningsloggar osv.)
    * Ta bort oanvändbara poster i andra tabeller (leveranser, mottagare, anpassade tabeller)
 
-* **Vilken är den beräknade nedtiden för migrering av en instans?**
+* **Vad är den beräknade nedtiden för migrering av en instans?**
 
   Nedtiden beror helt på storleken på kundens databas och lagringsstorlekar för SFTP-filer. Kontakta kundtjänst för att få en beräknad varaktighet.
 
-* **Meddelanden som skickas från den gamla servern då. Kommer länkar alltid att vara tillgängliga?**
+* **Vad gäller för meddelanden som skickas från den äldre servern. Kommer länkar alltid att vara tillgängliga?**
 
   Medan migreringen körs kommer endast en tjänst att förbli funktionell: omdirigering av e-postlänkar. Alla mottagare kommer att kunna nå landningssidan när de klickar i ett e-postmeddelande. Dessa klick spåras dock inte, så klickfrekvensen för leveranser som påbörjades kort innan migreringen blir lägre än vanligt.
 
-* **Mittkällare/RT-miljöer då?**
+* **Vad gäller för miljöer med mellansokning/RT?**
 
   MID-inköps- och RT-inköpen hanteras som vilken annan värdbaserad infrastruktur som helst.
 
@@ -277,7 +277,7 @@ De globala effekterna under migreringen listas nedan.
 
   Beroende på kundens komplexitet Bakningstid på minst 1 vecka krävs mellan migreringar av scenmiljön och produktionsmiljön.
 
-* **Vem hanterar tillägg av nya IP:n till tillåtelselista?**
+* **Vem ska hantera tillägg av nya IP-adresser till tillåtelselista?**
 
   Adobe kundtjänstteam ansvarar för att se till att kunden och alla tredje parter har tillgång till det nya systemet genom att lägga till de nya IP-adresserna till tillåtelselista.
 

@@ -26,7 +26,7 @@ Den här aktiviteten erbjuder tre olika metoder:
 
 Vilken metod som väljs beror på vilken typ av beräkning det är, datavolymen och hur länge de är giltiga osv. Alla dessa parametrar måste granskas noggrant för att undvika att överbelasta Adobe Campaign-databasen och för att optimera genereringen och hanteringen av de skapade rapporterna. Mer information finns på [den här sidan](../../reporting/using/best-practices.md#optimizing-report-creation).
 
-I samtliga fall samlas uppgifterna in via en **[!UICONTROL Query]** typaktivitet.
+I samtliga fall samlas data in via en aktivitet av typen **[!UICONTROL Query]**.
 
 ![](assets/reporting_query_edit.png)
 
@@ -44,11 +44,11 @@ I följande exempel kan du samla in antalet mottagare för varje land, bland pro
 
 Om du vill skapa en rapport kan du använda data från en lista med importerade data.
 
-Om du vill göra det väljer du **[!UICONTROL Use an imported list]** i frågerutan och välj den berörda listan.
+Om du vill göra det väljer du alternativet **[!UICONTROL Use an imported list]** i frågerutan och väljer den aktuella listan.
 
 ![](assets/reporting_query_from_list.png)
 
-Klicka på **[!UICONTROL Edit query...]** länk för att definiera de uppgifter som ska samlas in bland elementen i denna lista för att skapa rapporten.
+Klicka på länken **[!UICONTROL Edit query...]** för att definiera de data som ska samlas in bland elementen i listan för att skapa rapporten.
 
 ## Använd en kub {#using-a-cube}
 
@@ -58,7 +58,7 @@ Du kan välja en kub som definierar frågan.
 
 Med kuber kan du utöka databasens utforsknings- och analyskapacitet samtidigt som det blir enklare att konfigurera rapporter och tabeller för slutanvändare: välj bara en befintlig, fullt konfigurerad kub och använd beräkningar, mått och statistik. Mer information om hur du skapar kuber finns i [det här avsnittet](../../reporting/using/ac-cubes.md).
 
-Klicka på **[!UICONTROL Edit query...]** och välj de indikatorer som du vill visa eller använda i rapporten.
+Klicka på länken **[!UICONTROL Edit query...]** och välj de indikatorer som du vill visa eller använda i rapporten.
 
 ![](assets/reporting_query_from_cube_edit_query.png)
 
@@ -68,9 +68,9 @@ För att undvika att frågor körs i hela databasen måste data filtreras.
 
 ### Förenklat filter {#simplified-filter}
 
-Du kan välja **[!UICONTROL Filter automatically with the context]** om du vill att rapporten ska vara tillgänglig via en viss nod i trädet, t.ex. en lista, en mottagare eller en leverans.
+Du kan välja alternativet **[!UICONTROL Filter automatically with the context]** om du vill att rapporten ska vara tillgänglig via en viss nod i trädet, till exempel en lista, en mottagare eller en leverans.
 
-The **[!UICONTROL Filter with the folder]** gör att du kan ange en mapp och endast ta hänsyn till dess innehåll. Detta gör att du kan filtrera rapportdata så att endast data från en av mapparna i trädet visas, vilket visas nedan:
+Med alternativet **[!UICONTROL Filter with the folder]** kan du ange en mapp och endast ta hänsyn till dess innehåll. Detta gör att du kan filtrera rapportdata så att endast data från en av mapparna i trädet visas, vilket visas nedan:
 
 ![](assets/reporting_control_folder.png)
 
@@ -78,5 +78,5 @@ The **[!UICONTROL Filter with the folder]** gör att du kan ange en mapp och end
 
 Konfigurera antalet poster som ska extraheras via frågan med hjälp av alternativen för resultatbegränsning:
 
-* **[!UICONTROL Limit to first record]** för att extrahera ett resultat,
-* **[!UICONTROL Size]** för att extrahera ett visst antal poster.
+* **[!UICONTROL Limit to first record]** om du vill extrahera ett resultat,
+* **[!UICONTROL Size]** om du vill extrahera ett visst antal poster.

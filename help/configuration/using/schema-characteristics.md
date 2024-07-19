@@ -29,16 +29,16 @@ Egenskaperna för ett schema som refererar till en befintlig tabell är följand
 
 ## Attributet view {#the-view-attribute}
 
-Källscheman accepterar **visa** attributet för **srcSchema** rotelement. Den måste användas när Adobe Campaign hanteras i anpassade tabeller. The **view=&quot;true&quot;** -attributet instruerar databasstrukturuppdateringsguiden att ignorera det här schemat. Programmet tillåts därför inte att synkronisera tabellen, dess kolumner och index med motsvarande schema.
+Source-scheman godkänner attributet **view** för rotelementet **srcSchema**. Den måste användas när Adobe Campaign hanteras i anpassade tabeller. Attributet **view=&quot;true&quot;** instruerar databasstrukturuppdateringsguiden att ignorera schemat. Programmet tillåts därför inte att synkronisera tabellen, dess kolumner och index med motsvarande schema.
 
-När det här attributet är inställt på **true** används schemat bara för att generera SQL-frågor för att komma åt data i den här tabellen.
+När det här attributet är inställt på **true** används schemat endast för att generera SQL-frågor för åtkomst till data i den här tabellen.
 
 ## Namn på tabeller och kolumner {#names-of-tables-and-columns}
 
 När tabeller skapas med tabelluppdateringsguiden genereras namnen på tabeller och kolumner automatiskt baserat på namnen på respektive schema och attribut. Du kan dock tvinga SQL-namnen att användas genom att ange följande attribut:
 
-* **sqltable** i schemats huvudelement för att specificera tabellen,
-* **sqlname** för att ange kolumnerna i varje attribut.
+* **sqltable** i schemats huvudelement för att ange tabellen,
+* **sqlname** inom varje attribut, för att ange kolumnerna.
 
 **Exempel**:
 
@@ -55,7 +55,7 @@ När tabeller skapas med tabelluppdateringsguiden genereras namnen på tabeller 
 </element>
 ```
 
-I det här exemplet skulle programmet ha använt om namnen på tabellerna och kolumnerna inte hade angetts explicit **CusIndividual** för tabellen, **lastName** och **firstName** för kolumnerna.
+I det här exemplet skulle programmet ha använt **CusIndividual** för tabellen, **lastName** och **firstName** för kolumnerna om namnen på tabellerna och kolumnerna inte hade angetts explicit.
 
 I ett schema går det bara att fylla en del av kolumnerna i en befintlig tabell. Ej ifyllda kolumner är inte tillgängliga för användaren.
 
@@ -77,7 +77,7 @@ I ett schema definieras ett index på följande sätt:
 
 Därför är det viktigt att deklarera befintliga index för den anpassade tabellen i det matchande schemat.
 
-Ett index deklareras implicit för varje nyckel- och länkdeklaration i källschemat. Indexdeklarationen kan förhindras genom att ange **noDbIndex=&quot;true&quot;** attribute:
+Ett index deklareras implicit för varje nyckel- och länkdeklaration i källschemat. Indexdeklarationen kan förhindras genom att attributet **noDbIndex=&quot;true&quot;** anges:
 
 **Exempel**:
 

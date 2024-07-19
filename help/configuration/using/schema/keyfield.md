@@ -26,7 +26,7 @@ nyckelfält:==EMPTY
 
 ## Överordnade {#parents-9}
 
-`<key>`  ,  `<dbindex />`
+`<key>`, `<dbindex />`
 
 ## Barn {#children-9}
 
@@ -38,8 +38,8 @@ Det här elementet definierar de fält som ska integreras i ett index eller en n
 
 ## Attributbeskrivning {#attribute-description-9}
 
-* **xlink (NTOKEN)**: låter dig automatiskt referera till sekundärnycklar som definieras i kopplingen för en relationstabell (N-N-länk).
-* **xpath (MNTOKEN)**: definition av ett index eller en nyckel på ett `<attribute>`  -element. Det här attributet tar emot en Xpath som definierar sökvägen till schemaattributet som definierar nyckeln eller indexet.
+* **xlink (MNTOKEN)**: gör att du automatiskt kan referera till sekundärnycklar som definierats i kopplingen för en relationstabell (N-N-länk).
+* **xpath (MNTOKEN)**: definition av ett index eller en nyckel i ett `<attribute>`-element. Det här attributet tar emot en Xpath som definierar sökvägen till schemaattributet som definierar nyckeln eller indexet.
 
 ## Exempel {#examples-}
 

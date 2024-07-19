@@ -15,12 +15,12 @@ ht-degree: 1%
 
 
 
-Arbetsflödet som anges nedan är schemalagt att köras varje timme. Den installeras med **Message Center - Control** som standard.
+Arbetsflödet som anges nedan är schemalagt att köras varje timme. Den installeras med modulen **Message Center - Control** som standard.
 
 
 Beroende på vilken Campaign-version du har finns mer information i följande avsnitt:
 
-![](assets/do-not-localize/v7.jpeg)[Dokumentation för Campaign v7](../../message-center/using/about-transactional-messaging.md)
+![](assets/do-not-localize/v7.jpeg)[Kampanjdokumentation v7](../../message-center/using/about-transactional-messaging.md)
 
 ![](assets/do-not-localize/v8.png)[Kampanjdokumentation v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/transactional.html)
 

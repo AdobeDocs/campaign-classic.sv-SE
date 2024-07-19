@@ -32,15 +32,15 @@ Kontrollera att den ursprungliga Adobe Campaign-plattformskonfigurationen fortfa
 
 >[!NOTE]
 >
->Du kan referera till [Adobe Campaign guide för maskinvarustorlek](https://helpx.adobe.com/se/campaign/kb/hardware-sizing-guide.html) för insikter.
+>Du kan läsa [Adobe Campaign guide ](https://helpx.adobe.com/se/campaign/kb/hardware-sizing-guide.html) om maskinvarustorlekar för att få information.
 
 ## Plattformskonfiguration {#platform-configuration}
 
-Felaktig konfiguration kan påverka plattformens prestanda. Vi rekommenderar att du kontrollerar nätverkskonfigurationen, alternativen för plattformsleverans och MTA-konfigurationen i **serverConf.xml** -fil.
+Felaktig konfiguration kan påverka plattformens prestanda. Vi rekommenderar att du kontrollerar nätverkskonfigurationen, alternativen för plattformsleverans och MTA-konfigurationen i filen **serverConf.xml**.
 
 ## Databasunderhåll {#database-maintenance}
 
-**Åtgärd för databasrensning**
+**Databasrensningsaktivitet**
 
 Kontrollera att databasrensningen fungerar. Om du vill göra det läser du loggfilerna för att se om de innehåller några fel. Mer information om detta finns i [det här avsnittet](../../production/using/database-cleanup-workflow.md).
 
@@ -58,13 +58,13 @@ Mer information om detta finns i [det här avsnittet](../../production/using/rec
 >
 >Om du använder en mellanleverantörskonfiguration är det viktigt att databaserna upprätthålls regelbundet. När marknadsföringsinstansen analyserar en leverans på marknadsföringsplattformen skickar den information till mellanleverantörsinstansen. Om processen går långsammare kommer marknadsinstansen att påverkas.
 
-**Hantera arbetsregister**
+**Hantera arbetstabeller**
 
 Kontrollera antal och storlek på arbetsregister. När de överskrider en viss storlek påverkas databasens prestanda. De här tabellerna skapas av arbetsflöden och leveranser. De finns kvar i databasen medan arbetsflöden och leveranser är aktiva. Om du vill begränsa storleken på arbetsregister kan du utföra följande åtgärder:
 
-* Stoppa eller ta bort leveranser med följande status: **[!UICONTROL Failed]**, **[!UICONTROL In progress]**, **[!UICONTROL Ready for delivery]**, eller **[!UICONTROL Paused]**.
+* Stoppa eller ta bort leveranser med följande status: **[!UICONTROL Failed]**, **[!UICONTROL In progress]**, **[!UICONTROL Ready for delivery]** eller **[!UICONTROL Paused]**.
 * Stoppa eller ta bort arbetsflöden som pausats på grund av ett fel.
-* Stoppa alla arbetsflöden som används för tester som inte innehåller en **[!UICONTROL End]** verksamhet och vars status därför kvarstår **[!UICONTROL Paused]**.
+* Stoppa alla arbetsflöden som används för tester som inte innehåller en **[!UICONTROL End]**-aktivitet och vars status därför kvarstår som **[!UICONTROL Paused]**.
 
 >[!IMPORTANT]
 >
@@ -75,7 +75,7 @@ Kontrollera antal och storlek på arbetsregister. När de överskrider en viss s
 Beroende på Adobe Campaign installationsinställningar kan två verktyg användas för plattformsövervakning:
 
 * Instansproduktionssidan. Mer information finns i [Manuell övervakning](../../production/using/monitoring-processes.md#manual-monitoring).
-* The *netreport* skript. Mer information finns i [Automatisk övervakning via Adobe Campaign-skript](../../production/using/monitoring-processes.md#automatic-monitoring-via-adobe-campaign-scripts).
+* Skriptet *netreport*. Mer information finns i [Automatisk övervakning via Adobe Campaign-skript](../../production/using/monitoring-processes.md#automatic-monitoring-via-adobe-campaign-scripts).
 
 ## Specifikationer {#specifics}
 

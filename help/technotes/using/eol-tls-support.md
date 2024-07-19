@@ -24,9 +24,9 @@ Adobe stöder inte längre användarsystem och klientsystem som inte är kompati
 
 ## Varför visas den här sidan?
 
-Om följande meddelande visas: **Den här sidan kan inte visas** innebär det att de Adobe-program, webbsidor eller tjänster du försöker få åtkomst till kräver en säkrare nätverksanslutning till webbläsaren, operativsystemet eller appen. Den måste användas **TLS 1.2** för säker nätverkskommunikation och datautbyte mellan användarsystem, appar från Adobe och webbtjänster.
+Om du ser följande meddelande: **Den här sidan kan inte visas** innebär det att Adobe-programmen, webbsidan eller tjänsten som du försöker få åtkomst till kräver en säkrare nätverksanslutning till webbläsaren, operativsystemet eller appen. Det är obligatoriskt att använda **TLS 1.2** för säker nätverkskommunikation och datautbyte mellan användarsystem och Adobe-program och webbtjänster.
 
-Adobe har ersatt stödet för lägre versioner av TLS (inklusive TLS 1.0 och 1.1). Teknisk information om TLS 1.2-protokollet finns på [Frågor och svar](#faq).
+Adobe har ersatt stödet för lägre versioner av TLS (inklusive TLS 1.0 och 1.1). Mer teknisk information om TLS 1.2-protokollet finns i [Vanliga frågor och svar](#faq).
 
 ## Vad kan jag göra för att återuppta tjänsten?
 
@@ -41,13 +41,13 @@ Du kan hämta och installera någon av följande populära webbläsare:
 
 Om du använder en annan webbläsare måste den ha stöd för TLS 1.2.
 
-Ditt operativsystem och dina programramverk måste också ha stöd för TLS 1.2. Om du inte löser problemet genom att uppgradera webbläsaren kontrollerar du att datorn uppfyller systemkraven i [Matris för kampanjkompatibilitet](../../rn/using/compatibility-matrix.md).
+Ditt operativsystem och dina programramverk måste också ha stöd för TLS 1.2. Om du inte kan lösa problemet genom att uppgradera webbläsaren kontrollerar du att datorn uppfyller systemkraven i [Kampanjkompatibilitetsmatris](../../rn/using/compatibility-matrix.md).
 
 ## Vanliga frågor och svar{#faq}
 
-* **Vad är TLS?**
+* **Vad är TLS (Transport Layer Security)?**
 
-  [Säkerhet för transportlager](https://en.wikipedia.org/wiki/Transport_Layer_Security) (TLS) är ett säkerhetsprotokoll som ger sekretess och dataintegritet mellan två kommunikationsprogram. Den används ofta för webbläsare och andra program som kräver att data utbyts på ett säkert sätt över ett nätverk.
+  [TLS (Transport Layer Security)](https://en.wikipedia.org/wiki/Transport_Layer_Security) är ett säkerhetsprotokoll som ger sekretess och dataintegritet mellan två kommunikationsprogram. Den används ofta för webbläsare och andra program som kräver att data utbyts på ett säkert sätt över ett nätverk.
 
   Enligt protokollspecifikationen innehåller TLS två lager, TLS-protokollet Record och TLS-handskakningsprotokollet. Record-protokollet tillhandahåller anslutningssäkerhet. Med handskakningsprotokollet kan servern och klienten autentisera varandra och förhandla om krypteringsalgoritmer och kryptografiska nycklar före datautbyte.
 
@@ -75,19 +75,19 @@ Ditt operativsystem och dina programramverk måste också ha stöd för TLS 1.2.
 
   Enligt PCI-efterlevnaden ska TLS 1.1 eller senare användas från och med maj 2018.
 
-* **Varför tillåter Adobe användning av TLS 1.2 i stället för att tillåta TLS 1.1 eller TLS 1.0?**
+* **Varför tillåter Adobe att TLS 1.2 används istället för att TLS 1.1 eller TLS 1.0 tillåts?**
 
   De flesta förfrågningar om appar och webbtjänster från Adobe kommer från användarsystem som följer TLS 1.2, med låg trafik från TLS 1.1-system.
 
   Adobe har migrerat till TLS 1.2 så att appar och webbtjänster blir säkrare åtkomliga.
 
-* **Vilket är det sista datumet då jag kan använda en äldre version av TLS?**
+* **Vad är det sista datumet då jag kan använda en äldre version av TLS?**
 
   Adobe uppmuntrar användare att snabbt överge de äldre versionerna för att undvika exponering för säkerhetsrisker. Mer information får du om du kontaktar Adobe kundtjänst eller en Customer Success Manager.
 
 * **Vilket felmeddelande visas om jag använder en webbläsare som inte är konfigurerad för TLS 1.2?**
 
-  Det beror på vilken webbläsare du använder. Alla webbläsare som nämns i [Matris för kampanjkompatibilitet](../../rn/using/compatibility-matrix.md) är konfigurerade att använda TLS 1.2. Uppdatera webbläsaren om du använder en webbläsare eller version som inte finns med i listan.
+  Det beror på vilken webbläsare du använder. Alla webbläsare som nämns i [Matris för kampanjkompatibilitet](../../rn/using/compatibility-matrix.md) har konfigurerats att använda TLS 1.2. Uppdatera webbläsaren om du använder en webbläsare eller version som inte finns med i listan.
 
   Adobe kontrollerar inte felmeddelanden som genereras av SSL-kommunikationslagret. Webbläsaren genererar dessa meddelanden innan den ansluter till appar och tjänster från Adobe. Här följer ett exempel på fel som kan uppstå i Internet Explorer 11 i Windows 7:
 

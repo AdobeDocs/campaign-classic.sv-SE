@@ -27,17 +27,17 @@ Flera faktorer kan direkt påverka serverprestanda och göra plattformen långsa
 
 * Serverbelastningen: när marknadsföringsservern hanterar många olika uppgifter samtidigt kan prestandan försämras. Marknadsföringsservern måste koordinera alla inkommande och utgående data för alla leveranser för att säkerställa att data är korrekta och i tid.
 
-  **TIPS** - Undvik detta genom att samordna schemaläggningen av leveranser med övriga medlemmar i teamet för att säkerställa bästa möjliga prestanda.
+  **TIP** - Undvik detta genom att koordinera schemaläggningen av leveranser med andra medlemmar i teamet för att säkerställa bästa prestanda.
 
-* Arbetsflödeskörning: det är viktigt att du övervakar arbetsflödena för att undvika problem med plattformsprestanda. Följ riktlinjerna som anges [i det här dokumentet](../../workflow/using/workflow-best-practices.md#execution-and-performance).
+* Arbetsflödeskörning: det är viktigt att du övervakar arbetsflödena för att undvika problem med plattformsprestanda. Följ riktlinjerna som visas [i det här dokumentet](../../workflow/using/workflow-best-practices.md#execution-and-performance).
 
-* Om du är berättigad kan du utnyttja [Funktioner i Campaign Control Panel](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/key-features.html?lang=sv) övervaka plattformen med [prestandaövervakning](https://experienceleague.adobe.com/docs/control-panel/using/performance-monitoring/about-performance-monitoring.html?lang=sv) funktioner.
+* Om du är berättigad kan du använda funktionerna i [Campaign-kontrollpanelen](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/key-features.html?lang=sv) för att övervaka din plattform med funktionerna för [prestandaövervakning](https://experienceleague.adobe.com/docs/control-panel/using/performance-monitoring/about-performance-monitoring.html?lang=sv) .
 
 ## Kontrollera nätverkskonfiguration {#network-config}
 
 Om du vill optimera leveransen när du hanterar e-post i stora volymer och undvika att ta fel för en skräppost, kontrollerar du att du har en giltig nätverkskonfiguration som inte försöker dölja serverns identitet.
 
-**Tips**: Använd en transparent avsändaradress som motsvarar ert varumärkes webbplats. Exempel: företaget TravelAgency hanterar hotellkedjan Valentino. Företaget äger valentino.com domän för sin webbplats. För att marknadsföra alla hjärtans dag-hotell i Paris använder man underdomänen paris.valentino.com. Därför kan en relevant avsändaradress vara hotel@paris.valentino.com.
+**Tips**: Använd en transparent avsändaradress som motsvarar ditt varumärkes webbplats. Exempel: företaget TravelAgency hanterar hotellkedjan Valentino. Företaget äger valentino.com domän för sin webbplats. För att marknadsföra alla hjärtans dag-hotell i Paris använder man underdomänen paris.valentino.com. Därför kan en relevant avsändaradress vara hotel@paris.valentino.com.
 
 ## Leveranshantering {#deliverability-management}
 
@@ -47,9 +47,9 @@ Om du vill nå mottagarnas inkorg utan att studsa eller markeras som skräppost 
 
    * Det avser de faktorer i ett e-postmeddelande som avgör om det kan accepteras av en mottagares server. Internet-leverantörer (Internet Service Providers) filtrerar bort e-postmeddelanden som de identifierar som SPAM eller blockerar bilder från hämtning. Om de fastställer att en viss domän skickar för många e-postmeddelanden, kommer de att ange en gräns för hur många e-postmeddelanden de accepterar från den avsändaren.
 
-   * När du kontrollerar om e-postmeddelandet kan levereras vill du fokusera på fyra huvudkategorier: datakvalitet, meddelande och innehåll, avsändarinfrastruktur och anseende. Mer information om detta finns i [det här avsnittet](about-deliverability.md).
+   * När du kontrollerar om e-postmeddelandet kan levereras vill du fokusera på fyra huvudkategorier: datakvalitet, meddelande och innehåll, avsändarinfrastruktur och anseende. Mer information om det här avsnittet finns i [det här avsnittet](about-deliverability.md).
 
-* Använd detaljerade rekommendationer [i det här dokumentet](about-deliverability.md).
+* Använd de rekommendationer som beskrivs [ i det här dokumentet](about-deliverability.md).
 
 * Kontakta din Adobe-representant om du behöver hjälp.
 
@@ -61,7 +61,7 @@ När du börjar skicka e-post på en ny plattform kan du använda en lista med a
 
 **Tips**
 
-* Om du har en lista över ogiltiga adresser rekommenderar Adobe att du importerar den till karantäntabellen via **[!UICONTROL Administration]** > **[!UICONTROL Campaign Management]** > **[!UICONTROL Non deliverables Management]** > **[!UICONTROL Non deliverables and addresses]**.
+* Om du har en lista med ogiltiga adresser rekommenderar Adobe att du importerar den till karantäntabellen via **[!UICONTROL Administration]** > **[!UICONTROL Campaign Management]** > **[!UICONTROL Non deliverables Management]** > **[!UICONTROL Non deliverables and addresses]**.
 
 * Mottagare vars adresser sätts i karantän exkluderas som standard under leveransanalysen: de är inte riktade. Detta snabbar upp leveranserna eftersom felfrekvensen påverkar leveranshastigheten avsevärt. En e-postadress kan sättas i karantän när inkorgen är full eller om adressen inte finns. [Läs mer](#identifying-quarantined-addresses-for-a-delivery)
 
@@ -76,4 +76,4 @@ När du börjar skicka e-post på en ny plattform kan du använda en lista med a
 
 För att undvika att skicka meddelanden till ogiltiga adresser, begränsa felaktig kommunikation och förbättra avsändarens anseende rekommenderar Adobe att du använder en dubbel anmälningsmekanism för bekräftelse efter prenumeration. Detta bidrar till att säkerställa att mottagaren prenumererar avsiktligt.
 
-Information om hur denna mekanism genomförs finns i [det här avsnittet](../../web/using/use-cases-web-forms.md).
+Information om hur du implementerar den här mekanismen beskrivs i [det här avsnittet](../../web/using/use-cases-web-forms.md).

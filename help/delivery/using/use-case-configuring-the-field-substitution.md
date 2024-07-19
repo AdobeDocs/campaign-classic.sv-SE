@@ -22,18 +22,18 @@ Med denna ersättning kan du spara tid när du skapar leveransen: i stället fö
 
 ## Kontext {#context}
 
-I det här fallet används webbplatsen **Mitt onlinebibliotek** vill ge kunderna rabatt baserat på deras favoritlitterära genre.
+I det här fallet vill webbplatsen **Mitt onlinebibliotek** skicka en rabatt till sina kunder utifrån deras favoritlitterära genre.
 
 Leveranshanteraren har integrerat ett anpassningsfält som är länkat till en favoritgenre i e-postmeddelandet. Målet är att använda vissa dirigerade adresser: dessa dirigerade adresser har personaliseringsfältet i tabellen, men inget värde sparas där.
 
 Om du vill använda slumpmässig fältersättning måste du ha:
 
 * en leverans med ett eller flera personaliseringsfält,
-* dirigerade adresser vars **dataschema** ändras enligt de anpassningsfält som används i leveransen.
+* dirigerade adresser vars **datarema** ändras enligt de personaliseringsfält som används i leveransen.
 
 ## Skapa en leverans {#step-1---creating-a-delivery}
 
-Stegen för att skapa en leverans finns i [Skapa en e-postleverans](creating-an-email-delivery.md) -avsnitt.
+Stegen för att skapa en leverans beskrivs i avsnittet [Skapa en e-postleverans](creating-an-email-delivery.md).
 
 I det här exemplet har leveranshanteraren skapat nyhetsbrevet.
 
@@ -52,19 +52,19 @@ I det här exemplet får dataschemat för dirigerade adresser ett värde som ska
 
 Med den här uppräkningen kan användaren ange klienternas favoritlitterära genre.
 
-För att den här ändringen av datarammet ska kunna visas i startadresserna **Inmatningsformulär** måste du uppdatera den. Se [Uppdatera indataformuläret](use-case-selecting-seed-addresses-on-criteria.md#updating-the-input-form) -avsnitt.
+Du måste uppdatera den här datarchemaändringen för att den ska kunna visas i dirigerade adresser **Indataformulär**. Se avsnittet [Uppdatera indataformuläret](use-case-selecting-seed-addresses-on-criteria.md#updating-the-input-form).
 
 ## Konfigurera personalisering {#configuring-personalization}
 
 1. Öppna en leverans.
 
-   I det här exemplet har leveransen två anpassningsfält: mottagarens **förnamn** och mottagarens **favoritlitterär genre**.
+   I det här exemplet har leveransen två anpassningsfält: mottagarens **förnamn** och mottagarens **favoritlitterära genre**.
 
    ![](assets/dlv_seeds_usecase_25.png)
 
 1. Konfigurera leveranslistan och dina dirigerade adresser. Se [Identifiera målpopulationer](steps-defining-the-target-population.md).
 
-   I det här exemplet väljer användaren användare vars **favoritlitterär genre** är Sci-Fi som huvudmålpopulation.
+   I det här exemplet väljer användaren användare vars **favoritlitterära genre** är Sci-Fi som huvudmålpopulation.
 
    ![](assets/dlv_seeds_usecase_26.png)
 
@@ -74,9 +74,9 @@ För att den här ändringen av datarammet ska kunna visas i startadresserna **I
 
    >[!NOTE]
    >
-   >Mer information om **[!UICONTROL Edit the dynamic condition...]** länk, se [Använd skiftläge: välj startadresser på villkor](use-case-selecting-seed-addresses-on-criteria.md).
+   >Mer information om länken **[!UICONTROL Edit the dynamic condition...]** finns i [Använd skiftläge: välj startadresser på villkor ](use-case-selecting-seed-addresses-on-criteria.md).
 
-1. Klicka på **[!UICONTROL Preview]** välj sedan en startadress för att testa personaliseringen.
+1. Klicka på fliken **[!UICONTROL Preview]** och välj sedan en startadress för att testa personaliseringen.
 
    ![](assets/dlv_seeds_usecase_28.png)
 
@@ -85,7 +85,7 @@ För att den här ändringen av datarammet ska kunna visas i startadresserna **I
    Slumpmässig ersättning av fält utförs **vid leveranstillfället**.
 
 1. Klicka på knappen **[!UICONTROL Send]**.
-1. Analysera leveransen och **bekräfta leverans**.
+1. Analysera leveransen och **bekräfta leveransen**.
 
    dirigerade adresser får leveransen i sin inkorg.
 

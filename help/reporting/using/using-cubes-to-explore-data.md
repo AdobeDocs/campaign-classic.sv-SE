@@ -32,7 +32,7 @@ Marknadsföringsanalys gör det enklare att skapa rapporter och att identifiera 
 
 ### Steg 1 - Skapa en rapport baserad på en kub {#step-1---creating-a-report-based-on-a-cube}
 
-Om du vill skapa en rapport baserad på en kub klickar du på **[!UICONTROL Create]** knappen i **[!UICONTROL Reports]** och markera den kub som du vill använda.
+Om du vill skapa en rapport baserad på en kub klickar du på knappen **[!UICONTROL Create]** på fliken **[!UICONTROL Reports]** och väljer den kub som du vill använda.
 
 Processen beskrivs här: [Skapa en rapport baserad på en kub](../../reporting/using/creating-indicators.md#creating-a-report-based-on-a-cube).
 
@@ -40,7 +40,7 @@ Processen beskrivs här: [Skapa en rapport baserad på en kub](../../reporting/u
 
 Standardvisningen visar de två första måtten för kuben (ålder och stad, i det här fallet).
 
-The **[!UICONTROL Add]** Med knapparna på varje axel kan du lägga till dimensioner.
+Med knapparna **[!UICONTROL Add]** på varje axel kan du lägga till dimensioner.
 
 ![](assets/s_advuser_cube_in_report_03.png)
 
@@ -69,9 +69,9 @@ The **[!UICONTROL Add]** Med knapparna på varje axel kan du lägga till dimensi
    * Visa värdena i stigande (a-z, 0-9) eller fallande (z-a, 9-0) ordning.
    * Ändra antalet kolumner som ska visas vid inläsning (som standard: 200).
 
-1. Klicka **[!UICONTROL Ok]** för att bekräfta: dimensionen läggs till i de befintliga dimensionerna.
+1. Klicka på **[!UICONTROL Ok]** för att bekräfta: dimensionen läggs till i de befintliga dimensionerna.
 
-   Den gula banderollen ovanför tabellen visar att du har gjort ändringar: klicka på **[!UICONTROL Save]** för att spara dem.
+   Den gula banderollen ovanför tabellen visar att du har gjort ändringar: klicka på knappen **[!UICONTROL Save]** för att spara dem.
 
    ![](assets/s_advuser_cube_in_report_04c.png)
 
@@ -85,7 +85,7 @@ Som standard visas bara ett mått. Så här lägger du till eller konfigurerar m
 
    ![](assets/s_advuser_cube_in_report_05.png)
 
-1. The **[!UICONTROL Use a measure]** kan du välja ett av de befintliga måtten.
+1. Med knappen **[!UICONTROL Use a measure]** kan du välja ett av de befintliga måtten.
 
    ![](assets/s_advuser_cube_in_report_08.png)
 
@@ -93,13 +93,13 @@ Som standard visas bara ett mått. Så här lägger du till eller konfigurerar m
 
    ![](assets/s_advuser_cube_in_report_09.png)
 
-   Den övergripande mätkonfigurationen är också tillgänglig via **[!UICONTROL Edit the configuration of the pivot table]** i sidhuvudet.
+   Den övergripande mätkonfigurationen är också tillgänglig via ikonen **[!UICONTROL Edit the configuration of the pivot table]** i sidhuvudet.
 
    ![](assets/s_advuser_cube_in_report_config_02.png)
 
    Du kan sedan välja om måttetiketter ska visas eller inte. Mer information finns i [Konfigurera skärmen](../../reporting/using/concepts-and-methodology.md#configuring-the-display).
 
-1. Det går att bygga nya mått med hjälp av befintliga. Det gör du genom att klicka **[!UICONTROL Create a measure]** och konfigurera det.
+1. Det går att bygga nya mått med hjälp av befintliga. Om du vill göra det klickar du på **[!UICONTROL Create a measure]** och konfigurerar det.
 
    ![](assets/s_advuser_cube_in_report_config_02a.png)
 
@@ -117,7 +117,7 @@ Som standard visas bara ett mått. Så här lägger du till eller konfigurerar m
 
    ![](assets/s_advuser_cube_in_report_config_02b.png)
 
-   När du har skapat ett mått kan du redigera det och vid behov ändra dess konfiguration. Klicka på **[!UICONTROL Measures]** och sedan gå till fliken för det mått som du vill redigera.
+   När du har skapat ett mått kan du redigera det och vid behov ändra dess konfiguration. Det gör du genom att klicka på knappen **[!UICONTROL Measures]** och sedan gå till fliken för det mått som du vill redigera.
 
    Klicka sedan på **[!UICONTROL Edit the dynamic measure]** för att öppna inställningsmenyn.
 
@@ -129,23 +129,23 @@ Om du vill göra det lägger du till dem i en kundvagn och bearbetar innehållet
 
 Gör så här om du vill gruppera en population i en lista:
 
-1. Markera cellerna som innehåller de ifyllningar som ska samlas och klicka sedan på **[!UICONTROL Add to cart]** -ikon.
+1. Klicka på cellerna som innehåller de ifyllningar som ska samlas för att markera dem och klicka sedan på ikonen **[!UICONTROL Add to cart]** .
 
    ![](assets/s_advuser_cube_in_report_config_02c.png)
 
    Så många gånger som krävs för att samla in olika profiler
 
-1. Klicka på **[!UICONTROL Show cart]** om du vill visa innehållet innan du kör exporten.
+1. Klicka på knappen **[!UICONTROL Show cart]** om du vill visa innehållet innan du kör exporten.
 
    ![](assets/s_advuser_cube_in_report_config_02d.png)
 
-1. The **[!UICONTROL Export]** kan du gruppera objekten i vagnen i en lista.
+1. Med knappen **[!UICONTROL Export]** kan du gruppera objekten i vagnen i en lista.
 
    Du måste ange namnet på listan och vilken typ av export som ska utföras.
 
    ![](assets/s-advuser_cube_in_report_config_02e.png)
 
-   Klicka **[!UICONTROL Start]** för att köra exporten.
+   Klicka på **[!UICONTROL Start]** för att köra exporten.
 
 1. När exporten är klar bekräftar ett meddelande att den har körts och hur många poster som har bearbetats.
 
@@ -153,7 +153,7 @@ Gör så här om du vill gruppera en population i en lista:
 
    Du kan antingen spara innehållet i kundvagnen eller tömma den.
 
-   Den relevanta listan nås via **[!UICONTROL Profiles and targets]** -fliken.
+   Den relevanta listan nås via fliken **[!UICONTROL Profiles and targets]**.
 
    ![](assets/s_advuser_cube_in_report_config_02g.png)
 
@@ -165,7 +165,7 @@ Så här skapar du en tabell och utforskar data i en kub:
 
    ![](assets/s_advuser_cube_in_report_01.png)
 
-1. I **[!UICONTROL Data]** på sidan väljer du en kub för att bearbeta dimensionerna som den innehåller och visar beräknade mått.
+1. På fliken **[!UICONTROL Data]** på sidan väljer du en kub för att bearbeta dimensionerna som den innehåller och visa beräknade mått.
 
    ![](assets/s_advuser_cube_in_report_02.png)
 

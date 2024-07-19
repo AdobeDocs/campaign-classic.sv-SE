@@ -15,7 +15,7 @@ ht-degree: 3%
 
 
 
-Aggregat definieras på kubnivå för rapportering. A **[!UICONTROL Workflow]** -fliken är tillgänglig när du konfigurerar en mängd.
+Aggregat definieras på kubnivå för rapportering. En **[!UICONTROL Workflow]**-flik är tillgänglig när en mängd konfigureras.
 
 Aggregat är användbara när du hanterar stora datavolymer. De uppdateras automatiskt baserat på inställningarna som anges i den dedikerade arbetsflödesrutan, så att de data som samlats in senast kan integreras med indikatorerna
 
@@ -24,12 +24,12 @@ Aggregat definieras på den relevanta fliken för varje kub.
 ![](assets/s_advuser_cube_agregate_01.png)
 
 
-The **[!UICONTROL Update aggregate]** Med -aktiviteten kan du välja det uppdateringsläge som ska användas: helt eller delvis.
+Med aktiviteten **[!UICONTROL Update aggregate]** kan du välja det uppdateringsläge som ska användas: helt eller delvis.
 
 Som standard utförs en fullständig uppdatering under varje beräkning. Om du vill aktivera en partiell uppdatering väljer du det relevanta alternativet och definierar uppdateringsvillkoren.
 
 ![](assets/s_advuser_cube_agregate_05.png)
 
-**God praxis**: a **[!UICONTROL Scheduler]** kan användas för att ange frekvensen för uppdateringar av beräkningar.
+**God praxis**: en **[!UICONTROL Scheduler]**-aktivitet kan användas för att ange frekvensen för beräkningsuppdateringar.
 
 ![](assets/s_advuser_cube_agregate_04.png)

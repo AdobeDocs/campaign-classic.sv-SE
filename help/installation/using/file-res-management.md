@@ -21,27 +21,27 @@ ht-degree: 1%
 
 ## Begränsa filformat för överföring {#limiting-uploadable-files}
 
-Använd **uploadWhiteList** för att begränsa vilka filtyper som kan överföras på Adobe Campaign-servern.
+Använd attributet **uploadWhiteList** för att begränsa vilka filtyper som är tillgängliga för överföring på Adobe Campaign-servern.
 
-Det här attributet är tillgängligt i **dataStore** -elementet i **serverConf.xml** -fil. Alla parametrar som är tillgängliga i **serverConf.xml** finns listade i [section](../../installation/using/the-server-configuration-file.md).
+Det här attributet är tillgängligt i elementet **dataStore** i filen **serverConf.xml**. Alla parametrar som är tillgängliga i **serverConf.xml** listas i det här [avsnittet](../../installation/using/the-server-configuration-file.md).
 
-Attributets standardvärde är **.+** och gör att du kan överföra alla filtyper.
+Standardvärdet för attributet är **.+** och låter dig överföra vilken filtyp som helst.
 
 Om du vill begränsa möjliga format ersätter du attributvärdet med ett giltigt reguljärt uttryck för java. Du kan ange flera värden genom att separera dem med kommatecken.
 
-Till exempel: **uploadWhiteList=&quot;.&#42;.png,&#42;.jpg** gör att du kan överföra PNG- och JPG-format till servern. Inga andra format accepteras.
+Exempel: **uploadWhiteList=&quot;.&#42;.png,Med &#42;.jpg** kan du överföra PNG- och JPG-format till servern. Inga andra format accepteras.
 
 Du kan också förhindra att viktiga filer överförs genom att konfigurera webbservern. [Läs mer](web-server-configuration.md)
 
 >[!NOTE]
 >
->The **uploadWhiteList** attribut begränsar de filtyper som är tillgängliga för överföring på Adobe Campaign-servern. När publiceringsläget är **Spårningsservrar** eller **Andra Adobe Campaign-servrar**, **uploadWhitelist** attributet måste också uppdateras på dessa servrar.
+>Attributet **uploadWhiteList** begränsar de filtyper som är tillgängliga för överföring på Adobe Campaign-servern. Men om publiceringsläget är **Spårningsservrar** eller **Andra Adobe Campaign-servrar** måste även attributet **uploadWhitelist** uppdateras på dessa servrar.
 
 ## Konfiguration för proxyanslutning {#proxy-connection-configuration}
 
-Du kan ansluta Campaign-servern till ett externt system via en proxy med hjälp av en **Filöverföring** arbetsflödesaktivitet till exempel. För att uppnå detta måste du konfigurera **proxyConfig** i **serverConf.xml** genom ett specifikt kommando. Alla parametrar som är tillgängliga i **serverConf.xml** finns listade i [section](../../installation/using/the-server-configuration-file.md).
+Du kan ansluta Campaign-servern till ett externt system via en proxy, till exempel med hjälp av en **filöverföringsaktivitet** . För att uppnå detta måste du konfigurera avsnittet **proxyConfig** i filen **serverConf.xml** via ett specifikt kommando. Alla parametrar som är tillgängliga i **serverConf.xml** listas i det här [avsnittet](../../installation/using/the-server-configuration-file.md).
 
-Följande proxyanslutningar är möjliga: HTTP, HTTPS, FTP, SFTP. Observera att från och med Campaign 20.2 är protokollparametrarna HTTP och HTTPS **inte längre tillgänglig**. Dessa parametrar nämns fortfarande nedan eftersom de fortfarande är tillgängliga i tidigare versioner - inklusive 9032.
+Följande proxyanslutningar är möjliga: HTTP, HTTPS, FTP, SFTP. Observera att från och med Campaign 20.2 är HTTP- och HTTPS-protokollparametrarna **inte längre tillgängliga**. Dessa parametrar nämns fortfarande nedan eftersom de fortfarande är tillgängliga i tidigare versioner - inklusive 9032.
 
 >[!CAUTION]
 >
@@ -112,23 +112,23 @@ Om du behöver använda iOS HTTP/2-anslutningen via en proxy stöds följande HT
 * HTTP utan autentisering
 * Grundläggande HTTP-autentisering
 
-Om du vill aktivera proxyläget måste följande ändring göras i `serverconf.xml` fil:
+Om du vill aktivera proxyläget måste följande ändring göras i filen `serverconf.xml`:
 
 ```
 <nmac useHTTPProxy="true">
 ```
 
-Mer information om denna iOS HTTP/2-anslutning finns i [page](../../delivery/using/about-mobile-app-channel.md).
+Mer information om den här iOS HTTP/2-anslutningen finns på [sidan](../../delivery/using/about-mobile-app-channel.md).
 
 ## Hantera offentliga resurser {#managing-public-resources}
 
 För att vara allmänt tillgängliga måste de bilder som används i e-postmeddelanden och offentliga resurser som är kopplade till kampanjer finnas på en externt tillgänglig server. De kan sedan vara tillgängliga för externa mottagare eller operatorer. [Läs mer](../../installation/using/deploying-an-instance.md#managing-public-resources).
 
-Offentliga resurser lagras i **/var/res/instance** katalog i Adobe Campaign installationskatalog.
+Offentliga resurser lagras i katalogen **/var/res/instance** i Adobe Campaign installationskatalog.
 
 Den matchande URL:en är: **http://server/res/instance** där **instance** är namnet på spårningsinstansen.
 
-Du kan ange en annan katalog genom att lägga till en nod i **conf-`<instance>`XML** fil för att konfigurera lagring på servern. Det innebär att följande rader läggs till:
+Du kan ange en annan katalog genom att lägga till en nod i filen **conf-`<instance>`.xml** för att konfigurera lagring på servern. Det innebär att följande rader läggs till:
 
 ```
 <serverconf>

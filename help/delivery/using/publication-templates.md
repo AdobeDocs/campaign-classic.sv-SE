@@ -27,7 +27,7 @@ Publikationsmallen refererar till de resurser som används i publiceringsprocess
 
 En publikationsmall identifieras av sitt namn och namnutrymme.
 
-Identifieringsnyckeln för en formatmall är en sträng som består av namnutrymmet och namnet avgränsat med ett kolon, till exempel: **cus:nyhetsbrev**.
+Identifieringsnyckeln för en formatmall är en sträng som består av namnutrymmet och namnet avgränsat med ett kolon, till exempel: **cus:newsletter**.
 
 >[!NOTE]
 >
@@ -35,7 +35,7 @@ Identifieringsnyckeln för en formatmall är en sträng som består av namnutrym
 
 ## Skapa och konfigurera mallen {#creating-and-configuring-the-template}
 
-Publikationsmallar lagras som standard i **[!UICONTROL Administration > Configuration > Publication templates]** nod. Om du vill skapa en ny mall klickar du på **[!UICONTROL New]** ovanför listan med mallar.
+Publikationsmallar lagras som standard i noden **[!UICONTROL Administration > Configuration > Publication templates]**. Om du vill skapa en ny mall klickar du på knappen **[!UICONTROL New]** ovanför listan med mallar.
 
 Om du vill konfigurera publiceringsmallen fyller du i mallens namn (dvs. identifieringsnyckeln som består av namnet och namnutrymmet), etiketten, dataschemat och det indataformulär som den är länkad till.
 
@@ -45,35 +45,35 @@ Om du vill konfigurera publiceringsmallen fyller du i mallens namn (dvs. identif
 >
 >Etiketten visas när innehåll skapas baserat på den här publiceringsmallen.
 
-The **Kontrollera status för att validera innehållsgenerering** Alternativet framtvingar en kontroll av statusen &quot;Validerad&quot; för innehållsinstanserna för att tillåta filgenerering. Mer information finns i [Publicering](#publication).
+Alternativet **Kontrollera status för att validera innehållsgenerering** tvingar en kontroll av statusen Validerad för innehållsinstanserna för att auktorisera filgenerering. Mer information finns i [Publikation](#publication).
 
 En omformningsmall måste läggas till för varje utdatadokument. Du kan skapa så många omformningsmallar som behövs.
 
-The **[!UICONTROL Name of template]** fältet är en kostnadsfri etikett som beskriver återgivningstypen vid utdata. Publikationsinställningarna är tillgängliga på flikarna för varje omformningsmall.
+Fältet **[!UICONTROL Name of template]** är en kostnadsfri etikett som beskriver återgivningstypen vid utdata. Publikationsinställningarna är tillgängliga på flikarna för varje omformningsmall.
 
 ### Återgivning {#rendering}
 
-The **[!UICONTROL Rendering]** väljer du:
+Välj fliken **[!UICONTROL Rendering]**:
 
 * Den typ av återgivning som används för att projicera utdatadokumentet: XSL-formatmall eller JavaScript-mall.
 * Utdatadokumentets format: HTML, Text, XML eller RTF.
-* den mall som innehåller konstruktionsdata, dvs. den formatmall eller JavaScript-mall som ska användas.
+* Den mall som innehåller konstruktionsdata, dvs. den formatmall eller JavaScript-mall som ska användas.
 
 ### Publicering {#publication}
 
-Publikationen innebär att utdatadokumentet genereras i form av en fil, om den valda typen är **[!UICONTROL File]**.
+Publiceringen innebär att utdatadokumentet genereras i form av en fil, om den valda typen är **[!UICONTROL File]**.
 
 ![](assets/d_ncs_content_model2.png)
 
 Följande publiceringsalternativ är tillgängliga:
 
-* Teckenuppsättningen för kodning av utdatafil kan framtvingas via **[!UICONTROL Encoding]** fält. Teckenuppsättningen Latin 1 (1252) används som standard.
-* The **[!UICONTROL Multi-file generation]** aktiverar ett särskilt dokumentpubliceringsläge. Det här alternativet innebär att en partitioneringstagg fylls i i början av varje sida i utdatadokumentet. När du genererar innehållet skapas en fil för varje ifylld partitionstagg. Det här läget används för att generera miniwebbplatser från ett innehållsblock. för mer information om detta, se [Skapa flera filer samtidigt](#multi-file-generation).
-* The **[!UICONTROL Location]** fältet innehåller namnet på utdatafilen. Namnet kan bestå av variabler för att generera ett automatiskt filnamn.
+* Teckenuppsättningen för kodning av utdatafil kan framtvingas via fältet **[!UICONTROL Encoding]**. Teckenuppsättningen Latin 1 (1252) används som standard.
+* Alternativet **[!UICONTROL Multi-file generation]** aktiverar ett särskilt dokumentpubliceringsläge. Det här alternativet innebär att en partitioneringstagg fylls i i början av varje sida i utdatadokumentet. När du genererar innehållet skapas en fil för varje ifylld partitionstagg. Det här läget används för att generera miniwebbplatser från ett innehållsblock. Mer information finns i [Skapa flera filer](#multi-file-generation).
+* Fältet **[!UICONTROL Location]** innehåller namnet på utdatafilen. Namnet kan bestå av variabler för att generera ett automatiskt filnamn.
 
   En variabel har följande format: **`$(<xpath>)`**, där **`<xpath>`** är sökvägen till ett fält i publiceringsmallens dataschema.
 
-  Namnet på en fil kan bestå av ett datumtypsfält. Använd knappen **$date-format** -funktion, med fältets sökväg och utdataformatet som parametrar.
+  Namnet på en fil kan bestå av ett datumtypsfält. Om du vill formatera det här fältet korrekt använder du funktionen **$date-format** med sökvägen för fältet och utdataformatet som parametrar.
 
   Som standard används variablerna i fälten &quot;@name&quot; och &quot;@date&quot; för filnamnets konstruktionsformat:
 
@@ -95,7 +95,7 @@ På den här fliken kan du välja ett scenario för att starta en leverans direk
 
 >[!NOTE]
 >
->Ett exempel på leveransframtagning baserad på ett innehåll finns i [Leverera en innehållsinstans](using-a-content-template.md#delivering-a-content-instance).
+>Ett exempel på leveransskapande baserat på ett innehåll finns i [Leverera en innehållsinstans](using-a-content-template.md#delivering-a-content-instance).
 
 ### Aggregator {#aggregator}
 
@@ -103,13 +103,13 @@ Genom att samla data från ett skript eller en frågelista kan du utöka XML-dok
 
 ### Skapa flera filer samtidigt {#multi-file-generation}
 
-Om du vill aktivera flera filgenereringar väljer du **[!UICONTROL Multi-file generation]** i publikationsmodellen. Med det här alternativet kan du ange partitioneringstaggar i formatmallen för början av varje sida i utdatadokumentet. När innehållet genereras skapas en fil för varje partitioneringstagg som påträffas.
+Om du vill aktivera flera filgenereringar väljer du alternativet **[!UICONTROL Multi-file generation]** i publikationsmodellen. Med det här alternativet kan du ange partitioneringstaggar i formatmallen för början av varje sida i utdatadokumentet. När innehållet genereras skapas en fil för varje partitioneringstagg som påträffas.
 
 Partitionstaggen som ska integreras i formatmallen är följande:
 
-**`<xsl:comment> #nl:output_replace(<name_of_file>) </xsl:comment>`** där **`<name_of_file>`** är filnamnet på sidan som ska skapas.
+**`<xsl:comment> #nl:output_replace(<name_of_file>) </xsl:comment>`** där **`<name_of_file>`** är filnamnet på sidan som ska genereras.
 
-**Exempel:** Skapa flera filer med hjälp av&quot;cus:book&quot;-schemat.
+**Exempel:** Generera flera filer med hjälp av &quot;cus:book&quot;-schemat.
 
 Principen är att skapa en huvudsida som listar kapitlen, med möjlighet att visa kapiteldetaljer på en extern sida.
 
@@ -171,12 +171,12 @@ Partitionstaggen fylls i i början av sidan som ska inkluderas i filen som ska g
 <xsl:comment> #nl:output_replace($(path)/<xsl:value-of select="@id"/>.htm)</xsl:comment>
 ```
 
-Filnamnet skapas med **$(sökväg)** variabel som innehåller publiceringssökvägen och **`<xsl:value-of select="@id" />`**, som matchar kapitlets identifierare i indatadokumentet.
+Filnamnet skapas med variabeln **$(path)** som innehåller publikationssökvägen och **`<xsl:value-of select="@id" />`** som matchar identifieraren för kapitlet i indatadokumentet.
 
 Publikationsmodellen måste vara ifylld med de två formatmallarna &quot;cus:book.xsl&quot; och &quot;cus:chapter.xsl&quot;.
 
-The **[!UICONTROL Multi-file generation]** måste vara aktivt i kapitelomformningsmodellen:
+Alternativet **[!UICONTROL Multi-file generation]** måste vara aktivt i kapitelomformningsmodellen:
 
 ![](assets/d_ncs_content_chunk2.png)
 
-The **[!UICONTROL Location]** -fältet används inte i genereringen av flera filer, men du måste ändå fylla i det här fältet för att undvika ett fel vid publicering.
+Fältet **[!UICONTROL Location]** används inte i genereringen av flera filer, men du måste ändå fylla i det här fältet för att undvika ett fel vid publicering.

@@ -20,13 +20,13 @@ ht-degree: 1%
 >
 > Dessa åtgärder bör endast utföras av Hybrid och lokalt implementerade implementeringar.
 >
->För implementeringar av Hosted och Campaign Managed Services kontaktar du [Adobe kundtjänst](https://helpx.adobe.com/se/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) team.
+>Kontakta [Adobe kundtjänst](https://helpx.adobe.com/se/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) för implementeringar av värdbaserade och Campaign Managed Services.
 
 Integrationen mellan Adobe Campaign Classic och Adobe Analytics autentisering stöder Adobe Identity Management Service (IMS):
 
 * Om du hanterar ett migrerat externt konto måste du implementera Adobe IMS och ansluta till Adobe Campaign via en Adobe ID.
 
-  Observera att den användare som är inloggad via Adobe ID IMS måste vara ägare till **Dataanslutning** i Adobe Analytics och har behörigheter för **Produktprofil** nämnd [nedan](#analytics-product-profile).
+  Observera att användaren som är inloggad via Adobe ID IMS måste vara ägare till **Data Connector**-kontot i Adobe Analytics och ha behörighet för **produktprofilen** som nämns [ nedan](#analytics-product-profile).
 
 Problemet var att ägaren till dataanslutningen var en annan användare än användaren som loggade in på Campaign och testade integreringen med Analytics.
 
@@ -38,7 +38,7 @@ För att den här integreringen ska fungera måste du skapa en Adobe Analytics-p
 >
 > JWT-autentiseringsuppgifterna (Service Account) har tagits bort av Adobe, och Campaign-integreringar med Adobe-lösningar och appar måste nu förlita sig på autentiseringsuppgifter för OAuth Server-till-Server. </br>
 >
-> * Om du har implementerat inkommande integreringar med Campaign måste du migrera ditt tekniska konto enligt informationen i [den här dokumentationen](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration/#_blank). Befintliga JWT-referenser (Service Account) kommer att fortsätta att fungera fram till 27 januari 2025.</br>
+> * Om du har implementerat inkommande integreringar med Campaign måste du migrera ditt tekniska konto enligt beskrivningen i [den här dokumentationen](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration/#_blank). Befintliga JWT-autentiseringsuppgifter (Service Account) fortsätter att fungera till 27 januari 2025.</br>
 >
 > * Om ni har implementerat utgående integreringar, som integrering med Campaign-Analytics eller integrering med Experience Cloud-utlösare, fortsätter de att fungera fram till 27 januari 2025. Innan detta datum måste du dock uppgradera din Campaign-miljö till v7.4.1 och migrera ditt tekniska konto till OAuth.
 
@@ -48,9 +48,9 @@ Produktprofilen avgör vilken åtkomstnivå en användare har till dina olika An
 
 Om du redan har en Analytics-produktprofil bör du ändå skapa en ny Adobe Analytics-produktprofil som används exklusivt för Analytics-kontakten. Detta säkerställer att din produktprofil är inställd med rätt behörigheter för den här integreringen.
 
-Mer information om produktprofiler finns i [Dokumentation till Admin Console](https://helpx.adobe.com/mt/enterprise/admin-guide.html).
+Mer information om produktprofiler finns i dokumentationen för [Admin Console](https://helpx.adobe.com/mt/enterprise/admin-guide.html).
 
-1. Från [Admin Console](https://adminconsole.adobe.com/)väljer du Adobe Analytics **[!UICONTROL Product]**.
+1. Välj din Adobe Analytics **[!UICONTROL Product]** från [Admin Console](https://adminconsole.adobe.com/).
 
    ![](assets/do-not-localize/triggers_1.png)
 
@@ -58,35 +58,35 @@ Mer information om produktprofiler finns i [Dokumentation till Admin Console](ht
 
    ![](assets/do-not-localize/triggers_2.png)
 
-1. Lägg till en **[!UICONTROL Product profile name]** föreslår vi att du använder följande syntax: `reserved_campaign_classic_<Company Name>`. Klicka sedan på **[!UICONTROL Next]**.
+1. Lägg till en **[!UICONTROL Product profile name]**, vi föreslår att du använder följande syntax: `reserved_campaign_classic_<Company Name>`. Klicka sedan på **[!UICONTROL Next]**.
 
-   Detta **[!UICONTROL Product profile]** ska endast användas för Analytics Connector för att förhindra felkonfigurationsfel.
+   **[!UICONTROL Product profile]** ska endast användas för Analytics Connector för att förhindra felkonfigurationsfel.
 
-1. Öppna dina nyskapade **[!UICONTROL Product profile]** och väljer **[!UICONTROL Permissions]** -fliken.
+1. Öppna din nya **[!UICONTROL Product profile]** och välj fliken **[!UICONTROL Permissions]**.
 
    ![](assets/do-not-localize/triggers_3.png)
 
-1. Konfigurera de olika funktionerna genom att klicka **[!UICONTROL Edit]** och väljer behörigheter att tilldela **[!UICONTROL Product profile]** genom att klicka på plusikonen (+).
+1. Konfigurera de olika funktionerna genom att klicka på **[!UICONTROL Edit]** och markera de behörigheter som ska tilldelas till din **[!UICONTROL Product profile]** genom att klicka på plusikonen (+).
 
-   Mer information om hur du hanterar behörigheter finns i [Dokumentation till Admin Console](https://helpx.adobe.com/mt/enterprise/using/manage-permissions-and-roles.html).
+   Mer information om hur du hanterar behörigheter finns i dokumentationen för [Admin Console](https://helpx.adobe.com/mt/enterprise/using/manage-permissions-and-roles.html).
 
-1. För **[!UICONTROL Report Suites]** funktioner, lägga till **[!UICONTROL Report Suites]** du måste använda senare.
+1. Lägg till **[!UICONTROL Report Suites]** som du behöver använda senare om du vill använda funktionen **[!UICONTROL Report Suites]**.
 
-   Om du inte har några rapportsviter kan du skapa dem enligt följande [dessa steg](../../integrations/using/gs-aa.md).
+   Om du inte har några rapportsviter kan du skapa den enligt [de här stegen](../../integrations/using/gs-aa.md).
 
    ![](assets/do-not-localize/triggers_4.png)
 
-1. För **[!UICONTROL Metrics]** funktioner, lägga till **[!UICONTROL Metrics]** måste du konfigurera senare.
+1. Lägg till **[!UICONTROL Metrics]** som du måste konfigurera senare för att kunna använda funktionen **[!UICONTROL Metrics]**.
 
    Om det behövs kan du aktivera alternativet Inkludera automatiskt som lägger till alla behörighetsobjekt i den inkluderade listan och automatiskt lägger till nya behörighetsobjekt.
 
    ![](assets/do-not-localize/triggers_13.png)
 
-1. För **[!UICONTROL Dimensions]** funktioner, lägga till **[!UICONTROL Dimensions]** behövs för framtida konfiguration.
+1. Lägg till **[!UICONTROL Dimensions]** som behövs för framtida konfiguration för funktionen **[!UICONTROL Dimensions]**.
 
    Kontrollera att de valda Dimensionerna överensstämmer med de som ska konfigureras i det externa kontot och att de är anpassade till motsvarande eVars-nummer från Adobe Analytics.
 
-1. För **[!UICONTROL Report Suite Tools]** lägger du till följande behörigheter:
+1. Lägg till följande behörigheter för funktionen **[!UICONTROL Report Suite Tools]**:
 
    * **[!UICONTROL Report suite Mgmt]**
    * **[!UICONTROL Conversion variables]**
@@ -95,7 +95,7 @@ Mer information om produktprofiler finns i [Dokumentation till Admin Console](ht
    * **[!UICONTROL Data sources manager]**
    * **[!UICONTROL Classifications]**
 
-1. För **[!UICONTROL Analytics Tools]** lägger du till följande behörigheter:
+1. Lägg till följande behörigheter för funktionen **[!UICONTROL Analytics Tools]**:
 
    * **[!UICONTROL Code Manager - Web services]**
    * **[!UICONTROL Logs - Web services]**
@@ -110,8 +110,8 @@ Din produktprofil är nu konfigurerad. Sedan måste du skapa OAuth-projektet.
 
 Om du vill fortsätta konfigurera din Adobe Analytics-anslutning öppnar du Adobe Developer-konsolen och skapar ett OAuth Server-till-Server-projekt.
 
-Se [den här sidan](oauth-technical-account.md#oauth-service) för detaljerad dokumentation.
+Mer information finns på [den här sidan](oauth-technical-account.md#oauth-service).
 
 ## Konfiguration och användning {#adobe-analytics-connector-usage}
 
-Lär dig hur du arbetar med Adobe Campaign och Adobe Analytics i [Adobe Campaign v8-dokumentation](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/connect/ac-aa){target="_blank"}.
+Lär dig hur du arbetar med Adobe Campaign och Adobe Analytics i [Adobe Campaign v8-dokumentationen](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/connect/ac-aa){target="_blank"}.

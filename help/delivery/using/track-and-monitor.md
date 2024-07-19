@@ -15,7 +15,7 @@ ht-degree: 2%
 
 # Spåra och övervaka {#track-and-monitor}
 
-Du klickade på **Skicka** -knapp? Låt oss se vad som händer. När leveransen har skickats kan du med Adobe Campaign hålla reda på skickade meddelanden och se hur mottagarna svarar på leveransen. Detta hjälper er att förbättra era framtida utskick och optimera era nästa kampanjer.
+Klickade du på knappen **Skicka**? Låt oss se vad som händer. När leveransen har skickats kan du med Adobe Campaign hålla reda på skickade meddelanden och se hur mottagarna svarar på leveransen. Detta hjälper er att förbättra era framtida utskick och optimera era nästa kampanjer.
 
 ## Bildskärmsleveranser {#monitoring-deliveries}
 
@@ -24,7 +24,7 @@ För att kunna styra era kampanjer måste ni se till att meddelandet verkligen h
 På kontrollpanelen för kampanjleverans kan du kontrollera bearbetade meddelanden och leveransgranskningsloggar.
 Du kan också styra status för meddelandena i leveransloggarna. [Läs mer](about-delivery-monitoring.md).
 
-Vad händer om leveranserna inte skickas och deras status kvarstår **Väntande**?
+Vad händer om leveranserna inte skickas och deras status förblir **Väntande**?
 
 * Körningsprocessen väntar på att vissa resurser ska vara tillgängliga. MTA har kanske inte startats.
 Kontrollera att mta@instance startas på dina MTA-servrar och starta MTA-modulen om det behövs. [Läs mer](../../production/using/administration.md).
@@ -40,9 +40,9 @@ Tips: Kontrollera konfigurationen för trafikhantering (IP-tillhörighet). Mer i
 
 Om du vill veta mer om mottagarnas beteende kan du spåra hur de reagerar på en leverans: mottagning, öppning, klickningar på länkar, avbeställningar osv. I Campaign Classic visas den här informationen på fliken Spårning för mottagarna som leveransmålet gäller och på fliken Spårning för leveransen.
 
-**Tips**: Spårning av meddelanden är aktiverat som standard. Om du vill konfigurera URL-adresser väljer du alternativet Visa URL-adresser i det nedre avsnittet av leveransguiden. För varje URL för meddelandet kan du välja om spårning ska aktiveras.
+**Tips**: Meddelandespårning är aktiverat som standard. Om du vill konfigurera URL-adresser väljer du alternativet Visa URL-adresser i det nedre avsnittet av leveransguiden. För varje URL för meddelandet kan du välja om spårning ska aktiveras.
 
-Mer information finns i [Konfigurera spårning](how-to-configure-tracked-links.md) -avsnittet och [Spårningsindikatorer](../../reporting/using/delivery-reports.md#tracking-indicators) description.
+Mer information finns i avsnittet [Konfigurera spårning](how-to-configure-tracked-links.md) och i beskrivningen av [spårningsindikatorer](../../reporting/using/delivery-reports.md#tracking-indicators) .
 
 ## Leveransprestanda {#delivery-performances}
 
@@ -66,4 +66,4 @@ Specifika åtgärder kan utföras vid problem med leveranser:
 
 * [Problem med leveransresultat](delivery-performances.md)
 
-* [Temporära filproblem](../../production/using/temporary-files.md) - *endast lokala kunder*
+* [Tillfälliga filer ger ut](../../production/using/temporary-files.md) - *endast lokala kunder*

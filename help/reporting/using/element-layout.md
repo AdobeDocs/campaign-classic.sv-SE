@@ -16,7 +16,7 @@ ht-degree: 1%
 
 
 
-Förutom de olika diagrammen [här](../../reporting/using/creating-a-chart.md#chart-types-and-variants)kan du anpassa visningen och lägga till element på rapportsidorna.
+Förutom de olika diagram som beskrivs [här](../../reporting/using/creating-a-chart.md#chart-types-and-variants) kan du anpassa visningen och lägga till element på rapportsidorna.
 
 Du kan använda behållare: med dessa kan du länka flera element på en sida och konfigurera deras layout i kolumner och/eller celler. Hur du använder dem beskrivs i [det här avsnittet](../../web/using/defining-web-forms-layout.md#creating-containers).
 
@@ -26,31 +26,31 @@ Du kan konfigurera rapportlayouten i roten av trädet och överlagra den för va
 
 Du kan använda alternativen på varje sida i rapporten.
 
-The **[!UICONTROL General]** Med -fliken kan du ändra sidans titel, samt konfigurera förklaringspositioner och bläddra mellan rapportsidorna.
+På fliken **[!UICONTROL General]** kan du ändra sidans titel, samt konfigurera förklaringspositioner och bläddra mellan rapportsidorna.
 
 ![](assets/s_ncs_advuser_report_wizard_022.png)
 
-The **[!UICONTROL Title]** kan du anpassa etiketten i rubriken på rapportsidan. Fönstrets titel kan konfigureras via **[!UICONTROL Properties]** rapportens fönster. Mer information finns i [Lägga till ett sidhuvud och en sidfot](#adding-a-header-and-a-footer).
+I fältet **[!UICONTROL Title]** kan du anpassa etiketten i rubriken på rapportsidan. Fönstrets titel kan konfigureras via rapportens **[!UICONTROL Properties]**-fönster. Mer information finns i [Lägga till ett sidhuvud och en sidfot](#adding-a-header-and-a-footer).
 
-The **[!UICONTROL Display settings]** Med kan du välja placering för kontrollbildtexten på en rapportsida och definiera antalet kolumner på sidan. Mer information om sidlayout finns i **Artikellayout** avsnitt i [det här avsnittet](../../web/using/defining-web-forms-layout.md#positioning-the-fields-on-the-page).
+Med alternativen för **[!UICONTROL Display settings]** kan du välja placering av kontrollbildtexten på en rapportsida och definiera antalet kolumner på sidan. Mer information om sidlayout finns i avsnittet **Objektlayout** i [det här avsnittet](../../web/using/defining-web-forms-layout.md#positioning-the-fields-on-the-page).
 
-Välj de olika alternativen i dialogrutan **[!UICONTROL Browse]** för att godkänna bläddring från en rapportsida till en annan. Om **[!UICONTROL Disable next page]** eller **[!UICONTROL Disable previous page]** är markerat, **[!UICONTROL Next]** och **[!UICONTROL Previous]** försvinner från rapportsidan.
+Välj de olika alternativen i avsnittet **[!UICONTROL Browse]** om du vill tillåta bläddring från en rapportsida till en annan. Om alternativet **[!UICONTROL Disable next page]** eller **[!UICONTROL Disable previous page]** väljs försvinner knapparna **[!UICONTROL Next]** och **[!UICONTROL Previous]** från rapportsidan.
 
 ## Lägga till ett sidhuvud och en sidfot {#adding-a-header-and-a-footer}
 
 I fönstret för rapportegenskaper kan du också definiera layoutelement, t.ex. fönstrets titel och HTML i sidhuvuden och sidfötter.
 
-Om du vill öppna egenskapsfönstret klickar du på **[!UICONTROL Properties]** rapportknappen.
+Om du vill öppna egenskapsfönstret klickar du på knappen **[!UICONTROL Properties]** i rapporten.
 
 ![](assets/reporting_properties.png)
 
-The **[!UICONTROL Page]** kan du anpassa visningen.
+På fliken **[!UICONTROL Page]** kan du anpassa visningen.
 
 ![](assets/s_ncs_advuser_report_properties_04.png)
 
 Innehållet som är konfigurerat på den här fliken visas på alla rapportsidor.
 
-The **[!UICONTROL Texts]** Med subtab kan du definiera variabelt innehåll: det kommer att tas med i beräkningen under översättningscykeln om rapporten är avsedd att användas på flera språk.
+Med underfliken **[!UICONTROL Texts]** kan du definiera variabelt innehåll. Det kommer att tas med i översättningscykeln om rapporten är avsedd att användas på flera språk.
 
 Detta gör att du kan skapa en lista med textfragment och länka dem till identifierare:
 

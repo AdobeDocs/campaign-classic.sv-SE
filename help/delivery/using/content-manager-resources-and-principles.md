@@ -27,10 +27,10 @@ Genom att kombinera XML-dokumentet med XSL- eller JavaScript-mallarna genereras 
 Följande resurser krävs för innehållskonfigurationen:
 
 * Datamodeller: beskrivning av XML-innehållsstrukturen. Mer information finns i [Datamodeller](data-schemas.md).
-* Datainmatningsformulär: konstruktion av datainmatningsskärmar. Mer information finns i [Inmatningsformulär](input-forms.md).
+* Datainmatningsformulär: konstruktion av datainmatningsskärmar. Mer information finns i [Indataformulär](input-forms.md).
 * Bilder: bilder som används i inmatningsformulär. Mer information finns i [Bildhantering](formatting.md#image-management).
 * Formatmallar: formatera utdatadokument med XSLT-språk. Mer information finns i [Formatering](formatting.md).
-* JavaScript-mallar: formatera utdatadokument med JavaScript-språk. Mer information finns i [Publikationsmallar](publication-templates.md).
-* JavaScript-koder: JavaScript-koder för dataaggregering. Mer information finns i [Aggregator](publication-templates.md#aggregator).
+* JavaScript-mallar: formatera utdatadokument med JavaScript. Mer information finns i [Publikationsmallar](publication-templates.md).
+* JavaScript-koder: JavaScript-koder för datainsamling. Mer information finns i [Aggregator](publication-templates.md#aggregator).
 * Publikationsmallar: definition av publiceringsmallar. Mer information finns i [Publikationsmallar](publication-templates.md).
 * Innehåll: innehållsinstanser som ska skapas och publiceras. Mer information finns i [Använda en innehållsmall](using-a-content-template.md).

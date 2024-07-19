@@ -15,16 +15,16 @@ ht-degree: 8%
 # Utforma och genomför marknadsföringskampanjer{#designing-marketing-campaigns}
 
 
-Med Adobe Campaign kan ni definiera, optimera, genomföra och analysera kommunikation och marknadsföringskampanjer. Adobe Campaign fungerar som ett enhetligt center för order och genomförande av marknadsföringsstrategier. Mer information finns i [Få tillgång till kampanjer](../../distributed/using/accessing-campaigns.md) och [Skapa marknadsföringskampanjer](../../campaign/using/setting-up-marketing-campaigns.md).
+Med Adobe Campaign kan ni definiera, optimera, genomföra och analysera kommunikation och marknadsföringskampanjer. Adobe Campaign fungerar som ett enhetligt center för order och genomförande av marknadsföringsstrategier. Mer information finns i [Åtkomstkampanjer](../../distributed/using/accessing-campaigns.md) och [Skapa marknadsföringskampanjer](../../campaign/using/setting-up-marketing-campaigns.md).
 
-Dessutom är **Marknadsföringsresurshantering (MRM)** kan ni styra marknadsföringsåtgärder i ett samverkansbaserat läge genom att tillhandahålla fullständig hantering och realtidsspårning av de uppgifter, budgetar och marknadsföringsresurser som ingår. Med Marketing Resource Management kan ni optimera och reglera hanteringen av interna och externa processer, resurser och marknadsföringskampanjer samt relationer till tredje part (byråer, skrivare osv.). Mer information om detta finns i [det här avsnittet](../../mrm/using/about-marketing-resource-management.md).
+Dessutom kan du med modulen **Marketing Resource Management (MRM)** styra marknadsföringsåtgärder i ett samverkansbaserat läge genom att tillhandahålla fullständig hantering och realtidsspårning av de uppgifter, budgetar och marknadsföringsresurser som ingår. Med Marketing Resource Management kan ni optimera och reglera hanteringen av interna och externa processer, resurser och marknadsföringskampanjer samt relationer till tredje part (byråer, skrivare osv.). Mer information om detta finns i [det här avsnittet](../../mrm/using/about-marketing-resource-management.md).
 
 >[!NOTE]
 >
->Mer information om Adobe Campaign grundläggande funktioner finns i [det här avsnittet](../../platform/using/about-adobe-campaign-classic.md) -avsnitt.\
->Funktioner för målgruppsanpassning, personalisering av meddelanden och meddelandeleverans i olika kanaler beskrivs i [det här avsnittet](../../delivery/using/steps-about-delivery-creation-steps.md).
+>Mer information om Adobe Campaign kärnfunktioner finns i [det här avsnittet](../../platform/using/about-adobe-campaign-classic.md).\
+>Funktioner som rör målgruppsanpassning, meddelandepersonalisering och meddelandeleverans i olika kanaler beskrivs i [det här avsnittet](../../delivery/using/steps-about-delivery-creation-steps.md).
 
-![](assets/do-not-localize/how-to-video.png) [Identifiera nyckelbegrepp för marknadsföringskampanjer i video](#video)
+![](assets/do-not-localize/how-to-video.png) [Upptäck begrepp för marknadsföringskampanjer i videon](#video)
 
 ## Kärnkoncept {#core-concepts}
 
@@ -40,7 +40,7 @@ Följande koncept måste vara kända i samband med Campaign:
 
   Med ett program kan ni definiera marknadsföringsåtgärder för en kalenderperiod: lansering, skanning, lojalitet osv. Varje program innehåller kampanjer som är länkade till en kalender, som ger en övergripande bild.
 
-* **Plan**
+* **Planera**
 
   Marknadsföringsplanen kan innehålla flera program. Den är kopplad till en kalenderperiod, har en tilldelad budget och kan även kopplas ihop med dokument och mål.
 
@@ -68,4 +68,4 @@ I den här videon presenteras viktiga begrepp för marknadsföringskampanjer.
 
 >[!VIDEO](https://video.tv.adobe.com/v/35131?quality=12)
 
-Det finns fler videor med Campaign Classic om hur man gör [här](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=sv).
+Ytterligare Campaign Classic om instruktionsvideor finns [här](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=sv).

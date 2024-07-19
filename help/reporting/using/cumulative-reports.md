@@ -22,6 +22,6 @@ Du kan visa kumulerade rapporter om leveranser. För att göra detta väljer du 
 
 Om du vill välja icke-närliggande leveranser från listan håller du ned CTRL medan du gör ditt val.
 
-Om du vill välja leveranser som har sparats i en annan mapp klickar du **[!UICONTROL Display sub-levels]** (tillgängligt via verktygsfältet). De visas sedan i samma lista.
+Om du vill välja leveranser som sparats i en annan mapp klickar du på **[!UICONTROL Display sub-levels]** (nås via verktygsfältet). De visas sedan i samma lista.
 
 ![](assets/s_ncs_user_display_children_icon.png)

@@ -22,23 +22,23 @@ Börja med att skapa en ny leverans.
 
 Följ stegen nedan för att skapa ett push-meddelande för iOS-enheter:
 
-1. Välj **[!UICONTROL Deliver on iOS]** leveransmall.
+1. Välj leveransmallen **[!UICONTROL Deliver on iOS]**.
 
    ![](assets/nmac_delivery_ios_1.png)
 
-1. Om du vill definiera målet för meddelandet klickar du på knappen **[!UICONTROL To]** klicka på **[!UICONTROL Add]**.
+1. Om du vill definiera målet för meddelandet klickar du på länken **[!UICONTROL To]** och sedan på **[!UICONTROL Add]**.
 
    ![](assets/nmac_delivery_ios_2.png)
 
    >[!NOTE]
    >
-   >Den detaljerade processen när målpopulationen för en leverans väljs presenteras i [det här avsnittet](steps-defining-the-target-population.md).
+   >Den detaljerade processen när målpopulationen för en leverans väljs visas i [det här avsnittet](steps-defining-the-target-population.md).
    >
    >Mer information om användning av anpassningsfält finns i [det här avsnittet](about-personalization.md).
    >
-   >Mer information om hur du tar med en lista med startvärden finns i [Om dirigeringsadresser](about-seed-addresses.md).
+   >Mer information om hur du inkluderar en dirigeringslista finns i [Om dirigeringsadresser](about-seed-addresses.md).
 
-1. Välj **[!UICONTROL Subscribers of an iOS mobile application (iPhone, iPad)]** väljer du den tjänst som är relevant för ditt mobilprogram (i det här fallet Neotrips) och väljer sedan iOS-versionen av programmet.
+1. Välj **[!UICONTROL Subscribers of an iOS mobile application (iPhone, iPad)]**, välj den tjänst som är relevant för ditt mobilprogram (Neotrips, i det här fallet) och välj sedan iOS-versionen av programmet.
 
    ![](assets/nmac_delivery_ios_3.png)
 
@@ -48,29 +48,29 @@ Följ stegen nedan för att skapa ett push-meddelande för iOS-enheter:
 
    >[!NOTE]
    >
-   >The **Tyst push** I läget kan ett tyst meddelande skickas till ett mobilprogram. Användaren har inte informerats om meddelandets ankomst. Den överförs direkt till programmet.
+   >I läget **Tyst överföring** kan ett tyst meddelande skickas till ett mobilprogram. Användaren har inte informerats om meddelandets ankomst. Den överförs direkt till programmet.
 
-1. I **[!UICONTROL Title]** anger du etiketten för den titel som du vill ska visas i listan med meddelanden som är tillgängliga från meddelandecentret.
+1. I fältet **[!UICONTROL Title]** anger du etiketten för titeln som du vill ska visas i listan med meddelanden som är tillgängliga från meddelandecentret.
 
-   I det här fältet kan du definiera värdet för **title** parameter för iOS-meddelandenyttolast.
+   I det här fältet kan du definiera värdet för parametern **title** i iOS-meddelandenyttolasten.
 
-1. Du kan lägga till en **[!UICONTROL Subtitle]**, värdet för undertitelparametern för iOS-meddelandenyttolasten. Se [det här avsnittet](configuring-the-mobile-application.md).
+1. Du kan lägga till **[!UICONTROL Subtitle]**, värdet för undertitelparametern i iOS-meddelandenyttolasten. Se [det här avsnittet](configuring-the-mobile-application.md).
 
-1. Ange innehållet i meddelandet i **[!UICONTROL Message content]** i guiden. Användningen av personaliseringsfält beskrivs i [Om personalisering](about-personalization.md) -avsnitt.
+1. Ange innehållet i meddelandet i avsnittet **[!UICONTROL Message content]** i guiden. Användningen av anpassningsfält beskrivs i avsnittet [Om anpassning](about-personalization.md).
 
    ![](assets/nmac_delivery_ios_5.png)
 
-1. Klicka på **[!UICONTROL Insert emoticon]** om du vill infoga uttryckssymboler i ditt push-meddelande. Om du vill anpassa uttryckslistan läser du [det här avsnittet](customizing-emoticon-list.md)
+1. Klicka på ikonen **[!UICONTROL Insert emoticon]** om du vill infoga uttryckssymboler i push-meddelandet. Om du vill anpassa uttryckslistan läser du [det här avsnittet](customizing-emoticon-list.md)
 
-1. Från **[!UICONTROL Sound and Badge]** kan du redigera följande alternativ:
+1. På fliken **[!UICONTROL Sound and Badge]** kan du redigera följande alternativ:
 
-   * **[!UICONTROL Clean Badge]**: aktivera det här alternativet för att uppdatera badge-värdet.
+   * **[!UICONTROL Clean Badge]**: aktivera de här alternativen för att uppdatera badge-värdet.
 
    * **[!UICONTROL Value]**: ange ett tal som ska användas för att visa antalet nya olästa uppgifter direkt på programikonen.
 
    * **[!UICONTROL Critical alert mode]**: aktivera det här alternativet om du vill lägga till ljud i meddelandet även om användarens telefon är inställd på fokusläge eller om iPhone är avstängt.
 
-   * **[!UICONTROL Name]**: välj det ljud som ska spelas upp av mobilterminalen när meddelandet tas emot.
+   * **[!UICONTROL Name]**: välj ljudet som ska spelas upp av mobilterminalen när meddelandet tas emot.
 
    * **[!UICONTROL Volume]**: ljudvolym från 0 till 100.
 
@@ -80,15 +80,15 @@ Följ stegen nedan för att skapa ett push-meddelande för iOS-enheter:
 
    ![](assets/nmac_delivery_ios_6.png)
 
-1. Från **[!UICONTROL Application variables]** -fliken, **[!UICONTROL Application variables]** läggs till automatiskt. De gör att du kan definiera meddelandebeteende, till exempel kan du konfigurera en specifik programskärm som ska visas när användaren aktiverar meddelandet.
+1. **[!UICONTROL Application variables]** läggs automatiskt till på fliken **[!UICONTROL Application variables]**. De gör att du kan definiera meddelandebeteende, till exempel kan du konfigurera en specifik programskärm som ska visas när användaren aktiverar meddelandet.
 
    Mer information om detta finns i [det här avsnittet](configuring-the-mobile-application.md).
 
-1. Från **[!UICONTROL Advanced]** kan du redigera följande allmänna alternativ:
+1. På fliken **[!UICONTROL Advanced]** kan du redigera följande allmänna alternativ:
 
-   * **[!UICONTROL Mutable content]**: aktivera det här alternativet om du vill att mobilprogrammet ska kunna hämta medieinnehåll.
+   * **[!UICONTROL Mutable content]**: aktivera det här alternativet om du vill tillåta mobilprogrammet att hämta medieinnehåll.
 
-   * **[!UICONTROL Thread-id]**: identifierare som används för att gruppera relaterade meddelanden tillsammans.
+   * **[!UICONTROL Thread-id]**: Identifierare som används för att gruppera relaterade meddelanden tillsammans.
 
    * **[!UICONTROL Category]**: namnet på ditt kategori-ID som kommer att visa åtgärdsknappar. Dessa meddelanden ger användaren ett snabbare sätt att utföra olika åtgärder som svar på ett meddelande utan att öppna eller navigera i programmet.
 
@@ -96,25 +96,25 @@ Följ stegen nedan för att skapa ett push-meddelande för iOS-enheter:
 
 1. För tidskänsliga meddelanden kan du ange följande alternativ:
 
-   * **[!UICONTROL Target content ID]**: identifierare som används för att ange vilket programfönster som ska flyttas fram när meddelandet öppnas.
+   * **[!UICONTROL Target content ID]**: Identifierare som används för att ange vilket programfönster som ska flyttas fram när meddelandet öppnas.
 
    * **[!UICONTROL Launch image]**: namnet på startbildfilen som ska visas. Om användaren väljer att starta programmet visas den valda bilden i stället för programmets startskärm.
 
    * **[!UICONTROL Interruption level]**:
 
-      * **[!UICONTROL Active]**: Anges som standard visas meddelandet omedelbart, skärmen visas och ett ljud kan spelas upp. Meddelanden går inte igenom fokusläget.
+      * **[!UICONTROL Active]**: Som standard visas meddelandet omedelbart, skärmen visas och ett ljud kan spelas upp. Meddelanden går inte igenom fokusläget.
 
-      * **[!UICONTROL Passive]**: Systemet lägger till meddelandet i meddelandelistan utan att skärmen ljusas eller ett ljud spelas upp. Meddelanden går inte igenom fokusläget.
+      * **[!UICONTROL Passive]**: Systemet lägger till meddelandet i meddelandelistan utan att skärmen eller ett ljud spelas upp. Meddelanden går inte igenom fokusläget.
 
       * **[!UICONTROL Time sensitive]**: Systemet visar meddelandet omedelbart, lyser upp skärmen, kan spela upp ett ljud och gå igenom fokus-lägen. Den här nivån kräver inget särskilt tillstånd från Apple.
 
-      * **[!UICONTROL Critical]**: Systemet visar meddelandet omedelbart, lyser upp skärmen och kringgår avstängningsväxeln eller fokusläget. Observera att den här nivån kräver ett särskilt tillstånd från Apple.
+      * **[!UICONTROL Critical]**: Systemet visar meddelandet omedelbart, lyser skärmen och kringgår avstängningsväxeln eller fokusläget. Observera att den här nivån kräver ett särskilt tillstånd från Apple.
 
-   * **[!UICONTROL Relevance score]**: ange ett relevansvärde mellan 0 och 100. Systemet använder detta för att sortera meddelandena i meddelandesammanfattningen.
+   * **[!UICONTROL Relevance score]**: Ange ett relevansvärde mellan 0 och 100. Systemet använder detta för att sortera meddelandena i meddelandesammanfattningen.
 
    ![](assets/nmac_delivery_ios_8.png)
 
-1. När meddelandet har konfigurerats klickar du på **[!UICONTROL Preview]** för att förhandsgranska meddelandet.
+1. När meddelandet har konfigurerats klickar du på fliken **[!UICONTROL Preview]** för att förhandsgranska meddelandet.
 
    ![](assets/nmac_intro_2.png)
 
@@ -144,15 +144,15 @@ Nu måste du skapa en ny leverans och länka den till mobilappen som du har skap
 
    ![](assets/nmac_android_3.png)
 
-1. Välj **[!UICONTROL Deliver on iOS (ios)]** i **[!UICONTROL Delivery template]** nedrullningsbar meny. Lägg till en **[!UICONTROL Label]** till leveransen.
+1. Välj **[!UICONTROL Deliver on iOS (ios)]** i listrutan **[!UICONTROL Delivery template]**. Lägg till en **[!UICONTROL Label]** i leveransen.
 
-1. Klicka **[!UICONTROL To]** för att definiera målpopulationen. Som standard är **[!UICONTROL Subscriber application]** målmappning används. Klicka **[!UICONTROL Add]** om du vill välja en tjänst som vi skapat tidigare.
+1. Klicka på **[!UICONTROL To]** för att definiera målpopulationen. Målmappningen **[!UICONTROL Subscriber application]** används som standard. Klicka på **[!UICONTROL Add]** om du vill välja den tjänst som skapats tidigare.
 
    ![](assets/nmac_ios_9.png)
 
-1. I **[!UICONTROL Target type]** fönster, markera **[!UICONTROL Subscribers of an iOS mobile application (iPhone, iPad)]** och klicka **[!UICONTROL Next]**.
+1. I fönstret **[!UICONTROL Target type]** väljer du **[!UICONTROL Subscribers of an iOS mobile application (iPhone, iPad)]** och klickar på **[!UICONTROL Next]**.
 
-1. I **[!UICONTROL Service]** väljer du en tjänst som du har skapat tidigare, det program du vill ha som mål och klickar på **[!UICONTROL Finish]**.
+1. I listrutan **[!UICONTROL Service]** väljer du den tjänst du skapat tidigare, sedan det program du vill ha som mål och klickar på **[!UICONTROL Finish]**.
 
    ![](assets/nmac_ios_6.png)
 
@@ -160,7 +160,7 @@ Nu måste du skapa en ny leverans och länka den till mobilappen som du har skap
 
    ![](assets/nmac_ios_7.png)
 
-1. Från **[!UICONTROL Application variables]** -fliken, **[!UICONTROL Application variables]** läggs till automatiskt beroende på vad som lades till under konfigurationsstegen.
+1. På fliken **[!UICONTROL Application variables]** läggs **[!UICONTROL Application variables]** automatiskt till beroende på vad som lades till under konfigurationsstegen.
 
    >[!NOTE]
    >
@@ -168,9 +168,9 @@ Nu måste du skapa en ny leverans och länka den till mobilappen som du har skap
 
    ![](assets/nmac_ios_10.png)
 
-1. Från **[!UICONTROL Advanced]** -fliken, kontrollera **[!UICONTROL Mutable content]** så att mobilprogrammet kan hämta medieinnehåll.
+1. Markera kryssrutan **[!UICONTROL Mutable content]** på fliken **[!UICONTROL Advanced]** för att tillåta mobilprogrammet att hämta medieinnehåll.
 
-1. Klicka **[!UICONTROL Save]** och leverera.
+1. Klicka på **[!UICONTROL Save]** och skicka leveransen.
 
 Bilden och webbsidan ska visas i push-meddelandet när de tas emot på prenumerantens mobila iOS-enheter.
 

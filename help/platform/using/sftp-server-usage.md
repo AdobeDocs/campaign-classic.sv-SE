@@ -45,9 +45,9 @@ För att undvika sådana problem rekommenderar Adobe att du följer de bästa me
 >
 >* Du kan övervaka din SFTP-serverlagring med Campaign Classicen [Kontrollpanelen](https://experienceleague.adobe.com/docs/control-panel/using/sftp-management/sftp-storage-management.html){target="_blank"}.
 >
->* Kontrollpanelen är tillgänglig för alla administratörsanvändare. Anvisningar om hur du ger administratörsåtkomst till en användare finns i [den här sidan](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/managing-permissions.html?lang=sv#discover-control-panel){target="_blank"}.
+>* Kontrollpanelen är tillgänglig för alla administratörsanvändare. Anvisningar om hur du beviljar administratörsåtkomst till en användare finns på [den här sidan](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/managing-permissions.html?lang=sv#discover-control-panel){target="_blank"}.
 >
->* Observera att din instans måste uppgraderas med [senaste GA-version](../../rn/using/rn-overview.md). Lär dig hur du checkar in din version [det här avsnittet](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version){target="_blank"}.
+>* Observera att din instans måste uppgraderas med den [senaste GA-versionen](../../rn/using/rn-overview.md). Lär dig hur du kontrollerar din version i [det här avsnittet](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version){target="_blank"}.
 
 * Serverstorleksmöjligheterna varierar beroende på din licens. Under alla omständigheter bör du behålla minsta möjliga antal uppgifter och endast lagra data så länge som krävs (15 dagar är den högsta tillåtna tidsgränsen).
 
@@ -63,14 +63,14 @@ Om du använder en egen SFTP-server måste du följa rekommendationerna ovan så
 
 När du i Campaign Classic anger en sökväg till en extern SFTP-server skiljer sig dessutom sökvägssyntaxen åt beroende på operativsystemet för SFTP-servern:
 
-* Om SFTP-servern är på **Windows** använder du alltid en relativ sökväg.
-* Om STP-servern är på **Linux** använder du alltid en sökväg som är relativ till hemmet (som börjar med &quot;~/&quot;) eller en absolut sökväg (som börjar med &quot;/&quot;).
+* Använd alltid en relativ sökväg om din SFTP-server finns på **Windows**.
+* Om STP-servern är på **Linux** ska du alltid använda en relativ sökväg till hemmet (med början från &quot;~/&quot;) eller en absolut sökväg (med början från &quot;/&quot;).
 
 ## Anslutningsproblem med värdserver för Adobe SFTP-server {#sftp-server-troubleshooting}
 
-I avsnittet nedan listas den information som ska kontrolleras och tillhandahållas Adobe supportteam via [Adobe kundtjänst](https://helpx.adobe.com/se/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html){target="_blank"} när du stöter på anslutningsproblem med värdbaserade SFTP-servrar i Adobe.
+I avsnittet nedan visas den information som ska kontrolleras och tillhandahållas Adobe supportteam via [Adobe kundtjänst](https://helpx.adobe.com/se/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html){target="_blank"} när anslutningsproblem med värdbaserade SFTP-servrar från Adobe inträffar.
 
-1. Kontrollera att instansen körs. Det gör du genom att öppna webbläsaren och sedan skapa en **[!UICONTROL GET]** anrop till instansen **[!UICONTROL /r/test]** slutpunkt:
+1. Kontrollera att instansen körs. Om du vill göra det öppnar du webbläsaren och gör sedan ett **[!UICONTROL GET]**-anrop för instansens **[!UICONTROL /r/test]**-slutpunkt:
 
    ```xml
    https://instanceUrl/r/test
@@ -96,11 +96,11 @@ I avsnittet nedan listas den information som ska kontrolleras och tillhandahåll
    myCompany-stage-sftp.neolane.net [AAA.BBB.CCC.D] 22 (ssh) open
    ```
 
-   Om porten inte är öppen kontrollerar du att du har öppnat utgående anslutningar och försöker sedan igen. Om du fortfarande har problem med anslutningen kan du dela utdata från kommandot med [Adobe kundtjänst](https://helpx.adobe.com/se/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) team.
+   Om porten inte är öppen kontrollerar du att du har öppnat utgående anslutningar och försöker sedan igen. Om du fortfarande stöter på anslutningsproblem kan du dela utdata för kommandot med [Adobe kundtjänst](https://helpx.adobe.com/se/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)-teamet.
 
 1. Kontrollera att den offentliga IP-adressen som du försöker initiera SFTP-anslutningen från är den som du skickade till Adobe Support för tillåtelselista.
-1. Om du använder en lösenordsbaserad autentisering kan ditt lösenord ha gått ut (lösenorden har en giltighetsperiod på 90 dagar). Vi rekommenderar därför starkt att du använder en nyckelbaserad autentisering (se [Bästa praxis för SFTP-server](#sftp-server-best-practices)).
-1. Om du använder en nyckelbaserad autentisering kontrollerar du att nyckeln du använder är samma som du angav för [Adobe kundtjänst](https://helpx.adobe.com/se/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) team för instanskonfigurationen.
+1. Om du använder en lösenordsbaserad autentisering kan ditt lösenord ha gått ut (lösenorden har en giltighetsperiod på 90 dagar). Därför rekommenderar vi starkt att du använder nyckelbaserad autentisering (se [Bästa praxis för SFTP-server](#sftp-server-best-practices)).
+1. Om du använder en nyckelbaserad autentisering kontrollerar du att nyckeln du använder är samma som du angav för [Adobe kundtjänst](https://helpx.adobe.com/se/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)-teamet för instanskonfigurationen.
 1. Om du använder FileZilla eller ett motsvarande FTP-verktyg anger du anslutningsloggarna i supportbiljetten.
 
 ## Felet &quot;Det gick inte att matcha värdnamnet&quot;
@@ -121,7 +121,7 @@ Det här felet inträffar när du försöker ansluta FTP-servern från ett arbet
 
 Det här felet indikerar att FTP-serverns domännamn inte kunde matchas korrekt. Så här felsöker du:
 
-1. Felsökning **DNS-serverkonfiguration**:
+1. Felsök **DNS-serverkonfigurationen**:
 
    1. Kontrollera om servernamnet har lagts till i den lokala DNS-servern.
    1. Om ja, kör följande kommando på Adobe Campaign-servern för att hämta IP-adressen:
@@ -130,10 +130,10 @@ Det här felet indikerar att FTP-serverns domännamn inte kunde matchas korrekt.
 
       Detta bekräftar att FTP-servern fungerar och kan nås från Adobe Campaign programserver.
 
-1. Felsökning **sessionsloggar**:
+1. Felsök **sessionsloggar**:
 
-   1. Dubbelklicka på [Filöverföring](../../workflow/using/file-transfer.md) aktivitet.
-   1. Gå till **[!UICONTROL File Transfer]** tabbtangenten och klicka sedan på **[!UICONTROL Advanced Parameters]**.
+   1. Dubbelklicka på aktiviteten [Filöverföring](../../workflow/using/file-transfer.md) i arbetsflödet.
+   1. Gå till fliken **[!UICONTROL File Transfer]** och klicka sedan på **[!UICONTROL Advanced Parameters]**.
    1. Markera alternativet **[!UICONTROL Display the session logs]**.
 
       ![](assets/sftp-error-display-logs.png)
@@ -144,7 +144,7 @@ Det här felet indikerar att FTP-serverns domännamn inte kunde matchas korrekt.
 
    Annars validera:
 
-   * Lösenordet innehåller inte `@` tecken. Anslutningen misslyckas om det finns en `@` i lösenordet.
+   * Lösenordet innehåller inte tecknet `@`. Anslutningen misslyckas om det finns ett `@`-tecken i lösenordet.
    * Det finns inga brandväggsproblem som kan hindra kommunikationen mellan Adobe Campaign programserver och SFTP-server.
    * Kör spårnings- och telnet-kommandon från kampanjservern till programsviten för att se om det finns några anslutningsproblem.
    * Det finns inga problem med kommunikationsprotokoll.

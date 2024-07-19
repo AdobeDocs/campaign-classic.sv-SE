@@ -25,11 +25,11 @@ Java Development Kit, eller JDK, är ett programutvecklingspaket. Det är den gr
 
 Den dynamiska webbsidesgeneratorn använder JSP-teknik. För detta ingår en Tomcat-motor (från Apache) i programmet. Det kräver ett Java Development Kit (JDK) som är installerat på alla servrar där Adobe Campaign-programmet är installerat.
 
-Du måste först installera en JDK på de datorer där du vill köra Adobe Campaign-programservern (**nlserver web** eftersom den innehåller en serverbehållare, Apache Tomcat, som används för att generera dynamiska webbsidor (rapporter, webbformulär osv.).
+Du måste först installera en JDK på de datorer där du vill köra Adobe Campaign-programservern (**nlserver web** -processen) eftersom den innehåller en serverbehållare, Apache Tomcat, som används för att generera dynamiska webbsidor (rapporter, webbformulär osv.).
 
-Ansökan har godkänts för Java Development Kit (JDK) som utvecklats av Oraclet samt för **OpenJDK**.
+Programmet har godkänts för Java Development Kit (JDK) som utvecklats av Oraclet samt för **OpenJDK**.
 
-Versionerna som stöds finns i Campaign [Kompatibilitetsmatris](../../rn/using/compatibility-matrix.md).
+Versionerna som stöds beskrivs i Campaign [Kompatibilitetsmatrisen](../../rn/using/compatibility-matrix.md).
 
 
 >[!AVAILABILITY]
@@ -47,11 +47,11 @@ När du installerar och uppgraderar ditt Java Development Kit bör du följa fö
 
 * När du installerar JDK krävs ingen integration med webbläsarna.
 
-* På en dator som bara kör leveransagenter (**nlserver mta** process) eller arbetsflödesservern (**nlserver wfserver** ) krävs inte installation av JDK.
+* På en dator som bara kör leveransagenter (**nlserver mta** process) eller arbetsflödesservern (**nlserver wfserver** process) krävs inte installation av JDK.
 
 * När du uppgraderar din Java-version måste du först avinstallera den tidigare versionen. Båda versionerna av Java som är installerade på samma dator kan orsaka konflikter.
 
-  Som lokal kund kan du kontrollera `LD_LIBRARY_PATH` [miljövariabel](installing-packages-with-linux.md#environment-variables) är inställd på den senaste versionen (t.ex. java1). Om den är inställd på en tidigare version (t.ex. Java8) behöver uppdateras. För JDK 11 är sökvägen till JDK-bibliotek `/usr/lib/jvm/java-11-openjdk-amd64/lib`.
+  Som lokal kund kan du kontrollera att `LD_LIBRARY_PATH` [miljövariabeln](installing-packages-with-linux.md#environment-variables) är inställd på den senaste versionen (till exempel. java1). Om den är inställd på en tidigare version (t.ex. Java8) behöver uppdateras. För JDK 11 är sökvägen till JDK-bibliotek `/usr/lib/jvm/java-11-openjdk-amd64/lib`.
 
 
 ### Installationssteg
@@ -85,9 +85,9 @@ dnf install java-11-openjdk-headless
 
 Du kan använda Adobe Campaign för att exportera rapporter till Microsoft Excel och Adobe PDF.
 
-* För Microsoft Excel-formatet använder Adobe Campaign **LibreOffice**.
+* För Microsoft Excel-formatet är Adobe Campaign beroende av **LibraryOffice**.
 
-* För Adobe PDF-formatet använder Adobe Campaign **PhantomJS** konverterare. PhantomJs ingår i fabrikspaketet och LibreOffice måste vara installerat på de datorer som Adobe Campaign-programservern körs på (**nlserver web** -processen).
+* För Adobe PDF-formatet använder Adobe Campaign konverteraren **PhantomJS**. PhantomJs ingår i fabrikspaketet och LibreOffice måste vara installerat på de datorer som Adobe Campaign-programservern körs på (**nlserver web** -processen).
 
 >[!NOTE]
 >

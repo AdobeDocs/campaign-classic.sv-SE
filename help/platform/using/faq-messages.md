@@ -97,7 +97,7 @@ För varje URL i meddelandet kan du till exempel välja om du vill aktivera spå
 
 ### Var kan jag komma åt leverans- och spårningsloggar? {#where-can-i-access-delivery-and-tracking-logs-}
 
-Lär dig spåra leveranser och förstå mottagarnas beteende [från den här sidan](../../delivery/using/delivery-dashboard.md).
+Lär dig spåra dina leveranser och förstå mottagarnas beteende [från den här sidan](../../delivery/using/delivery-dashboard.md).
 
 ### Var kan jag få leveransrapporter? {#where-can-i-get-delivery-reports-}
 

@@ -25,7 +25,7 @@ När en leverans har skickats visar kontrollpanelen en status som gör att du ka
 
 ![](assets/delivery-status.png)
 
-Mer information om olika leveransfel som du kan råka ut för och hur du löser dem finns i [den här sidan](understanding-delivery-failures.md).
+Mer information om olika leveransfel som du kan träffa på och hur du löser dem finns på [den här sidan](understanding-delivery-failures.md).
 
 **Relaterade ämnen:**
 
@@ -38,14 +38,14 @@ Mer information om olika leveransfel som du kan råka ut för och hur du löser 
 <table> 
  <thead> 
   <tr> 
-   <th> Status<br /> </th> 
+   <th> Status <br /> </th> 
    <th> Definitioner och lösningar<br /> </th> 
   </tr> 
  </thead> 
  <tbody> 
   <tr> 
-   <td> Skickat<br /> </td> 
-   <td> Leveransen skickades korrekt till meddelandeleverantören (men mottagaren tog inte nödvändigtvis emot den).<br /> </td> 
+   <td> Skickat <br /> </td> 
+   <td> Leveransen skickades korrekt till meddelandeleverantören (men mottagaren tog inte emot den).<br /> </td> 
   </tr> 
   <tr> 
    <td> Ignorerad<br /> </td> 
@@ -64,38 +64,38 @@ Mer information om olika leveransfel som du kan råka ut för och hur du löser 
    <td> Leveransen har tagits med i beräkningen av servern (MTA) men har inte bearbetats.<br /> </td> 
   </tr>  
   <tr> 
-   <td> Leveransen avbröts<br /> </td> 
+   <td> Leveransen har avbrutits <br /> </td> 
    <td> Leveransen avbröts av en operator.<br /> </td> 
   </tr> 
   <tr> 
-   <td> Tjänsteleverantören har tagit hänsyn till<br /> </td> 
-   <td> SMS-tjänstleverantören tog emot leveransen.<br /> För värdbaserade eller hybridinstallationer, om du har uppgraderat till <a href="sending-with-enhanced-mta.md" target="_blank">Förbättrad MTA</a>, vidarebefordrades meddelandet från Campaign till det förbättrade MTA-avtalet.</td> 
+   <td> Tjänsteleverantören <br /> har tagit hänsyn till </td> 
+   <td> SMS-tjänstleverantören tog emot leveransen.<br /> Om du har uppgraderat till <a href="sending-with-enhanced-mta.md" target="_blank">Förbättrat MTA</a> för värdbaserade eller hybridbaserade installationer vidarebefordrades meddelandet från Campaign till Förbättrat MTA.</td> 
   </tr> 
   <tr> 
-   <td> Mottaget på mobilen<br /> </td> 
+   <td> Mottaget på mobilen <br /> </td> 
    <td> Mottagaren tog emot SMS på sin mobila enhet.<br /> </td> 
   </tr>
   <tr> 
-   <td> Skickat till tjänsteleverantören<br /> </td> 
+   <td> Skickat till tjänstleverantören <br /> </td> 
    <td> Leveransen skickades till SMS-tjänstleverantören men har inte tagits emot än.<br />
    </td> 
   </tr> 
   <tr> 
-   <td> Förberedd<br /> </td> 
-   <td> Mellanliggande status används endast för externa anslutningar som mobilkanalen. Den följer statusen Väntande och är den externa kopplingen som avgör följande status.<br /> </td> 
+   <td> Förberedd <br /> </td> 
+   <td> Mellanliggande status används endast för externa anslutningar som mobilkanalen. Det följer statusen Väntande och är den externa kopplingen som avgör följande status.<br /> </td> 
   </tr> 
  </tbody> 
 </table>
 
-Läs mer om hur du optimerar leveransen av dina Adobe Campaign-mejl på [det här avsnittet](about-deliverability.md). En djupdykning i leveransförmågan finns i [Adobe Deliverability Best Practice Guide](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html?lang=sv).
+Mer information om hur du optimerar leveransen av dina Adobe Campaign-e-postmeddelanden finns i [det här avsnittet](about-deliverability.md). Mer information om leveransbarhet finns i [Adobe Deliverability Best Practice Guide](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html?lang=sv).
 
 ## Väntande status {#pending-status}
 
-När du har bekräftat leveransen ser du att leveransstatus är **[!UICONTROL Pending]**. Den här statusen innebär att körningsprocessen väntar på att vissa resurser ska vara tillgängliga.
+När du har bekräftat leveransen kan du se att leveransstatus är **[!UICONTROL Pending]**. Den här statusen innebär att körningsprocessen väntar på att vissa resurser ska vara tillgängliga.
 
-The **[!UICONTROL Pending]** status kan först innebära att leveransen har schemalagts och väntar tills det angivna datumet. Mer information finns i [Leveransplanering](steps-sending-the-delivery.md#scheduling-the-delivery-sending) -avsnitt.
+Statusen **[!UICONTROL Pending]** kan först innebära att din leverans har schemalagts och väntar tills det angivna datumet. Mer information finns i avsnittet [Leveransplanering](steps-sending-the-delivery.md#scheduling-the-delivery-sending).
 
-Om leveransen inte skickas och dess status kvarstår **[!UICONTROL Pending]** kan det vara resultatet av:
+Om leveransen inte skickas och dess status är **[!UICONTROL Pending]** kan det bero på:
 
 * MTA (Message Transfer Agent), som kör moduler och processer på leveransservern och som hanterar e-postutskick, kanske inte har startats eller behöver startas om.
 
@@ -103,9 +103,9 @@ Om leveransen inte skickas och dess status kvarstår **[!UICONTROL Pending]** ka
 
   >[!NOTE]
   >
-  >Den här åtgärden kan utföras med en **lokal** eller **hybrid** värdmodell med åtkomst till Campaign-servern (se [värdmodeller](../../installation/using/hosting-models.md)).
+  >Den här åtgärden kan utföras med en **lokal** - eller **hybridvärdmodell** med åtkomst till Campaign-servern (se [värdmodeller](../../installation/using/hosting-models.md)).
 
-   1. Kontrollera att `mta@<instance>` -moduler startas på dina MTA-servrar.
+   1. Kontrollera att dina `mta@<instance>`-moduler har startats på dina MTA-servrar.
 
       ```
       nlserver pdump
@@ -127,13 +127,13 @@ Om leveransen inte skickas och dess status kvarstår **[!UICONTROL Pending]** ka
 
 * Leveransen kan ha en tillhörighet som inte är konfigurerad på den sändande servern.
 
-  I det här fallet kontrollerar du konfigurationen för trafikhanteringen (IP-tillhörighet) och använder **[!UICONTROL Managing affinities with IP addresses]** fält för att länka leveranser till den MTA som hanterar tillhörigheten. Mer information om tillhörigheter finns i [det här avsnittet](../../installation/using/configure-delivery-settings.md).
+  I det här fallet kontrollerar du konfigurationen för trafikhanteringen (IP-tillhörighet) och använder fältet **[!UICONTROL Managing affinities with IP addresses]** för att länka leveranser till den MTA som hanterar tillhörigheten. Mer information om tillhörigheter finns i [det här avsnittet](../../installation/using/configure-delivery-settings.md).
 
 * När för många kampanjer körs förblir leveransstatusen Väntande.
 
-  Gränsen för samtidiga kampanjer definieras i **[!UICONTROL NmsOperation_LimitConcurrency]** alternativ. Standardvärdet är 10.
+  Gränsen för samtidiga kampanjer har definierats i alternativet **[!UICONTROL NmsOperation_LimitConcurrency]**. Standardvärdet är 10.
 
-  Läs mer om alternativen i [den här sidan](../../installation/using/configuring-campaign-options.md).
+  Läs mer om alternativen på [den här sidan](../../installation/using/configuring-campaign-options.md).
 
 
 **Relaterade ämnen:**

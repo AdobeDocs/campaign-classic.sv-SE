@@ -30,11 +30,11 @@ De flesta data finns i databasen. Detta motsvarar 99 % av den information som sk
 
 Filerna är uppdelade i flera kategorier:
 
-* Konfigurationsfiler, lagrade i **nl6/conf** kan du snabbt konfigurera om Adobe Campaign.
+* Konfigurationsfiler som lagras i **nl6/conf** gör att du snabbt kan konfigurera om Adobe Campaign.
 
-* Omdirigeringsfiler, lagrade i  **nl6/var/`<instance-name>`/redir**, finns på spårningsservrarna (kallas ofta för frontservrar) och innehåller alla tidigare kampanjomdirigeringar. De används fortfarande av tidigare kampanjer.
+* Omdirigeringsfiler, som lagras i **nl6/var/`<instance-name>`/redir**, finns på spårningsservrarna (kallas ofta för &quot;front&quot;) och innehåller alla tidigare kampanjomdirigeringar. De används fortfarande av tidigare kampanjer.
 
-* Loggfiler, lagrade i **nl6/var/`<instance-name>`/log**, kan användas för att spåra problem.
+* Loggfiler som lagras i **nl6/var/`<instance-name>`/log** kan användas för att spåra problem.
 
 Kataloger som ska säkerhetskopieras är därför:
 

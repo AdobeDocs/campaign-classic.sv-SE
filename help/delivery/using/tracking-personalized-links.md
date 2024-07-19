@@ -24,9 +24,9 @@ Med JavaScript i e-postinnehåll (HTML eller Text) kan du generera och skicka dy
 
 Du kan lägga till specifika förbearbetningsinstruktioner för att skripta URL:en och spåra den. [Läs mer](pre-processing-instructions.md)
 
-Adobe Campaign bäddar in [Tidy](https://www.html-tidy.org/) för att analysera HTML-källan och identifiera mönstret. Här listas alla URL:er för innehållet så att de kan spåras individuellt. Adobe Campaign använder Tidy igen för att ersätta URL:en (`http://myurl.com`) med en URL som pekar på Adobe Campaign omdirigeringsserver.
+För spårningsidentifiering bäddar Adobe Campaign in [Tidy](https://www.html-tidy.org/) för att tolka HTML-källan och identifiera mönstret. Här listas alla URL:er för innehållet så att de kan spåras individuellt. Adobe Campaign använder Tidy igen för att ersätta URL:en (`http://myurl.com`) med en URL som pekar på Adobe Campaign omdirigeringsserver.
 
-I det ursprungliga innehållet: `http://myurl.com/a.php?name=<%=escapeUrl(recipient.lastName)%>` ersätts för en viss mottagare med `http://emailing.customer.com/r/?id=h617791,71ffa3,71ffa8&p1=CustomerName`
+I det ursprungliga innehållet ersätts till exempel `http://myurl.com/a.php?name=<%=escapeUrl(recipient.lastName)%>` för en viss mottagare med: `http://emailing.customer.com/r/?id=h617791,71ffa3,71ffa8&p1=CustomerName`
 
 Var:
 

@@ -16,12 +16,12 @@ ht-degree: 0%
 
 # Lista med alternativ för Campaign Classic{#configuring-campaign-options}
 
-The **[!UICONTROL Administration / Platform / Options]** Med -noden kan du konfigurera Adobe Campaign-alternativ. Vissa av dem är inbyggda när du installerar Campaign och andra kan läggas till manuellt vid behov. Vilka alternativ som är tillgängliga varierar beroende på vilka paket som installeras med instansen.
+Med noden **[!UICONTROL Administration / Platform / Options]** kan du konfigurera Adobe Campaign-alternativ. Vissa av dem är inbyggda när du installerar Campaign och andra kan läggas till manuellt vid behov. Vilka alternativ som är tillgängliga varierar beroende på vilka paket som installeras med instansen.
 
 
 >[!CAUTION]
 >
->* Alternativ som inte visas på den här sidan är bara interna och **får inte ändras**.
+>* Alternativ som inte finns med på den här sidan är bara interna och **får inte ändras**.
 >
 >* Det går endast att ändra eller uppdatera Adobe Campaign-alternativ med expertanvändare.
 
@@ -37,11 +37,11 @@ The **[!UICONTROL Administration / Platform / Options]** Med -noden kan du konfi
  <tbody> 
   <tr> 
    <td> <span class="uicontrol">Deliverability_LastBroadLogMsgDate</span> <br /> </td> 
-   <td> Datum för den senaste bredaLogMsg som hämtats från leveransinstansen.<br /> </td> 
+   <td> Datum för det senaste bredaLogMsg-objektet som har hämtats från leveransinstansen.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">Deliverability_LastBroadLogMsgSent</span> <br /> </td> 
-   <td> Datum för den senaste bredaLogMsg som skickades till slutprodukten.<br /> </td> 
+   <td> Datum för det senaste bredaLogMsg-objektet som skickats till leveransinstansen.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">DmRendering_cuid</span> <br /> </td> 
@@ -49,7 +49,7 @@ The **[!UICONTROL Administration / Platform / Options]** Med -noden kan du konfi
   </tr> 
   <tr> 
    <td> <span class="uicontrol">DmRendering_SeedTargets</span> <br /> </td> 
-   <td> Lista med scheman som du vill använda testadresser för inkorgsåtergivning. (elementnamn avgränsas med kommatecken) T.ex.: custom_nms_receive.<br /> </td> 
+   <td> Lista med scheman som du vill använda testadresser för inkorgsåtergivning. (elementnamn avgränsas med kommatecken) T.ex.: custom_nms_ecified.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">EMTA_BCC_ADDRESS</span> </td> 
@@ -64,7 +64,7 @@ The **[!UICONTROL Administration / Platform / Options]** Med -noden kan du konfi
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsBilling_MainActionThreshold</span> <br /> </td> 
-   <td> Minsta antal mottagare för att en leverans ska anses vara den viktigaste i faktureringsrapporten.<br /> </td> 
+   <td> Minsta antal mottagare för att en leverans ska betraktas som den viktigaste i faktureringsrapporten.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsBroadcast_DefaultProvider</span> <br /> </td> 
@@ -72,11 +72,11 @@ The **[!UICONTROL Administration / Platform / Options]** Med -noden kan du konfi
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsBroadcast_LogsPerTransac</span> <br /> </td> 
-   <td> Minimal batchstorlek (antal rader) för infogning av bredaLogs under en leveransberedning.<br /> </td> 
+   <td> Minimal batchstorlek (antal rader) för infogning av bredaLogs under en leveransförberedelse.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsBroadcast_MaxDelayPerTransac</span> <br /> </td> 
-   <td> Gräns för batchvaraktighet (antal millisekunder) under vilket batchstorleken för infogning av bredaLogs dubbleras under en leveransberedning.<br /> </td> 
+   <td> Tröskelvärde för batchvaraktighet (antal millisekunder) under vilket batchstorleken för infogning av bredaLogs dubbleras under en leveransförberedelse.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsBroadcast_MidAnalyzeBatchSize</span> <br /> </td> 
@@ -112,11 +112,11 @@ The **[!UICONTROL Administration / Platform / Options]** Med -noden kan du konfi
   </tr> 
  <tr> 
    <td> <span class="uicontrol">NmsDelivery_MaxDownloadedImageSize</span> <br /> </td> 
-   <td> Här kan du ange den största tillåtna storleken (i byte) för en bild som hämtats från en anpassad URL och bifogats till ett e-postmeddelande. Standardvärdet är 100 000 byte (100 kB). När du skickar ett korrektur och hämtar bilden/bilderna för att bearbeta e-postmeddelandet, om storleken på en bild överskrider det här värdet eller om det uppstår ett hämtningsproblem, visas ett fel i leveransloggarna och korrekturleveransen misslyckas.<br /> </td> 
+   <td> Här kan du ange den största tillåtna storleken (i byte) för en bild som hämtats från en anpassad URL och bifogats till ett e-postmeddelande. Standardvärdet är 100 000 byte (100 kB). När du skickar ett korrektur och hämtar bilden/bilderna för att bearbeta e-postmeddelandet, om storleken på en bild överskrider det här värdet eller om det finns ett hämtningsproblem, visas ett fel i leveransloggarna och korrekturleveransen misslyckas.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsDelivery_MaxRecommendedAttachments</span> <br /> </td> 
-   <td> Gör att du kan ange ett maximalt antal bilagor i en e-postmall eller transaktionsmall. Om det här värdet överskrids visas en varning i leveransanalysloggarna eller när du publicerar e-postmallen för transaktioner. Standardvärdet är 1 bilaga.<br /> </td> 
+   <td> Gör att du kan ange ett maximalt antal bilagor i en e-postmall eller transaktionsmall. Om det här värdet överskrids visas en varning i leveransanalysloggarna eller när du publicerar e-postmallen för transaktioner. Standardvärdet är 1 bifogad fil.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsDelivery_MaxRetry</span> <br /> </td> 
@@ -136,7 +136,7 @@ The **[!UICONTROL Administration / Platform / Options]** Med -noden kan du konfi
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsEmail_DefaultErrorAddr</span> <br /> </td> 
-   <td> Standardadressen för felmeddelanden på instansnivå som används för e-postleverans om den lämnas tom av användaren.<br /> </td> 
+   <td> E-postadressen för standardfelmeddelandet på instansnivå som används för e-postleverans om den lämnas tom av användaren.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsEmail_DefaultFromAddr</span> <br /> </td> 
@@ -148,19 +148,19 @@ The **[!UICONTROL Administration / Platform / Options]** Med -noden kan du konfi
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsEmail_ExpOrganization</span> <br /> </td> 
-   <td> Kundens namn. Används i vissa varningsmeddelanden som visas för mottagarna.<br /> "Du får det här meddelandet eftersom du har varit i kontakt med "Organisation" eller ett närstående företag. Att inte längre ta emot meddelanden från "Organisation"<br /> </td> 
+   <td> Kundens namn. Används i vissa varningsmeddelanden som visas för mottagarna.<br /> "Du får det här meddelandet eftersom du har varit i kontakt med "Organisation" eller ett anknutet företag. Så här tar du inte längre emot meddelanden från "Organisation"<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsEmail_FromName</span> <br /> </td> 
-   <td> E-postetiketten"from" som standard på instansnivå används för e-postleverans om den lämnas tom av användaren.<br /> </td> 
+   <td> E-postetiketten 'from' som standard på instansnivå används för e-postleverans om den lämnas tom av användaren.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsEmail_ReplyToName</span> <br /> </td> 
-   <td> Standardetiketten för e-post som svarar på instansnivå som används för e-postleverans om den lämnas tom av användaren.<br /> </td> 
+   <td> E-postetiketten för svar på instansnivå som används för e-postleverans om den lämnas tom av användaren.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsEmail_RetryCount</span> <br /> </td> 
-   <td> Period mellan två försök med ett e-postmeddelande (i sekunder).<br /> </td> 
+   <td> Period mellan två försök av ett e-postmeddelande (i sekunder).<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsEmail_RetryPeriod</span> <br /> </td> 
@@ -168,15 +168,15 @@ The **[!UICONTROL Administration / Platform / Options]** Med -noden kan du konfi
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsForecast_MsgWeightFormula</span> <br /> </td> 
-   <td> Formel som används för att beräkna viktningen av ett meddelande för en preliminär leverans.<br /> </td> 
+   <td> Formel som används för att beräkna viktningen för ett meddelande för en preliminär leverans.<br /> </td> 
   </tr> 
   <tr> 
-   <td> <span class="uicontrol">NmsInmail_AllowlistEmails</span> <br /> </td> 
+   <td> <span class="uicontrol">NmsInmail_allowListEmails</span> <br /> </td> 
    <td> Lista över auktoriserade e-postadresser för vidarebefordran (från modulen för inkommande e-postbearbetning). Adresserna måste avgränsas med kommatecken (eller * för att tillåta alla). Exempel: xyz@abc.com,pqr@abc.com.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsLine_AESKey</span> <br /> </td> 
-   <td> AES-nyckeln som används i serverleten 'lineImage' för att koda URL:er (LINE-kanal).<br /> </td> 
+   <td> AES-nyckeln som används i serverleten lineImage för att koda URL:er (LINE-kanal).<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsNPAI_EmailMaxError</span> <br /> </td> 
@@ -184,15 +184,15 @@ The **[!UICONTROL Administration / Platform / Options]** Med -noden kan du konfi
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsNPAI_EmailSignificantErrorDelay</span> <br /> </td> 
-   <td> I kanalen "email"(use as default): Minimal tid som har tillbringats sedan det föregående SOFT-felet, innan ett nytt SOFT-fel har beaktats.<br /> </td> 
+   <td> I kanalen "email" (använd som standard): Minimal tid sedan föregående SOFT-fel inträffade, innan ett nytt SOFT-fel togs med i beräkningen.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsNPAI_MobileMaxError</span> <br /> </td> 
-   <td> I kanalen "mobile": Maximalt antal fel som accepteras, för SOFT-fel under sändning innan mottagaren sätts i karantän.<br /> </td> 
+   <td> I kanalen "mobile": Maximalt antal fel som accepteras för SOFT-fel under sändning innan mottagaren sätts i karantän.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsNPAI_MobileSignificantErrorDelay</span> <br /> </td> 
-   <td> I kanalen "mobile": Den minimala tid som har använts sedan det föregående SOFT-felet, innan ett nytt SOFT-fel har beaktats.<br /> </td> 
+   <td> I kanalen "mobile": Den minimala tid som har använts sedan föregående SOFT-fel refererades, innan ett nytt SOFT-fel har beaktats.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsMidSourcing_LogsPeriodHour</span> <br /> </td>
@@ -200,7 +200,7 @@ The **[!UICONTROL Administration / Platform / Options]** Med -noden kan du konfi
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsMidSourcing_PrepareFlow</span> <br /> </td> 
-   <td> Maximalt antal anrop i MidSourcing-sessionen som kan köras parallellt (3 som standard).<br /> </td> 
+   <td> Maximalt antal anrop i MidSourcing-sessionen, som kan köras parallellt (3 som standard).<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsMTA_Alert_Delay</span> <br /> </td> 
@@ -208,7 +208,7 @@ The **[!UICONTROL Administration / Platform / Options]** Med -noden kan du konfi
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsOperation_DeliveryPreparationWindow</span> <br /> </td> 
-   <td><p>Det här alternativet används av <span class="uicontrol"><a href="../../workflow/using/about-technical-workflows.md">operationMgt</a></span> tekniskt arbetsflöde när antalet pågående leveranser räknas.</p>Det gör att du kan definiera antalet dagar över vilka leveranser med inkonsekvent status ska uteslutas från antalet pågående leveranser.</p><p>Som standard är värdet 7, vilket innebär att inkonsekventa leveranser som är äldre än 7 dagar kommer att exkluderas.</p></td> 
+   <td><p>Det här alternativet används av det tekniska arbetsflödet <span class="uicontrol"><a href="../../workflow/using/about-technical-workflows.md">operationMgt</a></span> när antalet pågående leveranser räknas.</p>Det gör att du kan definiera antalet dagar över vilka leveranser med inkonsekvent status ska uteslutas från antalet pågående leveranser.</p><p>Som standard är värdet 7, vilket innebär att inkonsekventa leveranser som är äldre än 7 dagar kommer att exkluderas.</p></td> 
   </tr>
   <tr> 
    <td> <span class="uicontrol">NmsPaper_SenderLine1</span> <br /> </td> 
@@ -220,7 +220,7 @@ The **[!UICONTROL Administration / Platform / Options]** Med -noden kan du konfi
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsPaper_SenderLine4</span> <br /> </td> 
-   <td> Rad 4 på avsändarens adress.<br /> </td> 
+   <td> Rad 4 i avsändarens adress.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsPaper_SenderLine6</span> <br /> </td> 
@@ -228,11 +228,11 @@ The **[!UICONTROL Administration / Platform / Options]** Med -noden kan du konfi
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsPaper_SenderLine7</span> <br /> </td> 
-   <td> Rad 7 på avsändarens adress.<br /> </td> 
+   <td> Rad 7 i avsändarens adress.<br /> </td> 
   </tr>
   <tr> 
    <td> <span class="uicontrol">NmsServer_MirrorPageUrl</span> <br /> </td> 
-   <td> URL:en för spegelsidservern (ska som standard vara identisk med NmsTracking_ServerUrl).<br /> Det är standardvärdet för e-postleveranser när URL:en inte har angetts i routningsdefinitionen.<br /> </td> 
+   <td> URL:en för spegelsidservern (ska som standard vara identisk med NmsTracking_ServerUrl).<br /> Det är standardvärdet för e-postleveranser när URL inte har angetts i routningsdefinitionen.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsSMS_Priority</span> <br /> </td> 
@@ -244,27 +244,27 @@ The **[!UICONTROL Administration / Platform / Options]** Med -noden kan du konfi
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsSMS_RetryPeriod</span> <br /> </td> 
-   <td> Den period under vilken nya försök med SMS-meddelanden kommer att utföras.<br /> </td> 
+   <td> Period under vilken nya försök med SMS-meddelanden utförs.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsUserAgentStats_LastConsolidation</span> <br /> </td> 
-   <td> Senaste konsolideringsdatum för <span class="uicontrol">NmsUserAgent</span> statistik.<br /> </td> 
+   <td> Senaste konsolideringsdatum för <span class="uicontrol">NmsUserAgent</span>-statistik.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsWebSegments_LastStates</span> <br /> </td> 
-   <td> Namnet på det alternativ som innehåller webbsegmenten och deras lägen.<br /> </td> 
+   <td> Namnet på alternativet som innehåller webbsegmenten och deras lägen.<br /> </td> 
   </tr> 
   <tr> 
-   <td> <span class="uicontrol">XtkBarcode_SpecialChar</span> <br /> </td> 
+   <td> <span class="uicontrol">xtkBarcode_SpecialChar</span> <br /> </td> 
    <td> Aktivera/inaktivera stöd för specialtecken för Code128.<br /> </td> 
   </tr> 
   <tr> 
-   <td> <span class="uicontrol">XTKEmail_Characters</span> <br /> </td> 
+   <td> <span class="uicontrol">xtkEmail_Characters</span> <br /> </td> 
    <td> Giltiga tecken för en e-postadress.<br /> </td> 
   </tr> 
   <tr> 
-   <td> <span class="uicontrol">XtkSecurity_Restrict_EditXML</span> </td> 
-   <td> Lägg till det här alternativet med värdet "0" för att inaktivera XML-koden för leveransutgåvan (högerklicka / <span class="uicontrol">Redigera XML-källa</span> eller <span class="uicontrol">CTRL+F4</span> genväg).<br /> </td> 
+   <td> <span class="uicontrol">xtkSecurity_Restrict_EditXML</span> </td> 
+   <td> Lägg till det här alternativet med värdet "0" för att inaktivera XML-koden för leveransutgåvan (högerklicka / <span class="uicontrol">Redigera XML-källa</span> eller genvägen <span class="uicontrol">CTRL + F4</span>).<br /> </td> 
   </tr>  
  </tbody> 
 </table>
@@ -295,7 +295,7 @@ The **[!UICONTROL Administration / Platform / Options]** Med -noden kan du konfi
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsDelivery_DefaultIgnoredImage</span> <br /> </td> 
-   <td> Lista med URL-masker för de bilder som hoppats över under överföringen.<br /> </td> 
+   <td> Lista över URL-masker för de bilder som hoppades över under överföringen.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsDelivery_ImagePublishing</span> </td> 
@@ -303,19 +303,19 @@ The **[!UICONTROL Administration / Platform / Options]** Med -noden kan du konfi
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsDelivery_ImageSubDirectory</span> <br /> </td> 
-   <td> Mappen där bilderna på servern ska lagras.<br /> </td> 
+   <td> Mappen som bilderna på servern ska lagras i.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsServer_LogoPath</span> <br /> </td> 
-   <td> Blanksteg för att visa logotyper.<br /> </td> 
+   <td> Utrymme för att visa logotyper.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NcmPublishingDir</span> <br /> </td> 
    <td> Rotmapp för publikationer.<br /> Mer information om generering av HTML och textinnehåll finns i <a href="../../delivery/using/using-a-content-template.md">det här avsnittet</a>.<br /> </td> 
   </tr> 
   <tr> 
-   <td> <span class="uicontrol">XtkImageUrl</span> <br /> </td> 
-   <td> Gör att du kan definiera på vilken server bilderna som används i leveranserna ska lagras så att webbläsaren kan hämta dem.<br /> För byggversioner &lt;= 5098 använder vi URL:en för bilderna som överfördes till instansen.<br /> För byggversioner &gt; 5098 använder vi i stället leveransens offentliga URL eller <span class="uicontrol">XtkFileRes_Public_URL</span> alternativets URL.<br /> </td> 
+   <td> <span class="uicontrol">xtkImageUrl</span> <br /> </td> 
+   <td> Gör att du kan definiera på vilken server bilderna som används i leveranserna ska lagras så att webbläsaren kan hämta dem.<br /> För byggversioner &lt;= 5098 använder vi URL:en för bilderna som överfördes till instansen.<br /> För byggversioner &gt; 5098 använder vi i stället leveransens offentliga URL eller URL:en för alternativet <span class="uicontrol">XtkFileRes_Public_URL</span>.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsDelivery_MediaInstance</span> <br /> </td> 
@@ -323,7 +323,7 @@ The **[!UICONTROL Administration / Platform / Options]** Med -noden kan du konfi
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsDelivery_MediaPassword</span> <br /> </td> 
-   <td> Här kan du konfigurera lösenordet för bildöverföring.<br /> </td> 
+   <td> Gör att du kan konfigurera lösenordet för bildöverföring.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsDelivery_MediaServers</span> <br /> </td> 
@@ -334,7 +334,7 @@ The **[!UICONTROL Administration / Platform / Options]** Med -noden kan du konfi
    <td> Standardgiltighetslängd för onlineresurser för en leverans (i sekunder).<br /> </td> 
   </tr> 
   <tr> 
-   <td> <span class="uicontrol">XtkFileRes_Public_URL</span> <br /> </td> 
+   <td> <span class="uicontrol">xtkFileRes_Public_URL</span> <br /> </td> 
    <td> Ny URL för offentliga resursfiler.<br /> </td> 
   </tr> 
  </tbody> 
@@ -352,7 +352,7 @@ The **[!UICONTROL Administration / Platform / Options]** Med -noden kan du konfi
  <tbody> 
   <tr> 
    <td> <span class="uicontrol">CrmMarketingActivityWindow</span> <br /> </td> 
-   <td> Marknadsföringshistorik visas för detta antal månader.<br /> </td> 
+   <td> Marknadsföringshistorik visas för det här antalet månader.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsOperation_Duration</span> <br /> </td> 
@@ -360,31 +360,31 @@ The **[!UICONTROL Administration / Platform / Options]** Med -noden kan du konfi
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsOperation_LimitConcurrency</span> <br /> </td> 
-   <td> Maximalt antal leverans-/arbetsflödes-/hypotes-/simuleringsjobb som kan bearbetas i taget, som startas av operationMgt-arbetsflödet.<br /> </td> 
+   <td> Maximalt antal leverans-/arbetsflödes-/hypotes-/simuleringsjobb som kan bearbetas i taget, startat av operationMgt-arbetsflödet.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsOperation_OperationMgtDebug</span> <br /> </td> 
-   <td> Låter dig övervaka <a href="../../workflow/using/about-technical-workflows.md">operationMgt</a> tekniskt arbetsflöde. När det är aktiverat (värdet 1) loggas körningsinformationen i arbetsflödets granskningsloggar.<br /> </td> 
+   <td> Låter dig övervaka det tekniska arbetsflödets körning för <a href="../../workflow/using/about-technical-workflows.md">operationMgt</a>. När det är aktiverat (värdet 1) loggas körningsinformationen i arbetsflödets granskningsloggar.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsOperation_TimeRange</span> <br /> </td> 
-   <td> Tidsperiod för målinriktning och extraheringsvillkor i schemalagt läge.<br /> </td> 
+   <td> Tidsperiod för mål- och extraheringsvillkor i schemalagt läge.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">Workflow_AnalysisThreshold</span> <br /> </td> 
    <td> Antal berörda poster efter vilka tabellstatistik beräknas om automatiskt.<br /> </td> 
   </tr> 
   <tr> 
-   <td> <span class="uicontrol">XtkReport_Logo</span> <br /> </td> 
+   <td> <span class="uicontrol">xtkReport_Logo</span> <br /> </td> 
    <td> Logotyp som ska visas i det övre högra hörnet av de exporterade rapporterna.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsServer_PausedWorkflowPeriod</span> <br /> </td> 
-   <td> Antal dagar mellan kontroller för pausade arbetsflöden.<br /> </td> 
+   <td> Antal dagar att vänta mellan kontroller för pausade arbetsflöden.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsCampaign_Activate_OwnerConfirmation</span> <br /> </td> 
-   <td> Aktivera leveransvalideringen av åtgärdens ägare genom att ange "1" som värde. Om du vill inaktivera det här alternativet anger du "0".<br /> </td> 
+   <td> Aktivera leveransvalideringen av åtgärdens ägare genom att ange "1" som värde. Om du vill inaktivera det här alternativet anger du 0.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsAsset_JavascriptExt</span> <br /> </td> 
@@ -405,39 +405,39 @@ The **[!UICONTROL Administration / Platform / Options]** Med -noden kan du konfi
  <tbody> 
   <tr> 
    <td> <span class="uicontrol">RestrictEditingOOTBSchema</span> <br /> </td> 
-   <td> (från och med version 21.1.3) Om 1 är valt (standardvärde) inaktiverar det här alternativet utgåvan av inbyggda scheman.<br /> </td> 
+   <td> (från och med version 21.1.3) Om 1 har valts (standardvärde) inaktiverar det här alternativet utgåva av inbyggda scheman.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">RestrictEditingOOTBJavascript</span> <br /> </td> 
-   <td> (från och med version 21.1.3) Om 1 är valt (standardvärde) inaktiverar det här alternativet utgåva av inbyggda JavaScript-koder.<br /> </td> 
+   <td> (från och med version 21.1.3) Om 1 har valts (standardvärde) inaktiverar det här alternativet utgåva av inbyggda JavaScript-koder.<br /> </td> 
   </tr> 
   <tr> 
-   <td> <span class="uicontrol">XtkAcceptOldPassword</span> <br /> </td> 
-   <td> (Kompatibilitetsläge för installation: build&gt;6000) När det aktiveras (värdet "1") tillåter det här alternativet att du använder gamla lösenord som lagras i databasen för anslutning till externa konton eller till instansen.<br /> </td> 
+   <td> <span class="uicontrol">xtkAcceptOldPassword</span> <br /> </td> 
+   <td> (Kompatibilitetsläge för installation: build&gt;6000) När det aktiveras (värdet "1") tillåter det här alternativet att gamla lösenord som lagras i databasen används för anslutning till externa konton eller till instansen.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">XtkKey</span> <br /> </td> 
    <td> Den här nyckeln används för att kryptera de flesta lösenord i databasen. (externa konton, LDAP-lösenord..).<br /> </td> 
   </tr> 
   <tr> 
-   <td> <span class="uicontrol">XTKSecurity_Allow_PrivilegeEscalation</span> <br /> </td> 
-   <td> Om 1 är markerat tillåter det här alternativet privilegieskalering i JavaScript.<br /> </td> 
+   <td> <span class="uicontrol">xtkSecurity_Allow_PrivilegeEscalation</span> <br /> </td> 
+   <td> Om 1 har valts kan det här alternativet tillåta privilegeEscalation i JavaScript.<br /> </td> 
   </tr> 
   <tr> 
-   <td> <span class="uicontrol">XTKSecurity_Disable_ControlsOnFileDownload</span> <br /> </td> 
+   <td> <span class="uicontrol">xtkSecurity_Disable_ControlsOnFileDownload</span> <br /> </td> 
    <td> Om du väljer 1 inaktiveras ACL-kontroller under en filhämtning (via fileDownload.jsp).<br /> </td> 
   </tr> 
   <tr> 
-   <td> <span class="uicontrol">XtkSecurity_Disable_JSFileSandboxing</span> <br /> </td> 
-   <td> Om du väljer 1 inaktiveras filsandlådan i Javascript.<br /> </td> 
+   <td> <span class="uicontrol">xtkSecurity_Disable_JSFileSandboxing</span> <br /> </td> 
+   <td> Om 1 väljs inaktiverar det här alternativet filsandlådan i Javascript.<br /> </td> 
   </tr> 
   <tr> 
-   <td> <span class="uicontrol">XtkSecurity_SaveOptions_AllowNonAdmin</span> <br /> </td> 
-   <td> Om värdet är true kan en auktoriserad icke-admin-operator uppdatera xtkOption-värdena via distributionsguiden.<br /> </td> 
+   <td> <span class="uicontrol">xtkSecurity_SaveOptions_AllowNonAdmin</span> <br /> </td> 
+   <td> Om värdet är "true" har en auktoriserad icke-admin-operator som uppdaterar xtkOption-värdena via distributionsguiden.<br /> </td> 
   </tr> 
   <tr> 
-   <td> <span class="uicontrol">XtkSecurity_Unsafe_DecryptString</span> <br /> </td> 
-   <td> Om 1 är markerat kan du med det här alternativet använda dekrypptString för att dekryptera vissa lösenord.<br /> </td> 
+   <td> <span class="uicontrol">xtkSecurity_Unsafe_DecryptString</span> <br /> </td> 
+   <td> Om 1 är markerat tillåter det här alternativet att dekryptera vissa lösenord med hjälp av decryptString.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">XtkTraceDeleteLogin</span> <br /> </td> 
@@ -458,10 +458,10 @@ The **[!UICONTROL Administration / Platform / Options]** Med -noden kan du konfi
  <tbody> 
   <tr> 
    <td> <span class="uicontrol">MC_EnrichmentCustomJs</span> <br /> </td> 
-   <td> JavaScript-bibliotek som ska anpassas för att berika händelser. Måste innehålla implementeringen av dessa två funktioner:<br /> 
+   <td> JavaScript-bibliotek som ska personaliseras för spännande event. Måste innehålla implementeringen av dessa två funktioner:<br /> 
     <ul> 
-     <li> <p> <span class="uicontrol">enrichRtEvents(aiEventId);</span> : aktiverar och sparar händelser i databasen (där <span class="uicontrol">aiEventId</span> motsvarar tabellen med händelser i realtid (bearbetade).</p> </li> 
-     <li> <p> <span class="uicontrol">enrichBatchEvents(aiEventId);</span> : aktiverar och sparar händelser i databasen (där <span class="uicontrol">aiEventId</span> motsvarar ID-tabellen för grupphändelser som bearbetats).</p> </li> 
+     <li> <p> <span class="uicontrol">enrichRtEvents(aiEventId);</span> : berikar och sparar händelser i databasen (där <span class="uicontrol">aiEventId</span> motsvarar tabellen med händelser i realtid som bearbetas).</p> </li> 
+     <li> <p> <span class="uicontrol">enrichBatchEvents(aiEventId);</span> : berikar och sparar händelser i databasen (där <span class="uicontrol">aiEventId</span> motsvarar ID-tabellen för grupphändelser som bearbetas).</p> </li> 
     </ul> </td> 
   </tr> 
   <tr> 
@@ -470,9 +470,9 @@ The **[!UICONTROL Administration / Platform / Options]** Med -noden kan du konfi
   </tr> 
   <tr> 
    <td> <span class="uicontrol">MC_RoutingCustomJs</span> <br /> </td> 
-   <td> JavaScript-bibliotek som ska anpassas för routningshändelser. Måste innehålla implementeringen av dessa två funktioner:<br /> 
+   <td> JavaScript-bibliotek som ska personaliseras för routningshändelser. Måste innehålla implementeringen av dessa två funktioner:<br /> 
     <ul> 
-     <li> <p> <span class="uicontrol">dispatchRtEvent(iEventId);</span> : returnerar det interna namnet på det transaktionsmeddelande som valts för att bearbeta realtidshändelsen (där <span class="uicontrol">iEventId</span> motsvarar ID:t för den bearbetade realtidshändelsen).</p> </li> 
+     <li> <p> <span class="uicontrol">dispatchRtEvent(iEventId);</span> : returnerar det interna namnet på det transaktionsmeddelande som har valts för att bearbeta realtidshändelsen (där <span class="uicontrol">iEventId</span> motsvarar ID:t för den bearbetade realtidshändelsen).</p> </li> 
      <li> <p> <span class="uicontrol">dispatchBatchEvent(iEventId);</span> : returnerar det interna namnet på det transaktionsmeddelande som har valts för att bearbeta batchhändelsen (där <span class="uicontrol">iEventId</span> motsvarar ID:t för batchhändelsen som bearbetas).</p> </li> 
     </ul> </td> 
   </tr> 
@@ -494,7 +494,7 @@ The **[!UICONTROL Administration / Platform / Options]** Med -noden kan du konfi
   </tr> 
   <tr> 
    <td> <span class="uicontrol">MC_RtEventAvgQueueAlert</span> <br /> </td> 
-   <td> Varningströskelvärde för det genomsnittliga antalet händelser i realtid som köas.<br /> </td> 
+   <td> Varningströskelvärde för det genomsnittliga antalet händelser i realtid som står i kö.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">MC_RtEventAvgQueueTimeAlert</span> <br /> </td> 
@@ -518,19 +518,19 @@ The **[!UICONTROL Administration / Platform / Options]** Med -noden kan du konfi
   </tr> 
   <tr> 
    <td> <span class="uicontrol">MC_RtEventMaxQueueAlert</span> <br /> </td> 
-   <td> Varningströskel för maximalt antal händelser i realtid som köas.<br /> </td> 
+   <td> Varningströskel för maximalt antal händelser i realtid som står i kö.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">MC_RtEventMaxQueueWarning</span> <br /> </td> 
-   <td> Varningströskel för maximalt antal händelser i realtid som köas.<br /> </td> 
+   <td> Varningströskel för maximalt antal händelser i realtid som står i kö.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">MC_RtEventMinQueueAlert</span> <br /> </td> 
-   <td> Varningströskelvärde för minsta antal händelser i realtid som köas.<br /> </td> 
+   <td> Varningströskelvärde för minsta antal realtidshändelser som står i kö.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">MC_RtEventMinQueueWarning</span> <br /> </td> 
-   <td> Varningströskel för minsta antal händelser i realtid som köas.<br /> </td> 
+   <td> Varningströskel för minsta antal realtidshändelser som köas.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">MC_RtEventQueueAlert</span> <br /> </td> 
@@ -554,7 +554,7 @@ The **[!UICONTROL Administration / Platform / Options]** Med -noden kan du konfi
   </tr> 
   <tr> 
    <td> <span class="uicontrol">MC_LastRtEventStat</span> <br /> </td> 
-   <td> Uppdatera pekaren för RtEvent-status (senaste datumet tills data hämtades).<br /> </td> 
+   <td> Uppdateringspekare för RtEvent-status (senaste datum tills data hämtades).<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsLine_MessageCenterURL</span> <br /> </td> 
@@ -628,7 +628,7 @@ The **[!UICONTROL Administration / Platform / Options]** Med -noden kan du konfi
   </tr> 
   <tr> 
    <td> <span class="uicontrol">WdbcCapabilities_AzureDw</span> <br /> </td> 
-   <td> Anslutningsalternativ för Azure SQL Datawarehouse.<br /> </td> 
+   <td> Azure SQL Datawarehouse-anslutningsalternativ.<br /> </td> 
   </tr>
    <tr> 
    <td> <span class="uicontrol">WdbcKillSessionPolicy</span> <br /> </td> 
@@ -663,50 +663,50 @@ The **[!UICONTROL Administration / Platform / Options]** Med -noden kan du konfi
   </tr> 
   <tr> 
    <td> <span class="uicontrol">WdbcUseNChar</span> <br /> </td> 
-   <td> Definieras databasens strängfält med NChar?<br /> </td> 
+   <td> Är databasens strängfält definierade med NChar?<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">WdbcUseTimeStampWithTZ</span> <br /> </td> 
    <td> Lagrar databasens datetime-fält tidszonsinformation?<br /> </td> 
   </tr> 
   <tr> 
-   <td> <span class="uicontrol">XtkDatabaseId</span> <br /> </td> 
-   <td> ID för databasen. Börjar med u för Unicode DataBase.<br /> </td> 
+   <td> <span class="uicontrol">xtkDatabaseId</span> <br /> </td> 
+   <td> ID för databasen. Börjar av 'u' för Unicode DataBase.<br /> </td> 
   </tr> 
   <tr> 
-   <td> <span class="uicontrol">XtkInstancePrefix</span> <br /> </td> 
-   <td> Prefixet läggs till i interna namn som genereras automatiskt.<br /> </td> 
+   <td> <span class="uicontrol">xtkInstancePrefix</span> <br /> </td> 
+   <td> Prefixet har lagts till i interna namn som genereras automatiskt.<br /> </td> 
   </tr> 
   <tr> 
-   <td> <span class="uicontrol">XtkQuery_Schema_LineCount</span> <br /> </td> 
-   <td> Maximalt antal resultat som returneras av en fråga i xtk:schema och xtk:srcSchema.<br /> </td> 
+   <td> <span class="uicontrol">xtkQuery_Schema_LineCount</span> <br /> </td> 
+   <td> Maximalt antal resultat som returnerats av en fråga i xtk:schema och xtk:srcSchema.<br /> </td> 
   </tr> 
   <tr> 
-   <td> <span class="uicontrol">XtkSequence_AutoGeneration</span> <br /> </td> 
+   <td> <span class="uicontrol">xtkSequence_AutoGeneration</span> <br /> </td> 
    <td> Alla anpassade scheman, som skapats efter den här tiden, med autopk="true" och utan attributet "pkSequence" får den autogenererade sekvensen "auto_ 
     &lt;schemanamespace&gt; 
-     &lt;schemaname&gt;
+     &lt;schemanamn&gt;
        _seq. 
    </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NlMigration_KeepFolderStructure</span> <br /> </td> 
-   <td> Under migreringen ordnas trädstrukturen automatiskt om baserat på de nya versionsstandarderna.<br /> Med det här alternativet kan du inaktivera automatisk migrering av navigeringsträdet. Om du använder den efter migreringen måste du ta bort föråldrade mappar, lägga till de nya mapparna och köra alla nödvändiga kontroller.<br /> 
+   <td> Under migreringen ordnas trädstrukturen automatiskt om baserat på de nya versionsstandarderna.<br /> Med det här alternativet kan du inaktivera automatisk migrering av navigeringsträdet. Om du använder den efter migreringen måste du ta bort gamla mappar, lägga till de nya mapparna och köra alla nödvändiga kontroller.<br /> 
     <ul> 
      <li> <p> <span class="uicontrol">Datatyp:</span> Heltal</p> </li> 
      <li> <p> <span class="uicontrol">Värde (text)</span> : 1 </p> </li> 
-    </ul> Det här alternativet bör endast användas om navigeringsträdet som ligger utanför rutan har genomgått för många ändringar.<br /> </td> 
+    </ul> Det här alternativet bör bara användas om navigeringsträdet som finns utanför rutan har genomgått för många ändringar.<br /> </td> 
   </tr> 
   <tr> 
-   <td> <span class="uicontrol">NmsLastErrorStatCoalesce</span> <br /> </td> 
-   <td> Senaste bearbetningsdatum för <span class="uicontrol">NmsEmailErrorStat</span> tabellrensning.<br /> </td> 
+   <td> <span class="uicontrol">NmsLastErrorStatusCoalesce</span> <br /> </td> 
+   <td> Senaste bearbetningsdatum för tabellrensningen <span class="uicontrol">NmsEmailErrorStat</span>.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">PostUpgradeLastError</span> <br /> </td> 
-   <td> Information om felet som inträffade i Podumgrade, enligt syntaxen nedan:<br /> <strong>{Build number}:{mode: pre/post/..}:{The lessThan/'greaterOrEquelThan' where error occurred + sub-step}</strong> </td> 
+   <td> Information om felet som uppstod i Poengrade, enligt syntaxen nedan:<br /> <strong>{Build number}:{mode: pre/post/..}:{The lessThan/'greaterOrEquelThan' där felet inträffade + substep}</strong> </td> 
   </tr> 
   <tr> 
-   <td> <span class="uicontrol">XtkCleanup_NoStats</span> <br /> </td> 
+   <td> <span class="uicontrol">xtkCleanup_NoStats</span> <br /> </td> 
    <td> Ange värdet "1" så att statistikuppdateringen inte utförs via rensningsarbetsflödet.<br /> </td> 
   </tr> 
  </tbody> 
@@ -724,18 +724,18 @@ The **[!UICONTROL Administration / Platform / Options]** Med -noden kan du konfi
  <tbody> 
   <tr> 
    <td> <span class="uicontrol">AEMResourceTypeFilter</span> <br /> </td> 
-   <td> Typer av AEM resurser som kan användas i Adobe Campaign. Värdena måste avgränsas med kommatecken.<br /> </td> 
+   <td> Typer av AEM resurser som kan användas i Adobe Campaign. Värden måste avgränsas med kommatecken.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">nmsPipeline_config</span> <br /> </td> 
-   <td> Gör att du kan konfigurera utlösare för Experience Cloud. Datatypen är "lång text" och måste vara i JSON-format. Se <a class="anchorLink" href="https://helpx.adobe.com/campaign/kb/triggers-and-campaign.html#PipelineoptionNmsPipelineConfig" target="_blank">Så här använder du Experience Cloud-utlösare med Adobe Campaign Classic</a>.<br /> </td> 
+   <td> Gör att du kan konfigurera utlösare för Experience Cloud. Datatypen är "lång text" och måste vara i JSON-format. Se <a class="anchorLink" href="https://helpx.adobe.com/campaign/kb/triggers-and-campaign.html#PipelineoptionNmsPipelineConfig" target="_blank">Använda Experience Cloud-utlösare med Adobe Campaign Classic</a>.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">LASTIMPORT_&lt;%=instance.internalName%&gt;_&lt;%=activityName%&gt;</span> <br /> </td> 
    <td> Det här alternativet används vid import av data från ett tredjepartssystem via en CRM-anslutning. Om du aktiverar alternativet kan du bara samla in objekt som har ändrats sedan den senaste importen. Det här alternativet måste skapas och fyllas i manuellt enligt nedan: 
     <ul> 
      <li> <p> <span class="uicontrol">Internt namn</span> : LASTIMPORT_&lt;%=instance.internalName%&gt;_&lt;%=activityName%&gt;</p> </li> 
-     <li> <p> <span class="uicontrol">Värde (fält)</span> : datum för senaste import, med åååå/MM/dd:mm:ss. </p> </li> 
+     <li> <p> <span class="uicontrol">Värde (fält)</span> : datum för den senaste importen, med formatet åååå/MM/dd hh:mm:ss. </p> </li> 
     </ul><br /> </td> 
   </tr> 
   <tr> 
@@ -760,7 +760,7 @@ The **[!UICONTROL Administration / Platform / Options]** Med -noden kan du konfi
   </tr> 
   <tr> 
    <td> <span class="uicontrol">WdbcCapabilities_Hive</span> <br /> </td> 
-   <td> Kopplingsalternativ för Hive.<br /> </td> 
+   <td> Alternativ för Hive-koppling.<br /> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -793,11 +793,11 @@ The **[!UICONTROL Administration / Platform / Options]** Med -noden kan du konfi
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsInteraction_UseDaemon</span> <br /> </td> 
-   <td> Aktivera/inaktivera asynkron skrivåtgärd ("0" för att inaktivera,"1" för att aktivera).<br /> </td> 
+   <td> Aktivera/inaktivera asynkron offert-skrivning ("0" för att inaktivera, "1" för att aktivera).<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsModule_CouponsEnabled</span> <br /> </td> 
-   <td> Gör att du kan aktivera kuponger.<br /> </td> 
+   <td> Låter dig aktivera kuponger.<br /> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -826,7 +826,7 @@ The **[!UICONTROL Administration / Platform / Options]** Med -noden kan du konfi
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsServer_LastPostUpgrade</span> <br /> </td> 
-   <td> Byggnummer för AC-instansen före den senaste uppgraderingen.<br /> </td> 
+   <td> Kontextinstansens byggnummer före den senaste uppgraderingen.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsServer_URL</span> <br /> </td> 
@@ -834,7 +834,7 @@ The **[!UICONTROL Administration / Platform / Options]** Med -noden kan du konfi
   </tr> 
   <tr> 
    <td> <span class="uicontrol">XtkPassUnknownSQLFunactionsToRDBMS</span> <br /> </td> 
-   <td> Gör att du kan fortsätta använda gamla odeklarerade SQL-funktioner efter migrering. Vi rekommenderar starkt att du inte använder det här alternativet på grund av de säkerhetsrisker det medför.<br /> </td> 
+   <td> Gör att du kan fortsätta använda gamla odeklarerade SQL-funktioner efter migrering. Vi rekommenderar att du inte använder det här alternativet på grund av säkerhetsriskerna som det medför.<br /> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -851,7 +851,7 @@ The **[!UICONTROL Administration / Platform / Options]** Med -noden kan du konfi
  <tbody> 
   <tr> 
    <td> <span class="uicontrol">NmsTracking_Available</span> <br /> </td> 
-   <td> Alternativ som gör att du kan aktivera spårning.<br /> </td> 
+   <td> Alternativ som låter dig aktivera spårning.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsTracking_ClickFormula</span> <br /> </td> 
@@ -875,7 +875,7 @@ The **[!UICONTROL Administration / Platform / Options]** Med -noden kan du konfi
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsTracking_Password</span> <br /> </td> 
-   <td> Lösenord för spårningsservern<br /> </td> 
+   <td> Lösenord för spårningsservern <br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsTracking_Pointer</span> <br /> </td> 
@@ -891,11 +891,11 @@ The **[!UICONTROL Administration / Platform / Options]** Med -noden kan du konfi
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsTracking_ServerUrlList</span> <br /> </td> 
-   <td> Lista med URL:er som används för att kontakta spårningsservrarna.<br /> </td> 
+   <td> Lista över URL:er som används för att kontakta spårningsservrarna.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsTracking_UserAgentRules</span> <br /> </td> 
-   <td> Regeluppsättning för webbläsaridentifiering.<br /> </td> 
+   <td> Regeluppsättning för identifiering av webbläsare.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsTracking_WebFormula</span> <br /> </td> 
@@ -907,7 +907,7 @@ The **[!UICONTROL Administration / Platform / Options]** Med -noden kan du konfi
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsTracking_WebTrackingMode</span> <br /> </td> 
-   <td> Här kan du definiera webbspårningsläget.<br /> </td> 
+   <td> Gör att du kan definiera webbspårningsläget.<br /> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -932,7 +932,7 @@ The **[!UICONTROL Administration / Platform / Options]** Med -noden kan du konfi
   </tr> 
   <tr> 
    <td> <span class="uicontrol">Privacy_Request_MaxErrorAllowed</span> <br /> </td> 
-   <td> Det maximala antalet fel som tillåts när en sekretessbegäran bearbetas/tas bort.<br /> </td> 
+   <td> Det högsta antalet fel som tillåts vid bearbetning/borttagning av en sekretessbegäran.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">Privacy_Request_PurgeDelay</span> <br /> </td> 
@@ -964,8 +964,8 @@ The **[!UICONTROL Administration / Platform / Options]** Med -noden kan du konfi
    <td> Krypterat lösenord för programinloggningen.<br /> </td> 
   </tr> 
   <tr> 
-   <td> <span class="uicontrol">XtkLdap_AutoOperator</span> <br /> </td> 
-   <td> Möjliggör automatiskt skapande av operatorer och rättigheter i Adobe Campaign.<br /> </td> 
+   <td> <span class="uicontrol">xtkLdap_AutoOperator</span> <br /> </td> 
+   <td> Aktivera automatiskt skapande av operatorer och rättigheter i Adobe Campaign.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">XtkLdap_DN</span> <br /> </td> 
@@ -973,7 +973,7 @@ The **[!UICONTROL Administration / Platform / Options]** Med -noden kan du konfi
   </tr> 
   <tr> 
    <td> <span class="uicontrol">XtkLdap_DNSearch</span> <br /> </td> 
-   <td> Aktivera DN-sökning i katalog.<br /> </td> 
+   <td> Aktivera DN-sökning i katalogen.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">XtkLdap_DNSearchBase</span> <br /> </td> 
@@ -981,22 +981,22 @@ The **[!UICONTROL Administration / Platform / Options]** Med -noden kan du konfi
   </tr> 
   <tr> 
    <td> <span class="uicontrol">XtkLdap_DNSearchFilter</span> <br /> </td> 
-   <td> Unikt sökfilter.<br /> </td> 
+   <td> DN-sökfilter.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">XtkLdap_DNSearchScope</span> <br /> </td> 
    <td> Sökomfång.<br /> </td> 
   </tr> 
   <tr> 
-   <td> <span class="uicontrol">XtkLdap_Mechanism</span> <br /> </td> 
+   <td> <span class="uicontrol">xtkLdap_Mechanism</span> <br /> </td> 
    <td> Autentiseringstyp som används för att kontakta LDAP-servern (normal, md5, lds, ntlm, dpa).<br /> </td> 
   </tr> 
   <tr> 
-   <td> <span class="uicontrol">XtkLdap_Rights</span> <br /> </td> 
+   <td> <span class="uicontrol">xtkLdap_Rights</span> <br /> </td> 
    <td> Aktivera synkronisering av auktoriseringar och grupper från LDAP-katalogen till namngivna behörigheter i Adobe Campaign.<br /> </td> 
   </tr> 
   <tr> 
-   <td> <span class="uicontrol">XtkLdap_RightsAttr</span> <br /> </td> 
+   <td> <span class="uicontrol">xtkLdap_RightsAttr</span> <br /> </td> 
    <td> LDAP-attribut som innehåller auktoriseringsnamnet.<br /> </td> 
   </tr> 
   <tr> 
@@ -1004,19 +1004,19 @@ The **[!UICONTROL Administration / Platform / Options]** Med -noden kan du konfi
    <td> Sökbas.<br /> </td> 
   </tr> 
   <tr> 
-   <td> <span class="uicontrol">XtkLdap_RightsFilter</span> <br /> </td> 
+   <td> <span class="uicontrol">xtkLdap_RightsFilter</span> <br /> </td> 
    <td> Sökfilter för användarauktoriseringar.<br /> </td> 
   </tr> 
   <tr> 
-   <td> <span class="uicontrol">XtkLdap_RightsMask</span> <br /> </td> 
+   <td> <span class="uicontrol">xtkLdap_RightsMask</span> <br /> </td> 
    <td> Uttryck för att extrahera namnen på Adobe Campaign-rättigheterna från LDAP-auktoriseringarna.<br /> </td> 
   </tr> 
   <tr> 
-   <td> <span class="uicontrol">XtkLdap_RightsScope</span> <br /> </td> 
+   <td> <span class="uicontrol">xtkLdap_RightsScope</span> <br /> </td> 
    <td> Sökomfång.<br /> </td> 
   </tr> 
   <tr> 
-   <td> <span class="uicontrol">XtkLdap_Server</span> <br /> </td> 
+   <td> <span class="uicontrol">xtkLdap_Server</span> <br /> </td> 
    <td> LDAP-serveradress (det går att ange en port genom att ange ':' som avgränsare).<br /> </td> 
   </tr> 
  </tbody> 
@@ -1037,19 +1037,19 @@ The **[!UICONTROL Administration / Platform / Options]** Med -noden kan du konfi
    <td> Värdet 1 tillåter rullningslist förutom detaljformulär.<br /> </td> 
   </tr> 
   <tr> 
-   <td> <span class="uicontrol">XtkWebForm_Instance</span> <br /> </td> 
-   <td> Instans som ska användas för att göra webbformulär ogiltiga i läget "andra servrar".<br /> </td> 
+   <td> <span class="uicontrol">xtkWebForm_Instance</span> <br /> </td> 
+   <td> Instans som ska användas för webformulärogiltigförklaring i läget 'andra servrar'.<br /> </td> 
   </tr> 
   <tr> 
-   <td> <span class="uicontrol">XtkWebForm_Password</span> <br /> </td> 
-   <td> Lösenord för instansen som ska användas för webbartidentifiering i läget 'andra servrar'.<br /> </td> 
+   <td> <span class="uicontrol">xtkWebForm_Password</span> <br /> </td> 
+   <td> Lösenord för instansen som ska användas för webformulärogiltigförklaring i läget "andra servrar".<br /> </td> 
   </tr> 
   <tr> 
-   <td> <span class="uicontrol">XtkWebForm_ServersMode</span> <br /> </td> 
-   <td> Med det här alternativet kan du ange ett ogiltigt läge för webbformulär: som standard används spårningsservrar om alternativet är spårning och en anpassad lista med alternativet övriga servrar används.<br /> </td> 
+   <td> <span class="uicontrol">xtkWebForm_ServersMode</span> <br /> </td> 
+   <td> Alternativ som låter dig ange ogiltighetsläge för webbformulär: lokalt som standard använder spårningsservrar om alternativet är spårning och använder en anpassad lista med alternativet "andra servrar".<br /> </td> 
   </tr> 
   <tr> 
-   <td> <span class="uicontrol">XtkWebForm_ServersURLs</span> <br /> </td> 
+   <td> <span class="uicontrol">xtkWebForm_ServersURL:er</span> <br /> </td> 
    <td> Personlig adresslista över servrar som ska kontaktas för ogiltigförklaring av webbformulär (läge för andra servrar).<br /> </td> 
   </tr> 
  </tbody> 

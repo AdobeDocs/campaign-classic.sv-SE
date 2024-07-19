@@ -15,7 +15,7 @@ ht-degree: 2%
 
 
 
-Arbetsflödet som beskrivs nedan installeras med **Distribuerad marknadsföring** som standard. Mer information om modulen finns i [section](../../distributed/using/about-distributed-marketing.md).
+Arbetsflödet som beskrivs nedan installeras som standard med modulen **Distributed Marketing** . Mer information om den här modulen finns i [avsnittet](../../distributed/using/about-distributed-marketing.md).
 
 <table> 
  <tbody> 

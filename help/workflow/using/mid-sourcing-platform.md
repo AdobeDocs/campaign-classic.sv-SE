@@ -15,7 +15,7 @@ ht-degree: 3%
 
 
 
-Arbetsflödet som beskrivs nedan installeras med **Plattform för medelkälla** som standard. Mer information om modulen finns i [section](../../installation/using/mid-sourcing-deployment.md).
+Arbetsflödet som beskrivs nedan installeras som standard med modulen **Plattform för medelkälla**. Mer information om den här modulen finns i [avsnittet](../../installation/using/mid-sourcing-deployment.md).
 
 <table> 
  <tbody> 
@@ -27,7 +27,7 @@ Arbetsflödet som beskrivs nedan installeras med **Plattform för medelkälla** 
   <tr> 
    <td> <span class="uicontrol">Leveransindikatorer</span> <br /> </td> 
    <td> <span class="uicontrol">deliveryIndicators</span> <br /> </td> 
-   <td> Det här arbetsflödet uppdaterar leveransspårningsindikatorer för en leverans. Det här arbetsflödet aktiveras som standard varje timme.<br /> </td> 
+   <td> Det här arbetsflödet uppdaterar leveransspårningsindikatorer för en leverans. Arbetsflödet aktiveras som standard varje timme.<br /> </td> 
   </tr> 
  </tbody> 
 </table>

@@ -18,10 +18,10 @@ ht-degree: 1%
 
 
 
-Använd kampanj [Åtkomst till federerade data](../../installation/using/about-fda.md) (FDA) om du vill bearbeta information som lagras i en extern databas. Följ stegen nedan för att konfigurera åtkomst till **Microsoft Azure synapse Analytics**.
+Använd alternativet [FDA (Federated Data Access](../../installation/using/about-fda.md)) i kampanjen om du vill bearbeta information som lagras i en extern databas. Följ stegen nedan för att konfigurera åtkomst till **Microsoft Azure synapse Analytics**.
 
 1. Konfigurera Azure synapse på [CentOS](#azure-centos), [Windows](#azure-windows) eller [Debian](#azure-debian)
-1. Konfigurera Azure synapse [externt konto](#azure-external) i Campaign
+1. Konfigurera det [externa Azure synapse-kontot](#azure-external) i Campaign
 
 ## Azure synapse på CentOS {#azure-centos}
 
@@ -33,7 +33,7 @@ Använd kampanj [Åtkomst till federerade data](../../installation/using/about-f
 
 Så här konfigurerar du Azure synapse i CentOS:
 
-1. Installera först ODBC-drivrutinen. Du hittar den i det här [page](https://www.microsoft.com/en-us/download/details.aspx?id=50420).
+1. Installera först ODBC-drivrutinen. Du hittar den på den här [sidan](https://www.microsoft.com/en-us/download/details.aspx?id=50420).
 
    >[!NOTE]
    >
@@ -87,7 +87,7 @@ Så här konfigurerar du Azure synapse i CentOS:
    /opt/mssql-tools/bin/sqlcmd -S yourServer -U yourUserName -P yourPassword -q "your query" # for example -q "select 1"
    ```
 
-1. I Campaign kan du sedan konfigurera [!DNL Azure Synapse] externt konto. Mer information om hur du konfigurerar ditt externa konto finns i [det här avsnittet](#azure-external).
+1. I Campaign kan du sedan konfigurera ditt [!DNL Azure Synapse]-externa konto. Mer information om hur du konfigurerar ditt externa konto finns i [det här avsnittet](#azure-external).
 
 1. Eftersom Azure synapse Analytics kommunicerar via TCP 1433-porten måste du öppna den här porten på din brandvägg. Använd följande kommando:
 
@@ -98,7 +98,7 @@ Så här konfigurerar du Azure synapse i CentOS:
 
    >[!NOTE]
    >
-   >Om du vill tillåta kommunikation från Azure synapse Analytics-sidan kan du behöva lägga till ditt offentliga IP-värde i tillåtelselista. Om du vill göra det går du till [Azure-dokumentation](https://docs.microsoft.com/en-us/azure/sql-database/sql-database-firewall-configure#use-the-azure-portal-to-manage-server-level-ip-firewall-rules).
+   >Om du vill tillåta kommunikation från Azure synapse Analytics-sidan kan du behöva lägga till ditt offentliga IP-värde i tillåtelselista. Mer information finns i [Azure-dokumentationen](https://docs.microsoft.com/en-us/azure/sql-database/sql-database-firewall-configure#use-the-azure-portal-to-manage-server-level-ip-firewall-rules).
 
 1. Om det är iptables kör du följande kommando:
 
@@ -114,7 +114,7 @@ Så här konfigurerar du Azure synapse i CentOS:
 
 Så här konfigurerar du Azure synapse i Windows:
 
-1. Installera först Microsoft ODBC-drivrutinen. Du hittar den i [den här sidan](https://www.microsoft.com/en-us/download/details.aspx?id=50420).
+1. Installera först Microsoft ODBC-drivrutinen. Du hittar den på [den här sidan](https://www.microsoft.com/en-us/download/details.aspx?id=50420).
 
 1. Välj följande filer att installera:
 
@@ -124,9 +124,9 @@ Så här konfigurerar du Azure synapse i Windows:
 
 1. När ODBC-drivrutinen har installerats kan du testa den om det behövs. Se denna [sida](https://docs.microsoft.com/en-us/sql/connect/odbc/windows/system-requirements-installation-and-driver-files?view=sql-server-ver15#installing-microsoft-odbc-driver-for-sql-server) för mer information om detta.
 
-1. I Campaign Classicen kan du sedan konfigurera [!DNL Azure Synapse] externt konto. Mer information om hur du konfigurerar ditt externa konto finns i [det här avsnittet](#azure-external).
+1. I Campaign Classicen kan du sedan konfigurera ditt [!DNL Azure Synapse]-externa konto. Mer information om hur du konfigurerar ditt externa konto finns i [det här avsnittet](#azure-external).
 
-1. Eftersom Azure synapse Analytics kommunicerar via TCP 1433-porten måste du öppna den här porten i Windows Defender-brandväggen. Mer information finns i [Windows-dokumentation](https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-firewall/create-an-outbound-program-or-service-rule).
+1. Eftersom Azure synapse Analytics kommunicerar via TCP 1433-porten måste du öppna den här porten i Windows Defender-brandväggen. Mer information finns i [Windows-dokumentationen](https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-firewall/create-an-outbound-program-or-service-rule).
 
 ## Azure synapse på Debian {#azure-debian}
 
@@ -152,7 +152,7 @@ Så här konfigurerar du Azure synapse på Debian:
    sudo ACCEPT_EULA=Y apt-get install msodbcsql
    ```
 
-1. Om du får följande fel **&quot;Det gick inte att hitta metoddrivrutinen /usr/lib/apt/methods/https&quot;** vid anrop **sudo apt-get update** ska du köra kommandot:
+1. Om du får följande fel: **&quot;Det gick inte att hitta metoddrivrutinen /usr/lib/apt/methods/https&quot;** vid anrop till **sudo apt-get update** bör du köra kommandot:
 
    ```
    sudo apt-get install apt-transport-https ca-certificates
@@ -179,7 +179,7 @@ Så här konfigurerar du Azure synapse på Debian:
    /opt/mssql-tools/bin/sqlcmd -S yourServer -U yourUserName -P yourPassword -q "your query" # for example -q "select 1"
    ```
 
-1. I Campaign Classicen kan du nu konfigurera [!DNL Azure Synapse] externt konto. Mer information om hur du konfigurerar ditt externa konto finns i [det här avsnittet](#azure-external).
+1. I Campaign Classicen kan du nu konfigurera ditt [!DNL Azure Synapse]-externa konto. Mer information om hur du konfigurerar ditt externa konto finns i [det här avsnittet](#azure-external).
 
 1. Aktivera den utgående TCP 1433-porten för värdnamnet med följande kommando för att konfigurera iptables på Debian för att säkerställa anslutningen med Azure synapse Analytics:
 
@@ -189,27 +189,27 @@ Så här konfigurerar du Azure synapse på Debian:
 
    >[!NOTE]
    >
-   >Om du vill tillåta kommunikation från Azure synapse Analytics-sidan kan du behöva lägga till ditt offentliga IP-värde i tillåtelselista. Om du vill göra det går du till [Azure-dokumentation](https://docs.microsoft.com/en-us/azure/sql-database/sql-database-firewall-configure#use-the-azure-portal-to-manage-server-level-ip-firewall-rules).
+   >Om du vill tillåta kommunikation från Azure synapse Analytics-sidan kan du behöva lägga till ditt offentliga IP-värde i tillåtelselista. Mer information finns i [Azure-dokumentationen](https://docs.microsoft.com/en-us/azure/sql-database/sql-database-firewall-configure#use-the-azure-portal-to-manage-server-level-ip-firewall-rules).
 
 ## Azure synapse external account {#azure-external}
 
-The [!DNL Azure Synapse] Med ett externt konto kan du ansluta Campaign-instansen till din externa Azure synapse-databas.
+Med det externa kontot [!DNL Azure Synapse] kan du ansluta Campaign-instansen till din externa Azure synapse-databas.
 
-Skapa [!DNL Azure Synapse] externt konto följer du stegen nedan:
+Så här skapar du ett [!DNL Azure Synapse] externt konto:
 
-1. Från kampanj **[!UICONTROL Explorer]**, klicka **[!UICONTROL Administration]** &#39;>&#39; **[!UICONTROL Platform]** &#39;>&#39; **[!UICONTROL External accounts]**.
+1. Klicka på **[!UICONTROL Administration]** > **[!UICONTROL Platform]** > **[!UICONTROL External accounts]** i Campaign **[!UICONTROL Explorer]**.
 
 1. Klicka på **[!UICONTROL New]**.
 
-1. Välj **[!UICONTROL External database]** som ditt externa konto **[!UICONTROL Type]**.
+1. Välj **[!UICONTROL External database]** som det externa kontots **[!UICONTROL Type]**.
 
    ![](assets/azure_1.png)
 
-1. Under **[!UICONTROL Configuration]**, markera **[!UICONTROL Azure Synapse Analytics]** från **[!UICONTROL Type]** nedrullningsbar meny.
+1. Under **[!UICONTROL Configuration]** väljer du **[!UICONTROL Azure Synapse Analytics]** i listrutan **[!UICONTROL Type]**.
 
    ![](assets/azure_2.png)
 
-1. Konfigurera [!DNL Azure Synapse] externt konto:
+1. Konfigurera det externa kontot [!DNL Azure Synapse]:
 
    * För standardautentisering måste du ange:
 
@@ -239,4 +239,4 @@ Kopplingen stöder följande alternativ:
 
 | Alternativ | Beskrivning |
 |---|---|
-| Autentisering | Typ av autentisering som stöds av kopplingen. Aktuellt värde: ActiveDirectoryMSI. </br>Mer information finns i [SQL-dokument](https://docs.microsoft.com/en-us/sql/connect/odbc/using-azure-active-directory?view=sql-server-ver15#example-connection-strings) (Exempel på anslutningssträngar nr 8). |
+| Autentisering | Typ av autentisering som stöds av kopplingen. Aktuellt värde: ActiveDirectoryMSI. </br>Mer information finns i [SQL doc](https://docs.microsoft.com/en-us/sql/connect/odbc/using-azure-active-directory?view=sql-server-ver15#example-connection-strings) (Exempel på anslutningssträngar n°8). |

@@ -20,21 +20,21 @@ ht-degree: 3%
 
 Den här rapporten innehåller leveransstatistik för transaktionsmeddelanden samt felinformation. Du kan klicka på en feltyp för att visa information om den.
 
-Denna rapport, som riktar sig till tekniska administratörer, kan också nås via **[!UICONTROL Monitoring]** på kontrollinstansen.
+Den här rapporten, som riktar sig till tekniska administratörer, kan också nås via fliken **[!UICONTROL Monitoring]** i kontrollinstansen.
 
 ![](assets/mc_reports_1.png)
 
 I den här rapporten kan du välja att visa den övergripande statistiken eller den som är relativ till en viss körningsinstans. Du kan också filtrera data efter kanal och under en viss period.
 
-Indikatorerna som visas i **[!UICONTROL Indicators over the period]** -avsnittet beräknas över den valda perioden:
+Indikatorerna som visas i avsnittet **[!UICONTROL Indicators over the period]** beräknas för den valda perioden:
 
-* **[!UICONTROL Incoming (throughput event/h)]** : genomsnittligt antal händelser per timme som anges i Message Center-kön.
-* **[!UICONTROL Incoming (event vol)]** : antal händelser som anges i Message Center-kön.
+* **[!UICONTROL Incoming (throughput event/h)]** : genomsnittligt antal händelser per timme som anges i meddelandecenterkön.
+* **[!UICONTROL Incoming (event vol)]** : antal händelser har angetts i meddelandecenterkön.
 * **[!UICONTROL Outgoing (throughput msg/h)]** : genomsnittligt antal utgående Message Center-händelser per timme (skickas av en leverans).
 * **[!UICONTROL Outgoing (msg vol)]** : antal slutförda utgående Message Center-händelser (skickade av en leverans).
-* **[!UICONTROL Average sending time (seconds)]** : Genomsnittlig tid i meddelandecentret för lyckade bearbetade händelser. Beräkningen tar hänsyn till bearbetningstiden och den maximala sändningstiden.
-* **[!UICONTROL Error rate]** : antal händelser med fel jämfört med antalet händelser som har angetts i Message Center-kön. Följande fel beaktas: routningsfel, utgångna händelser (händelse som har varit i kön för lång), leveransfel, ignoreras av leveransen (karantän, osv.).
+* **[!UICONTROL Average sending time (seconds)]** : Genomsnittlig tid i meddelandecentret för slutförda händelser. Beräkningen tar hänsyn till bearbetningstiden och den maximala sändningstiden.
+* **[!UICONTROL Error rate]** : antal händelser med fel jämfört med antalet händelser som har öppnats i Message Center-kön. Följande fel beaktas: routningsfel, utgångna händelser (händelse som har varit i kön för lång), leveransfel, ignoreras av leveransen (karantän, osv.).
 
 >[!NOTE]
 >
->Tröskelvärdena för varningsmeddelanden (orange) och varningsmeddelanden (röda) kan konfigureras i distributionsguiden. Se [Skärmtrösklar](../../message-center/using/additional-configurations.md#monitoring-thresholds).
+>Tröskelvärdena för varningsmeddelanden (orange) och varningsmeddelanden (röda) kan konfigureras i distributionsguiden. Se [Skärmtröskelvärden](../../message-center/using/additional-configurations.md#monitoring-thresholds).

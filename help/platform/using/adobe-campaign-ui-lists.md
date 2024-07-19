@@ -21,11 +21,11 @@ Du kan komma åt listor med poster i Campaign-databasen med Utforskaren. Du kan 
 
 Som standard läser Adobe Campaign in de första 200 posterna i en lista. Det innebär att visningen inte nödvändigtvis visar alla poster i tabellen som du visar. Du kan räkna antalet poster i listan och läsa in fler poster.
 
-I den nedre högra delen av listskärmen visas en **[!UICONTROL counter]** visar hur många poster som har lästs in och det totala antalet poster i databasen (efter att eventuella filter har använts):
+I den nedre högra delen av listskärmen visar en **[!UICONTROL counter]** hur många poster som har lästs in och det totala antalet poster i databasen (efter att eventuella filter har använts):
 
 ![](assets/s_ncs_user_nb_200_0.png)
 
-Om en **?**&quot; visas i stället för siffran till höger. Klicka på räknaren för att starta beräkningen.
+Om en **?** visas i stället för siffran till höger. Klicka på räknaren för att starta beräkningen.
 
 ### Läs in fler poster {#loading-more-records}
 
@@ -41,11 +41,11 @@ Om du vill läsa in alla poster högerklickar du på listan och väljer **[!UICO
 
 ### Ändra standardantal poster {#change-default-number-of-records}
 
-Om du vill ändra standardantalet inlästa poster klickar du på **[!UICONTROL Configure list]** i listans nedre högra hörn.
+Om du vill ändra standardantalet inlästa poster klickar du på **[!UICONTROL Configure list]** längst ned till höger i listan.
 
 ![](assets/s_ncs_user_configure_list.png)
 
-Klicka på **[!UICONTROL Advanced parameters]** (längst ned till vänster) och ändra antalet rader som ska hämtas.
+Klicka på **[!UICONTROL Advanced parameters]** (längst ned till vänster) i fönstret för listkonfigurationen och ändra antalet rader som ska hämtas.
 
 ![](assets/s_ncs_user_configurelist_advancedparam.png)
 
@@ -70,51 +70,51 @@ Ett annat sätt att lägga till kolumner, till exempel om du vill visa data som 
 
    ![](assets/s_ncs_user_configure_list.png)
 
-1. Dubbelklicka på det fält som ska läggas till i listan i konfigurationsfönstret **[!UICONTROL Available fields]** för att lägga till den i **[!UICONTROL Output columns]**.
+1. Dubbelklicka på fältet som ska läggas till i listan **[!UICONTROL Available fields]** i listkonfigurationsfönstret för att lägga till det i **[!UICONTROL Output columns]**.
 
    ![](assets/s_ncs_user_configurelist.png)
 
    >[!NOTE]
    >
-   >Som standard visas inte avancerade fält. Om du vill visa dem klickar du **Visa avancerade fält** nedan och till höger om listan med tillgängliga fält.
+   >Som standard visas inte avancerade fält. Om du vill visa dem klickar du på **Visa avancerade fält** nedan och till höger om listan med tillgängliga fält.
    >
    >Etiketterna visas per tabell och sedan i alfabetisk ordning.
    >
-   >Använd **Sök** om du vill göra en sökning i de tillgängliga fälten. Mer information finns i [det här avsnittet](#sorting-a-list).
+   >Använd fältet **Sök** för att köra en sökning i de tillgängliga fälten. Mer information finns i [det här avsnittet](#sorting-a-list).
    >
    >Fält identifieras av specifika ikoner: SQL-fält, länkade tabeller, beräkningsfält osv. För varje markerat fält visas beskrivningen under listan med tillgängliga fält. [Läs mer](#configuring-lists).
    >
    >Du kan också sortera och filtrera data. Se [det här avsnittet](../../platform/using/filtering-options.md).
 
 1. Upprepa för varje kolumn som ska visas.
-1. Använd pilarna för att ändra **visningsordning**. Den högsta kolumnen finns till vänster i listan med poster.
+1. Använd pilarna för att ändra **visningsordningen**. Den högsta kolumnen finns till vänster i listan med poster.
 
    ![](assets/s_ncs_user_columns_order_down.png)
 
-1. Om du vill kan du klicka **[!UICONTROL Distribution of values]** om du vill visa ompartitionen av värden för det valda fältet i den aktuella mappen.
+1. Om du behöver kan du klicka på **[!UICONTROL Distribution of values]** för att visa ompartitionen av värden för det valda fältet i den aktuella mappen.
 
    ![](assets/s_ncs_user_configurelist_values.png)
 
-1. Klicka **[!UICONTROL OK]** för att bekräfta konfigurationen och visa resultatet.
+1. Klicka på **[!UICONTROL OK]** för att bekräfta konfigurationen och visa resultatet.
 
 ### Skapa en ny kolumn {#create-a-new-column}
 
 Du kan skapa nya kolumner för att visa ytterligare fält i listan. Så här gör du:
 
-1. Klicka **[!UICONTROL Configure the list]** nedan och till höger om listan.
-1. Klicka **[!UICONTROL Add]** om du vill visa ett nytt fält i listan.
+1. Klicka på **[!UICONTROL Configure the list]** nedan och till höger om listan.
+1. Klicka på **[!UICONTROL Add]** om du vill visa ett nytt fält i listan.
 
 ### Ta bort en kolumn {#remove-a-column}
 
-Du kan maskera en eller flera kolumner i en lista med poster med hjälp av **[!UICONTROL Configure list]** som finns nedanför och till höger om listan.
+Du kan maskera en eller flera kolumner i en lista med poster med **[!UICONTROL Configure list]** som finns nedanför och till höger om listan.
 
 ![](assets/s_ncs_user_configure_list.png)
 
-I listkonfigurationsfönstret väljer du den kolumn som ska maskeras på menyn **[!UICONTROL Output columns]** och klicka på knappen Ta bort.
+I listkonfigurationsfönstret markerar du den kolumn som ska maskeras från zonen **[!UICONTROL Output columns]** och klickar på knappen Ta bort.
 
 ![](assets/s_ncs_user_removecolumn_icon.png)
 
-Upprepa för varje kolumn som ska maskeras. Klicka **[!UICONTROL OK]** för att bekräfta konfigurationen och visa resultatet.
+Upprepa för varje kolumn som ska maskeras. Klicka på **[!UICONTROL OK]** för att bekräfta konfigurationen och visa resultatet.
 
 ### Justera kolumnbredd {#adjust-column-width}
 
@@ -147,23 +147,23 @@ Följ stegen nedan för att spara listkonfigurationen så att den kan återanvä
 
 1. Högerklicka på mappen som innehåller de data som visas.
 1. Välj **[!UICONTROL Properties]**.
-1. Klicka **[!UICONTROL Advanced settings]** och ange sedan ett namn i **[!UICONTROL Configuration]** fält.
+1. Klicka på **[!UICONTROL Advanced settings]** och ange sedan ett namn i fältet **[!UICONTROL Configuration]**.
 
    ![](assets/s_ncs_user_folder_save_config_2.png)
 
-1. Klicka **[!UICONTROL OK]** och sedan klicka **[!UICONTROL Save]**.
+1. Klicka på **[!UICONTROL OK]** och sedan på **[!UICONTROL Save]**.
 
-Du kan sedan använda den här konfigurationen på en annan **Leverans** mapp:
+Du kan sedan använda den här konfigurationen för en annan **leveransmapp**:
 
 ![](assets/s_ncs_user_folder_save_config_3.png)
 
-Klicka **[!UICONTROL Save]** i fönstret för mappegenskaper. Listvisningen har ändrats så att den matchar den angivna konfigurationen:
+Klicka på **[!UICONTROL Save]** i fönstret för mappegenskaper. Listvisningen har ändrats så att den matchar den angivna konfigurationen:
 
 ![](assets/s_ncs_user_folder_save_config_5.png)
 
 ## Exportera en lista {#exporting-a-list}
 
-Om du vill exportera data från en lista måste du använda en exportguide. Du kommer åt den genom att markera de element som ska exporteras i listan, högerklicka och välja **[!UICONTROL Export...]**.
+Om du vill exportera data från en lista måste du använda en exportguide. Om du vill komma åt den markerar du de element som ska exporteras från listan, högerklickar och väljer **[!UICONTROL Export...]**.
 
 Användningen av import- och exportfunktionerna förklaras i [Allmän import och export](../../platform/using/about-generic-imports-exports.md).
 
@@ -179,11 +179,11 @@ Klicka på kolumnrubriken om du vill använda en stigande eller fallande sorteri
 
 Du kan också konfigurera sortering eller kombinera sorteringsvillkor. Gör så här:
 
-1. **[!UICONTROL Configure list]** nedan och till höger om listan.
+1. **[!UICONTROL Configure list]** nedanför och till höger om listan.
 
    ![](assets/s_ncs_user_configure_list.png)
 
-1. I fönstret för listkonfiguration klickar du på **[!UICONTROL Sorting]** -fliken.
+1. Klicka på fliken **[!UICONTROL Sorting]** i listkonfigurationsfönstret.
 1. Markera de fält som ska sorteras och sorteringsriktningen (stigande eller fallande).
 
    ![](assets/s_ncs_user_configurelist_sort.png)
@@ -194,11 +194,11 @@ Du kan också konfigurera sortering eller kombinera sorteringsvillkor. Gör så 
 
    Sorteringsprioriteten påverkar inte visningen av kolumnerna i listan.
 
-1. Klicka **[!UICONTROL Ok]** för att bekräfta konfigurationen och visa resultatet i listan.
+1. Klicka på **[!UICONTROL Ok]** för att bekräfta konfigurationen och visa resultatet i listan.
 
 ### Söka efter element {#running-a-search}
 
-Du kan göra en sökning i de tillgängliga fälten i en redigerare med hjälp av **[!UICONTROL Search]** fält ovanför fältlistan. Tryck **Retur** på tangentbordet eller bläddra i listan. Fälten som matchar sökningen får feta etiketter.
+Du kan köra en sökning i de tillgängliga fälten i en redigerare med hjälp av fältet **[!UICONTROL Search]** som finns ovanför listan med fält. Tryck på **Enter** på tangentbordet eller bläddra i listan. Fälten som matchar sökningen får feta etiketter.
 
 >[!NOTE]
 >

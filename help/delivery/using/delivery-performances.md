@@ -37,7 +37,7 @@ Vi rekommenderar att du följer riktlinjerna nedan för att försäkra dig om at
 
 * För stora leveranser, som leveranser till över en miljon mottagare, behövs utrymme i utskicksköerna. Detta är inget problem för servern, men om det kombineras med dussintals andra stora leveranser som alla går ut samtidigt kan det medföra en fördröjning.
 
-* Personalisering i e-postmeddelanden hämtar data från databasen för varje mottagare. Om det finns många personaliseringselement ökar detta mängden data som behövs för att förbereda leveransen.
+* Personalization i e-postmeddelanden hämtar data från databasen för varje mottagare. Om det finns många personaliseringselement ökar detta mängden data som behövs för att förbereda leveransen.
 
 * Indexadresser. För att optimera prestanda för SQL-frågor som används i programmet kan ett index deklareras från huvudelementet i dataschemat.
 
@@ -49,8 +49,8 @@ Vi rekommenderar att du följer riktlinjerna nedan för att försäkra dig om at
 
 Om leveransresultaten är felaktiga kan du kontrollera:
 
-* **Leveransens storlek**: Stora leveranser kan ta längre tid att slutföra. MTA-underordnade är konfigurerade att hantera en standardbatchstorlek, som fungerar för de flesta instanser, men som måste kontrolleras när leveranserna är konstant långsamma.
-* **Målet för leveransen**: Förbud mot leveransprestanda påverkas av mjuka studsfel, som hanteras enligt konfigurationen för nya försök. Ju fler fel, desto fler försök.
-* **Den totala plattformsinläsningen**: När flera stora leveranser skickas kan den övergripande plattformen påverkas. Du kan även kontrollera IP-adressens anseende och leveransproblem. Mer information finns i [det här avsnittet](about-deliverability.md) och [Adobe Deliverability Best Practice Guide](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html?lang=sv).
+* **Storleken på leveransen**: Stora leveranser kan ta längre tid att slutföra. MTA-underordnade är konfigurerade att hantera en standardbatchstorlek, som fungerar för de flesta instanser, men som måste kontrolleras när leveranserna är konstant långsamma.
+* **Målet för leveransen**: Förbudet mot leveransprestanda påverkas av mjuka studsfel, som hanteras enligt konfigurationen för nya försök. Ju fler fel, desto fler försök.
+* **Den totala plattformsinläsningen**: När flera stora leveranser skickas kan den övergripande plattformen påverkas. Du kan även kontrollera IP-adressens anseende och leveransproblem. Mer information finns i [det här avsnittet](about-deliverability.md) och i [Adobe Deliverability Best Practice Guide](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html?lang=sv).
 
 Plattforms- och databasunderhåll kan också påverka leveransresultaten. Mer information finns på [den här sidan](../../production/using/database-performances.md).

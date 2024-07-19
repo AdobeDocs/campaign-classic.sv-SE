@@ -25,9 +25,9 @@ Om du har många tjänster och webbprogram i Campaign v7 kan du välja att inte 
 
 För att uppnå detta behöver du:
 
-* Mottagare lagrade i Campaign v7-databasen och synkroniserade med Campaign Standard. Se [Synkronisera profiler](../../integrations/using/synchronizing-profiles.md) -avsnitt.
+* Mottagare lagrade i Campaign v7-databasen och synkroniserade med Campaign Standard. Se avsnittet [Synkronisera profiler](../../integrations/using/synchronizing-profiles.md).
 * en tjänst och ett webbprogram som skapats och publicerats i Campaign v7.
-* webbprogrammet måste innehålla en **[!UICONTROL Pre-loading]** aktivitet med **[!UICONTROL Adobe Campaign encryption]** identifieringsmetod.
+* webbprogrammet måste innehålla en **[!UICONTROL Pre-loading]**-aktivitet med identifieringsmetoden **[!UICONTROL Adobe Campaign encryption]**.
 
 ## Skapa webbprogrammet och webbtjänsten {#creating-the-web-application-and-service}
 
@@ -36,21 +36,21 @@ I Campaign v7 kan du skapa webbprogram där mottagarna kan prenumerera på en tj
 I Campaign v7 har följande objekt skapats:
 
 * en nyhetsbrevstjänst
-* ett webbprogram som innehåller **[!UICONTROL Pre-loading]**, a **[!UICONTROL Page]** och **[!UICONTROL Storage]** aktivitet.
+* ett webbprogram som innehåller en **[!UICONTROL Pre-loading]**-, **[!UICONTROL Page]**- och **[!UICONTROL Storage]**-aktivitet.
 
-1. Gå till **[!UICONTROL Resources > Online > Web applications]** och välja ett befintligt webbprogram.
+1. Gå till **[!UICONTROL Resources > Online > Web applications]** och välj ett befintligt webbprogram.
 
    ![](assets/acs_connect_lp_2.png)
 
-1. Redigera **[!UICONTROL Preloading]** aktivitet. The **[!UICONTROL Auto-load data referenced in the form]** kryssrutan är markerad och **[!UICONTROL Adobe Campaign encryption]** identifieringsmetod har valts. Detta gör att webbprogrammet kan förhandsladda formulärfälten med data lagrade i Adobe Campaign-databasen. Se [det här dokumentet](../../web/using/publishing-a-web-form.md#pre-loading-the-form-data).
+1. Redigera aktiviteten **[!UICONTROL Preloading]**. Rutan **[!UICONTROL Auto-load data referenced in the form]** är markerad och identifieringsmetoden **[!UICONTROL Adobe Campaign encryption]** är markerad. Detta gör att webbprogrammet kan förhandsladda formulärfälten med data lagrade i Adobe Campaign-databasen. Se [det här dokumentet](../../web/using/publishing-a-web-form.md#pre-loading-the-form-data).
 
    ![](assets/acs_connect_lp_4.png)
 
-1. Redigera **[!UICONTROL Page]**. Tre fält (Namn, E-post och Telefon) har inkluderats, samt en kryssruta där mottagaren kan prenumerera på ett nyhetsbrev (**[!UICONTROL Newsletter]** service).
+1. Redigera **[!UICONTROL Page]**. Tre fält (Namn, E-post och Telefon) har inkluderats, samt en kryssruta som bjuder in mottagaren att prenumerera på ett nyhetsbrev (**[!UICONTROL Newsletter]**-tjänst).
 
    ![](assets/acs_connect_lp_3.png)
 
-1. Gå till **[!UICONTROL Profiles and Target > Services and subscriptions]** och öppna **[!UICONTROL Newsletter]** service. Det här är den tjänst som kommer att uppdateras från Campaign Standarden. Du kan se att ingen mottagare har prenumererat på den här tjänsten ännu.
+1. Gå till **[!UICONTROL Profiles and Target > Services and subscriptions]** och öppna tjänsten **[!UICONTROL Newsletter]**. Det här är den tjänst som kommer att uppdateras från Campaign Standarden. Du kan se att ingen mottagare har prenumererat på den här tjänsten ännu.
 
    ![](assets/acs_connect_lp_5.png)
 
@@ -60,13 +60,13 @@ I Campaign v7 har följande objekt skapats:
 
 ## Replikera data {#replicating-the-data}
 
-För att replikera nödvändiga data mellan Campaign v7 och Campaign Standard finns flera arbetsflödesmallar för replikering tillgängliga. The **[!UICONTROL Profiles replication]** arbetsflödet replikerar automatiskt alla Campaign v7-mottagare till Campaign Standarden. Se [Tekniska arbetsflöden och arbetsflöden för replikering](../../integrations/using/acs-connector-principles-and-data-cycle.md#technical-and-replication-workflows). The **[!UICONTROL Landing pages replication]** arbetsflödet möjliggör replikering av de webbprogram som vi vill använda i Campaign Standard.
+För att replikera nödvändiga data mellan Campaign v7 och Campaign Standard finns flera arbetsflödesmallar för replikering tillgängliga. Arbetsflödet **[!UICONTROL Profiles replication]** replikerar automatiskt alla Campaign v7-mottagare till Campaign Standarden. Se [Tekniska arbetsflöden och replikeringsarbetsflöden](../../integrations/using/acs-connector-principles-and-data-cycle.md#technical-and-replication-workflows). Arbetsflödet **[!UICONTROL Landing pages replication]** gör att det går att replikera de webbprogram som ska användas i Campaign Standarden.
 
 ![](assets/acs_connect_lp_1.png)
 
 Följ de här stegen i Campaign Standarden för att kontrollera att data har replikerats korrekt:
 
-1. Klicka på **[!UICONTROL Customer profiles]**.
+1. Klicka på **[!UICONTROL Customer profiles]** på startskärmen.
 
    ![](assets/acs_connect_lp_7.png)
 
@@ -74,11 +74,11 @@ Följ de här stegen i Campaign Standarden för att kontrollera att data har rep
 
    ![](assets/acs_connect_lp_8.png)
 
-1. Klicka på **[!UICONTROL Marketing activities]** och söka efter webbprogrammet Campaign v7. Den visas som en landningssida i Campaign Standard.
+1. Klicka på **[!UICONTROL Marketing activities]** i det övre fältet och sök efter webbprogrammet Campaign v7. Den visas som en landningssida i Campaign Standard.
 
    ![](assets/acs_connect_lp_9.png)
 
-1. Klicka på **[!UICONTROL Adobe Campaign]** logotyp, i det övre vänstra hörnet, och välj **Profiler och målgrupper > Tjänster** och kontrollera att nyhetsbrevet också finns där.
+1. Klicka på logotypen **[!UICONTROL Adobe Campaign]** i det övre vänstra hörnet, välj **Profiler och målgrupper > Tjänster** och kontrollera att nyhetsbrevstjänsten också finns där.
 
    ![](assets/acs_connect_lp_10.png)
 
@@ -86,10 +86,10 @@ Följ de här stegen i Campaign Standarden för att kontrollera att data har rep
 
 I den här delen får vi se hur vi kan inkludera en länk, i ett e-postmeddelande med Campaign Standard, till landningssidan som replikeras från en Campaign v7-webbapplikation.
 
-Stegen för att skapa, utforma och skicka e-postmeddelanden är desamma som för klassiska e-postmeddelanden. Se [Adobe Campaign Standard](https://experienceleague.adobe.com/docs/campaign-standard/using/campaign-standard-home.html?lang=sv) dokumentation.
+Stegen för att skapa, utforma och skicka e-postmeddelanden är desamma som för klassiska e-postmeddelanden. Se dokumentationen för [Adobe Campaign Standard](https://experienceleague.adobe.com/docs/campaign-standard/using/campaign-standard-home.html?lang=sv).
 
 1. Skapa ett nytt e-postmeddelande och välj en eller flera replikerade profiler som målgrupp.
-1. Redigera innehållet och infoga en **[!UICONTROL Link to a landing page]**.
+1. Redigera ditt innehåll och infoga en **[!UICONTROL Link to a landing page]**.
 
    ![](assets/acs_connect_lp_12.png)
 
@@ -110,15 +110,15 @@ Stegen för att skapa, utforma och skicka e-postmeddelanden är desamma som för
 
 När mottagaren uppdaterar sina data via webbprogrammet hämtar Adobe Campaign v7 synkront den uppdaterade informationen. Den replikeras sedan från Campaign v7 till Campaign Standard.
 
-1. I Campaign v7 går du till **[!UICONTROL Profiles and Target > Services and subscriptions]** och öppna **[!UICONTROL Newsletter]** service. Du ser att mottagaren nu visas i prenumerationslistan.
+1. Gå till **[!UICONTROL Profiles and Target > Services and subscriptions]** i Campaign v7 och öppna tjänsten **[!UICONTROL Newsletter]**. Du ser att mottagaren nu visas i prenumerationslistan.
 
    ![](assets/acs_connect_lp_16.png)
 
-1. Gå till **[!UICONTROL Profiles and Targets > Recipient]** och välj mottagare. Du ser att telefonnumret nu lagras.
+1. Gå till **[!UICONTROL Profiles and Targets > Recipient]** och markera mottagaren. Du ser att telefonnumret nu lagras.
 
    ![](assets/acs_connect_lp_17.png)
 
-1. I **[!UICONTROL Subscriptions]** kan vi även se att den här mottagaren har prenumererat på nyhetsbrevet.
+1. På fliken **[!UICONTROL Subscriptions]** kan vi även se att den här mottagaren har prenumererat på nyhetsbrevstjänsten.
 
    ![](assets/acs_connect_lp_18.png)
 
@@ -131,6 +131,6 @@ När mottagaren uppdaterar sina data via webbprogrammet hämtar Adobe Campaign v
 
    ![](assets/acs_connect_lp_20.png)
 
-1. Klicka på **[!UICONTROL Subscriptions]** -fliken. Nyhetsbrevet visas nu.
+1. Klicka på fliken **[!UICONTROL Subscriptions]**. Nyhetsbrevet visas nu.
 
    ![](assets/acs_connect_lp_21.png)

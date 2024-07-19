@@ -26,12 +26,12 @@ Dessa kopplingar möjliggör snabb och enkel dataintegrering. Adobe Campaign erb
 
 >[!NOTE]
 >
->Den här funktionen är tillgänglig i Adobe Campaign via **CRM-anslutningar** dedikerat paket.
+>Den här funktionen är tillgänglig i Adobe Campaign via det dedikerade paketet **CRM-anslutningar**.
 
 
 ### Kompatibla system {#compatible-crm-systems-and-limitations}
 
-CRM och versioner som stöds finns detaljerade i Campaign [Kompatibilitetsmatris](../../rn/using/compatibility-matrix.md).
+CRM och versioner som stöds finns detaljerade i Campaign [Kompatibilitetsmatrisen](../../rn/using/compatibility-matrix.md).
 
 >[!NOTE]
 >
@@ -42,4 +42,4 @@ CRM och versioner som stöds finns detaljerade i Campaign [Kompatibilitetsmatris
 Lär dig steg för steg hur du ansluter Campaign och Microsoft Dynamics [i det här avsnittet](../../platform/using/crm-ms-dynamics.md)
 
 
-Lär dig steg för steg hur du kopplar samman Campaign och Salesforce [i det här avsnittet](../../platform/using/crm-sfdc.md)
+Lär dig steg för steg hur du ansluter Campaign och Salesforce [i det här avsnittet](../../platform/using/crm-sfdc.md)

@@ -31,32 +31,32 @@ Om du vill skicka till en mobiltelefon behöver du:
 
 >[!IMPORTANT]
 >
->Om du använder samma konto och lösenord för flera externa SMS-konton kan det leda till konflikter och överlappning mellan kontona. Se [Felsökningssida för SMS](troubleshooting-sms.md#external-account-conflict).
+>Om du använder samma konto och lösenord för flera externa SMS-konton kan det leda till konflikter och överlappning mellan kontona. Se sidan [SMS-felsökning](troubleshooting-sms.md#external-account-conflict).
 
 Om du vill skicka ett SMS till en mobiltelefon måste du först skapa ett externt SMPP-konto.
-Mer information om SMS-protokoll och inställningar finns i [page](sms-protocol.md).
+Mer information om SMS-protokoll och inställningar finns på [sidan](sms-protocol.md).
 
 Gör så här:
 
-1. I **[!UICONTROL Platform]** > **[!UICONTROL External accounts]** trädnod, klicka på **[!UICONTROL New]** -ikon.
-1. Definiera kontotypen som **Routning**, kanalen **Mobil (SMS)** och leveranssättet som **Massleverans**.
+1. Klicka på ikonen **[!UICONTROL New]** i noden **[!UICONTROL Platform]** > **[!UICONTROL External accounts]** i trädet.
+1. Definiera kontotypen som **Routning**, kanalen som **Mobil (SMS)** och leveransläget som **Massleverans**.
 
    ![](assets/extended_smpp_create_account.png)
 
-1. Kontrollera **[!UICONTROL Enabled]** box.
-1. I **[!UICONTROL Mobile]** flik, välja **[!UICONTROL Extended generic SMPP]** från **[!UICONTROL Connector]** listruta.
+1. Markera rutan **[!UICONTROL Enabled]**.
+1. Välj **[!UICONTROL Extended generic SMPP]** i listrutan **[!UICONTROL Connector]** på fliken **[!UICONTROL Mobile]**.
 
    ![](assets/extended_smpp_connector.png)
 
    >[!CAUTION]
    >
-   > Från och med version 20.2 är äldre anslutningar borttagna och stöds inte. Vi rekommenderar **[!UICONTROL Extended generic SMPP]** koppling. Mer information om hur du migrerar till den rekommenderade anslutningen finns i detta [page](unsupported-connector-migration.md).
+   > Från och med version 20.2 är äldre anslutningar borttagna och stöds inte. Vi rekommenderar att du använder **[!UICONTROL Extended generic SMPP]**-anslutningen. Mer information om hur du migrerar till den rekommenderade anslutningen finns på [sidan](unsupported-connector-migration.md).
 
-1. The **[!UICONTROL Enable verbose SMPP traces in the log file]** kan du dumpa all SMPP-trafik i loggfiler. Det här alternativet måste vara aktiverat för att kunna felsöka anslutningen och jämföra med den trafik som leverantören ser.
+1. Med alternativet **[!UICONTROL Enable verbose SMPP traces in the log file]** kan du dumpa all SMPP-trafik i loggfiler. Det här alternativet måste vara aktiverat för att kunna felsöka anslutningen och jämföra med den trafik som leverantören ser.
 
-1. Kontakta din SMS-leverantör som förklarar hur du fyller i de olika externa kontofälten från **[!UICONTROL Connection settings]** -fliken.
+1. Kontakta din SMS-tjänstleverantör som förklarar hur du fyller i de olika externa kontofälten på fliken **[!UICONTROL Connection settings]**.
 
-   Kontakta sedan din leverantör, beroende på vilken som har valts, som ger dig värdet att ange i **[!UICONTROL SMSC implementation name]** fält.
+   Kontakta sedan din leverantör, beroende på vilken som valts, som ger dig värdet att ange i fältet **[!UICONTROL SMSC implementation name]**.
 
    Du kan definiera antalet anslutningar till providern per underordnat MTA-objekt. Som standard är den inställd på 1.
 
@@ -76,32 +76,32 @@ Gör så här:
 
    Mer information om detta finns i [det här avsnittet](#about-character-transliteration).
 
-1. I **[!UICONTROL Throughput and delays]** kan du ange maximal genomströmning av utgående meddelanden (&quot;MT&quot;, Mobile Terminated) i MT per sekund. Om du anger &quot;0&quot; i motsvarande fält är dataflödet obegränsat.
+1. På fliken **[!UICONTROL Throughput and delays]** kan du ange maximal genomströmning för utgående meddelanden (&quot;MT&quot;, Mobile Terminated) i MT per sekund. Om du anger &quot;0&quot; i motsvarande fält är dataflödet obegränsat.
 
    Samtliga fältvärden som motsvarar varaktighet måste fyllas i som sekunder.
 
-1. I **[!UICONTROL Mapping of encodings]** kan du definiera kodningar.
+1. På fliken **[!UICONTROL Mapping of encodings]** kan du definiera kodningar.
 
    Mer information om detta finns i [det här avsnittet](#about-text-encodings).
 
-1. I **[!UICONTROL SMSC specificities]** -fliken, **[!UICONTROL Send full phone number]** är inaktiverat som standard. Aktivera det inte om du vill respektera SMPP-protokollet och bara överföra siffror till servern för SMS-providern (SMSC).
+1. Alternativet **[!UICONTROL Send full phone number]** är inaktiverat som standard på fliken **[!UICONTROL SMSC specificities]**. Aktivera det inte om du vill respektera SMPP-protokollet och bara överföra siffror till servern för SMS-providern (SMSC).
 
    Eftersom vissa leverantörer kräver att&quot;+&quot;-prefixet används, bör du kontakta din leverantör och föreslå att du aktiverar det här alternativet om det behövs.
 
-   The **[!UICONTROL Enable TLS over SMPP]** kan du kryptera SMPP-trafik. Se denna [sida](sms-protocol.md) för mer information om detta.
+   Med kryssrutan **[!UICONTROL Enable TLS over SMPP]** kan du kryptera SMPP-trafik. Se denna [sida](sms-protocol.md) för mer information om detta.
 
-1. Om du konfigurerar en **[!UICONTROL Extended generic SMPP]** kan du konfigurera automatiska svar.
+1. Om du konfigurerar en **[!UICONTROL Extended generic SMPP]**-anslutning kan du konfigurera automatiska svar.
 
    Mer information om detta finns i [det här avsnittet](#automatic-reply).
 
 ## SMS-teckentranskribering {#about-character-transliteration}
 
-Teckentranskribering kan ställas in i ett externt SMPP-konto för mobil leverans, under **[!UICONTROL Mobile]** -fliken.
+Teckentranskribering kan ställas in i ett externt SMPP-konto för mobil leverans, på fliken **[!UICONTROL Mobile]**.
 
 Transkriberingen ersätter ett tecken i ett SMS med ett annat om det tecknet inte beaktas av GSM-standarden.
 
-* Om translitterering är **[!UICONTROL authorized]**, ersätts varje tecken som inte beaktas av ett GSM-tecken när meddelandet skickas. Bokstaven &quot;ë&quot; kommer exempelvis att ersättas med &quot;e&quot;.  Meddelandet ändras därför något men teckengränsen förblir densamma.
-* När transkriberingen är **[!UICONTROL not authorized]**, skickas varje meddelande som innehåller tecken som inte tas med i beräkningen i binärt format (Unicode): alla tecken skickas därför som de är. SMS-meddelanden som använder Unicode är dock begränsade till 70 tecken (eller 67 tecken per SMS för meddelanden som skickas i flera delar).  Om det maximala antalet tecken överskrids skickas flera meddelanden vilket kan medföra extra kostnader.
+* Om transkriberingen är **[!UICONTROL authorized]** ersätts varje tecken som inte beaktas av ett GSM-tecken när meddelandet skickas. Bokstaven &quot;ë&quot; kommer exempelvis att ersättas med &quot;e&quot;.  Meddelandet ändras därför något men teckengränsen förblir densamma.
+* När transkriberingen är **[!UICONTROL not authorized]** skickas varje meddelande som innehåller tecken som inte tas med i beräkningen i binärt format (Unicode): alla tecken skickas därför som de är. SMS-meddelanden som använder Unicode är dock begränsade till 70 tecken (eller 67 tecken per SMS för meddelanden som skickas i flera delar).  Om det maximala antalet tecken överskrids skickas flera meddelanden vilket kan medföra extra kostnader.
 
 >[!IMPORTANT]
 >
@@ -290,26 +290,26 @@ CR: Radretur
 
 **Avancerade tecken (räknas två gånger)**
 
-^ {} `[ ~ ]` | €
+^ { } `[ ~ ]` | €
 
 ## Textkodning {#about-text-encodings}
 
 När du skickar ett SMS kan Adobe Campaign använda en eller flera textkodningar.  Varje kodning har en egen specifik teckenuppsättning och avgör antalet tecken som får plats i ett SMS.
 
-När du konfigurerar ett nytt externt SMPP-konto för mobil leverans kan du definiera **[!UICONTROL Mapping of encodings]** i **[!UICONTROL Mobile]** -flik: **[!UICONTROL data_coding]** -fältet gör att Adobe Campaign kan kommunicera vilken kodning som används för SMSC.
+När du konfigurerar ett nytt externt SMPP-mobilleveranskonto kan du definiera **[!UICONTROL Mapping of encodings]** på fliken **[!UICONTROL Mobile]**: i fältet **[!UICONTROL data_coding]** kan Adobe Campaign kommunicera vilken kodning som används för SMSC.
 
 >[!NOTE]
 >
->Mappningen mellan **data_coding**-värdet och den kodning som faktiskt används är standardiserad.  Vissa SMSC har dock sin egen specifika mappning: i detta fall har **Adobe Campaign** administratören måste deklarera den här mappningen. Kontakta din leverantör för mer information.
+>Mappningen mellan **data_coding**-värdet och den kodning som faktiskt används är standardiserad.  Vissa SMSC har dock en egen specifik mappning: i det här fallet måste din **Adobe Campaign**-administratör deklarera den här mappningen. Kontakta din leverantör för mer information.
 
-Du kan deklarera **data_codings** och tvinga kodningen om det behövs: för att göra detta anger du en enda kodning i tabellen.
+Du kan deklarera **data_codings** och tvinga fram kodningen om det behövs. Om du vill göra det anger du en enda kodning i tabellen.
 
 * När ingen mappning av kodningar har definierats får kopplingen ett generiskt beteende:
 
    * Den försöker då använda GSM-kodning som den tilldelar värdet **data_coding = 0**.
    * Om GSM-kodningen misslyckas används **UCS2**-kodning som värdet **data_coding = 8** tilldelas till.
 
-* När du definierar de kodningar som du vill använda samt de länkade **[!UICONTROL data_coding]** fältvärden kommer Adobe Campaign att försöka använda den första kodningen i listan och därefter följande, om den första kodningen inte är möjlig.
+* När du definierar de kodningar som du vill använda samt de länkade **[!UICONTROL data_coding]**-fältvärdena, kommer Adobe Campaign att försöka använda den första kodningen i listan och sedan följande, om den första kodningen visar sig vara omöjlig.
 
 >[!IMPORTANT]
 >
@@ -321,7 +321,7 @@ Du kan deklarera **data_codings** och tvinga kodningen om det behövs: för att 
 
 När du konfigurerar en utökad allmän SMPP-anslutning kan du konfigurera automatiska svar.
 
-När en prenumerant svarar på ett SMS-meddelande som skickades till dem via Adobe Campaign och deras meddelande innehåller ett nyckelord som &quot;STOP&quot;, kan du konfigurera meddelanden som automatiskt skickas tillbaka till dem i **[!UICONTROL Automatic reply sent to the MO]** -avsnitt.
+När en prenumerant svarar på ett SMS-meddelande som skickades till dem via Adobe Campaign och deras meddelande innehåller ett nyckelord som &quot;STOP&quot;, kan du konfigurera meddelanden som automatiskt skickas tillbaka till dem i avsnittet **[!UICONTROL Automatic reply sent to the MO]**.
 
 >[!NOTE]
 >
@@ -333,27 +333,27 @@ Du kan även länka en åtgärd till ditt automatiska svar: **[!UICONTROL Send t
 
 ![](assets/extended_smpp_reply.png)
 
-Om du länkar **[!UICONTROL Remove from quarantine]** till ett automatiskt svar tas mottagarna som skickar motsvarande nyckelord automatiskt bort från karantänen.
+Om du länkar åtgärden **[!UICONTROL Remove from quarantine]** till ett automatiskt svar tas mottagarna som skickar motsvarande nyckelord automatiskt bort från karantänen.
 
-Mottagarna listas i **[!UICONTROL Non deliverables and addresses]** tabellen tillgänglig via **[!UICONTROL Administration]** > **[!UICONTROL Campaign Management]** > **[!UICONTROL Non deliverables Management]** -menyn.
+Mottagarna visas i tabellen **[!UICONTROL Non deliverables and addresses]** som är tillgänglig via menyn **[!UICONTROL Administration]** > **[!UICONTROL Campaign Management]** > **[!UICONTROL Non deliverables Management]**.
 
-* Om du vill skicka samma svar oavsett vilken kort kod det är lämnar du **[!UICONTROL Short code]** kolumnen är tom.
-* Om du vill skicka samma svar oavsett vilket nyckelord du använder lämnar du **[!UICONTROL Keyword]** kolumnen är tom.
-* Om du vill utföra en åtgärd utan att skicka ett svar lämnar du dialogrutan **[!UICONTROL Response]** kolumnen är tom. På så sätt kan du till exempel ta bort en användare som svarar med ett annat meddelande än&quot;STOP&quot; från karantänen.
+* Om du vill skicka samma svar oavsett den korta koden lämnar du kolumnen **[!UICONTROL Short code]** tom.
+* Om du vill skicka samma svar oavsett nyckelordet lämnar du kolumnen **[!UICONTROL Keyword]** tom.
+* Om du vill utföra en åtgärd utan att skicka ett svar lämnar du kolumnen **[!UICONTROL Response]** tom. På så sätt kan du till exempel ta bort en användare som svarar med ett annat meddelande än&quot;STOP&quot; från karantänen.
 
 Om du har flera externa konton som använder den utökade generiska SMPP-anslutningen med samma leverantörskonto kan följande problem uppstå: när du skickar ett svar på en kort kod kan den tas emot på någon av dina externa kontoanslutningar. Det automatiska svaret som skickas kunde därför inte vara det förväntade meddelandet.
 Du kan undvika detta genom att använda någon av följande lösningar, beroende på vilken leverantör du använder:
 
 * Skapa ett leverantörskonto för varje externt konto.
-* Använd **[!UICONTROL System type]** fält från **[!UICONTROL Mobile]** > **[!UICONTROL Connection settings]** för att särskilja varje kort kod. Fråga leverantören ett annat värde för varje konto.
+* Använd fältet **[!UICONTROL System type]** från fliken **[!UICONTROL Mobile]** > **[!UICONTROL Connection settings]** för att skilja på kortkoderna. Fråga leverantören ett annat värde för varje konto.
 
   ![](assets/extended_smpp_system-type.png)
 
-Stegen för att konfigurera ett externt konto med den utökade allmänna SMPP-anslutningen beskrivs i [Skapa ett externt SMPP-konto](#creating-an-smpp-external-account) -avsnitt.
+Stegen för att konfigurera ett externt konto med den utökade generiska SMPP-anslutningen beskrivs i avsnittet [Skapa ett externt SMPP-konto](#creating-an-smpp-external-account).
 
 ## Ändra leveransmallen {#changing-the-delivery-template}
 
-Adobe Campaign förser dig med en mall för att leverera till mobiler. Den här mallen är tillgänglig i **[!UICONTROL Resources > Templates > Delivery templates]** nod. Mer information finns i [Om mallar](about-templates.md) -avsnitt.
+Adobe Campaign förser dig med en mall för att leverera till mobiler. Den här mallen är tillgänglig i noden **[!UICONTROL Resources > Templates > Delivery templates]**. Mer information finns i avsnittet [Om mallar](about-templates.md).
 
 Om du vill leverera via SMS-kanal måste du skapa en mall där kanalkopplingen refereras.
 
@@ -361,8 +361,8 @@ För att behålla den inbyggda leveransmallen rekommenderar vi att du duplicerar
 
 I exemplet nedan skapar vi en mall för att leverera meddelanden via det SMPP-konto som aktiverats tidigare. Så här gör du:
 
-1. Gå till **[!UICONTROL Delivery templates]** nod.
-1. Högerklicka på **[!UICONTROL Send to mobiles]** mall och välj **[!UICONTROL Duplicate]**.
+1. Gå till noden **[!UICONTROL Delivery templates]**.
+1. Högerklicka på mallen **[!UICONTROL Send to mobiles]** och välj **[!UICONTROL Duplicate]**.
 
    ![](assets/s_user_mobile_template_change_01.png)
 
@@ -371,11 +371,11 @@ I exemplet nedan skapar vi en mall för att leverera meddelanden via det SMPP-ko
    ![](assets/s_user_mobile_template_change_02.png)
 
 1. Klicka på **[!UICONTROL Properties]**.
-1. I **[!UICONTROL General]** väljer du ett routningsläge som motsvarar det externa konto som du skapade i föregående steg.
+1. På fliken **[!UICONTROL General]** väljer du ett routningsläge som motsvarar det externa konto som du skapade i föregående steg.
 
    ![](assets/s_user_mobile_template_change_03.png)
 
-1. Klicka **[!UICONTROL Save]** för att skapa mallen.
+1. Klicka på **[!UICONTROL Save]** för att skapa mallen.
 
    ![](assets/s_user_mobile_template_list.png)
 

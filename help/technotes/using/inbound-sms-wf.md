@@ -21,7 +21,7 @@ ht-degree: 5%
 
 ## Implementering {#implementation}
 
-1. Lägg till ett tillägg i `nms:inSMS` schema på din Marketing-instans. Tillägget lägger till ett nytt attribut i `nms:inSMS` och håll reda på primärnyckeln för inSMS-posten som kommer från Mid-sourcing-instansen.
+1. Lägg till ett tillägg i schemat `nms:inSMS` på din Marketing-instans. Tillägget lägger till ett nytt attribut i `nms:inSMS`-schemat och håller reda på primärnyckeln för inSMS-posten som kommer från Mid-sourcing-instansen.
 
    ```xml
    <element img="nms:miniatures/mini-sms.png" label="Incoming SMS"
@@ -35,23 +35,23 @@ ht-degree: 5%
    </element>
    ```
 
-1. Om du vill använda ändringarna i scheman startar du guiden för databasuppdatering. Den här guiden är tillgänglig via **verktyg** > **Avancerat** > **Uppdatera databasstruktur**. Den kontrollerar om databasens fysiska struktur matchar dess logiska beskrivning och kör SQL-uppdateringsskripten. [Läs mer](../../configuration/using/updating-the-database-structure.md)
+1. Om du vill använda ändringarna i scheman startar du guiden för databasuppdatering. Den här guiden är tillgänglig via **Verktyg** > **Avancerat** > **Uppdatera databasstrukturen**. Den kontrollerar om databasens fysiska struktur matchar dess logiska beskrivning och kör SQL-uppdateringsskripten. [Läs mer](../../configuration/using/updating-the-database-structure.md)
 
-1. Stoppa och säkerhetskopiera arbetsflödet som innehåller **Inkommande SMS-aktivitet**.
+1. Stoppa och säkerhetskopiera arbetsflödet som innehåller aktiviteten **Inkommande SMS**.
 
-   Säkerhetskopiera motsvarande alternativpekare med följande format `SMS_MO_INDEX_{internal name of the workflow}_{name of the insms workflow activity}_{internal name of the external account to access the mid}`.
+   Säkerhetskopiera motsvarande alternativpekare med följande format: `SMS_MO_INDEX_{internal name of the workflow}_{name of the insms workflow activity}_{internal name of the external account to access the mid}`.
 
 [Läs mer om säkerhetskopiering](../../production/using/backup.md)
 
 1. (**VALFRITT**) Om du redan använder en Scheduler-aktivitet öppnar du arbetsflödet och konfigurerar om det enligt följande:
 
-   1. Replikera de aktuella inställningarna från **Schema** -fliken i **Inkommande SMS** aktivitet i din externa **Schemaläggare** aktivitet.
+   1. Replikera de aktuella inställningarna från fliken **Schema** i din **inkommande SMS**-aktivitet till din externa **Schemaläggaren**-aktivitet.
 
-   1. Inaktivera den aktuella inställningen i dialogrutan **Schema** flik för **Inkommande SMS** aktivitet.
+   1. Inaktivera den aktuella inställningen på fliken **Schema** i aktiviteten **Inkommande SMS**.
 
       ![](assets/inbound_sms_1.png)
 
-1. Uppdatera **Inkommande SMS** eget skript.
+1. Uppdatera det anpassade skriptet **Inbound SMS**.
 
    Ersätt nedanstående block. Observera att skriptet kan variera om du tidigare har anpassat den här koden.
 
@@ -73,7 +73,7 @@ ht-degree: 5%
 
    Följ förfrågorna nedan:
 
-   * Ange det verkliga värdet för `<EXTERNAL_ACCOUNT_ID>`, t,g, `var iExtAccountId=72733155`.
+   * Ange det verkliga värdet för `<EXTERNAL_ACCOUNT_ID>`, t.ex. `var iExtAccountId=72733155`.
    * Se till att du behåller följande element i det anpassade skriptet:
       * `_operation="insertOrUpdate"`
       * `_key="@midInSMSId,@extAccount-id"`

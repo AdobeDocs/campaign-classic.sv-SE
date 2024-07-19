@@ -34,7 +34,7 @@ Om du vill optimera framtagningen, användningen och varaktigheten av en rapport
    * Lägg till indikatorer i en befintlig rapport. Läs mer [i det här avsnittet](../../reporting/using/about-reports-creation-in-campaign.md)
    * Visa data i databasen. Läs mer [i det här avsnittet](../../reporting/using/about-descriptive-analysis.md)
    * Skapa en ny leveransrapport. Läs mer [i det här avsnittet](../../reporting/using/about-reports-creation-in-campaign.md)),
-   * Exportera data från Adobe Campaign-databasen (via ett arbetsflöde, se [det här avsnittet](../../workflow/using/about-workflows.md)
+   * Exportera data från Adobe Campaign-databasen (via ett arbetsflöde, se [det här avsnittet](../../workflow/using/about-workflows.md))
    * Skapa en pivottabell. Läs mer [i det här avsnittet](../../reporting/using/creating-a-table.md#creating-a-breakdown-or-pivot-table)
    * Utforska aggregerade data. Läs mer [i det här avsnittet](../../reporting/using/ac-cubes.md)
    * Använd en guide för att analysera data. Läs mer [i det här avsnittet](../../reporting/using/about-descriptive-analysis.md)
@@ -81,7 +81,7 @@ Du kan också beräkna rapporter under natten och automatiskt skapa en historik 
 
 ### Frågor {#queries}
 
-Vi rekommenderar att du använder SQL-frågor när det är möjligt och undviker JavaScript-efterbearbetning. Om det behövs kan du använda en skriptaktivitet i ett arbetsflöde och ta bort de data som används för beräkningen. Du kan också använda arkiverade data för att snabba upp bearbetningstiden.
+Vi rekommenderar att du använder SQL-frågor när det är möjligt och undviker efterbearbetning av JavaScript. Om det behövs kan du använda en skriptaktivitet i ett arbetsflöde och ta bort de data som används för beräkningen. Du kan också använda arkiverade data för att snabba upp bearbetningstiden.
 
 I det här fallet bör följande syntax användas:
 
@@ -113,4 +113,4 @@ Dessutom rekommenderar Adobe Campaign följande förbättringar:
 
 ### Exportera rapporter {#exporting-reports}
 
-Rapporter om export av Recommendations finns i [det här avsnittet](../../reporting/using/actions-on-reports.md#exporting-a-report).
+Recommendations som är specifikt för att exportera rapporter beskrivs i [det här avsnittet](../../reporting/using/actions-on-reports.md#exporting-a-report).

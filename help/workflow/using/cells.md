@@ -15,15 +15,15 @@ ht-degree: 8%
 
 
 
-The **[!UICONTROL Cells]** -aktiviteten ger en vy över de olika deluppsättningarna i form av datakolumner. Det underlättar delmängdsmanipulation och är även utformat för att uppmuntra personaliseringsmöjligheter.
+Aktiviteten **[!UICONTROL Cells]** ger en vy över de olika deluppsättningarna i form av datakolumner. Det underlättar delmängdsmanipulation och är även utformat för att uppmuntra personaliseringsmöjligheter.
 
 ![](assets/wf_split_cells.png)
 
-Den här aktiviteten kan konfigureras för att ange specifika parametrar baserat på användarnas behov. Som standard visas detaljerna för varje delmängd i ett dedikerat fönster via **[!UICONTROL Selection]** och **[!UICONTROL Advanced]** -tabbar. I exemplet nedan har formuläret ändrats: a **[!UICONTROL Data]** -fliken har lagts till för att aktivera associationen för ett erbjudande och en prioritetsnivå för varje delmängd.
+Den här aktiviteten kan konfigureras för att ange specifika parametrar baserat på användarnas behov. Som standard visas detaljerna för varje delmängd i ett dedikerat fönster via flikarna **[!UICONTROL Selection]** och **[!UICONTROL Advanced]**. I exemplet nedan har formuläret ändrats: en **[!UICONTROL Data]**-flik har lagts till för att aktivera associationen för ett erbjudande och en prioritetsnivå för varje delmängd.
 
 ![](assets/wf_split_cells_with_customization.png)
 
-Följande information har lagts till i arbetsflödesformuläret (i **[!UICONTROL Administration > Configurations > Input forms]** nod i Adobe Campaign):
+Följande information har lagts till i arbetsflödesformuläret (i noden **[!UICONTROL Administration > Configurations > Input forms]** i Adobe Campaign-trädet) för den här konfigurationen:
 
 ```
 <container img="nms:miniatures/mini-enrich.png" label="Data">

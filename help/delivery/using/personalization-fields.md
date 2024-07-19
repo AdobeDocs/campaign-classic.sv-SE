@@ -17,7 +17,7 @@ ht-degree: 8%
 
 Personaliseringsfält används för att personalisera innehållet i levererade meddelanden på första nivån. Fälten som infogas i ett huvudinnehåll visar var data från den valda datakällan ska infogas.
 
-Ett exempel är anpassningsfältet med **&lt;%= mottagare.Efternamn %>** anger att Adobe Campaign ska infoga mottagarens namn i databasen (mottagartabellen).
+I anpassningsfältet med syntaxen **&lt;%= mottagare.LastName %>** anges till exempel att Adobe Campaign ska infoga namnet på mottagaren i databasen (mottagartabellen).
 
 ![](assets/do-not-localize/how-to-video.png) [Upptäck den här funktionen i en video](#personalization-fields-video)
 
@@ -34,7 +34,7 @@ Anpassningsfält kan komma från två typer av datakällor, beroende på valt le
 
 >[!NOTE]
 >
->En Adobe Campaign-personaliseringstagg har alltid följande format **&lt;%=table.field%>**.
+>En Adobe Campaign-personaliseringstagg har alltid följande format: **&lt;%=table.field%>**.
 
 ## Infoga ett anpassningsfält {#inserting-a-personalization-field}
 
@@ -42,20 +42,20 @@ Om du vill infoga anpassningsfält klickar du på listruteikonen som är tillgä
 
 ![](assets/s_ncs_user_add_custom_field.png)
 
-När du har valt en datakälla (mottagarfält eller filfält), kommer infogningen att ha formen av ett kommando som tolkas av Adobe Campaign och ersätts av fältets värde för en viss mottagare. Den fysiska ersättningen kan sedan visas i **[!UICONTROL Preview]** -fliken.
+När du har valt en datakälla (mottagarfält eller filfält), kommer infogningen att ha formen av ett kommando som tolkas av Adobe Campaign och ersätts av fältets värde för en viss mottagare. Den fysiska ersättningen kan sedan visas på fliken **[!UICONTROL Preview]**.
 
 ## Exempel på anpassningsfält {#personalization-fields-example}
 
 Vi skapar ett e-postmeddelande där vi först infogar namnet på mottagaren och sedan lägger till datumet då profilen skapades i meddelandets brödtext. Så här gör du:
 
 1. Skapa en ny leverans eller öppna en befintlig e-posttypsleverans.
-1. Klicka på **[!UICONTROL Subject]** om du vill redigera meddelandets ämne och ange ett ämne.
-1. Ange &quot; **[!UICONTROL Special offer for]** &quot; och använd knappen i verktygsfältet för att infoga ett anpassningsfält. Välj **[!UICONTROL Recipients>Title]**.
+1. Klicka på **[!UICONTROL Subject]** i leveransguiden för att redigera meddelandets ämne och ange ett ämne.
+1. Ange **[!UICONTROL Special offer for]** och använd knappen i verktygsfältet för att infoga ett anpassningsfält. Välj **[!UICONTROL Recipients>Title]**.
 
    ![](assets/s_ncs_user_insert_custom_field.png)
 
 1. Upprepa åtgärden för att infoga namnet på mottagaren. Infoga mellanslag mellan alla anpassningsfält.
-1. Klicka **[!UICONTROL OK]** för att validera.
+1. Klicka på **[!UICONTROL OK]** för att validera.
 1. Infoga personaliseringen i meddelandetexten. Det gör du genom att klicka i meddelandeinnehållet och klicka på fältinfogningsknappen.
 1. Välj **[!UICONTROL Recipient>Other...]**.
 
@@ -65,17 +65,17 @@ Vi skapar ett e-postmeddelande där vi först infogar namnet på mottagaren och 
 
    ![](assets/s_ncs_user_insert_custom_field_c.png)
 
-1. Klicka på **[!UICONTROL Preview]** för att visa personaliseringsresultatet. Du måste välja en mottagare för att kunna visa mottagarens meddelande.
+1. Klicka på fliken **[!UICONTROL Preview]** för att visa personaliseringsresultatet. Du måste välja en mottagare för att kunna visa mottagarens meddelande.
 
    ![](assets/s_ncs_user_insert_custom_field_d.png)
 
    >[!NOTE]
    >
-   >När en leverans ingår i ett arbetsflöde kan du använda data från den tillfälliga arbetsflödestabellen. Dessa data är grupperade i **[!UICONTROL Target extension]** -menyn. Mer information om detta finns i [det här avsnittet](../../workflow/using/data-life-cycle.md#target-data).
+   >När en leverans ingår i ett arbetsflöde kan du använda data från den tillfälliga arbetsflödestabellen. Dessa data grupperas på menyn **[!UICONTROL Target extension]**. Mer information om detta finns i [det här avsnittet](../../workflow/using/data-life-cycle.md#target-data).
 
 ## Optimera personalisering {#optimizing-personalization}
 
-Ni kan optimera personaliseringen med ett dedikerat alternativ: **[!UICONTROL Prepare the personalization data with a workflow]**, finns i **[!UICONTROL Analysis]** -fliken för leveransegenskaperna. Mer information om hur du analyserar leveransen finns i [det här avsnittet](steps-validating-the-delivery.md#analyzing-the-delivery).
+Du kan optimera personalisering med ett dedikerat alternativ: **[!UICONTROL Prepare the personalization data with a workflow]**, som finns på fliken **[!UICONTROL Analysis]** i leveransegenskaperna. Mer information om hur du analyserar leveransen finns i [det här avsnittet](steps-validating-the-delivery.md#analyzing-the-delivery).
 
 Under leveransanalysen skapar och kör det här alternativet automatiskt ett arbetsflöde som lagrar alla data som är länkade till målet i en tillfällig tabell, inklusive data från tabeller som är länkade i FDA.
 
@@ -86,9 +86,9 @@ Om du till exempel får prestandaproblem när du levererar till ett stort antal 
 Följ stegen nedan om du vill använda det här alternativet:
 
 1. Skapa en kampanj. Mer information om detta finns i [det här avsnittet](../../campaign/using/setting-up-marketing-campaigns.md#creating-a-campaign).
-1. I **[!UICONTROL Targeting and workflows]** fliken med kampanjen, lägg till en **Fråga** till ditt arbetsflöde. Mer information om hur du använder den här aktiviteten finns i [det här avsnittet](../../workflow/using/query.md).
-1. Lägg till en **[!UICONTROL Email delivery]** till arbetsflödet och öppna det. Mer information om hur du använder den här aktiviteten finns i [det här avsnittet](../../workflow/using/delivery.md).
-1. Gå till **[!UICONTROL Analysis]** -fliken i **[!UICONTROL Delivery properties]** och väljer **[!UICONTROL Prepare the personalization data with a workflow]** alternativ.
+1. Lägg till en **Query**-aktivitet i arbetsflödet på fliken **[!UICONTROL Targeting and workflows]** i kampanjen. Mer information om hur du använder den här aktiviteten finns i [det här avsnittet](../../workflow/using/query.md).
+1. Lägg till en **[!UICONTROL Email delivery]**-aktivitet i arbetsflödet och öppna den. Mer information om hur du använder den här aktiviteten finns i [det här avsnittet](../../workflow/using/delivery.md).
+1. Gå till fliken **[!UICONTROL Analysis]** i **[!UICONTROL Delivery properties]** och välj alternativet **[!UICONTROL Prepare the personalization data with a workflow]**.
 
    ![](assets/perso_optimization.png)
 
@@ -98,7 +98,7 @@ När analysen är klar lagras personaliseringsdata i ett temporärt register via
 
 Det här arbetsflödet visas inte i Adobe Campaign gränssnitt. Det är bara tänkt att vara ett tekniskt sätt att snabbt lagra och hantera personaliseringsdata.
 
-När analysen är klar går du till arbetsflödet **[!UICONTROL Properties]** och väljer **[!UICONTROL Variables]** -fliken. Där ser du namnet på den temporära tabellen som du kan använda för att göra ett SQL-anrop för att visa de ID som den innehåller.
+När analysen är klar går du till arbetsflödet **[!UICONTROL Properties]** och väljer fliken **[!UICONTROL Variables]**. Där ser du namnet på den temporära tabellen som du kan använda för att göra ett SQL-anrop för att visa de ID som den innehåller.
 
 ![](assets/perso_optimization_temp_table.png)
 
@@ -106,7 +106,7 @@ När analysen är klar går du till arbetsflödet **[!UICONTROL Properties]** oc
 
 Om du vill förbättra leveransskyddet kan du ange en tidsgräns för personaliseringsfasen.
 
-I **[!UICONTROL Delivery]** -fliken i **[!UICONTROL Delivery properties]** väljer du ett maxvärde i sekunder för **[!UICONTROL Maximum personalization run time]** alternativ.
+På fliken **[!UICONTROL Delivery]** i **[!UICONTROL Delivery properties]** väljer du ett maxvärde i sekunder för alternativet **[!UICONTROL Maximum personalization run time]**.
 
 Om personaliseringsfasen överskrider den maximala tiden som du anger i det här fältet avbryts processen under förhandsgranskningen eller sändningen och ett felmeddelande visas och leveransen misslyckas.
 
@@ -116,15 +116,15 @@ Standardvärdet är 5 sekunder.
 
 Om du ställer in det här alternativet på 0 kommer det inte att finnas någon tidsgräns för personaliseringsfasen.
 
-## Fliken Personalisering {#personalization-tab}
+## Personalization tab {#personalization-tab}
 
-I Leveransegenskaper har du fliken Personalisering.
+På fliken Leveransegenskaper har du en Personalization-flik.
 
-Du kan lägga till data i profilfrågan för måldimensionen genom att klicka på **&quot;Redigera inläsningsfråga för mottagarprofil&quot;**. Du kan använda de data som extraheras direkt i ett uttryck för att extrahera det du verkligen behöver. Dessa data läggs till i sammanhanget.
+Du kan lägga till data i profilfrågan för måldimensionen genom att klicka på **&quot;Redigera inläsningsfrågan för mottagarprofilen&quot;**. Du kan använda de data som extraheras direkt i ett uttryck för att extrahera det du verkligen behöver. Dessa data läggs till i sammanhanget.
 
 ![](assets/persotab-edit.png){zoomable="yes"}
 
-Om de data du vill lägga till inte finns i måldimensionen kan du klicka på **&quot;Lägg till objekt i körningskontexten för skripten&quot;**.
+Om de data du vill lägga till inte finns i måldimensionen kan du klicka på **Lägg till objekt i körningskontexten för skripten**.
 
 ![](assets/persotab_addobjects.png){zoomable="yes"}
 
@@ -142,4 +142,4 @@ Lär dig hur du lägger till ett personaliseringsfält på ämnesraden och i inn
 
 >[!VIDEO](https://video.tv.adobe.com/v/24925?quality=12)
 
-Det finns fler videor med Campaign Classic om hur man gör [här](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=sv).
+Ytterligare Campaign Classic om instruktionsvideor finns [här](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=sv).

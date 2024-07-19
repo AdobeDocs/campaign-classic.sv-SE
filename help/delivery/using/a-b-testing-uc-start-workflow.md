@@ -17,7 +17,7 @@ ht-degree: 5%
 
 
 
-1. Klicka **[!UICONTROL Start]** arbetsflödet.
+1. Klicka på **[!UICONTROL Start]** i arbetsflödet.
 
    ![](assets/use_case_abtesting_startwkfl_001.png)
 

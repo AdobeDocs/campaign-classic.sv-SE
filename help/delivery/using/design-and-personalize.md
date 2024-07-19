@@ -15,20 +15,20 @@ ht-degree: 3%
 
 # Skapa personaliserat innehåll {#build-personalized-content}
 
-När du utformar meddelandeinnehållet bör du undvika vanliga problem som kan hindra dig från att utföra leveransen. För det mesta är möjliga fel relaterade till [personalisering](about-personalization.md), [formatera](defining-the-email-content.md#message-content) och [bilder](defining-the-email-content.md#adding-images).
+När du utformar meddelandeinnehållet bör du undvika vanliga problem som kan hindra dig från att utföra leveransen. Oftast är möjliga fel relaterade till [personalisering](about-personalization.md), [formatering](defining-the-email-content.md#message-content) och [bilder](defining-the-email-content.md#adding-images).
 
 ## Optimera personalisering {#optimize-personalization}
 
 För att undvika vanliga problem som kan hindra dig från att utföra leveransen och för att förbättra mottagarnas upplevelse kan du anpassa dina meddelanden med Adobe Campaign.
 
 Du kan använda mottagarnas data som lagras i Adobe Campaign-databasen, eller som samlats in via spårning, landningssidor, prenumerationer osv.
-Grundläggande om personalisering presenteras i [det här avsnittet](personalization-fields.md).
+Grundläggande om Personalization presenteras i [det här avsnittet](personalization-fields.md).
 
 Se till att meddelandeinnehållet är rätt utformat för att undvika fel, som vanligtvis är relaterade till personalisering.
 
-**Tips**: I personaliseringsfält som kommer från externa filer från tredjepartsleverantörer kan externt HTML-innehåll vara fel. Du undviker detta genom att kontrollera syntaxen, användning av taggar, tecken osv. En Adobe Campaign-personaliseringstagg har till exempel alltid följande format: &lt;%=table.field%>. Mer information finns i [det här avsnittet](about-personalization.md).
+**Tips**: I anpassningsfält som kommer från externa filer från tredjepartsleverantörer kan externt HTML-innehåll vara fel. Du undviker detta genom att kontrollera syntaxen, användning av taggar, tecken osv. En Adobe Campaign-personaliseringstagg har till exempel alltid följande format: &lt;%=table.field%>. Mer information finns i [det här avsnittet](about-personalization.md).
 
-Felaktig användning av parametrar i personaliseringsblock kan vara ett problem. Variabler i JavaScript bör till exempel användas enligt följande:
+Felaktig användning av parametrar i personaliseringsblock kan vara ett problem. Variabler i JavaScript bör till exempel användas på följande sätt:
 
     &lt;%
     
@@ -36,9 +36,9 @@ Felaktig användning av parametrar i personaliseringsblock kan vara ett problem.
     
     %>
 
-Mer information om personaliseringsblock finns i [det här avsnittet](personalization-blocks.md).
+Mer information om anpassningsblock finns i [det här avsnittet](personalization-blocks.md).
 
-Ni kan förbereda personaliseringsdata i ett arbetsflöde för att förbättra analysen av leveransförberedelser. Detta bör användas särskilt om personaliseringsdata kommer från en extern tabell via FDA (Federated Data Access). Det här alternativet beskrivs i detta [det här avsnittet](personalization-fields.md#optimizing-personalization)
+Ni kan förbereda personaliseringsdata i ett arbetsflöde för att förbättra analysen av leveransförberedelser. Detta bör användas särskilt om personaliseringsdata kommer från en extern tabell via FDA (Federated Data Access). Det här alternativet beskrivs i det här [här avsnittet](personalization-fields.md#optimizing-personalization)
 
 ## Bygg optimerat innehåll {#optimize-content}
 
@@ -56,7 +56,7 @@ När du skapar e-postmeddelanden bör du tänka på de allmänna bästa metodern
 
 ### Subject line
 
-Arbeta på [ämnesrad](defining-the-email-content.md#message-content) för att förbättra öppningsfrekvenserna:
+Arbeta på [ärenderaden](defining-the-email-content.md#message-content) för att förbättra öppna frekvenser:
 
 * Undvik för långa motiv. Använd högst 50 tecken
 
@@ -70,15 +70,15 @@ Inkludera alltid en länk för spegelsida. Önskad position är högst upp i e-p
 
 ### Länk för att avbryta prenumeration
 
-Länken för att avbeställa prenumerationer är viktig. Den måste vara synlig och giltig och formuläret måste vara funktionellt. Som standard är en [typologiregel](steps-validating-the-delivery.md#validation-process-with-typologies) kontrollerar om en avanmälningslänk har inkluderats och genererar en varning om den saknas.
+Länken för att avbeställa prenumerationer är viktig. Den måste vara synlig och giltig och formuläret måste vara funktionellt. Som standard kontrollerar en [typologiregel](steps-validating-the-delivery.md#validation-process-with-typologies) om en avanmälningslänk har inkluderats och genererar en varning om den saknas när meddelandet analyseras.
 
-**Tips**: Eftersom mänskliga fel alltid är möjliga bör du kontrollera att länken för avanmälan fungerar korrekt före varje gång du skickar. När du t.ex. skickar ett bevis ska du kontrollera att länken är giltig, att formuläret är online och att fältet för att inte längre kontakta den här mottagaren har ändrats till Ja.
+**Tips**: Eftersom ett mänskligt fel alltid är möjligt bör du kontrollera att avanmälningslänken fungerar korrekt innan du skickar iväg den. När du t.ex. skickar ett bevis ska du kontrollera att länken är giltig, att formuläret är online och att fältet för att inte längre kontakta den här mottagaren har ändrats till Ja.
 
-Lär dig hur du infogar en länk för avanmälan [i det här avsnittet](personalization-blocks.md#personalization-blocks-example).
+Lär dig hur du infogar en länk [för avanmälan i det här avsnittet](personalization-blocks.md#personalization-blocks-example).
 
 ### E-poststorlek
 
-För att undvika problem med prestanda och leverans är den rekommenderade maxstorleken för ett e-postmeddelande ungefär **35 kB**. Kontrollera meddelandestorleken genom att gå till **[!UICONTROL Preview]** och välj en testprofil. När meddelandet har genererats visas meddelandestorleken i det övre högra hörnet.
+För att undvika problem med prestanda och leverans är den rekommenderade maximala storleken på ett e-postmeddelande cirka **35 kB**. Om du vill kontrollera meddelandestorleken går du till fliken **[!UICONTROL Preview]** och väljer en testprofil. När meddelandet har genererats visas meddelandestorleken i det övre högra hörnet.
 
 Tänk på följande om du vill hålla din e-post under gränsen:
 
@@ -94,7 +94,7 @@ Kontrollera att du har testat alla ändringar innan du skickar det
 
 Som standard uppfyller antalet tecken i ett SMS GSM-system (Global System for Mobile Communications). SMS-meddelanden som använder GSM-kodning kan innehålla högst 160 tecken eller 153 tecken per SMS för meddelanden som skickas i flera delar.
 
-Translitterering består i att ersätta ett tecken i ett SMS med ett annat om det tecknet inte beaktas av GSM-standarden. Observera att om du infogar anpassningsfält i innehållet i SMS-meddelandet kan det medföra tecken som GSM-kodningen inte tar hänsyn till. Du kan auktorisera teckentranskribering genom att markera motsvarande ruta på fliken SMPP-kanalinställningar i motsvarande **[!UICONTROL External account]**.
+Translitterering består i att ersätta ett tecken i ett SMS med ett annat om det tecknet inte beaktas av GSM-standarden. Observera att om du infogar anpassningsfält i innehållet i SMS-meddelandet kan det medföra tecken som GSM-kodningen inte tar hänsyn till. Du kan godkänna teckentranskribering genom att markera motsvarande ruta på fliken SMPP-kanalinställningar i motsvarande **[!UICONTROL External account]**.
 Läs mer [i det här avsnittet](sms-set-up.md#creating-an-smpp-external-account).
 
 **Tips**:
@@ -111,7 +111,7 @@ Kontrollera följande element för att undvika vanliga formateringsfel:
 
 * Korrigera **datumformatering**: Adobe Campaign tillhandahåller datumformateringsfunktioner för JavaScript-mallar och XSL-formatmallar. [Läs mer](formatting.md#date-display)
 
-* Användning av **auktoriserade tecken** i e-postmeddelanden: listan med giltiga tecken för e-postadresser definieras i alternativet XtkEmail_Characters. Lär dig hur du får tillgång till Campaign-alternativ [i det här avsnittet](../../installation/using/configuring-campaign-options.md). För att specialtecken ska kunna hanteras på rätt sätt måste Adobe Campaign vara installerat i Unicode.
+* Användning av **tillåtna tecken** i e-postmeddelanden: listan över giltiga tecken för e-postadresser definieras i alternativet XtkEmail_Characters. Lär dig hur du kommer åt Campaign-alternativen [i det här avsnittet](../../installation/using/configuring-campaign-options.md). För att specialtecken ska kunna hanteras på rätt sätt måste Adobe Campaign vara installerat i Unicode.
 
 * Konfiguration av **E-postautentisering**: Kontrollera att e-posthuvudena innehåller DKIM-signaturen. Med DKIM-autentisering (Domain Keys Identified Mail) kan den mottagande e-postservern verifiera att ett meddelande verkligen skickades av den person eller enhet som det hävdades ha skickats av och om meddelandeinnehållet ändrades mellan den tidpunkt det ursprungligen skickades (och DKIM &quot;signerade&quot;) och den tidpunkt det togs emot. Den här standarden använder vanligtvis domänen i sidhuvudet Från eller Avsändare. Mer information finns i [Adobe Deliverability Best Practice Guide](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html#authentication).
 
@@ -123,7 +123,7 @@ Responsiv design säkerställer att ett e-postmeddelande återges optimalt för 
 
 * Använd förhandsgranskningsläget och skicka provtryck för att testa återgivningen på så många enheter som möjligt
 
-* Modulen Adobe Campaign Classic Digital Content Editor (DCE) innehåller vissa responsiva designformaterade mallar för mobiler som är tillgängliga via **[!UICONTROL Resources]** > **[!UICONTROL Templates]** > **[!UICONTROL Content templates]**. Läs mer [i den här artikeln](https://theblog.adobe.com/responsive-email-design-101/)
+* Modulen Adobe Campaign Classic Digital Content Editor (DCE) innehåller responsiva designformaterade mallar för mobiler som är tillgängliga via **[!UICONTROL Resources]** > **[!UICONTROL Templates]** > **[!UICONTROL Content templates]**. Läs mer [i den här artikeln](https://theblog.adobe.com/responsive-email-design-101/)
 
 ## Hantera bilder {#manage-images}
 
@@ -149,14 +149,14 @@ För att vara tillgängliga utifrån måste de bilder som används i e-postmedde
 
 * Du kan kontrollera om instanskonfigurationen aktiverar offentlig resurshantering. [Läs mer](../../installation/using/deploying-an-instance.md#managing-public-resources)
 
-* I leveransguiden kan du importera en HTML-sida som innehåller bilder eller infoga bilder direkt med redigeraren i HTML via **[!UICONTROL Image]** -ikon. [Läs mer](defining-the-email-content.md#adding-images)
+* Från leveransguiden kan du importera en HTML-sida som innehåller bilder eller infoga bilder direkt med redigeraren i HTML via ikonen **[!UICONTROL Image]**. [Läs mer](defining-the-email-content.md#adding-images)
 
-* Om bilderna inte visas kontrollerar du att bilderna är tillgängliga på servern. Det gör du genom att klicka på fliken Källa i leveransfönstret. Hitta bilderna och kopiera och klistra in URL:en för varje bild i en webbläsare. Om bilderna inte visas kontaktar du IT-administratören eller tredjepartsleverantören som tillhandahåller ditt leveransinnehåll.
+* Om bilderna inte visas kontrollerar du att bilderna är tillgängliga på servern. Det gör du genom att klicka på fliken Source i leveransfönstret. Hitta bilderna och kopiera och klistra in URL:en för varje bild i en webbläsare. Om bilderna inte visas kontaktar du IT-administratören eller tredjepartsleverantören som tillhandahåller ditt leveransinnehåll.
 
 ## Förhandsgranska meddelandet {#preview-msg}
 
 Adobe rekommenderar att du förhandsgranskar ditt meddelande för att kontrollera hur det är anpassat och hur mottagarna ser det.
 
-* I leveransguiden kan du **[!UICONTROL Preview]** kan du visa återgivningen av varje innehåll för en mottagare. Anpassningsfälten och de villkorliga elementen i innehållet ersätts med motsvarande information för den valda profilen. [Läs mer](defining-the-email-content.md#message-content)
+* I leveransguiden kan du på underfliken **[!UICONTROL Preview]** visa återgivningen av varje innehåll för en mottagare. Anpassningsfälten och de villkorliga elementen i innehållet ersätts med motsvarande information för den valda profilen. [Läs mer](defining-the-email-content.md#message-content)
 
-* En automatisk skräppostkontroll utförs under varje förhandsgranskning. I **[!UICONTROL Preview]** underflik, kontrollera [SpamAssassin](spamassassin.md) Spam-poäng.  Klicka **[!UICONTROL More...]** om du vill veta mer om varningen.  Innan du gör det kontrollerar du att SpamAssets är korrekt installerat och konfigurerat på Adobe Campaign programserver. [Läs mer](../../installation/using/configuring-spamassassin.md)
+* En automatisk skräppostkontroll utförs under varje förhandsgranskning. På underfliken **[!UICONTROL Preview]** kontrollerar du [SpamAssassin](spamassassin.md)-spampoäng.  Klicka på **[!UICONTROL More...]** om du vill veta mer om varningen.  Innan du gör det kontrollerar du att SpamAssets är korrekt installerat och konfigurerat på Adobe Campaign programserver. [Läs mer](../../installation/using/configuring-spamassassin.md)

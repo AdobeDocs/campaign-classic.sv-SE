@@ -14,7 +14,7 @@ ht-degree: 3%
 
 # Databasmappning{#database-mapping}
 
-SQL-mappningen för exempelschemat som beskrivs [på den här sidan](schema-structure.md) genererar följande XML-dokument:
+SQL-mappningen för exempelschemat som beskrivs [ på den här sidan](schema-structure.md) genererar följande XML-dokument:
 
 ```sql
 <schema mappingType="sql" name="recipient" namespace="cus" xtkschema="xtk:schema">
@@ -35,7 +35,7 @@ SQL-mappningen för exempelschemat som beskrivs [på den här sidan](schema-stru
 </schema>
 ```
 
-Rotelementet i schemat har ändrats till **`<srcschema>`** till **`<schema>`**.
+Schemats rotelement har ändrats till **`<srcschema>`** till **`<schema>`**.
 
 Den andra typen av dokument genereras automatiskt från källschemat och kallas helt enkelt för schema.
 
@@ -45,15 +45,15 @@ Namnreglerna för SQL är följande:
 
 * **table**: sammanfogning av schemanamnrymden och namnet
 
-  I det här exemplet anges namnet på tabellen via huvudelementet i schemat i **sqltable** attribute:
+  I vårt exempel anges namnet på tabellen via huvudelementet i schemat i attributet **sqltable**:
 
   ```sql
   <element name="recipient" sqltable="CusRecipient">
   ```
 
-* **fält**: elementets namn föregås av ett prefix som definierats enligt typ: &#39;i&#39; för heltal, &#39;d&#39; för double, &#39;s&#39; för sträng, &#39;ts&#39; för datum, osv.
+* **field**: namnet på elementet föregås av ett prefix som definierats enligt typen: &#39;i&#39; för heltal, &#39;d&#39; för double, &#39;s&#39; för sträng, &#39;ts&#39; för datum, osv.
 
-  Fältnamnet anges via **sqlname** attribut för varje typ **`<attribute>`** och **`<element>`**:
+  Fältnamnet anges via attributet **sqlname** för varje typ **`<attribute>`** och **`<element>`**:
 
   ```sql
   <attribute desc="Email address of recipient" label="Email" length="80" name="email" sqlname="sEmail" type="string"/> 
@@ -80,11 +80,11 @@ SQL-fältbegränsningarna är följande:
 
 ## XML-fält {#xml-fields}
 
-Som standard är alla  **`<attribute>`** och **`<element>`** -typed-element mappas till ett SQL-fält i databchematabellen. Du kan emellertid referera till det här fältet i XML i stället för SQL, vilket betyder att data lagras i ett PM-fält (&quot;mData&quot;) i tabellen som innehåller värdena för alla XML-fält. Lagringen av dessa data är ett XML-dokument som observerar schemastrukturen.
+Som standard mappas alla element av typen **`<attribute>`** och **`<element>`** till ett SQL-fält i databchematabellen. Du kan emellertid referera till det här fältet i XML i stället för SQL, vilket betyder att data lagras i ett PM-fält (&quot;mData&quot;) i tabellen som innehåller värdena för alla XML-fält. Lagringen av dessa data är ett XML-dokument som observerar schemastrukturen.
 
-Om du vill fylla i ett fält i XML måste du lägga till **xml** ett attribut med värdet &quot;true&quot; för det berörda elementet.
+Om du vill fylla i ett fält i XML måste du lägga till attributet **xml** med värdet &quot;true&quot; till det aktuella elementet.
 
-**Exempel**: här är två exempel på hur XML-fält används.
+**Exempel**: Här är två exempel på hur XML-fält används.
 
 * Flerradskommentarfält:
 
@@ -119,7 +119,7 @@ Ett index deklareras från huvudelementet i dataschemat.
 Indexen följer följande regler:
 
 * Ett index kan referera till ett eller flera fält i tabellen
-* Ett index kan vara unikt (för att undvika dubbletter) i alla fält om **unik** -attributet innehåller värdet &quot;true&quot;
+* Ett index kan vara unikt (för att undvika dubbletter) i alla fält om attributet **unique** innehåller värdet &quot;true&quot;
 * Indexets SQL-namn bestäms av tabellens SQL-namn och indexets namn
 
 >[!NOTE]

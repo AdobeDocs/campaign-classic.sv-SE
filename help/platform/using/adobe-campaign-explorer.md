@@ -20,13 +20,13 @@ ht-degree: 1%
 
 Utforskaren i Adobe Campaign är tillgänglig via verktygsfältsikonen. Du får tillgång till Adobe Campaign alla funktioner, konfigurationsskärmar och en mer detaljerad översikt över några av plattformselementen.
 
-The **[!UICONTROL Explorer]** arbetsytan är uppdelad i tre zoner:
+Arbetsytan **[!UICONTROL Explorer]** är uppdelad i tre zoner:
 
 ![](assets/s_ncs_user_navigation.png)
 
-**1 - träd**: du kan anpassa innehållet i trädet (lägga till, flytta eller ta bort noder). Den här proceduren är endast avsedd för expertanvändare. Mer information finns i  [det här avsnittet](#about-navigation-hierarchy).).
+**1 - träd**: du kan anpassa innehållet i trädet (lägga till, flytta eller ta bort noder). Den här proceduren är endast avsedd för expertanvändare. Mer information finns i [det här avsnittet](#about-navigation-hierarchy).)
 
-**2 - Lista**: du kan filtrera den här listan, köra sökningar, lägga till information eller sortera data. [Läs mer](adobe-campaign-ui-lists.md).
+**2 - Lista**: du kan filtrera listan, köra sökningar, lägga till information eller sortera data. [Läs mer](adobe-campaign-ui-lists.md).
 
 **3 - Information**: du kan visa information om det markerade elementet. Med ikonen i det övre högra avsnittet kan du visa den här informationen i helskärmsläge.
 
@@ -38,7 +38,7 @@ Den vy som visas är en lista som är associerad med ett schema och ett inmatnin
 
 ![](assets/d_ncs_integration_navigation.png)
 
-Om du vill lägga till en ny mapp i trädet högerklickar du på den mapp i grenen där du vill infoga en mapp och väljer **[!UICONTROL Add new folder]** . På snabbmenyn väljer du vilken typ av fil som ska skapas.
+Om du vill lägga till en ny mapp i trädet högerklickar du på den mapp i grenen där du vill infoga en mapp och väljer **[!UICONTROL Add new folder]**. På snabbmenyn väljer du vilken typ av fil som ska skapas.
 
 ![](assets/d_ncs_integration_navigation_create.png)
 
@@ -65,7 +65,7 @@ Lär dig hur du anger behörigheter för mappar [i det här avsnittet](access-ma
    * A1 - importmottagare, börjar 10:00;
    * A2 - importbiljetter, börjar klockan 11:00.
 
-* **Skapa mallar som användarna kan börja med**
+* **Skapa mallar som användare kan börja med**
 
   Skapa leveransmallar, arbetsflödesmallar och kampanjmallar som är specifika för användarna. Strukturen kan spara tid och säkerställa att rätt leveranskarta och -typologier används för varje användare.
 
@@ -77,10 +77,10 @@ För optimal navigering och användbarhet rekommenderar Adobe att du använder e
 >
 >Upplösningar på mindre än 1 600 × 900 pixlar stöds inte av Adobe Campaign.
 
-I **[!UICONTROL Explorer]** arbetsytan, om vissa delar av **[!UICONTROL Details]** -zonen verkar vara trunkerad, expandera den med pilen ovanför zonen eller klicka på **[!UICONTROL Enlarge]** -knappen.
+Om vissa delar av **[!UICONTROL Details]**-zonen verkar vara trunkerade på arbetsytan **[!UICONTROL Explorer]** expanderar du den med pilen över zonen eller klickar på knappen **[!UICONTROL Enlarge]**.
 
 ![](assets/s_ncs_user_resolution.png)
 
 ## Bläddra bland och anpassa listor {#browsing-lists}
 
-Lär dig att bläddra i, hantera och anpassa listor [i det här avsnittet](adobe-campaign-ui-lists.md).
+Lär dig hur du bläddrar i, hanterar och anpassar listor [i det här avsnittet](adobe-campaign-ui-lists.md).

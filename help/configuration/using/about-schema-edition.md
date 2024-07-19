@@ -20,13 +20,13 @@ Adobe Campaign använder datascheman för att
 * Definiera länkar mellan olika dataobjekt i programmet Campaign.
 * Definiera och beskriva de enskilda fälten som ingår i varje objekt.
 
-Om du vill få en bättre förståelse för de inbyggda tabellerna i Campaign och deras interaktion kan du läsa [det här avsnittet](https://helpx.adobe.com/se/campaign/kb/acc-datamodel.html).
+Mer information om inbyggda tabeller i Campaign och hur de fungerar finns i [det här avsnittet](https://helpx.adobe.com/se/campaign/kb/acc-datamodel.html).
 
 ## Utöka eller skapa scheman {#extending-or-creating-schemas}
 
-Om du vill lägga till ett fält eller index eller något annat element i ett av de centrala datamappningarna i Campaign, t.ex. mottagartabellen (nms:mottagare), måste du utöka det schemat. Mer information finns i [Utöka ett schema](../../configuration/using/extending-a-schema.md) -avsnitt.
+Om du vill lägga till ett fält eller index eller något annat element i ett av de centrala datamappningarna i Campaign, t.ex. mottagartabellen (nms:mottagare), måste du utöka det schemat. Mer information finns i avsnittet [Utöka ett schema](../../configuration/using/extending-a-schema.md).
 
-Om du vill lägga till en helt ny typ av data som inte finns i körklart läge i Adobe Campaign (till exempel en kontraktstabell) kan du skapa ett anpassat schema direkt. Mer information finns i [Datamodeller](../../configuration/using/data-schemas.md) -avsnitt.
+Om du vill lägga till en helt ny typ av data som inte finns i körklart läge i Adobe Campaign (till exempel en kontraktstabell) kan du skapa ett anpassat schema direkt. Mer information finns i avsnittet [Datascheman](../../configuration/using/data-schemas.md).
 
 ![](assets/schemaextension_getting_started_1.png)
 
@@ -57,7 +57,7 @@ type="string" enum="exTransactionTypeEnum"/>
 >
 >Du kan också använda användarhanterade uppräkningar (vanligtvis under **[!UICONTROL Administration]** > **[!UICONTROL Platform]** ) för att ange värden för ett visst fält. Detta är effektivt globala uppräkningar och ett bättre alternativ om uppräkningen kan användas utanför det specifika schema som du arbetar i.
 
-Mer information om uppräkningar finns i [Uppräkningar](../../configuration/using/schema-structure.md#enumerations) och [`<enumeration>` element](../../configuration/using/schema/enumeration.md) -avsnitt.
+Mer information om uppräkningar finns i avsnitten [Uppräkningar](../../configuration/using/schema-structure.md#enumerations) och [`<enumeration>` element](../../configuration/using/schema/enumeration.md).
 
 ## Index {#index}
 
@@ -80,19 +80,19 @@ Exempel:
 </dbindex>
 ```
 
-The **xpath** attributet pekar på det fält i schemat som du vill indexera.
+Attributet **xpath** pekar på det fält i ditt schema som du vill indexera.
 
 >[!IMPORTANT]
 >
 >Det är viktigt att komma ihåg att prestandavinster för läsning av SQL-frågor som tillhandahålls av index även har en prestandaförsämring när du skriver poster. Index bör därför användas med försiktighet.
 
-Mer information om index finns i [Indexerade fält](../../configuration/using/database-mapping.md#indexed-fields) -avsnitt.
+Mer information om index finns i avsnittet [Indexerade fält](../../configuration/using/database-mapping.md#indexed-fields).
 
 ## Tangenter {#keys}
 
-Alla tabeller måste ha minst en nyckel och ofta etableras de automatiskt i schemats huvudelement med hjälp av **@autopk=true** -attributet har värdet &quot;true&quot;.
+Alla tabeller måste ha minst en nyckel och upprättas ofta automatiskt i schemats huvudelement med attributet **@autopk=true** inställt på &quot;true&quot;.
 
-Primärnyckeln kan också definieras med **internal** -attribut.
+Primärnyckeln kan också definieras med attributet **internal**.
 
 Exempel:
 
@@ -102,21 +102,21 @@ Exempel:
 </key>
 ```
 
-I det här exemplet ska du inte låta **@autopk** för att skapa en standardprimärnyckel med namnet&quot;id&quot; anger vi vår egen primärnyckel för&quot;houseid&quot;.
+I det här exemplet, i stället för att attributet **@autopk** ska kunna skapa en standardprimärnyckel med namnet&quot;id&quot;, anger vi vår egen primärnyckel för&quot;houseId&quot;.
 
 >[!IMPORTANT]
 >
 >När du skapar ett nytt schema eller under ett schematillägg måste du behålla samma sekvensvärde för primärnyckeln (@pkSequence) för hela schemat.
 
-Mer information om tangenter finns i [Nyckelhantering](../../configuration/using/database-mapping.md#management-of-keys) -avsnitt.
+Mer information om nycklar finns i avsnittet [Nyckelhantering](../../configuration/using/database-mapping.md#management-of-keys).
 
 ## Attribut (fält) {#attributes--fields-}
 
-Med attribut kan du definiera fälten som utgör dataobjektet. Du kan använda **[!UICONTROL Insert]** i verktygsfältet för schemautgåvor om du vill släppa tomma attributmallar i XML-filen där markören finns. Mer information finns i [Datamodeller](../../configuration/using/data-schemas.md) -avsnitt.
+Med attribut kan du definiera fälten som utgör dataobjektet. Du kan använda knappen **[!UICONTROL Insert]** i verktygsfältet för schemaversionen för att släppa tomma attributmallar i XML-filen där markören finns. Mer information finns i avsnittet [Datascheman](../../configuration/using/data-schemas.md).
 
 ![](assets/schemaextension_getting_started_2.png)
 
-Den fullständiga listan med attribut finns i [`<attribute>` element](../../configuration/using/schema/attribute.md) -avsnitt. Här är några av de vanligaste attributen:
+Den fullständiga listan med attribut är tillgänglig i avsnittet [`<attribute>` element ](../../configuration/using/schema/attribute.md). Här är några av de vanligaste attributen:
 
 * **@advanced**
 * **@dataPolicy**
@@ -133,9 +133,9 @@ Den fullständiga listan med attribut finns i [`<attribute>` element](../../conf
 * **@xml**
 * **@type**
 
-  Om du vill visa en tabell över mappningarna för de datatyper som genereras av Adobe Campaign för de olika databashanteringssystemen, se [Mappa typer av Adobe Campaign-/DBMS-data](../../configuration/using/schema-structure.md#mapping-the-types-of-adobe-campaign-dbms-data) -avsnitt.
+  Om du vill visa en tabell med mappningar för datatyperna som genereras av Adobe Campaign för de olika databashanteringssystemen kan du läsa avsnittet [Mappa typer av Adobe Campaign-/DBMS-data](../../configuration/using/schema-structure.md#mapping-the-types-of-adobe-campaign-dbms-data).
 
-Mer information om respektive attribut finns i [Attributbeskrivning](../../configuration/using/schema/attribute.md) -avsnitt.
+Mer information om varje attribut finns i avsnittet [Attributbeskrivning](../../configuration/using/schema/attribute.md).
 
 ### Exempel {#examples}
 
@@ -151,7 +151,7 @@ Exempel på hur du använder ett gemensamt attribut som mall för ett fält som 
 <attribute name="mobile" label="Mobile" template="nms:common:phone" required="true" />
 ```
 
-Exempel på ett beräknat fält som är dolt med **@advanced** attribute:
+Exempel på ett beräknat fält som är dolt med attributet **@advanced**:
 
 ```
 <attribute name="domain" label="Email domain" desc="Domain of recipient email address" expr="GetEmailDomain([@email])" advanced="true" />
@@ -173,7 +173,7 @@ Exempel på ett XML-fält som också lagras i ett SQL-fält och som har ett **@d
 
 Länkar är några av de sista elementen i huvudelementet i schemat. De definierar hur alla olika scheman i din instans relaterar till varandra.
 
-Länkarna deklareras i schemat som innehåller **sekundärnyckel** för den tabell som den är länkad till.
+Länkarna deklareras i schemat som innehåller **sekundärnyckeln** för den tabell som den är länkad till.
 
 Det finns tre typer av kardinalitet: 1-1, 1-N och N-N. Det är typen 1-N som används som standard.
 
@@ -221,4 +221,4 @@ Mer information om detta hittar du i avsnittet [Uppdatera databasstrukturen](../
 
 >[!NOTE]
 >
->Om ändringarna inte påverkar databasstrukturen behöver du bara generera om scheman. Det gör du genom att markera de scheman som ska uppdateras, högerklicka och välja **[!UICONTROL Actions > Regenerate selected schemas...]** . Mer information finns i [Återskapar scheman](../../configuration/using/regenerating-schemas.md) -avsnitt.
+>Om ändringarna inte påverkar databasstrukturen behöver du bara generera om scheman. Om du vill göra det markerar du schemat som ska uppdateras, högerklickar och väljer **[!UICONTROL Actions > Regenerate selected schemas...]**. Mer information finns i avsnittet [Återskapa scheman](../../configuration/using/regenerating-schemas.md).

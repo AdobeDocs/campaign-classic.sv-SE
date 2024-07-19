@@ -25,7 +25,7 @@ Du kan ändra eller återställa ett förlorat lösenord.
 Det finns två möjliga scenarier:
 
 * [Lösenord som gått förlorat av en Adobe Campaign-operatör](#password-lost-by-campaign-operator)
-* [Lösenordet har tagits bort](#internal-password-lost) (endast lokala kunder)
+* [Internt lösenord förlorat](#internal-password-lost) (endast lokala kunder)
 
 ## Lösenord som har gått förlorat av en kampanjoperator {#password-lost-by-campaign-operator}
 
@@ -33,7 +33,7 @@ Om en Adobe Campaign-operator förlorar sitt lösenord kan du ändra det.
 
 >[!NOTE]
 >
->Den här proceduren gäller endast för operatorer som ansluter till Campaign med inbyggd autentisering. För Adobe IMS-autentisering, se [den här dokumentationen](https://helpx.adobe.com/ie/manage-account/using/change-or-reset-password.html){target="_blank"}.
+>Den här proceduren gäller endast för operatorer som ansluter till Campaign med inbyggd autentisering. Information om Adobe IMS-autentisering finns i [den här dokumentationen](https://helpx.adobe.com/ie/manage-account/using/change-or-reset-password.html){target="_blank"}.
 
 Så här återställer du ett Campaign-lösenord:
 
@@ -55,9 +55,9 @@ Om det interna lösenordet går förlorat måste du initiera om det.
 
 Gör så här:
 
-1. Redigera **/usr/local/neolane/nl6/conf/serverConf.xml** -fil.
+1. Redigera filen **/usr/local/neolane/nl6/conf/serverConf.xml**.
 
-1. Gå till **internalPassword** linje.
+1. Gå till raden **internalPassword**.
 
    ```xml
    <!-- XTK authentication mode internalPassword : Password of internal account -->
@@ -73,7 +73,7 @@ Gör så här:
 
 1. Spara ändringarna och stäng filen.
 
-1. Stoppa `nlserver` -processen.
+1. Stoppa `nlserver`-processen.
 
 1. Konfigurera det nya lösenordet. Ange följande kommandon om du vill göra det:
 
@@ -87,6 +87,6 @@ Gör så här:
    Confirmation 
    ```
 
-1. Starta `nlserver` -processen.
+1. Starta `nlserver`-processen.
 
-1. Nu kan du använda ditt nya lösenord för att ansluta till **Intern** läge.
+1. Du kan nu använda ditt nya lösenord för att ansluta i läget **Intern**.

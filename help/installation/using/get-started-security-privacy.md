@@ -51,11 +51,11 @@ Konfiguration och skärpning av sekretess är en viktig del av säkerhetsoptimer
 
 När du utvecklar i Adobe Campaign (arbetsflöden, Javascript, JSSP osv.) ska du alltid följa dessa riktlinjer:
 
-* **Skript**: försök att undvika SQL-satser, använd parametriserade funktioner i stället för strängsammanfogning, undvik SQL-injektion genom att lägga till de SQL-funktioner som ska användas i tillåtelselista.
+* **Skript**: Undvik SQL-satser, använd parametriserade funktioner i stället för strängsammanfogning, undvik SQL-injektion genom att lägga till de SQL-funktioner som ska användas i tillåtelselista.
 
-* **Skydda datamodellen**: använd namngivna rättigheter för att begränsa operatoråtgärder, lägga till systemfilter (sysFilter)
+* **Skydda datamodellen**: använd namngivna rättigheter för att begränsa operatoråtgärder, lägg till systemfilter (sysFilter)
 
-* **Lägga till bildtexter i webbprogram**: Lär dig hur du lägger till tagningar på dina offentliga landningssidor och prenumerationssidor.
+* **Lägg till hämtningar i webbprogram**: lär dig hur du lägger till hämtningar på dina offentliga landningssidor och prenumerationssidor.
 
 [Läs mer](../../installation/using/scripting-coding-guidelines.md)
 
@@ -76,15 +76,15 @@ Det är också viktigt att du följer datasäkerheten för databasmotorn.
 
 Konfigurationen måste utföras på alla servrar. Konfigurationsfilerna är av typen **serverConf.xml** och **`config-<instance>.xml`**. Här är de viktigaste elementen som behöver verifieras:
 
-* **Säkerhetszoner**: Konfigurera säkerhetszoner så att de direkt tar hänsyn till IP-adresserna till klienterna för en proxy.
+* **Säkerhetszoner**: Konfigurera säkerhetszoner så att de direkt tar hänsyn till IP-adresserna för klienterna för en proxy.
 
-* **Filöverföringsskydd**: begränsa de typer av filer som kan överföras till Adobe Campaign-servern med ett nytt uploadAllowList-attribut. Detta kan användas i serverkonfigurationsfilen.
+* **Filöverföringsskydd**: Begränsa de typer av filer som kan överföras till Adobe Campaign-servern med ett nytt uploadAllowList-attribut. Detta kan användas i serverkonfigurationsfilen.
 
 * **Relay**: finjustera reläkonfigurationen genom att inaktivera reläreglerna för oanvända moduler/program.
 
-* **Skydd av utgående anslutning** och **Kommandobegränsning** (server-side)
+* **Utgående anslutningsskydd** och **Kommandobegränsning** (på serversidan)
 
-* Du kan också lägga till extra HTTP-huvuden, aktivera checkIPConsistent, enableTLS, sessionTimeOutSec osv. Se [Konfigurationsdokumentation för kampanjserver](../../installation/using/configuring-campaign-server.md) och [Beskrivning av serverkonfigurationsfil](../../installation/using/the-server-configuration-file.md) för mer information.
+* Du kan också lägga till extra HTTP-huvuden, aktivera checkIPConsistent, enableTLS, sessionTimeOutSec osv. Mer information finns i [konfigurationsdokumentationen för Campaign-servern](../../installation/using/configuring-campaign-server.md) och [beskrivningen av serverkonfigurationsfilen](../../installation/using/the-server-configuration-file.md).
 
 [Läs mer](../../installation/using/server-configuration.md)
 

@@ -18,15 +18,15 @@ ht-degree: 2%
 
 
 
-Använd Adobe Campaign Classic **Åtkomst till federerade data** (FDA) om du vill bearbeta information som lagras i en extern databas. Följ stegen nedan för att konfigurera åtkomst till [!DNL Google BigQuery].
+Använd alternativet Adobe Campaign Classic **FDA (Federated Data Access)** om du vill bearbeta information som lagras i en extern databas. Följ stegen nedan för att konfigurera åtkomst till [!DNL Google BigQuery].
 
-1. Konfigurera [!DNL Google BigQuery] på [Windows](#google-windows) eller [Linux](#google-linux)
-1. Konfigurera [!DNL Google BigQuery] [externt konto](#google-external) i ADOBE CAMPAIGN CLASSIC
-1. Konfigurera [!DNL Google BigQuery] massinläsning av koppling på [Windows](#bulk-load-windows) eller [Linux](#bulk-load-linux)
+1. Konfigurera [!DNL Google BigQuery] i [Windows](#google-windows) eller [Linux](#google-linux)
+1. Konfigurera det [!DNL Google BigQuery] [externa kontot](#google-external) i Adobe Campaign Classic
+1. Konfigurera massinläsning av [!DNL Google BigQuery]-anslutning på [Windows](#bulk-load-windows) eller [Linux](#bulk-load-linux)
 
 >[!NOTE]
 >
-> [!DNL Google BigQuery] anslutning finns för värdbaserade, hybridbaserade och lokala distributioner. Mer information finns på [den här sidan](../../installation/using/capability-matrix.md).
+> [!DNL Google BigQuery]-anslutningen är tillgänglig för värdbaserade distributioner, hybriddistributioner och lokala distributioner. Mer information finns på [den här sidan](../../installation/using/capability-matrix.md).
 
 ![](assets/snowflake_3.png)
 
@@ -34,29 +34,29 @@ Använd Adobe Campaign Classic **Åtkomst till federerade data** (FDA) om du vil
 
 ### Drivrutinen har konfigurerats i Windows {#driver-window}
 
-1. Ladda ned [ODBC-drivrutin för Windows](https://cloud.google.com/bigquery/docs/reference/odbc-jdbc-drivers).
+1. Hämta [ODBC-drivrutinen för Windows](https://cloud.google.com/bigquery/docs/reference/odbc-jdbc-drivers).
 
 1. Konfigurera ODBC-drivrutinen i Windows. Mer information finns på [den här sidan](https://storage.googleapis.com/simba-bq-release/jdbc/Simba%20JDBC%20Driver%20for%20Google%20BigQuery%20Install%20and%20Configuration%20Guide.pdf).
 
-1. För [!DNL Google BigQuery] för att Adobe Campaign Classic ska fungera krävs följande parametrar för att ansluta:
+1. Adobe Campaign Classic kräver följande parametrar för att [!DNL Google BigQuery]-anslutningen ska fungera:
 
    * **[!UICONTROL Project]**: skapa eller använda ett befintligt projekt.
 
-     Mer information finns i [page](https://cloud.google.com/resource-manager/docs/creating-managing-projects).
+     Mer information finns på [sidan](https://cloud.google.com/resource-manager/docs/creating-managing-projects).
 
    * **[!UICONTROL Service account]**: skapa ett tjänstkonto.
 
-     Mer information finns i [page](https://cloud.google.com/iam/docs/creating-managing-service-accounts).
+     Mer information finns på [sidan](https://cloud.google.com/iam/docs/creating-managing-service-accounts).
 
-   * **[!UICONTROL Key File Path]**: **[!UICONTROL Service account]** kräver **[!UICONTROL Key File]** för [!DNL Google BigQuery] anslutning via ODBC.
+   * **[!UICONTROL Key File Path]**: **[!UICONTROL Service account]** kräver en **[!UICONTROL Key File]** för en [!DNL Google BigQuery]-anslutning via ODBC.
 
-     Mer information finns i [page](https://cloud.google.com/iam/docs/creating-managing-service-account-keys).
+     Mer information finns på [sidan](https://cloud.google.com/iam/docs/creating-managing-service-account-keys).
 
-   * **[!UICONTROL Dataset]**: **[!UICONTROL Dataset]** är valfritt för en ODBC-anslutning. Eftersom varje fråga måste ange datauppsättningen där tabellen finns, anger du en **[!UICONTROL Dataset]** är obligatoriskt för [!DNL Google BigQuery] FDA Connector i Adobe Campaign Classic.
+   * **[!UICONTROL Dataset]**: **[!UICONTROL Dataset]** är valfritt för en ODBC-anslutning. Eftersom varje fråga måste tillhandahålla datauppsättningen där tabellen finns, är det obligatoriskt att ange **[!UICONTROL Dataset]** för [!DNL Google BigQuery] FDA Connector i Adobe Campaign Classic.
 
-     Mer information finns i [page](https://cloud.google.com/bigquery/docs/datasets).
+     Mer information finns på [sidan](https://cloud.google.com/bigquery/docs/datasets).
 
-1. I Adobe Campaign Classic kan du sedan konfigurera [!DNL Google BigQuery] externt konto. Mer information om hur du konfigurerar ditt externa konto finns i [det här avsnittet](#google-external).
+1. I Adobe Campaign Classic kan du sedan konfigurera ditt [!DNL Google BigQuery]-externa konto. Mer information om hur du konfigurerar ditt externa konto finns i [det här avsnittet](#google-external).
 
 ### Massinläsning har konfigurerats i Windows {#bulk-load-window}
 
@@ -64,17 +64,17 @@ Använd Adobe Campaign Classic **Åtkomst till federerade data** (FDA) om du vil
 >
 >Python måste vara installerat för att Google Cloud SDK ska fungera.
 >
->Vi rekommenderar att du använder Python3. [page](https://www.python.org/downloads/).
+>Vi rekommenderar att du använder Python3, se [sidan](https://www.python.org/downloads/).
 
 Med Bulk Load Tool går det snabbare att överföra filer, vilket uppnås med Google Cloud SDK.
 
-1. Hämta 64-bitars Windows-arkiv (x86_64) från detta [page](https://cloud.google.com/sdk/docs/downloads-versioned-archives) och extrahera den i motsvarande katalog.
+1. Hämta 64-bitars Windows-arkivet (x86_64) från den här [sidan](https://cloud.google.com/sdk/docs/downloads-versioned-archives) och extrahera det i motsvarande katalog.
 
-1. Kör `google-cloud-sdk\install.sh` skript. Du måste acceptera inställningen för variabeln path.
+1. Kör skriptet `google-cloud-sdk\install.sh`. Du måste acceptera inställningen för variabeln path.
 
-1. Kontrollera att variabeln path finns efter installationen `...\google-cloud-sdk\bin` är inställt. Om inte, lägg till det manuellt.
+1. Kontrollera att sökvägsvariabeln `...\google-cloud-sdk\bin` har angetts efter installationen. Om inte, lägg till det manuellt.
 
-1. I  `..\google-cloud-sdk\bin\bq.cmd` fil, lägga till `CLOUDSDK_PYTHON` lokal variabel, som kommer att dirigeras om till platsen för Python-installationen.
+1. I filen `..\google-cloud-sdk\bin\bq.cmd` lägger du till den lokala variabeln `CLOUDSDK_PYTHON` som dirigerar om till platsen för Python-installationen.
 
    Exempel:
 
@@ -88,7 +88,7 @@ Med Bulk Load Tool går det snabbare att överföra filer, vilket uppnås med Go
 
 Observera att skript och kommandon måste köras av rotanvändaren innan du konfigurerar drivrutinen. Vi rekommenderar även att du använder Google DNS 8.8.8.8 när du kör skriptet.
 
-Konfigurera [!DNL Google BigQuery] i Linux följer du stegen nedan:
+Så här konfigurerar du [!DNL Google BigQuery] i Linux:
 
 1. Kontrollera att följande paket är installerade på din Linux-distribution före ODBC-installationen:
 
@@ -144,7 +144,7 @@ Konfigurera [!DNL Google BigQuery] i Linux följer du stegen nedan:
 >
 >Python måste vara installerat för att Google Cloud SDK ska fungera.
 >
->Vi rekommenderar att du använder Python3. [page](https://www.python.org/downloads/).
+>Vi rekommenderar att du använder Python3, se [sidan](https://www.python.org/downloads/).
 
 Med Bulk Load Tool går det snabbare att överföra filer, vilket uppnås med Google Cloud SDK.
 
@@ -175,28 +175,28 @@ Med Bulk Load Tool går det snabbare att överföra filer, vilket uppnås med Go
 
 ## Externt Google BigQuery-konto {#google-external}
 
-Du måste skapa en [!DNL Google BigQuery] externt konto för att ansluta din Adobe Campaign Classic-instans till [!DNL Google BigQuery] extern databas.
+Du måste skapa ett externt [!DNL Google BigQuery]-konto för att ansluta din Adobe Campaign Classic-instans till din [!DNL Google BigQuery]-externa databas.
 
-1. Från Adobe Campaign Classic **[!UICONTROL Explorer]**, klicka **[!UICONTROL Administration]** &#39;>&#39; **[!UICONTROL Platform]** &#39;>&#39; **[!UICONTROL External accounts]**.
+1. I Adobe Campaign Classic **[!UICONTROL Explorer]** klickar du på **[!UICONTROL Administration]** &#39;>&#39; **[!UICONTROL Platform]** &#39;>&#39; **[!UICONTROL External accounts]**.
 
 1. Klicka på **[!UICONTROL New]**.
 
-1. Välj **[!UICONTROL External database]** som ditt externa konto **[!UICONTROL Type]**.
+1. Välj **[!UICONTROL External database]** som det externa kontots **[!UICONTROL Type]**.
 
-1. Konfigurera [!DNL Google BigQuery] externt konto måste du ange:
+1. Konfigurera det externa [!DNL Google BigQuery]-kontot måste du ange:
 
    * **[!UICONTROL Type]**: [!DNL Google BigQuery]
 
-   * **[!UICONTROL Service account]**: E-post till **[!UICONTROL Service account]**. Mer information finns i [Google Cloud-dokumentation](https://cloud.google.com/iam/docs/creating-managing-service-accounts).
+   * **[!UICONTROL Service account]**: E-postadress till din **[!UICONTROL Service account]**. Mer information finns i [Google Cloud-dokumentationen](https://cloud.google.com/iam/docs/creating-managing-service-accounts).
 
-   * **[!UICONTROL Project]**: Namn på **[!UICONTROL Project]**. Mer information finns i [Google Cloud-dokumentation](https://cloud.google.com/resource-manager/docs/creating-managing-projects).
+   * **[!UICONTROL Project]**: Namn på **[!UICONTROL Project]**. Mer information finns i [Google Cloud-dokumentationen](https://cloud.google.com/resource-manager/docs/creating-managing-projects).
 
    * **[!UICONTROL Key file Path]**:
-      * **[!UICONTROL Upload key file to the server]**: select **[!UICONTROL Click here to upload]** om du väljer att överföra nyckeln via Adobe Campaign Classic.
+      * **[!UICONTROL Upload key file to the server]**: välj **[!UICONTROL Click here to upload]** om du väljer att överföra nyckeln via Adobe Campaign Classic.
 
       * **[!UICONTROL Enter manually the key file path]**: kopiera/klistra in den absoluta sökvägen i det här fältet om du väljer att använda en befintlig nyckel.
 
-   * **[!UICONTROL Dataset]**: Namn på **[!UICONTROL Dataset]**. Mer information finns i [Google Cloud-dokumentation](https://cloud.google.com/bigquery/docs/datasets-intro).
+   * **[!UICONTROL Dataset]**: Namn på **[!UICONTROL Dataset]**. Mer information finns i [Google Cloud-dokumentationen](https://cloud.google.com/bigquery/docs/datasets-intro).
 
    ![](assets/google-big-query.png)
 
@@ -209,8 +209,8 @@ Kopplingen stöder följande alternativ:
 | ProxyPort | Portnummer som proxyn körs på, till exempel 8080 |
 | ProxyUid | Användarnamn som används för autentiserad proxy |
 | ProxyPwd | ProxyUid-lösenord |
-| bqpath | Observera att detta endast gäller för massinläsningsverktyg (Cloud SDK). </br> För att undvika att använda variabeln PATH eller om katalogen google-cloud-sdk måste flyttas till en annan plats, kan du med det här alternativet ange den exakta sökvägen till bin-katalogen i molnet på servern. |
-| GCloudConfigName | Observera att detta gäller från och med version 7.3.4 och endast för massinläsningsverktyg (Cloud SDK).</br> Google Cloud SDK använder konfigurationer för att läsa in data i BigQuery-tabeller. Den namngivna konfigurationen `accfda` lagrar parametrarna för att läsa in data. Med det här alternativet kan användare ange ett annat namn för konfigurationen. |
-| GCloudDefaultConfigName | Observera att detta gäller från och med version 7.3.4 och endast för massinläsningsverktyg (Cloud SDK).</br> Den aktiva Google Cloud SDK-konfigurationen kan inte tas bort utan att den aktiva taggen först överförs till en ny konfiguration. Den här tillfälliga konfigurationen är nödvändig för att återskapa huvudkonfigurationen för inläsning av data. Standardnamnet för den tillfälliga konfigurationen är `default`kan den ändras vid behov. |
-| GCloudRecreateConfig | Observera att detta gäller från och med version 7.3.4 och endast för massinläsningsverktyg (Cloud SDK).</br> När inställt på `false`, avstår massinläsningsfunktionen från att försöka återskapa, ta bort eller ändra Google Cloud SDK-konfigurationerna. I stället fortsätter programmet med datainläsning med den befintliga konfigurationen på datorn. Den här funktionen är värdefull när andra åtgärder är beroende av Google Cloud SDK-konfigurationer. </br> Om användaren aktiverar det här motoralternativet utan rätt konfiguration kommer massinläsningsmekanismen att skicka ett varningsmeddelande: `No active configuration found. Please either create it manually or remove the GCloudRecreateConfig option`. Om du vill förhindra fler fel återgår den till att använda ODBC-standardmetoden för gruppinläsning av ODBC-matris. |
+| bqpath | Observera att detta endast gäller för massinläsningsverktyg (Cloud SDK). </br> Om du vill undvika att använda variabeln PATH eller om katalogen google-cloud-sdk måste flyttas till en annan plats, kan du med det här alternativet ange den exakta sökvägen till bin-katalogen i molnet på servern. |
+| GCloudConfigName | Observera att detta gäller från och med version 7.3.4 och endast för massinläsningsverktyg (Cloud SDK).</br> Google Cloud SDK använder konfigurationer för att läsa in data i BigQuery-tabeller. Konfigurationen med namnet `accfda` lagrar parametrarna för att läsa in data. Med det här alternativet kan användare ange ett annat namn för konfigurationen. |
+| GCloudDefaultConfigName | Observera att detta gäller från och med version 7.3.4 och endast för massinläsningsverktyg (Cloud SDK).</br> Den aktiva Google Cloud SDK-konfigurationen kan inte tas bort utan att den aktiva taggen först överförs till en ny konfiguration. Den här tillfälliga konfigurationen är nödvändig för att återskapa huvudkonfigurationen för inläsning av data. Standardnamnet för den tillfälliga konfigurationen är `default`, vilket kan ändras vid behov. |
+| GCloudRecreateConfig | Observera att detta gäller från och med version 7.3.4 och endast för massinläsningsverktyg (Cloud SDK).</br> När värdet är `false` avstår massinläsningsfunktionen från att försöka återskapa, ta bort eller ändra Google Cloud SDK-konfigurationerna. I stället fortsätter programmet med datainläsning med den befintliga konfigurationen på datorn. Den här funktionen är värdefull när andra åtgärder är beroende av Google Cloud SDK-konfigurationer. </br> Om användaren aktiverar det här motoralternativet utan rätt konfiguration kommer massinläsningsmekanismen att skicka ett varningsmeddelande: `No active configuration found. Please either create it manually or remove the GCloudRecreateConfig option`. Om du vill förhindra fler fel återgår den till att använda ODBC-standardmetoden för gruppinläsning av ODBC-matris. |
 

@@ -24,15 +24,15 @@ Nedan hittar du några av de effektivaste strategierna för webbserverkonfigurat
 
 * Inaktivera tidigare SSL-version och ciphers:
 
-  **På Apache**, redigera /etc/apache2/mods-available/ssl.conf. Här är ett exempel:
+  **I Apache** kan du redigera /etc/apache2/mods-available/ssl.conf. Här är ett exempel:
 
    * `SSLProtocol all -SSLv2 -SSLv3 -TLSv1`
    * `SSLCipherSuite HIGH:MEDIUM:!aNULL:!MD5:!SSLv3:!SSLv2:!TLSv1`
 
-  **På IIS** (se [dokumentation](https://support.microsoft.com/en-us/kb/245030)) utför du följande konfiguration:
+  **Utför följande konfiguration på IIS** (se [dokumentationen](https://support.microsoft.com/en-us/kb/245030)):
 
    * Lägg till registerundernyckel i HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL
-   * Om du vill att systemet ska kunna använda de protokoll som inte ska förhandlas som standard (till exempel TLS 1.2) ändrar du DWORD-värdedata för värdet DisabledByDefault till 0x0 i följande registernycklar under **Protokoll** nyckel:
+   * Om du vill att systemet ska kunna använda de protokoll som inte ska förhandlas som standard (till exempel TLS 1.2), ändrar du DWORD-värdedata för värdet DisabledByDefault till 0x0 i följande registernycklar under nyckeln **Protokoll**:
 
      SCHANNEL\Protokoll\TLS 1.2\Client
 
@@ -44,30 +44,30 @@ Nedan hittar du några av de effektivaste strategierna för webbserverkonfigurat
 
   SCHANNEL\Protokoll\SSL 3.0\Server: Aktiverad: DWORD (32-bitars) värde till 0
 
-* Ta bort **TRACE** metod:
+* Ta bort metoden **TRACE**:
 
-  **På Apache**, redigera i /etc/apache2/conf.d/security: TraceEnable **Av**
+  **I Apache** kan du redigera i /etc/apache2/conf.d/security: TraceEnable **Off**
 
-  **På IIS** (se [dokumentation](https://www.iis.net/configreference/system.webserver/security/requestfiltering/verbs)) utför du följande konfiguration:
+  **Utför följande konfiguration på IIS** (se [dokumentationen](https://www.iis.net/configreference/system.webserver/security/requestfiltering/verbs)):
 
-   * Se till att **Begärandefiltrering** rolltjänsten eller funktionen är installerad.
-   * I **Begärandefiltrering** klickar du på fliken för HTTP-verb och sedan på Neka verb. Ange TRACE i den öppna dialogrutan i åtgärdsrutan.
+   * Kontrollera att rolltjänsten eller funktionen **Begär filtrering** är installerad.
+   * Klicka på fliken HTTP-verb i rutan **Begär filtrering** och klicka sedan på Neka verb. Ange TRACE i den öppna dialogrutan i åtgärdsrutan.
 
 * Ta bort banderollen:
 
-  **På Apache**, redigera /etc/apache2/conf.d/säkerhet:
+  **I Apache** kan du redigera /etc/apache2/conf.d/säkerhet:
 
-   * ServerSignature **Av**
+   * ServerSignature **Off**
    * ServerTokens **Prod**
 
-  **På IIS** utför du följande konfiguration:
+  **Utför följande konfiguration på IIS**:
 
    * Installera **URLScan**.
-   * Redigera **Urlscan.ini** fil att ha **RemoveServerHeader=1**
+   * Redigera filen **Urlscan.ini** så att den har **RemoveServerHeader=1**
 
 * Begränsa frågestorleken för att förhindra att viktiga filer överförs:
 
-  **På Apache**, lägg till **LimitRequestBody** -direktiv (storlek i byte) i /-katalog.
+  **I Apache** lägger du till direktivet **LimitRequestBody** (storlek i byte) i katalogen /.
 
   ```
   <Directory />
@@ -77,9 +77,9 @@ Nedan hittar du några av de effektivaste strategierna för webbserverkonfigurat
   </Directory>
   ```
 
-  **På IIS** (se [dokumentation](https://www.iis.net/configreference/system.webserver/security/requestfiltering/requestlimits)), ange **maxAllowedContentLength** (maximal tillåten innehållslängd) i alternativen för innehållsfiltrering.
+  **På IIS** (se [dokumentation](https://www.iis.net/configreference/system.webserver/security/requestfiltering/requestlimits)) anger du **maxAllowedContentLength** (maximal tillåten innehållslängd) i alternativen för innehållsfiltrering.
 
 Relaterade ämnen:
 
-* [Adobe Marketing Cloud Compliance overview](https://experienceleague.adobe.com/en/docs/experience-platform/landing/governance-privacy-security/overview#privacy)
-* [Adobe Campaign Security - översikt](https://experienceleague.adobe.com/en/docs/experience-platform/landing/governance-privacy-security/overview#security)
+* [Adobe Marketing Cloud Compliance - översikt](https://experienceleague.adobe.com/en/docs/experience-platform/landing/governance-privacy-security/overview#privacy)
+* [Adobe Campaign - säkerhetsöversikt](https://experienceleague.adobe.com/en/docs/experience-platform/landing/governance-privacy-security/overview#security)

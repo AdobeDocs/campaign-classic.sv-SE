@@ -20,16 +20,16 @@ ht-degree: 0%
 
 Tack vare integrationen mellan Adobe Campaign och Adobe Experience Manager kan ni hantera innehållet i era e-postleveranser och era formulär direkt i Adobe Experience Manager.
 
-Du kan också infoga resurser direkt från ditt AEM Assets-bibliotek när du redigerar ett e-postmeddelande eller en landningssida i Adobe Campaign. Den här funktionaliteten beskrivs i [Resurser](../../integrations/using/sharing-assets-with-adobe-experience-cloud.md) kapitel.
+Du kan också infoga resurser direkt från ditt AEM Assets-bibliotek när du redigerar ett e-postmeddelande eller en landningssida i Adobe Campaign. Den här funktionen beskrivs i kapitlet [Assets](../../integrations/using/sharing-assets-with-adobe-experience-cloud.md).
 
-Det innebär att du får ut det mesta av både AEM och Adobe Campaign leveranskapacitet.
+Det innebär att du får ut det mesta av både AEM redigeringsfunktioner och Adobe Campaign leveranskapacitet.
 
 **Förhandskrav**
 
 Du måste ha följande element:
 
-* En Adobe Experience Manager **redigering** -instans.
-* En Adobe Experience Manager **publicera** -instans.
+* En Adobe Experience Manager **authoring**-instans.
+* En Adobe Experience Manager **publishing**-instans.
 * En Adobe Campaign-instans.
 
-Mer information finns i [Adobe Experience Manager-dokumentation](https://experienceleague.adobe.com/docs/experience-manager-65/classic-ui/campaign/classic-personalization-ac-campaign.html)
+Mer information finns i [Adobe Experience Manager-dokumentationen](https://experienceleague.adobe.com/docs/experience-manager-65/classic-ui/campaign/classic-personalization-ac-campaign.html)

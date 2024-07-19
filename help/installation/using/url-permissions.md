@@ -25,21 +25,21 @@ Som standard tillåts instanser endast att ansluta till interna URL:er. Det är 
 
 >[!NOTE]
 >
->Detta förfarande är begränsat till **lokal** distributioner.
+>Den här proceduren är begränsad till **lokala**-distributioner.
 >
->Som en **värdbaserad** -kund, om du har åtkomst [Kampanjkontrollpanelen](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=sv)kan du använda självbetjäningsgränssnittet för URL-behörigheter. [Läs mer](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/url-permissions.html?lang=sv)
+>Om du är en **värdbaserad**-kund och har åtkomst till [Campaign Control Panel](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=sv) kan du använda självbetjäningsgränssnittet för URL-behörigheter. [Läs mer](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/url-permissions.html?lang=sv)
 >
->Övriga **hybrid/värd** Kunder måste kontakta Adobe supportteam för att lägga till IP i tillåtelselista.
+>Andra **hybridkunder/värdkunder** måste kontakta Adobe supportteam för att kunna lägga till IP i tillåtelselista.
 >
 
-För **Hybrid** och **Lokalt** distributioner måste administratören referera till en ny **urlPermission** i **serverConf.xml** -fil.
+För **hybriddistributioner** och **lokala distributioner** måste administratören referera till en ny **urlPermission** i filen **serverConf.xml**.
 
 
 Tre lägen för anslutningsskydd är tillgängliga:
 
-* **Blockera**: alla URL:er som inte tillhör tillåtelselista blockeras, med ett felmeddelande. Det här är standardläget efter en efteruppgradering.
-* **Tillstånd**: alla URL:er som inte tillhör tillåtelselista tillåts.
-* **Varning**: alla URL:er som inte tillhör tillåtelselista tillåts, men JS-tolken genererar en varning så att administratören kan samla in dem. I det här läget läggs JST-310027-varningsmeddelanden till.
+* **Blockering**: Alla URL:er som inte tillhör tillåtelselista blockeras, med ett felmeddelande. Det här är standardläget efter en efteruppgradering.
+* **Behörighet**: Alla URL:er som inte tillhör tillåtelselista tillåts.
+* **Varning**: Alla URL:er som inte tillhör tillåtelselista tillåts, men JS-tolken genererar en varning så att administratören kan samla in dem. I det här läget läggs JST-310027-varningsmeddelanden till.
 
 ```
 <urlPermission action="warn" debugTrace="true">
@@ -51,9 +51,9 @@ Tre lägen för anslutningsskydd är tillgängliga:
 
 >[!IMPORTANT]
 >
->Nya implementeringar använder som standard **Blockera** läge.
+>Som standard används läget **Blockera** för nya implementeringar.
 >
->Som befintlig kund som kommer från en migrering kan du tillfälligt använda **Varning** läge. Analysera utgående trafik innan URL-adresserna tillåts. När listan över tillåtna URL:er har definierats kan du lägga till URL:er till tillåtelselista och aktivera **Blockera** läge.
+>Om en befintlig kund kommer från en migrering kan du tillfälligt använda läget **Varning**. Analysera utgående trafik innan URL-adresserna tillåts. När listan över tillåtna URL:er har definierats kan du lägga till URL:er till tillåtelselista och aktivera läget **Blockera**.
 
 Mer information finns i följande avsnitt:
 

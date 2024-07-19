@@ -16,7 +16,7 @@ ht-degree: 16%
 
 
 
-Om leveranstabellen är en extern tabell måste du göra ytterligare konfigurationer. The **[!UICONTROL nms:seedmember]** schemat måste utökas. En flik läggs till i startadresserna för att definiera fälten enligt nedan:
+Om leveranstabellen är en extern tabell måste du göra ytterligare konfigurationer. Schemat **[!UICONTROL nms:seedmember]** måste utökas. En flik läggs till i startadresserna för att definiera fälten enligt nedan:
 
 ![](assets/s_ncs_user_seedlist_new_tab.png)
 
@@ -24,4 +24,4 @@ Om du vill lägga till dirigerade adresser till leveransen anger du lämpliga f�
 
 ![](assets/s_ncs_user_seedlist_add_new_tab.png)
 
-The **nms:seedMember** schematillägget är [det här avsnittet](../../configuration/using/seed-addresses.md).
+Schematillägget **nms:seedMember** är [det här avsnittet](../../configuration/using/seed-addresses.md).

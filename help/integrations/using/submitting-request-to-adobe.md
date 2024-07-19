@@ -21,7 +21,7 @@ ht-degree: 2%
 >
 >Som v7-användare måste Adobe Identity Management System (IMS) vara aktiverat på datorn för att kunna fortsätta. [Läs mer](../../integrations/using/about-adobe-id.md).
 
-När Adobe Identity Management-tjänsten (IMS) har aktiverats för din organisation kan du begära etablering av [Experience Cloud målgrupp](https://experienceleague.adobe.com/en/docs/core-services/interface/services/audiences/overview){target="_blank"} integrering med Campaign. Om du vill göra det skickar du ett mejl till [Digital-Request@adobe.com](mailto:Digital-Request@adobe.com) med följande information:
+När Adobe Identity Management-tjänsten (IMS) har aktiverats för din organisation kan du begära etablering av [Experience Cloud-målgruppsintegreringen](https://experienceleague.adobe.com/en/docs/core-services/interface/services/audiences/overview){target="_blank"} med Campaign. Om du vill göra det skickar du ett e-postmeddelande till [Digital-Request@adobe.com](mailto:Digital-Request@adobe.com) med följande information:
 
 <table> 
  <tbody> 
@@ -35,7 +35,7 @@ När Adobe Identity Management-tjänsten (IMS) har aktiverats för din organisat
   </tr> 
   <tr> 
    <td> <strong>Organisations-ID</strong><br /> </td> 
-   <td> Ditt företags-ID. <br> Om du vill hitta ditt organisations-ID går du till <a href="https://experienceleague.adobe.com/docs/core-services/interface/administration/organizations.html?lang=sv">den här sidan</a></td> 
+   <td> Ditt företags-ID. <br> Information om hur du hittar ditt organisations-ID finns på <a href="https://experienceleague.adobe.com/docs/core-services/interface/administration/organizations.html?lang=sv">den här sidan</a></td> 
   </tr> 
   <tr> 
    <td> <strong>Miljö</strong><br /> </td> 

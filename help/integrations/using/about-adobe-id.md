@@ -16,9 +16,9 @@ ht-degree: 13%
 
 # Om Adobe ID {#about-adobe-id}
 
-Adobe Identity Management System (IMS) hjälper administratörer att skapa och hantera användarnas åtkomst till program och tjänster. Mer information om de olika typerna av Adobe-ID finns i [den här sidan](https://helpx.adobe.com/enterprise/using/identity.html).
+Adobe Identity Management System (IMS) hjälper administratörer att skapa och hantera användarnas åtkomst till program och tjänster. Mer information om de olika typerna av Adobe-ID:n finns på [den här sidan](https://helpx.adobe.com/enterprise/using/identity.html).
 
-Kampanjanvändare kan ansluta till Adobe Campaign-konsolen med sin Adobe ID istället för [autentisering av inbyggda användare/lösenord](../../platform/using/access-management-operators.md). Implementeringen har följande fördelar:
+Kampanjanvändare kan ansluta till Adobe Campaign-konsolen med sin Adobe ID, i stället för den [inbyggda autentiseringen av användare/lösenord](../../platform/using/access-management-operators.md). Implementeringen har följande fördelar:
 
 * Samma ID kan användas för alla Experience Cloud-lösningar.
 * Anslutningen behålls när du använder Adobe Campaign med olika integreringar.
@@ -27,7 +27,7 @@ Kampanjanvändare kan ansluta till Adobe Campaign-konsolen med sin Adobe ID ist�
 
 >[!IMPORTANT]
 >
-> Observera att det inte är tillåtet att ansluta till användare/lösenord (dvs. inbyggd autentisering) i Campaign v8. **Adobe rekommenderar att du utför migreringen från och med Campaign v7.3.5 för att smidigt kunna migrera till Campaign v8.**
+> Observera att det inte är tillåtet att ansluta till användare/lösenord (dvs. inbyggd autentisering) i Campaign v8. **Adobe rekommenderar att du utför den här migreringen från Campaign v7.3.5 för att smidigt kunna migrera till Campaign v8.**
 >
 >Lär dig hur du migrerar till Adobe IMS i [det här avsnittet](../../technotes/using/ac-ims.md).
 >
@@ -50,6 +50,6 @@ Kampanjanvändare kan ansluta till Adobe Campaign-konsolen med sin Adobe ID ist�
 
 | Användbara sidor | Ytterligare resurser |
 |---|---|
-| [Konfigurera IMS](../../integrations/using/configuring-ims.md) | [Vanliga frågor om Experience Cloud](https://experienceleague.adobe.com/docs/core-services/interface/manage-users-and-products/faq.html) |
+| [Konfigurerar IMS](../../integrations/using/configuring-ims.md) | [Vanliga frågor om Experience Cloud](https://experienceleague.adobe.com/docs/core-services/interface/manage-users-and-products/faq.html) |
 | [Implementera IMS](../../integrations/using/implementing-ims.md) | [Åtkomsthantering](../../platform/using/access-management.md) |
-| [IMS-felsökning](../../integrations/using/ims-troubleshooting.md) | [Installera Campaign-paket](../../installation/using/installing-campaign-standard-packages.md) |
+| [IMS-felsökning](../../integrations/using/ims-troubleshooting.md) | [Installerar kampanjpaket](../../installation/using/installing-campaign-standard-packages.md) |

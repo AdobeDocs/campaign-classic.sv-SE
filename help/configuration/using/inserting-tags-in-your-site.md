@@ -16,7 +16,7 @@ ht-degree: 0%
 
 ## Enkel metod {#simple-method}
 
-Den här metoden består av att skicka ett HTTP-anrop till omdirigeringsservern genom att infoga en **`<img>`** HTML i HTML-källkoden för webbsidan som du vill spåra.
+Den här metoden består av att skicka ett HTTP-anrop till omdirigeringsservern genom att infoga taggen **`<img>`** HTML i HTML-källkoden för webbsidan som du vill spåra.
 
 >[!IMPORTANT]
 >
@@ -34,7 +34,7 @@ Den infogade taggen kontaktar omdirigeringsservern.
 
 När du definierar en sida som ska spåras i konsolen kan du generera ett exempel på en webbspårningstagg som kopieras och klistras in i webbsidans källkod.
 
-När du använder taggar av typen TRANSACTION måste du emellertid ändra exempeltaggen med JavaScript för att kunna infoga transaktionsinformationen (mängd, antal objekt) och all information som definieras av ett tilläggsschema.
+När du använder taggar av typen TRANSACTION måste du emellertid ändra exempeltaggen med JavaScript för att kunna infoga transaktionsinformationen (antal, antal objekt) och all information som definieras av ett tilläggsschema.
 
 ### Statisk infogning av taggar {#static-insertion-of-tags}
 
@@ -88,7 +88,7 @@ Infogning av en webbspårningstagg av typen TRANSACTION på bekräftelsesidan (&
 
 När dina webbsidor genereras dynamiskt kan du lägga till spårningstaggen vid sidgenerering.
 
-**Exempel**: Webbspårning har lagts till i JSP.
+**Exempel**: Webbspårning har lagts till i JSP:er.
 
 ```
 <%@page import="java.util.Random" %>
@@ -125,7 +125,7 @@ När dina webbsidor genereras dynamiskt kan du lägga till spårningstaggen vid 
 
 Om du vill styra informationen som skickas till omdirigeringsservern är det mest tillförlitliga sättet att utföra HTTP-frågan synkront själv med ett sidgenereringsspråk.
 
-Den URL som du skapar måste följa de syntaxregler som definieras i [Webbspårningstagg: definition](../../configuration/using/web-tracking-tag-definition.md).
+Den URL som du skapar måste följa de syntaxregler som definieras i [webbspårningstaggen: definition](../../configuration/using/web-tracking-tag-definition.md).
 
 ![](assets/d_ncs_integration_webtracking_structure3.png)
 
@@ -133,7 +133,7 @@ Den URL som du skapar måste följa de syntaxregler som definieras i [Webbspårn
 >
 >Omdirigering och webbspårning använder cookies, och det är viktigt att webbservern som utför det synkrona HTTP-anropet finns i samma domän som omdirigeringsservern. De olika HTTP-utbytena måste förmedla cookies av typen id, uuid och uuid230.
 
-**Exempel**: Dynamisk generering i Java, med mottagarautentisering med sitt kontonummer.
+**Exempel**: Dynamisk generering i Java, med mottagarautentisering med hjälp av kontonumret.
 
 ```
 [...]

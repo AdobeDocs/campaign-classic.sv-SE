@@ -39,19 +39,19 @@ Här kan du definiera de fält som skapar en koppling mellan SQL-tabeller.
 
 ## Användning och användningssammanhang {#use-and-context-of-use-5}
 
-A `<join>`  -element kan bara användas om det överordnade elementet  `<element>`  -elementet är av typen link. Det innebär att det överordnade elementet måste ha attributet &quot;@type=link&quot; deklarerat.
+Ett `<join>`-element kan bara användas om det överordnade `<element>`-elementet är av typen link. Det innebär att det överordnade elementet måste ha attributet &quot;@type=link&quot; deklarerat.
 
-Du behöver inte ange namnet och namnutrymmet för fjärrtabellen i `<join>`  -element. De måste anges i den överordnade  `<element>`.
+Du behöver inte ange namnet och namnutrymmet för fjärrtabellen i elementet `<join>`. De måste anges i det överordnade objektet `<element>`.
 
 Länkar definieras som regel i slutet av schemat.
 
-Om `<join>` -elementet anges inte när länktypselementet definieras, länken placeras automatiskt på primärnycklarna för båda tabellerna.
+Om elementet `<join>` inte anges när länktytelementet definieras, placeras länken automatiskt på primärnycklarna för båda tabellerna.
 
 ## Attributbeskrivning {#attribute-description-7}
 
-* **dstFilterExpr (sträng)**: det här attributet låter dig begränsa antalet giltiga värden i fjärrtabellen.
+* **dstFilterExpr (sträng)**: Med det här attributet kan du begränsa antalet giltiga värden i fjärrtabellen.
 * **xpath-dst (sträng)**: det här attributet tar emot en Xpath (@name-attribut för fjärrtabellen).
-* **xpath-src (sträng)**: det här attributet tar emot ett Xpath-attribut (@name-attribut i det aktuella schemat).
+* **xpath-src (sträng)**: det här attributet tar emot en Xpath (@name-attribut i det aktuella schemat).
 
 ## Exempel {#examples-6}
 

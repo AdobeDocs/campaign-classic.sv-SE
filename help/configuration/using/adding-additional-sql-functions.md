@@ -14,7 +14,7 @@ ht-degree: 0%
 
 # Definiera ytterligare SQL-funktioner{#adding-additional-sql-functions}
 
-Adobe Campaign låter användaren definiera **sina egna funktioner** som har åtkomst till SQL-funktioner, både de som finns i databasen och de som inte redan finns i konsolen. Detta är användbart för sammanställningsfunktioner (medel, maximum, sum) som till exempel bara kan beräknas på servern eller när databasen är ett enklare sätt att implementera vissa funktioner, i stället för att skriva uttrycket i konsolen manuellt (till exempel datumhantering).
+Med Adobe Campaign kan användaren definiera **sina egna funktioner** som har åtkomst till SQL-funktioner, både de som finns i databasen och de som inte redan är tillgängliga i konsolen. Detta är användbart för sammanställningsfunktioner (medel, maximum, sum) som till exempel bara kan beräknas på servern eller när databasen är ett enklare sätt att implementera vissa funktioner, i stället för att skriva uttrycket i konsolen manuellt (till exempel datumhantering).
 
 Den här funktionen kan även användas om du vill använda en nyligen använd eller ovanlig SQL-funktion för databasmotorn som ännu inte finns i Adobe Campaign-konsolen.
 
@@ -22,13 +22,13 @@ När dessa funktioner har lagts till visas de i uttrycksredigeraren precis som a
 
 >[!IMPORTANT]
 >
->SQL-funktionsanrop i konsolen skickas inte längre naturligt till servern. Den mekanism som beskrivs här blir därför **det enda sättet att ringa** på den oplanerade SQL-funktionsservern.
+>SQL-funktionsanrop i konsolen skickas inte längre naturligt till servern. Den mekanism som beskrivs här blir därför **det enda sättet att anropa** på den oplanerade SQL-funktionsservern.
 
 ## Installation {#installation}
 
-De funktioner som ska läggas till finns i en **&quot;package&quot;-fil i XML-format**, vars struktur beskrivs i följande stycke.
+De funktioner som ska läggas till finns i en **&quot;paketfil&quot; i XML-format**, vars struktur beskrivs i följande stycke.
 
-Om du vill installera den från konsolen väljer du **Verktyg/Avancerat/Importera paket** på menyn och sedan **[!UICONTROL Install from file]** och följ instruktionerna i importguiden.
+Om du vill installera det från konsolen väljer du alternativen **Verktyg/Avancerat/Importera paket** på menyn, sedan **[!UICONTROL Install from file]** och följer instruktionerna i importguiden.
 
 >[!IMPORTANT]
 >
@@ -36,7 +36,7 @@ Om du vill installera den från konsolen väljer du **Verktyg/Avancerat/Importer
 
 ## Allmän struktur för paket som ska importeras {#general-structure-of-package-to-import}
 
-Funktioner som ska läggas till finns i **filen &quot;package&quot;** i XML-format Här är ett exempel:
+Funktioner som ska läggas till finns i filen **&quot;package&quot;** i XML-format. Här är ett exempel:
 
 ```
 <?xml version="1.0" encoding='ISO-8859-1' ?>
@@ -63,14 +63,14 @@ Funktioner som ska läggas till finns i **filen &quot;package&quot;** i XML-form
 </package>
 ```
 
-* The **name**, **namespace** och **label** endast i informationssyfte. De gör att du kan visa en sammanfattning av paketet i den installerade paketlistan (Utforskaren/Administration/Pakethantering/Installerade paket).
-* The **buildVersion** och **buildNumber** fält är obligatoriska. De måste motsvara servernumret som konsolen är ansluten till. Den här informationen finns i rutan &quot;Hjälp/Om&quot;.
-* Följande block, **enheter** och **funktionslista** är obligatoriska. I funcList är fälten &quot;name&quot; och &quot;namespace&quot; obligatoriska, men användaren bestämmer själv vilket namn de ska ha och anger en unik funktionslista.
+* **name**, **namespace** och **label** är endast avsedda som information. De gör att du kan visa en sammanfattning av paketet i den installerade paketlistan (Utforskaren/Administration/Pakethantering/Installerade paket).
+* Fälten **buildVersion** och **buildNumber** är obligatoriska. De måste motsvara servernumret som konsolen är ansluten till. Den här informationen finns i rutan &quot;Hjälp/Om&quot;.
+* Följande block, **entities** och **funktionlist**, är obligatoriska. I funcList är fälten &quot;name&quot; och &quot;namespace&quot; obligatoriska, men användaren bestämmer själv vilket namn de ska ha och anger en unik funktionslista.
 
   Det innebär att om en annan lista med funktioner med samma namnutrymmes-/namnpar (här &quot;cus::myList&quot;) importeras, tas de funktioner som tidigare importerats bort. Om du ändrar namnutrymmes-/namnparet läggs den nya serien med importerade funktioner till i det föregående.
 
-* The **grupp** kan du ange i vilken funktionsgrupp de importerade funktionerna ska visas i funktionsredigeraren. Attributet @name kan antingen vara ett namn som redan finns (i så fall läggs funktionerna till i den aktuella gruppen) eller ett nytt namn (i så fall visas de i en ny grupp).
-* Påminnelse: möjliga värden för attributet @name i `<group>` -element:
+* Med elementet **group** kan du ange i vilken funktionsgrupp de importerade funktionerna ska visas i funktionsredigeraren. Attributet @name kan antingen vara ett namn som redan finns (i så fall läggs funktionerna till i den aktuella gruppen) eller ett nytt namn (i så fall visas de i en ny grupp).
+* Påminnelse: Möjliga värden för attributet @name i elementet `<group>` är:
 
   ```
     name="aggregate"      ( label="Aggregates"         )
@@ -86,13 +86,13 @@ Funktioner som ska läggas till finns i **filen &quot;package&quot;** i XML-form
 >
 >Se till att du slutför attributet @label: det här namnet som kommer att visas i listan över tillgängliga funktioner. Om du inte anger något kommer gruppen inte att ha något namn. Om du anger ett annat namn än det befintliga, ändras dock namnet på hela gruppen.
 
-Om du vill lägga till funktioner i flera olika grupper kan du skapa flera `<group>`  elementen spåras i samma lista.
+Om du vill lägga till funktioner i flera olika grupper kan du göra så att flera `<group>` element spåras i samma lista.
 
-Äntligen en `<group>` -elementet kan innehålla definitionen för en eller flera funktioner, det vill säga syftet med paketfilen. The  `<function>`   -elementet beskrivs i följande stycke.
+Slutligen kan ett `<group>`-element innehålla definitionen av en eller flera funktioner, det vill säga syftet med paketfilen. `<function>`   -elementet beskrivs i följande stycke.
 
 ## Funktionsbeskrivning &lt;function>&lt;/function> {#function-descriptor--function-}
 
-Det fall som presenteras här är ett allmänt fall där vi vill lämna in **funktionsimplementering**.
+Det här fallet är ett allmänt fall där vi vill tillhandahålla **funktionsimplementeringen**.
 
 Nedan visas ett exempel på en funktion för&quot;relativ mognad&quot; som, med hjälp av en ålder, anger i hur många år personen har betraktats som mogen.
 
@@ -104,7 +104,7 @@ Nedan visas ett exempel på en funktion för&quot;relativ mognad&quot; som, med 
     </function>
 ```
 
-The **@name** fältet refererar till funktionens namn och &quot;args&quot; är den lista med parametrar som ska visas i beskrivningen. I det här fallet visas funktionen som &quot;relativeMaturity&quot; ( `<age>` )&quot; i funktionsvalsfönstret.
+Fältet **@name** refererar till funktionens namn och &quot;args&quot; är den lista med parametrar som ska visas i beskrivningen. I det här fallet visas funktionen som&quot;relativeMaturity ( `<age>` )&quot; i funktionsvalsfönstret.
 
 * **help** är det fält som visas längst ned i uttrycksredigeringsfönstret.
 * **@display** är ett informativt meddelande.
@@ -119,10 +119,10 @@ The **@name** fältet refererar till funktionens namn och &quot;args&quot; är d
 
 * **@type** är funktionens returtyp och är ett standardvärde (long, string, byte, datetime..). Om den utelämnas avgör servern den bästa typen bland de tillgängliga typerna i uttrycket som implementerar funktionen.
 * **@minArgs** och **maxArgs** anger antalet parametrar (minimum och maximum) för en parameter. För en funktion med 2 parametrar blir till exempel minArgs och maxArgs 2 och 2. För 3 parametrar, plus 1 valfritt, är de 3 respektive 4.
-* Slutligen **providerPart** -element innehåller funktionsimplementeringen.
+* Slutligen innehåller elementet **providerPart** funktionsimplementeringen.
 
-   * The **provider** är obligatoriskt, anger det databassystem som implementeringen är avsedd för. När uttryckssyntaxen eller underliggande funktioner skiljer sig åt kan alternativa implementeringar tillhandahållas enligt databasen, vilket visas i exemplet.
-   * The **@body** -attributet innehåller funktionsimplementeringen. Obs! Den här implementeringen måste vara ett uttryck i databasspråket (inte ett kodblock). Beroende på databaser kan uttryck vara underfrågor (&quot;(markera kolumn från tabell där...)&quot;) som bara returnerar ett värde. Detta är till exempel fallet i Oraclet (frågan måste skrivas inom hakparenteser).
+   * Attributet **provider** är obligatoriskt, det anger för vilka databassystem implementeringen tillhandahålls. När uttryckssyntaxen eller underliggande funktioner skiljer sig åt kan alternativa implementeringar tillhandahållas enligt databasen, vilket visas i exemplet.
+   * Attributet **@body** innehåller funktionsimplementeringen. Obs! Den här implementeringen måste vara ett uttryck i databasspråket (inte ett kodblock). Beroende på databaser kan uttryck vara underfrågor (&quot;(markera kolumn från tabell där...)&quot;) som bara returnerar ett värde. Detta är till exempel fallet i Oraclet (frågan måste skrivas inom hakparenteser).
 
   >[!NOTE]
   >
@@ -130,7 +130,7 @@ The **@name** fältet refererar till funktionens namn och &quot;args&quot; är d
 
 ## Funktionsbeskrivningen &quot;Pass-through&quot; {#pass-through--function-descriptor}
 
-En särskild funktionsbeskrivning är **&quot;pass-through&quot;** -block, med ett ospecificerat &quot;provider&quot;-databassystem. I det här fallet kan &quot;body&quot;-implementeringen bara innehålla ett enda funktionsanrop med en syntax som inte är beroende av den databas som används. Under tiden är &quot;ProviderPart&quot;-blocket unikt.
+En särskild funktionsbeskrivning är **&quot;pass-through&quot;**-blocket, med ett ospecificerat &quot;provider&quot;-databassystem. I det här fallet kan &quot;body&quot;-implementeringen bara innehålla ett enda funktionsanrop med en syntax som inte är beroende av den databas som används. Under tiden är &quot;ProviderPart&quot;-blocket unikt.
 
 ```
     <function name="CountAll" args="()" help="Counts the values returned (all fields together)"

@@ -21,7 +21,7 @@ ht-degree: 2%
 
 ## Programunderhåll {#application-maintenance}
 
-Adobe Campaign har ett inbyggt arbetsflöde där du kan schemalägga vissa underhållsåtgärder: **arbetsflöde för databasrensning**. Det här arbetsflödet utför följande uppgifter:
+Adobe Campaign har ett inbyggt arbetsflöde där du kan schemalägga vissa databasunderhållsåtgärder: **arbetsflödet för databassortering**. Det här arbetsflödet utför följande uppgifter:
 
 * Borttagning av utgångna poster.
 * Borttagning av överblivna poster och återinitiering av status för utgångna objekt.
@@ -66,21 +66,21 @@ Flera strategier är tillgängliga:
  </thead> 
  <tbody> 
   <tr> 
-   <td> Onlinedefragmentering<br /> </td> 
+   <td> Onlinedefragmentering <br /> </td> 
    <td> De flesta databasmotorer har defragmenteringsmetoder.<br /> </td> 
-   <td> Använd helt enkelt databasdefragmenteringsmetoden. Dessa metoder tar vanligtvis hand om integritetsproblem genom att låsa data under defragmentering.<br /> </td> 
+   <td> Använd helt enkelt databasdefragmenteringsmetoden. Dessa metoder hanterar vanligtvis integritetsproblem genom att låsa data under defragmentering.<br /> </td> 
    <td> Beroende på databasen kan dessa defragmenteringsmetoder anges som ett RDBMS-alternativ (Oracle) och är inte alltid det mest effektiva sättet att hantera större tabeller.<br /> </td> 
   </tr> 
   <tr> 
-   <td> Dumpa och återställa<br /> </td> 
+   <td> Dumpa och återställ <br /> </td> 
    <td> Dumpa tabellen till en fil, ta bort tabellen i databasen och återställ från dumpen.<br /> </td> 
    <td> Det här är det enklaste sättet att defragmentera en tabell. Den enda lösningen när databasen är nästan full.<br /> </td> 
-   <td> Eftersom tabellen tas bort och återskapas går det inte att lämna programmet online, inte ens i skrivskyddat läge (tabellen är inte tillgänglig under återställningsfasen).<br /> </td> 
+   <td> Eftersom tabellen tas bort och återskapas går det inte att lämna programmet online, även i skrivskyddat läge (tabellen är inte tillgänglig under återställningsfasen).<br /> </td> 
   </tr> 
   <tr> 
-   <td> Duplicera, byta namn och släppa<br /> </td> 
-   <td> Då skapas en kopia av en tabell och dess index, den befintliga kopian tas bort och kopians namn ändras så att den ersätts.<br /> </td> 
-   <td> Den här metoden är snabbare än den första metoden eftersom den genererar mindre I/O (ingen kopia som fil och läsning från den här filen).<br /> </td> 
+   <td> Duplicera, byt namn och släpp<br /> </td> 
+   <td> Detta skapar en kopia av en tabell och dess index, och släpper sedan den befintliga tabellen och byter namn på kopian så att den ersätter den.<br /> </td> 
+   <td> Den här metoden är snabbare än den första metoden eftersom den genererar färre I/O (ingen kopia som fil och läsning från den här filen).<br /> </td> 
    <td> Kräver dubbelt så mycket utrymme som utrymmet.<br /> Alla aktiva processer som skriver till tabellen under processen måste stoppas. Läsprocesserna påverkas dock inte eftersom tabellen byts ut i sista stund när den har byggts om. <br /> </td> 
   </tr> 
  </tbody> 

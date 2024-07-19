@@ -19,13 +19,13 @@ ht-degree: 7%
 
 ## Konvertera en befintlig leverans till en mall {#converting-an-existing-delivery-to-a-template}
 
-En leverans kan konverteras till en mall för nya upprepade leveransåtgärder. Om du vill konvertera en leverans till en mall väljer du den i leveranslistan som du når via **[!UICONTROL Campaign management]** trädnod.
+En leverans kan konverteras till en mall för nya upprepade leveransåtgärder. Om du vill konvertera en leverans till en mall väljer du den i leveranslistan, som du kommer åt via noden **[!UICONTROL Campaign management]** i trädet.
 
 Högerklicka och välj **[!UICONTROL Actions > Save as template...]**.
 
 ![](assets/s_ncs_user_campaign_save_as_scenario.png)
 
-Den här åtgärden skapar en leveransmall av den valda leveransen. Du måste ange mappen där den sparas (i **[!UICONTROL Folder]** fält) samt den mapp där leveranser som skapats baserat på den här mallen skapas (i **[!UICONTROL Execution folder]** fält).
+Den här åtgärden skapar en leveransmall av den valda leveransen. Du måste ange den mapp där den sparas (i fältet **[!UICONTROL Folder]**) samt den mapp där leveranser som skapats baserat på den här mallen skapas (i fältet **[!UICONTROL Execution folder]**).
 
 ![](assets/s_ncs_user_campaign_save_as_scenario_a.png)
 
@@ -40,31 +40,31 @@ Mer information om konfigurationsläget finns i [Länka mallen till en leverans]
 Så här konfigurerar du en leveransmall:
 
 1. Öppna Campaign Explorer.
-1. I **Resurs** mapp, markera **Mallar** sedan **Leveransmallar**.
+1. I mappen **Resources** väljer du **Mallar** och sedan **Leveransmallar**.
 
    ![](assets/delivery_template_1.png)
 
-1. Klicka **Nytt** i verktygsfältet för att skapa en ny leveransmall, eller **Duplicera** en befintlig mall.
+1. Klicka på **Nytt** i verktygsfältet om du vill skapa en ny leveransmall eller **Duplicera** en befintlig mall.
 
    ![](assets/delivery_template_2.png)
 
-1. Ändra **Etikett** och **Internt namn** i mappen.
+1. Ändra mappens **etikett** och **interna namn**.
 1. Spara mallen och öppna den igen.
-1. Klicka på **Egenskaper** och sedan ändra värdena enligt dina önskemål.
+1. Klicka på knappen **Egenskaper** och ändra sedan värdena enligt dina önskemål.
 
    ![](assets/delivery_template_3.png)
 
-1. I **Allmänt** kan du bekräfta eller ändra de platser som du har valt på fliken **Körningsmapp**, **Mapp** och **Routning** menyer.
+1. På fliken **Allmänt** bekräftar du eller ändrar de platser som har valts i listrutorna **Körningsmapp**, **Mapp** och **Routning**.
 
    ![](assets/delivery_template_4.png)
 
-1. Slutför **E-postparametrar** -kategori med ditt e-postämne och din målgrupp.
-1. Lägg till **HTML content** om du vill anpassa mallen kan du visa en länk för spegelsida och en länk för att avbryta prenumerationen.
-1. Välj **Förhandsgranska** -fliken. I **Testa personalisering** nedrullningsbar meny, välja **Mottagare** om du vill förhandsgranska mallen som den valda profilen.
+1. Fyll i kategorin **E-postparametrar** med ditt e-postämne och målpopulationen.
+1. Lägg till ditt **HTML-innehåll** för att anpassa mallen, så kan du visa en länk för spegelsida och en länk för att avbryta prenumerationen.
+1. Välj fliken **Förhandsgranska**. I listrutan **Testa anpassning** väljer du **Mottagare** om du vill förhandsgranska mallen som den valda profilen.
 
    ![](assets/delivery_template_5.png)
 
-1. Klicka **Spara**. Mallen kan nu användas i en leverans.
+1. Klicka på **Spara**. Mallen kan nu användas i en leverans.
 
 
 ## Självstudievideor {#delivery-template-video}
@@ -87,4 +87,4 @@ I den här videon förklaras hur du distribuerar en mall för ad hoc-e-postlever
 
 >[!VIDEO](https://video.tv.adobe.com/v/24065?quality=12)
 
-Det finns fler videor med Campaign Classic om hur man gör [här](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=sv).
+Ytterligare Campaign Classic om instruktionsvideor finns [här](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=sv).

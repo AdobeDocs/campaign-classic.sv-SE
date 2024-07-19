@@ -19,6 +19,6 @@ Här är de olika slutpunkterna som används i Campaign Classic.
 
 | Kontext | URL |
 |--- |--- |
-| Slutpunkter för webbläsare | `https://*.experiencecloud.adobe.com` (SSO-provider)<br>`https://*.campaign.adobe.com` (Campaign-instans)<br>`https://adobeid-na1.services.adobe.com` (inloggning på Adobe) |
+| Slutpunkter för webbläsare | `https://*.experiencecloud.adobe.com` (SSO-provider)<br>`https://*.campaign.adobe.com` (Campaign-instans)<br>`https://adobeid-na1.services.adobe.com` (inloggning i Adobe) |
 | Inkorgsåtergivning (Litmus) | `https://deliverability-app.neolane.net/deliverability` |
 | Varumärknings-URL, spegelsidor, spårning, fileref (distributionsguide) | Kontrollera de URL:er som har konfigurerats för dig. |

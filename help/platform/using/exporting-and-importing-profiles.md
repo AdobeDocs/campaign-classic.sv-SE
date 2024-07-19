@@ -18,7 +18,7 @@ ht-degree: 10%
 
 
 
-Du kan [använda arbetsflöden](#use-workflows) för att importera eller exportera mottagarprofiler till Adobe Campaign-databasen eller konfigurera [allmänna import- eller exportjobb](#create-jobs).
+Du kan [använda arbetsflöden](#use-workflows) för att importera eller exportera mottagarprofiler till Adobe Campaign-databasen eller konfigurera [generiska import- eller exportjobb](#create-jobs).
 
 ![](assets/do-not-localize/how-to-video.png) [Upptäck den här funktionen i en video](#import-profiles-video)
 
@@ -26,11 +26,11 @@ Du kan [använda arbetsflöden](#use-workflows) för att importera eller exporte
 
 Export och import konfigureras i dedikerade mallar som körs via arbetsflöden via import- och exportaktiviteter. De kan upprepas automatiskt enligt ett schema, t.ex. för att automatisera datautbyte mellan olika informationssystem. [Läs mer](../../platform/using/import-export-workflows.md#best-practices-when-importing-data)
 
-Om det behövs kan du skapa ett enstaka import- eller exportjobb via **[!UICONTROL Generic imports and exports]** enligt nedan.
+Om det behövs kan du skapa ett enstaka import- eller exportjobb med funktionen **[!UICONTROL Generic imports and exports]** som beskrivs nedan.
 
 ## Skapa jobb{#create-jobs}
 
-Om du vill konfigurera och köra import- och exportjobb går du till **[!UICONTROL Profiles and targets]** och klicka på **[!UICONTROL Jobs]** länk. [Läs mer](../../platform/using/about-generic-imports-exports.md)
+Om du vill konfigurera och köra import- och exportjobb för data går du till fliken **[!UICONTROL Profiles and targets]** och klickar på länken **[!UICONTROL Jobs]**. [Läs mer](../../platform/using/about-generic-imports-exports.md)
 
 ![](assets/s_ncs_user_interface_import_link.png)
 
@@ -41,4 +41,4 @@ I den här videon förklaras hur du importerar profiler i Adobe Campaign, vid en
 
 >[!VIDEO](https://video.tv.adobe.com/v/25608?quality=12)
 
-Det finns fler videor med Campaign Classic om hur man gör [här](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=sv).
+Ytterligare Campaign Classic om instruktionsvideor finns [här](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=sv).

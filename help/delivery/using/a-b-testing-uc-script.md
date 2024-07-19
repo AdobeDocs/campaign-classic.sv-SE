@@ -70,12 +70,12 @@ En detaljerad förklaring av skriptet finns i [det här avsnittet](#details-of-t
 
 ## Implementering {#implementation}
 
-1. Öppna **[!UICONTROL JavaScript code]** aktivitet.
-1. Kopiera skriptet som finns i [Exempel på ett skript](#example-of-a-script) till **[!UICONTROL JavaScript code]** -fönstret.
+1. Öppna din **[!UICONTROL JavaScript code]**-aktivitet.
+1. Kopiera skriptet som finns i [Exempel på ett skript](#example-of-a-script) till **[!UICONTROL JavaScript code]**-fönstret.
 
    ![](assets/use_case_abtesting_configscript_002.png)
 
-1. I **[!UICONTROL Label]** anger du namnet på skriptet, dvs.
+1. Ange skriptets namn i fältet **[!UICONTROL Label]**, dvs.
 
    ```
    <%= vars.deliveryId %>
@@ -83,14 +83,14 @@ En detaljerad förklaring av skriptet finns i [det här avsnittet](#details-of-t
 
    ![](assets/use_case_abtesting_configscript_003.png)
 
-1. Stäng **[!UICONTROL JavaScript code]** aktivitet.
+1. Stäng aktiviteten **[!UICONTROL JavaScript code]**.
 1. Spara arbetsflödet.
 
 ## Information om skriptet {#details-of-the-script}
 
 I det här avsnittet beskrivs de olika delarna av skriptet och deras operativsystem.
 
-* Den första delen av skriptet är en fråga. The **queryDef** kan du återställa från **NmsDelivery** Om du vill ange de leveranser som skapas genom att målinrikta-arbetsflödet utförs och sortera dem baserat på deras uppskattade öppningsfrekvens, återställs informationen från leveransen med den högsta öppningsfrekvensen.
+* Den första delen av skriptet är en fråga. Med kommandot **queryDef** kan du från tabellen **NmsDelivery** återställa leveranser som skapats genom att målinriktningsarbetsflödet har körts och sortera dem baserat på deras beräknade öppningsfrekvens. Informationen från leveransen med den högsta öppningsfrekvensen återställs.
 
   ```
   // query the database to find the winner (best open rate)
@@ -161,12 +161,12 @@ I det här avsnittet beskrivs de olika delarna av skriptet och deras operativsys
 
 I exemplet ovan kan du välja innehållet i en leverans baserat på öppningshastigheten för e-postmeddelanden. Du kan anpassa den efter andra leveransspecifika indikatorer:
 
-* Bästa klickfrekvens: `[indicators/@recipientClickRatio]`,
-* Högsta reaktivitetsfrekvens (öppna e-post och klickningar i meddelandet): `[indicators/@reactivity]`,
+* Bästa klickgenomströmning: `[indicators/@recipientClickRatio]`,
+* Högsta reaktivitetsfrekvens (öppna e-post och klicka i meddelandet): `[indicators/@reactivity]`,
 * Lägsta antal klagomål: `[indicators/@refusedRatio]` (använd värdet false för attributet sortDesc),
-* Högsta konverteringsgrad: `[indicators/@transactionRatio]`,
+* Högsta konverteringsfrekvens: `[indicators/@transactionRatio]`,
 * Antal sidor som besökts efter att ett meddelande tagits emot: `[indicators/@totalWebPage]`,
-* Lägsta prenumerationsavgift: `[indicators/@optOutRatio]`,
+* Lägsta prenumerationshastighet: `[indicators/@optOutRatio]`,
 * Transaktionsbelopp: `[indicators/@amount]`.
 
 Nu kan du definiera den slutliga leveransen. [Läs mer](a-b-testing-uc-final-delivery.md).

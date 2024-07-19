@@ -20,9 +20,9 @@ ht-degree: 2%
 
 ## Publicera mall {#template-publication}
 
-När [meddelandemall](../../message-center/using/creating-the-message-template.md) som skapats i kontrollinstansen är klar och när du har [testad](../../message-center/using/testing-message-templates.md) kan du publicera den. Den här processen kommer även att publicera den på alla körningsinstanser.
+När [meddelandemallen](../../message-center/using/creating-the-message-template.md) som skapats för kontrollinstansen är klar och när du har [testat](../../message-center/using/testing-message-templates.md) den kan du publicera den. Den här processen kommer även att publicera den på alla körningsinstanser.
 
-Med Publikationen kan du automatiskt skapa **två meddelandemallar** på körningsinstanserna, som gör att du kan skicka meddelanden som är länkade till **realtidshändelser** och **batchhändelser**.
+Med Publication kan du automatiskt skapa **två meddelandemallar** för körningsinstanserna, så att du kan skicka meddelanden som är länkade till **realtidshändelser** och **batchhändelser**.
 
 >[!NOTE]
 >
@@ -32,13 +32,13 @@ Med Publikationen kan du automatiskt skapa **två meddelandemallar** på körnin
 >
 >När du gör några ändringar i en mall måste du publicera den igen för att ändringarna ska gälla vid leverans av transaktionsmeddelanden.
 
-1. På kontrollinstansen går du till **[!UICONTROL Message Center > Transactional message templates]** mapp i trädet.
+1. Gå till mappen **[!UICONTROL Message Center > Transactional message templates]** i trädet på kontrollinstansen.
 1. Välj den mall som du vill publicera i dina körningsinstanser.
 1. Klicka på **[!UICONTROL Publish]**.
 
    ![](assets/messagecenter_publish_model_008.png)
 
-När publiceringen är klar skapas båda meddelandemallarna som ska användas för batch- och realtidshändelser i trädet för produktionsinstansen i **[!UICONTROL Administration > Production > Message Center Execution> Default > Transactional message templates]** mapp.
+När publikationen är klar skapas båda meddelandemallarna som ska användas för batch- och realtidshändelser i trädet för produktionsinstansen i mappen **[!UICONTROL Administration > Production > Message Center Execution> Default > Transactional message templates]**.
 
 ![](assets/messagecenter_deployed_model_001.png)
 
@@ -58,7 +58,7 @@ När en meddelandemall har publicerats på körningsinstanserna kan den avpublic
 
   Du publicerade till exempel en meddelandemall som du bara använder för julkampanjer. Du kanske vill avpublicera den när julperioden är slut och publicera den igen nästa år.
 
-* Du kan inte heller ta bort en transaktionsmeddelandemall som har **[!UICONTROL Published]** status. Du måste avpublicera det först.
+* Du kan inte heller ta bort en transaktionsmeddelandemall som har statusen **[!UICONTROL Published]**. Du måste avpublicera det först.
 
 >[!NOTE]
 >
@@ -66,7 +66,7 @@ När en meddelandemall har publicerats på körningsinstanserna kan den avpublic
 
 Följ stegen nedan om du vill avpublicera en transaktionsmeddelandemall.
 
-1. På kontrollinstansen går du till **[!UICONTROL Message Center > Transactional message templates]** mapp i trädet.
+1. Gå till mappen **[!UICONTROL Message Center > Transactional message templates]** i trädet på kontrollinstansen.
 1. Markera den mall som du vill avpublicera.
 1. Klicka på **[!UICONTROL Unpublish]**.
 
@@ -76,14 +76,14 @@ Följ stegen nedan om du vill avpublicera en transaktionsmeddelandemall.
 
 ![](assets/message-center-unpublish.png)
 
-Mallstatusen för transaktionsmeddelanden ändras tillbaka från **[!UICONTROL Published]** till **[!UICONTROL Being edited]**.
+Mallstatusen för transaktionsmeddelandet ändras tillbaka från **[!UICONTROL Published]** till **[!UICONTROL Being edited]**.
 
 När borttagningen är klar:
 
 * Båda meddelandemallarna (som används för batch- och realtidshändelser) tas bort från varje körningsinstans.
 
-  De visas inte längre i **[!UICONTROL Administration > Production > Message Center Execution > Default > Transactional message templates]** mapp (se [det här avsnittet](#template-publication)).
+  De visas inte längre i mappen **[!UICONTROL Administration > Production > Message Center Execution > Default > Transactional message templates]** (se [det här avsnittet](#template-publication)).
 
 * När en mall har avpublicerats kan du ta bort den från kontrollinstansen.
 
-  Om du vill göra det markerar du den i listan och klickar på **[!UICONTROL Delete]** överst till höger på skärmen.
+  Det gör du genom att markera den i listan och klicka på knappen **[!UICONTROL Delete]** överst till höger på skärmen.

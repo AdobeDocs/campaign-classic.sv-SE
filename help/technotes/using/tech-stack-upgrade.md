@@ -15,22 +15,22 @@ ht-degree: 4%
 
 Kampanjinfrastrukturen bygger på tredjepartssystem som regelbundet måste uppdateras med de senaste versionerna och korrigeringarna. Dessa uppdateringar är obligatoriska för att säkerställa kontinuitet i tjänsten och säkra kampanjmiljöer från säkerhetsrisker. Dessutom krävs en Campaign-uppgradering för att säkerställa kompatibilitet med systemändringar från tredje part.
 
-Som en **Kund för värdbaserade eller hanterade Cloud Service** får du information från Adobe om dessa uppgraderingar när de behövs. Du måste uppgradera dina miljöer i enlighet med rekommendationerna för att säkerställa efterlevnad.
+Som **värdkund eller hanterad Cloud Service** informerar Adobe dig om dessa uppgraderingar när de behövs. Du måste uppgradera dina miljöer i enlighet med rekommendationerna för att säkerställa efterlevnad.
 
-Som en **Lokal kund eller hybridkund** rekommenderar Adobe att du uppgraderar system- och kampanjversionerna enligt samma kalender.
+Som **lokal kund eller hybrid-kund** rekommenderar Adobe att du uppgraderar system- och kampanjversionerna enligt samma kalender.
 
-Av säkerhetsskäl måste du [installera den senaste Campaign-versionen](#ac-upgrade)och sedan uppgradera [operativsystem](#os-upgrade) och/eller [RDBMS (Relation Database Management System)](#pg-upgrade).
+Av säkerhetsskäl måste du [installera den senaste Campaign-versionen](#ac-upgrade) och sedan uppgradera ditt [operativsystem](#os-upgrade) och/eller ditt [Relation Database Management System (RDBMS)](#pg-upgrade).
 
 >[!NOTE]
 >
->Om du har frågor om dessa ändringar kan du kontakta [Adobe kundtjänst](https://helpx.adobe.com/se/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html). Se även [Vanliga frågor om uppgradering av bygge](../../platform/using/faq-build-upgrade.md).
+>Kontakta [Adobe kundtjänst](https://helpx.adobe.com/se/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) om du har frågor om de här ändringarna. Se även [Vanliga frågor om uppgradering av bygge](../../platform/using/faq-build-upgrade.md).
 >
 
 ## Uppgradering av kampanjbygge {#ac-upgrade}
 
 **Påverkas du?**
 
-Om du påverkas av [uppgradering av operativsystem](#os-upgrade) och/eller [databassystemuppgradering](#pg-upgrade) som beskrivs nedan måste ni uppgradera era Campaign-miljöer till [den senaste 7.3.2-versionen](../../rn/using/latest-release.md#release-7-3-2)som är kompatibelt med dessa system.
+Om du påverkas av [operativsystemsuppgraderingen](#os-upgrade) och/eller [databassystemuppgraderingen](#pg-upgrade) som anges nedan, måste du uppgradera dina Campaign-miljöer till [den senaste 7.3.2-versionen](../../rn/using/latest-release.md#release-7-3-2), som är kompatibel med dessa system.
 
 **Hur uppdaterar jag?**
 
@@ -43,7 +43,7 @@ Om du påverkas av [uppgradering av operativsystem](#os-upgrade) och/eller [data
 
 **Påverkas du?**
 
-Om ni kör Campaign på ett Debian-operativsystem och vill dra nytta av de senaste säkerhetsuppdateringarna för Debian måste ni flytta er Campaign-infrastruktur till **Debian 11**. Observera att säkerhetssupport för Debian 9 kommer att vara tillgänglig till 30 juni 2023.
+Om du kör Campaign på ett Debian-operativsystem måste du flytta din Campaign-infrastruktur till **Debian 11** för att få tillgång till de senaste Debian-säkerhetsuppdateringarna. Observera att säkerhetssupport för Debian 9 kommer att vara tillgänglig till 30 juni 2023.
 
 **Hur uppdaterar jag?**
 
@@ -55,7 +55,7 @@ Om ni kör Campaign på ett Debian-operativsystem och vill dra nytta av de senas
 
 **Påverkas du?**
 
-Om ditt databassystem för Campaign är PostgreSQL och du vill ha tillgång till de senaste PostgreSQL-innovationerna och säkerhetsuppdateringarna måste du uppgradera till **PostgreSQL 14**. Observera att PostgreSQL 11 når slutet av livscykeln den 9 november 2023.
+Om ditt databassystem för Campaign är PostgreSQL, och du vill ha tillgång till de senaste PostgreSQL-innovationerna och säkerhetsuppdateringarna, måste du uppgradera till **PostgreSQL 14**. Observera att PostgreSQL 11 når slutet av livscykeln den 9 november 2023.
 
 **Hur uppdaterar jag?**
 
@@ -68,5 +68,5 @@ Om ditt databassystem för Campaign är PostgreSQL och du vill ha tillgång till
 
 * [Uppgradera din miljö](../../production/using/build-upgrade.md)
 * [Vanliga frågor och svar om builduppgradering](../../platform/using/faq-build-upgrade.md)
-* [Ladda ned den senaste Campaign Classicen](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html)
+* [Hämta den senaste Campaign Classicen](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html)
 * [Gör den nya klientkonsolen tillgänglig för användare](../../installation/using/client-console-availability-for-windows.md)

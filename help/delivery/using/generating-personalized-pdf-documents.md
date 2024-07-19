@@ -23,7 +23,7 @@ Följande tillägg stöds: .docx, .doc och .odt.
 
 För att personalisera dina dokument finns samma JavaScript-funktioner som för e-postpersonalisering.
 
-Du måste aktivera **[!UICONTROL "The content of the file is personalized and converted to PDF during the delivery of each message"]** alternativ. Det här alternativet är tillgängligt när du bifogar filen till e-postmeddelandet. Mer information om hur du bifogar en beräknad fil finns i [Bifoga filer](attaching-files.md) -avsnitt.
+Du måste aktivera alternativet **[!UICONTROL "The content of the file is personalized and converted to PDF during the delivery of each message"]**. Det här alternativet är tillgängligt när du bifogar filen till e-postmeddelandet. Mer information om hur du bifogar en beräknad fil finns i avsnittet [Bifoga filer](attaching-files.md).
 
 Exempel på en anpassning av en fakturarubrik:
 
@@ -36,7 +36,7 @@ Om du vill generera dynamiska tabeller eller inkludera bilder via en URL-adress 
 Så här genererar du dynamiska tabeller:
 
 * Skapa en tabell med tre rader och så många kolumner som behövs, och konfigurera sedan tabellens layout (kanter osv.).
-* Placera markören på tabellen och klicka på **[!UICONTROL Table > Table properties]** -menyn. Gå till **[!UICONTROL Table]** och ange ett namn som börjar med **NlJsTable**.
+* Placera markören på tabellen och klicka på menyn **[!UICONTROL Table > Table properties]**. Gå till fliken **[!UICONTROL Table]** och ange ett namn som börjar med **NlJsTable**.
 * I den första cellen på den första raden definierar du en slinga (&quot;for&quot;, till exempel) som aktiverar iteration på de värden som du vill visa i tabellen.
 * I varje cell på den andra raden i tabellen infogar du skript som returnerar de värden som ska visas.
 * Stäng slingan på tabellens tredje och sista rad.
@@ -53,24 +53,24 @@ För att göra detta måste du konfigurera ett personaliseringsblock och sedan t
 
 **Exempel: infoga en personlig logotyp beroende på mottagarens land**
 
-**Steg 1: Skapa den bifogade filen:**
+**Steg 1: skapa den bifogade filen:**
 
-* Infoga anropet till personaliseringsblocket: **&lt;%@ include view=&quot;blockname&quot; %>**.
+* Infoga anropet till anpassningsblocket: **&lt;%@ include view=&quot;blockname&quot; %>**.
 * Infoga innehållet (anpassat eller inte) i filens brödtext.
 
 ![](assets/s_ncs_open_office_blocdeperso.png)
 
-**Steg 2: Skapa personaliseringsblocket:**
+**Steg 2: skapa anpassningsblocket:**
 
-* Gå till **[!UICONTROL Resources > Campaign management > Personalization blocks]** Adobe Campaign Console-menyn.
+* Gå till menyn **[!UICONTROL Resources > Campaign management > Personalization blocks]** i Adobe Campaign-konsolen.
 * Skapa ett nytt anpassningsblock för Min logotyp med&quot;Min_logotyp&quot; som internt namn.
-* Klicka på **[!UICONTROL Advanced parameters...]** sedan kontrollera **[!UICONTROL "The content of the block is included in an attachment"]** alternativ. Detta gör att du kan kopiera definitionen av anpassningsblocket direkt till innehållet i OpenOffice-filen.
+* Klicka på länken **[!UICONTROL Advanced parameters...]** och markera sedan alternativet **[!UICONTROL "The content of the block is included in an attachment"]**. Detta gör att du kan kopiera definitionen av anpassningsblocket direkt till innehållet i OpenOffice-filen.
 
   ![](assets/s_ncs_pdf_bloc_option.png)
 
   Ni måste skilja på två typer av deklarationer inom personaliseringsblocket:
 
-   * Adobe Campaign-koden för de anpassningsfält där&quot;öppna&quot;- och&quot;stängda&quot;-texterna måste ersättas med escape-tecken (respektive) `&lt;` och `&gt;`).
+   * Adobe Campaign-koden för de anpassningsfält för vilka&quot;öppna&quot; och&quot;stängda&quot;-texterna måste ersättas med escape-tecken (`&lt;` respektive `&gt;`).
    * Hela OpenOffice XML-koden kopieras till OpenOffice-dokumentet.
 
 I exemplet ser personaliseringsblocket ut så här:

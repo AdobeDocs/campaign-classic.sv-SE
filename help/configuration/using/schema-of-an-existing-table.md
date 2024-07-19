@@ -28,8 +28,8 @@ När programmet behöver komma åt data från en befintlig tabell, en SQL-vy ell
 
 Om du vill skapa motsvarande schema använder du följande steg:
 
-1. Redigera **[!UICONTROL Administration>Configuration>Data schemas]** noden i Adobe Campaign-trädet och klicka **[!UICONTROL New]** .
-1. Välj **[!UICONTROL Access data from an existing table or an SQL view]** och klicka **[!UICONTROL Next]** .
+1. Redigera noden **[!UICONTROL Administration>Configuration>Data schemas]** i Adobe Campaign-trädet och klicka på **[!UICONTROL New]** .
+1. Välj alternativet **[!UICONTROL Access data from an existing table or an SQL view]** och klicka på **[!UICONTROL Next]** .
 
    ![](assets/s_ncs_configuration_extand_a_schema.png)
 
@@ -41,7 +41,7 @@ Om du vill skapa motsvarande schema använder du följande steg:
 
    ![](assets/s_ncs_configuration_view_create_schema.png)
 
-   Schemat måste fyllas i med attributet view=&quot;true&quot; på `<srcSchema>` rotelement för att inte skapa ett SQL-skript för tabellgenerering.
+   Schemat måste fyllas i med attributet view=&quot;true&quot; i rotelementet `<srcSchema>` för att inte SQL-skript för att skapa tabeller.
 
 **Exempel** :
 
@@ -58,6 +58,6 @@ Om du vill skapa motsvarande schema använder du följande steg:
 
 ## Åtkomst till en extern databas {#accessing-an-external-database}
 
-The **Åtkomst till federerade data - FDA** ger dig åtkomst till data som lagras i en extern databas.
+Alternativet **Åtkomst av federerade data - FDA** ger dig åtkomst till data som lagras i en extern databas.
 
-Hur scheman ska konfigureras för att få åtkomst till data i en extern databas beskrivs i [den här sidan](../../installation/using/creating-data-schema.md).
+Den konfiguration som ska utföras på scheman för att komma åt data i en extern databas beskrivs på [den här sidan](../../installation/using/creating-data-schema.md).

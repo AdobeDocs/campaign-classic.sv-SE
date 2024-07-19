@@ -24,11 +24,11 @@ Varje mapp i Utforskarens navigeringsträd har behörighet att läsa, skriva och
 
 ### Vad är en mapp? {#about-folders}
 
-Mappar är noder i Adobe Campaign-trädet. De här noderna skapas genom att högerklicka på trädet, via **[!UICONTROL Add new folder]** -menyn. Som standard gör den första menyn att du kan lägga till den mapp som motsvarar den aktuella kontexten.
+Mappar är noder i Adobe Campaign-trädet. De här noderna skapas genom att högerklicka på trädet via menyn **[!UICONTROL Add new folder]**. Som standard gör den första menyn att du kan lägga till den mapp som motsvarar den aktuella kontexten.
 
 ![](assets/s_ncs_user_add_folder_in_tree.png)
 
-Du kan anpassa utforskarens navigeringsträd. Lär dig konfigurationssteg och metodtips [i det här avsnittet](adobe-campaign-workspace.md).
+Du kan anpassa utforskarens navigeringsträd. Lär dig konfigurationssteg och bästa praxis [i det här avsnittet](adobe-campaign-workspace.md).
 
 ### Vad är en vy? {#about-views}
 
@@ -52,12 +52,12 @@ För att skilja vyer från mappar visas namnet på varje vy i en annan färg (m�
 
 I exemplet nedan skapar vi nya mappar för att visa specifika data:
 
-1. Skapa ett nytt **[!UICONTROL Deliveries]** skriv mapp och namnge den **Leveranser i Frankrike**.
-1. Högerklicka på den här mappen och välj **[!UICONTROL Properties...]**.
+1. Skapa en ny typmapp för **[!UICONTROL Deliveries]** och ge den namnet **Leveranser i Frankrike**.
+1. Högerklicka på mappen och välj **[!UICONTROL Properties...]**.
 
    ![](assets/s_ncs_user_add_folder_exple.png)
 
-1. I **[!UICONTROL Restriction]** flik, välja **[!UICONTROL This folder is a view]**. Därefter visas alla leveranser i databasen.
+1. Välj **[!UICONTROL This folder is a view]** på fliken **[!UICONTROL Restriction]**. Därefter visas alla leveranser i databasen.
 
    ![](assets/s_ncs_user_add_folder_exple01.png)
 
@@ -77,7 +77,7 @@ Följande leveranser visas i vyn:
 
 >[!NOTE]
 >
->Vid hantering [transaktionsmeddelanden](../../message-center/using/about-transactional-messaging.md) händelser, **[!UICONTROL Real time events]** eller **[!UICONTROL Batch events]** mappar får inte anges som vyer för körningsinstanserna eftersom det kan leda till problem med åtkomst till dem. Mer information om händelsesamling finns i [det här avsnittet](../../message-center/using/about-event-processing.md#event-collection).
+>När [transaktionsmeddelanden](../../message-center/using/about-transactional-messaging.md) hanteras får mapparna **[!UICONTROL Real time events]** eller **[!UICONTROL Batch events]** inte anges som vyer för körningsinstanserna eftersom det kan leda till problem med åtkomst. Mer information om händelsesamling finns i [det här avsnittet](../../message-center/using/about-event-processing.md#event-collection).
 
 ## Behörigheter för en mapp
 
@@ -89,7 +89,7 @@ Följ stegen nedan om du vill redigera behörigheter i en viss mapp i trädet:
 
    ![](assets/s_ncs_user_folder_properties.png)
 
-1. Klicka på **[!UICONTROL Security]** för att visa behörigheter i den här mappen.
+1. Klicka på fliken **[!UICONTROL Security]** om du vill visa behörigheter för den här mappen.
 
    ![](assets/s_ncs_user_folder_properties_security.png)
 
@@ -97,19 +97,19 @@ Följ stegen nedan om du vill redigera behörigheter i en viss mapp i trädet:
 
 Om du vill ändra behörigheter kan du:
 
-* **Ersätta en grupp eller en operator**. Det gör du genom att klicka på en av grupperna (eller operatorerna) med rättigheter till mappen och välja en ny grupp (eller en ny operator) i listrutan:
+* **Ersätt en grupp eller en operator**. Det gör du genom att klicka på en av grupperna (eller operatorerna) med rättigheter till mappen och välja en ny grupp (eller en ny operator) i listrutan:
 
   ![](assets/s_ncs_user_folder_properties_security02.png)
 
-* **Auktorisera en grupp eller en operator**. Klicka på **[!UICONTROL Add]** och välj den grupp eller operator som du vill tilldela behörigheter till den här mappen.
-* **Förbjud en grupp eller en operatör**. Det gör du genom att klicka **[!UICONTROL Delete]** och välj den grupp eller operator som du vill ta bort behörigheten för den här mappen från.
-* **Välj rättigheter som tilldelats en grupp eller en operator**. Det gör du genom att klicka på gruppen eller operatorn i fråga och sedan markera de åtkomsträttigheter som du vill ge och avmarkera de andra.
+* **Auktorisera en grupp eller en operator**. Om du vill göra det klickar du på knappen **[!UICONTROL Add]** och väljer gruppen eller operatorn som du vill tilldela behörigheter till den här mappen.
+* **Förbjud en grupp eller en operator**. Om du vill göra det klickar du på **[!UICONTROL Delete]** och väljer gruppen eller operatorn som du vill ta bort behörigheten för den här mappen från.
+* **Välj de rättigheter som tilldelats en grupp eller en operator**. Det gör du genom att klicka på gruppen eller operatorn i fråga och sedan markera de åtkomsträttigheter som du vill ge och avmarkera de andra.
 
   ![](assets/s_ncs_user_folder_properties_security03.png)
 
 ### Sprid behörigheter {#propagate-permissions}
 
-Du kan sprida auktoriseringar och åtkomsträttigheter. Om du vill göra det väljer du **[!UICONTROL Propagate]** i mappegenskaperna.
+Du kan sprida auktoriseringar och åtkomsträttigheter. Om du vill göra det väljer du alternativet **[!UICONTROL Propagate]** i mappegenskaperna.
 
 Behörigheterna som definieras i det här fönstret kommer sedan att tillämpas på alla undermappar i den aktuella noden. Du kan sedan överlagra dessa behörigheter för var och en av undermapparna.
 
@@ -119,6 +119,6 @@ Behörigheterna som definieras i det här fönstret kommer sedan att tillämpas 
 
 ### Ge åtkomst till alla operatorer {#grant-access-to-all-operators}
 
-I **[!UICONTROL Security]** om **[!UICONTROL System folder]** om du väljer det här alternativet får alla operatorer åtkomst till dessa data, oavsett deras rättigheter. Om det här alternativet är avmarkerat måste du uttryckligen lägga till operatorn (eller deras grupp) i listan över auktoriseringar för att de ska ha åtkomst.
+Om alternativet **[!UICONTROL System folder]** är markerat på fliken **[!UICONTROL Security]** får alla operatorer åtkomst till dessa data, oavsett deras rättigheter. Om det här alternativet är avmarkerat måste du uttryckligen lägga till operatorn (eller deras grupp) i listan över auktoriseringar för att de ska ha åtkomst.
 
 ![](assets/s_ncs_user_folder_properties_security03b.png)

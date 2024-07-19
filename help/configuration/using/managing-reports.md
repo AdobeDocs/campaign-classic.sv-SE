@@ -17,9 +17,9 @@ ht-degree: 3%
 
 
 
-Rapporter baserade på ett schema som är specifikt för Adobe Campaign standardmottagare (nm:mottagare eller schemalänkad) måste utvecklas på nytt för att data från den anpassade tabellen och dess tabeller ska kunna länkas via målmappningen (se [Målmappning](../../configuration/using/target-mapping.md) ).
+Rapporter som baseras på ett schema som är specifikt för Adobe Campaign standardmottagare (nm:mottagare eller schemalänkad) måste utvecklas på nytt för att data från den anpassade tabellen och dess tabeller ska kunna länkas via målmappningen (se avsnittet [Målmappning](../../configuration/using/target-mapping.md)).
 
-Om du vill skapa nya rapporter ska du läsa [det här avsnittet](../../reporting/using/about-reports-creation-in-campaign.md).
+Se [det här avsnittet](../../reporting/using/about-reports-creation-in-campaign.md) om du vill skapa nya rapporter.
 
 I vissa fall måste du också skapa nya kuber som är specifika för dessa tabeller. Kuber beskrivs i [det här avsnittet](../../reporting/using/ac-cubes.md).
 
@@ -28,7 +28,7 @@ Följande rapporter berörs:
 * **[!UICONTROL Recent proposition tracking]** (recentPropositions): förslagsspårning i realtid.
 * **[!UICONTROL Breakdown of opens]** (opensByUserAgent): öppnas med uppdelning enligt användarprogramvara.
 * **[!UICONTROL Statistics of the sharing activities]** (forwardActivities): analys av delningsaktiviteter, öppningar och prenumerationer per tidsperiod.
-* **[!UICONTROL Tracking indicators]** (mobileAppDeliveryFeedback): spårningsindikatorer för leverans i ett mobilprogram.
+* **[!UICONTROL Tracking indicators]** (mobileAppDeliveryFeedback): spårningsindikatorer för en leverans i ett mobilprogram.
 * **[!UICONTROL Offer analysis]** (offerAnalysis): erbjudandeanalys per datum och kanal.
 * **[!UICONTROL Reactivity rate]** (mobileAppDistribution): reaktivitetsfrekvens för de senaste leveranserna.
 * **[!UICONTROL Breakdown of subscriptions]** (mobileAppDistribution): uppdelning av aktiva prenumerationer per mobilprogram.

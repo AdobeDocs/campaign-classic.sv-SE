@@ -24,8 +24,8 @@ ht-degree: 1%
 
 ## Förhandskrav {#prerequisites}
 
-* Du måste ha ett namn och ett ID för Adobe Experience Cloud-organisationen. Om du vill hitta ditt organisations-ID går du till [den här sidan](https://experienceleague.adobe.com/docs/core-services/interface/administration/organizations.html?lang=sv){_blank}.
-* Du måste lägga till användare i Experience Cloud. Mer information finns i [den här sidan](https://experienceleague.adobe.com/docs/core-services/interface/administration/admin-getting-started.html){_blank}.
+* Du måste ha ett namn och ett ID för Adobe Experience Cloud-organisationen. Information om hur du hittar ditt organisations-ID finns på [den här sidan](https://experienceleague.adobe.com/docs/core-services/interface/administration/organizations.html?lang=sv){_blank}.
+* Du måste lägga till användare i Experience Cloud. Mer information finns på [den här sidan](https://experienceleague.adobe.com/docs/core-services/interface/administration/admin-getting-started.html){_blank}.
 
 >[!NOTE]
 >
@@ -37,24 +37,24 @@ Om du vill använda den här funktionen måste du installera den senaste version
 
 ## Installera paketet {#installing-the-package}
 
-Du måste installera det inbyggda **[!UICONTROL Integration with the Adobe Experience Cloud]** paket. Att installera ett integrationspaket är detsamma som att installera ett standardpaket, vilket beskrivs i [den här sidan](../../installation/using/installing-campaign-standard-packages.md).
+Du måste installera det inbyggda **[!UICONTROL Integration with the Adobe Experience Cloud]**-paketet. Att installera ett integrationspaket är detsamma som att installera ett standardpaket, vilket beskrivs i [den här sidan](../../installation/using/installing-campaign-standard-packages.md).
 
 ![](assets/ims_6.png)
 
 ## Konfigurera det externa kontot {#configuring-the-external-account}
 
-Konfigurera **Adobe Experience Cloud** externt konto i **[!UICONTROL Administration > Platform > External accounts]**.
+Konfigurera det externa **Adobe Experience Cloud**-kontot i **[!UICONTROL Administration > Platform > External accounts]**.
 
 ![](assets/ims_5.png)
 
 Ange följande information:
 
-* Anslutningsinformation för den IMS-server som används (ID och hemlighet). Denna information tillhandahålls av Adobe kundtjänstteam. Mer information finns i [Frågor och svar för Adobe Experience Cloud-administratörer](https://experienceleague.adobe.com/docs/core-services/interface/manage-users-and-products/faq.html).
+* Anslutningsinformation för den IMS-server som används (ID och hemlighet). Denna information tillhandahålls av Adobe kundtjänstteam. Mer information finns i [Vanliga frågor och svar för Adobe Experience Cloud-administratörer](https://experienceleague.adobe.com/docs/core-services/interface/manage-users-and-products/faq.html).
 
-  The **[!UICONTROL Callback server]** adressen måste anges i **https**. Det här fältet motsvarar åtkomst-URL:en för din Adobe Campaign-instans.
+  Adressen **[!UICONTROL Callback server]** måste anges i **https**. Det här fältet motsvarar åtkomst-URL:en för din Adobe Campaign-instans.
 
-* Organisations-ID: om du vill hitta ditt organisations-ID, se [den här sidan](https://experienceleague.adobe.com/docs/core-services/interface/administration/organizations.html?lang=sv){_blank}.
+* Organisations-ID: du hittar ditt organisations-ID på [den här sidan](https://experienceleague.adobe.com/docs/core-services/interface/administration/organizations.html?lang=sv){_blank}.
 
-* Associationsmask: I det här fältet kan du definiera syntaxen som gör att konfigurationsnamnen i Enterprise Dashboard kan synkroniseras med grupperna i Adobe Campaign. Om du använder syntaxen&quot;Campaign - tenant_id - (.&#42;)&quot; länkas säkerhetsgruppen som skapas i Adobe Campaign till konfigurationsnamnet Campaign - tenant_id - internal_name i Enterprise Dashboard.
+* Associationsmask: I det här fältet kan du definiera syntaxen som gör att konfigurationsnamnen i Enterprise Dashboard kan synkroniseras med grupperna i Adobe Campaign. Om du använder syntaxen&quot;Campaign - tenant_id - (.&#42;)&quot; länkas säkerhetsgruppen som skapats i Adobe Campaign till konfigurationsnamnet Campaign - tenant_id - internal_name i Enterprise Dashboard.
 
 * Adobe Experience Cloud-anslutningsinformation, som är namnet på Adobe Experience Cloud-klienten.

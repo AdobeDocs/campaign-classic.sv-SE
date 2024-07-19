@@ -20,9 +20,9 @@ Från och med Campaign Classic v7 version 21.1.3 är Adobe Analytics Data Connec
 
 Den 1 augusti 2021 har Adobe Campaign Classic tagits bort från det tidigare Data Connectors-gränssnittet, men befintliga Campaign-integreringar kommer att fortsätta att samla in och skicka data till Adobe Analytics fram till den 17 augusti 2022. Efter detta datum upphör integreringen att samla in och skicka data till Adobe Analytics.
 
-Du **måste implementera** den nya integreringen av Adobe Analytics Connector på Adobe Exchange som ersätter den gamla Data Connectors Integration. Mer information om Adobe Analytics Connector finns i [den här sidan](../../integrations/using/gs-aa.md).
+Du **måste implementera** den nya Adobe Analytics Connector-integreringen på Adobe Exchange som ersätter den gamla Data Connectors-integreringen. Mer information om Adobe Analytics Connector finns på [den här sidan](../../integrations/using/gs-aa.md).
 
-Om du har frågor om dessa ändringar kan du läsa [Vanliga frågor](#faq-aa). Mer information får du av [Adobe kundtjänst](https://helpx.adobe.com/se/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
+Läs [Vanliga frågor](#faq-aa) om du har frågor om de här ändringarna. Kontakta [Adobe kundtjänst](https://helpx.adobe.com/se/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) om du vill ha mer information.
 
 >[!NOTE]
 >
@@ -32,13 +32,13 @@ Om du har frågor om dessa ändringar kan du läsa [Vanliga frågor](#faq-aa). M
 
 Nu finns det en ny integrering mellan Campaign Classic v7 och Adobe Analytics. Större förändringar visas nedan.
 
-* The **Kontaktdatum** Klassificeringen, som använder typen datum, har ersatts av Adobe Analytics. För migrerade integreringar kommer den fortfarande att vara av samma typ. För alla **Kontaktdatum** som skapats av Campaign, typen kommer att **Sträng**.
+* Klassificeringen **Kontaktdatum**, som använder typen datum, har tagits bort av Adobe Analytics. För migrerade integreringar kommer den fortfarande att vara av samma typ. För alla **kontaktdatum** som skapats av Campaign blir typen **String**.
 
-* **Bearbetar regler** skapas av Adobe Campaign som en del av nya integreringar. Antingen **Bearbetar regler** ska skapas manuellt från Adobe Analytics eller direkt med JavaScript-implementering på klientsidan. **Bearbetar regler** kommer att förbli intakt för befintliga integreringar.
+* **Bearbetningsregler** skapas av Adobe Campaign som en del av nya integreringar. Antingen **Bearbetningsregler** ska skapas manuellt från Adobe Analytics eller så ska JavaScript-implementering på klientsidan användas direkt. **Bearbetningsreglerna** förblir intakta för befintliga integreringar.
 
 * De inbyggda tekniska arbetsflödena och deras beteende är desamma. Endast de backend-API:er som används av arbetsflödena för att skicka/hämta data till/från Adobe Analytics har ändrats.
 
-* Observera att `nlserver` -processen bör konfigureras med IMS Technical Account User för att den nya anslutningen ska fungera. Denna ändring måste göras av Adobe. Om du vill implementera detta kontaktar du [Adobe kundtjänst](https://helpx.adobe.com/se/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
+* Observera att processen `nlserver` bör konfigureras med IMS Technical Account User för att den nya anslutningen ska fungera. Denna ändring måste göras av Adobe. Kontakta [Adobe kundtjänst](https://helpx.adobe.com/se/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) om du vill implementera detta.
 
 * Om du var Adobe Genesis API:er i anpassade arbetsflöden för att hämta in och flytta data från Adobe Analytics måste du nu använda de nya Adobe Analytics 1.4/2.0 API:erna. [Läs mer](https://adobeexchangeec.zendesk.com/hc/en-us/articles/360047148832-Replacements-for-Data-Connector-API-calls)
 
@@ -46,50 +46,50 @@ Nu finns det en ny integrering mellan Campaign Classic v7 och Adobe Analytics. S
 
 Om du använder den befintliga Adobe Analytics Data Connector (som tidigare kallades Genesis-integrering) och integreringen implementerades på en lägre version än Campaign 21.1.3 påverkas du.
 
-Lär dig kontrollera din version [i det här avsnittet](../../integrations/using/launching-adobe-campaign.md#getting-your-campaign-version).
+Lär dig hur du kontrollerar version [ i det här avsnittet](../../integrations/using/launching-adobe-campaign.md#getting-your-campaign-version).
 
 ## Hur uppdaterar jag?
 
 Du måste uppgradera till Campaign 21.1.3 (eller mer) **före 17 augusti 2022**.
 
-Som värdkund kommer Adobe att arbeta med dig för att uppgradera dina instanser till den nyare versionen. Du kan sedan använda [Adobe Analytics Connector](../../platform/using/gs-aa.md).
+Som värdkund kommer Adobe att arbeta med dig för att uppgradera dina instanser till den nyare versionen. Du kan sedan använda [Adobe Analytics-anslutningen](../../platform/using/gs-aa.md).
 
 Som lokalt/hybridkund måste ni uppgradera till en av de nyare versionerna för att dra nytta av den nya integreringen.
-När alla instanser har uppgraderats kan du [implementera den nya integreringen](../../integrations/using/adobe-analytics-provisioning.md) till Adobe Analytics Connector och säkerställa en smidig övergång.
+När alla instanser har uppgraderats kan du [implementera den nya integrationen](../../integrations/using/adobe-analytics-provisioning.md) till Adobe Analytics Connector och säkerställa en sömlös övergång.
 
 ## Vanliga frågor och svar {#faq-aa}
 
-**Hur får jag tag i loggar?**
+**Hur skaffar jag loggar?**
 
-Konfiguration och arbetsflöden för användargränssnitt har **utförlig** loggning.
+Konfigurationen och arbetsflödena för användargränssnittet är utrustade med **utförlig** loggning.
 
 I detaljerat läge skrivs begärande- och svarshuvuden också ut för varje API-begäran till Adobe Analytics.
 
 Som lokal användare kan du implementera det utförliga läget enligt följande:
 
-* Aktivera utförligt läge för användargränssnittet: kör om `web` bearbeta i detaljerat läge.
-* Aktivera utförligt läge för **webAnalytics** arbetsflöden: välj **Kör i motorn** från arbetsflödesegenskaperna och köra om `wfserver` i detaljerat läge.
+* Så här aktiverar du utförligt läge för användargränssnittet: kör om processen `web` i utförligt läge.
+* Om du vill aktivera utförligt läge för arbetsflödena **webAnalytics** väljer du alternativet **Kör i motorn** i arbetsflödesegenskaperna och kör `wfserver` på nytt i utförligt läge.
 
-**Vad betyder felet &#39;Integrationsägare inte administratör&#39;?**
+**Vad betyder felet &#39;Inte administratör för integrationsägare&#39;?**
 
-Läs mer om Data Connectors `Integration Owner Not Admin` Fel i [den här sidan](https://adobeexchangeec.zendesk.com/hc/en-us/articles/360035167932-Adobe-Analytics-Data-Connectors-Integration-Owner-Not-Admin-Error).
+Läs mer om Data Connectors `Integration Owner Not Admin`-felet i [den här sidan](https://adobeexchangeec.zendesk.com/hc/en-us/articles/360035167932-Adobe-Analytics-Data-Connectors-Integration-Owner-Not-Admin-Error).
 
-**Vad händer med gamla data och rapportsviter när migreringen till den nya kopplingen är klar?**
+**Vad händer med gamla data och rapportsviter när migreringen till den nya anslutningen är klar?**
 
 Efter migreringen kommer en ny koppling (migrerad från den gamla kopplingen) att börja skicka data till samma rapportsvit och befintliga data kommer inte att påverkas: de läggs till i befintliga data.
 
-**Vissa befintliga evars/händelser/rapportsviter i Analytics är inte synliga i Campaign. Vad ska jag göra?**
+**Vissa befintliga e-postadresser, händelser och rapportsviter i Analytics visas inte i Campaign. Vad ska jag göra?**
 
 Integrationen bygger på data i Token för det tekniska kontot för den dagliga driften. Om det saknas behörighet för en dimension-/mätnings-/rapportsvit från produktprofilen som är kopplad till Technical Account User, kommer API:er som vi använder att helt enkelt misslyckas för dessa förfrågningar.
 
 Om vi läser information om en Analytics-komponent (som mått/dimensioner/segment/rapportsviter) returnerar API inte dessa komponenter i resultatet (vilket kan se ut som om något har tagits bort på Analytics-sidan eller inte finns). Analys-API:t kommer att ignorera dessa begäranden och felmeddelanden.
 
-Lösningen är att uppdatera **Produktprofil** i Analytics User Context of Technical User Token med de nyskapade/saknade komponenterna genom att lägga till dessa komponenter i [Adobe Admin Console](https://adminconsole.adobe.com/){_blank}. Om du vill ha mer vägledning kan du kontakta [Adobe kundtjänst](https://helpx.adobe.com/se/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
+Lösningen är att uppdatera **produktprofilen** i användarkontexten för Analytics för teknisk användartoken med de nya/saknade komponenterna genom att lägga till dessa komponenter i [Adobe Admin Console](https://adminconsole.adobe.com/){_blank}. Kontakta [Adobe kundtjänst](https://helpx.adobe.com/se/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) om du vill ha mer information.
 
 ## Användbara länkar
 
 * [Uppgradera din miljö](../../production/using/build-upgrade.md)
 * [Vanliga frågor och svar om builduppgradering](../../platform/using/faq-build-upgrade.md)
-* [Ladda ned Campaign Classic](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html)
+* [Ladda ned Campaign Classic build](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html)
 * [Gör den nya klientkonsolen tillgänglig för användare](../../installation/using/client-console-availability-for-windows.md)
 * [Installera Campaign Client Console](../../installation/using/installing-the-client-console.md)

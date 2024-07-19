@@ -21,7 +21,7 @@ Forms beskrivs i [det här avsnittet](../../configuration/using/identifying-a-fo
 
 ## Formulärstruktur {#form-structure}
 
-XML-dokumentet i ett indataformulär måste innehålla **`<form>`** rotelementet med **name** och **namespace** attribut för att fylla i formulärnamnet och dess namnutrymme.
+XML-dokumentet i ett indataformulär måste innehålla rotelementet **`<form>`** med attributen **name** och **namespace** för att fylla i formulärnamnet och dess namnutrymme.
 
 ```xml
 <form name="form_name" namespace="name_space">
@@ -29,7 +29,7 @@ XML-dokumentet i ett indataformulär måste innehålla **`<form>`** rotelementet
 </form>
 ```
 
-Som standard är ett formulär associerat med dataschemat som har samma namn och namnutrymme. Om du vill associera ett formulär med ett annat namn anger du schematangenten i dialogrutan **enhetstabell** attributet för **`<form>`** -element.
+Som standard är ett formulär associerat med dataschemat som har samma namn och namnutrymme. Om du vill associera ett formulär med ett annat namn anger du schemanyckeln i attributet **entity-schema** för elementet **`<form>`**.
 
 För att illustrera strukturen för ett inmatningsformulär beskriver vi ett gränssnitt baserat på vårt exempelschema &quot;cus:book&quot;:
 
@@ -45,9 +45,9 @@ Det här är motsvarande indataformulär:
 </form>
 ```
 
-Beskrivningen av redigeringselementen börjar med **`<form>`** rotelement.
+Beskrivningen av redigeringselementen börjar med rotelementet **`<form>`**.
 
-En redigeringskontroll anges i en **`<input>`** -elementet med **xpath** attribut som innehåller sökvägen för fältet i dess schema.
+En redigeringskontroll har angetts i ett **`<input>`**-element med attributet **Path** som innehåller sökvägen för fältet i dess schema.
 
 **Påminnelse gällande XPath-syntax:**
 
@@ -60,8 +60,8 @@ Elementen anges med sitt namn och attributen anges med namnet före tecknet&quot
 Exempel:
 
 * **@date**: markerar attributet med namnet &quot;date&quot;
-* **kapitel/@titel**: markerar attributet &quot;title&quot; under `<chapter>` element
-* **../@datum**: väljer datumet från det överordnade elementet för det aktuella elementet
+* **kapitel/@title**: markerar attributet &quot;title&quot; under elementet `<chapter>`
+* **../@date**: väljer datumet från det överordnade elementet för det aktuella elementet
 
 Redigeringskontrollen anpassas automatiskt till motsvarande datatyp och använder den etikett som definierats i schemat.
 
@@ -69,7 +69,7 @@ Som standard visas varje fält på en rad och tar upp allt tillgängligt utrymme
 
 >[!CAUTION]
 >
->Indataformuläret måste referera till en **type=&quot;contentForm&quot;** på **`<form>`** för att automatiskt lägga till den ram som krävs för att innehållet ska kunna matas in.
+>Indataformuläret måste referera till ett **type=&quot;contentForm&quot;** -attribut i **`<form>`** -elementet för att automatiskt lägga till den ram som krävs för att innehållet ska kunna anges.
 
 ## Formatering {#formatting}
 
@@ -94,13 +94,13 @@ Den här kontrollen visar en redigerbar kolumnlista med ett verktygsfält som in
 </input>
 ```
 
-Listkontrollen måste fyllas i med **type=&quot;list&quot;** och listans sökväg måste referera till samlingselementet.
+Listkontrollen måste fyllas i med attributet **type=&quot;list&quot;** och sökvägen för listan måste referera till samlingselementet.
 
-Kolumnerna deklareras av det underordnade objektet **`<input>`** -element i listan.
+Kolumnerna deklareras av de underordnade **`<input>`** elementen i listan.
 
 >[!NOTE]
 >
->Uppåt- och nedåtpilarna läggs till automatiskt när **ordered=&quot;true&quot;** attributet har slutförts för samlingselementet i dataschemat.
+>Uppåt- och nedåtpilarna läggs till automatiskt när attributet **ordered=&quot;true&quot;** har slutförts för samlingselementet i dataschemat.
 
 Som standard justeras verktygsfältsknapparna lodrätt. De kan också justeras vågrätt:
 
@@ -113,11 +113,11 @@ Som standard justeras verktygsfältsknapparna lodrätt. De kan också justeras v
 </input>
 ```
 
-The **toolbarCaption** -attributet framtvingar vågrät justering av verktygsfältet och fyller i titeln ovanför listan.
+Attributet **toolbarCaption** tvingar fram vågrät justering av verktygsfältet och fyller i titeln ovanför listan.
 
 >[!NOTE]
 >
->För att samlingselementets etikett inte ska visas till vänster om kontrollen lägger du till **nolabel=&quot;true&quot;** -attribut.
+>Lägg till attributet **nolabel=&quot;true&quot;** för att samlingselementets etikett inte ska visas till vänster om kontrollen.
 
 #### Zooma in en lista {#zoom-in-a-list}
 
@@ -144,13 +144,13 @@ Redigera formulär i listor används i följande fall:
 </input>
 ```
 
-Definitionen för redigeringsformuläret anges via **`<form>`** -element under listelementet. Dess struktur är identisk med strukturen för ett indataformulär.
+Definitionen för redigeringsformuläret anges via elementet **`<form>`** under listelementet. Dess struktur är identisk med strukturen för ett indataformulär.
 
-A **[!UICONTROL Detail]** knappen läggs till automatiskt när **zoom=&quot;true&quot;** -attributet anges i listdefinitionen. Då kan du öppna redigeringsformuläret på den markerade raden.
+En **[!UICONTROL Detail]**-knapp läggs till automatiskt när attributet **zoom=&quot;true&quot;** anges i listdefinitionen. Då kan du öppna redigeringsformuläret på den markerade raden.
 
 >[!NOTE]
 >
->Lägga till **zoomOnAdd=&quot;true&quot;** -attribut tvingar redigeringsformuläret att anropas när ett element i listan infogas.
+>Om du lägger till attributet **zoomOnAdd=&quot;true&quot;** anropas redigeringsformuläret när ett element i listan infogas.
 
 ### Fliklista {#tab-list}
 
@@ -168,21 +168,21 @@ I den här listan visas redigeringen av samlingselement i form av flikar.
 </container>
 ```
 
-Listkontrollen måste fyllas i med **type=&quot;notebooklist&quot;** och listans sökväg måste referera till samlingselementet.
+Listkontrollen måste fyllas i med attributet **type=&quot;notebooklist&quot;** och listans sökväg måste referera till samlingselementet.
 
-Flikens rubrik innehåller värdet på de data som anges via **xpath-label** -attribut.
+Flikens rubrik innehåller värdet på data som anges via attributet **xpath-label** .
 
-Redigeringskontrollerna måste deklareras under en **`<container>`** element som är underordnat listkontrollen.
+Redigeringskontrollerna måste deklareras under ett **`<container>`**-element som är underordnat listkontrollen.
 
 Använd verktygsfältsknapparna för att lägga till eller ta bort listelement.
 
 >[!NOTE]
 >
->Vänster- och högerpilarna läggs till automatiskt när **ordered=&quot;true&quot;** attributet har fyllts i för samlingselementet i dataschemat.
+>Vänster- och högerpilarna läggs till automatiskt när attributet **ordered=&quot;true&quot;** fylls i för samlingselementet i dataschemat.
 
 ## Behållare {#containers}
 
-Med behållare kan du gruppera en uppsättning kontroller. De finns via **`<container>`** -element. De har redan använts för att formatera kontroller i flera kolumner och för att styra tabblistan.
+Med behållare kan du gruppera en uppsättning kontroller. De finns via elementet **`<container>`**. De har redan använts för att formatera kontroller i flera kolumner och för att styra tabblistan.
 
 Mer information om behållare och hur du använder dem i indataformulär finns i [det här avsnittet](../../configuration/using/form-structure.md#containers).
 
@@ -192,8 +192,8 @@ I redigeringszonen kan du ange XML-innehållet i indataformuläret:
 
 ![](assets/d_ncs_content_form12.png)
 
-The **[!UICONTROL Preview]** kan du visa indataformuläret:
+På fliken **[!UICONTROL Preview]** kan du visa indataformuläret:
 
 ![](assets/d_ncs_content_form13.png)
 
-Läs mer om [redigera formulär](../../configuration/using/editing-forms.md) och [formulärstruktur](../../configuration/using/form-structure.md).
+Läs mer om att [redigera formulär](../../configuration/using/editing-forms.md) och [formulärstruktur](../../configuration/using/form-structure.md).

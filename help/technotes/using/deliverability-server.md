@@ -15,13 +15,13 @@ ht-degree: 1%
 
 # Uppdatera till den nya leveransservern {#acc-deliverability}
 
-Startar [Version v7.2.2](../../rn/using/latest-release.md#release-7-2-2), förlitar sig Adobe Campaign på en ny server för leverans med hög tillgänglighet och som åtgärdar problem med säkerhetsefterlevnad. Campaign Classic synkroniserar nu leveransregler, utsändningsloggar och undertryckningsadress från och till en ny leveransserver. Den gamla leveransservern kommer att avvecklas den 31 augusti 2022.
+Från och med [v7.2.2-utgåvan](../../rn/using/latest-release.md#release-7-2-2) förlitar sig Adobe Campaign på en ny leveransserver som erbjuder hög tillgänglighet och åtgärdar problem med säkerhetsefterlevnad. Campaign Classic synkroniserar nu leveransregler, utsändningsloggar och undertryckningsadress från och till en ny leveransserver. Den gamla leveransservern kommer att avvecklas den 31 augusti 2022.
 
-Som Campaign Classic måste ni implementera den nya leveransservern **före 31 augusti 2022**.
+Som Campaign Classic-kund måste du implementera den nya leveransservern **före den 31 augusti 2022**.
 
 >[!NOTE]
 >
->Mer information om dessa ändringar finns i [Vanliga frågor](#faq)eller kontakta [Adobe kundtjänst](https://helpx.adobe.com/se/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html){_blank}.
+>Mer information om de här ändringarna finns i [Vanliga frågor](#faq) eller kontakta [Adobe kundtjänst](https://helpx.adobe.com/se/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html){_blank}.
 >
 
 ## Vad har ändrats?{#acc-deliverability-changes}
@@ -32,13 +32,13 @@ Den nya servern garanterar hög tillgänglighet (99.9) &#x200B; och tillhandahå
 
 ## Påverkas du?{#acc-deliverability-impacts}
 
-Alla kunder påverkas och måste uppgradera till [Campaign v7.2.2](../../rn/using/latest-release.md#release-7-2-2) (eller mer) och implementera deras miljö för att dra nytta av den nya leveransservern.
+Alla kunder påverkas och måste uppgradera till [Campaign v7.2.2](../../rn/using/latest-release.md#release-7-2-2) (eller mer) och implementera sin miljö för att kunna utnyttja den nya leveransservern.
 
 ## Hur uppdaterar jag?{#acc-deliverability-update}
 
-Som en **värdbaserad kund** kommer Adobe att arbeta med dig för att uppgradera dina instanser till den nyare versionen och skapa projektet i Adobe Developer Console.
+Som **värdkund** arbetar Adobe med dig för att uppgradera dina instanser till den nyare versionen och skapa projektet i Adobe Developer Console.
 
-Som en **lokal/hybridkund** måste du uppgradera till [Campaign v7.2.2](../../rn/using/latest-release.md#release-7-2-2) (eller mer) om du vill dra nytta av den nya leveransservern. När alla instanser har uppgraderats måste du [implementera den nya integreringen](#implementation-steps) till Adobe-server och säkerställa en smidig övergång.
+Som **lokal/hybridkund** måste du uppgradera till [Campaign v7.2.2](../../rn/using/latest-release.md#release-7-2-2) (eller mer) för att kunna utnyttja den nya leveransservern. När alla instanser har uppgraderats måste du [implementera den nya integreringen](#implementation-steps) till leveransservern Adobe och säkerställa en sömlös övergång.
 
 ## Implementeringssteg {#implementation-steps}
 
@@ -52,7 +52,7 @@ Campaign måste kommunicera med Adobe Shared Services via en IMS-baserad autenti
 >
 > JWT-autentiseringsuppgifterna (Service Account) har tagits bort av Adobe, och Campaign-integreringar med Adobe-lösningar och appar måste nu förlita sig på autentiseringsuppgifter för OAuth Server-till-Server. </br>
 >
-> * Om du har implementerat inkommande integreringar med Campaign måste du migrera ditt tekniska konto enligt informationen i [den här dokumentationen](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration/#_blank). Befintliga JWT-referenser (Service Account) kommer att fortsätta att fungera fram till 27 januari 2025. </br>
+> * Om du har implementerat inkommande integreringar med Campaign måste du migrera ditt tekniska konto enligt beskrivningen i [den här dokumentationen](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration/#_blank). Befintliga JWT-autentiseringsuppgifter (Service Account) fortsätter att fungera till 27 januari 2025. </br>
 >
 > * Om ni har implementerat utgående integreringar, som integrering med Campaign-Analytics eller integrering med Experience Cloud-utlösare, fortsätter de att fungera fram till 27 januari 2025. Innan detta datum måste ni dock uppgradera er Campaign-miljö till v7.4.1 och migrera ert tekniska konto till Autentisering.
 
@@ -61,39 +61,39 @@ Campaign måste kommunicera med Adobe Shared Services via en IMS-baserad autenti
 Kontrollera instanskonfigurationen innan du startar implementeringen.
 
 1. Öppna Campaign-klientkonsolen och logga in på Adobe Campaign som administratör.
-1. Bläddra till **Administration > Plattform > Alternativ**.
-1. Kontrollera att `DmRendering_cuid` alternativvärdet är ifyllt.
+1. Gå till **Administration > Plattform > Alternativ**.
+1. Kontrollera att alternativvärdet `DmRendering_cuid` är ifyllt.
 
    * Om alternativet är ifyllt kan du starta implementeringen.
-   * Om inget värde är ifyllt kontaktar du [Adobe kundtjänst](https://helpx.adobe.com/se/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html){_blank} för att få ditt CUID.
+   * Om inget värde har fyllts i kontaktar du [Adobe kundtjänst](https://helpx.adobe.com/se/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html){_blank} för att få ditt CUID.
 
    Det här alternativet måste fyllas i för alla Campaign-instanser (MKT, MID, RT, EXEC) med rätt värde. Som hybridkund kan du kontakta Adobe om du vill att alternativet ska vara inställt på MID-, RT- och EXEC-instanserna.
 
-Som lokal kund måste ni också kontrollera att en kampanj **[!UICONTROL Product profile]** finns för din organisation. Gör så här:
+Som lokal kund måste du även kontrollera att det finns en kampanj **[!UICONTROL Product profile]** tillgänglig för din organisation. Gör så här:
 
 1. Som administratör ansluter du till [Adobe Admin Console](https://adminconsole.adobe.com/){_blank}.
-1. Öppna **Produkt och tjänster** sektion och kontroll **Adobe Campaign** visas.
-Om du inte ser **Adobe Campaign** kontakta [Adobe kundtjänst](https://helpx.adobe.com/se/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html){_blank} för att få det tillagt.
-1. Klicka **Adobe Campaign** och väljer organisation.
-   **Varning**: Om du har fler än en organisation måste du välja rätt organisation. Läs mer om organisationer [på den här sidan](https://experienceleague.adobe.com/docs/control-panel/using/faq.html#ims-org-id){_blank}.
+1. Gå till avsnittet **Produkt och tjänster** och kontrollera att **Adobe Campaign** visas.
+Om du inte kan se **Adobe Campaign** kontaktar du [Adobe kundtjänst](https://helpx.adobe.com/se/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html){_blank} för att få det tillagt.
+1. Klicka på **Adobe Campaign** och välj din organisation.
+   **Varning**: Om du har fler än en organisation måste du välja rätt. Läs mer om organisationer [på den här sidan](https://experienceleague.adobe.com/docs/control-panel/using/faq.html#ims-org-id){_blank}.
 
-1. Kontrollera att **[!UICONTROL Product profile]** finns. Om inte, skapar du den. Ingen behörighet krävs för detta **[!UICONTROL Product profile]**.
+1. Kontrollera att **[!UICONTROL Product profile]** finns. Om inte, skapar du den. Ingen behörighet krävs för denna **[!UICONTROL Product profile]**.
 
 
 >[!CAUTION]
 >
->Om en brandvägg implementeras på din sida måste du som lokal kund lägga till den här URL:en `https://deliverability-service.adobe.io` till tillåtelselista. [Läs mer](../../installation/using/url-permissions.md).
+>Om en brandvägg implementeras på din sida måste du som lokal kund lägga till den här URL:en `https://deliverability-service.adobe.io` på tillåtelselista. [Läs mer](../../installation/using/url-permissions.md).
 
 
 ### Steg 1: Skapa/uppdatera ditt Adobe Developer-projekt {#adobe-io-project}
 
 Om du vill fortsätta konfigurera din Adobe Analytics-anslutning öppnar du Adobe Developer-konsolen och skapar ett OAuth Server-till-Server-projekt.
 
-Se [den här sidan](../../integrations/using/oauth-technical-account.md#oauth-service) för detaljerad dokumentation.
+Mer information finns på [den här sidan](../../integrations/using/oauth-technical-account.md#oauth-service).
 
 ### Steg 2: Lägg till projektautentiseringsuppgifterna i Adobe Campaign {#add-credentials-campaign}
 
-Följ stegen i [den här sidan](../../integrations/using/oauth-technical-account.md#add-credentials) för att lägga till dina OAuth-projektbehörigheter i Adobe Campaign.
+Följ stegen som beskrivs på [den här sidan](../../integrations/using/oauth-technical-account.md#add-credentials) för att lägga till dina OAuth-projektautentiseringsuppgifter i Adobe Campaign.
 
 ### Steg 3: Validera konfigurationen
 
@@ -101,12 +101,12 @@ Följ stegen nedan för att kontrollera att integreringen lyckas:
 
 1. Öppna klientkonsolen och logga in på Adobe Campaign.
 1. Bläddra till **Administration > Produktion > Tekniska arbetsflöden**.
-1. Starta om **Uppdatera för leverans** arbetsflöde (deliverabilityUpdate). Detta bör utföras på alla era Campaign-instanser (MKT, MID, RT, EXEC). Som hybrikund kan du kontakta Adobe för att få arbetsflödet startat om på MID-, RT- och EXEC-instanserna.
+1. Starta om arbetsflödet **Uppdatera för leverans** (deliverabilityUpdate). Detta bör utföras på alla era Campaign-instanser (MKT, MID, RT, EXEC). Som hybrikund kan du kontakta Adobe för att få arbetsflödet startat om på MID-, RT- och EXEC-instanserna.
 1. Kontrollera loggar: arbetsflödet ska köras utan fel.
 
 >[!CAUTION]
 >
->Efter uppdateringen **Uppdatera startnätverk för Inbox Rendering (updateRenderingSeeds)** arbetsflödet måste stoppas eftersom det inte längre gäller och kommer att misslyckas.
+>Efter uppdateringen måste arbetsflödet **Uppdatera startnätverk för Inbox Rendering (updateRenderingSeeds)** stoppas eftersom det inte längre gäller och kommer att misslyckas.
 
 ## Vanliga frågor och svar {#faq}
 
@@ -118,8 +118,8 @@ Lokala kunder och hybridkunder måste gå över under samma tidsram.
 
 ### Vad händer om jag inte uppgraderar min miljö?
 
-Alla Campaign-instanser som inte har uppgraderats senast den 31 augusti kommer inte längre att kunna ansluta till Campaign Deliverability-servern. Som en följd av detta **Uppdatera för leverans** (deliverabilityUpdate)-arbetsflödet kommer att misslyckas och detta påverkar leveransmöjligheterna.
+Alla Campaign-instanser som inte har uppgraderats senast den 31 augusti kommer inte längre att kunna ansluta till Campaign Deliverability-servern. Därför kommer arbetsflödet **Uppdatera för levererbarhet** (deliverabilityUpdate) att misslyckas, vilket påverkar leveransmöjligheterna.
 
 Om du inte uppgraderar din miljö kommer e-postinställningarna inte längre att synkroniseras (MX-hanteringsregler, regler för inkommande e-post, regler för domänhantering och studsregler). Detta kan påverka leveransmöjligheterna. Om dessa regler ändras avsevärt måste de tillämpas manuellt från och med nu.
 
-Endast för MKT-instanser [Global Suppression List](../../campaign-opt/using/filtering-rules.md#default-deliverability-exclusion-rules) påverkas.
+Endast [Global Suppression List](../../campaign-opt/using/filtering-rules.md#default-deliverability-exclusion-rules) påverkas för MKT-instanser.

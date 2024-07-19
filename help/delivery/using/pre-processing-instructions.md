@@ -23,7 +23,7 @@ Det finns tre typer av instruktioner:
 
 * **[!DNL include]**: huvudsakligen för att faktorisera viss kod i alternativ, anpassningsblock, externa filer eller sidor. [Läs mer](#include)
 * **[!DNL value]**: för att ge åtkomst till fält för leveransen, leveransvariabler och anpassade objekt som lästs in i leveransen. [Läs mer](#value)
-* **[!DNL foreach]**: för att loopa en array som har lästs in som ett anpassat objekt. [Läs mer](#foreach)
+* **[!DNL foreach]**: för att repetera en array som har lästs in som ett anpassat objekt. [Läs mer](#foreach)
 
 De kan testas direkt från leveransguiden. De används i innehållsförhandsgranskningen och när du klickar på spårningsknappen för att visa en lista över URL-adresser.
 
@@ -73,14 +73,14 @@ Var:
 
 * **[!DNL object]**: objektets namn (exempel: leverans, provider och så vidare).
 Objektet kan vara:
-   * **[!DNL delivery]**: för aktuell leverans (se detaljer och begränsningar i underavsnittet nedan).
+   * **[!DNL delivery]**: för aktuell leverans (se information och begränsningar i underavsnittet nedan).
    * **[!DNL provider]**: för aktuell leveransleverantör/routning (nms:externalAccount).
-   * Ett extra skriptobjekt: Om ett objekt läses in i kontexten via: **Egenskaper** > **Personalisering** > **Lägga till objekt i körningskontexten**.
-   * Objekt i foreach-slingan: se [Foreach](#foreach) nedan.
-* **[!DNL xpath]**: xpath of the field.
-* **[!DNL index]** (valfritt): om **[!DNL object]** är en array (för extra skriptobjekt), objektindex i arrayen (börjar vid 0).
+   * Ett extra skriptobjekt: Om ett objekt läses in i kontexten via: **Egenskaper** > **Personalization** > **Lägg till objekt i körningskontexten**.
+   * Objekt i förgreningsloopen: se avsnittet [Förgrund](#foreach) nedan.
+* **[!DNL xpath]**: fältets xpath.
+* **[!DNL index]** (valfritt): Om **[!DNL object]** är en array (för extra skriptobjekt), objektindex i arrayen (börjar vid 0).
 
-### [!DNL delivery] object {#delivery-object}
+### [!DNL delivery] objekt {#delivery-object}
 
 För e-postpersonalisering är leveransobjektet tillgängligt på två sätt:
 
@@ -90,7 +90,7 @@ För e-postpersonalisering är leveransobjektet tillgängligt på två sätt:
   <%= delivery.myField %>`.
   ```
 
-  I JavaScript-objektet stöds inte anpassade fält för leverans. De fungerar i förhandsgranskningen, men inte i MTA eftersom MTA bara kan komma åt leveransschemat som är klart att användas.
+  Anpassade fält för leverans av JavaScript-objekt stöds inte. De fungerar i förhandsgranskningen, men inte i MTA eftersom MTA bara kan komma åt leveransschemat som är klart att användas.
 
 * Med förbehandling:
 
@@ -101,7 +101,7 @@ För e-postpersonalisering är leveransobjektet tillgängligt på två sätt:
 
 **Varning**
 
-Om du använder följande anvisningar för leveranser som skickas via mellanleverantörer, är det anpassade fältet **@myCustomField** måste läggas till i nms:delivery-schemat på både marknadsförings- och mellanleverantörsplattformar:
+Om du använder följande instruktion för leveranser som skickas via mellanlagring måste det anpassade fältet **@myCustomField** läggas till i nms:delivery-schemat på både marknadsförings- och mellankällplattformar:
 
 ```
 <%@ value object="delivery" xpath="@myCustomField" %>
@@ -113,7 +113,7 @@ Använd följande syntax för leveransparametrar/variabler (med leveransobjektet
 <%@ value object="delivery" xpath="variables/var[@name='myVar']/@stringValue" %>
 ```
 
-### [!DNL value] i ett Javascript-avsnitt {#value-in-javascript}
+### [!DNL value] i ett JavaScript-avsnitt {#value-in-javascript}
 
 Om du vill tillåta användning av &lt;%@ värde i JavaScript-avsnitt ersätts två specialobjekt med &lt;% och %>:
 
@@ -142,9 +142,9 @@ Syntax:
 Var:
 
 * **[!DNL object]**: namnet på objektet som ska börja från, vanligtvis ett extra skriptobjekt, men det kan vara en leverans.
-* **[!DNL xpath]** (valfritt): XPath för samlingen som ska slingas. Standardvärdet är &quot;.&quot;, vilket innebär att objektet är den array som ska upprepas.
-* **[!DNL index]** (valfritt): om xpath inte är &quot;.&quot; och objektet är en array, objektindex för objektet (börjar vid 0).
-* **[!DNL item]** (valfritt): namn på ett nytt objekt som är tillgängligt med värdet &lt;%@ inuti förgreningsslingan. Standard med länknamnet i schemat.
+* **[!DNL xpath]** (valfritt): XPath för samlingen som ska repeteras. Standardvärdet är &quot;.&quot;, vilket innebär att objektet är den array som ska upprepas.
+* **[!DNL index]** (valfritt): Om xpath inte är &quot;.&quot; och objektet är en array, objektindex för objektet (börjar vid 0).
+* **[!DNL item]** (valfritt): namnet på ett nytt objekt som är tillgängligt med &lt;%@-värdet inuti förgreningsslingan. Standard med länknamnet i schemat.
 
 Exempel:
 
@@ -165,7 +165,7 @@ Med den lösningen spåras länkarna till alla artiklar utan åtskillnad. Du vet
 
 Lösningen är att
 
-1. Läs in alla möjliga artiklar i en extra skriptmatris för leveransen - articleList[] - vilket innebär att det måste finnas ett begränsat antal möjliga artiklar.
+1. Läs in alla möjliga artiklar i en extra skriptmatris för leveransen - articleList [] - vilket innebär att det måste finnas ett begränsat antal möjliga artiklar.
 1. Skriv en JavaScript-funktion i början av innehållet.
 
    ```

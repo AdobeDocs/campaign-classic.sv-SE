@@ -18,16 +18,16 @@ Den grundläggande principen är att infoga webbspårningstaggar på vissa sidor
 
 Det finns två typer av taggar:
 
-* **WEB**: den här taggen talar om för dig om sidan har besökts,
-* **TRANSAKTION**: fungerar som en webbtagg, men med möjlighet att lägga till information om den genererade affärsvolymen, t.ex. (transaktionsbelopp, antal inköpta objekt osv.).
+* **WEB**: den här taggen anger om sidan har besöktes,
+* **TRANSACTION**: fungerar som en webbtagg, men med möjligheten att lägga till information om den genererade affärsvolymen, till exempel (transaktionsbelopp, antal inköpta objekt osv.).
 
 Använd följande steg för att konfigurera de här taggarna:
 
 1. Identifiera de sidor som du vill spåra och fastställa deras typ (WEB eller TRANSACTION).
-1. Bestäm vilken ytterligare information du vill samla in och utöka **nms:webTrackingLog** schema med en beskrivning av informationen. Som standard kan det här schemat lagra transaktionsbelopp och antal artiklar per transaktion.
+1. Ta reda på vilken ytterligare information du vill samla in och utöka schemat **nms:webTrackingLog** med en beskrivning av den här informationen. Som standard kan det här schemat lagra transaktionsbelopp och antal artiklar per transaktion.
 1. Skapa webbspårningstaggar. Det finns två sätt att göra detta:
 
-   * Infoga de URL:er som motsvarar dessa sidor på din Adobe Campaign-plattform och generera och extrahera sedan de associerade webbspårningstaggarna (från **[!UICONTROL Campaign execution>Resources>Web tracking tags]** klientkonsolens nod).
+   * Infoga de URL:er som motsvarar de här sidorna på din Adobe Campaign-plattform och generera och extrahera sedan de associerade webbspårningstaggarna (från noden **[!UICONTROL Campaign execution>Resources>Web tracking tags]** i klientkonsolen).
    * Skapa webbspårningstaggarna själv i läget&quot;när de skapas&quot;: URL:erna som motsvarar de här sidorna infogas automatiskt på din Adobe Campaign-plattform.
 
 1. Lägg till dessa taggar statiskt eller dynamiskt på de sidor som du vill spåra.

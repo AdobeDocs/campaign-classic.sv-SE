@@ -23,11 +23,11 @@ Spårning gäller för meddelanden, men med webbspårning kan du övervaka hur m
 
 >[!NOTE]
 >
->Länkarna i e-postinnehåll som innehåller personalisering måste spåras med specifik syntax. Mer information om hur du lägger till länkar i e-postmeddelanden som kan personaliseras och som stöder spårning finns i [det här avsnittet](tracking-personalized-links.md).
+>Länkarna i e-postinnehåll som innehåller personalisering måste spåras med specifik syntax. Mer information om hur du lägger till länkar i e-postmeddelanden som kan anpassas och som stöder spårning finns i [det här avsnittet](tracking-personalized-links.md).
 
-Vi rekommenderar att du omsluter URL:er i avgränsare i dialogrutan **[!UICONTROL Text content]** innan du använder spårningsformeln. De URL-avgränsare som du anger på den här fliken används av Adobe Campaign för att identifiera URL:er i teckensträngar. Du kan använda dessa par med avgränsare:
+Vi rekommenderar att du omsluter URL:er i avgränsare på fliken **[!UICONTROL Text content]** innan du använder spårningsformeln. De URL-avgränsare som du anger på den här fliken används av Adobe Campaign för att identifiera URL:er i teckensträngar. Du kan använda dessa par med avgränsare:
 * Parenteser ( )
-* Parenteser [ ]
+* Hakparenteser [ ]
 * Klammerparenteser {}
 
 I det här exemplet följs URL:en https://www.adobe.com av ett semikolon. Semikolon kan tolkas av mottagarens e-postklienter som en del av URL:en. Därför kan länken brytas. För att undvika det här problemet kan du omge URL-adressen i avgränsare på något av följande sätt:
@@ -37,7 +37,7 @@ I det här exemplet följs URL:en https://www.adobe.com av ett semikolon. Semiko
 
 Spårning av meddelanden är aktiverat som standard. Följ stegen nedan för att anpassa hur URL-adresser spåras:
 
-1. Välj **[!UICONTROL Display URLs]** i det nedre avsnittet av leveransguiden, under meddelandeinnehållet.
+1. Välj alternativet **[!UICONTROL Display URLs]** i den nedre delen av leveransguiden, under meddelandeinnehållet.
 
    ![](assets/s_ncs_user_email_del_display_urls.png)
 
@@ -59,7 +59,7 @@ Spårning av meddelanden är aktiverat som standard. Följ stegen nedan för att
    >
    >Etiketterna för de spårade URL-adresserna och etiketterna kan ändras för att förenkla läsningen av information vid spårning av leveranser. Två URL-adresser eller två etiketter med samma namn läggs ihop när antalet klickningar beräknas.
 
-1. Ändra spårningsläget om det behövs och välj ett nytt läge i dialogrutan **[!UICONTROL Tracking]** kolumn som matchar mållänken enligt nedan:
+1. Om det behövs kan du ändra spårningsläget och välja ett nytt läge i kolumnen **[!UICONTROL Tracking]** som matchar mållänken, vilket visas nedan:
 
    ![](assets/s_ncs_user_select_tracking_mode.png)
 
@@ -69,7 +69,7 @@ Spårning av meddelanden är aktiverat som standard. Följ stegen nedan för att
    * **[!UICONTROL Not tracked]** : inaktiverar spårning på den här URL:en.
    * **[!UICONTROL Always enabled]** : aktiverar alltid spårning av den här URL:en. Den här informationen sparas så att spårningen aktiveras nästa gång URL:en visas igen i ett framtida meddelandeinnehåll.
    * **[!UICONTROL Never tracked]** : aktiverar aldrig spårning av den här URL:en. Den här informationen sparas så att spårningen inaktiveras nästa gång URL:en visas igen i ett framtida meddelande.
-   * **[!UICONTROL Opt-out]** : hanterar den här URL:en som en avanmälnings- eller avanmälnings-URL.
-   * **[!UICONTROL Mirror page]** : anser att den här URL:en är en URL för en speglad sida.
+   * **[!UICONTROL Opt-out]** : betraktar den här URL:en som en avanmälnings- eller avanmälnings-URL.
+   * **[!UICONTROL Mirror page]** : anser att den här URL:en är en URL för en spegelsida.
 
-1. Du kan dessutom välja en kategori för varje spårad URL i listrutan i **[!UICONTROL Category]** kolumn. Dessa kategorier kan visa rapporter, som i **[!UICONTROL URLs and click streams]** (se [det här avsnittet](../../reporting/using/reports-on-deliveries.md#urls-and-click-streams)). Kategorierna definieras i en viss uppräkning: **[!UICONTROL urlCategory]** (se [Hantera uppräkningar](../../platform/using/managing-enumerations.md)).
+1. Du kan dessutom välja en kategori för varje spårad URL i den nedrullningsbara listan i kolumnen **[!UICONTROL Category]**. Dessa kategorier kan visas som rapporter, till exempel i **[!UICONTROL URLs and click streams]** (se [det här avsnittet](../../reporting/using/reports-on-deliveries.md#urls-and-click-streams)). Kategorierna definieras i en specifik uppräkning: **[!UICONTROL urlCategory]** (se [Hantera uppräkningar](../../platform/using/managing-enumerations.md)).

@@ -20,7 +20,7 @@ ht-degree: 2%
 
 
 
-På den här sidan visas specifika steg som ska utföras innan migreringsprocessen startas. Du måste även referera till [den här sidan](about-migration.md) för mer vägledning.
+På den här sidan visas specifika steg som ska utföras innan migreringsprocessen startas. Du måste även läsa [den här sidan](about-migration.md) för mer vägledning.
 
 >[!NOTE]
 >
@@ -32,17 +32,17 @@ På den här sidan visas specifika steg som ska utföras innan migreringsprocess
 
 ## Migreringssteg {#migration-steps}
 
-Migreringsförfarandet måste genomföras på **alla** servrar och i en viss ordning.
+Migreringsproceduren måste utföras på **alla**-servrar och i en viss ordning.
 
-* I fallet med **fristående plattform** (endatorläge) migreras programmet i sin helhet.
-* I fallet med **standardplattform** (enterprise) är migreringsstegen följande:
+* När det gäller en **fristående plattform** (endatorläge) migreras programmet i sin helhet.
+* När det gäller en **standardplattform** (enterprise) är migreringsstegen följande:
 
    1. Migrera marknadsföringsservern.
    1. Migrera e-postservern (mta).
    1. Migrera omdirigerings- och spårningsservrar (Apache/IIS).
 
-* I fallet med **Plattformen Cloud Messaging**, är exekveringsservrarna på Adobe Campaign. Kontakta Adobe Campaign för att koordinera migreringen mellan olika servrar.
-* I fallet med **Power Booster- eller Power Cluster-plattform**&#x200B;är migreringsstegen följande:
+* Om det är en **Cloud Messaging-plattform** är körningsservrarna på Adobe Campaign. Kontakta Adobe Campaign för att koordinera migreringen mellan olika servrar.
+* För en **Power Booster- eller Power Cluster-plattform** är migreringsstegen följande:
 
    1. Migrera omdirigerings- och spårningsservrar (Apache/IIS).
    1. Migrera Power Booster-/klusterservrarna.
@@ -50,7 +50,7 @@ Migreringsförfarandet måste genomföras på **alla** servrar och i en viss ord
 
 ## Lösenord {#user-passwords}
 
-In v7, **internal** och **admin** -operatoranslutningen måste skyddas av ett lösenord. Vi rekommenderar starkt att du tilldelar lösenord till dessa konton och alla operatörskonton, **före migrering**. Om du inte har angett något lösenord för **internal** kommer du inte att kunna ansluta. Tilldela ett lösenord till **internal** anger du följande kommando:
+I v7 måste operatoranslutningen **internal** och **admin** skyddas av ett lösenord. Vi rekommenderar att du tilldelar lösenord till dessa konton och alla operatörskonton, **före migrering**. Om du inte har angett något lösenord för **internal** kan du inte ansluta. Om du vill tilldela ett lösenord till **internal** anger du följande kommando:
 
 ```
 nlserver config -internalpassword
@@ -58,4 +58,4 @@ nlserver config -internalpassword
 
 >[!CAUTION]
 >
->The **internal** lösenordet måste vara identiskt för alla spårningsservrar. Mer information finns i [Intern identifierare](../../installation/using/configuring-campaign-server.md#internal-identifier) och [Behörigheter](../../platform/using/access-management.md) -avsnitt.
+>Lösenordet **internal** måste vara identiskt för alla spårningsservrar. Mer information finns i avsnitten [Intern identifierare](../../installation/using/configuring-campaign-server.md#internal-identifier) och [Behörigheter](../../platform/using/access-management.md).

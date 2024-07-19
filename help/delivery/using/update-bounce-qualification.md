@@ -12,7 +12,7 @@ ht-degree: 0%
 
 ---
 
-# Uppdatera felaktiga hårddiskmarkeringar efter Apple avbrott {#update-bounce-qualification.md}
+# Uppdatera felaktiga hårddiskgränser efter Apple-avbrott {#update-bounce-qualification.md}
 
 ## Kontext
 
@@ -26,7 +26,7 @@ Problemet inträffade den 26/4 och varade 07:00-17:00 EST.
 
 Om en Internet-leverantör skulle råka ut kan e-postmeddelanden som skickas via Campaign inte levereras till mottagaren: dessa e-postmeddelanden markeras felaktigt som studsar.
 
-Enligt standardlogiken för studshantering har Adobe Campaign automatiskt lagt till dessa mottagare i karantänlistan med en **[!UICONTROL Status]** inställning för **[!UICONTROL Quarantine]**. För att korrigera detta måste du uppdatera din karantäntabell i Campaign genom att söka efter och ta bort de här mottagarna eller ändra deras **[!UICONTROL Status]** till **[!UICONTROL Valid]** så att nattrensningsarbetsflödet tar bort dem.
+Med hjälp av standardlogik för studshantering har Adobe Campaign automatiskt lagt till de här mottagarna i karantänlistan med **[!UICONTROL Status]**-inställningen **[!UICONTROL Quarantine]**. För att korrigera detta måste du uppdatera karantäntabellen i Campaign genom att hitta och ta bort de här mottagarna, eller ändra deras **[!UICONTROL Status]** till **[!UICONTROL Valid]** så att de tas bort i nattrensningsarbetsflödet.
 
 Om du vill hitta de mottagare som påverkades av det här problemet, eller om det händer igen med någon annan Internet-leverantör, kan du läsa instruktionerna nedan.
 
@@ -40,20 +40,20 @@ Baserat på tidsramen för incidenten är nedanstående de rekommenderade riktli
 >
 >Dessa datum/tider baseras på EST (Eastern Standard Time Zone). Justera efter instansens tidszon.
 
-* För Campaign-instanser med SMTP-studssvarsinformation i **[!UICONTROL Error text]** karantänlistans fält:
+* För Campaign-instanser med SMTP-studssvarsinformation i fältet **[!UICONTROL Error text]** i karantänlistan:
 
-   * **Feltext (karantäntext)** innehåller &quot;användarsökning lyckades men ingen användarpost hittades&quot; OCH **Feltext (karantäntext)** innehåller &quot;support.apple.com&quot;
-   * **Uppdateringsstatus (@lastModified)** 4/26/2021 07 eller senare:00:00:00
-   * **Uppdateringsstatus (@lastModified)** senast 2021-04-26:00:00 PM
+   * **Feltext (karantänstext)** innehåller &quot;användarsökning lyckades men ingen användarpost hittades&quot; OCH **Feltexten (karantänstext)** innehåller &quot;support.apple.com&quot;
+   * **Uppdatera status (@lastModified)** den 26/2021 07:00:00
+   * **Uppdateringsstatus (@lastModified)** senast 2021-01-04-26:00:00
 
-* För Campaign-instanser med information om regel för inkommande e-post i **[!UICONTROL Error text]** karantänlistans fält:
+* För Campaign-instanser med regelinformation för inkommande e-post i fältet **[!UICONTROL Error text]** i karantänlistan:
 
    * **Feltext (karantäntext)** innehåller &quot;Momen_Code10_InvalidRecipient&quot;
-   * **E-postdomän (@domän)** lika med icloud.com OR **E-postdomän (@domän)** lika med me.com OR **E-postdomän (@domän)** lika med mac.com
-   * **Uppdateringsstatus (@lastModified)** 4/26/2021 07 eller senare:00:00:00
-   * **Uppdateringsstatus (@lastModified)** senast 2021-04-26:00:00 PM
+   * **E-postdomänen (@domain)** är lika med icloud.com ELLER **E-postdomänen (@domain)** är lika med me.com ELLER **E-postdomän (@domain)** är lika med mac.com
+   * **Uppdatera status (@lastModified)** den 26/2021 07:00:00
+   * **Uppdateringsstatus (@lastModified)** senast 2021-01-04-26:00:00
 
-När du har en lista över mottagare som påverkas kan du antingen ställa in deras status **[!UICONTROL Valid]** så att de tas bort från karantänlistan av **[!UICONTROL Database cleanup]** eller bara ta bort dem från tabellen.
+När du har en lista över berörda mottagare kan du antingen ange statusen **[!UICONTROL Valid]** så att de tas bort från karantänlistan av arbetsflödet i **[!UICONTROL Database cleanup]** eller bara ta bort dem från tabellen.
 
 **Relaterade ämnen:**
 * [Förstå leveransfel](understanding-delivery-failures.md)

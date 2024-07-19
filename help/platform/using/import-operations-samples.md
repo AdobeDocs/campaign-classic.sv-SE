@@ -25,12 +25,12 @@ Om du vill skapa och ange en lista med mottagare från översikten över listor 
 
 1. Skapa listan
 
-   * Klicka på **[!UICONTROL Lists]** i **[!UICONTROL Profiles and targets]** på Adobe Campaign hemsida.
-   * Klicka på **[!UICONTROL Create]** och sedan **[!UICONTROL Import a list]** -knappen.
+   * Klicka på länken **[!UICONTROL Lists]** på menyn **[!UICONTROL Profiles and targets]** på Adobe Campaign hemsida.
+   * Klicka på **[!UICONTROL Create]** och sedan på knappen **[!UICONTROL Import a list]**.
 
 1. Markera filen som ska importeras
 
-   Klicka på mappen till höger om **[!UICONTROL Local file]** och markera filen som innehåller listan som ska importeras.
+   Klicka på mappen till höger om fältet **[!UICONTROL Local file]** och markera filen som innehåller listan som ska importeras.
 
    ![](assets/s_ncs_user_import_example00_01.png)
 
@@ -42,7 +42,7 @@ Om du vill skapa och ange en lista med mottagare från översikten över listor 
 
 1. Starta importen
 
-   Klicka **[!UICONTROL Next]** och sedan **[!UICONTROL Start]** för att börja importera listan.
+   Klicka på **[!UICONTROL Next]** och sedan på **[!UICONTROL Start]** för att börja importera listan.
 
    ![](assets/s_ncs_user_import_example00_03.png)
 
@@ -52,29 +52,29 @@ Så här importerar du nya mottagarprofiler som lagras i en textfil till Adobe C
 
 1. Välja en mall
 
-   * På Adobe Campaign hemsida klickar du på **[!UICONTROL Profiles and targets]** länk, sedan **[!UICONTROL Jobs]**. Ovanför listan med jobb klickar du på **[!UICONTROL New import]**.
-   * Behåll **[!UICONTROL New text import]** -mall vald som standard.
+   * Klicka på länken **[!UICONTROL Profiles and targets]** på startsidan för Adobe Campaign och sedan på **[!UICONTROL Jobs]**. Klicka på **[!UICONTROL New import]** ovanför listan med jobb.
+   * Låt mallen **[!UICONTROL New text import]** vara markerad som standard.
    * Ändra etiketten och beskrivningen.
    * Välj **[!UICONTROL Simple import]**.
    * Behåll standardjobbmappen.
-   * Klicka **[!UICONTROL Advanced parameters]** och väljer **[!UICONTROL Tracking mode]** om du vill visa information om importen under körningen.
+   * Klicka på **[!UICONTROL Advanced parameters]** och välj alternativet **[!UICONTROL Tracking mode]** om du vill visa information om importen under körningen.
 
 1. Markera filen som ska importeras
 
-   Klicka på mappen till höger om **[!UICONTROL Local file]** och välj den fil som du vill importera.
+   Klicka på mappen till höger om fältet **[!UICONTROL Local file]** och välj den fil du vill importera.
 
    ![](assets/s_ncs_user_import_example01_01.png)
 
 1. Associerar fält
 
-   Klicka på **[!UICONTROL Guess the destination fields]** om du vill mappa käll- och målscheman automatiskt. Kontrollera informationen i fönstret innan du klickar **[!UICONTROL Next]**.
+   Klicka på ikonen **[!UICONTROL Guess the destination fields]** om du vill mappa käll- och målscheman automatiskt. Kontrollera informationen i fönstret innan du klickar på **[!UICONTROL Next]**.
 
    ![](assets/s_ncs_user_import_example03_01.png)
 
 1. Avstämning
 
-   * Gå till **Mottagare (nms:mottagare)** tabell.
-   * Välj **[!UICONTROL Insertion]** och lämna standardvärdena i övriga fält.
+   * Gå till tabellen **Mottagare (nms:mottagare)**.
+   * Välj åtgärden **[!UICONTROL Insertion]** och lämna standardvärdena i de andra fälten.
 
      ![](assets/s_ncs_user_import_example04_01.png)
 
@@ -92,7 +92,7 @@ Så här importerar du nya mottagarprofiler som lagras i en textfil till Adobe C
 
      ![](assets/s_ncs_user_import_example06_01.png)
 
-     The **[!UICONTROL Tracking]** I kan du spåra importinformationen för varje post i källfilen. Det gör du genom att klicka på **[!UICONTROL Profiles and Targets]** sedan **[!UICONTROL Processes]** väljer du relevant import och letar upp **[!UICONTROL General]**, **[!UICONTROL Journal]** och **[!UICONTROL Rejects]** -tabbar.
+     I **[!UICONTROL Tracking]**-läget kan du spåra information om importen för varje post i källfilen. Det gör du genom att klicka på **[!UICONTROL Profiles and Targets]**, sedan **[!UICONTROL Processes]**, välja relevant import och leta upp flikarna **[!UICONTROL General]**, **[!UICONTROL Journal]** och **[!UICONTROL Rejects]** på startsidan.
 
       * Kontrollerar importförloppet
 
@@ -124,8 +124,8 @@ Vi vill uppdatera befintliga poster i databasen och skapa nya från en textfil. 
 
 1. Avstämning
 
-   * Behåll **[!UICONTROL Update or insert]** som standard.
-   * Behåll alternativet **[!UICONTROL Management of duplicates]** in **[!UICONTROL Update]** så att befintliga poster i databasen ändras med data från textfilen.
+   * Låt **[!UICONTROL Update or insert]** vara markerat som standard.
+   * Behåll alternativet **[!UICONTROL Management of duplicates]** i **[!UICONTROL Update]**-läge så att befintliga poster i databasen ändras med data från textfilen.
    * Markera fälten **[!UICONTROL Birth date]**, **[!UICONTROL Name]** och **[!UICONTROL Company]** och tilldela dem en avstämningsnyckel.
 
      ![](assets/s_ncs_user_import_example04_02.png)
@@ -174,11 +174,11 @@ Använd följande steg:
 
 1. Avstämning
 
-   * Gå till tabellen och välj **[!UICONTROL Update]** operation.
-   * Välj alternativet **[!UICONTROL Reject entity]** för **[!UICONTROL Management of doubles]** fält.
-   * Behåll alternativet **[!UICONTROL Management of duplicates]** in **[!UICONTROL Update]** så att befintliga poster i databasen ändras med data från textfilen.
-   * Placera markören på **[!UICONTROL Last name (@lastName)]** och väljer **[!UICONTROL Update only if destination is empty]** alternativ.
-   * Upprepa den här åtgärden för **[!UICONTROL Company (@company)]** nod.
+   * Gå till tabellen och välj åtgärden **[!UICONTROL Update]**.
+   * Välj alternativet **[!UICONTROL Reject entity]** för fältet **[!UICONTROL Management of doubles]**.
+   * Behåll alternativet **[!UICONTROL Management of duplicates]** i **[!UICONTROL Update]**-läge så att befintliga poster i databasen ändras med data från textfilen.
+   * Placera markören på noden **[!UICONTROL Last name (@lastName)]** och välj alternativet **[!UICONTROL Update only if destination is empty]**.
+   * Upprepa den här åtgärden för noden **[!UICONTROL Company (@company)]**.
    * Tilldela en avstämningsnyckel till fälten **[!UICONTROL Birth date]**, **[!UICONTROL Email]** och **[!UICONTROL First name]**.
 
      ![](assets/s_ncs_user_import_example04_03.png)
@@ -223,10 +223,10 @@ I det här exemplet ser du att vissa fält i textfilen har ett tomt värde, meda
 
 1. Avstämning
 
-   * Gå till tabellen och markera **[!UICONTROL Update]**.
-   * Välj alternativet **[!UICONTROL Reject entity]** för **[!UICONTROL Management of doubles]** fält.
-   * Lämna alternativet **[!UICONTROL Management of duplicates]** in **[!UICONTROL Update]** läge för befintliga poster i databasen som ska ändras med data från textfilen.
-   * Placera markören på **[!UICONTROL Account number (@account)]** nod och välj alternativet **[!UICONTROL Take empty values into account]**.
+   * Gå till tabellen och välj **[!UICONTROL Update]**.
+   * Välj alternativet **[!UICONTROL Reject entity]** för fältet **[!UICONTROL Management of doubles]**.
+   * Låt alternativet **[!UICONTROL Management of duplicates]** vara i **[!UICONTROL Update]**-läge för befintliga poster i databasen som ska ändras med data från textfilen.
+   * Placera markören på noden **[!UICONTROL Account number (@account)]** och välj alternativet **[!UICONTROL Take empty values into account]**.
    * Markera fälten **[!UICONTROL Birth date]**, **[!UICONTROL Email]** och **[!UICONTROL First name]** och tilldela dem en avstämningsnyckel.
 
      ![](assets/s_ncs_user_import_example04_04.png)
@@ -238,4 +238,4 @@ I det här exemplet ser du att vissa fält i textfilen har ett tomt värde, meda
 
      ![](assets/s_ncs_user_import_example06_06.png)
 
-     Värdena för textfilen som var tom har skrivit över värdena i databasen. De befintliga värdena i databasen uppdaterades med värdena i importfilen i enlighet med **[!UICONTROL Update]** för dubbletter i steg 4.
+     Värdena för textfilen som var tom har skrivit över värdena i databasen. De befintliga värdena i databasen uppdaterades med värdena i importfilen i enlighet med alternativet **[!UICONTROL Update]** som valts för dubbletter i steg 4.

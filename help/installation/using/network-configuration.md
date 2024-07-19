@@ -27,19 +27,19 @@ Använd den inbäddade Apache Tomcat-porten som prioritet (8080 som standard) f�
 
 ### Leveransserver {#delivery-server}
 
-För leveransservern (**nlserver mta**) måste följande portar vara öppna:
+Följande portar måste vara öppna för leveransservern (**nlserver mta**):
 
 <table> 
  <tbody> 
   <tr> 
    <td> Portar<br /> </td> 
    <td> Mål<br /> </td> 
-   <td> Kommentar<br /> </td> 
+   <td> Kommentarer<br /> </td> 
   </tr> 
   <tr> 
    <td> 25/tcp (smtp)<br /> </td> 
    <td> Anywhere<br /> </td> 
-   <td> SMTP-trafik för e-postutsändning.<br /> </td> 
+   <td> SMTP-trafik för e-postsändning.<br /> </td> 
   </tr> 
   <tr> 
    <td> 53/udp (domän)<br /> </td> 
@@ -53,7 +53,7 @@ För leveransservern (**nlserver mta**) måste följande portar vara öppna:
   </tr> 
   <tr> 
    <td> 7777/udp<br /> </td> 
-   <td> Statistikserver<br /> </td> 
+   <td> Statistikserver <br /> </td> 
    <td> Åtkomst till statistikservern.<br /> </td> 
   </tr> 
  </tbody> 
@@ -61,23 +61,23 @@ För leveransservern (**nlserver mta**) måste följande portar vara öppna:
 
 ### Inkommande e-post {#inbound-mail}
 
-För processen för återställning av inkommande e-post (**nlserver inMail**) måste följande portar vara öppna:
+Följande portar måste vara öppna för den inkommande e-poståterställningsprocessen (**nlserver inMail**):
 
 <table> 
  <tbody> 
   <tr> 
    <td> Portar<br /> </td> 
    <td> Mål<br /> </td> 
-   <td> Kommentar<br /> </td> 
+   <td> Kommentarer<br /> </td> 
   </tr> 
   <tr> 
    <td> 110/tcp (pop3)<br /> </td> 
-   <td> Intern e-postserver<br /> </td> 
+   <td> Intern e-postserver <br /> </td> 
    <td> POP3-trafik för att hämta studsmeddelanden.<br /> </td> 
   </tr> 
   <tr> 
    <td> 25/tcp (smtp)<br /> </td> 
-   <td> Intern e-postserver<br /> </td> 
+   <td> Intern e-postserver <br /> </td> 
    <td> SMTP-trafik för att skicka återstående studsmeddelanden som inte bearbetas automatiskt av de fördefinierade reglerna.<br /> </td> 
   </tr> 
  </tbody> 
@@ -85,14 +85,14 @@ För processen för återställning av inkommande e-post (**nlserver inMail**) m
 
 ### Programserver {#application-server}
 
-För programservern (**nlserver web**) måste följande portar vara öppna:
+Följande portar måste vara öppna för programservern (**nlserver web**):
 
 <table> 
  <tbody> 
   <tr> 
    <td> Portar<br /> </td> 
    <td> Mål<br /> </td> 
-   <td> Kommentar<br /> </td> 
+   <td> Kommentarer<br /> </td> 
   </tr> 
   <tr> 
    <td> 80/tcp (http)<br /> 443/tcp (https)<br /> </td> 
@@ -106,14 +106,14 @@ När flera programservrar på en Adobe Campaign-plattform behöver kommunicera m
 
 ### SMS-leveransstatus {#sms-delivery-status}
 
-För att spåra SMS-leveranser (**nlserver sms**) måste följande port vara öppen:
+Om du vill spåra SMS-leveranser (**nlserver sms**) måste följande port vara öppen:
 
 <table> 
  <tbody> 
   <tr> 
    <td> Portar<br /> </td> 
    <td> Mål<br /> </td> 
-   <td> Kommentar<br /> </td> 
+   <td> Kommentarer<br /> </td> 
   </tr> 
   <tr> 
    <td> 38000/tcp (standardport)<br /> </td> 
@@ -125,19 +125,19 @@ För att spåra SMS-leveranser (**nlserver sms**) måste följande port vara öp
 
 ### Rich Client {#rich-client}
 
-För Adobe Campaign Rich Client (**nlclient**) måste följande portar vara öppna:
+För Adobe Campaign-klienten (**nlclient**) måste följande portar vara öppna:
 
 <table> 
  <tbody> 
   <tr> 
    <td> Portar<br /> </td> 
    <td> Mål<br /> </td> 
-   <td> Kommentar<br /> </td> 
+   <td> Kommentarer<br /> </td> 
   </tr> 
   <tr> 
    <td><p> 80/tcp (http)</p><p>443/tcp (https)</p><br /> </td> 
-   <td> Programserver<br /> </td> 
-   <td> SOAP (HTTP).<br /> </td> 
+   <td> Programserver <br /> </td> 
+   <td> SOAP trafik (HTTP).<br /> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -151,14 +151,14 @@ Standardportarna är följande:
 <table> 
  <tbody> 
   <tr> 
-   <td> Databastyp<br /> </td> 
+   <td> Databastyp <br /> </td> 
    <td> Port (standard)<br /> </td> 
    <td> Mål<br /> </td> 
   </tr> 
   <tr> 
    <td> <strong>Oracle</strong><br /> </td> 
    <td> 1521/tcp<br /> </td> 
-   <td> Databasserver<br /> </td> 
+   <td> Databasserver <br /> </td> 
   </tr> 
   <tr> 
    <td> <strong>PostgreSQL</strong><br /> </td> 
@@ -180,8 +180,8 @@ Dessutom måste vissa komponenter vara tillgängliga från det publika Internet 
 <table> 
  <tbody> 
   <tr> 
-   <td> Avlyssningsport<br /> </td> 
-   <td> Plats<br /> </td> 
+   <td> Lyssningsport<br /> </td> 
+   <td> Plats <br /> </td> 
   </tr> 
   <tr> 
    <td><p> 80/tcp (http)</p><p> 443/tcp (https)</p><br /> </td> 
@@ -197,8 +197,8 @@ Den här servern är värd för webbformulär, spegelsidor osv. Följande portar
 <table> 
  <tbody> 
   <tr> 
-   <td> Avlyssningsport<br /> </td> 
-   <td> Plats<br /> </td> 
+   <td> Lyssningsport<br /> </td> 
+   <td> Plats <br /> </td> 
   </tr> 
   <tr> 
    <td><p> 80/tcp (http)</p><p> 443/tcp (https)</p><br /> </td> 
@@ -212,8 +212,8 @@ Den här servern är värd för webbformulär, spegelsidor osv. Följande portar
 <table> 
  <tbody> 
   <tr> 
-   <td> Avlyssningsport<br /> </td> 
-   <td> Plats<br /> </td> 
+   <td> Lyssningsport<br /> </td> 
+   <td> Plats <br /> </td> 
   </tr> 
   <tr> 
    <td><p> 80/tcp (http)</p><p> 443/tcp (https)</p><br /> </td> 
@@ -224,12 +224,12 @@ Den här servern är värd för webbformulär, spegelsidor osv. Följande portar
 
 ## Integrering med Adobe Experience Manager {#integration-with-adobe-experience-manager}
 
-Integrering mellan Adobe Campaign och Adobe Experience Manager kräver att flera portar öppnas om installationen är lokal. Mer information om hur du konfigurerar integreringen finns i [detaljerad dokumentation](../../integrations/using/about-adobe-experience-manager.md).
+Integrering mellan Adobe Campaign och Adobe Experience Manager kräver att flera portar öppnas om installationen är lokal. Mer information om hur du konfigurerar den här integreringen finns i [den detaljerade dokumentationen](../../integrations/using/about-adobe-experience-manager.md).
 
 <table> 
  <tbody> 
   <tr> 
-   <td> Avlyssningsport<br /> </td> 
+   <td> Lyssningsport<br /> </td> 
    <td> Beskrivning<br /> </td> 
   </tr> 
   <tr> 
@@ -238,7 +238,7 @@ Integrering mellan Adobe Campaign och Adobe Experience Manager kräver att flera
   </tr> 
   <tr> 
    <td><p> 4502</p><p> 4503</p><br /> </td> 
-   <td> Adobe Campaign-anslutning till AEM"authoring" och"publishing"-instanser. Portarna som ska öppnas kan skilja sig från standardportarna, beroende på AEM konfiguration.<br /> </td> 
+   <td> Adobe Campaign-anslutning till AEM"authoring" och"publishing"-instanser. Portarna som ska öppnas kan skilja sig från standardportarna, beroende på AEM.<br /> </td> 
   </tr> 
  </tbody> 
 </table>

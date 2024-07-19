@@ -40,12 +40,12 @@ It also contains information on important features to manage Privacy ([Consent, 
 
 Funktionerna i Adobe Campaign hjälper dig att efterleva följande regler:
 
-* **GDPR** (Allmänna dataskyddsförordningen) är Europeiska unionens (EU) integritetslagstiftning som harmoniserar och moderniserar dataskyddskraven för EU:s länder.
-* **CCPA** (California Consumer Privacy Act) ger personer bosatta i Kalifornien nya rättigheter när det gäller deras personuppgifter och ålägger vissa företag som bedriver verksamhet i Kalifornien dataskyddsansvar.
-* **PDPA** (lagen om skydd av personuppgifter) är den integritetslagstiftning som harmoniserar och moderniserar dataskyddskraven för Thailand.
+* **GDPR** (den allmänna dataskyddsförordningen) är Europeiska unionens (EU) integritetslagstiftning som harmoniserar och moderniserar dataskyddskraven för EU:s länder.
+* **CCPA** (California Consumer Privacy Act) ger personer bosatta i Kalifornien nya rättigheter när det gäller deras personuppgifter och ålägger dataskyddsansvar för vissa enheter som bedriver verksamhet i Kalifornien.
+* **PDPA** (Personal Data Protection Act) är den integritetslagstiftning som harmoniserar och moderniserar dataskyddskraven för Thailand.
 * **LGPD** (Lei Geral de Proteção de Dados) gäller alla företag som samlar in eller behandlar personuppgifter i Brasilien.
 * **CASL** (Canadian Anti Spam Law) omfattar alla meddelanden som skickas till eller från Kanada, men inte meddelanden som skickas via Kanada.
-* **VCDPA** (Virginia Consumer Data Protection Act) och **CPA** (Colorado Privacy Act) gäller alla företag som bedriver verksamhet eller är målobjekt i dessa delstater.
+* **VCDPA** (Virginia Consumer Data Protection Act) och **CPA** (Colorado Privacy Act) gäller för alla företag som bedriver verksamhet eller målbor i dessa delstater.
 
 Alla dessa bestämmelser gäller för Adobe Campaign-kunder som har data för registrerade i de respektive regioner eller länder som nämns ovan.
 

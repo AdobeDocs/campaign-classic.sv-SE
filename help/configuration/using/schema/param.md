@@ -41,16 +41,16 @@ param:==help
 
 ## Beskrivning {#description-12}
 
-Med det här elementet kan du definiera en parameter för att anropa en SOAP-metod.
+Med det här elementet kan du definiera en parameter för att anropa en SOAP.
 
 ## Attributbeskrivning {#attribute-description-12}
 
-* **desc (sträng)**: beskrivning som gäller `<param>` -element.
-* **inout (sträng)**: this-attributet definierar om parametern finns vid indata (in) eller utdata (out) för SOAP-anropet. Om det här attributet inte anges används standardparametern (&quot;@inout=in&quot;).
+* **desc (sträng)**: beskrivning som gäller elementet `<param>`.
+* **inout (sträng)**: det här attributet definierar om parametern finns vid indata (in) eller utdata (ut) för SOAP. Om det här attributet inte anges används standardparametern (&quot;@inout=in&quot;).
 * **label (string)**: `<param>` label
-* **lokaliserbar (sträng)**: om det är aktiverat anger det här attributet att samlingsverktyget ska återställa värdet för attributet @label för översättning (intern användning).
-* **name (MNTOKEN)**: internt namn på `<param>`
-* **type (sträng)**: this-attributet definierar typen av `<param>` element
+* **localizable (string)**: Om det är aktiverat anger det här attributet att samlingsverktyget ska återställa värdet för attributet @label för översättning (intern användning).
+* **name (MNTOKEN)**: internt namn för `<param>`
+* **type (string)**: det här attributet definierar typen av `<param>`-element
 
   Lista över tillgängliga typer:
 

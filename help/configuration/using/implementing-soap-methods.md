@@ -12,21 +12,21 @@ ht-degree: 2%
 
 ---
 
-# Implementera SOAP-metoder{#implementing-soap-methods}
+# SOAP{#implementing-soap-methods}
 
 
 
 ## Introduktion {#introduction}
 
-Det går att skapa SOAP-metoder i JavaScript. Den här funktionen aktiverar helt enkelt tillämpande processer och kan undvika att utveckla JSP:er och anrop till dem i formulären.
+Det går att skapa SOAP metoder i JavaScript. Den här funktionen aktiverar helt enkelt tillämpande processer och kan undvika att utveckla JSP:er och anrop till dem i formulären.
 
-Dessa SOAP-metoder fungerar på samma sätt som de som definierats internt i programmet. Samma attribut stöds: static, key only och const.
+Dessa SOAP fungerar på samma sätt som de som definierats internt i programmet. Samma attribut stöds: static, key only och const.
 
 ## Definiera ett metodbibliotek {#defining-a-method-library}
 
 När du skapar ett metodbibliotek ingår två faser:
 
-* SOAP-metoddeklarationen,
+* SOAP metoddeklaration,
 * Definition (eller implementering) i JavaScript.
 
 ### Deklaration {#declaration}
@@ -35,7 +35,7 @@ Börja med att deklarera metoderna i scheman (mer information om hur du skapar o
 
 Deras deklaration liknar den för inbyggda metoder, förutom att du måste lägga till attributet &#39;library&#39; som anger namnet på det metodbibliotek där definitionen finns.
 
-Det här namnet sammanfaller med namnet (med namnutrymmet) för typen JavaScript-kod.
+Det här namnet sammanfaller med namnet (med namnutrymmet) för entiteten av typen JavaScript-kod.
 
 Exempel:
 
@@ -55,7 +55,7 @@ Metoden testLog(msg) deklareras i tillägget nms:mottagare
 
 ### Definition {#definition}
 
-SOAP-metoder implementeras i form av JavaScript-funktioner grupperade i ett skript som representerar ett bibliotek.
+SOAP implementeras i form av en JavaScript-funktion som grupperas i ett skript som representerar ett bibliotek.
 
 >[!NOTE]
 >
@@ -73,7 +73,7 @@ Namnet på funktionen måste vara i följande format:
 
 Exempel:
 
-Följande JavaScript-funktion är implementeringen av den metod som beskrivs ovan. Den ska definieras i typen JavaScript-kod med hjälp av namnet cus:test.
+Följande JavaScript-funktion är implementeringen av den metod som beskrivs ovan. Den ska definieras i typentiteten&quot;JavaScript Code&quot; med hjälp av namnet&quot;cus:test&quot;.
 
 ```
 function nms_recipient_testLog(message)
@@ -88,10 +88,10 @@ Funktionens signatur måste innehålla ett argument för varje in- eller inout-p
 
 Specialfall:
 
-* **icke-statiska metoder**: funktionen måste innehålla ett extra argument först, som sammanfaller med den XML-entitet som skickas i form av ett XML-typobjekt (E4X).
-* **type-metoderna &quot;key only&quot;**: funktionen måste innehålla ytterligare ett argument först, som sammanfaller med den tangent som skickas i form av teckensträngar.
+* **icke-statiska metoder**: Funktionen måste innehålla ett extra argument först, som sammanfaller med den XML-entitet som skickas i form av ett XML-typobjekt (E4X).
+* **&quot;endast nyckel&quot;-typmetoder**: funktionen måste innehålla ett extra argument först, som sammanfaller med nyckeln som skickas i form av teckensträngar.
 
-**3. Returnerade värden**
+**3. Returnerade värden:**
 
 Funktionen måste returnera ett värde för varje parameter av typen&quot;out&quot; eller&quot;inout&quot;. Specialfall: Om metoden deklareras utan något av attributen&quot;static&quot;,&quot;key only&quot; eller&quot;const&quot; måste det första returnerade värdet sammanfalla med den ändrade entiteten. Du kan returnera ett nytt objekt eller returnera den första ändrade parametern.
 

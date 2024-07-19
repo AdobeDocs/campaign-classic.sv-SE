@@ -28,7 +28,7 @@ I det här kapitlet finns en översikt över hur du hanterar webbprogram.
 
 >[!NOTE]
 >
->Se [Checklista för säkerhet och integritet](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/security-privacy/get-started-security-privacy.html?lang=sv) om du vill veta hur du optimerar säkerheten för webbprogram.
+>Läs [checklistan för säkerhet och sekretess](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/security-privacy/get-started-security-privacy.html?lang=sv) om du vill veta mer om hur du optimerar säkerheten för webbprogram.
 
 >[!CAUTION]
 >
@@ -47,11 +47,11 @@ Webbprogram i Adobe Campaign har följande funktioner:
 * Villkorlig sidvisning. Se denna [sida](defining-web-forms-page-sequencing.md#conditional-page-display) för mer information om detta.
 * Informationskontroll före validering beroende på den förväntade datatypen (nummer, e-postadress, datum osv.) och obligatoriska fält. Se denna [sida](form-rendering.md#defining-control-settings) för mer information om detta.
 * E-postinbjudningar eller meddelanden. Se denna [sida](publishing-a-web-form.md#delivering-a-form-via-email) för mer information om detta.
-* Personalisering av fel- och slutmeddelanden. Se denna [sida](defining-web-forms-properties.md#setting-up-an-error-page) för mer information om detta.
+* Personalization för fel- och slutmeddelanden. Se denna [sida](defining-web-forms-properties.md#setting-up-an-error-page) för mer information om detta.
 * Användning av bilder, videor, hypertextlänkar, captcha osv. Se denna [sida](editing-content.md) för mer information om detta.
 * Övervakning av svar i realtid. Se denna [sida](../../surveys/using/publish-track-and-use-collected-data.md#response-tracking) för mer information om detta.
 
-Valfritt **Undersökning** i modulen för att skapa finns följande funktioner:
+Den valfria modulen **Enkät** innehåller följande extrafunktioner:
 
 * Dynamiskt tillägg för databasen: skapande av svar som inte ingår i den ursprungliga datamallen. Se denna [sida](../../surveys/using/managing-answers.md#storing-collected-answers) för mer information om detta.
 * Genererar dedikerade rapporter. Se denna [sida](../../surveys/using/publish-track-and-use-collected-data.md#reports-on-surveys) för mer information om detta.
@@ -62,7 +62,7 @@ Jämfört med webbprogram har enkäterna ett förenklat grafiskt gränssnitt med
 >
 >Undersökningar finns i [det här avsnittet](../../surveys/using/about-surveys.md).
 >
->De allmänna funktionerna för webbformulär i Adobe Campaign beskrivs i [det här avsnittet](about-web-forms.md).
+>De övergripande funktionerna för webbformulär i Adobe Campaign beskrivs i [det här avsnittet](about-web-forms.md).
 
 ## Implementering av webbapplikationer {#web-application-implementation}
 
@@ -70,18 +70,18 @@ Om du vill skapa och publicera ett webbprogram måste du:
 
 1. Skapa innehållet (fält, listor, tabeller, diagram osv.).
 
-   Du kan även visa avsnittet som innehåller information om tillgängliga formulärfält: alla dessa fält är också tillgängliga för webbprogram. Den här informationen finns i [den här sidan](adding-fields-to-a-web-form.md).
+   Du kan även visa avsnittet som innehåller information om tillgängliga formulärfält: alla dessa fält är också tillgängliga för webbprogram. Den här informationen är tillgänglig på [den här sidan](adding-fields-to-a-web-form.md).
 
 1. Vid behov kan du lägga till förinläsnings-, test- och sparningssteg och konfigurera åtkomstkontrollsystemet (huvudsakligen inom ramen för en extranätpublikation).
 1. Publicera webbprogrammet så att det blir tillgängligt på ett extranät eller i Adobe Campaign.
 
 ## Ursprunglig konfiguration för webbprogram {#web-application-initial-configuration}
 
-Webbprogram skapas via **[!UICONTROL Web Applications]** i **[!UICONTROL Campaigns]** och **[!UICONTROL Profiles and targets]** -tabbar.
+Webbprogrammet skapas via länken **[!UICONTROL Web Applications]** på flikarna **[!UICONTROL Campaigns]** och **[!UICONTROL Profiles and targets]**.
 
-Webbprogram lagras i **[!UICONTROL Resources > Online > Web Applications]** noden i Adobe Campaign-trädet. Konfigurationerna är uppdelade i följande mappar:
+Webbprogram lagras i noden **[!UICONTROL Resources > Online > Web Applications]** i Adobe Campaign-trädet. Konfigurationerna är uppdelade i följande mappar:
 
-* **[!UICONTROL Administration > Configuration > Form renderings]**: innehåller återgivningsmallar för webbformulärpresentationen (program och undersökningar). Med mallen kan du generera formuläret. En CSS-formatmall används också. Den här formatmallen kan överladdas på mallnivå. Mer information finns på [den här sidan](form-rendering.md#selecting-the-form-rendering-template).
+* **[!UICONTROL Administration > Configuration > Form renderings]**: innehåller återgivningsmallar för webbformulärpresentationen (program och enkäter). Med mallen kan du generera formuläret. En CSS-formatmall används också. Den här formatmallen kan överladdas på mallnivå. Mer information finns på [den här sidan](form-rendering.md#selecting-the-form-rendering-template).
 * **[!UICONTROL Resources > Templates > Web application templates]**: innehåller formulärmallar. Om du vill skapa ett formulär eller ett webbprogram måste du utgå från en mall.
 
 ## Mallar för webbprogram {#web-application-templates}
@@ -92,7 +92,7 @@ Som standard tillhandahåller Adobe Campaign en mall per tillgängligt webbprogr
 >
 >Du kan konvertera ett befintligt webbprogram till en mall. Om du vill göra det markerar du formuläret och högerklickar. Välj **[!UICONTROL Actions > Save as template...]**.
 
-Du kan skapa nya mallar via **[!UICONTROL Resources > Templates > Web Application templates]** noden i Adobe Campaign-trädet.
+Du kan skapa nya mallar via noden **[!UICONTROL Resources > Templates > Web Application templates]** i Adobe Campaign-trädet.
 
 Med guiden Skapa kan du välja de alternativ som du vill aktivera, vilket visas nedan.
 

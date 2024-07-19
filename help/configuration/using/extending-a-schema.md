@@ -18,7 +18,7 @@ ht-degree: 4%
 >
 >Vissa inbyggda scheman får inte utökas: huvudsakligen de för vilka följande inställningar har definierats:\
 >**dataSource=&quot;file&quot;** och **mappingType=&quot;xmlFile&quot;**.\
->Följande scheman får inte utökas: **xtk:entityBackupNew**, **xtk:entityBackupOriginal**, **xtk:entityOriginal**, **xtk:formulär**, **xtk:srcSchema**, **ncm:publicera**, **nl:övervakning**, **nms:kalender**, **nms:remoteTracking**, **nms:userAgentRules**, **xtk:builder**, **xtk:anslutningar**, **xtk:dbInit**, **xtk:funcList**, **xtk:fusion**, **xtk: jst**, **xtk:navtree**, **xtk:queryDef**, **xtk:resourceMenu**, **xtk:schema**, **xtk:scriptContext**, **xtk:session**, **xtk:sqlSchema**, **xtk:strängar**.
+>Följande scheman får inte utökas: **xtk:entityBackupNew**, **xtk:entityBackupOriginal**, **xtk:entityOriginal**, **xtk:form**, **xtk:srcSchema**, **ncm:publishing**, **nl:monitoring**, **nms:calendar**, **nms:remoteTracking**, **nms:userAgentRules**, **xtk:builder**, **xtk:connections**, **xtk:dbInit**, **xtk:funcList**, **xtk:fusion**, **xtk: jst**, **xtk:navtree**, **xtk:tk queryDef**, **xtk:resourceMenu**, **xtk:schema**, **xtk:scriptContext**, **xtk:session**, **xtk:sqlSchema**, **xtk:strings**.
 >Denna lista är inte uttömmande.
 
 Det finns två metoder för att utöka ett befintligt schema:
@@ -26,7 +26,7 @@ Det finns två metoder för att utöka ett befintligt schema:
 1. Ändra källschemat direkt.
 1. Skapa ett annat schema med samma namn men ett annat namnutrymme. Fördelen är att du kan utöka en tabell utan att behöva ändra det ursprungliga schemat.
 
-   Schemats rotelement måste innehålla **extendedSchema** attribut med namnet på schemat som ska utökas som dess värde.
+   Schemats rotelement måste innehålla attributet **extendedSchema** med namnet på schemat som ska utökas som dess värde.
 
    Ett tilläggsschema har inget eget schema: schemat som genereras från källschemat fylls i med fälten i tilläggsschemat.
 
@@ -34,7 +34,7 @@ Det finns två metoder för att utöka ett befintligt schema:
    >
    >Du får inte ändra de inbyggda schemana i programmet, utan i stället schemautbyggnadsmekanismen. I annat fall kommer ändrade scheman inte att uppdateras när du uppgraderar programmet. Detta kan leda till felfunktioner vid användning av Adobe Campaign.
 
-   **Exempel**: tillägg av **nms:mottagare** schema.
+   **Exempel**: tillägg för schemat **nms:mottagare**.
 
    ```
    <srcSchema extendedSchema="nms:recipient" name="recipient" namespace="cus">
@@ -44,7 +44,7 @@ Det finns två metoder för att utöka ett befintligt schema:
    </srcSchema>
    ```
 
-   The **nms:mottagare** utökat schema fylls i med fältet ifyllt i tilläggsschemat:
+   Det utökade schemat **nms:receive** fylls i med fältet ifyllt i tilläggsschemat:
 
    ```
    <schema dependingSchemas="cus:recipient" name="recipient" namespace="nms">
@@ -54,9 +54,9 @@ Det finns två metoder för att utöka ett befintligt schema:
    </schema>
    ```
 
-   The **BeroendeSchemas** i schemats rotelement refererar till beroenden till tilläggsscheman.
+   Attributet **BeroendeSchemas** i schemats rotelement refererar till beroenden till tilläggsscheman.
 
-   The **tillhörTill** i fältet fylls i det schema där det deklareras.
+   Attributet **tillhörTo** i fältet fyller i det schema där det deklareras.
 
 >[!IMPORTANT]
 >

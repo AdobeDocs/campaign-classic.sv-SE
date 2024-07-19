@@ -18,13 +18,13 @@ ht-degree: 1%
 
 
 
-The **Marknadsföringsresurshantering (MRM)** kan ni styra marknadsföringsåtgärder i ett samverkansbaserat läge genom att tillhandahålla fullständig hantering och realtidsspårning av de uppgifter, budgetar och marknadsföringsresurser som ingår.
+Med modulen **Hantering av marknadsföringsresurser (MRM)** kan du styra marknadsföringsåtgärder i ett samverkansbaserat läge genom att tillhandahålla fullständig hantering och realtidsspårning av de uppgifter, budgetar och marknadsföringsresurser som ingår.
 
 Adobe Campaign-operatorer kan samordna sina åtgärder och godkänna deras framsteg i alla faser via fullständiga valideringsprocesser och lämpliga spårningsverktyg: rapportering, spårning av godkännanden, aviseringar, diskussionsforum osv. De varnas i händelse eller fel eller fördröjning och i varje nytt steg i valideringscykeln.
 
 Inom ramen för programmen och delprogrammen i marknadsföringsplanerna kan uppgifter skapas och tilldelas de berörda aktörerna och sedan hanteras under alla faser i dem.
 
-**MRM** kan ni också hantera marknadsföringsresurser där flera deltagare är inblandade: integriteten och övervakningen av resurser utförs via en dedikerad kontrollpanel.
+Med **MRM** kan du även hantera marknadsföringsresurser där flera deltagare är inblandade: integriteten och övervakningen av resurser utförs via en dedikerad kontrollpanel.
 
 Slutligen utökas budgethanteringsfunktionen till hantering av mål- och utgiftsrader samt utökade inbyggda rapporter. Sedan kan ni övervaka och mäta produktiviteten och resultatet för alla marknadsföringsaktiviteter.
 
@@ -46,16 +46,16 @@ Följande koncept och termer är specifika för Adobe Campaign Marketing Resourc
 
 >[!NOTE]
 >
->Mer information om arbetsytan i Adobe Campaign finns i [det här avsnittet](../../platform/using/adobe-campaign-workspace.md).
+>Mer information om Adobe Campaign arbetsyta finns i [det här avsnittet](../../platform/using/adobe-campaign-workspace.md).
 >  
 >Leveranser och kommunikationskanaler beskrivs i [det här avsnittet](../../delivery/using/steps-about-delivery-creation-steps.md).
 >
->Funktionerna för marknadsföringskampanjer beskrivs närmare i [det här avsnittet](../../campaign/using/accessing-marketing-campaigns.md).
+>Funktionerna för marknadsföringskampanjer beskrivs i [det här avsnittet](../../campaign/using/accessing-marketing-campaigns.md).
 
 Med tillägget för Marketing Resource Management (MRM) har planer och program ytterligare funktioner som listas nedan:
 
 * **Budgethantering**. [Läs mer](../../mrm/using/controlling-costs.md)
 
-* **Uppgiftshantering**. [läs mer](../../mrm/using/creating-and-managing-tasks.md)
+* **Aktivitetshantering**. [läs mer](../../mrm/using/creating-and-managing-tasks.md)
 
 * **Resurshantering**. [Läs mer](../../mrm/using/managing-marketing-resources.md)

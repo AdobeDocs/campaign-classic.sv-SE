@@ -15,7 +15,7 @@ ht-degree: 2%
 
 
 
-Arbetsflödena nedan installeras tillsammans med **Marknadsföringsresurser** som standard. Mer information om modulen finns i [section](../../campaign/using/designing-marketing-campaigns.md).
+Arbetsflödena som beskrivs nedan installeras som standard med modulen **Marknadsföringsresurser (MRM)**. Mer information om den här modulen finns i [avsnittet](../../campaign/using/designing-marketing-campaigns.md).
 
 <table> 
  <tbody> 
@@ -32,7 +32,7 @@ Arbetsflödena nedan installeras tillsammans med **Marknadsföringsresurser** so
   <tr> 
    <td> <span class="uicontrol">Aktivitetsmeddelande</span> <br /> </td> 
    <td> <span class="uicontrol">taskMgt</span> <br /> </td> 
-   <td> Med det här arbetsflödet kan du skicka meddelanden om aktiviteter i marknadsföringskampanjer.<br /> </td> 
+   <td> Med det här arbetsflödet kan du skicka meddelanden som rör aktiviteter i marknadsföringskampanjer.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">Diskussionsforumprocesser</span> <br /> </td> 

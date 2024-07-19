@@ -17,9 +17,9 @@ ht-degree: 4%
 
 
 
-Som standard baseras dina nya arbetsflöden på en arbetsflödesmall som är förkonfigurerad och baserad på en mottagartabell (nms:mottagare). För att de ska kunna baseras automatiskt på den anpassade mottagartabellen som refereras i **Nms_DefaultRcpSchema** alternativ (se [Konfigurera gränssnittet](../../configuration/using/configuring-the-interface.md) måste du skapa en ny arbetsflödesmall.
+Som standard baseras dina nya arbetsflöden på en arbetsflödesmall som är förkonfigurerad och baserad på en mottagartabell (nms:mottagare). För att de ska kunna baseras automatiskt på den anpassade mottagartabellen som refereras i alternativet **Nms_DefaultRcpSchema** (se [Konfigurera gränssnittet](../../configuration/using/configuring-the-interface.md)) måste du skapa en ny arbetsflödesmall.
 
-Skapa en ny mall via **[!UICONTROL Resources > Templates > Workflow templates]** nod. I mallens egenskaper matchar de angivna dimensionerna tabellen med externa mottagare.
+Skapa en ny mall via noden **[!UICONTROL Resources > Templates > Workflow templates]**. I mallens egenskaper matchar de angivna dimensionerna tabellen med externa mottagare.
 
 Genom att basera dina nya arbetsflöden på en nyligen skapad mall väljs den anpassade tabellen som standard för arbetsflödets globala mål- och filtreringsdimensioner.
 

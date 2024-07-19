@@ -17,10 +17,10 @@ ht-degree: 4%
 
 ## Skapa leveransen {#creating-the-delivery}
 
-Du kan skapa en leverans via översikten eller via **[!UICONTROL Create > Delivery]** -menyn.
+Du kan skapa en leverans via översikten eller via menyn **[!UICONTROL Create > Delivery]**.
 
 
-Om du vill skapa en leverans klickar du **[!UICONTROL Create]** ovanför listan över leveranser. När du skapar en ny leverans måste du ange vilken leveranskanal som används. Det gör du genom att välja lämplig leveransmall i listrutan i dialogrutan **[!UICONTROL Delivery template]** fält.
+Om du vill skapa en leverans klickar du på **[!UICONTROL Create]** ovanför listan över leveranser. När du skapar en ny leverans måste du ange vilken leveranskanal som används. Det gör du genom att välja lämplig leveransmall i listrutan i fältet **[!UICONTROL Delivery template]**.
 
 ![](assets/s_ncs_user_wizard_email01_1.png)
 
@@ -36,16 +36,16 @@ Du kan skapa nya leveransmallar för att förkonfigurera specifika parametrar s�
 
 Du måste ange parametrar för att kunna identifiera leveransen. Så här gör du:
 
-1. Ange ett namn för leveransen i dialogrutan **[!UICONTROL Label]** fält.
+1. Ange ett namn för leveransen i fältet **[!UICONTROL Label]**.
 
    Leveransen kan även tilldelas en leveranskod. Namnet på leveransen och dess kod visas i listan över leveranser, men kan inte ses av mottagarna.
 
-1. Lägg till en beskrivning i **[!UICONTROL Description]** fält.
+1. Lägg till en beskrivning i fältet **[!UICONTROL Description]**.
 1. Välj leveranstyp i det relevanta fältet. Den här informationen är användbar för leveransspårning: du kan filtrera baserat på det här villkoret i leveranslistan eller skapa frågor med det här urvalskriteriet.
 
    ![](assets/s_ncs_user_email_del_nature.png)
 
-1. Klicka **[!UICONTROL Continue]** för att bekräfta den här informationen och visa meddelandekonfigurationsfönstret.
+1. Klicka på **[!UICONTROL Continue]** för att bekräfta den här informationen och visa meddelandekonfigurationsfönstret.
 
 Leveransinnehållet kan konfigureras. Definitionen av leveransinnehåll är specifik för varje kanal. Mer information finns i det dedikerade avsnittet:
 

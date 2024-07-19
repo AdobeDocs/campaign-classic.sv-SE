@@ -35,10 +35,10 @@ Gör så här:
 
    Du kan välja om du vill lagra undantag (**excludelog**), med meddelanden (**broadlog**) eller i en separat tabell.
 
-   Du kan också välja om du vill hantera spårning för den här leveransmappningen (**trackinglog**).
+   Du kan också välja om du vill hantera spårning för den här leveransmappningen (**spårningslogg**).
 
 1. Välj sedan de tillägg som ska beaktas. Tilläggstypen beror på plattformens parametrar och alternativ (se licensavtalet).
 
    ![](assets/wf_new_mapping_define_extensions.png)
 
-   Klicka på **[!UICONTROL Save]** för att starta framtagning av leveransmappning: alla länkade tabeller skapas automatiskt baserat på de valda parametrarna.
+   Klicka på knappen **[!UICONTROL Save]** för att starta skapandet av leveransmappningen: alla länkade tabeller skapas automatiskt baserat på de valda parametrarna.

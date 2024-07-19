@@ -26,11 +26,11 @@ En användare som är känd för plattformen är en mottagare som redan har fåt
 
 ## Serverkonfiguration {#server-configuration}
 
-Servrarna konfigureras genom att överlagra vissa element i **serverConf.xml** -fil. Dessa filer sparas i **conf** underkatalogen till Adobe Campaign installationskatalog.
+Servrarna konfigureras genom överlagring av vissa element i filen **serverConf.xml**. Dessa filer sparas i underkatalogen **conf** i Adobe Campaign installationskatalog.
 
 ### Omdirigeringsserver {#redirection-server}
 
-Ange **trackWebVisitors** attributet för **omdirigering** element till **true**.
+För omdirigeringsservern anger du attributet **trackWebVisitors** för elementet **redirection** till **true**.
 
 ```
 <redirection P3PCompactPolicy="CAO DSP COR CURa DEVa TAIa OUR BUS IND UNI COM NAV"
@@ -43,7 +43,7 @@ trackingPassword=""
 
 Om du vill visa spårningsinformation via klientkonsolen måste du:
 
-* Skapa en **provleverans** (leveransmappningen måste vara identisk med mappningen av målschemat),
-* Ange **internt namn** av leveransen i **NmsTracking_WebTrackingDelivery** alternativ.
+* Skapa en **overksam leverans** (leveransmappningen måste vara identisk med mappningen av målschemat),
+* Ange det **interna namnet** för leveransen i alternativet **NmsTracking_WebTrackingDelivery** .
 
 All information om webbplatsspårning som inte kommer direkt efter ett klick i ett e-postmeddelande kan visas i den dummy-leverans som skapas.

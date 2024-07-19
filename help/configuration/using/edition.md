@@ -15,7 +15,7 @@ ht-degree: 0%
 
 # Redigera navigeringsträdet i Campaign Explorer{#edition}
 
-Skärmen för att skapa och konfigurera konfigurationsdokument för navigeringshierarkin är tillgänglig via **[!UICONTROL Administration > Configuration > Navigation hierarchies]** nod:
+Skärmen för att skapa och konfigurera konfigurationsdokument för navigeringshierarkin är tillgänglig via noden **[!UICONTROL Administration > Configuration > Navigation hierarchies]**:
 
 ![](assets/d_ncs_integration_navigation_arbo.png)
 
@@ -27,7 +27,7 @@ Redigeringsfältet innehåller innehållet i XML-dokumentet:
 
 >[!NOTE]
 >
->Med redigeringskontrollen &quot;Namn&quot; kan du ange dokumentnyckeln som består av namnet och namnutrymmet. Attributen name och namespace för **`<navtree>`** -elementet uppdateras automatiskt i schemats XML-redigeringsfält.
+>Med redigeringskontrollen &quot;Namn&quot; kan du ange dokumentnyckeln som består av namnet och namnutrymmet. Attributen name och namespace för elementet **`<navtree>`** uppdateras automatiskt i schemats XML-redigeringsfält.
 
 Förhandsgranskningen genererar automatiskt det sammanfogade dokumentet med den fullständiga konfigurationen:
 

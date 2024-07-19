@@ -29,17 +29,17 @@ Parametern **`<command>`** motsvarar modulen.
 
 >[!NOTE]
 >
->* I vilket fall som helst kan du lägga till **-noconsole** argument för att ta bort kommentarer som visas när modulerna har startats.
->* Omvänt kan du lägga till argumentet **-verbose** för att visa mer information.
+>* I vilket fall som helst kan du lägga till argumentet **-noconsole** för att ta bort kommentarer som visas när modulerna har startats.
+>* Omvänt kan du lägga till argumentet **-verbose** om du vill visa mer information.
 >
 
 ## Övervakningskommandon {#monitoring-commands-}
 
 >[!NOTE]
 >
->Om du vill visa alla moduler måste du använda **nlserver pdump** -kommando.
+>Om du vill visa alla moduler måste du använda kommandot **nlserver pdump** .
 
-Du kan lägga till parametern **-vem** för att lista pågående anslutningar (databas och program).
+Du kan lägga till parametern **-who** för att lista pågående anslutningar (databas och program).
 
 ```sql
 nlserver pdump -who
@@ -61,9 +61,9 @@ Datasource Server Provider Login
 default xxxxx myserver myprovider test400
 ```
 
-Ett annat användbart kommando är **nlserver monitor**. Den listar XML-filen för övervakning (som hämtas i Adobe Campaign-klienten eller via **monitor.jsp** webbsida).
+Ett annat användbart kommando är **nlserver monitor**. Den listar XML-filen för övervakning (hämtas från Adobe Campaign-klienten eller via webbsidan **monitor.jsp**).
 
-Du kan lägga till parametern **-missing** för att lista saknade moduler (fel i moduler, stängda moduler osv.)
+Du kan lägga till parametern **-missing** om du vill visa de saknade modulerna (fel i moduler, stängda moduler osv.)
 
 ```sql
 nlserver monitor -missing
@@ -89,7 +89,7 @@ nlserver stop <module>@<INSTANCE>
 
 >[!NOTE]
 >
->**`<instance>`** motsvarar namnet på instansen enligt konfigurationsfilerna, eller **standard** för enkelinstansmoduler.
+>**`<instance>`** motsvarar namnet på instansen enligt inställningarna i konfigurationsfilerna, eller **standard** för enkelinstansmoduler.
 
 ## Stäng av tjänster {#shut-down-services}
 
@@ -105,7 +105,7 @@ Om du vill stoppa Adobe Campaign-tjänster använder du något av följande komm
 
      >[!NOTE]
      >
-     >Från och med 20.1 rekommenderar vi att du använder följande kommando i stället (för Linux): **systemctl stop nlserver**
+     >Från 20.1 rekommenderar vi att du använder följande kommando i stället (för Linux): **systemctl stop nlserver**
 
    * I Windows:
 
@@ -129,17 +129,17 @@ På samma sätt kan du använda något av följande kommandon för att starta om
 
      >[!NOTE]
      >
-     >Från och med 20.1 rekommenderar vi att du använder följande kommando i stället (för Linux): **systemctl start nlserver**
+     >Från 20.1 rekommenderar vi att du använder följande kommando i stället (för Linux): **systemctl start nlserver**
 
    * I Windows: `net start nlserver6`
 
-* I annat fall, på Adobe Campaign-kontot: **nlserver watchdog -svc -noconsole**
+* I annat fall, i Adobe Campaign-kontot: **nlserver watchdog -svc -noconsole**
 
 ## Kommandot config {#the-config-command}
 
-The **config** Med -kommandot kan du hantera serverkonfigurationen, inklusive omkonfigurering av databasanslutningen.
+Med kommandot **config** kan du hantera serverkonfigurationen, inklusive omkonfigurationen av databasanslutningen.
 
-Använd **config** kommando **nlserver** körbar fil med **-setdblogin** parameter.
+Använd kommandot **config** i den körbara filen **nlserver** med parametern **-setdblogin** .
 
 ```sql
 nlserver config -setdblogin:<[dbms:]account[:database][/password]@server>
@@ -151,16 +151,16 @@ nlserver config -setdblogin:PostgreSQL:<accountName>:test6@dbserver
 
 Ange lösenordet.
 
-Ändra **internal** lösenord: **nlserver config -internalpassword**
+Så här ändrar du det **interna** lösenordet: **nlserver config -internalPassword**
 
 >[!IMPORTANT]
 >
->Logga in med **Intern** måste du ha definierat ett lösenord i förväg. Mer information om detta finns i [det här avsnittet](../../installation/using/configuring-campaign-server.md#internal-identifier).
+>Om du vill logga in med identifieraren **Internal** måste du ha definierat ett lösenord i förväg. Mer information om detta finns i [det här avsnittet](../../installation/using/configuring-campaign-server.md#internal-identifier).
 
 >[!NOTE]
 >
->* I allmänhet kan du använda **config** kommando
->* Om du vill visa parameterlistan använder du **-?** parameter: **nlserver config -?**
+>* I allmänhet kan du använda kommandot **config** i stället för att ändra konfigurationsfilerna manuellt
+>* Använd **-? om du vill hämta parameterlistan.**-parameter: **nlserver config -?**
 >* Om det är en Oraclena databas får du inte ange kontot. Syntaxen är följande:
 >
 >  `nlserver config -setdblogin:Oracle:test6@dbserver`

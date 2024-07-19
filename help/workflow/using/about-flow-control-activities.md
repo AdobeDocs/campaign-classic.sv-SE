@@ -18,15 +18,15 @@ ht-degree: 5%
 Följande aktiviteter är databasaktiviteter: deras huvuduppgift är att samordna de andra aktiviteterna.
 
 * **Start och slut**: gör att du kan visa start- och slutpunkterna för ett arbetsflöde. Se [Start och slut](start-and-end.md).
-* **Gaffel**: du kan aktivera alla utgående övergångar. Se [Gaffel](fork.md) -avsnitt.
-* **Avtalad tid**: gör att du kan vänta på att flera åtgärder som har startats samtidigt ska slutföras innan du fortsätter. Se [Gaffel](fork.md) -avsnitt.
-* **Schemaläggare**: låter dig definiera ett arbetsflödeskörningsschema. Se [Schemaläggare](scheduler.md).
-* **Testa**: aktiverar en övergång baserat på ett testresultat. Se [Testa](test.md).
-* **Vänta**: aktiverar den utgående övergången efter en viss tidsgräns. Se [Vänta](wait.md).
-* **Tidsbegränsning**: låter dig pausa en uppgift under en angiven period. Se [Tidsbegränsning](time-constraint.md).
+* **Förgrening**: gör att du kan aktivera alla utgående övergångar. Se avsnittet [Förgrening](fork.md).
+* **Avtalad tid**: gör att du kan vänta på att flera aktiviteter som har startats samtidigt ska slutföras innan du fortsätter. Se avsnittet [Förgrening](fork.md).
+* **Schemaläggaren**: gör att du kan definiera ett arbetsflödeskörningsschema. Se [Schemaläggaren](scheduler.md).
+* **Test**: aktiverar en övergång baserat på ett testresultat. Se [Test](test.md).
+* **Vänta**: aktiverar den utgående övergången efter en given tidsgräns. Se [Vänta](wait.md).
+* **Tidsbegränsning**: gör att du kan pausa en aktivitet under en angiven period. Se [Tidsbegränsning](time-constraint.md).
 * **Delarbetsflöde**: gör att du kan köra ett annat arbetsflöde. Se [Delarbetsflöde](sub-workflow.md).
-* **Påssjuka**: låter dig implementera övergångar utan länkar. Se [Hoppa (startpunkt och slutpunkt)](jump-start-point-and-end-point.md).
-* **Extern signal**: gör att du kan aktivera den utgående övergången när du har tagit emot en extern signal. Se [Extern signal](external-signal.md)-avsnittet.
-* **Godkännande**: gör att du kan skicka ett e-postmeddelande till en operator eller en grupp med operatorer och vänta på godkännande för att fortsätta med körningen. Se [Godkännande](approval.md) -avsnitt.
-* **Varning**: gör att du kan skicka en varning till en operator eller en grupp med operatorer. Se [Varning](alert.md) -avsnitt.
-* **Uppgift**: låter dig konfigurera körning av uppgifter. Se [Uppgift](task.md) -avsnitt.
+* **Hoppar**: gör att du kan implementera övergångar utan länkar. Se [Hoppa (startpunkt och slutpunkt)](jump-start-point-and-end-point.md).
+* **Extern signal**: gör att du kan aktivera den utgående övergången efter att du har tagit emot en extern signal. Se [Extern signal](external-signal.md)-avsnittet.
+* **Godkännande**: gör att du kan skicka ett e-postmeddelande till en operator eller en grupp med operatorer och vänta på godkännande för att fortsätta med körningen. Se avsnittet [Godkännande](approval.md).
+* **Varning**: gör att du kan skicka en varning till en operator eller en grupp med operatorer. Se avsnittet [Varning](alert.md).
+* **Aktivitet**: gör att du kan konfigurera körning av aktiviteter. Se avsnittet [Aktivitet](task.md).

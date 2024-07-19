@@ -20,10 +20,10 @@ ht-degree: 1%
 ACS Connector replikerar data från Campaign v7 till Campaign Standard. Data som tas emot från Campaign v7 kan användas i Campaign Standard för att skapa leveranser. Du kan se hur profiler synkroniseras genom att utföra de åtgärder som listas nedan.
 
 * **Lägg till nya mottagare**: Skapa en ny mottagare i Campaign v7 och bekräfta att en motsvarande profil har replikerats till Campaign Standarden. Se [Skapa en ny mottagare](#creating-a-new-recipient).
-* **Uppdatera mottagare**: Redigera en ny mottagare i Campaign v7 och visa motsvarande profil i Campaign Standard för att bekräfta att uppdateringen har replikerats. Se [Redigera en mottagare](#editing-a-recipient).
-* **Bygg ett arbetsflöde i Campaign Standard**: Skapa ett arbetsflöde i Campaign Standard som innehåller en fråga med en eller flera målgrupper som replikeras från Campaign v7. Se [Skapa ett arbetsflöde](#creating-a-workflow).
+* **Uppdatera mottagare**: Redigera en ny mottagare i Campaign v7 och visa motsvarande profil i Campaign Standarden för att bekräfta att uppdateringen har replikerats. Se [Redigera en mottagare](#editing-a-recipient).
+* **Skapa ett arbetsflöde i Campaign Standard**: Skapa ett arbetsflöde i Campaign Standard som innehåller en fråga med en eller flera målgrupper som replikerats från Campaign v7. Se [Skapa ett arbetsflöde](#creating-a-workflow).
 * **Skapa en leverans i Campaign Standard**: Följ arbetsflödet för att slutföra leveransen. Se [Skapa en leverans](#creating-a-delivery).
-* **Verifiera avprenumerationslänken**: Använd ett Campaign v7-webbprogram för att kontrollera att mottagarens val att avbryta prenumerationen på en tjänst skickas till Campaign v7-databasen. Alternativet att sluta ta emot tjänsten replikeras till Campaign Standarden. Se [Ändra länken för att avbryta prenumerationen](#changing-the-unsubscription-link).
+* **Verifiera avprenumerationslänken**: Använd ett Campaign v7-webbprogram för att kontrollera att mottagarens val att avbryta prenumerationen på en tjänst skickas till Campaign v7-databasen. Alternativet att sluta ta emot tjänsten replikeras till Campaign Standarden. Se [Ändra avprenumerationslänken](#changing-the-unsubscription-link).
 
 ## Förhandskrav {#prerequisites}
 
@@ -43,11 +43,11 @@ När en mottagare klickar på länken för att avbryta prenumerationen i ett e-p
 
 ## Skapa en ny mottagare {#creating-a-new-recipient}
 
-1. Skapa en ny mottagare i Campaign v7 för replikering till Campaign Standard. Ange så mycket information som möjligt, inklusive mottagarens efternamn, förnamn, e-postadress och postadress. Välj dock inte en **[!UICONTROL Salutation]** eftersom det kommer att läggas till i nästa avsnitt, [Redigera en mottagare](#editing-a-recipient). Mer information finns i [Lägg till mottagare](../../platform/using/adding-profiles.md).
+1. Skapa en ny mottagare i Campaign v7 för replikering till Campaign Standard. Ange så mycket information som möjligt, inklusive mottagarens efternamn, förnamn, e-postadress och postadress. Välj dock inte **[!UICONTROL Salutation]** eftersom det kommer att läggas till i nästa avsnitt, [Redigera en mottagare](#editing-a-recipient). Mer information finns i [Lägg till mottagare](../../platform/using/adding-profiles.md).
 
    ![](assets/acs_connect_profile_sync_01.png)
 
-1. Bekräfta att den nya mottagaren har lagts till i Campaign Standarden. När du granskar profilen bör du kontrollera att de data du angav i Campaign v7 också är tillgängliga i Campaign Standard. Mer information om var du hittar profiler i Campaign Standarden finns i [Navigeringsgrunder](https://experienceleague.adobe.com/docs/campaign-standard/using/getting-started/discovering-the-interface/interface-description.html?lang=sv).
+1. Bekräfta att den nya mottagaren har lagts till i Campaign Standarden. När du granskar profilen bör du kontrollera att de data du angav i Campaign v7 också är tillgängliga i Campaign Standard. Mer information om var du kan hitta profiler i Campaign Standarden finns i [Navigeringsgrunder](https://experienceleague.adobe.com/docs/campaign-standard/using/getting-started/discovering-the-interface/interface-description.html?lang=sv).
 
    ![](assets/acs_connect_profile_sync_02.png)
 
@@ -57,11 +57,11 @@ När en mottagare klickar på länken för att avbryta prenumerationen i ett e-p
 
 Stegen nedan för att ändra en enda datapunkt ger ett enkelt exempel på hur Campaign v7 blir den primära databasen för Campaign Standard när datareplikering används. Att ändra eller ta bort replikerade data i Campaign v7 har samma effekt på motsvarande data i Campaign Standarden.
 
-1. Välj den nyskapade mottagaren från [Skapa en ny mottagare](#creating-a-new-recipient) och redigera mottagarens namn. Välj till exempel en **[!UICONTROL Salutation]** för mottagaren (t.ex. herr eller fru). Mer information finns i [Redigera en profil](../../platform/using/editing-a-profile.md).
+1. Välj den nyskapade mottagaren från [Skapa en ny mottagare](#creating-a-new-recipient) och redigera mottagarens namn. Välj t.ex. **[!UICONTROL Salutation]** som mottagare (t.ex. herr eller fru). Mer information finns i [Redigera en profil](../../platform/using/editing-a-profile.md).
 
    ![](assets/acs_connect_profile_sync_03.png)
 
-1. Bekräfta att mottagarens namn har uppdaterats i Campaign Standard. Mer information om var du hittar profiler i Campaign Standarden finns i [Navigeringsgrunder](https://experienceleague.adobe.com/docs/campaign-standard/using/getting-started/discovering-the-interface/interface-description.html?lang=sv).
+1. Bekräfta att mottagarens namn har uppdaterats i Campaign Standard. Mer information om var du kan hitta profiler i Campaign Standarden finns i [Navigeringsgrunder](https://experienceleague.adobe.com/docs/campaign-standard/using/getting-started/discovering-the-interface/interface-description.html?lang=sv).
 
    ![](assets/acs_connect_profile_sync_04.png)
 
@@ -71,52 +71,52 @@ Stegen nedan för att ändra en enda datapunkt ger ett enkelt exempel på hur Ca
 
 Profiler och tjänster som replikerats från Campaign v7 är tillgängliga för digitala marknadsförare för att utnyttja Campaign Standardens omfattande data. Instruktionerna nedan visar hur du lägger till en Campaign Standard i ett arbetsflöde och sedan använder den med den replikerade databasen.
 
-Mer information och fullständiga anvisningar om arbetsflöden för Campaign Standard finns i [Arbetsflöden](../../workflow/using/about-workflows.md).
+Mer information och fullständiga instruktioner om arbetsflöden för Campaign Standard finns i [Arbetsflöden](../../workflow/using/about-workflows.md).
 
 1. Gå till Campaign Standarden och klicka på **[!UICONTROL Marketing Activities]**.
-1. Klicka **[!UICONTROL Create]** uppe till höger.
+1. Klicka på **[!UICONTROL Create]** uppe till höger.
 1. Klicka på **[!UICONTROL Workflow]**.
-1. Klicka **[!UICONTROL New workflow]** och **[!UICONTROL Next]**.
-1. Ange ett namn för arbetsflödet i **[!UICONTROL Label]** fält och ytterligare information vid behov. Klicka på **[!UICONTROL Next]**.
-1. Från **[!UICONTROL Targeting]** till vänster drar du en **[!UICONTROL Query]** för arbetsytan.
+1. Klicka på **[!UICONTROL New workflow]** och **[!UICONTROL Next]**.
+1. Ange ett namn för arbetsflödet i fältet **[!UICONTROL Label]** och ytterligare information om det behövs. Klicka på **[!UICONTROL Next]**.
+1. Dra ett **[!UICONTROL Query]**-mål från **[!UICONTROL Targeting]** till vänster till arbetsytan.
 
    ![](assets/acs_connect_profile_sync_05.png)
 
-1. Dubbelklicka på **[!UICONTROL Query]** och väljer en parameter som kan användas med den replikerade databasen. Du kan till exempel:
+1. Dubbelklicka på aktiviteten **[!UICONTROL Query]** och välj en parameter som kan användas med den replikerade databasen. Du kan till exempel:
 
-   * Dra **[!UICONTROL Profiles]** till arbetsytan. Använd fältmenyn för att välja **[!UICONTROL Is external resource]** för att hitta profiler som replikerats från Campaign v7.
+   * Dra **[!UICONTROL Profiles]** till arbetsytan. Använd den nedrullningsbara menyn i fältet för att välja **[!UICONTROL Is external resource]** för att hitta profiler som replikerats från Campaign v7.
    * Dra andra frågeparametrar om du vill ange de replikerade profilerna som mål ytterligare.
 
 ## Skapa en leverans {#creating-a-delivery}
 
 >[!NOTE]
 >
->Instruktionerna för att skapa leveransen fortsätter arbetsflödet som påbörjats med [Skapa ett arbetsflöde](#creating-a-workflow).
+>Instruktionerna för att skapa leveransen fortsätter arbetsflödet som startades med [Skapa ett arbetsflöde](#creating-a-workflow).
 
-Digitala marknadsförare kan utnyttja ett Campaign v7-webbprogram för att försäkra sig om att en mottagares val att avbryta prenumerationen på en tjänst skickas till Campaign v7-databasen. När mottagaren klickar på länken för att avbryta prenumerationen replikeras alternativet att sluta ta emot tjänsten från Campaign v7 till Campaign Standard. Mer information finns i [Ändra länken för att avbryta prenumerationen](#changing-the-unsubscription-link).
+Digitala marknadsförare kan utnyttja ett Campaign v7-webbprogram för att försäkra sig om att en mottagares val att avbryta prenumerationen på en tjänst skickas till Campaign v7-databasen. När mottagaren klickar på länken för att avbryta prenumerationen replikeras alternativet att sluta ta emot tjänsten från Campaign v7 till Campaign Standard. Mer information finns i [Ändra avprenumerationslänken](#changing-the-unsubscription-link).
 
-Följ stegen nedan för att lägga till en e-postleverans i ett befintligt arbetsflöde med den tjänst för avprenumeration som skapades i Campaign v7. Mer information och fullständiga instruktioner om arbetsflöden för Campaign Standard finns i [dokument](../../workflow/using/about-workflows.md).
+Följ stegen nedan för att lägga till en e-postleverans i ett befintligt arbetsflöde med den tjänst för avprenumeration som skapades i Campaign v7. Mer information och fullständiga instruktioner om arbetsflöden för Campaign Standard finns i det här [dokumentet](../../workflow/using/about-workflows.md).
 
 >[!NOTE]
 >
 >Be din konsult konfigurera webbprogrammet för avprenumerationstjänsten innan du följer stegen nedan.
 
-1. Klicka **[!UICONTROL Channels]** till vänster.
+1. Klicka på **[!UICONTROL Channels]** till vänster.
 1. Dra **[!UICONTROL Email delivery]** till det befintliga arbetsflödet på arbetsytan.
 
    ![](assets/acs_connect_profile_sync_07.png)
 
-1. Dubbelklicka på **[!UICONTROL Email delivery]** aktivitet och välj **[!UICONTROL Single send email]** eller **[!UICONTROL Recurring email]**. Välj alternativ och klicka på **[!UICONTROL Next]**.
-1. Klicka **[!UICONTROL Send via email]** och klicka **[!UICONTROL Next]**.
+1. Dubbelklicka på aktiviteten **[!UICONTROL Email delivery]** och välj **[!UICONTROL Single send email]** eller **[!UICONTROL Recurring email]**. Välj dina alternativ och klicka på **[!UICONTROL Next]**.
+1. Klicka på **[!UICONTROL Send via email]** och sedan på **[!UICONTROL Next]**.
 
    ![](assets/acs_connect_profile_sync_08.png)
 
-1. Ange ett namn för leveransen i dialogrutan **[!UICONTROL Label]** fält och ytterligare information vid behov. Klicka på **[!UICONTROL Next]**.
+1. Ange ett namn för leveransen i fältet **[!UICONTROL Label]** och ytterligare information om det behövs. Klicka på **[!UICONTROL Next]**.
 
    ![](assets/acs_connect_profile_sync_09.png)
 
-1. I **[!UICONTROL Subject]** anger du det ämne som ska visas i mottagarens inkorg.
-1. Klicka **[!UICONTROL Change content]** om du vill lägga till en HTML-mall.
+1. I fältet **[!UICONTROL Subject]** anger du det ämne som ska visas i mottagarens e-postinkorg.
+1. Klicka på **[!UICONTROL Change content]** om du vill lägga till en HTML-mall.
 
    ![](assets/acs_connect_profile_sync_10.png)
 
@@ -128,7 +128,7 @@ Följ stegen nedan för att lägga till en e-postleverans i ett befintligt arbet
 
    ![](assets/acs_connect_profile_sync_12.png)
 
-1. Klicka i samma innehållsområde och skriv **Länk för att avbryta prenumeration**.
+1. Klicka i samma innehållsområde och skriv **länken Avsluta prenumeration**.
 
    ![](assets/acs_connect_profile_sync_13.png)
 
@@ -150,17 +150,17 @@ Följ stegen nedan för att lägga till en e-postleverans i ett befintligt arbet
 
    ![](assets/acs_connect_profile_sync_17.png)
 
-1. Klicka **[!UICONTROL Start]** för att skicka leveransen. Ikonen för e-postleverans blinkar för att visa att den förbereds för leverans.
+1. Klicka på **[!UICONTROL Start]** för att skicka leveransen. Ikonen för e-postleverans blinkar för att visa att den förbereds för leverans.
 
    ![](assets/acs_connect_profile_sync_18.png)
 
-1. Dubbelklicka på **[!UICONTROL Email delivery]** kanal och välj **[!UICONTROL Confirm]** för att skicka e-postmeddelandet. Klicka **[!UICONTROL OK]** för att skicka meddelanden.
+1. Dubbelklicka på **[!UICONTROL Email delivery]**-kanalen och välj **[!UICONTROL Confirm]** för att skicka e-postmeddelandet. Klicka på **[!UICONTROL OK]** för att skicka meddelandena.
 
    ![](assets/acs_connect_profile_sync_19.png)
 
 ## Verifiera avprenumerationstjänsten {#verifying-the-unsubscription-service}
 
-Följ instruktionerna i [Skapa ett arbetsflöde](#creating-a-workflow) och [Skapa en leverans](#creating-a-delivery) innan du går till stegen nedan.
+Följ instruktionerna i [Skapa ett arbetsflöde](#creating-a-workflow) och [Skapa en leverans](#creating-a-delivery) innan du går vidare till stegen nedan.
 
 1. Mottagaren klickar på länken för att avbryta prenumerationen i e-postleveransen.
 
@@ -174,6 +174,6 @@ Följ instruktionerna i [Skapa ett arbetsflöde](#creating-a-workflow) och [Skap
 
    ![](assets/acs_connect_profile_sync_22.png)
 
-1. Gå till Campaign Standarden och öppna profilinformationen för mottagaren. Bekräfta att en kryssruta visas bredvid **[!UICONTROL No longer contact (by any channel)]**. Mer information om var du hittar profiler i Campaign Standarden finns i [Navigeringsgrunder](https://experienceleague.adobe.com/docs/campaign-standard/using/getting-started/discovering-the-interface/interface-description.html?lang=sv).
+1. Gå till Campaign Standarden och öppna profilinformationen för mottagaren. Bekräfta att en kryssruta visas bredvid **[!UICONTROL No longer contact (by any channel)]**. Mer information om var du kan hitta profiler i Campaign Standarden finns i [Navigeringsgrunder](https://experienceleague.adobe.com/docs/campaign-standard/using/getting-started/discovering-the-interface/interface-description.html?lang=sv).
 
    ![](assets/acs_connect_profile_sync_23.png)

@@ -21,7 +21,7 @@ En JavaScript-mall är ett HTML- eller textdokument som innehåller JavaScript-k
 
 ### Identifiering av en JavaScript-mall {#identification-of-a-javascript-template}
 
-En JavaScript-mall identifieras av sitt namn och namnutrymme på samma sätt som scheman och formulär. Vi rekommenderar dock att du lägger till **.js** till mallnamnet.
+En JavaScript-mall identifieras av sitt namn och namnutrymme på samma sätt som scheman och formulär. Vi rekommenderar dock att du lägger till alternativet **.js** i mallnamnet.
 
 ### Struktur för en JavaScript-mall {#structure-of-a-javascript-template}
 
@@ -43,10 +43,10 @@ Exempel på en JavaScript HTML-formateringsmall som baseras på &quot;cus:book&q
 
 De olika JavaScript-direktiven visas i följande format:
 
-* Sammanfoga fält: visar innehållet i data med **`<%= <source> %>`** syntax där `<source>`är källfältet för de data som ska visas.
-* Instruktionsblock: kör en serie JavaScript-instruktioner som finns mellan &lt;% och %>-taggarna.
+* Sammanfoga fält: visar innehållet i data med syntaxen **`<%= <source> %>`** där `<source>` är källfältet för de data som ska visas.
+* Instruktionsblock: kör en serie JavaScript-instruktioner som finns mellan taggarna &lt;% och %>.
 
-The **innehåll** -objektet representerar huvudelementet i XML-indatadokumentet.
+Objektet **content** representerar huvudelementet i XML-indatadokumentet.
 
 I följande exempel visas innehållet i namnet book name:
 
@@ -54,7 +54,7 @@ I följande exempel visas innehållet i namnet book name:
 <h1><%= content.@name %></h1>
 ```
 
-Följande kod itererar på `<chapter>` samlingselement:
+Följande kod itererar på samlingselementet `<chapter>`:
 
 ```
 <% for each(var chapter in content.chapter) { %>
@@ -62,20 +62,20 @@ Följande kod itererar på `<chapter>` samlingselement:
 <% }%>
 ```
 
-Innehållets attribut och element representeras som JavaScript-objekt och följer källdokumentets struktur.
+Innehållets attribut och element representeras som JavaScript-objekt och källdokumentets struktur respekteras.
 
 **Exempel**:
 
-* **innehåll.@name**: hämtar värdet för huvudelementets name-attribut
-* **innehåll.@`['name']`**: identisk med **innehåll.@name** syntax
-* **content.kapitel.length**: returnerar antalet element på `<chapter` samlingselement
-* **content.kapitel`[0]`.@name**: hämtar namnet på den första `<chapter>` element
-* **chapter.name()**: returnerar namnet på `<chapter>` element
+* **innehåll.@name**: hämtar värdet för attributet &quot;name&quot; för huvudelementet
+* **innehåll.@`['name']`**: identiskt med **innehållet.Syntax för @name**
+* **content.chapter.length**: returnerar antalet element i samlingselementet `<chapter`
+* **content.chapter`[0]`.@name**: hämtar namnet på det första `<chapter>`-elementet
+* **chapter.name()**: returnerar namnet på elementet `<chapter>`
 * **chapter.parent().name()**: returnerar namnet på det överordnade elementet för `<chapter>`
 
 >[!CAUTION]
 >
->Eftersom tecknet &#39;-&#39; är reserverat i JavaScript-språket måste alla attribut och element som innehåller det här tecknet återställas via `['<field>']` syntax.
+>Eftersom tecknet &#39;-&#39; är reserverat för JavaScript-språk måste alla attribut och element som innehåller det här tecknet återställas med syntaxen `['<field>']`.
 >
 >Till exempel: `content.@['offer-id']`.
 
@@ -157,9 +157,9 @@ Exempel:
 
 ### Inkludera en JavaScript-mall {#including-a-javascript-template}
 
-Du kan skapa ett bibliotek med funktioner eller variabler för senare bruk. Om du vill göra det importerar du JavaScript-mallen med **eval** funktion. På så sätt kan du förbättra kontexter med ytterligare funktioner som deklarerats i andra JavaScript-mallar.
+Du kan skapa ett bibliotek med funktioner eller variabler för senare bruk. Om du vill göra det importerar du JavaScript-mallen med funktionen **eval**. På så sätt kan du förbättra kontexter med ytterligare funktioner som deklarerats i andra JavaScript-mallar.
 
-**Exempel**: importerar **common.jsp** mall.
+**Exempel**: importera mallen **common.jsp**.
 
 ```
 <% eval(xtk.javascript.get("cus:common.js").data);  %>
@@ -230,7 +230,7 @@ I det här exemplet beskrivs följande steg:
    </srcSchema>
    ```
 
-1. Skapa den länkade **[!UICONTROL Content management]** textform (**neo:news**)
+1. Skapa det länkade **[!UICONTROL Content management]**-typformuläret (**neo:news**)
 
    ```
    <form _cs="News (neo)" entitySchema="xtk:form"  img="xtk:form.png" label="News"  name="news" namespace="neo" type="contentForm" xtkschema="xtk:form">
@@ -374,9 +374,9 @@ Omformningen beskrivs i sin tur i XML i ett dokument som kallas formatmall.
 
 ### Identifiera en formatmall {#identifying-a-stylesheet}
 
-En formatmall identifieras av sitt namn och namnutrymme, precis som scheman och formulär. Vi rekommenderar dock att du lägger till **.xsl** tillägg till formatmallens namn.
+En formatmall identifieras av sitt namn och namnutrymme, precis som scheman och formulär. Vi rekommenderar dock att du lägger till tillägget **.xsl** i formatmallens namn.
 
-Identifieringsnyckeln för en formatmall är en sträng som består av namnutrymmet och namnet avgränsat med ett kolon, till exempel: **cus:book.xsl**.
+Identifieringsnyckeln för en formatmall är en sträng som formas av namnutrymmet och namnet som avgränsas av ett kolon, till exempel: **cus:book.xsl**.
 
 ### Struktur för en formatmall {#structure-of-a-stylesheet}
 
@@ -408,16 +408,16 @@ En formatmall är ett XML-dokument som följer följande regler:
 
 * attributvärdena ligger mellan citattecken,
 * ett element måste ha en öppningsmarkör och en slutmarkör,
-* ersätt tecknen &#39;&lt;&#39; eller &#39;&amp;&#39; med **&#39;&lt;&#39;** eller **&#39;&amp;&#39;** enheter,
-* varje XSL-element måste använda **xsl** namnutrymme.
+* ersätta tecknen &#39;&lt;&#39; eller &#39;&amp;&#39; med entiteterna **&#39;&lt;&#39;** eller **&#39;&amp;&#39;**,
+* varje XSL-element måste använda namnutrymmet **xsl**.
 
-En formatmall måste börja med XSL-rotelementets markör **`<xsl:stylesheet>`** och avsluta med **`</xsl:stylesheet>`** markör. XSL-namnutrymmet måste definieras i öppningsmarkören enligt följande:
+En formatmall måste börja med XSL-rotelementmarkören **`<xsl:stylesheet>`** och sluta med **`</xsl:stylesheet>`**-markören. XSL-namnutrymmet måste definieras i öppningsmarkören enligt följande:
 
 ```
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="1.0">
 ```
 
-The **`<xsl:output>`** -element anger formatet för det dokument som genereras. Ange önskad teckenuppsättning och utdataformat.
+Elementet **`<xsl:output>`** anger formatet för det dokument som genereras. Ange önskad teckenuppsättning och utdataformat.
 
 ```
 <xsl:output encoding="ISO-8859-1" method="html"/>
@@ -442,7 +442,7 @@ Följande instruktioner beskriver formatmallens konfiguration för formateringen
 </xsl:template>
 ```
 
-Som standard söker XSLT-processorn efter **mall** som gäller för rot- eller huvudnoden i XML-indatadokumentet. Byggandet av utdatadokumentet börjar med det här **mall**.
+Som standard söker XSLT-processorn efter **mallen** som gäller för rot- eller huvudnoden i XML-indatadokumentet. Byggandet av utdatadokumentet börjar med den här **mallen**.
 
 I vårt exempel genereras en HTML-sida från &quot;cus:book&quot;-schemat genom att bokens namn och listan med kapitel visas.
 
@@ -452,9 +452,9 @@ I vårt exempel genereras en HTML-sida från &quot;cus:book&quot;-schemat genom 
 
 ### Visa HTML/XML {#displaying-html-xml}
 
-Visa en **html** fält, använd **disable-output-escape=&quot;yes&quot;** från **`<xsl:value-of>`** -direktivet. På så sätt kan du undvika att ersätta tecken med deras XML-enhet (till exempel &lt; med &lt;).
+Om du vill visa ett **html**-fält använder du alternativet **disable-output-escape=&quot;yes&quot;** från direktivet **`<xsl:value-of>`**. På så sätt kan du undvika att ersätta tecken med deras XML-enhet (till exempel &lt; med &lt;).
 
-The **`<xsl:text>`** -direktivet med **disable-output-escape=&quot;yes&quot;** gör att du kan infoga JavaScript-taggar för anpassningsfält eller villkorstester.
+Med direktivet **`<xsl:text>`** med alternativet **disable-output-escape=&quot;yes&quot;** kan du infoga JavaScript-taggar för anpassningsfält eller villkorstester.
 
 Exempel:
 
@@ -464,13 +464,13 @@ Exempel:
   <xsl:value-of select="summary" disable-output-escaping="yes"/>
   ```
 
-* Infoga anpassningsfältet **&lt;%= mottagare.email %>**:
+* Infogar anpassningsfältet **&lt;%= mottagare.e-post %>**:
 
   ```
   <xsl:text disable-output-escaping="yes"><%= recipient.email %></xsl:text>
   ```
 
-* Lägga till villkorstestet **&lt;% if (mottagare.språk == &#39;en&#39;) `{` %>**:
+* Lägger till villkorstestet **&lt;% if (mottagare.språk == &#39;en&#39;) `{` %>**:
 
   ```
   <xsl:text disable-output-escaping="yes"><% if (recipient.language == 'en') { %></xsl:text>
@@ -478,11 +478,11 @@ Exempel:
 
 ### Inkludera formatmallar {#including-stylesheets}
 
-Du kan skapa ett bibliotek med mallar eller variabler som ska delas mellan flera formatmallar. The &quot;longMonth&quot; **mall**(se ovan) är ett typiskt exempel på fördelarna med att fjärrsöka efter en mall i en formatmall så att den kan återanvändas senare.
+Du kan skapa ett bibliotek med mallar eller variabler som ska delas mellan flera formatmallar. Mallen **longMonth**, som presenteras ovan, är ett typiskt exempel på fördelen med att fjärrsöka efter en mall i en formatmall så att den kan återanvändas senare.
 
-The **`<xsl:include>`** -direktivet anger namnet på den formatmall som ska inkluderas i dokumentet.
+Direktivet **`<xsl:include>`** anger namnet på den formatmall som ska inkluderas i dokumentet.
 
-**Exempel**: inklusive formatmallen&quot;common.xsl&quot;.
+**Exempel**: inkluderar formatmallen&quot;common.xsl&quot;.
 
 ```
 <? xml version="1.0" encoding="ISO-8859-1" ?>
@@ -517,16 +517,16 @@ Om du vill generera en förhandsgranskning av utdatadokumentet markerar du en in
 
 De bilder som anges i utdatadokumentet för HTML kan refereras med absoluta eller relativa referenser.
 
-Med Relativ referens kan du ange webbadressen till servern som innehåller bilderna i **NcmRessourcesDir** och **NcmRessourcesDirPreview** alternativ. Dessa alternativ innehåller platsen för bilder som ska publiceras och förhandsgranskas i Adobe Campaign klientkonsol.
+Med Relativ referens kan du ange URL-adressen till servern som innehåller bilderna i alternativen **NcmRessourcesDir** och **NcmRessourcesDirPreview** . Dessa alternativ innehåller platsen för bilder som ska publiceras och förhandsgranskas i Adobe Campaign klientkonsol.
 
-De här två alternativen är tillgängliga via alternativhanteringsskärmen i dialogrutan **[!UICONTROL Administration > Platform > Options]** mapp.
+De här två alternativen är tillgängliga via alternativhanteringsskärmen i mappen **[!UICONTROL Administration > Platform > Options]**.
 
 **Exempel**:
 
 * NcmResourcesDir = &quot;https://server/images/&quot;
 * NcmResourcesDirPreview = &quot;x:/images/&quot;
 
-Vid bearbetning av formatmallar **_resPath** -attributet på huvudelementet i XML-indatadokumentet fylls automatiskt i med ett eller flera av alternativen beroende på sammanhanget (förhandsgranskning eller publicering).
+Under formatmallsbearbetningen fylls attributet **_resPath** i huvudelementet i XML-indatadokumentet automatiskt i med ett eller flera av alternativen beroende på sammanhanget (förhandsgranskning eller publikation).
 
 Exempel på hur du använder bildplaceringsalternativet och dess användning med en bild:
 
@@ -560,27 +560,27 @@ I formuläret läggs fältet för att välja bilden till med följande syntax:
 
 >[!NOTE]
 >
->Om du vill ha mer **[!UICONTROL Public resources]** och hur du konfigurerar och använder dem, se [det här avsnittet](../../installation/using/deploying-an-instance.md#managing-public-resources).
+>Mer information om **[!UICONTROL Public resources]** och hur du konfigurerar och använder dem finns i [det här avsnittet](../../installation/using/deploying-an-instance.md#managing-public-resources).
 
 ## Datumvisning {#date-display}
 
-I XML-indatadokumentet sparas datumen i ett internt XML-format: **`YYYY/MM/DD HH:MM:SS`** (exempel `2018/10/01 12:23:30`).
+I XML-indatadokumentet lagras datumen i det interna XML-formatet: **`YYYY/MM/DD HH:MM:SS`** (exempel: `2018/10/01 12:23:30`).
 
 Adobe Campaign tillhandahåller datumformateringsfunktioner för JavaScript-mallar och XSL-formatmallar som beskrivs nedan.
 
-### JavaScript-datumformatering {#javascript-date-formatting}
+### JavaScript datumformatering {#javascript-date-formatting}
 
-För att visa ett datum i det önskade formatet innehåller Adobe Campaign **formatDate** funktion som tar innehållet i datumet och en sträng som anger utdataformatet med följande syntax: **%4Y/%2M/%2D %2H%2N%2S**
+För att visa ett datum i det önskade formatet tillhandahåller Adobe Campaign funktionen **formatDate** som tar datuminnehållet som indata och en sträng som anger utdataformatet med följande syntax: **%4Y/%2M/%2D %2H%2N%2S**
 
 Exempel:
 
-* Visa datumet i **31/10/2018** format:
+* Visa datumet i formatet **31/10/2018**:
 
   ```
    <%= formatDate(content.@date, "%2D/%2M/%4Y") %>
   ```
 
-* Visa datumet i **Juli 2018** format:
+* Visa datumet i formatet **juli 2018**:
 
   ```
   <%
@@ -601,17 +601,17 @@ Exempel:
 
 ### XSL-datumformatering {#xsl-date-formatting}
 
-Det finns ingen standardfunktion för datumhantering i XSLT-syntax. För att visa ett datum i det önskade formatet tillhandahåller Adobe Campaign den externa funktionen **date-format**. Den här funktionen tar innehållet i datumet som indata och en sträng som anger utdataformatet med följande syntax: **%4Y/%2M/%2D %2H%2N%2S**
+Det finns ingen standardfunktion för datumhantering i XSLT-syntax. Om du vill visa ett datum i det önskade formatet tillhandahåller Adobe Campaign den externa funktionen **date-format**. Den här funktionen tar innehållet från datumet som indata och en sträng som anger utdataformatet med följande syntax: **%4Y/%2M/%2D %2H%2N%2S**
 
 Exempel:
 
-* Visa datumet i **01/10/2018** format:
+* Så här visar du datumet i formatet **01/10/2018**:
 
   ```
   <xsl:value-of select="external:date-format(@date, '%2D/%2M/%4Y')"/>
   ```
 
-* Visa datumet i **Juli 2018** format:
+* Så här visar du datumet i formatet **juli 2018**:
 
   ```
   <!-- Returns the month in the form of a string with the month number as input -->

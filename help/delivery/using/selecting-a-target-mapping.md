@@ -15,7 +15,7 @@ ht-degree: 9%
 
 # Välj en målmappning{#selecting-a-target-mapping}
 
-Som standard är målet för leveransmallar **[!UICONTROL Recipients]**. Målmappningen använder därför fälten i **nms:mottagare** tabell. Adobe Campaign erbjuder andra målmappningar för leveranser som kan användas utifrån dina behov.
+Som standard är leveransmallar avsedda för **[!UICONTROL Recipients]**. Målmappningen använder därför fälten i tabellen **nms:receive**. Adobe Campaign erbjuder andra målmappningar för leveranser som kan användas utifrån dina behov.
 
 ![](assets/delivery_select_mapping.png)
 
@@ -27,7 +27,7 @@ Mappningarna är följande:
 | Besökare | Leverera till besökare vars profiler har samlats in via hänskjutning (viral marknadsföring) eller via sociala nätverk (Facebook, X - tidigare Twitter), till exempel. | mns:besökare |
 | Prenumerationer | Leverera till mottagare som prenumererar på en informationstjänst som ett nyhetsbrev | nms:prenumeration |
 | Prenumerationer på besökare | Skicka till besökare som prenumererar på en informationstjänst | nms:visitorSub |
-| Tjänst | Publicera till ett X-konto eller en Facebook-sida | nms:service |
+| Tjänst | Publish till ett X-konto eller en Facebook-sida | nms:service |
 | Operatorer | Leverera till Adobe Campaign | nms:operator |
 | Extern fil | Leverera via en fil som innehåller all information som behövs för leveransen | Inget länkat schema, inget mål har angetts |
 

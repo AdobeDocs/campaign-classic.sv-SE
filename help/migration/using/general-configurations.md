@@ -33,21 +33,21 @@ Dessutom:
 
 I v6.02 var läget &quot;multi time zone&quot; bara tillgängligt för PostgreSQL-databasmotorer. Det erbjuds nu oavsett vilken typ av databasmotor som används. Vi rekommenderar att du omvandlar din bas till en&quot;multi-timezone&quot;-bas.
 
-Om du vill använda TIMESTAMP MED TIMEZONE-läge måste du även lägga till **-userTimestamptz:1** till kommandoraden för efteruppgradering.
+Om du vill använda TIMESTAMP MED TIMEZONE-läge måste du även lägga till alternativet **-userTimestamptz:1** på kommandoraden efter uppgradering.
 
 >[!IMPORTANT]
 >
->Om **-usetimestamptz:1** parametern används med en inkompatibel databasmotor, databasen kommer att vara skadad och du måste återställa en säkerhetskopia av databasen och köra kommandot ovan igen.
+>Om parametern **-usetimestamptz:1** används med en inkompatibel databasmotor är databasen skadad och du måste återställa en säkerhetskopia av databasen och köra kommandot ovan igen.
 
 >[!NOTE]
 >
->Det går att ändra tidszonen efter migrering via konsolen (**[!UICONTROL Administration > Platform > Options > WdbcTimeZone]** nod).
+>Det går att ändra tidszonen efter migrering via konsolen (**[!UICONTROL Administration > Platform > Options > WdbcTimeZone]**-noden).
 >
 >Mer information om hantering av tidszoner finns i [det här avsnittet](../../installation/using/time-zone-management.md).
 
 ### Oracle {#oracle}
 
-Om du får en **ORA 01805** fel under efteruppgradering innebär det att Oraclets tidszonsfiler mellan programservern och databasservern inte är synkroniserade. Så här synkroniserar du dem igen:
+Om du får ett **ORA 01805**-fel under efteruppgraderingen innebär det att Oraclets tidszonsfiler mellan programservern och databasservern inte är synkroniserade. Så här synkroniserar du dem igen:
 
 1. Kör följande kommando för att identifiera tidszonsfilen som används:
 
@@ -55,7 +55,7 @@ Om du får en **ORA 01805** fel under efteruppgradering innebär det att Oraclet
    select * from v$timezone_file
    ```
 
-   Tidszonsfiler finns vanligtvis i **ORACLE_HOME/oracore/zoneinfo/** mapp.
+   Tidszonsfiler finns vanligtvis i mappen **ORACLE_HOME/oracore/zoneinfo/**.
 
 1. Kontrollera att tidszonsfilerna är identiska på båda servrarna.
 
@@ -71,7 +71,7 @@ Så här kontrollerar du om båda sidorna finns i samma tidszoner:
    genezi -v
    ```
 
-   genezi är en binär fil som finns i **$ORACLE_HOME/bin** databas.
+   genezi är en binär fil som finns i databasen **$ORACLE_HOME/bin**.
 
 1. Kontrollera versionen av tidszonsfilen på serversidan genom att köra följande kommando:
 
@@ -79,7 +79,7 @@ Så här kontrollerar du om båda sidorna finns i samma tidszoner:
    select * from v$timezone_file
    ```
 
-1. Om du vill ändra tidszonsfilen på klientsidan använder du **ORA_TZFILE** miljövariabel.
+1. Om du vill ändra tidszonsfilen på klientsidan använder du miljövariabeln **ORA_TZFILE** .
 
 ## Säkerhet {#security}
 
@@ -93,13 +93,13 @@ Adobe Campaign v7 innehåller konceptet **säkerhetszoner**. Varje användare m�
 
 **Före migreringen** ber du nätverksadministratören att hjälpa dig att definiera de säkerhetszoner som ska aktiveras efter migreringen.
 
-**Efter uppgraderingen** (innan servern startar om) måste du konfigurera säkerhetszonerna.
+**Efter efteruppgraderingen** (innan servern startas om) måste du konfigurera säkerhetszonerna.
 
 Säkerhetszonskonfigurationen finns i [det här avsnittet](../../installation/using/security-zones.md).
 
 ### Lösenord {#user-passwords}
 
-In v7, **internal** och **admin** -operatoranslutningen måste skyddas av ett lösenord. Vi rekommenderar starkt att du tilldelar lösenord till dessa konton och alla operatörskonton, **före migrering**. Om du inte har angett något lösenord för **internal** kommer du inte att kunna ansluta. Tilldela ett lösenord till **internal** anger du följande kommando:
+I v7 måste operatoranslutningen **internal** och **admin** skyddas av ett lösenord. Vi rekommenderar att du tilldelar lösenord till dessa konton och alla operatörskonton, **före migrering**. Om du inte har angett något lösenord för **internal** kan du inte ansluta. Om du vill tilldela ett lösenord till **internal** anger du följande kommando:
 
 ```
 nlserver config -internalpassword
@@ -107,19 +107,19 @@ nlserver config -internalpassword
 
 >[!IMPORTANT]
 >
->The **internal** lösenordet måste vara identiskt för alla spårningsservrar. Mer information finns i [det här avsnittet](../../installation/using/configuring-campaign-server.md#internal-identifier) och [det här avsnittet](../../platform/using/access-management.md).
+>Lösenordet **internal** måste vara identiskt för alla spårningsservrar. Mer information finns i [det här avsnittet](../../installation/using/configuring-campaign-server.md#internal-identifier) och [det här avsnittet](../../platform/using/access-management.md).
 
 ### Nya funktioner i v7 {#new-features-in-v7}
 
-* Användare utan behörighet kan inte längre ansluta till Adobe Campaign. Deras behörigheter måste läggas till manuellt, till exempel genom att skapa en behörighet som kallas **koppla**.
+* Användare utan behörighet kan inte längre ansluta till Adobe Campaign. Deras behörigheter måste läggas till manuellt, till exempel genom att skapa en behörighet med namnet **connect**.
 
   Användare som påverkas av den här ändringen identifieras och visas under efteruppgraderingen.
 
 * Spårning fungerar inte längre om lösenordet är tomt. Om så är fallet visas ett felmeddelande som talar om det och ber dig konfigurera om det.
-* Lösenord sparas inte längre i **xtk:sessionInfo** schema.
-* Administrationsbehörigheter krävs nu för att använda **`xtk:builder:EvaluateJavaScript`** och **`xtk:builder:EvaluateJavaScriptTemplate`** funktioner.
+* Användarlösenord lagras inte längre i schemat **xtk:sessionInfo**.
+* Administrationsbehörigheter krävs nu för att använda funktionerna **`xtk:builder:EvaluateJavaScript`** och **`xtk:builder:EvaluateJavaScriptTemplate`**.
 
-Vissa färdiga scheman har ändrats och är nu som standard bara tillgängliga med skrivåtkomst för operatorer med **admin** behörighet:
+Vissa färdiga scheman har ändrats och är nu som standard bara tillgängliga med skrivåtkomst för operatorer med behörigheten **admin**:
 
 * ncm:publicera
 * nl:övervakning
@@ -154,7 +154,7 @@ Vissa färdiga scheman har ändrats och är nu som standard bara tillgängliga m
 
 ### Sessiontoken-parameter {#sessiontoken-parameter}
 
-In v5, the **sessiontoken** fungerar på båda klientsidorna (lista med översiktstypsskärmar, ländredigerare osv.) och serversidan (webbprogram, rapporter, jsp, jssp, osv.). I v7 fungerar den bara på serversidan. Om du vill återgå till full funktionalitet som i v5 måste du ändra länkarna med den här parametern och skicka via anslutningssidan:
+I v5 fungerade parametern **sessiontoken** på båda klientsidorna (lista med översiktstypsskärmar, länkredigerare osv.) och serversidan (webbprogram, rapporter, jsp, jssp, osv.). I v7 fungerar den bara på serversidan. Om du vill återgå till full funktionalitet som i v5 måste du ändra länkarna med den här parametern och skicka via anslutningssidan:
 
 Länkexempel:
 
@@ -170,11 +170,11 @@ Ny länk med anslutningssidan:
 
 >[!IMPORTANT]
 >
->Om du använder en operator som är länkad till en betrodd IP-mask, kontrollerar du att den har de lägsta rättigheterna och att den finns i en säkerhetszon i **sessionTokenOnly** läge.
+>Om du använder en operator som är länkad till en betrodd IP-mask, kontrollerar du att den har de lägsta rättigheterna och att den finns i en säkerhetszon i läget **sessionTokenOnly**.
 
 ### SQL-funktioner {#sql-functions}
 
-Okända SQL-funktionsanrop skickas inte längre naturligt till servern. Alla SQL-funktioner måste läggas till i **xtk:funcList** schema (mer information om detta finns i [det här avsnittet](../../configuration/using/adding-additional-sql-functions.md)). När du migrerar läggs ett alternativ till under efteruppgraderingen som gör att du kan bibehålla kompatibiliteten med gamla odeklarerade SQL-funktioner. Om du vill fortsätta använda dessa funktioner kontrollerar du att **XtkPassUnknownSQLFunactionsToRDBMS** finns definierade på **[!UICONTROL Administration > Platform > Options]** nodnivå.
+Okända SQL-funktionsanrop skickas inte längre naturligt till servern. För närvarande måste alla SQL-funktioner läggas till i schemat **xtk:funcList** (mer information finns i [det här avsnittet](../../configuration/using/adding-additional-sql-functions.md)). När du migrerar läggs ett alternativ till under efteruppgraderingen som gör att du kan bibehålla kompatibiliteten med gamla odeklarerade SQL-funktioner. Om du vill fortsätta använda de här funktionerna kontrollerar du att alternativet **XtkPassUnknownSQLFunactionsToRDBMS** verkligen är definierat på nodnivån **[!UICONTROL Administration > Platform > Options]**.
 
 >[!IMPORTANT]
 >
@@ -182,9 +182,9 @@ Okända SQL-funktionsanrop skickas inte längre naturligt till servern. Alla SQL
 
 ### JSSP {#jssp}
 
-Om du vill tillåta åtkomst till vissa sidor via HTTP-protokollet (inte HTTPS), i dina webbprogram, till exempel, oavsett vilken konfiguration som utförs i säkerhetszonerna, måste du ange **httpAllowed=&quot;true&quot;** i motsvarande reläregel.
+Om du vill tillåta åtkomst till vissa sidor via HTTP-protokollet (inte HTTPS), i dina webbprogram, till exempel, oavsett vilken konfiguration som utförs i säkerhetszonerna, måste du ange parametern **httpAllowed=&quot;true&quot;** i motsvarande reläregel.
 
-Om du använder anonyma JSSP:er måste du lägga till **httpAllowed=&quot;true&quot;** parameter i en reläregel för din JSSP (**[!UICONTROL serverConf.xml]** fil):
+Om du använder anonyma JSSP:er måste du lägga till parametern **httpAllowed=&quot;true&quot;** i en reläregel för JSSP-filen (**[!UICONTROL serverConf.xml]** fil):
 
 Exempel:
 
@@ -199,9 +199,9 @@ Exempel:
 
 Adobe Campaign v7 innehåller en nyare JavaScript-tolk. Uppdateringen kan dock leda till att vissa skript inte fungerar som de ska. Eftersom den tidigare motorn var mer flexibel skulle vissa syntaxer fungera, vilket inte längre är fallet med den nya versionen av motorn.
 
-The **[!UICONTROL myObject.@attribute]** syntaxen är nu endast giltig för XML-objekt. Den här syntaxen kan användas för att personalisera leveranser och innehållshantering. Om du använde den här typen av syntax för ett objekt som inte är XML kommer personaliseringsfunktionerna inte längre att fungera.
+Syntaxen **[!UICONTROL myObject.@attribute]** är nu bara giltig för XML-objekt. Den här syntaxen kan användas för att personalisera leveranser och innehållshantering. Om du använde den här typen av syntax för ett objekt som inte är XML kommer personaliseringsfunktionerna inte längre att fungera.
 
-Syntaxen är nu för alla andra objekttyper **[!UICONTROL myObject`[`&quot;attribute&quot;`]`]**. Ett icke-XML-objekt som använder följande syntax: **[!UICONTROL employee.@sn]** måste nu följande syntax användas: **[!UICONTROL employee`[`&quot;sn&quot;`]`]**.
+För alla andra objekttyper är syntaxen nu **[!UICONTROL myObject`[`&quot;attribute&quot;`]`]**. Ett icke-XML-objekt som använder följande syntax: **[!UICONTROL employee.@sn]** måste nu använda följande syntax: **[!UICONTROL employee`[`&quot;sn&quot;`]`]**.
 
 * Tidigare syntax:
 
@@ -251,21 +251,21 @@ Du kan inte längre använda ett XML-attribut som tabellnyckel.
 
 För att stärka instanssäkerheten har en ny syntax introducerats i Adobe Campaign v7 som ersätter syntaxen som baseras på SQLData. Om du använder dessa kodelement med den här syntaxen måste du ändra dem. De viktigaste faktorer som berörs är
 
-* Filtrera efter underfråga: den nya syntaxen baseras på `<subQuery>`  element för att definiera en underfråga
+* Filtrera efter underfråga: den nya syntaxen baseras på elementet `<subQuery>` för att definiera en underfråga
 * Aggregat: den nya syntaxen är &quot;aggregeringsfunktion(samling)&quot;
 * Filtrera efter join: den nya syntaxen är `[schemaName:alias:xPath]`
 
 Schemat queryDef (xtk:queryDef) har ändrats:
 
-* en ny `<subQuery>`  -elementet är tillgängligt för att ersätta SELECT som ingår i SQLData
+* det finns ett nytt `<subQuery>`-element som kan ersätta SELECT som ingår i SQLData
 * två nya värden, &quot;IN&quot; och &quot;NOT IN&quot;, introduceras för attributet @setOperator
-* en ny `<where>`  -element, som är underordnat `<node>` element: gör att du kan göra&quot;delmarkeringar&quot; i SELECT
+* ett nytt `<where>`-element, som är underordnat elementet `<node>`: det gör att du kan göra delmarkeringar i SELECT
 
 När ett &quot;@expr&quot;-attribut används kan det finnas SQLData. Du kan söka efter följande termer: &quot;SQLData&quot;, &quot;aliasSqlTable&quot;, &quot;sql&quot;.
 
-Adobe Campaign v7-instanser skyddas som standard. Säkerhet anges i definitioner av säkerhetszoner i **[!UICONTROL serverConf.xml]** fil: **allowSQLInjection** attribut hanterar SQL-syntaxsäkerheten.
+Adobe Campaign v7-instanser skyddas som standard. Säkerhet anges som definitioner av säkerhetszoner i filen **[!UICONTROL serverConf.xml]**: attributet **allowSQLInjection** hanterar SQL-syntaxsäkerheten.
 
-Om ett SQLData-fel inträffar under efteruppgraderingen måste du ändra det här attributet så att SQLData-baserade syntaxer tillfälligt tillåts, så att du kan skriva om koden. För att göra detta måste följande alternativ ändras i **serverConf.xml** fil:
+Om ett SQLData-fel inträffar under efteruppgraderingen måste du ändra det här attributet så att SQLData-baserade syntaxer tillfälligt tillåts, så att du kan skriva om koden. För att göra detta måste följande alternativ ändras i filen **serverConf.xml**:
 
 ```
 allowSQLInjection="true"
@@ -277,7 +277,7 @@ Starta därför om efteruppgraderingen med följande kommando:
 nlserver config -postupgrade -instance:<instance_name> -force
 ```
 
-Du måste konfigurera säkerhetszonerna (se [Säkerhet](#security)) och sedan återaktivera skyddet genom att ändra alternativet:
+Du måste konfigurera säkerhetszonerna (se [Säkerhet](#security)) och sedan återaktivera säkerheten genom att ändra alternativet:
 
 ```
 allowSQLInjection="false"
@@ -357,7 +357,7 @@ Sammanställningsfunktion(samling)
   >
   >Hörn utförs automatiskt för sammanställningsfunktionerna. Det är inte längre nödvändigt att ange villkoret WHERE O0.iOperationId=iOperationId.
   >
-  >Det går inte längre att använda &quot;count(&#42;)&quot;. Du måste använda &quot;countall()&quot;.
+  >Det går inte längre att använda funktionen &quot;count(&#42;)&quot;. Du måste använda &quot;countall()&quot;.
 
 * Tidigare syntax:
 
@@ -391,9 +391,9 @@ Aliaset är valfritt
   <condition expr={"[" + joinPart.destination.nodePath + "] = [" + nodeSchema.id + ":" + joinPart.source.nodePath + "]]"}/>
   ```
 
-**Tips och råd**
+**Tips och tricks**
 
-I en `<subQuery>` element, för att referera till ett&quot;fält&quot;-fält i huvudfältet `<queryDef>`   -element använder du följande syntax: `[../@field]`
+I ett `<subQuery>`-element refererar du till ett fältfält i huvudfältet `<queryDef>`   -element använder du följande syntax: `[../@field]`
 
 Exempel:
 
@@ -422,13 +422,13 @@ Exempel:
 
 Migreringen utförs efter uppgraderingen och konflikter kan uppstå i rapporter, formulär eller webbprogram. Konflikterna kan lösas från konsolen.
 
-Efter resurssynkroniseringen **postuppgradering** kan du identifiera om synkroniseringen genererar fel eller varningar.
+Efter resurssynkroniseringen kan du med kommandot **postupgrade** identifiera om synkroniseringen genererar fel eller varningar.
 
 ### Visa synkroniseringsresultatet {#view-the-synchronization-result}
 
 Synkroniseringsresultatet kan visas på två sätt:
 
-* I kommandoradsgränssnittet materialiseras fel med en trippelvinklad **>>** och synkroniseringen stoppas automatiskt. Varningar materialiseras av en dubbel skiftning **>>** och måste lösas när synkroniseringen är klar. När uppgraderingen är klar visas en sammanfattning i kommandotolken. Exempel:
+* I kommandoradsgränssnittet materialiseras fel av en trippelkniv **>>>** och synkroniseringen stoppas automatiskt. Varningar materialiseras av en dubbel skiftning **>>** och måste matchas när synkroniseringen är klar. När uppgraderingen är klar visas en sammanfattning i kommandotolken. Exempel:
 
   ```
   2013-04-09 07:48:39.749Z        00002E7A          1     info    log     =========Summary of the update==========
@@ -441,7 +441,7 @@ Synkroniseringsresultatet kan visas på två sätt:
 
   Om varningen gäller en resurskonflikt måste du åtgärda den.
 
-* The **postupgrade_`<server version number>`_tid för efteruppgradering`>`.log** filen innehåller synkroniseringsresultatet. Den är som standard tillgänglig i följande katalog: **installationskatalog/var/`<instance>`postuppgradering**. Fel och varningar anges av **fel** och **varning** attribut.
+* Filen **postupgrade_`<server version number>`_time för postupgrade`>`.log** innehåller synkroniseringsresultatet. Den är som standard tillgänglig i följande katalog: **installationskatalog/var/`<instance>`postupgrade**. Fel och varningar indikeras av attributen **error** och **warning** .
 
 ### Lösa en konflikt {#resolve-a-conflict}
 
@@ -449,14 +449,14 @@ Lösning av konflikter får endast utföras av avancerade operatorer och sådana
 
 Så här löser du en konflikt:
 
-1. Placera markören över trädstrukturen i Adobe Campaign **[!UICONTROL Administration > Configuration > Package management > Edit conflicts]**.
+1. Placera markören över **[!UICONTROL Administration > Configuration > Package management > Edit conflicts]** i trädstrukturen för Adobe Campaign.
 1. Markera den konflikt som du vill lösa i listan.
 
 Det finns tre möjliga sätt att lösa en konflikt:
 
-* **[!UICONTROL Declared as resolved]**: kräver åtgärd från operatören i förväg.
+* **[!UICONTROL Declared as resolved]**: operatoråtgärder krävs i förväg.
 * **[!UICONTROL Accept the new version]**: rekommenderas om resurserna som tillhandahålls med Adobe Campaign inte har ändrats av användaren.
-* **[!UICONTROL Keep the current version]**: betyder att uppdateringen inte godkänns.
+* **[!UICONTROL Keep the current version]**: betyder att uppdateringen nekas.
 
   >[!IMPORTANT]
   >
@@ -464,15 +464,15 @@ Det finns tre möjliga sätt att lösa en konflikt:
 
 Om du väljer att lösa konflikten manuellt gör du så här:
 
-1. Sök efter **`_conflict_ string`** för att hitta enheter med konflikter. Enheten som installerats med den nya versionen innehåller **new** argument, entiteten som matchar den tidigare versionen innehåller **kus** argument.
+1. I fönstrets nedre del söker du efter **`_conflict_ string`** för att hitta entiteterna med konflikter. Entiteten som installerats med den nya versionen innehåller argumentet **new**, entiteten som matchar den tidigare versionen innehåller argumentet **cus**.
 
    ![](assets/s_ncs_production_conflict002.png)
 
-1. Ta bort den version som du inte vill behålla. Ta bort **`_conflict_argument_ string`** för den enhet som du har.
+1. Ta bort den version som du inte vill behålla. Ta bort **`_conflict_argument_ string`** för entiteten som du håller kvar.
 
    ![](assets/s_ncs_production_conflict003.png)
 
-1. Gå till den konflikt du skulle ha löst. Klicka på **[!UICONTROL Actions]** ikon och markera **[!UICONTROL Declare as resolved]**.
+1. Gå till den konflikt du skulle ha löst. Klicka på ikonen **[!UICONTROL Actions]** och välj **[!UICONTROL Declare as resolved]**.
 1. Spara dina ändringar: konflikten är nu löst.
 
 <!--
@@ -495,7 +495,7 @@ $(XTK_INSTALL_DIR)/tomcat-X/lib/el-api.jar
 
 ### Förhandskrav {#prerequisites}
 
-**Före efteruppgraderingen** måste du ta bort alla schemareferenser från 6.02 som inte längre finns i v7.
+**Innan efteruppgraderingen** måste du ta bort alla schemareferenser från 6.02 som inte längre finns i v7.
 
 * nms:emailOfferView
 * nms:webOfferView
@@ -511,7 +511,7 @@ I v7 har erbjudandeinnehållet flyttats. I v6.02 fanns innehållet i varje repre
 >
 Om vissa leveranser med konfigurerade erbjudanden skulle skickas efter migreringen måste du ta bort och återskapa alla dessa leveranser i v7. Om du inte kan göra det visas ett kompatibilitetsläge. Det här läget rekommenderas inte eftersom du inte kommer att ha nytta av alla nya funktioner i Interaction v7. Detta är ett övergångsläge som gör att ni kan slutföra pågående kampanjer före den faktiska migreringen av 6.1. Kontakta oss om du vill ha mer information om det här läget.
 
-Ett exempel på ett rörelsescript (**interactionTo610_full_XX.js**) finns i **Migrering** i Adobe Campaign v7-mappen. Den här filen visar ett exempel på ett skript för en klient som använder en e-postrepresentation per erbjudande ( **[!UICONTROL htmlSource]** och **[!UICONTROL textSource]** fält). Innehållet som fanns i **NmsEmailOfferView** tabellen har flyttats till erbjudandetabellen.
+Ett exempel på ett flyttskript (**interactionTo610_full_XX.js**) finns i mappen **Migration** i mappen Adobe Campaign v7. Den här filen visar ett exempel på ett skript för en klient som använder en e-postrepresentation per erbjudande (fälten **[!UICONTROL htmlSource]** och **[!UICONTROL textSource]**). Innehållet som fanns i tabellen **NmsEmailOfferView** har flyttats till tabellen.
 
 >[!NOTE]
 >
@@ -589,11 +589,11 @@ logInfo("Done");
 
 Så här gör du när du har flyttat erbjudandeinnehållet om du bara har en miljö. I det här fallet tar vi &quot;ENV&quot; som exempel.
 
-1. I alla&quot;ENV&quot;-miljöer finns blanksteg. Uppdatera listan med fält som används. Till exempel för ett erbjudandeutrymme som bara använder **[!UICONTROL htmlSource]** måste du lägga till **[!UICONTROL view/htmlSource]**.
+1. I alla&quot;ENV&quot;-miljöer finns blanksteg. Uppdatera listan med fält som används. Om du till exempel har ett erbjudandeutrymme som bara använder **[!UICONTROL htmlSource]** måste du lägga till **[!UICONTROL view/htmlSource]**.
 
    ![](assets/migration_interaction_2.png)
 
-1. I **[!UICONTROL Type of Environment]** fält i **[!UICONTROL General]** flik, välja **[!UICONTROL Live]**.
+1. Välj **[!UICONTROL Live]** i fältet **[!UICONTROL Type of Environment]** på fliken **[!UICONTROL General]**.
 
    ![](assets/migration_interaction_3.png)
 
@@ -601,13 +601,13 @@ Så här gör du när du har flyttat erbjudandeinnehållet om du bara har en mil
 
    ![](assets/migration_interaction_4.png)
 
-1. Distribuera alla ENV-miljöer med blanksteg (högerklicka > **[!UICONTROL Actions > Deploy]**) och väljer miljö &quot;ENV_DESIGN&quot;.
+1. Distribuera alla ENV-miljöer med blanksteg (högerklicka > **[!UICONTROL Actions > Deploy]**) och välj miljön ENV_DESIGN.
 
    ![](assets/migration_interaction_5.png)
 
 1. Gör samma sak med alla ENV-miljöer.
 1. Aktivera alla miljöerbjudanden för&quot;ENV_DESIGN&quot; i relevanta kanaler.
-1. Testa att få ett erbjudande att publiceras. Om du inte får några problem kör du väntande uppgifter i den senaste arbetsflödesuppgiften **[!UICONTROL Offer notification]** (offerMgt) för att göra alla erbjudanden tillgängliga.
+1. Testa att få ett erbjudande att publiceras. Om du inte får några problem kör du väntande uppgifter på den senaste arbetsflödesuppgiften **[!UICONTROL Offer notification]** (offerMgt) så att alla erbjudanden blir tillgängliga.
 
    ![](assets/migration_interaction_6.png)
 
@@ -640,9 +640,9 @@ Det finns två webbprogramfamiljer:
 
 ### Identifierade webbprogram {#identified-web-applications}
 
-Precis som för rapporter ([läs mer](#reports)) måste du kontrollera och anpassa JavaScript om det behövs. Om du vill använda den blå v7-banderollen (som innehåller de blå flikarna) måste du publicera webbprogrammet igen.
+Precis som för rapporter ([läs mer](#reports)) måste du kontrollera och anpassa om du har lagt till JavaScript. Om du vill använda den blå v7-banderollen (som innehåller de blå flikarna) måste du publicera webbprogrammet igen.
 
-Anslutningsmetoderna för webbprogrammet har ändrats i v7. Om du får anslutningsproblem i dina identifierade webbprogram måste du tillfälligt aktivera **allowUserPassword** och **sessionTokenOnly** i **serverConf.xml** -fil. Ändra följande alternativvärden efter uppgraderingen:
+Anslutningsmetoderna för webbprogrammet har ändrats i v7. Om du stöter på anslutningsproblem i dina identifierade webbprogram måste du tillfälligt aktivera alternativen **allowUserPassword** och **sessionTokenOnly** i filen **serverConf.xml**. Ändra följande alternativvärden efter uppgraderingen:
 
 ```
 allowUserPassword="true"

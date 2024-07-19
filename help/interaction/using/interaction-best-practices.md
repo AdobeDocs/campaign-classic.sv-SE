@@ -67,7 +67,7 @@ När du inkluderar erbjudanden i leveranser väljs erbjudandena i allmänhet upp
 
 När du väljer erbjudanden i en anrikningsaktivitet kan du välja vilket utrymme som ska användas. Oberoende av vilket utrymme som har valts beror menyn för leveransanpassning på hur mycket utrymme som finns i leveransformuläret.
 
-I exemplet nedan är erbjudandeutrymmet som valts i leveransen **[!UICONTROL Email (Environment - Recipient)]**:
+I exemplet nedan är det erbjudandeutrymme som valts i leveransen **[!UICONTROL Email (Environment - Recipient)]**:
 
 ![](assets/Interaction-best-practices-offer-space-selected.png)
 
@@ -79,7 +79,7 @@ I exemplet nedan är återgivningsfunktionen HTML tillgänglig i listrutan efter
 
 Den här funktionen infogar kod som: `<%@ include proposition="targetData.proposition" view="rendering/html" %>`.
 
-När du markerar förslaget, är värdet för **[!UICONTROL view]** är följande:
+När du väljer förslaget blir värdet för attributet **[!UICONTROL view]** följande:
 * &quot;rendering/html&quot;: html-rendering. Det använder återgivningsfunktionen HTML.
 * &quot;offer/view/html&quot;: html-innehåll. Återgivningsfunktionen HTML används inte. Det innehåller bara fältet HTML.
 

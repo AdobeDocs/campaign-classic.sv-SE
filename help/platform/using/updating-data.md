@@ -28,7 +28,7 @@ En automatisk uppdatering kan konfigureras via ett arbetsflöde. Mer information
 
 ## Utför en massuppdatering {#performing-a-mass-update}
 
-Om du vill utföra manuella uppdateringar högerklickar du på de valda mottagarna för att använda **[!UICONTROL Actions]** kortkommandomenyn eller använd **[!UICONTROL Actions]** -ikon.
+Om du vill utföra manuella uppdateringar högerklickar du på de valda mottagarna för att använda snabbmenyn **[!UICONTROL Actions]** eller använder ikonen **[!UICONTROL Actions]** .
 
 ![](assets/s_ncs_user_action_icon.png)
 
@@ -36,23 +36,23 @@ Det finns två typer av uppdateringar: massuppdatering för en uppsättning mott
 
 ### Massuppdatering {#mass-update}
 
-För massuppdatering, använd **[!UICONTROL Action > Mass update of selected lines...]**. Guiden hjälper dig att konfigurera och köra uppdateringen.
+Använd **[!UICONTROL Action > Mass update of selected lines...]** för massuppdatering. Guiden hjälper dig att konfigurera och köra uppdateringen.
 
 Det första steget i guiden är att ange vilka fält som ska uppdateras.
 
-I den vänstra delen av guiden visas en lista med tillgängliga fält. Använd **[!UICONTROL Find]** om du vill göra en sökning i dessa fält. Tryck på **Retur** för att bläddra i listan. Fältnamnen som matchar inmatningen visas i fet stil, vilket visas nedan.
+I den vänstra delen av guiden visas en lista med tillgängliga fält. Använd fältet **[!UICONTROL Find]** för att köra en sökning i dessa fält. Tryck på **Retur** för att bläddra i listan. Fältnamnen som matchar inmatningen visas i fet stil, vilket visas nedan.
 
 Dubbelklicka på de fält som ska uppdateras för att visa dem i den högra delen av guiden.
 
 ![](assets/s_ncs_user_update_wizard01_1.png)
 
-Om ett fel uppstår använder du **[!UICONTROL Delete]** om du vill ta bort ett fält från listan med fält som ska uppdateras.
+Om ett fel inträffar använder du knappen **[!UICONTROL Delete]** för att ta bort ett fält från listan med fält som ska uppdateras.
 
 Välj eller ange de värden som ska användas för de profiler som ska uppdateras.
 
 ![](assets/s_ncs_user_update_wizard01_12.png)
 
-Klicka **[!UICONTROL Distribution of values]** om du vill visa fördelningen av värden i det markerade fältet för mottagarna i den aktuella mappen (inte bara de mottagare som påverkas av uppdateringen).
+Du kan klicka på **[!UICONTROL Distribution of values]** om du vill visa fördelningen av värden för det markerade fältet för mottagarna i den aktuella mappen (inte bara de mottagare som påverkas av uppdateringen).
 
 ![](assets/s_ncs_user_update_wizard01_2.png)
 
@@ -60,27 +60,27 @@ Du kan definiera filter för att visa värdefördelningen i det här fönstret e
 
 ![](assets/s_ncs_user_update_wizard01_3.png)
 
-Stäng fönstret och klicka **[!UICONTROL Next]** för att visa det andra uppdateringsguiden. I det här steget kan du starta uppdateringen genom att klicka på **[!UICONTROL Start]**.
+Stäng det här fönstret och klicka på **[!UICONTROL Next]** för att visa det andra uppdateringsguiden. I det här steget kan du starta uppdateringen genom att klicka på **[!UICONTROL Start]**.
 
 ![](assets/s_ncs_user_update_wizard01_4.png)
 
 Information om uppdateringskörning visas i den övre delen av guiden.
 
-The **[!UICONTROL Stop]** Med kan du avbryta uppdateringen, men vissa poster kan ha uppdaterats och om du stoppar processen kommer uppdateringarna inte att avbrytas. Förloppsindikatorn visar hur långt åtgärden har kommit.
+Med **[!UICONTROL Stop]** kan du avbryta uppdateringen, men vissa poster kan ha uppdaterats, och om du stoppar processen avbryts inte uppdateringarna. Förloppsindikatorn visar hur långt åtgärden har kommit.
 
 ### Sammanfoga data {#merge-data}
 
-Välj **[!UICONTROL Merge selected lines...]** för att starta sammanfogningen av två mottagarprofiler. Profilerna som ska sammanfogas måste vara markerade innan du väljer alternativet. Sammanfogningen konfigureras och startas med en guide.
+Välj **[!UICONTROL Merge selected lines...]** om du vill starta sammanfogningen av två mottagarprofiler. Profilerna som ska sammanfogas måste vara markerade innan du väljer alternativet. Sammanfogningen konfigureras och startas med en guide.
 
-I guiden visas de värden som ska hämtas för varje fält som har slutförts i en eller flera av källprofilerna. Om ett eller flera fält i de profiler som ska sammanfogas har olika värden visas de i **[!UICONTROL List of conflicts]** -avsnitt. Du kan sedan välja standardprofil med alternativknapparna under listan, som i följande exempel:
+I guiden visas de värden som ska hämtas för varje fält som har slutförts i en eller flera av källprofilerna. Om ett eller flera fält i de profiler som ska sammanfogas har olika värden visas de i avsnittet **[!UICONTROL List of conflicts]**. Du kan sedan välja standardprofil med alternativknapparna under listan, som i följande exempel:
 
 ![](assets/s_ncs_user_merge_wizard01_1.png)
 
-Klicka **[!UICONTROL Compute]** för att visa valfritt resultat.
+Klicka på **[!UICONTROL Compute]** om du vill visa resultatet av ditt val.
 
 ![](assets/s_ncs_user_merge_wizard01_2.png)
 
-Kontrollera **[!UICONTROL Result]** kolumner i fönstrets båda avsnitt och klicka **[!UICONTROL Finish]** för att köra sammanfogningen.
+Kontrollera **[!UICONTROL Result]**-kolumnerna i båda fönsteravsnitten och klicka på **[!UICONTROL Finish]** för att köra sammanfogningen.
 
 ## Exportera data {#exporting-data}
 
@@ -99,7 +99,7 @@ Innehållet i en lista kan exporteras. Så här konfigurerar och kör du exporte
 
 ## Prenumerera på en tjänst {#subscribing-to-a-service}
 
-I de flesta fall prenumererar mottagarna på ett nyhetsbrev via en särskild landningssida, vilket förklaras i [det här avsnittet](../../delivery/using/managing-subscriptions.md). Filtrerade mottagares profiler kan dock prenumerera på en tjänst (nyhetsbrev eller virala tjänster) manuellt. Så här gör du:
+I de flesta fall prenumererar mottagarna på ett nyhetsbrev via en dedikerad landningssida, vilket förklaras i [det här avsnittet](../../delivery/using/managing-subscriptions.md). Filtrerade mottagares profiler kan dock prenumerera på en tjänst (nyhetsbrev eller virala tjänster) manuellt. Så här gör du:
 
 1. Markera de mottagare som du vill prenumerera på och högerklicka.
 1. Välj **[!UICONTROL Actions > Subscribe selection to a service]**.
@@ -112,21 +112,21 @@ I de flesta fall prenumererar mottagarna på ett nyhetsbrev via en särskild lan
 
    >[!NOTE]
    >
-   >Med den här redigeraren kan du skapa en ny tjänst: klicka på **[!UICONTROL Create]** -knappen.
+   >Med den här redigeraren kan du skapa en ny tjänst: klicka på knappen **[!UICONTROL Create]**.
 
 1. Du kan **[!UICONTROL Send a confirmation message]** till mottagare. Innehållet i det här meddelandet kan konfigureras i det prenumerationsscenario som är länkat till den valda tjänsten.
-1. Klicka på **[!UICONTROL Start]** för att köra prenumerationsprocessen.
+1. Klicka på knappen **[!UICONTROL Start]** för att köra prenumerationsprocessen.
 
    ![](assets/s_ncs_user_selection_subscribe_service_3.png)
 
-I fönstrets övre del kan du övervaka körningsprocessen. The **[!UICONTROL Stop]** kan du stoppa processen. Mottagare som redan har bearbetats kommer dock att prenumereras.
+I fönstrets övre del kan du övervaka körningsprocessen. Med knappen **[!UICONTROL Stop]** kan du stoppa processen. Mottagare som redan har bearbetats kommer dock att prenumereras.
 
-Om du avmarkerar **[!UICONTROL Do not keep a trace of this job in the database]** kan du välja (eller skapa) den körningsmapp där informationen om processen ska lagras.
+Om du avmarkerar alternativet **[!UICONTROL Do not keep a trace of this job in the database]** kan du välja (eller skapa) körningsmappen där informationen om den här processen lagras.
 
-Om du vill kontrollera processen går du till **[!UICONTROL Subscriptions]** fliken med profilerna för de mottagare som berörs av åtgärden, eller **[!UICONTROL Subscriptions]** som öppnas via **[!UICONTROL Profiles and Targets > Services and Subscriptions]** nod.
+Om du vill kontrollera processen går du till fliken **[!UICONTROL Subscriptions]** på profilerna för mottagarna som berörs av den här åtgärden, eller till fliken **[!UICONTROL Subscriptions]** som du kommer åt via noden **[!UICONTROL Profiles and Targets > Services and Subscriptions]**.
 
 ![](assets/s_ncs_user_selection_subscribe_service_4.png)
 
 >[!NOTE]
 >
->Mer information om hur du skapar och konfigurerar informationstjänster finns i [den här sidan](../../delivery/using/managing-subscriptions.md).
+>Mer information om hur du skapar och konfigurerar informationstjänster finns på [den här sidan](../../delivery/using/managing-subscriptions.md).

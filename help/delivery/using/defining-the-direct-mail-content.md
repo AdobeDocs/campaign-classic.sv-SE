@@ -17,13 +17,13 @@ ht-degree: 10%
 
 ## Extraheringsfil {#extraction-file}
 
-Namnet på filen som innehåller extraherade data definieras i **[!UICONTROL File]** fält. Med knappen till höger om fältet kan du använda anpassningsfält för att skapa filnamnet.
+Namnet på filen som innehåller extraherade data definieras i fältet **[!UICONTROL File]**. Med knappen till höger om fältet kan du använda anpassningsfält för att skapa filnamnet.
 
-Som standard skapas extraheringsfilen och lagras på servern. Du kan spara den på datorn. Om du vill göra det går du till **[!UICONTROL Download the generated file after the analysis of the delivery]**. I det här fallet måste du ange åtkomstsökvägen till den lokala lagringskatalogen samt filnamnet.
+Som standard skapas extraheringsfilen och lagras på servern. Du kan spara den på datorn. Kontrollera **[!UICONTROL Download the generated file after the analysis of the delivery]** om du vill göra det. I det här fallet måste du ange åtkomstsökvägen till den lokala lagringskatalogen samt filnamnet.
 
 ![](assets/s_ncs_user_mail_delivery_local_file.png)
 
-För direktutskick definieras innehållet i extraheringen i **[!UICONTROL Edit the extraction file format...]** länk.
+För direktutskick definieras innehållet i extraheringen i länken **[!UICONTROL Edit the extraction file format...]**.
 
 ![](assets/s_ncs_user_mail_delivery_format_link.png)
 
@@ -35,4 +35,4 @@ Det går att infoga en personlig URL i extraheringsfilen. Mer information om det
 
 >[!NOTE]
 >
->Den här guiden innehåller de steg i exportguiden som beskrivs i [Komma igång](../../platform/using/executing-export-jobs.md) -avsnitt.
+>Den här guiden innehåller stegen i exportguiden som beskrivs i avsnittet [Komma igång](../../platform/using/executing-export-jobs.md).

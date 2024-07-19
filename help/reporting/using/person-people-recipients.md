@@ -26,7 +26,7 @@ Det här exemplet hjälper dig att förstå skillnaden mellan en person/en perso
 
 >[!NOTE]
 >
->Dessa indikatorer används i **[!UICONTROL Tracking indicators]** rapport. Mer information finns i [Spårningsindikatorer](../../reporting/using/delivery-reports.md#tracking-indicators).
+>Dessa indikatorer används i rapporten **[!UICONTROL Tracking indicators]**. Mer information finns i [Spårningsindikatorer](../../reporting/using/delivery-reports.md#tracking-indicators).
 
 Tre länkar läggs till i en leverans. Det skickas till fyra mottagare:
 
@@ -60,7 +60,7 @@ Eftersom John varken öppnade eller klickade i e-postmeddelandet visas han inte 
 
 ## Steg 2: Marie {#step-2--marie}
 
-**[!UICONTROL Marie Stuart]** öppnar e-postmeddelandet, men klickar inte på några länkar.
+**[!UICONTROL Marie Stuart]** öppnar e-postmeddelandet men klickar inte på några länkar.
 
 ![](assets/s_ncs_user_indicators_example_7.png)
 
@@ -88,9 +88,9 @@ Florians åtgärder (ett öppet och nio klick) visas i följande loggar:
 
 ![](assets/s_ncs_user_indicators_example_3bis.png)
 
-**Mottagare**: öppningen och klickningarna tilldelas samma mottagare (Florian). Eftersom den här mottagaren inte är samma som den tidigare (Marie) lägger Adobe Campaign till en ny mottagare i räkningen.
+**Mottagare**: öppna och klickningar tilldelas samma mottagare (Florian). Eftersom den här mottagaren inte är samma som den tidigare (Marie) lägger Adobe Campaign till en ny mottagare i räkningen.
 
-Folk: Eftersom den här mottagarens webbläsare accepterar cookies ser vi att samma identifierare (UUID) är tilldelad alla klickningsloggar: **`fe37a503 [...]`**. Adobe Campaign identifierar dessa klickningar som tillhör samma person. En ny person läggs till i antalet.
+Folk: Eftersom den här mottagarens webbläsare accepterar cookies ser vi att samma identifierare (UUID) har tilldelats alla klickningsloggar: **`fe37a503 [...]`**. Adobe Campaign identifierar dessa klickningar som tillhör samma person. En ny person läggs till i antalet.
 
 **Mellanliggande beräkning:**
 
@@ -109,7 +109,7 @@ Följande loggar sammanfaller med de öppna och två klick som utförts av den p
 
 ![](assets/s_ncs_user_indicators_example_12.png)
 
-**Folk**: när det gäller klickningar ser vi att samma identifierare (UUID) är tilldelad alla loggar: **`9ab648f9 [...]`**. Den här identifieraren har inte räknats än. En ny person läggs därför till i räkningen.
+**Personer**: När det gäller klickningar ser vi att samma identifierare (UUID) har tilldelats alla loggar: **`9ab648f9 [...]`**. Den här identifieraren har inte räknats än. En ny person läggs därför till i räkningen.
 
 ![](assets/s_ncs_user_indicators_example_13.png)
 
@@ -133,9 +133,9 @@ De öppna och fyra klick som Henry utför visas i följande loggar:
 
 ![](assets/s_ncs_user_indicators_example_5bis.png)
 
-**Mottagare**: öppningen och klickningarna tilldelas samma mottagare (Henry). Eftersom den här mottagaren inte har räknats ännu lägger Adobe Campaign till en mottagare i räkningen.
+**Mottagare**: Samma mottagare (Henry) tilldelas både öppna och klickade. Eftersom den här mottagaren inte har räknats ännu lägger Adobe Campaign till en mottagare i räkningen.
 
-**Folk**: Eftersom Henrys webbläsare inte accepterar cookies genereras en ny identifierare (UUID) för varje klick. Var och en av de fyra klickningarna tolkas som att de kommer från en annan person. Eftersom dessa identifierare inte har räknats än läggs de till i räkningen.
+**Folk**: Eftersom Henrys webbläsare inte accepterar cookies genereras en ny identifierare (UID) för varje klick. Var och en av de fyra klickningarna tolkas som att de kommer från en annan person. Eftersom dessa identifierare inte har räknats än läggs de till i räkningen.
 
 **Mellanliggande beräkning:**
 
@@ -162,13 +162,13 @@ Raw-reaktivitet och uppskattning av framåtriktade beräkningar görs enligt fö
 
 ![](assets/s_ncs_user_indicators_example11.png)
 
-* **[!UICONTROL Estimation of forwards]** = **B - A** (alltså 6 - 2 = 4)
-* **[!UICONTROL Raw reactivity]** = **A / C** (alltså 2 / 3 = 66,67 %)
+* **[!UICONTROL Estimation of forwards]** = **B - A** (därmed 6 - 2 = 4)
+* **[!UICONTROL Raw reactivity]** = **A / C** (alltså 2 / 3 = 66,67%)
 
 >[!NOTE]
 >
 >I följande formler:
 >
->* A representerar **[!UICONTROL Clicks]** -indikator (mottagare som klickade).
->* B representerar **[!UICONTROL Distinct clicks for the population reached]** -indikator (personer som klickade).
->* C representerar **[!UICONTROL Distinct opens for the population reached]** -indikator (mottagare som öppnat).
+>* A representerar indikatorn **[!UICONTROL Clicks]** (mottagarna som klickade).
+>* B representerar indikatorn **[!UICONTROL Distinct clicks for the population reached]** (personer som klickade).
+>* C representerar indikatorn **[!UICONTROL Distinct opens for the population reached]** (mottagarna som öppnade).

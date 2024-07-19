@@ -18,11 +18,11 @@ ht-degree: 5%
 
 Du kan översätta webbprogramsidor som skapats med Adobe Campaign Digital Content Editor (DCE).
 
-Om du väljer minst ett ytterligare språk via **[!UICONTROL Localization]** i **[!UICONTROL Properties]** för ett webbprogram blir ett nytt alternativ tillgängligt när du lägger till ett HTML-innehållsblock på en sida som redigeras med DCE.
+Om du väljer minst ett ytterligare språk via fliken **[!UICONTROL Localization]** i **[!UICONTROL Properties]** för ett webbprogram blir ett nytt alternativ tillgängligt när du lägger till ett HTML innehållsblock på en sida som redigerats med DCE.
 
 Med det här alternativet kan du ange om blockinnehållet måste översättas eller inte.
 
-Strängar som ska översättas samlas in på samma sätt som andra strängar i webbprogrammet via **[!UICONTROL Translations]** -fliken i programmet. Mer information finns på [den här sidan](translating-a-web-form.md).
+Strängar som ska översättas samlas in på samma sätt som andra strängar i webbprogrammet, via fliken **[!UICONTROL Translations]** i programmet. Mer information finns på [den här sidan](translating-a-web-form.md).
 
 Så här flaggar du strängar som ska översättas:
 
@@ -31,7 +31,7 @@ Så här flaggar du strängar som ska översättas:
    ![](assets/dce_translation_3.png)
 
 1. Markera ett HTML-block.
-1. I parameterblocket till höger visas **[!UICONTROL Localization]** kan du flagga innehållet i det markerade blocket. Som standard ska bara sidans namn översättas.
+1. I parameterblocket till höger kan du med alternativet **[!UICONTROL Localization]** flagga innehållet i det markerade blocket. Som standard ska bara sidans namn översättas.
 
    ![](assets/dce_translation_1.png)
 
@@ -50,7 +50,7 @@ Så här flaggar du strängar som ska översättas:
 
      ![](assets/dce_translation_2.png)
 
-1. När du är klar med att flagga strängarna går du tillbaka till webbprogrammet och väljer **[!UICONTROL Translations]** -fliken.
+1. När du har flaggat strängarna går du tillbaka till webbprogrammet och väljer fliken **[!UICONTROL Translations]**.
 1. Välj **[!UICONTROL Collect the strings to translate]**.  Strängarna som är flaggade i DCE läggs till i webbprogrammets strängar.
 
    >[!NOTE]
@@ -59,4 +59,4 @@ Så här flaggar du strängar som ska översättas:
 
 1. Översätt och godkänn strängarna.
 
-   Du kan sedan förhandsgranska översättningarna genom att välja önskat språk i dialogrutan **[!UICONTROL Preview]** -fliken i webbprogrammet.
+   Du kan sedan förhandsgranska översättningarna genom att välja önskat språk på fliken **[!UICONTROL Preview]** i webbprogrammet.

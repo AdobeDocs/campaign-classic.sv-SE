@@ -24,8 +24,8 @@ I det här kapitlet beskrivs de olika möjliga avancerade parametrarna i Interac
 >
 >Följande kapitel är avsett för **tekniska administratörer**.
 
-* Du kan använda ytterligare sammanhangsberoende data. Se [Ytterligare data](../../interaction/using/additional-data.md) -avsnitt.
-* Du kan förbättra programkontexten för de föreslagna erbjudandena via en inkommande kanal. För att göra detta **nms:interaktion** interaktionsschemat måste utökas. Se [Exempel på tillägg](../../interaction/using/extension-example.md) för hela proceduren.
-* Skapa en testmiljö beskrivs i [Skapa en testmiljö](../../interaction/using/creating-a-test-environment.md) -avsnitt.
-* Du kan ändra standardmotorbeteende med hjälp av krokar. Mer information finns i [Hooks](../../interaction/using/hooks.md) section
-* Slutligen finns mer information om hur du använder Interaktion med en distribuerad arkitektur i [Distribuerade arkitekturer](../../interaction/using/distributed-architectures.md) -avsnitt.
+* Du kan använda ytterligare sammanhangsberoende data. Se avsnittet [Ytterligare data](../../interaction/using/additional-data.md).
+* Du kan förbättra programkontexten för de föreslagna erbjudandena via en inkommande kanal. För att göra detta måste interaktionsschemat **nms:interaction** utökas. Mer information om den fullständiga proceduren finns i avsnittet [Exempel på tillägg](../../interaction/using/extension-example.md).
+* Det finns information om hur du skapar en testmiljö i avsnittet [Skapa en testmiljö](../../interaction/using/creating-a-test-environment.md).
+* Du kan ändra standardmotorbeteende med hjälp av krokar. Mer information finns i avsnittet [Böcker](../../interaction/using/hooks.md)
+* Slutligen beskrivs användningen av interaktion med en distribuerad arkitektur i avsnittet [Distribuerade arkitekturer](../../interaction/using/distributed-architectures.md).

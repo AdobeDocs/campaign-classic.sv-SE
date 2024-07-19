@@ -21,8 +21,8 @@ ht-degree: 10%
 
 Med Adobe Experience Platform kan du dela data mellan Campaign Classic och Adobe Real-time Customer Data Platform (RTCDP). På så sätt kan ni inrikta er på Adobe Experience Platform målgrupper i era Campaign-arbetsflöden och sedan skicka tillbaka data till Adobe Real-time Customer Data Platform som hör till dessa målgrupper, som utskick, öppningar och klick.
 
-* Med **Destinationer**, som engagerar målgrupper från Adobe Experience Platform i Campaign Classicen. På så sätt kan ni aktivera kända och okända data för era marknadsföringskampanjer.
-* Med **Källor**, exporterar Campaign Classic (t.ex. skickar, öppnar och klickar) till Adobe Experience Platform. På så sätt kan ni centralisera data som ni samlar in från olika källor till en enda plats och använda de insikter ni får av den för att göra mer.
+* Med **Destinationer** kan målgrupper från Adobe Experience Platform importeras till Campaign Classicen. På så sätt kan ni aktivera kända och okända data för era marknadsföringskampanjer.
+* Med **Källor** exporterar du Campaign Classic-data (t.ex. skickar, öppnar, klickar) till Adobe Experience Platform. På så sätt kan ni centralisera data som ni samlar in från olika källor till en enda plats och använda de insikter ni får av den för att göra mer.
 
 >[!IMPORTANT]
 >
@@ -36,7 +36,7 @@ En mer detaljerad översikt över Adobe Real-time Customer Data Platform, Destin
 
 ## Koppla samman Campaign Classic med Adobe Experience Platform
 
-För att kunna dela data mellan Adobe Experience Platform och Campaign Classic måste du först koppla Adobe Campaign som en **Mål** och ansluta din AWS S3- eller Azure-blobblagringsplats som **Källa** i Adobe Experience Platform.
+För att kunna dela data mellan Adobe Experience Platform och Campaign Classic måste du först ansluta Adobe Campaign som **mål** och ansluta din AWS S3- eller Azure-blobblagringsplats som **Source** i Adobe Experience Platform.
 
 När kopplingarna har konfigurerats kan du konfigurera en dataimport eller exportera till Campaign Classic med hjälp av arbetsflöden.
 

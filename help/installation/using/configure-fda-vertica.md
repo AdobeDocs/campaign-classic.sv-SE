@@ -1,7 +1,7 @@
 ---
 product: campaign
 title: Konfigurera åtkomst till [!DNL Vertica Analytics]
-description: Lär dig konfigurera åtkomst till [!DNL Vertica Analytics] i FDA
+description: Lär dig konfigurera åtkomst till  [!DNL Vertica Analytics]  i FDA
 feature: Installation, Federated Data Access
 audience: platform
 content-type: reference
@@ -18,18 +18,18 @@ ht-degree: 1%
 
 
 
-Använd kampanj **Åtkomst till federerade data** (FDA) om du vill bearbeta information som lagras i en extern databas. Följ stegen nedan för att konfigurera åtkomst till [!DNL Vertica Analytics].
+Använd alternativet **FDA (Federated Data Access**) i kampanjen om du vill bearbeta information som lagras i en extern databas. Följ stegen nedan för att konfigurera åtkomst till [!DNL Vertica Analytics].
 
 1. Konfigurera [!DNL Vertica Analytics] på [CentOS](#vertica-centos), [Windows](#vertica-windows) eller [Debian](#vertica-debian)
-1. Konfigurera [!DNL Vertica Analytics] [externt konto](#vertica-external) i Campaign
+1. Konfigurera det [!DNL Vertica Analytics] [externa kontot](#vertica-external) i Campaign
 
 ![](assets/snowflake_3.png)
 
 ## [!DNL Vertica Analytics] i CentOS {#vertica-centos}
 
-Konfigurera [!DNL Vertica Analytics] i CentOS följer du stegen nedan:
+Följ stegen nedan för att konfigurera [!DNL Vertica Analytics] i CentOS:
 
-1. Hämta ODBC-drivrutiner för [!DNL Vertica Analytics]. [Klicka här](https://www.vertica.com/download/vertica/client-drivers/) och ladda ned senaste Linux RPM.
+1. Hämta ODBC-drivrutiner för [!DNL Vertica Analytics]. [Klicka här](https://www.vertica.com/download/vertica/client-drivers/) och hämta den senaste Linux RPM-modulen.
 
 1. Därefter måste du installera unixODBC med följande kommando:
 
@@ -38,7 +38,7 @@ Konfigurera [!DNL Vertica Analytics] i CentOS följer du stegen nedan:
    yum install unixODBC.x86_64
    ```
 
-1. Om du tidigare har installerat [!DNL Vertica Analytics] Servern kommer en ODBC-drivrutin redan att installeras. I så fall ska du uppdatera enheten enligt följande:
+1. Om du redan har installerat servern [!DNL Vertica Analytics] installeras en ODBC-drivrutin. I så fall ska du uppdatera enheten enligt följande:
 
    ```
    #Switch to root
@@ -77,19 +77,19 @@ Konfigurera [!DNL Vertica Analytics] i CentOS följer du stegen nedan:
    rm vertica-client-x.x.x-x.x86_64.rpm
    ```
 
-1. I Adobe Campaign kan du sedan konfigurera [!DNL Vertica Analytics] externt konto. Mer information om hur du konfigurerar ditt externa konto finns i [det här avsnittet](#vertica-external).
+1. I Adobe Campaign kan du sedan konfigurera ditt [!DNL Vertica Analytics]-externa konto. Mer information om hur du konfigurerar ditt externa konto finns i [det här avsnittet](#vertica-external).
 
 ## [!DNL Vertica Analytics] i Windows {#vertica-windows}
 
-1. Ladda ned [ODBC-drivrutin för Windows](https://www.vertica.com/download/vertica/client-drivers/). Om du vill installera drivrutinen för Windows måste du aktivera .NET Framework 3.5, annars försöker installationsguiden automatiskt aktivera och hämta den.
+1. Hämta [ODBC-drivrutinen för Windows](https://www.vertica.com/download/vertica/client-drivers/). Om du vill installera drivrutinen för Windows måste du aktivera .NET Framework 3.5, annars försöker installationsguiden automatiskt aktivera och hämta den.
 
-1. Konfigurera ODBC-drivrutinen i Windows. Mer information finns i [den här sidan](https://www.vertica.com/docs/9.2.x/HTML/Content/Authoring/ConnectingToVertica/ClientODBC/SettingUpADSN.htm)
+1. Konfigurera ODBC-drivrutinen i Windows. Mer information finns på [sidan](https://www.vertica.com/docs/9.2.x/HTML/Content/Authoring/ConnectingToVertica/ClientODBC/SettingUpADSN.htm)
 
-1. I Adobe Campaign kan du sedan konfigurera [!DNL Vertica Analytics] externt konto. Mer information om hur du konfigurerar ditt externa konto finns i [det här avsnittet](#vertical-external).
+1. I Adobe Campaign kan du sedan konfigurera ditt [!DNL Vertica Analytics]-externa konto. Mer information om hur du konfigurerar ditt externa konto finns i [det här avsnittet](#vertical-external).
 
 ## [!DNL Vertica Analytics] på Debian {#vertica-debian}
 
-1. Hämta ODBC-drivrutiner för [!DNL Vertica Analytics]. [Klicka här](https://sfc-repo.snowflakecomputing.com/odbc/linux/latest/index.html) börja ladda ned.
+1. Hämta ODBC-drivrutiner för [!DNL Vertica Analytics]. [Klicka här](https://sfc-repo.snowflakecomputing.com/odbc/linux/latest/index.html) för att påbörja hämtningen.
 
 1. Därefter måste du installera unixODBC med följande kommando:
 
@@ -97,7 +97,7 @@ Konfigurera [!DNL Vertica Analytics] i CentOS följer du stegen nedan:
    apt-get install unixODBC
    ```
 
-1. Om du tidigare har installerat [!DNL Vertica Analytics] Servern kommer en ODBC-drivrutin redan att installeras. I så fall ska du uppdatera enheten enligt följande:
+1. Om du redan har installerat servern [!DNL Vertica Analytics] installeras en ODBC-drivrutin. I så fall ska du uppdatera enheten enligt följande:
 
    ```
    #Switch to root
@@ -139,23 +139,23 @@ Konfigurera [!DNL Vertica Analytics] i CentOS följer du stegen nedan:
    Port = 5433
    ```
 
-1. I Adobe Campaign kan du sedan konfigurera [!DNL Vertica Analytics] externt konto. Mer information om hur du konfigurerar ditt externa konto finns i [det här avsnittet](#vertica-external).
+1. I Adobe Campaign kan du sedan konfigurera ditt [!DNL Vertica Analytics]-externa konto. Mer information om hur du konfigurerar ditt externa konto finns i [det här avsnittet](#vertica-external).
 
 ## [!DNL Vertica Analytics] externt konto {#vertica-external}
 
-Du måste skapa en [!DNL Vertica Analytics] externt konto för att ansluta Campaign-instansen till [!DNL Vertica Analytics] extern databas.
+Du måste skapa ett externt [!DNL Vertica Analytics]-konto för att ansluta Campaign-instansen till din [!DNL Vertica Analytics]-externa databas.
 
-1. Från kampanj **[!UICONTROL Explorer]**, klicka **[!UICONTROL Administration]** &#39;>&#39; **[!UICONTROL Platform]** &#39;>&#39; **[!UICONTROL External accounts]**.
+1. Klicka på **[!UICONTROL Administration]** > **[!UICONTROL Platform]** > **[!UICONTROL External accounts]** i Campaign **[!UICONTROL Explorer]**.
 
 1. Klicka på **[!UICONTROL New]**.
 
-1. Välj **[!UICONTROL External database]** som ditt externa konto **[!UICONTROL Type]**.
+1. Välj **[!UICONTROL External database]** som det externa kontots **[!UICONTROL Type]**.
 
-1. Konfigurera **[!UICONTROL Vertica Analytics]** externt konto måste du ange:
+1. Konfigurera det externa **[!UICONTROL Vertica Analytics]**-kontot måste du ange:
 
    * **[!UICONTROL Type]**: [!DNL Vertica Analytics]
 
-   * **[!UICONTROL Server]**: URL för [!DNL Vertica Analytics] server
+   * **[!UICONTROL Server]**: URL för servern [!DNL Vertica Analytics]
 
    * **[!UICONTROL Account]**: Användarens namn
 

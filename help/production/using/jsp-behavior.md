@@ -19,7 +19,7 @@ ht-degree: 14%
 
 
 
-Om vissa **jsp** jobb inte kan köras, du måste tvinga dem att kompilera om.
+Om vissa **jsp**-jobb inte kan köras måste du tvinga dem att kompilera om.
 
 Ange följande kommandon för detta:
 
@@ -30,4 +30,4 @@ rm -r work/
 nlserver start web
 ```
 
-The **jsp** jobb genereras om nästa gång du ansluter.
+**jsp**-jobben återskapas nästa gång du ansluter.

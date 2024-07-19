@@ -43,13 +43,13 @@ Med det här elementet kan du definiera ett index som är länkat till en tabell
 
 Du kan definiera flera index. Ett index kan referera till ett eller flera fält i tabellen. Indexdeklarationen följer vanligtvis definitionen för huvudschemaelementet.
 
-Ordningen på `<keyfield>` element som definieras i en `<dbindex>` är mycket viktigt. Den första `<keyfield>` måste vara indexeringskriteriet som frågorna huvudsakligen bygger på.
+Ordningen på `<keyfield>`-elementen som definieras i en `<dbindex>` är mycket viktig. Den första `<keyfield>` måste vara indexeringskriteriet som frågorna huvudsakligen baseras på.
 
 Indexnamnet i databasen beräknas genom att sammanfoga tabellnamnet och indexnamnet. Exempel: Tabellnamnet &quot;Exempel&quot;, namnutrymmet &quot;Cus&quot;, indexnamnet &quot;MyIndex&quot;-> namnet på indexfältet när indexet skapas frågar: &quot;CusSample_myIndex&quot;.
 
 ## Attributbeskrivning {#attribute-description-3}
 
-* **operation (sträng)**: definierar typen av skrivning i databasen.
+* **_operation (sträng)**: definierar typen av skrivning i databasen.
 
   Det här attributet används främst vid utökning av scheman som ligger utanför rutan.
 
@@ -61,14 +61,14 @@ Indexnamnet i databasen beräknas genom att sammanfoga tabellnamnet och indexnam
    * &quot;update&quot;: update. Det innebär att Adobe Campaign uppdaterar elementet eller genererar ett fel om det inte finns.
    * &quot;delete&quot;: delete. Det innebär att Adobe Campaign återställer och tar bort element.
 
-* **applicableIf (string)**: villkor för att ta hänsyn till index - tar emot ett XTK-uttryck.
+* **applicableIf (string)**: villkor för att ta med indexet i beräkningen - tar emot ett XTK-uttryck.
 * **label (string)**: indexetikett.
 * **name (MNTOKEN)**: unikt indexnamn.
-* **unik (boolesk)**: om det här alternativet är aktiverat (@unique=&quot;true&quot;) garanterar attributet att indexet är unikt i alla fält.
+* **unique (boolean)**: Om det här alternativet aktiveras (@unique=&quot;true&quot;) garanterar attributet indexets unika karaktär i alla dess fält.
 
 ## Exempel {#examples-3}
 
-Skapa ett index i fältet&quot;id&quot;. (attributet &quot;@unique&quot; på `<dbindex>` -element utlöser tillägg av SQL-nyckelordet &quot;UNIQUE&quot; när indexet skapas i databasen (fråga).
+Skapa ett index i fältet&quot;id&quot;. (attributet &quot;@unique&quot; i elementet `<dbindex>` utlöser tillägg av SQL-nyckelordet &quot;UNIQUE&quot; när indexet skapas i databasen (frågan).)
 
 ```
 <element label="Sample" name="Sample">

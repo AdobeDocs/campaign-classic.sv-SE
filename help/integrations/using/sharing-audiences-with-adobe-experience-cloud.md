@@ -26,18 +26,18 @@ Med Adobe Campaign kan ni dela målgrupper och segment med Adobe Experience Clou
 
 1. Skicka Adobe Experience Platform segmentdata till Adobe Campaign. För att implementera integreringen måste ni koppla Real-time Customer Data Platform till Campaign (RTCDP). [Läs mer i det här avsnittet](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/email-marketing/adobe-campaign.html){target="_blank"}.
 
-1. Integrera **Adobe Campaign** med  **Experience Cloud målgrupper** eller **Adobe Audience Manager**. Då kan du:
+1. Integrera **Adobe Campaign** med **Experience Cloud-målgrupper** eller **Adobe Audience Manager**. Då kan du:
 
    * Importera delade målgrupper/segment från olika Adobe Experience Cloud-lösningar till Adobe Campaign. Publiker kan importeras via listor i Adobe Campaign.
 
-   * Exportera listor i form av delade Adobe Experience Cloud-målgrupper. Dessa målgrupper kan användas i de olika Adobe Experience Cloud-lösningar ni använder. Målgrupper kan exporteras efter målgruppsanpassning i ett arbetsflöde med hjälp av en dedikerad **[!UICONTROL Update shared audience]** aktivitet.
+   * Exportera listor i form av delade Adobe Experience Cloud-målgrupper. Dessa målgrupper kan användas i de olika Adobe Experience Cloud-lösningar ni använder. Publiker kan exporteras efter målgruppsanpassning i ett arbetsflöde med en dedikerad **[!UICONTROL Update shared audience]**-aktivitet.
 
 Den här integreringen stöder två typer av Adobe Experience Cloud ID:
 
 * **Besökar-ID**: den här typen av identifierare förenar Adobe Experience Cloud-besökare med Adobe Campaign-mottagare.
-* **Deklarerat ID**: den här typen av identifierare förenar alla typer av data med element från Adobe Campaign-databasen. Den representeras i Adobe Campaign som en fördefinierad avstämningsnyckel.
+* **Deklarerat ID**: Den här typen av identifierare förenar alla typer av data med element från Adobe Campaign-databasen. Den representeras i Adobe Campaign som en fördefinierad avstämningsnyckel.
 
   >[!NOTE]
   >
-  > Deklarerad ID-datakälla kan nu även användas med integrering av Experience Cloud Assets.
+  > Deklarerad ID-datakälla kan nu även användas med Experience Cloud Assets-integrering.
   >

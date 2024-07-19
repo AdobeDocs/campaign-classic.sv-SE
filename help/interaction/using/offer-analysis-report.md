@@ -18,7 +18,7 @@ ht-degree: 10%
 
 
 
-The **[!UICONTROL Offer analysis]** rapporten ger dig en översikt över antalet godkända eller avvisade förslag.
+Rapporten **[!UICONTROL Offer analysis]** ger dig en översikt över antalet godkända eller avvisade förslag.
 
 >[!NOTE]
 >
@@ -38,6 +38,6 @@ Statistiken sorteras utifrån tre kriterier:
 
   ![](assets/offer_report_perdeliveries.png)
 
-Data kan filtreras baserat på de olika kriterier som finns i rapportens övre avsnitt. När du har valt önskat villkor klickar du på **[!UICONTROL Refresh]** länk för att tillämpa dem på rapporten.
+Data kan filtreras baserat på de olika kriterier som finns i rapportens övre avsnitt. När du har valt önskat villkor klickar du på länken **[!UICONTROL Refresh]** för att tillämpa dem på rapporten.
 
 ![](assets/offer_report_criteria.png)

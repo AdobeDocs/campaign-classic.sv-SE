@@ -1,7 +1,7 @@
 ---
 product: campaign
 title: Händelsebeskrivning
-description: Läs om hur transaktionsmeddelandehändelser hanteras i Adobe Campaign Classic med SOAP-metoder
+description: Läs om hur transaktionsmeddelandehändelser hanteras i Adobe Campaign Classic med SOAP metoder
 feature: Transactional Messaging, Message Center
 audience: message-center
 content-type: reference
@@ -20,16 +20,16 @@ ht-degree: 0%
 
 ## Datamodell för transaktionsmeddelanden {#about-transactional-messaging-datamodel}
 
-Transactional messaging förlitar sig på Adobe Campaign datamodell och använder ytterligare två separata tabeller. Dessa [tabeller](../../configuration/using/data-model-description.md#message-center-module), **NmsRtEvent** och **NmsBatchEvent**, innehåller samma fält och låter dig hantera realtidshändelser å ena sidan, och batchhändelser å andra sidan.
+Transactional messaging förlitar sig på Adobe Campaign datamodell och använder ytterligare två separata tabeller. Dessa [tabeller](../../configuration/using/data-model-description.md#message-center-module), **NmsRtEvent** och **NmsBatchEvent** innehåller samma fält och gör att du kan hantera realtidshändelser å ena sidan och batchhändelser å andra sidan.
 
-## SOAP-metoder {#soap-methods}
+## SOAP {#soap-methods}
 
-I det här avsnittet beskrivs de SOAP-metoder som är associerade med scheman för modulen för transaktionsmeddelanden.
+I det här avsnittet beskrivs de SOAP metoderna som är associerade med scheman för modulen för transaktionsmeddelanden.
 
-Två **PushEvent** eller **PushEvents** SOAP-metoder är länkade till de två **nms:rtEvent** och **nms:BatchEvent** datascheman. Det är informationssystemet som avgör om en händelse är av typen&quot;batch&quot; eller&quot;realtid&quot;.
+Två **PushEvent** - eller **PushEvents** -SOAP är länkade till de två **nms:rtEvent** - och **nms:BatchEvent** -datascheman. Det är informationssystemet som avgör om en händelse är av typen&quot;batch&quot; eller&quot;realtid&quot;.
 
-* **PushEvent** gör att du kan infoga en enda händelse i meddelandet,
-* **PushEvents** I kan du infoga en serie händelser i meddelandet.
+* Med **PushEvent** kan du infoga en händelse i meddelandet,
+* Med **PushEvents** kan du infoga en serie händelser i meddelandet.
 
 WSDL-sökvägen för åtkomst till båda metoderna är:
 
@@ -38,7 +38,7 @@ WSDL-sökvägen för åtkomst till båda metoderna är:
 
 Mer information om hur du skapar en WSDL-fil finns i [det här avsnittet](../../configuration/using/web-service-calls.md#web-service-description--wsdl).
 
-Båda metoderna innehåller en **`<urn:sessiontoken>`** -element för inloggning i transaktionsmeddelandemodulen. Vi rekommenderar att du använder en identifieringsmetod via betrodda IP-adresser. Om du vill hämta sessionstoken utför du ett SOAP-inloggningsanrop och sedan en get-token följt av en utloggning. Använd samma token för flera RT-anrop. Exemplen i det här avsnittet använder sessionstokenmetoden som rekommenderas.
+Båda metoderna innehåller ett **`<urn:sessiontoken>`**-element för inloggning i transaktionsmeddelandemodulen. Vi rekommenderar att du använder en identifieringsmetod via betrodda IP-adresser. Om du vill hämta sessionstoken måste du utföra ett inloggningsanrop SOAP en get-token följt av en utloggning. Använd samma token för flera RT-anrop. Exemplen i det här avsnittet använder sessionstokenmetoden som rekommenderas.
 
 Om du använder en server för belastningsutjämning kan du använda autentisering av användare/lösenord (på nivån för RT-meddelandet). Exempel:
 
@@ -54,9 +54,9 @@ Om du använder en server för belastningsutjämning kan du använda autentiseri
 </PushEvent>
 ```
 
-The **PushEvent** metoden består av en **`<urn:domevent>`** parameter som innehåller händelsen.
+Metoden **PushEvent** består av en **`<urn:domevent>`**-parameter som innehåller händelsen.
 
-The **PushEvents** metoden består av en **`<urn:domeventcollection>`** parameter som innehåller händelser.
+Metoden **PushEvents** består av en **`<urn:domeventcollection>`**-parameter som innehåller händelser.
 
 Exempel med PushEvent:
 
@@ -80,7 +80,7 @@ Exempel med PushEvent:
 
 >[!NOTE]
 >
->Vid en anrop till **PushEvents** måste vi lägga till ett överordnat XML-element för att följa standard-XML. Detta XML-element kommer att rama in de olika **`<rtevent>`** -element i händelsen.
+>Om metoden **PushEvents** anropas måste ett överordnat XML-element läggas till för att uppfylla standard-XML. Det här XML-elementet kommer att rama in de olika **`<rtevent>`** elementen i händelsen.
 
 Exempel med PushEvents:
 
@@ -106,13 +106,13 @@ Exempel med PushEvents:
 </urn:PushEvents>
 ```
 
-The **`<rtevent>`** och **`<batchevent>`** -element har en uppsättning attribut samt ett obligatoriskt underordnat element: **`<ctx>`** för att integrera meddelandedata.
+Elementen **`<rtevent>`** och **`<batchevent>`** har en uppsättning attribut samt ett obligatoriskt underordnat element: **`<ctx>`** för att integrera meddelandedata.
 
 >[!NOTE]
 >
->The **`<batchevent>`** kan du lägga till händelsen i batchkön. The **`<rtevent>`** lägger till händelsen i realtidskön.
+>Med elementet **`<batchevent>`** kan du lägga till händelsen i batchkön. **`<rtevent>`** lägger till händelsen i realtidskön.
 
-De obligatoriska attributen för **`<rtevent>`** och **`<batchevent>`** elementen är @type och @email. Värdet för @type måste vara samma som det specificerade listvärdet som definieras när körningsinstansen konfigureras. Med det här värdet kan du definiera mallen som ska länkas till innehållet i händelsen under leveransen.
+De obligatoriska attributen för elementen **`<rtevent>`** och **`<batchevent>`** är @type och @email. Värdet för @type måste vara samma som det specificerade listvärdet som definieras när körningsinstansen konfigureras. Med det här värdet kan du definiera mallen som ska länkas till innehållet i händelsen under leveransen.
 
 `<rtevent> configuration example:`
 
@@ -120,17 +120,17 @@ De obligatoriska attributen för **`<rtevent>`** och **`<batchevent>`** elemente
 <rtEvent type="order_confirmation" email="john.doe@domain.com" origin="eCommerce" wishedChannel="0" externalId="1242" mobilePhone="+33620202020"> 
 ```
 
-I det här exemplet finns det två kanaler: e-postadressen och mobiltelefonnumret. The **requestedChannel** gör att du kan välja den kanal som du vill använda när du omvandlar händelsen till ett meddelande. Värdet &quot;0&quot; motsvarar e-postkanalen, värdet &quot;1&quot; till mobilkanalen osv.
+I det här exemplet finns det två kanaler: e-postadressen och mobiltelefonnumret. Med **önskadKanal** kan du välja den kanal som du vill använda när du omvandlar händelsen till ett meddelande. Värdet &quot;0&quot; motsvarar e-postkanalen, värdet &quot;1&quot; till mobilkanalen osv.
 
-Om du vill skjuta upp en leverans av en händelse lägger du till **[!UICONTROL scheduled]** följt av önskat datum. Händelsen omvandlas till ett meddelande det här datumet.
+Om du vill skjuta upp en händelseleverans lägger du till fältet **[!UICONTROL scheduled]** följt av önskat datum. Händelsen omvandlas till ett meddelande det här datumet.
 
 Vi rekommenderar att du fyller i attributen @önskadKanal och @emailFormat med numeriska värden. Funktionstabellen som länkar numeriska värden och etiketter finns i dataschemabeskrivningen.
 
 >[!NOTE]
 >
->En detaljerad beskrivning av alla godkända attribut samt deras värden finns i beskrivningen av **nms:rtEvent** och **nms:BatchEvent** dataschema.
+>En detaljerad beskrivning av alla godkända attribut samt deras värden finns i beskrivningen av dataschemat **nms:rtEvent** och **nms:BatchEvent**.
 
-The **`<ctx>`** -elementet innehåller meddelandedata. Dess XML-innehåll är öppet, vilket betyder att det kan konfigureras beroende på vilket innehåll som ska levereras.
+Elementet **`<ctx>`** innehåller meddelandedata. Dess XML-innehåll är öppet, vilket betyder att det kan konfigureras beroende på vilket innehåll som ska levereras.
 
 >[!NOTE]
 >
@@ -157,13 +157,13 @@ Exempel på data:
     </ctx>
 ```
 
-## Information som returnerats av SOAP-anropet {#information-returned-by-the-soap-call}
+## Information som returnerats av SOAP {#information-returned-by-the-soap-call}
 
 När Adobe Campaign tar emot en händelse genereras ett unikt retur-ID. Detta är ID:t för den arkiverade versionen av händelsen.
 
 >[!IMPORTANT]
 >
->När Adobe Campaign tar emot SOAP-anrop verifieras e-postadressformatet. Om en e-postadress är felaktigt formaterad returneras ett fel.
+>När Adobe Campaign tar emot SOAP verifierar e-postadressformatet. Om en e-postadress är felaktigt formaterad returneras ett fel.
 
 * Exempel på en identifierare som returneras av metoden när händelsebearbetningen lyckas:
 

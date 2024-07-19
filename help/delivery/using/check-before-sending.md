@@ -25,7 +25,7 @@ Innan du skickar en leverans måste du se till att mottagarna får det meddeland
 
 Med det här steget kan du identifiera eventuella fel och åtgärda dem innan du levererar till huvudmålet.
 
-Stegen för validering av leverans visas [i det här avsnittet](steps-validating-the-delivery.md).
+Stegen för att validera en leverans visas [i det här avsnittet](steps-validating-the-delivery.md).
 
 ## Inkorgsåtergivning {#inbox-and-email-rendering}
 
@@ -73,7 +73,7 @@ Du kan stegvis öka volymen som skickas med vågor. På så sätt undviker du at
 
 Du kan ange avsändarordning för leveranser genom att ange prioritetsnivå. För att göra detta:
 
-1. Redigera leveransegenskaperna och välj **[!UICONTROL Delivery]** -fliken.
+1. Redigera leveransegenskaperna och välj fliken **[!UICONTROL Delivery]**.
 
 1. Definiera prioritetsnivån för leveransen på en skala från **[!UICONTROL Very low]** till **[!UICONTROL Very high]**.
 
@@ -91,11 +91,11 @@ Du kan:
 
 * Deklarera de IP-adresser som kan användas för varje IPAfinity-element. [Läs mer](../../installation/using/email-deliverability.md#list-of-ip-addresses-to-use)
 
-* I [typologi](../../campaign-opt/using/about-campaign-typologies.md) du vill använda **[!UICONTROL Managing affinities with IP addresses]** fält för att länka leveranser till leveransservern (MTA) som hanterar tillhörigheten. [Läs mer](../../campaign-opt/using/applying-rules.md#control-outgoing-smtp-traffic).
+* I den [typologi](../../campaign-opt/using/about-campaign-typologies.md) du väljer använder du fältet **[!UICONTROL Managing affinities with IP addresses]** för att länka leveranser till leveransservern (MTA) som hanterar tillhörigheten. [Läs mer](../../campaign-opt/using/applying-rules.md#control-outgoing-smtp-traffic).
 
 * När e-postmeddelandet har skickats kontrollerar du huvudet för att verifiera vilken IP-adress som leveransen skickades från. E-postadministratören bör hjälpa dig att få fram rubrikinformationen.
 
-* Kontrollera att SMS-kanalen har en dedikerad tillhörighet begränsad till **en** programserverbehållare. [Läs mer](../../installation/using/configure-delivery-settings.md#managing-outbound-smtp-traffic-with-affinities)
+* Kontrollera att SMS-kanalen har en dedikerad tillhörighet begränsad till **en**-programserverbehållaren för SMS-leveranser. [Läs mer](../../installation/using/configure-delivery-settings.md#managing-outbound-smtp-traffic-with-affinities)
 
 >[!NOTE]
 >
@@ -103,7 +103,7 @@ Du kan:
 
 ### Använd typologier
 
-Du kan använda typologiregler för att exkludera delar av målet baserat på specifika kriterier. Detta garanterar att de meddelanden som skickas bäst uppfyller kundernas behov och förväntningar, i enlighet med företagets kommunikationspolicy. Du kan till exempel filtrera de mottagare som är minderåriga från målet i nyhetsbrevet. Läs mer [i detta exempel](../../campaign-opt/using/filtering-rules.md).
+Du kan använda typologiregler för att exkludera delar av målet baserat på specifika kriterier. Detta garanterar att de meddelanden som skickas bäst uppfyller kundernas behov och förväntningar, i enlighet med företagets kommunikationspolicy. Du kan till exempel filtrera de mottagare som är minderåriga från målet i nyhetsbrevet. Läs mer [i det här exemplet](../../campaign-opt/using/filtering-rules.md).
 
 ### Undvik bifogade filer
 

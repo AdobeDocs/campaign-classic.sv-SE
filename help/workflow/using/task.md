@@ -19,12 +19,12 @@ ht-degree: 3%
 >
 >`:warning:` Den här funktionen är bara tillgänglig i Campaign Classic v7. [Läs mer](../../mrm/using/creating-and-managing-tasks.md)
 
-I ett kampanjarbetsflöde **[!UICONTROL Task]** Med -aktivitet kan du ange två scenarier: den första om aktiviteten är slutförd och den andra om aktiviteten inte är slutförd (om den är manuellt markerad som ofullständig eller om den går ut).
+I ett kampanjarbetsflöde låter aktiviteten **[!UICONTROL Task]** dig ange två scenarier: det första om aktiviteten har slutförts och det andra om aktiviteten inte har slutförts (om den har markerats som ofullständig manuellt eller om den upphör att gälla).
 
 ![](assets/mrm_task_in_workflow.png)
 
-Information om hur du konfigurerar och kör en uppgift finns i [Campaign Classic v7 - dokumentation](../../mrm/using/creating-and-managing-tasks.md).
+Information om hur du konfigurerar och utför en åtgärd finns i [Campaign Classic v7-dokumentationen](../../mrm/using/creating-and-managing-tasks.md).
 
 ![](assets/wkf_task_activity.png)
 
-The **[!UICONTROL Resources]** kan du definiera flera operatorer samt ett godkännandeschema för uppgiften. Om personen som godkänner avvisar, leder detta inte till att själva uppgiften avvisas.
+Med alternativet **[!UICONTROL Resources]** kan du definiera flera operatorer samt ett godkännandeschema för aktiviteten. Om personen som godkänner avvisar, leder detta inte till att själva uppgiften avvisas.

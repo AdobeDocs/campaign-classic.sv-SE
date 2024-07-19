@@ -30,7 +30,7 @@ Du bör ha en test-/utvecklingsmiljö för att utföra migreringstester. Använd
 1. Säkerhetskopiera utvecklingsmiljödatabasen.
 1. Stoppa alla Adobe Campaign-processer i utvecklingsinstansen.
 1. Säkerhetskopiera produktionsmiljödatabasen och återställ den som en utvecklingsmiljö.
-1. Innan du startar Adobe Campaign-tjänsterna kör du **ezeInstance.js** autentiseringsskript som gör att du kan rensa databasen för alla objekt som kördes när säkerhetskopieringen startades.
+1. Innan du startar Adobe Campaign-tjänsterna kör du **frysinstansskriptet.js** som gör att du kan rensa databasen för alla objekt som kördes när säkerhetskopieringen startades.
 
    ```
    nlserver javascript nms:freezeInstance.js -instance:<instance> -arg:<run|dry>
@@ -38,7 +38,7 @@ Du bör ha en test-/utvecklingsmiljö för att utföra migreringstester. Använd
 
    >[!NOTE]
    >
-   >Kommandot startar som standard i **torr** och visar alla förfrågningar som har utförts av det kommandot, utan att starta dem. Om du vill utföra autentiseringsbegäranden använder du **run** i kommandot.
+   >Kommandot startar som standard i läget **dry** och visar alla begäranden som kördes av det kommandot, utan att starta dem. Använd **run** i kommandot för att köra autentiseringsbegäranden.
 
 1. Kontrollera att säkerhetskopiorna är korrekta genom att försöka återställa dem. Se till att du har tillgång till din databas, dina tabeller, dina data osv.
 1. Testa migreringsproceduren i utvecklingsmiljön.
@@ -53,7 +53,7 @@ Du bör ha en test-/utvecklingsmiljö för att utföra migreringstester. Använd
 
 Med olika alternativ kan du mäta effekten av en migrering och identifiera potentiella problem. Dessa alternativ ska utföras:
 
-* i **config** kommando:
+* i kommandot **config**:
 
   ```
   nlserver.exe config <option> -instance:<instance-name>
@@ -67,12 +67,12 @@ Med olika alternativ kan du mäta effekten av en migrering och identifiera poten
 
 >[!NOTE]
 >
->* Du måste använda **-instance:`<instanceame>`** alternativ. Vi rekommenderar inte att du använder **-allinstances** alternativ.
->* Adobe Campaign-kommandot update (**postuppgradering**) kan du synkronisera resurser och uppdatera scheman och databasen. Den här åtgärden kan bara utföras en gång på programservern. När resurserna har synkroniserats **postuppgradering** kan du identifiera om synkroniseringen genererar fel eller varningar.
+>* Du måste använda alternativet **-instance:`<instanceame>`**. Vi rekommenderar inte att du använder alternativet **-allinstances**.
+>* Med Adobe Campaign-uppdateringskommandot (**postupgrade**) kan du synkronisera resurser och uppdateringsscheman samt databasen. Den här åtgärden kan bara utföras en gång på programservern. När resurserna har synkroniserats kan du med kommandot **postupgrade** identifiera om synkroniseringen genererar fel eller varningar.
 
 ### Objekt som inte är standard eller saknas
 
-* The **-showCustomEntities** visas en lista med alla objekt som inte är standard:
+* Alternativet **-showCustomEntities** visar listan över alla objekt som inte är standard:
 
   ```
   nlserver.exe config -showCustomEntities -instance:<instance-name>
@@ -84,7 +84,7 @@ Med olika alternativ kan du mäta effekten av en migrering och identifiera poten
   xtk_migration:opsecurity2 xtk:entity
   ```
 
-* The **-showDeletedEntities** visas en lista med alla standardobjekt som saknas i databasen eller filsystemet. För varje objekt som saknas anges sökvägen.
+* Alternativet **-showDeletedEntities** visar en lista över alla standardobjekt som saknas i databasen eller filsystemet. För varje objekt som saknas anges sökvägen.
 
   ```
   nlserver.exe config -showDeletedEntities -instance:<instance-name>
@@ -115,10 +115,10 @@ Följande uttryck söks efter (skiftlägeskänsliga):
 <table> 
  <thead> 
   <tr> 
-   <th> Uttryck<br /> </th> 
-   <th> Felkod<br /> </th> 
-   <th> Loggtyp<br /> </th> 
-   <th> Kommentar<br /> </th> 
+   <th> Uttryck <br /> </th> 
+   <th> Felkod <br /> </th> 
+   <th> Loggtyp <br /> </th> 
+   <th> Kommentarer<br /> </th> 
   </tr> 
  </thead> 
  <tbody> 
@@ -135,36 +135,36 @@ Följande uttryck söks efter (skiftlägeskänsliga):
    <td> Det här biblioteket får inte användas.<br /> </td> 
   </tr> 
   <tr> 
-   <td> logon(<br /> </td> 
+   <td> logon(<br />) </td> 
    <td> PU-0003<br /> </td> 
    <td> Varning<br /> </td> 
    <td> Den här anslutningsmetoden får inte längre användas.<br /> </td> 
   </tr> 
   <tr> 
-   <td> new SoapMethodCall()<br /> </td> 
+   <td> new SoapMethodCall(<br />) </td> 
    <td> PU-0004<br /> </td> 
    <td> Varning<br /> </td> 
-   <td> Den här funktionen stöds bara när den används i JavaScript-kod som körs från en säkerhetszon i <strong>sessionTokenOnly</strong> läge.<br /> </td> 
+   <td> Den här funktionen stöds bara när den används i JavaScript-kod som körs från en säkerhetszon i läget <strong>sessionTokenOnly</strong>.<br /> </td> 
   </tr> 
   <tr> 
    <td> sql=<br /> </td> 
    <td> PU-0005<br /> </td> 
-   <td> Fel<br /> </td> 
+   <td> Fel <br /> </td> 
    <td> Den här typen av fel leder till ett migreringsfel.<br /> </td> 
   </tr> 
   <tr> 
    <td> crmDeploymentType="lokal"<br /> </td> 
    <td> PU-0007<br /> </td> 
-   <td> Fel<br /> </td> 
+   <td> Fel <br /> </td> 
    <td> Den här typen av distribution stöds inte längre. Distributionstypen för Office 365- och On-Local Microsoft CRM Connector har nu tagits bort. 
-   </br>Om du använder någon av de här inaktuella distributionstyperna i ett externt konto bör det externa kontot tas bort och du bör sedan köra <b>postuppgradering</b> -kommando. 
-   </br>Information om hur du ändrar till Web API-distribution finns i <a href="../../platform/using/crm-ms-dynamics.md#configure-acc-for-microsoft" target="_blank">Webbprogram</a>.<br /> </td>
+   </br>Om du använder någon av de här inaktuella distributionstyperna i ett externt konto bör det externa kontot tas bort och du bör sedan köra kommandot <b> postupgrade</b> . 
+   </br>Om du vill ändra till Web API-distribution läser du <a href="../../platform/using/crm-ms-dynamics.md#configure-acc-for-microsoft" target="_blank">Webbprogram</a>.<br /> </td>
   </tr> 
   <tr> 
-   <td> CRM v1(mscrmArbetsflöde/sfdcArbetsflöde)<br /> </td> 
+   <td> CRM v1(mscrmArbetsflöde/sfdcWorkflow)<br /> </td> 
    <td> PU-0008<br /> </td> 
-   <td> Fel<br /> </td> 
-   <td> Åtgärder i Microsoft CRM, Salesforce och Oracle CRM On Demand är inte längre tillgängliga. Om du vill konfigurera datasynkroniseringen mellan Adobe Campaign och ett CRM-system måste du använda <a href="../../workflow/using/crm-connector.md" target="_blank">CRM-koppling</a> målinriktning.<br /> </td>
+   <td> Fel <br /> </td> 
+   <td> Åtgärder i Microsoft CRM, Salesforce och Oracle CRM On Demand är inte längre tillgängliga. Om du vill konfigurera datasynkroniseringen mellan Adobe Campaign och ett CRM-system måste du använda målinriktningsaktiviteten för <a href="../../workflow/using/crm-connector.md" target="_blank">CRM-anslutningen</a>.<br /> </td>
   </tr> 
  </tbody> 
 </table>

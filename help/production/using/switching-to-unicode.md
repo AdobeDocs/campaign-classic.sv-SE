@@ -19,7 +19,7 @@ ht-degree: 0%
 
 
 
-För en befintlig **prod** i Linux/PostgreSQL är stegen för att växla till unicode följande:
+För en befintlig **prod**-instans i Linux/PostgreSQL är stegen för att växla till unicode följande:
 
 1. Stoppa processerna som skriver till databasen:
 
@@ -62,7 +62,7 @@ För en befintlig **prod** i Linux/PostgreSQL är stegen för att växla till un
    vi config-prod.xml
    ```
 
-   Lägg till **u** tecken framför värdet som relaterar till databasidentifieraren (**databaseId**):
+   Lägg till tecknet **u** framför värdet som relaterar till databasidentifieraren (**databaseId**):
 
    ```
    <web>

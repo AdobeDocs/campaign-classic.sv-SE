@@ -30,7 +30,7 @@ Ta dig tid att gå igenom [Checklistan för säkerhet och sekretess](../../insta
 
 ### Integritetsbestämmelser {#privacy-regulations}
 
-För att kunna hantera personuppgifter på ett korrekt sätt bör du arbeta i enlighet med lagstiftningen i den eller de regioner där du bedriver verksamhet. Adobe Campaign funktioner hjälper dig att följa de regler som anges i [den här sidan](../../platform/using/privacy-management.md#privacy-management-regulations).
+För att kunna hantera personuppgifter på ett korrekt sätt bör du arbeta i enlighet med lagstiftningen i den eller de regioner där du bedriver verksamhet. Adobe Campaign funktioner hjälper dig att följa reglerna som anges på [den här sidan](../../platform/using/privacy-management.md#privacy-management-regulations).
 
 ### Integritet i Adobe Experience Cloud {#experience-cloud-privacy}
 
@@ -68,7 +68,7 @@ När integritet hanteras är det viktigt att definiera vilka data som ska hanter
 * **Personuppgifter** är information som direkt eller indirekt kan identifiera en levande individ.
 * **Känsliga personuppgifter** är information om en persons etnicitet, politiska åsikter, religiösa övertygelser, brottsregister, genetiska uppgifter, hälsouppgifter, sexuell läggning, biometriska uppgifter samt medlemskap i fackföreningar.
 
-När Campaign integreras med andra Experience Cloud-lösningar där målgrupper kan överföras från ett system till ett annat, som [Adobe Analytics](../../integrations/using/gs-aa.md), [Experience Cloud målgrupper](../../integrations/using/sharing-audiences-with-adobe-experience-cloud.md), [Campaign Standard](../../integrations/using/synchronizing-audiences.md)eller med andra lösningar genom [CRM Connectors](../../platform/using/crm-connectors.md)måste ni vara extra noga med att skydda personuppgifter.
+När du integrerar Campaign med andra Experience Cloud-lösningar där målgrupper kan överföras från ett system till ett annat, till exempel [Adobe Analytics](../../integrations/using/gs-aa.md), [Experience Cloud-målgrupper](../../integrations/using/sharing-audiences-with-adobe-experience-cloud.md), [Campaign Standard](../../integrations/using/synchronizing-audiences.md) eller med andra lösningar via [CRM Connectors](../../platform/using/crm-connectors.md), måste du vara extra försiktig med skydd av personuppgifter.
 
 De [viktigaste föreskrifterna](#privacy-regulations) avser de olika enheter som hanterar data enligt följande:
 

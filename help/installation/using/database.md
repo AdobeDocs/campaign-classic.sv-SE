@@ -11,7 +11,7 @@ exl-id: 8a0426c1-9e8d-4053-bc2b-6a550e2eed2f
 source-git-commit: 14ba450ebff9bba6a36c0df07d715b7279604222
 workflow-type: tm+mt
 source-wordcount: '282'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -23,13 +23,13 @@ Databasservern kan köras på ett givet operativsystem oavsett vilket operativsy
 
 Databasserverns operativsystem är inte viktigt så länge det finns en anslutning till de olika komponenterna i Adobe Campaign.
 
-Kontrollera även [Åtkomstlager för databaser](../../installation/using/prerequisites-of-campaign-installation-in-linux.md#database-access-layers) -avsnitt.
+Kontrollera även avsnittet [Databasåtkomstlager](../../installation/using/prerequisites-of-campaign-installation-in-linux.md#database-access-layers).
 
 ## Microsoft SQL Server {#microsoft-sql-server}
 
 Den inbyggda klienten måste vara installerad på Adobe Campaign programservrar.
 
-Du kan söka efter den inbyggda klienten på servern via ODBC-drivrutinens konfigurationspanel, under **SQL Server Native Client 11.0**.
+Du kan söka efter den inbyggda klienten på servern via ODBC-drivrutinens konfigurationspanel under **SQL Server Native Client 11.0**.
 
 Följande åtkomst-DLL måste finnas: **sqlncli11.dll**.
 
@@ -45,11 +45,11 @@ Följande åtkomst-DLL måste finnas: **sqlncli11.dll**.
 >
 >Kolumnnamn med flerbytetecken stöds inte.
 
-The **NLS_NCHAR_CHARACTERSET** och **NLS_CHARACTERSET** parametrar måste vara korrekt konfigurerade för att databasen ska fungera i Unicode eller ANSI.
+Parametrarna **NLS_NCHAR_CHARACTERSET** och **NLS_CHARACTERSET** måste vara korrekt konfigurerade för att databasen ska fungera i Unicode eller ANSI.
 
 Adobe Campaign använder standardkodning för Oraclen. Om du använder annan kodning kan kompatibilitetsproblem uppstå. Kontakta teknisk support i det här fallet.
 
-Om du vill veta mer om kodningen använder du följande **sqlplus** kommando:
+Använd följande **sqlplus**-kommando om du vill veta mer om kodningen:
 
 ```
 SELECT * FROM nls_database_parameters ;
@@ -68,7 +68,7 @@ SELECT * FROM nls_database_parameters ;
   NLS_CHARACTERSET WE8MSWIN1252
 ```
 
-Logga in på **sqlplus** använder du Oraclets användarprofil:
+Om du vill logga in på **sqlplus** använder du Oraclets användarprofil:
 
 ```
 su - oracle 

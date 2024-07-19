@@ -17,13 +17,13 @@ ht-degree: 0%
 
 # Sök efter Tomcat-version{#locate-tomcat-version}
 
-Adobe Campaign använder **inbäddad webbserver som heter Apache Tomcat** för att bearbeta HTTP/HTTPS-begäranden mellan programmet och ett externt gränssnitt (inklusive klientkonsolen, spårade URL-länkar, SOAP-anrop med flera). Det finns ofta en extern webbserver (vanligtvis IIS eller Apache) framför detta för alla externa Adobe Campaign-instanser.
+Adobe Campaign använder en **inbäddad webbserver som heter Apache Tomcat** för att bearbeta HTTP/HTTPS-begäranden mellan programmet och ett externt gränssnitt (inklusive Klientkonsol, spårade URL-länkar, SOAP anrop och andra). Det finns ofta en extern webbserver (vanligtvis IIS eller Apache) framför detta för alla externa Adobe Campaign-instanser.
 
-Följ proceduren nedan för att ta reda på exakt vilken version av Tomcat som används i en **Campaign Classic lokal instans** för att hjälpa till att felsöka problem.
+Följ proceduren nedan för att ta reda på den exakta versionen av Tomcat som används i en **Campaign Classic på plats** för att felsöka problem.
 
 ## Tomcat används i Adobe Campaign
 
-Tomcat kör på Java och kräver att JDK är installerat. Mer information finns i Java Development Kit (JDK) i [Matris för kampanjkompatibilitet](../../rn/using/compatibility-matrix.md) -avsnitt.
+Tomcat kör på Java och kräver att JDK är installerat. Mer information finns i Java Development Kit (JDK) i avsnittet [Kampanjkompatibilitetsmatris](../../rn/using/compatibility-matrix.md).
 
 Tomcat som används i Adobe Campaign är en skräddarsydd inbäddad version som inte har alla funktioner i den fullständiga, allmänt tillgängliga versionen av Tomcat och som kanske inte har alla svagheter i den fullständiga versionen. Tomcat bör inte heller exponeras för externa Internet, och alla Adobe Campaign-instanser som visas bör ha en extern webbserver (IIS, Apache osv.) framför Tomcat för att skydda den.
 
@@ -41,11 +41,11 @@ Följ stegen nedan för att hitta versionen av inbäddad Tomcat i en instans av 
 
 >[!NOTE]
 >
->Du måste ha tillgång till de filer på Adobe Campaign-servern som du behöver kontrollera. Den procedur som beskrivs nedan gäller endast för **lokala värdmodeller**.
+>Du måste ha tillgång till de filer på Adobe Campaign-servern som du behöver kontrollera. Den procedur som beskrivs nedan gäller endast **lokala värdmodeller**.
 
-1. Navigera till *\tomcat-11\lib* undermapp i installationsmappen för Adobe Campaign (till exempel *C:\Program filer\ [Installation_folder]* i Windows, eller */usr/local/neolane/nl6* i Linux).
+1. Navigera till undermappen *\tomcat-11\lib* i Adobe Campaign-installationsmappen (till exempel *C:\Program filer\ [Installation_folder]* i Windows eller */usr/local/neolane/nl6* i Linux).
 
-1. Kopiera filen *catalina.jar* till en extern tillfällig mapp (till exempel skrivbordet) och ändra namnet på tillägget från .jar till .zip.
+1. Kopiera filen *catalina.jar* till en extern tillfällig mapp (till exempel skrivbordet) och byt namn på tillägget från .jar till .zip.
 
 1. Zippa upp den kopierade filen. Det kommer att resultera i många undermappar och filer.
 
@@ -53,7 +53,7 @@ Följ stegen nedan för att hitta versionen av inbäddad Tomcat i en instans av 
 
 1. När du är klar tar du bort de temporära filerna som du skapade om de finns på en serverdator.
 
-Som ett exempel *ServerInfo.properties* filen för Adobe Campaign innehåller följande information, som anger Tomcat v11.X:
+Filen *ServerInfo.properties* för Adobe Campaign innehåller till exempel följande information, som anger Tomcat v11.X:
 
 *`server.info=Apache Tomcat/11.X`*
 

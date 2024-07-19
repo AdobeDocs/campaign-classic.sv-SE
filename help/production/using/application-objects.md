@@ -26,7 +26,7 @@ Adobe Campaign använder en ID-sekvens som måste användas i enlighet med detta
 
 När sekvensen når över 2 miljarder (2 147 483 648 är det exakta talet) återgår den till noll. Det måste undvikas och skapar problem, och därför måste den här sekvensen övervakas.
 
-Du kan förhindra detta med stora tabeller genom att använda en viss sekvens. Detta kan du göra med **pkSequence** i schemat.
+Du kan förhindra detta med stora tabeller genom att använda en viss sekvens. Detta kan göras med attributet **pkSequence** i schemat.
 
 Högfrekventa arbetsflöden som skapar många loggar kommer att ta många ID:n i anspråk. Vi rekommenderar därför att du undviker alltför många loggar och höga frekvenser i arbetsflöden.
 
@@ -48,13 +48,13 @@ Leveranser som är äldre än två år ska rensas från instansen.
 
 Antalet filer på programserverdisken bör inte öka i oändlighet.
 
-Importera arbetsflöden skapar filer och orsakar därför diskexpansion. Detta kan förhindras genom att använda standarden [Filinsamlare](../../workflow/using/file-collector.md) aktivitet. Filinsamlaren flyttar filer till en tillfällig mapp och tömmer dem automatiskt.
+Importera arbetsflöden skapar filer och orsakar därför diskexpansion. Detta kan förhindras genom att använda standardaktiviteten [Filinsamlare](../../workflow/using/file-collector.md). Filinsamlaren flyttar filer till en tillfällig mapp och tömmer dem automatiskt.
 
 Om ett arbetsflöde importerar filer och inte använder standardfunktionerna måste det rensas för att diskutrymmet ska bli så litet som möjligt.
 
 ## Transaktionsdata och transaktionsloggar {#transactional-data-and-logs}
 
-Varje [arbetsflöde](../../workflow/using/data-life-cycle.md#work-table) som importerar data till Adobe Campaign gör att databasens storlek växer.
+Varje [arbetsflöde](../../workflow/using/data-life-cycle.md#work-table) som importerar data till Adobe Campaign gör att databasens storlek ökar.
 
 Kontrollera att arbetsflödena för rensning eller tömning körs och att posterna effektivt rensas. Alla transaktionsdata och loggar måste rensas. Rensningsaktiviteten rensar endast standardtabellerna: spårning och breda loggar. Specifika tabeller måste rensas av specifika arbetsflöden. Se [det här avsnittet](../../workflow/using/monitoring-workflow-execution.md#purging-the-logs).
 

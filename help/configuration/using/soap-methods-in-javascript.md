@@ -14,11 +14,11 @@ ht-degree: 9%
 
 # SOAP-metoder i JavaScript{#soap-methods-in-javascript}
 
-Detta är det JavaScript som körs på Adobe Campaign-servern.
+Detta är den JavaScript som körs på Adobe Campaign-servern.
 
 ## Statiska metoder {#static-methods}
 
-Statiska SOAP-metoder nås genom att en metod anropas i objektet som representerar schemat. Scheman är egenskaper för namespace-objekt. Dessa namnutrymmen är globala variabler, vilket innebär att variablerna xtk och nms representerar motsvarande namnutrymmen
+Statiska SOAP metoder används genom att en metod anropas i objektet som representerar schemat. Scheman är egenskaper för namespace-objekt. Dessa namnutrymmen är globala variabler, vilket innebär att variablerna xtk och nms representerar motsvarande namnutrymmen
 
 I följande exempel anropas den statiska PostEvent-metoden för xtk:workflow-schemat:
 

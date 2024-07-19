@@ -25,7 +25,7 @@ Mitt arbetsflöde för spårning misslyckas, hur kan jag identifiera skadade rad
 >
 >Endast för Windows
 
-Den skadade loggfilen för spårning ../nl6/var/&lt;instance_name>Loggen /redir/log/0x0000 kan stoppa arbetsflödet för spårning. Om du enkelt vill identifiera skadade rader och ta bort dem för att återuppta arbetsflödet för spårning kan du använda kommandona nedan.
+Den skadade loggfilen för spårning ../nl6/var/&lt;instance_name>/redir/log/0x0000 kan stoppa spårningsarbetsflödet. Om du enkelt vill identifiera skadade rader och ta bort dem för att återuppta arbetsflödet för spårning kan du använda kommandona nedan.
 
 ### Jag vet i vilken fil den skadade raden finns
 
@@ -85,7 +85,7 @@ När du försöker komma åt spårningslänkarna visas följande meddelande:
 
 `Requested URL '/r/ id=h787bc0,281a4d8,281a4da&amp;p1=1' cannot be found`
 
-1. Åtkomst &lt;redirection_server>/r/test URL och kontrollera om build-numret och localhost returnerades av begäran.
+1. Gå till URL:en för &lt;redirection_server>/r/test och kontrollera om build-numret och localhost returnerades av begäran.
 
 1. Kontrollera konfigurationen reserveServer i filen serverConf.xml för spårningsservern. Den här konfigurationen bör vara i omdirigeringsläge.
 
@@ -102,13 +102,13 @@ När du försöker komma åt spårningslänkarna visas följande meddelande:
    </redirection>
    ```
 
-1. Kontrollera manuellt om &lt;deliveryid>XML-filen finns på datorn i .../nl6/var/&lt;instance_name>/redir/url/&lt;yyyy> katalog (YYYY representerar leveransår).
+1. Kontrollera manuellt om filen &lt;deliveryID>.xml finns på datorn i katalogen .../nl6/var/&lt;instance_name>/redir/url/&lt;YYYY> (YYYY representerar leveransår).
 
-1. Kontrollera manuellt om &lt;trackingurlid> finns i &lt;deliveryid>XML-fil.
+1. Kontrollera manuellt om &lt;trackingUrlId> kan hittas i filen &lt;deliveryID>.xml.
 
 1. Kontrollera manuellt förekomst av broadcastID i relaterad leverans-ID.
 
-1. Kontrollera &lt;deliveryid>.xml-filbehörigheter i .../nl6/var/&lt;instance_name>/redir/url/year.
+1. Kontrollera &lt;deliveryID>.xml-filbehörigheter i katalogen .../nl6/var/&lt;instance_name>/redir/url/year.
 
    De bör ha minst 644 behörigheter så att Apache kan läsa spårnings-URL:er för att omdirigera begärd länk.
 
@@ -130,11 +130,11 @@ Följ de här stegen när du uppdaterar alternativet NmsTracking_Pointer:
 
 Du kan anpassa uppföljningsformeln för klickningar och ange en anpassad Adobe Analytics-spårningsformel.
 
-Den sortens anpassning måste göras med försiktighet för att undvika att lägga till extra radmatade tecken. Alla länkade tecken som finns utanför JavaScript-uttrycket finns i den slutliga formeln.
+Den sortens anpassning måste göras med försiktighet för att undvika att lägga till extra radmatade tecken. Alla radmatade tecken som finns utanför JavaScript-uttrycket finns i den slutliga formeln.
 
 Den här typen av extra radbrytningstecken i spårnings-URL:en kommer att leda till problem i vissa webMail-filer (AOL, GMail osv.).
 
-**Exempel:**
+**Första exemplet:**
 
 * Felaktig syntax
 
@@ -157,7 +157,7 @@ Den här typen av extra radbrytningstecken i spårnings-URL:en kommer att leda t
   %>&cid=<%= message.delivery.internalName %>&bid=<%= message.id.toString().toLowerCase() %><% } %>
   ```
 
-För att förstå var den extra raden finns kan du ersätta JavaScript-uttrycket med en fast sträng STRING.
+Du kan ersätta JavaScript-uttrycket med en fast sträng STRING för att förstå var den extra raden finns.
 
 ```
 // Incorrect
@@ -193,7 +193,7 @@ STRING1&cid=STRING2&bid=STRING3
   %>
   ```
 
-För att förstå var den extra raden finns kan du ersätta JavaScript-uttrycket med en fast sträng STRING.
+Du kan ersätta JavaScript-uttrycket med en fast sträng STRING för att förstå var den extra raden finns.
 
 ```
 // Incorrect
@@ -205,7 +205,7 @@ STRING1&cid=STRING2&bid=STRING3&SHPID=STRING4
 
 ## Hämtningen av spårningsloggar är för långsam {#slow-retrieval}
 
-När instansen inte hämtar loggar för direkt spårning utan från en fjärransluten Adobe Campaign Classic-server, hämtas loggarna via anropet GetTrackingLogs SOAP, som definieras i RemoteTracking-schemat.
+När instansen inte hämtar loggar för direkt spårning utan från en annan Adobe Campaign Classic-server hämtas loggarna via anropet GetTrackingLogs SOAP vilket definieras i RemoteTracking-schemat.
 
 Med ett alternativ i filen serverConf.xml kan du ange antalet loggar som hämtas samtidigt med den här metoden: logCountPerRequest.
 

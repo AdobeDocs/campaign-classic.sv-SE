@@ -25,12 +25,12 @@ Med Interaction kan du skapa och hantera en katalog med erbjudanden och konfigur
 
 ![](assets/Offermgt2.png)
 
-![](assets/do-not-localize/how-to-video.png) Om du vill bekanta dig med interaktionsfunktionen och de terminologier som används i Campaign Interaction kan du titta på [den här videon](https://helpx.adobe.com/campaign/classic/how-to/acs-overview.html?playlist=/ccx/v1/collection/product/campaign/classic/segment/digital-marketers/explevel/intermediate/applaunch/get-started/collection.ccx.js&amp;ref=helpx.adobe.com).
+![](assets/do-not-localize/how-to-video.png) Titta på [den här videon](https://helpx.adobe.com/campaign/classic/how-to/acs-overview.html?playlist=/ccx/v1/collection/product/campaign/classic/segment/digital-marketers/explevel/intermediate/applaunch/get-started/collection.ccx.js&amp;ref=helpx.adobe.com) om du vill bekanta dig med interaktionsfunktionen och de terminologier som används i Campaign Interaction.
 
 ## Relaterade ämnen
 
 | Användbara sidor | Ytterligare resurser |
 |---|---|
-| [Interaktionsimplementeringssteg](../../interaction/using/implementation-steps.md) | [Distribution av testerbjudanden](../../interaction/using/about-offers-simulation.md) |
+| [Interaktionsimplementeringssteg](../../interaction/using/implementation-steps.md) | [Distribution av testerbjudande](../../interaction/using/about-offers-simulation.md) |
 | [Live-/designmiljöer](../../interaction/using/live-design-environments.md) | [Lägga till ett erbjudande i ett e-postmeddelande](../../interaction/using/integrating-an-offer-via-the-wizard.md) |
 | [Skapa erbjudandeplatser](../../interaction/using/creating-offer-spaces.md) | [Användningsfall: lägg till ett erbjudande på en webbplats](../../interaction/using/offers-on-an-inbound-channel.md) |

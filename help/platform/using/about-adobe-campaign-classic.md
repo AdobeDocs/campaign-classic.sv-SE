@@ -21,11 +21,11 @@ Med Adobe Campaign kan du samordna framtagningen av personliga marknadsföringsk
 
 >[!AVAILABILITY]
 >
->* Hjälpmaterialen i den här samlingen gäller för Campaign Classic v7 i dess [senaste versionen](../../rn/using/latest-release.md). Ett specifikt märke finns när ett avsnitt också gäller Campaign v8.
+>* Hjälpmaterialen i den här samlingen gäller för Campaign Classic v7 i den [senaste versionen](../../rn/using/latest-release.md). Ett specifikt märke finns när ett avsnitt också gäller Campaign v8.
 >
 >* Adobe Campaign v8-dokumentation finns tillgänglig [här](https://experienceleague.adobe.com/docs/campaign/campaign-v8/campaign-home.html?lang=sv).
 
-![](assets/do-not-localize/how-to-video.png) [Upptäck de viktigaste funktionerna i video](#video)
+![](assets/do-not-localize/how-to-video.png) [Identifiera primära funktioner i videon](#video)
 
 ## Viktiga funktioner {#key-capabilities}
 
@@ -53,7 +53,7 @@ Funktionen med avancerad datahantering utökar möjligheterna för databearbetni
 
 Med Adobe Campaign kan du utforma och orkestrera målinriktade och personaliserade kampanjer över flera kanaler: e-post, direktutskick, SMS och push-meddelanden. Ett enda gränssnitt erbjuder alla funktioner du behöver för att schemalägga, orkestrera, konfigurera, personalisera, automatisera, genomföra och mäta alla kampanjer och all kommunikation. Mer information om schemaläggning och att köra kampanjer finns på [den här sidan](../../campaign/using/setting-up-marketing-campaigns.md).
 
-### Personalisering och interaktion i realtid {#personalization-and-real-time-interaction}
+### Personalization och interaktion i realtid {#personalization-and-real-time-interaction}
 
 Locka till dig kundernas uppmärksamhet och förbättra svarsfrekvensen tack vare den avancerade personaliseringen av meddelandets innehåll och rubriker baserade på kundprofiler och preferenser. Mer information om innehållshantering och personalisering av meddelanden finns på [den här sidan](../../delivery/using/about-personalization.md). Samarbete kring innehållshantering, meddelanden och godkännandekretsar beskrivs i [detta avsnitt](../../mrm/using/about-marketing-resource-management.md).
 
@@ -76,7 +76,7 @@ Följande funktioner finns tillgängliga. Beroende på vilket licensavtal du har
 * [MRM](../../mrm/using/about-marketing-resource-management.md) – hantera marknadsföringsresurser och budgetar,
 * [Interaktion](../../interaction/using/interaction-and-offer-management.md) – hantera erbjudanden med Campaign,
 * [Meddelandecenter](../../message-center/using/about-transactional-messaging.md) – skicka transaktionsmeddelanden via e-post, SMS eller mobilappar,
-* [Social marknadsföring](../../social/using/about-social-marketing.md) - kommunicera i sociala medier: Facebook, X (tidigare Twitter),
+* [Social marknadsföring](../../social/using/about-social-marketing.md) - kommunicera via sociala medier: Facebook, X (tidigare Twitter),
 * [Arbetsflöde](../../workflow/using/about-workflows.md)/datahantering – automatisera processer och hantera data med arbetsflöden,
 * [Webbapplikationer](../../web/using/about-web-applications.md) – skapa webbsidor och formulär,
 * [Survey Manager](../../surveys/using/about-surveys.md) – skapa undersökningar och omröstningar online,
@@ -93,4 +93,4 @@ I den här videon visas Campaign Classicens viktigaste funktioner.
 
 >[!VIDEO](https://video.tv.adobe.com/v/35129?quality=12)
 
-Det finns fler videor med Campaign Classic om hur man gör [här](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=sv).
+Ytterligare Campaign Classic om instruktionsvideor finns [här](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=sv).

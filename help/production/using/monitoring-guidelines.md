@@ -17,7 +17,7 @@ ht-degree: 18%
 
 ## Instansövervakningsinstrumentpanel {#instance-monitoring-dashboard}
 
-The **[!UICONTROL Monitoring]** -fliken, som är tillgänglig från Campaign Classicens hemsida, är den viktigaste startpunkten som hjälper dig att övervaka instansen.
+Fliken **[!UICONTROL Monitoring]**, som du kommer åt från Campaign Classicens hemsida, är startpunkten som du kan använda för att övervaka instansen.
 
 Här finns en kontrollpanel med information om vad som händer i instansen: status (version av bygge, installerade paket, osv.), systemindikatorer, loggar, arbetsflöden som körs, status för senaste skickade leveranser osv.
 
@@ -56,7 +56,7 @@ På Kontrollpanelen kan du hantera flera inställningar för instansen: hantera 
 >
 >Kontrollpanelen är tillgänglig för alla administratörsanvändare. Stegen för att bevilja administratörsåtkomst till en användare finns på [den här sidan](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/managing-permissions.html?lang=sv#discover-control-panel).
 >
->Observera att din instans måste lagras på AWS och uppgraderas med [senaste GA-version](../../rn/using/rn-overview.md). Läs om hur du kontrollerar din version i [det här avsnittet](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version). Följ stegen på [den här sidan](https://experienceleague.adobe.com/docs/control-panel/using/faq.html?lang=sv) för att kontrollera om instanser har AWS som värd.
+>Observera att din instans måste lagras på AWS och uppgraderas med den [senaste GA-versionen](../../rn/using/rn-overview.md). Läs om hur du kontrollerar din version i [det här avsnittet](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version). Följ stegen på [den här sidan](https://experienceleague.adobe.com/docs/control-panel/using/faq.html?lang=sv) för att kontrollera om instanser har AWS som värd.
 
 ### Övervaka arbetsflöden {#monitoring-workflows}
 
@@ -94,14 +94,14 @@ SMTP-rapporter visar leveransstatistik och SMTP-fel per domän. [Läs mer](../..
 
 **Bästa praxis**
 
-[Bästa sättet att leverera, skicka och utforma](../../delivery/using/delivery-best-practices.md) kan hjälpa dig att förbättra deras prestanda.
+[Bästa tillvägagångssätt för leverans och design](../../delivery/using/delivery-best-practices.md) kan hjälpa dig att förbättra prestanda.
 
-**Felsökning av leverans**
+**Felsökning vid leverans**
 Specifika åtgärder kan utföras vid problem med leveranser:
 * [Leveransproblem](../../production/using/performance-and-throughput-issues.md#deliverability_issues)
 * [Bildvisningsproblem](../../production/using/image-display-issues.md)
 * [Problem med leveransresultat](../../delivery/using/delivery-performances.md)
-* [Temporära filproblem](../../production/using/temporary-files.md) - *endast lokala värdmodeller*
+* [Tillfälliga filer utfärdas](../../production/using/temporary-files.md) - *endast på lokala värdmodeller*
 
 ### Övervaka databasen {#monitoring-database}
 
@@ -117,15 +117,15 @@ Specifika åtgärder kan utföras när problem med databasprestanda påträffas.
 
 **Databasunderhåll**
 
-*enbart lokala och hybridvärdmodeller*
+*Endast lokala och hybridvärdmodeller*
 
 Vi rekommenderar att du regelbundet utför databasunderhåll för att undvika överförbrukning av diskutrymme, vilket påverkar databasåtkomsten. [Klicka här](../../production/using/recommendations.md) för mer information.
 
 **Säkerhetskopiering och återställning**
 
-*enbart lokala och hybridvärdmodeller*
+*Endast lokala och hybridvärdmodeller*
 
-Säkerhetskopiering är nödvändigt för att undvika dataförlust i händelse av problem (oavsett om det är fysiskt eller systemrelaterat) på en dator. [Klicka här](../../production/using/backup.md) för mer information. Återställningsproceduren beskrivs i [det här avsnittet](../../production/using/restoration.md).
+Säkerhetskopiering är nödvändigt för att undvika dataförlust i händelse av problem (oavsett om det är fysiskt eller systemrelaterat) på en dator. [Klicka här](../../production/using/backup.md) om du vill ha mer information. Återställningsproceduren beskrivs i [det här avsnittet](../../production/using/restoration.md).
 
 ## Tekniska principer för Campaign Classic {#campaign-classic-technical-principles}
 

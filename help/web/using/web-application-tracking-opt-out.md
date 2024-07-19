@@ -18,11 +18,11 @@ ht-degree: 2%
 
 Med Adobe Campaign kan du sluta spåra webbbeteenden för slutanvändare som avanmäler sig från beteendespårning via cookies eller webbfyrar. Funktionen inkluderar möjligheten att visa en banderoll för att ge slutanvändaren det alternativet. Du kan lägga till dessa banderoller i webbprogram eller landningssidor.
 
-Om en slutanvändare väljer bort beteendespårning via cookies eller webbfyrar överförs den informationen till Adobe Campaign spårningsserver med JavaScript API:er. Observera att vissa jurisdiktioner kan kräva att kunden gör en anmälan till slutanvändarna innan en avanmälan kan erbjudas (eller har andra juridiska krav), och det är kundens ansvar att följa tillämpliga lagar.
+Om en slutanvändare väljer bort beteendespårning via cookies eller webbfyrar, överförs den informationen till Adobe Campaign spårningsserver med JavaScript API:er. Observera att vissa jurisdiktioner kan kräva att kunden gör en anmälan till slutanvändarna innan en avanmälan kan erbjudas (eller har andra juridiska krav), och det är kundens ansvar att följa tillämpliga lagar.
 
 >[!NOTE]
 >
->När du använder skript ska du alltid följa riktlinjerna i [Checklista för säkerhet och integritet](https://helpx.adobe.com/campaign/kb/acc-security.html#dev).
+>När du använder skript ska du alltid följa riktlinjerna som beskrivs i [checklistan för säkerhet och sekretess](https://helpx.adobe.com/campaign/kb/acc-security.html#dev).
 
 ## Konfigurera banderollen {#configuring-the-banner-}
 
@@ -34,7 +34,7 @@ Adobe Campaign levereras med en exempelbanderoll som du måste anpassa efter din
 >
 >Om du vill skapa en egen banderoll måste du anpassa den färdiga banderollen.
 
-Om du vill aktivera banderollen måste du konfigurera webbprogrammets egenskaper. Se [Utforma ett webbprogram](designing-a-web-application.md) -avsnitt.
+Om du vill aktivera banderollen måste du konfigurera webbprogrammets egenskaper. Se avsnittet [Designa ett webbprogram](designing-a-web-application.md).
 
 Om spårning av webbsidor är aktiverat kan du antingen ha:
 
@@ -63,7 +63,7 @@ Standardbanderollen har följande struktur:
       
 ```
 
-Du måste ersätta **Infoga ditt meddelande här** med blocket som innehåller din spårningsinformation. Ersättningen ska utföras i det nya anpassningsblocket som hör till avanvisningsbanderollen.
+Du måste ersätta **Infoga meddelandet här** med blocket som innehåller din spårningsinformation. Ersättningen ska utföras i det nya anpassningsblocket som hör till avanvisningsbanderollen.
 
 Banderollen levereras med en specifik CSS. Du kan dock skriva över formaten när du skapar och konfigurerar en webbsida. Se [den här sidan](content-editor-interface.md).
 
@@ -79,14 +79,14 @@ Cookie-namnet är **acoptout**. De gemensamma värdena är:
 
 De tillgängliga API:erna på klientsidan för att anpassa banderollen är:
 
-* **NL.ClientWebTracking.allow()**: Anger värdet för avanmälningscookie som tillåter webbspårning. Webbspårning är tillåtet som standard.
-* **NL.ClientWebTracking.forbid()**: Anger värdet för cookie för avanmälan så att webbspårning förbjuds. Webbspårning kräver att användarindata tillåts.
-* **NL.ClientWebTracking.closeOptOutBanner(bannerDomElt)**: Stänger bannern för att avanmäla sig efter att användaren har klickat på knappen Godkänn eller Avvisa. (under klickhändelsebubblingsfasen)
+* **NL.ClientWebTracking.allow()**: Anger cookie-värdet för avanmälan så att webbspårning tillåts. Webbspårning är tillåtet som standard.
+* **NL.ClientWebTracking.forbid()**: Anger att cookie-värdet för avanmälan ska förhindra webbspårning. Webbspårning kräver att användarindata tillåts.
+* **NL.ClientWebTracking.closeOptOutBanner(bannerDomElt)**: Stänger cookie-banderollen för avanmälan när användaren har klickat på knappen Acceptera eller Avvisa. (under klickhändelsebubblingsfasen)
 
-  bannerDomElt {DOMElement} rotelementet DOM för den cookie-banderoll som måste tas bort
+  bannerDomElt {DOMElement} är rot-DOM-elementet för den cookie-banderoll som måste tas bort
 
 * **NL.ClientWebTracking.hasUserPrefs()**: Returnerar true om användaren har valt sina inställningar för webbspårning.
-* **NL.ClientWebTracking.getUserPrefs()**: Returnerar värdet för den cookie som definierar användarens inställningar.
+* **NL.ClientWebTracking.getUserPrefs()**: Returnerar cookie-värdet för avanmälan som definierar användarens inställningar.
 
 Om du måste skriva en JSSP är API:er på serversidan tillgängliga:
 

@@ -42,15 +42,15 @@ Adobe Campaign bygger på en tjänsteinriktad arkitektur (SOA) och består av fl
 
 >[!CAUTION]
 >
->Om inget annat uttryckligen anges är installation, uppdatering och underhåll av alla komponenter i en Adobe Campaign-plattform datoradministratörens ansvar. Detta innebär att man måste implementera förutsättningarna för Adobe Campaign-program samt följa Campaign [Kompatibilitetsmatris](../../rn/using/compatibility-matrix.md) mellan komponenter.
+>Om inget annat uttryckligen anges är installation, uppdatering och underhåll av alla komponenter i en Adobe Campaign-plattform datoradministratörens ansvar. Detta innebär att du måste implementera förutsättningarna för Adobe Campaign-program samt att du följer Campaign [kompatibilitetsmatrisen ](../../rn/using/compatibility-matrix.md) mellan komponenterna.
 
 ## Presentationslager {#presentation-layer}
 
 Programmet kan nås på olika sätt beroende på användarnas behov: Rich Client, Thin Client eller API Integration.
 
-* **Rich Client**: Huvudanvändargränssnittet i programmet är en avancerad klient, d.v.s. ett inbyggt program (Windows) som kommunicerar med Adobe Campaign programserver enbart med standardInternetprotokoll (SOAP, HTTP osv.). Den här konsolen är mycket användarvänlig och ger mycket liten bandbredd (med hjälp av ett lokalt cacheminne) och är utformad för enkel driftsättning. Konsolen kan distribueras från en webbläsare, kan uppdateras automatiskt och kräver ingen specifik nätverkskonfiguration eftersom den bara genererar HTTP(S)-trafik.
-* **Tunn klient**: Vissa delar av programmet kan nås via en enkel webbläsare via ett användargränssnitt i HTML, inklusive rapporteringsmodulen, godkännandefaser, funktioner för distribuerad marknadsföring (central/lokal), instansövervakning osv. I det här läget kan du inkludera Adobe Campaign-funktioner i ett intranät eller ett extranät.
-* **Integrering via API:er**: I vissa fall kan systemet anropas från ett externt program med hjälp av webbtjänsternas API:er som exponeras via SOAP-protokollet.
+* **Rich client**: Huvudanvändargränssnittet i programmet är en rik klient, d.v.s. ett internt program (Windows) som kommunicerar med Adobe Campaign-programservern enbart med standardInternetprotokoll (SOAP, HTTP osv.). Den här konsolen är mycket användarvänlig och ger mycket liten bandbredd (med hjälp av ett lokalt cacheminne) och är utformad för enkel driftsättning. Konsolen kan distribueras från en webbläsare, kan uppdateras automatiskt och kräver ingen specifik nätverkskonfiguration eftersom den bara genererar HTTP(S)-trafik.
+* **Tunn klient**: Vissa delar av programmet kan nås via en enkel webbläsare via ett HTML-användargränssnitt, inklusive rapportmodulen, stegen för godkännande av leverans, funktionerna i modulen Distribuerad marknadsföring (central/lokal), instansövervakning osv. I det här läget kan du inkludera Adobe Campaign-funktioner i ett intranät eller ett extranät.
+* **Integrering via API:er**: I vissa fall kan systemet anropas från externa program med hjälp av de webbtjänstAPI:er som exponeras via SOAP.
 
 ## Logiskt programlager {#logical-application-layer}
 
@@ -74,7 +74,7 @@ Den hanterar också regelbundet genomförda tekniska arbetsflöden, inklusive:
 * Rensa: Databasrengöring. Används för att rensa gamla poster och undvika att databasen växer exponentiellt.
 * Fakturering: Automatisk sändning av en aktivitetsrapport för plattformen (databasstorlek, antal marknadsföringsåtgärder, antal aktiva profiler osv.).
 
-**Delivery Server** (nlserver mta)
+**Leveransserver** (nlserver mta)
 
 Adobe Campaign har inbyggda funktioner för e-postutsändning. Den här processen fungerar som en MTA (SMTP mail transfer agent). Den personaliserar meddelanden från en till en och hanterar deras fysiska leverans. Den fungerar med leveransjobb och hanterar automatiska återförsök. När spårning är aktiverat ersätts URL-adresserna automatiskt så att de pekar på omdirigeringsservern.
 
@@ -84,7 +84,7 @@ Den här processen kan hantera anpassning och automatisk sändning till en tredj
 
 För e-post hanterar Adobe Campaign automatiskt öppnings- och klickspårning (transaktionsspårning på webbplatsnivå är en ytterligare möjlighet). För att uppnå detta skrivs de URL:er som ingår i e-postmeddelandena om så att de pekar på den här modulen, som registrerar den överförda Internet-användaren innan de dirigeras om till den önskade URL:en.
 
-För att garantera högsta tillgänglighet är den här processen helt oberoende av databasen: de andra serverprocesserna kommunicerar med den endast med SOAP-anrop (HTTP, HTTP(S) och XML). Tekniskt sett implementeras den här funktionen i en tilläggsmodul för en HTTP-server (ISAPI-tillägg i IIS eller en DSO Apache-modul osv.) och finns endast i Windows.
+För att garantera högsta tillgänglighet är den här processen helt oberoende av databasen: de andra serverprocesserna kommunicerar med den endast med SOAP (HTTP, HTTP(S) och XML). Tekniskt sett implementeras den här funktionen i en tilläggsmodul för en HTTP-server (ISAPI-tillägg i IIS eller en DSO Apache-modul osv.) och finns endast i Windows.
 
 Det finns även andra tekniska processer:
 
@@ -102,15 +102,15 @@ Den här processen avsöker SMS-routern för att samla in förloppsstatus och up
 
 Den här tekniska processen hämtar loggmeddelanden och spårningar som genererats av andra processer och skriver dem till hårddisken. Detta gör att det finns gott om information som kan användas för diagnostik i händelse av problem.
 
-**Skrivspårningsloggar** (nlserver trackinglogd)
+**Skriver spårningsloggar** (nlserver trackinglog)
 
 Den här processen sparar spårningsloggarna som genereras av omdirigeringsprocessen.
 
-**Skriver inkommande händelser** (nlserver interactiond)
+**Skriver inkommande händelser** (ingen serverinteraktion)
 
 Denna process gör att inkommande händelser spelas in på disken inom ramen för Interaction.
 
-**Tillsynsmoduler** (nlserver watchdog)
+**Kontrollerande moduler** (nlserver watchdog)
 
 Denna tekniska process fungerar som en huvudprocess som sporrar de andra. Den övervakar dem också och startar om dem automatiskt i händelse av incidenter, vilket ger maximal aktiv systemtid.
 
@@ -120,7 +120,7 @@ Den här processen innehåller statistik om antalet anslutningar, de meddelanden
 
 >[!NOTE]
 >
->Den fullständiga listan över Adobe Campaign-moduler finns i [det här dokumentet](../../production/using/operating-principle.md).
+>Den fullständiga listan med Adobe Campaign-moduler finns i [det här dokumentet](../../production/using/operating-principle.md).
 
 ## Beständigt lager {#persistence-layer}
 

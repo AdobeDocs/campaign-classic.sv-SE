@@ -20,7 +20,7 @@ ht-degree: 2%
 
 Det finns två typer av operatorer som använder Interaction: offer managers och delivery managers. De har specifika rättigheter som bara ger dem tillgång till vissa delar av trädet och plattformen.
 
-* **[!UICONTROL Offer manager]** : skapar och underhåller erbjudanden. Observera att om erbjudanden används i arbetsflödet måste operatorn finnas i **[!UICONTROL Administrator]** eller **[!UICONTROL Offer managers]** operatörsgrupp för att köra arbetsflödet.
+* **[!UICONTROL Offer manager]** : skapar och underhåller erbjudanden. Observera att om erbjudanden används i arbetsflödet måste operatorn finnas i **[!UICONTROL Administrator]**- eller **[!UICONTROL Offer managers]**-operatorgruppen för att arbetsflödet ska kunna köras.
 * **[!UICONTROL Delivery manager]** : godkänner och använder erbjudanden
 
 Stegen för att skapa operatorer som är specifika för Interaction är identiska med de som används för att skapa alla andra operatorer på plattformen. Mer information finns i [det här avsnittet](../../platform/using/access-management.md). Rättigheterna konfigureras när operatorn skapas.
@@ -28,14 +28,14 @@ Stegen för att skapa operatorer som är specifika för Interaction är identisk
 ## Erbjudandehanterare {#offer-manager}
 
 1. Skapa en ny operator.
-1. Gå till **[!UICONTROL Groups and named rights]** fönster, klicka **[!UICONTROL Add]** och väljer **[!UICONTROL Offer manager]** grupp.
+1. Gå till fönstret **[!UICONTROL Groups and named rights]**, klicka på **[!UICONTROL Add]** och markera gruppen **[!UICONTROL Offer manager]**.
 
    ![](assets/offer_operators_create_001.png)
 
 Rättigheterna som tilldelats den som ansvarar för erbjudandet gör att de kan utföra följande uppgifter:
 
-* Ändra **[!UICONTROL Design]** miljöer.
-* Visa **[!UICONTROL Live]** miljöer.
+* Ändra **[!UICONTROL Design]**-miljöer.
+* Visa **[!UICONTROL Live]**-miljöer.
 * Konfigurera administrationsfunktioner (fördefinierade blanksteg och filter).
 * Skapa och ändra kategorier.
 * Skapa erbjudanden.
@@ -49,13 +49,13 @@ Rättigheterna som tilldelats den som ansvarar för erbjudandet gör att de kan 
 ## Delivery manager {#delivery-manager}
 
 1. Skapa en ny operator.
-1. Gå till **[!UICONTROL Groups and named rights]** fönster, klicka **[!UICONTROL Add]** och väljer **[!UICONTROL Delivery manager]** grupp.
+1. Gå till fönstret **[!UICONTROL Groups and named rights]**, klicka på **[!UICONTROL Add]** och markera gruppen **[!UICONTROL Delivery manager]**.
 
    ![](assets/offer_operators_create_002.png)
 
 De rättigheter som tilldelats till leveransansvariga gör det möjligt för dem att utföra följande uppgifter:
 
-* Visa **[!UICONTROL Live]** miljöer.
+* Visa **[!UICONTROL Live]**-miljöer.
 * Visa och ändra erbjudandekategorier.
 * Godkänn erbjudanden om den här leveranshanteraren har angetts som en av dess granskare.
 
@@ -69,8 +69,8 @@ De rättigheter som tilldelats till leveransansvariga gör det möjligt för dem
  <tbody> 
   <tr> 
    <td> </td> 
-   <td> <strong>Erbjudandehanterare (redigering)</strong><br /> </td> 
-   <td> <strong>Erbjudandehanterare (live)</strong><br /> </td> 
+   <td> <strong>Erbjudandehanteraren (redigering)</strong><br /> </td> 
+   <td> <strong>Erbjudandehanteraren (live)</strong><br /> </td> 
   </tr> 
   <tr> 
    <td> <strong>Trädstrukturnivå</strong><br /> </td> 
@@ -78,12 +78,12 @@ De rättigheter som tilldelats till leveransansvariga gör det möjligt för dem
    <td> </td> 
   </tr> 
   <tr> 
-   <td> Erbjudanden som redigeras/Live-erbjudanden<br /> </td> 
+   <td> Erbjudanden som redigeras / Live-erbjudanden <br /> </td> 
    <td> Läs/skriv<br /> </td> 
    <td> Läs<br /> </td> 
   </tr> 
   <tr> 
-   <td> Mottagare - miljö<br /> </td> 
+   <td> Mottagare - miljö <br /> </td> 
    <td> Läs/skriv<br /> </td> 
    <td> Läs<br /> </td> 
   </tr> 
@@ -113,12 +113,12 @@ De rättigheter som tilldelats till leveransansvariga gör det möjligt för dem
    <td> Läs<br /> </td> 
   </tr> 
   <tr> 
-   <td> Erbjudandekatalog<br /> </td> 
+   <td> Erbjud katalog <br /> </td> 
    <td> Läs/skriv<br /> </td> 
    <td> Läs<br /> </td> 
   </tr> 
   <tr> 
-   <td> Erbjudandekategori<br /> </td> 
+   <td> Erbjudandekategori <br /> </td> 
    <td> Läs/skriv<br /> </td> 
    <td> Läs<br /> </td> 
   </tr> 
@@ -129,8 +129,8 @@ De rättigheter som tilldelats till leveransansvariga gör det möjligt för dem
  <tbody> 
   <tr> 
    <td> </td> 
-   <td> <strong>Delivery manager (redigering)</strong><br /> </td> 
-   <td> <strong>Delivery manager (live)</strong><br /> </td> 
+   <td> <strong>Leveranshanteraren (redigering)</strong><br /> </td> 
+   <td> <strong>Leveranshanteraren (live)</strong><br /> </td> 
   </tr> 
   <tr> 
    <td> <strong>Trädstrukturnivå</strong><br /> </td> 
@@ -138,12 +138,12 @@ De rättigheter som tilldelats till leveransansvariga gör det möjligt för dem
    <td> </td> 
   </tr> 
   <tr> 
-   <td> Erbjudanden som redigeras/Live-erbjudanden<br /> </td> 
+   <td> Erbjudanden som redigeras / Live-erbjudanden <br /> </td> 
    <td> </td> 
    <td> Läs<br /> </td> 
   </tr> 
   <tr> 
-   <td> Mottagare - miljö<br /> </td> 
+   <td> Mottagare - miljö <br /> </td> 
    <td> </td> 
    <td> Läs<br /> </td> 
   </tr> 
@@ -173,12 +173,12 @@ De rättigheter som tilldelats till leveransansvariga gör det möjligt för dem
    <td> Läs<br /> </td> 
   </tr> 
   <tr> 
-   <td> Erbjudandekatalog<br /> </td> 
+   <td> Erbjud katalog <br /> </td> 
    <td> Läs<br /> </td> 
    <td> Läs<br /> </td> 
   </tr> 
   <tr> 
-   <td> Erbjudandekategori<br /> </td> 
+   <td> Erbjudandekategori <br /> </td> 
    <td> </td> 
    <td> Läs<br /> </td> 
   </tr> 

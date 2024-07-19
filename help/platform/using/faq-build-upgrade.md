@@ -17,7 +17,7 @@ ht-degree: 0%
 # Vanliga frågor om uppgradering {#build-upgrade-faq}
 
 
-Adobe Campaign uppdateras regelbundet. Om du känner till vår publicerade [Versionsinformation](../../rn/using/rn-overview.md)är du antagligen medveten om att i genomsnitt 2/3 mindre versioner med nya funktioner släpps förbättringar och korrigeringar varje år. Dessutom släpper vi regelbundet bara byggen med kumulativa korrigeringar. Denna regelbundna uppdateringsfrekvens syftar till att få den senaste och bästa informationen i händerna, så att miljön är helt säker och så tydligt som möjligt förbättrar upplevelsen av vår produkt.
+Adobe Campaign uppdateras regelbundet. Om du känner till vår publicerade [versionsinformation](../../rn/using/rn-overview.md) är du antagligen medveten om att i genomsnitt 2/3 mindre versioner packade med nya funktioner släpps förbättringar och korrigeringar varje år. Dessutom släpper vi regelbundet bara byggen med kumulativa korrigeringar. Denna regelbundna uppdateringsfrekvens syftar till att få den senaste och bästa informationen i händerna, så att miljön är helt säker och så tydligt som möjligt förbättrar upplevelsen av vår produkt.
 
 Det är viktigt att våra kunder kör den senaste versionen av Adobe Campaign. Det gör också att Adobe kan hjälpa till mycket effektivare om du stöter på problem - det tar ofta längre tid att identifiera, återge och åtgärda ett fel i en gammal version, för att inte tala om att vissa problem som du kanske stöter på redan har åtgärdats i en nyligen gjord version.
 
@@ -31,11 +31,11 @@ Läs mer [i det här avsnittet](../../rn/using/rn-overview.md).
 
 ## Vilken är den senaste versionen av Adobe Campaign Classic?
 
-Den senaste Campaign Classicen, med nya funktioner och dokumentation, finns i den senaste [Versionsinformation](../../rn/using/latest-release.md).
+Den senaste versionen av Campaign Classicen, inklusive nya funktioner och dokumentation, finns i den senaste [versionsinformationen](../../rn/using/latest-release.md).
 
 ## Hur vet jag vilken version jag har?
 
-Kontrollera din version från **[!UICONTROL Help > About...]** i Adobe Campaign Client Console. The **[!UICONTROL About]**  innehåller detaljerad information om versionen och bygget som du kör för både konsolen och servern.
+Kontrollera din version på **[!UICONTROL Help > About...]**-menyn i Adobe Campaign Client Console. Rutan **[!UICONTROL About]** innehåller detaljerad information om versionen och bygget som du kör för både konsolen och servern.
 
 Läs mer [i det här avsnittet](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version).
 
@@ -84,7 +84,7 @@ Uppgradering är en tvåstegsprocess:
 
 1. Själva uppgraderingen - produktionsmiljön har uppgraderats. Denna fas utförs vanligtvis på några timmar. I mycket komplexa miljöer bör man förvänta sig längre driftstopp. Om något går fel definieras en återställningsstrategi som kan utföras.
 
-Mer information finns i [referera till det här dokumentet](https://helpx.adobe.com/se/campaign/kb/acc-build-upgrade.html).
+Mer information finns i [det här dokumentet](https://helpx.adobe.com/se/campaign/kb/acc-build-upgrade.html).
 
 ## Vilka resurser behövs för uppgraderingen?
 
@@ -105,9 +105,9 @@ Uppdatera dina kunskaper om viktiga arbetsflöden och leveranser som utvecklats 
 
 Identifiera låga volymer eller låga trafiktider som skulle vara idealiska för underhållsperioder eftersom de ger lägsta möjliga inverkan på verksamheten.
 
-Granska vår [bygg checklista för uppgradering nedan](#check-list) och testplanerna och se till att resurser som kan utföra testerna är tillgängliga inom 24-48 timmar. när en uppgradering har slutförts.
+Granska checklistan för uppgradering av [build nedan](#check-list) och dina testplaner och se till att resurser som kan utföra testerna är tillgängliga inom 24-48 timmar. när en uppgradering har slutförts.
 
-Mer information finns i [se det här avsnittet](../../production/using/build-upgrade.md).
+Mer information finns i [det här avsnittet](../../production/using/build-upgrade.md).
 
 ## Kan uppgraderingar göras dygnet runt eller på kontorstid utanför kontorstid?
 
@@ -155,13 +155,13 @@ Det beror på databasens säkerhetskopieringsstorlek. Genomsnittlig tid det tar 
 
 ## Vilka typer av tester utförs på mitt system efter uppgraderingen?
 
-Se [bygg checklista för uppgradering nedan](#check-list).
+Se checklistan för [build-uppgradering nedan](#check-list).
 
 ## Vilken typ av test måste jag utföra efter min uppgradering?
 
 Utvecklings- och scenmiljöer uppgraderas antingen i följd eller tillsammans, men det krävs en signering innan produktionsinstansen uppgraderas. På så sätt kan varje kund utföra grundliga tester innan de signerar om produktionsändringar.
 
-Se lista [bygg checklista för uppgradering nedan](#check-list). Kunderna bör köra liknande tester liksom andra som de kan behöva för miljön.
+Se listan [Build upgrade checklist below](#check-list). Kunderna bör köra liknande tester liksom andra som de kan behöva för miljön.
 
 ## Hur ofta måste jag uppgradera?
 
@@ -173,7 +173,7 @@ Ja. Servern stängs av under en uppgradering för att säkerställa att datainte
 
 ## Vem ska jag kontakta för att öppna uppgraderingsbiljetten?
 
-Om du får problem efter en bygguppgradering kontaktar du [Adobe kundtjänst](https://helpx.adobe.com/se/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html). Kundtjänst schemalägger byggdatum och öppnar biljetter relaterade till uppgraderingar.
+Kontakta [Adobe kundtjänst](https://helpx.adobe.com/se/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) om du får problem efter en bygguppgradering. Kundtjänst schemalägger byggdatum och öppnar biljetter relaterade till uppgraderingar.
 
 Läs mer i [Hjälp- och supportalternativ för Campaign Classic](../../support.md)
 
@@ -192,9 +192,12 @@ Läs mer i [Hjälp- och supportalternativ för Campaign Classic](../../support.m
 
 * Kan du logga in på servern? Kontrollera att Campaign Client Console fungerar utan några fel-/varningspopup-fönster.
 * Se till att använda samma konsolversion som byggversionen efter uppgraderingen.
-* Har du några webbprogram som infogar data i kampanjdatabasen? I så fall kör du dem och kontrollerar att de kan infoga nya poster via API.
-* Kan du skicka ut ett test-e-postmeddelande? Skapa ny leverans med hjälp av en känd mall, skicka den till en testmottagare, verifiera personalisering, ta bort länkar, spegla hela sidor.
-* Körs alla era arbetsflöden för kritiska sökvägar? Kontrollera arbetsflöden, öppna arbetsflödesjournal, verifiera att det inte finns några fel.
+* Har du några webbprogram som infogar data i kampanjdatabasen? I så fall kör du dem och
+verifiera att de kan infoga nya poster via API.
+* Kan du skicka ut ett test-e-postmeddelande? Skapa ny leverans med en känd mall och skicka den till
+en testmottagare, verifiera personalisering, ta bort länkar, spegla sida allt arbete.
+* Körs alla era arbetsflöden för kritiska sökvägar? Kontrollera arbetsflöden, öppna arbetsflödesjournal, verifiera
+att det inte finns några fel.
 * Är alla dina mappar tillgängliga, synliga och tillgängliga? Bläddra bland olika mappar och kontrollera.
 allt innehåll visas och visas.
 * Kommer leveranserna igenom med rätt tidszon?

@@ -27,4 +27,4 @@ HTTP/2-anslutning: Du måste tillåta kommunikation till och från följande ser
 
 >[!NOTE]
 >
->Mer information om de två kopplingarna finns i [Konfigurera mobilprogrammet i Adobe Campaign](configuring-the-mobile-application.md).
+>Mer information om de två anslutningarna finns i [Konfigurera mobilprogrammet i Adobe Campaign](configuring-the-mobile-application.md).

@@ -27,11 +27,11 @@ En union grupperar resultatet av flera inkommande aktiviteter i ett enda mål. M
 
 I följande exempel har resultaten från två frågor kombinerats för att uppdatera listan. De två frågorna har mottagarna som mål. Resultaten är därför baserade på samma tabell.
 
-1. Infoga en **[!UICONTROL Union]** -type-aktivitet direkt efter de två frågorna och innan en aktivitet av typen update i listan startar du den.
+1. Infoga en aktivitet av typen **[!UICONTROL Union]** direkt efter de två frågorna och före en aktivitet av typen update i listan, och öppna den sedan.
 1. Du kan ange en etikett.
-1. Välj **[!UICONTROL Keys only]** avstämningsmetod eftersom populationen som är ett resultat av frågor i det här exemplet innehåller konsekventa data.
+1. Välj avstämningsmetoden **[!UICONTROL Keys only]** eftersom populationen som är resultatet av frågor i det här exemplet innehåller konsekventa data.
 1. Om du har lagt till ytterligare data för frågorna kan du bestämma dig för att behålla endast de data som delas.
-1. Om du vill begränsa storleken på den slutliga populationen kontrollerar du **[!UICONTROL Limit size of generated population]** box.
+1. Om du vill begränsa storleken på den slutliga populationen markerar du rutan **[!UICONTROL Limit size of generated population]**.
 
    Ange det slutliga talet genom att ange det maximala antalet mottagare och genom att välja frågan vars population ska prioriteras.
 
@@ -53,4 +53,4 @@ Varje inkommande händelse måste ange ett mål som definieras av dessa parametr
 * schema
 * recCount
 
-Den här uppsättningen med tre värden identifierar målet som uppstår från unionen. **[!UICONTROL tableName]** är namnet på den tabell som registrerar målidentifierarna, **[!UICONTROL schema]** är schemat för populationen (vanligtvis nms:mottagare) och **[!UICONTROL recCount]** är antalet element i tabellen.
+Den här uppsättningen med tre värden identifierar målet som uppstår från unionen. **[!UICONTROL tableName]** är namnet på tabellen som registrerar målidentifierarna, **[!UICONTROL schema]** är schemat för populationen (vanligtvis nms:mottagare) och **[!UICONTROL recCount]** är antalet element i tabellen.

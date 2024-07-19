@@ -20,12 +20,12 @@ ht-degree: 1%
 
 
 Om du vill använda funktionerna för transaktionsmeddelanden måste du konfigurera instanser för kontroll och körning. Du kan använda antingen:
-* [En kontrollinstans](#control-instance) associerat med en eller flera körningsinstanser
-* [Flera kontrollinstanser](#using-several-control-instances) associerat med flera körningsinstanser
+* [En kontrollinstans](#control-instance) som är associerad med en eller flera körningsinstanser
+* [Flera kontrollinstanser](#using-several-control-instances) associerade med flera körningsinstanser
 
 >[!IMPORTANT]
 >
->Schematillägg påverkade resurserna som används av [Tekniska arbetsflöden för meddelandecenter](../../message-center/using/additional-configurations.md#technical-workflows) på antingen kontroll- eller körningsinstanser måste dupliceras på de andra instanser som används av Transactional Messaging-modulen.
+>Schematillägg påverkade de resurser som används av [Message Center tekniska arbetsflöden](../../message-center/using/additional-configurations.md#technical-workflows) för antingen kontroll- eller körningsinstanser måste dupliceras i de andra instanser som används av Transactional Messaging-modulen.
 
 Du måste också ange och ansluta körningsinstansen/körningsinstanserna till kontrollinstansen/kontrollinstanserna.
 
@@ -37,7 +37,7 @@ Alla steg som krävs för att konfigurera och ansluta kontroll- och körningsins
 
 ## Konfigurera kontrollinstansen {#control-instance}
 
-Om du vill ansluta kontrollinstansen och körningsinstanserna måste du först skapa och konfigurera en **[!UICONTROL Execution instance]** typ av externt konto **på kontrollinstansen**. Därför, en gång [publicerad](../../message-center/using/publishing-message-templates.md#template-publication), kan transaktionsmeddelandemallar distribueras till körningsinstanserna.
+Om du vill ansluta kontrollinstansen och körningsinstanserna måste du först skapa och konfigurera ett **[!UICONTROL Execution instance]**-typskonto **på kontrollinstansen**. Därför kan transaktionsmeddelandemallar distribueras till körningsinstanserna när [har publicerats](../../message-center/using/publishing-message-templates.md#template-publication).
 
 Om du använder flera körningsinstanser måste du skapa lika många externa konton som det finns körningsinstanser.
 
@@ -51,10 +51,10 @@ Om du använder flera körningsinstanser måste du skapa lika många externa kon
 >
 >Stegen nedan måste utföras **på kontrollinstansen**.
 
-Skapa en **[!UICONTROL Execution instance]** skriv ett externt konto, använd följande:
+Så här skapar du ett externt konto av typen **[!UICONTROL Execution instance]**:
 
-1. Gå till **[!UICONTROL Administration > Platform > External accounts]** mapp.
-1. Välj ett av de externa konton av körningsinstanstyp som finns i Adobe Campaign, högerklicka och välj **[!UICONTROL Duplicate]** .
+1. Gå till mappen **[!UICONTROL Administration > Platform > External accounts]**.
+1. Välj ett av de externa konton av körningsinstanstyp som finns i Adobe Campaign, högerklicka och välj **[!UICONTROL Duplicate]**.
 
    ![](assets/messagecenter_create_extaccount_001.png)
 
@@ -62,7 +62,7 @@ Skapa en **[!UICONTROL Execution instance]** skriv ett externt konto, använd f�
 
    ![](assets/messagecenter_create_extaccount_002.png)
 
-1. Välj **[!UICONTROL Enabled]** möjlighet att göra det externa kontot operativt.
+1. Välj alternativet **[!UICONTROL Enabled]** om du vill att det externa kontot ska fungera.
 
    ![](assets/messagecenter_create_extaccount_003.png)
 
@@ -70,7 +70,7 @@ Skapa en **[!UICONTROL Execution instance]** skriv ett externt konto, använd f�
 
    ![](assets/messagecenter_create_extaccount_004.png)
 
-1. Kontot måste matcha Message Center Agent enligt operatormappen. Som standard är det färdiga konto som tillhandahålls av Adobe Campaign **[!UICONTROL mc]** .
+1. Kontot måste matcha Message Center Agent enligt operatormappen. Som standard är det användningsklara konto som tillhandahålls av Adobe Campaign **[!UICONTROL mc]**.
 
    ![](assets/messagecenter_create_extaccount_005.png)
 
@@ -96,7 +96,7 @@ Skapa en **[!UICONTROL Execution instance]** skriv ett externt konto, använd f�
 
    Mer information om FDA (Federated Data Access) finns i [det här avsnittet](../../installation/using/about-fda.md).
 
-1. Klicka **[!UICONTROL Test the connection]** för att kontrollera att kontrollinstansen och körningsinstansen är länkade.
+1. Klicka på **[!UICONTROL Test the connection]** för att kontrollera att kontrollinstansen och körningsinstansen är länkade till varandra.
 
    ![](assets/messagecenter_create_extaccount_006.png)
 
@@ -106,17 +106,17 @@ Om du använder flera körningsinstanser upprepar du dessa steg för att skapa s
 
 Varje körningsinstans måste associeras med en unik identifierare för att särskilja historiken för varje körningsinstans när de visas på kontrollinstansen.
 
-Den här identifieraren kan tilldelas för varje körningsinstans **manuellt**. I det här fallet måste det här steget utföras **på varje körningsinstans**. Det gör du genom att använda distributionsguiden enligt nedan:
+Den här identifieraren kan tilldelas för varje körningsinstans **manuellt**. I det här fallet måste det här steget utföras **för varje körningsinstans**. Det gör du genom att använda distributionsguiden enligt nedan:
 
 1. Öppna distributionsguiden på en körningsinstans.
-1. Gå till **[!UICONTROL Message Center]** -fönstret.
+1. Gå till fönstret **[!UICONTROL Message Center]**.
 1. Tilldela den valda identifieraren till instansen.
 
    ![](assets/messagecenter_id_execinstance_001.png)
 
 1. Upprepa stegen ovan för varje körningsinstans.
 
-Identifieraren kan också **automatiskt** attribut. För att göra det går du till **kontrollinstans** och klickar på **[!UICONTROL Initialize connection]** -knappen.
+Identifieraren kan också tilldelas **automatiskt**. Det gör du genom att gå till **kontrollinstansen** och klicka på knappen **[!UICONTROL Initialize connection]**.
 
 ![](assets/messagecenter_create_extaccount_006bis.png)
 
@@ -124,28 +124,28 @@ Identifieraren kan också **automatiskt** attribut. För att göra det går du t
 
 >[!NOTE]
 >
->Stegen nedan måste utföras **på körningsinstansen/instanserna**.
+>Stegen nedan måste utföras **på körningsinstansen**.
 
 Följ stegen nedan för att ansluta körningsinstansen/körningsinstanserna till kontrollinstansen.
 
-För att kontrollinstansen ska kunna ansluta till körningsinstansen utan att behöva ange ett lösenord anger du bara IP-adressen för kontrollinstansen i **Meddelandecenter** behörighetssektion. Tomma lösenord tillåts dock inte som standard.
+För att kontrollinstansen ska kunna ansluta till körningsinstansen utan att behöva ange ett lösenord anger du bara IP-adressen för kontrollinstansen i **Message Center** -åtkomsträttighetsavsnittet. Tomma lösenord tillåts dock inte som standard.
 
-Om du vill använda ett tomt lösenord går du till körningsinstanserna och definierar en säkerhetszon som är begränsad till IP-adressen för det informationssystem som skickar händelserna. Den här säkerhetszonen måste tillåta tomma lösenord och acceptera `<identifier> / <password>` typanslutningar. Mer information om detta finns i [det här avsnittet](../../installation/using/security-zones.md).
+Om du vill använda ett tomt lösenord går du till körningsinstanserna och definierar en säkerhetszon som är begränsad till IP-adressen för det informationssystem som skickar händelserna. Säkerhetszonen måste tillåta tomma lösenord och acceptera anslutningar av typen `<identifier> / <password>`. Mer information om detta finns i [det här avsnittet](../../installation/using/security-zones.md).
 
 >[!NOTE]
 >
 >När körningsinstanser används av flera kontrollinstanser kan data delas upp efter mapp och operator. Mer information finns i [Använda flera kontrollinstanser](#using-several-control-instances).
 
 1. På en körningsinstans går du till mappen operator ( **[!UICONTROL Administration > Access management > Operators]** ).
-1. Välj **Meddelandecenter** agent.
+1. Välj agenten **Message Center**.
 
    ![](assets/messagecenter_operator_001.png)
 
-1. Välj **[!UICONTROL Edit]** flik, klicka **[!UICONTROL Access rights]** och klickar sedan på **[!UICONTROL Edit the access parameters...]** länk.
+1. Välj fliken **[!UICONTROL Edit]**, klicka på **[!UICONTROL Access rights]** och klicka sedan på länken **[!UICONTROL Edit the access parameters...]**.
 
    ![](assets/messagecenter_operator_002.png)
 
-1. I **[!UICONTROL Access settings]** klickar du på **[!UICONTROL Add a trusted IP mask]** länka och lägg till IP-adressen för kontrollinstansen.
+1. Klicka på länken **[!UICONTROL Add a trusted IP mask]** i fönstret **[!UICONTROL Access settings]** och lägg till IP-adressen för kontrollinstansen.
 
    ![](assets/messagecenter_operator_003.png)
 
@@ -155,9 +155,9 @@ Om du använder flera körningsinstanser upprepar du dessa steg för varje körn
 
 Du kan dela ett körningskluster med olika kontrollinstanser. Den här typen av arkitektur kräver följande konfiguration.
 
-Tänk dig att ditt företag hanterar två varumärken, var och en med sin egen kontrollinstans: **Kontroll 1** och **Kontroll 2**. Två körningsinstanser används också. Du måste ange en annan Message Center-operator för varje kontrollinstans: **mc1** operatorn för **Kontroll 1** -instans och en **mc2** operatorn för **Kontroll 2** -instans.
+Tänk dig att ditt företag hanterar två varumärken, var och en med sin egen kontrollinstans: **Kontroll 1** och **Kontroll 2**. Två körningsinstanser används också. Du måste ange en annan Message Center-operator för varje kontrollinstans: en **mc1** -operator för **Control 1** -instansen och en **mc2** -operator för **Control 2** -instansen.
 
-I trädet med alla körningsinstanser skapar du en mapp per operator (**Mapp 1** och **Mapp 2**) och begränsa varje operatörs dataåtkomst till deras mapp.
+I trädet för alla körningsinstanser skapar du en mapp per operator (**Mapp 1** och **Mapp 2**) och begränsar varje operatörs dataåtkomst till deras mapp.
 
 ### Konfigurera kontrollinstanser {#configuring-control-instances}
 
@@ -165,11 +165,11 @@ I trädet med alla körningsinstanser skapar du en mapp per operator (**Mapp 1**
 >
 >Stegen nedan måste utföras **på kontrollinstanserna**.
 
-1. På **Kontroll 1** kontrollinstans, skapa ett externt konto per körningsinstans och ange **mc1** i varje externt konto. The **mc1** operatorn skapas sedan för alla körningsinstanser (se [Konfigurera körningsinstanser](#configuring-execution-instances)).
+1. Skapa ett externt konto per körningsinstans på kontrollinstansen **Control 1** och ange operatorn **mc1** i varje externt konto. Operatorn **mc1** skapas sedan för alla körningsinstanser (se [Konfigurera körningsinstanser](#configuring-execution-instances)).
 
    ![](assets/messagecenter_multi_control_1.png)
 
-1. På **Kontroll 2** kontrollinstans, skapa ett externt konto per körningsinstans och ange **mc2** i varje externt konto. The **mc2** operatorn skapas sedan för alla körningsinstanser (se [Konfigurera körningsinstanser](#configuring-execution-instances)).
+1. Skapa ett externt konto per körningsinstans på kontrollinstansen **Control 2** och ange operatorn **mc2** i varje externt konto. Operatorn **mc2** skapas sedan för alla körningsinstanser (se [Konfigurera körningsinstanser](#configuring-execution-instances)).
 
    ![](assets/messagecenter_multi_control_2.png)
 
@@ -185,22 +185,22 @@ I trädet med alla körningsinstanser skapar du en mapp per operator (**Mapp 1**
 
 Om du vill använda flera kontrollinstanser måste den här konfigurationen utföras på ALLA körningsinstanser.
 
-1. Skapa en mapp per operator i **[!UICONTROL Administration > Production > Message Center]** nod: **Mapp 1** och **Mapp 2**. Mer information om hur du skapar mappar och vyer finns i [den här sidan](../../platform/using/access-management-folders.md).
+1. Skapa en mapp per operator i noden **[!UICONTROL Administration > Production > Message Center]**: **Mapp 1** och **Mapp 2**. Mer information om hur du skapar mappar och vyer finns på [den här sidan](../../platform/using/access-management-folders.md).
 
    ![](assets/messagecenter_multi_control_3.png)
 
-1. Skapa **mc1** och **mc2** genom att duplicera operatorn i meddelandecentret som anges som standard (**mc**). Mer information om hur du skapar operatorer finns i [det här avsnittet](../../platform/using/access-management-operators.md).
+1. Skapa operatorerna **mc1** och **mc2** genom att duplicera operatorn för meddelandecenter som anges som standard (**mc**). Mer information om hur du skapar operatorer finns i [det här avsnittet](../../platform/using/access-management-operators.md).
 
    ![](assets/messagecenter_multi_control_4.png)
 
    >[!NOTE]
    >
-   >**mc1** och **mc2** operatorn måste ha **[!UICONTROL Message Center execution]** och de har inte åtkomst till Adobe Campaign klientkonsol. En operator måste alltid länkas till en säkerhetszon. Mer information om detta finns i [det här avsnittet](../../installation/using/security-zones.md).
+   >Operatorer för **mc1** och **mc2** måste ha **[!UICONTROL Message Center execution]**-behörighet och de kan inte komma åt Adobe Campaign klientkonsol. En operator måste alltid länkas till en säkerhetszon. Mer information om detta finns i [det här avsnittet](../../installation/using/security-zones.md).
 
-1. För varje operator ska du kontrollera **[!UICONTROL Restrict to information found in sub-folders of]** och välj lämplig mapp (**Mapp 1** för **mc1** operatorn och **Mapp 2** för **mc2** -operator).
+1. För varje operator markerar du rutan **[!UICONTROL Restrict to information found in sub-folders of]** och väljer lämplig mapp (**Mapp 1** för operatorn **mc1** och **Mapp 2** för operatorn **mc2**).
 
    ![](assets/messagecenter_multi_control_5.png)
 
-1. Ge varje operator läs- och skrivbehörighet för sin mapp. Om du vill göra det högerklickar du på mappen och väljer **[!UICONTROL Properties]** . Välj sedan **[!UICONTROL Security]** tabba och lägg till den relevanta operatorn (**mc1** for **Mapp 1** och **mc2** for **Mapp 2**). Se till att **[!UICONTROL Read/Write data]** är markerade.
+1. Ge varje operator läs- och skrivbehörighet för sin mapp. Om du vill göra det högerklickar du på mappen och väljer **[!UICONTROL Properties]**. Välj sedan fliken **[!UICONTROL Security]** och lägg till den relevanta operatorn (**mc1** för **Mapp 1** och **mc2** för **Mapp 2**). Kontrollera att kryssrutorna för **[!UICONTROL Read/Write data]** är markerade.
 
    ![](assets/messagecenter_multi_control_6.png)

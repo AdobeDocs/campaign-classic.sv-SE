@@ -17,7 +17,7 @@ ht-degree: 1%
 
 I det här avsnittet beskrivs vanliga problem som du kan stöta på när du skickar leveranser och hur du felsöker dem.
 
-Se även till att du följer de bästa metoderna och checklistorna som finns i [den här sidan](delivery-performances.md) för att säkerställa att leveranserna fungerar bra.
+Kontrollera dessutom att du följer de bästa metoderna och checklistan som beskrivs på [den här sidan](delivery-performances.md) för att se till att leveranserna fungerar bra.
 
 **Relaterade ämnen:**
 
@@ -27,17 +27,17 @@ Se även till att du följer de bästa metoderna och checklistorna som finns i [
 
 ## Långsamma leveranser {#slow-deliveries}
 
-När du klickat på **[!UICONTROL Send]** verkar leveransen ta längre tid än vanligt. Detta kan bero på olika element:
+När du har klickat på knappen **[!UICONTROL Send]** verkar leveransen ta längre tid än vanligt. Detta kan bero på olika element:
 
-* Vissa e-postleverantörer kan ha lagt till dina IP-adresser i en blockeringslista. I så fall bör du kontrollera dina utskick och läsa [det här avsnittet](about-deliverability.md).
+* Vissa e-postleverantörer kan ha lagt till dina IP-adresser i en blockeringslista. I så fall kontrollerar du dina utsändningsloggar och läser [det här avsnittet](about-deliverability.md).
 
-* Leveransen kan vara för stor för att kunna bearbetas snabbt. Detta kan inträffa vid hög JavaScript-anpassning eller om leveransen väger mer än 60 kbit/s. Se Adobe Campaign [Bästa praxis för leverans](delivery-best-practices.md) om du vill veta mer om riktlinjer för innehåll.
+* Leveransen kan vara för stor för att kunna behandlas snabbt. Detta kan inträffa med hög JavaScript-personalisering eller om leveransen överstiger 60 kbit/s. Läs Adobe Campaign [Bästa praxis](delivery-best-practices.md) för leverans om du vill veta mer om riktlinjer för innehåll.
 
 * Begränsning kan ha inträffat i Adobe Campaign MTA. Detta orsakas av:
 
-   * Väntade meddelanden (**[!UICONTROL quotas met]** message): kvoter som deklarerats av de deklarativa MX-reglerna som definierats i Campaign har uppfyllts. Mer information om det här meddelandet finns i [den här sidan](deliverability-faq.md). Mer information om MX-regler finns i [det här avsnittet](../../installation/using/email-deliverability.md#about-mx-rules).
+   * Väntade meddelanden (**[!UICONTROL quotas met]**-meddelande): kvoter som deklarerats av de deklarativa MX-reglerna som definierats i Campaign har uppfyllts. Mer information om det här meddelandet finns på [den här sidan](deliverability-faq.md). Mer information om MX-regler finns i [det här avsnittet](../../installation/using/email-deliverability.md#about-mx-rules).
 
-   * Väntade meddelanden (**[!UICONTROL dynamic flow control]** Meddelande): Kampanjens MTA har stött på fel vid försök att leverera meddelanden för en viss Internet-leverantör, vilket gör att det tar för lång tid att undvika för stor feltäthet och därmed stöta på potentiella blockeringslista.
+   * Väntade meddelanden (**[!UICONTROL dynamic flow control]**-meddelande): Kampanj-MTA har påträffat fel när meddelanden för en viss Internet-leverantör skickas, vilket gör att det tar för lång tid att undvika för stor feldensitet och därmed kan leda till blockeringslista.
 
 * Ett systemproblem kan förhindra servrar från att interagera med varandra: det kan göra hela sändningsprocessen långsammare. Kontrollera servrarna för att se till att det inte finns några minnes- eller resursproblem som kan påverka Campaign när personaliseringsdata hämtas till exempel.
 
@@ -49,7 +49,7 @@ Om exempelvis mellanleverantörsinstansen ligger i Brisbane-tidszonen och produk
 
 ## Status misslyckades {#failed-status}
 
-Om status för en e-postleverans är **[!UICONTROL Failed]**, kan den länkas till ett problem med personaliseringsblock. Personaliseringsblock i en leverans kan generera fel när scheman inte matchar leveransmappningen, till exempel.
+Om statusen för en e-postleverans är **[!UICONTROL Failed]** kan den länkas till ett problem med personaliseringsblock. Personaliseringsblock i en leverans kan generera fel när scheman inte matchar leveransmappningen, till exempel.
 
 Leveransloggar är viktiga för att lära sig varför en leverans misslyckades. Här följer möjliga fel som du kan identifiera från leveransloggar:
 
@@ -83,7 +83,7 @@ Leveransloggar är viktiga för att lära sig varför en leverans misslyckades. 
 
   Vanligtvis innebär det här felet att det finns ett anpassningsfält eller -block i e-postmeddelandet som har fler än ett värde för mottagaren. Ett personaliseringsblock används och hämtar mer än en post för en viss mottagare.
 
-  Du löser detta genom att kontrollera vilka personaliseringsdata som används och sedan kontrollera målet för mottagare som har fler än en post för något av dessa fält. Du kan också använda en **[!UICONTROL Deduplication]** aktiviteten i målarbetsflödet före leveransaktiviteten för att kontrollera att det bara finns ett personaliseringsfält åt gången. Mer information om borttagning av dubbletter finns i [den här sidan](../../workflow/using/deduplication.md).
+  Du löser detta genom att kontrollera vilka personaliseringsdata som används och sedan kontrollera målet för mottagare som har fler än en post för något av dessa fält. Du kan också använda en **[!UICONTROL Deduplication]**-aktivitet i målarbetsflödet före leveransaktiviteten för att kontrollera att det bara finns ett personaliseringsfält åt gången. Mer information om borttagning av dubbletter finns på [den här sidan](../../workflow/using/deduplication.md).
 
 * En del leveranser kan misslyckas med felet &quot;Onåbar&quot; som anger:
 

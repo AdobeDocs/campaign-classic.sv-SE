@@ -18,10 +18,10 @@ ht-degree: 0%
 
 
 
-Använd kampanj [Åtkomst till federerade data](../../installation/using/about-fda.md) (FDA) om du vill bearbeta information som lagras i en extern databas. Följ stegen nedan för att konfigurera åtkomst till SAP HANA.
+Använd alternativet [FDA (Federated Data Access](../../installation/using/about-fda.md)) i kampanjen om du vill bearbeta information som lagras i en extern databas. Följ stegen nedan för att konfigurera åtkomst till SAP HANA.
 
-1. Konfigurera [SAP HANA-databas](#sap-config)
-1. Konfigurera SAP HANA [externt konto](#sap-external) i Campaign
+1. Konfigurera [SAP HANA-databasen](#sap-config)
+1. Konfigurera det [externa SAP HANA-kontot](#sap-external) i Campaign
 
 ## SAP HANA-drivrutiner {#sap-config}
 
@@ -46,7 +46,7 @@ Anslutning till en extern SAP HANA-databas i FDA kräver vissa ytterligare konfi
      User:SYSTEM
      ```
 
-     &quot;InstallDir&quot; motsvarar platsen för **odbcinst.ini** -fil.
+     &quot;InstallDir&quot; motsvarar platsen för filen **odbcinst.ini**.
 
    * **/etc/odbcinst.ini**
 
@@ -58,18 +58,18 @@ Anslutning till en extern SAP HANA-databas i FDA kräver vissa ytterligare konfi
 
 1. Ange miljövariablerna för Adobe Campaign-servern:
 
-   * **LD_LIBRARY_PATH**: Den bör innehålla länken till SAP Hana-klienten (/usr/sap/hdbclient/libodbcHDB.so) som standard.
+   * **LD_LIBRARY_PATH**: Den ska innehålla länken till din SAP Hana-klient (/usr/sap/hdbclient/libodbcHDB.so) som standard.
    * **ODBCINI**: plats för filen odbc.ini (till exempel /etc/odbc.ini).
 
 ## SAP HANA external account{#sap-external}
 
 Med det externa SAP HANA-kontot kan du ansluta Campaign-instansen till din externa SAP HANA-databas.
 
-1. Från kampanj **[!UICONTROL Explorer]**, klicka **[!UICONTROL Administration]** &#39;>&#39; **[!UICONTROL Platform]** &#39;>&#39; **[!UICONTROL External accounts]**.
+1. Klicka på **[!UICONTROL Administration]** > **[!UICONTROL Platform]** > **[!UICONTROL External accounts]** i Campaign **[!UICONTROL Explorer]**.
 
-1. Klicka **[!UICONTROL New]** och markera **[!UICONTROL External database]** as **[!UICONTROL Type]**.
+1. Klicka på **[!UICONTROL New]** och välj **[!UICONTROL External database]** som **[!UICONTROL Type]**.
 
-1. Konfigurera **[!UICONTROL SAP Hana]** externt konto måste du ange:
+1. Om du vill konfigurera det externa kontot **[!UICONTROL SAP Hana]** måste du ange:
 
    * **[!UICONTROL Type]**: SAP Hana
 

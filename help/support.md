@@ -32,7 +32,7 @@ Få support via våra vanliga frågor och svar, god praxis, onlineresurser och s
 
 ### Vanliga frågor och svar
 
-Hur uppgraderar jag till en ny version? hur man övervakar arbetsflödeskörningen? vilket är arbetsflödet för databasrensning?.. [Läs de 10 vanligaste frågorna](platform/using/common-questions.md).
+Hur uppgraderar jag till en ny version? hur man övervakar arbetsflödeskörningen? Vad är arbetsflödet för databassortering?.. [Läs de 10 viktigaste frågorna](platform/using/common-questions.md).
 
 <table>
     <tr><td><strong>Frågor och svar om ämnen</strong></td><td><strong>Vanliga problem</strong></td><td><strong>God praxis</strong></td><td><strong>Instruktioner</strong></td></tr>
@@ -100,7 +100,7 @@ Med Campaign Control Panel kan ni effektivisera arbetet som produktadministratö
 >
 >Kontrollpanelen är tillgänglig för alla administratörsanvändare. Stegen för att bevilja administratörsåtkomst till en användare finns i [det här avsnittet](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/managing-permissions.html?lang=sv#discover-control-panel).
 >
->Observera att din instans måste ligga på AWS och uppgraderas med den senaste [GA build](rn/using/rn-overview.md). Läs om hur du kontrollerar din version i [det här avsnittet](platform/using/launching-adobe-campaign.md#getting-your-campaign-version). Följ stegen på [den här sidan](https://experienceleague.adobe.com/docs/control-panel/using/faq.html?lang=sv) för att kontrollera om instanser har AWS som värd.
+>Observera att din instans måste lagras på AWS och uppgraderas med den senaste [GA-versionen](rn/using/rn-overview.md). Läs om hur du kontrollerar din version i [det här avsnittet](platform/using/launching-adobe-campaign.md#getting-your-campaign-version). Följ stegen på [den här sidan](https://experienceleague.adobe.com/docs/control-panel/using/faq.html?lang=sv) för att kontrollera om instanser har AWS som värd.
 
 ### Hur kommer jag åt Kontrollpanelen?
 
@@ -124,7 +124,7 @@ Du kan övervaka dina underdomäner och deras certifikat. Läs mer på dessa sid
 ### Instansinställningar
 
 Lär dig hur du hanterar Campaign Classicens instansinställningar på Kontrollpanelen. Läs mer på dessa sidor:
-* [Lägg till IP-adresser till tillåtelselista](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/ip-allow-listing-instance-access.html) för att komma åt dina Campaign-instanser
+* [Lägg till IP-adresser på tillåtelselista](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/ip-allow-listing-instance-access.html) för att komma åt dina Campaign-instanser
 * [Hantera URL-behörigheter](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/url-permissions.html?lang=sv)
 * [Åtkomstinstansinformation](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/instance-details.html)
 * [Hantera GPG-nycklar för datakryptering](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/gpg-keys-management.html?lang=sv)
@@ -137,11 +137,11 @@ Det nya biljettsystemet har startats via [Adobe Admin Console](https://admincons
 
 ### Fråga experterna!
 
-Gå med i Campaign Classic-communityn: sök efter svar i befintliga frågor eller ställ din fråga till communityn. [Delta i konversationen](https://experienceleaguecommunities.adobe.com/t5/adobe-campaign-classic/ct-p/adobe-campaign-classic-community){_blank}.
+Gå med i Campaign Classic-communityn: sök efter svar i befintliga frågor eller ställ din fråga till communityn. [Anslut till konversationen](https://experienceleaguecommunities.adobe.com/t5/adobe-campaign-classic/ct-p/adobe-campaign-classic-community){_blank}.
 
 ### Access Campaign Download Center
 
-Som kampanjadministratör kan du gå till [den här sidan](https://experience.adobe.com/#/downloads/content/software-distributicampaign.html) för att få tillgång till Experience Cloud Software Distribution.
+Som kampanjadministratör går du till [den här sidan](https://experience.adobe.com/#/downloads/content/software-distributicampaign.html) för att få åtkomst till Experience Cloud Software Distribution.
 
 ### Skapa en biljett eller starta en chatt
 

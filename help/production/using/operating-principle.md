@@ -25,17 +25,17 @@ Det finns många Adobe Campaign-moduler. Vissa arbetar kontinuerligt medan andra
 
 Det finns tre typer av Adobe Campaign-moduler:
 
-* Moduler med flera instanser: en enda process körs för alla instanser. Detta gäller följande moduler: **webb**, **syslogd**, **trackinglogd** och **övervakningsenhet** (aktiviteter från **config-default.xml** fil).
-* Eninstansmoduler: en process körs per instans. Detta gäller följande moduler: **mta**, **wfserver**, **inMail**, **sms** och **stat** (aktiviteter från **config-`<instance>`XML** fil).
-* Verktygsmoduler: det här är moduler som körs ibland för att utföra tillfälliga eller återkommande åtgärder (**rensa**, **config**, hämtar spårningsloggar osv.).
+* Moduler med flera instanser: en enda process körs för alla instanser. Detta gäller följande moduler: **web**, **syslogd**, **trackinglogd** och **watchdog** (aktiviteter från filen **config-default.xml** ).
+* Eninstansmoduler: en process körs per instans. Detta gäller följande moduler: **mta**, **wfserver**, **inMail**, **sms** och **stat** (aktiviteter från filen **config-`<instance>`.xml** ).
+* Verktygsmoduler: dessa är moduler som körs ibland för att utföra tillfälliga eller återkommande åtgärder (**rensning**, **config**, hämtningsloggar osv.).
 
-Moduladministration utförs med kommandoradsverktyget **nlserver** som finns i **bin** installationsmappen.
+Moduladministration utförs med kommandoradsverktyget **nlserver** som är installerat i katalogen **bin** i installationsmappen.
 
-Den allmänna syntaxen för **nlserver** är följande:
+Den allmänna syntaxen för verktyget **nlserver** är följande:
 
 **nlserver `<command>``<command arguments>`**
 
-I listan över tillgängliga moduler använder du **nlserver** -kommando.
+Använd kommandot **nlserver** om du vill se en lista över tillgängliga moduler.
 
 De tillgängliga modulerna beskrivs i följande tabell:
 
@@ -79,7 +79,7 @@ De tillgängliga modulerna beskrivs i följande tabell:
 >
 >Det finns en sista modul: Modulen för spårning och vidarebefordran som är länkad till programservern, som för prestandans skull är integrerad via inbyggda mekanismer i en Apache- eller IIS-webbserver via ett dynamiskt bibliotek. Det finns inget Adobe Campaign-kommando som du kan använda för att starta eller administrera den här modulen. Du måste därför använda kommandona från själva webbservern.
 
-Modulanvändning och syntaxen för dess parametrar visas med följande kommando: **nlserver `[module]` -?**
+Modulanvändning och syntaxen för parametrarna visas med följande kommando: **nlserver `[module]` -?**
 
 Exempel:
 

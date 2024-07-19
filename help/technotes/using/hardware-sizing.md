@@ -19,9 +19,9 @@ ht-degree: 0%
 
 >[!CAUTION]
 >
->Den här artikeln finns endast som en allmän exempelguide. Ni måste kontakta Adobe Campaign Customer Success Manager för att mäta den exakta storleken på er driftsättning innan ni påbörjar ert Campaign-projekt. **Gör inte** förvärva eller driftsätta infrastruktur eller maskinvara tills detta är klart.
+>Den här artikeln finns endast som en allmän exempelguide. Ni måste kontakta Adobe Campaign Customer Success Manager för att mäta den exakta storleken på er driftsättning innan ni påbörjar ert Campaign-projekt. **Hämta eller distribuera inte** någon infrastruktur eller maskinvara förrän detta är klart.
 
-Det här dokumentet innehåller allmänna rekommendationer för Adobe Campaign Classic v7-distribution på ditt lokala datacenter eller i en virtualiserad molnmiljö. Den här typen av distribution, kallas **hybrid** eller **medelleverantörer**, placerar Campaign-marknadsföringsinstansen och marknadsföringsdatabasen under din operativa kontroll, samtidigt som du använder meddelandetjänster i Adobe Cloud för att skicka e-postmeddelanden, SMS eller SMPP och samlar in e-postmeddelanden som är öppna, studsar och klickar på spårningsdata.
+Det här dokumentet innehåller allmänna rekommendationer för Adobe Campaign Classic v7-distribution på ditt lokala datacenter eller i en virtualiserad molnmiljö. Den här typen av distribution, som kallas **hybrid** eller **mellanlagring**, placerar Campaign-marknadsföringsinstansen och marknadsföringsdatabasen under din operativa kontroll, medan meddelandetjänster i Adobe Cloud används för att skicka e-postmeddelanden, SMS- eller SMPP-meddelanden och för att samla in e-postmeddelanden som är öppna, studsa och klicka på spårningsdata.
 
 Marknadsföringsinstansen är den del av Adobe Campaign-arkitekturen som driver all marknadsföringsaktivitet och lagrar alla mottagardata och analysdata som returneras av kampanjer. Marknadsinstansen är en uppsättning lokala servrar som kör Adobe Campaign-tjänster och en relationsdatabas.
 
@@ -29,7 +29,7 @@ Marknadsföringsinstansen är den del av Adobe Campaign-arkitekturen som driver 
 >
 >Informationen i det här dokumentet gäller inte om du använder en Adobe Campaign-instans som är helt värd (distribuerad i Adobe-Cloud Service).
 
-Programkompatibiliteten beskrivs i [Kompatibilitetsmatris](../../rn/using/compatibility-matrix.md).
+Programkompatibiliteten anges i [kompatibilitetsmatrisen](../../rn/using/compatibility-matrix.md).
 
 
 ### Scenarier
@@ -37,8 +37,8 @@ Programkompatibiliteten beskrivs i [Kompatibilitetsmatris](../../rn/using/compat
 Distributionsdiagram och rekommendationer för maskinvarustorlek finns för tre representativa scenarier:
 
 1. [Måttlig storlek](#scenario-1) - 5 miljoner aktiva mottagare i systemet
-1. [Stor storlek](#scenario-2) - 20 miljoner aktiva mottagare i systemet
-1. [Enterprise](#scenario-3) - 50 miljoner aktiva mottagare med transaktionsmeddelanden
+1. [Storlek](#scenario-2) - 20 miljoner aktiva mottagare i systemet
+1. [Företag](#scenario-3) - 50 miljoner aktiva mottagare, med transaktionsmeddelanden
 
 ### Antaganden
 
@@ -55,7 +55,7 @@ I det här dokumentet förutsätts även följande typer av användning för all
 
 Kampanjen är en databascentrerad applikation och databasserverns prestanda är avgörande. Körande arbetsflöden, segmentering, uppföljning av dataöverföringar, inkommande interaktioner, analys och andra aktiviteter genererar alla databasaktiviteter. I allmänhet avgör storleken och frekvensen för dessa åtgärder storleken på databasservrarna.
 
-Programservrarna i din marknadsinstans kräver tillräckligt med processor och minne för att köra arbetsflöden och svara på SOAP API-anrop, inklusive förfrågningar från användare av Campaign Console. Processorkraven kan vara betydande för arbetsflöden där utgående interaktioner används med komplexa erbjudanderegler, arbetsflöden som kör anpassade JavaScript-skript och webbapplikationer med hög trafiknivå.
+Programservrarna i marknadsföringsinstansen kräver tillräckligt med processor och minne för att köra arbetsflöden och svara på SOAP API-anrop, inklusive förfrågningar från användare av Campaign Console. Processorkraven kan vara betydande för arbetsflöden där utgående interaktioner används med komplexa erbjudanderegler, arbetsflöden som kör anpassade JavaScript-skript och webbapplikationer med hög trafiknivå.
 
 Kampanjwebbprogram kan också distribueras på marknadsinstansens appservrar eller på separata webbserversystem. Eftersom arbetsbelastningar för webbapplikationer är i konflikt med kritiska arbetsflöden och Campaign Console-användare, kan webbapplikationer och inkommande interaktioner distribueras till separata servrar för att säkerställa att de centrala Campaign-funktionerna fungerar tillförlitligt med bra prestanda.
 
@@ -150,13 +150,13 @@ Programservrarna har direkt stöd för Campaign Console-användare och körning 
 
 Webbservrarna är värdar för Campaign-webbprogram som stöder de 10 miljoner aktiva mottagarna i systemet.
 
-Se [Scenario 1: Distribution i medelstor storlek](#scenario-1) om du vill ha fler kommentarer om proxies, inställningscenter/prenumerationshantering och användning av diskutrymme.
+Se [Scenario 1: Distribuering i måttlig storlek](#scenario-1) för fler kommentarer om proxies, inställningscenter/prenumerationshantering och användning av diskutrymme.
 
 ### Databas
 
 Maskinvarurekommendationerna för databasservern är följande:
 
-**3 GHz+ 8-kärnig processor, 64 GB RAM, RAID 1 eller 10, 2 x 320 GB SSD eller RAID 10, 640 GB SSD-hårddisk**
+**3 GHz+ 8-kärnig CPU, 64 GB RAM, RAID 1 eller 10, 2 x 320 GB SSD eller RAID 10, 640 GB SSD minst**
 
 Minnesuppskattningen förutsätter fullständig cachelagring av ungefär 5 000 000 mottagare för en stor kampanjstart, plus RDBMS-buffertutrymme för körning av arbetsflöden, import av spårningsdata och andra samtidiga aktiviteter.
 
@@ -178,7 +178,7 @@ Beräknad volym:
 | Högsta dagliga e-postvolym | 2,5 miljoner |
 
 
-Driftsättningen med stöd för 50 miljoner mottagare är i stort sett densamma som i [Scenario 2](#scenario-2): Kampanjens webbapplikationstrafik dirigeras till webbservrar för Campaign, vilket innebär att webbtrafiken efter lanseringen av stora kampanjer inte påverkar arbetsflödena för Campaign och användare av klientkonsolen.
+Distributionen med stöd för 50 miljoner mottagare är i stort sett densamma som i [scenario 2](#scenario-2): Campaign-webbapplikationstrafiken dirigeras till Campaign-webbservrar, vilket innebär att belastningen på webbtrafiken efter stora kampanjer inte påverkar Campaign-arbetsflödena och klientkonsolanvändarna.
 
 Den här distributionen innehåller även Message Center-samtal som drivs av dina egna webbplatser och applikationer.
 
@@ -188,23 +188,23 @@ Den här distributionen innehåller även Message Center-samtal som drivs av din
 I det här scenariot rekommenderar Adobe att du installerar Adobe Campaign på fyra datorer enligt följande:
 
 * Programservrar
-  **Två system, 3 GHz+ processorer med fyra kärnor, 8 GB RAM, RAID 1 eller 10, 80 GB SSD**
+  **Två system, 3 GHz+ processor med fyra kärnor, 8 GB RAM, RAID 1 eller 10, 80 GB SSD**
 
 * Webbservrar
-  **Två system, 3 GHz+ processorer med fyra kärnor, 16 GB RAM, RAID 1 eller 10, 80 GB SSD**
+  **Två system, 3 GHz+ processor med fyra kärnor, 16 GB RAM, RAID 1 eller 10, 80 GB SSD**
 
 
 Programservrarna har direkt stöd för Campaign Console-användare och körning av kampanjarbetsflöden. Den här funktionen distribueras på två identiska servrar för hög tillgänglighet och delar ett NAS-filsystem (Network-Attached Storage) för att möjliggöra failover.
 
 Webbservrarna är värdar för Campaign-webbprogram som stöder de 10 miljoner aktiva mottagarna i systemet.
 
-Se [Scenario 1: Distribution i medelstor storlek](#scenario-1) om du vill ha fler kommentarer om proxies, inställningscenter/prenumerationshantering och användning av diskutrymme.
+Se [Scenario 1: Distribuering i måttlig storlek](#scenario-1) för fler kommentarer om proxies, inställningscenter/prenumerationshantering och användning av diskutrymme.
 
 ### Databas
 
 Maskinvarurekommendationerna för databasservern är följande:
 
-**3 GHz+ 8-kärnig processor, 96 GB RAM, RAID 1 eller 10, minst 1,5 TB SSD**
+**3 GHz+ 8-kärnig CPU, 96 GB RAM, RAID 1 eller 10, minst 1,5 TB SSD**
 
 Minnesuppskattningen förutsätter fullständig cachelagring av ungefär 12 500 000 mottagare för en stor kampanjstart, plus RDBMS-buffertutrymme för körning av arbetsflöden, import av spårningsdata och andra samtidiga aktiviteter.
 
@@ -220,7 +220,7 @@ Aktiva mottagare kräver både lagringsutrymme och databasbuffertutrymme, så fl
 * **Storlek på e-postkampanj**
 Hur ofta kampanjer startas påverkar databasserverns processorkrav. I kombination med direktutskick, inkommande interaktioner och andra arbetsflöden innebär segmenteringsåtgärder för e-postkampanjer en avsevärd belastning för databasservern.
 
-* **Frekvens för direktreklam**
+* **Intern e-postfrekvens**
 Hur ofta direktutskick skickas kan påverka databasserverns processorkrav. I kombination med kampanjlanseringar och andra arbetsflöden innebär segmenteringsåtgärder för direktutskick en avsevärd belastning på databasservern.
 
 * **SMS-meddelandevolym**
@@ -235,9 +235,9 @@ Mängden data för varje aktiv mottagare kräver både lagringsutrymme och buffe
 Regler för interaktion i gruppläge utvärderas i arbetsflöden som överför all beräkningskomplexitet till databasen. Den största ansträngningsfaktorn för databasen är det totala antalet giltiga erbjudanden som beräknas under ett motoranrop (målstorlek X genomsnittligt antal erbjudanden per mottagare innan de bästa N-erbjudandena behålls). Databasserverns processorhastighet är den första prestandafaktionen.
 
 * **Inkommande interaktioner eller SOAP API-användning**
-Regler och erbjudanden för inkommande interaktion utvärderas i marknadsföringsdatabasen, vilket kräver stora databasserverresurser, särskilt CPU. Kraftig användning av inkommande interaktioner eller SOAP API:er kräver separata webbservrar för att separera arbetsbelastningen från pågående Campaign-arbetsflöden.
+Regler och erbjudanden för inkommande interaktion utvärderas i marknadsföringsdatabasen, vilket kräver stora databasserverresurser, särskilt CPU. Kraftig användning av inkommande interaktioner eller SOAP-API:er kräver separata webbservrar för att separera arbetsbelastningen från pågående Campaign-arbetsflöden.
 
-* **Lagringsperiod för spårningsdata**
+* **Kvarhållningsperiod för spårningsdata**
 Om du vill öka lagringen av spårningsdata i mer än 90 dagar krävs mer databaslagring och systemet kan bli långsammare eftersom nya spårningsdata läggs in i stora tabeller. Spårningsdata är inte användbara för kampanjsegmentering efter 90 dagar, så den kortare kvarhållningsperioden rekommenderas.
 
   Spårningsdata bör flyttas till Adobe Analytics eller något annat analyssystem om ni behöver en långsiktig analys av mottagarnas marknadsföringsupplevelser.
@@ -246,7 +246,7 @@ Om du vill öka lagringen av spårningsdata i mer än 90 dagar krävs mer databa
 
 Alla Campaign-servrar är bra lämpade för virtualisering. Flera frågor måste åtgärdas för att säkerställa lämplig tillgänglighet och prestanda.
 
-* **Konfiguration av redundans**
+* **Konfiguration vid fel**
 Klustrade servrar, till exempel redundanta programservrar under en belastningsutjämnad proxy, måste distribueras på separat maskinvara för att säkerställa att båda virtuella maskiner inte kraschar om maskinvarufel uppstår.
 
 * **I/O-konfiguration**

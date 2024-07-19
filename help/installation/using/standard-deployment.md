@@ -85,7 +85,7 @@ Stegen är följande:
    * För Linux: [Integrering med en webbserver för Linux](../../installation/using/integration-into-a-web-server-for-linux.md)
    * För Windows: [Integrering med en webbserver för Windows](../../installation/using/integration-into-a-web-server-for-windows.md)
 
-1. Skapa **demo** -instans. Det finns två sätt att göra detta:
+1. Skapa instansen **demo**. Det finns två sätt att göra detta:
 
    * Skapa instansen via konsolen:
 
@@ -105,9 +105,9 @@ Stegen är följande:
 
    Namnet på instansen är detsamma som på programservern.
 
-   Anslutningen till servern med **nlserver web** modulen (spegelsidor, avprenumeration) görs från URL:en för belastningsutjämnaren (tracking.campaign.net).
+   Anslutningen till servern med **nlserver web**-modulen (spegelsidor, avprenumeration) görs från URL:en för belastningsutjämnaren (tracking.campaign.net).
 
-1. Ändra **internal** på samma sätt som programservern.
+1. Ändra **internal** till samma som programservern.
 
    Mer information om detta finns i [det här avsnittet](../../installation/using/configuring-campaign-server.md#internal-identifier).
 
@@ -117,11 +117,11 @@ Stegen är följande:
    nlserver config -setdblogin:PostgreSQL:campaign:demo@dbsrv -instance:demo
    ```
 
-1. I **config-default.xml** och **config-demo.xml** filer, aktivera **webb**, **trackinglogd** och **mta** moduler.
+1. Aktivera modulerna **web**, **trackinglog** och **mta** i filerna **config-default.xml** och **config-demo.xml** .
 
    Mer information om detta finns i [det här avsnittet](../../installation/using/configuring-campaign-server.md#enabling-processes).
 
-1. Redigera **serverConf.xml** och fylla i:
+1. Redigera filen **serverConf.xml** och fyll i den:
 
    * DNS-konfigurationen för MTA-modulen:
 
@@ -131,7 +131,7 @@ Stegen är följande:
 
      >[!NOTE]
      >
-     >The **nameServers** parametern används bara i Windows.
+     >Parametern **nameServers** används bara i Windows.
 
      Mer information finns i [Leveransinställningar](configure-delivery-settings.md).
 
@@ -142,7 +142,7 @@ Stegen är följande:
      <spareServer enabledIf="$(hostname)!='front_srv2'" id="2" url="https://front_srv2:8080"/>
      ```
 
-     Mer information finns i [Spårning av överflödiga](configuring-campaign-server.md#redundant-tracking).
+     Mer information finns i [Spårning av överflödiga ](configuring-campaign-server.md#redundant-tracking).
 
 1. Starta webbplatsen och testa omdirigeringen från URL:en: [https://tracking.campaign.net/r/test](https://tracking.campaign.net/r/test).
 
@@ -164,7 +164,7 @@ Stegen är följande:
    * För Windows: [Starta webbservern och testa konfigurationen](../../installation/using/integration-into-a-web-server-for-windows.md#launching-the-web-server-and-testing-the-configuration)
 
 1. Starta Adobe Campaign-servern.
-1. I Adobe Campaign-konsolen ansluter du med **admin** logga in utan lösenord och starta distributionsguiden.
+1. Anslut med inloggningen **admin** utan lösenord i Adobe Campaign-konsolen och starta distributionsguiden.
 
    Mer information finns i [Distribuera en instans](../../installation/using/deploying-an-instance.md).
 
@@ -178,4 +178,4 @@ Stegen är följande:
 
    >[!NOTE]
    >
-   >Vi använder den befintliga instansen av de två spårningsservrarna som har skapats tidigare och använder **internal** inloggning.
+   >Vi använder den befintliga instansen av de två spårningsservrarna som har skapats tidigare och använder inloggningen **internal**.

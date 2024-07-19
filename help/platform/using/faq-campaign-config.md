@@ -42,7 +42,7 @@ Som expertanvändare kan du konfigurera spårningsfunktioner via instansen i Cam
 
 ## Hur konfigurerar man e-postleveransen? {#how-to-configure-email-deliverability-}
 
-Förutom [Adobe Deliverability Best Practice Guide](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html?lang=sv), läs igenom de tekniska rekommendationerna för leverans för att förstå hur ni ska konfigurera instansen för att maximera kapaciteten för Campaign-leverans.
+Förutom [Adobe Deliverability Best Practice Guide](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html?lang=sv) kan du läsa igenom de tekniska rekommendationerna för leveransbarhet för att förstå hur du konfigurerar instansen för att maximera leveransfunktionerna i Campaign.
 
 [Klicka här för att läsa mer](../../delivery/using/about-deliverability.md).
 
@@ -74,9 +74,9 @@ Adobe Campaign tillhandahåller olika CRM-kopplingar för att länka din plattfo
 
 Dessa kopplingar möjliggör snabb och enkel dataintegrering. Adobe Campaign erbjuder en dedikerad guide för att samla in och välja bland tabellerna i CRM. Detta garanterar dubbelriktad synkronisering för att säkerställa att data alltid är aktuella i alla system.
 
-Läs [Konfigurera CRM-anslutningar](../../platform/using/crm-connectors.md) om du vill veta hur du synkroniserar CRM-verktyget med Adobe Campaign.
+Läs [Konfigurera CRM-anslutningar](../../platform/using/crm-connectors.md) om du vill veta mer om hur du synkroniserar CRM-verktyget med Adobe Campaign.
 
-![](assets/do-not-localize/how-to-video.png) Se fallvideon på [Integrering av Adobe Campaign och Microsoft Dynamics 365](https://helpx.adobe.com/campaign/kt/acc/using/acc-integrate-dynamics365-with-acc-feature-video-set-up.html).
+![](assets/do-not-localize/how-to-video.png) Titta på den här fallvideon om [Adobe Campaign- och Microsoft Dynamics 365-integrering](https://helpx.adobe.com/campaign/kt/acc/using/acc-integrate-dynamics365-with-acc-feature-video-set-up.html).
 
 ## Hur utför jag rensning av mjuk cache när problemen är datorspecifika eller användarspecifika? {#perform-soft-cache-clear}
 

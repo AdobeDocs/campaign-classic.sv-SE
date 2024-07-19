@@ -51,40 +51,40 @@ Alternativen Power Booster och Power Cluster kan användas av följande program:
    <td> <strong>Power Cluster</strong><br /> </td> 
   </tr> 
   <tr> 
-   <td> E-postkampanjer och utgående interaktioner<br /> </td> 
+   <td> E-postkampanjer och utgående interaktioner <br /> </td> 
    <td> Upp till ungefär 30 miljoner e-postmeddelanden per månad<br /> </td> 
    <td> 30 till 100 miljoner e-postmeddelanden per månad<br /> </td> 
    <td> Över 100 miljoner e-postmeddelanden per månad<br /> </td> 
   </tr> 
   <tr> 
-   <td> Transaktionsmeddelanden<br /> </td> 
-   <td> 50 000 per timme per körningsserver<br /> </td> 
-   <td> 50 000 per timme per körningsserver<br /> </td> 
-   <td> 50 000 per timme per körningsserver<br /> </td> 
+   <td> Transaktionsmeddelanden <br /> </td> 
+   <td> 50 000 per timme per körningsserver <br /> </td> 
+   <td> 50 000 per timme per körningsserver <br /> </td> 
+   <td> 50 000 per timme per körningsserver <br /> </td> 
   </tr> 
   <tr> 
-   <td> Tillgänglighet<br /> </td> 
-   <td> Den primära databasens placering<br /> </td> 
-   <td> 24/7 utom underhållsfönster och driftstopp för körningsinstansen<br /> </td> 
-   <td> Service 24/7/365 möjlig<br /> </td> 
+   <td> Tillgänglighet <br /> </td> 
+   <td> Den för den primära databasen <br /> </td> 
+   <td> 24/7 utom underhållsfönster och driftstopp för körningsinstansen <br /> </td> 
+   <td> Service kan utföras dygnet runt, alla dagar, året om <br /> </td> 
   </tr> 
   <tr> 
-   <td> Säkerhet<br /> </td> 
-   <td> Datamarknaden är potentiellt tillgänglig från allmänheten via internet<br /> </td> 
-   <td> Datamarknaden är isolerad från frontalkomponenter som riktas mot Internet<br /> </td> 
-   <td> Datamarknaden är isolerad från frontalkomponenter som riktas mot Internet<br /> </td> 
+   <td> Säkerhet <br /> </td> 
+   <td> Datamarkeringen kan nås från det offentliga Internet<br /> </td> 
+   <td> Datamarkeringen är isolerad från komponenter som riktas mot Internet framifrån <br /> </td> 
+   <td> Datamarkeringen är isolerad från komponenter som riktas mot Internet framifrån <br /> </td> 
   </tr> 
   <tr> 
    <td> Distributionsmall<br /> </td> 
    <td> Alla på en plats (kan finnas lokalt eller i molnet)<br /> </td> 
    <td> Marknadsföring på plats med körning i molnet möjligt<br /> </td> 
-   <td> Marknadsföring på plats med exekvering i molnet; exekvering på olika sätt är möjlig<br /> </td> 
+   <td> Marknadsföring lokalt med körning i molnet; körning i olika geografiska områden är möjlig<br /> </td> 
   </tr> 
  </tbody> 
 </table>
 
 ## Rekommendationer {#recommendations}
 
-* En körningsinstans måste dedikeras till en tjänst. Du kan inte installera ett paket för en tjänst som du inte har prenumererat på. Om du till exempel prenumererar på **Power Booster** för **Meddelandecenter** kan du endast installera **[!UICONTROL Execution of transactional messages]** paket på den dedikerade körningsinstansen. Kontrollera licensavtalet.
+* En körningsinstans måste dedikeras till en tjänst. Du kan inte installera ett paket för en tjänst som du inte har prenumererat på. Om du till exempel prenumererar på alternativet **Power Booster** för tjänsten **Message Center** kan du bara installera paketet **[!UICONTROL Execution of transactional messages]** på den dedikerade körningsinstansen. Kontrollera licensavtalet.
 * Eftersom dedikerade instanser (eller kluster) är Adobe Campaign-instanser är rekommendationerna samma som för en huvudinstans. Mer information finns i [det här dokumentet](../../production/using/foreword.md).
 * Kontakta Adobe Campaign Professional Services om du vill konfigurera instansen från en databas-/maskinvarukomponentvy.

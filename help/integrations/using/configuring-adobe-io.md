@@ -1,7 +1,7 @@
 ---
 product: campaign
 title: Konfigurera Developer Console för Adobe Experience Cloud Triggers
-description: Lär dig konfigurera Developer Console Adobe Experience Cloud Triggers
+description: Så här konfigurerar du Developer Console Adobe Experience Cloud Triggers
 feature: Triggers
 audience: integrations
 content-type: reference
@@ -37,8 +37,8 @@ This integration only applies starting **Campaign Classic 20.2.4 and above, 19.1
 
 Kontrollera att du har:
 
-* en giltig **Organisationens identifierare**: Organisations-ID är den unika identifieraren inom Adobe Experience Cloud, som används t.ex. för tjänsten VisitorID och IMS Single-Sign On (SSO). [Läs mer](https://experienceleague.adobe.com/docs/core-services/interface/administration/organizations.html?lang=sv)
-* a **Åtkomst för utvecklare** till din organisation. Organisationens systemadministratör måste följa **Lägga till utvecklare i en enda produktprofil** detaljerad [på den här sidan](https://helpx.adobe.com/enterprise/using/manage-developers.html) för att ge utvecklare åtkomst till `Analytics - {tenantID}` Produktprofil för den Adobe Analytics-produkt som är kopplad till utlösare.
+* en giltig **organisationsidentifierare**: Organisations-ID är den unika identifieraren inom Adobe Experience Cloud, som används t.ex. för VisitorID-tjänsten och IMS Single-Sign On (SSO). [Läs mer](https://experienceleague.adobe.com/docs/core-services/interface/administration/organizations.html?lang=sv)
+* en **utvecklaråtkomst** till din organisation. Organisationens systemadministratör måste följa proceduren **Lägg till utvecklare i en enskild produktprofil** som beskrivs [ på den här sidan](https://helpx.adobe.com/enterprise/using/manage-developers.html) för att ge utvecklare åtkomst till produktprofilen `Analytics - {tenantID}` för den Adobe Analytics-produkt som är associerad med utlösare.
 
 ## Steg 1: Skapa/uppdatera OAuth-projekt {#creating-adobe-io-project}
 
@@ -46,24 +46,24 @@ Kontrollera att du har:
 >
 > JWT-autentiseringsuppgifterna (Service Account) har tagits bort av Adobe, och Campaign-integreringar med Adobe-lösningar och appar måste nu förlita sig på autentiseringsuppgifter för OAuth Server-till-Server. </br>
 >
-> * Om du har implementerat inkommande integreringar med Campaign måste du migrera ditt tekniska konto enligt informationen i [den här dokumentationen](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration/#_blank). Befintliga JWT-referenser (Service Account) kommer att fortsätta att fungera fram till 27 januari 2025.</br>
+> * Om du har implementerat inkommande integreringar med Campaign måste du migrera ditt tekniska konto enligt beskrivningen i [den här dokumentationen](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration/#_blank). Befintliga JWT-autentiseringsuppgifter (Service Account) fortsätter att fungera till 27 januari 2025.</br>
 >
 > * Om ni har implementerat utgående integreringar, som integrering med Campaign-Analytics eller integrering med Experience Cloud-utlösare, fortsätter de att fungera fram till 27 januari 2025. Innan detta datum måste ni dock uppgradera er Campaign-miljö till v7.4.1 och migrera ert tekniska konto till Autentisering.
 
 Om du vill fortsätta konfigurera din Adobe Analytics-anslutning öppnar du Adobe Developer-konsolen och skapar ett OAuth Server-till-Server-projekt.
 
-Se [den här sidan](oauth-technical-account.md#oauth-service) för detaljerad dokumentation.
+Mer information finns på [den här sidan](oauth-technical-account.md#oauth-service).
 
 ## Steg 2: Lägg till projektautentiseringsuppgifterna i Adobe Campaign {#add-credentials-campaign}
 
-Följ stegen i [den här sidan](oauth-technical-account.md#add-credentials) för att lägga till dina OAuth-projektbehörigheter i Adobe Campaign.
+Följ stegen som beskrivs på [den här sidan](oauth-technical-account.md#add-credentials) för att lägga till dina OAuth-projektautentiseringsuppgifter i Adobe Campaign.
 
 ## Steg 3: Uppdatera tagg för pipeline {#update-pipelined-tag}
 
-Uppdatera [!DNL pipelined] -taggen måste du uppdatera autentiseringstypen till utvecklarkonsolprojektet i konfigurationsfilen **config-&lt; instance-name >.xml** enligt följande:
+Om du vill uppdatera taggen [!DNL pipelined] måste du uppdatera autentiseringstypen till utvecklarkonsolprojektet i konfigurationsfilen **config-&lt; instance-name >.xml** enligt följande:
 
 ```
 <pipelined ... authType="imsJwtToken"  ... />
 ```
 
-Kör sedan en `config -reload` och en omstart av [!DNL pipelined] för de ändringar som ska beaktas.
+Kör sedan en `config -reload` och en omstart av [!DNL pipelined] för att ta hänsyn till ändringarna.

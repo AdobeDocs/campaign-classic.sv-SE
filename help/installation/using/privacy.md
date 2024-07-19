@@ -13,7 +13,7 @@ ht-degree: 1%
 
 # Personalisering och sekretess {#privacy}
 
-## URL-anpassning {#url-personalization}
+## URL PERSONALIZATION {#url-personalization}
 
 När du lägger till anpassade länkar till ditt innehåll bör du alltid undvika att ha en personalisering i värdnamnsdelen av webbadressen för att undvika eventuella säkerhetsbrister. Följande exempel får aldrig användas i alla URL-attribut &lt;`a href="">` eller `<img src="">`:
 
@@ -25,13 +25,13 @@ När du lägger till anpassade länkar till ditt innehåll bör du alltid undvik
 
 ### Rekommendation
 
-Om du vill validera och se till att du inte använder ovanstående kör du en fråga i URL-spårningstabellen via [Kampanjgenerisk frågeredigerare](../../platform/using/steps-to-create-a-query.md) eller skapa ett arbetsflöde med filtervillkor i [frågeaktivitet](../../workflow/using/query.md).
+Om du vill validera och kontrollera att du inte använder ovanstående kör du en fråga om spårning av URL-tabell via [Kampanjredigeraren för allmän fråga](../../platform/using/steps-to-create-a-query.md) eller skapar ett arbetsflöde med filtervillkor i [frågeaktiviteten](../../workflow/using/query.md).
 
 Exempel:
 
-1. Skapa ett arbetsflöde och lägga till en **Fråga** aktivitet. [Läs mer](../../workflow/using/query.md).
+1. Skapa ett arbetsflöde och lägg till en **Query**-aktivitet. [Läs mer](../../workflow/using/query.md).
 
-1. Öppna **Fråga** aktivitet och skapa ett filter på `nmsTrackingUrl` tabellen enligt följande:
+1. Öppna aktiviteten **Fråga** och skapa ett filter för tabellen `nmsTrackingUrl` enligt följande:
 
    `source URL starts with http://<% or source URL starts with https://<%`
 
@@ -48,13 +48,13 @@ För att förbättra säkerheten har en signaturmekanism införts för att spår
 
 >[!NOTE]
 >
->När användaren klickar på en felformaterad signerad URL returneras följande fel: `Requested URL '…' was not found.`
+>När användaren klickar på en felformaterad URL returneras följande fel: `Requested URL '…' was not found.`
 
-Dessutom kan du använda en förbättring för att inaktivera URL:er som genererats i tidigare versioner. Den här funktionen är inaktiverad som standard. Du kan kontakta [Kundtjänst](https://helpx.adobe.com/se/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) för att aktivera den här funktionen.
+Dessutom kan du använda en förbättring för att inaktivera URL:er som genererats i tidigare versioner. Den här funktionen är inaktiverad som standard. Du kan kontakta [kundtjänst](https://helpx.adobe.com/se/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) om du vill aktivera den här funktionen.
 
 Om du kör i version 19.1.4 kan du få problem med push-meddelandeleveranser med hjälp av spårningslänkar eller leveranser med ankartaggar. I så fall rekommenderar vi att du inaktiverar URL-signatur.
 
-Som kampanjvärd, hanterad Cloud Service eller hybrid-kund måste ni kontakta [Kundtjänst](https://helpx.adobe.com/se/enterprise/using/support-for-experience-cloud.html) för att inaktivera URL-signatur.
+Om du är en Campaign-värd, hanterad Cloud Service eller hybridkund måste du kontakta [kundtjänst](https://helpx.adobe.com/se/enterprise/using/support-for-experience-cloud.html) för att inaktivera URL-signaturen.
 
 Om du kör Campaign i en hybridarkitektur måste du se till att den värdbaserade mellankällinstansen har uppgraderats enligt följande innan du aktiverar URL-signatur:
 
@@ -68,15 +68,15 @@ I annat fall kan följande problem uppstå:
 
 Om du vill inaktivera URL:er som har skapats i tidigare versioner följer du de här stegen på alla Campaign-servrar samtidigt:
 
-1. I serverkonfigurationsfilen (`serverConf.xml`), ändra **blockRedirectForUnsignedTrackingLink** alternativ till **true**.
-1. Starta om `nlserver` service.
-1. På `tracking` server, starta om `web` server (apache2 på Debian, httpd on CentOS/RedHat, IIS on Windows).
+1. Ändra alternativet **blockRedirectForUnsignedTrackingLink** till **true** i serverkonfigurationsfilen (`serverConf.xml`).
+1. Starta om tjänsten `nlserver`.
+1. Starta om servern `web` på servern `tracking` (apache2 på Debian, httpd på CentOS/RedHat, IIS på Windows).
 
 Om du vill aktivera URL-signering följer du de här stegen på alla Campaign-servrar samtidigt:
 
-1. I serverkonfigurationsfilen (`serverConf.xml`), ändra **signEmailLinks** till **true**.
-1. Starta om **nlserver** service.
-1. På `tracking` server, starta om `web` server (apache2 på Debian, httpd on CentOS/RedHat, IIS on Windows).
+1. Ändra alternativet **signEmailLinks** till **true** i serverkonfigurationsfilen (`serverConf.xml`).
+1. Starta om tjänsten **nlserver**.
+1. Starta om servern `web` på servern `tracking` (apache2 på Debian, httpd på CentOS/RedHat, IIS på Windows).
 
 ## Databegränsning
 
@@ -86,9 +86,9 @@ Med den här begränsningen kan du ta bort lösenordsfält men låta det externa
 
 Gör så här:
 
-1. Gå till **[!UICONTROL Administration]** > **[!UICONTROL Configuration]** > **[!UICONTROL Data schemas]** mapp för Campaign Explorer.
+1. Bläddra till mappen **[!UICONTROL Administration]** > **[!UICONTROL Configuration]** > **[!UICONTROL Data schemas]** i Campaign Explorer.
 
-1. Skapa ett dataschema som **[!UICONTROL Extension of a schema]**.
+1. Skapa ett datarema, som en **[!UICONTROL Extension of a schema]**.
 
    ![](assets/privacy-data-restriction.png)
 
@@ -96,7 +96,7 @@ Gör så här:
 
 1. I den sista guideskärmen redigerar du ditt nya srcSchema för att begränsa åtkomsten till alla lösenordsfält:
 
-   Du kan ersätta huvudelementet (`<element name="extAccount" ... >`) av:
+   Du kan ersätta huvudelementet (`<element name="extAccount" ... >`) med:
 
    ```sql
    <element name="extAccount">
@@ -149,7 +149,7 @@ Gör så här:
 
    >[!NOTE]
    >
-   >Du kan ersätta `$(loginId) = 0 or $(login) = 'admin'` med `hasNamedRight('admin')` för att tillåta alla användare med administratörsbehörighet att se dessa lösenord.
+   >Du kan ersätta `$(loginId) = 0 or $(login) = 'admin'` med `hasNamedRight('admin')` så att alla användare med administratörsbehörighet kan se de här lösenorden.
 
 ## Protect-sidor med PI
 
@@ -162,7 +162,7 @@ Målet med detta förfarande är att förhindra att dessa sidor indexeras, vilke
 
 Följ de här stegen för att skydda sidorna:
 
-1. Lägg till en `robots.txt` filen i webbserverns rot (Apache eller IIS). Här är filens innehåll:
+1. Lägg till en `robots.txt`-fil i webbserverns rot (Apache eller IIS). Här är filens innehåll:
 
    ```sql
    # Make changes for all web spiders
@@ -170,17 +170,17 @@ Följ de här stegen för att skydda sidorna:
    *Disallow: /
    ```
 
-   Information om IIS finns i [den här sidan](https://docs.microsoft.com/en-us/iis/extensions/iis-search-engine-optimization-toolkit/managing-robotstxt-and-sitemap-files).
+   Information om IIS finns på [sidan](https://docs.microsoft.com/en-us/iis/extensions/iis-search-engine-optimization-toolkit/managing-robotstxt-and-sitemap-files).
 
    För Apache kan du placera filen i **/var/www/robots.txt** (Debian).
 
-1. Ibland lägger du till en **robots.txt** filen inte är tillräcklig vad gäller säkerhet. Om en annan webbplats till exempel innehåller en länk till sidan kan den visas i ett sökresultat.
+1. Ibland räcker det inte med att lägga till en **robots.txt**-fil när det gäller säkerhet. Om en annan webbplats till exempel innehåller en länk till sidan kan den visas i ett sökresultat.
 
-   Förutom **robots.txt** bör du lägga till en **X-Robots-tag** header. Du kan göra det i Apache eller IIS och i **serverConf.xml** konfigurationsfil.
+   Utöver filen **robots.txt** bör du lägga till en **X-Robots-Tag** -rubrik. Du kan göra det i Apache eller IIS och i konfigurationsfilen **serverConf.xml** .
 
    Mer information finns i [den här artikeln](https://developers.google.com/search/reference/robots_meta_tag).
 
 
 ## Sekretessförfrågningar
 
-Se [den här sidan](../../platform/using/privacy-management.md) om du vill ha allmän information om vad sekretesshantering är och implementeringsstegen i Adobe Campaign. Du hittar även bästa praxis och en översikt över användarprocessen och personifierna.
+Se [den här sidan](../../platform/using/privacy-management.md) för allmän information om vad sekretesshantering är och implementeringsstegen i Adobe Campaign. Du hittar även bästa praxis och en översikt över användarprocessen och personifierna.

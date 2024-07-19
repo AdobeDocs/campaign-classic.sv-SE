@@ -27,12 +27,12 @@ Innan du börjar arbeta med Adobe Campaign-Adobe Analytics-kontakten bör du tä
 
 * Tillägget för Web Analytics-anslutningen måste installeras i din miljö via det dedikerade paketet.
 
-   * För hybridimplementeringar och implementeringar på plats måste du följa stegen för etablering som beskrivs i detta [page](adobe-analytics-provisioning.md).
+   * För hybridimplementeringar och lokala implementeringar måste du följa stegen för etablering som beskrivs på den här [sidan](adobe-analytics-provisioning.md).
    * Som hoster- eller Managed Cloud Services-användare kan du kontakta Adobe för att få kontakt med Adobe Experience Cloud tjänster och lösningar.
 
 
 ## Konfiguration och användning {#adobe-analytics-connector-usage}
 
-Om du vill aktivera den här integreringen måste du skapa ditt Adobe tekniska konto enligt anvisningarna i [den här sidan](oauth-technical-account.md).
+Om du vill aktivera den här integreringen måste du skapa ditt Adobe-tekniska konto enligt informationen på [den här sidan](oauth-technical-account.md).
 
-Lär dig hur du arbetar med Adobe Campaign och Adobe Analytics i [Adobe Campaign v8-dokumentation](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/connect/ac-aa){target="_blank"}.
+Lär dig hur du arbetar med Adobe Campaign och Adobe Analytics i [Adobe Campaign v8-dokumentationen](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/connect/ac-aa){target="_blank"}.

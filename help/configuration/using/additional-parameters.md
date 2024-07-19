@@ -18,10 +18,10 @@ ht-degree: 0%
 
 Adobe Campaign-plattformen har två parametrar av typen TRANSACTION som standard:
 
-* **belopp**: representerar mängden transaktion,
+* **amount**: representerar beloppet för en transaktion,
 * **artikel**: representerar antalet objekt i en transaktion.
 
-Dessa parametrar definieras i **nms:webTrackingLog** och är några av de indikatorer som visas i rapporteringen.
+De här parametrarna definieras i schemat **nms:webTrackingLog** och är några av de indikatorer som visas vid rapportering.
 
 Om du vill definiera ytterligare parametrar måste du utöka det här schemat.
 
@@ -49,11 +49,11 @@ I serverkonfigurationen kan du definiera det maximala antal tecken som ska beakt
 >
 >Om du ökar det maximala antalet tecken som ska beaktas kan det påverka plattformens webbspårningsprestanda.
 
-Om du vill göra det ändrar du **webTrackingParamSize** attributet för **`<trackinglogd>`** -elementet i **serverConf.xml** -fil. Filen sparas i **conf** underkatalogen till Adobe Campaign installationskatalog.
+Det gör du genom att ändra attributet **webTrackingParamSize** för elementet **`<trackinglogd>`** i filen **serverConf.xml**. Den här filen sparas i underkatalogen **conf** i Adobe Campaign installationskatalog.
 
 **Exempel**:
 
-Standardvärdet är 64 tecken. Med det här värdet kan du ta hänsyn till **belopp** och **artikel** (&quot;amount=xxxxxx&amp;article=xxxxxx&quot;) standardparametrar.
+Standardvärdet är 64 tecken. Med det här värdet kan du ta hänsyn till standardparametrarna **amount** och **article** (&quot;amount=xxxxxx&amp;article=xxxxxxxx&quot;).
 
 Genom att ta hänsyn till båda parametrarna (storlek på namn + storlek på värde) som anges i exemplet ovan kan du ändra konfigurationen så att den tar 100 tecken (&quot;amount=xxxxxx&amp;article=xxxxxxxx&amp;mode=xxxxxxxxxx&amp;code=xxxxx&quot;).
 
@@ -71,18 +71,18 @@ När konfigurationen har ändrats måste du:
 
   >[!NOTE]
   >
-  >Från och med 20.1 rekommenderar vi att du använder följande kommando i stället (för Linux): **systemctl stop nlserver**
+  >Från 20.1 rekommenderar vi att du använder följande kommando i stället (för Linux): **systemctl stop nlserver**
 
-* I Linux tar du bort de delade minnessegmenten med hjälp av **ipcrm** kommando,
-* Starta om Adobe Campaign-servern: **net start nlserver6** i Windows, **/etc/init.d/nlserver6 - start** i Linux,
+* I Linux tar du bort de delade minnessegmenten med kommandot **ipcrm** .
+* Starta om Adobe Campaign-servern: **net start nlserver6** i Windows, **/etc/init.d/nlserver6 start** i Linux,
 
   >[!NOTE]
   >
-  >Från och med 20.1 rekommenderar vi att du använder följande kommando i stället (för Linux): **systemctl start nlserver**
+  >Från 20.1 rekommenderar vi att du använder följande kommando i stället (för Linux): **systemctl start nlserver**
 
 * Starta om webbservern.
 
-**Exempel**: med hänsyn till konfigurationen under Linux.
+**Exempel**: tar hänsyn till konfigurationen under Linux.
 
 ```
 adobe@selma:~$ systemctl stop nlserver
@@ -108,4 +108,4 @@ adobe@selma:~$ systemctl start apache2
 
 >[!NOTE]
 >
->Om du ökar storleken på **webTrackingParamSize** eller **maxSharedLogs** kan du behöva öka storleken på det delade minnet.
+>Om du ökar storleken på parametrarna **webTrackingParamSize** eller **maxSharedLogs** för Linux kan du behöva öka storleken på det delade minnet (SHM).

@@ -17,7 +17,7 @@ ht-degree: 0%
 
 
 
-Om ni vill få in Adobe Experience Platform-målgrupper i Campaign och använda dem i era arbetsflöden måste ni först koppla samman Adobe Campaign som Adobe Experience Platform **Mål** och konfigurera det med segmentet som ska exporteras.
+Om du vill importera Adobe Experience Platform-målgrupper till Campaign och använda dem i dina arbetsflöden måste du först ansluta Adobe Campaign som Adobe Experience Platform **mål** och konfigurera det med segmentet som ska exporteras.
 
 När målet har konfigurerats exporteras data till din lagringsplats och du måste skapa ett dedikerat arbetsflöde i Campaign Classic för att kunna importera det.
 
@@ -25,7 +25,7 @@ När målet har konfigurerats exporteras data till din lagringsplats och du mås
 
 Konfigurera en anslutning till Adobe Campaign på Adobe Experience-plattformen genom att välja en lagringsplats för de exporterade segmenten. I det här steget kan du även välja vilka segment som ska exporteras och ange ytterligare XDM-fält som ska inkluderas.
 
-Mer information finns i [Destinationsdokumentation](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/email-marketing/adobe-campaign.html).
+Mer information finns i [Måldokumentationen](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/email-marketing/adobe-campaign.html).
 
 När målet har konfigurerats skapar Adobe Experience Platform en tabbavgränsad tabbavgränsad txt- eller CSV-fil på den angivna lagringsplatsen. Den här åtgärden schemaläggs och utförs en gång per 24 timmar.
 
@@ -35,7 +35,7 @@ Du kan nu konfigurera ett arbetsflöde för Campaign Classic så att du kan impo
 
 När Campaign Classicen har konfigurerats som mål måste du skapa ett dedikerat arbetsflöde för att importera filen som har exporterats av Adobe Experience Platform.
 
-Om du vill göra det måste du lägga till och konfigurera en **[!UICONTROL File transfer]** aktivitet. Mer information om hur du konfigurerar den här aktiviteten finns i [det här avsnittet](../../workflow/using/file-transfer.md).
+För att göra detta måste du lägga till och konfigurera en **[!UICONTROL File transfer]**-aktivitet. Mer information om hur du konfigurerar den här aktiviteten finns i [det här avsnittet](../../workflow/using/file-transfer.md).
 
 ![](assets/rtcdp-file-transfer.png)
 
