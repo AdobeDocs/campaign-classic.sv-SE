@@ -8,7 +8,7 @@ audience: integrations
 content-type: reference
 topic-tags: audience-sharing
 exl-id: f3c19fcd-12cb-4ca3-b4b7-7dc4be57f4ea
-source-git-commit: b11185da8236d6100d98eabcc9dc1cf2cffa70af
+source-git-commit: 7b4fbefe0f6bd26ee9260d15e8303f716af7ac96
 workflow-type: tm+mt
 source-wordcount: '130'
 ht-degree: 2%
@@ -21,7 +21,7 @@ ht-degree: 2%
 >
 >Som v7-användare måste Adobe Identity Management System (IMS) vara aktiverat på datorn för att kunna fortsätta. [Läs mer](../../integrations/using/about-adobe-id.md).
 
-När Adobe Identity Management-tjänsten (IMS) har aktiverats för din organisation kan du begära etablering av [Experience Cloud-målgruppsintegreringen](https://experienceleague.adobe.com/en/docs/core-services/interface/services/audiences/overview){target="_blank"} med Campaign. Om du vill göra det skickar du ett e-postmeddelande till [Digital-Request@adobe.com](mailto:Digital-Request@adobe.com) med följande information:
+När Adobe Identity Management-tjänsten (IMS) har aktiverats för din organisation kan du begära etablering av [Experience Cloud-målgruppsintegreringen](https://experienceleague.adobe.com/en/docs/core-services/interface/services/audiences/overview){target="_blank"} med Campaign. Kontakta Adobe och lämna följande uppgifter:
 
 <table> 
  <tbody> 
