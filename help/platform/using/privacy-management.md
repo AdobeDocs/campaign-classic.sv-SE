@@ -8,15 +8,14 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: 23c873fd-9016-4d32-842c-772cfff0e23e
-source-git-commit: 5d237d42adabe42a07bc759913dd9453df650671
+source-git-commit: 122d69d3d7474480f7799248413ac89338469ebc
 workflow-type: tm+mt
-source-wordcount: '905'
-ht-degree: 80%
+source-wordcount: '909'
+ht-degree: 79%
 
 ---
 
 # Sekretesshantering {#privacy-management}
-
 
 Adobe Campaign erbjuder en uppsättning verktyg som hjälper dig att följa [integritetsregleringen](#privacy-management-regulations) (inklusive GDPR, CCPA, PDPA och LGPD).
 
@@ -105,6 +104,7 @@ Följande är standardvärden gällande lagring för inbyggda tabeller. Var medv
 * **Statistik över händelsebearbetning**: 1 månader
 * **Arkiverade händelser**: 1 år
 * **Ignorerade pipeline-händelser**: 1 månad
+* **Dynamisk rapportering**: 13 månader
 
 Och på samma sätt som att ta bort kan man med standardiserad arbetsflödesfunktionalitet ställa in lagringsperioder för alla anpassade tabeller.
 
