@@ -7,7 +7,7 @@ audience: interaction
 content-type: reference
 topic-tags: advanced-parameters
 exl-id: 083be073-aad4-4c81-aff2-77f5ef3e80db
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: 0fba6a2ad4ffa864e2f726f241aa9d7cd39072a6
 workflow-type: tm+mt
 source-wordcount: '1014'
 ht-degree: 1%
@@ -41,7 +41,7 @@ Synkronisering av erbjudanden utförs via paket. I körningsinstanser föregås 
 
 Erbjudandena distribueras automatiskt och publiceras sedan på körnings- och kontrollinstanser.
 
-Erbjudanden som tas bort i designmiljön är inaktiverade på alla onlineförekomster. Föråldrade offerter och erbjudanden tas automatiskt bort i alla instanser efter tömningsperioden (som anges i varje instans distributionsassistent) och glidperioden (som anges i de inkommande förslagens typologiregler).
+Erbjudanden som tas bort i designmiljön är inaktiverade på alla onlineförekomster. Föråldrade offerter och erbjudanden tas automatiskt bort för alla instanser efter tömningsperioden (som anges i varje instans distributionsguide) och glidande period (anges i typologireglerna för inkommande offerter).
 
 ![](assets/interaction_powerbooster_schema2.png)
 

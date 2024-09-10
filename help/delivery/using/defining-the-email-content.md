@@ -6,7 +6,7 @@ badge-v8: label="Gäller även för v8" type="Positive" tooltip="Gäller även C
 feature: Email Design
 role: User
 exl-id: 46212929-fd2d-44a2-897e-35f98e88af36
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: 0fba6a2ad4ffa864e2f726f241aa9d7cd39072a6
 workflow-type: tm+mt
 source-wordcount: '1958'
 ht-degree: 1%
@@ -117,7 +117,7 @@ Mer information finns i [det här avsnittet](defining-interactive-content.md).
 
 ## Använd innehållshantering {#using-content-management}
 
-Du kan definiera innehållet i leveransen med hjälp av innehållshanteringsformulären, direkt i leveransguiden. För att göra detta måste du referera till publiceringsmallen för innehållshanteringen som ska användas på fliken **[!UICONTROL Advanced]** i leveransegenskaperna.
+Du kan definiera innehållet i leveransen med hjälp av innehållshanteringsformulären, direkt i leveransassistenten. För att göra detta måste du referera till publiceringsmallen för innehållshanteringen som ska användas på fliken **[!UICONTROL Advanced]** i leveransegenskaperna.
 
 ![](assets/s_ncs_content_in_delivery.png)
 
@@ -144,7 +144,7 @@ Om du vill anpassa uttryckslistan kan du läsa den här [sidan](customizing-emot
 
 ## Lägg till bilder {#adding-images}
 
-E-postleveranser i HTML-format kan innehålla bilder. Från leveransguiden kan du importera en HTML-sida som innehåller bilder eller infoga bilder direkt med redigeraren i HTML via ikonen **[!UICONTROL Image]**.
+E-postleveranser i HTML-format kan innehålla bilder. Från leveransassistenten kan du importera en HTML-sida som innehåller bilder eller infoga bilder direkt med redigeraren i HTML via ikonen **[!UICONTROL Image]**.
 
 
 ### Guardrails {#img-guardrails}
@@ -166,7 +166,7 @@ Bilderna kan vara:
 
 ### Infoga och hantera bilder {#manage-images}
 
-Med leveransguiden kan du lägga till lokala bilder, eller bilder som lagras i biblioteket, i innehållet i meddelanden. Det gör du genom att klicka på knappen **[!UICONTROL Image]** i verktygsfältet för innehåll i HTML.
+Med leveransassistenten kan du lägga till lokala bilder, eller bilder som lagras i biblioteket, i innehållet i meddelanden. Det gör du genom att klicka på knappen **[!UICONTROL Image]** i verktygsfältet för innehåll i HTML.
 
 ![](assets/s_ncs_user_image_from_library.png)
 
@@ -174,7 +174,7 @@ Med leveransguiden kan du lägga till lokala bilder, eller bilder som lagras i b
 >
 >För att mottagarna ska kunna se bilderna i de meddelanden de får måste meddelandena vara tillgängliga på en server som är tillgänglig utifrån.
 
-Så här hanterar du bilder via leveransguiden:
+Så här hanterar du bilder via leveransassistenten:
 
 1. Klicka på ikonen **[!UICONTROL Tracking & Images]** i verktygsfältet.
    ![](assets/s_ncs_user_email_del_img_param.png)
@@ -184,9 +184,9 @@ Så här hanterar du bilder via leveransguiden:
    ![](assets/s_ncs_user_email_del_img_upload.png)
 
 * Du kan överföra bilder manuellt utan att vänta på leveransanalysfasen. Klicka på länken **[!UICONTROL Upload the images straightaway...]** om du vill göra det.
-* Du kan ange en annan sökväg för åtkomst till bilderna på spårningsservern. Om du vill göra det anger du det i fältet **[!UICONTROL Images URL]**. Det här värdet åsidosätter det värde som definieras i parametrarna i installationsguiden.
+* Du kan ange en annan sökväg för åtkomst till bilderna på spårningsservern. Om du vill göra det anger du det i fältet **[!UICONTROL Images URL]**. Det här värdet åsidosätter det värde som definieras i installationsassistentens parametrar.
 
-När du öppnar HTML-innehåll med inkluderade bilder i leveransguiden får du ett meddelande om du vill att bilderna ska kunna överföras direkt, enligt leveransparametrarna.
+När du öppnar HTML-innehåll med inkluderade bilder i leveransassistenten får du ett meddelande om du vill att bilderna ska kunna överföras direkt, enligt leveransparametrarna.
 
 ![](assets/s_ncs_user_email_del_img_local.png)
 

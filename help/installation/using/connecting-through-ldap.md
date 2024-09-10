@@ -8,22 +8,25 @@ audience: installation
 content-type: reference
 topic-tags: additional-configurations
 exl-id: 0533cd50-3aa4-4160-9152-e916e149e77f
-source-git-commit: 14ba450ebff9bba6a36c0df07d715b7279604222
+source-git-commit: 0fba6a2ad4ffa864e2f726f241aa9d7cd39072a6
 workflow-type: tm+mt
-source-wordcount: '1021'
+source-wordcount: '1045'
 ht-degree: 0%
 
 ---
 
-# Ansluta via LDAP{#connecting-through-ldap}
+# Ansluta via LDAP {#connecting-through-ldap}
 
 ## Konfigurera kampanj och LDAP {#configuring-campaign-and-ldap}
 
 >[!NOTE]
 >
->LDAP-konfigurationen är bara möjlig för lokala eller hybridinstallationer.
+>* LDAP-konfigurationen är bara möjlig för lokala eller hybridinstallationer.
+>
+>* Kontrollera att ditt system och dina öppna versioner är kompatibla med Campaign i [kompatibilitetsmatrisen](../../rn/using/compatibility-matrix.md). Inaktuella versioner kan påverka LDAP-autentiseringen.
+>
 
-LDAP-konfigurationen utförs i distributionsguiden. Alternativet **[!UICONTROL LDAP integration]** måste väljas under det första konfigurationssteget. Se [Distributionsguiden](../../installation/using/deploying-an-instance.md#deployment-wizard).
+LDAP-konfigurationen utförs i distributionsguiden. Alternativet **[!UICONTROL LDAP integration]** måste väljas under det första konfigurationssteget. Se [distributionsguiden](../../installation/using/deploying-an-instance.md#deployment-assistant).
 
 I fönstret kan du konfigurera identifieringen av Adobe Campaign-användare via den angivna LDAP-katalogen.
 
@@ -32,29 +35,19 @@ I fönstret kan du konfigurera identifieringen av Adobe Campaign-användare via 
 * Ange adressen till LDAP-servern i fältet **[!UICONTROL LDAP server]**. Du kan lägga till portnumret. Som standard används porten 389.
 * Välj autentiseringsmetod för användare i listrutan:
 
-   * Krypterat lösenord (**md5**)
+   * Krypterat lösenord (**md5**) - standardläge.
 
-     Standardläge.
-
-   * Lösenord för oformaterad text + SSL (**TLS**)
-
-     Hela autentiseringsproceduren (inklusive lösenord) är krypterad. Den säkra porten 636 får inte användas i det här läget: Adobe Campaign växlar automatiskt till säkert läge.
+   * Lösenord för oformaterad text + SSL (**TLS**) - Hela autentiseringsproceduren (med lösenord) är krypterad. Den säkra porten 636 får inte användas i det här läget: Adobe Campaign växlar automatiskt till säkert läge.
 
      När du använder det här autentiseringsläget verifieras certifikatet i Linux av ett openLDAP-klientbibliotek. Vi rekommenderar att du använder ett giltigt SSL-certifikat så att autentiseringsproceduren krypteras. I annat fall kommer informationen att vara i oformaterad text.
 
      Certifikatet verifieras också i Windows.
 
-   * Windows NT LAN Manager (**NTLM**)
+   * Windows NT LAN Manager (**NTLM**) - Windows-autentisering som tillhandahålls. **[!UICONTROL Unique identifier]** används endast som domännamn.
 
-     Windows-autentisering som tillhandahålls. **[!UICONTROL Unique identifier]** används endast som domännamn.
+   * Distribuerad lösenordsautentisering (**DPA**) - Windows-autentisering som tillhandahålls. **[!UICONTROL Unique identifier]** används endast som domännamn (domain.com).
 
-   * Distribuerad lösenordsautentisering (**DPA**)
-
-     Windows-autentisering som tillhandahålls. **[!UICONTROL Unique identifier]** används endast som domännamn (domain.com).
-
-   * Lösenord för oformaterad text
-
-     Ingen kryptering (endast för användning i testfaser).
+   * Lösenord för oformaterad text - Ingen kryptering (används endast i testfaser).
 
 * Välj autentiseringsläge: **[!UICONTROL Automatically compute the unique user identifier]** (se steg [Beräkning av unikt namn](#distinguished-name-calculation)) eller **[!UICONTROL Search the unique user identifier in the directory]** (se steg [Söka efter identifierare](#searching-for-identifiers)).
 

@@ -8,7 +8,7 @@ audience: installation
 content-type: reference
 topic-tags: initial-configuration
 exl-id: f40bab8c-5064-40d9-beed-101a9f22c094
-source-git-commit: f032ed3bdc0b402c8281bc34e6cb29f3c575aaf9
+source-git-commit: 0fba6a2ad4ffa864e2f726f241aa9d7cd39072a6
 workflow-type: tm+mt
 source-wordcount: '1306'
 ht-degree: 1%
@@ -133,13 +133,13 @@ I fönstret **[!UICONTROL Creation steps]** kan du visa och redigera SQL-skripte
 
 ### Steg 6 - Skapa databasen {#step-6---creating-the-database}
 
-I det sista steget i guiden kan du skapa databasen. Klicka på **[!UICONTROL Start]** för att bekräfta.
+I det sista steget i assistenten kan du skapa databasen. Klicka på **[!UICONTROL Start]** för att bekräfta.
 
 ![](assets/s_ncs_install_db_oracle_creation06.png)
 
 När databasen har skapats kan du ansluta igen för att slutföra instanskonfigurationen.
 
-Du måste nu starta distributionsguiden för att slutföra konfigurationen av instansen. Se [Distributionsguiden](../../installation/using/deploying-an-instance.md#deployment-wizard).
+Du måste nu starta distributionsguiden för att slutföra konfigurationen av instansen. Se [distributionsguiden](../../installation/using/deploying-an-instance.md#deployment-assistant).
 
 Anslutningsinställningarna för den databas som är länkad till instansen lagras i filen **`/conf/config-<instance>.xml`** som finns i Adobe Campaign installationskatalog.
 
@@ -224,13 +224,13 @@ I fönstret **[!UICONTROL Creation steps]** kan du visa och redigera SQL-skripte
 
 ### Steg 5 - Skapa databasen {#step-5---creating-the-database}
 
-I det sista steget i guiden kan du skapa databasen. Klicka på **[!UICONTROL Start]** för att bekräfta.
+I det sista steget i assistenten kan du skapa databasen. Klicka på **[!UICONTROL Start]** för att bekräfta.
 
 ![](assets/s_ncs_install_db_oracle_creation06.png)
 
 När databasen har skapats kan du ansluta igen för att slutföra instanskonfigurationen.
 
-Du måste nu starta distributionsguiden för att slutföra konfigurationen av instansen. Se [Distributionsguiden](../../installation/using/deploying-an-instance.md#deployment-wizard).
+Du måste nu starta distributionsguiden för att slutföra konfigurationen av instansen. Se [distributionsguiden](../../installation/using/deploying-an-instance.md#deployment-assistant).
 
 Anslutningsinställningarna för den databas som är länkad till instansen lagras i filen **`/conf/config-<instance>.xml`** som finns i Adobe Campaign installationskatalog.
 

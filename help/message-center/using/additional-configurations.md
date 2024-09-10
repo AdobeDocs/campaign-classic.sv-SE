@@ -7,7 +7,7 @@ audience: message-center
 content-type: reference
 topic-tags: instance-configuration
 exl-id: 4d25d740-db57-4d18-8cae-2dd49c4a786e
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: 0fba6a2ad4ffa864e2f726f241aa9d7cd39072a6
 workflow-type: tm+mt
 source-wordcount: '804'
 ht-degree: 4%
@@ -34,11 +34,11 @@ Gör så här:
 
 >[!NOTE]
 >
->Antalet väntande händelser i kö visas i avsnittet [Systemindikatorer](../../production/using/monitoring-processes.md#system-indicators) på sidan för processövervakning i Adobe Campaign. Mer information om distributionsguiden finns i [det här avsnittet](../../installation/using/deploying-an-instance.md#deployment-wizard).
+>Antalet väntande händelser i kö visas i avsnittet [Systemindikatorer](../../production/using/monitoring-processes.md#system-indicators) på sidan för processövervakning i Adobe Campaign. Mer information om distributionsguiden finns i [det här avsnittet](../../installation/using/deploying-an-instance.md#deployment-assistant).
 
 ## Rensa händelser {#purging-events}
 
-Du kan använda [distributionsguiden](../../production/using/database-cleanup-workflow.md#deployment-wizard) för att konfigurera hur länge data ska lagras i databasen.
+Du kan använda [distributionsguiden](../../production/using/database-cleanup-workflow.md#deployment-assistant) för att konfigurera hur länge data ska lagras i databasen.
 
 Händelserensning utförs automatiskt av [arbetsflödet för databasrensning](../../production/using/database-cleanup-workflow.md). Det här arbetsflödet tömmer händelser som tagits emot och lagrats på körningsinstanser och händelser som arkiverats på en kontrollinstans.
 

@@ -8,7 +8,7 @@ audience: installation
 content-type: reference
 topic-tags: initial-configuration
 exl-id: 8b07447c-9a86-4b56-8d29-e0b01357a6ec
-source-git-commit: 14ba450ebff9bba6a36c0df07d715b7279604222
+source-git-commit: 0fba6a2ad4ffa864e2f726f241aa9d7cd39072a6
 workflow-type: tm+mt
 source-wordcount: '3389'
 ht-degree: 1%
@@ -21,11 +21,11 @@ ht-degree: 1%
 >
 >Konfigurationer på serversidan kan bara utföras av Adobe för distributioner som hanteras av Adobe. Mer information om de olika distributionerna finns i avsnittet [Värdmodeller](../../installation/using/hosting-models.md) eller i [den här sidan](../../installation/using/capability-matrix.md).
 
-## Distributionsguide {#deployment-wizard}
+## distributionsguide {#deployment-assistant}
 
 Adobe Campaign tillhandahåller en grafisk assistent, som finns i Adobe Campaign klientkonsol, för att definiera parametrarna för den instans som du ska ansluta till.
 
-Om du vill starta distributionsguiden väljer du **Verktyg > Avancerat > Distributionsguiden**.
+Om du vill starta distributionsguiden väljer du **Verktyg > Avancerat > distributionsguiden**.
 
 ![](assets/s_ncs_install_deployment_wiz_01.png)
 
@@ -396,11 +396,11 @@ I fältet **URL-masker** kan du ange listan med URL-masker som ska hoppas över 
 Du kan ange flera URL-masker genom att använda kommatecken för att skilja på dem.
 
 * Mer information om hur du använder och hanterar bilder i e-postmeddelanden finns i [det här avsnittet](../../delivery/using/defining-the-email-content.md#adding-images).
-* I leveransguiden har bilderna som anropas från dessa URL:er statusen&quot;Ignorerad&quot;.
+* I leveransassistenten kommer bilderna som anropas från dessa URL:er att ha statusen&quot;Ignorerad&quot;.
 
 ### Publiceringslägen {#publication-modes}
 
-I det nedre avsnittet av guiden kan du välja publiceringsalternativ för offentliga resurser och bilder.
+I det nedre avsnittet av assistenten kan du välja publiceringsalternativ för offentliga resurser och bilder.
 
 Följande publiceringslägen är tillgängliga:
 

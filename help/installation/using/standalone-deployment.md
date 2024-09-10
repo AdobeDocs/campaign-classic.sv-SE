@@ -7,7 +7,7 @@ audience: installation
 content-type: reference
 topic-tags: deployment-types-
 exl-id: 194366ab-fd9f-4431-9163-ae16c1f96db2
-source-git-commit: 1be1528d657537786c430ea9c8bdb3aad58ba20d
+source-git-commit: 0fba6a2ad4ffa864e2f726f241aa9d7cd39072a6
 workflow-type: tm+mt
 source-wordcount: '1077'
 ht-degree: 2%
@@ -216,11 +216,11 @@ Använd följande steg:
 
    Se [den här sidan](../../installation/using/creating-an-instance-and-logging-on.md) och [det här avsnittet](../../installation/using/configuring-campaign-server.md#internal-identifier).
 
-   Guiden Skapa databas visas första gången du loggar in:
+   Databasgenereringsassistenten visas när du loggar in för första gången:
 
    ![](assets/s_ncs_install_db_oracle_creation01.png)
 
-   Följ stegen i guiden och skapa den databas som är associerad med anslutningsinstansen.
+   Följ stegen i assistenten och skapa den databas som är associerad med anslutningsinstansen.
 
    Mer information finns i [Skapa och konfigurera databasen](../../installation/using/creating-and-configuring-the-database.md).
 

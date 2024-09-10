@@ -6,7 +6,7 @@ feature: Application Settings
 role: Data Engineer, Developer
 badge-v8: label="Gäller även för v8" type="Positive" tooltip="Gäller även Campaign v8"
 exl-id: e61f2b63-06d3-4b8c-867f-1c729176d2da
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: 0fba6a2ad4ffa864e2f726f241aa9d7cd39072a6
 workflow-type: tm+mt
 source-wordcount: '2398'
 ht-degree: 0%
@@ -613,12 +613,12 @@ Taggen **`<check expr="<condition>" />`** i kombination med taggen **`<error>`**
 
 ## Guider {#wizards}
 
-En guide hjälper dig genom en uppsättning datainmatningssteg i form av sidor. De data som anges sparas när du validerar formuläret.
+En assistent guidar dig genom en uppsättning datainmatningssteg i form av sidor. De data som anges sparas när du validerar formuläret.
 
-En guide har följande struktur:
+En assistent har följande struktur:
 
 ```xml
-<form type="wizard" name="example" namespace="cus" img="nms:rcpgroup32.png" label="Wizard example" entity-schema="nms:recipient">
+<form type="wizard" name="example" namespace="cus" img="nms:rcpgroup32.png" label="Assistant example" entity-schema="nms:recipient">
   <container title="Title of page 1" desc="Long description of page 1">
     <input xpath="@lastName"/>
     <input xpath="comment"/>
@@ -632,7 +632,7 @@ En guide har följande struktur:
 
 ![](assets/d_ncs_integration_form_exemple19.png)
 
-Om attributet **type=&quot;wizard&quot;** finns i elementet `<form>` kan du definiera guideläget när du skapar formuläret. Sidorna har slutförts från `<container>` element, som är underordnade elementet `<form>`. `<container>`-elementet för en sida fylls i med rubrikattributen för titeln och desc för att visa beskrivningen under sidans rubrik. Knapparna **[!UICONTROL Previous]** och **[!UICONTROL Next]** läggs till automatiskt för att tillåta bläddring mellan sidor.
+Om attributet **type=&quot;wizard&quot;** finns i elementet `<form>` kan du definiera assistentläget när du skapar formuläret. Sidorna har slutförts från `<container>` element, som är underordnade elementet `<form>`. `<container>`-elementet för en sida fylls i med rubrikattributen för titeln och desc för att visa beskrivningen under sidans rubrik. Knapparna **[!UICONTROL Previous]** och **[!UICONTROL Next]** läggs till automatiskt för att tillåta bläddring mellan sidor.
 
 Knappen **[!UICONTROL Finish]** sparar angivna data och stänger formuläret.
 
