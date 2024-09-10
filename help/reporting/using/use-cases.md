@@ -5,7 +5,7 @@ description: Rapportera användningsfall
 badge-v8: label="Gäller även för v8" type="Positive" tooltip="Gäller även Campaign v8"
 feature: Reporting, Monitoring
 exl-id: e326e32e-7bb0-46ff-9ba5-94ccd1169af2
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: f90df5a5e5b3a2317d86ff2919560ded38f44f44
 workflow-type: tm+mt
 source-wordcount: '1326'
 ht-degree: 0%
@@ -18,7 +18,7 @@ ht-degree: 0%
 
 ## Analysera en population {#analyzing-a-population}
 
-I följande exempel kan du utforska populationen som har en uppsättning nyhetsbrev som mål med hjälp av den beskrivande analysguiden.
+I följande exempel kan du utforska populationen som har en uppsättning nyhetsbrev som mål med hjälp av den beskrivande analysassistenten.
 
 Implementeringsstegen beskrivs nedan, medan en uttömmande lista över alternativ och beskrivningar finns i de andra avsnitten i detta kapitel.
 
@@ -60,7 +60,7 @@ När linjerna och kolumnerna har definierats kan du ändra, flytta eller ta bort
 
 ### Definiera visningsformatet {#defining-the-display-format}
 
-I nästa steg i guiden kan du välja vilken typ av diagram du vill generera.
+I nästa steg i assistenten kan du välja vilken typ av diagram du vill generera.
 
 I det här fallet väljer du histogrammet.
 
@@ -70,7 +70,7 @@ Möjliga konfigurationer av de olika bilderna finns i avsnittet [Alternativ för
 
 ### Konfigurera statistiken som ska beräknas {#configuring-the-statistic-to-calculate}
 
-Ange sedan de beräkningar som ska tillämpas på de insamlade uppgifterna. Som standard utför den beskrivande analysguiden ett enkelt antal värden.
+Ange sedan de beräkningar som ska tillämpas på de insamlade uppgifterna. Som standard utför den beskrivande analysassistenten ett enkelt antal värden.
 
 I det här fönstret kan du definiera en lista med statistik som ska beräknas.
 
@@ -80,7 +80,7 @@ Om du vill skapa en ny statistik klickar du på knappen **[!UICONTROL Add]**. Me
 
 ### Visa och använda rapporten {#viewing-and-using-the-report}
 
-I det sista steget i guiden visas tabellen och diagrammet.
+I det sista steget i assistenten visas tabellen och diagrammet.
 
 Du kan lagra, exportera och skriva ut data med verktygsfältet ovanför tabellen. Mer information finns i [Bearbeta en rapport](../../reporting/using/processing-a-report.md).
 
@@ -92,7 +92,7 @@ Du kan lagra, exportera och skriva ut data med verktygsfältet ovanför tabellen
 
 **Mål**: Generera en analysrapport om platsen för potentiella kunder eller kunder.
 
-1. Öppna den beskrivande analysguiden och välj bara **[!UICONTROL Chart]**.
+1. Öppna den beskrivande analysassistenten och välj bara **[!UICONTROL Chart]**.
 
    ![](assets/s_ncs_user_report_wizard_05a.png)
 
@@ -118,7 +118,7 @@ Du kan lagra, exportera och skriva ut data med verktygsfältet ovanför tabellen
 
 **Mål**: analysera företagets e-postdomäner.
 
-1. Öppna den beskrivande analysguiden och välj endast visningsläget **[!UICONTROL Array]**.
+1. Öppna den beskrivande analysassistenten och välj endast visningsläget **[!UICONTROL Array]**.
 
    ![](assets/s_ncs_user_report_wizard_03a.png)
 
@@ -155,7 +155,7 @@ Du kan lagra, exportera och skriva ut data med verktygsfältet ovanför tabellen
 
 **Mål**: För att generera en kvantitativ analysrapport för mottagarnas ålder
 
-1. Öppna guiden för beskrivande analys och välj **[!UICONTROL Quantitative distribution]** i listrutan.
+1. Öppna den beskrivande analysassistenten och välj **[!UICONTROL Quantitative distribution]** i listrutan.
 
    ![](assets/s_ncs_user_report_wizard_011a.png)
 
@@ -191,7 +191,7 @@ Du kan lagra, exportera och skriva ut data med verktygsfältet ovanför tabellen
 
 Analysen av en population i ett arbetsflöde kräver att populationen fortfarande finns i övergången. Om arbetsflödet startas kan resultatet som gäller populationen rensas från övergången. Om du vill göra en analys kan du antingen:
 
-* Koppla loss övergången från målaktiviteten och starta arbetsflödet för att aktivera den. När övergången börjar blinka startar du guiden på det vanliga sättet.
+* Koppla loss övergången från målaktiviteten och starta arbetsflödet för att aktivera den. När övergången börjar blinka startar du assistenten på det vanliga sättet.
 
   ![](assets/s_ncs_user_report_wizard_018.png)
 
@@ -199,7 +199,7 @@ Analysen av en population i ett arbetsflöde kräver att populationen fortfarand
 
   ![](assets/s_ncs_user_report_wizard_020.png)
 
-  Om populationen rensades från övergången uppmanas du att välja det aktuella alternativet innan du startar den beskrivande analysguiden.
+  Om populationen rensades från övergången uppmanas du att välja det aktuella alternativet innan du startar den beskrivande analysassistenten.
 
   ![](assets/s_ncs_user_report_wizard_019.png)
 
@@ -210,13 +210,13 @@ Analysen av en population i ett arbetsflöde kräver att populationen fortfarand
 
 ## Analyserar loggar för mottagarspårning {#analyzing-recipient-tracking-logs}
 
-Den beskrivande analysguiden kan generera rapporter för andra arbetsregister. Det innebär att du kan analysera leveransloggar genom att skapa en dedikerad rapport.
+Den beskrivande analysassistenten kan generera rapporter för andra arbetsregister. Det innebär att du kan analysera leveransloggar genom att skapa en dedikerad rapport.
 
 I det här exemplet vill vi analysera reaktivitetsfrekvensen för nyhetsbrevets mottagare.
 
 Gör så här:
 
-1. Öppna den beskrivande analysguiden via menyn **[!UICONTROL Tools > Descriptive analysis]** och ändra standardarbetstabellen. Välj **[!UICONTROL Recipient tracking log]** och lägg till ett filter för att exkludera korrektur och inkludera nyhetsbrev.
+1. Öppna den beskrivande analysassistenten via menyn **[!UICONTROL Tools > Descriptive analysis]** och ändra standardarbetstabellen. Välj **[!UICONTROL Recipient tracking log]** och lägg till ett filter för att exkludera korrektur och inkludera nyhetsbrev.
 
    ![](assets/reporting_descriptive_sample_tracking_1.png)
 
@@ -276,7 +276,7 @@ Om analysen gäller en leverans kan du analysera den uteslutna populationen. Om 
 
 ![](assets/reporting_descriptive_exclusion_menu.png)
 
-Detta tar dig till den beskrivande analysguiden och analysen rör undantagsloggarna för mottagare.
+Detta tar dig till den beskrivande analysassistenten och analysen rör loggarna för uteslutning av mottagare.
 
 Du kan till exempel visa domänerna för alla utelämnade adresser och sortera dem efter exkluderingsdatum.
 

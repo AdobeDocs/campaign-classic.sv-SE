@@ -1,30 +1,30 @@
 ---
 product: campaign
-title: Använd guiden för beskrivande analys
-description: Använd guiden för beskrivande analys
+title: Använd den beskrivande analysassistenten
+description: Använd den beskrivande analysassistenten
 badge-v8: label="Gäller även för v8" type="Positive" tooltip="Gäller även Campaign v8"
 feature: Reporting, Monitoring
 exl-id: 848d67c7-d1dc-4eba-bcb8-672e76d8ce87
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: f90df5a5e5b3a2317d86ff2919560ded38f44f44
 workflow-type: tm+mt
 source-wordcount: '1570'
-ht-degree: 1%
+ht-degree: 0%
 
 ---
 
-# Använd guiden för beskrivande analys{#using-the-descriptive-analysis-wizard}
+# Använd den beskrivande analysassistenten{#using-the-descriptive-analysis-wizard}
 
 
 
-Använd den dedikerade guiden för att skapa en beskrivande analysrapport. Konfigurationen beror på vilka data som ska analyseras och på önskad återgivning.
+Använd den dedikerade assistenten för att skapa en beskrivande analysrapport. Konfigurationen beror på vilka data som ska analyseras och på önskad återgivning.
 
 ## Analysera data i databasen {#analyzing-data-in-the-database}
 
-Den beskrivande analysguiden kan startas via menyn **[!UICONTROL Tools > Descriptive analysis]**: i det här fallet gäller analysen mottagare som standard (**nms:mottagare**). Det gäller alla data i Adobe Campaign-databasen.
+Den beskrivande analysassistenten kan startas via menyn **[!UICONTROL Tools > Descriptive analysis]**: i det här fallet gäller analysen mottagare som standard (**nms:mottagare**). Det gäller alla data i Adobe Campaign-databasen.
 
 ![](assets/reporting_descriptive_wz_launch.png)
 
-Om du vill analysera en annan tabell än standardmottagarna en (**nms:receiver**) klickar du på länken **[!UICONTROL Advanced settings...]** i det sista steget i guiden och väljer den tabell som matchar dina inställningar, i det här fallet **cus:individual** :
+Om du vill analysera en annan tabell än standardmottagarna en (**nms:receiver**) klickar du på länken **[!UICONTROL Advanced settings...]** i det sista steget i assistenten och markerar tabellen som matchar dina inställningar, i det här fallet **cus:individual** :
 
 ![](assets/reporting_descriptive_other_schema.png)
 
@@ -36,11 +36,11 @@ Analysen gäller endast mottagare som är 16 år eller äldre och som bor i Lond
 
 ## Analysera en uppsättning data {#analyzing-a-set-of-data}
 
-Du kan använda den beskrivande analysguiden i ett annat sammanhang: en lista, en arbetsflödesövergång, en eller flera leveranser, ett urval av mottagare osv.
+Du kan använda den beskrivande analysassistenten via en annan kontext: en lista, en arbetsflödesövergång, en eller flera leveranser, ett urval mottagare osv.
 
 Det är tillgängligt via flera noder i Adobe Campaign-trädet som pekar på mottagartabellen.
 
-Öppna den beskrivande analysguiden genom att markera objekt och högerklicka. Endast markerade data kommer att analyseras.
+Öppna den beskrivande analysassistenten genom att markera objekt och högerklicka. Endast markerade data kommer att analyseras.
 
 ![](assets/reporting_descriptive_from_recipients.png)
 
@@ -64,7 +64,7 @@ Med mallen **[!UICONTROL Qualitative distribution]** kan du skapa statistik för
 
 Konfigurationsalternativ som är tillgängliga för en rapport som skapats med mallen **[!UICONTROL Qualitative distribution]** finns i [Visa data i tabellen](#displaying-data-in-the-table). Ett fullständigt exempel finns i [Analysera en population](../../reporting/using/use-cases.md#analyzing-a-population).
 
-När du använder den beskrivande analysguiden för att analysera dina data, beror de tillgängliga alternativen på de valda inställningarna. Dessa beskrivs nedan.
+När du använder den beskrivande analysassistenten för att analysera data, beror de tillgängliga alternativen på de valda inställningarna. Dessa beskrivs nedan.
 
 ### Databindning {#data-binning}
 
@@ -119,7 +119,7 @@ Du kan visa eller dölja namnet på statistiken och delsummorna och välja stati
 
 ### Visa data i diagrammet {#displaying-data-in-the-chart}
 
-I det första steget i guiden för beskrivande analys kan du välja att endast visa data i diagramformuläret, utan någon tabell. I det här fallet måste variabelval göras när bilden konfigureras. Du måste först välja antalet variabler som ska visas och välja fälten från den relevanta databasen.
+I det första steget i den beskrivande analysassistenten kan du välja att bara visa data i diagramformuläret, utan någon tabell. I det här fallet måste variabelval göras när bilden konfigureras. Du måste först välja antalet variabler som ska visas och välja fälten från den relevanta databasen.
 
 ![](assets/s_ncs_user_report_wizard_023.png)
 
@@ -139,7 +139,7 @@ Vilka alternativ som visas beror på vilken typ av diagram som är vald. För me
 
 ### Statistikberäkning {#statistics-calculation}
 
-Med guiden för beskrivande analys kan du beräkna flera typer av statistik för data. Som standard konfigureras bara ett enkelt antal.
+Med hjälp av den beskrivande analysassistenten kan du beräkna flera typer av statistik på data. Som standard konfigureras bara ett enkelt antal.
 
 Klicka på **[!UICONTROL Add]** om du vill skapa en ny statistik.
 
@@ -183,7 +183,7 @@ Följande åtgärder är möjliga:
 
 ### Visa rapporten {#displaying-the-report}
 
-I det sista steget i guiden kan du visa rapporten, dvs. tabellen eller diagrammet som de har konfigurerats.
+I det sista steget i assistenten kan du visa rapporten, dvs. tabellen eller diagrammet som de har konfigurerats.
 
 När rapporten innehåller en tabell färgas resultatcellen för beräkning. Ju högre resultat, desto intensivare färg.
 
@@ -205,7 +205,7 @@ Mallen **[!UICONTROL Quantitative distribution]** som gör att du kan generera s
 
 Konfigurationsläget för en analysrapport som skapats med mallen **[!UICONTROL Quantitative distribution]** beskrivs i ett implementeringsexempel [Kvantitativ dataanalys](../../reporting/using/use-cases.md#quantitative-data-analysis).
 
-De alternativ som är tillgängliga när du skapar en kvantitativ rapport med hjälp av den beskrivande analysguiden beskrivs nedan.
+De alternativ som är tillgängliga när du använder den beskrivande analysassistenten för att skapa en kvantitativ rapport beskrivs nedan.
 
 Börja med att markera variabeln som beräkningarna gäller:
 
@@ -229,7 +229,7 @@ Följande åtgärder är möjliga:
 
   ![](assets/s_ncs_user_report_wizard_030.png)
 
-  I det sista steget i guiden visas den kvantitativa analysrapporten.
+  I det sista steget i assistenten visas den kvantitativa analysrapporten.
 
   ![](assets/reporting_descriptive_view_report.png)
 

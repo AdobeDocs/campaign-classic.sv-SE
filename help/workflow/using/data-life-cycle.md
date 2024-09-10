@@ -4,7 +4,7 @@ title: Datas livscykel
 description: Läs mer om datalivscykler i arbetsflöden
 feature: Workflows, Data Management
 exl-id: 366acc1e-d769-4053-9fa1-f47182627c07
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: f90df5a5e5b3a2317d86ff2919560ded38f44f44
 workflow-type: tm+mt
 source-wordcount: '510'
 ht-degree: 4%
@@ -35,7 +35,7 @@ Välj den relevanta menyn för att göra detta:
 
 * Analysera målet
 
-  På den här menyn kan du komma åt guiden för beskrivande analys där du kan ta fram statistik och rapporter om övergångsdata.
+  På den här menyn kan du komma åt den beskrivande analysassistenten som gör att du kan ta fram statistik och rapporter om övergångsdata.
 
   Mer information om detta hittar du i det här [avsnittet](../../reporting/using/using-the-descriptive-analysis-wizard.md).
 

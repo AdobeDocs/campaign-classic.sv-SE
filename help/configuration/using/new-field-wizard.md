@@ -1,29 +1,29 @@
 ---
 product: campaign
-title: Guiden Nytt fält
-description: Guiden Nytt fält
+title: Ny fältassistent
+description: Ny fältassistent
 feature: Schema Extension
 role: Data Engineer, Developer
 exl-id: 2350a531-7a26-4f26-90fe-8dac0cc26605
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: ec774cc10a69a694b3c2bf5a6f662afd12a1435a
 workflow-type: tm+mt
 source-wordcount: '200'
-ht-degree: 4%
+ht-degree: 0%
 
 ---
 
-# Guiden Nytt fält{#new-field-wizard}
+# Ny fältassistent{#new-field-wizard}
 
 
-Med en guide som är tillgänglig via **[!UICONTROL Tools > Advanced > Add new fields]** kan du lägga till ett eller flera fält i en tabell i databasen.
+Med en assistent som är tillgänglig via **[!UICONTROL Tools > Advanced > Add new fields]** kan du lägga till ett eller flera fält i en tabell i databasen.
 
-När du validerar guiden uppdateras tilläggsschemat för den tabell som ska utökas och SQL-skriptet startas för att ändra databasens fysiska struktur.
+När assistenten valideras uppdateras tilläggsschemat för den tabell som ska utökas och SQL-skriptet startas för att ändra databasens fysiska struktur.
 
 Den här assistenten har fördelen att det går snabbt att lägga till ett fält utan att du behöver känna till strukturen i ett dataschema.
 
 Den största nackdelen är begränsningen av data och de egenskaper som ska utökas.
 
-Guiderna innehåller följande steg:
+Assistentskärmarna innehåller följande steg:
 
 1. På den första sidan kan du ange namnet på schemat som ska utökas och namnområdet för tilläggsschemat där ändringarna ska sparas:
 

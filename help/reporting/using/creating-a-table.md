@@ -5,7 +5,7 @@ description: Skapa en tabell
 badge-v8: label="Gäller även för v8" type="Positive" tooltip="Gäller även Campaign v8"
 feature: Reporting, Monitoring
 exl-id: 05f76bdf-6dcd-4360-9e72-0ba6a4dd0d5e
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: f90df5a5e5b3a2317d86ff2919560ded38f44f44
 workflow-type: tm+mt
 source-wordcount: '2512'
 ht-degree: 1%
@@ -461,6 +461,6 @@ Om du klickar på länken för någon av dessa leveranser visas ett diagram med 
 
 Med den här tabelltypen kan du visa statistik som beräknas på data i databasen.
 
-Konfigurationen för de här typerna av rapporter liknar den som används för den beskrivande analysguiden. Mer information finns på [den här sidan](../../reporting/using/using-the-descriptive-analysis-wizard.md#configuring-the-quantitative-distribution-template).
+Konfigurationen av dessa typer av rapporter liknar den som används för den beskrivande analysassistenten. Mer information finns på [den här sidan](../../reporting/using/using-the-descriptive-analysis-wizard.md#configuring-the-quantitative-distribution-template).
 
 Mer information om hur du skapar en pivottabell finns i [det här avsnittet](../../reporting/using/ac-cubes.md).
