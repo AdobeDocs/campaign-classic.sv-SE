@@ -8,7 +8,7 @@ audience: production
 content-type: reference
 topic-tags: database-maintenance
 exl-id: a586d70b-1b7f-47c2-a821-635098a70e45
-source-git-commit: 0654046f7e8271377e38b21a7b2e48f3859353f0
+source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
 workflow-type: tm+mt
 source-wordcount: '1243'
 ht-degree: 1%
@@ -417,7 +417,7 @@ Kontakta databasadministratören för att få information om de procedurer som �
 Exemplet nedan gäller Microsoft SQL Server 2005. Om du använder en annan version kontaktar du databasadministratören för att få reda på mer om underhållsrutiner.
 
 1. Anslut först till Microsoft SQL Server Management Studio med administratörsbehörighet.
-1. Gå till mappen **[!UICONTROL Management > Maintenance Plans]**, högerklicka på den och välj **[!UICONTROL Maintenance Plan Wizard]**.
+1. Gå till mappen **[!UICONTROL Management > Maintenance Plans]**, högerklicka på den och välj **[!UICONTROL Maintenance Plan Assistant]**.
 1. Klicka på **[!UICONTROL Next]** när den första sidan visas.
 1. Välj den typ av underhållsplan som du vill skapa (separata scheman för varje aktivitet eller enskilt schema för hela planen) och klicka sedan på knappen **[!UICONTROL Change...]**.
 1. Välj önskade körningsinställningar i fönstret **[!UICONTROL Job schedule properties]** och klicka sedan på **[!UICONTROL OK]** och klicka på **[!UICONTROL Next]**.

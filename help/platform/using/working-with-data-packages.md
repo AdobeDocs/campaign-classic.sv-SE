@@ -8,7 +8,7 @@ audience: platform
 content-type: reference
 topic-tags: administration-basics
 exl-id: d3369b63-a29b-43b7-b2ad-d36d4f46c82e
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
 workflow-type: tm+mt
 source-wordcount: '2474'
 ht-degree: 2%
@@ -91,7 +91,7 @@ Ett datapaket kan skapas manuellt från valfri textredigerare. Se bara till att 
 
 Paket kan exporteras på tre olika sätt:
 
-* Med **[!UICONTROL Package Export Wizard]** kan du exportera en uppsättning objekt i ett enda paket. Mer information finns i [Exportera en uppsättning objekt i ett paket](#exporting-a-set-of-objects-in-a-package)
+* Med **[!UICONTROL Package Export Assistant]** kan du exportera en uppsättning objekt i ett enda paket. Mer information finns i [Exportera en uppsättning objekt i ett paket](#exporting-a-set-of-objects-in-a-package)
 * Ett **enskilt objekt** kan exporteras direkt i ett paket genom att högerklicka på det och välja **[!UICONTROL Actions > Export in a package]**.
 * Med **paketdefinitioner** kan du skapa en paketstruktur där du lägger till objekt som ska exporteras senare i ett paket. Mer information finns i [Hantera paketdefinitioner](#managing-package-definitions)
 
@@ -99,11 +99,11 @@ När ett paket har exporterats kan du importera det och alla tillagda enheter ti
 
 ### Exportera en uppsättning objekt i ett paket {#exporting-a-set-of-objects-in-a-package}
 
-Guiden för paketexport är tillgänglig via menyn **[!UICONTROL Tools > Advanced > Export package...]** i Adobe Campaign klientkonsol.
+Paketexportassistenten är tillgänglig via menyn **[!UICONTROL Tools > Advanced > Export package...]** i Adobe Campaign klientkonsol.
 
 ![](assets/ncs_datapackage_typepackage.png)
 
-För de tre typerna av paket innehåller guiden följande steg:
+För de tre typerna av paket erbjuder assistenten följande steg:
 
 1. Lista de enheter som ska exporteras efter dokumenttyp:
 
@@ -139,7 +139,7 @@ För de tre typerna av paket innehåller guiden följande steg:
 
    ![](assets/ncs_datapackage_export6.png)
 
-1. På den sista sidan i guiden för paketexport kan du starta exporten. Data lagras i den fil som anges i fältet **[!UICONTROL File]**.
+1. På den sista sidan i paketets exportassistent kan du starta exporten. Data lagras i den fil som anges i fältet **[!UICONTROL File]**.
 
    ![](assets/ncs_datapackage_export7.png)
 
@@ -303,7 +303,7 @@ Om du vill exportera ett paket från en paketdefinition följer du stegen nedan:
 
 ## Importera paket {#importing-packages}
 
-Guiden för paketimport är tillgänglig via huvudmenyn **[!UICONTROL Tools > Advanced > Import package]** i Adobe Campaign klientkonsol.
+Paketimportassistenten är tillgänglig via huvudmenyn **[!UICONTROL Tools > Advanced > Import package]** i Adobe Campaign klientkonsol.
 
 Du kan importera ett paket från en tidigare export, t.ex. från en annan Adobe Campaign-instans eller ett [inbyggt paket](../../installation/using/installing-campaign-standard-packages.md), beroende på villkoren i din licens.
 

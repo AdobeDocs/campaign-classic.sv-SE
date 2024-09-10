@@ -6,7 +6,7 @@ feature: Configuration
 role: Data Engineer, Developer
 badge-v8: label="Gäller även för v8" type="Positive" tooltip="Gäller även Campaign v8"
 exl-id: 24604dc9-f675-4e37-a848-f1911be84f3e
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
 workflow-type: tm+mt
 source-wordcount: '1707'
 ht-degree: 1%
@@ -57,7 +57,7 @@ Du kan skapa olika typer av indataformulär. Formulärtypen avgör hur användar
 
   ![](../../delivery/using/assets/d_ncs_content_form13.png)
 
-* guide
+* Assistent
 
   Formuläret innehåller flera flytande skärmar som ordnas i en viss sekvens. Användarna navigerar från en skärm till nästa. [Läs mer](form-structure.md#wizards).
 

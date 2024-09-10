@@ -5,7 +5,7 @@ description: "Användningsfall: välj dirigerade adresser på villkor"
 badge-v8: label="Gäller även för v8" type="Positive" tooltip="Gäller även Campaign v8"
 feature: Seed Address
 exl-id: 091648b8-bf2d-4595-8be3-287f1ac48edd
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
 workflow-type: tm+mt
 source-wordcount: '851'
 ht-degree: 2%
@@ -83,15 +83,15 @@ Mer information om schematillägg finns i [det här avsnittet](../../configurati
 
    ![](assets/dlv_seeds_usecase_12.png)
 
-1. När uppdateringsguiden visas klickar du på knappen **[!UICONTROL Next]** för att öppna fönstret Redigera tabeller: ändringar som görs i schemat för dirigerade adressdata kräver en strukturuppdatering.
+1. När uppdateringsassistenten visas klickar du på knappen **[!UICONTROL Next]** för att öppna fönstret Redigera tabeller: ändringar som utförts i schemat för startadressdata kräver en strukturuppdatering.
 
    ![](assets/dlv_seeds_usecase_13.png)
 
-1. Följ guiden tills du kommer till sidan för att köra uppdateringen. Klicka på knappen **[!UICONTROL Start]**.
+1. Följ assistenten tills du kommer till sidan för att köra uppdateringen. Klicka på knappen **[!UICONTROL Start]**.
 
    ![](assets/dlv_seeds_usecase_14.png)
 
-   När uppdateringen är klar kan du stänga guiden.
+   När uppdateringen är klar kan du stänga assistenten.
 
 1. Koppla från och återanslut sedan till Adobe Campaign. Ändringarna i schemat för startadressdata gäller nu. För att de ska kunna visas från startadressskärmen måste du uppdatera den associerade **[!UICONTROL Input form]**. Se avsnittet [Uppdatera indataformuläret](#updating-the-input-form).
 

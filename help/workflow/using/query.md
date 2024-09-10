@@ -4,7 +4,7 @@ title: Fråga
 description: Läs mer om arbetsflödesaktiviteten Fråga
 feature: Workflows, Targeting Activity, Query Editor
 exl-id: 20d03627-cd56-46da-bc02-73b48a02a350
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
 workflow-type: tm+mt
 source-wordcount: '1631'
 ht-degree: 0%
@@ -44,7 +44,7 @@ Med länken **[!UICONTROL Edit query...]** kan du definiera måltyp, begränsnin
 
    ![](assets/query_temporary_table.png)
 
-1. Definiera populationerna med guiden. De fält som ska anges kan vara olika beroende på måltyp. Du kan förhandsgranska målpopulationen med dina aktuella villkor på fliken **[!UICONTROL Preview]**.
+1. Definiera populationerna med assistenten. De fält som ska anges kan vara olika beroende på måltyp. Du kan förhandsgranska målpopulationen med dina aktuella villkor på fliken **[!UICONTROL Preview]**.
 
    Mer information om hur du skapar och använder filter och frågor finns i det här [avsnittet](../../platform/using/filtering-options.md).
 
@@ -97,7 +97,7 @@ Så här lägger du till data från Adobe Campaign-databasen:
 
 Så här lägger du till en samling information som är länkad till en målpopulation:
 
-1. I det första steget i guiden väljer du alternativet **[!UICONTROL Data linked to the filtering dimension]**:
+1. I första steget i assistenten väljer du alternativet **[!UICONTROL Data linked to the filtering dimension]**:
 1. Markera tabellen som innehåller den information som du vill samla in och klicka på **[!UICONTROL Next]**.
 
    ![](assets/wf_add_data_linked_table.png)

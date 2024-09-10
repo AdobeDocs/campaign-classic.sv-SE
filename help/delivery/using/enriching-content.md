@@ -6,7 +6,7 @@ badge-v8: label="Gäller även för v8" type="Positive" tooltip="Gäller även C
 feature: Data Management
 role: User, Developer, Data Engineer
 exl-id: a4472a7c-a16b-4d10-a8ca-f74ca5f62de4
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
 workflow-type: tm+mt
 source-wordcount: '670'
 ht-degree: 0%
@@ -39,7 +39,7 @@ Elementet **`<collection-recipient>`** representerar indataelementet för dokume
 
 ### Lägga till en fråga {#adding-a-query}
 
-Frågeparametrarna redigeras med en guide.
+Frågeparametrarna redigeras med hjälp av en assistent.
 
 1. På den första sidan anger du etiketten och schemat som innehåller de data som ska hämtas.
 

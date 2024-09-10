@@ -6,7 +6,7 @@ badge-v8: label="Gäller även för v8" type="Positive" tooltip="Gäller även C
 feature: Personalization
 role: User
 exl-id: 67fd9a67-cb05-46cd-acd5-e42fde6f4d4f
-source-git-commit: 0cf7f249f366a6ef0e9bd0326ec14131fcf7dc18
+source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
 workflow-type: tm+mt
 source-wordcount: '1024'
 ht-degree: 8%
@@ -49,7 +49,7 @@ När du har valt en datakälla (mottagarfält eller filfält), kommer infogninge
 Vi skapar ett e-postmeddelande där vi först infogar namnet på mottagaren och sedan lägger till datumet då profilen skapades i meddelandets brödtext. Så här gör du:
 
 1. Skapa en ny leverans eller öppna en befintlig e-posttypsleverans.
-1. Klicka på **[!UICONTROL Subject]** i leveransguiden för att redigera meddelandets ämne och ange ett ämne.
+1. Klicka på **[!UICONTROL Subject]** i leveransassistenten för att redigera meddelandets ämne och ange ett ämne.
 1. Ange **[!UICONTROL Special offer for]** och använd knappen i verktygsfältet för att infoga ett anpassningsfält. Välj **[!UICONTROL Recipients>Title]**.
 
    ![](assets/s_ncs_user_insert_custom_field.png)

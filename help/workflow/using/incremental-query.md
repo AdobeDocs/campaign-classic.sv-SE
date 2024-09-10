@@ -4,7 +4,7 @@ title: Inkrementell fråga
 description: Läs mer om arbetsflödesaktiviteten Inkrementell fråga
 feature: Workflows, Targeting Activity
 exl-id: abc08232-1a92-41e8-90f1-02e0a673539b
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
 workflow-type: tm+mt
 source-wordcount: '356'
 ht-degree: 3%
@@ -35,7 +35,7 @@ Så här gör du:
 1. Välj alternativet **[!UICONTROL Schedule execution]** på fliken **[!UICONTROL Scheduling & History]**. Aktiviteten förblir aktiv när den har skapats och aktiveras endast vid de tidpunkter som anges i schemat för körning av frågan. Om alternativet är inaktiverat körs frågan omedelbart **och i en gång**.
 1. Klicka på knappen **[!UICONTROL Change]**.
 
-   I **[!UICONTROL Schedule editing wizard]**-fönstret kan du konfigurera typen av frekvens, händelseupprepning och händelsegiltighetsperiod.
+   I **[!UICONTROL Schedule editing assistant]**-fönstret kan du konfigurera typen av frekvens, händelseupprepning och händelsegiltighetsperiod.
 
    ![](assets/s_user_segmentation_wizard_11.png)
 

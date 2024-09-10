@@ -5,7 +5,7 @@ description: Kom igång med Campaign-datascheman
 feature: Schema Extension
 role: Data Engineer, Developer
 exl-id: d4446035-3988-4d89-b7df-7b8528c2e371
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
 workflow-type: tm+mt
 source-wordcount: '392'
 ht-degree: 1%
@@ -61,7 +61,7 @@ För att göra detta måste du skapa tabellschemat och uppdatera databasstruktur
    >
    >Som standard lagras scheman som skapas av användare i &#39;cus&#39;-namnutrymmet. Mer information finns i [Identifiering av ett schema](../../configuration/using/about-schema-reference.md#identification-of-a-schema).
 
-1. Skapa tabellens innehåll. Vi rekommenderar att du använder anmälningsguiden för att kontrollera att inga inställningar saknas. Det gör du genom att klicka på knappen **[!UICONTROL Insert]** och välja vilken typ av inställning som ska läggas till.
+1. Skapa tabellens innehåll. Vi rekommenderar att du använder anmälningsassistenten för att kontrollera att inga inställningar saknas. Det gör du genom att klicka på knappen **[!UICONTROL Insert]** och välja vilken typ av inställning som ska läggas till.
 
    ![](assets/s_ncs_configuration_create_new_content.png)
 

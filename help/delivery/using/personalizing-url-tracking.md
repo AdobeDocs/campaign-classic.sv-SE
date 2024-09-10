@@ -6,7 +6,7 @@ badge-v8: label="Gäller även för v8" type="Positive" tooltip="Gäller även C
 feature: Monitoring, Email Design, Personalization
 role: User
 exl-id: 3277726a-fd92-4720-8871-3d0422c7db70
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
 workflow-type: tm+mt
 source-wordcount: '176'
 ht-degree: 9%
@@ -15,7 +15,7 @@ ht-degree: 9%
 
 # Konfigurera alternativ för URL-spårning{#personalizing-url-tracking}
 
-Avancerade inställningar för meddelandespårning är tillgängliga via ikonen **[!UICONTROL Tracking & Images]** i verktygsfältet i leveransguiden.
+Avancerade inställningar för meddelandespårning är tillgängliga via ikonen **[!UICONTROL Tracking & Images]** i leveransassistentens verktygsfält.
 
 >[!NOTE]
 >

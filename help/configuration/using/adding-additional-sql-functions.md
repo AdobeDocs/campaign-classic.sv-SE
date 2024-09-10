@@ -5,7 +5,7 @@ description: Lär dig hur du definierar ytterligare SQL-funktioner
 feature: Configuration, Instance Settings
 role: Data Engineer, Developer
 exl-id: 04b0a0e5-d6df-447c-ac67-66adb1bdf717
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
 workflow-type: tm+mt
 source-wordcount: '1034'
 ht-degree: 0%
@@ -28,7 +28,7 @@ När dessa funktioner har lagts till visas de i uttrycksredigeraren precis som a
 
 De funktioner som ska läggas till finns i en **&quot;paketfil&quot; i XML-format**, vars struktur beskrivs i följande stycke.
 
-Om du vill installera det från konsolen väljer du alternativen **Verktyg/Avancerat/Importera paket** på menyn, sedan **[!UICONTROL Install from file]** och följer instruktionerna i importguiden.
+Om du vill installera det från konsolen väljer du alternativen **Verktyg/Avancerat/Importera paket** på menyn, sedan **[!UICONTROL Install from file]** och följer instruktionerna i importassistenten.
 
 >[!IMPORTANT]
 >

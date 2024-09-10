@@ -6,7 +6,7 @@ badge-v8: label="Gäller även för v8" type="Positive" tooltip="Gäller även C
 feature: Personalization
 role: User
 exl-id: 8d155844-d18a-4165-9886-c3b144109f6e
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
 workflow-type: tm+mt
 source-wordcount: '870'
 ht-degree: 1%
@@ -31,7 +31,7 @@ Ni kan definiera nya block som gör att ni kan optimera er leveranspersonaliseri
 
 Följ stegen nedan om du vill infoga ett personaliseringsblock i ett meddelande:
 
-1. Klicka på ikonen för det anpassade fältet i innehållsredigeraren i leveransguiden och välj menyn **[!UICONTROL Include]**.
+1. Klicka på ikonen för det anpassade fältet i leveransassistentens innehållsredigerare och välj menyn **[!UICONTROL Include]**.
 1. Välj ett anpassningsblock i listan (listan visar de 10 senast använda blocken) eller klicka på menyn **[!UICONTROL Other...]** om du vill komma åt den fullständiga listan.
 
    ![](assets/s_ncs_user_personalized_block01.png)
@@ -71,7 +71,7 @@ För att göra detta måste vi infoga följande personaliseringsblock:
 >Mer information om generering av spegelsida finns i [Generera spegelsida](sending-messages.md#generating-the-mirror-page).
 
 1. Skapa en ny leverans eller öppna en befintlig e-posttypsleverans.
-1. Klicka på **[!UICONTROL Subject]** i leveransguiden för att redigera meddelandets ämne och ange ett ämne.
+1. Klicka på **[!UICONTROL Subject]** i leveransassistenten för att redigera meddelandets ämne och ange ett ämne.
 1. Infoga personaliseringsblocken i meddelandetexten. Det gör du genom att klicka i meddelandeinnehållet, klicka på ikonen för anpassat fält och välja menyn **[!UICONTROL Include]**.
 1. Markera det första blocket som ska infogas. Förnya proceduren och inkludera de två andra blocken.
 

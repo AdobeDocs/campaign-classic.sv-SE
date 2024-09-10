@@ -5,7 +5,7 @@ description: Lägg till fält i ett webbformulär
 badge-v8: label="Gäller även för v8" type="Positive" tooltip="Gäller även Campaign v8"
 feature: Web Forms, Landing Pages
 exl-id: 827b6575-7206-4dfc-b2c6-b95a6d5730b1
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
 workflow-type: tm+mt
 source-wordcount: '2373'
 ht-degree: 0%
@@ -18,7 +18,7 @@ ht-degree: 0%
 
 I ett webbformulär gör fälten det möjligt för användare att ange information och välja alternativ. Webbformulär kan innehålla inmatningsfält, urvalsfält, statiskt och avancerat innehåll (bildtexter, prenumerationer osv.).
 
-När du använder guiden för att lägga till fält identifieras fälttypen automatiskt baserat på det valda fältet eller lagringsvariabeln. Du kan redigera den med listrutan **[!UICONTROL Type]** på fliken **[!UICONTROL General]**.
+När du använder assistenten för att lägga till fält identifieras fälttypen automatiskt baserat på det valda fältet eller lagringsvariabeln. Du kan redigera den med listrutan **[!UICONTROL Type]** på fliken **[!UICONTROL General]**.
 
 ![](assets/s_ncs_admin_webform_change_type.png)
 
@@ -43,9 +43,9 @@ Ange svarslagringsläget: uppdatera ett fält i databasen (lagrar endast det sen
 >
 >Som standard infogas fältet längst ned i det aktuella trädet. Använd pilarna i verktygsfältet för att flytta det uppåt eller nedåt.
 
-## Guiden Skapa fält {#field-creation-wizard}
+## Fältskapande assistent {#field-creation-assistant}
 
-För varje sida i formuläret kan du lägga till ett fält via den första knappen i verktygsfältet. Gå till menyn **[!UICONTROL Add using the wizard]** om du vill göra det.
+För varje sida i formuläret kan du lägga till ett fält via den första knappen i verktygsfältet. Gå till menyn **[!UICONTROL Add using the assistant]** om du vill göra det.
 
 ![](assets/s_ncs_admin_survey_add_field_menu.png)
 

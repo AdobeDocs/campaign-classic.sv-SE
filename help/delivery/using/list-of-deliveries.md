@@ -6,7 +6,7 @@ badge-v8: label="Gäller även för v8" type="Positive" tooltip="Gäller även C
 feature: Monitoring
 role: User
 exl-id: 6c0fd76f-3d79-4b69-b911-f8d99dd18c4b
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
 workflow-type: tm+mt
 source-wordcount: '169'
 ht-degree: 3%
@@ -29,7 +29,7 @@ Som standard innehåller listan över leveranser namnen och statusvärdena för 
 
 >[!NOTE]
 >
->Vid stora leveranser kanske du vill uppdatera dessa värden. Det gör du genom att markera leveransen i fråga och sedan högerklicka på den. Välj **[!UICONTROL Action > Recompute delivery and tracking indicators...]** och använd sedan guiden för att uppdatera informationen.
+>Vid stora leveranser kanske du vill uppdatera dessa värden. Det gör du genom att markera leveransen i fråga och sedan högerklicka på den. Välj **[!UICONTROL Action > Recompute delivery and tracking indicators...]** och använd sedan assistenten för att uppdatera informationen.
 
 **Relaterade ämnen:**
 

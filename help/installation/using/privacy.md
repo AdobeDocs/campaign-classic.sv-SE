@@ -4,7 +4,7 @@ title: Personalisering och sekretess
 description: Lär dig de effektivaste strategierna för säkerhet när det gäller sekretess och personalisering
 feature: Installation, Privacy, Privacy Tools, URL Personalization
 exl-id: 0a3473bf-0528-486d-a799-8db86fece522
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
 workflow-type: tm+mt
 source-wordcount: '805'
 ht-degree: 1%
@@ -94,7 +94,7 @@ Gör så här:
 
 1. Välj **[!UICONTROL External Account]** (extAccount).
 
-1. I den sista guideskärmen redigerar du ditt nya srcSchema för att begränsa åtkomsten till alla lösenordsfält:
+1. I den sista assistentskärmen redigerar du ditt nya srcSchema för att begränsa åtkomsten till alla lösenordsfält:
 
    Du kan ersätta huvudelementet (`<element name="extAccount" ... >`) med:
 

@@ -5,7 +5,7 @@ description: Kom igång med beskrivande analys
 feature: Reporting, Monitoring
 badge-v8: label="Gäller även för v8" type="Positive" tooltip="Gäller även Campaign v8"
 exl-id: 19920058-e8e8-4e17-9cc3-24ddf9f96d04
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
 workflow-type: tm+mt
 source-wordcount: '210'
 ht-degree: 0%
@@ -16,7 +16,7 @@ ht-degree: 0%
 
 
 
-Om du vill producera statistik över data i databasen skapar du beskrivande analysrapporter med den dedikerade guiden och anpassar innehållet och presentationen efter dina behov.
+För att kunna producera statistik över data i databasen kan du skapa beskrivande analysrapporter med hjälp av den dedikerade assistenten och anpassa deras innehåll och presentation efter dina behov.
 
 Rapporterna gäller populationer och bör endast användas för att analysera små datavolymer.
 
@@ -38,7 +38,7 @@ Kvantitativa analyser ger övergripande statistik om de numeriska uppgifterna i 
 
 ![](assets/reporting_descriptive_quantitative_sample.png)
 
-Rapporterna skapas med hjälp av guiden för beskrivande analys, som bygger på olika steg, där du kan välja vilken typ av rapport du vill skapa samt data och layout. Rapporten visas i det sista steget. Om det behövs kan rapporten publiceras och delas med andra operatorer, skrivas ut, exporteras i Excel-, PDF- eller OpenDocument-format.
+Rapporterna skapas med hjälp av den beskrivande analysassistenten, som baserat på olika steg låter dig välja vilken typ av rapport du vill skapa samt data och layout. Rapporten visas i det sista steget. Om det behövs kan rapporten publiceras och delas med andra operatorer, skrivas ut, exporteras i Excel-, PDF- eller OpenDocument-format.
 
 Guider för beskrivande analys är inte lika kraftfulla som Adobe Campaign-rapporter, men de ger en snabb översikt av databasinnehållet eller ett urval data.
 

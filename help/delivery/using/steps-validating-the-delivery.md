@@ -6,7 +6,7 @@ badge-v8: label="Gäller även för v8" type="Positive" tooltip="Gäller även C
 feature: Deliverability, Email Rendering, Proofs
 role: User
 exl-id: c2f4d8d0-f0fe-4d1a-92fd-91edaf9729f3
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
 workflow-type: tm+mt
 source-wordcount: '1662'
 ht-degree: 4%
@@ -138,7 +138,7 @@ Följ stegen nedan när du vill skicka ett bevis:
 
 1. Kontrollera att korrekturmålet har konfigurerats enligt beskrivningen i [Definiera ett specifikt korrekturmål](steps-defining-the-target-population.md#defining-a-specific-proof-target).
 
-1. Klicka på **[!UICONTROL Send a proof]** överst i leveransguiden.
+1. Klicka på **[!UICONTROL Send a proof]** i det övre fältet i leveransassistenten.
 
    ![](assets/s_ncs_user_email_del_send_proof.png)
 
@@ -171,7 +171,7 @@ Följande alternativ är tillgängliga:
 
 * Det första alternativet gör att du kan behålla korrekturet dubblerar.
 * Med båda av följande alternativ kan du hålla mottagare som är på blockeringslista och adresser i karantän. Se beskrivningen av dessa alternativ för huvudmålet i [Anpassa undantagsinställningar](steps-defining-the-target-population.md#customizing-exclusion-settings). Till skillnad från målet för en leverans, där dessa adresser exkluderas som standard, behålls de som standard som mål för ett korrektur.
-* Med alternativet **[!UICONTROL Keep the delivery code for the proof]** kan du ge korrekturet samma leveranskod som den som har definierats för leveransen som det hör till. Den här koden anges i det första steget i leveransguiden.
+* Med alternativet **[!UICONTROL Keep the delivery code for the proof]** kan du ge korrekturet samma leveranskod som den som har definierats för leveransen som det hör till. Den här koden anges i det första steget i leveransassistenten.
 * Som standard anges korrekturens ämne med &quot;Korrekturnr&quot;, där # är korrekturets nummer. Du kan ändra prefixet i fältet **[!UICONTROL Label prefix]**.
 
 ## Valideringsprocess med typologier {#validation-process-with-typologies}

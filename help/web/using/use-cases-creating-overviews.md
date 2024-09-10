@@ -5,7 +5,7 @@ description: "Användningsexempel: skapa översikter"
 badge-v8: label="Gäller även för v8" type="Positive" tooltip="Gäller även Campaign v8"
 feature: Web Apps
 exl-id: a1ac3aab-dc81-4533-9207-26d5dc5e1c88
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
 workflow-type: tm+mt
 source-wordcount: '957'
 ht-degree: 0%
@@ -94,7 +94,7 @@ I en översikt kan du välja att få åtkomst till data beroende på var de finn
    >
    >**nms:webApp** sammanfaller med webbprogramschemat.
    >
-   >**nms:newWebApp** sammanfaller med den nya guiden för att skapa webbprogram.
+   >**nms:newWebApp** sammanfaller med den nya assistenten för att skapa webbprogram.
 
 1. Välj att visa URL:en i samma fönster.
 1. Lägg till webbprogramsikonen i bildfältet: **/nms/img/webApp.png**.

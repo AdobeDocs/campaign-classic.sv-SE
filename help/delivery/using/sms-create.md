@@ -6,7 +6,7 @@ badge-v8: label="Gäller även för v8" type="Positive" tooltip="Gäller även C
 feature: SMS
 role: User
 exl-id: 94aa4628-d973-433d-b963-b078e2d6672b
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
 workflow-type: tm+mt
 source-wordcount: '446'
 ht-degree: 2%
@@ -35,7 +35,7 @@ Följ stegen nedan för att skapa en ny SMS-leverans:
 
 Följ stegen nedan för att skapa innehållet i SMS:et:
 
-1. Ange innehållet i meddelandet i avsnittet **[!UICONTROL Text content]** i guiden. Med verktygsfältsknapparna kan du importera, spara och söka i innehåll. Den sista knappen används för att infoga anpassningsfält.
+1. Ange innehållet i meddelandet i avsnittet **[!UICONTROL Text content]** i assistenten. Med verktygsfältsknapparna kan du importera, spara och söka i innehåll. Den sista knappen används för att infoga anpassningsfält.
 
    ![](assets/s_ncs_user_wizard_sms01_138.png)
 

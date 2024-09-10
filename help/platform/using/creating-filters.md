@@ -8,7 +8,7 @@ audience: platform
 content-type: reference
 topic-tags: filtering-data
 exl-id: 58e54f67-dc87-42f1-8426-6f801e8e4fb6
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
 workflow-type: tm+mt
 source-wordcount: '1979'
 ht-degree: 0%
@@ -204,7 +204,7 @@ Filter är specifika för varje operator och initieras om varje gång operatorn 
 
 Du kan skapa ett **programfilter** genom att spara ett avancerat filter: det kan återanvändas genom att högerklicka i en lista eller via knappen **[!UICONTROL Filters]** ovanför listorna.
 
-Dessa filter kan också nås direkt via leveransguiden i målurvalsfasen (se [det här avsnittet](../../delivery/using/creating-an-email-delivery.md) för mer information om hur du skapar leveranser). Om du vill skapa programfiltret kan du:
+De här filtren kan också nås direkt via leveransassistenten i målurvalsfasen (se [det här avsnittet](../../delivery/using/creating-an-email-delivery.md) för mer information om hur du skapar leveranser). Om du vill skapa programfiltret kan du:
 
 * Konvertera ett avancerat filter till ett programfilter. Klicka på **[!UICONTROL Save]** innan du stänger den avancerade filterredigeraren.
 
@@ -376,6 +376,6 @@ Klicka på fliken **[!UICONTROL Settings]** för att komma åt följande alterna
 
   Välj alternativet **[!UICONTROL Do not restrict the filter]** om du vill hindra användaren från att åsidosätta det här filtret.
 
-  Det här alternativet är aktiverat för filter för mottagare av en leverans och mottagare av leveranser som tillhör en mapp som finns i leveransguiden och som inte kan överladdas.
+  Det här alternativet är aktiverat för &quot;Mottagare av en leverans&quot; och &quot;Mottagare av leveranser som tillhör en mapp&quot; som finns i leveransassistenten och som inte kan överladdas.
 
   ![](assets/s_ncs_user_filter_advanced_param.png)

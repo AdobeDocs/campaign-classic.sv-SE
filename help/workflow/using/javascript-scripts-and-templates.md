@@ -4,7 +4,7 @@ title: JavaScript-skript och mallar
 description: JavaScript-skript och mallar
 feature: Workflows
 exl-id: 4a3647d1-cf8c-4867-871e-472287be7c6a
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
 workflow-type: tm+mt
 source-wordcount: '1247'
 ht-degree: 1%
@@ -59,7 +59,7 @@ logInfo("Start date: " + task.creationDate)
 
 Funktionen **[!UICONTROL logInfo(message)]** infogar ett meddelande i loggen.
 
-Klicka på **[!UICONTROL OK]** för att stänga guiden Skapa och starta sedan arbetsflödet med åtgärdsknapparna längst upp till höger i listan med arbetsflöden. När körningen är klar, se loggen. Du bör se två meddelanden som motsvarar skriptet: den ena visar arbetsflödets etikett, den andra visar det datum då skriptet aktiverades.
+Klicka på **[!UICONTROL OK]** om du vill stänga hjälpfunktionen och starta sedan arbetsflödet med åtgärdsknapparna som finns högst upp till höger i listan med arbetsflöden. När körningen är klar, se loggen. Du bör se två meddelanden som motsvarar skriptet: den ena visar arbetsflödets etikett, den andra visar det datum då skriptet aktiverades.
 
 ## Variabel {#variables}
 

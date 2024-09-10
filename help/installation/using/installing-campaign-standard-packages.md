@@ -5,7 +5,7 @@ description: Lär dig hur du installerar inbyggda Campaign-paket
 feature: Installation, Application Settings
 badge-v7-prem: label="Endast lokal/hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=sv" tooltip="Gäller endast lokala och hybrida driftsättningar"
 exl-id: 2bc077c4-ed65-4157-bfc9-df5d0442f476
-source-git-commit: b11185da8236d6100d98eabcc9dc1cf2cffa70af
+source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
 workflow-type: tm+mt
 source-wordcount: '1264'
 ht-degree: 1%
@@ -32,7 +32,7 @@ Inbyggda paket innehåller en uppsättning funktioner som kan installeras efter 
 
 Installera ett inbyggt paket:
 
-1. Öppna guiden för paketimport från **[!UICONTROL Tools > Advanced > Import package]** i Adobe Campaign-klientkonsolen.
+1. Få åtkomst till paketimportassistenten från **[!UICONTROL Tools > Advanced > Import package]** i Adobe Campaign klientkonsol.
 1. Välj **[!UICONTROL Install a standard package]**.
 1. Markera de paket som du vill installera i paketlistan.
    >[!NOTE]
@@ -242,7 +242,7 @@ I följande tabell visas alla inbyggda Campaign-paket.
 
 Du måste installera leveranskanaler (e-post, mobilkanal, mobilappskanal, LINE osv.) innan du installerar Transactional Messaging (Message Center-paket). Om du har startat ett meddelandecenterprojekt som bara är till för e-post och behöver lägga till en ny kanal i efterhand måste du följa dessa steg:
 
-1. Installera den nya kanalen, till exempel **Mobile-kanalen**, med guiden för paketimport ( **[!UICONTROL Tools > Advanced > Import package > Adobe Campaign package]**).
+1. Installera den nya kanalen, till exempel **Mobile-kanalen**, med hjälp av paketimportassistenten ( **[!UICONTROL Tools > Advanced > Import package > Adobe Campaign package]**).
 1. Importera filen ( **[!UICONTROL Tools > Advanced > Import package > File]**) och välj:
 
    ```

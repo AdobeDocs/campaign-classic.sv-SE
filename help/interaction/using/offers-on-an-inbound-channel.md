@@ -8,7 +8,7 @@ audience: interaction
 content-type: reference
 topic-tags: case-study
 exl-id: 90afced3-465d-4370-8a33-51a7e4356135
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
 workflow-type: tm+mt
 source-wordcount: '2097'
 ht-degree: 0%
@@ -197,7 +197,7 @@ Använd följande steg:
 
 ### Skapa en miljö för anonyma kontakter {#creating-an-environment-for-anonymous-contacts}
 
-1. Skapa en erbjudandemiljö för anonym inkommande interaktion via guiden för leveranskarta (**Visitor**-mappning). Mer information finns i [Skapa en erbjudandemiljö](../../interaction/using/live-design-environments.md#creating-an-offer-environment).
+1. Skapa en erbjudandemiljö för anonym inkommande interaktion via leveransmappningsassistenten (**Visitor** -mappning). Mer information finns i [Skapa en erbjudandemiljö](../../interaction/using/live-design-environments.md#creating-an-offer-environment).
 
    ![](assets/offer_env_anonymous_003.png)
 

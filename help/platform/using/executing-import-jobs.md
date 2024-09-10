@@ -8,7 +8,7 @@ audience: platform
 content-type: reference
 topic-tags: importing-and-exporting-data
 exl-id: 05909ea6-2c93-42ff-9142-1dd14fa6fdec
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
 workflow-type: tm+mt
 source-wordcount: '2973'
 ht-degree: 0%
@@ -25,9 +25,9 @@ Med Adobe Campaign kan du importera data till databasen från en eller flera fil
 >
 >Du kan importera data utan att mappa dem till databasdata med funktionen **[!UICONTROL Import a list]**. Data kan sedan användas enbart i arbetsflöden via objektet **[!UICONTROL Read list]**. Mer information finns på [den här sidan](../../workflow/using/read-list.md).
 
-Med importguiden kan du konfigurera en import, definiera dess alternativ (till exempel dataomvandling) och starta körningen. Det är en serie skärmar vars innehåll beror på typen av import (enkel eller flera) och operatörens rättigheter.
+Med importassistenten kan du konfigurera en import, definiera dess alternativ (till exempel dataomvandling) och starta körningen. Det är en serie skärmar vars innehåll beror på typen av import (enkel eller flera) och operatörens rättigheter.
 
-Importguiden visas när du har skapat ett nytt importjobb (se [Skapa import- och exportjobb](../../platform/using/creating-import-export-jobs.md)).
+Importassistenten visas när du har skapat ett nytt importjobb (se [Skapa import- och exportjobb](../../platform/using/creating-import-export-jobs.md)).
 
 >[!NOTE]
 >
@@ -39,7 +39,7 @@ I källfilen sammanfaller varje rad med en post. Data i poster avgränsas med av
 
 ## Steg 1 - Välj importmall {#step-1---choosing-the-import-template}
 
-När du startar importguiden måste du först välja en mall. Om du till exempel vill konfigurera import av mottagare som har fått ett nyhetsbrev följer du stegen nedan:
+När du startar importassistenten måste du först välja en mall. Om du till exempel vill konfigurera import av mottagare som har fått ett nyhetsbrev följer du stegen nedan:
 
 1. Markera mappen **[!UICONTROL Profiles and Targets > Job > Generic imports and exports]**.
 1. Klicka på **Nytt** och sedan på **Importera** för att skapa importmallen.
@@ -53,7 +53,7 @@ När du startar importguiden måste du först välja en mall. Om du till exempel
 1. Ange ett namn för importen i fältet **[!UICONTROL Label]**. Du kan lägga till en beskrivning.
 1. Välj importtyp i lämpligt fält. Det finns två typer av import: **[!UICONTROL Simple import]** om du bara vill importera en fil och **[!UICONTROL Multiple import]** om du vill importera flera filer i en enda körning.
 
-   Om du vill importera flera filer väljer du **[!UICONTROL Multiple import]** i listrutan **[!UICONTROL Import type]** på den första skärmen i importguiden.
+   Om du vill importera flera filer väljer du **[!UICONTROL Multiple import]** i listrutan **[!UICONTROL Import type]** på första skärmen i importassistenten.
 
    ![](assets/s_ncs_user_import_wizard01_2.png)
 
@@ -61,7 +61,7 @@ När du startar importguiden måste du först välja en mall. Om du till exempel
 
    ![](assets/s_ncs_user_import_wizard01_3.png)
 
-   Varje gång en fil läggs till visas skärmen för guiden **[!UICONTROL File to import]**. Se avsnitt [Steg 2 - Val av Source-fil](#step-2---source-file-selection) och följ stegen i guiden för att definiera importalternativen på samma sätt som vid en enkel import.
+   Varje gång en fil läggs till visas skärmen för assistenten **[!UICONTROL File to import]**. Se avsnitt [Steg 2 - Val av Source-fil](#step-2---source-file-selection) och följ stegen i assistenten för att definiera importalternativen på samma sätt som vid en enkel import.
 
    >[!NOTE]
    >
@@ -175,7 +175,7 @@ Det finns fyra typer av beräknade fält:
 
 ## Steg 4 - Avstämning {#step-4---reconciliation}
 
-I importguidens avstämningssteg kan du definiera läget för att stämma av data från filen med befintliga data i databasen och ange prioritetsregler mellan fildata och databasdata. Konfigurationsfönstret ser ut så här:
+I importassistentens avstämningssteg kan du definiera läget för att stämma av data från filen med befintliga data i databasen och ange prioritetsregler mellan fildata och databasdata. Konfigurationsfönstret ser ut så här:
 
 ![](assets/s_ncs_user_import_wizard04_1.png)
 
@@ -277,7 +277,7 @@ Du kan generera en fil som innehåller dessa poster via ikonen **[!UICONTROL Exp
 
 ## Steg 5 - ytterligare steg vid import av mottagare {#step-5---additional-step-when-importing-recipients}
 
-I nästa steg i importguiden kan du välja eller skapa den mapp i vilken data ska importeras, automatiskt mappa importerade mottagare med en (ny eller befintlig) lista och prenumerera på mottagare för en tjänst.
+I nästa steg i importassistenten kan du markera eller skapa den mapp i vilken data ska importeras, automatiskt mappa importerade mottagare med en (ny eller befintlig) lista och prenumerera på mottagare för en tjänst.
 
 ![](assets/s_ncs_user_import_wizard05_1.png)
 
@@ -333,7 +333,7 @@ Klicka på **[!UICONTROL Next]** för att validera det här steget och visa föl
 
 ## Steg 6 - Starta importen {#step-6---launching-the-import}
 
-I det sista steget i guiden kan du starta dataimport. Klicka på knappen **[!UICONTROL Start]** om du vill göra det.
+I det sista steget i assistenten kan du starta dataimporten. Klicka på knappen **[!UICONTROL Start]** om du vill göra det.
 
 ![](assets/s_ncs_user_import_wizard06_1.png)
 

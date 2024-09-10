@@ -6,7 +6,7 @@ badge-v8: label="Gäller även för v8" type="Positive" tooltip="Gäller även C
 feature: Cross Channel Orchestration, Email, SMS, In App, Direct Mail, Push
 role: User
 exl-id: 92b5e013-b619-4f0b-b0b1-1fc2e653ceac
-source-git-commit: 8fbfc211c4e791b324c34d3d180daa7597c00c7f
+source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
 workflow-type: tm+mt
 source-wordcount: '1214'
 ht-degree: 10%
@@ -17,7 +17,7 @@ ht-degree: 10%
 
 Med Adobe Campaign kan du skicka flerkanalskampanjer, inklusive e-post, SMS, LINE-meddelanden, push-meddelanden och direktreklam, och mäta hur effektiva de är med hjälp av olika dedikerade [rapporter](../../reporting/using/delivery-reports.md). Dessa meddelanden är utformade och skickas genom leveranser och kan anpassas för varje mottagare.
 
-De viktigaste funktionerna är målinriktning, definition och personalisering av meddelanden, genomförande av kommunikation och tillhörande verksamhetsrapporter. Den huvudsakliga funktionella åtkomstpunkten är leveransguiden. Den här åtkomstpunkten leder till flera funktioner som täcks av Adobe Campaign.
+De viktigaste funktionerna är målinriktning, definition och personalisering av meddelanden, genomförande av kommunikation och tillhörande verksamhetsrapporter. Den huvudsakliga funktionella åtkomstpunkten är leveransassistenten. Den här åtkomstpunkten leder till flera funktioner som täcks av Adobe Campaign.
 
 >[!NOTE]
 >
@@ -43,7 +43,7 @@ Leveranser kan utföras **online** (via e-post, en av mobilkanalerna och push-me
 Beroende på kanalen kan leveranslägena vara:
 
 * Direktleverans via Adobe Campaign (standardläge för e-postkanal).
-* Extern leverans via en specialoperator som får den utdatafil som genereras av leveransguiden (standardläge för direktpostkanal).
+* Extern leverans via en specialoperator som får den utdatafil som skapas av leveransassistenten (standardläge för direktreklamkanal).
 
 Externa konton konfigureras via noden **[!UICONTROL Administration > Platform > External accounts]**. Den här konfigurationen bör endast utföras av expertanvändare.
 

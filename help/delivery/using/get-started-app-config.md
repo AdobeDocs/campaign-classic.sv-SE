@@ -5,7 +5,7 @@ description: Lär dig hur du börjar med konfigurationen för mobilprogrammet
 feature: Push
 role: User, Developer
 exl-id: 95bc07cc-8837-4511-81bc-05fad28191c9
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
 workflow-type: tm+mt
 source-wordcount: '285'
 ht-degree: 5%
@@ -46,7 +46,7 @@ Som lokal kund måste du installera ett inbyggt paket.
 
 Installationsstegen är:
 
-1. Öppna guiden för paketimport från **[!UICONTROL Tools > Advanced > Import package]** i Adobe Campaign-klientkonsolen.
+1. Få åtkomst till paketimportassistenten från **[!UICONTROL Tools > Advanced > Import package]** i Adobe Campaign klientkonsol.
 
    ![](assets/package_ios.png)
 

@@ -6,7 +6,7 @@ badge-v8: label="Gäller även för v8" type="Positive" tooltip="Gäller även C
 feature: Direct Mail
 role: User
 exl-id: 585b2017-9408-4953-8505-2f6d9db8032f
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
 workflow-type: tm+mt
 source-wordcount: '176'
 ht-degree: 10%
@@ -27,7 +27,7 @@ För direktutskick definieras innehållet i extraheringen i länken **[!UICONTRO
 
 ![](assets/s_ncs_user_mail_delivery_format_link.png)
 
-Med den här länken kan du komma åt extraheringsguiden och definiera den information (kolumner) som ska exporteras till utdatafilen.
+Med den här länken kan du komma åt extraheringsassistenten och definiera den information (kolumner) som ska exporteras till utdatafilen.
 
 ![](assets/s_ncs_user_mail_delivery_format_wz.png)
 
@@ -35,4 +35,4 @@ Det går att infoga en personlig URL i extraheringsfilen. Mer information om det
 
 >[!NOTE]
 >
->Den här guiden innehåller stegen i exportguiden som beskrivs i avsnittet [Komma igång](../../platform/using/executing-export-jobs.md).
+>Den här assistenten innehåller de steg i exportassistenten som beskrivs i avsnittet [Komma igång](../../platform/using/executing-export-jobs.md).

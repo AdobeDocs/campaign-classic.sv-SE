@@ -4,7 +4,7 @@ title: Granskningskedja
 description: Lär dig övervaka instansen med granskningsspår för Campaign
 feature: Audit Trail, Monitoring, Workflows
 exl-id: 8508d879-fb38-4b1f-9f55-0341bb8d0c67
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
 workflow-type: tm+mt
 source-wordcount: '464'
 ht-degree: 2%
@@ -78,7 +78,7 @@ Så här kommer du åt instansens **[!UICONTROL Audit trail]**:
 
 >[!NOTE]
 >
->Som standard är kvarhållningsperioden inställd på 180 dagar för **[!UICONTROL Audit logs]**. Mer information om hur du ändrar kvarhållningsperioden finns på [sidan](../../production/using/database-cleanup-workflow.md#deployment-wizard).
+>Som standard är kvarhållningsperioden inställd på 180 dagar för **[!UICONTROL Audit logs]**. Mer information om hur du ändrar kvarhållningsperioden finns på [sidan](../../production/using/database-cleanup-workflow.md#deployment-assistant).
 
 ## Aktivera/inaktivera granskningsspår {#enable-disable-audit-trail}
 

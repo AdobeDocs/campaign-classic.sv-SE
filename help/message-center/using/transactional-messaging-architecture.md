@@ -4,7 +4,7 @@ title: Transaktionsmeddelandens arkitektur
 description: Detta avsnitt beskriver Adobe Campaign Classic transaktionsmeddelandearkitektur och de tillgängliga kanalerna för att leverera transaktionsmeddelanden
 feature: Transactional Messaging, Message Center, Architecture
 exl-id: 0a059397-b037-405b-b9c1-94a4a072674d
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
 workflow-type: tm+mt
 source-wordcount: '1103'
 ht-degree: 1%
@@ -85,7 +85,7 @@ Om du har påbörjat ett transaktionsmeddelandeprojekt i e-postkanalen och sedan
 >
 >Den här proceduren gäller endast kunder som använder en Windows NLServer som är installerad på samma dator som de arbetar på.
 
-1. Installera den kanal du behöver, till exempel **Mobile-kanalen**, med hjälp av guiden för paketimport (**[!UICONTROL Tools > Advanced > Import package... > Adobe Campaign Package]**).
+1. Installera den kanal du behöver, till exempel **mobilkanalen**, med hjälp av paketimportassistenten (**[!UICONTROL Tools > Advanced > Import package... > Adobe Campaign Package]**).
 1. Utför en filimport (**[!UICONTROL Tools > Advanced > Import package... > File]**) och markera filen **dataItems **`[Your language]`**packagemessageCenter.xml**.
 1. I **[!UICONTROL XML content of the data to import]** sparar du bara den leveransmall som motsvarar den tillagda kanalen. Om du till exempel har lagt till **mobilkanalen** ska du bara behålla elementet **entities** som motsvarar **[!UICONTROL Mobile transactional message]** (smsTriggerMessage). Om du har lagt till **Mobile App Channel** ska du bara behålla **iOS-transaktionsmeddelandet** (iosTriggerMessage) och **Android-transaktionsmeddelandet** (androidTriggerMessage).
 

@@ -8,7 +8,7 @@ audience: interaction
 content-type: reference
 topic-tags: simulating-offers
 exl-id: 490ebbea-9bdc-453e-8a02-c02b095e55e9
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
 workflow-type: tm+mt
 source-wordcount: '147'
 ht-degree: 9%
@@ -25,7 +25,7 @@ Simuleringsresultaten innehåller en uppdelning av förslag per rankning och per
 
 Du kan spara dessa resultat och exportera dem om det behövs genom att skapa en beskrivande resultatanalys. Det gör du genom att klicka på lämplig länk i resultatfönstret.
 
-Mer information om den beskrivande analysguiden finns i [det här avsnittet](../../reporting/using/about-descriptive-analysis.md).
+Mer information om den beskrivande analysassistenten finns i [det här avsnittet](../../reporting/using/about-descriptive-analysis.md).
 
 ![](assets/offer_simulation_012.png)
 

@@ -5,7 +5,7 @@ description: Skapa din första enkät med Campaign
 badge-v8: label="Gäller även för v8" type="Positive" tooltip="Gäller även Campaign v8"
 feature: Surveys
 exl-id: 22e14b24-59ba-4a92-8ffb-f5336793d64f
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
 workflow-type: tm+mt
 source-wordcount: '939'
 ht-degree: 1%
@@ -67,7 +67,7 @@ I följande exempel använder vi en **[!UICONTROL Page (v5 compatibility)]**-typ
 
 * **Lägg till inmatningsfält**
 
-  Om du vill skapa sidans innehåll måste du redigera det: om du vill göra det dubbelklickar du på objektet **[!UICONTROL Page]**. Klicka på den första ikonen i verktygsfältet för att öppna guiden för att skapa fält. Välj **[!UICONTROL Edit a recipient]** om du vill skapa ett inmatningsfält för användarnamnet som ska lagras i det matchande fältet i mottagarens profil.
+  Om du vill skapa sidans innehåll måste du redigera det: om du vill göra det dubbelklickar du på objektet **[!UICONTROL Page]**. Klicka på den första ikonen i verktygsfältet för att öppna den här assistenten. Välj **[!UICONTROL Edit a recipient]** om du vill skapa ett inmatningsfält för användarnamnet som ska lagras i det matchande fältet i mottagarens profil.
 
   ![](assets/s_ncs_admin_survey_add_field_menu.png)
 
@@ -130,7 +130,7 @@ Klicka på **[!UICONTROL OK]** för att bekräfta och klicka sedan på **[!UICON
 För att användare ska kunna komma åt HTML-sidorna måste programmet vara tillgängligt. Den får inte längre vara i redigeringsskedet, utan i produktion. Om du vill publicera en undersökning måste du publicera den. Så här gör du:
 
 * Klicka på knappen **[!UICONTROL Publish]** ovanför kontrollpanelen för enkäten.
-* Klicka på **[!UICONTROL Start]** för att starta publikationen och stänga guiden.
+* Klicka på **[!UICONTROL Start]** för att starta publikationen och stänga assistenten.
 
   ![](assets/s_ncs_admin_survey_start_publ.png)
 

@@ -4,7 +4,7 @@ title: Hantera och anpassa listor
 description: Lär dig att söka i och konfigurera listor
 feature: Audiences, Data Management
 exl-id: 21656cc2-15a1-4156-8897-ea4fe3e9b97f
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
 workflow-type: tm+mt
 source-wordcount: '1153'
 ht-degree: 1%
@@ -163,7 +163,7 @@ Klicka på **[!UICONTROL Save]** i fönstret för mappegenskaper. Listvisningen 
 
 ## Exportera en lista {#exporting-a-list}
 
-Om du vill exportera data från en lista måste du använda en exportguide. Om du vill komma åt den markerar du de element som ska exporteras från listan, högerklickar och väljer **[!UICONTROL Export...]**.
+Om du vill exportera data från en lista måste du använda en exportassistent. Om du vill komma åt den markerar du de element som ska exporteras från listan, högerklickar och väljer **[!UICONTROL Export...]**.
 
 Användningen av import- och exportfunktionerna förklaras i [Allmän import och export](../../platform/using/about-generic-imports-exports.md).
 

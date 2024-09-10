@@ -5,7 +5,7 @@ description: "Användningsfall: skapa innehållshantering"
 badge-v8: label="Gäller även för v8" type="Positive" tooltip="Gäller även Campaign v8"
 feature: Delivery Templates
 exl-id: b0d1cf0e-656e-4d24-9a31-16fef4cd40d0
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
 workflow-type: tm+mt
 source-wordcount: '1192'
 ht-degree: 0%
@@ -382,7 +382,7 @@ Nu kan du skapa innehåll baserat på den här publiceringsmallen.
 >
 >Mer information om hur du skapar innehåll finns i [Använda en innehållsmall](using-a-content-template.md).
 
-### Skapa innehåll i leveransguiden {#creating-content-in-the-delivery-wizard}
+### Skapa innehåll i leveransassistenten {#creating-content-in-the-delivery-assistant}
 
 Så här skapar du innehåll direkt i leveranserna:
 
@@ -390,7 +390,7 @@ Så här skapar du innehåll direkt i leveranserna:
 
    ![](assets/s_ncs_content_in_delivery.png)
 
-   Ytterligare en flik läggs till i leveransguiden för att definiera innehållet via innehållshanteringsformuläret.
+   Ytterligare en flik läggs till i leveransassistenten för att definiera innehållet via innehållshanteringsformuläret.
 
 1. Ange variabelinformationen i nyhetsbrevet.
 

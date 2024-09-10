@@ -7,7 +7,7 @@ audience: interaction
 content-type: reference
 topic-tags: unitary-interactions
 exl-id: a8face46-a933-4f2c-8299-ccb66f05967d
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
 workflow-type: tm+mt
 source-wordcount: '407'
 ht-degree: 1%
@@ -22,9 +22,9 @@ ht-degree: 1%
 
 ## Målgruppsanpassning och lagring av en miljö för anonym interaktion {#targeting-and-storing-an-environment-for-anonymous-interactions}
 
-Som standard levereras Interaction med en förkonfigurerad miljö för att rikta sig till mottagartabellen (identifierade erbjudanden). Om du vill skapa en annan tabell (besökstabell för anonyma erbjudanden eller en viss mottagartabell) måste du använda guiden för målmappning för att skapa miljön. Mer information finns i [Skapa en erbjudandemiljö](../../interaction/using/live-design-environments.md#creating-an-offer-environment).
+Som standard levereras Interaction med en förkonfigurerad miljö för att rikta sig till mottagartabellen (identifierade erbjudanden). Om du vill skapa en annan tabell (besökstabell för anonyma erbjudanden eller en viss mottagartabell) måste du använda målmappningsassistenten för att skapa miljön. Mer information finns i [Skapa en erbjudandemiljö](../../interaction/using/live-design-environments.md#creating-an-offer-environment).
 
-När du skapar en anonym miljö via guiden för att skapa mappningar, checkas rutan **[!UICONTROL Environment dedicated to incoming anonymous interactions]** automatiskt in på miljöns **[!UICONTROL General]**-flik.
+När du skapar en anonym miljö med hjälp av mappningsassistenten checkas rutan **[!UICONTROL Environment dedicated to incoming anonymous interactions]** automatiskt in på miljöns **[!UICONTROL General]**-flik.
 
 **[!UICONTROL Targeting dimension]** slutförs automatiskt. Som standard länkas den till besökstabellen.
 

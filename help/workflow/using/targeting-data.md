@@ -4,7 +4,7 @@ title: Måldata
 description: Läs mer om måldata i ett arbetsflöde
 feature: Query Editor, Data Management, Workflows
 exl-id: 74b82019-bdab-4442-84cf-5ad18d0db788
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
 workflow-type: tm+mt
 source-wordcount: '1919'
 ht-degree: 3%
@@ -47,7 +47,7 @@ Med alternativet **[!UICONTROL Add a sub-item]** kan du bifoga beräknade data t
 
 Underelementen representeras i underträdet till den samling som de mappas till.
 
-Samlingar visas på underfliken **[!UICONTROL Collections]**. Du kan filtrera de samlade elementen genom att klicka på ikonen **[!UICONTROL Detail]** för den valda samlingen. Med filterguiden kan du välja insamlade data och ange de filtreringsvillkor som ska tillämpas på data i samlingen.
+Samlingar visas på underfliken **[!UICONTROL Collections]**. Du kan filtrera de samlade elementen genom att klicka på ikonen **[!UICONTROL Detail]** för den valda samlingen. Med filterassistenten kan du välja insamlade data och ange de filtreringsvillkor som ska tillämpas på data i samlingen.
 
 ![](assets/query_add_columns_collection.png)
 

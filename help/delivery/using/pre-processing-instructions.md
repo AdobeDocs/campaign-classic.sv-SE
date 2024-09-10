@@ -6,7 +6,7 @@ badge-v8: label="Gäller även för v8" type="Positive" tooltip="Gäller även C
 feature: Monitoring
 role: User, Data Engineer, Developer
 exl-id: 9d3f5c74-377a-4e24-81e5-bb605f69cf8a
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
 workflow-type: tm+mt
 source-wordcount: '653'
 ht-degree: 1%
@@ -25,7 +25,7 @@ Det finns tre typer av instruktioner:
 * **[!DNL value]**: för att ge åtkomst till fält för leveransen, leveransvariabler och anpassade objekt som lästs in i leveransen. [Läs mer](#value)
 * **[!DNL foreach]**: för att repetera en array som har lästs in som ett anpassat objekt. [Läs mer](#foreach)
 
-De kan testas direkt från leveransguiden. De används i innehållsförhandsgranskningen och när du klickar på spårningsknappen för att visa en lista över URL-adresser.
+De kan testas direkt från leveransassistenten. De används i innehållsförhandsgranskningen och när du klickar på spårningsknappen för att visa en lista över URL-adresser.
 
 ## [!DNL include] {#include}
 
@@ -57,7 +57,7 @@ Följande exempel är bland de vanligaste:
   <%@ include option='NmsServer_URL' %>
   ```
 
-  Använd personaliseringsknappen i leveransguiden för att få rätt syntax.
+  Använd personaliseringsknappen i leveransassistenten för att få rätt syntax.
 
 ## [!DNL value] {#value}
 

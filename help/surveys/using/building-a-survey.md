@@ -5,7 +5,7 @@ description: Lär dig viktiga steg för att utforma en enkät
 badge-v8: label="Gäller även för v8" type="Positive" tooltip="Gäller även Campaign v8"
 feature: Surveys
 exl-id: 8d83dfd5-70ec-4656-965b-f6b5e6f9eec1
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
 workflow-type: tm+mt
 source-wordcount: '793'
 ht-degree: 1%
@@ -34,7 +34,7 @@ Formulärets sidor skapas med en särskild redigerare där du kan definiera och 
 
 ## Lägg till fält {#adding-fields}
 
-Fälten i ett formulär gör det möjligt för användare att ange information och välja alternativ. För varje sida i formuläret skapas de via den första knappen i verktygsfältet via menyn **[!UICONTROL Add using the wizard]**.
+Fälten i ett formulär gör det möjligt för användare att ange information och välja alternativ. För varje sida i formuläret skapas de via den första knappen i verktygsfältet via menyn **[!UICONTROL Add using the assistant]**.
 
 ![](assets/s_ncs_admin_survey_add_field_menu.png)
 

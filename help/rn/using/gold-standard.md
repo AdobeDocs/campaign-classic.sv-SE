@@ -8,10 +8,10 @@ level: Beginner
 hidefromtoc: true
 hide: true
 exl-id: 9e3a11b1-3070-4d90-91d5-7c559bdd500e
-source-git-commit: 8de62db2499449fc9966b6464862748e2514a774
+source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
 workflow-type: tm+mt
 source-wordcount: '1774'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -208,7 +208,7 @@ _13 augusti 2019_
 
 Den första versionen 19.1.4 innehåller följande korrigeringar:
 
-* Korrigerade ett problem med schemaläggaraktiviteten som genererade oönskade felmeddelanden under guidekonfigurationen. Återställer uppdatering från NEO-11662. (NEO-17097)
+* Korrigerade ett problem med schemaläggaraktiviteten som genererade oönskade felmeddelanden under assistentkonfigurationen. Återställer uppdatering från NEO-11662. (NEO-17097)
 * Korrigerade en regression som orsakades av NEO-12727 och som kunde leda till att arbetsflöden stoppades när en testaktivitet kördes två gånger. (NEO-16835)
 * Korrigerade ett problem som ledde till att en felaktig HTTP-kod returnerades (HTTP 200 OK i stället för HTTP 403 Forbidden) när en ogiltig eller utgången sessionstoken användes i API-anrop. (NEO-16826)
 * Korrigerade ett problem med DKIM-nyckeln som inte längre var inbäddad i e-postmeddelanden vilket orsakade leveransproblem. (NEO-16804)

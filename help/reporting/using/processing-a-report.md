@@ -5,7 +5,7 @@ description: Använd en analysrapport
 badge-v8: label="Gäller även för v8" type="Positive" tooltip="Gäller även Campaign v8"
 feature: Reporting, Monitoring
 exl-id: d133efec-33e1-4711-a90f-e40385059386
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
 workflow-type: tm+mt
 source-wordcount: '825'
 ht-degree: 1%
@@ -126,11 +126,11 @@ Mer information finns på [den här sidan](../../reporting/using/actions-on-repo
 
 ## Återanvänd befintliga rapporter och analyser {#re-using-existing-reports-and-analyses}
 
-Du kan skapa beskrivande analysrapporter om data med hjälp av befintliga rapporter som redan lagrats i Adobe Campaign. Det här läget är möjligt när analyser har sparats eller när rapporter har skapats och konfigurerats för att nås via den beskrivande analysguiden.
+Du kan skapa beskrivande analysrapporter om data med hjälp av befintliga rapporter som redan lagrats i Adobe Campaign. Det här läget är möjligt när analyser har sparats eller när rapporter har skapats och konfigurerats för att nås via den beskrivande analysassistenten.
 
 Information om hur du sparar beskrivande analyser finns i [Spara en analysrapport](#saving-an-analysis-report).
 
-Om du vill skapa beskrivande analysrapporter måste den beskrivande analysguiden köras via en arbetsflödesövergång eller via menyn **[!UICONTROL Tools > Descriptive analysis]**.
+Om du vill skapa beskrivande analysrapporter måste den beskrivande analysassistenten köras via en arbetsflödesövergång eller via menyn **[!UICONTROL Tools > Descriptive analysis]**.
 
 1. Markera **[!UICONTROL Existing analyses and reports]** och klicka på **[!UICONTROL Next]**.
 1. På så sätt kan du komma åt listan med tillgängliga rapporter. Välj den rapport som du vill generera.
@@ -143,7 +143,7 @@ När du skapar en beskrivande analys baserad på en befintlig analys kan du skap
 
 Så här skapar du en historik:
 
-1. Öppna en befintlig analys eller skapa en ny beskrivande analysguide.
+1. Öppna en befintlig analys eller skapa en ny beskrivande analysassistent.
 1. Klicka på knappen för att skapa en historik i verktygsfältet på rapportvisningssidan och bekräfta sedan enligt nedan:
 
    ![](assets/reporting_descriptive_historize_icon.png)

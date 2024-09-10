@@ -6,7 +6,7 @@ feature: Custom Resources
 role: Data Engineer, Developer
 badge-v8: label="Gäller även för v8" type="Positive" tooltip="Gäller även Campaign v8"
 exl-id: 099161b4-b4cb-433c-aed6-71157269a536
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
 workflow-type: tm+mt
 source-wordcount: '389'
 ht-degree: 1%
@@ -29,13 +29,13 @@ Egenskaperna för ett schema som refererar till en befintlig tabell är följand
 
 ## Attributet view {#the-view-attribute}
 
-Source-scheman godkänner attributet **view** för rotelementet **srcSchema**. Den måste användas när Adobe Campaign hanteras i anpassade tabeller. Attributet **view=&quot;true&quot;** instruerar databasstrukturuppdateringsguiden att ignorera schemat. Programmet tillåts därför inte att synkronisera tabellen, dess kolumner och index med motsvarande schema.
+Source-scheman godkänner attributet **view** för rotelementet **srcSchema**. Den måste användas när Adobe Campaign hanteras i anpassade tabeller. Attributet **view=&quot;true&quot;** instruerar databasens uppdateringsassistent att ignorera schemat. Programmet tillåts därför inte att synkronisera tabellen, dess kolumner och index med motsvarande schema.
 
 När det här attributet är inställt på **true** används schemat endast för att generera SQL-frågor för åtkomst till data i den här tabellen.
 
 ## Namn på tabeller och kolumner {#names-of-tables-and-columns}
 
-När tabeller skapas med tabelluppdateringsguiden genereras namnen på tabeller och kolumner automatiskt baserat på namnen på respektive schema och attribut. Du kan dock tvinga SQL-namnen att användas genom att ange följande attribut:
+När tabeller skapas med tabelluppdateringsassistenten genereras namnen på tabeller och kolumner automatiskt baserat på namnen på respektive schema och attribut. Du kan dock tvinga SQL-namnen att användas genom att ange följande attribut:
 
 * **sqltable** i schemats huvudelement för att ange tabellen,
 * **sqlname** inom varje attribut, för att ange kolumnerna.

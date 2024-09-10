@@ -5,7 +5,7 @@ description: Konfigurera åtkomst till rapporten
 feature: Reporting, Monitoring
 badge-v8: label="Gäller även för v8" type="Positive" tooltip="Gäller även Campaign v8"
 exl-id: 1e5ab922-481c-4dce-a05e-a58408002e24
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
 workflow-type: tm+mt
 source-wordcount: '769'
 ht-degree: 1%
@@ -82,7 +82,7 @@ Det går att göra en rapport tillgänglig via en viss nod i trädet, som en lis
 
 Vi ska till exempel skapa en länk till en rapport som gör den tillgänglig via en lista över mottagare.
 
-1. Klicka på **[!UICONTROL New]** och välj **[!UICONTROL Create a link to an existing report]** i guiden för att skapa rapport.
+1. Klicka på **[!UICONTROL New]** och välj **[!UICONTROL Create a link to an existing report]** i rapportskaparassistenten.
 
    ![](assets/s_ncs_advuser_report_wizard_link_01.png)
 
@@ -126,7 +126,7 @@ Mer information om de här inställningarna finns i avsnittet **Definiera webbfo
 
 Det är obligatoriskt att publicera rapporten för att dela den med andra operatorer och visa den i listan över tillgängliga rapporter (se även [Rapportvisningssammanhang](#report-display-context)). Denna åtgärd måste utföras igen varje gång rapporten ändras.
 
-1. Öppna publiceringsguiden genom att klicka på **[!UICONTROL Publish]** i verktygsfältet.
+1. Öppna publiceringsassistenten genom att klicka på **[!UICONTROL Publish]** i verktygsfältet.
 
    ![](assets/s_ncs_advuser_report_publish_01.png)
 

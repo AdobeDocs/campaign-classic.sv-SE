@@ -1,10 +1,10 @@
 ---
 product: campaign
-title: Kampanj - Salesforce CRM Connector
-description: Lär dig ansluta Campaign och Salesforce
+title: Campaign - Salesforce CRM Connector
+description: Lär dig hur du ansluter Campaign och Salesforce
 feature: Salesforce Integration
 exl-id: 94a1f00d-e952-4edd-9012-f71c87b897ca
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
 workflow-type: tm+mt
 source-wordcount: '321'
 ht-degree: 0%
@@ -32,10 +32,10 @@ Så här konfigurerar du CRM Connector för Salesforce:
    Om du vill konfigurera det externa Salesforce CRM-kontot så att det fungerar med Adobe Campaign måste du ange följande information:
 
    * **[!UICONTROL Account]**
-Det konto som används för att logga in i Salesforce CRM.
+Det konto som används för att logga in på Salesforce CRM.
 
    * **[!UICONTROL Password]**
-Lösenord som används för att logga in i Salesforce CRM.
+Lösenord som används för att logga in på Salesforce CRM.
 
    * **[!UICONTROL Client identifier]**
 Om du vill veta var du hittar din klient-ID kan du läsa den här [sidan](https://help.salesforce.com/articleView?id=000205876&amp;type=1) .
@@ -45,7 +45,7 @@ Om du vill veta var du kan hitta din säkerhetstoken kan du läsa [sidan ](https
 
    * **[!UICONTROL API version]**
 Välj version av API:t.
-1. Kör konfigurationsguiden för att generera den tillgängliga CRM-tabellen: med konfigurationsguiden kan du samla in tabeller och skapa det matchande schemat.
+1. Kör konfigurationsassistenten för att generera den tillgängliga CRM-tabellen: med konfigurationsassistenten kan du samla in tabeller och skapa det matchande schemat.
 
    ![](assets/crm_connectors_sfdc_launch.png)
 
@@ -55,13 +55,13 @@ Välj version av API:t.
 
 1. Kontrollera schemat som genererats i Adobe Campaign i noden **[!UICONTROL Administration > Configuration > Data schemas]**.
 
-   Exempel för **Salesforce**-schema:
+   Exempel på **Salesforce**-schema:
 
    ![](assets/crm_connectors_sfdc_table.png)
 
 1. När schemat har skapats kan du synkronisera uppräkningar automatiskt från Salesforce till Adobe Campaign.
 
-   Det gör du genom att klicka på länken **[!UICONTROL Synchronizing enumerations...]** och välja den Adobe Campaign-uppräkning som matchar Salesforce-uppräkningen.
+   Om du vill göra det klickar du på länken **[!UICONTROL Synchronizing enumerations...]** och väljer den uppräkning av Adobe Campaign som matchar uppräkningen i Salesforce.
 
 
 

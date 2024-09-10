@@ -6,7 +6,7 @@ feature: Application Settings
 role: Data Engineer, Developer
 badge-v8: label="Gäller även för v8" type="Positive" tooltip="Gäller även Campaign v8"
 exl-id: 38333669-5598-4811-a121-b677c1413f56
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
 workflow-type: tm+mt
 source-wordcount: '499'
 ht-degree: 2%
@@ -22,7 +22,7 @@ Målmappning måste skapas i två fall:
 * om du använder en annan mottagartabell än den som tillhandahålls av Adobe Campaign,
 * om du konfigurerar en filtreringsdimension som skiljer sig från standardmåldimensionen på målmappningsskärmen.
 
-Guiden för att skapa målmappning hjälper dig att skapa alla scheman som behövs för att du ska kunna använda din anpassade tabell.
+Med hjälp av verktyget för att skapa målmappning kan du skapa alla scheman som behövs för att använda din anpassade tabell.
 
 ## Skapa och konfigurera scheman som är länkade till den anpassade tabellen {#creating-and-configuring-schemas-linked-to-the-custom-table}
 
@@ -110,9 +110,9 @@ Gör så här:
 
    ![](assets/mapping_diffusion_wizard_4.png)
 
-1. Klicka på knappen **Spara** för att stänga guiden.
+1. Klicka på knappen **Spara** för att stänga assistenten.
 
-   Guiden använder startschemat för att skapa alla andra scheman som behövs för att den nya målmappningen ska fungera.
+   Assistenten använder startschemat för att skapa alla andra scheman som behövs för att den nya målmappningen ska fungera.
 
    ![](assets/mapping_schema_list.png)
 

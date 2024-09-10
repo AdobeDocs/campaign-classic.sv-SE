@@ -4,7 +4,7 @@ title: Schemaläggare
 description: Läs mer om arbetsflödesaktiviteten i schemaläggaren
 feature: Workflows
 exl-id: 30a9bd2a-afb1-481c-ab5f-5acebd9cbb5a
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
 workflow-type: tm+mt
 source-wordcount: '333'
 ht-degree: 10%
@@ -37,7 +37,7 @@ Schemaläggaren definierar aktiveringsschemat för övergången. Om du vill konf
 
 ![](assets/s_user_segmentation_scheduler.png)
 
-Med en guide kan du definiera aktivitetens frekvens och giltighetsperiod. Konfigurationsstegen är följande:
+Med en assistent kan du definiera aktivitetens frekvens och giltighetsperiod. Konfigurationsstegen är följande:
 
 1. Välj aktiveringsfrekvens och klicka på **[!UICONTROL Next]**.
 

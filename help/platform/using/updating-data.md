@@ -7,7 +7,7 @@ audience: platform
 content-type: reference
 topic-tags: profile-management
 exl-id: f7dfbc22-4ac3-4b61-927f-34ecc4e35154
-source-git-commit: 8aceafa362b80f6e34edfd91a71551a58501a3d0
+source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
 workflow-type: tm+mt
 source-wordcount: '717'
 ht-degree: 1%
@@ -32,17 +32,17 @@ Om du vill utföra manuella uppdateringar högerklickar du på de valda mottagar
 
 ![](assets/s_ncs_user_action_icon.png)
 
-Det finns två typer av uppdateringar: massuppdatering för en uppsättning mottagare och datasammanfogning mellan två profiler. För varje åtgärd kan du konfigurera uppdateringen med hjälp av en guide.
+Det finns två typer av uppdateringar: massuppdatering för en uppsättning mottagare och datasammanfogning mellan två profiler. För varje åtgärd kan du med en assistent konfigurera uppdateringen.
 
 ### Massuppdatering {#mass-update}
 
-Använd **[!UICONTROL Action > Mass update of selected lines...]** för massuppdatering. Guiden hjälper dig att konfigurera och köra uppdateringen.
+Använd **[!UICONTROL Action > Mass update of selected lines...]** för massuppdatering. Assistenten hjälper dig att konfigurera och köra uppdateringen.
 
-Det första steget i guiden är att ange vilka fält som ska uppdateras.
+Det första steget i assistenten är att ange vilka fält som ska uppdateras.
 
-I den vänstra delen av guiden visas en lista med tillgängliga fält. Använd fältet **[!UICONTROL Find]** för att köra en sökning i dessa fält. Tryck på **Retur** för att bläddra i listan. Fältnamnen som matchar inmatningen visas i fet stil, vilket visas nedan.
+I assistentens vänstra del visas en lista med tillgängliga fält. Använd fältet **[!UICONTROL Find]** för att köra en sökning i dessa fält. Tryck på **Retur** för att bläddra i listan. Fältnamnen som matchar inmatningen visas i fet stil, vilket visas nedan.
 
-Dubbelklicka på de fält som ska uppdateras för att visa dem i den högra delen av guiden.
+Dubbelklicka på de fält som ska uppdateras för att visa dem i den högra delen av assistenten.
 
 ![](assets/s_ncs_user_update_wizard01_1.png)
 
@@ -60,19 +60,19 @@ Du kan definiera filter för att visa värdefördelningen i det här fönstret e
 
 ![](assets/s_ncs_user_update_wizard01_3.png)
 
-Stäng det här fönstret och klicka på **[!UICONTROL Next]** för att visa det andra uppdateringsguiden. I det här steget kan du starta uppdateringen genom att klicka på **[!UICONTROL Start]**.
+Stäng det här fönstret och klicka på **[!UICONTROL Next]** för att visa det andra uppdateringsassistentsteget. I det här steget kan du starta uppdateringen genom att klicka på **[!UICONTROL Start]**.
 
 ![](assets/s_ncs_user_update_wizard01_4.png)
 
-Information om uppdateringskörning visas i den övre delen av guiden.
+Information om uppdateringskörning visas i den övre delen av assistenten.
 
 Med **[!UICONTROL Stop]** kan du avbryta uppdateringen, men vissa poster kan ha uppdaterats, och om du stoppar processen avbryts inte uppdateringarna. Förloppsindikatorn visar hur långt åtgärden har kommit.
 
 ### Sammanfoga data {#merge-data}
 
-Välj **[!UICONTROL Merge selected lines...]** om du vill starta sammanfogningen av två mottagarprofiler. Profilerna som ska sammanfogas måste vara markerade innan du väljer alternativet. Sammanfogningen konfigureras och startas med en guide.
+Välj **[!UICONTROL Merge selected lines...]** om du vill starta sammanfogningen av två mottagarprofiler. Profilerna som ska sammanfogas måste vara markerade innan du väljer alternativet. Sammanfogningen konfigureras och startas med en assistent.
 
-I guiden visas de värden som ska hämtas för varje fält som har slutförts i en eller flera av källprofilerna. Om ett eller flera fält i de profiler som ska sammanfogas har olika värden visas de i avsnittet **[!UICONTROL List of conflicts]**. Du kan sedan välja standardprofil med alternativknapparna under listan, som i följande exempel:
+Assistenten visar de värden som ska hämtas för varje fält som har slutförts i en eller flera av källprofilerna. Om ett eller flera fält i de profiler som ska sammanfogas har olika värden visas de i avsnittet **[!UICONTROL List of conflicts]**. Du kan sedan välja standardprofil med alternativknapparna under listan, som i följande exempel:
 
 ![](assets/s_ncs_user_merge_wizard01_1.png)
 
@@ -95,7 +95,7 @@ Innehållet i en lista kan exporteras. Så här konfigurerar och kör du exporte
 
    ![](assets/s_ncs_user_export_list_start.png)
 
-   Mer information om hur du konfigurerar exportguiden finns i [det här avsnittet](../../platform/using/executing-export-jobs.md).
+   Mer information om hur du konfigurerar exportassistenten finns i [det här avsnittet](../../platform/using/executing-export-jobs.md).
 
 ## Prenumerera på en tjänst {#subscribing-to-a-service}
 

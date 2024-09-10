@@ -7,7 +7,7 @@ audience: interaction
 content-type: reference
 topic-tags: advanced-parameters
 exl-id: 49ac279b-bc67-4311-b0a4-0e23f2a99c52
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
 workflow-type: tm+mt
 source-wordcount: '120'
 ht-degree: 0%
@@ -22,7 +22,7 @@ Så här skapar du en testmiljö (sandlådeläge):
 
 >[!IMPORTANT]
 >
->Använd bara den här metoden för att skapa miljöer för testmiljöer. I alla andra fall använder du guiden för målmappning. Mer information finns i [Skapa en erbjudandemiljö](../../interaction/using/live-design-environments.md#creating-an-offer-environment).
+>Använd bara den här metoden för att skapa miljöer för testmiljöer. I alla andra fall använder du målmappningsassistenten. Mer information finns i [Skapa en erbjudandemiljö](../../interaction/using/live-design-environments.md#creating-an-offer-environment).
 
 1. Starta Adobe Campaign Explorer och gå till instansroten.
 1. Högerklicka och lägg till en **[!UICONTROL Generic folder]** med listrutorna.

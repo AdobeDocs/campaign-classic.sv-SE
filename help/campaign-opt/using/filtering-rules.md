@@ -5,7 +5,7 @@ description: Lär dig hur du använder filtreringsregler i Adobe Campaign
 role: User, Data Engineer
 feature: Typology Rules, Campaigns
 exl-id: a4d12445-5680-4704-9c67-e43e0ea6631b
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
 workflow-type: tm+mt
 source-wordcount: '510'
 ht-degree: 2%
@@ -64,7 +64,7 @@ Du kan skapa **[!UICONTROL Filtering]**-typologier: de innehåller bara filtreri
 
 ![](assets/campaign_opt_create_typo_filtering.png)
 
-Dessa specifika typologier kan länkas till en leverans när målet har valts: klicka på länken **[!UICONTROL To]** i leveransguiden och klicka sedan på fliken **[!UICONTROL Exclusions]**.
+Dessa specifika typologier kan länkas till en leverans när målet har valts: klicka på länken **[!UICONTROL To]** i leveransassistenten och klicka sedan på fliken **[!UICONTROL Exclusions]**.
 
 ![](assets/campaign_opt_apply_typo_filtering.png)
 

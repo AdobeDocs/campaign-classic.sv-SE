@@ -5,7 +5,7 @@ description: Bästa praxis för kampanjrapportering
 feature: Reporting, Monitoring
 badge: label="v7" type="Informative" tooltip="Gäller endast Campaign Classic v7"
 exl-id: 0c7f00f3-b16d-41c5-a7b1-f5a59201bf8c
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
 workflow-type: tm+mt
 source-wordcount: '851'
 ht-degree: 1%
@@ -37,7 +37,7 @@ Om du vill optimera framtagningen, användningen och varaktigheten av en rapport
    * Exportera data från Adobe Campaign-databasen (via ett arbetsflöde, se [det här avsnittet](../../workflow/using/about-workflows.md))
    * Skapa en pivottabell. Läs mer [i det här avsnittet](../../reporting/using/creating-a-table.md#creating-a-breakdown-or-pivot-table)
    * Utforska aggregerade data. Läs mer [i det här avsnittet](../../reporting/using/ac-cubes.md)
-   * Använd en guide för att analysera data. Läs mer [i det här avsnittet](../../reporting/using/about-descriptive-analysis.md)
+   * Använd en assistent för att analysera data. Läs mer [i det här avsnittet](../../reporting/using/about-descriptive-analysis.md)
    * Analysera stora datavolymer. Läs mer [i det här avsnittet](../../reporting/using/about-reports-creation-in-campaign.md)
 
 1. Identifiera målpopulationen

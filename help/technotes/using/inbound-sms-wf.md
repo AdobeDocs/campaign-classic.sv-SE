@@ -4,7 +4,7 @@ title: Inkommande SMS-arbetsflödesaktivitet för mid-sourcingsinfrastruktur
 description: Inkommande SMS-arbetsflödesaktivitet för mid-sourcingsinfrastruktur
 feature: Technote, SMS
 exl-id: 756039b2-5f57-4dc5-8166-a421206b886b
-source-git-commit: 5c42ff45b4d0bc4d61f4fccdba4518801ea4c9da
+source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
 workflow-type: tm+mt
 source-wordcount: '423'
 ht-degree: 5%
@@ -35,7 +35,7 @@ ht-degree: 5%
    </element>
    ```
 
-1. Om du vill använda ändringarna i scheman startar du guiden för databasuppdatering. Den här guiden är tillgänglig via **Verktyg** > **Avancerat** > **Uppdatera databasstrukturen**. Den kontrollerar om databasens fysiska struktur matchar dess logiska beskrivning och kör SQL-uppdateringsskripten. [Läs mer](../../configuration/using/updating-the-database-structure.md)
+1. Om du vill använda ändringarna i scheman startar du databasuppdateringsassistenten. Den här assistenten är tillgänglig via **Verktyg** > **Avancerat** > **Uppdatera databasstrukturen**. Den kontrollerar om databasens fysiska struktur matchar dess logiska beskrivning och kör SQL-uppdateringsskripten. [Läs mer](../../configuration/using/updating-the-database-structure.md)
 
 1. Stoppa och säkerhetskopiera arbetsflödet som innehåller aktiviteten **Inkommande SMS**.
 

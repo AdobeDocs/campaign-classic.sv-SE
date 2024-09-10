@@ -6,7 +6,7 @@ badge-v8: label="Gäller även för v8" type="Positive" tooltip="Gäller även C
 feature: Email
 role: User
 exl-id: db65e83e-276f-4163-98c3-3658a48acffc
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
 workflow-type: tm+mt
 source-wordcount: '975'
 ht-degree: 1%
@@ -54,7 +54,7 @@ Följ stegen nedan för att bifoga en lokal fil till en leverans.
 
    ![](assets/s_ncs_user_wizard_email_attachement.png)
 
-Du kan också dra och släppa filen direkt i fältet för leverans **[!UICONTROL Attachments]** eller använda ikonen **[!UICONTROL Attach]** i verktygsfältet för leveransguiden,
+Du kan också dra och släppa filen direkt i leveransfältet **[!UICONTROL Attachments]** eller använda ikonen **[!UICONTROL Attach]** från leveransassistentverktygsfältet,
 
 ![](assets/s_ncs_user_wizard_add_file_ico.png)
 

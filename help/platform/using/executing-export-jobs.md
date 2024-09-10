@@ -8,7 +8,7 @@ audience: platform
 content-type: reference
 topic-tags: importing-and-exporting-data
 exl-id: 94fc473a-dc49-41e8-b572-51c162b09996
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
 workflow-type: tm+mt
 source-wordcount: '947'
 ht-degree: 1%
@@ -23,13 +23,13 @@ Med exportjobben kan du komma åt och extrahera data från databasen: kontakter,
 
 Det kan till exempel vara användbart att använda kampanjspårningsdata (historik för spårning osv.) i ett kalkylblad. Utdata kan vara i formaten txt, CSV, TAB eller XML.
 
-Med exportguiden kan du konfigurera och exportera, definiera alternativ och starta körningen. Det är en serie skärmar vars innehåll är beroende av typen av export (enkel eller flera) och operatörens rättigheter.
+Med exportassistenten kan du konfigurera och exportera, definiera alternativ och starta körningen. Det är en serie skärmar vars innehåll är beroende av typen av export (enkel eller flera) och operatörens rättigheter.
 
-Exportguiden visas när du har skapat ett nytt exportjobb (se [Skapa import- och exportjobb](../../platform/using/creating-import-export-jobs.md)).
+Exportassistenten visas när du har skapat ett nytt exportjobb (se [Skapa import- och exportjobb](../../platform/using/creating-import-export-jobs.md)).
 
 ## Steg 1 - Välj exportmall {#step-1---choosing-the-export-template}
 
-När du startar exportguiden måste du först välja en mall. Om du till exempel vill konfigurera exporten av mottagare som nyligen har registrerat sig följer du stegen nedan:
+När du startar exportassistenten måste du först välja en mall. Om du till exempel vill konfigurera exporten av mottagare som nyligen har registrerat sig följer du stegen nedan:
 
 1. Markera mappen **[!UICONTROL Profiles and Targets > Job > Generic imports and exports]**.
 1. Klicka på **Nytt** och sedan på **Exportera** för att skapa exportmallen.
@@ -95,7 +95,7 @@ Välj sorteringsordning för kolumnerna.
 
 ## Steg 6 - Filtervillkor {#step-6---filter-conditions-}
 
-Du kan lägga till filtervillkor för att undvika att exportera alla data. Konfigurationen för den här filtreringen är densamma som målinriktningen för mottagare i leveransguiden. Se [den här sidan](../../delivery/using/steps-defining-the-target-population.md).
+Du kan lägga till filtervillkor för att undvika att exportera alla data. Konfigurationen för den här filtreringen är densamma som målinriktningen för mottagare i leveransassistenten. Se [den här sidan](../../delivery/using/steps-defining-the-target-population.md).
 
 ![](assets/s_ncs_user_export_wizard05_b.png)
 
@@ -125,7 +125,7 @@ Klicka på **[!UICONTROL Start the preview of the data]** om du vill se en förh
 
 ![](assets/s_ncs_user_export_wizard07.png)
 
-Klicka på flikarna längst ned i guiden för att växla från förhandsgranskningen av resultat i kolumner till resultaten i XML-format. Du kan även visa de genererade SQL-frågorna.
+Klicka på flikarna längst ned i assistenten för att växla från förhandsgranskning av resultat i kolumner till resultat i XML-format. Du kan även visa de genererade SQL-frågorna.
 
 ## Steg 9 - Starta exporten {#step-9---launching-the-export}
 

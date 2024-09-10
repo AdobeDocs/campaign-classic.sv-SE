@@ -5,7 +5,7 @@ description: Validera
 badge-v8: label="Gäller även för v8" type="Positive" tooltip="Gäller även Campaign v8"
 feature: Direct Mail
 exl-id: 42bb395b-b3fe-4d48-8720-5a4cae191984
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
 workflow-type: tm+mt
 source-wordcount: '250'
 ht-degree: 1%
@@ -32,7 +32,7 @@ Skicka-bekräftelsen startar dataextraheringen i den angivna filen.
 
 ![](assets/s_ncs_user_postal_del_send_confirm_postal.png)
 
-Du kan sedan stänga guiden och titta på leveransloggarna via fliken **[!UICONTROL Delivery]** som du kommer åt via leveransinformationen.
+Du kan sedan stänga assistenten och titta på leveransloggarna via fliken **[!UICONTROL Delivery]** som du kommer åt via leveransinformationen.
 
 Du kan konfigurera hämtningsläget för leveransloggar på fliken **[!UICONTROL Analysis]** i leveransegenskaperna.
 

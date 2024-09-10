@@ -7,7 +7,7 @@ audience: platform
 content-type: reference
 topic-tags: administration-basics
 exl-id: 4a17d5e8-c73f-42e7-b641-0fee6a52c5c0
-source-git-commit: a1dbef3e1feca1e3347de013db8bd7809d315016
+source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
 workflow-type: tm+mt
 source-wordcount: '1757'
 ht-degree: 7%
@@ -316,7 +316,7 @@ Mer information om detta hittar du i det här [avsnittet](../../integrations/usi
 
 ## Externa konton för CRM Connector
 
-### Microsoft Dynamics CRM {#microsoft-dynamics-crm-external-account}
+### MICROSOFT DYNAMICS CRM {#microsoft-dynamics-crm-external-account}
 
 >[!NOTE]
 >
@@ -324,7 +324,7 @@ Mer information om detta hittar du i det här [avsnittet](../../integrations/usi
 
 Med det externa kontot **[!UICONTROL Microsoft Dynamics CRM]** kan du importera och exportera Microsoft Dynamics-data till Adobe Campaign.
 
-Läs mer om Campaign - Microsoft Dynamics CRM-koppling på den här [sidan](../../platform/using/crm-ms-dynamics.md).
+Läs mer om Campaign - Microsoft Dynamics CRM Connector på den här [sidan](../../platform/using/crm-ms-dynamics.md).
 
 Med distributionstypen **[!UICONTROL Web API]** och autentiseringen **[!UICONTROL Password credentials]** måste du ange följande information:
 
@@ -388,11 +388,11 @@ Om du vill konfigurera det externa Salesforce CRM-kontot så att det fungerar me
 
 * **[!UICONTROL Account]**
 
-  Det konto som används för att logga in i Salesforce CRM.
+  Det konto som används för att logga in på Salesforce CRM.
 
 * **[!UICONTROL Password]**
 
-  Lösenord som används för att logga in i Salesforce CRM.
+  Lösenord som används för att logga in på Salesforce CRM.
 
 * **[!UICONTROL Client identifier]**
 
@@ -406,7 +406,7 @@ Om du vill konfigurera det externa Salesforce CRM-kontot så att det fungerar me
 
   Välj version av API:t.
 
-För det här externa kontot måste du konfigurera Salesforce CRM med konfigurationsguiden.
+För det här externa kontot måste du konfigurera Salesforce CRM med konfigurationsassistenten.
 
 Mer information om den här konfigurationen finns på [sidan](../../platform/using/crm-connectors.md).
 

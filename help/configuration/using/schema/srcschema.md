@@ -7,7 +7,7 @@ audience: configuration
 content-type: reference
 topic-tags: schema-reference
 exl-id: bc4329b4-d272-4d32-bdaa-290cb9912af4
-source-git-commit: fd5e4bbc87a48f029a09b14ab1d927b9afe4ac52
+source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
 workflow-type: tm+mt
 source-wordcount: '456'
 ht-degree: 0%
@@ -57,7 +57,7 @@ Schemapresentation är tillgänglig i [Om schemareferens](../../../configuration
 * **desc (sträng)**: schemabeskrivning
 * **entitySchema (sträng)**: grundläggande schema som syntax och godkännande baseras på (som standard för Adobe Campaign: xtk:srcSchema). När du sparar det aktuella schemat kommer Adobe Campaign att godkänna dess grammatik med det schema som deklarerats i @xtkschema-attributet.
 * **extendedSchema (sträng)**: tar emot namnet på det schema som är utanför rutan och som det aktuella schematillägget baseras på. Formuläret är &quot;namespace:name&quot;.
-* **img (sträng)**: ikon länkad till schemat (kan definieras i guiden Skapa schema).
+* **img (sträng)**: ikon länkad till schemat (kan definieras i schemaskaparassistenten).
 * **label (string)**: schemaetikett.
 * **labelSingular (string)**: label (singular) för visning i gränssnittet.
 * **lastModified (datetime)**: det här attributet innehåller information om datum och tid för den senaste ändringen. Den har ett&quot;Date Time&quot;-formulär. De värden som visas hämtas från servern. Tiden visas i UTC-format.
@@ -73,7 +73,7 @@ Schemapresentation är tillgänglig i [Om schemareferens](../../../configuration
 * **namn (sträng)**: unikt schemanamn.
 * **namnrymd (sträng)**: schemats namnrymd (standard: nms, xtk, nl). När du skapar ett nytt schema för ett projekt rekommenderar vi att du använder ett dedikerat namnutrymme.
 * **useRecycleBin (booleskt)**: aktiverar papperskorgsfunktionen i programmet. Borttagna poster placeras i papperskorgen innan de tas bort. Den här funktionen är bara tillgänglig i läget &quot;Leverans&quot;.
-* **vy (boolesk)**: Om den aktiveras (@view=&quot;true&quot;) används schemat som vy. Databasstrukturuppdateringsguiden tar inte hänsyn till schemat. Det här alternativet används främst för att referera till externa tabeller.
+* **vy (boolesk)**: Om den aktiveras (@view=&quot;true&quot;) används schemat som vy. Databasens uppdateringsassistent tar inte hänsyn till schemat. Det här alternativet används främst för att referera till externa tabeller.
 * **xtkschema (sträng)**: namn på schemat som definierar schemagrammatik (xtk:srcSchema som standard).
 
 ## Exempel {#examples-11}

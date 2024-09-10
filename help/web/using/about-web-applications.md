@@ -5,7 +5,7 @@ description: Skapa och dela dynamiska webbapplikationer, landningssidor och enk�
 badge-v8: label="Gäller även för v8" type="Positive" tooltip="Gäller även Campaign v8"
 feature: Landing Pages, Web Apps
 exl-id: df58221f-f71b-49d5-a6a1-c81ddff27fdb
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
 workflow-type: tm+mt
 source-wordcount: '694'
 ht-degree: 19%
@@ -94,7 +94,7 @@ Som standard tillhandahåller Adobe Campaign en mall per tillgängligt webbprogr
 
 Du kan skapa nya mallar via noden **[!UICONTROL Resources > Templates > Web Application templates]** i Adobe Campaign-trädet.
 
-Med guiden Skapa kan du välja de alternativ som du vill aktivera, vilket visas nedan.
+Med hjälp av verktyget Skapa kan du välja de alternativ som du vill aktivera, vilket visas nedan.
 
 ![](assets/webapp_create_template.png)
 

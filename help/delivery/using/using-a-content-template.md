@@ -5,7 +5,7 @@ description: Använd en innehållsmall
 badge-v8: label="Gäller även för v8" type="Positive" tooltip="Gäller även Campaign v8"
 feature: Templates
 exl-id: e43dd68e-2e95-4367-9029-4622fbcb1759
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
 workflow-type: tm+mt
 source-wordcount: '436'
 ht-degree: 2%
@@ -24,7 +24,7 @@ De kan också användas för att skapa innehållsinstanser. När de har skapats 
 
 ## Skapa en leverans via innehållshantering {#creating-a-delivery-via-content-management}
 
-Du kan referera till en innehållsmall i en leverans när du använder inmatningsfält för att ange innehåll. Ytterligare en flik läggs till i leveransguiden för att definiera leveransinnehåll.
+Du kan referera till en innehållsmall i en leverans när du använder inmatningsfält för att ange innehåll. Ytterligare en flik läggs till i leveransassistenten för att definiera leveransinnehåll.
 
 ![](assets/s_ncs_content_deliver_a_content.png)
 
@@ -32,7 +32,7 @@ Layouten används automatiskt baserat på de valda inställningarna. Om du vill 
 
 ![](assets/s_ncs_content_deliver_a_content_html.png)
 
-Mer information finns i det fullständiga implementeringsexemplet: [Skapa innehåll i leveransguiden](use-case-creating-content-management.md#creating-content-in-the-delivery-wizard).
+Mer information finns i det fullständiga implementeringsexemplet: [Skapa innehåll i leveransassistenten](use-case-creating-content-management.md#creating-content-in-the-delivery-assistant).
 
 ## Skapa en innehållsinstans {#creating-a-content-instance}
 

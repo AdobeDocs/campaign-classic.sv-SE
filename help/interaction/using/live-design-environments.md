@@ -7,7 +7,7 @@ audience: interaction
 content-type: reference
 topic-tags: managing-environments
 exl-id: 965c4a6a-6535-454d-bd37-e9c8312b4d13
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
 workflow-type: tm+mt
 source-wordcount: '447'
 ht-degree: 2%
@@ -33,7 +33,7 @@ Som standard levereras interaktion med en **[!UICONTROL Design]**-miljö och en 
 
 >[!NOTE]
 >
->Om du vill skapa en annan tabell (besökstabell för anonyma erbjudanden eller en viss mottagartabell) måste du använda guiden för målmappning för att skapa miljöerna. Mer information finns i [Skapa en erbjudandemiljö](#creating-an-offer-environment).
+>Om du vill skapa en annan tabell (besökstabell för anonyma erbjudanden eller en viss mottagartabell) måste du använda målmappningsassistenten för att skapa miljöerna. Mer information finns i [Skapa en erbjudandemiljö](#creating-an-offer-environment).
 
 ![](assets/offer_environments_overview_002.png)
 
@@ -47,7 +47,7 @@ Som standard levereras Interaction med en förkonfigurerad miljö för att rikta
 
    ![](assets/offer_env_anonymous_001.png)
 
-1. Klicka på **[!UICONTROL Next]** för att fortsätta till nästa skärm i guiden, markera kryssrutan **[!UICONTROL Generate a storage schema for propositions]** och klicka på **[!UICONTROL Save]**.
+1. Klicka på **[!UICONTROL Next]** om du vill fortsätta till nästa skärm i assistenten, markera rutan **[!UICONTROL Generate a storage schema for propositions]** och klicka på **[!UICONTROL Save]**.
 
    ![](assets/offer_env_anonymous_002.png)
 

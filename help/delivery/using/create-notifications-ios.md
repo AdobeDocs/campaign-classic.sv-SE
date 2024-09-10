@@ -5,7 +5,7 @@ description: Lär dig skapa push-meddelanden för iOS
 feature: Push
 role: User, Developer, Data Engineer
 exl-id: 4520504a-0d9f-4ea7-a5a8-0c07948af4f0
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
 workflow-type: tm+mt
 source-wordcount: '971'
 ht-degree: 6%
@@ -56,7 +56,7 @@ Följ stegen nedan för att skapa ett push-meddelande för iOS-enheter:
 
 1. Du kan lägga till **[!UICONTROL Subtitle]**, värdet för undertitelparametern i iOS-meddelandenyttolasten. Se [det här avsnittet](configuring-the-mobile-application.md).
 
-1. Ange innehållet i meddelandet i avsnittet **[!UICONTROL Message content]** i guiden. Användningen av anpassningsfält beskrivs i avsnittet [Om anpassning](about-personalization.md).
+1. Ange innehållet i meddelandet i avsnittet **[!UICONTROL Message content]** i assistenten. Användningen av anpassningsfält beskrivs i avsnittet [Om anpassning](about-personalization.md).
 
    ![](assets/nmac_delivery_ios_5.png)
 

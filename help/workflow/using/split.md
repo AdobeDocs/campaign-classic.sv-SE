@@ -4,7 +4,7 @@ title: Dela
 description: Läs mer om aktiviteten Dela arbetsflöde
 feature: Workflows, Targeting Activity
 exl-id: 4204350a-c2d2-4033-9bdf-87b49d8211b9
-source-git-commit: 13eb777e96602ddd3463f721c6b2a3e6b67cb329
+source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
 workflow-type: tm+mt
 source-wordcount: '1971'
 ht-degree: 0%
@@ -44,7 +44,7 @@ Så här skapar du en delmängd:
 
 1. Du kan ange maximalt antal poster som ska extraheras från målet för att skapa delmängden. Det gör du genom att markera alternativet **[!UICONTROL Limit the selected records]** och klicka på länken **[!UICONTROL Edit...]**.
 
-   Med en guide kan du välja valläge för poster i den här delmängden. Stegen finns i [Begränsa antalet delmängdsposter](#limiting-the-number-of-subset-records).
+   Med hjälp av en assistent kan du välja markeringsläge för poster i den här delmängden. Stegen finns i [Begränsa antalet delmängdsposter](#limiting-the-number-of-subset-records).
 
    ![](assets/s_user_segmentation_partage4.png)
 

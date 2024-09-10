@@ -6,7 +6,7 @@ badge-v8: label="Gäller även för v8" type="Positive" tooltip="Gäller även C
 feature: Channel Configuration
 role: User
 exl-id: 0411686e-4f13-401e-9333-e14b05ebe9cd
-source-git-commit: efd333aed2b14667dc95f92341fc16482f0fb6aa
+source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
 workflow-type: tm+mt
 source-wordcount: '1526'
 ht-degree: 3%
@@ -55,7 +55,7 @@ Om du vill göra det klickar du på **[!UICONTROL Send]**, väljer önskad åtg�
 
 När du är klar klickar du på **[!UICONTROL Confirm delivery]** för att starta meddelandeleveransen.
 
-Du kan sedan stänga leveransguiden och spåra leveransen från fliken **[!UICONTROL Delivery]**, som du kommer åt via leveransinformationen eller genom leveranslistan.
+Du kan sedan stänga leveransassistenten och spåra leveransen från fliken **[!UICONTROL Delivery]**, som du kommer åt via leveransinformationen eller genom leveranslistan.
 
 När du har skickat meddelanden kan du övervaka och spåra dina leveranser. Mer information om detta hittar du i dessa avsnitt.
 

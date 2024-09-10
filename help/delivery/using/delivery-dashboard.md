@@ -6,7 +6,7 @@ badge-v8: label="Gäller även för v8" type="Positive" tooltip="Gäller även C
 feature: Monitoring
 role: User, Data Engineer
 exl-id: 44ecc8c6-6584-43eb-96b4-7d8463053123
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
 workflow-type: tm+mt
 source-wordcount: '1186'
 ht-degree: 3%
@@ -76,7 +76,7 @@ Fliken **[!UICONTROL Tracking]** visar spårningshistoriken för den här levera
 >
 >Om spårning inte är aktiverat för en leverans visas inte den här fliken.
 
-Spårningskonfigurationen utförs i rätt steg i leveransguiden. Se [Konfigurera spårade länkar](how-to-configure-tracked-links.md).
+Spårningskonfigurationen utförs i rätt steg i leveransassistenten. Se [Konfigurera spårade länkar](how-to-configure-tracked-links.md).
 
 **[!UICONTROL Tracking]** data tolkas i leveransrapporterna. Se [det här avsnittet](../../reporting/using/delivery-reports.md).
 

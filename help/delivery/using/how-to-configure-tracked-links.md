@@ -6,7 +6,7 @@ badge-v8: label="Gäller även för v8" type="Positive" tooltip="Gäller även C
 feature: Monitoring
 role: User, Developer
 exl-id: ed88e1d6-c0d5-4a85-9f3e-be670f4bcc10
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
 workflow-type: tm+mt
 source-wordcount: '583'
 ht-degree: 10%
@@ -37,7 +37,7 @@ I det här exemplet följs URL:en https://www.adobe.com av ett semikolon. Semiko
 
 Spårning av meddelanden är aktiverat som standard. Följ stegen nedan för att anpassa hur URL-adresser spåras:
 
-1. Välj alternativet **[!UICONTROL Display URLs]** i den nedre delen av leveransguiden, under meddelandeinnehållet.
+1. Välj alternativet **[!UICONTROL Display URLs]** i den nedre delen av leveransassistenten, under meddelandeinnehållet.
 
    ![](assets/s_ncs_user_email_del_display_urls.png)
 

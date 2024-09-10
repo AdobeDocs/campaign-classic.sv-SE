@@ -5,7 +5,7 @@ description: Analysera framgångarna med dina kampanjer i inbyggda eller anpassa
 feature: Reporting, Monitoring
 badge-v8: label="Gäller även för v8" type="Positive" tooltip="Gäller även Campaign v8"
 exl-id: 1ef30004-e1b0-4dde-8104-0ee9e8aa9d8b
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
 workflow-type: tm+mt
 source-wordcount: '344'
 ht-degree: 14%
@@ -28,7 +28,7 @@ Adobe Campaign har flera rapportverktyg:
 
    Mer information om detta finns i [det här avsnittet](../../reporting/using/about-campaign-built-in-reports.md).
 
-1. **Beskrivande dataanalys**: Adobe Campaign tillhandahåller ett visuellt verktyg för att producera statistik om data i databasen. Du kan skapa beskrivande analysrapporter med en dedikerad guide och anpassa innehållet och layouten efter behov.
+1. **Beskrivande dataanalys**: Adobe Campaign tillhandahåller ett visuellt verktyg för att producera statistik om data i databasen. Du kan skapa beskrivande analysrapporter med en dedikerad assistent och anpassa deras innehåll och layout efter dina behov.
 
    Mer information om detta finns i [det här avsnittet](../../reporting/using/about-descriptive-analysis.md).
 

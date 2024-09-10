@@ -4,7 +4,7 @@ title: God praxis för datamodell
 description: Lär dig arbeta med Campaign Classicens datamodell
 feature: Data Model
 exl-id: 9c59b89c-3542-4a17-a46f-3a1e58de0748
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
 workflow-type: tm+mt
 source-wordcount: '4013'
 ht-degree: 0%
@@ -90,7 +90,7 @@ För SQLServer-databasen kan du använda &quot;grupperat index&quot; om prestand
 
 Med tabellutrymmesattributet i schemat kan du ange ett dedikerat tabellutrymme för en tabell.
 
-Med installationsguiden kan du lagra objekt efter typ (data, tillfällig och indexerad).
+Med installationsassistenten kan du lagra objekt efter typ (data, tillfällig och indexerad).
 
 Dedikerade tabellutrymmen är bättre för partitionering, säkerhetsregler och ger smidig och flexibel administration, bättre optimering och prestanda.
 

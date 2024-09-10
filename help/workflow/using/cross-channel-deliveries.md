@@ -4,7 +4,7 @@ title: Leveranser över flera kanaler
 description: Läs mer om flerkanalsleveranser
 feature: Workflows, Channels Activity
 exl-id: 3bb468e2-7bcf-456f-8d8f-1c4e608e2b25
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
 workflow-type: tm+mt
 source-wordcount: '287'
 ht-degree: 6%
@@ -49,7 +49,7 @@ I exemplet nedan skapar vi ett arbetsflöde för att skicka ett e-postmeddelande
 1. Lägg till en **[!UICONTROL Split]**-aktivitet i arbetsflödet för att dela upp mottagare som har ett mobilnummer och de som har en e-postadress.
 1. Välj en leverans för varje mål på fliken **[!UICONTROL Delivery]**.
 
-   Skapa leveransen på samma sätt som med en klassisk leveransguide genom att dubbelklicka på leveransaktiviteten i arbetsflödet. Se denna [sida](../../delivery/using/about-email-channel.md) för mer information om detta.
+   Skapa leveransen på samma sätt som med en klassisk leveransassistent genom att dubbelklicka på leveransaktiviteten i arbetsflödet. Se denna [sida](../../delivery/using/about-email-channel.md) för mer information om detta.
 
    ![](assets/cross_channel_delivery_3.png)
 

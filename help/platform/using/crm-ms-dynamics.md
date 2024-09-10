@@ -1,10 +1,10 @@
 ---
 product: campaign
 title: Campaign - Microsoft Dynamics CRM Connector
-description: Lär dig ansluta Campaign och Microsoft Dynamics
+description: Lär dig hur du ansluter Campaign och Microsoft Dynamics
 feature: Microsoft CRM Integration
 exl-id: 26737940-b3ce-425c-9604-f4cefd19afaa
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
 workflow-type: tm+mt
 source-wordcount: '1104'
 ht-degree: 1%
@@ -26,7 +26,7 @@ Datasynkronisering utförs via en dedikerad arbetsflödesaktivitet. [Läs mer](.
 Om du vill ansluta Microsoft Dynamics 365 till Adobe Campaign via **webb-API** måste du utföra följande steg:
 
 I Microsoft Dynamics CRM:
-1. Hämta klient-ID för Microsoft Dynamics
+1. Hämta Microsoft Dynamics klient-ID
 1. Generera nyckelidentifierare och nyckel-ID för Microsoft Dynamics-certifikat
 1. Konfigurera behörigheter
 1. Skapa en appanvändare
@@ -36,15 +36,15 @@ I Microsoft Dynamics CRM:
 
 I Campaign Classic:
 1. Skapa ett nytt externt konto
-1. Konfigurera det externa kontot med inställningarna för Microsoft Dynamics
-1. Använd konfigurationsguiden för att mappa tabeller och synkronisera uppräkningar
+1. Konfigurera det externa kontot med Microsoft Dynamics-inställningar
+1. Använd konfigurationsassistenten för att mappa tabeller och synkronisera uppräkningar
 1. Skapa synkroniseringsarbetsflödet
 
 [Läs mer i det här avsnittet](#configure-acc-for-microsoft)
 
 
 >[!CAUTION]
-> När du ansluter Adobe Campaign med Microsoft Dynamics kan du inte:
+> När du ansluter Adobe Campaign till Microsoft Dynamics kan du inte:
 > * Installera plugin-program som kan ändra CRM-funktionens beteende och leda till kompatibilitetsproblem med Adobe Campaign
 > * Markera flera uppräkningar
 
@@ -52,7 +52,7 @@ I Campaign Classic:
 
 Om du vill generera åtkomsttoken och nycklar för att konfigurera kontot måste du logga in på [Microsoft Azure Directory](https://portal.azure.com) med hjälp av autentiseringsuppgifter för **Global administratör**. Följ sedan instruktionerna nedan.
 
-### Hämta klient-ID för Microsoft Dynamics {#get-client-id-microsoft}
+### Hämta Microsoft Dynamics klient-ID {#get-client-id-microsoft}
 
 Om du vill hämta klient-ID:t måste du registrera en app i Azure Active Directory. Klient-ID är samma som program-ID.
 
@@ -161,7 +161,7 @@ Om du vill ansluta Microsoft Dynamics 365 och Campaign måste du skapa och konfi
 
 1. Välj det **[!UICONTROL Microsoft Dynamics CRM]** externa kontot. Markera alternativet **[!UICONTROL Enabled]**.
 
-1. Fyll i den information som krävs för att ansluta Microsoft Dynamics 365 och Campaign.
+1. Fyll i de uppgifter som krävs för att ansluta Microsoft Dynamics 365 och Campaign.
 
    >[!NOTE]
    >
@@ -169,7 +169,7 @@ Om du vill ansluta Microsoft Dynamics 365 och Campaign måste du skapa och konfi
 
    ![](assets/crm-ms-dynamics-ext-account.png)
 
-1. Klicka på länken **[!UICONTROL Microsoft CRM configuration wizard...]**. Adobe Campaign identifierar automatiskt tabellerna från datamallen i Microsoft Dynamics.
+1. Klicka på länken **[!UICONTROL Microsoft CRM configuration assistant...]**. Adobe Campaign identifierar automatiskt tabellerna från Microsoft Dynamics datamall.
 
    ![](assets/crm_connectors_msdynamics_02.png)
 
@@ -193,7 +193,7 @@ Om du vill ansluta Microsoft Dynamics 365 och Campaign måste du skapa och konfi
 
    ![](assets/crm_connectors_msdynamics_06.png)
 
-Campaign och Microsoft Dynamics är nu anslutna. Du kan konfigurera datasynkronisering mellan de två systemen. Läs mer i avsnittet [Datasynkronisering](../../platform/using/crm-data-sync.md).
+Campaign och Microsoft Dynamics är nu uppkopplade. Du kan konfigurera datasynkronisering mellan de två systemen. Läs mer i avsnittet [Datasynkronisering](../../platform/using/crm-data-sync.md).
 
 >[!NOTE]
 >
@@ -201,7 +201,7 @@ Campaign och Microsoft Dynamics är nu anslutna. Du kan konfigurera datasynkroni
 
 ## Datatyper för fält som stöds {#ms-dyn-supported-types}
 
-För Microsoft Dynamics 365 finns följande attributtyper som stöds/inte stöds:
+För attributtyper som stöds/inte stöds i Microsoft Dynamics 365 anges nedan:
 
 
 | Attributtyp | Stöds |

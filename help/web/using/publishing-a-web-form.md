@@ -5,7 +5,7 @@ description: Publicera ett webbformulär
 badge-v8: label="Gäller även för v8" type="Positive" tooltip="Gäller även Campaign v8"
 feature: Web Forms
 exl-id: 1c66b8e8-7590-4767-9b2f-a9a509df4508
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
 workflow-type: tm+mt
 source-wordcount: '1284'
 ht-degree: 0%
@@ -140,7 +140,7 @@ För att användarna ska kunna komma åt formuläret måste det vara i produktio
 
 ### Leverera ett formulär via e-post {#delivering-a-form-via-email}
 
-När du skickar en inbjudan via e-post kan du använda alternativet **[!UICONTROL Adobe Campaign Encryption]** för datavstämning. Det gör du genom att gå till leveransguiden och anpassa länken till formuläret genom att lägga till följande parameter:
+När du skickar en inbjudan via e-post kan du använda alternativet **[!UICONTROL Adobe Campaign Encryption]** för datavstämning. Det gör du genom att gå till leveransassistenten och anpassa länken till formuläret genom att lägga till följande parameter:
 
 ```
 <a href="https://server/webApp/APP264?&id=<%=escapeUrl(recipient.cryptedId) %>">
