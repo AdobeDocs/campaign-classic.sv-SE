@@ -5,9 +5,9 @@ description: Lär dig definiera målgruppen för era marknadsföringskampanjer
 role: User
 feature: Campaigns, Audiences
 exl-id: 04daa67c-4057-42a7-b993-a6eddf2b883d
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: 7453db63a0ed2c617e9f7e4cbfa3480b3ed5020d
 workflow-type: tm+mt
-source-wordcount: '1485'
+source-wordcount: '1492'
 ht-degree: 0%
 
 ---
@@ -166,6 +166,10 @@ Med verktygsfältsikonerna kan du utföra åtgärder för arbetsflödet för må
   Du kan avbryta ditt arbetsflöde genom att klicka på ikonen **[!UICONTROL Actions]** och välja **[!UICONTROL Unconditional]** stop. Den här åtgärden avbryter kampanjarbetsflödet.
 
   ![](assets/s_user_segmentation_stop_unconditional.png)
+
+  >[!CAUTION]
+  >
+  >Ovillkorligt stopp är begränsat till Admin-användare.
 
 ## Lägga till en kontrollgrupp {#defining-a-control-group}
 

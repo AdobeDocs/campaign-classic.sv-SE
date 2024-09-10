@@ -4,9 +4,9 @@ title: Starta ett arbetsflöde
 description: Lär dig hur du startar ett arbetsflöde och identifierar arbetsflöden, verktygsfältet och högerklicksmenyn
 feature: Workflows
 exl-id: d345ba62-c2fb-43df-a2a1-e9e4292d301a
-source-git-commit: 98815fe0417f9126826e0273caa80888164793ec
+source-git-commit: 7453db63a0ed2c617e9f7e4cbfa3480b3ed5020d
 workflow-type: tm+mt
-source-wordcount: '1172'
+source-wordcount: '1179'
 ht-degree: 1%
 
 ---
@@ -57,7 +57,7 @@ Verktygsfältsknapparna beskrivs i det här [avsnittet](../../campaign/using/mar
 
   >[!CAUTION]
   >
-  >Det här alternativet är reserverat för expertanvändare.
+  >Ovillkorligt stopp är begränsat till Admin-användare.
 
 * **[!UICONTROL Restart]**
 
@@ -108,7 +108,7 @@ Så här undviker du att arbetsflöden är i pausat läge:
 
 **Stoppa oanvända arbetsflöden**. Arbetsflöden som fortsätter att köras behåller anslutningar till databasen.
 
-**Använd endast ovillkorlig stopp i de sällsynta fallen**. Använd inte den här åtgärden regelbundet. Utan att utföra en ren stängning av anslutningar som genereras av arbetsflöden till databasen påverkar prestanda.
+**Använd endast ovillkorlig stopp i de sällsynta fallen**. Det här alternativet är begränsat till admin-användare. Använd inte den här åtgärden regelbundet. Utan att utföra en ren stängning av anslutningar som genereras av arbetsflöden till databasen påverkar prestanda.
 
 **Utför inte flera stoppbegäranden i samma arbetsflöde**. Att stoppa ett arbetsflöde är en asynkron process: Begäran registreras och arbetsflödesservern eller servrarna avbryter pågående åtgärder. Det kan därför ta tid att stoppa en arbetsflödesinstans, särskilt om arbetsflödet körs på flera servrar, där var och en måste ta kontroll för att avbryta de pågående åtgärderna. Om du vill undvika problem väntar du tills stoppåtgärden har slutförts och undviker att stoppa ett arbetsflöde flera gånger.
 
