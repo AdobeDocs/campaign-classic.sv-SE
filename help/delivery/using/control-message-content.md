@@ -6,7 +6,7 @@ badge-v8: label="Gäller även för v8" type="Positive" tooltip="Gäller även C
 feature: Deliverability
 role: User
 exl-id: dcd3a9f9-5fe9-4c28-a4a5-5aed67b036ab
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: de6e86eb2304a88e836c5759b87d7f38446ed357
 workflow-type: tm+mt
 source-wordcount: '766'
 ht-degree: 5%
@@ -14,7 +14,6 @@ ht-degree: 5%
 ---
 
 # Styr innehållet i dina meddelanden{#control-message-content}
-
 
 För att vara säker på att dina e-postmeddelanden når dina mottagare och förbättrar e-postleveransen måste de följa ett antal regler. Annars kan innehållet i vissa meddelanden identifieras som skräppost. Adobe Campaign tillhandahåller flera verktyg för att se till att ditt innehåll följer dessa regler.
 
@@ -36,7 +35,7 @@ Fler tips om hur du kan optimera leveransen när du utformar innehåll finns i [
 
 Vissa Internetleverantörer kontrollerar giltigheten för avsändaradressen (**[!UICONTROL From]**) innan de accepterar meddelanden. En felformaterad adress kan leda till att den nekas av den mottagande servern.
 
-Du måste se till att rätt adress anges på instansnivå (meny **[!UICONTROL Tools > Advanced > Deployment wizard...]**) eller i de vanligaste scenarierna.
+Du måste se till att rätt adress anges på instansnivå (meny **[!UICONTROL Tools > Advanced > deployment wizard...]**) eller i de vanligaste scenarierna.
 
 Mer information finns på [den här sidan](defining-the-email-content.md).
 
