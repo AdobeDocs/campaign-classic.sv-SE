@@ -7,10 +7,10 @@ audience: platform
 content-type: reference
 topic-tags: connectors
 exl-id: f3980859-2837-416b-a0ef-2b369d2d50bd
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: 586456f27dbc039ecb39cc8bd1f6dbdf8af823be
 workflow-type: tm+mt
-source-wordcount: '409'
-ht-degree: 7%
+source-wordcount: '456'
+ht-degree: 6%
 
 ---
 
@@ -38,11 +38,13 @@ I flera Adobe Campaign-arbetsflödesaktiviteter kan du använda data som lagras 
 
 * **Om du lägger till information och länkar** - Med aktiviteten [Berika](../../workflow/using/enrichment.md) kan du lägga till ytterligare data i arbetsflödets arbetstabell och länka till en extern tabell. I det här sammanhanget kan den använda data från en extern databas. Läs mer på [den här sidan](../../workflow/using/enrichment.md).
 
-## FDA-begränsningar {#limitations}
+## Skyddsritningar och begränsningar {#fda-limitations}
 
-FDA-alternativet används för att ändra data i externa databaser i batchläge i arbetsflöden. För att undvika prestandaproblem bör du inte använda FDA-modulen i samband med enhetsåtgärder som personalisering, interaktion, meddelanden i realtid osv.
+FDA-alternativet är utformat för att hantera data i externa databaser i batchläge i arbetsflöden. För att undvika prestandaproblem bör du inte använda FDA-modulen i samband med enhetsåtgärder som personalisering, interaktion, meddelanden i realtid osv.
 
-Undvik de åtgärder som behöver använda både Adobe Campaign och den externa databasen så mycket som möjligt. Om du vill göra det kan du:
+Det går inte att ange måldata från en databas och filtrera resultaten med en filtreringsdimension som tillhör en annan databas. Du kan inte koppla tabeller som finns i olika datakällor i en fråga. Du kan lösa den här begränsningen med andra arbetsflödesaktiviteter som Ändra dimension.
+
+Undvik de åtgärder som behöver använda både Adobe Campaign och den externa databasen så mycket som möjligt. Det bästa är att
 
 * Exportera Adobe Campaign-databasen till den externa databasen och kör åtgärderna endast från den externa databasen innan du importerar resultaten till Adobe Campaign igen.
 
