@@ -5,9 +5,9 @@ description: Läs mer om hur du skapar ett Adobe API-konto
 role: User, Admin
 level: Beginner
 exl-id: 5d830ea0-a0a3-4b35-8dc4-e955380431fb
-source-git-commit: 8eadea9f9cc0a44522726024bfbc825e3b4cad98
+source-git-commit: 9516101771899e132dbd3d1344c833e82714f775
 workflow-type: tm+mt
-source-wordcount: '290'
+source-wordcount: '324'
 ht-degree: 3%
 
 ---
@@ -61,9 +61,16 @@ Följ de här stegen för att skapa ett tekniskt OAuth-konto för nya integrerin
    * **[!UICONTROL Technical account ID]**
    * **[!UICONTROL Organization ID]**
 
-## Lägg till OAuth-projektautentiseringsuppgifter i Adobe Campaign {#add-credentials}
+## Lägg till OAuth-projektautentiseringsuppgifter i Campaign {#add-credentials}
 
-Följ stegen nedan för att lägga till dina OAuth-projektautentiseringsuppgifter i Adobe Campaign:
+När du har utfört stegen ovan lägger du till dina OAuth-projektautentiseringsuppgifter i Adobe Campaign.
+
+>[!NOTE]
+>
+>Detta är inte nödvändigt som värdkund eller hanterad Cloud Service: Adobe har redan lagt till dina OAuth-projektbehörigheter i din miljö.
+>
+
+Följ de här stegen om du är lokal kund eller hybridkund:
 
 1. Logga in via SSH i alla behållare där Adobe Campaign-instansen är installerad.
 
