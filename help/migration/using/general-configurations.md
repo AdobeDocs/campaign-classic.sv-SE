@@ -9,7 +9,7 @@ topic-tags: configuration
 hide: true
 hidefromtoc: true
 exl-id: 7aad0e49-8d9c-40c7-9d6a-42fee0ae5870
-source-git-commit: afbec7b3df810c8c1818a4fb93c5f7e30f7a753b
+source-git-commit: 7906e9fee164d731659bbb9f96394faca5961240
 workflow-type: tm+mt
 source-wordcount: '2558'
 ht-degree: 0%
@@ -17,8 +17,6 @@ ht-degree: 0%
 ---
 
 # Allmänna konfigurationer{#general-configurations}
-
-
 
 I det här avsnittet beskrivs den konfiguration som ska utföras i Adobe Campaign v7 vid migrering från v5.11 eller v6.02.
 

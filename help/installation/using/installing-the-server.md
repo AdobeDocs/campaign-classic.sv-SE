@@ -8,9 +8,9 @@ audience: installation
 content-type: reference
 topic-tags: installing-campaign-in-windows-
 exl-id: c0cb4efa-cae9-4312-88fb-738857a89595
-source-git-commit: 1be1528d657537786c430ea9c8bdb3aad58ba20d
+source-git-commit: 7906e9fee164d731659bbb9f96394faca5961240
 workflow-type: tm+mt
-source-wordcount: '406'
+source-wordcount: '384'
 ht-degree: 1%
 
 ---
@@ -18,8 +18,6 @@ ht-degree: 1%
 # Installera servern{#installing-the-server}
 
 ## Köra installationsprogrammet {#executing-the-installation-program}
-
-Installera 32-bitarsversionen av Adobe Campaign för en 32-bitarsplattform för Windows. Installera Adobe Campaign 64-bitarsversionen för en 64-bitarsplattform för Windows.
 
 Installationsstegen för Adobe Campaign-servern är följande:
 
