@@ -6,7 +6,7 @@ feature: Overview
 role: User, Data Architect
 level: Beginner
 exl-id: 81f207a0-bb72-450b-abe4-0b229b6b1f3a
-source-git-commit: abaeef25b03a9699a4851786380d467bfa299c9f
+source-git-commit: de9ff0b50d819038c97e8515ddb7d6cfeb4547a1
 workflow-type: tm+mt
 source-wordcount: '5959'
 ht-degree: 1%
@@ -245,11 +245,11 @@ En leveransöversikt är en strukturerad uppsättning element (dokument, butiker
 Läs mer om [Direktreklam](../../delivery/using/about-direct-mail-channel.md).
 +++
 
-+++**Distributionsguiden**
++++**distributionsguiden**
 
 Distributionsguiden definierar parametrarna för Campaign-instansen, till exempel standardnamnutrymmet, databassorteringsschemat, datalagringsperioder och andra tekniska inställningar.
 
-Läs mer om [Distributionsguiden](../../installation/using/deploying-an-instance.md#deployment-wizard).
+Läs mer om [distributionsguiden](../../installation/using/deploying-an-instance.md#deployment-assistant).
 +++
 
 +++**Beskrivande analys**
@@ -484,7 +484,7 @@ Läs mer om [Inkorgsåtergivning](../../delivery/using/delivery-dashboard.md#del
 
 +++**Instansinställningar**
 
-Instansinställningar är konfigurationsinformation för en Adobe Campaign-instans. Dessa inställningar definieras i distributionsguiden (Verktyg > Avancerat > Distributionsguiden) eller i server- och/eller instanskonfigurationsfilerna.
+Instansinställningar är konfigurationsinformation för en Adobe Campaign-instans. Dessa inställningar definieras i distributionsguiden (Verktyg > Avancerat > distributionsguiden) eller i server- och/eller instanskonfigurationsfilerna.
 
 Läs mer om [instansinställningar](../../installation/using/about-initial-configuration.md).
 
@@ -492,7 +492,7 @@ Läs mer om [instansinställningar](../../installation/using/about-initial-confi
 
 +++**Jobb (import och export)**
 
-Jobb hanteras av ett guidesystem som förenklar import och export av data till och från produkten. Jobb använder mallsystemet för enkelhet och enhetlighet och kan definieras för att köras enligt ett schema.
+Jobb hanteras av ett hjälpsystem som förenklar import och export av data till och från produkten. Jobb använder mallsystemet för enkelhet och enhetlighet och kan definieras för att köras enligt ett schema.
 
 Läs mer om [import- och exportjobb](../../platform/using/get-started-data-import-export.md).
 +++

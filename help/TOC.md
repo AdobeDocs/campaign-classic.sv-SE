@@ -6,10 +6,10 @@ title: Användarhandbok för Campaign Classic v7
 user-guide-description: Produktdokumentation för Adobe Campaign Classic v7.
 sub-product: adobe campaign classic
 type: Documentation
-source-git-commit: 3307c75ed7df0fcd357dd7c684481c62e0457e04
+source-git-commit: de9ff0b50d819038c97e8515ddb7d6cfeb4547a1
 workflow-type: tm+mt
 source-wordcount: '2552'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -294,7 +294,7 @@ ht-degree: 100%
       + [Person/personer och mottagare](reporting/using/person-people-recipients.md)
    + Analysera populationer {#analyzing-populations}
       + [Om beskrivande analys](reporting/using/about-descriptive-analysis.md)
-      + [Använd guiden för beskrivande analys](reporting/using/using-the-descriptive-analysis-wizard.md)
+      + [Använd den beskrivande analysassistenten](reporting/using/using-the-descriptive-analysis-wizard.md)
       + [Rapportinställningar](reporting/using/processing-a-report.md)
       + [Användningsfall](reporting/using/use-cases.md)
    + Skapa nya rapporter {#creating-new-reports}
@@ -538,7 +538,7 @@ ht-degree: 100%
       + [Simuleringsspårning](interaction/using/simulation-tracking.md)
    + Leverera ett erbjudande {#delivering-an-offer}
       + [Om utgående kanaler](interaction/using/about-outbound-channels.md)
-      + [Integrera ett erbjudande via guiden](interaction/using/integrating-an-offer-via-the-wizard.md)
+      + [Integrera ett erbjudande via assistenten](interaction/using/integrating-an-offer-via-the-wizard.md)
       + [Integrera ett erbjudande via ett arbetsflöde](interaction/using/integrating-an-offer-via-a-workflow.md)
    + Enhetliga interaktioner {#unitary-interactions}
       + [Om inkommande kanaler](interaction/using/about-inbound-channels.md)
@@ -772,7 +772,7 @@ ht-degree: 100%
       + [Filtreringsscheman](configuration/using/filtering-schemas.md)
       + [Begränsa PII-vyn](configuration/using/restricting-pii-view.md)
       + [Uppdatera databasstrukturen](configuration/using/updating-the-database-structure.md)
-      + [Guiden Nytt fält](configuration/using/new-field-wizard.md)
+      + [Ny fältassistent](configuration/using/new-field-wizard.md)
       + [Dataschemats struktur](configuration/using/structure-of-a-data-schema.md)
       + [Återskapa scheman](configuration/using/regenerating-schemas.md)
       + [Exempel på schemautgåvor](configuration/using/examples-of-schemas-edition.md)
