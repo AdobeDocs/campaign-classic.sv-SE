@@ -7,7 +7,7 @@ audience: production
 content-type: reference
 topic-tags: data-processing
 exl-id: 75d3a0af-9a14-4083-b1da-2c1b22f57cbe
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: 6c85ca9d50dd970915b7c46939f88f4d7fdf07d8
 workflow-type: tm+mt
 source-wordcount: '2827'
 ht-degree: 0%
@@ -47,9 +47,9 @@ Som standard är arbetsflödet **[!UICONTROL Database cleanup]** konfigurerat at
 >
 >Arbetsflödesmotorn (wfserver) måste startas för att arbetsflödet **[!UICONTROL Database cleanup]** ska starta vid det datum och den tid som definieras i schemaläggaren.
 
-### Distributionsguide {#deployment-wizard}
+### distributionsguide {#deployment-assistant}
 
-Med **[!UICONTROL Deployment wizard]**, som du kommer åt via menyn **[!UICONTROL Tools > Advanced]**, kan du konfigurera hur länge data sparas för. Värdena anges i dagar. Om dessa värden inte ändras används standardvärdena i arbetsflödet.
+Med **[!UICONTROL deployment wizard]**, som du kommer åt via menyn **[!UICONTROL Tools > Advanced]**, kan du konfigurera hur länge data sparas för. Värdena anges i dagar. Om dessa värden inte ändras används standardvärdena i arbetsflödet.
 
 ![](assets/ncs_cleanup_deployment-wizard.png)
 
@@ -125,7 +125,7 @@ Den första åtgärden som utförs av arbetsflödet **[!UICONTROL Database clean
 
 Den här aktiviteten rensar alla leveranser som ska tas bort eller återvinnas.
 
-1. Arbetsflödet **[!UICONTROL Database cleanup]** väljer alla leveranser för vilka fältet **deleteStatus** har värdet **[!UICONTROL Yes]** eller **[!UICONTROL Recycled]** och vars borttagningsdatum är tidigare än den period som definieras i fältet **[!UICONTROL Deleted deliveries]** (**NmsCleanup_RecycledDeliveryPurgeDelay**) i distributionsguiden. Mer information finns i [Distributionsguiden](#deployment-wizard). Perioden beräknas i relation till aktuellt serverdatum.
+1. Arbetsflödet **[!UICONTROL Database cleanup]** väljer alla leveranser för vilka fältet **deleteStatus** har värdet **[!UICONTROL Yes]** eller **[!UICONTROL Recycled]** och vars borttagningsdatum är tidigare än den period som definieras i fältet **[!UICONTROL Deleted deliveries]** (**NmsCleanup_RecycledDeliveryPurgeDelay**) i distributionsguiden. Mer information finns i [distributionsguiden](#deployment-assistant). Perioden beräknas i relation till aktuellt serverdatum.
 1. För varje server med mellanleverantörer väljer aktiviteten listan över leveranser som ska tas bort.
 1. Arbetsflödet **[!UICONTROL Database cleanup]** tar bort leveransloggar, bilagor, information om spegelsidor och alla andra relaterade data.
 1. Innan leveransen tas bort rensas länkad information från följande tabeller bort:
@@ -308,7 +308,7 @@ I det här steget kan du ta bort poster som inte bearbetades av alla data under 
    DELETE FROM XtkReject WHERE iRejectId IN (SELECT iRejectId FROM XtkReject WHERE tsLog < $(curDate)) LIMIT $(l)
    ```
 
-   där `$(curDate)` är det aktuella serverdatumet från vilket vi subtraherar den period som definierats för alternativet **NmsCleanup_RejectsPurgeDelay** (se [Distributionsguiden](#deployment-wizard)) och `$(l)` är det högsta antalet poster som kan masstas bort.
+   där `$(curDate)` är det aktuella serverdatumet från vilket vi subtraherar den period som definierats för alternativet **NmsCleanup_RejectsPurgeDelay** (se [distributionsguiden](#deployment-assistant)) och `$(l)` är det högsta antalet poster som kan masstas bort.
 
 1. Alla ignorerade objekt tas sedan bort med följande fråga:
 
@@ -395,7 +395,7 @@ SELECT iGroupId FROM NmsGroup WHERE iType>0"
 
 ### Rensa besökare {#cleanup-of-visitors}
 
-Den här uppgiften tar bort inaktuella poster från besökstabellen med massborttagning. Föråldrade poster är poster för vilka den senaste ändringen är tidigare än den bevaringsperiod som har definierats i distributionsguiden (se [Distributionsguiden](#deployment-wizard)). Följande fråga används:
+Den här uppgiften tar bort inaktuella poster från besökstabellen med massborttagning. Föråldrade poster är poster för vilka den senaste ändringen är tidigare än den bevaringsperiod som har definierats i distributionsguiden (se [distributionsguiden](#deployment-assistant)). Följande fråga används:
 
 ```sql
 DELETE FROM NmsVisitor WHERE iVisitorId IN (SELECT iVisitorId FROM NmsVisitor WHERE iRecipientId = 0 AND tsLastModified < AddDays(GetDate(), -30) AND iOrigin = 0 LIMIT 20000)
@@ -423,7 +423,7 @@ DELETE FROM NmsSubscription WHERE iDeleteStatus <>0
 
 ### Rensa spårningsloggar {#cleanup-of-tracking-logs}
 
-Den här uppgiften tar bort inaktuella poster från loggtabellerna för spårning och webbspårning. Föråldrade poster är poster som är tidigare än den bevarandeperiod som definierats i distributionsguiden (se [Distributionsguiden](#deployment-wizard)).
+Den här uppgiften tar bort inaktuella poster från loggtabellerna för spårning och webbspårning. Föråldrade poster är poster som är tidigare än den bevarandeperiod som har definierats i distributionsguiden (se [distributionsguiden](#deployment-assistant)).
 
 1. Först återställs listan med spårningsloggtabeller med följande fråga:
 
@@ -464,7 +464,7 @@ Med den här uppgiften kan du rensa leveransloggarna som lagras i olika tabeller
    DELETE FROM $(tableName) WHERE iBroadLogId IN (SELECT iBroadLogId FROM $(tableName) WHERE tsLastModified < $(option) LIMIT 5000) 
    ```
 
-   där `$(tableName)` är namnet på varje tabell i schemalistan och `$(option)` är det datum som definierats för alternativet **NmsCleanup_BroadLogPurgeDelay** (se [Distributionsguiden](#deployment-wizard)).
+   där `$(tableName)` är namnet på varje tabell i schemalistan och `$(option)` är det datum som definierats för alternativet **NmsCleanup_BroadLogPurgeDelay** (se [distributionsguiden](#deployment-assistant)).
 
 1. Arbetsflödet kontrollerar slutligen om tabellen **NmsProviderMsgId** finns. Om så är fallet tas alla föråldrade data bort med följande fråga:
 
@@ -472,7 +472,7 @@ Med den här uppgiften kan du rensa leveransloggarna som lagras i olika tabeller
    DELETE FROM NmsProviderMsgId WHERE iBroadLogId IN (SELECT iBroadLogId FROM NmsProviderMsgId WHERE tsCreated < $(option) LIMIT 5000)
    ```
 
-   där `$(option)` matchar datumet som definierats för alternativet **NmsCleanup_BroadLogPurgeDelay** (se [Distributionsguiden](#deployment-wizard)).
+   där `$(option)` matchar datumet som definierats för alternativet **NmsCleanup_BroadLogPurgeDelay** (se [distributionsguiden](#deployment-assistant)).
 
 ### Rensa tabellen NmsEmailErrorStat {#cleanup-of-the-nmsemailerrorstat-table-}
 
@@ -552,7 +552,7 @@ Listan med förslagstabeller återställs och massborttagning utförs för var o
 DELETE FROM NmsPropositionXxx WHERE iPropositionId IN (SELECT iPropositionId FROM NmsPropositionXxx WHERE tsLastModified < $(option) LIMIT 5000) 
 ```
 
-där `$(option)` är det datum som definierats för alternativet **NmsCleanup_PropositionPurgeDelay** (se [Distributionsguiden](#deployment-wizard)).
+där `$(option)` är det datum som definierats för alternativet **NmsCleanup_PropositionPurgeDelay** (se [distributionsguiden](#deployment-assistant)).
 
 ### Rensa simuleringstabeller {#cleanup-of-simulation-tables}
 
