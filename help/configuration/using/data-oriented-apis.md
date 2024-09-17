@@ -5,9 +5,9 @@ description: Dataorienterade API:er
 feature: API
 role: Data Engineer, Developer
 exl-id: a392c55e-541a-40b1-a910-4a6dc79abd2d
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: 9d84c01b217579b5a291d5761a5dd2f8f8960df8
 workflow-type: tm+mt
-source-wordcount: '1864'
+source-wordcount: '1811'
 ht-degree: 0%
 
 ---
@@ -64,7 +64,7 @@ Med den här metoden kan du utföra frågor från data som är kopplade till ett
 
 Definition av metoden &quot;ExecuteQuery&quot; i schemat &quot;xtk:queryDef&quot;:
 
-```
+```xml
 <method name="ExecuteQuery" const="true">
   <parameters>
     <param desc="Output XML document" name="output" type="DOMDocument" inout="out"/>
@@ -80,7 +80,7 @@ Definition av metoden &quot;ExecuteQuery&quot; i schemat &quot;xtk:queryDef&quot
 
 XML-dokumentets struktur för frågan beskrivs i schemat &quot;xtk:queryDef&quot;. Det här dokumentet beskriver satserna i en SQL-fråga: &quot;select&quot;, &quot;where&quot;, &quot;order by&quot;, &quot;group by&quot;, &quot;having&quot;.
 
-```
+```xml
 <queryDef schema="schema_key" operation="operation_type">
   <select>
     <node expr="expression1">
@@ -114,7 +114,7 @@ En underfråga ( `<subquery>`) kan definieras i ett `<condition> `-element. Synt
 
 Exempel på en `<subquery>  : </subquery>`
 
-```
+```xml
 <condition setOperator="NOT IN" expr="@id" enabledIf="$(/ignored/@ownerType)=1">
   <subQuery schema="xtk:operatorGroup">
      <select>
@@ -143,7 +143,7 @@ Syntaxen **XPath** används för att hitta data baserat på indatabildmet. Mer i
 
 Hämtar efternamnet och förnamnet för en mottagare (&quot;nms:receimschema&quot;) med ett filter i e-postmeddelandet.
 
-```
+```xml
 <queryDef schema="nms:recipient" operation="get">
   <!-- fields to retrieve -->
   <select>
@@ -162,7 +162,7 @@ Hämtar efternamnet och förnamnet för en mottagare (&quot;nms:receimschema&quo
 
 Returnerar listan med mottagare filtrerade i en mapp och e-postdomänen med en sortering i fallande ordning på födelsedatumet.
 
-```
+```xml
 <queryDef schema="nms:recipient" operation="select">
   <select>
     <node expr="@email"/>
@@ -189,14 +189,14 @@ Om du vill begränsa antalet poster som ska returneras lägger du till attribute
 
 Så här begränsar du antalet poster som returneras av frågan till 100:
 
-```
+```xml
 <queryDef schema="nms:recipient" operation="select" lineCount="100">
 ...
 ```
 
 Om du vill hämta de följande 100 posterna kör du samma fråga igen och lägger till attributet **startLine**.
 
-```
+```xml
 <queryDef schema="nms:recipient" operation="select" lineCount="100" startLine="100">
 ...
 ```
@@ -205,7 +205,7 @@ Om du vill hämta de följande 100 posterna kör du samma fråga igen och lägge
 
 Så här räknar du antalet poster i en fråga:
 
-```
+```xml
 <queryDef schema="nms:recipient" operation="count"">
   <!-- condition on the folder and domain of the email -->
   <where>  
@@ -222,7 +222,7 @@ Så här räknar du antalet poster i en fråga:
 
 Så här hämtar du e-postadresser som refereras mer än en gång:
 
-```
+```xml
 <queryDef schema="nms:recipient" operation="select">
   <select>
     <node expr="@email"/>
@@ -244,7 +244,7 @@ Så här hämtar du e-postadresser som refereras mer än en gång:
 
 Frågan kan förenklas genom att attributet **groupBy** läggs till direkt i fältet som ska grupperas:
 
-```
+```xml
 <select>
   <node expr="@email" groupBy="true"/>
 </select>
@@ -260,7 +260,7 @@ Här är två exempel på hakparenteser på samma villkor.
 
 * Den enkla versionen i ett enda uttryck:
 
-  ```
+  ```xml
   <where>
     <condition expr="(@age > 15 or @age <= 45) and  (@city = 'Newton' or @city = 'Culver City') "/>
   </where>
@@ -268,7 +268,7 @@ Här är två exempel på hakparenteser på samma villkor.
 
 * Den strukturerade versionen med `<condition>` element:
 
-  ```
+  ```xml
   <where>
     <condition bool-operator="AND">
       <condition expr="@age > 15" bool-operator="OR"/>
@@ -283,7 +283,7 @@ Här är två exempel på hakparenteser på samma villkor.
 
 Det går att ersätta operatorn &quot;OR&quot; med operatorn &quot;IN&quot; när flera villkor gäller för samma fält:
 
-```
+```xml
 <where>
   <condition>
     <condition expr="@age IN (15, 45)"/>
@@ -300,7 +300,7 @@ Den här syntaxen förenklar frågan när mer än två data används i villkoret
 
   Exempel på ett filter på mappetiketten:
 
-  ```
+  ```xml
   <where>
     <condition expr="[folder/@label] like 'Segment%'"/>
   </where>
@@ -308,7 +308,7 @@ Den här syntaxen förenklar frågan när mer än två data används i villkoret
 
   Så här hämtar du mappens fält från schemat &quot;nms:receive&quot;:
 
-  ```
+  ```xml
   <select>
     <!-- label of recipient folder -->
     <node expr="[folder/@label]"/>
@@ -321,7 +321,7 @@ Den här syntaxen förenklar frågan när mer än två data används i villkoret
 
   Så här filtrerar du mottagare som prenumererar på informationstjänsten Newsletter:
 
-  ```
+  ```xml
   <where>
     <condition expr="subscription" setOperator="EXISTS">
       <condition expr="@name = 'Newsletter'"/>
@@ -333,7 +333,7 @@ Den här syntaxen förenklar frågan när mer än två data används i villkoret
 
   Exempel på prenumerationslänken:
 
-  ```
+  ```xml
   <select>
     <node expr="subscription/@label"/>
   </select>
@@ -345,7 +345,7 @@ Den här syntaxen förenklar frågan när mer än två data används i villkoret
 
   I det här exemplet returnerar frågan e-post och en lista över informationstjänster som mottagaren prenumererar på:
 
-  ```
+  ```xml
   <queryDef schema="nms:recipient" operation="select">
     <select>
       <node expr="@email"/>
@@ -371,7 +371,7 @@ Parametrarnas bindning gör att motorn kan ange värden för parametrarna som an
 
 När en fråga skapas ersätts de bundna värdena med ett tecken (? i ODBC, `#[index]#` i postgres..) i SQL-frågans brödtext.
 
-```
+```xml
 <select>
   <!--the value will be bound by the engine -->
   <node expr="@startDate = #2002/02/01#"/>                   
@@ -386,21 +386,6 @@ För att undvika bindning av en parameter måste attributet &quot;noSqlBind&quot
 >
 >Om frågan innehåller instruktioner för &quot;order-by&quot; eller &quot;grupp-för&quot;, kommer databasmotorerna inte att kunna &quot;binda&quot; värden. Du måste placera attributet @noSqlBind=&quot;true&quot; i instruktionerna &quot;select&quot; och/eller &quot;where&quot; för frågan.
 
-#### Tips för frågeskapande: {#query-building-tip-}
-
-Om du vill ha hjälp med syntaxen för en fråga kan du skriva frågan med den generiska frågeredigeraren i Adobe Campaign klientkonsol ( **[!UICONTROL Tools/ Generic query editor...]**-menyn). Så här gör du:
-
-1. Välj de data som ska hämtas:
-
-   ![](assets/s_ncs_integration_webservices_queyr1.png)
-
-1. Definiera filtervillkoret:
-
-   ![](assets/s_ncs_integration_webservices_queyr2.png)
-
-1. Kör frågan och tryck på CTRL+F4 för att visa frågekällkoden.
-
-   ![](assets/s_ncs_integration_webservices_queyr3.png)
 
 ### Utdatadokumentformat {#output-document-format}
 
@@ -414,7 +399,7 @@ Exempel på en retur från schemat &quot;nms:mottagare&quot; för en &quot;get&q
 
 I en select-åtgärd är det returnerade dokumentet en uppräkning av element:
 
-```
+```xml
 <!-- the name of the first element does not matter -->
 <recipient-collection>   
   <recipient email="john.doe@adobe.com" lastName"Doe" firstName="John"/>
@@ -425,7 +410,7 @@ I en select-åtgärd är det returnerade dokumentet en uppräkning av element:
 
 Exempel på ett dokument som returneras för en räkningstyp:
 
-```
+```xml
 <recipient count="3"/>
 ```
 
@@ -433,7 +418,7 @@ Exempel på ett dokument som returneras för en räkningstyp:
 
 Med ett alias kan du ändra platsen för data i utdatadokumentet. Attributet **alias** måste ange en XPath i motsvarande fält.
 
-```
+```xml
 <queryDef schema="nms:recipient" operation="get">
   <select>
     <node expr="@firstName" alias="@firstName"/>
@@ -445,13 +430,13 @@ Med ett alias kan du ändra platsen för data i utdatadokumentet. Attributet **a
 
 Returnerar:
 
-```
+```xml
 <recipient My_folder="Recipients" First name ="John" lastName="Doe"/>
 ```
 
 I stället för:
 
-```
+```xml
 <recipient firstName="John" lastName="Doe">
   <folder label="Recipients"/>
 </recipient>
@@ -461,7 +446,7 @@ I stället för:
 
 * Fråga:
 
-  ```
+  ```xml
   <?xml version='1.0' encoding='ISO-8859-1'?>
   <SOAP-ENV:Envelope xmlns:xsd='http://www.w3.org/2001/XMLSchema' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:ns='http://xml.apache.org/xml-soap' xmlns:SOAP-ENV='http://schemas.xmlsoap.org/soap/envelope/'>
     <SOAP-ENV:Body>
@@ -486,7 +471,7 @@ I stället för:
 
 * Svar:
 
-  ```
+  ```xml
   <?xml version='1.0' encoding='ISO-8859-1'?>
   <SOAP-ENV:Envelope xmlns:xsd='http://www.w3.org/2001/XMLSchema' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:ns='http://xml.apache.org/xml-soap' xmlns:SOAP-ENV='http://schemas.xmlsoap.org/soap/envelope/'>
     <SOAP-ENV:Body>
@@ -511,7 +496,7 @@ Anropet returnerar inga data, förutom fel.
 
 Definition av metoderna &quot;Write&quot; och &quot;WriteCollection&quot; i schemat &quot;xtk:session&quot;:
 
-```
+```xml
 <method name="Write" static="true">
   <parameters>
     <param name="doc" type="DOMDocument" desc="Difference document"/>
@@ -548,7 +533,7 @@ Det går att tvinga fram typen av åtgärd genom att fylla i attributet **_opera
 
 Uppdatera eller infoga en mottagare (implicit&quot;insertOrUpdate&quot;-åtgärd) med e-postadress, födelsedatum och ort:
 
-```
+```xml
 <recipient xtkschema="nms:recipient" email="john.doe@adobe.com" birthDate="1956/05/04" folder-id=1203 _key="@email, [@folder-id]">
   <location city="Newton"/>
 </recipient>
@@ -556,7 +541,7 @@ Uppdatera eller infoga en mottagare (implicit&quot;insertOrUpdate&quot;-åtgärd
 
 Ta bort en mottagare:
 
-```
+```xml
 <recipient xtkschema="nms:recipient" _operation="delete" email="rene.dupont@adobe.com" folder-id=1203 _key="@email, [@folder-id]"/>
 ```
 
@@ -568,7 +553,7 @@ Ta bort en mottagare:
 
 Uppdatera eller infoga för flera mottagare:
 
-```
+```xml
 <recipient-collection xtkschema="nms:recipient">    
   <recipient email="john.doe@adobe.com" firstName="John" lastName="Doe" _key="@email"/>
   <recipient email="peter.martinez@adobe.com" firstName="Peter" lastName="Martinez" _key="@email"/>
@@ -582,7 +567,7 @@ Uppdatera eller infoga för flera mottagare:
 
 Kopplar mappen till en mottagare baserat på dess interna namn (@name).
 
-```
+```xml
 <recipient _key="[folder/@name], @email" email="john.doe@adobe.net" lastName="Doe" firstName="John" xtkschema="nms:recipient">
   <folder name="Folder2" _operation="none"/>
 </recipient>
@@ -600,7 +585,7 @@ Definitionen av nyckeln för huvudentiteten (&quot;nms:receive&quot;) består av
 
 Uppdaterar företaget (länkad tabell i&quot;cus:company&quot;-schema) från en mottagare:
 
-```
+```xml
 <recipient _key="[folder/@name], @email" email="john.doe@adobe.net" lastName="Doe" firstName="John" xtkschema="nms:recipient">
   <company name="adobe" code="ERT12T" _key="@name" _operation="update"/>
 </recipient>
@@ -610,7 +595,7 @@ Uppdaterar företaget (länkad tabell i&quot;cus:company&quot;-schema) från en 
 
 Lägga till en mottagare i en grupp med grupprelationstabellen (&quot;nms:rcpGrpRel&quot;):
 
-```
+```xml
 <recipient _key="@email" email="martin.ledger@adobe.net" xtkschema="nms:recipient">
   <rcpGrpRel _key="[rcpGroup/@name]">
     <rcpGroup name="GRP1"/>
@@ -630,7 +615,7 @@ Som standard måste alla samlingselement fyllas i för att XML-samlingens elemen
 
 * Fråga:
 
-  ```
+  ```xml
   <?xml version='1.0' encoding='ISO-8859-1'?>
   <SOAP-ENV:Envelope xmlns:xsd='http://www.w3.org/2001/XMLSchema' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:ns='http://xml.apache.org/xml-soap' xmlns:SOAP-ENV='http://schemas.xmlsoap.org/soap/envelope/'>
     <SOAP-ENV:Body>
@@ -646,7 +631,7 @@ Som standard måste alla samlingselement fyllas i för att XML-samlingens elemen
 
 * Svar:
 
-  ```
+  ```xml
   <?xml version='1.0' encoding='ISO-8859-1'?>
   <SOAP-ENV:Envelope xmlns:xsd='http://www.w3.org/2001/XMLSchema' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:ns='http://xml.apache.org/xml-soap' xmlns:SOAP-ENV='http://schemas.xmlsoap.org/soap/envelope/'>
     <SOAP-ENV:Body>
@@ -658,7 +643,7 @@ Som standard måste alla samlingselement fyllas i för att XML-samlingens elemen
 
   Returnera med fel:
 
-  ```
+  ```xml
   <?xml version='1.0'?>
   <SOAP-ENV:Envelope xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:SOAP-ENV='http://schemas.xmlsoap.org/soap/envelope/'>
     <SOAP-ENV:Body>

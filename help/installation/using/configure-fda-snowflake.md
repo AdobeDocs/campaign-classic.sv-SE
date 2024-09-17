@@ -7,10 +7,10 @@ audience: platform
 content-type: reference
 topic-tags: connectors
 exl-id: bdb5e422-ecfe-42eb-bd15-39fe5ec0ff1d
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: 9d84c01b217579b5a291d5761a5dd2f8f8960df8
 workflow-type: tm+mt
-source-wordcount: '492'
-ht-degree: 2%
+source-wordcount: '503'
+ht-degree: 1%
 
 ---
 
@@ -21,9 +21,11 @@ Använd alternativet **FDA (Federated Data Access**) i kampanjen om du vill bear
 1. Konfigurera [!DNL Snowflake] på [Linux](#snowflake-linux).
 1. Konfigurera det [!DNL Snowflake] [externa kontot](#snowflake-external) i Campaign
 
->[!NOTE]
+>[!CAUTION]
 >
->[!DNL Snowflake]-anslutningen är tillgänglig för värdbaserade och lokala distributioner. Mer information finns på [den här sidan](../../installation/using/capability-matrix.md).
+>+ [!DNL Snowflake]-anslutningen är tillgänglig för värdbaserade och lokala distributioner. Mer information finns på [den här sidan](../../installation/using/capability-matrix.md).
+>
+>* Den version av [!DNL Snowflake] ODBC-drivrutinen som stöds är **2.24.4** som minimum.
 
 ![](assets/snowflake_3.png)
 
