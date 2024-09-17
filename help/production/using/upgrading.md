@@ -8,16 +8,14 @@ audience: production
 content-type: reference
 topic-tags: updating-adobe-campaign
 exl-id: 4aaa6256-256a-441d-80c9-430f8e427875
-source-git-commit: 1be1528d657537786c430ea9c8bdb3aad58ba20d
+source-git-commit: 1ab08a89b17fca20e9497696417ecba580e26802
 workflow-type: tm+mt
-source-wordcount: '1127'
-ht-degree: 1%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
 # Uppgradera till en ny version (lokalt){#upgrading}
-
-
 
 Innan du startar uppgraderingsprocessen bör du kontrollera vilken version av Adobe Campaign som ska uppgraderas och läsa [versionsinformationen](../../rn/using/latest-release.md) .
 
@@ -119,15 +117,17 @@ I en Linux-miljö följer du stegen nedan för att uppdatera Adobe Campaign till
 
 [Läs mer om tillgänglighet för klientkonsolen](../../installation/using/client-console-availability-for-windows.md).
 
->[!NOTE]
->
->Från och med bygge 8757 behövs inte längre något tredjepartsbibliotek.
-
 ### Hämta uppdaterade paket {#obtain-updated-packages}
 
 Börja med att återställa båda de uppdaterade paketen av Adobe Campaign: anslut till [programdistributionsportalen](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html) med dina inloggningsuppgifter. Läs mer om programvarudistribution på [den här sidan](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html).
 
 Filen är **nlserver6-v7-XXX.rpm**
+
+>[!AVAILABILITY]
+>
+>Från och med v7.4.1 ingår inte längre bibliotek för RPM Linux-paket i Campaign. Du måste installera dessa bibliotek.
+> 
+
 
 ### Utför en uppdatering {#perform-an-update}
 
