@@ -7,10 +7,10 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: 20552812-5c58-4d48-9636-d5135197685d
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: 517b85f5d7691acc2522bf4541f07c34c60c7fbf
 workflow-type: tm+mt
-source-wordcount: '508'
-ht-degree: 85%
+source-wordcount: '509'
+ht-degree: 84%
 
 ---
 
@@ -24,7 +24,7 @@ Adobe Campaign är en öppen lösning som är redo för personalisering och avan
 
 Den konceptuella datamodellen av databasen i Adobe Campaign består av en uppsättning inbyggda tabeller och deras interaktion. Den fysiska och logiska strukturen hos de data som medföljer programmet beskrivs i XML. Den följer en grammatik som är specifik för Adobe Campaign och som kallas för ett schema. Se [det här avsnittet](../../configuration/using/about-schema-edition.md) för mer information om scheman i Adobe Campaign.
 
-[Klicka här för att läsa mer om datamodellen i Campaign](https://helpx.adobe.com/se/campaign/kb/acc-datamodel.html).
+[Klicka här om du vill veta mer om Campaign-datamodellen](https://helpx.adobe.com/se/campaign/kb/acc-datamodel.html).
 
 Bästa praxis beskrivs [i den här artikeln](../../configuration/using/data-model-best-practices.md).
 

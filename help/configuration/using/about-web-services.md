@@ -5,9 +5,9 @@ description: Om webbtjänster
 feature: API
 role: Data Engineer, Developer
 exl-id: 7aa2aef1-2eb6-48a6-82fa-4451bed66216
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: 517b85f5d7691acc2522bf4541f07c34c60c7fbf
 workflow-type: tm+mt
-source-wordcount: '642'
+source-wordcount: '645'
 ht-degree: 2%
 
 ---
@@ -37,10 +37,10 @@ Innan du använder Adobe Campaign API:er måste du känna till följande:
 
 Adobe Campaign använder två typer av API:er:
 
-* API:er för allmän dataåtkomst för att fråga efter datamodelldata. Se [Dataorienterade API:er](../../configuration/using/data-oriented-apis.md).
+* Generiska API:er för dataåtkomst för att fråga om datamodelldata. Se [Dataorienterade API:er](../../configuration/using/data-oriented-apis.md).
 * Affärsspecifika API:er där du kan agera på varje objekt: leveranser, arbetsflöden, prenumerationer osv. Se [Affärsorienterade API:er](../../configuration/using/business-oriented-apis.md).
 
-Om du vill utveckla API:er och interagera med Adobe Campaign måste du känna till datamodellen. Med Adobe Campaign kan du generera en fullständig beskrivning av basen. Se [Beskrivning av modellen](../../configuration/using/data-oriented-apis.md#description-of-the-model).
+För att kunna utveckla API:er och interagera med Adobe Campaign måste ni känna till er datamodell. Med Adobe Campaign kan du generera en fullständig beskrivning av basen. Se [Beskrivning av modellen](../../configuration/using/data-oriented-apis.md#description-of-the-model).
 
 ## SOAP samtal {#soap-calls}
 
