@@ -8,9 +8,9 @@ audience: production
 content-type: reference
 topic-tags: troubleshooting
 exl-id: 76411b29-d300-4aaa-8d3b-d8ff74c3ce93
-source-git-commit: 757e3a5395f24e0bdd04737aba0458881e4ea780
+source-git-commit: fd4a815bca23b94590012c4883cfaa9c29b6f118
 workflow-type: tm+mt
-source-wordcount: '505'
+source-wordcount: '515'
 ht-degree: 0%
 
 ---
@@ -32,8 +32,11 @@ Nya eller uppgraderade versioner av de inbäddade versionerna av Tomcat släpps 
 >[!AVAILABILITY]
 >
 >
-> Med början från Campaign v7.4.1 är Tomcat 10.1 standardversionen.
+>* Med början från Campaign v7.4.1 är Tomcat 10.1 standardversionen.
 >
+>* Adobe Campaign Classic använder inte WebSocket- och HTTP2-protokoll.
+>
+
 
 ## Hitta versionen av inbäddad Tomcat
 
