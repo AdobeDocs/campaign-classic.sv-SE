@@ -6,10 +6,10 @@ feature: Release Notes
 role: User
 level: Beginner
 exl-id: d65869ca-a785-4327-8e8d-791c28e4696c
-source-git-commit: d31aa28da06e65664da655b6b082563767b35f7a
+source-git-commit: 4be5bf54362240aac1b77298b08b14d3e5542f52
 workflow-type: tm+mt
-source-wordcount: '357'
-ht-degree: 100%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -30,7 +30,6 @@ _18 juni 2024_
 * När du har [migrerat dina tekniska operatörer för Campaign till Developer Console](../../technotes/using/ims-migration.md) och [har övergått till IMS för autentisering av slutanvändare](../../technotes/using/migrate-users-to-ims.md) kan du nu aktivera användargränssnittet och API-begränsningarna för att ta bort alternativ och funktioner som är specifika för inbyggd autentisering. [Läs mer](../../technotes/using/impact-ims-migration.md)
 
 
-
 ### Kompatibilitetsuppdateringar {#release-7-4-1-compat}
 
 [Kompatibilitetsmatris för Adobe Campaign](compatibility-matrix.md) har uppdaterats med ändringarna i den nya versionen och anges nedan.
@@ -48,6 +47,9 @@ _18 juni 2024_
    * ett nytt Campaign-SDK 1.0.27 för iOS som är kompatibelt med iOS 16 och 17 samt de senaste [kraven för sekretessbegäran i Apple iOS](https://developer.apple.com/news/?id=r1henawx){target="_blank"}.
    * ett nytt Campaign-SDK för Android 14.
 
+### Andra ändringar {#release-7-4-1-other}
+
+Från och med v7.4.1 ingår inte längre XML-bibliotek för RPM Linux-paket i Campaign. Administratören måste installera dessa bibliotek som en lokal eller blandad kund.
 
 ### Korrigeringar {#release-7-4-1-patches}
 
