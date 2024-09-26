@@ -6,10 +6,10 @@ feature: Release Notes
 role: User
 level: Beginner
 exl-id: 07c1f4a3-cf16-4a9b-b402-e13258799f91
-source-git-commit: 98859f6452b5f1008a19a48b9b77edd9acf49261
+source-git-commit: 3f6bbf2766a61580c4f232d3919fe955d82a7881
 workflow-type: tm+mt
-source-wordcount: '3746'
-ht-degree: 100%
+source-wordcount: '3782'
+ht-degree: 99%
 
 ---
 
@@ -21,7 +21,15 @@ Se [Versionsinformationen för Adobe Campaign Classic](../../rn/using/latest-rel
 
 ## 2024
 
+### sept 2024 {#sept-2024}
+
+Versionsstatusen har reducerats och förenklats. [Läs mer](rn-overview.md)
+
+Installationen av Linux-paket har uppdaterats för v7.4.1. [Läs mer](../../installation/using/installing-packages-with-linux.md)
+
 ### Juni 2024 {#june-2024}
+
+Uppdaterat avsnitt i versionsinformationen med 7.4.1-förbättringar, kompatibilitetsuppdateringar och korrigeringar. [Läs mer](latest-release.md)
 
 En anteckning har lagts till för att ange hur instansvariabler ska rensas när arbetsflöden startas om. [Läs mer](../../workflow/using/starting-a-workflow.md)
 
