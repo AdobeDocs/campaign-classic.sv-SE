@@ -6,10 +6,10 @@ feature: Release Notes
 role: User
 level: Beginner
 exl-id: b8c1f287-06f4-4c34-8cca-b0c7676abbc2
-source-git-commit: b23632d0718d62d61e94e636937b93aa39bbe43f
+source-git-commit: 728848eab059fc669c241346a2ff1feebd79222c
 workflow-type: tm+mt
-source-wordcount: '840'
-ht-degree: 100%
+source-wordcount: '843'
+ht-degree: 93%
 
 ---
 
@@ -21,7 +21,7 @@ Om inget annat anges stöds alla mindre versioner.
 
 >[!CAUTION]
 >
->Den här matrisen uppdateras regelbundet med nya system och verktyg som stöds och inaktuella som tas bort.
+>Den här matrisen uppdateras regelbundet med nya system och verktyg som stöds och som tas bort.
 
 ## Operativsystem {#OperatingSystems}
 
@@ -53,7 +53,7 @@ Om du är en lokal/hybrid-kund måste du installera Adobe Campaign i något av o
 </td>
 </tr>
 <tr>
-<td>RHEL</td>
+<td>Red Hat Enterprise Linux (RHEL)</td>
 <td>
 <p>9.x</p>
 <p>8.x</p>
@@ -83,7 +83,7 @@ Om du är en lokal/hybrid-kund måste du installera Adobe Campaign i något av o
 
 >[!IMPORTANT]
 >
->Om du använder RHEL måste du kunna inaktivera [SELinux](../../installation/using/prerequisites-of-campaign-installation-in-linux.md#selinux) eller låta dina utvecklare skriva anpassade SELinux-regler för att kontrollera att en aktiverad SELinux inte orsakar problem med åtgärder i Campaign.
+>Med RHEL måste du kunna inaktivera [SELinux](../../installation/using/prerequisites-of-campaign-installation-in-linux.md#selinux) eller låta dina arkitekter skriva anpassade SELinux-regler för att kontrollera att en aktiverad SELinux inte orsakar problem med Campaign-åtgärder.
 
 ## Webbservrar {#WebServers}
 
@@ -91,10 +91,12 @@ Som lokal kund/hybridkund måste du, beroende på ditt operativsystem, integrera
 
 <table>
 <tbody>
+<td><strong>Webbserver</strong></td>
+<td><strong>Webbserverversion</strong></td>
 <tr>
 <td>Microsoft IIS</td>
 <td>
-<p>10.0 på Windows Server</p>
+<p>10,0</p>
 </td>
 </tr>
 <tr>

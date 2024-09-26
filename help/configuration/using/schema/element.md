@@ -4,9 +4,9 @@ title: Schemaelement och attribut - elementelement
 description: element
 feature: Schema Extension
 exl-id: 60f15ae5-b2bd-48f9-aa45-8f795a3071aa
-source-git-commit: fd5e4bbc87a48f029a09b14ab1d927b9afe4ac52
+source-git-commit: 728848eab059fc669c241346a2ff1feebd79222c
 workflow-type: tm+mt
-source-wordcount: '2016'
+source-wordcount: '2029'
 ht-degree: 0%
 
 ---
@@ -83,7 +83,7 @@ Det finns fyra typer av `<element>`-element i Adobe Campaign:
 * **dbEnum (sträng)**: tar emot det interna namnet för en sluten uppräkning. Uppräkningsvärdena måste definieras i `<srcschema>`.
 * **defOnDuplicate (boolesk)**: om det här attributet aktiveras, används standardvärdet (definierat i @default) automatiskt på posten när en post dupliceras.
 * **default (sträng)**: låter dig definiera elementbeteende (anrop till en funktion, standardvärde). Attributet tar emot ett XTK-uttryck.
-* **desc (sträng)**: gör att du kan infoga en beskrivning av elementet. Beskrivningen visas i gränssnittets statusfält.
+* **desc (sträng)**: gör att du kan infoga en beskrivning av elementet. Den här beskrivningen används för att förstå vad elementet är och vad det används för. Du kan visa det i formuläret.
 * **displayAsField (booleskt)**: Om det här attributet aktiveras visas en länktyp `<element>` som ett fält i trädvyn för scheman (&quot;Fliken Struktur&quot;). På så sätt kan du visa en länk som ett lokalt fält och ändra dess beteende under en fråga. När elementet hittas i SELECT för en fråga används värdet för länkmålet. När elementet hittas i WHERE för en fråga används länkens underliggande nyckel.
 * **edit (string)**: det här attributet anger vilken typ av indata som ska användas i formuläret som är länkat till schemat.
 * **enum (sträng)**: tar emot namnet på uppräkningen som är länkad till fältet. Uppräkningen kan infogas i samma schema eller i ett fjärrschema.

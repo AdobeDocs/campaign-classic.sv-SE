@@ -7,9 +7,9 @@ audience: configuration
 content-type: reference
 topic-tags: schema-reference
 exl-id: e4d34f56-b065-4dce-8974-11dc2767873a
-source-git-commit: fd5e4bbc87a48f029a09b14ab1d927b9afe4ac52
+source-git-commit: 728848eab059fc669c241346a2ff1feebd79222c
 workflow-type: tm+mt
-source-wordcount: '1558'
+source-wordcount: '1573'
 ht-degree: 0%
 
 ---
@@ -76,7 +76,7 @@ Sekvensen i vilken `<attribute>`-element definieras i en `<srcschema>` påverkar
 * **dbEnum (sträng)**: tar emot det interna namnet för en sluten uppräkning. Uppräkningsvärdena måste definieras i `<srcschema>`.
 * **defOnDuplicate (boolesk)**: om det här attributet aktiveras, används standardvärdet (definierat i @default) automatiskt på posten när en post dupliceras.
 * **default (sträng)**: låter dig definiera värdet för standardfältet (anrop till en funktion, standardvärde). Attributet tar emot ett XTK-uttryck.
-* **desc (sträng)**: gör att du kan infoga en beskrivning av attributet. Beskrivningen visas i gränssnittets statusfält.
+* **desc (sträng)**: gör att du kan infoga en beskrivning av attributet. Den här beskrivningen används för att förstå vad elementet är och vad det används för. Du kan visa det i formuläret.
 * **edit (string)**: det här attributet anger vilken typ av indata som ska användas i formuläret som är länkat till schemat.
 * **enum (sträng)**: tar emot namnet på uppräkningen som är länkad till fältet. Uppräkningen kan infogas i samma schema eller i ett fjärrschema.
 * **expr (sträng)**: definierar ett uttryck för förberäkning av fältvärde. Attributet tar emot en Xpath eller ett XTK-uttryck.
@@ -90,7 +90,7 @@ Sekvensen i vilken `<attribute>`-element definieras i en `<srcschema>` påverkar
    * dedikerad: `Ft_[name_of_the_schema_containing_the_characteristic]_[name_of_the_characteristic]`
    * delade: `Ft_[type_of_key_of_the_schema_containing_the_characteristic]_[type_of_the_characteristic]`
 
-  Det finns två typer av egenskapsfält: enkla fält¹ där ett enda värde är godkänt för egenskapen och oà¹ flervalsfält där egenskapen är kopplad till ett samlingselement som kan innehålla flera värden.
+  Det finns två typer av egenskapsfält: enkla oà<sup>1</sup>-fält där ett enda värde är godkänt för egenskapen och i <sup>1</sup> flervalsfält där egenskapen är länkad till ett samlingselement som kan innehålla flera värden.
 
   När en egenskap definieras i ett schema måste schemat ha en huvudnyckel baserad på ett enskilt fält (sammansatta nycklar tillåts inte).
 

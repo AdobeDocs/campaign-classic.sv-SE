@@ -8,9 +8,9 @@ audience: production
 content-type: reference
 topic-tags: updating-adobe-campaign
 exl-id: 4aaa6256-256a-441d-80c9-430f8e427875
-source-git-commit: fee880f4b200b322c2b2a0034f17975993c862b3
+source-git-commit: 728848eab059fc669c241346a2ff1feebd79222c
 workflow-type: tm+mt
-source-wordcount: '1136'
+source-wordcount: '1171'
 ht-degree: 1%
 
 ---
@@ -117,7 +117,7 @@ I en Linux-miljö följer du stegen nedan för att uppdatera Adobe Campaign till
 
 [Läs mer om tillgänglighet för klientkonsolen](../../installation/using/client-console-availability-for-windows.md).
 
-### Hämta uppdaterade paket {#obtain-updated-packages}
+### Installera uppdaterade paket {#obtain-updated-packages}
 
 Börja med att återställa båda de uppdaterade paketen av Adobe Campaign: anslut till [programdistributionsportalen](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html) med dina inloggningsuppgifter. Läs mer om programvarudistribution på [den här sidan](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html).
 
@@ -128,15 +128,14 @@ Filen är **nlserver6-v7-XXX.rpm**
 >Från och med v7.4.1 ingår inte längre XML-bibliotek för RPM Linux-paket i Campaign. Du måste installera dessa bibliotek.
 > 
 
-
-### Utför en uppdatering {#perform-an-update}
+Sedan kan du installera de nödvändiga paketen enligt anvisningarna nedan:
 
 * RPM-baserad distribution (RedHat, SuSe)
 
   Kör som rot för att installera dem:
 
   ```
-  $rpm -Uvh nlserver6-v7-XXXX.rpm
+  yum install ./nlserver6-v7-XXXX.rpm
   ```
 
   Där XXX är versionen av filen.
@@ -147,17 +146,20 @@ Filen är **nlserver6-v7-XXX.rpm**
   rpm --nodeps -Uvh nlserver6-v7-XXXX-0.x86_64.rpm
   ```
 
+  Observera att de flesta beroenden är obligatoriska och att `nlserver` inte kan starta om det inte finns installerat. Det enda undantaget är openjdk, du kan installera en annan JDK om det behövs.
+
+
 * DEB-baserad distribution (Debian)
 
   Kör som rot för att installera dem:
 
   ```
-  dpkg -i nlserver6-v7-XXXX-amd64_debX.deb
+  apt install ./nlserver6-v7-XXXX-amd64_debX.deb
   ```
 
 >[!NOTE]
 >
->Fullständiga installationsprocedurer beskrivs i [det här avsnittet](../../installation/using/installing-campaign-standard-packages.md). Resurserna synkroniseras automatiskt, men du måste se till att inga fel inträffar. Mer information finns i [Lös uppgraderingskonflikter](#resolving-upgrade-conflicts).
+>Fullständiga installationsprocedurer beskrivs i [det här avsnittet](../../installation/using/installing-packages-with-linux.md). Resurserna synkroniseras automatiskt, men du måste se till att inga fel inträffar. Mer information finns i [Lös uppgraderingskonflikter](#resolving-upgrade-conflicts).
 
 ### Starta om webbservern {#reboot-the-web-server}
 
