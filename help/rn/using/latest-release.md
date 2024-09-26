@@ -6,10 +6,10 @@ feature: Release Notes
 role: User
 level: Beginner
 exl-id: d65869ca-a785-4327-8e8d-791c28e4696c
-source-git-commit: 4be5bf54362240aac1b77298b08b14d3e5542f52
+source-git-commit: 9526d466dc4613410905d9d7265c6471cd1df599
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '387'
+ht-degree: 93%
 
 ---
 
@@ -49,7 +49,7 @@ _18 juni 2024_
 
 ### Andra ändringar {#release-7-4-1-other}
 
-Från och med v7.4.1 ingår inte längre XML-bibliotek för RPM Linux-paket i Campaign. Administratören måste installera dessa bibliotek som en lokal eller blandad kund.
+Från och med v7.4.1 ingår inte längre XML-bibliotek för RPM Linux-paket i Campaign. Administratören måste installera dessa bibliotek som en lokal eller blandad kund. [Läs mer](../../installation/using/installing-packages-with-linux.md)
 
 ### Korrigeringar {#release-7-4-1-patches}
 

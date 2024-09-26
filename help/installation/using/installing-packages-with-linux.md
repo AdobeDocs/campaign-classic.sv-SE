@@ -8,14 +8,14 @@ audience: installation
 content-type: reference
 topic-tags: installing-campaign-in-linux-
 exl-id: f41c7510-5ad7-44f3-9485-01f54994b6cb
-source-git-commit: b4ab1fe5e98211c2b1bcdb319f10777c032831c7
+source-git-commit: 9526d466dc4613410905d9d7265c6471cd1df599
 workflow-type: tm+mt
-source-wordcount: '1078'
+source-wordcount: '1065'
 ht-degree: 0%
 
 ---
 
-# Installera paket med Linux{#installing-packages-with-linux}
+# Installera paket med Linux {#installing-packages-with-linux}
 
 Adobe Campaign levereras med paketet **nlserver** som innehåller binärfiler och konfigurationsfiler för en viss version.
 
@@ -60,6 +60,8 @@ Så här installerar du Adobe Campaign på ett RPM-operativsystem (RHEL, CentOS)
    rpm --nodeps -Uvh nlserver6-v7-XXXX-0.x86_64.rpm
    ```
 
+Observera att de flesta av de angivna beroendena är obligatoriska och att `nlserver` inte kan starta om de inte är installerade (undantaget är öppet, en annan JDK kan installeras).
+
 Kommandot `bc`, som är obligatoriskt för att köra [netreport](../../production/using/monitoring-processes.md#automatic-monitoring-via-adobe-campaign-scripts), är inte tillgängligt som standard för alla Linux-distributioner. Kör kommandot `which bc` om du vill kontrollera om kommandot är tillgängligt. Annars måste du installera det.
 
 Med CentOS måste du installera paketet bc.x86_64: anslut som **root** och köra följande kommando:
@@ -81,32 +83,9 @@ Så här installerar du Adobe Campaign på ett 64-bitars Debian-operativsystem:
 1. Installera den genom att ansluta som **root** och köra följande kommando, där **XXXX** är Adobe Campaign build-nummer:
 
    ```
-   dpkg -i nlserver6-v7-XXXX-linux-2.6-amd64.deb
+   apt install ./nlserver6-v7-XXXX-linux-2.6-amd64.deb
    ```
 
-   Om det saknas beroenden kör du följande kommando:
-
-   ```
-   apt-get install -f
-   ```
-
-
-1. När du installerar Adobe Campaign på ett Debian-operativsystem bör du tänka på följande:
-
-* OpenSSL måste vara installerat i förväg.
-* Installera libicu och libc-aresYY, där XX är versionen, med följande kommandon:
-
-  ```
-  apt install libicuXX
-  ```
-
-  ```
-  apt install libc-aresXX
-  ```
-
-  ```
-  apt install openjdk-XX-jdk
-  ```
 
 ## Anpassa parametrar {#personalizing-parameters}
 
