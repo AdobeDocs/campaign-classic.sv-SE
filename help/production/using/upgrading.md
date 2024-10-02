@@ -8,10 +8,10 @@ audience: production
 content-type: reference
 topic-tags: updating-adobe-campaign
 exl-id: 4aaa6256-256a-441d-80c9-430f8e427875
-source-git-commit: 728848eab059fc669c241346a2ff1feebd79222c
+source-git-commit: 349c3dfd936527e50d7d3e03aa3408b395502da0
 workflow-type: tm+mt
-source-wordcount: '1171'
-ht-degree: 1%
+source-wordcount: '1247'
+ht-degree: 2%
 
 ---
 
@@ -148,6 +148,29 @@ Sedan kan du installera de nödvändiga paketen enligt anvisningarna nedan:
 
   Observera att de flesta beroenden är obligatoriska och att `nlserver` inte kan starta om det inte finns installerat. Det enda undantaget är openjdk, du kan installera en annan JDK om det behövs.
 
+  Om paketet `epel-release` inte är installerat installerar du det. Ange följande kommando som rot om du vill utföra detta:
+
+  ```
+  yum install epel-release
+  ```
+
+  Kör som rot för att installera Campaign-paketet:
+
+  ```
+  yum update ./nlserver6-v7-XXXX.rpm
+  ```
+
+  Kontrollera att utdata ser ut så här innan du bekräftar uppdateringen:
+
+  ```
+  ==================================================================================================== 
+  Package                         Architecture  Version                    Repository           Size 
+  ==================================================================================================== 
+  Upgrading: 
+  nlserver6-v7                    x86_64        XXXX.0.0-1                 @commandline         63 M
+  ```
+
+  Om du läser `Removing:` i stället för `Upgrading:` avbryter du kommandot. Det finns antagligen några fel (som anges ovan) som förklarar borttagningen. I så fall rättar du till felen genom att uppdatera/installera de saknade beroendena i listan och försöker sedan köra kommandot igen.
 
 * DEB-baserad distribution (Debian)
 
@@ -160,6 +183,7 @@ Sedan kan du installera de nödvändiga paketen enligt anvisningarna nedan:
 >[!NOTE]
 >
 >Fullständiga installationsprocedurer beskrivs i [det här avsnittet](../../installation/using/installing-packages-with-linux.md). Resurserna synkroniseras automatiskt, men du måste se till att inga fel inträffar. Mer information finns i [Lös uppgraderingskonflikter](#resolving-upgrade-conflicts).
+>
 
 ### Starta om webbservern {#reboot-the-web-server}
 
@@ -195,12 +219,12 @@ Det finns två sätt att visa synkroniseringsresultatet:
 * I kommandoradsgränssnittet materialiseras fel av en trippelkniv **>>>** och synkroniseringen stoppas automatiskt. Varningar materialiseras av en dubbel skiftning **>>** och måste matchas när synkroniseringen är klar. När uppgraderingen är klar visas en sammanfattning i kommandotolken. Den kan se ut så här:
 
   ```
-  2013-04-09 07:48:39.749Z 00002E7A 1 info log =========Summary of the update==========
-  2013-04-09 07:48:39.749Z 00002E7A 1 info log <instance name> instance, 6 warning(s) and 0 error(s) during the update.
-  2013-04-09 07:48:39.749Z 00002E7A 1 warning log The document with identifier 'mobileAppDeliveryFeedback' and type 'xtk:report' is in conflict with the new version.
-  2013-04-09 07:48:39.749Z 00002E7A 1 warning log The document with identifier 'opensByUserAgent' and type 'xtk:report' is in conflict with the new version.
-  2013-04-09 07:48:39.750Z 00002E7A 1 warning log The document with identifier 'deliveryValidation' and type 'nms:webApp' is in conflict with the new version.
-  2013-04-09 07:48:39.750Z 00002E7A 1 warning log Document of identifier 'nms:includeView' and type 'xtk:srcSchema' updated in the database and found in the file system. You will have to merge the two versions manually.
+  AAAA-MM-DD HH:MM:SS.749Z 00002E7A 1 info log =========Summary of the update==========
+  AAAA-MM-DD HH:MM:SS.749Z 00002E7A 1 info log <instance name> instance, 6 warning(s) and 0 error(s) during the update.
+  AAAA-MM-DD HH:MM:SS.749Z 00002E7A 1 warning log The document with identifier 'mobileAppDeliveryFeedback' and type 'xtk:report' is in conflict with the new version.
+  AAAA-MM-DD HH:MM:SS.749Z 00002E7A 1 warning log The document with identifier 'opensByUserAgent' and type 'xtk:report' is in conflict with the new version.
+  AAAA-MM-DD HH:MM:SS.750Z 00002E7A 1 warning log The document with identifier 'deliveryValidation' and type 'nms:webApp' is in conflict with the new version.
+  AAAA-MM-DD HH:MM:SS.750Z 00002E7A 1 warning log Document of identifier 'nms:includeView' and type 'xtk:srcSchema' updated in the database and found in the file system. You will have to merge the two versions manually.
   ```
 
   Om varningen gäller en resurskonflikt måste användaren åtgärda den.
@@ -260,7 +284,7 @@ Nästa gång klientkonsolerna är anslutna visas ett fönster som informerar anv
 Hämta paketet **setup-client-6.XXXX.exe** på den dator där Adobe Campaign-programservern (**nlserver web**) är installerad och kopiera det. Spara det som **/usr/local/neolane/nl6/datakit/nl/eng/jsp**:
 
 ```
- cp setup-client-6.XXXX.exe /usr/local/neolane/nl6/datakit/nl/eng/jsp
+cp setup-client-6.XXXX.exe /usr/local/neolane/nl6/datakit/nl/eng/jsp
 ```
 
 Nästa gång klientkonsolerna är anslutna visas ett fönster som informerar användarna om tillgängligheten till en uppdatering och ger dem möjlighet att ladda ned och installera den.
