@@ -4,7 +4,7 @@ title: Fråga mottagartabellen
 description: Lär dig ställa frågor i mottagartabellen
 feature: Query Editor, Workflows
 exl-id: 5b037798-b092-4c98-9f6a-4af7fc7941c6
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: d6bed05e083b2e349db331e6016cbb8f91f00eaf
 workflow-type: tm+mt
 source-wordcount: '392'
 ht-degree: 3%
@@ -83,6 +83,6 @@ Så här skapar du det här exemplet:
 
    ![](assets/query_editor_nveau_13.png)
 
-   Fliken **[!UICONTROL Generated QSL queries]** visar frågeresultatet i SQL-format.
+   Fliken **[!UICONTROL Generated SQL queries]** visar frågeresultatet i SQL-format.
 
    ![](assets/query_editor_nveau_14.png)
