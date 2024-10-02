@@ -8,7 +8,7 @@ audience: production
 content-type: reference
 topic-tags: updating-adobe-campaign
 exl-id: 4aaa6256-256a-441d-80c9-430f8e427875
-source-git-commit: 349c3dfd936527e50d7d3e03aa3408b395502da0
+source-git-commit: cc614ed608f1e8229c0ef1ccf35dbac6cb9dddd3
 workflow-type: tm+mt
 source-wordcount: '1247'
 ht-degree: 2%
@@ -170,7 +170,9 @@ Sedan kan du installera de nödvändiga paketen enligt anvisningarna nedan:
   nlserver6-v7                    x86_64        XXXX.0.0-1                 @commandline         63 M
   ```
 
-  Om du läser `Removing:` i stället för `Upgrading:` avbryter du kommandot. Det finns antagligen några fel (som anges ovan) som förklarar borttagningen. I så fall rättar du till felen genom att uppdatera/installera de saknade beroendena i listan och försöker sedan köra kommandot igen.
+  >[!IMPORTANT]
+  >
+  >Om du läser `Removing:` i stället för `Upgrading:` avbryter du kommandot. Det finns antagligen några fel (som anges ovan) som förklarar borttagningen. I så fall rättar du till felen genom att uppdatera/installera de saknade beroendena i listan och försöker sedan köra kommandot igen.
 
 * DEB-baserad distribution (Debian)
 
