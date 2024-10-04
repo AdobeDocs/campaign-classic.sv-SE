@@ -6,14 +6,14 @@ feature: Release Notes
 role: User
 level: Beginner
 exl-id: 7a05fdff-8f9d-4e8d-812e-0f1509db5499
-source-git-commit: 728848eab059fc669c241346a2ff1feebd79222c
-workflow-type: ht
+source-git-commit: 7b71cac6f4c2fc2e8d30683130adb27eff757b73
+workflow-type: tm+mt
 source-wordcount: '903'
 ht-degree: 100%
 
 ---
 
-# Versionsuppdateringar{#rn-overview}
+# Versionsuppdateringar {#rn-overview}
 
 Adobe Campaign Classic släpper regelbundet produktuppdateringar som innehåller nya funktioner, felkorrigeringar och förbättrar prestanda, säkerhet och användbarhet. Dessa uppdateringar släpps som **produktversioner**. Detaljerad information om varje ny version finns i [Versionsinformationen](latest-release.md).
 
@@ -34,10 +34,9 @@ Aligned with this naming, Campaign has 3 types of upgrades:
 1. Patch Upgrades - A patch upgrade includes fixes only (ex: 8.5.1 to 8.5.2)
 -->
 
-## Versionsstatusar{#rn-statuses}
+## Versionsstatusar {#rn-statuses}
 
 Varje ny version har en status som identifieras av en färg i [Versionsinformationen](latest-release.md).
-
 
 | Status | Beskrivning |
 |---|---|
@@ -45,7 +44,7 @@ Varje ny version har en status som identifieras av en färg i [Versionsinformati
 | [!BADGE Begränsad tillgänglighet]{type=Informative} | Endast distribution på begäran. |
 | [!BADGE Inaktuell]{type=negative} | Ingen distribution. Ingen felkorrigering. Befintliga implementeringar måste uppgraderas. |
 
-## Versionscykel{#rn-cycle}
+## Versionscykel {#rn-cycle}
 
 Adobe Campaign uppdateras regelbundet. Denna regelbundna uppdateringsfrekvens syftar till att ge dig den senaste och bästa produkten, hålla din miljö säker och förbättra din upplevelse med produkten.
 
@@ -53,7 +52,7 @@ Därför anser vi att det är viktigt att du **kör den senaste stabila versione
 
 Som en värdbaserad kund har du automatiskt tillgång till uppgraderingen med den senaste stabila versionen utan någon åtgärd. Läs mer i [avsnittet Årlig uppgradering](#yearly-upgrade). Om du migrerar från en gammal version rekommenderar Adobe att du uppgraderar till den här versionen först.
 
-## Rekommendationer{#recommendations}
+## Rekommendationer {#rn-recommendations}
 
 För att säkerställa en stabil konfiguration rekommenderar Adobe att du installerar **samma build** på alla servrar som körs på samma klientkonfiguration.
 
