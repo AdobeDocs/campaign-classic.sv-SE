@@ -8,9 +8,9 @@ audience: production
 content-type: reference
 topic-tags: updating-adobe-campaign
 exl-id: 4aaa6256-256a-441d-80c9-430f8e427875
-source-git-commit: cc614ed608f1e8229c0ef1ccf35dbac6cb9dddd3
+source-git-commit: e5468f2aa5dc18c2b24c3e80e416e423ad0e13c9
 workflow-type: tm+mt
-source-wordcount: '1247'
+source-wordcount: '1233'
 ht-degree: 2%
 
 ---
@@ -132,22 +132,6 @@ Sedan kan du installera de nödvändiga paketen enligt anvisningarna nedan:
 
 * RPM-baserad distribution (RedHat, SuSe)
 
-  Kör som rot för att installera dem:
-
-  ```
-  yum install ./nlserver6-v7-XXXX.rpm
-  ```
-
-  Där XXX är versionen av filen.
-
-  RPM-filen är beroende av paket som du kan hitta på CentOS/Red Hat-distributioner. Om du inte vill använda vissa av dessa beroenden kan du behöva använda alternativet &quot;nodeps&quot; för rpm:
-
-  ```
-  rpm --nodeps -Uvh nlserver6-v7-XXXX-0.x86_64.rpm
-  ```
-
-  Observera att de flesta beroenden är obligatoriska och att `nlserver` inte kan starta om det inte finns installerat. Det enda undantaget är openjdk, du kan installera en annan JDK om det behövs.
-
   Om paketet `epel-release` inte är installerat installerar du det. Ange följande kommando som rot om du vill utföra detta:
 
   ```
@@ -173,6 +157,14 @@ Sedan kan du installera de nödvändiga paketen enligt anvisningarna nedan:
   >[!IMPORTANT]
   >
   >Om du läser `Removing:` i stället för `Upgrading:` avbryter du kommandot. Det finns antagligen några fel (som anges ovan) som förklarar borttagningen. I så fall rättar du till felen genom att uppdatera/installera de saknade beroendena i listan och försöker sedan köra kommandot igen.
+
+  RPM-filen är beroende av paket som du kan hitta på CentOS/Red Hat-distributioner. Om du inte vill använda vissa av dessa beroenden kan du behöva använda alternativet &quot;nodeps&quot; för rpm:
+
+  ```
+  rpm --nodeps -Uvh nlserver6-v7-XXXX-0.x86_64.rpm
+  ```
+
+  Observera att de flesta beroenden är obligatoriska och att `nlserver` inte kan starta om det inte finns installerat. Det enda undantaget är openjdk, du kan installera en annan JDK om det behövs.
 
 * DEB-baserad distribution (Debian)
 
