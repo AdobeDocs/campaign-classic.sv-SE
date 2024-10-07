@@ -1,20 +1,18 @@
 ---
 product: campaign
-title: Kom igång med beskrivande analys
-description: Kom igång med beskrivande analys
+title: Vad är beskrivande analys?
+description: Analysera populationer med beskrivande analysrapporter
 feature: Reporting, Monitoring
 badge-v8: label="Gäller även för v8" type="Positive" tooltip="Gäller även Campaign v8"
 exl-id: 19920058-e8e8-4e17-9cc3-24ddf9f96d04
-source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
+source-git-commit: 5e062f9dbdf6c148e442ac10dbb12cf72ba0179b
 workflow-type: tm+mt
-source-wordcount: '210'
+source-wordcount: '209'
 ht-degree: 0%
 
 ---
 
-# Kom igång med beskrivande analys{#about-descriptive-analysis}
-
-
+# Vad är beskrivande analys? {#about-descriptive-analysis}
 
 För att kunna producera statistik över data i databasen kan du skapa beskrivande analysrapporter med hjälp av den dedikerade assistenten och anpassa deras innehåll och presentation efter dina behov.
 

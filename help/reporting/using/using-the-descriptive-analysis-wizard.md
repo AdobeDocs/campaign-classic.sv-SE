@@ -1,20 +1,18 @@
 ---
 product: campaign
-title: Använd den beskrivande analysassistenten
-description: Använd den beskrivande analysassistenten
+title: Skapa din första beskrivande analysrapport
+description: Lär dig använda assistenten för att skapa din första beskrivande analysrapport
 badge-v8: label="Gäller även för v8" type="Positive" tooltip="Gäller även Campaign v8"
 feature: Reporting, Monitoring
 exl-id: 848d67c7-d1dc-4eba-bcb8-672e76d8ce87
-source-git-commit: f90df5a5e5b3a2317d86ff2919560ded38f44f44
+source-git-commit: 5e062f9dbdf6c148e442ac10dbb12cf72ba0179b
 workflow-type: tm+mt
-source-wordcount: '1570'
+source-wordcount: '1580'
 ht-degree: 0%
 
 ---
 
-# Använd den beskrivande analysassistenten{#using-the-descriptive-analysis-wizard}
-
-
+# Skapa din första beskrivande analysrapport {#using-the-descriptive-analysis-wizard}
 
 Använd den dedikerade assistenten för att skapa en beskrivande analysrapport. Konfigurationen beror på vilka data som ska analyseras och på önskad återgivning.
 
