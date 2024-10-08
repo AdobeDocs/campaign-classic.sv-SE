@@ -6,9 +6,9 @@ badge-v8: label="Gäller även för v8" type="Positive" tooltip="Gäller även C
 feature: Email, Push
 role: User, Data Engineer
 exl-id: b8642df3-1960-4f2c-8273-c3988a3e85f0
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: 287d1bf60b39e9e2b389701097995dbea962dec9
 workflow-type: tm+mt
-source-wordcount: '445'
+source-wordcount: '448'
 ht-degree: 3%
 
 ---
@@ -17,7 +17,8 @@ ht-degree: 3%
 
 Uttryckslistan som visas i popup-fönstret styrs av en uppräkning som gör att du kan visa värden i en lista för att begränsa vilka val användaren har för ett visst fält.
 Ordningen på uttryckslistan kan anpassas. Du kan också lägga till andra uttryckssymboler i listan.
-Det finns uttryckssymboler tillgängliga för e-post och om du vill ha mer information hänvisar du till den här [sidan](defining-the-email-content.md#inserting-emoticons).
+
+Observera att uttryckssymboler endast är tillgängliga för e-post och push-meddelanden. Mer information finns på [sidan](defining-the-email-content.md#inserting-emoticons).
 
 ## Lägga till en ny uttryckssymbol {#add-new-emoticon}
 
