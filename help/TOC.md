@@ -7,9 +7,9 @@ user-guide-description: Produktdokumentation för Adobe Campaign Classic v7.
 sub-product: adobe campaign classic
 type: Documentation
 source-git-commit: 5e062f9dbdf6c148e442ac10dbb12cf72ba0179b
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2560'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -293,7 +293,7 @@ ht-degree: 99%
       + [Indikatorberäkning](reporting/using/indicator-calculation.md)
       + [Person/personer och mottagare](reporting/using/person-people-recipients.md)
    + Analysera populationer {#analyzing-populations}
-      + [Vad är beskrivande analys?](reporting/using/about-descriptive-analysis.md)
+      + [Vad är beskrivande analys](reporting/using/about-descriptive-analysis.md)
       + [Skapa din första beskrivande analysrapport](reporting/using/using-the-descriptive-analysis-wizard.md)
       + [Hantera och konfigurera analysrapporten](reporting/using/processing-a-report.md)
       + [Användningsexempel för analysrapportering](reporting/using/use-cases.md)
