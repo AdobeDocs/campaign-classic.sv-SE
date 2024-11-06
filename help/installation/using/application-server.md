@@ -8,9 +8,9 @@ audience: installation
 content-type: reference
 topic-tags: prerequisites-and-recommendations-
 exl-id: 87103c31-1530-4f8d-ab3a-6ff73093b80c
-source-git-commit: 7906e9fee164d731659bbb9f96394faca5961240
+source-git-commit: 387bcf39c13cc1f9544433b9441769f4b16b52ca
 workflow-type: tm+mt
-source-wordcount: '635'
+source-wordcount: '649'
 ht-degree: 1%
 
 ---
@@ -34,7 +34,7 @@ Versionerna som stöds beskrivs i Campaign [Kompatibilitetsmatrisen](../../rn/us
 
 >[!AVAILABILITY]
 >
->* Från och med v7.4.1 kräver Campaign minst Java JDK 11. Om Campaign-servern är installerad i en Windows-miljö måste du generera en JRE eftersom den inte längre tillhandahålls som standard. Miljövariabeln JRE_HOME krävs för att hitta DLL-filen för Java-miljön (jvm.dll).
+>* Från och med v7.4.1 kräver Campaign minst **Java JDK 11**. Om Campaign-servern är installerad i en Windows-miljö identifieras inte längre JRE (Java Runtime) automatiskt. Miljövariabeln JRE_HOME måste anges till den mapp där Campaign kan hitta filen `bin/server/jvm.dll`. Om till exempel JDK 11 är installerad under mappen `C:\Program Files\Java\jdk-11` måste JRE_HOME vara `C:\Program Files\Java\jdk-11`.
 >
 >* Från och med version 7.4.1 är Tomcat 10.1 standardversionen.
 >
