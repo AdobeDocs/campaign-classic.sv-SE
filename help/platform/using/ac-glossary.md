@@ -6,10 +6,10 @@ feature: Overview
 role: User, Data Architect
 level: Beginner
 exl-id: 81f207a0-bb72-450b-abe4-0b229b6b1f3a
-source-git-commit: de9ff0b50d819038c97e8515ddb7d6cfeb4547a1
+source-git-commit: f469689f9e8a4d805fb95a1ae120ccd35aba3731
 workflow-type: tm+mt
-source-wordcount: '5959'
-ht-degree: 1%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -93,7 +93,7 @@ Learn more about [Campaigns](../../campaign/using/designing-marketing-campaigns.
 
 *Kontext: Kampanjinteraktion*
 
-I gruppläget när det gäller Campaign Interaction kan erbjudandemotorn välja det eller de bästa erbjudandena för en uppsättning kontakter. Reglerna för behörighet/prioritering tillämpas på alla kontakter i uppsättningen.
+I gruppläget när det gäller Campaign Interaction kan erbjudandemotorn välja det eller de bästa erbjudandena för en uppsättning kontakter. Regler för behörighet/prioritering tillämpas på alla kontakter i uppsättningen.
 
 Läs mer om [Interaktion](../../interaction/using/interaction-and-offer-management.md).
 +++
@@ -188,7 +188,7 @@ Läs mer om [Databasrensningsarbetsflöde](../../production/using/database-clean
 
 *Context: Transactional Messaging*
 
-Dedicated execution server(s) to leverage Transactional Messaging. A server can typically process up to 50,000 Engine Calls per hour. The “Per-Dedicated Server” designation does not necessarily have a 1:1 correlation with a physical server as Adobe may utilize virtualization technologies to achieve the equivalent effect.
+Dedicated execution server(s) to leverage Transactional Messaging. A server can typically process up to 50,000 Engine Calls per hour. The "Per-Dedicated Server" designation does not necessarily have a 1:1 correlation with a physical server as Adobe may utilize virtualization technologies to achieve the equivalent effect.
 
 Learn more about [Transactional Messaging](../../message-center/using/about-transactional-messaging.md).
 +++
@@ -198,7 +198,7 @@ Learn more about [Transactional Messaging](../../message-center/using/about-tran
 
 *Kontext: E-postleverans*
 
-Leveransmöjligheterna gör att ni kan mäta framgången för era kampanjer som når era mottagares inkorg utan att studsa, eller markeras som skräppost. Mer exakt är att e-postleverans avser den uppsättning egenskaper som avgör hur ett meddelande kan nå sin destination, via en personlig e-postadress, inom en kort tid och med den förväntade kvaliteten i fråga om innehåll och format.
+Leveransmöjligheterna gör att ni kan mäta framgången för era kampanjer som når mottagarnas inkorgar utan att studsa, eller markeras som skräppost. Mer exakt är att e-postleverans avser den uppsättning egenskaper som avgör hur ett meddelande kan nå sin destination, via en personlig e-postadress, inom en kort tid och med den förväntade kvaliteten i fråga om innehåll och format.
 
 Läs mer om [Leverans](../../delivery/using/about-deliverability.md).
 +++
@@ -240,7 +240,7 @@ Learn more about [Deliverability](../../delivery/using/about-deliverability.md).
 
 *Kontext: Direktreklam*
 
-En leveransöversikt är en strukturerad uppsättning element (dokument, butiker, kampanjkuponger osv.) som skapats av företaget och för en viss kampanj. Det används i samband med direktreklam.
+En leveransöversikt är en strukturerad uppsättning element (dokument, butiker, kampanjkuponger osv.) som har skapats av företaget och för en viss kampanj. Det används i samband med direktreklam.
 
 Läs mer om [Direktreklam](../../delivery/using/about-direct-mail-channel.md).
 +++
@@ -263,7 +263,7 @@ Läs mer om [Beskrivande analys](../../reporting/using/about-descriptive-analysi
 
 *Kontext: Distribuerad marknadsföring*
 
-Tillägget Distributed Marketing ger kampanjansvariga en gemensam arbetsyta för att implementera kampanjer mellan centrala enheter (huvudkontor, marknadsföringsavdelningar osv.) och lokala enheter (säljställen, regionala organ osv.). Samarbetet baseras på en delad arbetsyta som kallas **listan över kampanjpaket**, där centralt skapade kampanjmallar och instanser erbjuds lokala entiteter.
+Tillägget Distributed Marketing ger kampanjansvariga en gemensam arbetsyta för att implementera kampanjer mellan centrala enheter (huvudkontor, marknadsföringsavdelningar osv.) och lokala enheter (säljställen, regionala byråer osv.). Samarbetet baseras på en delad arbetsyta som kallas **listan över kampanjpaket**, där centralt skapade kampanjmallar och instanser erbjuds lokala entiteter.
 
 Läs mer om [Distribuerad marknadsföring](../../distributed/using/about-distributed-marketing.md)
 +++
@@ -447,7 +447,7 @@ Läs mer om [Hybrid-distribution](../../installation/using/hosting-models.md#hyb
 
 *Kontext: Kampanjinteraktion*
 
-Identifieringsläget Avser en kontakts status. Den kan vara explicit, implicit eller anonym.
+Identifieringsläget hänvisar till en kontakts status. Den kan vara explicit, implicit eller anonym.
 
 * **explicit**: Kontakten identifieras efter inloggning i kanalgränssnittet.
 * **implicit**: Kontakten har identifierats av en cookie (permanent eller session). Den kan behandlas som en anonym eller identifierad kontakt.
@@ -460,7 +460,7 @@ Läs mer om [Interaktion](../../interaction/using/interaction-and-offer-manageme
 ----NOT USEFUL HERE?----
 +++**Image serving**
 
-The functionality that supplies the images embedded in emails to the delivery’s recipients. The insertion of the images based on an emails system’s “download images” functionality is what generates an “open” entry in Campaign’s tracking logs.
+The functionality that supplies the images embedded in emails to the delivery's recipients. The insertion of the images based on an emails system's "download images" functionality is what generates an "open" entry in Campaign's tracking logs.
 
 Learn more about [Image serving](../../delivery/using/defining-the-email-content.md#adding-images).
 +++
@@ -506,7 +506,7 @@ Läs mer om [Listor](../../platform/using/creating-and-managing-lists.md).
 
 +++**Lokalt cacheminne**
 
-Den lokala cachen är den information som lagras lokalt på operatörens dator. Cachelagrad information används av konsolen för att minska trafiken till servern och förbättra prestandan. Regelbunden rensning av det lokala cacheminnet (på Arkiv-menyn) uppdaterar den lagrade informationen och förbättrar prestanda och stabilitet.
+Den lokala cachen är den information som lagras lokalt på operatorns dator. Cachelagrad information används av konsolen för att minska trafiken till servern och förbättra prestandan. Regelbunden rensning av det lokala cacheminnet (på Arkiv-menyn) uppdaterar den lagrade informationen och förbättrar prestanda och stabilitet.
 
 Läs mer om [Lokal cache](../../platform/using/faq-campaign-config.md#perform-soft-cache-clear).
 +++
@@ -539,7 +539,7 @@ Läs mer om [Namngivna rättigheter](../../platform/using/access-management-name
 
 +++**Namnområde**
 
-Namnutrymmet är en partition som skiljer kunddatatyper från Adobe Campaign interna datatyper i datamodellen. Används även för att underlätta migreringen av definitioner från en instans till en annan, till exempel för att flytta ett schema eller en mall från Development-instansen till Production-instansen.
+Namnutrymmet är en partition som avgränsar kunddatatyper från Adobe Campaign systemspecifika datatyper i datamodellen. Används även för att underlätta migreringen av definitioner från en instans till en annan, till exempel för att flytta ett schema eller en mall från Development-instansen till Production-instansen.
 
 Läs mer om [Namespace](../../configuration/using/about-schema-reference.md#identification-of-a-schema).
 +++
@@ -676,7 +676,7 @@ Läs mer om [Interaktion](../../interaction/using/interaction-and-offer-manageme
 
 *Kontext: Kampanjinteraktion*
 
-Med hjälp av en erbjudandesimulering kan operatörerna testa distributionen i ett definierat scope (leveransdatum, målsegment, antal erbjudanden, tema osv.) innan erbjudandena faktiskt skickas. Det kan användas för att justera prioriteter och regler för erbjudanden för att maximera erbjudandets effektivitet.
+Med en erbjudandesimulering kan operatörerna testa distributionen i ett definierat omfång (leveransdatum, målsegment, antal erbjudanden, tema osv.) innan de faktiskt skickar erbjudandena. Det kan användas för att justera prioriteter och regler för erbjudanden för att maximera erbjudandets effektivitet.
 
 Läs mer om [Erbjudandesimuleringar](../../interaction/using/about-offers-simulation.md).
 +++
@@ -845,7 +845,7 @@ Läs mer om [Push](../../delivery/using/about-mobile-app-channel.md).
 
 +++**Mottagare**
 
-I Adobe Campaign är mottagare standardprofiler för att skicka leveranser (e-post, SMS etc.) till era kunder. Med mottagardata som lagras i databasen kan du filtrera målet och lägga till personaliseringsdata. Vanligtvis är det personuppgifter, kontaktinformation, demografisk information och transaktionsinformation, men det kan vara vilken typ av information som helst som stöder marknadsföring och analys.
+I Adobe Campaign är mottagare standardprofiler för att skicka leveranser (e-post, SMS, osv.) till dina kunder. Med mottagardata som lagras i databasen kan du filtrera målet och lägga till personaliseringsdata. Vanligtvis är det personuppgifter, kontaktinformation, demografisk information och transaktionsinformation, men det kan vara vilken typ av information som helst som stöder marknadsföring och analys.
 
 Läs mer om [Mottagare](../../configuration/using/about-data-model.md).
 +++
@@ -939,7 +939,7 @@ Läs mer om [Måldata](../../workflow/using/data-life-cycle.md#target-data).
 
 Målmappning är mappningen av leveranskanaler till en viss datatyp. Målmappningar definierar hur olika leveranskanaler länkar till datafälten i ett schema. Det definierar hur Campaign skickar till den datatypen med hjälp av ett specifikt fält eller uttryck.
 
-Läs mer om [Målmappning](../../delivery/using/selecting-a-target-mapping.md).
+Läs mer om [Målmappning](../../delivery/using/steps-defining-the-target-population.md#select-a-target-mapping).
 +++
 
 +++**Målaktiviteter**
@@ -984,7 +984,7 @@ En mall är ett designelement som används för att skapa ett objekt. Den inneh�
 -----ACS -> SEEDS IN ACC-----
 +++**Test profiles**
 
-Allows targeting of additional recipients who do not match the defined targeting criteria. They are added to a message’s audience to detect any fraudulent use of your recipient database or to ensure delivery. Seen as the Seed type in the Campaign interface.
+Allows targeting of additional recipients who do not match the defined targeting criteria. They are added to a message's audience to detect any fraudulent use of your recipient database or to ensure delivery. Seen as the Seed type in the Campaign interface.
 
 Learn more about [Test profiles](../../workflow/using/about-workflows.md).
 +++

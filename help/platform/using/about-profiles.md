@@ -6,10 +6,10 @@ feature: Profiles, Audiences
 role: User, Data Architect
 level: Beginner
 exl-id: 54f1ad6c-54b0-4448-8c38-806dd75c1dae
-source-git-commit: aa78a51ebea49f98ef7edad7e87a99a680f02b69
+source-git-commit: f469689f9e8a4d805fb95a1ae120ccd35aba3731
 workflow-type: tm+mt
-source-wordcount: '896'
-ht-degree: 14%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -119,4 +119,4 @@ Ytterligare Campaign Classic om instruktionsvideor finns [här](https://experien
 
 * [Skapa frågor och segmentdata i arbetsflöden](../../workflow/using/targeting-data.md)
 
-* [Välj målmappning](../../delivery/using/selecting-a-target-mapping.md)
+* [Välj målmappning](../../delivery/using/steps-defining-the-target-population.md#select-a-target-mapping)

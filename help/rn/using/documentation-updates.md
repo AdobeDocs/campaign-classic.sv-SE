@@ -6,10 +6,10 @@ feature: Release Notes
 role: User
 level: Beginner
 exl-id: 07c1f4a3-cf16-4a9b-b402-e13258799f91
-source-git-commit: 3f6bbf2766a61580c4f232d3919fe955d82a7881
-workflow-type: ht
-source-wordcount: '3782'
-ht-degree: 100%
+source-git-commit: f469689f9e8a4d805fb95a1ae120ccd35aba3731
+workflow-type: tm+mt
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -398,7 +398,7 @@ Instruktionsvideor finns nu tillgängliga för följande ämnen:
 
 * [Så skapar du ett flerspråkigt nyhetsbrev med villkorligt innehåll](../../delivery/using/conditional-content.md)
 
-* [Så konfigurerar och driftsätter du en leveransmall](../../delivery/using/creating-a-delivery-template.md)
+* [Så konfigurerar och driftsätter du en leveransmall](../../delivery/using/about-templates.md)
 
 * [Så aktiverar och använder du AMP för e-postmeddelanden](../../delivery/using/defining-interactive-content.md)
 

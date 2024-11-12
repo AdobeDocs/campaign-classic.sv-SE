@@ -7,9 +7,9 @@ feature: Delivery Templates
 hide: true
 hidefromtoc: true
 exl-id: a5da3f29-5eab-428c-b7c3-d9e4243fe628
-source-git-commit: aa78a51ebea49f98ef7edad7e87a99a680f02b69
+source-git-commit: f469689f9e8a4d805fb95a1ae120ccd35aba3731
 workflow-type: tm+mt
-source-wordcount: '590'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -20,11 +20,11 @@ ht-degree: 0%
 
 Leveransmallar ger ökad effektivitet genom färdiga scenarier för de flesta vanliga typer av aktiviteter. Med mallar kan marknadsförarna driftsätta nya kampanjer med minimal anpassning på kortare tid.
 
-Läs mer om leveransmallar i [det här avsnittet](creating-a-delivery-template.md).
+Läs mer om leveransmallar i [det här avsnittet](about-templates.md).
 
 ## Kom igång med leveransmallar {#gs-templates}
 
-Med en [leveransmall](creating-a-delivery-template.md) kan du definiera en uppsättning tekniska och funktionella egenskaper som passar dina behov och som kan återanvändas för framtida leveranser. Sedan kan ni spara tid och standardisera leveranser vid behov.
+Med en [leveransmall](about-templates.md) kan du definiera en uppsättning tekniska och funktionella egenskaper som passar dina behov och som kan återanvändas för framtida leveranser. Sedan kan ni spara tid och standardisera leveranser vid behov.
 
 När du hanterar flera varumärken i Adobe Campaign rekommenderar Adobe att du har en underdomän per varumärke. En bank kan till exempel ha flera underdomäner som motsvarar var och en av dess regionala myndigheter. Om en bank äger bluebank.com kan dess underdomäner vara @ny.bluebank.com, @ma.bluebank.com, @ca.bluebank.com osv. Med en leveransmall per underdomän kan ni alltid använda rätt förkonfigurerade parametrar för varje varumärke, vilket undviker fel och sparar tid.
 
@@ -44,7 +44,7 @@ När du hanterar flera varumärken i Adobe Campaign rekommenderar Adobe att du h
 
 Följ stegen nedan för att konfigurera adresser i Campaign-gränssnittet:
 
-1. Klicka på länken **[!UICONTROL From]** i [leveransmallen](creating-a-delivery-template.md). I fönstret **[!UICONTROL Email header parameters]** fyller du i följande fält:
+1. Klicka på länken **[!UICONTROL From]** i [leveransmallen](about-templates.md). I fönstret **[!UICONTROL Email header parameters]** fyller du i följande fält:
 
    ![](assets/d_best_practices_email_header.png)
 

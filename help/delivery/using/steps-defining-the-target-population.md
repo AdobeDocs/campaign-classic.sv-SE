@@ -5,10 +5,10 @@ description: Lär dig definiera målpopulationen
 feature: Audiences, Proofs
 role: User
 exl-id: d0ed7be7-3147-4cb8-9ce7-ea51602e9048
-source-git-commit: 41296a0acaee93d31874bf58287e51085c6c1261
+source-git-commit: f469689f9e8a4d805fb95a1ae120ccd35aba3731
 workflow-type: tm+mt
-source-wordcount: '1593'
-ht-degree: 2%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -34,7 +34,7 @@ Följ stegen nedan för att välja mottagare av en leverans:
 
 1. Välj målmappning i listrutan **[!UICONTROL Target mapping]**. Adobe Campaign standardmålmappning är **[!UICONTROL Recipients]**, baserat på schemat **nms:mottagare**.
 
-   Andra målmappningar är tillgängliga, och vissa kan vara relaterade till din specifika konfiguration. Mer information om målmappningar finns i [Välj en målmappning](selecting-a-target-mapping.md).
+   Andra målmappningar är tillgängliga, och vissa kan vara relaterade till din specifika konfiguration.[Läs mer](#select-a-target-mapping).
 
 1. Klicka på knappen **[!UICONTROL Add]** för att definiera begränsningsfilter.
 
@@ -93,7 +93,7 @@ Så här gör du:
 
    ![](assets/s_ncs_user_wizard_external_recipients.png)
 
-1. Som standard importeras mottagarna i databasen. Du måste välja **[!UICONTROL Target mapping]**. Mer information om målmappningar finns i [Välj en målmappning](selecting-a-target-mapping.md)
+1. Som standard importeras mottagarna i databasen. Du måste välja **[!UICONTROL Target mapping]**. [Läs mer](#select-a-target-mapping)
 
    Du kan också välja **[!UICONTROL Do not import the recipients into the database]**.
 
@@ -225,6 +225,25 @@ Se även:
 * [Välj korrekturmål](#selecting-the-proof-target)
 * [Om dirigerade adresser](about-seed-addresses.md)
 * [Användningsfall: välj dirigerade adresser enligt villkor](use-case-selecting-seed-addresses-on-criteria.md)
+
+## Välj en målmappning {#select-a-target-mapping}
+
+Som standard är leveransmallar avsedda för **[!UICONTROL Recipients]**. Målmappningen använder därför fälten i tabellen **nms:receive**. Adobe Campaign erbjuder andra målmappningar för leveranser som kan användas utifrån dina behov.
+
+![](assets/delivery_select_mapping.png)
+
+Mappningarna är följande:
+
+| Namn | Använd | Standardschema |
+|---|---|---|
+| Mottagare | Leverera till mottagare av Adobe Campaign-databasen | nms:mottagare |
+| Besökare | Leverera till besökare vars profiler har samlats in via hänskjutning (viral marknadsföring) eller via sociala nätverk (Facebook, X - tidigare Twitter), till exempel. | mns:besökare |
+| Prenumerationer | Leverera till mottagare som prenumererar på en informationstjänst som ett nyhetsbrev | nms:prenumeration |
+| Prenumerationer på besökare | Skicka till besökare som prenumererar på en informationstjänst | nms:visitorSub |
+| Tjänst | Publish till ett X-konto eller en Facebook-sida | nms:service |
+| Operatorer | Leverera till Adobe Campaign | nms:operator |
+| Extern fil | Leverera via en fil som innehåller all information som behövs för leveransen | Inget länkat schema, inget mål har angetts |
+
 
 ## Självstudievideo {#seeds-and-proofs-video}
 

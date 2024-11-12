@@ -8,10 +8,10 @@ role: User
 hide: true
 hidefromtoc: true
 exl-id: c0533148-b027-4158-9b95-8d2df769e963
-source-git-commit: aa78a51ebea49f98ef7edad7e87a99a680f02b69
+source-git-commit: f469689f9e8a4d805fb95a1ae120ccd35aba3731
 workflow-type: tm+mt
-source-wordcount: '496'
-ht-degree: 3%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -33,7 +33,7 @@ I Campaign Classic är leveransmallarna som standard avsedda för **mottagare**.
 
 Du kan till exempel leverera till besökare vars profiler har samlats in via sociala nätverk eller till besökare som prenumererar på en informationstjänst.
 
-Dessa mappningar presenteras [ i det här avsnittet](selecting-a-target-mapping.md).
+Dessa mappningar presenteras [ i det här avsnittet](steps-defining-the-target-population.md#select-a-target-mapping).
 
 Du kan också skapa och använda en anpassad målmappning. Mer information om detta finns i [det här avsnittet](../../configuration/using/target-mapping.md).
 

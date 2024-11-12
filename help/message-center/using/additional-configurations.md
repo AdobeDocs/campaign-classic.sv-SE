@@ -7,10 +7,10 @@ audience: message-center
 content-type: reference
 topic-tags: instance-configuration
 exl-id: 4d25d740-db57-4d18-8cae-2dd49c4a786e
-source-git-commit: 0fba6a2ad4ffa864e2f726f241aa9d7cd39072a6
+source-git-commit: f469689f9e8a4d805fb95a1ae120ccd35aba3731
 workflow-type: tm+mt
-source-wordcount: '804'
-ht-degree: 4%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -169,10 +169,6 @@ Gör så här:
 
 1. Skapa ett externt konto per varumärke med samma interna namn som definierats i [körningsinstansen](#execution-instance) (steg 1).
 
-1. Skapa en standardleveransmall per varumärke.
-
-   >[!NOTE]
-   >
-   >    Lär dig hur du skapar en leveransmall i [det här avsnittet](../../delivery/using/creating-a-delivery-template.md#creating-a-new-template).
+1. Skapa en [leveransmall](../../delivery/using/about-templates.md) per varumärke.
 
 1. I leveransmallens **[!UICONTROL Properties]** anger du routningen till varumärkesets externa konto.
