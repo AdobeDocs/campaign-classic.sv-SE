@@ -6,10 +6,10 @@ title: Användarhandbok för Campaign Classic v7
 user-guide-description: Produktdokumentation för Adobe Campaign Classic v7.
 sub-product: adobe campaign classic
 type: Documentation
-source-git-commit: aa78a51ebea49f98ef7edad7e87a99a680f02b69
+source-git-commit: 446062946b64c9a4d065b6a56d263914cbe628f8
 workflow-type: tm+mt
-source-wordcount: '2560'
-ht-degree: 100%
+source-wordcount: '2562'
+ht-degree: 99%
 
 ---
 
@@ -163,7 +163,7 @@ ht-degree: 100%
       + [Definiera innehållet i direktmeddelanden](delivery/using/defining-the-direct-mail-content.md)
       + [Validera](delivery/using/validating.md)
    + Använd leveransmallar {#using-delivery-templates}
-      + [Om mallar](delivery/using/about-templates.md)
+      + [Arbeta med leveransmallar](delivery/using/about-templates.md)
       + [Skapa en leveransmall](delivery/using/creating-a-delivery-template.md)
       + [Välj en målmappning](delivery/using/selecting-a-target-mapping.md)
       + [Skapa en leverans från en mall](delivery/using/creating-a-delivery-from-a-template.md)

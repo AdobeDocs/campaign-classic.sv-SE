@@ -2,14 +2,15 @@
 product: campaign
 title: Skapa en leverans från en mall
 description: Lär dig skapa en leverans från en mall
-badge-v8: label="Gäller även för v8" type="Positive" tooltip="Gäller även Campaign v8"
 feature: Delivery Templates
+hide: true
+hidefromtoc: true
 role: User
 exl-id: 7ffb649e-801f-4568-a86b-7982448e3c30
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: 446062946b64c9a4d065b6a56d263914cbe628f8
 workflow-type: tm+mt
-source-wordcount: '187'
-ht-degree: 6%
+source-wordcount: '178'
+ht-degree: 7%
 
 ---
 
