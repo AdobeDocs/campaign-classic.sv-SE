@@ -2,14 +2,13 @@
 product: campaign
 title: Kommunikationskanaler
 description: Skapa leveranser för att skicka personanpassade meddelanden i olika kanaler
-badge-v8: label="Gäller även för v8" type="Positive" tooltip="Gäller även Campaign v8"
 feature: Cross Channel Orchestration, Email, SMS, In App, Direct Mail, Push
 role: User
 exl-id: 92b5e013-b619-4f0b-b0b1-1fc2e653ceac
-source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
+source-git-commit: 41296a0acaee93d31874bf58287e51085c6c1261
 workflow-type: tm+mt
-source-wordcount: '1214'
-ht-degree: 10%
+source-wordcount: '1205'
+ht-degree: 8%
 
 ---
 
@@ -82,7 +81,7 @@ Med Adobe Campaign kan du skicka personliga och segmenterade [push-meddelanden](
 
 [Direktutskick](about-direct-mail-channel.md) är en offlinekanal som gör att du kan anpassa och generera den fil som direktutskick kräver. Det ger dig möjligheten att blanda online- och offline-kanaler i kundresorna.
 
-Med onlinekanaler kan du skapa meddelanden (e-post, SMS, leveransmeddelanden för mobilappar etc.)  och skicka dem till din målgrupp direkt från Adobe Campaign.  Med offlinekanaler fungerar det annorlunda.  När du förbereder ett direktutskick genererar Adobe Campaign en fil som innehåller samtliga målprofiler och den valda kontaktinformationen (exempelvis postadress).  Du kan sedan skicka den här filen till din leverantör för direktmeddelanden som i sin tur tar hand om själva utskicket.
+Med onlinekanaler kan du skapa meddelanden (e-post, SMS, mobilappsleverans osv.) och skicka dem till din publik direkt från Adobe Campaign. Med offlinekanaler fungerar det annorlunda.  När du förbereder ett direktutskick genererar Adobe Campaign en fil som innehåller samtliga målprofiler och den valda kontaktinformationen (exempelvis postadress).  Du kan sedan skicka den här filen till din leverantör för direktmeddelanden som i sin tur tar hand om själva utskicket.
 
 ## Andra kanaler {#other-channels}
 

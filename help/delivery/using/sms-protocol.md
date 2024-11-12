@@ -2,13 +2,12 @@
 product: campaign
 title: Protokoll och inställningar för SMS-koppling
 description: Läs mer om SMS-anslutningen och hur du konfigurerar den
-badge-v8: label="Gäller även för v8" type="Positive" tooltip="Gäller även Campaign v8"
 feature: SMS
 role: Developer, Data Engineer
 exl-id: fded088a-11a2-4b87-a368-7b197334aca4
-source-git-commit: 6803b6628313db9108a191fd143dac68ee799149
+source-git-commit: 41296a0acaee93d31874bf58287e51085c6c1261
 workflow-type: tm+mt
-source-wordcount: '8466'
+source-wordcount: '8457'
 ht-degree: 0%
 
 ---
@@ -844,7 +843,7 @@ SMS ska markeras som mottaget i leveransloggen. Leveransloggen bör slutföras o
 Kontrollera att du har ändrat leveransleverantörens namn. Leveransloggen får aldrig innehålla **SR Generic** i produktionsmiljöer.
 
 * **Kontrollera att flerlägesobjekt bearbetas**
-Om du behöver bearbeta MO (automatiska svar, lagra MO i databasen osv.) försök att göra några tester. Skicka några SMS för alla automatiska svarsnyckelord och kontrollera om svaret är tillräckligt snabbt, inte mer än några sekunder.
+Om du behöver bearbeta MO (automatiska svar, lagra MO i databasen osv.) kan du försöka med att göra några tester. Skicka några SMS för alla automatiska svarsnyckelord och kontrollera om svaret är tillräckligt snabbt, inte mer än några sekunder.
 Kontrollera i loggen att Adobe Campaign svarar med en `DELIVER_SM_RESP` (command_status=0).
 
 ### Kontrollera PDU:er {#check-pdus}
