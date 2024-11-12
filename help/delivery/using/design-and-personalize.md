@@ -5,8 +5,10 @@ description: Lär dig skapa personaliserat innehåll i Adobe Campaign-leveranser
 badge-v8: label="Gäller även för v8" type="Positive" tooltip="Gäller även Campaign v8"
 feature: Email Design, Personalization
 role: User
+hide: true
+hidefromtoc: true
 exl-id: 5bf727d2-83b1-4a99-be25-041eee8d234c
-source-git-commit: d34f75fadb02b4c03acc0c2d7be52df65320ec2d
+source-git-commit: aa78a51ebea49f98ef7edad7e87a99a680f02b69
 workflow-type: tm+mt
 source-wordcount: '1287'
 ht-degree: 3%

@@ -6,9 +6,9 @@ badge-v8: label="Gäller även för v8" type="Positive" tooltip="Gäller även C
 feature: Deliverability
 role: User
 exl-id: dcd3a9f9-5fe9-4c28-a4a5-5aed67b036ab
-source-git-commit: de6e86eb2304a88e836c5759b87d7f38446ed357
+source-git-commit: aa78a51ebea49f98ef7edad7e87a99a680f02b69
 workflow-type: tm+mt
-source-wordcount: '766'
+source-wordcount: '748'
 ht-degree: 5%
 
 ---
@@ -29,7 +29,7 @@ Fler tips om hur du kan optimera leveransen när du utformar innehåll finns i [
 
 >[!NOTE]
 >
->Mer information om hur du redigerar e-postinnehåll finns i [Definiera e-postinnehållet](defining-the-email-content.md) och [Skapa anpassat innehåll](design-and-personalize.md).
+>Mer information om hur du redigerar e-postinnehåll finns i [Definiera e-postinnehåll](defining-the-email-content.md).
 
 ## Avsändarens adress {#sender-address}
 
@@ -44,8 +44,6 @@ Mer information finns på [den här sidan](defining-the-email-content.md).
 För att förbättra mottagarnas upplevelse och få dem att öppna ditt e-postmeddelande kan du anpassa dina meddelanden med Adobe Campaign.
 
 Mer information om hur du använder anpassningsfält i Adobe Campaign finns i [det här avsnittet](personalization-fields.md).
-
-Några tips om hur du kan optimera personaliseringen när du skapar ditt innehåll finns i [det här avsnittet](design-and-personalize.md#optimize-personalization).
 
 ## Länk och formulär för avanmälan {#opt-out}
 
