@@ -4,16 +4,18 @@ title: Granskningskedja
 description: Lär dig övervaka instansen med granskningsspår för Campaign
 feature: Audit Trail, Monitoring, Workflows
 exl-id: 8508d879-fb38-4b1f-9f55-0341bb8d0c67
-source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
+source-git-commit: 6d94ca01f23f7f2409fbdcb4e4c4716d694d527f
 workflow-type: tm+mt
-source-wordcount: '464'
+source-wordcount: '420'
 ht-degree: 2%
 
 ---
 
 # Granskningskedja{#audit-trail}
 
-
+>[!INFO]
+>
+>Läs mer om funktionen Granskningsspår i dokumentationen för Adobe Campaign v8.
 
 I Adobe Campaign ger **[!UICONTROL Audit trail]** dig tillgång till den fullständiga historiken över ändringar som gjorts i din instans.
 
@@ -24,13 +26,15 @@ I Adobe Campaign ger **[!UICONTROL Audit trail]** dig tillgång till den fullst�
 >Adobe Campaign granskar inte ändringar som gjorts i användarrättigheter, mallar, personalisering eller kampanjer.\
 >Granskningsspårning kan bara hanteras av administratörer för instansen.
 
-Granskningsspårning består av tre komponenter:
+![](assets/audit_trail_2.png)
 
-* **Schemagranskningsspår**: Kontrollera aktiviteterna och de senaste ändringarna av scheman.
++++ Läs mer om tillgängliga enheter för granskningsspår
+
+* **Schemagranskningsspår**: Du kan utforska de ändringar som gjorts i dina scheman samt identifiera vem som gjort ändringarna och när de gjordes.
 
   Mer information om scheman finns på [sidan](../../configuration/using/data-schemas.md).
 
-* **Granskningsspår för arbetsflöde**: Kontrollera aktiviteter och senaste ändringar som gjorts i arbetsflöden, och dessutom statusen för dina arbetsflöden, till exempel:
+* **Arbetsflödets granskningsspår** spårar alla åtgärder som är relaterade till dina arbetsflöden, inklusive:
 
    * Starta
    * Pausa
@@ -45,63 +49,32 @@ Granskningsspårning består av tre komponenter:
 
   Mer information om hur du övervakar arbetsflöden finns i det [dedikerade avsnittet](../../workflow/using/monitoring-workflow-execution.md).
 
-* **Alternativ granskningsspår**: Kontrollera aktiviteterna och de senaste ändringarna som du har gjort.
+* Med **Alternativ granskningsspår** kan du kontrollera aktiviteter och senaste ändringar som du har gjort i alternativen.
 
   Mer information om alternativ finns på [sidan](../../installation/using/configuring-campaign-options.md).
 
-## Åtkomst till granskningsspår {#accessing-audit-trail}
+* **Leveransverifieringskedja** gör att du kan kontrollera aktiviteter och senaste ändringar som du har gjort i leveranserna.
 
-Så här kommer du åt instansens **[!UICONTROL Audit trail]**:
+  Mer information om leveranser finns på [sidan](../../delivery/using/communication-channels.md).
 
-1. Gå till **[!UICONTROL Explorer]**-menyn för din instans.
-1. Välj **[!UICONTROL Audit]** på menyn **[!UICONTROL Administration]**.
+* Med **externt konto** kan du kontrollera ändringar som gjorts i externa konton, som används av tekniska processer som tekniska arbetsflöden eller kampanjarbetsflöden.
 
-   ![](assets/audit_trail_1.png)
+  Mer information om externt konto finns på [sidan](../../installation/using/external-accounts.md).
 
-1. Fönstret **[!UICONTROL Audit trail]** öppnas med listan över dina enheter. Adobe Campaign granskar åtgärderna för att skapa, redigera och ta bort för arbetsflöden, alternativ och scheman.
+* Med **Leveransmappning** kan du övervaka aktiviteter och nyligen gjorda ändringar i dina leveransmappningar.
 
-   Välj en av enheterna om du vill veta mer om de senaste ändringarna.
+  Mer information om leveransmappning finns på [sidan](../../configuration/using/target-mapping.md).
 
-   ![](assets/audit_trail_2.png)
+* Med **Webbprogram** kan du kontrollera ändringar som gjorts i webbformulär i Campaign V8 som används för att skapa sidor med indata- och urvalsfält, och som kan innehålla data från databasen.
 
-1. Fönstret **[!UICONTROL Audit entity]** ger dig mer detaljerad information om den valda entiteten, till exempel:
+  Mer information om webbprogram finns på [sidan](../../web/using/about-web-applications.md).
 
-   * **[!UICONTROL Type]**: Arbetsflöde, alternativ eller scheman.
-   * **[!UICONTROL Entity]**: Intern namn på dina aktiviteter.
-   * **[!UICONTROL Modified by]** : Användarnamn för den senaste personen som ändrade entiteten.
-   * **[!UICONTROL Action]**: Senaste åtgärden som utfördes på den här entiteten, antingen Skapad, Redigerad eller Borttagen.
-   * **[!UICONTROL Modification date]** : Datum för den senaste åtgärden som utfördes på entiteten.
+* Med **Erbjudandet** kan du kontrollera aktiviteter och senaste ändringar av dina erbjudanden.
 
-   Kodblocket ger dig mer information om exakt vad som har ändrats i din enhet.
+  Mer information om erbjudandet finns på [sidan](../../interaction/using/interaction-and-offer-management.md).
 
-   ![](assets/audit_trail_3.png)
+* Med **Operator** kan du övervaka aktiviteter och nyligen gjorda ändringar i operatorerna.
 
->[!NOTE]
->
->Som standard är kvarhållningsperioden inställd på 180 dagar för **[!UICONTROL Audit logs]**. Mer information om hur du ändrar kvarhållningsperioden finns på [sidan](../../production/using/database-cleanup-workflow.md#deployment-assistant).
+  Mer information om operatorer finns på [sidan](../../platform/using/access-management-operators.md).
 
-## Aktivera/inaktivera granskningsspår {#enable-disable-audit-trail}
-
-Granskningsspårning kan enkelt aktiveras eller inaktiveras för en viss aktivitet om du t.ex. vill spara utrymme i databasen.
-
-För att göra detta:
-
-1. Gå till **[!UICONTROL Explorer]**-menyn för din instans.
-1. Välj **[!UICONTROL Platform]** och sedan **[!UICONTROL Options]** på menyn **[!UICONTROL Administration]**.
-
-   ![](assets/audit_trail_4.png)
-
-1. Välj något av följande alternativ beroende på vilken enhet du vill aktivera/inaktivera:
-
-   * För arbetsflöde: **[!UICONTROL XtkAudit_Workflows]**
-   * För scheman: **[!UICONTROL XtkAudit_DataSchema]**
-   * För alternativ: **[!UICONTROL XtkAudit_Option]**
-   * För varje entitet: **[!UICONTROL XtkAudit_Enable_All]**
-
-   ![](assets/audit_trail_5.png)
-
-1. Ändra **[!UICONTROL Value]** till 1 om du vill aktivera entiteten eller till 0 om du vill inaktivera den.
-
-   ![](assets/audit_trail_6.png)
-
-1. Klicka på **[!UICONTROL Save]** .
++++
