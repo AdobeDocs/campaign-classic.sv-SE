@@ -5,9 +5,9 @@ description: Läs mer om felsökning av SMS-kanal
 feature: SMS, Troubleshooting
 role: User
 exl-id: 841f0c2f-90ef-4db0-860a-75fc7c48804a
-source-git-commit: 41296a0acaee93d31874bf58287e51085c6c1261
+source-git-commit: f660dcbb111e73f12737d96ebf9be2aeccbca8ee
 workflow-type: tm+mt
-source-wordcount: '2755'
+source-wordcount: '3044'
 ht-degree: 0%
 
 ---
@@ -310,3 +310,30 @@ Resultatet ska vara följande:
 ```
 
 4 öppna anslutningar för SMS-processen och 2 per huvudunderordnad med 5 underordnade.
+
+## Skillnad mellan SMS-leveransstatus
+
+För att förtydliga skillnaderna mellan statusvärdena **Skickat**, **Skickat till providern** och **Mottaget på mobilen**, se de detaljerade definitionerna nedan:
+
+* **Mottaget på mobilen**:
+Meddelandet har levererats till användarens enhet, med bekräftelse från både MT-leveransen (Mobile Terminated) och en Statusrapport (SR).
+
+* **Skickat**:
+Meddelandet har bearbetats i MT-steget (Mobile Terminated), men ingen statusrapport (SR) som bekräftar leverans till den mobila enheten har ännu tagits emot.
+
+* **Skickat till providern**:
+Meddelandet skickades till providern med hjälp av `SUBMIT_SM command`, men ingen `SUBMIT_SM_RESP`-bekräftelse togs emot från providern.
+
+Meddelanden kan finnas kvar i statusen **Skickat** eftersom övergången till **Mottaget** är beroende av en statusrapport (SR) från användarens enhet. Om användaren har problem med mottagningen av celler eller andra anslutningsproblem kanske de inte får meddelandet omedelbart. I sådana fall är det leverantörens ansvar att försöka leverera igen eller förklara varför ingen SR genererades. Om leverantören identifierar avvikelser måste de se till att Campaigns beteende var i linje med förväntningarna.
+
+Här är SMS-leveransstatus:
+
+* **Väntande**: Meddelandet har ännu inte skickats till aggregatorn.
+
+* **Beaktas av providern**: Meddelandet har skickats till aggregatorn och aggregatorn har bekräftat inleverans.
+
+* **Skickat**: Aggeraren har bekräftat att meddelandet har skickats till användarens mobila nätverk utan något omedelbart fel.
+
+* **Mottaget på mobilen**: Användarens mobila enhet har bekräftat kvitto och detta har verifierats av aggregatorn.
+
+* **Misslyckades**: Meddelandet skickades till aggregatorn, som försökte leverera till användarens mobila enhet under en angiven period (t.ex. flera timmar). Leveransen misslyckades på grund av nätverksproblem, otillgänglighet på användarenhet eller andra orsaker.
