@@ -5,7 +5,7 @@ description: Lär dig hur du arbetar med scheman och utökar den konceptuella da
 feature: Schema Extension
 role: Data Engineer, Developer
 exl-id: f36a1b01-a002-4a21-9255-ea78b5f173fe
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: 44c40bbd8bff16cbe220d3af3a7bb2847762f58b
 workflow-type: tm+mt
 source-wordcount: '369'
 ht-degree: 1%
@@ -77,9 +77,9 @@ Identifieringsnyckeln för ett schema är en sträng som skapats med namnutrymme
 
 >[!IMPORTANT]
 >
->Namnutrymmets namn måste vara kortfattat och får endast innehålla tillåtna tecken enligt reglerna för XML-namngivning.
+>* Namnutrymmets namn måste vara kortfattat och får endast innehålla tillåtna tecken enligt reglerna för XML-namngivning.
 >
->Identifierare får inte börja med numeriska tecken.
+>* Identifierare får inte börja med numeriska tecken.
 >
->Följande namnutrymmen är reserverade för beskrivningar av de systementiteter som krävs för Adobe Campaign-programmets åtgärd och får inte användas: **xtk**, **nl**, **nms**, **ncm**, **temp**, **ncl**, **crm**, **xxl**.
-
+>* Följande namnutrymmen är reserverade för beskrivningar av de systementiteter som krävs för Adobe Campaign-programmets åtgärd och får inte användas: **xtk**, **nl**, **nms**, **ncm**, **temp**, **ncl**, **crm**, **xxl**.
+>
