@@ -4,7 +4,7 @@ title: Schemaelement och attribut - metodelement
 description: method-element
 feature: Schema Extension
 exl-id: 0fb74318-fe09-473c-8e33-1f3afd66b4cc
-source-git-commit: fd5e4bbc87a48f029a09b14ab1d927b9afe4ac52
+source-git-commit: 254c89490fefa5d405bcecd2f1781df46450a873
 workflow-type: tm+mt
 source-wordcount: '207'
 ht-degree: 0%
@@ -13,7 +13,6 @@ ht-degree: 0%
 
 # method-element {#method--element}
 
-![](../../../assets/v7-only.svg)
 
 ## Innehållsmodell {#content-model-10}
 
