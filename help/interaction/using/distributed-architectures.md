@@ -7,7 +7,7 @@ audience: interaction
 content-type: reference
 topic-tags: advanced-parameters
 exl-id: 083be073-aad4-4c81-aff2-77f5ef3e80db
-source-git-commit: 0fba6a2ad4ffa864e2f726f241aa9d7cd39072a6
+source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
 workflow-type: tm+mt
 source-wordcount: '1014'
 ht-degree: 1%
@@ -57,7 +57,7 @@ Ett arbetsflöde skapas för varje miljö och ett externt konto för förslagssy
 
 ## Paketkonfiguration {#packages-configuration}
 
-Schematillägg som är direkt länkade till **Interaktion** (erbjudanden, erbjudanden, mottagare osv.) måste distribueras på körningsinstanserna.
+Alla schematillägg som är direkt länkade till **Interaktion** (erbjudanden, erbjudanden, mottagare osv.) måste distribueras på körningsinstanserna.
 
 Interaktionspaketet måste installeras på alla instanser (kontroll och körning). Det finns ytterligare två paket: ett paket som ska installeras på kontrollinstanserna och ett annat som ska installeras på varje körningsinstans.
 

@@ -4,7 +4,7 @@ title: Personalisering och sekretess
 description: Lär dig de effektivaste strategierna för säkerhet när det gäller sekretess och personalisering
 feature: Installation, Privacy, Privacy Tools, URL Personalization
 exl-id: 0a3473bf-0528-486d-a799-8db86fece522
-source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
+source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
 workflow-type: tm+mt
 source-wordcount: '805'
 ht-degree: 1%

@@ -5,7 +5,7 @@ description: Lär dig hur du installerar inbyggda Campaign-paket
 feature: Installation, Application Settings
 badge-v7-prem: label="Endast lokal/hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=sv" tooltip="Gäller endast lokala och hybrida driftsättningar"
 exl-id: 2bc077c4-ed65-4157-bfc9-df5d0442f476
-source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
+source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
 workflow-type: tm+mt
 source-wordcount: '1264'
 ht-degree: 1%
@@ -182,7 +182,7 @@ I följande tabell visas alla inbyggda Campaign-paket.
   </tr> 
   <tr> 
    <td> Central/lokal marknadsföring (distribuerad marknadsföring)<br /> </td> 
-   <td> Implementerar samverkanskampanjer mellan centrala enheter (huvudkontor, marknadsavdelningar osv.) och lokala enheter (säljställen, regionala organ osv.). Valfritt. <a href="../../distributed/using/about-distributed-marketing.md">Läs mer</a><br /> </td> 
+   <td> Implementerar samverkanskampanjer mellan centrala enheter (huvudkontor, marknadsföringsavdelningar osv.) och lokala enheter (försäljningsställen, regionala myndigheter osv.). Valfritt. <a href="../../distributed/using/about-distributed-marketing.md">Läs mer</a><br /> </td> 
    <td> Marknadsföring </td> 
   </tr> 
   <tr> 

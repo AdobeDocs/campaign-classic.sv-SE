@@ -4,7 +4,7 @@ title: Starta ett arbetsflöde
 description: Lär dig hur du startar ett arbetsflöde och identifierar arbetsflöden, verktygsfältet och högerklicksmenyn
 feature: Workflows
 exl-id: d345ba62-c2fb-43df-a2a1-e9e4292d301a
-source-git-commit: 7453db63a0ed2c617e9f7e4cbfa3480b3ed5020d
+source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
 workflow-type: tm+mt
 source-wordcount: '1179'
 ht-degree: 1%
@@ -17,7 +17,7 @@ ht-degree: 1%
 
 Ett arbetsflöde startas alltid manuellt. När den startas kan den dock förbli inaktiv beroende på den information som anges via en schemaläggare (se [Schemaläggare](scheduler.md)) eller aktivitetsplanering.
 
-Åtgärder för att målinrikta arbetsflödeskörning (starta, stoppa, pausa osv.) är **asynkrona** processer: ordningen spelas in och träder i kraft så snart servern är tillgänglig för att använda den.
+Åtgärder som rör körning av målarbetsflöde (starta, stoppa, pausa osv.) är **asynkrona** processer: ordningen registreras och träder i kraft så snart servern är tillgänglig för att använda den.
 
 Med verktygsfältet kan du starta och spåra arbetsflödets körning.
 
@@ -81,7 +81,7 @@ Verktygsfältsknapparna beskrivs i det här [avsnittet](../../campaign/using/mar
 
 * **[!UICONTROL Start in simulation mode]**
 
-  Med det här alternativet kan du starta arbetsflödet i simuleringsläge i stället för i realläge. Det innebär att när du aktiverar det här läget körs bara aktiviteter som inte påverkar databasen eller filsystemet (t.ex. **[!UICONTROL Query]**, **[!UICONTROL Union]**, **[!UICONTROL Intersection]**). Aktiviteter som har en effekt (t.ex. **[!UICONTROL Export]**, **[!UICONTROL Import]** osv.) samt de som kommer efter dem (i samma gren) inte utförs.
+  Med det här alternativet kan du starta arbetsflödet i simuleringsläge i stället för i realläge. Det innebär att när du aktiverar det här läget körs bara aktiviteter som inte påverkar databasen eller filsystemet (t.ex. **[!UICONTROL Query]**, **[!UICONTROL Union]**, **[!UICONTROL Intersection]**). Aktiviteter som har en effekt (t.ex. **[!UICONTROL Export]**, **[!UICONTROL Import]** osv.) och de som har påverkats (i samma gren) körs inte.
 
 * **[!UICONTROL Execute pending tasks now]**
 

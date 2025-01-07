@@ -6,7 +6,7 @@ feature: Overview
 role: Data Engineer
 level: Beginner
 exl-id: 5f689679-7148-4abd-a9bf-185854c64b13
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
 workflow-type: tm+mt
 source-wordcount: '916'
 ht-degree: 2%
@@ -99,7 +99,7 @@ Listorna är tillgängliga via länken **[!UICONTROL Lists]** i den vänstra del
 
 I varje kärnfunktionsavsnitt kan du bläddra bland de tillgängliga elementen. Använd kortkommandona i avsnittet **[!UICONTROL Browsing]** för att göra detta. Med länken **[!UICONTROL Other choices]** kan du komma åt alla andra sidor, oavsett miljö.
 
-Du kan skapa ett nytt element (leverans, webbprogram, arbetsflöde osv.) med kortkommandona i avsnittet **[!UICONTROL Create]** till vänster på skärmen. Använd knappen **[!UICONTROL Create]** ovanför listan för att lägga till nya element i listan.
+Du kan skapa ett nytt element (leverans, webbprogram, arbetsflöde osv.) med hjälp av genvägarna i avsnittet **[!UICONTROL Create]** till vänster på skärmen. Använd knappen **[!UICONTROL Create]** ovanför listan för att lägga till nya element i listan.
 
 Använd till exempel knappen **[!UICONTROL Create]** på leveranssidan för att skapa en ny leverans.
 

@@ -5,7 +5,7 @@ description: Läs mer om avancerade funktioner när du arbetar med rapporter
 feature: Reporting, Monitoring
 badge-v8: label="Gäller även för v8" type="Positive" tooltip="Gäller även Campaign v8"
 exl-id: 8b51d0fc-1692-41cd-9aa8-3bb8f4ee454e
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
 workflow-type: tm+mt
 source-wordcount: '610'
 ht-degree: 4%

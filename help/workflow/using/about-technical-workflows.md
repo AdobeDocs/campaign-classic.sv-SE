@@ -4,7 +4,7 @@ title: Tekniska arbetsflöden
 description: Läs mer om de tekniska arbetsflöden som är tillgängliga med Campaign Classic
 feature: Workflows
 exl-id: 9aed2665-cd4b-419c-b9f2-ea04fc1d8f01
-source-git-commit: 0fba6a2ad4ffa864e2f726f241aa9d7cd39072a6
+source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
 workflow-type: tm+mt
 source-wordcount: '1704'
 ht-degree: 1%

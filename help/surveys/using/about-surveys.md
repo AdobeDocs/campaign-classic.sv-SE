@@ -5,7 +5,7 @@ description: Kom igång med Campaign-undersökningar
 badge-v8: label="Gäller även för v8" type="Positive" tooltip="Gäller även Campaign v8"
 feature: Surveys
 exl-id: 7061a4f1-006f-4f19-8761-918d8930d885
-source-git-commit: 8e5a328bee7701adfedec6a533cc21b4ce548187
+source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
 workflow-type: tm+mt
 source-wordcount: '554'
 ht-degree: 3%
@@ -43,7 +43,7 @@ I Adobe Campaign använder du [webbprogram](../../web/using/about-web-forms.md) 
 * Lägg till personalisering och definiera fältposition,
 * Villkorlig visning av undersökningsfält enligt svar,
 * Villkorsidvisning,
-* Kontrollera informationen före godkännande, beroende på vilken typ av data som förväntas (nummer, e-postadress, datum osv.) och obligatoriska fält,
+* Kontrollera informationen före godkännande, beroende på vilken typ av data som förväntas (antal, e-postadress, datum osv.) och obligatoriska fält,
 * Skicka inbjudningar/meddelanden via e-post,
 * Anpassa fel- och slutsidor,
 * Lägg till bilder, videor, hypertextlänkar, captcha osv. i formulär

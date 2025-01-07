@@ -1,6 +1,6 @@
 ---
 product: campaign
-title: ”[!DNL Gold Standard]-versioner”
+title: '[!DNL Gold Standard]-versioner '
 description: Versionsinformation och kompatibilitetsmatris för Campaign Classic [!DNL Gold Standard]
 feature: Release Notes
 role: User
@@ -8,10 +8,10 @@ level: Beginner
 hidefromtoc: true
 hide: true
 exl-id: 9e3a11b1-3070-4d90-91d5-7c559bdd500e
-source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
-workflow-type: ht
+source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
+workflow-type: tm+mt
 source-wordcount: '1774'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
