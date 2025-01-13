@@ -9,9 +9,9 @@ hidefromtoc: true
 hide: true
 exl-id: 9e3a11b1-3070-4d90-91d5-7c559bdd500e
 source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1774'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -38,7 +38,7 @@ _27 augusti 2021_
 
 Build 9032@99a3894 innehåller följande korrigeringar:
 
-* Funktionen för att spåra signaturer har förbättrats för att förhindra att fel länkas till hur tredjepartsverktyg (e-postklienter, webbläsare osv.) hanterar specialtecken. URL-parametrar är nu kodade.
+* Funktionen för att spåra signaturer har förbättrats för att förhindra fel som har att göra med hur tredje parts verktyg (e-postklienter, webbläsare osv.) hanterar specialtecken. URL-parametrar är nu kodade.
 * Korrigerade ett problem med datumväljare som kunde resultera i att en konsol visade felmeddelandet för blockering. (NEO-36345)
 
 ### [!DNL Gold Standard] version 11{#gs-11}
