@@ -8,10 +8,10 @@ audience: installation
 content-type: reference
 topic-tags: installing-campaign-in-linux-
 exl-id: f41c7510-5ad7-44f3-9485-01f54994b6cb
-source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
+source-git-commit: 32a1e16c3c085c0d928b4223e1b46ed6545122d3
 workflow-type: tm+mt
-source-wordcount: '1065'
-ht-degree: 2%
+source-wordcount: '1110'
+ht-degree: 1%
 
 ---
 
@@ -50,13 +50,13 @@ Så här installerar du Adobe Campaign på ett RPM-operativsystem (RHEL, CentOS)
 
 1. Installera den genom att ansluta som **root** och köra följande kommando, där **XXXX** är Adobe Campaign build-nummer:
 
-   ```
+   ```sql
    yum install nlserver6-v7-XXXX-0.x86_64.rpm
    ```
 
    RPM-filen är beroende av paket som du kan hitta på CentOS/Red Hat-distributioner. Om du inte vill använda vissa av dessa beroenden (till exempel om du vill använda Oracle-JDK i stället för OpenJDK), kan du behöva använda alternativet &quot;nodeps&quot; för rpm:
 
-   ```
+   ```sql
    rpm --nodeps -Uvh nlserver6-v7-XXXX-0.x86_64.rpm
    ```
 
@@ -66,8 +66,27 @@ Kommandot `bc`, som är obligatoriskt för att köra [netreport](../../productio
 
 Med CentOS måste du installera paketet bc.x86_64: anslut som **root** och köra följande kommando:
 
-```
+```sql
 yum install bc.x86_64
+```
+
+
+### RHEL 9 för anläggningsdistributioner {#rhel-9-update}
+
+Med Campaign v7.4.1 måste du, som lokal kund med RHEL 9, uppdatera systeminställningarna om du vill använda DKIM/Domain-tangenterna.
+
+Gör så här:
+
+1. Kör följande kommando som rot:
+
+```sql
+update-crypto-policies --set LEGACY
+```
+
+1. Starta om MTA-modulen:
+
+```sql
+nlserver restart mta@<instance-name>
 ```
 
 ## Distribution baserad på APT (Debian) {#distribution-based-on-apt--debian-}
@@ -82,7 +101,7 @@ Så här installerar du Adobe Campaign på ett 64-bitars Debian-operativsystem:
 
 1. Installera den genom att ansluta som **root** och köra följande kommando, där **XXXX** är Adobe Campaign build-nummer:
 
-   ```
+   ```sql
    apt install ./nlserver6-v7-XXXX-linux-2.6-amd64.deb
    ```
 
@@ -95,7 +114,7 @@ Om du utför installationen för första gången kanske filen **customer.sh** in
 
 Skapa den och kontrollera att den har körningsbehörighet. Om så inte är fallet anger du följande kommando:
 
-```
+```sql
 chmod +x /usr/local/neolane/nl6/customer.sh
 ```
 
@@ -111,7 +130,7 @@ Om du vill skapa en **japansk instans** måste du använda en UTF-8-miljö.
 
 Använd följande kommando för att aktivera UTF-8-miljön:
 
-```
+```sql
 mkdir -p /usr/local/neolane/nl6 
 touch /usr/local/neolane/nl6/unicodeenv
 ```
@@ -126,7 +145,7 @@ Om det behövs kan du redigera filen **customer.sh** med kommandot **vi customer
 
 * För Oraclets klient:
 
-  ```
+  ```sql
   export ORACLE_HOME=/usr/local/instantclient_10_2
   export TNS_ADMIN=/etc/oracle
   export LD_LIBRARY_PATH=$ORACLE_HOME/lib:$LD_LIBRARY_PATH 
@@ -144,7 +163,7 @@ Om det behövs kan du redigera filen **customer.sh** med kommandot **vi customer
 
      Standardvärden för OOO_INSTALL_DIR och OOO_BASIS_INSTALL_DIR anges. Du kan åsidosätta dem i **customer.sh** om layouten för LibreOffice-installationen är annorlunda:
 
-     ```
+     ```sql
      export OOO_BASIS_INSTALL_DIR=/usr/lib/libreoffice/ 
      export OOO_INSTALL_DIR=/usr/lib/libreoffice/
      ```
@@ -153,7 +172,7 @@ Om det behövs kan du redigera filen **customer.sh** med kommandot **vi customer
 
      Använd följande standardvärden:
 
-     ```
+     ```sql
      export OOO_BASIS_INSTALL_DIR=/usr/lib64/libreoffice/
      export OOO_INSTALL_DIR=/usr/lib64/libreoffice/
      ```
@@ -162,7 +181,7 @@ Om det behövs kan du redigera filen **customer.sh** med kommandot **vi customer
 
   Som standard söker konfigurationsskriptet i Adobe Campaign-miljön (`~/nl6/env.sh`) efter JDK-installationskatalogen. Vi rekommenderar dock att du anger vilken JDK som ska användas. Om du vill göra det kan du tvinga miljövariabeln **JDK_HOME** med följande kommando:
 
-  ```
+  ```sql
   export JDK_HOME=/usr/java/jdkX.Y.Z
   ```
 
@@ -172,7 +191,7 @@ Om det behövs kan du redigera filen **customer.sh** med kommandot **vi customer
 
   Om du vill testa JDK-konfigurationen loggar du in som Adobe Campaign-systemanvändare med följande kommando:
 
-  ```
+  ```sql
   su - neolane
   ```
 
@@ -180,7 +199,7 @@ Du måste starta om Adobe Campaign-tjänsten för att ändringarna ska kunna bea
 
 Följande kommandon används:
 
-```
+```sql
 systemctl stop nlserver
 systemctl start nlserver
 ```
@@ -194,7 +213,7 @@ När du använder Oracle med Adobe Campaign måste du konfigurera Oraclets klien
 
   TNS-definitionerna måste läggas till under installationsfasen. Använd följande kommandon om du vill göra det:
 
-  ```
+  ```sql
   cd /etc
   mkdir oracle
   cd oracle
@@ -211,7 +230,7 @@ När du använder Oracle med Adobe Campaign måste du konfigurera Oraclets klien
 
   Använd följande kommandon om du vill göra det:
 
-  ```
+  ```sql
   cd /usr/lib/oracle/10.2.0.4/client/lib
   ln -s libclntsh.so.10.1 libclntsh.so
   ```
@@ -222,14 +241,14 @@ Om ett problem uppstår kontrollerar du att paketen i Oraclets installationsdoku
 
 Du kan nu utföra ett inledande installationstest med följande kommandon:
 
-```
+```sql
 su - neolane
 nlserver pdump
 ```
 
 När Adobe Campaign inte startas är svaret:
 
-```
+```sql
 no task
 ```
 
@@ -237,7 +256,7 @@ no task
 
 När installationstestet är klart anger du följande kommando:
 
-```
+```sql
 nlserver web
 ```
 
@@ -257,7 +276,7 @@ Med dessa kommandon kan du skapa konfigurationsfiler för **config-default.xml**
 
 Tryck på **Ctrl+C** för att stoppa processen och ange följande kommando:
 
-```
+```sql
 nlserver start web
 ```
 
@@ -275,7 +294,7 @@ Därefter visas följande information:
 
 Om du vill stoppa den anger du:
 
-```
+```sql
 nlserver stop web
 ```
 
