@@ -4,10 +4,10 @@ title: Kom igång med distribuerad marknadsföring
 description: Kom igång med distribuerad marknadsföring
 feature: Distributed Marketing
 exl-id: c166409b-e040-491e-840a-a41310935d75
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: 36fe54cf6d4d762d96205bd637311a426c741427
 workflow-type: tm+mt
-source-wordcount: '1135'
-ht-degree: 0%
+source-wordcount: '136'
+ht-degree: 3%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 
 
-Adobe Campaign erbjuder en **Distribuerad marknadsföring**-applikation för att implementera samarbetskampanjer mellan centrala enheter (huvudkontor, marknadsföringsavdelningar osv.) och lokala enheter (säljställen, regionala organ osv.). Samarbetet baseras på en delad arbetsyta som kallas **[!UICONTROL list of campaign packages]**, där centralt skapade kampanjmallar och instanser erbjuds lokala entiteter.
+Adobe Campaign erbjuder en **Distribuerad marknadsföring**-applikation för att implementera samarbetskampanjer mellan centrala enheter (huvudkontor, marknadsföringsavdelningar osv.) och lokala enheter (säljställen, regionala byråer osv.). Samarbetet baseras på en delad arbetsyta som kallas **[!UICONTROL list of campaign packages]**, där centralt skapade kampanjmallar och instanser erbjuds lokala entiteter.
 
 Den centrala enheten tillhandahåller kampanjer som lokala enheter kan använda. Kampanjer materialiseras av paket som representerar antingen lokala kampanjer eller samarbetskampanjer. För att kunna använda en kampanj måste den lokala enheten beställa den och ordern måste godkännas.
 
@@ -23,141 +23,146 @@ Den centrala enheten tillhandahåller kampanjer som lokala enheter kan använda.
 >
 >Modulen Distribuerad marknadsföring är ett **kampanjalternativ**. Kontrollera licensavtalet.
 
-## Terminologi {#terminology}
+>[!NOTE]
+>
+>Mer information om distribuerad marknadsföring för Adobe Campaign och hur du använder den finns i [dokumentationen för Campaign v8](https://experienceleague.adobe.com/en/docs/campaign/automation/distributed-marketing/about-distributed-marketing){target=_blank}.
 
-* **Centrala entiteter**
+<!--
+## Terminology {#terminology}
 
-  Centrala enheter består av marknadsföringsoperatörer som ansvarar för att specificera kommunikation och bistå lokala enheter vid genomförandet av deras marknadsföringskampanjer.
+* **Central entities**
 
-  Den distribuerade marknadsföringsmodulen gör att den centrala enheten kan:
+   Central entities are made up of marketing operators in charge of specifying communications and assisting local entities in executing their marketing campaign.
 
-   * skapa marknadsföringskampanjer för lokala enheter,
-   * öka de lokala enheternas grad av självbestämmande när det gäller val av kommunikation, målgruppsanpassning, innehåll m.m. mellan kunder och potentiella kunder.
-   * hantera och kontrollera kostnader,
-   * hantera ett nätverk av myndigheter.
+   The distributed marketing module allows the central entity to:
 
-* **Lokala entiteter**
+   * set up marketing campaign packages for local entities,
+   * increase local entities' degree of autonomy regarding their choice in customer/prospect communication, targeting, content, etc.
+   * manage and control costs, 
+   * handle a network of agencies.
 
-  Lokala enheter kan vara myndigheter, butiker eller grupper av specifika lokala aktörer (nationella eller regionala chefer, varumärkesansvariga osv.).
+* **Local entities**
 
-  Distribuerad marknadsföring ger lokala enheter större självständighet samtidigt som man optimerar kostnaderna för att genomföra kampanjen.
+   Local entities can be agencies, stores or groups of specific local operators (country or regional managers, brand managers, etc.).
 
-* **Lokalisering**
+   Distributed Marketing allows local entities to have more autonomy while optimizing execution costs.
 
-  Lokalisering är en lokal enhets förmåga att ändra mål och innehåll för en kampanj. Möjlig lokaliseringsnivå beror på kampanjtypen och dess implementering.
+* **Localization**
 
-* **Lista över kampanjpaket**
+   Localization is the capacity for a local entity to modify the target and content of a campaign. The possible level of localization depends on the type of campaign and its implementation.
 
-  Listan över kampanjpaket innehåller kampanjer som är tillgängliga för lokala entiteter.
+* **List of campaign packages**
 
-* **Kampanjpaket**
+   The list of campaign packages contains the campaigns available to local entities.
 
-  Mall (eller kampanjinstans) som har skapats av en central enhet och gjorts tillgänglig för en uppsättning lokala enheter.
+* **Campaign package**
 
-* **Lokal kampanj**
+   Template (or campaign instance) created by a central entity and made available to a set of local entities.
 
-  En lokal kampanj är en instans som skapats från en mall som refereras i listan med **[!UICONTROL campaign packages]** med ett **specifikt körningsschema**. Syftet är att tillgodose ett lokalt kommunikationsbehov med hjälp av en kampanjmall som har konfigurerats och konfigurerats av den centrala enheten.
+* **Local campaign**
 
-  Den lokala enhetens grad av självbestämmande beror på det genomförande som används.
+   A local campaign is an instance created from a template referenced in the list of **[!UICONTROL campaign packages]** with a **specific execution schedule**. Its aim is to meet a local communication need using a campaign template that was set up and configured by the central entity.
 
-  Se [Skapa en lokal kampanj](creating-a-local-campaign.md).
+   The local entity's degree of autonomy depends on the implementation used.
 
-* **Samverkande kampanj**
+   Refer to [Creating a local campaign](creating-a-local-campaign.md).
 
-  En samverkanskampanj är en kampanj vars **körningsschema definieras** av den centrala entiteten, som den lokala entiteten kan använda. Innehållet är detsamma för varje lokal enhet, men kostnaderna delas. Delta genom att lokala enheter prenumererar på samarbetskampanjen.
+* **Collaborative campaign**
 
-   * **[!UICONTROL Collaborative campaign (by form)]**: rekommenderas för kampanjer med upp till 300 lokala entiteter. Den lokala enheten kan ange fördefinierade parametrar för målinriktning och innehållspersonalisering i ett webbformulär. Formuläret kan vara ett Adobe Campaign-formulär eller ett externt formulär (extranät-klient). En funktionell administratör kan definiera och konfigurera formuläret baserat på en formulärmall som definieras av integratorn. För att kunna beställa kampanjen behöver den lokala enheten bara webbåtkomst.
-   * **[!UICONTROL Collaborative campaign (by campaign)]**: rekommenderas för kampanjer som riktar sig till dussintals lokala entiteter. Den här typen av kampanj skapar underordnade kampanjer för varje lokal enhet. När **[!UICONTROL collaborative campaign (by campaign)]** har godkänts av den centrala entiteten blir kampanjen tillgänglig för den lokala entiteten, som kan ändra den. Körningen synkroniseras automatiskt mellan överordnade och underordnade kampanjer. Den lokala enheten måste ha tillgång till en instans för att kunna beställa en kampanj och delta i den.
-   * **[!UICONTROL Collaborative campaign (by target approval)]**: rekommenderas för kampanjer som riktar sig till flera tusen lokala enheter. Lokal enhet tar emot en kontaktlista som har fördefinierats av den centrala enheten. Den lokala enheten avgör om vissa kontakter ska behållas eller inte baserat på kampanjinnehållet via ett webbformulär. Lokala enheter dras från listan med valda kontakter. För att delta i kampanjen behöver den lokala enheten bara tillgång till webben.
-   * **[!UICONTROL Collaborative campaign (simple)]**: Det här läget garanterar kompatibilitet med de specifika körningsprocesserna i tidigare versioner.
+   A collaborative campaign is a campaign whose **execution schedule is defined** by the central entity, which the local entity may use. The content remains the same for each local entity but costs are shared. To take part, local entities subscribe to the collaborative campaign.
 
-  Se [Skapa en samarbetskampanj](creating-a-collaborative-campaign.md).
+   * **[!UICONTROL Collaborative campaign (by form)]**: recommended for campaigns involving up to 300 local entities. The local entity can enter predefined parameters for targeting and content personalization in a web form. The form can be an Adobe Campaign form or an external form (extranet client). A functional administrator can define and configure the form based on a form template defined by the integrator. To order the campaign, the local entity just needs web access.
+   * **[!UICONTROL Collaborative campaign (by campaign)]**: recommended for campaigns aimed at dozens of local entities. This type of campaign creates child campaigns for each local entity. Once the **[!UICONTROL collaborative campaign (by campaign)]** is approved by the central entity, the campaign is made available to the local entity, who can modify it. Execution is automatically synched between parent and child campaigns. The local entity must have access to an instance to order a campaign and participate in it.
+   * **[!UICONTROL Collaborative campaign (by target approval)]**: recommended for campaigns aimed at several thousand local entities. Local entity receives a contact list that has been predefined by the central entity. The local entity decides whether or not to keep certain contacts based on the campaign content, via a web form. Local entities are deduced from the list of selected contacts. To participate in the campaign, the local entity just needs web access.
+   * **[!UICONTROL Collaborative campaign (simple)]**: this mode ensures compatibility with the specific execution processes of previous versions.
 
-**Beställa kampanjpaket**
+   Refer to [Creating a collaborative campaign](creating-a-collaborative-campaign.md).
 
-Om en lokal enhet registrerar för en kampanj görs detta i en order som grupperar all information som är relativ till kampanjlokaliseringen.
+**Ordering campaign packages**
+
+   If a local entity registers for a campaign this is made into an order which regroups all information relative to the campaign localization.
 
 ## Workspace {#workspace}
 
-Listan med kampanjpaket kan nås från fliken **Kampanjer**: klicka på länken **[!UICONTROL Campaign packages]**.
+The list of campaign packages can be accessed from the **Campaigns** tab: click the **[!UICONTROL Campaign packages]** link.
 
 ![](assets/mkg_dist_home_local_op.png)
 
-I det här fönstret kan alla lokala operatörer visa kampanjer som är tillgängliga för deras lokala myndighet.
+This window allows all local operators to view the campaigns available for their local agency.
 
-När det gäller centrala myndigheter visar det här fönstret alla paket som är tillgängliga i listan över kampanjpaket och erbjuder ytterligare länkar för redigering av listan.
+In the case of central agencies, this window displays all packages available in the list of campaign packages and offers additional links for editing the list.
 
-## Operatörer och enheter {#operators-and-entities}
+## Operators and entities {#operators-and-entities}
 
-Börja med att ange operatorer för central och lokal enhet via mappen **[!UICONTROL Access management]**.
+Start by specifying the central and local entity operators via the **[!UICONTROL Access management]** folder.
 
 ![](assets/s_advuser_mkg_dist_tree.png)
 
-### Operatorer {#operators}
+### Operators {#operators}
 
-Du måste skapa centrala och lokala operatorer.
+You need to create central and local operators.
 
-Centrala operatorer måste tillhöra operatorgruppen **[!UICONTROL Central management]** eller ha **[!UICONTROL CENTRAL]** namngiven.
+Central operators must belong to the **[!UICONTROL Central management]** operator group or have the **[!UICONTROL CENTRAL]** named right.
 
-Lokala operatorer måste tillhöra operatorgruppen **[!UICONTROL Local management]** eller ha **[!UICONTROL LOCAL]** namngiven. De måste också vara kopplade till sin lokala enhet.
+Local operators must belong to the **[!UICONTROL Local management]** operator group or have the **[!UICONTROL LOCAL]** named right. They must also be linked to their local entity.
 
 ![](assets/s_advuser_mkg_dist_local_create.png)
 
-### Organisationsenheter {#organizational-entities}
+### Organizational entities {#organizational-entities}
 
-Om du vill skapa en organisationsenhet klickar du på noden **[!UICONTROL Administration > Access management > Organizational entities]** och sedan på ikonen **[!UICONTROL New]** ovanför listan med enheter.
+To create an organizational entity, click the **[!UICONTROL Administration > Access management > Organizational entities]** node and click the **[!UICONTROL New]** icon above the list of entities.
 
 ![](assets/s_advuser_mkg_dist_local_list.png)
 
-Varje organisationsenhet innehåller identifieringsinformation (etikett, internt namn, kontaktinformation osv.) och grupper som deltar i ordergodkännandeprocessen. Dessa definieras i avsnittet **[!UICONTROL Notifications and approvals]** som finns på fliken **[!UICONTROL General]**.
+Each organizational entity contains identification information (label, internal name, contact information, etc.) and groups involved in the order approval process. These are defined in the **[!UICONTROL Notifications and approvals]** section found in the **[!UICONTROL General]** tab.
 
-* Definiera en paketmeddelandegrupp: operatorer i den här gruppen får ett meddelande varje gång ett nytt paket läggs till i listan över kampanjpaket och varje gång en kampanj blir tillgänglig.
-* Välj den grupp med granskare som ansvarar för att godkänna order, dvs. de som ansvarar för att godkänna kampanjer som beställts av den lokala enheten.
-* Slutligen väljer du den grupp med granskare som ansvarar för att godkänna den lokala kampanjen (mål, innehåll, budget osv.). Den här gruppen kan läggas till när du beställer en kampanj, beroende på mallen.
+* Define a package notification group: operators in this group will receive a notification each time a new package is added to the list of campaign packages and each time a campaign becomes available.
+* Select the group of reviewers in charge of approving orders, i.e. those in charge of approving campaigns ordered by the local entity.
+* Finally, select the group of reviewers in charge of approving the local campaign (target, content, budget, etc.). This group may be added to when ordering a campaign, depending on the template.
 
 >[!NOTE]
 >
->Godkännandeprocessen presenteras i avsnittet [Godkännandeprocess](creating-a-local-campaign.md#approval-process).
+>The approval process is presented in the [Approval process](creating-a-local-campaign.md#approval-process) section.
 
-## Implementering {#implementation}
+## Implementation {#implementation}
 
-Distribuerade marknadsföringskampanjer skapas och publiceras av den centrala enheten. De får användas av både lokala och centrala enheter efter behov.
+Distributed Marketing campaigns are created and published by the central entity. They may be used by both local and central entities as needed.
 
-Implementeringsproceduren beror på vilken typ av kampanjpaket som används och delegeringsnivåerna för den lokala enheten.
+The implementation procedure depends on the type of campaign package used and the local entity delegation levels.
 
-### Integreringsuppgifter {#integrator-side}
+### Integrator tasks {#integrator-side}
 
-1. Skapa lokala entiteter.
-1. Länka mottagare med operatorer som hanterar lokala enheter.
+1. Create local entities.
+1. Link recipients with the operators that manage local entities.
 
    ![](assets/mkg_dist_local_entity_association.png)
 
-1. Ange rättigheter och bläddringsregler för lokala entiteter
-1. Ange den uppsättning fält som krävs för kampanjlokalisering:
+1. Specify rights and browsing rules for local entities
+1. Specify the set of fields necessary for campaign localization:
 
-   * Måldefinition och maximal storlek.
-   * innehållsdefinition,
-   * körningsschema (kontaktdatum och extraheringsdatum), **endast för lokala operatorer**,
-   * tillägg av orderschema med alla nödvändiga ytterligare fält.
+    * target definition and maximum size,
+    * content definition,
+    * execution schedule (contact date and extraction date), **for local operators only**,
+    * extension of order schema with all necessary additional fields.
 
-1. Skapa ett webbformulär (Adobe eller extranät) som gör att du kan visa lokaliseringsparametrar, utvärdera mål och budget samt förhandsgranska innehållet och godkänna ordern.
+1. Create a web form (Adobe or extranet) that allows you to display localization parameters, evaluate the target and budget, as well as preview the content and approve the order.
 
-   Skapa tabellen där godkännandena för varje lokal enhet sparas för **samarbetskampanjer (efter målgodkännande)**.
+   For **collaborative campaigns (by target approval)**, create the table where the approvals for each local entity will be saved.
 
-### Funktionella administratörsuppgifter {#functional-administrator-side}
+### Functional administrator tasks {#functional-administrator-side}
 
-Dessa steg måste utföras när varje kampanj skapas.
+These steps must be carried out when creating each campaign.
 
-1. Uppdatera formuläret med fälten som används för kampanjlokalisering.
-1. Skapa en instans från en lämplig kampanjmall (samarbetskampanj) eller duplicera kampanjmallen (lokal kampanj).
-1. Konfigurera kampanjen med lokaliseringsfälten och formulärreferensen.
-1. Publish kampanjen.
+1. Update the form with the fields used for campaign localization.
+1. Create an instance from an appropriate campaign template (collaborative campaign) or duplicate the campaign template (local campaign).
+1. Configure the campaign with the localization fields and the form reference.
+1. Publish the campaign.
 
-### Lokala operatoruppgifter {#local-operator-side}
+### Local operator tasks {#local-operator-side}
 
-Dessa steg måste utföras för varje kampanj.
+These steps must be carried out for each campaign.
 
-1. När du har fått ett meddelande om kampanjpaketets tillgänglighet anger du kampanjens plats (valfritt).
-1. Utvärdera målet, budgeten osv.
-1. Förhandsgranska kampanjinnehåll.
-1. Beställ kampanjen.
+1. Once you receive notification of the campaign package's availability, specify the campaign's location (optional).
+1. Evaluate the target, the budget, etc.
+1. Preview campaign content.
+1. Order the campaign. --!>

@@ -3,8 +3,10 @@ product: campaign
 title: Spåra en kampanj
 description: Lär dig spåra en kampanj med Campaign Distributed Marketing
 feature: Distributed Marketing
+hide: true
+hidefromtoc: true
 exl-id: 87d1909c-d2eb-47ce-a860-0e78a64d2914
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: 36fe54cf6d4d762d96205bd637311a426c741427
 workflow-type: tm+mt
 source-wordcount: '416'
 ht-degree: 1%

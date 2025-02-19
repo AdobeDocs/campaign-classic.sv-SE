@@ -3,8 +3,10 @@ product: campaign
 title: Distribuerade marknadsexempel
 description: Distribuerade marknadsexempel
 feature: Distributed Marketing
+hide: true
+hidefromtoc: true
 exl-id: 2bef6b5e-887e-4c56-bb4b-3583472ca333
-source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
+source-git-commit: 36fe54cf6d4d762d96205bd637311a426c741427
 workflow-type: tm+mt
 source-wordcount: '1296'
 ht-degree: 0%
@@ -96,7 +98,7 @@ Stegen är följande:
 
 1. Skapa en **[!UICONTROL Data distribution]**-aktivitet.
 1. Skapa en samarbetskampanj.
-1. Publish kampanjen.
+1. Publicera kampanjen.
 
 ### Lokal entitetssida {#local-entity-side}
 
@@ -157,7 +159,7 @@ När kontrollerna har godkänts kan kampanjen starta automatiskt.
 
 1. Spara ditt material.
 
-#### Publish kampanjen {#publishing-the-campaign}
+#### Publicera kampanjen {#publishing-the-campaign}
 
 Du kan nu lägga till ett **kampanjpaket** från fliken **[!UICONTROL Campaigns]**.
 
