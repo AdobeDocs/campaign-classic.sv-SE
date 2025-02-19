@@ -4,10 +4,10 @@ title: Hantera och anpassa listor
 description: Lär dig att söka i och konfigurera listor
 feature: Audiences, Data Management
 exl-id: 21656cc2-15a1-4156-8897-ea4fe3e9b97f
-source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
+source-git-commit: f43b15e61fb286a612f057d8d3bf5a1ff6ecb253
 workflow-type: tm+mt
-source-wordcount: '1153'
-ht-degree: 1%
+source-wordcount: '66'
+ht-degree: 0%
 
 ---
 
@@ -15,191 +15,197 @@ ht-degree: 1%
 
 
 
-Du kan komma åt listor med poster i Campaign-databasen med Utforskaren. Du kan filtrera dessa listor, köra sökningar, lägga till information, filtrera och sortera data.
+I Campaign-klientkonsolen visas data i listor. Du kan anpassa listorna efter dina behov. Du kan till exempel lägga till kolumner, filtrera data, räkna poster, spara och dela inställningarna.
 
-## Räkna poster {#counting-records}
+>[!NOTE]
+>
+>Mer information om hur du hanterar och anpassar listor i Adobe Campaign finns i [dokumentationen för Campaign v8](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/config/configuration/ui-settings#customize-lists){target=_blank}.
 
-Som standard läser Adobe Campaign in de första 200 posterna i en lista. Det innebär att visningen inte nödvändigtvis visar alla poster i tabellen som du visar. Du kan räkna antalet poster i listan och läsa in fler poster.
+<!--
+## Count records {#counting-records}
 
-I den nedre högra delen av listskärmen visar en **[!UICONTROL counter]** hur många poster som har lästs in och det totala antalet poster i databasen (efter att eventuella filter har använts):
+By default, Adobe Campaign loads the first 200 records of a list. This means that the display does not necessarily show all the records of the table you are viewing. You can run a count of the number of records in the list and load more records.
+
+In the lower right-hand part of the list screen, a **[!UICONTROL counter]** shows how many records have been loaded and the total number of records in the database (after applying any filters):
 
 ![](assets/s_ncs_user_nb_200_0.png)
 
-Om en **?** visas i stället för siffran till höger. Klicka på räknaren för att starta beräkningen.
+If a "**?**" appears instead of the number on the right, click the counter to launch the calculation.
 
-### Läs in fler poster {#loading-more-records}
+### Load more records {#loading-more-records}
 
-Om du vill läsa in (och därför visa) ytterligare poster (200 rader som standard) klickar du på **[!UICONTROL Continue loading]**.
+To load (and therefore display) additional records (200 lines by default) click **[!UICONTROL Continue loading]**.
 
 ![](assets/s_ncs_user_load_list.png)
 
-Om du vill läsa in alla poster högerklickar du på listan och väljer **[!UICONTROL Load all]**.
+To load all the records, right-click the list and select **[!UICONTROL Load all]**.
 
 >[!CAUTION]
 >
->Beroende på antalet poster kan tiden för inläsning av den fullständiga listan vara lång.
+>Depending on the number of records, the time for loading the full list can be long.
 
-### Ändra standardantal poster {#change-default-number-of-records}
+### Change default number of records {#change-default-number-of-records}
 
-Om du vill ändra standardantalet inlästa poster klickar du på **[!UICONTROL Configure list]** längst ned till höger i listan.
+To change the default number of records loaded, click **[!UICONTROL Configure list]** in the bottom right-hand corner of the list.
 
 ![](assets/s_ncs_user_configure_list.png)
 
-Klicka på **[!UICONTROL Advanced parameters]** (längst ned till vänster) i fönstret för listkonfigurationen och ändra antalet rader som ska hämtas.
+In the list configuration window, click **[!UICONTROL Advanced parameters]** (bottom left) and change the number of lines to retrieve.
 
 ![](assets/s_ncs_user_configurelist_advancedparam.png)
 
-## Konfigurera listor {#configuring-lists}
+## Configure lists {#configuring-lists}
 
-### Lägg till kolumner {#add-columns}
+### Add columns {#add-columns}
 
-Det finns två sätt att lägga till en kolumn i en lista.
+There are two ways to add a column in a list.
 
-Du kan snabbt lägga till en kolumn i en lista från detaljerna i en post. Så här gör du:
+You can quickly add a column to a list from the detail of a record. To do this:
 
-1. På en detaljskärm högerklickar du på det fält som du vill visa i en kolumn.
-1. Välj **[!UICONTROL Add in the list]**.
+1. From a detail screen, right-click the field you want to display in a column.
+1. Select **[!UICONTROL Add in the list]**.
 
-   Kolumnen läggs till till höger om de befintliga kolumnerna.
+   The column is added to the right of the existing columns.
 
 ![](assets/s_ncs_user_add_in_list.png)
 
-Ett annat sätt att lägga till kolumner, till exempel om du vill visa data som inte visas på detaljskärmen, är att använda listkonfigurationsfönstret. Så här gör du:
+Another way to add columns, for example if you want to display data which is not displayed on the detail screen, is to use the list configuration window. To do this:
 
-1. Klicka **[!UICONTROL Configure list]** nedan och till höger om listan.
+1. Click **[!UICONTROL Configure list]** below and to the right of the list.
 
    ![](assets/s_ncs_user_configure_list.png)
 
-1. Dubbelklicka på fältet som ska läggas till i listan **[!UICONTROL Available fields]** i listkonfigurationsfönstret för att lägga till det i **[!UICONTROL Output columns]**.
+1. In the list configuration window, double-click the field to be added in the **[!UICONTROL Available fields]** list in order to add it to the **[!UICONTROL Output columns]**. 
 
    ![](assets/s_ncs_user_configurelist.png)
 
    >[!NOTE]
    >
-   >Som standard visas inte avancerade fält. Om du vill visa dem klickar du på **Visa avancerade fält** nedan och till höger om listan med tillgängliga fält.
+   >By default, advanced fields are not displayed. To display them, click **Display advanced fields** below and to the right of the list of available fields.
    >
-   >Etiketterna visas per tabell och sedan i alfabetisk ordning.
+   >The labels are displayed by table and then in alphabetical order.
    >
-   >Använd fältet **Sök** för att köra en sökning i de tillgängliga fälten. Mer information finns i [det här avsnittet](#sorting-a-list).
+   >Use the **Search** field to run a search in the available fields. For further information, refer to [this section](#sorting-a-list).
    >
-   >Fält identifieras av specifika ikoner: SQL-fält, länkade tabeller, beräkningsfält osv. För varje markerat fält visas beskrivningen under listan med tillgängliga fält. [Läs mer](#configuring-lists).
+   >Fields are identified by specific icons: SQL fields, linked tables, calculated fields, etc. For each field selected, the description is displayed under the list of available fields. [Learn more](#configuring-lists).  
    >
-   >Du kan också sortera och filtrera data. Se [det här avsnittet](../../platform/using/filtering-options.md).
+   >You can also sort and filter data. See [this section](../../platform/using/filtering-options.md).
 
-1. Upprepa för varje kolumn som ska visas.
-1. Använd pilarna för att ändra **visningsordningen**. Den högsta kolumnen finns till vänster i listan med poster.
+1. Repeat for each column to be displayed.
+1. Use the arrows to modify the **display order**. The highest column will be on the left in the list of records.
 
    ![](assets/s_ncs_user_columns_order_down.png)
 
-1. Om du behöver kan du klicka på **[!UICONTROL Distribution of values]** för att visa ompartitionen av värden för det valda fältet i den aktuella mappen.
+1. If you need, you can click **[!UICONTROL Distribution of values]** to view the repartition of values for the selected field in the current folder.
 
    ![](assets/s_ncs_user_configurelist_values.png)
 
-1. Klicka på **[!UICONTROL OK]** för att bekräfta konfigurationen och visa resultatet.
+1. Click **[!UICONTROL OK]** to confirm the configuration and display the result.
 
-### Skapa en ny kolumn {#create-a-new-column}
+### Create a new column {#create-a-new-column}
 
-Du kan skapa nya kolumner för att visa ytterligare fält i listan. Så här gör du:
+You can create new columns to display additional fields in the list. To do this:
 
-1. Klicka på **[!UICONTROL Configure the list]** nedan och till höger om listan.
-1. Klicka på **[!UICONTROL Add]** om du vill visa ett nytt fält i listan.
+1. Click **[!UICONTROL Configure the list]** at below and to the right of the list.
+1. Click **[!UICONTROL Add]** to display a new field in the list.
 
-### Ta bort en kolumn {#remove-a-column}
+### Remove a column {#remove-a-column}
 
-Du kan maskera en eller flera kolumner i en lista med poster med **[!UICONTROL Configure list]** som finns nedanför och till höger om listan.
+You can mask one or more columns in a list of records using **[!UICONTROL Configure list]** located below and to the right of the list.
 
 ![](assets/s_ncs_user_configure_list.png)
 
-I listkonfigurationsfönstret markerar du den kolumn som ska maskeras från zonen **[!UICONTROL Output columns]** och klickar på knappen Ta bort.
+In the list configuration window, select the column to be masked from the **[!UICONTROL Output columns]** zone, and click the delete button.
 
 ![](assets/s_ncs_user_removecolumn_icon.png)
 
-Upprepa för varje kolumn som ska maskeras. Klicka på **[!UICONTROL OK]** för att bekräfta konfigurationen och visa resultatet.
+Repeat for each column to be masked. Click **[!UICONTROL OK]** to confirm the configuration and display the result.
 
-### Justera kolumnbredd {#adjust-column-width}
+### Adjust column width {#adjust-column-width}
 
-När en lista är aktiv, d.v.s. minst en rad är markerad, kan du använda F9 för att justera bredden på kolumnerna så att alla kolumner kan visas på skärmen.
+When a list is active, i.e. at least one line is selected, you can use F9 to adjust the width of the columns so that all the columns can be displayed on screen.
 
-### Visa data i undermappar {#display-sub-folders-records}
+### Display data in sub-folders {#display-sub-folders-records}
 
-Listor kan visa:
+Lists can display:
 
-* Antingen posterna i den valda mappen,
-* Eller posterna i den markerade mappen OCH dess undermappar.
+* Either the records contained in the selected folder only,
+* Or the records in the selected folder AND its sub-folders.
 
-Om du vill växla från ett visningsläge till ett annat klickar du på **[!UICONTROL Display sub-levels]** i verktygsfältet.
+To switch from one display mode to the other, click **[!UICONTROL Display sub-levels]** in the toolbar.
 
 ![](assets/s_ncs_user_display_children_icon.png)
 
-## Spara en listkonfiguration {#saving-a-list-configuration}
+## Save a list configuration {#saving-a-list-configuration}
 
-Listkonfigurationerna definieras lokalt på arbetsstationsnivå. När den lokala cachen rensas inaktiveras lokala konfigurationer.
+The list configurations are defined locally at the workstation level. When the local cache is cleared, local configurations are disabled.
 
-Som standard gäller de definierade visningsparametrarna för alla listor med motsvarande mapptyp. När du ändrar hur listan med mottagare visas från en mapp kommer den här konfigurationen att användas för alla övriga mottagarmappar.
+By default, the defined display parameters apply to all lists with the corresponding folder type. Thus, when you modify how the list of recipients is displayed from a folder, this configuration will be applied to all the other recipient folders.
 
-Det går dock att spara mer än en konfiguration som ska användas på olika mappar av samma typ. Konfigurationen sparas med egenskaperna för den mapp som innehåller data och kan tillämpas på nytt.
+It is, however, possible to save more than one configuration to be applied to different folders of the same type. The configuration is saved with the properties of the folder containing the data and can be reapplied.
 
-För en leveransmapp är det till exempel möjligt att konfigurera följande visning:
+For example, for a delivery folder, it is possible to configure the following display:
 
 ![](assets/s_ncs_user_folder_save_config_1.png)
 
-Följ stegen nedan för att spara listkonfigurationen så att den kan återanvändas:
+To save this list configuration so that it can be reused, follow the steps below:
 
-1. Högerklicka på mappen som innehåller de data som visas.
-1. Välj **[!UICONTROL Properties]**.
-1. Klicka på **[!UICONTROL Advanced settings]** och ange sedan ett namn i fältet **[!UICONTROL Configuration]**.
+1. Right click the folder containing the displayed data.
+1. Select **[!UICONTROL Properties]**.
+1. Click **[!UICONTROL Advanced settings]** and then specify a name in the **[!UICONTROL Configuration]** field. 
 
    ![](assets/s_ncs_user_folder_save_config_2.png)
 
-1. Klicka på **[!UICONTROL OK]** och sedan på **[!UICONTROL Save]**.
+1. Click **[!UICONTROL OK]** and then click **[!UICONTROL Save]**.
 
-Du kan sedan använda den här konfigurationen för en annan **leveransmapp**:
+You can then apply this configuration to another **Delivery** folder:
 
 ![](assets/s_ncs_user_folder_save_config_3.png)
 
-Klicka på **[!UICONTROL Save]** i fönstret för mappegenskaper. Listvisningen har ändrats så att den matchar den angivna konfigurationen:
+Click **[!UICONTROL Save]** in the folder properties window. The list display is modified to match the specified configuration:
 
 ![](assets/s_ncs_user_folder_save_config_5.png)
 
-## Exportera en lista {#exporting-a-list}
+## Export a list {#exporting-a-list}
 
-Om du vill exportera data från en lista måste du använda en exportassistent. Om du vill komma åt den markerar du de element som ska exporteras från listan, högerklickar och väljer **[!UICONTROL Export...]**.
+To export data from a list, you must use an export assistant. To access it, select the elements to be exported from the list, right-click and select **[!UICONTROL Export...]**.
 
-Användningen av import- och exportfunktionerna förklaras i [Allmän import och export](../../platform/using/about-generic-imports-exports.md).
+The use of the import and export functions is explained in [Generic imports and exports](../../platform/using/about-generic-imports-exports.md).
 
 >[!CAUTION]
 >
->Element från en lista får inte exporteras med funktionen Kopiera/Klistra in.
+>Elements from a list must not be exported using the Copy/Paste function.
 
-## Sortera en lista {#sorting-a-list}
+## Sort a list {#sorting-a-list}
 
-Listor kan innehålla en stor mängd data. Du kan sortera dessa data eller använda enkla eller avancerade filter. Med sortering kan du visa data i stigande eller fallande ordning. Med filter kan du definiera och kombinera villkor så att endast markerade data visas.
+Lists can contain a large amount of data. You can sort these data or apply simple or advanced filters. Sorting lets you display data in ascending or descending order. Filters let you define and combine criteria to display selected data only.
 
-Klicka på kolumnrubriken om du vill använda en stigande eller fallande sortering eller om du vill avbryta sorteringen. Aktiv sorteringsstatus och sorteringsordning anges med en blå pil före kolumnetiketten. Ett rött streck före kolumnetiketten betyder att sorteringen tillämpas på data som indexeras från databasen. Den här sorteringsmetoden används för att optimera sorteringsjobb.
+Click the column header to apply an ascending or descending sort, or to cancel data sorting. Active sort status and sorting order are indicated by a blue arrow before the column label. A red dash before the column label means that the sort is applied to data indexed from the database. This sorting method is used to optimize sort jobs.
 
-Du kan också konfigurera sortering eller kombinera sorteringsvillkor. Gör så här:
+You can also configure sorting or combine sort criteria. To do this, follow the steps below:
 
-1. **[!UICONTROL Configure list]** nedanför och till höger om listan.
+1. **[!UICONTROL Configure list]** below and to the right of the list. 
 
    ![](assets/s_ncs_user_configure_list.png)
 
-1. Klicka på fliken **[!UICONTROL Sorting]** i listkonfigurationsfönstret.
-1. Markera de fält som ska sorteras och sorteringsriktningen (stigande eller fallande).
+1. In the list configuration window, click the **[!UICONTROL Sorting]** tab.
+1. Select the fields to sort and the sort direction (ascending or descending).
 
    ![](assets/s_ncs_user_configurelist_sort.png)
 
-1. Sorteringsprioriteten definieras av sorteringskolumnernas ordning. Om du vill ändra prioriteten använder du lämpliga ikoner för att ändra ordningen på kolumnerna.
+1. Sort priority is defined by the order of the sort columns. To change the priority, use the appropriate icons to change the order of the columns.
 
    ![](assets/s_ncs_user_configurelist_move.png)
 
-   Sorteringsprioriteten påverkar inte visningen av kolumnerna i listan.
+   Sort priority does not affect the display of the columns in the list.
 
-1. Klicka på **[!UICONTROL Ok]** för att bekräfta konfigurationen och visa resultatet i listan.
+1. Click **[!UICONTROL Ok]** to confirm this configuration and display the result in the list.
 
-### Söka efter element {#running-a-search}
+### Searching elements {#running-a-search}
 
-Du kan köra en sökning i de tillgängliga fälten i en redigerare med hjälp av fältet **[!UICONTROL Search]** som finns ovanför listan med fält. Tryck på **Enter** på tangentbordet eller bläddra i listan. Fälten som matchar sökningen får feta etiketter.
+You can run a search of the available fields in an editor using the **[!UICONTROL Search]** field located above the list of fields. Press **Enter** on the keyboard or browse the list. The fields that match your search will have bold labels.
 
 >[!NOTE]
 >
->Du kan skapa filter för att endast visa en del av data i en lista. [Läs mer](../../platform/using/creating-filters.md).
+>You can create filters to display only some of the data in a list. [Learn more](../../platform/using/creating-filters.md).
+-->
