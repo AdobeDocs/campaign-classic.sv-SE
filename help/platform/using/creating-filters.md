@@ -8,16 +8,17 @@ audience: platform
 content-type: reference
 topic-tags: filtering-data
 exl-id: 58e54f67-dc87-42f1-8426-6f801e8e4fb6
-source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
+source-git-commit: 813ef65ff45407a92c5f9d7f3d07189972a5742b
 workflow-type: tm+mt
-source-wordcount: '1979'
-ht-degree: 0%
+source-wordcount: '166'
+ht-degree: 3%
 
 ---
 
 # Skapa filter{#creating-filters}
 
 
+Datafiltrering är processen att välja en mindre del av datauppsättningen, bara de poster som matchar vissa villkor, och att använda den deluppsättningen för specifika åtgärder (uppdateringar, målgruppsgenerering) eller analyser.
 
 När du navigerar i Adobe Campaign-trädet (från menyn **[!UICONTROL Explorer]** på startsidan) visas data i databasen i listor. Dessa listor kan konfigureras så att endast de data som krävs av operatorn visas. Åtgärder kan sedan startas på filtrerade data. Med filterkonfigurationen kan du välja data från en lista **[!UICONTROL dynamically]**. Om data ändras uppdateras de filtrerade data.
 
@@ -25,357 +26,365 @@ När du navigerar i Adobe Campaign-trädet (från menyn **[!UICONTROL Explorer]*
 >
 >Konfigurationsinställningarna för användargränssnittet definieras lokalt på enhetsnivå. Ibland kan det vara nödvändigt att rensa upp dessa data, särskilt om det uppstår problem när data uppdateras. Använd menyn **[!UICONTROL File > Clear the local cache]** om du vill göra det.
 
-## Typologi för tillgängliga filter {#typology-of-available-filters}
+>[!NOTE]
+>
+>Mer information om filter och hur du använder dem finns i [Campaign v8-dokumentationen](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/audience/create-audiences/create-filters){target=_blank}.
 
-Med Adobe Campaign kan du använda filter på datalistor.
 
-Dessa filter kan användas en gång eller så kan du spara dem för framtida bruk. Du kan använda flera filter samtidigt.
+<!--
 
-Följande filtertyper finns i Adobe Campaign:
+## Typology of available filters {#typology-of-available-filters}
 
-* **Standardfilter**
+Adobe Campaign lets you apply filters to data lists.
 
-  **Standardfiltret** är tillgängligt via fälten som finns ovanför listorna. Du kan filtrera efter fördefinierade fält (för mottagarprofiler är dessa som standard namn och e-postadress). Du kan använda fälten för att ange tecken som ska filtreras eller för att välja filtervillkor från en nedrullningsbar lista.
+These filters can be used once, or you can save them for future use. You can apply several filters at the same time.
+
+The following filter types are available in Adobe Campaign:
+
+* **Default filters**
+
+  The **default filter** is accessible via the fields located above the lists. It lets you filter on predefined fields (for recipient profiles, these are the name and email address by default). You can use the fields to enter the characters to filter on or to selection the filter conditions from a drop-down list.
 
   ![](assets/filters_recipient_default_filter.png)
 <!--
   >[!NOTE]
   >
   >The **%** character replaces any character string. For example, the string `%@yahoo.com` lets you display all the profiles with an email address in the domain "yahoo.com".
--->
-Du kan ändra standardfiltret för en lista. Mer information finns i [Ändra standardfiltret](#altering-the-default-filter).
 
-* **Enkla filter**
+  You can change the default filter of a list. For more on this, refer to [Change the default filter](#altering-the-default-filter).
 
-  **Enkla filter** är engångsfilter i kolumnerna. De definieras med ett eller flera enkla sökvillkor i de kolumner som visas.
+* **Simple filters**
 
-  Du kan kombinera flera enkla filter i samma datalista för att begränsa sökningen. Filterfälten visas ett under det andra. De kan tas bort oberoende av varandra.
+  **Simple filters** are one-off filters on the columns. They are defined with one or more simple search criteria on the displayed columns.
+
+  You can combine several simple filters on the same data list to refine your search. The filter fields are displayed one beneath the other. They can be deleted independently of each other.
 
   ![](assets/filters_recipient_simple_filter.png)
 
-  Enkla filter beskrivs i [Skapa ett enkelt filter](#creating-a-simple-filter).
+  Simple filters are detailed in [Create a simple filter](#creating-a-simple-filter).
 
-* **Avancerade filter**
+* **Advanced filters**
 
-  **Avancerade filter** skapas med en fråga eller en kombination av frågor på data.
+  **Advanced filters** are created using a query or a combination of queries on the data.
 
-  Mer information om hur du skapar ett avancerat filter finns i [Skapa ett avancerat filter](#creating-an-advanced-filter).
+  For more on creating an advanced filter, refer to [Create an advanced filter](#creating-an-advanced-filter).
 
-  Du kan använda funktioner för att definiera filtrets innehåll. Mer information finns i [Skapa ett avancerat filter med funktioner](#creating-an-advanced-filter-with-functions).
+  You can use functions to define the content of the filter. For more on this, refer to [Create an advanced filter with functions](#creating-an-advanced-filter-with-functions).
 
   >[!NOTE]
   >
-  >Mer information om hur du skapar frågor i Adobe Campaign finns i [det här avsnittet](../../platform/using/about-queries-in-campaign.md).
+  >For more on building queries in Adobe Campaign, refer to [this section](../../platform/using/about-queries-in-campaign.md).
 
-* **Användarfilter**
+* **User filters**
 
-  Ett **programfilter** är ett avancerat filter som har sparats för att använda och dela konfigurationen med andra operatorer.
+  An **application filter** is an advanced filter that has been saved, to use and share its configuration with the other operators.
 
-  Knappen **[!UICONTROL Filters]** som finns ovanför listorna innehåller en uppsättning programfilter som kan kombineras för att förfina filtreringen. Metoden för att skapa dessa filter beskrivs i [Spara ett filter](#saving-a-filter).
+  The **[!UICONTROL Filters]** button located above the lists offers a set of application filters that can be combined to refine the filtering. The method for creating these filters is presented in [Save a filter](#saving-a-filter).
 
-## Ändra standardfiltret {#altering-the-default-filter}
+## Change the default filter {#altering-the-default-filter}
 
-Om du vill ändra standardfiltret för en mottagarlista klickar du på noden **[!UICONTROL Profiles and Targets > Pre-defined filters]** i trädet.
+To change the default filter for a recipient list, click the **[!UICONTROL Profiles and Targets > Pre-defined filters]** node of the tree.
 
-Konfigurera standardfiltret via noden **[!UICONTROL Administration > Configuration > Predefined filters]** för alla andra typer av data.
+For all other types of data, configure the default filter via the **[!UICONTROL Administration > Configuration > Predefined filters]** node.
 
-Använd följande steg:
+Apply the following steps:
 
-1. Markera det filter som du vill använda som standard.
-1. Klicka på fliken **[!UICONTROL Parameters]** och välj **[!UICONTROL Default filter for the associated document type]**.
+1. Select the filter you want to be used by default.
+1. Click the **[!UICONTROL Parameters]** tab and select **[!UICONTROL Default filter for the associated document type]**.
 
    ![](assets/s_ncs_user_default_filter.png)
 
    >[!CAUTION]
    >
-   >Om ett standardfilter redan används i listan måste du inaktivera det innan du använder ett nytt filter. Om du vill göra det klickar du på det röda krysset till höger om filterfälten.
+   >If a default filter is already applied to the list, you need to disable it before applying a new filter. To do this, click the red cross to the right of the filtering fields.
 
-1. Klicka på **[!UICONTROL Save]** för att använda filtret.
+1. Click **[!UICONTROL Save]** to apply the filter.
 
    >[!NOTE]
    >
-   >Filterdefinitionsfönstret beskrivs i [Skapa ett avancerat filter](#creating-an-advanced-filter) och [Spara ett filter](#saving-a-filter).
+   >The filter definition window is detailed in [Create an advanced filter](#creating-an-advanced-filter) and [Save a filter](#saving-a-filter).
 
-## Skapa ett enkelt filter {#creating-a-simple-filter}
+## Create a simple filter {#creating-a-simple-filter}
 
-Så här skapar du ett **enkelt filter**:
+To create a **simple filter**, apply the following steps:
 
-1. Högerklicka på det fält som du vill filtrera och välj **[!UICONTROL Filter on this field]**.
+1. Right-click the field you want to filter and select **[!UICONTROL Filter on this field]**.
 
    ![](assets/s_ncs_user_sort_this_field.png)
 
-   Standardfilterfälten visas ovanför listan.
+   The default filter fields are displayed above the list.
 
-1. Välj filteralternativet i listrutan eller ange filtervillkoren som ska användas (metoden för att välja eller ange villkor beror på fälttypen: text, enumererad osv.).
+1. Select the filter option from the drop-down list, or enter the filter criteria to apply (the method for selecting or entering criteria depends on the type of field: text, enumerated, etc.).
 
    ![](assets/s_ncs_user_sort_fields.png)
 
-1. Aktivera filtret genom att trycka på Enter på tangentbordet eller klicka på den gröna pilen till höger om filterfälten.
+1. To activate the filter, press Enter on the keyboard, or click the green arrow to the right of the filter fields.
 
-Om fältet som du vill filtrera data i inte visas som en profil kan du lägga till det i de kolumner som visas och sedan filtrera på den kolumnen. För att göra detta
+If the field on which you want to filter the data is not displayed in the form of the profile, you can add it in the columns displayed, then filter on that column. To do this,
 
-1. Klicka på ikonen **[!UICONTROL Configure the list]**.
+1. Click the **[!UICONTROL Configure the list]** icon.
 
    ![](assets/s_ncs_user_configure_list.png)
 
-1. Markera den kolumn som ska visas, t.ex. mottagarnas ålder.
+1. Select the column to be displayed, for example the age of the recipients.
 
    ![](assets/s_ncs_user_select_fields_to_display.png)
 
-1. Högerklicka på kolumnen **Ålder** i mottagarlistan och välj **[!UICONTROL Filter on this column]**.
+1. Right-click the **Age** column in the recipient list, and select **[!UICONTROL Filter on this column]**.
 
    ![](assets/s_ncs_user_sort_this_column.png)
 
-   Du kan sedan välja alternativ för åldersfiltrering.
+   You can then select the age filtering options.
 
    ![](assets/s_ncs_user_delete_filter.png)
 
-## Skapa ett avancerat filter {#creating-an-advanced-filter}
+## Create an advanced filter {#creating-an-advanced-filter}
 
-Så här skapar du ett **avancerat filter**:
+To create an **advanced filter**, apply the following steps:
 
-1. Klicka på knappen **[!UICONTROL Filters]** och välj **[!UICONTROL Advanced filter...]**.
+1. Click the **[!UICONTROL Filters]** button and select **[!UICONTROL Advanced filter...]**. 
 
    ![](assets/filters_recipient_create_adv_filter.png)
 
-   Du kan också högerklicka på listan med data som ska filtreras och välja **[!UICONTROL Advanced filter...]**.
+   You can also right-click the list of data to filter and select **[!UICONTROL Advanced filter...]**.
 
-   Definitionsfönstret för filtervillkor visas.
+   The filtering condition definition window is displayed.
 
-1. Klicka på kolumnen **[!UICONTROL Expression]** för att definiera indatavärdet.
-1. Klicka på **[!UICONTROL Edit expression]** för att markera fältet som filtret ska tillämpas på.
+1. Click the **[!UICONTROL Expression]** column to define the input value.
+1. Click **[!UICONTROL Edit expression]** to select the field to which the filter will be applied.
 
    ![](assets/s_user_filter_choose_field.png)
 
-1. I listan markerar du det fält där data ska filtreras. Klicka på **[!UICONTROL Finish]** för att bekräfta.
-1. Klicka på kolumnen **[!UICONTROL Operator]** och välj den operator som ska användas i listrutan.
-1. Välj ett förväntat värde i kolumnen **[!UICONTROL Value]**. Du kan kombinera flera filter för att förfina frågan. Klicka på **[!UICONTROL Add]** om du vill lägga till ett filtervillkor.
+1. From the list, select the field on which data will be filtered. Click **[!UICONTROL Finish]** to confirm.
+1. Click the **[!UICONTROL Operator]** column and select the operator to be applied from the drop-down list.
+1. Select an expected value from the **[!UICONTROL Value]** column. You can combine several filters to refine your query. To add a filter condition, click **[!UICONTROL Add]**.
 
    ![](assets/s_ncs_user_filter_add_button_alone.png)
 
-1. Du kan tilldela uttryck en hierarki eller ändra ordningen på frågeuttrycken med hjälp av pilarna i verktygsfältet.
-1. Standardoperatorn mellan uttryck är **And**, men du kan ändra den genom att klicka på fältet. Du kan välja en **eller**-operator.
+1. You can assign a hierarchy to the expressions or change the order of the query expressions using the toolbar arrows.
+1. The default operator between expressions is **And**, but you can change this by clicking the field. You can select an **Or** operator.
 
    ![](assets/s_ncs_user_filter_operator.png)
 
-1. Klicka på **[!UICONTROL OK]** för att bekräfta att filter har skapats och tillämpa det på listan.
+1. Click **[!UICONTROL OK]** to confirm filter creation and apply it to the list.
 
-Filtret som används visas ovanför listan.
+The filter applied is displayed above the list.
 
 ![](assets/s_ncs_user_filter_adv_edit.png)
 
-Om du vill redigera eller ändra det här filtret klickar du på filtrets etikett.
+To edit or modify this filter, click its label.
 
-Om du vill avbryta det här filtret klickar du på ikonen **[!UICONTROL Remove this filter]** till höger om filtret.
+To cancel this filter, click the **[!UICONTROL Remove this filter]** icon to the right of the filter.
 
 ![](assets/s_ncs_user_filter_adv_remove.png)
 
-Du kan spara ett avancerat filter om du vill behålla det för framtida bruk. Mer information om den här filtertypen finns i [Spara ett filter](#saving-a-filter).
+You can save an advanced filter to keep it for future use. For further information about this type of filter, see [Save a filter](#saving-a-filter).
 
-### Skapa ett avancerat filter med funktioner {#creating-an-advanced-filter-with-functions}
+### Create an advanced filter with functions {#creating-an-advanced-filter-with-functions}
 
-Avancerade filter kan använda funktioner. **Filter med funktioner** skapas via en uttrycksredigerare där du kan skapa formler med hjälp av databasdata och avancerade funktioner. Om du vill skapa ett filter med funktioner upprepar du stegen 1, 2 och 3 för att skapa avancerade filter och fortsätter sedan enligt följande:
+Advanced filters can use functions; **filters with functions** are created via an expression editor that lets you create formulas using the database data and advanced functions. To create a filter with functions, repeat advanced filter creation steps 1, 2 and 3, then proceed as follows:
 
-1. Klicka på **[!UICONTROL Advanced selection]** i fältvalsfönstret.
-1. Välj formeltyp som ska användas: sammanställning, befintligt användarfilter eller uttryck.
+1. In the field selection window, click **[!UICONTROL Advanced selection]**.
+1. Select the type of formula to be used: aggregate, existing user filter or expression.
 
    ![](assets/s_ncs_user_filter_formula_select.png)
 
-   Följande alternativ är tillgängliga:
+   The following options are available:
 
-   * **[!UICONTROL Field only]** för att välja ett fält. Det här är standardläget.
-   * **[!UICONTROL Aggregate]** för att välja den sammanställningsformel som ska användas (antal, summa, genomsnitt, maximum, minimum).
-   * **[!UICONTROL User filter]** om du vill välja ett av de befintliga användarfiltren. Användarfilter finns i [Spara ett filter](#saving-a-filter).
-   * **[!UICONTROL Expression]** för att komma åt uttrycksredigeraren.
+    * **[!UICONTROL Field only]** to select a field. This is the default mode. 
+    * **[!UICONTROL Aggregate]** to select the aggregate formula to be used (counts, sum, average, maximum, minimum).
+    * **[!UICONTROL User filter]** to select one of the existing user filters. User filters are detailed in [Save a filter](#saving-a-filter).
+    * **[!UICONTROL Expression]** to access the expressions editor.
 
-     Med uttrycksredigeraren kan du definiera ett avancerat filter. Det ser ut så här:
+      The expression editor lets you define an advanced filter. It looks like this:
+    
+      ![](assets/s_ncs_user_create_exp_exple01.png)
 
-     ![](assets/s_ncs_user_create_exp_exple01.png)
+      It lets you select fields in the database tables and attach advanced functions to them: Select the function to use in the **[!UICONTROL List of functions]**. The functions available are detailed in [List of functions](../../platform/using/defining-filter-conditions.md#list-of-functions). Next, select the field or fields concerned by the functions and click **[!UICONTROL OK]** to approve the expression.
 
-     Här kan du markera fält i databastabellerna och bifoga avancerade funktioner till dem: Välj den funktion som ska användas i **[!UICONTROL List of functions]**. Tillgängliga funktioner beskrivs i [Lista över funktioner](../../platform/using/defining-filter-conditions.md#list-of-functions). Markera sedan det eller de fält som berörs av funktionerna och klicka på **[!UICONTROL OK]** för att godkänna uttrycket.
+      >[!NOTE]
+      >
+      >For an example of filter creation based on an expression, refer to [this section](../../workflow/using/sending-a-birthday-email.md#identifying-recipients-whose-birthday-it-is).
 
-     >[!NOTE]
-     >
-     >Ett exempel på hur du skapar filter baserat på ett uttryck finns i [det här avsnittet](../../workflow/using/sending-a-birthday-email.md#identifying-recipients-whose-birthday-it-is).
+## Save a filter {#saving-a-filter}
 
-## Spara ett filter {#saving-a-filter}
+Filters are specific to each operator and are re-initialized each time the operator clears the cache of their client console.
 
-Filter är specifika för varje operator och initieras om varje gång operatorn rensar cachen för sin klientkonsol.
+You can create an **application filter** by saving an advanced filter: it can be re-used by right-clicking in any list or via the **[!UICONTROL Filters]** button located above the lists.
 
-Du kan skapa ett **programfilter** genom att spara ett avancerat filter: det kan återanvändas genom att högerklicka i en lista eller via knappen **[!UICONTROL Filters]** ovanför listorna.
+These filters can also be accessed directly via the delivery assistant, in the target selection stage (refer to [this section](../../delivery/using/creating-an-email-delivery.md) for more on creating deliveries). To create the application filter, you can:
 
-De här filtren kan också nås direkt via leveransassistenten i målurvalsfasen (se [det här avsnittet](../../delivery/using/creating-an-email-delivery.md) för mer information om hur du skapar leveranser). Om du vill skapa programfiltret kan du:
-
-* Konvertera ett avancerat filter till ett programfilter. Klicka på **[!UICONTROL Save]** innan du stänger den avancerade filterredigeraren.
+* Convert an advanced filter to an application filter. To do this, click **[!UICONTROL Save]** before closing the advanced filter editor.
 
   ![](assets/s_ncs_user_filter_save.png)
 
-* Skapa det här programfiltret via noden **[!UICONTROL Administration > Configuration > Predefined filters]** (eller **[!UICONTROL Profiles and targets > Predefined filters]** för mottagare) i trädet. Om du vill göra det högerklickar du på filterlistan och väljer **[!UICONTROL New...]**. Proceduren är densamma som när du skapar avancerade filter.
+* Create this application filter via the **[!UICONTROL Administration > Configuration > Predefined filters]** (or **[!UICONTROL Profiles and targets > Predefined filters]** for recipients) node of the tree. To do this, right-click the list of filters, and select **[!UICONTROL New...]**. The procedure is the same as for creating advanced filters.
 
-  I fältet **[!UICONTROL Label]** kan du namnge det här filtret. Det här namnet visas i kombinationsrutan för knappen **[!UICONTROL Filters...]**.
+  The **[!UICONTROL Label]** field enables you to name this filter. This name will appear in the combo box of the **[!UICONTROL Filters...]** button. 
 
   ![](assets/user_filter_apply.png)
 
-Du kan ta bort alla filter i den aktuella listan genom att högerklicka och välja **[!UICONTROL No filter]** eller via ikonen **[!UICONTROL Filters]** som finns ovanför listan.
+You can delete all filters on the current list by right-clicking and selecting **[!UICONTROL No filter]** or via the **[!UICONTROL Filters]** icon located above the list.  
 
-Du kan kombinera filter genom att klicka på knappen **[!UICONTROL Filters]** och använda menyn **[!UICONTROL And...]**.
+You can combine filters by clicking the **[!UICONTROL Filters]** button and using the **[!UICONTROL And...]** menu.
 
 ![](assets/s_ncs_user_filter_combination.png)
 
-## Filtrera mottagare {#filtering-recipients}
+## Filter recipients {#filtering-recipients}
 
-Med fördefinierade filter (se [Spara ett filter](#saving-a-filter)) kan du filtrera mottagarprofilerna i databasen. Du kan redigera filter från noden **[!UICONTROL Profiles and Targets > Predefined filters]** i trädet. Filtren visas i den övre delen av arbetsytan, via knappen **[!UICONTROL Filters]**.
+Predefined filters (see [Save a filter](#saving-a-filter)) enable you to filter the profiles of recipients contained in the database. You can edit filters from the **[!UICONTROL Profiles and Targets > Predefined filters]** node of the tree. The filters are listed in the upper section of the workspace, via the **[!UICONTROL Filters]** button.
 
-Markera ett filter om du vill visa dess definition och få tillgång till en förhandsvisning av filtrerade data.
+Select a filter to display its definition and to access a preview of the filtered data.
 
 ![](assets/s_ncs_user_segment_edit.png)
 
 >[!NOTE]
 >
->Ett detaljerat exempel på hur du skapar fördefinierade filter finns i [Använd skiftläge](../../platform/using/use-case.md).
+>For a detailed example of predefined filter creation, refer to [Use case](../../platform/using/use-case.md).
 
-De fördefinierade filtren är:
+The predefined filters are:
 
 <table> 
  <tbody> 
   <tr> 
-   <td> <strong>Etikett</strong><br /> </td> 
-   <td> <strong>Fråga</strong><br /> </td> 
+   <td> <strong>Label</strong><br /> </td> 
+   <td> <strong>Query</strong><br /> </td> 
   </tr> 
   <tr> 
-   <td> Öppnad<br /> </td> 
-   <td> Väljer mottagare som har öppnat en leverans.<br /> </td> 
+   <td> Opened<br /> </td> 
+   <td> Selects recipients who have opened a delivery.<br /> </td> 
   </tr> 
   <tr> 
-   <td> Öppnad men inte klickad <br /> </td> 
-   <td> Väljer mottagare som har öppnat en leverans men inte klickat på en länk.<br /> </td> 
+   <td> Opened but not clicked<br /> </td> 
+   <td> Selects recipients who have opened a delivery but have not clicked on a link.<br /> </td> 
   </tr> 
   <tr> 
-   <td> Inaktiva mottagare<br /> </td> 
-   <td> Väljer mottagare som inte har öppnat en leverans på X månader.<br /> </td> 
+   <td> Inactive recipients<br /> </td> 
+   <td> Selects recipients who have not opened a delivery in X months.<br /> </td> 
   </tr> 
   <tr> 
-   <td> Senaste aktivitet efter enhetstyp <br /> </td> 
-   <td> Väljer mottagare som har klickat eller öppnat leveransadress Y med enhet X de senaste Z-dagarna.<br /> </td> 
+   <td> Last activity by device type<br /> </td> 
+   <td> Selects recipients who have clicked or opened delivery Y using device X in the last Z days.<br /> </td> 
   </tr> 
   <tr> 
-   <td> Senaste aktivitet per enhetstyp (spårning) <br /> </td> 
-   <td> Väljer mottagare som har klickat eller öppnat leveransadress Y med enhet X de senaste Z-dagarna.<br /> </td> 
+   <td> Last activity by device type (Tracking)<br /> </td> 
+   <td> Selects recipients who have clicked or opened delivery Y using device X in the last Z days.<br /> </td> 
   </tr> 
   <tr> 
-   <td> Mottagare utan mål <br /> </td> 
-   <td> Väljer mottagare som aldrig har fått mål via kanal Y på X månader.<br /> </td> 
+   <td> Untargeted recipients<br /> </td> 
+   <td> Selects recipients who have never been targeted via channel Y in X months.<br /> </td> 
   </tr> 
   <tr> 
-   <td> Mycket aktiva mottagare<br /> </td> 
-   <td> Väljer mottagare som har klickat på en leverans minst X gånger under de senaste Y-månaderna.<br /> </td> 
+   <td> Very active recipients<br /> </td> 
+   <td> Selects recipients who have clicked in a delivery at least X times in the last Y months.<br /> </td> 
   </tr> 
   <tr> 
- <td> Blocklist e-postadress <br /> </td> 
-    <td> Väljer mottagare vars e-postadress finns på blockeringslista.<br/> </td>
+ <td> Denylisted email address<br /> </td> 
+    <td> Selects recipients whose email address is on the denylist.<br/> </td>
   </tr> 
   <tr> 
-   <td> E-postadress i karantän <br /> </td> 
-   <td> Väljer mottagare vars e-postadress är i karantän.<br /> </td> 
+   <td> Quarantined email address<br /> </td> 
+   <td> Selects recipients whose email address is quarantined.<br /> </td> 
   </tr> 
   <tr> 
-   <td> E-postadresser dupliceras i mappen <br /> </td> 
-   <td> Väljer mottagare vars e-postadress är duplicerad i mappen.<br /> </td> 
+   <td> Email addresses duplicated in the folder<br /> </td> 
+   <td> Selects recipients whose email address is duplicated in the folder.<br /> </td> 
   </tr> 
   <tr> 
-   <td> Varken öppnad eller klickad <br /> </td> 
-   <td> Väljer mottagare som inte har öppnat en leverans eller klickat i en leverans.<br /> </td> 
+   <td> Neither opened nor clicked<br /> </td> 
+   <td> Selects recipients who have not opened a delivery, or clicked in a delivery.<br /> </td> 
   </tr> 
   <tr> 
-   <td> Nya mottagare (dagar)<br /> </td> 
-   <td> Väljer mottagare som har skapats de senaste X dagarna.<br /> </td> 
+   <td> New recipients (days)<br /> </td> 
+   <td> Selects recipients that were created in the last X days.<br /> </td> 
   </tr> 
   <tr> 
-   <td> Nya mottagare (minuter)<br /> </td> 
-   <td> Väljer mottagare som har skapats de senaste X minuterna.<br /> </td> 
+   <td> New recipients (minutes)<br /> </td> 
+   <td> Selects recipients that were created in the last X minutes.<br /> </td> 
   </tr> 
   <tr> 
-   <td> Nya mottagare (månader)<br /> </td> 
-   <td> Väljer mottagare som har skapats de senaste X månaderna.<br /> </td> 
+   <td> New recipients (months)<br /> </td> 
+   <td> Selects recipients that were created in the last X months.<br /> </td> 
   </tr> 
   <tr> 
-   <td> Efter prenumeration<br /> </td> 
-   <td> Väljer mottagare efter prenumeration.<br /> </td> 
+   <td> By subscription<br /> </td> 
+   <td> Selects recipients by subscription.<br /> </td> 
   </tr> 
   <tr> 
-   <td> Genom att klicka på en specifik länk <br /> </td> 
-   <td> Väljer mottagare som klickat på en viss URL i en leverans.<br /> </td> 
+   <td> By clicking on a specific link<br /> </td> 
+   <td> Selects recipients who clicked on a particular URL in a delivery.<br /> </td> 
   </tr> 
   <tr> 
-   <td> Beteende efter postleverans <br /> </td> 
-   <td> Väljer mottagare utifrån deras beteende efter att de har tagit emot en leverans.<br /> </td> 
+   <td> By post delivery behavior<br /> </td> 
+   <td> Selects recipients according to their behavior after receiving a delivery.<br /> </td> 
   </tr> 
   <tr> 
-   <td> Efter skapandedatum <br /> </td> 
-   <td> Väljer mottagare efter skapandedatum, över en period som sträcker sig från X månader (aktuellt datum minus n månader) till Y månader (aktuellt datum minus n månader).<br /> </td> 
+   <td> By creation date<br /> </td> 
+   <td> Selects recipients by creation date, over a period ranging from X months (current date minus n months) to Y months (current date minus n months).<br /> </td> 
   </tr> 
   <tr> 
-   <td> Efter lista <br /> </td> 
-   <td> Väljer mottagare efter lista.<br /> </td> 
+   <td> By list<br /> </td> 
+   <td> Selects recipients by list.<br /> </td> 
   </tr> 
   <tr> 
-   <td> Efter antal klick <br /> </td> 
-   <td> Väljer mottagare som klickat på en leverans de senaste X månaderna.<br /> </td> 
+   <td> By number of clicks<br /> </td> 
+   <td> Selects recipients who clicked in a delivery in the last X months.<br /> </td> 
   </tr> 
   <tr> 
-   <td> Efter antal mottagna meddelanden: <br /> </td> 
-   <td> Väljer mottagare baserat på antalet meddelanden de tagit emot.<br /> </td> 
+   <td> By number of messages received<br /> </td> 
+   <td> Selects recipients according to the number of messages that they received.<br /> </td> 
   </tr> 
   <tr> 
-   <td> Efter antal öppningar <br /> </td> 
-   <td> Väljer mottagare som öppnat mellan X och Y levererar över Z tid.<br /> </td> 
+   <td> By number of opens<br /> </td> 
+   <td> Selects recipients who opened between X and Y deliveries over Z amount of time.<br /> </td> 
   </tr> 
   <tr> 
-   <td> Efter namn eller e-postadress <br /> </td> 
-   <td> Väljer mottagare efter namn eller e-postadress.<br /> </td> 
+   <td> By name or email<br /> </td> 
+   <td> Selects recipients according to their name or email.<br /> </td> 
   </tr> 
   <tr> 
-   <td> Efter åldersintervall <br /> </td> 
-   <td> Väljer mottagare efter deras ålder.<br /> </td> 
+   <td> By age range<br /> </td> 
+   <td> Selects recipients according to their age.<br /> </td> 
   </tr> 
  </tbody> 
 </table>
 
 >[!NOTE]
 >
->Alla jämförelser som rör räkning och perioder ska förstås i vidare bemärkelse (mottagare som motsvarar frågegränserna inkluderas i jämförelsen).
+>All comparisons concerning counting and periods are to be understood in the broader sense (recipients that correspond to the query limits are included in the comparison).
 
-Exempel på hur data beräknas:
+Examples of how the data is calculated:
 
-* Väljer mottagare som är yngre än 30 år:
+* Selects recipients who are less than 30 years old: 
 
   ![](assets/predefined_filters_01.png)
 
-* Väljer mottagare som är 18 år eller äldre:
+* Selects recipients who are 18 years of age or older:
 
   ![](assets/predefined_filters_03.png)
 
-* Väljer mottagare mellan 18 och 30 år:
+* Selects recipients aged between 18 and 30:
 
   ![](assets/predefined_filters_02.png)
 
-## Avancerade inställningar för datafilter {#advanced-settings-for-data-filters}
+## Advanced settings for data filters {#advanced-settings-for-data-filters}
 
-Klicka på fliken **[!UICONTROL Settings]** för att komma åt följande alternativ:
+Click the **[!UICONTROL Settings]** tab to access the following options:
 
-* **[!UICONTROL Default filter for the associated document type]**: Med det här alternativet kan du föreslå det här filtret som standard i redigeraren för de listor som berörs av sorteringen.
+* **[!UICONTROL Default filter for the associated document type]**: this option lets you suggest this filter by default in the editor of the lists concerned by the sort.
 
-  Filtret **[!UICONTROL By name or login]** används till exempel på operatorer. Det här alternativet är markerat och därför erbjuds filtret alltid i alla operatorlistor.
+  For example, the **[!UICONTROL By name or login]** filter is applied to operators. This option is selected, and so the filter is always offered on all operator lists.
 
-* **[!UICONTROL Filter shared with other operators]**: Med det här alternativet kan du göra filtret tillgängligt för alla andra operatorer i den aktuella databasen.
-* **[!UICONTROL Use parameter entry form]**: Med det här alternativet kan du definiera de filterfält som ska visas ovanför listan när det här filtret är markerat. I dessa fält kan du definiera filterinställningarna. Det här formuläret måste anges i XML-format med knappen **[!UICONTROL Form]**. Det förkonfigurerade filtret **[!UICONTROL Recipients who have opened]**, som är tillgängligt från mottagarlistan, visar till exempel ett filterfält där du kan välja den leverans som filtret är avsett för.
+* **[!UICONTROL Filter shared with other operators]**: this option lets you make the filter available to all the other operators on the current database.
+* **[!UICONTROL Use parameter entry form]**: this option lets you define the filter field(s) to be displayed above the list when this filter is selected. These fields let you define the filter settings. This form must be entered in XML format via the **[!UICONTROL Form]** button. For example, the preconfigured filter **[!UICONTROL Recipients who have opened]**, available from the recipients list, displays a filter field that lets you select the delivery at which the filter is aimed.
 
-  Knappen **[!UICONTROL Preview]** visar resultatet av det valda filtret.
+  The **[!UICONTROL Preview]** button displays the result of the selected filter.
 
-* Med länken **[!UICONTROL Advanced parameters]** kan du definiera ytterligare inställningar. Du kan associera en SQL-tabell med filtret för att göra den gemensam för alla redigerare som delar tabellen.
+* The **[!UICONTROL Advanced parameters]** link lets you define additional settings. In particular, you can associate a SQL table with the filter to make it common to all editors that share the table.
 
-  Välj alternativet **[!UICONTROL Do not restrict the filter]** om du vill hindra användaren från att åsidosätta det här filtret.
+  Select the **[!UICONTROL Do not restrict the filter]** option if you want to stop the user from overriding this filter.
 
-  Det här alternativet är aktiverat för &quot;Mottagare av en leverans&quot; och &quot;Mottagare av leveranser som tillhör en mapp&quot; som finns i leveransassistenten och som inte kan överladdas.
+  This option is enabled for "Recipients of a delivery" and "Recipients of deliveries belonging to a folder" filters offered in the delivery assistant that cannot be overloaded.
 
   ![](assets/s_ncs_user_filter_advanced_param.png)
+-->
