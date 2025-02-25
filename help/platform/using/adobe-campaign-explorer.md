@@ -7,10 +7,10 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: f91d69a4-b794-40f0-b450-de862d7333e2
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: 22aa5f76541e6ff1612907ab0b34f0ac468fb9a6
 workflow-type: tm+mt
-source-wordcount: '447'
-ht-degree: 1%
+source-wordcount: '87'
+ht-degree: 0%
 
 ---
 
@@ -20,67 +20,74 @@ ht-degree: 1%
 
 Utforskaren i Adobe Campaign är tillgänglig via verktygsfältsikonen. Du får tillgång till Adobe Campaign alla funktioner, konfigurationsskärmar och en mer detaljerad översikt över några av plattformselementen.
 
-Arbetsytan **[!UICONTROL Explorer]** är uppdelad i tre zoner:
+>[!NOTE]
+>
+>Mer information om Adobe Campaign Explorer finns på följande sidor i dokumentationen för Campaign v8: [om du vill veta mer om användargränssnittet](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/new/campaign-ui#ac-explorer-ui){target=_blank}, dess [inställningar](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/config/configuration/ui-settings){target=_blank} eller [om hur du hanterar mappar och vyer i Utforskaren](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/config/configuration/folders-and-views){target=_blank}.
+
+
+<!--
+The **[!UICONTROL Explorer]** workspace is divided into three zones:
 
 ![](assets/s_ncs_user_navigation.png)
 
-**1 - träd**: du kan anpassa innehållet i trädet (lägga till, flytta eller ta bort noder). Den här proceduren är endast avsedd för expertanvändare. Mer information finns i [det här avsnittet](#about-navigation-hierarchy).)
+**1 - Tree**: you can personalize the content of the tree (add, move, or delete nodes). This procedure is intended for expert users only. For more on this, refer to  [this section](#about-navigation-hierarchy).).
 
-**2 - Lista**: du kan filtrera listan, köra sökningar, lägga till information eller sortera data. [Läs mer](adobe-campaign-ui-lists.md).
+**2 - List**: you can filter this list, run searches, add information, or sort data. [Learn more](adobe-campaign-ui-lists.md).
 
-**3 - Information**: du kan visa information om det markerade elementet. Med ikonen i det övre högra avsnittet kan du visa den här informationen i helskärmsläge.
+**3 - Details**: you can display the details of the selected element. The icon in the upper right-hand section lets you display this information in full-screen format.
 
-## Mappar och navigeringsträd{#about-navigation-hierarchy}
+## Folders and navigation tree{#about-navigation-hierarchy}
 
-Navigeringsträdet fungerar som en filläsare (t.ex. Utforskaren). Mappar kan innehålla undermappar. Om du väljer en nod visas vyn som motsvarar noden.
+The navigation tree works like a file browser (e.g. Windows Explorer). Folders may contain sub-folders. Selecting a node displays the view corresponding to the node.
 
-Den vy som visas är en lista som är associerad med ett schema och ett inmatningsformulär för att redigera den markerade raden.
+The view displayed is a list associated with a schema and an input form to edit the selected line.
 
 ![](assets/d_ncs_integration_navigation.png)
 
-Om du vill lägga till en ny mapp i trädet högerklickar du på den mapp i grenen där du vill infoga en mapp och väljer **[!UICONTROL Add new folder]**. På snabbmenyn väljer du vilken typ av fil som ska skapas.
+To add a new folder to the tree, right-click the folder in the branch where you wish to insert a folder, and select **[!UICONTROL Add new folder]** . In the shortcut menu, select the type of file to be created.
 
 ![](assets/d_ncs_integration_navigation_create.png)
 
-Lär dig hur du konfigurerar Campaign-navigeringsträdet [i det här avsnittet](../../configuration/using/configuration.md).
+Learn how to configure Campaign navigation tree [in this section](../../configuration/using/configuration.md).
 
-Lär dig hur du anger behörigheter för mappar [i det här avsnittet](access-management-folders.md).
+Learn how to set permissions on folders [in this section](access-management-folders.md).
 
-## Bästa praxis för mappkonfiguration
+## Folder configuration best practices
 
-* **Använd inbyggda mappar**
+* **Use built-in folders**
 
-  Genom att använda de inbyggda mapparna blir det enklare för personer som inte deltar i projektet att använda, underhålla och felsöka programmet. Du bör inte skapa anpassade mappstrukturer för mottagare, listor, leveranser osv., utan använda standardmapparna som Administration, Profiler och mål, Kampanjhantering.
+  Using the built-in folders makes it easier for people not involved in the project to use, maintain and troubleshoot the application. You should not create custom folder structures for recipients, lists, deliveries, etc., but use the standard folders such as Administration, Profiles & Targets, Campaign management.
 
-* **Skapa undermappar**
+* **Create sub-folders**
 
-  Placera tekniska arbetsflöden i standardmappen: Administration/Produktion/Tekniska arbetsflöden, och skapa underkataloger per arbetsflödestyp.
+  Place technical workflows under the standard folder: Administration / Production / Technical Workflows, and create subdirectories per workflow type.
+  
+* **Set a naming convention**
 
-* **Ange en namnkonvention**
+  For example you can name the workflows in alphabetical order, so that they appear sorted in the order of execution.
+  
+  For example:
+  
+  * A1 – import recipients, starts at 10:00;
+  * A2 – import tickets, starts at 11:00.
 
-  Du kan till exempel namnge arbetsflödena i alfabetisk ordning så att de visas sorterade i körningsordningen.
+* **Create templates for users to start with**
 
-  Exempel:
+  Create delivery templates, workflow templates, campaign templates specific to users. This structure can save time and make sure that the right delivery mapping and typologies are used for each user.
 
-   * A1 - importmottagare, börjar 10:00;
-   * A2 - importbiljetter, börjar klockan 11:00.
+## Screen resolution {#screen-resolution}
 
-* **Skapa mallar som användare kan börja med**
-
-  Skapa leveransmallar, arbetsflödesmallar och kampanjmallar som är specifika för användarna. Strukturen kan spara tid och säkerställa att rätt leveranskarta och -typologier används för varje användare.
-
-## Skärmupplösning {#screen-resolution}
-
-För optimal navigering och användbarhet rekommenderar Adobe att du använder en skärmupplösning på minst 1 600 × 900 pixlar.
+For optimal navigation and usability, Adobe recommends using a minimum screen resolution of 1600x900 pixels.
 
 >[!CAUTION]
 >
->Upplösningar på mindre än 1 600 × 900 pixlar stöds inte av Adobe Campaign.
+>Resolutions under 1600x900 pixels are not supported by Adobe Campaign.
 
-Om vissa delar av **[!UICONTROL Details]**-zonen verkar vara trunkerade på arbetsytan **[!UICONTROL Explorer]** expanderar du den med pilen över zonen eller klickar på knappen **[!UICONTROL Enlarge]**.
+In the **[!UICONTROL Explorer]** workspace, if some parts of the **[!UICONTROL Details]** zone appear to be truncated, expand it using the arrow on top of the zone or click the **[!UICONTROL Enlarge]** button.
 
 ![](assets/s_ncs_user_resolution.png)
 
-## Bläddra bland och anpassa listor {#browsing-lists}
+## Browse and customize lists {#browsing-lists}
 
-Lär dig hur du bläddrar i, hanterar och anpassar listor [i det här avsnittet](adobe-campaign-ui-lists.md).
+Learn how to browse, manage and customize lists [in this section](adobe-campaign-ui-lists.md).
+-->
