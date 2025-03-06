@@ -4,8 +4,10 @@ title: Kontrollregler
 description: Lär dig arbeta med kontrollregler i Adobe Campaign
 role: User, Data Engineer
 feature: Typology Rules, Campaigns
+hide: true
+hidefromtoc: true
 exl-id: 5a5f26f6-38da-4488-aadb-81fcb5359331
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: 4f809011a8b4cb3803c4e8151e358e5fd73634e4
 workflow-type: tm+mt
 source-wordcount: '364'
 ht-degree: 1%
@@ -27,7 +29,7 @@ Med en uppsättning färdiga regler kan du utföra vanliga kontroller. Dessa kon
 * **[!UICONTROL Validity period check]** (e-post): kontrollerar att giltighetsperioden för leveransen är tillräckligt lång för att skicka alla meddelanden.
 * **[!UICONTROL Proof size check]** (alla kanaler): genererar ett felmeddelande om målpopulationen för korrektur överstiger 100 mottagare.
 * **[!UICONTROL Wave scheduling check]** (e-post): Kontrollerar att den senaste leveransvågen är schemalagd att påbörjas före giltighetsperiodens slut, om leveransen bryts ned i flera påfyllnader.
-* **[!UICONTROL Unsubscription link approval]** (e-post): kontrollerar om det finns minst en avanmälan (avanmälan)-URL i varje innehåll (HTML och Text).
+* **[!UICONTROL Unsubscription link approval]** (e-post): kontrollerar om det finns minst en avanmälnings-URL i varje innehåll (HTML och Text).
 
 ## Skapa en kontrollregel {#creating-a-control-rule}
 

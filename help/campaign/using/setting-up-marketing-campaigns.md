@@ -4,8 +4,10 @@ title: Skapa marknadsföringskampanjer
 description: Lär dig skapa och genomföra marknadsföringskampanjer
 role: User
 feature: Campaigns, Cross Channel Orchestration, Programs
+hide: true
+hidefromtoc: true
 exl-id: a8fce21f-ffe3-4819-87ca-ac0ad9f21e41
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: 4f809011a8b4cb3803c4e8151e358e5fd73634e4
 workflow-type: tm+mt
 source-wordcount: '1248'
 ht-degree: 2%
@@ -40,7 +42,7 @@ Så här konfigurerar du din mapphierarki för marknadsföringsplaner och progra
 
 1. Klicka på ikonen **Utforskaren** på startsidan.
 1. Högerklicka på den mapp där du vill skapa din plan.
-1. Välj **Lägg till ny mapp > Campaign Management > Planera**.
+1. Välj **Lägg till ny mapp > Kampanjhantering > Planera**.
 
    ![](assets/create_plan_1.png)
 

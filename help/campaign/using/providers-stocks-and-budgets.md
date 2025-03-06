@@ -4,8 +4,10 @@ title: Leverantörer, lager och budgetar
 description: Leverantörer, lager och budgetar
 role: User
 feature: Budget Management, Campaigns
+hide: true
+hidefromtoc: true
 exl-id: c60c4f86-a957-4c44-a0fe-39b6e3f0e5d6
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: 4f809011a8b4cb3803c4e8151e358e5fd73634e4
 workflow-type: tm+mt
 source-wordcount: '1918'
 ht-degree: 0%
@@ -61,7 +63,7 @@ Du måste associera tjänstmallar med varje tjänstleverantör. I dessa mallar m
 >
 >Mer information finns i [Definiera kostnadsstrukturen](#defining-the-cost-structure).
 
-En kostnadskategori är en enhet som innehåller en uppsättning kostnader som berättigar till en typ av leverans (e-post, direktreklam osv.) eller för en uppgift. Kostnadskategorierna grupperas i mallar för tjänster som är kopplade till tjänsteleverantörerna. Varje tjänsteleverantör kan referera till en eller flera tjänstmallar.
+En kostnadskategori är en enhet som innehåller en uppsättning kostnader som är stödberättigande för en typ av leverans (e-post, direktreklam osv.) eller för en uppgift. Kostnadskategorierna grupperas i mallar för tjänster som är kopplade till tjänsteleverantörerna. Varje tjänsteleverantör kan referera till en eller flera tjänstmallar.
 
 Så här skapar du en tjänstmall och definierar dess innehåll:
 
@@ -158,7 +160,7 @@ Det gör du genom att klicka på fliken **[!UICONTROL Processes]** för att konf
 
 Tjänster är kopplade till kampanjer via leveranser eller aktiviteter. Tjänsteleverantörer är länkade till leveransmallar för att erbjuda sina tjänster i leveranser som skapas via den här mallen.
 
-När en tjänst har valts, de kostnadskategorier som motsvarar leveranstypen (direktreklam, e-post, osv.) anges automatiskt i den centrala tabellen tillsammans med de bearbetningsalternativ som har definierats.
+När en tjänst har valts anges de kostnadskategorier som motsvarar leveranstypen (direktreklam, e-post, osv.) automatiskt i den centrala tabellen tillsammans med de bearbetningsalternativ som har definierats.
 
 >[!NOTE]
 >

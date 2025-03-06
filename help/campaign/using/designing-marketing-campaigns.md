@@ -4,8 +4,10 @@ title: Utforma och genomför marknadsföringskampanjer
 description: Definiera, optimera, genomföra och analysera marknadsföringskampanjer
 role: User
 feature: Campaigns
+hide: true
+hidefromtoc: true
 exl-id: 4e0df18f-3623-4dfb-a2f8-ad293dbc4dd5
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: 4f809011a8b4cb3803c4e8151e358e5fd73634e4
 workflow-type: tm+mt
 source-wordcount: '438'
 ht-degree: 8%
@@ -68,4 +70,4 @@ I den här videon presenteras viktiga begrepp för marknadsföringskampanjer.
 
 >[!VIDEO](https://video.tv.adobe.com/v/35131?quality=12)
 
-Ytterligare Campaign Classic om instruktionsvideor finns [här](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=sv).
+Ytterligare Campaign Classic instruktionsvideor finns [här](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=sv).

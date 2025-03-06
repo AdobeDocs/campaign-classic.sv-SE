@@ -4,8 +4,10 @@ title: Leveranser av marknadsföringskampanjer
 description: Läs mer om kampanjleveranser
 role: User
 feature: Campaigns, Resource Management, Cross Channel Orchestration
+hide: true
+hidefromtoc: true
 exl-id: 1dd3c080-444d-45f8-9562-d2d01a9d2860
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: 4f809011a8b4cb3803c4e8151e358e5fd73634e4
 workflow-type: tm+mt
 source-wordcount: '1485'
 ht-degree: 0%
@@ -115,7 +117,7 @@ Filextraheringen startar två åtgärder: budgetberäkning och lagerberäkning. 
 
 ## Hantera associerade dokument {#managing-associated-documents}
 
-Du kan associera olika dokument med en kampanj: rapport, foto, webbsida, diagram osv. Dessa dokument kan ha vilket format som helst (Microsoft Word, PowerPoint, PNG, JPG, Acrobat PDF). Lär dig hur du länkar dokument med en kampanj [i det här avsnittet](../../campaign/using/marketing-campaign-assets.md).
+Du kan associera olika dokument med en kampanj: rapport, foto, webbsida, diagram osv. Dessa dokument kan vara i vilket format som helst (Microsoft Word, PowerPoint, PNG, JPG, Acrobat PDF osv.). Lär dig hur du länkar dokument med en kampanj [i det här avsnittet](../../campaign/using/marketing-campaign-assets.md).
 
 >[!IMPORTANT]
 >
@@ -133,7 +135,7 @@ Dokument kan kopplas på kampanjnivå (sammanhangsberoende dokument) eller på p
 
 Fliken **[!UICONTROL Documents]** innehåller:
 
-* Listan över alla dokument som krävs för innehållet (mall, bilder osv.) som kan laddas ned lokalt av Adobe Campaign-operatörer med lämpliga rättigheter,
+* En förteckning över alla dokument som krävs för innehållet (mall, bilder osv.) och som kan laddas ned lokalt av Adobe Campaign-operatörer med lämpliga rättigheter.
 * Dokument som innehåller information för routern, om sådan finns.
 
 Dokumenten är länkade till programmet eller kampanjen via fliken **[!UICONTROL Edit > Documents]**.
@@ -160,7 +162,7 @@ De kan också redigeras och ändras i den här vyn.
 >
 >Leveranskonturer används endast för direktreklamkampanjer.
 
-En leveransöversikt betecknar en strukturerad uppsättning element (dokument, filialer/butiker, kampanjkuponger osv.) som skapats i företaget och för en viss kampanj.
+En leveransöversikt anger en strukturerad uppsättning element (dokument, filialer/butiker, kampanjkuponger osv.) som har skapats i företaget och för en viss kampanj.
 
 Dessa element grupperas i leveranskonturer och en viss leveransdisposition kopplas till en leverans. Den refereras till i extraheringsfilen som skickas till **tjänstleverantören** för att kunna kopplas till leveransen. Du kan till exempel skapa en leveransdisposition som refererar till en gren och de marknadsföringsbroschyrer som används i den.
 
@@ -220,7 +222,7 @@ På fliken **[!UICONTROL Summary]** i leveransen visas även den här informatio
 
 #### Extraheringsresultat {#extraction-result}
 
-I den fil som extraheras och skickas till tjänsteleverantören, namnet på konturen och, i förekommande fall, dess egenskaper (kostnad, beskrivning osv.) läggs till i innehållet enligt informationen i exportmallen som är kopplad till tjänsteleverantören.
+I den fil som extraheras och skickas till tjänsteleverantören läggs namnet på dispositionen och, i tillämpliga fall, dess egenskaper (kostnad, beskrivning osv.) till i innehållet enligt informationen i den exportmall som är associerad med tjänsteleverantören.
 
 I följande exempel läggs etiketten, den uppskattade kostnaden och beskrivningen av dispositionen som är kopplad till leveransen till i extraheringsfilen.
 

@@ -4,8 +4,10 @@ title: Åtkomst till marknadsföringskampanjer
 description: Åtkomst till marknadsföringskampanjer
 role: User
 feature: Campaigns, Cross Channel Orchestration
+hide: true
+hidefromtoc: true
 exl-id: 1278bda1-f83c-4d38-8042-e6611755cf36
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: 4f809011a8b4cb3803c4e8151e358e5fd73634e4
 workflow-type: tm+mt
 source-wordcount: '1199'
 ht-degree: 1%
@@ -174,7 +176,7 @@ I tabellen sammanfattas de åtgärder du kan vidta i kampanjer från en webbläs
 | Lista över kampanjer, leveranser, erbjudanden osv. | Ta bort ett listobjekt |
 | Campaign | Avbryta en kampanj |
 | Leverans | Godkänn leveransinnehållet och målet<br/>Skicka leveransinnehållet<br/>Bekräfta en leverans<br/>Pausa och stoppa en leverans |
-| Webbprogram | Skapa ett webbprogram<br/>Redigera programinnehåll och -egenskaper<br/>Spara programinnehållet som en mall<br/>Publish programmet |
+| Webbprogram | Skapa ett webbprogram<br/>Redigera programinnehåll och -egenskaper<br/>Spara programinnehållet som en mall<br/>Publicera programmet |
 | Erbjudande | Godkänn erbjudandets innehåll och behörighet<br/>Inaktivera ett onlineerbjudande |
 | Uppgift | Avsluta en aktivitet<br/>Avbryt en aktivitet |
 | Marknadsföringsresurser | Godkänn en resurs<br/>Lås och lås upp en resurs |

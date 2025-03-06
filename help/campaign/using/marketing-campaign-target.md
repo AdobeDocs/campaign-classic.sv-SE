@@ -4,8 +4,10 @@ title: Målgrupper för marknadsföringskampanjer
 description: Lär dig definiera målgruppen för era marknadsföringskampanjer
 role: User
 feature: Campaigns, Audiences
+hide: true
+hidefromtoc: true
 exl-id: 04daa67c-4057-42a7-b993-a6eddf2b883d
-source-git-commit: 7453db63a0ed2c617e9f7e4cbfa3480b3ed5020d
+source-git-commit: 4f809011a8b4cb3803c4e8151e358e5fd73634e4
 workflow-type: tm+mt
 source-wordcount: '1492'
 ht-degree: 0%
@@ -91,7 +93,7 @@ Målarbetsflöden kan startas manuellt med knappen **[!UICONTROL Start]** i verk
 
 Målsättningen kan programmeras för automatisk körning enligt ett schema (schemaläggare) eller en händelse (extern signal, filimport osv.).
 
-Åtgärder som rör körning av målarbetsflödet (starta, stoppa, pausa, osv.) är **asynkrona** processer: kommandot sparas och börjar gälla så fort servern är tillgänglig för att använda det.
+De åtgärder som är relaterade till körning av målarbetsflödet (starta, stoppa, pausa osv.) är **asynkrona** processer: kommandot sparas och börjar gälla så fort servern är tillgänglig för att använda det.
 
 Med verktygsfältsikonerna kan du utföra åtgärder för arbetsflödet för målanpassning.
 

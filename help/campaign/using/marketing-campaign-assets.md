@@ -4,8 +4,10 @@ title: Marknadsföringskampanjdokument och leveransdispositioner
 description: Läs mer om kampanjdokument och leveransdispositioner för marknadsföring
 role: User
 feature: Campaigns
+hide: true
+hidefromtoc: true
 exl-id: 891252b0-4700-4a2a-a632-63aad5ce75d7
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: 4f809011a8b4cb3803c4e8151e358e5fd73634e4
 workflow-type: tm+mt
 source-wordcount: '755'
 ht-degree: 0%
@@ -14,7 +16,7 @@ ht-degree: 0%
 
 # Hantera associerade dokument {#managing-associated-documents}
 
-Du kan associera olika dokument med en kampanj: rapporter, foton, webbsidor, diagram osv. Dessa dokument kan ha vilket format som helst (Microsoft Word, PowerPoint, PNG, JPG, Acrobat PDF).
+Du kan associera olika dokument med en kampanj: rapporter, foton, webbsidor, diagram osv. Dessa dokument kan vara i vilket format som helst (Microsoft Word, PowerPoint, PNG, JPG, Acrobat PDF osv.).
 
 >[!IMPORTANT]
 >
@@ -32,7 +34,7 @@ Dokument kan kopplas på kampanjnivå (sammanhangsberoende dokument) eller på p
 
 Fliken **[!UICONTROL Documents]** innehåller:
 
-* Listan över alla dokument som krävs för innehållet (mall, bilder osv.) som kan laddas ned lokalt av Adobe Campaign-operatörer med lämpliga rättigheter,
+* En förteckning över alla dokument som krävs för innehållet (mall, bilder osv.) och som kan laddas ned lokalt av Adobe Campaign-operatörer med lämpliga rättigheter.
 * Dokument som innehåller information för routern, om sådan finns.
 
 Dokumenten är länkade till programmet eller kampanjen via fliken **[!UICONTROL Edit > Documents]**.
@@ -59,7 +61,7 @@ De kan också redigeras och ändras i den här vyn.
 >
 >Leveranskonturer används endast för direktreklamkampanjer.
 
-En leveransöversikt betecknar en strukturerad uppsättning element (dokument, butiker, kampanjkuponger osv.) som skapats av företaget och för en viss kampanj.
+En leveransöversikt betecknar en strukturerad uppsättning element (dokument, butiker, kampanjkuponger osv.) som företaget har skapat och för en viss kampanj.
 
 Dessa element grupperas i leveranskonturer och varje leveransdisposition kopplas till en leverans. Den refereras i extraheringsfilen som skickas till **tjänstleverantören** för att kunna kopplas till leveransen. Du kan till exempel skapa en leveransdisposition som refererar till en gren och de marknadsföringsbroschyrer som används i den.
 
@@ -119,7 +121,7 @@ På fliken **[!UICONTROL Summary]** i leveransen visas även den här informatio
 
 ### Extraheringsresultat {#extraction-result}
 
-I den fil som extraheras och skickas till tjänsteleverantören, namnet på konturen och, i förekommande fall, dess egenskaper (kostnad, beskrivning osv.) läggs till i innehållet enligt informationen i exportmallen som är kopplad till tjänsteleverantören.
+I den fil som extraheras och skickas till tjänsteleverantören läggs namnet på dispositionen och, i tillämpliga fall, dess egenskaper (kostnad, beskrivning osv.) till i innehållet enligt informationen i den exportmall som är associerad med tjänsteleverantören.
 
 I följande exempel läggs etiketten, den uppskattade kostnaden och beskrivningen av dispositionen som är kopplad till leveransen till i extraheringsfilen.
 

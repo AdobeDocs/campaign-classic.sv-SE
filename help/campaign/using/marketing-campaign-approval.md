@@ -4,8 +4,10 @@ title: Konfigurera och hantera godkännandeprocessen
 description: Lär dig hantera godkännanden av marknadsföringskampanjer
 role: User
 feature: Approvals, Campaigns
+hide: true
+hidefromtoc: true
 exl-id: 8cbb2445-f5e4-4a25-ba7e-56e39ca9d3ce
-source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
+source-git-commit: 4f809011a8b4cb3803c4e8151e358e5fd73634e4
 workflow-type: tm+mt
 source-wordcount: '2437'
 ht-degree: 1%
@@ -321,7 +323,7 @@ Med det här alternativet kan du definiera någon som ansvarar för redigering a
 
    ![](assets/s_ncs_user_validation_submit_content_notif.png)
 
-1. De kan sedan logga in på konsolen, öppna leveransen och redigera den med en förenklad assistent för att ändra motiv, HTML och textinnehåll samt skicka korrektur.
+1. De kan sedan logga in på konsolen, öppna leveransen och redigera den med en förenklad assistent för att ändra motivet, HTML och textinnehållet samt skicka korrektur.
 
    ![](assets/s_user_validation_content_edition.png)
 

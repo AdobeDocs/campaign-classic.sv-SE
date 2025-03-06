@@ -4,8 +4,10 @@ title: Tryckregler
 description: Lär dig arbeta med tryckregler i Adobe Campaign
 role: User, Data Engineer
 feature: Fatigue Management, Typology Rules, Campaigns
+hide: true
+hidefromtoc: true
 exl-id: c23212f2-fdf8-4820-b389-546f7c84db27
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: 4f809011a8b4cb3803c4e8151e358e5fd73634e4
 workflow-type: tm+mt
 source-wordcount: '3336'
 ht-degree: 4%
@@ -148,7 +150,7 @@ Med grupperingstypen kan du utöka fältet **[!UICONTROL Period considered]** ti
 
 En tryckregel som definierar ett tröskelvärde på 2 meddelanden per vecka, med en gruppering för varje kalendermånad, förhindrar till exempel att fler än 2 meddelanden levereras inom samma vecka OCH inom samma kalendermånad. Varning! Om perioden överlappar två månader kommer beräkningströskeln att ta hänsyn till leveranser från dessa två kalendermånader och kan därför förhindra alla nya leveranser under den andra månaden.
 
-Observera att som standard beaktas endast leveranser som redan har skickats vid beräkningen av tröskelvärdet. Markera alternativet **[!UICONTROL Take the deliveries into account in the provisional calendar]** i Campaign Classic v7 om du även vill ta hänsyn till leveranserna som är schemalagda för den aktuella perioden. I detta fall fördubblas skadeundersökningsperioden för att möjliggöra integrering av såväl framtida leveranser som tidigare leveranser.
+Observera att som standard beaktas endast leveranser som redan har skickats vid beräkningen av tröskelvärdet. I Campaign Classic v7 markerar du alternativet **[!UICONTROL Take the deliveries into account in the provisional calendar]** om du även vill ta hänsyn till leveranserna som är schemalagda för den aktuella perioden. I detta fall fördubblas skadeundersökningsperioden för att möjliggöra integrering av såväl framtida leveranser som tidigare leveranser.
 
 Om du vill begränsa antalet leveranser som beaktas till en tvåveckorsperiod kan du antingen:
 
