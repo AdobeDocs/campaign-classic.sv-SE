@@ -3,8 +3,10 @@ product: campaign
 title: Kontinuerlig leverans
 description: Kontinuerlig leverans
 feature: Workflows, Channels Activity
+hide: true
+hidefromtoc: true
 exl-id: 9c228cdb-331e-476e-a24c-3c7e23add3bf
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: 776c664a99721063dce5fa003cf40c81d94f8c78
 workflow-type: tm+mt
 source-wordcount: '359'
 ht-degree: 9%
@@ -64,4 +66,4 @@ Den här videon visar hur du konfigurerar en kontinuerlig leverans med en stegvi
 
 >[!VIDEO](https://video.tv.adobe.com/v/25039?quality=12)
 
-Ytterligare Campaign Classic om instruktionsvideor finns [här](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=sv).
+Ytterligare Campaign Classic instruktionsvideor finns [här](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=sv).

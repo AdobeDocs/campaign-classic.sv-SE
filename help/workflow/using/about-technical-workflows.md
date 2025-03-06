@@ -1,10 +1,12 @@
 ---
 product: campaign
 title: Tekniska arbetsflöden
-description: Läs mer om de tekniska arbetsflöden som är tillgängliga med Campaign Classic
+description: Läs mer om de tekniska arbetsflödena i Campaign Classic-paket
 feature: Workflows
+hide: true
+hidefromtoc: true
 exl-id: 9aed2665-cd4b-419c-b9f2-ea04fc1d8f01
-source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
+source-git-commit: 776c664a99721063dce5fa003cf40c81d94f8c78
 workflow-type: tm+mt
 source-wordcount: '1704'
 ht-degree: 1%
@@ -35,7 +37,7 @@ Mer information om hur du övervakar tekniska arbetsflöden finns i det [dediker
 |------|--------|-----------|
 | **Aliasrensning** (aliasCleansing) | Leverans | Det här arbetsflödet standardiserar uppräkningsvärden. Den aktiveras varje dag klockan tre som standard. |
 | **Fakturering** (fakturering) | Leverans | Det här arbetsflödet skickar systemaktivitetsrapporten till faktureringsoperatorn via e-post. Den utlöses den 25:e varje månad på marknadsinstansen. |
-| **Beräkning av statistik för Twitter** (statsTwitter) | Sociala nätverk (social marknadsföring) - endast kampanj v7 | Det här arbetsflödet beräknar statistik som är länkad till retweets och besök på X (tidigare Twitter). |
+| **Beräkning av Twitter-statistik** (statsTwitter) | Sociala nätverk (social marknadsföring) - endast kampanj v7 | Det här arbetsflödet beräknar statistik som är länkad till retweets och besök på X (tidigare Twitter). |
 | **Kampanjjobb** (operationMgt) | Marknadskampanjer (Campaign) | Det här arbetsflödet hanterar jobben för marknadsföringskampanjer (lanserar målinriktning, filextrahering osv.). Det skapar också arbetsflöden för återkommande och periodiska kampanjer. |
 | **Samla in data för HeatMap-tjänsten** (collectDataHeatMapService) | Installerad som standard | Det här arbetsflödet hämtar data som krävs av HeatMap-tjänsten. |
 | **Samla in sekretessförfrågningar** (collectPrivacyRequests) | Skyddsförordningen för personuppgifter | Det här arbetsflödet genererar mottagarens data som lagras i Adobe Campaign och gör dem tillgängliga för hämtning på skärmen för sekretesspolicy. |
@@ -70,11 +72,11 @@ Mer information om hur du övervakar tekniska arbetsflöden finns i det [dediker
 | **Propositionssynkronisering** (propositionSynch) | Kontroll över erbjudandemotorn med körningsinstans | Det här arbetsflödet synkroniserar förslag mellan marknadsinstansen och körningsinstansen som används för interaktioner. |
 | **Återställning av webbhändelser** (webAnalyticsGetWebEvents) | Web Analytics-anslutningar | Varje timme laddar det här arbetsflödet ned segment för internetanvändare på en viss webbplats, placerar dem i Adobe Campaign-databasen och startar arbetsflödet för ommarknadsföring. |
 | **Rapportera aggregat** (reportingAggregates) | Leverans | Det här arbetsflödet uppdaterar aggregat som används i rapporter. Den aktiveras varje dag kl. 2.00 som standard. |
-| **Skickar indikatorer och kampanjattribut** (webAnalyticsSendMetrics) | Web Analytics-anslutningar | Med det här arbetsflödet kan ni skicka kampanjindikatorer från Adobe Campaign till Adobe Experience Cloud Suite via Adobe® Analytics-kontakten. De berörda indikatorerna är följande: Skickat (Skickat), Totalt antal öppningar (iTotalRecipientOpen), Totalt antal mottagare som klickat (iTotalRecipientClick), Fel (iError), Avanmäl (avanmäl dig) (iOptOut). |
+| **Skickar indikatorer och kampanjattribut** (webAnalyticsSendMetrics) | Web Analytics-anslutningar | Med det här arbetsflödet kan du skicka indikatorer för e-postkampanjer från Adobe Campaign till Adobe Experience Cloud Suite via Adobe® Analytics Connector. De berörda indikatorerna är följande: Skickat (Skickat), Totalt antal öppningar (iTotalRecipientOpen), Totalt antal mottagare som klickat (iTotalRecipientClick), Fel (iError), Avanmäl (avanmäl dig) (iOptOut). |
 | **Stock: Beställningar och aviseringar** (stockMgt) | Marknadskampanjer (Campaign) | Det här arbetsflödet startar lagerberäkning på orderraderna och hanterar varningsaviseringströsklar. |
-| **Synkroniserar Facebook-fans** (syncFacebookFans) | Sociala nätverk (social marknadsföring) - endast kampanj v7 | Det här arbetsflödet importerar Facebook fans till Adobe Campaign varje dag kl. 7.00. |
+| **Synkroniserar Facebook-fans** (syncFacebookFans) | Sociala nätverk (social marknadsföring) - endast kampanj v7 | Det här arbetsflödet importerar Facebook-fans till Adobe Campaign varje dag kl. 7.00. |
 | **Synkroniserar Facebook-sidor** (syncFacebook) | Sociala nätverk (social marknadsföring) - endast kampanj v7 | Det här arbetsflödet synkroniserar Facebook-sidor med Adobe Campaign varje dag kl. 7.00. |
-| **Synkroniserar Twitter** (syncTwitter) | Sociala nätverk (social marknadsföring) - endast kampanj v7 | Det här arbetsflödet importerar X-följare till Adobe Campaign varje dag kl. 7.00. |
+| **Synkroniserar Twitter-sidor** (syncTwitter) | Sociala nätverk (social marknadsföring) - endast kampanj v7 | Det här arbetsflödet importerar X-följare till Adobe Campaign varje dag kl. 7.00. |
 | **Aktivitetsmeddelande** (taskMgt) | Marknadsföringsresurser (MRM) - endast kampanj v7 | Med det här arbetsflödet kan du skicka meddelanden om aktiviteter i marknadsföringskampanjer. |
 | **Spårning** (spårning) | Leverans | Det här arbetsflödet utför återställning och konsolidering av spårningsinformation. Dessutom säkerställs omberäkningen av spårnings- och leveransstatistik, särskilt sådan som används i arbetsflöden för meddelandecentrets arkivering. Som standard aktiveras den en gång per timme. |
 | **Uppdatera händelsestatus** (updateEventsStatus) | Körning av transaktionsmeddelande (Message Center - Execution) | Med det här arbetsflödet kan du tilldela en status till en händelse. Händelsestatus är följande:<ul><li>Väntande: händelsen finns i en kö. Ingen meddelandemall har ännu kopplats till den.</li><li>Väntande leverans: händelsen finns i en kö, en meddelandemall har kopplats till den och bearbetas för närvarande av leveransen.</li><li>Skickat: Den här statusen kopieras från leveransloggarna. Det betyder att leveransen har skickats.</li><li>Ignoreras av leveransen: den här statusen kopieras från leveransloggarna. Det betyder att leveransen har ignorerats.</li><li>Leveransfel: den här statusen kopieras från leveransloggarna. Det innebär att leveransen har misslyckats.</li><li>Händelsen täcks inte: händelsen kunde inte kopplas till en meddelandemall. Händelsen kommer inte att bearbetas på nytt.</li></ul> |

@@ -3,8 +3,10 @@ product: campaign
 title: Skicka en rapport till en lista
 description: Lär dig skicka en rapport till en lista med ett arbetsflöde
 feature: Workflows
+hide: true
+hidefromtoc: true
 exl-id: cb24aea5-f3c7-4b17-8899-1792ea18c235
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: 776c664a99721063dce5fa003cf40c81d94f8c78
 workflow-type: tm+mt
 source-wordcount: '632'
 ht-degree: 1%
@@ -15,7 +17,7 @@ ht-degree: 1%
 
 
 
-I det här användningsexemplet finns information om hur du skapar en **[!UICONTROL Tracking indicators]**-rapport som kommer ut varje månad i PDF-format och hur du skickar den till en lista med mottagare.
+I det här användningsexemplet finns information om hur du skapar en **[!UICONTROL Tracking indicators]**-rapport som är färdig varje månad i PDF-format och hur du skickar den till en lista med mottagare.
 
 ![](assets/use_case_report_intro.png)
 

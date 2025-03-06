@@ -3,8 +3,10 @@ product: campaign
 title: Dela
 description: Läs mer om aktiviteten Dela arbetsflöde
 feature: Workflows, Targeting Activity
+hide: true
+hidefromtoc: true
 exl-id: 4204350a-c2d2-4033-9bdf-87b49d8211b9
-source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
+source-git-commit: 776c664a99721063dce5fa003cf40c81d94f8c78
 workflow-type: tm+mt
 source-wordcount: '1971'
 ht-degree: 0%
@@ -212,7 +214,7 @@ Markera alternativet **[!UICONTROL Generate complement]** om du vill utnyttja de
 
 För att det här alternativet ska fungera på rätt sätt måste inkommande data ha en primärnyckel.
 
-Om data till exempel läses direkt från en extern databas som Netezza (som inte stöder begreppet index) via en **[!UICONTROL Data loading (RDBMS)]**-aktivitet, blir komplementet som skapas av **[!UICONTROL Split]**-aktiviteten felaktigt.
+Om data till exempel läses direkt från en extern databas som Netezza (som inte stöder begreppet index) via en **[!UICONTROL Data loading (RDBMS)]**-aktivitet, blir komplementet som genereras av **[!UICONTROL Split]**-aktiviteten felaktigt.
 
 Du kan undvika detta genom att dra och släppa en **[!UICONTROL Enrichment]**-aktivitet precis före **[!UICONTROL Split]**-aktiviteten. I aktiviteten **[!UICONTROL Enrichment]** kontrollerar du **[!UICONTROL Keep all additional data from the main set]** och anger de kolumner som du vill använda för att konfigurera filtren för aktiviteten **[!UICONTROL Split]** i de extra data. Data från den inkommande övergången för aktiviteten **[!UICONTROL Split]** lagras sedan lokalt i en temporär tabell på Adobe Campaign-servern och komplementet kan genereras korrekt.
 

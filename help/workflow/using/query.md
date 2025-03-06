@@ -3,8 +3,10 @@ product: campaign
 title: Fråga
 description: Läs mer om arbetsflödesaktiviteten Fråga
 feature: Workflows, Targeting Activity, Query Editor
+hide: true
+hidefromtoc: true
 exl-id: 20d03627-cd56-46da-bc02-73b48a02a350
-source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
+source-git-commit: 776c664a99721063dce5fa003cf40c81d94f8c78
 workflow-type: tm+mt
 source-wordcount: '1631'
 ht-degree: 0%
@@ -22,7 +24,7 @@ Mer information om frågeexempel finns i [det här avsnittet](querying-recipient
 
 >[!NOTE]
 >
->Frågeaktiviteter är inte kompatibla med CLOB-fält när Oraclet används.
+>Frågeaktiviteter är inte kompatibla med CLOB-fält när Oracle används.
 
 ![](assets/s_user_segmentation_wizard_9.png)
 

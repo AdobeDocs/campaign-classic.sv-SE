@@ -6,8 +6,10 @@ audience: workflow
 content-type: reference
 topic-tags: use-cases
 feature: Workflows, Data Management
+hide: true
+hidefromtoc: true
 exl-id: 3f606d3a-0af5-4315-bb08-1b21a71f1721
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: 776c664a99721063dce5fa003cf40c81d94f8c78
 workflow-type: tm+mt
 source-wordcount: '437'
 ht-degree: 0%
@@ -83,6 +85,6 @@ Använd följande steg:
 
    ![](assets/query_editor_nveau_79.png)
 
-   Låt oss ta ett exempel till och säga att uppräkningsvärdet &quot;2&quot; inte anges. Välj funktionen **[!UICONTROL Generate an error and reject the line]**: alla mottagare av kön (2) genererar avvikelser och annan information på raden (för- och efternamn, osv.) exporteras inte. En fellogg visas i fältet **[!UICONTROL Logs generated during export]** i förhandsgranskningsfönstret för data. Den här loggen anger att uppräkningsvärdet &quot;2&quot; inte har angetts.
+   Låt oss ta ett exempel till och säga att uppräkningsvärdet &quot;2&quot; inte anges. Välj funktionen **[!UICONTROL Generate an error and reject the line]**: alla mottagare av kön (2) genererar avvikelser och den andra informationen på raden (för- och efternamn, osv.) exporteras inte. En fellogg visas i fältet **[!UICONTROL Logs generated during export]** i förhandsgranskningsfönstret för data. Den här loggen anger att uppräkningsvärdet &quot;2&quot; inte har angetts.
 
    ![](assets/query_editor_nveau_80.png)

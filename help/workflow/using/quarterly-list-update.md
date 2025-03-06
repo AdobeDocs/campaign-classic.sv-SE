@@ -3,8 +3,10 @@ product: campaign
 title: Kvartalsvis listuppdatering med en inkrementell fråga
 description: I det här fallet används en stegvis fråga för att automatiskt uppdatera en mottagarlista
 feature: Workflows
+hide: true
+hidefromtoc: true
 exl-id: 0d3e7046-313a-42a6-9155-3365e8d60bac
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: 776c664a99721063dce5fa003cf40c81d94f8c78
 workflow-type: tm+mt
 source-wordcount: '277'
 ht-degree: 5%

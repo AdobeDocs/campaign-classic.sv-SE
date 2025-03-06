@@ -2,8 +2,10 @@
 product: campaign
 title: Överföring till Mid-sourcing
 description: Läs mer om Överför till arbetsflöden från olika källor
+hide: true
+hidefromtoc: true
 feature: Workflows
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: 776c664a99721063dce5fa003cf40c81d94f8c78
 workflow-type: tm+mt
 source-wordcount: '107'
 ht-degree: 1%
@@ -15,7 +17,7 @@ ht-degree: 1%
 
 
 
-Arbetsflödena som anges nedan installeras som standard med modulen **Överför till medelkälla**. Mer information om den här modulen finns i [Campaign Classic v7 Installationshandbok](../../installation/using/mid-sourcing-deployment.md).
+Arbetsflödena som anges nedan installeras som standard med modulen **Överför till medelkälla**. Mer information om den här modulen finns i [Installationshandboken för Campaign Classic v7](../../installation/using/mid-sourcing-deployment.md).
 
 <table> 
  <tbody> 

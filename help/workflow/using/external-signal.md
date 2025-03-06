@@ -3,8 +3,10 @@ product: campaign
 title: Extern signal
 description: Läs mer om arbetsflödesaktiviteten för externa signaturer
 feature: Workflows
+hide: true
+hidefromtoc: true
 exl-id: da84d3ff-1e64-45ef-bef0-da4a24d93461
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: 776c664a99721063dce5fa003cf40c81d94f8c78
 workflow-type: tm+mt
 source-wordcount: '168'
 ht-degree: 2%
@@ -17,9 +19,9 @@ ht-degree: 2%
 
 Med aktiviteten **Extern signal** kan du utlösa körning av en uppsättning uppgifter i ett arbetsflöde enligt ett schema.
 
-När en aktivitet av typen &quot;Extern signal&quot; aktiveras pausas den oavbrutet eller tills den angivna tidsperioden är slut. Övergången aktiveras av det SOAP anropet **PostEvent(sessionToken, workflowId, activity, transition, parameters, complete).** Parametern **[!UICONTROL complete]** tillåter att aktiviteten slutförs, så den kommer inte att reagera på efterföljande anrop.
+När en aktivitet av typen &quot;Extern signal&quot; aktiveras pausas den oavbrutet eller tills den angivna tidsperioden är slut. Övergången aktiveras av SOAP anrop **PostEvent(sessionToken, workflowId, activity, transition, parameters, complete).** Parametern **[!UICONTROL complete]** tillåter att aktiviteten slutförs, så den kommer inte att reagera på efterföljande anrop.
 
-Mer information om funktionen PostEvent SOAP finns i onlinedokumentationen som rör.
+Mer information om funktionen PostEvent finns i onlinedokumentationen för SOAP.
 
 Du kan konfigurera aktiviteten för att definiera händelser om ingen signal tas emot. Om du vill göra det redigerar du aktiviteten och klickar på fliken **[!UICONTROL Expiration]**. Klicka på knappen **[!UICONTROL Insert]** för att skapa och konfigurera en händelse.
 

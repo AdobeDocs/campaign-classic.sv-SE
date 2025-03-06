@@ -3,8 +3,10 @@ product: campaign
 title: Övervaka arbetsflödeskörning
 description: Övervaka arbetsflödeskörning
 feature: Workflows
+hide: true
+hidefromtoc: true
 exl-id: d589180b-8e1d-4149-9b16-3f541018a41f
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: 776c664a99721063dce5fa003cf40c81d94f8c78
 workflow-type: tm+mt
 source-wordcount: '2018'
 ht-degree: 0%
@@ -252,14 +254,14 @@ Arbetsflödesansvariga meddelas. Den som skapade arbetsflödet och den sista anv
 
 ## Filtrera arbetsflöden utifrån deras status {#filtering-workflows-status}
 
-Med Campaign Classicens gränssnitt kan du övervaka körningsstatusen för alla arbetsflöden på din instans med fördefinierade **vyer**. Öppna noden **[!UICONTROL Administration]** / **[!UICONTROL Audit]** / **[!UICONTROL Workflows Status]** för att få åtkomst till dessa vyer.
+Med Campaign Classic-gränssnittet kan du övervaka körningsstatusen för alla arbetsflöden på din instans med fördefinierade **vyer**. Öppna noden **[!UICONTROL Administration]** / **[!UICONTROL Audit]** / **[!UICONTROL Workflows Status]** för att få åtkomst till dessa vyer.
 
 Följande vyer är tillgängliga:
 
 * **[!UICONTROL Running]**: visar alla arbetsflöden som körs.
 * **[!UICONTROL Paused]**: visar alla pausade arbetsflöden.
 * **[!UICONTROL Failed]**: visar alla misslyckade arbetsflöden.
-* **[!UICONTROL Start Pending]**: visar alla arbetsflöden som väntar på att startas av operationMgt-processen. Den här vyn är endast tillgänglig med paketet **Marknadsföringskampanjer**. Läs mer i [Campaign Classic v7 Installationshandbok](../../installation/using/installing-campaign-standard-packages.md)).
+* **[!UICONTROL Start Pending]**: visar alla arbetsflöden som väntar på att startas av operationMgt-processen. Den här vyn är endast tillgänglig med paketet **Marknadsföringskampanjer**. Läs mer i [Installationshandboken för Campaign Classic v7](../../installation/using/installing-campaign-standard-packages.md)).
 
 ![](assets/workflow-monitoring-views.png)
 

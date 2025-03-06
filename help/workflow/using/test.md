@@ -3,8 +3,10 @@ product: campaign
 title: Test
 description: Läs mer om aktiviteten Testa arbetsflöde
 feature: Workflows
+hide: true
+hidefromtoc: true
 exl-id: 6f246d56-01c8-43f5-b12b-c40d258b93c8
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: 776c664a99721063dce5fa003cf40c81d94f8c78
 workflow-type: tm+mt
 source-wordcount: '187'
 ht-degree: 1%
@@ -21,7 +23,7 @@ Ett villkor är ett JavaScript-uttryck som måste utvärderas till &quot;true&qu
 
 ![](assets/edit_test.png)
 
-Mer information om alla ytterligare JavaScript-funktioner och -metoder för programservern som är tillgängliga via arbetsflödet i JavaScript finns i [JSAPI-dokumentationen](https://experienceleague.adobe.com/developer/campaign-api/api/index.html?lang=sv).
+Mer information om alla ytterligare JavaScript-funktioner och SOAP-metoder för programservern som är tillgängliga via arbetsflödet i JavaScript finns i [JSAPI-dokumentationen](https://experienceleague.adobe.com/developer/campaign-api/api/index.html?lang=sv).
 
 Du kan också infoga variabler direkt från den här redigeraren. Mer information om hur du arbetar med variabler finns i [det här avsnittet](javascript-scripts-and-templates.md#variables).
 

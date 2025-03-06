@@ -3,8 +3,10 @@ product: campaign
 title: Egenskaper för arbetsflöde
 description: Läs mer om egenskaper för kampanjarbetsflöde
 feature: Workflows
+hide: true
+hidefromtoc: true
 exl-id: c7bff902-4f5d-4783-aec4-13561fa7d242
-source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
+source-git-commit: 776c664a99721063dce5fa003cf40c81d94f8c78
 workflow-type: tm+mt
 source-wordcount: '553'
 ht-degree: 1%
@@ -39,7 +41,7 @@ Det här avsnittet visas bara i kampanjarbetsflöden.
 
   Om installationen innehåller flera arbetsflödesservrar använder du det här fältet för att välja vilken dator arbetsflödet ska köras på. Om värdet som definieras i det här fältet inte finns på någon server, kommer arbetsflödet att förbli väntande.
 
-  Se den här [Campaign Classic v7-installationsguiden](../../installation/using/configuring-campaign-server.md#high-availability-workflows-and-affinities).
+  Se den här [installationsguiden för Campaign Classic v7](../../installation/using/configuring-campaign-server.md#high-availability-workflows-and-affinities).
 
 * **[!UICONTROL History in days]**
 

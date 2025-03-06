@@ -2,8 +2,10 @@
 product: campaign
 title: Web Analytics
 description: Läs mer om Web Analytics-paketet
+hide: true
+hidefromtoc: true
 feature: Workflows, Analytics Integration
-source-git-commit: a1dbef3e1feca1e3347de013db8bd7809d315016
+source-git-commit: 776c664a99721063dce5fa003cf40c81d94f8c78
 workflow-type: tm+mt
 source-wordcount: '178'
 ht-degree: 1%
@@ -27,7 +29,7 @@ Arbetsflödena som anges nedan installeras som standard med modulen **Web Analyt
   <tr> 
    <td> <span class="uicontrol">Skickar indikatorer och kampanjattribut</span> <br /> </td> 
    <td> <span class="uicontrol">webAnalyticsSendMetrics</span> <br /> </td> 
-   <td> Med det här arbetsflödet kan ni skicka kampanjindikatorer från Adobe Campaign till Adobe Experience Cloud Suite via Adobe® Analytics-kontakten. Följande indikatorer berörs: <strong>Skickat</strong> (Skickat), <strong>Totalt antal öppningar</strong> (iTotalRecipientOpen), <strong>Totalt antal mottagare som klickade</strong> (iTotalRecipientClick), <strong>Fel</strong> (iError), <strong>Opt-Out</strong> (avanmäl) (Anmäl dig).<br /> </td> 
+   <td> Med det här arbetsflödet kan du skicka indikatorer för e-postkampanjer från Adobe Campaign till Adobe Experience Cloud Suite via Adobe® Analytics Connector. Följande indikatorer berörs: <strong>Skickat</strong> (Skickat), <strong>Totalt antal öppningar</strong> (iTotalRecipientOpen), <strong>Totalt antal mottagare som klickade</strong> (iTotalRecipientClick), <strong>Fel</strong> (iError), <strong>Opt-Out</strong> (avanmäl) (Anmäl dig).<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">Identifiering av konverterade kontakter</span> <br /> </td> 

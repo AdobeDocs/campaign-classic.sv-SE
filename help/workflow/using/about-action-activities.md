@@ -3,8 +3,10 @@ product: campaign
 title: Om åtgärdsaktiviteter
 description: Om åtgärdsaktiviteter
 feature: Workflows, Data Management
+hide: true
+hidefromtoc: true
 exl-id: 8758601b-c4bd-4179-8816-305d1a68d499
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: 776c664a99721063dce5fa003cf40c81d94f8c78
 workflow-type: tm+mt
 source-wordcount: '270'
 ht-degree: 2%
@@ -22,7 +24,7 @@ ht-degree: 2%
 * **Flerkanalsleveranser**: gör att du kan konfigurera en leverans på motsvarande kanal. Se avsnittet [Flerkanalsleveranser](cross-channel-deliveries.md).
 * **Lokalt godkännande**: gör att du kan utföra godkännanden och målinriktningsmeddelanden i ett distribuerat marknadsföringssammanhang (valfri modul). Se [Lokalt godkännande](local-approval.md).
 * **Datainläsning (RDBMS)**: ger åtkomst till en extern databas för att hämta data. Se avsnittet [Datainläsning (RDBMS)](data-loading-rdbms.md).
-* **Läser in (SOAP)**: gör att du kan samla in data via ett SOAP. Se [Läser in (SOAP)](loading-soap.md).
+* **Inläsning (SOAP)**: gör att du kan samla in data via ett SOAP-samtal. Se [Inläsning (SOAP)](loading-soap.md).
 * **Datainläsning (fil)**: gör att du kan komma åt en extern datakälla och använda dess data. Se avsnittet [Datainläsning (fil)](data-loading-file.md).
 * **Innehållshantering**: gör att du kan skapa eller anpassa innehåll. Se avsnittet [Innehållshantering](content-management.md).
 * **Extrahering (fil)**: gör att du kan extrahera data från en tabell i en fil. Se avsnittet [Extrahering (fil)](extraction-file.md).

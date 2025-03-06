@@ -6,10 +6,10 @@ title: Användarhandbok för Campaign Classic v7
 user-guide-description: Produktdokumentation för Adobe Campaign Classic v7.
 sub-product: adobe campaign classic
 type: Documentation
-source-git-commit: 446062946b64c9a4d065b6a56d263914cbe628f8
-workflow-type: ht
-source-wordcount: '2562'
-ht-degree: 100%
+source-git-commit: 776c664a99721063dce5fa003cf40c81d94f8c78
+workflow-type: tm+mt
+source-wordcount: '2571'
+ht-degree: 99%
 
 ---
 
@@ -238,8 +238,10 @@ ht-degree: 100%
       + [Berika innehåll](delivery/using/enriching-content.md)
       + [Automatisera via arbetsflöden](delivery/using/automating-via-workflows.md)
 + Orkestrera marknadsföringskampanjer {#orchestrating-campaigns}
+   + [Om marknadsföringskampanjer](campaign/using/about-marketing-campaigns.md)
+   + [Om Campaign Optimization](campaign-opt/using/about-campaign-optimization.md)
    + Om marknadsföringskampanjer {#about-marketing-campaigns}
-      + [Designa marknadsföringskampanjer](campaign/using/designing-marketing-campaigns.md)
+      + [Utforma marknadsföringskampanjer](campaign/using/designing-marketing-campaigns.md)
       + [Åtkomst till marknadsföringskampanjer](campaign/using/accessing-marketing-campaigns.md)
    + Orkestrera kampanjer {#orchestrate-campaigns}
       + [Kom igång med marknadsföringskampanjer](campaign/using/setting-up-marketing-campaigns.md)
@@ -250,14 +252,14 @@ ht-degree: 100%
       + [Konfigurera och hantera godkännanden](campaign/using/marketing-campaign-approval.md)
       + [Övervaka dina kampanjer](campaign/using/marketing-campaign-monitoring.md)
       + [Leverantörer, lager och budgetar](campaign/using/providers-stocks-and-budgets.md)
-   + Kampanjoptimering {#campaign-optimization}
-      + [Om kampanjtypologier](campaign-opt/using/about-campaign-typologies.md)
-      + [Tryckregler](campaign-opt/using/pressure-rules.md)
-      + [Konsekvensregler](campaign-opt/using/consistency-rules.md)
-      + [Kontrollregler](campaign-opt/using/control-rules.md)
-      + [Filtreringsregler](campaign-opt/using/filtering-rules.md)
-      + [Tillämpa regler](campaign-opt/using/applying-rules.md)
-      + [Simuleringar i Campaign](campaign-opt/using/campaign-simulations.md)
+      + Kampanjoptimering {#campaign-optimization}
+         + [Om kampanjtypologier](campaign-opt/using/about-campaign-typologies.md)
+         + [Tryckregler](campaign-opt/using/pressure-rules.md)
+         + [Konsekvensregler](campaign-opt/using/consistency-rules.md)
+         + [Kontrollregler](campaign-opt/using/control-rules.md)
+         + [Filtreringsregler](campaign-opt/using/filtering-rules.md)
+         + [Tillämpa regler](campaign-opt/using/applying-rules.md)
+         + [Simuleringar i Campaign](campaign-opt/using/campaign-simulations.md)
 + Hantera marknadsföringsresurser {#mrm}
    + [Om att hantera marknadsföringsresurser](mrm/using/about-marketing-resource-management.md)
    + [Skapa och hantera uppgifter](mrm/using/creating-and-managing-tasks.md)
@@ -391,6 +393,7 @@ ht-degree: 100%
       + [Synkronisera webbapplikationer](integrations/using/synchronizing-web-applications.md)
       + [Felsök [!DNL ACS Connector]](integrations/using/troubleshooting-the-acs-connector.md)
 + Automatisera med arbetsflöden {#automating-with-workflows}
+   + [Om automatisering av arbetsflöden](workflow/using/about-workflow-automation.md)
    + Kom igång med arbetsflöden {#introduction}
       + [Om arbetsflöden](workflow/using/about-workflows.md)
       + [Om aktiviteter](workflow/using/about-activities.md)

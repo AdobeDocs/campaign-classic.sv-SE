@@ -3,8 +3,10 @@ product: campaign
 title: Exempel på JavaScript-kod i arbetsflöden
 description: De här exemplen visar hur du kan använda JavaScript-kod i ett arbetsflöde
 feature: Workflows
+hide: true
+hidefromtoc: true
 exl-id: 7213ea64-3dec-4b16-9d93-4ae941ddfaa7
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: 776c664a99721063dce5fa003cf40c81d94f8c78
 workflow-type: tm+mt
 source-wordcount: '1695'
 ht-degree: 2%
@@ -19,10 +21,10 @@ I följande exempel visas hur du kan använda JavaScript-kod i ett arbetsflöde:
 
 * [Skriv till databasen](#write-example)
 * [Fråga databasen](#read-example)
-* [Utlösa ett arbetsflöde med en statisk SOAP](#trigger-example)
-* [Interagera med databasen med en icke-statisk SOAP](#interact-example)
+* [Starta ett arbetsflöde med en statisk SOAP-metod](#trigger-example)
+* [Interagera med databasen med en icke-statisk SOAP-metod](#interact-example)
 
-[Läs mer](https://experienceleague.adobe.com/developer/campaign-api/api/p-14.html) om statiska och icke-statiska SOAP.
+[Läs mer](https://experienceleague.adobe.com/developer/campaign-api/api/p-14.html) om statiska och icke-statiska SOAP-metoder.
 
 I dessa exempel används tillägget ECMAScript för XML (E4X). Med det här tillägget kan du kombinera JavaScript-samtal och XML-primitiver i samma skript.
 
@@ -52,7 +54,7 @@ Om du vill skriva till databasen kan du använda den statiska metoden `Write` i 
    1. Anropa metoden `Write` i schemat `xtk:session`.
 
       >[!IMPORTANT]
-      > Om du använder Adobe Campaign v8 rekommenderar vi att du använder mellanlagringsmekanismen med API:erna **Input** och **Data update/delete** för metoden `Write` i en Snowflake-tabell. [Läs mer](https://experienceleague.adobe.com/docs/campaign/campaign-v8/architecture/api/new-apis.html){target="_blank"}.
+      > Om du använder Adobe Campaign v8 rekommenderar vi att du använder mellanlagringsmekanismen med API:erna **Ingmit** och **Data update/delete** för metoden `Write` i en Snowflake-tabell. [Läs mer](https://experienceleague.adobe.com/docs/campaign/campaign-v8/architecture/api/new-apis.html){target="_blank"}.
 
    1. Skicka XML-koden som ett argument för skrivbegäran.
 
@@ -419,7 +421,7 @@ I den här videon visas hur du utlöser arbetsflöden:
 
 I följande exempel visas hur du utför dessa åtgärder:
 
-* Använd metoderna `get` och `create` i scheman om du vill använda icke-statiska SOAP
+* Använd metoderna `get` och `create` i scheman för att använda icke-statiska SOAP-metoder
 * Skapa metoder som utför SQL-frågor
 * Använd metoden `write` för att infoga, uppdatera och ta bort poster
 
@@ -562,7 +564,7 @@ Du kan infoga, uppdatera och ta bort poster. Du kan använda metoden `Write` på
 * Åtgärden `delete`
 
 >[!IMPORTANT]
-> Om du använder Adobe Campaign v8 rekommenderar vi att du använder mellanlagringsmekanismen med API:erna **Input** och **Data update/delete** för metoden `Write` i en Snowflake-tabell. [Läs mer](https://experienceleague.adobe.com/docs/campaign/campaign-v8/architecture/api/new-apis.html){target="_blank"}.
+> Om du använder Adobe Campaign v8 rekommenderar vi att du använder mellanlagringsmekanismen med API:erna **Ingmit** och **Data update/delete** för metoden `Write` i en Snowflake-tabell. [Läs mer](https://experienceleague.adobe.com/docs/campaign/campaign-v8/architecture/api/new-apis.html){target="_blank"}.
 
 #### Exempel 1: infoga eller uppdatera en post
 
@@ -616,7 +618,7 @@ I den här videon visas ett exempel på hur en icke-statisk API-metod används i
 
 ### API-dokumentation
 
-* [Exempel på SOAP samtal](https://experienceleague.adobe.com/developer/campaign-api/api/p-14.html)
+* [Exempel på SOAP-samtal](https://experienceleague.adobe.com/developer/campaign-api/api/p-14.html)
 * Metoder:
    * [Skapa](https://experienceleague.adobe.com/developer/campaign-api/api/f-create.html)
    * [DeleteCollection](https://experienceleague.adobe.com/developer/campaign-api/api/sm-session-DeleteCollection.html)

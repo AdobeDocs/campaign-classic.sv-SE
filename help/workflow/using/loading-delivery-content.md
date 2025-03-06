@@ -3,8 +3,10 @@ product: campaign
 title: Läs in leveransinnehåll
 description: Läser in leveransinnehåll
 feature: Workflows
+hide: true
+hidefromtoc: true
 exl-id: a52baffd-402b-4b33-ab72-ac954e4dee85
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: 776c664a99721063dce5fa003cf40c81d94f8c78
 workflow-type: tm+mt
 source-wordcount: '317'
 ht-degree: 2%
@@ -15,7 +17,7 @@ ht-degree: 2%
 
 
 
-Om ditt leveransinnehåll finns i en HTML-fil på Amazon S3-, FTP- eller SFTP-servrar kan du enkelt läsa in det i Adobe Campaign-leveranser.
+Om ditt leveransinnehåll finns i en HTML-fil som finns på Amazon S3-, FTP- eller SFTP-servrar kan du enkelt läsa in det i Adobe Campaign.
 
 Så här gör du:
 
