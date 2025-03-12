@@ -239,7 +239,7 @@ ht-degree: 99%
       + [Automatisera via arbetsflöden](delivery/using/automating-via-workflows.md)
 + [Samordna marknadsföringskampanjer](campaign/using/about-marketing-campaigns.md)
 + Orkestrera marknadsföringskampanjer {#orchestrating-campaigns}
-   + [Om Campaign Optimization](campaign-opt/using/about-campaign-optimization.md)
+   + [Om kampanjoptimering ](campaign-opt/using/about-campaign-optimization.md)
    + Om marknadsföringskampanjer {#about-marketing-campaigns}
       + [Utforma marknadsföringskampanjer](campaign/using/designing-marketing-campaigns.md)
       + [Åtkomst till marknadsföringskampanjer](campaign/using/accessing-marketing-campaigns.md)
