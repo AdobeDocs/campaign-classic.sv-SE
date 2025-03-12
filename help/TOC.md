@@ -6,7 +6,7 @@ title: Användarhandbok för Campaign Classic v7
 user-guide-description: Produktdokumentation för Adobe Campaign Classic v7.
 sub-product: adobe campaign classic
 type: Documentation
-source-git-commit: 776c664a99721063dce5fa003cf40c81d94f8c78
+source-git-commit: dd6bcb16fe41b6a3f1e3f5aaf2f753b29ad4bc1d
 workflow-type: tm+mt
 source-wordcount: '2571'
 ht-degree: 99%
@@ -237,8 +237,8 @@ ht-degree: 99%
       + [Använd en innehållsmall](delivery/using/using-a-content-template.md)
       + [Berika innehåll](delivery/using/enriching-content.md)
       + [Automatisera via arbetsflöden](delivery/using/automating-via-workflows.md)
++ [Samordna marknadsföringskampanjer](campaign/using/about-marketing-campaigns.md)
 + Orkestrera marknadsföringskampanjer {#orchestrating-campaigns}
-   + [Om marknadsföringskampanjer](campaign/using/about-marketing-campaigns.md)
    + [Om Campaign Optimization](campaign-opt/using/about-campaign-optimization.md)
    + Om marknadsföringskampanjer {#about-marketing-campaigns}
       + [Utforma marknadsföringskampanjer](campaign/using/designing-marketing-campaigns.md)
@@ -392,8 +392,8 @@ ht-degree: 99%
       + [Synkronisera målgrupper](integrations/using/synchronizing-audiences.md)
       + [Synkronisera webbapplikationer](integrations/using/synchronizing-web-applications.md)
       + [Felsök [!DNL ACS Connector]](integrations/using/troubleshooting-the-acs-connector.md)
++ [Automatisera med arbetsflöden](workflow/using/about-workflow-automation.md)
 + Automatisera med arbetsflöden {#automating-with-workflows}
-   + [Om automatisering av arbetsflöden](workflow/using/about-workflow-automation.md)
    + Kom igång med arbetsflöden {#introduction}
       + [Om arbetsflöden](workflow/using/about-workflows.md)
       + [Om aktiviteter](workflow/using/about-activities.md)

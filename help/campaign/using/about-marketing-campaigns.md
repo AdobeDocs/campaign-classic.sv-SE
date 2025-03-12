@@ -4,23 +4,41 @@ title: Om marknadsföringskampanjer
 description: Definiera, optimera, genomföra och analysera marknadsföringskampanjer
 role: User
 feature: Campaigns
-source-git-commit: 4f809011a8b4cb3803c4e8151e358e5fd73634e4
+exl-id: 07cfa2b3-4e70-437a-ad5f-15fbfe717d5c
+source-git-commit: dd6bcb16fe41b6a3f1e3f5aaf2f753b29ad4bc1d
 workflow-type: tm+mt
-source-wordcount: '107'
-ht-degree: 6%
+source-wordcount: '296'
+ht-degree: 2%
 
 ---
 
-# Om marknadsföringskampanjer{#designing-marketing-campaigns}
+# Samordna marknadsföringskampanjer{#designing-marketing-campaigns}
 
 Adobe Campaign erbjuder en uppsättning lösningar som hjälper er att personalisera och leverera kampanjer i alla kanaler, både online och offline. Ni kan skapa, konfigurera, köra och analysera marknadsföringskampanjer. Alla marknadsföringskampanjer kan hanteras från ett enhetligt kontrollcenter.
 
 Kampanjerna omfattar åtgärder (leveranser) och processer (import eller extrahering av filer) samt resurser (marknadsföringsdokument, leveransdispositioner). De används i marknadsföringskampanjer. Kampanjer ingår i ett program och program ingår i en kampanjplan.
 
->[!NOTE]
->
->Mer information om kampanjhantering finns i [dokumentationen för Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/campaigns/campaigns.html){target=_blank}.
+Mer information om kampanjhantering finns i [dokumentationen för Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/campaigns/campaigns.html){target=_blank}.
 
+![](assets/do-not-localize/campaign.jpg){width="40%"}
+
+Lär dig de viktigaste stegen för kampanjhantering:
+
+* [Kom igång](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/set-up-campaigns.html){target=_blank}: Upptäck, steg för steg, hur du skapar och kör en marknadsföringskampanj i Adobe Campaign.
+
+* [Skapa din första kampanj](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-create.html){target=_blank}: Lär dig hur du schemalägger och konfigurerar logiken för att samordna dina kampanjer. En kampanj centraliserar alla element som hör till en marknadsföringskampanj: leveranser, målinriktningsregler, kostnader, exportfiler, relaterade dokument osv.
+
+* [Skicka meddelanden i en kampanj](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-deliveries.html){target=_blank}: Samordna era flerkanalsleveranser i era kampanjer: effektivisera kommunikationen med Adobe Campaign via personaliserade e-postmeddelanden, SMS, push-meddelanden och meddelanden i appen.
+
+![](assets/do-not-localize/add-on.jpg){width="40%"}
+
+Det finns tre tillägg för kampanjhantering:
+
+* [Kampanjoptimering](https://experienceleague.adobe.com/docs/campaign/automation/campaign-optimization/campaign-typologies.html){target=_blank}: Med den här modulen kan du styra, filtrera och övervaka leveransen. Detta garanterar att de skickade meddelandena uppfyller kundernas behov och förväntningar och företagets kommunikationspolicy.
+
+* [Hantering av marknadsföringsresurser](https://experienceleague.adobe.com/docs/campaign/automation/mrm/about-marketing-resource-management.html){target=_blank}: Med den här modulen kan du styra marknadsföringsåtgärder i ett samarbetsläge genom att tillhandahålla fullständig hantering och realtidsspårning av de uppgifter, budgetar och marknadsföringsresurser som ingår.
+
+* [Distribuerad marknadsföring](https://experienceleague.adobe.com/docs/campaign/automation/distributed-marketing/about-distributed-marketing.html){target=_blank}: Med den här modulen kan du styra marknadsföringsåtgärder i ett samverkansbaserat läge genom att tillhandahålla fullständig hantering och realtidsspårning av de uppgifter, budgetar och marknadsföringsresurser som ingår.
 
 <!--
 
