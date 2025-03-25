@@ -3,10 +3,10 @@ keywords: Campaign Classic, starstida, populära ämnen
 product: campaign
 title: Produktdokumentation för Adobe Campaign Classic v7
 exl-id: 6b3f1689-80de-49fd-b7ee-7a2a1931d157
-source-git-commit: fb19195c7331a2adc0bcf7a37ae7678078dce5e6
+source-git-commit: ec39e513a3474bdcdcf39be7b5e184d62b98f7a2
 workflow-type: tm+mt
-source-wordcount: '353'
-ht-degree: 100%
+source-wordcount: '357'
+ht-degree: 94%
 
 ---
 
@@ -21,9 +21,9 @@ Få en glimt av de senaste förbättringarna i produkterna och dokumentationen f
 >[!BEGINTABS]
 
 
->[!TAB Juni-versionen är här!]
+>[!TAB Mars 2025-utgåvan är live!]
 
-Upptäck uppdateringar, förbättringar och korrigeringar som ingår i Campaign Classic v7.4.1.
+Upptäck uppdateringar, förbättringar och korrigeringar som ingår i Campaign Classic version 7.4.2 - 25 mars.
 
 [![Bild](assets/do-not-localize/learn-more-button.svg)](rn/using/latest-release.md)
 
