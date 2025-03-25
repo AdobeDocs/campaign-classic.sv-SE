@@ -6,10 +6,10 @@ feature: Release Notes
 role: User
 level: Beginner
 exl-id: d65869ca-a785-4327-8e8d-791c28e4696c
-source-git-commit: a92e49e1ac8b0e8f619e06fadba73090a693bc4a
+source-git-commit: 631188b5974eaa4cd1bf667c5df9f2ff0f983cf0
 workflow-type: tm+mt
-source-wordcount: '194'
-ht-degree: 31%
+source-wordcount: '251'
+ht-degree: 24%
 
 ---
 
@@ -47,9 +47,19 @@ Anslutningen till Adobe lösningar och appar via det externa **[!UICONTROL Adobe
 
 Den här versionen innehåller följande huvudkorrigeringar:
 
-* Korrigeringar för TLS-/SMPP-anslutningar
-* Google BigQuery-korrigeringar
-* MTA-korrigeringar
+* TLS-/SMPP-anslutning - Åtgärdade SMPP-stabilitetsproblem
+
+* Google BigQuery-korrigeringar:
+
+   * Fasta regressioner för BOOLEAN-datatyper
+   * Problem med proxyinställningar har åtgärdats
+   * Korrigerade regressioner för DATETIME-datatyper
+   * Fast bulklaststabilitet
+   * Förbättrade interna tester av ODBC-versioner
+   * Ett problem med specialtecken i anslutningssträngen har korrigerats
+   * Standardtimeout (5 min) för Google BigQuery-frågor har tagits bort
+
+* MTA (Mail Transfer Agent) - Ett överblivet MTA-underordnat objekt som ska ha statusen **[!UICONTROL Start pending]** har korrigerats.
 
 Följande problem har också åtgärdats i den här versionen:
 
