@@ -7,9 +7,9 @@ role: User
 level: Beginner
 exl-id: d65869ca-a785-4327-8e8d-791c28e4696c
 source-git-commit: 631188b5974eaa4cd1bf667c5df9f2ff0f983cf0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '251'
-ht-degree: 24%
+ht-degree: 100%
 
 ---
 
@@ -25,7 +25,7 @@ _21 mars 2025_
 
 >[!AVAILABILITY]
 >
->Den här versionen är i **begränsad tillgänglighet** (LA). Den är begränsad till användare av värdtjänster/hanterade tjänster. Den här versionen är snart tillgänglig för hybridkunder och lokala kunder.
+>Den här versionen är i **begränsad tillgänglighet** (LA). Den är begränsad till endast användare av värdtjänster/hanterade tjänster. Den här versionen är snart tillgänglig för hybridkunder och kunder på plats.
 
 <!--
 ### Compatibility updates {#comp-7-4-2}
@@ -41,27 +41,27 @@ This release comes with the following compatibility updates:
 
 Den här versionen innehåller flera säkerhetskorrigeringar.
 
-Anslutningen till Adobe lösningar och appar via det externa **[!UICONTROL Adobe Experience Cloud]**-kontot har uppdaterats för att stärka säkerheten.
+Anslutningen till lösningar och appar från Adobe via det externa **[!UICONTROL Adobe Experience Cloud]**-kontot har uppdaterats för att stärka säkerheten.
 
 ### Korrigeringar {#release-7-4-2-fixes}
 
-Den här versionen innehåller följande huvudkorrigeringar:
+Den här versionen kommer med följande huvudkorrigeringar:
 
-* TLS-/SMPP-anslutning - Åtgärdade SMPP-stabilitetsproblem
+* TLS-/SMPP-anslutning – korrigerade SMPP-stabilitetsproblem
 
 * Google BigQuery-korrigeringar:
 
-   * Fasta regressioner för BOOLEAN-datatyper
-   * Problem med proxyinställningar har åtgärdats
+   * Korrigerade regressioner för BOOLEAN-datatyper
+   * Korrigerade problem med proxyinställningar
    * Korrigerade regressioner för DATETIME-datatyper
-   * Fast bulklaststabilitet
+   * Korrigerade bulklaststabilitet
    * Förbättrade interna tester av ODBC-versioner
-   * Ett problem med specialtecken i anslutningssträngen har korrigerats
+   * Korrigerade ett problem med specialtecken i anslutningssträngen
    * Standardtimeout (5 min) för Google BigQuery-frågor har tagits bort
 
-* MTA (Mail Transfer Agent) - Ett överblivet MTA-underordnat objekt som ska ha statusen **[!UICONTROL Start pending]** har korrigerats.
+* MTA (Mail Transfer Agent) – korrigerade ett överblivet MTA-underordnat element som ska ha statusen **[!UICONTROL Start pending]**.
 
-Följande problem har också åtgärdats i den här versionen:
+Följande problem har också korrigerats i den här versionen:
 
-NEO-47269, NEO-59059, NEO-62455, NEO-65774, NEO-66462, NEO-66989, NEO-77898, NEO-788 43, NEO-79373, NEO-79598, NEO-80145, NEO-80245, NEO-80434, NEO-80683, NEO-8122, NEO-8 1433, NEO-81864, NEO-82351, NEO-82781, NEO-82838, NEO-82923, NEO-83252, NEO-83809, NEO O-83826, NEO-84024, NEO-84553, NEO-85150
+NEO-47269, NEO-59059, NEO-62455, NEO-65774, NEO-66462, NEO-66989, NEO-77898, NEO-78843, NEO-79373, NEO-79598, NEO-80145, NEO-80245, NEO-80434, NEO-80683, NEO-81222, NEO-81433, NEO-81864, NEO-82351, NEO-82781, NEO-82838, NEO-82923, NEO-83252, NEO-83809, NEO-83826, NEO-84024, NEO-84553, NEO-85150
 
