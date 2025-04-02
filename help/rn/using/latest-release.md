@@ -6,9 +6,9 @@ feature: Release Notes
 role: User
 level: Beginner
 exl-id: d65869ca-a785-4327-8e8d-791c28e4696c
-source-git-commit: cd0de82ba743fa04e59a4fa6f560a80cd5c8e940
+source-git-commit: 492115471325533e913739d27e0a461edf98b723
 workflow-type: tm+mt
-source-wordcount: '251'
+source-wordcount: '224'
 ht-degree: 99%
 
 ---
@@ -22,10 +22,6 @@ Den här sidan listar nya funktioner, förbättringar och korrigeringar som komm
 [!BADGE Allmän tillgänglighet]{type=Positive url="https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/rn-overview.html?lang=sv#rn-statuses" tooltip="Allmän tillgänglighet"}
 
 _2 april 2025_
-
->[!AVAILABILITY]
->
->Den här versionen är i **begränsad tillgänglighet** (LA). Den är begränsad till endast användare av värdtjänster/hanterade tjänster. Den här versionen är snart tillgänglig för hybridkunder och kunder på plats.
 
 <!--
 ### Compatibility updates {#comp-7-4-2}
