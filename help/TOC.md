@@ -6,9 +6,9 @@ title: Användarhandbok för Campaign Classic v7
 user-guide-description: Produktdokumentation för Adobe Campaign Classic v7.
 sub-product: adobe campaign classic
 type: Documentation
-source-git-commit: dd6bcb16fe41b6a3f1e3f5aaf2f753b29ad4bc1d
-workflow-type: ht
-source-wordcount: '2571'
+source-git-commit: 3daf88e14792bfc675cd4cbec6571377c9aa9392
+workflow-type: tm+mt
+source-wordcount: '2568'
 ht-degree: 100%
 
 ---
@@ -238,20 +238,19 @@ ht-degree: 100%
       + [Berika innehåll](delivery/using/enriching-content.md)
       + [Automatisera via arbetsflöden](delivery/using/automating-via-workflows.md)
 + [Orkestrera marknadsföringskampanjer](campaign/using/about-marketing-campaigns.md)
-+ Orkestrera marknadsföringskampanjer {#orchestrating-campaigns}
    + [Om kampanjoptimering ](campaign-opt/using/about-campaign-optimization.md)
-   + Om marknadsföringskampanjer {#about-marketing-campaigns}
-      + [Utforma marknadsföringskampanjer](campaign/using/designing-marketing-campaigns.md)
-      + [Åtkomst till marknadsföringskampanjer](campaign/using/accessing-marketing-campaigns.md)
-   + Orkestrera kampanjer {#orchestrate-campaigns}
-      + [Kom igång med marknadsföringskampanjer](campaign/using/setting-up-marketing-campaigns.md)
-      + [Skapa och konfigurera mallar](campaign/using/marketing-campaign-templates.md)
-      + [Lägg till leveranser](campaign/using/marketing-campaign-deliveries.md)
-      + [Välj målgruppen](campaign/using/marketing-campaign-target.md)
-      + [Hantera dokument och resurser](campaign/using/marketing-campaign-assets.md)
-      + [Konfigurera och hantera godkännanden](campaign/using/marketing-campaign-approval.md)
-      + [Övervaka dina kampanjer](campaign/using/marketing-campaign-monitoring.md)
-      + [Leverantörer, lager och budgetar](campaign/using/providers-stocks-and-budgets.md)
+      + Om marknadsföringskampanjer {#about-marketing-campaigns}
+         + [Utforma marknadsföringskampanjer](campaign/using/designing-marketing-campaigns.md)
+         + [Åtkomst till marknadsföringskampanjer](campaign/using/accessing-marketing-campaigns.md)
+      + Orkestrera kampanjer {#orchestrate-campaigns}
+         + [Kom igång med marknadsföringskampanjer](campaign/using/setting-up-marketing-campaigns.md)
+         + [Skapa och konfigurera mallar](campaign/using/marketing-campaign-templates.md)
+         + [Lägg till leveranser](campaign/using/marketing-campaign-deliveries.md)
+         + [Välj målgruppen](campaign/using/marketing-campaign-target.md)
+         + [Hantera dokument och resurser](campaign/using/marketing-campaign-assets.md)
+         + [Konfigurera och hantera godkännanden](campaign/using/marketing-campaign-approval.md)
+         + [Övervaka dina kampanjer](campaign/using/marketing-campaign-monitoring.md)
+         + [Leverantörer, lager och budgetar](campaign/using/providers-stocks-and-budgets.md)
       + Kampanjoptimering {#campaign-optimization}
          + [Om kampanjtypologier](campaign-opt/using/about-campaign-typologies.md)
          + [Tryckregler](campaign-opt/using/pressure-rules.md)
