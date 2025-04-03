@@ -6,9 +6,9 @@ title: Användarhandbok för Campaign Classic v7
 user-guide-description: Produktdokumentation för Adobe Campaign Classic v7.
 sub-product: adobe campaign classic
 type: Documentation
-source-git-commit: 98bc76dce83abcd3ce39648d554ee92841fd7327
+source-git-commit: efeb6c7d0969c66ec9bd63f4bf424224c8ca222b
 workflow-type: tm+mt
-source-wordcount: '2574'
+source-wordcount: '2571'
 ht-degree: 100%
 
 ---
@@ -239,7 +239,6 @@ ht-degree: 100%
       + [Automatisera via arbetsflöden](delivery/using/automating-via-workflows.md)
 + [Orkestrera marknadsföringskampanjer](campaign/using/about-marketing-campaigns.md)
 + Orkestrera marknadsföringskampanjer {#orchestrating-campaigns}
-   + [Orkestrera marknadsföringskampanjer](campaign/using/about-marketing-campaigns.md)
    + [Om kampanjoptimering ](campaign-opt/using/about-campaign-optimization.md)
    + Om marknadsföringskampanjer {#about-marketing-campaigns}
       + [Utforma marknadsföringskampanjer](campaign/using/designing-marketing-campaigns.md)
