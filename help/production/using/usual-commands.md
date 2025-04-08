@@ -8,9 +8,9 @@ audience: production
 content-type: reference
 topic-tags: production-procedures
 exl-id: 472ccc04-e68e-4ccb-90e9-7d626a4e794f
-source-git-commit: b7dedddc080d1ea8db700fabc9ee03238b3706cc
+source-git-commit: b8a6a0db27826309456c285c08d4f1d85de70283
 workflow-type: tm+mt
-source-wordcount: '408'
+source-wordcount: '439'
 ht-degree: 3%
 
 ---
@@ -161,7 +161,17 @@ Så här ändrar du det **interna** lösenordet: **nlserver config -internalPass
 >
 >* I allmänhet kan du använda kommandot **config** i stället för att ändra konfigurationsfilerna manuellt
 >* Använd **-? om du vill hämta parameterlistan.**-parameter: **nlserver config -?**
->* Om det är en Oraclena databas får du inte ange kontot. Syntaxen är följande:
+>* Om det är en Oracle-databas får du inte ange kontot. Syntaxen är följande:
 >
 >  `nlserver config -setdblogin:Oracle:test6@dbserver`
 >
+
+Här är ett exempel för MSSQL:
+
+```sql
+nlserver config -setdblogin:mssql:<login>/"<password>"@<server> -instance:<instance_name> 
+```
+
+* inloggning (t.ex. account:user) och servern finns i noden dataSource i filen config-&lt;instance_name>.xml.
+* Lösenordet måste omslutas med citattecken &quot;&quot;.
+

@@ -7,18 +7,18 @@ audience: interaction
 content-type: reference
 topic-tags: unitary-interactions
 exl-id: 3eaef689-44fa-41b3-ade8-9fe447e165ec
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: b8a6a0db27826309456c285c08d4f1d85de70283
 workflow-type: tm+mt
-source-wordcount: '317'
+source-wordcount: '325'
 ht-degree: 3%
 
 ---
 
-# Integrering via SOAP (serversidan){#integration-via-soap-server-side}
+# Integrering via SOAP (serversida){#integration-via-soap-server-side}
 
 
 
-De SOAP webbtjänsterna som tillhandahålls för hantering av erbjudanden skiljer sig från de som vanligtvis används i Adobe Campaign. De kan nås via den interaktions-URL som beskrivs i föregående avsnitt och du kan presentera eller uppdatera erbjudanden för en viss kontakt.
+SOAP webbtjänster för hantering av erbjudanden skiljer sig från dem som vanligtvis används i Adobe Campaign. De kan nås via den interaktions-URL som beskrivs i föregående avsnitt och du kan presentera eller uppdatera erbjudanden för en viss kontakt.
 
 ## Erbjudandeförslag {#offer-proposition}
 
@@ -37,10 +37,10 @@ Lägg till kommandot **nms:proposition#Propose** följt av följande parametrar 
 >
 >Inställningarna **targetId** och **maxCount** är obligatoriska. De andra är valfria.
 
-Som svar på frågan returnerar SOAP följande parametrar:
+Som svar på frågan returnerar SOAP-tjänsten följande parametrar:
 
 * **interactionId**: ID för interaktionen.
-* **propositioner**: XML-elementet innehåller en lista med förslag, där vart och ett har ett eget ID och HTML.
+* **propositioner**: XML-elementet innehåller en lista med förslag, där vart och ett har ett eget ID och en HTML-representation.
 
 ## Erbjudandeuppdatering {#offer-update}
 
@@ -50,12 +50,19 @@ Lägg till kommandot **nms:interaction#UpdateStatus** i URL:en, följt av följa
 * **status**: strängtyp, den anger erbjudandets nya status. Möjliga värden visas i uppräkningen **propositionStatus** i schemat **nms:common**. Till exempel motsvarar talet 3 statusen **Accepterad**.
 * **context**: Med XML-element kan du lägga till kontextinformation i utrymmesschemat. Om schemat som används är **nms:interaction** bör **`<empty>`** läggas till.
 
-## Exempel på hur du använder ett SOAP {#example-using-a-soap-call}
+## Exempel på hur du använder ett SOAP-samtal {#example-using-a-soap-call}
 
-Här är ett exempel på kod för ett SOAP anrop:
+Nedan finns ett exempel på kod för ett SOAP-samtal.
+
+Här är ett exempel på URL:
+
+```
+http://<urlOfYourJSSP>?env=liveRcp&sp=<nameSpaceOfferSpace>&t=<targetID>
+```
 
 ```
 <%
+  var env = request.getUTF8Parameter("env");
   var space = request.parameters.sp
   var cnx = new HttpSoapConnection(
     "https://" + request.serverName + ":" + request.serverPort + "/interaction/" + env + "/" + space,
@@ -104,7 +111,7 @@ Här är ett exempel på kod för ett SOAP anrop:
       var result = session.Propose(target, count, category, theme, <empty/>)
       var props = result[1]
   %><table><tr><%
-      for each( var propHtml in props.proposition.*.mdSource )
+      for each( var propHtml in props.proposition.*.htmlSource )
       {
         %><td><%=propHtml%></td><%
       }

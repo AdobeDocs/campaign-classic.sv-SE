@@ -6,10 +6,10 @@ feature: Release Notes
 role: User
 level: Beginner
 exl-id: 07c1f4a3-cf16-4a9b-b402-e13258799f91
-source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
-workflow-type: ht
-source-wordcount: '3782'
-ht-degree: 100%
+source-git-commit: b8a6a0db27826309456c285c08d4f1d85de70283
+workflow-type: tm+mt
+source-wordcount: '3864'
+ht-degree: 97%
 
 ---
 
@@ -18,6 +18,17 @@ ht-degree: 100%
 Den här sidan visar alla nya funktioner och dokumentationsuppdateringar efter månad och version av Campaign.
 
 Se [Versionsinformationen för Adobe Campaign Classic](../../rn/using/latest-release.md) beträffande versionsrelaterade uppdateringar.
+
+## 2025
+
+### Mars 2025 {#march-2025}
+
+Som en del av ett kampanjprojekt v8 har vi börjat omorganisera Campaign Classic dokumentation. I 7.4.2 släpper vi den första milstolpen. Följande guider har ersatts med landningssidor, inklusive länkar till v8-dokumentation:
+
+* Samordna marknadsföringskampanjer: den här guiden har ersatts med en [landningssida](../../campaign/using/about-marketing-campaigns.md).
+* Hantering av marknadsföringsresurser: den här guiden har tagits bort.
+* Distribuerad marknadsföring: den här guiden har tagits bort.
+* Automatisera med arbetsflöden: den här guiden har ersatts med en [landningssida](../../workflow/using/about-workflow-automation.md)
 
 ## 2024
 
