@@ -1,11 +1,11 @@
 ---
 product: campaign
-title: Skapa och konfigurera ditt Adobe-tekniska konto för API:er
+title: Skapa och konfigurera ditt Adobe-konto för API:er
 description: Läs mer om hur du skapar ett Adobe API-konto
 role: User, Admin
-level: Beginner
+level: Intermediate, Experienced
 exl-id: 5d830ea0-a0a3-4b35-8dc4-e955380431fb
-source-git-commit: 5352426fc68cbcb6519127e5c89c1e9f8619ca6b
+source-git-commit: 2bfcec5eaa1145cfb88adfa9c8b2f72ee3cd9469
 workflow-type: tm+mt
 source-wordcount: '334'
 ht-degree: 2%
@@ -18,7 +18,7 @@ Autentiseringsuppgifter för server-till-server gör att programmets server kan 
 
 ## Migrera befintliga integreringar {#migrate-jwt}
 
-JWT-autentiseringsuppgifterna (Service Account) har tagits bort av Adobe. Kampanjintegreringar med lösningar och appar från Adobe måste nu förlita sig på autentiseringsuppgifter för OAuth Server-till-Server.
+JWT-autentiseringsuppgifterna (Service Account) har tagits bort av Adobe. Kampanjintegreringar med Adobe lösningar och appar måste nu förlita sig på autentiseringsuppgifter för OAuth Server-till-Server.
 
 Om du har implementerat inkommande eller utgående integreringar med Campaign före juni 2024 måste du uppgradera din Campaign-miljö till v7.4.1 och migrera ditt tekniska konto till Autentisering enligt informationen [i den här dokumentationen](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration){target="_blank"}. Befintliga JWT-autentiseringsuppgifter (Service Account) fortsätter att fungera till den **27 januari 2025**.
 
@@ -67,7 +67,7 @@ När du har utfört stegen ovan lägger du till dina OAuth-projektautentiserings
 
 >[!NOTE]
 >
->Detta är inte nödvändigt som värdkund eller hanterad Cloud Service: Adobe har redan lagt till dina OAuth-projektbehörigheter i din miljö.
+>Detta är inte nödvändigt som värdkund eller hanterad molntjänstkund: Adobe har redan lagt till dina OAuth-projektbehörigheter i din miljö.
 >
 
 Följ de här stegen om du är lokal kund eller hybridkund:

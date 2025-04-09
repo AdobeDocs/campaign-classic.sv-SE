@@ -5,12 +5,13 @@ description: Vanliga frågor och svar om Campaign Classic
 feature: Troubleshooting, Application Settings
 audience: platform
 content-type: reference
+level: Beginner, Intermediate, Experienced
 topic-tags: starting-with-adobe-campaign
 exl-id: 50bed489-2a0f-4123-a326-3d68c8295662
-source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
+source-git-commit: 2bfcec5eaa1145cfb88adfa9c8b2f72ee3cd9469
 workflow-type: tm+mt
 source-wordcount: '752'
-ht-degree: 72%
+ht-degree: 70%
 
 ---
 
@@ -28,7 +29,7 @@ Användargränssnittet i Adobe Campaign finns på fyra språk: engelska, franska
 
 För engelska kan du välja antingen amerikansk engelska eller brittisk engelska när du installerar Campaign. De skiljer sig åt när det gäller datum- och tidsformat. Mer information om dessa skillnader finns i [det här avsnittet](../../platform/using/adobe-campaign-workspace.md#date-and-time).
 
-## Kan jag använda Campaign Classic med andra Adobe-lösningar? {#can-i-use-campaign-classic-with-other-adobe-solutions-}
+## Kan jag använda Campaign Classic tillsammans med andra Adobe-lösningar? {#can-i-use-campaign-classic-with-other-adobe-solutions-}
 
 Du kan kombinera leveransfunktionerna och de avancerade funktionerna för kampanjhantering i Adobe Campaign med en uppsättning lösningar som hjälper till att personalisera användarnas upplevelse.
 
@@ -42,7 +43,7 @@ Som expertanvändare kan du konfigurera spårningsfunktioner via instansen i Cam
 
 ## Hur konfigurerar man e-postleveransen? {#how-to-configure-email-deliverability-}
 
-Förutom [Adobe Deliverability Best Practice Guide](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html?lang=sv) kan du läsa igenom de tekniska rekommendationerna för leveransbarhet för att förstå hur du konfigurerar instansen för att maximera leveransfunktionerna i Campaign.
+Förutom [Adobe Deliverability Best Practice Guide](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html?lang=sv) kan du läsa igenom de tekniska rekommendationerna för leveransfunktioner för att förstå hur du konfigurerar instansen för att maximera leveransfunktionerna i Campaign.
 
 [Klicka här för att läsa mer](../../delivery/using/about-deliverability.md).
 
@@ -86,7 +87,7 @@ Logga ut och gå till **[!UICONTROL File]** > **[!UICONTROL Clear the local cach
 
 ![](assets/faq_soft_cache.png)
 
-Om detta fortfarande inte hjälper kan du försöka utföra en rensning av hårt cacheminne genom att utföra stegen nedan.
+Om detta fortfarande inte hjälper kan du försöka rensa hårddisken genom att utföra stegen nedan.
 
 ## Hur rensar du hårddisken när problemen är datorspecifika eller användarspecifika? {#perform-hard-cache-clear}
 

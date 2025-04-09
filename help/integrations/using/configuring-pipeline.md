@@ -6,10 +6,11 @@ feature: Triggers
 badge-v8: label="Gäller även för v8" type="Positive" tooltip="Gäller även Campaign v8"
 audience: integrations
 content-type: reference
+level: Intermediate, Experienced
 exl-id: 2d214c36-8429-4b2b-b1f5-fe2730581bba
-source-git-commit: b11185da8236d6100d98eabcc9dc1cf2cffa70af
+source-git-commit: 2bfcec5eaa1145cfb88adfa9c8b2f72ee3cd9469
 workflow-type: tm+mt
-source-wordcount: '833'
+source-wordcount: '832'
 ht-degree: 1%
 
 ---
@@ -37,7 +38,7 @@ Autentisering krävs eftersom pipeline lagras i Adobe Experience Cloud. Den anv�
 
 Du måste aktivera din organisation med Adobe Developer Kontotoken för integreringen av utlösare.
 
-Lär dig hur du skapar ditt Adobe-tekniska konto på [den här sidan](../../integrations/using/oauth-technical-account.md). Observera att du måste välja **[!UICONTROL Adobe Analytics]** när du lägger till API i Adobe Developer-autentiseringsuppgifter.
+Lär dig hur du skapar ditt Adobe Technical-konto på [den här sidan](../../integrations/using/oauth-technical-account.md). Observera att du måste välja **[!UICONTROL Adobe Analytics]** när du lägger till API i Adobe Developer-autentiseringsuppgifter.
 
 ## Steg 2: Konfigurera alternativet för pipeline {#configuring-nmspipeline}
 

@@ -6,22 +6,23 @@ feature: Custom Resources
 role: Data Engineer, Developer
 audience: configuration
 content-type: reference
+level: Intermediate, Experienced
 topic-tags: schema-reference
 exl-id: 3405efb8-a37c-4622-a271-63d7a4148751
-source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
+source-git-commit: 2bfcec5eaa1145cfb88adfa9c8b2f72ee3cd9469
 workflow-type: tm+mt
 source-wordcount: '1511'
 ht-degree: 1%
 
 ---
 
-# Förstå schemastrukturen {#schema-structure}
+# Förstå schemastruktur {#schema-structure}
 
 Grundstrukturen för ett schema beskrivs nedan.
 
 ## Datascheman  {#data-schema}
 
-För en `<srcschema>` är strukturen följande:
+För en `<srcschema>`är strukturen följande:
 
 ```sql
 <srcSchema>
@@ -64,7 +65,7 @@ För en `<srcschema>` är strukturen följande:
 </srcSchema>
 ```
 
-XML-dokumentet i ett dataschema måste innehålla rotelementet **`<srcschema>`** med attributen **name** och **namespace** för att schemanamnet och dess namnområde ska kunna fyllas i.
+XML-dokumentet för ett dataschema måste innehålla rotelementet **`<srcschema>`** med attributen **name** och **namespace** för att schemanamnet och dess namnutrymme ska kunna fyllas i.
 
 ```sql
 <srcSchema name="schema_name" namespace="namespace">
@@ -72,7 +73,7 @@ XML-dokumentet i ett dataschema måste innehålla rotelementet **`<srcschema>`**
 </srcSchema>
 ```
 
-Låt oss använda följande XML-innehåll för att illustrera strukturen i ett dataschema:
+Låt oss använda följande XML-innehåll för att illustrera strukturen för ett dataschema:
 
 ```sql
 <recipient email="John.doe@aol.com" created="2009/03/12" gender="1"> 
@@ -132,11 +133,11 @@ Följande regler gäller:
 
 ## Datatyper {#data-types}
 
-Datatypen anges via attributet **type** i elementen **`<attribute>`** och **`<element>`**.
+Datatypen anges via attributet **type** i elementen **`<attribute>`** och **`<element>`** .
 
-Det finns en detaljerad lista i beskrivningen av elementet [`<attribute>` ](../../configuration/using/schema/attribute.md) och elementet [`<element>` ](../../configuration/using/schema/element.md).
+En detaljerad lista finns i beskrivningen av elementet [`<attribute>`](../../configuration/using/schema/attribute.md) och elementet[`<element>`](../../configuration/using/schema/element.md).
 
-När det här attributet inte är ifyllt är **string** standarddatatypen om inte elementet innehåller underordnade element. Om den gör det används den bara för att strukturera elementen hierarkiskt (**`<location>`** element i vårt exempel).
+När det här attributet inte är ifyllt **är sträng** standarddatatypen om inte elementet innehåller underordnade element. Om det gör det används det bara för att strukturera elementen hierarkiskt (**`<location>`** element i vårt exempel).
 
 Följande datatyper stöds i scheman:
 
@@ -147,9 +148,9 @@ Följande datatyper stöds i scheman:
 * **boolesk**: Booleskt fält. Exempel på möjliga värden: true/false, 0/1, yes/no, osv.
 * **byte**, **short**, **long**: heltal (1 byte, 2 byte, 4 byte). Exempel: ålder, kontonummer, antal poäng osv.
 * **double**: flyttal med dubbel precision. Exempel: ett pris, en kurs, osv.
-* **date**, **datetime**: datum och datum + gånger. Exempel: födelsedatum, inköpsdatum osv.
-* **datetimenotz**: datum + tid utan tidszonsdata.
-* **tidsintervall**: varaktighet. Exempel: tjänsteålder.
+* **Datum**, Datum/ **Tid**: Datum och Datum + Tider. Exempel: ett födelsedatum, ett inköpsdatum osv.
+* **datetimenotz**: Datum + tid utan tidszonsdata.
+* **Tidsspann**: varaktigheter. Exempel: senioritet.
 * **PM**: långa textfält (flera rader). Exempel: en beskrivning, en kommentar, osv.
 * **uid**: Uniqueidentifier-fält som stöder ett GUID (stöds endast i Microsoft SQL Server).
 
@@ -174,7 +175,7 @@ Här är vårt exempelschema med de angivna typerna:
 
 ### Mappa typer av Adobe Campaign-/DBMS-data {#mapping-the-types-of-adobe-campaign-dbms-data}
 
-Tabellen nedan visar mappningarna för de typer av data som genereras av Adobe Campaign för de olika databashanteringssystemen.
+I tabellen nedan visas mappningarna för de typer av data som genereras av Adobe Campaign för de olika databashanteringssystemen.
 
 <table> 
  <tbody> 
@@ -189,9 +190,9 @@ Tabellen nedan visar mappningarna för de typer av data som genereras av Adobe C
    <td> VARCHAR2 (NVARCHAR2 om unicode används)<br /> </td> 
   </tr> 
   <tr> 
-   <td> Boolean<br /> </td> 
+   <td> Boolesk<br /> </td> 
    <td> SMALLINT<br /> </td> 
-   <td> NUMBER(3)<br /> </td> 
+   <td> ANTAL(3)<br /> </td> 
   </tr> 
   <tr> 
    <td> Byte<br /> </td> 
@@ -205,18 +206,18 @@ Tabellen nedan visar mappningarna för de typer av data som genereras av Adobe C
   </tr> 
   <tr> 
    <td> Dubbel<br /> </td> 
-   <td> DUBBELPRECISION<br /> </td> 
-   <td> FLYTTA <br /> </td> 
+   <td> DUBBEL PRECISION<br /> </td> 
+   <td> FLYTA<br /> </td> 
   </tr> 
   <tr> 
    <td> Lång<br /> </td> 
-   <td> INTEGER<br /> </td> 
+   <td> HELTAL<br /> </td> 
    <td> NUMBER(10)<br /> </td> 
   </tr> 
   <tr> 
    <td> Int64<br /> </td> 
    <td> BIGINT<br /> </td> 
-   <td> NUMBER(20)<br /> </td> 
+   <td> ANTAL(20)<br /> </td> 
   </tr> 
   <tr> 
    <td> Datum<br /> </td> 
@@ -241,11 +242,11 @@ Tabellen nedan visar mappningarna för de typer av data som genereras av Adobe C
   <tr> 
    <td> Tidsintervall <br /> </td> 
    <td> DUBBELPRECISION<br /> </td> 
-   <td> FLYTTA <br /> </td> 
+   <td> FLYTA<br /> </td> 
   </tr> 
   <tr> 
-   <td> PM<br /> </td> 
-   <td> TEXT<br /> </td> 
+   <td> Pm<br /> </td> 
+   <td> SMS<br /> </td> 
    <td> CLOB (NCLOB om Unicode)<br /> </td> 
   </tr> 
   <tr> 
@@ -262,11 +263,11 @@ Elementen **`<elements>`** och **`<attributes>`** i dataschemat kan berikas med 
 
 ### Etiketter och beskrivningar {#labels-and-descriptions}
 
-* Med egenskapen **label** kan du ange en kort beskrivning.
+* Med **egenskapen label** kan du ange en kort beskrivning.
 
   >[!NOTE]
   >
-  >Etiketten är associerad med instansens aktuella språk.
+  >Etiketten är associerad med det aktuella språket i instansen.
 
   **Exempel**:
 
@@ -278,9 +279,9 @@ Elementen **`<elements>`** och **`<attributes>`** i dataschemat kan berikas med 
 
   ![](assets/d_ncs_integration_schema_label.png)
 
-* Med egenskapen **desc** kan du ange en lång beskrivning.
+* Med **egenskapen desc** kan du ange en lång beskrivning.
 
-  Beskrivningen visas i indataformuläret i statusfältet i huvudfönstret i Adobe Campaign klientkonsol.
+  Beskrivningen visas i indataformuläret i statusfältet i huvudfönstret i Adobe Campaign-klientkonsolen.
 
   >[!NOTE]
   >
@@ -294,9 +295,9 @@ Elementen **`<elements>`** och **`<attributes>`** i dataschemat kan berikas med 
 
 ### Standardvärden {#default-values}
 
-Använd egenskapen **default** för att definiera ett uttryck som returnerar ett standardvärde när innehåll skapas.
+**Använd egenskapen default** för att definiera ett uttryck som returnerar ett standardvärde när du skapar innehåll.
 
-Värdet måste vara ett uttryck som är kompatibelt med XPath-språket. Mer information finns i [Referera till XPath](../../configuration/using/schema-structure.md#referencing-with-xpath).
+Värdet måste vara ett uttryck som är kompatibelt med XPath-språket. Mer information finns i [Referera med XPath](../../configuration/using/schema-structure.md#referencing-with-xpath).
 
 **Exempel**:
 
@@ -311,9 +312,9 @@ Värdet måste vara ett uttryck som är kompatibelt med XPath-språket. Mer info
 
 Om du vill länka ett standardvärde till ett fält kan du använda `<default>` eller `<sqldefault>`   fält.
 
-`<default>` : låter dig fylla i fältet i förväg med ett standardvärde när entiteter skapas. Värdet kommer inte att vara ett standard-SQL-värde.
+`<default>` : Gör att du kan fylla i fältet i förväg med ett standardvärde när du skapar enheter. Värdet kommer inte att vara ett standardvärde för SQL.
 
-`<sqldefault>` : ger dig ett mervärde när du skapar ett fält. Värdet visas som ett SQL-resultat. Under en schemauppdatering påverkas bara de nya posterna av det här värdet.
+`<sqldefault>` : gör att du kan ha ett mervärde när du skapar ett fält. Det här värdet visas som ett SQL-resultat. Under en schemauppdatering påverkas endast de nya posterna av det här värdet.
 
 ### Uppräkningar {#enumerations}
 
@@ -335,9 +336,9 @@ Dessa värden visas i en nedrullningsbar lista från indataformuläret:
 
 #### Ange uppräkning {#set-enumeration}
 
-Med egenskapen **enum** kan du definiera en fast uppräkning som används när listan med möjliga värden är känd i förväg.
+Med **egenskapen enum** kan du definiera en fast uppräkning som används när listan över möjliga värden är känd i förväg.
 
-Attributet **enum** refererar till definitionen för en uppräkningsklass som är ifylld i schemat utanför huvudelementet.
+Attributet **enum** refererar till definitionen av en uppräkningsklass som fylls i i schemat utanför huvudelementet.
 
 Uppräkningar gör att användaren kan välja ett värde i en nedrullningsbar lista i stället för att ange värdet i ett vanligt inmatningsfält:
 
@@ -357,10 +358,10 @@ En uppräkning deklareras utanför huvudelementet via elementet **`<enumeration>
 
 Uppräkningsegenskaperna är följande:
 
-* **baseType**: datatyp som är associerad med värdena
-* **label**: beskrivning av uppräkningen
-* **namn**: uppräkningens namn
-* **standard**: uppräkningens standardvärde
+* **baseType**: typ av data som är associerade med värdena
+* **label**: Beskrivning av uppräkningen
+* **name**: namnet på uppräkningen
+* **Standard**: Standardvärde för uppräkningen
 
 Uppräkningsvärdena deklareras i elementet **`<value>`** med följande attribut:
 
@@ -404,7 +405,7 @@ Här är vårt exempelschema med egenskaperna ifyllda:
 
 En samling är en lista med element med samma namn och samma hierarkiska nivå.
 
-Med attributet **unbound** med värdet &quot;true&quot; kan du fylla i ett samlingselement.
+Med **attributet unbound** med värdet &quot;true&quot; kan du fylla i ett samlingselement.
 
 **Exempel**: definition av samlingselementet **`<group>`** i schemat.
 
@@ -423,7 +424,7 @@ Med projektion av XML-innehållet:
 
 ## Referera med XPath {#referencing-with-xpath}
 
-XPath-språket används i Adobe Campaign för att referera till ett element eller attribut som tillhör ett dataschema.
+Språket XPath används i Adobe Campaign för att referera till ett element eller attribut som tillhör ett dataschema.
 
 XPath är en syntax som gör att du kan hitta en nod i trädet i ett XML-dokument.
 
@@ -447,12 +448,12 @@ Elementen anges med sitt namn och attributen anges med namnet före tecknet&quot
 
 Det går också att definiera komplexa uttryck, till exempel följande aritmetiska operationer:
 
-* **@kön+1**: lägger till 1 i innehållet i attributet **kön**,
-* **@email + &#39;(&#39;+@created+&#39;)&#39;**: konstruerar en sträng genom att ta värdet för den e-postadress som lagts till i skapandedatumet mellan parenteser (för strängtypen, ange konstanten inom citattecken).
+* **@gender+1**: lägger till 1 till innehållet i könsattributet ****,
+* **@email + &#39;(&#39;+@created+&#39;)&#39;**: konstruerar en sträng genom att ta värdet för e-postadressen som läggs till i skapandedatumet mellan parenteser (för strängtypen sätter du konstanten inom citattecken).
 
-Funktioner på hög nivå har lagts till i uttrycken för att berika detta språks potential.
+Högnivåfunktioner har lagts till i uttrycken för att berika potentialen i detta språk.
 
-Du kommer åt listan över tillgängliga funktioner via en uttrycksredigerare i Adobe Campaign klientkonsol:
+Du kan komma åt listan över tillgängliga funktioner via valfri uttrycksredigerare i Adobe Campaign klientkonsol:
 
 ![](assets/d_ncs_integration_schema_function.png)
 
@@ -466,7 +467,7 @@ Du kommer åt listan över tillgängliga funktioner via en uttrycksredigerare i 
 
 En **beräkningssträng** är ett XPath-uttryck som används för att konstruera en sträng som representerar en post i en tabell som är associerad med schemat. **Beräkningssträngen** används främst i det grafiska gränssnittet för att visa etiketten för en markerad post.
 
-**Beräkningssträngen** definieras via elementet **`<compute-string>`** under huvudelementet i dataschemat. Ett **expr**-attribut innehåller ett XPath-uttryck för att beräkna visningen.
+**Beräkningssträngen** definieras via elementet **`<compute-string>`** under huvudelementet i dataschemat. Ett uttr-attribut **innehåller ett XPath-uttryck för att beräkna visningen**.
 
 **Exempel**: beräkningssträng för mottagartabellen.
 
@@ -479,11 +480,11 @@ En **beräkningssträng** är ett XPath-uttryck som används för att konstruera
 </srcSchema>
 ```
 
-Resultat av den beräknade strängen för en mottagare: **Doe John (john.doe@aol.com)**
+Resultatet av den beräknade strängen för en mottagare: **Doe John (john.doe@aol.com)**
 
 >[!NOTE]
 >
->Om schemat inte innehåller någon beräkningssträng fylls en beräkningssträng i som standard med värdena för schemats primärnyckel.
+>Om schemat inte innehåller en beräkningssträng fylls en beräkningssträng i som standard med värdena för schemats primärnyckel.
 
 
 ## Läs mer
@@ -494,4 +495,4 @@ Klicka på följande länkar om du vill veta mer:
 * [Databasmappning](database-mapping.md)
 * [Länkhantering](database-links.md)
 * [Nyckelhantering](database-keys.md)
-* [Kampanjdatamodell](about-data-model.md)
+* [Modell för kampanjdata](about-data-model.md)

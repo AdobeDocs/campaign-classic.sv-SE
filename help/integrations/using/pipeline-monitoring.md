@@ -3,11 +3,12 @@ product: campaign
 title: Övervaka pipelines
 description: Övervaka pipelines
 feature: Triggers
-badge-v8: label="Gäller även för v8" type="Positive" tooltip="Gäller även Campaign v8"
+badge-v8: label="Gäller även v8" type="Positive" tooltip="Gäller även Campaign v8"
 audience: integrations
 content-type: reference
+level: Intermediate, Experienced
 exl-id: 84399496-33fd-4936-85e7-32de8503740f
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: 2bfcec5eaa1145cfb88adfa9c8b2f72ee3cd9469
 workflow-type: tm+mt
 source-wordcount: '443'
 ht-degree: 1%
@@ -18,11 +19,11 @@ ht-degree: 1%
 
 
 
-Statuswebbtjänsten [!DNL pipelined] ger information om statusen för [!DNL pipelined]-processen.
+Statuswebbtjänsten [!DNL pipelined] ger information om processens [!DNL pipelined] status.
 
-Den kan nås manuellt via en webbläsare eller automatiskt med ett övervakningsprogram.
+Den kan nås manuellt med hjälp av en webbläsare eller automatiskt med ett övervakningsprogram.
 
-Det är i REST-format, vilket beskrivs nedan.
+Det är i REST-format, som beskrivs nedan.
 
 ![](assets/triggers_8.png)
 
@@ -42,16 +43,16 @@ Rekommenderade indikatorer för övervakning markeras.
    * last-flush-ms-ago: tid i ms sedan en grupp utlösare hämtades.
    * next-offsets-flush: time to wait until the next batch, when complete.
    * bearbetad sedan senaste-tömning: antal utlösare som bearbetats i den senaste batchen.
-* routning
-   * utlösare: lista över utlösare som har hämtats. Konfigureras i alternativet [!DNL pipelined].
-* status
-   * genomsnittlig-peinter-flush-time-ms: genomsnittlig bearbetningstid för en grupp utlösare.
-   * genomsnittlig-trigger-processing-time-ms: Genomsnittlig tid för tolkning av utlösardata.
-   * bytes-read: antal byte som har lästs från kön sedan processen startades.
-   * aktuella meddelanden: aktuellt antal väntande meddelanden som har hämtats från kön och väntar på bearbetning. **Den här indikatorn ska ligga nära noll**.
-   * aktuella återförsök: aktuellt antal meddelanden som inte har kunnat bearbetas och som väntar på återförsök.
-   * toppmeddelanden: maximalt antal väntande meddelanden som processen har hanterat sedan den startades.
-   * pekartömningar: antal meddelandebatchar som har bearbetats sedan starten.
+* Routning
+   * Utlösare: Lista över hämtade utlösare. Konfigurerad [!DNL pipelined] i alternativet.
+* statistik
+   * average-pointer-flush-time-ms: genomsnittlig bearbetningstid för en batch med utlösare.
+   * average-trigger-processing-time-ms: genomsnittlig tid som ägnats åt parsning av utlösardata.
+   * bytes-read: Antal byte som lästs från kön sedan processen startades.
+   * current-messages: aktuellt antal väntande meddelanden som har hämtats från kön och väntar på bearbetning. **Denna indikator bör vara nära noll**.
+   * current-retries: Det aktuella antalet meddelanden som har misslyckats med bearbetningen och väntar på ett nytt försök.
+   * peak-messages: Maximalt antal väntande meddelanden som processen har hanterat sedan den startades.
+   * Pekarrensningar: Antalet batchar med meddelanden som bearbetats sedan starten.
    * routing-JS-custom: antal meddelanden som har bearbetats av den anpassade JS-servern.
    * utlösare ignorerad: antal meddelanden som har ignorerats efter för många återförsök på grund av bearbetningsfel.
    * utlösare-bearbetad: antal meddelanden som har bearbetats utan fel.
@@ -68,9 +69,9 @@ Dessa statusvärden visas per processtråd.
 * Inställningar: de ställs in i konfigurationsfilerna.
    * flush-pointer-msg-count: antal meddelanden i en batch.
    * flush-pointer-period-ms: tid mellan två batchar, i millisekunder.
-   * processing-threads-JS: antal bearbetningstrådar som kör den anpassade JS:en.
-   * retry-period-ms: tid mellan två försök när ett bearbetningsfel inträffar.
-   * retry-validity-duration-ms: längden från den tidpunkt då bearbetningen görs om tills meddelandet ignoreras.
+   * processing-threads-JS: antal bearbetningstrådar som kör den anpassade JS.
+   * retry-period-ms: tid mellan två återförsök när ett bearbetningsfel inträffar.
+   * retry-validity-duration-ms: varaktighet från den tidpunkt då bearbetningen görs om tills meddelandet ignoreras.
    * Rapport över försäljningsförloppsmeddelanden
 
 ## Rapport över försäljningsförloppsmeddelanden {#pipeline-report}

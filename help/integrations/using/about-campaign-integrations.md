@@ -6,11 +6,12 @@ feature: Overview
 badge-v8: label="Gäller även för v8" type="Positive" tooltip="Gäller även Campaign v8"
 audience: integrations
 content-type: reference
+level: Intermediate, Experienced
 topic-tags: campaign-integrations
 exl-id: ceb584da-bc97-4b71-9499-59df5e6d10c3
-source-git-commit: 597d24fa780a324507c56c55a5309b6ee1cf46eb
+source-git-commit: 2bfcec5eaa1145cfb88adfa9c8b2f72ee3cd9469
 workflow-type: tm+mt
-source-wordcount: '704'
+source-wordcount: '700'
 ht-degree: 4%
 
 ---
@@ -21,7 +22,7 @@ Adobe Experience Cloud är en omfattande uppsättning förstklassiga, integrerad
 
 Läs mer om funktionsintegreringar mellan Adobe Campaign- och Adobe Experience Cloud-lösningar på [den här sidan](https://experienceleague.adobe.com/en/docs/core-services/interface/administration/integrations){_blank}.
 
-En fullständig lista över Adobe-lösningar och apptjänster som kan integreras med Adobe Campaign, samt tillhörande dokumentation, finns i [det här avsnittet](#experience-cloud-integrations).
+En fullständig lista över Adobe lösningar och apptjänster som kan integreras med Adobe Campaign, samt tillhörande dokumentation, finns i [det här avsnittet](#experience-cloud-integrations).
 
 >[!CAUTION]
 >
@@ -30,13 +31,13 @@ En fullständig lista över Adobe-lösningar och apptjänster som kan integreras
 
 ## Länka era lösningar {#working-with-experience-cloud-solutions}
 
-Flera lösningar kan länkas till Adobe Experience Cloud. **organisationen** är den kundentitet som gör det möjligt för en administratör att konfigurera grupper och användare samt att styra enkel inloggning (SSO) i Adobe Experience Cloud. Organisationen fungerar som ett inloggningsföretag som omfattar alla produkter och lösningar från Experience Cloud. Oftast är en organisation ditt företagsnamn. Ett företag kan dock ha många organisationer.
+Flera lösningar kan länkas till Adobe Experience Cloud. **organisationen** är den kundentitet som gör det möjligt för en administratör att konfigurera grupper och användare samt att styra enkel inloggning (SSO) i Adobe Experience Cloud. Organisationen fungerar som ett inloggningsföretag som omfattar alla Experience Cloud produkter och lösningar. Oftast är en organisation ditt företagsnamn. Ett företag kan dock ha många organisationer.
 
 Organisationshantering och länkning av Adobe Experience Cloud-konton finns i [Adobe Experience Cloud hjälpportal](https://experienceleague.adobe.com/en/docs/core-services/interface/administration/organizations){_blank}.
 
 ## Hantering av identitet och cookies {#id-and-cookies}
 
-När du installerar Adobe Campaign eller integrerar en befintlig installation med Adobe Experience Cloud är [Adobe Experience Cloud identitetstjänst](https://experienceleague.adobe.com/en/docs/id-service/using/home){_blank} aktiverad. Den här tjänsten ersätter den permanenta cookie som framför allt används av Adobe Campaign för spårningsfunktionerna.
+När du installerar Adobe Campaign eller integrerar en befintlig installation med Adobe Experience Cloud aktiveras [Adobe Experience Cloud Identity Service](https://experienceleague.adobe.com/en/docs/id-service/using/home){_blank}. Den här tjänsten ersätter den permanenta cookie som framför allt används av Adobe Campaign för spårningsfunktionerna.
 
 Adobe Experience Cloud ID-tjänst (Identity Service) är ett universellt, beständigt ID som identifierar besökarna i alla lösningar i Experience Cloud.
 
@@ -57,8 +58,8 @@ Följande tabell visar tillgänglig integreringsdokumentation för Experience Cl
  </thead> 
  <tbody> 
   <tr> 
-   <td> <strong>Adobe Real-time Customer Data Platform (RTCDP)</strong><br /> </td> 
-   <td> Konfigurera integreringen mellan Adobe Campaign och Adobe Real-time Customer Data Platform (RTCDP) för att dela segmentdata och importera målgrupper till Adobe Campaign.<br /> <p><a href="../../integrations/using/get-started-sources-destinations.md">Läs mer</a> om Campaign - Adobe Real-time Customer Data Platform-integrering.</p><br /> </td> 
+   <td> <strong>Adobes kunddataplattform för realtid (RTCDP)</strong><br /> </td> 
+   <td> Konfigurera integreringen mellan Adobe Campaign och Adobe Real-time Customer Data Platform (RTCDP) för att dela segmentdata och importera målgrupper till Adobe Campaign.<br /> <p><a href="../../integrations/using/get-started-sources-destinations.md">Läs mer</a> om Campaign - Integrering av Adobes kunddataplattform i realtid.</p><br /> </td> 
   </tr> 
   <tr> 
    <td> <strong>Adobe Identity Management System (IMS) - Adobe ID</strong><br /> </td> 
@@ -85,8 +86,8 @@ Följande tabell visar tillgänglig integreringsdokumentation för Experience Cl
    <td> Konfigurera den här integreringen för att infoga resurser från ditt <strong>AEM Assets</strong> -bibliotek i e-postmeddelanden och landningssidor som skapats i Adobe Campaign.<br /> <p><a href="../../integrations/using/configuring-access-to-assets.md#integrating-with-aem-assets">Läs mer</a> om integrering mellan Adobe Campaign och AEM Assets.</p><br /> </td> 
   </tr> 
   <tr> 
-   <td> <strong>Utlösare för Experience Cloud</strong><br /> </td> 
-   <td> Konfigurera integreringen mellan <strong>Adobe Experience Cloud Triggers</strong> och Adobe Campaign för att skicka personaliserade e-postmeddelanden till dina kunder som en reaktion på specifika beteenden som spåras på din webbplats av Adobe Analytics.<br /> <p><a href="about-triggers.md">Läs mer</a> om integrering mellan Adobe Campaign och Experience Cloud-utlösare.</p><br /> </td> 
+   <td> <strong>Experience Cloud-utlösare</strong><br /> </td> 
+   <td> Konfigurera integreringen mellan <strong>Adobe Experience Cloud Triggers</strong> och Adobe Campaign för att skicka personaliserade e-postmeddelanden till dina kunder som en reaktion på specifika beteenden som spåras på din webbplats av Adobe Analytics.<br /> <p><a href="about-triggers.md">Läs mer</a> om Adobe Campaign - Experience Cloud utlöser integrering.</p><br /> </td> 
   </tr> 
   <tr> 
    <td> <strong>Adobe Analytics Connector</strong><br /> </td> 

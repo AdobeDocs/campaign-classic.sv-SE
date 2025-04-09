@@ -1,20 +1,21 @@
 ---
 product: campaign
 title: Om Adobe Experience Cloud-utlösare
-description: Kom igång med Adobe Experience Cloud Triggers implementering
+description: Kom igång med implementeringen av Adobe Experience Cloud Triggers
 feature: Triggers
 badge-v8: label="Gäller även för v8" type="Positive" tooltip="Gäller även Campaign v8"
 audience: integrations
 content-type: reference
+level: Intermediate, Experienced
 exl-id: 0e337620-a49f-4e14-8c67-9279d74736f1
-source-git-commit: 8de62db2499449fc9966b6464862748e2514a774
+source-git-commit: 2bfcec5eaa1145cfb88adfa9c8b2f72ee3cd9469
 workflow-type: tm+mt
 source-wordcount: '398'
 ht-degree: 7%
 
 ---
 
-# Arbeta med utlösare för Campaign och Experience Cloud{#about-adobe-experience-triggers}
+# Arbeta med Campaign och Experience Cloud Triggers{#about-adobe-experience-triggers}
 
 [!DNL Triggers] är en integrering mellan Adobe Campaign och Adobe Analytics med pipeline. Pipelinen hämtar användarens åtgärder eller utlösare från din webbplats. En kundvagnsöverläggning är ett exempel på utlösare. Utlösare bearbetas i Adobe Campaign för att skicka e-post i nära realtid.
 

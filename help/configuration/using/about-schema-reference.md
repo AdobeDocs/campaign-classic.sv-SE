@@ -4,8 +4,9 @@ title: Kom igång med scheman i Adobe Campaign
 description: Lär dig hur du arbetar med scheman och utökar den konceptuella datamodellen i Adobe Campaign-databasen
 feature: Schema Extension
 role: Data Engineer, Developer
+level: Intermediate, Experienced
 exl-id: f36a1b01-a002-4a21-9255-ea78b5f173fe
-source-git-commit: 44c40bbd8bff16cbe220d3af3a7bb2847762f58b
+source-git-commit: 2bfcec5eaa1145cfb88adfa9c8b2f72ee3cd9469
 workflow-type: tm+mt
 source-wordcount: '369'
 ht-degree: 1%
@@ -18,7 +19,7 @@ ht-degree: 1%
 
 I det här kapitlet beskrivs hur du konfigurerar tilläggsscheman för att utöka den konceptuella datamodellen för Adobe Campaign-databasen.
 
-Mer information om inbyggda tabeller i Campaign och deras interaktion finns i datamodellen [Campaign Classic](about-data-model.md).
+Mer information om inbyggda tabeller i Campaign och hur de fungerar finns i [Campaign Classic datamodell](about-data-model.md).
 
 I Adobe Campaign beskrivs den fysiska och logiska strukturen för de data som finns i programmet i XML-format. Ett **schema** är ett XML-dokument som är associerat med en databastabell. Den definierar datastrukturen och beskriver tabellens SQL-definition:
 

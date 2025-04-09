@@ -1,11 +1,12 @@
 ---
 product: campaign
-title: "Användningsexempel: skapa översikter"
-description: "Användningsexempel: skapa översikter"
+title: 'Användningsfall: skapa översikter'
+description: 'Användningsfall: skapa översikter'
 badge-v8: label="Gäller även för v8" type="Positive" tooltip="Gäller även Campaign v8"
 feature: Web Apps
+level: Intermediate, Experienced
 exl-id: a1ac3aab-dc81-4533-9207-26d5dc5e1c88
-source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
+source-git-commit: 2bfcec5eaa1145cfb88adfa9c8b2f72ee3cd9469
 workflow-type: tm+mt
 source-wordcount: '957'
 ht-degree: 0%

@@ -4,8 +4,9 @@ title: Konfigurera Android mobilprogram i Adobe Campaign
 description: Lär dig hur du konfigurerar ditt mobilprogram för Android
 feature: Push
 role: User, Developer
+level: Intermediate, Experienced
 exl-id: 32c35e61-d0a3-478f-b73b-396e2becf7f9
-source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
+source-git-commit: 2bfcec5eaa1145cfb88adfa9c8b2f72ee3cd9469
 workflow-type: tm+mt
 source-wordcount: '837'
 ht-degree: 9%
@@ -23,7 +24,7 @@ Viktiga steg är:
 1. [Skapa mobilappen i Campaign](#creating-android-app)
 1. [Utöka appschemat med ytterligare data](#extend-subscription-schema)
 
-Du kan sedan [skapa ett omfattande Android-meddelande](create-notifications-android.md).
+Du kommer sedan att [kunna skapa ett Android-omfattande meddelande](create-notifications-android.md).
 
 >[!IMPORTANT]
 >
@@ -68,11 +69,11 @@ Så här väljer du vilken koppling du vill använda:
 
    >[!NOTE]
    >
-   >Standardmålmappningen för **[!UICONTROL Subscriber applications (nms:appSubscriptionRcp)]** är länkad till mottagartabellen. Om du vill använda en annan målmappning måste du skapa en ny målmappning och ange den i fältet **[!UICONTROL Target mapping]** för tjänsten. Mer information om hur du skapar målmappning finns i [det här avsnittet](../../configuration/using/about-custom-recipient-table.md).
+   >Standardmålmappningen för **[!UICONTROL Subscriber applications (nms:appSubscriptionRcp)]** är länkad till mottagartabellen. Om du vill använda en annan målmappning måste du skapa en ny målmappning och ange den i fältet **[!UICONTROL Target mapping]** för tjänsten. Mer information om hur du skapar målmappning finns i det [här avsnittet](../../configuration/using/about-custom-recipient-table.md).
 
    ![](assets/nmac_ios.png)
 
-1. Klicka sedan på knappen **[!UICONTROL Add]** för att välja programtyp.
+1. Klicka sedan på **[!UICONTROL Add]** knappen för att välja programtyp.
 
    ![](assets/nmac_service_2.png)
 
@@ -100,7 +101,7 @@ När du har skapat tjänsten måste du nu skapa ett Android-program:
 
 1. Fyll i fälten **[!UICONTROL Firebase Cloud Messaging the Android connection settings]**.
 
-1. Klicka på **[!UICONTROL Finish]** och sedan på **[!UICONTROL Save]**. Ditt Android-program kan nu användas i Campaign Classic.
+1. Klicka på **[!UICONTROL Finish]** och sedan **[!UICONTROL Save]** på . Ditt Android-program kan nu användas i Campaign Classic.
 
 Som standard sparar Adobe Campaign en nyckel i fältet **[!UICONTROL User identifier]** (@userKey) i tabellen **[!UICONTROL Subscriber applications (nms:appSubscriptionRcp)]**. Med den här nyckeln kan du länka en prenumeration till en mottagare. Om du vill samla in ytterligare data (till exempel en komplex avstämningsnyckel) måste du använda följande konfiguration:
 
@@ -135,7 +136,7 @@ Följ stegen nedan för att konfigurera API-versionen för HTTP v1:
 
 1. Som ett alternativ kan du utöka ett push-meddelandeinnehåll med vissa **[!UICONTROL Application variables]** vid behov. Dessa är helt anpassningsbara och utgör en del av den meddelandenyttolast som skickas till den mobila enheten.
 
-1. Klicka på **[!UICONTROL Finish]** och sedan på **[!UICONTROL Save]**. Ditt Android-program kan nu användas i Campaign Classic.
+1. Klicka på **[!UICONTROL Finish]** och sedan på **[!UICONTROL Save]**. Ditt Android-program är nu redo att användas i Campaign Classic.
 
 Nedan visas FCM-nyttolastsnamnen för att ytterligare anpassa ditt push-meddelande:
 

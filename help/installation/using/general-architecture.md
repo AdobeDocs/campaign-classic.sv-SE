@@ -1,13 +1,14 @@
 ---
 product: campaign
-title: Campaign Classicens allmänna arkitektur
+title: Campaign Classic allmänna arkitektur
 description: Lär dig installera och konfigurera Campaign Classic
 feature: Installation, Architecture
 audience: installation
 content-type: reference
+level: Intermediate, Experienced
 topic-tags: architecture-and-hosting-models
 exl-id: 04e6dc17-427b-4745-84cc-bf45c03dbf81
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: 2bfcec5eaa1145cfb88adfa9c8b2f72ee3cd9469
 workflow-type: tm+mt
 source-wordcount: '1342'
 ht-degree: 0%
@@ -36,7 +37,7 @@ Adobe Campaign bygger på en tjänsteinriktad arkitektur (SOA) och består av fl
 
 >[!NOTE]
 >
->Som programvaruleverantör anger vi kompatibel infrastruktur för maskin- och programvara. De maskinvarurekommendationer som ges här är endast avsedda som information och baseras på vår erfarenhet. Adobe skall inte vara ansvarig för beslut som fattas på grundval av dessa beslut. Det beror också på era affärsregler och rutiner samt kritiken och de prestandanivåer som krävs för projektet.
+>Som programvaruleverantör anger vi kompatibel infrastruktur för maskin- och programvara. De maskinvarurekommendationer som ges här är endast avsedda som information och baseras på vår erfarenhet. Adobe är inte ansvarigt för beslut som fattas på grundval av dessa beslut. Det beror också på era affärsregler och rutiner samt kritiken och de prestandanivåer som krävs för projektet.
 
 ![](assets/s_ncs_install_architecture.png)
 
@@ -48,9 +49,9 @@ Adobe Campaign bygger på en tjänsteinriktad arkitektur (SOA) och består av fl
 
 Programmet kan nås på olika sätt beroende på användarnas behov: Rich Client, Thin Client eller API Integration.
 
-* **Rich client**: Huvudanvändargränssnittet i programmet är en rik klient, d.v.s. ett internt program (Windows) som kommunicerar med Adobe Campaign-programservern enbart med standardInternetprotokoll (SOAP, HTTP osv.). Den här konsolen är mycket användarvänlig och ger mycket liten bandbredd (med hjälp av ett lokalt cacheminne) och är utformad för enkel driftsättning. Konsolen kan distribueras från en webbläsare, kan uppdateras automatiskt och kräver ingen specifik nätverkskonfiguration eftersom den bara genererar HTTP(S)-trafik.
-* **Tunn klient**: Vissa delar av programmet kan nås via en enkel webbläsare via ett HTML-användargränssnitt, inklusive rapportmodulen, stegen för godkännande av leverans, funktionerna i modulen Distribuerad marknadsföring (central/lokal), instansövervakning osv. I det här läget kan du inkludera Adobe Campaign-funktioner i ett intranät eller ett extranät.
-* **Integrering via API:er**: I vissa fall kan systemet anropas från externa program med hjälp av de webbtjänstAPI:er som exponeras via SOAP.
+* **Rich client**: Huvudanvändargränssnittet i programmet är en rik klient, det vill säga ett systemspecifikt program (Windows) som kommunicerar med Adobe Campaign-programservern enbart med standardInternetprotokoll (SOAP, HTTP, etc.). Den här konsolen är mycket användarvänlig och ger mycket liten bandbredd (med hjälp av ett lokalt cacheminne) och är utformad för enkel driftsättning. Konsolen kan distribueras från en webbläsare, kan uppdateras automatiskt och kräver ingen specifik nätverkskonfiguration eftersom den bara genererar HTTP(S)-trafik.
+* **Tunn klient**: Vissa delar av programmet kan nås via en enkel webbläsare via ett HTML-användargränssnitt, inklusive rapportmodulen, godkännandefaser, funktioner i modulen Distribuerad marknadsföring (central/lokal), instansövervakning osv. I det här läget kan du inkludera Adobe Campaign-funktioner i ett intranät eller ett extranät.
+* **Integrering via API:er**: I vissa fall kan systemet anropas från externa program med hjälp av de webbtjänstAPI:er som exponeras via SOAP-protokollet.
 
 ## Logiskt programlager {#logical-application-layer}
 
@@ -62,7 +63,7 @@ De viktigaste processerna är:
 
 **Programserver** (nlserver web)
 
-Den här processen visar alla Adobe Campaign-funktioner via Web Services API:er (SOAP - HTTP + XML). Dessutom kan man dynamiskt generera webbsidor för åtkomst via HTML (rapporter, webbformulär etc.). För att uppnå detta innehåller den här processen en Apache Tomcat JSP-server. Detta är den process som konsolen ansluter till.
+Den här processen visar alla Adobe Campaign-funktioner via Web Services API:er (SOAP - HTTP + XML). Dessutom kan man dynamiskt generera de webbsidor som används för HTML-baserad åtkomst (rapporter, webbformulär etc.). För att uppnå detta innehåller den här processen en Apache Tomcat JSP-server. Detta är den process som konsolen ansluter till.
 
 **Arbetsflödesmotor** (nlserver wfserver)
 
@@ -84,13 +85,13 @@ Den här processen kan hantera anpassning och automatisk sändning till en tredj
 
 För e-post hanterar Adobe Campaign automatiskt öppnings- och klickspårning (transaktionsspårning på webbplatsnivå är en ytterligare möjlighet). För att uppnå detta skrivs de URL:er som ingår i e-postmeddelandena om så att de pekar på den här modulen, som registrerar den överförda Internet-användaren innan de dirigeras om till den önskade URL:en.
 
-För att garantera högsta tillgänglighet är den här processen helt oberoende av databasen: de andra serverprocesserna kommunicerar med den endast med SOAP (HTTP, HTTP(S) och XML). Tekniskt sett implementeras den här funktionen i en tilläggsmodul för en HTTP-server (ISAPI-tillägg i IIS eller en DSO Apache-modul osv.) och finns endast i Windows.
+För att garantera högsta tillgänglighet är den här processen helt oberoende av databasen: de andra serverprocesserna kommunicerar med den endast med SOAP-anrop (HTTP, HTTP(S) och XML). Tekniskt sett implementeras den här funktionen i en tilläggsmodul för en HTTP-server (ISAPI-tillägg i IIS eller en DSO Apache-modul osv.) och är endast tillgänglig i Windows.
 
 Det finns även andra tekniska processer:
 
 **Hantera studsmeddelanden** (nlserver inMail)
 
-Med den här processen kan du automatiskt hämta e-post från postlådor som konfigurerats för att ta emot studsade meddelanden som returneras om leveransen misslyckas. Dessa meddelanden genomgår sedan regelbaserad bearbetning för att fastställa orsaken till utebliven leverans (okänd mottagare, kvoten har överskridits osv.) och för att uppdatera leveransstatus i databasen.
+Med den här processen kan du automatiskt hämta e-post från postlådor som konfigurerats för att ta emot studsade meddelanden som returneras om leveransen misslyckas. Dessa meddelanden genomgår sedan regelbaserad bearbetning för att fastställa orsaken till utebliven leverans (okänd mottagare, kvoten har överskridits osv.) och för att uppdatera leveransstatusen i databasen.
 
 Alla dessa åtgärder är helt automatiska och förkonfigurerade.
 
@@ -124,7 +125,7 @@ Den här processen innehåller statistik om antalet anslutningar, de meddelanden
 
 ## Beständigt lager {#persistence-layer}
 
-Databasen används som ett beständigt lager och innehåller nästan all information som hanteras av Adobe Campaign. Detta omfattar både funktionell information (profiler, prenumerationer, innehåll osv.), teknisk information (leveransjobb och loggar, spårningsloggar osv.) och arbetsdata (inköp, leads).
+Databasen används som ett beständigt lager och innehåller nästan all information som hanteras av Adobe Campaign. Detta omfattar både funktionella data (profiler, prenumerationer, innehåll osv.), tekniska data (leveransjobb och loggar, spårningsloggar osv.) och arbetsdata (inköp, leads).
 
 Databasens tillförlitlighet är av yttersta vikt eftersom de flesta Adobe Campaign-komponenter kräver åtkomst till databasen för att kunna utföra sina uppgifter (med undantag för omdirigeringsmodulen).
 
