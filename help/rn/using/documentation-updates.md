@@ -7,9 +7,9 @@ role: User
 level: Beginner
 exl-id: 07c1f4a3-cf16-4a9b-b402-e13258799f91
 source-git-commit: b8a6a0db27826309456c285c08d4f1d85de70283
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3864'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -23,9 +23,9 @@ Se [Versionsinformationen för Adobe Campaign Classic](../../rn/using/latest-rel
 
 ### Mars 2025 {#march-2025}
 
-Som en del av ett kampanjprojekt v8 har vi börjat omorganisera Campaign Classic dokumentation. I 7.4.2 släpper vi den första milstolpen. Följande guider har ersatts med landningssidor, inklusive länkar till v8-dokumentation:
+Som en del av ett kampanjinitiativ för Campaign v8 har vi börjat omorganisera Campaign Classic-dokumentationsuppsättningen. I 7.4.2 släpper vi den första milstolpen. Följande guider har ersatts med landningssidor, inklusive länkar till v8-dokumentation:
 
-* Samordna marknadsföringskampanjer: den här guiden har ersatts med en [landningssida](../../campaign/using/about-marketing-campaigns.md).
+* Orkestrera marknadsföringskampanjer: den här guiden har ersatts med en [landningssida](../../campaign/using/about-marketing-campaigns.md).
 * Hantering av marknadsföringsresurser: den här guiden har tagits bort.
 * Distribuerad marknadsföring: den här guiden har tagits bort.
 * Automatisera med arbetsflöden: den här guiden har ersatts med en [landningssida](../../workflow/using/about-workflow-automation.md)
