@@ -6,10 +6,10 @@ feature: Release Notes
 role: User
 level: Beginner
 exl-id: d60d67de-6618-4f3b-be4a-ad7633ab5645
-source-git-commit: ef89551952cfbfd525a4dff716fe4676c1252d05
-workflow-type: ht
-source-wordcount: '1653'
-ht-degree: 100%
+source-git-commit: 84e6b2fad97f0ca5d6621cff4648e0be0bef7521
+workflow-type: tm+mt
+source-wordcount: '1652'
+ht-degree: 99%
 
 ---
 
@@ -46,7 +46,7 @@ Kunder uppmanas att se över om de använder funktionen i den aktuella driftsät
   <tr>
  <td>Campaign (Neolane) – äldre SDK</td>
  <td><p>SDK:et för mobilprogram i Campaign (Neolane) är nu föråldrat. Du kan istället använda mobil-SDK:et i Adobe Experience Platform genom att konfigurera Adobe Campaign-tillägget i användargränssnittet för datainsamling. Mobil-SDK:et i Adobe Experience Platform hjälper dig att driva lösningar och tjänster från Adobe Experience Cloud i dina mobilappar. Konfigurationen av SDK:er hanteras via användargränssnittet för datainsamling för flexibel konfiguration och utbyggbara, regelbaserade integreringar. Läs om hur du konfigurerar mobilappskanalen i <a href="https://experienceleague.adobe.com/sv/docs/campaign/campaign-v8/send/push/push-settings">dokumentationen om Campaign v8</a>.</p>
-<p>Måldatum för borttagning: sommaren 2025 </p>
+<p>Måldatum: 31 juli 2025 </p>
 </td>
 </tr>
 <tr>

@@ -5,7 +5,7 @@ description: Läs mer om hur du skapar ett Adobe API-konto
 role: User, Admin
 level: Intermediate, Experienced
 exl-id: 5d830ea0-a0a3-4b35-8dc4-e955380431fb
-source-git-commit: 2bfcec5eaa1145cfb88adfa9c8b2f72ee3cd9469
+source-git-commit: 84e6b2fad97f0ca5d6621cff4648e0be0bef7521
 workflow-type: tm+mt
 source-wordcount: '334'
 ht-degree: 2%
@@ -20,7 +20,7 @@ Autentiseringsuppgifter för server-till-server gör att programmets server kan 
 
 JWT-autentiseringsuppgifterna (Service Account) har tagits bort av Adobe. Kampanjintegreringar med Adobe lösningar och appar måste nu förlita sig på autentiseringsuppgifter för OAuth Server-till-Server.
 
-Om du har implementerat inkommande eller utgående integreringar med Campaign före juni 2024 måste du uppgradera din Campaign-miljö till v7.4.1 och migrera ditt tekniska konto till Autentisering enligt informationen [i den här dokumentationen](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration){target="_blank"}. Befintliga JWT-autentiseringsuppgifter (Service Account) fortsätter att fungera till den **27 januari 2025**.
+Om du har implementerat inkommande eller utgående integreringar med Campaign före juni 2024 måste du uppgradera din Campaign-miljö till v7.4.1 och migrera ditt tekniska konto till Autentisering enligt informationen [i den här dokumentationen](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration){target="_blank"}. Befintliga JWT-autentiseringsuppgifter (Service Account) fortsätter att fungera till den **30 juni 2025**.
 
 När migreringen är klar måste du koppla dina nya autentiseringsuppgifter till Campaign enligt beskrivningen i [det här avsnittet](#add-credentials).
 
