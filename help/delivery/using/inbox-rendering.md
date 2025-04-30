@@ -6,9 +6,9 @@ badge-v8: label="Gäller även för v8" type="Positive" tooltip="Gäller även C
 feature: Inbox Rendering, Monitoring, Email Rendering
 role: User
 exl-id: a3294e70-ac96-4e51-865f-b969624528ce
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: 9b93603a076b007d66aad52b05e560e17e316eeb
 workflow-type: tm+mt
-source-wordcount: '839'
+source-wordcount: '854'
 ht-degree: 7%
 
 ---
@@ -37,11 +37,11 @@ De mobil-, meddelande- och webbpostklienter som är tillgängliga för **Inkorgs
 
 [!BADGE Lokal och hybrid]{type=Caution url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=sv" tooltip="Gäller endast lokala och hybrida driftsättningar"}
 
-För värdbaserade klienter och hybridklienter konfigureras Inkorgsåtergivning på din instans av Adobe tekniska support och konsulter. Kontakta din kontoansvarige på Adobe om du vill ha mer information.
+För värdbaserade klienter och hybridklienter konfigureras Inkorgsåtergivning av Adobe tekniska support och konsulter. Kontakta er kontoansvarige på Adobe om du vill ha mer information.
 
 För lokala installationer följer du stegen nedan för att konfigurera inkorgsåtergivning.
 
-1. Installera paketet **[!UICONTROL Inbox rendering (IR)]** via menyn **[!UICONTROL Tools]** > **[!UICONTROL Advanced]** > **[!UICONTROL Import package]**. Mer information finns i [Installera Campaign Classicens standardpaket](../../installation/using/installing-campaign-standard-packages.md).
+1. Installera paketet **[!UICONTROL Inbox rendering (IR)]** via menyn **[!UICONTROL Tools]** > **[!UICONTROL Advanced]** > **[!UICONTROL Import package]**. Mer information finns i [Installera Campaign Classic-standardpaket](../../installation/using/installing-campaign-standard-packages.md).
 1. Konfigurera ett externt konto för HTTP-typen via noden **[!UICONTROL Administration]** > **[!UICONTROL Platform]** > **[!UICONTROL External Accounts]** . Mer information finns i [Skapa ett externt konto](../../installation/using/external-accounts.md#creating-an-external-account).
 1. Ange externa kontoparametrar enligt följande:
    * **[!UICONTROL Label]**: Information om leveransserver
@@ -90,11 +90,11 @@ Varje gång du använder funktionen **[!UICONTROL Inbox rendering]** i en levera
 >* Om du genererar återgivningen av Inkorgen igen för samma leverans minskas antalet tillgängliga tokens igen med antalet genererade återgivningar.
 >
 
-Antalet återstående tillgängliga token visas i **[!UICONTROL General summary]** i [Inkorgsåtergivningsrapporten](#inbox-rendering-report).
+Antalet återstående tillgängliga token visas i [Återgivningsrapporten för inkorgen](#inbox-rendering-report).
 
 ![](assets/s_tn_inbox_rendering_tokens.png)
 
-Återgivningsfunktionen i Inkorgen används vanligtvis för att testa ramverket HTML i ett nyligen utformat e-postmeddelande. Varje återgivning kräver ungefär 70 token (beroende på hur många miljöer som testas i allmänhet). I vissa fall kan du dock behöva flera rapporter om inkorgsåtergivning för att kunna testa leveransen. Det kan därför ta fler tokens att slutföra flera kontroller.
+Återgivningsfunktionen i Inkorgen används vanligtvis för att testa HTML-ramverket i ett nyligen utformat e-postmeddelande. Varje återgivning kräver ungefär 70 token (beroende på hur många miljöer som testas i allmänhet). I vissa fall kan du dock behöva flera rapporter om inkorgsåtergivning för att kunna testa leveransen. Det kan därför ta fler tokens att slutföra flera kontroller.
 
 ## Få åtkomst till rapporten för inkorgsåtergivning {#accessing-the-inbox-rendering-report}
 
@@ -123,13 +123,13 @@ Mer information om hur du skapar, utformar och anger mål för en leverans finns
 
 I den här rapporten visas inkorgsåtergivningarna så som de visas för mottagaren. Återgivningarna kan variera beroende på hur mottagaren öppnar e-postleveransen: i en webbläsare, på en mobilenhet eller via ett e-postprogram.
 
-**[!UICONTROL General summary]** visar antalet mottagna, oönskade (skräppost), inte mottagna eller väntande mottagningar som en lista och via en grafisk färgkodad representation.
+I det övre avsnittet visas hur många meddelanden som tagits emot, oönskade meddelanden (skräppost), inte tagits emot eller väntar på att tas emot via en grafisk färgkodad representation.
 
-![](assets/s_tn_inbox_rendering_summary.png)
+![](assets/s_tn_inbox_rendering_summary.png){width="40%" align="left"}
 
-Håll pekaren över diagrammet om du vill visa information om varje färg.
+Håll pekaren över diagrammet om du vill visa information om varje färg. Klicka på ett objekt i listan om du vill dölja eller visa motsvarande kategori i diagrammet.
 
-Rapportens innehåll är uppdelat i tre delar: **[!UICONTROL Mobile]**, **[!UICONTROL Messaging clients]** och **[!UICONTROL Webmails]**. Bläddra nedåt i rapporten för att visa alla återgivningar grupperade i dessa tre kategorier.
+Rapportens innehåll är uppdelat i tre delar: **[!UICONTROL Mobile]**, **[!UICONTROL Desktop]** och **[!UICONTROL Webmails]**. Bläddra nedåt i rapporten för att visa alla återgivningar grupperade i dessa tre kategorier.
 
 ![](assets/s_tn_inbox_rendering_report.png)
 
