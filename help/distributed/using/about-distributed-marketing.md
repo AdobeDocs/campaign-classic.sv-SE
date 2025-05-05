@@ -27,7 +27,7 @@ Den centrala enheten tillhandahåller kampanjer som lokala enheter kan använda.
 
 >[!NOTE]
 >
->Mer information om distribuerad marknadsföring för Adobe Campaign och hur du använder den finns i [dokumentationen för Campaign v8](https://experienceleague.adobe.com/en/docs/campaign/automation/distributed-marketing/about-distributed-marketing){target=_blank}.
+>Mer information om distribuerad marknadsföring för Adobe Campaign och hur du använder den finns i [dokumentationen för Campaign v8](https://experienceleague.adobe.com/sv/docs/campaign/automation/distributed-marketing/about-distributed-marketing){target=_blank}.
 
 <!--
 ## Terminology {#terminology}

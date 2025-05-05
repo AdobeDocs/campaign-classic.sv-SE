@@ -28,7 +28,7 @@ ht-degree: 7%
 Det ger smidigare integrering eftersom konfigurationen är minimal och en tredje part inte berörs.
 Det stöder också stora trafikvolymer utan att påverka marknadsföringsaktiviteternas resultat. Integrationen kan till exempel behandla en miljon utlösare per timme.
 
-![](assets/do-not-localize/book.png) Upptäck hur du [skapar en Experience Cloud-utlösare](https://experienceleague.adobe.com/docs/experience-cloud/triggers/create.html) och identifierar, definierar och övervakar viktiga konsumentbeteenden.
+![](assets/do-not-localize/book.png) Upptäck hur du [skapar en Experience Cloud-utlösare](https://experienceleague.adobe.com/docs/experience-cloud/triggers/create.html?lang=sv-SE) och identifierar, definierar och övervakar viktiga konsumentbeteenden.
 
 ## [!DNL Triggers]-arkitektur {#triggers-architecture}
 
@@ -43,7 +43,7 @@ Processen [!DNL pipelined] loggar in på Experience Cloud med en autentiseringst
 Kontrollera att du har:
 
 * en giltig **organisationsidentifierare**: Organisations-ID är den unika identifieraren inom Adobe Experience Cloud, som används t.ex. för VisitorID-tjänsten och IMS Single-Sign On (SSO). [Läs mer](https://experienceleague.adobe.com/docs/core-services/interface/administration/organizations.html?lang=sv)
-* en **utvecklaråtkomst** till din organisation. Organisationens systemadministratör måste följa proceduren **Lägg till utvecklare i en enskild produktprofil** som beskrivs [ på den här sidan](https://helpx.adobe.com/enterprise/using/manage-developers.html) för att ge utvecklare åtkomst till produktprofilen `Analytics - {tenantID}` för den Adobe Analytics-produkt som är associerad med utlösare.
+* en **utvecklaråtkomst** till din organisation. Organisationens systemadministratör måste följa proceduren **Lägg till utvecklare i en enskild produktprofil** som beskrivs [ på den här sidan](https://helpx.adobe.com/se/enterprise/using/manage-developers.html) för att ge utvecklare åtkomst till produktprofilen `Analytics - {tenantID}` för den Adobe Analytics-produkt som är associerad med utlösare.
 
 ## Implementeringssteg {#implement}
 

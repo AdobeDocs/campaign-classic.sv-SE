@@ -51,7 +51,7 @@ Om du vill aktivera anslutningen mellan Adobe Campaign och Adobe Experience Clou
 
 >[!CAUTION]
 >
->Den här funktionen har tagits bort från Adobe Experience Manager 6.4. [Läs mer](https://experienceleague.adobe.com/docs/experience-manager-64/release-notes/deprecated-removed-features.html#removed-features)
+>Den här funktionen har tagits bort från Adobe Experience Manager 6.4. [Läs mer](https://experienceleague.adobe.com/docs/experience-manager-64/release-notes/deprecated-removed-features.html?lang=sv-SE#removed-features)
 
 Om du vill integrera AEM Assets med Adobe Campaign måste du först konfigurera integreringen mellan Adobe Experience Manager och Adobe Campaign. Den här konfigurationen kräver i huvudsak:
 

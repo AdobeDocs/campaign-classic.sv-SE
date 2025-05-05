@@ -29,7 +29,7 @@ Innan du konfigurerar aktiviteten bör du kontrollera att följande krav är upp
 
   ![](assets/do-not-localize/v7.jpeg) [Kampanjdokumentation v7](../../installation/using/about-fda.md)
 
-  ![](assets/do-not-localize/v8.png) [Kampanjdokumentation v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/connect/fda.html)
+  ![](assets/do-not-localize/v8.png) [Kampanjdokumentation v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/connect/fda.html?lang=sv-SE)
 
 * Det utgående schemat måste finnas i databasen och vara länkat till en FDA-databas.
 * Operatorn som kör arbetsflödet måste ha **[!UICONTROL USE SQL DATA MANAGEMENT ACTIVITY (useSqlDmActivity)]** namngiven. [Läs mer](../../platform/using/access-management-named-rights.md).

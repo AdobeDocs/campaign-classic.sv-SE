@@ -19,7 +19,7 @@ Genom att lägga till kuponger i leveranserna kan mottagarna få bättre värde 
 
 >[!AVAILABILITY]
 >
->Kuponghantering är inte tillgängligt i Campaign v8 i samband med en företagsdistribution (FFDA). Läs mer i [Kampanjdokumentation v8](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/config/architecture/ffda/enterprise-deployment){target="_blank"}.
+>Kuponghantering är inte tillgängligt i Campaign v8 i samband med en företagsdistribution (FFDA). Läs mer i [Kampanjdokumentation v8](https://experienceleague.adobe.com/sv/docs/campaign/campaign-v8/config/architecture/ffda/enterprise-deployment){target="_blank"}.
 
 Kuponghantering bygger på ett paket som måste installeras. Kontrollera **[!UICONTROL Administration > Configuration > Package management > Installed packages.]** för att bekräfta att du har kuponghantering
 

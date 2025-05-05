@@ -23,7 +23,7 @@ När du hanterar filer och data för ETL-ändamål lagras dessa filer på en SFT
 
 * Använd nyckelbaserad autentisering i stället för lösenordsautentisering för att undvika att lösenordet förfaller (lösenord har en giltighetsperiod på 90 dagar). Dessutom kan du med nyckelbaserad autentisering generera flera nycklar, till exempel när du hanterar flera enheter. För lösenordsautentisering krävs tvärtom att du delar lösenordet med alla enheter som du hanterar.
 
-  Nyckelformatet som stöds är SSH-2 RSA 2048. Verktyget för att generera SSH-nycklar för Windows är PuTTYgen och ssh-keygen för Linux. Du kan överföra offentliga SSH-nycklar via Campaign-kontrollpanelen. [Läs mer](https://experienceleague.adobe.com/en/docs/control-panel/using/sftp-management/key-management){target="_blank"}
+  Nyckelformatet som stöds är SSH-2 RSA 2048. Verktyget för att generera SSH-nycklar för Windows är PuTTYgen och ssh-keygen för Linux. Du kan överföra offentliga SSH-nycklar via Campaign-kontrollpanelen. [Läs mer](https://experienceleague.adobe.com/sv/docs/control-panel/using/sftp-management/key-management){target="_blank"}
 
 * Använd batchbearbetning i SFTP-överföringar och i arbetsflöden.
 
@@ -31,7 +31,7 @@ När du hanterar filer och data för ETL-ändamål lagras dessa filer på en SFT
 
 * Som standard är alla mappar som du skapar i läs-/skrivläge endast för din identifierare. När du skapar mappar som ska vara tillgängliga för Campaign måste du konfigurera dem med läs- och skrivbehörighet för hela gruppen. I annat fall kan arbetsflöden av säkerhetsskäl inte skapa eller ta bort filer eftersom de körs med en annan identifierare inom samma grupp.
 
-* De offentliga IP-adresserna som du försöker initiera SFTP-anslutningen från måste läggas till i tillåtelselista i Campaign-instansen. De offentliga IP-adresserna kan läggas till via Kontrollpanelen. [Läs mer](https://experienceleague.adobe.com/en/docs/control-panel/using/sftp-management/ip-range-allow-listing){target="_blank"}
+* De offentliga IP-adresserna som du försöker initiera SFTP-anslutningen från måste läggas till i tillåtelselista i Campaign-instansen. De offentliga IP-adresserna kan läggas till via Kontrollpanelen. [Läs mer](https://experienceleague.adobe.com/sv/docs/control-panel/using/sftp-management/ip-range-allow-listing){target="_blank"}
 
 ## Bästa praxis för användning av SFTP-lagring {#sftp-server-best-practices}
 
@@ -43,7 +43,7 @@ För att undvika sådana problem rekommenderar Adobe att du följer god praxis n
 
 >[!NOTE]
 >
->* Du kan övervaka din SFTP-serverlagring med Campaign Classic [Kontrollpanel](https://experienceleague.adobe.com/docs/control-panel/using/sftp-management/sftp-storage-management.html){target="_blank"}.
+>* Du kan övervaka din SFTP-serverlagring med Campaign Classic [Kontrollpanel](https://experienceleague.adobe.com/docs/control-panel/using/sftp-management/sftp-storage-management.html?lang=sv-SE){target="_blank"}.
 >
 >* Kontrollpanelen är tillgänglig för alla administratörsanvändare. Anvisningar om hur du beviljar administratörsåtkomst till en användare finns på [den här sidan](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/managing-permissions.html?lang=sv#discover-control-panel){target="_blank"}.
 >

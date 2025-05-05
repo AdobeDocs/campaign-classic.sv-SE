@@ -114,4 +114,4 @@ Mer information finns på [den här sidan](oauth-technical-account.md#oauth-serv
 
 ## Konfiguration och användning {#adobe-analytics-connector-usage}
 
-Lär dig hur du arbetar med Adobe Campaign och Adobe Analytics i [Adobe Campaign v8-dokumentationen](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/connect/ac-aa){target="_blank"}.
+Lär dig hur du arbetar med Adobe Campaign och Adobe Analytics i [Adobe Campaign v8-dokumentationen](https://experienceleague.adobe.com/sv/docs/campaign/campaign-v8/connect/ac-aa){target="_blank"}.

@@ -63,7 +63,7 @@ Läs [det här dokumentet](privacy-and-recommendations.md) för att få en förs
 
 Läs [det här avsnittet](../../platform/using/adobe-campaign-workspace.md) för att veta mer om grunderna för arbetsytan i Adobe Campaign.
 
-![](assets/do-not-localize/how-to-video.png) [Upptäck arbetsytan i Campaign via en video](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/getting-started/exploring-the-adobe-campaign-classic-user-interface.html)
+![](assets/do-not-localize/how-to-video.png) [Upptäck arbetsytan i Campaign via en video](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/getting-started/exploring-the-adobe-campaign-classic-user-interface.html?lang=sv-SE)
 
 ## Hur väljer jag målgrupp för mina meddelanden? {#how-can-i-select-the-target-population-of-my-messages-}
 
@@ -85,7 +85,7 @@ Ett arbetsflöde kan även innefatta en eller flera operatörer som ska meddelas
 
 [Klicka här för att får reda på mer](../../delivery/using/about-email-channel.md).
 
-![](assets/do-not-localize/how-to-video.png) [Upptäck detta i en video](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/getting-started/creating-a-campaign-and-an-email.html)
+![](assets/do-not-localize/how-to-video.png) [Upptäck detta i en video](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/getting-started/creating-a-campaign-and-an-email.html?lang=sv-SE)
 
 ## Hur skickar jag SMS-meddelanden? {#how-to-send-sms-messages-}
 
@@ -131,6 +131,6 @@ Adobe utvärderar ständigt funktionerna i produkten. Adobe gör detta för att 
 
 ## Finns det nya dokumentationsuppdateringar och hjälpmaterial? {#are-there-new-documentation-updates-and-help-materials-released-}
 
-De senaste dokumentationsuppdateringarna för Campaign Classic listas [på den här sidan](https://experienceleague.adobe.com/docs/campaign-classic/using/documentation-updates.html).
+De senaste dokumentationsuppdateringarna för Campaign Classic listas [på den här sidan](https://experienceleague.adobe.com/docs/campaign-classic/using/documentation-updates.html?lang=sv-SE).
 
 Du kan även se de senaste tekniska dokumenten som finns [på den här sidan](https://helpx.adobe.com/se/campaign/kb/article-list.html).

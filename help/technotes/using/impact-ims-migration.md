@@ -94,7 +94,7 @@ Du kan inte längre skapa, redigera, uppdatera eller ta bort operatorer med inby
 
 Därför har dessa åtgärder inaktiverats i klientkonsolen.
 
-Administrationen av operatorer är centraliserad i Adobe Admin Console och följande uppgifter hanteras nu uteslutande via denna konsol. Lär dig hur du skapar användare och tilldelar behörigheter i [Campaign v8-dokumentationen](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/admin/permissions/manage-permissions){target="_blank"}.
+Administrationen av operatorer är centraliserad i Adobe Admin Console och följande uppgifter hanteras nu uteslutande via denna konsol. Lär dig hur du skapar användare och tilldelar behörigheter i [Campaign v8-dokumentationen](https://experienceleague.adobe.com/sv/docs/campaign/campaign-v8/admin/permissions/manage-permissions){target="_blank"}.
 
 ### Otillgängliga alternativ {#unavailable-migration}
 
@@ -120,4 +120,4 @@ Efter migreringen är följande uppgifter inte längre tillgängliga i klientkon
 >* [Migrering av slutanvändare till IMS](migrate-users-to-ims.md)
 >* [Migrering av tekniska operatorer till Adobe Developer-konsolen](ims-migration.md)
 >* [Information om den senaste utgåvan av Adobe Campaign Classic v7](../../rn/using/latest-release.md)
->* [Vad är Adobe Identity Management System (IMS)](https://helpx.adobe.com/enterprise/using/identity.html){target="_blank"}
+>* [Vad är Adobe Identity Management System (IMS)](https://helpx.adobe.com/se/enterprise/using/identity.html){target="_blank"}

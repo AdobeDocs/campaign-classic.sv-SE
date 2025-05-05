@@ -32,4 +32,4 @@ Slutligen utökas budgethanteringsfunktionen till hantering av mål- och utgifts
 
 >[!NOTE]
 >
->Mer information om MRM för Adobe Campaign och hur du använder det finns i [dokumentationen för Campaign v8](https://experienceleague.adobe.com/en/docs/campaign/automation/mrm/about-marketing-resource-management){target=_blank}.
+>Mer information om MRM för Adobe Campaign och hur du använder det finns i [dokumentationen för Campaign v8](https://experienceleague.adobe.com/sv/docs/campaign/automation/mrm/about-marketing-resource-management){target=_blank}.

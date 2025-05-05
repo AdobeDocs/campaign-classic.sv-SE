@@ -22,7 +22,7 @@ Om en slutanvändare väljer bort beteendespårning via cookies eller webbfyrar,
 
 >[!NOTE]
 >
->När du använder skript ska du alltid följa riktlinjerna som beskrivs i [checklistan för säkerhet och sekretess](https://helpx.adobe.com/campaign/kb/acc-security.html#dev).
+>När du använder skript ska du alltid följa riktlinjerna som beskrivs i [checklistan för säkerhet och sekretess](https://helpx.adobe.com/se/campaign/kb/acc-security.html#dev).
 
 ## Konfigurera banderollen {#configuring-the-banner-}
 

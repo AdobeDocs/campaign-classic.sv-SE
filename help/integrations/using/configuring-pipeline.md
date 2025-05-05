@@ -28,7 +28,7 @@ Utlösarna används för att målinrikta via ett kampanjarbetsflöde som skickar
 Kontrollera att du har:
 
 * Ett Adobe Developer-projekt
-* Ett giltigt organisations-ID - Du hittar ditt organisations-ID på [den här sidan](https://experienceleague.adobe.com/en/docs/core-services/interface/administration/organizations#concept_EA8AEE5B02CF46ACBDAD6A8508646255){_blank}
+* Ett giltigt organisations-ID - Du hittar ditt organisations-ID på [den här sidan](https://experienceleague.adobe.com/sv/docs/core-services/interface/administration/organizations#concept_EA8AEE5B02CF46ACBDAD6A8508646255){_blank}
 * En utvecklaråtkomst till din organisation
 * En giltig utlösarkonfiguration i Adobe Analytics
 

@@ -18,7 +18,7 @@ ht-degree: 6%
 
 Programmet **Hantera sociala nätverk** (social marknadsföring) som är utformat för att hantera sociala nätverk gör att du kan interagera med kunder och potentiella kunder via X (tidigare Twitter).
 
-Lär dig viktiga steg för att integrera Campaign och X i [dokumentationen för Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/connect/ac-tw.html){target="_blank"}.
+Lär dig viktiga steg för att integrera Campaign och X i [dokumentationen för Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/connect/ac-tw.html?lang=sv-SE){target="_blank"}.
 
 Som lokal kund eller hybridkund måste ditt X External-konto vara konfigurerat och aktiverat. För hybridkonfigurationer måste även fliken **Mid-sourcing** anges med en aktiv anslutning till mittkällplattformen.
 

@@ -24,7 +24,7 @@ Beroende på vilket erbjudande du erbjuder kan Campaign Optimization inkluderas 
 
 >[!NOTE]
 >
->Mer information om Campaign Optimization för Adobe Campaign och hur du använder det finns i [Campaign v8-dokumentationen](https://experienceleague.adobe.com/docs/campaign/automation/campaign-optimization/campaign-typologies.html){target=_blank}.
+>Mer information om Campaign Optimization för Adobe Campaign och hur du använder det finns i [Campaign v8-dokumentationen](https://experienceleague.adobe.com/docs/campaign/automation/campaign-optimization/campaign-typologies.html?lang=sv-SE){target=_blank}.
 
 <!--
 
@@ -81,7 +81,7 @@ This video explains how to implement fatigue management in Adobe Campaign Classi
 
 >[!VIDEO](https://video.tv.adobe.com/v/25091?quality=12)
 
-Additional Campaign how-to videos are available [here](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html).
+Additional Campaign how-to videos are available [here](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=sv-SE).
 
 **Related topic**
 

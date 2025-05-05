@@ -20,7 +20,7 @@ ht-degree: 4%
 
 Adobe Experience Cloud är en omfattande uppsättning förstklassiga, integrerade lösningar som bygger på en gemensam dataplattform med en gemensam uppsättning kraftfulla lösningar och appar.
 
-Läs mer om funktionsintegreringar mellan Adobe Campaign- och Adobe Experience Cloud-lösningar på [den här sidan](https://experienceleague.adobe.com/en/docs/core-services/interface/administration/integrations){_blank}.
+Läs mer om funktionsintegreringar mellan Adobe Campaign- och Adobe Experience Cloud-lösningar på [den här sidan](https://experienceleague.adobe.com/sv/docs/core-services/interface/administration/integrations){_blank}.
 
 En fullständig lista över Adobe lösningar och apptjänster som kan integreras med Adobe Campaign, samt tillhörande dokumentation, finns i [det här avsnittet](#experience-cloud-integrations).
 
@@ -33,17 +33,17 @@ En fullständig lista över Adobe lösningar och apptjänster som kan integreras
 
 Flera lösningar kan länkas till Adobe Experience Cloud. **organisationen** är den kundentitet som gör det möjligt för en administratör att konfigurera grupper och användare samt att styra enkel inloggning (SSO) i Adobe Experience Cloud. Organisationen fungerar som ett inloggningsföretag som omfattar alla Experience Cloud produkter och lösningar. Oftast är en organisation ditt företagsnamn. Ett företag kan dock ha många organisationer.
 
-Organisationshantering och länkning av Adobe Experience Cloud-konton finns i [Adobe Experience Cloud hjälpportal](https://experienceleague.adobe.com/en/docs/core-services/interface/administration/organizations){_blank}.
+Organisationshantering och länkning av Adobe Experience Cloud-konton finns i [Adobe Experience Cloud hjälpportal](https://experienceleague.adobe.com/sv/docs/core-services/interface/administration/organizations){_blank}.
 
 ## Hantering av identitet och cookies {#id-and-cookies}
 
-När du installerar Adobe Campaign eller integrerar en befintlig installation med Adobe Experience Cloud aktiveras [Adobe Experience Cloud Identity Service](https://experienceleague.adobe.com/en/docs/id-service/using/home){_blank}. Den här tjänsten ersätter den permanenta cookie som framför allt används av Adobe Campaign för spårningsfunktionerna.
+När du installerar Adobe Campaign eller integrerar en befintlig installation med Adobe Experience Cloud aktiveras [Adobe Experience Cloud Identity Service](https://experienceleague.adobe.com/sv/docs/id-service/using/home){_blank}. Den här tjänsten ersätter den permanenta cookie som framför allt används av Adobe Campaign för spårningsfunktionerna.
 
 Adobe Experience Cloud ID-tjänst (Identity Service) är ett universellt, beständigt ID som identifierar besökarna i alla lösningar i Experience Cloud.
 
 Ett unikt besökar-ID tilldelas mottagare som genererar spårningsloggar. Detta ID sparas i fältet **[!UICONTROL Requester UUID (@sourceID)]** i tabellen **[!UICONTROL nms:trackingLogRcp]**. **Spårningsdata för mottagare som fanns innan besökar-ID-tjänsten implementerades kommer därför inte längre att kunna användas**.
 
-ID:t känns sedan igen av de andra Adobe Experience Cloud-lösningarna med samma CNAME. [Läs mer](https://experienceleague.adobe.com/en/docs/id-service/using/reference/analytics-reference/cname){_blank}.
+ID:t känns sedan igen av de andra Adobe Experience Cloud-lösningarna med samma CNAME. [Läs mer](https://experienceleague.adobe.com/sv/docs/id-service/using/reference/analytics-reference/cname){_blank}.
 
 ## Experience Cloud-integreringar {#experience-cloud-integrations}
 

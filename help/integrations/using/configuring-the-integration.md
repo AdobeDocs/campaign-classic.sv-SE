@@ -28,7 +28,7 @@ Så här startar du konfigurationen i Adobe Campaign:
 1. [Konfigurera det externa kontot](#configure-the-external-account)
 1. [Konfigurera AEM resursfiltrering](#configure-aem-resources-filtering)
 
-För avancerade konfigurationer som hantering av personaliseringsfält och -block. Mer information finns i Adobe Experience Manager [dokumentation](https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/campaignonpremise.html).
+För avancerade konfigurationer som hantering av personaliseringsfält och -block. Mer information finns i Adobe Experience Manager [dokumentation](https://helpx.adobe.com/se/experience-manager/6-5/sites/administering/using/campaignonpremise.html).
 
 ### Installera AEM integreringspaket i Adobe Campaign {#install-the-aem-integration-package-in-adobe-campaign}
 
@@ -119,12 +119,12 @@ Så här startar du konfigurationen i Adobe Experience Manager:
 
 1. Konfigurera **replikeringen** så att den replikeras från AEM till den AEM publiceringsinstansen.
 
-   Mer information om hur du konfigurerar replikering finns i Adobe Experience Manager [dokumentation](https://helpx.adobe.com/experience-manager/6-5/sites/deploying/using/replication.html).
+   Mer information om hur du konfigurerar replikering finns i Adobe Experience Manager [dokumentation](https://helpx.adobe.com/se/experience-manager/6-5/sites/deploying/using/replication.html).
 
 1. Anslut Adobe Experience Manager till Adobe Campaign genom att konfigurera en dedikerad **Cloud Service**.
 
-   Mer information om hur du ansluter båda lösningarna via Cloud Service finns i Adobe Experience Manager [dokumentation](https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/campaignonpremise.html#ConfiguringAdobeExperienceManager) .
+   Mer information om hur du ansluter båda lösningarna via Cloud Service finns i Adobe Experience Manager [dokumentation](https://helpx.adobe.com/se/experience-manager/6-5/sites/administering/using/campaignonpremise.html#ConfiguringAdobeExperienceManager) .
 
 1. Konfigurera **tjänsten Externalizer**.
 
-   Mer information om hur du konfigurerar det finns i Adobe Experience Manager [dokumentation](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/externalizer.html).
+   Mer information om hur du konfigurerar det finns i Adobe Experience Manager [dokumentation](https://helpx.adobe.com/se/experience-manager/6-5/sites/developing/using/externalizer.html).

@@ -19,7 +19,7 @@ I Campaign-klientkonsolen visas data i listor. Du kan anpassa listorna efter din
 
 >[!NOTE]
 >
->Mer information om hur du hanterar och anpassar listor i Adobe Campaign finns i [dokumentationen för Campaign v8](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/config/configuration/ui-settings#customize-lists){target=_blank}.
+>Mer information om hur du hanterar och anpassar listor i Adobe Campaign finns i [dokumentationen för Campaign v8](https://experienceleague.adobe.com/sv/docs/campaign/campaign-v8/config/configuration/ui-settings#customize-lists){target=_blank}.
 
 <!--
 ## Count records {#counting-records}

@@ -21,7 +21,7 @@ ht-degree: 2%
 >
 >Som v7-användare måste Adobe Identity Management System (IMS) vara aktiverat på datorn för att kunna fortsätta. [Läs mer](../../integrations/using/about-adobe-id.md).
 
-När Adobe Identity Management-tjänsten (IMS) har aktiverats för din organisation kan du begära etablering av [Experience Cloud-målgruppsintegreringen](https://experienceleague.adobe.com/en/docs/core-services/interface/services/audiences/overview){target="_blank"} med Campaign. Kontakta Adobe och lämna följande uppgifter:
+När Adobe Identity Management-tjänsten (IMS) har aktiverats för din organisation kan du begära etablering av [Experience Cloud-målgruppsintegreringen](https://experienceleague.adobe.com/sv/docs/core-services/interface/services/audiences/overview){target="_blank"} med Campaign. Kontakta Adobe och lämna följande uppgifter:
 
 <table> 
  <tbody> 

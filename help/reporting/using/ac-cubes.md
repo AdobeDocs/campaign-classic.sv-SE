@@ -45,4 +45,4 @@ Använd modulen Campaign Marketing Analytics för att
 1. Bygg en fråga med data som beräknas och aggregeras i en kub.
 1. Identifiera populationer och referera till dem i listor.
 
-Lär dig hur du skapar och använder kuber i [Adobe Campaign v8-dokumentationen](https://experienceleague.adobe.com/docs/campaign/campaign-v8/analytics/reports/cubes/gs-cubes.html){target="_blank"}.
+Lär dig hur du skapar och använder kuber i [Adobe Campaign v8-dokumentationen](https://experienceleague.adobe.com/docs/campaign/campaign-v8/analytics/reports/cubes/gs-cubes.html?lang=sv-SE){target="_blank"}.

@@ -57,7 +57,7 @@ Här är en lista över artiklar som rör bästa praxis för programkonfiguratio
   >
   >Engagemanget i Deliverability-teamet bygger på kontrakt och kunderna bör kontakta sin Adobe-representant för att få information om Deliverability Engagement.
 
-* DKIM: 1024b är den rekommenderade krypteringsstorleken för att säkerställa säkerhetsnivån för DKIM. Lägre DKIM-nycklar anses inte giltiga av de flesta åtkomstleverantörer. Se [den här sidan](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html#authentication).
+* DKIM: 1024b är den rekommenderade krypteringsstorleken för att säkerställa säkerhetsnivån för DKIM. Lägre DKIM-nycklar anses inte giltiga av de flesta åtkomstleverantörer. Se [den här sidan](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html?lang=sv-SE#authentication).
 
 ## Leveransproblem {#deliverability-issues}
 
@@ -71,7 +71,7 @@ Här är en lista över bästa praxis och artiklar som rör slutbarhet:
   >Engagemanget i Deliverability-teamet bygger på kontrakt och kunderna bör kontakta sin Adobe-representant för att få information om Deliverability Engagement.
 
 * Inställning av IP-tillhörighet: en felaktig inställning av IP-tillhörighet kan stoppa alla e-postmeddelanden (felaktigt operatörs-/tillhörighetsnamn i konfigurationen) eller minska genomströmningen (ett litet antal IP-adresser i tillhörigheten). Se den här [sidan](../../installation/using/email-deliverability.md#list-of-ip-addresses-to-use).
-* E-poststorlek: e-poststorleken spelar en viktig roll för dataflödet. Den rekommenderade maximala e-poststorleken är 60 kB. Se den här [sidan](https://helpx.adobe.com/legal/product-descriptions/campaign.html). Kontrollera antalet byte som har överförts per timme i rapporten [Leveransflöde](../../reporting/using/global-reports.md#delivery-throughput).
+* E-poststorlek: e-poststorleken spelar en viktig roll för dataflödet. Den rekommenderade maximala e-poststorleken är 60 kB. Se den här [sidan](https://helpx.adobe.com/se/legal/product-descriptions/campaign.html). Kontrollera antalet byte som har överförts per timme i rapporten [Leveransflöde](../../reporting/using/global-reports.md#delivery-throughput).
 * Ett stort antal ogiltiga mottagare: om det finns ett stort antal ogiltiga mottagare kan det påverka dataflödet. MTA fortsätter att försöka skicka e-post till ogiltiga mottagare. Se till att din databas underhålls väl.
 * Mängd personalisering: Om en leverans fortsätter i&quot;pågående Personalization&quot; ska du kontrollera den JavaScript som används i personaliseringsblocken.
 

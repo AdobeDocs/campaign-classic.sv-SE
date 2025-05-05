@@ -81,5 +81,5 @@ Nedan hittar du några av de effektivaste strategierna för webbserverkonfigurat
 
 Relaterade ämnen:
 
-* [Adobe Marketing Cloud Compliance - översikt](https://experienceleague.adobe.com/en/docs/experience-platform/landing/governance-privacy-security/overview#privacy)
-* [Adobe Campaign - säkerhetsöversikt](https://experienceleague.adobe.com/en/docs/experience-platform/landing/governance-privacy-security/overview#security)
+* [Adobe Marketing Cloud Compliance - översikt](https://experienceleague.adobe.com/sv/docs/experience-platform/landing/governance-privacy-security/overview#privacy)
+* [Adobe Campaign - säkerhetsöversikt](https://experienceleague.adobe.com/sv/docs/experience-platform/landing/governance-privacy-security/overview#security)

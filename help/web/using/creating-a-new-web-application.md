@@ -24,7 +24,7 @@ Gå till fliken **Kampanjer** och välj menyn **[!UICONTROL Web Applications]**.
 
 >[!NOTE]
 >
->Skydda alltid de sidor som kan innehålla personlig information. Se checklistan [Säkerhet och sekretess](https://helpx.adobe.com/campaign/kb/acc-security.html#privacy).
+>Skydda alltid de sidor som kan innehålla personlig information. Se checklistan [Säkerhet och sekretess](https://helpx.adobe.com/se/campaign/kb/acc-security.html#privacy).
 
 Den här mallen avgör typen av webbprogram. Du kan skapa
 

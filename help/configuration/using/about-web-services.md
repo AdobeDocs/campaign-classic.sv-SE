@@ -22,8 +22,8 @@ Adobe Campaign API:er används i JavaScript både i och utanför programmet SOAP
 
 >[!IMPORTANT]
 >
->Antalet auktoriserade motorsamtal per dag varierar beroende på ditt licensavtal. Mer information finns på [den här sidan](https://helpx.adobe.com/legal/product-descriptions/adobe-campaign-classic---product-description.html).\
->En lista över alla API:er, inklusive deras fullständiga beskrivning, finns i [den här dedikerade dokumentationen] (https://experienceleague.adobe.com/developer/campaign-api/api/index.html.
+>Antalet auktoriserade motorsamtal per dag varierar beroende på ditt licensavtal. Mer information finns på [den här sidan](https://helpx.adobe.com/se/legal/product-descriptions/adobe-campaign-classic---product-description.html).\
+>En lista över alla API:er, inklusive deras fullständiga beskrivning, finns i [den här dedikerade dokumentationen] (https://experienceleague.adobe.com/developer/campaign-api/api/index.html?lang=sv-SE.
 
 ## Förhandskrav {#prerequisites}
 

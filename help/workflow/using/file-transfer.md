@@ -18,7 +18,7 @@ ht-degree: 1%
 
 
 Med aktiviteten **Filöverföring** kan du ta emot eller skicka filer, testa om det finns filer eller lista över filer på en server. Det protokoll som används är antingen Azure Blob Storage, Amazon Simple Storage Service (S3), FTP eller SFTP.
-Med S3, Azure Blob Storage eller SFTP-anslutning kan du även importera segmentdata till Adobe Campaign med Adobe kunddataplattform i realtid. Mer information finns i [dokumentationen](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/email-marketing/adobe-campaign.html).
+Med S3, Azure Blob Storage eller SFTP-anslutning kan du även importera segmentdata till Adobe Campaign med Adobe kunddataplattform i realtid. Mer information finns i [dokumentationen](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/email-marketing/adobe-campaign.html?lang=sv-SE).
 
 >[!NOTE]
 >

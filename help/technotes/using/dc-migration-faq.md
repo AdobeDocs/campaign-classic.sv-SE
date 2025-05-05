@@ -21,7 +21,7 @@ Adobe tar bort det gamla datacentret: Campaign Classic måste överföras till P
 
 Nedan finns en uppsättning vanliga frågor om det här projektet, effekten på Campaign-miljöer och andra användbara resurser.
 
-Om du har andra frågor kan du kontakta [Adobe kundtjänst](https://experienceleague.adobe.com/?support-solution=Campaign#support).
+Om du har andra frågor kan du kontakta [Adobe kundtjänst](https://experienceleague.adobe.com/sv?support-solution=Campaign#support).
 
 ## Infrastrukturpåverkan
 
@@ -51,7 +51,7 @@ Global påverkan på databaser och infrastruktur listas nedan.
 
 * **Vad är planen för att åtgärda eventuella problem efter migrering?**
 
-  Omfattande testning utförs innan produktionssystemen migreras. Om du får problem är [Adobe kundtjänst](https://experienceleague.adobe.com/?support-solution=Campaign#support) fortfarande den viktigaste kontaktpunkten. Adobe har inrättat ett expertteam för att vid behov ge avancerat stöd.
+  Omfattande testning utförs innan produktionssystemen migreras. Om du får problem är [Adobe kundtjänst](https://experienceleague.adobe.com/sv?support-solution=Campaign#support) fortfarande den viktigaste kontaktpunkten. Adobe har inrättat ett expertteam för att vid behov ge avancerat stöd.
 
 ## Leveranseffekter
 
@@ -97,7 +97,7 @@ Global påverkan på IP-adresser, blockeringslista, underdomäner och URL-adress
 
   Först och främst kommer Adobe Deliverability att utvärdera plattformens leveransstatus och rekommendera en plan för övergången till de nya IP-adresserna
 
-  Ingen uppvärmning krävs efter migreringen. Det kan vara ett undantag och i så fall kommer [Adobe kundtjänst](https://experienceleague.adobe.com/?support-solution=Campaign#support) att kontakta kunderna.
+  Ingen uppvärmning krävs efter migreringen. Det kan vara ett undantag och i så fall kommer [Adobe kundtjänst](https://experienceleague.adobe.com/sv?support-solution=Campaign#support) att kontakta kunderna.
 
   Planen är dock att göra den här operationen genomskinlig för företaget, till skillnad från den initiala påfarten som görs vid publicering.
 

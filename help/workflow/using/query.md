@@ -190,7 +190,7 @@ I avsnittet nedan beskrivs de effektivaste strategierna för att optimera frågo
 
   ![](assets/do-not-localize/v7.jpeg) [Kampanjdokumentation v7](../../configuration/using/database-mapping.md)
 
-  ![](assets/do-not-localize/v8.png) [Kampanjdokumentation v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/architecture/shemas-forms/database-mapping.html)
+  ![](assets/do-not-localize/v8.png) [Kampanjdokumentation v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/architecture/shemas-forms/database-mapping.html?lang=sv-SE)
 
 ### Funktioner {#functions}
 

@@ -28,7 +28,7 @@ När du navigerar i Adobe Campaign-trädet (från menyn **[!UICONTROL Explorer]*
 
 >[!NOTE]
 >
->Mer information om filter och hur du använder dem finns i [Campaign v8-dokumentationen](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/audience/create-audiences/create-filters){target=_blank}.
+>Mer information om filter och hur du använder dem finns i [Campaign v8-dokumentationen](https://experienceleague.adobe.com/sv/docs/campaign/campaign-v8/audience/create-audiences/create-filters){target=_blank}.
 
 
 <!--

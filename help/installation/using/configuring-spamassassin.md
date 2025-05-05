@@ -50,7 +50,7 @@ Så här installerar och konfigurerar du SpamAssets på Windows för att aktiver
 
 ### Installera SpamAssassin {#installing-spamassassin}
 
-1. Anslut till [programdistributionsportalen](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html) med dina användaruppgifter. Läs mer om programvarudistribution på [den här sidan](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html).
+1. Anslut till [programdistributionsportalen](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html) med dina användaruppgifter. Läs mer om programvarudistribution på [den här sidan](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=sv-SE).
 1. Hämta filen **Neolane Spam Assassin (Windows-installation) (2.0)** (neolane_spamassassin.2.0.zip).
 1. Kopiera den här filen till Adobe Campaign-servern och packa upp den.
 

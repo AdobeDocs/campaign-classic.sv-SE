@@ -15,7 +15,7 @@ ht-degree: 2%
 
 >[!INFO]
 >
->Läs mer om funktionen Granskningsspår i [Adobe Campaign v8-dokumentationen](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/analytics/audit-trail).
+>Läs mer om funktionen Granskningsspår i [Adobe Campaign v8-dokumentationen](https://experienceleague.adobe.com/sv/docs/campaign/campaign-v8/analytics/audit-trail).
 
 I Adobe Campaign ger **[!UICONTROL Audit trail]** dig tillgång till den fullständiga historiken över ändringar som gjorts i din instans.
 

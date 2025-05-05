@@ -26,7 +26,7 @@ Adobe Campaign-teamet kommer att genomföra säkerhetsuppgraderingen av Apache-v
 
 Uppgraderingen förväntas att köras automatiskt utanför kontorstid så att du kan fortsätta använda Campaign-tjänsten utan avbrott.
 
-Din(a) icke-produktionsinstans(er) kommer att uppgraderas av Adobe först, sedan kommer dina produktionsinstanser att uppgraderas. Eftersom detta är en automatisk uppgraderingsprocess som ägs av Adobe behöver du inte vidta några åtgärder. Om du får problem kontaktar du [Adobe kundtjänst](https://experienceleague.adobe.com/?support-solution=Campaign#support).
+Din(a) icke-produktionsinstans(er) kommer att uppgraderas av Adobe först, sedan kommer dina produktionsinstanser att uppgraderas. Eftersom detta är en automatisk uppgraderingsprocess som ägs av Adobe behöver du inte vidta några åtgärder. Om du får problem kontaktar du [Adobe kundtjänst](https://experienceleague.adobe.com/sv?support-solution=Campaign#support).
 
 
 >[!NOTE]
@@ -57,7 +57,7 @@ Din(a) icke-produktionsinstans(er) kommer att uppgraderas av Adobe först, sedan
 
 * **Vilka valideringar måste köras av kunderna?**
 
-  Ingen specifik testning krävs för denna säkerhetsuppgradering. Om något problem uppstår kan du kontakta [Adobe kundtjänst](https://experienceleague.adobe.com/?support-solution=Campaign#support).
+  Ingen specifik testning krävs för denna säkerhetsuppgradering. Om något problem uppstår kan du kontakta [Adobe kundtjänst](https://experienceleague.adobe.com/sv?support-solution=Campaign#support).
 
 
 * **Kan jag begära en ändring av datum/tid för den schemalagda säkerhetsuppgraderingsplatsen?**
@@ -65,4 +65,4 @@ Din(a) icke-produktionsinstans(er) kommer att uppgraderas av Adobe först, sedan
   Eftersom det här är en säkerhetskorrigering rekommenderar vi att du anpassar dig till det befintliga schemat.
 
 
-Om du har andra frågor kan du kontakta [Adobe kundtjänst](https://experienceleague.adobe.com/?support-solution=Campaign#support).
+Om du har andra frågor kan du kontakta [Adobe kundtjänst](https://experienceleague.adobe.com/sv?support-solution=Campaign#support).

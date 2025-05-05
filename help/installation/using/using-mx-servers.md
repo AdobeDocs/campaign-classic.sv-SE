@@ -91,4 +91,4 @@ Det anpassade läget är till för avancerade klienter som vill ange sina egna M
 * [MX-konfiguration](../../installation/using/email-deliverability.md#mx-configuration)
 * [Konfiguration av teknisk e-post](../../installation/using/email-deliverability.md)
 * [Förstå leveransfel](../../delivery/using/understanding-delivery-failures.md)
-* [Campaign Classic - Teknisk Recommendations](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/campaign/acc-technical-recommendations.html)
+* [Campaign Classic - Teknisk Recommendations](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/campaign/acc-technical-recommendations.html?lang=sv-SE)

@@ -24,7 +24,7 @@ ht-degree: 0%
 
 Med Adobe Campaign kan ni dela målgrupper och segment med Adobe Experience Cloud tjänster. Det finns två alternativ:
 
-1. Skicka Adobe Experience Platform segmentdata till Adobe Campaign. För att implementera integreringen måste ni koppla Real-time Customer Data Platform till Campaign (RTCDP). [Läs mer i det här avsnittet](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/email-marketing/adobe-campaign.html){target="_blank"}.
+1. Skicka Adobe Experience Platform segmentdata till Adobe Campaign. För att implementera integreringen måste ni koppla Real-time Customer Data Platform till Campaign (RTCDP). [Läs mer i det här avsnittet](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/email-marketing/adobe-campaign.html?lang=sv-SE){target="_blank"}.
 
 1. Integrera **Adobe Campaign** med **Experience Cloud-målgrupper** eller **Adobe Audience Manager**. Då kan du:
 

@@ -60,7 +60,7 @@ Om du inte får det här resultatet bör du kontrollera i webbserverkonfiguratio
 </tr>
 <tr>
 <td>Kontrollera den allmänna konfigurationen för säkerhetszonerna.</td>
-<td>Mer information om hur du konfigurerar säkerhetszoner finns i <a href="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/additional-configurations/configuring-campaign-server.html#configuring-campaign-server"/>det här avsnittet.</a></td>
+<td>Mer information om hur du konfigurerar säkerhetszoner finns i <a href="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/additional-configurations/configuring-campaign-server.html?lang=sv-SE#configuring-campaign-server"/>det här avsnittet.</a></td>
 </tr>
 <tr>
 <td>Kommandots lserver-pdump returnerar <b>Inga aktiviteter</b></td>

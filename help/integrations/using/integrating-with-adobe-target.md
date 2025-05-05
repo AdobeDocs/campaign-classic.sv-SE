@@ -23,7 +23,7 @@ Använd Adobe Campaign med Adobe Target för att optimera e-postinnehåll.
 
 Om du vill optimera ditt e-postinnehåll kan du skapa ett omdirigeringserbjudande i Adobe Target och sedan använda Adobe Campaign för att hantera e-posterbjudandena. Du kan t.ex. visa olika erbjudanden för män och kvinnor.
 
-Integrationen äger rum när e-postmeddelandet öppnas. När kunden öppnar e-postmeddelandet anropas Target och en dynamisk version av innehållet visas. Innehållet består av en statisk bild som stöds av alla webbläsare. Target spårar reaktionen på erbjudandet på målgrupps- eller sessionsnivå och att data finns tillgängliga i Target-rapporter. [Läs mer i Adobe Target-dokumentationen](https://experienceleague.adobe.com/docs/target/using/integrate/campaign-and-target.html).
+Integrationen äger rum när e-postmeddelandet öppnas. När kunden öppnar e-postmeddelandet anropas Target och en dynamisk version av innehållet visas. Innehållet består av en statisk bild som stöds av alla webbläsare. Target spårar reaktionen på erbjudandet på målgrupps- eller sessionsnivå och att data finns tillgängliga i Target-rapporter. [Läs mer i Adobe Target-dokumentationen](https://experienceleague.adobe.com/docs/target/using/integrate/campaign-and-target.html?lang=sv-SE).
 
 
 >[!NOTE]

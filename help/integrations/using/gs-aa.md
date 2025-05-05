@@ -35,4 +35,4 @@ Innan du börjar arbeta med Adobe Campaign-Adobe Analytics-kontakten bör du tä
 
 Om du vill aktivera den här integreringen måste du skapa ditt Adobe-tekniska konto enligt informationen på [den här sidan](oauth-technical-account.md).
 
-Lär dig hur du arbetar med Adobe Campaign och Adobe Analytics i [Adobe Campaign v8-dokumentationen](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/connect/ac-aa){target="_blank"}.
+Lär dig hur du arbetar med Adobe Campaign och Adobe Analytics i [Adobe Campaign v8-dokumentationen](https://experienceleague.adobe.com/sv/docs/campaign/campaign-v8/connect/ac-aa){target="_blank"}.

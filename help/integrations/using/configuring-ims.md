@@ -25,7 +25,7 @@ ht-degree: 1%
 ## Förhandskrav {#prerequisites}
 
 * Du måste ha ett namn och ett ID för Adobe Experience Cloud-organisationen. Information om hur du hittar ditt organisations-ID finns på [den här sidan](https://experienceleague.adobe.com/docs/core-services/interface/administration/organizations.html?lang=sv){_blank}.
-* Du måste lägga till användare i Experience Cloud. Mer information finns på [den här sidan](https://experienceleague.adobe.com/docs/core-services/interface/administration/admin-getting-started.html){_blank}.
+* Du måste lägga till användare i Experience Cloud. Mer information finns på [den här sidan](https://experienceleague.adobe.com/docs/core-services/interface/administration/admin-getting-started.html?lang=sv-SE){_blank}.
 
 >[!NOTE]
 >
@@ -49,7 +49,7 @@ Konfigurera det externa **Adobe Experience Cloud**-kontot i **[!UICONTROL Admini
 
 Ange följande information:
 
-* Anslutningsinformation för den IMS-server som används (ID och hemlighet). Denna information tillhandahålls av Adobe kundtjänstteam. Mer information finns i [Vanliga frågor och svar för Adobe Experience Cloud-administratörer](https://experienceleague.adobe.com/docs/core-services/interface/manage-users-and-products/faq.html).
+* Anslutningsinformation för den IMS-server som används (ID och hemlighet). Denna information tillhandahålls av Adobe kundtjänstteam. Mer information finns i [Vanliga frågor och svar för Adobe Experience Cloud-administratörer](https://experienceleague.adobe.com/docs/core-services/interface/manage-users-and-products/faq.html?lang=sv-SE).
 
   Adressen **[!UICONTROL Callback server]** måste anges i **https**. Det här fältet motsvarar åtkomst-URL:en för din Adobe Campaign-instans.
 

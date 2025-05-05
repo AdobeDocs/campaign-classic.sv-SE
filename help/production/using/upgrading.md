@@ -69,7 +69,7 @@ Så här kör du uppgraderingsfilen:
 
 1. Kör **setup.exe**.
 
-   Om du vill hämta den här filen ansluter du till [programdistributionsportalen](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html) med dina användaruppgifter. Läs mer om programvarudistribution på [den här sidan](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html).
+   Om du vill hämta den här filen ansluter du till [programdistributionsportalen](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html) med dina användaruppgifter. Läs mer om programvarudistribution på [den här sidan](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=sv-SE).
 
 1. Välj installationsläge: välj **[!UICONTROL Update or repair]**
 1. Klicka på **[!UICONTROL Next]** .
@@ -119,7 +119,7 @@ I en Linux-miljö följer du stegen nedan för att uppdatera Adobe Campaign till
 
 ### Installera uppdaterade paket {#obtain-updated-packages}
 
-Börja med att återställa båda de uppdaterade paketen av Adobe Campaign: anslut till [programdistributionsportalen](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html) med dina inloggningsuppgifter. Läs mer om programvarudistribution på [den här sidan](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html).
+Börja med att återställa båda de uppdaterade paketen av Adobe Campaign: anslut till [programdistributionsportalen](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html) med dina inloggningsuppgifter. Läs mer om programvarudistribution på [den här sidan](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=sv-SE).
 
 Filen är **nlserver6-v7-XXX.rpm**
 

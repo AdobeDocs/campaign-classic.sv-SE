@@ -86,7 +86,7 @@ Innan du påbörjar uppgraderingen måste lokala kunder utföra följande förbe
 
 1. Hämta den senaste versionen av [serverkonfigurationsfilen](../../installation/using/the-server-configuration-file.md).
 
-1. [Hämta den senaste versionen](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html). [Läs mer](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html).
+1. [Hämta den senaste versionen](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html). [Läs mer](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=sv-SE).
 
 Du måste också känna till alla [användbara kommandorader](../../installation/using/command-lines.md) innan du påbörjar en bygguppgradering:
 

@@ -73,7 +73,7 @@ Konsolversionerna **nu tillgängliga** nedan bör installeras för att lösa en 
 
 ## IMS-uppdatering (Adobe Identity Management System)
 
-Adobe Identity Service (IMS) kommer inte att ha stöd för gamla Internet Explorer-versioner från och med den **30 juni 2021**. [Läs mer](https://helpx.adobe.com/x-productkb/global/update-operating-system-and-browser.html).
+Adobe Identity Service (IMS) kommer inte att ha stöd för gamla Internet Explorer-versioner från och med den **30 juni 2021**. [Läs mer](https://helpx.adobe.com/se/x-productkb/global/update-operating-system-and-browser.html).
 
 Det krävs en uppgradering av Campaign Client Console för att säkerställa kompatibilitet med Adobe IMS.
 
@@ -100,7 +100,7 @@ Som lokal/hybridkund måste du uppgradera till en av de nyare versionerna för a
 
 När alla instanser har uppgraderats måste även klientkonsolen uppgraderas till den här versionen.
 
-* Lär dig hur du får åtkomst till [Adobe-programvarudistribution](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html).
+* Lär dig hur du får åtkomst till [Adobe-programvarudistribution](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=sv-SE).
 
 * [Lär dig hur du installerar Campaign-klientkonsolen](../../installation/using/installing-the-client-console.md).
 

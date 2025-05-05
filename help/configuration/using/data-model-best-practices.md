@@ -146,7 +146,7 @@ När en anpassad tabell skapas i Adobe Campaign med en primärnyckel som autoPK,
 
 Som standard har en anpassad sekvens värden mellan +1 000 och +2,1BB. Tekniskt sett är det möjligt att få ett fullständigt urval av 4BB genom att aktivera negativa ID:n. Detta bör användas med försiktighet och ett ID kommer att förloras vid övergång från negativa till positiva tal: posten 0 ignoreras vanligtvis av Adobe Campaign i genererade SQL-frågor.
 
-Titta på [den här videon](https://helpx.adobe.com/customer-care-office-hours/campaign/sequences-exhaustion-campaign-classic.html) om du vill ha mer information om sekvensslut.
+Titta på [den här videon](https://helpx.adobe.com/se/customer-care-office-hours/campaign/sequences-exhaustion-campaign-classic.html) om du vill ha mer information om sekvensslut.
 
 ## Index {#indexes}
 

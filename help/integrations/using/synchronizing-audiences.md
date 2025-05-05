@@ -123,7 +123,7 @@ Genom att skapa ett leveransarbetsflöde i Campaign Standard är det sedan möjl
 
    Den här aktiviteten används för att hämta data för den valda målgruppen. Du kan också tillämpa ytterligare **[!UICONTROL Source Filtering]** om det behövs genom att använda aktivitetens flik enligt.
 
-1. Lägg till en **[!UICONTROL Email delivery]**-aktivitet och konfigurera den som en annan [e-postleveransaktivitet](https://experienceleague.adobe.com/docs/campaign-standard/using/managing-processes-and-data/channel-activities/email-delivery.html).
+1. Lägg till en **[!UICONTROL Email delivery]**-aktivitet och konfigurera den som en annan [e-postleveransaktivitet](https://experienceleague.adobe.com/docs/campaign-standard/using/managing-processes-and-data/channel-activities/email-delivery.html?lang=sv-SE).
 1. Öppna leveransinnehållet.
 1. Lägg till ett personaliseringsfält.  Leta reda på noden **[!UICONTROL Additional data (targetData)]** på popup-menyn. Den här noden innehåller ytterligare data om målgruppen som beräknades i det inledande målarbetsflödet. Du kan använda dem som vilket annat personaliseringsfält som helst.
 
@@ -145,9 +145,9 @@ När leveransen och innehållet är klara skickar du leveransen:
 1. Bekräfta manuellt att leveransen kan skickas från kontrollpanelen för leverans.
 1. Övervaka rapporter och loggar för leveransen:
 
-   * **I Campaign Standard**: Åtkomst till [rapporter](https://experienceleague.adobe.com/docs/campaign-standard/using/reporting/about-reporting/about-dynamic-reports.html) och [loggar](https://experienceleague.adobe.com/docs/campaign-standard/using/testing-and-sending/monitoring-messages/monitoring-a-delivery.html) som relaterar till leveransen som för alla leveranser.
+   * **I Campaign Standard**: Åtkomst till [rapporter](https://experienceleague.adobe.com/docs/campaign-standard/using/reporting/about-reporting/about-dynamic-reports.html?lang=sv-SE) och [loggar](https://experienceleague.adobe.com/docs/campaign-standard/using/testing-and-sending/monitoring-messages/monitoring-a-delivery.html?lang=sv-SE) som relaterar till leveransen som för alla leveranser.
    * **i Campaign v7 och Campaign Standard**: Leverans-ID, breda e-postloggar och loggar för e-postspårning synkroniseras med Campaign v7. Sedan kan ni få en helhetsbild av era marknadsföringskampanjer från Campaign v7.
 
      Kvartalanger synkroniseras automatiskt tillbaka till Campaign v7. På så sätt kan information som inte kan levereras beaktas vid nästa målgruppsanpassning som utförs i Campaign v7.
 
-     Mer information om karantänhantering finns i Campaign Standard i [det här avsnittet](https://experienceleague.adobe.com/docs/campaign-standard/using/testing-and-sending/monitoring-messages/understanding-quarantine-management.html).
+     Mer information om karantänhantering finns i Campaign Standard i [det här avsnittet](https://experienceleague.adobe.com/docs/campaign-standard/using/testing-and-sending/monitoring-messages/understanding-quarantine-management.html?lang=sv-SE).

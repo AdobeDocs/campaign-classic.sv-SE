@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # Migrera till Adobe Identity Management System (IMS) {#migrate-to-ims}
 
-Som en del av arbetet med att förstärka säkerhets- och autentiseringsprocessen rekommenderar Adobe Campaign att du migrerar slutanvändarautentiseringsläget från den inbyggda autentiseringen av inloggnings-/lösenordsinformationen till [Adobe Identity Management System (IMS)](https://helpx.adobe.com/enterprise/using/identity.html){target="_blank"}.
+Som en del av arbetet med att förstärka säkerhets- och autentiseringsprocessen rekommenderar Adobe Campaign att du migrerar slutanvändarautentiseringsläget från den inbyggda autentiseringen av inloggnings-/lösenordsinformationen till [Adobe Identity Management System (IMS)](https://helpx.adobe.com/se/enterprise/using/identity.html){target="_blank"}.
 
 Dessutom anropar Adobe Campaign klientprogram nu Campaign-API:er direkt med IMS-token för tekniskt konto. Du måste migrera dina tekniska operatorer till Adobe Developer Console.
 
@@ -22,7 +22,7 @@ Dessutom anropar Adobe Campaign klientprogram nu Campaign-API:er direkt med IMS-
 
 ## Migreringssteg {#ims-steps}
 
-Migrering till [Adobe Identity Management System (IMS)](https://helpx.adobe.com/enterprise/using/identity.html){target="_blank"} är ett säkerhetskrav för att göra dina miljöer säkra och standardiserade, eftersom de flesta andra Adobe Experience Cloud-lösningar och -appar redan finns på IMS.
+Migrering till [Adobe Identity Management System (IMS)](https://helpx.adobe.com/se/enterprise/using/identity.html){target="_blank"} är ett säkerhetskrav för att göra dina miljöer säkra och standardiserade, eftersom de flesta andra Adobe Experience Cloud-lösningar och -appar redan finns på IMS.
 
 Adobe stöder dig i den här migreringen. Detaljerade riktlinjer för sammanhang och steg för steg finns i följande artiklar:
 
@@ -46,13 +46,13 @@ De här kampanjversionerna beskrivs i [versionsinformationen](../../rn/using/lat
 
 ### När kan jag starta migreringen? {#ims-migration-start}
 
-En rekommendation för migrering till [Adobe Identity Management System (IMS)](https://helpx.adobe.com/enterprise/using/identity.html){target="_blank"} är att uppgradera din miljö till Campaign Classic v7.4.1 (eller en [IMS-migreringskompatibel version](#ims-versions)).
+En rekommendation för migrering till [Adobe Identity Management System (IMS)](https://helpx.adobe.com/se/enterprise/using/identity.html){target="_blank"} är att uppgradera din miljö till Campaign Classic v7.4.1 (eller en [IMS-migreringskompatibel version](#ims-versions)).
 
 Du kan starta IMS-migrering på din scenmiljö när den har uppgraderats till den senaste versionen och därefter planera för produktionsmiljön.
 
 ### Vad händer efter en uppgradering till Campaign Classic v7.4.1? {#ims-migration-after-upgrade}
 
-När dina miljöer har uppgraderats till Campaign Classic v7.4.1 (eller en [IMS-migreringskompatibel version](#ims-versions)) kan du initiera övergången till [Adobe Identity Management System (IMS)](https://helpx.adobe.com/enterprise/using/identity.html){target="_blank"}.
+När dina miljöer har uppgraderats till Campaign Classic v7.4.1 (eller en [IMS-migreringskompatibel version](#ims-versions)) kan du initiera övergången till [Adobe Identity Management System (IMS)](https://helpx.adobe.com/se/enterprise/using/identity.html){target="_blank"}.
 
 ### När är migreringen klar? {#ims-migration-end}
 
@@ -65,4 +65,4 @@ När migreringen av slutanvändare och migreringen av tekniska operatörer till 
 * [Migrering av slutanvändare till IMS](migrate-users-to-ims.md)
 * [Migrering av tekniska operatörer till Adobe Developer Console](ims-migration.md)
 * [Adobe Campaign Classic v7 senaste versionsinformation](../../rn/using/latest-release.md)
-* [Vad är Adobe Identity Management System (IMS)](https://helpx.adobe.com/enterprise/using/identity.html){target="_blank"}
+* [Vad är Adobe Identity Management System (IMS)](https://helpx.adobe.com/se/enterprise/using/identity.html){target="_blank"}

@@ -78,7 +78,7 @@ Det här programmet har tre huvudmål:
 
 För att få igång den här satsningen får konton som kräver den här migreringen ett e-postmeddelande från Adobe med en tidslinje och tillgång till dokumentation. Detta är ett meddelande om att ditt konto är schemalagt att migreras.
 
-En migrering kan initieras genom att [öppna en ny kundtjänstsupportbiljett](https://experienceleague.adobe.com/?support-solution=Campaign#support). Använd ämnesraden&quot;Migrera till AWS&quot;.
+En migrering kan initieras genom att [öppna en ny kundtjänstsupportbiljett](https://experienceleague.adobe.com/sv?support-solution=Campaign#support). Använd ämnesraden&quot;Migrera till AWS&quot;.
 
 ### Är migreringen obligatorisk?
 

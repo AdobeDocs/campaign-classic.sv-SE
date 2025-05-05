@@ -15,11 +15,11 @@ ht-degree: 4%
 
 
 
-Den 30 juni 2021 har ändringar gjorts i inloggningsfunktionerna för [Adobe Identity Management System](https://helpx.adobe.com/enterprise/using/identity.html) (IMS) som kan påverka din förmåga att fortsätta använda Adobe Campaign. Lär dig hur du kan fortsätta använda Adobe Campaign Classic v7 utan avbrott.
+Den 30 juni 2021 har ändringar gjorts i inloggningsfunktionerna för [Adobe Identity Management System](https://helpx.adobe.com/se/enterprise/using/identity.html) (IMS) som kan påverka din förmåga att fortsätta använda Adobe Campaign. Lär dig hur du kan fortsätta använda Adobe Campaign Classic v7 utan avbrott.
 
 ## Vad har ändrats?
 
-Adobe Identity Management-tjänsten (IMS) slutade stödja tidigare Internet Explorer-versioner den **30 juni 2021**. [Läs mer](https://helpx.adobe.com/x-productkb/global/update-operating-system-and-browser.html).
+Adobe Identity Management-tjänsten (IMS) slutade stödja tidigare Internet Explorer-versioner den **30 juni 2021**. [Läs mer](https://helpx.adobe.com/se/x-productkb/global/update-operating-system-and-browser.html).
 
 Adobe vill bevara IMS-funktionaliteten för alla kunder sedan 30 juni 2021. IMS är en del av säkerhetsramverket som gör att användare kan logga in på klientkonsolen, alltså Adobe Campaign.
 
@@ -76,7 +76,7 @@ Följande varningsmeddelande visas för användare om de behöver uppdatera sin 
 
 ![](../../integrations/using/assets/do-not-localize/errorMsg.png)
 
-Om du ser en sådan varning måste du installera de senaste uppdateringarna av det operativsystem du använder. [Läs mer](https://helpx.adobe.com/x-productkb/global/update-operating-system-and-browser.html)
+Om du ser en sådan varning måste du installera de senaste uppdateringarna av det operativsystem du använder. [Läs mer](https://helpx.adobe.com/se/x-productkb/global/update-operating-system-and-browser.html)
 
 Om du inte har uppdaterat din Internet Explorer-version visas följande meddelande och du kan inte längre ansluta till Adobe Campaign:
 
@@ -93,5 +93,5 @@ Om du inte har uppdaterat din Internet Explorer-version visas följande meddelan
 * [Vanliga frågor och svar om builduppgradering](../../platform/using/faq-build-upgrade.md)
 * [Gör den nya klientkonsolen tillgänglig för användare](../../installation/using/client-console-availability-for-windows.md)
 * [Installera Campaign Client Console](../../installation/using/installing-the-client-console.md)
-* [Åtkomst till programvarudistribution i Adobe](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html)
+* [Åtkomst till programvarudistribution i Adobe](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=sv-SE)
 * [Ladda ned Campaign Classic build](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html)

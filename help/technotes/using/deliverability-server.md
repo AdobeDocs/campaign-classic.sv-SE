@@ -75,7 +75,7 @@ Som lokal kund måste du även kontrollera att det finns en kampanj **[!UICONTRO
 1. Gå till avsnittet **Produkt och tjänster** och kontrollera att **Adobe Campaign** visas.
 Om du inte kan se **Adobe Campaign** kontaktar du [Adobe kundtjänst](https://helpx.adobe.com/se/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html){_blank} för att få det tillagt.
 1. Klicka på **Adobe Campaign** och välj din organisation.
-   **Varning**: Om du har fler än en organisation måste du välja rätt. Läs mer om organisationer [på den här sidan](https://experienceleague.adobe.com/docs/control-panel/using/faq.html#ims-org-id){_blank}.
+   **Varning**: Om du har fler än en organisation måste du välja rätt. Läs mer om organisationer [på den här sidan](https://experienceleague.adobe.com/docs/control-panel/using/faq.html?lang=sv-SE#ims-org-id){_blank}.
 
 1. Kontrollera att **[!UICONTROL Product profile]** finns. Om inte, skapar du den. Ingen behörighet krävs för denna **[!UICONTROL Product profile]**.
 

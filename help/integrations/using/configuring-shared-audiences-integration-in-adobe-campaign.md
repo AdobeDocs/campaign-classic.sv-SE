@@ -97,7 +97,7 @@ Om du vill att delade målgrupper ska kunna fungera med besökar-ID, måste spå
 
 ## Steg 4: Konfigurera besökar-ID-tjänsten {#step-4--configure-the-visitor-id-service}
 
-Om din besökar-ID-tjänst aldrig har konfigurerats på dina webbegenskaper eller webbplatser kan du läsa följande [dokument](https://experienceleague.adobe.com/docs/id-service/using/implementation/setup-aam-analytics.html) om du vill veta mer om hur du konfigurerar tjänsten eller följande [video](https://helpx.adobe.com/marketing-cloud/how-to/email-marketing.html#step-two).
+Om din besökar-ID-tjänst aldrig har konfigurerats på dina webbegenskaper eller webbplatser kan du läsa följande [dokument](https://experienceleague.adobe.com/docs/id-service/using/implementation/setup-aam-analytics.html?lang=sv-SE) om du vill veta mer om hur du konfigurerar tjänsten eller följande [video](https://helpx.adobe.com/marketing-cloud/how-to/email-marketing.html#step-two).
 
 Synkronisera kundidentifierare med deklarerat ID med funktionen `setCustomerID` i Experience Cloud ID-tjänsten med integreringskoden: `AdobeCampaignID`. `AdobeCampaignID` ska matcha värdet för avstämningsnyckeln som angetts i Source-konfigurationen för mottagardata som konfigurerats i [Steg 2: Konfigurera datakällorna](#step-2--configure-the-data-sources).
 

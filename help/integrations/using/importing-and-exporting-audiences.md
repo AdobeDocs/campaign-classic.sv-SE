@@ -50,7 +50,7 @@ Det tar 24-36 timmar att synkronisera importprocessen när segment importeras di
 >
 >Om du importerar målgrupper från Adobe Analytics till Adobe Campaign måste dessa målgrupper först delas i Audience Manager. Den här processen tar 12-24 timmar, vilket måste läggas till i synkroniseringen av 24-36 timmar med Campaign.
 >
->I det specifika fallet kan tidsramen för målgruppsdelning vara upp till 60 timmar. Mer information om Adobe Analytics målgruppsdelning i Audience Manager finns i [Adobe Analytics-dokumentationen](https://experienceleague.adobe.com/docs/analytics/components/segmentation/segmentation-workflow/seg-publish.html){target="_blank"}.
+>I det specifika fallet kan tidsramen för målgruppsdelning vara upp till 60 timmar. Mer information om Adobe Analytics målgruppsdelning i Audience Manager finns i [Adobe Analytics-dokumentationen](https://experienceleague.adobe.com/docs/analytics/components/segmentation/segmentation-workflow/seg-publish.html?lang=sv-SE){target="_blank"}.
 
 Publiken ersätts helt och hållet varje gång den synkroniseras. Endast segment kan importeras. Detaljerade data som nyckelvärdepar, egenskaper och regler stöds inte.
 
@@ -80,7 +80,7 @@ Du kan exportera en målgrupp från Adobe Campaign till Audience Manager med hj�
 
 Publiken exporteras sedan. Det finns två utgående övergångar för aktiviteten Spara målgrupp. Huvudövergången innehåller de mottagare som exporterades. Den extra övergången innehåller de mottagare som inte kunde mappas med ett besökar-ID eller deklarerat ID.
 
-Synkronisering mellan lösningar tar 24-36 timmar. Efter denna period kan ni hitta er nya målgrupp och återanvända den i andra Adobe Experience Cloud-lösningar. Mer information om hur du använder en delad målgrupp från Adobe Campaign finns i [dokumentationen](https://experienceleague.adobe.com/en/docs/core-services/interface/services/audiences/create){target="_blank"}.
+Synkronisering mellan lösningar tar 24-36 timmar. Efter denna period kan ni hitta er nya målgrupp och återanvända den i andra Adobe Experience Cloud-lösningar. Mer information om hur du använder en delad målgrupp från Adobe Campaign finns i [dokumentationen](https://experienceleague.adobe.com/sv/docs/core-services/interface/services/audiences/create){target="_blank"}.
 
 >[!NOTE]
 >

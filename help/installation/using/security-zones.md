@@ -27,7 +27,7 @@ Operatorer är länkade till en säkerhetszon från sin profil i konsolen, som �
 >
 >Den här proceduren är begränsad till **lokala**-distributioner.
 >
->Om du är en **värdbaserad**-kund och har åtkomst till [Campaign Control Panel](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=sv) kan du använda självbetjäningsgränssnittet i säkerhetszonen. [Läs mer](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/ip-allow-listing-instance-access.html)
+>Om du är en **värdbaserad**-kund och har åtkomst till [Campaign Control Panel](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=sv) kan du använda självbetjäningsgränssnittet i säkerhetszonen. [Läs mer](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/ip-allow-listing-instance-access.html?lang=sv-SE)
 >
 >Andra **hybridkunder/värdkunder** måste kontakta Adobe supportteam för att kunna lägga till IP i tillåtelselista.
 >

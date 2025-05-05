@@ -25,7 +25,7 @@ I det här kapitlet beskrivs serverkonfigurationer som kan utföras för att pas
 
 Dessa procedurer är begränsade till **lokala**/**hybriddistributioner** och kräver administrationsbehörigheter.
 
-För **värdbaserade**-distributioner kan inställningarna på serversidan endast konfigureras av Adobe. Vissa inställningar kan dock ställas in på [Campaign-kontrollpanelen](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/key-features.html?lang=sv), till exempel IP tillåtelselista-hantering eller URL-behörigheter. [Läs mer](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/ip-allow-listing-instance-access.html).
+För **värdbaserade**-distributioner kan inställningarna på serversidan endast konfigureras av Adobe. Vissa inställningar kan dock ställas in på [Campaign-kontrollpanelen](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/key-features.html?lang=sv), till exempel IP tillåtelselista-hantering eller URL-behörigheter. [Läs mer](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/ip-allow-listing-instance-access.html?lang=sv-SE).
 
 Mer information finns i följande avsnitt:
 

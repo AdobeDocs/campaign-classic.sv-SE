@@ -16,7 +16,7 @@ ht-degree: 13%
 
 # Om Adobe ID {#about-adobe-id}
 
-Adobe Identity Management System (IMS) hjälper administratörer att skapa och hantera användarnas åtkomst till program och tjänster. Mer information om de olika typerna av Adobe-ID:n finns på [den här sidan](https://helpx.adobe.com/enterprise/using/identity.html).
+Adobe Identity Management System (IMS) hjälper administratörer att skapa och hantera användarnas åtkomst till program och tjänster. Mer information om de olika typerna av Adobe-ID:n finns på [den här sidan](https://helpx.adobe.com/se/enterprise/using/identity.html).
 
 Kampanjanvändare kan ansluta till Adobe Campaign-konsolen med sin Adobe ID, i stället för den [inbyggda autentiseringen av användare/lösenord](../../platform/using/access-management-operators.md). Implementeringen har följande fördelar:
 
@@ -50,6 +50,6 @@ Kampanjanvändare kan ansluta till Adobe Campaign-konsolen med sin Adobe ID, i s
 
 | Användbara sidor | Ytterligare resurser |
 |---|---|
-| [Konfigurerar IMS](../../integrations/using/configuring-ims.md) | [Vanliga frågor om Experience Cloud](https://experienceleague.adobe.com/docs/core-services/interface/manage-users-and-products/faq.html) |
+| [Konfigurerar IMS](../../integrations/using/configuring-ims.md) | [Vanliga frågor om Experience Cloud](https://experienceleague.adobe.com/docs/core-services/interface/manage-users-and-products/faq.html?lang=sv-SE) |
 | [Implementera IMS](../../integrations/using/implementing-ims.md) | [Åtkomsthantering](../../platform/using/access-management.md) |
 | [IMS-felsökning](../../integrations/using/ims-troubleshooting.md) | [Installerar kampanjpaket](../../installation/using/installing-campaign-standard-packages.md) |

@@ -32,4 +32,4 @@ Du måste ha följande element:
 * En Adobe Experience Manager **publishing**-instans.
 * En Adobe Campaign-instans.
 
-Mer information finns i [Adobe Experience Manager-dokumentationen](https://experienceleague.adobe.com/docs/experience-manager-65/classic-ui/campaign/classic-personalization-ac-campaign.html)
+Mer information finns i [Adobe Experience Manager-dokumentationen](https://experienceleague.adobe.com/docs/experience-manager-65/classic-ui/campaign/classic-personalization-ac-campaign.html?lang=sv-SE)

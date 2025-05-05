@@ -909,7 +909,7 @@ Läs mer om [Tjänster](../../delivery/using/about-services-and-subscriptions.md
 
 På Kontrollpanelen kan du interagera med alla SFTP-servrar som är anslutna till Campaign-instanser som du har tillgång till. Med kontrollpanelen kan du utföra åtgärder på dina SFTP-servrar, till exempel övervaka lagringskapaciteten, hantera IP-adresser, tillåta listor och hantera offentliga SSH-nycklar.
 
-Läs mer om [SFTP-hantering](https://experienceleague.adobe.com/docs/control-panel/using/sftp-management/about-sftp-management.html).
+Läs mer om [SFTP-hantering](https://experienceleague.adobe.com/docs/control-panel/using/sftp-management/about-sftp-management.html?lang=sv-SE).
 +++
 
 +++**Prenumerationstjänstaktivitet**

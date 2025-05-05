@@ -30,7 +30,7 @@ Följ de här stegen för att skapa ett tekniskt OAuth-konto för nya integrerin
 
 1. Gå till Adobe Developer-konsolen och logga in som **systemadministratör** för din organisation.
 
-   Mer information om administratörsroller finns på [sidan](https://helpx.adobe.com/enterprise/using/admin-roles.html).
+   Mer information om administratörsroller finns på [sidan](https://helpx.adobe.com/se/enterprise/using/admin-roles.html).
 
 1. Klicka på **[!UICONTROL Create a new project]**.
 
@@ -48,7 +48,7 @@ Följ de här stegen för att skapa ett tekniskt OAuth-konto för nya integrerin
 
 1. Välj länken **[!UICONTROL Product profile]** till ditt projekt.
 
-   Du kan skapa en ny vid behov. [Läs mer](https://helpx.adobe.com/enterprise/using/manage-product-profiles.html)
+   Du kan skapa en ny vid behov. [Läs mer](https://helpx.adobe.com/se/enterprise/using/manage-product-profiles.html)
 
 1. Klicka sedan på **[!UICONTROL Save Configured API]**.
 

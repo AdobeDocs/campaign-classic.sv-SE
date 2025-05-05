@@ -17,7 +17,7 @@ ht-degree: 0%
 
 # Dela resurser med Adobe Experience Cloud{#sharing-assets-with-adobe-experience-cloud}
 
-[Experience Cloud Assets](https://experienceleague.adobe.com/en/docs/core-services/interface/services/audiences/overview){target="_blank"} är ett enda centraliserat arkiv med marknadsföringsresurser som du kan dela mellan olika lösningar. En resurs är ett digitalt dokument, en bild, en video eller en ljudfil.
+[Experience Cloud Assets](https://experienceleague.adobe.com/sv/docs/core-services/interface/services/audiences/overview){target="_blank"} är ett enda centraliserat arkiv med marknadsföringsresurser som du kan dela mellan olika lösningar. En resurs är ett digitalt dokument, en bild, en video eller en ljudfil.
 
 Tillgångstjänster omfattar:
 
@@ -26,7 +26,7 @@ Tillgångstjänster omfattar:
 
 När du redigerar en e-postleverans eller en landningssida i Adobe Campaign kan du placera resurser från dina Adobe Experience Cloud-bibliotek. Beroende på vilka lösningar du använder kan dessa resurser lagras i Assets eller Adobe Experience Manager Assets.
 
-De olika tillgängliga biblioteken beskrivs i [det här dokumentet](https://experienceleague.adobe.com/en/docs/core-services/interface/services/assets/experience-cloud-assets){target="_blank"}.
+De olika tillgängliga biblioteken beskrivs i [det här dokumentet](https://experienceleague.adobe.com/sv/docs/core-services/interface/services/assets/experience-cloud-assets){target="_blank"}.
 
 Gå till avsnittet [Konfigurera åtkomst till Assets](../../integrations/using/configuring-access-to-assets.md) om du vill veta mer om de specifika länkarna till varje bibliotek.
 

@@ -410,7 +410,7 @@ Konfigurera parametrarna för den associerade anslutningspoolen i noden **dataSt
   </tr> 
   <tr> 
    <td> maxCnx<br /> </td> 
-   <td> Maximalt antal tillåtna anslutningar innan en ny anslutning nekas. Se denna <a href="https://helpx.adobe.com/campaign/kb/how-to-increase-the-maximum-number-of-database-connections-from-.html">technote</a>.<br /> </td> 
+   <td> Maximalt antal tillåtna anslutningar innan en ny anslutning nekas. Se denna <a href="https://helpx.adobe.com/se/campaign/kb/how-to-increase-the-maximum-number-of-database-connections-from-.html">technote</a>.<br /> </td> 
    <td> Kort<br /> </td> 
   </tr> 
   <tr> 
