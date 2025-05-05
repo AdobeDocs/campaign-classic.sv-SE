@@ -204,7 +204,7 @@ Använd följande steg:
 
    Med det här kommandot kan du även se version och versionsnummer för den Adobe Campaign-server som är installerad på datorn.
 
-1. Testa webbmodulen **** nlserver med URL:en: https://console.campaign.net/nl/jsp/logon.jsp
+1. Testa webbmodulen **&#x200B;**&#x200B;nlserver med URL:en: https://console.campaign.net/nl/jsp/logon.jsp
 
    Den här URL:en ger dig åtkomst till hämtningssidan för klientinstallationsprogrammet.
 

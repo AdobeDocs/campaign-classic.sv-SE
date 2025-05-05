@@ -168,7 +168,7 @@ Om du på klientkonsolen ser att det finns oväntade tidsfördröjningar (en ell
 
    Olika problem har identifierats vid användning av Oracle Instant Client-versionen. Dessutom är det omöjligt att ändra tidszonsfilen på direktklienten.
 
-1. Kontrollera att klientversionen och databasserverversionen **är desamma****.******
+1. Kontrollera att klientversionen och databasserverversionen **är desamma**&#x200B;**.**&#x200B;**&#x200B;**
 
    Att blanda versioner trots Oraclets kompatibilitetsmatris och rekommendation att justera klient- och serverversioner är känt för att orsaka problem.
 

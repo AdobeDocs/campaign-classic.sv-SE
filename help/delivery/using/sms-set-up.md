@@ -31,7 +31,7 @@ För att skicka till en mobiltelefon behöver du:
 
 >[!IMPORTANT]
 >
->Om du använder samma konto och lösenord för flera externa SMS-konton kan det leda till konflikter och överlappning mellan kontona. Se sidan](troubleshooting-sms.md#external-account-conflict) för felsökning av [SMS.
+>Om du använder samma konto och lösenord för flera externa SMS-konton kan det leda till konflikter och överlappning mellan kontona. Se sidan[&#128279;](troubleshooting-sms.md#external-account-conflict) för felsökning av SMS.
 
 För att skicka ett SMS till en mobiltelefon måste du först skapa ditt externa SMPP-konto.
 Mer information om SMS-protokoll och inställningar finns på den här [sidan](sms-protocol.md).

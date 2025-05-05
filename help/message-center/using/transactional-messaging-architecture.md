@@ -86,7 +86,7 @@ Om du har påbörjat ett transaktionsmeddelandeprojekt i e-postkanalen och sedan
 >Den här proceduren gäller endast kunder som använder en Windows NLServer som är installerad på samma dator som de arbetar på.
 
 1. Installera den kanal du behöver, till exempel **mobilkanalen**, med hjälp av paketimportassistenten (**[!UICONTROL Tools > Advanced > Import package... > Adobe Campaign Package]**).
-1. Utför en filimport (**[!UICONTROL Tools > Advanced > Import package... > File]**) och markera filen **dataItems **`[Your language]`**packagemessageCenter.xml**.
+1. Utför en filimport (**[!UICONTROL Tools > Advanced > Import package... > File]**) och markera filen **dataItems &#x200B;**`[Your language]`**packagemessageCenter.xml**.
 1. I **[!UICONTROL XML content of the data to import]** sparar du bara den leveransmall som motsvarar den tillagda kanalen. Om du till exempel har lagt till **mobilkanalen** ska du bara behålla elementet **entities** som motsvarar **[!UICONTROL Mobile transactional message]** (smsTriggerMessage). Om du har lagt till **Mobile App Channel** ska du bara behålla **iOS-transaktionsmeddelandet** (iosTriggerMessage) och **Android-transaktionsmeddelandet** (androidTriggerMessage).
 
    ![](assets/messagecenter_install_channel.png)

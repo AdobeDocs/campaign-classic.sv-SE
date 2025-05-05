@@ -20,7 +20,7 @@ Leveranser kan skapas via kampanjkontrollpanelen, ett kampanjarbetsflöde eller 
 
 När leveranser skapas från en kampanj länkas de till den här kampanjen och konsolideras på kampanjnivå.
 
-![](assets/do-not-localize/how-to-video.png)[Upptäck den här funktionen i videon](#create-email-video)
+![](assets/do-not-localize/how-to-video.png) [Upptäck den här funktionen i videon](#create-email-video)
 
 ## Skapa leveranser {#creating-deliveries}
 

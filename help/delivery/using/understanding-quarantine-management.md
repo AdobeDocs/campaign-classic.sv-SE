@@ -73,7 +73,7 @@ Följande information finns för varje adress:
 >
 >Slut på år 1: (1&#42;0.33)/(1+0.5)=22 %.
 >
-Slut på år 2: ((1.22&#42;0.33)+0.33)/(1.5+0.75)=32,5 %.
+>Slut på år 2: ((1.22&#42;0.33)+0.33)/(1.5+0.75)=32,5 %.
 
 ### Identifiera adresser i karantän i leveransrapporter {#identifying-quarantined-addresses-in-delivery-reports}
 
@@ -108,7 +108,7 @@ Om en användare kvalificerar ett e-postmeddelande som en skräppost ([feedbacks
 
 >[!NOTE]
 >
-Karantänen i Adobe Campaign är skiftlägeskänslig.    Se till att importera e-postadresser med små bokstäver så att inte e-postadresserna fortsätter att ta emot meddelanden.
+>Karantänen i Adobe Campaign är skiftlägeskänslig.    Se till att importera e-postadresser med små bokstäver så att inte e-postadresserna fortsätter att ta emot meddelanden.
 
 I listan över adresser i karantän (se [Identifiera adresser i karantän för hela plattformen](#identifying-quarantined-addresses-for-the-entire-platform)) visar fältet **[!UICONTROL Error reason]** varför den valda adressen placerades i karantän.
 
@@ -144,7 +144,7 @@ Deras status ändras sedan till **[!UICONTROL Valid]**.
 
 >[!IMPORTANT]
 >
-Mottagare med en adress i en **[!UICONTROL Quarantine]**- eller **[!UICONTROL Denylisted]**-status tas aldrig bort, även om de får ett e-postmeddelande.
+>Mottagare med en adress i en **[!UICONTROL Quarantine]**- eller **[!UICONTROL Denylisted]**-status tas aldrig bort, även om de får ett e-postmeddelande.
 
 ### Manuella uppdateringar {#unquarantine-manual}
 
@@ -291,13 +291,13 @@ Under leveransanalysen läggs alla enheter som är undantagna från målet autom
 
 >[!NOTE]
 >
-Här är olika typer av fel för kunder som använder Baidu-kontakten:
+>Här är olika typer av fel för kunder som använder Baidu-kontakten:
 >
-* Anslutningsproblem i början av leveransen: feltyp **[!UICONTROL Undefined]**, felorsak **[!UICONTROL Unreachable]**, nytt försök utförs.
-* Anslutningen bröts under en leverans: mjukt fel, felorsak **[!UICONTROL Refused]**, nytt försök utförs.
-* Synkront fel returnerades av Baidu under sändning: hårt fel, felorsak **[!UICONTROL Refused]**, inga nya försök utförs.
+>* Anslutningsproblem i början av leveransen: feltyp **[!UICONTROL Undefined]**, felorsak **[!UICONTROL Unreachable]**, nytt försök utförs.
+>* Anslutningen bröts under en leverans: mjukt fel, felorsak **[!UICONTROL Refused]**, nytt försök utförs.
+>* Synkront fel returnerades av Baidu under sändning: hårt fel, felorsak **[!UICONTROL Refused]**, inga nya försök utförs.
 >
-Adobe Campaign kontaktar Baidu-servern var 10:e minut för att hämta det skickade meddelandets status och uppdaterar sändningarna. Om ett meddelande deklareras som skickat anges meddelandets status i utsändningsloggarna till **[!UICONTROL Received]**. Om Baidu deklarerar ett fel anges statusen till **[!UICONTROL Failed]**.
+>Adobe Campaign kontaktar Baidu-servern var 10:e minut för att hämta det skickade meddelandets status och uppdaterar sändningarna. Om ett meddelande deklareras som skickat anges meddelandets status i utsändningsloggarna till **[!UICONTROL Received]**. Om Baidu deklarerar ett fel anges statusen till **[!UICONTROL Failed]**.
 
 **För Android V2**
 
@@ -516,7 +516,7 @@ Karantänmekanismen för SMS-meddelanden är globalt densamma som den allmänna 
 
 >[!NOTE]
 >
-Tabellen **[!UICONTROL Delivery log qualification]** gäller inte för den allmänna SMPP **-anslutningen** Extended.
+>Tabellen **[!UICONTROL Delivery log qualification]** gäller inte för den allmänna SMPP **-anslutningen** Extended.
 
 <table> 
  <tbody> 
@@ -575,9 +575,9 @@ Innan en ny typ av fel kvalificeras är felorsaken alltid inställd på **Refuse
 
 >[!NOTE]
 >
-Feltyperna och orsakerna till felet är desamma som för e-postmeddelanden. Se [Leveransfeltyper och orsaker](understanding-delivery-failures.md#delivery-failure-types-and-reasons).
+>Feltyperna och orsakerna till felet är desamma som för e-postmeddelanden. Se [Leveransfeltyper och orsaker](understanding-delivery-failures.md#delivery-failure-types-and-reasons).
 >
-Be leverantören om en lista över status- och felkoder för att ange korrekta feltyper och orsaker till felet i tabellen för leveransloggens kvalificeringsregister.
+>Be leverantören om en lista över status- och felkoder för att ange korrekta feltyper och orsaker till felet i tabellen för leveransloggens kvalificeringsregister.
 
 Exempel på ett genererat meddelande:
 

@@ -179,9 +179,9 @@ För att konfigurera det måste du först välja villkor:
 
    Beroende på vilken Campaign-version du har finns mer information i följande avsnitt:
 
-   ![](assets/do-not-localize/v7.jpeg)[Kampanjdokumentation v7](../../installation/using/about-fda.md)
+   ![](assets/do-not-localize/v7.jpeg) [Kampanjdokumentation v7](../../installation/using/about-fda.md)
 
-   ![](assets/do-not-localize/v8.png)[Kampanjdokumentation v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/connect/fda.html)
+   ![](assets/do-not-localize/v8.png) [Kampanjdokumentation v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/connect/fda.html)
 
 Sedan måste vi lägga till nya delmängder:
 

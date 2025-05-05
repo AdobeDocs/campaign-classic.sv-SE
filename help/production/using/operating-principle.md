@@ -33,7 +33,7 @@ Moduladministration utförs med kommandoradsverktyget **nlserver** som är insta
 
 Den allmänna syntaxen för verktyget **nlserver** är följande:
 
-**nlserver `<command>``<command arguments>`**
+**nlserver `<command>` `<command arguments>`**
 
 Använd kommandot **nlserver** om du vill se en lista över tillgängliga moduler.
 

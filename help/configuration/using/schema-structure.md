@@ -448,7 +448,7 @@ Elementen anges med sitt namn och attributen anges med namnet före tecknet&quot
 
 Det går också att definiera komplexa uttryck, till exempel följande aritmetiska operationer:
 
-* **@gender+1**: lägger till 1 till innehållet i könsattributet ****,
+* **@gender+1**: lägger till 1 till innehållet i könsattributet **&#x200B;**,
 * **@email + &#39;(&#39;+@created+&#39;)&#39;**: konstruerar en sträng genom att ta värdet för e-postadressen som läggs till i skapandedatumet mellan parenteser (för strängtypen sätter du konstanten inom citattecken).
 
 Högnivåfunktioner har lagts till i uttrycken för att berika potentialen i detta språk.

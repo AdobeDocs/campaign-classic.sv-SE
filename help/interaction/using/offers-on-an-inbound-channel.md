@@ -405,6 +405,6 @@ Gör så här om du vill konfigurera de här erbjudandeutrymmena HTML på webbpl
 
 När du öppnar webbsidan kan du med skriptet anropa interaktionsmotorn för att visa innehållet i erbjudandena i de relevanta utrymmena på webbsidan. I ett enda anrop till Adobe Campaign-servern avgör motorn miljön, erbjudandeutrymmet och de kategorier som ska väljas.
 
-I det här exemplet känner motorn igen den identifierade miljön (**EnvNeobankIdRecip**). Det identifierar erbjudandeutrymmet (**OSWebBestOfferIdentified**) och kategorin **Best Offer** (**CatBestOffer**) för det första och andra erbjudandeutrymmet på webbsidan, samt erbjudandeutrymmet (**OSWebPartnerIdentified**) och kategorin **Partner** (**** CatPartner) för det tredje erbjudandeutrymmet på webbplatsen.
+I det här exemplet känner motorn igen den identifierade miljön (**EnvNeobankIdRecip**). Det identifierar erbjudandeutrymmet (**OSWebBestOfferIdentified**) och kategorin **Best Offer** (**CatBestOffer**) för det första och andra erbjudandeutrymmet på webbsidan, samt erbjudandeutrymmet (**OSWebPartnerIdentified**) och kategorin **Partner** (**&#x200B;** CatPartner) för det tredje erbjudandeutrymmet på webbplatsen.
 
 Om motorn inte kan identifiera mottagaren växlar den till de anonyma erbjudandeutrymmena som refereras i de identifierade erbjudandeutrymmena och till de anonyma kategorierna (**CatPartner** och **CatPartnerAnonym**) som anges i skriptet.

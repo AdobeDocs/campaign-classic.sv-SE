@@ -383,7 +383,7 @@ I en leverans kan du använda bilder som lagras i resursbiblioteket eller någon
 
   Det här värdet kan åsidosättas för varje leverans.
 
-* För offentliga resurser anges URL:en **https://** server **/res/** instance ****där **instance**är namnet på spårningsinstansen.
+* För offentliga resurser anges URL:en **https://** server **/res/** instance **&#x200B;**&#x200B;där **instance**&#x200B;är namnet på spårningsinstansen.
 
 ### Avbildningsidentifiering {#delivery-image-detection}
 

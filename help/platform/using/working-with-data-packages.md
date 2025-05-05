@@ -442,6 +442,7 @@ Uppdateringspaketet ska bara innehålla en specifik entitet för att vara enkelt
    * Ett externt konto skapas.
    * Det nya paketet är: 5101 - 2 - externt konto för sociala program (socialApplication_extAccount).
    * Parallellt uppdateras 101-paketet för att läggas till det externa kontot, men det distribueras inte.
+
      ![](assets/ncs_datapackage_best-practices-1.png)
 
 #### Paketdokumentation {#package-documentation}

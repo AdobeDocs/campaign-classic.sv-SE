@@ -23,7 +23,7 @@ I det här avsnittet visas vanliga kommandon i Adobe Campaign.
 
 Kommandot **nlserver** är indatakommandot för hela Adobe Campaign-programmet.
 
-Det här kommandot har följande syntax: **nlserver **`<command>`****`<arguments>`****
+Det här kommandot har följande syntax: **nlserver &#x200B;**`<command>`**&#x200B;**`<arguments>`**&#x200B;**
 
 Parametern **`<command>`** motsvarar modulen.
 

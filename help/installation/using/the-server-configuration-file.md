@@ -1625,9 +1625,9 @@ Här är de olika parametrarna för noden **mta**. Detta är konfigurationen fö
    <td> statServerAddress<br /> </td> 
    <td> Adress till servern för leveransstatistik, angiven som 
     &lt;dns eller ip&gt; 
-      <code>[</code>: 
+      <code>&lbrack;</code>: 
      &lt;port&gt; 
-       <code>]</code>. Se 
+       <code>&rbrack;</code>. Se 
       <a href="../../installation/using/email-deliverability.md#coordinates-of-the-statistics-server" target="_blank">Koordinater för statistikservern</a>. 
       <br /> 
      </td> 

@@ -50,7 +50,7 @@ För att skapa en ny instans, följ stegen nedan:
 
 1. Klicka **[!UICONTROL Ok]** för att bekräfta inställningarna: du kan nu börja med processen för att skapa instanser.
 1. I fönstret **[!UICONTROL Connection settings]** anger du den interna **inloggningen** och lösenordet för att ansluta till Adobe Campaign-programservern. När du är ansluten öppnar du assistenten för att skapa instanser för att deklarera en ny instans
-1. I fältet **[!UICONTROL Name]** anger du instansnamnet ****. Eftersom det här namnet används för att generera en konfigurationsfil **config-`<instance>`.xml** och används i kommandoradsparametrarna för att identifiera instansen, se till att du väljer ett kort namn utan specialtecken. Till exempel: **e-marknadsföring**.
+1. I fältet **[!UICONTROL Name]** anger du instansnamnet **&#x200B;**. Eftersom det här namnet används för att generera en konfigurationsfil **config-`<instance>`.xml** och används i kommandoradsparametrarna för att identifiera instansen, se till att du väljer ett kort namn utan specialtecken. Till exempel: **e-marknadsföring**.
 
    ![](assets/s_ncs_install_create_instance.png)
 

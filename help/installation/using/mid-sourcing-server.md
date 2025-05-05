@@ -125,7 +125,7 @@ Det är möjligt att dela en instans med mellanleverantörer genom att skicka in
 
    ![](assets/mid_recette_user_restrictions.png)
 
-1. Starta om webbmodulen med följande kommando: ** web**.
+1. Starta om webbmodulen med följande kommando: **&#x200B; web**.
 
 Du måste ändra serverinställningen för mellanlagring i filen serverConf.xml. Följande rad måste läggas till i avsnittet &quot;Hantering av tillhörigheter med IP-adresser&quot;, under den befintliga raden:
 
@@ -139,9 +139,9 @@ Attributet &#39;@name&#39; måste följa följande regler:
 
 &#39;marketing_account_operator_name&#39; relaterar till det interna namnet på mittkällkontot som deklarerats i mittkällinstansen.
 
-&#39;affinity_name&#39; relaterar till det godtyckliga namn som ges till tillhörigheten. Namnet måste vara unikt. Godkända tecken är `[a-z]``[A-Z]``[0-9]`. Syftet är att deklarera en grupp offentliga IP-adresser.
+&#39;affinity_name&#39; relaterar till det godtyckliga namn som ges till tillhörigheten. Namnet måste vara unikt. Godkända tecken är `[a-z]` `[A-Z]` `[0-9]`. Syftet är att deklarera en grupp offentliga IP-adresser.
 
-&#39;affinity_group&#39; relaterar den subaffinitet som deklarerats i målmappningen som används i var och en av leveranserna. Den sista delen som innehåller &quot;.&quot; ignoreras om det inte finns någon undertillhörighet. Godkända tecken är `[a-z]``[A-Z]``[0-9]`.
+&#39;affinity_group&#39; relaterar den subaffinitet som deklarerats i målmappningen som används i var och en av leveranserna. Den sista delen som innehåller &quot;.&quot; ignoreras om det inte finns någon undertillhörighet. Godkända tecken är `[a-z]` `[A-Z]` `[0-9]`.
 
 Du måste stoppa och sedan starta om servern för att ändringen ska kunna beaktas.
 

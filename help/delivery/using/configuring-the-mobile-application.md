@@ -58,7 +58,7 @@ iOS-anslutningsappen är nu konfigurerad. Du kan börja skapa din tjänst.
 
    >[!NOTE]
    >
-   >Standardmålmappningen **[!UICONTROL Subscriber applications (nms:appSubscriptionRcp)]** är länkad till mottagartabellen. Om du vill använda en annan målmappning måste du skapa en ny målmappning och ange den i fältet för **[!UICONTROL Target mapping]** tjänsten. Mer information om hur du skapar målmappning finns i konfigurationsguiden[](../../configuration/using/about-custom-recipient-table.md).
+   >Standardmålmappningen **[!UICONTROL Subscriber applications (nms:appSubscriptionRcp)]** är länkad till mottagartabellen. Om du vill använda en annan målmappning måste du skapa en ny målmappning och ange den i fältet för **[!UICONTROL Target mapping]** tjänsten. Mer information om hur du skapar målmappning finns i konfigurationsguiden[&#128279;](../../configuration/using/about-custom-recipient-table.md).
 
    ![](assets/nmac_ios.png)
 
@@ -109,7 +109,7 @@ I följande exempel lägger vi till **mediaURl** och **mediaExt** för att skapa
 
    Det finns två lägen:
 
-   * (Rekommenderas) **[!UICONTROL Token-based authentication]**: Fyll i APNs anslutningsinställningar **[!UICONTROL Key Id]****[!UICONTROL Team Id]** och **[!UICONTROL Bundle Id]** välj sedan ditt p8-certifikat genom att klicka på **[!UICONTROL Enter the private key...]**. Mer information **[!UICONTROL Token-based authentication]** finns i [Apples dokumentation](https://developer.apple.com/documentation/usernotifications/setting_up_a_remote_notification_server/establishing_a_token-based_connection_to_apns){target="_blank"}.
+   * (Rekommenderas) **[!UICONTROL Token-based authentication]**: Fyll i APNs anslutningsinställningar **[!UICONTROL Key Id]**&#x200B;**[!UICONTROL Team Id]** och **[!UICONTROL Bundle Id]** välj sedan ditt p8-certifikat genom att klicka på **[!UICONTROL Enter the private key...]**. Mer information **[!UICONTROL Token-based authentication]** finns i [Apples dokumentation](https://developer.apple.com/documentation/usernotifications/setting_up_a_remote_notification_server/establishing_a_token-based_connection_to_apns){target="_blank"}.
 
    * **[!UICONTROL Certificate-based authentication]**: Klicka och **[!UICONTROL Enter the certificate...]**  välj sedan din p12-nyckel och ange lösenordet som tillhandahölls av mobilapplikationsutvecklaren.
 

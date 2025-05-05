@@ -134,7 +134,7 @@ Stegen för installation av den första servern är:
 
      Mer information finns i [Skapa en instans](../../installation/using/command-lines.md#creating-an-instance).
 
-1. Redigera filen **config-demo.xml** (skapad via föregående kommando och placerad intill filen **config-default.xml**), kontrollera att filen **mta** (leverans), **wfserver** (arbetsflöde), **inMail** (återbundna e-postmeddelanden) och **stat** (2}) statistik) aktiveras och därefter konfigureras adressen för **app** -statistikservern:
+1. Redigera filen **config-demo.xml** (skapad via föregående kommando och placerad intill filen **config-default.xml**), kontrollera att filen **mta** (leverans), **wfserver** (arbetsflöde), **inMail** (återbundna e-postmeddelanden) och **stat** (2&rbrace;) statistik) aktiveras och därefter konfigureras adressen för **app** -statistikservern:
 
    ```xml
    <?xml version='1.0'?>
@@ -212,7 +212,7 @@ Använd följande steg:
    nlserver config -setdblogin:PostgreSQL:campaign:demo@dbsrv -instance:demo
    ```
 
-1. Redigera filen **config-demo.xml** (skapad via föregående kommando och placerad intill filen **config-default.xml**), kontrollera att filen **mta** (leverans), **wfserver** (arbetsflöde), **inMail** (återbundna e-postmeddelanden) och **stat** (2}) statistik) aktiveras och därefter konfigureras adressen för **app** -statistikservern:
+1. Redigera filen **config-demo.xml** (skapad via föregående kommando och placerad intill filen **config-default.xml**), kontrollera att filen **mta** (leverans), **wfserver** (arbetsflöde), **inMail** (återbundna e-postmeddelanden) och **stat** (2&rbrace;) statistik) aktiveras och därefter konfigureras adressen för **app** -statistikservern:
 
    ```xml
    <?xml version='1.0'?>

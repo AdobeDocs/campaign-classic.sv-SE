@@ -154,7 +154,7 @@ Minska antalet dubbletter när ett nytt försök görs:
 
 Om det `DELIVER_SM PDU` inte bekräftas bör du kontrollera följande:
 
-* Kontrollera regex som rör extrahering av id och felbearbetning i det externa kontot ****. Du kan behöva validera dem mot innehållet `DELIVER_SM PDU`i .
+* Kontrollera regex som rör extrahering av id och felbearbetning i det externa kontot **&#x200B;**. Du kan behöva validera dem mot innehållet `DELIVER_SM PDU`i .
 
 * Kontrollera att felen är korrekt etablerade i tabellen `broadLogMsg` .
 

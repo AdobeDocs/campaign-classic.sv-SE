@@ -21,9 +21,9 @@ De arbetsflöden som beskrivs nedan installeras som standard med tillägget **Me
 
 Beroende på vilken Campaign-version du har finns mer information i följande avsnitt:
 
-![](assets/do-not-localize/v7.jpeg)[Kampanjdokumentation v7](../../message-center/using/about-transactional-messaging.md)
+![](assets/do-not-localize/v7.jpeg) [Kampanjdokumentation v7](../../message-center/using/about-transactional-messaging.md)
 
-![](assets/do-not-localize/v8.png)[Kampanjdokumentation v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/transactional.html)
+![](assets/do-not-localize/v8.png) [Kampanjdokumentation v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/transactional.html)
 
 <table> 
  <tbody> 
