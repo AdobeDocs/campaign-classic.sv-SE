@@ -6,10 +6,10 @@ feature: Release Notes
 role: User
 level: Beginner
 exl-id: d65869ca-a785-4327-8e8d-791c28e4696c
-source-git-commit: 458821770c6233ec1893d4efe60169516b311bdd
+source-git-commit: be7412f2ccf050a44eb32ebe8280c695349faac8
 workflow-type: tm+mt
-source-wordcount: '865'
-ht-degree: 26%
+source-wordcount: '903'
+ht-degree: 25%
 
 ---
 
@@ -17,7 +17,20 @@ ht-degree: 26%
 
 Den här sidan listar nya funktioner, förbättringar och korrigeringar som kommer med den **senaste versionen av Campaign Classic v7**. Varje ny version kommer med en status som visas med en färg. Läs mer om versionsstatusen för Campaign Classic v7 på [den här sidan](rn-overview.md).
 
-## Version 7.4.2 – build 9390 {#release-7-4-2}
+## Version 7.4.2  {#release-7-4-2}
+
+### Bygge 9391 {#build-9391}
+
+[!BADGE Begränsad tillgänglighet]{type=Informative url="https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/rn-overview.html?lang=sv#rn-statuses" tooltip="Begränsad tillgänglighet"}
+
+_12 maj 2025_
+
+Den här versionen innehåller följande korrigeringar:
+
+* Ett efteruppgraderingsfel som påträffades i icke-Oracle-inställningar har korrigerats. (NEO-87012)
+* Korrigerade ett TLS/HTTPS-serverdelsproblem som påverkade både klientkonsolen och servern. (NEO-87432)
+
+### Bygge 9390 {#build-9390}
 
 [!BADGE Allmän tillgänglighet]{type=Positive url="https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/rn-overview.html?lang=sv#rn-statuses" tooltip="Allmän tillgänglighet"}
 
@@ -33,13 +46,13 @@ This release comes with the following compatibility updates:
 
 -->
 
-### Säkerhetsförbättringar {#security-7-4-2}
+**Säkerhetsförbättringar**
 
 Den här versionen innehåller flera säkerhetskorrigeringar.
 
 Anslutningen till lösningar och appar från Adobe via det externa **[!UICONTROL Adobe Experience Cloud]**-kontot har uppdaterats för att stärka säkerheten.
 
-### Viktiga korrigeringar {#release-7-4-2-fixes}
+**Huvudkorrigeringar**
 
 Den här versionen kommer med följande huvudkorrigeringar:
 
@@ -58,7 +71,7 @@ Den här versionen kommer med följande huvudkorrigeringar:
 * MTA (Mail Transfer Agent) – korrigerade ett överblivet MTA-underordnat element som ska ha statusen **[!UICONTROL Start pending]**.
 
 
-### Andra korrigeringar {#release-7-4-2-other-fixes}
+**Andra korrigeringar**
 
 Följande problem har också korrigerats i den här versionen:
 
