@@ -3,7 +3,8 @@ product: campaign
 title: Nya GCM-baserade funktioner
 description: Nya GCM-baserade funktioner
 feature: Technote
-source-git-commit: b8a6a0db27826309456c285c08d4f1d85de70283
+exl-id: 154dee7a-a1e9-40a2-bfa5-3641382d0574
+source-git-commit: b6d64f66d287dba79be5eddec48ee852c2c7740c
 workflow-type: tm+mt
 source-wordcount: '578'
 ht-degree: 0%
@@ -37,7 +38,7 @@ Krypterar teckensträngen med instansnyckeln med AES-algoritmen med GCM-läget.
 
 ```
             String 
-            encrypted = Encrypt (
+            encrypted = EncryptString (
             String       
             decrypted
             
@@ -85,7 +86,7 @@ Krypterar teckensträngen med servernyckeln med hjälp av AES-algoritmen med GCM
 Krypterar en teckensträng med nyckeln för instansen eller någon annan nyckel.
 
 ```
-            cryptString (str [, key
+            encryptString (str [, key
       ] [, useSalt ])
          
 ```
@@ -126,7 +127,7 @@ Finns i:
 
 ### decryptString() {#decryptString-javascript}
 
-Krypterar en teckensträng med nyckeln för instansen eller någon annan nyckel. Den här gamla funktionen kan användas med GCM. Den används inte för dekryptering av chiffertext som krypteras i AES-CBC-läge.
+Dekrypterar en teckensträng med instansnyckeln eller någon annan tangent. Den här gamla funktionen kan användas med GCM. Den används inte för dekryptering av chiffertext som krypteras i AES-CBC-läge.
 
 ```
             decryptString (str [, key
