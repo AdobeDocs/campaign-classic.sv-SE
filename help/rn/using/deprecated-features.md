@@ -7,9 +7,9 @@ role: User
 level: Beginner
 exl-id: d60d67de-6618-4f3b-be4a-ad7633ab5645
 source-git-commit: 84e6b2fad97f0ca5d6621cff4648e0be0bef7521
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1652'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -46,7 +46,7 @@ Kunder uppmanas att se över om de använder funktionen i den aktuella driftsät
   <tr>
  <td>Campaign (Neolane) – äldre SDK</td>
  <td><p>SDK:et för mobilprogram i Campaign (Neolane) är nu föråldrat. Du kan istället använda mobil-SDK:et i Adobe Experience Platform genom att konfigurera Adobe Campaign-tillägget i användargränssnittet för datainsamling. Mobil-SDK:et i Adobe Experience Platform hjälper dig att driva lösningar och tjänster från Adobe Experience Cloud i dina mobilappar. Konfigurationen av SDK:er hanteras via användargränssnittet för datainsamling för flexibel konfiguration och utbyggbara, regelbaserade integreringar. Läs om hur du konfigurerar mobilappskanalen i <a href="https://experienceleague.adobe.com/sv/docs/campaign/campaign-v8/send/push/push-settings">dokumentationen om Campaign v8</a>.</p>
-<p>Måldatum: 31 juli 2025 </p>
+<p>Måldatum för borttagning: 31 juli 2025 </p>
 </td>
 </tr>
 <tr>
@@ -83,7 +83,7 @@ I det här avsnittet visas funktioner som har tagits bort från Campaign Classic
     <tr>
   <td>Övervakningsrapport om teknisk levererbarhet<br></td>
    <td><p>Övervakningsrapporten för teknisk levererbarhet är inte längre tillgänglig. Den hade tagits bort i Campaign 21.1.3-versionen.</p>
-   <!--p>If needed, you can receive this report daily by email until the feature removal date. To request it, open a specific <a href="https://helpx.adobe.com/se/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html">Support Case</a> and specify the name of the instance and the email address(es) to send the report to.</p--> 
+   <!--p>If needed, you can receive this report daily by email until the feature removal date. To request it, open a specific <a href="https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html">Support Case</a> and specify the name of the instance and the email address(es) to send the report to.</p--> 
   </td>
  </tr>
   <tr>
@@ -137,7 +137,7 @@ I det här avsnittet visas funktioner som har tagits bort från Campaign Classic
   <tr> 
    <td>API:et decryptString</td>
    <td><p>Från och med Campaign 18.6 är API:et <em>decryptString</em> av säkerhetsskäl inte längre tillgängligt som standard för nya installationer.</p> 
-   <p>I samband med en efteruppgradering till 18.6 (och senare) är detta API inte längre aktiverat och har ersatts av funktionen <em>decryptPassword</em>. <a href="https://experienceleague.adobe.com/developer/campaign-api/api/f-decryptPassword.html?lang=sv-SE&hl=decrypt">Läs mer</a></p></td>
+   <p>I samband med en efteruppgradering till 18.6 (och senare) är detta API inte längre aktiverat och har ersatts av funktionen <em>decryptPassword</em>. <a href="https://experienceleague.adobe.com/developer/campaign-api/api/f-decryptPassword.html?hl=decrypt">Läs mer</a></p></td>
   </tr> 
    <tr> 
    <td>Mobilkanal – MMS- och WAP-push-meddelanden</td>
