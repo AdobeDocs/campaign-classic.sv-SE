@@ -83,7 +83,7 @@ I det här avsnittet visas funktioner som har tagits bort från Campaign Classic
     <tr>
   <td>Övervakningsrapport om teknisk levererbarhet<br></td>
    <td><p>Övervakningsrapporten för teknisk levererbarhet är inte längre tillgänglig. Den hade tagits bort i Campaign 21.1.3-versionen.</p>
-   <!--p>If needed, you can receive this report daily by email until the feature removal date. To request it, open a specific <a href="https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html">Support Case</a> and specify the name of the instance and the email address(es) to send the report to.</p--> 
+   <!--p>If needed, you can receive this report daily by email until the feature removal date. To request it, open a specific <a href="https://helpx.adobe.com/se/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html">Support Case</a> and specify the name of the instance and the email address(es) to send the report to.</p--> 
   </td>
  </tr>
   <tr>
@@ -137,7 +137,7 @@ I det här avsnittet visas funktioner som har tagits bort från Campaign Classic
   <tr> 
    <td>API:et decryptString</td>
    <td><p>Från och med Campaign 18.6 är API:et <em>decryptString</em> av säkerhetsskäl inte längre tillgängligt som standard för nya installationer.</p> 
-   <p>I samband med en efteruppgradering till 18.6 (och senare) är detta API inte längre aktiverat och har ersatts av funktionen <em>decryptPassword</em>. <a href="https://experienceleague.adobe.com/developer/campaign-api/api/f-decryptPassword.html?hl=decrypt">Läs mer</a></p></td>
+   <p>I samband med en efteruppgradering till 18.6 (och senare) är detta API inte längre aktiverat och har ersatts av funktionen <em>decryptPassword</em>. <a href="https://experienceleague.adobe.com/developer/campaign-api/api/f-decryptPassword.html?lang=sv-SE&hl=decrypt">Läs mer</a></p></td>
   </tr> 
    <tr> 
    <td>Mobilkanal – MMS- och WAP-push-meddelanden</td>
