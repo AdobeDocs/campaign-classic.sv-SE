@@ -25,7 +25,7 @@ Arbetsflöden kan vara ett användbart sätt att automatisera vissa importproces
 
 >[!NOTE]
 >
->Mer information om hur du importerar och exporterar data med arbetsflöden finns i [dokumentationen för Campaign v8](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/audience/add-profiles/import-profiles){target=_blank}.
+>Mer information om hur du importerar och exporterar data med arbetsflöden finns i [dokumentationen för Campaign v8](https://experienceleague.adobe.com/sv/docs/campaign/campaign-v8/audience/add-profiles/import-profiles){target=_blank}.
 
 
 <!--
