@@ -16,4 +16,4 @@ ht-degree: 8%
 
 # God praxis för leverans {#delivery-best-practices}
 
-De effektivaste strategierna för leveransdesign och sändning med Adobe Campaign beskrivs i [Campaign v8-dokumentationen](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/delivery-best-practices){target="_blank"}.
+De effektivaste strategierna för leveransdesign och sändning med Adobe Campaign beskrivs i [Campaign v8-dokumentationen](https://experienceleague.adobe.com/sv/docs/campaign/campaign-v8/send/delivery-best-practices){target="_blank"}.

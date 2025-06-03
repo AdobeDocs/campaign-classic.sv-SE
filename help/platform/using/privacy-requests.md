@@ -38,7 +38,7 @@ Adobe Campaign erbjuder personuppgiftsansvariga två möjligheter att utföra f�
 >[!NOTE]
 >
 >* Mer information om personuppgifter och de olika enheter som hanterar data (personuppgiftsansvarig, personuppgiftsbiträde och registrerad) finns i [Personuppgifter och personer](privacy-and-recommendations.md#personal-data).
->* Mer information om sekretessförfrågningar finns i [dokumentationen för Campaign v8](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/privacy/privacy){target=_blank}.
+>* Mer information om sekretessförfrågningar finns i [dokumentationen för Campaign v8](https://experienceleague.adobe.com/sv/docs/campaign/campaign-v8/privacy/privacy){target=_blank}.
 
 <!--
 ## Prerequisites {#prerequesites}

@@ -36,7 +36,7 @@ Flikar och deras innehåll beror på din konfiguration och installerade paket.
 
 >[!NOTE]
 >
->Mer information om hur du redigerar profiler och kommer åt dem finns i den detaljerade dokumentationen för [Campaign v8](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/audience/view-profiles){target=_blank}.
+>Mer information om hur du redigerar profiler och kommer åt dem finns i den detaljerade dokumentationen för [Campaign v8](https://experienceleague.adobe.com/sv/docs/campaign/campaign-v8/audience/view-profiles){target=_blank}.
 
 
 

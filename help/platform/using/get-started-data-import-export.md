@@ -27,7 +27,7 @@ Adobe Campaign Classic har funktioner för datahantering som gör att du kan imp
 
 >[!NOTE]
 >
->Mer information om hur du importerar och exporterar data till Campaign finns i [dokumentationen för Campaign v8](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/data/import){target=_blank}.
+>Mer information om hur du importerar och exporterar data till Campaign finns i [dokumentationen för Campaign v8](https://experienceleague.adobe.com/sv/docs/campaign/campaign-v8/data/import){target=_blank}.
 
 
 <!--

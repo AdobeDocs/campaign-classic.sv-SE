@@ -18,13 +18,13 @@ Använd Adobe Campaign för att skicka textmeddelanden till kunderna på deras m
 
 Läs om hur du skapar SMS-leveranser i dokumentationen för Campaign v8:
 
-* [Översikt över SMS-kanalen](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/sms/sms.html){target="_blank"}: Lär dig hur du kan skicka textmeddelanden till dina kunder på deras mobila enheter.
-* [Skapa en SMS-leverans](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/sms/create-sms/create-sms.html){target="_blank"}: Upptäck de olika stegen som krävs för att skapa en ny SMS-leverans.
-* [Definiera innehållet](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/sms/create-sms/sms-content.html){target="_blank"}: Lär dig hur du anpassar innehållet i dina SMS-meddelanden.
-* [Välj målgrupp](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/sms/create-sms/sms-audience.html){target="_blank"}: Huvudmålet extraheras från Adobe Campaign-databasen eller kan också lagras i en extern fil.
-* [Skicka SMS-korrektur](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/sms/validate-sms/sms-proofs.html): Det är nödvändigt att konfigurera en leveransvalideringscykel. Se till att innehållet godkänns innan du skickar det till mottagarna.
-* [Skicka till målgruppen](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/sms/validate-sms/sms-send.html): När ditt SMS har validerats kan du skicka det till målgruppen.
-* [Övervaka och spåra ett SMS](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/sms/sms-monitor.html): Övervaka SMS-leveransen för att vara säker på att era marknadsföringskampanjer är effektiva.
+* [Översikt över SMS-kanalen](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/sms/sms.html?lang=sv-SE){target="_blank"}: Lär dig hur du kan skicka textmeddelanden till dina kunder på deras mobila enheter.
+* [Skapa en SMS-leverans](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/sms/create-sms/create-sms.html?lang=sv-SE){target="_blank"}: Upptäck de olika stegen som krävs för att skapa en ny SMS-leverans.
+* [Definiera innehållet](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/sms/create-sms/sms-content.html?lang=sv-SE){target="_blank"}: Lär dig hur du anpassar innehållet i dina SMS-meddelanden.
+* [Välj målgrupp](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/sms/create-sms/sms-audience.html?lang=sv-SE){target="_blank"}: Huvudmålet extraheras från Adobe Campaign-databasen eller kan också lagras i en extern fil.
+* [Skicka SMS-korrektur](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/sms/validate-sms/sms-proofs.html?lang=sv-SE): Det är nödvändigt att konfigurera en leveransvalideringscykel. Se till att innehållet godkänns innan du skickar det till mottagarna.
+* [Skicka till målgruppen](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/sms/validate-sms/sms-send.html?lang=sv-SE): När ditt SMS har validerats kan du skicka det till målgruppen.
+* [Övervaka och spåra ett SMS](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/sms/sms-monitor.html?lang=sv-SE): Övervaka SMS-leveransen för att vara säker på att era marknadsföringskampanjer är effektiva.
 
 På dessa sidor finns mer information om konfiguration:
 

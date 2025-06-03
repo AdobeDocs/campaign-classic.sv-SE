@@ -27,7 +27,7 @@ Dessa kopplingar möjliggör snabb och enkel dataintegrering: Adobe Campaign til
 >[!NOTE]
 >
 >* Den här funktionen är tillgänglig i Adobe Campaign via det dedikerade paketet **CRM-anslutningar**.
->* Mer information om CRM-anslutningar och hur du ansluter till Microsoft Dynamics och Salesforce finns i [dokumentationen för Campaign v8](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/connect/ac-crm/crm){target=_blank}.
+>* Mer information om CRM-anslutningar och hur du ansluter till Microsoft Dynamics och Salesforce finns i [dokumentationen för Campaign v8](https://experienceleague.adobe.com/sv/docs/campaign/campaign-v8/connect/ac-crm/crm){target=_blank}.
 
 <!--
 ### Compatible systems {#compatible-crm-systems-and-limitations}

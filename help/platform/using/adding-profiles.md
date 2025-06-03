@@ -23,7 +23,7 @@ I de flesta fall importeras profiler [till Campaign via ett arbetsflöde](../../
 
 >[!NOTE]
 >
->Mer information om hur du skapar profiler i Adobe Campaign Console finns i dokumentationen för [Campaign v8.](https://experienceleague.adobe.com/en/docs/campaign-classic/using/getting-started/profile-management/adding-profiles){target=_blank}
+>Mer information om hur du skapar profiler i Adobe Campaign Console finns i dokumentationen för [Campaign v8.](https://experienceleague.adobe.com/sv/docs/campaign-classic/using/getting-started/profile-management/adding-profiles){target=_blank}
 
 
 <!--

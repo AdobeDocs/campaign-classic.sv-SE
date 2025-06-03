@@ -26,7 +26,7 @@ Campaign Client-konsolen är en avancerad klient som gör att du kan ansluta til
 
 >[!NOTE]
 >
-> Mer information om hur du installerar och loggar in på Adobe Campaign finns i genomgången av [Campaign v8-dokumentationen](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/new/connect){target=_blank}.
+> Mer information om hur du installerar och loggar in på Adobe Campaign finns i genomgången av [Campaign v8-dokumentationen](https://experienceleague.adobe.com/sv/docs/campaign/campaign-v8/new/connect){target=_blank}.
 
 <!--
 ## Start Adobe Campaign {#starting-adobe-campaign}
@@ -111,6 +111,6 @@ Whenever you reach out to Adobe Customer Care team, you need to provide the vers
 
 * [Adobe Campaign Help and Support options](../../support.md)
 * [Adobe Campaign Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html)
-* [Adobe Experience Cloud Support and Expert sessions](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)
+* [Adobe Experience Cloud Support and Expert sessions](https://helpx.adobe.com/se/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)
 
 -->
