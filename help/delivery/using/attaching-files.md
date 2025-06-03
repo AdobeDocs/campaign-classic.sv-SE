@@ -5,8 +5,10 @@ description: Bifoga filer
 badge-v8: label="Gäller även för v8" type="Positive" tooltip="Gäller även Campaign v8"
 feature: Email
 role: User
+hide: true
+hidefromtoc: true
 exl-id: db65e83e-276f-4163-98c3-3658a48acffc
-source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
+source-git-commit: 42cec0e9bede94a2995a5ad442822512bda14f2b
 workflow-type: tm+mt
 source-wordcount: '975'
 ht-degree: 1%
@@ -21,12 +23,12 @@ Du kan bifoga en eller flera filer till en e-postleverans.
 
 >[!NOTE]
 >
->För att undvika prestandaproblem rekommenderar vi att du inte inkluderar mer än en bifogad fil per e-post. Det rekommenderade tröskelvärdet kan konfigureras från [listan med alternativ för Campaign Classic](../../installation/using/configuring-campaign-options.md#delivery).
+>För att undvika prestandaproblem rekommenderar vi att du inte inkluderar mer än en bifogad fil per e-post. Det rekommenderade tröskelvärdet kan konfigureras från [listan med Campaign Classic-alternativ](../../installation/using/configuring-campaign-options.md#delivery).
 
 Det finns två möjliga fall:
 
 * Välj en fil och bifoga den till leveransen som den är.
-* Anpassa innehållet i den bifogade filen för varje mottagare. I det här fallet måste du skapa en **beräknad bifogad fil**: namnet på den bifogade filen beräknas vid leveranstillfället för varje meddelande beroende på mottagaren. Innehållet kan också anpassas och konverteras till PDF-format vid leveransen om du har alternativet **Variabel digital utskrift** .
+* Anpassa innehållet i den bifogade filen för varje mottagare. I det här fallet måste du skapa en **beräknad bifogad fil**: namnet på den bifogade filen beräknas vid leveranstillfället för varje meddelande beroende på mottagaren. Innehållet kan också anpassas och konverteras till PDF-format när det levereras, om du har alternativet **Variabel digital utskrift** .
 
 >[!NOTE]
 >
@@ -38,7 +40,7 @@ För att undvika prestandaproblem får bilderna i e-postmeddelanden inte överst
 
 Adobe rekommenderar också att du begränsar storleken och antalet bifogade filer. Som standard kan du bara lägga till en fil som en bifogad fil i ett e-postmeddelande. Det här tröskelvärdet kan konfigureras från alternativet `NmsDelivery_MaxRecommendedAttachments`.
 
-Läs mer i [listan med alternativ för Campaign Classic](../../installation/using/configuring-campaign-options.md#delivery).
+Läs mer i [listan med Campaign Classic-alternativ](../../installation/using/configuring-campaign-options.md#delivery).
 
 ## Bifoga en lokal fil {#attaching-a-local-file}
 
@@ -115,7 +117,7 @@ Använd följande konfigurationssteg för den här typen av bifogad fil:
 
 1. Analysera leveransen och starta den sedan.
 
-   Varje mottagare får en personlig PDF som är kopplad till leveransen.
+   Varje mottagare får en skräddarsydd PDF som bifogas leveransen.
 
    ![](assets/s_ncs_user_wizard_email_calc_attachement_08.png)
 

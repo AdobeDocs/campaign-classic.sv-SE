@@ -5,8 +5,10 @@ description: Lär dig hur du konfigurerar, utformar och skickar e-postmeddelande
 badge-v8: label="Gäller även för v8" type="Positive" tooltip="Gäller även Campaign v8"
 feature: Email, Email Design
 role: User
+hide: true
+hidefromtoc: true
 exl-id: 44634227-2340-49c4-b330-740c739ea551
-source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
+source-git-commit: 42cec0e9bede94a2995a5ad442822512bda14f2b
 workflow-type: tm+mt
 source-wordcount: '733'
 ht-degree: 0%
@@ -33,11 +35,11 @@ Ett visst antal begränsningar gäller för att skicka e-postmeddelanden som ska
 
 Därför måste du:
 
-* Använd endast bilder i JPEG eller GIF
+* Använd endast bilder i JPEG- eller GIF-format
 * Skapa en leverans med text och HTML-avsnitt som är strikt mindre än 10 000 byte (för KDDI AU och DoCoMo)
 * Använd bilder med en total storlek (före kodning) som är mindre än 100 kB
 * Använd inte fler än 20 bilder per meddelande
-* Använd ett format med reducerad storlek för HTML (ett begränsat antal taggar finns för varje operator)
+* Använd ett HTML-format med reducerad storlek (ett begränsat antal taggar finns för varje operator)
 
 >[!NOTE]
 >
@@ -54,7 +56,7 @@ När du har definierat innehållet och angett ämnet för e-postmeddelandet kan 
 
 På fliken **[!UICONTROL Preview]** i fönstret för innehållsredigering kan du klicka på **[!UICONTROL More... > Deco-mail diagnostic]** för att:
 
-* Kontrollera att innehållstaggarna för HTML följer de japanska formatbegränsningarna
+* Kontrollera att HTML innehållstaggar följer de japanska formatbegränsningarna
 * Kontrollera att antalet bilder i meddelandet inte överstiger gränsen för formatet (20 bilder)
 * Kontrollera den totala meddelandestorleken (mindre än 100 kB)
 
@@ -68,7 +70,7 @@ Förutom förhandsgranskningsdiagnosen utförs en andra kontroll när du skickar
 >
 >Den här typologiregeln körs bara om minst en av mottagarna har konfigurerats att ta emot e-post i formatet **[!UICONTROL Deco-mail (DoCoMo)]**, **[!UICONTROL Decore Mail (Softbank)]** eller **[!UICONTROL Decoration Mail (KDDI AU)]**.
 
-Med den här typologiregeln kan du se till att leveransen uppfyller de [formatbegränsningar](#limitations-and-recommendations) som definieras av de japanska operatorerna, särskilt i förhållande till den totala storleken på e-postmeddelandet, storleken på HTML och textavsnitten, antalet bilder i meddelandena samt taggarna i HTML-innehållet.
+Med den här typologiregeln kan du se till att leveransen respekterar de [formatbegränsningar](#limitations-and-recommendations) som definieras av de japanska operatorerna, särskilt i förhållande till den totala storleken på e-postmeddelandet, storleken på HTML- och textavsnitten, antalet bilder i meddelandena samt taggarna i HTML-innehållet.
 
 ### Skicka korrektur {#sending-proofs}
 

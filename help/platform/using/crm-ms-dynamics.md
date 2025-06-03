@@ -4,7 +4,9 @@ title: Campaign - Microsoft Dynamics CRM Connector
 description: Lär dig hur du ansluter Campaign och Microsoft Dynamics
 feature: Microsoft CRM Integration
 exl-id: 26737940-b3ce-425c-9604-f4cefd19afaa
-source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
+hide: true
+hidefromtoc: true
+source-git-commit: 42cec0e9bede94a2995a5ad442822512bda14f2b
 workflow-type: tm+mt
 source-wordcount: '1104'
 ht-degree: 1%
@@ -15,7 +17,7 @@ ht-degree: 1%
 
 
 
-På den här sidan får du lära dig att ansluta Campaign Classic till **Microsoft Dynamics CRM 365**.
+På den här sidan får du lära dig hur du ansluter Campaign Classic till **Microsoft Dynamics CRM 365**.
 
 Möjlig distribution sker via **webb-API** (rekommenderas). Mer information om hur du konfigurerar anslutningen till Microsoft Dynamics finns i [avsnittet nedan](#microsoft-dynamics-implementation-step).
 
@@ -120,7 +122,7 @@ Mer information finns i [Azure-dokumentationen](https://docs.microsoft.com/azure
 >
 > Det här steget är valfritt med **[!UICONTROL Password credentials]**-autentisering.
 
-Appanvändaren är den användare som programmet som registrerats ovan kommer att använda. Alla ändringar som görs i Microsoft Dynamics med den app som registrerats ovan görs via den här användaren.
+Appanvändaren är den användare som programmet som registrerats ovan kommer att använda. Alla ändringar som görs i Microsoft Dynamics med appen som registrerats ovan görs via den här användaren.
 
 **Steg 1**: Skapa en icke-interaktiv användare i Azure Active Directory
 
@@ -201,7 +203,7 @@ Campaign och Microsoft Dynamics är nu uppkopplade. Du kan konfigurera datasynkr
 
 ## Datatyper för fält som stöds {#ms-dyn-supported-types}
 
-För attributtyper som stöds/inte stöds i Microsoft Dynamics 365 anges nedan:
+För Microsoft Dynamics 365-attributtyper som stöds/inte stöds finns följande:
 
 
 | Attributtyp | Stöds |

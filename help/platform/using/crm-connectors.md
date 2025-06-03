@@ -7,10 +7,10 @@ audience: platform
 content-type: reference
 topic-tags: connectors
 exl-id: 7ccab3a4-f323-464a-9ec4-dd597279d0eb
-source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
+source-git-commit: 42cec0e9bede94a2995a5ad442822512bda14f2b
 workflow-type: tm+mt
-source-wordcount: '158'
-ht-degree: 37%
+source-wordcount: '134'
+ht-degree: 42%
 
 ---
 
@@ -26,20 +26,23 @@ Dessa kopplingar möjliggör snabb och enkel dataintegrering: Adobe Campaign til
 
 >[!NOTE]
 >
->Den här funktionen är tillgänglig i Adobe Campaign via det dedikerade paketet **CRM-anslutningar**.
+>* Den här funktionen är tillgänglig i Adobe Campaign via det dedikerade paketet **CRM-anslutningar**.
+>* Mer information om CRM-anslutningar och hur du ansluter till Microsoft Dynamics och Salesforce finns i [dokumentationen för Campaign v8](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/connect/ac-crm/crm){target=_blank}.
 
+<!--
+### Compatible systems {#compatible-crm-systems-and-limitations}
 
-### Kompatibla system {#compatible-crm-systems-and-limitations}
-
-CRM och versioner som stöds finns detaljerade i Campaign [Kompatibilitetsmatrisen](../../rn/using/compatibility-matrix.md).
+Supported CRM and versions are detailed in Campaign [Compatibility matrix](../../rn/using/compatibility-matrix.md).
 
 >[!NOTE]
 >
->CRM-anslutningarna fungerar bara med en säker URL (https).
+>The CRM connectors only work with a secure URL (https).
 
-### Implementeringssteg {#crm-implementation-steps}
+### Implementation steps {#crm-implementation-steps}
 
-Lär dig steg för steg hur du ansluter Campaign och Microsoft Dynamics [i det här avsnittet](../../platform/using/crm-ms-dynamics.md)
+Learn step-by-step procedure to connect Campaign and Microsoft Dynamics [in this section](../../platform/using/crm-ms-dynamics.md)
 
 
-Lär dig steg för steg hur du ansluter Campaign och Salesforce [i det här avsnittet](../../platform/using/crm-sfdc.md)
+Learn step-by-step procedure to connect Campaign and Salesforce [in this section](../../platform/using/crm-sfdc.md)
+
+-->

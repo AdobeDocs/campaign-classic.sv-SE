@@ -8,10 +8,10 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: d2451b62-bddf-4dee-8789-35aaae8348e1
-source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
+source-git-commit: 42cec0e9bede94a2995a5ad442822512bda14f2b
 workflow-type: tm+mt
-source-wordcount: '1907'
-ht-degree: 95%
+source-wordcount: '143'
+ht-degree: 80%
 
 ---
 
@@ -28,153 +28,160 @@ Adobe Campaign är ett kraftfullt verktyg för att samla in och behandla mycket 
 
 Ta dig tid att gå igenom [Checklistan för säkerhet och sekretess](../../installation/using/get-started-security-privacy.md) för att lära dig grunderna i att kontrollera säkerhet och sekretess.
 
-### Integritetsbestämmelser {#privacy-regulations}
+>[!NOTE]
+>
+>Mer information om sekretess- och säkerhetsbestämmelser för Adobe Camera finns i [dokumentationen för Campaign v8](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/privacy/security){target=_blank}.
 
-För att kunna hantera personuppgifter på ett korrekt sätt bör du arbeta i enlighet med lagstiftningen i den eller de regioner där du bedriver verksamhet. Adobe Campaign funktioner hjälper dig att följa reglerna som anges på [den här sidan](../../platform/using/privacy-management.md#privacy-management-regulations).
 
-### Integritet i Adobe Experience Cloud {#experience-cloud-privacy}
+<!--
+### Privacy regulations {#privacy-regulations}
 
-Adobe Campaign ingår som en del av Adobe Experience Cloud-lösningarna. Sättet på vilket sekretess hanteras i Campaign följer Experience Clouds allmänna principer som till exempel följande:
+To correctly handle privacy and manage personal data, work within the legislations applicable to the region(s) where you operate. Adobe Campaign's capabilities help you comply with the regulations listed in [this page](../../platform/using/privacy-management.md#privacy-management-regulations).
 
-* **Vilken information samlas in när Adobe Experience Cloud används**
+### Adobe Experience Cloud privacy {#experience-cloud-privacy}
 
-  Som ett företag som använder Adobe Experience Cloud-lösningar väljer du vilken information som ska samlas in och skickas till ditt Adobe Experience Cloud-konto. Exempel på information som kan samlas in är webbläsaraktivitet, IP-adresser, platsinformation från mobila enheter, kampanjers framgång, artiklar som har köpts eller placerats i en kundvagn osv.
+Adobe Campaign is part of the Adobe Experience Cloud solutions. The way privacy is handled in Campaign obeys the Experience Cloud general principles, such as the following:
 
-  >[!NOTE]
-  >
-  >I likhet med alla andra Adobe-produkter samlar Campaign in information om program- och webbplatsanvändare. Se [Adobes integritetspolicy](https://www.adobe.com/se/privacy/policy.html) för mer information.
+* **What information is collected when using Adobe Experience Cloud**
 
-* **Så används Adobe Experience Cloud för att samla in information**
+    As a company using Adobe Experience Cloud solutions, you choose what information to collect and send to your Adobe Experience Cloud account. Examples of the types of information that may be collected include web browsing activity, IP addresses, location information from mobile devices, campaign success rates, items purchased or placed in shopping cart, etc.
 
-   * Adobe Experience Cloud-lösningar använder cookies och liknande tekniker såsom webb-beacons (kallas även för taggar eller pixlar) för att göra det möjligt att samla in information. Se [det här avsnittet](#tracking-capabilities) för mer information om cookies och spårningsfunktioner med Adobe Campaign.
-   * Du kan också använda Adobe Experience Cloud-tekniker i dina mobilappar. Mer information om hur du skickar mobilleveranser med Campaign finns i [SMS-kanal](../../delivery/using/sms-channel.md) och [Mobilappskanal](../../delivery/using/about-mobile-app-channel.md).
+    >[!NOTE]
+    >
+    >As for all Adobe products, Campaign collects information about app and website users. For more on this, see the [Adobe Privacy Policy](https://www.adobe.com/privacy/policy.html).
 
-* **Dina användares integritetsinställningar gällande hur du använder Adobe Experience Cloud**
+* **How Adobe Experience Cloud is used to collect information**
 
-  Adobe ber att du erbjuder dina kunder en integritetspolicy som beskriver:
+    * Adobe Experience Cloud solutions use cookies and similar technologies, such as web beacons (also known as tags or pixels), to enable you to collect information. For more on cookies and tracking capabilities with Adobe Campaign, see [this section](#tracking-capabilities).
+    * You may also use Adobe Experience Cloud technologies within your mobile apps. For more on sending mobile deliveries with Campaign, see [SMS channel](../../delivery/using/sms-channel.md) and [Mobile app channel](../../delivery/using/about-mobile-app-channel.md).
 
-   * Din bästa praxis gällande integritet i samband med Adobe Experience Cloud
-   * Hur användare kan ställa in sina preferenser gällande insamling eller användning av sin information i samband med Adobe Experience Cloud
+* **You users' privacy choices about your use of Adobe Experience Cloud**
 
-  >[!NOTE]
-  >
-  >Liksom för alla Adobe-produkter kan användare i Campaign avanmäla sig från att dela information som samlas in om dem via appar och webbplatser. Mer information finns i [Vanliga frågor och svar om att använda Adobe Experience Cloud](https://www.adobe.com/se/privacy/experience-cloud-usage-info-faq.html).
+    Adobe asks you to provide your customers privacy policies describing:
 
-Se [den här sidan](https://www.adobe.com/se/privacy/marketing-cloud.html) för mer information om integriteten i Adobe Experience Cloud.
+    * Your privacy practices in connection with Adobe Experience Cloud
+    * How users can set their preferences for the collection or use of their information in connection with Adobe Experience Cloud
 
-## Personuppgifter och personer {#personal-data}
+    >[!NOTE]
+    >
+    >As for all Adobe products, Campaign users can opt-out sharing information collected about them through apps and websites. For more on this, see the [Adobe Experience Cloud Usage Information FAQ](https://www.adobe.com/privacy/experience-cloud-usage-info-faq.html).
 
-När integritet hanteras är det viktigt att definiera vilka data som ska hanteras med försiktighet och av vem.
-* **Personuppgifter** är information som direkt eller indirekt kan identifiera en levande individ.
-* **Känsliga personuppgifter** är information om en persons etnicitet, politiska åsikter, religiösa övertygelser, brottsregister, genetiska uppgifter, hälsouppgifter, sexuell läggning, biometriska uppgifter samt medlemskap i fackföreningar.
+For further details on the Adobe Experience Cloud privacy, see [this page](https://www.adobe.com/privacy/marketing-cloud.html).
 
-När du integrerar Campaign med andra Experience Cloud-lösningar där målgrupper kan överföras från ett system till ett annat, till exempel [Adobe Analytics](../../integrations/using/gs-aa.md), [Experience Cloud-målgrupper](../../integrations/using/sharing-audiences-with-adobe-experience-cloud.md), [Campaign Standard](../../integrations/using/synchronizing-audiences.md) eller med andra lösningar via [CRM Connectors](../../platform/using/crm-connectors.md), måste du vara extra försiktig med skydd av personuppgifter.
+## Personal Data and Personas {#personal-data}
 
-De [viktigaste föreskrifterna](#privacy-regulations) avser de olika enheter som hanterar data enligt följande:
+When managing Privacy, it is important to define what data should be handled with care and by whom.
+* **Personal Data** is information that can directly or indirectly identify a living individual.
+* **Sensitive Personal Data** is information related to an individual's race, political views, religious beliefs, criminal background, genetic information, health data, sexual preference, biometric information, as well as trade union membership.
 
-* Ett **personuppgiftsansvarig** är den myndighet som bestämmer syftet med att samla in, använda och dela personuppgifter och hur det ska göras.
+When integrating Campaign with other Experience Cloud solutions where audiences can be transferred from one system to another, such as [Adobe Analytics](../../integrations/using/gs-aa.md), [Experience Cloud Audiences](../../integrations/using/sharing-audiences-with-adobe-experience-cloud.md), [Campaign Standard](../../integrations/using/synchronizing-audiences.md), or with other solutions through [CRM Connectors](../../platform/using/crm-connectors.md), you need to pay extra care to personal data protection.
 
-* Ett **personuppgiftsbiträde** är en individ eller part som samlar in, använder eller delar personuppgifter enligt den personuppgiftsansvariges anvisningar.
+The [main regulations](#privacy-regulations) refer to the different entities that manage data as follows:
 
-* En **registrerad** är en levande individ vars personuppgifter samlas in, används eller delas och som direkt eller indirekt kan identifieras genom hänvisning till dessa personuppgifter.
+* A **Data Controller** is the authority that determines the means and purpose of collecting, using, and sharing personal data.
 
-Som företag som samlar in och delar personuppgifter är du den personuppgiftsansvarige, dina kunder är de registrerade och Adobe Campaign fungerar som personuppgiftsbiträde när vi hanterar deras personuppgifter enligt dina anvisningar. Observera att det är ditt ansvar som personuppgiftsansvarige att hantera relationen med de registrerade såsom vid hantering av [förfrågningar om användarens information](#privacy-requests).
+* A **Data Processor** is any individual or party that collects, uses, or shares personal data as directed by the Data Controller.
 
-### Scenario med användningsfall {#use-case-scenario}
+* A **Data Subject** is any living individual whose personal data is being collected, used or shared, and who can be identified, directly or indirectly, by reference to that personal data.
 
-För att illustrera hur personerna i de olika rollerna interagerar följer ett exempel, på hög nivå, av en GDPR-kundupplevelse.
+Therefore, as a company collecting and sharing personal data, you are the Data Controller, your clients are the Data Subjects and Adobe Campaign acts as a Data Processor when handling their personal data as directed by you. Note that it is your responsibility as a Data Controller to handle the relationship with the Data Subjects such as when managing [privacy requests](#privacy-requests).
 
-I det här exemplet är kunden i Adobe Campaign ett flygbolag. Det här företaget är **personuppgiftsansvarig** och alla klienter i flygbolaget är **registrerade**. Laura är i det här fallet en kund hos flygbolaget.
+### Use case scenario {#use-case-scenario}
 
-Dessa är de olika personerna som används i det här exemplet:
+To illustrate how the different personas are interacting, here is an example of a high-level GDPR customer experience use case.
 
-* **Laura** är den **registrerade**. Hon är mottagaren som får meddelanden från flygbolaget. Laura är kanske en person som flyger ofta men kan vid något tillfälle besluta att hon inte vill ha någon personlig reklam eller marknadsföringsmeddelanden från flygbolaget. Hon ber flygbolaget (baserat på deras process) att ta bort sitt nummer som frekvent flygresenär.
+In this example, an airline company is the Adobe Campaign customer. This company is the **Data Controller** and all the clients of the airline company are **Data Subjects**. Laura in this particular case is a client of the airline company.
 
-* **Anne** är **personuppgiftsansvarig** hos flygbolaget. Hon tar emot Laura begäran, hämtar användbara ID:n som efterfrågas för att identifiera den registrerade och skickar in begäran i Adobe Campaign.
+Here are the different personas used in this example:
 
-* **Adobe Campaign** är **personuppgiftsbiträdet**.
+* **Laura** is the **Data subject**. She is the recipient who receives messages from the airline company. Laura may be a frequent flyer, but may decide at some point that she does not want any personalized advertising or marketing messages from the airline company. She will ask the airline company (based on their process) to delete her frequent flier number.
+
+* **Anne** is the **Data Controller** at the airline company. She receives Laura's request, retrieves useful IDs requested to identify the Data Subject and submits the request in Adobe Campaign.
+
+* **Adobe Campaign** is the **Data Processor**.
 
 ![](assets/privacy-gdpr-flow.png)
 
-Här följer det allmänna flödet för det här användningsfallet:
+Here is the general flow for this use case:
 
-1. Den **registrerade** (Laura) skickar en GDPR-begäran till **personuppgiftsansvarige** via e-post, kundtjänsten eller en webbportal.
+1. The **Data Subject** (Laura) sends a GDPR request to the **Data Controller**, via email, customer care or a web portal.
 
-1. **Personuppgiftsansvarige** (Anne) skickar GDPR-begäran till Campaign via gränssnittet eller ett API.
+1. The **Data Controller** (Anne) pushes the GDPR request to Campaign via the interface or using an API.
 
-1. När **personuppgiftsbiträdet** (Adobe Campaign) tar emot informationen utförs åtgärden i GDPR-begäran och ett svar eller bekräftelse skickas till **personuppgiftsansvarige** (Anne).
+1. Once the **Data Processor** (Adobe Campaign) receives the information, it takes action on the GDPR request and sends a response or acknowledgement to the **Data Controller** (Anne).
 
-1. **Personuppgiftsansvarige** (Anne) granskar sedan informationen och skickar tillbaka den till den **registrerade** (Laura).
+1. The **Data Controller** (Anne) then reviews the information and sends it back to the **Data Subject** (Laura).
 
-## Datainsamling {#data-acquisition}
+## Data acquisition {#data-acquisition}
 
-Med Adobe Campaign kan ni samla in data, inklusive personuppgifter och känslig information. Det är därför viktigt att du erhåller och övervakar medgivande från dina mottagare.
+Adobe Campaign enables you to collect data, including personal and sensitive information. It is therefore essential that you receive and monitor consent from your recipients.
 
-* Låt alltid mottagarna godkänna att ta emot meddelanden. För att göra detta ska du fortsätt respektera förfrågningar om borttagning så snabbt som möjligt och verifiera medgivande genom en dubbel anmälningsprocess. Mer information om det här finns i [Skapa ett prenumerationsformulär med dubbel anmälan](../../web/using/use-cases-web-forms.md#create-a-subscription--form-with-double-opt-in).
-* Importera inte bedrägliga listor och använd dirigerade adresser för att kontrollera att din klientfil inte används bedrägligt. Mer information om det här finns i [Om dirigerade adresser](../../delivery/using/about-seed-addresses.md).
-* Genom medgivande och behörighetshantering kan du spåra mottagarnas preferenser och hantera vem inom organisationen som har tillgång till vilka data. Mer information finns i [det här avsnittet](#consent).
-* Underlätta och hantera förfrågningar om användarens information från era mottagare. Mer information finns i [det här avsnittet](#privacy-requests).
+* Always have recipients agree to receive communications. To do this, keep honoring opt-out requests as quickly as possible and verify consent through a double opt-in process. For more on this, see [Create a subscription form with double opt-in](../../web/using/use-cases-web-forms.md#create-a-subscription--form-with-double-opt-in).
+* Do not import fraudulent lists and use seed addresses to check that your client file is not being used fraudulently. For more on this, see [About seed addresses](../../delivery/using/about-seed-addresses.md).
+* Through consent and rights management, you can track your recipients' preferences as well as manage who within your organization can access which data. For more on this, see [this section](#consent).
+* Facilitate and manage Privacy requests from your recipients. For more on this, see [this section](#privacy-requests).
 
-## Integritetshantering {#privacy-management}
+## Privacy management {#privacy-management}
 
-Integritetshantering avser alla processer och verktyg som kan hjälpa dig att följa integritetsbestämmelser (GDPR, CCPA, osv.). Få en översikt över vad integritetshantering är på [denna sida](privacy-and-recommendations.md).
+Privacy management refer to all the processes and tools that can help you comply with Privacy regulations (GDPR, CCPA, etc.). Get an overview of what privacy management is on [this page](privacy-and-recommendations.md).
 
-Adobe Campaign tillhandahåller olika funktioner för integritetshantering:
-* Medgivandehantering, datalagring och användarroller. Se [det här avsnittet](#consent).
-* Förfrågningar om användarens information (åtkomsträttigheter och rätt att glömmas). Se [det här avsnittet](#privacy-requests).
-* Avanmäl dig gällande försäljning av personuppgifter (CCPA-specifik) Se [det här avsnittet](../../platform/using/privacy-requests.md#sale-of-personal-information-ccpa).
+Adobe Campaign provides you with various sets of features dedicated to privacy management:
+* Consent management, data Retention and user Roles. See [this section](#consent).
+* Privacy requests (Right to Access and Right to be Forgotten). See [this section](#privacy-requests).
+* Opt-out for the Sale of Personal Information (CCPA-specific). See [this section](../../platform/using/privacy-requests.md#sale-of-personal-information-ccpa).
 
-De viktigaste integritetsfunktionerna i Campaign och ett exempel på vilka personer som berörs, presenteras i [det här avsnittet](https://helpx.adobe.com/se/campaign/kb/campaign-privacy-more.html#gdprpersonasandflow).
+The main Privacy capabilities in Campaign and an example of the personas involved are presented in [this section](https://helpx.adobe.com/campaign/kb/campaign-privacy-more.html#gdprpersonasandflow).
 
-### Medgivande, lagring och roller {#consent}
+### Consent, Retention and Roles {#consent}
 
-Adobe Campaign erbjuder viktiga funktioner som är grundläggande för integriteten:
+Originally, Adobe Campaign offers important features that are essential to Privacy:
 
-* **Medgivandehantering**: genom prenumerationshantering kan du hantera mottagarnas preferenser och spåra vilka mottagare som har valt att anmäla sig till vilka typer av prenumerationer. Mer information om det här finns i [Om prenumerationer](../../delivery/using/about-services-and-subscriptions.md).
-* **Datalagring**: alla inbyggda standardiserade loggtabeller har förinställda lagringsperioder vilket i allmänhet begränsar datalagringen till 6 månader eller mindre. Ytterligare lagringsperioder kan ställas in med arbetsflöden. Kontakta Adobes konsulter eller teknikadministratörer för mer information om detta.
-* **Hantering av rättigheter**: Adobe Campaign ger dig möjligheten att hantera de rättigheter som tilldelats olika operatörer i Campaign via olika färdiga eller anpassade roller. Det här låter dig hantera vilka inom företaget som kan få åtkomst till, ändra eller exportera olika typer av data. Se [Om åtkomsthantering](../../platform/using/access-management.md) för mer information.
+* **Consent management**: Through the subscription management process, you can manage your recipients' preferences and track which recipients have opted-in to which type of subscriptions. For more on this, see [About subscriptions](../../delivery/using/about-services-and-subscriptions.md).
+* **Data retention**: All built-in standard log tables have pre-set retention periods, generally limiting their data storage to 6 months or less. Additional retention periods can be set up with workflows. For more on this, reach out to the Adobe consultants or technical administrators.
+* **Rights management**: Adobe Campaign provides you with the ability to manage the rights assigned to the various Campaign operators via different pre-built or custom roles. This allows you to manage who within your company can access, modify or export different types of data. For more on this, see [About access management](../../platform/using/access-management.md).
 
-Se [det här avsnittet](../../platform/using/privacy-management.md#consent-retention-roles) för mer information om dessa funktioner och hur du hanterar dem i Adobe Campaign.
+For more on these features and how to manage them in Adobe Campaign, see [this section](../../platform/using/privacy-management.md#consent-retention-roles).
 
-### Förfrågningar om användarens information {#privacy-requests}
+### Privacy requests {#privacy-requests}
 
-Adobe Campaign erbjuder ytterligare funktioner som underlättar din beredskap som personuppgiftsansvarig för vissa förfrågningar om användarens information:
+Adobe Campaign provides additional capabilities to help you facilitate your readiness as a Data Controller for certain Privacy requests:
 
-* **Åtkomsträttigheterna** är den registrerades rätt att från personuppgiftsansvarige få bekräftelse på om personuppgifter som rör dem behandlas eller inte, var de befinner dig och varför.
+* The **Right to Access** is the right for the Data Subject to obtain from the Data Controller confirmation as to whether or not personal data concerning them is being processed, where and why.
 
-* **Rätten att glömmas** (förfrågan om borttagning) ger den registrerade personen rätten att låta den personuppgiftsansvarige radera sina personuppgifter.
+* The **Right to be Forgotten** (delete request) entitles the Data Subject to have the Data Controller erase their personal data.
 
-Förfrågningar om **åtkomst** och **radering** visas i [det här avsnittet](../../platform/using/privacy-management.md#right-access-forgotten).
+The **Access** and **Delete** requests are presented in [this section](../../platform/using/privacy-management.md#right-access-forgotten).
 
-Implementeringsstegen för att skapa de här förfrågningarna finns i [det här avsnittet](../../platform/using/privacy-requests.md).
+The implementation steps to create these requests are detailed in [this section](../../platform/using/privacy-requests.md).
 
-## Spårningsfunktioner {#tracking-capabilities}
+## Tracking capabilities {#tracking-capabilities}
 
 ### Cookies {#cookies}
 
-Tack vare spårningsfunktionerna i Adobe Campaign kan du spåra vad leveransmottagarna surfar om med hjälp av tre typer av cookies: en sessionscookie och två permanenta cookies.
+Thanks to its tracking functionalities, Adobe Campaign enables you to track the browsing of your delivery recipients using three types of cookies: a session cookie and two permanent cookies.
 
-* En **sessionscookie**: Cookien **nlid** innehåller identifieraren för e-postmeddelandet som skickas till kontakten (**broadlogId**) och identifieraren för meddelandemallen (**deliveryId**). Den läggs till när kontakten klickar på en URL som ingår i ett e-postmeddelande som skickas av Adobe Campaign och låter dig spåra deras beteende på webben. Denna sessionscookie raderas automatiskt när webbläsaren stängs. Kontakten kan konfigurera sin webbläsare så att den inte tillåter cookies.
+* A **session** cookie: the **nlid** cookie contains the identifier of the email sent to the contact (**broadlogId**) and the identifier of the message template (**deliveryId**). It is added when the contact clicks a URL included in an email sent by Adobe Campaign and enables you to track their behavior on the web. This session cookie is erased automatically when the browser is closed. The contact can configure their browser to refuse cookies.
 
-* Två **permanenta** cookies:
-   * Cookien **UUID** (Universal Unique IDentifier) delas mellan Adobe Experience Cloud-lösningar. Den ställs in en gång tills den försvinner från klientwebbläsaren när ett nytt värde skapas. Med den här cookien kan du identifiera de användare som interagerar med Experience Cloud-lösningarna när de besöker en webbplats. Den kan ställas in av en landningssida (för att koppla okända kundaktiviteter till en mottagare) eller av en leverans. Beskrivningen av den här cookien finns på [den här sidan](https://experienceleague.adobe.com/docs/core-services/interface/ec-cookies/cookies-mc.html?lang=sv-SE#ec-cookies).
-   * Cookien **nllastdelid** (som introducerades i Campaign Classic 20.3) är en permanent cookie som innehåller **deliveryId** för den senaste leveransen där användaren klickade på länken. Den här cookien används för att identifiera spårningstabellen som ska användas när sessionscookien saknas.
+* Two **permanent** cookies: 
+    * The **UUID** (Universal Unique IDentifier) cookie is shared between Adobe Experience Cloud solutions. It is set once until it disappears from the client browser when a new value is generated. This cookie enables you to identify the users who interact with the Experience Cloud solutions when they visit a website. It can be deposited by a landing page (to associate unknown customer activities to a recipient) or by a delivery. The description of this cookie is available on [this page](https://experienceleague.adobe.com/docs/core-services/interface/ec-cookies/cookies-mc.html#ec-cookies).
+    * The **nllastdelid** cookie (introduced in Campaign Classic 20.3) is a permanent cookie which contains the **deliveryId** of the last delivery that user clicked the link from. This cookie is used - when the session cookie is missing - to identify the tracking table that will be used.
 
-Föreskrifter som den allmänna dataskyddsförordningen (GDPR) kräver att företag erhåller medgivande från webbplatsanvändare innan de installerar några cookies.
+Regulations such as the General Data Protection Regulation (GDPR) state that companies require the agreement of website users before installing any cookies.
 
-* Du måste informera användare om att dina webbplatser är utrustade med verktyg för webbspårning via en auktoriseringsbegäran (som till exempel visas ovanpå webbplatsen) med en kryssruta för att godkänna installationen av cookies. Du kan eventuellt lägga till en banderoll högst upp på den första sidan som de besöker osv.
-* Popup-fönster bör undvikas eftersom de ofta blockeras av webbläsare.
+* You must inform users that your sites are equipped with web tracking tools via an authorization request (that comes up over the page, for example) with a checkbox to authorize the use of cookies, or add a banner at the top of the first page they land on, etc.
+* Pop-up windows should be avoided as they are often blocked by browsers.
 
-### Meddelandespårning {#message-tracking}
+### Message tracking {#message-tracking}
 
-Med Adobe Campaign kan du spåra skickade e-postmeddelanden och leveransmottagarnas beteende: öppna, klicka på länkar, avsluta prenumerationer osv. Mer information om det här finns i [Om meddelandespårning](../../delivery/using/about-message-tracking.md).
+Adobe Campaign lets you track the emails sent and the behavior of your delivery recipients: opening, clicks on links, unsubscriptions, etc. For more on this, see [About message tracking](../../delivery/using/about-message-tracking.md).
 
-Du gör det genom att lägga till [spårade länkar](../../delivery/using/how-to-configure-tracked-links.md) i dina meddelanden för att mäta effekten av leverans och mottagarens beteende på fliken [Spårning](../../delivery/using/delivery-dashboard.md#tracking-logs) på instrumentpanelen för leverans. Spårningsdata tolkas i rapporten [Tracking indicators](../../reporting/using/delivery-reports.md#tracking-indicators).
+To do this, add [tracked links](../../delivery/using/how-to-configure-tracked-links.md) to your messages in order to measure the impact of your delivery and recipient behavior in the [Tracking](../../delivery/using/delivery-dashboard.md#tracking-logs) tab of the delivery dashboard. Tracking data is interpreted in the [Tracking indicators](../../reporting/using/delivery-reports.md#tracking-indicators) report.
 
-### Webbspårning {#web-tracking}
+### Web tracking {#web-tracking}
 
-Med Adobe Campaign kan du också övervaka hur mottagarna surfar på webbplatsen: Infoga spårningstaggar för att samla in information och mäta besök på sidor med webbapplikationer. Mer information om det här finns i [Spåra en webbapplikation](../../web/using/tracking-a-web-application.md).
+Adobe Campaign also lets you monitor how recipients browse your website: insert tracking tags to collect information and measure visits on web application pages. For more on this, see [Tracking a web application](../../web/using/tracking-a-web-application.md).
 
-Konfigurationen av webbspårning visas i [det här avsnittet](../../configuration/using/about-web-tracking.md).
+The configuration of web tracking is presented in [this section](../../configuration/using/about-web-tracking.md).
 
-För att ytterligare hantera spårning kan du använda Adobe Campaign för visa en avanmälningsbanderoll med ett val att stoppa spårning av webbeteende, för slutanvändare som vill avanmäla sig från beteendespårning. Mer information om det här finns i [Avanmälan av spårning av webbapplikationer](../../web/using/web-application-tracking-opt-out.md).
+To further manage tracking, Adobe Campaign enables you to display an opt-out banner to stop tracking web behaviors of end users who opt-out of behavioral tracking. For more on this, see [Web application tracking opt-out](../../web/using/web-application-tracking-opt-out.md).
+-->

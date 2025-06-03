@@ -5,8 +5,10 @@ description: Lär dig definiera e-postinnehåll när du använder Adobe Campaign
 badge-v8: label="Gäller även för v8" type="Positive" tooltip="Gäller även Campaign v8"
 feature: Email Design
 role: User
+hide: true
+hidefromtoc: true
 exl-id: 46212929-fd2d-44a2-897e-35f98e88af36
-source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
+source-git-commit: 42cec0e9bede94a2995a5ad442822512bda14f2b
 workflow-type: tm+mt
 source-wordcount: '1958'
 ht-degree: 1%
@@ -64,7 +66,7 @@ Du kan även infoga uttryckssymboler på ämnesraden med popup-fönstret **[!UIC
 
 Innehållet i meddelandet definieras i det nedre avsnittet av fönstret för leveranskonfiguration.
 
-Meddelanden skickas som standard i HTML eller textformat enligt mottagarens önskemål. Vi rekommenderar att du skapar innehåll i båda formaten för att säkerställa att meddelanden visas korrekt i alla e-postsystem. Mer information finns i [Välja meddelandeformat](email-parameters.md#selecting-message-formats).
+Meddelanden skickas som standard i HTML- eller textformat enligt mottagarens önskemål. Vi rekommenderar att du skapar innehåll i båda formaten för att säkerställa att meddelanden visas korrekt i alla e-postsystem. Mer information finns i [Välja meddelandeformat](email-parameters.md#selecting-message-formats).
 
 * Om du vill importera ett HTML-innehåll använder du knappen **[!UICONTROL Open]**. Du kan också klistra in källkoden direkt på underfliken **[!UICONTROL Source]**.
 
@@ -72,7 +74,7 @@ Meddelanden skickas som standard i HTML eller textformat enligt mottagarens öns
 
   >[!IMPORTANT]
   >
-  >Innehållet i HTML måste skapas i förväg och sedan importeras till Adobe Campaign. Redigeraren i HTML är inte utformad för att skapa innehåll.
+  >HTML-innehållet måste skapas i förväg och sedan importeras till Adobe Campaign. HTML-redigeraren är inte utformad för att skapa innehåll.
 
   Med underfliken **[!UICONTROL Preview]** kan du visa återgivningen av varje innehåll för en mottagare. Anpassningsfälten och de villkorliga elementen i innehållet ersätts med motsvarande information för den valda profilen.
 
@@ -104,7 +106,7 @@ Meddelanden skickas som standard i HTML eller textformat enligt mottagarens öns
 
   ![](assets/s_ncs_user_wizard_email01_141.png)
 
-  När det gäller formatet HTML klickar du på fliken **[!UICONTROL Preview]** längst ned på sidan för att visa återgivningen av meddelandet med dess anpassning.
+  När det gäller HTML-formatet klickar du på fliken **[!UICONTROL Preview]** längst ned på sidan för att visa återgivningen av meddelandet med dess personalisering.
 
   ![](assets/s_ncs_user_wizard_email01_142.png)
 
@@ -144,14 +146,14 @@ Om du vill anpassa uttryckslistan kan du läsa den här [sidan](customizing-emot
 
 ## Lägg till bilder {#adding-images}
 
-E-postleveranser i HTML-format kan innehålla bilder. Från leveransassistenten kan du importera en HTML-sida som innehåller bilder eller infoga bilder direkt med redigeraren i HTML via ikonen **[!UICONTROL Image]**.
+E-postleveranser i HTML-format kan innehålla bilder. Från leveransassistenten kan du importera en HTML-sida som innehåller bilder eller infoga bilder direkt med HTML-redigeraren via ikonen **[!UICONTROL Image]**.
 
 
 ### Guardrails {#img-guardrails}
 
 För att undvika prestandaproblem får bilderna i e-postmeddelanden inte överstiga 100 kB. Den här gränsen, som är inställd som standard, kan ändras från alternativet `NmsDelivery_MaxDownloadedImageSize`. Adobe rekommenderar dock att du undviker stora bilder i e-postutskick.
 
-Läs mer i [listan med alternativ för Campaign Classic](../../installation/using/configuring-campaign-options.md#delivery).
+Läs mer i [listan med Campaign Classic-alternativ](../../installation/using/configuring-campaign-options.md#delivery).
 
 ### Typer av bilder {#img-types}
 
@@ -166,7 +168,7 @@ Bilderna kan vara:
 
 ### Infoga och hantera bilder {#manage-images}
 
-Med leveransassistenten kan du lägga till lokala bilder, eller bilder som lagras i biblioteket, i innehållet i meddelanden. Det gör du genom att klicka på knappen **[!UICONTROL Image]** i verktygsfältet för innehåll i HTML.
+Med leveransassistenten kan du lägga till lokala bilder, eller bilder som lagras i biblioteket, i innehållet i meddelanden. Det gör du genom att klicka på knappen **[!UICONTROL Image]** i HTML innehållsverktygsfält.
 
 ![](assets/s_ncs_user_image_from_library.png)
 
@@ -186,7 +188,7 @@ Så här hanterar du bilder via leveransassistenten:
 * Du kan överföra bilder manuellt utan att vänta på leveransanalysfasen. Klicka på länken **[!UICONTROL Upload the images straightaway...]** om du vill göra det.
 * Du kan ange en annan sökväg för åtkomst till bilderna på spårningsservern. Om du vill göra det anger du det i fältet **[!UICONTROL Images URL]**. Det här värdet åsidosätter det värde som definieras i installationsassistentens parametrar.
 
-När du öppnar HTML-innehåll med inkluderade bilder i leveransassistenten får du ett meddelande om du vill att bilderna ska kunna överföras direkt, enligt leveransparametrarna.
+När du öppnar HTML-innehåll med inkluderade bilder i leveransassistenten får du ett meddelande som ger dig möjlighet att ladda upp bilderna direkt enligt leveransparametrarna.
 
 ![](assets/s_ncs_user_email_del_img_local.png)
 

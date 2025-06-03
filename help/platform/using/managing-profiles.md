@@ -7,10 +7,10 @@ audience: platform
 content-type: reference
 topic-tags: profile-management
 exl-id: e1d0556a-6f30-4863-9025-eb9c1b8b53d3
-source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
+source-git-commit: 42cec0e9bede94a2995a5ad442822512bda14f2b
 workflow-type: tm+mt
-source-wordcount: '229'
-ht-degree: 0%
+source-wordcount: '134'
+ht-degree: 1%
 
 ---
 
@@ -28,24 +28,28 @@ Varje nod sammanfaller med en mapp. Data från varje mapp måste anses vara part
 
 >[!NOTE]
 >
->Om du vill visa listan över alla mottagare i databasen måste du skapa en vy. Läs mer i [Mappar och vyer](../../platform/using/access-management-folders.md).
+> * Om du vill visa listan över alla mottagare i databasen måste du skapa en vy. Läs mer i [Mappar och vyer](../../platform/using/access-management-folders.md).
+> * Mer information om hur du hanterar dina profiler finns i [Campaign v8-dokumentationen](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/config/configuration/folders-and-views){target=_blank}.
 
-## Flytta mottagare {#moving-recipients}
 
-Du kan markera en eller flera mottagare, dra dem från mottagarlistan och släppa dem i önskad mapp. Ett varningsmeddelande ber dig bekräfta den här åtgärden.
+<!--
+## Move recipients {#moving-recipients}
 
-## Kopiera en mottagare {#copying-a-recipient}
+You can select one or more recipients, drag them from the recipient list, and drop them in the desired folder. A warning message asks you to confirm this action.
 
-Du kan kopiera en mottagare i samma mapp genom att högerklicka på önskad mottagare och välja **[!UICONTROL Copy]**.
+## Copy a recipient {#copying-a-recipient}
 
-## Ta bort mottagare {#deleting-recipients}
+You can copy a recipient in the same folder by right-clicking the desired recipient and selecting **[!UICONTROL Copy]**.
 
-Om du vill ta bort mottagare flyttar du dem till en viss mapp och tömmer sedan innehållet i den här mappen. Vi rekommenderar **att du inte använder** alternativet **[!UICONTROL Delete]** i det här fallet.
+## Delete recipients {#deleting-recipients}
 
-Om du vill rensa en mapp använder du **[!UICONTROL Actions > Purge folder]**-menyn som du kommer åt genom att högerklicka på önskad mapp.
+To delete recipients, move them to a specific folder and then purge the content of this folder. It is **strongly recommended not to use** the **[!UICONTROL Delete]** option in this case.
+
+To purge a folder, use the **[!UICONTROL Actions > Purge folder]** menu, accessed by right-clicking the desired folder.
 
 ![](assets/s_ncs_user_purge_folder.png)
 
-Klicka på **[!UICONTROL Start]** för att starta åtgärden. I fönstrets mellersta del visas förloppsstatusen enligt nedan:
+Click **[!UICONTROL Start]** to launch the operation. The middle section of the window displays the progress status, as shown below:
 
 ![](assets/s_ncs_user_purge_folder_start.png)
+-->

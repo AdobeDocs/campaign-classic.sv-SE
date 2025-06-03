@@ -4,8 +4,10 @@ title: Definiera målpopulationen
 description: Lär dig definiera målpopulationen
 feature: Audiences, Proofs
 role: User
+hide: true
+hidefromtoc: true
 exl-id: d0ed7be7-3147-4cb8-9ce7-ea51602e9048
-source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
+source-git-commit: 42cec0e9bede94a2995a5ad442822512bda14f2b
 workflow-type: tm+mt
 source-wordcount: '1729'
 ht-degree: 2%
@@ -240,7 +242,7 @@ Mappningarna är följande:
 | Besökare | Leverera till besökare vars profiler har samlats in via hänskjutning (viral marknadsföring) eller via sociala nätverk (Facebook, X - tidigare Twitter), till exempel. | mns:besökare |
 | Prenumerationer | Leverera till mottagare som prenumererar på en informationstjänst som ett nyhetsbrev | nms:prenumeration |
 | Prenumerationer på besökare | Skicka till besökare som prenumererar på en informationstjänst | nms:visitorSub |
-| Tjänst | Publish till ett X-konto eller en Facebook-sida | nms:service |
+| Tjänst | Publicera till ett X-konto eller en Facebook-sida | nms:service |
 | Operatorer | Leverera till Adobe Campaign | nms:operator |
 | Extern fil | Leverera via en fil som innehåller all information som behövs för leveransen | Inget länkat schema, inget mål har angetts |
 
@@ -251,4 +253,4 @@ I den här videon får du lära dig hur du lägger till frön och korrektur i et
 
 >[!VIDEO](https://video.tv.adobe.com/v/25606?quality=12)
 
-Ytterligare Campaign Classic om instruktionsvideor finns [här](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=sv).
+Ytterligare Campaign Classic instruktionsvideor finns [här](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=sv).

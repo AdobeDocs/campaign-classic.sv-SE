@@ -5,10 +5,10 @@ description: Lär dig hur du ger tillgång till Campaign-funktioner
 badge: label="v7" type="Informative" tooltip="Gäller endast Campaign Classic v7"
 feature: Access Management, Permissions
 exl-id: 9b616715-33cd-43ba-8548-8d96a179408e
-source-git-commit: 2759d65150299e4fa679ea986df8136cd9525370
+source-git-commit: 42cec0e9bede94a2995a5ad442822512bda14f2b
 workflow-type: tm+mt
-source-wordcount: '342'
-ht-degree: 4%
+source-wordcount: '309'
+ht-degree: 5%
 
 ---
 
@@ -17,11 +17,11 @@ ht-degree: 4%
 
 >[!CAUTION]
 >
->Från och med Campaign Classic v7.3.1 bör alla operatorer använda [Adobe Identity Management System (IMS)](https://helpx.adobe.com/se/enterprise/using/identity.html){target="_blank"} för att ansluta till Campaign.
+>Från och med Campaign Classic v7.3.1 bör alla operatorer använda [Adobe Identity Management System (IMS)](https://helpx.adobe.com/enterprise/using/identity.html){target="_blank"} för att ansluta till Campaign.
 >
 >Som en del i arbetet med att stärka säkerhets- och autentiseringsprocessen rekommenderar Adobe Campaign att man migrerar alla befintliga operatörers autentiseringsläge från den inbyggda autentiseringen av inloggnings-/lösenordsinformationen till Adobe Identity Management System (IMS). Lär dig hur du migrerar dina operatorer på [den här sidan](../../technotes/using/migrate-users-to-ims.md).
 > 
->Observera att följande avsnitt inte längre gäller efter den här migreringen.  Lär dig hur du ställer in behörigheter med Adobe IMS i [dokumentationen för Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/admin/permissions/gs-permissions.html?lang=sv-SE){target="_blank"}.
+>Observera att följande avsnitt inte längre gäller efter den här migreringen.  Lär dig hur du konfigurerar behörigheter med Adobe IMS i [dokumentationen för Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/admin/permissions/gs-permissions.html){target="_blank"}.
 
 
 Med Adobe Campaign kan du definiera och hantera de rättigheter som tilldelats de olika operatorerna. Detta är en uppsättning rättigheter och begränsningar som tillåter eller nekar:
@@ -42,25 +42,29 @@ Det finns två typer av behörigheter som du kan ge en användare:
 
 >[!NOTE]
 >
->Innan du börjar definiera behörigheter rekommenderar Adobe att du läser checklistan för [säkerhetskonfiguration](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/security-privacy/get-started-security-privacy.html?lang=sv).
+> * Innan du börjar definiera behörigheter rekommenderar Adobe att du läser checklistan för [säkerhetskonfiguration](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/security-privacy/get-started-security-privacy.html?lang=sv).
+> * Mer information om behörigheter finns i den detaljerade förklaringen i [Campaign v8-dokumentationen](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/admin/permissions/gs-permissions){target=_blank}.
 
-Lär dig hur du ger åtkomst och konfigurerar behörigheter i följande avsnitt:
+<!--
 
-* [Skapa operatorer](access-management-operators.md)
+Learn how to grant access and set up permissions in these sections:
 
-* [Definiera grupper](access-management-groups.md)
+* [Create operators](access-management-operators.md)
 
-* [Lägg till namngivna rättigheter](access-management-named-rights.md)
+* [Define groups](access-management-groups.md)
 
-* [Hantera mappåtkomst för kampanj](access-management-folders.md)
+* [Add Named rights](access-management-named-rights.md)
 
-* [Matris för åtkomsträttigheter](access-management-named-rights.md#access-rights-matrix)
+* [Manage Campaign folder access](access-management-folders.md)
+
+* [Access rights matrix](access-management-named-rights.md#access-rights-matrix)
 
 
-Se även:
+See also:
 
-* [Hantera behörigheter för arbetsflöden](../../workflow/using/managing-rights.md)
-* [Hantera behörigheter för distribuerad marknadsföring](../../distributed/using/about-distributed-marketing.md#operators-and-entities)
-* [Hantera behörigheter för interaktionsmodulen](../../interaction/using/operator-profiles.md)
-* [Filtrera åtkomst till scheman](../../configuration/using/filtering-schemas.md)
-* [Begränsa PI-vyn](../../configuration/using/restricting-pii-view.md)
+* [Manage permissions for workflows](../../workflow/using/managing-rights.md)
+* [Manage permissions for distributed marketing](../../distributed/using/about-distributed-marketing.md#operators-and-entities)
+* [Manage permissions for the interaction module](../../interaction/using/operator-profiles.md)
+* [Filter access to schemas](../../configuration/using/filtering-schemas.md)
+* [Restricting PI view](../../configuration/using/restricting-pii-view.md)
+-->

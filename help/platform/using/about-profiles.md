@@ -6,10 +6,10 @@ feature: Profiles, Audiences
 role: User, Data Architect
 level: Beginner
 exl-id: 54f1ad6c-54b0-4448-8c38-806dd75c1dae
-source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
+source-git-commit: 42cec0e9bede94a2995a5ad442822512bda14f2b
 workflow-type: tm+mt
-source-wordcount: '896'
-ht-degree: 14%
+source-wordcount: '234'
+ht-degree: 34%
 
 ---
 
@@ -23,100 +23,107 @@ Profilerna är centraliserade i Adobe Campaign-databasen. Det finns många sätt
 
 I Adobe Campaign är mottagarna de standardprofiler som väljs för att skicka leveranser till (e-post, SMS etc.). Med mottagardata som lagras i databasen kan du filtrera målet som ska ta emot en viss leverans och lägga till personaliseringsdata i leveransinnehållet. Det finns andra typer av profiler i databasen. De är utformade för olika användningsfall. Exempelvis görs fröprofiler för att testa dina leveranser innan de skickas till det slutliga målet.
 
-![](assets/do-not-localize/how-to-video.png) [Förstå begreppet profiler i video](#create-profiles-video)
-
-## Profiltyper {#profile-types}
-
-Med Adobe Campaign kan du hantera profiler under hela deras livscykel: skapande, import, målgruppsanpassning, åtgärdsspårning, uppdateringar osv.
-
-Varje profil matchar en databaspost. De innehåller all information som krävs för att målinrikta, kvalificera och spåra individer.
-
-Profiler kan identifieras baserat på lagringsutrymme. Det innebär att en profil kan matcha: en mottagare, en besökare, en operatör, en prenumerant, en potentiell kund, osv.
-
-## Mottagarprofiler {#recipient-profiles}
-
-Leveransmottagare lagras i databasen som profiler med information som är länkad till dem: efternamn, förnamn, adress, prenumerationer, leveranser osv. När du skapar kampanjer kan du definiera målet för leveranserna till ett urval av profilerna i basen enligt enkla eller avancerade kriterier.
-
-Du kan också skapa kampanjer som riktar sig till mottagare vars profiler inte lagras i databasen utan i filer. Dessa kallas för &quot;externa&quot; leveranser. Mer information om den här typen av leverans finns på [den här sidan](../../delivery/using/steps-defining-the-target-population.md#selecting-external-recipients).
-
-De viktigaste metoderna för att skapa mottagarprofiler är följande:
-
-* direkt inmatning på skärmar i det grafiska gränssnittet,
-* importera mottagarlistor,
-* onlinesamling via webbformulär.
+![Video som visar vilka profiler som är och hur de fungerar](assets/do-not-localize/how-to-video.png) [Förstå begreppet profiler i video](#create-profiles-video)
 
 >[!NOTE]
 >
->Mer information om hur filer och webbformulär importeras finns i [Allmän import och export](../../platform/using/get-started-data-import-export.md).
+>Mer information om profiler, hur du skapar och redigerar dem finns i den detaljerade dokumentationen om [Campaign v8-dokumentationen](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/audience/gs-audiences){target=_blank}.
 
-## Profiler och mål {#profiles-and-targets}
+<!--
+## Profile types {#profile-types}
 
-Med länken **[!UICONTROL Profiles and targets]** kan du visa mottagare som lagras i Adobe Campaign-databasen. Du kan skapa en ny mottagare, redigera en befintlig mottagare och komma åt dess profil. Mer information finns på [den här sidan](../../platform/using/editing-a-profile.md).
+Adobe Campaign lets you manage profiles throughout their entire lifecycle: creation, import, targeting, action tracking, updates, etc.
+
+Each profile matches a database entry. They contain all the information required for targeting, qualifying and tracking individuals.
+
+Profiles can be identified based on storage space. This means that a profile can match: a recipient, a visitor, an operator, a subscriber, a prospect, etc.
+
+## Recipient profiles {#recipient-profiles}
+
+Delivery recipients are stored in the database as profiles containing the information linked to them: last name, first name, address, subscriptions, deliveries, etc. When you create campaigns, you can define the target of the deliveries to a selection of the profiles in the base according to simple or advanced criteria.
+
+You can also create campaigns aimed at recipients whose profiles are stored not in the database, but in files. These are known as "external" deliveries. For more information about this type of delivery, refer to [this page](../../delivery/using/steps-defining-the-target-population.md#selecting-external-recipients).
+
+The main methods for creating recipient profiles are as follows:
+
+* direct input in the graphical interface screens,
+* importing recipient lists,
+* on-line collection via web forms.
+
+>[!NOTE]
+>
+>To find out how files and web forms are imported, refer to [Generic imports and exports](../../platform/using/get-started-data-import-export.md).
+
+## Profiles and targets {#profiles-and-targets}
+
+The **[!UICONTROL Profiles and targets]** link lets you display recipients stored in Adobe Campaign database. You can create new recipient, edit an existing recipient and access its profile. For more on this, refer to [this page](../../platform/using/editing-a-profile.md).
 
 ![](assets/d_ncs_user_interface_target_link.png)
 
-Du får även tillgång till
+It also gives you access to:
 
-* listor - [Läs mer](../../platform/using/creating-and-managing-lists.md)
-* prenumerationstjänster - [Läs mer](../../delivery/using/managing-subscriptions.md)
-* webbprogram - [Läs mer](../../web/using/about-web-applications.md)
-* import och export (jobb) - [Läs mer](../../platform/using/about-generic-imports-exports.md)
-* målarbetsflöden - [Läs mer](../../workflow/using/building-a-workflow.md#implementation-steps-)
+* lists - [Learn more](../../platform/using/creating-and-managing-lists.md)
+* subscription services - [Learn more](../../delivery/using/managing-subscriptions.md)
+* web applications - [Learn more](../../web/using/about-web-applications.md)
+* imports and exports (jobs) - [Learn more](../../platform/using/about-generic-imports-exports.md)
+* targeting workflows - [Learn more](../../workflow/using/building-a-workflow.md#implementation-steps-)
 
-På mottagarsidan kan du utföra vanliga åtgärder för profiler: redigeringar, uppdateringar, tillägg, borttagningar, sorteringar.
+The recipients page lets you perform frequent operations on profiles: edits, updates, adds, deletions, sorts.
 
-För mer avancerade profiländringar måste du redigera Adobe Campaign-trädet. Det gör du genom att klicka på länken **[!UICONTROL Explorer]** på Adobe Campaign hemsida.
+For more advanced profile manipulations, you need to edit the Adobe Campaign tree. To do this, click the **[!UICONTROL Explorer]** link on the Adobe Campaign home page.
 
-Som standard lagras mottagare i noden **[!UICONTROL Profiles and Targets > Recipients]** i trädet. Du kan skapa mottagare från den här vyn, liksom:
+By default, recipients are stored in the **[!UICONTROL Profiles and Targets > Recipients]** node of the tree. You can create recipients from this view, as well as:
 
-* sortera och filtrera databasens profiler - [Läs mer](../../platform/using/filtering-options.md)
-* flytta, kopiera eller ta bort profiler från databasen - [Läs mer](../../platform/using/managing-profiles.md),
-* uppdateringsprofiler - [Läs mer](../../platform/using/updating-data.md)
-* exportmottagare - [Läs mer](../../platform/using/exporting-and-importing-profiles.md)
-* skapa mottagargrupper - [Läs mer](../../platform/using/creating-and-managing-lists.md)
+* sort and filter the profiles of the database - [Learn more](../../platform/using/filtering-options.md)
+* move, copy or delete profiles from the database - [Learn more](../../platform/using/managing-profiles.md),
+* update profiles - [Learn more](../../platform/using/updating-data.md)
+* export recipients - [Learn more](../../platform/using/exporting-and-importing-profiles.md)
+* create recipient groups - [Learn more](../../platform/using/creating-and-managing-lists.md)
 
-Om du vill komma åt avancerade funktioner och konfigurationer måste du klicka på ikonen **[!UICONTROL Explorer]**.
+To access advanced functionalities and configurations, you need to click the **[!UICONTROL Explorer]** icon. 
 
 ![](assets/d_ncs_user_interface01.png)
 
-Den allmänna layouten för Adobe Campaign Explorer visas på [den här sidan](../../platform/using/adobe-campaign-explorer.md).
+The general layout of the Adobe Campaign explorer is presented in [this page](../../platform/using/adobe-campaign-explorer.md).
 
 >[!NOTE]
 >
->Du kan även visa en avancerad vy av den här listan från Adobe Campaign-trädet genom att klicka på länken **[!UICONTROL Profiles and targets > Recipients]**. Listvisningen kan konfigureras efter dina behov. Du kan lägga till eller ta bort kolumner, definiera kolumnordning, sortera data osv. Listvisningskonfigurationen beskrivs i [den här sidan](../../platform/using/adobe-campaign-ui-lists.md).
+>You can also display an advanced view of this list from the Adobe Campaign tree by clicking the **[!UICONTROL Profiles and targets > Recipients]** link. The list display can be configured to suit your needs. You can add or delete columns, define column order, sort data, etc. List display configuration is described in [this page](../../platform/using/adobe-campaign-ui-lists.md).  
 >
->Du kan också definiera mottagarvyer. Mer information om den här funktionen finns i [det här avsnittet](../../platform/using/access-management-folders.md).
+>You can also define recipient views. For further information about this functionality, refer to [this section](../../platform/using/access-management-folders.md).
 
-## Aktiva profiler {#active-profiles}
+## Active profiles {#active-profiles}
 
-En aktiv profil är en profil som kunden har försökt kommunicera med under de senaste 12 månaderna via valfri kanal.
+An active profile is a profile that customer has attempted to communicate with during the past 12 months via any channel.
 
-Enligt avtalet har var och en av instanserna i Campaign ett visst antal aktiva profiler som räknas för faktureringsändamål. Se ditt senaste kontrakt för referens om antalet köpta aktiva profiler. Läs mer i [Adobe Campaign produktbeskrivning](https://helpx.adobe.com/se/legal/product-descriptions/adobe-campaign-managed-cloud-services.html){target="_blank"}.
+According to your contract, each of your Campaign instances is provisioned with a specific amount of active profiles that are counted for billing purposes. Please refer to your latest contract for reference on number of purchased active profiles. Learn more in [Adobe Campaign product description](https://helpx.adobe.com/legal/product-descriptions/adobe-campaign-managed-cloud-services.html){target="_blank"}.
 
-Du kan övervaka antalet aktiva profiler på instansen direkt från Campaign-kontrollpanelen. Mer information finns i dokumentationen för [Kontrollpanelen](https://experienceleague.adobe.com/docs/control-panel/using/performance-monitoring/active-profiles-monitoring.html?lang=sv-SE){target="_blank"}.
+You can monitor the number of active profiles on your instance directly from Campaign Control Panel. For more on this, refer to the [Control Panel documentation](https://experienceleague.adobe.com/docs/control-panel/using/performance-monitoring/active-profiles-monitoring.html){target="_blank"}.
 
-Följande skyddsräcken och begränsningar gäller:
+The following guardrails and limitations apply:
 
-* En profil som har valts av flera leveranser räknas bara en gång.
-* Profiler som är inriktade på social marknadsföring på X (Twitter) eller Facebook räknas inte som aktiva profiler.
-* Antalet aktiva profiler är endast tillgängligt för **marknadsföringsinstanser**. Den är inte tillgänglig för körningsinstanser, vilket innebär MID-instanser (mellanleverantörer) och RT-instanser (Message Center/Real-time Messaging).
-* Antalet baseras på mottagarens primärnyckel. Om det finns en profil i två olika mottagartabeller kan den därför räknas två gånger som en aktiv profil.
+* A profile that has been targeted by several deliveries is counted only once. 
+* Profiles targeted in the context of Social marketing on X (Twitter) or Facebook are not taken into account as active profiles.
+* The count of active profiles is available for **Marketing instances** only. It is not available for Execution instances, meaning MID (mid sourcing) and RT (Message Center / Real-time messaging) instances.
+* The count is based on the recipient primary key. As a consequence, if a profile is present in two different recipient tables, it can be counted twice as an active profile.
 
 
-## Självstudievideo {#create-profiles-video}
+## Tutorial video {#create-profiles-video}
 
-Lär dig hur du får åtkomst till profildata, sorterar och filtrerar profiler och skapar och hanterar profiler manuellt.
+Learn how to access profile data, sort and filter profiles and manually create and manage profiles.
 
-I den här videon förklaras också Adobe Campaign Classic överensstämmelse med de allmänna dataskyddsreglerna.
+This video also explains the compliance of Adobe Campaign Classic with General Data Protection Regulations. 
 
 >[!VIDEO](https://video.tv.adobe.com/v/35611?quality=12)
 
-Ytterligare Campaign Classic om instruktionsvideor finns [här](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=sv).
+Additional Campaign Classic how-to videos are available [here](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html).
 
-**Se även**
+**See also**
 
-* [Sekretesshantering i Campaign](https://helpx.adobe.com/se/campaign/kb/acc-privacy.html)
+* [Privacy management in Campaign](https://helpx.adobe.com/campaign/kb/acc-privacy.html)
 
-* [Skapa frågor och segmentdata i arbetsflöden](../../workflow/using/targeting-data.md)
+* [Create queries and segment data in workflows](../../workflow/using/targeting-data.md)
 
-* [Välj målmappning](../../delivery/using/steps-defining-the-target-population.md#select-a-target-mapping)
+* [Select target mapping](../../delivery/using/steps-defining-the-target-population.md#select-a-target-mapping)
+
+-->

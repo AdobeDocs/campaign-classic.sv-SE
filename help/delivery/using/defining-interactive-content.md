@@ -5,8 +5,10 @@ description: Lär dig definiera interaktivt och dynamiskt e-postinnehåll med AM
 badge-v8: label="Gäller även för v8" type="Positive" tooltip="Gäller även Campaign v8"
 feature: Email Design
 role: User
+hide: true
+hidefromtoc: true
 exl-id: 3110c371-bbf2-4ab2-a701-3f348b5c1e7f
-source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
+source-git-commit: 42cec0e9bede94a2995a5ad442822512bda14f2b
 workflow-type: tm+mt
 source-wordcount: '1422'
 ht-degree: 3%
@@ -23,7 +25,7 @@ Med AMP for Email kan man
 
 Mer information om hur du testar och skickar AMP-e-post finns i [det här avsnittet](#targeting-amp-email).
 
-Den här funktionen är tillgänglig via ett dedikerat paket i Adobe Campaign. Beroende på din behörighet och din distributionsmodell kan du installera det här paketet eller kontakta Adobe för att få det installerat åt dig.
+Den här funktionen är tillgänglig via ett dedikerat paket i Adobe Campaign. Beroende på din behörighet och distributionsmodell kan du installera det här paketet eller kontakta Adobe för att få det installerat åt dig.
 
 >[!NOTE]
 >
@@ -39,7 +41,7 @@ Exempel:
 * Innehållet hålls uppdaterat i meddelandet.
 * Mottagarna kan svara på ett formulär utan att lämna sin inkorg.
 
-AMP for Email är kompatibelt med befintliga e-postmeddelanden. AMP-versionen av meddelandet är inbäddad i e-postmeddelandet som en ny MIME-del, förutom HTML och/eller oformaterad text, vilket garanterar kompatibilitet för alla e-postklienter.
+AMP for Email är kompatibelt med befintliga e-postmeddelanden. AMP-versionen av meddelandet är inbäddad i e-postmeddelandet som en ny MIME-del, utöver HTML och/eller oformaterad text, vilket garanterar kompatibilitet för alla e-postklienter.
 
 Mer information om AMP för e-postformat, specifikationer och krav finns i [dokumentationen för AMP-utvecklare](https://amp.dev/documentation/guides-and-tutorials/learn/email-spec/amp-email-format/?format=email).
 
@@ -85,7 +87,7 @@ Följ stegen nedan för att skapa ett e-postmeddelande i AMP-format.
 
    Du kan till exempel använda produktlistkomponenten från AMP-mallen och upprätthålla en lista över produkter från ett tredjepartssystem eller till och med inuti Adobe Campaign. När du justerar ett pris eller något annat element visas det automatiskt när mottagarna öppnar e-postmeddelandet från sin postlåda.
 
-1. Anpassa ert AMP-innehåll efter behov, precis som ni brukar göra med HTML-formatet i Adobe Campaign, med personaliseringsfält och personaliseringsblock.
+1. Anpassa ert AMP-innehåll efter behov, som ni vanligtvis gör med HTML-format i Adobe Campaign, med personaliseringsfält och personaliseringsblock.
 
    ![](assets/amp_tab_perso.png)
 
@@ -186,7 +188,7 @@ Om du vill skicka AMP-e-post till Mail.ru-adresser följer du de krav och steg s
 
 När ditt AMP-innehåll och din reservalternativ är klara, och när du har definierat ett kompatibelt mål, kan du skicka e-postmeddelandet som vanligt.
 
-För närvarande stöder endast Gmail och Mail.ru AMP-formatet under vissa villkor. Du kan ange adresser från andra e-postleverantörer som mål, men de får HTML eller oformaterad text i din e-postadress.
+För närvarande stöder endast Gmail och Mail.ru AMP-formatet under vissa villkor. Du kan ange adresser från andra e-postleverantörer som mål, men de får HTML-versionen eller den oformaterade textversionen av ditt e-postmeddelande.
 
 >[!IMPORTANT]
 >

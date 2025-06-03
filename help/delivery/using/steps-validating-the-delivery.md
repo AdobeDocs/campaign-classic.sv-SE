@@ -4,11 +4,13 @@ title: Validera leveransen
 description: Lär dig validera en leverans
 feature: Deliverability, Email Rendering, Proofs
 role: User
+hide: true
+hidefromtoc: true
 exl-id: c2f4d8d0-f0fe-4d1a-92fd-91edaf9729f3
-source-git-commit: 41296a0acaee93d31874bf58287e51085c6c1261
+source-git-commit: 42cec0e9bede94a2995a5ad442822512bda14f2b
 workflow-type: tm+mt
 source-wordcount: '1653'
-ht-degree: 5%
+ht-degree: 4%
 
 ---
 
@@ -127,7 +129,7 @@ Om en leverans är för stor är det bättre att tilldela den en låg prioritet 
 
 ## Skicka en korrektur {#sending-a-proof}
 
-För att upptäcka eventuella fel i meddelandekonfigurationen rekommenderar Adobe att du skapar en leveransvalideringscykel. Se till att innehållet godkänns så ofta som det behövs genom att skicka korrekturer till testmottagare. Ett korrektur ska skickas varje gång en ändring görs för att godkänna innehållet.
+Adobe rekommenderar att du skapar en leveransverifieringscykel för att upptäcka eventuella fel i meddelandekonfigurationen. Se till att innehållet godkänns så ofta som det behövs genom att skicka korrekturer till testmottagare. Ett korrektur ska skickas varje gång en ändring görs för att godkänna innehållet.
 
 >[!NOTE]
 >

@@ -5,23 +5,25 @@ description: Lär dig hur du skickar, övervakar och spårar SMS i Campaign
 feature: SMS
 role: User
 exl-id: 442672ee-5037-49b7-a06f-3a99920ce2b6
-source-git-commit: 41296a0acaee93d31874bf58287e51085c6c1261
+source-git-commit: 42cec0e9bede94a2995a5ad442822512bda14f2b
 workflow-type: tm+mt
-source-wordcount: '962'
-ht-degree: 3%
+source-wordcount: '887'
+ht-degree: 0%
 
 ---
 
-# Skicka, övervaka och spåra SMS-leveranser{#sms-properties}
+# Ytterligare konfiguration{#sms-properties}
 
-## Skicka SMS-meddelanden {#sending-sms-messages}
+<!--
+## Send SMS messages {#sending-sms-messages}
 
-Om du vill godkänna meddelandet och skicka det till mottagarna av leveransen som skapas klickar du på **[!UICONTROL Send]**.
+To approve your message and send it to the recipients of the delivery being created, click **[!UICONTROL Send]**.
 
-Den detaljerade processen för att validera och skicka en leverans presenteras i avsnitten nedan:
+The detailed process when validating and sending a delivery is presented in the sections below:
 
-* [Validera leveransen](steps-validating-the-delivery.md)
-* [Skicka leveransen](steps-sending-the-delivery.md)
+* [Validate the delivery](steps-validating-the-delivery.md)
+* [Send the delivery](steps-sending-the-delivery.md)
+-->
 
 ## Avancerade parametrar {#advanced-parameters}
 
@@ -55,13 +57,15 @@ Följande alternativ är tillgängliga:
 
 * **Maximalt antal SMS per meddelande**: Med det här alternativet kan du ange hur många SMS som ska användas för att skicka ett meddelande. Om värdet är 0 kan du skicka meddelandet med ett SMS. Om antalet SMS är inställt på 1 eller 2 och meddelandet överskrider tröskelvärdet skickas det inte.
 
-## Övervaka och spåra SMS {#monitoring-and-tracking-sms-deliveries}
+<!--
+## Monitor and track SMS {#monitoring-and-tracking-sms-deliveries}
 
-När du har skickat meddelanden kan du övervaka och spåra dina leveranser. Mer information om detta hittar du i dessa avsnitt.
+After sending messages, you can monitor and track your deliveries. For more on this, refer to these sections:
 
-* [Övervaka en leverans](about-delivery-monitoring.md)
-* [Förstå leveransfel](understanding-delivery-failures.md)
-* [Om att spåra meddelanden](about-message-tracking.md)
+* [Monitor a delivery](about-delivery-monitoring.md)
+* [Understand delivery failures](understanding-delivery-failures.md)
+* [About message tracking](about-message-tracking.md)
+-->
 
 ## Bearbeta inkommande meddelanden {#processing-inbound-messages}
 

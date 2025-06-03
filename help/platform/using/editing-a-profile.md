@@ -7,10 +7,10 @@ audience: platform
 content-type: reference
 topic-tags: profile-management
 exl-id: 0f3a5582-5c90-4393-bee8-d9e2f07e5982
-source-git-commit: ec774cc10a69a694b3c2bf5a6f662afd12a1435a
+source-git-commit: 42cec0e9bede94a2995a5ad442822512bda14f2b
 workflow-type: tm+mt
-source-wordcount: '471'
-ht-degree: 4%
+source-wordcount: '115'
+ht-degree: 2%
 
 ---
 
@@ -34,68 +34,77 @@ Flikar och deras innehåll beror på din konfiguration och installerade paket.
 >
 >Mer information finns på [den här sidan](../../configuration/using/about-schema-edition.md).
 
-## fliken Allmänt {#general-tab}
+>[!NOTE]
+>
+>Mer information om hur du redigerar profiler och kommer åt dem finns i den detaljerade dokumentationen för [Campaign v8](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/audience/view-profiles){target=_blank}.
 
-Den här skärmen innehåller alla allmänna data om den valda profilen. Den innehåller i synnerhet efternamn, förnamn, e-postadress, e-postmottagningsformat osv. Det ser ut så här:
+
+
+<!--
+## General tab {#general-tab}
+
+This screen contains all general data about the selected profile. In particular, it contains the last name, first name, email address, email reception format, etc. It looks like this:
 
 ![](assets/s_ncs_user_profile_general_tab.png)
 
 >[!NOTE]
 >
->När alternativet **[!UICONTROL No longer contact (by any channel)]** har valts innebär det att profilen är på blockeringslista, dvs. att profilen har uttryckt en önskan om att inte bli kontaktad (t.ex. genom att klicka på en länk för att avbryta prenumerationen i ett nyhetsbrev). De kommer inte längre att vara inriktade på leveranser i någon kanal (e-post, direktreklam osv.). Mer information finns på [den här sidan](../../delivery/using/understanding-quarantine-management.md).
+>When the **[!UICONTROL No longer contact (by any channel)]** option is selected, this means that the profile is on denylist, i.e. the profile has expressed a wish not to be contacted (for example, by clicking an unsubscription link in a newsletter). They will no longer be targeted by deliveries on any channel (email, direct mail, etc.). For more on this, refer to [this page](../../delivery/using/understanding-quarantine-management.md).
 
-## Fliken Kontaktinformation {#contact-information-tab}
+## Contact information tab {#contact-information-tab}
 
-Den här skärmen innehåller den valda profilens e-postadress. Det ser ut så här:
+This screen contains the direct mail address of the selected profile. It looks like this:
 
 ![](assets/s_ncs_user_profile_details_tab.png)
 
-På den här skärmen visas adressens kvalitetsindex samt hur många fel adressen innehåller. Denna information används direkt av postföretaget baserat på antalet fel som påträffats under tidigare leveranser och kan inte ändras manuellt.
+This screen shows the quality index of the address, as well as how many errors the address contains. This information is used directly by the mail carrier based on the number of errors found during previous deliveries, and is not modifiable manually.
 
-## Fliken Annan {#other-tab}
+## Other tab {#other-tab}
 
-Den här skärmen innehåller användardefinierade fält som kan anpassas efter behov. Du kan också ändra namn på fälten och definiera deras format via **[!UICONTROL Field properties...]**, vilket visas nedan:
+This screen contains user-defined fields that can be personalized based on requirements. You can also change the names of the fields and define their format, via **[!UICONTROL Field properties...]**, as shown below:
 
 ![](assets/s_ncs_user_profile_others_tab.png)
 
 >[!NOTE]
 >
->Mer information om fältegenskaper och om hur du lägger till fält finns på [den här sidan](../../configuration/using/new-field-wizard.md).
+>For more on field properties and on adding fields, refer to [this page](../../configuration/using/new-field-wizard.md).
 
-## Fliken Listor {#lists-tab}
+## Lists tab {#lists-tab}
 
-På den här skärmen visas de grupper som den valda profilen tillhör. Klicka på **[!UICONTROL Add]** om du vill prenumerera på profilen i en lista. Klicka på **[!UICONTROL Detail]** om du vill visa beskrivningen och listan med profiler i den markerade listan.
+This screen displays the group(s) to which the selected profile belongs. Click **[!UICONTROL Add]** to subscribe the profile to a list. Click **[!UICONTROL Detail]** to display the description and the list of profiles in the selected list.
 
 ![](assets/s_ncs_user_profile_groups_tab_details.png)
 
-Mer information finns i [Skapa och hantera listor](../../platform/using/creating-and-managing-lists.md).
+For more on this, refer to [Create and manage lists](../../platform/using/creating-and-managing-lists.md).
 
-## Fliken Prenumerationer {#subscriptions-tab}
+## Subscriptions tab {#subscriptions-tab}
 
-Den här skärmen innehåller de informationstjänster som profilen har prenumererat på.
+This screen contains the information services to which the profile has subscribed.
 
 ![](assets/s_ncs_user_profile_subscript_tab_details.png)
 
-Knappen **[!UICONTROL Detail]** visar egenskaperna för den valda prenumerationen. Knappen **[!UICONTROL Add]** används för att lägga till en ny prenumeration manuellt.
+The **[!UICONTROL Detail]** button displays the properties of the selected subscription. The **[!UICONTROL Add]** button is used to add a new subscription manually.
 
-Mer information finns på [den här sidan](../../delivery/using/managing-subscriptions.md).
+For more on this, refer to [this page](../../delivery/using/managing-subscriptions.md).
 
-## Fliken Leveranser {#deliveries-tab}
+## Deliveries tab {#deliveries-tab}
 
-På den här skärmen visas leveransloggarna för den valda profilen. Du kan även visa etiketter, datum och status för leveransåtgärder som adresserats till profilen via alla kanaler.
+This screen displays the delivery logs for the selected profile. You can also display the labels, dates, and status of the delivery actions addressed to the profile via all channels.
 
 ![](assets/s_ncs_user_profile_delivery_tab.png)
 
-## Fliken Spårning {#tracking-tab}
+## Tracking tab {#tracking-tab}
 
-På den här skärmen kan du visa spårningsloggarna för den valda profilen. Den här informationen används för att spåra profilbeteende efter leveranser.
+This screen lets you view the tracking logs for the selected profile. This information is used to track profile behavior following deliveries.
 
 ![](assets/s_ncs_user_profile_tracking_tab.png)
 
-På den här fliken visas den kumulativa summan av alla URL:er som spåras i leveranser.
+This tab shows the cumulative total of all URLs tracked in deliveries.
 
-Listan är konfigurerbar och innehåller vanligtvis: klickad URL-adress, datum och tid för klickningen samt dokumentet som innehöll URL-adressen.
+The list is configurable, and usually contains: the URL clicked, date and time of click, and the document that contained the URL.
 
 >[!NOTE]
 >
->Mer information om spårningsfunktioner finns på [den här sidan](../../delivery/using/delivery-dashboard.md).
+>For more on tracking functionality, please refer to [this page](../../delivery/using/delivery-dashboard.md).
+
+-->

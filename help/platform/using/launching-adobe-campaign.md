@@ -7,10 +7,10 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: 4d9c5b24-83a2-4495-a56c-5bc376d69703
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: 42cec0e9bede94a2995a5ad442822512bda14f2b
 workflow-type: tm+mt
-source-wordcount: '501'
-ht-degree: 5%
+source-wordcount: '77'
+ht-degree: 3%
 
 ---
 
@@ -24,86 +24,93 @@ Campaign Client-konsolen är en avancerad klient som gör att du kan ansluta til
 >
 >Kontrollera system- och verktygskompatibiliteten med Adobe Campaign Client Console i [kompatibilitetsmatrisen](../../rn/using/compatibility-matrix.md#ClientConsoleoperatingsystems)
 
-## Starta Adobe Campaign {#starting-adobe-campaign}
+>[!NOTE]
+>
+> Mer information om hur du installerar och loggar in på Adobe Campaign finns i genomgången av [Campaign v8-dokumentationen](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/new/connect){target=_blank}.
 
-Du kan starta Adobe Campaign genom att välja **[!UICONTROL Start / All Programs / Adobe Campaign v.X / Adobe Campaign client console]**.
+<!--
+## Start Adobe Campaign {#starting-adobe-campaign}
 
-I klientkonsolens anslutningsfönster kan du välja eller konfigurera befintliga databaser och ansluta till dem med ett användarnamn och lösenord:
+You can start Adobe Campaign by selecting **[!UICONTROL Start / All Programs / Adobe Campaign v.X / Adobe Campaign client console]**.
+
+The client console connection window lets you select or configure existing databases and connect to them using a user name and password:
 
 ![](assets/acc-logon.png)
 
-## Anslut till Adobe Campaign {#connecting-to-adobe-campaign}
+## Connect to Adobe Campaign {#connecting-to-adobe-campaign}
 
-Du kan ansluta till Adobe Campaign med din Adobe ID. Mer information finns på [den här sidan](../../integrations/using/about-adobe-id.md).
+You can connect to Adobe Campaign using your Adobe ID. For more on this, refer to [this page](../../integrations/using/about-adobe-id.md).
 
-Du kan även ansluta med en dedikerad inloggning/ett dedikerat lösenord:
+You can also connect with a dedicated login/password:
 
-1. Ange operatorkontots identifierare i fältet **[!UICONTROL Login]**.
+1. Enter the operator account identifier in the **[!UICONTROL Login]** field.
 
-   Din identifierare anges av administratören för din Adobe Campaign-plattform.
+   Your identifier is given by the administrator of your Adobe Campaign platform.
 
-1. Ange ditt lösenord i fältet **[!UICONTROL Password]**.
+1. Enter your password in the **[!UICONTROL Password]** field.
 
-   Första gången du öppnar databasen är ditt lösenord det du får av administratören. När du är ansluten kan du ändra ditt lösenord via menyn **[!UICONTROL Tools > Change password...]**. Information om operatorer och anslutningar finns i [Åtkomsthantering](../../platform/using/access-management.md).
+   The first time you access the database, your password is the one given to you by the administrator. Once you are connected, you can change your password via the **[!UICONTROL Tools > Change password...]** menu. Details on operators and connections are available in [Access management](../../platform/using/access-management.md).
 
-1. Bekräfta genom att klicka på **[!UICONTROL LOG IN]**.<!--You can also press the **Enter** key to launch connection.-->
+1. Click **[!UICONTROL LOG IN]** to confirm.<!--You can also press the **Enter** key to launch connection.
 
-Du har nu åtkomst till [Adobe Campaign-arbetsytan](../../platform/using/adobe-campaign-workspace.md).
+You can now access [Adobe Campaign workspace](../../platform/using/adobe-campaign-workspace.md).
 
-Vissa kortkommandon är tillgängliga på **[!UICONTROL Sign in screen]**:
-* Alla objekt som kan användas kan markeras med tangenten **Tabb** (uppifrån och ned) eller tangenten **Tabb** + **Skift** (uppifrån och ned).
-* Du kan även starta anslutningen genom att trycka på tangenten **Enter**.
-* Du kan använda tangenten **Escape** för att återställa fälten **[!UICONTROL Login]** och **[!UICONTROL Password]** till de senast godkända anslutningsvärdena.
+Some keyboard shortcuts are available on the **[!UICONTROL Sign in screen]**:
+* All actionable items are selectable through the **Tab** key (top to bottom) or the **Tab** + **Shift** keys (bottom to top).
+* To launch connection, you can also press the **Enter** key.
+* You can use the **Escape** key to reset the **[!UICONTROL Login]** and **[!UICONTROL Password]** fields to the last successful connection values.
 
-## Konfigurera anslutningar {#setting-up-connections}
+## Set up connections {#setting-up-connections}
 
-Du kommer åt inställningarna för serveranslutningen via länken ovanför indatazonen.
+You can access the server connection settings via the link above the input zone.
 
 ![](assets/s_ncs_user_connections_management.png)
 
-Klicka på **[!UICONTROL Add > Connection]** i fönstret **[!UICONTROL Connections]**.
+In the **[!UICONTROL Connections]** window, click **[!UICONTROL Add > Connection]**.
 
-Du måste sedan definiera anslutningsinställningarna. Så här gör du:
+You must then define the connection settings. To do this:
 
-1. Ange ett **[!UICONTROL Label]** som du vill tilldela ett namn till din databasanslutning.
+1. Enter a **[!UICONTROL Label]** to assign a name to your database connection.
 
-1. Lägg till adressen till programservern i fältet **[!UICONTROL URL]**. Kontakta administratören om du inte känner till anslutnings-URL:en.
+1. Add the address of the application server in the **[!UICONTROL URL]** field. If you do not know the connection URL, contact the administrator.
 
-1. Kontrollera **[!UICONTROL Connect with an Adobe ID]** för att se om operatorerna kan ansluta till konsolen med hjälp av deras Adobe ID. Mer information finns på [den här sidan](../../integrations/using/about-adobe-id.md).
+1. Check **[!UICONTROL Connect with an Adobe ID]** for the operators to connect to the console using their Adobe ID. For more on this, refer to [this page](../../integrations/using/about-adobe-id.md).
 
-1. Klicka på **[!UICONTROL OK]** för att validera.
+1. Click **[!UICONTROL OK]** to validate.
 
-## Operatörer och behörigheter {#operators-and-permissions}
+## Operators and permissions {#operators-and-permissions}
 
-Identifierare och lösenord för operatorer med åtkomst till programvaran och deras respektive behörigheter definieras av din Adobe Campaign-systemadministratör i noden **[!UICONTROL Administration > Access management > Operators]** i Adobe Campaign-trädet.
+The identifiers and passwords of operators with access to the software and their respective permissions are defined by your Adobe Campaign system administrator in the **[!UICONTROL Administration > Access management > Operators]** node of the Adobe Campaign tree.
 
-Den här funktionen beskrivs i avsnittet [Åtkomsthantering](../../platform/using/access-management.md).
+This functionality is detailed in the [Access management](../../platform/using/access-management.md) section.
 
-## Koppla från Adobe Campaign {#disconnecting-from-adobe-campaign}
+## Disconnect from Adobe Campaign {#disconnecting-from-adobe-campaign}
 
-Om du vill koppla från Adobe Campaign använder du den första ikonen i ikonfältet.
+To disconnect from Adobe Campaign, use the first icon in the icon bar.
 
 ![](assets/s_ncs_user_deconnexion.png)
 
 >[!NOTE]
 >
->Du kan också stänga programmet utan att logga ut först.
+>You can also close the application without logging off first.
 
-## Skaffa en Adobe Campaign-version {#getting-your-campaign-version}
+## Get your Adobe Campaign version {#getting-your-campaign-version}
 
-På menyn **[!UICONTROL Help > About...]** kan du komma åt följande information:
+The **[!UICONTROL Help > About...]** menu lets you access the following information:
 
-* **version**-nummer för Campaign-klientkonsolen och programservern
-* **build**-nummer för Campaign-klientkonsolen och programservern
-* en länk till att kontakta Adobe kundtjänst
-* länkar till Adobe sekretesspolicy, användarvillkor och cookies
+* **version** number for Campaign client console and application server
+* **build** number for Campaign client console and application server
+* a link to contact Adobe Customer Care
+* links to Adobe Privacy Policy, Terms of Use and Cookies Policy
 
 ![](assets/about-acc.png)
 
-När du kontaktar kundtjänstteamet på Adobe måste du ange versionsnummer och build-nummer för Adobe Campaign klientkonsol och programserver.
+Whenever you reach out to Adobe Customer Care team, you need to provide the version number and build number of your Adobe Campaign client console and application server.
 
-**Relaterade ämnen**:
+**Related topics**:
 
-* [Adobe Campaign hjälp- och supportalternativ](../../support.md)
+* [Adobe Campaign Help and Support options](../../support.md)
 * [Adobe Campaign Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html)
-* [Adobe Experience Cloud support- och expertsessioner](https://helpx.adobe.com/se/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)
+* [Adobe Experience Cloud Support and Expert sessions](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)
+
+-->

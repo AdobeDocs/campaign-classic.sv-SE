@@ -7,9 +7,9 @@ feature: Application Settings, Permissions
 role: User, Admin
 level: Beginner
 exl-id: 0ba8a3d0-36d7-42f3-b281-0255e49b5fa3
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: 42cec0e9bede94a2995a5ad442822512bda14f2b
 workflow-type: tm+mt
-source-wordcount: '758'
+source-wordcount: '773'
 ht-degree: 1%
 
 ---
@@ -19,6 +19,11 @@ ht-degree: 1%
 
 
 Varje mapp i Utforskarens navigeringsträd har behörighet att läsa, skriva och ta bort. För att få åtkomst till en fil måste en operator eller grupp av operatorer åtminstone ha läsåtkomst till den.
+
+>[!NOTE]
+>
+>Mer information om behörigheter för mappar finns i [dokumentationen för Campaign v8](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/admin/permissions/folder-permissions){target=_blank}.
+
 
 ## Mappar och vyer {#folders-and-views}
 

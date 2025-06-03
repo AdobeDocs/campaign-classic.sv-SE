@@ -7,7 +7,7 @@ feature: Access Management, Permissions
 role: User, Admin
 level: Beginner
 exl-id: 580282ce-ee30-422a-8724-9c328637cc39
-source-git-commit: 8aceafa362b80f6e34edfd91a71551a58501a3d0
+source-git-commit: 42cec0e9bede94a2995a5ad442822512bda14f2b
 workflow-type: tm+mt
 source-wordcount: '1259'
 ht-degree: 2%
@@ -18,18 +18,17 @@ ht-degree: 2%
 
 >[!CAUTION]
 >
->Från och med Campaign Classic v7.3.1 ska alla operatorer använda [Adobe Identity Management System (IMS)](https://helpx.adobe.com/se/enterprise/using/identity.html){target="_blank"} för att ansluta till Campaign.
->
->Som en del i arbetet med att stärka säkerhets- och autentiseringsprocessen rekommenderar Adobe Campaign att man migrerar alla befintliga operatörers autentiseringsläge från den inbyggda autentiseringen av inloggnings-/lösenordsinformationen till Adobe Identity Management System (IMS). Lär dig hur du migrerar dina operatorer på [den här sidan](../../technotes/using/migrate-users-to-ims.md).
+>* Från och med Campaign Classic v7.3.1 bör alla operatorer använda [Adobe Identity Management System (IMS)](https://helpx.adobe.com/enterprise/using/identity.html){target="_blank"} för att ansluta till Campaign.
+>  >Som en del i arbetet med att stärka säkerhets- och autentiseringsprocessen rekommenderar Adobe Campaign att man migrerar alla befintliga operatörers autentiseringsläge från den inbyggda autentiseringen av inloggnings-/lösenordsinformationen till Adobe Identity Management System (IMS). Lär dig hur du migrerar dina operatorer på [den här sidan](../../technotes/using/migrate-users-to-ims.md).
 > 
->Observera att följande avsnitt inte längre gäller efter migreringen.  Lär dig hur du ställer in behörigheter med Adobe IMS i [dokumentationen för Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/admin/permissions/gs-permissions.html?lang=sv-SE){target="_blank"}.
+>* Observera att följande avsnitt inte längre gäller efter migreringen.  Lär dig hur du konfigurerar behörigheter med Adobe IMS i [dokumentationen för Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/admin/permissions/gs-permissions.html){target="_blank"}.
 
 
 ## Kom igång med Campaign-operatörer {#about-operators}
 
 >[!NOTE]
 >
->Dessa procedurer gäller endast för operatorer som ansluter till Campaign med inbyggd autentisering. Information om Adobe IMS-autentisering finns i [den här dokumentationen](https://helpx.adobe.com/se/enterprise/using/manage-users-individually.html#_blank).
+>Dessa procedurer gäller endast för operatorer som ansluter till Campaign med inbyggd autentisering. Information om Adobe IMS-autentisering finns i [den här dokumentationen](https://helpx.adobe.com/enterprise/using/manage-users-individually.html#_blank).
 
 En operator är en Adobe Campaign-användare som har behörighet att logga in och utföra åtgärder.
 
@@ -115,7 +114,7 @@ Med länken **[!UICONTROL Edit the access parameters...]** kan du komma åt föl
 
   >[!NOTE]
   >
-  >Även om deras konto är inaktiverat kan operatorn fortfarande ta emot aviseringar eller meddelanden från Campaign. Om du inte längre vill skicka Campaign-meddelanden till den här operatorn rekommenderar Adobe att du tar bort e-postadressen från deras profil.
+  >Även om deras konto är inaktiverat kan operatorn fortfarande ta emot aviseringar eller meddelanden från Campaign. Adobe rekommenderar att du tar bort e-postadressen från profilen om du inte längre vill skicka Campaign-meddelanden till den här operatorn.
 
 * Med alternativet **[!UICONTROL Forbid access from the rich client]** kan du begränsa användningen av Adobe Campaign till [webbåtkomst](../../platform/using/adobe-campaign-workspace.md#console-and-web-access) eller via API:er: åtkomst till Adobe Campaign klientkonsol är inte längre tillgängligt.
 * Det går att länka en säkerhetszon till operatören. Mer information finns på [den här sidan](../../installation/using/security-zones.md).

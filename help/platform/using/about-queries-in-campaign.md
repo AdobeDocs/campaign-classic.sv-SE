@@ -7,10 +7,10 @@ feature: Query Editor
 role: User, Data Architect
 level: Beginner
 exl-id: 2db1034d-cad6-4fb0-8646-dd9099080ab0
-source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
+source-git-commit: 42cec0e9bede94a2995a5ad442822512bda14f2b
 workflow-type: tm+mt
-source-wordcount: '186'
-ht-degree: 66%
+source-wordcount: '203'
+ht-degree: 57%
 
 ---
 
@@ -26,6 +26,8 @@ Det här verktyget kombinerar alla frågemöjligheter i Adobe Campaign. Du kan t
 
 Frågor skapas med hjälp av fält i den valda tabellen eller med hjälp av en formel.
 
-[Klicka här](../../workflow/using/query.md) för att lära dig om frågeredigeraren i Campaign.
+>[!NOTE]
+>
+>Mer information om frågor och hur du skapar dem finns i [Campaign v8-dokumentationen](../../workflow/using/query.md).
 
-![](assets/query_recipients_4.png)
+![Skärmbild som visar ett exempel på en fråga.](assets/query_recipients_4.png)
