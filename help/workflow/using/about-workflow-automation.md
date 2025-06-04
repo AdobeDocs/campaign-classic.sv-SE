@@ -4,16 +4,16 @@ title: Om arbetsflöden
 description: Automatisera processerna med arbetsflöden, hantera data och målgrupper, skicka meddelanden med mera
 feature: Workflows, Data Management
 exl-id: 024a7344-9376-4ff3-926a-003148229f9f
-source-git-commit: fd082d5427314fbc91966f89048da5f193658f87
+source-git-commit: b45cc49f15f51e3624c46713c95966f465b2e4da
 workflow-type: tm+mt
-source-wordcount: '236'
+source-wordcount: '233'
 ht-degree: 7%
 
 ---
 
 # Automatisera med arbetsflöden {#gs-workflows}
 
-Med Adobe Campaign Workflow Module kan teamet effektivisera och automatisera kompletta affärsprocesser på hela plattformen. Med ett intuitivt grafiskt gränssnitt kan ni utforma och hantera arbetsflöden som koordinerar uppgifter som datasegmentering, kampanjutförande, filhantering och till och med användargodkännanden - allt på ett och samma ställe.
+Med Adobe Campaign arbetsflöden kan teamet effektivisera och automatisera hela affärsprocesser på hela plattformen. Med ett intuitivt grafiskt gränssnitt kan ni utforma och hantera arbetsflöden som koordinerar uppgifter som datasegmentering, kampanjutförande, filhantering och till och med användargodkännanden - allt på ett och samma ställe.
 
 Du kan t.ex. automatisera en process för att hämta en fil från en fjärrserver, extrahera dess innehåll och läsa in data till Adobe Campaign-servern sömlöst, vilket minskar den manuella ansträngningen och ökar effektiviteten. Arbetsflödesmotorn ser till att alla steg körs på ett tillförlitligt sätt och spåras för att ge synlighet och kontroll.
 
@@ -21,25 +21,25 @@ Du kan t.ex. automatisera en process för att hämta en fil från en fjärrserve
 
 >[!TAB Arbetsflödesdokumentation]
 
-Mer information om arbetsflödeshantering finns i [dokumentationen för Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/about-workflows.html?lang=sv-SE){target=_blank}.
+Mer information om arbetsflödeshantering finns i [dokumentationen för Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/about-workflows.html){target=_blank}.
 
 
-[![bild](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/about-workflows.html?lang=sv-SE){target=_blank}
+[![bild](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/about-workflows.html){target=_blank}
 
 
 >[!TAB Användbara länkar]
 
 Lär dig de viktigaste stegen för hantering av arbetsflöden i dokumentationen för Campaign v8:
 
-* [Arbetsflödesaktiviteter](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/activities.html?lang=sv-SE){target=_blank}: En aktivitet beskriver en uppgiftsmall. Arbetsflödena innefattar målinriktning, flödeskontroll, åtgärder och händelseaktiviteter.
+* [Arbetsflödesaktiviteter](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/activities.html){target=_blank}: En aktivitet är en uppgiftsmall. Arbetsflödena innefattar målinriktning, flödeskontroll, åtgärder och händelseaktiviteter.
 
-* [Bygg ett arbetsflöde](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/build-a-workflow.html?lang=sv-SE){target=_blank}: Lär dig hur du skapar och kör målgruppsanpassning, kampanjer och tekniska arbetsflöden.
+* [Bygg ett arbetsflöde](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/build-a-workflow.html){target=_blank}: Lär dig hur du skapar och kör målgruppsanpassning, kampanjer och tekniska arbetsflöden.
 
-* [God praxis](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/workflow-best-practices.html?lang=sv-SE){target=_blank}: Lär dig mer om riktlinjerna för att optimera prestanda för kampanjarbetsflöden, förbättra arbetsflödesdesignen och välja rätt inställningar.
+* [God praxis](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/workflow-best-practices.html){target=_blank}: Lär dig riktlinjer för att optimera prestanda för kampanjarbetsflöden, förbättra designen av arbetsflöden och definiera rätt inställningar.
 
-* [Övervaka arbetsflöden](https://experienceleague.adobe.com/docs/campaign/automation/workflows/monitoring-workflows/monitor-workflow-execution.html?lang=sv-SE){target=_blank}: Lär dig hur du övervakar arbetsflödeskörning för att se till att allt körs korrekt.
+* [Övervaka arbetsflöden](https://experienceleague.adobe.com/docs/campaign/automation/workflows/monitoring-workflows/monitor-workflow-execution.html){target=_blank}: Lär dig hur du övervakar arbetsflödeskörning för att se till att allt körs korrekt.
 
-* [Användningsexempel för arbetsflöden](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/workflow-use-cases.html?lang=sv-SE){target=_blank}: Lär dig olika sammanhang i vilka arbetsflöden kan användas och hur du implementerar dem genom hela användningsexempel.
+* [Användningsexempel för arbetsflöden](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/workflow-use-cases.html){target=_blank}: Lär dig kontexter i vilka arbetsflöden kan användas och hur du implementerar dem genom hela användningsexempel.
 
 
 >[!ENDTABS]
