@@ -2,13 +2,12 @@
 product: campaign
 title: Skicka med Enhanced MTA i Adobe Campaign Classic
 description: Läs mer om omfattningen av och egenskaperna hos utskick av e-post med Adobe Campaign Enhanced MTA
-badge-v8: label="Gäller även för v8" type="Positive" tooltip="Gäller även Campaign v8"
 feature: Email
 role: User, Admin, Developer
 exl-id: 58cc23f4-9ab0-45c7-9aa2-b08487ec7e91
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: b353b562bd2f0b0bd2dfde22c6477ab66d499483
 workflow-type: tm+mt
-source-wordcount: '1377'
+source-wordcount: '1368'
 ht-degree: 0%
 
 ---
@@ -21,9 +20,9 @@ Den implementeras för att förbättra skalbarheten, öka leveransgenomströmnin
 
 >[!IMPORTANT]
 >
->Adobe Campaign Enhanced MTA är endast tillgängligt för Campaign Classic som är värdbaserade eller hybridkunder. Campaign Classic på plats-installationer kan inte uppgraderas till att använda den förbättrade MTA-metoden.
+>Adobe Campaign Enhanced MTA är endast tillgängligt för kunder med värdtjänster eller hybridtjänster från Campaign Classic. Campaign Classic lokala installationer kan inte uppgraderas till att använda Förbättrat MTA.
 
-Om du har etablerats en Campaign Classic-instans efter september 2018 använder du Förbättrad MTA. För alla andra Campaign Classic, se [Vanliga frågor](#enhanced-mta-faq) nedan.
+Om du har etablerats en Campaign Classic-instans efter september 2018 använder du Förbättrat MTA. För alla andra Campaign Classic-kunder, se [Vanliga frågor](#enhanced-mta-faq) nedan.
 
 Den förbättrade MTA-implementeringen kan påverka vissa av de befintliga Campaign-funktionerna. Mer information finns i [Förbättrade MTA-specifikationer](#enhanced-mta-impacts).
 
@@ -66,7 +65,7 @@ No, there is no extra fee associated with the upgrade process to enable the use 
 
 **Vad krävs för att uppgradera till Förbättrat MTA?**
 
-Om du har etablerats en Campaign Classic-instans efter september 2018 krävs ingen åtgärd eftersom du redan använder den förbättrade MTA-filen.
+Om du har etablerats en Campaign Classic-instans efter september 2018 krävs ingen åtgärd eftersom du redan använder Förbättrat MTA.
 
 För alla andra värdbaserade eller delvis värdbaserade (hybridkunder) kommer Adobe Campaign-teamet att nå ut för att samordna ett migreringsdatum och komma med information om de steg som krävs för migreringen.
 
@@ -136,8 +135,8 @@ Mer information om giltighetsperioden finns i [det här avsnittet](steps-sending
 
 ### DKIM-signering
 
-DKIM (DomainKeys Identified Mail) signering av e-postautentisering görs av den utökade MTA:n. DKIM-signering av den interna Campaign MTA-filen kommer att stängas av i domänhanteringstabellen som en del av den förbättrade MTA-uppgraderingen.
-Mer information om DKIM finns i [Adobe Deliverability Best Practice Guide](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html?lang=sv-SE#authentication).
+Signering med e-postautentisering för DKIM (DomainKeys Identified Mail) görs av den utökade MTA:n. DKIM-signering av den interna Campaign MTA-filen kommer att stängas av i domänhanteringstabellen som en del av den förbättrade MTA-uppgraderingen.
+Mer information om DKIM finns i [Adobe Deliverability Best Practice Guide](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html#authentication).
 
 ### Rapport om lyckade leveranser
 

@@ -4,9 +4,9 @@ title: Om arbetsflöden
 description: Automatisera processerna med arbetsflöden, hantera data och målgrupper, skicka meddelanden med mera
 feature: Workflows, Data Management
 exl-id: 024a7344-9376-4ff3-926a-003148229f9f
-source-git-commit: b45cc49f15f51e3624c46713c95966f465b2e4da
+source-git-commit: b353b562bd2f0b0bd2dfde22c6477ab66d499483
 workflow-type: tm+mt
-source-wordcount: '233'
+source-wordcount: '232'
 ht-degree: 7%
 
 ---
@@ -21,25 +21,25 @@ Du kan t.ex. automatisera en process för att hämta en fil från en fjärrserve
 
 >[!TAB Arbetsflödesdokumentation]
 
-Mer information om arbetsflödeshantering finns i [dokumentationen för Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/about-workflows.html?lang=sv-SE){target=_blank}.
+Mer information om arbetsflödeshantering finns i [dokumentationen för Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/about-workflows.html){target=_blank}.
 
 
-[![bild](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/about-workflows.html?lang=sv-SE){target=_blank}
+[![bild](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/about-workflows.html){target=_blank}
 
 
 >[!TAB Användbara länkar]
 
 Lär dig de viktigaste stegen för hantering av arbetsflöden i dokumentationen för Campaign v8:
 
-* [Arbetsflödesaktiviteter](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/activities.html?lang=sv-SE){target=_blank}: En aktivitet är en uppgiftsmall. Arbetsflödena innefattar målinriktning, flödeskontroll, åtgärder och händelseaktiviteter.
+* [Arbetsflödesaktiviteter](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/activities.html){target=_blank}: En aktivitet är en uppgiftsmall. Arbetsflödena innefattar målinriktning, flödeskontroll, åtgärder och händelseaktiviteter.
 
-* [Bygg ett arbetsflöde](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/build-a-workflow.html?lang=sv-SE){target=_blank}: Lär dig hur du skapar och kör målgruppsanpassning, kampanjer och tekniska arbetsflöden.
+* [Bygg ett arbetsflöde](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/build-a-workflow.html){target=_blank}: Lär dig hur du skapar och kör målgruppsanpassning, kampanjer och tekniska arbetsflöden.
 
-* [God praxis](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/workflow-best-practices.html?lang=sv-SE){target=_blank}: Lär dig riktlinjer för att optimera prestanda för kampanjarbetsflöden, förbättra designen av arbetsflöden och definiera rätt inställningar.
+* [God praxis](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/workflow-best-practices.html){target=_blank}: Lär dig riktlinjer för att optimera prestanda för kampanjarbetsflöden, förbättra designen av arbetsflöden och definiera rätt inställningar.
 
-* [Övervaka arbetsflöden](https://experienceleague.adobe.com/docs/campaign/automation/workflows/monitoring-workflows/monitor-workflow-execution.html?lang=sv-SE){target=_blank}: Lär dig hur du övervakar arbetsflödeskörning för att se till att allt körs korrekt.
+* [Övervaka arbetsflöden](https://experienceleague.adobe.com/docs/campaign/automation/workflows/monitoring-workflows/monitor-workflow-execution.html){target=_blank}: Lär dig hur du övervakar arbetsflödeskörning för att se till att allt körs korrekt.
 
-* [Användningsexempel för arbetsflöden](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/workflow-use-cases.html?lang=sv-SE){target=_blank}: Lär dig kontexter i vilka arbetsflöden kan användas och hur du implementerar dem genom hela användningsexempel.
+* [Användningsexempel för arbetsflöden](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/workflow-use-cases.html){target=_blank}: Lär dig kontexter i vilka arbetsflöden kan användas och hur du implementerar dem genom hela användningsexempel.
 
 
 >[!ENDTABS]

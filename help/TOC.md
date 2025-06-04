@@ -6,10 +6,10 @@ title: Användarhandbok för Campaign Classic v7
 user-guide-description: Produktdokumentation för Adobe Campaign Classic v7.
 sub-product: adobe campaign classic
 type: Documentation
-source-git-commit: 42cec0e9bede94a2995a5ad442822512bda14f2b
+source-git-commit: b353b562bd2f0b0bd2dfde22c6477ab66d499483
 workflow-type: tm+mt
-source-wordcount: '2574'
-ht-degree: 86%
+source-wordcount: '2573'
+ht-degree: 84%
 
 ---
 
@@ -125,27 +125,26 @@ ht-degree: 86%
          + [Definiera rätt målgrupp](delivery/using/define-the-right-audience.md)
          + [Kontrollera före sändning](delivery/using/check-before-sending.md)
          + [Spåra och övervaka](delivery/using/track-and-monitor.md)
-   + Skicka e-post {#sending-emails}
-      + [Om e-postkanalen](delivery/using/about-email-channel.md)
-      + [Skapa en e-postleverans](delivery/using/creating-an-email-delivery.md)
-      + [Definiera e-postinnehållet](delivery/using/defining-the-email-content.md)
-      + [Definiera interaktivt innehåll](delivery/using/defining-interactive-content.md)
-      + [Skicka med förbättrad MTA](delivery/using/sending-with-enhanced-mta.md)
-      + Skicka e-postleveransen {#sending-an-email}
-         + [De viktigaste stegen för att skicka ett e-postmeddelande](delivery/using/sending-messages.md)
-         + [E-postparametrar](delivery/using/email-parameters.md)
-         + [Skicka på japanska mobiler](delivery/using/sending-emails-on-japanese-mobiles.md)
-      + [Bifoga filer](delivery/using/attaching-files.md)
-   + Skicka SMS {#sending-messages-on-mobiles}
-      + [Kom igång med SMS](delivery/using/sms-channel.md)
-      + Konfigurera SMS-kanal {#sms-set-up}
-         + [Konfigurera SMS på en fristående instans](delivery/using/sms-set-up.md)
-         + [Konfigurera SMS i en mid-sourcingsinfrastruktur](delivery/using/sms-set-up-mid.md)
-         + [Protokoll och inställningar för SMS-koppling](delivery/using/sms-protocol.md)
-         + [Ytterligare konfiguration](delivery/using/sms-send.md)
-         + [Felsöka SMS](delivery/using/troubleshooting-sms.md)
-      + [Skapa ett SMS](delivery/using/sms-create.md)
-      + [Migrera till den utökade generiska SMPP-kopplingen](delivery/using/unsupported-connector-migration.md)
++ Skicka e-post {#sending-emails}
++ [Skapa en e-postleverans](delivery/using/creating-an-email-delivery.md)
++ [Definiera e-postinnehållet](delivery/using/defining-the-email-content.md)
++ [Definiera interaktivt innehåll](delivery/using/defining-interactive-content.md)
++ Skicka e-postleveransen {#sending-an-email}
++ [De viktigaste stegen för att skicka e-post](delivery/using/sending-messages.md)
++ [E-postparametrar](delivery/using/email-parameters.md)
++ [Skicka på japanska mobiler](delivery/using/sending-emails-on-japanese-mobiles.md)
++ [Bifoga filer](delivery/using/attaching-files.md)
++ [Skicka e-post](delivery/using/about-email-channel.md)
++ Skicka SMS {#sending-messages-on-mobiles}
++ [Kom igång med SMS](delivery/using/sms-channel.md)
++ Konfigurera SMS-kanal {#sms-set-up}
++ [Konfigurera SMS på en fristående instans](delivery/using/sms-set-up.md)
++ [Konfigurera SMS i en infrastruktur med flera leverantörer](delivery/using/sms-set-up-mid.md)
++ [SMS-anslutningsprotokoll och inställningar](delivery/using/sms-protocol.md)
++ [Ytterligare konfiguration](delivery/using/sms-send.md)
++ [SMS-felsökning](delivery/using/troubleshooting-sms.md)
++ [Skapa ett SMS](delivery/using/sms-create.md)
++ [Migrera till den utökade allmänna SMPP-anslutningen](delivery/using/unsupported-connector-migration.md)
    + [Skicka LINE-meddelanden](delivery/using/line-channel.md)
    + Skicka push-meddelanden {#sending-push-notifications}
       + [Kom igång med mobilappskanalen](delivery/using/about-mobile-app-channel.md)
@@ -841,6 +840,7 @@ ht-degree: 86%
       + [2023-systemuppgraderingar](technotes/using/tech-stack-upgrade.md)
       + [IMS-uppdateringar](technotes/using/ims-updates.md)
       + [Support för TLS 1.0 och 1.1 upphör](technotes/using/eol-tls-support.md)
+      + [Skicka med förbättrad MTA](delivery/using/sending-with-enhanced-mta.md)
    + Mejl och push-meddelanden{#technotes-email}
       + [Sekretesskydd för Mail i Apple iOS](technotes/using/apple-mail-app-privacy-protection.md)
       + [Så här uppdaterar du felaktiga hårda studsar](delivery/using/update-bounce-qualification.md)
