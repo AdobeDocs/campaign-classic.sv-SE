@@ -6,9 +6,9 @@ title: Användarhandbok för Campaign Classic v7
 user-guide-description: Produktdokumentation för Adobe Campaign Classic v7.
 sub-product: adobe campaign classic
 type: Documentation
-source-git-commit: b353b562bd2f0b0bd2dfde22c6477ab66d499483
+source-git-commit: 67e5a52666b7a57d1fc17d308a124948bf81f432
 workflow-type: tm+mt
-source-wordcount: '2573'
+source-wordcount: '2572'
 ht-degree: 84%
 
 ---
@@ -125,7 +125,7 @@ ht-degree: 84%
          + [Definiera rätt målgrupp](delivery/using/define-the-right-audience.md)
          + [Kontrollera före sändning](delivery/using/check-before-sending.md)
          + [Spåra och övervaka](delivery/using/track-and-monitor.md)
-+ Skicka e-post {#sending-emails}
++ E-post {#sending-emails}
 + [Skapa en e-postleverans](delivery/using/creating-an-email-delivery.md)
 + [Definiera e-postinnehållet](delivery/using/defining-the-email-content.md)
 + [Definiera interaktivt innehåll](delivery/using/defining-interactive-content.md)
