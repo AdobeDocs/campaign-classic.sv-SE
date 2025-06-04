@@ -132,7 +132,7 @@ ht-degree: 83%
 + [Definiera e-postinnehållet](delivery/using/defining-the-email-content.md)
 + [Definiera interaktivt innehåll](delivery/using/defining-interactive-content.md)
 + Skicka e-postleveransen {#sending-an-email}
-+ [}De viktigaste stegen för att skicka e-post ](delivery/using/sending-messages.md)
++ [De viktigaste stegen för att skicka e-post ](delivery/using/sending-messages.md)
 + [E-postparametrar](delivery/using/email-parameters.md)
 + [Skicka på japanska mobiler](delivery/using/sending-emails-on-japanese-mobiles.md)
 + [Bifoga filer](delivery/using/attaching-files.md)
