@@ -7,9 +7,9 @@ role: User
 level: Beginner
 exl-id: d65869ca-a785-4327-8e8d-791c28e4696c
 source-git-commit: cdbcfc5aa0614e41ce76cb777fec58fbd01797d2
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '903'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -25,9 +25,9 @@ Den här sidan listar nya funktioner, förbättringar och korrigeringar som komm
 
 _12 maj 2025_
 
-Den här versionen innehåller följande korrigeringar:
+Bygget innehåller följande korrigeringar:
 
-* Ett efteruppgraderingsfel som påträffades i icke-Oracle-inställningar har korrigerats. (NEO-87012)
+* Korrigerade ett efteruppgraderingsfel som påträffades i icke-Oracle-inställningar. (NEO-87012)
 * Korrigerade ett TLS/HTTPS-serverdelsproblem som påverkade både klientkonsolen och servern. (NEO-87432)
 
 ### Bygge 9390 {#build-9390}
@@ -52,7 +52,7 @@ Den här versionen innehåller flera säkerhetskorrigeringar.
 
 Anslutningen till lösningar och appar från Adobe via det externa **[!UICONTROL Adobe Experience Cloud]**-kontot har uppdaterats för att stärka säkerheten.
 
-**Huvudkorrigeringar**
+**Stora korrigeringar**
 
 Den här versionen kommer med följande huvudkorrigeringar:
 
