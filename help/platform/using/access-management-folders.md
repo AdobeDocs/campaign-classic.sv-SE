@@ -7,10 +7,10 @@ feature: Application Settings, Permissions
 role: User, Admin
 level: Beginner
 exl-id: 0ba8a3d0-36d7-42f3-b281-0255e49b5fa3
-source-git-commit: 42cec0e9bede94a2995a5ad442822512bda14f2b
+source-git-commit: 6e83067cef2b08b5bee37610bfef515714756ada
 workflow-type: tm+mt
-source-wordcount: '773'
-ht-degree: 1%
+source-wordcount: '517'
+ht-degree: 2%
 
 ---
 
@@ -22,7 +22,7 @@ Varje mapp i Utforskarens navigeringsträd har behörighet att läsa, skriva och
 
 >[!NOTE]
 >
->Mer information om behörigheter för mappar finns i [dokumentationen för Campaign v8](https://experienceleague.adobe.com/sv/docs/campaign/campaign-v8/admin/permissions/folder-permissions){target=_blank}.
+>Mer information om behörigheter för mappar finns i [dokumentationen för Campaign v8](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/admin/permissions/folder-permissions){target=_blank}.
 
 
 ## Mappar och vyer {#folders-and-views}
@@ -55,16 +55,21 @@ För att skilja vyer från mappar visas namnet på varje vy i en annan färg (m�
 
 ### Lägga till mappar och skapa vyer {#adding-folders-and-creating-views}
 
+>[!IMPORTANT]
+>
+>Mappar som ligger utanför rutan ska inte markeras som vyer.
+
+
 I exemplet nedan skapar vi nya mappar för att visa specifika data:
 
 1. Skapa en ny typmapp för **[!UICONTROL Deliveries]** och ge den namnet **Leveranser i Frankrike**.
 1. Högerklicka på mappen och välj **[!UICONTROL Properties...]**.
 
-   ![](assets/s_ncs_user_add_folder_exple.png)
+   ![Skärmbild med högerklick i egenskaperna](assets/s_ncs_user_add_folder_exple.png)
 
 1. Välj **[!UICONTROL This folder is a view]** på fliken **[!UICONTROL Restriction]**. Därefter visas alla leveranser i databasen.
 
-   ![](assets/s_ncs_user_add_folder_exple01.png)
+   ![Skärmvisning som visar den visningsruta som markeras](assets/s_ncs_user_add_folder_exple01.png)
 
 1. Definiera leveransfiltervillkoren från frågeredigeraren i fönstrets mellersta del: kampanjerna som motsvarar det definierade filtret visas sedan.
 
@@ -74,7 +79,7 @@ I exemplet nedan skapar vi nya mappar för att visa specifika data:
 
    Med följande filtervillkor:
 
-![](assets/s_ncs_user_add_folder_exple00.png)
+![Skärmbild som visar de olika filtervillkoren](assets/s_ncs_user_add_folder_exple00.png)
 
 Följande leveranser visas i vyn:
 
@@ -84,46 +89,48 @@ Följande leveranser visas i vyn:
 >
 >När [transaktionsmeddelanden](../../message-center/using/about-transactional-messaging.md) hanteras får mapparna **[!UICONTROL Real time events]** eller **[!UICONTROL Batch events]** inte anges som vyer för körningsinstanserna eftersom det kan leda till problem med åtkomst. Mer information om händelsesamling finns i [det här avsnittet](../../message-center/using/about-event-processing.md#event-collection).
 
-## Behörigheter för en mapp
+<!--
+## Permissions on a folder
 
-### Redigera behörigheter i en mapp {#edit-permissions-on-a-folder}
+### Edit permissions on a folder {#edit-permissions-on-a-folder}
 
-Följ stegen nedan om du vill redigera behörigheter i en viss mapp i trädet:
+To edit permissions on a specific folder of the tree, follow the steps below:
 
-1. Högerklicka på mappen och välj **[!UICONTROL Properties...]**.
+1. Right-click on the folder and select **[!UICONTROL Properties...]**.
 
    ![](assets/s_ncs_user_folder_properties.png)
 
-1. Klicka på fliken **[!UICONTROL Security]** om du vill visa behörigheter för den här mappen.
+1. Click the **[!UICONTROL Security]** tab to view authorizations on this folder.
 
    ![](assets/s_ncs_user_folder_properties_security.png)
 
-### Ändra behörigheter {#modify-permissions}
+### Modify permissions {#modify-permissions}
 
-Om du vill ändra behörigheter kan du:
+To modify permissions, you can:
 
-* **Ersätt en grupp eller en operator**. Det gör du genom att klicka på en av grupperna (eller operatorerna) med rättigheter till mappen och välja en ny grupp (eller en ny operator) i listrutan:
+* **Replace a group or an operator**. To do this, click one of the groups (or operators) with rights to the folder, and select a new group (or a new operator) from the drop-down list:
 
   ![](assets/s_ncs_user_folder_properties_security02.png)
 
-* **Auktorisera en grupp eller en operator**. Om du vill göra det klickar du på knappen **[!UICONTROL Add]** och väljer gruppen eller operatorn som du vill tilldela behörigheter till den här mappen.
-* **Förbjud en grupp eller en operator**. Om du vill göra det klickar du på **[!UICONTROL Delete]** och väljer gruppen eller operatorn som du vill ta bort behörigheten för den här mappen från.
-* **Välj de rättigheter som tilldelats en grupp eller en operator**. Det gör du genom att klicka på gruppen eller operatorn i fråga och sedan markera de åtkomsträttigheter som du vill ge och avmarkera de andra.
+* **Authorize a group or an operator**. To do this, click the **[!UICONTROL Add]** button and select the group or operator to which you want to assign authorizations for this folder.
+* **Forbid a group or an operator**. To do this, click **[!UICONTROL Delete]** and select the group or operator from which you want to remove authorization for this folder.
+* **Select the rights assigned to a group or an operator**. To do this, click the group or operator concerned, then select the access rights you want to grant and deselect the others.
 
   ![](assets/s_ncs_user_folder_properties_security03.png)
 
-### Sprid behörigheter {#propagate-permissions}
+### Propagate permissions {#propagate-permissions}
 
-Du kan sprida auktoriseringar och åtkomsträttigheter. Om du vill göra det väljer du alternativet **[!UICONTROL Propagate]** i mappegenskaperna.
+You can propagate authorizations and access rights. To do this, select the **[!UICONTROL Propagate]** option in the folder properties.
 
-Behörigheterna som definieras i det här fönstret kommer sedan att tillämpas på alla undermappar i den aktuella noden. Du kan sedan överlagra dessa behörigheter för var och en av undermapparna.
+The authorizations defined in this window will then be applied to all the sub-folders of the current node. You can then overload these authorizations for each of the sub-folders.
 
 >[!NOTE]
 >
->Om du rensar det här alternativet för en mapp tas det inte bort automatiskt för undermapparna. Du måste rensa det explicit för var och en av undermapparna.
+>Clearing this option for a folder does not automatically clear it for the sub-folders. You must clear it explicitly for each of the sub-folders.
 
-### Ge åtkomst till alla operatorer {#grant-access-to-all-operators}
+### Grant access to all operators {#grant-access-to-all-operators}
 
-Om alternativet **[!UICONTROL System folder]** är markerat på fliken **[!UICONTROL Security]** får alla operatorer åtkomst till dessa data, oavsett deras rättigheter. Om det här alternativet är avmarkerat måste du uttryckligen lägga till operatorn (eller deras grupp) i listan över auktoriseringar för att de ska ha åtkomst.
+In the **[!UICONTROL Security]** tab, if the **[!UICONTROL System folder]** option is selected, all operators will have access to this data, regardless of their rights. If this option is cleared, you must explicitly add the operator (or their group) to the list of authorizations in order for them to have access.
 
 ![](assets/s_ncs_user_folder_properties_security03b.png)
+-->
