@@ -6,9 +6,9 @@ title: Användarhandbok för Campaign Classic v7
 user-guide-description: Produktdokumentation för Adobe Campaign Classic v7.
 sub-product: adobe campaign classic
 type: Documentation
-source-git-commit: 1e88021c9209bd23c3c949380f553473e890a9ce
+source-git-commit: d3d731c64cb5a430de6adac3aeb326f74134c436
 workflow-type: tm+mt
-source-wordcount: '2571'
+source-wordcount: '2569'
 ht-degree: 99%
 
 ---
@@ -125,9 +125,8 @@ ht-degree: 99%
       + [Definiera rätt målgrupp](delivery/using/define-the-right-audience.md)
       + [Kontrollera före sändning](delivery/using/check-before-sending.md)
       + [Spåra och övervaka](delivery/using/track-and-monitor.md)
+   + [Skicka e-postmeddelanden](delivery/using/about-email-channel.md)
    + Skicka e-postmeddelanden {#sending-emails}
-      + [Kom igång med e-post](delivery/using/about-email-channel.md)
-      + [Skicka med förbättrad MTA](delivery/using/sending-with-enhanced-mta.md)
       + [Skapa en e-postleverans](delivery/using/creating-an-email-delivery.md)
       + [Definiera e-postinnehållet](delivery/using/defining-the-email-content.md)
       + [Definiera interaktivt innehåll](delivery/using/defining-interactive-content.md)
@@ -827,6 +826,7 @@ ht-degree: 99%
    + [Återställningsförfarande](migration/using/about-rollback.md)
 + Tekniska anmärkningar {#technotes}
    + [Rekommendationer på maskinvarustorlek](technotes/using/hardware-sizing.md)
+   + [Skicka med förbättrad MTA](delivery/using/sending-with-enhanced-mta.md)
    + [Inkommande SMS-arbetsflödesaktivitet för mid-sourcingsinfrastruktur](technotes/using/inbound-sms-wf.md)
    + Uppgradera till IMS{#ims}
       + [Gå över till Adobe IMS](technotes/using/ac-ims.md)

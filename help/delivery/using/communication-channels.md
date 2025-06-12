@@ -5,10 +5,10 @@ description: Skapa leveranser för att skicka personanpassade meddelanden i olik
 feature: Cross Channel Orchestration, Email, SMS, In App, Direct Mail, Push
 role: User
 exl-id: 92b5e013-b619-4f0b-b0b1-1fc2e653ceac
-source-git-commit: 42cec0e9bede94a2995a5ad442822512bda14f2b
+source-git-commit: d3d731c64cb5a430de6adac3aeb326f74134c436
 workflow-type: tm+mt
-source-wordcount: '182'
-ht-degree: 4%
+source-wordcount: '927'
+ht-degree: 2%
 
 ---
 
@@ -18,22 +18,115 @@ Med Adobe Campaign kan ni skicka flerkanalskampanjer, inklusive e-post, SMS, pus
 
 De viktigaste funktionerna är målinriktning, definition och personalisering av meddelanden, genomförande av kommunikation och tillhörande verksamhetsrapporter.
 
-Lär dig de viktigaste stegen för leveransskapande i dokumentationen för Campaign v8:
+Som en del av kampanjsatsningen v8 har Campaign Classic-dokumentationen omstrukturerats. Gemensamma funktioner är nu bara tillgängliga i Campaign v8-dokumentationsuppsättningen.
 
-* [Skapa leveransen](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html?lang=sv-SE#create-the-delivery){target="_blank"}: Lär dig hur du skapar en engångsleverans med ett enda foto.
-* [Definiera innehållet](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html?lang=sv-SE#content-of-the-delivery){target="_blank"}: Konfigurera leveransinnehållet för varje kanal.
-* [Ange målgruppen](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html?lang=sv-SE#target-population){target="_blank"}: Definiera flera typer av mål: huvudmålgrupp, korrekturmål, dirigerade adresser och kontrollgrupper.
-* [Verifiera leveransen](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html?lang=sv-SE#validate-the-delivery){target="_blank"}: Lär dig hur du validerar leveransen innan du skickar den till huvudmålet.
-* [Skicka leveransen](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html?lang=sv-SE#configuring-and-sending-the-delivery){target="_blank"}: Konfigurera leveransinställningarna och definiera hur meddelanden ska skickas.
-* [Bästa praxis för leverans](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/delivery-best-practices.html?lang=sv-SE){target="_blank"}: Ta del av de bästa metoderna för leveransfunktioner i Campaign.
 
-Se även [sidan](delivery-settings.md) om du vill veta mer om specifika leveransinställningar för Campaign Classic.
+
+>[!BEGINTABS]
+
+>[!TAB Dokumentation för kommunikationskanaler]
+
+Mer information om kommunikationskanaler finns i [dokumentationen för Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/gs-message.html){target=_blank}.
+
+
+[![bild](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/gs-message.html){target=_blank}
+
+
+>[!TAB Leverera innehåll och målgrupp]
+
+Lär dig de viktigaste stegen som rör leveransskapande, innehåll och målgrupp i dokumentationen för Campaign v8:
+
+* [Skapa leveransen](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html#create-the-delivery){target="_blank"}: Lär dig hur du skapar en engångsleverans med ett enda foto.
+* [Definiera innehållet](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html#content-of-the-delivery){target="_blank"}: Konfigurera leveransinnehållet för varje kanal.
+* [Ange målgruppen](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html#target-population){target="_blank"}: Definiera flera typer av mål: huvudmålgrupp, korrekturmål, dirigerade adresser och kontrollgrupper.
+
+
+>[!TAB Leveransvalidering och sändning]
+
+På dessa sidor finns information om leveransvalidering, sändning och metodtips i dokumentationen för Campaign v8:
+
+* [Verifiera leveransen](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html#validate-the-delivery){target="_blank"}: Lär dig hur du validerar leveransen innan du skickar den till huvudmålet.
+* [Skicka leveransen](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html#configuring-and-sending-the-delivery){target="_blank"}: Konfigurera leveransinställningarna och definiera hur meddelanden ska skickas.
+* [Bästa praxis för leverans](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/delivery-best-practices.html){target="_blank"}: Ta del av de bästa metoderna för leveransfunktioner i Campaign.
+
+>[!ENDTABS]
+
+Följande inställningar är specifika för Campaign Classic. Andra leveransinställningar finns i [dokumentationen för Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/gs-message.html){target="_blank"}.
+
++++ **Leveransanalys**
+
+**Förbättra prestanda för leveransanalys**
+
+Om du vill påskynda leveransförberedelsen kan du kontrollera alternativet **[!UICONTROL Prepare the delivery parts in the database]** innan du startar analysen.
+
+När det här alternativet är aktiverat utförs leveransförberedelsen direkt i databasen, vilket avsevärt kan snabba upp analysen.
+
+För närvarande är det här alternativet endast tillgängligt när följande villkor är uppfyllda:
+
+* Leveransen måste vara ett e-postmeddelande. De andra kanalerna stöds inte för tillfället.
+* Du får inte använda medelstor eller extern routning, endast bulkleveransroutningstyp. Du kan kontrollera routningen som används på fliken **[!UICONTROL General]** i **[!UICONTROL Delivery properties]**.
+* Du kan inte ange en målgrupp som kommer från en extern fil som mål. Klicka på länken **[!UICONTROL To]** i **[!UICONTROL Email parameters]** för en enskild leverans och kontrollera att alternativet **[!UICONTROL Defined in the database]** är markerat. Kontrollera att mottagarna är **[!UICONTROL Specified by the inbound event(s)]** på fliken **[!UICONTROL Delivery]** för en leverans som används i ett arbetsflöde.
+* Du måste använda en PostgreSQL-databas.
+
+**Konfigurera analysprioriteten**
+
+När leveransen är en del av en kampanj finns det ytterligare ett alternativ på fliken **[!UICONTROL Advanced]**. På så sätt kan du ordna bearbetningsordningen för leveranser i samma kampanj.
+
+Innan leveransen skickas analyseras varje leverans. Analysens längd beror på leveransens extraheringsfil. Ju större filstorlek, desto längre tid tar analysen och följande leveranser väntar.
+
+Med alternativen för **[!UICONTROL Message preparation by the scheduler]** kan du prioritera leveransanalysen i ett kampanjarbetsflöde.
+
+![](assets/delivery_analysis_priority.png)
+
+Om en leverans är för stor är det bättre att tilldela den en låg prioritet för att undvika att analysen av andra arbetsflödesleveranser går långsammare.
+
+>[!NOTE]
+>
+>Om du vill vara säker på att de större leveransanalyserna inte gör arbetsflödena långsammare kan du schemalägga deras körningar genom att trycka på **[!UICONTROL Schedule execution for a time of low activity]**.
+
++++
+
++++ **Leveransmeddelande**
+
+**Konfigurera återförsök**
+
+Tillfälligt olevererade meddelanden på grund av ett fel av typen **Mjuk** eller **Ignorerad** kan återförsökas automatiskt. Leveransfeltyperna och anledningarna visas i det här [avsnittet](understanding-delivery-failures.md#delivery-failure-types-and-reasons).
+
+>[!IMPORTANT]
+>
+>Om du har uppgraderat till [Förbättrat MTA](sending-with-enhanced-mta.md) för värdbaserade eller hybridinstallerade installationer används inte längre inställningarna för nya försök i leveransen av Campaign. Mjuka avhoppsförsök och hur lång tid det tar mellan dem bestäms av den förbättrade MTA-metoden baserat på typ och allvarlighetsgrad för de avhoppssvar som kommer tillbaka från meddelandets e-postdomän.
+
+För lokala installationer och värdbaserade/hybridinstallationer som använder det äldre kampanjavtalet MTA, visar det centrala avsnittet på fliken **[!UICONTROL Delivery]** för leveransparametrar hur många försök som ska utföras dagen efter leveransen och den minsta fördröjningen mellan återförsök.
+
+![](assets/s_ncs_user_wizard_retry_param.png)
+
+Som standard schemaläggs fem återförsök till den första dagen i leveransen med ett minsta intervall på en timme som sprids ut över dygnets 24 timmar. Ett nytt försök per dag är programmerat efter detta och fram till leveransdatumet, som definieras på fliken **[!UICONTROL Validity]**. Se [Definiera giltighetsperioden](#defining-validity-period).
+
+**Definiera giltighetsperioden**
+
+När leveransen har startats kan meddelandena (och eventuella försök) skickas till leveransdatumet. Detta anges i leveransegenskaperna via fliken **[!UICONTROL Validity]**.
+
+![](assets/s_ncs_user_email_del_valid_period.png)
+
+* I fältet **[!UICONTROL Delivery duration]** kan du ange gränsen för globala leveransförsök. Detta innebär att Adobe Campaign skickar meddelanden som börjar på startdatumet och sedan, för meddelanden som bara returnerar ett fel, kommer regelbundna, konfigurerbara försök att utföras tills giltighetsgränsen nås.
+
+  Du kan också välja att ange datum. Välj **[!UICONTROL Explicitly set validity dates]** om du vill göra det. I det här fallet kan du även ange datum för leveransdatum och giltighetsgräns. Den aktuella tiden används som standard, men du kan ändra den direkt i indatafältet.
+
+  >[!IMPORTANT]
+  >
+  >Om du har uppgraderat till [Förbättrat MTA](sending-with-enhanced-mta.md) för värdbaserade eller hybridbaserade installationer, kommer inställningen **[!UICONTROL Delivery duration]** i e-postleveranserna för Campaign endast att användas om den är inställd på **.5 dagar eller mindre**. Om du anger ett värde som är högre än 3,5 dagar kommer det inte att beaktas.
+
+* **Giltighetsgräns för resurser**: Fältet **[!UICONTROL Validity limit]** används för överförda resurser, främst för spegelsidan och bilder. Resurserna på den här sidan är giltiga under en begränsad tid (för att spara diskutrymme).
+
+  Värdena i det här fältet kan uttryckas i de enheter som visas i [det här avsnittet](../../platform/using/adobe-campaign-workspace.md#default-units).
+
++++
 
 <!--
 
    Learn how to create a one-shot single delivery. You can create other types of deliveries to build your use cases. 
 
-For more information about the different types of deliveries and how to create them, refer to the [Campaign v8 documentation](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html?lang=sv-SE){target="_blank"}. 
+For more information about the different types of deliveries and how to create them, refer to the [Campaign v8 documentation](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html){target="_blank"}. 
 
 >[!NOTE]
 >

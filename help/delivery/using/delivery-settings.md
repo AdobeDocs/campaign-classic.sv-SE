@@ -4,7 +4,10 @@ title: Om leveransinställningar
 description: Upptäck de specifika leveransinställningarna för v7
 feature: Channel Configuration
 role: User
-source-git-commit: 42cec0e9bede94a2995a5ad442822512bda14f2b
+hide: true
+hidefromtoc: true
+exl-id: 66250817-f829-4b8b-92dd-2daa92a97fe0
+source-git-commit: d3d731c64cb5a430de6adac3aeb326f74134c436
 workflow-type: tm+mt
 source-wordcount: '696'
 ht-degree: 2%
@@ -13,7 +16,7 @@ ht-degree: 2%
 
 # Leveransinställningar {#about-delivery-settings}
 
-Följande inställningar är specifika för Campaign Classic. Andra leveransinställningar finns i [dokumentationen för Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/gs-message.html?lang=sv-SE){target="_blank"}.
+Följande inställningar är specifika för Campaign Classic. Andra leveransinställningar finns i [dokumentationen för Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/gs-message.html){target="_blank"}.
 
 ## Leveransanalys {#delivery-analysis}
 
