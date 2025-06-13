@@ -7,10 +7,10 @@ feature: Query Editor
 role: User, Data Architect
 level: Beginner
 exl-id: 2db1034d-cad6-4fb0-8646-dd9099080ab0
-source-git-commit: 42cec0e9bede94a2995a5ad442822512bda14f2b
+source-git-commit: 471018f09e5a14635fcce07aeca1e2cf48d9144f
 workflow-type: tm+mt
-source-wordcount: '203'
-ht-degree: 57%
+source-wordcount: '222'
+ht-degree: 53%
 
 ---
 
@@ -26,8 +26,22 @@ Det här verktyget kombinerar alla frågemöjligheter i Adobe Campaign. Du kan t
 
 Frågor skapas med hjälp av fält i den valda tabellen eller med hjälp av en formel.
 
->[!NOTE]
->
->Mer information om frågor och hur du skapar dem finns i [Campaign v8-dokumentationen](../../workflow/using/query.md).
+>[!BEGINTABS]
+
+>[!TAB Frågedokumentation]
+
+Mer information om frågor finns i dokumentationen för [Campaign v8.](https://experienceleague.adobe.com/en/docs/campaign/automation/workflows/wf-activities/activities){target=_blank}
+
+
+[![bild](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/en/docs/campaign/automation/workflows/wf-activities/activities){target=_blank}
+
+
+>[!TAB Skapa en fråga]
+
+Lär dig de viktigaste stegen som rör skapandet av frågan i [dokumentationen för Campaign v8](https://experienceleague.adobe.com/en/docs/campaign/automation/workflows/wf-activities/targeting-activities/query){target=_blank}.
+
+[![bild](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/en/docs/campaign/automation/workflows/wf-activities/targeting-activities/query){target=_blank}
+
+>[!ENDTABS]
 
 ![Skärmbild som visar ett exempel på en fråga.](assets/query_recipients_4.png)

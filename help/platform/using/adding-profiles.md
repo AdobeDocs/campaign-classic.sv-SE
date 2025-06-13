@@ -6,7 +6,9 @@ feature: Profiles
 role: User
 level: Beginner
 exl-id: befa8948-ef2e-4f4d-a002-3f26d8516a0d
-source-git-commit: 42cec0e9bede94a2995a5ad442822512bda14f2b
+hide: true
+hidefromtoc: true
+source-git-commit: 471018f09e5a14635fcce07aeca1e2cf48d9144f
 workflow-type: tm+mt
 source-wordcount: '61'
 ht-degree: 3%
@@ -23,7 +25,7 @@ I de flesta fall importeras profiler [till Campaign via ett arbetsflöde](../../
 
 >[!NOTE]
 >
->Mer information om hur du skapar profiler i Adobe Campaign Console finns i dokumentationen för [Campaign v8.](https://experienceleague.adobe.com/sv/docs/campaign-classic/using/getting-started/profile-management/adding-profiles){target=_blank}
+>Mer information om hur du skapar profiler i Adobe Campaign Console finns i dokumentationen för [Campaign v8.](https://experienceleague.adobe.com/en/docs/campaign-classic/using/getting-started/profile-management/adding-profiles){target=_blank}
 
 
 <!--

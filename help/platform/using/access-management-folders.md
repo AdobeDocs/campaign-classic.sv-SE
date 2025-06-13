@@ -7,7 +7,9 @@ feature: Application Settings, Permissions
 role: User, Admin
 level: Beginner
 exl-id: 0ba8a3d0-36d7-42f3-b281-0255e49b5fa3
-source-git-commit: 6e83067cef2b08b5bee37610bfef515714756ada
+hide: true
+hidefromtoc: true
+source-git-commit: b27b85b126e002c0ea8b5d71da1ed60e1e817980
 workflow-type: tm+mt
 source-wordcount: '517'
 ht-degree: 2%
@@ -22,7 +24,7 @@ Varje mapp i Utforskarens navigeringsträd har behörighet att läsa, skriva och
 
 >[!NOTE]
 >
->Mer information om behörigheter för mappar finns i [dokumentationen för Campaign v8](https://experienceleague.adobe.com/sv/docs/campaign/campaign-v8/admin/permissions/folder-permissions){target=_blank}.
+>Mer information om behörigheter för mappar finns i [dokumentationen för Campaign v8](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/admin/permissions/folder-permissions){target=_blank}.
 
 
 ## Mappar och vyer {#folders-and-views}
