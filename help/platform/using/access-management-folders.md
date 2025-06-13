@@ -24,7 +24,7 @@ Varje mapp i Utforskarens navigeringsträd har behörighet att läsa, skriva och
 
 >[!NOTE]
 >
->Mer information om behörigheter för mappar finns i [dokumentationen för Campaign v8](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/admin/permissions/folder-permissions){target=_blank}.
+>Mer information om behörigheter för mappar finns i [dokumentationen för Campaign v8](https://experienceleague.adobe.com/sv/docs/campaign/campaign-v8/admin/permissions/folder-permissions){target=_blank}.
 
 
 ## Mappar och vyer {#folders-and-views}

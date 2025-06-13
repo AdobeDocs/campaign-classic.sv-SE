@@ -30,17 +30,17 @@ Frågor skapas med hjälp av fält i den valda tabellen eller med hjälp av en f
 
 >[!TAB Frågedokumentation]
 
-Mer information om frågor finns i dokumentationen för [Campaign v8.](https://experienceleague.adobe.com/en/docs/campaign/automation/workflows/wf-activities/activities){target=_blank}
+Mer information om frågor finns i dokumentationen för [Campaign v8.](https://experienceleague.adobe.com/sv/docs/campaign/automation/workflows/wf-activities/activities){target=_blank}
 
 
-[![bild](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/en/docs/campaign/automation/workflows/wf-activities/activities){target=_blank}
+[![bild](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/sv/docs/campaign/automation/workflows/wf-activities/activities){target=_blank}
 
 
 >[!TAB Skapa en fråga]
 
-Lär dig de viktigaste stegen som rör skapandet av frågan i [dokumentationen för Campaign v8](https://experienceleague.adobe.com/en/docs/campaign/automation/workflows/wf-activities/targeting-activities/query){target=_blank}.
+Lär dig de viktigaste stegen som rör skapandet av frågan i [dokumentationen för Campaign v8](https://experienceleague.adobe.com/sv/docs/campaign/automation/workflows/wf-activities/targeting-activities/query){target=_blank}.
 
-[![bild](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/en/docs/campaign/automation/workflows/wf-activities/targeting-activities/query){target=_blank}
+[![bild](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/sv/docs/campaign/automation/workflows/wf-activities/targeting-activities/query){target=_blank}
 
 >[!ENDTABS]
 
