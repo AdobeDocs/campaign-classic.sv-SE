@@ -5,11 +5,13 @@ description: Läs mer om Campaign Classic 2022-versioner
 feature: Release Notes
 role: User
 level: Beginner
+hide: true
+hidefromtoc: true
 exl-id: 28490323-41d0-4d61-b309-6892fb826d21
-source-git-commit: 668cee663890fafe27f86f2afd3752f7e2ab347a
+source-git-commit: 62fc46e45078fce56eadda3518251e61244bf5d0
 workflow-type: tm+mt
-source-wordcount: '2100'
-ht-degree: 100%
+source-wordcount: '2099'
+ht-degree: 99%
 
 ---
 
@@ -145,7 +147,7 @@ Adobe Campaign är nu kompatibelt med Windows Server 2019. Se [kompatibilitetsma
 **Andra ändringar**
 
 * Åtgärdsaktiviteterna Microsoft CRM, Salesforce och Oracle CRM On Demand har tagits bort från gränssnittet efter deras utfasning. Om du vill konfigurera datasynkroniseringen mellan Adobe Campaign och ett CRM-system kan du använda CRM-anslutningsaktiviteten. [Läs mer](../../workflow/using/crm-connector.md)
-* Fältet **[!UICONTROL Encrypted identifier]** har lagts till i besökarschemat (nms:besökare). Det här fältet beräknas och ska användas för webbprogram. Detta gäller när Line-kanalen är konfigurerad på instansen för mid-sourcing.
+* Fältet **[!UICONTROL Encrypted identifier]** har lagts till i besökarschemat (nms:visitor). Det här fältet beräknas och ska användas för webbprogram. Detta gäller när Line-kanalen är konfigurerad på instansen för mid-sourcing.
 * CRM-datakällor kan nu användas med aktiviteten **Ändra datakälla**.
 * Ett nytt alternativ har lagts till i egenskaperna **Felhantering** för arbetsflödesaktiviteter: alternativet **Avbryta vid fel** stoppar automatiskt arbetsflödet. Du kommer inte att kunna starta om den efteråt (NEO-29661). [Läs mer](../../workflow/using/advanced-parameters.md#in-case-of-errors)
 * En dedikerad sekvens används nu för att generera primärnycklarna för tabellen nmsGroup, som används för att skapa statistiska grupper av mottagare. Sekvensen xtknewId användes tidigare. (NEO-30832)

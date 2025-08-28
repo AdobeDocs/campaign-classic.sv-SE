@@ -5,11 +5,13 @@ description: Läs mer om Campaign Classic 2023-versioner
 feature: Release Notes
 role: User
 level: Beginner
+hide: true
+hidefromtoc: true
 exl-id: 8ed11e96-9f23-4e2e-bae2-25c51cfb549a
-source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
-workflow-type: ht
-source-wordcount: '2337'
-ht-degree: 100%
+source-git-commit: 62fc46e45078fce56eadda3518251e61244bf5d0
+workflow-type: tm+mt
+source-wordcount: '2336'
+ht-degree: 99%
 
 ---
 
@@ -79,7 +81,7 @@ _7 september 2023_
 * Det externa BigQuery-kontot har förbättrats med nya alternativ som används för att konfigurera GCloud SDK. (NEO-63879) [Läs mer](../../installation/using/configure-fda-google-big-query.md#google-external)
 * En ny `cusHeader` har lagts till i serverkonfigurationsfilen (serverConf.xml). Den låter dig lägga till anpassade rubriker när du laddar upp en fil från en extern server. (NEO-58339) [Läs mer](../../installation/using/the-server-configuration-file.md#cusheaders).
 * Hanteringen av spårningsloggen har förbättrats för att undvika negativa ID:n för lastMsgId. Den har ändrats från int32 till int64. (NEO-52290)
-* Mid-sourcingsarbetsflödet (leveransstatistik) har lagts till direkt. Det nya arbetsflödet synkroniserar leveransstatistik (nms:deliveryStat) från mitten till marknadsinstansen. (NEO-36802)
+* Mid-sourcingsarbetsflödet (leveransstatistik) har lagts till direkt. Det nya arbetsflödet synkroniserar leveransstatistikdata (nms:deliveryStat) från mitten till marknadsinstansen. (NEO-36802)
 
 ### Korrigeringar {#release-7-3-4-patches}
 

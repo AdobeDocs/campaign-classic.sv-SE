@@ -3,8 +3,10 @@ product: campaign
 title: Technote - Uppdatera miljön för att ansluta till Adobe Campaign med IMS
 description: Campaign - IMS-uppdateringar
 feature: Technote, Upgrade
+hide: true
+hidefromtoc: true
 exl-id: ecb5a258-a150-46a3-8b83-2b2c06d873ee
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: 62fc46e45078fce56eadda3518251e61244bf5d0
 workflow-type: tm+mt
 source-wordcount: '562'
 ht-degree: 4%
@@ -15,11 +17,11 @@ ht-degree: 4%
 
 
 
-Den 30 juni 2021 har ändringar gjorts i inloggningsfunktionerna för [Adobe Identity Management System](https://helpx.adobe.com/se/enterprise/using/identity.html) (IMS) som kan påverka din förmåga att fortsätta använda Adobe Campaign. Lär dig hur du kan fortsätta använda Adobe Campaign Classic v7 utan avbrott.
+Den 30 juni 2021 har inloggningsfunktionerna för [Adobe Identity Management System](https://helpx.adobe.com/enterprise/using/identity.html) (IMS) ändrats, vilket kan påverka din förmåga att fortsätta använda Adobe Campaign. Lär dig hur du kan fortsätta använda Adobe Campaign Classic v7 utan avbrott.
 
 ## Vad har ändrats?
 
-Adobe Identity Management-tjänsten (IMS) slutade stödja tidigare Internet Explorer-versioner den **30 juni 2021**. [Läs mer](https://helpx.adobe.com/se/x-productkb/global/update-operating-system-and-browser.html).
+Adobe Identity Management-tjänsten (IMS) slutade stöda äldre Internet Explorer-versioner den **30 juni 2021**. [Läs mer](https://helpx.adobe.com/x-productkb/global/update-operating-system-and-browser.html).
 
 Adobe vill bevara IMS-funktionaliteten för alla kunder sedan 30 juni 2021. IMS är en del av säkerhetsramverket som gör att användare kan logga in på klientkonsolen, alltså Adobe Campaign.
 
@@ -27,7 +29,7 @@ För att bevara den här funktionen måste kunderna uppdatera klientkonsolen på
 
 ## Påverkas du?
 
-Om du ansluter till Campaign [via en Adobe ID](../../integrations/using/about-adobe-id.md) via Adobe Identity Management Service (IMS) och kör en äldre version av Campaign än de som listas nedan påverkas du.
+Om du ansluter till Campaign [via en Adobe ID](../../integrations/using/about-adobe-id.md), via Adobe Identity Management Service (IMS) och kör en äldre version av Campaign än de som listas nedan påverkas du.
 
 Om du redan har uppgraderat men använder en äldre version av Microsoft Internet Explorer måste du uppgradera till Internet Explorer 11.
 
@@ -47,7 +49,7 @@ Om du redan har uppgraderat men använder en äldre version av Microsoft Interne
 
   Dessa releaser har ett nytt anslutningsprotokoll. Uppgradering är obligatoriskt för både Campaign-servern och klientkonsolen: när alla instanser har uppgraderats måste klientkonsolen uppgraderas till den här versionen och kunna ansluta till Campaign efter den **30 juni 2021**.
 
-Kontrollera dessutom att den senaste uppdateringen av din [Windows-version](../../rn/using/compatibility-matrix.md#ClientConsoleoperatingsystems), med **Internet Explorer 11** inbyggd, är installerad på varje användares dator.
+Kontrollera dessutom att den senaste uppdateringen av din [Windows-version](../../rn/using/compatibility-matrix.md#ClientConsoleoperatingsystems), med **Internet Explorer 11** inbyggd, är installerad på alla användares datorer.
 
 ## Vanliga frågor och svar 
 
@@ -76,7 +78,7 @@ Följande varningsmeddelande visas för användare om de behöver uppdatera sin 
 
 ![](../../integrations/using/assets/do-not-localize/errorMsg.png)
 
-Om du ser en sådan varning måste du installera de senaste uppdateringarna av det operativsystem du använder. [Läs mer](https://helpx.adobe.com/se/x-productkb/global/update-operating-system-and-browser.html)
+Om du ser en sådan varning måste du installera de senaste uppdateringarna av det operativsystem du använder. [Läs mer](https://helpx.adobe.com/x-productkb/global/update-operating-system-and-browser.html)
 
 Om du inte har uppdaterat din Internet Explorer-version visas följande meddelande och du kan inte längre ansluta till Adobe Campaign:
 
@@ -93,5 +95,5 @@ Om du inte har uppdaterat din Internet Explorer-version visas följande meddelan
 * [Vanliga frågor och svar om builduppgradering](../../platform/using/faq-build-upgrade.md)
 * [Gör den nya klientkonsolen tillgänglig för användare](../../installation/using/client-console-availability-for-windows.md)
 * [Installera Campaign Client Console](../../installation/using/installing-the-client-console.md)
-* [Åtkomst till programvarudistribution i Adobe](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=sv-SE)
-* [Ladda ned Campaign Classic build](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html)
+* [Få åtkomst till Adobe programvarudistribution](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html)
+* [Hämta Campaign Classic build](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html)
