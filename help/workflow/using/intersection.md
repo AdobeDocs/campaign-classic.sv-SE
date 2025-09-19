@@ -9,7 +9,7 @@ exl-id: f426bf02-9899-49eb-b699-728d51b57c64
 source-git-commit: 3ffa32fbaa588904b79a1343c39f5b5b5f2b134f
 workflow-type: tm+mt
 source-wordcount: '432'
-ht-degree: 0%
+ht-degree: 8%
 
 ---
 
@@ -17,8 +17,8 @@ ht-degree: 0%
 
 >[!CONTEXTUALHELP]
 >id="ac_workflow_intersection"
->title="Skärningsaktivitet"
->abstract="En aktivitet av typen Skärning skapar ett mål från skärningspunkten för de mottagna målen. Med en skärningspunkt kan du bara extrahera den population som är gemensam för alla inkommande aktivitetsresultat."
+>title="Skärningspunktsaktivitet"
+>abstract="En aktivitet av typen Skärningspunkt skapar ett mål från skärningspunkten för de mottagna målen. Med en skärningspunkt kan du bara extrahera den population som är gemensam för alla inkommande aktivitetsresultat."
 
 En aktivitet av typen **Skärning** skapar ett mål från skärningspunkten för de mottagna målen.
 
