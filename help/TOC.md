@@ -6,9 +6,9 @@ title: Användarhandbok för Campaign Classic v7
 user-guide-description: Produktdokumentation för Adobe Campaign Classic v7.
 sub-product: adobe campaign classic
 type: Documentation
-source-git-commit: d3d731c64cb5a430de6adac3aeb326f74134c436
-workflow-type: ht
-source-wordcount: '2569'
+source-git-commit: faed7f54dc72937b24ee1ece80d17150a513fa39
+workflow-type: tm+mt
+source-wordcount: '2565'
 ht-degree: 100%
 
 ---
@@ -37,6 +37,7 @@ ht-degree: 100%
          + [Kom igång med Campaign UI](platform/using/adobe-campaign-workspace.md)
          + [Använd Campaign Explorer](platform/using/adobe-campaign-explorer.md)
          + [Bläddra bland och anpassa listor](platform/using/adobe-campaign-ui-lists.md)
+         + [Uppräkningar](platform/using/managing-enumerations.md)
       + [Kampanjkopplingar](platform/using/about-connectors.md)
       + Vanliga frågor och svar {#faq}
          + [De vanligaste frågorna](platform/using/common-questions.md)
@@ -99,9 +100,6 @@ ht-degree: 100%
       + [Skapa och hantera grupper](platform/using/access-management-groups.md)
       + [Använd namngivna rättigheter för att ställa in behörigheter](platform/using/access-management-named-rights.md)
       + [Hantera åtkomst till mappar](platform/using/access-management-folders.md)
-   + Datapaket och uppräkningar {#administration-basics}
-      + [Datapaket](platform/using/working-with-data-packages.md)
-      + [Uppräkningar](platform/using/managing-enumerations.md)
    + CRM-kopplingar {#connectors}
       + [Kom igång med CRM-kopplingar](platform/using/crm-connectors.md)
       + [Anslut till Microsoft Dynamics 365](platform/using/crm-ms-dynamics.md)
@@ -738,6 +736,7 @@ ht-degree: 100%
          + [JSP-beteende](production/using/jsp-behavior.md)
          + [Hitta versionen av Tomcat](production/using/locate-tomcat-version.md)
 + Utvecklarhandbok {#configuring-campaign-classic}
+   + [Datapaket](platform/using/working-with-data-packages.md)
    + Datamodell {#data-model}
       + [Om datamodellen](configuration/using/about-data-model.md)
       + [Beskrivning av datamodellen](configuration/using/data-model-description.md)
