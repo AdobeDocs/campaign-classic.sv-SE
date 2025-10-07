@@ -5,10 +5,12 @@ description: Lär dig hur du konfigurerar ditt mobilprogram för Android
 feature: Push
 role: User, Developer
 level: Intermediate, Experienced
+hide: true
+hidefromtoc: true
 exl-id: 32c35e61-d0a3-478f-b73b-396e2becf7f9
-source-git-commit: 2bfcec5eaa1145cfb88adfa9c8b2f72ee3cd9469
+source-git-commit: 89e350c727fb9379d28916f79d9749f22fd4974f
 workflow-type: tm+mt
-source-wordcount: '837'
+source-wordcount: '843'
 ht-degree: 9%
 
 ---
@@ -24,7 +26,7 @@ Viktiga steg är:
 1. [Skapa mobilappen i Campaign](#creating-android-app)
 1. [Utöka appschemat med ytterligare data](#extend-subscription-schema)
 
-Du kommer sedan att [kunna skapa ett Android-omfattande meddelande](create-notifications-android.md).
+Du kan sedan [skapa ett omfattande Android-meddelande](create-notifications-android.md).
 
 >[!IMPORTANT]
 >
@@ -48,7 +50,7 @@ Så här väljer du vilken koppling du vill använda:
 
    >[!NOTE]
    >
-   > Du kan även konfigurera den enligt https://localhost:8080/nms/jsp/androidPushConnector.js, men vi rekommenderar att du använder version 2 av kopplingen.
+   > Du kan även konfigurera den enligt https://localhost:8080/nms/jsp/androidPushConnector.js, men vi rekommenderar att du använder version 2 av anslutningsprogrammet.
 
    ![](assets/nmac_connectors3.png)
 
@@ -58,7 +60,7 @@ Så här väljer du vilken koppling du vill använda:
 
 ## Konfigurera en Android-tjänst {#configuring-android-service}
 
-![](assets/do-not-localize/how-to-video.png) [Lär dig hur du konfigurerar en Android-tjänst i en video](https://experienceleague.adobe.com/docs/campaign-classic-learn/getting-started-with-push-notifications-for-android/configuring-an-android-service-in-campaign.html?lang=sv-SE#configuring-an-android-service-and-creating-an-android-mobile-application-in-campaign){target="_blank"}.
+![](assets/do-not-localize/how-to-video.png) [Lär dig hur du konfigurerar en Android-tjänst i en video](https://experienceleague.adobe.com/docs/campaign-classic-learn/getting-started-with-push-notifications-for-android/configuring-an-android-service-in-campaign.html#configuring-an-android-service-and-creating-an-android-mobile-application-in-campaign){target="_blank"}.
 
 1. Gå till noden **[!UICONTROL Profiles and Targets > Services and subscriptions]** och klicka på **[!UICONTROL New]**.
 
@@ -69,11 +71,11 @@ Så här väljer du vilken koppling du vill använda:
 
    >[!NOTE]
    >
-   >Standardmålmappningen för **[!UICONTROL Subscriber applications (nms:appSubscriptionRcp)]** är länkad till mottagartabellen. Om du vill använda en annan målmappning måste du skapa en ny målmappning och ange den i fältet **[!UICONTROL Target mapping]** för tjänsten. Mer information om hur du skapar målmappning finns i det [här avsnittet](../../configuration/using/about-custom-recipient-table.md).
+   >Standardmålmappningen **[!UICONTROL Subscriber applications (nms:appSubscriptionRcp)]** är länkad till mottagartabellen. Om du vill använda en annan målmappning måste du skapa en ny målmappning och ange den i fältet **[!UICONTROL Target mapping]** för tjänsten. Mer information om hur du skapar målmappning finns i [det här avsnittet](../../configuration/using/about-custom-recipient-table.md).
 
    ![](assets/nmac_ios.png)
 
-1. Klicka sedan på **[!UICONTROL Add]** knappen för att välja programtyp.
+1. Klicka sedan på knappen **[!UICONTROL Add]** för att välja programtyp.
 
    ![](assets/nmac_service_2.png)
 
@@ -101,7 +103,7 @@ När du har skapat tjänsten måste du nu skapa ett Android-program:
 
 1. Fyll i fälten **[!UICONTROL Firebase Cloud Messaging the Android connection settings]**.
 
-1. Klicka på **[!UICONTROL Finish]** och sedan **[!UICONTROL Save]** på . Ditt Android-program kan nu användas i Campaign Classic.
+1. Klicka på **[!UICONTROL Finish]** och sedan på **[!UICONTROL Save]**. Ditt Android-program kan nu användas i Campaign Classic.
 
 Som standard sparar Adobe Campaign en nyckel i fältet **[!UICONTROL User identifier]** (@userKey) i tabellen **[!UICONTROL Subscriber applications (nms:appSubscriptionRcp)]**. Med den här nyckeln kan du länka en prenumeration till en mottagare. Om du vill samla in ytterligare data (till exempel en komplex avstämningsnyckel) måste du använda följande konfiguration:
 
@@ -136,7 +138,7 @@ Följ stegen nedan för att konfigurera API-versionen för HTTP v1:
 
 1. Som ett alternativ kan du utöka ett push-meddelandeinnehåll med vissa **[!UICONTROL Application variables]** vid behov. Dessa är helt anpassningsbara och utgör en del av den meddelandenyttolast som skickas till den mobila enheten.
 
-1. Klicka på **[!UICONTROL Finish]** och sedan på **[!UICONTROL Save]**. Ditt Android-program är nu redo att användas i Campaign Classic.
+1. Klicka på **[!UICONTROL Finish]** och sedan på **[!UICONTROL Save]**. Ditt Android-program kan nu användas i Campaign Classic.
 
 Nedan visas FCM-nyttolastsnamnen för att ytterligare anpassa ditt push-meddelande:
 
@@ -147,11 +149,11 @@ Nedan visas FCM-nyttolastsnamnen för att ytterligare anpassa ditt push-meddelan
 
 ## Utöka appsubscriptionRcp-schemat {#extend-subscription-schema}
 
-![](assets/do-not-localize/how-to-video.png) [Lär dig hur du utökar appsubscriptionRcp-schemat i video](https://experienceleague.adobe.com/docs/campaign-classic-learn/getting-started-with-push-notifications-for-android/extending-the-app-subscription-schema.html?lang=sv-SE#extending-the-app-subscription-schema-to-personalize-push-notifications)
+![](assets/do-not-localize/how-to-video.png) [Lär dig hur du utökar appsubscriptionRcp-schemat i video](https://experienceleague.adobe.com/docs/campaign-classic-learn/getting-started-with-push-notifications-for-android/extending-the-app-subscription-schema.html#extending-the-app-subscription-schema-to-personalize-push-notifications)
 
 Du måste utöka **appsubscriptionRcp** för att definiera nya fält för att lagra parametrar från appen i Campaign-databasen. De här fälten används till exempel för personalisering. Så här gör du:
 
-1. Skapa ett tillägg till schemat **[!UICONTROL Subscriber applications (nms:appsubscriptionRcp)]** och definiera de nya fälten. Läs mer om schematillägget på [den här sidan](../../configuration/using/about-schema-edition.md)
+1. Skapa ett tillägg till **[!UICONTROL Subscriber applications (nms:appsubscriptionRcp)]**-schemat och definiera de nya fälten. Läs mer om schematillägget på [den här sidan](../../configuration/using/about-schema-edition.md)
 
 1. Definiera mappningen på fliken **[!UICONTROL Subscription parameters]**.
 

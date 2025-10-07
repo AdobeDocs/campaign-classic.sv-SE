@@ -4,8 +4,10 @@ title: Skapa ett push-meddelande för Android-enheter
 description: Lär dig skapa push-meddelanden för Android
 feature: Push
 role: User, Developer, Data Engineer
+hide: true
+hidefromtoc: true
 exl-id: 13ccc5d6-4355-42ba-80dc-30a45d3b69a4
-source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
+source-git-commit: 89e350c727fb9379d28916f79d9749f22fd4974f
 workflow-type: tm+mt
 source-wordcount: '647'
 ht-degree: 0%
@@ -68,7 +70,7 @@ Bilden och webbsidan ska visas i push-meddelandet när de tas emot på prenumera
 
 ## Skapa ett meddelande {#creating-notification-message}
 
-![](assets/do-not-localize/how-to-video.png) [Lär dig hur du skapar ett push-meddelande från Android i en video](https://experienceleague.adobe.com/docs/campaign-classic-learn/getting-started-with-push-notifications-for-android/configuring-and-sending-push-notifications.html?lang=sv-SE#additional-resources){target="_blank"}.
+![](assets/do-not-localize/how-to-video.png) [Lär dig hur du skapar ett push-meddelande från Android i en video](https://experienceleague.adobe.com/docs/campaign-classic-learn/getting-started-with-push-notifications-for-android/configuring-and-sending-push-notifications.html#additional-resources){target="_blank"}.
 
 1. Gå till **[!UICONTROL Campaign management]** > **[!UICONTROL Deliveries]**.
 

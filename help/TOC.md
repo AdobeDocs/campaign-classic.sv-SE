@@ -6,10 +6,10 @@ title: Användarhandbok för Campaign Classic v7
 user-guide-description: Produktdokumentation för Adobe Campaign Classic v7.
 sub-product: adobe campaign classic
 type: Documentation
-source-git-commit: faed7f54dc72937b24ee1ece80d17150a513fa39
+source-git-commit: 89e350c727fb9379d28916f79d9749f22fd4974f
 workflow-type: tm+mt
-source-wordcount: '2565'
-ht-degree: 100%
+source-wordcount: '2561'
+ht-degree: 99%
 
 ---
 
@@ -144,8 +144,8 @@ ht-degree: 100%
       + [Skapa ett SMS](delivery/using/sms-create.md)
       + [Migrera till den utökade generiska SMPP-kopplingen](delivery/using/unsupported-connector-migration.md)
    + [Skicka LINE-meddelanden](delivery/using/line-channel.md)
+   + [Skicka push-meddelanden](delivery/using/about-mobile-app-channel.md)
    + Skicka push-meddelanden {#sending-push-notifications}
-      + [Kom igång med mobilappskanalen](delivery/using/about-mobile-app-channel.md)
       + [Integrera Campaign SDK i den mobila applikationen](delivery/using/integrating-campaign-sdk-into-the-mobile-application.md)
       + Konfigurera den mobila applikationen{#configure-the-mobile-app}
          + [Kom igång med konfigurationen av appen](delivery/using/get-started-app-config.md)
@@ -155,8 +155,8 @@ ht-degree: 100%
          + [Skapa ett push-meddelande för iOS](delivery/using/create-notifications-ios.md)
          + [Skapa ett push-meddelande för Android](delivery/using/create-notifications-android.md)
       + [Felsökning](delivery/using/troubleshooting.md)
+   + [Skicka direktreklam](delivery/using/about-direct-mail-channel.md)
    + Skicka direktreklam {#sending-direct-mail}
-      + [Om direktutskickskanalen](delivery/using/about-direct-mail-channel.md)
       + [Skapa en leverans av direktutskick](delivery/using/creating-a-direct-mail-delivery.md)
       + [Definiera innehållet i direktmeddelanden](delivery/using/defining-the-direct-mail-content.md)
       + [Validera](delivery/using/validating.md)

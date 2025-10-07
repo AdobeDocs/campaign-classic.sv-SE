@@ -4,8 +4,10 @@ title: Skapa ett push-meddelande för iOS-enheter
 description: Lär dig skapa push-meddelanden för iOS
 feature: Push
 role: User, Developer, Data Engineer
+hide: true
+hidefromtoc: true
 exl-id: 4520504a-0d9f-4ea7-a5a8-0c07948af4f0
-source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
+source-git-commit: 89e350c727fb9379d28916f79d9749f22fd4974f
 workflow-type: tm+mt
 source-wordcount: '971'
 ht-degree: 6%
@@ -168,7 +170,7 @@ Nu måste du skapa en ny leverans och länka den till mobilappen som du har skap
 
    ![](assets/nmac_ios_10.png)
 
-1. Markera kryssrutan **[!UICONTROL Mutable content]** på fliken **[!UICONTROL Advanced]** för att tillåta mobilprogrammet att hämta medieinnehåll.
+1. Markera kryssrutan **[!UICONTROL Advanced]** på fliken **[!UICONTROL Mutable content]** för att tillåta mobilprogrammet att hämta medieinnehåll.
 
 1. Klicka på **[!UICONTROL Save]** och skicka leveransen.
 

@@ -5,9 +5,9 @@ description: Skapa leveranser för att skicka personanpassade meddelanden i olik
 feature: Cross Channel Orchestration, Email, SMS, In App, Direct Mail, Push
 role: User
 exl-id: 92b5e013-b619-4f0b-b0b1-1fc2e653ceac
-source-git-commit: d3d731c64cb5a430de6adac3aeb326f74134c436
+source-git-commit: 89e350c727fb9379d28916f79d9749f22fd4974f
 workflow-type: tm+mt
-source-wordcount: '927'
+source-wordcount: '943'
 ht-degree: 2%
 
 ---
@@ -26,32 +26,36 @@ Som en del av kampanjsatsningen v8 har Campaign Classic-dokumentationen omstrukt
 
 >[!TAB Dokumentation för kommunikationskanaler]
 
-Mer information om kommunikationskanaler finns i [dokumentationen för Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/gs-message.html?lang=sv-SE){target=_blank}.
+Mer information om kommunikationskanaler finns i [dokumentationen för Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/gs-message.html){target=_blank}.
 
 
-[![bild](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/gs-message.html?lang=sv-SE){target=_blank}
+[![bild](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/gs-message.html){target=_blank}
 
 
 >[!TAB Leverera innehåll och målgrupp]
 
 Lär dig de viktigaste stegen som rör leveransskapande, innehåll och målgrupp i dokumentationen för Campaign v8:
 
-* [Skapa leveransen](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html?lang=sv-SE#create-the-delivery){target="_blank"}: Lär dig hur du skapar en engångsleverans med ett enda foto.
-* [Definiera innehållet](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html?lang=sv-SE#content-of-the-delivery){target="_blank"}: Konfigurera leveransinnehållet för varje kanal.
-* [Ange målgruppen](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html?lang=sv-SE#target-population){target="_blank"}: Definiera flera typer av mål: huvudmålgrupp, korrekturmål, dirigerade adresser och kontrollgrupper.
+* [Skapa leveransen](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html#create-the-delivery){target="_blank"}: Lär dig hur du skapar en engångsleverans med ett enda foto.
+* [Definiera innehållet](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html#content-of-the-delivery){target="_blank"}: Konfigurera leveransinnehållet för varje kanal.
+* [Ange målgruppen](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html#target-population){target="_blank"}: Definiera flera typer av mål: huvudmålgrupp, korrekturmål, dirigerade adresser och kontrollgrupper.
+* [Arbeta med leveransmallar](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-templates.html){target="_blank"}: Lär dig hur du definierar mallar för att underlätta skapandet av leveransen.
+
+
+
 
 
 >[!TAB Leveransvalidering och sändning]
 
 På dessa sidor finns information om leveransvalidering, sändning och metodtips i dokumentationen för Campaign v8:
 
-* [Verifiera leveransen](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html?lang=sv-SE#validate-the-delivery){target="_blank"}: Lär dig hur du validerar leveransen innan du skickar den till huvudmålet.
-* [Skicka leveransen](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html?lang=sv-SE#configuring-and-sending-the-delivery){target="_blank"}: Konfigurera leveransinställningarna och definiera hur meddelanden ska skickas.
-* [Bästa praxis för leverans](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/delivery-best-practices.html?lang=sv-SE){target="_blank"}: Ta del av de bästa metoderna för leveransfunktioner i Campaign.
+* [Verifiera leveransen](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html#validate-the-delivery){target="_blank"}: Lär dig hur du validerar leveransen innan du skickar den till huvudmålet.
+* [Skicka leveransen](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html#configuring-and-sending-the-delivery){target="_blank"}: Konfigurera leveransinställningarna och definiera hur meddelanden ska skickas.
+* [Bästa praxis för leverans](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/delivery-best-practices.html){target="_blank"}: Ta del av de bästa metoderna för leveransfunktioner i Campaign.
 
 >[!ENDTABS]
 
-Följande inställningar är specifika för Campaign Classic. Andra leveransinställningar finns i [dokumentationen för Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/gs-message.html?lang=sv-SE){target="_blank"}.
+Följande inställningar är specifika för Campaign Classic. Andra leveransinställningar finns i [dokumentationen för Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/gs-message.html){target="_blank"}.
 
 +++ **Leveransanalys**
 
@@ -126,7 +130,7 @@ När leveransen har startats kan meddelandena (och eventuella försök) skickas 
 
    Learn how to create a one-shot single delivery. You can create other types of deliveries to build your use cases. 
 
-For more information about the different types of deliveries and how to create them, refer to the [Campaign v8 documentation](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html?lang=sv-SE){target="_blank"}. 
+For more information about the different types of deliveries and how to create them, refer to the [Campaign v8 documentation](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html){target="_blank"}. 
 
 >[!NOTE]
 >

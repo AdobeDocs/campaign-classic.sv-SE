@@ -6,101 +6,105 @@ badge-v8: label="Gäller även för v8" type="Positive" tooltip="Gäller även C
 feature: Push
 role: User
 exl-id: c3b0406f-f652-42f4-ad0d-23fb719cd1b6
-source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
+source-git-commit: 89e350c727fb9379d28916f79d9749f22fd4974f
 workflow-type: tm+mt
-source-wordcount: '772'
-ht-degree: 9%
+source-wordcount: '576'
+ht-degree: 2%
 
 ---
 
 # Kom igång med mobilappskanalen{#about-mobile-app-channel}
 
-Med **mobilappskanalen** kan du använda Adobe Campaign-plattformen för att skicka personaliserade push-meddelanden till iOS- och Android-terminaler via appar.
+Med Adobe Campaign kan du skapa push-meddelandeleveranser för att skicka personaliserade meddelanden till mobilappsanvändarna.
 
-Det finns två leveranskanaler:
+Med push-meddelanden kan du engagera användare på iOS och Android i realtid. Oavsett om ni skickar uppdateringar, meddelanden eller kampanjer kan ni styra innehåll, timing och målinriktning. Lär dig hur du konfigurerar och använder push-kanalen, hanterar prenumerationer, integrerar med APN och FCM samt anpassar meddelanden i [Adobe Campaign v8-dokumentationen](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/emails/email){target=_blank}.
 
-* En iOS-kanal som gör att du kan skicka meddelanden till Apple mobila enheter.
+Som en del av kampanjsatsningen v8 har Campaign Classic-dokumentationen omstrukturerats. Gemensamma funktioner är nu bara tillgängliga i Campaign v8-dokumentationsuppsättningen.
 
-  ![](assets/nmac_intro_2.png)
+>[!BEGINTABS]
 
-* En Android-kanal som gör att du kan skicka datameddelanden till Android mobila enheter.
+>[!TAB Tryckkanalsdokumentation]
 
-  ![](assets/nmac_intro_1.png)
+Mer information om push-meddelandekanalen finns i [dokumentationen för Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/push/push.html){target=_blank}.
 
-  >[!IMPORTANT]
-  >
-  >Vissa viktiga ändringar av tjänsten Android Firebase Cloud Messaging (FCM) kommer att släppas 2024 och kan komma att påverka din Adobe Campaign-implementering. Konfigurationen för prenumerationstjänster för push-meddelanden för Android kan behöva uppdateras för att den här ändringen ska fungera. Du kan redan kontrollera och vidta åtgärder. Läs mer i den här [Adobe Campaign v8-tekniken](https://experienceleague.adobe.com/docs/campaign/technotes-ac/tn-new/push-technote.html?lang=sv){target="_blank"}.
-
-Motsvarar dessa två kanaler finns det två leveransaktiviteter i kampanjarbetsflödena. Det finns även två mallar för transaktionsmeddelanden.
-
-![](assets/nmac_intro_3.png)
+[![bild](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/push/push.html){target=_blank}
 
 
-Du kan definiera programbeteendet för när användaren aktiverar meddelandet för att visa skärmen som matchar programsammanhanget. Exempel:
+>[!TAB Skapa push-leverans]
 
-* Ett meddelande skickas till kunden för att meddela att deras paket har avslutats. När du aktiverar meddelandet öppnas en sida med leveransrelaterad information.
-* Användaren har lagt till artiklar i kundvagnen, men lämnat programmet utan att slutföra köpet. Ett meddelande om att kundvagnen har övergetts skickas. När de aktiverar meddelandet visas objektet på skärmen.
+Lär dig de viktigaste stegen för att skapa push-leveranser i dokumentationen för Campaign v8:
+
+* [Skapa ett push-meddelande](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/push/push.html#push-create){target="_blank"}: Lär dig mer om de olika stegen som krävs för att skapa en push-leverans.
+* [Skicka och övervaka push-meddelandet](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/push/push.html#push-test){target="_blank"}: Lär dig hur du validerar, skickar och spårar leveranser.
+* [Designa en omfattande push-leverans från Android](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/push/rich-push/rich-push-android.html){target="_blank"}: Lär dig hur du skapar och konfigurerar omfattande push-meddelanden för Android-enheter.
+* [Designa en omfattande push-leverans från iOS](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/push/rich-push/rich-push-ios.html){target="_blank"}: Lär dig hur du utformar och konfigurerar omfattande push-meddelanden för iOS-enheter i Adobe Campaign v8.
+
+
+>[!TAB Push-parametrar]
+
+Läs dessa sidor för att lära dig mer om push-parametrar i dokumentationen för Campaign v8:
+
+* [Konfigurationskrav](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/push/push-settings.html#before-starting){target="_blank"}: Lär dig hur du konfigurerar behörigheter och konfigurerar din app.
+* [Konfigurera startegenskapen](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/push/push-settings.html#launch-property){target="_blank"}: Lär dig hur du ställer in en mobil taggegenskap i Adobe Experience Platform Data Collection för att aktivera push-meddelanden.
+* [Konfigurera push-tjänster för mobiltjänster](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/push/push-settings.html#push-service){target="_blank"}: Konfigurera push-tjänster för iOS och Android i Adobe för att aktivera riktade push-meddelanden för mobilappsanvändare.
+* [Konfigurera tillägget i din mobila egenskap](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/push/push-settings.html#configure-extension){target="_blank"}: Integrera Campaign-tillägget i din mobila egenskap för att aktivera push-meddelanden och hantera användarinteraktioner effektivt.
+
+>[!ENDTABS]
+
+
+Följande information gäller endast Campaign Classic.
+
++++ **Paketinstallation**
+
+![](assets/do-not-localize/how-to-video.png) [Lär dig hur du installerar mobilappspaketet i video](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/sending-messages/push-channel/installing-the-mobile-app-channel.html#sending-messages)
+
+Kontakta [Adobe Customer Care](https://helpx.adobe.com/se/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) -teamet om du vill få åtkomst till en push-meddelandekanal i Campaign som hybridkund/värdkund.
+
+Som lokal kund måste du installera ett inbyggt paket.
 
 >[!CAUTION]
 >
->* Du måste kontrollera att de meddelanden som skickas till ett mobilprogram är kompatibla med de krav och villkor som anges av Apple (Apple Push Notification Service) och Google (Firebase Cloud Messaging).
->* Varning! I vissa länder kräver lagen att du informerar användarna om dina insamlade datatyper för mobilprogram och syftet med deras behandling. Ni måste kontrollera lagstiftningen.
+>Läs mer om Campaigns inbyggda paket, metodtips och rekommendationer i [den här sidan](../../installation/using/installing-campaign-standard-packages.md).
 
-Arbetsflödet **[!UICONTROL NMAC opt-out management]** (mobileAppOptOutMgt) uppdaterar meddelanden om att prenumerationen har avbrutits på mobila enheter. Mer information om det här arbetsflödet finns i [listan över tekniska arbetsflöden](../../workflow/using/about-technical-workflows.md).
+Installationsstegen är:
 
-Adobe Campaign är kompatibelt med HTTP/2 APN:er. Mer information om konfigurationsstegen finns i avsnittet [this](configuring-the-mobile-application.md).
+1. Få åtkomst till paketimportassistenten från **[!UICONTROL Tools > Advanced > Import package]** i Adobe Campaign klientkonsol.
 
-Global information om hur du skapar en leverans finns i [det här avsnittet](steps-about-delivery-creation-steps.md).
+   ![](assets/package_ios.png)
 
+1. Välj **[!UICONTROL Install a standard package]**.
 
-## Konfigurera kanal för push-meddelanden {#push-notification-configuration}
+1. Markera **[!UICONTROL Mobile App Channel]** i listan som visas.
 
-Om du vill skicka push-meddelanden med Adobe Campaign måste du först konfigurera miljön och appen. Innan du börjar skicka push-meddelanden med Adobe Campaign måste du se till att det finns konfigurationer och integreringar på mobilappen och för taggar i Adobe Experience Platform. Adobe Experience Platform Mobile SDK erbjuder API:er för integrering på klientsidan för mobiler via Android och iOS-kompatibla SDK:er. Konfigurationen av SDK:er hanteras via användargränssnittet för datainsamling för flexibel konfiguration och utbyggbara, regelbaserade integreringar. Läs mer i [Adobe Campaign v8-dokumentationen](https://experienceleague.adobe.com/sv/docs/campaign/campaign-v8/send/push/push-settings).
+   ![](assets/package_ios_2.png)
 
+1. Klicka på **[!UICONTROL Next]** och sedan på **[!UICONTROL Start]** för att starta paketinstallationen.
 
-## Datasökväg {#data-path}
+   När paketen har installerats visas **100%** i förloppsindikatorn och följande meddelande visas i installationsloggarna: **[!UICONTROL Installation of packages successful]**.
 
-I följande scheman beskrivs de steg som gör att mobilprogram kan utbyta data med Adobe Campaign. Den här processen omfattar tre enheter:
+   ![](assets/package_ios_3.png)
 
-* mobilapplikationen
-* meddelandetjänsten: APN (Apple Push Notification Service) för Apple och FCM (Firebase Cloud Messaging) för Android
-* Adobe Campaign
+1. **[!UICONTROL Close]** installationsfönstret.
 
-De tre huvudstegen i meddelandeprocessen är: registrering av programmet i Adobe Campaign (prenumerationssamling), leveranser och spårning.
+När det här steget är klart kan du konfigurera dina Android- och iOS-appar. Se Campaign v8 [dokumentation](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/push/push.html){target="_blank"}.
 
-### Steg 1: Prenumerationssamling {#step-1--subscription-collection}
++++
 
-Mobilprogrammet hämtas av användaren från App Store eller Google Play. Det här programmet innehåller anslutningsinställningarna (iOS-certifikat och projektnyckel för Android) och integrationsnyckeln. Första gången programmet öppnas (beroende på konfiguration) kan användaren uppmanas att ange registreringsinformation (@userKey: exempel på e-post eller kontonummer). Samtidigt skickar programmet frågor till meddelandetjänsten för att samla in ett meddelande-ID (push-ID). All den här informationen (anslutningsinställningar, integrationsnyckel, meddelandeidentifierare, userKey) skickas till Adobe Campaign.
++++ **Felsökning**
 
-![](assets/nmac_register_view.png)
+Om din mobila enhet är ansluten till ett trådlöst nätverk och du inte får några meddelanden kontrollerar du att FCM-/APN-portarna inte blockeras av din brandvägg.
 
-### Steg 2: Leverans {#step-2--delivery}
+**Android**: Den mobila enheten ansluter till FCM-servrarna på portarna 5228 till 5230. Därför måste du konfigurera brandväggen så att den tillåter anslutning till FCM. Portarna som ska öppnas är: 5228 (den vanligaste), 5229 och 5230.
 
-Marknadsförarna riktar sig till programprenumeranter. Leveransprocessen skickar anslutningsinställningarna till meddelandetjänsten (iOS-certifikat och projektnyckel för Android), meddelande-ID:t (push-ID) och meddelandets innehåll. Meddelandetjänsten skickar meddelanden till målterminalerna.
+**iOS**:
 
-Följande information finns i Adobe Campaign:
+HTTP/2-anslutning: Du måste tillåta kommunikation till och från följande servrar:
 
-* Endast Android: antal enheter som har visat meddelandet (visningar)
-* Android och iOS: antal klick i meddelandet
+* api.push.apple.com: port 443
+* api.development.push.apple.com: port 443
 
-![](assets/nmac_delivery_view.png)
+>[!NOTE]
+>
+>Mer information om de två anslutningarna finns i [dokumentationen för Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/push/push-settings.html){target="_blank"}.
 
-Adobe Campaign-servern måste kunna kontakta APN-servern på 443-porten för iOS HTTP/2-anslutningen.
-
-Använd följande kommandon för att kontrollera att den fungerar som den ska:
-
-* För provningar:
-
-  ```
-  api.development.push.apple.com:443
-  ```
-
-* I produktion:
-
-  ```
-  api.push.apple.com:443
-  ```
-
-Med iOS HTTP/2-kontakten måste MTA och webbservern kunna kontakta APN på port 443.
-
-Om du behöver använda iOS HTTP/2-anslutningen via en proxy, se [sidan](../../installation/using/file-res-management.md#proxy-connection-configuration).
++++
