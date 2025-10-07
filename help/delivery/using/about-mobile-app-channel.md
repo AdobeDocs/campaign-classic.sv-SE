@@ -16,7 +16,7 @@ ht-degree: 2%
 
 Med Adobe Campaign kan du skapa push-meddelandeleveranser för att skicka personaliserade meddelanden till mobilappsanvändarna.
 
-Med push-meddelanden kan du engagera användare på iOS och Android i realtid. Oavsett om ni skickar uppdateringar, meddelanden eller kampanjer kan ni styra innehåll, timing och målinriktning. Lär dig hur du konfigurerar och använder push-kanalen, hanterar prenumerationer, integrerar med APN och FCM samt anpassar meddelanden i [Adobe Campaign v8-dokumentationen](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/emails/email){target=_blank}.
+Med push-meddelanden kan du engagera användare på iOS och Android i realtid. Oavsett om ni skickar uppdateringar, meddelanden eller kampanjer kan ni styra innehåll, timing och målinriktning. Lär dig hur du konfigurerar och använder push-kanalen, hanterar prenumerationer, integrerar med APN och FCM samt anpassar meddelanden i [Adobe Campaign v8-dokumentationen](https://experienceleague.adobe.com/sv/docs/campaign/campaign-v8/send/emails/email){target=_blank}.
 
 Som en del av kampanjsatsningen v8 har Campaign Classic-dokumentationen omstrukturerats. Gemensamma funktioner är nu bara tillgängliga i Campaign v8-dokumentationsuppsättningen.
 
@@ -24,29 +24,29 @@ Som en del av kampanjsatsningen v8 har Campaign Classic-dokumentationen omstrukt
 
 >[!TAB Tryckkanalsdokumentation]
 
-Mer information om push-meddelandekanalen finns i [dokumentationen för Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/push/push.html){target=_blank}.
+Mer information om push-meddelandekanalen finns i [dokumentationen för Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/push/push.html?lang=sv-SE){target=_blank}.
 
-[![bild](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/push/push.html){target=_blank}
+[![bild](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/push/push.html?lang=sv-SE){target=_blank}
 
 
 >[!TAB Skapa push-leverans]
 
 Lär dig de viktigaste stegen för att skapa push-leveranser i dokumentationen för Campaign v8:
 
-* [Skapa ett push-meddelande](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/push/push.html#push-create){target="_blank"}: Lär dig mer om de olika stegen som krävs för att skapa en push-leverans.
-* [Skicka och övervaka push-meddelandet](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/push/push.html#push-test){target="_blank"}: Lär dig hur du validerar, skickar och spårar leveranser.
-* [Designa en omfattande push-leverans från Android](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/push/rich-push/rich-push-android.html){target="_blank"}: Lär dig hur du skapar och konfigurerar omfattande push-meddelanden för Android-enheter.
-* [Designa en omfattande push-leverans från iOS](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/push/rich-push/rich-push-ios.html){target="_blank"}: Lär dig hur du utformar och konfigurerar omfattande push-meddelanden för iOS-enheter i Adobe Campaign v8.
+* [Skapa ett push-meddelande](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/push/push.html?lang=sv-SE#push-create){target="_blank"}: Lär dig mer om de olika stegen som krävs för att skapa en push-leverans.
+* [Skicka och övervaka push-meddelandet](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/push/push.html?lang=sv-SE#push-test){target="_blank"}: Lär dig hur du validerar, skickar och spårar leveranser.
+* [Designa en omfattande push-leverans från Android](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/push/rich-push/rich-push-android.html?lang=sv-SE){target="_blank"}: Lär dig hur du skapar och konfigurerar omfattande push-meddelanden för Android-enheter.
+* [Designa en omfattande push-leverans från iOS](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/push/rich-push/rich-push-ios.html?lang=sv-SE){target="_blank"}: Lär dig hur du utformar och konfigurerar omfattande push-meddelanden för iOS-enheter i Adobe Campaign v8.
 
 
 >[!TAB Push-parametrar]
 
 Läs dessa sidor för att lära dig mer om push-parametrar i dokumentationen för Campaign v8:
 
-* [Konfigurationskrav](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/push/push-settings.html#before-starting){target="_blank"}: Lär dig hur du konfigurerar behörigheter och konfigurerar din app.
-* [Konfigurera startegenskapen](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/push/push-settings.html#launch-property){target="_blank"}: Lär dig hur du ställer in en mobil taggegenskap i Adobe Experience Platform Data Collection för att aktivera push-meddelanden.
-* [Konfigurera push-tjänster för mobiltjänster](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/push/push-settings.html#push-service){target="_blank"}: Konfigurera push-tjänster för iOS och Android i Adobe för att aktivera riktade push-meddelanden för mobilappsanvändare.
-* [Konfigurera tillägget i din mobila egenskap](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/push/push-settings.html#configure-extension){target="_blank"}: Integrera Campaign-tillägget i din mobila egenskap för att aktivera push-meddelanden och hantera användarinteraktioner effektivt.
+* [Konfigurationskrav](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/push/push-settings.html?lang=sv-SE#before-starting){target="_blank"}: Lär dig hur du konfigurerar behörigheter och konfigurerar din app.
+* [Konfigurera startegenskapen](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/push/push-settings.html?lang=sv-SE#launch-property){target="_blank"}: Lär dig hur du ställer in en mobil taggegenskap i Adobe Experience Platform Data Collection för att aktivera push-meddelanden.
+* [Konfigurera push-tjänster för mobiltjänster](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/push/push-settings.html?lang=sv-SE#push-service){target="_blank"}: Konfigurera push-tjänster för iOS och Android i Adobe för att aktivera riktade push-meddelanden för mobilappsanvändare.
+* [Konfigurera tillägget i din mobila egenskap](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/push/push-settings.html?lang=sv-SE#configure-extension){target="_blank"}: Integrera Campaign-tillägget i din mobila egenskap för att aktivera push-meddelanden och hantera användarinteraktioner effektivt.
 
 >[!ENDTABS]
 
@@ -55,7 +55,7 @@ Följande information gäller endast Campaign Classic.
 
 +++ **Paketinstallation**
 
-![](assets/do-not-localize/how-to-video.png) [Lär dig hur du installerar mobilappspaketet i video](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/sending-messages/push-channel/installing-the-mobile-app-channel.html#sending-messages)
+![](assets/do-not-localize/how-to-video.png) [Lär dig hur du installerar mobilappspaketet i video](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/sending-messages/push-channel/installing-the-mobile-app-channel.html?lang=sv-SE#sending-messages)
 
 Kontakta [Adobe Customer Care](https://helpx.adobe.com/se/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) -teamet om du vill få åtkomst till en push-meddelandekanal i Campaign som hybridkund/värdkund.
 
@@ -85,7 +85,7 @@ Installationsstegen är:
 
 1. **[!UICONTROL Close]** installationsfönstret.
 
-När det här steget är klart kan du konfigurera dina Android- och iOS-appar. Se Campaign v8 [dokumentation](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/push/push.html){target="_blank"}.
+När det här steget är klart kan du konfigurera dina Android- och iOS-appar. Se Campaign v8 [dokumentation](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/push/push.html?lang=sv-SE){target="_blank"}.
 
 +++
 
@@ -104,6 +104,6 @@ HTTP/2-anslutning: Du måste tillåta kommunikation till och från följande ser
 
 >[!NOTE]
 >
->Mer information om de två anslutningarna finns i [dokumentationen för Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/push/push-settings.html){target="_blank"}.
+>Mer information om de två anslutningarna finns i [dokumentationen för Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/push/push-settings.html?lang=sv-SE){target="_blank"}.
 
 +++

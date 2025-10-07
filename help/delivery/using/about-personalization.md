@@ -29,7 +29,7 @@ Meddelanden som skickas av Adobe Campaign kan personaliseras på flera olika sä
 
 Med Adobe Campaign kan ni skräddarsy era leveranser för att skicka meddelanden som matchar mottagarnas profiler och intressen.
 
-Personalization hjälper er att göra budskapen mer relevanta och engagerande. Du kan använda mottagardata för att anpassa innehåll, lägga till dynamiska fält eller visa annan information baserat på villkor. Läs om hur du konfigurerar och använder personaliseringsfunktioner i dina leveranser i [Adobe Campaign v8-dokumentationen](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/personalize/personalize.html){target=_blank}.
+Personalization hjälper er att göra budskapen mer relevanta och engagerande. Du kan använda mottagardata för att anpassa innehåll, lägga till dynamiska fält eller visa annan information baserat på villkor. Läs om hur du konfigurerar och använder personaliseringsfunktioner i dina leveranser i [Adobe Campaign v8-dokumentationen](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/personalize/personalize.html?lang=sv-SE){target=_blank}.
 
 Som en del av kampanjsatsningen v8 har Campaign Classic-dokumentationen omstrukturerats. Gemensamma funktioner är nu bara tillgängliga i Campaign v8-dokumentationsuppsättningen.
 
@@ -37,30 +37,30 @@ Som en del av kampanjsatsningen v8 har Campaign Classic-dokumentationen omstrukt
 
 >[!TAB Dokumentation för innehållspersonalisering]
 
-Mer information om innehållspersonalisering finns i [dokumentationen för Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/personalize/personalize.html){target=_blank}.
+Mer information om innehållspersonalisering finns i [dokumentationen för Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/personalize/personalize.html?lang=sv-SE){target=_blank}.
 
 
-[![bild](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/personalize/personalize.html){target=_blank}
+[![bild](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/personalize/personalize.html?lang=sv-SE){target=_blank}
 
 
 >[!TAB Skapa e-postleverans]
 
 Läs om hur du skapar e-postleveranser i dokumentationen för Campaign v8:
 
-* [Skapa en e-postleverans](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/email.html){target="_blank"}: Lär dig mer om de olika stegen som krävs för att skapa en e-postleverans.
-* [Definiera e-postinnehållet](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/defining-the-email-content.html){target="_blank"}: Definiera vad e-postmeddelandet ska innehålla: avsändare, ämne, innehåll, bilder.
-* [Definiera interaktivt innehåll](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/defining-interactive-content.html){target="_blank"}: Använd den interaktiva AMP för e-post-format för att skicka dynamiska e-postmeddelanden.
-* [Skicka e-post på japanska mobiler](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/sending-emails-on-japanese-mobiles.html){target="_blank"}: Använd ett av de tre specifika japanska formaten för e-post på mobiler.
-* [Bifoga filer i ett e-postmeddelande](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/attaching-files.html){target="_blank"}: Lär dig olika sätt att bifoga en eller flera filer i ett e-postmeddelande.
+* [Skapa en e-postleverans](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/email.html?lang=sv-SE){target="_blank"}: Lär dig mer om de olika stegen som krävs för att skapa en e-postleverans.
+* [Definiera e-postinnehållet](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/defining-the-email-content.html?lang=sv-SE){target="_blank"}: Definiera vad e-postmeddelandet ska innehålla: avsändare, ämne, innehåll, bilder.
+* [Definiera interaktivt innehåll](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/defining-interactive-content.html?lang=sv-SE){target="_blank"}: Använd den interaktiva AMP för e-post-format för att skicka dynamiska e-postmeddelanden.
+* [Skicka e-post på japanska mobiler](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/sending-emails-on-japanese-mobiles.html?lang=sv-SE){target="_blank"}: Använd ett av de tre specifika japanska formaten för e-post på mobiler.
+* [Bifoga filer i ett e-postmeddelande](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/attaching-files.html?lang=sv-SE){target="_blank"}: Lär dig olika sätt att bifoga en eller flera filer i ett e-postmeddelande.
 
 
 >[!TAB E-postparametrar]
 
 Läs dessa sidor för att lära dig mer om e-postparametrar i dokumentationen för Campaign v8:
 
-* [Länk till spegelsidan](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/mirror-page.html){target="_blank"}: Konfigurera spegelsidan så att dina klienter alltid får bästa återgivningsresultat.
-* [Lägg till en BCC-adress](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/email-bcc.html){target="_blank"}: Konfigurera Adobe Campaign för att behålla en kopia av e-postmeddelanden som skickas från din plattform.
-* [Definiera ytterligare e-postparametrar](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/email-parameters.html){target="_blank"}: Lär dig mer om de alternativ och parametrar som är tillgängliga från leveransegenskaperna.
+* [Länk till spegelsidan](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/mirror-page.html?lang=sv-SE){target="_blank"}: Konfigurera spegelsidan så att dina klienter alltid får bästa återgivningsresultat.
+* [Lägg till en BCC-adress](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/email-bcc.html?lang=sv-SE){target="_blank"}: Konfigurera Adobe Campaign för att behålla en kopia av e-postmeddelanden som skickas från din plattform.
+* [Definiera ytterligare e-postparametrar](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/email-parameters.html?lang=sv-SE){target="_blank"}: Lär dig mer om de alternativ och parametrar som är tillgängliga från leveransegenskaperna.
 
 Se även den här [sidan](sending-with-enhanced-mta.md) om du vill veta mer om den förbättrade MTA-filen.
 
@@ -77,7 +77,7 @@ Before starting sending emails:
 
 * Make sure recipient profiles contain at least an email address.
 * Learn more about the Adobe Campaign [Delivery best practices](delivery-best-practices.md).
-* Read out these sections to learn more about Deliverability: [Deliverability management in Campaign](about-deliverability.md) and [Deliverability best practices guide](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html).
+* Read out these sections to learn more about Deliverability: [Deliverability management in Campaign](about-deliverability.md) and [Deliverability best practices guide](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html?lang=sv-SE).
 
 The key steps to send an email are as follows:
 
