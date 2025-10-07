@@ -5,8 +5,10 @@ description: Lär dig hur du lägger till villkorsstyrt innehåll
 badge-v8: label="Gäller även för v8" type="Positive" tooltip="Gäller även Campaign v8"
 feature: Personalization, Multilingual Messages
 role: User
+hide: true
+hidefromtoc: true
 exl-id: 12595ee4-6a52-4e06-b80d-85fe633a5a11
-source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
+source-git-commit: a1e9fec0e9c85bf25b79e24a7432dfb45bd1a0cb
 workflow-type: tm+mt
 source-wordcount: '494'
 ht-degree: 5%
@@ -80,7 +82,7 @@ Klicka på **[!UICONTROL Preview]** och välj en mottagare för att visa det vil
 I exemplet nedan får du lära dig att skapa ett flerspråkigt e-postmeddelande. Innehållet visas på det ena språket eller det andra beroende på vilket språk mottagaren föredrar.
 
 1. Skapa ett e-postmeddelande och välj målpopulation. I det här exemplet baseras villkoret för att visa den ena versionen eller den andra på värdet **Språk** för mottagarens profil. I det här exemplet är dessa värden inställda på **EN**, **FR**, **ES**.
-1. Klicka på fliken **[!UICONTROL Source]** i e-postinnehållet i HTML och klistra in följande kod:
+1. Klicka på fliken **[!UICONTROL Source]** i e-postinnehållet för HTML och klistra in följande kod:
 
    ```
    <% if (language == "EN" ) { %>
@@ -113,4 +115,4 @@ Lär dig hur du lägger till villkorsstyrt innehåll i en leverans med ett exemp
 
 >[!VIDEO](https://video.tv.adobe.com/v/24926?quality=12)
 
-Ytterligare Campaign Classic om instruktionsvideor finns [här](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=sv).
+Ytterligare Campaign Classic instruktionsvideor finns [här](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=sv).

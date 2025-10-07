@@ -5,8 +5,10 @@ description: Lär dig använda personaliseringsblock
 badge-v8: label="Gäller även för v8" type="Positive" tooltip="Gäller även Campaign v8"
 feature: Personalization
 role: User
+hide: true
+hidefromtoc: true
 exl-id: 8d155844-d18a-4165-9886-c3b144109f6e
-source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
+source-git-commit: a1e9fec0e9c85bf25b79e24a7432dfb45bd1a0cb
 workflow-type: tm+mt
 source-wordcount: '870'
 ht-degree: 1%
@@ -52,7 +54,7 @@ Du kan inkludera källkoden för ett personaliseringsblock i leveransinnehållet
 
 ![](assets/s_ncs_user_personalized_block05.png)
 
-Källkoden för HTML infogas i leveransinnehållet. Personaliseringsblocket **[!UICONTROL Greetings]** visas till exempel enligt nedan:
+HTML-källkoden infogas i leveransinnehållet. Personaliseringsblocket **[!UICONTROL Greetings]** visas till exempel enligt nedan:
 
 ![](assets/s_ncs_user_personalized_block06.png)
 
@@ -114,7 +116,7 @@ En lista med personaliseringsblock är som standard tillgänglig för att hjälp
   >Det här blocket kan bara användas för leveranser till besökare.
 
 * **[!UICONTROL Registration confirmation]** : infogar en länk som bekräftar prenumerationen.
-* **[!UICONTROL Social network sharing links]** : infogar knappar som gör att mottagaren kan dela en länk till det spegelvända sidinnehållet med e-postklienten, Facebook, X (tidigare kallat Twitter) och LinkedIn (se [Viral marketing: forward to a vän](viral-and-social-marketing.md#viral-marketing--forward-to-a-friend)).
+* **[!UICONTROL Social network sharing links]** : infogar knappar som gör att mottagaren kan dela en länk till det spegelvända sidinnehållet med e-postklienten, Facebook, X (tidigare Twitter) och LinkedIn (se [Viral marketing: forward to a vän](viral-and-social-marketing.md#viral-marketing--forward-to-a-friend)).
 * **[!UICONTROL Style of content emails]** och **[!UICONTROL Notification style]** : generera kod som formaterar ett e-postmeddelande med fördefinierade HTML-format. Dessa block måste infogas i källkoden för leveransen, i avsnittet **[!UICONTROL ...]**, i **`<style>...</style>`** -taggar.
 * **[!UICONTROL Offer acceptance URL in unitary mode]** : infogar en URL som gör det möjligt att ange ett interaktionserbjudande till **[!UICONTROL Accepted]** (se [det här avsnittet](../../interaction/using/offer-analysis-report.md)).
 
@@ -134,11 +136,11 @@ Om du vill skapa ett personaliseringsblock går du till Utforskaren och utför f
    * Välj **[!UICONTROL Visible in the customization menus]** om du vill göra det här blocket tillgängligt från ikonen för infogning av anpassningsfält.
    * Om det behövs väljer du **[!UICONTROL The content of the personalization block depends upon the format]** för att definiera två separata block för e-postmeddelanden i HTML-format och e-postmeddelanden i textformat.
 
-     Två flikar visas sedan i det nedre avsnittet av redigeraren (HTML-innehåll och textinnehåll) för att definiera motsvarande innehåll.
+     Två flikar visas sedan i den nedre delen av redigeraren (HTML-innehåll och textinnehåll) för att definiera motsvarande innehåll.
 
      ![](assets/s_ncs_user_personalized_block_b.png)
 
-   * Ange innehåll (i HTML, text, JavaScript osv.) av anpassningsblocken och klicka på **[!UICONTROL Save]**.
+   * Ange innehållet (i HTML, text, JavaScript osv.) i anpassningsblocket/-blocken och klicka på **[!UICONTROL Save]**.
 
 ## Självstudievideo {#personalization-blocks-video}
 
@@ -146,4 +148,4 @@ Lär dig hur du skapar dynamiska innehållsblock och hur du använder dem för a
 
 >[!VIDEO](https://video.tv.adobe.com/v/24924?quality=12)
 
-Ytterligare Campaign Classic om instruktionsvideor finns [här](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=sv).
+Ytterligare Campaign Classic instruktionsvideor finns [här](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=sv).
