@@ -7,9 +7,9 @@ feature: Access Management, Permissions
 role: User, Admin
 level: Beginner
 exl-id: d5833d3d-e8ef-4f2b-8084-4ba825c79525
-source-git-commit: 8aceafa362b80f6e34edfd91a71551a58501a3d0
+source-git-commit: 34f875f583dd81c2229b66f3344f23965532e802
 workflow-type: tm+mt
-source-wordcount: '533'
+source-wordcount: '574'
 ht-degree: 1%
 
 ---
@@ -18,7 +18,9 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->Dessa procedurer gäller endast för operatorer som ansluter till Campaign med inbyggd autentisering. Information om Adobe IMS-autentisering finns i [den här dokumentationen](https://helpx.adobe.com/se/enterprise/using/user-groups.html).
+>Dessa procedurer gäller endast för operatorer som ansluter till Campaign med den gamla inbyggda autentiseringen. Från och med Campaign Classic v7.3.1 bör alla operatorer använda [Adobe Identity Management System (IMS)](https://helpx.adobe.com/enterprise/using/identity.html){target="_blank"} för att ansluta till Campaign. [Läs mer](../../technotes/using/migrate-users-to-ims.md)
+>
+>När du ansluter till Campaign med din Adobe ID gäller inte längre följande avsnitt. Lär dig hur du konfigurerar behörigheter med Adobe IMS i [dokumentationen för Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/admin/permissions/gs-permissions.html){target="_blank"}.
 
 Operatorgrupper skapas via noden **[!UICONTROL Administration > Access management > Operator groups]** i trädet.
 
@@ -65,7 +67,7 @@ Standardoperatorgrupperna är:
 
 1. **[!UICONTROL Campaign managers]**
 
-   Operatörerna i den här gruppen kan hantera marknadsföringskampanjer: ni får tillgång till objekt som är kopplade till kampanjer (planer, program, arbetsflöden, budgetar osv.) inom ramverket för **[!UICONTROL Campaign]** (valfri Adobe Campaign-modul).
+   Operatörerna i den här gruppen kan hantera marknadsföringskampanjer: du får tillgång till objekt som är kopplade till kampanjer (planer, program, arbetsflöden, budgetar osv.) inom ramen för **[!UICONTROL Campaign]** (valfri Adobe Campaign-modul).
 
    Den här gruppen innehåller följande namngivna rättigheter:
 

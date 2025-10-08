@@ -2,23 +2,18 @@
 product: campaign
 title: Använd namngivna rättigheter för att ställa in behörigheter
 description: Lär dig hur du använder namngivna rättigheter för att ställa in behörigheter
-badge: label="v7" type="Informative" tooltip="Gäller endast Campaign Classic v7"
 feature: Access Management, Permissions
 role: User, Admin
 level: Beginner
 exl-id: 07470a91-d8d2-4c41-9555-05522c8068f0
-source-git-commit: 8aceafa362b80f6e34edfd91a71551a58501a3d0
+source-git-commit: 34f875f583dd81c2229b66f3344f23965532e802
 workflow-type: tm+mt
-source-wordcount: '520'
-ht-degree: 5%
+source-wordcount: '492'
+ht-degree: 4%
 
 ---
 
 # Använd namngivna rättigheter för att ställa in behörigheter{#named-rights}
-
->[!NOTE]
->
->Den här sidan gäller endast för operatorer som ansluter till Campaign med inbyggd autentisering. Information om Adobe IMS-autentisering finns i [den här dokumentationen](https://helpx.adobe.com/se/enterprise/using/manage-permissions-and-roles.html).
 
 Som standard föreslår Adobe Campaign en uppsättning namngivna rättigheter som gör att du kan definiera de behörigheter som tilldelats operatorer och grupper av operatorer. Dessa rättigheter kan redigeras från noden **[!UICONTROL Administration > Access management > Named rights]** i trädet.
 
@@ -76,4 +71,4 @@ Standardgrupper och namngivna rättigheter ger operatorer åtkomst till vissa ma
 
 Adobe Campaign åtkomsträttighetsmatris är tillgänglig [här](/help/platform/using/assets/access-rights-matrix.pdf).
 
-[![bild](assets/do-not-localize/user_management.png)](https://experienceleague.adobe.com/docs/campaign-classic/assets/access-rights-matrix.pdf?lang=sv-SE)
+[![bild](assets/do-not-localize/user_management.png)](https://experienceleague.adobe.com/docs/campaign-classic/assets/access-rights-matrix.pdf)
