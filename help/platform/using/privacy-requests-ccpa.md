@@ -8,10 +8,10 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: 8e308a9f-14a4-4a25-9fd0-8d4bdbcf74ce
-source-git-commit: ec774cc10a69a694b3c2bf5a6f662afd12a1435a
+source-git-commit: 8817b485fd5b6d6aeb9d71c1106f16fbb6bc3c5b
 workflow-type: tm+mt
-source-wordcount: '564'
-ht-degree: 98%
+source-wordcount: '569'
+ht-degree: 94%
 
 ---
 
@@ -73,7 +73,7 @@ Det är den personuppgiftsansvariges ansvar att fylla i fältets värde och föl
 
 Du kan använda flera olika metoder för att fylla i värdena:
 
-* Använda gränssnittet i Campaign genom att redigera mottagarinformationen
+* Använda Campaigns gränssnitt genom att redigera mottagarens information
 * Använda API:et
 * Via ett arbetsflöde för dataimport
 
@@ -87,6 +87,7 @@ Du ska sedan se till att du aldrig säljer personuppgifter, från profiler som h
 
    ![](assets/privacy-ccpa-6.png)
 
-1. Du kan klicka på kolumnen för att sortera mottagare enligt avanmälningsinformationen. Du kan också skapa ett filter så att endast mottagare som har avanmält sig visas. Mer information om att skapa filter finns i [det här avsnittet](../../platform/using/creating-filters.md).
+1. Du kan klicka på kolumnen för att sortera mottagare enligt avanmälningsinformationen. Du kan också skapa ett filter så att endast mottagare som har avanmält sig visas. Mer information om filter finns i [dokumentationen för Campaign v8 (konsol)](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/audience/create-filters){target=_blank}.
+
 
    ![](assets/privacy-ccpa-7.png)

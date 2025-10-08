@@ -7,9 +7,9 @@ role: User
 hide: true
 hidefromtoc: true
 exl-id: d0ed7be7-3147-4cb8-9ce7-ea51602e9048
-source-git-commit: 42cec0e9bede94a2995a5ad442822512bda14f2b
+source-git-commit: 8817b485fd5b6d6aeb9d71c1106f16fbb6bc3c5b
 workflow-type: tm+mt
-source-wordcount: '1729'
+source-wordcount: '1730'
 ht-degree: 2%
 
 ---
@@ -34,7 +34,7 @@ Följ stegen nedan för att välja mottagare av en leverans:
 
    ![](assets/s_ncs_user_wizard_email02a.png)
 
-1. Välj målmappning i listrutan **[!UICONTROL Target mapping]**. Adobe Campaign standardmålmappning är **[!UICONTROL Recipients]**, baserat på schemat **nms:mottagare**.
+1. Välj målmappning i listrutan **[!UICONTROL Target mapping]**. Adobe Campaign standardmålmappning är **[!UICONTROL Recipients]**, baserat på schemat **nms:recipient**.
 
    Andra målmappningar är tillgängliga, och vissa kan vara relaterade till din specifika konfiguration.[Läs mer](#select-a-target-mapping).
 
@@ -48,7 +48,7 @@ Följ stegen nedan för att välja mottagare av en leverans:
 
    Följande måltyper erbjuds som standard:
 
-   * **[!UICONTROL Filtering conditions]** : Med det här alternativet kan du definiera en fråga och visa resultatet. Metoden för att definiera frågor visas i [det här avsnittet](../../platform/using/creating-filters.md#creating-an-advanced-filter).
+   * **[!UICONTROL Filtering conditions]** : Med det här alternativet kan du definiera en fråga och visa resultatet. Mer information om filter finns i [dokumentationen för Campaign v8 (konsol)](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/audience/create-filters){target=_blank}.
    * **[!UICONTROL Subscribers of an information service]** : Med det här alternativet kan du välja ett nyhetsbrev som mottagarna måste prenumerera på för att få det mål som den leverans som skapas har.
 
      ![](assets/s_ncs_user_wizard_email02c.png)
@@ -72,7 +72,7 @@ Följ stegen nedan för att välja mottagare av en leverans:
    * **[!UICONTROL Recipients included in a folder]** : Med det här alternativet kan du ange profiler i en viss mapp i trädet som mål.
    * **[!UICONTROL A recipient]** : Med det här alternativet kan du välja en specifik mottagare bland profilerna i databasen.
    * **[!UICONTROL A list of recipients]** : Med det här alternativet kan du ange en lista över mottagare som mål. Listor visas i [det här avsnittet](../../platform/using/creating-and-managing-lists.md).
-   * **[!UICONTROL User filters]** : Med det här alternativet kan du komma åt de förkonfigurerade filtren och använda dem som filtreringsvillkor för profiler i databasen. Förkonfigurerade filter visas i [det här avsnittet](../../platform/using/creating-filters.md#saving-a-filter).
+   * **[!UICONTROL User filters]** : Med det här alternativet kan du komma åt de förkonfigurerade filtren och använda dem som filtreringsvillkor för profiler i databasen. Mer information om filter finns i [dokumentationen för Campaign v8 (konsol)](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/audience/create-filters){target=_blank}.
    * Med alternativet **[!UICONTROL Exclude recipients corresponding to this segment]** kan du rikta in dig på mottagare som inte uppfyller de definierade målvillkoren. Om du vill använda det här alternativet markerar du lämplig ruta och tillämpar sedan målinriktning, enligt definitionen ovan, för att utesluta de resulterande profilerna.
 
      ![](assets/s_ncs_user_wizard_email02g.png)
@@ -230,7 +230,7 @@ Se även:
 
 ## Välj en målmappning {#select-a-target-mapping}
 
-Som standard är leveransmallar avsedda för **[!UICONTROL Recipients]**. Målmappningen använder därför fälten i tabellen **nms:receive**. Adobe Campaign erbjuder andra målmappningar för leveranser som kan användas utifrån dina behov.
+Som standard är leveransmallar avsedda för **[!UICONTROL Recipients]**. Målmappningen använder därför fälten i tabellen **nms:recipient**. Adobe Campaign erbjuder andra målmappningar för leveranser som kan användas utifrån dina behov.
 
 ![](assets/delivery_select_mapping.png)
 
@@ -238,9 +238,9 @@ Mappningarna är följande:
 
 | Namn | Använd | Standardschema |
 |---|---|---|
-| Mottagare | Leverera till mottagare av Adobe Campaign-databasen | nms:mottagare |
-| Besökare | Leverera till besökare vars profiler har samlats in via hänskjutning (viral marknadsföring) eller via sociala nätverk (Facebook, X - tidigare Twitter), till exempel. | mns:besökare |
-| Prenumerationer | Leverera till mottagare som prenumererar på en informationstjänst som ett nyhetsbrev | nms:prenumeration |
+| Mottagare | Leverera till mottagare av Adobe Campaign-databasen | nms:recipient |
+| Besökare | Leverera till besökare vars profiler har samlats in via hänskjutning (viral marknadsföring) eller via sociala nätverk (Facebook, X - tidigare Twitter), till exempel. | mns:visitor |
+| Prenumerationer | Leverera till mottagare som prenumererar på en informationstjänst som ett nyhetsbrev | nms:subscription |
 | Prenumerationer på besökare | Skicka till besökare som prenumererar på en informationstjänst | nms:visitorSub |
 | Tjänst | Publicera till ett X-konto eller en Facebook-sida | nms:service |
 | Operatorer | Leverera till Adobe Campaign | nms:operator |

@@ -6,9 +6,9 @@ feature: Overview
 role: User, Data Architect
 level: Beginner
 exl-id: 81f207a0-bb72-450b-abe4-0b229b6b1f3a
-source-git-commit: 9df46ed923831ffdfb28acddfbc371cecafb251c
+source-git-commit: 8817b485fd5b6d6aeb9d71c1106f16fbb6bc3c5b
 workflow-type: tm+mt
-source-wordcount: '6002'
+source-wordcount: '6010'
 ht-degree: 1%
 
 ---
@@ -345,7 +345,7 @@ Läs mer om [Anrikningsaktivitet](../../workflow/using/enrichment.md).
 
 En uppräkning är en datatyp som definieras i scheman eller på plattformsnivå som definierar giltiga indatavärden för ett fält. Uppräkningar visas i användargränssnittet och i frågebyggare som en lista.
 
-Läs mer om hur du **arbetar med uppräkningar** i [Adobe Campaign v8-dokumentationen (konsolen)](https://experienceleague.adobe.com/sv/docs/campaign/campaign-v8/config/settings/enumerations){target=_blank}.
+Läs mer om hur du **arbetar med uppräkningar** i [Adobe Campaign v8-dokumentationen (konsolen)](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/config/settings/enumerations){target=_blank}.
 +++
 
 +++**Utforskarvy**
@@ -353,7 +353,7 @@ Läs mer om hur du **arbetar med uppräkningar** i [Adobe Campaign v8-dokumentat
 Utforskarvyn är en hierarkisk vy över de mappar som innehåller artefakter och data från Adobe Campaign. Observera att mappsystemet i Adobe Campaign inte fungerar som en vanlig förhandsvisning, eftersom varje mapp innehåller data av en viss typ, till exempel Leveranser, Arbetsflöden eller Erbjudanden.
 
 
-Läs mer om Campaign-användargränssnittet i [Adobe Campaign v8-dokumentationen (konsolen)](https://experienceleague.adobe.com/sv/docs/campaign/campaign-v8/new/campaign-ui){target=_blank}.
+Läs mer om Campaign-användargränssnittet i [Adobe Campaign v8-dokumentationen (konsolen)](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/new/campaign-ui){target=_blank}.
 
 +++
 
@@ -400,7 +400,7 @@ Läs mer om [Filtreringsdimension](../../workflow/using/building-a-workflow.md#t
 
 En mapp är ett objekt i Utforskaren som innehåller databasposter av en viss datatyp. Undantaget är den allmänna mapptypen som används som ett organiseringselement och som inte innehåller några data, utan bara andra mappar.
 
-Läs mer om Campaign-användargränssnittet i [Adobe Campaign v8-dokumentationen (konsolen)](https://experienceleague.adobe.com/sv/docs/campaign/campaign-v8/new/campaign-ui){target=_blank}.
+Läs mer om Campaign-användargränssnittet i [Adobe Campaign v8-dokumentationen (konsolen)](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/new/campaign-ui){target=_blank}.
 
 +++
 
@@ -408,7 +408,7 @@ Läs mer om Campaign-användargränssnittet i [Adobe Campaign v8-dokumentationen
 
 Mappvyn är en speciell mapptyp i Utforskaren som används för att visa alla poster av en vald datatyp, oavsett vilken mapp den tillhör. Mappvyer används som administrationsverktyg för att hantera partitionerade data eller data som distribueras mellan många mappar.
 
-Läs mer om Campaign-användargränssnittet i [Adobe Campaign v8-dokumentationen (konsolen)](https://experienceleague.adobe.com/sv/docs/campaign/campaign-v8/new/campaign-ui){target=_blank}.
+Läs mer om Campaign-användargränssnittet i [Adobe Campaign v8-dokumentationen (konsolen)](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/new/campaign-ui){target=_blank}.
 +++
 
 +++**Forms**
@@ -561,7 +561,7 @@ Learn more about [Navigation Bar](../../platform/using/adobe-campaign-workspace.
 
 Navigeringsträdet är huvudnavigeringen i Utforskaren i Adobe Campaign. Navigeringsträdet fungerar som en filläsare (t.ex. Utforskaren). Mappar kan innehålla undermappar. Om du väljer en nod visas vyn som motsvarar noden. Den vy som visas är en lista som är associerad med ett schema och ett inmatningsformulär för att redigera den markerade raden. Du kan anpassa navigeringsträdet och ange behörigheter för mappar.
 
-Läs mer om Campaign-användargränssnittet i [Adobe Campaign v8-dokumentationen (konsolen)](https://experienceleague.adobe.com/sv/docs/campaign/campaign-v8/new/campaign-ui){target=_blank}.
+Läs mer om Campaign-användargränssnittet i [Adobe Campaign v8-dokumentationen (konsolen)](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/new/campaign-ui){target=_blank}.
 
 +++
 
@@ -795,7 +795,7 @@ Läs mer om [Planer](../../campaign/using/setting-up-marketing-campaigns.md).
 
 Fördefinierade filter är frågor som har sparats för återanvändning. Användning av fördefinierade filter ökar produktiviteten (eftersom de bara skapas en gång), bidrar till att skapa konsekvens (eftersom alla marknadsförare kan använda dem) och sänker marknadsförarens kunskaper eftersom de kan använda kod eller logik som de kanske inte kan skapa själva.
 
-Läs mer om [Fördefinierade filter](../../platform/using/creating-filters.md#filtering-recipients).
+Mer information om filter finns i [dokumentationen för Campaign v8 (konsol)](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/audience/create-filters){target=_blank}.
 +++
 
 <!--
@@ -913,7 +913,7 @@ Läs mer om [Tjänster](../../delivery/using/about-services-and-subscriptions.md
 
 På Kontrollpanelen kan du interagera med alla SFTP-servrar som är anslutna till Campaign-instanser som du har tillgång till. Med kontrollpanelen kan du utföra åtgärder på dina SFTP-servrar, till exempel övervaka lagringskapaciteten, hantera IP-adresser, tillåta listor och hantera offentliga SSH-nycklar.
 
-Läs mer om [SFTP-hantering](https://experienceleague.adobe.com/docs/control-panel/using/sftp-management/about-sftp-management.html?lang=sv-SE).
+Läs mer om [SFTP-hantering](https://experienceleague.adobe.com/docs/control-panel/using/sftp-management/about-sftp-management.html).
 +++
 
 +++**Prenumerationstjänstaktivitet**

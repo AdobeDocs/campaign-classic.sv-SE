@@ -6,10 +6,10 @@ title: Användarhandbok för Campaign Classic v7
 user-guide-description: Produktdokumentation för Adobe Campaign Classic v7.
 sub-product: adobe campaign classic
 type: Documentation
-source-git-commit: 11c81e4f04b978381d3803e2b60e23ed791eee44
+source-git-commit: 8817b485fd5b6d6aeb9d71c1106f16fbb6bc3c5b
 workflow-type: tm+mt
-source-wordcount: '2567'
-ht-degree: 97%
+source-wordcount: '2570'
+ht-degree: 96%
 
 ---
 
@@ -37,6 +37,7 @@ ht-degree: 97%
    + [Bläddra och anpassa listor - DOLD](platform/using/adobe-campaign-ui-lists.md)
    + [Uppräkningar - DOLD](platform/using/managing-enumerations.md)
    + [Kampanjkopplingar](platform/using/about-connectors.md)
+   + [Skapa frågor i Campaign](platform/using/about-queries-in-campaign.md)
    + Vanliga frågor och svar {#faq}
       + [De vanligaste frågorna](platform/using/common-questions.md)
       + [Globala begrepp](platform/using/faq-key-concepts.md)
@@ -84,10 +85,9 @@ ht-degree: 97%
          + [Bästa praxis för import och export](platform/using/import-export-best-practices.md)
          + [Bästa praxis och felsökning för SFTP-servrar](platform/using/sftp-server-usage.md)
    + Filtrera data {#filtering-data}
-      + [Filtreringsalternativ](platform/using/filtering-options.md)
-      + [Skapa filter](platform/using/creating-filters.md)
-      + [Användningsfall](platform/using/use-case.md)
-   + [Skapa frågor i Campaign](platform/using/about-queries-in-campaign.md)
+      + [Filtreringsalternativ - DOLD](platform/using/filtering-options.md)
+      + [Skapa filter - DOLD](platform/using/creating-filters.md)
+      + [Användningsfall - dolt](platform/using/use-case.md)
    + [Steg för att skapa en fråga - DOLD](platform/using/steps-to-create-a-query.md)
    + [Definiera filtervillkor - DOLD](platform/using/defining-filter-conditions.md)
    + Behörigheter {#permissions}
@@ -233,7 +233,7 @@ ht-degree: 97%
       + [Automatisera via arbetsflöden](delivery/using/automating-via-workflows.md)
 + [Orkestrera marknadsföringskampanjer](campaign/using/about-marketing-campaigns.md)
 + Orkestrera marknadsföringskampanjer {#orchestrating-campaigns}
-   + [Om kampanjoptimering &#x200B;](campaign-opt/using/about-campaign-optimization.md)
+   + [Om kampanjoptimering ](campaign-opt/using/about-campaign-optimization.md)
    + Om marknadsföringskampanjer {#about-marketing-campaigns}
       + [Utforma marknadsföringskampanjer](campaign/using/designing-marketing-campaigns.md)
       + [Åtkomst till marknadsföringskampanjer](campaign/using/accessing-marketing-campaigns.md)
@@ -309,7 +309,7 @@ ht-degree: 97%
    + [Designa rapporter med kuber](reporting/using/ac-cubes.md)
 + Designa webbinnehåll {#designing-content}
    + Webbapplikationer {#web-applications}
-      + [Kom igång med webbapplikationer &#x200B;](web/using/about-web-applications.md)
+      + [Kom igång med webbapplikationer ](web/using/about-web-applications.md)
       + [Skapa en ny webbapplikation](web/using/creating-a-new-web-application.md)
       + [Designa en webbapplikation](web/using/designing-a-web-application.md)
       + [Användningsfall: skapa översikter](web/using/use-cases-creating-overviews.md)
@@ -375,7 +375,7 @@ ht-degree: 97%
    + Adobe Experience Manager {#adobe-experience-manager}
       + [Arbeta med [!DNL Adobe Experience Manager]](integrations/using/about-adobe-experience-manager.md)
       + [Konfigurera integreringen](integrations/using/configuring-the-integration.md)
-      + [Skapa ett nyhetsbrev om [!DNL Experience Manager] &#x200B;](integrations/using/creating-an-experience-manager-newsletter.md)
+      + [Skapa ett nyhetsbrev om [!DNL Experience Manager] ](integrations/using/creating-an-experience-manager-newsletter.md)
    + Adobe Target {#adobe-target}
       + [Arbeta med [!DNL Adobe Target]](integrations/using/integrating-with-adobe-target.md)
       + [Konfigurera integreringen med [!DNL Adobe Target]](integrations/using/configuring-the-integration-with-adobe-target.md)
@@ -844,6 +844,6 @@ ht-degree: 97%
       + [Uppdatering av spårade URL:er](technotes/using/tracked-urls.md)
    + Migrering till Adobe Managed Services{#dc-migration}
       + [Migrering till Public Cloud](technotes/using/dc-migration.md)
-      + [Vanliga frågor och svar &#x200B;](technotes/using/dc-migration-faq.md)
+      + [Vanliga frågor och svar ](technotes/using/dc-migration-faq.md)
    + [GCM-baserade funktioner](technotes/using/gcm-functions.md)
 + [Kontrollpanelen i Campaign](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=sv)

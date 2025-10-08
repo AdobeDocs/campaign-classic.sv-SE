@@ -6,9 +6,9 @@ feature: Workflows
 hide: true
 hidefromtoc: true
 exl-id: d589180b-8e1d-4149-9b16-3f541018a41f
-source-git-commit: 776c664a99721063dce5fa003cf40c81d94f8c78
+source-git-commit: 8817b485fd5b6d6aeb9d71c1106f16fbb6bc3c5b
 workflow-type: tm+mt
-source-wordcount: '2018'
+source-wordcount: '2019'
 ht-degree: 0%
 
 ---
@@ -133,7 +133,7 @@ Med länken kan du komma åt Adobe Campaign-konsolen i webbläge och arbeta med 
 
 ![](assets/wf-notification_error-console.png)
 
-Du kan konfigurera arbetsflödet så att det inte pausar och fortsätter att köras om fel uppstår. Om du vill göra det redigerar du arbetsflödet **[!UICONTROL Properties]** och väljer alternativet **[!UICONTROL Ignore]** i fältet **[!UICONTROL In case of error]** i avsnittet **[!UICONTROL Error management]**. Du kan sedan ange antalet på varandra följande fel som kan ignoreras innan processen pausas.
+Du kan konfigurera arbetsflödet så att det inte pausar och fortsätter att köras om fel uppstår. Om du vill göra det redigerar du arbetsflödet **[!UICONTROL Properties]** och väljer alternativet **[!UICONTROL Error management]** i fältet **[!UICONTROL Ignore]** i avsnittet **[!UICONTROL In case of error]**. Du kan sedan ange antalet på varandra följande fel som kan ignoreras innan processen pausas.
 
 I det här fallet avbryts felaktiviteten. Det här läget passar särskilt bra för arbetsflöden som är utformade för att försöka göra om kampanjen senare (periodiska åtgärder).
 
@@ -281,7 +281,4 @@ Utöver dessa vyer kan du skapa filtermappar så att du kan filtrera listan med 
 
 ![](assets/workflow-monitoring-filter.png)
 
-Mer information finns i följande avsnitt:
-
-* [Skapa avancerade filter](../../platform/using/creating-filters.md#creating-an-advanced-filter)
-* [Spara filter](../../platform/using/creating-filters.md#saving-a-filter)
+Mer information om filter finns i [dokumentationen för Campaign v8 (konsol)](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/audience/create-filters){target=_blank}.
