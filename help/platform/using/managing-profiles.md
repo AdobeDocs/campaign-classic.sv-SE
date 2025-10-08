@@ -31,7 +31,6 @@ Varje nod sammanfaller med en mapp. Data från varje mapp måste anses vara part
 >[!NOTE]
 >
 > * Om du vill visa listan över alla mottagare i databasen måste du skapa en vy. Läs mer i [Kampanj v8-dokumentationen (konsolen)](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/config/configuration/folders-and-views){target=_blank}.
-
 > * Mer information om hur du hanterar dina profiler finns i [dokumentationen för Campaign v8 (konsol)](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/config/configuration/folders-and-views){target=_blank}.
 
 
