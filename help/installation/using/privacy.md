@@ -4,7 +4,7 @@ title: Personalisering och sekretess
 description: Lär dig de effektivaste strategierna för säkerhet när det gäller sekretess och personalisering
 feature: Installation, Privacy, Privacy Tools, URL Personalization
 exl-id: 0a3473bf-0528-486d-a799-8db86fece522
-source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
+source-git-commit: 192505e1c4d387de55ca18b578b837d237cc0607
 workflow-type: tm+mt
 source-wordcount: '805'
 ht-degree: 1%
@@ -25,7 +25,7 @@ När du lägger till anpassade länkar till ditt innehåll bör du alltid undvik
 
 ### Rekommendation
 
-Om du vill validera och kontrollera att du inte använder ovanstående kör du en fråga om spårning av URL-tabell via [Kampanjredigeraren för allmän fråga](../../platform/using/steps-to-create-a-query.md) eller skapar ett arbetsflöde med filtervillkor i [frågeaktiviteten](../../workflow/using/query.md).
+Om du vill validera och kontrollera att du inte använder ovanstående kör du en fråga om spårning av URL-tabell via [Kampanjredigeraren för allmän fråga](../../platform/using/about-queries-in-campaign.md) eller skapar ett arbetsflöde med filtervillkor i [frågeaktiviteten](../../workflow/using/query.md).
 
 Exempel:
 
@@ -54,7 +54,7 @@ Dessutom kan du använda en förbättring för att inaktivera URL:er som generer
 
 Om du kör i version 19.1.4 kan du få problem med push-meddelandeleveranser med hjälp av spårningslänkar eller leveranser med ankartaggar. I så fall rekommenderar vi att du inaktiverar URL-signatur.
 
-Om du är en Campaign-värd, hanterad Cloud Service eller hybridkund måste du kontakta [kundtjänst](https://helpx.adobe.com/se/enterprise/using/support-for-experience-cloud.html) för att inaktivera URL-signaturen.
+Som en Campaign-värd, Managed Cloud Services eller hybrid-kund måste du kontakta [kundtjänst](https://helpx.adobe.com/se/enterprise/using/support-for-experience-cloud.html) för att inaktivera URL-signaturen.
 
 Om du kör Campaign i en hybridarkitektur måste du se till att den värdbaserade mellankällinstansen har uppgraderats enligt följande innan du aktiverar URL-signatur:
 
@@ -68,15 +68,15 @@ I annat fall kan följande problem uppstå:
 
 Om du vill inaktivera URL:er som har skapats i tidigare versioner följer du de här stegen på alla Campaign-servrar samtidigt:
 
-1. Ändra alternativet **blockRedirectForUnsignedTrackingLink** till **true** i serverkonfigurationsfilen (`serverConf.xml`).
+1. Ändra alternativet `serverConf.xml` blockRedirectForUnsignedTrackingLink **till** true **i serverkonfigurationsfilen (**).
 1. Starta om tjänsten `nlserver`.
-1. Starta om servern `web` på servern `tracking` (apache2 på Debian, httpd på CentOS/RedHat, IIS på Windows).
+1. Starta om servern `tracking` på servern `web` (apache2 på Debian, httpd på CentOS/RedHat, IIS på Windows).
 
 Om du vill aktivera URL-signering följer du de här stegen på alla Campaign-servrar samtidigt:
 
-1. Ändra alternativet **signEmailLinks** till **true** i serverkonfigurationsfilen (`serverConf.xml`).
+1. Ändra alternativet `serverConf.xml` signEmailLinks **till** true **i serverkonfigurationsfilen (**).
 1. Starta om tjänsten **nlserver**.
-1. Starta om servern `web` på servern `tracking` (apache2 på Debian, httpd på CentOS/RedHat, IIS på Windows).
+1. Starta om servern `tracking` på servern `web` (apache2 på Debian, httpd på CentOS/RedHat, IIS på Windows).
 
 ## Databegränsning
 
@@ -151,7 +151,7 @@ Gör så här:
    >
    >Du kan ersätta `$(loginId) = 0 or $(login) = 'admin'` med `hasNamedRight('admin')` så att alla användare med administratörsbehörighet kan se de här lösenorden.
 
-## Protect-sidor med PI
+## Skydda sidor med PI
 
 Vi rekommenderar starkt att kunder på plats skyddar sidor som kan innehålla personlig information (PI) som spegelsidor, webbapplikationer osv.
 

@@ -6,7 +6,7 @@ feature: Troubleshooting
 hidefromtoc: true
 hide: true
 exl-id: 3a84236f-89e5-4b8b-9a98-afdc006fd6e0
-source-git-commit: 11c81e4f04b978381d3803e2b60e23ed791eee44
+source-git-commit: 192505e1c4d387de55ca18b578b837d237cc0607
 workflow-type: tm+mt
 source-wordcount: '653'
 ht-degree: 62%
@@ -80,7 +80,7 @@ Hur uppgraderar jag till en ny version? hur man övervakar arbetsflödeskörning
         <li><a href="delivery/using/understanding-quarantine-management.md">Förstå karantänhantering</a></li>
         <li><a href="installation/using/get-started-security-privacy.md">Checklista för säkerhet och sekretess</a></li>
         <li><a href="platform/using/privacy-management.md">Sekretess- och medgivandehantering</a></li>
-        <li><a href="platform/using/steps-to-create-a-query.md">Utforma en fråga</a></li>
+        <li><a href="platform/using/about-queries-in-campaign.md">Utforma en fråga</a></li>
         <li><a href="workflow/using/querying-recipient-table.md">Exempel på frågor</a></li>
         <li><a href="workflow/using/building-a-workflow.md">Bygg ett arbetsflöde</a></li>
         </ul>
@@ -113,7 +113,7 @@ Kontrollpanelen är tillgänglig direkt från Adobe Experience Cloud. Den är en
 
 ### SFTP-hantering
 
-På Kontrollpanelen kan du interagera med alla SFTP-servrar som är anslutna till Campaign-instanser som du har tillgång till. Du kan övervaka deras lagringskapacitet, hantera IP-adresser på tillåtelselista och offentliga SSH-nycklar. [Klicka här](https://experienceleague.adobe.com/docs/control-panel/using/sftp-management/about-sftp-management.html?lang=sv-SE) för mer information.
+På Kontrollpanelen kan du interagera med alla SFTP-servrar som är anslutna till Campaign-instanser som du har tillgång till. Du kan övervaka deras lagringskapacitet, hantera IP-adresser på tillåtelselista och offentliga SSH-nycklar. [Klicka här](https://experienceleague.adobe.com/docs/control-panel/using/sftp-management/about-sftp-management.html) för mer information.
 
 ### Underdomäner och certifikat
 
@@ -125,9 +125,9 @@ Du kan övervaka dina underdomäner och deras certifikat. Läs mer på dessa sid
 ### Instansinställningar
 
 Lär dig hur du hanterar inställningarna för dina Campaign Classic-instanser på Kontrollpanelen. Läs mer på dessa sidor:
-* [Lägg till IP-adresser på tillåtelselista](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/ip-allow-listing-instance-access.html?lang=sv-SE) för att komma åt dina Campaign-instanser
+* [Lägg till IP-adresser på tillåtelselista](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/ip-allow-listing-instance-access.html) för att komma åt dina Campaign-instanser
 * [Hantera URL-behörigheter](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/url-permissions.html?lang=sv)
-* [Åtkomstinstansinformation](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/instance-details.html?lang=sv-SE)
+* [Åtkomstinstansinformation](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/instance-details.html)
 * [Hantera GPG-nycklar för datakryptering](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/gpg-keys-management.html?lang=sv)
 
 ## Begär hjälp {#support}

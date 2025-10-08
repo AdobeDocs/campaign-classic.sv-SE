@@ -7,7 +7,7 @@ audience: interaction
 content-type: reference
 topic-tags: managing-an-offer-catalog
 exl-id: c6dd2709-06e3-4227-bbec-99f3d80144fe
-source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
+source-git-commit: 192505e1c4d387de55ca18b578b837d237cc0607
 workflow-type: tm+mt
 source-wordcount: '807'
 ht-degree: 1%
@@ -58,7 +58,7 @@ Utanför dessa datum kommer erbjudandet inte att väljas av interaktionsmotorn. 
 
 Du kan använda filter på erbjudandemålet.
 
-Klicka på länken **[!UICONTROL Edit query]** och markera det filter som du vill använda. (Se [det här avsnittet](../../platform/using/steps-to-create-a-query.md#step-4---filter-data)).
+Klicka på länken **[!UICONTROL Edit query]** och markera det filter som du vill använda. Se [det här avsnittet](../../platform/using/about-adobe-campaign-classic.md).
 
 ![](assets/offer_eligibility_create_003.png)
 
@@ -156,7 +156,7 @@ Klicka på länken **[!UICONTROL Schedule and eligibility rules]** om du vill vi
 
    ![](assets/offer_content_create_003.png)
 
-   I det här exemplet måste erbjudandet innehålla en titel, en bild, HTML och en mål-URL.
+   I det här exemplet måste erbjudandet innehålla en titel, en bild, HTML-innehåll och en mål-URL.
 
 ## Förhandsgranska erbjudandet {#previewing-the-offer}
 
