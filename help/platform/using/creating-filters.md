@@ -2,21 +2,15 @@
 product: campaign
 title: Skapa filter
 description: Skapa filter
-feature: Profiles
-badge-v8: label="Gäller även för v8" type="Positive" tooltip="Gäller även Campaign v8"
-audience: platform
-content-type: reference
-topic-tags: filtering-data
 exl-id: 58e54f67-dc87-42f1-8426-6f801e8e4fb6
-source-git-commit: 813ef65ff45407a92c5f9d7f3d07189972a5742b
+source-git-commit: b4059e43d98643f0f8b5b3f68f03e10b755e8ba3
 workflow-type: tm+mt
-source-wordcount: '166'
+source-wordcount: '158'
 ht-degree: 3%
 
 ---
 
 # Skapa filter{#creating-filters}
-
 
 Datafiltrering är processen att välja en mindre del av datauppsättningen, bara de poster som matchar vissa villkor, och att använda den deluppsättningen för specifika åtgärder (uppdateringar, målgruppsgenerering) eller analyser.
 
@@ -28,7 +22,7 @@ När du navigerar i Adobe Campaign-trädet (från menyn **[!UICONTROL Explorer]*
 
 >[!NOTE]
 >
->Mer information om filter och hur du använder dem finns i [Campaign v8-dokumentationen](https://experienceleague.adobe.com/sv/docs/campaign/campaign-v8/audience/create-audiences/create-filters){target=_blank}.
+>Mer information om filter och hur du använder dem finns i [dokumentationen för Campaign v8 (konsol)](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/audience/create-audiences/create-filters){target=_blank}.
 
 
 <!--
