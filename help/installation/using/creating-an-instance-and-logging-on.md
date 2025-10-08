@@ -7,9 +7,9 @@ audience: installation
 content-type: reference
 topic-tags: initial-configuration
 exl-id: a025026e-688e-4ec1-abc4-40ee040d2b3b
-source-git-commit: 0db6f107d2c161b07f42dcf7a932d319130b31e0
+source-git-commit: c38150aa8de90f314e1f2a43c6751d4db4059533
 workflow-type: tm+mt
-source-wordcount: '587'
+source-wordcount: '588'
 ht-degree: 1%
 
 ---
@@ -72,7 +72,7 @@ Så här skapar du en ny instans:
 
 1. I listrutan **[!UICONTROL Language]** väljer du **instansspråk**: engelska (USA), engelska (Storbritannien), franska eller japanska.
 
-   Skillnader mellan amerikansk engelska och brittisk engelska beskrivs i [Campaign v8-dokumentationen (konsol)] (.https://experienceleague.adobe.com/sv/docs/campaign/campaign-v8/new/campaign-ui).
+   Skillnader mellan amerikansk engelska och brittisk engelska beskrivs i [Campaign v8-dokumentationen (konsol)](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/new/campaign-ui).
 
    >[!CAUTION]
    >
