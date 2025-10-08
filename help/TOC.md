@@ -6,9 +6,9 @@ title: Användarhandbok för Campaign Classic v7
 user-guide-description: Produktdokumentation för Adobe Campaign Classic v7.
 sub-product: adobe campaign classic
 type: Documentation
-source-git-commit: 28279c6ec0eab7f914cf6107cd1ec1cebd05113d
+source-git-commit: d78fe2e0fd85ba9c23e709a3f30a135cee411230
 workflow-type: tm+mt
-source-wordcount: '2559'
+source-wordcount: '2557'
 ht-degree: 99%
 
 ---
@@ -32,7 +32,7 @@ ht-degree: 99%
 + Kom igång {#getting-started}
    + [Kom igång med Adobe Campaign Classic](platform/using/about-adobe-campaign-classic.md)
    + [Starta Adobe Campaign](platform/using/launching-adobe-campaign.md)
-   + [Kom igång med Campaign UI](platform/using/adobe-campaign-workspace.md)
+   + [Identifiera kampanjgränssnitt](platform/using/adobe-campaign-workspace.md)
    + [Använd Campaign Explorer - DOLD](platform/using/adobe-campaign-explorer.md)
    + [Bläddra och anpassa listor - DOLD](platform/using/adobe-campaign-ui-lists.md)
    + [Uppräkningar - DOLD](platform/using/managing-enumerations.md)
@@ -234,7 +234,7 @@ ht-degree: 99%
       + [Automatisera via arbetsflöden](delivery/using/automating-via-workflows.md)
 + [Orkestrera marknadsföringskampanjer](campaign/using/about-marketing-campaigns.md)
 + Orkestrera marknadsföringskampanjer {#orchestrating-campaigns}
-   + [Om kampanjoptimering &#x200B;](campaign-opt/using/about-campaign-optimization.md)
+   + [Om kampanjoptimering ](campaign-opt/using/about-campaign-optimization.md)
    + Om marknadsföringskampanjer {#about-marketing-campaigns}
       + [Utforma marknadsföringskampanjer](campaign/using/designing-marketing-campaigns.md)
       + [Åtkomst till marknadsföringskampanjer](campaign/using/accessing-marketing-campaigns.md)
@@ -310,7 +310,7 @@ ht-degree: 99%
    + [Designa rapporter med kuber](reporting/using/ac-cubes.md)
 + Designa webbinnehåll {#designing-content}
    + Webbapplikationer {#web-applications}
-      + [Kom igång med webbapplikationer &#x200B;](web/using/about-web-applications.md)
+      + [Kom igång med webbapplikationer ](web/using/about-web-applications.md)
       + [Skapa en ny webbapplikation](web/using/creating-a-new-web-application.md)
       + [Designa en webbapplikation](web/using/designing-a-web-application.md)
       + [Användningsfall: skapa översikter](web/using/use-cases-creating-overviews.md)
@@ -376,7 +376,7 @@ ht-degree: 99%
    + Adobe Experience Manager {#adobe-experience-manager}
       + [Arbeta med [!DNL Adobe Experience Manager]](integrations/using/about-adobe-experience-manager.md)
       + [Konfigurera integreringen](integrations/using/configuring-the-integration.md)
-      + [Skapa ett nyhetsbrev om [!DNL Experience Manager] &#x200B;](integrations/using/creating-an-experience-manager-newsletter.md)
+      + [Skapa ett nyhetsbrev om [!DNL Experience Manager] ](integrations/using/creating-an-experience-manager-newsletter.md)
    + Adobe Target {#adobe-target}
       + [Arbeta med [!DNL Adobe Target]](integrations/using/integrating-with-adobe-target.md)
       + [Konfigurera integreringen med [!DNL Adobe Target]](integrations/using/configuring-the-integration-with-adobe-target.md)
@@ -845,6 +845,6 @@ ht-degree: 99%
       + [Uppdatering av spårade URL:er](technotes/using/tracked-urls.md)
    + Migrering till Adobe Managed Services{#dc-migration}
       + [Migrering till Public Cloud](technotes/using/dc-migration.md)
-      + [Vanliga frågor och svar &#x200B;](technotes/using/dc-migration-faq.md)
+      + [Vanliga frågor och svar ](technotes/using/dc-migration-faq.md)
    + [GCM-baserade funktioner](technotes/using/gcm-functions.md)
 + [Kontrollpanelen i Campaign](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=sv)

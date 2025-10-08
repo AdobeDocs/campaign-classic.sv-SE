@@ -6,9 +6,9 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: 8febceb0-9694-4045-a630-a7ff2fd18943
-source-git-commit: cd6687d3fd7f030fb77dcac67292fa7b0236580c
+source-git-commit: d78fe2e0fd85ba9c23e709a3f30a135cee411230
 workflow-type: tm+mt
-source-wordcount: '180'
+source-wordcount: '182'
 ht-degree: 48%
 
 ---
@@ -19,21 +19,28 @@ För att kunna leverera en hög grad av kundengagemang och fantastiska upplevels
 
 Med Adobe Campaign kan du samordna framtagningen av personliga marknadsföringskampanjer. Adobe Campaign har innovativa funktioner för att modellera, effektivisera och automatisera processerna för marknadsföring och kundkommunikation.
 
-![](assets/do-not-localize/how-to-video.png) [Identifiera primära funktioner i videon](#video)
 
 >[!BEGINTABS]
 
 >[!TAB Kom igång med Campaign]
 
-Mer information om Adobe Campaign och hur du kommer igång finns i [Campaign v8-dokumentationen](https://experienceleague.adobe.com/sv/docs/campaign/campaign-v8/new/get-started){target=_blank}.
+Mer information om Adobe Campaign och hur du kommer igång finns i [Campaign v8-dokumentationen](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/new/get-started){target=_blank}.
 
-[![bild](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/sv/docs/campaign/campaign-v8/new/get-started){target=_blank}
+[![bild](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/new/get-started){target=_blank}
 
 >[!TAB Starta kampanj]
 
 * Kontrollera system- och verktygskompatibiliteten med Adobe Campaign Client Console i [kompatibilitetsmatrisen](../../rn/using/compatibility-matrix.md#ClientConsoleoperatingsystems)
 
-* Mer information om hur du installerar och loggar in på Adobe Campaign finns i genomgången av [Campaign v8-dokumentationen](https://experienceleague.adobe.com/sv/docs/campaign/campaign-v8/new/connect){target=_blank}.
+* Om du vill veta mer om hur du installerar och loggar in på Adobe Campaign [på den här sidan](launching-adobe-campaign.md).
+
+
+>[!TAB Bläddra i gränssnittet för kampanj]
+
+* Upptäck Adobe Campaign användargränssnitt [på den här sidan](adobe-campaign-workspace.md).
+
+* Lär dig hur du arbetar med [Campaign Explorer](adobe-campaign-workspace.md#use-adobe-campaign-explorer).
+
 
 >[!ENDTABS]
 
@@ -79,7 +86,7 @@ You can combine the delivery functionalities and advanced campaign management fu
 
 ## Core capabilities and add-ons {#core-capabilities-and-add-ons}
 
-Adobe Campaign offers a set of capabilities to help you implementing and optimizing the conversational marketing functionalities depending on your needs and your architecture. Some of them are core capabilities and some depend on the installation of a package and on your configuration. A detailed product description is available here: [Adobe Campaign product description](https://helpx.adobe.com/se/legal/product-descriptions/adobe-campaign-managed-cloud-services.html){target="_blank"}.
+Adobe Campaign offers a set of capabilities to help you implementing and optimizing the conversational marketing functionalities depending on your needs and your architecture. Some of them are core capabilities and some depend on the installation of a package and on your configuration. A detailed product description is available here: [Adobe Campaign product description](https://helpx.adobe.com/legal/product-descriptions/adobe-campaign-managed-cloud-services.html){target="_blank"}.
 
 The following capabilities are available. Depending on your license agreement, some of these capabilities can be available or not in your instance.
 

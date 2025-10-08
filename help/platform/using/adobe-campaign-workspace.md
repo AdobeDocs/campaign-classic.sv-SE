@@ -6,14 +6,14 @@ feature: Overview
 role: Data Engineer
 level: Beginner
 exl-id: 5f689679-7148-4abd-a9bf-185854c64b13
-source-git-commit: 28279c6ec0eab7f914cf6107cd1ec1cebd05113d
+source-git-commit: d78fe2e0fd85ba9c23e709a3f30a135cee411230
 workflow-type: tm+mt
 source-wordcount: '858'
 ht-degree: 0%
 
 ---
 
-# Arbetsytan i Adobe Campaign{#adobe-campaign-workspace}
+# Arbetsytan i Adobe Campaign {#adobe-campaign-workspace}
 
 ## Utforska Adobe Campaign gränssnitt {#about-adobe-campaign-interface}
 
@@ -59,7 +59,7 @@ Du kan välja mellan fem olika språk:
 * Tyska
 * Japanska
 
-Språket du valde för din Adobe Campaign Classic-instans kan påverka datum- och tidsformat. Mer information finns i [dokumentationen för Campaign v8 (konsol)](https://experienceleague.adobe.com/sv/docs/campaign/campaign-v8/new/campaign-ui){target=_blank}.
+Språket du valde för din Adobe Campaign Classic-instans kan påverka datum- och tidsformat. Mer information finns i [dokumentationen för Campaign v8 (konsol)](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/new/campaign-ui){target=_blank}.
 
 Mer information om hur du skapar en instans finns på [sidan](../../installation/using/creating-an-instance-and-logging-on.md).
 
@@ -110,7 +110,7 @@ Utforskaren i Adobe Campaign är tillgänglig via verktygsfältsikonen. Du får 
 
 Mer information om Adobe Campaign Explorer finns på följande sidor i dokumentationen för Campaign v8 (konsol):
 
-* [Kampanjanvändargränssnittet - översikt](https://experienceleague.adobe.com/sv/docs/campaign/campaign-v8/new/campaign-ui){target=_blank}
+* [Kampanjanvändargränssnittet - översikt](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/new/campaign-ui){target=_blank}
 
 * [Inställningar för kampanjgränssnitt](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/config/configuration/ui-settings){target=_blank}
 
@@ -131,7 +131,7 @@ En uppräkning (kallas även för en specificerad lista) är en fördefinierad l
 
 När du har definierat värden visas de i en nedrullningsbar lista. Ett värde kan väljas direkt eller anges med prediktiv inmatning, vilket föreslår och slutför matchande poster. Vissa fält innehåller fördefinierade uppräkningar och ytterligare uppräkningar kan skapas om det behövs.
 
-Läs mer om hur du **arbetar med uppräkningar** i [Adobe Campaign v8-dokumentationen (konsolen)](https://experienceleague.adobe.com/sv/docs/campaign/campaign-v8/config/settings/enumerations){target=_blank}.
+Läs mer om hur du **arbetar med uppräkningar** i [Adobe Campaign v8-dokumentationen (konsolen)](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/config/settings/enumerations){target=_blank}.
 
 ## Självstudievideo {#video}
 
