@@ -6,10 +6,10 @@ title: Användarhandbok för Campaign Classic v7
 user-guide-description: Produktdokumentation för Adobe Campaign Classic v7.
 sub-product: adobe campaign classic
 type: Documentation
-source-git-commit: d78fe2e0fd85ba9c23e709a3f30a135cee411230
+source-git-commit: 4d8c4ba846148d3df00a76ecc29375b9047c2b20
 workflow-type: tm+mt
-source-wordcount: '2557'
-ht-degree: 99%
+source-wordcount: '2566'
+ht-degree: 97%
 
 ---
 
@@ -60,12 +60,12 @@ ht-degree: 99%
       + [Avanmälan för försäljning av personuppgifter](platform/using/privacy-requests-ccpa.md)
    + Profilhantering {#profile-management}
       + [Om profiler](platform/using/about-profiles.md)
-      + [Redigera en profil](platform/using/editing-a-profile.md)
-      + [Lägg till profiler](platform/using/adding-profiles.md)
-      + [Hantera profiler](platform/using/managing-profiles.md)
+      + [Redigera en profil - DOLD](platform/using/editing-a-profile.md)
+      + [Lägg till profiler - DOLD](platform/using/adding-profiles.md)
+      + [Hantera profiler - DOLD](platform/using/managing-profiles.md)
       + [Uppdatera data](platform/using/updating-data.md)
-      + [Importera och exportera profiler](platform/using/exporting-and-importing-profiles.md)
-   + [Skapa och hantera listor](platform/using/creating-and-managing-lists.md)
+      + [Import- och exportprofiler - DOLD](platform/using/exporting-and-importing-profiles.md)
+      + [Skapa och hantera listor](platform/using/creating-and-managing-lists.md)
    + Importera och exportera data {#importing-and-exporting-data}
       + [Kom igång med dataimport och export](platform/using/get-started-data-import-export.md)
       + [Använd arbetsflöden för att importera och exportera data](platform/using/import-export-workflows.md)
@@ -234,7 +234,7 @@ ht-degree: 99%
       + [Automatisera via arbetsflöden](delivery/using/automating-via-workflows.md)
 + [Orkestrera marknadsföringskampanjer](campaign/using/about-marketing-campaigns.md)
 + Orkestrera marknadsföringskampanjer {#orchestrating-campaigns}
-   + [Om kampanjoptimering &#x200B;](campaign-opt/using/about-campaign-optimization.md)
+   + [Om kampanjoptimering ](campaign-opt/using/about-campaign-optimization.md)
    + Om marknadsföringskampanjer {#about-marketing-campaigns}
       + [Utforma marknadsföringskampanjer](campaign/using/designing-marketing-campaigns.md)
       + [Åtkomst till marknadsföringskampanjer](campaign/using/accessing-marketing-campaigns.md)
@@ -310,7 +310,7 @@ ht-degree: 99%
    + [Designa rapporter med kuber](reporting/using/ac-cubes.md)
 + Designa webbinnehåll {#designing-content}
    + Webbapplikationer {#web-applications}
-      + [Kom igång med webbapplikationer &#x200B;](web/using/about-web-applications.md)
+      + [Kom igång med webbapplikationer ](web/using/about-web-applications.md)
       + [Skapa en ny webbapplikation](web/using/creating-a-new-web-application.md)
       + [Designa en webbapplikation](web/using/designing-a-web-application.md)
       + [Användningsfall: skapa översikter](web/using/use-cases-creating-overviews.md)
@@ -376,17 +376,17 @@ ht-degree: 99%
    + Adobe Experience Manager {#adobe-experience-manager}
       + [Arbeta med [!DNL Adobe Experience Manager]](integrations/using/about-adobe-experience-manager.md)
       + [Konfigurera integreringen](integrations/using/configuring-the-integration.md)
-      + [Skapa ett nyhetsbrev om [!DNL Experience Manager] &#x200B;](integrations/using/creating-an-experience-manager-newsletter.md)
+      + [Skapa ett nyhetsbrev om [!DNL Experience Manager] ](integrations/using/creating-an-experience-manager-newsletter.md)
    + Adobe Target {#adobe-target}
       + [Arbeta med [!DNL Adobe Target]](integrations/using/integrating-with-adobe-target.md)
       + [Konfigurera integreringen med [!DNL Adobe Target]](integrations/using/configuring-the-integration-with-adobe-target.md)
       + [Infoga en dynamisk bild](integrations/using/inserting-a-dynamic-image.md)
    + ACS-anslutning {#acs-connector}
-      + [Kom igång med [!DNL ACS Connector]](integrations/using/acs-connector-principles-and-data-cycle.md)
-      + [Synkronisera profiler](integrations/using/synchronizing-profiles.md)
-      + [Synkronisera målgrupper](integrations/using/synchronizing-audiences.md)
-      + [Synkronisera webbapplikationer](integrations/using/synchronizing-web-applications.md)
-      + [Felsök [!DNL ACS Connector]](integrations/using/troubleshooting-the-acs-connector.md)
+      + [Kom igång med  [!DNL ACS Connector]  - DOLD](integrations/using/acs-connector-principles-and-data-cycle.md)
+      + [Synkronisera profiler - DOLD](integrations/using/synchronizing-profiles.md)
+      + [Synkronisera målgrupper - DOLD](integrations/using/synchronizing-audiences.md)
+      + [Synkronisera webbprogram - DOLD](integrations/using/synchronizing-web-applications.md)
+      + [Felsök  [!DNL ACS Connector] - DOLD](integrations/using/troubleshooting-the-acs-connector.md)
 + [Automatisera med arbetsflöden](workflow/using/about-workflow-automation.md)
 + Automatisera med arbetsflöden {#automating-with-workflows}
    + Kom igång med arbetsflöden {#introduction}
@@ -845,6 +845,6 @@ ht-degree: 99%
       + [Uppdatering av spårade URL:er](technotes/using/tracked-urls.md)
    + Migrering till Adobe Managed Services{#dc-migration}
       + [Migrering till Public Cloud](technotes/using/dc-migration.md)
-      + [Vanliga frågor och svar &#x200B;](technotes/using/dc-migration-faq.md)
+      + [Vanliga frågor och svar ](technotes/using/dc-migration-faq.md)
    + [GCM-baserade funktioner](technotes/using/gcm-functions.md)
 + [Kontrollpanelen i Campaign](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=sv)

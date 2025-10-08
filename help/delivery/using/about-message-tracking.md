@@ -6,10 +6,10 @@ badge-v8: label="Gäller även för v8" type="Positive" tooltip="Gäller även C
 feature: Monitoring, Email
 role: User
 exl-id: 43779505-9917-4e99-af25-b00a9d29a645
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: 4d8c4ba846148d3df00a76ecc29375b9047c2b20
 workflow-type: tm+mt
-source-wordcount: '692'
-ht-degree: 9%
+source-wordcount: '684'
+ht-degree: 8%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 9%
 
 Tack vare spårningsfunktionerna i Adobe Campaign kan du spåra skickade meddelanden och kontrollera mottagarnas beteende: öppna, klicka på länkar, ta bort prenumeration osv.
 
-Den här informationen hämtas på fliken **[!UICONTROL Tracking]** i profilen för varje mottagare av leveransen. På den här fliken visas alla URL-länkar som spårats och klickats av mottagaren som valts i listan. Detta är en ackumulering av alla URL:er som spåras i leveranser som fortfarande finns på leveransskärmen. Listan kan konfigureras och innehåller vanligtvis: den URL-adress som klickades på, datum och tid för klickningen samt det dokument där URL-adressen hittades. Mer information om detta finns i [det här avsnittet](../../platform/using/editing-a-profile.md#tracking-tab).
+Den här informationen hämtas på fliken **[!UICONTROL Tracking]** i profilen för varje mottagare av leveransen. På den här fliken visas alla URL-länkar som spårats och klickats av mottagaren som valts i listan. Detta är en ackumulering av alla URL:er som spåras i leveranser som fortfarande finns på leveransskärmen. Listan kan konfigureras och innehåller vanligtvis: den URL-adress som klickades på, datum och tid för klickningen samt det dokument där URL-adressen hittades.
 
 Kontrollpanelen **för leverans** är också viktig för att övervaka dina leveranser och eventuella problem som uppstår när meddelanden skickas. Mer information finns i [det här avsnittet](delivery-dashboard.md).
 
@@ -57,7 +57,7 @@ Spårningsalternativen kan konfigureras genom att aktivera eller inaktivera spå
 
 **Spårad länkpersonalisering**
 
-Med spårningsfunktionerna kan du lägga till länkar i e-postmeddelanden som kan personaliseras och som stöder spårning. [Läs mer](tracking-personalized-links.md)
+Med Campaign Classic spårningsfunktioner kan du lägga till länkar i e-postmeddelanden som kan personaliseras och som stöder spårning. [Läs mer](tracking-personalized-links.md)
 
 **Spårningsloggar**
 

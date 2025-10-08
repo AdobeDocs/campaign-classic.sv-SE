@@ -3,10 +3,10 @@ keywords: Campaign Classic, starstida, populära ämnen
 product: campaign
 title: Produktdokumentation för Adobe Campaign Classic v7
 exl-id: 6b3f1689-80de-49fd-b7ee-7a2a1931d157
-source-git-commit: d56038fc8baf766667d89bb73747c20ec041124c
+source-git-commit: 4d8c4ba846148d3df00a76ecc29375b9047c2b20
 workflow-type: tm+mt
-source-wordcount: '342'
-ht-degree: 100%
+source-wordcount: '340'
+ht-degree: 97%
 
 ---
 
@@ -96,7 +96,7 @@ Vissa viktiga ändringar av tjänsten Android Firebase Cloud Messaging (FCM) kom
     <td>
       <img src="assets/do-not-localize/icon_profile-audience.svg" width="35px">
       <br/>
-      <strong>Profiler och målgrupper</strong><br/><a href="platform/using/adding-profiles.md">Lägg till profiler</a> – <a href="platform/using/creating-and-managing-lists.md">Skapa listor</a> – <a href="delivery/using/about-services-and-subscriptions.md">Tjänster och prenumerationer</a> – <a href="platform/using/privacy-management.md">Sekretess och samtycke</a>
+      <strong> Profiler och målgrupper </strong><br/> <a href="platform/using/creating-and-managing-lists.md">Skapa listor</a> - <a href="delivery/using/about-services-and-subscriptions.md">Tjänster och prenumerationer</a> - <a href="platform/using/privacy-management.md">Sekretess och samtycke</a>
     </td>
     <td>
       <img src="assets/do-not-localize/icon-configure.svg" width="35px">

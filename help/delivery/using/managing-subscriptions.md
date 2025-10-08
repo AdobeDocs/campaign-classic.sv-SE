@@ -6,9 +6,9 @@ badge-v8: label="Gäller även för v8" type="Positive" tooltip="Gäller även C
 feature: Subscriptions
 role: User
 exl-id: 16dddd4a-2e1a-4c78-8168-f656657bb9b8
-source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
+source-git-commit: 4d8c4ba846148d3df00a76ecc29375b9047c2b20
 workflow-type: tm+mt
-source-wordcount: '1117'
+source-wordcount: '1103'
 ht-degree: 2%
 
 ---
@@ -50,11 +50,11 @@ Om du vill redigera en befintlig tjänst klickar du på dess namn. Om du vill sk
 
 ![](assets/s_ncs_user_services_add.png)
 
-* Ange namnet på tjänsten i fältet **[!UICONTROL Label]** och markera leveranskanalen: e-post, mobil, Facebook, X (tidigare Twitter) eller mobilprogram.
+* Ange namnet på tjänsten i fältet **[!UICONTROL Label]** och välj leveranskanal: e-post, mobil, Facebook, X (tidigare Twitter) eller mobilprogram.
 
   >[!NOTE]
   >
-  >Facebook- och X-prenumerationer beskrivs i [det här avsnittet](../../social/using/about-social-marketing.md). Prenumerationer på mobilappar beskrivs i [Om mobilappskanalen](about-mobile-app-channel.md).
+  >Prenumerationer på Facebook och X beskrivs i [det här avsnittet](../../social/using/about-social-marketing.md). Prenumerationer på mobilappar beskrivs i [Om mobilappskanalen](about-mobile-app-channel.md).
 
 * Välj **Leveransläge** för en e-posttjänst. Möjliga lägen är: **[!UICONTROL Newsletter]** eller **[!UICONTROL Viral]**.
 * Du kan skicka **bekräftelsemeddelanden** för en prenumeration eller en prenumeration. Om du vill göra det väljer du de leveransmallar som ska användas för att skapa motsvarande leveranser från fälten **[!UICONTROL Subscription]** och **[!UICONTROL Unsubscription]**. Dessa mallar måste konfigureras med en målmappning av typen **[!UICONTROL Subscription]**, utan ett definierat mål. Se avsnittet [Om e-postkanal](about-email-channel.md).
@@ -121,9 +121,7 @@ Du kan ställa in prenumerations- och avprenumerationsmekanismer för att automa
 
 Om du vill registrera mottagare för en informationstjänst kan du:
 
-* Lägg till tjänsten manuellt: om du vill göra det klickar du på **[!UICONTROL Add]** på fliken **[!UICONTROL Subscriptions]** i profilen och väljer den aktuella informationstjänsten.
-
-  Mer information finns i avsnittet om profilredigering i [det här avsnittet](../../platform/using/editing-a-profile.md).
+* Lägg till tjänsten manuellt: om du vill göra det klickar du på **[!UICONTROL Subscriptions]** på fliken **[!UICONTROL Add]** i profilen och väljer den aktuella informationstjänsten.
 
 * Prenumerera automatiskt på en uppsättning mottagare för den här tjänsten. Listan med mottagare kan komma från en filtreringsåtgärd, en grupp, en mapp, en import eller en direktmarkering med musen. Om du vill prenumerera på dessa mottagare markerar du profilerna och högerklickar. Välj **[!UICONTROL Actions > Subscribe selection to a service...]**, markera den aktuella tjänsten och starta åtgärden.
 * Importera mottagare och prenumerera automatiskt på en informationstjänst. Det gör du genom att välja den berörda tjänsten i det sista steget i importassistenten.

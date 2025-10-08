@@ -6,9 +6,9 @@ badge-v8: label="Gäller även för v8" type="Positive" tooltip="Gäller även C
 feature: Monitoring, Deliverability
 role: User
 exl-id: cfd8f5c9-f368-4a31-a1e2-1d77ceae5ced
-source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
+source-git-commit: 4d8c4ba846148d3df00a76ecc29375b9047c2b20
 workflow-type: tm+mt
-source-wordcount: '2987'
+source-wordcount: '2984'
 ht-degree: 7%
 
 ---
@@ -41,8 +41,7 @@ Karantän och blockeringslista gäller inte för samma objekt:
 
 * Om du däremot befinner dig på **blockeringslista**, leder det till att **profile** inte längre anges som mål för leveransen, till exempel efter en avanmälan (avanmälan) för en viss kanal. Om en profil på blockeringslista för e-postkanalen till exempel har två e-postadresser, kommer båda adresserna inte att levereras.
 
-  Du kan kontrollera om det finns en profil på blockeringslista för en eller flera kanaler under **[!UICONTROL No longer contact]** på fliken **[!UICONTROL General]** i profilen. Se [det här avsnittet](../../platform/using/editing-a-profile.md#general-tab).
-
+  Du kan kontrollera om det finns en profil på blockeringslista för en eller flera kanaler under **[!UICONTROL No longer contact]** på fliken **[!UICONTROL General]** i profilen.
 >[!NOTE]
 >
 >Karantänen innehåller en **[!UICONTROL Denylisted]**-status, som används när mottagarna rapporterar ditt meddelande som skräppost eller svarar på ett SMS-meddelande med ett nyckelord som &quot;STOP&quot;. I så fall skickas profilens adress eller telefonnummer till karantän med statusen **[!UICONTROL Denylisted]**. Mer information om hur du hanterar SMS-meddelanden för STOP finns i [det här avsnittet](../../delivery/using/sms-send.md#processing-inbound-messages).
@@ -104,7 +103,7 @@ Adobe Campaign hanterar karantän enligt typ av leveransfel och den orsak som ti
 * **Kritisk avvikelse**: motsvarande e-postadress skickas omedelbart till karantänen.
 * **Icke-kritisk avvikelse**: En icke-kritiskt avvikelse skickar inte en adress till karantän omedelbart men ökar dock felräknaren.  Mer information finns i [Mjuk felhantering](#soft-error-management).
 
-Om en användare kvalificerar ett e-postmeddelande som en skräppost ([feedbackslinga](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html?lang=sv-SE#feedback-loops)) dirigeras meddelandet automatiskt om till en teknisk postlåda som hanteras av Adobe. Användarens e-postadress skickas sedan automatiskt till karantänen med status **[!UICONTROL Denylisted]**.    Den här statusen avser endast adressen, profilen finns inte på blockeringslista, så att användaren fortsätter att ta emot SMS-meddelanden och push-meddelanden.
+Om en användare kvalificerar ett e-postmeddelande som en skräppost ([feedbackslinga](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html#feedback-loops)) dirigeras meddelandet automatiskt om till en teknisk postlåda som hanteras av Adobe. Användarens e-postadress skickas sedan automatiskt till karantänen med status **[!UICONTROL Denylisted]**.    Den här statusen avser endast adressen, profilen finns inte på blockeringslista, så att användaren fortsätter att ta emot SMS-meddelanden och push-meddelanden.
 
 >[!NOTE]
 >
@@ -279,7 +278,7 @@ Synkront, om APN:er returnerar status &quot;unregistered&quot; för ett meddelan
 
 **För Android v1**
 
-För varje meddelande får Adobe Campaign synkrona fel direkt från FCM-servern. Adobe-kampanjen hanterar dem i farten och genererar hårda eller mjuka fel beroende på hur allvarligt felet är, och nya försök kan utföras:
+För varje meddelande får Adobe Campaign synkrona fel direkt från FCM-servern. Adobe-kampanjer hanterar dem direkt och genererar hårda eller mjuka fel beroende på hur allvarligt felet är, och nya försök kan utföras:
 
 * Nyttolastlängden har överskridits, anslutningsproblem, problem med tjänsttillgänglighet: återförsök utförd, mjukt fel, felorsak är **[!UICONTROL Refused]**.
 * Enhetskvoten har överskridits: inga nya försök, inget mjukt fel, felorsaken är **[!UICONTROL Refused]**.

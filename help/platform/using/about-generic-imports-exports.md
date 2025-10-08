@@ -7,10 +7,10 @@ feature: Overview
 role: User, Data Architect
 level: Beginner
 exl-id: 9ac13db3-552f-43cc-ab67-3aea82e0519e
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: 4d8c4ba846148d3df00a76ecc29375b9047c2b20
 workflow-type: tm+mt
-source-wordcount: '126'
-ht-degree: 3%
+source-wordcount: '121'
+ht-degree: 0%
 
 ---
 
@@ -19,8 +19,6 @@ ht-degree: 3%
 
 
 Adobe Campaign Classic erbjuder allmän import och export. De gör att du till exempel kan extrahera en lista över kunder eller potentiella kunder som sedan blir en del av målpopulationen eller förse din databas med data från externa filer.
-
-![](assets/do-not-localize/how-to-video.png) [Upptäck den här funktionen i en video](../../platform/using/exporting-and-importing-profiles.md#import-profiles-video)
 
 Generisk import och export hanteras från noden **[!UICONTROL Profiles and Targets > Jobs > Generic imports and exports]** i Adobe Campaign-trädet.
 
