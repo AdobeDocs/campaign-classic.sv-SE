@@ -7,9 +7,9 @@ audience: installation
 content-type: reference
 topic-tags: initial-configuration
 exl-id: a025026e-688e-4ec1-abc4-40ee040d2b3b
-source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
+source-git-commit: 0db6f107d2c161b07f42dcf7a932d319130b31e0
 workflow-type: tm+mt
-source-wordcount: '586'
+source-wordcount: '587'
 ht-degree: 1%
 
 ---
@@ -26,11 +26,11 @@ Så här skapar du en ny instans och en Adobe Campaign-databas:
 
 >[!NOTE]
 >
->Endast den **interna** identifieraren kan utföra dessa åtgärder. Mer information om detta finns i [det här avsnittet](../../installation/using/configuring-campaign-server.md#internal-identifier).
+>Endast identifieraren **internal** kan utföra dessa åtgärder. Mer information om detta finns i [det här avsnittet](../../installation/using/configuring-campaign-server.md#internal-identifier).
 
 När Adobe Campaign-konsolen startas kommer du åt en inloggningssida.
 
-För att skapa en ny instans, följ stegen nedan:
+Så här skapar du en ny instans:
 
 1. Klicka på länken i det övre högra hörnet av inloggningsfälten för att komma åt fönstret för anslutningskonfiguration. Den här länken kan vara antingen **[!UICONTROL New...]** eller ett befintligt instansnamn.
 
@@ -46,33 +46,33 @@ För att skapa en ny instans, följ stegen nedan:
 
    >[!CAUTION]
    >
-   >För anslutnings-URL:en använder du endast följande tecken: `[a-z]`, `[A-Z]`och `[0-9]` bindestreck (-) eller punkter.
+   >Använd endast följande tecken för anslutnings-URL: `[a-z]`, `[A-Z]`, `[0-9]` och streck (-) eller fullständiga stopp.
 
-1. Klicka **[!UICONTROL Ok]** för att bekräfta inställningarna: du kan nu börja med processen för att skapa instanser.
-1. I fönstret **[!UICONTROL Connection settings]** anger du den interna **inloggningen** och lösenordet för att ansluta till Adobe Campaign-programservern. När du är ansluten öppnar du assistenten för att skapa instanser för att deklarera en ny instans
-1. I fältet **[!UICONTROL Name]** anger du instansnamnet **&#x200B;**. Eftersom det här namnet används för att generera en konfigurationsfil **config-`<instance>`.xml** och används i kommandoradsparametrarna för att identifiera instansen, se till att du väljer ett kort namn utan specialtecken. Till exempel: **e-marknadsföring**.
+1. Klicka på **[!UICONTROL Ok]** för att bekräfta inställningarna: du kan nu börja med att skapa instansen.
+1. I fönstret **[!UICONTROL Connection settings]** anger du inloggningen **internal** och dess lösenord för att ansluta till Adobe Campaign-programservern. När du är ansluten får du tillgång till instansskaparassistenten för att deklarera en ny instans
+1. Ange **[!UICONTROL Name]** instansnamnet **i fältet**. Eftersom det här namnet används för att generera konfigurationsfilen **config-`<instance>`.xml** och används i kommandoradsparametrarna för att identifiera instansen, måste du välja ett kort namn utan specialtecken. Till exempel: **eMarketing**.
 
    ![](assets/s_ncs_install_create_instance.png)
 
-   Namnet på den instans som läggs till i domännamnet får inte vara längre än 40 tecken. På så sätt kan du begränsa storleken på &quot;Meddelande-ID&quot;-rubriker och förhindra att meddelanden betraktas som skräppost, särskilt av verktyg som SpamAssassin.
+   Namnet på instansen som läggs till i domännamnet får inte vara längre än 40 tecken. På så sätt kan du begränsa storleken på meddelandehuvuden och förhindra att meddelanden betraktas som skräppost, särskilt med verktyg som SpamAssassin.
 
-1. I fälten **[!UICONTROL DNS masks]** anger du listan över DNS-masker **som instansen** ska kopplas till. Adobe Campaign-servern använder värdnamnet som visas i HTTP-begäranden för att avgöra vilken instans som ska nås.
+1. I fälten **[!UICONTROL DNS masks]** anger du listan **med DNS-masker** som instansen ska kopplas till. Adobe Campaign-servern använder värdnamnet som visas i HTTP-begäranden för att avgöra vilken instans som ska nås.
 
    Värdnamnet finns mellan strängen **https://** och det första snedstrecket **/** i serveradressen.
 
    Du kan definiera en lista med värden avgränsade med kommatecken.
 
-   Den? och &#42; tecken kan användas som jokertecken för att ersätta ett eller flera tecken (DNS, port osv.). Till **exempel kommer demovärdet&#42;** att fungera med &quot;https://demo&quot; som det kommer att göra med &quot;https://demo:8080&quot; och till och med &quot;https://demo2&quot;.
+   Den? och &#42; tecken kan användas som jokertecken för att ersätta ett eller flera tecken (DNS, port, osv.). Värdet **demo&#42;** fungerar till exempel med&quot;https://demo&quot; på samma sätt som med&quot;https://demo:8080&quot; och till och med&quot;https://demo2&quot;.
 
-   Namn som används måste definieras i din DNS. Du kan också informera om överensstämmelsen mellan ett DNS-namn och en IP-adress i **filen c:/windows/system32/drivers/etc/hosts** i Windows och i **filen /etc/hosts** i Linux. Du måste därför ändra anslutningsinställningarna för att använda det här DNS-namnet för att kunna ansluta till den valda instansen.
+   Namn som används måste definieras i din DNS. Du kan också informera om korrespondensen mellan ett DNS-namn och en IP-adress i filen **c:/windows/system32/drivers/etc/hosts** i Windows och i filen **/etc/hosts** i Linux. Du måste därför ändra anslutningsinställningarna för att kunna använda det här DNS-namnet för att ansluta till den valda instansen.
 
-   Servern måste identifieras med detta namn, särskilt för att ladda upp bilder i e-postmeddelanden.
+   Servern måste identifieras med det här namnet, särskilt för överföring av bilder i e-postmeddelanden.
 
-   Dessutom måste servern kunna ansluta till sig själv med detta namn, och om möjligt med en loopback-adress - 127.0.0.1 -, särskilt för att tillåta att rapporter exporteras i PDF-format.
+   Dessutom måste servern kunna ansluta till sig själv med det här namnet, och om möjligt med en loopback-adress - 127.0.0.1 - särskilt för att rapporter ska kunna exporteras i PDF-format.
 
-1. **[!UICONTROL Language]** I listrutan väljer du **instansspråk**: engelska (USA), engelska (Storbritannien), franska eller japanska.
+1. I listrutan **[!UICONTROL Language]** väljer du **instansspråk**: engelska (USA), engelska (Storbritannien), franska eller japanska.
 
-   Skillnader mellan amerikansk engelska och brittisk engelska beskrivs i [det här avsnittet](../../platform/using/adobe-campaign-workspace.md#date-and-time).
+   Skillnader mellan amerikansk engelska och brittisk engelska beskrivs i [Campaign v8-dokumentationen (konsol)](.https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/new/campaign-ui).
 
    >[!CAUTION]
    >

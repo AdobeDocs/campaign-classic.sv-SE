@@ -7,9 +7,9 @@ feature: Campaigns, Templates
 hide: true
 hidefromtoc: true
 exl-id: d272d4b9-f1b2-4fb2-9ed9-91a4aea7eca3
-source-git-commit: 4f809011a8b4cb3803c4e8151e358e5fd73634e4
+source-git-commit: 0db6f107d2c161b07f42dcf7a932d319130b31e0
 workflow-type: tm+mt
-source-wordcount: '1128'
+source-wordcount: '1131'
 ht-degree: 0%
 
 ---
@@ -157,7 +157,7 @@ När du skapar en kampanjmall måste du ange följande information:
 
   >[!NOTE]
   >
-  >Mer information om uppräkningar finns i avsnittet [Komma igång](../../platform/using/managing-enumerations.md).
+  >Läs mer om hur du **arbetar med uppräkningar** i [Adobe Campaign v8-dokumentationen (konsolen)](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/config/settings/enumerations){target=_blank}.
 
 * Välj typen **av kampanj**: unik, återkommande eller periodisk. Som standard används kampanjmallar för unika kampanjer. Återkommande och periodiska kampanjer beskrivs i [det här avsnittet](../../campaign/using/setting-up-marketing-campaigns.md#recurring-and-periodic-campaigns).
 * Ange kampanjens varaktighet, dvs. antalet dagar som kampanjen ska äga rum. När du skapar en kampanj som baseras på den här mallen fylls start- och slutdatumet för kampanjen i automatiskt.

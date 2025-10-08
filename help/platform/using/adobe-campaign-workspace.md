@@ -1,21 +1,19 @@
 ---
 product: campaign
-title: Adobe Campaign arbetsyta
+title: Arbetsytan i Adobe Campaign
 description: Lär dig hur du använder och anpassar arbetsytan i Campaign
 feature: Overview
 role: Data Engineer
 level: Beginner
 exl-id: 5f689679-7148-4abd-a9bf-185854c64b13
-source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
+source-git-commit: 0db6f107d2c161b07f42dcf7a932d319130b31e0
 workflow-type: tm+mt
-source-wordcount: '916'
-ht-degree: 2%
+source-wordcount: '858'
+ht-degree: 0%
 
 ---
 
-# Adobe Campaign arbetsyta{#adobe-campaign-workspace}
-
-
+# Arbetsytan i Adobe Campaign{#adobe-campaign-workspace}
 
 ## Utforska Adobe Campaign gränssnitt {#about-adobe-campaign-interface}
 
@@ -61,7 +59,7 @@ Du kan välja mellan fem olika språk:
 * Tyska
 * Japanska
 
-Språket du valde för din Adobe Campaign Classic-instans kan påverka datum- och tidsformat. Mer information om detta hittar du i det här [avsnittet](../../platform/using/adobe-campaign-workspace.md#date-and-time).
+Språket du valde för din Adobe Campaign Classic-instans kan påverka datum- och tidsformat. Mer information finns i [dokumentationen för Campaign v8 (konsol)](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/new/campaign-ui){target=_blank}.
 
 Mer information om hur du skapar en instans finns på [sidan](../../installation/using/creating-an-instance-and-logging-on.md).
 
@@ -106,70 +104,37 @@ Använd till exempel knappen **[!UICONTROL Create]** på leveranssidan för att 
 ![](assets/d_ncs_user_interface_tab_add_del.png)
 
 
-## Format och enheter {#formats-and-units}
+## Använda Adobe Campaign Explorer {#using-adobe-campaign-explorer}
 
-### Datum och tid {#date-and-time}
+Utforskaren i Adobe Campaign är tillgänglig via verktygsfältsikonen. Du får tillgång till Adobe Campaign alla funktioner, konfigurationsskärmar och en mer detaljerad översikt över några av plattformselementen.
 
-Språket i din Adobe Campaign Classic-instans påverkar datum- och tidsformat.
+Mer information om Adobe Campaign Explorer finns på följande sidor i dokumentationen för Campaign v8 (konsol):
 
-Språk väljs vid installation av Campaign och kan inte ändras efteråt. Du kan välja: engelska (USA), engelska (EN), franska, tyska eller japanska. Mer information finns på [den här sidan](../../installation/using/creating-an-instance-and-logging-on.md).
+* [Kampanjanvändargränssnittet - översikt](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/new/campaign-ui#ac-explorer-ui){target=_blank}
 
-De största skillnaderna mellan amerikansk engelska och brittisk engelska är:
+* [Inställningar för kampanjgränssnitt](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/config/configuration/ui-settings){target=_blank}
 
-<table> 
- <thead> 
-  <tr> 
-   <th> Format<br /> </th> 
-   <th> Engelska (USA)<br /> </th> 
-   <th> Engelska (EN)<br /> </th> 
-  </tr> 
- </thead> 
- <tbody> 
-  <tr> 
-   <td> Datum<br /> </td> 
-   <td> Veckan börjar på söndag<br /> </td> 
-   <td> Veckan börjar på måndag<br /> </td> 
-  </tr> 
-  <tr> 
-   <td> Kort datum <br /> </td> 
-   <td> <p>%2M/%2D/%4Y</p><p><strong>ex: 09/25/2018</strong></p> </td> 
-   <td> <p>%2D/%2M/%4Y</p><p><strong>ex: 25/09/2018</strong></p> </td> 
-  </tr> 
-  <tr> 
-   <td> Kort datum med tiden <br /> </td> 
-   <td> <p>%2M/%2D/%4Y %I:%2N:%2S %P</p><p><strong>ex: 09/25/2018 10:47:25 PM</strong></p> </td> 
-   <td> <p>%2D/%2M/%4Y %2H:%2N:%2S</p><p><strong>ex: 25/09/2018 22:47:25</strong></p> </td> 
-  </tr> 
- </tbody> 
-</table>
+* [Hantera mappar och vyer i Utforskaren](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/config/configuration/folders-and-views){target=_blank}.
 
-### Lägga till värden i en uppräkning {#add-values-in-an-enumeration}
 
-Med hjälp av inmatningsfälten i en nedrullningsbar lista kan du ange ett uppräkningsvärde som kan lagras och sedan visas som ett alternativ i listrutan. I fältet **[!UICONTROL City]** på fliken **[!UICONTROL General]** i en mottagarprofil kan du till exempel ange London. När du trycker på Retur för att bekräfta det här värdet tillfrågas du om du vill spara det här värdet för uppräkningen som är associerad med fältet.
+## Arbeta med listor {#manage-and-customize-lists}
 
-![](assets/s_ncs_user_wizard_email_bat_substitute_email.png)
-
-Om du klickar på **[!UICONTROL Yes]** är det här värdet tillgängligt i kombinationsrutan för det relevanta fältet (i det här fallet: **[!UICONTROL London]**).
+I Campaign-klientkonsolen visas data i listor. Du kan anpassa listorna efter dina behov. Du kan till exempel lägga till kolumner, filtrera data, räkna poster, spara och dela inställningarna.
 
 >[!NOTE]
 >
->Uppräkningar (kallas även&quot;specificerade listor&quot;) hanteras av administratören via avsnittet **[!UICONTROL Administration > Platform > Enumerations]**. Mer information finns i [Hantera uppräkningar](../../platform/using/managing-enumerations.md).
+>Mer information om hur du hanterar och anpassar listor i Adobe Campaign finns i [dokumentationen för Campaign v8 (konsol)](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/config/configuration/ui-settings#customize-lists){target=_blank}.
 
-### Standardenheter {#default-units}
+## Hantera uppräkningar{#managing-enumerations}
 
-I fälten som uttrycker en varaktighet (t.ex. giltighetsperiod för resurserna för en leverans, sista datum för godkännande av en aktivitet, osv.) kan värdet uttryckas i följande **enheter**:
+En uppräkning (kallas även för en specificerad lista) är en fördefinierad lista med värden som du kan använda för att fylla i vissa fält. Uppräkningar hjälper till att standardisera fältvärden, vilket gör datainmatningen mer konsekvent och förenklar frågor.
 
-* **[!UICONTROL s]** i sekunder,
-* **[!UICONTROL mn]** i minuter,
-* **[!UICONTROL h]** i timmar,
-* **[!UICONTROL d]** i dagar.
+När du har definierat värden visas de i en nedrullningsbar lista. Ett värde kan väljas direkt eller anges med prediktiv inmatning, vilket föreslår och slutför matchande poster. Vissa fält innehåller fördefinierade uppräkningar och ytterligare uppräkningar kan skapas om det behövs.
 
-![](assets/enter_unit_sample.png)
+Läs mer om hur du **arbetar med uppräkningar** i [Adobe Campaign v8-dokumentationen (konsolen)](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/config/settings/enumerations){target=_blank}.
 
 ## Självstudievideo {#video}
 
-I den här videon visas Campaign Classicens arbetsyta.
+I den här videon visas Campaign Classic arbetsyta.
 
 >[!VIDEO](https://video.tv.adobe.com/v/35130?quality=12)
-
-Ytterligare Campaign Classic om instruktionsvideor finns [här](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=sv).

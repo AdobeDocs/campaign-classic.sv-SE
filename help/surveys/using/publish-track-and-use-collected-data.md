@@ -5,9 +5,9 @@ description: Lär dig publicera, spåra och använda data som samlats in i en un
 badge-v8: label="Gäller även för v8" type="Positive" tooltip="Gäller även Campaign v8"
 feature: Surveys
 exl-id: 3cf3c486-6640-4d67-95cf-50d5767deb60
-source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
+source-git-commit: 0db6f107d2c161b07f42dcf7a932d319130b31e0
 workflow-type: tm+mt
-source-wordcount: '843'
+source-wordcount: '855'
 ht-degree: 2%
 
 ---
@@ -162,4 +162,4 @@ Konfigurera delningsrutan genom att redigera den:
 
 ## Standardisera data {#standardizing-data}
 
-Det är möjligt att skapa standardiseringsprocesser i Adobe Campaign för data som samlas in med alias. På så sätt kan du standardisera de data som lagras i databasen: för att göra det definierar du alias i de specificerade listorna som innehåller relevant information. [Läs mer](../../platform/using/managing-enumerations.md#about-enumerations)
+Det är möjligt att skapa standardiseringsprocesser i Adobe Campaign för data som samlas in med alias. På så sätt kan du standardisera de data som lagras i databasen: för att göra det definierar du alias i de specificerade listorna som innehåller relevant information. Läs mer om hur du **arbetar med uppräkningar** i [Adobe Campaign v8-dokumentationen (konsolen)](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/config/settings/enumerations){target=_blank}.

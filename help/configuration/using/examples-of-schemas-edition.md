@@ -5,9 +5,9 @@ description: Exempel på schemautgåvor
 feature: Schema Extension
 role: Data Engineer, Developer
 exl-id: b7ee70e0-89c6-4cd3-8116-2f073d4a2f2f
-source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
+source-git-commit: 0db6f107d2c161b07f42dcf7a932d319130b31e0
 workflow-type: tm+mt
-source-wordcount: '669'
+source-wordcount: '671'
 ht-degree: 2%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 2%
 
 ## Utöka en tabell {#extending-a-table}
 
-Om du vill utöka mottagartabellen för **nms:receive**-schemat gör du så här:
+Om du vill utöka mottagartabellen för **nms:recipient**-schemat gör du så här:
 
 1. Skapa tilläggsschemat (**cus:extension**) med följande data:
 
@@ -40,13 +40,13 @@ Om du vill utöka mottagartabellen för **nms:receive**-schemat gör du så här
    </srcSchema>
    ```
 
-   I det här exemplet läggs ett indexerat fält (**följsamhet**) till, och elementet **location** (som redan fanns i schemat **nms:mottagare**) kompletteras med ett numrerat fält (**område**).
+   I det här exemplet läggs ett indexerat fält (**följsamhet**) till och elementet **location** (som redan fanns i schemat **nms:recipient**) kompletteras med ett numrerat fält (**area**).
 
    >[!IMPORTANT]
    >
    >Kom ihåg att lägga till attributet **extendedSchema** för att referera till tilläggsschemat.
 
-1. Kontrollera att det utökade schemat är schemat **nms:receiver** och att det finns ytterligare data:
+1. Kontrollera att det utökade schemat är **nms:recipient**-schemat och att det finns ytterligare data:
 
    ```
    <schema dependingSchemas="cus:extension" mappingType="sql" name="recipient" namespace="nms" xtkschema="xtk:schema">
@@ -222,7 +222,7 @@ Skapar schemat för flödestabellen (**cus:overflow**):
 
 >[!NOTE]
 >
->Huvudnyckeln i flödestabellen är länken till tabellen som ska utökas (&quot;nms:mottagare&quot;-schema i vårt exempel).
+>Huvudnyckeln för flödestabellen är länken till tabellen som ska utökas (&quot;nms:recipient&quot;-schema i vårt exempel).
 
 SQL-skriptet för att skapa tabeller är följande:
 
@@ -235,7 +235,7 @@ CREATE UNIQUE INDEX CusOverflow2_id ON CusOverflow2(iRecipientId);
 
 Med en relationstabell kan du länka två tabeller med kardinaliteten N-N. Tabellen innehåller bara sekundärnycklarna för de tabeller som ska länkas.
 
-Exempel på en relationstabell mellan grupper (**nms:group**) och mottagare (**nms:mottagare**).
+Exempel på en relationstabell mellan grupper (**nms:group**) och mottagare (**nms:recipient**).
 
 Source-schema för relationstabellen:
 
@@ -335,8 +335,9 @@ Användargränssnittet visar inte en länk utan ett fält. När användarna väl
 
 ## Relaterade ämnen
 
-* [Arbeta med uppräkningar](../../platform/using/managing-enumerations.md)
+* Läs mer om hur du **arbetar med uppräkningar** i [Adobe Campaign v8-dokumentationen (konsolen)](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/config/settings/enumerations){target=_blank}.
 
 * [Kom igång med kampanjscheman](../../configuration/using/about-schema-edition.md)
 
 * [Uppdatera databasstrukturen](../../configuration/using/updating-the-database-structure.md)
+
