@@ -16,7 +16,7 @@ ht-degree: 0%
 
 Som expertanvändare kan du lägga till mappar i utforskarträdet och anpassa det.
 
-Läs mer om Campaign-användargränssnittet i [Adobe Campaign v8-dokumentationen (konsolen)](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/new/campaign-ui){target=_blank}.
+Läs mer om Campaign-användargränssnittet i [Adobe Campaign v8-dokumentationen (konsolen)](https://experienceleague.adobe.com/sv/docs/campaign/campaign-v8/new/campaign-ui){target=_blank}.
 
 De typer av mappar som används av navigeringslistan beskrivs i ett XML-dokument som lyder grammatiken i **xtk:navtree** -schemat.
 
