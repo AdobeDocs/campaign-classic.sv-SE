@@ -6,9 +6,9 @@ feature: Release Notes
 role: User
 level: Beginner
 exl-id: 7a05fdff-8f9d-4e8d-812e-0f1509db5499
-source-git-commit: 7b71cac6f4c2fc2e8d30683130adb27eff757b73
-workflow-type: ht
-source-wordcount: '903'
+source-git-commit: d56038fc8baf766667d89bb73747c20ec041124c
+workflow-type: tm+mt
+source-wordcount: '894'
 ht-degree: 100%
 
 ---
@@ -152,7 +152,6 @@ Vi har organiserat ett team med dedikerade kundtjänstrepresentanter, produktche
 * [Hitta din version av Campaign](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version).
 * [Hjälp och support](../../support.md)
 * [Versioner av Kontrollpanelen](https://experienceleague.adobe.com/docs/control-panel/using/release-notes.html?lang=sv)
-* [Senaste dokumentationsuppdateringarna](../../rn/using/documentation-updates.md)
 * [Inaktuella och borttagna funktioner](../../rn/using/deprecated-features.md)
 * [Vanliga frågor och svar om builduppgradering](../../platform/using/faq-build-upgrade.md)
 

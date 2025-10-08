@@ -5,9 +5,9 @@ feature: Application Settings
 description: Lär dig konfigurera navigeringsträdet i Campaign Explorer
 role: Data Engineer, Developer
 exl-id: c7ae7240-0c12-4420-bbb3-4268c9ade3e7
-source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
+source-git-commit: d56038fc8baf766667d89bb73747c20ec041124c
 workflow-type: tm+mt
-source-wordcount: '1186'
+source-wordcount: '1183'
 ht-degree: 0%
 
 ---
@@ -16,9 +16,9 @@ ht-degree: 0%
 
 Som expertanvändare kan du lägga till mappar i utforskarträdet och anpassa det.
 
-Läs mer om Campaign Explorer och navigeringshierarkin [i det här avsnittet](../../platform/using/adobe-campaign-explorer.md#about-navigation-hierarchy).
+Läs mer om Campaign-användargränssnittet i [Adobe Campaign v8-dokumentationen (konsolen)](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/new/campaign-ui){target=_blank}.
 
-De typer av mappar som används av navigeringslistan beskrivs i ett XML-dokument som lyder grammatiken i schemat **xtk:navtree**.
+De typer av mappar som används av navigeringslistan beskrivs i ett XML-dokument som lyder grammatiken i **xtk:navtree** -schemat.
 
 XML-dokumentet är strukturerat på följande sätt:
 
@@ -50,7 +50,7 @@ Deklarationen av filtyper är strukturerad i dokumentet med följande element: *
 
 ## Globala kommandon {#global-commands}
 
-Med ett globalt kommando kan du starta ett funktionsmakro. Den här åtgärden kan vara ett indataformulär eller ett SOAP.
+Med ett globalt kommando kan du starta ett funktionsmakro. Den här åtgärden kan vara ett inmatningsformulär eller ett SOAP-samtal.
 
 Globala kommandon är tillgängliga från huvudmenyn **[!UICONTROL Tools]**.
 
@@ -82,7 +82,7 @@ Beskrivningen av ett globalt kommando anges i elementet **`<command>`** med föl
 * **name**: kommandots interna namn: namnet måste anges och vara unikt
 * **label**: kommandots etikett.
 * **desc**: description visible from the status bar of the main screen.
-* **form**: formulär som ska startas: det värde som ska anges är identifieringsnyckeln för indataformuläret (t.ex. &quot;cus:mottagare&quot;)
+* **form**: formulär som ska startas: det värde som ska anges är identifieringsnyckeln för indataformuläret (t.ex. &quot;cus:recipient&quot;)
 * **rights**: lista med namngivna rättigheter (avgränsade med kommatecken) som tillåter åtkomst till det här kommandot. Listan över tillgängliga rättigheter är tillgänglig från mappen **[!UICONTROL Administration > Access management > Named rights]**.
 * **promptLabel**: visar en bekräftelseruta innan kommandot körs.
 
@@ -92,13 +92,13 @@ Kommandona visas i samma ordning som de deklareras i XML-dokumentet.
 
 Med en kommandoavgränsare kan du visa ett avgränsningstecken mellan kommandona. Den identifieras av värdet **-** som finns i kommandoetiketten.
 
-Den valfria förekomsten av taggen **`<soapcall>`** med dess indataparametrar definierar anropet av en SOAP metod som ska köras. Mer information om SOAP API finns i [Kampanjens JSAPI-dokumentation](https://experienceleague.adobe.com/developer/campaign-api/api/index.html?lang=sv).
+Den valfria förekomsten av taggen **`<soapcall>`** med dess indataparametrar definierar anropet av en SOAP-metod som ska köras. Mer information om SOAP API finns i [Kampanjens JSAPI-dokumentation](https://experienceleague.adobe.com/developer/campaign-api/api/index.html?lang=sv).
 
 Formulärkontexten kan uppdateras vid initiering från taggen **`<enter>`**. Mer information om den här taggen finns i dokumentationen om indataformulär.
 
 **Exempel**:
 
-* Deklaration för ett globalt kommando som startar formuläret &quot;xtk:import&quot;:
+* Deklaration för ett globalt kommando som startar xtk:import-formuläret:
 
   ```
   <command desc="Start the data import assistant" form="xtk:import" label="&amp;Data import..." name="import" rights="import,recipientImport"/>
@@ -122,7 +122,7 @@ Formulärkontexten kan uppdateras vid initiering från taggen **`<enter>`**. Mer
   </command>
   ```
 
-* Körning av en SOAP:
+* Körning av en SOAP-metod:
 
   ```
   <command name="cmd3" label="Example 3" promptLabel="Do you really want to execute the command?">
@@ -182,7 +182,7 @@ Om du vill redigera posterna i listan används indataformuläret med samma namn 
 
 Listkolumnernas standardkonfiguration anges via elementet **`<columns>`**. En kolumn deklareras i ett **`<node>`**-element som innehåller attributet **Path** med fältet som ska refereras i schemat som dess värde.
 
-**Exempel**: deklaration av en mapptyp i schemat nms:mottagare.
+**Exempel**: deklaration av en mapptyp i nms:recipient-schemat.
 
 ```
 <model label="Profiles and targets" name="nmsProfiles">
@@ -225,7 +225,7 @@ Filtrering och sortering kan användas när listan läses in:
 
 ### Kortkommandon {#shortcut-commands}
 
-Med ett kortkommando kan du starta en åtgärd när du markerar listan. Åtgärden kan vara ett indataformulär eller ett SOAP.
+Med ett kortkommando kan du starta en åtgärd när du markerar listan. Åtgärden kan vara ett inmatningsformulär eller ett SOAP-samtal.
 
 Kommandon är tillgängliga på menyn **[!UICONTROL Action]** i listan eller på den associerade menyknappen.
 
@@ -251,7 +251,7 @@ Beskrivningen av ett kommando anges för elementet **`<command>`** med följande
 * **namn**: Kommandots interna namn: namnet måste anges och vara unikt.
 * **label**: kommandots etikett.
 * **desc**: description visible from the status bar of the main screen.
-* **form**: formulär som ska startas: det värde som ska anges är identifieringsnyckeln för indataformuläret (t.ex. &quot;cus:mottagare&quot;).
+* **form**: formulär som ska startas: det värde som ska anges är identifieringsnyckeln för indataformuläret (t.ex. &quot;cus:recipient&quot;).
 * **rights**: lista med namngivna rättigheter (avgränsade med kommatecken) som tillåter åtkomst till det här kommandot. Listan över tillgängliga rättigheter är tillgänglig från mappen **[!UICONTROL Administration > Access management > Named rights]**.
 * **promptLabel**: visar en bekräftelseruta innan kommandot körs
 * **monoSelection**: tvingar enmarkering (flera markeringar som standard).
@@ -265,7 +265,7 @@ Kommandona visas i samma ordning som de deklareras i XML-dokumentet.
 
 Med en kommandoavgränsare kan du visa ett avgränsningstecken mellan kommandona. Den identifieras av värdet **-** som finns i kommandoetiketten.
 
-Den valfria förekomsten av taggen **`<soapcall>`** med dess indataparametrar definierar anropet av en SOAP metod som ska köras. Mer information om SOAP API:er finns i [Kampanjens JSAPI-dokumentation](https://experienceleague.adobe.com/developer/campaign-api/api/index.html?lang=sv).
+Den valfria förekomsten av taggen **`<soapcall>`** med dess indataparametrar definierar anropet av en SOAP-metod som ska köras. Mer information om SOAP API:er finns i [Kampanjens JSAPI-dokumentation](https://experienceleague.adobe.com/developer/campaign-api/api/index.html?lang=sv).
 
 Formulärkontexten kan uppdateras vid initieringen via taggen **`<enter>`**. Mer information om den här taggen finns i dokumentationen till indataformuläret.
 

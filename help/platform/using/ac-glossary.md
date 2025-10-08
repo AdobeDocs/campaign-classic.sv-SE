@@ -6,10 +6,10 @@ feature: Overview
 role: User, Data Architect
 level: Beginner
 exl-id: 81f207a0-bb72-450b-abe4-0b229b6b1f3a
-source-git-commit: f469689f9e8a4d805fb95a1ae120ccd35aba3731
+source-git-commit: d56038fc8baf766667d89bb73747c20ec041124c
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '6002'
+ht-degree: 1%
 
 ---
 
@@ -345,14 +345,16 @@ Läs mer om [Anrikningsaktivitet](../../workflow/using/enrichment.md).
 
 En uppräkning är en datatyp som definieras i scheman eller på plattformsnivå som definierar giltiga indatavärden för ett fält. Uppräkningar visas i användargränssnittet och i frågebyggare som en lista.
 
-Läs mer om [Uppräkningar](../../platform/using/managing-enumerations.md).
+Läs mer om hur du **arbetar med uppräkningar** i [Adobe Campaign v8-dokumentationen (konsolen)](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/config/settings/enumerations){target=_blank}.
 +++
 
 +++**Utforskarvy**
 
 Utforskarvyn är en hierarkisk vy över de mappar som innehåller artefakter och data från Adobe Campaign. Observera att mappsystemet i Adobe Campaign inte fungerar som en vanlig förhandsvisning, eftersom varje mapp innehåller data av en viss typ, till exempel Leveranser, Arbetsflöden eller Erbjudanden.
 
-Läs mer om [Utforskarvyn](../../platform/using/adobe-campaign-explorer.md).
+
+Läs mer om Campaign-användargränssnittet i [Adobe Campaign v8-dokumentationen (konsolen)](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/new/campaign-ui){target=_blank}.
+
 +++
 
 +++**Externa konton**
@@ -398,14 +400,15 @@ Läs mer om [Filtreringsdimension](../../workflow/using/building-a-workflow.md#t
 
 En mapp är ett objekt i Utforskaren som innehåller databasposter av en viss datatyp. Undantaget är den allmänna mapptypen som används som ett organiseringselement och som inte innehåller några data, utan bara andra mappar.
 
-Läs mer om [Mappar](../../platform/using/adobe-campaign-explorer.md).
+Läs mer om Campaign-användargränssnittet i [Adobe Campaign v8-dokumentationen (konsolen)](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/new/campaign-ui){target=_blank}.
+
 +++
 
 +++**Mappvy**
 
 Mappvyn är en speciell mapptyp i Utforskaren som används för att visa alla poster av en vald datatyp, oavsett vilken mapp den tillhör. Mappvyer används som administrationsverktyg för att hantera partitionerade data eller data som distribueras mellan många mappar.
 
-Läs mer om [Mappvy](../../platform/using/adobe-campaign-explorer.md).
+Läs mer om Campaign-användargränssnittet i [Adobe Campaign v8-dokumentationen (konsolen)](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/new/campaign-ui){target=_blank}.
 +++
 
 +++**Forms**
@@ -558,7 +561,8 @@ Learn more about [Navigation Bar](../../platform/using/adobe-campaign-workspace.
 
 Navigeringsträdet är huvudnavigeringen i Utforskaren i Adobe Campaign. Navigeringsträdet fungerar som en filläsare (t.ex. Utforskaren). Mappar kan innehålla undermappar. Om du väljer en nod visas vyn som motsvarar noden. Den vy som visas är en lista som är associerad med ett schema och ett inmatningsformulär för att redigera den markerade raden. Du kan anpassa navigeringsträdet och ange behörigheter för mappar.
 
-Läs mer om [Navigeringsträd](../../platform/using/adobe-campaign-explorer.md#about-navigation-hierarch).
+Läs mer om Campaign-användargränssnittet i [Adobe Campaign v8-dokumentationen (konsolen)](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/new/campaign-ui){target=_blank}.
+
 +++
 
 +++**Mål**
@@ -667,7 +671,7 @@ Läs mer om [Erbjudandeerbjudanden](../../interaction/using/creating-offer-space
 
 *Kontext: Kampanjinteraktion*
 
-En offertrepresentation är information som används av kanalen för att visa erbjudandet. Erbjudanderepresentationen kan utformas med hjälp av återgivningsfunktionen i det utrymme som erbjudandet avser eller anges direkt i gränssnittet (t.ex. i blocket HTML). Ett erbjudande kan representeras av ett space.
+En offertrepresentation är information som används av kanalen för att visa erbjudandet. Erbjudanderepresentationen kan skapas med hjälp av återgivningsfunktionen i det utrymme som erbjudandet avser eller anges direkt i gränssnittet (t.ex. i HTML-blocket). Ett erbjudande kan representeras av ett space.
 
 Läs mer om [Interaktion](../../interaction/using/interaction-and-offer-management.md).
 +++
@@ -754,7 +758,7 @@ Läs mer om [Palett](../../workflow/using/building-a-workflow.md#adding-and-link
 
 +++**Prestandaövervakning**
 
-Information om prestandaövervakning visas på fliken Övervakning. Den visar mätvärden för det underliggande systemet, t.ex. minnes- och processoranvändning, statistik för SMTP-servrar, serverprocesser och annan relevant information.
+Information om prestandaövervakning visas på fliken Övervakning. Här visas mätvärden för det underliggande systemet, t.ex. minnes- och CPU-användning, statistik för SMTP-servrar, serverprocesser och annan relevant information.
 
 Läs mer om [Prestandaövervakning](../../production/using/monitoring-processes.md).
 +++
@@ -909,7 +913,7 @@ Läs mer om [Tjänster](../../delivery/using/about-services-and-subscriptions.md
 
 På Kontrollpanelen kan du interagera med alla SFTP-servrar som är anslutna till Campaign-instanser som du har tillgång till. Med kontrollpanelen kan du utföra åtgärder på dina SFTP-servrar, till exempel övervaka lagringskapaciteten, hantera IP-adresser, tillåta listor och hantera offentliga SSH-nycklar.
 
-Läs mer om [SFTP-hantering](https://experienceleague.adobe.com/docs/control-panel/using/sftp-management/about-sftp-management.html?lang=sv-SE).
+Läs mer om [SFTP-hantering](https://experienceleague.adobe.com/docs/control-panel/using/sftp-management/about-sftp-management.html).
 +++
 
 +++**Prenumerationstjänstaktivitet**

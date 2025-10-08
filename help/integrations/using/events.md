@@ -8,9 +8,9 @@ audience: integrations
 content-type: reference
 level: Intermediate, Experienced
 exl-id: 13717b3b-d34a-40bc-9c9e-dcf578fc516e
-source-git-commit: 2bfcec5eaa1145cfb88adfa9c8b2f72ee3cd9469
+source-git-commit: d56038fc8baf766667d89bb73747c20ec041124c
 workflow-type: tm+mt
-source-wordcount: '1206'
+source-wordcount: '1200'
 ht-degree: 0%
 
 ---
@@ -220,7 +220,7 @@ Händelserna kan visas med ett enkelt formulär baserat på händelseschemat.
 
 >[!NOTE]
 >
->Pipeline Event-noden är inte inbyggd och måste läggas till, liksom det relaterade formuläret måste skapas i Campaign. De här åtgärderna är begränsade till expertanvändare. Mer information finns i följande avsnitt: [Navigeringshierarki](../../platform/using/adobe-campaign-explorer.md#about-navigation-hierarchy). och [Redigerar formulär](../../configuration/using/editing-forms.md).
+>Pipeline Event-noden är inte inbyggd och måste läggas till, liksom det relaterade formuläret måste skapas i Campaign. De här åtgärderna är begränsade till expertanvändare. Mer information finns i [Redigera formulär](../../configuration/using/editing-forms.md).
 
 ![](assets/triggers_7.png)
 
