@@ -8,9 +8,9 @@ audience: platform
 content-type: reference
 topic-tags: importing-and-exporting-data
 exl-id: 05909ea6-2c93-42ff-9142-1dd14fa6fdec
-source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
+source-git-commit: 28279c6ec0eab7f914cf6107cd1ec1cebd05113d
 workflow-type: tm+mt
-source-wordcount: '2973'
+source-wordcount: '2983'
 ht-degree: 0%
 
 ---
@@ -87,7 +87,8 @@ Med länken **[!UICONTROL Advanced parameters]** kan du komma åt följande alte
 
    * **[!UICONTROL Do not update enumerations]**
 
-     Välj det här alternativet om du inte vill att listan med uppräknade värden i databasen ska vara upphöjd. Se [Hantera uppräkningar](../../platform/using/managing-enumerations.md).
+     Välj det här alternativet om du inte vill att listan med uppräknade värden i databasen ska vara upphöjd. Läs mer om hur du **arbetar med uppräkningar** i [Adobe Campaign v8-dokumentationen (konsolen)](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/config/settings/enumerations){target=_blank}.
+
 
 * Fliken **[!UICONTROL Variables]**
 
@@ -283,7 +284,7 @@ I nästa steg i importassistenten kan du markera eller skapa den mapp i vilken d
 
 >[!NOTE]
 >
->Det här steget visas endast när du importerar mottagare och när du använder Adobe Campaign standardmottagartabell (**nms:mottagare**).
+>Det här steget visas endast när du importerar mottagare och när du använder Adobe Campaign standardmottagartabell (**nms:recipient**).
 
 * Klicka på **[!UICONTROL Edit]**-länkarna för att markera mappen, listan eller tjänsten som du vill associera eller prenumerera på mottagarna.
 

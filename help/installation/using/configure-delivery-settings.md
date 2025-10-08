@@ -8,10 +8,10 @@ audience: installation
 content-type: reference
 topic-tags: initial-configuration
 exl-id: 2968d8db-2b4b-48e6-a22e-daba5ffe0576
-source-git-commit: 14ba450ebff9bba6a36c0df07d715b7279604222
+source-git-commit: 28279c6ec0eab7f914cf6107cd1ec1cebd05113d
 workflow-type: tm+mt
-source-wordcount: '476'
-ht-degree: 5%
+source-wordcount: '484'
+ht-degree: 4%
 
 ---
 
@@ -51,7 +51,7 @@ I det här fallet anges parametrarna genom att SMTP-servern konfigureras i avsni
 
 ## MTA-underprocesser {#mta-child-processes}
 
-Det går att styra antalet underordnade processer (maxSpareServers som standard 2) för att optimera sändningsprestanda enligt serverns processorkraft och tillgängliga nätverksresurser. Den här konfigurationen görs i avsnittet **`<master>`** i MTA-konfigurationen på varje enskild dator.
+Det går att styra antalet underordnade processer (maxSpareServers som standard 2) för att optimera sändningsprestanda enligt serverns CPU-styrka och tillgängliga nätverksresurser. Den här konfigurationen görs i avsnittet **`<master>`** i MTA-konfigurationen på varje enskild dator.
 
 ```
 <master dataBasePoolPeriodSec="30" dataBaseRetryDelaySec="60" maxSpareServers="2" minSpareServers="0" startSpareServers="0">
@@ -88,7 +88,8 @@ Gör så här:
 
    >[!NOTE]
    >
-   >Uppräkningar beskrivs i [det här dokumentet](../../platform/using/managing-enumerations.md).
+   >Läs mer om hur du **arbetar med uppräkningar** i [Adobe Campaign v8-dokumentationen (konsolen)](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/config/settings/enumerations){target=_blank}.
+
 
    Du kan sedan välja den tillhörighet som ska användas, som visas nedan för typologier:
 

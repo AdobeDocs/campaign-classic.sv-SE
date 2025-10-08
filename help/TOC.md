@@ -6,7 +6,7 @@ title: Användarhandbok för Campaign Classic v7
 user-guide-description: Produktdokumentation för Adobe Campaign Classic v7.
 sub-product: adobe campaign classic
 type: Documentation
-source-git-commit: b4059e43d98643f0f8b5b3f68f03e10b755e8ba3
+source-git-commit: 28279c6ec0eab7f914cf6107cd1ec1cebd05113d
 workflow-type: tm+mt
 source-wordcount: '2559'
 ht-degree: 99%
@@ -39,16 +39,16 @@ ht-degree: 99%
    + [Kampanjkopplingar](platform/using/about-connectors.md)
    + Vanliga frågor och svar {#faq}
       + [De vanligaste frågorna](platform/using/common-questions.md)
-         + [Globala begrepp](platform/using/faq-key-concepts.md)
-         + [Builduppgradering](platform/using/faq-build-upgrade.md)
-         + [Sekretess](platform/using/privacy-faq.md)
-         + [Målgrupper](platform/using/faq-audiences.md)
-         + [Utforma meddelanden](platform/using/faq-designing.md)
-         + [Skicka meddelanden](platform/using/faq-messages.md)
-         + [Arbetsflöden](platform/using/faq-workflows.md)
-         + [Konfiguration](platform/using/faq-campaign-config.md)
-         + [Rapporter](platform/using/faq-reporting.md)
-         + [Utveckling](platform/using/faq-developers.md)
+      + [Globala begrepp](platform/using/faq-key-concepts.md)
+      + [Builduppgradering](platform/using/faq-build-upgrade.md)
+      + [Sekretess](platform/using/privacy-faq.md)
+      + [Målgrupper](platform/using/faq-audiences.md)
+      + [Utforma meddelanden](platform/using/faq-designing.md)
+      + [Skicka meddelanden](platform/using/faq-messages.md)
+      + [Arbetsflöden](platform/using/faq-workflows.md)
+      + [Konfiguration](platform/using/faq-campaign-config.md)
+      + [Rapporter](platform/using/faq-reporting.md)
+      + [Utveckling](platform/using/faq-developers.md)
    + [Ordlista](platform/using/ac-glossary.md)
    + Sekretess {#privacy}
       + [Sekretess och medgivande](platform/using/privacy-and-recommendations.md)
@@ -234,7 +234,7 @@ ht-degree: 99%
       + [Automatisera via arbetsflöden](delivery/using/automating-via-workflows.md)
 + [Orkestrera marknadsföringskampanjer](campaign/using/about-marketing-campaigns.md)
 + Orkestrera marknadsföringskampanjer {#orchestrating-campaigns}
-   + [Om kampanjoptimering &#x200B;](campaign-opt/using/about-campaign-optimization.md)
+   + [Om kampanjoptimering ](campaign-opt/using/about-campaign-optimization.md)
    + Om marknadsföringskampanjer {#about-marketing-campaigns}
       + [Utforma marknadsföringskampanjer](campaign/using/designing-marketing-campaigns.md)
       + [Åtkomst till marknadsföringskampanjer](campaign/using/accessing-marketing-campaigns.md)
@@ -310,7 +310,7 @@ ht-degree: 99%
    + [Designa rapporter med kuber](reporting/using/ac-cubes.md)
 + Designa webbinnehåll {#designing-content}
    + Webbapplikationer {#web-applications}
-      + [Kom igång med webbapplikationer &#x200B;](web/using/about-web-applications.md)
+      + [Kom igång med webbapplikationer ](web/using/about-web-applications.md)
       + [Skapa en ny webbapplikation](web/using/creating-a-new-web-application.md)
       + [Designa en webbapplikation](web/using/designing-a-web-application.md)
       + [Användningsfall: skapa översikter](web/using/use-cases-creating-overviews.md)
@@ -376,7 +376,7 @@ ht-degree: 99%
    + Adobe Experience Manager {#adobe-experience-manager}
       + [Arbeta med [!DNL Adobe Experience Manager]](integrations/using/about-adobe-experience-manager.md)
       + [Konfigurera integreringen](integrations/using/configuring-the-integration.md)
-      + [Skapa ett nyhetsbrev om [!DNL Experience Manager] &#x200B;](integrations/using/creating-an-experience-manager-newsletter.md)
+      + [Skapa ett nyhetsbrev om [!DNL Experience Manager] ](integrations/using/creating-an-experience-manager-newsletter.md)
    + Adobe Target {#adobe-target}
       + [Arbeta med [!DNL Adobe Target]](integrations/using/integrating-with-adobe-target.md)
       + [Konfigurera integreringen med [!DNL Adobe Target]](integrations/using/configuring-the-integration-with-adobe-target.md)
@@ -845,6 +845,6 @@ ht-degree: 99%
       + [Uppdatering av spårade URL:er](technotes/using/tracked-urls.md)
    + Migrering till Adobe Managed Services{#dc-migration}
       + [Migrering till Public Cloud](technotes/using/dc-migration.md)
-      + [Vanliga frågor och svar &#x200B;](technotes/using/dc-migration-faq.md)
+      + [Vanliga frågor och svar ](technotes/using/dc-migration-faq.md)
    + [GCM-baserade funktioner](technotes/using/gcm-functions.md)
 + [Kontrollpanelen i Campaign](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=sv)

@@ -6,9 +6,9 @@ badge-v8: label="Gäller även för v8" type="Positive" tooltip="Gäller även C
 feature: Monitoring
 role: User, Developer
 exl-id: ed88e1d6-c0d5-4a85-9f3e-be670f4bcc10
-source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
+source-git-commit: 28279c6ec0eab7f914cf6107cd1ec1cebd05113d
 workflow-type: tm+mt
-source-wordcount: '583'
+source-wordcount: '594'
 ht-degree: 10%
 
 ---
@@ -72,4 +72,4 @@ Spårning av meddelanden är aktiverat som standard. Följ stegen nedan för att
    * **[!UICONTROL Opt-out]** : betraktar den här URL:en som en avanmälnings- eller avanmälnings-URL.
    * **[!UICONTROL Mirror page]** : anser att den här URL:en är en URL för en spegelsida.
 
-1. Du kan dessutom välja en kategori för varje spårad URL i den nedrullningsbara listan i kolumnen **[!UICONTROL Category]**. Dessa kategorier kan visas som rapporter, till exempel i **[!UICONTROL URLs and click streams]** (se [det här avsnittet](../../reporting/using/reports-on-deliveries.md#urls-and-click-streams)). Kategorierna definieras i en specifik uppräkning: **[!UICONTROL urlCategory]** (se [Hantera uppräkningar](../../platform/using/managing-enumerations.md)).
+1. Du kan dessutom välja en kategori för varje spårad URL i den nedrullningsbara listan i kolumnen **[!UICONTROL Category]**. Dessa kategorier kan visas som rapporter, till exempel i **[!UICONTROL URLs and click streams]** (se [det här avsnittet](../../reporting/using/reports-on-deliveries.md#urls-and-click-streams)). Kategorier definieras i en viss uppräkning. Läs mer om hur du **arbetar med uppräkningar** i [Adobe Campaign v8-dokumentationen (konsolen)](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/config/settings/enumerations){target=_blank}.
