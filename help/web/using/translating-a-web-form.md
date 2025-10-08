@@ -169,7 +169,7 @@ om språket är den första eller enda parametern i URL:en. Till exempel: **http
 &lang=xx
 ```
 
-om det finns andra parametrar före språket i URL:en. Till exempel: **https://myserver/webApp/APP34?status=1&amp;lang=en**
+om det finns andra parametrar före språket i URL:en. Till exempel: **https://myserver/webApp/APP34?status=1&lang=en**
 
 De översättningsspråk och ordlistor som är tillgängliga som standard visas nedan.
 
@@ -430,7 +430,7 @@ Du kan lägga till **?lang=es** eller **?lang=de** om du vill visa den på spans
 >[!NOTE]
 >
 >Om andra parametrar redan används för det här webbprogrammet lägger du till **&amp;lang=**.\
->Till exempel: **https://myserver/webApp/APP34?status=1&amp;lang=en**
+>Till exempel: **https://myserver/webApp/APP34?status=1&lang=en**
 
 ## Avancerad översättningskonfiguration {#advanced-translation-configuration}
 
