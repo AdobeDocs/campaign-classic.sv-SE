@@ -18,9 +18,9 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->Dessa procedurer gäller bara för operatorer som ansluter till Campaign med den **gamla inbyggda autentiseringen**. Från och med Campaign Classic v7.3.1 bör alla operatorer använda [Adobe Identity Management System (IMS)](https://helpx.adobe.com/enterprise/using/identity.html){target="_blank"} för att ansluta till Campaign. [Läs mer](../../technotes/using/migrate-users-to-ims.md)
+>Dessa procedurer gäller bara för operatorer som ansluter till Campaign med den **gamla inbyggda autentiseringen**. Från och med Campaign Classic v7.3.1 bör alla operatorer använda [Adobe Identity Management System (IMS)](https://helpx.adobe.com/se/enterprise/using/identity.html){target="_blank"} för att ansluta till Campaign. [Läs mer](../../technotes/using/migrate-users-to-ims.md)
 >
->När du ansluter till Campaign med din Adobe ID gäller inte längre följande avsnitt. Lär dig hur du konfigurerar behörigheter med Adobe IMS i [dokumentationen för Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/admin/permissions/gs-permissions.html){target="_blank"}.
+>När du ansluter till Campaign med din Adobe ID gäller inte längre följande avsnitt. Lär dig hur du konfigurerar behörigheter med Adobe IMS i [dokumentationen för Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/admin/permissions/gs-permissions.html?lang=sv-SE){target="_blank"}.
 
 Operatorgrupper skapas via noden **[!UICONTROL Administration > Access management > Operator groups]** i trädet.
 
