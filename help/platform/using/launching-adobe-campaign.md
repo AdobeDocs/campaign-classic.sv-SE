@@ -34,11 +34,11 @@ I klientkonsolens anslutningsfönster kan du välja eller konfigurera befintliga
 
 ### Kommunicera med din Adobe ID
 
-Kampanjanvändare ansluter till Adobe Campaign-konsolen med sin Adobe ID via Adobe Identity Management System (IMS). De kan använda samma ID för alla Adobe-lösningar. Anslutningen sparas när du använder Adobe Campaign med andra lösningar. Läs mer om Adobe IMS [på den här sidan](https://helpx.adobe.com/enterprise/using/identity.html).
+Kampanjanvändare ansluter till Adobe Campaign-konsolen med sin Adobe ID via Adobe Identity Management System (IMS). De kan använda samma ID för alla Adobe-lösningar. Anslutningen sparas när du använder Adobe Campaign med andra lösningar. Läs mer om Adobe IMS [på den här sidan](https://helpx.adobe.com/se/enterprise/using/identity.html).
 
 Information om hur du konfigurerar Campaign Classic v7-anslutningen med Adobe Identity Management Service (IMS) finns på [den här sidan](../../integrations/using/about-adobe-id.md).
 
-Lär dig hur du ansluter till Campaign med din Adobe ID i [Campaign v8-dokumentationen (konsolen)](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/new/connect){target=_blank} när konfigurationen är klar.
+Lär dig hur du ansluter till Campaign med din Adobe ID i [Campaign v8-dokumentationen (konsolen)](https://experienceleague.adobe.com/sv/docs/campaign/campaign-v8/new/connect){target=_blank} när konfigurationen är klar.
 
 
 ### Anslut med en inloggning/ett lösenord
@@ -63,7 +63,7 @@ Du kommer åt inställningarna för serveranslutningen via länken ovanför inda
 
 ![](assets/s_ncs_user_connections_management.png)
 
-Lär dig hur du konfigurerar anslutningar i [dokumentationen för Campaign v8 (konsolen)](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/new/connect#create-your-connection){target=_blank}.
+Lär dig hur du konfigurerar anslutningar i [dokumentationen för Campaign v8 (konsolen)](https://experienceleague.adobe.com/sv/docs/campaign/campaign-v8/new/connect#create-your-connection){target=_blank}.
 
 ## Operatörer och behörigheter {#operators-and-permissions}
 

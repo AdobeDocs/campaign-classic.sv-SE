@@ -23,7 +23,7 @@ Utforskaren i Adobe Campaign är tillgänglig via verktygsfältsikonen. Du får 
 
 >[!NOTE]
 >
->Mer information om Adobe Campaign Explorer finns på följande sidor i dokumentationen för Campaign v8: [om du vill veta mer om användargränssnittet](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/new/campaign-ui#ac-explorer-ui){target=_blank}, dess [inställningar](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/config/configuration/ui-settings){target=_blank} eller [om hur du hanterar mappar och vyer i Utforskaren](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/config/configuration/folders-and-views){target=_blank}.
+>Mer information om Adobe Campaign Explorer finns på följande sidor i dokumentationen för Campaign v8: [om du vill veta mer om användargränssnittet](https://experienceleague.adobe.com/sv/docs/campaign/campaign-v8/new/campaign-ui#ac-explorer-ui){target=_blank}, dess [inställningar](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/config/configuration/ui-settings){target=_blank} eller [om hur du hanterar mappar och vyer i Utforskaren](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/config/configuration/folders-and-views){target=_blank}.
 
 
 <!--
