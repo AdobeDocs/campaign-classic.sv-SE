@@ -1,20 +1,21 @@
 ---
 product: campaign
 title: Hjälp- och supportalternativ för Campaign Classic
-description: Behöver du stöd för Campaign Classic? Du är på rätt ställe!
+description: Behöver du support för Campaign Classic? Du är på rätt ställe!
 feature: Troubleshooting
 hidefromtoc: true
+hide: true
 exl-id: 3a84236f-89e5-4b8b-9a98-afdc006fd6e0
-source-git-commit: fd5e4bbc87a48f029a09b14ab1d927b9afe4ac52
+source-git-commit: 11c81e4f04b978381d3803e2b60e23ed791eee44
 workflow-type: tm+mt
-source-wordcount: '657'
-ht-degree: 60%
+source-wordcount: '653'
+ht-degree: 62%
 
 ---
 
 # Hjälp- och supportalternativ för Campaign Classic {#help-support-options}
 
-Behöver du stöd för Campaign Classic? Du är på rätt ställe!
+Behöver du support för Campaign Classic? Du är på rätt ställe!
 
 Få support via våra vanliga frågor och svar, god praxis, onlineresurser och supportportalen. Du kan också gå med i Campaign-communityn, fråga experterna eller logga ett problem.
 
@@ -68,7 +69,7 @@ Hur uppgraderar jag till en ny version? hur man övervakar arbetsflödeskörning
         <li><a href="platform/using/import-export-workflows.md">Importera data med arbetsflöden</a></li>
         <li><a href="delivery/using/steps-sending-the-delivery.md">Skicka meddelanden i flera påfyllnader</a></li>
         <li><a href="delivery/using/defining-the-email-content.md">Designa e-postinnehåll</a></li>
-        <li><a href="delivery/using/delivery-best-practices.md">God praxis för leverans</a></li>
+        <li><a href="delivery/using/delivery-best-practices.md">Bästa praxis för leverans</a></li>
         </ul>
     </td>
     <td valign="top">
@@ -93,7 +94,7 @@ Hur uppgraderar jag till en ny version? hur man övervakar arbetsflödeskörning
 
 ### Vad är Kontrollpanelen?
 
-Med Campaign Control Panel kan ni effektivisera arbetet som produktadministratör, eftersom ni kan hantera inställningar och spåra Campaign Classic för var och en av instanserna.
+Med Campaign Control Panel kan ni effektivisera arbetet som produktadministratör för Campaign Classic genom att hantera inställningar och spåra användningen för var och en av instanserna.
 [Klicka här](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/key-features.html?lang=sv) för mer information.
 
 >[!NOTE]
@@ -112,7 +113,7 @@ Kontrollpanelen är tillgänglig direkt från Adobe Experience Cloud. Den är en
 
 ### SFTP-hantering
 
-På Kontrollpanelen kan du interagera med alla SFTP-servrar som är anslutna till Campaign-instanser som du har tillgång till. Du kan övervaka deras lagringskapacitet, hantera IP-adresser på tillåtelselista och offentliga SSH-nycklar. [Klicka här](https://experienceleague.adobe.com/docs/control-panel/using/sftp-management/about-sftp-management.html?lang=sv-SE) för mer information.
+På Kontrollpanelen kan du interagera med alla SFTP-servrar som är anslutna till Campaign-instanser som du har tillgång till. Du kan övervaka deras lagringskapacitet, hantera IP-adresser på tillåtelselista och offentliga SSH-nycklar. [Klicka här](https://experienceleague.adobe.com/docs/control-panel/using/sftp-management/about-sftp-management.html) för mer information.
 
 ### Underdomäner och certifikat
 
@@ -123,17 +124,17 @@ Du kan övervaka dina underdomäner och deras certifikat. Läs mer på dessa sid
 
 ### Instansinställningar
 
-Lär dig hur du hanterar Campaign Classicens instansinställningar på Kontrollpanelen. Läs mer på dessa sidor:
-* [Lägg till IP-adresser på tillåtelselista](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/ip-allow-listing-instance-access.html?lang=sv-SE) för att komma åt dina Campaign-instanser
+Lär dig hur du hanterar inställningarna för dina Campaign Classic-instanser på Kontrollpanelen. Läs mer på dessa sidor:
+* [Lägg till IP-adresser på tillåtelselista](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/ip-allow-listing-instance-access.html) för att komma åt dina Campaign-instanser
 * [Hantera URL-behörigheter](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/url-permissions.html?lang=sv)
-* [Åtkomstinstansinformation](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/instance-details.html?lang=sv-SE)
+* [Åtkomstinstansinformation](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/instance-details.html)
 * [Hantera GPG-nycklar för datakryptering](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/gpg-keys-management.html?lang=sv)
 
 ## Begär hjälp {#support}
 
 <img src="platform/using/assets/do-not-localize/icon-support.svg" width="60px">
 
-Det nya biljettsystemet har startats via [Adobe Admin Console](https://adminconsole.adobe.com/overview){_blank}. Det nya systemet kräver nya individuella konton för varje användare, med rätt behörigheter. Begär åtkomst via Experience League om du inte kan logga in med ditt Adobe ID, så registrerar kundtjänstteamet dig så snart som möjligt. [Läs mer](https://helpx.adobe.com/se/enterprise/using/support-for-experience-cloud.html)
+Det nya biljettsystemet har startats via [Adobe Admin Console](https://adminconsole.adobe.com/overview){_blank}. I det nya systemet krävs nya individuella konton för varje användare, med rätt behörigheter. Om du upptäcker att du inte kan logga in med ditt Adobe-ID begär du åtkomst via Experience League, så registrerar kundtjänstteamet dig så snart som möjligt. [Läs mer](https://helpx.adobe.com/se/enterprise/using/support-for-experience-cloud.html)
 
 ### Fråga experterna!
 
@@ -141,10 +142,10 @@ Gå med i Campaign Classic-communityn: sök efter svar i befintliga frågor elle
 
 ### Access Campaign Download Center
 
-Som kampanjadministratör går du till [den här sidan](https://experience.adobe.com/#/downloads/content/software-distributicampaign.html) för att få åtkomst till Experience Cloud Software Distribution.
+Som kampanjadministratör går du till [den här sidan](https://experience.adobe.com/#/downloads/content/software-distributicampaign.html) för att få åtkomst till Experience Cloud programdistribution.
 
 ### Skapa en biljett eller starta en chatt
 
 Om du skapar ett ärende kan du kontakta Adobe kundsupportteam om problem som du har med dina Adobe-produkter. Adobe Admin Console hjälper dig att lösa eller felsöka problemen genom att chatta med Adobe kundsupport.
 
-Om du vill logga ett problem eller starta en chattsession i det nya systemet ansluter du till [Adobe Admin Console](https://adminconsole.adobe.com/overview){_blank}. Följ den detaljerade proceduren som beskrivs i [den här sidan](https://helpx.adobe.com/se/enterprise/using/support-for-experience-cloud.html){_blank}.
+Om du vill logga ett problem eller starta en chattsession i det nya systemet ansluter du till [Adobe Admin Console](https://adminconsole.adobe.com/overview){_blank}. Följ den detaljerade proceduren som beskrivs på [den här sidan](https://helpx.adobe.com/se/enterprise/using/support-for-experience-cloud.html){_blank}.

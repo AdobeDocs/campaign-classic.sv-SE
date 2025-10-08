@@ -7,8 +7,10 @@ badge-v8: label="Gäller även för v8" type="Positive" tooltip="Gäller även C
 audience: platform
 content-type: reference
 topic-tags: creating-queries
+hide: true
+hidefromtoc: true
 exl-id: b62e23e5-f1b7-44c4-82d9-95c6b3240352
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: 11c81e4f04b978381d3803e2b60e23ed791eee44
 workflow-type: tm+mt
 source-wordcount: '3304'
 ht-degree: 34%
@@ -74,7 +76,7 @@ Nedan finns en lista över tillgängliga operatorer:
   <tr> 
    <td> <span class="uicontrol">Börjar inte med </span> <br /> </td> 
    <td> Returnerar resultat som inte börjar med det angivna värdet <br /> </td> 
-   <td> <strong>Kontonumret (@account) börjar inte med <br /></strong>. </td> 
+   <td> <strong>Kontonumret (@account) börjar inte med </strong><br />. </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">Contains</span> <br /> </td> 
