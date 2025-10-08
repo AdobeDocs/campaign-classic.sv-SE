@@ -7,7 +7,7 @@ feature: Access Management, Permissions
 role: User, Admin
 level: Beginner
 exl-id: 580282ce-ee30-422a-8724-9c328637cc39
-source-git-commit: 34f875f583dd81c2229b66f3344f23965532e802
+source-git-commit: a5bbd2e6c102a8afa4cd5931b77b0c83705a7bfa
 workflow-type: tm+mt
 source-wordcount: '1235'
 ht-degree: 2%
@@ -18,15 +18,15 @@ ht-degree: 2%
 
 >[!CAUTION]
 >
->Dessa procedurer gäller endast för operatorer som ansluter till Campaign med den gamla inbyggda autentiseringen. Från och med Campaign Classic v7.3.1 bör alla operatorer använda [Adobe Identity Management System (IMS)](https://helpx.adobe.com/se/enterprise/using/identity.html){target="_blank"} för att ansluta till Campaign. [Läs mer](../../technotes/using/migrate-users-to-ims.md)
+>Dessa procedurer gäller bara för operatorer som ansluter till Campaign med den **gamla inbyggda autentiseringen**. Från och med Campaign Classic v7.3.1 bör alla operatorer använda [Adobe Identity Management System (IMS)](https://helpx.adobe.com/enterprise/using/identity.html){target="_blank"} för att ansluta till Campaign. [Läs mer](../../technotes/using/migrate-users-to-ims.md)
 >
->När du ansluter till Campaign med din Adobe ID gäller inte längre följande avsnitt. Lär dig hur du konfigurerar behörigheter med Adobe IMS i [dokumentationen för Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/admin/permissions/gs-permissions.html?lang=sv-SE){target="_blank"}.
+>När du ansluter till Campaign med din Adobe ID gäller inte längre följande avsnitt. Lär dig hur du konfigurerar behörigheter med Adobe IMS i [dokumentationen för Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/admin/permissions/gs-permissions.html){target="_blank"}.
 
 ## Kom igång med Campaign-operatörer {#about-operators}
 
 >[!NOTE]
 >
->Dessa procedurer gäller endast för operatorer som ansluter till Campaign med inbyggd autentisering. Information om Adobe IMS-autentisering finns i [den här dokumentationen](https://helpx.adobe.com/se/enterprise/using/manage-users-individually.html#_blank).
+>Dessa procedurer gäller endast för operatorer som ansluter till Campaign med inbyggd autentisering. Information om Adobe IMS-autentisering finns i [den här dokumentationen](https://helpx.adobe.com/enterprise/using/manage-users-individually.html#_blank).
 
 En operator är en Adobe Campaign-användare som har behörighet att logga in och utföra åtgärder.
 
