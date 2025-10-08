@@ -8,7 +8,7 @@ audience: platform
 content-type: reference
 topic-tags: importing-and-exporting-data
 exl-id: 94fc473a-dc49-41e8-b572-51c162b09996
-source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
+source-git-commit: 9df46ed923831ffdfb28acddfbc371cecafb251c
 workflow-type: tm+mt
 source-wordcount: '947'
 ht-degree: 1%
@@ -21,7 +21,7 @@ ht-degree: 1%
 
 Med exportjobben kan du komma åt och extrahera data från databasen: kontakter, klienter, listor, segment osv.
 
-Det kan till exempel vara användbart att använda kampanjspårningsdata (historik för spårning osv.) i ett kalkylblad. Utdata kan vara i formaten txt, CSV, TAB eller XML.
+Det kan till exempel vara användbart att använda kampanjspårningsdata (historik för spårning, osv.) i ett kalkylblad. Utdata kan vara i formaten txt, CSV, TAB eller XML.
 
 Med exportassistenten kan du konfigurera och exportera, definiera alternativ och starta körningen. Det är en serie skärmar vars innehåll är beroende av typen av export (enkel eller flera) och operatörens rättigheter.
 
@@ -85,7 +85,7 @@ Markera de fält som ska exporteras. Så här gör du:
 
    ![](assets/s_ncs_user_export_wizard04.png)
 
-1. Klicka på knappen **[!UICONTROL Add]** för att anropa funktioner. Mer information finns i [Lista över funktioner](../../platform/using/defining-filter-conditions.md#list-of-functions).
+1. Klicka på knappen **[!UICONTROL Add]** för att anropa funktioner. Mer information finns i [Lista över funktioner](../../platform/using/about-queries-in-campaign.md).
 
 ## Steg 5 - Sortera kolumner {#step-5---sorting-columns}
 

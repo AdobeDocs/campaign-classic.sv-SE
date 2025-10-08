@@ -5,9 +5,9 @@ description: Redigera innehåll
 badge-v8: label="Gäller även för v8" type="Positive" tooltip="Gäller även Campaign v8"
 feature: Web Apps, Web Forms, Landing Pages, Email Design
 exl-id: 968430d6-b1dd-47f8-8b31-39aaa18bc05c
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: 9df46ed923831ffdfb28acddfbc371cecafb251c
 workflow-type: tm+mt
-source-wordcount: '1227'
+source-wordcount: '1226'
 ht-degree: 0%
 
 ---
@@ -26,7 +26,7 @@ Om du vill lägga till ett synlighetsvillkor markerar du ett block och anger vil
 
 >[!NOTE]
 >
->Avancerad uttrycksredigering visas på [den här sidan](../../platform/using/defining-filter-conditions.md#list-of-functions).
+>Avancerad uttrycksredigering visas på [den här sidan](../../platform/using/about-queries-in-campaign.md).
 
 ![](assets/dce_popup_visibilitycondition.png)
 
@@ -60,7 +60,7 @@ Du kan länka databasfält med indatazon, alternativknapp eller kryssrutetypbloc
 
 Med indatazonen **fält** kan du välja ett databasfält som ska länkas till formulärfältet.
 
-Som standard finns fälten i tabellen **nms:mottagare**.
+Som standard finns fälten i tabellen **nms:recipient**.
 
 ![](assets/dce_field_selection.png)
 
@@ -126,7 +126,7 @@ Anpassningsblock och fält kan bara infogas i textblock.
 
 >[!NOTE]
 >
->För varje typ av länk kan du konfigurera öppningsläget: välj målfönstret i listrutan **Mål**. Det här värdet motsvarar taggen **`<target>`** HTML.
+>För varje typ av länk kan du konfigurera öppningsläget: välj målfönstret i listrutan **Mål**. Det här värdet motsvarar HTML-taggen **`<target>`**.
 >
 >Listan med tillgängliga **mål** är följande:
 >
@@ -232,7 +232,7 @@ Ikonen **Duplicera** duplicerar taggen och dess innehåll.
 
 När du markerar ett block som innehåller en bild får du tillgång till följande egenskaper:
 
-* Med **bildtext** kan du definiera bildtexten som är länkad till bilden (motsvarar attributet **alt** HTML).
+* Med **bildtext** kan du definiera bildtexten som är länkad till bilden (motsvarar HTML-attributet **alt**).
 * Med **Dimensioner** kan du ange bildstorleken i pixlar.
 
   ![](assets/dce_popup_imgsize.png)

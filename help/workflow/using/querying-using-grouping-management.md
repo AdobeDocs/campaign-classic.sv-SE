@@ -6,9 +6,9 @@ feature: Query Editor, Workflows
 hide: true
 hidefromtoc: true
 exl-id: 23bccb48-60ab-46c9-be26-2fa35243d61e
-source-git-commit: 776c664a99721063dce5fa003cf40c81d94f8c78
+source-git-commit: 9df46ed923831ffdfb28acddfbc371cecafb251c
 workflow-type: tm+mt
-source-wordcount: '256'
+source-wordcount: '254'
 ht-degree: 3%
 
 ---
@@ -21,7 +21,7 @@ I det här exemplet vill vi köra en fråga för att hitta alla e-postdomäner s
 
 * Vilken tabell måste markeras?
 
-  mottagartabellen (nms:mottagare)
+  Mottagartabellen (nms:recipient)
 
 * Fält som ska markeras i utdatakolumner?
 
@@ -33,13 +33,13 @@ I det här exemplet vill vi köra en fråga för att hitta alla e-postdomäner s
 
 Så här skapar du det här exemplet:
 
-1. Öppna **[!UICONTROL Generic query editor]** och välj mottagartabellen (**nms:mottagare**).
+1. Öppna **[!UICONTROL Generic query editor]** och välj mottagartabellen (**nms:recipient**).
 
    ![](assets/query_editor_02.png)
 
-1. Markera fälten **[!UICONTROL Email domain]** och **[!UICONTROL Primary key]** i fönstret **[!UICONTROL Data to extract]**. Kör ett antal i fältet **[!UICONTROL Primary key]**.
+1. Markera fälten **[!UICONTROL Data to extract]** och **[!UICONTROL Email domain]** i fönstret **[!UICONTROL Primary key]**. Kör ett antal i fältet **[!UICONTROL Primary key]**.
 
-   Mer information om antalet primärnycklar finns i [det här avsnittet](../../platform/using/defining-filter-conditions.md#building-expressions).
+   Mer information om antalet primärnycklar finns i [det här avsnittet](../../platform/using/about-queries-in-campaign.md).
 
 1. Markera rutan **[!UICONTROL Handle groupings (GROUP BY + HAVING)]**.
 
@@ -52,7 +52,7 @@ Så här skapar du det här exemplet:
 1. I **[!UICONTROL Data filtering]** väljer du **[!UICONTROL Filtering conditions]**. Gå till fönstret **[!UICONTROL Target elements]** och klicka på **[!UICONTROL Next]**.
 1. I fönstret **[!UICONTROL Data grouping]** väljer du **[!UICONTROL Email domain]** genom att klicka på **[!UICONTROL Add]**.
 
-   Det här fönstret för datagruppering visas bara om rutan **[!UICONTROL Handle groupings (GROUP BY + HAVING]**) är markerad.
+   Det här fönstret för datagruppering visas bara om rutan **[!UICONTROL Handle groupings (GROUP BY + HAVING])** är markerad.
 
    ![](assets/query_editor_blocklist_04.png)
 
@@ -62,7 +62,7 @@ Så här skapar du det här exemplet:
 
    ![](assets/query_editor_blocklist_05.png)
 
-1. Klicka på **[!UICONTROL Next]** i fönstret **[!UICONTROL Data formatting]**: ingen formatering behövs här.
+1. Klicka på **[!UICONTROL Data formatting]** i fönstret **[!UICONTROL Next]**: ingen formatering behövs här.
 1. Klicka på **[!UICONTROL Launch data preview]** i förhandsgranskningsfönstret för data: här returneras tre olika e-postdomäner som är riktade över 30 gånger.
 
    ![](assets/query_editor_blocklist_06.png)
