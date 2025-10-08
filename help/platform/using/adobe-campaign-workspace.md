@@ -6,10 +6,10 @@ feature: Overview
 role: Data Engineer
 level: Beginner
 exl-id: 5f689679-7148-4abd-a9bf-185854c64b13
-source-git-commit: 1e0e75c6f0dd5a32584291205047f835e951ee9c
+source-git-commit: 67c4fa449e12b04dab4673bffdc5c2c8b541db69
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '959'
+ht-degree: 1%
 
 ---
 
@@ -59,7 +59,7 @@ Du kan välja mellan följande språk:
 * Tyska
 * Japanska
 
-Språket du valde för din Adobe Campaign Classic-instans kan påverka datum- och tidsformat. Mer information finns i [dokumentationen för Campaign v8 (konsol)](https://experienceleague.adobe.com/sv/docs/campaign/campaign-v8/new/campaign-ui){target=_blank}.
+Språket du valde för din Adobe Campaign Classic-instans kan påverka datum- och tidsformat. Mer information finns i [dokumentationen för Campaign v8 (konsol)](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/new/campaign-ui){target=_blank}.
 
 Mer information om hur du skapar en instans finns på [sidan](../../installation/using/creating-an-instance-and-logging-on.md).
 
@@ -110,7 +110,7 @@ Utforskaren i Adobe Campaign är tillgänglig via verktygsfältsikonen. Du får 
 
 Mer information om Adobe Campaign Explorer finns på följande sidor i dokumentationen för Campaign v8 (konsol):
 
-* [Kampanjanvändargränssnittet - översikt](https://experienceleague.adobe.com/sv/docs/campaign/campaign-v8/new/campaign-ui){target=_blank}
+* [Kampanjanvändargränssnittet - översikt](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/new/campaign-ui){target=_blank}
 
 * [Inställningar för kampanjgränssnitt](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/config/configuration/ui-settings){target=_blank}
 
@@ -123,18 +123,14 @@ Datafiltrering innebär att en datauppsättning begränsas till endast de poster
 
 När du bläddrar i Campaign visas data i listor. Du kan använda inbyggda filter för att snabbt komma åt en definierad delmängd, till exempel adresser i karantän, mottagare utan mål eller poster inom ett visst åldersintervall eller ett visst datum när de skapades. Dessutom kan du skapa anpassade filter, spara dem för framtida bruk och dela dem med andra Campaign-användare.
 
->[!NOTE]
->
->Mer information om hur du får tillgång till, utformar och delar filter finns i [dokumentationen för Campaign v8 (konsol)](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/audience/create-filters){target=_blank}.
+Lär dig hur du **får tillgång till, utformar och delar filter** i [dokumentationen för Campaign v8 (konsol)](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/audience/create-filters){target=_blank}.
 
 
 ## Arbeta med listor {#manage-and-customize-lists}
 
 I Campaign-klientkonsolen visas data i listor. Du kan anpassa listorna efter dina behov. Du kan till exempel lägga till kolumner, filtrera data, räkna poster, spara och dela inställningarna.
 
->[!NOTE]
->
->Mer information om hur du hanterar och anpassar listor finns i [dokumentationen för Campaign v8 (konsol)](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/config/configuration/ui-settings#customize-lists){target=_blank}.
+Lär dig hur du **hanterar och anpassar listor** i [dokumentationen för Campaign v8 (konsol)](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/config/configuration/ui-settings#customize-lists){target=_blank}.
 
 ## Hantera uppräkningar{#managing-enumerations}
 
@@ -142,7 +138,7 @@ En uppräkning (kallas även för en specificerad lista) är en fördefinierad l
 
 När du har definierat värden visas de i en nedrullningsbar lista. Ett värde kan väljas direkt eller anges med prediktiv inmatning, vilket föreslår och slutför matchande poster. Vissa fält innehåller fördefinierade uppräkningar och ytterligare uppräkningar kan skapas om det behövs.
 
-Läs mer om hur du **arbetar med uppräkningar** i [Adobe Campaign v8-dokumentationen (konsolen)](https://experienceleague.adobe.com/sv/docs/campaign/campaign-v8/config/settings/enumerations){target=_blank}.
+Läs mer om hur du **arbetar med uppräkningar** i [Adobe Campaign v8-dokumentationen (konsolen)](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/config/settings/enumerations){target=_blank}.
 
 ## Självstudievideo {#video}
 
