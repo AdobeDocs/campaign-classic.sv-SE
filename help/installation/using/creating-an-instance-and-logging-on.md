@@ -72,7 +72,7 @@ Så här skapar du en ny instans:
 
 1. I listrutan **[!UICONTROL Language]** väljer du **instansspråk**: engelska (USA), engelska (Storbritannien), franska eller japanska.
 
-   Skillnader mellan amerikansk engelska och brittisk engelska beskrivs i [Campaign v8-dokumentationen (konsol)](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/new/campaign-ui).
+   Skillnader mellan amerikansk engelska och brittisk engelska beskrivs i [Campaign v8-dokumentationen (konsol)](https://experienceleague.adobe.com/sv/docs/campaign/campaign-v8/new/campaign-ui).
 
    >[!CAUTION]
    >
