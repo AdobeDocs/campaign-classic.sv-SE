@@ -7,9 +7,9 @@ audience: message-center
 content-type: reference
 topic-tags: instance-configuration
 exl-id: 23a384d1-27ce-46c2-98c3-0fb60a5c50ee
-source-git-commit: 0fba6a2ad4ffa864e2f726f241aa9d7cd39072a6
+source-git-commit: 221e2ccdaadf793212fcacdf5e13823f1505f4dc
 workflow-type: tm+mt
-source-wordcount: '1236'
+source-wordcount: '1237'
 ht-degree: 1%
 
 ---
@@ -88,7 +88,7 @@ Så här skapar du ett externt konto av typen **[!UICONTROL Execution instance]*
 
    >[!NOTE]
    >
-   >Observera att när du använder FDA över HTTP stöds endast körningsinstanser med en PostgreSQL-databas. MSSQL- eller Oraclena-databaser stöds inte.
+   >Observera att när du använder FDA över HTTP stöds endast körningsinstanser med en PostgreSQL-databas. MSSQL- eller Oracle-databaser stöds inte.
 
    Den andra metoden (FDA) rekommenderas om kontrollinstansen har direktåtkomst till databasen med körningsinstanserna. Välj i annat fall webbtjänståtkomst. Det FDA-konto som ska anges sammanfaller med anslutningen till databaserna för de olika körningsinstanserna som skapas i kontrollinstansen.
 
@@ -145,7 +145,7 @@ Om du vill använda ett tomt lösenord går du till körningsinstanserna och def
 
    ![](assets/messagecenter_operator_002.png)
 
-1. Klicka på länken **[!UICONTROL Add a trusted IP mask]** i fönstret **[!UICONTROL Access settings]** och lägg till IP-adressen för kontrollinstansen.
+1. Klicka på länken **[!UICONTROL Access settings]** i fönstret **[!UICONTROL Add a trusted IP mask]** och lägg till IP-adressen för kontrollinstansen.
 
    ![](assets/messagecenter_operator_003.png)
 
@@ -185,7 +185,7 @@ I trädet för alla körningsinstanser skapar du en mapp per operator (**Mapp 1*
 
 Om du vill använda flera kontrollinstanser måste den här konfigurationen utföras på ALLA körningsinstanser.
 
-1. Skapa en mapp per operator i noden **[!UICONTROL Administration > Production > Message Center]**: **Mapp 1** och **Mapp 2**. Mer information om hur du skapar mappar och vyer finns på [den här sidan](../../platform/using/access-management-folders.md).
+1. Skapa en mapp per operator i noden **[!UICONTROL Administration > Production > Message Center]**: **Mapp 1** och **Mapp 2**. Läs mer om mappar och vyer i [Campaign v8-dokumentationen (konsolen)](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/config/configuration/folders-and-views){target=_blank}.
 
    ![](assets/messagecenter_multi_control_3.png)
 
