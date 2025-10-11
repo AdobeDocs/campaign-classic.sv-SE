@@ -795,7 +795,7 @@ Läs mer om [Planer](../../campaign/using/setting-up-marketing-campaigns.md).
 
 Fördefinierade filter är frågor som har sparats för återanvändning. Användning av fördefinierade filter ökar produktiviteten (eftersom de bara skapas en gång), bidrar till att skapa konsekvens (eftersom alla marknadsförare kan använda dem) och sänker marknadsförarens kunskaper eftersom de kan använda kod eller logik som de kanske inte kan skapa själva.
 
-Mer information om filter finns i [dokumentationen för Campaign v8 (konsol)](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/audience/create-filters){target=_blank}.
+Mer information om filter finns i [dokumentationen för Campaign v8 (konsol)](https://experienceleague.adobe.com/sv/docs/campaign/campaign-v8/audience/create-filters){target=_blank}.
 +++
 
 <!--

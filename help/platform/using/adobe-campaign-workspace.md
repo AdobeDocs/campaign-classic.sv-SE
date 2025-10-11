@@ -123,7 +123,7 @@ Datafiltrering innebär att en datauppsättning begränsas till endast de poster
 
 När du bläddrar i Campaign visas data i listor. Du kan använda inbyggda filter för att snabbt komma åt en definierad delmängd, till exempel adresser i karantän, mottagare utan mål eller poster inom ett visst åldersintervall eller ett visst datum när de skapades. Dessutom kan du skapa anpassade filter, spara dem för framtida bruk och dela dem med andra Campaign-användare.
 
-Lär dig hur du **får tillgång till, utformar och delar filter** i [dokumentationen för Campaign v8 (konsol)](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/audience/create-filters){target=_blank}.
+Lär dig hur du **får tillgång till, utformar och delar filter** i [dokumentationen för Campaign v8 (konsol)](https://experienceleague.adobe.com/sv/docs/campaign/campaign-v8/audience/create-filters){target=_blank}.
 
 
 ## Arbeta med listor {#manage-and-customize-lists}

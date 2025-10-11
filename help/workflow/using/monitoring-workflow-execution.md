@@ -281,4 +281,4 @@ Utöver dessa vyer kan du skapa filtermappar så att du kan filtrera listan med 
 
 ![](assets/workflow-monitoring-filter.png)
 
-Mer information om filter finns i [dokumentationen för Campaign v8 (konsol)](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/audience/create-filters){target=_blank}.
+Mer information om filter finns i [dokumentationen för Campaign v8 (konsol)](https://experienceleague.adobe.com/sv/docs/campaign/campaign-v8/audience/create-filters){target=_blank}.
