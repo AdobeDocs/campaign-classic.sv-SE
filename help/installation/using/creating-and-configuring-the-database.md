@@ -36,7 +36,7 @@ Stegen för att skapa en databas eller återvinna en befintlig bas beskrivs neda
 
 Följande steg ingår:
 
-* [Steg 1 - Välj databasmotorn ](#step-1---selecting-the-database-engine),
+* [Steg 1 - Välj databasmotorn &#x200B;](#step-1---selecting-the-database-engine),
 * [Steg 2 - Ansluter till servern](#step-2---connecting-to-the-server),
 * [Steg 3 - Anslutning och egenskaper för databasen](#step-3---connection-and-characteristics-of-the-database),
 * [Steg 4 - Paket som ska installeras](#step-4---packages-to-install),

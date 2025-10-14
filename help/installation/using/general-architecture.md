@@ -43,7 +43,7 @@ Adobe Campaign bygger på en tjänsteinriktad arkitektur (SOA) och består av fl
 
 >[!CAUTION]
 >
->Om inget annat uttryckligen anges är installation, uppdatering och underhåll av alla komponenter i en Adobe Campaign-plattform datoradministratörens ansvar. Detta innebär att du måste implementera förutsättningarna för Adobe Campaign-program samt att du följer Campaign [kompatibilitetsmatrisen ](../../rn/using/compatibility-matrix.md) mellan komponenterna.
+>Om inget annat uttryckligen anges är installation, uppdatering och underhåll av alla komponenter i en Adobe Campaign-plattform datoradministratörens ansvar. Detta innebär att du måste implementera förutsättningarna för Adobe Campaign-program samt att du följer Campaign [kompatibilitetsmatrisen &#x200B;](../../rn/using/compatibility-matrix.md) mellan komponenterna.
 
 ## Presentationslager {#presentation-layer}
 

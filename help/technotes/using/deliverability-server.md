@@ -52,7 +52,7 @@ Campaign måste kommunicera med Adobe Shared Services via en IMS-baserad autenti
 >
 > JWT-autentiseringsuppgifterna (Service Account) har tagits bort av Adobe, och Campaign-integreringar med Adobe-lösningar och appar måste nu förlita sig på autentiseringsuppgifter för OAuth Server-till-Server. </br>
 >
-> * Om du har implementerat inkommande integreringar med Campaign måste du migrera ditt tekniska konto enligt beskrivningen i [den här dokumentationen](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration/#_blank). Befintliga [JWT-autentiseringsuppgifter ](../../integrations/using/oauth-technical-account.md) fortsätter att fungera till 27 januari 2025. </br>
+> * Om du har implementerat inkommande integreringar med Campaign måste du migrera ditt tekniska konto enligt beskrivningen i [den här dokumentationen](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration/#_blank). Befintliga [JWT-autentiseringsuppgifter &#x200B;](../../integrations/using/oauth-technical-account.md) fortsätter att fungera till 27 januari 2025. </br>
 >
 > * Om ni har implementerat utgående integreringar, som integrering med Campaign-Analytics eller integrering med Experience Cloud-utlösare, fortsätter de att fungera fram till 27 januari 2025. Innan detta datum måste ni dock uppgradera er Campaign-miljö till v7.4.1 och migrera ert tekniska konto till Autentisering.
 

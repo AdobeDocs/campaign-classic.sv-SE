@@ -32,7 +32,7 @@ Kontrollera att den ursprungliga Adobe Campaign-plattformskonfigurationen fortfa
 
 >[!NOTE]
 >
->Du kan läsa [Adobe Campaign guide ](https://helpx.adobe.com/se/campaign/kb/hardware-sizing-guide.html) om maskinvarustorlekar för att få information.
+>Du kan läsa [Adobe Campaign guide &#x200B;](https://helpx.adobe.com/se/campaign/kb/hardware-sizing-guide.html) om maskinvarustorlekar för att få information.
 
 ## Plattformskonfiguration {#platform-configuration}
 

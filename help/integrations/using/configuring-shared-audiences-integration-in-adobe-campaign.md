@@ -59,13 +59,13 @@ URL-adressen till servern ska fyllas i enligt följande:
      ```
 
    * **[!UICONTROL AWS access key ID]**
-Information om var du hittar ditt ID för AWS-åtkomstnyckel finns på [sidan ](https://docs.aws.amazon.com/general/latest/gr/aws-sec-cred-types.html#access-keys-and-secret-access-keys) .
+Information om var du hittar ditt ID för AWS-åtkomstnyckel finns på [sidan &#x200B;](https://docs.aws.amazon.com/general/latest/gr/aws-sec-cred-types.html#access-keys-and-secret-access-keys) .
 
    * **[!UICONTROL Secret access key to AWS]**
-Om du vill veta var du hittar din hemliga åtkomstnyckel till AWS kan du läsa den här [sidan ](https://aws.amazon.com/fr/blogs/security/wheres-my-secret-access-key/) .
+Om du vill veta var du hittar din hemliga åtkomstnyckel till AWS kan du läsa den här [sidan &#x200B;](https://aws.amazon.com/fr/blogs/security/wheres-my-secret-access-key/) .
 
    * **[!UICONTROL AWS Region]**
-Mer information om AWS finns på [sidan ](https://aws.amazon.com/about-aws/global-infrastructure/regions_az/) .
+Mer information om AWS finns på [sidan &#x200B;](https://aws.amazon.com/about-aws/global-infrastructure/regions_az/) .
 
    ![](assets/aam_config_2.png)
 

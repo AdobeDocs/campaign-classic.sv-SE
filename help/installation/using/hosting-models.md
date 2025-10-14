@@ -51,7 +51,7 @@ Som en lokal kund ska du, innan du börjar distribuera Campaign Classic, ta hand
 * Kontrollera att de nödvändiga lagren för databasåtkomst är installerade på servern och tillgängliga från Adobe Campaign-kontot. [Läs mer](../../installation/using/application-server.md).
 * Konfigurera dina nätverk eftersom vissa processer behöver kommunicera med andra eller för att få åtkomst till nätverket och Internet. Detta innebär att vissa TCP-portar måste vara öppna för dessa processer. [Läs mer](../../installation/using/network-configuration.md) om krav för nätverkskonfiguration.
 * Läs [Checklista för kampanjsäkerhet och sekretess](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/security-privacy/get-started-security-privacy.html?lang=sv).
-* Kontrollera allmänna riktlinjer för beräkning av maskinvarukrav för lokal distribution [ i den här artikeln](https://helpx.adobe.com/se/campaign/kb/hardware-sizing-guide.html).
+* Kontrollera allmänna riktlinjer för beräkning av maskinvarukrav för lokal distribution [&#x200B; i den här artikeln](https://helpx.adobe.com/se/campaign/kb/hardware-sizing-guide.html).
 
 ## Hybrid
 

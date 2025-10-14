@@ -40,10 +40,10 @@ Det konto som används för att logga in på Salesforce CRM.
 Lösenord som används för att logga in på Salesforce CRM.
 
    * **[!UICONTROL Client identifier]**
-Om du vill veta var du hittar din klient-ID kan du läsa den här [sidan](https://help.salesforce.com/articleView?id=000205876&amp;type=1) .
+Om du vill veta var du hittar din klient-ID kan du läsa den här [sidan](https://help.salesforce.com/articleView?id=000205876&type=1) .
 
    * **[!UICONTROL Security token]**
-Om du vill veta var du kan hitta din säkerhetstoken kan du läsa [sidan ](https://help.salesforce.com/articleView?id=000205876&amp;type=1) .
+Om du vill veta var du kan hitta din säkerhetstoken kan du läsa [sidan &#x200B;](https://help.salesforce.com/articleView?id=000205876&type=1) .
 
    * **[!UICONTROL API version]**
 Välj version av API:t.

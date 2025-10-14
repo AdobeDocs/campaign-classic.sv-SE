@@ -20,7 +20,7 @@ Ni kan anpassa och konfigurera rapporten efter era behov. Om du vill göra det r
 
 ![](assets/s_ncs_advuser_report_properties_01.png)
 
-Allmänna egenskaper beskrivs nedan. Avancerade funktioner som konfigurerats på flikarna **[!UICONTROL Parameters]**, **[!UICONTROL Variables]** och **[!UICONTROL Scripts]** beskrivs [ i det här avsnittet ](../../reporting/using/advanced-functionalities.md).
+Allmänna egenskaper beskrivs nedan. Avancerade funktioner som konfigurerats på flikarna **[!UICONTROL Parameters]**, **[!UICONTROL Variables]** och **[!UICONTROL Scripts]** beskrivs [&#x200B; i det här avsnittet &#x200B;](../../reporting/using/advanced-functionalities.md).
 
 ## Allmänna egenskaper {#overall-properties}
 

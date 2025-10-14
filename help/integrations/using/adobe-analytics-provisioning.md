@@ -26,7 +26,7 @@ Integrationen mellan Adobe Campaign Classic och Adobe Analytics-autentisering st
 
 * Om du hanterar ett migrerat externt konto måste du implementera Adobe IMS och ansluta till Adobe Campaign via en Adobe ID.
 
-  Observera att användaren som är inloggad via Adobe ID IMS måste vara ägare till **Data Connector**-kontot i Adobe Analytics och ha behörighet för **produktprofilen** som nämns [ nedan](#analytics-product-profile).
+  Observera att användaren som är inloggad via Adobe ID IMS måste vara ägare till **Data Connector**-kontot i Adobe Analytics och ha behörighet för **produktprofilen** som nämns [&#x200B; nedan](#analytics-product-profile).
 
 Problemet var att ägaren till dataanslutningen var en annan användare än användaren som loggade in på Campaign och testade integreringen med Analytics.
 
@@ -38,7 +38,7 @@ För att den här integreringen ska fungera måste du skapa en Adobe Analytics-p
 >
 > Tjänstkontots (JWT) autentiseringsuppgifter har tagits bort av Adobe. Campaign-integreringar med Adobe lösningar och appar måste nu förlita sig på autentiseringsuppgifter för OAuth Server-till-Server. </br>
 >
-> * Om du har implementerat inkommande integreringar med Campaign måste du migrera ditt tekniska konto enligt beskrivningen i [den här dokumentationen](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration/#_blank). Befintliga [JWT-autentiseringsuppgifter ](oauth-technical-account.md) fortsätter att fungera till 30 juni 2025.</br>
+> * Om du har implementerat inkommande integreringar med Campaign måste du migrera ditt tekniska konto enligt beskrivningen i [den här dokumentationen](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration/#_blank). Befintliga [JWT-autentiseringsuppgifter &#x200B;](oauth-technical-account.md) fortsätter att fungera till 30 juni 2025.</br>
 >
 > * Om ni har implementerat utgående integreringar, som integrering med Campaign-Analytics eller integrering med Experience Cloud Triggers, fortsätter de att fungera fram till 30 juni 2025. Innan detta datum måste du dock uppgradera din Campaign-miljö till v7.4.1 och migrera ditt tekniska konto till OAuth.
 

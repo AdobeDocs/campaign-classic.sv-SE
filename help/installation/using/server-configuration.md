@@ -80,7 +80,7 @@ Du kan lägga till extra HTTP-rubriker för alla sidor (mer information finns p�
 
 Med Adobe Campaign kan du ange ett enkelt lösenord i elementet `<dbcnx .../>`. Använd inte den här funktionen.
 
-Som standard fäster inte Adobe Campaign en session vid en viss IP-adress, men du kan aktivera den för att förhindra att sessionen blir stulen. Om du vill göra det anger du attributet checkIPConsistent som **true** i noden `<authentication>` i filen [serverConf.xml ](../../installation/using/the-server-configuration-file.md) .
+Som standard fäster inte Adobe Campaign en session vid en viss IP-adress, men du kan aktivera den för att förhindra att sessionen blir stulen. Om du vill göra det anger du attributet checkIPConsistent som **true** i noden `<authentication>` i filen [serverConf.xml &#x200B;](../../installation/using/the-server-configuration-file.md) .
 
 Som standard använder inte Adobe Campaign MTA en skyddad anslutning för att skicka innehåll till SMTP-servern. Du måste aktivera den här funktionen (kan minska leveranshastigheten). Om du vill göra det anger du **enableTLS** till **true** i noden `<smtp ...>`.
 

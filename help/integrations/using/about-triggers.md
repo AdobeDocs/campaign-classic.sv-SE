@@ -43,7 +43,7 @@ Processen [!DNL pipelined] loggar in på Experience Cloud med en autentiseringst
 Kontrollera att du har:
 
 * en giltig **organisationsidentifierare**: Organisations-ID är den unika identifieraren inom Adobe Experience Cloud, som används t.ex. för VisitorID-tjänsten och IMS Single-Sign On (SSO). [Läs mer](https://experienceleague.adobe.com/docs/core-services/interface/administration/organizations.html?lang=sv)
-* en **utvecklaråtkomst** till din organisation. Organisationens systemadministratör måste följa proceduren **Lägg till utvecklare i en enskild produktprofil** som beskrivs [ på den här sidan](https://helpx.adobe.com/se/enterprise/using/manage-developers.html) för att ge utvecklare åtkomst till produktprofilen `Analytics - {tenantID}` för den Adobe Analytics-produkt som är associerad med utlösare.
+* en **utvecklaråtkomst** till din organisation. Organisationens systemadministratör måste följa proceduren **Lägg till utvecklare i en enskild produktprofil** som beskrivs [&#x200B; på den här sidan](https://helpx.adobe.com/se/enterprise/using/manage-developers.html) för att ge utvecklare åtkomst till produktprofilen `Analytics - {tenantID}` för den Adobe Analytics-produkt som är associerad med utlösare.
 
 ## Implementeringssteg {#implement}
 

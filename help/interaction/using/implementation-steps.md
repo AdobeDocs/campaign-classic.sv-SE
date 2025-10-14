@@ -23,7 +23,7 @@ ht-degree: 1%
 
 1. Skapa användarprofiler. Mer information finns i [Operatorprofiler](../../interaction/using/operator-profiles.md).
 1. Skapa en erbjudandemiljö genom att inrikta er på olika aspekter. Mer information finns i [Skapa en erbjudandemiljö](../../interaction/using/live-design-environments.md#creating-an-offer-environment).
-1. Skapa typologiregler för varje miljö. Mer information finns i [Skapa och referera till en presentationsregel ](../../interaction/using/managing-offer-presentation.md#creating-and-referencing-an-offer-presentation-rule) för erbjudanden.
+1. Skapa typologiregler för varje miljö. Mer information finns i [Skapa och referera till en presentationsregel &#x200B;](../../interaction/using/managing-offer-presentation.md#creating-and-referencing-an-offer-presentation-rule) för erbjudanden.
 1. Skapa utrymme för varje miljö och konfigurera återgivningsfunktioner. Mer information finns i [Skapa erbjudandemellanslag](../../interaction/using/creating-offer-spaces.md).
 
    >[!NOTE]

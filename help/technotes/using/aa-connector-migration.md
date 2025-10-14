@@ -46,7 +46,7 @@ Nu finns det en ny integrering mellan Campaign Classic v7 och Adobe Analytics. S
 
 Om du använder den befintliga Adobe Analytics Data Connector (som tidigare kallades Genesis-integrering) och integreringen implementerades på en lägre version än Campaign 21.1.3 påverkas du.
 
-Lär dig hur du kontrollerar version [ i det här avsnittet](../../integrations/using/launching-adobe-campaign.md#getting-your-campaign-version).
+Lär dig hur du kontrollerar version [&#x200B; i det här avsnittet](../../integrations/using/launching-adobe-campaign.md#getting-your-campaign-version).
 
 ## Hur uppdaterar jag?
 

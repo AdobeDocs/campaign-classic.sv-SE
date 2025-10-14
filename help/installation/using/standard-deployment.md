@@ -142,7 +142,7 @@ Stegen är följande:
      <spareServer enabledIf="$(hostname)!='front_srv2'" id="2" url="https://front_srv2:8080"/>
      ```
 
-     Mer information finns i [Spårning av överflödiga ](configuring-campaign-server.md#redundant-tracking).
+     Mer information finns i [Spårning av överflödiga &#x200B;](configuring-campaign-server.md#redundant-tracking).
 
 1. Starta webbplatsen och testa omdirigeringen från URL:en: [https://tracking.campaign.net/r/test](https://tracking.campaign.net/r/test).
 

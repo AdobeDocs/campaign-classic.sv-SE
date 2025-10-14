@@ -18,7 +18,7 @@ ht-degree: 2%
 
 Adobe Campaign programserver är utformad för öppenhet och enkel integrering med allt mer mångsidiga och komplexa företagsinformationssystem.
 
-Adobe Campaign API:er används i JavaScript både i och utanför programmet SOAP. De utgör ett bibliotek med generiska funktioner som kan berikas. Mer information finns i [Implementera SOAP ](../../configuration/using/implementing-soap-methods.md).
+Adobe Campaign API:er används i JavaScript både i och utanför programmet SOAP. De utgör ett bibliotek med generiska funktioner som kan berikas. Mer information finns i [Implementera SOAP &#x200B;](../../configuration/using/implementing-soap-methods.md).
 
 >[!IMPORTANT]
 >

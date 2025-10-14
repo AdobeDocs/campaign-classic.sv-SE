@@ -38,7 +38,7 @@ Om miljön körs i någon av versionerna som listas nedan kan du påverkas:
 * Kampanj 19.1.5 (build 9033) till 19.1.7 (build 9036).
 
 
-Lär dig hur du kontrollerar version [ i det här avsnittet](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version).
+Lär dig hur du kontrollerar version [&#x200B; i det här avsnittet](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version).
 
 **Hur uppdaterar jag?**
 

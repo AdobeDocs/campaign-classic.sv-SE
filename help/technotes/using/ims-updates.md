@@ -55,7 +55,7 @@ Kontrollera dessutom att den senaste uppdateringen av din [Windows-version](../.
 
 **Hur kontrollerar jag min Campaign-version?**
 
-Lär dig hur du kontrollerar version [ i det här avsnittet](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version).
+Lär dig hur du kontrollerar version [&#x200B; i det här avsnittet](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version).
 
 
 **Hur kontrollerar jag om jag använder IMS?**

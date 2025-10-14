@@ -94,7 +94,7 @@ En forms livscykel består av tre steg:
 
    >[!NOTE]
    >
-   >För tekniska webbprogram (som är tillgängliga via menyn **[!UICONTROL Administration]** > **[!UICONTROL Configuration]** > **[!UICONTROL Web applications]**) blir ett formulär med statusen **[!UICONTROL Pending publication]** automatiskt [ publicerat](#publishing-a-form) och får statusen **[!UICONTROL Online]**.
+   >För tekniska webbprogram (som är tillgängliga via menyn **[!UICONTROL Administration]** > **[!UICONTROL Configuration]** > **[!UICONTROL Web applications]**) blir ett formulär med statusen **[!UICONTROL Pending publication]** automatiskt [&#x200B; publicerat](#publishing-a-form) och får statusen **[!UICONTROL Online]**.
 
 1. **Online**
 

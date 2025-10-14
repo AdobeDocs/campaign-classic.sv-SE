@@ -21,7 +21,7 @@ Med de här aktiviteterna kan du skapa ett eller flera mål genom att definiera 
 
 * **Fråga**: Här kan du köra en fråga. Se [Skapa en fråga](query.md#creating-a-query).
 * **Inkrementell fråga**: gör att du kan utföra en fråga och planera dess körning. Se avsnittet [Inkrementell fråga](incremental-query.md).
-* **Läslista**: gör att du kan använda data i en lista. Se avsnittet [Använda data från en lista: ](../../platform/using/import-export-workflows.md#using-data-from-a-list--read-list).
+* **Läslista**: gör att du kan använda data i en lista. Se avsnittet [Använda data från en lista: &#x200B;](../../platform/using/import-export-workflows.md#using-data-from-a-list--read-list).
 * **Förening**: gör att du kan gruppera resultatet av flera aktiviteter till ett enda mål. Se avsnittet [Förening](union.md).
 * **Skärning**: gör att du bara kan extrahera populationen med samma inkommande aktivitetsresultat. Se avsnittet [Skärningspunkt](intersection.md).
 * **Uteslutning**: gör att du kan skapa ett mål baserat på ett huvudmål som ett eller flera andra mål extraheras från. Se avsnittet [Uteslutning](exclusion.md).

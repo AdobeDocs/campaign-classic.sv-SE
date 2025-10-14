@@ -25,7 +25,7 @@ Med Interaction kan du skapa och hantera en katalog med erbjudanden och konfigur
 
 ![](assets/Offermgt2.png)
 
-![](assets/do-not-localize/how-to-video.png) Titta på [den här videon](https://helpx.adobe.com/campaign/classic/how-to/acs-overview.html?playlist=/ccx/v1/collection/product/campaign/classic/segment/digital-marketers/explevel/intermediate/applaunch/get-started/collection.ccx.js&amp;ref=helpx.adobe.com) om du vill bekanta dig med interaktionsfunktionen och de terminologier som används i Campaign Interaction.
+![](assets/do-not-localize/how-to-video.png) Titta på [den här videon](https://helpx.adobe.com/campaign/classic/how-to/acs-overview.html?playlist=/ccx/v1/collection/product/campaign/classic/segment/digital-marketers/explevel/intermediate/applaunch/get-started/collection.ccx.js&ref=helpx.adobe.com) om du vill bekanta dig med interaktionsfunktionen och de terminologier som används i Campaign Interaction.
 
 ## Relaterade ämnen
 

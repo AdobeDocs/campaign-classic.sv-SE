@@ -38,7 +38,7 @@ This integration only applies starting **Campaign Classic 20.2.4 and above, 19.1
 Kontrollera att du har:
 
 * en giltig **organisationsidentifierare**: Organisations-ID är den unika identifieraren inom Adobe Experience Cloud, som används t.ex. för VisitorID-tjänsten och IMS Single-Sign On (SSO). [Läs mer](https://experienceleague.adobe.com/docs/core-services/interface/administration/organizations.html?lang=sv)
-* en **utvecklaråtkomst** till din organisation. Organisationens systemadministratör måste följa proceduren **Lägg till utvecklare i en enskild produktprofil** som beskrivs [ på den här sidan](https://helpx.adobe.com/se/enterprise/using/manage-developers.html) för att ge utvecklare åtkomst till produktprofilen `Analytics - {tenantID}` för den Adobe Analytics-produkt som är associerad med utlösare.
+* en **utvecklaråtkomst** till din organisation. Organisationens systemadministratör måste följa proceduren **Lägg till utvecklare i en enskild produktprofil** som beskrivs [&#x200B; på den här sidan](https://helpx.adobe.com/se/enterprise/using/manage-developers.html) för att ge utvecklare åtkomst till produktprofilen `Analytics - {tenantID}` för den Adobe Analytics-produkt som är associerad med utlösare.
 
 ## Steg 1: Skapa/uppdatera OAuth-projekt {#creating-adobe-io-project}
 
@@ -46,7 +46,7 @@ Kontrollera att du har:
 >
 > JWT-autentiseringsuppgifterna (Service Account) har tagits bort av Adobe, och Campaign-integreringar med Adobe-lösningar och appar måste nu förlita sig på autentiseringsuppgifter för OAuth Server-till-Server. </br>
 >
-> * Om du har implementerat inkommande integreringar med Campaign måste du migrera ditt tekniska konto enligt beskrivningen i [den här dokumentationen](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration/#_blank). Befintliga [JWT-autentiseringsuppgifter ](oauth-technical-account.md) fortsätter att fungera till 27 januari 2025.</br>
+> * Om du har implementerat inkommande integreringar med Campaign måste du migrera ditt tekniska konto enligt beskrivningen i [den här dokumentationen](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration/#_blank). Befintliga [JWT-autentiseringsuppgifter &#x200B;](oauth-technical-account.md) fortsätter att fungera till 27 januari 2025.</br>
 >
 > * Om ni har implementerat utgående integreringar, som integrering med Campaign-Analytics eller integrering med Experience Cloud-utlösare, fortsätter de att fungera fram till 27 januari 2025. Innan detta datum måste ni dock uppgradera er Campaign-miljö till v7.4.1 och migrera ert tekniska konto till Autentisering.
 

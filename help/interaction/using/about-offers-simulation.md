@@ -21,7 +21,7 @@ Simuleringen tar hänsyn till de kontexter och regler för behörighet som tidig
 
 Läs stegen nedan om du vill lära dig hur du simulerar ett erbjudande.
 
-![](assets/do-not-localize/how-to-video.png) Du kan också titta på den här [videon](https://helpx.adobe.com/campaign/classic/how-to/simulate-offer-in-acv6.html?playlist=/ccx/v1/collection/product/campaign/classic/segment/digital-marketers/explevel/intermediate/applaunch/introduction/collection.ccx.js&amp;ref=helpx.adobe.com).
+![](assets/do-not-localize/how-to-video.png) Du kan också titta på den här [videon](https://helpx.adobe.com/campaign/classic/how-to/simulate-offer-in-acv6.html?playlist=/ccx/v1/collection/product/campaign/classic/segment/digital-marketers/explevel/intermediate/applaunch/introduction/collection.ccx.js&ref=helpx.adobe.com).
 
 ## Huvudsteg för att skapa en simulering {#main-steps-for-creating-a-simulation}
 

@@ -51,7 +51,7 @@ Om du vill nå mottagarnas inkorg utan att studsa eller markeras som skräppost 
 
    * När du kontrollerar om e-postmeddelandet kan levereras vill du fokusera på fyra huvudkategorier: datakvalitet, meddelande och innehåll, avsändarinfrastruktur och anseende. Mer information om det här avsnittet finns i [det här avsnittet](about-deliverability.md).
 
-* Använd de rekommendationer som beskrivs [ i det här dokumentet](about-deliverability.md).
+* Använd de rekommendationer som beskrivs [&#x200B; i det här dokumentet](about-deliverability.md).
 
 * Kontakta din Adobe-representant om du behöver hjälp.
 

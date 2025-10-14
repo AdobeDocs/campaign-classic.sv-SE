@@ -116,7 +116,7 @@ Med attribut kan du definiera fälten som utgör dataobjektet. Du kan använda k
 
 ![](assets/schemaextension_getting_started_2.png)
 
-Den fullständiga listan med attribut är tillgänglig i avsnittet [`<attribute>` element ](../../configuration/using/schema/attribute.md). Här är några av de vanligaste attributen:
+Den fullständiga listan med attribut är tillgänglig i avsnittet [`<attribute>` element &#x200B;](../../configuration/using/schema/attribute.md). Här är några av de vanligaste attributen:
 
 * **@advanced**
 * **@dataPolicy**

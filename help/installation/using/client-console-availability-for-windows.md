@@ -42,7 +42,7 @@ https://<your Adobe Campaign server>:>port number>/nl/jsp/logon.jsp
 
 Den här sidan kräver inloggning och lösenord som definierats i programmet.
 
-Lär dig hur du installerar konsolen [ i det här avsnittet](../../installation/using/installing-the-client-console.md).
+Lär dig hur du installerar konsolen [&#x200B; i det här avsnittet](../../installation/using/installing-the-client-console.md).
 
 ## Föreslå att slutanvändare uppgraderar sin klientkonsol
 

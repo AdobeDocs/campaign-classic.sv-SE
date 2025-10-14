@@ -54,7 +54,7 @@ Du måste konfigurera en säkerhetszon så att den här operatorn kan ansluta ti
 
 >[!CAUTION]
 >
->Vi rekommenderar starkt att du skapar en säkerhetszon som är dedikerad till AEM för att undvika säkerhetsproblem. Mer information finns i installationsguiden [för ](../../installation/using/security-zones.md).
+>Vi rekommenderar starkt att du skapar en säkerhetszon som är dedikerad till AEM för att undvika säkerhetsproblem. Mer information finns i installationsguiden [för &#x200B;](../../installation/using/security-zones.md).
 
 Om din Campaign-instans hanteras av Adobe kontaktar du [Adobe kundtjänst](https://helpx.adobe.com/se/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html). Om du använder Campaign lokalt följer du stegen nedan:
 

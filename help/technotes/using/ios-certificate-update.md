@@ -25,7 +25,7 @@ Som lokal/hybridkund måste du uppdatera konfigurationen för att säkerställa 
 
 Följ stegen nedan för att införliva det nya certifikatet:
 
-1. Hämta **SHA-2 Root: USERTrust RSA Certification Authority-certifikatet** root certificate [ från den här sidan](https://www.sectigo.com/knowledge-base/detail/Sectigo-Intermediate-Certificates/kA01N000000rfBO).
+1. Hämta **SHA-2 Root: USERTrust RSA Certification Authority-certifikatet** root certificate [&#x200B; från den här sidan](https://www.sectigo.com/knowledge-base/detail/Sectigo-Intermediate-Certificates/kA01N000000rfBO).
 
 1. Kontrollera att AAA-certifikatet finns i både ditt operativsystem och JAVA-förtroenden. Om inte, lägg till den.
 

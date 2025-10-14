@@ -45,7 +45,7 @@ Om miljön är på en lägre nivå än de som anges nedan påverkas du:
 * Campaign 19.2.4-utgåvan.
 * Campaign 19.1.8-utgåvan.
 
-Lär dig hur du kontrollerar version [ i det här avsnittet](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version).
+Lär dig hur du kontrollerar version [&#x200B; i det här avsnittet](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version).
 
 **Hur uppdaterar jag?**
 
@@ -90,7 +90,7 @@ Om du ansluter till Campaign [via en Adobe ID](../../integrations/using/about-ad
 
 De här versionerna har ett nytt anslutningsprotokoll: uppgradering är obligatoriskt för både Campaign-servern och Client Console för att kunna ansluta till Campaign efter den **30 juni 2021**.
 
-Lär dig hur du kontrollerar version [ i det här avsnittet](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version).
+Lär dig hur du kontrollerar version [&#x200B; i det här avsnittet](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version).
 
 **Hur uppdaterar jag?**
 
@@ -119,7 +119,7 @@ Uppgradera till en av de nya versionerna som listas nedan är obligatorisk:
 * Campaign 20.2.5.
 * Campaign 19.1.8-utgåvan.
 
-Lär dig hur du kontrollerar version [ i det här avsnittet](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version).
+Lär dig hur du kontrollerar version [&#x200B; i det här avsnittet](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version).
 
 **Hur uppdaterar jag?**
 
@@ -139,7 +139,7 @@ Sedan **31 mars 2021** har Apple Push Notification-tjänsten (APN) inte längre 
 
 Om dina instanser körs på en **äldre version än Campaign 21.1,** och du skickar push-meddelanden med det äldre binära Apple-protokollet, måste du uppdatera till det HTTP/2-baserade API:t för APN-providern.
 
-Lär dig hur du kontrollerar version [ i det här avsnittet](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version).
+Lär dig hur du kontrollerar version [&#x200B; i det här avsnittet](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version).
 
 **Hur uppdaterar jag?**
 

@@ -18,7 +18,7 @@ ht-degree: 1%
 
 
 
-![](assets/do-not-localize/how-to-video.png) Titta på den här [videon](https://helpx.adobe.com/campaign/classic/how-to/indetified-and-anonymous-interaction-in-acv6.html?playlist=/ccx/v1/collection/product/campaign/classic/segment/digital-marketers/explevel/intermediate/applaunch/get-started/collection.ccx.js&amp;ref=helpx.adobe.com) för att få en översikt över hur erbjudanden levereras till identifierade och anonyma mål.
+![](assets/do-not-localize/how-to-video.png) Titta på den här [videon](https://helpx.adobe.com/campaign/classic/how-to/indetified-and-anonymous-interaction-in-acv6.html?playlist=/ccx/v1/collection/product/campaign/classic/segment/digital-marketers/explevel/intermediate/applaunch/get-started/collection.ccx.js&ref=helpx.adobe.com) för att få en översikt över hur erbjudanden levereras till identifierade och anonyma mål.
 
 ## Målgruppsanpassning och lagring av en miljö för anonym interaktion {#targeting-and-storing-an-environment-for-anonymous-interactions}
 

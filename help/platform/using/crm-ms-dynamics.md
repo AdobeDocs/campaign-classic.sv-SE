@@ -167,7 +167,7 @@ Om du vill ansluta Microsoft Dynamics 365 och Campaign måste du skapa och konfi
 
    >[!NOTE]
    >
-   >Konfiguration av det externa Microsoft Dynamics CRM-kontot med varje **[!UICONTROL CRM O-Auth type]** beskrivs [ i det här avsnittet ](../../installation/using/external-accounts.md#microsoft-dynamics-crm-external-account).
+   >Konfiguration av det externa Microsoft Dynamics CRM-kontot med varje **[!UICONTROL CRM O-Auth type]** beskrivs [&#x200B; i det här avsnittet &#x200B;](../../installation/using/external-accounts.md#microsoft-dynamics-crm-external-account).
 
    ![](assets/crm-ms-dynamics-ext-account.png)
 

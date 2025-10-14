@@ -253,7 +253,7 @@ För att genomföra dessa åtgärder erbjuder Adobe Campaign
 
 ### Förbättra och ändra data {#enriching-and-modifying-data}
 
-Förutom måldimensionen kan du med filtreringsdimensionen ange vilken typ av insamlade data som ska användas. Se [Målinriktning och filtrering ](building-a-workflow.md#targeting-and-filtering-dimensions).
+Förutom måldimensionen kan du med filtreringsdimensionen ange vilken typ av insamlade data som ska användas. Se [Målinriktning och filtrering &#x200B;](building-a-workflow.md#targeting-and-filtering-dimensions).
 
 Identifierade och insamlade data kan berikas, aggregeras och ändras för att optimera målkonstruktionen. För att göra detta använder du följande, förutom datahanteringsaktiviteterna som beskrivs i avsnittet [Segmentera data](#segmenting-data):
 
