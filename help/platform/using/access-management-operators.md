@@ -7,9 +7,9 @@ feature: Access Management, Permissions
 role: User, Admin
 level: Beginner
 exl-id: 580282ce-ee30-422a-8724-9c328637cc39
-source-git-commit: a5bbd2e6c102a8afa4cd5931b77b0c83705a7bfa
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '1235'
+source-wordcount: '1237'
 ht-degree: 2%
 
 ---
@@ -18,15 +18,15 @@ ht-degree: 2%
 
 >[!CAUTION]
 >
->Dessa procedurer gäller bara för operatorer som ansluter till Campaign med den **gamla inbyggda autentiseringen**. Från och med Campaign Classic v7.3.1 bör alla operatorer använda [Adobe Identity Management System (IMS)](https://helpx.adobe.com/se/enterprise/using/identity.html){target="_blank"} för att ansluta till Campaign. [Läs mer](../../technotes/using/migrate-users-to-ims.md)
+>Dessa procedurer gäller bara för operatorer som ansluter till Campaign med den **gamla inbyggda autentiseringen**. Från och med Campaign Classic v7.3.1 bör alla operatorer använda [Adobe Identity Management System (IMS)](https://helpx.adobe.com/enterprise/using/identity.html){target="_blank"} för att ansluta till Campaign. [Läs mer](../../technotes/using/migrate-users-to-ims.md)
 >
->När du ansluter till Campaign med din Adobe ID gäller inte längre följande avsnitt. Lär dig hur du konfigurerar behörigheter med Adobe IMS i [dokumentationen för Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/admin/permissions/gs-permissions.html?lang=sv-SE){target="_blank"}.
+>När du ansluter till Campaign med din Adobe ID gäller inte längre följande avsnitt. Lär dig hur du konfigurerar behörigheter med Adobe IMS i [dokumentationen för Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/admin/permissions/gs-permissions.html){target="_blank"}.
 
 ## Kom igång med Campaign-operatörer {#about-operators}
 
 >[!NOTE]
 >
->Dessa procedurer gäller endast för operatorer som ansluter till Campaign med inbyggd autentisering. Information om Adobe IMS-autentisering finns i [den här dokumentationen](https://helpx.adobe.com/se/enterprise/using/manage-users-individually.html#_blank).
+>Dessa procedurer gäller endast för operatorer som ansluter till Campaign med inbyggd autentisering. Information om Adobe IMS-autentisering finns i [den här dokumentationen](https://helpx.adobe.com/enterprise/using/manage-users-individually.html#_blank).
 
 En operator är en Adobe Campaign-användare som har behörighet att logga in och utföra åtgärder.
 
@@ -56,7 +56,7 @@ Så här skapar du en ny operator och tilldelar behörigheter:
 
 1. Ange användarens **[!UICONTROL Identification parameters]**: användarens inloggning, lösenord och namn. Inloggningen och lösenordet används av operatören för att logga in på Adobe Campaign. När användaren är inloggad kan han/hon ändra sitt lösenord via menyn **[!UICONTROL Tools > Change password]**. Operatorns e-postadress är viktig eftersom den gör det möjligt för operatorn att ta emot meddelanden, till exempel när godkännanden bearbetas.
 
-   I det här avsnittet kan du även länka en operator till en organisationsenhet. Mer information finns på [den här sidan](../../distributed/using/about-distributed-marketing.md).
+   I det här avsnittet kan du även länka en operator till en organisationsenhet. Mer information finns i [dokumentationen för Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/distributed-marketing/about-distributed-marketing.html){target="_blank"}.
 
 1. Välj behörigheter för operatorn i avsnittet **[!UICONTROL Operator access rights]**.
 

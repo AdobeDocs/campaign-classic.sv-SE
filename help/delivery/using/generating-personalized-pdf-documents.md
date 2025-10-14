@@ -6,7 +6,7 @@ badge-v8: label="Gäller även för v8" type="Positive" tooltip="Gäller även C
 feature: Personalization
 role: User
 exl-id: e5239d99-256b-412b-be20-f64f822da9c3
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
 source-wordcount: '452'
 ht-degree: 1%
@@ -15,7 +15,7 @@ ht-degree: 1%
 
 # Skapa personaliserade PDF-dokument{#generating-personalized-pdf-documents}
 
-## Om PDF-dokument med variabel kod {#about-variable-pdf-documents}
+## Om variabla PDF-dokument {#about-variable-pdf-documents}
 
 Med Adobe Campaign kan du generera variabla PDF-dokument för e-postbilagor från dokument i LibreOffice eller Microsoft Word.
 
@@ -23,7 +23,7 @@ Följande tillägg stöds: .docx, .doc och .odt.
 
 För att personalisera dina dokument finns samma JavaScript-funktioner som för e-postpersonalisering.
 
-Du måste aktivera alternativet **[!UICONTROL "The content of the file is personalized and converted to PDF during the delivery of each message"]**. Det här alternativet är tillgängligt när du bifogar filen till e-postmeddelandet. Mer information om hur du bifogar en beräknad fil finns i avsnittet [Bifoga filer](attaching-files.md).
+Du måste aktivera alternativet **[!UICONTROL "The content of the file is personalized and converted to PDF during the delivery of each message"]**. Det här alternativet är tillgängligt när du bifogar filen till e-postmeddelandet. Mer information om hur du bifogar en beräknad fil finns i [dokumentationen för Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/attaching-files.html){target="_blank"}.
 
 Exempel på en anpassning av en fakturarubrik:
 

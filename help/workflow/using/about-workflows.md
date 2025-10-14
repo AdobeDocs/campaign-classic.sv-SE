@@ -3,78 +3,103 @@ product: campaign
 title: Om arbetsflöden
 description: Automatisera processerna med arbetsflöden, hantera data och målgrupper, skicka meddelanden med mera
 feature: Workflows, Data Management
-hide: true
-hidefromtoc: true
-exl-id: 51be6b90-2a7a-4757-9754-d16c540a87ff
-source-git-commit: 776c664a99721063dce5fa003cf40c81d94f8c78
+exl-id: 024a7344-9376-4ff3-926a-003148229f9f
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '650'
-ht-degree: 25%
+source-wordcount: '232'
+ht-degree: 7%
 
 ---
 
-# Kom igång med arbetsflöden{#gs-workflows}
+# Automatisera med arbetsflöden {#gs-workflows}
+
+Med Adobe Campaign arbetsflöden kan teamet effektivisera och automatisera hela affärsprocesser på hela plattformen. Med ett intuitivt grafiskt gränssnitt kan ni utforma och hantera arbetsflöden som koordinerar uppgifter som datasegmentering, kampanjutförande, filhantering och till och med användargodkännanden - allt på ett och samma ställe.
+
+Du kan t.ex. automatisera en process för att hämta en fil från en fjärrserver, extrahera dess innehåll och läsa in data till Adobe Campaign-servern sömlöst, vilket minskar den manuella ansträngningen och ökar effektiviteten. Arbetsflödesmotorn ser till att alla steg körs på ett tillförlitligt sätt och spåras för att ge synlighet och kontroll.
+
+>[!BEGINTABS]
+
+>[!TAB Arbetsflödesdokumentation]
+
+Mer information om arbetsflödeshantering finns i [dokumentationen för Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/about-workflows.html){target=_blank}.
+
+
+[![bild](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/about-workflows.html){target=_blank}
+
+
+>[!TAB Användbara länkar]
+
+Lär dig de viktigaste stegen för hantering av arbetsflöden i dokumentationen för Campaign v8:
+
+* [Arbetsflödesaktiviteter](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/activities.html){target=_blank}: En aktivitet är en uppgiftsmall. Arbetsflödena innefattar målinriktning, flödeskontroll, åtgärder och händelseaktiviteter.
+
+* [Bygg ett arbetsflöde](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/build-a-workflow.html){target=_blank}: Lär dig hur du skapar och kör målgruppsanpassning, kampanjer och tekniska arbetsflöden.
+
+* [God praxis](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/workflow-best-practices.html){target=_blank}: Lär dig riktlinjer för att optimera prestanda för kampanjarbetsflöden, förbättra designen av arbetsflöden och definiera rätt inställningar.
+
+* [Övervaka arbetsflöden](https://experienceleague.adobe.com/docs/campaign/automation/workflows/monitoring-workflows/monitor-workflow-execution.html){target=_blank}: Lär dig hur du övervakar arbetsflödeskörning för att se till att allt körs korrekt.
+
+* [Användningsexempel för arbetsflöden](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/workflow-use-cases.html){target=_blank}: Lär dig kontexter i vilka arbetsflöden kan användas och hur du implementerar dem genom hela användningsexempel.
+
+
+>[!ENDTABS]
 
 
 
-## Om arbetsflöden{#about-workflows}
 
-Adobe Campaign har en arbetsflödesmodul som gör att du kan ställa in alla processer och uppgifter i olika moduler på programservern. I den omfattande grafiska miljön kan du utforma processer såsom segmentering, kampanjkörning, filhantering och mänskligt deltagande osv. Arbetsflödesmotorn kör och spårar dessa processer.
 
-Du kan till exempel använda ett arbetsflöde för att ladda ned en fil från en server, expandera den och sedan importera poster som finns i databasen i Adobe Campaign.
+<!--
 
-Ett arbetsflöde kan även innefatta en eller flera operatörer som ska meddelas eller som kan göra val och godkänna processer. På så sätt kan du skapa en leveransinstruktion, tilldela en eller flera operatörer uppgiften att arbeta med innehåll, ange mål och godkänna korrekturer innan leveransen påbörjas.
+Adobe Campaign uses workflows to:
 
-Arbetsflöden sker i olika sammanhang och under olika faser av kampanjhanteringsprocessen.
+* Carry out targeting campaigns. [Learn more](building-a-workflow.md#implementation-steps-)
+* Build campaigns: for each campaign, the **[!UICONTROL Workflow]** tab lets you build the target and create the deliveries. [Learn more](building-a-workflow.md#campaign-workflows)
+* Perform technical processes: cleanup, collecting tracking information or provisional calculations. [Learn more](building-a-workflow.md#technical-workflows)
 
-Adobe Campaign använder arbetsflöden för att
+A workflow can mean both a process definition (the workflow model, which is a representation of what is supposed to happen) and an instance of this process (a workflow instance, which is a representation of what is actually happening).
 
-* Utför riktade kampanjer. [Läs mer](building-a-workflow.md#implementation-steps-)
-* Skapa kampanjer: för varje kampanj kan du skapa målet och leveranserna på fliken **[!UICONTROL Workflow]**. [Läs mer](building-a-workflow.md#campaign-workflows)
-* Utför tekniska processer: rensa, samla in spårningsinformation eller preliminära beräkningar. [Läs mer](building-a-workflow.md#technical-workflows)
-
-Ett arbetsflöde kan betyda både en processdefinition (arbetsflödesmodellen, som är en representation av vad som ska hända) och en instans av den här processen (en arbetsflödesinstans, som är en representation av vad som faktiskt händer).
-
-Arbetsflödesmallen beskriver de olika uppgifter som ska utföras och hur de länkas samman. Uppgiftsmallarna kallas aktiviteter och representeras av ikoner. De länkas ihop av övergångar.
+The workflow template describes the various tasks to be performed and how they are linked together. The task templates are called activities and are represented by icons. They are linked together by transitions.
 
 ![](assets/example1.png)
 
-Varje arbetsflöde innehåller:
+Each workflow contains:
 
 * **[!UICONTROL Activities]**
 
-  En aktivitet beskriver en uppgiftsmall. De olika aktiviteterna som är tillgängliga visas i diagrammet med ikoner. Varje typ har gemensamma egenskaper och specifika egenskaper. Alla aktiviteter har till exempel ett namn och en etikett, men bara aktiviteten **[!UICONTROL Approval]** har ett uppdrag.
+  An activity describes a task template. The various activities available are represented on the diagram by icons. Each type has common properties and specific properties. For example, while all activities have a name and label, only the **[!UICONTROL Approval]** activity has an assignment.
 
-  I ett arbetsflödesdiagram kan en viss aktivitet producera flera uppgifter, särskilt när det finns en slinga eller återkommande (periodiska) åtgärder.
+  In a workflow diagram, a given activity can produce multiple tasks, in particular when there is a loop or recurrent (periodic) actions.
 
-  Alla arbetsflödesaktiviteter listas i [det här avsnittet](about-activities.md), inklusive användningsexempel och exempel.
+  All workflow activities are listed in [this section](about-activities.md), including use cases and samples.
 
 * **[!UICONTROL Transitions]**
 
-  Med övergångar kan du länka aktiviteter och definiera deras sekvens. En övergång länkar en källaktivitet till en målaktivitet. Det finns flera typer av övergångar, som är beroende av källaktiviteten. Vissa övergångar har ytterligare parametrar som längd, villkor eller filter.
+  Transitions enable you to link activities and to define their sequence. A transition links a source activity to a destination activity. There are several sorts of transitions, which depend on the source activity. Some transitions have additional parameters such as a duration, a condition or a filter.
 
-  En övergång som inte är länkad till en målaktivitet får färgen orange och pilhuvudet visas som en romb.
+  A transition which is not linked to a destination activity is colored orange and the arrow head is shown as a diamond.
 
   >[!NOTE]
   >
-  >Ett arbetsflöde som innehåller oavslutade övergångar kan fortfarande köras: ett varningsmeddelande genereras och arbetsflödet pausas när det når övergången, men det genererar inget fel. Det är alltså möjligt att starta ett arbetsflöde utan att det är färdigt och att lägga till i det när du går vidare.
+  >A workflow containing unterminated transitions can still be executed: a warning message will be generated and the workflow will pause once it reaches the transition but it will not generate an error. It is thus possible to start a workflow without it being finished and to add to it as you go along.
 
-  Mer information om hur du skapar ett arbetsflöde finns i [det här avsnittet](building-a-workflow.md).
+  For more information about how to build a workflow, refer to [this section](building-a-workflow.md).
 
 * **[!UICONTROL Worktables]**
 
-  Arbetstabellen innehåller all information som övergången innehåller. För varje arbetsflöde används flera arbetstabeller. Data som förmedlas i dessa tabeller kan accelereras och användas under arbetsflödets hela livscykel, så länge de inte rensas. Det går att tömma tabeller som inte behövs varje gång arbetsflödet är passivat och eventuellt under körningen av de största arbetsflödena för att undvika att servern överbelastas.
+  The worktable contains all the information carried by the transition. Each workflow uses several worktables. The data conveyed in these tables can be accelerated and used throughout the workflow's life cycle, as long as it is not purged. Indeed, unneeded tables are purged each time the workflow is passivated, and possibly during the execution of the largest workflows to avoid overloading the server.
 
-  Läs mer om arbetsflödesdata och tabeller i [det här avsnittet](how-to-use-workflow-data.md).
+  Learn more on workflow data and tables in [this section](how-to-use-workflow-data.md).
 
-## Viktiga principer och bästa metoder{#principles-workflows}
+## Key principles and best practices{#principles-workflows}
 
-I dessa avsnitt hittar du vägledning och bästa metoder för att automatisera processer med arbetsflöden:
+Refer to these sections to find guidance and best practices to automate processes with workflows:
 
-* Läs mer om arbetsflödesaktiviteter på [den här sidan](how-to-use-workflow-data.md).
-* Lär dig hur du skapar ett arbetsflöde i [det här avsnittet](building-a-workflow.md).
-* Upptäck hur du använder arbetsflöden för att importera data i Campaign i [det här avsnittet](../../platform/using/import-export-workflows.md).
-* De bästa arbetsflödespraxis finns i [den här sidan](workflow-best-practices.md).
-* Hitta vägledning om arbetsflödeskörning i [det här avsnittet](starting-a-workflow.md).
-* Lär dig hur du övervakar arbetsflöden på [den här sidan](monitoring-workflow-execution.md).
-* Lär dig hur du ger användare åtkomst att använda arbetsflöden på [den här sidan](managing-rights.md).
+* Learn more about workflow activities in [this page](how-to-use-workflow-data.md).
+* Learn how to build a workflow in [this section](building-a-workflow.md).
+* Discover how to use workflows to import data in Campaign in [this section](../../platform/using/import-export-workflows.md).
+* Workflow best practices are detailed in [this page](workflow-best-practices.md).
+* Find guidance about workflow execution in [this section](starting-a-workflow.md).
+* Learn how to monitor workflows in [this page](monitoring-workflow-execution.md).
+* Learn how to grant access to users to use workflows in [this page](managing-rights.md).
+
+-->

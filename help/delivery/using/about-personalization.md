@@ -6,30 +6,18 @@ badge-v8: label="Gäller även för v8" type="Positive" tooltip="Gäller även C
 feature: Personalization
 role: User
 exl-id: 555082a2-1b62-4aa4-b80c-77b1a1ef9491
-source-git-commit: a1e9fec0e9c85bf25b79e24a7432dfb45bd1a0cb
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '437'
-ht-degree: 12%
+source-wordcount: '254'
+ht-degree: 0%
 
 ---
 
 # Kom igång med personalisering{#about-personalization}
 
-Meddelanden som skickas av Adobe Campaign kan personaliseras på flera olika sätt både när det gäller innehåll och utseende. Dessa sätt kan kombineras enligt kriterier som har tagits specifikt från mottagarprofilerna. För e-postleveranser kan du definiera elementen och anpassningsvillkoren för en leverans direkt i JavaScript på fliken **[!UICONTROL Source]** i meddelandet. I allmänhet kan du med Adobe Campaign:
-
-* Anpassa meddelandeformatet. Se [Meddelandeinnehåll](defining-the-email-content.md#message-content).
-* Infoga dynamiska personaliseringsfält. Se [Anpassningsfält](personalization-fields.md).
-* Infoga fördefinierade personaliseringsblock. Se [Personaliseringsblock](personalization-blocks.md).
-* Skapa villkorsstyrt innehåll. Se avsnittet [Villkorligt innehåll](conditional-content.md).
-
->[!CAUTION]
->
->Följande variabler är interna variabler som kan användas för personalisering, men som inte får ändras: **delivery**, **message**, **dataSource**, **targetData**, **provider**, **coupon**, **couponValue**, **position**.
-
-
 Med Adobe Campaign kan ni skräddarsy era leveranser för att skicka meddelanden som matchar mottagarnas profiler och intressen.
 
-Personalization hjälper er att göra budskapen mer relevanta och engagerande. Du kan använda mottagardata för att anpassa innehåll, lägga till dynamiska fält eller visa annan information baserat på villkor. Läs om hur du konfigurerar och använder personaliseringsfunktioner i dina leveranser i [Adobe Campaign v8-dokumentationen](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/personalize/personalize.html?lang=sv-SE){target=_blank}.
+Personalization hjälper er att göra budskapen mer relevanta och engagerande. Du kan använda mottagardata för att anpassa innehåll, lägga till dynamiska fält eller visa annan information baserat på villkor. Läs om hur du konfigurerar och använder personaliseringsfunktioner i dina leveranser i [Adobe Campaign v8-dokumentationen](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/personalize/personalize.html){target=_blank}.
 
 Som en del av kampanjsatsningen v8 har Campaign Classic-dokumentationen omstrukturerats. Gemensamma funktioner är nu bara tillgängliga i Campaign v8-dokumentationsuppsättningen.
 
@@ -37,32 +25,28 @@ Som en del av kampanjsatsningen v8 har Campaign Classic-dokumentationen omstrukt
 
 >[!TAB Dokumentation för innehållspersonalisering]
 
-Mer information om innehållspersonalisering finns i [dokumentationen för Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/personalize/personalize.html?lang=sv-SE){target=_blank}.
+Mer information om innehållspersonalisering finns i [dokumentationen för Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/personalize/personalize.html){target=_blank}.
 
 
-[![bild](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/personalize/personalize.html?lang=sv-SE){target=_blank}
+[![bild](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/personalize/personalize.html){target=_blank}
 
 
->[!TAB Skapa e-postleverans]
+>[!TAB Personalization och villkorligt innehåll]
 
-Läs om hur du skapar e-postleveranser i dokumentationen för Campaign v8:
+Lär dig de viktigaste stegen som rör villkorat innehåll och personalisering i dokumentationen för Campaign v8:
 
-* [Skapa en e-postleverans](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/email.html?lang=sv-SE){target="_blank"}: Lär dig mer om de olika stegen som krävs för att skapa en e-postleverans.
-* [Definiera e-postinnehållet](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/defining-the-email-content.html?lang=sv-SE){target="_blank"}: Definiera vad e-postmeddelandet ska innehålla: avsändare, ämne, innehåll, bilder.
-* [Definiera interaktivt innehåll](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/defining-interactive-content.html?lang=sv-SE){target="_blank"}: Använd den interaktiva AMP för e-post-format för att skicka dynamiska e-postmeddelanden.
-* [Skicka e-post på japanska mobiler](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/sending-emails-on-japanese-mobiles.html?lang=sv-SE){target="_blank"}: Använd ett av de tre specifika japanska formaten för e-post på mobiler.
-* [Bifoga filer i ett e-postmeddelande](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/attaching-files.html?lang=sv-SE){target="_blank"}: Lär dig olika sätt att bifoga en eller flera filer i ett e-postmeddelande.
+* [Personalization-data](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/personalize/personalization-data.html){target="_blank"}: Lär dig hur du använder olika datakällor för personalisering för att anpassa dina leveranser.
+* [Anpassningsfält](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/personalize/personalization-fields.html){target="_blank"}: Lär dig hur du infogar och använder anpassningsfält så att alla mottagare ser sina egna data i meddelandets ämne eller innehåll.
+* [Personaliseringsblock](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/personalize/personalization-blocks.html){target="_blank"}: Lär dig hur du använder personaliseringsblock för att infoga dynamiskt, villkorligt innehåll i dina meddelanden baserat på mottagardata.
+* [Villkorligt innehåll](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/personalize/conditions.html){target="_blank"}: Lär dig hur du infogar villkorligt innehåll baserat på mottagarfältvärden.
 
+>[!TAB EXXXXXX]
 
->[!TAB E-postparametrar]
+Läs mer på de här sidorna om du vill veta mer om dokumentationen för XXXXX Campaign v8:
 
-Läs dessa sidor för att lära dig mer om e-postparametrar i dokumentationen för Campaign v8:
-
-* [Länk till spegelsidan](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/mirror-page.html?lang=sv-SE){target="_blank"}: Konfigurera spegelsidan så att dina klienter alltid får bästa återgivningsresultat.
-* [Lägg till en BCC-adress](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/email-bcc.html?lang=sv-SE){target="_blank"}: Konfigurera Adobe Campaign för att behålla en kopia av e-postmeddelanden som skickas från din plattform.
-* [Definiera ytterligare e-postparametrar](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/email-parameters.html?lang=sv-SE){target="_blank"}: Lär dig mer om de alternativ och parametrar som är tillgängliga från leveransegenskaperna.
-
-Se även den här [sidan](sending-with-enhanced-mta.md) om du vill veta mer om den förbättrade MTA-filen.
+Personaliserade kuponger
+Generera skräddarsydda PDF-dokument
+Anpassa uttryckslistan
 
 >[!ENDTABS]
 
@@ -77,7 +61,7 @@ Before starting sending emails:
 
 * Make sure recipient profiles contain at least an email address.
 * Learn more about the Adobe Campaign [Delivery best practices](delivery-best-practices.md).
-* Read out these sections to learn more about Deliverability: [Deliverability management in Campaign](about-deliverability.md) and [Deliverability best practices guide](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html?lang=sv-SE).
+* Read out these sections to learn more about Deliverability: [Deliverability management in Campaign](about-deliverability.md) and [Deliverability best practices guide](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html).
 
 The key steps to send an email are as follows:
 

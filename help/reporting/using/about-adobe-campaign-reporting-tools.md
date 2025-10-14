@@ -5,14 +5,14 @@ description: Analysera framgångarna med dina kampanjer i inbyggda eller anpassa
 feature: Reporting, Monitoring
 badge-v8: label="Gäller även för v8" type="Positive" tooltip="Gäller även Campaign v8"
 exl-id: 1ef30004-e1b0-4dde-8104-0ee9e8aa9d8b
-source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '344'
-ht-degree: 14%
+source-wordcount: '347'
+ht-degree: 13%
 
 ---
 
-# Kom igång med rapporter {#about-adobe-campaign-reporting-tools}
+# Kom igång med rapportering {#about-adobe-campaign-reporting-tools}
 
 
 
@@ -20,7 +20,7 @@ Förutom [inbyggda rapporter](../../reporting/using/about-campaign-built-in-repo
 
 Adobe Campaign är inget specialiserat rapporteringsverktyg: rapporter som skapats i Adobe Campaign gör det i huvudsak möjligt att visa aggregerade data. Adobe Campaign-rapporter, som används för att analysera och representera data, är inte utformade för databasexport.
 
-Om du vill exportera data från Adobe Campaign-databasen måste du skapa ett arbetsflöde och använda en dataexportaktivitet. Mer information om detta finns i [det här avsnittet](../../workflow/using/about-action-activities.md).
+Om du vill exportera data från Adobe Campaign-databasen måste du skapa ett arbetsflöde och använda en dataexportaktivitet. Mer information finns i [dokumentationen för Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/action-activities/action-activities.html){target="_blank"}.
 
 Adobe Campaign har flera rapportverktyg:
 

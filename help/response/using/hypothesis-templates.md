@@ -8,9 +8,9 @@ audience: campaign
 content-type: reference
 topic-tags: response-manager
 exl-id: 428c7677-454b-4618-bae7-0be7df6dfcaa
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '1387'
+source-wordcount: '1390'
 ht-degree: 2%
 
 ---
@@ -65,7 +65,7 @@ På mallens **[!UICONTROL General]**-flik kan du ange allmänna mallalternativ. 
   >
   >Om mallen är konfigurerad att ta hänsyn till en kontrollgrupp, men ingen grupp har definierats i leveransen som hypotesen gäller, kommer resultatet endast att baseras på målmottagarna.
 
-  Mer information om hur du definierar och konfigurerar en kontrollgrupp finns i [det här avsnittet](../../campaign/using/marketing-campaign-deliveries.md#defining-a-control-group).
+  Mer information om hur du definierar och konfigurerar en kontrollgrupp finns i [dokumentationen för Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-target.html#add-a-control-group){target=_blank}.
 
 * **[!UICONTROL Channel]**: du kan välja en viss kanal eller göra hypotesmallen tillgänglig för alla kanaler i Adobe Campaign-konsolen genom att välja **[!UICONTROL All channels]** i listrutan. Om du konfigurerar mallen för en viss kanal kan du på så sätt automatiskt filtrera leveranser per kanal när du skapar hypotesen. [Läs mer](creating-hypotheses.md)
 
@@ -230,7 +230,7 @@ I det här exemplet ska vi skapa en hypotesmall för direktreklam. Transaktionst
 
    ![](assets/response_hypothesis_model_example_005.png)
 
-1. Klicka på **[!UICONTROL Edit query]** på fliken **[!UICONTROL Scope]** för att skapa ett filter för hypoteser.
+1. Klicka på **[!UICONTROL Scope]** på fliken **[!UICONTROL Edit query]** för att skapa ett filter för hypoteser.
 
    ![](assets/response_hypothesis_model_example_011.png)
 

@@ -5,9 +5,9 @@ description: Läs mer om omfattningen av och egenskaperna hos utskick av e-post 
 feature: Email
 role: User, Admin, Developer
 exl-id: 58cc23f4-9ab0-45c7-9aa2-b08487ec7e91
-source-git-commit: b353b562bd2f0b0bd2dfde22c6477ab66d499483
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '1368'
+source-wordcount: '1380'
 ht-degree: 0%
 
 ---
@@ -121,7 +121,7 @@ Mer information om leveransflöde finns i [det här avsnittet](../../reporting/u
 
 Inställningarna för nya försök i leveransen används inte längre av Campaign. Mjuka avhoppsförsök och hur lång tid det tar mellan dem bestäms av den förbättrade MTA-metoden baserat på typ och allvarlighetsgrad för de avhoppssvar som kommer tillbaka från meddelandets e-postdomän.
 
-Mer information om återförsök finns i [det här avsnittet](steps-sending-the-delivery.md#configuring-retries).
+Mer information om återförsök finns på den här [sidan](communication-channels.md) under **Leveranssändning** > **Konfigurera återförsök**.
 
 ### Giltighetsperiod
 
@@ -131,16 +131,16 @@ Om giltighetsperioden till exempel är inställd på standardvärdet 5 dagar i C
 
 När ett meddelande har funnits i den utökade MTA-kön i 3,5 dagar och inte kunnat levereras, kommer det att gå ut och dess status kommer att uppdateras från **[!UICONTROL Sent]** till **[!UICONTROL Failed]** i leveransloggarna.
 
-Mer information om giltighetsperioden finns i [det här avsnittet](steps-sending-the-delivery.md#defining-validity-period).
+Mer information om giltighetsperioden finns på [sidan](communication-channels.md) under **Leveransmeddelande** > **Definiera giltighetsperiod**.
 
 ### DKIM-signering
 
 Signering med e-postautentisering för DKIM (DomainKeys Identified Mail) görs av den utökade MTA:n. DKIM-signering av den interna Campaign MTA-filen kommer att stängas av i domänhanteringstabellen som en del av den förbättrade MTA-uppgraderingen.
-Mer information om DKIM finns i [Adobe Deliverability Best Practice Guide](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html?lang=sv-SE#authentication).
+Mer information om DKIM finns i [Adobe Deliverability Best Practice Guide](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html#authentication).
 
 ### Rapport om lyckade leveranser
 
-I vyn **[!UICONTROL Summary]** för en [kontrollpanel](delivery-dashboard.md) för e-postleverans börjar procentandelen **[!UICONTROL Success]** att vara 100 % och går sedan successivt ned under leveransens [giltighetsperiod](steps-sending-the-delivery.md#defining-validity-period), när de mjuka och hårda studenterna rapporteras tillbaka från det förbättrade MTA till Campaign.
+I vyn **[!UICONTROL Summary]** för en [kontrollpanel](delivery-dashboard.md) för e-postleverans börjar procentandelen **[!UICONTROL Success]** att vara 100 % och går sedan successivt ned under leveransens [giltighetsperiod](communication-channels.md), när de mjuka och hårda studenterna rapporteras tillbaka från det förbättrade MTA till Campaign.
 
 Alla meddelanden visas som **[!UICONTROL Sent]** i de [sändande loggarna](delivery-dashboard.md#delivery-logs-and-history) så snart de har vidarebefordrats från Campaign till den utökade MTA:n. De har den statusen såvida inte eller tills ett [studs](understanding-delivery-failures.md#delivery-failure-types-and-reasons) för det meddelandet kommuniceras tillbaka från det förbättrade MTA till Campaign.
 

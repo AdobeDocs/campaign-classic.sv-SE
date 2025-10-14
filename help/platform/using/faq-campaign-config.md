@@ -8,10 +8,10 @@ content-type: reference
 level: Beginner, Intermediate, Experienced
 topic-tags: starting-with-adobe-campaign
 exl-id: 50bed489-2a0f-4123-a326-3d68c8295662
-source-git-commit: 2bfcec5eaa1145cfb88adfa9c8b2f72ee3cd9469
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '752'
-ht-degree: 70%
+source-wordcount: '750'
+ht-degree: 68%
 
 ---
 
@@ -51,7 +51,7 @@ Förutom [Adobe Deliverability Best Practice Guide](https://experienceleague.ado
 
 Med Campaign kan du skapa godkännandeprocesser för de viktigaste stegen i marknadsföringskampanjen i samarbetsläge. För varje kampanj kan du godkänna leveransmålet, innehållet och kostnaderna. Adobe Campaign-operatörer som ansvarar för godkännande kan meddelas via e-post och kan godkänna eller avvisa godkännanden från konsolen eller via en webbanslutning.
 
-[Klicka här för att läsa mer](../../campaign/using/marketing-campaign-approval.md#checking-and-approving-deliveries) och se hur du implementerar ditt godkännande av leveransinnehåll i Campaign.
+Upptäck hur du implementerar ditt godkännande av leveransinnehåll i [dokumentationen för Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-approval.html#review-and-approve-deliveries){target="_blank"}.
 
 ## Hur får jag åtkomst till data som lagras i en extern databas? {#how-can-i-access-data-stored-in-an-external-database-}
 

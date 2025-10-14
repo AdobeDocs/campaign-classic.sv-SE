@@ -1,14 +1,14 @@
 ---
 product: campaign
-title: "Användningsfall: konfigurera fältersättning"
-description: "Användningsfall: konfigurera fältersättning"
+title: 'Användningsfall: konfigurera fältersättningen'
+description: 'Användningsfall: konfigurera fältersättningen'
 badge-v8: label="Gäller även för v8" type="Positive" tooltip="Gäller även Campaign v8"
 feature: Seed Address
 exl-id: 3f567b2d-6f98-4831-af84-7db17fd12c6e
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '457'
-ht-degree: 1%
+source-wordcount: '456'
+ht-degree: 4%
 
 ---
 
@@ -33,7 +33,7 @@ Om du vill använda slumpmässig fältersättning måste du ha:
 
 ## Skapa en leverans {#step-1---creating-a-delivery}
 
-Stegen för att skapa en leverans beskrivs i avsnittet [Skapa en e-postleverans](creating-an-email-delivery.md).
+Stegen för att skapa en leverans beskrivs i [Campaign v8-dokumentationen](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/email.html){target="_blank"}.
 
 I det här exemplet har leveranshanteraren skapat nyhetsbrevet.
 
@@ -80,7 +80,7 @@ Du måste uppdatera den här datarchemaändringen för att den ska kunna visas i
 
    ![](assets/dlv_seeds_usecase_28.png)
 
-   Du ser att ett av anpassningsfälten är tomt. Eftersom startadressen inte har några data för det här fältet kan inte HTML i innehållsförhandsvisningen visa ett värde.
+   Du ser att ett av anpassningsfälten är tomt. Eftersom startadressen inte har data för det här fältet kan HTML innehållsförhandsvisning inte visa ett värde.
 
    Slumpmässig ersättning av fält utförs **vid leveranstillfället**.
 

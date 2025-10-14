@@ -1,22 +1,22 @@
 ---
 product: campaign
-title: Kom igång med Campaign HTML editor
+title: Kom igång med Campaign HTML Editor
 description: Kom igång med Campaign DCE
 feature: Web Apps, Web Forms, Landing Pages, Email Design
 badge-v8: label="Gäller även för v8" type="Positive" tooltip="Gäller även Campaign v8"
 exl-id: f5d65e89-6b18-482b-97d8-11ab94f6775e
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '265'
+source-wordcount: '271'
 ht-degree: 0%
 
 ---
 
-# Kom igång med Campaign HTML editor{#about-campaign-html-editor}
+# Kom igång med Campaign HTML Editor{#about-campaign-html-editor}
 
 
 
-**Digital Content Editor (DCE)** är en HTML-innehållsredigerare som du kan använda för att enkelt skapa innehåll och mallar i HTML-format i Adobe Campaign.
+**Digital Content Editor (DCE)** är en HTML-innehållsredigerare som gör att du enkelt kan skapa innehåll och mallar i HTML-format i Adobe Campaign.
 
 Med Digital Content Editor kan du infoga och formatera sidelement och mappa databasfält med element från en HTML-sida. Den här redigeraren är tillgänglig när du skapar en sida för ett webbprogram eller när du skapar leveranser som baseras på en DCE-mall.
 
@@ -41,7 +41,7 @@ Om du vill skapa ett enkelt **webbprogram** måste du:
 1. Skapa ett webbprogram - [Läs mer](creating-a-landing-page.md)
 1. Välj befintligt innehåll eller skapa innehåll från en standardmall - [Läs mer](template-management.md)
 1. Redigera och konfigurera innehåll - [Läs mer](editing-content.md)
-1. Publish webbprogrammet - [Läs mer](creating-a-landing-page.md#step-3---publishing-content)
+1. Publicera webbprogrammet - [Läs mer](creating-a-landing-page.md#step-3---publishing-content)
 
 >[!NOTE]
 >
@@ -52,7 +52,7 @@ Om du vill skapa en **e-postleverans** måste du:
 1. Skapa en leverans från en DCE-mall - [Läs mer](use-case-creating-an-email-delivery.md)
 1. Välj ett befintligt innehåll eller skapa innehåll från en [standardmall](template-management.md)
 1. Redigera och konfigurera onlinematerial
-1. Skicka leveransen - [Läs mer](../../delivery/using/steps-about-delivery-creation-steps.md)
+1. Skicka leveransen - Läs mer i [dokumentationen för Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html){target="_blank"}
 
 >[!NOTE]
 >

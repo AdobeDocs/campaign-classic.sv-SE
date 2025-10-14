@@ -7,10 +7,10 @@ role: User
 hide: true
 hidefromtoc: true
 exl-id: 0188c3fe-8176-4904-8505-c47a72c20fcc
-source-git-commit: 42cec0e9bede94a2995a5ad442822512bda14f2b
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '130'
-ht-degree: 4%
+source-wordcount: '144'
+ht-degree: 1%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 4%
 
 De viktigaste stegen när du skapar en leverans är följande:
 
-1. **Skapa och identifiera leveransen**. [Läs mer](steps-create-and-identify-the-delivery.md)
+1. **Skapa och identifiera leveransen**. Läs mer i [Campaign v8-dokumentationen](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html#create-the-delivery){target="_blank"}.
 
 1. **Definiera leveransinnehållet**. Definitionen av leveransinnehåll är specifik för varje kanal. Mer information finns i det dedikerade avsnittet:
 
@@ -27,7 +27,7 @@ De viktigaste stegen när du skapar en leverans är följande:
    * [Direktpostkanal](defining-the-direct-mail-content.md)
    * [Mobil programkanal](about-mobile-app-channel.md)
 
-1. **Definiera målpopulationen**. [Läs mer](steps-defining-the-target-population.md)
+1. **Definiera målpopulationen**. Läs mer i [Campaign v8-dokumentationen](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message#target-population.html){target="_blank"}.
 
 1. **Skicka leveransen**. [Läs mer](steps-sending-the-delivery.md)
 
@@ -35,4 +35,4 @@ De viktigaste stegen när du skapar en leverans är följande:
 
 >[!NOTE]
 >
->Stegen som beskrivs i det här kapitlet förutsätter att alla målmottagare och deras profiler lagras i databasen, utom vid extern leverans (se [Välja externa mottagare](steps-defining-the-target-population.md#selecting-external-recipients)).
+>Stegen som beskrivs i det här kapitlet förutsätter att alla målmottagare och deras profiler lagras i databasen, utom vid extern leverans (se [Campaign v8-dokumentationen](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html#selecting-external-recipients){target="_blank"}).

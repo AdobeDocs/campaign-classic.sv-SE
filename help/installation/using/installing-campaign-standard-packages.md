@@ -1,18 +1,18 @@
 ---
 product: campaign
-title: Installera inbyggda paket med Campaign Classic
+title: Installera Campaign Classic inbyggda paket
 description: Lär dig hur du installerar inbyggda Campaign-paket
 feature: Installation, Application Settings
 badge-v7-prem: label="Endast lokal/hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=sv" tooltip="Gäller endast lokala och hybrida driftsättningar"
 exl-id: 2bc077c4-ed65-4157-bfc9-df5d0442f476
-source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '1264'
+source-wordcount: '1270'
 ht-degree: 1%
 
 ---
 
-# Installera inbyggda paket med Campaign Classic{#installing-campaign-standard-packages}
+# Installera Campaign Classic inbyggda paket{#installing-campaign-standard-packages}
 
 
 
@@ -28,7 +28,7 @@ Inbyggda paket innehåller en uppsättning funktioner som kan installeras efter 
 >
 >När ett paket har installerats kan du inte avinstallera det.
 >
->Kontakta Adobe för att driftsätta ett nytt inbyggt paket.
+>Kontakta Adobe om du är värd- eller hybridkund och vill distribuera ett nytt inbyggt paket.
 
 Installera ett inbyggt paket:
 
@@ -66,12 +66,12 @@ I följande tabell visas alla inbyggda Campaign-paket.
   </tr> 
   <tr> 
    <td> Marknadsföringskampanjer (kampanj)<br /> </td> 
-   <td> Definierar, optimerar, kör och analyserar kommunikation och marknadsföringskampanjer. <a href="../../campaign/using/designing-marketing-campaigns.md">Läs mer</a><br /> </td> 
+   <td> Definierar, optimerar, kör och analyserar kommunikation och marknadsföringskampanjer. <a href="https://experienceleague.adobe.com/docs/campaign/campaign-v8/campaigns/campaigns.html" target="_blank">Läs mer</a><br /> </td> 
    <td> Marknadsföring</td>
   </tr> 
   <tr> 
    <td> Marknadsföringsresurser (MRM)<br /> </td> 
-   <td> Kontrollerar marknadsföringsåtgärder i ett samverkansbaserat läge genom att tillhandahålla hantering och spårning av uppgifter, budget och marknadsföringsresurser. <a href="../../mrm/using/about-marketing-resource-management.md">Läs mer</a> <br /> </td> 
+   <td> Kontrollerar marknadsföringsåtgärder i ett samverkansbaserat läge genom att tillhandahålla hantering och spårning av uppgifter, budget och marknadsföringsresurser. <a href="https://experienceleague.adobe.com/docs/campaign/automation/mrm/about-marketing-resource-management.html" target="_blank">Läs mer</a> <br /> </td> 
    <td> Marknadsföring</td> 
   </tr> 
   <tr> 
@@ -157,12 +157,12 @@ I följande tabell visas alla inbyggda Campaign-paket.
   </tr> 
   <tr> 
    <td> Åtkomst till externa data (federerad dataåtkomst)<br /> </td> 
-   <td> Tillhandahåller alternativet FDA (Federated Data Access) för att bearbeta information som lagras i en eller flera externa databaser så att du kan komma åt externa data utan att ändra datastrukturen i Adobe Campaign.  Valfritt. <a href="../../workflow/using/accessing-an-external-database-fda.md">Läs mer</a> <br /> </td> 
+   <td> Tillhandahåller alternativet FDA (Federated Data Access) för att bearbeta information som lagras i en eller flera externa databaser så att du kan komma åt externa data utan att ändra datastrukturen i Adobe Campaign.  Valfritt. <a href="https://experienceleague.adobe.com/docs/campaign/automation/workflows/advanced-management/accessing-an-external-database-fda.html" target="_blank">Läs mer</a> <br /> </td> 
    <td> Alla<br /> </td> 
   </tr> 
   <tr> 
    <td> Kampanjoptimering <br /> </td> 
-   <td> Kontrollerar, filtrerar och övervakar sändningen av leveranser så att de skickade meddelandena bäst uppfyller kundernas behov och förväntningar, i enlighet med företagets kommunikationspolicy. Valfritt. <a href="../../campaign-opt/using/about-campaign-typologies.md">Läs mer</a> <br /> </td> 
+   <td> Kontrollerar, filtrerar och övervakar sändningen av leveranser så att de skickade meddelandena bäst uppfyller kundernas behov och förväntningar, i enlighet med företagets kommunikationspolicy. Valfritt. <a href="https://experienceleague.adobe.com/docs/campaign/automation/campaign-optimization/campaign-typologies.html" target="_blank">Läs mer</a> <br /> </td> 
    <td> Marknadsföring<br /> </td> 
   </tr> 
   <tr> 
@@ -182,7 +182,7 @@ I följande tabell visas alla inbyggda Campaign-paket.
   </tr> 
   <tr> 
    <td> Central/lokal marknadsföring (distribuerad marknadsföring)<br /> </td> 
-   <td> Implementerar samverkanskampanjer mellan centrala enheter (huvudkontor, marknadsföringsavdelningar osv.) och lokala enheter (försäljningsställen, regionala myndigheter osv.). Valfritt. <a href="../../distributed/using/about-distributed-marketing.md">Läs mer</a><br /> </td> 
+   <td> Implementerar samverkanskampanjer mellan centrala enheter (huvudkontor, marknadsföringsavdelningar osv.) och lokala enheter (försäljningsställen, regionala myndigheter osv.). Valfritt. <a href="https://experienceleague.adobe.com/docs/campaign/automation/distributed-marketing/about-distributed-marketing.html" target="_blank">Läs mer</a><br /> </td> 
    <td> Marknadsföring </td> 
   </tr> 
   <tr> 
@@ -196,7 +196,7 @@ I följande tabell visas alla inbyggda Campaign-paket.
    <td> Marknadsföring </td> 
   </tr> 
   <tr> 
-   <td> AEM-integrering <br /> </td> 
+   <td> AEM-integrering<br /> </td> 
    <td> Gör att du kan hantera innehållet i e-postutskick och formulär direkt i Adobe Experience Manager för att dra nytta av AEM funktioner för innehållsredigering och Adobe Campaign leveranskapacitet. <a href="../../integrations/using/about-adobe-experience-manager.md">Läs mer</a> <br /> </td> 
    <td> Marknadsföring</td> 
   </tr> 
@@ -212,7 +212,7 @@ I följande tabell visas alla inbyggda Campaign-paket.
   </tr> 
   <tr> 
    <td> Skyddsförordningen för personuppgifter<br /> </td> 
-   <td> Innehåller ytterligare funktionalitet som hjälper dig att följa sekretesskraven i Campaign Classic. <a href="https://helpx.adobe.com/se/campaign/kb/acc-privacy.html">Läs mer</a> <br /> </td> 
+   <td> Innehåller ytterligare funktionalitet som kan hjälpa dig att följa Campaign Classic sekretesskrav. <a href="https://helpx.adobe.com/se/campaign/kb/acc-privacy.html">Läs mer</a> <br /> </td> 
    <td> Alla</td> 
   </tr> 
   <tr> 
@@ -227,12 +227,12 @@ I följande tabell visas alla inbyggda Campaign-paket.
   </tr> 
   <tr> 
    <td> Stöd för AMP<br /> </td> 
-   <td> Gör att du kan använda den nya interaktiva AMP för e-postformat och skicka dynamiska e-postmeddelanden. Valfritt. <a href="../../delivery/using/defining-interactive-content.md">Läs mer</a> <br /> </td> 
+   <td> Gör att du kan använda den nya interaktiva AMP för e-postformat och skicka dynamiska e-postmeddelanden. Valfritt. <a href="https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/defining-interactive-content.html" target="_blank">Läs mer</a> <br /> </td> 
    <td> Alla </td> 
   </tr> 
   <tr> 
    <td> ACS-anslutning (borttagen)<br /> </td> 
-   <td> Bridges Adobe Campaign v7 and Adobe Campaign Standard. Det är en integrerad funktion i Campaign v7 som automatiskt återger data till Campaign Standarden och kombinerar det bästa av båda programmen. Valfritt.<br /> </td> 
+   <td> Bridges Adobe Campaign v7 and Adobe Campaign Standard. Det är en integrerad funktion i Campaign v7 som automatiskt replikerar data till Campaign Standard och kombinerar det bästa av båda programmen. Valfritt.<br /> </td> 
    <td> Marknadsföring </td> 
   </tr> 
  </tbody> 

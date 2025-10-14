@@ -4,10 +4,10 @@ title: Riktlinjer för övervakning
 description: Upptäck riktlinjer och bästa praxis för att övervaka instans och processer i Campaign
 feature: Monitoring
 exl-id: ca0c33c5-7350-462a-bc65-4cab51e529d9
-source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '743'
-ht-degree: 18%
+source-wordcount: '758'
+ht-degree: 16%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 18%
 
 ## Instansövervakningsinstrumentpanel {#instance-monitoring-dashboard}
 
-Fliken **[!UICONTROL Monitoring]**, som du kommer åt från Campaign Classicens hemsida, är startpunkten som du kan använda för att övervaka instansen.
+Fliken **[!UICONTROL Monitoring]**, som du kommer åt från Campaign Classic hemsida, är startpunkten som du kan använda för att övervaka instansen.
 
 Här finns en kontrollpanel med information om vad som händer i instansen: status (version av bygge, installerade paket, osv.), systemindikatorer, loggar, arbetsflöden som körs, status för senaste skickade leveranser osv.
 
@@ -25,12 +25,12 @@ Detaljerad information finns [här](../../production/using/monitoring-processes.
 
 ![](assets/monitoring_tab.png)
 
-## Övervaka Campaign Classicens processer {#monitoring-campaign-classic-processes}
+## Övervaka Campaign Classic-processer {#monitoring-campaign-classic-processes}
 
 <table>
 <tr><td><img src="assets/do-not-localize/icon_system.svg" width="60px"><p><a href="#monitoring-instance">Övervaka instansen</a></p></td>
 <td><img src="assets/do-not-localize/icon_workflows.svg" width="60px"><p><a href="#monitoring-workflows">Övervaka arbetsflöden</a></p></td>
-<td><img src="assets/do-not-localize/icon_send.svg" width="60px"><p><a href="#monitoring-deliveries">Bildskärmsleveranser</a></p></td>
+<td><img src="assets/do-not-localize/icon_send.svg" width="60px"><p><a href="#monitoring-deliveries">Övervaka leveranser</a></p></td>
 <td><img src="assets/do-not-localize/icon_database.svg" width="60px"><p><a href="#monitoring-database">Övervaka databasen</a></p></td></tr>
 </table>
 
@@ -64,7 +64,7 @@ På Kontrollpanelen kan du hantera flera inställningar för instansen: hantera 
 
 **Värmekarta för arbetsflöde**
 
-Workflow HeatMap ger en visuell representation av alla arbetsflöden som körs på din instans. Det gör att du enkelt kan övervaka inläsningen av instansen och planera arbetsflödena utifrån detta. [Klicka här](../../workflow/using/heatmap.md) för mer information.
+Workflow HeatMap ger en visuell representation av alla arbetsflöden som körs på din instans. Det gör att du enkelt kan övervaka inläsningen av instansen och planera arbetsflödena utifrån detta. Se [Campaign v8-dokumentationen](https://experienceleague.adobe.com/docs/campaign/automation/workflows/monitoring-workflows/heatmap.html){target="_blank"}.
 
 **Verifieringskedja**
 
@@ -76,13 +76,13 @@ Du kan utföra specifika åtgärder när du stöter på problem med arbetsflöde
 
 **Övervakning av arbetsflödesstatus**
 
-Utöver heatmap-kartan kan du skapa ett arbetsflöde där du kan övervaka statusen för en uppsättning arbetsflöden och skicka återkommande meddelanden till arbetsledare. [Klicka här](../../workflow/using/supervising-workflows.md) för mer information.
+Utöver heatmap-kartan kan du skapa ett arbetsflöde där du kan övervaka statusen för en uppsättning arbetsflöden och skicka återkommande meddelanden till arbetsledare. Se [Campaign v8-dokumentationen](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/monitoring/workflow-supervision.html){target="_blank"}.
 
 **Allmänna riktlinjer**
 
 Du kan förbättra prestandan genom att följa riktlinjer och bästa praxis när du använder arbetsflöden. Mer information finns i följande avsnitt:
-* [Bästa tillvägagångssätt när du använder arbetsflöden](../../workflow/using/workflow-best-practices.md)
-* [Övervaka arbetsflödeskörning](../../workflow/using/monitoring-workflow-execution.md)
+* [Bästa tillvägagångssätt vid användning av arbetsflöden](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/workflow-best-practices.html){target="_blank"}
+* [Övervaka körning av arbetsflöde](https://experienceleague.adobe.com/docs/campaign/automation/workflows/monitoring-workflows/monitor-workflow-execution.html){target="_blank"}
 
 ### Övervaka leveranser {#monitoring-deliveries}
 
@@ -94,7 +94,7 @@ SMTP-rapporter visar leveransstatistik och SMTP-fel per domän. [Läs mer](../..
 
 **Bästa praxis**
 
-[Bästa tillvägagångssätt för leverans och design](../../delivery/using/delivery-best-practices.md) kan hjälpa dig att förbättra prestanda.
+Läs [dokumentationen för Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/delivery-best-practices.html){target="_blank"} om du vill veta mer om de bästa sätten att skicka och designa för att förbättra prestanda.
 
 **Felsökning vid leverans**
 Specifika åtgärder kan utföras vid problem med leveranser:
@@ -127,13 +127,13 @@ Vi rekommenderar att du regelbundet utför databasunderhåll för att undvika ö
 
 Säkerhetskopiering är nödvändigt för att undvika dataförlust i händelse av problem (oavsett om det är fysiskt eller systemrelaterat) på en dator. [Klicka här](../../production/using/backup.md) om du vill ha mer information. Återställningsproceduren beskrivs i [det här avsnittet](../../production/using/restoration.md).
 
-## Tekniska principer för Campaign Classic {#campaign-classic-technical-principles}
+## Campaign Classic tekniska principer {#campaign-classic-technical-principles}
 
-Tekniska resurser finns i Campaign Classicens dokumentation. Vi rekommenderar att du lär dig mer om dessa ämnen innan du utför någon teknisk åtgärd på din instans.
+Tekniska resurser finns i Campaign Classic dokumentation. Vi rekommenderar att du lär dig mer om dessa ämnen innan du utför någon teknisk åtgärd på din instans.
 
 **Värdmodeller och funktioner**
 
-* [Värdmodeller för Campaign Classic](../../installation/using/hosting-models.md)
+* [Campaign Classic värdmodeller](../../installation/using/hosting-models.md)
 * [Funktioner för värdmodeller](../../installation/using/capability-matrix.md)
 
 **Serverkonfiguration**
@@ -147,9 +147,9 @@ Tekniska resurser finns i Campaign Classicens dokumentation. Vi rekommenderar at
 
 **Allmänna principer**
 
-* [Campaign Classicens arkitektur](../../production/using/general-architecture.md)
-* [Moduler för Campaign Classic](../../production/using/operating-principle.md)
-* [Alternativ för Campaign Classic](../../installation/using/configuring-campaign-options.md)
+* [Campaign Classic-arkitektur](../../production/using/general-architecture.md)
+* [Campaign Classic moduler](../../production/using/operating-principle.md)
+* [Campaign Classic-alternativ](../../installation/using/configuring-campaign-options.md)
 * [Så här ställer du in modulernas automatiska start](../../production/using/administration.md)
 * [Princip för kampanjkonfiguration](../../production/using/configuration-principle.md)
 * [Felsökningsrutiner](../../production/using/performance-and-throughput-issues.md)

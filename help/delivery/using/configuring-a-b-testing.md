@@ -6,9 +6,9 @@ badge-v8: label="Gäller även för v8" type="Positive" tooltip="Gäller även C
 feature: A/B Testing
 role: User
 exl-id: 6adf2e75-63b1-44ad-8925-03beb3bc0bdd
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '222'
+source-wordcount: '236'
 ht-degree: 3%
 
 ---
@@ -17,9 +17,9 @@ ht-degree: 3%
 
 I det här avsnittet beskrivs hur du skapar ett arbetsflöde för A/B-testning.
 
-1. Skapa ett nytt arbetsflöde och konfigurera sedan en [Query](../../workflow/using/query.md)-aktivitet så att den målar den önskade populationen.
+1. Skapa ett nytt arbetsflöde och konfigurera sedan en Query-aktivitet så att den målar den önskade populationen. Se [Campaign v8-dokumentationen](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/query.html){target="_blank"}.
 
-1. Lägg till en [delad](../../workflow/using/split.md)-aktivitet för att dela målpopulationen i flera delmängder.
+1. Lägg till en delad aktivitet för att dela upp målpopulationen i flera deluppsättningar. Se [Campaign v8-dokumentationen](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/split.html){target="_blank"}.
 
 1. Öppna aktiviteten och konfigurera sedan varje delmängd efter dina behov. Mer information om hur du konfigurerar en **[!UICONTROL Split]**-aktivitet finns i [det här avsnittet](../../workflow/using/split.md).
 

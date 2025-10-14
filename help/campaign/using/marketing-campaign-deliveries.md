@@ -7,9 +7,9 @@ feature: Campaigns, Resource Management, Cross Channel Orchestration
 hide: true
 hidefromtoc: true
 exl-id: 1dd3c080-444d-45f8-9562-d2d01a9d2860
-source-git-commit: 4f809011a8b4cb3803c4e8151e358e5fd73634e4
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '1485'
+source-wordcount: '1491'
 ht-degree: 0%
 
 ---
@@ -20,7 +20,7 @@ Leveranser kan skapas via kampanjkontrollpanelen, ett kampanjarbetsflöde eller 
 
 När leveranser skapas från en kampanj länkas de till den här kampanjen och konsolideras på kampanjnivå.
 
-![](assets/do-not-localize/how-to-video.png) [Upptäck den här funktionen i videon](#create-email-video)
+![](assets/do-not-localize/how-to-video.png)[Upptäck den här funktionen i videon](#create-email-video)
 
 ## Skapa leveranser {#creating-deliveries}
 
@@ -28,7 +28,7 @@ Om du vill skapa en leverans som är länkad till en kampanj klickar du på län
 
 ![](assets/campaign_op_add_delivery.png)
 
-De föreslagna konfigurationerna passar för de olika typerna av leverans: direktreklam, e-post, mobilkanaler. [Läs mer](../../delivery/using/steps-about-delivery-creation-steps.md).
+De föreslagna konfigurationerna passar för de olika typerna av leverans: direktreklam, e-post, mobilkanaler. Läs mer i [Campaign v8-dokumentationen](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html){target="_blank"}.
 
 ## Starta en leverans {#starting-a-delivery}
 

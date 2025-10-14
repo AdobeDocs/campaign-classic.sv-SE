@@ -5,7 +5,7 @@ description: Lär dig hur du skickar, övervakar och spårar SMS i Campaign
 feature: SMS
 role: User
 exl-id: 442672ee-5037-49b7-a06f-3a99920ce2b6
-source-git-commit: 42cec0e9bede94a2995a5ad442822512bda14f2b
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
 source-wordcount: '887'
 ht-degree: 0%
@@ -81,8 +81,6 @@ Modulen **nlserver sms** frågar SMS-routern med regelbundna intervall. Detta g�
   > * Ett SMS-konto kan bara länkas till ett enda externt konto för att säkerställa att statusrapporter tilldelas rätt konto
 
 * **Unsubscription**: Mottagare som inte längre vill ta emot SMS-leveranser kan returnera ett meddelande som innehåller ordet STOP. Om din leverantör tillåter det enligt villkoren i kontraktet kan du hämta meddelanden via arbetsflödesaktiviteten **Inkommande SMS** och sedan skapa en fråga som aktiverar alternativet **Kontakta inte längre den här mottagaren** för de berörda mottagarna.
-
-  Se guiden [Arbetsflöden](../../workflow/using/architecture.md).
 
 ## InSMS-schema {#insms-schema}
 
@@ -169,4 +167,4 @@ Avsändarnamnet för den här meddelandetypen är en kort kod som vanligtvis anv
 >
 >Den här typen av automatiska meddelanden sparar ingen historik. Därför visas de inte på kontrollpanelen för leveranser. [Läs mer](delivery-dashboard.md).
 >
->Dessa meddelanden tas inte med i de kommersiella tryckreglerna. [Läs mer](../../campaign-opt/using/pressure-rules.md).
+>Dessa meddelanden tas inte med i de kommersiella tryckreglerna. Se [Campaign v8-dokumentationen](https://experienceleague.adobe.com/docs/campaign/automation/campaign-optimization/pressure-rules.html){target="_blank"}.

@@ -8,9 +8,9 @@ audience: integrations
 content-type: reference
 topic-tags: adobe-target
 exl-id: 6177f57b-534c-4d86-8f73-d96980c48a77
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '819'
+source-wordcount: '822'
 ht-degree: 2%
 
 ---
@@ -62,7 +62,7 @@ I Adobe Campaign finns det två sätt att infoga en dynamisk bild från Target i
 * **[!UICONTROL Landing Page]**: Om du vill att standardbilden ska dirigeras om till en standardstartsida. Den här URL:en är endast till för de fall då standardbilden visas i det slutliga e-postmeddelandet och är valfri.
 * **[!UICONTROL Additional decision parameters]**: Ange mappningen mellan fälten som definieras i Adobe Target-segmenten och Adobe Campaign-fälten. De Adobe Campaign-fält som används måste ha angetts i rutan. I vårt exempel har vi lagt till fältet Land.
 
-Om du använder Enterprise-behörigheter i inställningarna för Adobe Target lägger du till motsvarande egenskap i det här fältet. Läs mer om behörigheter för målföretag på [den här sidan](https://experienceleague.adobe.com/docs/target/using/administer/manage-users/enterprise/properties-overview.html?lang=sv-SE).
+Om du använder Enterprise-behörigheter i inställningarna för Adobe Target lägger du till motsvarande egenskap i det här fältet. Läs mer om behörigheter för målföretag på [den här sidan](https://experienceleague.adobe.com/docs/target/using/administer/manage-users/enterprise/properties-overview.html).
 
 ![](assets/target_13.png)
 
@@ -82,7 +82,7 @@ I vårt fall behöver vi två omdirigeringserbjudanden, det tredje (standarderbj
 
    ![](assets/target_6.png)
 
-1. Följ samma procedur för det återstående omdirigeringserbjudandet. Se denna [sida](https://experienceleague.adobe.com/docs/target/using/experiences/offers/offer-redirect.html?lang=sv-SE) för mer information om detta.
+1. Följ samma procedur för det återstående omdirigeringserbjudandet. Se denna [sida](https://experienceleague.adobe.com/docs/target/using/experiences/offers/offer-redirect.html) för mer information om detta.
 
 ## Skapa målgrupper {#audiences-target}
 
@@ -154,7 +154,7 @@ I avsnittet **[!UICONTROL Reporting Settings]** kan du välja en åtgärd och re
 
 ## Förhandsgranska och skicka e-postmeddelandet {#preview-send-email}
 
-I Adobe Campaign kan du nu förhandsgranska ditt e-postmeddelande och testa återgivningen i olika mottagare. Du kommer att märka att bilden ändras beroende på de olika upplevelser som skapas. Mer information om hur du skapar e-postmeddelanden finns på [sidan](../../delivery/using/defining-the-email-content.md).
+I Adobe Campaign kan du nu förhandsgranska ditt e-postmeddelande och testa återgivningen i olika mottagare. Du kommer att märka att bilden ändras beroende på de olika upplevelser som skapas. Mer information om hur du skapar e-postmeddelanden finns i [dokumentationen för Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/defining-the-email-content.html){target="_blank"}.
 
 Du kan nu skicka ditt e-postmeddelande med ett dynamiskt erbjudande från Target.
 

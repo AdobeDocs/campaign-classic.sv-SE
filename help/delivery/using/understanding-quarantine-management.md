@@ -6,10 +6,10 @@ badge-v8: label="Gäller även för v8" type="Positive" tooltip="Gäller även C
 feature: Monitoring, Deliverability
 role: User
 exl-id: cfd8f5c9-f368-4a31-a1e2-1d77ceae5ced
-source-git-commit: 4d8c4ba846148d3df00a76ecc29375b9047c2b20
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '2984'
-ht-degree: 7%
+source-wordcount: '3008'
+ht-degree: 6%
 
 ---
 
@@ -29,7 +29,7 @@ Vissa internetleverantörer betraktar automatisk e-post som skräppost om antale
 
 Dessutom bidrar karantäner till att minska SMS-kostnaderna genom att utesluta felaktiga telefonnummer från leveranser.
 
-Mer information om de bästa sätten för att skydda och optimera leveranser finns på [den här sidan](delivery-best-practices.md).
+Mer information om de effektivaste strategierna för att skydda och optimera leveranser finns på den här sidan i [dokumentationen för Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/delivery-best-practices.html){target="_blank"}.
 
 ### Karantän mot blockeringslista {#quarantine-vs-denylist}
 
@@ -103,7 +103,7 @@ Adobe Campaign hanterar karantän enligt typ av leveransfel och den orsak som ti
 * **Kritisk avvikelse**: motsvarande e-postadress skickas omedelbart till karantänen.
 * **Icke-kritisk avvikelse**: En icke-kritiskt avvikelse skickar inte en adress till karantän omedelbart men ökar dock felräknaren.  Mer information finns i [Mjuk felhantering](#soft-error-management).
 
-Om en användare kvalificerar ett e-postmeddelande som en skräppost ([feedbackslinga](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html?lang=sv-SE#feedback-loops)) dirigeras meddelandet automatiskt om till en teknisk postlåda som hanteras av Adobe. Användarens e-postadress skickas sedan automatiskt till karantänen med status **[!UICONTROL Denylisted]**.    Den här statusen avser endast adressen, profilen finns inte på blockeringslista, så att användaren fortsätter att ta emot SMS-meddelanden och push-meddelanden.
+Om en användare kvalificerar ett e-postmeddelande som en skräppost ([feedbackslinga](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html#feedback-loops)) dirigeras meddelandet automatiskt om till en teknisk postlåda som hanteras av Adobe. Användarens e-postadress skickas sedan automatiskt till karantänen med status **[!UICONTROL Denylisted]**.    Den här statusen avser endast adressen, profilen finns inte på blockeringslista, så att användaren fortsätter att ta emot SMS-meddelanden och push-meddelanden.
 
 >[!NOTE]
 >
@@ -117,14 +117,14 @@ I listan över adresser i karantän (se [Identifiera adresser i karantän för h
 
 I motsats till hårda fel skickar inte mjuka fel en adress direkt till karantän, utan i stället ökar de en felräknare.
 
-Försök utförs igen under [leveranstiden](../../delivery/using/steps-sending-the-delivery.md#defining-validity-period). När felräknaren når gränsvärdet sätts adressen i karantän.    Mer information finns i [Försök igen efter ett tillfälligt leveransfel](understanding-delivery-failures.md#retries-after-a-delivery-temporary-failure).
+Försök utförs igen under leveranstiden. Se den här [sidan](communication-channels.md) under **Leveranssändning** > **Definiera giltighetsperiod**. När felräknaren når gränsvärdet sätts adressen i karantän.    Mer information finns i [Försök igen efter ett tillfälligt leveransfel](understanding-delivery-failures.md#retries-after-a-delivery-temporary-failure).
 
 Felräknaren initieras om om det senaste allvarliga felet inträffade för mer än 10 dagar sedan. Adressstatusen ändras sedan till **Giltig** och tas bort från listan över karantäner i arbetsflödet för [Databasrensning](../../production/using/database-cleanup-workflow.md).
 
 
 Om du har uppgraderat till [Förbättrat MTA](sending-with-enhanced-mta.md) för värdbaserade eller hybridinstallerade installationer, baseras nu det maximala antalet försök som ska utföras om **[!UICONTROL Erroneous]**-statusen är och den minsta fördröjningen mellan försök på hur bra en IP fungerar både historiskt och för närvarande på en viss domän.
 
-För lokala installationer och värdbaserade/hybridinstallationer som använder det äldre Campaign MTA kan ni ändra antalet fel och perioden mellan två fel. Det gör du genom att ändra motsvarande inställningar i [distributionsguiden](../../installation/using/deploying-an-instance.md) (**[!UICONTROL Email channel]** > **[!UICONTROL Advanced parameters]**) eller [på leveransnivå](../../delivery/using/steps-sending-the-delivery.md#configuring-retries).
+För lokala installationer och värdbaserade/hybridinstallationer som använder det äldre Campaign MTA kan ni ändra antalet fel och perioden mellan två fel. Om du vill göra det ändrar du motsvarande inställningar i [distributionsguiden](../../installation/using/deploying-an-instance.md) (**[!UICONTROL Email channel]** > **[!UICONTROL Advanced parameters]**) eller på leveransnivån. Se [sidan](communication-channels.md) under **Leveranssändning** > **Konfigurera återförsök**.
 
 
 ## Ta bort en adress från karantän {#removing-a-quarantined-address}

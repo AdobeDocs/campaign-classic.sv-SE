@@ -6,9 +6,9 @@ feature: Overview
 role: User, Data Architect
 level: Beginner
 exl-id: 81f207a0-bb72-450b-abe4-0b229b6b1f3a
-source-git-commit: 8817b485fd5b6d6aeb9d71c1106f16fbb6bc3c5b
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '6010'
+source-wordcount: '6184'
 ht-degree: 1%
 
 ---
@@ -46,7 +46,8 @@ Learn more about [ACS Connector](../../integrations/using/acs-connector-principl
 
 En aktivitet är ett palettobjekt som läggs till i ett arbetsflöde för att definiera en körningsfunktion. Aktiviteten är en behållare som kör en uppgift. I ett arbetsflöde kan en viss aktivitet producera flera uppgifter, särskilt när det finns en slinga eller återkommande (periodiska) åtgärder.
 
-Läs mer om [Arbetsflödesaktiviteter](../../workflow/using/about-activities.md).
+Läs mer om arbetsflödesaktiviteter i [dokumentationen för Campaign v8]&#x200B;(https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/activities)
+.html){target="_blank"}.
 +++
 
 +++**Aktiv profil**
@@ -62,14 +63,13 @@ Läs mer om [Aktiva profiler](../../platform/using/about-profiles.md#active-prof
 
 Lokal godkännandeaktivitet är en arbetsflödesaktivitet som används för att ställa in en process för godkännande av leverans innan meddelandena skickas.
 
-Läs mer om aktiviteten [Lokalt godkännande](../../workflow/using/local-approval.md).
 +++
 
 +++**Målgrupp**
 
 En målgrupp är den resulterande uppsättningen profiler som uppfyller villkoren i en filterdefinition baserat på regler och attribut.
 
-Läs mer om [Publiker](../../campaign/using/marketing-campaign-target.md).
+Läs mer om målgrupper i [dokumentationen för Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-target.html){target="_blank"}.
 +++
 
 +++**Verifieringskedja**
@@ -102,7 +102,7 @@ Läs mer om [Interaktion](../../interaction/using/interaction-and-offer-manageme
 
 Campaign är ett gränssnitt för att samordna, definiera och genomföra marknadsföringskampanjer. Kampanjer kan innehålla ett eller flera arbetsflöden, leveranser, dokument och andra relaterade datapunkter i ett enda lättanvänt gränssnitt.
 
-Läs mer om [kampanjer](../../campaign/using/designing-marketing-campaigns.md).
+Läs mer om kampanjer i dokumentationen för [Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/campaigns/campaigns.html){target=_blank}.
 +++
 
 <!--
@@ -135,14 +135,15 @@ Läs mer om [klientkonsolen](../../platform/using/adobe-campaign-workspace.md).
 
 Godkännande av innehåll innebär att en separat operator eller en grupp operatorer godkänner innehållet i en leverans innan det kan skickas.
 
-Läs mer om [Godkännande av innehåll](../../campaign/using/marketing-campaign-approval.md).
+Läs mer om godkännande av innehåll i [dokumentationen för Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-approval.html){target="_blank"}.
+
 +++
 
 +++**Kontrollgrupper**
 
 Använd kontrollgrupper för att mäta effekten av era kampanjer genom att utesluta en del av deras målgrupp. Operatorer kan jämföra beteendet hos målpopulationen som fick meddelandet med beteendet hos kontakter som inte var målgrupper. Operatörerna kan även rikta in sig på en kontrollgrupp i framtida kampanjer baserat på de sändande loggarna.
 
-Läs mer om [Kontrollgrupper](../../campaign/using/marketing-campaign-target.md#defining-a-control-group).
+Läs mer om kontrollgrupper i [dokumentationen för Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-target.html#add-a-control-group){target="_blank"}.
 +++
 
 +++**Kontrollpanelen**
@@ -214,7 +215,7 @@ Läs mer om [Leveranser](../../delivery/using/communication-channels.md).
 
 Leveransanalys är förberedelsen av leveransen. Den här processen kombinerar innehållet med mottagarprofildata för att skapa det anpassade e-postmeddelandet som mottagaren tar emot. Leveransanalyslogiken kan utesluta mottagare från målet eller stoppa leveransen helt och hållet, baserat på den definierade logiken. I processen ingår även utvärdering av logiken för dynamiskt innehåll och infogning av erbjudanden som är specifika för den enskilda mottagarprofilen.
 
-Läs mer om [Leveransanalys](../../delivery/using/steps-validating-the-delivery.md#analyzing-the-delivery).
+Läs mer om leveransanalys i [Campaign v8-dokumentationen](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/validate/delivery-analysis.html){target="_blank"}.
 +++
 
 +++**Leveransloggar**
@@ -265,7 +266,7 @@ Läs mer om [Beskrivande analys](../../reporting/using/about-descriptive-analysi
 
 Tillägget Distributed Marketing ger kampanjansvariga en gemensam arbetsyta för att implementera kampanjer mellan centrala enheter (huvudkontor, marknadsföringsavdelningar osv.) och lokala enheter (säljställen, regionala byråer osv.). Samarbetet baseras på en delad arbetsyta som kallas **listan över kampanjpaket**, där centralt skapade kampanjmallar och instanser erbjuds lokala entiteter.
 
-Läs mer om [Distribuerad marknadsföring](../../distributed/using/about-distributed-marketing.md)
+Läs mer om distribuerad marknadsföring i [dokumentationen för Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/distributed-marketing/about-distributed-marketing.html){target="_blank"}.
 +++
 
 +++**Distribution av värden**
@@ -315,7 +316,7 @@ Läs mer om [Interaktion](../../interaction/using/interaction-and-offer-manageme
 
 Funktionen för hemlig kopia skickar en exakt kopia i EML-format av ett motsvarande levererat e-postmeddelande, som sparas i en dedikerad e-postadress för hemlig kopia där e-postmeddelandena kan bearbetas och arkiveras av avsändaren i ett externt system.
 
-Läs mer om [BCC för e-post](../../delivery/using/email-parameters.md#email-bcc).
+Läs mer om e-postkopia i [Campaign v8-dokumentationen](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/emails/email-bcc.html){target="_blank"}.
 +++
 
 <!--
@@ -338,14 +339,14 @@ An engine call is a server call that starts real-time processing on server side 
 
 Aktiviteten Enrichment är en avancerad arbetsflödesaktivitet som gör det möjligt för operatorer att berika genererade arbetstabelldata som ska bearbetas i arbetsflödet. Den här aktiviteten används vanligtvis efter målaktiviteter eller efter att en fil importerats och före aktiviteter som använder måldata. Anrikningar kan omvandla data för inkommande övergång och konfigurera aktiviteten för att slutföra utdataövergången med utökade data. Det gör att Operator kan kombinera data från flera datauppsättningar eller skapa länkar till en tillfällig resurs.
 
-Läs mer om [Anrikningsaktivitet](../../workflow/using/enrichment.md).
+Läs mer om Enrichment-aktiviteten i [Campaign v8-dokumentationen](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/enrichment.html){target="_blank"}.
 +++
 
 +++**Uppräkningar**
 
 En uppräkning är en datatyp som definieras i scheman eller på plattformsnivå som definierar giltiga indatavärden för ett fält. Uppräkningar visas i användargränssnittet och i frågebyggare som en lista.
 
-Läs mer om hur du **arbetar med uppräkningar** i [Adobe Campaign v8-dokumentationen (konsolen)](https://experienceleague.adobe.com/sv/docs/campaign/campaign-v8/config/settings/enumerations){target=_blank}.
+Läs mer om hur du **arbetar med uppräkningar** i [Adobe Campaign v8-dokumentationen (konsolen)](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/config/settings/enumerations){target=_blank}.
 +++
 
 +++**Utforskarvy**
@@ -353,7 +354,7 @@ Läs mer om hur du **arbetar med uppräkningar** i [Adobe Campaign v8-dokumentat
 Utforskarvyn är en hierarkisk vy över de mappar som innehåller artefakter och data från Adobe Campaign. Observera att mappsystemet i Adobe Campaign inte fungerar som en vanlig förhandsvisning, eftersom varje mapp innehåller data av en viss typ, till exempel Leveranser, Arbetsflöden eller Erbjudanden.
 
 
-Läs mer om Campaign-användargränssnittet i [Adobe Campaign v8-dokumentationen (konsolen)](https://experienceleague.adobe.com/sv/docs/campaign/campaign-v8/new/campaign-ui){target=_blank}.
+Läs mer om Campaign-användargränssnittet i [Adobe Campaign v8-dokumentationen (konsolen)](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/new/campaign-ui){target=_blank}.
 
 +++
 
@@ -370,7 +371,7 @@ Läs mer om [Externa konton](../../installation/using/external-accounts.md).
 
 Trötthetshanteringen hjälper er att styra frekvens och antal meddelanden för att undvika att mottagare blir överbeställda och används ofta med en typologiregel.
 
-Läs mer om [Trötthetshantering](../../campaign-opt/using/pressure-rules.md).
+Läs mer om trötthetshantering i [dokumentationen för Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/campaign-optimization/pressure-rules.html){target="_blank"}.
 +++
 
 +++**FDA (Federated Data Access)**
@@ -386,21 +387,21 @@ Lär dig mer om [Åtkomst till federerade data](../../installation/using/about-f
 
 Godkännandet av filextrahering innebär att en separat operator eller en grupp operatorer godkänner innehållet i och konfigurationen av en extraherad fil innan den skickas till en extern leverantör, till exempel för direktreklam.
 
-Läs mer om [Godkännande av filextrahering](../../delivery/using/validating.md).
+Läs mer om godkännande av filextrahering i [dokumentationen för Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/direct-mail.html#validating){target="_blank"}.
 +++
 
 +++**Filtreringsdimension**
 
 Filtreringsdimensionen är det schema som innehåller de data eller attribut som används av en fråga för att filtrera de önskade raderna. Filtreringsdimensionsschemat måste vara direkt länkat till den definierade måldimensionen för att Adobe Campaign ska kunna korsa databaskopplingen och returnera svarstrader.
 
-Läs mer om [Filtreringsdimension](../../workflow/using/building-a-workflow.md#targeting-and-filtering-dimensions).
+Läs mer om filtreringsdimensionen i [dokumentationen för Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/wf-type/targeting-workflows.html#targeting-and-filtering-dimensions){target="_blank"}.
 +++
 
 +++**Mapp**
 
 En mapp är ett objekt i Utforskaren som innehåller databasposter av en viss datatyp. Undantaget är den allmänna mapptypen som används som ett organiseringselement och som inte innehåller några data, utan bara andra mappar.
 
-Läs mer om Campaign-användargränssnittet i [Adobe Campaign v8-dokumentationen (konsolen)](https://experienceleague.adobe.com/sv/docs/campaign/campaign-v8/new/campaign-ui){target=_blank}.
+Läs mer om Campaign-användargränssnittet i [Adobe Campaign v8-dokumentationen (konsolen)](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/new/campaign-ui){target=_blank}.
 
 +++
 
@@ -408,7 +409,7 @@ Läs mer om Campaign-användargränssnittet i [Adobe Campaign v8-dokumentationen
 
 Mappvyn är en speciell mapptyp i Utforskaren som används för att visa alla poster av en vald datatyp, oavsett vilken mapp den tillhör. Mappvyer används som administrationsverktyg för att hantera partitionerade data eller data som distribueras mellan många mappar.
 
-Läs mer om Campaign-användargränssnittet i [Adobe Campaign v8-dokumentationen (konsolen)](https://experienceleague.adobe.com/sv/docs/campaign/campaign-v8/new/campaign-ui){target=_blank}.
+Läs mer om Campaign-användargränssnittet i [Adobe Campaign v8-dokumentationen (konsolen)](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/new/campaign-ui){target=_blank}.
 +++
 
 +++**Forms**
@@ -432,7 +433,7 @@ Learn more about [Generated SQL queries](../../platform/using/steps-to-create-a-
 
 Campaign Heatmap är en tabell som visar information om arbetsflödeskörning under en 24-timmarsperiod. Här visas arbetsflödenas fördelning över perioden per timme och med 5 minuters intervall. Heatmap används för att utvärdera serverbelastningen och för att fastställa vilka arbetsflödesaktiviteter som förbrukar mest resurser.
 
-Läs mer om [Heatmap](../../workflow/using/heatmap.md).
+Se [Campaign v8-dokumentationen](https://experienceleague.adobe.com/docs/campaign/automation/workflows/monitoring-workflows/heatmap.html){target="_blank"}.
 +++
 
 +++**Hybrid-distribution**
@@ -522,7 +523,7 @@ Läs mer om [Lokal cache](../../platform/using/faq-campaign-config.md#perform-so
 
 Med modulen **Hantering av marknadsföringsresurser (MRM)** i Adobe Campaign kan du styra marknadsföringsåtgärder i ett samverkansbaserat läge genom att tillhandahålla fullständig hantering och realtidsspårning av de uppgifter, budgetar och marknadsföringsresurser som ingår. Adobe Campaign-operatorer kan samordna sina åtgärder och godkänna deras framsteg i alla faser via fullständiga valideringsprocesser och lämpliga spårningsverktyg: rapportering, spårning av godkännanden, aviseringar, diskussionsforum osv.
 
-Läs mer om [MRM](../../mrm/using/about-marketing-resource-management.md).
+Läs mer om MRM i [Campaign v8-dokumentationen](https://experienceleague.adobe.com/docs/campaign/automation/mrm/about-marketing-resource-management.html){target="_blank"}.
 +++
 
 <!--
@@ -561,7 +562,7 @@ Learn more about [Navigation Bar](../../platform/using/adobe-campaign-workspace.
 
 Navigeringsträdet är huvudnavigeringen i Utforskaren i Adobe Campaign. Navigeringsträdet fungerar som en filläsare (t.ex. Utforskaren). Mappar kan innehålla undermappar. Om du väljer en nod visas vyn som motsvarar noden. Den vy som visas är en lista som är associerad med ett schema och ett inmatningsformulär för att redigera den markerade raden. Du kan anpassa navigeringsträdet och ange behörigheter för mappar.
 
-Läs mer om Campaign-användargränssnittet i [Adobe Campaign v8-dokumentationen (konsolen)](https://experienceleague.adobe.com/sv/docs/campaign/campaign-v8/new/campaign-ui){target=_blank}.
+Läs mer om Campaign-användargränssnittet i [Adobe Campaign v8-dokumentationen (konsolen)](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/new/campaign-ui){target=_blank}.
 
 +++
 
@@ -571,7 +572,7 @@ Läs mer om Campaign-användargränssnittet i [Adobe Campaign v8-dokumentationen
 
 Inom ramen för kampanjen, programmet eller planen kan operatörerna ange en lista med mål. Dessa är kvantifierade värden som ska uppnås. När kampanjen, programmet eller planen är slut kan de som ansvarar för driften jämföra målen och resultaten i dedikerade rapporter med hjälp av MRM-modulen.
 
-Läs mer om [Mål](../../mrm/using/creating-and-managing-tasks.md#expenses-and-revenues).
+Läs mer om mål i [Adobe Campaign v8-dokumentationen](https://experienceleague.adobe.com/docs/campaign/automation/mrm/creating-and-managing-tasks.html#expenses-and-revenues){target=_blank}.
 +++
 
 +++**Erbjudandekatalog**
@@ -753,7 +754,7 @@ Läs mer om [Paketexport/import](../../platform/using/working-with-data-packages
 
 På paletten Arbetsflöde visas tillgängliga aktiviteter som kan läggas till i ett arbetsflöde. Den här komponenten visas i ett flikformat med arbetsflödesaktiviteter grupperade logiskt efter användning. Vilka aktiviteter som är tillgängliga på paletten beror på vilka tillägg som har installerats i Campaign-instansen och på vilket sammanhang som arbetsflödet visas i.
 
-Läs mer om [Palett](../../workflow/using/building-a-workflow.md#adding-and-linking-activities).
+Läs mer om paletten i [dokumentationen för Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/build-a-workflow.html#add-and-link-activities){target="_blank"}.
 +++
 
 +++**Prestandaövervakning**
@@ -788,14 +789,14 @@ Läs mer om [Personalization-variabler](../../delivery/using/about-personalizati
 
 En plan är en mapptyp som används för att ordna marknadsföringsaktiviteter på kalenderbasis. Planera mappar i Utforskaren för att definiera tidsbaserade enheter, t.ex. år, kvartal eller månad. Planmappar kan kapslas och innehålla andra planmappar, programmappar eller kampanjer.
 
-Läs mer om [Planer](../../campaign/using/setting-up-marketing-campaigns.md).
+Läs mer om planer i dokumentationen för [Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/set-up-campaigns.html){target=_blank}.
 +++
 
 +++**Fördefinierade filter**
 
 Fördefinierade filter är frågor som har sparats för återanvändning. Användning av fördefinierade filter ökar produktiviteten (eftersom de bara skapas en gång), bidrar till att skapa konsekvens (eftersom alla marknadsförare kan använda dem) och sänker marknadsförarens kunskaper eftersom de kan använda kod eller logik som de kanske inte kan skapa själva.
 
-Mer information om filter finns i [dokumentationen för Campaign v8 (konsol)](https://experienceleague.adobe.com/sv/docs/campaign/campaign-v8/audience/create-filters){target=_blank}.
+Mer information om filter finns i [dokumentationen för Campaign v8 (konsol)](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/audience/create-filters){target=_blank}.
 +++
 
 <!--
@@ -826,7 +827,7 @@ Läs mer om [Profiler](../../platform/using/about-profiles.md).
 
 Program och underprogrammappar organiserar marknadsföringsaktiviteter kring ett affärsmål, som lojalitet, förvärv eller korsförsäljning. De kan även representera räkenskapsperioder eller kampanjstrategier, som händelser eller nyhetsbrev. Varje program innehåller kampanjer som är länkade till en kalender, som ger en övergripande bild.
 
-Läs mer om [Program](../../campaign/using/setting-up-marketing-campaigns.md).
+Läs mer om program i dokumentationen för [Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/set-up-campaigns.html){target=_blank}.
 +++
 
 +++**Offentliga resurser**
@@ -913,14 +914,14 @@ Läs mer om [Tjänster](../../delivery/using/about-services-and-subscriptions.md
 
 På Kontrollpanelen kan du interagera med alla SFTP-servrar som är anslutna till Campaign-instanser som du har tillgång till. Med kontrollpanelen kan du utföra åtgärder på dina SFTP-servrar, till exempel övervaka lagringskapaciteten, hantera IP-adresser, tillåta listor och hantera offentliga SSH-nycklar.
 
-Läs mer om [SFTP-hantering](https://experienceleague.adobe.com/docs/control-panel/using/sftp-management/about-sftp-management.html?lang=sv-SE).
+Läs mer om [SFTP-hantering](https://experienceleague.adobe.com/docs/control-panel/using/sftp-management/about-sftp-management.html).
 +++
 
 +++**Prenumerationstjänstaktivitet**
 
 Med arbetsflödesaktiviteten för prenumerationstjänster kan du skapa eller ta bort en prenumeration på en informationstjänst för den population som anges i övergången.
 
-Läs mer om [Prenumerationstjänstaktivitet](../../workflow/using/subscription-services.md).
+Läs mer om prenumerationstjänstaktiviteten i [Campaign v8-dokumentationen](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/subscription-services.html){target="_blank"}.
 +++
 
 +++**Målgodkännande**
@@ -929,35 +930,36 @@ Läs mer om [Prenumerationstjänstaktivitet](../../workflow/using/subscription-s
 
 Målgodkännande är processen att låta en separat operator eller en grupp av operatorer godkänna slutmålet för en leverans (efter att analysfasen har genererat målet) innan leveransen kan skickas.
 
-Läs mer om [Målgodkännande](../../workflow/using/local-approval.md).
+Läs mer om aktiviteten för målgodkännande i [dokumentationen för Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/flow-control-activities/approval.html){target="_blank"}.
 +++
 
 +++**Måldata**
 
 Måldata är data som lagras i arbetsflödet (övergång). Dessa data är tillgängliga inifrån leveransen för personalisering av leveransinnehållet eller för att definiera logiken för dynamiska element i leveransen.
 
-Läs mer om [Måldata](../../workflow/using/data-life-cycle.md#target-data).
+Läs mer om måldata i [Campaign v8-dokumentationen](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/use-workflow-data.html#target-data){target="_blank"}.
 +++
 
 +++**Målkartläggning**
 
 Målmappning är mappningen av leveranskanaler till en viss datatyp. Målmappningar definierar hur olika leveranskanaler länkar till datafälten i ett schema. Det definierar hur Campaign skickar till den datatypen med hjälp av ett specifikt fält eller uttryck.
 
-Läs mer om [Målmappning](../../delivery/using/steps-defining-the-target-population.md#select-a-target-mapping).
+Läs mer om målmappning i [dokumentationen för Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/audience/add-profiles/target-mappings.html){target="_blank"}.
 +++
 
 +++**Målaktiviteter**
 
 Målaktiviteter är arbetsflödesaktiviteter som är specifika för målgruppsanpassning, ändring av populationsdata och filtrering. De gör att operatorer kan skapa ett eller flera mål genom att definiera uppsättningar och dela eller kombinera dessa uppsättningar med hjälp av skärnings-, union- eller exkluderingsåtgärder.
 
-Läs mer om [Målaktiviteter](../../workflow/using/about-targeting-activities.md).
+Läs mer om målinriktningsaktiviteter i [dokumentationen för Campaign v8]&#x200B;(https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/targeting-activities)
+.html){target="_blank"}.
 +++
 
 +++**Måldimension**
 
 Måldimensionen är den datatyp som skapas (returneras) av en fråga eller andra arbetsflödesaktiviteter. Observera att Adobe Campaign bara returnerar primärnyckeln för de svarande databasraderna, oavsett vilken fråga som användes för att hämta dem.
 
-Läs mer om [Måldimension](../../workflow/using/targeting-data.md).
+Läs mer om målgruppsdimensionen i [dokumentationen för Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/wf-type/targeting-workflows.html){target="_blank"}.
 +++
 
 +++**Aktivitetsaktivitet**
@@ -966,7 +968,7 @@ Läs mer om [Måldimension](../../workflow/using/targeting-data.md).
 
 Arbetsflödesaktiviteten Inkluderar mänsklig åtgärd i logiken i ett arbetsflöde. Du kan ange två scenarier: det första om aktiviteten har slutförts och det andra om aktiviteten inte har slutförts. Vanliga användningsområden är för att införliva offlineåtgärder i en kampanj eller för anpassade åtgärder som godkännanden.
 
-Läs mer om [Aktivitetsaktivitet](../../workflow/using/task.md).
+Läs mer om aktiviteten Fråga i [dokumentationen för Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/mrm/creating-and-managing-tasks.html){target="_blank"}.
 +++
 
 <!--
@@ -1023,7 +1025,7 @@ Läs mer om [Transactional messaging](../../message-center/using/about-transacti
 
 Utlösta kampanjer är kampanjer som körs när en API-begäran tas emot i ett arbetsflöde. API-anrop används av en Signal-aktivitet i arbetsflödet som initierar körningen av arbetsflödet.
 
-Läs mer om [utlösta kampanjer](../../workflow/using/external-signal.md).
+Läs mer om utlösta kampanjer i [dokumentationen för Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/flow-control-activities/external-signal.html){target="_blank"}.
 +++
 
 <!--
@@ -1042,7 +1044,7 @@ Learn more about [Triggers](../../workflow/using/about-workflows.md).
 
 En typologi är en gruppering av typologiregler som tillämpas på analysfasen av en leverans. En kampanjtypologi kan innehålla flera typologiregler, men en leverans kan bara referera till en typologi.
 
-Läs mer om [Typologier](../../campaign-opt/using/about-campaign-typologies.md#typologies).
+Läs mer om typologier i [dokumentationen för Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/campaign-optimization/campaign-typologies.html){target="_blank"}.
 +++
 
 +++**Typologiregel**
@@ -1051,7 +1053,7 @@ Läs mer om [Typologier](../../campaign-opt/using/about-campaign-typologies.md#t
 
 Typologiregler är affärsregler som implementeras som en del av leveransens analysfas. Typologiregler är kontroller av innehållet i leveransen (kontrollregler) eller målet för leveransen (filtreringsregler) eller annan logik (tryckregler) som uppfyller affärskraven. Regler är detaljelement som kan inkluderas i en eller flera typologier.
 
-Läs mer om [Typologiregler](../../campaign-opt/using/about-campaign-typologies.md#typology-rules).
+Läs mer om typologiregler i dokumentationen för [Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/campaign-optimization/campaign-typologies.html){target="_blank"}.
 +++
 
 ## U - Z {#sec-6}
@@ -1083,7 +1085,7 @@ Läs mer om [Arbetsflöden](../../workflow/using/about-workflows.md).
 
 Arbetsflödesjournalen är körningsloggen steg för steg för ett arbetsflöde. Den innehåller hela historiken eller granskningsspåret för arbetsflödet. Den används för utveckling, felsökning eller felsökning.
 
-Läs mer om [Arbetsflödesjournal](../../workflow/using/monitoring-workflow-execution.md).
+Läs mer om arbetsflödesjournalen i [Campaign v8-dokumentationen](https://experienceleague.adobe.com/docs/campaign/automation/workflows/monitoring-workflows/monitor-workflow-execution.html){target="_blank"}.
 +++
 
 +++**Arbetstabell**

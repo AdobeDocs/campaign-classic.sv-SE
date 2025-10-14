@@ -7,9 +7,9 @@ feature: Campaigns, Cross Channel Orchestration
 hide: true
 hidefromtoc: true
 exl-id: 1278bda1-f83c-4d38-8042-e6611755cf36
-source-git-commit: 4f809011a8b4cb3803c4e8151e358e5fd73634e4
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '1199'
+source-wordcount: '1202'
 ht-degree: 1%
 
 ---
@@ -41,7 +41,7 @@ Blocket **[!UICONTROL Browsing]** på fliken **[!UICONTROL Campaigns]** innehål
 >
 >Mer information om Adobe Campaign allmänna inställningar för ergonomi, behörigheter och profilhanteringsfunktioner finns i [det här avsnittet](../../platform/using/adobe-campaign-workspace.md).
 >
->Alla funktioner som rör kanaler och leveranser beskrivs i [det här avsnittet](../../delivery/using/steps-about-delivery-creation-steps.md).
+>Alla funktioner som rör kanaler och leveranser beskrivs i [Campaign v8-dokumentationen](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html){target="_blank"}.
 
 ### Kampanjkalender {#campaign-calendar}
 

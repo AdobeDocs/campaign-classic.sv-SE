@@ -7,10 +7,10 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: f0d884ae-0789-4ad9-a8fa-adeffbb560ea
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '828'
-ht-degree: 82%
+source-wordcount: '839'
+ht-degree: 77%
 
 ---
 
@@ -63,13 +63,13 @@ Läs [det här dokumentet](privacy-and-recommendations.md) för att få en förs
 
 Läs [det här avsnittet](../../platform/using/adobe-campaign-workspace.md) för att veta mer om grunderna för arbetsytan i Adobe Campaign.
 
-![](assets/do-not-localize/how-to-video.png) [Upptäck arbetsytan i Campaign via en video](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/getting-started/exploring-the-adobe-campaign-classic-user-interface.html?lang=sv-SE)
+![](assets/do-not-localize/how-to-video.png) [Upptäck arbetsytan i Campaign via en video](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/getting-started/exploring-the-adobe-campaign-classic-user-interface.html)
 
 ## Hur väljer jag målgrupp för mina meddelanden? {#how-can-i-select-the-target-population-of-my-messages-}
 
 Med Adobe Campaign kan du använda olika strategier för att skapa publiker och välja målmottagare.
 
-[Klicka här för att läsa mer](../../delivery/using/steps-defining-the-target-population.md).
+Klicka här om du vill veta mer i [Campaign v8-dokumentationen](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html#target-population){target="_blank"}.
 
 ## Vad är ett arbetsflöde? {#what-is-a-workflow-}
 
@@ -79,13 +79,13 @@ Du kan till exempel använda ett arbetsflöde för att ladda ned en fil från en
 
 Ett arbetsflöde kan även innefatta en eller flera operatörer som ska meddelas eller som kan göra val och godkänna processer. På så sätt kan du skapa en leveransinstruktion, tilldela en eller flera operatörer uppgiften att arbeta med innehåll, ange mål och godkänna korrekturer innan leveransen påbörjas.
 
-[Klicka här för att läsa mer](../../workflow/using/about-workflows.md) om arbetsflöden. Du kan även läsa om [bästa praxis för arbetsflödet](../../workflow/using/building-a-workflow.md).
+[Klicka här för att läsa mer](../../workflow/using/about-workflows.md) om arbetsflöden. Du kan även läsa upp arbetsflödets bästa arbetsmetoder i [dokumentationen för Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/build-a-workflow.html){target="_blank"}.
 
 ## Hur skapar och skickar jag ett första e-postmeddelande? {#how-to-create-and-send-a-first-email-}
 
 [Klicka här för att får reda på mer](../../delivery/using/about-email-channel.md).
 
-![](assets/do-not-localize/how-to-video.png) [Upptäck detta i en video](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/getting-started/creating-a-campaign-and-an-email.html?lang=sv-SE)
+![](assets/do-not-localize/how-to-video.png) [Upptäck detta i en video](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/getting-started/creating-a-campaign-and-an-email.html)
 
 ## Hur skickar jag SMS-meddelanden? {#how-to-send-sms-messages-}
 
@@ -93,7 +93,7 @@ Läs mer [i det här avsnittet](../../delivery/using/sms-channel.md) om hur man 
 
 ## Hur skickar jag push-meddelanden? {#how-to-send-push-notifications-}
 
-Läs mer om hur man använder Adobe Campaign för att [skicka personaliserade push-meddelanden](../../delivery/using/create-notifications-ios.md) till iOS- och Android-enheter via appar.
+Lär dig hur du använder Adobe Campaign för att skicka ett personligt push-meddelande i [Campaign v8-dokumentationen](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/push/push.html){target="_blank"}.
 
 ## Hur designar och delar man en enkät online? {#how-to-design-and-share-an-online-survey-}
 
@@ -131,6 +131,6 @@ Adobe utvärderar ständigt funktionerna i produkten. Adobe gör detta för att 
 
 ## Finns det nya dokumentationsuppdateringar och hjälpmaterial? {#are-there-new-documentation-updates-and-help-materials-released-}
 
-De senaste dokumentationsuppdateringarna för Campaign Classic listas [på den här sidan](https://experienceleague.adobe.com/docs/campaign-classic/using/documentation-updates.html?lang=sv-SE).
+De senaste dokumentationsuppdateringarna för Campaign Classic listas [på den här sidan](https://experienceleague.adobe.com/docs/campaign-classic/using/documentation-updates.html).
 
 Du kan även se de senaste tekniska dokumenten som finns [på den här sidan](https://helpx.adobe.com/se/campaign/kb/article-list.html).

@@ -7,10 +7,10 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: 48926e87-03d9-4aa0-89cb-e3fb4f99c1f5
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '341'
-ht-degree: 81%
+source-wordcount: '360'
+ht-degree: 66%
 
 ---
 
@@ -24,19 +24,19 @@ Upptäck viktiga steg för att utforma meddelanden över flera kanaler med Adobe
 
 Innan du börjar utforma e-postmeddelanden bör du lära dig de koncept och bästa praxis som rör utformning av leveranser och att skicka med Adobe Campaign.
 
-[Klicka här för att läsa mer](../../delivery/using/delivery-best-practices.md).
+Läs mer i [Campaign v8-dokumentationen](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/delivery-best-practices.html){target="_blank"}.
 
 ## Vad är en leveransmall? {#what-is-a-delivery-template-}
 
 Leveranskonfiguration och -parametrar kan sparas i en leveransmall för att användas flera gånger.
 
-[Klicka här för att läsa mer](../../delivery/using/about-templates.md).
+Läs mer i [Campaign v8-dokumentationen](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-templates.html){target="_blank"}.
 
-## Kan jag enkelt importera ett befintligt HTML för att skapa ett e-postmeddelande i Campaign? {#can-i-easily-import-an-existing-html-to-create-an-email-in-campaign-}
+## Kan jag enkelt importera en befintlig HTML för att skapa ett e-postmeddelande i Campaign? {#can-i-easily-import-an-existing-html-to-create-an-email-in-campaign-}
 
 Lär dig hur du importerar en befintlig HTML-kod för att skapa och skicka ett e-postmeddelande i Adobe Campaign med ett enda klick.
 
-[Klicka här för att läsa mer](../../delivery/using/defining-the-email-content.md#message-content).
+Läs mer i [Campaign v8-dokumentationen](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/defining-the-email-content.html#message-content){target="_blank"}.
 
 ## Hur skapar man e-postinnehåll med Campaign DCE? {#how-to-use-campaign-dce-to-create-an-email-content-}
 
@@ -50,7 +50,7 @@ Lär dig hur du importerar en befintlig HTML-kod för att skapa och skicka ett e
 
 Meddelanden som skickas av Adobe Campaign kan personaliseras på flera olika sätt både när det gäller innehåll och utseende. Dessa sätt kan kombineras enligt kriterier som har tagits specifikt från mottagarprofilerna. I allmänhet kan du med Adobe Campaign:
 
-* Anpassa meddelandeformatet. [Klicka här för att läsa mer](../../delivery/using/defining-the-email-content.md#message-content).
+* Anpassa meddelandeformatet. Läs mer i [Campaign v8-dokumentationen](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/defining-the-email-content.html#message-content){target="_blank"}.
 * Infoga dynamiska personaliseringsfält. [Klicka här för att läsa mer](../../delivery/using/personalization-fields.md).
 * Lägga till fördefinierade personaliseringsblock eller skapa ett eget block. [Klicka här för att läsa mer](../../delivery/using/personalization-blocks.md).
 * Skapa villkorsstyrt innehåll. [Klicka här för mer information](../../delivery/using/conditional-content.md) och läs [det här avsnittet](../../delivery/using/conditional-content.md).
@@ -59,7 +59,7 @@ Meddelanden som skickas av Adobe Campaign kan personaliseras på flera olika sä
 
 Du kan skicka flerspråkiga meddelanden till mottagare beroende på till exempel deras preferenser eller land.
 
-För att göra detta kan du lokalisera meddelandeinnehållet och anpassa det efter mottagarens profil med olika [villkor](../../delivery/using/conditional-content.md). Du kan också använda [arbetsflöden](../../workflow/using/split.md) för att välja vilken version av meddelandet som ska skickas beroende på ett test av föredraget språk.
+För att göra detta kan du lokalisera meddelandeinnehållet och anpassa det efter mottagarens profil med olika [villkor](../../delivery/using/conditional-content.md). Du kan också använda arbetsflöden för att välja vilken version av meddelandet som ska skickas, beroende på vilket testspråk du föredrar. Se [Campaign v8-dokumentationen](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/split.html){target="_blank"}.
 
 ## Hur kan jag lokalisera ett webbformulär? {#how-can-i-localize-a-webform-}
 

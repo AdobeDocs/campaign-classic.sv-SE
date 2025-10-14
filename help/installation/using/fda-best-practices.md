@@ -7,10 +7,10 @@ audience: platform
 content-type: reference
 topic-tags: connectors
 exl-id: f3980859-2837-416b-a0ef-2b369d2d50bd
-source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '456'
-ht-degree: 6%
+source-wordcount: '463'
+ht-degree: 0%
 
 ---
 
@@ -30,13 +30,13 @@ Det här alternativet förbättrar prestanda avsevärt när personaliseringssteg
 
 I flera Adobe Campaign-arbetsflödesaktiviteter kan du använda data som lagras i en extern databas.
 
-* **Filter för externa data** - Med aktiviteten [Fråga](../../workflow/using/targeting-data.md#selecting-data) kan du lägga till externa data och använda dem i definierade filterkonfigurationer. Mer information finns på [den här sidan](../../workflow/using/targeting-data.md#selecting-data).
+* **Filter på externa data** - Med aktiviteten Fråga kan du lägga till externa data och använda dem i definierade filterkonfigurationer. Mer information finns i [dokumentationen för Campaign v8]https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/wf-type/targeting-workflows.html){target="_blank"}.
 
-* **Skapa delmängder** - Med aktiviteten [Dela](../../workflow/using/split.md) kan du skapa delmängder. Du kan använda externa data för att definiera de filtervillkor som ska användas. Mer information finns på [den här sidan](../../workflow/using/split.md).
+* **Skapa delmängder** - Med aktiviteten Dela kan du skapa delmängder. Du kan använda externa data för att definiera de filtervillkor som ska användas. Se [Campaign v8-dokumentationen](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/split.html){target="_blank"}.
 
-* **Läs in extern databas** - Du kan använda externa data i aktiviteten [Datainläsning](../../workflow/using/data-loading-rdbms.md) (RDBMS). Läs mer på [den här sidan](../../workflow/using/data-loading-rdbms.md).
+* **Läs in extern databas** - Du kan använda externa data i aktiviteten Datainläsning (RDBMS). Läs mer i [Campaign v8-dokumentationen](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/action-activities/data-loading-rdbms.html){target="_blank"}.
 
-* **Om du lägger till information och länkar** - Med aktiviteten [Berika](../../workflow/using/enrichment.md) kan du lägga till ytterligare data i arbetsflödets arbetstabell och länka till en extern tabell. I det här sammanhanget kan den använda data från en extern databas. Läs mer på [den här sidan](../../workflow/using/enrichment.md).
+* **Lägger till information och länkar** - Med hjälp av aktiviteten Berika kan du lägga till ytterligare data i arbetsflödet och länka till en extern tabell. I det här sammanhanget kan den använda data från en extern databas. Se [Campaign v8-dokumentationen](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/enrichment.html){target="_blank"}.
 
 ## Skyddsritningar och begränsningar {#fda-limitations}
 

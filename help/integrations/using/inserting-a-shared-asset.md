@@ -7,9 +7,9 @@ audience: integrations
 content-type: reference
 topic-tags: asset-sharing
 exl-id: 30a94bce-6d96-4a6d-a62f-7451c822f0e3
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '219'
+source-wordcount: '220'
 ht-degree: 1%
 
 ---
@@ -22,11 +22,11 @@ Assets som delas från Adobe Experience Cloud kan användas i e-postmeddelanden 
 
    Om du använder resurser från Adobe Experience Manager resursbibliotek ska du använda en leveransmall som skapas när [integreringen ](../../integrations/using/configuring-access-to-assets.md#integrating-with-aem-assets) konfigureras.
 
-   Om du inte har den här specifika mallen kontrollerar du att fliken **[!UICONTROL Content editing mode]** (**[!UICONTROL Advanced]**) är inställd på **DCE** i leveransinformationen **Egenskaper** och att det AEM externa kontot som du vill använda för åtkomst till ditt AEM Assets-resursbibliotek finns.
+   Om du inte har den här specifika mallen kontrollerar du att **Egenskaper** för leveransen är inställd på **[!UICONTROL Content editing mode]** DCE **[!UICONTROL Advanced]** på fliken **(**) och att det externa AEM-konto som du vill använda för åtkomst till ditt AEM Assets-resursbibliotek finns.
 
 1. I redigeringsfönstret väljer du alternativet att lägga till en bild:
 
-   * Om du använder [standardredigeringsläget](../../delivery/using/defining-the-email-content.md#adding-images) väljer du **[!UICONTROL Image]** > **[!UICONTROL Select a shared asset]**.
+   * Om du använder [standardredigeringsläget](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/defining-the-email-content.html#adding-images){target="_blank"} väljer du **[!UICONTROL Image]** > **[!UICONTROL Select a shared asset]**.
 
      ![](assets/dam_insert_image_standard.png)
 

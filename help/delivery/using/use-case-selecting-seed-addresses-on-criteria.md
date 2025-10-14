@@ -1,14 +1,14 @@
 ---
 product: campaign
-title: "Användningsfall: välj dirigerade adresser på villkor"
-description: "Användningsfall: välj dirigerade adresser på villkor"
+title: 'Användningsfall: välj dirigerade adresser enligt villkor'
+description: 'Användningsfall: välj dirigerade adresser enligt villkor'
 badge-v8: label="Gäller även för v8" type="Positive" tooltip="Gäller även Campaign v8"
 feature: Seed Address
 exl-id: 091648b8-bf2d-4595-8be3-287f1ac48edd
-source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '851'
-ht-degree: 2%
+source-wordcount: '850'
+ht-degree: 3%
 
 ---
 
@@ -30,7 +30,7 @@ Om du vill använda det dynamiska villkoret måste du ha:
 
 ## Steg 1 - Skapa en leverans {#step-1---creating-a-delivery}
 
-Stegen för att skapa en leverans beskrivs i avsnittet [Skapa en e-postleverans](creating-an-email-delivery.md).
+Stegen för att skapa en leverans beskrivs i [Campaign v8-dokumentationen](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/email.html){target="_blank"}.
 
 I det här exemplet har leveranshanteraren skapat nyhetsbrevet och valt mottagare.
 
@@ -44,7 +44,7 @@ Om du vill skapa ett gemensamt värde som det i vårt exempel (Inköpsavdelning)
 
 Mer information om schematillägg finns i [det här avsnittet](../../configuration/using/data-schemas.md).
 
-1. Klicka på ikonen **[!UICONTROL New]** i noden **[!UICONTROL Administration > Configuration > Data schemas]**.
+1. Klicka på ikonen **[!UICONTROL Administration > Configuration > Data schemas]** i noden **[!UICONTROL New]**.
 1. I fönstret **[!UICONTROL Creation of a data schema]** väljer du alternativet **[!UICONTROL Extension of a schema]** och klickar på **[!UICONTROL Next]**.
 
    ![](assets/dlv_seeds_usecase_09.png)
@@ -79,7 +79,7 @@ Mer information om schematillägg finns i [det här avsnittet](../../configurati
    I det här fallet anger du att en ny uppräkning med namnet **[!UICONTROL Department]** har skapats i dirigerad adresstabellen, och den är baserad på standarduppräkningsmallen för **[!UICONTROL @company]** (med namnet **Företag** i startadressformuläret).
 
 1. Klicka på **[!UICONTROL Save]**.
-1. Välj alternativet **[!UICONTROL Update database structure]** på menyn **[!UICONTROL Tools > Advanced]**.
+1. Välj alternativet **[!UICONTROL Tools > Advanced]** på menyn **[!UICONTROL Update database structure]**.
 
    ![](assets/dlv_seeds_usecase_12.png)
 

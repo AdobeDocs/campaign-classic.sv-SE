@@ -4,9 +4,9 @@ title: Granskningskedja
 description: Lär dig övervaka instansen med granskningsspår för Campaign
 feature: Audit Trail, Monitoring, Workflows
 exl-id: 8508d879-fb38-4b1f-9f55-0341bb8d0c67
-source-git-commit: 3d1ed85dcafc5afc4088db98c09d78fb7e9c0a39
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '421'
+source-wordcount: '423'
 ht-degree: 2%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 2%
 
 >[!INFO]
 >
->Läs mer om funktionen Granskningsspår i [Adobe Campaign v8-dokumentationen](https://experienceleague.adobe.com/sv/docs/campaign/campaign-v8/analytics/audit-trail).
+>Läs mer om funktionen Granskningsspår i [Adobe Campaign v8-dokumentationen](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/analytics/audit-trail).
 
 I Adobe Campaign ger **[!UICONTROL Audit trail]** dig tillgång till den fullständiga historiken över ändringar som gjorts i din instans.
 
@@ -47,7 +47,8 @@ I Adobe Campaign ger **[!UICONTROL Audit trail]** dig tillgång till den fullst�
 
   Mer information om arbetsflöden finns på [sidan](../../workflow/using/about-workflows.md).
 
-  Mer information om hur du övervakar arbetsflöden finns i det [dedikerade avsnittet](../../workflow/using/monitoring-workflow-execution.md).
+  Mer information om hur du övervakar arbetsflöden finns i [dokumentationen för Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/monitoring-workflows/monitor-workflow-execution.html){target="_blank"}.
+
 
 * Med **Alternativ granskningsspår** kan du kontrollera aktiviteter och senaste ändringar som du har gjort i alternativen.
 

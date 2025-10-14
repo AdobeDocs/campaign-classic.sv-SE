@@ -7,16 +7,16 @@ role: User, Developer, Data Engineer
 hide: true
 hidefromtoc: true
 exl-id: 4520504a-0d9f-4ea7-a5a8-0c07948af4f0
-source-git-commit: 89e350c727fb9379d28916f79d9749f22fd4974f
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '971'
+source-wordcount: '980'
 ht-degree: 6%
 
 ---
 
 # Skapa meddelanden för iOS{#create-notifications-ios}
 
-I det här avsnittet beskrivs de element som är specifika för leveransen av iOS-meddelanden. Globala koncept för leveransskapande presenteras i [det här avsnittet](steps-about-delivery-creation-steps.md).
+I det här avsnittet beskrivs de element som är specifika för leveransen av iOS-meddelanden. Globala koncept för leveransskapande presenteras i [dokumentationen för Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html){target="_blank"}.
 
 Börja med att skapa en ny leverans.
 
@@ -34,7 +34,7 @@ Följ stegen nedan för att skapa ett push-meddelande för iOS-enheter:
 
    >[!NOTE]
    >
-   >Den detaljerade processen när målpopulationen för en leverans väljs visas i [det här avsnittet](steps-defining-the-target-population.md).
+   >Den detaljerade processen när målpopulationen för en leverans väljs visas i det här avsnittet i [Campaign v8-dokumentationen](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html#target-population.){target="_blank"}.
    >
    >Mer information om användning av anpassningsfält finns i [det här avsnittet](about-personalization.md).
    >

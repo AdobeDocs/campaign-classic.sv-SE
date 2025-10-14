@@ -8,10 +8,10 @@ level: Beginner
 hide: true
 hidefromtoc: true
 exl-id: 07c1f4a3-cf16-4a9b-b402-e13258799f91
-source-git-commit: b4059e43d98643f0f8b5b3f68f03e10b755e8ba3
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '3864'
-ht-degree: 100%
+source-wordcount: '3865'
+ht-degree: 99%
 
 ---
 
@@ -30,7 +30,7 @@ Som en del av ett kampanjinitiativ för Campaign v8 har vi börjat omorganisera 
 * Orkestrera marknadsföringskampanjer: den här guiden har ersatts med en [landningssida](../../campaign/using/about-marketing-campaigns.md).
 * Hantering av marknadsföringsresurser: den här guiden har tagits bort.
 * Distribuerad marknadsföring: den här guiden har tagits bort.
-* Automatisera med arbetsflöden: den här guiden har ersatts med en [landningssida](../../workflow/using/about-workflow-automation.md)
+* Automatisera med arbetsflöden: den här guiden har ersatts med en [landningssida](../../workflow/using/about-workflows.md)
 
 ## 2024
 
@@ -419,7 +419,7 @@ Instruktionsvideor finns nu tillgängliga för följande ämnen:
 
 * [Så personaliserar du e-postmeddelanden med personaliseringsfält](../../delivery/using/personalization-fields.md)
 
-* [Så hanterar du frön och korrektur i ett e-postmeddelande](../../delivery/using/steps-defining-the-target-population.md)
+* [Hantera startvärde och korrektur i ett e-postmeddelande](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html#target-population){target="_blank"}.
 
 * [Så ställer du in en återkommande leverans](../../workflow/using/recurring-delivery.md)
 

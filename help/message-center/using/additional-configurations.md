@@ -7,9 +7,9 @@ audience: message-center
 content-type: reference
 topic-tags: instance-configuration
 exl-id: 4d25d740-db57-4d18-8cae-2dd49c4a786e
-source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '793'
+source-wordcount: '798'
 ht-degree: 4%
 
 ---
@@ -120,7 +120,7 @@ Följ stegen nedan på körningsinstansen/körningsinstanserna:
    >
    >Lär dig hur du skapar ett externt konto av typen körningsinstans i [det här avsnittet](../../message-center/using/configuring-instances.md#control-instance).
 
-1. Utöka schemat nms:extAccount för att lägga till spårnings-URL:
+1. Utöka nms:extAccount-schemat för att lägga till spårnings-URL:
 
    ```
    <attribute advanced="true" desc="URL of the tracking servers" label="Tracking server URL"
@@ -169,6 +169,6 @@ Gör så här:
 
 1. Skapa ett externt konto per varumärke med samma interna namn som definierats i [körningsinstansen](#execution-instance) (steg 1).
 
-1. Skapa en [leveransmall](../../delivery/using/about-templates.md) per varumärke.
+1. Skapa en leveransmall per varumärke. Se [Campaign v8-dokumentationen](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-templates.html){target="_blank"}.
 
 1. I leveransmallens **[!UICONTROL Properties]** anger du routningen till varumärkesets externa konto.

@@ -6,9 +6,9 @@ badge-v8: label="Gäller även för v8" type="Positive" tooltip="Gäller även C
 feature: Workflows
 role: User
 exl-id: bc6ebf5d-cc21-4750-9713-2bf259e7d6bf
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '1197'
+source-wordcount: '1201'
 ht-degree: 0%
 
 ---
@@ -101,7 +101,7 @@ Innehållet fylls i automatiskt av ett XML-flöde som kommer från den URL som a
 </book>
 ```
 
-Dataformatet stämmer inte överens med det dataschema som anges i publiceringsmallen (**cus:book** i vårt exempel). **`<section>`** -elementet måste ersättas med **`<chapter>`** -elementet. Vi måste använda formatmallen&quot;cus:book-workflow.xsl&quot; för att kunna göra nödvändiga ändringar.
+Dataformatet stämmer inte överens med det dataschema som anges i publiceringsmallen (**cus:book** i vårt exempel). **`<section>`** -elementet måste ersättas med **`<chapter>`** -elementet. Vi måste tillämpa formatmallen&quot;cus:book-workflow.xsl&quot; för att kunna göra nödvändiga ändringar.
 
 Source-kod för XSLT-formatmallen som används:
 
@@ -150,7 +150,7 @@ Leveransåtgärden har konfigurerats via aktiviteten **Leverans**:
 
 En ny leveransåtgärd skapas utifrån en mall.
 
-Leveransmallen för aktiviteten används för att välja omformningsmallarna för publiceringsmallen. Vid generering av innehåll tas hänsyn till alla HTML- och textmallar utan leveransmallar eller mallar som refereras till med samma mall som aktiviteten.
+Leveransmallen för aktiviteten används för att välja omformningsmallarna för publiceringsmallen. Vid generering av innehåll tas hänsyn till alla HTML- och Textmallar utan leveransmallar eller mallar som refereras till med samma mall som aktiviteten.
 
 Målet som ska levereras anges via den inkommande händelsen.
 
@@ -214,11 +214,13 @@ Den sista åtgärden i aktiviteten är att förbereda och starta leveransen.
 
 ### Importera innehåll från FTP {#importing-content-from-ftp}
 
-Om ditt leveransinnehåll finns i en HTML-fil på FTP- eller SFTP-servrar kan du enkelt läsa in det i Adobe Campaign-leveranser. Se [det här exemplet](../../workflow/using/loading-delivery-content.md).
+Om ditt leveransinnehåll är tillgängligt i en HTML-fil som finns på FTP- eller SFTP-servrar kan du enkelt läsa in innehållet i Adobe Campaign-leveranser. Se [Campaign v8-dokumentationen](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/deliveries/load-delivery-content.html){target="_blank"}.
+
 
 ### Importera innehåll från kopplingen för Amazon Simple Storage Service (S3) {#importing-content-from-amazon-simple-storage-service--s3--connector}
 
-Om ditt leveransinnehåll finns i Amazon Simple Storage Service (S3)-bucket kan du enkelt läsa in det i Adobe Campaign-leveranser. Se [det här exemplet](../../workflow/using/loading-delivery-content.md).
+Om ditt leveransinnehåll finns i Amazon Simple Storage Service (S3)-bucket kan du enkelt läsa in det i Adobe Campaign-leveranser. Se [Campaign v8-dokumentationen](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/deliveries/load-delivery-content.html){target="_blank"}.
+
 
 ## Halvautomatisk uppdatering {#semi-automatic-update}
 
@@ -230,7 +232,7 @@ Målet är att deklarera ett **editBtn** type **`<input>`** -fält i formuläret
 
 Med redigeringszonen kan du fylla i variabeldata som används för att skapa URL:en för XML-flödet med data som ska hämtas.
 
-Knappen kör SOAP **GetAndTransform** som fylls i under taggen **`<input>`**.
+Knappen kör SOAP-metoden **GetAndTransform** som fylls i under taggen **`<input>`**.
 
 Kontrolldeklarationen i formuläret är följande:
 
@@ -270,6 +272,6 @@ Ett halvautomatiskt indataformulär för redigeringskontroll för uppdatering l�
 
 I redigeringszonen kan du ange namnet på filen som ska hämtas. URL:en skapas utifrån det här namnet, till exempel: https://myserver.adobe.com/incomin/data.xml
 
-Formatet på de data som ska hämtas är detsamma som i exempel 1 av automatisering av arbetsflöden. Vi ska använda formatmallen&quot;cus:book-workflow.xsl&quot; som finns i det här exemplet.
+Formatet på de data som ska hämtas är detsamma som i exempel 1 av automatisering av arbetsflöden. Vi ska använda formatmallen&quot;cus:book-workflow.xsl&quot; som visas i det här exemplet.
 
 Resultatet av jobbkörningen uppdaterar innehållsinstansen från sökvägen &#39;.&#39;.

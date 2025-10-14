@@ -6,9 +6,9 @@ feature: SMS
 role: User, Developer, Admin
 level: Experienced
 exl-id: 6987cb5e-8821-4619-b0e4-f0fad3355bfb
-source-git-commit: 2bfcec5eaa1145cfb88adfa9c8b2f72ee3cd9469
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '981'
+source-wordcount: '982'
 ht-degree: 8%
 
 ---
@@ -37,7 +37,7 @@ Om du vill starta konfigurationsprocessen måste du skapa en SMS-operator på Mi
 >
 >Varje SMS-koppling kräver en unik SMS-operator.
 
-1. Klicka på ikonen **[!UICONTROL New]** i noden **[!UICONTROL Administration]** > **[!UICONTROL Access management]** > **[!UICONTROL Operators node]** i trädet.
+1. Klicka på ikonen **[!UICONTROL Administration]** i noden **[!UICONTROL Access management]** > **[!UICONTROL Operators node]** > **[!UICONTROL New]** i trädet.
 
    ![](assets/sms_operator_mid_3.png)
 
@@ -59,7 +59,7 @@ Om du vill starta konfigurationsprocessen måste du skapa en SMS-operator på Mi
 
 Om du vill skicka ett SMS till en mobiltelefon med mellanservrar måste du först skapa ett externt SMS-konto på marknadsföringsservern.
 
-1. Klicka på ikonen **[!UICONTROL New]** i noden **[!UICONTROL Platform]** > **[!UICONTROL External accounts]** i trädet.
+1. Klicka på ikonen **[!UICONTROL Platform]** i noden **[!UICONTROL External accounts]** > **[!UICONTROL New]** i trädet.
 
    ![](assets/mid_external_account_2.png)
 
@@ -91,7 +91,7 @@ Mer information om SMS-protokoll och inställningar finns på [sidan](sms-protoc
 
 Gör så här:
 
-1. Klicka på ikonen **[!UICONTROL New]** i noden **[!UICONTROL Platform]** > **[!UICONTROL External accounts]** i trädet.
+1. Klicka på ikonen **[!UICONTROL Platform]** i noden **[!UICONTROL External accounts]** > **[!UICONTROL New]** i trädet.
 
 1. Ange **[!UICONTROL Label]** och **[!UICONTROL Internal name]**.
 
@@ -108,7 +108,7 @@ Gör så här:
 
 1. Markera rutan **[!UICONTROL Enabled]**.
 
-1. Välj **[!UICONTROL Extended generic SMPP]** i listrutan **[!UICONTROL Connector]** på fliken **[!UICONTROL Mobile]**.
+1. Välj **[!UICONTROL Mobile]** i listrutan **[!UICONTROL Extended generic SMPP]** på fliken **[!UICONTROL Connector]**.
 
    ![](assets/mid_external_account_4.png)
 
@@ -142,7 +142,7 @@ Gör så här:
 
    Mer information om detta finns i [det här avsnittet](sms-set-up.md#about-text-encodings).
 
-1. Alternativet **[!UICONTROL Send full phone number]** är inaktiverat som standard på fliken **[!UICONTROL SMSC specificities]**. Aktivera det inte om du vill respektera SMPP-protokollet och bara överföra siffror till servern för SMS-providern (SMSC).
+1. Alternativet **[!UICONTROL SMSC specificities]** är inaktiverat som standard på fliken **[!UICONTROL Send full phone number]**. Aktivera det inte om du vill respektera SMPP-protokollet och bara överföra siffror till servern för SMS-providern (SMSC).
 
    Eftersom vissa leverantörer kräver att&quot;+&quot;-prefixet används, bör du kontakta din leverantör och föreslå att du aktiverar det här alternativet om det behövs.
 
@@ -154,7 +154,7 @@ Gör så här:
 
 ## Ändra leveransmallen {#changing-the-delivery-template}
 
-Adobe Campaign erbjuder en mobil leveransmall som finns i noden **[!UICONTROL Resources > Templates > Delivery templates]**. Mer information finns i avsnittet [Om mallar](about-templates.md).
+Adobe Campaign erbjuder en mobil leveransmall som finns i noden **[!UICONTROL Resources > Templates > Delivery templates]**. Mer information finns i [dokumentationen för Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-templates.html){target="_blank"}.
 
 Om du vill skicka meddelanden via SMS-kanalen måste du skapa en mall som innehåller en referens till kanalkopplingen.
 
@@ -162,7 +162,7 @@ Om du vill behålla den inbyggda leveransmallen rekommenderar vi att du duplicer
 
 I exemplet nedan genererar vi en mall som gör det lättare att leverera meddelanden via det SMPP-konto som skapats tidigare. Så här gör du:
 
-1. Högerklicka på mallen **[!UICONTROL Send to mobiles]** i noden **[!UICONTROL Resources]** > **[!UICONTROL Templates]** > **[!UICONTROL Delivery templates]** i trädet och välj **[!UICONTROL Duplicate]**.
+1. Högerklicka på mallen **[!UICONTROL Resources]** i noden **[!UICONTROL Templates]** > **[!UICONTROL Delivery templates]** > **[!UICONTROL Send to mobiles]** i trädet och välj **[!UICONTROL Duplicate]**.
 
    ![](assets/delivery_template_mid_1.png)
 

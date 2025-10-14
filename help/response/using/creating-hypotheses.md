@@ -8,10 +8,10 @@ audience: campaign
 content-type: reference
 topic-tags: response-manager
 exl-id: e0b3bc9f-5e81-463f-a59e-cd972a47109b
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '1012'
-ht-degree: 3%
+source-wordcount: '1025'
+ht-degree: 2%
 
 ---
 
@@ -146,7 +146,7 @@ I det här exemplet vill vi skapa en hypotes kopplad till en leverans. Denna hyp
 
 Därefter förfinar vi frågan som ärvts från modellen så att vi kan göra en hypotes om en viss artikel i inköpstabellen.
 
-1. Skapa en kampanj och en leverans. [Läs mer](../../campaign/using/setting-up-marketing-campaigns.md#creating-a-campaign)
+1. Skapa en kampanj och en leverans. Se [Campaign v8-dokumentationen](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/set-up-campaigns.html){target=_blank}.
 
    Vi använder till exempel en direktutskick.
 
@@ -156,7 +156,7 @@ Därefter förfinar vi frågan som ärvts från modellen så att vi kan göra en
 
    >[!NOTE]
    >
-   >Mer information hittar du i [det här avsnittet](../../campaign/using/marketing-campaign-deliveries.md#defining-a-control-group).
+   >För ytterligare information, se [Campaign v8-dokumentation](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-target.html#add-a-control-group){target="_blank"}.
 
 1. Öppna **[!UICONTROL Direct mail delivery]** och klicka på ikonen **[!UICONTROL Delivery measurement]** och sedan på **[!UICONTROL Add]**.
 
@@ -178,7 +178,7 @@ Därefter förfinar vi frågan som ärvts från modellen så att vi kan göra en
 
    ![](assets/response_hypothesis_delivery_example_008.png)
 
-1. Starta målarbetsflödet och kör de kontroller som krävs tills kampanjen är klar. [Läs mer](../../campaign/using/marketing-campaign-deliveries.md#starting-a-delivery)
+1. Starta målarbetsflödet och kör de kontroller som krävs tills kampanjen är klar. Se [Campaign v8-dokumentationen](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-deliveries.html#start-a-delivery){target=_blank}.
 
    ![](assets/response_hypothesis_delivery_example_009.png)
 

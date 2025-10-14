@@ -6,10 +6,10 @@ feature: Troubleshooting
 hidefromtoc: true
 hide: true
 exl-id: 3a84236f-89e5-4b8b-9a98-afdc006fd6e0
-source-git-commit: 192505e1c4d387de55ca18b578b837d237cc0607
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '653'
-ht-degree: 62%
+source-wordcount: '656'
+ht-degree: 61%
 
 ---
 
@@ -54,7 +54,7 @@ Hur uppgraderar jag till en ny version? hur man övervakar arbetsflödeskörning
         <ul>
         <li><a href="production/using/performance-and-throughput-issues.md">Prestanda- och dataflödesproblem</a></li>
         <li><a href="delivery/using/delivery-performances.md">Leveransprestanda</a></li>
-        <li><a href="workflow/using/workflow-best-practices.md">Optimera arbetsflödets prestanda</a></li>
+        <li><a href="https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/workflow-best-practices.html" target="_blank">Optimera arbetsflödets prestanda</a></li>
         <li><a href="workflow/using/monitoring-workflow-execution.md">Felsökning av arbetsflödeskörning</a></li>
         <li><a href="platform/using/sftp-server-usage.md">Användning av SFTP-server</a></li>
         <li><a href="delivery/using/understanding-delivery-failures.md">Förstå leveransfel</a></li>
@@ -62,14 +62,14 @@ Hur uppgraderar jag till en ny version? hur man övervakar arbetsflödeskörning
     </td>
    <td valign="top">
         <ul>
-        <li><a href="workflow/using/workflow-best-practices.md">Bäst praxis för arbetsflöden</a></li>
+        <li><a href="https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/workflow-best-practices.html" target="_blank">Bästa praxis för arbetsflöden</a></li>
         <li><a href="workflow/using/monitoring-technical-workflows.md">Övervakning av tekniskt arbetsflöde</a></li>
         <li><a href="delivery/using/about-message-tracking.md">Förstå hantering av spårning</a></li>
         <li><a href="production/using/monitoring-guidelines.md">Upptäck övervakningsverktyg</a></li>
         <li><a href="platform/using/import-export-workflows.md">Importera data med arbetsflöden</a></li>
         <li><a href="delivery/using/steps-sending-the-delivery.md">Skicka meddelanden i flera påfyllnader</a></li>
         <li><a href="delivery/using/defining-the-email-content.md">Designa e-postinnehåll</a></li>
-        <li><a href="delivery/using/delivery-best-practices.md">Bästa praxis för leverans</a></li>
+        <li><a href="https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/delivery-best-practices.html" target="_blank">Bästa praxis för leverans</a></li>
         </ul>
     </td>
     <td valign="top">
@@ -113,7 +113,7 @@ Kontrollpanelen är tillgänglig direkt från Adobe Experience Cloud. Den är en
 
 ### SFTP-hantering
 
-På Kontrollpanelen kan du interagera med alla SFTP-servrar som är anslutna till Campaign-instanser som du har tillgång till. Du kan övervaka deras lagringskapacitet, hantera IP-adresser på tillåtelselista och offentliga SSH-nycklar. [Klicka här](https://experienceleague.adobe.com/docs/control-panel/using/sftp-management/about-sftp-management.html?lang=sv-SE) för mer information.
+På Kontrollpanelen kan du interagera med alla SFTP-servrar som är anslutna till Campaign-instanser som du har tillgång till. Du kan övervaka deras lagringskapacitet, hantera IP-adresser på tillåtelselista och offentliga SSH-nycklar. [Klicka här](https://experienceleague.adobe.com/docs/control-panel/using/sftp-management/about-sftp-management.html) för mer information.
 
 ### Underdomäner och certifikat
 
@@ -125,9 +125,9 @@ Du kan övervaka dina underdomäner och deras certifikat. Läs mer på dessa sid
 ### Instansinställningar
 
 Lär dig hur du hanterar inställningarna för dina Campaign Classic-instanser på Kontrollpanelen. Läs mer på dessa sidor:
-* [Lägg till IP-adresser på tillåtelselista](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/ip-allow-listing-instance-access.html?lang=sv-SE) för att komma åt dina Campaign-instanser
+* [Lägg till IP-adresser på tillåtelselista](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/ip-allow-listing-instance-access.html) för att komma åt dina Campaign-instanser
 * [Hantera URL-behörigheter](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/url-permissions.html?lang=sv)
-* [Åtkomstinstansinformation](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/instance-details.html?lang=sv-SE)
+* [Åtkomstinstansinformation](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/instance-details.html)
 * [Hantera GPG-nycklar för datakryptering](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/gpg-keys-management.html?lang=sv)
 
 ## Begär hjälp {#support}

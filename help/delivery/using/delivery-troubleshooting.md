@@ -6,9 +6,9 @@ badge-v8: label="Gäller även för v8" type="Positive" tooltip="Gäller även C
 feature: Monitoring, Deliverability, Troubleshooting
 role: User
 exl-id: 37b1d7fb-7ceb-4647-9aac-c8a80495c5bf
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '801'
+source-wordcount: '809'
 ht-degree: 1%
 
 ---
@@ -31,7 +31,7 @@ När du har klickat på knappen **[!UICONTROL Send]** verkar leveransen ta läng
 
 * Vissa e-postleverantörer kan ha lagt till dina IP-adresser i en blockeringslista. I så fall kontrollerar du dina utsändningsloggar och läser [det här avsnittet](about-deliverability.md).
 
-* Leveransen kan vara för stor för att kunna behandlas snabbt. Detta kan inträffa med hög JavaScript-personalisering eller om leveransen överstiger 60 kbit/s. Läs Adobe Campaign [Bästa praxis](delivery-best-practices.md) för leverans om du vill veta mer om riktlinjer för innehåll.
+* Leveransen kan vara för stor för att kunna behandlas snabbt. Detta kan inträffa med hög JavaScript-personalisering eller om leveransen överstiger 60 kbit/s. Läs mer i [Bästa praxis för leverans](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/delivery-best-practices.html){target="_blank"} i Adobe Campaign v8.  om du vill veta mer om riktlinjer för innehåll.
 
 * Begränsning kan ha inträffat i Adobe Campaign MTA. Detta orsakas av:
 
@@ -45,7 +45,7 @@ När du har klickat på knappen **[!UICONTROL Send]** verkar leveransen ta läng
 
 Om leveranser inte utförs vid exakt schemalagt datum kan det bero på en skillnad mellan serverns tidszon. Mellankällinstansen och produktionsinstansen kan finnas i olika tidszoner.
 
-Om exempelvis mellanleverantörsinstansen ligger i Brisbane-tidszonen och produktionsinstansen ligger i Darwin-tidszonen ligger båda tidszonerna en halvtimme från varandra, skulle du i granskningsloggen tydligt se att om leveransen är planerad till produktion kl. 11.56 skulle samma leverans som är planerad till mitten vara kl. 12.26, vilket har en skillnad på en halvtimme.
+Om till exempel mittkällinstansen ligger i Brisbane-tidszonen och produktionsinstansen i Darwin-tidszonen ligger båda tidszonerna en halvtimme från varandra, skulle du i granskningsloggen tydligt se att om leveransen är planerad för produktion vid 11:56 skulle samma leverans som är schemalagd till mitten vara 12:26, vilket har en skillnad på en halvtimme.
 
 ## Status misslyckades {#failed-status}
 
@@ -59,9 +59,9 @@ Leveransloggar är viktiga för att lära sig varför en leverans misslyckades. 
   Error while compiling script 'content htmlContent' line X: `[table]` is not defined. JavaScript: error while evaluating script 'content htmlContent
   ```
 
-  Orsaken till problemet är nästan alltid en personalisering inom HTML som försöker anropa ett register eller fält som inte har definierats eller mappats i den överordnade målsättningen eller i leveransens målmappning.
+  Orsaken till problemet är nästan alltid en personalisering inom HTML som försöker anropa en tabell eller ett fält som inte har definierats eller mappats i den överordnade målsättningen eller i leveransens målmappning.
 
-  För att rätta till detta måste arbetsflödes- och leveransinnehållet granskas för att avgöra specifikt vilken personalisering som försöker anropa tabellen i fråga och om tabellen kan mappas eller inte. Därifrån kan man antingen ta bort anropet till den här tabellen i HTML eller åtgärda mappningen till leveransen genom att gå mot en lösning.
+  För att rätta till detta måste arbetsflödes- och leveransinnehållet granskas för att avgöra specifikt vilken personalisering som försöker anropa tabellen i fråga och om tabellen kan mappas eller inte. Därifrån är det vägen till lösning om du tar bort anropet till den här tabellen i HTML eller korrigerar mappningen till leveransen.
 
 * I distributionsmodellen där flera leverantörer är installerade kan följande meddelande visas i leveransloggarna:
 
@@ -73,7 +73,7 @@ Leveransloggar är viktiga för att lära sig varför en leverans misslyckades. 
 
   För att lösa detta rekommenderar vi att du utför ett vakuum och indexerar om databasen. Mer information om databasunderhåll finns i [det här avsnittet](../../production/using/recommendations.md).
 
-  Du bör också starta om alla arbetsflöden med en schemalagd aktivitet och alla arbetsflöden med statusen misslyckades. Se [det här avsnittet](../../workflow/using/scheduler.md).
+  Du bör också starta om alla arbetsflöden med en schemalagd aktivitet och alla arbetsflöden med statusen misslyckades. Se [Campaign v8-dokumentationen](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/flow-control-activities/scheduler.html){target="_blank"}.
 
 * När en leverans misslyckas kan följande fel visas i leveransloggarna:
 
@@ -83,7 +83,7 @@ Leveransloggar är viktiga för att lära sig varför en leverans misslyckades. 
 
   Vanligtvis innebär det här felet att det finns ett anpassningsfält eller -block i e-postmeddelandet som har fler än ett värde för mottagaren. Ett personaliseringsblock används och hämtar mer än en post för en viss mottagare.
 
-  Du löser detta genom att kontrollera vilka personaliseringsdata som används och sedan kontrollera målet för mottagare som har fler än en post för något av dessa fält. Du kan också använda en **[!UICONTROL Deduplication]**-aktivitet i målarbetsflödet före leveransaktiviteten för att kontrollera att det bara finns ett personaliseringsfält åt gången. Mer information om borttagning av dubbletter finns på [den här sidan](../../workflow/using/deduplication.md).
+  Du löser detta genom att kontrollera vilka personaliseringsdata som används och sedan kontrollera målet för mottagare som har fler än en post för något av dessa fält. Du kan också använda en **[!UICONTROL Deduplication]**-aktivitet i målarbetsflödet före leveransaktiviteten för att kontrollera att det bara finns ett personaliseringsfält åt gången. Mer information om borttagning av dubbletter finns i [dokumentationen för Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/deduplication.html){target="_blank"}.
 
 * En del leveranser kan misslyckas med felet &quot;Onåbar&quot; som anger:
 

@@ -6,9 +6,9 @@ badge-v8: label="Gäller även för v8" type="Positive" tooltip="Gäller även C
 feature: Monitoring, Deliverability
 role: User
 exl-id: 86c7169a-2c71-4c43-8a1a-f39871b29856
-source-git-commit: 0fba6a2ad4ffa864e2f726f241aa9d7cd39072a6
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '2567'
+source-wordcount: '2578'
 ht-degree: 10%
 
 ---
@@ -135,7 +135,7 @@ Möjliga orsaker till leveransfel är:
    <td> Ej definierad </td> 
    <td> Ej definierad </td> 
    <td> 0 </td> 
-   <td> Adressen kvalificeras eftersom felet inte har ökats ännu. Den här typen av fel inträffar när ett nytt felmeddelande skickas av servern: det kan vara ett isolerat fel, men om det inträffar igen ökar felräknaren, som varnar de tekniska teamen. De kan sedan utföra meddelandeanalys och kvalificera det här felet via noden <span class="uicontrol">Administration</span> / <span class="uicontrol">Campaign Management</span> / <span class="uicontrol">Hantering av icke-slutprodukter</span> i trädstrukturen.<br /> </td> 
+   <td> Adressen kvalificeras eftersom felet inte har ökats ännu. Den här typen av fel inträffar när ett nytt felmeddelande skickas av servern: det kan vara ett isolerat fel, men om det inträffar igen ökar felräknaren, som varnar de tekniska teamen. De kan sedan utföra meddelandeanalys och kvalificera det här felet via noden <span class="uicontrol">Administration</span> / <span class="uicontrol">Kampanjhantering</span> / <span class="uicontrol">Hantering av ej slutprodukter</span> i trädstrukturen.<br /> </td> 
   </tr> 
   <tr> 
    <td> Erbjudandena är inte giltiga </td> 
@@ -188,9 +188,9 @@ Om ett meddelande misslyckas på grund av ett tillfälligt fel av typen **Mjuk**
 >
 >Om du har uppgraderat till [Förbättrat MTA](sending-with-enhanced-mta.md) för värdbaserade eller hybridinstallerade installationer används inte längre inställningarna för nya försök i leveransen av Campaign. Mjuka avhoppsförsök och hur lång tid det tar mellan dem bestäms av den förbättrade MTA-metoden baserat på typ och allvarlighetsgrad för de avhoppssvar som kommer tillbaka från meddelandets e-postdomän.
 
-För anläggningsinstallationer och värdbaserade/hybridinstallationer som använder det äldre Campaign MTA går du till de avancerade parametrarna för leverans- eller leveransmallen och anger önskad varaktighet i motsvarande fält för att ändra varaktigheten för en leverans. Se [Definiera giltighetsperiod](steps-sending-the-delivery.md#defining-validity-period).
+För anläggningsinstallationer och värdbaserade/hybridinstallationer som använder det äldre Campaign MTA går du till de avancerade parametrarna för leverans- eller leveransmallen och anger önskad varaktighet i motsvarande fält för att ändra varaktigheten för en leverans. Se den här [sidan](communication-channels.md) under **Leveranssändning** > **Definiera giltighetsperiod**.
 
-Standardkonfigurationen tillåter fem försök med en timmes intervall, följt av ett nytt försök per dag i fyra dagar. Antalet försök kan ändras globalt (kontakta den tekniska administratören för Adobe) eller för varje leverans- eller leveransmall. Se [Konfigurera återförsök](steps-sending-the-delivery.md#configuring-retries).
+Standardkonfigurationen tillåter fem försök med en timmes intervall, följt av ett nytt försök per dag i fyra dagar. Antalet försök kan ändras globalt (kontakta Adobe tekniska administratör) eller för varje leverans- eller leveransmall. Se [sidan](communication-channels.md) under **Leveranssändning** > **Konfigurera återförsök**.
 
 ## Synkrona och asynkrona fel {#synchronous-and-asynchronous-errors}
 
@@ -203,7 +203,7 @@ Ett meddelande kan misslyckas omedelbart (synkront fel) eller senare efter att d
   >
   >Konfiguration av studspostlådan beskrivs i [det här avsnittet](../../installation/using/deploying-an-instance.md#managing-bounced-emails).
 
-  [feedbackslingan](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html?lang=sv-SE#feedback-loops) fungerar som studsmeddelanden. När en användare kvalificerar ett e-postmeddelande som skräppost kan du konfigurera e-postregler i Adobe Campaign så att alla leveranser till den här användaren blockeras. Meddelanden som skickas till användare som har kvalificerat ett e-postmeddelande som skräppost omdirigeras automatiskt till en e-postruta som har skapats för detta ändamål. Dessa användares adresser är till blockeringslista, även om de inte klickade på länken för att ta bort prenumerationen. Adresser är blockeringslista i karantäntabellen (**NmsAddress**) och inte i mottagartabellen (**NmsRecipient**).
+  [feedbackslingan](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html#feedback-loops) fungerar som studsmeddelanden. När en användare kvalificerar ett e-postmeddelande som skräppost kan du konfigurera e-postregler i Adobe Campaign så att alla leveranser till den här användaren blockeras. Meddelanden som skickas till användare som har kvalificerat ett e-postmeddelande som skräppost omdirigeras automatiskt till en e-postruta som har skapats för detta ändamål. Dessa användares adresser är till blockeringslista, även om de inte klickade på länken för att ta bort prenumerationen. Adresser är blockeringslista i karantäntabellen (**NmsAddress**) och inte i mottagartabellen (**NmsRecipient**).
 
   >[!NOTE]
   >

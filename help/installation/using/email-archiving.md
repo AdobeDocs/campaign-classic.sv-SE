@@ -7,10 +7,10 @@ audience: installation
 content-type: reference
 topic-tags: additional-configurations
 exl-id: 424faf25-2fd5-40d1-a2fc-c715fc0b8190
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
 source-wordcount: '1211'
-ht-degree: 2%
+ht-degree: 1%
 
 ---
 
@@ -24,13 +24,13 @@ Men Adobe Campaign hanterar inte själva arkiverade filer. Det gör att du kan s
 
 För att göra detta överförs e-postfiler som motsvarar skickade e-postmeddelanden till en fjärrserver, till exempel en SMTP-e-postserver. Arkiveringsmålet är en e-postadress (osynlig för leveransmottagarna) som du måste ange.
 
-## Recommendations och begränsningar {#recommendations-and-limitations}
+## Rekommendationer och begränsningar {#recommendations-and-limitations}
 
 * Funktionen för e-postkopia är valfri. Kontrollera licensavtalet.
-* För **värdbaserade och hybridarkitekturer** kontaktar du din kontoansvarige för att aktivera den. Du måste ange valfri e-postadress till BCC för det Adobe-team som konfigurerar den åt dig.
+* För **värdbaserade och hybridarkitekturer** kontaktar du din kontoansvarige för att aktivera den. Du måste ange valfri e-postadress till den valfria BCC-e-postadressen till det Adobe-team som konfigurerar den åt dig.
 * För **lokala installationer** följer du riktlinjerna nedan för att aktivera den - se avsnitten [Aktivera e-post-BCC (lokalt)](#activating-email-archiving--on-premise-) och [Konfigurera e-postadressen (lokalt)](#configuring-the-bcc-email-address--on-premise-).
 * Du kan bara använda en e-postadress för hemlig kopia.
-* När du har konfigurerat BCC för e-post kontrollerar du att funktionen är aktiverad i leveransmallen eller i leveransen med alternativet **[!UICONTROL Email BCC]**. Mer information finns i [det här avsnittet](../../delivery/using/sending-messages.md#archiving-emails).
+* När du har konfigurerat BCC för e-post kontrollerar du att funktionen är aktiverad i leveransmallen eller i leveransen med alternativet **[!UICONTROL Email BCC]**. läs [Campaign v8-dokumentationen](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/emails/email-bcc.html){target="_blank"}.
 * Det är bara skickad e-post som räknas, men studenterna gör det inte.
 * E-postarkiveringssystemet har ändrats med Adobe Campaign 17.2 (build 8795). Om du redan har arkiverat via e-post måste du uppgradera manuellt till det nya BCC-systemet för e-post. Mer information finns i avsnittet [Flytta till den nya e-postkontrollen](#updated-email-archiving-system--bcc-).
 
@@ -134,7 +134,7 @@ I filen **config-`<instance name>.xml`** använder du följande parametrar för 
 <!--
 ## Moving to the new Email BCC {#updated-email-archiving-system--bcc-}
 
-[!BADGE On-premise & Hybrid]{type=Caution url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=sv-SE" tooltip="Applies to on-premise and hybrid deployments only"}
+[!BADGE On-premise & Hybrid]{type=Caution url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html" tooltip="Applies to on-premise and hybrid deployments only"}
 
 >[!IMPORTANT]
 >

@@ -10,9 +10,9 @@ topic-tags: creating-queries
 hide: true
 hidefromtoc: true
 exl-id: b62e23e5-f1b7-44c4-82d9-95c6b3240352
-source-git-commit: 11c81e4f04b978381d3803e2b60e23ed791eee44
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '3304'
+source-wordcount: '3307'
 ht-degree: 34%
 
 ---
@@ -292,7 +292,7 @@ Det finns fyra typer av beräknade fält:
 
   Det går att använda källvärdet för en kolumn och ge den ett målvärde. Det här målvärdet visas i den nya utdatakolumnen.
 
-  Ett exempel på hur du lägger till den beräknade fälttypen **[!UICONTROL Enumerations]** finns i [det här avsnittet](../../workflow/using/adding-enumeration-type-calculated-field.md).
+  Ett exempel på hur du lägger till den beräknade fälttypen **[!UICONTROL Enumerations]** finns i [dokumentationen för Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/designing-queries/adding-enumeration-type-calculated-field.html){target="_blank"}.
 
   ![](assets/query_editor_nveau_63.png)
 

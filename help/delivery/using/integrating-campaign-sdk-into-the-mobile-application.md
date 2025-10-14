@@ -7,9 +7,9 @@ role: User, Developer
 hide: true
 hidefromtoc: true
 exl-id: a5f6b82d-5561-4e56-b2ed-7fd6fd8c2b55
-source-git-commit: 81b47231b027a189bc8b9029b7d48939734d08ed
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '985'
+source-wordcount: '983'
 ht-degree: 3%
 
 ---
@@ -20,13 +20,13 @@ ht-degree: 3%
 >
 >Adobe rekommenderar att du använder Adobe Experience Platform Mobile SDK genom att konfigurera Adobe Campaign-tillägget i användargränssnittet för datainsamling. Mobil-SDK:et i Adobe Experience Platform hjälper dig att driva lösningar och tjänster från Adobe Experience Cloud i dina mobilappar. Konfigurationen av SDK:er hanteras via användargränssnittet för datainsamling för flexibel konfiguration och utbyggbara, regelbaserade integreringar. [Läs mer i Adobe Developer-dokumentationen](https://developer.adobe.com/client-sdks/documentation/adobe-campaign-classic){target="_blank"}.
 
-Kontakta [Adobe kundtjänst](https://helpx.adobe.com/se/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html){target="_blank"} om du vill hämta Campaign SDK (tidigare Neolane SDK).
+Kontakta [Adobe kundtjänst](https://helpx.adobe.com/se/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html){target="_blank"} om du vill få Campaign SDK (tidigare kallat Neolane SDK).
 
 Mer information om vilka olika versioner av Android och iOS som stöds finns i [kompatibilitetsmatrisen](../../rn/using/compatibility-matrix.md#MobileSDK).
 
-Du hittar stegen under integreringen för Campaign SDK.
+Nedan finns integreringsstegen för Campaign SDK.
 
-+++**Läser in kampanj-SDK**
++++**Läser in Campaign SDK**
 
 * **I Android** måste filen **neolane_sdk-release.aar** länkas till projektet.
 
@@ -44,11 +44,11 @@ Du hittar stegen under integreringen för Campaign SDK.
   <uses-permission android:name="android.permission.READ_PHONE_STATE" /> 
   ```
 
-  Från och med version 1.0.24 av SDK används den här behörigheten endast för versioner som är äldre än Android 6.0.
+  Från och med version 1.0.24 av SDK används denna behörighet endast för versioner som är äldre än Android 6.0.
 
-  Från och med version 1.0.26 av SDK används inte längre den här behörigheten.
+  Från och med version 1.0.26 av SDK används inte längre detta tillstånd.
 
-* **I iOS**: **libNeolaneSDK.a** och **Neolane_SDK.h** måste länkas till projektet. Från version 1.0.24 av SDK aktiveras alternativet **ENABLE_BITCODE**.
+* **I iOS** måste filerna **libNeolaneSDK.a** och **Neolane_SDK.h** länkas till projektet. Från och med version 1.0.24 av SDK aktiveras alternativet **ENABLE_BITCODE**.
 
   >[!NOTE]
   >
@@ -58,13 +58,13 @@ Du hittar stegen under integreringen för Campaign SDK.
 
 +++**Deklarerar integreringsinställningar**
 
-För att integrera Campaign SDK i mobilappen måste den funktionella administratören lämna följande information till utvecklaren:
+För att integrera Campaign SDK i mobilappen måste den funktionella administratören ge utvecklaren följande information:
 
 * **En integreringsnyckel**: som gör att Adobe Campaign-plattformen kan identifiera mobilprogrammet.
 
   >[!NOTE]
   >
-  >Integreringsnyckeln anges i Adobe Campaign-konsolen på fliken **[!UICONTROL Information]** för tjänsten som är avsedd för mobilprogrammet. Se [Konfigurera ett mobilprogram i Adobe Campaign](configuring-the-mobile-application.md).
+  >Integreringsnyckeln anges i Adobe Campaign-konsolen på fliken **[!UICONTROL Information]** för tjänsten som är avsedd för mobilprogrammet. Se [Campaign v8-dokumentationen](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/push/push-settings.html){target="_blank"}.
 
 * **En spårnings-URL**: som matchar adressen för Adobe Campaign spårningsserver.
 * **En marknadsförings-URL**: för att aktivera samlingen av prenumerationer.

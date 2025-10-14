@@ -7,9 +7,9 @@ audience: production
 content-type: reference
 topic-tags: data-processing
 exl-id: 75d3a0af-9a14-4083-b1da-2c1b22f57cbe
-source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '2827'
+source-wordcount: '2829'
 ht-degree: 0%
 
 ---
@@ -32,7 +32,7 @@ Databasrensningen är konfigurerad på två nivåer: i arbetsflödets schemaläg
 
 >[!NOTE]
 >
->Mer information om schemaläggaren finns i [det här avsnittet](../../workflow/using/scheduler.md).
+>Mer information om schemaläggaren finns i [dokumentationen för Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/flow-control-activities/scheduler.html){target="_blank"}.
 
 Som standard är arbetsflödet **[!UICONTROL Database cleanup]** konfigurerat att starta varje dag kl. 4AM. Med schemaläggaren kan du ändra arbetsflödets utlösande frekvens. Följande frekvenser är tillgängliga:
 

@@ -7,9 +7,9 @@ audience: message-center
 content-type: reference
 topic-tags: message-templates
 exl-id: 417004c9-ed96-4b98-a518-a3aa6123ee7b
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '560'
+source-wordcount: '568'
 ht-degree: 2%
 
 ---
@@ -38,7 +38,7 @@ Följ stegen nedan för att skapa dirigerade adresser i ett transaktionsmeddelan
 
    ![](assets/messagecenter_create_seedaddr_003.png)
 
-1. Ange den externa identifieraren: I det här valfria fältet kan du ange en affärsnyckel (unikt ID, namn + e-post osv.) som är gemensamma för alla program på webbplatsen och som används för att identifiera dina profiler. Om det här fältet också finns i Adobe Campaign marknadsföringsdatabas kan du sedan koppla en händelse till en profil i databasen.
+1. Ange den externa identifieraren: I det här valfria fältet kan du ange en affärsnyckel (unikt ID, namn + e-post osv.) som är gemensam för alla program på webbplatsen och som används för att identifiera dina profiler. Om det här fältet också finns i Adobe Campaign marknadsföringsdatabas kan du sedan koppla en händelse till en profil i databasen.
 
    ![](assets/messagecenter_create_seedaddr_003bis.png)
 
@@ -100,7 +100,7 @@ Med hjälp av dirigerade adresser kan du även visa återgivningen av meddelande
 
 Du kan testa meddelandeleveransen genom att skicka ett korrektur till en startadress som skapats tidigare.
 
-När du skickar ett korrektur utförs samma process som för en [vanlig leverans](../../delivery/using/steps-validating-the-delivery.md#sending-a-proof). Med transaktionsmeddelanden måste du dock utföra följande åtgärder i förväg:
+Att skicka ett korrektur innebär samma process som för en vanlig leverans. Se [dokumentationen för Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/validate/preview-and-proof.html){target="_blank"}. Med transaktionsmeddelanden måste du dock utföra följande åtgärder i förväg:
 
 * Skapa en eller flera [dirigerade adresser](#managing-seed-addresses-in-transactional-messages) med [personaliseringsdata](#personalization-data).
 * [Skapa meddelandeinnehållet](../../message-center/using/creating-the-message-template.md#creating-message-content).
@@ -117,7 +117,7 @@ Skicka korrekturet:
 
    ![](assets/messagecenter_send_proof_002.png)
 
-Du kan komma åt korrektur i varje mall via fliken **[!UICONTROL Audit]**. Mer information finns i [Skicka ett korrektur](../../delivery/using/steps-validating-the-delivery.md#sending-a-proof).
+Du kan komma åt korrektur i varje mall via fliken **[!UICONTROL Audit]**. Mer information finns i [dokumentationen för Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/validate/preview-and-proof.html){target="_blank"}.
 
 ![](assets/messagecenter_send_proof_003.png)
 

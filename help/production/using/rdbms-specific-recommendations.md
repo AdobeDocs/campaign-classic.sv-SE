@@ -8,9 +8,9 @@ audience: production
 content-type: reference
 topic-tags: database-maintenance
 exl-id: a586d70b-1b7f-47c2-a821-635098a70e45
-source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '1243'
+source-wordcount: '1235'
 ht-degree: 1%
 
 ---
@@ -84,7 +84,7 @@ I det här avsnittet beskrivs några rekommendationer och bästa metoder som är
 
 >[!IMPORTANT]
 >
->Adobe föreslår starkt att VACUUM FULL inte ska köras på databaskonfigurationer som körs på Campaign Adobe. Det föreslagna underhållet är endast en guide för ON-PREMISE-installationer. För anpassade tabellimplementeringar och scheman kan du använda VACUUM FULL på egen risk eftersom VACUUM (utan övervakning) kan låsa tabeller exklusivt som orsakar fasta frågor - och i vissa fall låsa hela databasen.
+>Adobe rekommenderar starkt att du inte kör VACUUM FULL på databaskonfigurationer som körs på Campaign Adobe. Underhållsanvisningen som föreslås är endast en guide för ON-PREMISE-installationer. För anpassade tabellimplementeringar och scheman kan du använda VACUUM FULL på egen risk eftersom VACUUM (utan övervakning) kan låsa tabeller exklusivt som orsakar fasta frågor - och i vissa fall låsa hela databasen.
 
 I PostgreSQL kan du använda följande vanliga nyckelord:
 
@@ -141,11 +141,11 @@ VACUUM (FULL, ANALYZE, VERBOSE) nmsmirrorpageinfo;
 
 >[!NOTE]
 >
->* Adobe rekommenderar att man börjar med mindre tabeller: på det här sättet har åtminstone en del av underhållet slutförts om processen misslyckas på stora tabeller (där risken för fel är störst).
+>* Adobe rekommenderar att man börjar med mindre tabeller: om processen misslyckas på stora tabeller (där risken för fel är störst) har åtminstone en del av underhållet slutförts.
 >* Adobe rekommenderar att du lägger till tabeller som är specifika för din datamodell och som kan uppdateras avsevärt. Detta kan vara fallet för **NmsRecipient** om du har stora dagliga datareplikeringsflöden.
 >* Programsatsen VACUUM låser tabellen, vilket pausar vissa processer medan underhåll utförs.
 >* För mycket stora tabeller (vanligtvis över 5 Gbit) kan VACUUM FULL-satsen bli ganska ineffektiv och ta mycket lång tid. Adobe rekommenderar inte att du använder den för tabellen **YyyNmsBroadLogXx**.
->* Den här underhållsåtgärden kan implementeras av ett Adobe Campaign-arbetsflöde med en **[!UICONTROL SQL]**-aktivitet. Mer information finns i [det här avsnittet](../../workflow/using/architecture.md). Se till att du schemalägger underhåll under en tid med låg aktivitet som inte kolliderar med säkerhetskopieringsfönstret.
+>* Den här underhållsåtgärden kan implementeras av ett Adobe Campaign-arbetsflöde med en **[!UICONTROL SQL]**-aktivitet. Se till att du schemalägger underhåll under en tid med låg aktivitet som inte kolliderar med säkerhetskopieringsfönstret.
 >
 
 ### Återskapa en databas {#rebuilding-a-database}
@@ -157,7 +157,7 @@ PostgreSQL är inte ett enkelt sätt att återskapa en tabell online eftersom VA
 
 Här är ett exempel på tabelldefragmentering som använder specifika funktioner för att generera nödvändig DDL. Med följande SQL kan du skapa två nya funktioner: **GenRebuildTablePart1** och **GenRebuildTablePart2** som kan användas för att generera den DDL som krävs för att återskapa en tabell.
 
-* Med den första funktionen kan du skapa en arbetstabell (**&#x200B; _tmp** här) som är en kopia av den ursprungliga tabellen.
+* Med den första funktionen kan du skapa en arbetstabell (** _tmp** här) som är en kopia av den ursprungliga tabellen.
 * Den andra funktionen tar sedan bort den ursprungliga tabellen och byter namn på arbetstabellen och dess index.
 * Om du använder två funktioner i stället för en innebär det att du inte riskerar att ta bort den ursprungliga tabellen om den första inte fungerar.
 
@@ -406,7 +406,7 @@ function sqlGetMemo(strSql)
 
 ## Oracle {#oracle}
 
-Kontakta databasadministratören för att få information om de procedurer som är bäst lämpade för din version av Oraclet.
+Kontakta din databasadministratör för att ta reda på vilka procedurer som passar bäst för din version av Oracle.
 
 ## Microsoft SQL Server {#microsoft-sql-server}
 

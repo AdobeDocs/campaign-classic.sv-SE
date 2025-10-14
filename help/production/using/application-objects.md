@@ -7,10 +7,10 @@ audience: production
 content-type: reference
 topic-tags: database-maintenance
 exl-id: fb4798d7-0a2c-455b-86b6-3dcb5fd25c82
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '466'
-ht-degree: 3%
+source-wordcount: '480'
+ht-degree: 1%
 
 ---
 
@@ -40,7 +40,7 @@ Den här metoden markerar även användare som skapar för många objekt.
 
 ## Leveranser {#deliveries}
 
-Det får inte finnas fler än 1000 leveranser på instansen när som helst. Många leveranser förbrukar databasutrymme och skapar problem. En instans som skapar mer än 10 leveranser per dag måste kontrolleras mot affärsbehoven. Överväg att använda kontinuerliga leveranser för att skapa färre leveranser. Mer information om detta finns i [det här avsnittet](../../workflow/using/continuous-delivery.md).
+Det får inte finnas fler än 1000 leveranser på instansen när som helst. Många leveranser förbrukar databasutrymme och skapar problem. En instans som skapar mer än 10 leveranser per dag måste kontrolleras mot affärsbehoven. Överväg att använda kontinuerliga leveranser för att skapa färre leveranser. Mer information finns i [dokumentationen för Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/action-activities/continuous-delivery.html){target="_blank"}.
 
 Leveranser som är äldre än två år ska rensas från instansen.
 
@@ -48,14 +48,14 @@ Leveranser som är äldre än två år ska rensas från instansen.
 
 Antalet filer på programserverdisken bör inte öka i oändlighet.
 
-Importera arbetsflöden skapar filer och orsakar därför diskexpansion. Detta kan förhindras genom att använda standardaktiviteten [Filinsamlare](../../workflow/using/file-collector.md). Filinsamlaren flyttar filer till en tillfällig mapp och tömmer dem automatiskt.
+Importera arbetsflöden skapar filer och orsakar därför diskexpansion. Detta kan förhindras genom att använda standardaktiviteten [Filinsamlare](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/event-activities/file-collector.html){target="_blank"}. Filinsamlaren flyttar filer till en tillfällig mapp och tömmer dem automatiskt.
 
 Om ett arbetsflöde importerar filer och inte använder standardfunktionerna måste det rensas för att diskutrymmet ska bli så litet som möjligt.
 
 ## Transaktionsdata och transaktionsloggar {#transactional-data-and-logs}
 
-Varje [arbetsflöde](../../workflow/using/data-life-cycle.md#work-table) som importerar data till Adobe Campaign gör att databasens storlek ökar.
+Alla arbetsflöden som importerar data till Adobe Campaign gör att databasens storlek ökar. Se [Campaign v8-dokumentationen](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/use-workflow-data.html){target="_blank"}.
 
-Kontrollera att arbetsflödena för rensning eller tömning körs och att posterna effektivt rensas. Alla transaktionsdata och loggar måste rensas. Rensningsaktiviteten rensar endast standardtabellerna: spårning och breda loggar. Specifika tabeller måste rensas av specifika arbetsflöden. Se [det här avsnittet](../../workflow/using/monitoring-workflow-execution.md#purging-the-logs).
+Kontrollera att arbetsflödena för rensning eller tömning körs och att posterna effektivt rensas. Alla transaktionsdata och loggar måste rensas. Rensningsaktiviteten rensar endast standardtabellerna: spårning och breda loggar. Specifika tabeller måste rensas av specifika arbetsflöden. läs [Campaign v8-dokumentationen](https://experienceleague.adobe.com/docs/campaign/automation/workflows/monitoring-workflows/monitor-workflow-execution.html){target="_blank"}.
 
 Håll utkik efter åldersfördelade transaktionsdata genom att kontrollera det äldsta skapandedatumet för posterna.

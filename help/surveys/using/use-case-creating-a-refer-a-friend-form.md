@@ -5,9 +5,9 @@ description: Lär dig steg för att skapa ett formulär för att referera till e
 badge-v8: label="Gäller även för v8" type="Positive" tooltip="Gäller även Campaign v8"
 feature: Surveys
 exl-id: bd94c41a-813a-4ddb-a2bd-c3deab022482
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '628'
+source-wordcount: '630'
 ht-degree: 0%
 
 ---
@@ -88,7 +88,7 @@ Så här konfigurerar och skapar du referensblocket:
 
    >[!NOTE]
    >
-   >Mer information om leveransmallar finns på [den här sidan](../../delivery/using/about-templates.md).
+   >Mer information om leveransmallar finns i [dokumentationen för Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-templates.html){target="_blank"}.
 
 1. Skapa det andra skriptet för att leverera prenumerationsmeddelandena.
 
@@ -117,7 +117,7 @@ Så här konfigurerar och skapar du referensblocket:
     </delivery>)
    ```
 
-1. Publish tävlingsformuläret och skickar en inbjudan till mottagarna av det ursprungliga målet. När en av dem bjuder in en vän skapas en leverans baserad på mallen **Referenserbjudande** .
+1. Publicera tävlingsformuläret och skicka en inbjudan till mottagarna av det ursprungliga målet. När en av dem bjuder in en vän skapas en leverans baserad på mallen **Referenserbjudande** .
 
    ![](assets/s_ncs_admin_survey_viral_sample_8.png)
 

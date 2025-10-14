@@ -7,10 +7,10 @@ role: User
 hide: true
 hidefromtoc: true
 exl-id: 94aa4628-d973-433d-b963-b078e2d6672b
-source-git-commit: 42cec0e9bede94a2995a5ad442822512bda14f2b
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '437'
-ht-degree: 2%
+source-wordcount: '446'
+ht-degree: 0%
 
 ---
 
@@ -22,14 +22,14 @@ Följ stegen nedan för att skapa en ny SMS-leverans:
 
 >[!NOTE]
 >
->Globala koncept för leveransskapande presenteras i [det här avsnittet](steps-about-delivery-creation-steps.md).
+>Globala koncept för leveransskapande presenteras i [dokumentationen för Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html){target="_blank"}.
 
 1. Skapa en ny leverans, till exempel från kontrollpanelen Leverans.
 1. Välj leveransmallen **Skickat till mobiler (SMPP)** som du skapade tidigare. Mer information finns i avsnittet [Ändra leveransmallen](sms-set-up.md#changing-the-delivery-template).
 
    ![](assets/s_user_mobile_wizard.png)
 
-1. Identifiera leveransen med en etikett, kod och beskrivning. Mer information om detta finns i [det här avsnittet](steps-create-and-identify-the-delivery.md#identifying-the-delivery).
+1. Identifiera leveransen med en etikett, kod och beskrivning. Mer information finns i det här avsnittet i [dokumentationen för Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html#create-the-delivery){target="_blank"}.
 1. Klicka på **[!UICONTROL Continue]** för att bekräfta den här informationen och visa meddelandekonfigurationsfönstret.
 
 ## Definiera SMS-innehållet {#defining-the-sms-content}

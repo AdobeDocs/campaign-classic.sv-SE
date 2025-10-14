@@ -7,9 +7,9 @@ audience: interaction
 content-type: reference
 topic-tags: delivering-an-offer
 exl-id: 64aea8b9-7f06-4db0-a3e6-6a0e17c3ddcb
-source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '803'
+source-wordcount: '807'
 ht-degree: 0%
 
 ---
@@ -29,7 +29,7 @@ Om du vill presentera ett erbjudande under en marknadsföringskampanj skapar du 
 
 ![](assets/offer_delivery_009.png)
 
-Läs mer om leveranser av direkt e-post [i det här avsnittet](../../delivery/using/about-direct-mail-channel.md). Läs mer om marknadsföringskampanjer [i det här avsnittet](../../campaign/using/setting-up-marketing-campaigns.md).
+Läs mer om leveranser av direkt e-post [i det här avsnittet](../../delivery/using/about-direct-mail-channel.md). Läs mer om marknadsföringskampanjer i [dokumentationen för Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/set-up-campaigns.html){target=_blank}.
 
 ### De viktigaste stegen för att infoga ett erbjudande i en leverans {#main-steps-for-inserting-an-offer-into-a-delivery}
 
@@ -90,7 +90,7 @@ Leveransen kan anpassas med hjälp av erbjudandets fält eller, om det är ett e
 
 Du kan också presentera erbjudanden i en leverans med hjälp av leveranskonturer.
 
-Mer information om leveransdispositioner finns i guiden [Kampanj - MRM](../../campaign/using/marketing-campaign-deliveries.md#associating-and-structuring-resources-linked-via-a-delivery-outline).
+Mer information om leveransdispositioner finns i [dokumentationen för Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-assets#delivery-outlines.html){target="_blank"}.
 
 1. Skapa en ny kampanj eller få tillgång till en befintlig kampanj.
 1. Få åtkomst till leveranskonturer via kampanjens **[!UICONTROL Edit]** > **[!UICONTROL Documents]**-flik.

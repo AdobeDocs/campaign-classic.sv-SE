@@ -7,10 +7,10 @@ audience: platform
 content-type: reference
 topic-tags: profile-management
 exl-id: f7dfbc22-4ac3-4b61-927f-34ecc4e35154
-source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '717'
-ht-degree: 1%
+source-wordcount: '720'
+ht-degree: 0%
 
 ---
 
@@ -24,7 +24,7 @@ De data som är länkade till en mottagares profil kan uppdateras manuellt eller
 
 ## Konfigurera en automatisk uppdatering {#setting-up-an-automatic-update}
 
-En automatisk uppdatering kan konfigureras via ett arbetsflöde. Mer information om detta finns i [det här avsnittet](../../workflow/using/update-data.md).
+En automatisk uppdatering kan konfigureras via ett arbetsflöde. Mer information finns i [dokumentationen för Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/update-data.html){target="_blank"}.
 
 ## Utför en massuppdatering {#performing-a-mass-update}
 

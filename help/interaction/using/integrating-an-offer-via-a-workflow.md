@@ -7,9 +7,9 @@ audience: interaction
 content-type: reference
 topic-tags: delivering-an-offer
 exl-id: 33d318f3-1eb4-4c74-8c20-8b9f0442c7c3
-source-git-commit: de9ff0b50d819038c97e8515ddb7d6cfeb4547a1
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '1043'
+source-wordcount: '1044'
 ht-degree: 1%
 
 ---
@@ -32,7 +32,7 @@ Med aktiviteten för leveransdisposition, som är tillgänglig i kampanjarbetsfl
 1. Lägg till en dispositionsaktivitet för leverans i ett arbetsflöde innan du lägger till en leveransaktivitet.
 1. I dispositionsaktiviteten för leverans anger du den disposition du vill använda.
 
-   Mer information om hur du anger leveransdispositioner finns i guiden [Kampanj - MRM](../../campaign/using/marketing-campaign-deliveries.md#associating-and-structuring-resources-linked-via-a-delivery-outline).
+   Mer information om hur du anger leveransdispositioner finns i [dokumentationen för Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-assets#delivery-outlines.html){target="_blank"}.
 
 1. Fyll i de tillgängliga fälten efter leverans.
 1. Det finns två möjliga fall:
@@ -55,7 +55,7 @@ Med anrikningsaktiviteten kan du lägga till erbjudanden eller länkar till erbj
 
 >[!NOTE]
 >
->Mer information om anrikningsaktiviteten finns i den dedikerade dokumentationen i [handboken för arbetsflöden](../../workflow/using/enrichment.md).
+>Mer information om anrikningsaktiviteten finns i [dokumentationen för Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/enrichment.html){target="_blank"}.
 
 Du kan till exempel förbättra data för en mottagarfråga före en leverans.
 
@@ -68,10 +68,10 @@ Det finns två metoder för att ange erbjudandeförslag.
 
 ### Ange ett erbjudande eller ett samtal till erbjudandemotorn {#specifying-an-offer-or-a-call-to-the-offer-engine}
 
-När du har konfigurerat frågan (se [Handboken för arbetsflöden](../../workflow/using/query.md)):
+När du har konfigurerat din fråga (se [dokumentationen för Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/query.html){target="_blank"}):
 
 1. Lägg till och öppna en anrikningsaktivitet.
-1. Välj **[!UICONTROL Add data]** på fliken **[!UICONTROL Enrichment]**.
+1. Välj **[!UICONTROL Enrichment]** på fliken **[!UICONTROL Add data]**.
 1. Välj **[!UICONTROL An offer proposition]** i de datatyper som ska läggas till.
 
    ![](assets/int_enrichment_offer2.png)

@@ -8,10 +8,10 @@ audience: integrations
 content-type: reference
 topic-tags: asset-sharing
 exl-id: f3897a40-b080-47e5-9e31-4d861c1bacd5
-source-git-commit: b11185da8236d6100d98eabcc9dc1cf2cffa70af
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '501'
-ht-degree: 0%
+source-wordcount: '499'
+ht-degree: 1%
 
 ---
 
@@ -51,7 +51,7 @@ Om du vill aktivera anslutningen mellan Adobe Campaign och Adobe Experience Clou
 
 >[!CAUTION]
 >
->Den här funktionen har tagits bort från Adobe Experience Manager 6.4. [Läs mer](https://experienceleague.adobe.com/docs/experience-manager-64/release-notes/deprecated-removed-features.html?lang=sv-SE#removed-features)
+>Den här funktionen har tagits bort från Adobe Experience Manager 6.4. [Läs mer](https://experienceleague.adobe.com/docs/experience-manager-64/release-notes/deprecated-removed-features.html#removed-features)
 
 Om du vill integrera AEM Assets med Adobe Campaign måste du först konfigurera integreringen mellan Adobe Experience Manager och Adobe Campaign. Den här konfigurationen kräver i huvudsak:
 
@@ -62,7 +62,7 @@ Lär dig hur du integrerar Adobe Campaign och Adobe Experience Manager i den [de
 
 När integreringen är klar kan du konfigurera en ny leveransmall i Adobe Campaign så att den kan använda AEM Assets-biblioteket. Gör så här:
 
-1. Skapa en ny leveransmall - eller duplicera en befintlig. Mer information om leveransmallar finns på [den här sidan](../../delivery/using/about-templates.md).
+1. Skapa en ny leveransmall - eller duplicera en befintlig. Se [Campaign v8-dokumentationen](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-templates.html){target="_blank"}.
 1. Redigera **egenskaperna** för mallen.
 1. På fliken **[!UICONTROL Advanced]** ställer du in **[!UICONTROL Content editing mode]** på **DCE**.
 1. Välj den externa **[!UICONTROL AEM account]** som du behöver använda för att komma åt ditt AEM Assets-bibliotek.

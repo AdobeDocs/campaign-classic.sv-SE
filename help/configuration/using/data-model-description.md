@@ -5,9 +5,9 @@ description: Detta dokument beskriver Adobe Campaign datamodell
 feature: Data Model
 role: Data Engineer, Developer
 exl-id: fc0fd23c-f9ea-4e30-b47b-a84143d882ca
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '2399'
+source-wordcount: '2354'
 ht-degree: 1%
 
 ---
@@ -39,19 +39,19 @@ Den fördefinierade Adobe Campaign datamodellen innehåller huvudtabellerna som 
 
 ### NmsRecipient {#NmsRecipient}
 
-Tabellen matchar schemat **nms:receive**.
+Tabellen matchar schemat **nms:recipient**.
 
 Det är standardtabellen som används för **mottagare av leveranser**. Den innehåller därför den information som krävs för leveranser via de olika kanalerna:
 
 * sEmail: e-postadress.
-* iEmailFormat: föredraget format för e-post (1 för Text, 2 för HTML och 0 om det är odefinierat).
+* iEmailFormat: föredraget format för e-post (1 för Text, 2 för HTML och 0 för undefined).
 * sAddress1, sAddress2, sAddress3, sAddress4, sZipCode, sCity används för att skapa postadressen (i enlighet med standarden XPZ 10-011 AFNOR från maj 1997).
 * sPhone, sMobilePhone, sFax innehåller telefon-, mobiltelefon- och faxnummer.
 * iBlackList är standardavanmälningsflaggan som används för profilerna (1 betyder&quot;unsubscribed&quot;, 0 annars).
 
 Fältet iFolderId är den sekundärnyckel som länkar mottagaren till dess körningsmapp. Mer information finns i [XtkFolder](#XtkFolder).
 
-Fältet sCountryCode är ISO-koden 3166-1 Alpha 2 (2 tecken) för det land som är associerat med mottagaren. Det här fältet är i själva verket en sekundärnyckel i landreferenstabellen (NmsCountry), som innehåller landsetiketter och andra landskoddata. Om landet inte är ifyllt sparas värdet &#39;XX&#39; (och används i stället för en nollpost).
+Fältet sCountryCode är 3166-1 Alpha 2 ISO-kod (2 tecken) för det land som är associerat med mottagaren. Det här fältet är i själva verket en sekundärnyckel i landreferenstabellen (NmsCountry), som innehåller landsetiketter och andra landskoddata. Om landet inte är ifyllt sparas värdet &#39;XX&#39; (och används i stället för en nollpost).
 
 Mer information om mottagartabellen finns i [det här avsnittet](../../configuration/using/about-data-model.md#default-recipient-table).
 
@@ -83,7 +83,7 @@ Det gör att du kan hantera mottagarnas prenumerationer på informationstjänste
 
 ### NmsSubHisto {#NmsSubHisto}
 
-Den här tabellen matchar schemat **nms:subHistory**.
+Tabellen matchar schemat **nms:subHisto**.
 
 Om prenumerationerna hanteras med webbformulär eller programmets gränssnitt, kommer alla prenumerationer och avbeställningar att sparas i NmsSubHistory-tabellen. I iAction-fältet anges den åtgärd (0 för prenumeration och 1 för prenumeration) som utfördes på det datum som lagras i fältet tsDate.
 
@@ -113,7 +113,7 @@ Den här tabelluppsättningen är länkad till modulen **Leverans** som gör att
 
 ## Kampanjhantering {#campaign-management}
 
-Den här tabelluppsättningen är länkad till modulen **Marknadsföringskampanjer** som gör det möjligt att definiera, optimera, köra och analysera kommunikation och marknadsföringskampanjer. Mer information finns i [Om marknadsföringskampanjer](../../campaign/using/designing-marketing-campaigns.md).
+Den här tabelluppsättningen är länkad till modulen **Marknadsföringskampanjer** som gör det möjligt att definiera, optimera, köra och analysera kommunikation och marknadsföringskampanjer. Mer information finns i [dokumentationen för Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/campaigns/campaigns.html){target=_blank}.
 
 ![](assets/data-model_campaign.png)
 
@@ -129,7 +129,8 @@ Den här tabelluppsättningen är länkad till modulen **Marknadsföringskampanj
 
 ## Enhetlig kommunikation {#communication-consistency}
 
-Den här tabelluppsättningen är länkad till modulen **Kampanjoptimering** som gör att du kan styra, filtrera och övervaka leveransen. Mer information finns i [Om kampanjtypologier](../../campaign-opt/using/about-campaign-typologies.md).
+Den här tabelluppsättningen är länkad till modulen **Kampanjoptimering** som gör att du kan styra, filtrera och övervaka leveransen. Se [Campaign v8-dokumentationen](https://experienceleague.adobe.com/docs/campaign/automation/campaign-optimization/campaign-typologies.html){target="_blank"}.
+
 
 ![](assets/data-model_typology.png)
 
@@ -137,7 +138,7 @@ Den här tabelluppsättningen är länkad till modulen **Kampanjoptimering** som
 * **NmsTypology**: Den här tabellen matchar schemat **nms:typology**. Den innehåller den uppsättning regler som ska tillämpas på leveranser som matchar typologin.
 * **NmsTypologyRuleRel**: Den här tabellen matchar schemat **nms:typologyRuleRel**. Det innehåller relationerna mellan typologier och deras regler.
 * **NmsVolumeLine**: Den här tabellen matchar schemat **nms:volumeLine**. Den innehåller en uppsättning tillgänglighetslinjer för kapacitetsreglerna.
-* **NmsVolumeCONSmed**: Den här tabellen matchar schemat **nms:volumeCONSmed**. Den innehåller alla förbrukningslinjer för kapacitetsreglerna.
+* **NmsVolumeCONSmed**: Den här tabellen matchar schemat **nms:volumeConsumed**. Den innehåller alla förbrukningslinjer för kapacitetsreglerna.
 
 ## Svarshantering {#response-management}
 
@@ -147,7 +148,7 @@ Den här tabelluppsättningen är länkad till modulen **Svarshanteraren** som g
 
 ### NmsRemaHypothesis {#NmsRemaHypothesis}
 
-Den här tabellen sammanfaller med schemat **nms:remaHypothesis**. Den innehåller definitionen av mäthypotesen.
+Den här tabellen sammanfaller med **nms:remaHypothesis**-schemat. Den innehåller definitionen av mäthypotesen.
 
 Tabellen innehåller viktig information som lagras i XML, bland annat:
 
@@ -195,7 +196,7 @@ Följande indikatorer uppdateras automatiskt under hypoteskörningen:
 
 ### NmsRemaMatchRcp {#NmsRemaMatchRcp}
 
-Den här tabellen matchar schemat **nms:remaMatchRcp**.
+Tabellen matchar schemat **nms:remaMatchRcp**.
 
 Det innehåller ett register som representerar en individs reaktion på en given hypotes. Dessa poster skapades under hypoteskörningen.
 
@@ -235,7 +236,7 @@ Tabellen matchar schemat **nms:rtEvent**. Den innehåller en definition av händ
 
 ![](assets/data-model_message-center_batch.png)
 
-Den här tabellen matchar schemat **nms:batchEvent**. Den innehåller definitionen av händelser per grupp.
+Tabellen matchar schemat **nms:batchEvent**. Den innehåller definitionen av händelser per grupp.
 
 <!--## Microsites Module {#microsites-module}
 
@@ -266,6 +267,6 @@ Den här tabelluppsättningen är länkad till modulen **Hantera sociala nätver
 
 * **NmsVisitor**: Den här tabellen matchar schemat **nms:visitor**. Det innehåller information om besökare.
 * **NmsVisitorSub**: Den här tabellen matchar schemat **nms:visitorSub**. Det gör att du kan länka en besökare till de tjänster som de har prenumererat på (X eller Facebook).
-* **NmsFriendShipRel**: Den här tabellen matchar schemat **nms:VänshipRel**. Det gör att du kan länka besökare till deras vänner inom ramen för Facebook-tjänsten.
+* **NmsFriendShipRel**: Den här tabellen matchar schemat **nms:friendshipRel**. Det gör att du kan länka besökare till deras vänner inom ramen för Facebook-tjänsten.
 * **NmsVisitorInterestRel**: Den här tabellen matchar schemat **nms:visitorInterestRel**. Det gör det möjligt för er att länka samman besökare och deras intressen.
 * **NmsInterest**: Den här tabellen matchar schemat **nms:interest**. Den innehåller en lista med intressen för varje besökare.

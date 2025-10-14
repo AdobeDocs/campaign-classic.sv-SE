@@ -6,9 +6,9 @@ badge-v8: label="Gäller även för v8" type="Positive" tooltip="Gäller även C
 feature: Deliverability
 role: User, Admin
 exl-id: e4caa316-242f-46cd-a20b-a5eee5a0c456
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '544'
+source-wordcount: '550'
 ht-degree: 1%
 
 ---
@@ -20,9 +20,9 @@ Nedan hittar du information om de olika övervakningsverktygen i Adobe Campaign 
 ## Kontroll av levererbarhet {#about-deliverability-monitoring}
 
 Den här funktionen är tillgänglig via ett dedikerat paket i Adobe Campaign. Paketet måste vara installerat för att du ska kunna använda det. När du är klar startar du om servern så att paketet kan användas.
-* För värdbaserade klienter och hybridklienter konfigureras **Leveransövervakning** på din instans av Adobe tekniska support och konsulter. Kontakta din kontoansvarige på Adobe om du vill ha mer information.
+* För värdbaserade klienter och hybridklienter konfigureras **Leveransövervakning** på din instans av Adobe tekniska support och konsulter. Kontakta er kontoansvarige på Adobe om du vill ha mer information.
 
-* För lokala installationer måste du installera paketet **[!UICONTROL Deliverability monitoring (Email Deliverability)]** via menyn **[!UICONTROL Tools]** > **[!UICONTROL Advanced]** > **[!UICONTROL Import package]**. Mer information finns i [Installera Campaign Classicens standardpaket](../../installation/using/installing-campaign-standard-packages.md).
+* För lokala installationer måste du installera paketet **[!UICONTROL Deliverability monitoring (Email Deliverability)]** via menyn **[!UICONTROL Tools]** > **[!UICONTROL Advanced]** > **[!UICONTROL Import package]**. Mer information finns i [Installera Campaign Classic standardpaket](../../installation/using/installing-campaign-standard-packages.md).
 
 I Adobe Campaign Classic hanteras **Leveransövervakning** av arbetsflödet **[!UICONTROL Refresh for deliverability]**. Det installeras som standard på alla instanser och gör att du kan initiera listan över regler för studsmeddelanden, domänlistan och listan över MX:er. När paketet **[!UICONTROL Deliverability monitoring (Email Deliverability)]** har installerats körs det här arbetsflödet natt för att regelbundet uppdatera listan över regler och göra det möjligt att aktivt hantera plattformsleveransen.
 
@@ -54,6 +54,6 @@ Här följer ytterligare riktlinjer för leveransövervakning:
 * Kontrollera att [återförsök](understanding-delivery-failures.md#retries-after-a-delivery-temporary-failure) har konfigurerats korrekt (30 minuter för återförsöksperiod och mer än 20 återförsök) i leveransmallar.
 * Kontrollera regelbundet att postlådan [bounce](understanding-delivery-failures.md#bounce-mail-management) är tillgänglig och att kontot inte håller på att förfalla.
 * Kontrollera varje leveransflöde, som du kommer åt från [leveransinstrumentpanelen](delivery-dashboard.md), för att se till att det stämmer överens med leveransinnehållets giltighet (t.ex. ska &#39;flash sales&#39; levereras på några minuter, inte dagar).
-* När du använder [vågor](steps-sending-the-delivery.md#sending-using-multiple-waves) bör du kontrollera att varje våg har tillräckligt med tid för att slutföra innan nästa utlöses.
+* När du använder vågor måste du kontrollera att varje våg har tillräckligt med tid för att slutföra innan nästa våg aktiveras. Se [dokumentationen för Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/validate/configure-and-send.html#sending-using-multiple-waves){target="_blank"}.
 * Kontrollera att antalet fel och nya [karantäner](understanding-quarantine-management.md) stämmer överens med andra leveranser.
 * Läs noggrant igenom [leveransloggarna](delivery-dashboard.md#delivery-logs-and-history) för att kontrollera vilken typ av fel som markeras (blockeringslista, DNS-problem, skräppostregler osv.).

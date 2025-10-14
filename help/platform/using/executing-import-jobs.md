@@ -8,7 +8,7 @@ audience: platform
 content-type: reference
 topic-tags: importing-and-exporting-data
 exl-id: 05909ea6-2c93-42ff-9142-1dd14fa6fdec
-source-git-commit: 28279c6ec0eab7f914cf6107cd1ec1cebd05113d
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
 source-wordcount: '2983'
 ht-degree: 0%
@@ -23,7 +23,7 @@ Med Adobe Campaign kan du importera data till databasen från en eller flera fil
 
 >[!NOTE]
 >
->Du kan importera data utan att mappa dem till databasdata med funktionen **[!UICONTROL Import a list]**. Data kan sedan användas enbart i arbetsflöden via objektet **[!UICONTROL Read list]**. Mer information finns på [den här sidan](../../workflow/using/read-list.md).
+>Du kan importera data utan att mappa dem till databasdata med funktionen **[!UICONTROL Import a list]**. Data kan sedan användas enbart i arbetsflöden via objektet **[!UICONTROL Read list]**. Se [Campaign v8-dokumentationen](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/read-list.html){target="_blank"}.
 
 Med importassistenten kan du konfigurera en import, definiera dess alternativ (till exempel dataomvandling) och starta körningen. Det är en serie skärmar vars innehåll beror på typen av import (enkel eller flera) och operatörens rättigheter.
 
@@ -87,7 +87,7 @@ Med länken **[!UICONTROL Advanced parameters]** kan du komma åt följande alte
 
    * **[!UICONTROL Do not update enumerations]**
 
-     Välj det här alternativet om du inte vill att listan med uppräknade värden i databasen ska vara upphöjd. Läs mer om hur du **arbetar med uppräkningar** i [Adobe Campaign v8-dokumentationen (konsolen)](https://experienceleague.adobe.com/sv/docs/campaign/campaign-v8/config/settings/enumerations){target=_blank}.
+     Välj det här alternativet om du inte vill att listan med uppräknade värden i databasen ska vara upphöjd. Läs mer om hur du **arbetar med uppräkningar** i [Adobe Campaign v8-dokumentationen (konsolen)](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/config/settings/enumerations){target=_blank}.
 
 
 * Fliken **[!UICONTROL Variables]**

@@ -8,9 +8,9 @@ audience: installation
 content-type: reference
 topic-tags: additional-configurations
 exl-id: 3e55d7f5-2858-4390-bba9-8fb5be0c3d98
-source-git-commit: b500b2cbf68fd46bd84ddbfa71cf9431c6b60060
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '1005'
+source-wordcount: '1006'
 ht-degree: 0%
 
 ---
@@ -27,7 +27,7 @@ När du installerar en server med mellanlagring utförs samma process som när d
 
 >[!CAUTION]
 >
->När servern för mellanlagring har konfigurerats och [synkroniseringsarbetsflödena](../../workflow/using/about-technical-workflows.md) har körts för första gången, ska du inte uppdatera det interna namnet för de externa konton som mellanlagras.
+>När servern för mellanlagring har konfigurerats och [synkroniseringsarbetsflödena](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/wf-type/technical-workflows.html){target="_blank"} har körts för första gången, ska du inte uppdatera det interna namnet för de externa konton som mellanlagras.
 
 ## Steg för att installera och konfigurera en instans {#steps-for-installing-and-configuring-an-instance}
 
@@ -125,7 +125,7 @@ Det är möjligt att dela en instans med mellanleverantörer genom att skicka in
 
    ![](assets/mid_recette_user_restrictions.png)
 
-1. Starta om webbmodulen med följande kommando: **&#x200B; web**.
+1. Starta om webbmodulen med följande kommando: ** web**.
 
 Du måste ändra serverinställningen för mellanlagring i filen serverConf.xml. Följande rad måste läggas till i avsnittet &quot;Hantering av tillhörigheter med IP-adresser&quot;, under den befintliga raden:
 
@@ -139,9 +139,9 @@ Attributet &#39;@name&#39; måste följa följande regler:
 
 &#39;marketing_account_operator_name&#39; relaterar till det interna namnet på mittkällkontot som deklarerats i mittkällinstansen.
 
-&#39;affinity_name&#39; relaterar till det godtyckliga namn som ges till tillhörigheten. Namnet måste vara unikt. Godkända tecken är `[a-z]` `[A-Z]` `[0-9]`. Syftet är att deklarera en grupp offentliga IP-adresser.
+&#39;affinity_name&#39; relaterar till det godtyckliga namn som ges till tillhörigheten. Namnet måste vara unikt. Godkända tecken är `[a-z]``[A-Z]``[0-9]`. Syftet är att deklarera en grupp offentliga IP-adresser.
 
-&#39;affinity_group&#39; relaterar den subaffinitet som deklarerats i målmappningen som används i var och en av leveranserna. Den sista delen som innehåller &quot;.&quot; ignoreras om det inte finns någon undertillhörighet. Godkända tecken är `[a-z]` `[A-Z]` `[0-9]`.
+&#39;affinity_group&#39; relaterar den subaffinitet som deklarerats i målmappningen som används i var och en av leveranserna. Den sista delen som innehåller &quot;.&quot; ignoreras om det inte finns någon undertillhörighet. Godkända tecken är `[a-z]``[A-Z]``[0-9]`.
 
 Du måste stoppa och sedan starta om servern för att ändringen ska kunna beaktas.
 

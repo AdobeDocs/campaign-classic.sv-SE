@@ -7,9 +7,9 @@ feature: Fatigue Management, Typology Rules, Campaigns
 hide: true
 hidefromtoc: true
 exl-id: c23212f2-fdf8-4820-b389-546f7c84db27
-source-git-commit: 4f809011a8b4cb3803c4e8151e358e5fd73634e4
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '3336'
+source-wordcount: '3335'
 ht-degree: 4%
 
 ---
@@ -92,7 +92,7 @@ Så här skapar och konfigurerar du en **[!UICONTROL Pressure]**-typologiregel:
 
    ![](assets/campaign_opt_create_a_rule_05.png)
 
-1. På fliken **[!UICONTROL Typologies]** kan du visa de kampanjtyper som tillämpar den här regeln eller länka regeln till en eller flera befintliga typologier. Mer information finns i [Använda typologier](about-campaign-typologies.md#applying-typologies).
+1. På fliken **[!UICONTROL Typologies]** kan du visa de kampanjtyper som tillämpar den här regeln eller länka regeln till en eller flera befintliga typologier. Se [Campaign v8-dokumentationen](https://experienceleague.adobe.com/docs/campaign/automation/campaign-optimization/campaign-typologies.html){target="_blank"}.
 
 ## Definiera tröskelvärden och vikter {#defining-thresholds-and-weights}
 
@@ -320,7 +320,7 @@ För att göra detta måste du schemalägga flera leveranser med olika vikter f�
 Först konfigurerar du tryckregeln.
 
 1. Skapa en tryckregel. Mer information finns i [Skapa en tryckregel](#creating-a-pressure-rule).
-1. Välj alternativet **[!UICONTROL Re-apply the rule at the start of personalization]** på fliken **[!UICONTROL General]**.
+1. Välj alternativet **[!UICONTROL General]** på fliken **[!UICONTROL Re-apply the rule at the start of personalization]**.
 
    ![](assets/campaign_opt_pressure_example_5.png)
 
@@ -339,7 +339,7 @@ Först konfigurerar du tryckregeln.
 Skapa och konfigurera nu ett arbetsflöde för varje leverans som du vill att tryckregeln ska tillämpas på.
 
 1. Skapa en kampanj. Mer information om detta finns i [det här avsnittet](../../campaign/using/setting-up-marketing-campaigns.md#creating-a-campaign).
-1. Lägg till en **Query**-aktivitet i arbetsflödet på fliken **[!UICONTROL Targeting and workflows]** i kampanjen. Mer information om hur du använder den här aktiviteten finns i [det här avsnittet](../../workflow/using/query.md).
+1. Lägg till en **[!UICONTROL Targeting and workflows]** Query **-aktivitet i arbetsflödet på fliken** i kampanjen. Mer information om hur du använder den här aktiviteten finns i [det här avsnittet](../../workflow/using/query.md).
 1. Lägg till en **[!UICONTROL Email delivery]**-aktivitet i arbetsflödet och öppna den. Mer information om hur du använder den här aktiviteten finns i [det här avsnittet](../../workflow/using/delivery.md).
 1. Gå till fliken **[!UICONTROL Approvals]** i **[!UICONTROL Delivery properties]** och inaktivera alla godkännanden.
 

@@ -6,9 +6,9 @@ badge-v8: label="Gäller även för v8" type="Positive" tooltip="Gäller även C
 feature: Inbox Rendering, Monitoring, Email Rendering
 role: User
 exl-id: a3294e70-ac96-4e51-865f-b969624528ce
-source-git-commit: 9b93603a076b007d66aad52b05e560e17e316eeb
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '854'
+source-wordcount: '863'
 ht-degree: 7%
 
 ---
@@ -31,7 +31,7 @@ De mobil-, meddelande- och webbpostklienter som är tillgängliga för **Inkorgs
 
 >[!NOTE]
 >
->Återgivning av inkorgen behövs inte för att testa personalisering i leveranser. Personalization kan kontrolleras med Adobe Campaign-verktyg som **[!UICONTROL Preview]** och [korrektur](steps-validating-the-delivery.md#sending-a-proof).
+>Återgivning av inkorgen behövs inte för att testa personalisering i leveranser. Personalization kan kontrolleras med Adobe Campaign-verktyg som **[!UICONTROL Preview]** och korrektur. Se [dokumentationen för Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/validate/preview-and-proof.html){target="_blank"}.
 
 ## Aktivera inkorgsåtergivning {#activating-inbox-rendering}
 
@@ -107,7 +107,7 @@ Mer information om hur du skapar, utformar och anger mål för en leverans finns
 
    ![](assets/s_tn_inbox_rendering_button.png)
 
-   Ett bevis skickas. Miniatyrbilderna för återgivning finns tillgängliga i det korrekturet några minuter efter att du skickat e-postmeddelandena. Mer information om hur du skickar korrektur finns i [det här avsnittet](steps-validating-the-delivery.md#sending-a-proof).
+   Ett bevis skickas. Miniatyrbilderna för återgivning finns tillgängliga i det korrekturet några minuter efter att du skickat e-postmeddelandena. Mer information om hur du skickar korrektur finns i [dokumentationen för Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/validate/preview-and-proof.html){target="_blank"}.
 
 1. När du har skickat korrekturet visas det i leveranslistan. Dubbelklicka på den.
 

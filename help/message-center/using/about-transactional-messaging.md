@@ -4,9 +4,9 @@ title: Kom igång med transaktionsmeddelanden
 description: Läs mer om Adobe Campaign Classic transaktionsregler och viktiga steg
 feature: Transactional Messaging, Message Center
 exl-id: dc52e789-d0bf-4e8f-b448-9d69a2762cc1
-source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '640'
+source-wordcount: '641'
 ht-degree: 4%
 
 ---
@@ -71,7 +71,7 @@ På **kontrollinstansen** måste du utföra följande åtgärder:
 1. [Skapa en händelsetyp](../../message-center/using/creating-event-types.md).
 1. [Skapa och utforma meddelandemallen](../../message-center/using/creating-the-message-template.md). Du måste länka en händelse till ditt meddelande under det här steget.
 1. [Testa meddelandet](../../message-center/using/testing-message-templates.md).
-1. [Publish meddelandemallen](../../message-center/using/publishing-message-templates.md).
+1. [Publicera meddelandemallen](../../message-center/using/publishing-message-templates.md).
 
 >[!NOTE]
 >
@@ -88,6 +88,6 @@ När du har utformat och publicerat transaktionsmeddelandemallen utförs huvudst
 ## Relaterade ämnen {#related-topics}
 
 * [Kom igång med kommunikationskanaler](../../delivery/using/communication-channels.md)
-* [Nyckelsteg för att skapa leverans](../../delivery/using/steps-about-delivery-creation-steps.md)
+* [Nyckelsteg för leveransskapande](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html){target="_blank"}
 * [Transaktionsmeddelandens arkitektur](../../message-center/using/transactional-messaging-architecture.md)
 * [Rapporter om transaktionsmeddelanden](../../message-center/using/about-transactional-messaging-reports.md)

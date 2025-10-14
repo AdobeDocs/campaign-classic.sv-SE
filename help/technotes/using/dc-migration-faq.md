@@ -1,14 +1,14 @@
 ---
 product: campaign
 title: Migrering till Adobe Managed Services (Public Cloud) - frågor och svar
-description: Migrering av Campaign Classic till Public Cloud - frågor och svar
+description: Vanliga frågor om migrering från Campaign Classic till Public Cloud
 feature: Technote, Upgrade
 role: User
 level: Beginner
 exl-id: a9cd08b0-55c2-4405-9fb8-f0c623cd4ccb
-source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '2225'
+source-wordcount: '2226'
 ht-degree: 0%
 
 ---
@@ -17,11 +17,11 @@ ht-degree: 0%
 
 
 
-Adobe tar bort det gamla datacentret: Campaign Classic måste överföras till Public Cloud Amazon Web Services (AWS). [Läs mer om det här initiativet](dc-migration.md).
+Adobe stänger det gamla datacentret: Campaign Classic-instanser måste överföras till Public Cloud Amazon Web Services (AWS). [Läs mer om det här initiativet](dc-migration.md).
 
 Nedan finns en uppsättning vanliga frågor om det här projektet, effekten på Campaign-miljöer och andra användbara resurser.
 
-Om du har andra frågor kan du kontakta [Adobe kundtjänst](https://experienceleague.adobe.com/sv?support-solution=Campaign#support).
+Om du har andra frågor kan du kontakta [Adobe kundtjänst](https://experienceleague.adobe.com/?support-solution=Campaign#support).
 
 ## Infrastrukturpåverkan
 
@@ -45,13 +45,13 @@ Global påverkan på databaser och infrastruktur listas nedan.
 
 * **Kommer versionsnumret eller kampanjversionen att ändras?**
 
-  Som ett första steg kommer vi att behålla samma Campaign Classic som migreringen.
+  Som ett första steg kommer vi att behålla samma Campaign Classic-bygge med migrering.
 
-  I ytterligare ett steg ska vi uppgradera till den senaste Campaign Classicen av GA-bygget. Mer information finns på [den här sidan](../../rn/using/rn-overview.md).
+  I ytterligare ett steg ska vi uppgradera till den senaste Campaign Classic GA-versionen. Mer information finns på [den här sidan](../../rn/using/rn-overview.md).
 
 * **Vad är planen för att åtgärda eventuella problem efter migrering?**
 
-  Omfattande testning utförs innan produktionssystemen migreras. Om du får problem är [Adobe kundtjänst](https://experienceleague.adobe.com/sv?support-solution=Campaign#support) fortfarande den viktigaste kontaktpunkten. Adobe har inrättat ett expertteam för att vid behov ge avancerat stöd.
+  Omfattande testning utförs innan produktionssystemen migreras. [Adobe kundtjänst](https://experienceleague.adobe.com/?support-solution=Campaign#support) är dock fortfarande den viktigaste kontaktpunkten om du får problem. Adobe har inrättat ett expertteam som vid behov kan ge avancerad support.
 
 ## Leveranseffekter
 
@@ -61,7 +61,7 @@ Global påverkan på IP-adresser, blockeringslista, underdomäner och URL-adress
 
 * **Hur hanteras IP på tillåtelselista? Behöver kunderna lägga till nya IP-adresser i tillåtelselista för inkommande trafik från Campaign?**
 
-  IP-adressen för Adobe-servrarna kommer att ändras. Kunderna kan behöva lägga till de nya IP-adresserna i tillåtelselista i systemet.
+  IP-adressen för Adobe-servrarna ändras. Kunderna kan behöva lägga till de nya IP-adresserna i tillåtelselista i systemet.
 
   [Läs mer](#config) om IP på tillåtelselista.
 
@@ -71,17 +71,17 @@ Global påverkan på IP-adresser, blockeringslista, underdomäner och URL-adress
 
 * **Ändrar vi IP-adresser?**
 
-  IP-adressen för Adobe-servrarna kommer att ändras. Kunderna kan behöva lägga till de nya IP-adresserna till tillåtelselista i systemet.
+  IP-adressen för Adobe-servrarna ändras. Kunderna kan behöva lägga till de nya IP-adresserna till tillåtelselista i systemet.
 
   [Läs mer](#config) om IP på tillåtelselista.
 
 * **Hur hanteras underdomänsdelegering?**
 
-  Befintliga underdomäner flyttas från äldre datacenter till offentliga moln (AWS). Den här delen kommer att hanteras av Adobe Deliverability-teamet som en del av migreringsprocessen.
+  Befintliga underdomäner flyttas från äldre datacenter till offentliga moln (AWS). Den här delen hanteras av Adobe Deliverability-teamet som en del av migreringsprocessen.
 
   >[!NOTE]
   >
-  >Engagemanget i Deliverability-teamet bygger på kontrakt och kunderna bör kontakta sin Adobe-representant för att få information om Deliverability Engagement.
+  >Engagemanget i Deliverability Team bygger på kontrakt och kunderna bör kontakta sin Adobe-representant för att få information om hur man engagerar sig i Deliverability.
 
   Adobe kommer att vägleda kunden genom de tester som krävs för att säkerställa att konfigurationen körs på nya offentliga molnservrar (AWS) efter migreringen.
 
@@ -97,11 +97,11 @@ Global påverkan på IP-adresser, blockeringslista, underdomäner och URL-adress
 
   Först och främst kommer Adobe Deliverability att utvärdera plattformens leveransstatus och rekommendera en plan för övergången till de nya IP-adresserna
 
-  Ingen uppvärmning krävs efter migreringen. Det kan vara ett undantag och i så fall kommer [Adobe kundtjänst](https://experienceleague.adobe.com/sv?support-solution=Campaign#support) att kontakta kunderna.
+  Ingen uppvärmning krävs efter migreringen. Det kan vara ett undantag och i så fall kommer [Adobe kundtjänst](https://experienceleague.adobe.com/?support-solution=Campaign#support) att kontakta kunderna.
 
   Planen är dock att göra den här operationen genomskinlig för företaget, till skillnad från den initiala påfarten som görs vid publicering.
 
-  När migreringen är klar kommer Campaign-instansen att ha helt olika sändande IP-adresser. För att säkerställa en smidig övergång kommer Adobe att genomföra en uppfriskande uppgradering av de nya IP-adresserna genom att successivt byta trafik från de gamla till de nya IP-adresserna.
+  När migreringen är klar kommer Campaign-instansen att ha helt olika sändande IP-adresser. För att säkerställa en smidig övergång kommer Adobe att implementera en förstärkning av de nya IP-adresserna som skickar genom att successivt byta trafik från de gamla till de nya IP-adresserna.
 
 * **Flyttar vi över URL:en på tillåtelselista?**
 
@@ -110,8 +110,8 @@ Global påverkan på IP-adresser, blockeringslista, underdomäner och URL-adress
 * **Vilken effekt ska vår delegerade underdomän ha för vår kommunikation?**
 
   De underdomäner som används för marknadsföringskommunikation är fortfarande desamma. Beroende på implementeringen behövs dock åtgärder på klientsidan:
-   * Vid delegering till underdomäner till Adobe (standard) tar Adobe hand om alla ändringar och säkerställer en smidig övergång.
-   * Vid konfigurering av CNAME (undantag) ombeds kunden implementera ändringar, i samordning med Adobe.
+   * Vid delegering till andra domäner till Adobe (standard) hanterar Adobe alla ändringar och säkerställer en smidig övergång.
+   * Vid konfigurering av CNAME (undantag) ombeds kunden att implementera ändringar, i samordning med Adobe.
 
 ## Konfiguration och anslutningsmöjligheter
 
@@ -137,11 +137,11 @@ Global påverkan på konfiguration, anslutning till andra system och produkter, 
 
   Ja. Tredjepartsintegreringar, till exempel SMS-leverantörer, bör lägga till nya IP-adresser för Adobe Campaign-programservrar i tillåtelselista.
 
-* **Kommer migreringen att påverka anslutningen till Adobe Analytics via Genesis-anslutningen? Vad gäller om du lägger till IP-adresser för Campaign i tillåtelselista på Adobe Analytics-sidan?**
+* **Kommer migreringen att påverka anslutningen till Adobe Analytics med Genesis-anslutningen? Vad gäller om du lägger till IP-adresser för Campaign i tillåtelselista på Adobe Analytics-sidan?**
 
   IP-adresserna för Adobe Campaign-programservrar ändras. Det här steget hanteras av Adobe kundtjänst efter migreringen.
 
-* **Kommer migreringen att påverka anslutningen till andra Adobe-lösningar (AEM, mål osv.)?**
+* **Kommer migreringen att påverka anslutningen till andra Adobe-lösningar (AEM, Target osv.)?**
 
   Integreringar är en kombination av IP-adresser som deklarerats i tillåtelselista och webbtjänstens kontokonfiguration. Detta redovisas och ägs av Adobe kundtjänst.
 
@@ -157,7 +157,7 @@ Global påverkan på konfiguration, anslutning till andra system och produkter, 
 
 * **Påverkar API-anslutningen migreringen?**
 
-  IP-adressen för Adobe-servrarna kommer att ändras. Kunderna kan behöva lägga till de nya IP-adresserna till tillåtelselista i systemet.
+  IP-adressen för Adobe-servrarna ändras. Kunderna kan behöva lägga till de nya IP-adresserna till tillåtelselista i systemet.
 
   [Läs mer](#config) om IP på tillåtelselista.
 
@@ -173,7 +173,7 @@ Global påverkan på konfiguration, anslutning till andra system och produkter, 
 
   Den kan ändras beroende på var nya servrar är placerade. Kunden kan dock behålla sin aktuella tidszon.
 
-  [Läs mer](../../workflow/using/managing-time-zones.md) om hantering av tidszoner i Adobe Campaign Classic v7.
+  Läs mer om hantering av tidszoner i [dokumentationen för Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/advanced-management/managing-time-zones.html){target="_blank"}.
 
 
 ## Säkerhet och behörigheter
@@ -227,7 +227,7 @@ De globala effekterna under migreringen listas nedan.
 
 * **Behöver vi planera för att stoppa marknadsföringsaktiviteten under migreringen?**
 
-  Adobe rekommenderar att alla körningar pausas långsammare och idealiskt precis innan programmet stängs i det äldre datacentret: leveranser och arbetsflöden. Det underlättar omstarten på molnservern (AWS) eftersom processerna har fått tid att pausa&quot;utan problem&quot; och spara eventuella pågående körningstillstånd.
+  Adobe rekommenderar att alla exekveringar pausas långsammare och idealiskt precis innan programmet stängs i det äldre datacentret: leveranser och arbetsflöden. Det underlättar omstarten på molnservern (AWS) eftersom processerna har fått tid att pausa&quot;utan problem&quot; och spara eventuella pågående körningstillstånd.
 
 * **Förväntar vi oss att Adobe Campaign-tjänsten kommer att bli driftstört?**
 

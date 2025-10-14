@@ -6,10 +6,10 @@ feature: Workflows, Data Management
 hide: true
 hidefromtoc: true
 exl-id: 366acc1e-d769-4053-9fa1-f47182627c07
-source-git-commit: 776c664a99721063dce5fa003cf40c81d94f8c78
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '510'
-ht-degree: 4%
+source-wordcount: '516'
+ht-degree: 3%
 
 ---
 
@@ -59,7 +59,7 @@ På så sätt kan du använda data som samlats in via en lista eller baserat på
 
 Anpassningselement av typen **[!UICONTROL Target extension]** (targetData) är inte tillgängliga för arbetsflöden med målinriktning. Leveransmålet måste byggas in i arbetsflödet och anges i den inkommande övergången för leveransen.
 
-Om du vill skapa leveranskorrektur måste korrekturmålet byggas baserat på läget **[!UICONTROL Address substitution]** så att personaliseringsdata kan anges. Mer information om detta hittar du i det här [avsnittet](../../delivery/using/steps-defining-the-target-population.md#using-address-substitution-in-proof).
+Om du vill skapa leveranskorrektur måste korrekturmålet byggas baserat på läget **[!UICONTROL Address substitution]** så att personaliseringsdata kan anges. Mer information finns i det här avsnittet i [dokumentationen för Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html#target-population){target="_blank"}.
 
 I följande exempel ska vi samla in en lista med information om kunderna som ska användas i ett personaliserat e-postmeddelande.
 

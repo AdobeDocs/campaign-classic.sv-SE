@@ -6,9 +6,9 @@ badge-v8: label="Gäller även för v8" type="Positive" tooltip="Gäller även C
 feature: Monitoring, Deliverability
 role: User
 exl-id: 0663257a-3a70-4e0c-bbeb-8242aaa0876d
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '637'
+source-wordcount: '638'
 ht-degree: 3%
 
 ---
@@ -87,13 +87,13 @@ Mer information om olika leveransfel som du kan träffa på och hur du löser de
  </tbody> 
 </table>
 
-Mer information om hur du optimerar leveransen av dina Adobe Campaign-e-postmeddelanden finns i [det här avsnittet](about-deliverability.md). Mer information om leveransbarhet finns i [Adobe Deliverability Best Practice Guide](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html?lang=sv).
+Mer information om hur du optimerar leveransen av dina Adobe Campaign-e-postmeddelanden finns i [det här avsnittet](about-deliverability.md). Mer information om leveransmöjligheterna finns i [Adobe Deliverability Best Practice Guide](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html?lang=sv).
 
 ## Väntande status {#pending-status}
 
 När du har bekräftat leveransen kan du se att leveransstatus är **[!UICONTROL Pending]**. Den här statusen innebär att körningsprocessen väntar på att vissa resurser ska vara tillgängliga.
 
-Statusen **[!UICONTROL Pending]** kan först innebära att din leverans har schemalagts och väntar tills det angivna datumet. Mer information finns i avsnittet [Leveransplanering](steps-sending-the-delivery.md#scheduling-the-delivery-sending).
+Statusen **[!UICONTROL Pending]** kan först innebära att din leverans har schemalagts och väntar tills det angivna datumet. Mer information finns i [dokumentationen för Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/validate/configure-and-send.html#schedule-delivery-sending){target="_blank"}
 
 Om leveransen inte skickas och dess status är **[!UICONTROL Pending]** kan det bero på:
 

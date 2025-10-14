@@ -7,10 +7,10 @@ audience: platform
 content-type: reference
 topic-tags: administration-basics
 exl-id: 4a17d5e8-c73f-42e7-b641-0fee6a52c5c0
-source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '1784'
-ht-degree: 7%
+source-wordcount: '1791'
+ht-degree: 5%
 
 ---
 
@@ -24,7 +24,7 @@ Externa konton används av tekniska processer som tekniska arbetsflöden eller C
 
 Följ stegen nedan om du vill skapa ett nytt externt konto. Detaljerade inställningar beror på typen av externt konto.
 
-1. Välj **[!UICONTROL Administration]** > **[!UICONTROL Platform]** > **[!UICONTROL External accounts]** från kampanj **[!UICONTROL Explorer]**.
+1. Välj **[!UICONTROL Explorer]** > **[!UICONTROL Administration]** > **[!UICONTROL Platform]** från kampanj **[!UICONTROL External accounts]**.
 
    ![](assets/ext_account_1.png)
 
@@ -47,7 +47,7 @@ Det externa kontot skapas och läggs till i listan över externa konton.
 
 ### Studsa e-post {#bounce-mails-external-account}
 
-Det externa **studs-e-postkontot** anger det externa POP3-kontot som ska användas för att ansluta till e-posttjänsten. Mer information om det här externa kontot finns på [sidan](../../workflow/using/inbound-emails.md).
+Det externa **studs-e-postkontot** anger det externa POP3-kontot som ska användas för att ansluta till e-posttjänsten. Mer information om det här externa kontot finns i [dokumentationen för Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/event-activities/inbound-emails.html){target="_blank"}.
 
 Alla servrar som konfigurerats för POP3-åtkomst kan användas för att ta emot returmeddelanden.
 
@@ -77,7 +77,7 @@ Så här konfigurerar du det externa kontot **[!UICONTROL Bounce mails (defaultP
 
 * **[!UICONTROL Function]**
 
-  Inkommande e-post eller SOAP
+  Inkommande e-post eller SOAP-router
 
 >[!IMPORTANT]
 >
@@ -119,14 +119,13 @@ Följande kanaler kan konfigureras:
 * [Direktmeddelande](../../delivery/using/about-direct-mail-channel.md)
 * [Byrå](../../delivery/using/communication-channels.md#other-channels)
 * [X (tidigare Twitter)](../../social/using/about-social-marketing.md)
-* [iOS](../../delivery/using/configuring-the-mobile-application.md)
-* [Android](../../delivery/using/configuring-the-mobile-application-android.md)
+* [iOS- och Android-kanaler](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/push/push-settings.html){target="_blank"}
 
 ### E-postroutning {#email-routing-external-account}
 
 Det externa kontot för e-postroutning tillhandahålls som standard, anpassat efter din konfiguration.
 
-Som en lokal/blandad kund kan du skapa nya externa routningskonton eller uppdatera parametrar enligt beskrivningen nedan. Den här konfigurationen är reserverad för expertanvändare och kan påverka leveransmöjligheterna. Kontakta Adobe kundtjänst eller er Adobe-representant om du har några frågor.
+Som en lokal/blandad kund kan du skapa nya externa routningskonton eller uppdatera parametrar enligt beskrivningen nedan. Den här konfigurationen är reserverad för expertanvändare och kan påverka leveransmöjligheterna. Kontakta Adobe kundtjänst eller din Adobe-representant om du har frågor.
 
 * Du kan använda en **MID-sourcing**, **Extern**-routning eller en **massutskick**.
 
@@ -160,7 +159,7 @@ Mer information om den här konfigurationen finns på [sidan](../../message-cent
 
 ### FTP {#ftp-external-account}
 
-Med det externa FTP-kontot kan du konfigurera och testa åtkomst till en server utanför Adobe Campaign. Om du vill konfigurera anslutningar med externa system, t.ex. FTP-servrar 898 som används för filöverföringar, kan du skapa egna externa konton. Se denna [sida](../../workflow/using/file-transfer.md) för mer information om detta.
+Med det externa FTP-kontot kan du konfigurera och testa åtkomst till en server utanför Adobe Campaign. Om du vill konfigurera anslutningar med externa system, t.ex. FTP-servrar 898 som används för filöverföringar, kan du skapa egna externa konton. Mer information finns i [dokumentationen för Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/event-activities/file-transfer.html){target="_blank"}.
 
 Om du vill göra det anger du den adress och de autentiseringsuppgifter som ska användas för att upprätta anslutningen till FTP-servern i det här externa kontot
 
@@ -190,7 +189,7 @@ Om du vill veta var du hittar de här autentiseringsuppgifterna kan du gå till 
 
 ### SFTP {#sftp-external-account}
 
-Med det externa SFTP-kontot kan du konfigurera och testa åtkomst till en server utanför Adobe Campaign. Om du vill konfigurera anslutningar till externa system, t.ex. SFTP, som används för filöverföringar, kan du skapa egna externa konton. Se denna [sida](../../workflow/using/file-transfer.md) för mer information om detta.
+Med det externa SFTP-kontot kan du konfigurera och testa åtkomst till en server utanför Adobe Campaign. Om du vill konfigurera anslutningar till externa system, t.ex. SFTP, som används för filöverföringar, kan du skapa egna externa konton. Mer information finns i [dokumentationen för Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/event-activities/file-transfer.html){target="_blank"}.
 
 ![](assets/ext_account_4.png)
 
@@ -229,12 +228,12 @@ Externa databaser som är kompatibla med Campaign listas i [kompatibilitetsmatri
 
 Konfigurationsinställningarna för det externa kontot beror på databasmotorn. Läs mer i följande avsnitt:
 
-* Konfigurera åtkomst till [Vertica analytics](../../installation/using/configure-fda-vertica.md)
+* Konfigurera åtkomst till [Vertica Analytics](../../installation/using/configure-fda-vertica.md)
 * Konfigurera åtkomst till [Snowflake](../../installation/using/configure-fda-snowflake.md)
 * Konfigurera åtkomst till [Google BigQuery](../../installation/using/configure-fda-google-big-query.md)
-* Konfigurera åtkomst till [Azure synapse](../../installation/using/configure-fda-synapse.md)
-* Konfigurera åtkomst till [Hadoopet](../../installation/using/configure-fda-hadoop.md)
-* Konfigurera åtkomst till [Oraclet](../../installation/using/configure-fda-oracle.md)
+* Konfigurera åtkomst till [Azure Synapse](../../installation/using/configure-fda-synapse.md)
+* Konfigurera åtkomst till [Hadoop](../../installation/using/configure-fda-hadoop.md)
+* Konfigurera åtkomst till [Oracle](../../installation/using/configure-fda-oracle.md)
 * Konfigurera åtkomst till [Netezza](../../installation/using/configure-fda-netezza.md)
 * Konfigurera åtkomst till [SAP HANA](../../installation/using/configure-fda-sap-hana.md)
 * Konfigurera åtkomst till [Snowflake](../../installation/using/configure-fda-snowflake.md)
@@ -242,7 +241,7 @@ Konfigurationsinställningarna för det externa kontot beror på databasmotorn. 
 * Konfigurera åtkomst till [Teradata](../../installation/using/configure-fda-teradata.md)
 
 
-## Externa konton för integrering av lösningar i Adobe
+## Externa konton för integrering av Adobe-lösningar
 
 ### Adobe Experience Cloud {#adobe-experience-cloud-external-account}
 
@@ -398,11 +397,11 @@ Om du vill konfigurera det externa Salesforce CRM-kontot så att det fungerar me
 
 * **[!UICONTROL Client identifier]**
 
-  Om du vill veta var du kan hitta din klient-ID kan du läsa den här [sidan](https://help.salesforce.com/articleView?id=000205876&amp;type=1).
+  Om du vill veta var du kan hitta din klient-ID kan du läsa den här [sidan](https://help.salesforce.com/articleView?id=000205876&type=1).
 
 * **[!UICONTROL Security token]**
 
-  Om du vill veta var du kan hitta din säkerhetstoken kan du gå till [sidan](https://help.salesforce.com/articleView?id=000205876&amp;type=1).
+  Om du vill veta var du kan hitta din säkerhetstoken kan du gå till [sidan](https://help.salesforce.com/articleView?id=000205876&type=1).
 
 * **[!UICONTROL API version]**
 
@@ -416,7 +415,7 @@ Mer information om den här konfigurationen finns på [sidan](../../platform/usi
 
 ### Amazon Simple Storage Service (S3) {#amazon-simple-storage-service--s3--external-account}
 
-Kopplingen Amazon Simple Storage Service (S3) kan användas för att importera eller exportera data till Adobe Campaign. Den kan ställas in i en arbetsflödesaktivitet. Se denna [sida](../../workflow/using/file-transfer.md) för mer information om detta.
+Kopplingen Amazon Simple Storage Service (S3) kan användas för att importera eller exportera data till Adobe Campaign. Den kan ställas in i en arbetsflödesaktivitet. läs [Campaign v8-dokumentationen](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/event-activities/file-transfer.html){target="_blank"}.
 
 ![](assets/ext_account_3.png)
 
@@ -448,7 +447,7 @@ Mer information om var du hittar åtkomstnyckel-ID och hemlig åtkomstnyckel fin
 
 ### Azure Blob Storage {#azure-blob-external-account}
 
-Det externa **Azure Blob Storage**-kontot kan användas för att importera eller exportera data till Adobe Campaign med hjälp av en **[!UICONTROL Transfer file]**-arbetsflödesaktivitet. Mer information om detta hittar du i det här [avsnittet](../../workflow/using/file-transfer.md).
+Det externa **Azure Blob Storage**-kontot kan användas för att importera eller exportera data till Adobe Campaign med hjälp av en **[!UICONTROL Transfer file]**-arbetsflödesaktivitet. läs [Campaign v8-dokumentationen](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/event-activities/file-transfer.html){target="_blank"}.
 
 ![](assets/ext_account_23.png)
 

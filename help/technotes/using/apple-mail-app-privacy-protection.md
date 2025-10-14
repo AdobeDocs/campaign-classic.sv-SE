@@ -4,7 +4,7 @@ title: Skydd av e-postsekretess i appen Apple Mail
 feature: Technote, Privacy, Privacy Tools
 description: Läs mer om hur era kampanjer kan påverkas av Apple funktion för skydd av e-postsekretess
 exl-id: e044b35a-b49f-408a-900d-2afe8ff10212
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
 source-wordcount: '2064'
 ht-degree: 0%
@@ -25,7 +25,7 @@ Adobe Campaign ger möjlighet att använda spårning av pixlar för att spåra e
 
 ## Vilka åtgärder ska jag vidta?
 
-Apple nya funktion är den form av saker som kommer att komma in i branschen när det gäller skydd av e-postsekretess. Vi rekommenderar starkt att du följer Adobe rekommendationer.
+Apple nya funktion är den form av saker som kommer att komma in i branschen när det gäller skydd av e-postsekretess. Vi rekommenderar att du följer Adobe rekommendationer.
 
 ### Utvärdera effekten på era kampanjutlösare
 
@@ -94,7 +94,7 @@ I det här exemplet vill en marknadsförare skicka ett belöningserbjudande till
 
   ![](assets/identify-email-open-tracking-2.png)
 
-* Du kan använda ett fördefinierat filter. [Läs mer](../../workflow/using/creating-a-filter.md).
+* Du kan använda ett fördefinierat filter. Se [Campaign v8-dokumentationen](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/designing-queries/create-a-filter.html){target="_blank"}.
 
   ![](assets/identify-email-open-tracking-3.png)
 
@@ -364,7 +364,7 @@ Du kan berika dessa data med användbar information från länkade scheman:
 
 | Schema | Innehåll |
 | --- | --- |
-| nms:Mottagare | Information om profiler |
+| nms:Recipient | Information om profiler |
 | nms:Delivery | Information om meddelandet som användaren reagerade på |
 
 Du kan exportera resultatet till en extern lagringslösning som stöds av Adobe Campaign:

@@ -5,9 +5,9 @@ description: Leveransrapporter
 badge-v8: label="Gäller även för v8" type="Positive" tooltip="Gäller även Campaign v8"
 feature: Reporting, Monitoring
 exl-id: 74feb13f-0994-4a6a-ae4f-2538b07cc9c0
-source-git-commit: 28279c6ec0eab7f914cf6107cd1ec1cebd05113d
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '1467'
+source-wordcount: '1470'
 ht-degree: 1%
 
 ---
@@ -86,7 +86,7 @@ Den här värdetabellen visar hur leveranser, öppningar, klickningar och rårea
 
 >[!NOTE]
 >
->Domännamnen som visas i den här rapporten definieras i den specificerade lista som används på kubnivå. Om du vill ändra, lägga till eller ta bort standarddomäner redigerar du den specificerade listan **[!UICONTROL Domains]** och ändrar värden och alias. Läs mer om hur du **arbetar med uppräkningar** i [Adobe Campaign v8-dokumentationen (konsolen)](https://experienceleague.adobe.com/sv/docs/campaign/campaign-v8/config/settings/enumerations){target=_blank}. Kategorin **[!UICONTROL Others]** innehåller domännamn som inte tillhör något värde i den specificerade listan.
+>Domännamnen som visas i den här rapporten definieras i den specificerade lista som används på kubnivå. Om du vill ändra, lägga till eller ta bort standarddomäner redigerar du den specificerade listan **[!UICONTROL Domains]** och ändrar värden och alias. Läs mer om hur du **arbetar med uppräkningar** i [Adobe Campaign v8-dokumentationen (konsolen)](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/config/settings/enumerations){target=_blank}. Kategorin **[!UICONTROL Others]** innehåller domännamn som inte tillhör något värde i den specificerade listan.
 
 **[!UICONTROL 4. Generated click streams]**
 
@@ -158,7 +158,7 @@ Den här rapporten innehåller all huvudinformation om leveransen.
 Det här avsnittet har två indikatorer:
 
 * **[!UICONTROL Initial population]** : Totalt antal mottagare som har angetts som mål för leveransen.
-* **[!UICONTROL Messages rejected by the rule]** : Antal adresser som ignoreras under analysen när typologiregler tillämpas: adress som saknas, är i karantän, på blockeringslista osv. Mer information om typologiregler finns på [sidan](../../delivery/using/steps-validating-the-delivery.md#validation-process-with-typologies).
+* **[!UICONTROL Messages rejected by the rule]** : Antal adresser som ignoreras under analysen när typologiregler tillämpas: adress som saknas, är i karantän, på blockeringslista osv. Mer information om typologiregler finns i [dokumentationen för Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/validate/delivery-analysis.html){target="_blank"}.
 
 **[!UICONTROL Causes of exclusion]**
 

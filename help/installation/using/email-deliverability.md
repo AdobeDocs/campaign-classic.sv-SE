@@ -8,9 +8,9 @@ audience: installation
 content-type: reference
 topic-tags: additional-configurations
 exl-id: 515adad2-6129-450a-bb9e-fc80127835af
-source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '3094'
+source-wordcount: '3096'
 ht-degree: 0%
 
 ---
@@ -25,11 +25,11 @@ I följande avsnitt ges en översikt över den konfiguration som krävs för att
 
 >[!NOTE]
 >
->Vissa konfigurationer kan bara utföras av Adobe för distributioner som hanteras av Adobe, till exempel för att få åtkomst till server- och instanskonfigurationsfilerna. Mer information om de olika distributionerna finns i avsnittet [Värdmodeller](../../installation/using/hosting-models.md) eller i [den här sidan](../../installation/using/capability-matrix.md).
+>Vissa konfigurationer kan bara utföras av Adobe för distributioner som lagras av Adobe, till exempel för att få åtkomst till server- och instanskonfigurationsfilerna. Mer information om de olika distributionerna finns i avsnittet [Värdmodeller](../../installation/using/hosting-models.md) eller i [den här sidan](../../installation/using/capability-matrix.md).
 
 Mer information om koncept och bästa metoder för att leverera med Adobe Campaign finns i [avsnittet](../../delivery/using/about-deliverability.md).
 
-Mer information om vad som kan levereras, inklusive alla tekniska rekommendationer om hur e-post kan skickas och tas emot effektivt av en Adobe-plattform, finns i [Adobe Deliverability Best Practice Guide](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html?lang=sv).
+Mer information om vad som kan levereras, inklusive alla tekniska rekommendationer om hur man effektivt skickar och tar emot e-post via en Adobe-plattform, finns i [Adobe Deliverability Best Practice Guide](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html?lang=sv).
 
 ## Verksamhetsprincip {#operating-principle}
 
@@ -316,22 +316,22 @@ Du kan definiera formatet för skickade meddelanden så att innehållet som visa
 
 Det gör du genom att gå till dokumentet **[!UICONTROL Management of email formats]**, som finns i **[!UICONTROL Administration]** > **[!UICONTROL Campaign management]** > **[!UICONTROL Non deliverables management]** > **[!UICONTROL Mail rule sets]**.
 
-Det här dokumentet innehåller en lista över alla fördefinierade domäner som motsvarar de japanska format som hanteras av Adobe Campaign. Mer information finns i [det här dokumentet](../../delivery/using/defining-the-email-content.md#sending-emails-on-japanese-mobiles).
+Det här dokumentet innehåller en lista över alla fördefinierade domäner som motsvarar de japanska format som hanteras av Adobe Campaign. För ytterligare information, se [Campaign v8-dokumentation](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/sending-emails-on-japanese-mobiles.html){target="_blank"}.
 
 ![](assets/mail_rule_sets.png)
 
 Med parametern **MIME-struktur** (Multipurpose Internet Mail Extensions) kan du definiera meddelandestrukturen som ska skickas till olika e-postklienter. Det finns tre alternativ:
 
-* **Multipart**: Meddelandet skickas i text- eller HTML-format. Om formatet HTML inte godkänns kan meddelandet fortfarande visas i textformat.
+* **Multipart**: Meddelandet skickas i text- eller HTML-format. Om HTML-formatet inte godkänns kan meddelandet fortfarande visas i textformat.
 
   Som standard är multipart-strukturen **multipart/option**, men den blir automatiskt **multipart/related** när en bild läggs till i meddelandet. Vissa leverantörer förväntar sig formatet **multipart/related** som standard, men alternativet **[!UICONTROL Force multipart/related]** använder det här formatet även om ingen bild är kopplad.
 
-* **HTML**: Ett meddelande som bara är HTML skickas. Om HTML inte godkänns visas inte meddelandet.
+* **HTML**: Ett meddelande som endast är till för HTML skickas. Om HTML-formatet inte godkänns visas inte meddelandet.
 * **Text**: Ett meddelande i textformat skickas. Fördelen med textformatmeddelanden är att de är mycket små.
 
 Om alternativet **[!UICONTROL Image inclusion]** är aktiverat visas dessa direkt i e-postmeddelandet. Bilderna överförs sedan och URL-länkarna ersätts av innehållet.
 
-Det här alternativet används särskilt av den japanska marknaden för **Deco-mail**, **Decore Mail** eller **Decoration Mail**. Mer information finns i [det här dokumentet](../../delivery/using/defining-the-email-content.md#sending-emails-on-japanese-mobiles).
+Det här alternativet används särskilt av den japanska marknaden för **Deco-mail**, **Decore Mail** eller **Decoration Mail**. Mer information finns i dokumentationen för [Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/sending-emails-on-japanese-mobiles.html){target="_blank"}.
 
 >[!IMPORTANT]
 >

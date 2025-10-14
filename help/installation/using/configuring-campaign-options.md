@@ -7,14 +7,14 @@ audience: installation
 content-type: reference
 topic-tags: appendices
 exl-id: a979cd99-afa7-4ce6-ba0f-9495089cba08
-source-git-commit: 0fba6a2ad4ffa864e2f726f241aa9d7cd39072a6
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '3831'
+source-wordcount: '3834'
 ht-degree: 0%
 
 ---
 
-# Lista med alternativ för Campaign Classic{#configuring-campaign-options}
+# Lista över Campaign Classic-alternativ{#configuring-campaign-options}
 
 Med noden **[!UICONTROL Administration / Platform / Options]** kan du konfigurera Adobe Campaign-alternativ. Vissa av dem är inbyggda när du installerar Campaign och andra kan läggas till manuellt vid behov. Vilka alternativ som är tillgängliga varierar beroende på vilka paket som installeras med instansen.
 
@@ -57,8 +57,9 @@ Med noden **[!UICONTROL Administration / Platform / Options]** kan du konfigurer
   </tr>
   <tr> 
    <td> <span class="uicontrol">NMS_ActivateOwnerConfirmation</span> <br /> </td> 
-   <td><p> Gör att du kan tillåta den operatör som ansvarar för leveransen att bekräfta sändningen, om en viss operator eller grupp av operatorer har angetts för att starta en leverans i leveransegenskaperna.</p><p> Om du vill göra det aktiverar du alternativet genom att ange "1" som värde. Om du vill inaktivera det här alternativet anger du "0".</p><p> Bekräftelseprocessen för att skicka kommer då att fungera som standard: endast den operator eller grupp av operatorer som har angetts för sändning i leveransegenskaperna (eller en administratör) kommer att kunna bekräfta och utföra sändningen. Se <a href="../../campaign/using/marketing-campaign-deliveries.md#starting-an-online-delivery">det här avsnittet</a>.</p> </td> 
-   <tr> 
+   <td><p> Gör att du kan tillåta den operatör som ansvarar för leveransen att bekräfta sändningen, om en viss operator eller grupp av operatorer har angetts för att starta en leverans i leveransegenskaperna.</p><p> Om du vill göra det aktiverar du alternativet genom att ange "1" som värde. Om du vill inaktivera det här alternativet anger du "0".</p><p> Bekräftelseprocessen för att skicka kommer då att fungera som standard: endast den operator eller grupp av operatorer som har angetts för sändning i leveransegenskaperna (eller en administratör) kommer att kunna bekräfta och utföra sändningen. Se <a href="https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-deliveries.html#start-a-delivery" target="_blank">det här avsnittet</a>.</p> </td>
+
+<tr> 
    <td> <span class="uicontrol">Nms_DefaultRcpSchema</span> <br /> </td> 
    <td> Adobe Campaign använder den globala variabeln "Nms_DefaultRcpSchema" för att öppna en dialogruta med standardmottagardatabasen (nms:receive).<br /> Alternativvärdet måste motsvara namnet på schemat som matchar den externa mottagartabellen.<br /> </td> 
   </tr> 
@@ -208,7 +209,7 @@ Med noden **[!UICONTROL Administration / Platform / Options]** kan du konfigurer
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsOperation_DeliveryPreparationWindow</span> <br /> </td> 
-   <td><p>Det här alternativet används av det tekniska arbetsflödet <span class="uicontrol"><a href="../../workflow/using/about-technical-workflows.md">operationMgt</a></span> när antalet pågående leveranser räknas.</p>Det gör att du kan definiera antalet dagar över vilka leveranser med inkonsekvent status ska uteslutas från antalet pågående leveranser.</p><p>Som standard är värdet 7, vilket innebär att inkonsekventa leveranser som är äldre än 7 dagar kommer att exkluderas.</p></td> 
+   <td><p>Det här alternativet används av det tekniska arbetsflödet <span class="uicontrol"><a href="https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/wf-type/technical-workflows.html" target="_blank">operationMgt</a></span> när antalet pågående leveranser räknas.</p>Det gör att du kan definiera antalet dagar över vilka leveranser med inkonsekvent status ska uteslutas från antalet pågående leveranser.</p><p>Som standard är värdet 7, vilket innebär att inkonsekventa leveranser som är äldre än 7 dagar kommer att exkluderas.</p></td> 
   </tr>
   <tr> 
    <td> <span class="uicontrol">NmsPaper_SenderLine1</span> <br /> </td> 
@@ -311,7 +312,7 @@ Med noden **[!UICONTROL Administration / Platform / Options]** kan du konfigurer
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NcmPublishingDir</span> <br /> </td> 
-   <td> Rotmapp för publikationer.<br /> Mer information om generering av HTML och textinnehåll finns i <a href="../../delivery/using/using-a-content-template.md">det här avsnittet</a>.<br /> </td> 
+   <td> Rotmapp för publikationer.<br /> Mer information om generering av HTML- och textinnehåll finns i <a href="../../delivery/using/using-a-content-template.md">det här avsnittet</a>.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">xtkImageUrl</span> <br /> </td> 
@@ -364,7 +365,7 @@ Med noden **[!UICONTROL Administration / Platform / Options]** kan du konfigurer
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsOperation_OperationMgtDebug</span> <br /> </td> 
-   <td> Låter dig övervaka det tekniska arbetsflödets körning för <a href="../../workflow/using/about-technical-workflows.md">operationMgt</a>. När det är aktiverat (värdet 1) loggas körningsinformationen i arbetsflödets granskningsloggar.<br /> </td> 
+   <td> Låter dig övervaka det tekniska arbetsflödets körning för <a href="https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/wf-type/technical-workflows.html" target="_blank">operationMgt</a>. När det är aktiverat (värdet 1) loggas körningsinformationen i arbetsflödets granskningsloggar.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsOperation_TimeRange</span> <br /> </td> 
@@ -724,11 +725,11 @@ Med noden **[!UICONTROL Administration / Platform / Options]** kan du konfigurer
  <tbody> 
   <tr> 
    <td> <span class="uicontrol">AEMResourceTypeFilter</span> <br /> </td> 
-   <td> Typer av AEM resurser som kan användas i Adobe Campaign. Värden måste avgränsas med kommatecken.<br /> </td> 
+   <td> Typer av AEM-resurser som kan användas i Adobe Campaign. Värden måste avgränsas med kommatecken.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">nmsPipeline_config</span> <br /> </td> 
-   <td> Gör att du kan konfigurera utlösare för Experience Cloud. Datatypen är "lång text" och måste vara i JSON-format. Se <a class="anchorLink" href="https://helpx.adobe.com/campaign/kb/triggers-and-campaign.html#PipelineoptionNmsPipelineConfig" target="_blank">Använda Experience Cloud-utlösare med Adobe Campaign Classic</a>.<br /> </td> 
+   <td> Gör att du kan konfigurera Experience Cloud-utlösare. Datatypen är "lång text" och måste vara i JSON-format. Se <a class="anchorLink" href="https://helpx.adobe.com/campaign/kb/triggers-and-campaign.html#PipelineoptionNmsPipelineConfig" target="_blank">Använda Experience Cloud-utlösare med Adobe Campaign Classic</a>.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">LASTIMPORT_&lt;%=instance.internalName%&gt;_&lt;%=activityName%&gt;</span> <br /> </td> 
@@ -756,7 +757,7 @@ Med noden **[!UICONTROL Administration / Platform / Options]** kan du konfigurer
   </tr> 
   <tr> 
    <td> <span class="uicontrol">WdbcCapabilities_Teradata</span> <br /> </td> 
-   <td> Anslutningsalternativ för teradata.<br /> </td> 
+   <td> Teradata-anslutningsalternativ.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">WdbcCapabilities_Hive</span> <br /> </td> 

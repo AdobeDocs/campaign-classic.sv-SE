@@ -8,10 +8,10 @@ audience: platform
 content-type: reference
 topic-tags: importing-and-exporting-data
 exl-id: 4596638c-d75a-4e07-a2d8-5befcaad3430
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '514'
-ht-degree: 5%
+source-wordcount: '520'
+ht-degree: 3%
 
 ---
 
@@ -21,14 +21,14 @@ Med Adobe Campaign kan du exportera komprimerade eller krypterade filer. När du
 
 Så här kan du göra:
 
-1. Installera ett GPG-nyckelpar för din instans med [Kontrollpanelen](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/gpg-keys-management.html?lang=sv-SE#encrypting-data).
+1. Installera ett GPG-nyckelpar för din instans med [Kontrollpanelen](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/gpg-keys-management.html#encrypting-data).
 
    >[!NOTE]
    >
    >Kontrollpanelen är begränsad till administratörsanvändare och endast tillgänglig för vissa Campaign-versioner. [Läs mer](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/key-features.html?lang=sv)
    >
 
-1. Om din installation av Adobe Campaign ligger hos Adobe kontaktar du [Adobe kundtjänst](https://helpx.adobe.com/se/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) för att få nödvändiga verktyg installerade på servern.
+1. Om din installation av Adobe Campaign ligger hos Adobe kontaktar du [Adobe kundtjänst](https://helpx.adobe.com/se/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) för att få de nödvändiga verktygen installerade på servern.
 1. Om du har installerat Adobe Campaign lokalt installerar du det verktyg du vill använda (till exempel GPG, GZIP) samt de nödvändiga nycklarna (krypteringsnyckeln) på programservern.
 
 Du kan sedan använda kommandon eller kod på fliken **[!UICONTROL Script]** i aktiviteten eller i en **[!UICONTROL JavaScript code]** -aktivitet. Ett exempel visas i användningsexemplet nedan.
@@ -36,7 +36,7 @@ Du kan sedan använda kommandon eller kod på fliken **[!UICONTROL Script]** i a
 **Relaterade ämnen:**
 
 * [Zippa upp eller dekryptera en fil före bearbetning](../../platform/using/unzip-decrypt.md)
-* [Dataextraheringsaktivitet (fil)](../../workflow/using/extraction-file.md).
+* [Dataextraheringsaktivitet (fil)](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/action-activities/extraction-file.html){target="_blank"}
 
 ## Användningsfall: Kryptera och exportera data med en tangent som är installerad på Kontrollpanelen {#use-case-gpg-encrypt}
 
@@ -46,7 +46,7 @@ I det här fallet skapar vi ett arbetsflöde för att kryptera och exportera dat
 
 Så här utför du det här användningsfallet:
 
-1. Generera ett GPG-nyckelpar (public/private) med ett GPG-verktyg och installera sedan den offentliga nyckeln på Kontrollpanelen. Detaljerade steg finns i [dokumentationen för Kontrollpanelen](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/gpg-keys-management.html?lang=sv-SE#encrypting-data).
+1. Generera ett GPG-nyckelpar (public/private) med ett GPG-verktyg och installera sedan den offentliga nyckeln på Kontrollpanelen. Detaljerade steg finns i [dokumentationen för Kontrollpanelen](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/gpg-keys-management.html#encrypting-data).
 
 1. Bygg ett arbetsflöde i Campaign Classic för att exportera data och kryptera dem med den privata nyckel som har installerats via Kontrollpanelen. För att göra detta ska vi skapa ett arbetsflöde enligt följande:
 
@@ -57,9 +57,9 @@ Så här utför du det här användningsfallet:
    * **[!UICONTROL JavaScript code]** aktivitet: Krypterar de data som ska extraheras.
    * **[!UICONTROL File transfer]**-aktivitet: Skickar data till en extern källa (i det här exemplet en SFTP-server).
 
-1. Konfigurera aktiviteten **[!UICONTROL Query]** för att ange önskade data från databasen som mål. Mer information om detta finns i [det här avsnittet](../../workflow/using/query.md).
+1. Konfigurera aktiviteten **[!UICONTROL Query]** för att ange önskade data från databasen som mål. Se [Campaign v8-dokumentationen](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/query.html){target="_blank"}.
 
-1. Öppna aktiviteten **[!UICONTROL Data extraction (file)]** och konfigurera den efter dina behov. Globala koncept för hur du konfigurerar aktiviteten finns i [det här avsnittet](../../workflow/using/extraction-file.md).
+1. Öppna aktiviteten **[!UICONTROL Data extraction (file)]** och konfigurera den efter dina behov. Globala koncept för hur du konfigurerar aktiviteten finns i [dokumentationen för Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/action-activities/extraction-file.html){target="_blank"}.
 
    ![](assets/gpg-data-extraction.png)
 
@@ -81,7 +81,7 @@ Så här utför du det här användningsfallet:
 
    ![](assets/gpg-script.png)
 
-1. Öppna aktiviteten **[!UICONTROL File transfer]** och ange sedan den SFTP-server som du vill skicka filen till. Globala koncept för hur du konfigurerar aktiviteten finns i [det här avsnittet](../../workflow/using/file-transfer.md).
+1. Öppna aktiviteten **[!UICONTROL File transfer]** och ange sedan den SFTP-server som du vill skicka filen till. Globala koncept för hur du konfigurerar aktiviteten finns i [dokumentationen för Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/event-activities/file-transfer.html){target="_blank"}.
 
    ![](assets/gpg-file-transfer.png)
 
@@ -93,4 +93,4 @@ I den här videon visas hur du använder en GPG-nyckel för att kryptera data so
 
 >[!VIDEO](https://video.tv.adobe.com/v/36399?quality=12)
 
-Ytterligare Campaign Classic om instruktionsvideor finns [här](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=sv).
+Ytterligare Campaign Classic instruktionsvideor finns [här](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=sv).

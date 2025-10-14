@@ -8,9 +8,9 @@ audience: production
 content-type: reference
 topic-tags: troubleshooting
 exl-id: b5aa5663-1902-4f50-9202-783e73a28838
-source-git-commit: 1be1528d657537786c430ea9c8bdb3aad58ba20d
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '644'
+source-wordcount: '652'
 ht-degree: 2%
 
 ---
@@ -24,9 +24,9 @@ I avsnittet nedan visas information om vanliga problem som rör körning av arbe
 Mer information om arbetsflöden finns i följande avsnitt:
 
 * [Om arbetsflöden](../../workflow/using/about-workflows.md)
-* [Starta ett arbetsflöde](../../workflow/using/starting-a-workflow.md)
-* [Arbetsflödets livscykel](../../workflow/using/workflow-life-cycle.md)
-* [Bästa tillvägagångssätt när du använder arbetsflöden](../../workflow/using/workflow-best-practices.md)
+* [Startar ett arbetsflöde](https://experienceleague.adobe.com/docs/campaign/automation/workflows/executing-a-workflow/start-a-workflow.html){target="_blank"}.
+* [Arbetsflödets livscykel](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/about-workflows.html){target="_blank"}.
+* [Bästa tillvägagångssätt när du använder arbetsflöden](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/workflow-best-practices.html){target="_blank"}.
 
 ## Börja så snart som möjligt i kampanjer {#start-as-soon-as-possible-in-campaigns}
 
@@ -34,9 +34,9 @@ I vissa fall startar inte arbetsflöden som körs från en kampanj när du klick
 
 Det kan finnas flera orsaker till det här problemet, följ stegen nedan för att lösa det:
 
-1. Kontrollera den tekniska arbetsflödesstatusen för [**[!UICONTROL operationMgt]**](../../workflow/using/about-technical-workflows.md). Det här arbetsflödet hanterar jobb eller arbetsflöden inuti en kampanj. Om det misslyckas resulterar det i arbetsflöden som inte startar/stoppas. Starta om den för att fortsätta köra kampanjarbetsflöden.
+1. Kontrollera den tekniska arbetsflödesstatusen för [**[!UICONTROL operationMgt]**](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/wf-type/technical-workflows.html){target="_blank"}. Det här arbetsflödet hanterar jobb eller arbetsflöden inuti en kampanj. Om det misslyckas resulterar det i arbetsflöden som inte startar/stoppas. Starta om den för att fortsätta köra kampanjarbetsflöden.
 
-   Mer information om övervakning av tekniska arbetsflöden finns på [den här sidan](../../workflow/using/monitoring-technical-workflows.md).
+   Mer information om övervakning av tekniska arbetsflöden finns i [dokumentationen för Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/monitoring-workflows/monitor-technical-workflows.html){target="_blank"}.
 
    >[!NOTE]
    >
@@ -44,7 +44,7 @@ Det kan finnas flera orsaker till det här problemet, följ stegen nedan för at
 
    Om arbetsflödet fortfarande inte fungerar kontrollerar du om det finns ett specifikt fel i granskningsloggen, felsöker därefter och startar sedan om arbetsflödet igen.
 
-1. Kontrollera modulläget **[!UICONTROL wfserver]** på fliken **[!UICONTROL Monitoring]** som är tillgänglig från Campaign Classicens hemsida (se [Övervaka processer](../../production/using/monitoring-processes.md)). Den här processen ansvarar för att köra alla arbetsflöden.
+1. Kontrollera modulläget **[!UICONTROL wfserver]** på fliken **[!UICONTROL Monitoring]** som du kommer åt från Campaign Classic hemsida (se [Övervaka processer](../../production/using/monitoring-processes.md)). Den här processen ansvarar för att köra alla arbetsflöden.
 
    En administratörsanvändare kan också kontrollera att modulen **wfserver@`<instance>`** startas på huvudprogramservern med hjälp av kommandot nedan.
 
@@ -73,13 +73,13 @@ Det kan finnas flera orsaker till det här problemet, följ stegen nedan för at
 
    Du kan lösa problemet genom att stoppa oönskade arbetsflöden och ta bort misslyckade leveranser. Om tröskelvärdet uppnås kan nya processer köras.
 
-   Om du vill kontrollera antalet arbetsflöden som körs för instansen rekommenderar vi att du använder de fördefinierade vyerna, som är tillgängliga som standard i mappen **[!UICONTROL Administration]** / **[!UICONTROL Audit]**. För mer information om detta hittar du i [det här avsnittet](../../workflow/using/monitoring-workflow-execution.md#filtering-workflows-status).
+   Om du vill kontrollera antalet arbetsflöden som körs för instansen rekommenderar vi att du använder de fördefinierade vyerna, som är tillgängliga som standard i mappen **[!UICONTROL Administration]** / **[!UICONTROL Audit]**. För ytterligare information, se [Campaign v8-dokumentation](https://experienceleague.adobe.com/docs/campaign/automation/workflows/monitoring-workflows/monitor-workflow-execution.html){target="_blank"}.
 
    >[!IMPORTANT]
    >
    >Om du ökar tröskelvärdet för alternativet **[!UICONTROL NmsOperation_LimitConcurrency]** kan det leda till prestandaproblem i din instans. Utför inte detta på egen hand och kontakta Adobe Campaign.
 
-Mer information om hur du övervakar arbetsflöden finns i [det här avsnittet](../../workflow/using/monitoring-workflow-execution.md).
+Mer information om hur du övervakar arbetsflöden finns i [dokumentationen för Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/monitoring-workflows/monitor-workflow-execution.html){target="_blank"}.
 
 ## Pågående start {#start-in-progress}
 
@@ -87,7 +87,7 @@ Om arbetsflöden inte körs och deras status är **Påbörja** kan det innebära
 
 Gör så här om du vill kontrollera detta och starta modulen om det behövs:
 
-1. Kontrollera modulläget **[!UICONTROL wfserver]** på fliken **[!UICONTROL Monitoring]** som är tillgänglig från Campaign Classicens hemsida (se [Övervaka processer](../../production/using/monitoring-processes.md)).
+1. Kontrollera modulläget **[!UICONTROL wfserver]** på fliken **[!UICONTROL Monitoring]** som du kommer åt från Campaign Classic hemsida (se [Övervaka processer](../../production/using/monitoring-processes.md)).
 
    En administratörsanvändare kan också kontrollera att modulen **wfserver@`<instance>`** startas på huvudprogramservern med hjälp av kommandot nedan.
 
@@ -118,6 +118,6 @@ Gör så här om du vill kontrollera detta och starta modulen om det behövs:
 
 Om ett arbetsflöde misslyckas gör du så här:
 
-1. Kontrollera arbetsflödesjournalen. Mer information finns i avsnitten [Övervaka arbetsflödeskörning](../../workflow/using/monitoring-workflow-execution.md) och [Visningsloggar](../../workflow/using/monitoring-workflow-execution.md#displaying-logs).
-1. Övervaka tekniska arbetsflöden. Mer information finns i avsnittet [this](../../workflow/using/monitoring-technical-workflows.md).
+1. Kontrollera arbetsflödesjournalen. Mer information finns i [dokumentationen för Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/monitoring-workflows/monitor-workflow-execution.html){target="_blank"}.
+1. Övervaka tekniska arbetsflöden. Se [Campaign v8-dokumentationen](https://experienceleague.adobe.com/docs/campaign/automation/workflows/monitoring-workflows/monitor-technical-workflows.html){target="_blank"}.
 1. Leta efter fel i de enskilda arbetsflödesaktiviteterna.

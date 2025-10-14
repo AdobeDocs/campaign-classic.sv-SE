@@ -7,9 +7,9 @@ feature: Campaigns
 hide: true
 hidefromtoc: true
 exl-id: 4e0df18f-3623-4dfb-a2f8-ad293dbc4dd5
-source-git-commit: 4f809011a8b4cb3803c4e8151e358e5fd73634e4
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '438'
+source-wordcount: '441'
 ht-degree: 8%
 
 ---
@@ -24,7 +24,7 @@ Dessutom kan du med modulen **Marketing Resource Management (MRM)** styra markna
 >[!NOTE]
 >
 >Mer information om Adobe Campaign kärnfunktioner finns i [det här avsnittet](../../platform/using/about-adobe-campaign-classic.md).\
->Funktioner som rör målgruppsanpassning, meddelandepersonalisering och meddelandeleverans i olika kanaler beskrivs i [det här avsnittet](../../delivery/using/steps-about-delivery-creation-steps.md).
+>Funktioner som rör målgruppsanpassning, meddelandepersonalisering och meddelandeleverans i olika kanaler beskrivs i [dokumentationen för Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html){target="_blank"}.
 
 ![](assets/do-not-localize/how-to-video.png) [Upptäck begrepp för marknadsföringskampanjer i videon](#video)
 

@@ -6,10 +6,10 @@ badge-v8: label="Gäller även för v8" type="Positive" tooltip="Gäller även C
 feature: Deliverability
 role: User
 exl-id: dcd3a9f9-5fe9-4c28-a4a5-5aed67b036ab
-source-git-commit: aa78a51ebea49f98ef7edad7e87a99a680f02b69
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '748'
-ht-degree: 5%
+source-wordcount: '760'
+ht-degree: 4%
 
 ---
 
@@ -25,11 +25,11 @@ Följ nedanstående principer när du utformar ditt meddelandeinnehåll:
 * [Bryt prenumerationslänk](#opt-out) och landningssida: länken för att avsluta prenumerationen är nödvändig. Den måste vara synlig och giltig och formuläret måste vara funktionellt.
 * Förhandsgranska: använd verktygen i Adobe Campaign för att kontrollera och optimera innehållet i e-postmeddelandet ([Inkorgsåtergivning](#message-responsiveness), [SpamAssets](#spamassassin)).
 
-Fler tips om hur du kan optimera leveransen när du utformar innehåll finns i [Adobe Deliverability Best Practice Guide](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/content-best-practices-for-optimal-delivery.html?lang=sv-SE).
+Fler tips om hur du kan optimera leveransen när du utformar innehåll finns i [Adobe Deliverability Best Practice Guide](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/content-best-practices-for-optimal-delivery.html).
 
 >[!NOTE]
 >
->Mer information om hur du redigerar e-postinnehåll finns i [Definiera e-postinnehåll](defining-the-email-content.md).
+>Mer information om hur du redigerar e-postinnehåll finns i [dokumentationen för Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/defining-the-email-content.html){target="_blank"}.
 
 ## Avsändarens adress {#sender-address}
 
@@ -37,7 +37,7 @@ Vissa Internetleverantörer kontrollerar giltigheten för avsändaradressen (**[
 
 Du måste se till att rätt adress anges på instansnivå (meny **[!UICONTROL Tools > Advanced > deployment wizard...]**) eller i de vanligaste scenarierna.
 
-Mer information finns på [den här sidan](defining-the-email-content.md).
+Mer information finns i [dokumentationen för Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/defining-the-email-content.html){target="_blank"}.
 
 ## Personalization {#personalization}
 
@@ -47,7 +47,7 @@ Mer information om hur du använder anpassningsfält i Adobe Campaign finns i [d
 
 ## Länk och formulär för avanmälan {#opt-out}
 
-Som standard kontrollerar en [typologiregel](steps-validating-the-delivery.md#validation-process-with-typologies) om en avanmälningslänk har inkluderats och genererar en varning om den saknas när meddelandet analyseras. Du kan ändra den här regeln så att ett fel uppstår i stället för en enkel varning och stoppa en leverans utan den här länken.
+När meddelandet analyseras kontrollerar en typologiregel som standard om en avanmälningslänk har inkluderats och genererar en varning om den saknas. Du kan ändra den här regeln så att ett fel uppstår i stället för en enkel varning och stoppa en leverans utan den här länken. Se [dokumentationen för Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/validate/delivery-analysis.html){target="_blank"}.
 
 Du måste kontrollera att avanmälningslänken fungerar som den ska innan du skickar iväg den. När du till exempel skickar korrekturet ska du kontrollera att länken är giltig, att formuläret är online och att värdet för fältet **[!UICONTROL No longer contact this recipient]** ändras till **[!UICONTROL Yes]** när du validerar det. Du bör göra den här kontrollen systematiskt eftersom det alltid är möjligt att göra mänskliga fel när du anger länken eller när du ändrar formuläret.
 

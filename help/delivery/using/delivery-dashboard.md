@@ -6,9 +6,9 @@ badge-v8: label="Gäller även för v8" type="Positive" tooltip="Gäller även C
 feature: Monitoring
 role: User, Data Engineer
 exl-id: 44ecc8c6-6584-43eb-96b4-7d8463053123
-source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '1186'
+source-wordcount: '1193'
 ht-degree: 3%
 
 ---
@@ -35,7 +35,7 @@ Här är den information du kan övervaka med hjälp av flera flikar som är til
 
 * [Förstå leveransfel](understanding-delivery-failures.md)
 * [Förstå karantänshantering](understanding-quarantine-management.md)
-* [God praxis för leverans](delivery-best-practices.md)
+* [God praxis för leverans](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/delivery-best-practices.html){target="_blank"}
 * [Hantera leveranser](about-deliverability.md)
 
 ## Leveranssammanfattning {#delivery-summary}
@@ -58,13 +58,13 @@ För en leverans kan du till exempel bara visa mottagare med en misslyckad lever
 
 >[!NOTE]
 >
->Listan som visar leveransloggarna kan anpassas som alla listor i Campaign Classicen. Du kan till exempel lägga till en kolumn för att veta vilken IP-adress som skickade varje e-post i en leverans. Mer information finns i användningsexemplet som beskrivs i [det här avsnittet](#use-case).
+>Listan med leveransloggarna kan anpassas som alla listor i Campaign Classic. Du kan till exempel lägga till en kolumn för att veta vilken IP-adress som skickade varje e-post i en leverans. Mer information finns i användningsexemplet som beskrivs i [det här avsnittet](#use-case).
 
 ![](assets/s_ncs_user_delivery_delivery_tab.png)
 
 Med länken **[!UICONTROL Display the mirror page for this message...]** kan du visa spegelsidan för innehållet i leveransen som valts i listan i ett nytt fönster.
 
-Spegelsidan är bara tillgänglig för leveranser för vilka HTML-innehåll har definierats. Mer information finns i [Skapa spegelsidan](sending-messages.md#generating-the-mirror-page).
+Spegelsidan är bara tillgänglig för leveranser för vilka HTML-innehåll har definierats. Mer information finns i [dokumentationen för Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/mirror-page.html){target="_blank"}.
 
 ![](assets/s_ncs_user_wizard_miror_page_link.png)
 
@@ -98,7 +98,7 @@ Fliken **[!UICONTROL Audit]** innehåller leveransloggen och alla meddelanden so
 
 Med knappen **[!UICONTROL Refresh]** kan du uppdatera data. Använd knappen **[!UICONTROL Filters]** för att definiera ett filter för data.
 
-Med särskilda ikoner kan du identifiera fel och varningar. Se [Analysera leveransen](steps-validating-the-delivery.md#analyzing-the-delivery).
+Med särskilda ikoner kan du identifiera fel och varningar. Se det här avsnittet i [dokumentationen för Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/validate/delivery-analysis.html){target="_blank"}.
 
 På underfliken **[!UICONTROL Proofs]** kan du visa en lista över de korrektur som har skickats.
 
@@ -203,7 +203,7 @@ Det gör du genom att öppna leveransloggarna och lägga till kolumnen&quot;IP-i
 
 >[!NOTE]
 >
->Mer information om hur du konfigurerar listor i Campaign Classicens gränssnitt finns på [den här sidan](../../platform/using/adobe-campaign-workspace.md).
+>Mer information om hur du konfigurerar listor i Campaign Classic-gränssnittet finns på [den här sidan](../../platform/using/adobe-campaign-workspace.md).
 
 Nedan visas vad du bör se på fliken **[!UICONTROL Delivery]** efter ändringar:
 
