@@ -154,7 +154,7 @@ Gör så här:
 
 ## Ändra leveransmallen {#changing-the-delivery-template}
 
-Adobe Campaign erbjuder en mobil leveransmall som finns i noden **[!UICONTROL Resources > Templates > Delivery templates]**. Mer information finns i [dokumentationen för Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-templates.html){target="_blank"}.
+Adobe Campaign erbjuder en mobil leveransmall som finns i noden **[!UICONTROL Resources > Templates > Delivery templates]**. Mer information finns i [dokumentationen för Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-templates.html?lang=sv-SE){target="_blank"}.
 
 Om du vill skicka meddelanden via SMS-kanalen måste du skapa en mall som innehåller en referens till kanalkopplingen.
 

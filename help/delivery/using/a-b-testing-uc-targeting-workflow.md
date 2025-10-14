@@ -17,7 +17,7 @@ ht-degree: 4%
 
 Du måste skapa ditt arbetsflöde på fliken **[!UICONTROL Targeting and Workflows]** i en kampanj. Den består av en **[!UICONTROL Query]**-aktivitet, en **[!UICONTROL Split]**-aktivitet som är länkad till två **[!UICONTROL Email delivery]**-aktiviteter, en **[!UICONTROL Wait]**-aktivitet, en **[!UICONTROL JavaScript code]**-aktivitet och en **[!UICONTROL Delivery]**-aktivitet.
 
-1. Skapa en kampanj om du inte redan har gjort det. Mer information finns i [dokumentationen för Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/set-up-campaigns.html){target=_blank}.
+1. Skapa en kampanj om du inte redan har gjort det. Mer information finns i [dokumentationen för Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/set-up-campaigns.html?lang=sv-SE){target=_blank}.
 
    ![](assets/use_case_abtesting_targetwkfl_001.png)
 
@@ -25,7 +25,7 @@ Du måste skapa ditt arbetsflöde på fliken **[!UICONTROL Targeting and Workflo
 
    ![](assets/use_case_abtesting_targetwkfl_002.png)
 
-1. Ändra etiketten för det befintliga arbetsflödet eller klicka på **[!UICONTROL Add]** om du vill skapa en ny (mer information finns i [dokumentationen för Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-target.html){target="_blank"}).
+1. Ändra etiketten för det befintliga arbetsflödet eller klicka på **[!UICONTROL Add]** om du vill skapa en ny (mer information finns i [dokumentationen för Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-target.html?lang=sv-SE){target="_blank"}).
 
    ![](assets/use_case_abtesting_targetwkfl_003.png)
 

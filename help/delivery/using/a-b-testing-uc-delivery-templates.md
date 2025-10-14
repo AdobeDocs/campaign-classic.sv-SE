@@ -15,7 +15,7 @@ ht-degree: 6%
 
 # AB-testning: Skapa leveransmallar {#step-3--creating-two-delivery-templates}
 
-Vi vill nu skapa två leveransmallar. Varje mall refereras i en **[!UICONTROL Email delivery]**-aktivitet som är länkad till **[!UICONTROL Split]**-aktiviteten. Se [Campaign v8-dokumentationen](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-templates.html){target="_blank"}.
+Vi vill nu skapa två leveransmallar. Varje mall refereras i en **[!UICONTROL Email delivery]**-aktivitet som är länkad till **[!UICONTROL Split]**-aktiviteten. Se [Campaign v8-dokumentationen](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-templates.html?lang=sv-SE){target="_blank"}.
 
 1. Gå till mappen **[!UICONTROL Resources > Delivery template]**.
 1. Duplicera leveransmallen **[!UICONTROL Email]**.

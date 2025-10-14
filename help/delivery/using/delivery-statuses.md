@@ -93,7 +93,7 @@ Mer information om hur du optimerar leveransen av dina Adobe Campaign-e-postmedd
 
 När du har bekräftat leveransen kan du se att leveransstatus är **[!UICONTROL Pending]**. Den här statusen innebär att körningsprocessen väntar på att vissa resurser ska vara tillgängliga.
 
-Statusen **[!UICONTROL Pending]** kan först innebära att din leverans har schemalagts och väntar tills det angivna datumet. Mer information finns i [dokumentationen för Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/validate/configure-and-send.html#schedule-delivery-sending){target="_blank"}
+Statusen **[!UICONTROL Pending]** kan först innebära att din leverans har schemalagts och väntar tills det angivna datumet. Mer information finns i [dokumentationen för Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/validate/configure-and-send.html?lang=sv-SE#schedule-delivery-sending){target="_blank"}
 
 Om leveransen inte skickas och dess status är **[!UICONTROL Pending]** kan det bero på:
 

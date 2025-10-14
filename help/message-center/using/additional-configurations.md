@@ -169,6 +169,6 @@ Gör så här:
 
 1. Skapa ett externt konto per varumärke med samma interna namn som definierats i [körningsinstansen](#execution-instance) (steg 1).
 
-1. Skapa en leveransmall per varumärke. Se [Campaign v8-dokumentationen](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-templates.html){target="_blank"}.
+1. Skapa en leveransmall per varumärke. Se [Campaign v8-dokumentationen](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-templates.html?lang=sv-SE){target="_blank"}.
 
 1. I leveransmallens **[!UICONTROL Properties]** anger du routningen till varumärkesets externa konto.

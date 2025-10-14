@@ -24,7 +24,7 @@ De data som är länkade till en mottagares profil kan uppdateras manuellt eller
 
 ## Konfigurera en automatisk uppdatering {#setting-up-an-automatic-update}
 
-En automatisk uppdatering kan konfigureras via ett arbetsflöde. Mer information finns i [dokumentationen för Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/update-data.html){target="_blank"}.
+En automatisk uppdatering kan konfigureras via ett arbetsflöde. Mer information finns i [dokumentationen för Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/update-data.html?lang=sv-SE){target="_blank"}.
 
 ## Utför en massuppdatering {#performing-a-mass-update}
 

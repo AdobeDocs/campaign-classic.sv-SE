@@ -17,7 +17,7 @@ ht-degree: 3%
 
 # Skapa personaliserat innehåll {#build-personalized-content}
 
-När du utformar meddelandeinnehållet bör du undvika vanliga problem som kan hindra dig från att utföra leveransen. Oftast är möjliga fel relaterade till [personalisering](about-personalization.md), [formatering](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/defining-the-email-content.html#message-content){target="_blank"} och [bilder](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/defining-the-email-content.html#adding-images){target="_blank"}.
+När du utformar meddelandeinnehållet bör du undvika vanliga problem som kan hindra dig från att utföra leveransen. Oftast är möjliga fel relaterade till [personalisering](about-personalization.md), [formatering](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/defining-the-email-content.html?lang=sv-SE#message-content){target="_blank"} och [bilder](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/defining-the-email-content.html?lang=sv-SE#adding-images){target="_blank"}.
 
 ## Optimera personalisering {#optimize-personalization}
 
@@ -58,7 +58,7 @@ När du skapar e-postmeddelanden bör du tänka på de allmänna bästa metodern
 
 ### Subject line
 
-Lär dig mer om ämnesraden i [Campaign v8-dokumentationen](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/defining-the-email-content.html#sender){target="_blank"} för att förbättra öppna frekvenser:
+Lär dig mer om ämnesraden i [Campaign v8-dokumentationen](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/defining-the-email-content.html?lang=sv-SE#sender){target="_blank"} för att förbättra öppna frekvenser:
 
 * Undvik för långa motiv. Använd högst 50 tecken
 
@@ -115,7 +115,7 @@ Kontrollera följande element för att undvika vanliga formateringsfel:
 
 * Användning av **tillåtna tecken** i e-postmeddelanden: listan över giltiga tecken för e-postadresser definieras i alternativet XtkEmail_Characters. Lär dig hur du kommer åt Campaign-alternativen [i det här avsnittet](../../installation/using/configuring-campaign-options.md). För att specialtecken ska kunna hanteras på rätt sätt måste Adobe Campaign vara installerat i Unicode.
 
-* Konfiguration av **E-postautentisering**: Kontrollera att e-posthuvudena innehåller DKIM-signaturen. Med DKIM (Domain Keys Identified Mail)-autentisering kan den mottagande e-postservern verifiera att ett meddelande verkligen har skickats av den person eller enhet som det hävdades ha skickats av och om meddelandeinnehållet har ändrats mellan den tidpunkt då det ursprungligen skickades (och DKIM &quot;signerades&quot;) och den tidpunkt då det togs emot. Den här standarden använder vanligtvis domänen i sidhuvudet Från eller Avsändare. Mer information finns i [Adobe Deliverability Best Practice Guide](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html#authentication).
+* Konfiguration av **E-postautentisering**: Kontrollera att e-posthuvudena innehåller DKIM-signaturen. Med DKIM (Domain Keys Identified Mail)-autentisering kan den mottagande e-postservern verifiera att ett meddelande verkligen har skickats av den person eller enhet som det hävdades ha skickats av och om meddelandeinnehållet har ändrats mellan den tidpunkt då det ursprungligen skickades (och DKIM &quot;signerades&quot;) och den tidpunkt då det togs emot. Den här standarden använder vanligtvis domänen i sidhuvudet Från eller Avsändare. Mer information finns i [Adobe Deliverability Best Practice Guide](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html?lang=sv-SE#authentication).
 
 ### Responsiv e-postdesign
 
@@ -151,7 +151,7 @@ För att vara tillgängliga utifrån måste de bilder som används i e-postmedde
 
 * Du kan kontrollera om instanskonfigurationen aktiverar offentlig resurshantering. [Läs mer](../../installation/using/deploying-an-instance.md#managing-public-resources)
 
-* Från leveransassistenten kan du importera en HTML-sida som innehåller bilder eller infoga bilder direkt med HTML-redigeraren via ikonen **[!UICONTROL Image]**. Läs mer i [Campaign v8-dokumentationen](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/defining-the-email-content.html#adding-images){target="_blank"}.
+* Från leveransassistenten kan du importera en HTML-sida som innehåller bilder eller infoga bilder direkt med HTML-redigeraren via ikonen **[!UICONTROL Image]**. Läs mer i [Campaign v8-dokumentationen](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/defining-the-email-content.html?lang=sv-SE#adding-images){target="_blank"}.
 
 * Om bilderna inte visas kontrollerar du att bilderna är tillgängliga på servern. Det gör du genom att klicka på fliken Source i leveransfönstret. Hitta bilderna och kopiera och klistra in URL:en för varje bild i en webbläsare. Om bilderna inte visas kontaktar du IT-administratören eller tredjepartsleverantören som tillhandahåller ditt leveransinnehåll.
 
@@ -159,6 +159,6 @@ För att vara tillgängliga utifrån måste de bilder som används i e-postmedde
 
 Adobe rekommenderar att du förhandsgranskar ditt meddelande för att kontrollera hur det är anpassat och hur mottagarna ser det.
 
-* I leveransassistenten kan du på underfliken **[!UICONTROL Preview]** visa återgivningen av varje innehåll för en mottagare. Anpassningsfälten och de villkorliga elementen i innehållet ersätts med motsvarande information för den valda profilen. Läs mer i [Campaign v8-dokumentationen](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/defining-the-email-content.html#message-content){target="_blank"}.
+* I leveransassistenten kan du på underfliken **[!UICONTROL Preview]** visa återgivningen av varje innehåll för en mottagare. Anpassningsfälten och de villkorliga elementen i innehållet ersätts med motsvarande information för den valda profilen. Läs mer i [Campaign v8-dokumentationen](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/defining-the-email-content.html?lang=sv-SE#message-content){target="_blank"}.
 
 * En automatisk skräppostkontroll utförs under varje förhandsgranskning. På underfliken **[!UICONTROL Preview]** kontrollerar du [SpamAssassin](spamassassin.md)-spampoäng.  Klicka på **[!UICONTROL More...]** om du vill veta mer om varningen.  Innan du gör det kontrollerar du att SpamAssets är korrekt installerat och konfigurerat på Adobe Campaign programserver. [Läs mer](../../installation/using/configuring-spamassassin.md)

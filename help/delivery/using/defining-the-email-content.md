@@ -115,7 +115,7 @@ Meddelanden skickas som standard i HTML- eller textformat enligt mottagarens ön
 
 Med Adobe Campaign kan du testa det nya interaktiva [AMP-formatet för e-post](https://amp.dev/about/email/) som gör att du kan skicka dynamiska e-postmeddelanden under vissa förhållanden.
 
-Mer information finns i [dokumentationen för Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/defining-interactive-content.html){target="_blank"}.
+Mer information finns i [dokumentationen för Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/defining-interactive-content.html?lang=sv-SE){target="_blank"}.
 
 ## Använd innehållshantering {#using-content-management}
 

@@ -18,7 +18,7 @@ ht-degree: 1%
 
 De viktigaste stegen när du skapar en leverans är följande:
 
-1. **Skapa och identifiera leveransen**. Läs mer i [Campaign v8-dokumentationen](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html#create-the-delivery){target="_blank"}.
+1. **Skapa och identifiera leveransen**. Läs mer i [Campaign v8-dokumentationen](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html?lang=sv-SE#create-the-delivery){target="_blank"}.
 
 1. **Definiera leveransinnehållet**. Definitionen av leveransinnehåll är specifik för varje kanal. Mer information finns i det dedikerade avsnittet:
 
@@ -35,4 +35,4 @@ De viktigaste stegen när du skapar en leverans är följande:
 
 >[!NOTE]
 >
->Stegen som beskrivs i det här kapitlet förutsätter att alla målmottagare och deras profiler lagras i databasen, utom vid extern leverans (se [Campaign v8-dokumentationen](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html#selecting-external-recipients){target="_blank"}).
+>Stegen som beskrivs i det här kapitlet förutsätter att alla målmottagare och deras profiler lagras i databasen, utom vid extern leverans (se [Campaign v8-dokumentationen](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html?lang=sv-SE#selecting-external-recipients){target="_blank"}).

@@ -18,7 +18,7 @@ ht-degree: 8%
 
 # Zippa upp eller dekryptera en fil {#unzipping-or-decrypting-a-file-before-processing}
 
-Med Adobe Campaign kan du importera komprimerade eller krypterade filer. Innan de kan läsas in i en [datainläsningsaktivitet (fil)](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/action-activities/data-loading-file.html){target="_blank"} kan du definiera en förbearbetning för att packa upp eller dekryptera filen.
+Med Adobe Campaign kan du importera komprimerade eller krypterade filer. Innan de kan läsas in i en [datainläsningsaktivitet (fil)](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/action-activities/data-loading-file.html?lang=sv-SE){target="_blank"} kan du definiera en förbearbetning för att packa upp eller dekryptera filen.
 
 >[!IMPORTANT]
 >
@@ -26,7 +26,7 @@ Med Adobe Campaign kan du importera komprimerade eller krypterade filer. Innan d
 
 Så här kan du göra:
 
-1. Använd [Kontrollpanelen](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/gpg-keys-management.html#decrypting-data) för att generera ett nyckelpar för offentlig/privat nyckel för att tillåta fildekryptering.
+1. Använd [Kontrollpanelen](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/gpg-keys-management.html?lang=sv-SE#decrypting-data) för att generera ett nyckelpar för offentlig/privat nyckel för att tillåta fildekryptering.
 
    >[!NOTE]
    >
@@ -51,8 +51,8 @@ Ett exempel visas i användningsexemplet nedan.
 
 **Relaterade ämnen:**
 
-* [Datainläsningsaktivitet (fil)](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/action-activities/data-loading-file.html){target="_blank"}.
-* [Zippa eller kryptera en fil](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/action-activities/extraction-file.html){target="_blank"}.
+* [Datainläsningsaktivitet (fil)](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/action-activities/data-loading-file.html?lang=sv-SE){target="_blank"}.
+* [Zippa eller kryptera en fil](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/action-activities/extraction-file.html?lang=sv-SE){target="_blank"}.
 
 ## Användningsfall: Importera data som krypterats med en nyckel som genererats av Kontrollpanelen {#use-case-gpg-decrypt}
 
@@ -62,7 +62,7 @@ I det här fallet skapar vi ett arbetsflöde för att importera data som har kry
 
 Så här utför du det här användningsfallet:
 
-1. Använd Kontrollpanelen för att generera ett nyckelpar (public/private). Detaljerade steg finns i [dokumentationen för Kontrollpanelen](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/gpg-keys-management.html#decrypting-data).
+1. Använd Kontrollpanelen för att generera ett nyckelpar (public/private). Detaljerade steg finns i [dokumentationen för Kontrollpanelen](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/gpg-keys-management.html?lang=sv-SE#decrypting-data).
 
    * Den offentliga nyckeln delas med det externa systemet, som kommer att använda den för att kryptera data som ska skickas till Campaign.
    * Den privata nyckeln används av Campaign Classic för att dekryptera inkommande krypterade data.
@@ -82,10 +82,10 @@ Så här utför du det här användningsfallet:
 
    ![](assets/gpg_key_transfer.png)
 
-   Globala koncept för hur du konfigurerar aktiviteten finns i [dokumentationen för Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/event-activities/file-transfer.html){target="_blank"}.
+   Globala koncept för hur du konfigurerar aktiviteten finns i [dokumentationen för Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/event-activities/file-transfer.html?lang=sv-SE){target="_blank"}.
 
 
-1. Öppna aktiviteten **[!UICONTROL Data loading (file)]** och konfigurera den sedan efter dina behov. Globala koncept för hur du konfigurerar aktiviteten finns i [dokumentationen för Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/action-activities/data-loading-file.html){target="_blank"}.
+1. Öppna aktiviteten **[!UICONTROL Data loading (file)]** och konfigurera den sedan efter dina behov. Globala koncept för hur du konfigurerar aktiviteten finns i [dokumentationen för Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/action-activities/data-loading-file.html?lang=sv-SE){target="_blank"}.
 
    Lägg till en förbearbetningsfas i aktiviteten för att dekryptera inkommande data. Det gör du genom att välja alternativet **[!UICONTROL Pre-process the file]** och sedan välja **[!UICONTROL Decrypt]** i listrutan **[!UICONTROL Command]**:
 

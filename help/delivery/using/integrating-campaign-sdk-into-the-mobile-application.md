@@ -64,7 +64,7 @@ För att integrera Campaign SDK i mobilappen måste den funktionella administrat
 
   >[!NOTE]
   >
-  >Integreringsnyckeln anges i Adobe Campaign-konsolen på fliken **[!UICONTROL Information]** för tjänsten som är avsedd för mobilprogrammet. Se [Campaign v8-dokumentationen](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/push/push-settings.html){target="_blank"}.
+  >Integreringsnyckeln anges i Adobe Campaign-konsolen på fliken **[!UICONTROL Information]** för tjänsten som är avsedd för mobilprogrammet. Se [Campaign v8-dokumentationen](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/push/push-settings.html?lang=sv-SE){target="_blank"}.
 
 * **En spårnings-URL**: som matchar adressen för Adobe Campaign spårningsserver.
 * **En marknadsförings-URL**: för att aktivera samlingen av prenumerationer.

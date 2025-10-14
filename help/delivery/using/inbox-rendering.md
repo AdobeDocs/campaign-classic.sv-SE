@@ -31,7 +31,7 @@ De mobil-, meddelande- och webbpostklienter som är tillgängliga för **Inkorgs
 
 >[!NOTE]
 >
->Återgivning av inkorgen behövs inte för att testa personalisering i leveranser. Personalization kan kontrolleras med Adobe Campaign-verktyg som **[!UICONTROL Preview]** och korrektur. Se [dokumentationen för Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/validate/preview-and-proof.html){target="_blank"}.
+>Återgivning av inkorgen behövs inte för att testa personalisering i leveranser. Personalization kan kontrolleras med Adobe Campaign-verktyg som **[!UICONTROL Preview]** och korrektur. Se [dokumentationen för Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/validate/preview-and-proof.html?lang=sv-SE){target="_blank"}.
 
 ## Aktivera inkorgsåtergivning {#activating-inbox-rendering}
 
@@ -107,7 +107,7 @@ Mer information om hur du skapar, utformar och anger mål för en leverans finns
 
    ![](assets/s_tn_inbox_rendering_button.png)
 
-   Ett bevis skickas. Miniatyrbilderna för återgivning finns tillgängliga i det korrekturet några minuter efter att du skickat e-postmeddelandena. Mer information om hur du skickar korrektur finns i [dokumentationen för Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/validate/preview-and-proof.html){target="_blank"}.
+   Ett bevis skickas. Miniatyrbilderna för återgivning finns tillgängliga i det korrekturet några minuter efter att du skickat e-postmeddelandena. Mer information om hur du skickar korrektur finns i [dokumentationen för Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/validate/preview-and-proof.html?lang=sv-SE){target="_blank"}.
 
 1. När du har skickat korrekturet visas det i leveranslistan. Dubbelklicka på den.
 

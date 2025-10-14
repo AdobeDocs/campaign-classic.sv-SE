@@ -18,7 +18,7 @@ ht-degree: 3%
 Uttryckslistan som visas i popup-fönstret styrs av en uppräkning som gör att du kan visa värden i en lista för att begränsa vilka val användaren har för ett visst fält.
 Ordningen på uttryckslistan kan anpassas. Du kan också lägga till andra uttryckssymboler i listan.
 
-Observera att uttryckssymboler endast är tillgängliga för e-post och push-meddelanden. Mer information finns i [dokumentationen för Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/defining-the-email-content.html#inserting-emoticons){target="_blank"}.
+Observera att uttryckssymboler endast är tillgängliga för e-post och push-meddelanden. Mer information finns i [dokumentationen för Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/defining-the-email-content.html?lang=sv-SE#inserting-emoticons){target="_blank"}.
 
 
 ## Lägga till en ny uttryckssymbol {#add-new-emoticon}
@@ -63,7 +63,7 @@ Din nya uttryckssymbol placeras automatiskt i butiken.
 
 1. Ta hänsyn till dina ändringar genom att koppla från och sedan ansluta igen från Adobe Campaign Classic. Om din nya uttryckssymbol fortfarande inte visas i popup-fönstret **[!UICONTROL Insert emoticon]** kan du behöva rensa din cache. Mer information om detta hittar du i det här [avsnittet](../../platform/using/faq-campaign-config.md#perform-soft-cache-clear).
 
-1. Din nya uttryckssymbol finns nu i leveranserna i popup-fönstret **[!UICONTROL Insert emoticon]** i den 61:a positionen som konfigurerats i föregående steg. Mer information om hur du använder uttryckssymboler i leveranser finns i [dokumentationen för Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/defining-the-email-content.html#inserting-emoticons){target="_blank"}.
+1. Din nya uttryckssymbol finns nu i leveranserna i popup-fönstret **[!UICONTROL Insert emoticon]** i den 61:a positionen som konfigurerats i föregående steg. Mer information om hur du använder uttryckssymboler i leveranser finns i [dokumentationen för Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/defining-the-email-content.html?lang=sv-SE#inserting-emoticons){target="_blank"}.
 
    ![](assets/emoticon_4.png)
 

@@ -214,12 +214,12 @@ Den sista åtgärden i aktiviteten är att förbereda och starta leveransen.
 
 ### Importera innehåll från FTP {#importing-content-from-ftp}
 
-Om ditt leveransinnehåll är tillgängligt i en HTML-fil som finns på FTP- eller SFTP-servrar kan du enkelt läsa in innehållet i Adobe Campaign-leveranser. Se [Campaign v8-dokumentationen](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/deliveries/load-delivery-content.html){target="_blank"}.
+Om ditt leveransinnehåll är tillgängligt i en HTML-fil som finns på FTP- eller SFTP-servrar kan du enkelt läsa in innehållet i Adobe Campaign-leveranser. Se [Campaign v8-dokumentationen](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/deliveries/load-delivery-content.html?lang=sv-SE){target="_blank"}.
 
 
 ### Importera innehåll från kopplingen för Amazon Simple Storage Service (S3) {#importing-content-from-amazon-simple-storage-service--s3--connector}
 
-Om ditt leveransinnehåll finns i Amazon Simple Storage Service (S3)-bucket kan du enkelt läsa in det i Adobe Campaign-leveranser. Se [Campaign v8-dokumentationen](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/deliveries/load-delivery-content.html){target="_blank"}.
+Om ditt leveransinnehåll finns i Amazon Simple Storage Service (S3)-bucket kan du enkelt läsa in det i Adobe Campaign-leveranser. Se [Campaign v8-dokumentationen](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/deliveries/load-delivery-content.html?lang=sv-SE){target="_blank"}.
 
 
 ## Halvautomatisk uppdatering {#semi-automatic-update}

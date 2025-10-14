@@ -26,13 +26,13 @@ Läs mer om hur man utför test- och valideringssteg innan du skickar meddelande
 
 Leveransanalysen är den fas under vilken målgruppen beräknas och leveransinnehållet färdigställs. När leveransen är klar kan den skickas. Läs loggarna för att kontrollera att allt är korrekt.
 
-Läs mer i [Campaign v8-dokumentationen](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/validate/delivery-analysis.html){target="_blank"}.
+Läs mer i [Campaign v8-dokumentationen](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/validate/delivery-analysis.html?lang=sv-SE){target="_blank"}.
 
 ### Varför ska jag skapa korrektur? {#why-should-i-create-proofs-}
 
 Adobe rekommenderar starkt att du skapar korrekturmeddelanden för att testa leveransen med en godkännandegrupp innan den skickas till huvudmålet. Då kan du validera meddelandeinnehåll, personalisering och leveransparametrar.
 
-Läs mer i [Campaign v8-dokumentationen](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/validate/preview-and-proof.html){target="_blank"}.
+Läs mer i [Campaign v8-dokumentationen](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/validate/preview-and-proof.html?lang=sv-SE){target="_blank"}.
 
 ### Hur använder man startadresser i Adobe Campaign? {#how-to-use-seed-addresses-in-adobe-campaign-}
 
@@ -49,13 +49,13 @@ Detta har följande fördelar:
 
 För att upptäcka eventuella fel i meddelandekonfigurationen rekommenderar Adobe att du skapar en leveransvalideringscykel. Se till att innehållet godkänns så ofta som det behövs genom att skicka korrekturer till testmottagare. Ett korrektur ska skickas varje gång en ändring görs för att godkänna innehållet.
 
-Läs mer i [Campaign v8-dokumentationen](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/validate/preview-and-proof.html){target="_blank"}.
+Läs mer i [Campaign v8-dokumentationen](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/validate/preview-and-proof.html?lang=sv-SE){target="_blank"}.
 
 ### Vad är en typologiregel? {#what-is-a-typology-rule-}
 
 För att undvika konflikter mellan kampanjer kan Adobe Campaign testa olika kombinationer genom att tillämpa särskilda begränsningsregler. Detta garanterar att de meddelanden som skickas bäst uppfyller kundernas behov och förväntningar i enlighet med företagets kommunikationspolicyer.
 
-Se [Campaign v8-dokumentationen](https://experienceleague.adobe.com/docs/campaign/automation/campaign-optimization/campaign-typologies.html){target="_blank"}.
+Se [Campaign v8-dokumentationen](https://experienceleague.adobe.com/docs/campaign/automation/campaign-optimization/campaign-typologies.html?lang=sv-SE){target="_blank"}.
 
 ## Skicka meddelanden {#send-your-messages}
 
@@ -63,25 +63,25 @@ Läs mer om hur man skickar meddelanden över olika kanaler med Adobe Campaign.
 
 ### Hur kan jag skicka e-post i påfyllnader? {#how-can-i-send-emails-in-waves-}
 
-Innan du skickar en leverans till en stor population kan du konfigurera vågor så att meddelanden delas upp i flera batchar och lasten balanseras. Se [dokumentationen för Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/validate/configure-and-send.html#sending-using-multiple-waves){target="_blank"}.
+Innan du skickar en leverans till en stor population kan du konfigurera vågor så att meddelanden delas upp i flera batchar och lasten balanseras. Se [dokumentationen för Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/validate/configure-and-send.html?lang=sv-SE#sending-using-multiple-waves){target="_blank"}.
 
 ### Vilka är de viktigaste stegen för att skapa ett e-postmeddelande i Campaign? {#which-are-the-key-steps-to-create-an-email-in-campaign-}
 
 När e-postleveransen har skapats och validerats kan du skicka den. Du kan välja att skicka e-postmeddelandet till huvudmålet omedelbart eller schemalägga en leverans vid ett senare datum. Innan dess kan du vid behov även beräkna målgruppen.
 
-Läs mer i [Campaign v8-dokumentationen](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/validate/preview-and-proof.html){target="_blank"}.
+Läs mer i [Campaign v8-dokumentationen](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/validate/preview-and-proof.html?lang=sv-SE){target="_blank"}.
 
 ### Hur schemalägger jag en leverans? {#how-to-schedule-a-delivery-}
 
 Du kan skjuta upp leveransen av meddelanden för att schemalägga den eller för att hantera säljtrycket och undvika att överbelasta en grupp.
 
-Läs mer i [Campaign v8-dokumentationen](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/validate/configure-and-send.html#schedule-delivery-sending){target="_blank"}.
+Läs mer i [Campaign v8-dokumentationen](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/validate/configure-and-send.html?lang=sv-SE#schedule-delivery-sending){target="_blank"}.
 
 ### Kan jag lägga till en bilaga i e-postmeddelanden? {#can-i-add-an-attachment-to-emails-}
 
 Med Campaign Classic kan du lägga till personliga bilagor i alla e-postmeddelanden.
 
-Läs mer om e-postbilagor i [dokumentationen för Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/attaching-files.html){target="_blank"}.
+Läs mer om e-postbilagor i [dokumentationen för Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/attaching-files.html?lang=sv-SE){target="_blank"}.
 
 ## Spåra era meddelanden och mät deras effekt {#track-your-messages-and-measure-their-impact}
 

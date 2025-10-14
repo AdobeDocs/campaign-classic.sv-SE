@@ -17,9 +17,9 @@ ht-degree: 3%
 
 I det här avsnittet beskrivs hur du skapar ett arbetsflöde för A/B-testning.
 
-1. Skapa ett nytt arbetsflöde och konfigurera sedan en Query-aktivitet så att den målar den önskade populationen. Se [Campaign v8-dokumentationen](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/query.html){target="_blank"}.
+1. Skapa ett nytt arbetsflöde och konfigurera sedan en Query-aktivitet så att den målar den önskade populationen. Se [Campaign v8-dokumentationen](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/query.html?lang=sv-SE){target="_blank"}.
 
-1. Lägg till en delad aktivitet för att dela upp målpopulationen i flera deluppsättningar. Se [Campaign v8-dokumentationen](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/split.html){target="_blank"}.
+1. Lägg till en delad aktivitet för att dela upp målpopulationen i flera deluppsättningar. Se [Campaign v8-dokumentationen](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/split.html?lang=sv-SE){target="_blank"}.
 
 1. Öppna aktiviteten och konfigurera sedan varje delmängd efter dina behov. Mer information om hur du konfigurerar en **[!UICONTROL Split]**-aktivitet finns i [det här avsnittet](../../workflow/using/split.md).
 

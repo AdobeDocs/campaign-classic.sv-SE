@@ -24,7 +24,7 @@ Dessutom kan du med modulen **Marketing Resource Management (MRM)** styra markna
 >[!NOTE]
 >
 >Mer information om Adobe Campaign kärnfunktioner finns i [det här avsnittet](../../platform/using/about-adobe-campaign-classic.md).\
->Funktioner som rör målgruppsanpassning, meddelandepersonalisering och meddelandeleverans i olika kanaler beskrivs i [dokumentationen för Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html){target="_blank"}.
+>Funktioner som rör målgruppsanpassning, meddelandepersonalisering och meddelandeleverans i olika kanaler beskrivs i [dokumentationen för Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html?lang=sv-SE){target="_blank"}.
 
 ![](assets/do-not-localize/how-to-video.png) [Upptäck begrepp för marknadsföringskampanjer i videon](#video)
 

@@ -55,7 +55,7 @@ Du kan fråga databasen i Campaign med den generiska frågeredigeraren. Den öpp
 
 Frågor skapas med hjälp av fält i den valda tabellen eller med hjälp av en formel. De viktigaste principerna för att skapa en fråga med databasen i Campaign beskrivs [på den här sidan](../../platform/using/about-queries-in-campaign.md).
 
-Läs mer om frågor i [dokumentationen för Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/query.html){target="_blank"}.
+Läs mer om frågor i [dokumentationen för Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/query.html?lang=sv-SE){target="_blank"}.
 
 ## Hur importerar jag ett datapaket? {#how-can-i-import-a-data-package-}
 

@@ -21,12 +21,12 @@ Så här skapar du en ny direktutskick:
 
 >[!NOTE]
 >
->Globala koncept för leveransskapande presenteras i [dokumentationen för Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html){target="_blank"}.
+>Globala koncept för leveransskapande presenteras i [dokumentationen för Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html?lang=sv-SE){target="_blank"}.
 
 1. Skapa en ny leverans, till exempel från kontrollpanelen Leverans.
 1. Välj leveransmallen **Leverera via direktreklam (papper)**.
 
    ![](assets/direct_mail.png)
 
-1. Identifiera leveransen med en etikett, kod och beskrivning. Mer information finns i det här avsnittet i [dokumentationen för Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html#create-the-delivery){target="_blank"}.
+1. Identifiera leveransen med en etikett, kod och beskrivning. Mer information finns i det här avsnittet i [dokumentationen för Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html?lang=sv-SE#create-the-delivery){target="_blank"}.
 1. Klicka på **Fortsätt** för att bekräfta den här informationen och visa meddelandekonfigurationsfönstret.

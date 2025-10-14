@@ -64,7 +64,7 @@ Diagrammet nedan visar de olika stegen för implementering av det här scenariot
 
 Om du vill lägga till en e-postbilaga i ett transaktionsmeddelande följer du stegen nedan:
 
-1. Börja med att utforma den bifogade filen. Mer information finns i [dokumentationen för Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/attaching-files.html#attach-a-personalized-file){target="_blank"}.
+1. Börja med att utforma den bifogade filen. Mer information finns i [dokumentationen för Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/attaching-files.html?lang=sv-SE#attach-a-personalized-file){target="_blank"}.
 
    Detta gör att du kan bifoga filerna till ett e-postmeddelande, även om de inte finns på körningsinstansen.
 

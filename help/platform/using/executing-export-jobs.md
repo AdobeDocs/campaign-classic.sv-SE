@@ -95,7 +95,7 @@ Välj sorteringsordning för kolumnerna.
 
 ## Steg 6 - Filtervillkor {#step-6---filter-conditions-}
 
-Du kan lägga till filtervillkor för att undvika att exportera alla data. Konfigurationen för den här filtreringen är densamma som målinriktningen för mottagare i leveransassistenten. Se [Campaign v8-dokumentationen](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html#target-population){target="_blank"}.
+Du kan lägga till filtervillkor för att undvika att exportera alla data. Konfigurationen för den här filtreringen är densamma som målinriktningen för mottagare i leveransassistenten. Se [Campaign v8-dokumentationen](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html?lang=sv-SE#target-population){target="_blank"}.
 
 ![](assets/s_ncs_user_export_wizard05_b.png)
 

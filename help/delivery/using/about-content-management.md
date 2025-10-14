@@ -19,7 +19,7 @@ Adobe Campaign Content Manager-modulen är ett specifikt [inbyggt Campaign Class
 
 >[!NOTE]
 >
->Det här avsnittet gäller modulen Innehållshantering. Mer information om hur du utformar innehåll för e-postleveranser finns i [dokumentationen för Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/defining-the-email-content.html){target="_blank"}.
+>Det här avsnittet gäller modulen Innehållshantering. Mer information om hur du utformar innehåll för e-postleveranser finns i [dokumentationen för Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/defining-the-email-content.html?lang=sv-SE){target="_blank"}.
 
 Modulen Innehållshantering innehåller funktioner för arbetsgrupper, arbetsflöden och innehållssamling. Detta gör att ett meddelande kan formateras automatiskt: e-post, e-post, SMS, webb osv.
 

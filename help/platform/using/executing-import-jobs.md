@@ -23,7 +23,7 @@ Med Adobe Campaign kan du importera data till databasen från en eller flera fil
 
 >[!NOTE]
 >
->Du kan importera data utan att mappa dem till databasdata med funktionen **[!UICONTROL Import a list]**. Data kan sedan användas enbart i arbetsflöden via objektet **[!UICONTROL Read list]**. Se [Campaign v8-dokumentationen](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/read-list.html){target="_blank"}.
+>Du kan importera data utan att mappa dem till databasdata med funktionen **[!UICONTROL Import a list]**. Data kan sedan användas enbart i arbetsflöden via objektet **[!UICONTROL Read list]**. Se [Campaign v8-dokumentationen](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/read-list.html?lang=sv-SE){target="_blank"}.
 
 Med importassistenten kan du konfigurera en import, definiera dess alternativ (till exempel dataomvandling) och starta körningen. Det är en serie skärmar vars innehåll beror på typen av import (enkel eller flera) och operatörens rättigheter.
 
@@ -87,7 +87,7 @@ Med länken **[!UICONTROL Advanced parameters]** kan du komma åt följande alte
 
    * **[!UICONTROL Do not update enumerations]**
 
-     Välj det här alternativet om du inte vill att listan med uppräknade värden i databasen ska vara upphöjd. Läs mer om hur du **arbetar med uppräkningar** i [Adobe Campaign v8-dokumentationen (konsolen)](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/config/settings/enumerations){target=_blank}.
+     Välj det här alternativet om du inte vill att listan med uppräknade värden i databasen ska vara upphöjd. Läs mer om hur du **arbetar med uppräkningar** i [Adobe Campaign v8-dokumentationen (konsolen)](https://experienceleague.adobe.com/sv/docs/campaign/campaign-v8/config/settings/enumerations){target=_blank}.
 
 
 * Fliken **[!UICONTROL Variables]**

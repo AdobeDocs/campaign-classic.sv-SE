@@ -28,7 +28,7 @@ Om du vill skapa en leverans som är länkad till en kampanj klickar du på län
 
 ![](assets/campaign_op_add_delivery.png)
 
-De föreslagna konfigurationerna passar för de olika typerna av leverans: direktreklam, e-post, mobilkanaler. Läs mer i [Campaign v8-dokumentationen](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html){target="_blank"}.
+De föreslagna konfigurationerna passar för de olika typerna av leverans: direktreklam, e-post, mobilkanaler. Läs mer i [Campaign v8-dokumentationen](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html?lang=sv-SE){target="_blank"}.
 
 ## Starta en leverans {#starting-a-delivery}
 

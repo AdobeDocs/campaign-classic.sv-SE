@@ -31,11 +31,11 @@ Om du vill exportera data från Campaign Classic till din S3- eller Azure Blob-l
 
 Lägg till och konfigurera:
 
-* En **[!UICONTROL Data extraction (file)]**-aktivitet som extraherar måldata till en CSV-fil. Mer information om hur du konfigurerar den här aktiviteten finns i [dokumentationen för Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/action-activities/extraction-file.html){target="_blank"}.
+* En **[!UICONTROL Data extraction (file)]**-aktivitet som extraherar måldata till en CSV-fil. Mer information om hur du konfigurerar den här aktiviteten finns i [dokumentationen för Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/action-activities/extraction-file.html?lang=sv-SE){target="_blank"}.
 
   ![](assets/rtcdp-extract-file.png)
 
-* En **[!UICONTROL File transfer]**-aktivitet som överför CSV-filen till din lagringsplats. Mer information om hur du konfigurerar den här aktiviteten finns i [dokumentationen för Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/event-activities/file-transfer.html){target="_blank"}.
+* En **[!UICONTROL File transfer]**-aktivitet som överför CSV-filen till din lagringsplats. Mer information om hur du konfigurerar den här aktiviteten finns i [dokumentationen för Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/event-activities/file-transfer.html?lang=sv-SE){target="_blank"}.
 
   ![](assets/rtcdp-file-transfer.png)
 
@@ -49,8 +49,8 @@ De viktigaste stegen för att ansluta din S3- eller Azure-blobblagringsplats som
 
 1. Skapa en anslutning till din lagringsplats på Adobe Experience-plattformens **[!UICONTROL Sources]**-meny:
 
-   * [Skapa en Amazon S3-källanslutning](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/cloud-storage/s3.html)
-   * [Azure Blob-koppling](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/cloud-storage/blob.html)
+   * [Skapa en Amazon S3-källanslutning](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/cloud-storage/s3.html?lang=sv-SE)
+   * [Azure Blob-koppling](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/cloud-storage/blob.html?lang=sv-SE)
 
    >[!NOTE]
    >
@@ -60,7 +60,7 @@ De viktigaste stegen för att ansluta din S3- eller Azure-blobblagringsplats som
 
 1. Konfigurera ett dataflöde för en batchanslutning till molnlagring. Ett dataflöde är en schemalagd aktivitet som hämtar och importerar data från lagringsplatsen till en Adobe Experience Platform-datauppsättning. Med det här steget kan du konfigurera datainmatningen från lagringsplatsen, inklusive dataval och mappning av CSV-fälten till ett XDM-schema.
 
-   Detaljerad information finns på [den här sidan](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/dataflow/cloud-storage.html).
+   Detaljerad information finns på [den här sidan](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/dataflow/cloud-storage.html?lang=sv-SE).
 
    ![](assets/rtcdp-map-xdm.png)
 

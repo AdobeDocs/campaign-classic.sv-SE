@@ -26,7 +26,7 @@ Assets som delas från Adobe Experience Cloud kan användas i e-postmeddelanden 
 
 1. I redigeringsfönstret väljer du alternativet att lägga till en bild:
 
-   * Om du använder [standardredigeringsläget](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/defining-the-email-content.html#adding-images){target="_blank"} väljer du **[!UICONTROL Image]** > **[!UICONTROL Select a shared asset]**.
+   * Om du använder [standardredigeringsläget](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/defining-the-email-content.html?lang=sv-SE#adding-images){target="_blank"} väljer du **[!UICONTROL Image]** > **[!UICONTROL Select a shared asset]**.
 
      ![](assets/dam_insert_image_standard.png)
 

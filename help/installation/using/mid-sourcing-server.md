@@ -27,7 +27,7 @@ När du installerar en server med mellanlagring utförs samma process som när d
 
 >[!CAUTION]
 >
->När servern för mellanlagring har konfigurerats och [synkroniseringsarbetsflödena](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/wf-type/technical-workflows.html){target="_blank"} har körts för första gången, ska du inte uppdatera det interna namnet för de externa konton som mellanlagras.
+>När servern för mellanlagring har konfigurerats och [synkroniseringsarbetsflödena](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/wf-type/technical-workflows.html?lang=sv-SE){target="_blank"} har körts för första gången, ska du inte uppdatera det interna namnet för de externa konton som mellanlagras.
 
 ## Steg för att installera och konfigurera en instans {#steps-for-installing-and-configuring-an-instance}
 

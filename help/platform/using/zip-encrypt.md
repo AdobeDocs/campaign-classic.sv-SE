@@ -21,7 +21,7 @@ Med Adobe Campaign kan du exportera komprimerade eller krypterade filer. När du
 
 Så här kan du göra:
 
-1. Installera ett GPG-nyckelpar för din instans med [Kontrollpanelen](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/gpg-keys-management.html#encrypting-data).
+1. Installera ett GPG-nyckelpar för din instans med [Kontrollpanelen](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/gpg-keys-management.html?lang=sv-SE#encrypting-data).
 
    >[!NOTE]
    >
@@ -36,7 +36,7 @@ Du kan sedan använda kommandon eller kod på fliken **[!UICONTROL Script]** i a
 **Relaterade ämnen:**
 
 * [Zippa upp eller dekryptera en fil före bearbetning](../../platform/using/unzip-decrypt.md)
-* [Dataextraheringsaktivitet (fil)](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/action-activities/extraction-file.html){target="_blank"}
+* [Dataextraheringsaktivitet (fil)](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/action-activities/extraction-file.html?lang=sv-SE){target="_blank"}
 
 ## Användningsfall: Kryptera och exportera data med en tangent som är installerad på Kontrollpanelen {#use-case-gpg-encrypt}
 
@@ -46,7 +46,7 @@ I det här fallet skapar vi ett arbetsflöde för att kryptera och exportera dat
 
 Så här utför du det här användningsfallet:
 
-1. Generera ett GPG-nyckelpar (public/private) med ett GPG-verktyg och installera sedan den offentliga nyckeln på Kontrollpanelen. Detaljerade steg finns i [dokumentationen för Kontrollpanelen](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/gpg-keys-management.html#encrypting-data).
+1. Generera ett GPG-nyckelpar (public/private) med ett GPG-verktyg och installera sedan den offentliga nyckeln på Kontrollpanelen. Detaljerade steg finns i [dokumentationen för Kontrollpanelen](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/gpg-keys-management.html?lang=sv-SE#encrypting-data).
 
 1. Bygg ett arbetsflöde i Campaign Classic för att exportera data och kryptera dem med den privata nyckel som har installerats via Kontrollpanelen. För att göra detta ska vi skapa ett arbetsflöde enligt följande:
 
@@ -57,9 +57,9 @@ Så här utför du det här användningsfallet:
    * **[!UICONTROL JavaScript code]** aktivitet: Krypterar de data som ska extraheras.
    * **[!UICONTROL File transfer]**-aktivitet: Skickar data till en extern källa (i det här exemplet en SFTP-server).
 
-1. Konfigurera aktiviteten **[!UICONTROL Query]** för att ange önskade data från databasen som mål. Se [Campaign v8-dokumentationen](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/query.html){target="_blank"}.
+1. Konfigurera aktiviteten **[!UICONTROL Query]** för att ange önskade data från databasen som mål. Se [Campaign v8-dokumentationen](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/query.html?lang=sv-SE){target="_blank"}.
 
-1. Öppna aktiviteten **[!UICONTROL Data extraction (file)]** och konfigurera den efter dina behov. Globala koncept för hur du konfigurerar aktiviteten finns i [dokumentationen för Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/action-activities/extraction-file.html){target="_blank"}.
+1. Öppna aktiviteten **[!UICONTROL Data extraction (file)]** och konfigurera den efter dina behov. Globala koncept för hur du konfigurerar aktiviteten finns i [dokumentationen för Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/action-activities/extraction-file.html?lang=sv-SE){target="_blank"}.
 
    ![](assets/gpg-data-extraction.png)
 
@@ -81,7 +81,7 @@ Så här utför du det här användningsfallet:
 
    ![](assets/gpg-script.png)
 
-1. Öppna aktiviteten **[!UICONTROL File transfer]** och ange sedan den SFTP-server som du vill skicka filen till. Globala koncept för hur du konfigurerar aktiviteten finns i [dokumentationen för Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/event-activities/file-transfer.html){target="_blank"}.
+1. Öppna aktiviteten **[!UICONTROL File transfer]** och ange sedan den SFTP-server som du vill skicka filen till. Globala koncept för hur du konfigurerar aktiviteten finns i [dokumentationen för Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/event-activities/file-transfer.html?lang=sv-SE){target="_blank"}.
 
    ![](assets/gpg-file-transfer.png)
 

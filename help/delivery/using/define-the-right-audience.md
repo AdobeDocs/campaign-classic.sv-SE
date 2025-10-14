@@ -19,7 +19,7 @@ ht-degree: 3%
 
 Målgruppspopulationen är avgörande: skapa listor noggrant, testa e-postmeddelanden på populära e-postklienter och mobila enheter och se till att e-postlistorna är aktuella (utan okända eller föråldrade adresser). Du kan också skicka korrektur som hjälper dig att konfigurera en komplett valideringscykel.
 
-Läs mer om målpopulationer i det här avsnittet i [dokumentationen för Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html){target="_blank"}.
+Läs mer om målpopulationer i det här avsnittet i [dokumentationen för Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html?lang=sv-SE){target="_blank"}.
 
 ## Rikta er till rätt målgrupp {#target-the-right-audience}
 
@@ -33,13 +33,13 @@ I Campaign Classic är leveransmallarna som standard avsedda för **mottagare**.
 
 Du kan till exempel leverera till besökare vars profiler har samlats in via sociala nätverk eller till besökare som prenumererar på en informationstjänst.
 
-Dessa mappningar presenteras i [dokumentationen för Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/audience/add-profiles/target-mappings.html){target="_blank"}.
+Dessa mappningar presenteras i [dokumentationen för Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/audience/add-profiles/target-mappings.html?lang=sv-SE){target="_blank"}.
 
 Du kan också skapa och använda en anpassad målmappning. Mer information om detta finns i [det här avsnittet](../../configuration/using/target-mapping.md).
 
 ## Externa mottagare {#external-recipients}
 
-Du kan leverera till mottagare som lagras i en extern fil i stället för att sparas i databasen. Läs mer i [Campaign v8-dokumentationen](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html#selecting-external-recipients){target="_blank"}.
+Du kan leverera till mottagare som lagras i en extern fil i stället för att sparas i databasen. Läs mer i [Campaign v8-dokumentationen](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html?lang=sv-SE#selecting-external-recipients){target="_blank"}.
 
 ## Skicka till prenumeranterna {#send-to-subscribers}
 
@@ -50,7 +50,7 @@ Om du vill skicka meddelanden till prenumeranterna på ett nyhetsbrev kan du rik
 
 Om du vill testa leveransen använder du korrektur innan du skickar till huvudmålet.
 
-Se till att du väljer rätt korrekturmottagare eftersom de validerar formuläret och meddelandets innehåll. Stegen för att definiera korrekturmottagare finns i [Campaign v8-dokumentationen](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html#select-the-proof-target){target="_blank"}.
+Se till att du väljer rätt korrekturmottagare eftersom de validerar formuläret och meddelandets innehåll. Stegen för att definiera korrekturmottagare finns i [Campaign v8-dokumentationen](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html?lang=sv-SE#select-the-proof-target){target="_blank"}.
 
 Seed-adresser används för målmottagare som inte matchar de definierade målvillkoren för att testa en leverans innan den skickas till huvudmålet. De visas [&#x200B; i det här avsnittet](about-seed-addresses.md).
 

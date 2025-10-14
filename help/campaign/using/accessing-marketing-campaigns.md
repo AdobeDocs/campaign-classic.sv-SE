@@ -41,7 +41,7 @@ Blocket **[!UICONTROL Browsing]** på fliken **[!UICONTROL Campaigns]** innehål
 >
 >Mer information om Adobe Campaign allmänna inställningar för ergonomi, behörigheter och profilhanteringsfunktioner finns i [det här avsnittet](../../platform/using/adobe-campaign-workspace.md).
 >
->Alla funktioner som rör kanaler och leveranser beskrivs i [Campaign v8-dokumentationen](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html){target="_blank"}.
+>Alla funktioner som rör kanaler och leveranser beskrivs i [Campaign v8-dokumentationen](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html?lang=sv-SE){target="_blank"}.
 
 ### Kampanjkalender {#campaign-calendar}
 

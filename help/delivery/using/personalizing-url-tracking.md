@@ -19,7 +19,7 @@ Avancerade inställningar för meddelandespårning är tillgängliga via ikonen 
 
 >[!NOTE]
 >
->Hanteringen av bilder i e-postmeddelanden är också konfigurerad i det här fönstret. Se [dokumentationen för Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/defining-the-email-content.html#adding-images){target="_blank"}.
+>Hanteringen av bilder i e-postmeddelanden är också konfigurerad i det här fönstret. Se [dokumentationen för Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/defining-the-email-content.html?lang=sv-SE#adding-images){target="_blank"}.
 
 ![](assets/s_ncs_user_email_del_tracking_ico.png)
 

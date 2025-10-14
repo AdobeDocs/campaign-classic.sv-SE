@@ -16,7 +16,7 @@ ht-degree: 0%
 
 # Skapa meddelanden för Android{#create-notificaations-android}
 
-Använd Adobe Campaign för att skicka push-meddelanden på Android-enheter. Globala koncept för leveransskapande presenteras i [dokumentationen för Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html){target="_blank"}.
+Använd Adobe Campaign för att skicka push-meddelanden på Android-enheter. Globala koncept för leveransskapande presenteras i [dokumentationen för Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html?lang=sv-SE){target="_blank"}.
 
 Börja med att skapa en ny leverans.
 
@@ -70,7 +70,7 @@ Bilden och webbsidan ska visas i push-meddelandet när de tas emot på prenumera
 
 ## Skapa ett meddelande {#creating-notification-message}
 
-![](assets/do-not-localize/how-to-video.png) [Lär dig hur du skapar ett push-meddelande från Android i en video](https://experienceleague.adobe.com/docs/campaign-classic-learn/getting-started-with-push-notifications-for-android/configuring-and-sending-push-notifications.html#additional-resources){target="_blank"}.
+![](assets/do-not-localize/how-to-video.png) [Lär dig hur du skapar ett push-meddelande från Android i en video](https://experienceleague.adobe.com/docs/campaign-classic-learn/getting-started-with-push-notifications-for-android/configuring-and-sending-push-notifications.html?lang=sv-SE#additional-resources){target="_blank"}.
 
 1. Gå till **[!UICONTROL Campaign management]** > **[!UICONTROL Deliveries]**.
 

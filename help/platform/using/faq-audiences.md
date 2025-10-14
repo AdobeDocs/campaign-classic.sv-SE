@@ -28,7 +28,7 @@ Du kan importera mottagare eller skapa dem manuellt med hjälp av klientkonsolen
 
 Upptäck enkla användningsfall för att [importera profiler](../../platform/using/import-operations-samples.md) i din databas.
 
-![](assets/do-not-localize/how-to-video.png) [Upptäck den här funktionen i en video](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/profile-management/importing-profiles.html)
+![](assets/do-not-localize/how-to-video.png) [Upptäck den här funktionen i en video](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/profile-management/importing-profiles.html?lang=sv-SE)
 
 ## Hur definierar jag målpopulationen för en marknadsföringskampanj? {#how-can-i-define-the-target-population-of-a-marketing-campaign-}
 
@@ -40,13 +40,13 @@ En lista är en statisk uppsättning mottagare som kan användas för leveranså
 
 [Klicka här för att läsa mer](../../platform/using/creating-and-managing-lists.md#creating-a-profile-list-from-a-group).
 
-![](assets/do-not-localize/how-to-video.png) Upptäck den här funktionen [i den här videon](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/profile-management/creating-a-list-of-recipients-with-a-workflow.html) och [även i den här videon](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/profile-management/creating-a-list-of-recipients.html)
+![](assets/do-not-localize/how-to-video.png) Upptäck den här funktionen [i den här videon](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/profile-management/creating-a-list-of-recipients-with-a-workflow.html?lang=sv-SE) och [även i den här videon](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/profile-management/creating-a-list-of-recipients.html?lang=sv-SE)
 
 ## Hur kan jag deduplicera en population innan jag skickar ett meddelande? {#how-can-i-deduplicate-a-population-before-sending-a-message-}
 
 Du kan använda ett arbetsflöde för att exkludera dubbletter från målet för en leverans. I och med detta undviker du att skicka samma meddelande till en mottagare flera gånger.
 
-Läs mer i [Campaign v8-dokumentationen](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/deduplication.html){target="_blank"}.
+Läs mer i [Campaign v8-dokumentationen](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/deduplication.html?lang=sv-SE){target="_blank"}.
 
 ## Hur identifierar och riktar man sig till dem som prenumererar på ett nyhetsbrev? {#how-to-identify-and-target-subscribers-to-a-newsletter-}
 
@@ -54,4 +54,4 @@ Upptäck prenumerationshantering i Campaign och lär dig hur du [skickar ett med
 
 ## Vilken är den bästa metoden att utesluta profiler från en målpopulation? {#what-is-the-best-practice-to-exclude-profiles-from-a-target-population-}
 
-Lär dig hur du exkluderar en lista med profiler från målpopulationen i [Campaign v8-dokumentationen](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/read-list.html){target="_blank"}.
+Lär dig hur du exkluderar en lista med profiler från målpopulationen i [Campaign v8-dokumentationen](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/read-list.html?lang=sv-SE){target="_blank"}.

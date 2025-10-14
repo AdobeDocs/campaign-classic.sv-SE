@@ -55,7 +55,7 @@ Med anrikningsaktiviteten kan du lägga till erbjudanden eller länkar till erbj
 
 >[!NOTE]
 >
->Mer information om anrikningsaktiviteten finns i [dokumentationen för Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/enrichment.html){target="_blank"}.
+>Mer information om anrikningsaktiviteten finns i [dokumentationen för Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/enrichment.html?lang=sv-SE){target="_blank"}.
 
 Du kan till exempel förbättra data för en mottagarfråga före en leverans.
 
@@ -68,7 +68,7 @@ Det finns två metoder för att ange erbjudandeförslag.
 
 ### Ange ett erbjudande eller ett samtal till erbjudandemotorn {#specifying-an-offer-or-a-call-to-the-offer-engine}
 
-När du har konfigurerat din fråga (se [dokumentationen för Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/query.html){target="_blank"}):
+När du har konfigurerat din fråga (se [dokumentationen för Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/query.html?lang=sv-SE){target="_blank"}):
 
 1. Lägg till och öppna en anrikningsaktivitet.
 1. Välj **[!UICONTROL Enrichment]** på fliken **[!UICONTROL Add data]**.

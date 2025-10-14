@@ -30,7 +30,7 @@ Om du vill använda det dynamiska villkoret måste du ha:
 
 ## Steg 1 - Skapa en leverans {#step-1---creating-a-delivery}
 
-Stegen för att skapa en leverans beskrivs i [Campaign v8-dokumentationen](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/email.html){target="_blank"}.
+Stegen för att skapa en leverans beskrivs i [Campaign v8-dokumentationen](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/email.html?lang=sv-SE){target="_blank"}.
 
 I det här exemplet har leveranshanteraren skapat nyhetsbrevet och valt mottagare.
 

@@ -88,7 +88,7 @@ Så här konfigurerar och skapar du referensblocket:
 
    >[!NOTE]
    >
-   >Mer information om leveransmallar finns i [dokumentationen för Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-templates.html){target="_blank"}.
+   >Mer information om leveransmallar finns i [dokumentationen för Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-templates.html?lang=sv-SE){target="_blank"}.
 
 1. Skapa det andra skriptet för att leverera prenumerationsmeddelandena.
 

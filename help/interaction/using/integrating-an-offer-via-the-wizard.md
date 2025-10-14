@@ -29,7 +29,7 @@ Om du vill presentera ett erbjudande under en marknadsföringskampanj skapar du 
 
 ![](assets/offer_delivery_009.png)
 
-Läs mer om leveranser av direkt e-post [i det här avsnittet](../../delivery/using/about-direct-mail-channel.md). Läs mer om marknadsföringskampanjer i [dokumentationen för Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/set-up-campaigns.html){target=_blank}.
+Läs mer om leveranser av direkt e-post [i det här avsnittet](../../delivery/using/about-direct-mail-channel.md). Läs mer om marknadsföringskampanjer i [dokumentationen för Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/set-up-campaigns.html?lang=sv-SE){target=_blank}.
 
 ### De viktigaste stegen för att infoga ett erbjudande i en leverans {#main-steps-for-inserting-an-offer-into-a-delivery}
 

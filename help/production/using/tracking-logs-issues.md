@@ -22,7 +22,7 @@ Det kan finnas flera orsaker till att loggar inte vidarebefordras. Vi rekommende
 
 * **Har arbetsflödet** Spårning **fel?**
 
-Se [Campaign v8-dokumentationen](https://experienceleague.adobe.com/docs/campaign/automation/workflows/monitoring-workflows/monitor-technical-workflows.html){target="_blank"}.
+Se [Campaign v8-dokumentationen](https://experienceleague.adobe.com/docs/campaign/automation/workflows/monitoring-workflows/monitor-technical-workflows.html?lang=sv-SE){target="_blank"}.
 
 ![](assets/tracking_scheduled_task.png)
 

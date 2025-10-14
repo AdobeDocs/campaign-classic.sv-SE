@@ -84,7 +84,7 @@ Vissa viktiga ändringar av tjänsten Android Firebase Cloud Messaging (FCM) kom
     <td>
       <img src="assets/do-not-localize/icon-experience.svg" width="35px">
     <br/>
-      <strong>Kundens upplevelse</strong><br/><a href="workflow/using/about-workflows.md">Automatisera med arbetsflöden</a> – <a href="https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/set-up-campaigns.html" target="_blank">Marknadsföringskampanj</a> – <a href="interaction/using/interaction-and-offer-management.md">Hantering av samverkan och erbjudanden</a> – <a href="delivery/using/about-personalization.md">Personanpassning</a> – <a href="reporting/using/about-adobe-campaign-reporting-tools.md">Rapportering</a>
+      <strong>Kundens upplevelse</strong><br/><a href="workflow/using/about-workflows.md">Automatisera med arbetsflöden</a> – <a href="https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/set-up-campaigns.html?lang=sv-SE" target="_blank">Marknadsföringskampanj</a> – <a href="interaction/using/interaction-and-offer-management.md">Hantering av samverkan och erbjudanden</a> – <a href="delivery/using/about-personalization.md">Personanpassning</a> – <a href="reporting/using/about-adobe-campaign-reporting-tools.md">Rapportering</a>
     </td>
     <td>
       <img src="assets/do-not-localize/icon-send.svg" width="35px">

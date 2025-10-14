@@ -24,9 +24,9 @@ I avsnittet nedan visas information om vanliga problem som rör körning av arbe
 Mer information om arbetsflöden finns i följande avsnitt:
 
 * [Om arbetsflöden](../../workflow/using/about-workflows.md)
-* [Startar ett arbetsflöde](https://experienceleague.adobe.com/docs/campaign/automation/workflows/executing-a-workflow/start-a-workflow.html){target="_blank"}.
-* [Arbetsflödets livscykel](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/about-workflows.html){target="_blank"}.
-* [Bästa tillvägagångssätt när du använder arbetsflöden](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/workflow-best-practices.html){target="_blank"}.
+* [Startar ett arbetsflöde](https://experienceleague.adobe.com/docs/campaign/automation/workflows/executing-a-workflow/start-a-workflow.html?lang=sv-SE){target="_blank"}.
+* [Arbetsflödets livscykel](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/about-workflows.html?lang=sv-SE){target="_blank"}.
+* [Bästa tillvägagångssätt när du använder arbetsflöden](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/workflow-best-practices.html?lang=sv-SE){target="_blank"}.
 
 ## Börja så snart som möjligt i kampanjer {#start-as-soon-as-possible-in-campaigns}
 
@@ -34,9 +34,9 @@ I vissa fall startar inte arbetsflöden som körs från en kampanj när du klick
 
 Det kan finnas flera orsaker till det här problemet, följ stegen nedan för att lösa det:
 
-1. Kontrollera den tekniska arbetsflödesstatusen för [**[!UICONTROL operationMgt]**](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/wf-type/technical-workflows.html){target="_blank"}. Det här arbetsflödet hanterar jobb eller arbetsflöden inuti en kampanj. Om det misslyckas resulterar det i arbetsflöden som inte startar/stoppas. Starta om den för att fortsätta köra kampanjarbetsflöden.
+1. Kontrollera den tekniska arbetsflödesstatusen för [**[!UICONTROL operationMgt]**](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/wf-type/technical-workflows.html?lang=sv-SE){target="_blank"}. Det här arbetsflödet hanterar jobb eller arbetsflöden inuti en kampanj. Om det misslyckas resulterar det i arbetsflöden som inte startar/stoppas. Starta om den för att fortsätta köra kampanjarbetsflöden.
 
-   Mer information om övervakning av tekniska arbetsflöden finns i [dokumentationen för Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/monitoring-workflows/monitor-technical-workflows.html){target="_blank"}.
+   Mer information om övervakning av tekniska arbetsflöden finns i [dokumentationen för Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/monitoring-workflows/monitor-technical-workflows.html?lang=sv-SE){target="_blank"}.
 
    >[!NOTE]
    >
@@ -73,13 +73,13 @@ Det kan finnas flera orsaker till det här problemet, följ stegen nedan för at
 
    Du kan lösa problemet genom att stoppa oönskade arbetsflöden och ta bort misslyckade leveranser. Om tröskelvärdet uppnås kan nya processer köras.
 
-   Om du vill kontrollera antalet arbetsflöden som körs för instansen rekommenderar vi att du använder de fördefinierade vyerna, som är tillgängliga som standard i mappen **[!UICONTROL Administration]** / **[!UICONTROL Audit]**. För ytterligare information, se [Campaign v8-dokumentation](https://experienceleague.adobe.com/docs/campaign/automation/workflows/monitoring-workflows/monitor-workflow-execution.html){target="_blank"}.
+   Om du vill kontrollera antalet arbetsflöden som körs för instansen rekommenderar vi att du använder de fördefinierade vyerna, som är tillgängliga som standard i mappen **[!UICONTROL Administration]** / **[!UICONTROL Audit]**. För ytterligare information, se [Campaign v8-dokumentation](https://experienceleague.adobe.com/docs/campaign/automation/workflows/monitoring-workflows/monitor-workflow-execution.html?lang=sv-SE){target="_blank"}.
 
    >[!IMPORTANT]
    >
    >Om du ökar tröskelvärdet för alternativet **[!UICONTROL NmsOperation_LimitConcurrency]** kan det leda till prestandaproblem i din instans. Utför inte detta på egen hand och kontakta Adobe Campaign.
 
-Mer information om hur du övervakar arbetsflöden finns i [dokumentationen för Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/monitoring-workflows/monitor-workflow-execution.html){target="_blank"}.
+Mer information om hur du övervakar arbetsflöden finns i [dokumentationen för Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/monitoring-workflows/monitor-workflow-execution.html?lang=sv-SE){target="_blank"}.
 
 ## Pågående start {#start-in-progress}
 
@@ -118,6 +118,6 @@ Gör så här om du vill kontrollera detta och starta modulen om det behövs:
 
 Om ett arbetsflöde misslyckas gör du så här:
 
-1. Kontrollera arbetsflödesjournalen. Mer information finns i [dokumentationen för Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/monitoring-workflows/monitor-workflow-execution.html){target="_blank"}.
-1. Övervaka tekniska arbetsflöden. Se [Campaign v8-dokumentationen](https://experienceleague.adobe.com/docs/campaign/automation/workflows/monitoring-workflows/monitor-technical-workflows.html){target="_blank"}.
+1. Kontrollera arbetsflödesjournalen. Mer information finns i [dokumentationen för Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/monitoring-workflows/monitor-workflow-execution.html?lang=sv-SE){target="_blank"}.
+1. Övervaka tekniska arbetsflöden. Se [Campaign v8-dokumentationen](https://experienceleague.adobe.com/docs/campaign/automation/workflows/monitoring-workflows/monitor-technical-workflows.html?lang=sv-SE){target="_blank"}.
 1. Leta efter fel i de enskilda arbetsflödesaktiviteterna.

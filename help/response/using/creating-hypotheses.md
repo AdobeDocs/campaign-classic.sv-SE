@@ -146,7 +146,7 @@ I det här exemplet vill vi skapa en hypotes kopplad till en leverans. Denna hyp
 
 Därefter förfinar vi frågan som ärvts från modellen så att vi kan göra en hypotes om en viss artikel i inköpstabellen.
 
-1. Skapa en kampanj och en leverans. Se [Campaign v8-dokumentationen](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/set-up-campaigns.html){target=_blank}.
+1. Skapa en kampanj och en leverans. Se [Campaign v8-dokumentationen](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/set-up-campaigns.html?lang=sv-SE){target=_blank}.
 
    Vi använder till exempel en direktutskick.
 
@@ -156,7 +156,7 @@ Därefter förfinar vi frågan som ärvts från modellen så att vi kan göra en
 
    >[!NOTE]
    >
-   >För ytterligare information, se [Campaign v8-dokumentation](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-target.html#add-a-control-group){target="_blank"}.
+   >För ytterligare information, se [Campaign v8-dokumentation](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-target.html?lang=sv-SE#add-a-control-group){target="_blank"}.
 
 1. Öppna **[!UICONTROL Direct mail delivery]** och klicka på ikonen **[!UICONTROL Delivery measurement]** och sedan på **[!UICONTROL Add]**.
 
@@ -178,7 +178,7 @@ Därefter förfinar vi frågan som ärvts från modellen så att vi kan göra en
 
    ![](assets/response_hypothesis_delivery_example_008.png)
 
-1. Starta målarbetsflödet och kör de kontroller som krävs tills kampanjen är klar. Se [Campaign v8-dokumentationen](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-deliveries.html#start-a-delivery){target=_blank}.
+1. Starta målarbetsflödet och kör de kontroller som krävs tills kampanjen är klar. Se [Campaign v8-dokumentationen](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-deliveries.html?lang=sv-SE#start-a-delivery){target=_blank}.
 
    ![](assets/response_hypothesis_delivery_example_009.png)
 

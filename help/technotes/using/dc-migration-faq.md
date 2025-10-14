@@ -21,7 +21,7 @@ Adobe stänger det gamla datacentret: Campaign Classic-instanser måste överfö
 
 Nedan finns en uppsättning vanliga frågor om det här projektet, effekten på Campaign-miljöer och andra användbara resurser.
 
-Om du har andra frågor kan du kontakta [Adobe kundtjänst](https://experienceleague.adobe.com/?support-solution=Campaign#support).
+Om du har andra frågor kan du kontakta [Adobe kundtjänst](https://experienceleague.adobe.com/sv?support-solution=Campaign#support).
 
 ## Infrastrukturpåverkan
 
@@ -51,7 +51,7 @@ Global påverkan på databaser och infrastruktur listas nedan.
 
 * **Vad är planen för att åtgärda eventuella problem efter migrering?**
 
-  Omfattande testning utförs innan produktionssystemen migreras. [Adobe kundtjänst](https://experienceleague.adobe.com/?support-solution=Campaign#support) är dock fortfarande den viktigaste kontaktpunkten om du får problem. Adobe har inrättat ett expertteam som vid behov kan ge avancerad support.
+  Omfattande testning utförs innan produktionssystemen migreras. [Adobe kundtjänst](https://experienceleague.adobe.com/sv?support-solution=Campaign#support) är dock fortfarande den viktigaste kontaktpunkten om du får problem. Adobe har inrättat ett expertteam som vid behov kan ge avancerad support.
 
 ## Leveranseffekter
 
@@ -97,7 +97,7 @@ Global påverkan på IP-adresser, blockeringslista, underdomäner och URL-adress
 
   Först och främst kommer Adobe Deliverability att utvärdera plattformens leveransstatus och rekommendera en plan för övergången till de nya IP-adresserna
 
-  Ingen uppvärmning krävs efter migreringen. Det kan vara ett undantag och i så fall kommer [Adobe kundtjänst](https://experienceleague.adobe.com/?support-solution=Campaign#support) att kontakta kunderna.
+  Ingen uppvärmning krävs efter migreringen. Det kan vara ett undantag och i så fall kommer [Adobe kundtjänst](https://experienceleague.adobe.com/sv?support-solution=Campaign#support) att kontakta kunderna.
 
   Planen är dock att göra den här operationen genomskinlig för företaget, till skillnad från den initiala påfarten som görs vid publicering.
 
@@ -173,7 +173,7 @@ Global påverkan på konfiguration, anslutning till andra system och produkter, 
 
   Den kan ändras beroende på var nya servrar är placerade. Kunden kan dock behålla sin aktuella tidszon.
 
-  Läs mer om hantering av tidszoner i [dokumentationen för Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/advanced-management/managing-time-zones.html){target="_blank"}.
+  Läs mer om hantering av tidszoner i [dokumentationen för Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/advanced-management/managing-time-zones.html?lang=sv-SE){target="_blank"}.
 
 
 ## Säkerhet och behörigheter

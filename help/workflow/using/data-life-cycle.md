@@ -59,7 +59,7 @@ På så sätt kan du använda data som samlats in via en lista eller baserat på
 
 Anpassningselement av typen **[!UICONTROL Target extension]** (targetData) är inte tillgängliga för arbetsflöden med målinriktning. Leveransmålet måste byggas in i arbetsflödet och anges i den inkommande övergången för leveransen.
 
-Om du vill skapa leveranskorrektur måste korrekturmålet byggas baserat på läget **[!UICONTROL Address substitution]** så att personaliseringsdata kan anges. Mer information finns i det här avsnittet i [dokumentationen för Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html#target-population){target="_blank"}.
+Om du vill skapa leveranskorrektur måste korrekturmålet byggas baserat på läget **[!UICONTROL Address substitution]** så att personaliseringsdata kan anges. Mer information finns i det här avsnittet i [dokumentationen för Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html?lang=sv-SE#target-population){target="_blank"}.
 
 I följande exempel ska vi samla in en lista med information om kunderna som ska användas i ett personaliserat e-postmeddelande.
 

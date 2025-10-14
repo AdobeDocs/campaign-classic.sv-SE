@@ -31,7 +31,7 @@ När du har klickat på knappen **[!UICONTROL Send]** verkar leveransen ta läng
 
 * Vissa e-postleverantörer kan ha lagt till dina IP-adresser i en blockeringslista. I så fall kontrollerar du dina utsändningsloggar och läser [det här avsnittet](about-deliverability.md).
 
-* Leveransen kan vara för stor för att kunna behandlas snabbt. Detta kan inträffa med hög JavaScript-personalisering eller om leveransen överstiger 60 kbit/s. Läs mer i [Bästa praxis för leverans](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/delivery-best-practices.html){target="_blank"} i Adobe Campaign v8.  om du vill veta mer om riktlinjer för innehåll.
+* Leveransen kan vara för stor för att kunna behandlas snabbt. Detta kan inträffa med hög JavaScript-personalisering eller om leveransen överstiger 60 kbit/s. Läs mer i [Bästa praxis för leverans](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/delivery-best-practices.html?lang=sv-SE){target="_blank"} i Adobe Campaign v8.  om du vill veta mer om riktlinjer för innehåll.
 
 * Begränsning kan ha inträffat i Adobe Campaign MTA. Detta orsakas av:
 
@@ -73,7 +73,7 @@ Leveransloggar är viktiga för att lära sig varför en leverans misslyckades. 
 
   För att lösa detta rekommenderar vi att du utför ett vakuum och indexerar om databasen. Mer information om databasunderhåll finns i [det här avsnittet](../../production/using/recommendations.md).
 
-  Du bör också starta om alla arbetsflöden med en schemalagd aktivitet och alla arbetsflöden med statusen misslyckades. Se [Campaign v8-dokumentationen](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/flow-control-activities/scheduler.html){target="_blank"}.
+  Du bör också starta om alla arbetsflöden med en schemalagd aktivitet och alla arbetsflöden med statusen misslyckades. Se [Campaign v8-dokumentationen](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/flow-control-activities/scheduler.html?lang=sv-SE){target="_blank"}.
 
 * När en leverans misslyckas kan följande fel visas i leveransloggarna:
 
@@ -83,7 +83,7 @@ Leveransloggar är viktiga för att lära sig varför en leverans misslyckades. 
 
   Vanligtvis innebär det här felet att det finns ett anpassningsfält eller -block i e-postmeddelandet som har fler än ett värde för mottagaren. Ett personaliseringsblock används och hämtar mer än en post för en viss mottagare.
 
-  Du löser detta genom att kontrollera vilka personaliseringsdata som används och sedan kontrollera målet för mottagare som har fler än en post för något av dessa fält. Du kan också använda en **[!UICONTROL Deduplication]**-aktivitet i målarbetsflödet före leveransaktiviteten för att kontrollera att det bara finns ett personaliseringsfält åt gången. Mer information om borttagning av dubbletter finns i [dokumentationen för Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/deduplication.html){target="_blank"}.
+  Du löser detta genom att kontrollera vilka personaliseringsdata som används och sedan kontrollera målet för mottagare som har fler än en post för något av dessa fält. Du kan också använda en **[!UICONTROL Deduplication]**-aktivitet i målarbetsflödet före leveransaktiviteten för att kontrollera att det bara finns ett personaliseringsfält åt gången. Mer information om borttagning av dubbletter finns i [dokumentationen för Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/deduplication.html?lang=sv-SE){target="_blank"}.
 
 * En del leveranser kan misslyckas med felet &quot;Onåbar&quot; som anger:
 

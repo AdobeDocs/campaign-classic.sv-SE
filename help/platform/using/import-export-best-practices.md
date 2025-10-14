@@ -60,8 +60,8 @@ Använd zippade filer för import och export när det är möjligt. GZIP stöds 
 
 **Relaterade ämnen:**
 
-* [Datainläsningsaktivitet (fil)](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/action-activities/data-loading-file.html){target="_blank"}
-* [Dataextraheringsaktivitet (fil)](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/action-activities/extraction-file.html){target="_blank"}.
+* [Datainläsningsaktivitet (fil)](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/action-activities/data-loading-file.html?lang=sv-SE){target="_blank"}
+* [Dataextraheringsaktivitet (fil)](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/action-activities/extraction-file.html?lang=sv-SE){target="_blank"}.
 
 ## Importera i Delta-läge {#importing-in-delta-mode}
 

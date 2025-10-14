@@ -123,7 +123,7 @@ Rapporter om kampanjer rör data i tabellen **nms:operation**.
 
 De inbyggda rapporterna från Adobe Campaign finns i tabellen nedan.
 
-Mer information om innehållet i dessa rapporter finns i [dokumentationen för Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/campaigns/campaigns.html){target=_blank}.
+Mer information om innehållet i dessa rapporter finns i [dokumentationen för Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/campaigns/campaigns.html?lang=sv-SE){target=_blank}.
 
 <table> 
  <tbody> 
@@ -219,7 +219,7 @@ Mer information om innehållet i dessa rapporter finns i de relaterade guiderna.
 
 De inbyggda rapporterna från Adobe Campaign finns i tabellen nedan.
 
-Mer information om innehållet i dessa rapporter finns i [dokumentationen för Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/campaigns/campaigns.html){target=_blank}.
+Mer information om innehållet i dessa rapporter finns i [dokumentationen för Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/campaigns/campaigns.html?lang=sv-SE){target=_blank}.
 
 <table> 
  <tbody> 

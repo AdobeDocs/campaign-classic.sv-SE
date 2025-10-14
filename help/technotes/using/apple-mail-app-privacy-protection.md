@@ -94,7 +94,7 @@ I det här exemplet vill en marknadsförare skicka ett belöningserbjudande till
 
   ![](assets/identify-email-open-tracking-2.png)
 
-* Du kan använda ett fördefinierat filter. Se [Campaign v8-dokumentationen](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/designing-queries/create-a-filter.html){target="_blank"}.
+* Du kan använda ett fördefinierat filter. Se [Campaign v8-dokumentationen](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/designing-queries/create-a-filter.html?lang=sv-SE){target="_blank"}.
 
   ![](assets/identify-email-open-tracking-3.png)
 

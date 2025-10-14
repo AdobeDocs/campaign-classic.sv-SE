@@ -64,7 +64,7 @@ På Kontrollpanelen kan du hantera flera inställningar för instansen: hantera 
 
 **Värmekarta för arbetsflöde**
 
-Workflow HeatMap ger en visuell representation av alla arbetsflöden som körs på din instans. Det gör att du enkelt kan övervaka inläsningen av instansen och planera arbetsflödena utifrån detta. Se [Campaign v8-dokumentationen](https://experienceleague.adobe.com/docs/campaign/automation/workflows/monitoring-workflows/heatmap.html){target="_blank"}.
+Workflow HeatMap ger en visuell representation av alla arbetsflöden som körs på din instans. Det gör att du enkelt kan övervaka inläsningen av instansen och planera arbetsflödena utifrån detta. Se [Campaign v8-dokumentationen](https://experienceleague.adobe.com/docs/campaign/automation/workflows/monitoring-workflows/heatmap.html?lang=sv-SE){target="_blank"}.
 
 **Verifieringskedja**
 
@@ -76,13 +76,13 @@ Du kan utföra specifika åtgärder när du stöter på problem med arbetsflöde
 
 **Övervakning av arbetsflödesstatus**
 
-Utöver heatmap-kartan kan du skapa ett arbetsflöde där du kan övervaka statusen för en uppsättning arbetsflöden och skicka återkommande meddelanden till arbetsledare. Se [Campaign v8-dokumentationen](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/monitoring/workflow-supervision.html){target="_blank"}.
+Utöver heatmap-kartan kan du skapa ett arbetsflöde där du kan övervaka statusen för en uppsättning arbetsflöden och skicka återkommande meddelanden till arbetsledare. Se [Campaign v8-dokumentationen](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/monitoring/workflow-supervision.html?lang=sv-SE){target="_blank"}.
 
 **Allmänna riktlinjer**
 
 Du kan förbättra prestandan genom att följa riktlinjer och bästa praxis när du använder arbetsflöden. Mer information finns i följande avsnitt:
-* [Bästa tillvägagångssätt vid användning av arbetsflöden](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/workflow-best-practices.html){target="_blank"}
-* [Övervaka körning av arbetsflöde](https://experienceleague.adobe.com/docs/campaign/automation/workflows/monitoring-workflows/monitor-workflow-execution.html){target="_blank"}
+* [Bästa tillvägagångssätt vid användning av arbetsflöden](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/workflow-best-practices.html?lang=sv-SE){target="_blank"}
+* [Övervaka körning av arbetsflöde](https://experienceleague.adobe.com/docs/campaign/automation/workflows/monitoring-workflows/monitor-workflow-execution.html?lang=sv-SE){target="_blank"}
 
 ### Övervaka leveranser {#monitoring-deliveries}
 
@@ -94,7 +94,7 @@ SMTP-rapporter visar leveransstatistik och SMTP-fel per domän. [Läs mer](../..
 
 **Bästa praxis**
 
-Läs [dokumentationen för Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/delivery-best-practices.html){target="_blank"} om du vill veta mer om de bästa sätten att skicka och designa för att förbättra prestanda.
+Läs [dokumentationen för Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/delivery-best-practices.html?lang=sv-SE){target="_blank"} om du vill veta mer om de bästa sätten att skicka och designa för att förbättra prestanda.
 
 **Felsökning vid leverans**
 Specifika åtgärder kan utföras vid problem med leveranser:

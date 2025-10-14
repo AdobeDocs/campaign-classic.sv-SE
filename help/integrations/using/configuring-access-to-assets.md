@@ -51,7 +51,7 @@ Om du vill aktivera anslutningen mellan Adobe Campaign och Adobe Experience Clou
 
 >[!CAUTION]
 >
->Den här funktionen har tagits bort från Adobe Experience Manager 6.4. [Läs mer](https://experienceleague.adobe.com/docs/experience-manager-64/release-notes/deprecated-removed-features.html#removed-features)
+>Den här funktionen har tagits bort från Adobe Experience Manager 6.4. [Läs mer](https://experienceleague.adobe.com/docs/experience-manager-64/release-notes/deprecated-removed-features.html?lang=sv-SE#removed-features)
 
 Om du vill integrera AEM Assets med Adobe Campaign måste du först konfigurera integreringen mellan Adobe Experience Manager och Adobe Campaign. Den här konfigurationen kräver i huvudsak:
 
@@ -62,7 +62,7 @@ Lär dig hur du integrerar Adobe Campaign och Adobe Experience Manager i den [de
 
 När integreringen är klar kan du konfigurera en ny leveransmall i Adobe Campaign så att den kan använda AEM Assets-biblioteket. Gör så här:
 
-1. Skapa en ny leveransmall - eller duplicera en befintlig. Se [Campaign v8-dokumentationen](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-templates.html){target="_blank"}.
+1. Skapa en ny leveransmall - eller duplicera en befintlig. Se [Campaign v8-dokumentationen](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-templates.html?lang=sv-SE){target="_blank"}.
 1. Redigera **egenskaperna** för mallen.
 1. På fliken **[!UICONTROL Advanced]** ställer du in **[!UICONTROL Content editing mode]** på **DCE**.
 1. Välj den externa **[!UICONTROL AEM account]** som du behöver använda för att komma åt ditt AEM Assets-bibliotek.

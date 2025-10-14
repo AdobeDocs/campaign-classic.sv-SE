@@ -353,7 +353,7 @@ Stegen för att konfigurera ett externt konto med den utökade generiska SMPP-an
 
 ## Ändra leveransmallen {#changing-the-delivery-template}
 
-Adobe Campaign förser dig med en mall för att leverera till mobiler. Den här mallen är tillgänglig i noden **[!UICONTROL Resources > Templates > Delivery templates]**. Se [Campaign v8-dokumentationen](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-templates.html){target="_blank"}.
+Adobe Campaign förser dig med en mall för att leverera till mobiler. Den här mallen är tillgänglig i noden **[!UICONTROL Resources > Templates > Delivery templates]**. Se [Campaign v8-dokumentationen](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-templates.html?lang=sv-SE){target="_blank"}.
 
 Om du vill leverera via SMS-kanal måste du skapa en mall där kanalkopplingen refereras.
 

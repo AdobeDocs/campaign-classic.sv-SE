@@ -88,6 +88,6 @@ När du har utformat och publicerat transaktionsmeddelandemallen utförs huvudst
 ## Relaterade ämnen {#related-topics}
 
 * [Kom igång med kommunikationskanaler](../../delivery/using/communication-channels.md)
-* [Nyckelsteg för leveransskapande](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html){target="_blank"}
+* [Nyckelsteg för leveransskapande](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html?lang=sv-SE){target="_blank"}
 * [Transaktionsmeddelandens arkitektur](../../message-center/using/transactional-messaging-architecture.md)
 * [Rapporter om transaktionsmeddelanden](../../message-center/using/about-transactional-messaging-reports.md)

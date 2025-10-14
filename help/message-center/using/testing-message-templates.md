@@ -100,7 +100,7 @@ Med hjälp av dirigerade adresser kan du även visa återgivningen av meddelande
 
 Du kan testa meddelandeleveransen genom att skicka ett korrektur till en startadress som skapats tidigare.
 
-Att skicka ett korrektur innebär samma process som för en vanlig leverans. Se [dokumentationen för Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/validate/preview-and-proof.html){target="_blank"}. Med transaktionsmeddelanden måste du dock utföra följande åtgärder i förväg:
+Att skicka ett korrektur innebär samma process som för en vanlig leverans. Se [dokumentationen för Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/validate/preview-and-proof.html?lang=sv-SE){target="_blank"}. Med transaktionsmeddelanden måste du dock utföra följande åtgärder i förväg:
 
 * Skapa en eller flera [dirigerade adresser](#managing-seed-addresses-in-transactional-messages) med [personaliseringsdata](#personalization-data).
 * [Skapa meddelandeinnehållet](../../message-center/using/creating-the-message-template.md#creating-message-content).
@@ -117,7 +117,7 @@ Skicka korrekturet:
 
    ![](assets/messagecenter_send_proof_002.png)
 
-Du kan komma åt korrektur i varje mall via fliken **[!UICONTROL Audit]**. Mer information finns i [dokumentationen för Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/validate/preview-and-proof.html){target="_blank"}.
+Du kan komma åt korrektur i varje mall via fliken **[!UICONTROL Audit]**. Mer information finns i [dokumentationen för Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/validate/preview-and-proof.html?lang=sv-SE){target="_blank"}.
 
 ![](assets/messagecenter_send_proof_003.png)
 

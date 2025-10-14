@@ -30,13 +30,13 @@ Det här alternativet förbättrar prestanda avsevärt när personaliseringssteg
 
 I flera Adobe Campaign-arbetsflödesaktiviteter kan du använda data som lagras i en extern databas.
 
-* **Filter på externa data** - Med aktiviteten Fråga kan du lägga till externa data och använda dem i definierade filterkonfigurationer. Mer information finns i [dokumentationen för Campaign v8]https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/wf-type/targeting-workflows.html){target="_blank"}.
+* **Filter på externa data** - Med aktiviteten Fråga kan du lägga till externa data och använda dem i definierade filterkonfigurationer. Mer information finns i [dokumentationen för Campaign v8]https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/wf-type/targeting-workflows.html?lang=sv-SE){target="_blank"}.
 
-* **Skapa delmängder** - Med aktiviteten Dela kan du skapa delmängder. Du kan använda externa data för att definiera de filtervillkor som ska användas. Se [Campaign v8-dokumentationen](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/split.html){target="_blank"}.
+* **Skapa delmängder** - Med aktiviteten Dela kan du skapa delmängder. Du kan använda externa data för att definiera de filtervillkor som ska användas. Se [Campaign v8-dokumentationen](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/split.html?lang=sv-SE){target="_blank"}.
 
-* **Läs in extern databas** - Du kan använda externa data i aktiviteten Datainläsning (RDBMS). Läs mer i [Campaign v8-dokumentationen](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/action-activities/data-loading-rdbms.html){target="_blank"}.
+* **Läs in extern databas** - Du kan använda externa data i aktiviteten Datainläsning (RDBMS). Läs mer i [Campaign v8-dokumentationen](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/action-activities/data-loading-rdbms.html?lang=sv-SE){target="_blank"}.
 
-* **Lägger till information och länkar** - Med hjälp av aktiviteten Berika kan du lägga till ytterligare data i arbetsflödet och länka till en extern tabell. I det här sammanhanget kan den använda data från en extern databas. Se [Campaign v8-dokumentationen](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/enrichment.html){target="_blank"}.
+* **Lägger till information och länkar** - Med hjälp av aktiviteten Berika kan du lägga till ytterligare data i arbetsflödet och länka till en extern tabell. I det här sammanhanget kan den använda data från en extern databas. Se [Campaign v8-dokumentationen](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/enrichment.html?lang=sv-SE){target="_blank"}.
 
 ## Skyddsritningar och begränsningar {#fda-limitations}
 
