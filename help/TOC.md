@@ -310,7 +310,7 @@ ht-degree: 72%
    + [Designa rapporter med kuber](reporting/using/ac-cubes.md)
 + Designa webbinnehåll {#designing-content}
    + Webbapplikationer {#web-applications}
-      + [Kom igång med webbapplikationer ](web/using/about-web-applications.md)
+      + [Kom igång med webbapplikationer &#x200B;](web/using/about-web-applications.md)
       + [Skapa en ny webbapplikation](web/using/creating-a-new-web-application.md)
       + [Designa en webbapplikation](web/using/designing-a-web-application.md)
       + [Användningsfall: skapa översikter](web/using/use-cases-creating-overviews.md)
@@ -376,7 +376,7 @@ ht-degree: 72%
    + Adobe Experience Manager {#adobe-experience-manager}
       + [Arbeta med [!DNL Adobe Experience Manager]](integrations/using/about-adobe-experience-manager.md)
       + [Konfigurera integreringen](integrations/using/configuring-the-integration.md)
-      + [Skapa ett nyhetsbrev om [!DNL Experience Manager] ](integrations/using/creating-an-experience-manager-newsletter.md)
+      + [Skapa ett nyhetsbrev om [!DNL Experience Manager] &#x200B;](integrations/using/creating-an-experience-manager-newsletter.md)
    + Adobe Target {#adobe-target}
       + [Arbeta med [!DNL Adobe Target]](integrations/using/integrating-with-adobe-target.md)
       + [Konfigurera integreringen med [!DNL Adobe Target]](integrations/using/configuring-the-integration-with-adobe-target.md)
@@ -844,6 +844,6 @@ ht-degree: 72%
       + [Uppdatering av spårade URL:er](technotes/using/tracked-urls.md)
    + Migrering till Adobe Managed Services{#dc-migration}
       + [Migrering till Public Cloud](technotes/using/dc-migration.md)
-      + [Vanliga frågor och svar ](technotes/using/dc-migration-faq.md)
+      + [Vanliga frågor och svar &#x200B;](technotes/using/dc-migration-faq.md)
    + [GCM-baserade funktioner](technotes/using/gcm-functions.md)
 + [Kontrollpanelen i Campaign](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=sv)

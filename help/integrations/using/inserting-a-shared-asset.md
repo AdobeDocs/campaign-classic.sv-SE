@@ -20,7 +20,7 @@ Assets som delas från Adobe Experience Cloud kan användas i e-postmeddelanden 
 
 1. Skapa ett nytt e-postmeddelande eller en ny landningssida.
 
-   Om du använder resurser från Adobe Experience Manager resursbibliotek ska du använda en leveransmall som skapas när [integreringen ](../../integrations/using/configuring-access-to-assets.md#integrating-with-aem-assets) konfigureras.
+   Om du använder resurser från Adobe Experience Manager resursbibliotek ska du använda en leveransmall som skapas när [integreringen &#x200B;](../../integrations/using/configuring-access-to-assets.md#integrating-with-aem-assets) konfigureras.
 
    Om du inte har den här specifika mallen kontrollerar du att **Egenskaper** för leveransen är inställd på **[!UICONTROL Content editing mode]** DCE **[!UICONTROL Advanced]** på fliken **(**) och att det externa AEM-konto som du vill använda för åtkomst till ditt AEM Assets-resursbibliotek finns.
 

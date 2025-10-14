@@ -52,7 +52,7 @@ Om du vill testa leveransen använder du korrektur innan du skickar till huvudm�
 
 Se till att du väljer rätt korrekturmottagare eftersom de validerar formuläret och meddelandets innehåll. Stegen för att definiera korrekturmottagare finns i [Campaign v8-dokumentationen](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html#select-the-proof-target){target="_blank"}.
 
-Seed-adresser används för målmottagare som inte matchar de definierade målvillkoren för att testa en leverans innan den skickas till huvudmålet. De visas [ i det här avsnittet](about-seed-addresses.md).
+Seed-adresser används för målmottagare som inte matchar de definierade målvillkoren för att testa en leverans innan den skickas till huvudmålet. De visas [&#x200B; i det här avsnittet](about-seed-addresses.md).
 
 ## Deduplicera adresser {#deduplicate-addresses}
 

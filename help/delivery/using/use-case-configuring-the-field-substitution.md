@@ -74,7 +74,7 @@ Du måste uppdatera den här datarchemaändringen för att den ska kunna visas i
 
    >[!NOTE]
    >
-   >Mer information om länken **[!UICONTROL Edit the dynamic condition...]** finns i [Använd skiftläge: välj startadresser på villkor ](use-case-selecting-seed-addresses-on-criteria.md).
+   >Mer information om länken **[!UICONTROL Edit the dynamic condition...]** finns i [Använd skiftläge: välj startadresser på villkor &#x200B;](use-case-selecting-seed-addresses-on-criteria.md).
 
 1. Klicka på fliken **[!UICONTROL Preview]** och välj sedan en startadress för att testa personaliseringen.
 

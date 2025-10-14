@@ -157,7 +157,7 @@ PostgreSQL är inte ett enkelt sätt att återskapa en tabell online eftersom VA
 
 Här är ett exempel på tabelldefragmentering som använder specifika funktioner för att generera nödvändig DDL. Med följande SQL kan du skapa två nya funktioner: **GenRebuildTablePart1** och **GenRebuildTablePart2** som kan användas för att generera den DDL som krävs för att återskapa en tabell.
 
-* Med den första funktionen kan du skapa en arbetstabell (** _tmp** här) som är en kopia av den ursprungliga tabellen.
+* Med den första funktionen kan du skapa en arbetstabell (**&#x200B; _tmp** här) som är en kopia av den ursprungliga tabellen.
 * Den andra funktionen tar sedan bort den ursprungliga tabellen och byter namn på arbetstabellen och dess index.
 * Om du använder två funktioner i stället för en innebär det att du inte riskerar att ta bort den ursprungliga tabellen om den första inte fungerar.
 

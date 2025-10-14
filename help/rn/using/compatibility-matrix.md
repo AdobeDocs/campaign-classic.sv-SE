@@ -483,7 +483,7 @@ Följande webbläsare, i den senaste versionen, är kompatibla med Campaign för
 
 >[!MORELIKETHIS]
 >
->* [Versionsinformation om Campaign Classic ](../../rn/using/latest-release.md)
+>* [Versionsinformation om Campaign Classic &#x200B;](../../rn/using/latest-release.md)
 >* [Allmän arkitektur i Campaign](../../installation/using/general-architecture.md)
 >* [Rekommendationer på maskinvarustorlek](../../technotes/using/hardware-sizing.md)
 >* [Inaktuella funktioner och system](../../rn/using/deprecated-features.md)

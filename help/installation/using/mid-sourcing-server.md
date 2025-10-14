@@ -21,7 +21,7 @@ ht-degree: 0%
 
 I det här avsnittet beskrivs installation och konfiguration av en server med mellanlagring samt distributionen av en instans som gör det möjligt för tredje part att skicka meddelanden i läget **med mellanlagring**.
 
-Arkitekturen för&quot;mellanleverantörer&quot; presenteras i [Distributionen ](../../installation/using/mid-sourcing-deployment.md) med mellanleverantörer.
+Arkitekturen för&quot;mellanleverantörer&quot; presenteras i [Distributionen &#x200B;](../../installation/using/mid-sourcing-deployment.md) med mellanleverantörer.
 
 När du installerar en server med mellanlagring utförs samma process som när du installerar en server på det vanliga sättet (se standardkonfigurationen). Det är en oberoende instans med en egen databas som kan användas för att köra leveranser. Kort och gott: den innehåller en extra konfiguration som tillåter att fjärrinstanser kör leveranser via den i läget mitt i källkoden.
 
@@ -125,7 +125,7 @@ Det är möjligt att dela en instans med mellanleverantörer genom att skicka in
 
    ![](assets/mid_recette_user_restrictions.png)
 
-1. Starta om webbmodulen med följande kommando: ** web**.
+1. Starta om webbmodulen med följande kommando: **&#x200B; web**.
 
 Du måste ändra serverinställningen för mellanlagring i filen serverConf.xml. Följande rad måste läggas till i avsnittet &quot;Hantering av tillhörigheter med IP-adresser&quot;, under den befintliga raden:
 
@@ -139,9 +139,9 @@ Attributet &#39;@name&#39; måste följa följande regler:
 
 &#39;marketing_account_operator_name&#39; relaterar till det interna namnet på mittkällkontot som deklarerats i mittkällinstansen.
 
-&#39;affinity_name&#39; relaterar till det godtyckliga namn som ges till tillhörigheten. Namnet måste vara unikt. Godkända tecken är `[a-z]``[A-Z]``[0-9]`. Syftet är att deklarera en grupp offentliga IP-adresser.
+&#39;affinity_name&#39; relaterar till det godtyckliga namn som ges till tillhörigheten. Namnet måste vara unikt. Godkända tecken är `[a-z]` `[A-Z]` `[0-9]`. Syftet är att deklarera en grupp offentliga IP-adresser.
 
-&#39;affinity_group&#39; relaterar den subaffinitet som deklarerats i målmappningen som används i var och en av leveranserna. Den sista delen som innehåller &quot;.&quot; ignoreras om det inte finns någon undertillhörighet. Godkända tecken är `[a-z]``[A-Z]``[0-9]`.
+&#39;affinity_group&#39; relaterar den subaffinitet som deklarerats i målmappningen som används i var och en av leveranserna. Den sista delen som innehåller &quot;.&quot; ignoreras om det inte finns någon undertillhörighet. Godkända tecken är `[a-z]` `[A-Z]` `[0-9]`.
 
 Du måste stoppa och sedan starta om servern för att ändringen ska kunna beaktas.
 
