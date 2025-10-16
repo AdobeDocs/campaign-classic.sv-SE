@@ -17,7 +17,7 @@ ht-degree: 0%
 
 Med Adobe Campaign kan ni skräddarsy era leveranser för att skicka meddelanden som matchar mottagarnas profiler och intressen.
 
-Personalization hjälper er att göra budskapen mer relevanta och engagerande. Du kan använda mottagardata för att anpassa innehåll, lägga till dynamiska fält eller visa annan information baserat på villkor. Läs om hur du konfigurerar och använder personaliseringsfunktioner i dina leveranser i [Adobe Campaign v8-dokumentationen](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/personalize/personalize.html){target=_blank}.
+Personalization hjälper er att göra budskapen mer relevanta och engagerande. Du kan använda mottagardata för att anpassa innehåll, lägga till dynamiska fält eller visa annan information baserat på villkor. Läs om hur du konfigurerar och använder personaliseringsfunktioner i dina leveranser i [Adobe Campaign v8-dokumentationen](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/personalize/personalize.html?lang=sv-SE){target=_blank}.
 
 Som en del av övergången från Campaign v7 till v8 har Campaign Classic dokumentation effektiviserats och omorganiserats. Gemensamma funktioner är nu exklusivt tillgängliga i Campaign v8-dokumentationen.
 
@@ -25,20 +25,20 @@ Som en del av övergången från Campaign v7 till v8 har Campaign Classic dokume
 
 >[!TAB Dokumentation för innehållspersonalisering]
 
-Mer information om innehållspersonalisering finns i [dokumentationen för Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/personalize/personalize.html){target=_blank}.
+Mer information om innehållspersonalisering finns i [dokumentationen för Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/personalize/personalize.html?lang=sv-SE){target=_blank}.
 
 
-[![bild](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/personalize/personalize.html){target=_blank}
+[![bild](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/personalize/personalize.html?lang=sv-SE){target=_blank}
 
 
 >[!TAB Personalization och villkorligt innehåll]
 
 Lär dig de viktigaste stegen som rör villkorat innehåll och anpassning **i Campaign v8-dokumentationen**:
 
-* [Personalization-data](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/personalize/personalization-data.html){target="_blank"}: Lär dig hur du använder olika datakällor för personalisering för att anpassa dina leveranser.
-* [Anpassningsfält](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/personalize/personalization-fields.html){target="_blank"}: Lär dig hur du infogar och använder anpassningsfält så att alla mottagare ser sina egna data i meddelandets ämne eller innehåll.
-* [Personaliseringsblock](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/personalize/personalization-blocks.html){target="_blank"}: Lär dig hur du använder personaliseringsblock för att infoga dynamiskt, villkorligt innehåll i dina meddelanden baserat på mottagardata.
-* [Villkorligt innehåll](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/personalize/conditions.html){target="_blank"}: Lär dig hur du infogar villkorligt innehåll baserat på mottagarfältvärden.
+* [Personalization-data](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/personalize/personalization-data.html?lang=sv-SE){target="_blank"}: Lär dig hur du använder olika datakällor för personalisering för att anpassa dina leveranser.
+* [Anpassningsfält](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/personalize/personalization-fields.html?lang=sv-SE){target="_blank"}: Lär dig hur du infogar och använder anpassningsfält så att alla mottagare ser sina egna data i meddelandets ämne eller innehåll.
+* [Personaliseringsblock](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/personalize/personalization-blocks.html?lang=sv-SE){target="_blank"}: Lär dig hur du använder personaliseringsblock för att infoga dynamiskt, villkorligt innehåll i dina meddelanden baserat på mottagardata.
+* [Villkorligt innehåll](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/personalize/conditions.html?lang=sv-SE){target="_blank"}: Lär dig hur du infogar villkorligt innehåll baserat på mottagarfältvärden.
 
 >[!TAB Kuponger, PDF-dokument och uttryckssymboler]
 
@@ -61,7 +61,7 @@ Before starting sending emails:
 
 * Make sure recipient profiles contain at least an email address.
 * Learn more about the Adobe Campaign [Delivery best practices](delivery-best-practices.md).
-* Read out these sections to learn more about Deliverability: [Deliverability management in Campaign](about-deliverability.md) and [Deliverability best practices guide](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html).
+* Read out these sections to learn more about Deliverability: [Deliverability management in Campaign](about-deliverability.md) and [Deliverability best practices guide](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html?lang=sv-SE).
 
 The key steps to send an email are as follows:
 
