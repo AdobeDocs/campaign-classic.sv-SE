@@ -119,7 +119,7 @@ Det allmänna sättet att lägga till en captcha i DCE är att skapa ett persona
 
 1. Använd innehållstypen **[!UICONTROL Web application]** och kontrollera **[!UICONTROL Visible in the customization menus]**.
 
-   För ytterligare information, se [Campaign v8-dokumentation](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/personalize/personalization-blocks.html){target="_blank"}.
+   För ytterligare information, se [Campaign v8-dokumentation](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/personalize/personalization-blocks.html?lang=sv-SE){target="_blank"}.
 
    Här är ett exempel på en **kampanjbeskrivning**:
 

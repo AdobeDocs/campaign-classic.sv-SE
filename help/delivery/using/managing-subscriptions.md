@@ -146,7 +146,7 @@ e-postleveranser måste innehålla en länk för att avsluta prenumerationen enl
 
 Standardlänken för avprenumeration infogas via den sista knappen i verktygsfältet i innehållsredigeraren som finns i leveransassistenten (se [Om anpassning](about-personalization.md)). När mottagaren klickar på den här länken läggs profilen till i blockeringslista (avanmälan), vilket innebär att mottagaren inte längre kommer att omfattas av någon leveransåtgärd.
 
-Mottagarna kan dock välja att avbryta prenumerationen på en tjänst utan att avbryta prenumerationen på alla tjänster. Om du vill tillåta detta kan du använda ett webbformulär (se [det här avsnittet](../../web/using/adding-fields-to-a-web-form.md#subscription-checkboxes)) eller infoga en anpassad avprenumerationslänk. Se [dokumentationen för Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/personalize/personalization-blocks.html){target="_blank"}.
+Mottagarna kan dock välja att avbryta prenumerationen på en tjänst utan att avbryta prenumerationen på alla tjänster. Om du vill tillåta detta kan du använda ett webbformulär (se [det här avsnittet](../../web/using/adding-fields-to-a-web-form.md#subscription-checkboxes)) eller infoga en anpassad avprenumerationslänk. Se [dokumentationen för Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/personalize/personalization-blocks.html?lang=sv-SE){target="_blank"}.
 
 Du kan också avbeställa en mottagares prenumeration manuellt från mottagarprofilen. Det gör du genom att klicka på fliken **[!UICONTROL Subscriptions]** för den berörda mottagaren, markera den eller de berörda informationstjänsterna och klicka på **[!UICONTROL Delete]**.
 

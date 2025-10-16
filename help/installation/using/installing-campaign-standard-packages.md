@@ -66,12 +66,12 @@ I följande tabell visas alla inbyggda Campaign-paket.
   </tr> 
   <tr> 
    <td> Marknadsföringskampanjer (kampanj)<br /> </td> 
-   <td> Definierar, optimerar, kör och analyserar kommunikation och marknadsföringskampanjer. <a href="https://experienceleague.adobe.com/docs/campaign/campaign-v8/campaigns/campaigns.html" target="_blank">Läs mer</a><br /> </td> 
+   <td> Definierar, optimerar, kör och analyserar kommunikation och marknadsföringskampanjer. <a href="https://experienceleague.adobe.com/docs/campaign/campaign-v8/campaigns/campaigns.html?lang=sv-SE" target="_blank">Läs mer</a><br /> </td> 
    <td> Marknadsföring</td>
   </tr> 
   <tr> 
    <td> Marknadsföringsresurser (MRM)<br /> </td> 
-   <td> Kontrollerar marknadsföringsåtgärder i ett samverkansbaserat läge genom att tillhandahålla hantering och spårning av uppgifter, budget och marknadsföringsresurser. <a href="https://experienceleague.adobe.com/docs/campaign/automation/mrm/about-marketing-resource-management.html" target="_blank">Läs mer</a> <br /> </td> 
+   <td> Kontrollerar marknadsföringsåtgärder i ett samverkansbaserat läge genom att tillhandahålla hantering och spårning av uppgifter, budget och marknadsföringsresurser. <a href="https://experienceleague.adobe.com/docs/campaign/automation/mrm/about-marketing-resource-management.html?lang=sv-SE" target="_blank">Läs mer</a> <br /> </td> 
    <td> Marknadsföring</td> 
   </tr> 
   <tr> 
@@ -157,12 +157,12 @@ I följande tabell visas alla inbyggda Campaign-paket.
   </tr> 
   <tr> 
    <td> Åtkomst till externa data (federerad dataåtkomst)<br /> </td> 
-   <td> Tillhandahåller alternativet FDA (Federated Data Access) för att bearbeta information som lagras i en eller flera externa databaser så att du kan komma åt externa data utan att ändra datastrukturen i Adobe Campaign.  Valfritt. <a href="https://experienceleague.adobe.com/docs/campaign/automation/workflows/advanced-management/accessing-an-external-database-fda.html" target="_blank">Läs mer</a> <br /> </td> 
+   <td> Tillhandahåller alternativet FDA (Federated Data Access) för att bearbeta information som lagras i en eller flera externa databaser så att du kan komma åt externa data utan att ändra datastrukturen i Adobe Campaign.  Valfritt. <a href="https://experienceleague.adobe.com/docs/campaign/automation/workflows/advanced-management/accessing-an-external-database-fda.html?lang=sv-SE" target="_blank">Läs mer</a> <br /> </td> 
    <td> Alla<br /> </td> 
   </tr> 
   <tr> 
    <td> Kampanjoptimering <br /> </td> 
-   <td> Kontrollerar, filtrerar och övervakar sändningen av leveranser så att de skickade meddelandena bäst uppfyller kundernas behov och förväntningar, i enlighet med företagets kommunikationspolicy. Valfritt. <a href="https://experienceleague.adobe.com/docs/campaign/automation/campaign-optimization/campaign-typologies.html" target="_blank">Läs mer</a> <br /> </td> 
+   <td> Kontrollerar, filtrerar och övervakar sändningen av leveranser så att de skickade meddelandena bäst uppfyller kundernas behov och förväntningar, i enlighet med företagets kommunikationspolicy. Valfritt. <a href="https://experienceleague.adobe.com/docs/campaign/automation/campaign-optimization/campaign-typologies.html?lang=sv-SE" target="_blank">Läs mer</a> <br /> </td> 
    <td> Marknadsföring<br /> </td> 
   </tr> 
   <tr> 
@@ -182,7 +182,7 @@ I följande tabell visas alla inbyggda Campaign-paket.
   </tr> 
   <tr> 
    <td> Central/lokal marknadsföring (distribuerad marknadsföring)<br /> </td> 
-   <td> Implementerar samverkanskampanjer mellan centrala enheter (huvudkontor, marknadsföringsavdelningar osv.) och lokala enheter (försäljningsställen, regionala myndigheter osv.). Valfritt. <a href="https://experienceleague.adobe.com/docs/campaign/automation/distributed-marketing/about-distributed-marketing.html" target="_blank">Läs mer</a><br /> </td> 
+   <td> Implementerar samverkanskampanjer mellan centrala enheter (huvudkontor, marknadsföringsavdelningar osv.) och lokala enheter (försäljningsställen, regionala myndigheter osv.). Valfritt. <a href="https://experienceleague.adobe.com/docs/campaign/automation/distributed-marketing/about-distributed-marketing.html?lang=sv-SE" target="_blank">Läs mer</a><br /> </td> 
    <td> Marknadsföring </td> 
   </tr> 
   <tr> 
@@ -227,7 +227,7 @@ I följande tabell visas alla inbyggda Campaign-paket.
   </tr> 
   <tr> 
    <td> Stöd för AMP<br /> </td> 
-   <td> Gör att du kan använda den nya interaktiva AMP för e-postformat och skicka dynamiska e-postmeddelanden. Valfritt. <a href="https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/defining-interactive-content.html" target="_blank">Läs mer</a> <br /> </td> 
+   <td> Gör att du kan använda den nya interaktiva AMP för e-postformat och skicka dynamiska e-postmeddelanden. Valfritt. <a href="https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/defining-interactive-content.html?lang=sv-SE" target="_blank">Läs mer</a> <br /> </td> 
    <td> Alla </td> 
   </tr> 
   <tr> 

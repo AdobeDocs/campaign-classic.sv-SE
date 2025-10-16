@@ -22,13 +22,13 @@ Om en slutanvändare väljer bort beteendespårning via cookies eller webbfyrar,
 
 >[!NOTE]
 >
->När du använder skript ska du alltid följa riktlinjerna som beskrivs i [checklistan för säkerhet och sekretess](https://helpx.adobe.com/campaign/kb/acc-security.html#dev).
+>När du använder skript ska du alltid följa riktlinjerna som beskrivs i [checklistan för säkerhet och sekretess](https://helpx.adobe.com/se/campaign/kb/acc-security.html#dev).
 
 ## Konfigurera banderollen {#configuring-the-banner-}
 
 Banderollen måste konfigureras för att kunna visas i webbprogram eller på landningssidor.
 
-Adobe Campaign levereras med en exempelbanderoll som du måste anpassa efter dina behov. Den här banderollversionen visas som ett anpassningsblock i mappen för innehållsmodellen. läs [Campaign v8-dokumentationen](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/personalize/personalization-blocks.html){target="_blank"}.
+Adobe Campaign levereras med en exempelbanderoll som du måste anpassa efter dina behov. Den här banderollversionen visas som ett anpassningsblock i mappen för innehållsmodellen. läs [Campaign v8-dokumentationen](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/personalize/personalization-blocks.html?lang=sv-SE){target="_blank"}.
 
 >[!IMPORTANT]
 >

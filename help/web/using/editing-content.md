@@ -259,4 +259,4 @@ Med alternativet **Personalization-block** kan du infoga dynamiska och personlig
 
 När personaliseringsblocknamnet har infogats visas det i redigeraren, markerat med gult. Den anpassas automatiskt till mottagarprofilen när personalisering genereras.
 
-Mer information om inbyggda anpassningsblock och hur du definierar anpassade anpassningsblock finns i [dokumentationen för Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/personalize/personalization-blocks.html){target="_blank"}.
+Mer information om inbyggda anpassningsblock och hur du definierar anpassade anpassningsblock finns i [dokumentationen för Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/personalize/personalization-blocks.html?lang=sv-SE){target="_blank"}.

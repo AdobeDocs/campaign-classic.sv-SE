@@ -22,7 +22,7 @@ Med Digital Content Editor kan du infoga och formatera sidelement och mappa data
 
 >[!NOTE]
 >
->Om du behöver lägga till JavaScript-kod på serversidan ska du använda personaliseringsblock. Se [Campaign v8-dokumentationen](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/personalize/personalization-blocks.html){target="_blank"}.
+>Om du behöver lägga till JavaScript-kod på serversidan ska du använda personaliseringsblock. Se [Campaign v8-dokumentationen](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/personalize/personalization-blocks.html?lang=sv-SE){target="_blank"}.
 
 >[!CAUTION]
 >
@@ -52,7 +52,7 @@ Om du vill skapa en **e-postleverans** måste du:
 1. Skapa en leverans från en DCE-mall - [Läs mer](use-case-creating-an-email-delivery.md)
 1. Välj ett befintligt innehåll eller skapa innehåll från en [standardmall](template-management.md)
 1. Redigera och konfigurera onlinematerial
-1. Skicka leveransen - Läs mer i [dokumentationen för Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html){target="_blank"}
+1. Skicka leveransen - Läs mer i [dokumentationen för Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html?lang=sv-SE){target="_blank"}
 
 >[!NOTE]
 >
