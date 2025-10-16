@@ -6,9 +6,9 @@ title: Användarhandbok för Campaign Classic v7
 user-guide-description: Produktdokumentation för Adobe Campaign Classic v7.
 sub-product: adobe campaign classic
 type: Documentation
-source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
+source-git-commit: 0507e0372a81351adc145dafdd3cbe5d5422dc00
 workflow-type: tm+mt
-source-wordcount: '2739'
+source-wordcount: '2744'
 ht-degree: 72%
 
 ---
@@ -164,11 +164,11 @@ ht-degree: 72%
       + [Skapa en leverans från en mall - DOLD](delivery/using/creating-a-delivery-from-a-template.md)
    + Personanpassa leveranser {#personalizing-deliveries}
       + [Om personalisering](delivery/using/about-personalization.md)
-      + [Fält för personalisering](delivery/using/personalization-fields.md)
-      + [Block för personalisering](delivery/using/personalization-blocks.md)
-      + [Villkorligt innehåll](delivery/using/conditional-content.md)
-      + [Personaliserade kuponger](delivery/using/personalized-coupons.md)
-      + [Skapa personaliserade PDF-dokument](delivery/using/generating-personalized-pdf-documents.md)
+      + [Personaliseringsfält - DOLD](delivery/using/personalization-fields.md)
+      + [Personaliseringsblock - DOLD](delivery/using/personalization-blocks.md)
+      + [Villkorligt innehåll - DOLD](delivery/using/conditional-content.md)
+      + [Personaliserade kuponger - DOLDA](delivery/using/personalized-coupons.md)
+      + [Generera skräddarsydda PDF-dokument - DOLD](delivery/using/generating-personalized-pdf-documents.md)
       + [Anpassa listan över uttryckssymboler](delivery/using/customizing-emoticon-list.md)
    + Använd dirigerade adresser {#using-seed-addresses}
       + [Om dirigerade adresser](delivery/using/about-seed-addresses.md)
@@ -310,7 +310,7 @@ ht-degree: 72%
    + [Designa rapporter med kuber](reporting/using/ac-cubes.md)
 + Designa webbinnehåll {#designing-content}
    + Webbapplikationer {#web-applications}
-      + [Kom igång med webbapplikationer &#x200B;](web/using/about-web-applications.md)
+      + [Kom igång med webbapplikationer ](web/using/about-web-applications.md)
       + [Skapa en ny webbapplikation](web/using/creating-a-new-web-application.md)
       + [Designa en webbapplikation](web/using/designing-a-web-application.md)
       + [Användningsfall: skapa översikter](web/using/use-cases-creating-overviews.md)
@@ -376,7 +376,7 @@ ht-degree: 72%
    + Adobe Experience Manager {#adobe-experience-manager}
       + [Arbeta med [!DNL Adobe Experience Manager]](integrations/using/about-adobe-experience-manager.md)
       + [Konfigurera integreringen](integrations/using/configuring-the-integration.md)
-      + [Skapa ett nyhetsbrev om [!DNL Experience Manager] &#x200B;](integrations/using/creating-an-experience-manager-newsletter.md)
+      + [Skapa ett nyhetsbrev om [!DNL Experience Manager] ](integrations/using/creating-an-experience-manager-newsletter.md)
    + Adobe Target {#adobe-target}
       + [Arbeta med [!DNL Adobe Target]](integrations/using/integrating-with-adobe-target.md)
       + [Konfigurera integreringen med [!DNL Adobe Target]](integrations/using/configuring-the-integration-with-adobe-target.md)
@@ -844,6 +844,6 @@ ht-degree: 72%
       + [Uppdatering av spårade URL:er](technotes/using/tracked-urls.md)
    + Migrering till Adobe Managed Services{#dc-migration}
       + [Migrering till Public Cloud](technotes/using/dc-migration.md)
-      + [Vanliga frågor och svar &#x200B;](technotes/using/dc-migration-faq.md)
+      + [Vanliga frågor och svar ](technotes/using/dc-migration-faq.md)
    + [GCM-baserade funktioner](technotes/using/gcm-functions.md)
 + [Kontrollpanelen i Campaign](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=sv)

@@ -5,10 +5,12 @@ description: Lär dig skapa och infoga skräddarsydda kuponger
 badge-v8: label="Gäller även för v8" type="Positive" tooltip="Gäller även Campaign v8"
 feature: Personalization
 role: User
+hide: true
+hidefromtoc: true
 exl-id: 182939bb-7aff-4667-bda9-c5d48be3b946
-source-git-commit: 8e5a328bee7701adfedec6a533cc21b4ce548187
+source-git-commit: 0507e0372a81351adc145dafdd3cbe5d5422dc00
 workflow-type: tm+mt
-source-wordcount: '911'
+source-wordcount: '910'
 ht-degree: 1%
 
 ---
@@ -19,7 +21,7 @@ Genom att lägga till kuponger i leveranserna kan mottagarna få bättre värde 
 
 >[!AVAILABILITY]
 >
->Kuponghantering är inte tillgängligt i Campaign v8 i samband med en företagsdistribution (FFDA). Läs mer i [Kampanjdokumentation v8](https://experienceleague.adobe.com/sv/docs/campaign/campaign-v8/config/architecture/ffda/enterprise-deployment){target="_blank"}.
+>Kuponghantering är inte tillgängligt i Campaign v8 i samband med en företagsdistribution (FFDA). Läs mer i [Kampanjdokumentation v8](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/config/architecture/ffda/enterprise-deployment){target="_blank"}.
 
 Kuponghantering bygger på ett paket som måste installeras. Kontrollera **[!UICONTROL Administration > Configuration > Package management > Installed packages.]** för att bekräfta att du har kuponghantering
 
@@ -48,7 +50,7 @@ Innan du följer stegen nedan bör du kontrollera vilken typ av kupong du vill s
 
    **[!UICONTROL Anonymous coupons]** : En anonym kupong är identisk för alla mottagare. Bekräfta att Anonym är valt på menyn **Kupongtyp** och klicka på **Spara** för att generera kupongen.
 
-   **[!UICONTROL Individual coupons]** : En enskild kupong kan anpassas ytterligare med ytterligare kupongkoder. Till exempel skapas en individuell kupong för försäljning i en sportutrustningsbutik. Listan över mottagare är dock lång och de delar inte samma entusiasm för en enda sport. Du kan lägga till kodnamn för den enskilda kupongen baserat på en sport (t.ex. fotboll, fotboll, baseboll osv.) och skicka varje kod till rätt mottagare.
+   **[!UICONTROL Individual coupons]** : En enskild kupong kan anpassas ytterligare med ytterligare kupongkoder. Till exempel skapas en individuell kupong för försäljning i en sportutrustningsbutik. Listan över mottagare är dock lång och de delar inte samma entusiasm för en enda sport. Du kan lägga till kodnamn för den enskilda kupongen baserat på en sport (t.ex. fotboll, fotboll, baseboll osv.) och skicka varje kod till tillämpliga mottagare.
 
    1. När du väljer Individual visas en ny flik, Kuponger, längst ned till vänster. Gå till fliken **[!UICONTROL Coupons]** och klicka på **[!UICONTROL Add]**.
    1. Ange en unik kod för den enskilda kupongen när du uppmanas till det i popup-fönstret.
@@ -150,7 +152,7 @@ Så här bekräftar du att leveransen lyckades:
 
 >[!NOTE]
 >
->Som standard använder kuponghanteringsmodulen en **nms:mottagare** -tabell. [Läs mer](../../configuration/using/about-data-model.md#default-recipient-table).
+>Som standard använder kuponghanteringsmodulen en **nms:recipient**-tabell. [Läs mer](../../configuration/using/about-data-model.md#default-recipient-table).
 >
 >Lär dig hur du använder en anpassad mottagartabell [på den här sidan](../../configuration/using/about-custom-recipient-table.md).
 
@@ -160,7 +162,7 @@ Leveransanalysen avbryts om det finns färre kuponger än meddelanden. I så fal
 
 1. Gå till e-postleveransfönstret.
 1. Klicka på **[!UICONTROL To]**.
-1. Gå till fliken **[!UICONTROL Exclusions]** i **[!UICONTROL Select target]**.
+1. Gå till fliken **[!UICONTROL Select target]** i **[!UICONTROL Exclusions]**.
 
    ![](assets/deliv_coup_18.png)
 

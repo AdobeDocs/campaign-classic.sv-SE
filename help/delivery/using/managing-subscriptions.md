@@ -6,9 +6,9 @@ badge-v8: label="Gäller även för v8" type="Positive" tooltip="Gäller även C
 feature: Subscriptions
 role: User
 exl-id: 16dddd4a-2e1a-4c78-8168-f656657bb9b8
-source-git-commit: 4d8c4ba846148d3df00a76ecc29375b9047c2b20
+source-git-commit: 0507e0372a81351adc145dafdd3cbe5d5422dc00
 workflow-type: tm+mt
-source-wordcount: '1103'
+source-wordcount: '1106'
 ht-degree: 2%
 
 ---
@@ -146,7 +146,7 @@ e-postleveranser måste innehålla en länk för att avsluta prenumerationen enl
 
 Standardlänken för avprenumeration infogas via den sista knappen i verktygsfältet i innehållsredigeraren som finns i leveransassistenten (se [Om anpassning](about-personalization.md)). När mottagaren klickar på den här länken läggs profilen till i blockeringslista (avanmälan), vilket innebär att mottagaren inte längre kommer att omfattas av någon leveransåtgärd.
 
-Mottagarna kan dock välja att avbryta prenumerationen på en tjänst utan att avbryta prenumerationen på alla tjänster. Om du vill tillåta detta kan du använda ett webbformulär (se [det här avsnittet](../../web/using/adding-fields-to-a-web-form.md#subscription-checkboxes)) eller infoga en anpassad avprenumerationslänk (se [Personaliseringsblock](personalization-blocks.md)).
+Mottagarna kan dock välja att avbryta prenumerationen på en tjänst utan att avbryta prenumerationen på alla tjänster. Om du vill tillåta detta kan du använda ett webbformulär (se [det här avsnittet](../../web/using/adding-fields-to-a-web-form.md#subscription-checkboxes)) eller infoga en anpassad avprenumerationslänk. Se [dokumentationen för Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/personalize/personalization-blocks.html){target="_blank"}.
 
 Du kan också avbeställa en mottagares prenumeration manuellt från mottagarprofilen. Det gör du genom att klicka på fliken **[!UICONTROL Subscriptions]** för den berörda mottagaren, markera den eller de berörda informationstjänsterna och klicka på **[!UICONTROL Delete]**.
 

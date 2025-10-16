@@ -5,7 +5,7 @@ description: Välj att inte delta i spårning i webbapplikation
 badge-v8: label="Gäller även för v8" type="Positive" tooltip="Gäller även Campaign v8"
 feature: Web Apps
 exl-id: 4bff6b55-3335-433e-a2ff-5d8c83e8f0d3
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: 0507e0372a81351adc145dafdd3cbe5d5422dc00
 workflow-type: tm+mt
 source-wordcount: '676'
 ht-degree: 2%
@@ -22,13 +22,13 @@ Om en slutanvändare väljer bort beteendespårning via cookies eller webbfyrar,
 
 >[!NOTE]
 >
->När du använder skript ska du alltid följa riktlinjerna som beskrivs i [checklistan för säkerhet och sekretess](https://helpx.adobe.com/se/campaign/kb/acc-security.html#dev).
+>När du använder skript ska du alltid följa riktlinjerna som beskrivs i [checklistan för säkerhet och sekretess](https://helpx.adobe.com/campaign/kb/acc-security.html#dev).
 
 ## Konfigurera banderollen {#configuring-the-banner-}
 
 Banderollen måste konfigureras för att kunna visas i webbprogram eller på landningssidor.
 
-Adobe Campaign levereras med en exempelbanderoll som du måste anpassa efter dina behov. Den här banderollversionen visas som ett anpassningsblock i mappen för innehållsmodellen. Se [den här sidan](../../delivery/using/personalization-blocks.md).
+Adobe Campaign levereras med en exempelbanderoll som du måste anpassa efter dina behov. Den här banderollversionen visas som ett anpassningsblock i mappen för innehållsmodellen. läs [Campaign v8-dokumentationen](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/personalize/personalization-blocks.html){target="_blank"}.
 
 >[!IMPORTANT]
 >
@@ -92,9 +92,9 @@ Om du måste skriva en JSSP är API:er på serversidan tillgängliga:
 
 * **NL.ServerWebTracking.generateOptOutBanner(escapeJs)**: Skapar koden för den avanmälningsbanderoll som ska infogas på JSSP-sidan
 
-  **escapeJs {Boolean}**: true när den genererade koden måste escape-konverteras för att kunna användas i JavaScript.
+  **escapeJs{Boolean}**: true när den genererade koden måste escape-konverteras för att användas i JavaScript.
 
-  Den returnerar HTML till den avanmälningsbanderollkod som måste skrivas ut på sidan.
+  Den returnerar HTML för avanmälningsbanderollkoden som måste skrivas ut på sidan.
 
 * **NL.ServerWebTracking._displayOptOutBanner()**
 
@@ -108,7 +108,7 @@ Om du måste skriva en JSSP är API:er på serversidan tillgängliga:
 
   Återger markeringen för avanmälningsbanderollen genom att infoga den på JSSP-sidan. Den anropas som i Jssp mellan &lt;% %>
 
-  **escapeJs {Boolean}**: true när den genererade koden måste escape-konverteras för att kunna användas i JavaScript
+  **escapeJs{Boolean}**: true när den genererade koden måste escape-konverteras för att användas i JavaScript
 
 JSSP-exempel:
 

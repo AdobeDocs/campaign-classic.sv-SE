@@ -5,9 +5,9 @@ description: Redigera innehåll
 badge-v8: label="Gäller även för v8" type="Positive" tooltip="Gäller även Campaign v8"
 feature: Web Apps, Web Forms, Landing Pages, Email Design
 exl-id: 968430d6-b1dd-47f8-8b31-39aaa18bc05c
-source-git-commit: 9df46ed923831ffdfb28acddfbc371cecafb251c
+source-git-commit: 0507e0372a81351adc145dafdd3cbe5d5422dc00
 workflow-type: tm+mt
-source-wordcount: '1226'
+source-wordcount: '1229'
 ht-degree: 0%
 
 ---
@@ -259,4 +259,4 @@ Med alternativet **Personalization-block** kan du infoga dynamiska och personlig
 
 När personaliseringsblocknamnet har infogats visas det i redigeraren, markerat med gult. Den anpassas automatiskt till mottagarprofilen när personalisering genereras.
 
-Mer information om inbyggda anpassningsblock och hur du definierar anpassade anpassningsblock finns på [den här sidan](../../delivery/using/personalization-blocks.md).
+Mer information om inbyggda anpassningsblock och hur du definierar anpassade anpassningsblock finns i [dokumentationen för Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/personalize/personalization-blocks.html){target="_blank"}.

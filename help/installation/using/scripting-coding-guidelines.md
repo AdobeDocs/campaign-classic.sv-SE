@@ -7,10 +7,10 @@ audience: installation
 content-type: reference
 topic-tags: prerequisites-and-recommendations-
 exl-id: 1f96c3df-0ef2-4f5f-9c36-988cbcc0769f
-source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
+source-git-commit: 0507e0372a81351adc145dafdd3cbe5d5422dc00
 workflow-type: tm+mt
-source-wordcount: '740'
-ht-degree: 3%
+source-wordcount: '743'
+ht-degree: 4%
 
 ---
 
@@ -85,7 +85,7 @@ Förutom den mappbaserade säkerhetsmodellen kan du använda namngivna rättighe
   </sysFilter>
   ```
 
-* Du kan också skydda vissa åtgärder (SOAP metod) som definieras i scheman. Ange bara åtkomstattributet med motsvarande namngiven rättighet som värde.
+* Du kan även skydda vissa åtgärder (SOAP-metod) som definieras i scheman. Ange bara åtkomstattributet med motsvarande namngiven rättighet som värde.
 
   ```
   <method name="grantVIPAccess" access="myNewRole">
@@ -119,7 +119,7 @@ Det allmänna sättet att lägga till en captcha i DCE är att skapa ett persona
 
 1. Använd innehållstypen **[!UICONTROL Web application]** och kontrollera **[!UICONTROL Visible in the customization menus]**.
 
-   För mer information om detta hittar du i [det här avsnittet](../../delivery/using/personalization-blocks.md).
+   För ytterligare information, se [Campaign v8-dokumentation](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/personalize/personalization-blocks.html){target="_blank"}.
 
    Här är ett exempel på en **kampanjbeskrivning**:
 
@@ -156,7 +156,7 @@ Det allmänna sättet att lägga till en captcha i DCE är att skapa ett persona
 
    ![](assets/scripting-captcha.png)
 
-1. Lägg till **[!UICONTROL Script]** och **[!UICONTROL Test]** mellan den sista sidan och aktiviteten **[!UICONTROL Storage]**.
+1. Lägg till **[!UICONTROL Storage]** och **[!UICONTROL Script]** mellan den sista sidan och aktiviteten **[!UICONTROL Test]**.
 
    Koppla grenen **[!UICONTROL True]** till **[!UICONTROL Storage]** och den andra till sidan som ska ha captcha.
 

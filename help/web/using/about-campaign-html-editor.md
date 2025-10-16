@@ -5,9 +5,9 @@ description: Kom igång med Campaign DCE
 feature: Web Apps, Web Forms, Landing Pages, Email Design
 badge-v8: label="Gäller även för v8" type="Positive" tooltip="Gäller även Campaign v8"
 exl-id: f5d65e89-6b18-482b-97d8-11ab94f6775e
-source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
+source-git-commit: 0507e0372a81351adc145dafdd3cbe5d5422dc00
 workflow-type: tm+mt
-source-wordcount: '271'
+source-wordcount: '276'
 ht-degree: 0%
 
 ---
@@ -22,7 +22,7 @@ Med Digital Content Editor kan du infoga och formatera sidelement och mappa data
 
 >[!NOTE]
 >
->Om du behöver lägga till JavaScript-kod på serversidan ska du använda personaliseringsblock. [Läs mer](../../delivery/using/personalization-blocks.md).
+>Om du behöver lägga till JavaScript-kod på serversidan ska du använda personaliseringsblock. Se [Campaign v8-dokumentationen](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/personalize/personalization-blocks.html){target="_blank"}.
 
 >[!CAUTION]
 >
@@ -52,7 +52,7 @@ Om du vill skapa en **e-postleverans** måste du:
 1. Skapa en leverans från en DCE-mall - [Läs mer](use-case-creating-an-email-delivery.md)
 1. Välj ett befintligt innehåll eller skapa innehåll från en [standardmall](template-management.md)
 1. Redigera och konfigurera onlinematerial
-1. Skicka leveransen - Läs mer i [dokumentationen för Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html?lang=sv-SE){target="_blank"}
+1. Skicka leveransen - Läs mer i [dokumentationen för Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html){target="_blank"}
 
 >[!NOTE]
 >
