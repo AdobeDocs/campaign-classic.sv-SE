@@ -7,10 +7,10 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: 48926e87-03d9-4aa0-89cb-e3fb4f99c1f5
-source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
+source-git-commit: 435314fa5907c16166cf7ff6741ff7ad0412d04b
 workflow-type: tm+mt
-source-wordcount: '360'
-ht-degree: 66%
+source-wordcount: '362'
+ht-degree: 60%
 
 ---
 
@@ -24,19 +24,19 @@ Upptäck viktiga steg för att utforma meddelanden över flera kanaler med Adobe
 
 Innan du börjar utforma e-postmeddelanden bör du lära dig de koncept och bästa praxis som rör utformning av leveranser och att skicka med Adobe Campaign.
 
-Läs mer i [Campaign v8-dokumentationen](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/delivery-best-practices.html?lang=sv-SE){target="_blank"}.
+Läs mer i [Campaign v8-dokumentationen](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/delivery-best-practices.html){target="_blank"}.
 
 ## Vad är en leveransmall? {#what-is-a-delivery-template-}
 
 Leveranskonfiguration och -parametrar kan sparas i en leveransmall för att användas flera gånger.
 
-Läs mer i [Campaign v8-dokumentationen](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-templates.html?lang=sv-SE){target="_blank"}.
+Läs mer i [Campaign v8-dokumentationen](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-templates.html){target="_blank"}.
 
 ## Kan jag enkelt importera en befintlig HTML för att skapa ett e-postmeddelande i Campaign? {#can-i-easily-import-an-existing-html-to-create-an-email-in-campaign-}
 
 Lär dig hur du importerar en befintlig HTML-kod för att skapa och skicka ett e-postmeddelande i Adobe Campaign med ett enda klick.
 
-Läs mer i [Campaign v8-dokumentationen](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/defining-the-email-content.html?lang=sv-SE#message-content){target="_blank"}.
+Läs mer i [Campaign v8-dokumentationen](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/defining-the-email-content.html#message-content){target="_blank"}.
 
 ## Hur skapar man e-postinnehåll med Campaign DCE? {#how-to-use-campaign-dce-to-create-an-email-content-}
 
@@ -50,16 +50,16 @@ Läs mer i [Campaign v8-dokumentationen](https://experienceleague.adobe.com/docs
 
 Meddelanden som skickas av Adobe Campaign kan personaliseras på flera olika sätt både när det gäller innehåll och utseende. Dessa sätt kan kombineras enligt kriterier som har tagits specifikt från mottagarprofilerna. I allmänhet kan du med Adobe Campaign:
 
-* Anpassa meddelandeformatet. Läs mer i [Campaign v8-dokumentationen](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/defining-the-email-content.html?lang=sv-SE#message-content){target="_blank"}.
-* Infoga dynamiska personaliseringsfält. [Klicka här för att läsa mer](../../delivery/using/personalization-fields.md).
-* Lägga till fördefinierade personaliseringsblock eller skapa ett eget block. [Klicka här för att läsa mer](../../delivery/using/personalization-blocks.md).
-* Skapa villkorsstyrt innehåll. [Klicka här för mer information](../../delivery/using/conditional-content.md) och läs [det här avsnittet](../../delivery/using/conditional-content.md).
+* Anpassa meddelandeformatet. Läs mer i [Campaign v8-dokumentationen](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/defining-the-email-content.html#message-content){target="_blank"}.
+* Infoga dynamiska personaliseringsfält. Läs mer i [Campaign v8-dokumentationen](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/personalize/personalization-fields.html){target="_blank"}.
+* Lägga till fördefinierade personaliseringsblock eller skapa ett eget block. Se [Campaign v8-dokumentationen](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/personalize/personalization-blocks.html){target="_blank"}.
+* Skapa villkorsstyrt innehåll. Se [dokumentationen för Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/personalize/conditional-content.html){target="_blank"}.
 
 ## Kan jag skicka flerspråkiga meddelanden? {#can-i-send-multilingual-messages-}
 
 Du kan skicka flerspråkiga meddelanden till mottagare beroende på till exempel deras preferenser eller land.
 
-För att göra detta kan du lokalisera meddelandeinnehållet och anpassa det efter mottagarens profil med olika [villkor](../../delivery/using/conditional-content.md). Du kan också använda arbetsflöden för att välja vilken version av meddelandet som ska skickas, beroende på vilket testspråk du föredrar. Se [Campaign v8-dokumentationen](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/split.html?lang=sv-SE){target="_blank"}.
+För att göra detta kan du lokalisera meddelandeinnehållet och anpassa det efter mottagarens profil med olika [villkor](../../delivery/using/conditional-content.md). Du kan också använda arbetsflöden för att välja vilken version av meddelandet som ska skickas, beroende på vilket testspråk du föredrar. Se [Campaign v8-dokumentationen](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/split.html){target="_blank"}.
 
 ## Hur kan jag lokalisera ett webbformulär? {#how-can-i-localize-a-webform-}
 
