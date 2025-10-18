@@ -172,7 +172,7 @@ I följande tabell visas alla inbyggda Campaign-paket.
   </tr> 
   <tr> 
    <td> Kuponghantering<br /> </td> 
-   <td> Skapar en uppsättning kuponger att lägga till i kommande marknadsföringserbjudanden. Valfritt. <a href="https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/personalize/personalized-coupons.html" target="_blank">Läs mer</a> <br /> </td> 
+   <td> Skapar en uppsättning kuponger att lägga till i kommande marknadsföringserbjudanden. Valfritt. <a href="https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/personalize/personalized-coupons.html?lang=sv-SE" target="_blank">Läs mer</a> <br /> </td> 
    <td> Marknadsföring<br /> </td> 
   </tr> 
   <tr> 

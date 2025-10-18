@@ -45,8 +45,8 @@ Lär dig de viktigaste stegen som rör villkorat innehåll och anpassning **i Ca
 Läs de här sidorna om du vill veta mer om anpassade kuponger, PDF-dokument och emotionell anpassning **i dokumentationen för Campaign v8**:
 
 * [Personaliserade kuponger](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/personalize/ppersonalized-coupons.html){target="_blank"}: Lär dig hur du skapar och tilldelar personliga eller anonyma kuponger i e-postleveranser.
-* [Generera anpassade PDF-dokument](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/personalize/generating-personalized-pdf-documents.html){target="_blank"}: Lär dig hur du skapar PDF-bilagor med anpassat innehåll för varje mottagare.
-* [Anpassa uttryckslistan](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/personalize/customizing-emoticon-list.html){target="_blank"}: Lär dig hur du lägger till och hanterar uttryckssymboler för att förbättra e-postmeddelanden.
+* [Generera anpassade PDF-dokument](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/personalize/generating-personalized-pdf-documents.html?lang=sv-SE){target="_blank"}: Lär dig hur du skapar PDF-bilagor med anpassat innehåll för varje mottagare.
+* [Anpassa uttryckslistan](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/personalize/customizing-emoticon-list.html?lang=sv-SE){target="_blank"}: Lär dig hur du lägger till och hanterar uttryckssymboler för att förbättra e-postmeddelanden.
 
 >[!ENDTABS]
 
