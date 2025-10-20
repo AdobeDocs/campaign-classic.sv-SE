@@ -8,8 +8,8 @@ sub-product: adobe campaign classic
 type: Documentation
 source-git-commit: 0507e0372a81351adc145dafdd3cbe5d5422dc00
 workflow-type: tm+mt
-source-wordcount: '2744'
-ht-degree: 72%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -23,19 +23,19 @@ ht-degree: 72%
    + Tidigare versioner {#previous-releases}
       + [2024](rn/using/release-2024.md)
       + [2023](rn/using/release-2023.md)
-      + [2022 - DOLD](rn/using/release-2022.md)
-      + [2021 - DOLD](rn/using/release-2021.md)
+      + [2022 – DOLD](rn/using/release-2022.md)
+      + [2021 – DOLD](rn/using/release-2021.md)
       + [[!DNL Gold Standard - HIDDEN]](rn/using/gold-standard.md)
    + [Inaktuella funktioner](rn/using/deprecated-features.md)
    + [Kompatibilitetsmatris](rn/using/compatibility-matrix.md)
-   + [Dokumentationsuppdateringar - DOLD](rn/using/documentation-updates.md)
+   + [Dokumentationsuppdateringar – DOLD](rn/using/documentation-updates.md)
 + Kom igång {#getting-started}
    + [Kom igång med Adobe Campaign Classic](platform/using/about-adobe-campaign-classic.md)
    + [Starta Adobe Campaign](platform/using/launching-adobe-campaign.md)
-   + [Identifiera kampanjgränssnitt](platform/using/adobe-campaign-workspace.md)
-   + [Använd Campaign Explorer - DOLD](platform/using/adobe-campaign-explorer.md)
-   + [Bläddra och anpassa listor - DOLD](platform/using/adobe-campaign-ui-lists.md)
-   + [Uppräkningar - DOLD](platform/using/managing-enumerations.md)
+   + [Utforska Campaign-gränssnitt](platform/using/adobe-campaign-workspace.md)
+   + [Använd Campaign Explorer – DOLD](platform/using/adobe-campaign-explorer.md)
+   + [Bläddra bland och anpassa listor – DOLD](platform/using/adobe-campaign-ui-lists.md)
+   + [Uppräkningar – DOLD](platform/using/managing-enumerations.md)
    + [Kampanjkopplingar](platform/using/about-connectors.md)
    + [Skapa frågor i Campaign](platform/using/about-queries-in-campaign.md)
    + Vanliga frågor och svar {#faq}
@@ -61,11 +61,11 @@ ht-degree: 72%
       + [Avanmälan för försäljning av personuppgifter](platform/using/privacy-requests-ccpa.md)
    + Profilhantering {#profile-management}
       + [Om profiler](platform/using/about-profiles.md)
-      + [Redigera en profil - DOLD](platform/using/editing-a-profile.md)
-      + [Lägg till profiler - DOLD](platform/using/adding-profiles.md)
-      + [Hantera profiler - DOLD](platform/using/managing-profiles.md)
+      + [Redigera en profil – DOLD](platform/using/editing-a-profile.md)
+      + [Lägg till profiler – DOLD](platform/using/adding-profiles.md)
+      + [Hantera profiler – DOLD](platform/using/managing-profiles.md)
       + [Uppdatera data](platform/using/updating-data.md)
-      + [Import- och exportprofiler - DOLD](platform/using/exporting-and-importing-profiles.md)
+      + [Importera och exportera profiler – DOLD](platform/using/exporting-and-importing-profiles.md)
       + [Skapa och hantera listor](platform/using/creating-and-managing-lists.md)
    + Importera och exportera data {#importing-and-exporting-data}
       + [Kom igång med dataimport och export](platform/using/get-started-data-import-export.md)
@@ -85,24 +85,24 @@ ht-degree: 72%
          + [Bästa praxis för import och export](platform/using/import-export-best-practices.md)
          + [Bästa praxis och felsökning för SFTP-servrar](platform/using/sftp-server-usage.md)
    + Filtrera data {#filtering-data}
-      + [Filtreringsalternativ - DOLD](platform/using/filtering-options.md)
-      + [Skapa filter - DOLD](platform/using/creating-filters.md)
-      + [Användningsfall - dolt](platform/using/use-case.md)
-   + [Steg för att skapa en fråga - DOLD](platform/using/steps-to-create-a-query.md)
-   + [Definiera filtervillkor - DOLD](platform/using/defining-filter-conditions.md)
+      + [Filtreringsalternativ – DOLD](platform/using/filtering-options.md)
+      + [Skapa filter – DOLD](platform/using/creating-filters.md)
+      + [Användningsfall – dold](platform/using/use-case.md)
+   + [Steg för att skapa en fråga – DOLD](platform/using/steps-to-create-a-query.md)
+   + [Definiera filtervillkor – DOLD](platform/using/defining-filter-conditions.md)
    + Behörigheter {#permissions}
       + [Kom igång med behörigheter](platform/using/access-management.md)
       + Inbyggd autentisering (äldre) {#native}
          + [Skapa och hantera operatörer](platform/using/access-management-operators.md)
          + [Skapa och hantera grupper](platform/using/access-management-groups.md)
       + [Använd namngivna rättigheter för att ställa in behörigheter](platform/using/access-management-named-rights.md)
-      + [Hantera åtkomst till mappar - DOLD](platform/using/access-management-folders.md)
+      + [Hantera åtkomst till mappar – DOLD](platform/using/access-management-folders.md)
    + CRM-kopplingar {#connectors}
       + [Kom igång med CRM-kopplingar](platform/using/crm-connectors.md)
       + [Anslut till Microsoft Dynamics 365](platform/using/crm-ms-dynamics.md)
       + [Anslut till Salesforce.com](platform/using/crm-sfdc.md)
       + [Synkronisera data med din CRM](platform/using/crm-data-sync.md)
-   + [Hjälp- och supportalternativ - DOLD](support.md)
+   + [Hjälp- och supportalternativ – DOLD](support.md)
 + Skapa och skicka meddelanden {#sending-messages}
    + [Kom igång med meddelanden](delivery/using/communication-channels.md)
    + [Leveransinställningar - DOLD](delivery/using/delivery-settings.md)
@@ -152,7 +152,7 @@ ht-degree: 72%
          + [Skapa ett push-meddelande för iOS - DOLD](delivery/using/create-notifications-ios.md)
          + [Skapa ett push-meddelande för Android - DOLD](delivery/using/create-notifications-android.md)
       + [Felsökning - DOLD](delivery/using/troubleshooting.md)
-   + [Skicka direktreklam](delivery/using/about-direct-mail-channel.md)
+   + [Skicka direktmeddelanden](delivery/using/about-direct-mail-channel.md)
    + Skicka direktreklam {#sending-direct-mail}
       + [Skapa direktreklam - DOLD](delivery/using/creating-a-direct-mail-delivery.md)
       + [Definiera innehållet i direktreklam - DOLD](delivery/using/defining-the-direct-mail-content.md)
@@ -310,7 +310,7 @@ ht-degree: 72%
    + [Designa rapporter med kuber](reporting/using/ac-cubes.md)
 + Designa webbinnehåll {#designing-content}
    + Webbapplikationer {#web-applications}
-      + [Kom igång med webbapplikationer &#x200B;](web/using/about-web-applications.md)
+      + [Kom igång med webbapplikationer ](web/using/about-web-applications.md)
       + [Skapa en ny webbapplikation](web/using/creating-a-new-web-application.md)
       + [Designa en webbapplikation](web/using/designing-a-web-application.md)
       + [Användningsfall: skapa översikter](web/using/use-cases-creating-overviews.md)
@@ -376,17 +376,17 @@ ht-degree: 72%
    + Adobe Experience Manager {#adobe-experience-manager}
       + [Arbeta med [!DNL Adobe Experience Manager]](integrations/using/about-adobe-experience-manager.md)
       + [Konfigurera integreringen](integrations/using/configuring-the-integration.md)
-      + [Skapa ett nyhetsbrev om [!DNL Experience Manager] &#x200B;](integrations/using/creating-an-experience-manager-newsletter.md)
+      + [Skapa ett nyhetsbrev om [!DNL Experience Manager] ](integrations/using/creating-an-experience-manager-newsletter.md)
    + Adobe Target {#adobe-target}
       + [Arbeta med [!DNL Adobe Target]](integrations/using/integrating-with-adobe-target.md)
       + [Konfigurera integreringen med [!DNL Adobe Target]](integrations/using/configuring-the-integration-with-adobe-target.md)
       + [Infoga en dynamisk bild](integrations/using/inserting-a-dynamic-image.md)
    + ACS-anslutning {#acs-connector}
-      + [Kom igång med  [!DNL ACS Connector]  - DOLD](integrations/using/acs-connector-principles-and-data-cycle.md)
-      + [Synkronisera profiler - DOLD](integrations/using/synchronizing-profiles.md)
-      + [Synkronisera målgrupper - DOLD](integrations/using/synchronizing-audiences.md)
-      + [Synkronisera webbprogram - DOLD](integrations/using/synchronizing-web-applications.md)
-      + [Felsök  [!DNL ACS Connector] - DOLD](integrations/using/troubleshooting-the-acs-connector.md)
+      + [Kom igång med  [!DNL ACS Connector]  – DOLD](integrations/using/acs-connector-principles-and-data-cycle.md)
+      + [Synkronisera profiler – DOLD](integrations/using/synchronizing-profiles.md)
+      + [Synkronisera målgrupper – DOLD](integrations/using/synchronizing-audiences.md)
+      + [Synkronisera webbapplikationer – DOLD](integrations/using/synchronizing-web-applications.md)
+      + [Felsök  [!DNL ACS Connector]  – DOLD](integrations/using/troubleshooting-the-acs-connector.md)
 + [Automatisera med arbetsflöden](workflow/using/about-workflows.md)
 + Automatisera med arbetsflöden {#automating-with-workflows}
    + Kom igång med arbetsflöden {#introduction}
@@ -844,6 +844,6 @@ ht-degree: 72%
       + [Uppdatering av spårade URL:er](technotes/using/tracked-urls.md)
    + Migrering till Adobe Managed Services{#dc-migration}
       + [Migrering till Public Cloud](technotes/using/dc-migration.md)
-      + [Vanliga frågor och svar &#x200B;](technotes/using/dc-migration-faq.md)
+      + [Vanliga frågor och svar ](technotes/using/dc-migration-faq.md)
    + [GCM-baserade funktioner](technotes/using/gcm-functions.md)
 + [Kontrollpanelen i Campaign](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=sv)
