@@ -419,7 +419,7 @@ Instruktionsvideor finns nu tillgängliga för följande ämnen:
 
 * [Så personaliserar du e-postmeddelanden med personaliseringsfält](../../delivery/using/personalization-fields.md)
 
-* [Hantera startvärde och korrektur i ett e-postmeddelande](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html#target-population){target="_blank"}.
+* [Hantera startvärde och korrektur i ett e-postmeddelande](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html?lang=sv-SE#target-population){target="_blank"}.
 
 * [Så ställer du in en återkommande leverans](../../workflow/using/recurring-delivery.md)
 
