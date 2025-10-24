@@ -7,9 +7,9 @@ audience: message-center
 content-type: reference
 topic-tags: instance-configuration
 exl-id: 4d25d740-db57-4d18-8cae-2dd49c4a786e
-source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
+source-git-commit: bba3f23637dd67a1557203c5ed1b93a6cb044870
 workflow-type: tm+mt
-source-wordcount: '798'
+source-wordcount: '850'
 ht-degree: 4%
 
 ---
@@ -102,6 +102,12 @@ Om du ändrar arbetsflödesschemat för arkivering måste du också ändra schem
 
 I det här avsnittet beskrivs en lösning för att konfigurera spårning och spegla sidadresser per varumärke för transaktionsmeddelanden i Adobe Campaign.
 
+### Kompatibilitetsmeddelande {#compatibility-note}
+
+Den här gamla varumärkningskonfigurationen är inte kompatibel med den nya [centraliserade ](https://experienceleague.adobe.com/docs/campaign-web/v8/conf/branding/branding-gs.html){target="_blank"}-modellen som introducerades i Campaign v8.
+
+Om din befintliga miljö använder denna äldre konfiguration kan den inte migreras direkt till den nya centraliserade varumärkesmodellen. Det krävs en fullständig omimplementering av varumärkesinställningarna för att det nya systemet ska kunna användas.
+
 ### Förhandskrav {#prerequisites}
 
 * Alla värdar måste läggas till i konfigurationsfilen för instansen (`config-<instance>.xml`).
@@ -169,6 +175,6 @@ Gör så här:
 
 1. Skapa ett externt konto per varumärke med samma interna namn som definierats i [körningsinstansen](#execution-instance) (steg 1).
 
-1. Skapa en leveransmall per varumärke. Se [Campaign v8-dokumentationen](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-templates.html?lang=sv-SE){target="_blank"}.
+1. Skapa en leveransmall per varumärke. Se [Campaign v8-dokumentationen](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-templates.html){target="_blank"}.
 
 1. I leveransmallens **[!UICONTROL Properties]** anger du routningen till varumärkesets externa konto.
