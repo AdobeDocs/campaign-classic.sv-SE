@@ -7,9 +7,9 @@ role: User
 level: Beginner
 exl-id: b8c1f287-06f4-4c34-8cca-b0c7676abbc2
 source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '857'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -472,7 +472,7 @@ Campaign-SDK:et är [inaktuellt](deprecated-features.md) från och med Campaign 
 
 ## Webbläsare {#Browsers}
 
-Följande webbläsare, i den senaste versionen, är kompatibla med Campaign för webbåtkomst. Mer information finns i [dokumentationen för Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-create.html?lang=sv-SE#use-the-web-interface-){target=_blank}.
+Följande webbläsare, i den senaste versionen, är kompatibla med Campaign för webbåtkomst. Mer information om detta hittar du i [dokumentationen för Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-create.html?lang=svl#use-the-web-interface-){target=_blank}.
 
 * Google Chrome
 * Microsoft Edge
@@ -483,7 +483,7 @@ Följande webbläsare, i den senaste versionen, är kompatibla med Campaign för
 
 >[!MORELIKETHIS]
 >
->* [Versionsinformation om Campaign Classic &#x200B;](../../rn/using/latest-release.md)
+>* [Versionsinformation om Campaign Classic ](../../rn/using/latest-release.md)
 >* [Allmän arkitektur i Campaign](../../installation/using/general-architecture.md)
 >* [Rekommendationer på maskinvarustorlek](../../technotes/using/hardware-sizing.md)
 >* [Inaktuella funktioner och system](../../rn/using/deprecated-features.md)
