@@ -335,7 +335,7 @@ Användargränssnittet visar inte en länk utan ett fält. När användarna väl
 
 ## Relaterade ämnen
 
-* Läs mer om hur du **arbetar med uppräkningar** i [Adobe Campaign v8-dokumentationen (konsolen)](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/config/settings/enumerations){target=_blank}.
+* Läs mer om hur du **arbetar med uppräkningar** i [Adobe Campaign v8-dokumentationen (konsolen)](https://experienceleague.adobe.com/sv/docs/campaign/campaign-v8/config/settings/enumerations){target=_blank}.
 
 * [Kom igång med kampanjscheman](../../configuration/using/about-schema-edition.md)
 

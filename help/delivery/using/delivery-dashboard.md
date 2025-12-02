@@ -35,7 +35,7 @@ Här är den information du kan övervaka med hjälp av flera flikar som är til
 
 * [Förstå leveransfel](understanding-delivery-failures.md)
 * [Förstå karantänshantering](understanding-quarantine-management.md)
-* [God praxis för leverans](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/delivery-best-practices.html){target="_blank"}
+* [God praxis för leverans](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/delivery-best-practices.html?lang=sv-SE){target="_blank"}
 * [Hantera leveranser](about-deliverability.md)
 
 ## Leveranssammanfattning {#delivery-summary}
@@ -64,7 +64,7 @@ För en leverans kan du till exempel bara visa mottagare med en misslyckad lever
 
 Med länken **[!UICONTROL Display the mirror page for this message...]** kan du visa spegelsidan för innehållet i leveransen som valts i listan i ett nytt fönster.
 
-Spegelsidan är bara tillgänglig för leveranser för vilka HTML-innehåll har definierats. Mer information om detta hittar du i [dokumentationen för Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/mirror-page.html){target="_blank"}.
+Spegelsidan är bara tillgänglig för leveranser för vilka HTML-innehåll har definierats. Mer information om detta hittar du i [dokumentationen för Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/mirror-page.html?lang=sv-SE){target="_blank"}.
 
 ![](assets/s_ncs_user_wizard_miror_page_link.png)
 
@@ -98,7 +98,7 @@ Fliken **[!UICONTROL Audit]** innehåller leveransloggen och alla meddelanden so
 
 Med knappen **[!UICONTROL Refresh]** kan du uppdatera data. Använd knappen **[!UICONTROL Filters]** för att definiera ett filter för data.
 
-Med särskilda ikoner kan du identifiera fel och varningar. Se det här avsnittet i [dokumentationen för Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/validate/delivery-analysis.html){target="_blank"}.
+Med särskilda ikoner kan du identifiera fel och varningar. Se det här avsnittet i [dokumentationen för Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/validate/delivery-analysis.html?lang=sv-SE){target="_blank"}.
 
 På underfliken **[!UICONTROL Proofs]** kan du visa en lista över de korrektur som har skickats.
 

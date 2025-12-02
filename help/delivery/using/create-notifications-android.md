@@ -70,7 +70,7 @@ Bilden och webbsidan ska visas i push-meddelandet när de tas emot på prenumera
 
 ## Skapa ett meddelande {#creating-notification-message}
 
-![](assets/do-not-localize/how-to-video.png) [Lär dig hur du skapar ett push-meddelande från Android i en video](https://experienceleague.adobe.com/docs/campaign-classic-learn/getting-started-with-push-notifications-for-android/configuring-and-sending-push-notifications.html#additional-resources){target="_blank"}.
+![](assets/do-not-localize/how-to-video.png) [Lär dig hur du skapar ett push-meddelande från Android i en video](https://experienceleague.adobe.com/docs/campaign-classic-learn/getting-started-with-push-notifications-for-android/configuring-and-sending-push-notifications.html?lang=sv-SE#additional-resources){target="_blank"}.
 
 1. Gå till **[!UICONTROL Campaign management]** > **[!UICONTROL Deliveries]**.
 
