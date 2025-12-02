@@ -4,7 +4,7 @@ title: Funktionsmatris för Campaign On-lokalt, Hybrid och Hosted
 description: Lär dig de viktigaste skillnaderna mellan värdbaserade och lokala distributioner
 feature: Installation, Architecture
 exl-id: a2c425a8-9bde-4259-9140-5ada5397ed5f
-source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
+source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
 workflow-type: tm+mt
 source-wordcount: '287'
 ht-degree: 17%
@@ -17,9 +17,9 @@ ht-degree: 17%
 
 Med Adobe Campaign Classic medföljer en uppsättning moduler och alternativ. Vilka moduler som är tillgängliga och hur de används beror på vilken typ av installation du har. I den här artikeln finns mer information om de viktigaste skillnaderna när det gäller vissa funktioner mellan fullständigt värdbaserade (Managed Services) och anläggningsdistributioner.
 
-På den här sidan visas de viktigaste skillnaderna mellan värdbaserade (Managed Services) och lokala distributioner. Specifikationer för hybriddriftsättningar beror på vilka element som ligger hos Adobe och hos er.
+På den här sidan visas de viktigaste skillnaderna mellan värdbaserade (Managed Services) och lokala distributioner. Specifikationer för hybriddriftsättningar beror på vilka element Adobe har och ligger hos er.
 
-De olika värdmodellerna introduceras [&#x200B; i det här avsnittet](../../installation/using/hosting-models.md).
+De olika värdmodellerna introduceras [ i det här avsnittet](../../installation/using/hosting-models.md).
 
 ## Tillgänglighet per distributionsmodell {#capability-matrix}
 
@@ -52,6 +52,6 @@ Adobe Campaign tillhandahåller alternativet **FDA (Federated Data Access**) fö
 
 * [Kompatibilitetsmatris](../../rn/using/compatibility-matrix.md)
 * [Versionsinformation](../../rn/using/latest-release.md)
-* [Campaign Classic](../../rn/using/rn-overview.md)
+* [Campaign Classic uppgraderingar](../../rn/using/rn-overview.md)
 * [Inaktuella och borttagna funktioner](../../rn/using/deprecated-features.md)
-* [[!DNL Gold Standard]-versioner &#x200B;](../../rn/using/gold-standard.md)
+* [[!DNL Gold Standard]-versioner ](../../rn/using/gold-standard.md)

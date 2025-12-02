@@ -7,9 +7,9 @@ audience: platform
 content-type: reference
 topic-tags: connectors
 exl-id: 3d43010e-53f8-4aa2-a651-c422a02191fe
-source-git-commit: f032ed3bdc0b402c8281bc34e6cb29f3c575aaf9
+source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
 workflow-type: tm+mt
-source-wordcount: '923'
+source-wordcount: '922'
 ht-degree: 0%
 
 ---
@@ -30,7 +30,7 @@ För det första, så att användaren kan utföra åtgärder på en extern datab
 
      >[!NOTE]
      >
-     >Delen **:base** är valfri i Oraclet.
+     >Delen **:base** är valfri i Oracle.
 
 1. Spara den namngivna rättigheten och länka den sedan till den valda användaren från noden **[!UICONTROL Administration > Access Management > Operators]** i Adobe Campaign Utforskaren.
 
@@ -52,7 +52,7 @@ Databasadministratören måste se till att dessa rättigheter matchar de rättig
 
 |   | Snowflake | Skift | Oracle | SQLServer | PostgreSQL | MySQL |
 |:-:|:-:|:-:|:-:|:-:|:-:|:-:|
-| **Ansluter till fjärrdatabas** | ANVÄNDNING I LAGERHUS, ANVÄNDNING I DATABAS OCH ANVÄNDNING I SCHEMABEHÖRIGHETER | Skapa en användare som är länkad till AWS-kontot | SKAPA SESSIONSprivilegium | CONNECT behörighet | CONNECT privilegium | Skapa en användare som är bunden till en fjärrvärddator som har ALLA BEHÖRIGHETER |
+| **Ansluter till fjärrdatabas** | ANVÄNDNING I LAGERHUS, ANVÄNDNING I DATABAS OCH ANVÄNDNING I SCHEMABEHÖRIGHETER | Skapa en användare som är länkad till AWS-kontot | SKAPA SESSIONSprivilegium | CONNECT-behörighet | CONNECT-privilegium | Skapa en användare som är bunden till en fjärrvärddator som har ALLA BEHÖRIGHETER |
 | **Skapar tabeller** | Behörighet SKAPA TABELL PÅ SCHEMA | SKAPA privilegium | Privilegium SKAPA TABELL | SKAPA TABELLBEHÖRIGHET | SKAPA privilegium | SKAPA privilegium |
 | **Skapar index** | N/A | SKAPA privilegium | INDEX- eller CREATE EVENTUELL INDEX-BEHÖRIGHET | ALTERNATIVbehörighet | SKAPA privilegium | INDEX-privilegium |
 | **Skapar funktioner** | SKAPA FUNKTION PÅ SCHEMABEHÖRIGHET | ANVÄNDNING PÅ SPRÅKPLAN-plypthonu-privilegium för att kunna anropa externa python-skript | SKAPA PROCEDUR ELLER SKAPA VALFRITT BEHÖRIGHET | SKAPA FUNKTIONSTILLSTÅND | Behörighet att använda | SKAPA ROUTINprivilegium |
@@ -66,7 +66,7 @@ Databasadministratören måste se till att dessa rättigheter matchar de rättig
 
 |   | Teradata | InfiniDB | Sybase IQ/Sybase ASE | Netezza | AsterData |
 |:-:|:-:|:-:|:-:|:-:|:-:|
-| **Ansluter till fjärrdatabas** | CONNECT privilegium | Skapa en användare som är bunden till en fjärrvärddator som har ALLA BEHÖRIGHETER | Ingen behörighet krävs för programsatsen CONNECT | Inget privilegium krävs | CONNECT privilegium |
+| **Ansluter till fjärrdatabas** | CONNECT-privilegium | Skapa en användare som är bunden till en fjärrvärddator som har ALLA BEHÖRIGHETER | Ingen behörighet krävs för CONNECT-satsen | Inget privilegium krävs | CONNECT-privilegium |
 | **Skapar tabeller** | CREATE TABLE or TABLE keyword | SKAPA privilegium | RESURSutfärdare och SKAPA behörighet | TABELLprivilegium | SKAPA privilegium |
 | **Skapar index** | CREATE INDEX or INDEX keyword | INDEX-privilegium | RESURSutfärdare och SKAPA behörighet | INDEX-privilegium | SKAPA privilegium |
 | **Skapar funktioner** | CREATE FUNCTION or FUNCTION, nyckelord | SKAPA ROUTINprivilegium | RESURSANSVARIG eller DBA-myndighet för Java-funktioner | BEHÖRIGHET FÖR FUNKTION | SKAPA FUNKTIONSBEHÖRIGHET |
@@ -75,5 +75,5 @@ Databasadministratören måste se till att dessa rättigheter matchar de rättig
 | **Övervaka körningar** | Inga privilegier krävs för att använda EXPLAIN-programsatsen | VÄLJ privilegium | Endast en systemadministratör kan köra sp_showplan | Inga privilegier krävs för att använda EXPLAIN-programsatsen | Inga privilegier krävs för att använda EXPLAIN-programsatsen |
 | **Skriver data** | INSERT- och UPDATE-behörigheter | INSERT- och UPDATE-behörigheter | INFOGA- och UPPDATERINGSbehörigheter | INSERT- och UPDATE-behörigheter | INSERT- och UPDATE-behörigheter |
 | **Läser in data i tabeller** | SELECT- och INSERT-behörighet för att använda COPY TO- respektive COPY FROM-satser | FILE-privilegium | Var ägare av tabellen eller behörigheten ALTER. Beroende på alternativet -gl kan LOAD TABLE bara utföras om användaren har DBA-behörighet | VÄLJ OCH INFOGA BEHÖRIGHETER | VÄLJ OCH INFOGA BEHÖRIGHETER |
-| **Åtkomst till klientdata** | VÄLJ privilegium | VÄLJ behörighet | VÄLJ privilegium | VÄLJ privilegium |
+| **Åtkomst till klientdata** | VÄLJ privilegium | VÄLJ behörighet | VÄLJ privilegium | VÄLJ privilegium |  |
 | **Åtkomst till metadata** | VISA privilegium | VÄLJ privilegium | Ingen behörighet krävs för programsatsen DESCRIBE | Inget privilegium krävs för att använda kommandot &quot;\d table&quot; | Ingen behörighet krävs för att använda kommandot VISA |

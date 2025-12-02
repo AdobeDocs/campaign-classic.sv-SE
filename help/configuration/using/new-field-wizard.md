@@ -1,18 +1,18 @@
 ---
 product: campaign
-title: Ny fältassistent
-description: Ny fältassistent
+title: Assistenten Nytt fält
+description: Assistenten Nytt fält
 feature: Schema Extension
-role: Data Engineer, Developer
+role: Developer
 exl-id: 2350a531-7a26-4f26-90fe-8dac0cc26605
-source-git-commit: ec774cc10a69a694b3c2bf5a6f662afd12a1435a
+source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
 workflow-type: tm+mt
-source-wordcount: '200'
-ht-degree: 0%
+source-wordcount: '199'
+ht-degree: 4%
 
 ---
 
-# Ny fältassistent{#new-field-wizard}
+# Assistenten Nytt fält{#new-field-wizard}
 
 
 Med en assistent som är tillgänglig via **[!UICONTROL Tools > Advanced > Add new fields]** kan du lägga till ett eller flera fält i en tabell i databasen.
@@ -35,7 +35,7 @@ Assistentskärmarna innehåller följande steg:
 
 1. Bekräfta ändringarna genom att klicka på knappen **[!UICONTROL Finish]**.
 
-En tilläggsfil som i vårt exempel kallas&quot;cus:mottagare&quot; skapas automatiskt och motsvarande SQL-skript körs:
+En tilläggsfil med namnet&quot;cus:recipient&quot; i vårt exempel skapas automatiskt och motsvarande SQL-skript körs:
 
 ```
 <srcSchema extendedSchema="nms:recipient" label="Recipients" name="recipient"  namespace="cus">  

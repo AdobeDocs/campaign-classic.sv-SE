@@ -3,10 +3,10 @@ product: campaign
 title: Om frågor i Campaign
 description: Om frågor i Campaign
 feature: Query Editor
-role: User, Data Architect
+role: User, Developer
 level: Beginner
 exl-id: 2db1034d-cad6-4fb0-8646-dd9099080ab0
-source-git-commit: 0bbe3bd199c664d30513a0c50203248d703451cd
+source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
 workflow-type: tm+mt
 source-wordcount: '207'
 ht-degree: 5%
@@ -28,23 +28,23 @@ Den generiska frågeredigeraren centraliserar alla frågefunktioner. Det gör de
 
 >[!TAB Fråga databasen]
 
-Steg för att skapa en fråga beskrivs i **[Campaign v8-dokumentationen (konsolen)](https://experienceleague.adobe.com/sv/docs/campaign/campaign-v8/data/query/query-editor){target=_blank}**
+Steg för att skapa en fråga beskrivs i **[Campaign v8-dokumentationen (konsolen)](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/data/query/query-editor){target=_blank}**
 
 
-[![bild](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/sv/docs/campaign/campaign-v8/data/query/query-editor){target=_blank}
+[![bild](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/data/query/query-editor){target=_blank}
 
 
 >[!TAB Lägg till en fråga i ett arbetsflöde]
 
-Lär dig de viktigaste stegen som rör skapandet av frågan i ett arbetsflöde i **[dokumentationen för Campaign v8](https://experienceleague.adobe.com/sv/docs/campaign/automation/workflows/wf-activities/targeting-activities/query){target=_blank}**
+Lär dig de viktigaste stegen som rör skapandet av frågan i ett arbetsflöde i **[dokumentationen för Campaign v8](https://experienceleague.adobe.com/en/docs/campaign/automation/workflows/wf-activities/targeting-activities/query){target=_blank}**
 
-[![bild](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/sv/docs/campaign/automation/workflows/wf-activities/targeting-activities/query){target=_blank}
+[![bild](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/en/docs/campaign/automation/workflows/wf-activities/targeting-activities/query){target=_blank}
 
 >[!TAB Filtervillkor]
 
-Om du vill utforma frågan måste du välja filtervillkoren i frågeredigeraren. Tillgängliga funktioner och användningsexempel finns i **[Campaign v8-dokumentationen](https://experienceleague.adobe.com/sv/docs/campaign/campaign-v8/data/query/filter-conditions){target=_blank}**
+Om du vill utforma frågan måste du välja filtervillkoren i frågeredigeraren. Tillgängliga funktioner och användningsexempel finns i **[Campaign v8-dokumentationen](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/data/query/filter-conditions){target=_blank}**
 
-[![bild](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/sv/docs/campaign/campaign-v8/data/query/filter-conditions){target=_blank}
+[![bild](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/data/query/filter-conditions){target=_blank}
 
 >[!ENDTABS]
 

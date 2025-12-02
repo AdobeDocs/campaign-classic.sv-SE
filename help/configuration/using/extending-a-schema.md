@@ -2,13 +2,13 @@
 product: campaign
 title: Utöka ett schema
 description: Lär dig hur du utökar ett schema
-role: Data Engineer, Developer
+role: Developer
 feature: Schema Extension
 exl-id: 6e3e666d-6ab3-4346-93ca-fb0155a4660d
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
 workflow-type: tm+mt
-source-wordcount: '327'
-ht-degree: 4%
+source-wordcount: '302'
+ht-degree: 5%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 4%
 >
 >Vissa inbyggda scheman får inte utökas: huvudsakligen de för vilka följande inställningar har definierats:\
 >**dataSource=&quot;file&quot;** och **mappingType=&quot;xmlFile&quot;**.\
->Följande scheman får inte utökas: **xtk:entityBackupNew**, **xtk:entityBackupOriginal**, **xtk:entityOriginal**, **xtk:form**, **xtk:srcSchema**, **ncm:publishing**, **nl:monitoring**, **nms:calendar**, **nms:remoteTracking**, **nms:userAgentRules**, **xtk:builder**, **xtk:connections**, **xtk:dbInit**, **xtk:funcList**, **xtk:fusion**, **xtk: jst**, **xtk:navtree**, **xtk:tk queryDef**, **xtk:resourceMenu**, **xtk:schema**, **xtk:scriptContext**, **xtk:session**, **xtk:sqlSchema**, **xtk:strings**.
+>Följande scheman får inte utökas: **xtk:entityBackupNew**, **xtk:entityBackupOriginal**, **xtk:entityOriginal**, **xtk:form**, **xtk:srcSchema**, **ncm:publishing**, **nl:monitoring**, **nms:calendar**, **6}nms:remoteTracking**, **nms:userAgentRules**, **xtk:builder**, **xtk:connections**, **xtk:dbInit**, **xtk:funcList**, **xtk:fusion**, **xtk** tk: jst **,:navtree** xtk **,:queryDef** xtk **,:resourceMenu** xtk **,:schema** xtk **,:scriptContext** xtk **,:session** xtk **,:sqlSchema** xtk, **xtk:strings**.
 >Denna lista är inte uttömmande.
 
 Det finns två metoder för att utöka ett befintligt schema:
@@ -34,7 +34,7 @@ Det finns två metoder för att utöka ett befintligt schema:
    >
    >Du får inte ändra de inbyggda schemana i programmet, utan i stället schemautbyggnadsmekanismen. I annat fall kommer ändrade scheman inte att uppdateras när du uppgraderar programmet. Detta kan leda till felfunktioner vid användning av Adobe Campaign.
 
-   **Exempel**: tillägg för schemat **nms:mottagare**.
+   **Exempel**: tillägg för schemat **nms:recipient**.
 
    ```
    <srcSchema extendedSchema="nms:recipient" name="recipient" namespace="cus">
@@ -44,7 +44,7 @@ Det finns två metoder för att utöka ett befintligt schema:
    </srcSchema>
    ```
 
-   Det utökade schemat **nms:receive** fylls i med fältet ifyllt i tilläggsschemat:
+   Det utökade schemat **nms:recipient** har fyllts i med fältet i tilläggsschemat:
 
    ```
    <schema dependingSchemas="cus:recipient" name="recipient" namespace="nms">

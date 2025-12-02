@@ -3,9 +3,9 @@ product: campaign
 title: Definiera webbspårningstagg
 description: Definiera webbspårningstagg
 feature: Application Settings
-role: Data Engineer, Developer
+role: Developer
 exl-id: 0b5575be-57e7-4eee-9c0a-e9ef4b0931bf
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
 workflow-type: tm+mt
 source-wordcount: '332'
 ht-degree: 1%
@@ -108,17 +108,17 @@ I följande tabell visas en lista med särskilda parametrar som stöds av omdiri
 
 * Samla in data om affärsvolym
 
-  **https://myserver.adobe.com/r/4567?tagid=command&amount=100&article=2l**
+  **https://myserver.adobe.com/r/4567?tagid=command&amp;amount=100&amp;article=2l**
 
 * Ange ett fält för att hitta mottagaren
 
-  **https://myserver.adobe.com/r/2353?tagid=home&rcpid=saccount%3D10**
+  **https://myserver.adobe.com/r/2353?tagid=home&amp;rcpid=saccount%3D10**
 
   En mottagare vars kontonummer är 10 skickas till startsidan.
 
 * Använda en standardleverans
 
-  **https://myserver.adobe.com/r/2456?tagid=home&jobid=e6**
+  **https://myserver.adobe.com/r/2456?tagid=home&amp;jobid=e6**
 
   En mottagare skickas till startsidan. Den här informationen lagras i leveransen med ID 230 (e6 i databas 16) såvida inte en sessions-cookie som innehåller en leveransidentifierare skickas med den här frågan.
 

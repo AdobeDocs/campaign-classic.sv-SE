@@ -3,11 +3,11 @@ product: campaign
 title: Om webbtjänster
 description: Om webbtjänster
 feature: API
-role: Data Engineer, Developer
+role: Developer
 exl-id: 7aa2aef1-2eb6-48a6-82fa-4451bed66216
-source-git-commit: 517b85f5d7691acc2522bf4541f07c34c60c7fbf
+source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
 workflow-type: tm+mt
-source-wordcount: '645'
+source-wordcount: '644'
 ht-degree: 2%
 
 ---
@@ -18,12 +18,12 @@ ht-degree: 2%
 
 Adobe Campaign programserver är utformad för öppenhet och enkel integrering med allt mer mångsidiga och komplexa företagsinformationssystem.
 
-Adobe Campaign API:er används i JavaScript både i och utanför programmet SOAP. De utgör ett bibliotek med generiska funktioner som kan berikas. Mer information finns i [Implementera SOAP &#x200B;](../../configuration/using/implementing-soap-methods.md).
+Adobe Campaign API:er används i JavaScript i programmet och i SOAP utanför det. De utgör ett bibliotek med generiska funktioner som kan berikas. Mer information finns i [Implementera SOAP-metoder](../../configuration/using/implementing-soap-methods.md).
 
 >[!IMPORTANT]
 >
->Antalet auktoriserade motorsamtal per dag varierar beroende på ditt licensavtal. Mer information finns på [den här sidan](https://helpx.adobe.com/se/legal/product-descriptions/adobe-campaign-classic---product-description.html).\
->En lista över alla API:er, inklusive deras fullständiga beskrivning, finns i [den här dedikerade dokumentationen] (https://experienceleague.adobe.com/developer/campaign-api/api/index.html?lang=sv-SE.
+>Antalet auktoriserade motorsamtal per dag varierar beroende på ditt licensavtal. Mer information finns på [den här sidan](https://helpx.adobe.com/legal/product-descriptions/adobe-campaign-classic---product-description.html).\
+>En lista över alla API:er, inklusive deras fullständiga beskrivning, finns i [den här dedikerade dokumentationen]&#x200B;(https://experienceleague.adobe.com/developer/campaign-api/api/index.html.
 
 ## Förhandskrav {#prerequisites}
 
@@ -42,13 +42,13 @@ Adobe Campaign använder två typer av API:er:
 
 För att kunna utveckla API:er och interagera med Adobe Campaign måste ni känna till er datamodell. Med Adobe Campaign kan du generera en fullständig beskrivning av basen. Se [Beskrivning av modellen](../../configuration/using/data-oriented-apis.md#description-of-the-model).
 
-## SOAP samtal {#soap-calls}
+## SOAP {#soap-calls}
 
 Med SOAP-protokollet kan du anropa API-metoder, via den avancerade klienten, tredjepartsprogram som använder webbtjänster eller JSP som använder dessa metoder internt.
 
 ![](assets/s_ncs_configuration_architecture.png)
 
-Strukturen för ett SOAP är följande:
+Ett SOAP-meddelande har följande struktur:
 
 * ett kuvert som definierar meddelandets struktur,
 * en valfri rubrik,
@@ -61,9 +61,9 @@ I följande schema visas de olika resurser som används i Adobe Campaign API:er:
 
 ![](assets/s_ncs_integration_webservices_schema_pres.png)
 
-## Exempel på ett SOAP på metoden ExecuteQuery {#example-of-a-soap-message-on-the--executequery--method--}
+## Exempel på ett SOAP-meddelande i metoden ExecuteQuery {#example-of-a-soap-message-on-the--executequery--method--}
 
-I det här exemplet anropar en SOAP en fråga metoden&quot;ExecuteQuery&quot;, som tar en teckensträng som en parameter för autentisering (sessionstoken) och ett XML-innehåll för beskrivningen av frågan som ska köras.
+I det här exemplet anropar en SOAP-fråga metoden&quot;ExecuteQuery&quot;, som tar en teckensträng som en parameter för autentisering (sessionstoken) och ett XML-innehåll för beskrivningen av frågan som ska köras.
 
 Mer information finns i [ExecuteQuery (xtk:queryDef)](../../configuration/using/data-oriented-apis.md#executequery--xtk-querydef-).
 
@@ -71,7 +71,7 @@ Mer information finns i [ExecuteQuery (xtk:queryDef)](../../configuration/using/
 >
 >WSDL-beskrivningen av den här tjänsten har slutförts i exemplet som visas här: [Webbtjänstbeskrivning: WSDL](../../configuration/using/web-service-calls.md#web-service-description--wsdl).
 
-### SOAP {#soap-query}
+### SOAP query {#soap-query}
 
 ```
 <?xml version='1.0' encoding='ISO-8859-1'?>
@@ -89,15 +89,15 @@ Mer information finns i [ExecuteQuery (xtk:queryDef)](../../configuration/using/
 </SOAP-ENV:Envelope>
 ```
 
-Elementet `<soap-env:envelope>` är det första elementet i meddelandet som representerar SOAP.
+Elementet `<soap-env:envelope>` är det första elementet i meddelandet som representerar SOAP-kuvertet.
 
 Elementet `<soap-env:body>` är det första underordnade elementet i kuvertet. Den innehåller beskrivningen av meddelandet, dvs. innehållet i frågan eller svaret.
 
-Den metod som ska anropas anges i elementet `<executequery>` från SOAP.
+Den metod som ska anropas anges i elementet `<executequery>` från brödtexten i SOAP-meddelandet.
 
-I SOAP identifieras parametrarna efter utseendeordningen. Den första parametern, `<__sessiontoken>`, tar autentiseringskedjan, den andra parametern är XML-beskrivningen av frågan från elementet `<querydef>`.
+I SOAP identifieras parametrarna i den ordning de visas. Den första parametern, `<__sessiontoken>`, tar autentiseringskedjan, den andra parametern är XML-beskrivningen av frågan från elementet `<querydef>`.
 
-### SOAP {#soap-response}
+### SOAP svar {#soap-response}
 
 ```
 <?xml version='1.0' encoding='ISO-8859-1'?>
@@ -116,7 +116,7 @@ Resultatet av frågan anges från elementet `<pdomoutput>`.
 
 ## Felhantering {#error-management}
 
-Exempel SOAP felsvar:
+Exempel på SOAP-felsvar:
 
 ```
 <?xml version='1.0' encoding='ISO-8859-1'?>
@@ -132,11 +132,11 @@ ODBC error: [Microsoft][ODBC SQL Server Driver][SQL Server]The statement has bee
 </SOAP-ENV:Envelope>
 ```
 
-Elementet `<soap-env:fault>` i SOAP används för att förmedla felsignaler som uppstår under bearbetningen av webbtjänsten. Detta består av följande delelement:
+Elementet `<soap-env:fault>` i SOAP-meddelandets brödtext används för att förmedla felsignaler som uppstår under bearbetningen av webbtjänsten. Detta består av följande delelement:
 
 * `<faultcode>` : anger typ av fel. Feltyperna är:
 
-   * &quot;VersionMismatch&quot; i händelse av inkompatibilitet med den SOAP versionen som används,
+   * &quot;VersionMismatch&quot; i händelse av inkompatibilitet med den SOAP-version som används,
    * &quot;MustUnderstand&quot; i händelse av problem i meddelandehuvudet,
    * &quot;Klient&quot; om klienten saknar viss information,
    * &quot;Server&quot; om servern inte kan köra bearbetningen.

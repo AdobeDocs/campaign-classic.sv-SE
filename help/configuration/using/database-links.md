@@ -3,11 +3,11 @@ product: campaign
 title: Databasmappning
 description: Databasmappning
 feature: Configuration, Instance Settings
-role: Data Engineer, Developer
+role: Developer
 exl-id: e05dcd81-bbca-4767-8da3-ea064f7f6c8e
-source-git-commit: 517b85f5d7691acc2522bf4541f07c34c60c7fbf
+source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
 workflow-type: tm+mt
-source-wordcount: '933'
+source-wordcount: '924'
 ht-degree: 1%
 
 ---
@@ -133,17 +133,17 @@ Utökat schema för målet (&quot;cus:company&quot;):
 </schema>
 ```
 
-En omvänd länk till tabellen&quot;cus:mottagare&quot; lades till med följande parametrar:
+En omvänd länk till tabellen&quot;cus:recipient&quot; lades till med följande parametrar:
 
 * **name**: dras automatiskt från namnet på källschemat (kan framtvingas med attributet &quot;revLink&quot; i länkdefinitionen i källschemat)
 * **revLink**: namn på omvänd länk
-* **mål**: nyckel för länkat schema (&quot;cus:mottagare&quot;-schema)
+* **mål**: nyckel för länkat schema (&quot;cus:recipient&quot;-schema)
 * **obunden**: länken deklareras som ett samlingselement för en 1-N-kardinalitet (som standard)
 * **integritet**:&quot;define&quot; som standard (kan framtvingas med attributet&quot;revIntegrity&quot; i länkdefinitionen i källschemat).
 
 ## Exempel: enkel länk {#example-2}
 
-I det här exemplet deklarerar vi en länk till schematabellen &quot;nms:address&quot;. Kopplingen är en yttre koppling och fylls i explicit med mottagarens e-postadress och fältet @address i den länkade tabellen (&quot;nms:address&quot;).
+I det här exemplet deklarerar vi en länk till schematabellen nms:address. Kopplingen är en yttre koppling och fylls i explicit med mottagarens e-postadress och fältet @address i den länkade tabellen (&quot;nms:address&quot;).
 
 ```sql
 <srcSchema name="recipient" namespace="cus">
@@ -176,7 +176,7 @@ Standardvärdet returnerar identifieraren för den första giltiga parametertypf
 
 ## Exempel: skapa en nyckel för en länk {#example-5}
 
-I det här exemplet skapar vi en nyckel för en länk (&quot;företag&quot; till&quot;cus:company&quot;-schema) med attributet **xlink** och ett fält i tabellen (&quot;email&quot;):
+I det här exemplet skapar vi en nyckel för en länk (&quot;företag&quot; till&quot;cus:company&quot;-schema) med attributet **xlink** och ett fält i tabellen (&quot;e-post&quot;):
 
 ```sql
 <srcSchema name="recipient" namespace="cus">

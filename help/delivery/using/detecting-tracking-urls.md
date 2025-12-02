@@ -3,9 +3,9 @@ product: campaign
 title: Identifierar spårnings-URL:er
 description: Läs mer om rekommenderat mönster för att spåra URL:er
 feature: Monitoring
-role: User, Developer, Data Engineer
+role: User, Developer
 exl-id: 7611d6a1-6c55-4ba3-b905-58426c944991
-source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
+source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
 workflow-type: tm+mt
 source-wordcount: '297'
 ht-degree: 2%
@@ -30,7 +30,7 @@ Efter bearbetning av `<%@`-instruktioner har URL:en som ska spåras följande sy
 
 >[!IMPORTANT]
 >
->Alla andra mönster stöds inte av Adobe och bör undvikas för att förhindra potentiella säkerhetsluckor.
+>Alla andra mönster stöds inte av Adobe och bör undvikas för att förhindra eventuella säkerhetsbrister.
 
 ## Oskyddat mönster
 
@@ -39,7 +39,7 @@ När du lägger till anpassade länkar till ditt innehåll bör du alltid undvik
 Syntaxen `<a href="http://<%=myURL%>">` är till exempel **inte säker** och måste undvikas.
 
 * Om du använder den här syntaxen kan det leda till säkerhetsproblem om länken som genereras av Adobe Campaign innehåller en eller flera parametrar.
-* Tidy kan korrigera vissa av länkarna felaktigt, vilket kan hända slumpmässigt. Det typiska symtomet är HTML som visas i e-postkorrekturet men inte i förhandsgranskningen.
+* Tidy kan korrigera vissa av länkarna felaktigt, vilket kan hända slumpmässigt. Det typiska symtomet är en del av HTML som visas i e-postkorrekturet men inte i förhandsgranskningen.
 * Det går inte att ta bort URL-adressen eftersom vissa tecken i URL-adressen kan orsaka problem.
 * Du kan inte ha en parameter med namnet ID som står i konflikt med parametern i omdirigerings-URL:en.
 * Spårningsintresset begränsas sedan till leveransstatistik eftersom Adobe Campaign automatiskt spårar alla möjliga värden för myURL.

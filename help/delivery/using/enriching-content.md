@@ -4,11 +4,11 @@ title: Förbättra innehåll
 description: Förbättra innehåll
 badge-v8: label="Gäller även för v8" type="Positive" tooltip="Gäller även Campaign v8"
 feature: Data Management
-role: User, Developer, Data Engineer
+role: User, Developer
 exl-id: a4472a7c-a16b-4d10-a8ca-f74ca5f62de4
-source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
+source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
 workflow-type: tm+mt
-source-wordcount: '670'
+source-wordcount: '666'
 ht-degree: 0%
 
 ---
@@ -23,7 +23,7 @@ Frågor konfigureras via publiceringsmallen på fliken **[!UICONTROL Aggregator]
 
 De data som hämtas kommer att berika XML-utdatadokumentet via dess huvudelement.
 
-Exempel på retur från en fråga i mottagarschemat (**nms:mottagare**):
+Exempel på retur från en fråga i mottagarschemat (**nms:recipient**):
 
 ```
 <book name="Content Management">
@@ -136,7 +136,7 @@ En länk till en extern tabell deklareras i dataschemat enligt följande:
 <element label="Main contact" name="mainContact" target="nms:recipient" type="link"/>
 ```
 
-Definitionen av länken fylls i på en **link**-type **`<element>`** och attributet **target** refererar till målschemat (&quot;nms:receive&quot; i vårt exempel).
+Definitionen av länken fylls i på en **link**-type **`<element>`** och attributet **target** refererar till målschemat (&quot;nms:recipient&quot; i vårt exempel).
 
 Länkar måste deklareras som huvudelement i dataschemat.
 
@@ -206,7 +206,7 @@ Innehållet i målelementet berikar varje samlingselement i utdatadokumentet:
 
 Innehållet i varje länk som refereras begränsas till den interna nyckeln och **beräkningssträngen** för målelementet.
 
-Ett JavaScript-skript används för att förbättra innehållet i länkarna via SOAP frågor.
+Ett JavaScript-skript används för att förbättra innehållet i länkarna via SOAP-frågor.
 
 **Exempel**: Lägger till mottagarnamnet till huvudkontakten och kontaktsamlingslänkarna:
 

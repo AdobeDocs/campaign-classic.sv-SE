@@ -2,14 +2,14 @@
 product: campaign
 title: Dirigerade adresser
 description: Dirigerade adresser
-role: Data Engineer, Developer
+role: Developer
 badge-v8: label="Gäller även för v8" type="Positive" tooltip="Gäller även Campaign v8"
 feature: Seed Address
 level: Intermediate, Experienced
 exl-id: a16103bf-0498-4f59-ad96-8bfdeea26577
-source-git-commit: 2bfcec5eaa1145cfb88adfa9c8b2f72ee3cd9469
+source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
 workflow-type: tm+mt
-source-wordcount: '331'
+source-wordcount: '326'
 ht-degree: 6%
 
 ---
@@ -26,7 +26,7 @@ Mer information om hur du använder dirigerade adresser finns i [det här avsnit
 
 ## Implementering {#implementation}
 
-Schemat **nms:seedMember** och det länkade formuläret som finns i lådan ska utökas för kundkonfiguration, så att alla nödvändiga fält refereras. Schemadefinitionen innehåller kommentarer som beskriver dess konfigurationsläge.
+**nms:seedMember**-schemat och det länkade formulär som visas i rutan ska utökas för kundkonfiguration, så att alla nödvändiga fält refereras. Schemadefinitionen innehåller kommentarer som beskriver dess konfigurationsläge.
 
 Definition av det utökade schemat för mottagartabellen:
 
@@ -45,7 +45,7 @@ Definition av det utökade schemat för mottagartabellen:
 
 Använd följande steg:
 
-1. Skapa ett tillägg till schemat **nms:seedMember**. Mer information om detta finns i [det här avsnittet](../../configuration/using/extending-a-schema.md).
+1. Skapa ett tillägg till **nms:seedMember**-schemat. Mer information om detta finns i [det här avsnittet](../../configuration/using/extending-a-schema.md).
 1. I det nya tillägget lägger du till ett nytt element i roten för **[!UICONTROL seedMember]** med följande parametrar:
 
    ```
@@ -71,7 +71,7 @@ Använd följande steg:
 
    >[!NOTE]
    >
-   >Tillägget för schemat **nms:seedMember** måste överensstämma med strukturerna för en kampanj och en leverans i Adobe Campaign.
+   >Tillägget för **nms:seedMember**-schemat måste överensstämma med strukturerna för en kampanj och en leverans i Adobe Campaign.
 
    >[!IMPORTANT]
    >
@@ -79,7 +79,7 @@ Använd följande steg:
    >    
    >    
    >    * Under tillägget måste du ange ett **SQL-namn (@sqlname)** för fältet email. SQL-namnet måste skilja sig från &#39;sEmail&#39; som är reserverat för mottagarschemat.
-   >    * Du måste uppdatera databasstrukturen med det schema som skapades när du utökar **nms:seedMember**.
+   >    * Du måste uppdatera databasstrukturen med det schema som skapades när **nms:seedMember** utökades.
    >    * I tillägget **nms:seedMember** måste fältet som innehåller e-postadressen ha **name=&quot;email&quot;** som attribut. SQL-namnet måste skilja sig från sEmail som redan används för mottagarschemat. Detta attribut måste deklareras omedelbart under elementet **`<element name="custom_cus_person" />`**.
    >    
    >

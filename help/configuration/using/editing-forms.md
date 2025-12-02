@@ -3,10 +3,10 @@ product: campaign
 title: Redigera formulär
 description: Redigera formulär
 feature: Configuration
-role: Data Engineer, Developer
+role: Developer
 badge-v8: label="Gäller även för v8" type="Positive" tooltip="Gäller även Campaign v8"
 exl-id: 24604dc9-f675-4e37-a848-f1911be84f3e
-source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
+source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
 workflow-type: tm+mt
 source-wordcount: '1707'
 ht-degree: 1%
@@ -548,4 +548,4 @@ I det här exemplet visas hur du kan ringa tjänstanrop inifrån formulär:
 </enter>
 ```
 
-I det här exemplet är indata ett ID, som är en primärnyckel. När användarna fyller i formuläret för detta ID görs ett SOAP med detta ID som indataparameter. Utdata är ett booleskt värde som skrivs till det här fältet: `/tmp/@count`. Du kan använda det här booleska innehållet i formuläret. Läs mer om [formulärkontext](form-structure.md#context-of-forms).
+I det här exemplet är indata ett ID, som är en primärnyckel. När användare fyller i formuläret för detta ID görs ett SOAP-anrop med detta ID som indataparameter. Utdata är ett booleskt värde som skrivs till det här fältet: `/tmp/@count`. Du kan använda det här booleska innehållet i formuläret. Läs mer om [formulärkontext](form-structure.md#context-of-forms).

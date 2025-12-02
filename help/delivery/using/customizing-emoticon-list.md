@@ -4,11 +4,11 @@ title: Anpassa listan över uttryckssymboler
 description: Lär dig hur du anpassar uttryckslistan när du använder Adobe Campaign
 badge-v8: label="Gäller även för v8" type="Positive" tooltip="Gäller även Campaign v8"
 feature: Email, Push
-role: User, Data Engineer
+role: User, Developer
 hide: true
 hidefromtoc: true
 exl-id: b8642df3-1960-4f2c-8273-c3988a3e85f0
-source-git-commit: 0507e0372a81351adc145dafdd3cbe5d5422dc00
+source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
 workflow-type: tm+mt
 source-wordcount: '454'
 ht-degree: 3%
@@ -20,7 +20,7 @@ ht-degree: 3%
 Uttryckslistan som visas i popup-fönstret styrs av en uppräkning som gör att du kan visa värden i en lista för att begränsa vilka val användaren har för ett visst fält.
 Ordningen på uttryckslistan kan anpassas. Du kan också lägga till andra uttryckssymboler i listan.
 
-Observera att uttryckssymboler endast är tillgängliga för e-post och push-meddelanden. Mer information finns i [dokumentationen för Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/defining-the-email-content.html?lang=sv-SE#inserting-emoticons){target="_blank"}.
+Observera att uttryckssymboler endast är tillgängliga för e-post och push-meddelanden. Mer information finns i [dokumentationen för Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/defining-the-email-content.html#inserting-emoticons){target="_blank"}.
 
 
 ## Lägga till en ny uttryckssymbol {#add-new-emoticon}
@@ -65,7 +65,7 @@ Din nya uttryckssymbol placeras automatiskt i butiken.
 
 1. Ta hänsyn till dina ändringar genom att koppla från och sedan ansluta igen från Adobe Campaign Classic. Om din nya uttryckssymbol fortfarande inte visas i popup-fönstret **[!UICONTROL Insert emoticon]** kan du behöva rensa din cache. Mer information om detta hittar du i det här [avsnittet](../../platform/using/faq-campaign-config.md#perform-soft-cache-clear).
 
-1. Din nya uttryckssymbol finns nu i leveranserna i popup-fönstret **[!UICONTROL Insert emoticon]** i den 61:a positionen som konfigurerats i föregående steg. Mer information om hur du använder uttryckssymboler i leveranser finns i [dokumentationen för Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/defining-the-email-content.html?lang=sv-SE#inserting-emoticons){target="_blank"}.
+1. Din nya uttryckssymbol finns nu i leveranserna i popup-fönstret **[!UICONTROL Insert emoticon]** i den 61:a positionen som konfigurerats i föregående steg. Mer information om hur du använder uttryckssymboler i leveranser finns i [dokumentationen för Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/defining-the-email-content.html#inserting-emoticons){target="_blank"}.
 
    ![](assets/emoticon_4.png)
 

@@ -3,13 +3,13 @@ product: campaign
 title: Målmappning
 description: Lär dig hur du skapar en målmappning
 feature: Application Settings
-role: Data Engineer, Developer
+role: Developer
 badge-v8: label="Gäller även för v8" type="Positive" tooltip="Gäller även Campaign v8"
 exl-id: 38333669-5598-4811-a121-b677c1413f56
-source-git-commit: f469689f9e8a4d805fb95a1ae120ccd35aba3731
+source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '497'
+ht-degree: 2%
 
 ---
 

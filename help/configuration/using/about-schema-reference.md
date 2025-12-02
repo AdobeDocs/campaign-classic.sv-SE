@@ -3,12 +3,12 @@ product: campaign
 title: Kom igång med scheman i Adobe Campaign
 description: Lär dig hur du arbetar med scheman och utökar den konceptuella datamodellen i Adobe Campaign-databasen
 feature: Schema Extension
-role: Data Engineer, Developer
+role: Developer
 level: Intermediate, Experienced
 exl-id: f36a1b01-a002-4a21-9255-ea78b5f173fe
-source-git-commit: 2bfcec5eaa1145cfb88adfa9c8b2f72ee3cd9469
+source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
 workflow-type: tm+mt
-source-wordcount: '369'
+source-wordcount: '368'
 ht-degree: 1%
 
 ---
@@ -74,7 +74,7 @@ Ett dataschema identifieras med sitt namn och namnutrymme.
 
 Med ett namnutrymme kan du gruppera en uppsättning scheman efter intresseområde. Namnområdet **cus** används till exempel för kundspecifik konfiguration (**kunder**).
 
-Identifieringsnyckeln för ett schema är en sträng som skapats med namnutrymmet och namnet avgränsat med ett kolon, till exempel: **cus:mottagare**.
+Identifieringsnyckeln för ett schema är en sträng som skapats med namnutrymmet och namnet avgränsat med ett kolon, till exempel: **cus:recipient**.
 
 >[!IMPORTANT]
 >

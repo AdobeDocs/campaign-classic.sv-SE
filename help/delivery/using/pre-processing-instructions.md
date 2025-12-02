@@ -4,11 +4,11 @@ title: Förbearbetningsinstruktioner för spårade URL:er
 description: Läs mer om förbearbetningsinstruktioner som du kan använda för att skripta URL:en för ett e-postmeddelande och fortfarande spåra den
 badge-v8: label="Gäller även för v8" type="Positive" tooltip="Gäller även Campaign v8"
 feature: Monitoring
-role: User, Data Engineer, Developer
+role: User, Developer
 exl-id: 9d3f5c74-377a-4e24-81e5-bb605f69cf8a
-source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
+source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
 workflow-type: tm+mt
-source-wordcount: '653'
+source-wordcount: '651'
 ht-degree: 1%
 
 ---
@@ -74,7 +74,7 @@ Var:
 * **[!DNL object]**: objektets namn (exempel: leverans, provider och så vidare).
 Objektet kan vara:
    * **[!DNL delivery]**: för aktuell leverans (se information och begränsningar i underavsnittet nedan).
-   * **[!DNL provider]**: för aktuell leveransleverantör/routning (nms:externalAccount).
+   * **[!DNL provider]**: för den aktuella leveransprovidern/routningen (nms:externalAccount).
    * Ett extra skriptobjekt: Om ett objekt läses in i kontexten via: **Egenskaper** > **Personalization** > **Lägg till objekt i körningskontexten**.
    * Objekt i förgreningsloopen: se avsnittet [Förgrund](#foreach) nedan.
 * **[!DNL xpath]**: fältets xpath.

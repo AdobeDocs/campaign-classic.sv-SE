@@ -3,9 +3,9 @@ product: campaign
 title: Protokoll och inställningar för SMS-koppling
 description: Läs mer om SMS-anslutningen och hur du konfigurerar den
 feature: SMS
-role: Developer, Data Engineer
+role: Developer
 exl-id: fded088a-11a2-4b87-a368-7b197334aca4
-source-git-commit: 41296a0acaee93d31874bf58287e51085c6c1261
+source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
 workflow-type: tm+mt
 source-wordcount: '8457'
 ht-degree: 0%
@@ -384,7 +384,7 @@ Anger namnet på SMSC-implementeringen. Den ska anges med namnet på din leveran
 
 >[!NOTE]
 >
->Engagemanget i Deliverability-teamet bygger på kontrakt och kunderna bör kontakta sin Adobe-representant för att få information om Deliverability Engagement.
+>Engagemanget i Deliverability Team bygger på kontrakt och kunderna bör kontakta sin Adobe-representant för att få information om hur man engagerar sig i Deliverability.
 
 #### Server {#server}
 

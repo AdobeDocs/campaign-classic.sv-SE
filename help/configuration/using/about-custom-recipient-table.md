@@ -3,17 +3,17 @@ product: campaign
 title: Om anpassad mottagartabell
 description: Om anpassad mottagartabell
 feature: Configuration, Custom Resources
-role: User, Data Engineer, Developer
+role: User, Developer
 badge-v8: label="Gäller även för v8" type="Positive" tooltip="Gäller även Campaign v8"
 exl-id: d8cea496-b3f3-420a-bf6e-b7cbb321b30d
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
 workflow-type: tm+mt
 source-wordcount: '676'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
-# Använda en anpassad mottagartabell{#about-custom-recipient-table}
+# Använd en anpassad mottagartabell{#about-custom-recipient-table}
 
 I det här avsnittet beskrivs principerna för hur du använder en anpassad (eller extern) mottagartabell.
 
@@ -32,7 +32,7 @@ Med den här funktionen kan Adobe Campaign bearbeta data från en extern databas
 
 I det här avsnittet beskrivs de huvudpunkter som gör att du kan mappa befintliga tabeller i Adobe Campaign och konfigurationen som ska användas för att köra leveranser baserat på valfri tabell. Slutligen beskrivs hur man ger användarna möjlighet att fråga efter gränssnitt som är lika praktiska som de som finns i den inbyggda mottagartabellen. För att förstå det material som presenteras i detta avsnitt krävs god kunskap om principerna för skärm och schemadesign.
 
-## Recommendations och begränsningar {#recommendations-and-limitations}
+## Rekommendationer och begränsningar {#recommendations-and-limitations}
 
 Användningen av en anpassad mottagartabell har följande begränsningar:
 

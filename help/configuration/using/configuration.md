@@ -3,9 +3,9 @@ product: campaign
 title: Konfigurera navigeringsträdet i Campaign Explorer
 feature: Application Settings
 description: Lär dig konfigurera navigeringsträdet i Campaign Explorer
-role: Data Engineer, Developer
+role: Developer
 exl-id: c7ae7240-0c12-4420-bbb3-4268c9ade3e7
-source-git-commit: d56038fc8baf766667d89bb73747c20ec041124c
+source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
 workflow-type: tm+mt
 source-wordcount: '1183'
 ht-degree: 0%
@@ -16,7 +16,7 @@ ht-degree: 0%
 
 Som expertanvändare kan du lägga till mappar i utforskarträdet och anpassa det.
 
-Läs mer om Campaign-användargränssnittet i [Adobe Campaign v8-dokumentationen (konsolen)](https://experienceleague.adobe.com/sv/docs/campaign/campaign-v8/new/campaign-ui){target=_blank}.
+Läs mer om Campaign-användargränssnittet i [Adobe Campaign v8-dokumentationen (konsolen)](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/new/campaign-ui){target=_blank}.
 
 De typer av mappar som används av navigeringslistan beskrivs i ett XML-dokument som lyder grammatiken i **xtk:navtree** -schemat.
 

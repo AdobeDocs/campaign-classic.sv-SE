@@ -4,11 +4,11 @@ title: Använd datamodeller i Campaign
 description: Lär dig hur du använder datamodeller i Campaign
 badge-v8: label="Gäller även för v8" type="Positive" tooltip="Gäller även Campaign v8"
 feature: Data Model
-role: User, Developer, Data Engineer
+role: User, Developer
 exl-id: 3e28bfee-0321-40f4-9ef6-1bdb5b25041b
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
 workflow-type: tm+mt
-source-wordcount: '567'
+source-wordcount: '566'
 ht-degree: 1%
 
 ---
@@ -39,7 +39,7 @@ I ett innehållshanteringsschema representeras huvudelementet av följande rad:
 
 Med attributet **template** som anges i huvudelementet kan du utöka schemat med generiska egenskaper till alla innehållsdefinitioner som namn, skapandedatum, författare, associerad sträng osv.
 
-Dessa egenskaper beskrivs i schemat **ncm:content**.
+Dessa egenskaper beskrivs i **ncm:content**-schemat.
 
 >[!NOTE]
 >

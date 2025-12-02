@@ -3,11 +3,11 @@ product: campaign
 title: Ytterligare parametrar för webbspårning
 description: Läs mer om parametrar för webbspårning
 feature: Configuration, Instance Settings
-role: Data Engineer, Developer
+role: Developer
 exl-id: d14d94fd-b078-4893-be84-31d37a1d50f5
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
 workflow-type: tm+mt
-source-wordcount: '352'
+source-wordcount: '351'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ Adobe Campaign-plattformen har två parametrar av typen TRANSACTION som standard
 * **amount**: representerar beloppet för en transaktion,
 * **artikel**: representerar antalet objekt i en transaktion.
 
-De här parametrarna definieras i schemat **nms:webTrackingLog** och är några av de indikatorer som visas vid rapportering.
+De här parametrarna definieras i **nms:webTrackingLog**-schemat och är några av de indikatorer som visas vid rapportering.
 
 Om du vill definiera ytterligare parametrar måste du utöka det här schemat.
 

@@ -3,12 +3,12 @@ product: campaign
 title: Filtreringsscheman
 description: Filtreringsscheman
 feature: Custom Resources
-role: Data Engineer, Developer
+role: Developer
 exl-id: 009bed25-cd35-437c-b789-5b58a6d2d7c6
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
 workflow-type: tm+mt
-source-wordcount: '413'
-ht-degree: 0%
+source-wordcount: '382'
+ht-degree: 1%
 
 ---
 
@@ -60,23 +60,23 @@ Dessa filter anges på huvudnivån **element** för scheman och kan, som visas i
 >
 >Om inget filter anges har alla operatorer läs- och skrivbehörighet till schemat.
 
-## Protect inbyggda scheman {#protecting-built-in-schemas}
+## Skydda inbyggda scheman {#protecting-built-in-schemas}
 
 Inbyggda scheman är som standard bara tillgängliga med SKRIV-behörighet för operatorer med ADMINISTRATIONbehörighet:
 
-* ncm:publicera
-* nl:övervakning
-* nms:kalender
+* ncm:publishing
+* nl:monitoring
+* nms:calendar
 * xtk:builder
-* xtk:anslutningar
+* xtk:connections
 * xtk:dbInit
 * xtk:entityBackupNew
 * xtk:entityBackupOriginal
 * xtk:entityOriginal
-* xtk:formulär
+* xtk:form
 * xtk:funcList
 * xtk:fusion
-* xtk:bild
+* xtk:image
 * xtk:javascript
 * xtk:jssp
 * xtk:jst
@@ -85,14 +85,14 @@ Inbyggda scheman är som standard bara tillgängliga med SKRIV-behörighet för 
 * xtk:package
 * xtk:queryDef
 * xtk:resourceMenu
-* xtk:rättigheter
+* xtk:rights
 * xtk:schema
 * xtk:scriptContext
 * xtk:specFile
 * xtk:sql
 * xtk:sqlSchema
 * xtk:srcSchema
-* xtk:strängar
+* xtk:strings
 * xtk:xslt
 
 >[!IMPORTANT]

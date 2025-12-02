@@ -4,11 +4,11 @@ title: Skapa dirigerade adresser
 description: Lär dig hur du skapar och använder dirigerade adresser
 badge-v8: label="Gäller även för v8" type="Positive" tooltip="Gäller även Campaign v8"
 feature: Seed Address
-role: User, Data Engineer
+role: User, Developer
 exl-id: f7dc97f0-3423-4b6f-88e2-08180f9adf8a
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
 workflow-type: tm+mt
-source-wordcount: '422'
+source-wordcount: '421'
 ht-degree: 1%
 
 ---
@@ -26,7 +26,7 @@ Med Adobe Campaign kan ni också skapa mallar för dirigerade adresser som impor
 Följ stegen nedan för att skapa dirigerade adresser:
 
 1. Klicka på knappen **[!UICONTROL New]** ovanför listan med dirigerade adresser.
-1. Ange data som är länkade till adressen i matchande fält på fliken **[!UICONTROL Recipient]**. De tillgängliga fälten motsvarar standardfälten i leveransmottagarnas profiler (nms:mottagartabell): namn, förnamn, e-post osv.
+1. Ange data som är länkade till adressen i matchande fält på fliken **[!UICONTROL Recipient]**. De tillgängliga fälten motsvarar standardfälten i leveransmottagarnas profiler (tabellen nms:recipient): namn, förnamn, e-post osv.
 
    >[!NOTE]
    >

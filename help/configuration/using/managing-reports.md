@@ -3,12 +3,12 @@ product: campaign
 title: Hantera rapporter
 description: Hantera rapporter
 feature: Reporting, Configuration
-role: Data Engineer, Developer
+role: Developer
 badge-v8: label="Gäller även för v8" type="Positive" tooltip="Gäller även Campaign v8"
 exl-id: 68908664-3cf6-4a6c-a327-c7f059c27aa3
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
 workflow-type: tm+mt
-source-wordcount: '153'
+source-wordcount: '152'
 ht-degree: 3%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 3%
 
 
 
-Rapporter som baseras på ett schema som är specifikt för Adobe Campaign standardmottagare (nm:mottagare eller schemalänkad) måste utvecklas på nytt för att data från den anpassade tabellen och dess tabeller ska kunna länkas via målmappningen (se avsnittet [Målmappning](../../configuration/using/target-mapping.md)).
+Rapporter som baseras på ett schema som är specifikt för Adobe Campaign standardmottagare (nm:recipient eller schemalänkad) måste utvecklas på nytt för att data från den anpassade tabellen och dess tabeller ska kunna länkas via målmappningen (se avsnittet [ Målmappning ](../../configuration/using/target-mapping.md) ).
 
 Se [det här avsnittet](../../reporting/using/about-reports-creation-in-campaign.md) om du vill skapa nya rapporter.
 

@@ -3,11 +3,11 @@ product: campaign
 title: Läge för webbspårning
 description: Lär dig välja webbspårningsläge
 feature: Instance Settings
-role: Data Engineer, Developer
+role: Developer
 exl-id: b0f30c1f-cdc9-4ad2-8a6c-19d5aae4feb3
-source-git-commit: 0fba6a2ad4ffa864e2f726f241aa9d7cd39072a6
+source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
 workflow-type: tm+mt
-source-wordcount: '681'
+source-wordcount: '680'
 ht-degree: 0%
 
 ---
@@ -80,7 +80,7 @@ Det här läget är det mest kostsamma när det gäller beräkning och volym.
 
 >[!NOTE]
 >
->Om paketet **[!UICONTROL Leads]** är installerat måste du göra samma sak med aktivitetstabellen (**crm:inkommandeLead**)
+>Om paketet **[!UICONTROL Leads]** är installerat måste du göra samma sak med aktivitetstabellen (**crm:incomingLead**)
 
 I följande schema sammanfattas funktionerna för alla tre webbspårningslägena:
 

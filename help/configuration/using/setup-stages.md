@@ -3,11 +3,11 @@ product: campaign
 title: Konfigurationsfaser
 description: Konfigurationsfaser
 feature: Configuration
-role: Data Engineer, Developer
+role: Developer
 exl-id: a5ae0b61-3377-46d9-a327-6c897eeda770
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
 workflow-type: tm+mt
-source-wordcount: '234'
+source-wordcount: '233'
 ht-degree: 2%
 
 ---
@@ -24,7 +24,7 @@ Det finns två typer av taggar:
 Använd följande steg för att konfigurera de här taggarna:
 
 1. Identifiera de sidor som du vill spåra och fastställa deras typ (WEB eller TRANSACTION).
-1. Ta reda på vilken ytterligare information du vill samla in och utöka schemat **nms:webTrackingLog** med en beskrivning av den här informationen. Som standard kan det här schemat lagra transaktionsbelopp och antal artiklar per transaktion.
+1. Ta reda på vilken ytterligare information du vill samla in och utöka **nms:webTrackingLog**-schemat med en beskrivning av den här informationen. Som standard kan det här schemat lagra transaktionsbelopp och antal artiklar per transaktion.
 1. Skapa webbspårningstaggar. Det finns två sätt att göra detta:
 
    * Infoga de URL:er som motsvarar de här sidorna på din Adobe Campaign-plattform och generera och extrahera sedan de associerade webbspårningstaggarna (från noden **[!UICONTROL Campaign execution>Resources>Web tracking tags]** i klientkonsolen).

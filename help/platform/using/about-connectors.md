@@ -3,10 +3,10 @@ product: campaign
 title: Om kopplingar
 description: Om kopplingar
 feature: Overview
-role: User, Data Architect
+role: User, Developer
 level: Beginner
 exl-id: 05080d7f-f2d6-4ffe-b112-05b26a3a8a1d
-source-git-commit: efd09fd71069878a5096bfa3592e6ebbaa9dd4e4
+source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
 workflow-type: tm+mt
 source-wordcount: '199'
 ht-degree: 9%
@@ -26,7 +26,7 @@ Tillgängliga anslutningar visas nedan:
 Du kan också integrera Campaign med flera andra system, som:
 
 * Adobe Experience Cloud-lösningar: Adobe Experience Manager, Adobe Target, Adobe Audience Manager, Experience Cloud-utlösare osv. [Läs mer](../../integrations/using/about-campaign-integrations.md)
-* Adobe Identity Management System (IMS) för enkel inloggning (SSO), för säker åtkomst till din Campaign-instans och anslutning till Adobe Campaign med samma Adobe ID som för andra Adobe Experience Cloud-lösningar. [Läs mer](../../integrations/using/about-adobe-id.md).
+* Adobe Identity Management System (IMS) for Single-sign-on (SSO), för säker åtkomst till din Campaign-instans och anslutning till Adobe Campaign med samma Adobe ID som för andra Adobe Experience Cloud-lösningar. [Läs mer](../../integrations/using/about-adobe-id.md).
 * LDAP-katalog, för enhetlig åtkomsthantering. [Läs mer](../../installation/using/connecting-through-ldap.md).
 
 >[!NOTE]

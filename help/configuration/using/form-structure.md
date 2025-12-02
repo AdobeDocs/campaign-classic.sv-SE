@@ -3,12 +3,12 @@ product: campaign
 title: Formulärstruktur
 description: Formulärstruktur
 feature: Application Settings
-role: Data Engineer, Developer
+role: Developer
 badge-v8: label="Gäller även för v8" type="Positive" tooltip="Gäller även Campaign v8"
 exl-id: e61f2b63-06d3-4b8c-867f-1c729176d2da
-source-git-commit: 0fba6a2ad4ffa864e2f726f241aa9d7cd39072a6
+source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
 workflow-type: tm+mt
-source-wordcount: '2398'
+source-wordcount: '2394'
 ht-degree: 0%
 
 ---
@@ -27,7 +27,7 @@ XML-dokumentet i indataformuläret måste innehålla rotelementet `<form>` med a
 </form>
 ```
 
-Som standard är ett formulär kopplat till dataschemat med samma namn och namnutrymme. Om du vill associera ett formulär med ett annat namn anger du **entity-schema** -attributet för elementet `<form>` till schemanyckelns namn. Om du vill visa strukturen för ett inmatningsformulär kan du beskriva ett gränssnitt med exempelschemat &quot;cus:mottagare&quot;:
+Som standard är ett formulär kopplat till dataschemat med samma namn och namnutrymme. Om du vill associera ett formulär med ett annat namn anger du **entity-schema** -attributet för elementet `<form>` till schemanyckelns namn. Om du vill visa strukturen för ett indataformulär kan du beskriva ett gränssnitt med exempelschemat &quot;cus:recipient&quot;:
 
 ```xml
 <srcSchema name="recipient" namespace="cus">
@@ -70,7 +70,7 @@ Som standard visas varje fält på en rad och tar upp allt tillgängligt utrymme
 
 ## Formatering {#formatting}
 
-Layouten på kontrollerna ser ut som den layout som används i tabeller i HTML, med möjlighet att dela upp en kontroll i flera kolumner, sammanflätade element eller ange hur mycket utrymme som finns tillgängligt. Tänk på att du bara kan dela upp området efter proportioner med formatering. Du kan inte ange fasta dimensioner för ett objekt.
+Layouten för kontrollerna ser ut som den layout som används i HTML-tabeller, där det är möjligt att dela upp en kontroll i flera kolumner, sammanflätade element eller ange hur mycket utrymme som finns tillgängligt. Tänk på att du bara kan dela upp området efter proportioner med formatering. Du kan inte ange fasta dimensioner för ett objekt.
 
 Så här visar du kontrollerna i exemplet ovan i två kolumner:
 
@@ -378,7 +378,7 @@ Exempel på en relationstabell i ett schema:
 </srcSchema>
 ```
 
-Vi börjar t.ex. med indataformen för &quot;cus:mottagare&quot;-schemat. Listan måste visa associationer med abonnemang på tjänster och du måste kunna lägga till en prenumeration genom att välja en befintlig tjänst.
+Vi börjar till exempel med indataformen för &quot;cus:recipient&quot;-schemat. Listan måste visa associationer med abonnemang på tjänster och du måste kunna lägga till en prenumeration genom att välja en befintlig tjänst.
 
 ![](assets/d_ncs_integration_form_exemple12.png)
 
@@ -636,9 +636,9 @@ Om attributet **type=&quot;wizard&quot;** finns i elementet `<form>` kan du defi
 
 Knappen **[!UICONTROL Finish]** sparar angivna data och stänger formuläret.
 
-### SOAP {#soap-methods}
+### SOAP-metoder {#soap-methods}
 
-SOAP kan startas från en ifylld **`<leave>`**-tagg i slutet av en sida.
+Körning av SOAP-metoder kan startas från en ifylld **`<leave>`**-tagg i slutet av en sida.
 
 Taggen **`<soapcall>`** innehåller anropet till metoden med följande indataparametrar:
 

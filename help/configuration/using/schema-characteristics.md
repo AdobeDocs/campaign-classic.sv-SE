@@ -3,10 +3,10 @@ product: campaign
 title: Schemaegenskaper
 description: Schemaegenskaper
 feature: Custom Resources
-role: Data Engineer, Developer
+role: Developer
 badge-v8: label="Gäller även för v8" type="Positive" tooltip="Gäller även Campaign v8"
 exl-id: 099161b4-b4cb-433c-aed6-71157269a536
-source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
+source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
 workflow-type: tm+mt
 source-wordcount: '389'
 ht-degree: 1%

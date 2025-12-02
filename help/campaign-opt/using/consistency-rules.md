@@ -2,12 +2,12 @@
 product: campaign
 title: Konsekvensregler
 description: Lär dig arbeta med enhetliga regler i Adobe Campaign
-role: User, Data Engineer
+role: User, Developer
 feature: Typology Rules, Campaigns
 hide: true
 hidefromtoc: true
 exl-id: 757328fa-4698-4f85-a5fa-074b5152ec45
-source-git-commit: 4f809011a8b4cb3803c4e8151e358e5fd73634e4
+source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
 workflow-type: tm+mt
 source-wordcount: '773'
 ht-degree: 3%
@@ -32,7 +32,7 @@ I följande exempel skapar vi en typologiregel för en lojalitetskampanj för en
 
 Så här utformar du en ny kapacitetsregel:
 
-1. Klicka på **[!UICONTROL New]** under noden **[!UICONTROL Administration > Campaign management > Typology management > Typology rules]**.
+1. Klicka på **[!UICONTROL Administration > Campaign management > Typology management > Typology rules]** under noden **[!UICONTROL New]**.
 1. Välj en **[!UICONTROL Capacity]**-regeltyp.
 
    ![](assets/campaign_opt_create_capacity_01.png)

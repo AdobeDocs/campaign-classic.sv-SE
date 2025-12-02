@@ -3,9 +3,9 @@ product: campaign
 title: Infoga webbspårningstaggar på webbplatsen
 description: Lär dig hur du infogar webbspårningstaggar på webbplatsen
 feature: Configuration
-role: Data Engineer, Developer
+role: Developer
 exl-id: e7fcec75-82fe-45ff-8d45-7d6e95baeb14
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
 workflow-type: tm+mt
 source-wordcount: '329'
 ht-degree: 0%
@@ -16,7 +16,7 @@ ht-degree: 0%
 
 ## Enkel metod {#simple-method}
 
-Den här metoden består av att skicka ett HTTP-anrop till omdirigeringsservern genom att infoga taggen **`<img>`** HTML i HTML-källkoden för webbsidan som du vill spåra.
+Den här metoden består av att skicka ett HTTP-anrop till omdirigeringsservern genom att infoga en **`<img>`** HTML-tagg i HTML-källkoden för den webbsida som du vill spåra.
 
 >[!IMPORTANT]
 >

@@ -5,9 +5,9 @@ description: Läs mer om omfattningen av och egenskaperna hos utskick av e-post 
 feature: Email
 role: User, Admin, Developer
 exl-id: 58cc23f4-9ab0-45c7-9aa2-b08487ec7e91
-source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
+source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
 workflow-type: tm+mt
-source-wordcount: '1380'
+source-wordcount: '1379'
 ht-degree: 0%
 
 ---
@@ -136,7 +136,7 @@ Mer information om giltighetsperioden finns på [sidan](communication-channels.m
 ### DKIM-signering
 
 Signering med e-postautentisering för DKIM (DomainKeys Identified Mail) görs av den utökade MTA:n. DKIM-signering av den interna Campaign MTA-filen kommer att stängas av i domänhanteringstabellen som en del av den förbättrade MTA-uppgraderingen.
-Mer information om DKIM finns i [Adobe Deliverability Best Practice Guide](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html?lang=sv-SE#authentication).
+Mer information om DKIM finns i [Adobe Deliverability Best Practice Guide](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html#authentication).
 
 ### Rapport om lyckade leveranser
 
@@ -161,6 +161,5 @@ Tabellen nedan visar de olika stegen i sändningsprocessen med motsvarande KPI:e
 | Meddelandet har vidarebefordrats från Campaign till det förbättrade MTA-meddelandet | **[!UICONTROL Success]** procent börjar vid 100 % | Skickat |
 | Hårdstudsmeddelanden rapporteras tillbaka från Förbättrad MTA | Procentandelen **[!UICONTROL Success]** minskas därefter | Misslyckades |
 | Mjuka studsmeddelanden rapporteras tillbaka från Förbättrat MTA | Ingen ändring i procentandelen **[!UICONTROL Success]** | Skickat |
-| Mjuka studsmeddelanden - återförsök har slutförts | Ingen ändring i procentandelen **[!UICONTROL Success]** | Skickat | Procentandelen **[!UICONTROL Success]** ökas därefter | Skickat |
+| Mjuka studsmeddelanden - återförsök har slutförts | Ingen ändring i **[!UICONTROL Success]** procent \|  **[!UICONTROL Success]** procentandelen ökas därefter | Skickat |
 | Mjukt studsande meddelanden återförsök misslyckas | Procentandelen **[!UICONTROL Success]** minskas därefter | Misslyckades |
-

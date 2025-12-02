@@ -3,11 +3,11 @@ product: campaign
 title: Nyckelhantering i datamodeller
 description: Förstå nyckelhantering i datamodeller
 feature: Configuration, Instance Settings
-role: Data Engineer, Developer
+role: Developer
 exl-id: faf63c8f-9d10-43c1-a990-91361594af9f
-source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
+source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
 workflow-type: tm+mt
-source-wordcount: '619'
+source-wordcount: '617'
 ht-degree: 1%
 
 ---
@@ -130,7 +130,7 @@ Huvudnyckeln i de flesta Adobe Campaign-tabeller är ett 32-bitars heltal som ge
 
 Fördelen med en inkrementell nyckel är att den ger en icke-modifierbar teknisk nyckel för kopplingarna mellan tabellerna. Dessutom tar den här nyckeln inte upp så mycket minne eftersom ett heltal med dubbla byte används.
 
-I källschemat kan du ange namnet på den sekvens som ska användas med attributet **pkSequence**. Om det här attributet inte anges i källschemat används standardsekvensen **XtkNewId**. Programmet använder dedikerade sekvenser för scheman **nms:broadLog** och **nms:trackingLog** (**NmsBroadLogId** respektive **NmsTrackingLogId**) eftersom det är de tabeller som innehåller de flesta posterna.
+I källschemat kan du ange namnet på den sekvens som ska användas med attributet **pkSequence**. Om det här attributet inte anges i källschemat används standardsekvensen **XtkNewId**. Programmet använder dedikerade sekvenser för **nms:broadLog**- och **nms:trackingLog**-scheman (**NmsBroadLogId** respektive **NmsTrackingLogId**), eftersom dessa är de tabeller som innehåller de flesta poster.
 
 Från ACC 18.10 är **XtkNewId** inte längre standardvärdet för sekvensen i scheman som är klara att användas. Du kan nu skapa ett schema eller utöka ett befintligt schema med en dedikerad sekvens.
 

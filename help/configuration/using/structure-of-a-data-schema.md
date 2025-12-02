@@ -3,9 +3,9 @@ product: campaign
 title: Dataschemats struktur
 description: Dataschemats struktur
 feature: Custom Resources
-role: Data Engineer, Developer
+role: Developer
 exl-id: 86036f2f-ec7c-413e-b1e1-10a71a06cd6d
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
 workflow-type: tm+mt
 source-wordcount: '141'
 ht-degree: 10%
@@ -22,4 +22,4 @@ Som standard visas fälten först (Aktiv, Aktiverad osv.) och i alfabetisk ordni
 
 Primära nycklar identifieras med en röd nyckel och utländska nycklar identifieras med en gul nyckel.
 
-Länkarna urskiljs grafiskt beroende på om de tillhör tabellen eller inte. De som börjar i tabellen, d.v.s. har sekundärnyckeln i tabellen, visas först (e-postinformation, Mapp, Land). &quot;Invertera&quot; samlingslänkar (prenumeration, beställningar osv.) visas i slutet.
+Länkarna urskiljs grafiskt beroende på om de tillhör tabellen eller inte. De som börjar i tabellen, d.v.s. har sekundärnyckeln i tabellen, visas först (e-postinformation, Mapp, Land). Insamlingslänkarna &quot;Invertera&quot; (prenumeration, order osv.) visas i slutet.

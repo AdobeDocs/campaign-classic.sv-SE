@@ -3,12 +3,12 @@ product: campaign
 title: Identifiera ett formulär
 description: Identifiera ett formulär
 feature: Application Settings
-role: Data Engineer, Developer
+role: Developer
 badge-v8: label="Gäller även för v8" type="Positive" tooltip="Gäller även Campaign v8"
 exl-id: 0d22b0bc-8fbc-4269-af9e-cee27e29bb27
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
 workflow-type: tm+mt
-source-wordcount: '71'
+source-wordcount: '70'
 ht-degree: 12%
 
 ---

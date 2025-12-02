@@ -2,12 +2,12 @@
 product: campaign
 title: Tryckregler
 description: Lär dig arbeta med tryckregler i Adobe Campaign
-role: User, Data Engineer
+role: User, Developer
 feature: Fatigue Management, Typology Rules, Campaigns
 hide: true
 hidefromtoc: true
 exl-id: c23212f2-fdf8-4820-b389-546f7c84db27
-source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
+source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
 workflow-type: tm+mt
 source-wordcount: '3335'
 ht-degree: 4%
@@ -92,7 +92,7 @@ Så här skapar och konfigurerar du en **[!UICONTROL Pressure]**-typologiregel:
 
    ![](assets/campaign_opt_create_a_rule_05.png)
 
-1. På fliken **[!UICONTROL Typologies]** kan du visa de kampanjtyper som tillämpar den här regeln eller länka regeln till en eller flera befintliga typologier. Se [Campaign v8-dokumentationen](https://experienceleague.adobe.com/docs/campaign/automation/campaign-optimization/campaign-typologies.html?lang=sv-SE){target="_blank"}.
+1. På fliken **[!UICONTROL Typologies]** kan du visa de kampanjtyper som tillämpar den här regeln eller länka regeln till en eller flera befintliga typologier. Se [Campaign v8-dokumentationen](https://experienceleague.adobe.com/docs/campaign/automation/campaign-optimization/campaign-typologies.html){target="_blank"}.
 
 ## Definiera tröskelvärden och vikter {#defining-thresholds-and-weights}
 

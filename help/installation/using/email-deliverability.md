@@ -8,7 +8,7 @@ audience: installation
 content-type: reference
 topic-tags: additional-configurations
 exl-id: 515adad2-6129-450a-bb9e-fc80127835af
-source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
+source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
 workflow-type: tm+mt
 source-wordcount: '3096'
 ht-degree: 0%
@@ -316,7 +316,7 @@ Du kan definiera formatet för skickade meddelanden så att innehållet som visa
 
 Det gör du genom att gå till dokumentet **[!UICONTROL Management of email formats]**, som finns i **[!UICONTROL Administration]** > **[!UICONTROL Campaign management]** > **[!UICONTROL Non deliverables management]** > **[!UICONTROL Mail rule sets]**.
 
-Det här dokumentet innehåller en lista över alla fördefinierade domäner som motsvarar de japanska format som hanteras av Adobe Campaign. För ytterligare information, se [Campaign v8-dokumentation](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/sending-emails-on-japanese-mobiles.html?lang=sv-SE){target="_blank"}.
+Det här dokumentet innehåller en lista över alla fördefinierade domäner som motsvarar de japanska format som hanteras av Adobe Campaign. För ytterligare information, se [Campaign v8-dokumentation](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/sending-emails-on-japanese-mobiles.html){target="_blank"}.
 
 ![](assets/mail_rule_sets.png)
 
@@ -331,7 +331,7 @@ Med parametern **MIME-struktur** (Multipurpose Internet Mail Extensions) kan du 
 
 Om alternativet **[!UICONTROL Image inclusion]** är aktiverat visas dessa direkt i e-postmeddelandet. Bilderna överförs sedan och URL-länkarna ersätts av innehållet.
 
-Det här alternativet används särskilt av den japanska marknaden för **Deco-mail**, **Decore Mail** eller **Decoration Mail**. Mer information finns i dokumentationen för [Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/sending-emails-on-japanese-mobiles.html?lang=sv-SE){target="_blank"}.
+Det här alternativet används särskilt av den japanska marknaden för **Deco-mail**, **Decore Mail** eller **Decoration Mail**. Mer information finns i dokumentationen för [Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/sending-emails-on-japanese-mobiles.html){target="_blank"}.
 
 >[!IMPORTANT]
 >
@@ -395,14 +395,14 @@ Parametrarna är följande:
 
 I det föregående exemplet, med normala villkor, distribueras adresserna enligt följande:
 
-    * &quot;1&quot;: 5 / (5+5+1) = 45%
-    * &quot;2&quot;: 5 / (5+5+1) = 45%
-    * &quot;3&quot;: 1 / (5+5+1) = 10%
+* &quot;1&quot;: 5 / (5+5+1) = 45 %
+* &quot;2&quot;: 5 / (5+5+1) = 45 %
+* &quot;3&quot;: 1 / (5+5+1) = 10 %
 
 Om till exempel den första adressen inte kan användas för ett givet MX, skickas meddelanden enligt följande:
 
-    * &quot;2&quot;: 5 / (5+1) = 83%
-    * &quot;3&quot;: 1 / (5+1) = 17%
+* &quot;2&quot;: 5 / (5+1) = 83 %
+* &quot;3&quot;: 1 / (5+1) = 17 %
 
 * **includeDomains**: gör att du kan reservera den här IP-adressen för e-post som tillhör en viss domän. Det här är en lista med masker som kan innehålla ett eller flera jokertecken (&#42;). Om attributet inte anges kan alla domäner använda den här IP-adressen.
 

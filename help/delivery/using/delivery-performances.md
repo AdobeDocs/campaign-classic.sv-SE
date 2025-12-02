@@ -4,9 +4,9 @@ title: Bästa praxis för leveransprestanda
 description: Läs mer om leveransresultat och bästa praxis
 badge-v8: label="Gäller även för v8" type="Positive" tooltip="Gäller även Campaign v8"
 feature: Deliverability
-role: User, Data Engineer
+role: User, Developer
 exl-id: cc793d7b-0a26-4a75-97ed-d79c87d9b3b8
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
 workflow-type: tm+mt
 source-wordcount: '465'
 ht-degree: 5%

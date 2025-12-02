@@ -3,9 +3,9 @@ product: campaign
 title: Beskrivning av Adobe Campaign Classic datamodell
 description: Detta dokument beskriver Adobe Campaign datamodell
 feature: Data Model
-role: Data Engineer, Developer
+role: Developer
 exl-id: fc0fd23c-f9ea-4e30-b47b-a84143d882ca
-source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
+source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
 workflow-type: tm+mt
 source-wordcount: '2354'
 ht-degree: 1%
@@ -113,7 +113,7 @@ Den här tabelluppsättningen är länkad till modulen **Leverans** som gör att
 
 ## Kampanjhantering {#campaign-management}
 
-Den här tabelluppsättningen är länkad till modulen **Marknadsföringskampanjer** som gör det möjligt att definiera, optimera, köra och analysera kommunikation och marknadsföringskampanjer. Mer information finns i [dokumentationen för Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/campaigns/campaigns.html?lang=sv-SE){target=_blank}.
+Den här tabelluppsättningen är länkad till modulen **Marknadsföringskampanjer** som gör det möjligt att definiera, optimera, köra och analysera kommunikation och marknadsföringskampanjer. Mer information om detta hittar du i [dokumentationen för Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/campaigns/campaigns.html){target=_blank}.
 
 ![](assets/data-model_campaign.png)
 
@@ -129,7 +129,7 @@ Den här tabelluppsättningen är länkad till modulen **Marknadsföringskampanj
 
 ## Enhetlig kommunikation {#communication-consistency}
 
-Den här tabelluppsättningen är länkad till modulen **Kampanjoptimering** som gör att du kan styra, filtrera och övervaka leveransen. Se [Campaign v8-dokumentationen](https://experienceleague.adobe.com/docs/campaign/automation/campaign-optimization/campaign-typologies.html?lang=sv-SE){target="_blank"}.
+Den här tabelluppsättningen är länkad till modulen **Kampanjoptimering** som gör att du kan styra, filtrera och övervaka leveransen. Se [Campaign v8-dokumentationen](https://experienceleague.adobe.com/docs/campaign/automation/campaign-optimization/campaign-typologies.html){target="_blank"}.
 
 
 ![](assets/data-model_typology.png)

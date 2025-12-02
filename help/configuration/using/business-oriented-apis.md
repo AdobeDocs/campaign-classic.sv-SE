@@ -3,11 +3,11 @@ product: campaign
 title: Verksamhetsorienterade API:er
 description: Verksamhetsorienterade API:er
 feature: API
-role: Data Engineer, Developer
+role: Developer
 exl-id: e6638870-3141-4f12-b904-db436127c0d1
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
 workflow-type: tm+mt
-source-wordcount: '629'
+source-wordcount: '618'
 ht-degree: 1%
 
 ---
@@ -18,7 +18,7 @@ Business API är specifikt för varje typ av objekt. De har effekt på:
 
 * Leveranser:
 
-   * Skapa en leveransåtgärd, se [SubmitDelivery (nms:delivery)](#submitdelivery--nms-delivery-),
+   * Se [SubmitDelivery (nms:delivery)](#submitdelivery--nms-delivery-) för att skapa en leveransåtgärd.
    * skicka en kampanj (starta, pausa, stoppa, skicka bevis),
    * återställer leveransloggar.
 
@@ -27,17 +27,17 @@ Business API är specifikt för varje typ av objekt. De har effekt på:
    * starta ett arbetsflöde,
    * verifiera processer osv.
 
-     Se [SOAP metoder i JavaScript](../../configuration/using/soap-methods-in-javascript.md).
+     Mer information finns i [SOAP-metoder i JavaScript](../../configuration/using/soap-methods-in-javascript.md).
 
 * Innehållshantering
-* Prenumerationshantering, se [Prenumerera (nms:subscription)](#subscribe--nms-subscription-) och [Avsluta prenumeration (nms:subscription)](#unsubscribe--nms-subscription-).
+* Prenumerationshantering, se [Prenumerera (nms:subscription)](#subscribe--nms-subscription-) och [Avbeställ (nms:subscription)](#unsubscribe--nms-subscription-).
 * Dataprocesser: import, export.
 
 I det här avsnittet beskrivs användningen av tjänsterna &quot;Subscribe&quot;, &quot;Unsubscribe&quot; och &quot;SubmitDelivery&quot;.
 
 >[!IMPORTANT]
 >
->[Kampanjens JSAPI-dokumentation](https://experienceleague.adobe.com/developer/campaign-api/api/index.html?lang=sv) innehåller ytterligare information om SOAP anrop och användning av JavaScript i Adobe Campaign, samt en fullständig referens till alla metoder och funktioner som används i programmet.
+>[Kampanjens JSAPI-dokumentation](https://experienceleague.adobe.com/developer/campaign-api/api/index.html?lang=sv) innehåller ytterligare information om SOAP-anrop och användning av JavaScript i Adobe Campaign, samt en fullständig referens till alla metoder och funktioner som används i programmet.
 
 ## Prenumerera (nms:subscription) {#subscribe--nms-subscription-}
 
@@ -47,10 +47,10 @@ Följande parametrar krävs för att anropa tjänsten:
 
 * autentisering,
 * prenumerationstjänstens interna namn,
-* ett XML-dokument som innehåller mottagarinformationen (från schemat &quot;nms:mottagare&quot;),
+* ett XML-dokument som innehåller mottagarinformationen (från schemat nms:recipient),
 * ett booleskt värde för att skapa mottagare om det inte redan finns ett.
 
-Beskrivning av &quot;subscribe&quot;-metoden i schemat &quot;nms:subscription&quot;:
+Beskrivning av prenumerationsmetoden i nms:subscription-schemat:
 
 ```
 <method name="Subscribe" static="true">
@@ -62,7 +62,7 @@ Beskrivning av &quot;subscribe&quot;-metoden i schemat &quot;nms:subscription&qu
 </method>
 ```
 
-Definitionen av avstämningsnyckeln måste anges via attributet _&#x200B;**key** i elementet `<recipient>` i XML-dokumentet. Innehållet i det här attributet är en kommaavgränsad XPath-lista.
+Definitionen av avstämningsnyckeln måste anges via attributet _**key** i elementet `<recipient>` i XML-dokumentet. Innehållet i det här attributet är en kommaavgränsad XPath-lista.
 
 Anropet returnerar inga data, förutom fel.
 
@@ -80,7 +80,7 @@ Uppdaterar både mottagaren och prenumerationen.
 <recipient _key="email, [folder-id]" email= "john.doe@adobe.com" folder-id="1305" firstName="John" lastName="Doe"/>
 ```
 
-### Exempel på SOAP meddelanden {#example-of-soap-messages}
+### Exempel på SOAP-meddelanden {#example-of-soap-messages}
 
 * Fråga:
 
@@ -120,9 +120,9 @@ Följande parametrar krävs för att anropa tjänsten:
 
 * autentisering,
 * Internt namn på tjänsten som du vill avbeställa,
-* ett XML-dokument som innehåller mottagarinformationen (från schemat &quot;nms:mottagare&quot;),
+* ett XML-dokument som innehåller mottagarinformationen (från schemat nms:recipient),
 
-Beskrivning av metoden &quot;Unsubscribe&quot; i schemat &quot;nms:subscription&quot;:
+Beskrivning av metoden Unsubscribe i schemat nms:subscription:
 
 ```
 <method name="Unsubscribe" static="true">
@@ -143,7 +143,7 @@ Om mottagaren inte finns i databasen eller inte prenumererar på den berörda in
 
 Anropet returnerar inga data, förutom fel.
 
-### Exempel på SOAP meddelanden {#example-of-soap-messages-1}
+### Exempel på SOAP-meddelanden {#example-of-soap-messages-1}
 
 Fråga:
 
@@ -198,7 +198,7 @@ Beskrivning av metoden i dess schema:
 
 En leveransmall måste skapas från Adobe Campaign klientkonsol. Den innehåller de parametrar som är gemensamma för alla leveranser (avsändarens adress eller meddelandets giltighetstid).
 
-Indata-XML-dokumentet är ett leveransmallfragment som följer strukturen i schemat nms:delivery. Den kommer att innehålla alla ytterligare data som inte kan definieras statiskt i leveransmallen (t.ex. en lista över mottagare som ska användas).
+Indata-XML-dokumentet är ett leveransmallfragment som följer strukturen i nms:delivery-schemat. Den kommer att innehålla alla ytterligare data som inte kan definieras statiskt i leveransmallen (t.ex. en lista över mottagare som ska användas).
 
 Anropet returnerar inga data, förutom fel.
 

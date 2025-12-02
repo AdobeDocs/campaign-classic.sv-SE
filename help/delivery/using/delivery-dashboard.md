@@ -4,12 +4,12 @@ title: Kontrollpanel för leverans
 description: Läs mer om hur du använder kontrollpanelen för leverans för att övervaka leveranser
 badge-v8: label="Gäller även för v8" type="Positive" tooltip="Gäller även Campaign v8"
 feature: Monitoring
-role: User, Data Engineer
+role: User, Developer
 exl-id: 44ecc8c6-6584-43eb-96b4-7d8463053123
-source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
+source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
 workflow-type: tm+mt
 source-wordcount: '1193'
-ht-degree: 3%
+ht-degree: 4%
 
 ---
 
@@ -35,7 +35,7 @@ Här är den information du kan övervaka med hjälp av flera flikar som är til
 
 * [Förstå leveransfel](understanding-delivery-failures.md)
 * [Förstå karantänshantering](understanding-quarantine-management.md)
-* [God praxis för leverans](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/delivery-best-practices.html?lang=sv-SE){target="_blank"}
+* [God praxis för leverans](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/delivery-best-practices.html){target="_blank"}
 * [Hantera leveranser](about-deliverability.md)
 
 ## Leveranssammanfattning {#delivery-summary}
@@ -64,7 +64,7 @@ För en leverans kan du till exempel bara visa mottagare med en misslyckad lever
 
 Med länken **[!UICONTROL Display the mirror page for this message...]** kan du visa spegelsidan för innehållet i leveransen som valts i listan i ett nytt fönster.
 
-Spegelsidan är bara tillgänglig för leveranser för vilka HTML-innehåll har definierats. Mer information finns i [dokumentationen för Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/mirror-page.html?lang=sv-SE){target="_blank"}.
+Spegelsidan är bara tillgänglig för leveranser för vilka HTML-innehåll har definierats. Mer information om detta hittar du i [dokumentationen för Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/mirror-page.html){target="_blank"}.
 
 ![](assets/s_ncs_user_wizard_miror_page_link.png)
 
@@ -98,7 +98,7 @@ Fliken **[!UICONTROL Audit]** innehåller leveransloggen och alla meddelanden so
 
 Med knappen **[!UICONTROL Refresh]** kan du uppdatera data. Använd knappen **[!UICONTROL Filters]** för att definiera ett filter för data.
 
-Med särskilda ikoner kan du identifiera fel och varningar. Se det här avsnittet i [dokumentationen för Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/validate/delivery-analysis.html?lang=sv-SE){target="_blank"}.
+Med särskilda ikoner kan du identifiera fel och varningar. Se det här avsnittet i [dokumentationen för Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/validate/delivery-analysis.html){target="_blank"}.
 
 På underfliken **[!UICONTROL Proofs]** kan du visa en lista över de korrektur som har skickats.
 

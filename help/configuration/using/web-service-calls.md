@@ -3,11 +3,11 @@ product: campaign
 title: Webbtjänstanrop
 description: Webbtjänstanrop
 feature: API
-role: Data Engineer, Developer
+role: Developer
 exl-id: ce94e7e7-b8f8-4c82-937f-e87d15e50c34
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
 workflow-type: tm+mt
-source-wordcount: '923'
+source-wordcount: '918'
 ht-degree: 1%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 1%
 
 ## Allmän information {#general-information}
 
-Alla API-metoder presenteras i form av webbtjänster. På så sätt kan du hantera alla Adobe Campaign-funktioner via SOAP, som är startpunkten för Adobe Campaign programserver. Adobe Campaign-konsolen använder bara SOAP samtal.
+Alla API-metoder presenteras i form av webbtjänster. På så sätt kan du hantera alla Adobe Campaign-funktioner via SOAP-anrop, som är startpunkten för Adobe Campaign programserver. Adobe Campaign-konsolen använder bara SOAP-samtal.
 
 Med webbtjänster kan du skapa många program från ett tredjepartssystem:
 
@@ -64,7 +64,7 @@ Exempel på &quot;const&quot;-typ &quot;ExecuteQuery&quot;-metoden från schemat
 </method>
 ```
 
-Indataparametern för den här metoden är ett XML-dokument i formatet för schemat &quot;xtk:queryDef&quot;.
+Indataparametern för den här metoden är ett XML-dokument i formatet för xtk:queryDef-schemat.
 
 ## Beskrivning av webbtjänst: WSDL {#web-service-description--wsdl}
 
@@ -79,7 +79,7 @@ https://`<server>`/nl/jsp/schemawsdl.jsp?schema=`<schema>`
 Med:
 
 * **`<server>`**: Adobe Campaign programserver (nlserver web)
-* **`<schema>`**: schemaidentifieringsnyckel (namnrymd:schema_name)
+* **`<schema>`**: schemaidentifieringsnyckel (namnområde :schema_name)
 
 ### Exempel på metoden ExecuteQuery i schemat xtk:queryDef {#example-on-the--executequery--method-of-schema--xtk-querydef-}
 
@@ -154,7 +154,7 @@ Typdefinitioner baseras på XML-scheman. I det här exemplet använder metoden&q
 
 #### Bindning {#binding}
 
-`<binding>`-delen anger SOAP kommunikationsprotokoll ( `<soap:binding>` ), datatransport i HTTP (värdet för attributet transport) och dataformatet för åtgärden ExecuteQuery. SOAP innehåller meddelandesegmenten direkt utan omformning.
+`<binding>`-delen anger SOAP kommunikationsprotokoll ( `<soap:binding>` ), datatransport i HTTP (värdet för attributet transport) och dataformatet för åtgärden ExecuteQuery. Innehållet i SOAP-kuvertet innehåller meddelandesegmenten direkt utan omformning.
 
 ```
 <binding name="queryDefMethodsSoap" type="tns:queryDefMethodsSoap">
@@ -226,12 +226,12 @@ När du använder konsolen är det:
 * skickas i inloggningssvaret (i HTTP-huvudet)
 * används i varje fråga (i HTTP-huvudet)
 
-Från en POSTS- och GET-HTTP:
+Från en POST och GET HTTP:
 
 * servern slutför länkarna med token
 * servern lägger till ett dolt fält i formulär
 
-Från ett SOAP samtal:
+Från ett SOAP-samtal:
 
 * det läggs till för att ringa rubriker
 

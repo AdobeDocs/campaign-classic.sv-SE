@@ -3,11 +3,11 @@ product: campaign
 title: Om schemautgåva
 description: Kom igång med schemautgåvan
 feature: Schema Extension
-role: Data Engineer, Developer
+role: Developer
 exl-id: 9e10b24e-c4de-4e76-bbed-0d05f62120b7
-source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
+source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
 workflow-type: tm+mt
-source-wordcount: '1006'
+source-wordcount: '1005'
 ht-degree: 6%
 
 ---
@@ -24,7 +24,7 @@ Mer information om inbyggda tabeller i Campaign och hur de fungerar finns i [det
 
 ## Utöka eller skapa scheman {#extending-or-creating-schemas}
 
-Om du vill lägga till ett fält eller index eller något annat element i ett av de centrala datamappningarna i Campaign, t.ex. mottagartabellen (nms:mottagare), måste du utöka det schemat. Mer information finns i avsnittet [Utöka ett schema](../../configuration/using/extending-a-schema.md).
+Om du vill lägga till ett fält eller index eller något annat element i ett av huvuddataramodellerna i Campaign, till exempel mottagartabellen (nms:recipient), måste du utöka det schemat. Mer information finns i avsnittet [Utöka ett schema](../../configuration/using/extending-a-schema.md).
 
 Om du vill lägga till en helt ny typ av data som inte finns i körklart läge i Adobe Campaign (till exempel en kontraktstabell) kan du skapa ett anpassat schema direkt. Mer information finns i avsnittet [Datascheman](../../configuration/using/data-schemas.md).
 
@@ -116,7 +116,7 @@ Med attribut kan du definiera fälten som utgör dataobjektet. Du kan använda k
 
 ![](assets/schemaextension_getting_started_2.png)
 
-Den fullständiga listan med attribut är tillgänglig i avsnittet [`<attribute>` element &#x200B;](../../configuration/using/schema/attribute.md). Här är några av de vanligaste attributen:
+Den fullständiga listan med attribut är tillgänglig i avsnittet [`<attribute>` element ](../../configuration/using/schema/attribute.md). Här är några av de vanligaste attributen:
 
 * **@advanced**
 * **@dataPolicy**

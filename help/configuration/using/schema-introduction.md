@@ -3,18 +3,18 @@ product: campaign
 title: Schemareferens
 description: Referenslista för schema
 feature: Custom Resources
-role: Data Engineer, Developer
+role: Developer
 exl-id: 5745fc60-9df3-4ad0-bbeb-f6ae8c86a5aa
-source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
+source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
 workflow-type: tm+mt
-source-wordcount: '90'
+source-wordcount: '89'
 ht-degree: 20%
 
 ---
 
 # Schemareferens {#schema-reference}
 
-När du redigerar ett schema är ett godkännandesystem baserat på källschemat (xtk:srcSchema) tillgängligt. Vissa fel kan också upptäckas när databasen uppdateras med assistenten &quot;Databasstrukturuppdatering...&quot;.
+När du redigerar ett schema finns det ett godkännandesystem som är baserat på källschemat (xtk:srcSchema) tillgängligt. Vissa fel kan också upptäckas när databasen uppdateras med assistenten &quot;Databasstrukturuppdatering...&quot;.
 
 Som standard är alla booleska typattribut&quot;false&quot; i Adobe Campaign-scheman. Om du vill aktivera dem måste du ange attributet i schemat och ange värdet till &quot;true&quot;.
 

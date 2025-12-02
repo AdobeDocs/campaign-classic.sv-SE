@@ -3,9 +3,9 @@ product: campaign
 title: Lägga till ytterligare SQL-funktioner
 description: Lär dig hur du definierar ytterligare SQL-funktioner
 feature: Configuration, Instance Settings
-role: Data Engineer, Developer
+role: Developer
 exl-id: 04b0a0e5-d6df-447c-ac67-66adb1bdf717
-source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
+source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
 workflow-type: tm+mt
 source-wordcount: '1034'
 ht-degree: 0%
@@ -122,7 +122,7 @@ Fältet **@name** refererar till funktionens namn och &quot;args&quot; är den l
 * Slutligen innehåller elementet **providerPart** funktionsimplementeringen.
 
    * Attributet **provider** är obligatoriskt, det anger för vilka databassystem implementeringen tillhandahålls. När uttryckssyntaxen eller underliggande funktioner skiljer sig åt kan alternativa implementeringar tillhandahållas enligt databasen, vilket visas i exemplet.
-   * Attributet **@body** innehåller funktionsimplementeringen. Obs! Den här implementeringen måste vara ett uttryck i databasspråket (inte ett kodblock). Beroende på databaser kan uttryck vara underfrågor (&quot;(markera kolumn från tabell där...)&quot;) som bara returnerar ett värde. Detta är till exempel fallet i Oraclet (frågan måste skrivas inom hakparenteser).
+   * Attributet **@body** innehåller funktionsimplementeringen. Obs! Den här implementeringen måste vara ett uttryck i databasspråket (inte ett kodblock). Beroende på databaser kan uttryck vara underfrågor (&quot;(markera kolumn från tabell där...)&quot;) som bara returnerar ett värde. Detta är till exempel fallet i Oracle (frågan måste skrivas inom hakparenteser).
 
   >[!NOTE]
   >

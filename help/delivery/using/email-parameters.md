@@ -3,11 +3,11 @@ product: campaign
 title: E-postparametrar
 description: Läs mer om alternativ och inställningar som är specifika för e-postleverans
 feature: Email
-role: User, Developer, Data Engineer
+role: User, Developer
 hide: true
 hidefromtoc: true
 exl-id: 1bb36e71-9f1a-4553-b266-eca3f48688e2
-source-git-commit: 0507e0372a81351adc145dafdd3cbe5d5422dc00
+source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
 workflow-type: tm+mt
 source-wordcount: '905'
 ht-degree: 7%
@@ -82,7 +82,7 @@ Välj formatet för e-postmeddelandet i fönstrets nedre del:
 
 Spegelsidan är en HTML-sida som är tillgänglig online via en webbläsare. Innehållet är identiskt med e-postmeddelandet.
 
-Spegelsidan genereras som standard om länken infogas i postens innehåll. Mer information om infogning av anpassningsblock finns i [dokumentationen för Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/personalize/personalization-blocks.html?lang=sv-SE){target="_blank"}.
+Spegelsidan genereras som standard om länken infogas i postens innehåll. Mer information om infogning av anpassningsblock finns i [dokumentationen för Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/personalize/personalization-blocks.html){target="_blank"}.
 
 I leveransegenskaperna kan du ändra genereringsläget för den här sidan med fältet **[!UICONTROL Mode]** på fliken **[!UICONTROL Validity]**.
 

@@ -3,11 +3,11 @@ product: campaign
 title: Dataorienterade API:er
 description: Dataorienterade API:er
 feature: API
-role: Data Engineer, Developer
+role: Developer
 exl-id: a392c55e-541a-40b1-a910-4a6dc79abd2d
-source-git-commit: 517b85f5d7691acc2522bf4541f07c34c60c7fbf
+source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
 workflow-type: tm+mt
-source-wordcount: '1813'
+source-wordcount: '1796'
 ht-degree: 0%
 
 ---
@@ -78,7 +78,7 @@ Definition av metoden &quot;ExecuteQuery&quot; i schemat &quot;xtk:queryDef&quot
 
 ### Format för XML-dokumentet i indatafrågan {#format-of-the-xml-document-of-the-input-query}
 
-XML-dokumentets struktur för frågan beskrivs i schemat &quot;xtk:queryDef&quot;. Det här dokumentet beskriver satserna i en SQL-fråga: &quot;select&quot;, &quot;where&quot;, &quot;order by&quot;, &quot;group by&quot;, &quot;having&quot;.
+XML-dokumentets struktur för frågan beskrivs i xtk:queryDef-schemat. Det här dokumentet beskriver satserna i en SQL-fråga: &quot;select&quot;, &quot;where&quot;, &quot;order by&quot;, &quot;group by&quot;, &quot;having&quot;.
 
 ```xml
 <queryDef schema="schema_key" operation="operation_type">
@@ -141,7 +141,7 @@ Syntaxen **XPath** används för att hitta data baserat på indatabildmet. Mer i
 
 #### Exempel på åtgärden get {#example-with-the--get--operation}
 
-Hämtar efternamnet och förnamnet för en mottagare (&quot;nms:receimschema&quot;) med ett filter i e-postmeddelandet.
+Hämtar efternamnet och förnamnet för en mottagare (&quot;nms:recipient&quot;-schema) med ett filter i e-postmeddelandet.
 
 ```xml
 <queryDef schema="nms:recipient" operation="get">
@@ -306,7 +306,7 @@ Den här syntaxen förenklar frågan när mer än två data används i villkoret
   </where>
   ```
 
-  Så här hämtar du mappens fält från schemat &quot;nms:receive&quot;:
+  Så här hämtar du mappens fält från nms:recipient-schemat:
 
   ```xml
   <select>
@@ -391,7 +391,7 @@ För att undvika bindning av en parameter måste attributet &quot;noSqlBind&quot
 
 Returparametern är ett XML-dokument i formatet för det schema som är associerat med frågan.
 
-Exempel på en retur från schemat &quot;nms:mottagare&quot; för en &quot;get&quot;-åtgärd:
+Exempel på en retur från nms:recipient-schemat för en get-åtgärd:
 
 ```
 <recipient email="john.doe@adobe.com" lastName"Doe" firstName="John"/>
@@ -442,7 +442,7 @@ I stället för:
 </recipient>
 ```
 
-### Exempel på SOAP meddelanden {#example-of-soap-messages}
+### Exempel på SOAP-meddelanden {#example-of-soap-messages}
 
 * Fråga:
 
@@ -494,7 +494,7 @@ Detta dokument kompletteras med anvisningar för hur skrivningsproceduren konfig
 
 Anropet returnerar inga data, förutom fel.
 
-Definition av metoderna &quot;Write&quot; och &quot;WriteCollection&quot; i schemat &quot;xtk:session&quot;:
+Definition av metoderna Write och WriteCollection i xtk:session-schemat:
 
 ```xml
 <method name="Write" static="true">
@@ -575,7 +575,7 @@ Kopplar mappen till en mottagare baserat på dess interna namn (@name).
 
 Attributen&quot;_key&quot; och&quot;_operation&quot; kan anges för ett länkat element. Beteendet för det här elementet är detsamma som för huvudelementet i indatarammet.
 
-Definitionen av nyckeln för huvudentiteten (&quot;nms:receive&quot;) består av ett fält från en länkad tabell (elementet `<folder>` schema &quot;xtk:folder&quot;) och e-postmeddelandet.
+Definitionen av nyckeln för huvudentiteten (&quot;nms:recipient&quot;) består av ett fält från en länkad tabell (element `<folder>` schema &quot;xtk:folder&quot;) och e-postmeddelandet.
 
 >[!NOTE]
 >
@@ -593,7 +593,7 @@ Uppdaterar företaget (länkad tabell i&quot;cus:company&quot;-schema) från en 
 
 #### Exempel 3 {#example-3}
 
-Lägga till en mottagare i en grupp med grupprelationstabellen (&quot;nms:rcpGrpRel&quot;):
+Lägger till en mottagare i en grupp med grupprelationstabellen (&quot;nms:rcpGrpRel&quot;):
 
 ```xml
 <recipient _key="@email" email="martin.ledger@adobe.net" xtkschema="nms:recipient">
@@ -611,7 +611,7 @@ Lägga till en mottagare i en grupp med grupprelationstabellen (&quot;nms:rcpGrp
 
 Som standard måste alla samlingselement fyllas i för att XML-samlingens element ska kunna uppdateras. Data från databasen ersätts med data från indatadokumentet. Om dokumentet bara innehåller de element som ska uppdateras måste du fylla i attributet&quot;_operation&quot; för alla samlingselement som ska uppdateras för att tvinga fram en sammanfogning med databasens XML-data.
 
-### Exempel på SOAP meddelanden {#example-of-soap-messages-1}
+### Exempel på SOAP-meddelanden {#example-of-soap-messages-1}
 
 * Fråga:
 

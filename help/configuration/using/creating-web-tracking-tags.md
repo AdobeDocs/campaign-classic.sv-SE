@@ -3,9 +3,9 @@ product: campaign
 title: Skapa webbspårningstaggar
 description: Lär dig hur du skapar webbspårningstaggar
 feature: Application Settings
-role: Data Engineer, Developer
+role: Developer
 exl-id: 160df6e1-43e5-4eb9-ad2f-5db444e314ea
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
 workflow-type: tm+mt
 source-wordcount: '258'
 ht-degree: 0%
@@ -30,7 +30,7 @@ Så här genererar du den HTML-kod som ska infogas på sidan:
 * Ange taggens etikett: den kommer att visas i spårningsloggarna,
 * Ange käll-URL: det här fältet används i informationssyfte och du kan ange den spårade sidan (valfritt),
 * Ange vid behov en giltighetsperiod,
-* Klicka på koden **[!UICONTROL Generate]** HTML.
+* Klicka på **[!UICONTROL Generate]** HTML-kod.
 
 Kopiera sedan den genererade koden och klistra in den på sidan som ska spåras.
 

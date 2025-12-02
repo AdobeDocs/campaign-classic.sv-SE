@@ -3,24 +3,24 @@ product: campaign
 title: Implementera SOAP-metoder
 description: Implementera SOAP-metoder
 feature: Configuration
-role: Data Engineer, Developer
+role: Developer
 exl-id: 441a0e5c-fa7f-46c8-a65a-5cca4c846d43
-source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
+source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
 workflow-type: tm+mt
-source-wordcount: '419'
+source-wordcount: '417'
 ht-degree: 2%
 
 ---
 
-# SOAP{#implementing-soap-methods}
+# Implementera SOAP-metoder{#implementing-soap-methods}
 
 
 
 ## Introduktion {#introduction}
 
-Det går att skapa SOAP metoder i JavaScript. Den här funktionen aktiverar helt enkelt tillämpande processer och kan undvika att utveckla JSP:er och anrop till dem i formulären.
+Det går att skapa SOAP-metoder i JavaScript. Den här funktionen aktiverar helt enkelt tillämpande processer och kan undvika att utveckla JSP:er och anrop till dem i formulären.
 
-Dessa SOAP fungerar på samma sätt som de som definierats internt i programmet. Samma attribut stöds: static, key only och const.
+Dessa SOAP-metoder fungerar på samma sätt som de som definierats internt i programmet. Samma attribut stöds: static, key only och const.
 
 ## Definiera ett metodbibliotek {#defining-a-method-library}
 
@@ -39,7 +39,7 @@ Det här namnet sammanfaller med namnet (med namnutrymmet) för entiteten av typ
 
 Exempel:
 
-Metoden testLog(msg) deklareras i tillägget nms:mottagare
+Metoden testLog(msg) har deklarerats i tillägget nms:recipient
 
 ```
 <method name="testLog" static="true" library="cus:test">
@@ -55,7 +55,7 @@ Metoden testLog(msg) deklareras i tillägget nms:mottagare
 
 ### Definition {#definition}
 
-SOAP implementeras i form av en JavaScript-funktion som grupperas i ett skript som representerar ett bibliotek.
+SOAP-metoder implementeras i form av en JavaScript-funktion som grupperas i ett skript som representerar ett bibliotek.
 
 >[!NOTE]
 >
@@ -73,7 +73,7 @@ Namnet på funktionen måste vara i följande format:
 
 Exempel:
 
-Följande JavaScript-funktion är implementeringen av den metod som beskrivs ovan. Den ska definieras i typentiteten&quot;JavaScript Code&quot; med hjälp av namnet&quot;cus:test&quot;.
+Följande JavaScript-funktion är implementeringen av den metod som beskrivs ovan. Den ska definieras i entiteten av typen JavaScript Code med hjälp av &#39;cus:test&#39;.
 
 ```
 function nms_recipient_testLog(message)

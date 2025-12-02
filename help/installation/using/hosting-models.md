@@ -1,19 +1,19 @@
 ---
 product: campaign
-title: Värdmodeller
+title: Värdbaserade modeller
 description: Upptäck värdmodeller för Campaign
 feature: Installation, Architecture, Deployment
-role: Architect
+role: Developer
 level: Beginner
 exl-id: a06b1365-d487-4df1-8f4a-7268b871a427
-source-git-commit: a38d53f4b37aadbc53446b5e399af2eae56c12af
+source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
 workflow-type: tm+mt
 source-wordcount: '615'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
-# Värdmodeller{#hosting-models}
+# Värdbaserade modeller{#hosting-models}
 
 
 
@@ -21,15 +21,15 @@ Adobe Campaign erbjuder ett urval av tre värdmodeller som ger flexibilitet och 
 
 >[!NOTE]
 >
->För värdmiljöer i Adobe kan huvudinstallations- och konfigurationssteg bara utföras av Adobe, som att konfigurera servern och anpassa instanskonfigurationsfiler. Mer information om de viktigaste skillnaderna mellan distributionslägen finns på [den här sidan](../../installation/using/capability-matrix.md).
+>För Adobe värdmiljöer kan huvudinstallations- och konfigurationssteg bara utföras av Adobe, till exempel konfigurera servern och anpassa instanskonfigurationsfiler. Mer information om de viktigaste skillnaderna mellan distributionslägen finns på [den här sidan](../../installation/using/capability-matrix.md).
 
 ## Managed Services / Hosted
 
-Adobe Campaign kan driftsättas as a Managed Service: alla komponenter i Adobe Campaign, inklusive användargränssnittet, körningsmotorn och kundens Campaign-databas är fullt värdar för Adobe, inklusive e-postkörning, spegelsidor, spårningsserver och externt riktade webbkomponenter som sidan/inställningscentret och landningssidorna.
+Adobe Campaign kan driftsättas i as a Managed Service: alla komponenter i Adobe Campaign, inklusive användargränssnittet, körningsmotorn och kundens Campaign-databas är fullt värdar för Adobe, inklusive e-postkörning, spegelsidor, spårningsserver och externt riktade webbkomponenter som sidan/inställningscentret och landningssidorna.
 
 ![](assets/deployment_hosted.png)
 
-Som värdkund utförs de flesta installations- och konfigurationsstegen av Adobe. Du kan anpassa implementeringen i följande avsnitt:
+Som värdkund utför Adobe de flesta installations- och konfigurationsstegen. Du kan anpassa implementeringen i följande avsnitt:
 
 * Konfigurera spårning och spegling av sidadresser per varumärke. För transaktionsmeddelanden, se [till det här avsnittet](../../message-center/using/additional-configurations.md#configuring-multibranding).
 * Installera klientkonsolen: se [till det här avsnittet](../../installation/using/installing-the-client-console.md).
@@ -43,7 +43,7 @@ Adobe Campaign kan driftsättas lokalt: alla komponenter i Adobe Campaign, inklu
 
 ![](assets/deployment_onpremise.png)
 
-Som en lokal kund ska du, innan du börjar distribuera Campaign Classic, ta hand om följande krav och rekommendationer:
+Innan du börjar distribuera Campaign Classic måste du som kund ta hand om följande krav och rekommendationer:
 
 * Läs igenom [kompatibilitetsmatrisen](../../rn/using/compatibility-matrix.md) som visar alla versioner av de system och komponenter som stöds för Adobe Campaign.
 * Beroende på din miljö kan du läsa igenom [förutsättningarna för Windows](../../installation/using/prerequisites-of-campaign-installation-in-windows.md) och [förutsättningarna för Linux](../../installation/using/prerequisites-of-campaign-installation-in-linux.md).
@@ -51,11 +51,11 @@ Som en lokal kund ska du, innan du börjar distribuera Campaign Classic, ta hand
 * Kontrollera att de nödvändiga lagren för databasåtkomst är installerade på servern och tillgängliga från Adobe Campaign-kontot. [Läs mer](../../installation/using/application-server.md).
 * Konfigurera dina nätverk eftersom vissa processer behöver kommunicera med andra eller för att få åtkomst till nätverket och Internet. Detta innebär att vissa TCP-portar måste vara öppna för dessa processer. [Läs mer](../../installation/using/network-configuration.md) om krav för nätverkskonfiguration.
 * Läs [Checklista för kampanjsäkerhet och sekretess](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/security-privacy/get-started-security-privacy.html?lang=sv).
-* Kontrollera allmänna riktlinjer för beräkning av maskinvarukrav för lokal distribution [&#x200B; i den här artikeln](https://helpx.adobe.com/se/campaign/kb/hardware-sizing-guide.html).
+* Kontrollera allmänna riktlinjer för beräkning av maskinvarukrav för lokal distribution [ i den här artikeln](https://helpx.adobe.com/se/campaign/kb/hardware-sizing-guide.html).
 
 ## Hybrid
 
-När Adobe Campaign-lösningen driftsätts som en hybridmodell finns den på plats hos kunden och körningshanteringen levereras som en molntjänst av Adobe. Adobe Campaign marknadsinstans installeras inuti en kunds brandvägg, så personligt identifierbar information (PII) finns kvar internt och endast data som krävs för att personalisera e-post skickas till molnet för e-postkörning. Körningsinstansen, som finns i molnet, tar emot förfrågningar från den lokala instansen om att leverera e-postmeddelanden. Den här instansen personaliserar alla e-postmeddelanden och levererar dem. Inga data av något slag lagras permanent i molnet.
+När Adobe Campaign-lösningen används som en hybridmodell finns den på plats hos kunden och körningshanteringen tillhandahålls som en molntjänst av Adobe. Adobe Campaign marknadsinstans installeras inuti en kunds brandvägg, så personligt identifierbar information (PII) finns kvar internt och endast data som krävs för att personalisera e-post skickas till molnet för e-postkörning. Körningsinstansen, som finns i molnet, tar emot förfrågningar från den lokala instansen om att leverera e-postmeddelanden. Den här instansen personaliserar alla e-postmeddelanden och levererar dem. Inga data av något slag lagras permanent i molnet.
 
 ![](assets/deployment_hybrid.png)
 

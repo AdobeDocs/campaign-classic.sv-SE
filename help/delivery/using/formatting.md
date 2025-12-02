@@ -4,11 +4,11 @@ title: Formatering
 description: Formatering
 badge-v8: label="Gäller även för v8" type="Positive" tooltip="Gäller även Campaign v8"
 feature: Email Design
-role: User, Developer, Data Engineer
+role: User, Developer
 exl-id: d9688dc4-20c6-4a9a-990f-465f39b2faa2
-source-git-commit: 0fba6a2ad4ffa864e2f726f241aa9d7cd39072a6
+source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
 workflow-type: tm+mt
-source-wordcount: '1451'
+source-wordcount: '1446'
 ht-degree: 0%
 
 ---
@@ -25,7 +25,7 @@ En JavaScript-mall identifieras av sitt namn och namnutrymme på samma sätt som
 
 ### Struktur för en JavaScript-mall {#structure-of-a-javascript-template}
 
-Exempel på en JavaScript HTML-formateringsmall som baseras på &quot;cus:book&quot;-schemat:
+Exempel på en formateringsmall för JavaScript HTML som baseras på &quot;cus:book&quot;-schemat:
 
 ```
 <html>
@@ -262,9 +262,9 @@ I det här exemplet beskrivs följande steg:
    </form>
    ```
 
-1. Skapa JavaScript-mallarna med meddelandeinnehåll för HTML och textformat.
+1. Skapa JavaScript-mallar med meddelandeinnehåll för HTML- och textformat.
 
-   * I vårt exempel, för HTML:
+   * I vårt exempel för HTML:
 
      ```
      <html>     
@@ -380,7 +380,7 @@ Identifieringsnyckeln för en formatmall är en sträng som formas av namnutrymm
 
 ### Struktur för en formatmall {#structure-of-a-stylesheet}
 
-Exempel på en formateringsmall för HTML baserad på exempelschemat &quot;cus:book&quot;:
+Exempel på en HTML-formateringsformatmall baserad på exempelschemat &quot;cus:book&quot;:
 
 ```
 <?xml version="1.0" encoding="ISO-8859-1" ?>
@@ -444,7 +444,7 @@ Följande instruktioner beskriver formatmallens konfiguration för formateringen
 
 Som standard söker XSLT-processorn efter **mallen** som gäller för rot- eller huvudnoden i XML-indatadokumentet. Byggandet av utdatadokumentet börjar med den här **mallen**.
 
-I vårt exempel genereras en HTML-sida från &quot;cus:book&quot;-schemat genom att bokens namn och listan med kapitel visas.
+I vårt exempel genereras en HTML-sida från&quot;cus:book&quot;-schemat genom att bokens namn och listan med kapitel visas.
 
 >[!NOTE]
 >

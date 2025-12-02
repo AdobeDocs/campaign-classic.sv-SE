@@ -3,11 +3,11 @@ product: campaign
 title: SOAP-metoder i JavaScript
 feature: Configuration, Instance Settings
 description: SOAP-metoder i JavaScript
-role: Data Engineer, Developer
+role: Developer
 exl-id: 62020447-fe59-4363-994d-de4d8032bbd7
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
 workflow-type: tm+mt
-source-wordcount: '136'
+source-wordcount: '134'
 ht-degree: 9%
 
 ---
@@ -18,7 +18,7 @@ Detta är den JavaScript som körs på Adobe Campaign-servern.
 
 ## Statiska metoder {#static-methods}
 
-Statiska SOAP metoder används genom att en metod anropas i objektet som representerar schemat. Scheman är egenskaper för namespace-objekt. Dessa namnutrymmen är globala variabler, vilket innebär att variablerna xtk och nms representerar motsvarande namnutrymmen
+Statiska SOAP-metoder nås genom att en metod anropas i det objekt som representerar schemat. Scheman är egenskaper för namespace-objekt. Dessa namnutrymmen är globala variabler, vilket innebär att variablerna xtk och nms representerar motsvarande namnutrymmen
 
 I följande exempel anropas den statiska PostEvent-metoden för xtk:workflow-schemat:
 
@@ -28,9 +28,9 @@ xtk.workflow.PostEvent("WKF1", "signal", "", $recipient-id='123', false)
 
 ## Icke-statiska metoder {#non-static-methods}
 
-Om du vill använda icke-statiska SOAP-metoder måste du först hämta en entitet med metoderna&quot;get&quot; eller&quot;create&quot; i motsvarande scheman.
+Om du vill använda icke-statiska SOAP-metoder måste du först hämta en enhet med metoderna&quot;get&quot; eller&quot;create&quot; i motsvarande scheman.
 
-I följande exempel anropas metoden ExecuteQuery för schemat &quot;xtk:queryDef&quot;:
+I följande exempel anropas metoden ExecuteQuery för xtk:queryDef-schemat:
 
 ```
 var query = xtk.queryDef.create(
