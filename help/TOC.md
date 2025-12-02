@@ -3,11 +3,12 @@ audience: end-user
 breadcrumb-title: Dokumentation för Campaign Classic v7
 product: campaign
 title: Användarhandbok för Campaign Classic v7
+user-guide-titel: Campaign Classic v7 Guide
 user-guide-description: Produktdokumentation för Adobe Campaign Classic v7.
 sub-product: adobe campaign classic
 type: Documentation
-source-git-commit: 0507e0372a81351adc145dafdd3cbe5d5422dc00
-workflow-type: tm+mt
+source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
+workflow-type: ht
 source-wordcount: '2744'
 ht-degree: 100%
 
@@ -483,7 +484,7 @@ ht-degree: 100%
       + [Konfigurera ett arbetsflöde för återkommande import – DOLD](workflow/using/recurring-import-workflow.md)
    + Designfrågor {#designing-queries}
       + [Kvartalsvis listuppdatering med en inkrementell fråga – DOLD](workflow/using/quarterly-list-update.md)
-   + Fråga och filtrera {#designing-queries}
+   + Fråga och filtrera {#query-and-filter-hidden}
       + [Fråga mottagartabellen – DOLD](workflow/using/querying-recipient-table.md)
       + [Fråga leveransinformation – DOLD](workflow/using/querying-delivery-information.md)
       + [Utför aggregerad beräkning – DOLD](workflow/using/performing-aggregate-computing.md)
