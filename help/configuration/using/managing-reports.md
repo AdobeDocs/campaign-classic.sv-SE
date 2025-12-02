@@ -17,7 +17,7 @@ ht-degree: 3%
 
 
 
-Rapporter som baseras på ett schema som är specifikt för Adobe Campaign standardmottagare (nm:recipient eller schemalänkad) måste utvecklas på nytt för att data från den anpassade tabellen och dess tabeller ska kunna länkas via målmappningen (se avsnittet [ Målmappning ](../../configuration/using/target-mapping.md) ).
+Rapporter som baseras på ett schema som är specifikt för Adobe Campaign standardmottagare (nm:recipient eller schemalänkad) måste utvecklas på nytt för att data från den anpassade tabellen och dess tabeller ska kunna länkas via målmappningen (se avsnittet [&#x200B; Målmappning &#x200B;](../../configuration/using/target-mapping.md) ).
 
 Se [det här avsnittet](../../reporting/using/about-reports-creation-in-campaign.md) om du vill skapa nya rapporter.
 

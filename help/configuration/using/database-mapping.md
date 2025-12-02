@@ -14,7 +14,7 @@ ht-degree: 3%
 
 # Databasmappning{#database-mapping}
 
-SQL-mappningen för exempelschemat som beskrivs [ på den här sidan](schema-structure.md) genererar följande XML-dokument:
+SQL-mappningen för exempelschemat som beskrivs [&#x200B; på den här sidan](schema-structure.md) genererar följande XML-dokument:
 
 ```sql
 <schema mappingType="sql" name="recipient" namespace="cus" xtkschema="xtk:schema">

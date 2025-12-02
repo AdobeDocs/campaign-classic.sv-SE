@@ -62,7 +62,7 @@ Beskrivning av prenumerationsmetoden i nms:subscription-schemat:
 </method>
 ```
 
-Definitionen av avstämningsnyckeln måste anges via attributet _**key** i elementet `<recipient>` i XML-dokumentet. Innehållet i det här attributet är en kommaavgränsad XPath-lista.
+Definitionen av avstämningsnyckeln måste anges via attributet _&#x200B;**key** i elementet `<recipient>` i XML-dokumentet. Innehållet i det här attributet är en kommaavgränsad XPath-lista.
 
 Anropet returnerar inga data, förutom fel.
 

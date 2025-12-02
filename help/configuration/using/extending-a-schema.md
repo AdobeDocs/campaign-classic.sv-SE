@@ -18,7 +18,7 @@ ht-degree: 5%
 >
 >Vissa inbyggda scheman får inte utökas: huvudsakligen de för vilka följande inställningar har definierats:\
 >**dataSource=&quot;file&quot;** och **mappingType=&quot;xmlFile&quot;**.\
->Följande scheman får inte utökas: **xtk:entityBackupNew**, **xtk:entityBackupOriginal**, **xtk:entityOriginal**, **xtk:form**, **xtk:srcSchema**, **ncm:publishing**, **nl:monitoring**, **nms:calendar**, **6}nms:remoteTracking**, **nms:userAgentRules**, **xtk:builder**, **xtk:connections**, **xtk:dbInit**, **xtk:funcList**, **xtk:fusion**, **xtk** tk: jst **,:navtree** xtk **,:queryDef** xtk **,:resourceMenu** xtk **,:schema** xtk **,:scriptContext** xtk **,:session** xtk **,:sqlSchema** xtk, **xtk:strings**.
+>Följande scheman får inte utökas: **xtk:entityBackupNew**, **xtk:entityBackupOriginal**, **xtk:entityOriginal**, **xtk:form**, **xtk:srcSchema**, **ncm:publishing**, **nl:monitoring**, **nms:calendar**, **6&rbrace;nms:remoteTracking**, **nms:userAgentRules**, **xtk:builder**, **xtk:connections**, **xtk:dbInit**, **xtk:funcList**, **xtk:fusion**, **xtk** tk: jst **,:navtree** xtk **,:queryDef** xtk **,:resourceMenu** xtk **,:schema** xtk **,:scriptContext** xtk **,:session** xtk **,:sqlSchema** xtk, **xtk:strings**.
 >Denna lista är inte uttömmande.
 
 Det finns två metoder för att utöka ett befintligt schema:

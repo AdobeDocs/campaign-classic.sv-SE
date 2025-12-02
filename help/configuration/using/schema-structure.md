@@ -135,7 +135,7 @@ Följande regler gäller:
 
 Datatypen anges via attributet **type** i elementen **`<attribute>`** och **`<element>`**.
 
-Det finns en detaljerad lista i beskrivningen av elementet [`<attribute>` ](../../configuration/using/schema/attribute.md) och elementet [`<element>` ](../../configuration/using/schema/element.md).
+Det finns en detaljerad lista i beskrivningen av elementet [`<attribute>` &#x200B;](../../configuration/using/schema/attribute.md) och elementet [`<element>` &#x200B;](../../configuration/using/schema/element.md).
 
 När det här attributet inte är ifyllt är **string** standarddatatypen om inte elementet innehåller underordnade element. Om den gör det används den bara för att strukturera elementen hierarkiskt (**`<location>`** element i vårt exempel).
 
