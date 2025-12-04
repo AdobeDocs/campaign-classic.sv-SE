@@ -25,7 +25,7 @@ ht-degree: 1%
 
 ## Förstå leveransfel
 
-Vanliga koncept, feltyper och felsökningsanvisningar för leveransfel finns i [dokumentationen om leveransfel för Campaign v8 ](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/delivery-failures){target="_blank"}.
+Vanliga koncept, feltyper och felsökningsanvisningar för leveransfel finns i [dokumentationen om leveransfel för Campaign v8 &#x200B;](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/delivery-failures){target="_blank"}.
 
 ## Konfigurera studsmeddelanden {#bounce-mail-config}
 
