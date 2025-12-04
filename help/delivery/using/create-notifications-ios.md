@@ -34,7 +34,7 @@ Följ stegen nedan för att skapa ett push-meddelande för iOS-enheter:
 
    >[!NOTE]
    >
-   >Den detaljerade processen när målpopulationen för en leverans väljs visas i det här avsnittet i [Campaign v8-dokumentationen](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html#target-population.){target="_blank"}.
+   >Den detaljerade processen när målpopulationen för en leverans väljs visas i det här avsnittet i [Campaign v8-dokumentationen](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html?lang=sv-SE#target-population.){target="_blank"}.
    >
    >Mer information om användning av anpassningsfält finns i [det här avsnittet](about-personalization.md).
    >
