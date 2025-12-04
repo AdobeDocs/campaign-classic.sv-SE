@@ -5,7 +5,7 @@ description: Läs mer om Campaign Classic funktioner för leveransövervakning
 feature: Monitoring, Deliverability
 role: User
 exl-id: 9ce11da0-e37b-459e-8ec7-d2bddf59bdf7
-source-git-commit: a85d94e8ff66e8468b4fe2f071df48437393bbce
+source-git-commit: e60a8391416bc9899548971bddb61705467a80e5
 workflow-type: tm+mt
 source-wordcount: '814'
 ht-degree: 1%
@@ -86,7 +86,7 @@ Specifika åtgärder kan utföras när problem påträffas med leveranser i **hy
 
 * [Leveransproblem](../../production/using/performance-and-throughput-issues.md#deliverability_issues)
 * [Bildvisningsproblem](../../production/using/image-display-issues.md)
-* [Problem med leveransresultat](delivery-performances.md)
+* [Problem med leveransresultat](delivery-performance-troubleshooting.md)
 * [Tillfälliga filer ger ut](../../production/using/temporary-files.md) - *endast lokala kunder*
 
 ## Övervaka leveranser

@@ -9,7 +9,7 @@ topic-tags: profile-management
 exl-id: 0f3a5582-5c90-4393-bee8-d9e2f07e5982
 hide: true
 hidefromtoc: true
-source-git-commit: 471018f09e5a14635fcce07aeca1e2cf48d9144f
+source-git-commit: e60a8391416bc9899548971bddb61705467a80e5
 workflow-type: tm+mt
 source-wordcount: '115'
 ht-degree: 2%
@@ -38,7 +38,7 @@ Flikar och deras innehåll beror på din konfiguration och installerade paket.
 
 >[!NOTE]
 >
->Mer information om hur du redigerar profiler och kommer åt dem finns i den detaljerade dokumentationen för [Campaign v8](https://experienceleague.adobe.com/sv/docs/campaign/campaign-v8/audience/view-profiles){target=_blank}.
+>Mer information om hur du redigerar profiler och kommer åt dem finns i den detaljerade dokumentationen för [Campaign v8](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/audience/view-profiles){target=_blank}.
 
 
 
@@ -107,6 +107,6 @@ The list is configurable, and usually contains: the URL clicked, date and time o
 
 >[!NOTE]
 >
->For more on tracking functionality, please refer to [this page](../../delivery/using/delivery-dashboard.md).
+>For more on tracking functionality, please refer to [this page](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/delivery-dashboard){target="_blank"}.
 
 -->
