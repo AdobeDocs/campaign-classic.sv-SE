@@ -6,9 +6,9 @@ feature: ACS Connector
 hide: true
 hidefromtoc: true
 exl-id: 689b6117-5143-4f85-8582-2c74cae72ca2
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: 2186b8a30449cb023cb07305ba64d53f2c8adab1
 workflow-type: tm+mt
-source-wordcount: '2036'
+source-wordcount: '2034'
 ht-degree: 0%
 
 ---
@@ -17,15 +17,15 @@ ht-degree: 0%
 
 
 
-ACS Connector bryggar Adobe Campaign v7 och Adobe Campaign Standard. Det är en integrerad funktion i Campaign v7 som automatiskt återger data till Campaign Standarden och kombinerar det bästa av båda programmen. Campaign v7 har avancerade verktyg för att hantera den primära marknadsföringsdatabasen. Datareplikeringen från Campaign v7 gör att Campaign Standarden kan utnyttja alla data i en användarvänlig miljö.
+ACS Connector bryggar Adobe Campaign v7 och Adobe Campaign Standard. Det är en integrerad funktion i Campaign v7 som automatiskt replikerar data till Campaign Standard och kombinerar det bästa av båda programmen. Campaign v7 har avancerade verktyg för att hantera den primära marknadsföringsdatabasen. Datareplikeringen från Campaign v7 gör att Campaign Standard kan utnyttja alla data i en användarvänlig miljö.
 
 ![](assets/acs_connect_puzzle_link_01.png)
 
-Med ACS Connector används Campaign Standard även fortsättningsvis av digitala marknadsförare för att utforma, målinrikta och köra kampanjer, medan Campaign v7 är skräddarsytt för datainriktade användare som t.ex. databasmarknadsförare.
+Med ACS Connector används Campaign Standard även fortsättningsvis av digitala marknadsförare för att utforma, rikta och genomföra kampanjer, medan Campaign v7 är skräddarsytt för datainriktade användare som t.ex. databasmarknadsförare.
 
 >[!IMPORTANT]
 >
->ACS Connector finns endast som en del av Adobe Campaign Prime-erbjudandet. Mer information om hur du licensierar Adobe Campaign Prime får du av din kontoansvarige.
+>ACS Connector finns endast som en del av Adobe Campaign Prime. Mer information om hur du licensierar Adobe Campaign Prime får du av din kontoansvarige.
 >
 >ACS Connector är endast tillgängligt för hostingarkitekturer och hybridarkitekturer. Den finns inte för kompletta installationer på plats.
 >
@@ -36,8 +36,8 @@ I det här dokumentet visas ACS Connector-funktionerna. Avsnitten nedan innehål
 * [Process](#process): Översikt över ACS Connector och hur datareplikering hanteras.
 * [Implementering](#implementation): Översikt över hur du kommer igång med ACS Connector samt instruktioner om hur du replikerar grundläggande och avancerade data.
 * [Synkronisera profiler](../../integrations/using/synchronizing-profiles.md): Instruktioner för hur du replikerar profiler och hur du skapar leveranser med dem.
-* [Synkronisera målgrupper](../../integrations/using/synchronizing-audiences.md): Instruktioner om hur du aktiverar en lista över mottagare i Campaign v7 och sedan replikerar listan till Campaign Standarden som målgrupp.
-* [Synkronisera webbprogram](../../integrations/using/synchronizing-web-applications.md): Instruktioner om hur du länkar webbprogram i Campaign v7 till Campaign Standard.
+* [Synkronisera målgrupper](../../integrations/using/synchronizing-audiences.md): Instruktioner om hur du aktiverar en lista över mottagare i Campaign v7 och sedan replikerar listan till Campaign Standard som målgrupp.
+* [Synkronisera webbprogram](../../integrations/using/synchronizing-web-applications.md): Instruktioner om hur du länkar webbprogram för Campaign v7 till Campaign Standard.
 * [Felsökning av ACS Connector](../../integrations/using/troubleshooting-the-acs-connector.md): Granska svar på vanliga problem.
 
 >[!NOTE]
@@ -59,7 +59,7 @@ ACS Connector replikerar följande objekt regelbundet från Campaign v7 till Cam
 
 Som standard är den periodiska replikeringen för ACS Connector en gång var 15:e minut. Intervallet för den periodiska replikeringen kan anpassas efter dina behov. Kontakta din konsult om ändringar krävs.
 
-Datareplikering för mottagare, prenumerationer, tjänster och landningssidor är stegvis, vilket innebär att endast nya mottagare och ändringar av befintliga mottagare replikeras från Campaign v7 till Campaign Standard. Replikering för en viss målgrupp sker dock i en enda instans. Du kan skapa en målgrupp i Campaign v7 och sedan replikera den en gång till Campaign Standarden. Replikeringen är omedelbar och kan inte konfigureras för regelbundna uppdateringar. Instruktioner finns i [Synkronisera målgrupper](../../integrations/using/synchronizing-audiences.md).
+Datareplikering för mottagare, prenumerationer, tjänster och landningssidor är stegvis, vilket innebär att endast nya mottagare och ändringar av befintliga mottagare replikeras från Campaign v7 till Campaign Standard. Replikering för en viss målgrupp sker dock i en enda instans. Du kan skapa en målgrupp i Campaign v7 och sedan replikera den en gång till Campaign Standard. Replikeringen är omedelbar och kan inte konfigureras för regelbundna uppdateringar. Instruktioner finns i [Synkronisera målgrupper](../../integrations/using/synchronizing-audiences.md).
 
 >[!NOTE]
 >
@@ -83,7 +83,7 @@ Genom att replikera leverans-ID:n och e-postloggar får du åtkomst till leveran
 
 ACS Connector synkroniserar karantän mellan Campaign v7 och Campaign Standard.
 
-En profil som har replikerats från Campaign v7 till Campaign Standard innehåller till exempel en e-postadress. Om e-postadressen sätts i karantän som Campaign Standard skickas data till Campaign v7 under nästa synkronisering. Mer information om karantäner finns i [Karantänhantering](../../delivery/using/understanding-quarantine-management.md) och [Campaign Standard-karantäner](https://experienceleague.adobe.com/docs/campaign-standard/using/testing-and-sending/monitoring-messages/understanding-quarantine-management.html?lang=sv-SE).
+En profil som har replikerats från Campaign v7 till Campaign Standard innehåller till exempel en e-postadress. Om e-postadressen sätts i karantän av Campaign Standard skickas data till Campaign v7 under nästa synkronisering. Mer information om karantäner finns i [Karantänhantering](../../delivery/using/delivery-failures-quarantine.md) och [Campaign Standard Quarantines](https://experienceleague.adobe.com/docs/campaign-standard/using/testing-and-sending/monitoring-messages/understanding-quarantine-management.html).
 
 ### Använd replikerade profiler {#using-replicated-profiles}
 
@@ -93,18 +93,18 @@ Instruktioner om hur du skickar en leverans i Campaign Standard med replikerade 
 
 ### Begränsningar {#limitations}
 
-Replikerade profiler är tillgängliga för leveranser men har vissa begränsningar i Campaign Standarden. Granska objekten nedan för att lära dig hur du bäst hanterar dem.
+Replikerade profiler är tillgängliga för leveranser men har vissa begränsningar i Campaign Standard. Granska objekten nedan för att lära dig hur du bäst hanterar dem.
 
-* **Skrivskyddade profiler för Campaign Standarden**: Replikerade profiler är skrivskyddade i Campaign Standarden. Du kan dock redigera mottagare i Campaign v7 och ändringarna uppdateras automatiskt i Campaign Standard av ACS Connector.
-* **Profiler skapade i Campaign Standard**: ACS Connector replikerar mottagardata i en riktning, från Campaign v7 till Campaign Standard. Därför replikeras inte profiler som kommer från Campaign Standarden till Campaign v7.
-* **Grundläggande mottagardata för Campaign Standarden**: ACS Connector replikerar mottagardata som är lämpliga för Campaign Standard. Det innehåller mottagarnas namn, adresser, e-postadresser, mobiltelefonnummer, hemtelefonnummer och annan relevant kontaktinformation. Om fler mottagarfält och anpassade måltabeller som finns i Campaign v7 är viktiga för ditt arbetsflöde, ska du kontakta din konsult.
+* **Skrivskyddade profiler för Campaign Standard**: Replikerade profiler är skrivskyddade i Campaign Standard. Du kan dock redigera mottagare i Campaign v7 och ändringarna uppdateras automatiskt i Campaign Standard av ACS Connector.
+* **Profiler skapade i Campaign Standard**: ACS Connector replikerar mottagardata i en riktning, från Campaign v7 till Campaign Standard. Därför replikeras inte profiler som har sitt ursprung i Campaign Standard till Campaign v7.
+* **Grundläggande mottagardata för Campaign Standard**: ACS Connector replikerar mottagardata som är lämpliga för Campaign Standard. Det innehåller mottagarnas namn, adresser, e-postadresser, mobiltelefonnummer, hemtelefonnummer och annan relevant kontaktinformation. Om fler mottagarfält och anpassade måltabeller som finns i Campaign v7 är viktiga för ditt arbetsflöde, ska du kontakta din konsult.
 * **Importera profiler i karantän**: En lista över profiler som inte ska kontaktas kan importeras till Campaign v7 eller Campaign Standard som profiler i karantän. Statusen för profilerna ingår i karantänsynkroniseringen mellan programmen och används inte i leveranser.
-* **Avbeställ en tjänst i Campaign Standard**: Alternativet att avbryta prenumerationen på en leverans synkroniseras inte från Campaign Standard till Campaign v7. Du kan dock konfigurera en Campaign Standard som levereras för att dirigera dess avprenumerationslänk till Campaign v7. Profilen för en mottagare som klickar på länken för att avbryta prenumerationen uppdateras i Campaign v7 och data replikeras till Campaign Standarden. Se [Ändra avprenumerationslänken](../../integrations/using/synchronizing-profiles.md#changing-the-unsubscription-link).
+* **Avbeställ en tjänst i Campaign Standard**: Alternativet att avbryta prenumerationen på en leverans synkroniseras inte från Campaign Standard till Campaign v7. Du kan dock konfigurera en Campaign Standard-leverans så att den dirigerar sin avprenumerationslänk till Campaign v7. Profilen för en mottagare som klickar på länken för att avbryta prenumerationen uppdateras i Campaign v7 och data replikeras till Campaign Standard. Se [Ändra avprenumerationslänken](../../integrations/using/synchronizing-profiles.md#changing-the-unsubscription-link).
 * Endast e-postutsändningsloggar och spårningsloggar replikeras från Campaign Standard till Campaign v7.
 
 ### Fakturering {#billing}
 
-Faktureringen påverkas inte av ditt val av program för att skicka leveranser, Campaign v7 eller Campaign Standard. Faktureringsinformationen är avstämd mellan Campaign v7 och Campaign Standard. Om du skickar leveranser till samma mottagare med båda programmen räknas det därför fortfarande som en aktiv profil.
+Faktureringen påverkas inte av ditt val av program för att skicka leveranser, Campaign v7 eller Campaign Standard. Faktureringsinformationen är kopplad mellan Campaign v7 och Campaign Standard. Om du skickar leveranser till samma mottagare med båda programmen räknas det därför fortfarande som en aktiv profil.
 
 ## Implementering {#implementation}
 
@@ -136,25 +136,25 @@ Efter installationen av paketet finns två tekniska arbetsflöden tillgängliga 
 
 ![](assets/acs_connect_implementation_3.png)
 
-* **[!UICONTROL `[ACS] Quarantine synchronization`]** (karantänSync): Det här arbetsflödet synkroniserar all karantäninformation. Alla nya karantän i Campaign v7 replikeras till Campaign Standard. Alla nya karantäner från Campaign Standard replikeras till Campaign v7. Detta garanterar att alla undantagsregler är synkroniserade mellan Campaign v7 och Campaign Standard.
+* **[!UICONTROL `[ACS] Quarantine synchronization`]** (karantänSync): Det här arbetsflödet synkroniserar all karantäninformation. Alla nya karantän i Campaign v7 replikeras till Campaign Standard. Alla nya karantän från Campaign Standard replikeras till Campaign v7. Detta garanterar att alla undantagsregler är synkroniserade mellan Campaign v7 och Campaign Standard.
 * **[!UICONTROL `[ACS] Security group synchronization`]** (securityGroupSync): Det här arbetsflödet används för rättighetskonvertering. Se [Rights-konvertering](#rights-conversion).
 
 Följande replikeringsarbetsflöden är tillgängliga som mallar som är klara att användas. De måste implementeras av din Adobe Campaign-konsult.
 
 ![](assets/acs_connect_implementation_2.png)
 
-* **[!UICONTROL `[ACS] Profile replication`]** (newProfileReplication): det här inkrementella arbetsflödet replikerar mottagare till Campaign Standarden. Som standard replikeras alla färdiga mottagarfält. Se [Standardmottagarfält](#default-recipient-fields).
-* **[!UICONTROL `[ACS] Service replication`]** (newServiceReplication): det här inkrementella arbetsflödet replikerar de valda tjänsterna till Campaign Standarden. Se användningsexemplet [Synkroniserar webbprogram](../../integrations/using/synchronizing-web-applications.md).
-* **[!UICONTROL `[ACS] Landing pages replication`]** (newLandingPageReplication): det här inkrementella arbetsflödet replikerar de valda webbprogrammen till Campaign Standarden. Webbprogrammen för Campaign v7 visas som landningssidor i Campaign Standard. Se användningsexemplet [Synkroniserar webbprogram](../../integrations/using/synchronizing-web-applications.md).
+* **[!UICONTROL `[ACS] Profile replication`]** (newProfileReplication): det här inkrementella arbetsflödet replikerar mottagare till Campaign Standard. Som standard replikeras alla färdiga mottagarfält. Se [Standardmottagarfält](#default-recipient-fields).
+* **[!UICONTROL `[ACS] Service replication`]** (newServiceReplication): det här inkrementella arbetsflödet replikerar de valda tjänsterna till Campaign Standard. Se användningsexemplet [Synkroniserar webbprogram](../../integrations/using/synchronizing-web-applications.md).
+* **[!UICONTROL `[ACS] Landing pages replication`]** (newLandingPageReplication): det här inkrementella arbetsflödet replikerar de valda webbprogrammen till Campaign Standard. Webbprogrammen för Campaign v7 visas som landningssidor i Campaign Standard. Se användningsexemplet [Synkroniserar webbprogram](../../integrations/using/synchronizing-web-applications.md).
 * **[!UICONTROL `[ACS] New replication`]** (newReplication): det här inkrementella arbetsflödet är ett exempel som kan användas för att replikera en anpassad tabell. Se [Avancerad implementering](#advanced-implementation).
-* **[!UICONTROL `[ACS] Delivery-message replication`]** (newDlvMsgQualification): Det här inkrementella arbetsflödet replikerar leveransmeddelanden från Campaign Standard till Campaign v7.
-* **[!UICONTROL `[ACS] Profile delivery log replication`]** (newRcpDeliveryLogReplication): Det här inkrementella arbetsflödet replikerar leverans-ID:n, breda e-postloggar och loggar för e-postspårning från Campaign Standard till Campaign v7. Det tar endast hänsyn till leveranser som skickas från Campaign Standard till profiler som ingår i tabellen nms:eived i Campaign v7.
+* **[!UICONTROL `[ACS] Delivery-message replication`]** (newDlvMsgQualification): Det här stegvisa arbetsflödet replikerar leveransmeddelanden från Campaign Standard till Campaign v7.
+* **[!UICONTROL `[ACS] Profile delivery log replication`]** (newRcpDeliveryLogReplication): Det här inkrementella arbetsflödet replikerar leverans-ID:n, breda e-postloggar och e-postspårningsloggar från Campaign Standard till Campaign v7. Det tar endast hänsyn till leveranser som skickas från Campaign Standard till profiler som ingår i tabellen nms:recipients i Campaign v7.
 
   >[!NOTE]
   >
-  > Om både Campaign Classic- och Campaign Standard-instanser används för att skicka e-postmeddelanden med spårade URL-adresser kan ett problem med duplicerade URL-tagg-ID:n uppstå under synkroniseringen. Om du vill förhindra att detta händer uppdaterar du **URL:er för uppdateringsspårning** (writerTrackingUrls) i arbetsflödet och lägger till ACS-prefixet i @tagId-källuttrycket.
+  > Om både Campaign Classic- och Campaign Standard-instanser används för att skicka e-post med spårade URL-adresser kan ett problem med duplicerade URL-tagg-ID:n uppstå under synkroniseringen. Om du vill förhindra att detta händer uppdaterar du **URL:er för uppdateringsspårning** (writerTrackingUrls) i arbetsflödet och lägger till ACS-prefixet i @tagId-källuttrycket.
 
-* **[!UICONTROL `[ACS] New delivery log replication`]** (newRcpDeliveryLogReplication): Det här inkrementella arbetsflödet replikerar leverans-ID:n, breda e-postloggar och loggar för e-postspårning från Campaign Standard till Campaign v7. Det tar endast hänsyn till leveranser som skickas från Campaign Standard till profiler som ingår i en viss tabell (för att definiera, utom nms:templates) i Campaign v7.
+* **[!UICONTROL `[ACS] New delivery log replication`]** (newRcpDeliveryLogReplication): Det här inkrementella arbetsflödet replikerar leverans-ID:n, breda e-postloggar och e-postspårningsloggar från Campaign Standard till Campaign v7. Det tar endast hänsyn till leveranser som skickas från Campaign Standard till profiler som ingår i en specifik tabell (som ska definieras, förutom nms:recipients) i Campaign v7.
 
 ### Standardmottagarfält {#default-recipient-fields}
 
@@ -269,9 +269,9 @@ Nedan finns en lista över mottagarfält som replikeras med den grundläggande i
 
 ### Rättighetskonvertering {#rights-conversion}
 
-Rättigheterna hanteras på olika sätt i Campaign v7 och Campaign Standard. I Campaign v7 är rättighetshanteringen mappbaserad, medan den i Campaign Standard är baserad på enhetsåtkomst (organisatoriska/geografiska enheter). En Campaign Standard tillhör en säkerhetsgrupp som innehåller begränsningskontexten. Därför måste rättighetssystemet Campaign v7 konverteras för att matcha Campaign Standarden. Det finns flera sätt att utföra rättighetskonverteringen. Nedan finns ett exempel på implementering.
+Rättigheterna hanteras på olika sätt i Campaign v7 och Campaign Standard. I Campaign v7 är rättighetshanteringen mappbaserad, medan den i Campaign Standard är baserad på enhetsåtkomst (organisatoriska/geografiska enheter). En Campaign Standard-användare tillhör en säkerhetsgrupp som innehåller begränsningskontexten. Därför måste rättighetssystemet Campaign v7 konverteras för att matcha Campaign Standard. Det finns flera sätt att utföra rättighetskonverteringen. Nedan finns ett exempel på implementering.
 
-1. Under **[!UICONTROL Administration > ACS Connector > Rights management > Security groups]** använder du knappen **[!UICONTROL Synchronize]** för att hämta alla säkerhetsgrupper för Campaign Standarden. Färdiga Campaign Standarder exkluderas.
+1. Under **[!UICONTROL Administration > ACS Connector > Rights management > Security groups]** använder du knappen **[!UICONTROL Synchronize]** för att hämta alla Campaign Standard säkerhetsgrupper. Körklara Campaign Standard-grupper exkluderas.
 
    ![](assets/acs_connect_implementation_4.png)
 
@@ -302,7 +302,7 @@ Den avancerade implementeringen lägger till anpassade replikeringsarbetsflöden
 
 Med den grundläggande implementeringen replikeras de körklara mottagarfälten. Om du vill replikera anpassade fält som du har lagt till i mottagarschemat måste du identifiera dem.
 
-1. Skapa en målmappning i tabellen **[!UICONTROL nms:recipient]** under **[!UICONTROL Administration > ACS Connector > Data mapping]**.
+1. Skapa en målmappning i tabellen **[!UICONTROL Administration > ACS Connector > Data mapping]** under **[!UICONTROL nms:recipient]**.
 
    ![](assets/acs_connect_implementation_6.png)
 

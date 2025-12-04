@@ -5,7 +5,7 @@ description: Globala rapporter
 badge: label="v7" type="Informative" tooltip="Gäller endast Campaign Classic v7"
 feature: Reporting, Monitoring
 exl-id: 6839fd7e-ecf4-4504-90a8-0207bc3991e4
-source-git-commit: abaeef25b03a9699a4851786380d467bfa299c9f
+source-git-commit: 2186b8a30449cb023cb07305ba64d53f2c8adab1
 workflow-type: tm+mt
 source-wordcount: '2292'
 ht-degree: 3%
@@ -52,7 +52,7 @@ Du kan konfigurera de värden som visas genom att ändra tidsskalan: 1-timmars v
 
 >[!NOTE]
 >
->Om din instans finns på AWS kan du även övervaka antalet leveranser som skickas per timme med Campaign Classicen [Kontrollpanelen](https://experienceleague.adobe.com/docs/control-panel/using/sftp-management/sftp-storage-management.html?lang=sv-SE). Följ stegen på [den här sidan](https://experienceleague.adobe.com/docs/control-panel/using/faq.html?lang=sv) för att kontrollera om instanser har AWS som värd.
+>Om din instans finns på AWS kan du även övervaka antalet leveranser som skickas per timme med hjälp av Campaign Classic [Kontrollpanel](https://experienceleague.adobe.com/docs/control-panel/using/sftp-management/sftp-storage-management.html). Följ stegen på [den här sidan](https://experienceleague.adobe.com/docs/control-panel/using/faq.html?lang=sv) för att kontrollera om instanser har AWS som värd.
 >
 >Kontrollpanelen är tillgänglig för alla administratörsanvändare. Stegen för att bevilja administratörsåtkomst till en användare finns på [den här sidan](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/managing-permissions.html?lang=sv#discover-control-panel).
 >
@@ -82,7 +82,7 @@ I den här rapporten visas uppdelningen av icke-levererbara produkter samt en up
 
 >[!NOTE]
 >
->Felen som visas i den här rapporten utlöser karantänprocessen. Mer information om karantänhantering finns i [Karantänhantering](../../delivery/using/understanding-quarantine-management.md).
+>Felen som visas i den här rapporten utlöser karantänprocessen. Mer information om karantänhantering finns i [Karantänhantering](../../delivery/using/delivery-failures-quarantine.md).
 
 I det första avsnittet i den här rapporten visas uppdelningen av icke-levererbara produkter i form av en värdetabell och ett diagram.
 
@@ -167,9 +167,9 @@ I värdetabellen används följande indikatorer:
 
 ### Delning till sociala nätverk {#sharing-to-social-networks}
 
-Med virusmarknadsföring kan mottagare dela information med sina kontaktnätverk: de kan lägga till en länk till sin profil (Facebook, X - tidigare Twitter osv.) eller skicka ett meddelande till en vän. Varje resurs och varje åtkomst till delad information spåras i leveransen. Mer information om viral marknadsföring finns i [det här avsnittet](../../delivery/using/viral-and-social-marketing.md).
+Med virusmarknadsföring kan leveransmottagarna dela information med sina kontaktnätverk: de kan lägga till en länk till sin profil (Facebook, X - tidigare Twitter, osv.) eller skicka ett meddelande till en vän. Varje resurs och varje åtkomst till delad information spåras i leveransen. Mer information om viral marknadsföring finns i [det här avsnittet](../../delivery/using/viral-and-social-marketing.md).
 
-Den här rapporten visar hur delade och öppna meddelanden per socialt nätverk (Facebook, X, etc.) delas upp och/eller per e-post.
+Den här rapporten visar hur delade och öppna meddelanden per socialt nätverk (Facebook, X, etc.) och/eller per e-post delas upp.
 
 ![](assets/s_ncs_user_social_report.png)
 
@@ -202,7 +202,7 @@ I det här avsnittet finns två diagram som visar hur delningsaktiviteter delas 
 
 ## Statistik om delningsaktiviteter {#statistics-on-sharing-activities}
 
-Den här rapporten visar hur delningar har utvecklats till sociala nätverk (Facebook, X - tidigare Twitter, e-post osv.) i tid.
+Den här rapporten visar hur delningar till sociala nätverk (Facebook, X - tidigare Twitter, e-post osv.) har utvecklats i tid.
 
 Mer information om viral marknadsföring finns i [det här avsnittet](../../delivery/using/viral-and-social-marketing.md).
 
@@ -294,7 +294,7 @@ Följande indikatorer används:
 
   >[!NOTE]
   >
-  >Mer information om hårda och mjuka studsar finns i [Karantänhantering](../../delivery/using/understanding-quarantine-management.md).
+  >Mer information om hårda och mjuka studsar finns i [Karantänhantering](../../delivery/using/delivery-failures-quarantine.md).
 
 * **[!UICONTROL Opens]** : procentandel av antalet målmottagare som öppnade ett meddelande minst en gång jämfört med antalet meddelanden som bearbetades.
 * **[!UICONTROL Clicks]** : procentandel av antalet personer som klickade i en leverans minst en gång jämfört med antalet meddelanden som bearbetades.

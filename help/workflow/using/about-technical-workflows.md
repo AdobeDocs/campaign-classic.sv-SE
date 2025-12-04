@@ -6,7 +6,7 @@ feature: Workflows
 hide: true
 hidefromtoc: true
 exl-id: 9aed2665-cd4b-419c-b9f2-ea04fc1d8f01
-source-git-commit: 776c664a99721063dce5fa003cf40c81d94f8c78
+source-git-commit: 2186b8a30449cb023cb07305ba64d53f2c8adab1
 workflow-type: tm+mt
 source-wordcount: '1704'
 ht-degree: 1%
@@ -63,7 +63,7 @@ Mer information om hur du övervakar tekniska arbetsflöden finns i det [dediker
 | **Fullständig mängdberäkning för MessageCenter** (agg_messageCenter_full) | Kontroll av transaktionsmeddelanden (Message Center - Control) | Det här arbetsflödet uppdaterar den fullständiga sammanställningen för Message Center-kuben. Den aktiveras varje dag klockan tre som standard. Den här sammanställningen fångar följande dimensioner: Kanal, Datum, Status och Händelsetyp. Meddelandecenterkuben används sedan för att generera rapporter baserade på händelser. Du kan läsa mer om kuber i [det här avsnittet](../../reporting/using/ac-cubes.md) |
 | **Mid-sourcing (leveransräknare)** (defaultMidSourcingDlv) | Överföring till Mid-sourcing | Det här arbetsflödet samlar in räkningsinformation för leveranser på servern för mellanlagring. Räkningsinformation omfattar allmänna leveransindikatorer, t.ex. antalet skickade leveranser. Spårningsinformation som öppningar inkluderas inte. Den aktiveras var tionde minut som standard. |
 | **Mid-sourcing (leveransloggar)** (defaultMidSourcingLog) | Överföring till Mid-sourcing | Det här arbetsflödet samlar in leveransloggar på servern med mellanleverantörer. Den aktiveras som standard varje timme. |
-| **Hantering av NMAC-avanmälan** (mobileAppOptOutMgt) | Mobilappskanal | Det här arbetsflödet uppdaterar meddelanden om att prenumerationen har avbrutits på mobila enheter. Den utlöses var 6: e timme mellan 1:00 och 24:00. Mer information finns i [det här avsnittet](../../delivery/using/understanding-quarantine-management.md#push-notification-quarantines). |
+| **Hantering av NMAC-avanmälan** (mobileAppOptOutMgt) | Mobilappskanal | Det här arbetsflödet uppdaterar meddelanden om att prenumerationen har avbrutits på mobila enheter. Den utlöses var 6: e timme mellan 1:00 och 24:00. Mer information finns i [det här avsnittet](../../delivery/using/delivery-failures-quarantine.md#push-notification-quarantines). |
 | **Erbjudandemeddelande** (offerMgt) | Leverans | Det här arbetsflödet distribuerar godkända erbjudanden i onlinemiljön samt i alla kategorier i erbjudandekatalogen. |
 | **Rensning av pausade arbetsflöden** (cleanupPausedWorkflows) | Leverans | Det här arbetsflödet analyserar pausade arbetsflöden som har allvarlighetsgraden inställd på normal och utlöser varningar och meddelanden när de har pausats för länge. Efter en månad stoppas tekniska arbetsflöden ovillkorligt. Som standard utlöses den varje måndag kl. 5. Mer information finns i [Hantera pausade arbetsflöden](monitoring-workflow-execution.md#handling-of-paused-workflows). |
 | **Rensa sekretessbegäran** (cleanupPrivacyRequests) | Skyddsförordningen för personuppgifter | Det här arbetsflödet raderar filer för åtkomstbegäran som är äldre än 90 dagar. |
