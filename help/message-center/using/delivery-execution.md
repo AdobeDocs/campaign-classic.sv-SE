@@ -40,7 +40,7 @@ Som standard sorteras de i undermappar efter leveransmånad. Den här sorteringe
 
 ## Övervakning av transaktionsmeddelanden {#transactional-message-monitoring}
 
-Kontrollera [leveransloggarna](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/delivery-dashboard#delivery-logs-and-history){target="_blank"} om du vill övervaka dina transaktionsmeddelanden.
+Kontrollera [leveransloggarna](https://experienceleague.adobe.com/sv/docs/campaign/campaign-v8/send/monitor/delivery-dashboard#delivery-logs-and-history){target="_blank"} om du vill övervaka dina transaktionsmeddelanden.
 
 Transaktionsleveranser som skickas från körningsinstansen synkroniseras tillbaka till kontrollinstansen via ett tekniskt arbetsflöde (**[!UICONTROL Message Center execution instance]**) som körs varje timme.
 

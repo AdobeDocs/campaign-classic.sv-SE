@@ -75,10 +75,10 @@ I Adobe Campaign Classic hanteras **Leveransövervakning** av arbetsflödet **[!
 * Kontrollera regelbundet [leveransdataflödet](../../reporting/using/global-reports.md#delivery-throughput) för hela plattformen för att kontrollera om den stämmer överens med den ursprungliga konfigurationen.
 * Kontrollera att [återförsök](understanding-delivery-failures.md#retries-after-a-delivery-temporary-failure) har konfigurerats korrekt (30 minuter för återförsöksperiod och mer än 20 återförsök) i leveransmallar.
 * Kontrollera regelbundet att postlådan [bounce](understanding-delivery-failures.md#bounce-mail-management) är tillgänglig och att kontot inte håller på att förfalla.
-* Kontrollera varje leveransflöde, som du kommer åt från [leveransinstrumentpanelen](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/delivery-dashboard){target="_blank"}, för att se till att det stämmer överens med leveransinnehållets giltighet (t.ex. ska &#39;flash sales&#39; levereras på några minuter, inte dagar).
+* Kontrollera varje leveransflöde, som du kommer åt från [leveransinstrumentpanelen](https://experienceleague.adobe.com/sv/docs/campaign/campaign-v8/send/monitor/delivery-dashboard){target="_blank"}, för att se till att det stämmer överens med leveransinnehållets giltighet (t.ex. ska &#39;flash sales&#39; levereras på några minuter, inte dagar).
 * När du använder vågor måste du kontrollera att varje våg har tillräckligt med tid för att slutföra innan nästa våg aktiveras.
 * Kontrollera att antalet fel och nya [karantäner](understanding-quarantine-management.md) stämmer överens med andra leveranser.
-* Läs noggrant igenom [leveransloggarna](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/delivery-dashboard#delivery-logs-and-history){target="_blank"} för att kontrollera vilken typ av fel som markeras (blockeringslista, DNS-problem, skräppostregler osv.).
+* Läs noggrant igenom [leveransloggarna](https://experienceleague.adobe.com/sv/docs/campaign/campaign-v8/send/monitor/delivery-dashboard#delivery-logs-and-history){target="_blank"} för att kontrollera vilken typ av fel som markeras (blockeringslista, DNS-problem, skräppostregler osv.).
 
 ### Felsökning {#delivery-troubleshooting}
 
@@ -97,17 +97,17 @@ Följande resurser hjälper dig att övervaka och spåra leveransresultatet i Ca
 
 Lär dig hur du får åtkomst till leveranslistor och använder kontrollpanelen för leverans för att övervaka din sändningsaktivitet:
 
-* [Skärmleveranser i Campaign-gränssnittet](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/delivery-dashboard){target="_blank"} (dokumentationen för Campaign v8 gäller både v7 och v8)
-* [Leveransstatus](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/delivery-statuses){target="_blank"} (dokumentation för kampanj v8)
+* [Skärmleveranser i Campaign-gränssnittet](https://experienceleague.adobe.com/sv/docs/campaign/campaign-v8/send/monitor/delivery-dashboard){target="_blank"} (dokumentationen för Campaign v8 gäller både v7 och v8)
+* [Leveransstatus](https://experienceleague.adobe.com/sv/docs/campaign/campaign-v8/send/monitor/delivery-statuses){target="_blank"} (dokumentation för kampanj v8)
 * [Avancerat: Anpassa leveransloggar](customize-delivery-logs.md) (endast hybrid v7/lokal - schemautökning)
 
 ### Spåra meddelandeinteraktioner
 
 Spåra öppningar, klick och mottagarnas interaktioner med dina leveranser:
 
-* [Dokumentation för meddelandespårning](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/analytics/tracking/tracking){target="_blank"} (Campaign v8-dokumentation - gäller både v7 och v8)
-* [Konfigurera spårade länkar](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/analytics/tracking/tracked-links){target="_blank"} (Campaign v8-dokumentation)
-* [Åtkomstspårningsloggar](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/analytics/tracking/tracking-logs){target="_blank"} (dokumentation för Campaign v8)
+* [Dokumentation för meddelandespårning](https://experienceleague.adobe.com/sv/docs/campaign/campaign-v8/analytics/tracking/tracking){target="_blank"} (Campaign v8-dokumentation - gäller både v7 och v8)
+* [Konfigurera spårade länkar](https://experienceleague.adobe.com/sv/docs/campaign/campaign-v8/analytics/tracking/tracked-links){target="_blank"} (Campaign v8-dokumentation)
+* [Åtkomstspårningsloggar](https://experienceleague.adobe.com/sv/docs/campaign/campaign-v8/analytics/tracking/tracking-logs){target="_blank"} (dokumentation för Campaign v8)
 
 ### Optimera leveransresultatet
 
@@ -120,6 +120,6 @@ Bästa praxis och felsökning för leveransproblem:
 
 Hantera leveransfel, studentmejl och adresser i karantän:
 
-* [Om leveransfel](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/delivery-failures){target="_blank"} (dokumentation för Campaign v8 - utförlig guide för både v7 och v8)
-* [Karantänhantering](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/quarantines){target="_blank"} (Campaign v8-dokumentation - omfattande guide för både v7 och v8)
+* [Om leveransfel](https://experienceleague.adobe.com/sv/docs/campaign/campaign-v8/send/monitor/delivery-failures){target="_blank"} (dokumentation för Campaign v8 - utförlig guide för både v7 och v8)
+* [Karantänhantering](https://experienceleague.adobe.com/sv/docs/campaign/campaign-v8/send/monitor/quarantines){target="_blank"} (Campaign v8-dokumentation - omfattande guide för både v7 och v8)
 * [Leveransfel och karantänkonfiguration](delivery-failures-quarantine.md) (v7-hybridkonfigurationer/lokala specifika konfigurationer)

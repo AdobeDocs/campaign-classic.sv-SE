@@ -38,7 +38,7 @@ Flikar och deras innehåll beror på din konfiguration och installerade paket.
 
 >[!NOTE]
 >
->Mer information om hur du redigerar profiler och kommer åt dem finns i den detaljerade dokumentationen för [Campaign v8](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/audience/view-profiles){target=_blank}.
+>Mer information om hur du redigerar profiler och kommer åt dem finns i den detaljerade dokumentationen för [Campaign v8](https://experienceleague.adobe.com/sv/docs/campaign/campaign-v8/audience/view-profiles){target=_blank}.
 
 
 
@@ -107,6 +107,6 @@ The list is configurable, and usually contains: the URL clicked, date and time o
 
 >[!NOTE]
 >
->For more on tracking functionality, please refer to [this page](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/delivery-dashboard){target="_blank"}.
+>For more on tracking functionality, please refer to [this page](https://experienceleague.adobe.com/sv/docs/campaign/campaign-v8/send/monitor/delivery-dashboard){target="_blank"}.
 
 -->
