@@ -2,55 +2,61 @@
 product: campaign
 title: Bästa praxis för leveransprestanda
 description: Läs mer om leveransresultat och bästa praxis
-badge-v8: label="Gäller även för v8" type="Positive" tooltip="Gäller även Campaign v8"
 feature: Deliverability
 role: User, Developer
 exl-id: cc793d7b-0a26-4a75-97ed-d79c87d9b3b8
-source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
+source-git-commit: eac670cd4e7371ca386cee5f1735dc201bf5410a
 workflow-type: tm+mt
-source-wordcount: '465'
-ht-degree: 5%
+source-wordcount: '362'
+ht-degree: 3%
 
 ---
 
 # Bästa praxis för leveransprestanda {#delivery-performances}
 
-Vi rekommenderar att du följer riktlinjerna nedan för att försäkra dig om att leveranserna fungerar bra, samt de kontroller som utförs om leveransproblem uppstår.
+>[!NOTE]
+>
+>Omfattande vägledning om leveransresultat och bästa praxis finns på sidan [Bästa praxis för kampanjleverans](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/start/delivery-best-practices). Det här innehållet gäller både Campaign Classic v7- och Campaign v8-användare.
+>
+>Den här sidan innehåller **Campaign Classic v7-specifika prestandakonfigurationer** för hybriddistributioner och lokala distributioner.
 
-**Relaterade ämnen:**
+Mer information om god praxis för leveransresultat, plattformsoptimering, karantänhantering, databasunderhåll och rekommendationer för schemaläggning finns i [dokumentationen om leveransmetoder för Campaign v8](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/start/delivery-best-practices){target="_blank"}.
 
-* [Kontrollpanel för leverans](delivery-dashboard.md)
-* [Leveransfelsökning](delivery-troubleshooting.md)
-* [Om levererbarhet](about-deliverability.md)
+## Prestandajustering {#best-practices-performance}
 
-## Bästa tillvägagångssätt för prestanda {#best-practices-performance}
+För **Campaign Classic v7-hybriddistributioner/lokala distributioner** kan följande databas- och infrastrukturoptimeringar förbättra leveransprestanda:
 
-* Behåll inte leveranser i felaktigt tillstånd för instansen eftersom detta bevarar tillfälliga tabeller och påverkar prestandan.
+### Databasoptimering
 
-* Ta bort leveranser som inte längre behövs.
+**Indexadresser** för att optimera prestanda för SQL-frågor som används i programmet. Ett index kan deklareras från huvudelementet i dataschemat. Den här optimeringen kräver direkt databasåtkomst och schemaanpassning som är tillgänglig i lokala distributioner.
 
-* Inaktiva mottagare de senaste 12 månaderna som ska tas bort från databasen för att upprätthålla adresskvaliteten.
+### Infrastrukturanpassning
 
-* Försök inte schemalägga stora leveranser tillsammans. Det finns ett mellanrum på 5-10 minuter för att sprida belastningen jämnt över systemet. Samordna schemaläggningen av leveranser med övriga medlemmar i teamet för att säkerställa bästa möjliga prestanda. När marknadsföringsservern hanterar många olika uppgifter samtidigt kan prestandan försämras.
-
-* Håll storleken på era e-postmeddelanden så låg som möjligt. Den rekommenderade maximala storleken för ett e-postmeddelande är cirka 35 kB. Storleken på en e-postleverans genererar en viss volym på de avsändande servrarna.
-
-* För stora leveranser, som leveranser till över en miljon mottagare, behövs utrymme i utskicksköerna. Detta är inget problem för servern, men om det kombineras med dussintals andra stora leveranser som alla går ut samtidigt kan det medföra en fördröjning.
-
-* Personalization i e-postmeddelanden hämtar data från databasen för varje mottagare. Om det finns många personaliseringselement ökar detta mängden data som behövs för att förbereda leveransen.
-
-* Indexadresser. För att optimera prestanda för SQL-frågor som används i programmet kan ett index deklareras från huvudelementet i dataschemat.
+**Konfiguration för stora leveranser**: För leveranser till över en miljon mottagare krävs utrymme i de sändande köerna. För lokala installationer kan underordnade MTA konfigureras för att hantera anpassade batchstorlekar. Kontakta systemadministratören för att justera inställningarna baserat på din infrastrukturkapacitet.
 
 >[!NOTE]
 >
->Internetleverantörer inaktiverar adresser efter en tids inaktivitet. Avvisade meddelanden skickas till avsändare för att informera dem om den nya statusen.
+>För användare av hanterade molntjänster i Campaign v8 hanteras infrastrukturoptimering och MTA-konfiguration av Adobe. Se [Bästa praxis för leverans av kampanjer v8](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/start/delivery-best-practices){target="_blank"} för prestandarekommendationer som gäller för din distribution.
 
-## Checklista för prestandaproblem {#performance-issues}
+## Databasunderhåll {#performance-issues}
 
-Om leveransresultaten är felaktiga kan du kontrollera:
+För **hybriddistributioner/lokala distributioner av Campaign Classic v7** påverkar plattforms- och databasunderhåll leveransresultaten direkt.
 
-* **Storleken på leveransen**: Stora leveranser kan ta längre tid att slutföra. MTA-underordnade är konfigurerade att hantera en standardbatchstorlek, som fungerar för de flesta instanser, men som måste kontrolleras när leveranserna är konstant långsamma.
-* **Målet för leveransen**: Förbudet mot leveransprestanda påverkas av mjuka studsfel, som hanteras enligt konfigurationen för nya försök. Ju fler fel, desto fler försök.
-* **Den totala plattformsinläsningen**: När flera stora leveranser skickas kan den övergripande plattformen påverkas. Du kan även kontrollera IP-adressens anseende och leveransproblem. Mer information finns i [det här avsnittet](about-deliverability.md) och i [Adobe Deliverability Best Practice Guide](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html?lang=sv).
+Vanliga underhållsåtgärder är:
 
-Plattforms- och databasunderhåll kan också påverka leveransresultaten. Mer information finns på [den här sidan](../../production/using/database-performances.md).
+**Databasrensning**: Använd arbetsflödet för databasrensning för att ta bort gamla leveransloggar, spårningsdata och tillfälliga tabeller. Dåligt databasunderhåll kan göra det långsammare att förbereda och skicka leveranser.
+
+**Övervakning av databasprestanda**: Övervaka frågeprestanda, indexfragmentering och tabellstatistik. Detaljerad vägledning finns på [den här sidan](../../production/using/database-performances.md).
+
+**Övervakning av tekniskt arbetsflöde**: Kontrollera att alla tekniska arbetsflöden (särskilt arbetsflöden för rensning, spårning och leveransuppdatering) körs korrekt utan fel.
+
+>[!NOTE]
+>
+>För användare av hanterade molntjänster i Campaign v8 övervakas och hanteras databasunderhåll och tekniska arbetsflöden av Adobe. Fokusera på leveransspecifik övervakning enligt beskrivningen i [dokumentationen för leveranser av Campaign v8-övervakare](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitoring-deliverability){target="_blank"}.
+
+## Relaterade ämnen
+
+* [Bästa praxis för leverans](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/start/delivery-best-practices){target="_blank"} (dokumentation för Campaign v8)
+* [Övervaka leveransen](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitoring-deliverability){target="_blank"} (dokumentation för Campaign v8)
+* [Leveransfelsökning](delivery-troubleshooting.md)
+* [Databasprestanda](../../production/using/database-performances.md) (v7-hybrid/lokal)

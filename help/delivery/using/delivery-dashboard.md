@@ -1,132 +1,36 @@
 ---
 product: campaign
-title: Kontrollpanel för leverans
-description: Läs mer om hur du använder kontrollpanelen för leverans för att övervaka leveranser
-badge-v8: label="Gäller även för v8" type="Positive" tooltip="Gäller även Campaign v8"
+title: Övervaka era leveranser i Campaign-gränssnittet
+description: Lär dig hur du får tillgång till listan över leveranser och använder kontrollpanelen för leverans för att övervaka dina leveranser
 feature: Monitoring
 role: User, Developer
 exl-id: 44ecc8c6-6584-43eb-96b4-7d8463053123
-source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
+source-git-commit: eac670cd4e7371ca386cee5f1735dc201bf5410a
 workflow-type: tm+mt
-source-wordcount: '1193'
-ht-degree: 4%
+source-wordcount: '533'
+ht-degree: 0%
 
 ---
 
-# Kontrollpanel för leverans {#delivery-dashboard}
-
-
-Kontrollpanelen **för leverans** är viktig för att övervaka dina leveranser och eventuella problem som uppstår när meddelanden skickas.
-
-Du kan hämta information om en leverans och redigera den om det behövs. Observera att tabbinnehållet inte längre kan ändras när leveransen har skickats.
-
-Här är den information du kan övervaka med hjälp av flera flikar som är tillgängliga på kontrollpanelen:
-
-* [Leveranssammanfattning](#delivery-summary)
-* [Leveransrapporter](#delivery-reports)
-* [Leveransloggar, spegelsidor, undantag](#delivery-logs-and-history)
-* [Loggar och historik för leveransspårning](#tracking-logs)
-* [Leveransåtergivning](#delivery-rendering)
-* [Leveransgranskning](#delivery-audit-)
-
-![](assets/s_ncs_user_del_details.png)
-
-**Relaterade ämnen:**
-
-* [Förstå leveransfel](understanding-delivery-failures.md)
-* [Förstå karantänshantering](understanding-quarantine-management.md)
-* [God praxis för leverans](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/delivery-best-practices.html?lang=sv-SE){target="_blank"}
-* [Hantera leveranser](about-deliverability.md)
-
-## Leveranssammanfattning {#delivery-summary}
-
-Fliken **[!UICONTROL Summary]** innehåller egenskaper för leveransen: leveransstatus, kanal som används, information om avsändaren, ämne, information om körning.
-
-## Leveransrapporter {#delivery-reports}
-
-Med länken **[!UICONTROL Reports]**, som du kommer åt från fliken **[!UICONTROL Summary]**, kan du titta på en uppsättning rapporter som rör leveransåtgärden: allmän leveransrapport, detaljerad rapport, leveransrapport, distribution av misslyckade meddelanden, öppningsfrekvens, klick och transaktioner osv.
-
-Innehållet på den här fliken kan konfigureras enligt dina krav. Mer information om leveransrapporter finns i [det här avsnittet](../../reporting/using/delivery-reports.md).
-
-![](assets/delivery-report.png)
-
-## Leveransloggar, historik och undantag {#delivery-logs-and-history}
-
-Fliken **[!UICONTROL Delivery]** ger en historik över förekomster i den här leveransen. Den innehåller leveransloggarna, dvs. en lista över skickade meddelanden och deras status samt tillhörande meddelanden.
-
-För en leverans kan du till exempel bara visa mottagare med en misslyckad leverans eller en adress i karantän. Om du vill göra det klickar du på knappen **[!UICONTROL Filters]** och väljer **[!UICONTROL By state]**. Välj sedan läget i listrutan. Olika statusvärden visas på [den här sidan](delivery-statuses.md).
+# Övervaka era leveranser i Campaign-gränssnittet {#delivery-dashboard}
 
 >[!NOTE]
 >
->Listan med leveransloggarna kan anpassas som alla listor i Campaign Classic. Du kan till exempel lägga till en kolumn för att veta vilken IP-adress som skickade varje e-post i en leverans. Mer information finns i användningsexemplet som beskrivs i [det här avsnittet](#use-case).
+>Omfattande vägledning om hur du får åtkomst till leveranslistan och använder kontrollpanelen för leverans finns i [dokumentationen för Campaign v8](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/delivery-dashboard). Det här innehållet gäller både Campaign Classic v7- och Campaign v8-användare.
+>
+>Den här sidan innehåller **Campaign Classic v7-specifika anpassningar** för hybriddistributioner och lokala distributioner.
 
-![](assets/s_ncs_user_delivery_delivery_tab.png)
+Övervakning av leveranser är nödvändigt för att säkerställa att era kampanjer är effektiva och når era kunder.
 
-Med länken **[!UICONTROL Display the mirror page for this message...]** kan du visa spegelsidan för innehållet i leveransen som valts i listan i ett nytt fönster.
+Mer information om hur du får åtkomst till leveranslistan, använder kontrollpanelsflikarna för leverans och övervakar leveranser finns i [Leveranserna för Campaign v8 Monitor i dokumentationen för Campaign-gränssnittet](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/delivery-dashboard){target="_blank"}.
 
-Spegelsidan är bara tillgänglig för leveranser för vilka HTML-innehåll har definierats. Mer information om detta hittar du i [dokumentationen för Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/mirror-page.html?lang=sv-SE){target="_blank"}.
+## Anpassa leveransloggar {#use-case}
 
-![](assets/s_ncs_user_wizard_miror_page_link.png)
-
-## Loggar och historik för leveransspårning {#tracking-logs}
-
-Fliken **[!UICONTROL Tracking]** visar spårningshistoriken för den här leveransen. På den här fliken visas spårningsdata för skickade meddelanden, d.v.s. alla URL:er som spåras av Adobe Campaign. Spårningsdata uppdateras varje timme.
+För **hybriddistributioner** i Campaign Classic v7 kan du anpassa leveransloggar genom att utöka scheman. I det här avsnittet visas hur du lägger till avsändarens IP-adresser i leveransloggarna.
 
 >[!NOTE]
 >
->Om spårning inte är aktiverat för en leverans visas inte den här fliken.
-
-Spårningskonfigurationen utförs i rätt steg i leveransassistenten. Se [Konfigurera spårade länkar](how-to-configure-tracked-links.md).
-
-**[!UICONTROL Tracking]** data tolkas i leveransrapporterna. Se [det här avsnittet](../../reporting/using/delivery-reports.md).
-
-![](assets/s_ncs_user_delivery_tracking_tab.png)
-
-## Inkorgsåtergivning {#delivery-rendering}
-
-På fliken **[!UICONTROL Inbox rendering]** kan du förhandsgranska meddelandet i de olika sammanhang där det kan tas emot och kontrollera kompatibiliteten i de flesta datorer och program.
-
-På så sätt kan du se till att ditt meddelande visas för mottagarna på ett optimalt sätt på en mängd olika webbklienter, webbmejl och enheter.
-
-Mer information om återgivning av inkorgar finns på [den här sidan](inbox-rendering.md)
-
-![](assets/s_tn_inbox_rendering_tokens.png)
-
-## Leveransgranskning {#delivery-audit-}
-
-Fliken **[!UICONTROL Audit]** innehåller leveransloggen och alla meddelanden som rör korrektur.
-
-Med knappen **[!UICONTROL Refresh]** kan du uppdatera data. Använd knappen **[!UICONTROL Filters]** för att definiera ett filter för data.
-
-Med särskilda ikoner kan du identifiera fel och varningar. Se det här avsnittet i [dokumentationen för Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/validate/delivery-analysis.html?lang=sv-SE){target="_blank"}.
-
-På underfliken **[!UICONTROL Proofs]** kan du visa en lista över de korrektur som har skickats.
-
-![](assets/s_ncs_user_delivery_log_tab.png)
-
-Du kan ändra informationen som visas i det här fönstret (och informationen på flikarna **[!UICONTROL Delivery]** och **[!UICONTROL Tracking]**) genom att markera kolumnerna som ska visas. Om du vill göra det klickar du på ikonen **[!UICONTROL Configure list]** i det nedre högra hörnet. Mer information om hur du konfigurerar listvisning finns i [det här avsnittet](../../platform/using/adobe-campaign-workspace.md#configuring-lists).
-
-## Synkronisering av kontrollpanel för leverans {#delivery-dashboard-synchronization}
-
-Från kontrollpanelen för leverans vill du kontrollera de bearbetade meddelandena och leveransloggarna för att vara säker på att leveransen har skickats.
-
-Vissa indikatorer eller status kan vara felaktiga eller inte aktuella. Lösningen kan vara:
-
-* Om leveransstatusen är felaktig kontrollerar du att alla nödvändiga godkännanden har gjorts för den här leveransen eller att arbetsflödena **[!UICONTROL operationMgt]** och **[!UICONTROL deliveryMgt]** körs utan fel. Detta kan också bero på leveransen med en tillhörighet som inte har konfigurerats på den sändande instansen.
-
-* Om leveransindikatorerna fortfarande är noll och du använder en mellankällskonfiguration kontrollerar du det tekniska arbetsflödet för **[!UICONTROL Mid-sourcing (delivery counters)]**. Starta om dess status inte är **[!UICONTROL Started]**. Du kan sedan försöka att beräkna om indikatorerna genom att högerklicka på leveransen i Adobe Campaign Explorer och välja **[!UICONTROL Actions]** > **[!UICONTROL Recompute delivery and tracking indicators]**. Mer information om spårningsindikatorer finns i det här [avsnittet](../../reporting/using/delivery-reports.md#tracking-indicators).
-
-* Om leveransräknaren inte matchar leveransen kan du försöka att beräkna om indikatorerna genom att högerklicka på leveransen i Adobe Campaign Explorer och välja **[!UICONTROL Actions]** > **[!UICONTROL Recompute delivery and tracking indicators]** för att synkronisera om. Mer information om spårningsindikatorer finns i det här [avsnittet](../../reporting/using/delivery-reports.md#tracking-indicators).
-
-* Om leveransräknaren inte är uppdaterad för medelstora distributioner kontrollerar du att det tekniska arbetsflödet för **[!UICONTROL Mid-Sourcing (Delivery counters)]** körs. Se denna [sida](../../installation/using/mid-sourcing-deployment.md) för mer information om detta.
-
-Du kan också spåra leveranser med olika rapporter via kontrollpanelen för leverans. Mer information om detta hittar du i det här [avsnittet](../../reporting/using/delivery-reports.md).
-
-## Användningsfall: Lägga till avsändarens IP-adresser i loggarna {#use-case}
-
-I det här avsnittet får du lära dig hur du lägger till information i leveransloggarna om IP-adressen som skickade varje e-postmeddelande i en leverans.
-
->[!NOTE]
+>Den här anpassningen kräver schemautbyggnadsfunktioner som är tillgängliga i lokala distributioner. Användare av hanterade molntjänster för Campaign v8 bör kontakta Adobe kundtjänst för att få anpassade leveransloggfält.
 >
 >Den här ändringen är annorlunda om du använder en enda instans eller en mellankällinstans. Innan du utför ändringen kontrollerar du att du är ansluten till e-postsändningsinstansen.
 
@@ -208,3 +112,12 @@ Det gör du genom att öppna leveransloggarna och lägga till kolumnen&quot;IP-i
 Nedan visas vad du bör se på fliken **[!UICONTROL Delivery]** efter ändringar:
 
 ![](assets/logs-with-ip.png)
+
+## Relaterade ämnen
+
+* [Övervaka leveranser i Campaign-gränssnittet](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/delivery-dashboard){target="_blank"} (Campaign v8-dokumentation)
+* [Leveransstatus](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/delivery-statuses){target="_blank"} (dokumentation för kampanj v8)
+* [Om leveransfel](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/delivery-failures){target="_blank"} (dokumentation för Campaign v8 - utförlig guide för både v7 och v8)
+* [Karantänhantering](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/quarantines){target="_blank"} (Campaign v8-dokumentation - omfattande guide för både v7 och v8)
+* [Bounce mail configuration](understanding-delivery-failures.md) (v7 hybrid/lokal)
+* [Karantänkonfiguration](understanding-quarantine-management.md) (v7-hybridteknik/lokal)

@@ -4,7 +4,7 @@ title: Funktionsmatris för Campaign On-lokalt, Hybrid och Hosted
 description: Lär dig de viktigaste skillnaderna mellan värdbaserade och lokala distributioner
 feature: Installation, Architecture
 exl-id: a2c425a8-9bde-4259-9140-5ada5397ed5f
-source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
+source-git-commit: 8b38d825aa9b0595226a444e0e463362468d51b3
 workflow-type: tm+mt
 source-wordcount: '287'
 ht-degree: 17%
@@ -19,7 +19,7 @@ Med Adobe Campaign Classic medföljer en uppsättning moduler och alternativ. Vi
 
 På den här sidan visas de viktigaste skillnaderna mellan värdbaserade (Managed Services) och lokala distributioner. Specifikationer för hybriddriftsättningar beror på vilka element Adobe har och ligger hos er.
 
-De olika värdmodellerna introduceras [&#x200B; i det här avsnittet](../../installation/using/hosting-models.md).
+De olika värdmodellerna introduceras [ i det här avsnittet](../../installation/using/hosting-models.md).
 
 ## Tillgänglighet per distributionsmodell {#capability-matrix}
 
@@ -35,7 +35,7 @@ De olika värdmodellerna introduceras [&#x200B; i det här avsnittet](../../inst
 | Zippa/zippa upp filer | On-demand | Tillgänglig | Tillgänglig | [Läs mer](../../platform/using/unzip-decrypt.md) |
 | Delegering av domännamn | On-demand | On-demand | Inte tillgängligt | [Läs mer](https://experienceleague.adobe.com/docs/control-panel/using/subdomains-and-certificates/setting-up-new-subdomain.html?lang=sv) |
 | Installera SpamAssassin | On-demand | Tillgänglig | Tillgänglig | [Läs mer](../../delivery/using/spamassassin.md) |
-| Åtkomst till leveransrapporter | Tillgänglig | On-demand | Tillgänglig | [Läs mer](../../delivery/using/monitoring-deliverability.md) |
+| Åtkomst till leveransrapporter | Tillgänglig | On-demand | Tillgänglig | [Läs mer](../../delivery/using/about-delivery-monitoring.md#deliverability-monitoring) |
 | Konfigurerar LDAP-autentisering | Inte tillgängligt | Tillgänglig | Tillgänglig | [Läs mer](../../installation/using/connecting-through-ldap.md) |
 
 
@@ -54,4 +54,4 @@ Adobe Campaign tillhandahåller alternativet **FDA (Federated Data Access**) fö
 * [Versionsinformation](../../rn/using/latest-release.md)
 * [Campaign Classic uppgraderingar](../../rn/using/rn-overview.md)
 * [Inaktuella och borttagna funktioner](../../rn/using/deprecated-features.md)
-* [[!DNL Gold Standard]-versioner &#x200B;](../../rn/using/gold-standard.md)
+* [[!DNL Gold Standard]-versioner ](../../rn/using/gold-standard.md)

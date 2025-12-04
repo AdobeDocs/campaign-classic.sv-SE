@@ -7,10 +7,10 @@ user-guide-title: Användarhandbok för Campaign Classic v7
 user-guide-description: Produktdokumentation för Adobe Campaign Classic v7.
 sub-product: adobe campaign classic
 type: Documentation
-source-git-commit: 3fc803ba8b7e367e199ba47ef05ba64d5f801506
+source-git-commit: 93f32cda33acc53fb0e497f619be35c1c76ff85e
 workflow-type: tm+mt
-source-wordcount: '2748'
-ht-degree: 100%
+source-wordcount: '2692'
+ht-degree: 99%
 
 ---
 
@@ -40,17 +40,8 @@ ht-degree: 100%
    + [Kampanjkopplingar](platform/using/about-connectors.md)
    + [Skapa frågor i Campaign](platform/using/about-queries-in-campaign.md)
    + Vanliga frågor och svar {#faq}
-      + [De vanligaste frågorna](platform/using/common-questions.md)
-      + [Globala begrepp](platform/using/faq-key-concepts.md)
+      + [Vanliga frågor och svar om Campaign Classic](platform/using/faq-campaign-classic-v7.md)
       + [Builduppgradering](platform/using/faq-build-upgrade.md)
-      + [Sekretess](platform/using/privacy-faq.md)
-      + [Målgrupper](platform/using/faq-audiences.md)
-      + [Utforma meddelanden](platform/using/faq-designing.md)
-      + [Skicka meddelanden](platform/using/faq-messages.md)
-      + [Arbetsflöden](platform/using/faq-workflows.md)
-      + [Konfiguration](platform/using/faq-campaign-config.md)
-      + [Rapporter](platform/using/faq-reporting.md)
-      + [Utveckling](platform/using/faq-developers.md)
    + [Ordlista](platform/using/ac-glossary.md)
    + Sekretess {#privacy}
       + [Sekretess och medgivande](platform/using/privacy-and-recommendations.md)
@@ -120,7 +111,6 @@ ht-degree: 100%
       + [Bygg personaliserat innehåll – DOLD](delivery/using/design-and-personalize.md)
       + [Definiera rätt målgrupp – DOLD](delivery/using/define-the-right-audience.md)
       + [Kontrollera före sändning – DOLD](delivery/using/check-before-sending.md)
-      + [Spåra och övervaka – DOLD](delivery/using/track-and-monitor.md)
    + [Skicka e-postmeddelanden](delivery/using/about-email-channel.md)
    + Skicka e-postmeddelanden {#sending-emails}
       + [Skapa en e-postleverans – DOLD](delivery/using/creating-an-email-delivery.md)
@@ -197,28 +187,15 @@ ht-degree: 100%
       + [Viral och social marknadsföring](delivery/using/viral-and-social-marketing.md)
    + Övervaka leveranser {#monitoring-deliveries}
       + [Kom igång med leveransövervakning](delivery/using/about-delivery-monitoring.md)
-      + [Åtkomst till listan över leveranser](delivery/using/list-of-deliveries.md)
-      + [Kontrollpanel för leverans](delivery/using/delivery-dashboard.md)
+      + [Övervaka era leveranser i Campaign-gränssnittet](delivery/using/delivery-dashboard.md)
       + [Bästa praxis för leveransprestanda](delivery/using/delivery-performances.md)
       + [Leveransfelsökning](delivery/using/delivery-troubleshooting.md)
-      + [Leveransstatus](delivery/using/delivery-statuses.md)
       + [Förstå leveransfel](delivery/using/understanding-delivery-failures.md)
       + [Förstå karantänhantering](delivery/using/understanding-quarantine-management.md)
-      + Spåra meddelanden {#tracking-messages}
-         + [Om att spåra meddelanden](delivery/using/about-message-tracking.md)
-         + [Så här konfigurerar du spårade länkar](delivery/using/how-to-configure-tracked-links.md)
-      + Spåra personanpassade länkar {#tracking-personalized-links}
-         + [Kom igång med spårning av personaliserade länkar](delivery/using/tracking-personalized-links.md)
-         + [Identifiera spårnings-URL:er](delivery/using/detecting-tracking-urls.md)
-         + [Anvisningar om förbearbetning av spårning](delivery/using/pre-processing-instructions.md)
-      + [Konfigurera alternativ för URL-spårning](delivery/using/personalizing-url-tracking.md)
-      + [Åtkomst till spårningsloggarna](delivery/using/accessing-the-tracking-logs.md)
-      + [Testspårning](delivery/using/testing-tracking.md)
-      + [Felsökning av spårning](delivery/using/tracking-troubleshooting.md)
+      + [Meddelandespårning](delivery/using/about-message-tracking.md)
    + Leveranshantering {#deliverability-management}
       + [Vad är levererbarhet?](delivery/using/about-deliverability.md)
       + [Kontrollera meddelandeinnehåll](delivery/using/control-message-content.md)
-      + [Övervaka levererbarhet](delivery/using/monitoring-deliverability.md)
       + [Inkorgsåtergivning](delivery/using/inbox-rendering.md)
       + [SpamAssassin](delivery/using/spamassassin.md)
       + [Felsökning](delivery/using/deliverability-faq.md)

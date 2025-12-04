@@ -1,56 +1,112 @@
 ---
 product: campaign
 title: Kom igång med leveransövervakning
-description: Läs mer om funktioner för övervakning av Campaign Classic
-badge-v8: label="Gäller även för v8" type="Positive" tooltip="Gäller även Campaign v8"
+description: Läs mer om Campaign Classic funktioner för leveransövervakning
 feature: Monitoring, Deliverability
 role: User
 exl-id: 9ce11da0-e37b-459e-8ec7-d2bddf59bdf7
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: eac670cd4e7371ca386cee5f1735dc201bf5410a
 workflow-type: tm+mt
-source-wordcount: '297'
-ht-degree: 5%
+source-wordcount: '698'
+ht-degree: 2%
 
 ---
 
 # Kom igång med leveransövervakning {#about-delivery-monitoring}
 
-Att övervaka era leveranser efter att de har skickats är ett viktigt steg för att se till att era marknadsföringskampanjer är effektiva och når ut till era kunder.
+>[!IMPORTANT]
+>
+>Den här sidan innehåller **Campaign Classic v7-specifika övervakningsfunktioner** för hybriddistributioner och lokala distributioner.
 
-I det här avsnittet får du lära dig mer om den information du kan övervaka efter att ha skickat en leverans, samt hur leveransfel och karantän hanteras.
+## Övervakningsfunktioner
 
-<img src="assets/do-not-localize/icon_monitor.svg" width="60px">
+### Leveransövervakning {#monitoring-deliveries}
 
-**Övervaka dina leveranser**
+**För hybriddistributioner/lokala distributioner av Campaign Classic v7** krävs ytterligare övervakning för serverresurser och MTA-konfiguration (Mail Transfer Agent).
 
-Med listan över leveranser kan du se alla skapade leveranser till en enda plats.
+#### Felsöka väntande leveranser {#pending-deliveries}
 
-För varje leverans finns en dedikerad kontrollpanel tillgänglig. Du kan övervaka eventuella problem som uppstår under sändningen samt olika typer av information om leveransen: rapporter, spegelsidor, undantag, spårningsloggar, återgivning osv.
+Vad händer om leveranserna inte skickas och deras status förblir **Väntande**?
 
-* [Åtkomst till listan över leveranser](list-of-deliveries.md)
-* [Kontrollpanel för leverans](delivery-dashboard.md)
+* Körningsprocessen väntar på att vissa resurser ska vara tillgängliga. MTA har kanske inte startats.
+Kontrollera att mta@instance startas på dina MTA-servrar och starta MTA-modulen om det behövs. [Läs mer](../../production/using/administration.md).
 
-<img src="assets/do-not-localize/icon_guidelines.svg" width="60px">
+* Leveransen kan ha en tillhörighet som inte har konfigurerats på den sändande instansen.
+Tips: Kontrollera konfigurationen för trafikhantering (IP-tillhörighet). Mer information finns i Kontrollera utgående SMTP-trafik.
 
-**Säker leverans**
+>[!NOTE]
+>
+>Dessa steg kan bara utföras av en expertanvändare på lokala installationer.
 
-Flera riktlinjer bör följas för att leveranserna ska gå bra. Vanliga problem som kan uppstå när du skickar leveranser är också tillgängliga för att hjälpa dig att skicka leveranser på ett effektivt sätt.
+### Leveransövervakning {#deliverability-monitoring}
 
+#### Installation av leveranspaket {#deliverability-package}
+
+Den här funktionen är tillgänglig via ett dedikerat paket i Adobe Campaign. Paketet måste vara installerat för att du ska kunna använda det. När du är klar startar du om servern så att paketet kan användas.
+
+* För värdbaserade klienter och hybridklienter konfigureras **Leveransövervakning** på din instans av Adobe tekniska support och konsulter. Kontakta er kontoansvarige på Adobe om du vill ha mer information.
+
+* För lokala installationer måste du installera paketet **[!UICONTROL Deliverability monitoring (Email Deliverability)]** via menyn **[!UICONTROL Tools]** > **[!UICONTROL Advanced]** > **[!UICONTROL Import package]**. Mer information finns i [Installera Campaign Classic standardpaket](../../installation/using/installing-campaign-standard-packages.md).
+
+#### Arbetsflöde för slutprodukter {#deliverability-workflow}
+
+I Adobe Campaign Classic hanteras **Leveransövervakning** av arbetsflödet **[!UICONTROL Refresh for deliverability]**. Det installeras som standard på alla instanser och gör att du kan initiera listan över regler för studsmeddelanden, domänlistan och listan över MX:er. När paketet **[!UICONTROL Deliverability monitoring (Email Deliverability)]** har installerats körs det här arbetsflödet natt för att regelbundet uppdatera listan över regler och göra det möjligt att aktivt hantera plattformsleveransen.
+
+**Leveranspaketet ger dig åtkomst till:**
+
+* Återgivningsrapporten [Inkorgen](inbox-rendering.md) som gör att du kan förhandsgranska meddelanden på större e-postklienter för att kunna skanna innehåll och anseende.
+* Översikt över meddelandekvalitet (inkorg, skräppost).
+
+#### Övervakningsverktyg {#monitoring-tools}
+
+**För lokala installationer** kan du använda följande övervakningsverktyg:
+
+* Rapporten **[!UICONTROL Delivery throughput]** ger dig en översikt över hela plattformens dataflöde under en viss period. Mer information finns i [det här avsnittet](../../reporting/using/global-reports.md#delivery-throughput).
+* Varje leverans genererar en utsändningsstatistikrapport för olika internetleverantörer. Den visar vissa data- och anseendemått som kan påverka leveransförmågan, inklusive följande tal:
+   * **[!UICONTROL Hard bounces]** anger datakvalitet. Talet ska vara mindre än 2%.
+   * **[!UICONTROL Soft bounces]** anger rykte. Talet får inte vara högre än 10 % för någon ISP.
+
+  Mer information finns i avsnittet [Leveransstatistik](../../reporting/using/global-reports.md#delivery-statistics).
+
+#### Riktlinjer för övervakning {#monitoring-guidelines}
+
+**För lokala installationer** finns det ytterligare riktlinjer för leveransövervakning:
+
+* Kontrollera regelbundet [leveransdataflödet](../../reporting/using/global-reports.md#delivery-throughput) för hela plattformen för att kontrollera om den stämmer överens med den ursprungliga konfigurationen.
+* Kontrollera att [återförsök](understanding-delivery-failures.md#retries-after-a-delivery-temporary-failure) har konfigurerats korrekt (30 minuter för återförsöksperiod och mer än 20 återförsök) i leveransmallar.
+* Kontrollera regelbundet att postlådan [bounce](understanding-delivery-failures.md#bounce-mail-management) är tillgänglig och att kontot inte håller på att förfalla.
+* Kontrollera varje leveransflöde, som du kommer åt från [leveransinstrumentpanelen](delivery-dashboard.md), för att se till att det stämmer överens med leveransinnehållets giltighet (t.ex. ska &#39;flash sales&#39; levereras på några minuter, inte dagar).
+* När du använder vågor måste du kontrollera att varje våg har tillräckligt med tid för att slutföra innan nästa våg aktiveras.
+* Kontrollera att antalet fel och nya [karantäner](understanding-quarantine-management.md) stämmer överens med andra leveranser.
+* Läs noggrant igenom [leveransloggarna](delivery-dashboard.md#delivery-logs-and-history) för att kontrollera vilken typ av fel som markeras (blockeringslista, DNS-problem, skräppostregler osv.).
+
+### Felsökning {#delivery-troubleshooting}
+
+Specifika åtgärder kan utföras när problem påträffas med leveranser i **hybriddistributioner/lokala distributioner**:
+
+* [Leveransproblem](../../production/using/performance-and-throughput-issues.md#deliverability_issues)
+* [Bildvisningsproblem](../../production/using/image-display-issues.md)
+* [Problem med leveransresultat](delivery-performances.md)
+* [Tillfälliga filer ger ut](../../production/using/temporary-files.md) - *endast lokala kunder*
+
+## Allmänna övervakningsområden
+
+**Övervaka dina leveranser:**
+
+* [Övervaka dina leveranser i Campaign-gränssnittet](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/delivery-dashboard){target="_blank"} (Campaign v8-dokumentation)
 * [Leveransresultat och bästa praxis](delivery-performances.md)
-* [Felsökning av leverans](delivery-troubleshooting.md)
+* [Om leveransfel](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/delivery-failures){target="_blank"} (dokumentation för Campaign v8 - utförlig guide för både v7 och v8)
 
-<img src="assets/do-not-localize/icon_failure.svg" width="60px">
+**v7-specifik konfiguration:**
 
-**Förstå leveransfel**
+* [Konfiguration för studshantering](understanding-delivery-failures.md) (v7-hybrid/lokal)
+* [Karantänhantering](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/quarantines){target="_blank"} (Campaign v8-dokumentation - omfattande guide för både v7 och v8)
+* [Karantänkonfiguration](understanding-quarantine-management.md) (v7-hybridteknik/lokal)
 
-När det inte går att skicka ett meddelande till en profil skickar fjärrservern automatiskt ett felmeddelande som hämtas av Adobe Campaign-plattformen och kvalificeras för att avgöra om e-postadressen eller telefonnumret ska sättas i karantän eller inte.
+**Spåra meddelanden:**
 
-[Att förstå leveransfel](understanding-delivery-failures.md) är ett viktigt steg för att förbättra era marknadsföringskampanjer.
+* [Kom igång med meddelandespårning](about-message-tracking.md)
 
-<img src="assets/do-not-localize/icon_quarantine.svg" width="60px">
+## Relaterade ämnen
 
-**Förstå karantänhantering**
-
-Adobe Campaign hanterar en lista med adresser i karantän. Mottagare vars adress sätts i karantän exkluderas som standard vid leveransanalys och anges inte som mål.
-
-I [det här avsnittet](understanding-quarantine-management.md) hittar du information om hur du identifierar och hanterar adresser i karantän, och får lära dig mer om villkoren för att skicka en adress till karantän.
+* [Leveransstatus](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/delivery-statuses){target="_blank"} (dokumentation för kampanj v8)

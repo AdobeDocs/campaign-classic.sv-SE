@@ -1,25 +1,30 @@
 ---
 product: campaign
 title: Vanliga frågor och svar om builduppgradering
-description: Vanliga frågor om uppgraderingar av Campaign-versioner
+description: Vanliga frågor om bygguppgraderingar av Campaign Classic v7
 feature: Upgrade, Troubleshooting
 audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: 85e2135d-a1a3-44f0-a4f9-de38db5c8726
-source-git-commit: f39dc6077a7ddc3fb9b53d4082c08e65e7683f10
+source-git-commit: 295e3596d9291cbcc55e2d264309141526c3806b
 workflow-type: tm+mt
-source-wordcount: '2026'
+source-wordcount: '2066'
 ht-degree: 0%
 
 ---
 
 # Vanliga frågor om uppgradering {#build-upgrade-faq}
 
+Här finns frågor och svar om Campaign Classic v7-uppgraderingar, särskilt för driftsättningar på plats och i hybridversioner.
+
+>[!NOTE]
+>
+>Omfattande svar på vanliga Campaign-frågor om arbetsflöden, leveranser, målgrupper med mera finns i [Vanliga frågor om Campaign v8 ](https://experienceleague.adobe.com/docs/campaign/campaign-v8/start/campaign-faq-comprehensive.html){target="_blank"}.
 
 Adobe Campaign uppdateras regelbundet. Om du känner till vår publicerade [versionsinformation](../../rn/using/rn-overview.md) är du antagligen medveten om att i genomsnitt 2/3 mindre versioner packade med nya funktioner släpps förbättringar och korrigeringar varje år. Dessutom släpper vi regelbundet bara byggen med kumulativa korrigeringar. Denna regelbundna uppdateringsfrekvens syftar till att få den senaste och bästa informationen i händerna, så att miljön är helt säker och så tydligt som möjligt förbättrar upplevelsen av vår produkt.
 
-Det är viktigt att våra kunder kör den senaste versionen av Adobe Campaign. Det gör också att Adobe kan hjälpa till mycket effektivare om du stöter på problem - det tar ofta längre tid att identifiera, återge och åtgärda ett fel i en gammal version, för att inte tala om att vissa problem som du kanske stöter på redan har åtgärdats i en nyligen gjord version.
+Det är viktigt att våra kunder kör den senaste versionen av Adobe Campaign. Det gör också att Adobe kan hjälpa till mycket effektivare om du stöter på problem - det tar ofta längre tid att identifiera, återge och åtgärda ett problem i en gammal version, för att inte tala om att vissa problem som du kanske stöter på redan har åtgärdats i en nyligen gjord version.
 
 Som värdanvändare får ni automatiskt den årliga uppgraderingen av Campaign med den senaste stabila versionen utan någon åtgärd. Även kunder som har lokaler och hybridkunder kan dra nytta av den här versionen. Om du migrerar från en gammal version rekommenderar vi att du först uppgraderar till den här versionen. [Läs mer](../../rn/using/rn-overview.md).
 
@@ -31,7 +36,7 @@ Läs mer [i det här avsnittet](../../rn/using/rn-overview.md).
 
 ## Vilken är den senaste versionen av Adobe Campaign Classic?
 
-Den senaste versionen av Campaign Classicen, inklusive nya funktioner och dokumentation, finns i den senaste [versionsinformationen](../../rn/using/latest-release.md).
+Den senaste Campaign Classic-versionen, med nya funktioner och dokumentation, finns i den senaste [versionsinformationen](../../rn/using/latest-release.md).
 
 ## Hur vet jag vilken version jag har?
 
@@ -135,11 +140,11 @@ Nej. Under bygguppgraderingen stoppas både arbetsflödes- och e-posttjänster. 
 
 ## Fungerar mina spårningslänkar fortfarande under uppgraderingen?
 
-Från och med Campaign Classic v7.3.5 fungerar fortfarande spårning av länkar i e-postmeddelanden som redan har skickats under uppgraderingen.
+Med början från Campaign Classic v7.3.5 fungerar fortfarande spårning av länkar i e-postmeddelanden som redan har skickats under uppgraderingen.
 
 ## Måste jag vara tillgänglig under uppgraderingsprocessen?
 
-Ja. Kunderna bör förse Adobe med en kontaktpunkt som är tillgänglig under eller omedelbart efter uppgraderingen av produktionsinstansen.  Adobe kommer att kontakta den här personen via e-post såvida inte andra arrangemang har gjorts. Detta kommer att säkerställa en smidig övergång och omedelbar validering av kritiska uppgifter. Adobe kontaktar kunden när uppgraderingen är klar för bekräftelse.
+Ja. Kunden bör ge Adobe en kontaktpunkt som är tillgänglig under eller omedelbart efter uppgraderingen av produktionsinstansen.  Adobe kommer att kontakta den här personen via e-post såvida inte något annat har överenskommits. Detta kommer att säkerställa en smidig övergång och omedelbar validering av kritiska uppgifter. Adobe kontaktar kunden när uppgraderingen är klar för att bekräfta detta.
 
 ## Behöver jag uppdatera klientkonsolen?
 
@@ -165,7 +170,7 @@ Se listan [Build upgrade checklist below](#check-list). Kunderna bör köra likn
 
 ## Hur ofta måste jag uppgradera?
 
-För att säkerställa optimala prestanda, tillgänglighet och säkerhet för systemet kommer Adobe att samarbeta med kunder för att säkerställa att systemen uppgraderas minst en gång per år.
+För att säkerställa optimala prestanda, tillgänglighet och säkerhet för systemet samarbetar Adobe med kunderna för att säkerställa att systemen uppgraderas minst en gång per år.
 
 ## Kommer det att bli någon avstängning med en bygguppgradering?
 
@@ -214,6 +219,6 @@ allt innehåll visas och visas.
 **Se även**
 
 * [Utföra en bygguppgradering](../../production/using/build-upgrade.md)
-* [Versionsinformation om Campaign Classic](../../rn/using/rn-overview.md)
+* [Versionsinformation för Campaign Classic](../../rn/using/rn-overview.md)
 * [Hjälp- och supportalternativ för Campaign Classic](../../support.md)
 * [Årligt uppgraderingsprogram](../../rn/using/rn-overview.md#yearly-upgrade)
