@@ -5,10 +5,10 @@ description: Läs mer om Campaign Classic funktioner för leveransövervakning
 feature: Monitoring, Deliverability
 role: User
 exl-id: 9ce11da0-e37b-459e-8ec7-d2bddf59bdf7
-source-git-commit: eac670cd4e7371ca386cee5f1735dc201bf5410a
+source-git-commit: 2ebae2b84741bf26dd44c872702dbf3b0ebfc453
 workflow-type: tm+mt
-source-wordcount: '698'
-ht-degree: 2%
+source-wordcount: '812'
+ht-degree: 1%
 
 ---
 
@@ -89,24 +89,37 @@ Specifika åtgärder kan utföras när problem påträffas med leveranser i **hy
 * [Problem med leveransresultat](delivery-performances.md)
 * [Tillfälliga filer ger ut](../../production/using/temporary-files.md) - *endast lokala kunder*
 
-## Allmänna övervakningsområden
+## Övervaka leveranser
 
-**Övervaka dina leveranser:**
+Följande resurser hjälper dig att övervaka och spåra leveransresultatet i Campaign Classic v7:
 
-* [Övervaka dina leveranser i Campaign-gränssnittet](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/delivery-dashboard){target="_blank"} (Campaign v8-dokumentation)
-* [Leveransresultat och bästa praxis](delivery-performances.md)
-* [Om leveransfel](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/delivery-failures){target="_blank"} (dokumentation för Campaign v8 - utförlig guide för både v7 och v8)
+### Åtkomst till kontrollpanelen för leverans
 
-**v7-specifik konfiguration:**
+Lär dig hur du får åtkomst till leveranslistor och använder kontrollpanelen för leverans för att övervaka din sändningsaktivitet:
 
-* [Konfiguration för studshantering](understanding-delivery-failures.md) (v7-hybrid/lokal)
-* [Karantänhantering](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/quarantines){target="_blank"} (Campaign v8-dokumentation - omfattande guide för både v7 och v8)
-* [Karantänkonfiguration](understanding-quarantine-management.md) (v7-hybridteknik/lokal)
-
-**Spåra meddelanden:**
-
-* [Kom igång med meddelandespårning](about-message-tracking.md)
-
-## Relaterade ämnen
-
+* [Skärmleveranser i Campaign-gränssnittet](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/delivery-dashboard){target="_blank"} (dokumentationen för Campaign v8 gäller både v7 och v8)
 * [Leveransstatus](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/delivery-statuses){target="_blank"} (dokumentation för kampanj v8)
+* [Avancerat: Anpassa leveransloggar](customize-delivery-logs.md) (endast hybrid v7/lokal - schemautökning)
+
+### Spåra meddelandeinteraktioner
+
+Spåra öppningar, klick och mottagarnas interaktioner med dina leveranser:
+
+* [Dokumentation för meddelandespårning](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/analytics/tracking/tracking){target="_blank"} (Campaign v8-dokumentation - gäller både v7 och v8)
+* [Konfigurera spårade länkar](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/analytics/tracking/tracked-links){target="_blank"} (Campaign v8-dokumentation)
+* [Åtkomstspårningsloggar](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/analytics/tracking/tracking-logs){target="_blank"} (dokumentation för Campaign v8)
+
+### Optimera leveransresultatet
+
+Bästa praxis och felsökning för leveransproblem:
+
+* [Bästa tillvägagångssätt vid leverans](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/start/delivery-best-practices){target="_blank"} (dokumentation för Campaign v8 - gäller både v7 och v8)
+* [Leveransprestanda och felsökning](delivery-performance-troubleshooting.md) (v7-hybrid/lokal specifik konfiguration)
+
+### Förstå misslyckanden och karantän
+
+Hantera leveransfel, studentmejl och adresser i karantän:
+
+* [Om leveransfel](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/delivery-failures){target="_blank"} (dokumentation för Campaign v8 - utförlig guide för både v7 och v8)
+* [Karantänhantering](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/quarantines){target="_blank"} (Campaign v8-dokumentation - omfattande guide för både v7 och v8)
+* [Leveransfel och karantänkonfiguration](delivery-failures-quarantine.md) (v7-hybridkonfigurationer/lokala specifika konfigurationer)

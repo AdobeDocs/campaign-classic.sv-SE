@@ -7,9 +7,9 @@ user-guide-title: Användarhandbok för Campaign Classic v7
 user-guide-description: Produktdokumentation för Adobe Campaign Classic v7.
 sub-product: adobe campaign classic
 type: Documentation
-source-git-commit: 93f32cda33acc53fb0e497f619be35c1c76ff85e
+source-git-commit: 2ebae2b84741bf26dd44c872702dbf3b0ebfc453
 workflow-type: tm+mt
-source-wordcount: '2692'
+source-wordcount: '2685'
 ht-degree: 99%
 
 ---
@@ -187,12 +187,9 @@ ht-degree: 99%
       + [Viral och social marknadsföring](delivery/using/viral-and-social-marketing.md)
    + Övervaka leveranser {#monitoring-deliveries}
       + [Kom igång med leveransövervakning](delivery/using/about-delivery-monitoring.md)
-      + [Övervaka era leveranser i Campaign-gränssnittet](delivery/using/delivery-dashboard.md)
-      + [Bästa praxis för leveransprestanda](delivery/using/delivery-performances.md)
-      + [Leveransfelsökning](delivery/using/delivery-troubleshooting.md)
-      + [Förstå leveransfel](delivery/using/understanding-delivery-failures.md)
-      + [Förstå karantänhantering](delivery/using/understanding-quarantine-management.md)
-      + [Meddelandespårning](delivery/using/about-message-tracking.md)
+      + [Leveransprestanda och felsökning](delivery/using/delivery-performance-troubleshooting.md)
+      + [Leveransfel och karantänhantering](delivery/using/delivery-failures-quarantine.md)
+      + [Avancerat: Anpassa leveransloggar](delivery/using/customize-delivery-logs.md)
    + Leveranshantering {#deliverability-management}
       + [Vad är levererbarhet?](delivery/using/about-deliverability.md)
       + [Kontrollera meddelandeinnehåll](delivery/using/control-message-content.md)
@@ -288,7 +285,7 @@ ht-degree: 99%
    + [Designa rapporter med kuber](reporting/using/ac-cubes.md)
 + Designa webbinnehåll {#designing-content}
    + Webbapplikationer {#web-applications}
-      + [Kom igång med webbapplikationer &#x200B;](web/using/about-web-applications.md)
+      + [Kom igång med webbapplikationer ](web/using/about-web-applications.md)
       + [Skapa en ny webbapplikation](web/using/creating-a-new-web-application.md)
       + [Designa en webbapplikation](web/using/designing-a-web-application.md)
       + [Användningsfall: skapa översikter](web/using/use-cases-creating-overviews.md)
@@ -354,7 +351,7 @@ ht-degree: 99%
    + Adobe Experience Manager {#adobe-experience-manager}
       + [Arbeta med [!DNL Adobe Experience Manager]](integrations/using/about-adobe-experience-manager.md)
       + [Konfigurera integreringen](integrations/using/configuring-the-integration.md)
-      + [Skapa ett nyhetsbrev om [!DNL Experience Manager] &#x200B;](integrations/using/creating-an-experience-manager-newsletter.md)
+      + [Skapa ett nyhetsbrev om [!DNL Experience Manager] ](integrations/using/creating-an-experience-manager-newsletter.md)
    + Adobe Target {#adobe-target}
       + [Arbeta med [!DNL Adobe Target]](integrations/using/integrating-with-adobe-target.md)
       + [Konfigurera integreringen med [!DNL Adobe Target]](integrations/using/configuring-the-integration-with-adobe-target.md)
@@ -822,6 +819,6 @@ ht-degree: 99%
       + [Uppdatering av spårade URL:er](technotes/using/tracked-urls.md)
    + Migrering till Adobe Managed Services{#dc-migration}
       + [Migrering till Public Cloud](technotes/using/dc-migration.md)
-      + [Vanliga frågor och svar &#x200B;](technotes/using/dc-migration-faq.md)
+      + [Vanliga frågor och svar ](technotes/using/dc-migration-faq.md)
    + [GCM-baserade funktioner](technotes/using/gcm-functions.md)
 + [Kontrollpanelen i Campaign](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=sv)
