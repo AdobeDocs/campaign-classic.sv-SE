@@ -5,14 +5,14 @@ description: Lär dig hur du uppdaterar studskvalifikation efter ett avbrott i A
 badge-v8: label="Gäller även för v8" type="Positive" tooltip="Gäller även Campaign v8"
 feature: Deliverability
 exl-id: 34be23f7-17fa-475e-9663-2e353d76b172
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: 62ab16b206563aa25b8943e606d03a3184eb00db
 workflow-type: tm+mt
 source-wordcount: '450'
 ht-degree: 0%
 
 ---
 
-# Uppdatera felaktiga hårddiskgränser efter Apple-avbrott {#update-bounce-qualification.md}
+# Uppdatera felaktiga hårddiskmarkeringar efter Apple avbrott {#update-bounce-qualification.md}
 
 ## Kontext
 
@@ -56,5 +56,5 @@ Baserat på tidsramen för incidenten är nedanstående de rekommenderade riktli
 När du har en lista över berörda mottagare kan du antingen ange statusen **[!UICONTROL Valid]** så att de tas bort från karantänlistan av arbetsflödet i **[!UICONTROL Database cleanup]** eller bara ta bort dem från tabellen.
 
 **Relaterade ämnen:**
-* [Förstå leveransfel](understanding-delivery-failures.md)
-* [E-poststudsar](understanding-delivery-failures.md#bounce-mail-qualification)
+* [Förstå leveransfel](delivery-failures-quarantine.md)
+* [E-poststudsar](delivery-failures-quarantine.md#bounce-mail-qualification)

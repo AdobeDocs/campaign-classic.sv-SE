@@ -7,7 +7,7 @@ role: User, Developer
 hide: true
 hidefromtoc: true
 exl-id: 4520504a-0d9f-4ea7-a5a8-0c07948af4f0
-source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
+source-git-commit: 62ab16b206563aa25b8943e606d03a3184eb00db
 workflow-type: tm+mt
 source-wordcount: '980'
 ht-degree: 6%
@@ -34,7 +34,7 @@ Följ stegen nedan för att skapa ett push-meddelande för iOS-enheter:
 
    >[!NOTE]
    >
-   >Den detaljerade processen när målpopulationen för en leverans väljs visas i det här avsnittet i [Campaign v8-dokumentationen](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html?lang=sv-SE#target-population.){target="_blank"}.
+   >Den detaljerade processen när målpopulationen för en leverans väljs visas i det här avsnittet i [Campaign v8-dokumentationen](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html#target-population.){target="_blank"}.
    >
    >Mer information om användning av anpassningsfält finns i [det här avsnittet](about-personalization.md).
    >
@@ -130,9 +130,9 @@ Använd samma process som för e-postleveranser om du vill skicka ett korrektur 
 
 När du har skickat meddelanden kan du övervaka och spåra dina leveranser. Mer information om detta hittar du i dessa avsnitt.
 
-* [Kantlinjer för push-meddelanden](understanding-quarantine-management.md#push-notification-quarantines)
+* [Kantlinjer för push-meddelanden](delivery-failures-quarantine.md#push-notification-quarantines)
 * [Övervaka en leverans](about-delivery-monitoring.md)
-* [Förstå leveransfel](understanding-delivery-failures.md)
+* [Förstå leveransfel](delivery-failures-quarantine.md)
 
 ## Skapa ett iOS-meddelande {#creating-ios-delivery}
 

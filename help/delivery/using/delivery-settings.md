@@ -7,7 +7,7 @@ role: User
 hide: true
 hidefromtoc: true
 exl-id: 66250817-f829-4b8b-92dd-2daa92a97fe0
-source-git-commit: d3d731c64cb5a430de6adac3aeb326f74134c436
+source-git-commit: 62ab16b206563aa25b8943e606d03a3184eb00db
 workflow-type: tm+mt
 source-wordcount: '696'
 ht-degree: 2%
@@ -16,7 +16,7 @@ ht-degree: 2%
 
 # Leveransinställningar {#about-delivery-settings}
 
-Följande inställningar är specifika för Campaign Classic. Andra leveransinställningar finns i [dokumentationen för Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/gs-message.html?lang=sv-SE){target="_blank"}.
+Följande inställningar är specifika för Campaign Classic. Andra leveransinställningar finns i [dokumentationen för Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/gs-message.html){target="_blank"}.
 
 ## Leveransanalys {#delivery-analysis}
 
@@ -53,7 +53,7 @@ Om en leverans är för stor är det bättre att tilldela den en låg prioritet 
 
 ### Konfigurera återförsök {#configuring-retries}
 
-Tillfälligt olevererade meddelanden på grund av ett fel av typen **Mjuk** eller **Ignorerad** kan återförsökas automatiskt. Leveransfeltyperna och anledningarna visas i det här [avsnittet](understanding-delivery-failures.md#delivery-failure-types-and-reasons).
+Tillfälligt olevererade meddelanden på grund av ett fel av typen **Mjuk** eller **Ignorerad** kan återförsökas automatiskt. Leveransfeltyperna och anledningarna visas i det här [avsnittet](delivery-failures-quarantine.md#delivery-failure-types-and-reasons).
 
 >[!IMPORTANT]
 >

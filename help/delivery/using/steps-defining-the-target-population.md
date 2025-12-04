@@ -7,7 +7,7 @@ role: User
 hide: true
 hidefromtoc: true
 exl-id: d0ed7be7-3147-4cb8-9ce7-ea51602e9048
-source-git-commit: 8817b485fd5b6d6aeb9d71c1106f16fbb6bc3c5b
+source-git-commit: 62ab16b206563aa25b8943e606d03a3184eb00db
 workflow-type: tm+mt
 source-wordcount: '1730'
 ht-degree: 2%
@@ -48,7 +48,7 @@ Följ stegen nedan för att välja mottagare av en leverans:
 
    Följande måltyper erbjuds som standard:
 
-   * **[!UICONTROL Filtering conditions]** : Med det här alternativet kan du definiera en fråga och visa resultatet. Mer information om filter finns i [dokumentationen för Campaign v8 (konsol)](https://experienceleague.adobe.com/sv/docs/campaign/campaign-v8/audience/create-filters){target=_blank}.
+   * **[!UICONTROL Filtering conditions]** : Med det här alternativet kan du definiera en fråga och visa resultatet. Mer information om filter finns i [dokumentationen för Campaign v8 (konsol)](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/audience/create-filters){target=_blank}.
    * **[!UICONTROL Subscribers of an information service]** : Med det här alternativet kan du välja ett nyhetsbrev som mottagarna måste prenumerera på för att få det mål som den leverans som skapas har.
 
      ![](assets/s_ncs_user_wizard_email02c.png)
@@ -72,7 +72,7 @@ Följ stegen nedan för att välja mottagare av en leverans:
    * **[!UICONTROL Recipients included in a folder]** : Med det här alternativet kan du ange profiler i en viss mapp i trädet som mål.
    * **[!UICONTROL A recipient]** : Med det här alternativet kan du välja en specifik mottagare bland profilerna i databasen.
    * **[!UICONTROL A list of recipients]** : Med det här alternativet kan du ange en lista över mottagare som mål. Listor visas i [det här avsnittet](../../platform/using/creating-and-managing-lists.md).
-   * **[!UICONTROL User filters]** : Med det här alternativet kan du komma åt de förkonfigurerade filtren och använda dem som filtreringsvillkor för profiler i databasen. Mer information om filter finns i [dokumentationen för Campaign v8 (konsol)](https://experienceleague.adobe.com/sv/docs/campaign/campaign-v8/audience/create-filters){target=_blank}.
+   * **[!UICONTROL User filters]** : Med det här alternativet kan du komma åt de förkonfigurerade filtren och använda dem som filtreringsvillkor för profiler i databasen. Mer information om filter finns i [dokumentationen för Campaign v8 (konsol)](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/audience/create-filters){target=_blank}.
    * Med alternativet **[!UICONTROL Exclude recipients corresponding to this segment]** kan du rikta in dig på mottagare som inte uppfyller de definierade målvillkoren. Om du vill använda det här alternativet markerar du lämplig ruta och tillämpar sedan målinriktning, enligt definitionen ovan, för att utesluta de resulterande profilerna.
 
      ![](assets/s_ncs_user_wizard_email02g.png)
@@ -149,7 +149,7 @@ Följande alternativ är tillgängliga:
 
   >[!NOTE]
   >
-  >Mer information om karantänhantering finns i [Förstå karantänhantering](understanding-quarantine-management.md).
+  >Mer information om karantänhantering finns i [Förstå karantänhantering](delivery-failures-quarantine.md).
 
 * **[!UICONTROL Limit delivery]** till ett visst antal meddelanden. Med det här alternativet kan du ange maximalt antal meddelanden som ska skickas. Om målets innehåll överskrider antalet angivna meddelanden, tillämpas ett slumpmässigt urval på målet.
 

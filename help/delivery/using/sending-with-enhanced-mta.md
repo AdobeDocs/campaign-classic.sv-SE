@@ -5,7 +5,7 @@ description: Läs mer om omfattningen av och egenskaperna hos utskick av e-post 
 feature: Email
 role: User, Admin, Developer
 exl-id: 58cc23f4-9ab0-45c7-9aa2-b08487ec7e91
-source-git-commit: a85d94e8ff66e8468b4fe2f071df48437393bbce
+source-git-commit: 62ab16b206563aa25b8943e606d03a3184eb00db
 workflow-type: tm+mt
 source-wordcount: '1381'
 ht-degree: 0%
@@ -105,7 +105,7 @@ Studskompetensen i tabellen Campaign **[!UICONTROL Delivery log qualification]**
 >
 >Det förbättrade MTA-uttrycket kvalificerar SMTP-studsen och skickar tillbaka den till Campaign i form av en studskod mappad till en Campaign-studsorsak och -kvalificering.
 
-Mer information om studskompetens finns i [det här avsnittet](understanding-delivery-failures.md#bounce-mail-qualification).
+Mer information om studskompetens finns i [det här avsnittet](delivery-failures-quarantine.md#bounce-mail-qualification).
 
 ### Leverans
 
@@ -136,17 +136,17 @@ Mer information om giltighetsperioden finns på [sidan](communication-channels.m
 ### DKIM-signering
 
 Signering med e-postautentisering för DKIM (DomainKeys Identified Mail) görs av den utökade MTA:n. DKIM-signering av den interna Campaign MTA-filen kommer att stängas av i domänhanteringstabellen som en del av den förbättrade MTA-uppgraderingen.
-Mer information om DKIM finns i [Adobe Deliverability Best Practice Guide](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html?lang=sv-SE#authentication).
+Mer information om DKIM finns i [Adobe Deliverability Best Practice Guide](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html#authentication).
 
 ### Rapport om lyckade leveranser
 
 I vyn **[!UICONTROL Summary]** för en [kontrollpanel](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/delivery-dashboard){target="_blank"} för e-postleverans börjar procentandelen **[!UICONTROL Success]** att vara 100 % och går sedan successivt ned under leveransens [giltighetsperiod](communication-channels.md), när de mjuka och hårda studenterna rapporteras tillbaka från det förbättrade MTA till Campaign.
 
-Alla meddelanden visas som **[!UICONTROL Sent]** i de [sändande loggarna](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/delivery-dashboard#delivery-logs-and-history){target="_blank"} så snart de har vidarebefordrats från Campaign till den utökade MTA:n. De har den statusen såvida inte eller tills ett [studs](understanding-delivery-failures.md#delivery-failure-types-and-reasons) för det meddelandet kommuniceras tillbaka från det förbättrade MTA till Campaign.
+Alla meddelanden visas som **[!UICONTROL Sent]** i de [sändande loggarna](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/delivery-dashboard#delivery-logs-and-history){target="_blank"} så snart de har vidarebefordrats från Campaign till den utökade MTA:n. De har den statusen såvida inte eller tills ett [studs](delivery-failures-quarantine.md#delivery-failure-types-and-reasons) för det meddelandet kommuniceras tillbaka från det förbättrade MTA till Campaign.
 
 När hårda studsmeddelanden rapporteras tillbaka från det förbättrade MTA:et ändras deras status från **[!UICONTROL Sent]** till **[!UICONTROL Failed]** och procentandelen **[!UICONTROL Success]** minskas därefter.
 
-När meddelanden med mjuk studsning rapporteras tillbaka från Förbättrad MTA visas de fortfarande som **[!UICONTROL Sent]** och procentandelen **[!UICONTROL Success]** uppdateras inte ännu. Mjuka studsmeddelanden provas sedan [igen](understanding-delivery-failures.md#retries-after-a-delivery-temporary-failure) under leveransens giltighetsperiod:
+När meddelanden med mjuk studsning rapporteras tillbaka från Förbättrad MTA visas de fortfarande som **[!UICONTROL Sent]** och procentandelen **[!UICONTROL Success]** uppdateras inte ännu. Mjuka studsmeddelanden provas sedan [igen](delivery-failures-quarantine.md#retries-after-a-delivery-temporary-failure) under leveransens giltighetsperiod:
 
 * Om ett nytt försök lyckas före giltighetsperiodens slut förblir meddelandestatusen **[!UICONTROL Sent]** och procentandelen **[!UICONTROL Success]** ändras inte.
 

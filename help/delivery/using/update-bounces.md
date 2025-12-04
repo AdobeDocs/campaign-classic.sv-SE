@@ -7,9 +7,9 @@ feature: Deliverability
 hide: true
 hidefromtoc: true
 exl-id: 7a9afe0a-0219-40f1-9fe2-6374db8d555c
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: 62ab16b206563aa25b8943e606d03a3184eb00db
 workflow-type: tm+mt
-source-wordcount: '492'
+source-wordcount: '490'
 ht-degree: 3%
 
 ---
@@ -34,7 +34,7 @@ Observera att om uppskjutande studsar med meddelandet&quot;452 requested action 
 >
 >Du kan kontrollera Apple System Status Dashboard på [den här sidan](https://www.apple.com/support/systemstatus/){_blank}.
 >
->Du kan kontrollera Google Workspace Status Dashboard på [den här sidan](https://www.google.com/appsstatus#hl=en&amp;v=status){_blank}.
+>Du kan kontrollera Google Workspace Status Dashboard på [den här sidan](https://www.google.com/appsstatus#hl=en&v=status){_blank}.
 >
 
 ## Effekt{#update-bounce-impact}
@@ -71,5 +71,5 @@ Baserat på tidsramen för incidenten och Internet-leverantören nedan är de re
 När du har en lista över berörda mottagare kan du antingen ange statusen **[!UICONTROL Valid]** så att de tas bort från karantänlistan av arbetsflödet i **[!UICONTROL Database cleanup]** eller bara ta bort dem från tabellen.
 
 **Relaterade ämnen:**
-* [Förstå leveransfel](understanding-delivery-failures.md)
-* [E-poststudsar](understanding-delivery-failures.md#bounce-mail-qualification)
+* [Förstå leveransfel](delivery-failures-quarantine.md)
+* [E-poststudsar](delivery-failures-quarantine.md#bounce-mail-qualification)

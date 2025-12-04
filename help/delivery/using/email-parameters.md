@@ -7,7 +7,7 @@ role: User, Developer
 hide: true
 hidefromtoc: true
 exl-id: 1bb36e71-9f1a-4553-b266-eca3f48688e2
-source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
+source-git-commit: 62ab16b206563aa25b8943e606d03a3184eb00db
 workflow-type: tm+mt
 source-wordcount: '905'
 ht-degree: 7%
@@ -82,7 +82,7 @@ Välj formatet för e-postmeddelandet i fönstrets nedre del:
 
 Spegelsidan är en HTML-sida som är tillgänglig online via en webbläsare. Innehållet är identiskt med e-postmeddelandet.
 
-Spegelsidan genereras som standard om länken infogas i postens innehåll. Mer information om infogning av anpassningsblock finns i [dokumentationen för Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/personalize/personalization-blocks.html?lang=sv-SE){target="_blank"}.
+Spegelsidan genereras som standard om länken infogas i postens innehåll. Mer information om infogning av anpassningsblock finns i [dokumentationen för Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/personalize/personalization-blocks.html){target="_blank"}.
 
 I leveransegenskaperna kan du ändra genereringsläget för den här sidan med fältet **[!UICONTROL Mode]** på fliken **[!UICONTROL Validity]**.
 
@@ -122,7 +122,7 @@ Du kan också definiera en specifik adress från den här skärmen för att unde
 
 ![](assets/s_ncs_user_email_del_properties_smtp_tab.png)
 
-Mer information om hantering av studsade e-postmeddelanden finns i [det här avsnittet](understanding-delivery-failures.md#bounce-mail-management).
+Mer information om hantering av studsade e-postmeddelanden finns i [det här avsnittet](delivery-failures-quarantine.md#bounce-mail-management).
 
 ## Lägga till SMTP-rubriker {#adding-smtp-headers}
 

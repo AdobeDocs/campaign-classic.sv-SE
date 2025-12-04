@@ -7,7 +7,7 @@ role: User
 hide: true
 hidefromtoc: true
 exl-id: 0411686e-4f13-401e-9333-e14b05ebe9cd
-source-git-commit: a85d94e8ff66e8468b4fe2f071df48437393bbce
+source-git-commit: 62ab16b206563aa25b8943e606d03a3184eb00db
 workflow-type: tm+mt
 source-wordcount: '1518'
 ht-degree: 3%
@@ -61,7 +61,7 @@ Du kan sedan stänga leveransassistenten och spåra leveransen från fliken **[!
 När du har skickat meddelanden kan du övervaka och spåra dina leveranser. Mer information om detta hittar du i dessa avsnitt.
 
 * [Övervaka en leverans](about-delivery-monitoring.md)
-* [Förstå leveransfel](understanding-delivery-failures.md)
+* [Förstå leveransfel](delivery-failures-quarantine.md)
 * [Om att spåra meddelanden](about-message-tracking.md)
 
 ## Schemalägg leverans som skickas {#scheduling-the-delivery-sending}
@@ -171,7 +171,7 @@ De två exemplen nedan är de vanligaste användningsområdena när du använder
 
 ## Konfigurera återförsök {#configuring-retries}
 
-Tillfälligt olevererade meddelanden på grund av ett fel av typen **Mjuk** eller **Ignorerad** kan återförsökas automatiskt. Leveransfeltyperna och anledningarna visas i det här [avsnittet](understanding-delivery-failures.md#delivery-failure-types-and-reasons).
+Tillfälligt olevererade meddelanden på grund av ett fel av typen **Mjuk** eller **Ignorerad** kan återförsökas automatiskt. Leveransfeltyperna och anledningarna visas i det här [avsnittet](delivery-failures-quarantine.md#delivery-failure-types-and-reasons).
 
 >[!IMPORTANT]
 >

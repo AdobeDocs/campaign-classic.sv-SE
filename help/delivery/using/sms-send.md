@@ -5,7 +5,7 @@ description: Lär dig hur du skickar, övervakar och spårar SMS i Campaign
 feature: SMS
 role: User
 exl-id: 442672ee-5037-49b7-a06f-3a99920ce2b6
-source-git-commit: a85d94e8ff66e8468b4fe2f071df48437393bbce
+source-git-commit: 62ab16b206563aa25b8943e606d03a3184eb00db
 workflow-type: tm+mt
 source-wordcount: '888'
 ht-degree: 0%
@@ -63,7 +63,7 @@ Följande alternativ är tillgängliga:
 After sending messages, you can monitor and track your deliveries. For more on this, refer to these sections:
 
 * [Monitor a delivery](about-delivery-monitoring.md)
-* [Understand delivery failures](understanding-delivery-failures.md)
+* [Understand delivery failures](delivery-failures-quarantine.md)
 * [About message tracking](about-message-tracking.md)
 -->
 
@@ -167,4 +167,4 @@ Avsändarnamnet för den här meddelandetypen är en kort kod som vanligtvis anv
 >
 >Den här typen av automatiska meddelanden sparar ingen historik. Därför visas de inte på kontrollpanelen för leveranser. [Läs mer](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/delivery-dashboard){target="_blank"}.
 >
->Dessa meddelanden tas inte med i de kommersiella tryckreglerna. Se [Campaign v8-dokumentationen](https://experienceleague.adobe.com/docs/campaign/automation/campaign-optimization/pressure-rules.html?lang=sv-SE){target="_blank"}.
+>Dessa meddelanden tas inte med i de kommersiella tryckreglerna. Se [Campaign v8-dokumentationen](https://experienceleague.adobe.com/docs/campaign/automation/campaign-optimization/pressure-rules.html){target="_blank"}.
