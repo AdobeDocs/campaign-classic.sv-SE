@@ -19,7 +19,7 @@ Med Adobe Campaign Classic medföljer en uppsättning moduler och alternativ. Vi
 
 På den här sidan visas de viktigaste skillnaderna mellan värdbaserade (Managed Services) och lokala distributioner. Specifikationer för hybriddriftsättningar beror på vilka element Adobe har och ligger hos er.
 
-De olika värdmodellerna introduceras [ i det här avsnittet](../../installation/using/hosting-models.md).
+De olika värdmodellerna introduceras [&#x200B; i det här avsnittet](../../installation/using/hosting-models.md).
 
 ## Tillgänglighet per distributionsmodell {#capability-matrix}
 
@@ -54,4 +54,4 @@ Adobe Campaign tillhandahåller alternativet **FDA (Federated Data Access**) fö
 * [Versionsinformation](../../rn/using/latest-release.md)
 * [Campaign Classic uppgraderingar](../../rn/using/rn-overview.md)
 * [Inaktuella och borttagna funktioner](../../rn/using/deprecated-features.md)
-* [[!DNL Gold Standard]-versioner ](../../rn/using/gold-standard.md)
+* [[!DNL Gold Standard]-versioner &#x200B;](../../rn/using/gold-standard.md)

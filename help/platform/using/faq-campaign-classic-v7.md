@@ -244,4 +244,4 @@ Läs mer:
 * [Övergång från Campaign Classic v7 till v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/start/v7-to-v8.html){target="_blank"}
 * [Kampanj v8 - Omfattande frågor och svar](https://experienceleague.adobe.com/docs/campaign/campaign-v8/start/campaign-faq-comprehensive.html){target="_blank"}
 
-**Detaljerade svar på vanliga Campaign-frågor om arbetsflöden, leveranser, målgrupper, rapportering, personalisering och mycket mer** finns på [Vanliga frågor och svar om Campaign v8 ](https://experienceleague.adobe.com/docs/campaign/campaign-v8/start/campaign-faq-comprehensive.html){target="_blank"}.
+**Detaljerade svar på vanliga Campaign-frågor om arbetsflöden, leveranser, målgrupper, rapportering, personalisering och mycket mer** finns på [Vanliga frågor och svar om Campaign v8 &#x200B;](https://experienceleague.adobe.com/docs/campaign/campaign-v8/start/campaign-faq-comprehensive.html){target="_blank"}.
