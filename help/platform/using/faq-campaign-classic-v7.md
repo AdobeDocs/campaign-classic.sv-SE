@@ -33,7 +33,7 @@ Varje distributionsmodell har olika funktioner och hanteringsansvar. Vilka modul
 
 [Klicka här om du vill veta mer](../../installation/using/hosting-models.md) om värdmodeller och skillnaderna mellan dem.
 
-**Obs!** Campaign v8 är exklusivt tillgänglig som hanterade molntjänster. [Läs mer om Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/new/whats-new.html?lang=sv-SE){target="_blank"}.
+**Obs!** Campaign v8 är exklusivt tillgänglig som hanterade molntjänster. [Läs mer om Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/new/whats-new.html){target="_blank"}.
 
 ### Vilka är skillnaderna när du arbetar lokalt jämfört med i en hostingmiljö? {#what-are-the-differences-when-working-on-premise-vs-in-a-hosted-environment}
 
@@ -240,8 +240,8 @@ Campaign v8 är en strategisk Adobe-plattform, idealisk för organisationer som 
 
 Läs mer:
 
-* [Kampanj v8 - översikt](https://experienceleague.adobe.com/docs/campaign/campaign-v8/new/whats-new.html?lang=sv-SE){target="_blank"}
+* [Kampanj v8 - översikt](https://experienceleague.adobe.com/docs/campaign/campaign-v8/new/whats-new.html){target="_blank"}
 * [Övergång från Campaign Classic v7 till v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/start/v7-to-v8.html){target="_blank"}
 * [Kampanj v8 - Omfattande frågor och svar](https://experienceleague.adobe.com/docs/campaign/campaign-v8/start/campaign-faq-comprehensive.html){target="_blank"}
 
-**Detaljerade svar på vanliga Campaign-frågor om arbetsflöden, leveranser, målgrupper, rapportering, personalisering och mycket mer** finns på [Vanliga frågor och svar om Campaign v8 &#x200B;](https://experienceleague.adobe.com/docs/campaign/campaign-v8/start/campaign-faq-comprehensive.html){target="_blank"}.
+**Detaljerade svar på vanliga Campaign-frågor om arbetsflöden, leveranser, målgrupper, rapportering, personalisering och mycket mer** finns på [Vanliga frågor och svar om Campaign v8 ](https://experienceleague.adobe.com/docs/campaign/campaign-v8/start/campaign-faq-comprehensive.html){target="_blank"}.
