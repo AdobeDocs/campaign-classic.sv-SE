@@ -20,7 +20,7 @@ Här finns frågor och svar om Campaign Classic v7-uppgraderingar, särskilt fö
 
 >[!NOTE]
 >
->Omfattande svar på vanliga Campaign-frågor om arbetsflöden, leveranser, målgrupper med mera finns i [Vanliga frågor om Campaign v8 ](https://experienceleague.adobe.com/docs/campaign/campaign-v8/start/campaign-faq-comprehensive.html){target="_blank"}.
+>Omfattande svar på vanliga Campaign-frågor om arbetsflöden, leveranser, målgrupper med mera finns i [Vanliga frågor om Campaign v8 &#x200B;](https://experienceleague.adobe.com/docs/campaign/campaign-v8/start/campaign-faq-comprehensive.html){target="_blank"}.
 
 Adobe Campaign uppdateras regelbundet. Om du känner till vår publicerade [versionsinformation](../../rn/using/rn-overview.md) är du antagligen medveten om att i genomsnitt 2/3 mindre versioner packade med nya funktioner släpps förbättringar och korrigeringar varje år. Dessutom släpper vi regelbundet bara byggen med kumulativa korrigeringar. Denna regelbundna uppdateringsfrekvens syftar till att få den senaste och bästa informationen i händerna, så att miljön är helt säker och så tydligt som möjligt förbättrar upplevelsen av vår produkt.
 
