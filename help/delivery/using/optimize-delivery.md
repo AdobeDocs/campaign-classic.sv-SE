@@ -8,7 +8,7 @@ role: User
 hide: true
 hidefromtoc: true
 exl-id: 24b2ee47-bec7-43ce-81b3-0b2d1a5cebae
-source-git-commit: aa78a51ebea49f98ef7edad7e87a99a680f02b69
+source-git-commit: 0c639cc8b9636c190c868980ab5182a0eccb5f74
 workflow-type: tm+mt
 source-wordcount: '733'
 ht-degree: 4%
@@ -51,9 +51,9 @@ Om du vill nå mottagarnas inkorg utan att studsa eller markeras som skräppost 
 
    * När du kontrollerar om e-postmeddelandet kan levereras vill du fokusera på fyra huvudkategorier: datakvalitet, meddelande och innehåll, avsändarinfrastruktur och anseende. Mer information om det här avsnittet finns i [det här avsnittet](about-deliverability.md).
 
-* Använd de rekommendationer som beskrivs [&#x200B; i det här dokumentet](about-deliverability.md).
+* Använd de rekommendationer som beskrivs [ i det här dokumentet](about-deliverability.md).
 
-* Kontakta din Adobe-representant om du behöver hjälp.
+* Kontakta Adobe om du behöver hjälp.
 
 ## Karantänhantering {#quarantine-management}
 
@@ -67,7 +67,7 @@ När du börjar skicka e-post på en ny plattform kan du använda en lista med a
 
 * Mottagare vars adresser sätts i karantän exkluderas som standard under leveransanalysen: de är inte riktade. Detta snabbar upp leveranserna eftersom felfrekvensen påverkar leveranshastigheten avsevärt. En e-postadress kan sättas i karantän när inkorgen är full eller om adressen inte finns. [Läs mer](#identifying-quarantined-addresses-for-a-delivery)
 
-* Adobe Campaign hanterar felaktiga adresser beroende på vilken typ av fel som returneras. Mer information om detta finns i [det här avsnittet](understanding-quarantine-management.md).
+* Adobe Campaign hanterar felaktiga adresser beroende på vilken typ av fel som returneras. Mer information om detta finns i [det här avsnittet](delivery-failures-quarantine.md).
 
 
 * Vissa internetleverantörer betraktar automatisk e-post som skräppost om antalet ogiltiga adresser är för högt.  Med karantän kan du därför undvika att läggas till i blockeringslista av dessa leverantörer.
@@ -76,6 +76,6 @@ När du börjar skicka e-post på en ny plattform kan du använda en lista med a
 
 ## Mekanisk för dubbel anmälan {#double-opt-in}
 
-För att undvika att skicka meddelanden till ogiltiga adresser, begränsa felaktig kommunikation och förbättra avsändarens anseende rekommenderar Adobe att du använder en dubbel anmälningsmekanism för bekräftelse efter prenumeration. Detta bidrar till att säkerställa att mottagaren prenumererar avsiktligt.
+För att undvika att skicka meddelanden till ogiltiga adresser, begränsa felaktig kommunikation och förbättra avsändarens anseende rekommenderar Adobe att man inför en dubbel anmälningsmekanism för bekräftelse efter prenumeration. Detta bidrar till att säkerställa att mottagaren prenumererar avsiktligt.
 
 Information om hur du implementerar den här mekanismen beskrivs i [det här avsnittet](../../web/using/use-cases-web-forms.md).

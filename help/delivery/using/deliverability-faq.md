@@ -5,7 +5,7 @@ description: Lär dig viktiga saker när du hanterar slutprodukter i Adobe Campa
 feature: Deliverability, Troubleshooting
 role: User
 exl-id: f94897c1-b44c-4100-ac50-a89b13fa6f2f
-source-git-commit: b353b562bd2f0b0bd2dfde22c6477ab66d499483
+source-git-commit: 0c639cc8b9636c190c868980ab5182a0eccb5f74
 workflow-type: tm+mt
 source-wordcount: '648'
 ht-degree: 1%
@@ -49,13 +49,13 @@ Om problemet kvarstår kontaktar du de kommersiella tjänsterna eller leveranstj
 
    * Statusen **[!UICONTROL Quarantined]** är ett resultat av ett mjukt eller hårt studsande.
 
-  Mer information finns i [det här avsnittet](understanding-quarantine-management.md#quarantine-vs-denylist).
+  Mer information finns i [det här avsnittet](delivery-failures-quarantine.md#quarantine-vs-denylist).
 
 * **Vad betyder de olika karantänfelen?**
 
   Här är tio möjliga orsaker: inte definierad, okänd användare, ogiltig domän, avslagen på blockeringslista, fel ignorerad, ej tillgänglig, kontot inaktiverat, postlådan full, inte ansluten.
 
-  Mer information finns i [Om karantänhantering](understanding-quarantine-management.md).
+  Mer information finns i [Om karantänhantering](delivery-failures-quarantine.md).
 
 ## Tar bort från blockeringslista {#remove-from-denylist}
 

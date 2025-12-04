@@ -7,10 +7,10 @@ audience: production
 content-type: reference
 topic-tags: troubleshooting
 exl-id: 78c65b31-e3d9-4a46-a101-26f35d00a4ee
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: 0c639cc8b9636c190c868980ab5182a0eccb5f74
 workflow-type: tm+mt
 source-wordcount: '219'
-ht-degree: 12%
+ht-degree: 18%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 12%
 
 Det här avsnittet innehåller felsökningsprocedurer som rör Adobe Campaign allmänna produktionsproblem, som leverans- och arbetsflödeskörning, övervakning, databasunderhåll, anslutning osv.
 
-## Vanliga och allmänna frågor {#common-and-general-issues}
+## Vanliga och allmänna problem {#common-and-general-issues}
 
 * På den här [sidan](../../production/using/modules-and-frequent-issues.md) visas de vanligaste problemen som uppstått för de listade modulerna.
 * På den här [sidan](../../production/using/workflow-execution.md) visas vanliga felsökningsprocedurer som du bör följa när du stöter på problem med arbetsflödeskörning.
@@ -37,7 +37,7 @@ Specifika åtgärder kan utföras vid problem med leveranser:
 
 **Relaterat ämne**:
 
-[Problem med leveransresultat](../../delivery/using/delivery-performances.md)
+[Problem med leveransresultat](../../delivery/using/delivery-performance-troubleshooting.md)
 
 ## Arbeta med loggar {#working-with-logs}
 
@@ -53,7 +53,7 @@ Upptäck hur du kan lösa prestandaproblem genom att läsa upp följande avsnitt
 * [Databasprestanda](../../production/using/database-performances.md)
 * [Kodning av Oracle-databasen](../../production/using/encoding-of-the-oracle-database.md)
 
-## Förbättrade anslutningsmöjligheter {#connection-improvements}
+## Anslutningsförbättringar {#connection-improvements}
 
 Om du stöter på anslutningsproblem kan du åtgärda dem på följande sätt:
 
