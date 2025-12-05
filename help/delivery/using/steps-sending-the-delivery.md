@@ -143,7 +143,7 @@ För att balansera lasten kan du dela upp leveranser i flera satser. Konfigurera
    >
    >Du måste också ge tillräckligt med tid för att försöka igen när du konfigurerar de sista vågorna. Se [det här avsnittet](steps-sending-the-delivery.md#configuring-retries).
 
-1. Gå till leveransloggarna för att övervaka dina utskick. Läs [den här sidan](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/delivery-dashboard#delivery-logs-and-history){target="_blank"}.
+1. Gå till leveransloggarna för att övervaka dina utskick. Läs [den här sidan](https://experienceleague.adobe.com/sv/docs/campaign/campaign-v8/send/monitor/delivery-dashboard#delivery-logs-and-history){target="_blank"}.
 
    Du kan se leveranser som redan har skickats i de bearbetade påfyllnaderna (**[!UICONTROL Sent]** status) och leveranser som ska skickas i återstående påfyllnader (**[!UICONTROL Pending]** status).
 
