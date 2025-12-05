@@ -25,11 +25,11 @@ När du lägger till anpassade länkar till ditt innehåll bör du alltid undvik
 
 ### Rekommendation
 
-Om du vill validera och kontrollera att du inte använder ovanstående kör du en fråga om spårning av URL-tabell via [Kampanjredigeraren för allmän fråga](../../platform/using/adobe-campaign-workspace.md#about-queries-in-campaign) eller skapar ett arbetsflöde med filtervillkor i frågeaktiviteten. Se [Campaign v8-dokumentationen](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/query.html){target="_blank"}.
+Om du vill validera och kontrollera att du inte använder ovanstående kör du en fråga om spårning av URL-tabell via [Kampanjredigeraren för allmän fråga](../../platform/using/adobe-campaign-workspace.md#about-queries-in-campaign) eller skapar ett arbetsflöde med filtervillkor i frågeaktiviteten. Se [Campaign v8-dokumentationen](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/query.html?lang=sv-SE){target="_blank"}.
 
 Exempel:
 
-1. Skapa ett arbetsflöde och lägg till en **Query**-aktivitet. Se [Campaign v8-dokumentationen](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/query.html){target="_blank"}.
+1. Skapa ett arbetsflöde och lägg till en **Query**-aktivitet. Se [Campaign v8-dokumentationen](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/query.html?lang=sv-SE){target="_blank"}.
 
 1. Öppna aktiviteten **Fråga** och skapa ett filter för tabellen `nmsTrackingUrl` enligt följande:
 

@@ -29,7 +29,7 @@ Principen för **datapaket** är att exportera en datakonfiguration och integrer
 
 >[!NOTE]
 >
->Mer information om datapaket finns i dokumentationen för [Campaign v8.](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/developer/packages){target=_blank}
+>Mer information om datapaket finns i dokumentationen för [Campaign v8.](https://experienceleague.adobe.com/sv/docs/campaign/campaign-v8/developer/packages){target=_blank}
 
 
 <!--
