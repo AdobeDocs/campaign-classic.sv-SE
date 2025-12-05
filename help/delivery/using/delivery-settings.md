@@ -7,16 +7,16 @@ role: User
 hide: true
 hidefromtoc: true
 exl-id: 66250817-f829-4b8b-92dd-2daa92a97fe0
-source-git-commit: 62ab16b206563aa25b8943e606d03a3184eb00db
+source-git-commit: 2e3a14c97706a873f0791ef83708d704d2eed6c3
 workflow-type: tm+mt
-source-wordcount: '696'
+source-wordcount: '709'
 ht-degree: 2%
 
 ---
 
 # Leveransinställningar {#about-delivery-settings}
 
-Följande inställningar är specifika för Campaign Classic. Andra leveransinställningar finns i [dokumentationen för Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/gs-message.html?lang=sv-SE){target="_blank"}.
+Följande inställningar är specifika för Campaign Classic. Andra leveransinställningar finns i [dokumentationen för Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/gs-message.html){target="_blank"}.
 
 ## Leveransanalys {#delivery-analysis}
 
@@ -81,4 +81,4 @@ När leveransen har startats kan meddelandena (och eventuella försök) skickas 
 
 * **Giltighetsgräns för resurser**: Fältet **[!UICONTROL Validity limit]** används för överförda resurser, främst för spegelsidan och bilder. Resurserna på den här sidan är giltiga under en begränsad tid (för att spara diskutrymme).
 
-  Värdena i det här fältet kan uttryckas i de enheter som visas i [det här avsnittet](../../platform/using/adobe-campaign-workspace.md#default-units).
+  Värdena i det här fältet kan uttryckas i följande enheter: **s** för sekunder, **m** för minuter, **h** för timmar, **d** för dagar (standard), **y** för år.

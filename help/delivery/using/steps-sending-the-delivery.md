@@ -7,9 +7,9 @@ role: User
 hide: true
 hidefromtoc: true
 exl-id: 0411686e-4f13-401e-9333-e14b05ebe9cd
-source-git-commit: 62ab16b206563aa25b8943e606d03a3184eb00db
+source-git-commit: 2e3a14c97706a873f0791ef83708d704d2eed6c3
 workflow-type: tm+mt
-source-wordcount: '1518'
+source-wordcount: '1531'
 ht-degree: 3%
 
 ---
@@ -143,7 +143,7 @@ För att balansera lasten kan du dela upp leveranser i flera satser. Konfigurera
    >
    >Du måste också ge tillräckligt med tid för att försöka igen när du konfigurerar de sista vågorna. Se [det här avsnittet](steps-sending-the-delivery.md#configuring-retries).
 
-1. Gå till leveransloggarna för att övervaka dina utskick. Läs [den här sidan](https://experienceleague.adobe.com/sv/docs/campaign/campaign-v8/send/monitor/delivery-dashboard#delivery-logs-and-history){target="_blank"}.
+1. Gå till leveransloggarna för att övervaka dina utskick. Läs [den här sidan](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/delivery-dashboard#delivery-logs-and-history){target="_blank"}.
 
    Du kan se leveranser som redan har skickats i de bearbetade påfyllnaderna (**[!UICONTROL Sent]** status) och leveranser som ska skickas i återstående påfyllnader (**[!UICONTROL Pending]** status).
 
@@ -199,4 +199,4 @@ När leveransen har startats kan meddelandena (och eventuella försök) skickas 
 
 * **Giltighetsgräns för resurser**: Fältet **[!UICONTROL Validity limit]** används för överförda resurser, främst för spegelsidan och bilder. Resurserna på den här sidan är giltiga under en begränsad tid (för att spara diskutrymme).
 
-  Värdena i det här fältet kan uttryckas i de enheter som visas i [det här avsnittet](../../platform/using/adobe-campaign-workspace.md#default-units).
+  Värdena i det här fältet kan uttryckas i följande enheter: **s** för sekunder, **m** för minuter, **h** för timmar, **d** för dagar (standard), **y** för år.

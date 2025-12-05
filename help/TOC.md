@@ -7,9 +7,9 @@ user-guide-title: Användarhandbok för Campaign Classic v7
 user-guide-description: Produktdokumentation för Adobe Campaign Classic v7.
 sub-product: adobe campaign classic
 type: Documentation
-source-git-commit: 7b3d34ddde08f0bfc8d35f4e17e9eef4eb640483
+source-git-commit: 2e3a14c97706a873f0791ef83708d704d2eed6c3
 workflow-type: tm+mt
-source-wordcount: '2686'
+source-wordcount: '2682'
 ht-degree: 99%
 
 ---
@@ -38,7 +38,6 @@ ht-degree: 99%
    + [Bläddra bland och anpassa listor – DOLD](platform/using/adobe-campaign-ui-lists.md)
    + [Uppräkningar – DOLD](platform/using/managing-enumerations.md)
    + [Kampanjkopplingar](platform/using/about-connectors.md)
-   + [Skapa frågor i Campaign](platform/using/about-queries-in-campaign.md)
    + Vanliga frågor och svar {#faq}
       + [Vanliga frågor och svar om Campaign Classic](platform/using/faq-campaign-classic-v7.md)
       + [Builduppgradering](platform/using/faq-build-upgrade.md)
@@ -286,7 +285,7 @@ ht-degree: 99%
    + [Designa rapporter med kuber](reporting/using/ac-cubes.md)
 + Designa webbinnehåll {#designing-content}
    + Webbapplikationer {#web-applications}
-      + [Kom igång med webbapplikationer &#x200B;](web/using/about-web-applications.md)
+      + [Kom igång med webbapplikationer ](web/using/about-web-applications.md)
       + [Skapa en ny webbapplikation](web/using/creating-a-new-web-application.md)
       + [Designa en webbapplikation](web/using/designing-a-web-application.md)
       + [Användningsfall: skapa översikter](web/using/use-cases-creating-overviews.md)
@@ -352,7 +351,7 @@ ht-degree: 99%
    + Adobe Experience Manager {#adobe-experience-manager}
       + [Arbeta med [!DNL Adobe Experience Manager]](integrations/using/about-adobe-experience-manager.md)
       + [Konfigurera integreringen](integrations/using/configuring-the-integration.md)
-      + [Skapa ett nyhetsbrev om [!DNL Experience Manager] &#x200B;](integrations/using/creating-an-experience-manager-newsletter.md)
+      + [Skapa ett nyhetsbrev om [!DNL Experience Manager] ](integrations/using/creating-an-experience-manager-newsletter.md)
    + Adobe Target {#adobe-target}
       + [Arbeta med [!DNL Adobe Target]](integrations/using/integrating-with-adobe-target.md)
       + [Konfigurera integreringen med [!DNL Adobe Target]](integrations/using/configuring-the-integration-with-adobe-target.md)
@@ -820,6 +819,6 @@ ht-degree: 99%
       + [Uppdatering av spårade URL:er](technotes/using/tracked-urls.md)
    + Migrering till Adobe Managed Services{#dc-migration}
       + [Migrering till Public Cloud](technotes/using/dc-migration.md)
-      + [Vanliga frågor och svar &#x200B;](technotes/using/dc-migration-faq.md)
+      + [Vanliga frågor och svar ](technotes/using/dc-migration-faq.md)
    + [GCM-baserade funktioner](technotes/using/gcm-functions.md)
 + [Kontrollpanelen i Campaign](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=sv)
