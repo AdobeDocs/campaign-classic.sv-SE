@@ -5,7 +5,7 @@ description: Lär dig använda kontexten i dina rapporter
 badge-v8: label="Gäller även för v8" type="Positive" tooltip="Gäller även Campaign v8"
 feature: Reporting, Monitoring
 exl-id: a19e2843-d3f9-48c3-af72-cc1bc54f6360
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: 354fc8fd5d030ed88e2b279ba1dd3eaf2f314d53
 workflow-type: tm+mt
 source-wordcount: '506'
 ht-degree: 0%
@@ -34,7 +34,7 @@ Det gör du genom att klicka på länken **[!UICONTROL Filter data...]** på fli
 
 I följande exempel vill vi att diagrammet bara ska visa mottagarprofiler som bor i Frankrike och som har köpt något under året.
 
-Om du vill definiera det här filtret placerar du en sida i diagrammet och redigerar den. Klicka på länken **[!UICONTROL Filter data]** och skapa ett filter som matchar de data som du vill visa. Mer information om hur du skapar frågor i Adobe Campaign finns i [det här avsnittet](../../platform/using/about-queries-in-campaign.md).
+Om du vill definiera det här filtret placerar du en sida i diagrammet och redigerar den. Klicka på länken **[!UICONTROL Filter data]** och skapa ett filter som matchar de data som du vill visa. Mer information om hur du skapar frågor i Adobe Campaign finns i [det här avsnittet](../../platform/using/adobe-campaign-workspace.md#about-queries-in-campaign).
 
 ![](assets/s_ncs_advuser_report_wizard_029.png)
 

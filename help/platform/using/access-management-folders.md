@@ -9,7 +9,7 @@ level: Beginner
 exl-id: 0ba8a3d0-36d7-42f3-b281-0255e49b5fa3
 hide: true
 hidefromtoc: true
-source-git-commit: b27b85b126e002c0ea8b5d71da1ed60e1e817980
+source-git-commit: 354fc8fd5d030ed88e2b279ba1dd3eaf2f314d53
 workflow-type: tm+mt
 source-wordcount: '517'
 ht-degree: 2%
@@ -24,7 +24,7 @@ Varje mapp i Utforskarens navigeringsträd har behörighet att läsa, skriva och
 
 >[!NOTE]
 >
->Mer information om behörigheter för mappar finns i [dokumentationen för Campaign v8](https://experienceleague.adobe.com/sv/docs/campaign/campaign-v8/admin/permissions/folder-permissions){target=_blank}.
+>Mer information om behörigheter för mappar finns i [dokumentationen för Campaign v8](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/admin/permissions/folder-permissions){target=_blank}.
 
 
 ## Mappar och vyer {#folders-and-views}
@@ -69,7 +69,7 @@ I exemplet nedan skapar vi nya mappar för att visa specifika data:
 
    ![Skärmbild med högerklick i egenskaperna](assets/s_ncs_user_add_folder_exple.png)
 
-1. Välj **[!UICONTROL This folder is a view]** på fliken **[!UICONTROL Restriction]**. Därefter visas alla leveranser i databasen.
+1. Välj **[!UICONTROL Restriction]** på fliken **[!UICONTROL This folder is a view]**. Därefter visas alla leveranser i databasen.
 
    ![Skärmvisning som visar den visningsruta som markeras](assets/s_ncs_user_add_folder_exple01.png)
 
@@ -77,7 +77,7 @@ I exemplet nedan skapar vi nya mappar för att visa specifika data:
 
    >[!NOTE]
    >
-   >Frågeredigeraren visas i [det här avsnittet](../../platform/using/about-queries-in-campaign.md).
+   >Frågeredigeraren visas i [det här avsnittet](../../platform/using/adobe-campaign-workspace.md#about-queries-in-campaign).
 
    Med följande filtervillkor:
 

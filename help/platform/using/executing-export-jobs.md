@@ -8,7 +8,7 @@ audience: platform
 content-type: reference
 topic-tags: importing-and-exporting-data
 exl-id: 94fc473a-dc49-41e8-b572-51c162b09996
-source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
+source-git-commit: 354fc8fd5d030ed88e2b279ba1dd3eaf2f314d53
 workflow-type: tm+mt
 source-wordcount: '950'
 ht-degree: 0%
@@ -85,7 +85,7 @@ Markera de fält som ska exporteras. Så här gör du:
 
    ![](assets/s_ncs_user_export_wizard04.png)
 
-1. Klicka på knappen **[!UICONTROL Add]** för att anropa funktioner. Mer information finns i [Lista över funktioner](../../platform/using/about-queries-in-campaign.md).
+1. Klicka på knappen **[!UICONTROL Add]** för att anropa funktioner. Mer information finns i [Lista över funktioner](../../platform/using/adobe-campaign-workspace.md#about-queries-in-campaign).
 
 ## Steg 5 - Sortera kolumner {#step-5---sorting-columns}
 
@@ -95,7 +95,7 @@ Välj sorteringsordning för kolumnerna.
 
 ## Steg 6 - Filtervillkor {#step-6---filter-conditions-}
 
-Du kan lägga till filtervillkor för att undvika att exportera alla data. Konfigurationen för den här filtreringen är densamma som målinriktningen för mottagare i leveransassistenten. Se [Campaign v8-dokumentationen](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html?lang=sv-SE#target-population){target="_blank"}.
+Du kan lägga till filtervillkor för att undvika att exportera alla data. Konfigurationen för den här filtreringen är densamma som målinriktningen för mottagare i leveransassistenten. Se [Campaign v8-dokumentationen](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html?lang=sv#target-population){target="_blank"}.
 
 ![](assets/s_ncs_user_export_wizard05_b.png)
 

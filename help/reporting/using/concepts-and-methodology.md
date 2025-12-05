@@ -7,7 +7,7 @@ badge: label="v7" type="Informative" tooltip="Gäller endast Campaign Classic v7
 hide: true
 hidefromtoc: true
 exl-id: 5f22fa2c-b648-4126-9a24-1798adfa8f34
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: 354fc8fd5d030ed88e2b279ba1dd3eaf2f314d53
 workflow-type: tm+mt
 source-wordcount: '1506'
 ht-degree: 1%
@@ -52,7 +52,7 @@ I följande exempel grupperas språken i tre kategorier: engelska/tyska/nederlä
 
 Du kan använda en SQL-mask för att kombinera flera värden till ett filter. Det gör du genom att kontrollera **[!UICONTROL Yes]** i kolumnen **[!UICONTROL Use an SQL mask]** och ange det SQL-filter som ska användas i kolumnen **[!UICONTROL Value or expression]**.
 
-I exemplet nedan är alla e-postdomäner som börjar med **yahoo** (yahoo.fr, yahoo.com, yahoo.be osv.) eller med **ymail** (ymail.com, ymail.eu osv.) grupperas under etiketten **YAHOO!**, samt adresser med domänen **rocketmail.com**.
+I exemplet nedan grupperas alla e-postdomäner som börjar med **yahoo** (yahoo.fr, yahoo.com, yahoo.be osv.) eller med **ymail** (ymail.com, ymail.eu osv.) under etiketten **YAHOO!**, samt adresser med domänen **rocketmail.com**.
 
 ![](assets/s_advuser_cube_class_03b.png)
 
@@ -115,7 +115,7 @@ Om du vill skapa en rapport med den här uppräkningen skapar du en kub med dime
 
 Skapa sedan en rapport baserad på den här kuben för att visa värdena.
 
-Du behöver bara ändra uppräkningen för att uppdatera den relaterade rapporten. Skapa till exempel värdet **Adobe** och lägg till aliaset **adobe.com** så uppdateras rapporten automatiskt med Adobe-värdet på uppräkningsnivån.
+Du behöver bara ändra uppräkningen för att uppdatera den relaterade rapporten. Skapa till exempel värdet **Adobe** och lägg till aliaset **adobe.com** så uppdateras rapporten automatiskt med Adobe-värdet på uppräkningsnivå.
 
 ![](assets/nmx_add_alias.png)
 
@@ -171,7 +171,7 @@ Så här definierar du ett nytt mått:
 
 1. Om det behövs, och beroende på operatorn, väljer du det uttryck som operationen gäller.
 
-   Med knappen **[!UICONTROL Advanced selection]** kan du skapa komplexa beräkningsformler. Mer information om detta finns i [det här avsnittet](../../platform/using/about-queries-in-campaign.md).
+   Med knappen **[!UICONTROL Advanced selection]** kan du skapa komplexa beräkningsformler. Mer information om detta finns i [det här avsnittet](../../platform/using/adobe-campaign-workspace.md#about-queries-in-campaign).
 
    ![](assets/s_advuser_cube_create_a_measure_01.png)
 

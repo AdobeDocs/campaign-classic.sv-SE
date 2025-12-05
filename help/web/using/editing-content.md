@@ -5,7 +5,7 @@ description: Redigera innehåll
 badge-v8: label="Gäller även för v8" type="Positive" tooltip="Gäller även Campaign v8"
 feature: Web Apps, Web Forms, Landing Pages, Email Design
 exl-id: 968430d6-b1dd-47f8-8b31-39aaa18bc05c
-source-git-commit: 0507e0372a81351adc145dafdd3cbe5d5422dc00
+source-git-commit: 354fc8fd5d030ed88e2b279ba1dd3eaf2f314d53
 workflow-type: tm+mt
 source-wordcount: '1229'
 ht-degree: 0%
@@ -26,7 +26,7 @@ Om du vill lägga till ett synlighetsvillkor markerar du ett block och anger vil
 
 >[!NOTE]
 >
->Avancerad uttrycksredigering visas på [den här sidan](../../platform/using/about-queries-in-campaign.md).
+>Avancerad uttrycksredigering visas på [den här sidan](../../platform/using/adobe-campaign-workspace.md#about-queries-in-campaign).
 
 ![](assets/dce_popup_visibilitycondition.png)
 
@@ -259,4 +259,4 @@ Med alternativet **Personalization-block** kan du infoga dynamiska och personlig
 
 När personaliseringsblocknamnet har infogats visas det i redigeraren, markerat med gult. Den anpassas automatiskt till mottagarprofilen när personalisering genereras.
 
-Mer information om inbyggda anpassningsblock och hur du definierar anpassade anpassningsblock finns i [dokumentationen för Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/personalize/personalization-blocks.html?lang=sv-SE){target="_blank"}.
+Mer information om inbyggda anpassningsblock och hur du definierar anpassade anpassningsblock finns i [dokumentationen för Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/personalize/personalization-blocks.html){target="_blank"}.

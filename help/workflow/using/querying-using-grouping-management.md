@@ -6,7 +6,7 @@ feature: Query Editor, Workflows
 hide: true
 hidefromtoc: true
 exl-id: 23bccb48-60ab-46c9-be26-2fa35243d61e
-source-git-commit: 9df46ed923831ffdfb28acddfbc371cecafb251c
+source-git-commit: 354fc8fd5d030ed88e2b279ba1dd3eaf2f314d53
 workflow-type: tm+mt
 source-wordcount: '254'
 ht-degree: 3%
@@ -39,7 +39,7 @@ Så här skapar du det här exemplet:
 
 1. Markera fälten **[!UICONTROL Data to extract]** och **[!UICONTROL Email domain]** i fönstret **[!UICONTROL Primary key]**. Kör ett antal i fältet **[!UICONTROL Primary key]**.
 
-   Mer information om antalet primärnycklar finns i [det här avsnittet](../../platform/using/about-queries-in-campaign.md).
+   Mer information om antalet primärnycklar finns i [det här avsnittet](../../platform/using/adobe-campaign-workspace.md#about-queries-in-campaign).
 
 1. Markera rutan **[!UICONTROL Handle groupings (GROUP BY + HAVING)]**.
 

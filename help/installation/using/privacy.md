@@ -4,7 +4,7 @@ title: Personalisering och sekretess
 description: Lär dig de effektivaste strategierna för säkerhet när det gäller sekretess och personalisering
 feature: Installation, Privacy, Privacy Tools, URL Personalization
 exl-id: 0a3473bf-0528-486d-a799-8db86fece522
-source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
+source-git-commit: 354fc8fd5d030ed88e2b279ba1dd3eaf2f314d53
 workflow-type: tm+mt
 source-wordcount: '817'
 ht-degree: 1%
@@ -25,11 +25,11 @@ När du lägger till anpassade länkar till ditt innehåll bör du alltid undvik
 
 ### Rekommendation
 
-Om du vill validera och kontrollera att du inte använder ovanstående kör du en fråga om spårning av URL-tabell via [Kampanjredigeraren för allmän fråga](../../platform/using/about-queries-in-campaign.md) eller skapar ett arbetsflöde med filtervillkor i frågeaktiviteten. Se [Campaign v8-dokumentationen](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/query.html?lang=sv-SE){target="_blank"}.
+Om du vill validera och kontrollera att du inte använder ovanstående kör du en fråga om spårning av URL-tabell via [Kampanjredigeraren för allmän fråga](../../platform/using/adobe-campaign-workspace.md#about-queries-in-campaign) eller skapar ett arbetsflöde med filtervillkor i frågeaktiviteten. Se [Campaign v8-dokumentationen](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/query.html){target="_blank"}.
 
 Exempel:
 
-1. Skapa ett arbetsflöde och lägg till en **Query**-aktivitet. Se [Campaign v8-dokumentationen](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/query.html?lang=sv-SE){target="_blank"}.
+1. Skapa ett arbetsflöde och lägg till en **Query**-aktivitet. Se [Campaign v8-dokumentationen](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/query.html){target="_blank"}.
 
 1. Öppna aktiviteten **Fråga** och skapa ett filter för tabellen `nmsTrackingUrl` enligt följande:
 

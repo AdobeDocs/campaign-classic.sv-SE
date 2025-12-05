@@ -5,7 +5,7 @@ description: Lär dig hantera enkätsvar
 badge-v8: label="Gäller även för v8" type="Positive" tooltip="Gäller även Campaign v8"
 feature: Surveys
 exl-id: 0b5dc602-e16f-4bf1-bd8f-352e0bc78996
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: 354fc8fd5d030ed88e2b279ba1dd3eaf2f314d53
 workflow-type: tm+mt
 source-wordcount: '848'
 ht-degree: 1%
@@ -96,7 +96,7 @@ För varje formulär kan svaren användas i fält eller etiketter. Använd följ
 
 >[!NOTE]
 >
->För andra typer av fält beskrivs syntaxen i [det här avsnittet](../../platform/using/about-queries-in-campaign.md).
+>För andra typer av fält beskrivs syntaxen i [det här avsnittet](../../platform/using/adobe-campaign-workspace.md#about-queries-in-campaign).
 
 ### Lagringsinställningar {#storage-settings}
 

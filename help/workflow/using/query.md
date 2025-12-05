@@ -6,7 +6,7 @@ feature: Workflows, Targeting Activity, Query Editor
 hide: true
 hidefromtoc: true
 exl-id: 20d03627-cd56-46da-bc02-73b48a02a350
-source-git-commit: 9df46ed923831ffdfb28acddfbc371cecafb251c
+source-git-commit: 354fc8fd5d030ed88e2b279ba1dd3eaf2f314d53
 workflow-type: tm+mt
 source-wordcount: '1630'
 ht-degree: 0%
@@ -56,7 +56,7 @@ Med länken **[!UICONTROL Edit query...]** kan du definiera måltyp, begränsnin
 
    Du kan också lägga till villkor för datagruppering genom att markera motsvarande ruta. För att göra detta måste filtreringsdimensionen skilja sig från frågemålets dimension. Mer information om gruppering finns i [avsnittet](querying-using-grouping-management.md).
 
-   Du kan också lägga till fler villkor genom att använda uttrycksverktyget och kombinera det med de logiska alternativen AND, OR och EXCEPT. Du kan sedan förhandsgranska **[!UICONTROL Corresponding SQL query...]** för din villkorskombination. Mer information finns i [avsnittet](../../platform/using/about-queries-in-campaign.md).
+   Du kan också lägga till fler villkor genom att använda uttrycksverktyget och kombinera det med de logiska alternativen AND, OR och EXCEPT. Du kan sedan förhandsgranska **[!UICONTROL Corresponding SQL query...]** för din villkorskombination. Mer information finns i [avsnittet](../../platform/using/adobe-campaign-workspace.md#about-queries-in-campaign).
 
    Spara filtret om du vill återanvända det senare.
 
@@ -188,16 +188,16 @@ I avsnittet nedan beskrivs de effektivaste strategierna för att optimera frågo
 
   Beroende på vilken Campaign-version du har finns mer information i följande avsnitt:
 
-  ![](assets/do-not-localize/v7.jpeg) [Kampanjdokumentation v7](../../configuration/using/database-mapping.md)
+  ![](assets/do-not-localize/v7.jpeg)[Kampanjdokumentation v7](../../configuration/using/database-mapping.md)
 
-  ![](assets/do-not-localize/v8.png) [Kampanjdokumentation v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/architecture/shemas-forms/database-mapping.html?lang=sv-SE)
+  ![](assets/do-not-localize/v8.png)[Kampanjdokumentation v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/architecture/shemas-forms/database-mapping.html)
 
 ### Funktioner {#functions}
 
 * Var uppmärksam på funktioner som `Lower(...)`. När funktionen Nedre används används inte indexvärdet.
 * Kontrollera frågor med &quot;gilla&quot;-instruktionen eller &quot;övre&quot; eller &quot;nedre&quot; instruktionerna noggrant. Använd &quot;Upper&quot; på användarindata, inte i databasfältet.
 
-  Mer information om funktioner finns i [det här avsnittet](../../platform/using/about-queries-in-campaign.md).
+  Mer information om funktioner finns i [det här avsnittet](../../platform/using/adobe-campaign-workspace.md#about-queries-in-campaign).
 
 ### Filtrera dimensioner {#filtering-dimensions}
 
