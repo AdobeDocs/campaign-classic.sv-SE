@@ -89,7 +89,7 @@ Vissa viktiga ändringar av tjänsten Android Firebase Cloud Messaging (FCM) kom
     <td>
       <img src="assets/do-not-localize/icon-send.svg" width="35px">
     <br/>
-      <strong>Skicka meddelanden</strong><br/><a href="delivery/using/communication-channels.md">Kommunikationskanaler</a> – <a href="delivery/using/steps-about-delivery-creation-steps.md#sending-a-proof">Skicka korrektur</a> – <a href="delivery/using/get-started-a-b-testing.md">A/B-tester</a> – <a href="https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/analytics/tracking/tracking" target="_blank">Meddelandespårning</a> – <a href="delivery/using/about-deliverability.md">Leverans</a> – <a href="message-center/using/about-transactional-messaging.md">Transaktionsmeddelanden</a>
+      <strong>Skicka meddelanden</strong><br/><a href="delivery/using/communication-channels.md">Kommunikationskanaler</a> – <a href="delivery/using/steps-about-delivery-creation-steps.md#sending-a-proof">Skicka korrektur</a> – <a href="delivery/using/get-started-a-b-testing.md">A/B-tester</a> – <a href="https://experienceleague.adobe.com/sv/docs/campaign/campaign-v8/analytics/tracking/tracking" target="_blank">Meddelandespårning</a> – <a href="delivery/using/about-deliverability.md">Leverans</a> – <a href="message-center/using/about-transactional-messaging.md">Transaktionsmeddelanden</a>
     </td>
   </tr>
   <tr style="border: 0;">
