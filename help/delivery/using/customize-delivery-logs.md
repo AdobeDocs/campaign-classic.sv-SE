@@ -16,11 +16,11 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Omfattande vägledning om hur du får åtkomst till leveranslistan och använder kontrollpanelen för leverans finns i [dokumentationen för Campaign v8](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/delivery-dashboard). Det här innehållet gäller både Campaign Classic v7- och Campaign v8-användare.
+>Omfattande vägledning om hur du får åtkomst till leveranslistan och använder kontrollpanelen för leverans finns i [dokumentationen för Campaign v8](https://experienceleague.adobe.com/sv/docs/campaign/campaign-v8/send/monitor/delivery-dashboard). Det här innehållet gäller både Campaign Classic v7- och Campaign v8-användare.
 >
 >Den här sidan innehåller **Campaign Classic v7-specifika avancerade anpassningar** för hybriddistributioner och lokala distributioner.
 
-Information om övervakning av leveranser i Campaign-gränssnittet finns i [Campaign v8 Monitor-leveranser i dokumentationen för Campaign-gränssnittet](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/delivery-dashboard){target="_blank"}.
+Information om övervakning av leveranser i Campaign-gränssnittet finns i [Campaign v8 Monitor-leveranser i dokumentationen för Campaign-gränssnittet](https://experienceleague.adobe.com/sv/docs/campaign/campaign-v8/send/monitor/delivery-dashboard){target="_blank"}.
 
 ## Anpassa leveransloggar {#use-case}
 
@@ -113,9 +113,9 @@ Nedan visas vad du bör se på fliken **[!UICONTROL Delivery]** efter ändringar
 
 ## Relaterade ämnen
 
-* [Övervaka leveranser i Campaign-gränssnittet](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/delivery-dashboard){target="_blank"} (Campaign v8-dokumentation)
-* [Leveransstatus](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/delivery-statuses){target="_blank"} (dokumentation för kampanj v8)
-* [Om leveransfel](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/delivery-failures){target="_blank"} (dokumentation för Campaign v8)
-* [Karantänhantering](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/quarantines){target="_blank"} (Campaign v8-dokumentation)
+* [Övervaka leveranser i Campaign-gränssnittet](https://experienceleague.adobe.com/sv/docs/campaign/campaign-v8/send/monitor/delivery-dashboard){target="_blank"} (Campaign v8-dokumentation)
+* [Leveransstatus](https://experienceleague.adobe.com/sv/docs/campaign/campaign-v8/send/monitor/delivery-statuses){target="_blank"} (dokumentation för kampanj v8)
+* [Om leveransfel](https://experienceleague.adobe.com/sv/docs/campaign/campaign-v8/send/monitor/delivery-failures){target="_blank"} (dokumentation för Campaign v8)
+* [Karantänhantering](https://experienceleague.adobe.com/sv/docs/campaign/campaign-v8/send/monitor/quarantines){target="_blank"} (Campaign v8-dokumentation)
 * [Utöka ett schema](../../configuration/using/extending-a-schema.md) (v7-hybrid/lokal)
 

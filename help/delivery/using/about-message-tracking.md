@@ -16,12 +16,12 @@ ht-degree: 2%
 
 >[!IMPORTANT]
 >
->**Allmän spårningsvägledning** som gäller både Campaign Classic v7 och Campaign v8 finns i [Meddelandespårningsdokumentationen för Campaign v8](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/analytics/tracking/tracking){target="_blank"}:
+>**Allmän spårningsvägledning** som gäller både Campaign Classic v7 och Campaign v8 finns i [Meddelandespårningsdokumentationen för Campaign v8](https://experienceleague.adobe.com/sv/docs/campaign/campaign-v8/analytics/tracking/tracking){target="_blank"}:
 >
->* [Konfigurera spårade länkar](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/analytics/tracking/tracked-links){target="_blank"}
->* [Konfigurera alternativ för URL-spårning](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/analytics/tracking/url-tracking){target="_blank"}
->* [Spåra anpassade länkar](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/analytics/tracking/personalized-links){target="_blank"}
->* [Åtkomstspårningsloggar](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/analytics/tracking/tracking-logs){target="_blank"}
+>* [Konfigurera spårade länkar](https://experienceleague.adobe.com/sv/docs/campaign/campaign-v8/analytics/tracking/tracked-links){target="_blank"}
+>* [Konfigurera alternativ för URL-spårning](https://experienceleague.adobe.com/sv/docs/campaign/campaign-v8/analytics/tracking/url-tracking){target="_blank"}
+>* [Spåra anpassade länkar](https://experienceleague.adobe.com/sv/docs/campaign/campaign-v8/analytics/tracking/personalized-links){target="_blank"}
+>* [Åtkomstspårningsloggar](https://experienceleague.adobe.com/sv/docs/campaign/campaign-v8/analytics/tracking/tracking-logs){target="_blank"}
 >* [Testspårning](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/testing-tracking){target="_blank"}
 >* [Rapporter om spårning](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/reporting/delivery-reports#tracking-indicators){target="_blank"}
 >
@@ -82,7 +82,7 @@ Med avanmälan om spårning av webbprogram kan du sluta spåra webbbeteenden fö
 
 Följande felsökningstips gäller för **hybriddistributioner i Campaign Classic v7/på plats**. Viss information kan också gälla för Campaign v8-distributioner på plats. Kontakta din Adobe-representant om du behöver hjälp med de hanterade molntjänsterna för Campaign v8.
 
-Grundläggande felsökningssteg för spårning i Campaign v8 finns i [Felsökningsspårning i dokumentationen för Campaign v8](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/analytics/tracking/tracking-logs#troubleshooting){target="_blank"}.
+Grundläggande felsökningssteg för spårning i Campaign v8 finns i [Felsökningsspårning i dokumentationen för Campaign v8](https://experienceleague.adobe.com/sv/docs/campaign/campaign-v8/analytics/tracking/tracking-logs#troubleshooting){target="_blank"}.
 
 ### Grundläggande kontroller {#basic-checks}
 

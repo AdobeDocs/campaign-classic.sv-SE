@@ -31,7 +31,7 @@ De viktigaste stegen när du skapar en leverans är följande:
 
 1. **Skicka leveransen**. [Läs mer](steps-sending-the-delivery.md)
 
-1. **Övervaka leveransen** (spårning, karantän, rapporter osv.). Mer information finns i avsnitten [Övervaka leveranser](about-delivery-monitoring.md) och [Meddelandespårning](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/analytics/tracking/tracking){target="_blank"}.
+1. **Övervaka leveransen** (spårning, karantän, rapporter osv.). Mer information finns i avsnitten [Övervaka leveranser](about-delivery-monitoring.md) och [Meddelandespårning](https://experienceleague.adobe.com/sv/docs/campaign/campaign-v8/analytics/tracking/tracking){target="_blank"}.
 
 >[!NOTE]
 >

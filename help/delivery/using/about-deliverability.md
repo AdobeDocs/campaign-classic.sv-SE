@@ -79,8 +79,8 @@ Vissa internetleverantörer betraktar automatisk e-post som skräppost om antale
 
 Mer information finns i följande avsnitt:
 
-* [Förstå leveransfel](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/delivery-failures){target="_blank"} (dokumentation för Campaign v8 - utförlig guide)
-* [Förstå karantänhantering](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/quarantines){target="_blank"} (Campaign v8-dokumentation - utförlig guide)
+* [Förstå leveransfel](https://experienceleague.adobe.com/sv/docs/campaign/campaign-v8/send/monitor/delivery-failures){target="_blank"} (dokumentation för Campaign v8 - utförlig guide)
+* [Förstå karantänhantering](https://experienceleague.adobe.com/sv/docs/campaign/campaign-v8/send/monitor/quarantines){target="_blank"} (Campaign v8-dokumentation - utförlig guide)
 
 ### Använd övervaknings- och rapporteringsverktyg
 

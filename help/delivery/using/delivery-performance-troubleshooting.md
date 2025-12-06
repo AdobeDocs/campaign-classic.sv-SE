@@ -60,8 +60,8 @@ Vanliga underhållsåtgärder är:
 >
 >Omfattande vägledning om felsökning av leveranser finns i dokumentationen för Campaign v8, som gäller både Campaign Classic v7- och Campaign v8-användare:
 >
->* Vanliga leveransfel och lösningar: [Om leveransfel](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/delivery-failures){target="_blank"}
->* Långsam leveransdiagnos: [Övervaka leveranser i Campaign-gränssnittet](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/delivery-dashboard){target="_blank"}
+>* Vanliga leveransfel och lösningar: [Om leveransfel](https://experienceleague.adobe.com/sv/docs/campaign/campaign-v8/send/monitor/delivery-failures){target="_blank"}
+>* Långsam leveransdiagnos: [Övervaka leveranser i Campaign-gränssnittet](https://experienceleague.adobe.com/sv/docs/campaign/campaign-v8/send/monitor/delivery-dashboard){target="_blank"}
 >* Bästa tillvägagångssätt vid leverans: [Bästa tillvägagångssätt vid leverans](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/start/delivery-best-practices){target="_blank"}
 >
 >Det här avsnittet innehåller **Campaign Classic v7-specifik felsökning** för hybriddistributioner och anläggningsdistributioner.
@@ -100,13 +100,13 @@ Kontrollera arbetsflödesstatus i **[!UICONTROL Administration]** > **[!UICONTRO
 
 >[!NOTE]
 >
->För användare av hanterade molntjänster i Campaign v8 hanteras tekniska arbetsflöden och infrastrukturövervakning av Adobe. Fokusera på leveransinnehåll och målinriktning enligt beskrivningen i [dokumentationen för Campaign v8](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/delivery-failures){target="_blank"}.
+>För användare av hanterade molntjänster i Campaign v8 hanteras tekniska arbetsflöden och infrastrukturövervakning av Adobe. Fokusera på leveransinnehåll och målinriktning enligt beskrivningen i [dokumentationen för Campaign v8](https://experienceleague.adobe.com/sv/docs/campaign/campaign-v8/send/monitor/delivery-failures){target="_blank"}.
 
 ## Relaterade ämnen
 
-* [Om leveransfel](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/delivery-failures){target="_blank"} (dokumentation för Campaign v8)
+* [Om leveransfel](https://experienceleague.adobe.com/sv/docs/campaign/campaign-v8/send/monitor/delivery-failures){target="_blank"} (dokumentation för Campaign v8)
 * [Bästa praxis för leverans](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/start/delivery-best-practices){target="_blank"} (dokumentation för Campaign v8)
-* [Övervaka leveranser i Campaign-gränssnittet](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/delivery-dashboard){target="_blank"} (Campaign v8-dokumentation)
+* [Övervaka leveranser i Campaign-gränssnittet](https://experienceleague.adobe.com/sv/docs/campaign/campaign-v8/send/monitor/delivery-dashboard){target="_blank"} (Campaign v8-dokumentation)
 * [Databasunderhåll](../../production/using/recommendations.md) (v7-hybridinstallation/lokalt)
 * [E-postleverans](../../installation/using/email-deliverability.md) (v7-hybrid/lokal)
 * [Databasprestanda](../../production/using/database-performances.md) (v7-hybrid/lokal)

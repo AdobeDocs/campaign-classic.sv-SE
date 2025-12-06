@@ -18,14 +18,14 @@ ht-degree: 1%
 >
 >Omfattande vägledning om leveransfel och karantänhantering finns i dokumentationen för Campaign v8. Det här innehållet gäller både Campaign Classic v7- och Campaign v8-användare:
 >
->* [Om leveransfel](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/delivery-failures){target="_blank"} - omfattar feltyper, felorsaker, synkrona/asynkrona fel, felhantering och felsökning
->* [Karantänhantering](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/quarantines){target="_blank"} - Omfattar karantän jämfört med blockeringslista, tröskelvärden för mjuka fel, karantänrapporter och adressborttagning
+>* [Om leveransfel](https://experienceleague.adobe.com/sv/docs/campaign/campaign-v8/send/monitor/delivery-failures){target="_blank"} - omfattar feltyper, felorsaker, synkrona/asynkrona fel, felhantering och felsökning
+>* [Karantänhantering](https://experienceleague.adobe.com/sv/docs/campaign/campaign-v8/send/monitor/quarantines){target="_blank"} - Omfattar karantän jämfört med blockeringslista, tröskelvärden för mjuka fel, karantänrapporter och adressborttagning
 >
 >Den här sidan dokumenterar **Campaign Classic v7-specifik konfiguration** för hantering av studsade e-postmeddelanden och karantän i hybriddistributioner och på plats.
 
 ## Förstå leveransfel
 
-Vanliga koncept, feltyper och felsökningsanvisningar för leveransfel finns i [dokumentationen om leveransfel för Campaign v8 &#x200B;](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/delivery-failures){target="_blank"}.
+Vanliga koncept, feltyper och felsökningsanvisningar för leveransfel finns i [dokumentationen om leveransfel för Campaign v8 &#x200B;](https://experienceleague.adobe.com/sv/docs/campaign/campaign-v8/send/monitor/delivery-failures){target="_blank"}.
 
 ## Konfigurera studsmeddelanden {#bounce-mail-config}
 
@@ -127,7 +127,7 @@ Dessa regler är tillgängliga i distributionsguiden och kan anpassas:
 
 * **[!UICONTROL Limit]**: maximalt antal meddelanden som tillåts per tidsperiod.
 
-* **[!UICONTROL Type]**: Feltypen (hård, mjuk eller ignorerad) som används för att fastställa sändningsbeteendet. Mer information om feltypsdefinitioner finns i [Campaign v8-dokumentationen](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/delivery-failures){target="_blank"}.
+* **[!UICONTROL Type]**: Feltypen (hård, mjuk eller ignorerad) som används för att fastställa sändningsbeteendet. Mer information om feltypsdefinitioner finns i [Campaign v8-dokumentationen](https://experienceleague.adobe.com/sv/docs/campaign/campaign-v8/send/monitor/delivery-failures){target="_blank"}.
 
 Mer information om MX-hantering finns i [det här avsnittet](../../installation/using/email-deliverability.md#about-mx-rules).
 
@@ -137,7 +137,7 @@ Mer information om MX-hantering finns i [det här avsnittet](../../installation/
 
 ## Karantänhantering {#quarantine-management}
 
-Omfattande riktlinjer för karantänhantering finns i [dokumentationen för karantänhantering för Campaign v8](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/quarantines){target="_blank"}.
+Omfattande riktlinjer för karantänhantering finns i [dokumentationen för karantänhantering för Campaign v8](https://experienceleague.adobe.com/sv/docs/campaign/campaign-v8/send/monitor/quarantines){target="_blank"}.
 
 ## Konfiguration av karantän {#quarantine-config}
 
@@ -189,7 +189,7 @@ För Campaign Classic v7 följer karantänmekanismen för push-meddelanden med k
 
 För push-meddelanden för **iOS** och **Android** använder karantänmekanismen enhetstoken i stället för e-postadresser. När ett mobilprogram avinstalleras eller installeras om placeras den associerade token i karantän.
 
-Detaljerad information om karantänscenarier för push-meddelanden (iOS- och Android-feltyper, återförsöksbeteende osv.) finns i [Om leveransfel](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/delivery-failures){target="_blank"} -dokumentationen som innehåller omfattande feltyper för push-meddelanden.
+Detaljerad information om karantänscenarier för push-meddelanden (iOS- och Android-feltyper, återförsöksbeteende osv.) finns i [Om leveransfel](https://experienceleague.adobe.com/sv/docs/campaign/campaign-v8/send/monitor/delivery-failures){target="_blank"} -dokumentationen som innehåller omfattande feltyper för push-meddelanden.
 
 ### Specifikationer för SMS-karantän {#sms-quarantine-specifics}
 
@@ -201,14 +201,14 @@ SMS-karantänmekanismen varierar beroende på vilken koppling som används:
 
 * **Utökad generisk SMPP-anslutning**: Felhantering hanteras på olika sätt med reguljära uttryck (regex) för att tolka SR-meddelanden som returneras av SMSC-providern.
 
-Detaljerad information om SMS-karantänscenarier och feltyper finns i [Förstå leveransfel](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/delivery-failures){target="_blank"} -dokumentationen som innehåller omfattande tabeller för feltyper av SMS.
+Detaljerad information om SMS-karantänscenarier och feltyper finns i [Förstå leveransfel](https://experienceleague.adobe.com/sv/docs/campaign/campaign-v8/send/monitor/delivery-failures){target="_blank"} -dokumentationen som innehåller omfattande tabeller för feltyper av SMS.
 
 ## Relaterade ämnen
 
-* [Om leveransfel](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/delivery-failures){target="_blank"} (dokumentation för Campaign v8)
-* [Karantänhantering](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/quarantines){target="_blank"} (Campaign v8-dokumentation)
+* [Om leveransfel](https://experienceleague.adobe.com/sv/docs/campaign/campaign-v8/send/monitor/delivery-failures){target="_blank"} (dokumentation för Campaign v8)
+* [Karantänhantering](https://experienceleague.adobe.com/sv/docs/campaign/campaign-v8/send/monitor/quarantines){target="_blank"} (Campaign v8-dokumentation)
 * [Bästa praxis för leverans](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/start/delivery-best-practices){target="_blank"} (dokumentation för Campaign v8)
-* [Leveransstatus](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/delivery-statuses){target="_blank"} (dokumentation för kampanj v8)
+* [Leveransstatus](https://experienceleague.adobe.com/sv/docs/campaign/campaign-v8/send/monitor/delivery-statuses){target="_blank"} (dokumentation för kampanj v8)
 * [Arbetsflöde för databasrensning](../../production/using/database-cleanup-workflow.md) (v7-hybrid/lokal)
 * [Konfigurera leveransförsök](communication-channels.md) (v7-hybrid/lokal)
 * [Uppdatera studskvalifikation](update-bounce-qualification.md) (v7-hybrid/lokal)
