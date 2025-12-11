@@ -89,7 +89,7 @@ Vissa viktiga ändringar av tjänsten Android Firebase Cloud Messaging (FCM) kom
     <td>
       <img src="assets/do-not-localize/icon-send.svg" width="35px">
     <br/>
-      <strong>Skicka meddelanden</strong><br/><a href="delivery/using/communication-channels.md">Kommunikationskanaler</a> – <a href="delivery/using/steps-about-delivery-creation-steps.md#sending-a-proof">Skicka korrektur</a> – <a href="delivery/using/get-started-a-b-testing.md">A/B-tester</a> – <a href="https://experienceleague.adobe.com/sv/docs/campaign/campaign-v8/analytics/tracking/tracking" target="_blank">Meddelandespårning</a> – <a href="delivery/using/about-deliverability.md">Leverans</a> – <a href="message-center/using/about-transactional-messaging.md">Transaktionsmeddelanden</a>
+      <strong>Skicka meddelanden</strong><br/><a href="delivery/using/communication-channels.md">Kommunikationskanaler</a> – <a href="delivery/using/steps-about-delivery-creation-steps.md#sending-a-proof">Skicka korrektur</a> – <a href="delivery/using/get-started-a-b-testing.md">A/B-testning</a> – <a href="https://experienceleague.adobe.com/sv/docs/campaign/campaign-v8/analytics/tracking/tracking" target="_blank">Meddelandespårning</a> – <a href="delivery/using/about-deliverability.md">Levererbarhet</a> – <a href="message-center/using/about-transactional-messaging.md">Transaktionsmeddelanden</a>
     </td>
   </tr>
   <tr style="border: 0;">
@@ -113,4 +113,4 @@ Vissa viktiga ändringar av tjänsten Android Firebase Cloud Messaging (FCM) kom
 
 ## Ytterligare resurser
 
-[Lista över felmeddelanden](https://experienceleague.adobe.com/developer/campaign-errors/error_codes.html?lang=sv) – [Produktbeskrivning för Adobe Campaign &#x200B;](https://helpx.adobe.com/se/legal/product-descriptions/adobe-campaign-managed-cloud-services.html){target="_blank"} – [Kompatibilitetsmatris](rn/using/compatibility-matrix.md) – [Självstudiekurser](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=sv){target="_blank"} – [Kontrollpanel för Campaign](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/key-features.html?lang=sv){target="_blank"}
+[Lista över felmeddelanden](https://experienceleague.adobe.com/developer/campaign-errors/error_codes.html?lang=sv) – [Produktbeskrivning för Adobe Campaign ](https://helpx.adobe.com/se/legal/product-descriptions/adobe-campaign-managed-cloud-services.html){target="_blank"} – [Kompatibilitetsmatris](rn/using/compatibility-matrix.md) – [Självstudiekurser](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=sv){target="_blank"} – [Kontrollpanel för Campaign](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/key-features.html?lang=sv){target="_blank"}
