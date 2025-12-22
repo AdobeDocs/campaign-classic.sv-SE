@@ -4,9 +4,9 @@ product: campaign
 title: Produktdokumentation för Adobe Campaign Classic v7
 exl-id: 6b3f1689-80de-49fd-b7ee-7a2a1931d157
 source-git-commit: 7b3d34ddde08f0bfc8d35f4e17e9eef4eb640483
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '341'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -79,7 +79,7 @@ Vissa viktiga ändringar av tjänsten Android Firebase Cloud Messaging (FCM) kom
     <td>
       <img src="assets/do-not-localize/icon-start.svg" width="35px">
     <br/>
-      <strong>Kom igång</strong><br/><a href="platform/using/adobe-campaign-workspace.md">Användargränssnitt</a> - <a href="platform/using/launching-adobe-campaign.md">Anslut till kampanj</a> - <a href="platform/using/get-started-data-import-export.md">Importera och exportera data</a> - <a href="platform/using/access-management.md">Behörigheter</a>
+      <strong>Kom igång</strong><br/><a href="platform/using/adobe-campaign-workspace.md">Användargränssnitt</a> – <a href="platform/using/launching-adobe-campaign.md">Anslut till Campaign</a> – <a href="platform/using/get-started-data-import-export.md">Importera och exportera data</a> – <a href="platform/using/access-management.md">Behörigheter</a>
     </td>
     <td>
       <img src="assets/do-not-localize/icon-experience.svg" width="35px">
@@ -113,4 +113,4 @@ Vissa viktiga ändringar av tjänsten Android Firebase Cloud Messaging (FCM) kom
 
 ## Ytterligare resurser
 
-[Lista över felmeddelanden](https://experienceleague.adobe.com/developer/campaign-errors/error_codes.html?lang=sv) – [Produktbeskrivning för Adobe Campaign &#x200B;](https://helpx.adobe.com/se/legal/product-descriptions/adobe-campaign-managed-cloud-services.html){target="_blank"} – [Kompatibilitetsmatris](rn/using/compatibility-matrix.md) – [Självstudiekurser](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=sv){target="_blank"} – [Kontrollpanel för Campaign](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/key-features.html?lang=sv){target="_blank"}
+[Lista över felmeddelanden](https://experienceleague.adobe.com/developer/campaign-errors/error_codes.html?lang=sv) – [Produktbeskrivning för Adobe Campaign ](https://helpx.adobe.com/se/legal/product-descriptions/adobe-campaign-managed-cloud-services.html){target="_blank"} – [Kompatibilitetsmatris](rn/using/compatibility-matrix.md) – [Självstudiekurser](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=sv){target="_blank"} – [Kontrollpanel för Campaign](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/key-features.html?lang=sv){target="_blank"}
