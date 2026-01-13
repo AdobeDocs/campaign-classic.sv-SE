@@ -25,13 +25,13 @@ Dessa rättigheter är följande:
 
   >[!IMPORTANT]
   >
-  >**När du har migrerat till IMS:** När du har migrerat till Adobe Identity Management System (IMS) kommer alla produktprofiler eller namngivna rättigheter som innehåller ordet &quot;admin&quot; i namnet (till exempel &quot;Administratörer&quot;, &quot;admin&quot;, &quot;administratörer&quot; osv.) automatiskt att ge åtkomst till Campaign-kontrollpanelen. Vi rekommenderar att du undviker att använda admin i namngivna höger- eller rollnamn, såvida du inte avser att ge dessa användare åtkomst till Kontrollpanelen. Läs mer om [IMS-migrering](../../technotes/using/migrate-users-to-ims.md) och [hantering av åtkomst till Kontrollpanelen](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/managing-permissions.html){target="_blank"}.
+  >**När du har migrerat till IMS:** När du har migrerat till Adobe Identity Management System (IMS) kommer alla produktprofiler eller namngivna rättigheter som innehåller ordet &quot;admin&quot; i namnet (till exempel &quot;Administratörer&quot;, &quot;admin&quot;, &quot;administratörer&quot; osv.) automatiskt att ge åtkomst till Campaign-kontrollpanelen. Vi rekommenderar att du undviker att använda admin i namngivna höger- eller rollnamn, såvida du inte avser att ge dessa användare åtkomst till Kontrollpanelen. Läs mer om [IMS-migrering](../../technotes/using/migrate-users-to-ims.md) och [hantering av åtkomst till Kontrollpanelen](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/managing-permissions.html?lang=sv-SE){target="_blank"}.
 
 * **[!UICONTROL APPROVAL ADMINISTRATION]**: Du kan ange flera godkännandesteg i arbetsflöden och leveranser för att säkerställa att det aktuella tillståndet har godkänts av en tilldelad operator eller grupp. Användare med rättigheten **[!UICONTROL APPROVAL ADMINISTRATION]** kan ange godkännandesteg och även tilldela en operator eller operatorgrupp som ska godkänna dessa steg.
 
   >[!IMPORTANT]
   >
-  >**Efter migrering till IMS:** Produktprofiler eller namngivna rättigheter som innehåller ordet &quot;admin&quot; (till exempel &quot;Godkännandeadministratör&quot;) ger åtkomst till Campaign-kontrollpanelen. Läs mer om [IMS-migrering](../../technotes/using/migrate-users-to-ims.md) och [hantering av åtkomst till Kontrollpanelen](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/managing-permissions.html){target="_blank"}.
+  >**Efter migrering till IMS:** Produktprofiler eller namngivna rättigheter som innehåller ordet &quot;admin&quot; (till exempel &quot;Godkännandeadministratör&quot;) ger åtkomst till Campaign-kontrollpanelen. Läs mer om [IMS-migrering](../../technotes/using/migrate-users-to-ims.md) och [hantering av åtkomst till Kontrollpanelen](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/managing-permissions.html?lang=sv-SE){target="_blank"}.
 
 * **[!UICONTROL CENTRAL]**: Rätt till central hantering (distribuerad marknadsföring).
 
@@ -63,7 +63,7 @@ Dessa rättigheter är följande:
 
 * **[!UICONTROL START DELIVERIES]**: Rätt att godkänna tidigare analyserade leveranser. Efter leveransanalysen pausas leveransen vid olika godkännandesteg och måste godkännas för att kunna återupptas. Användare med rättigheten **[!UICONTROL START DELIVERIES]** kan godkänna leveranser.
 
-* **[!UICONTROL USE SQL DATA MANAGEMENT ACTIVITY]**: Rätt att skriva egna SQL-skript med SQL Data Management-aktiviteten för att skapa och fylla i arbetstabeller. Se [Campaign v8-dokumentationen](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/action-activities/sql-data-management.html){target="_blank"}.
+* **[!UICONTROL USE SQL DATA MANAGEMENT ACTIVITY]**: Rätt att skriva egna SQL-skript med SQL Data Management-aktiviteten för att skapa och fylla i arbetstabeller. Se [Campaign v8-dokumentationen](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/action-activities/sql-data-management.html?lang=sv-SE){target="_blank"}.
 
 * **[!UICONTROL WORKFLOW]**: Rätt att köra arbetsflöden. Utan den här rättigheten kan användare inte starta, stoppa eller starta om arbetsflöden.
 
@@ -79,4 +79,4 @@ Standardgrupper och namngivna rättigheter ger operatorer åtkomst till vissa ma
 
 Adobe Campaign åtkomsträttighetsmatris är tillgänglig [här](/help/platform/using/assets/access-rights-matrix.pdf).
 
-[![bild](assets/do-not-localize/user_management.png)](https://experienceleague.adobe.com/docs/campaign-classic/assets/access-rights-matrix.pdf)
+[![bild](assets/do-not-localize/user_management.png)](https://experienceleague.adobe.com/docs/campaign-classic/assets/access-rights-matrix.pdf?lang=sv-SE)

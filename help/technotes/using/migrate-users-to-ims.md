@@ -11,7 +11,7 @@ ht-degree: 1%
 
 # Migrera kampanjoperatorer till Adobe Identity Management System (IMS) {#migrate-users-to-ims}
 
-Som en del i arbetet med att förstärka säkerhets- och autentiseringsprocessen rekommenderar Adobe Campaign att man migrerar slutanvändarens autentiseringsläge från den inbyggda inloggnings-/lösenordsautentiseringen till Adobe Identity Management System (IMS). Alla operatorer ska implementera [Adobe Identity Management System (IMS)](https://helpx.adobe.com/enterprise/using/identity.html){target="_blank"} för att ansluta till Campaign.
+Som en del i arbetet med att förstärka säkerhets- och autentiseringsprocessen rekommenderar Adobe Campaign att man migrerar slutanvändarens autentiseringsläge från den inbyggda inloggnings-/lösenordsautentiseringen till Adobe Identity Management System (IMS). Alla operatorer ska implementera [Adobe Identity Management System (IMS)](https://helpx.adobe.com/se/enterprise/using/identity.html){target="_blank"} för att ansluta till Campaign.
 
 Läs mer om migreringen på [den här sidan](ac-ims.md).
 
@@ -31,7 +31,7 @@ Den här proceduren gäller alla Campaign-användare som inte redan ansluter til
 
 Om operatörer i organisationen ansluter till Campaign-klientkonsolen med hjälp av sina inloggnings-/lösenord (dvs. inbyggd autentisering) påverkas du och bör migrera dessa operatorer till Adobe IMS enligt nedan.
 
-Migrering till [Adobe Identity Management System (IMS)](https://helpx.adobe.com/enterprise/using/identity.html){target="_blank"} är ett säkerhetskrav för att göra dina miljöer säkra och standardiserade, eftersom de flesta andra Adobe Experience Cloud-lösningar och -appar redan finns på IMS.
+Migrering till [Adobe Identity Management System (IMS)](https://helpx.adobe.com/se/enterprise/using/identity.html){target="_blank"} är ett säkerhetskrav för att göra dina miljöer säkra och standardiserade, eftersom de flesta andra Adobe Experience Cloud-lösningar och -appar redan finns på IMS.
 
 Den här ändringen gäller från och med Campaign Classic v7.4.1 (och den senaste [IMS-migreringskompatibla versionen](ac-ims.md#ims-versions)) och är **obligatorisk** att flytta till Adobe Campaign v8.
 
@@ -41,7 +41,7 @@ Den här ändringen gäller från och med Campaign Classic v7.4.1 (och den senas
 >
 >När du har migrerat dina användare till IMS bör du vara medveten om att alla produktprofiler i Adobe Admin Console som innehåller ordet&quot;admin&quot; i namnet (till exempel&quot;Administratörer&quot;,&quot;admin&quot;,&quot;Administratörer&quot;,&quot;Administratör för godkännande&quot;) automatiskt ger åtkomst till Campaign-kontrollpanelen. Kontrollpanelen är ett självbetjäningsverktyg som gör det möjligt att göra betydande ändringar i Campaign-instanser.
 >
->Granska noga namngivningskonventionerna för din produktprofil för att säkerställa att endast behöriga användare har tillgång till Kontrollpanelen. Läs mer om hur du hanterar behörigheter på Kontrollpanelen i [dokumentationen på Kontrollpanelen](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/managing-permissions.html){target="_blank"}.
+>Granska noga namngivningskonventionerna för din produktprofil för att säkerställa att endast behöriga användare har tillgång till Kontrollpanelen. Läs mer om hur du hanterar behörigheter på Kontrollpanelen i [dokumentationen på Kontrollpanelen](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/managing-permissions.html?lang=sv-SE){target="_blank"}.
 
 
 ## Hur migrerar värdmiljöer och Managed Services-miljöer? {#ims-migration-procedure}
@@ -142,4 +142,4 @@ Du kan nu se listan över dina **operatorer** och deras **autentiseringstyp**.
 >
 >* [Migrering av tekniska användare till Adobe Developer-konsolen](ims-migration.md)
 >* [Versionsinformation om Adobe Campaign Classic v7](../../rn/using/latest-release.md)
->* [Vad är Adobe Identity Management System (IMS)](https://helpx.adobe.com/enterprise/using/identity.html){target="_blank"}
+>* [Vad är Adobe Identity Management System (IMS)](https://helpx.adobe.com/se/enterprise/using/identity.html){target="_blank"}
