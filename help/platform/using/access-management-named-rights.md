@@ -6,10 +6,10 @@ feature: Access Management, Permissions
 role: User, Admin
 level: Beginner
 exl-id: 07470a91-d8d2-4c41-9555-05522c8068f0
-source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
+source-git-commit: 02ecc0e6bb3bd361f512baeefc9e0f2271063387
 workflow-type: tm+mt
-source-wordcount: '496'
-ht-degree: 4%
+source-wordcount: '606'
+ht-degree: 3%
 
 ---
 
@@ -23,7 +23,15 @@ Dessa rättigheter är följande:
 
 * **[!UICONTROL ADMINISTRATION]**: Operatorer med rättigheten **[!UICONTROL ADMINISTRATION]** har fullständig åtkomst till instansen. Administratörsanvändare kan köra/skapa/redigera/ta bort objekt som arbetsflöde, leverans, skript osv.
 
+  >[!IMPORTANT]
+  >
+  >**När du har migrerat till IMS:** När du har migrerat till Adobe Identity Management System (IMS) kommer alla produktprofiler eller namngivna rättigheter som innehåller ordet &quot;admin&quot; i namnet (till exempel &quot;Administratörer&quot;, &quot;admin&quot;, &quot;administratörer&quot; osv.) automatiskt att ge åtkomst till Campaign-kontrollpanelen. Vi rekommenderar att du undviker att använda admin i namngivna höger- eller rollnamn, såvida du inte avser att ge dessa användare åtkomst till Kontrollpanelen. Läs mer om [IMS-migrering](../../technotes/using/migrate-users-to-ims.md) och [hantering av åtkomst till Kontrollpanelen](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/managing-permissions.html){target="_blank"}.
+
 * **[!UICONTROL APPROVAL ADMINISTRATION]**: Du kan ange flera godkännandesteg i arbetsflöden och leveranser för att säkerställa att det aktuella tillståndet har godkänts av en tilldelad operator eller grupp. Användare med rättigheten **[!UICONTROL APPROVAL ADMINISTRATION]** kan ange godkännandesteg och även tilldela en operator eller operatorgrupp som ska godkänna dessa steg.
+
+  >[!IMPORTANT]
+  >
+  >**Efter migrering till IMS:** Produktprofiler eller namngivna rättigheter som innehåller ordet &quot;admin&quot; (till exempel &quot;Godkännandeadministratör&quot;) ger åtkomst till Campaign-kontrollpanelen. Läs mer om [IMS-migrering](../../technotes/using/migrate-users-to-ims.md) och [hantering av åtkomst till Kontrollpanelen](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/managing-permissions.html){target="_blank"}.
 
 * **[!UICONTROL CENTRAL]**: Rätt till central hantering (distribuerad marknadsföring).
 
@@ -55,7 +63,7 @@ Dessa rättigheter är följande:
 
 * **[!UICONTROL START DELIVERIES]**: Rätt att godkänna tidigare analyserade leveranser. Efter leveransanalysen pausas leveransen vid olika godkännandesteg och måste godkännas för att kunna återupptas. Användare med rättigheten **[!UICONTROL START DELIVERIES]** kan godkänna leveranser.
 
-* **[!UICONTROL USE SQL DATA MANAGEMENT ACTIVITY]**: Rätt att skriva egna SQL-skript med SQL Data Management-aktiviteten för att skapa och fylla i arbetstabeller. Se [Campaign v8-dokumentationen](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/action-activities/sql-data-management.html?lang=sv-SE){target="_blank"}.
+* **[!UICONTROL USE SQL DATA MANAGEMENT ACTIVITY]**: Rätt att skriva egna SQL-skript med SQL Data Management-aktiviteten för att skapa och fylla i arbetstabeller. Se [Campaign v8-dokumentationen](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/action-activities/sql-data-management.html){target="_blank"}.
 
 * **[!UICONTROL WORKFLOW]**: Rätt att köra arbetsflöden. Utan den här rättigheten kan användare inte starta, stoppa eller starta om arbetsflöden.
 
@@ -71,4 +79,4 @@ Standardgrupper och namngivna rättigheter ger operatorer åtkomst till vissa ma
 
 Adobe Campaign åtkomsträttighetsmatris är tillgänglig [här](/help/platform/using/assets/access-rights-matrix.pdf).
 
-[![bild](assets/do-not-localize/user_management.png)](https://experienceleague.adobe.com/docs/campaign-classic/assets/access-rights-matrix.pdf?lang=sv-SE)
+[![bild](assets/do-not-localize/user_management.png)](https://experienceleague.adobe.com/docs/campaign-classic/assets/access-rights-matrix.pdf)
