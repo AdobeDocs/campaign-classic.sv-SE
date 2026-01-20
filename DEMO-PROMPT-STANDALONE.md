@@ -9,7 +9,7 @@ ht-degree: 0%
 
 **Kopiera och klistra in hela uppmaningen i Cursor/ChatGPT för att analysera alla v7-mappar**
 
----
+&#x200B;---
 
 ## 📋 UPPMANINGEN (KOPIERA HÄR) ⬇️
 
@@ -187,57 +187,27 @@ Generate a complete Markdown report with this structure:
 Generate the complete Markdown report now.
 ```
 
----
+&#x200B;---
 
 ## 🎯 DEMO-INSTRUKTIONER
 
-### Steg 1: Visa frågan
-1. Öppna filen (`DEMO-PROMPT-STANDALONE.md`)
-2. Bläddra till avsnittet&quot;FRÅGAN&quot;
-3. Säg: *&quot;Detta är vår automatiska analysfråga&quot;*
+### Steg 1: Visa frågan1. Öppna filen (`DEMO-PROMPT-STANDALONE.md`)2. Bläddra till avsnittet&quot;FRÅGAN&quot;3. Säg: *&quot;Detta är vår automatiska analysfråga&quot;*
 
-### Steg 2: Kopiera frågan
-1. Välj allt från # Campaign v7 Documentation Analysis till slutet
-2. Kopiera till Urklipp
-3. Säg: *&quot;Jag kopierar bara hela uppmaningen..&quot;*
+### Steg 2: Kopiera frågan1. Välj allt från # Campaign v7 Documentation Analysis till slutet2. Kopiera till Urklipp3. Säg: *&quot;Jag kopierar bara hela uppmaningen..&quot;*
 
-### Steg 3: Klistra in och kör
-1. Öppna markör
-2. Klistra in uppmaningen
-3. Säg: *.. och klistra in den i markören*
-4. Träff
+### Steg 3: Klistra in och kör1. Öppna markör2. Klistra in uppmaningen3. Säg: *.. och klistra in den i markören*4. Träff
 
-### Steg 4: Visa resultat
-1. Vänta på generering (~30-60 sekunder)
-2. Bläddra igenom den genererade rapporten
-3. Markera nyckelavsnitt:
-   - 📊 Sammanfattningsstatus
-   - 📋-tabell fil för fil
-   - ✅ måste spara avsnittet
-   - 🗑️ snabbvinner
-   - Körningsplan för 🎯
+### Steg 4: Visa resultat1. Vänta på generering (~30-60 sekunder)2. Bläddra igenom den genererade rapporten3. Markera nyckelavsnitt:   - 📊 Sammanfattningsstatus   - 📋-tabell fil för fil   - ✅ måste spara avsnittet   - 🗑️ snabbvinner   - Körningsplan för 🎯
 
-### Steg 5: Wow
-1. Visa förhandsgranskning av markering
-2. Peka ut:
-   - *&quot;111 filer har analyserats automatiskt&quot;*
-   - *&quot;67 filer kan tas bort (60 % minskning)&quot;*
-   - *&quot;18 v7-specifika filer identifierade&quot;*
-   - *&quot;Slutför körningsplanen med tidslinjer&quot;*
+### Steg 5: Wow1. Visa förhandsgranskning av markering2. Peka ut:   - *&quot;111 filer har analyserats automatiskt&quot;*   - *&quot;67 filer kan tas bort (60 % minskning)&quot;*   - *&quot;18 v7-specifika filer identifierade&quot;*   - *&quot;Slutför körningsplanen med tidslinjer&quot;*
 
----
+&#x200B;---
 
 ## 💡 DEMO-TIPS
 
-### Gör det interaktivt
-**Fråga målgruppen**: *&quot;Vilken mapp ska vi analysera?&quot;*
-- leverans ✅ (111 filer - imponerande)
-- arbetsflöde ✅ (121 filer - ännu större)
-- webb ✅ (26 filer - snabbdemo)
-- rapporterar ✅ (32 filer - snabbt)
+### Gör det interaktivt&#x200B;**Fråga målgruppen**: *&quot;Vilken mapp ska vi analysera?&quot;*- leverans ✅ (111 filer - imponerande)- arbetsflöde ✅ (121 filer - ännu större)- webb ✅ (26 filer - snabbdemo)- rapporterar ✅ (32 filer - snabbt)
 
-### Anpassa till flygresan
-**Visa flexibilitet**: Ändra mappsökvägen i frågan:
+### Anpassa till flygresan&#x200B;**Visa flexibilitet**: Ändra mappsökvägen i frågan:
 
 ```
 /help/workflow/using/  → Analyze workflows
@@ -245,19 +215,13 @@ Generate the complete Markdown report now.
 /help/platform/using/  → Analyze platform
 ```
 
-### Markera nyckelfunktioner
-1. **Automatisering**: *&quot;Inget manuellt arbete krävs&quot;*
-2. **Noggrannhet**: *&quot;Använder v8-dokumentation för jämförelse&quot;*
-3. **Kan användas**: *&quot;Planen är klar att köras med kryssrutor&quot;*
-4. **Smart**: *&quot;Identifierar v7-specifika funktioner automatiskt&quot;*
+### Markera nyckelfunktioner1. **Automatisering**: *&quot;Inget manuellt arbete krävs&quot;*2. **Noggrannhet**: *&quot;Använder v8-dokumentation för jämförelse&quot;*3. **Kan användas**: *&quot;Planen är klar att köras med kryssrutor&quot;*4. **Smart**: *&quot;Identifierar v7-specifika funktioner automatiskt&quot;*
 
-### Tidsjämförelse
-**Före**: *&quot;Manuell analys = 2-3 dagar per mapp&quot;*\
-**Efter**: *&quot;Automatisk analys = 30 sekunder per mapp&quot;*
+### Tidsjämförelse&#x200B;**Före**: *&quot;Manuell analys = 2-3 dagar per mapp&quot;*\**Efter**: *&quot;Automatisk analys = 30 sekunder per mapp&quot;*
 
 **ROI**: *&quot;21 mappar × 2 dagar = 42 dagar → 15 minuter&quot;*
 
----
+&#x200B;---
 
 ## 📊 FÖRVÄNTADE FÖRHANDSVISNING AV UTDATA
 
@@ -304,7 +268,7 @@ Week 2: Badge 18 files
 Week 3: Review 18 files
 ```
 
----
+&#x200B;---
 
 ## 🎬 DEMO-SKRIPT
 
@@ -336,7 +300,7 @@ Week 3: Review 18 files
 **Stäng**:
 > &quot;Samma process fungerar för alla 21 mappar. Det som brukade ta 6 veckor tar nu 15 minuter.&quot;
 
----
+&#x200B;---
 
 ## 🚀 ÄR REDO FÖR DEMO!
 

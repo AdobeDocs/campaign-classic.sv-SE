@@ -9,7 +9,7 @@ ht-degree: 1%
 
 **Génère un report Markdown avec vue d&#39;ensemble de tous les files v7**
 
----
+&#x200B;---
 
 ## 📋 COPIER CE-FRÅGA
 
@@ -483,7 +483,7 @@ Make it:
 - ✅ Ready to present to stakeholders
 ```
 
----
+&#x200B;---
 
 ## ANVÄNDNING
 
@@ -493,7 +493,7 @@ Make it:
 4. **Få en komplett markeringsrapport**
 5. **Spara som**: `v7-reorganization-overview.md`
 
----
+&#x200B;---
 
 ## FÖRHANDSGRANSKA UTDATA
 

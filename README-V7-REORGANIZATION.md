@@ -9,7 +9,7 @@ ht-degree: 0%
 
 **2 prompts pour analyser et réorganizer la doc v7 → v8**
 
----
+&#x200B;---
 
 ## 📁 Fichiers
 
@@ -20,7 +20,7 @@ ht-degree: 0%
 | `PROMPT-1-OVERVIEW-ALL-FOLDERS.md` | Vue d&#39;ensemble de TOUS les folders v7 | `v7-reorganization-overview.md` |
 | `PROMPT-2-DETAILED-FOLDER.md` | Analysera détaillée d&#39;UN folder avec % match | `[folder]-detailed-analysis.md` |
 
----
+&#x200B;---
 
 ## 🚀-användning
 
@@ -45,7 +45,7 @@ open PROMPT-1-OVERVIEW-ALL-FOLDERS.md
 
 **Taille** : ~50-60 pages Markdown
 
----
+&#x200B;---
 
 ### 2️⃣ Analyze Détaillée d&#39;un Folder
 
@@ -78,7 +78,7 @@ open PROMPT-2-DETAILED-FOLDER.md
 
 **Taille** : ~30-40 pages Markdown
 
----
+&#x200B;---
 
 ## 📊 undantagna d&#39;Output
 
@@ -117,66 +117,35 @@ open PROMPT-2-DETAILED-FOLDER.md
 ...
 ```
 
----
+&#x200B;---
 
 ## 🎯 arbetsflödesrekommendation
 
-### Semaine 1: Vue d&#39;ensemble
-1. Exécuter **Fråga 1** → Obtenir `v7-reorganization-overview.md`
-2. Identifieraren anger mappprioritet
-3. Partager avec-intressenter
+### Semaine 1: Vue d&#39;ensemble1. Exécuter **Fråga 1** → Obtenir `v7-reorganization-overview.md`2. Identifieraren anger mappprioritet3. Partager avec-intressenter
 
-### Semaine 2-4: Analyze détaillée
-1. Prioritet för Pour Chque-mappen:
-   - Exécuter **Fråga 2**
-   - Objekt `[folder]-detailed-analysis.md`
-   - Valider les décisions
-   - Funktioner för Commencer les
+### Semaine 2-4: Analyze détaillée1. Prioritet för Pour Chque-mappen:   - Exécuter **Fråga 2**   - Objekt `[folder]-detailed-analysis.md`   - Valider les décisions   - Funktioner för Commencer les
 
-### Semain 5+: Exektion
-1. Supprimer les fichiers identifiés (DELETE)
-2. Badger les fichiers v7-only (KEEP)
-3. Migrer le contenu manquant (MOVE)
-4. Reviewer les cas ambigus (REVIEW)
+### Semain 5+: Exektion1. Supprimer les fichiers identifiés (DELETE)2. Badger les fichiers v7-only (KEEP)3. Migrer le contenu manquant (MOVE)4. Reviewer les cas ambigus (REVIEW)
 
----
+&#x200B;---
 
 ## 💡 tips
 
-### Pour les prompts
-- ✅ Copier/coller l&#39;intégralité du prompt
-- ✅ Nytt format för punktmodifierare
-- ✅ Adapter seulement le chemin du folder (Prompt 2)
+### Pour les prompts- ✅ Copier/coller l&#39;intégralité du prompt- ✅ Nytt format för punktmodifierare- ✅ Adapter seulement le chemin du folder (Prompt 2)
 
-### Pour les outputs
-- 📝 Utdata en Markdown (pas HTML)
-- 🔗 avlyssnar urklippsautomatik
-- ✅ Kryssrutor för lastspårning
-- 📊 statistik och procenttal
-- 🎨 Emojis et icônes
+### Pour les outputs- 📝 Utdata en Markdown (pas HTML)- 🔗 avlyssnar urklippsautomatik- ✅ Kryssrutor för lastspårning- 📊 statistik och procenttal- 🎨 Emojis et icônes
 
-### Pour l&#39;analyze
-- 🎯 Commencer par les grupperar mappar (leverans, arbetsflöde)
-- ⚡ Prioriseraren får mindre snabbvinster (95-100 % matchning)
-- 🔍 Reviewer Manual les cas ambigus (&lt;70% match)
-- ✅ Valider avec SME avant suppression massiv
+### Pour l&#39;analyze- 🎯 Commencer par les grupperar mappar (leverans, arbetsflöde)- ⚡ Prioriseraren får mindre snabbvinster (95-100 % matchning)- 🔍 Reviewer Manual les cas ambigus (&lt;70% match)- ✅ Valider avec SME avant suppression massiv
 
----
+&#x200B;---
 
 ## ⚠️ viktigt
 
-### Avant de supprimer
-1. ✅ Vérifier l&#39;équivalent v8
-2. ✅ Vérifier qu&#39;il n&#39;y a pas de content v7-specific
-3. ✅ Mettre à jour `redirects.csv`
-4. ✅ Valider avec un expert (pour les premiers)
+### Avant de supprimer1. ✅ Vérifier l&#39;équivalent v82. ✅ Vérifier qu&#39;il n&#39;y a pas de content v7-specific3. ✅ Mettre à jour `redirects.csv`4. ✅ Valider avec un expert (pour les premiers)
 
-### Pour les fichiers v7 only
-1. ✅ Ajouter un badge au début du fichier
-2. ✅ Expliquer pourquoi c&#39;est v7 only
-3. ✅ Linjen innehåller mindre begränsningar v8
+### Pour les fichiers v7 only1. ✅ Ajouter un badge au début du fichier2. ✅ Expliquer pourquoi c&#39;est v7 only3. ✅ Linjen innehåller mindre begränsningar v8
 
----
+&#x200B;---
 
 ## 🆘 support
 
@@ -185,7 +154,7 @@ open PROMPT-2-DETAILED-FOLDER.md
 - Utdatatruppen är lång → Demander un résumé
 - Besoin d&#39;aide → Ping l&#39;équipe doc
 
----
+&#x200B;---
 
 **Dernière mise à jour** : 2026-01-13
 

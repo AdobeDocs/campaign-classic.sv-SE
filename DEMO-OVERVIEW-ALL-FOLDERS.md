@@ -11,7 +11,7 @@ ht-degree: 18%
 **Totalt antal mappar**: 21\
 **Totalt antal filer**: ~1 500
 
----
+&#x200B;---
 
 ## Sammanfattning av 📈
 
@@ -25,7 +25,7 @@ ht-degree: 18%
 
 **🎯beräknad reduktion**: 60-75 % (1 500 → 400-600 filer)
 
----
+&#x200B;---
 
 ## Mappanalys för 📁 efter prioritet
 
@@ -41,7 +41,7 @@ ht-degree: 18%
 | 📂 `/migration/` | 8 | v6.1 → v7-migrering | v7-specifik | ✅ BEHÅLL ALLA |
 | **TOTALT** | **108** | **7 %** | - | **Märkordsbricka som endast v7** |
 
----
+&#x200B;---
 
 ### 🔴 Prioritet 2: 60-70 % DELETE - hög duplicering
 
@@ -54,7 +54,7 @@ ht-degree: 18%
 | 📂 `/campaign/` | 11 | 2 (18 %) | 7 (64 %) | 1 (9 %) | 1 (9 %) | Kampanjhantering i v8 |
 | **TOTALT** | **336** | **59** | **190** | **28** | **59** | **Hög reduceringspotential** |
 
----
+&#x200B;---
 
 ### 🟡 Prioritet 3: 30-50 % BLANDADE - Detaljerad analys krävs
 
@@ -68,7 +68,7 @@ ht-degree: 18%
 | 📂 `/message-center/` | 16 | 60 % | 30 % | Transaktionsmeddelanden |
 | **TOTALT** | **230** | **~55%** | **~25%** | **Kräver en mapp-för-mapp-granskning** |
 
----
+&#x200B;---
 
 ## 🎯 snabbvinster - vecka 1
 
@@ -89,7 +89,7 @@ ht-degree: 18%
 - ✅ `query.md` (arbetsflöde) → `campaign/v8/automation/workflow/query`
 - ✅ `about-workflows.md` → `campaign/v8/automation/workflow`
 
----
+&#x200B;---
 
 ## 📋 detaljerad mappuppdelning
 
@@ -121,7 +121,7 @@ ht-degree: 18%
 - 🗑️ `creating-an-email-delivery.md` → 95 % i `campaign-web/v8/email/create-email`
 - 🗑️ `sms-channel.md` → 90 % i `campaign-web/v8/msg/send-sms`
 
----
+&#x200B;---
 
 ### 📂-arbetsflöde (`/help/workflow/using/`) - 121 filer
 
@@ -148,7 +148,7 @@ ht-degree: 18%
 - 🗑️ `split.md` → 95 % i `campaign/v8/automation/workflow/split`
 - 🗑️ `enrichment.md` → 95 % i `campaign/v8/automation/workflow/enrichment`
 
----
+&#x200B;---
 
 ### 📂 Installation (`/help/installation/using/`) - 75 filer
 
@@ -165,7 +165,7 @@ ht-degree: 18%
 
 **Orsak**: v8 är endast för molnet, alla installationsdokument på plats är v7-specifika.
 
----
+&#x200B;---
 
 ### 📂 webb (`/help/web/using/`) - 26 filer
 
@@ -179,40 +179,19 @@ ht-degree: 18%
 
 **Orsak**: v7 har ett fullständigt ramverk för webbprogram, v8 har förenklat landningssidor.
 
----
+&#x200B;---
 
 ## Åtgärdsplan för ✅
 
-### Vecka 1: Högeffektsborttagningar
-- [ ] `/delivery/`: Ta bort 67 filer (e-post, SMS, push-grunder)
-- [ ] `/workflow/`: Ta bort 60 filer (vanliga aktiviteter)
-- [ ] `/reporting/`: Ta bort 22 filer (standardrapporter)
-- [ ] `/platform/`: Ta bort 34 filer (vanliga funktioner)
-- [ ] `/campaign/`: Ta bort 7 filer (kampanjhantering)
-- **Totalt**: 190 filer har tagits bort (13 % minskning)
+### Vecka 1: Högeffektsborttagningar- [ ] `/delivery/`: Ta bort 67 filer (e-post, SMS, push-grunder)- [ ] `/workflow/`: Ta bort 60 filer (vanliga aktiviteter)- [ ] `/reporting/`: Ta bort 22 filer (standardrapporter)- [ ] `/platform/`: Ta bort 34 filer (vanliga funktioner)- [ ] `/campaign/`: Ta bort 7 filer (kampanjhantering)- **Totalt**: 190 filer har tagits bort (13 % minskning)
 
-### Vecka 2: v7-specifik märkning
-- [ ] `/installation/`: Badge 71-filer som&quot;v7 endast lokalt&quot;
-- [ ] `/mrm/`: Badge 5-filer är inte tillgängliga i v8 FFDA
-- [ ] `/surveys/`: Badge 8-filer är inte tillgängliga i v8 FFDA
-- [ ] `/distributed/`: Badge 7-filer är inte tillgängliga i v8 FFDA
-- [ ] `/web/`: Visa 24 filer som&quot;v7-webbprogram&quot;
-- **Totalt**: 115 filer har badats
+### Vecka 2: v7-specifik märkning- [ ] `/installation/`: Badge 71-filer som&quot;v7 endast lokalt&quot;- [ ] `/mrm/`: Badge 5-filer är inte tillgängliga i v8 FFDA- [ ] `/surveys/`: Badge 8-filer är inte tillgängliga i v8 FFDA- [ ] `/distributed/`: Badge 7-filer är inte tillgängliga i v8 FFDA- [ ] `/web/`: Visa 24 filer som&quot;v7-webbprogram&quot;- **Totalt**: 115 filer har badats
 
-### Vecka 3: Innehållsmigrering
-- [ ] Migrera felsökningstips från `/delivery/` till v8
-- [ ] Migrera arbetsflödets bästa praxis till v8
-- [ ] Migrera avancerade mönster från `/platform/` till v8
-- **Totalt**: 40 filer har migrerats och tagits bort
+### Vecka 3: Innehållsmigrering- [ ] Migrera felsökningstips från `/delivery/` till v8- [ ] Migrera arbetsflödets bästa praxis till v8- [ ] Migrera avancerade mönster från `/platform/` till v8- **Totalt**: 40 filer har migrerats och tagits bort
 
-### Vecka 4: Manuell granskning
-- [ ] Granska `/configuration/` blandat innehåll
-- [ ] Granska `/integrations/`-anslutningstillgänglighet
-- [ ] Granska `/interaction/`, erbjudandemotortäckning
-- [ ] Granska `/response/`-funktionsstatus
-- **Totalt**: 50 filer granskades och beslutades
+### Vecka 4: Manuell granskning- [ ] Granska `/configuration/` blandat innehåll- [ ] Granska `/integrations/`-anslutningstillgänglighet- [ ] Granska `/interaction/`, erbjudandemotortäckning- [ ] Granska `/response/`-funktionsstatus- **Totalt**: 50 filer granskades och beslutades
 
----
+&#x200B;---
 
 ## 📊 förväntade resultat
 
@@ -228,7 +207,7 @@ ht-degree: 18%
 
 **Slutligt mål**: 1 500 → 400-600 filer (60-73 % minskning)
 
----
+&#x200B;---
 
 ## 🎯 framgångsmått
 
@@ -240,7 +219,7 @@ ht-degree: 18%
 | Brutna länkar | 0 | ⏳ väntar |
 | Intressentgodkännande | ✅ | ⏳ väntar |
 
----
+&#x200B;---
 
 **Senast uppdaterad**: 2026-01-13\
 **Nästa granskning**: Efter körning av vecka 1

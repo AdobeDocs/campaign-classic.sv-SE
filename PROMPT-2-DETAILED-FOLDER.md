@@ -9,7 +9,7 @@ ht-degree: 0%
 
 **Génère un report Markdown détaillé pour UN folder avec % de match**
 
----
+&#x200B;---
 
 ## 📋 COPIER CE-FRÅGA
 
@@ -465,7 +465,7 @@ Include:
 Make all links clickable (v7 files + Experience League URLs).
 ```
 
----
+&#x200B;---
 
 ## ANVÄNDNING
 
@@ -475,12 +475,13 @@ Make all links clickable (v7 files + Experience League URLs).
    ```
    📁 **Analyze**: /Users/.../help/[YOUR-FOLDER]/using/
    ```
+
 3. **Klistra in i markören**
 4. **Kör analys**
 5. **Få en komplett markeringsrapport**
 6. **Spara som**: `[folder]-detailed-analysis.md`
 
----
+&#x200B;---
 
 ## MAPPEXEMPEL
 
@@ -490,7 +491,7 @@ Prova med:
 - `/help/platform/using/` (61 filer)
 - `/help/web/using/` (26 filer)
 
----
+&#x200B;---
 
 ## FÖRHANDSGRANSKA UTDATA
 

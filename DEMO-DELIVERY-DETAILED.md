@@ -11,7 +11,7 @@ ht-degree: 5%
 **Genererad**: 2026-01-13\
 **Totalt antal filer**: 111
 
----
+&#x200B;---
 
 ## Sammanfattning för 📈
 
@@ -25,7 +25,7 @@ ht-degree: 5%
 
 **🎯Omorganiseringseffekt**: 67 filer att ta bort (60 % minskning)
 
----
+&#x200B;---
 
 ## 📋 slutförd filanalys
 
@@ -44,7 +44,7 @@ ht-degree: 5%
 
 **Sammanfattning**: 7 DELETE, 0 KEEP, 0 MOVE, 1 GRANSKNING
 
----
+&#x200B;---
 
 ### 📧 E-post (18 filer)
 
@@ -64,7 +64,7 @@ ht-degree: 5%
 
 **Sammanfattning**: 16 DELETE, 0 KEEP, 0 MOVE, 2 GRANSKNINGAR
 
----
+&#x200B;---
 
 ### 📱 SMS (7 filer)
 
@@ -80,7 +80,7 @@ ht-degree: 5%
 
 **Sammanfattning**: 5 DELETE, 1 KEEP, 0 MOVE, 1 GRANSKNING
 
----
+&#x200B;---
 
 ### 🔔 push-meddelanden (9 filer)
 
@@ -95,7 +95,7 @@ ht-degree: 5%
 
 **Sammanfattning**: 8 DELETE, 0 KEEP, 0 MOVE, 1 GRANSKNING
 
----
+&#x200B;---
 
 ### 📮 direktreklam (4 filer)
 
@@ -108,7 +108,7 @@ ht-degree: 5%
 
 **Sammanfattning**: 4 DELETE, 0 KEEP, 0 MOVE, 0 REVIEW
 
----
+&#x200B;---
 
 ### 🎯 Personalization (8 filer)
 
@@ -123,7 +123,7 @@ ht-degree: 5%
 
 **Sammanfattning**: 6 DELETE, 1 KEEP, 0 MOVE, 1 GRANSKNING
 
----
+&#x200B;---
 
 ### 📋 mallar och fraser (6 filer)
 
@@ -136,7 +136,7 @@ ht-degree: 5%
 
 **Sammanfattning**: 6 DELETE, 0 KEEP, 0 MOVE, 0 REVIEW
 
----
+&#x200B;---
 
 ### 📊 Övervakning (14 filer)
 
@@ -149,7 +149,7 @@ ht-degree: 5%
 
 **Sammanfattning**: 12 DELETE, 0 BEHÅLLARE, 1 MOVE, 1 GRANSKNING
 
----
+&#x200B;---
 
 ### 🔧 Felsökning (9 filer)
 
@@ -163,7 +163,7 @@ ht-degree: 5%
 
 **Sammanfattning**: 4 DELETE, 2 KEEP, 2 MOVE, 1 GRANSKNING
 
----
+&#x200B;---
 
 ### 📬 Leverans (8 filer)
 
@@ -176,7 +176,7 @@ ht-degree: 5%
 
 **Sammanfattning**: 4 DELETE, 3 BEHÅLLARE, 0 FLYTTA, 1 GRANSKNING
 
----
+&#x200B;---
 
 ## ✅ måste behållas - v7-specifika funktioner
 
@@ -190,7 +190,7 @@ ht-degree: 5%
 | `monitoring-deliverability.md` | Lokala övervakningsverktyg | &quot;Övervakningsverktygen för lokal leverans är specifika för Campaign v7&quot; |
 | ... | *(14 fler v7-specifika filer)* | Olika emblem för endast v7 |
 
----
+&#x200B;---
 
 ## 🗑️ snabbfönster - säkert att ta bort nu
 
@@ -221,9 +221,9 @@ ht-degree: 5%
 **Övervakning** (12 filer):
 - ✅ Alla 12 filer → Helt i `campaign-web/v8/msg/delivery-logs` &amp; `track-and-monitor`
 
-**Totalt**: **{67 filer** tas bort omedelbart
+**Totalt**: **&lbrace;67 filer** tas bort omedelbart
 
----
+&#x200B;---
 
 ## ➡️ Innehåll som ska migreras först
 
@@ -240,7 +240,7 @@ ht-degree: 5%
 
 **Process**: Migrera innehåll → Uppdatera v8 → Ta bort från v7
 
----
+&#x200B;---
 
 ## 🔍 manuell granskning krävs
 
@@ -253,36 +253,22 @@ ht-degree: 5%
 | `sending-emails-on-japanese-mobiles.md` | 0 % | Japan-specifik, kontrollera relevans | Verifiera om det fortfarande behövs |
 | ... | *(15 till)* | Olika partiella matchningar | Manuell jämförelse |
 
----
+&#x200B;---
 
 ## Körningsplan för 🎯
 
-### Vecka 1: Snabbborttagningar
-- [ ] Ta bort e-postfiler (16)
-- [ ] Ta bort SMS-filer (5)
-- [ ] Ta bort push-filer (8)
-- [ ] Ta bort direktreklam-filer (4)
-- [ ] Ta bort mallfiler (6)
-- [ ] Ta bort övervakningsfiler (12)
-- **Totalt**: 51 filer har tagits bort
+### Vecka 1: Snabbborttagningar- [ ] Ta bort e-postfiler (16)- [ ] Ta bort SMS-filer (5)- [ ] Ta bort push-filer (8)- [ ] Ta bort direktreklam-filer (4)- [ ] Ta bort mallfiler (6)- [ ] Ta bort övervakningsfiler (12)- **Totalt**: 51 filer har tagits bort
 
-### Vecka 2: Innehållsmigrering
-- [ ] Migrera felsökningstips (2 filer)
-- [ ] Migrera metodtips (3 filer)
-- [ ] Migrera avancerade mönster (3 filer)
-- [ ] Ta bort efter migrering (totalt 8 filer)
+### Vecka 2: Innehållsmigrering- [ ] Migrera felsökningstips (2 filer)- [ ] Migrera metodtips (3 filer)- [ ] Migrera avancerade mönster (3 filer)- [ ] Ta bort efter migrering (totalt 8 filer)
 
-### Vecka 3: Märkning och granskning
-- [ ] Badge v7-specifika filer (18 filer)
-- [ ] Granska partiella matchningar (18 filer)
-- [ ] Fatta slutgiltiga beslut
+### Vecka 3: Märkning och granskning- [ ] Badge v7-specifika filer (18 filer)- [ ] Granska partiella matchningar (18 filer)- [ ] Fatta slutgiltiga beslut
 
----
+&#x200B;---
 
 **Beräknad tidslinje**: 3 veckor\
 **Förväntat resultat**: 111 → 44 filer (60 % minskning)
 
----
+&#x200B;---
 
 **Senast uppdaterad**: 2026-01-13\
 **Nästa åtgärd**: Kör veckas 1-borttagningar
