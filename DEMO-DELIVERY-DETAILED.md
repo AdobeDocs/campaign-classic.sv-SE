@@ -35,11 +35,11 @@ ht-degree: 5%
 |---|---------|----------|---------|-------|--------|
 | 1 | `about-email-channel.md` | [campaign-web/v8/email](https://experienceleague.adobe.com/en/docs/campaign-web/v8/email) | 95 % | Grundläggande om e-post i v8 | 🗑️ DELETE |
 | 2 | `communication-channels.md` | [campaign-web/v8/msg](https://experienceleague.adobe.com/en/docs/campaign-web/v8/msg) | 85 % | Kanalöversikt i v8 | 🗑️ DELETE |
-| 3 | `steps-about-delivery-creation-steps.md` | [campaign-web/v8/msg/gs-delivery](https://experienceleague.adobe.com/en/docs/campaign-web/v8/msg/gs-deliveries) | 90 % | Leveransprocess i v8 | 🗑️ DELETE |
-| 4 | `key-steps-when-creating-a-delivery.md` | [campaign-web/v8/msg/gs-delivery](https://experienceleague.adobe.com/en/docs/campaign-web/v8/msg/gs-deliveries) | 90 % | Samma som ovan | 🗑️ DELETE |
+| 3 | `steps-about-delivery-creation-steps.md` | [campaign-web/v8/msg/gs-delivery](https://experienceleague.adobe.com/sv/docs/campaign-web/v8/msg/gs-deliveries) | 90 % | Leveransprocess i v8 | 🗑️ DELETE |
+| 4 | `key-steps-when-creating-a-delivery.md` | [campaign-web/v8/msg/gs-delivery](https://experienceleague.adobe.com/sv/docs/campaign-web/v8/msg/gs-deliveries) | 90 % | Samma som ovan | 🗑️ DELETE |
 | 5 | `delivery-best-practices.md` | [campaign/v8/send/best-practices](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/best-practices) | 85 % | Bästa tillvägagångssätt i v8 | 🗑️ DELETE |
-| 6 | `steps-validating-the-delivery.md` | [campaign-web/v8/msg/gs-delivery](https://experienceleague.adobe.com/en/docs/campaign-web/v8/msg/gs-deliveries) | 80 % | Validering i v8 | 🗑️ DELETE |
-| 7 | `steps-sending-the-delivery.md` | [campaign-web/v8/msg/gs-delivery](https://experienceleague.adobe.com/en/docs/campaign-web/v8/msg/gs-deliveries) | 85 % | Skicka i v8 | 🗑️ DELETE |
+| 6 | `steps-validating-the-delivery.md` | [campaign-web/v8/msg/gs-delivery](https://experienceleague.adobe.com/sv/docs/campaign-web/v8/msg/gs-deliveries) | 80 % | Validering i v8 | 🗑️ DELETE |
+| 7 | `steps-sending-the-delivery.md` | [campaign-web/v8/msg/gs-delivery](https://experienceleague.adobe.com/sv/docs/campaign-web/v8/msg/gs-deliveries) | 85 % | Skicka i v8 | 🗑️ DELETE |
 | 8 | `deliveries-with-recurring-dates.md` | [campaign-web/v8/workflows](https://experienceleague.adobe.com/en/docs/campaign-web/v8/workflows) | 70 % | Kontrollera arbetsflödesplanerare i v8 | 🔍 GRANSKA |
 
 **Sammanfattning**: 7 DELETE, 0 KEEP, 0 MOVE, 1 GRANSKNING
@@ -53,7 +53,7 @@ ht-degree: 5%
 | 9 | `creating-an-email-delivery.md` | [campaign-web/v8/email/create-email](https://experienceleague.adobe.com/en/docs/campaign-web/v8/email/create-email) | 95 % | Skapande av e-post, dokumenterat | 🗑️ DELETE |
 | 10 | `email-parameters.md` | [campaign-web/v8/email/configure-and-send](https://experienceleague.adobe.com/en/docs/campaign-web/v8/email/configure-and-send) | 85 % | Inställningar i v8 | 🗑️ DELETE |
 | 11 | `defining-the-email-content.md` | [campaign-web/v8/email/edit-content](https://experienceleague.adobe.com/en/docs/campaign-web/v8/email/edit-content) | 90 % | Innehållsredigering i v8 | 🗑️ DELETE |
-| 12 | `email-content-templates.md` | [campaign-web/v8/msg/delivery-template](https://experienceleague.adobe.com/en/docs/campaign-web/v8/msg/delivery-template) | 85 % | Mallar i v8 | 🗑️ DELETE |
+| 12 | `email-content-templates.md` | [campaign-web/v8/msg/delivery-template](https://experienceleague.adobe.com/sv/docs/campaign-web/v8/msg/delivery-template) | 85 % | Mallar i v8 | 🗑️ DELETE |
 | 13 | `formatting.md` | [campaign-web/v8/email/edit-content](https://experienceleague.adobe.com/en/docs/campaign-web/v8/email/edit-content) | 80 % | E-postdesigner i v8 | 🗑️ DELETE |
 | 14 | `inserting-images.md` | [campaign-web/v8/email/edit-content](https://experienceleague.adobe.com/en/docs/campaign-web/v8/email/edit-content) | 85 % | Bildhantering i v8 | 🗑️ DELETE |
 | 15 | `attaching-files.md` | [campaign-web/v8/email](https://experienceleague.adobe.com/en/docs/campaign-web/v8/email) | 90 % | Bifogade filer i v8 | 🗑️ DELETE |
@@ -73,7 +73,7 @@ ht-degree: 5%
 | 27 | `sms-channel.md` | [campaign-web/v8/msg/send-sms](https://experienceleague.adobe.com/en/docs/campaign-web/v8/msg/send-sms) | 90 % | Grundläggande om SMS i v8 | 🗑️ DELETE |
 | 28 | `sms-send.md` | [campaign-web/v8/msg/send-sms](https://experienceleague.adobe.com/en/docs/campaign-web/v8/msg/send-sms) | 95 % | SMS skickar in v8 | 🗑️ DELETE |
 | 29 | **`sms-set-up-mid.md`** | INGEN | **0%** | **Installation mellan källor (endast på plats)** | ✅ **BEHÅLL** |
-| 30 | `sms-protocol.md` | [campaign/v8/send/sms/smpp](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/sms) | 60 % | Avancerad SMPP, kontrollera v8-djup | 🔍 GRANSKA |
+| 30 | `sms-protocol.md` | [campaign/v8/send/sms/smpp](https://experienceleague.adobe.com/sv/docs/campaign/campaign-v8/send/sms) | 60 % | Avancerad SMPP, kontrollera v8-djup | 🔍 GRANSKA |
 | 31 | `sms-create.md` | [campaign-web/v8/msg/send-sms](https://experienceleague.adobe.com/en/docs/campaign-web/v8/msg/send-sms) | 90 % | Skapa SMS i v8 | 🗑️ DELETE |
 | 32 | `line-channel.md` | [kampanj/v8/send/line](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/line) | 85 % | LINE-kanal i v8 | 🗑️ DELETE |
 | 33 | `sms-content.md` | [campaign-web/v8/msg/send-sms](https://experienceleague.adobe.com/en/docs/campaign-web/v8/msg/send-sms) | 90 % | SMS-innehåll i v8 | 🗑️ DELETE |
@@ -129,8 +129,8 @@ ht-degree: 5%
 
 | # | v7-fil | v8-matchning | Matcha % | Anteckningar | Åtgärd |
 |---|---------|----------|---------|-------|--------|
-| 55 | `about-templates.md` | [campaign-web/v8/msg/delivery-template](https://experienceleague.adobe.com/en/docs/campaign-web/v8/msg/delivery-template) | 90 % | Mallar i v8 | 🗑️ DELETE |
-| 56 | `creating-a-delivery-template.md` | [campaign-web/v8/msg/delivery-template](https://experienceleague.adobe.com/en/docs/campaign-web/v8/msg/delivery-template) | 95 % | Skapa mallar i v8 | 🗑️ DELETE |
+| 55 | `about-templates.md` | [campaign-web/v8/msg/delivery-template](https://experienceleague.adobe.com/sv/docs/campaign-web/v8/msg/delivery-template) | 90 % | Mallar i v8 | 🗑️ DELETE |
+| 56 | `creating-a-delivery-template.md` | [campaign-web/v8/msg/delivery-template](https://experienceleague.adobe.com/sv/docs/campaign-web/v8/msg/delivery-template) | 95 % | Skapa mallar i v8 | 🗑️ DELETE |
 | 57 | `about-seed-addresses.md` | [campaign/v8/send/test-and-send](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/test-and-send) | 95 % | Fröer helt i v8 | 🗑️ DELETE |
 | 58-60 | *(3 till mallfiler)* | Olika v8 | 85-95 % | Allt i v8 | 🗑️ DELETE |
 
@@ -157,7 +157,7 @@ ht-degree: 5%
 |---|---------|----------|---------|-------|--------|
 | 75 | `understanding-delivery-failures.md` | [kampanj/v8/send/delivery-errors](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/delivery-failures) | 85 % | Misslyckanden dokumenterade i v8 | 🗑️ DELETE |
 | 76 | `delivery-troubleshooting.md` | [kampanj/v8/send/delivery-errors](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/delivery-failures) | 70 % | Bra tips, **migrera saknat innehåll** | ➡️ FLYTTA |
-| 77 | `troubleshooting-sms.md` | [campaign/v8/send/sms](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/sms) | 65 % | SMS-specifika problem, **migrera** | ➡️ FLYTTA |
+| 77 | `troubleshooting-sms.md` | [campaign/v8/send/sms](https://experienceleague.adobe.com/sv/docs/campaign/campaign-v8/send/sms) | 65 % | SMS-specifika problem, **migrera** | ➡️ FLYTTA |
 | 78 | **`monitoring-deliverability.md`** | INGEN | **0%** | **Lokala övervakningsverktyg** | ✅ **BEHÅLL** |
 | 79-83 | *(5 fler felsökningsfiler)* | Olika v8 | 60-85 % | Blandat, granska från fall till fall | 🗑️ DELETE / ➡️ FLYTTA |
 
