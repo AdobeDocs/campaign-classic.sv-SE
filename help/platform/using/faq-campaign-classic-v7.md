@@ -60,7 +60,7 @@ Att migrera till Adobe Managed Services ger förbättrad skalbarhet, säkerhet o
 
 **Komma igång:** Kontakta din Adobe-representant för att utvärdera din miljö och utveckla en detaljerad migreringsplan med Adobe Professional Services.
 
-Läs mer om [migrering till Managed Services](https://experienceleaguecommunities.adobe.com/t5/adobe-campaign-classic-blogs/migrate-your-adobe-campaign-v7-onprem-hybrid-environment-to/ba-p/681605){target="_blank"}.
+Läs mer om [migrering till Managed Services](https://experienceleaguecommunities.adobe.com/t5/adobe-campaign-classic-blogs/migrate-your-adobe-campaign-v7-onprem-hybrid-environment-to/ba-p/681605?profile.language=sv){target="_blank"}.
 
 ## Bygg uppgraderingar (Campaign Classic v7) {#build-upgrades-v7}
 
@@ -214,7 +214,7 @@ Se [**Vanliga frågor och svar om Campaign v8**](https://experienceleague.adobe.
 
 **Community och support:**
 
-* [Campaign Community Forums](https://experienceleaguecommunities.adobe.com/t5/adobe-campaign-classic/ct-p/adobe-campaign-classic-community){target="_blank"}
+* [Campaign Community Forums](https://experienceleaguecommunities.adobe.com/t5/adobe-campaign-classic/ct-p/adobe-campaign-classic-community?profile.language=sv){target="_blank"}
 * [Adobe Support](https://helpx.adobe.com/se/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html){target="_blank"}
 * [Kontrollpanelen (värdbaserade kunder)](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=sv){target="_blank"}
 

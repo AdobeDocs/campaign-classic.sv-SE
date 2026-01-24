@@ -106,7 +106,7 @@ När alla instanser har uppgraderats måste även klientkonsolen uppgraderas til
 
 ## Integrering med utlösare från Experience Cloud {#acc-triggers-updates}
 
-Den gamla autentiseringstjänsten för autentisering har nått slutet av livscykeln. Autentisering av utlösarintegration, som ursprungligen baserades på AUTH-autentiseringsinställningar för åtkomst till pipeline, har flyttats till Adobe I/O. Det gamla autentiseringsläget Autentisering med kampanjen [har tagits bort](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-discussions/adobe-analytics-legacy-api-end-of-life-notice/td-p/385411) den **september 2021**. Värdmiljöer drar nytta av en förlängning till **23 februari 2022**. Kontakta Adobe kundtjänst för support i februari 2022 om du är lokal kund eller hybridkund. Du måste ange [AppID:et för OAuth-applikationen](../../integrations/using/configuring-pipeline.md#step-optional) till Adobe.
+Den gamla autentiseringstjänsten för autentisering har nått slutet av livscykeln. Autentisering av utlösarintegration, som ursprungligen baserades på AUTH-autentiseringsinställningar för åtkomst till pipeline, har flyttats till Adobe I/O. Det gamla autentiseringsläget Autentisering med kampanjen [har tagits bort](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-discussions/adobe-analytics-legacy-api-end-of-life-notice/td-p/385411?profile.language=sv) den **september 2021**. Värdmiljöer drar nytta av en förlängning till **23 februari 2022**. Kontakta Adobe kundtjänst för support i februari 2022 om du är lokal kund eller hybridkund. Du måste ange [AppID:et för OAuth-applikationen](../../integrations/using/configuring-pipeline.md#step-optional) till Adobe.
 
 **Påverkas du?**
 

@@ -132,7 +132,7 @@ Det nya biljettsystemet har startats via [Adobe Admin Console](https://admincons
 
 ### Fråga experterna!
 
-Gå med i Campaign Classic-communityn: sök efter svar i befintliga frågor eller ställ din fråga till communityn. [Anslut till konversationen](https://experienceleaguecommunities.adobe.com/t5/adobe-campaign-classic/ct-p/adobe-campaign-classic-community){_blank}.
+Gå med i Campaign Classic-communityn: sök efter svar i befintliga frågor eller ställ din fråga till communityn. [Anslut till konversationen](https://experienceleaguecommunities.adobe.com/t5/adobe-campaign-classic/ct-p/adobe-campaign-classic-community?profile.language=sv){_blank}.
 
 ### Access Campaign Download Center
 
