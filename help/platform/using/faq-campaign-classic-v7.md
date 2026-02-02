@@ -19,7 +19,7 @@ ht-degree: 2%
 >
 >Vanliga frågor och svar om Adobe Campaign Classic v7-arkitektur, distributionsmodeller och v7-specifika funktioner.
 >
->**För utförliga svar på vanliga Campaign-frågor** (arbetsflöden, leveranser, målgrupper, rapportering, personalisering osv.), se [**Vanliga frågor och svar om Campaign v8**](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/new/campaign-faq-comprehensive){target="_blank"} som ger detaljerade svar ordnade efter ämne.
+>**För utförliga svar på vanliga Campaign-frågor** (arbetsflöden, leveranser, målgrupper, rapportering, personalisering osv.), se [**Vanliga frågor och svar om Campaign v8**](https://experienceleague.adobe.com/sv/docs/campaign/campaign-v8/new/campaign-faq-comprehensive){target="_blank"} som ger detaljerade svar ordnade efter ämne.
 
 ## Campaign Classic v7-arkitektur och driftsättning {#v7-architecture}
 
@@ -37,7 +37,7 @@ Varje distributionsmodell har olika funktioner och hanteringsansvar. Vilka modul
 
 [Klicka här om du vill veta mer](../../installation/using/hosting-models.md) om värdmodeller och skillnaderna mellan dem.
 
-**Obs!** Campaign v8 är exklusivt tillgänglig som hanterade molntjänster. [Läs mer om Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/new/whats-new.html){target="_blank"}.
+**Obs!** Campaign v8 är exklusivt tillgänglig som hanterade molntjänster. [Läs mer om Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/new/whats-new.html?lang=sv-SE){target="_blank"}.
 
 +++
 
@@ -68,7 +68,7 @@ Att migrera till Adobe Managed Services ger förbättrad skalbarhet, säkerhet o
 
 **Komma igång:** Kontakta din Adobe-representant för att utvärdera din miljö och utveckla en detaljerad migreringsplan med Adobe Professional Services.
 
-Läs mer om [migrering till Managed Services](https://experienceleaguecommunities.adobe.com/t5/adobe-campaign-classic-blogs/migrate-your-adobe-campaign-v7-onprem-hybrid-environment-to/ba-p/681605){target="_blank"}.
+Läs mer om [migrering till Managed Services](https://experienceleaguecommunities.adobe.com/t5/adobe-campaign-classic-blogs/migrate-your-adobe-campaign-v7-onprem-hybrid-environment-to/ba-p/681605?profile.language=sv){target="_blank"}.
 
 +++
 
@@ -94,7 +94,7 @@ Campaign v8 är en strategisk Adobe-plattform, idealisk för organisationer som 
 
 Läs mer:
 
-* [Kampanj v8 - översikt](https://experienceleague.adobe.com/docs/campaign/campaign-v8/new/whats-new.html){target="_blank"}
+* [Kampanj v8 - översikt](https://experienceleague.adobe.com/docs/campaign/campaign-v8/new/whats-new.html?lang=sv-SE){target="_blank"}
 * [Övergång från Campaign Classic v7 till v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/start/v7-to-v8.html){target="_blank"}
 * [Kampanj v8 - Omfattande frågor och svar](https://experienceleague.adobe.com/docs/campaign/campaign-v8/start/campaign-faq-comprehensive.html){target="_blank"}
 
@@ -252,7 +252,7 @@ Se [**Vanliga frågor och svar om Campaign v8**](https://experienceleague.adobe.
 
 **Community och support:**
 
-* [Campaign Community Forums](https://experienceleaguecommunities.adobe.com/t5/adobe-campaign-classic/ct-p/adobe-campaign-classic-community){target="_blank"}
+* [Campaign Community Forums](https://experienceleaguecommunities.adobe.com/t5/adobe-campaign-classic/ct-p/adobe-campaign-classic-community?profile.language=sv){target="_blank"}
 * [Adobe Support](https://helpx.adobe.com/se/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html){target="_blank"}
 
 +++
