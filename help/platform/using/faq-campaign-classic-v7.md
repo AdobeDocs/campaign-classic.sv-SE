@@ -98,7 +98,7 @@ Läs mer:
 * [Övergång från Campaign Classic v7 till v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/start/v7-to-v8.html){target="_blank"}
 * [Kampanj v8 - Omfattande frågor och svar](https://experienceleague.adobe.com/docs/campaign/campaign-v8/start/campaign-faq-comprehensive.html){target="_blank"}
 
-**Detaljerade svar på vanliga Campaign-frågor om arbetsflöden, leveranser, målgrupper, rapportering, personalisering och mycket mer** finns på [Vanliga frågor och svar om Campaign v8 ](https://experienceleague.adobe.com/docs/campaign/campaign-v8/start/campaign-faq-comprehensive.html){target="_blank"}.
+**Detaljerade svar på vanliga Campaign-frågor om arbetsflöden, leveranser, målgrupper, rapportering, personalisering och mycket mer** finns på [Vanliga frågor och svar om Campaign v8 &#x200B;](https://experienceleague.adobe.com/docs/campaign/campaign-v8/start/campaign-faq-comprehensive.html){target="_blank"}.
 
 +++
 
@@ -210,7 +210,7 @@ Läs mer i [dokumentationen för klientkonsolen för Campaign](../../platform/us
 
 +++ Var kan värdbaserade kunder hantera instansinställningar? {#where-to-manage-instance-settings}
 
-Kontrollpanelen [](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=sv){target="_blank"} hjälper produktadministratörer för Adobe Campaign att hantera inställningar och spåra användningen för varje instans. Med det intuitiva gränssnittet kan du övervaka viktiga resurser och utföra administrativa uppgifter som uppdateringar av IP tillåtelselista, SFTP-lagringsövervakning, nyckelhantering med mera.
+Kontrollpanelen [&#128279;](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=sv){target="_blank"} hjälper produktadministratörer för Adobe Campaign att hantera inställningar och spåra användningen för varje instans. Med det intuitiva gränssnittet kan du övervaka viktiga resurser och utföra administrativa uppgifter som uppdateringar av IP tillåtelselista, SFTP-lagringsövervakning, nyckelhantering med mera.
 
 **Viktiga fördelar:**
 
