@@ -7,15 +7,15 @@ feature: Campaigns
 hide: true
 hidefromtoc: true
 exl-id: 4e0df18f-3623-4dfb-a2f8-ad293dbc4dd5
-source-git-commit: 4a7ecd170bd27f43d515da71c212bbdaa306d602
+source-git-commit: df014d3f3029a61176e5117e27f3d2e8228fc407
 workflow-type: tm+mt
-source-wordcount: '431'
+source-wordcount: '434'
 ht-degree: 7%
 
 ---
 
-# Utforma och genomför marknadsföringskampanjer{#designing-marketing-campaigns}
 
+# Utforma och genomför marknadsföringskampanjer{#designing-marketing-campaigns}
 
 Med [!DNL Adobe Campaign] kan du definiera, optimera, köra och analysera kommunikation och marknadsföringskampanjer. [!DNL Adobe Campaign] fungerar som en enhetlig order- och körningscentral för marknadsföringsstrategier. Mer information finns i [Åtkomstkampanjer](../../distributed/using/accessing-campaigns.md) och [Skapa marknadsföringskampanjer](../../campaign/using/setting-up-marketing-campaigns.md).
 
@@ -23,8 +23,10 @@ Dessutom kan du med modulen **Marketing Resource Management (MRM)** styra markna
 
 >[!NOTE]
 >
->Mer information om kärnfunktionerna i [!DNL Adobe Campaign] finns i [det här avsnittet](../../platform/using/about-adobe-campaign-classic.md).\
->Funktioner som är relaterade till målgruppsanpassning, meddelandepersonalisering och meddelandeleverans i de olika kanalerna beskrivs i [[!DNL Campaign v8 documentation]](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html?lang=sv){target="_blank"}.
+>Mer information om kärnfunktionerna i [!DNL Adobe Campaign] finns i [det här avsnittet](../../platform/using/about-adobe-campaign-classic.md).
+>
+>Funktioner som rör målgruppsanpassning, meddelandepersonalisering och meddelandeleverans i olika kanaler beskrivs i [dokumentationen för Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html?lang=sv){target="_blank"}.
+
 
 ![Använda videominiatyr](assets/do-not-localize/how-to-video.png) [Identifiera viktiga begrepp i marknadsföringskampanjer i video](#video)
 

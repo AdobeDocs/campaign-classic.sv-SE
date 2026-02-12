@@ -1,22 +1,22 @@
 ---
-source-git-commit: 4a7ecd170bd27f43d515da71c212bbdaa306d602
+product: campaign
+title: Konfigurera och hantera godkännandeprocessen
+description: Lär dig hantera godkännanden av marknadsföringskampanjer
+language: en
+role: User
+feature: Approvals, Campaigns
+hide: true
+hidefromtoc: true
+exl-id: 8cbb2445-f5e4-4a25-ba7e-56e39ca9d3ce
+source-git-commit: df014d3f3029a61176e5117e27f3d2e8228fc407
 workflow-type: tm+mt
-source-wordcount: '2684'
+source-wordcount: '2665'
 ht-degree: 0%
 
 ---
-—product: campaign
-titel: Konfigurera och hantera godkännandeprocessen
-description: Lär dig hantera godkännanden av marknadsföringskampanjer
-språk: en
-roll: Användare
-funktion: Godkännanden, kampanjer
-dölj: ja
-hidefromtoc: ja
-exl-id: 8cbb2445-f5e4-4a25-ba7e-56e39ca9d3ce
----
-# Konfigurera och hantera godkännandeprocessen {#approving-marketing-campaigns}
 
+
+# Konfigurera och hantera godkännandeprocessen {#approving-marketing-campaigns}
 
 Varje steg i en leverans kan godkännas för att säkerställa full övervakning och kontroll av kampanjprocesserna. Dessa omfattar målinriktning, innehåll, budget, extrahering och utskick av ett bevis.
 
