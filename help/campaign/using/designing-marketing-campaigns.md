@@ -24,7 +24,7 @@ Dessutom kan du med modulen **Marketing Resource Management (MRM)** styra markna
 >[!NOTE]
 >
 >Mer information om kärnfunktionerna i [!DNL Adobe Campaign] finns i [det här avsnittet](../../platform/using/about-adobe-campaign-classic.md).\
->Funktioner som är relaterade till målgruppsanpassning, meddelandepersonalisering och meddelandeleverans i de olika kanalerna beskrivs i [!DNL Campaign v8 documentation](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html?lang=sv){target="_blank"}.
+>Funktioner som är relaterade till målgruppsanpassning, meddelandepersonalisering och meddelandeleverans i de olika kanalerna beskrivs i [[!DNL Campaign v8 documentation]](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html?lang=sv){target="_blank"}.
 
 ![Använda videominiatyr](assets/do-not-localize/how-to-video.png) [Identifiera viktiga begrepp i marknadsföringskampanjer i video](#video)
 
