@@ -7,26 +7,26 @@ feature: Campaigns
 hide: true
 hidefromtoc: true
 exl-id: 4e0df18f-3623-4dfb-a2f8-ad293dbc4dd5
-source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
+source-git-commit: 4a7ecd170bd27f43d515da71c212bbdaa306d602
 workflow-type: tm+mt
-source-wordcount: '441'
-ht-degree: 8%
+source-wordcount: '431'
+ht-degree: 7%
 
 ---
 
 # Utforma och genomför marknadsföringskampanjer{#designing-marketing-campaigns}
 
 
-Med Adobe Campaign kan ni definiera, optimera, genomföra och analysera kommunikation och marknadsföringskampanjer. Adobe Campaign fungerar som ett enhetligt center för order och genomförande av marknadsföringsstrategier. Mer information finns i [Åtkomstkampanjer](../../distributed/using/accessing-campaigns.md) och [Skapa marknadsföringskampanjer](../../campaign/using/setting-up-marketing-campaigns.md).
+Med [!DNL Adobe Campaign] kan du definiera, optimera, köra och analysera kommunikation och marknadsföringskampanjer. [!DNL Adobe Campaign] fungerar som en enhetlig order- och körningscentral för marknadsföringsstrategier. Mer information finns i [Åtkomstkampanjer](../../distributed/using/accessing-campaigns.md) och [Skapa marknadsföringskampanjer](../../campaign/using/setting-up-marketing-campaigns.md).
 
-Dessutom kan du med modulen **Marketing Resource Management (MRM)** styra marknadsföringsåtgärder i ett samverkansbaserat läge genom att tillhandahålla fullständig hantering och realtidsspårning av de uppgifter, budgetar och marknadsföringsresurser som ingår. Med Marketing Resource Management kan ni optimera och reglera hanteringen av interna och externa processer, resurser och marknadsföringskampanjer samt relationer till tredje part (byråer, skrivare osv.). Mer information om detta finns i [det här avsnittet](../../mrm/using/about-marketing-resource-management.md).
+Dessutom kan du med modulen **Marketing Resource Management (MRM)** styra marknadsföringsåtgärder i ett samverkansbaserat läge genom att tillhandahålla fullständig hantering och realtidsspårning av de uppgifter, budgetar och marknadsföringsresurser som ingår. Med Marketing Resource Management kan ni optimera och reglera hanteringen av interna och externa processer, resurser och marknadsföringskampanjer. Det stöder även relationer med tredje part (byråer, tryckerier etc.). Mer information om detta finns i [det här avsnittet](../../mrm/using/about-marketing-resource-management.md).
 
 >[!NOTE]
 >
->Mer information om Adobe Campaign kärnfunktioner finns i [det här avsnittet](../../platform/using/about-adobe-campaign-classic.md).\
->Funktioner som rör målgruppsanpassning, meddelandepersonalisering och meddelandeleverans i olika kanaler beskrivs i [dokumentationen för Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html?lang=sv-SE){target="_blank"}.
+>Mer information om kärnfunktionerna i [!DNL Adobe Campaign] finns i [det här avsnittet](../../platform/using/about-adobe-campaign-classic.md).\
+>Funktioner som är relaterade till målgruppsanpassning, meddelandepersonalisering och meddelandeleverans i de olika kanalerna beskrivs i [!DNL Campaign v8 documentation](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html?lang=sv){target="_blank"}.
 
-![](assets/do-not-localize/how-to-video.png) [Upptäck begrepp för marknadsföringskampanjer i videon](#video)
+![Använda videominiatyr](assets/do-not-localize/how-to-video.png) [Identifiera viktiga begrepp i marknadsföringskampanjer i video](#video)
 
 ## Kärnkoncept {#core-concepts}
 
@@ -70,4 +70,4 @@ I den här videon presenteras viktiga begrepp för marknadsföringskampanjer.
 
 >[!VIDEO](https://video.tv.adobe.com/v/35131?quality=12)
 
-Ytterligare Campaign Classic instruktionsvideor finns [här](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=sv).
+Ytterligare [!DNL Campaign Classic] instruktionsvideor är tillgängliga [här](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=sv).
