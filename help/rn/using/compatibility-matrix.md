@@ -6,9 +6,9 @@ feature: Release Notes
 role: User
 level: Beginner
 exl-id: b8c1f287-06f4-4c34-8cca-b0c7676abbc2
-source-git-commit: 4a7ecd170bd27f43d515da71c212bbdaa306d602
+source-git-commit: 9d5519bf66baace9b3ccf5275727a44cb58f4795
 workflow-type: tm+mt
-source-wordcount: '859'
+source-wordcount: '861'
 ht-degree: 99%
 
 ---
@@ -190,12 +190,14 @@ Om du är en lokal kund/hybridkund måste du installera och konfigurera en av de
 </td>
 <td>
 <p>16.x</p>
+<p>15.x</p>
 <p>14.x</p>
 <p>13.x</p>
 <p>12.x</p>
 <p>11.x</p>
 </td>
 <td>
+<p>v7.4.1</p>
 <p>v7.4.1</p>
 <p>v7.3.2</p>
 <p></p>
@@ -485,7 +487,7 @@ Följande webbläsare, i den senaste versionen, är kompatibla med Campaign för
 
 >[!MORELIKETHIS]
 >
->* [Versionsinformation om Campaign Classic &#x200B;](../../rn/using/latest-release.md)
+>* [Versionsinformation om Campaign Classic ](../../rn/using/latest-release.md)
 >* [Allmän arkitektur i Campaign](../../installation/using/general-architecture.md)
 >* [Rekommendationer på maskinvarustorlek](../../technotes/using/hardware-sizing.md)
 >* [Inaktuella funktioner och system](../../rn/using/deprecated-features.md)
