@@ -822,4 +822,4 @@ ht-degree: 1%
       + [Migrering till Public Cloud](technotes/using/dc-migration.md)
       + [Vanliga frågor](technotes/using/dc-migration-faq.md)
    + [GCM-baserade funktioner](technotes/using/gcm-functions.md)
-+ [Kampanjkontrollpanelen](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html)
++ [Kampanjkontrollpanelen](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=sv-SE)
