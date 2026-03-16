@@ -1,27 +1,27 @@
 ---
 product: campaign
 title: Kompatibilitetsmatris för Campaign Classic
-description: Kompatibilitetsmatris för Campaign Classic
+description: Campaign Classic-kompatibilitetsmatris
 feature: Release Notes
 role: User
 level: Beginner
 exl-id: b8c1f287-06f4-4c34-8cca-b0c7676abbc2
-source-git-commit: 9d5519bf66baace9b3ccf5275727a44cb58f4795
+source-git-commit: 66387e2e008051901fe3385f571d7fe798829100
 workflow-type: tm+mt
-source-wordcount: '861'
-ht-degree: 99%
+source-wordcount: '870'
+ht-degree: 4%
 
 ---
 
 # Kompatibilitetsmatris {#compatibility-matrix}
 
-Den [senaste versionen](../../rn/using/latest-release.md) av Adobe Campaign Classic v7 är kompatibel med alla system och verktyg på den här sidan. När specifika versioner av dessa system och verktyg från tredje part når slutet av sin livscykel med sina respektive utgivare är Adobe Campaign inte längre kompatibelt med dessa versioner. De tas sedan bort från vår kompatibilitetsmatris i följande produktversion. Se till att du använder versioner av system som stöds i kompatibilitetsmatrisen för att undvika problem. Besök [den här sidan](../../rn/using/deprecated-features.md) för mer information om inaktuella objekt.
+I den [senaste versionen](../../rn/using/latest-release.md) är Adobe Campaign Classic v7 kompatibelt med alla system och verktyg som listas på den här sidan. Eftersom specifika versioner av dessa system och verktyg från tredje part når slutet av livscykeln (EOL) med sina respektive skapare, kommer Adobe Campaign inte längre att vara kompatibelt med dessa versioner, och de kommer att tas bort från vår kompatibilitetsmatris i den kommande produktversionen. Kontrollera att du har de versioner av system som stöds i den här kompatibilitetsmatrisen för att undvika problem. Mer information om borttagna objekt finns på [den här sidan](../../rn/using/deprecated-features.md).
 
-Om inget annat anges stöds alla mindre versioner.
+Om inget annat anges stöds alla mindre releaser.
 
 >[!CAUTION]
 >
->Den här matrisen uppdateras regelbundet med nya system och verktyg som stöds och inaktuella som tas bort.
+>Den här matrisen uppdateras regelbundet med nya system och verktyg som stöds och som tas bort.
 
 ## Operativsystem {#OperatingSystems}
 
@@ -31,17 +31,20 @@ Om du är en lokal/hybrid-kund måste du installera Adobe Campaign i något av o
 <tbody> 
 <td><strong>Operativsystem</strong></td>
 <td><strong>Operativsystemversion</strong></td>
-<td><strong>Lägsta Campaign-version</strong></td>
+<td><strong>Lägsta kampanjversion</strong></td>
 <tr>
 <td>
 <p>Debian</p>
 </td>
 <td>
+<p>13</p>
+<p>12</p>
 <p>11</p>
 </td>
 <td>
+<p>7.4.3</p>
+<p>7.4.3</p>
 <p>v7.3</p>
-<p></p>
 </td>
 </tr>
 <tr>
@@ -51,11 +54,9 @@ Om du är en lokal/hybrid-kund måste du installera Adobe Campaign i något av o
 <td>
 <p>9.x</p>
 <p>8.x</p>
-<p>7.x</p>
 </td>
 <td>
 <p>v7.4</p>
-<p></p>
 <p></p>
 </td>
 </tr>
@@ -79,22 +80,22 @@ Om du är en lokal/hybrid-kund måste du installera Adobe Campaign i något av o
 
 >[!IMPORTANT]
 >
->Med RHEL måste du kunna inaktivera [SELinux](../../installation/using/prerequisites-of-campaign-installation-in-linux.md#selinux) eller låta dina utvecklare skriva anpassade SELinux-regler för att kontrollera att en aktiverad SELinux inte orsakar problem med åtgärder i Campaign.
+>Med RHEL måste du kunna inaktivera [SELinux](../../installation/using/prerequisites-of-campaign-installation-in-linux.md#selinux) eller låta dina arkitekter skriva anpassade SELinux-regler för att kontrollera att en aktiverad SELinux inte orsakar problem med Campaign-åtgärder.
 
 ## Webbservrar {#WebServers}
 
-Som lokal kund/hybridkund måste du, beroende på ditt operativsystem, integrera Campaign i en av de webbservrar som anges nedan. Mer information om konfigurationssteg för webbservrar finns på [den här sidan](../../installation/using/integration-into-a-web-server-for-windows.md) (för Windows) och [den här sidan](../../installation/using/integration-into-a-web-server-for-linux.md) (för Linux).
+Om ni är en lokal/hybridkund måste ni, beroende på vilket operativsystem ni använder, integrera Campaign i någon av de webbservrar som listas nedan. Läs mer om konfigurationsstegen för webbservrar i [den här sidan](../../installation/using/integration-into-a-web-server-for-windows.md) (för Windows) och [den här sidan](../../installation/using/integration-into-a-web-server-for-linux.md) (för Linux).
 
 <table>
 <tbody>
 <td><strong>Webbserver</strong></td>
-<td><strong>Version av webbserver</strong></td>
+<td><strong>Webbserverversion</strong></td>
 <tr>
 <td>
-<p>Microsoft IIS</p>
+<p>MICROSOFT IIS</p>
 </td>
 <td>
-<p>10.0</p>
+<p>10,0</p>
 </td>
 </tr>
 <tr>
@@ -108,15 +109,15 @@ Som lokal kund/hybridkund måste du, beroende på ditt operativsystem, integrera
 </tbody>
 </table>
 
-## Verktyg {#Tools}
+## verktyg {#Tools}
 
-Som lokal kund/hybridkund måste du installera och konfigurera de verktyg som anges nedan. [Läs mer](../../installation/using/application-server.md).
+Om du är en lokal/hybrid-kund måste du installera och konfigurera de verktyg som listas nedan. [Läs mer](../../installation/using/application-server.md).
 
 <table>
 <tbody>
 <td><strong>Verktyg</strong></td>
 <td><strong>Version</strong></td>
-<td><strong>Lägsta Campaign-version</strong></td>
+<td><strong>Lägsta kampanjversion</strong></td>
 <tr>
 <td><p>Java Development Kit (JDK)</p>
 <p>Läs mer på <a href="../../installation/using/application-server.md#jdk" target="_blank">den här sidan</a>.</p>
@@ -131,13 +132,13 @@ Som lokal kund/hybridkund måste du installera och konfigurera de verktyg som an
 <td>
 <p>krävs från och med v7.4.1</p>
 <p>krävs från och med v7.4.1</p>
-<p>tills v7.4.1</p>
-<p>tills v7.4.1</p>
+<p>till v7.4.1</p>
+<p>till v7.4.1</p>
 </tr>
 <tr>
 <td><p>Libre Office</p></td>
 <td>
-<p>7 (och föregående versioner om de är inbäddade i systemet)</p>
+<p>7 (och tidigare versioner om de är inbäddade i systemet)</p>
 </td>
 <td>
 <p></p>
@@ -154,16 +155,16 @@ Som lokal kund/hybridkund måste du installera och konfigurera de verktyg som an
 </tbody>
 </table>
 
-## Relation Database Management Systems (RDBMS) {#RDBMSservers}
+## RDBMS (Relation Database Management Systems) {#RDBMSservers}
 
-Om du är en lokal kund/hybridkund måste du installera och konfigurera en av de databaser som listas nedan. [Läs mer](../../installation/using/creating-and-configuring-the-database.md).
+Om du är en lokal/hybrid-kund måste du installera och konfigurera en av de databaser som listas nedan. [Läs mer](../../installation/using/creating-and-configuring-the-database.md).
 
 
 <table>
 <tbody>
 <td><strong>Databassystem</strong></td>
 <td><strong>Databasversion</strong></td>
-<td><strong>Lägsta Campaign-version</strong></td>
+<td><strong>Lägsta kampanjversion</strong></td>
 <tr>
 <td>
 <p>Oracle</p>
@@ -189,6 +190,7 @@ Om du är en lokal kund/hybridkund måste du installera och konfigurera en av de
 <p>PostgreSQL</p>
 </td>
 <td>
+<p>17.x</p>
 <p>16.x</p>
 <p>15.x</p>
 <p>14.x</p>
@@ -197,6 +199,7 @@ Om du är en lokal kund/hybridkund måste du installera och konfigurera en av de
 <p>11.x</p>
 </td>
 <td>
+<p>v7.4.3</p>
 <p>v7.4.1</p>
 <p>v7.4.1</p>
 <p>v7.3.2</p>
@@ -233,20 +236,20 @@ Om du är en lokal kund/hybridkund måste du installera och konfigurera en av de
 >
 >* Microsoft SQL Server stöds inte som primär databas när Campaign-servern körs i Linux. [Läs mer](../../installation/using/prerequisites-of-campaign-installation-in-linux.md#database-access-layers).
 >
->* Du kan också använda Amazon RDS för PostgreSQL med versionerna som anges ovan.
+>* Du kan också använda Amazon RDS för PostgreSQL med de versioner som anges ovan.
 >
->* PostgreSQL är RDBMS för värd/hanterade molntjänstmiljöer.
+>* PostgreSQL är RDBMS för miljöer med värdbaserade/hanterade molntjänster.
 
 
-## CRM-kopplingar {#CRMconnectors}
+## CRM-anslutningar {#CRMconnectors}
 
-CRM (Customer Relationship Management)-system som är kompatibla med Adobe Campaign listas nedan. [Läs mer](../../platform/using/crm-connectors.md) om CRM-kopplingar i Campaign.
+CRM-system som är kompatibla med Adobe Campaign listas nedan. [Läs mer](../../platform/using/crm-connectors.md) om Campaign CRM-anslutningar.
 
 <table>
 <tbody>
 <tr>
 <td>
-<p>Kopplings-API för Salesforce</p>
+<p>Salesforce Connector API</p>
 </td>
 <td>
 <p>API-version 49</p>
@@ -254,7 +257,7 @@ CRM (Customer Relationship Management)-system som är kompatibla med Adobe Campa
 </tr>
 <tr>
 <td>
-<p>Microsoft Dynamics-koppling</p>
+<p>Microsoft Dynamics Connector</p>
 </td>
 <td>
 <p>Webb-API</p>
@@ -263,17 +266,17 @@ CRM (Customer Relationship Management)-system som är kompatibla med Adobe Campa
 </tbody>
 </table>
 
-## Federerad dataåtkomst (FDA){#FederatedDataAccessFDA}
+## FDA (Federated Data Access){#FederatedDataAccessFDA}
 
-Externa databaser som är kompatibla med [modulen för federerad dataåtkomst](../../installation/using/about-fda.md) i Adobe Campaign, listas nedan. Kompatibiliteten beror på din [värdmodell](../../installation/using/hosting-models.md).
+Externa databaser som är kompatibla med Adobe Campaign [Federated Data Access-modulen](../../installation/using/about-fda.md) listas nedan. Kompatibiliteten beror på din [värdmodell](../../installation/using/hosting-models.md).
 
-Miljöerna **Managed Services** (värd), **Hybrid** och **Lokal** kan ansluta Campaign till följande externa databassystem:
+**Managed Services** (värdbaserad), **Hybrid** och **Lokal** kan ansluta Campaign med följande externa databassystem:
 
 <table>
 <tbody>
 <td><strong>Databassystem</strong></td>
 <td><strong>Databasversion</strong></td>
-<td><strong>Lägsta Campaign-version</strong></td>
+<td><strong>Lägsta kampanjversion</strong></td>
 <tr>
 <td>Amazon Redshift</td>
 <td><p> </p>
@@ -288,11 +291,13 @@ Miljöerna **Managed Services** (värd), **Hybrid** och **Lokal** kan ansluta Ca
 <tr>
 <td>PostgreSQL</td>
 <td>
+<p>17.x</p>
 <p>14.x</p>
 <p>13.x</p>
 <p>12.x</p>
 <p>11.x</p>
 </td>
+<p>v7.4.3</p>
 <td>v7.0 19.1.4</td>
 </tr>
 <tr>
@@ -308,13 +313,13 @@ Miljöerna **Managed Services** (värd), **Hybrid** och **Lokal** kan ansluta Ca
 </tbody>
 </table>
 
-Miljöerna **Hybrid** och **Lokal** kan dessutom ansluta Campaign till följande externa databassystem. Dessa system är **inte kompatibla** med Campaigns **Managed Services**-värdmiljöer.
+Dessutom kan miljöer av typen **Hybrid** och **Lokal** även ansluta Campaign till följande externa databassystem. Dessa system är **inte kompatibla** med Campaign **Managed Services**-miljöer (värdbaserade).
 
 <table>
 <tbody>
 <td><strong>Databassystem</strong></td>
 <td><strong>Databasversion</strong></td>
-<td><strong>Lägsta Campaign-version</strong></td>
+<td><strong>Lägsta kampanjversion</strong></td>
 <tr>
 <td>Microsoft Azure Synapse Analytics</td>
 <td> </td>
@@ -323,7 +328,7 @@ Miljöerna **Hybrid** och **Lokal** kan dessutom ansluta Campaign till följande
 <tr><td>MySQL</td>
 <td>
 <p>8</p>
-<p>5.7</p>
+<p>5,7</p>
 </td>
 <td>
 <p>v7.3</p>
@@ -364,7 +369,7 @@ Miljöerna **Hybrid** och **Lokal** kan dessutom ansluta Campaign till följande
 </tr>
 <tr><td>SQL Server</td>
 <td>
-<p>2022 (från och med Campaign v7.4)</p>
+<p>2022 (med början Campaign v7.4)</p>
 <p>2019</p>
 <p>2017</p>
 <p>2016</p>
@@ -403,7 +408,7 @@ Miljöerna **Hybrid** och **Lokal** kan dessutom ansluta Campaign till följande
 
 ## Klientkonsol {#ClientOS}
 
-Följande operativsystem och webbläsare **krävs** för att använda [klientkonsolen i Campaign](../../installation/using/installing-the-client-console.md).
+Följande operativsystem och webbläsare **krävs** för att använda [Campaign Client Console](../../installation/using/installing-the-client-console.md).
 
 ### Operativsystem
 
@@ -411,7 +416,7 @@ Följande operativsystem och webbläsare **krävs** för att använda [klientkon
 <tbody>
 <td><strong>System</strong></td>
 <td><strong>OS-version</strong></td>
-<td><strong>Lägsta Campaign-version</strong></td>
+<td><strong>Lägsta kampanjversion</strong></td>
 <tr>
 <td>Microsoft Windows</td>
 <td>
@@ -437,18 +442,18 @@ Följande operativsystem och webbläsare **krävs** för att använda [klientkon
 </tbody>
 </table>
 
-### Microsoft WebView2-körtid {#webview}
+### Microsoft WebView2, runtime {#webview}
 
-Den senaste versionen av Microsoft Edge WebView2 är obligatorisk för Campaign-klientkonsolen.
+Microsoft Edge WebView2 runtime, den senaste versionen är obligatorisk för Campaign-klientkonsolen.
 
-Ladda ned Microsoft Edge WebView2 från [webbplatsen för Microsoft Developer](https://www.adobe.com/go/acc-ms-webview2-runtime-download).
+Hämta Microsoft Edge WebView2 från [Microsoft Developer site](https://www.adobe.com/go/acc-ms-webview2-runtime-download).
 
 
-## Mobil-SDK {#MobileSDK}
+## Mobile SDK {#MobileSDK}
 
-Du kan också använda Campaign för att [skicka pushnotiser](../../delivery/using/about-mobile-app-channel.md) via mobil-SDK:et i Adobe Experience Platform genom att konfigurera Adobe Campaign-tillägget i användargränssnittet för datainsamling.
+Du kan använda Campaign för att [skicka push-meddelanden](../../delivery/using/about-mobile-app-channel.md) via Adobe Experience Platform Mobile SDK genom att konfigurera Adobe Campaign-tillägget i användargränssnittet för datainsamling.
 
-Campaign-SDK:et är [inaktuellt](deprecated-features.md) från och med Campaign v7.4. För att säkerställa en smidig övergång för den befintlig implementeringen till AEP mobilt SDK kan du fortfarande använda det i operativsystemen som anges nedan<!--, using the associated [mobile SDK](../../delivery/using/integrating-campaign-sdk-into-the-mobile-application.md)-->.
+Campaign-SDK är [föråldrat](deprecated-features.md) från och med Campaign v7.4. För att säkerställa en smidig övergång för befintlig implementering till AEP Mobile SDK kan du fortfarande använda den i de operativsystem som listas nedan <!--, using the associated [mobile SDK](../../delivery/using/integrating-campaign-sdk-into-the-mobile-application.md)--> .
 
 
 <table>
@@ -456,8 +461,8 @@ Campaign-SDK:et är [inaktuellt](deprecated-features.md) från och med Campaign 
 <tr>
 <td>Google Android</td>
 <td>
-<p>7–14</p>
-<p>med mobil SDK version 1.1.1.</p>
+<p>7-14</p>
+<p>med mobil SDK 1.1.1.</p>
 <p>Android 13 och 14 stöds från och med Campaign v7.4.</p>
 <p>Android 12 stöds från och med Campaign v7.3.</p>
 </td>
@@ -465,8 +470,8 @@ Campaign-SDK:et är [inaktuellt](deprecated-features.md) från och med Campaign 
 <tr>
 <td>Apple iOS</td>
 <td>
-<p>iOS 9–17</p>
-<p>med mobil SDK version 1.0.26.</p>
+<p>iOS 9 - 17</p>
+<p>med mobil SDK 1.0.26.</p>
 <p>Apple iOS 15 stöds från och med Campaign v7.3. </p>
 <p>Apple iOS 16 och 17 stöds från och med Campaign v7.4.</p>
 </td>
@@ -476,7 +481,7 @@ Campaign-SDK:et är [inaktuellt](deprecated-features.md) från och med Campaign 
 
 ## Webbläsare {#Browsers}
 
-Följande webbläsare, i den senaste versionen, är kompatibla med Campaign för webbåtkomst. Mer information om detta hittar du i [dokumentationen för Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-create.html?lang=svl#use-the-web-interface-){target=_blank}.
+Följande webbläsare, i den senaste versionen, är kompatibla med Campaign för webbåtkomst. Mer information finns i [dokumentationen för Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-create.html#use-the-web-interface-){target=_blank}.
 
 * Google Chrome
 * Microsoft Edge
@@ -487,8 +492,8 @@ Följande webbläsare, i den senaste versionen, är kompatibla med Campaign för
 
 >[!MORELIKETHIS]
 >
->* [Versionsinformation om Campaign Classic &#x200B;](../../rn/using/latest-release.md)
->* [Allmän arkitektur i Campaign](../../installation/using/general-architecture.md)
->* [Rekommendationer på maskinvarustorlek](../../technotes/using/hardware-sizing.md)
+>* [Versionsinformation om Campaign Classic](../../rn/using/latest-release.md)
+>* [Kampanjens allmänna arkitektur](../../installation/using/general-architecture.md)
+>* [Rekommendationer för storleksändring av maskinvara](../../technotes/using/hardware-sizing.md)
 >* [Inaktuella funktioner och system](../../rn/using/deprecated-features.md)
->* [Procedur för versionsuppgradering](../../production/using/build-upgrade.md)
+>* [Bygg uppgraderingsprocedur](../../production/using/build-upgrade.md)

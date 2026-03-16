@@ -6,9 +6,9 @@ feature: Release Notes
 role: User
 level: Beginner
 exl-id: d65869ca-a785-4327-8e8d-791c28e4696c
-source-git-commit: b10055781ff32fb30280adbea281ad9fbddb79e8
+source-git-commit: 66387e2e008051901fe3385f571d7fe798829100
 workflow-type: tm+mt
-source-wordcount: '276'
+source-wordcount: '281'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ På den här sidan visas nya funktioner, förbättringar och korrigeringar som i
 
 ## Version 7.4.3 - build 9392 {#release-7-4-3}
 
-[!BADGE Allmän tillgänglighet]{type=Positive url="https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/rn-overview.html?lang=sv-SE#rn-statuses" tooltip="Allmän tillgänglighet"}
+[!BADGE Allmän tillgänglighet]{type=Positive url="https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/rn-overview.html#rn-statuses" tooltip="Allmän tillgänglighet"}
 
 _16 mars 2026_
 
@@ -29,7 +29,7 @@ _16 mars 2026_
 
 ### Säkerhetsförbättringar {#security-7-4-3}
 
-* För att upprätthålla optimal säkerhet, stabilitet och efterlevnad har Debian uppgraderats till version 13 och PostgreSQL till version 17.
+* För att upprätthålla optimal säkerhet, stabilitet och efterlevnad har Debian uppgraderats till version 13 och PostgreSQL till version 17. Se [kompatibilitetsmatrisen](compatibility-matrix.md).
 
 ### Korrigeringar {#fixes-7-4-3}
 
