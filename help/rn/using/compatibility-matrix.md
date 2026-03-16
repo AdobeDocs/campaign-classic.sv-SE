@@ -481,7 +481,7 @@ Campaign-SDK är [föråldrat](deprecated-features.md) från och med Campaign v7
 
 ## Webbläsare {#Browsers}
 
-Följande webbläsare, i den senaste versionen, är kompatibla med Campaign för webbåtkomst. Mer information finns i [dokumentationen för Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-create.html#use-the-web-interface-){target=_blank}.
+Följande webbläsare, i den senaste versionen, är kompatibla med Campaign för webbåtkomst. Mer information finns i [dokumentationen för Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-create.html?lang=sv-SE#use-the-web-interface-){target=_blank}.
 
 * Google Chrome
 * Microsoft Edge

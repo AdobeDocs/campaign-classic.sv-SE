@@ -19,7 +19,7 @@ På den här sidan visas nya funktioner, förbättringar och korrigeringar som i
 
 ## Version 7.4.3 - build 9392 {#release-7-4-3}
 
-[!BADGE Allmän tillgänglighet]{type=Positive url="https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/rn-overview.html#rn-statuses" tooltip="Allmän tillgänglighet"}
+[!BADGE Allmän tillgänglighet]{type=Positive url="https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/rn-overview.html?lang=sv-SE#rn-statuses" tooltip="Allmän tillgänglighet"}
 
 _16 mars 2026_
 

@@ -18,7 +18,7 @@ ht-degree: 0%
 
 ### Bygge 9391 {#build-9391}
 
-[!BADGE Begränsad tillgänglighet]{type=Informative url="https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/rn-overview.html#rn-statuses" tooltip="Begränsad tillgänglighet"}
+[!BADGE Begränsad tillgänglighet]{type=Informative url="https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/rn-overview.html?lang=sv-SE#rn-statuses" tooltip="Begränsad tillgänglighet"}
 
 _12 maj 2025_
 
@@ -29,7 +29,7 @@ Den här versionen innehåller följande korrigeringar:
 
 ### Bygge 9390 {#build-9390}
 
-[!BADGE Allmän tillgänglighet]{type=Positive url="https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/rn-overview.html#rn-statuses" tooltip="Allmän tillgänglighet"}
+[!BADGE Allmän tillgänglighet]{type=Positive url="https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/rn-overview.html?lang=sv-SE#rn-statuses" tooltip="Allmän tillgänglighet"}
 
 _2 april 2025_
 
