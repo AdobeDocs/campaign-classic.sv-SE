@@ -6,7 +6,7 @@ feature: Release Notes
 role: User
 level: Beginner
 exl-id: d65869ca-a785-4327-8e8d-791c28e4696c
-source-git-commit: 66387e2e008051901fe3385f571d7fe798829100
+source-git-commit: b9a716f327b8fdd68c3bf36dbe864535308def30
 workflow-type: tm+mt
 source-wordcount: '281'
 ht-degree: 0%
@@ -17,9 +17,9 @@ ht-degree: 0%
 
 På den här sidan visas nya funktioner, förbättringar och korrigeringar som ingår i den **senaste Campaign Classic v7-utgåvan**. Varje ny version har en status som materialiseras av en färg. Läs mer om byggstatus för Campaign Classic v7 på [den här sidan](rn-overview.md).
 
-## Version 7.4.3 - build 9392 {#release-7-4-3}
+## Version 7.4.3 - build 9394 {#release-7-4-3}
 
-[!BADGE Allmän tillgänglighet]{type=Positive url="https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/rn-overview.html?lang=sv-SE#rn-statuses" tooltip="Allmän tillgänglighet"}
+[!BADGE Allmän tillgänglighet]{type=Positive url="https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/rn-overview.html#rn-statuses" tooltip="Allmän tillgänglighet"}
 
 _16 mars 2026_
 

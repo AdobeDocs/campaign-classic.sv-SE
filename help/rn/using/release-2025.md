@@ -5,7 +5,7 @@ description: Läs mer om Campaign Classic 2025-utgåvor
 feature: Release Notes
 role: User
 level: Beginner
-source-git-commit: 66387e2e008051901fe3385f571d7fe798829100
+source-git-commit: b9a716f327b8fdd68c3bf36dbe864535308def30
 workflow-type: tm+mt
 source-wordcount: '866'
 ht-degree: 0%
@@ -18,7 +18,7 @@ ht-degree: 0%
 
 ### Bygge 9391 {#build-9391}
 
-[!BADGE Begränsad tillgänglighet]{type=Informative url="https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/rn-overview.html?lang=sv-SE#rn-statuses" tooltip="Begränsad tillgänglighet"}
+[!BADGE Begränsad tillgänglighet]{type=Informative url="https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/rn-overview.html#rn-statuses" tooltip="Begränsad tillgänglighet"}
 
 _12 maj 2025_
 
@@ -29,7 +29,7 @@ Den här versionen innehåller följande korrigeringar:
 
 ### Bygge 9390 {#build-9390}
 
-[!BADGE Allmän tillgänglighet]{type=Positive url="https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/rn-overview.html?lang=sv-SE#rn-statuses" tooltip="Allmän tillgänglighet"}
+[!BADGE Allmän tillgänglighet]{type=Positive url="https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/rn-overview.html#rn-statuses" tooltip="Allmän tillgänglighet"}
 
 _2 april 2025_
 
