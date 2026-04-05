@@ -106,7 +106,7 @@ I det här avsnittet beskrivs en lösning för att konfigurera spårning och spe
 
 ### Kompatibilitetsmeddelande {#compatibility-note}
 
-Den här gamla varumärkningskonfigurationen är inte kompatibel med den nya [centraliserade ](https://experienceleague.adobe.com/docs/campaign-web/v8/conf/branding/branding-gs.html){target="_blank"}-modellen som introducerades i Campaign v8.
+Den här gamla varumärkningskonfigurationen är inte kompatibel med den nya [centraliserade &#x200B;](https://experienceleague.adobe.com/docs/campaign-web/v8/conf/branding/branding-gs.html){target="_blank"}-modellen som introducerades i Campaign v8.
 
 Om din befintliga miljö använder denna äldre konfiguration kan den inte migreras direkt till den nya centraliserade varumärkesmodellen. Det krävs en fullständig omimplementering av varumärkesinställningarna för att det nya systemet ska kunna användas.
 

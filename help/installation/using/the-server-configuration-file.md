@@ -1625,9 +1625,9 @@ Här är de olika parametrarna för noden **mta**. Detta är konfigurationen fö
    <td> statServerAddress<br /> </td> 
    <td> Adress till servern för leveransstatistik, angiven som 
     &lt;dns eller ip&gt; 
-      <code>[</code>: 
+      <code>&lbrack;</code>: 
      &lt;port&gt; 
-       <code>]</code>. Se 
+       <code>&rbrack;</code>. Se 
       <a href="../../installation/using/email-deliverability.md#coordinates-of-the-statistics-server" target="_blank">Koordinater för statistikservern</a>. 
       <br /> 
      </td> 
@@ -3380,7 +3380,7 @@ Mer information finns i det här [avsnittet](../../installation/using/deploying-
 
 Här är de olika parametrarna för noden **web > redirection > reserveServer** .
 
-Mer information finns i [Spårning av överflödiga ](../../installation/using/configuring-campaign-server.md#redundant-tracking).
+Mer information finns i [Spårning av överflödiga &#x200B;](../../installation/using/configuring-campaign-server.md#redundant-tracking).
 
 <table> 
  <thead> 
