@@ -67,9 +67,9 @@ För att underlätta sekretessberedskapen kan du med Adobe Campaign hantera för
 Mer information om hur du kan skapa **Access** - och **Delete**-begäranden och hur Adobe Campaign behandlar dem finns i [implementeringsstegen](../../platform/using/privacy-requests.md).
 
 <!--
-Tutorials on Privacy management in Campaign Standard are also available [here](https://experienceleague.adobe.com/docs/campaign-standard-learn/tutorials/privacy/privacy-overview.html).
+Tutorials on Privacy management in Campaign Standard are also available [here](https://experienceleague.adobe.com/docs/campaign-standard-learn/tutorials/privacy/privacy-overview.html?lang=sv-SE).
 
-https://experienceleague.adobe.com/docs/campaign-standard-learn/tutorials/privacy/privacy-overview.html
+https://experienceleague.adobe.com/docs/campaign-standard-learn/tutorials/privacy/privacy-overview.html?lang=sv-SE
 -->
 
 ## Samtycke, bevarande och roller {#consent-retention-roles}

@@ -36,7 +36,7 @@ För att göra detta överförs e-postfiler som motsvarar skickade e-postmeddela
 
 ## Aktiverar e-postkopia (lokalt) {#activating-email-archiving--on-premise-}
 
-[!BADGE Lokal och hybrid]{type=Caution url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html" tooltip="Gäller endast lokala och hybrida driftsättningar"}
+[!BADGE Lokal och hybrid]{type=Caution url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=sv-SE" tooltip="Gäller endast lokala och hybrida driftsättningar"}
 
 
 Följ stegen nedan för att aktivera arkivering av e-post i webbläsare när Adobe Campaign är installerat lokalt.
@@ -108,7 +108,7 @@ Se till att du justerar parametrarna efter e-postsändningens genomströmning. I
 
 ## Konfigurera e-postadressen för den lokala kopian (lokal) {#configuring-the-bcc-email-address--on-premise-}
 
-[!BADGE Lokal och hybrid]{type=Caution url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html" tooltip="Gäller endast lokala och hybrida driftsättningar"}
+[!BADGE Lokal och hybrid]{type=Caution url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=sv-SE" tooltip="Gäller endast lokala och hybrida driftsättningar"}
 
 
 >[!IMPORTANT]
@@ -135,7 +135,7 @@ I filen **config-`<instance name>.xml`** använder du följande parametrar för 
 <!--
 ## Moving to the new Email BCC {#updated-email-archiving-system--bcc-}
 
-[!BADGE On-premise & Hybrid]{type=Caution url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html" tooltip="Applies to on-premise and hybrid deployments only"}
+[!BADGE On-premise & Hybrid]{type=Caution url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=sv-SE" tooltip="Applies to on-premise and hybrid deployments only"}
 
 >[!IMPORTANT]
 >

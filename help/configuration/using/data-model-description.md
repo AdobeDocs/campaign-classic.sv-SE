@@ -113,7 +113,7 @@ Den här tabelluppsättningen är länkad till modulen **Leverans** som gör att
 
 ## Kampanjhantering {#campaign-management}
 
-Den här tabelluppsättningen är länkad till modulen **Marknadsföringskampanjer** som gör det möjligt att definiera, optimera, köra och analysera kommunikation och marknadsföringskampanjer. Mer information finns i [dokumentationen för Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/campaigns/campaigns.html){target=_blank}.
+Den här tabelluppsättningen är länkad till modulen **Marknadsföringskampanjer** som gör det möjligt att definiera, optimera, köra och analysera kommunikation och marknadsföringskampanjer. Mer information finns i [dokumentationen för Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/campaigns/campaigns.html?lang=sv-SE){target=_blank}.
 
 ![](assets/data-model_campaign.png)
 
@@ -129,7 +129,7 @@ Den här tabelluppsättningen är länkad till modulen **Marknadsföringskampanj
 
 ## Enhetlig kommunikation {#communication-consistency}
 
-Den här tabelluppsättningen är länkad till modulen **Kampanjoptimering** som gör att du kan styra, filtrera och övervaka leveransen. Se [Campaign v8-dokumentationen](https://experienceleague.adobe.com/docs/campaign/automation/campaign-optimization/campaign-typologies.html){target="_blank"}.
+Den här tabelluppsättningen är länkad till modulen **Kampanjoptimering** som gör att du kan styra, filtrera och övervaka leveransen. Se [Campaign v8-dokumentationen](https://experienceleague.adobe.com/docs/campaign/automation/campaign-optimization/campaign-typologies.html?lang=sv-SE){target="_blank"}.
 
 
 ![](assets/data-model_typology.png)

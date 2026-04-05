@@ -90,7 +90,7 @@ Uppgradering är en tvåstegsprocess:
 
 1. Själva uppgraderingen - produktionsmiljön har uppgraderats. Denna fas utförs vanligtvis på några timmar. I mycket komplexa miljöer bör man förvänta sig längre driftstopp. Om något går fel definieras en återställningsstrategi som kan utföras.
 
-Mer information finns i [det här dokumentet](https://helpx.adobe.com/campaign/kb/acc-build-upgrade.html).
+Mer information finns i [det här dokumentet](https://helpx.adobe.com/se/campaign/kb/acc-build-upgrade.html).
 
 ## Vilka resurser behövs för uppgraderingen?
 
@@ -179,7 +179,7 @@ Ja. Servern stängs av under en uppgradering för att säkerställa att datainte
 
 ## Vem ska jag kontakta för att öppna uppgraderingsbiljetten?
 
-Kontakta [Adobe kundtjänst](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) om du får problem efter en bygguppgradering. Kundtjänst schemalägger byggdatum och öppnar biljetter relaterade till uppgraderingar.
+Kontakta [Adobe kundtjänst](https://helpx.adobe.com/se/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) om du får problem efter en bygguppgradering. Kundtjänst schemalägger byggdatum och öppnar biljetter relaterade till uppgraderingar.
 
 Läs mer i [Hjälp- och supportalternativ för Campaign Classic](../../support.md)
 
