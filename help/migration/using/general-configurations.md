@@ -9,9 +9,9 @@ topic-tags: configuration
 hide: true
 hidefromtoc: true
 exl-id: 7aad0e49-8d9c-40c7-9d6a-42fee0ae5870
-source-git-commit: 349c3dfd936527e50d7d3e03aa3408b395502da0
+source-git-commit: 647709dd4b0c70c342be03d3012bc02f10ff2c00
 workflow-type: tm+mt
-source-wordcount: '2558'
+source-wordcount: '2517'
 ht-degree: 0%
 
 ---
@@ -31,7 +31,7 @@ Dessutom:
 
 I v6.02 var läget &quot;multi time zone&quot; bara tillgängligt för PostgreSQL-databasmotorer. Det erbjuds nu oavsett vilken typ av databasmotor som används. Vi rekommenderar att du omvandlar din bas till en&quot;multi-timezone&quot;-bas.
 
-Om du vill använda TIMESTAMP MED TIMEZONE-läge måste du även lägga till alternativet **-userTimestamptz:1** på kommandoraden efter uppgradering.
+Om du vill använda TIMESTAMP MED TIMEZONE-läge måste du också lägga till alternativet **-userTimestamptz:1** på kommandoraden efter uppgradering.
 
 >[!IMPORTANT]
 >
@@ -45,7 +45,7 @@ Om du vill använda TIMESTAMP MED TIMEZONE-läge måste du även lägga till alt
 
 ### Oracle {#oracle}
 
-Om du får ett **ORA 01805**-fel under efteruppgraderingen innebär det att Oraclets tidszonsfiler mellan programservern och databasservern inte är synkroniserade. Så här synkroniserar du dem igen:
+Om du får ett **ORA 01805** -fel under efteruppgraderingen innebär det att Oracle-tidszonsfilerna mellan programservern och databasservern inte är synkroniserade. Så här synkroniserar du dem igen:
 
 1. Kör följande kommando för att identifiera tidszonsfilen som används:
 
@@ -53,13 +53,13 @@ Om du får ett **ORA 01805**-fel under efteruppgraderingen innebär det att Orac
    select * from v$timezone_file
    ```
 
-   Tidszonsfiler finns vanligtvis i mappen **ORACLE_HOME/oracore/zoneinfo/**.
+   Tidszonsfiler finns vanligtvis i mappen **ORACLE_HOME/oracore/zoneinfo/** .
 
 1. Kontrollera att tidszonsfilerna är identiska på båda servrarna.
 
 Mer information finns på: [https://docs.oracle.com/cd/E11882_01/server.112/e10729/ch4datetime.htm#NLSPG004](https://docs.oracle.com/cd/E11882_01/server.112/e10729/ch4datetime.htm#NLSPG004).
 
-En felpassning av tidszonen mellan klienten och servern kan också orsaka vissa förluster. Därför rekommenderar vi att du använder samma version av Oraclena på klient- och serversidan. Båda tidszonerna måste vara desamma.
+En felpassning av tidszonen mellan klienten och servern kan också orsaka vissa förluster. Därför rekommenderar vi att du använder samma version av Oracle-biblioteket på klient- och serversidan. Båda tidszonerna måste vara desamma.
 
 Så här kontrollerar du om båda sidorna finns i samma tidszoner:
 
@@ -119,19 +119,19 @@ nlserver config -internalpassword
 
 Vissa färdiga scheman har ändrats och är nu som standard bara tillgängliga med skrivåtkomst för operatorer med behörigheten **admin**:
 
-* ncm:publicera
-* nl:övervakning
-* nms:kalender
+* ncm:publishing
+* nl:monitoring
+* nms:calendar
 * xtk:builder
-* xtk:anslutningar
+* xtk:connections
 * xtk:dbInit
 * xtk:entityBackupNew
 * xtk:entityBackupOriginal
 * xtk:entityOriginal
-* xtk:formulär
+* xtk:form
 * xtk:funcList
 * xtk:fusion
-* xtk:bild
+* xtk:image
 * xtk:javascript
 * xtk:jssp
 * xtk:jst
@@ -140,19 +140,19 @@ Vissa färdiga scheman har ändrats och är nu som standard bara tillgängliga m
 * xtk:package
 * xtk:queryDef
 * xtk:resourceMenu
-* xtk:rättigheter
+* xtk:rights
 * xtk:schema
 * xtk:scriptContext
 * xtk:specFile
 * xtk:sql
 * xtk:sqlSchema
 * xtk:srcSchema
-* xtk:strängar
+* xtk:strings
 * xtk:xslt
 
 ### Sessiontoken-parameter {#sessiontoken-parameter}
 
-I v5 fungerade parametern **sessiontoken** på båda klientsidorna (lista med översiktstypsskärmar, länkredigerare osv.) och serversidan (webbprogram, rapporter, jsp, jssp, osv.). I v7 fungerar den bara på serversidan. Om du vill återgå till full funktionalitet som i v5 måste du ändra länkarna med den här parametern och skicka via anslutningssidan:
+I v5 fungerade parametern **sessiontoken** både på klientsidan (lista med översiktstypsskärmar, ländredigerare osv.) och på serversidan (webbprogram, rapporter, jsp, jssp, osv.). I v7 fungerar den bara på serversidan. Om du vill återgå till full funktionalitet som i v5 måste du ändra länkarna med den här parametern och skicka via anslutningssidan:
 
 Länkexempel:
 
@@ -184,7 +184,7 @@ Om du vill tillåta åtkomst till vissa sidor via HTTP-protokollet (inte HTTPS),
 
 Om du använder anonyma JSSP:er måste du lägga till parametern **httpAllowed=&quot;true&quot;** i en reläregel för JSSP-filen (**[!UICONTROL serverConf.xml]** fil):
 
-Exempel:
+Till exempel:
 
 ```
 <url IPMask="" deny="" hostMask="" httpAllowed="true" relayHost="true" relayPath="true"
@@ -426,7 +426,7 @@ Efter resurssynkroniseringen kan du med kommandot **postupgrade** identifiera om
 
 Synkroniseringsresultatet kan visas på två sätt:
 
-* I kommandoradsgränssnittet materialiseras fel av en trippelkniv **>>>** och synkroniseringen stoppas automatiskt. Varningar materialiseras av en dubbel skiftning **>>** och måste matchas när synkroniseringen är klar. När uppgraderingen är klar visas en sammanfattning i kommandotolken. Exempel:
+* I kommandoradsgränssnittet materialiseras fel av en trippelkniv **>>>** och synkroniseringen stoppas automatiskt. Varningar materialiseras av en dubbel skiftning **>>** och måste matchas när synkroniseringen är klar. När uppgraderingen är klar visas en sammanfattning i kommandotolken. Till exempel:
 
   ```
   AAAA-MM-DD HH:MM:SS.749Z        00002E7A          1     info    log     =========Summary of the update==========
@@ -491,7 +491,7 @@ $(XTK_INSTALL_DIR)/tomcat-X/lib/el-api.jar
 
 ## Interaktion {#interaction}
 
-### Förhandskrav {#prerequisites}
+### Förutsättningar {#prerequisites}
 
 **Innan efteruppgraderingen** måste du ta bort alla schemareferenser från 6.02 som inte längre finns i v7.
 
@@ -591,7 +591,7 @@ Så här gör du när du har flyttat erbjudandeinnehållet om du bara har en mil
 
    ![](assets/migration_interaction_2.png)
 
-1. Välj **[!UICONTROL Live]** i fältet **[!UICONTROL Type of Environment]** på fliken **[!UICONTROL General]**.
+1. Välj **[!UICONTROL Type of Environment]** i fältet **[!UICONTROL General]** på fliken **[!UICONTROL Live]**.
 
    ![](assets/migration_interaction_3.png)
 
@@ -623,11 +623,12 @@ Alla standardrapporter använder för närvarande återgivningsmotorn v6.x. Om d
 
 ### Personaliserade rapporter {#personalized-reports}
 
-<!--If you want to have the blue banner from v7 (allowing you access to the tabs), you must republish reports. If you encounter problems, you can force the v6.0 rendering engine. To do this, go to **[!UICONTROL Properties]** within the report, click **[!UICONTROL Rendering]** and choose the **[!UICONTROL Version 6.0 (Flash & OpenOffice)]** rendering engine.
+<!--
+If you want to have the blue banner from v7 (allowing you access to the tabs), you must republish reports. If you encounter problems, you can force the v6.0 rendering engine. To do this, go to **[!UICONTROL Properties]** within the report, click **[!UICONTROL Rendering]** and choose the **[!UICONTROL Version 6.0 (Flash & OpenOffice)]** rendering engine.
 
 ![](assets/migration_reports_1.png)
 -->
-Om du vill dra nytta av de nya rapportfunktionerna måste du publicera om rapporterna. I det här fallet kontrollerar du alla skript och ändrar dem om det behövs. När det gäller export från PDF kommer detta inte längre att fungera med den nya exportmotorn PDF (PhantomJS) om du har lagt till ett särskilt skript för Open Office.
+Om du vill dra nytta av de nya rapportfunktionerna måste du publicera om rapporterna. I det här fallet kontrollerar du alla skript och ändrar dem om det behövs. När det gäller PDF-export kommer detta inte längre att fungera med den nya PDF-exportmotorn (PhantomJS) om du har lagt till ett specifikt skript för Open Office.
 
 ## Webbprogram {#web-applications}
 

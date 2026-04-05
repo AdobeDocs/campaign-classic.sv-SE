@@ -8,10 +8,10 @@ audience: integrations
 content-type: reference
 topic-tags: audience-sharing
 exl-id: f3c19fcd-12cb-4ca3-b4b7-7dc4be57f4ea
-source-git-commit: 7b4fbefe0f6bd26ee9260d15e8303f716af7ac96
+source-git-commit: 647709dd4b0c70c342be03d3012bc02f10ff2c00
 workflow-type: tm+mt
 source-wordcount: '130'
-ht-degree: 2%
+ht-degree: 1%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 2%
 >
 >Som v7-användare måste Adobe Identity Management System (IMS) vara aktiverat på datorn för att kunna fortsätta. [Läs mer](../../integrations/using/about-adobe-id.md).
 
-När Adobe Identity Management-tjänsten (IMS) har aktiverats för din organisation kan du begära etablering av [Experience Cloud-målgruppsintegreringen](https://experienceleague.adobe.com/sv/docs/core-services/interface/services/audiences/overview){target="_blank"} med Campaign. Kontakta Adobe och lämna följande uppgifter:
+När Adobe Identity Management-tjänsten (IMS) har aktiverats för din organisation kan du begära etablering av [Experience Cloud Audience](https://experienceleague.adobe.com/en/docs/core-services/interface/services/audiences/overview){target="_blank"} -integreringen med Campaign. Kontakta Adobe och lämna följande uppgifter:
 
 <table> 
  <tbody> 
@@ -35,16 +35,18 @@ När Adobe Identity Management-tjänsten (IMS) har aktiverats för din organisat
   </tr> 
   <tr> 
    <td> <strong>Organisations-ID</strong><br /> </td> 
-   <td> Ditt företags-ID. <br> Information om hur du hittar ditt organisations-ID finns på <a href="https://experienceleague.adobe.com/docs/core-services/interface/administration/organizations.html?lang=sv">den här sidan</a></td> 
+   <td> Ditt företags-ID. <br> Information om hur du hittar ditt organisations-ID finns på <a href="https://experienceleague.adobe.com/docs/core-services/interface/administration/organizations.html">den här sidan</a></td> 
   </tr> 
   <tr> 
    <td> <strong>Miljö</strong><br /> </td> 
    <td> Exempel: Produktion </td> 
   </tr> 
-  <!--tr> 
+  <!--
+  tr> 
    <td> <strong>AAM or People Service</strong><br /> </td> 
    <td> Example: Adobe Audience Manager. Make sure to mention whether or not you own Audience Manager license.</td> 
-  </tr--> 
+  </tr
+  --> 
   <tr> 
    <td> <strong>Deklarerat ID eller besökar-ID</strong><br /> </td> 
    <td> Exempel: Deklarerat ID </td> 

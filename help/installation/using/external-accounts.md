@@ -7,18 +7,18 @@ audience: platform
 content-type: reference
 topic-tags: administration-basics
 exl-id: 4a17d5e8-c73f-42e7-b641-0fee6a52c5c0
-source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
+source-git-commit: 647709dd4b0c70c342be03d3012bc02f10ff2c00
 workflow-type: tm+mt
 source-wordcount: '1791'
-ht-degree: 5%
+ht-degree: 0%
 
 ---
 
 # Externa konton{#external-accounts}
 
-Adobe Campaign innehåller en uppsättning fördefinierade externa konton. Om du vill konfigurera anslutningar med externa system kan du skapa nya externa konton.
+Adobe Campaign levereras med en uppsättning fördefinierade externa konton. Om du vill konfigurera anslutningar med externa system kan du skapa nya externa konton.
 
-Externa konton används av tekniska processer som tekniska arbetsflöden eller Campaign-arbetsflöden. Om du till exempel konfigurerar en filöverföring i ett arbetsflöde eller ett datautbyte med något annat program (Adobe Target, Experience Manager, osv.) måste du välja ett externt konto.
+Externa konton används av tekniska processer som tekniska arbetsflöden eller kampanjarbetsflöden. Om du till exempel konfigurerar en filöverföring i ett arbetsflöde eller ett datautbyte med något annat program (Adobe Target, Experience Manager, osv.) måste du välja ett externt konto.
 
 ## Skapa ett externt konto {#creating-an-external-account}
 
@@ -36,7 +36,7 @@ Följ stegen nedan om du vill skapa ett nytt externt konto. Detaljerade inställ
 1. Välj det externa kontot **[!UICONTROL Type]** som du vill skapa.
 1. Konfigurera åtkomsten till kontot genom att ange autentiseringsuppgifter beroende på vald extern kontotyp.
 
-   Den nödvändiga informationen tillhandahålls vanligtvis av leverantören för den server som du ansluter till.
+   Den nödvändiga informationen tillhandahålls vanligtvis av providern för den server som du ansluter till.
 
 1. Markera alternativet **[!UICONTROL Enabled]** om du vill aktivera anslutningen.
 1. Klicka på **[!UICONTROL Save]**.
@@ -47,7 +47,7 @@ Det externa kontot skapas och läggs till i listan över externa konton.
 
 ### Studsa e-post {#bounce-mails-external-account}
 
-Det externa **studs-e-postkontot** anger det externa POP3-kontot som ska användas för att ansluta till e-posttjänsten. Mer information om det här externa kontot finns i [dokumentationen för Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/event-activities/inbound-emails.html?lang=sv-SE){target="_blank"}.
+Det externa **studs-e-postkontot** anger det externa POP3-kontot som ska användas för att ansluta till e-posttjänsten. Mer information om det här externa kontot finns i [dokumentationen för Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/event-activities/inbound-emails.html){target="_blank"}.
 
 Alla servrar som konfigurerats för POP3-åtkomst kan användas för att ta emot returmeddelanden.
 
@@ -87,11 +87,11 @@ Om du vill konfigurera en extern POP3 med **Microsoft OAuth 2.0** markerar du al
 
 * **[!UICONTROL Azure tenant]**
 
-  Azure ID (eller katalog (klientorganisations-ID) finns i listrutan **Grundläggande** i programöversikten i Azure-portalen.
+  Azure-id (eller klient-ID) finns i listrutan **Grundläggande** i programöversikten på Azure-portalen.
 
 * **[!UICONTROL Azure Client ID]**
 
-  Klient-ID (eller program-ID (klient)) finns i listrutan **Grundläggande** i programöversikten i Azure-portalen.
+  Klient-ID (eller program-ID (klient)) finns i listrutan **Grundläggande** i programöversikten på Azure-portalen.
 
 * **[!UICONTROL Azure Client secret]**
 
@@ -99,7 +99,7 @@ Om du vill konfigurera en extern POP3 med **Microsoft OAuth 2.0** markerar du al
 
 * **[!UICONTROL Azure Redirect URL]**
 
-  Omdirigerings-URL:en finns på menyn **Autentisering** för ditt program i Azure-portalen. Den ska sluta med följande syntax `nl/jsp/oauth.jsp`, t.ex. `https://redirect.adobe.net/nl/jsp/oauth.jsp`.
+  Omdirigerings-URL:en finns på menyn **Autentisering** i ditt program på Azure-portalen. Den ska sluta med följande syntax `nl/jsp/oauth.jsp`, t.ex. `https://redirect.adobe.net/nl/jsp/oauth.jsp`.
 
 Internetåtkomst krävs för installation och för att använda knappen **[!UICONTROL Test Connection]** i klientkonsolen. Efter installationen kan inMail-processen kommunicera med Microsoft-servrar utan Internet.
 
@@ -116,10 +116,10 @@ Följande kanaler kan konfigureras:
 * [E-post](#email-routing-external-account)
 * [Mobil (SMS)](../../delivery/using/sms-set-up.md#creating-an-smpp-external-account)
 * [Telefon](../../delivery/using/communication-channels.md#other-channels)
-* [Direktmeddelande](../../delivery/using/about-direct-mail-channel.md)
+* [Direktreklam](../../delivery/using/about-direct-mail-channel.md)
 * [Byrå](../../delivery/using/communication-channels.md#other-channels)
 * [X (tidigare Twitter)](../../social/using/about-social-marketing.md)
-* [iOS- och Android-kanaler](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/push/push-settings.html?lang=sv-SE){target="_blank"}
+* [iOS- och Android-kanaler](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/push/push-settings.html){target="_blank"}
 
 ### E-postroutning {#email-routing-external-account}
 
@@ -159,7 +159,7 @@ Mer information om den här konfigurationen finns på [sidan](../../message-cent
 
 ### FTP {#ftp-external-account}
 
-Med det externa FTP-kontot kan du konfigurera och testa åtkomst till en server utanför Adobe Campaign. Om du vill konfigurera anslutningar med externa system, t.ex. FTP-servrar 898 som används för filöverföringar, kan du skapa egna externa konton. Mer information finns i [dokumentationen för Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/event-activities/file-transfer.html?lang=sv-SE){target="_blank"}.
+Med det externa FTP-kontot kan du konfigurera och testa åtkomst till en server utanför Adobe Campaign. Om du vill konfigurera anslutningar med externa system, t.ex. FTP-servrar 898 som används för filöverföringar, kan du skapa egna externa konton. Mer information finns i [dokumentationen för Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/event-activities/file-transfer.html){target="_blank"}.
 
 Om du vill göra det anger du den adress och de autentiseringsuppgifter som ska användas för att upprätta anslutningen till FTP-servern i det här externa kontot
 
@@ -189,7 +189,7 @@ Om du vill veta var du hittar de här autentiseringsuppgifterna kan du gå till 
 
 ### SFTP {#sftp-external-account}
 
-Med det externa SFTP-kontot kan du konfigurera och testa åtkomst till en server utanför Adobe Campaign. Om du vill konfigurera anslutningar till externa system, t.ex. SFTP, som används för filöverföringar, kan du skapa egna externa konton. Mer information finns i [dokumentationen för Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/event-activities/file-transfer.html?lang=sv-SE){target="_blank"}.
+Med det externa SFTP-kontot kan du konfigurera och testa åtkomst till en server utanför Adobe Campaign. Om du vill konfigurera anslutningar till externa system, t.ex. SFTP, som används för filöverföringar, kan du skapa egna externa konton. Mer information finns i [dokumentationen för Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/event-activities/file-transfer.html){target="_blank"}.
 
 ![](assets/ext_account_4.png)
 
@@ -209,7 +209,8 @@ Med det externa SFTP-kontot kan du konfigurera och testa åtkomst till en server
 
   Lösenord som används för att ansluta till SFTP-servern.
 
-<!--To add SSH keys on Windows:
+<!--
+To add SSH keys on Windows:
 
 1. Create the **HOME** environment variable with value set as the installation directory.
 
@@ -271,7 +272,7 @@ Om du vill ansluta till Adobe Campaign-konsolen med en Adobe ID måste du konfig
 
 * **[!UICONTROL IMS organization ID]**
 
-  ID för din organisation. Information om hur du hittar ditt organisations-ID finns på [den här sidan](https://experienceleague.adobe.com/docs/core-services/interface/administration/organizations.html?lang=sv){_blank}.
+  ID för din organisation. Information om hur du hittar ditt organisations-ID finns på [den här sidan](https://experienceleague.adobe.com/docs/core-services/interface/administration/organizations.html){_blank}.
 
 * **[!UICONTROL Association mask]**
 
@@ -293,7 +294,7 @@ Med det externa kontot **[!UICONTROL Web Analytics]** kan du vidarebefordra data
 
 ![](assets/ext_account_10.png)
 
-För det här externa kontot måste beräkningsformeln för spårade URL:er förbättras och anslutningen mellan de två lösningarna måste godkännas. Se denna [sida](../../integrations/using/gs-aa.md) för mer information om detta.
+För det här externa kontot måste beräkningsformeln för spårade URL:er förbättras och anslutningen mellan de två lösningarna måste godkännas. Mer information finns på [sidan](../../integrations/using/gs-aa.md).
 
 ### Adobe Experience Manager {#adobe-experience-manager-external-account}
 
@@ -313,7 +314,7 @@ Med det externa kontot **[!UICONTROL AEM (AEM instance)]** kan du hantera inneh�
 
   Lösenord som används för att ansluta till Adobe Experience Manager-redigeringsinstansen.
 
-Mer information om detta hittar du i det här [avsnittet](../../integrations/using/about-adobe-experience-manager.md).
+Mer information finns i [avsnittet](../../integrations/using/about-adobe-experience-manager.md).
 
 ## Externa konton för CRM Connector
 
@@ -343,7 +344,7 @@ Med distributionstypen **[!UICONTROL Web API]** och autentiseringen **[!UICONTRO
 
 * **[!UICONTROL Client identifier]**
 
-  Klient-ID som kan hittas från Microsoft Azure-hanteringsportalen i fältet **[!UICONTROL Update your code]**, **[!UICONTROL Client ID]**.
+  Klient-ID som finns på Microsoft Azure hanteringsportal i fältet **[!UICONTROL Update your code]**, **[!UICONTROL Client ID]**.
 
 * **[!UICONTROL CRM version]**
 
@@ -371,7 +372,7 @@ Med distributionstypen **[!UICONTROL Web API]** och autentiseringen **[!UICONTRO
 
 * **[!UICONTROL Client identifier]**
 
-  Klient-ID som kan hittas från Microsoft Azure-hanteringsportalen i fältet **[!UICONTROL Update your code]**, **[!UICONTROL Client ID]**.
+  Klient-ID som finns på Microsoft Azure hanteringsportal i fältet **[!UICONTROL Update your code]**, **[!UICONTROL Client ID]**.
 
 * **[!UICONTROL CRM version]**
 
@@ -415,7 +416,7 @@ Mer information om den här konfigurationen finns på [sidan](../../platform/usi
 
 ### Amazon Simple Storage Service (S3) {#amazon-simple-storage-service--s3--external-account}
 
-Kopplingen Amazon Simple Storage Service (S3) kan användas för att importera eller exportera data till Adobe Campaign. Den kan ställas in i en arbetsflödesaktivitet. läs [Campaign v8-dokumentationen](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/event-activities/file-transfer.html?lang=sv-SE){target="_blank"}.
+Kopplingen Amazon Simple Storage Service (S3) kan användas för att importera eller exportera data till Adobe Campaign. Den kan ställas in i en arbetsflödesaktivitet. läs [Campaign v8-dokumentationen](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/event-activities/file-transfer.html){target="_blank"}.
 
 ![](assets/ext_account_3.png)
 
@@ -447,7 +448,7 @@ Mer information om var du hittar åtkomstnyckel-ID och hemlig åtkomstnyckel fin
 
 ### Azure Blob Storage {#azure-blob-external-account}
 
-Det externa **Azure Blob Storage**-kontot kan användas för att importera eller exportera data till Adobe Campaign med hjälp av en **[!UICONTROL Transfer file]**-arbetsflödesaktivitet. läs [Campaign v8-dokumentationen](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/event-activities/file-transfer.html?lang=sv-SE){target="_blank"}.
+Det externa kontot **Azure Blob Storage** kan användas för att importera eller exportera data till Adobe Campaign med hjälp av en **[!UICONTROL Transfer file]** -arbetsflödesaktivitet. läs [Campaign v8-dokumentationen](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/event-activities/file-transfer.html){target="_blank"}.
 
 ![](assets/ext_account_23.png)
 
@@ -455,7 +456,7 @@ Om du vill konfigurera **[!UICONTROL Azure external account]** så att den funge
 
 * **[!UICONTROL Server]**
 
-  URL för din Azure Blob-lagringsserver.
+  URL för Azure Blob Storage Server.
 
 * **[!UICONTROL Encryption]**
 

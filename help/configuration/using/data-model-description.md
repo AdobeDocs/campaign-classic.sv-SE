@@ -5,17 +5,17 @@ description: Detta dokument beskriver Adobe Campaign datamodell
 feature: Data Model
 role: Developer
 exl-id: fc0fd23c-f9ea-4e30-b47b-a84143d882ca
-source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
+source-git-commit: 647709dd4b0c70c342be03d3012bc02f10ff2c00
 workflow-type: tm+mt
 source-wordcount: '2354'
-ht-degree: 1%
+ht-degree: 0%
 
 ---
 
 # Beskrivning av kampanjdatamodell{#data-model-description}
 
 
-Adobe Campaign innehåller en fördefinierad datamodell. I det här avsnittet finns mer information om de inbyggda tabellerna i Adobe Campaign datamodell och hur de fungerar.
+Adobe Campaign levereras med en fördefinierad datamodell. I det här avsnittet finns mer information om de inbyggda tabellerna i Adobe Campaign datamodell och hur de fungerar.
 
 Gå till **[!UICONTROL Admin > Configuration > Data schemas]**, markera en resurs i listan och klicka på fliken **[!UICONTROL Documentation]** om du vill komma åt beskrivningen av varje tabell.
 
@@ -23,7 +23,7 @@ Gå till **[!UICONTROL Admin > Configuration > Data schemas]**, markera en resur
 
 >[!NOTE]
 >
->Den fysiska och logiska strukturen hos de data som medföljer programmet beskrivs i XML. Den följer en grammatik som är specifik för Adobe Campaign och som kallas för ett schema. Mer information om Adobe Campaign-scheman finns i [det här avsnittet](../../configuration/using/about-schema-reference.md).
+>Den fysiska och logiska strukturen hos de data som medföljer programmet beskrivs i XML. Den lyder under en grammatik som är specifik för Adobe Campaign och som kallas schema. Mer information om Adobe Campaign-scheman finns i [det här avsnittet](../../configuration/using/about-schema-reference.md).
 
 ## Beskrivning av huvudtabellerna {#description-main-tables}
 
@@ -113,7 +113,7 @@ Den här tabelluppsättningen är länkad till modulen **Leverans** som gör att
 
 ## Kampanjhantering {#campaign-management}
 
-Den här tabelluppsättningen är länkad till modulen **Marknadsföringskampanjer** som gör det möjligt att definiera, optimera, köra och analysera kommunikation och marknadsföringskampanjer. Mer information om detta hittar du i [dokumentationen för Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/campaigns/campaigns.html?lang=sv-SE){target=_blank}.
+Den här tabelluppsättningen är länkad till modulen **Marknadsföringskampanjer** som gör det möjligt att definiera, optimera, köra och analysera kommunikation och marknadsföringskampanjer. Mer information finns i [dokumentationen för Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/campaigns/campaigns.html){target=_blank}.
 
 ![](assets/data-model_campaign.png)
 
@@ -129,7 +129,7 @@ Den här tabelluppsättningen är länkad till modulen **Marknadsföringskampanj
 
 ## Enhetlig kommunikation {#communication-consistency}
 
-Den här tabelluppsättningen är länkad till modulen **Kampanjoptimering** som gör att du kan styra, filtrera och övervaka leveransen. Se [Campaign v8-dokumentationen](https://experienceleague.adobe.com/docs/campaign/automation/campaign-optimization/campaign-typologies.html?lang=sv-SE){target="_blank"}.
+Den här tabelluppsättningen är länkad till modulen **Kampanjoptimering** som gör att du kan styra, filtrera och övervaka leveransen. Se [Campaign v8-dokumentationen](https://experienceleague.adobe.com/docs/campaign/automation/campaign-optimization/campaign-typologies.html){target="_blank"}.
 
 
 ![](assets/data-model_typology.png)
@@ -238,7 +238,8 @@ Tabellen matchar schemat **nms:rtEvent**. Den innehåller en definition av händ
 
 Tabellen matchar schemat **nms:batchEvent**. Den innehåller definitionen av händelser per grupp.
 
-<!--## Microsites Module {#microsites-module}
+<!--
+## Microsites Module {#microsites-module}
 
 This set of tables is linked to the **Web applications** functionality, which allows to create and publish dynamic and interactive web applications with data from the database and content adapted to the rights of the connected user. For more on this, see [About web applications](../../web/using/about-web-applications.md).
 
@@ -246,7 +247,8 @@ This set of tables is linked to the **Web applications** functionality, which al
 
 * **NmsTrackingUrl**: This table matches the **nms:trackingUrl** schema.
 
-* **NmsPurl**: This table matches the **nms:purl** schema.-->
+* **NmsPurl**: This table matches the **nms:purl** schema.
+-->
 
 ## NMAC-modul {#nmac-module}
 

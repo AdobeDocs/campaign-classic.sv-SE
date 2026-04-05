@@ -5,10 +5,10 @@ description: Läs mer om avancerade funktioner när du arbetar med rapporter
 feature: Reporting, Monitoring
 badge-v8: label="Gäller även för v8" type="Positive" tooltip="Gäller även Campaign v8"
 exl-id: 8b51d0fc-1692-41cd-9aa8-3bb8f4ee454e
-source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
+source-git-commit: 647709dd4b0c70c342be03d3012bc02f10ff2c00
 workflow-type: tm+mt
 source-wordcount: '610'
-ht-degree: 4%
+ht-degree: 0%
 
 ---
 
@@ -44,7 +44,7 @@ Så här gör du:
 
    ![](assets/reporting_custom_js.png)
 
-För normal körning på klientsidan måste de refererade skripten skrivas i JavaScript och vara kompatibla med vanliga webbläsare. Mer information om detta finns i [det här avsnittet](../../web/using/web-forms-answers.md).
+För normal körning på klientsidan måste de refererade skripten skrivas i JavaScript och vara kompatibla med vanliga webbläsare. Mer information finns i [det här avsnittet](../../web/using/web-forms-answers.md).
 
 ### Lägga till en skriptaktivitet {#script-activity}
 
@@ -90,7 +90,7 @@ Så här skapar du en ny inställning:
 
    Med alternativet **[!UICONTROL Variable]** kan du skapa eller välja en variabel som skickas som en parameter för URL:en och som kan användas i filtren.
 
-Med **[!UICONTROL Response HTTP headers]** kan du förhindra clickjacking när du inkluderar rapportens sida på en HTML-sida med iframe. Du kan undvika clickjacking genom att välja beteendet **[!UICONTROL X-Frame-options header]**:
+Med **[!UICONTROL Response HTTP headers]** kan du förhindra clickjacking när du inkluderar rapportsidan på en HTML-sida med iframe. Du kan undvika clickjacking genom att välja beteendet **[!UICONTROL X-Frame-options header]**:
 
 * **[!UICONTROL None]**: Rapporten kommer inte att ha **[!UICONTROL X-Frame-options header]**.
 * **[!UICONTROL Same as origin]**: Ange som standard för nya rapporter och ompublicerade rapporter. Värdnamnet är samma som rapportens URL.
@@ -113,7 +113,8 @@ Om du vill visa definitionen för en variabel markerar du den och klickar på kn
 I videoexemplet nedan får du lära dig hur du lägger till en &quot;_type&quot;-parameter för att skapa olika vyer av en rapport utifrån värdet för det här attributet.
 
 <!--
-![](assets/do-not-localize/how-to-video.png) [Discover this feature in video](https://helpx.adobe.com/campaign/classic/how-to/add-url-parameter-in-acv6.html?playlist=/ccx/v1/collection/product/campaign/classic/segment/business-practitioners/explevel/intermediate/applaunch/how-to-4/collection.ccx.js&ref=helpx.adobe.com)-->
+![](assets/do-not-localize/how-to-video.png) [Discover this feature in video](https://helpx.adobe.com/campaign/classic/how-to/add-url-parameter-in-acv6.html?playlist=/ccx/v1/collection/product/campaign/classic/segment/business-practitioners/explevel/intermediate/applaunch/how-to-4/collection.ccx.js&ref=helpx.adobe.com)
+-->
 
 
 ## Anropa en annan rapport {#calling-up-another-report}

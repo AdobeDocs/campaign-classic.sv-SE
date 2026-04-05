@@ -1,13 +1,13 @@
 ---
 product: campaign
-title: Vanliga frågor och svar om builduppgradering
+title: Vanliga frågor om uppgradering av bygge
 description: Vanliga frågor om bygguppgraderingar av Campaign Classic v7
 feature: Upgrade, Troubleshooting
 audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: 85e2135d-a1a3-44f0-a4f9-de38db5c8726
-source-git-commit: 295e3596d9291cbcc55e2d264309141526c3806b
+source-git-commit: 647709dd4b0c70c342be03d3012bc02f10ff2c00
 workflow-type: tm+mt
 source-wordcount: '2066'
 ht-degree: 0%
@@ -20,7 +20,7 @@ Här finns frågor och svar om Campaign Classic v7-uppgraderingar, särskilt fö
 
 >[!NOTE]
 >
->Omfattande svar på vanliga Campaign-frågor om arbetsflöden, leveranser, målgrupper med mera finns i [Vanliga frågor om Campaign v8 &#x200B;](https://experienceleague.adobe.com/docs/campaign/campaign-v8/start/campaign-faq-comprehensive.html){target="_blank"}.
+>Omfattande svar på vanliga Campaign-frågor om arbetsflöden, leveranser, målgrupper med mera finns i [Vanliga frågor om Campaign v8 ](https://experienceleague.adobe.com/docs/campaign/campaign-v8/start/campaign-faq-comprehensive.html){target="_blank"}.
 
 Adobe Campaign uppdateras regelbundet. Om du känner till vår publicerade [versionsinformation](../../rn/using/rn-overview.md) är du antagligen medveten om att i genomsnitt 2/3 mindre versioner packade med nya funktioner släpps förbättringar och korrigeringar varje år. Dessutom släpper vi regelbundet bara byggen med kumulativa korrigeringar. Denna regelbundna uppdateringsfrekvens syftar till att få den senaste och bästa informationen i händerna, så att miljön är helt säker och så tydligt som möjligt förbättrar upplevelsen av vår produkt.
 
@@ -67,7 +67,8 @@ Med serverinformationen från skärmbilden i föregående avsnitt kan du till ex
 Adobe kommer att göra en säkerhetskopia av ditt system innan några ändringar görs. Men om det finns viktiga anpassningsarbeten i ditt icke-produktionssystem (utvecklings- eller testservrar) rekommenderar vi att du exporterar dessa som ett paket före en uppgradering.
 
 <!--
-![](assets/do-not-localize/how-to-video.png) For more information, [watch this how to video](https://helpx.adobe.com/campaign/classic/how-to/generate-packages-in-acv6.html).-->
+![](assets/do-not-localize/how-to-video.png) For more information, [watch this how to video](https://helpx.adobe.com/campaign/classic/how-to/generate-packages-in-acv6.html).
+-->
 
 ## När kommer uppgraderingarna att äga rum?
 
@@ -89,7 +90,7 @@ Uppgradering är en tvåstegsprocess:
 
 1. Själva uppgraderingen - produktionsmiljön har uppgraderats. Denna fas utförs vanligtvis på några timmar. I mycket komplexa miljöer bör man förvänta sig längre driftstopp. Om något går fel definieras en återställningsstrategi som kan utföras.
 
-Mer information finns i [det här dokumentet](https://helpx.adobe.com/se/campaign/kb/acc-build-upgrade.html).
+Mer information finns i [det här dokumentet](https://helpx.adobe.com/campaign/kb/acc-build-upgrade.html).
 
 ## Vilka resurser behövs för uppgraderingen?
 
@@ -178,7 +179,7 @@ Ja. Servern stängs av under en uppgradering för att säkerställa att datainte
 
 ## Vem ska jag kontakta för att öppna uppgraderingsbiljetten?
 
-Kontakta [Adobe kundtjänst](https://helpx.adobe.com/se/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) om du får problem efter en bygguppgradering. Kundtjänst schemalägger byggdatum och öppnar biljetter relaterade till uppgraderingar.
+Kontakta [Adobe kundtjänst](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) om du får problem efter en bygguppgradering. Kundtjänst schemalägger byggdatum och öppnar biljetter relaterade till uppgraderingar.
 
 Läs mer i [Hjälp- och supportalternativ för Campaign Classic](../../support.md)
 

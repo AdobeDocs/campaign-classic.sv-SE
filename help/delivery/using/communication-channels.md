@@ -1,14 +1,14 @@
 ---
 product: campaign
 title: Kommunikationskanaler
-description: Skapa leveranser för att skicka personanpassade meddelanden i olika kanaler
+description: Skapa leveranser för att skicka personaliserade meddelanden i olika kanaler
 feature: Cross Channel Orchestration, Email, SMS, In App, Direct Mail, Push
 role: User
 exl-id: 92b5e013-b619-4f0b-b0b1-1fc2e653ceac
-source-git-commit: 2e3a14c97706a873f0791ef83708d704d2eed6c3
+source-git-commit: 647709dd4b0c70c342be03d3012bc02f10ff2c00
 workflow-type: tm+mt
 source-wordcount: '960'
-ht-degree: 2%
+ht-degree: 0%
 
 ---
 
@@ -24,20 +24,20 @@ Som en del av övergången från Campaign v7 till v8 har Campaign Classic dokume
 
 >[!TAB Dokumentation för kommunikationskanaler]
 
-Mer information om kommunikationskanaler finns i [dokumentationen för Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/gs-message.html?lang=sv-SE){target=_blank}.
+Mer information om kommunikationskanaler finns i [dokumentationen för Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/gs-message.html){target=_blank}.
 
 
-[![bild](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/gs-message.html?lang=sv-SE){target=_blank}
+[![bild](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/gs-message.html){target=_blank}
 
 
 >[!TAB Leverera innehåll och målgrupp]
 
 Lär dig de viktigaste stegen som rör leveransskapande, innehåll och målgrupp **i dokumentationen för Campaign v8**:
 
-* [Skapa leveransen](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html?lang=sv-SE#create-the-delivery){target="_blank"}: Lär dig hur du skapar en engångsleverans med ett enda foto.
-* [Definiera innehållet](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html?lang=sv-SE#content-of-the-delivery){target="_blank"}: Konfigurera leveransinnehållet för varje kanal.
-* [Ange målgruppen](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html?lang=sv#target-population){target="_blank"}: Definiera flera typer av mål: huvudmålgrupp, korrekturmål, dirigerade adresser och kontrollgrupper.
-* [Arbeta med leveransmallar](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-templates.html?lang=sv-SE){target="_blank"}: Lär dig hur du definierar mallar för att underlätta skapandet av leveransen.
+* [Skapa leveransen](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html#create-the-delivery){target="_blank"}: Lär dig hur du skapar en engångsleverans med ett enda foto.
+* [Definiera innehållet](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html#content-of-the-delivery){target="_blank"}: Konfigurera leveransinnehållet för varje kanal.
+* [Ange målgruppen](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html#target-population){target="_blank"}: Definiera flera typer av mål: huvudmålgrupp, korrekturmål, dirigerade adresser och kontrollgrupper.
+* [Arbeta med leveransmallar](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-templates.html){target="_blank"}: Lär dig hur du definierar mallar för att underlätta skapandet av leveransen.
 
 
 
@@ -47,13 +47,13 @@ Lär dig de viktigaste stegen som rör leveransskapande, innehåll och målgrupp
 
 På de här sidorna finns information om leveransvalidering, sändning och bästa praxis **i Campaign v8-dokumentationen**:
 
-* [Verifiera leveransen](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html?lang=sv-SE#validate-the-delivery){target="_blank"}: Lär dig hur du validerar leveransen innan du skickar den till huvudmålet.
-* [Skicka leveransen](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html?lang=sv-SE#configuring-and-sending-the-delivery){target="_blank"}: Konfigurera leveransinställningarna och definiera hur meddelanden ska skickas.
-* [Bästa praxis för leverans](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/delivery-best-practices.html?lang=sv-SE){target="_blank"}: Ta del av de bästa metoderna för leveransfunktioner i Campaign.
+* [Verifiera leveransen](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html#validate-the-delivery){target="_blank"}: Lär dig hur du validerar leveransen innan du skickar den till huvudmålet.
+* [Skicka leveransen](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html#configuring-and-sending-the-delivery){target="_blank"}: Konfigurera leveransinställningarna och definiera hur meddelanden ska skickas.
+* [Bästa praxis för leverans](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/delivery-best-practices.html){target="_blank"}: Ta del av de bästa metoderna för leveransfunktioner i Campaign.
 
 >[!ENDTABS]
 
-Följande inställningar är specifika för Campaign Classic. Andra leveransinställningar finns i [dokumentationen för Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/gs-message.html?lang=sv-SE){target="_blank"}.
+Följande inställningar är specifika för Campaign Classic. Andra leveransinställningar finns i [dokumentationen för Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/gs-message.html){target="_blank"}.
 
 +++ **Leveransanalys**
 
@@ -128,7 +128,7 @@ När leveransen har startats kan meddelandena (och eventuella försök) skickas 
 
    Learn how to create a one-shot single delivery. You can create other types of deliveries to build your use cases. 
 
-For more information about the different types of deliveries and how to create them, refer to the [Campaign v8 documentation](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html?lang=sv-SE){target="_blank"}. 
+For more information about the different types of deliveries and how to create them, refer to the [Campaign v8 documentation](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html){target="_blank"}. 
 
 >[!NOTE]
 >
@@ -237,4 +237,6 @@ If an information in the delivery changes (content, name, etc.), a new delivery 
 
 As an example, if you run this type of activity once a month, you will end up with a single delivery after a year (provided you did not make any change to the delivery).
 
-Continuous deliveries are created within workflows via the [Continuous delivery activity](../../workflow/using/continuous-delivery.md).-->
+Continuous deliveries are created within workflows via the [Continuous delivery activity](../../workflow/using/continuous-delivery.md).
+
+-->

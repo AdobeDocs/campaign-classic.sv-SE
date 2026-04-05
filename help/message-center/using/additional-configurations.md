@@ -7,10 +7,10 @@ audience: message-center
 content-type: reference
 topic-tags: instance-configuration
 exl-id: 4d25d740-db57-4d18-8cae-2dd49c4a786e
-source-git-commit: bba3f23637dd67a1557203c5ed1b93a6cb044870
+source-git-commit: 647709dd4b0c70c342be03d3012bc02f10ff2c00
 workflow-type: tm+mt
 source-wordcount: '850'
-ht-degree: 4%
+ht-degree: 0%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 4%
 
 
 
-## Övervaka gränsvärden {#monitoring-thresholds}
+## Skärmtrösklar {#monitoring-thresholds}
 
 Du kan konfigurera varningströskeln (orange) och aviseringströskeln (rött) för de indikatorer som visas i **meddelandecentrets servicenivå** och **meddelandecentrets behandlingstid** rapporter (se [Åtkomstrapporter för transaktionsmeddelanden](../../message-center/using/about-transactional-messaging-reports.md)).
 
@@ -69,11 +69,13 @@ Om du har en eller flera instanser registrerade för körning i kontrollinstanse
 
 Dessa arbetsflöden kan sedan nås från mappen **Administration > Produktion > Meddelandecenter**. Arkiveringsarbetsflödena startas automatiskt när de har skapats.
 
-<!--**Minimal architecture**
+<!--
+**Minimal architecture**
 
 Once the control and execution modules are installed on the same instance, you must create the archiving workflow using the deployment wizard. Click the **[!UICONTROL Create the archiving workflow]** button to create and start the workflow.
 
-![](assets/messagecenter_archiving_001.png)-->
+![](assets/messagecenter_archiving_001.png)
+-->
 
 ### Arbetsflöden för körningsinstanser {#execution-instance-workflows}
 
@@ -85,11 +87,11 @@ På körningsinstansen/instanserna kan du komma åt de tekniska arbetsflödena f
 
   Följande händelselägen är tillgängliga:
 
-   * **[!UICONTROL Pending]** : händelsen finns i kön. Ingen meddelandemall har ännu tilldelats den.
+   * **[!UICONTROL Pending]** : händelsen finns i kön. Ingen meddelandemall har tilldelats den ännu.
    * **[!UICONTROL Pending delivery]** : händelsen finns i kön, en meddelandemall har tilldelats den och bearbetas av leveransen.
    * **[!UICONTROL Sent]** : den här statusen kopieras från leveransloggarna. Det betyder att leveransen har skickats.
-   * **[!UICONTROL Ignored by the delivery]** : den här statusen kopieras från leveransloggarna. Det betyder att leveransen ignorerats.
-   * **[!UICONTROL Delivery failed]** : den här statusen kopieras från leveransloggarna. Det betyder att leveransen misslyckats.
+   * **[!UICONTROL Ignored by the delivery]** : den här statusen kopieras från leveransloggarna. Det betyder att leveransen ignorerades.
+   * **[!UICONTROL Delivery failed]** : den här statusen kopieras från leveransloggarna. Det betyder att leveransen misslyckades.
    * **[!UICONTROL Event not taken into account]** : händelsen kunde inte länkas till en meddelandemall. Händelsen kommer inte att bearbetas.
 
 ### Arbetsflödesschema för arkivering
@@ -104,11 +106,11 @@ I det här avsnittet beskrivs en lösning för att konfigurera spårning och spe
 
 ### Kompatibilitetsmeddelande {#compatibility-note}
 
-Den här gamla varumärkningskonfigurationen är inte kompatibel med den nya [centraliserade &#x200B;](https://experienceleague.adobe.com/docs/campaign-web/v8/conf/branding/branding-gs.html?lang=sv-SE){target="_blank"}-modellen som introducerades i Campaign v8.
+Den här gamla varumärkningskonfigurationen är inte kompatibel med den nya [centraliserade ](https://experienceleague.adobe.com/docs/campaign-web/v8/conf/branding/branding-gs.html){target="_blank"}-modellen som introducerades i Campaign v8.
 
 Om din befintliga miljö använder denna äldre konfiguration kan den inte migreras direkt till den nya centraliserade varumärkesmodellen. Det krävs en fullständig omimplementering av varumärkesinställningarna för att det nya systemet ska kunna användas.
 
-### Förhandskrav {#prerequisites}
+### Förutsättningar {#prerequisites}
 
 * Alla värdar måste läggas till i konfigurationsfilen för instansen (`config-<instance>.xml`).
 * Varje varumärke måste tilldelas en underdomän.
@@ -175,6 +177,6 @@ Gör så här:
 
 1. Skapa ett externt konto per varumärke med samma interna namn som definierats i [körningsinstansen](#execution-instance) (steg 1).
 
-1. Skapa en leveransmall per varumärke. Se [Campaign v8-dokumentationen](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-templates.html?lang=sv-SE){target="_blank"}.
+1. Skapa en leveransmall per varumärke. Se [Campaign v8-dokumentationen](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-templates.html){target="_blank"}.
 
 1. I leveransmallens **[!UICONTROL Properties]** anger du routningen till varumärkesets externa konto.

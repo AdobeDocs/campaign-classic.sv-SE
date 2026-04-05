@@ -7,10 +7,10 @@ audience: installation
 content-type: reference
 topic-tags: appendices
 exl-id: 70cd6a4b-c839-4bd9-b9a7-5a12e59c0cbf
-source-git-commit: f032ed3bdc0b402c8281bc34e6cb29f3c575aaf9
+source-git-commit: 647709dd4b0c70c342be03d3012bc02f10ff2c00
 workflow-type: tm+mt
-source-wordcount: '8067'
-ht-degree: 1%
+source-wordcount: '8066'
+ht-degree: 0%
 
 ---
 
@@ -20,7 +20,7 @@ Den övergripande konfigurationen för Adobe Campaign definieras i filen **serve
 
 >[!NOTE]
 >
->Konfigurationer på serversidan kan bara utföras av Adobe för distributioner som hanteras av Adobe. Mer information om de olika distributionerna finns i avsnittet [Värdmodeller](../../installation/using/hosting-models.md) eller i [den här sidan](../../installation/using/capability-matrix.md). Installations- och konfigurationsstegen för värdbaserade modeller och hybridmodeller visas i det här [avsnittet](../../installation/using/hosting-models.md).
+>Konfigurationer på serversidan kan endast utföras av Adobe för distributioner som lagras på Adobe. Mer information om de olika distributionerna finns i avsnittet [Värdmodeller](../../installation/using/hosting-models.md) eller i [den här sidan](../../installation/using/capability-matrix.md). Installations- och konfigurationsstegen för värdbaserade modeller och hybridmodeller visas i det här [avsnittet](../../installation/using/hosting-models.md).
 
 De första parametrarna finns i noden **shared**. Dessa är relaterade till instansen. De kan användas av alla nlserver-kommandon (nlserver web, nlserver wfserver osv.). De andra avsnitten är relaterade till ett specifikt underkommando på servern.
 
@@ -337,9 +337,9 @@ Konfigurera anslutningsinställningarna i noden **dataStore > dataSource > dbcnx
   </tr> 
   <tr> 
    <td> provider<br /> </td> 
-   <td> Typ (uppräkning). Möjliga värden är 'Oracle', 'MSSQL' (Microsoft SQL Server), 'PostgreSQL' (PostgreSQL), 'Teradata', 'MySQL', 'Netezza', 'AsterData', 'SAPHANA' (SAP HANA), 'RedShift' (Amazon Redshift), 'ODBC' (Sybase ASE, Sybase IQ), 'Relation ay' (HTTP-relä till fjärrdatabas).<br /> </td> 
+   <td> Typ (uppräkning). Möjliga värden är Oracle, MSSQL (Microsoft SQL Server), PostgreSQL (PostgreSQL), Teradata, MySQL, Netezza, AsterData, SAPHANA (SAP HANA), RedShift (Amazon Redshift), ODBC (Sybase ASE, Sybase IQ), Relay (HTTP) relä till fjärrdatabas).<br /> </td> 
    <td> Sträng<br /> </td> 
-   <td> oraclet <br /> </td> 
+   <td> Oracle<br /> </td> 
   </tr> 
   <tr> 
    <td> server<br /> </td> 
@@ -410,7 +410,7 @@ Konfigurera parametrarna för den associerade anslutningspoolen i noden **dataSt
   </tr> 
   <tr> 
    <td> maxCnx<br /> </td> 
-   <td> Maximalt antal tillåtna anslutningar innan en ny anslutning nekas. Se denna <a href="https://helpx.adobe.com/se/campaign/kb/how-to-increase-the-maximum-number-of-database-connections-from-.html">technote</a>.<br /> </td> 
+   <td> Maximalt antal tillåtna anslutningar innan en ny anslutning nekas. Se denna <a href="https://helpx.adobe.com/campaign/kb/how-to-increase-the-maximum-number-of-database-connections-from-.html">technote</a>.<br /> </td> 
    <td> Kort<br /> </td> 
   </tr> 
   <tr> 
@@ -546,7 +546,7 @@ Mer information finns i det här [avsnittet](../../installation/using/configurin
 >används av MTA för att hämta e-postväxlaren deklarerad för
 >en domän.
 >
->Om det här värdet inte definieras söker MTA efter den här informationen i värdnätverkskonfigurationen. Om flera DNS-adresser är möjliga måste de olika DNS-adresserna avgränsas med kommatecken (exempel: 212.155.207.1,212.155.207.2). Om leveransservern har flera nätverksgränssnitt är den DNS-lista som används av MTA den första. I det här fallet rekommenderar vi att du anger parametern **nameServer** för att undvika oklarheter.
+>Om det här värdet inte definieras söker MTA efter den här informationen i värdnätverkskonfigurationen. Om flera DNS är möjliga måste de olika DNS-adresserna avgränsas med kommatecken (exempel: 212.155.207.1,212.155.207.2). Om leveransservern har flera nätverksgränssnitt är den DNS-lista som används av MTA den första. I det här fallet rekommenderar vi att du anger parametern **nameServer** för att undvika oklarheter.
 
 >[!CAUTION]
 >
@@ -582,7 +582,7 @@ Mer information finns i [Begränsa tillåtna externa kommandon](../../installati
 
 ## htmlToPdf {#htmltopdf}
 
-Här är de olika parametrarna för noden **htmlToPdf** . Det här är konfigurationen för tjänsten för konvertering av webbsidor till PDF-dokument.
+Här är de olika parametrarna för noden **htmlToPdf** . Detta är konfigurationen för tjänsten för konvertering av webbsidor till PDF-dokument.
 
 <table> 
  <thead> 
@@ -1625,9 +1625,9 @@ Här är de olika parametrarna för noden **mta**. Detta är konfigurationen fö
    <td> statServerAddress<br /> </td> 
    <td> Adress till servern för leveransstatistik, angiven som 
     &lt;dns eller ip&gt; 
-      <code>&lbrack;</code>: 
+      <code>[</code>: 
      &lt;port&gt; 
-       <code>&rbrack;</code>. Se 
+       <code>]</code>. Se 
       <a href="../../installation/using/email-deliverability.md#coordinates-of-the-statistics-server" target="_blank">Koordinater för statistikservern</a>. 
       <br /> 
      </td> 
@@ -1640,12 +1640,14 @@ Här är de olika parametrarna för noden **mta**. Detta är konfigurationen fö
    <td> Boolean<br /> </td> 
    <td> true <br /> </td> 
   </tr> 
-  <!--tr> 
+  <!--
+  tr> 
    <td> statServerVersion<br /> </td> 
    <td> Protocol version used: communication protocol version (1 for a v5.11 and 6.0.2 server, 2 for a v6.1 server).<br /> </td> 
    <td> String<br /> </td> 
    <td> If undefined, the latest version is used. <br /> </td> 
-  </tr--> 
+  </tr
+  --> 
   <tr> 
    <td> useMomentum<br /> </td> 
    <td> Om du anger true används <a href="../../delivery/using/sending-with-enhanced-mta.md" target="_blank">Förbättrat MTA</a>.<br /> för instansen. </td> 
@@ -1856,7 +1858,7 @@ Mer information finns i [E-postoptimering](../../installation/using/email-delive
   </tr> 
   <tr> 
    <td> soapConnectorTimeoutSec<br /> </td> 
-   <td> Timeout (i sekunder) efter vilken en SOAP anslutning för en leveransanslutning överges.<br /> </td> 
+   <td> Timeout (i sekunder) efter vilken en SOAP-anslutning för en leveransanslutning överges.<br /> </td> 
    <td> Lång<br /> </td> 
    <td> 600<br /> </td> 
   </tr> 
@@ -2897,7 +2899,7 @@ Mer information finns i det här [avsnittet](configuring-campaign-server.md#defa
   </tr> 
   <tr> 
    <td> maxDeliveryQueueSize<br /> </td> 
-   <td> Storlek på kön för SubmitDelivery-anrop: maximalt antal SubmitDelivery-SOAP som kan köas.<br /> </td> 
+   <td> Köstorleken för SubmitDelivery-anrop: maximalt antal SubmitDelivery SOAP-anrop som kan ställas i kö.<br /> </td> 
    <td> Lång<br /> </td> 
    <td> 50<br /> </td> 
   </tr> 
@@ -2933,7 +2935,7 @@ Mer information finns i det här [avsnittet](configuring-campaign-server.md#defa
   </tr> 
   <tr> 
    <td> startSoapRouterInModule<br /> </td> 
-   <td> Starta SOAP i modulläge.<br /> </td> 
+   <td> Starta SOAP-routern i modulläge.<br /> </td> 
    <td> Boolean<br /> </td> 
    <td> false<br /> </td> 
   </tr> 
@@ -2974,7 +2976,7 @@ Här är de olika parametrarna för noden **web > jsp** . Detta är konfiguratio
   </tr> 
   <tr> 
    <td> soapRouter<br /> </td> 
-   <td> URL för SOAP (http://myserver/xxx, http://jni eller mailto:xxx).<br /> </td> 
+   <td> URL för SOAP-router (http://myserver/xxx, http://jni eller mailto:xxx).<br /> </td> 
    <td> Sträng<br /> </td> 
    <td> 'http://jni'<br /> </td> 
   </tr> 
@@ -3378,7 +3380,7 @@ Mer information finns i det här [avsnittet](../../installation/using/deploying-
 
 Här är de olika parametrarna för noden **web > redirection > reserveServer** .
 
-Mer information finns i [Spårning av överflödiga &#x200B;](../../installation/using/configuring-campaign-server.md#redundant-tracking).
+Mer information finns i [Spårning av överflödiga ](../../installation/using/configuring-campaign-server.md#redundant-tracking).
 
 <table> 
  <thead> 

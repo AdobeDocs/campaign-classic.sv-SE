@@ -1,17 +1,17 @@
 ---
 product: campaign
-title: Transaktionsmeddelandens arkitektur
+title: Arkitektur för transaktionsmeddelanden
 description: Detta avsnitt beskriver Adobe Campaign Classic transaktionsmeddelandearkitektur och de tillgängliga kanalerna för att leverera transaktionsmeddelanden
 feature: Transactional Messaging, Message Center, Architecture
 exl-id: 0a059397-b037-405b-b9c1-94a4a072674d
-source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
+source-git-commit: 647709dd4b0c70c342be03d3012bc02f10ff2c00
 workflow-type: tm+mt
 source-wordcount: '1103'
-ht-degree: 1%
+ht-degree: 0%
 
 ---
 
-# Transaktionsmeddelandens arkitektur {#transactional-messaging-architecture}
+# Arkitektur för transaktionsmeddelanden {#transactional-messaging-architecture}
 
 
 
@@ -29,7 +29,7 @@ Transaktionsmeddelanden bygger på en specifik arkitektur som består av flera i
 
 ## Installera instanser {#installing-instances}
 
-Du måste vidta flera försiktighetsåtgärder när du installerar Transactional-meddelandepaket. Adobe rekommenderar att du arbetar i en testmiljö innan du börjar producera något. Du måste också ha en kompatibel Adobe Campaign-licens. Kontakta er kontoansvarige på Adobe för mer information.
+Du måste vidta flera försiktighetsåtgärder när du installerar Transactional-meddelandepaket. Adobe rekommenderar att du arbetar i en testmiljö innan du börjar producera något. Du måste också ha en kompatibel Adobe Campaign-licens. Kontakta er kontoansvarige på Adobe om du vill ha mer information.
 
 >[!IMPORTANT]
 >
@@ -39,7 +39,7 @@ Om du behöver använda flera kanaler måste du installera och konfigurera relat
 
 ## Kontrollinstans {#control-instance}
 
-Om du vill installera kontrollinstansen på datorn väljer du paketet **[!UICONTROL Transactional message control]** via menyn **[!UICONTROL Tools]** > **[!UICONTROL Advanced]** > **[!UICONTROL Import package]** . Mer information finns i [Installera Campaign Classicens standardpaket](../../installation/using/installing-campaign-standard-packages.md).
+Om du vill installera kontrollinstansen på datorn väljer du paketet **[!UICONTROL Transactional message control]** via menyn **[!UICONTROL Tools]** > **[!UICONTROL Advanced]** > **[!UICONTROL Import package]** . Mer information finns i [Installera Campaign Classic-standardpaket](../../installation/using/installing-campaign-standard-packages.md).
 
 ![](assets/messagecenter_install_controlinstance_001.png)
 
@@ -61,7 +61,7 @@ Det går att dela ett körningskluster mellan flera kontrollinstanser. Om du til
 
 ## Körningsinstans {#execution-instance}
 
-Om du vill installera en körningsinstans på datorn väljer du paketet **[!UICONTROL Transactional message execution]** via menyn **[!UICONTROL Tools]** > **[!UICONTROL Advanced]** > **[!UICONTROL Import package]** . Mer information finns i [Installera Campaign Classicens standardpaket](../../installation/using/installing-campaign-standard-packages.md).
+Om du vill installera en körningsinstans på datorn väljer du paketet **[!UICONTROL Transactional message execution]** via menyn **[!UICONTROL Tools]** > **[!UICONTROL Advanced]** > **[!UICONTROL Import package]** . Mer information finns i [Installera Campaign Classic-standardpaket](../../installation/using/installing-campaign-standard-packages.md).
 
 ![](assets/messagecenter_install_executioninstance_001.png)
 
@@ -73,7 +73,7 @@ E-postkanalen är som standard tillgänglig. Om du vill leverera dina transaktio
 
 >[!IMPORTANT]
 >
->Lägga till en leveranskanal (mobilkanal, mobilappskanal osv.) måste utföras innan du installerar Transactional-meddelandepaketet.
+>Du måste lägga till en leveranskanal (mobilkanal, mobilappskanal osv.) innan du installerar Transactional-meddelandepaketet.
 
 ### Lägg till en leveranskanal {#adding-a-delivery-channel}
 
@@ -86,12 +86,13 @@ Om du har påbörjat ett transaktionsmeddelandeprojekt i e-postkanalen och sedan
 >Den här proceduren gäller endast kunder som använder en Windows NLServer som är installerad på samma dator som de arbetar på.
 
 1. Installera den kanal du behöver, till exempel **mobilkanalen**, med hjälp av paketimportassistenten (**[!UICONTROL Tools > Advanced > Import package... > Adobe Campaign Package]**).
-1. Utför en filimport (**[!UICONTROL Tools > Advanced > Import package... > File]**) och markera filen **dataItems &#x200B;**`[Your language]`**packagemessageCenter.xml**.
+1. Utför en filimport (**[!UICONTROL Tools > Advanced > Import package... > File]**) och markera filen **dataItems **`[Your language]`**packagemessageCenter.xml**.
 1. I **[!UICONTROL XML content of the data to import]** sparar du bara den leveransmall som motsvarar den tillagda kanalen. Om du till exempel har lagt till **mobilkanalen** ska du bara behålla elementet **entities** som motsvarar **[!UICONTROL Mobile transactional message]** (smsTriggerMessage). Om du har lagt till **Mobile App Channel** ska du bara behålla **iOS-transaktionsmeddelandet** (iosTriggerMessage) och **Android-transaktionsmeddelandet** (androidTriggerMessage).
 
    ![](assets/messagecenter_install_channel.png)
 
-<!--## Transactional messages and inbound Interaction {#transactional-messages-and-inbound-interaction}
+<!--
+## Transactional messages and inbound Interaction {#transactional-messages-and-inbound-interaction}
 
 When combined with the Inbound Interaction module, transactional messaging enables you to insert a marketing offer dedicated to the recipient into the message.
 
@@ -124,9 +125,11 @@ Create your delivery templates the way you would for an email campaign:
 * Add the offer to your transactional message template.
 * Check the preview, send a proof and publish the template.
 
-You also have to enable the unitary mode on your offer spaces. For more on this, refer to [this section](../../interaction/using/creating-offer-spaces.md).-->
+You also have to enable the unitary mode on your offer spaces. For more on this, refer to [this section](../../interaction/using/creating-offer-spaces.md).
 
-### Push-transaktionsmeddelanden {#transactional-messaging-and-push-notifications}
+-->
+
+### Transaktionspush-meddelanden {#transactional-messaging-and-push-notifications}
 
 I kombination med mobilappskanalmodulen kan du med transaktionsmeddelanden skicka transaktionsmeddelanden via meddelanden på mobila enheter.
 

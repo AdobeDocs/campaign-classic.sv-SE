@@ -5,7 +5,7 @@ description: Läs mer om omfattningen av och egenskaperna hos utskick av e-post 
 feature: Email
 role: User, Admin, Developer
 exl-id: 58cc23f4-9ab0-45c7-9aa2-b08487ec7e91
-source-git-commit: 62ab16b206563aa25b8943e606d03a3184eb00db
+source-git-commit: 647709dd4b0c70c342be03d3012bc02f10ff2c00
 workflow-type: tm+mt
 source-wordcount: '1381'
 ht-degree: 0%
@@ -30,7 +30,7 @@ Den förbättrade MTA-implementeringen kan påverka vissa av de befintliga Campa
 >
 >Om du är slutanvändare av Adobe Campaign och vill veta om din instans har uppgraderats till Förbättrat MTA, kontaktar du den interna Campaign-administratören.
 
-## Vanliga frågor och svar {#enhanced-mta-faq}
+## Frågor och svar {#enhanced-mta-faq}
 
 ### Användning och fördelar
 
@@ -42,7 +42,8 @@ Momentum är en innovativ MTA-teknik med höga prestanda som inkluderar smartare
 
 **Vilka är fördelarna?**
 
-* Adobe Campaign-klienter som använder den förbättrade MTA-metoden har upplevt en <!--300%-->enorm ökning av den totala genomströmningshastigheten och en <!--90%+-->avsevärd minskning av mjuka studsar.
+* Adobe Campaign-klienter som använder den förbättrade MTA-metoden har upplevt en <!--300%-->enorm ökning av den totala genomströmningshastigheten och en betydande minskning av de mjuka studenterna.
+  <!--90%+-->
 * Den förbättrade MTA-modellen använder den senaste MTA-tekniken för att ge dig optimala hastigheter för e-postleveransen.
 * Genom att direkt och automatiskt anpassa den till den feedback den får säkerställer den också exaktare och intelligentare e-postleverans med realtidsdata.
 
@@ -136,13 +137,13 @@ Mer information om giltighetsperioden finns på [sidan](communication-channels.m
 ### DKIM-signering
 
 Signering med e-postautentisering för DKIM (DomainKeys Identified Mail) görs av den utökade MTA:n. DKIM-signering av den interna Campaign MTA-filen kommer att stängas av i domänhanteringstabellen som en del av den förbättrade MTA-uppgraderingen.
-Mer information om DKIM finns i [Adobe Deliverability Best Practice Guide](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html?lang=sv-SE#authentication).
+Mer information om DKIM finns i [Adobe Deliverability Best Practice Guide](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html#authentication).
 
 ### Rapport om lyckade leveranser
 
-I vyn **[!UICONTROL Summary]** för en [kontrollpanel](https://experienceleague.adobe.com/sv/docs/campaign/campaign-v8/send/monitor/delivery-dashboard){target="_blank"} för e-postleverans börjar procentandelen **[!UICONTROL Success]** att vara 100 % och går sedan successivt ned under leveransens [giltighetsperiod](communication-channels.md), när de mjuka och hårda studenterna rapporteras tillbaka från det förbättrade MTA till Campaign.
+I vyn **[!UICONTROL Summary]** för en [kontrollpanel](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/delivery-dashboard){target="_blank"} för e-postleverans börjar procentandelen **[!UICONTROL Success]** att vara 100 % och går sedan successivt ned under leveransens [giltighetsperiod](communication-channels.md), när de mjuka och hårda studenterna rapporteras tillbaka från det förbättrade MTA till Campaign.
 
-Alla meddelanden visas som **[!UICONTROL Sent]** i de [sändande loggarna](https://experienceleague.adobe.com/sv/docs/campaign/campaign-v8/send/monitor/delivery-dashboard#delivery-logs-and-history){target="_blank"} så snart de har vidarebefordrats från Campaign till den utökade MTA:n. De har den statusen såvida inte eller tills ett [studs](delivery-failures-quarantine.md#delivery-failure-types-and-reasons) för det meddelandet kommuniceras tillbaka från det förbättrade MTA till Campaign.
+Alla meddelanden visas som **[!UICONTROL Sent]** i de [sändande loggarna](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/delivery-dashboard#delivery-logs-and-history){target="_blank"} så snart de har vidarebefordrats från Campaign till den utökade MTA:n. De har den statusen såvida inte eller tills ett [studs](delivery-failures-quarantine.md#delivery-failure-types-and-reasons) för det meddelandet kommuniceras tillbaka från det förbättrade MTA till Campaign.
 
 När hårda studsmeddelanden rapporteras tillbaka från det förbättrade MTA:et ändras deras status från **[!UICONTROL Sent]** till **[!UICONTROL Failed]** och procentandelen **[!UICONTROL Success]** minskas därefter.
 
@@ -161,5 +162,5 @@ Tabellen nedan visar de olika stegen i sändningsprocessen med motsvarande KPI:e
 | Meddelandet har vidarebefordrats från Campaign till det förbättrade MTA-meddelandet | **[!UICONTROL Success]** procent börjar vid 100 % | Skickat |
 | Hårdstudsmeddelanden rapporteras tillbaka från Förbättrad MTA | Procentandelen **[!UICONTROL Success]** minskas därefter | Misslyckades |
 | Mjuka studsmeddelanden rapporteras tillbaka från Förbättrat MTA | Ingen ändring i procentandelen **[!UICONTROL Success]** | Skickat |
-| Mjuka studsmeddelanden - återförsök har slutförts | Ingen ändring i **[!UICONTROL Success]** procent \|  **[!UICONTROL Success]** procentandelen ökas därefter | Skickat |
+| Mjuka studsmeddelanden - återförsök har slutförts | Ingen ändring av procentandelen \| **[!UICONTROL Success]** har gjorts i enlighet därmed **[!UICONTROL Success]** | Skickat |
 | Mjukt studsande meddelanden återförsök misslyckas | Procentandelen **[!UICONTROL Success]** minskas därefter | Misslyckades |

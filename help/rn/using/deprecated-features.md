@@ -6,7 +6,7 @@ feature: Release Notes
 role: User
 level: Beginner
 exl-id: d60d67de-6618-4f3b-be4a-ad7633ab5645
-source-git-commit: 66387e2e008051901fe3385f571d7fe798829100
+source-git-commit: 647709dd4b0c70c342be03d3012bc02f10ff2c00
 workflow-type: tm+mt
 source-wordcount: '1675'
 ht-degree: 0%
@@ -45,7 +45,7 @@ Kunder uppmanas att granska om de använder funktionen/funktionen i den aktuella
   </tr>
   <tr>
  <td>Campaign (Neolane) legacy SDK</td>
- <td><p>Campaign (Neolane) SDK för mobilapplikationer är nu föråldrat. Använd i stället Adobe Experience Platform Mobile SDK genom att konfigurera Adobe Campaign-tillägget i användargränssnittet för datainsamling. Adobe Experience Platform Mobile SDK hjälper er att driva Adobe Experience Cloud lösningar och tjänster i era mobilappar. SDK-konfigurationen hanteras via användargränssnittet för datainsamling för flexibel konfiguration och utbyggbara, regelbaserade integreringar. Lär dig hur du konfigurerar mobilappskanalen i <a href="https://experienceleague.adobe.com/sv/docs/campaign/campaign-v8/send/push/push-settings">dokumentationen för Campaign v8</a>.</p>
+ <td><p>Campaign (Neolane) SDK för mobilapplikationer är nu föråldrat. Använd i stället Adobe Experience Platform Mobile SDK genom att konfigurera Adobe Campaign-tillägget i användargränssnittet för datainsamling. Adobe Experience Platform Mobile SDK hjälper er att driva Adobe Experience Cloud lösningar och tjänster i era mobilappar. SDK-konfigurationen hanteras via användargränssnittet för datainsamling för flexibel konfiguration och utbyggbara, regelbaserade integreringar. Lär dig hur du konfigurerar mobilappskanalen i <a href="https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/push/push-settings">dokumentationen för Campaign v8</a>.</p>
 <p>Måldatum: 31 juli 2025 </p>
 </td>
 </tr>
@@ -83,7 +83,7 @@ I det här avsnittet visas funktioner som har tagits bort från Campaign Classic
     <tr>
   <td>Övervakningsrapport för teknisk leverans<br></td>
    <td><p>Övervakningsrapporten för teknisk leverans är inte längre tillgänglig. Den hade tagits bort i Campaign 21.1.3-versionen.</p>
-   <!--p>If needed, you can receive this report daily by email until the feature removal date. To request it, open a specific <a href="https://helpx.adobe.com/se/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html">Support Case</a> and specify the name of the instance and the email address(es) to send the report to.</p--> 
+   <!--p>If needed, you can receive this report daily by email until the feature removal date. To request it, open a specific <a href="https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html">Support Case</a> and specify the name of the instance and the email address(es) to send the report to.</p--> 
   </td>
  </tr>
   <tr>
@@ -99,7 +99,7 @@ I det här avsnittet visas funktioner som har tagits bort från Campaign Classic
   </tr>
   <tr>  
    <td>Faxkanal<br></td>
-   <td><p>Faxkanalen är inte längre tillgänglig från och med Campaign 21.1.3. <a href="https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html?lang=sv-SE" target="_blank">Läs mer i dokumentationen för Campaign v8</a></p>
+   <td><p>Faxkanalen är inte längre tillgänglig från och med Campaign 21.1.3. <a href="https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html" target="_blank">Läs mer i dokumentationen för Campaign v8</a></p>
   </tr>
   <tr>
   <td>Demdex domain<br></td>
@@ -120,7 +120,7 @@ I det här avsnittet visas funktioner som har tagits bort från Campaign Classic
    </tr>
    <tr>
    <td>Dokumentation för kampanj-API:er - jsapi.chm-fil</td>
-   <td>Från och med Campaign 19.1 finns Campaign Classic API:er på en dedikerad sida. Om du använde den äldre jsapi.chm-filen bör du nu referera till <a href="https://experienceleague.adobe.com/developer/campaign-api/api/index.html?lang=sv-SE">den nya onlineversionen</a>.</td>
+   <td>Från och med Campaign 19.1 finns Campaign Classic API:er på en dedikerad sida. Om du använde den äldre jsapi.chm-filen bör du nu referera till <a href="https://experienceleague.adobe.com/developer/campaign-api/api/index.html">den nya onlineversionen</a>.</td>
   </tr> 
   <tr> 
    <td>Kampanjsamordning - prediktiv marknadsföring</td>
@@ -137,7 +137,7 @@ I det här avsnittet visas funktioner som har tagits bort från Campaign Classic
   <tr> 
    <td>decryptString API</td>
    <td><p>Från och med Campaign 18.6-versionen är <em>dekrypptString</em>-API:t inte längre tillgängligt som standard för nya installationer.</p> 
-   <p>I samband med en efteruppgradering till 18.6 (och senare) är detta API inte längre aktiverat och har ersatts med funktionen <em>dekrypptPassword</em> . <a href="https://experienceleague.adobe.com/developer/campaign-api/api/f-decryptPassword.html?lang=sv-SE&hl=decrypt">Läs mer</a></p></td>
+   <p>I samband med en efteruppgradering till 18.6 (och senare) är detta API inte längre aktiverat och har ersatts med funktionen <em>dekrypptPassword</em> . <a href="https://experienceleague.adobe.com/developer/campaign-api/api/f-decryptPassword.html?hl=decrypt">Läs mer</a></p></td>
   </tr> 
    <tr> 
    <td>Mobilkanal - MMS- och WAP-push-meddelanden</td>
@@ -150,9 +150,11 @@ I det här avsnittet visas funktioner som har tagits bort från Campaign Classic
  </tbody> 
 </table>
 
-<!--## Deprecated compatibility {#deprecated-compatibility}
+<!--
+## Deprecated compatibility {#deprecated-compatibility}
 
-The following systems are deprecated for Campaign Classic. Please refer to the [Compatibility matrix](../../rn/using/compatibility-matrix.md) to upgrade to a newer version or move to a new system before the compatibility ends.-->
+The following systems are deprecated for Campaign Classic. Please refer to the [Compatibility matrix](../../rn/using/compatibility-matrix.md) to upgrade to a newer version or move to a new system before the compatibility ends.
+-->
 
 ## Kompatibilitetsslut {#end-of-compatibility}
 

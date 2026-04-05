@@ -8,36 +8,38 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: 23c873fd-9016-4d32-842c-772cfff0e23e
-source-git-commit: 122d69d3d7474480f7799248413ac89338469ebc
+source-git-commit: 647709dd4b0c70c342be03d3012bc02f10ff2c00
 workflow-type: tm+mt
 source-wordcount: '909'
-ht-degree: 79%
+ht-degree: 0%
 
 ---
 
 # Sekretesshantering {#privacy-management}
 
-Adobe Campaign erbjuder en uppsättning verktyg som hjälper dig att följa [integritetsregleringen](#privacy-management-regulations) (inklusive GDPR, CCPA, PDPA och LGPD).
+Adobe Campaign erbjuder en uppsättning verktyg som hjälper dig att följa [sekretesslagstiftningen](#privacy-management-regulations) (inklusive GDPR, CCPA, PDPA, LGPD).
 
 Här är de fem viktigaste funktionerna från Adobe Campaign för att säkerställa sekretessregler:
 
-* **Åtkomsträttigheter**
-* **Rätt att radera**
-* **Medgivandehantering**
+* **Rätt till åtkomst**
+* **Höger att ta bort**
+* **Hantering av samtycke**
 * **Datalagring**
-* **Hantering av rättigheter**
+* **Rättighetshantering**
 
 ![](assets/privacy-gdpr-use-cases.png)
 
-Mer information finns i [Åtkomsträttighet och rätt att glömmas](#right-access-forgotten) och [Medgivande, kvarhållning och roller](#consent-retention-roles).
+Mer information finns i [Åtkomst och rättighet att bli glömd](#right-access-forgotten) och [Medgivande, Bevarande och Roller](#consent-retention-roles).
 
-<!--This section presents general information on what Privacy management is and the features provided by Adobe Campaign to manage the [Right to Access and Right to be Forgotten](#right-access-forgotten).
+<!--
+This section presents general information on what Privacy management is and the features provided by Adobe Campaign to manage the [Right to Access and Right to be Forgotten](#right-access-forgotten).
 
-It also contains information on important features to manage Privacy ([Consent, Retention and Roles](#consent-retention-roles)), as well as best practices to help you with your Privacy compliance when using Adobe Campaign.-->
+It also contains information on important features to manage Privacy ([Consent, Retention and Roles](#consent-retention-roles)), as well as best practices to help you with your Privacy compliance when using Adobe Campaign.
+-->
 
-## Bestämmelser om sekretesshantering {#privacy-management-regulations}
+## Bestämmelser om integritetshantering {#privacy-management-regulations}
 
-Funktionerna i Adobe Campaign hjälper dig att efterleva följande regler:
+Adobe Campaign funktioner hjälper dig att följa följande regler:
 
 * **GDPR** (den allmänna dataskyddsförordningen) är Europeiska unionens (EU) integritetslagstiftning som harmoniserar och moderniserar dataskyddskraven för EU:s länder.
 * **CCPA** (California Consumer Privacy Act) ger personer bosatta i Kalifornien nya rättigheter när det gäller deras personuppgifter och ålägger dataskyddsansvar för vissa enheter som bedriver verksamhet i Kalifornien.
@@ -52,72 +54,75 @@ Alla dessa bestämmelser gäller för Adobe Campaign-kunder som har data för re
 
 >[!NOTE]
 >
->Mer information om personuppgifter och de olika enheter som hanterar data (personuppgiftsansvarig, personuppgiftsbiträde och registrerad) finns i [Personuppgifter och personer](../../platform/using/privacy-and-recommendations.md#personal-data).
+>Mer information om personuppgifter och om olika enheter som hanterar data (Data Controller, Data Processor och Data Subject) finns i [Personliga data och personuppgifter](../../platform/using/privacy-and-recommendations.md#personal-data).
 
-## Åtkomsträttigheter och rätt att glömmas {#right-access-forgotten}
+## Rätt till åtkomst och rätt att glömma {#right-access-forgotten}
 
-För att underlätta beredskapen gällande din integritet kan du hantera förfrågningar om **åtkomst** och **borttagning** med Adobe Campaign.
+För att underlätta sekretessberedskapen kan du med Adobe Campaign hantera förfrågningar om **åtkomst** och **Ta bort**.
 
-* **Åtkomsträttigheterna** är den registrerades rätt att från personuppgiftsansvarige få bekräftelse på om personuppgifter som rör dem behandlas eller inte, var de befinner sig och för vilket syfte. Den personuppgiftsansvarige ska tillhandahålla en kostnadsfri kopia av personuppgifterna i elektroniskt format.
+* **Åtkomsträttigheten** ger den registrerade rätt att få bekräftelse från den personuppgiftsansvarige på om personuppgifter som rör dem behandlas, var och i vilket syfte. Den personuppgiftsansvarige ska tillhandahålla en kostnadsfri kopia av personuppgifterna i elektroniskt format.
 
-* **Rätten att glömmas** (förfrågan om borttagning), även känd som Radering av data, ger den registrerade rätt att låta den personuppgiftsansvarige radera sina personuppgifter, upphöra med ytterligare spridning av uppgifterna och eventuellt få tredje part att stoppa behandlingen av uppgifterna.
+* **Rättigheten att bli glömd** (begäran om radering) kallas även dataradering och ger den registrerade rätt att få personuppgiftsbiträdet att radera sina personuppgifter, upphöra med vidare spridning av data och eventuellt få tredje parter att avbryta behandlingen av data.
 
-Se [implementeringsstegen](../../platform/using/privacy-requests.md) för att läsa om hur du kan skapa förfrågningar om **åtkomst** och **radering** och hur Adobe Campaign bearbetar dem.
+Mer information om hur du kan skapa **Access** - och **Delete**-begäranden och hur Adobe Campaign behandlar dem finns i [implementeringsstegen](../../platform/using/privacy-requests.md).
 
-<!--Tutorials on Privacy management in Campaign Standard are also available [here](https://experienceleague.adobe.com/docs/campaign-standard-learn/tutorials/privacy/privacy-overview.html?lang=sv-SE).
-https://experienceleague.adobe.com/docs/campaign-standard-learn/tutorials/privacy/privacy-overview.html-->
+<!--
+Tutorials on Privacy management in Campaign Standard are also available [here](https://experienceleague.adobe.com/docs/campaign-standard-learn/tutorials/privacy/privacy-overview.html).
 
-## Medgivande, lagring och roller {#consent-retention-roles}
+https://experienceleague.adobe.com/docs/campaign-standard-learn/tutorials/privacy/privacy-overview.html
+-->
 
-Förutom de senaste funktionerna gällande **åtkomsträttigheter** och **rätt att glömmas** erbjuder Adobe Campaign andra viktiga funktioner som är viktiga för integritet:
+## Samtycke, bevarande och roller {#consent-retention-roles}
 
-* [Medgivandehantering](#consent-management): prenumerationsfunktioner för hantering av preferenser
-* [Datalagring](#data-retention): datalagringsperioder för alla standardiserade loggtabeller. Ytterligare datalagringsperioder kan ställas in med arbetsflöden
-* [Hantering av rättigheter](#rights-management): dataåtkomst hanterad utifrån namngiven rättighet
+Förutom de senaste funktionerna för **Åtkomst** och **Rätt att bli glömd** har Adobe Campaign andra viktiga funktioner som är viktiga för sekretessen:
 
-### Medgivandehantering {#consent-management}
+* [Hantering av samtycke](#consent-management): prenumerationsfunktioner för inställningshantering
+* [Datalagring](#data-retention): datalagringsperioder i alla standardloggtabeller, ytterligare kvarhållningsperioder kan ställas in med arbetsflöden
+* [Rättighetshantering](#rights-management): dataåtkomst hanteras av namngiven rättighet
 
-Medgivande innebär att den registrerade godkänner behandlingen av personuppgifter som rör sig själv. Personuppgiftsansvarige ansvarar för att erhålla nödvändigt medgivande för behandlingen. Även om Adobe Campaign kan tillhandahålla vissa funktioner som hjälper en kund att hantera medgivande som rör tjänsten, ansvarar Adobe inte för medgivandet i sig. Kunder bör arbeta med sina egna juridiska avdelningar för att fastställa egna processer och rutiner gällande att få medgivande.
+### Hantering av samtycke {#consent-management}
 
-Funktionerna som hjälper till att hantera vissa aspekter av medgivandet har varit centrala för Adobe Campaign sedan tidigt. Genom prenumerationshanteringen kan kunder spåra vilka mottagare som har valt att delta i vilken typ av prenumeration, oavsett om det är nyhetsbrev, dagliga eller veckovisa kampanjer eller andra typer av marknadsföringsprogram.
+Samtycke innebär att den registrerade godkänner behandlingen av personuppgifter som rör en registrerad. Datakontrollanten ansvarar för att inhämta nödvändigt samtycke för den bearbetningen. Även om Adobe Campaign kan tillhandahålla vissa funktioner som hjälper en kund att hantera samtycke som rör tjänsten, ansvarar Adobe inte för samtycke. Kunderna bör arbeta med sina egna juridiska avdelningar för att fastställa sina egna processer och rutiner för att få tillstånd.
+
+Funktionerna för att hantera vissa aspekter av samtycke har varit centrala för Adobe Campaign sedan början. Genom prenumerationshanteringen kan kunderna spåra vilka mottagare som har valt att delta i vilken typ av prenumerationer, oavsett om det är nyhetsbrev, dagliga eller veckovisa kampanjer eller andra typer av marknadsföringsprogram.
 
 ![](assets/privacy-consent-management.png)
 
-Mer information om medgivandehantering finns i den [detaljerade dokumentationen](../../delivery/using/managing-subscriptions.md).
+Mer information om hantering av samtycke finns i den [detaljerade dokumentationen](../../delivery/using/managing-subscriptions.md).
 
-Förutom verktygen för medgivandehantering som finns i Adobe Campaign har du möjligheten att spåra om en konsument har avanmält sig till försäljning av personuppgifter. Se [det här avsnittet](../../platform/using/privacy-requests.md#sale-of-personal-information-ccpa).
+Förutom de verktyg för hantering av samtycke som Adobe Campaign tillhandahåller har ni möjlighet att spåra om en konsument har valt ut för försäljning av personuppgifter. Se [det här avsnittet](../../platform/using/privacy-requests.md#sale-of-personal-information-ccpa).
 
 ### Datalagring {#data-retention}
 
-När det gäller lagring har inbyggda loggtabeller i Campaign förinställda lagringsperioder vilket generellt begränsar datalagringen till sex månader eller mindre.
+När det gäller lagring har inbyggda loggtabeller i Campaign förinställda lagringsperioder, vilket generellt begränsar datalagringen till sex månader eller mindre.
 
-Följande är standardvärden gällande lagring för inbyggda tabeller. Var medveten om att lagringskonfigurationen ställs in av Adobes tekniska administratörer under implementeringen och att värdena kan variera för varje implementering baserat på kundens krav.
+Följande är standardvärden för kvarhållning för inbyggda tabeller. Tänk på att lagringskonfigurationen ställs in av Adobe tekniska administratörer under implementeringen, och värdena kan variera för varje implementering baserat på kundens krav.
 
 * **Konsoliderad spårning**: 1 år
 * **Leveransloggar**: 6 månader
 * **Spårningsloggar**: 1 år
-* **Raderade leveranser**: 1 vecka
-* **Importavvisanden**: 6 månader
+* **Borttagna leveranser**: 1 vecka
+* **Importavslag**: 6 månader
 * **Besökarprofiler**: 1 månad
-* **Erbjudandeförslag**: 1 år
+* **Erbjudandeerbjudanden**: 1 år
 * **Händelser**: 1 månad
-* **Statistik över händelsebearbetning**: 1 månader
+* **Statistik för händelsebearbetning**: 1 år
 * **Arkiverade händelser**: 1 år
-* **Ignorerade pipeline-händelser**: 1 månad
+* **Pipeline-händelser ignorerades**: 1 månad
 * **Dynamisk rapportering**: 13 månader
 
-Och på samma sätt som att ta bort kan man med standardiserad arbetsflödesfunktionalitet ställa in lagringsperioder för alla anpassade tabeller.
+Och på liknande sätt som med standardfunktioner för arbetsflöde kan du ta bort kvarhållningsperioder för anpassade tabeller.
 
-Kontakta Adobes konsulter eller teknikadministratörer för att veta mer om lagring eller om ni behöver ställa in lagring för anpassade tabeller.
+Kontakta Adobe konsulter eller teknikadministratörer för att få veta mer om lojalitet eller om ni behöver ange lojalitet för anpassade tabeller.
 
-### Right Management {#rights-management}
+### Rights Management {#rights-management}
 
-Adobe Campaign ger dig möjligheten att hantera de rättigheter som tilldelats olika operatörer i Campaign via olika färdiga eller anpassade roller.
+Adobe Campaign ger er möjlighet att hantera de rättigheter som tilldelats olika Campaign-operatorer via olika färdiga eller anpassade roller.
 
-En fördel är att du kan hantera vilka inom företaget som har åtkomst till olika typer av data. Du kan till exempel ha olika marknadsförare som täcker olika geografiska områden och varje marknadsförare kan bara komma åt data från sitt eget område.
+En fördel är att du kan hantera vilka inom företaget som har åtkomst till olika typer av data. Du kan till exempel ha olika marknadsförare som täcker olika geografiska områden och varje marknadsförare kan bara komma åt data från sin geo.
 
-På samma sätt kan du med den här funktionen konfigurera olika funktioner för varje användare såsom att begränsa vem som kan skicka leveranser. Mer relevant för integritetshantering är det dock att man kan begränsa vem som kan ändra eller exportera data.
+På samma sätt kan du med den här funktionen konfigurera olika funktioner för varje användare, till exempel begränsa vem som kan skicka leveranser eller mer relevant för sekretesshantering, som kan ändra eller exportera data.
 
 ![](assets/privacy-user-management.png)
 
-Mer information om åtkomsthantering finns i den [detaljerade dokumentationen](../../platform/using/access-management.md).
+Mer information om åtkomsthantering finns i [detaljerad dokumentation](../../platform/using/access-management.md).

@@ -5,7 +5,7 @@ description: Publicera ett webbformulär
 badge-v8: label="Gäller även för v8" type="Positive" tooltip="Gäller även Campaign v8"
 feature: Web Forms
 exl-id: 1c66b8e8-7590-4767-9b2f-a9a509df4508
-source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
+source-git-commit: 647709dd4b0c70c342be03d3012bc02f10ff2c00
 workflow-type: tm+mt
 source-wordcount: '1284'
 ht-degree: 0%
@@ -94,7 +94,7 @@ En forms livscykel består av tre steg:
 
    >[!NOTE]
    >
-   >För tekniska webbprogram (som är tillgängliga via menyn **[!UICONTROL Administration]** > **[!UICONTROL Configuration]** > **[!UICONTROL Web applications]**) blir ett formulär med statusen **[!UICONTROL Pending publication]** automatiskt [&#x200B; publicerat](#publishing-a-form) och får statusen **[!UICONTROL Online]**.
+   >För tekniska webbprogram (som är tillgängliga via menyn **[!UICONTROL Administration]** > **[!UICONTROL Configuration]** > **[!UICONTROL Web applications]**) blir ett formulär med statusen **[!UICONTROL Pending publication]** automatiskt [ publicerat](#publishing-a-form) och får statusen **[!UICONTROL Online]**.
 
 1. **Online**
 
@@ -196,6 +196,7 @@ Läs mer om de olika statusvärdena för ett webbformulär i [det här avsnittet
   >
   >Du kan kontrollera den senaste versionen av ditt webbformulär på fliken **[!UICONTROL Preview]**.
 
-<!--For RN:
+<!--
+For RN:
 * Now, when a web form has the **Pending publication** status, it must be published before it becomes **Online** and accessible through the web form URL in a web browser. [Read more](../../web/using/publishing-a-web-form.md#life-cycle-of-a-form)
 -->

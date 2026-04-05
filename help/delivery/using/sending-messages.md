@@ -8,7 +8,7 @@ role: User
 hide: true
 hidefromtoc: true
 exl-id: c75a5ea2-8d62-4f98-bccd-7116a4d404fd
-source-git-commit: 42cec0e9bede94a2995a5ad442822512bda14f2b
+source-git-commit: 647709dd4b0c70c342be03d3012bc02f10ff2c00
 workflow-type: tm+mt
 source-wordcount: '223'
 ht-degree: 0%
@@ -33,8 +33,10 @@ När e-postmeddelandet har skapats och konfigurerats kan du skicka det till huvu
 >Hela processen för att validera en leverans beskrivs i [det här avsnittet](steps-validating-the-delivery.md). De fullständiga detaljerade stegen för att konfigurera och skicka en leverans visas i [det här avsnittet](steps-sending-the-delivery.md).
 
 I följande avsnitt beskrivs inställningar och konfigurationer som är specifika för att leverera e-postmeddelanden:
-<!--* [Generating the mirror page](generating-mirror-page.md)
-* [Email BCC](email-bcc.md)-->
+<!--
+* [Generating the mirror page](generating-mirror-page.md)
+* [Email BCC](email-bcc.md)
+-->
 * [E-postparametrar](email-parameters.md)
 * [Skicka e-post med den förbättrade MTA-filen](sending-with-enhanced-mta.md)
 * [Skicka e-post till japanska mobiler](sending-emails-on-japanese-mobiles.md)
